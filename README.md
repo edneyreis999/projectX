@@ -1,2 +1,2 @@
 # projectX
-My first RPG made using RPG Maker
+My first RPG made using RPG Maker a
