@@ -3,3 +3,9 @@
 
 npm run format
 npm run lint
+
+# Verificar se os comandos anteriores foram bem-sucedidos
+if [ $? -ne 0 ]; then
+  echo "Erro: O commit foi abortado devido a erros de formatação ou lint."
+  exit 1
+fi
