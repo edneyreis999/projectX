@@ -1,0 +1,21 @@
+{
+  "MainMenu.NewGame": "New Game",
+  "MainMenu.Continue": "Continue",
+  "MainMenu.Options": "Options",
+
+  "InGameMenu.Item": "Item",
+  "InGameMenu.Skil": "Skill",
+  "InGameMenu.Equip": "Equip",
+  "InGameMenu.Status": "Status",
+  "InGameMenu.Formation": "Formation",
+  "InGameMenu.Save": "Save",
+  "InGameMenu.GameEnd": "Game End",
+  "InGameMenu.ToTitle": "To Title",
+  "InGameMenu.Cancel": "Cancel",
+
+  "textPrologue_Prologue.Message01": "Navigation Officer: Captain, we can't see anything within fifty kilometers.",
+  "textPrologue_Prologue.Message02": "Hi!",
+
+  "System.received": "Received",
+  "NPC.naoexiste": "Does not exist"
+}

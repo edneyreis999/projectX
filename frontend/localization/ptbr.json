@@ -1,0 +1,24 @@
+{
+
+"MainMenu.NewGame": "Novo Jogo",
+"MainMenu.Continue": "Continue",
+"MainMenu.Options": "Opções",
+
+"InGameMenu.Item": "Item",
+"InGameMenu.Skil": "Habilidades",
+"InGameMenu.Equip": "Equipamentos",
+"InGameMenu.Status": "Status",
+"InGameMenu.Formation": "Formação",
+"InGameMenu.Save": "Salvar",
+"InGameMenu.GameEnd": "Fim de jogo",
+"InGameMenu.ToTitle": "To Title",
+"InGameMenu.Cancel": "Cancelar",
+
+"System.received": "Recebeu",
+"NPC.naoexiste": "Não existe",
+
+
+"textPrologue_Prologue.Message01": "Oficial de navegação:  Capitão, não podemos ver nada em cinquenta quilômetros. ",
+"textPrologue_Prologue.Message02": "Oi! "
+
+}

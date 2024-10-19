@@ -39,7 +39,7 @@ module.exports = {
           {
             endOfLine: 'auto',
             singleQuote: true,
-            printWidth: 100,
+            printWidth: 200,
             arrowParens: 'avoid',
             bracketSpacing: true,
           },
