@@ -95,9 +95,6 @@
 
   const _Scene_Map_isAnyButtonPressed = Scene_Map.prototype.isAnyButtonPressed;
   Scene_Map.prototype.isAnyButtonPressed = function () {
-    return (
-      _Scene_Map_isAnyButtonPressed.apply(this, arguments) ||
-      this._spriteset.mzkp_isAnyPicturePressed()
-    );
+    return _Scene_Map_isAnyButtonPressed.apply(this, arguments) || this._spriteset.mzkp_isAnyPicturePressed();
   };
 })();
