@@ -5,17 +5,15 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "node",
+            "name": "Depurar RPG Maker MZ",
+            "type": "chrome",
             "request": "attach",
-            "name": "Attach Program Nodejs",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "preLaunchTask": "tsc: build - tsconfig.json",
-            "outFiles": [
-                "${workspaceFolder}/dist/**/*.js"
-            ],
-            "restart": true,
+            "port": 9222,
+            "webRoot": "${workspaceFolder}/frontend",
+            "sourceMaps": true,
+            "sourceMapPathOverrides": {
+                "webpack://frontend/*": "${webRoot}/*"
+            }
         }
     ]
 }
