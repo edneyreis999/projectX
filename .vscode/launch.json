@@ -12,6 +12,9 @@
             "webRoot": "${workspaceFolder}/frontend",
             "sourceMaps": true,
             "sourceMapPathOverrides": {
+                "webpack:///*": "${webRoot}/*",
+                "webpack:///./*": "${webRoot}/*",
+                "webpack://js/plugins/*": "${webRoot}/js/plugins/*",
                 "webpack://frontend/*": "${webRoot}/*"
             }
         }
