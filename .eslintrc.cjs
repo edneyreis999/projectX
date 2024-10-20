@@ -15,7 +15,11 @@ module.exports = {
     node: true,
     jest: true,
   },
-  ignorePatterns: [".eslintrc.cjs", "commitlint.config.ts"],
+  ignorePatterns: [".eslintrc.cjs", "commitlint.config.ts",
+    "frontend/js/plugins/PKD_SimpleQuestSystem.js", 
+    "frontend/js/plugins/VisuMZ_0_CoreEngine.js", 
+    "frontend/js/plugins/VisuMZ_1_MessageCore.js"
+  ],
   overrides: [
     {
       files: ['*.ts'],
@@ -30,7 +34,7 @@ module.exports = {
       files: ['*.js'],
       parser: 'espree',
       parserOptions: {
-        ecmaVersion: 2015,
+        ecmaVersion: 2020,
         sourceType: 'module',
       },
       rules: {
