@@ -1,6 +1,6 @@
 //=============================================================================
 // RPG Maker MZ - Coreto Quests functions
-// coreto_Quests.js
+// Coreto_Quests.js
 //=============================================================================
 /*:
  * @target MZ
@@ -30,7 +30,7 @@ var coreto = coreto || {};
 
 // Função para adicionar um item
 coreto.addKeyItem = function () {
-  const pluginName = 'coreto_Quests';
+  const pluginName = 'Coreto_Quests';
 
   // Função para adicionar um item com feedback (mensagem e som)
   PluginManager.registerCommand(pluginName, 'addKeyItem', args => {
@@ -54,7 +54,7 @@ coreto.addKeyItem = function () {
 
 // Função para remover um item
 coreto.removeKeyItem = function () {
-  const pluginName = 'coreto_Quests';
+  const pluginName = 'Coreto_Quests';
 
   PluginManager.registerCommand(pluginName, 'removeKeyItem', args => {
     const itemID = Number(args.itemID);
