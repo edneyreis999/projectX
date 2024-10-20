@@ -3,3 +3,4 @@
 /node_modules
 /.history
 frontend/data/System.json
+frontend/save/
