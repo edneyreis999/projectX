@@ -13529,7 +13529,7 @@ KDCore.registerLibraryToLoad(function () {
             window.__kdSharedTextProTextColorSourceWindow = new Window_Base(0, 0, 0, 0);
           }
         }
-        this._parseAllText();
+        // this._parseAllText();
         return;
       }
 
@@ -13688,7 +13688,6 @@ KDCore.registerLibraryToLoad(function () {
               } else {
                 return (textState.color = '');
               }
-              break;
             case 'I':
               iconIndex = this._obtainEscapeParam(textState);
               if (iconIndex > 0) {
@@ -13698,7 +13697,6 @@ KDCore.registerLibraryToLoad(function () {
               } else {
                 return (textState.iconIndex = -1);
               }
-              break;
             case 'FS':
               fontSize = this._obtainEscapeParam(textState);
               return (textState.fontSize = fontSize);
