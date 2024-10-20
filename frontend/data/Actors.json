@@ -10,6 +10,6 @@ null,
 {"id":8,"battlerName":"Actor1_8","characterIndex":7,"characterName":"Actor1","classId":3,"equips":[7,0,0,20,0],"faceIndex":7,"faceName":"Actor1","traits":[],"initialLevel":1,"maxLevel":99,"name":"Roza","nickname":"","note":"","profile":""},
 {"id":9,"battlerName":"elf1_battler","characterIndex":0,"characterName":"elf_walk","classId":7,"equips":[38,0,0,8,74],"faceIndex":0,"faceName":"Elf1","traits":[],"initialLevel":1,"maxLevel":99,"name":"Elf Male","nickname":"","note":"","profile":""},
 {"id":10,"battlerName":"elf2_battler","characterIndex":1,"characterName":"elves_walk","classId":2,"equips":[7,0,66,23,73],"faceIndex":1,"faceName":"Elves","traits":[],"initialLevel":1,"maxLevel":99,"name":"Elf Female","nickname":"","note":"","profile":""},
-{"id":11,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"","nickname":"","note":"","profile":""},
-{"id":12,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"","nickname":"","note":"","profile":""}
+{"id":11,"battlerName":"dwarf1_battler","characterIndex":0,"characterName":"dwarves_walk","classId":4,"equips":[20,35,0,11,0],"faceIndex":0,"faceName":"Dwarves","traits":[],"initialLevel":1,"maxLevel":99,"name":"Dwarf Male","nickname":"","note":"","profile":""},
+{"id":12,"battlerName":"dwarf2_battler","characterIndex":1,"characterName":"dwarves_walk","classId":4,"equips":[20,35,55,11,0],"faceIndex":1,"faceName":"Dwarves","traits":[],"initialLevel":1,"maxLevel":99,"name":"Dwarf Female","nickname":"","note":"","profile":""}
 ]
