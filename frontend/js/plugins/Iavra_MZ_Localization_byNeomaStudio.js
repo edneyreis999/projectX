@@ -276,10 +276,7 @@ function IvCoreIsReady() {
  * conversion of the given data to String, since otherwise the function would crash, when invoked with a number.
  */
 var IvCoreReplace = function (text) {
-  console.log('IvCoreReplace');
-  console.log(text);
   if (text === undefined || text === null) {
-    console.log('text === undefined || text === null');
     return text;
   }
   var f = true;

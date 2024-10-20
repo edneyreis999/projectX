@@ -1,0 +1,83 @@
+{
+    "type": "screen",
+    "id": "mapQuestsListRoot",
+    "constants": {
+        "mouseInAnimation": "field:opacity;duration:0.5;keyframes:0=@,100=255",
+        "mouseOutAnimation": "field:opacity;duration:0.5;keyframes:0=@,100=90",
+        "spaceBetweenItems": "10hdp",
+        "minimumHeight": "100hdp",
+        "contentHeightPadding": "40hdp",
+        "maximumVisibleItemsInList": 10,
+        "autoResize": true,
+        "initialOpacity": 0
+    },
+    "bindings": {
+        "visible": "@!$gameSystem._sqsIsTaskWindowDisabled"
+    },
+    "childrens": [
+        {
+            "type": "group",
+            "id": "mapQuestsListContent",
+            "animations": [
+                "field:opacity;duration:0.5;keyframes:0=0,100=255;delay:0.5"
+            ],
+            "bindings": {
+                "width": "200hdp",
+                "height": "auto",
+                "x": "left",
+                "y": "center"
+            },
+            "childrens": [
+                {
+                    "type": "rect",
+                    "id": "mapQuestsListDynamicBackground",
+                    "parameters": {
+                        "corners": {
+                            "topRight": 16,
+                            "topLeft": 0,
+                            "bottomRight": 16,
+                            "bottomLeft": 0
+                        },
+                        "fillColor": "#2b2b2b",
+                        "fillAlpha": 0.75,
+                        "strokeWidth": 2,
+                        "strokeColor": "#703a00",
+                        "strokeAlpha": 0.7
+                    },
+                    "bindings": {
+                        "width": "100%",
+                        "height": "$allItemsHeight"
+                    }
+                },
+                {
+                    "type": "group",
+                    "id": "mapQuestsListItemsContainer",
+                    "bindings": {
+                        "width": "90%",
+                        "height": "auto",
+                        "x": "center",
+                        "y": "center"
+                    }
+                },
+                {
+                    "type": "text",
+                    "parameters": "textColor:#c9af1a;outline:width=2,color=#000000",
+                    "bindings": {
+                        "size": {
+                            "width": "60%",
+                            "height": "26hdp"
+                        },
+                        "fontSize": "15hdp",
+                        "position": {
+                            "x": "center",
+                            "y": "center"
+                        },
+                        "opacity": 200,
+                        "text": "You don't have any quests",
+                        "visible": "~$questsCount == 0"
+                    }
+                }
+            ]
+        }
+    ]
+}

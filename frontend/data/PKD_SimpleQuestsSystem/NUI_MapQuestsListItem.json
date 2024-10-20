@@ -1,0 +1,57 @@
+{
+    "type": "group",
+    "id": "mapQuestsListItem",
+    "constants": {
+        "defaultQuestNameColor": "#ffffff",
+        "activeQuestAppendText": "%1 ★",
+        "autoRefreshIntervalInSeconds": 1
+    },
+    "availableFields": [
+        "questName",
+        "questLastTaskText",
+        "questActivePointerColor",
+        "isQuestAreActiveNow",
+        "questDifficulty",
+        "questPriority",
+        "questLongName",
+        "quest {object}"
+    ],
+    "childrens": [
+        {
+            "type": "textPro",
+            "id": "questNameTextSpr",
+            "parameters": "outline:color=#000,width=2;alignment:left;trimWidth",
+            "bindings": {
+                "size": {
+                    "width": "200hdp",
+                    "height": "24hdp"
+                },
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "textColor": "$questActivePointerColor",
+                "text": ["%1", "$questName"],
+                "fontSize": "20hdp"
+            }
+        },
+        {
+            "type": "textPro",
+            "id": "questTaskTextSpr",
+            "parameters": "outline:color=#000,width=1;alignment:left;multiline;actualSize",
+            "bindings": {
+                "size": {
+                    "width": "prevWidth",
+                    "height": "@Graphics.height"
+                },
+                "position": {
+                    "x": "32hdp",
+                    "y": "prevEndY + 8"
+                },
+                "textColor": "#ccc",
+                "text": ["● %1", "$questLastTaskText"],
+                "fontSize": "14hdp"
+            }
+        }
+    ]
+}
