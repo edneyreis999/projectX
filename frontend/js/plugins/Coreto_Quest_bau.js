@@ -17,11 +17,6 @@
  * @text Start Quest
  * @desc Starts the quest with the specified quest ID.
  *
- * @arg questID
- * @type number
- * @text Quest ID
- * @desc The ID of the quest to start.
- *
  * @command interactWithChest
  * @text Interact With Chest
  * @desc Handles the interaction when the player tries to open the chest.
@@ -51,7 +46,7 @@
  *
  * @command interactWithChestFinal
  * @text Interact with the chest final
- * @desc Interact with the chest in the final phase and receive the reward
+ * @desc Interact with the chest in the final phase and receive the reward.
  *
  * @arg itemID
  * @type item
@@ -59,176 +54,122 @@
  * @desc The ID of the reward item.
  */
 
+const QUEST_BAU_ID = 'abrirBau';
+const TASKS = {
+  FIND_CHEST: 1,
+  TALK_TO_MAGE: 2,
+  TALK_TO_PRIEST: 3,
+  TALK_TO_WARRIOR: 4,
+  CATCH_DOG: 5,
+  CATCH_CAT: 6,
+  CATCH_PIG: 7,
+  OPEN_CHEST: 8,
+};
+
 var coreto = coreto || {};
 coreto.quests = coreto.quests || {};
+coreto.quests.bau = {};
 
-// Carrega as configurações do plugin
-coreto.quests.params = PluginManager.parameters('Coreto_Quest_bau');
-coreto.quests.questVariableId = Number(coreto.quests.params['questVariableId']);
+// Start the quest
+coreto.quests.bau.startQuest = function () {
+  console.log(`Quest "${QUEST_BAU_ID.valueOf()}" started.`);
 
-// Função para iniciar uma quest com base no ID fornecido
-coreto.quests.startQuest = function (questID) {
-  const quests = {
-    1: {
-      id: 'abrirBau',
-      title: 'Abrir o Baú misterioso',
-      tasks: ['Encontrar o Baú misterioso', 'Falar com a Maga', 'Falar com a Priest', 'Falar com o Guerreiro', 'Pegar o cachorro', 'Pegar o gato', 'Pegar o porco', 'Abrir o Baú'],
-    },
-    2: {
-      id: 'peguePorco',
-      title: 'Iniciou missãõ pegue o porco',
-      tasks: ['Encontrar o porco'],
-    },
-    // Outras quests podem ser adicionadas aqui...
-  };
-
-  const selectedQuest = quests[questID];
-  if (selectedQuest) {
-    // Armazena a quest na variável definida pelo desenvolvedor
-    $gameVariables.setValue(coreto.quests.questVariableId, selectedQuest);
-    console.log(`Missão "${selectedQuest.title}" iniciada.`);
-
-    // Adiciona a missão ao diário
-    SQSM.AddQuest(selectedQuest.id);
-
-    // Exibe o diário de missões
-    setTimeout(() => {
-      $gameMessage.add('Eu preciso abrir o baú');
-      SQSM.OpenQuestJournal();
-    }, 1000);
-  } else {
-    console.log('ID da missão inválido.');
-  }
-};
-
-// Função para interagir com o baú
-coreto.quests.interactWithChest = function () {
-  const quest = $gameVariables.value(coreto.quests.questVariableId);
-
-  if (quest && quest.id === 'abrirBau') {
-    // Diálogo do baú
-    $gameMessage.add('Eu não posso abrir sozinho');
-    $gameMessage.add('Talvez aqueles aventureiros saibam me ajudar');
-
-    // Atualiza a missão
-    SQSM.ShowDescriptionForQuest('abrirBau', 2);
-    SQSM.ShowTaskForQuest('abrirBau', 2);
-    SQSM.ShowTaskForQuest('abrirBau', 3);
-    SQSM.ShowTaskForQuest('abrirBau', 4);
-    SQSM.CompleteTaskForQuest('abrirBau', 1);
-
-    // Liga o switch para "unlockHelp"
-    $gameSwitches.setValue(1, true);
-
-    // Abre o diário de missões
+  SQSM.AddQuest(QUEST_BAU_ID);
+  setTimeout(() => {
+    $gameMessage.add('I need to open the chest');
     SQSM.OpenQuestJournal();
+  }, 1000);
+};
 
-    console.log('Interação com o baú concluída.');
-  } else {
-    console.log('Nenhuma missão ativa para o baú.');
+// Handle interaction with the chest
+coreto.quests.bau.interactWithChest = function () {
+  $gameMessage.add('I can’t open this alone.');
+  $gameMessage.add('Maybe the adventurers can help.');
+
+  SQSM.ShowDescriptionForQuest(QUEST_BAU_ID, 2);
+  SQSM.ShowTaskForQuest(QUEST_BAU_ID, TASKS.TALK_TO_MAGE);
+  SQSM.ShowTaskForQuest(QUEST_BAU_ID, TASKS.TALK_TO_PRIEST);
+  SQSM.ShowTaskForQuest(QUEST_BAU_ID, TASKS.TALK_TO_WARRIOR);
+  SQSM.CompleteTaskForQuest(QUEST_BAU_ID, TASKS.FIND_CHEST);
+
+  $gameSwitches.setValue(1, true); // Unlock help
+  SQSM.OpenQuestJournal();
+};
+
+// Handle adventurer interactions
+coreto.quests.bau.interactionWithAdventurers = function ({ npcID }) {
+  switch (npcID) {
+    case 4: // Pig quest
+      $gameMessage.add('Prove your worth by catching the pig.');
+      $gameSwitches.setValue(4, true); // Activates "catchPig"
+      SQSM.AddQuest('peguePorco');
+      SQSM.CompleteTaskForQuest(QUEST_BAU_ID, TASKS.TALK_TO_PRIEST);
+      SQSM.ShowTaskForQuest(QUEST_BAU_ID, TASKS.CATCH_PIG);
+      break;
+    case 3: // Dog quest
+      $gameMessage.add('Catch that dog to get my help.');
+      $gameSwitches.setValue(2, true); // Activates "catchDog"
+      SQSM.AddQuest('pegarCachorro');
+      SQSM.CompleteTaskForQuest(QUEST_BAU_ID, TASKS.TALK_TO_WARRIOR);
+      SQSM.ShowTaskForQuest(QUEST_BAU_ID, TASKS.CATCH_DOG);
+      break;
+    case 2: // Cat quest
+      $gameMessage.add('Catch the cat and prove your magic.');
+      $gameSwitches.setValue(3, true); // Activates "catchCat"
+      SQSM.AddQuest('pegueGato');
+      SQSM.CompleteTaskForQuest(QUEST_BAU_ID, TASKS.TALK_TO_MAGE);
+      SQSM.ShowTaskForQuest(QUEST_BAU_ID, TASKS.CATCH_CAT);
+      break;
+    default:
+      console.log('Invalid NPC ID.');
   }
 };
 
-// Função para interagir com o baú
-coreto.quests.interactionWithAdventurers = function (npcID) {
-  console.log(`interactionWithAdventurers`, npcID);
-  const quest = $gameVariables.value(coreto.quests.questVariableId);
+// Handle animal interaction
+coreto.quests.bau.interactionWithAnimals = function ({ questId, bauTaskId }) {
+  $gameMessage.add('Got you!');
 
-  if (quest && quest.id === 'abrirBau') {
-    // Verifica se o jogador já desbloqueou a ajuda (unlockHelp ativo)
-    if ($gameSwitches.value(1)) {
-      // Switch #0001 é o "unlockHelp"
-      switch (npcID) {
-        case 4: // NPC que dá a missão de pegar o porco
-          $gameMessage.add('Pegue o porco para provar que você é digno');
-          $gameSwitches.setValue(4, true); // Ativa "peguePorco"
-          SQSM.AddQuest('peguePorco');
-          SQSM.CompleteTaskForQuest('abrirBau', 3);
-          SQSM.ShowTaskForQuest('abrirBau', 7);
-          break;
-        case 3: // NPC que dá a missão de pegar o cachorro
-          $gameMessage.add('Vejo que precisa de ajuda para abrir o baú.');
-          $gameMessage.add('Pegue aquele cachorro para mim que eu te ajudo.');
-          $gameSwitches.setValue(2, true); // Ativa "pegarCachorro"
-          SQSM.AddQuest('pegarCachorro');
-          SQSM.CompleteTaskForQuest('abrirBau', 4);
-          SQSM.ShowTaskForQuest('abrirBau', 5);
-          break;
-        case 2: // NPC que dá a missão de pegar o gato
-          $gameMessage.add('Pegue o gato e prove que você tem magia');
-          $gameSwitches.setValue(3, true); // Ativa "pegarGato"
-          SQSM.AddQuest('pegueGato');
-          SQSM.CompleteTaskForQuest('abrirBau', 2);
-          SQSM.ShowTaskForQuest('abrirBau', 6);
-          break;
-        default:
-          console.log('ID de NPC inválido.');
-      }
-    }
-  } else {
-    console.log('Nenhuma missão ativa ou não é a missão correta.');
-  }
-};
-
-// Função para interagir com animais
-coreto.quests.interactionWithAnimals = function (animal) {
-  // Exibe mensagem de captura
-  $gameMessage.add('Peguei você!');
-
-  // Aumenta o contador de missões concluídas
-  const adventureQuestVar = 2; // ID da variável adventuresQuests
+  const adventureQuestVar = 2; // ID of adventuresQuests variable
   $gameVariables.setValue(adventureQuestVar, $gameVariables.value(adventureQuestVar) + 1);
 
-  // Completa a quest do animal
-  SQSM.CompletQuest(animal.questId);
-  SQSM.CompleteTaskForQuest(animal.questId, 1);
-  SQSM.CompleteTaskForQuest('abrirBau', animal.bauTaskId);
+  SQSM.CompletQuest(questId);
+  SQSM.CompleteTaskForQuest(questId, 1);
+  SQSM.CompleteTaskForQuest(QUEST_BAU_ID, bauTaskId);
 
-  // Verifica se todas as missões dos animais foram concluídas
   if ($gameVariables.value(adventureQuestVar) >= 3) {
     SQSM.OpenQuestJournal();
-    SQSM.ShowTaskForQuest('abrirBau', 8); // Atualiza a tarefa do baú
+    SQSM.ShowTaskForQuest(QUEST_BAU_ID, TASKS.OPEN_CHEST);
   }
 };
 
-// Função para interagir com o baú e receber a recompensa
-coreto.quests.interactWithChestFinal = function (itemId) {
-  // Usa a função addKeyItem do plugin existente
-  coreto.addKeyItem(itemId);
-
-  // Completa a tarefa final e a missão do baú
-  SQSM.CompleteTaskForQuest('abrirBau', 8);
-  SQSM.CompletQuest('abrirBau');
+// Handle final chest interaction and reward
+coreto.quests.bau.interactWithChestFinal = function ({ itemID }) {
+  console.log('Opening the chest...');
+  console.log(`Received item ID: ${itemID}`);
+  coreto.addKeyItem({ itemID });
+  SQSM.CompleteTaskForQuest(QUEST_BAU_ID, TASKS.OPEN_CHEST);
+  SQSM.CompletQuest(QUEST_BAU_ID);
 };
 
-// Registra o comando para iniciar a quest
-PluginManager.registerCommand('Coreto_Quest_bau', 'startQuest', args => {
-  const questID = Number(args.questID);
-  coreto.quests.startQuest(questID);
+// Register commands
+PluginManager.registerCommand('Coreto_Quest_bau', 'startQuest', () => {
+  coreto.quests.bau.startQuest();
 });
 
-// Registra o comando para interagir com o baú
 PluginManager.registerCommand('Coreto_Quest_bau', 'interactWithChest', () => {
-  coreto.quests.interactWithChest();
+  coreto.quests.bau.interactWithChest();
 });
 
-// Registra o comando para interagir com o baú
 PluginManager.registerCommand('Coreto_Quest_bau', 'interactionWithAdventurers', args => {
   const npcID = Number(args.npcID);
-  coreto.quests.interactionWithAdventurers(npcID);
+  coreto.quests.bau.interactionWithAdventurers({ npcID });
 });
 
-// Registra o comando para interagir com o baú
 PluginManager.registerCommand('Coreto_Quest_bau', 'interactionWithAnimals', args => {
-  const animal = {
-    questId: args.questId, // ID da quest do animal (pegarCachorro, peguePorco, etc.)
-    bauTaskId: Number(args.bauTaskId), // ID da tarefa correspondente ao baú
-  };
-  coreto.quests.interactionWithAnimals(animal);
+  coreto.quests.bau.interactionWithAnimals(args);
 });
 
-// Registra o comando para interagir com o baú e receber a recompensa
 PluginManager.registerCommand('Coreto_Quest_bau', 'interactWithChestFinal', args => {
-  const itemId = Number(args.itemID);
-  coreto.quests.interactWithChestFinal(itemId);
+  const itemID = Number(args.itemID);
+  coreto.quests.bau.interactWithChestFinal({ itemID });
 });
