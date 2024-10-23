@@ -1,6 +1,7 @@
 [
 null,
 {"id":1,"expanded":true,"name":"SQS_Test","order":1,"parentId":0,"scrollX":811,"scrollY":469.5},
-{"id":2,"expanded":false,"name":"MAP002","order":2,"parentId":0,"scrollX":978.8571428571428,"scrollY":615.4285714285714,"quick":false},
-{"id":3,"expanded":true,"name":"Ekios","order":3,"parentId":0,"scrollX":2224,"scrollY":1096.5}
+{"id":2,"expanded":false,"name":"MAP002","order":3,"parentId":0,"scrollX":978.8571428571428,"scrollY":615.4285714285714,"quick":false},
+{"id":3,"expanded":true,"name":"Ekios","order":4,"parentId":0,"scrollX":2162.6666666666665,"scrollY":1353.3333333333333},
+{"id":4,"expanded":true,"name":"SQS_Test_JS","order":2,"parentId":0,"scrollX":2162.6666666666665,"scrollY":1273.3333333333333}
 ]
