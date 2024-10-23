@@ -34,6 +34,20 @@
  * @type number
  * @text NPC ID
  * @desc The ID of the npc to interact with.
+ *
+ * @command interactionWithAnimals
+ * @text Interact with the animals
+ * @desc Handles the interaction when interacting with the animals.
+ *
+ * @arg questId
+ * @type string
+ * @text Quest ID
+ * @desc The ID of the quest related to the animal (e.g., pegarCachorro, peguePorco).
+ *
+ * @arg bauTaskId
+ * @type number
+ * @text Baú Task ID
+ * @desc The ID of the task related to the Baú quest.
  */
 
 var coreto = coreto || {};
@@ -50,6 +64,11 @@ coreto.quests.startQuest = function (questID) {
       id: 'abrirBau',
       title: 'Abrir o Baú misterioso',
       tasks: ['Encontrar o Baú misterioso', 'Falar com a Maga', 'Falar com a Priest', 'Falar com o Guerreiro', 'Pegar o cachorro', 'Pegar o gato', 'Pegar o porco', 'Abrir o Baú'],
+    },
+    2: {
+      id: 'peguePorco',
+      title: 'Iniciou missãõ pegue o porco',
+      tasks: ['Encontrar o porco'],
     },
     // Outras quests podem ser adicionadas aqui...
   };
@@ -142,6 +161,27 @@ coreto.quests.interactionWithAdventurers = function (npcID) {
   }
 };
 
+// Função para interagir com animais
+coreto.quests.interactionWithAnimals = function (animal) {
+  // Exibe mensagem de captura
+  $gameMessage.add('Peguei você!');
+
+  // Aumenta o contador de missões concluídas
+  const adventureQuestVar = 2; // ID da variável adventuresQuests
+  $gameVariables.setValue(adventureQuestVar, $gameVariables.value(adventureQuestVar) + 1);
+
+  // Completa a quest do animal
+  SQSM.CompletQuest(animal.questId);
+  SQSM.CompleteTaskForQuest(animal.questId, 1);
+  SQSM.CompleteTaskForQuest('abrirBau', animal.bauTaskId);
+
+  // Verifica se todas as missões dos animais foram concluídas
+  if ($gameVariables.value(adventureQuestVar) >= 3) {
+    SQSM.OpenQuestJournal();
+    SQSM.ShowTaskForQuest('abrirBau', 8); // Atualiza a tarefa do baú
+  }
+};
+
 // Registra o comando para iniciar a quest
 PluginManager.registerCommand('Coreto_Quest_bau', 'startQuest', args => {
   const questID = Number(args.questID);
@@ -157,4 +197,13 @@ PluginManager.registerCommand('Coreto_Quest_bau', 'interactWithChest', () => {
 PluginManager.registerCommand('Coreto_Quest_bau', 'interactionWithAdventurers', args => {
   const npcID = Number(args.npcID);
   coreto.quests.interactionWithAdventurers(npcID);
+});
+
+// Registra o comando para interagir com o baú
+PluginManager.registerCommand('Coreto_Quest_bau', 'interactionWithAnimals', args => {
+  const animal = {
+    questId: args.questId, // ID da quest do animal (pegarCachorro, peguePorco, etc.)
+    bauTaskId: Number(args.bauTaskId), // ID da tarefa correspondente ao baú
+  };
+  coreto.quests.interactionWithAnimals(animal);
 });
