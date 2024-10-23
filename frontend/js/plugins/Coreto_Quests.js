@@ -27,54 +27,51 @@
  */
 
 var coreto = coreto || {};
+const pluginName = 'Coreto_Quests';
 
 // Função para adicionar um item
-coreto.addKeyItem = function () {
-  const pluginName = 'Coreto_Quests';
+coreto.addKeyItem = function (itemID) {
+  const item = $dataItems[itemID]; // Obtém o item pelo ID
 
-  // Função para adicionar um item com feedback (mensagem e som)
-  PluginManager.registerCommand(pluginName, 'addKeyItem', args => {
-    const itemID = Number(args.itemID);
-    const item = $dataItems[itemID]; // Obtém o item pelo ID
+  // Adiciona o item ao inventário
+  $gameParty.gainItem(item, 1);
 
-    // Adiciona o item ao inventário
-    $gameParty.gainItem(item, 1);
+  // Toca o som de efeito (SE) ao receber o item
+  AudioManager.playSe({ name: 'Item3', volume: 90, pitch: 100, pan: 0 });
 
-    // Toca o som de efeito (SE) ao receber o item
-    AudioManager.playSe({ name: 'Item3', volume: 90, pitch: 100, pan: 0 });
-
-    // Exibe a mensagem com o nome e ícone do item
-    $gameMessage.setPositionType(0);
-    const itemIcon = `\\i[${item.iconIndex}]`; // Obtém o ícone do item
-    const itemName = item.name; // Define o nome do item
-    const message = `#{System.received} ${itemIcon} \\c[4]${itemName}\\c[0]!`; // Mensagem de recebimento
-    $gameMessage.add(message);
-  });
+  // Exibe a mensagem com o nome e ícone do item
+  $gameMessage.setPositionType(0);
+  const itemIcon = `\\i[${item.iconIndex}]`; // Obtém o ícone do item
+  const itemName = item.name; // Define o nome do item
+  const message = `#{System.received} ${itemIcon} \\c[4]${itemName}\\c[0]!`; // Mensagem de recebimento
+  $gameMessage.add(message);
 };
 
 // Função para remover um item
-coreto.removeKeyItem = function () {
-  const pluginName = 'Coreto_Quests';
+coreto.removeKeyItem = function (itemID) {
+  const item = $dataItems[itemID]; // Obtém o item pelo ID
 
-  PluginManager.registerCommand(pluginName, 'removeKeyItem', args => {
-    const itemID = Number(args.itemID);
-    const item = $dataItems[itemID]; // Obtém o item pelo ID
+  // Remove o item do inventário
+  $gameParty.loseItem($dataItems[itemID], 1);
 
-    // Remove o item do inventário
-    $gameParty.loseItem($dataItems[itemID], 1);
+  // Toca o som de efeito (SE) ao receber o item
+  AudioManager.playSe({ name: 'Item3', volume: 90, pitch: 100, pan: 0 });
 
-    // Toca o som de efeito (SE) ao receber o item
-    AudioManager.playSe({ name: 'Item3', volume: 90, pitch: 100, pan: 0 });
-
-    // Exibe a mensagem com o nome e ícone do item
-    $gameMessage.setPositionType(0);
-    const itemIcon = `\\i[${item.iconIndex}]`; // Obtém o ícone do item
-    const itemName = item.name; // Define o nome do item
-    const message = `Usou ${itemIcon} \\c[2]${itemName}\\c[0]!`; // Mensagem de recebimento
-    $gameMessage.add(message);
-  });
+  // Exibe a mensagem com o nome e ícone do item
+  $gameMessage.setPositionType(0);
+  const itemIcon = `\\i[${item.iconIndex}]`; // Obtém o ícone do item
+  const itemName = item.name; // Define o nome do item
+  const message = `Usou ${itemIcon} \\c[2]${itemName}\\c[0]!`; // Mensagem de recebimento
+  $gameMessage.add(message);
 };
 
-// Chama as funções para registrar os comandos
-coreto.addKeyItem();
-coreto.removeKeyItem();
+// Função para adicionar um item com feedback (mensagem e som)
+PluginManager.registerCommand(pluginName, 'addKeyItem', args => {
+  const itemID = Number(args.itemID);
+  coreto.addKeyItem(itemID);
+});
+
+PluginManager.registerCommand(pluginName, 'removeKeyItem', args => {
+  const itemID = Number(args.itemID);
+  coreto.removeKeyItem(itemID);
+});
