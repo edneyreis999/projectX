@@ -48,6 +48,15 @@
  * @type number
  * @text Baú Task ID
  * @desc The ID of the task related to the Baú quest.
+ *
+ * @command interactWithChestFinal
+ * @text Interact with the chest final
+ * @desc Interact with the chest in the final phase and receive the reward
+ *
+ * @arg itemID
+ * @type item
+ * @text Item ID
+ * @desc The ID of the reward item.
  */
 
 var coreto = coreto || {};
@@ -182,6 +191,16 @@ coreto.quests.interactionWithAnimals = function (animal) {
   }
 };
 
+// Função para interagir com o baú e receber a recompensa
+coreto.quests.interactWithChestFinal = function (itemId) {
+  // Usa a função addKeyItem do plugin existente
+  coreto.addKeyItem(itemId);
+
+  // Completa a tarefa final e a missão do baú
+  SQSM.CompleteTaskForQuest('abrirBau', 8);
+  SQSM.CompletQuest('abrirBau');
+};
+
 // Registra o comando para iniciar a quest
 PluginManager.registerCommand('Coreto_Quest_bau', 'startQuest', args => {
   const questID = Number(args.questID);
@@ -206,4 +225,10 @@ PluginManager.registerCommand('Coreto_Quest_bau', 'interactionWithAnimals', args
     bauTaskId: Number(args.bauTaskId), // ID da tarefa correspondente ao baú
   };
   coreto.quests.interactionWithAnimals(animal);
+});
+
+// Registra o comando para interagir com o baú e receber a recompensa
+PluginManager.registerCommand('Coreto_Quest_bau', 'interactWithChestFinal', args => {
+  const itemId = Number(args.itemID);
+  coreto.quests.interactWithChestFinal(itemId);
 });

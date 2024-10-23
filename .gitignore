@@ -3,3 +3,7 @@
 /node_modules
 /.history
 frontend/data/System.json
+.DS_Store
+frontend/save/config.rmmzsave
+frontend/save/global.rmmzsave
+frontend/save/file0.rmmzsave
