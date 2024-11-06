@@ -1,0 +1,977 @@
+:: StoryTitle
+Ekios Épic Quest
+
+
+:: StoryData
+{
+  "ifid": "2AFAA590-6B69-49F7-9649-041BBF4F2383",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Daratrine a Origem",
+  "zoom": 0.6
+}
+
+
+:: A Volta Para Casa {"position":"3300,700","size":"100,100"}
+
+
+
+:: Campo dos Machados Enferrujados. {"position":"100,2400","size":"100,100"}
+ 
+(align:"<==>")+(box:"X=")[Um estádio oval, com grama bem aparada, porém, de baixa qualidade (são times da segunda divisão, afinal de contas). Também existem duas arquibancadas, uma do lado direito e outra do lado esquerdo do campo, além do vestiário simples na parte superior pelo qual o jogador passa assim que entra no campo. 
+]
+
+
+:: Casa da Família Forjaprata {"position":"100,1300","size":"100,100"}
+
+(align:"<==>")+(box:"X=")[Situada na cidade de Gildrat, império anão em cosntante evolução científica, abriga a morada dos Forjaprata, uma estrutura grande, com forja, biblioteca, sala e cozinha. Trata-se da família mais rica e influênte da cidade, com excessão da família real.]
+
+
+:: Chegue ao campo {"position":"200,1900","size":"100,100"}
+(text-colour:yellow)[Quest ativa: Chegue ao campo]
+
+Cenário: - [[Distrito habitacional nobre]]
+- [[Distrito comercial nobre]]
+
+(text-colour:cyan)[(align:"<==>")+(box:"X=")[O jogador corre em direção ao campo.]]
+
+(text-colour:yellow)[Task: Chegue ao estádio ]
+
+(text-colour:yellow)[Task: Entre no campo]
+
+(text-colour:yellow)[Task: Fale com o treinador Dragobur]
+
+[[Falar com o treinador Dragobur]]
+
+(align:"<==>")+(box:"X=")[(text-colour:magenta)[Nota para o desenvolvedor: Vamos inserir uma pequena placa do lado de fora do estádio de futebol rúnico, com os dizeres: "Estádio dos Machados Enferrujados."]]
+
+
+:: Coreto {"position":"100,1150","size":"100,100"}
+
+
+O que é um Coreto? - (align:"<==>")+(box:"X=")[Coreto é uma cobertura, situada ao ar livre, em praças e jardins, para abrigar bandas musicais em concertos, festas e romarias. É sempre construído estratégicamente, perto de igrejas ou capelas. Também é usado para apresentações políticas.]
+
+Descrição do local:  (align:"<==>")+(box:"X=")[Palco elevado e de madeira maciça, montado para contar histórias. Os expectadores se sentam ao redor ou à frente para apreciar as apresentações.]
+
+
+:: Daratrine a Origem {"position":"100,900","size":"100,100"}
+Daratrine - A Origem
+
+[[Novo Jogo]]
+
+
+
+
+:: Distrito comercial Central {"position":"500,500","size":"100,100"}
+(align:"<==>")+(box:"X=")[O Distrito Comercial Central de Gildrat é o coração pulsante do Império Anão, onde o prático encontra o acessível. Construído com o típico esmero anão, suas ruas são pavimentadas em pedras polidas. Arquearias robustas e fachadas rústicas em pedra abrigam uma variedade de estabelecimentos: de tavernas movimentadas a lojas de artesanato e forjas, onde artesãos exibem suas peças. Mercadores de especiarias, tecelões e cervejeiros se misturam com transeuntes de todos os bairros, fazendo deste ponto uma verdadeira interseção social.]
+
+(align:"<==>")+(box:"X=")[É também um corredor crucial, ligando o bairro nobre ao norte com todas as outras alas da cidade, funcionando como ponto de passagem e de convivência. Bustos e estandartes de grandes figuras do império são comuns nas esquinas.]
+
+
+:: Distrito comercial nobre {"position":"100,1500","size":"100,100"}
+
+(align:"<==>")+(box:"X=")[É repleto de construções robustas de pedra escura, cada uma ostentando brasões de famílias anãs em alto-relevo nas fachadas, simbolizando o orgulho desse povo pela sua herança. As lojas possuem portas de madeira grossa, reforçadas com ferragens ornamentadas e pequenas janelas de vidro protegido. Há uma ampla praça entre as lojas, com uma imponente estátua de bronze do imperador Dambur, segurando uma machado em pose de bravura.]
+
+
+:: Distrito habitacional nobre {"position":"100,2100","size":"100,100"}
+(align:"<==>")+(box:"X=")[O bairro é caracterizado por casas feitas de mármore branco e basalto negro. Cada residência possui uma porta de entrada chamativa e imponente, adornada com runas de anão e pedras preciosas. Sua característica é ter poucas casas, ruas largas de pedra polida e pequenos jardins.]
+
+
+:: Elmo {"position":"900,1600","size":"100,100"}
+(text-colour:yellow)[Quest ativa: O elmo perdido]
+
+Cenário - [[Campo dos Machados Enferrujados.]] 
+
+(text-colour:cyan)[Thorin vê Baelin se sentando na arquibancada.]
+
+Linhas de diálogo:
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Thorin:] "Baelin, amigo! Eu preciso de um elmo emprestado!"]
+
+(text-colour:cyan)[Baelin reponde em tom de piada:]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Baelin:] "Não precisa implorar, Thorin. Mas até que seria divertido! Vamos, pegue meu elmo e nos leve para a final do campeonato!"]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Thorin:] "Pode apostar que eu vou!"]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Baelin:] "Vão fazer a jogada dos duplos campeões?! Você e Filin estavam treinando bastante!"]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Thorin: ] " Quem sabe! Eu tenho que ir, obrigado!"]
+
+(text-colour:cyan)[Thorin volta ao campo para falar com Dragobur:]
+
+(text-colour:yellow)[Quest: [[Entrar no campo]]]
+(text-colour:yellow)[Task: Mostre o elmo ao treinador e entre no campo.]
+
+(align:"<==>")+(box:"X=")[(text-colour:magenta)[Nota para o desenvolvedor: Baelin estava no banheiro, Thorin o vê retornando à arquibancada e vai direto falar com ele.]]
+
+
+:: Encontre uma Roupa {"position":"1600,900","size":"100,100"}
+(text-colour:yellow)[Quest ativa: Encontre uma Roupa]
+
+Cenário - [[Distrito comercial Central]] 
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Eles seguem Tharok até uma loja com fachada verde, com outro brasão de família ao lado do dizeres AGULHA EM BRASA, Forja e Costura. Tharok se direge ao atendente:]]
+
+Linhas de diálogo:
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Guarda Tharok:] "Por favor, mostre a eles a cota de malha feita com prata das montanhas e ombreiras de couro vermelho que me mostrou ontem."]
+
+(text-colour:cyan)[Um velho senhor anão mostra a eles, orgulhoso, a cota de malha forjada por ele e as ombreiras em couro costuradas por sua esposa.]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Thorin: ] "É lindo. Realmente uma peça capaz de impressionar qualquer um. ]
+
+(text-colour:cyan)[Fala do Guarda Kilin:] "Nós vamos levar. Vista o garoto, por favor!"
+
+(text-colour:cyan)[Fala do Vendedor: ] "Primeiro o pagamento!"
+
+(text-colour:cyan)[Thorin esvazia os bolsos, mas não encontra sequer uma moeda. O velho faz uma careta para ele e retira as peças de cima do balcão.]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Guarda Kilin:] "Não tem jeito. Um de nós três terá que pagar do próprio bolso e depois acertar os valores com Tordan."]
+
+(text-colour:cyan)[Fala do Guarda Mhordred:] "E quanto custa?
+
+[Fala do Atendente:] "20.000 Drákeis!"
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do  do Guarda Mhordred:] "Santa criação! As minhas barbas já estão esbranquiçadas e, mesmo assim, nunca tinha visto algo tão caro na vida antes!"]
+
+(text-colour:cyan)[Fala do Guarda Kilin:] "Acho que não temos escolha, Mhordred."
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Guarda Tharok:] "Eu adoraria pagar, mas só tenho 30 drákeis."]
+
+(text-colour:cyan)[Thorin, Kilin e Tharok encaram Mhordred.]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Guarda Mhordred:] "Por que estão olhando para mim? Pela barba do imperador! Eu não vou pagar!"]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Thorin:] "Perfeito! Então que tal voltarmos ao plano original? Vocês ainda podem me deixar ir treinar."]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Os três guardas encaram Thorin, com uma expressão moderada de raiva. A garoto baixa a cabeça e a atenção de Kilin e Tharok se volta novamente para Mhordred.]]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Guarda Kilin:] "Você é o único de nós três que tem 20.000 drákeis agora."]
+
+(text-colour:cyan)[Mhordred se enfurece.]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Guarda Mhordred: ] "Porque eu acabei de vender a minha casa! O primeiro filho do meu filho nasceu. Nada deixa um anão mais orgulhoso. Minha linhagem continuará a fazer parte da história. Quero estar mais perto deles."]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Guarda Tharok:] "E acha que vai acontecer com a sua linhagem se a mão do imperador souber que se negou a ajudar o único herdeiro dele?!"]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Mhordred acaba cedendo. Ele entrega as moedas de ouro ao dono do estabelecimento. Thorin se veste e enfim fica pronto para encontrar o senhor Balastrus. Os três acompanham o garoto até a entrada da taverna e se despedem. Kilin e Tharok estão felizes, mas Mhordred ainda está furioso.]]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Guarda Mhordred:] "É melhor você fazer isso valer a pena, moleque!"]
+
+(text-colour:yellow)[Quest: [[Primeiro Contrato]]]
+(text-colour:yellow)[Task: Entre na taverna e fale com o senhor Balastrus.]
+
+(text-colour:magenta)[(align:"<==>")+(box:"X=")[Nota para o desenvolvedor: É necessário criar essa nova interação, tanto a visita à loja quanto a conversa entre os quatro, até o momento em que deixam Thorin na entrada da taverna.]]
+
+(align:"<==>")+(box:"X=")[(text-colour:magenta)[Notas para o roteirista: tirar moeda de ouro, deixar só os drákeis.]]
+
+
+:: Entrar no campo {"position":"500,1500","size":"100,100"}
+(text-colour:yellow)[Quest ativa: entrar no campo]
+
+Cenário - [[Campo dos Machados Enferrujados.]] 
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Depois de Thorin completar as duas missões, Dragobur reconhece sua competência.]]
+
+Linhas de diálogo:
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Dragobur:] "Eu tenho que reconhecer, você nunca decepciona! Agora pare de perder tempo, ligue o constructo e entre em campo. Só temos mais um minuto, tempo suficiente para uma última jogada. Não faça nada arriscado, você me entendeu?"]
+
+(text-colour:cyan)[Fala do Thorin:] "Deixa comigo, treinador!"
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Thorin entra no campo. Filin já está lá, participando da partida. Assim que ele vê Thorin, grita para amigo: ]]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Filin:] "Até que enfim, achei que tinha ficado com medo e desistido!"]
+
+(text-colour:cyan)[E a próxima missão é liberada: ]
+
+(text-colour:yellow)[Quest: Fazer a jogada final:]
+
+(align:"<==>")+(box:"X=")[(text-colour:yellow)[Task: Escolher entre a jogada de risco e a jogada segura.]]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[O jogador agora tem a missão de escolher qual jogada fará. Vai obedecer ao técnico e ficar no padrão, ou tentar uma jogada arriscada em que vinha trabalhando com seu amigo Filin? De qualquer forma, as duas opções o farão vencer o jogo, porém as linhas de diálogo mudam de acordo com a escolha,]]
+
+(text-colour:cyan)[Opção 1 - Linhas de diálogo da jogada segura:]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Thorin:] "Eu, com medo? Nunca! Vamos seguir o manual, jogada 23. Não podemos arriscar muito."]
+
+(text-colour:cyan)[Opção 2 - Linhas de diálogo da jogada arriscada:]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Thorin: ] "Eu, com medo? Nunca! Você está pronto para a jogada dos campeões?! Nós vmos com tudo!"]
+
+[[Jogada segura]]
+[[Jogada arriscada]]
+
+
+:: Estrada do Cão-luar {"position":"2100,300","size":"100,100"}
+
+(text-colour:yellow)[Quest ativa: Estrada do Cão-Luar]
+
+Cenário - [[Estrada do Cão-luar Lore]]
+
+(text-colour:cyan)[(align:"<==>")+(box:"X=")[Thorin, ao deixar a Taverna da Pedra Vulcânica, seguiu direto para a estrada do cão-luar. De longe, mesmo com tanta poeira, pôde avistar um anão caolho de postura rígida, observando atentamente a trilha. O sol do meio-dia ilumina as colinas ao redor, criando sombras longas e sinistras na trilha à frente.]]
+
+Linhas de diálogo -
+
+(text-colour:cyan)[Fala do Thorin:] "Com licença... Você é o Tusk? Balastrus me mandou até aqui."
+
+(text-colour:cyan)[Tusk olha de cima a baixo, seu único olho avaliando cada detalhe de Thorin.]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Tusk:] "Sim, eu sou Tusk. Então você é o novo garoto da expedição. Balastrus sempre manda novatos... Espero que tenha coragem para o trabalho pesado."]
+
+(text-colour:cyan)[Thorin engole em seco, mas mantém a postura firme. O anão estende um saco de couro, pesado com o equipamento.]
+
+(text-colour:cyan)[Tusk entrega a Thorin o equipamento e um mapa da mina de Kravens, marcando as áreas onde criaturas foram avistadas recentemente.]
+
+Linhas de diálogo -
+
+(text-colour:cyan)[Fala do Tusk:] "Vamos ver o quanto você aprende rápido. Está com o contrato?"
+
+(text-colour:cyan)[Fala do Thorin:] "Está bem aqui."
+
+(text-colour:cyan)[Fala do Tusk:] "Ótimo, passa pra cá!"
+
+(text-colour:cyan)[Thorin entrega o contrato ao Tusk.]
+
+(text-colour:cyan)[Fala do Thorin:] "E quanto aos outros contratados da expedição?"
+
+(text-colour:cyan)[Fala do Tusk: ] "Estão mais à frente, depois da curva. Você pode esperar com eles.
+
+(text-colour:cyan)[Thorin caminha até o fim do mapa e, no meio do caminho, passa por uma tenda de cor verde, montada às pressas. Ele para, pois escuta uma discussão exaltada lá dentro. Ele reconhece as vozes, são Mhordred, Tarok e... Kilin.]
+
+Linha de diálogo: 
+
+(text-colour:cyan)[Fala do Thorin:] "Mhordred, Tarok e... Kilin? O que eles estão fazendo aqui?"
+
+(text-colour:cyan)[Thorin resolve aguardar. De repente, os três guardas reais, acompanhados por Balastrus, saem da tenda. Todos estão furiosos.]
+
+Linhas de diálogo -
+
+(text-colour:cyan)[Fala do Guarda Mhordred:] "Isso não está aberto a discussão, Balastrus. Se Thorin se machucar, nossas cabeças é que serão cortadas, não a sua!"
+
+(text-colour:cyan)[Fala do Guarda Kilin:] "Exatamente, nós vamos com vocês!
+
+(text-colour:cyan)[Balastrus finalmente cede.]
+
+(text-colour:cyan)[Fala do Balastrus:] "Como quiserem. Porém, não vou permitir que interferam no trabalho dele. Ordens do próprio Tordan. A única função de vocês será protegê-lo. Se não houver necessidade, os três só vão observar. Está claro?!"
+
+(text-colour:cyan)[Fala do Guarda Tharok: ] "Cristalino."
+
+(text-colour:cyan)[Os três observam Thorin, mas não dizem mais nada.]
+
+(text-colour:yellow)Quest: [[Pé na Estrada]]
+(text-colour:yellow)[Task: Parta para a Mina de Kravens com o grupo. Encontre Tusk e siga com a expedição.]
+
+(text-colour:cyan)[Os quatro se juntam ao resto do grupo e veem Tusk tomar a frente. A marcha começa e Gildrat vai ficando para trás.]
+
+(align:"<==>")+(box:"X=")[(text-colour:magenta)[Nota para o desenvolvedor: O mapa de Tusk deve ser entregue e adicionado aos itens do jogador.]]
+
+
+:: Estrada do Cão-luar Lore {"position":"700,200","size":"100,100"}
+(align:"<==>")+(box:"X=")[A Estrada do Cão-Luar, também conhecida como Estrada Proibida,  parte dos portões centrais de Gildrat, extendendo-se como um bastião de pedra e metal. É uma paisagem de penhascos íngremes e vastos desfiladeiros, com a estrada de cascalho se desenrolando entre colinas rochosas e sinuosos vales cobertos de névoa. Criaturas perigosas rondam por lá e muitos anões perderam suas vidas em expedições.]
+
+
+
+:: Está na hora de crescer {"position":"1300,500","size":"100,100"}
+(text-colour:yellow)[Quest ativa: Está na Hora de Crescer]
+
+Cenário - [[Distrito comercial Central]] 
+
+(text-colour:cyan)[Thorin segue Kilin e os outros guardas até o centro da cidade.]
+
+Linhas de diálogo:
+
+(text-colour:cyan)[Fala do Guarda Kilin: ] "Ali está, a Taverna da Pedra Vulcânica."
+
+(text-colour:cyan)[Kilin aponta com o dedo.]
+
+(text-colour:cyan)[Fala do Thorin:] "Ainda podemos voltar, não é tarde demais.
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Guarda Mhordred: ] "Nem pensar, seu pai iria nos banir por isso."]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Guarda Tharok:] "Nós só vamos até aqui, siga em frente, garoto. E não fuja, não queremos ter que arrastá-lo de volta aos gritos. Está na hora de crescer."]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Guarda Mhordred: ] Espera! Vamos mesmo deixar que ele encontre Tibério Balastrus assim? Vestido com roupa de futebol rúnico?!]
+
+(text-colour:cyan)[Os outros guardas olham para Thorin.]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Guarda Kilin:] "Ele tem razão. Temos que comprar algo novo para ele.]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Guarda Tharok:] "Eu conheço o lugar perfeito, venham comigo!"]
+
+
+(text-colour:yellow)[Quest: [[Encontre uma Roupa]]]
+(text-colour:yellow)[Task: Siga Tharok e os outros até a loja de roupas.]
+
+(align:"<==>")+(box:"X=")[(text-colour:magenta)[Nota para o desenvolvedor: A dinâmica nessas cenas mudará um pouco. Alérm de Thorin estar acompanhado pelos guardas, não mais entrarão numa loja de bebida, mas em uma  loja de roupa.]]
+
+
+:: Falar com o treinador Dragobur {"position":"400,2100","size":"100,100"}
+(text-colour:yellow)[Quest ativa: Chegar ao campo.]
+
+Cenário - [[Campo dos Machados Enferrujados.]]  
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Thorin vai ao encontro do treinador Dragobur, que está na beira do campo fazendo cara de poucos amigos, obsevando o jogo que já começou.]]
+
+Linhas de diálogo:
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Dragobur:] "Você estrá atrasado, Thorin."]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Thorin: ]"Me desculpe, treinador Dragobur. Não vai acontecer de novo."]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Dragobur: ]"Você sempre diz isso, mas nunca chega na hora. Hoje nós estamos passando vergonha! Estamos perdendo por muito, Thorin. A válvula de ignição do constructo sumiu, então..." ]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Thorin: ]"Mas não se pode jogar futebol rúnico sem um constructo. Essas máquinas foram projetadas para substituirem os jogadores da defesa, sem isso.."]
+
+(text-colour:cyan)[Dragobur interrompe Thorin antes que ele possa terminar de falar.]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Dragobur:] "E por que acha que estamos perdendo, gênio!?"]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Thorin:] "Tem razão, treinador. Mas como isso aconteceu?!"]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Dragobur: ] "E isso importa? Encontre a válvula, rápido!."]
+
+(text-colour:cyan)[Dragobur faz uma cara desesperada.]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Thorin: ] "Imediatamente, treinador."]
+
+(text-colour:yellow)[Quest: Conserte o constructo.]
+(text-colour:yellow)[(align:"<==>")+(box:"X=")[Task: Verifique as arquibancadas e o vestiário em busca da válvula do cosntructo.]]
+
+[[Válvula]]
+
+[[Regras do Futebol Rúnico]]
+
+
+:: Fale novamente com Tordan {"position":"1300,1000","size":"100,100"}
+(text-colour:yellow)[Quest ativa: Fale novamente com Tordan]
+
+Cenário - [[Casa da Família Forjaprata]] 
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Thorin volta à cozinha e mostra ao pai os troféus de futebol rúnico que ganhou, tentando convencê-lo a deixar que siga carreira no esporte]]
+
+(text-colour:cyan)[Após entregar os troféus para Tordan, a discussão continua.]
+
+Linhas de diálogo:
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Tordan:] "É alguma piada? O que te faz pensar que isso significa algo para mim?"]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Thorin: ] "E no que isso seria diferente dos seus prêmios políticos? Você ganha a vida manipulando as pessoas, deveria ao menos me dar o benefício da dúvida."]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Tordan:] "A situação parece ser pior do que eu imaginava. Vamos descobrir se alguns meses de trabalho duro podem colocar algum juízo na sua cabeça. Encontre o senhor Balastrus e feche o contrato. Isso é uma ordem, Thorin!"]
+
+(text-colour:cyan)[Thorin parece ainda mais transtornado e furioso.]
+
+(text-colour:cyan)[Fala do Thorin:] "Você não pode me obrigar!"
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Tordan]: "Não posso?! Então nós veremos. O jantar foi servido no horário de sempre e retirado a pouco. Espero que tenha comido no campo, pois não há privilégios nessa casa para aqueles que não seguem as regras. Vá domir."]
+
+(text-colour:cyan)[Tordan deixa a cozinha em direção ao quarto dele.]
+
+(text-colour:yellow)[Quest:  [[Impressione Balastrus]]]
+(text-colour:yellow)[Task: durma]
+
+(text-colour:cyan)[Thorin vai até o próprio quarto e dorme.]
+
+
+
+
+
+
+:: Impressione Balastrus {"position":"900,600","size":"100,100"}
+(text-colour:yellow)[Quest ativa: Impressione Balastrus]
+
+Cenário - [[Casa da Família Forjaprata]] 
+ 
+(text-colour:cyan)[Thorin tem outro pesadelo com Mélia, sua mãe, enquanto dorme.]
+
+Linha de diálogo:
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala da Mélia:] "Meu filho, estamos ficando sem tempo. Dambur... Impeça-o!"]
+
+(text-colour:cyan)[Thorin acorda asustado, mais uma vez o despertador (sáparo boca de corneta) está tocando e o provocando:]
+
+Linha de diálogo:  
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Sáparo:] "Acorde, Thorin, meu filho querido. Não me faça vergonha, ou se verá comigo! Para o distrito comercial central, você deve ir, Balastrus te espera, você não pode mais fugir! HAHAHAHHAHA!" ]
+
+(text-colour:cyan)[Thorin ri do pássaro e acaba se esquecendo do sonho.]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Torin: ] "Nem que a vaca-morcegoi tussa! Papai já deve ter ido trabalhar. A final está chegando, não tenho tempo para um trabalho idiota como uma expedição! Combinei com Filin de treinarmos outra jogada, preciso chegar ao campo." ]
+
+(text-colour:yellow)[ Quest: [[chegue novamente ao campo]]]
+(text-colour:yellow)[Task: volte ao campo dos Machados Enferrujados e encontre Filin]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Thorin se levanta, ainda com o uniforme de futebol do dia anterior. Em seguida tenta sair de casa, mas encontra com Kilin e os outros guardas reais que já o esperavam do lado de fora.]]
+
+
+:: Jogada arriscada {"position":"1000,1200","size":"100,100"}
+(text-colour:yellow)[Quest ativa: Fazer a jogada final]
+
+Cenário - [[Campo dos Machados Enferrujados.]] 
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Mensagem que aparecerá para o jogador após a escolha: "Thorin e Filin correm em direção ao gol adversário, mesmo sem a bola, o que confunde o constructo do time dos Picarestas de Mitril. Somente no último segundo, Flin recebe o passe, atrai a defesa mais uma vez e então lança a bola para Thorin que está livre para marcar."]]
+ 
+(align:"<==>")+(box:"X=")[(text-colour:cyan)["A partida termina e o time dos Machados Enferrujados vencem o jogo. Os jogadores comemoram, mas o técnico está furioso. Ele anda até eles."]]
+  
+(text-colour:cyan)[Fala do Dragobur: ] (align:"<==>")+(box:"X=")["Thorin, o que foi que eu falei pra você?! Isso foi muito arriscado, nós poderíamos ter sido desclassificados e dado adeus ao nosso sonho!"]
+ 
+(text-colour:cyan)[Fala do Thorin:] "Mas nós vencemos, treinador."
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Filin:] "Exatamente. Nós estamos na final da divisão de acesso. Só mais uma partida e finalmente teremos nossa chance na liga profissional"]
+ 
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Antes da próxima fala, a expressão furiosa desaparece e o treinador sorri. Em seguida ele puxa Thorin para a baira do campo, para uma conversa particular.]]
+ 
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Dragobur:] "´É vocês ganharam, meus parabéns! Podem comemorar. Thorin, precisamos conversar."]
+ 
+(text-colour:cyan)[Thorin o segue até a beira do campo.]
+ 
+(text-colour:cyan)[Fala do Thorin: ] "O que foi, treinador?"
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Dragobur:] "Você é bom um rapaz, mas precisa aprender a ouvir. Hoje deu certo, mas e quando as coisas derem errado, estará disposto a lidar com as consequências?"]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Antes que possa responder, eles são interrompidos pelos guardas reais mandados por Tordan, seu pai. Eles dizem que Thorin deve voltar para casa imediatamente, que o bom nome da família Forjaprata será manchado caso ele insista em continuar andando com aquele tipo de gente.]]
+ 
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Guarda Kilin:] "Thorin Forjaprata! Por ordem de seu pai, Tordan Forjaprata, você deve retornar imediatamente!"]
+
+(text-colour:cyan)[Há outros dois guardas com ele, mas por ser o líder, apenas ele fala.]
+
+(text-colour:cyan)[Fala do Dragobur:] "Vocês não podem entrar aqui, guardas reais! "
+
+(text-colour:cyan)[Fala do Guarda Kilin: ] "Silêncio! Você não tem o direito de interferir numa ordem direta da mão do imperador."
+
+(text-colour:cyan)[Dragobur supira ou faz uma cara triste.]
+
+(text-colour:cyan)[Fala do Drabobur:] "É melhor você obedecer, Thorin."
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Filin:] "Qual é? Você não pode deixar ele falar assim com você, Thorin!"]
+
+(text-colour:cyan)[Os guardas ignoram o comentário de Filin.]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Guarda Kilin:] Thorin, eu não vou repetir. Temos ordens para levá-lo à força se for preciso. O bom nome de sua família pode ser manchado caso você insista em andar com esse tipo de gente.]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Thorin:] Eu não tenho escolha, Filin. Melhor ir andando. Nos vemos amanhã de manhã para treinar a jogada secreta, ok?"]
+
+(text-colour:cyan)[Filin faz que sim com a cabeça. É fim de entardecer, o sol está quase se pondo.]
+
+(text-colour:cyan)[Thorin segue os guardas de volta para casa.]
+ 
+(text-colour:yellow)[ Quest: [[O filho da mão do imperador]]]
+(text-colour:yellow)[Task: Siga os guardas até sua casa]
+ 
+(align:"<==>")+(box:"X=")[(text-colour:magenta)[Notas para o desenvolvedor: Três novos personagens deverão ser adicionados, os guardas reais que servem à família Forjaprata: Kilin, o líder, Tharok e Mhordred.]]
+ 
+
+
+:: Jogada segura {"position":"1000,1400","size":"100,100"}
+(text-colour:yellow)[Quest ativa: Fazer a jogada final]
+
+Cenário - [[Campo dos Machados Enferrujados.]] 
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Mensagem que aparecerá para o jogador após a escolha:  Thorin está com a bola, Filin, ao lado de outros jogadores, abre caminho para ele. A partida termina com Thorin correndo até a linha de gol, livre, marcando os pontos e dando a vitória ao time dos Machados Enferrujados. Os jogadores comemoram e o técnico entra no campo para se juntar a eles.]]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Dragobur: ] "Parabéns, Thorin, você conseguiu! Todos vocês conseguiram!  Nós estamos na final da divisão de acesso. Só mais uma partida e finalmente teremos nossa chance na liga profissional"]
+ 
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Filin:] "Exatamente. Nós seremos os melhores jogadores de futebol rúnico da cidade!"]
+
+(text-colour:cyan)[Fala do Thorin:] "Obrigado, treinador!"
+   
+(text-colour:cyan)[Fala do Dragobur:] "Isso merece um brinde, vamos beber!"
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Thorin concorda e diz que vai beber com o time, mas é interrompido pelos guardas reais mandados por Tordan, seu pai. Eles dizem que Thorin deve voltar para casa imediatamente, que o bom nome da família Forjaprata será manchado caso ele insista em continuar andando com aquele tipo de gente.]]
+ 
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Guarda Kilin:] "Thorin Forjaprata! Por ordem de seu pai, Tordan Forjaprata, você deve retornar imediatamente!"]
+
+(text-colour:cyan)[Há outros dois guardas com ele, mas por ser o líder, apenas ele fala.]
+
+(text-colour:cyan)[Fala do Dragobur:] "Vocês não podem entrar aqui, guardas reais! "
+
+(text-colour:cyan)[Fala do Guarda Kilin: ] "Silêncio! Você não tem o direito de interferir numa ordem direta da mão do imperador."
+
+(text-colour:cyan)[Dragobur supira ou faz uma cara triste.]
+
+(text-colour:cyan)[Fala do Drabobur:] "É melhor você obedecer, Thorin."
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Filin:] "Qual é? Você não pode deixar ele falar assim com você, Thorin!"]
+
+(text-colour:cyan)[Os guardas ignoram o comentário de Filin.]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Guarda Kilin:] Thorin, eu não vou repetir. Temos ordens para levá-lo à força se for preciso. O bom nome de sua família pode ser manchado caso você insista em andar com esse tipo de gente.]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Thorin:] Eu não tenho escolha, Filin. Melhor ir andando, vá comemorar com os outros. Nos vemos amanhã de manhã para treinar a jogada secreta, ok?"]
+
+(text-colour:cyan)[Filin faz que sim com a cabeça. É fim de entardecer, o sol está quase se pondo.]
+
+(text-colour:cyan)[Thorin segue os guardas de volta para casa.]
+ 
+(text-colour:yellow)[ Quest: [[O filho da mão do imperador]]]
+(text-colour:yellow)[Task: Siga os guardas até sua casa]
+ 
+(align:"<==>")+(box:"X=")[(text-colour:magenta)[Notas para o desenvolvedor: Três novos personagens deverão ser adicionados, os guardas reais que servem à família Forjaprata: Kilin, o líder, Tharok e Mhordred.]]
+
+
+:: Mina de Kravens {"position":"1800,0","size":"100,100"}
+
+
+(align:"<==>")+(box:"X=")[A mina é fria e escura, com corredores estreitos e paredes que parecem absorver a luz. As tochas na entrada iluminam apenas alguns metros adiante, dando lugar à penumbra e ao eco das pegadas na rocha. O caminho é sinuoso, com antigos suportes de madeira mantendo o teto seguro. Existem muitos buracos e rachaduras nas paredes e marcas profundas na pedra, onde os minérios foram retirados.]
+
+
+:: Montanhas de Gildrat {"position":"1000,100","size":"100,100"}
+
+(align:"<==>")+(box:"X=")[As montanhas de Gildrat se erguem imponentes com picos irregulares e encostas ásperas, cobertas de rochas escuras que refletem pouca luz. Suas faces exibem cicatrizes de minas antigas e passagens estreitas, usadas por gerações de mineradores. Pela manhã, nuvens baixas envolvem os topos, criando uma névoa mística, enquanto o vento gelado atravessa os desfiladeiros, levando o eco de martelos e picaretas. As montanhas exalam uma aura de resistência e mistério, como se guardassem segredos antigos e riquezas escondidas, protegidas pela bravura dos anões de Gildrat.]
+
+
+:: Novo Jogo {"position":"300,1100","size":"100,100"}
+Video de introdução onde mostra Daratrine na noite da história.
+
+[[Pular video de introdução ]]
+
+
+:: O Legado da Família {"position":"800,900","size":"100,100"}
+
+(text-colour:yellow)[Quest ativa: O legado da família]
+
+Cenário - [[Casa da Família Forjaprata]] 
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Thorin também está furioso. Ele responde à raiva do pai com ainda mais raiva.]]
+
+Linhas de diálogo: 
+ 
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala  do Tordan:] "Eu tentei confiar em você, Thorin. Tentei lhe dar espaço, mas você nunca muda."]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Thorin:] Me dar espaço? Você nunca respeita as minhas escolhas. Já enviou seus guardas para me trazer de volta tantas vezes que alguns na cidade já até acreditam que não sou seu fiho, mas um prisioneiro!"]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Tordan:] "Você ousa me questionar depois do modo como vêm agindo?! Essa insistência em jogar sua vida no lixo acaba aqui. Como meu herdeiro, é o seu dever honrar o nosso legado e se preparar para liderar a família depois que eu me for. E é exatamente o que você fará, por bem ou por mal!"]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Thorin:] "O seu caminho não é o único caminho, meu pai."]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Tordan: ] "Errado, Thorin. Nessa cidade, todas as decisões são minhas, eu sou a mão do imperador. Acordei um emprego para você, um de verdade. Esteja na Taverna da Pedra Ardente amanhã assim que o sol surgir, fale com o Senhor Balastrus e ele lhe dará mais detalhes sobre a expedição."]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Thorin: ]"Eu não vou. Obrigado, mas isso não é o que eu escolhi para mim."]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Tordan:] "E o que você escolheu para você? Futebol rúnico? Isso não passa de um hobbie inútil!"]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Thorin:]  "Eu sou bom no que faço, e posso provar!"]
+
+(text-colour:yellow)[Quest:  [[Prove o seu valor]]]
+(align:"<==>")+(box:"X=")[(text-colour:yellow)[Task: ande pela casa, encontre os seus três troféus de futebol rúnico.]]
+
+(align:"<==>")+(box:"X=")[(text-colour:magenta)[Nota para o desenvolvedor: A dinâmica da cena mudará um pouco. Thorin e seu pai, Tordan não mais discutirão no quarto, mas na cozinha da casa, próximos à mesa de jantar.]]
+
+
+:: O Rheed inicia o dialogo com ele. {"position":"300,1500","size":"100,100"}
+(text-colour:yellow) [Quest ativa: Assistir a noite da história]
+
+Cenário: - [[Coreto]]  
+
+(text-colour:cyan)[O palco está cercado por crianças. ]
+
+(text-colour:cyan)[Linhas de diálogo -]
+
+(align:"<==>")+(box:"X=") [(text-colour:cyan)[Fala do Rheed:] "Olha crianças, parece que alguém chegou atrasado, hahahaha!"]
+
+(text-colour:cyan)[Rheed vai até o jogador.]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Rheed: ]"Então, qual é o seu nome?"]
+
+(text-colour:cyan)[Este é o momento em que o jogador decira o nome do (a) protagonista.]
+
+(text-colour:yellow)[(align:"<==>")+(box:"X=")[Task: Escolha o nome do seu personagem:]]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Rheed:] "Seja bem-vindo, (nome do jogador)!"]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Rheed: "Agora vamos iniciar a nossa noite da história! Vocês estão prontas, crianças?!"]]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Lentamente, o palco é tomado por uma projeção mágica, revelando uma visão da cidade de Gildrat. As crianças murmuram de encantamento, e a imagem preenche a tela com seus edifícios e ruas modernas, enquanto Rheed narra com uma voz suave e cheia de entusiasmo.]]
+
+ [[O jogador principal surge em casa]]
+
+
+
+:: O filho da mão do imperador {"position":"700,1100","size":"100,100"}
+(text-colour:yellow)[Quest ativa: O filho da mão do imperador]
+
+Cenário - [[Distrito comercial nobre]] 
+- [[Distrito habitacional nobre]] 
+
+(text-colour:cyan)[Thorin segue a escolta mandada por seu pai de volta até sua casa, fazendo o caminho reverso por onde veio naquele dia mais cedo.]
+
+(text-colour:cyan)[Thorin é deixado no portão de casa pelos guardas. Já é noite.] 
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Guarda Kilin:] "Entre, garoto. Seu pai o espera na cozinha."]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Thorin não responde e faz menção de entrar, mas Kilin o impede e volta a falar:]]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Guarda Kilin: ] "Acredite, Thorin. Também não gostamos de sempre ter que arrastá-lo de volta para casa. Mas as ordens do seu pai são absolutas."]
+
+(text-colour:cyan)[Thorin entra e encontra seu pai, que está furioso.]
+
+(text-colour:yellow)[Quest: [[O Legado da Família]]]
+(text-colour:yellow)[Task: Fale com Tordan]
+
+(align:"<==>")+(box:"X=")[(text-colour:magenta)[Notas para o desenvolvedor: Essa nova interação precisa ser criada. As linhas de diálogo estão acima e, quando o jogador tentar entrar na casa pela primeira vez após o retorno, é imprescindível que Kilin o impeça e diga que também não gosta de ter que sempre buscá-lo, informando ao jogador que essa situação é recorrente na família.]]
+
+
+
+
+:: O jogador principal surge em casa {"position":"100,1700","size":"100,100"}
+(text-colour:yellow) [Quest ativa: Assista a noite da história]
+
+Cenário - [[Casa da Família Forjaprata]]
+
+(text-colour:cyan)[(align:"<==>")+(box:"X=")[O jogador principal está em casa, dormindo, quando em meio a um pesadelo conturbado, Mélia, sua mãe, aparece sussurrando e lhe monstrando imagens sem lógica:]]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala da Mélia:] “Você precisa detê-lo... Não pode deixar D...bur liderar, meu filho.  Você é a nossa única esperança."]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Thorin acorda assustado e suado em sua cama. ]]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Thorin:] "Mamãe?! Mas o quê? Por quê?..."]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Ele escuta então o barulho do despertador tocando (um saparo boca de corneta que está empoleirado sobre seu criado mudo, ao lado da cama). Provocando o jogador, ele diz:]]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Sáparo:] "Acorda, bobalhão! Você está atrasado novamente, a partida contra o time dos Picaretas de Mitril já está começando! HAHAHAHAHA!"]
+
+(text-colour:cyan)[
+(align:"<==>")+(box:"X=")[Uma mensagem aparece ao jogador: "Saudações, aventureiro! Bem-vindo ao lar da família Forjaprata, uma das linhagens mais prestigiosas da cidade de Gildrat. Aqui está  a sua nova missão!" ]]
+
+(text-colour:cyan)[Thorin se levanta, já vestido com seu uniforme de futebol.]
+
+(text-colour:yellow)[Quest: [[Chegue ao campo]]]
+
+(align:"<==>")+(box:"X=")[(text-colour:yellow)[Task: Você está atrasado! Chegue ao campo o mais rápido possível.]]
+
+(text-colour:cyan)[
+(align:"<==>")+(box:"X=")[O jogador principal deverá deixar seu quarto e, em seguida, sua casa, atravessando parte da cidade para chegar ao campo de futebol rúnico o mais rápido possível.]]
+
+(align:"<==>")+(box:"X=")[(text-colour:magenta)[Notas para o desenvolvedor: Parte 1 - O beneco do pai, que antes interrompia o caminho de Thorin, deve ser retirado]]
+
+(align:"<==>")+(box:"X=")[(text-colour:magenta)[Parte 2 - Uma nova cutscene deve ser desenvolvida e inserida nessa parte do jogo, comtemplando o aparecimento da mãe. A fala e presença do Sáparo também precisa ser adicionada.]]
+
+(align:"<==>")+(box:"X=")[(text-colour:magenta)[Parte 3 - Thorin é como será chamado o personagem principal durante a construção do roteiro, para facilitar.]]
+
+(align:"<==>")+(box:"X=")[(text-colour:magenta)[Parte 4 - Um criado mudo deverá ser adicionado ao lado da cama de Thorin, para que o Sáparo esteja empoleirado ali.]]
+
+
+
+:: Primeiro Contrato {"position":"1800,500","size":"100,100"}
+(text-colour:yellow)[Quest ativa: Primeiro Contrato]
+
+Cenário - [[Taverna da Pedra Vulcânical]] 
+
+(text-colour:cyan)[Thorin entra no estabelecimento e pergunta por seu contratante.]
+
+Linhas de diálogo -
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Thorin:] "Com licença, o senhor Tibério Balastrus me aguarda. Você poderia me indicar o caminho?"]
+
+(text-colour:cyan)[Fala do Taverneiro:] "Basta seguir em frente."
+
+(text-colour:cyan)[O taverneiro aponta para as salas privativas ao fundo e Thorin vai até lá.]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Thorin entra na sala e encontra um anão de meia idade, careca, usando um um sobretudo dourado e tomando vinho.]]
+
+Linhas de diálogo -
+
+(text-colour:cyan)[Fala do Thorin: ] "É um prazer conhecê-lo, senhor Balastrus!"
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala de Balastrus:] "O prazer é todo seu, garoto! A reputação de seu pai o precede, espero que você esteja à altura do legado da família e não tenha medo de colocar a mão na massa."]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Thorin:] "E que serventia alguém como eu, teria para o senhor?"]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala de Balastrus: ] "Direto ao ponto, assim como Tordan. Muito bem. Estou organizando uma expedição à mina de Kravens, ao sul. Preciso de braços fortes para o trabalho."]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala de Thorin:] "Mas senhor Balastrus, eu nunca estive na mina de Kravens antes, não sei que criaturas a cercam, nem que minérios poderemos encontra lá.]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Balastrus:] "Eu sou excelente no que faço,  meu caro. Tudo foi perfeitamente organizado, Vocês terão guias para levá-los, guerreiros para lidar com as criaturas, além de outros mineradores. Mas é claro que a responsabilidade sobre sua vida é únicamente sua. Você só precisa saber como usar uma picareta e tentar voltar vivo. O que me diz?"]
+
+(text-colour:cyan)[Thorin suspirra, sabe que é tarde para tentar fugir novamente.]
+
+(text-colour:cyan)[Fala do Thorin:] "Eu aceito, senhor."
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Balastrus:] "Ótimo. Esteja na Estrada do Cão-Luar ainda hoje após o almoço. Procure por um anão caolho chamado Tusk. Ele vai informar tudo o que você precisa saber e entregar o equipamento."]
+
+(text-colour:cyan)[Balastrus termina o vinho, coloca a taça sobre a mesa e retira um contrato do bolso. ]
+
+(text-colour:cyan)[Fala do Balastrus:] "Assine e entregue ao Tusk. Passar bem.
+
+(text-colour:cyan)[O contrato é entregue a Thorin, Balastrus se retira logo em seguida. Thorin hesita, pensando nas criaturas e demais perigos, mas assina.]
+
+Linha de diálogo:
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Thorin:] "Com certeza terão muitas criaturas rondando o local e outros perigos. Será que eu consigo sobreviver?!... Bem, acho que não tenho mais escolha."]
+
+(text-colour:yellow)[Quest: [[Estrada do Cão-luar]]]
+(text-colour:yellow)[Task: Encontre Tusk, o anão caolho, na estrada do cão-luar.]
+
+(text-colour:magenta)[Nota para o desenvolvedor: É necessário criar essa nova interação, Balastrus termina de beber o vinho, entrega o contrato a ele, que assina. O jogador deve poder assinar o nome do próprio personagem nessa parte. ]
+
+
+:: Prove o seu valor {"position":"1000,800","size":"100,100"}
+
+(text-colour:yellow)[Quest ativa: Prove o seu valor]
+
+Cenário - [[Casa da Família Forjaprata]] 
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Thorin deve andar procurar por seu próprio quarto, onde o primeiro troféu estará. Em seguida, irá para a sala de troféus, onde os outros dois troféus estarão. Depois de encontrar os três, ele deve retornar e falar com Tordan novamente.]]
+
+(text-colour:yellow)[Task: [[Fale novamente com Tordan]] ]
+
+
+(align:"<==>")+(box:"X=")[(text-colour:magenta)[Notas para o desenvolvedor: a sala de troféus deverá ser adicionada no cômodo vazio, ao lado do quarto de Tordan e em frente à cozinha. Dois dos três troféus de Thorin estarão ali, já que o cômodo é maior do que o quarto dele, o que facilitará a dinâmica da cena e permitirá ao jogadores explorarem um pouco da casa sem que seja necessário criar outros cômodos e a forja no andar de baixo.]]
+
+
+:: Pular video de introdução\  {"position":"500,1300","size":"100,100"}
+(text-colour:yellow)[Quest ativa: Assistir a noite da história]
+
+(align:"<==>")+(box:"X=")[Cenário - Coreto:  Um palco montado para contar histórias, está cercado por crianças.]
+
+(align:"<==>")+(box:"X=")[O jogador surge em frente ao Coreto.]
+
+(text-colour:yellow)[Quest - Assistir a noite da história:]
+
+(text-colour:yellow)[Task - Encontrar um lugar para sentar:]: (align:"<==>")+(box:"X=")[O jogador principal anda para direita e em seguida para cima, se senta em um lugar vazio ao lado das crianças]
+
+[[O Rheed inicia o dialogo com ele.]]
+
+
+:: Pé na Estrada {"position":"2500,400","size":"100,100"}
+(text-colour:yellow)[Quest Ativa: Pé na Estrada]
+
+Cenário - [[Montanhas de Gildrat]]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[O grupo, liderado por Tusk, começa a jornada rumo a mina de Kravens. A estrada é traiçoeira, com encostas pedregosas e vegetação rasteira, rodeada por colinas cinzentas e uma atmosfera de abandono. ]]
+
+(text-colour:cyan)[(align:"<==>")+(box:"X=")[Thorin olha para os três guardas de seu pai, que o acompanham a uma distância discreta. Ele hesita antes de falar com Tusk.]]
+
+Linhas de Diálogo:
+
+(text-colour:cyan)[Fala do Thorin:] (align:"<==>")+(box:"X=")["Essa estrada parece mais perigosa do que dizem por aí. Estamos longe de Gildrat... e os sons daqui são um tanto estranhos, você não acha?"]
+
+(text-colour:cyan)[Fala do Tusk:] (align:"<==>")+(box:"X=")["Essa trilha é para aqueles que tem coragem, garoto. Mas não se preocupe, se mantivermos o ritmo, não vamos incomodar o que quer que esteja nos rondando."]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Enquanto caminham, o grupo é surpreendido por um ruído súbito, algo entre um grunhido e o estalar de pedras. Eles param e olham ao redor, cautelosos, enquanto Kilin, Tharok e Mhordred se colocam em guarda à frente de Thorin.]]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do guarda Kilin:] "Acredito que deveríamos andar mais rápido. Não quero dar aos monstros dessas terras tempo de nos alcançar."]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Tusk:] "Isso não é novidade para quem trabalha nas minas, Kilin. Guarde sua arma e mantenha a calma."]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[O grupo continua a trilha, subindo uma colina mais íngreme. A vista lá de cima revela uma paisagem sombria, com a entrada da Mina de Kravens ao fundo.]]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Tusk: ] "Vamos, seus inúteis! Já estamos quase chegando."] 
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Quando o grupo se aproxima de uma clareira,  uma alcatéia de lobos-rinoceronte, com pelagem cinza-escura e olhos brilhantes, emerge da vegetação rasteira. Eles são grandes e ágeis, além de possuírem dois chifres sainda da testa, garras e dentes afiados. Estão claramente estão famintos.]]
+
+(text-colour:cyan)[Fala do Guarda Tharok:] "Preparen-se para lutar!"
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[O grupo entra em formação. A escolta de Thorin toma a sua frente novamente, enquanto os outros guardiões tentam proteger o resto dos mineradores e guias. A batalha se inicia com Thorin empunhando uma picareta improvisada como arma. ]]
+
+(text-colour:yellow)[[Quest: Sobreviva!]]
+(text-colour:yellow)[Task: Equipe sua picareta]
+(text-colour:yellow)[Task: Mate quantos lobos puder.]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Após uma luta intensa, o grupo consegue repelir as criaturas, que fogem para as colinas. Os guardas limpam suas armas e trocam olhares cansados. Tusk diz a eles que já é noite e mais criaturas poderiam estar os esperando, que deveriam acampar ali. Os outros concordam, acendem uma fogueira e se sentam para comer.]]
+
+(text-colour:yellow)[Task: Durma.]
+
+(align:"<==>")+(box:"X=")[(text-colour:magenta)[Notas para o desenvolvedor: Esse dinâmica precisa ser adicionada. Como parte do tutorial, aqui, será mostrado ao jogador seu inventário, assim como os itens que pussui. Ele deverá equipar a picareta para lutar com os lobos-rinocerontes, que também deverão ser criados.]]
+
+
+:: Quest: Hora de Minerar! {"position":"3000,200","size":"100,100"}
+(text-colour:yellow)[Quest ativa: Hora de Minerar!]
+
+Cenário -  [[Mina de Kravens]]
+
+(text-colour:yellow)[Task: Minere 3 Tarlinihos 
+Task: Minere 2 Pedralúmen 
+Task: Minere 4 Jades
+Task: Minere 1 Sigmetal
+Task: Volte a falar com Tusk após encontrar todos os minérios.]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Com as tarefas de mineração completas, o grupo se reúne em um pequeno espaço iluminado por tochas. Thorin sente o cansaço nos braços, mas a sensação de ter conseguido extrair os minérios deixa-o satisfeito.]]
+
+Linhas de diálogo:
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Thorin:] "Aqui está o que me pediu".]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Tusk:]  "Perfeito, garoto! Conseguiu mesmo encontrar Sigmetal! Agora sente-se e beba água! Quando os outros tiverem cumprido suas cotas, vamos voltar à Gildrat."]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Thorin percebe que Tusk está feliz demais com o minério de Sigmetal encontrado por ele. Algo está errado, mas ainda assim, ele não diz nada. Se senta ao lado de Kilin, Mhordred e Tharok, para beber água e descansar.]]
+
+[[A Volta Para Casa]]
+
+(text-colour:magenta)[Nota para o desenvolvedor: Sempre que o jogador encontrar uma pedra nova, uma descrição dela deve ser adicionada ao diário dele.]
+
+(text-colour:magenta)[Tarlinihos -
+
+Cor: Vermelho escuro, brilhante como brasa.
+Propriedades: Extremamente duro e resistente ao calor, ideal para ferramentas e armas.
+
+Pedralúmen -
+
+Cor: Azul profundo com manchas prateadas.
+Propriedades: Brilha no escuro, usada em amuletos e iluminação. Quando é moída e o pó estraído entra em contato com o fogo, causa combustão.
+
+Jade -
+
+Cor: Verde.
+Propriedades: Pedra preferida para jóias, junto dos rubis, pela alta classe. Vale uma fortuna.
+
+
+Sigmetal -
+
+Cor: Lilás com brilho suave.
+Propriedades: Ao lado do Mitril, é o metal mais valioso já encontrado por Gildrat. É resistente e fácil de ser manuzeado, as armaduras feitas desse minério mantém o corpo aquecido mesmo durante a chuva constante e neve.]
+
+
+:: Quest: Sobreviva! {"position":"2900,600","size":"100,100"}
+
+(text-colour:yellow)[Quest Ativa: Sobreviva!]
+
+Cenário: - [[Montanhas de Gildrat]] 
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[O grupo acorda na manhã seguinte e segue viagem. Em pouco tempo de caminhada, chegam à entrada da mina de Kravens. A entrada da mina é uma abertura enorme na base de uma colina rochosa, envolta em raízes grossas e pedras musgosas. Lá, marcas antigas de picaretas e ferramentas decoram a entrada, como lembranças das gerações passadas que ali já trabalharam.]]
+
+Linhas de diálogo:
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Tusk:] "Aqui estamos. Kravens não é uma mina qualquer. Respeitem a pedra e talvez ela deixe que voltem vivos daqui!"]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Thorin:] "Entendido. O que devo procurar primeiro?"]
+
+(text-colour:cyan)[Tusk observa Thorin com seu olhar caolho e ríspido.]
+
+(text-colour:cyan)[Fala do Tusk:] (align:"<==>")+(box:"X=")["Temos ordens para minerar Tarlinihos e pedralúmen. Tarlinihos é dura, avermelhada e resistente – difícil de quebrar, mas valiosa. Já a pedralúmen é azulada, brilhante e mais fácil deminerar. Vou marcar as áreas onde elas são mais comuns no seu mapa. Também precisamos de Jade e Sigmetal, um tem cor verde e o outro lilás. Mas se encontrar Sigmetal, garoto, me avise imediatamente, você entendeu?"]
+
+(text-colour:cyan)[Fala do Thorin:] "Sim senhor."
+
+(text-colour:cyan)[A atenção de Tusk se volta para todos.]
+
+(text-colour:cyan)[Fala do Tusk]: "Atenção, seus paspalhos! Nós vamos descer!"
+
+(text-colour:yellow)[[Quest: Hora de Minerar!]]
+(text-colour:yellow)[Taks: Procure pelos minérios descritos por Tusk dentro da mina.]
+
+(align:"<==>")+(box:"X=")[(text-colour:magenta)[Nota para o desenvolvedor: O mapa do jogador deve ser atualizado, exatamente como Tusk disse. Os lacais com maiores concentrações de minérios dentro da mina devem estar marcados com um círculo de cor correspondente ao minério.]]
+
+
+
+
+:: Regras do Futebol Rúnico {"position":"400,1700","size":"100,100"}
+Futebol Rúnico: Regras e Elementos do Jogo -
+
+1. Estrutura e Objetivo do Jogo:
+
+O futebol rúnico é jogado entre dois times, cada um composto de cinco anões no ataque e um constructo defensivo, energizado por cristais.
+O objetivo do jogo é carregar a  bola oval até a zona de gol do oponente.
+O time que acumular mais pontos ao final de três períodos de 10 minutos vence o jogo.
+
+2. Campo e Runas Energizadas:
+
+O campo é retangular e coberto por um padrão de runas energizadas, dispostas de maneira uniforme. Cada runa interage com os cristais no peito dos constructos, concedendo-lhes movimento e habilidades especiais enquanto estão dentro de seu alcance.
+
+O campo é dividido em uma zona neutra central, duas zonas de defesa e as zonas de gol, onde os pontos são marcados.
+
+A cada três minutos, as runas alteram sua configuração, criando novas linhas de energia que podem afetar a mobilidade dos constructos e as estratégias dos anões.
+
+3. Constructos: Linha de Defesa
+
+Os constructos são controlados remotamente pelos anões de defesa fora do campo. Eles são alimentados por cristais rúnicos, que absorvem e canalizam a energia das runas no campo.
+
+Cada constructo tem uma função específica:
+
+Guardião: Especializado em interceptação e bloqueio da Bola.
+
+Empurrador: Usado para abrir caminho ou empurrar jogadores adversários para fora de uma linha rúnica.
+
+Cerco: Mais lento, mas com uma habilidade de criar escudos rúnicos temporários, fornecendo cobertura para os anões do próprio time.
+
+4. Cristais e Movimentação dos Constructos
+
+Cristais de Vínculo Rúnico: São os cristais que energizam os constructos. Eles requerem contato constante com as linhas rúnicas do campo para manterem o movimento; se um constructo for derrubado para fora de uma linha ativa, ele desliga até o próximo turno.
+Os constructos são recarregados no início de cada turno e voltam ao jogo assim que reenergizados pelas runas, mas permanecem vulneráveis ao efeito das linhas energéticas em mutação.
+
+5. Jogadores Anões: Ataque e Posicionamento
+
+Os anões são os únicos que podem carregar a Bola.
+
+Equipamentos de Jogo:
+
+Os anões utilizam armadura leve, elmo e podem portar martelos leves para derrubar outros anões ou desativar temporariamente constructos ao acertar seus cristais.
+
+Cada vez que um anão atinge a zona de gol adversária, seu time ganha sete pontos.
+
+6. Penalidades
+
+A manutenção e cuidados com o constructo é de responsabilidade de cada time. Todos são energizados por cristais e, necessitam de uma válvula de ignição para ligá-lo. Casa essa "chave" seja perdida, o time em questão ainda terá que entrar em campo e jogará com desvantagem.
+
+
+:: Taverna da Pedra Vulcânical {"position":"700,400","size":"100,100"}
+
+(align:"<==>")+(box:"X=")[ A Taverna da Pedra Vulcânica é um dos pontos mais emblemáticos do Distrito Comercial Central de Gildrat, atraindo anões de todos os cantos do império, que buscam boas histórias, comida farta e bebida robusta.]
+
+(align:"<==>")+(box:"X=")[
+A taverna foi escavada diretamente em uma grande pedra de origem vulcânica, o que lhe confere um ambiente naturalmente aquecido e com paredes de rocha escura e polida. Para negociações discretas e conversas mais reservadas, a taverna oferece salas privadas entalhadas no fundo da rocha, onde os visitantes podem beber e discutir. ]
+
+
+:: Válvula {"position":"600,2000","size":"100,100"}
+(text-colour:yellow)[Quest ativa: Conserte o constructo]
+
+Cenário - Vestiário do campo.  
+
+(text-colour:cyan)[Thorin encontra a válvula do constructo no único armário vazio do vestiário.]
+
+(text-colour:yellow)[ Quest: [[voltar ao campo]]]
+(text-colour:yellow)[Task: Fale com o treinador.]
+
+(align:"<==>")+(box:"X=")[(text-colour:magenta)[Notas para o desenvolvedor: A vávula de ignição do constructo está escondida no único armário vazio do vestiário. Quando o jogador responsável pelo constructo foi tomar banho, deixou suas roupas e mochila no banco. Seus colegas de time resolveram lhe pregar uma peça e esconder suas coisas, sem saber que a válvula estava na mochila roubada.]]
+
+
+:: chegue novamente ao campo {"position":"1000,300","size":"100,100"}
+(text-colour:yellow)[Quest ativa: Chegue Novamente ao Campo]
+
+Cenário - [[Casa da Família Forjaprata]] 
+
+(text-colour:cyan)[Thorin, ao tentar sair de casa e chegar ao campo outra vez, é surpreendido pela guarda pessoal de seu pai. Ele faz uma cara de espanto.]
+
+Linhas de diálogo:
+
+(text-colour:cyan)[Fala do Thorin:] "O que vocês estão fazendo aqui?!"
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do guarda Kilin:] "Seu pai nos mandou esperar por você aqui. Ele não nasceu ontem, Thorin, sabia que você tentaria fugir.]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Thorin:] "Você tem que me deixar ir, Kilin. É minha última chance... de seguir o meu sonho."]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do guarda Kilin:] "Eu sinto muito, garoto. Seu sonho parecia escapar de suas mãos mais uma vez. Siga-nos, o senhor Balastrus está esperando."]
+
+(text-colour:cyan)[Thorin abaixa a cabeça, lutando contra a sensação de derrota.]
+
+(text-colour:yellow)[Quest: [[Está na hora de crescer]]]
+(text-colour:yellow)[Task: siga os guardas até o distrito comercial central.]
+
+(text-colour:cyan)[Thorin, sem escolha, os segue.]
+
+
+:: voltar ao campo {"position":"800,1800","size":"100,100"}
+(text-colour:yellow)[Quest ativa: Voltar ao campo]
+
+Cenário - [[Campo dos Machados Enferrujados.]] 
+
+(text-colour:cyan)[Thorin encontra a vávula e volta ao campo para falar com o treinador Dragobur.]
+
+Linhas de diálogo:
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Thorin: ]" Prontinho, treinador, eu encontrei! Agora, me coloca no jogo, ainda podemos vencer!"]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Dragobur:] "Tudo bem, Thorin. Você conseguiu encontrar a válvula, mas e quanto ao seu elmo? Você sabe que não pode entrar em campo sem ele!']
+
+(align:"<==>")+(box:"X=")[
+(text-colour:cyan)[Fala do Thorin:] "Mas que droga, eu esqueci!"]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Fala do Dragobur:] "Exatamente. Encontre alguém disposto a  emprestar um".]
+
+(text-colour:yellow)[Quest: O elmo perdido.]
+(text-colour:yellow)[Task: Fale com os jogadores reservas de seu time e consiga um elmo emprestado.]
+
+(align:"<==>")+(box:"X=")[(text-colour:cyan)[Thorin agora precisa falar com os jogadores reservas de seu time, que estão espalhados pelas arquibancadas em volta do campo.]]
+
+[[Elmo]] 
