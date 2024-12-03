@@ -28,13 +28,30 @@
 
   // Armazena as batalhas acumuladas
   let accumulatedBattles = [];
+  // Armazena os IDs dos monstros já enfrentados
+  let encounteredEnemies = new Set();
 
   // Sobrescreve o método que determina o ID da tropa para encontros
   const _Game_Player_makeEncounterTroopId = Game_Player.prototype.makeEncounterTroopId;
   Game_Player.prototype.makeEncounterTroopId = function () {
     const troopId = _Game_Player_makeEncounterTroopId.call(this);
-    if ($gameParty.hasItem($dataItems[DimengeonID])) {
-      if (troopId > 0) {
+    if ($gameParty.hasItem($dataItems[DimengeonID]) && troopId > 0) {
+      const troop = $dataTroops[troopId];
+      const isNewEncounter = troop.members.some(member => {
+        const enemy = $dataEnemies[member.enemyId];
+        return enemy && !encounteredEnemies.has(member.enemyId);
+      });
+
+      if (isNewEncounter) {
+        // Registra os inimigos encontrados pela primeira vez
+        troop.members.forEach(member => {
+          if ($dataEnemies[member.enemyId]) {
+            encounteredEnemies.add(member.enemyId);
+          }
+        });
+        console.log('Primeira vez encontrando inimigos desta tropa.');
+        return troopId; // Permite que a batalha ocorra normalmente
+      } else {
         console.log('Batalha acumulada no Dimengeon:', troopId);
         accumulatedBattles.push(troopId);
         $gameMessage.add('A batalha foi acumulada no Dimengeon!');
