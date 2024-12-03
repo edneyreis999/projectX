@@ -113,13 +113,35 @@
 
   /**
    * Adiciona uma batalha à lista de acumuladas.
+   * Simula a entrada de batalha com sons e efeitos, sem iniciar a batalha real.
    * @param {number} troopId ID da tropa
    */
   function accumulateBattle(troopId) {
     accumulatedBattles.push(troopId);
-    $gameMessage.add('A batalha foi acumulada no Dimengeon!');
+
+    // Simula a entrada na batalha
+    playBattleTransition();
+
+    console.log(`A batalha foi acumulada no Dimengeon: ${troopId}`);
   }
 
+  /**
+   * Simula a transição de entrada na batalha.
+   * Reproduz o som e animações associados ao início de uma batalha.
+   */
+  function playBattleTransition() {
+    // Toca o som padrão de encontro
+    AudioManager.playSe({ name: 'Battle1', volume: 90, pitch: 100, pan: 0 });
+
+    // Reproduz a animação de flash da tela
+    const screenFlashColor = [255, 255, 255, 255]; // Branco
+    $gameScreen.startFlash(screenFlashColor, 60);
+
+    // Aguarda um pequeno atraso para simular a pausa antes do encontro
+    setTimeout(() => {
+      console.log('Simulação de entrada na batalha concluída.');
+    }, 500);
+  }
   /**
    * Verifica se o item usado é o Dimengeon.
    * @param {object} item Item usado
