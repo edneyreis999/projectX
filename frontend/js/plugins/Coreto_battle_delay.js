@@ -30,7 +30,7 @@
   const DimengeonID = Number(parameters['DimengeonID'] || 21);
 
   // Configurações iniciais
-  let dimengeonLevel = 1; // Nível inicial do Dimengeon
+  // let dimengeonLevel = 1; // Nível inicial do Dimengeon
   let maxEnemiesCapacity = 10; // Capacidade máxima inicial (pode ser alterada dinamicamente)
   let accumulatedEnemies = 0; // Total de inimigos acumulados
   const accumulatedBattles = []; // Lista de batalhas acumuladas
