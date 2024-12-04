@@ -13,7 +13,11 @@
  * Features:
  * - Executes battles sequentially.
  * - Resets the accumulated state upon completion.
- * - Validates if the used item is the Dimengeon.
+ * - Called via a Common Event associated with the Dimengeon item.
+ * ----------------------------------------------------------------------------
+ * How to Use:
+ * - Link a Common Event to the Dimengeon item in the RPG Maker database.
+ * - Call the `cleanDimengeon` method from the Common Event.
  * ----------------------------------------------------------------------------
  * @author Edney Antonio Reis Filho
  */
@@ -34,28 +38,25 @@
 
   // Expose functionality globally
   window.CoretoBattleExecute = {
+    cleanDimengeon,
     executeAccumulatedBattles,
     resetDimengeon,
     isDimengeonItem,
     hasAccumulatedBattles,
   };
 
-  // Override item usage to handle Dimengeon-specific functionality
-  const _Scene_ItemBase_useItem = Scene_ItemBase.prototype.useItem;
-  Scene_ItemBase.prototype.useItem = function () {
-    const item = this.item();
-
-    if (isDimengeonItem(item)) {
-      if (hasAccumulatedBattles()) {
-        $gameMessage.add('Iniciando as batalhas acumuladas!');
-        executeAccumulatedBattles.call(this);
-      } else {
-        $gameMessage.add('Nenhuma batalha acumulada para lutar.');
-      }
+  /**
+   * Handles the execution of accumulated battles.
+   * To be called via a Common Event linked to the Dimengeon item.
+   */
+  function cleanDimengeon() {
+    if (hasAccumulatedBattles()) {
+      $gameMessage.add('Iniciando as batalhas acumuladas!');
+      executeAccumulatedBattles();
     } else {
-      _Scene_ItemBase_useItem.call(this);
+      $gameMessage.add('Nenhuma batalha acumulada para lutar.');
     }
-  };
+  }
 
   /**
    * Executes all accumulated battles sequentially.
