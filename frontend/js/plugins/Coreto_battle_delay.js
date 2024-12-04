@@ -1,20 +1,28 @@
 //=============================================================================
 // RPG Maker MZ - Coreto Battle Delay
-// Coreto_battle_delay.js
+// Coreto_Battle_Delay.js
 //=============================================================================
 /*:
  * @target MZ
- * @plugindesc Acumula batalhas no item Dimengeon e as enfrenta todas de uma vez quando usado.
+ * @plugindesc Manages the core logic for the Dimengeon system, including shared state initialization and module dependencies.
  * @author Edney Antonio Reis Filho
  *
- * @help Coreto_battle_delay.js
+ * @help
  * ----------------------------------------------------------------------------
- * Este plugin adiciona a funcionalidade para o item Dimengeon (ID 21).
- * Quando o item é adicionado ao inventário, as batalhas começam a ser armazenadas.
- * A primeira batalha com um inimigo ou tropa ocorre normalmente.
- * Ao usar o item, todas as batalhas acumuladas ocorrem sequencialmente.
+ * This plugin serves as the central core for the Dimengeon system.
+ * It ensures:
+ * - Proper initialization of shared state.
+ * - Validation and loading of dependent modules.
+ * - Access to global parameters for customization.
  * ----------------------------------------------------------------------------
+ * Parameters:
+ * - DimengeonID: The ID of the Dimengeon item in the database.
  *
+ * Modules Required:
+ * - Coreto_Battle_Delay_State.js: Manages the shared state.
+ * - Coreto_Battle_Delay_Accumulate.js: Handles battle accumulation.
+ * - Coreto_Battle_Delay_Execute.js: Handles battle execution.
+ * ----------------------------------------------------------------------------
  * @param DimengeonID
  * @type item
  * @text ID do Item Dimengeon
@@ -25,23 +33,38 @@
 (() => {
   const pluginName = 'Coreto_Battle_Delay';
 
-  // Obtém parâmetros do plugin
+  // Parameters Initialization
+  // Fetch parameters defined in the Plugin Manager
   const parameters = PluginManager.parameters(pluginName);
+
+  /**
+   * ID of the Dimengeon item from the database.
+   * Defaults to 21 if not specified in the parameters.
+   * @type {number}
+   */
   const DimengeonID = Number(parameters['DimengeonID'] || 21);
 
-  // Estado compartilhado
-  window.CoretoBattleState = {
-    DimengeonID,
-    maxEnemiesCapacity: 10, // Capacidade máxima de inimigos
-    accumulatedEnemies: 0, // Total de inimigos acumulados
-    accumulatedBattles: [], // Lista de batalhas acumuladas
-    encounteredEnemies: new Set(), // Lista de inimigos já enfrentados
-  };
-
-  // Verifica se o estado compartilhado foi inicializado
+  // Validate the shared state initialization
   if (!window.CoretoBattleState) {
-    throw new Error('Coreto_Battle_Delay requires Coreto_Battle_Delay_State.js');
+    throw new Error(`[${pluginName}] Missing dependency: Coreto_Battle_Delay_State.js`);
   }
 
-  console.log(`${pluginName} loaded successfully.`);
+  // Log the successful initialization
+  console.log(`[${pluginName}] Coreto Battle Delay initialized successfully.`);
+
+  // Validate Dependencies for Additional Modules
+  if (!window.CoretoBattleAccumulate) {
+    throw new Error(`[${pluginName}] Missing dependency: Coreto_Battle_Delay_Accumulate.js`);
+  }
+  if (!window.CoretoBattleExecute) {
+    throw new Error(`[${pluginName}] Missing dependency: Coreto_Battle_Delay_Execute.js`);
+  }
+
+  // Attach Parameters to the Shared State
+  // Ensure the shared state contains parameters required globally
+  Object.assign(window.CoretoBattleState, {
+    DimengeonID, // ID of the Dimengeon item
+  });
+
+  console.log(`[${pluginName}] Dependencies validated and state extended.`);
 })();
