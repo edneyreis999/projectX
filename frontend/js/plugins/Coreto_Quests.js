@@ -4,12 +4,12 @@
 //=============================================================================
 /*:
  * @target MZ
- * @plugindesc Add or remove a key item from the inventory and trigger a specified common event.
+ * @plugindesc Add or remove key items or equipment from the inventory and trigger a specified common event.
  * @author Edney Antonio Reis Filho
  *
  * @command addKeyItem
  * @text Add Key Item
- * @desc Add a key item to the player inventory and set variables.
+ * @desc Add a key item to the player inventory.
  *
  * @arg itemID
  * @type item
@@ -24,54 +24,158 @@
  * @type item
  * @text Item ID
  * @desc The ID of the key item to remove.
+ *
+ * @command addWeapon
+ * @text Add Weapon
+ * @desc Add a weapon to the player inventory.
+ *
+ * @arg weaponID
+ * @type weapon
+ * @text Weapon ID
+ * @desc The ID of the weapon to add.
+ *
+ * @command removeWeapon
+ * @text Remove Weapon
+ * @desc Remove a weapon from the player inventory.
+ *
+ * @arg weaponID
+ * @type weapon
+ * @text Weapon ID
+ * @desc The ID of the weapon to remove.
+ *
+ * @command addArmor
+ * @text Add Armor
+ * @desc Add an armor to the player inventory.
+ *
+ * @arg armorID
+ * @type armor
+ * @text Armor ID
+ * @desc The ID of the armor to add.
+ *
+ * @command removeArmor
+ * @text Remove Armor
+ * @desc Remove an armor from the player inventory.
+ *
+ * @arg armorID
+ * @type armor
+ * @text Armor ID
+ * @desc The ID of the armor to remove.
  */
 
 var coreto = coreto || {};
 const pluginName = 'Coreto_Quests';
 
-// Função para adicionar um item
-coreto.addKeyItem = function (itemID) {
-  const item = $dataItems[itemID]; // Obtém o item pelo ID
+/**
+ * Adds an item, weapon, or armor to the inventory.
+ * @param {string} type - The type of item ("item", "weapon", "armor").
+ * @param {number} id - The ID of the item in the database.
+ */
+coreto.addInventoryItem = function (type, id) {
+  let item;
 
-  // Adiciona o item ao inventário
-  $gameParty.gainItem(item, 1);
+  // Determine the item type
+  switch (type) {
+    case 'item':
+      item = $dataItems[id];
+      break;
+    case 'weapon':
+      item = $dataWeapons[id];
+      break;
+    case 'armor':
+      item = $dataArmors[id];
+      break;
+  }
 
-  // Toca o som de efeito (SE) ao receber o item
-  AudioManager.playSe({ name: 'Item3', volume: 90, pitch: 100, pan: 0 });
+  // Add the item to the inventory
+  if (item) {
+    $gameParty.gainItem(item, 1);
 
-  // Exibe a mensagem com o nome e ícone do item
-  $gameMessage.setPositionType(0);
-  const itemIcon = `\\i[${item.iconIndex}]`; // Obtém o ícone do item
-  const itemName = item.name; // Define o nome do item
-  const message = `#{System.received} ${itemIcon} \\c[4]${itemName}\\c[0]!`; // Mensagem de recebimento
-  $gameMessage.add(message);
+    // Play a sound effect
+    AudioManager.playSe({ name: 'Item3', volume: 90, pitch: 100, pan: 0 });
+
+    // Show a message
+    $gameMessage.setPositionType(0);
+    const itemIcon = `\\i[${item.iconIndex}]`;
+    const itemName = item.name;
+    const message = `Recebeu ${itemIcon} \\c[4]${itemName}\\c[0]!`;
+    $gameMessage.add(message);
+
+    console.log(`[Coreto_Quests] Added: ${item.name} (${type}).`);
+  } else {
+    console.warn(`[Coreto_Quests] Item not found: Type(${type}), ID(${id}).`);
+  }
 };
 
-// Função para remover um item
-coreto.removeKeyItem = function (itemID) {
-  const item = $dataItems[itemID]; // Obtém o item pelo ID
+/**
+ * Removes an item, weapon, or armor from the inventory.
+ * @param {string} type - The type of item ("item", "weapon", "armor").
+ * @param {number} id - The ID of the item in the database.
+ */
+coreto.removeInventoryItem = function (type, id) {
+  let item;
 
-  // Remove o item do inventário
-  $gameParty.loseItem($dataItems[itemID], 1);
+  // Determine the item type
+  switch (type) {
+    case 'item':
+      item = $dataItems[id];
+      break;
+    case 'weapon':
+      item = $dataWeapons[id];
+      break;
+    case 'armor':
+      item = $dataArmors[id];
+      break;
+  }
 
-  // Toca o som de efeito (SE) ao receber o item
-  AudioManager.playSe({ name: 'Item3', volume: 90, pitch: 100, pan: 0 });
+  // Remove the item from the inventory
+  if (item) {
+    $gameParty.loseItem(item, 1);
 
-  // Exibe a mensagem com o nome e ícone do item
-  $gameMessage.setPositionType(0);
-  const itemIcon = `\\i[${item.iconIndex}]`; // Obtém o ícone do item
-  const itemName = item.name; // Define o nome do item
-  const message = `Usou ${itemIcon} \\c[2]${itemName}\\c[0]!`; // Mensagem de recebimento
-  $gameMessage.add(message);
+    // Play a sound effect
+    AudioManager.playSe({ name: 'Item3', volume: 90, pitch: 100, pan: 0 });
+
+    // Show a message
+    $gameMessage.setPositionType(0);
+    const itemIcon = `\\i[${item.iconIndex}]`;
+    const itemName = item.name;
+    const message = `Usou ${itemIcon} \\c[2]${itemName}\\c[0]!`;
+    $gameMessage.add(message);
+
+    console.log(`[Coreto_Quests] Removed: ${item.name} (${type}).`);
+  } else {
+    console.warn(`[Coreto_Quests] Item not found: Type(${type}), ID(${id}).`);
+  }
 };
 
-// Função para adicionar um item com feedback (mensagem e som)
+// Register commands for adding/removing Key Items
 PluginManager.registerCommand(pluginName, 'addKeyItem', args => {
   const itemID = Number(args.itemID);
-  coreto.addKeyItem(itemID);
+  coreto.addInventoryItem('item', itemID);
 });
 
 PluginManager.registerCommand(pluginName, 'removeKeyItem', args => {
   const itemID = Number(args.itemID);
-  coreto.removeKeyItem(itemID);
+  coreto.removeInventoryItem('item', itemID);
+});
+
+// Register commands for adding/removing Weapons
+PluginManager.registerCommand(pluginName, 'addWeapon', args => {
+  const weaponID = Number(args.weaponID);
+  coreto.addInventoryItem('weapon', weaponID);
+});
+
+PluginManager.registerCommand(pluginName, 'removeWeapon', args => {
+  const weaponID = Number(args.weaponID);
+  coreto.removeInventoryItem('weapon', weaponID);
+});
+
+// Register commands for adding/removing Armors
+PluginManager.registerCommand(pluginName, 'addArmor', args => {
+  const armorID = Number(args.armorID);
+  coreto.addInventoryItem('armor', armorID);
+});
+
+PluginManager.registerCommand(pluginName, 'removeArmor', args => {
+  const armorID = Number(args.armorID);
+  coreto.removeInventoryItem('armor', armorID);
 });
