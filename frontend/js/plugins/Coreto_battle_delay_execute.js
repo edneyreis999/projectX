@@ -44,21 +44,10 @@
   const MAX_ENEMIES_ON_FIELD = 8;
 
   /**
-   * Gets the name of the BattleDelay item from the database.
-   * @returns {string} - The name of the item.
-   */
-  function getBattleDelayItemName() {
-    const { BattleDelayID } = window.CoretoBattleState;
-    console.log(`[Coreto Battle Delay] BattleDelay item ID: ${BattleDelayID}`);
-    const item = $dataItems[BattleDelayID];
-    console.log(`[Coreto Battle Delay] BattleDelay item:`, item);
-    return item ? item.name : 'Item Desconhecido';
-  }
-
-  /**
    * Initiates the BattleDelay battles by executing accumulated battles dynamically.
    */
   function cleanBattleDelay() {
+    const { getBattleDelayItemName } = window.CoretoBattleDelay;
     if (hasAccumulatedBattles()) {
       executeDynamicBattle();
     } else {
@@ -174,6 +163,8 @@
 
     state.accumulatedEnemies = 0;
     state.accumulatedBattles.length = 0;
+
+    window.CoretoBattleDelay.updateBattleDelayItemDescription();
 
     console.log('[Coreto Battle Delay] BattleDelay has been reset.');
   }

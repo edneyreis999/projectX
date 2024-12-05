@@ -115,6 +115,9 @@
     // Display BattleDelay capacity
     showBattleDelayCapacity();
 
+    // Update the BattleDelay item name and description
+    window.CoretoBattleDelay.updateBattleDelayItemDescription();
+
     console.log(`[${pluginName}] Batalha acumulada: ${state.accumulatedEnemies} troopId ${troopId}`);
   }
 
@@ -137,6 +140,9 @@
      * @type {CoretoBattleState}
      */
     const { accumulatedEnemies, maxEnemiesCapacity } = window.CoretoBattleState;
+    const { getBattleDelayItemName } = window.CoretoBattleDelay;
+
+    const itemName = getBattleDelayItemName();
 
     // Calculate the percentage of capacity used
     const percentage = (accumulatedEnemies / maxEnemiesCapacity) * 100;
@@ -152,7 +158,7 @@
     }
 
     // Create the capacity message
-    const message = `Capacidade do BattleDelay: \\C[${colorCode}]${accumulatedEnemies}\\C[0]/${maxEnemiesCapacity}`;
+    const message = `Capacidade do ${itemName}: \\C[${colorCode}]${accumulatedEnemies}\\C[0]/${maxEnemiesCapacity}`;
     $gameMessage.add(message);
   }
 

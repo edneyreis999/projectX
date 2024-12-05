@@ -38,6 +38,7 @@
     accumulatedEnemies: 0, // Current count of accumulated enemies
     accumulatedBattles: [], // Array of troop IDs representing accumulated battles
     encounteredEnemies: new Set(), // Set of IDs for enemies already encountered
+    itemLevel: 1, // Initial level
   };
 
   // Define o estado inicial
