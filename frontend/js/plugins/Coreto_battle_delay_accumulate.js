@@ -27,12 +27,6 @@
     throw new Error(`[${pluginName}] Missing dependency: Coreto_Battle_Delay_State.js`);
   }
 
-  /**
-   * Access the shared state.
-   * @type {CoretoBattleState}
-   */
-  const state = window.CoretoBattleState;
-
   // Expose functionality globally
   window.CoretoBattleAccumulate = {
     shouldAccumulateBattle,
@@ -55,7 +49,7 @@
         console.log('Primeira vez encontrando inimigos desta tropa.');
         return troopId; // First-time encounter, proceed with battle
       } else if (canAccumulateEnemies(troopId)) {
-        console.log('Batalha acumulada no Dimengeon:', troopId);
+        console.log('TroopId da Batalha acumulada no Dimengeon:', troopId);
         accumulateBattle(troopId);
         return 0; // Accumulate battle and cancel encounter
       } else {
@@ -73,7 +67,12 @@
    * @returns {boolean} True if the battle should be accumulated.
    */
   function shouldAccumulateBattle(troopId) {
-    return $gameParty.hasItem($dataItems[state.DimengeonID]) && troopId > 0;
+    /**
+     * Access the shared state.
+     * @type {CoretoBattleState}
+     */
+    const { DimengeonID } = window.CoretoBattleState;
+    return $gameParty.hasItem($dataItems[DimengeonID]) && troopId > 0;
   }
 
   /**
@@ -82,9 +81,14 @@
    * @returns {boolean} True if there is space in the Dimengeon.
    */
   function canAccumulateEnemies(troopId) {
+    /**
+     * Access the shared state.
+     * @type {CoretoBattleState}
+     */
+    const { accumulatedEnemies, maxEnemiesCapacity } = window.CoretoBattleState;
     const troop = $dataTroops[troopId];
     const totalEnemies = troop.members.length;
-    return state.accumulatedEnemies + totalEnemies <= state.maxEnemiesCapacity;
+    return accumulatedEnemies + totalEnemies <= maxEnemiesCapacity;
   }
 
   /**
@@ -93,7 +97,14 @@
    * @param {number} troopId - ID of the troop.
    */
   function accumulateBattle(troopId) {
-    state.accumulatedBattles.push(troopId);
+    /**
+     * Access the shared state.
+     * @type {CoretoBattleState}
+     */
+    let state = window.CoretoBattleState;
+    const { accumulatedBattles } = state;
+
+    accumulatedBattles.push(troopId);
     const troop = $dataTroops[troopId];
     const totalEnemies = troop.members.length;
     state.accumulatedEnemies += totalEnemies;
@@ -104,7 +115,7 @@
     // Display Dimengeon capacity
     showDimengeonCapacity();
 
-    console.log(`[${pluginName}] Batalha acumulada: ${troopId}`);
+    console.log(`[${pluginName}] Batalha acumulada: ${state.accumulatedEnemies} troopId ${troopId}`);
   }
 
   /**
@@ -119,7 +130,12 @@
    * Displays the current capacity of the Dimengeon in the message window.
    */
   function showDimengeonCapacity() {
-    const message = `Capacidade do Dimengeon: ${state.accumulatedEnemies}/${state.maxEnemiesCapacity}`;
+    /**
+     * Access the shared state.
+     * @type {CoretoBattleState}
+     */
+    const { accumulatedEnemies, maxEnemiesCapacity } = window.CoretoBattleState;
+    const message = `Capacidade do Dimengeon: ${accumulatedEnemies}/${maxEnemiesCapacity}`;
     $gameMessage.add(message);
   }
 
@@ -129,10 +145,15 @@
    * @returns {boolean} True if any enemy in the troop is new.
    */
   function isNewEncounter(troopId) {
+    /**
+     * Access the shared state.
+     * @type {CoretoBattleState}
+     */
+    const { encounteredEnemies } = window.CoretoBattleState;
     const troop = $dataTroops[troopId];
     return troop.members.some(member => {
       const enemy = $dataEnemies[member.enemyId];
-      return enemy && !state.encounteredEnemies.has(member.enemyId);
+      return enemy && !encounteredEnemies.has(member.enemyId);
     });
   }
 
@@ -141,10 +162,15 @@
    * @param {number} troopId - ID of the troop.
    */
   function registerEncounteredEnemies(troopId) {
+    /**
+     * Access the shared state.
+     * @type {CoretoBattleState}
+     */
+    const { encounteredEnemies } = window.CoretoBattleState;
     const troop = $dataTroops[troopId];
     troop.members.forEach(member => {
       if ($dataEnemies[member.enemyId]) {
-        state.encounteredEnemies.add(member.enemyId);
+        encounteredEnemies.add(member.enemyId);
       }
     });
   }

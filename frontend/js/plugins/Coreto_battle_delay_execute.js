@@ -30,18 +30,11 @@
     throw new Error(`[${pluginName}] Missing dependency: Coreto_Battle_Delay_State.js`);
   }
 
-  /**
-   * Access the shared state.
-   * @type {CoretoBattleState}
-   */
-  const state = window.CoretoBattleState;
-
   // Expose functionality globally
   window.CoretoBattleExecute = {
     cleanDimengeon,
     executeAccumulatedBattles,
     resetDimengeon,
-    isDimengeonItem,
     hasAccumulatedBattles,
   };
 
@@ -62,8 +55,13 @@
    * Executes all accumulated battles sequentially.
    */
   function executeAccumulatedBattles() {
+    /**
+     * Access the shared state.
+     * @type {CoretoBattleState}
+     */
+    const { accumulatedBattles } = window.CoretoBattleState;
     if (hasAccumulatedBattles()) {
-      const troopId = state.accumulatedBattles.shift(); // Fetch the next battle
+      const troopId = accumulatedBattles.shift(); // Fetch the next battle
       $gameTroop.setup(troopId);
       BattleManager.setup(troopId, true, false);
       BattleManager.setEventCallback(() => {
@@ -81,6 +79,12 @@
    * Updates the shared state to reflect the reset.
    */
   function resetDimengeon() {
+    /**
+     * Access the shared state.
+     * @type {CoretoBattleState}
+     */
+    const state = window.CoretoBattleState;
+
     state.accumulatedEnemies = 0; // Reset accumulated enemy count
     state.accumulatedBattles.length = 0; // Clear the accumulated battles list
     showDimengeonCapacity(); // Display the reset state
@@ -88,27 +92,28 @@
   }
 
   /**
-   * Validates if the used item is the Dimengeon.
-   * @param {object} item - The item being used.
-   * @returns {boolean} - True if the item is the Dimengeon.
-   */
-  function isDimengeonItem(item) {
-    return item && item.id === state.DimengeonID;
-  }
-
-  /**
    * Checks if there are any battles accumulated in the Dimengeon.
    * @returns {boolean} - True if battles are accumulated.
    */
   function hasAccumulatedBattles() {
-    return state.accumulatedBattles.length > 0;
+    /**
+     * Access the shared state.
+     * @type {CoretoBattleState}
+     */
+    const { accumulatedBattles } = window.CoretoBattleState;
+    return accumulatedBattles.length > 0;
   }
 
   /**
    * Displays the current capacity of the Dimengeon on the screen.
    */
   function showDimengeonCapacity() {
-    const message = `Capacidade do Dimengeon: ${state.accumulatedEnemies}/${state.maxEnemiesCapacity}`;
+    /**
+     * Access the shared state.
+     * @type {CoretoBattleState}
+     */
+    const { maxEnemiesCapacity, accumulatedEnemies } = window.CoretoBattleState;
+    const message = `Capacidade do Dimengeon: ${accumulatedEnemies}/${maxEnemiesCapacity}`;
     $gameMessage.add(message);
   }
 })();
