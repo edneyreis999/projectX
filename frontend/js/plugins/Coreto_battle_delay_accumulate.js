@@ -128,6 +128,8 @@
 
   /**
    * Displays the current capacity of the Dimengeon in the message window.
+   * The message is shown in the top-left corner of the screen, using
+   * different text colors based on capacity percentage.
    */
   function showDimengeonCapacity() {
     /**
@@ -135,7 +137,22 @@
      * @type {CoretoBattleState}
      */
     const { accumulatedEnemies, maxEnemiesCapacity } = window.CoretoBattleState;
-    const message = `Capacidade do Dimengeon: ${accumulatedEnemies}/${maxEnemiesCapacity}`;
+
+    // Calculate the percentage of capacity used
+    const percentage = (accumulatedEnemies / maxEnemiesCapacity) * 100;
+
+    // Determine the color based on capacity
+    let colorCode;
+    if (percentage >= 80) {
+      colorCode = 18; // Red
+    } else if (percentage >= 50) {
+      colorCode = 17; // Yellow
+    } else {
+      colorCode = 24; // Green
+    }
+
+    // Create the capacity message
+    const message = `Capacidade do Dimengeon: \\C[${colorCode}]${accumulatedEnemies}\\C[0]/${maxEnemiesCapacity}`;
     $gameMessage.add(message);
   }
 

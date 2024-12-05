@@ -48,7 +48,6 @@
    */
   function cleanDimengeon() {
     if (hasAccumulatedBattles()) {
-      $gameMessage.add('Iniciando as batalhas acumuladas!');
       executeDynamicBattle();
     } else {
       $gameMessage.add('Nenhuma batalha acumulada para lutar.');
