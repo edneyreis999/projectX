@@ -8,5 +8,10 @@ var $plugins =
 {"name":"wasdKeyMZ","status":true,"description":"It is a plugin that corresponds to the wasd move.","parameters":{}},
 {"name":"Iavra_MZ_Localization_byNeomaStudio","status":false,"description":"Plugin para adicionar traduções ao jogo por meio de arquivo externo.\n<Iavra Localization Core>","parameters":{"Escape Code":"#{{key}}","Languages":"en, ptbr","File Path":"{lang}.json","Option Label":"Language","Language Labels":"en:English, ptbr:Portuguese","Localization Folder":"localization"}},
 {"name":"Coreto_Quests","status":true,"description":"Add or remove a key item from the inventory and trigger a specified common event.","parameters":{}},
-{"name":"Coreto_Quest_bau","status":true,"description":"Manages the quest to open the mysterious chest by interacting with NPCs in the correct order.","parameters":{"questVariableId":"1"}}
+{"name":"Coreto_Quest_bau","status":true,"description":"Manages the quest to open the mysterious chest by interacting with NPCs in the correct order.","parameters":{"questVariableId":"1"}},
+{"name":"Coreto_battle_delay_state","status":true,"description":"Initializes the shared state for the Coreto Battle Delay system, required by all modules.","parameters":{}},
+{"name":"Coreto_battle_enemy_reinforcements","status":true,"description":"Dynamically adds enemy reinforcements to ongoing battles for enhanced challenge and strategy.","parameters":{}},
+{"name":"Coreto_battle_delay_execute","status":true,"description":"Manages the dynamic execution of accumulated battles in the BattleDelay system.","parameters":{}},
+{"name":"Coreto_battle_delay_accumulate","status":true,"description":"Handles the accumulation of battles into the BattleDelay item, leveraging shared state and global parameters.","parameters":{}},
+{"name":"Coreto_battle_delay","status":true,"description":"Manages the core logic for the BattleDelay system, including shared state initialization and module dependencies.","parameters":{"BattleDelayID":"21"}}
 ];
