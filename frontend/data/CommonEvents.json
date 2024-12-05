@@ -1,7 +1,67 @@
 [
-null,
-{"id":1,"list":[{"code":111,"indent":0,"parameters":[4,3,5,51]},{"code":101,"indent":1,"parameters":["",0,0,1,""]},{"code":401,"indent":1,"parameters":["\\C[1]Elmo Velho\\C equipado."]},{"code":355,"indent":1,"parameters":["SQSM.CompleteTaskForQuest(\"elmoPerdido\", 2)"]},{"code":121,"indent":1,"parameters":[4,4,1]},{"code":0,"indent":1,"parameters":[]},{"code":412,"indent":0,"parameters":[]},{"code":214,"indent":0,"parameters":[]},{"code":0,"indent":0,"parameters":[]}],"name":"Elmo equipado","switchId":4,"trigger":2},
-{"id":2,"list":[{"code":111,"indent":0,"parameters":[1,9,0,2,0]},{"code":355,"indent":1,"parameters":["SQSM.CompleteTaskForQuest(\"proveSeuValor\", 1);"]},{"code":655,"indent":1,"parameters":["SQSM.ShowTaskForQuest(\"proveSeuValor\", 2)"]},{"code":121,"indent":1,"parameters":[5,5,1]},{"code":355,"indent":1,"parameters":["SQSM.ShowTaskForQuest(\"proveSeuValor\", 3)"]},{"code":0,"indent":1,"parameters":[]},{"code":412,"indent":0,"parameters":[]},{"code":214,"indent":0,"parameters":[]},{"code":0,"indent":0,"parameters":[]}],"name":"Reunir trofeus","switchId":5,"trigger":2},
-{"id":3,"list":[{"code":111,"indent":0,"parameters":[4,3,5,7]},{"code":101,"indent":1,"parameters":["",0,0,1,""]},{"code":401,"indent":1,"parameters":["\\C[1]Armadura de Prata\\C equipada."]},{"code":122,"indent":1,"parameters":[12,12,1,0,1]},{"code":201,"indent":1,"parameters":[0,8,11,6,4,0]},{"code":121,"indent":1,"parameters":[6,6,1]},{"code":0,"indent":1,"parameters":[]},{"code":412,"indent":0,"parameters":[]},{"code":214,"indent":0,"parameters":[]},{"code":0,"indent":0,"parameters":[]}],"name":"Armadura Equipada","switchId":6,"trigger":2},
-{"id":4,"list":[{"code":355,"indent":0,"parameters":["CoretoBattleExecute.cleanBattleDelay();"]},{"code":0,"indent":0,"parameters":[]}],"name":"Usar Simbolo da Tregua","switchId":1,"trigger":0}
+  null,
+  {
+    "id": 1,
+    "list": [
+      { "code": 111, "indent": 0, "parameters": [4, 3, 5, 51] },
+      { "code": 101, "indent": 1, "parameters": ["", 0, 0, 1, ""] },
+      { "code": 401, "indent": 1, "parameters": ["\\C[1]Elmo Velho\\C equipado."] },
+      { "code": 355, "indent": 1, "parameters": ["SQSM.CompleteTaskForQuest(\"elmoPerdido\", 2)"] },
+      { "code": 121, "indent": 1, "parameters": [4, 4, 1] },
+      { "code": 0, "indent": 1, "parameters": [] },
+      { "code": 412, "indent": 0, "parameters": [] },
+      { "code": 214, "indent": 0, "parameters": [] },
+      { "code": 0, "indent": 0, "parameters": [] }
+    ],
+    "name": "Elmo equipado",
+    "switchId": 4,
+    "trigger": 2
+  },
+  {
+    "id": 2,
+    "list": [
+      { "code": 111, "indent": 0, "parameters": [1, 9, 0, 2, 0] },
+      { "code": 355, "indent": 1, "parameters": ["SQSM.CompleteTaskForQuest(\"proveSeuValor\", 1);"] },
+      { "code": 655, "indent": 1, "parameters": ["SQSM.ShowTaskForQuest(\"proveSeuValor\", 2)"] },
+      { "code": 121, "indent": 1, "parameters": [5, 5, 1] },
+      { "code": 355, "indent": 1, "parameters": ["SQSM.ShowTaskForQuest(\"proveSeuValor\", 3)"] },
+      { "code": 0, "indent": 1, "parameters": [] },
+      { "code": 412, "indent": 0, "parameters": [] },
+      { "code": 214, "indent": 0, "parameters": [] },
+      { "code": 0, "indent": 0, "parameters": [] }
+    ],
+    "name": "Reunir trofeus",
+    "switchId": 5,
+    "trigger": 2
+  },
+  {
+    "id": 3,
+    "list": [
+      { "code": 111, "indent": 0, "parameters": [4, 3, 5, 7] },
+      { "code": 101, "indent": 1, "parameters": ["", 0, 0, 1, ""] },
+      { "code": 401, "indent": 1, "parameters": ["\\C[1]Armadura de Prata\\C equipada."] },
+      { "code": 355, "indent": 1, "parameters": ["SQSM.CompleteTaskForQuest(\"horaDeCrescer\", 2);"] },
+      { "code": 655, "indent": 1, "parameters": ["SQSM.CompletQuest(\"horaDeCrescer\")"] },
+      { "code": 122, "indent": 1, "parameters": [12, 12, 1, 0, 1] },
+      { "code": 121, "indent": 1, "parameters": [6, 6, 1] },
+      { "code": 201, "indent": 1, "parameters": [0, 8, 11, 6, 4, 0] },
+      { "code": 0, "indent": 1, "parameters": [] },
+      { "code": 412, "indent": 0, "parameters": [] },
+      { "code": 214, "indent": 0, "parameters": [] },
+      { "code": 0, "indent": 0, "parameters": [] }
+    ],
+    "name": "Armadura Equipada",
+    "switchId": 6,
+    "trigger": 2
+  },
+  {
+    "id": 4,
+    "list": [
+      { "code": 355, "indent": 0, "parameters": ["CoretoBattleExecute.cleanBattleDelay();"] },
+      { "code": 0, "indent": 0, "parameters": [] }
+    ],
+    "name": "Usar Simbolo da Tregua",
+    "switchId": 1,
+    "trigger": 0
+  }
 ]
