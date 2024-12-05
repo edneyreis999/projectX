@@ -20,7 +20,7 @@
 
 /**
  * @typedef {Object} CoretoBattleState
- * @property {number} DimengeonID - ID of the Dimengeon item in the database.
+ * @property {number} BattleDelayID - ID of the BattleDelay item in the database.
  * @property {number} maxEnemiesCapacity - Maximum number of enemies that can be accumulated.
  * @property {number} accumulatedEnemies - Current total of accumulated enemies.
  * @property {number[]} accumulatedBattles - List of troop IDs for accumulated battles.
@@ -33,7 +33,7 @@
    * @type {CoretoBattleState}
    */
   const initialState = {
-    DimengeonID: 21, // Default ID for the Dimengeon item
+    BattleDelayID: 21, // Default ID for the BattleDelay item
     maxEnemiesCapacity: 10, // Initial maximum capacity for accumulated enemies
     accumulatedEnemies: 0, // Current count of accumulated enemies
     accumulatedBattles: [], // Array of troop IDs representing accumulated battles

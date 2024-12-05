@@ -4,20 +4,20 @@
 //=============================================================================
 /*:
  * @target MZ
- * @plugindesc Manages the dynamic execution of accumulated battles in the Dimengeon system.
+ * @plugindesc Manages the dynamic execution of accumulated battles in the BattleDelay system.
  * @author Edney Antonio Reis Filho
  *
  * @help
  * ----------------------------------------------------------------------------
- * This module dynamically executes accumulated battles in the Dimengeon system.
+ * This module dynamically executes accumulated battles in the BattleDelay system.
  * Features:
  * - Sequential execution of battles with reinforcement logic.
  * - Dynamic addition of troops respecting battlefield constraints.
- * - Resets the Dimengeon state upon completion of all battles.
+ * - Resets the BattleDelay state upon completion of all battles.
  * ----------------------------------------------------------------------------
  * Usage:
- * - Link a Common Event to the Dimengeon item.
- * - Call the `cleanDimengeon` function from the Common Event.
+ * - Link a Common Event to the BattleDelay item.
+ * - Call the `cleanBattleDelay` function from the Common Event.
  * ----------------------------------------------------------------------------
  */
 
@@ -31,9 +31,9 @@
 
   // Expose functionality globally
   window.CoretoBattleExecute = {
-    cleanDimengeon,
+    cleanBattleDelay,
     executeDynamicBattle,
-    resetDimengeon,
+    resetBattleDelay,
     hasAccumulatedBattles,
   };
 
@@ -44,9 +44,9 @@
   const MAX_ENEMIES_ON_FIELD = 8;
 
   /**
-   * Initiates the Dimengeon battles by executing accumulated battles dynamically.
+   * Initiates the BattleDelay battles by executing accumulated battles dynamically.
    */
-  function cleanDimengeon() {
+  function cleanBattleDelay() {
     if (hasAccumulatedBattles()) {
       executeDynamicBattle();
     } else {
@@ -64,7 +64,7 @@
 
     if (accumulatedBattles.length === 0) {
       console.log('[Coreto Battle Delay] No accumulated battles to process.');
-      resetDimengeon();
+      resetBattleDelay();
       return;
     }
 
@@ -92,8 +92,8 @@
       }
 
       if (noMoreReinforcements()) {
-        console.log('[Coreto Battle Delay] All troops defeated. Resetting Dimengeon.');
-        resetDimengeon();
+        console.log('[Coreto Battle Delay] All troops defeated. Resetting BattleDelay.');
+        resetBattleDelay();
       }
 
       return originalCheckBattleEnd.call(this);
@@ -154,19 +154,19 @@
   }
 
   /**
-   * Resets the Dimengeon system after all battles are completed.
+   * Resets the BattleDelay system after all battles are completed.
    */
-  function resetDimengeon() {
+  function resetBattleDelay() {
     const state = window.CoretoBattleState;
 
     state.accumulatedEnemies = 0;
     state.accumulatedBattles.length = 0;
 
-    console.log('[Coreto Battle Delay] Dimengeon has been reset.');
+    console.log('[Coreto Battle Delay] BattleDelay has been reset.');
   }
 
   /**
-   * Checks if there are any battles accumulated in the Dimengeon.
+   * Checks if there are any battles accumulated in the BattleDelay.
    * @returns {boolean} - True if battles are accumulated.
    */
   function hasAccumulatedBattles() {

@@ -4,16 +4,16 @@
 //=============================================================================
 /*:
  * @target MZ
- * @plugindesc Handles the accumulation of battles into the Dimengeon item, leveraging shared state and global parameters.
+ * @plugindesc Handles the accumulation of battles into the BattleDelay item, leveraging shared state and global parameters.
  * @help
  * ----------------------------------------------------------------------------
  * This module is responsible for:
- * - Tracking and managing accumulated battles in the Dimengeon system.
+ * - Tracking and managing accumulated battles in the BattleDelay system.
  * - Simulating battle transitions when battles are accumulated.
  * ----------------------------------------------------------------------------
  * Features:
  * - Validates if battles should be accumulated.
- * - Adds battles to the Dimengeon queue.
+ * - Adds battles to the BattleDelay queue.
  * - Manages enemy tracking and capacity.
  * ----------------------------------------------------------------------------
  * @author Edney Antonio Reis Filho
@@ -33,7 +33,7 @@
     canAccumulateEnemies,
     accumulateBattle,
     playBattleTransition,
-    showDimengeonCapacity,
+    showBattleDelayCapacity,
     isNewEncounter,
     registerEncounteredEnemies,
   };
@@ -49,16 +49,16 @@
         console.log('Primeira vez encontrando inimigos desta tropa.');
         return troopId; // First-time encounter, proceed with battle
       } else if (canAccumulateEnemies(troopId)) {
-        console.log('TroopId da Batalha acumulada no Dimengeon:', troopId);
+        console.log('TroopId da Batalha acumulada no BattleDelay:', troopId);
         accumulateBattle(troopId);
         return 0; // Accumulate battle and cancel encounter
       } else {
-        console.log('Capacidade do Dimengeon cheia, batalha ocorrendo normalmente.');
-        return troopId; // Dimengeon is full, proceed with battle
+        console.log('Capacidade do BattleDelay cheia, batalha ocorrendo normalmente.');
+        return troopId; // BattleDelay is full, proceed with battle
       }
     }
 
-    return troopId; // Default behavior for non-Dimengeon encounters
+    return troopId; // Default behavior for non-BattleDelay encounters
   };
 
   /**
@@ -71,14 +71,14 @@
      * Access the shared state.
      * @type {CoretoBattleState}
      */
-    const { DimengeonID } = window.CoretoBattleState;
-    return $gameParty.hasItem($dataItems[DimengeonID]) && troopId > 0;
+    const { BattleDelayID } = window.CoretoBattleState;
+    return $gameParty.hasItem($dataItems[BattleDelayID]) && troopId > 0;
   }
 
   /**
-   * Checks if there is enough space in the Dimengeon to accumulate enemies.
+   * Checks if there is enough space in the BattleDelay to accumulate enemies.
    * @param {number} troopId - ID of the troop.
-   * @returns {boolean} True if there is space in the Dimengeon.
+   * @returns {boolean} True if there is space in the BattleDelay.
    */
   function canAccumulateEnemies(troopId) {
     /**
@@ -92,7 +92,7 @@
   }
 
   /**
-   * Adds a battle to the Dimengeon queue and updates the accumulated enemy count.
+   * Adds a battle to the BattleDelay queue and updates the accumulated enemy count.
    * Simulates the battle transition effects without starting the battle.
    * @param {number} troopId - ID of the troop.
    */
@@ -112,8 +112,8 @@
     // Simulate battle entry effects
     playBattleTransition();
 
-    // Display Dimengeon capacity
-    showDimengeonCapacity();
+    // Display BattleDelay capacity
+    showBattleDelayCapacity();
 
     console.log(`[${pluginName}] Batalha acumulada: ${state.accumulatedEnemies} troopId ${troopId}`);
   }
@@ -127,11 +127,11 @@
   }
 
   /**
-   * Displays the current capacity of the Dimengeon in the message window.
+   * Displays the current capacity of the BattleDelay in the message window.
    * The message is shown in the top-left corner of the screen, using
    * different text colors based on capacity percentage.
    */
-  function showDimengeonCapacity() {
+  function showBattleDelayCapacity() {
     /**
      * Access the shared state.
      * @type {CoretoBattleState}
@@ -152,7 +152,7 @@
     }
 
     // Create the capacity message
-    const message = `Capacidade do Dimengeon: \\C[${colorCode}]${accumulatedEnemies}\\C[0]/${maxEnemiesCapacity}`;
+    const message = `Capacidade do BattleDelay: \\C[${colorCode}]${accumulatedEnemies}\\C[0]/${maxEnemiesCapacity}`;
     $gameMessage.add(message);
   }
 
