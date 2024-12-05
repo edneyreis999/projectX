@@ -4,22 +4,21 @@
 //=============================================================================
 /*:
  * @target MZ
- * @plugindesc Handles the execution of accumulated battles in the Dimengeon item, ensuring proper resets and updates to shared state data.
+ * @plugindesc Manages the dynamic execution of accumulated battles in the Dimengeon system.
+ * @author Edney Antonio Reis Filho
+ *
  * @help
  * ----------------------------------------------------------------------------
- * This module is responsible for executing all battles accumulated in the
- * Dimengeon item and resetting the system when the battles are completed.
- * ----------------------------------------------------------------------------
+ * This module dynamically executes accumulated battles in the Dimengeon system.
  * Features:
- * - Executes battles sequentially.
- * - Resets the accumulated state upon completion.
- * - Called via a Common Event associated with the Dimengeon item.
+ * - Sequential execution of battles with reinforcement logic.
+ * - Dynamic addition of troops respecting battlefield constraints.
+ * - Resets the Dimengeon state upon completion of all battles.
  * ----------------------------------------------------------------------------
- * How to Use:
- * - Link a Common Event to the Dimengeon item in the RPG Maker database.
- * - Call the `cleanDimengeon` method from the Common Event.
+ * Usage:
+ * - Link a Common Event to the Dimengeon item.
+ * - Call the `cleanDimengeon` function from the Common Event.
  * ----------------------------------------------------------------------------
- * @author Edney Antonio Reis Filho
  */
 
 (() => {
@@ -40,13 +39,12 @@
 
   /**
    * Maximum number of enemies allowed on the battlefield at once.
-   * @type {number}
+   * @const {number}
    */
   const MAX_ENEMIES_ON_FIELD = 8;
 
   /**
-   * Handles the execution of the dynamic battle.
-   * Starts with the first troop and dynamically adds more enemies.
+   * Initiates the Dimengeon battles by executing accumulated battles dynamically.
    */
   function cleanDimengeon() {
     if (hasAccumulatedBattles()) {
@@ -58,7 +56,7 @@
   }
 
   /**
-   * Manages the dynamic battle system.
+   * Executes dynamic battles with troop reinforcements based on specific rules.
    */
   function executeDynamicBattle() {
     console.log('[Coreto Battle Delay] Starting dynamic battle execution.');
@@ -67,72 +65,97 @@
 
     if (accumulatedBattles.length === 0) {
       console.log('[Coreto Battle Delay] No accumulated battles to process.');
+      resetDimengeon();
       return;
     }
 
-    // Load the first troop
     const firstTroopId = accumulatedBattles.shift();
     console.log(`[Coreto Battle Delay] Setting up first troop: ${firstTroopId}`);
     $gameTroop.setup(firstTroopId);
     BattleManager.setup(firstTroopId, true, false);
 
-    // Monitor enemy count and add reinforcements when needed
-    const checkReinforcements = () => {
-      console.log('[Coreto Battle Delay] Checking reinforcements...');
-      const currentEnemies = $gameTroop.members().filter(enemy => enemy.isAlive()).length;
-
-      if (currentEnemies === 0) {
-        console.log('[Coreto Battle Delay] Current troop defeated.');
-
-        if (accumulatedBattles.length > 0) {
-          // Add next troop if there's room on the battlefield
-          const nextTroopId = accumulatedBattles.shift();
-          console.log(`[Coreto Battle Delay] Adding troop: ${nextTroopId}`);
-
-          window.CoretoEnemyReinforcements.addEnemyTroop(nextTroopId);
-          BattleManager.refreshEnemyReinforcements();
-        } else {
-          // All battles are finished, reset Dimengeon
-          console.log('[Coreto Battle Delay] All battles finished. Resetting Dimengeon.');
-          resetDimengeon();
-        }
-      }
-    };
-
-    // Hook into battle turn-end logic
+    // Hook into the turn-end logic to check for reinforcements.
     const originalUpdateTurnEnd = BattleManager.updateTurnEnd;
     BattleManager.updateTurnEnd = function () {
       console.log('[Coreto Battle Delay] Turn ended. Checking reinforcements...');
-      checkReinforcements();
+      handleReinforcements();
       originalUpdateTurnEnd.call(this);
     };
 
-    // Hook into battle end logic to prevent premature end
+    // Hook into battle end logic to prevent premature endings.
     const originalCheckBattleEnd = BattleManager.checkBattleEnd;
     BattleManager.checkBattleEnd = function () {
       console.log('[Coreto Battle Delay] Checking if battle should end...');
-      const currentEnemies = $gameTroop.members().filter(enemy => enemy.isAlive()).length;
-
-      if (currentEnemies === 0 && accumulatedBattles.length > 0) {
+      if (shouldAddReinforcements()) {
         console.log('[Coreto Battle Delay] Preventing battle end to add reinforcements.');
-        checkReinforcements();
-        return false; // Prevent the battle from ending
+        handleReinforcements();
+        return false;
       }
 
-      if (currentEnemies === 0 && accumulatedBattles.length === 0) {
-        console.log('[Coreto Battle Delay] No more reinforcements. Resetting Dimengeon.');
+      if (noMoreReinforcements()) {
+        console.log('[Coreto Battle Delay] All troops defeated. Resetting Dimengeon.');
         resetDimengeon();
       }
 
-      return originalCheckBattleEnd.call(this); // Default behavior
+      return originalCheckBattleEnd.call(this);
     };
 
     SceneManager.push(Scene_Battle);
   }
 
   /**
-   * Resets the Dimengeon system after battles are completed.
-   * Updates the shared state to reflect the reset.
+   * Determines if new reinforcements should be added to the battle.
+   * @returns {boolean} - True if there are accumulated battles and space on the field.
+   */
+  function shouldAddReinforcements() {
+    const { accumulatedBattles } = window.CoretoBattleState;
+    const currentEnemies = $gameTroop.members().filter(enemy => enemy.isAlive()).length;
+    const nextTroopId = accumulatedBattles[0];
+    const nextTroopSize = getTroopSize(nextTroopId);
+
+    return currentEnemies === 0 && accumulatedBattles.length > 0 && currentEnemies + nextTroopSize <= MAX_ENEMIES_ON_FIELD;
+  }
+
+  /**
+   * Handles the logic to add reinforcements if conditions are met.
+   */
+  function handleReinforcements() {
+    const { accumulatedBattles } = window.CoretoBattleState;
+
+    if (!shouldAddReinforcements()) {
+      console.log('[Coreto Battle Delay] No reinforcements to add.');
+      return;
+    }
+
+    const nextTroopId = accumulatedBattles.shift();
+    console.log(`[Coreto Battle Delay] Adding troop: ${nextTroopId}`);
+    window.CoretoEnemyReinforcements.addEnemyTroop(nextTroopId);
+    BattleManager.refreshEnemyReinforcements();
+  }
+
+  /**
+   * Checks if there are no more reinforcements or battles to process.
+   * @returns {boolean} - True if there are no more accumulated battles or enemies.
+   */
+  function noMoreReinforcements() {
+    const { accumulatedBattles } = window.CoretoBattleState;
+    const currentEnemies = $gameTroop.members().filter(enemy => enemy.isAlive()).length;
+    return currentEnemies === 0 && accumulatedBattles.length === 0;
+  }
+
+  /**
+   * Gets the size of a troop (number of enemies in the troop).
+   * @param {number} troopId - The ID of the troop.
+   * @returns {number} - The number of enemies in the troop.
+   */
+  function getTroopSize(troopId) {
+    if (!troopId) return 0;
+    const troop = $dataTroops[troopId];
+    return troop ? troop.members.length : 0;
+  }
+
+  /**
+   * Resets the Dimengeon system after all battles are completed.
    */
   function resetDimengeon() {
     const state = window.CoretoBattleState;
