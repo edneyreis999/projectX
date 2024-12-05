@@ -33,45 +33,101 @@
   // Expose functionality globally
   window.CoretoBattleExecute = {
     cleanDimengeon,
-    executeAccumulatedBattles,
+    executeDynamicBattle,
     resetDimengeon,
     hasAccumulatedBattles,
   };
 
   /**
-   * Handles the execution of accumulated battles.
-   * To be called via a Common Event linked to the Dimengeon item.
+   * Maximum number of enemies allowed on the battlefield at once.
+   * @type {number}
+   */
+  const MAX_ENEMIES_ON_FIELD = 8;
+
+  /**
+   * Handles the execution of the dynamic battle.
+   * Starts with the first troop and dynamically adds more enemies.
    */
   function cleanDimengeon() {
     if (hasAccumulatedBattles()) {
       $gameMessage.add('Iniciando as batalhas acumuladas!');
-      executeAccumulatedBattles();
+      executeDynamicBattle();
     } else {
       $gameMessage.add('Nenhuma batalha acumulada para lutar.');
     }
   }
 
   /**
-   * Executes all accumulated battles sequentially.
+   * Manages the dynamic battle system.
    */
-  function executeAccumulatedBattles() {
-    /**
-     * Access the shared state.
-     * @type {CoretoBattleState}
-     */
+  function executeDynamicBattle() {
+    console.log('[Coreto Battle Delay] Starting dynamic battle execution.');
+
     const { accumulatedBattles } = window.CoretoBattleState;
-    if (hasAccumulatedBattles()) {
-      const troopId = accumulatedBattles.shift(); // Fetch the next battle
-      $gameTroop.setup(troopId);
-      BattleManager.setup(troopId, true, false);
-      BattleManager.setEventCallback(() => {
-        executeAccumulatedBattles.call(this); // Recursively handle the next battle
-      });
-      SceneManager.push(Scene_Battle);
-    } else {
-      $gameMessage.add('Todas as batalhas foram concluídas!');
-      resetDimengeon(); // Reset after all battles are completed
+
+    if (accumulatedBattles.length === 0) {
+      console.log('[Coreto Battle Delay] No accumulated battles to process.');
+      return;
     }
+
+    // Load the first troop
+    const firstTroopId = accumulatedBattles.shift();
+    console.log(`[Coreto Battle Delay] Setting up first troop: ${firstTroopId}`);
+    $gameTroop.setup(firstTroopId);
+    BattleManager.setup(firstTroopId, true, false);
+
+    // Monitor enemy count and add reinforcements when needed
+    const checkReinforcements = () => {
+      console.log('[Coreto Battle Delay] Checking reinforcements...');
+      const currentEnemies = $gameTroop.members().filter(enemy => enemy.isAlive()).length;
+
+      if (currentEnemies === 0) {
+        console.log('[Coreto Battle Delay] Current troop defeated.');
+
+        if (accumulatedBattles.length > 0) {
+          // Add next troop if there's room on the battlefield
+          const nextTroopId = accumulatedBattles.shift();
+          console.log(`[Coreto Battle Delay] Adding troop: ${nextTroopId}`);
+
+          window.CoretoEnemyReinforcements.addEnemyTroop(nextTroopId);
+          BattleManager.refreshEnemyReinforcements();
+        } else {
+          // All battles are finished, reset Dimengeon
+          console.log('[Coreto Battle Delay] All battles finished. Resetting Dimengeon.');
+          resetDimengeon();
+        }
+      }
+    };
+
+    // Hook into battle turn-end logic
+    const originalUpdateTurnEnd = BattleManager.updateTurnEnd;
+    BattleManager.updateTurnEnd = function () {
+      console.log('[Coreto Battle Delay] Turn ended. Checking reinforcements...');
+      checkReinforcements();
+      originalUpdateTurnEnd.call(this);
+    };
+
+    // Hook into battle end logic to prevent premature end
+    const originalCheckBattleEnd = BattleManager.checkBattleEnd;
+    BattleManager.checkBattleEnd = function () {
+      console.log('[Coreto Battle Delay] Checking if battle should end...');
+      const currentEnemies = $gameTroop.members().filter(enemy => enemy.isAlive()).length;
+
+      if (currentEnemies === 0 && accumulatedBattles.length > 0) {
+        console.log('[Coreto Battle Delay] Preventing battle end to add reinforcements.');
+        checkReinforcements();
+        return false; // Prevent the battle from ending
+      }
+
+      if (currentEnemies === 0 && accumulatedBattles.length === 0) {
+        console.log('[Coreto Battle Delay] No more reinforcements. Resetting Dimengeon.');
+        resetDimengeon();
+      }
+
+      return originalCheckBattleEnd.call(this); // Default behavior
+    };
+
+    SceneManager.push(Scene_Battle);
   }
 
   /**
@@ -79,15 +135,11 @@
    * Updates the shared state to reflect the reset.
    */
   function resetDimengeon() {
-    /**
-     * Access the shared state.
-     * @type {CoretoBattleState}
-     */
     const state = window.CoretoBattleState;
 
-    state.accumulatedEnemies = 0; // Reset accumulated enemy count
-    state.accumulatedBattles.length = 0; // Clear the accumulated battles list
-    showDimengeonCapacity(); // Display the reset state
+    state.accumulatedEnemies = 0;
+    state.accumulatedBattles.length = 0;
+
     console.log('[Coreto Battle Delay] Dimengeon has been reset.');
   }
 
@@ -96,24 +148,7 @@
    * @returns {boolean} - True if battles are accumulated.
    */
   function hasAccumulatedBattles() {
-    /**
-     * Access the shared state.
-     * @type {CoretoBattleState}
-     */
     const { accumulatedBattles } = window.CoretoBattleState;
     return accumulatedBattles.length > 0;
-  }
-
-  /**
-   * Displays the current capacity of the Dimengeon on the screen.
-   */
-  function showDimengeonCapacity() {
-    /**
-     * Access the shared state.
-     * @type {CoretoBattleState}
-     */
-    const { maxEnemiesCapacity, accumulatedEnemies } = window.CoretoBattleState;
-    const message = `Capacidade do Dimengeon: ${accumulatedEnemies}/${maxEnemiesCapacity}`;
-    $gameMessage.add(message);
   }
 })();
