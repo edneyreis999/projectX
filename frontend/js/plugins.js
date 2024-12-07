@@ -13,5 +13,6 @@ var $plugins =
 {"name":"Coreto_battle_enemy_reinforcements","status":true,"description":"Dynamically adds enemy reinforcements to ongoing battles for enhanced challenge and strategy.","parameters":{}},
 {"name":"Coreto_battle_delay_execute","status":true,"description":"Manages the dynamic execution of accumulated battles in the BattleDelay system.","parameters":{}},
 {"name":"Coreto_battle_delay_accumulate","status":true,"description":"Handles the accumulation of battles into the BattleDelay item, leveraging shared state and global parameters.","parameters":{}},
-{"name":"Coreto_battle_delay","status":true,"description":"Manages the core logic for the BattleDelay system, including shared state initialization and module dependencies.","parameters":{"BattleDelayID":"21"}}
+{"name":"Coreto_battle_delay","status":true,"description":"Manages the core logic for the BattleDelay system, including shared state initialization and module dependencies.","parameters":{"BattleDelayID":"21"}},
+{"name":"Coreto_warp","status":true,"description":"Adds a Coreto teleport command to the menu and allows saving and returning to a previous location.","parameters":{"commandName":"Coreto","coretoMapID":"5","coretoMapX":"14","coretoMapY":"18","coretoDirection":"2"}}
 ];
