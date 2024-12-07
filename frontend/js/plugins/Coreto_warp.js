@@ -76,17 +76,25 @@
     direction: null,
   };
 
+  // State to enable or disable the Coreto warp
+  let coretoWarpEnabled = true;
+
   /**
    * Teleports the player to the Coreto map and saves their current location.
    */
   function warpToCoreto() {
+    if ($gameMap.mapId() === coretoMapID) {
+      console.warn('[Coreto Warp] Already in Coreto map.');
+      return;
+    }
+
     previousLocation.mapId = $gameMap.mapId();
     previousLocation.x = $gamePlayer.x;
     previousLocation.y = $gamePlayer.y;
     previousLocation.direction = $gamePlayer.direction();
 
     $gamePlayer.reserveTransfer(coretoMapID, coretoMapX, coretoMapY, coretoDirection);
-    SceneManager.goto(Scene_Map); // Garante que o jogador vá para o mapa
+    SceneManager.goto(Scene_Map);
   }
 
   /**
@@ -94,20 +102,39 @@
    */
   function returnFromCoreto() {
     if (previousLocation.mapId !== null) {
-      console.log('Returning to previous location:', previousLocation);
       $gamePlayer.reserveTransfer(previousLocation.mapId, previousLocation.x, previousLocation.y, previousLocation.direction);
-      SceneManager.goto(Scene_Map); // Garante que o jogador vá para o mapa
+      SceneManager.goto(Scene_Map);
     } else {
       $gameMessage.add('Nenhuma localização anterior foi salva.');
       console.warn('[Coreto Warp] No previous location saved.');
     }
   }
 
+  /**
+   * Enables the Coreto warp command.
+   */
+  function enableCoretoWarp() {
+    coretoWarpEnabled = true;
+    console.log('[Coreto Warp] Enabled.');
+  }
+
+  /**
+   * Disables the Coreto warp command.
+   */
+  function disableCoretoWarp() {
+    coretoWarpEnabled = false;
+    console.log('[Coreto Warp] Disabled.');
+  }
+
   // Extend the menu system to include the Coreto warp command
   const _Window_MenuCommand_addOriginalCommands = Window_MenuCommand.prototype.addOriginalCommands;
   Window_MenuCommand.prototype.addOriginalCommands = function () {
     _Window_MenuCommand_addOriginalCommands.call(this);
-    this.addCommand(commandName, 'coreto', true);
+
+    // Add the Coreto warp command only if enabled and not already in Coreto
+    if (coretoWarpEnabled && $gameMap.mapId() !== coretoMapID) {
+      this.addCommand(commandName, 'coreto', true);
+    }
   };
 
   const _Scene_Menu_createCommandWindow = Scene_Menu.prototype.createCommandWindow;
@@ -124,6 +151,8 @@
   window.CoretoWarp = {
     warpToCoreto,
     returnFromCoreto,
+    enableCoretoWarp,
+    disableCoretoWarp,
   };
 
   console.log(`[${pluginName}] Coreto Warp initialized.`);
