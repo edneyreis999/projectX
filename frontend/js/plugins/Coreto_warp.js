@@ -93,6 +93,8 @@
     previousLocation.y = $gamePlayer.y;
     previousLocation.direction = $gamePlayer.direction();
 
+    AudioManager.playSe({ name: 'Book1', volume: 90, pitch: 100, pan: 0 });
+
     $gamePlayer.reserveTransfer(coretoMapID, coretoMapX, coretoMapY, coretoDirection);
     SceneManager.goto(Scene_Map);
   }
@@ -102,6 +104,7 @@
    */
   function returnFromCoreto() {
     if (previousLocation.mapId !== null) {
+      AudioManager.playSe({ name: 'Decision2', volume: 90, pitch: 120, pan: 0 });
       $gamePlayer.reserveTransfer(previousLocation.mapId, previousLocation.x, previousLocation.y, previousLocation.direction);
       SceneManager.goto(Scene_Map);
     } else {
