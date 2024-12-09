@@ -92,15 +92,42 @@
   // ==========================================================================
 
   /**
-   * Awards Ludos after a victorious battle based on the number of enemies.
+   * Awards Ludos instead of Gold after a victorious battle.
    */
   const _BattleManager_endBattle = BattleManager.endBattle;
   BattleManager.endBattle = function (result) {
     _BattleManager_endBattle.call(this, result);
+
     if (result === 0) {
-      const earnedLudos = $gameTroop.aliveMembers().length * 10; // Example logic
-      addCurrency(earnedLudos);
-      $gameMessage.add(`You earned ${earnedLudos} \\i[${currencyIcon}] ${currencyName}!`);
+      // If the player won the battle
+      const goldReward = $gameTroop.goldTotal(); // Calculate total Gold reward
+      if (goldReward > 0) {
+        addCurrency(goldReward); // Add the Gold reward as Ludos
+        $gameParty.gainGold(-goldReward); // Remove the Gold reward
+      }
+    }
+  };
+
+  // ==========================================================================
+  // Modify Battle Victory Messages
+  // ==========================================================================
+
+  /**
+   * Overrides the display of Gold reward messages with Ludos.
+   */
+  BattleManager.displayRewards = function () {
+    this.displayExp();
+    this.displayGoldAsLudos();
+    this.displayDropItems();
+  };
+
+  /**
+   * Replaces the Gold reward message with a Ludos message.
+   */
+  BattleManager.displayGoldAsLudos = function () {
+    const goldReward = $gameTroop.goldTotal();
+    if (goldReward > 0) {
+      $gameMessage.add(`You earned ${goldReward} \\i[${currencyIcon}] ${currencyName}!`);
     }
   };
 
