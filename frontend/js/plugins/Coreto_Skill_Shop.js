@@ -21,11 +21,17 @@
    * Abre a loja de habilidades para a classe especificada.
    * @param {number} classId - ID da classe no banco de dados.
    */
-  function openSkillShop(classId) {
+  function openSkillShop(classId, actorId) {
     const classData = $dataClasses[classId];
+    const actor = $gameActors.actor(actorId);
 
     if (!classData) {
       console.error(`[Coreto_Skill_Shop] Classe com ID ${classId} não encontrada.`);
+      return;
+    }
+
+    if (!actor) {
+      console.error(`[Coreto_Skill_Shop] Ator com ID ${actorId} não encontrado.`);
       return;
     }
 
@@ -80,7 +86,7 @@
         try {
           entryMetadata = JSON.parse(JSON.parse(entry.note.trim()));
         } catch (error) {
-          console.error(`[Coreto_Skill_Shop] Erro ao processar metadados da habilidade ${entry.skillId}:`, error);
+          console.warn(`[Coreto_Skill_Shop] Erro ao processar metadados da habilidade ${entry.skillId}:`, error);
           return null;
         }
 
@@ -107,7 +113,7 @@
     // Chama a cena da loja com goods e define "somente compra"
     console.log('[Coreto_Skill_Shop] Vai abrir a loja de skill.');
     SceneManager.push(Scene_SkillShop);
-    SceneManager.prepareNextScene(availableSkillsGoods, true);
+    SceneManager.prepareNextScene(availableSkillsGoods, true, actorId);
   }
 
   /**

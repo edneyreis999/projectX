@@ -18,5 +18,6 @@ var $plugins =
 {"name":"Coreto_Currency","status":true,"description":"Adds a dual-currency system (Drakeis and a customizable second currency) to the game for different functionalities.","parameters":{"ludosVariableID":"8","currencyName":"Ludos","currencyIcon":"189"}},
 {"name":"Coreto_Currency_ui","status":true,"description":"Interface gráfica para o sistema de compra de habilidades no Coreto.","parameters":{}},
 {"name":"Coreto_Skill_Shop","status":true,"description":"Gerencia o sistema de compra de habilidades no Coreto.","parameters":{}},
-{"name":"Coreto_Skill_Shop_Ui","status":true,"description":"Gerencia a interface gráfica (UI) do shop de habilidades.","parameters":{}}
+{"name":"Coreto_Skill_Shop_Ui","status":true,"description":"Gerencia a interface gráfica (UI) do shop de habilidades.","parameters":{}},
+{"name":"Coreto_Skill_Learn_Control","status":true,"description":"Controla o aprendizado de habilidades, bloqueando aprendizado automático para habilidades do Skill Shop.","parameters":{}}
 ];
