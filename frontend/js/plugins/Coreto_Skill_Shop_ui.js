@@ -305,6 +305,21 @@
     item() {
       return this._data[this.index()];
     }
+
+    drawItem(index) {
+      const item = this.itemAt(index);
+      const price = item.ludosPrice || 0;
+      const rect = this.itemLineRect(index);
+      const priceWidth = this.priceWidth();
+      const priceX = rect.x + rect.width - priceWidth;
+      const nameWidth = rect.width - priceWidth;
+      this.drawItemName(item, rect.x, rect.y, nameWidth);
+      this.drawText(price, priceX, rect.y, priceWidth, 'right');
+    }
+
+    priceWidth() {
+      return 96;
+    }
   }
 
   // Expõe as classes globalmente para uso no SceneManager.
