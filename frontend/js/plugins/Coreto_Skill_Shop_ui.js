@@ -13,80 +13,177 @@
  */
 
 (() => {
+  const pluginName = 'Coreto_Skill_Shop_UI';
+
   /**
    * Scene_SkillShop
-   * Sobrescreve Scene_Shop para criar uma interface customizada para o Skill Shop.
-   * Utiliza a moeda alternativa (Ludos) e manipula habilidades (skills) ao invés de itens.
+   * Cena personalizada para gerenciar a interface do Skill Shop.
+   * Estende Scene_Shop para suportar habilidades (skills) e moeda alternativa (Ludos).
    */
   class Scene_SkillShop extends Scene_Shop {
     /**
-     * Prepara a cena com os dados de skills e configurações de compra.
+     * Prepara a cena com os dados de habilidades, configurações de compra e ID do ator.
      * @param {Array} skills - Lista de habilidades disponíveis no formato goods.
      * @param {boolean} purchaseOnly - Indica se a loja é somente para compra.
+     * @param {number} actorId - ID do ator que está interagindo com a loja.
      */
     prepare(skills, purchaseOnly, actorId) {
-      super.prepare(skills, purchaseOnly); // Passa os dados para Scene_Shop
-      this.actorId = actorId;
+      this.validateActor(actorId);
+      if (!Array.isArray(skills) || typeof purchaseOnly !== 'boolean') {
+        throw new Error(`[${pluginName}] Dados inválidos em prepare.`);
+      }
+      this._actor = $gameActors.actor(actorId);
+      super.prepare(skills, purchaseOnly);
+      console.log(`[${pluginName}] Cena preparada com actorId:`, actorId);
     }
 
     /**
-     * Cria a interface gráfica da cena.
-     * Aqui, o método pai já configura os elementos principais.
+     * Valida se o ator existe.
+     * @param {number} actorId - ID do ator.
      */
-    create() {
-      super.create();
+    validateActor(actorId) {
+      if (!$gameActors.actor(actorId)) {
+        throw new Error(`[${pluginName}] Ator com ID ${actorId} não encontrado.`);
+      }
     }
 
     /**
-     * Realiza a compra de uma habilidade, descontando o custo em Ludos.
+     * Substitui a janela de ouro padrão pela janela de Ludos.
+     */
+    createGoldWindow() {
+      const rect = this.goldWindowRect();
+      this._goldWindow = new Window_Ludos(rect);
+      this.addWindow(this._goldWindow);
+    }
+
+    /**
+     * Cria a janela de compra personalizada para o Skill Shop.
+     */
+    createBuyWindow() {
+      const rect = this.buyWindowRect();
+      this._buyWindow = new Window_SkillShopBuy(rect);
+      this._buyWindow.setupActor(this._actor.actorId());
+      this._buyWindow.setupGoods(this._goods);
+      this._buyWindow.setHelpWindow(this._helpWindow);
+      this._buyWindow.setStatusWindow(this._statusWindow);
+      this._buyWindow.hide();
+      this._buyWindow.setHandler('ok', this.onBuyOk.bind(this));
+      this._buyWindow.setHandler('cancel', this.onBuyCancel.bind(this));
+      this.addWindow(this._buyWindow);
+    }
+
+    /**
+     * Realiza a compra de uma habilidade, descontando o custo em Ludos e aprendendo a habilidade.
      * @param {number} number - Quantidade de habilidades a comprar (sempre 1 no Skill Shop).
      */
     doBuy(number) {
       CoretoCurrency.spendCurrency(number * this.buyingPrice());
-      CoretoSkillLearnControl.addSkillAfterPurchase(this.actorId, this._item.id);
+      CoretoSkillLearnControl.addSkillAfterPurchase(this._actor.actorId(), this._item.id);
     }
 
     /**
-     * Define a quantidade máxima de compras permitida.
-     * No Skill Shop, cada habilidade só pode ser comprada uma vez.
+     * Define a quantidade máxima de compras permitida (sempre 1 para habilidades).
      * @returns {number} Sempre retorna 1.
      */
     maxBuy() {
       return 1;
     }
-
-    /**
-     * Substitui a janela de ouro padrão pela janela de Ludos.
-     * Altera o comportamento do método para exibir a moeda alternativa.
-     */
-    createGoldWindow() {
-      const rect = this.goldWindowRect();
-      this._goldWindow = new Window_Ludos(rect); // Exibe Ludos no lugar de Gold
-      this.addWindow(this._goldWindow);
-    }
   }
 
   /**
-   * Modifica a lógica de conversão de goods em itens.
-   * Adiciona suporte ao tipo 3 (skills), permitindo exibir habilidades na loja.
-   * @param {Array} goods - Estrutura de goods no formato [itemType, itemId, priceAdjustment, sellAdjustment].
-   * @returns {Object|null} O item correspondente (ou habilidade) ou null se inválido.
+   * Window_SkillShopBuy
+   * Janela personalizada para exibir habilidades no Skill Shop.
+   * Estende Window_ShopBuy para adaptar lógica e exibição de habilidades.
    */
-  Window_ShopBuy.prototype.goodsToItem = function (goods) {
-    switch (goods[0]) {
-      case 0:
-        return $dataItems[goods[1]]; // Itens
-      case 1:
-        return $dataWeapons[goods[1]]; // Armas
-      case 2:
-        return $dataArmors[goods[1]]; // Armaduras
-      case 3:
-        return $dataSkills[goods[1]]; // Habilidades (Skills)
-      default:
-        return null; // Tipo inválido
+  class Window_SkillShopBuy extends Window_ShopBuy {
+    /**
+     * Converte um objeto goods no item correspondente.
+     * @param {Array} goods - Estrutura [itemType, itemId, ...].
+     * @returns {Object|null} Retorna o item correspondente ou null se inválido.
+     */
+    goodsToItem(goods) {
+      switch (goods[0]) {
+        case 0:
+          return $dataItems[goods[1]];
+        case 1:
+          return $dataWeapons[goods[1]];
+        case 2:
+          return $dataArmors[goods[1]];
+        case 3:
+          return $dataSkills[goods[1]];
+        default:
+          return null;
+      }
     }
-  };
 
-  // Expõe Scene_SkillShop globalmente para que seja acessível pelo SceneManager.
+    /**
+     * Configura o ator relacionado à janela.
+     * @param {number} actorId - ID do ator.
+     */
+    setupActor(actorId) {
+      this.validateActor(actorId);
+      this._actor = $gameActors.actor(actorId);
+    }
+
+    /**
+     * Valida se o ator existe.
+     * @param {number} actorId - ID do ator.
+     */
+    validateActor(actorId) {
+      if (!$gameActors.actor(actorId)) {
+        throw new Error(`[${pluginName}] Ator com ID ${actorId} não encontrado.`);
+      }
+    }
+
+    /**
+     * Verifica se a habilidade está habilitada para compra.
+     * @param {Object} skill - Objeto da habilidade.
+     * @returns {boolean} Retorna true se habilitada, false caso contrário.
+     */
+    isEnabled(skill) {
+      return super.isEnabled(skill) && !this._actor.isLearnedSkill(skill.id);
+    }
+
+    /**
+     * Desenha os detalhes de uma habilidade na lista de compras.
+     * @param {number} index - Índice do item na lista.
+     */
+    drawItem(index) {
+      const item = this.itemAt(index);
+      const price = this.price(item);
+      const rect = this.itemLineRect(index);
+      const priceWidth = this.priceWidth();
+      const priceX = rect.x + rect.width - priceWidth;
+      const nameWidth = rect.width - priceWidth;
+
+      this.changePaintOpacity(this.isEnabled(item));
+      this.drawSkillName(item, rect.x, rect.y, nameWidth);
+      this.drawText(price, priceX, rect.y, priceWidth, 'right');
+      this.changePaintOpacity(true);
+    }
+
+    /**
+     * Desenha o nome da habilidade, indicando se já foi aprendida.
+     * @param {Object} skill - Objeto da habilidade.
+     * @param {number} x - Posição X.
+     * @param {number} y - Posição Y.
+     * @param {number} width - Largura disponível.
+     */
+    drawSkillName(skill, x, y, width) {
+      if (skill) {
+        const iconY = y + (this.lineHeight() - ImageManager.iconHeight) / 2;
+        const textMargin = ImageManager.iconWidth + 4;
+        const skillWidth = Math.max(0, width - textMargin);
+        this.resetTextColor();
+        this.drawIcon(skill.iconIndex, x, iconY);
+
+        const name = this._actor.isLearnedSkill(skill.id) ? `${skill.name} (Aprendida)` : skill.name;
+        this.drawText(name, x + textMargin, y, skillWidth);
+      }
+    }
+  }
+
+  // Expõe as classes globalmente para uso no SceneManager.
   window.Scene_SkillShop = Scene_SkillShop;
+  window.Window_SkillShopBuy = Window_SkillShopBuy;
 })();
