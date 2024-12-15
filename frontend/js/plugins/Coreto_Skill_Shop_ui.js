@@ -72,6 +72,22 @@
       this.addWindow(this._buyWindow);
     }
 
+    createSellWindow() {
+      const rect = this.sellWindowRect();
+      this._sellWindow = new Window_SkillShopSell(rect);
+      this._sellWindow.setupActor(this._actor.actorId());
+      this._sellWindow.setHelpWindow(this._helpWindow);
+      this._sellWindow.hide();
+      this._sellWindow.setHandler('ok', this.onSellOk.bind(this));
+      this._sellWindow.setHandler('cancel', this.onSellCancel.bind(this));
+      this._categoryWindow.setItemWindow(this._sellWindow);
+      this.addWindow(this._sellWindow);
+      if (!this._categoryWindow.needsSelection()) {
+        this._sellWindow.y -= this._categoryWindow.height;
+        this._sellWindow.height += this._categoryWindow.height;
+      }
+    }
+
     /**
      * Realiza a compra de uma habilidade, descontando o custo em Ludos e aprendendo a habilidade.
      * @param {number} number - Quantidade de habilidades a comprar (sempre 1 no Skill Shop).
@@ -82,11 +98,24 @@
     }
 
     /**
+     * Realiza a venda de uma habilidade, adicionando o valor em Ludos e esquecendo a habilidade.
+     * @param {number} number - Quantidade de habilidades a vender (sempre 1 no Skill Shop).
+     */
+    doSell(number) {
+      CoretoCurrency.addCurrency(number * this.sellingPrice());
+      CoretoSkillLearnControl.forgetSkillAfterSell(this._actor.actorId(), this._item.id);
+    }
+
+    /**
      * Define a quantidade máxima de compras permitida (sempre 1 para habilidades).
      * @returns {number} Sempre retorna 1.
      */
     maxBuy() {
       return 1;
+    }
+
+    sellingPrice() {
+      return this._item.ludosPrice || 0;
     }
   }
 
@@ -183,7 +212,103 @@
     }
   }
 
+  class Window_SkillShopSell extends Window_ShopSell {
+    /**
+     * Configura o ator relacionado à janela.
+     * @param {number} actorId - ID do ator.
+     */
+    setupActor(actorId) {
+      this.validateActor(actorId);
+      this._actor = $gameActors.actor(actorId);
+    }
+
+    /**
+     * Valida se o ator existe.
+     * @param {number} actorId - ID do ator.
+     */
+    validateActor(actorId) {
+      if (!$gameActors.actor(actorId)) {
+        throw new Error(`[${pluginName}] Ator com ID ${actorId} não encontrado.`);
+      }
+    }
+
+    /**
+     * Retorna as habilidades aprendidas pelo ator, filtrando apenas as habilidades
+     * configuradas no Skill Shop (com LudosPrice) e pertencentes à classe atual.
+     * @returns {Array} Lista de habilidades aprendidas filtradas.
+     */
+    items() {
+      // Obtém os dados da classe do ator
+      const classData = this._actor.currentClass();
+      if (!classData) {
+        console.warn(`[${pluginName}] Classe atual não encontrada para o ator ${this._actor.actorId()}.`);
+        return [];
+      }
+
+      // Filtra habilidades aprendíveis da classe
+      const classSkills = classData.learnings
+        .map(entry => {
+          const skill = $dataSkills[entry.skillId];
+          if (!skill) {
+            return null; // Ignora entradas inválidas
+          }
+
+          // Extrai os metadados do campo Notes
+          let entryMetadata;
+          if (entry.note.trim().length > 0) {
+            entryMetadata = JSON.parse(JSON.parse(entry.note.trim()));
+          }
+
+          if (!entryMetadata?.ludosPrice) {
+            return null; // Ignora habilidades sem preço configurado
+          }
+
+          // Combina os dados da habilidade com os metadados
+          return {
+            ...skill,
+            ...entryMetadata,
+          };
+        })
+        .filter(skill => skill !== null); // Remove entradas nulas
+
+      // Filtra as habilidades aprendidas pelo ator
+      const learnedSkills = classSkills.filter(skill => this._actor.isLearnedSkill(skill.id));
+
+      console.log(`[${pluginName}] Habilidades filtradas:`, learnedSkills);
+      return learnedSkills;
+    }
+
+    /**
+     * Atualiza o conteúdo da janela.
+     */
+    refresh() {
+      this.makeItemList();
+      this.createContents();
+      this.drawAllItems();
+    }
+
+    /**
+     * Prepara a lista de itens (habilidades).
+     */
+    makeItemList() {
+      this._data = this.items();
+    }
+
+    isEnabled() {
+      return true;
+    }
+
+    /**
+     * Retorna o item selecionado.
+     * @returns {Object} A habilidade selecionada.
+     */
+    item() {
+      return this._data[this.index()];
+    }
+  }
+
   // Expõe as classes globalmente para uso no SceneManager.
   window.Scene_SkillShop = Scene_SkillShop;
   window.Window_SkillShopBuy = Window_SkillShopBuy;
+  window.Window_SkillShopSell = Window_SkillShopSell;
 })();

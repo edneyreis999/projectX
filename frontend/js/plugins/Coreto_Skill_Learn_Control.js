@@ -45,13 +45,13 @@
     return this.currentClass().learnings.filter(entry => {
       let entryMetadata;
 
-      try {
+      if (entry.note.trim().length > 0) {
         entryMetadata = JSON.parse(JSON.parse(entry.note.trim()));
-      } catch (error) {
+      } else {
         return entry.level === level; // Habilidades sem metadados são aprendíveis automaticamente
       }
 
-      return !entryMetadata.ludosPrice && entry.level === level; // Ignora habilidades com LudosPrice
+      return !entryMetadata?.ludosPrice && entry.level === level; // Ignora habilidades com LudosPrice
     });
   };
 
@@ -83,9 +83,38 @@
     }
   }
 
+  /**
+   * Remove uma habilidade do personagem após a venda no Skill Shop.
+   * Garante que a habilidade será esquecida apenas se for válida e aprendida.
+   * @param {number} actorId - ID do ator que esquecerá a habilidade.
+   * @param {number} skillId - ID da habilidade a ser esquecida.
+   */
+  function forgetSkillAfterSell(actorId, skillId) {
+    const actor = $gameActors.actor(actorId);
+
+    // Valida se o ator e a habilidade são válidos
+    if (!actor) {
+      console.error(`[${pluginName}] Ator ${actorId} não encontrado.`);
+      return;
+    }
+
+    if (!skillId || !$dataSkills[skillId]) {
+      console.error(`[${pluginName}] Habilidade ${skillId} inválida.`);
+      return;
+    }
+
+    if (actor.isLearnedSkill(skillId)) {
+      actor.forgetSkill(skillId);
+      console.log(`[${pluginName}] Habilidade ${skillId} esquecida pelo ator ${actorId}.`);
+    } else {
+      console.warn(`[${pluginName}] A habilidade ${skillId} não foi aprendida pelo ator ${actorId}.`);
+    }
+  }
+
   // Expor a função globalmente para integração com o Skill Shop
   window.CoretoSkillLearnControl = {
     addSkillAfterPurchase,
+    forgetSkillAfterSell,
   };
 
   console.log(`[${pluginName}] Plugin inicializado com sucesso.`);

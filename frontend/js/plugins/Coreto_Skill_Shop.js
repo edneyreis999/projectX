@@ -83,14 +83,11 @@
 
         // Extrai os metadados do campo Notes
         let entryMetadata;
-        try {
+        if (entry.note.trim().length > 0) {
           entryMetadata = JSON.parse(JSON.parse(entry.note.trim()));
-        } catch (error) {
-          console.warn(`[Coreto_Skill_Shop] Erro ao processar metadados da habilidade ${entry.skillId}:`, error);
-          return null;
         }
 
-        if (!entryMetadata.ludosPrice) {
+        if (!entryMetadata?.ludosPrice) {
           return null; // Ignora habilidades sem preço configurado
         }
 
@@ -113,7 +110,7 @@
     // Chama a cena da loja com goods e define "somente compra"
     console.log('[Coreto_Skill_Shop] Vai abrir a loja de skill.');
     SceneManager.push(Scene_SkillShop);
-    SceneManager.prepareNextScene(availableSkillsGoods, true, actorId);
+    SceneManager.prepareNextScene(availableSkillsGoods, false, actorId);
   }
 
   /**
