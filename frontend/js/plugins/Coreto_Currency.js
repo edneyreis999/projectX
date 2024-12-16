@@ -136,15 +136,27 @@
   // ==========================================================================
 
   /**
-   * Extends the Window_Gold to display both Gold and Ludos.
+   * Modifica o comportamento do Window_Gold para exibir ambas as moedas
+   * somente no contexto do Scene_Menu.
+   * TODO: Criar uma nova scene que sobrescreva o Scene_Menu para exibir as moedas. Essa solução é temporária.
    */
   Window_Gold.prototype.refresh = function () {
-    this.contents.clear();
-    const x = this.itemPadding();
-    const width = this.innerWidth - this.itemPadding() * 2;
+    if (SceneManager._scene instanceof Scene_Menu) {
+      this.contents.clear();
+      const x = this.itemPadding();
+      const width = this.innerWidth - this.itemPadding() * 2;
 
-    drawCurrencyRow(this, x, 0, width, `\\i[210] Drakeis`, $gameParty.gold());
-    drawCurrencyRow(this, x, this.lineHeight(), width, `\\i[${currencyIcon}] ${currencyName}`, getCurrency());
+      // Exibe ambas as moedas
+      drawCurrencyRow(this, x, 0, width, `\\i[210] Drakeis`, $gameParty.gold());
+      drawCurrencyRow(this, x, this.lineHeight(), width, `\\i[${currencyIcon}] ${currencyName}`, getCurrency());
+    } else {
+      const rect = this.itemLineRect(0);
+      const x = rect.x;
+      const y = rect.y;
+      const width = rect.width;
+      this.contents.clear();
+      this.drawCurrencyValue(this.value(), this.currencyUnit(), x, y, width);
+    }
   };
 
   /**
