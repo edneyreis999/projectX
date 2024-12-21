@@ -15,10 +15,20 @@ module.exports = {
     node: true,
     jest: true,
   },
-  ignorePatterns: [".eslintrc.cjs", "commitlint.config.ts",
-    "frontend/js/plugins/PKD_SimpleQuestSystem.js", 
-    "frontend/js/plugins/VisuMZ_0_CoreEngine.js", 
-    "frontend/js/plugins/VisuMZ_1_MessageCore.js"
+  ignorePatterns: [
+    ".eslintrc.cjs",
+    "commitlint.config.ts",
+    "frontend/js/plugins/PKD_SimpleQuestSystem.js",
+    "frontend/js/plugins/VisuMZ_0_CoreEngine.js",
+    "frontend/js/plugins/VisuMZ_1_MessageCore.js",
+    "frontend/js/plugins/VisuMZ_1_BattleCore.js",
+    "frontend/js/plugins/VisuMZ_1_ElementStatusCore.js",
+    "frontend/js/plugins/VisuMZ_1_EventsMoveCore.js",
+    "frontend/js/plugins/VisuMZ_1_ItemsEquipsCore.js",
+    "frontend/js/plugins/VisuMZ_1_MainMenuCore.js",
+    "frontend/js/plugins/VisuMZ_1_OptionsCore.js",
+    "frontend/js/plugins/VisuMZ_1_SkillsStatesCore.js",
+    "frontend/js/plugins/VisuMZ_1_SaveCore.js"
   ],
   overrides: [
     {
