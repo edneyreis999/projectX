@@ -9,7 +9,7 @@ var $plugins =
 {"name":"Coreto_battle_delay_accumulate","status":true,"description":"Handles the accumulation of battles into the BattleDelay item, leveraging shared state and global parameters.","parameters":{}},
 {"name":"Coreto_battle_delay","status":true,"description":"Manages the core logic for the BattleDelay system, including shared state initialization and module dependencies.","parameters":{"BattleDelayID":"21"}},
 {"name":"Coreto_warp","status":true,"description":"Adds a Coreto teleport command to the menu and allows saving and returning to a previous location.","parameters":{"commandName":"Coreto","coretoMapID":"19","coretoMapX":"14","coretoMapY":"15","coretoDirection":"2"}},
-{"name":"Coreto_Currency","status":true,"description":"Adds a dual-currency system (Drakeis and a customizable second currency) to the game for different functionalities.","parameters":{"ludosVariableID":"8","currencyName":"Ludos","currencyIcon":"189"}},
+{"name":"Coreto_Currency","status":true,"description":"Adds a dual-currency system (Drakeis and a customizable second currency) to the game for different functionalities.","parameters":{"ludosVariableID":"23","currencyName":"Ludos","currencyIcon":"189"}},
 {"name":"Coreto_Currency_ui","status":true,"description":"Interface gráfica para o sistema de compra de habilidades no Coreto.","parameters":{}},
 {"name":"Coreto_Skill_Shop","status":true,"description":"Gerencia o sistema de compra de habilidades no Coreto.","parameters":{}},
 {"name":"Coreto_Skill_Shop_Ui","status":true,"description":"Gerencia a interface gráfica (UI) do shop de habilidades.","parameters":{}},
