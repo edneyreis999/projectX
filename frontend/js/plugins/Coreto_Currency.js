@@ -28,9 +28,10 @@
  * ----------------------------------------------------------------------------
  * Features:
  * - Tracks the second currency (Ludos) using a game variable.
- * - Displays both Gold and Ludos in the menu interface.
  * - Allows awarding Ludos after battles based on enemy kills.
  * ----------------------------------------------------------------------------
+ * Deprecation Notice:
+ * This plugin is deprecated and will no longer receive updates. Moved to Visu Currency Core.
  */
 
 (() => {
@@ -129,67 +130,6 @@
     if (goldReward > 0) {
       $gameMessage.add(`You earned ${goldReward} \\i[${currencyIcon}] ${currencyName}!`);
     }
-  };
-
-  // ==========================================================================
-  // UI Modifications (Window_Gold)
-  // ==========================================================================
-
-  /**
-   * Modifica o comportamento do Window_Gold para exibir ambas as moedas
-   * somente no contexto do Scene_Menu.
-   * TODO: Criar uma nova scene que sobrescreva o Scene_Menu para exibir as moedas. Essa solução é temporária.
-   */
-  Window_Gold.prototype.refresh = function () {
-    if (SceneManager._scene instanceof Scene_Menu) {
-      this.contents.clear();
-      const x = this.itemPadding();
-      const width = this.innerWidth - this.itemPadding() * 2;
-
-      // Exibe ambas as moedas
-      drawCurrencyRow(this, x, 0, width, `\\i[210] Drakeis`, $gameParty.gold());
-      drawCurrencyRow(this, x, this.lineHeight(), width, `\\i[${currencyIcon}] ${currencyName}`, getCurrency());
-    } else {
-      const rect = this.itemLineRect(0);
-      const x = rect.x;
-      const y = rect.y;
-      const width = rect.width;
-      this.contents.clear();
-      this.drawCurrencyValue(this.value(), this.currencyUnit(), x, y, width);
-    }
-  };
-
-  /**
-   * Draws a single row of currency information in the Window_Gold.
-   * @param {Window_Gold} window - The target window.
-   * @param {number} x - X coordinate to start drawing.
-   * @param {number} y - Y coordinate to start drawing.
-   * @param {number} width - Width available for drawing.
-   * @param {string} text - Text to display (icon and name of the currency).
-   * @param {number} value - Value of the currency.
-   */
-  function drawCurrencyRow(window, x, y, width, text, value) {
-    const iconWidth = 36;
-    const valueWidth = window.textWidth(value.toString());
-    const textWidth = width - valueWidth - iconWidth - window.itemPadding() * 2;
-
-    window.drawTextEx(text, x, y, textWidth);
-    window.drawText(value.toString(), x + width - valueWidth, y, valueWidth, 'right');
-  }
-
-  // ==========================================================================
-  // Scene_Menu Adjustments
-  // ==========================================================================
-
-  /**
-   * Adjusts the position and size of the Gold window to fit both currencies.
-   */
-  const _Scene_Menu_goldWindowRect = Scene_Menu.prototype.goldWindowRect;
-  Scene_Menu.prototype.goldWindowRect = function () {
-    const rect = _Scene_Menu_goldWindowRect.call(this);
-    rect.height += this.calcWindowHeight(1, true); // Increases height by 1 line
-    rect.y -= this.calcWindowHeight(1, true); // Moves the window up
-    return rect;
   };
 
   // ==========================================================================

@@ -15,10 +15,11 @@ module.exports = {
     node: true,
     jest: true,
   },
-  ignorePatterns: [".eslintrc.cjs", "commitlint.config.ts",
-    "frontend/js/plugins/PKD_SimpleQuestSystem.js", 
-    "frontend/js/plugins/VisuMZ_0_CoreEngine.js", 
-    "frontend/js/plugins/VisuMZ_1_MessageCore.js"
+  ignorePatterns: [
+    ".eslintrc.cjs",
+    "commitlint.config.ts",
+    "frontend/js/plugins/PKD_SimpleQuestSystem.js",
+    "frontend/js/plugins/VisuMZ_*.js" 
   ],
   overrides: [
     {
