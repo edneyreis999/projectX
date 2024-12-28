@@ -108,6 +108,18 @@
   }
 
   /**
+   * Teleports the player to a Specific Coreto map.
+   */
+  function warpToSpecificCoreto(mapId) {
+    if (isAlreadyInCoreto()) {
+      console.warn('[Coreto Warp] Already in Coreto map.');
+      return;
+    }
+    saveCurrentLocation();
+    transferPlayer(mapId, coretoMapX, coretoMapY, coretoDirection);
+  }
+
+  /**
    * Returns the player to their previously saved location.
    */
   function returnFromCoreto() {
@@ -215,6 +227,7 @@
 
   window.CoretoWarp = {
     warpToCoreto,
+    warpToSpecificCoreto,
     returnFromCoreto,
     enableWarp: () => (isWarpEnabled = true),
     disableWarp: () => (isWarpEnabled = false),
