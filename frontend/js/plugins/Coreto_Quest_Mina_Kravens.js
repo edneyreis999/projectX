@@ -46,6 +46,12 @@
  * @default 30
  * @desc Quantidade total de Kravens espalhados pela mina.
  *
+ * @param MineroKraven
+ * @text Total de Kravens que o jogador já pssui
+ * @type variable
+ * @default 26
+ * @desc Quantidade total de Kravens que o jogador já possui.
+ *
  * @help
  * ----------------------------------------------------------------------------
  * **Coreto Gameplay Mina Kravens**
@@ -92,6 +98,7 @@
   const bossStateVariableId = Number(parameters['BossStateVariableId'] || 0);
   const totalMinerioQuest = Number(parameters['TotalMinerioQuest'] || 4);
   const totalMinerioMina = Number(parameters['TotalMinerioMina'] || 30);
+  const mineroKraven = Number(parameters['MineroKraven'] || 26);
 
   class MinaKravens {
     constructor() {
@@ -102,7 +109,9 @@
     }
 
     calcularChance(pilhasRestantes) {
+      console.log(`this.kravensObtidos: ${this.kravensObtidos}`);
       const faltandoKravens = this.totalMinerioQuest - this.kravensObtidos;
+      console.log(`faltandoKravens: ${faltandoKravens}`);
 
       // Se o número de pilhas restantes é igual ao número de Kravens que faltam, chance = 100%
       if (pilhasRestantes <= faltandoKravens - 1) {
@@ -111,6 +120,7 @@
 
       // Fórmula para chance gradual
       const chance = (faltandoKravens / pilhasRestantes) * 100;
+      console.log(`Chance calculada: ${chance}%`);
       return Math.min(chance, 100); // Limita a chance a 100%
     }
 
@@ -132,10 +142,12 @@
         this.adicionarItem(minerioItemId);
         this.kravensObtidos++;
         console.log(`Kraven obtido! Total: ${this.kravensObtidos}`);
+        $gameVariables.setValue(mineroKraven, this.kravensObtidos);
 
         if (this.kravensObtidos === this.totalMinerioQuest - 1) {
           this.ativarRachadura();
         }
+
         return 'Kraven';
       } else {
         this.adicionarItem(pedraItemId);
