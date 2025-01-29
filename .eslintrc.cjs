@@ -19,6 +19,7 @@ module.exports = {
     ".eslintrc.cjs",
     "commitlint.config.ts",
     "frontend/js/plugins/PKD_SimpleQuestSystem.js",
+    "frontend/js/plugins/TAA_CharacterPoses.js",
     "frontend/js/plugins/VisuMZ_*.js" 
   ],
   overrides: [
