@@ -333,27 +333,27 @@
  * @max 1000
  * @default 320
  * @desc Text window width
- * 
+ *
  * @param Height
  * @type number
  * @min 1
  * @max 1000
  * @default 140
  * @desc Text window height
- * 
+ *
  * @param Background Type
  * @type combo
  * @option Window
  * @option Dim
  * @option Transparent
  * @default Window
- * 
+ *
  * @param Windowskin
  * @type file
  * @dir img/pictures/
  * @require 1
  * @default HelpWindowSkin
- * 
+ *
  * @param Text
  * @type note
  * @desc Message text, support escape symbols
@@ -377,7 +377,7 @@
  * @max 1000
  * @default 320
  * @desc Ширина окна подсказки
- * 
+ *
  * @param Height
  * @text Высота
  * @type number
@@ -385,7 +385,7 @@
  * @max 1000
  * @default 140
  * @desc Высота окна подсказки
- * 
+ *
  * @param Background Type
  * @text Задник
  * @type combo
@@ -394,7 +394,7 @@
  * @option Transparent
  * @default Window
  * @desc Задник окна (window - обычный, dim - затемнённый, transparent - прозрачный (нету))
- * 
+ *
  * @param Windowskin
  * @text Графика
  * @type file
@@ -402,7 +402,7 @@
  * @require 1
  * @default HelpWindowSkin
  * @desc Графика для задника окна (если используеются опция Window)
- * 
+ *
  * @param Text
  * @text Текст
  * @type note
@@ -415,7 +415,6 @@
  * @default
  */
 
-
 /*~struct~ExtraWrap:
  * @param Sentence
  * @type text
@@ -426,14 +425,14 @@
  * @type text
  * @default \C[1]
  * @desc Symbol before sentence
- * 
+ *
  * @param End
  * @type text
  * @default \C[0]
  * @desc Symbol after sentence
  */
 
- /*~struct~ExtraWrap:ru
+/*~struct~ExtraWrap:ru
  * @param Sentence
  * @text Предложение
  * @type text
@@ -445,7 +444,7 @@
  * @type text
  * @default \C[1]
  * @desc Символы, которые будут добавлены в начало предложения
- * 
+ *
  * @param End
  * @text В конец
  * @type text
@@ -484,7 +483,6 @@
 
 */
 
-
 window.Imported = window.Imported || {};
 Imported.PKD_HelpInMsg = true;
 
@@ -493,157 +491,147 @@ PKD_HelpInMsg.version = 100;
 
 PKD_HelpInMsg.isPro = () => true;
 
+(function () {
+  PKD_HelpInMsg.isMV = function () {
+    return Utils.RPGMAKER_NAME.contains('MV');
+  };
 
+  PKD_HelpInMsg.getHelpMessage = function (id) {
+    return PKD_HelpInMsg.getJDataById(id, PKD_HelpInMsg.HelpMessagesData);
+  };
 
-(function(){
-    
-    PKD_HelpInMsg.isMV = function() {
-        return Utils.RPGMAKER_NAME.contains("MV");
-    };
+  PKD_HelpInMsg.getWrapSymbols = function (sentence) {
+    return PKD_HelpInMsg.AutoWrapWords.find(element => element.Sentence == sentence);
+  };
 
-    PKD_HelpInMsg.getHelpMessage = function (id) {
-        return PKD_HelpInMsg.getJDataById(id, PKD_HelpInMsg.HelpMessagesData);
-    };
-
-    PKD_HelpInMsg.getWrapSymbols = function(sentence) {
-        return PKD_HelpInMsg.AutoWrapWords.find((element) => element.Sentence == sentence);
-    };
-
-    PKD_HelpInMsg.prepareHelpMessageSkin = function (id) {
-        var data = PKD_HelpInMsg.getHelpMessage(id);
-        if(data) {
-            ImageManager.loadPicture(data.Windowskin);
-        }
-    };
-
-
+  PKD_HelpInMsg.prepareHelpMessageSkin = function (id) {
+    var data = PKD_HelpInMsg.getHelpMessage(id);
+    if (data) {
+      ImageManager.loadPicture(data.Windowskin);
+    }
+  };
 })();
 
-PKD_HelpInMsg.loadParams = function(){
-        PKD_HelpInMsg.initTxtDB();
-        const pluginName = "PKD_HelpInMessages";
-        const params = PluginManager.parameters(pluginName);
+PKD_HelpInMsg.loadParams = function () {
+  PKD_HelpInMsg.initTxtDB();
+  const pluginName = 'PKD_HelpInMessages';
+  const params = PluginManager.parameters(pluginName);
 
-        let ParsePluginHelpData = () => {
-            let lines = JsonEx.parse(params["Help Messages"]);
-            let parsed = lines.map((l) => JsonEx.parse(l));
-            parsed.forEach(element => {
-                if(element.Text)
-                    element.Text = JsonEx.parse(element.Text);
-                else
-                    element.Text = "";
-                PKD_HelpInMsg.loadTxt(element.Txt);
-                element.Width = parseInt(element.Width);
-                element.Height = parseInt(element.Height);
-            });
-            return parsed;
-        };
+  let ParsePluginHelpData = () => {
+    let lines = JsonEx.parse(params['Help Messages']);
+    let parsed = lines.map(l => JsonEx.parse(l));
+    parsed.forEach(element => {
+      if (element.Text) element.Text = JsonEx.parse(element.Text);
+      else element.Text = '';
+      PKD_HelpInMsg.loadTxt(element.Txt);
+      element.Width = parseInt(element.Width);
+      element.Height = parseInt(element.Height);
+    });
+    return parsed;
+  };
 
-        let ParsePluginAutoWrapData = () => {
-            let lines = JsonEx.parse(params["Auto Wrap Sentences"]);
-            let parsed = lines.map((l) => JsonEx.parse(l));
-            return parsed;
-        };
+  let ParsePluginAutoWrapData = () => {
+    let lines = JsonEx.parse(params['Auto Wrap Sentences']);
+    let parsed = lines.map(l => JsonEx.parse(l));
+    return parsed;
+  };
 
-        PKD_HelpInMsg.HelpMessagesData = ParsePluginHelpData();
-        PKD_HelpInMsg.AutoWrapWords = ParsePluginAutoWrapData();
-        PKD_HelpInMsg.WordsCollection = PKD_HelpInMsg.AutoWrapWords.map((element) => element.Sentence);
-        PKD_HelpInMsg.TIME_TO_SHOW = parseInt(params["Show Delay"]) || 20;
-        PKD_HelpInMsg.LINK_SYMBOL = 'TM';
+  PKD_HelpInMsg.HelpMessagesData = ParsePluginHelpData();
+  PKD_HelpInMsg.AutoWrapWords = ParsePluginAutoWrapData();
+  PKD_HelpInMsg.WordsCollection = PKD_HelpInMsg.AutoWrapWords.map(element => element.Sentence);
+  PKD_HelpInMsg.TIME_TO_SHOW = parseInt(params['Show Delay']) || 20;
+  PKD_HelpInMsg.LINK_SYMBOL = 'TM';
 
-        // * ITEMS HINTS
-        PKD_HelpInMsg.IsShowItemHints = eval(params.IsShowItemHints || 'true');
-        PKD_HelpInMsg.ShowItemHintTimeDelay = parseInt(params.ShowItemHintTimeDelay || 10);
-        PKD_HelpInMsg.ItemHelpWindowPosToCursor = eval(params.ItemHelpWindowPosToCursor || 'false');
-        PKD_HelpInMsg.ItemHelpWindowPosMargins = JsonEx.parse(params.ItemHelpWindowPosMargins || '{"x":"0","y":"0"}');
-        PKD_HelpInMsg.ItemHelpWindowPosMargins.x = parseInt(PKD_HelpInMsg.ItemHelpWindowPosMargins.x);
-        PKD_HelpInMsg.ItemHelpWindowPosMargins.y = parseInt(PKD_HelpInMsg.ItemHelpWindowPosMargins.y);
+  // * ITEMS HINTS
+  PKD_HelpInMsg.IsShowItemHints = eval(params.IsShowItemHints || 'true');
+  PKD_HelpInMsg.ShowItemHintTimeDelay = parseInt(params.ShowItemHintTimeDelay || 10);
+  PKD_HelpInMsg.ItemHelpWindowPosToCursor = eval(params.ItemHelpWindowPosToCursor || 'false');
+  PKD_HelpInMsg.ItemHelpWindowPosMargins = JsonEx.parse(params.ItemHelpWindowPosMargins || '{"x":"0","y":"0"}');
+  PKD_HelpInMsg.ItemHelpWindowPosMargins.x = parseInt(PKD_HelpInMsg.ItemHelpWindowPosMargins.x);
+  PKD_HelpInMsg.ItemHelpWindowPosMargins.y = parseInt(PKD_HelpInMsg.ItemHelpWindowPosMargins.y);
 
-        if(!PKD_HelpInMsg.isMV()) {
-            PluginManager.registerCommand(pluginName, 'SetWrap', args => {
-                try {
-                    let value = eval(args.active);
-                    $gameSystem.him_autoWW = value;
-                } catch (e) {
-                    console.warn(e);
-                }
-            });
+  if (!PKD_HelpInMsg.isMV()) {
+    PluginManager.registerCommand(pluginName, 'SetWrap', args => {
+      try {
+        let value = eval(args.active);
+        $gameSystem.him_autoWW = value;
+      } catch (e) {
+        console.warn(e);
+      }
+    });
 
-            PluginManager.registerCommand(pluginName, 'SetHints', args => {
-                try {
-                    let value = eval(args.active);
-                    $gameSystem.him_hints = value;
-                } catch (e) {
-                    console.warn(e);
-                }
-            });
-        }
+    PluginManager.registerCommand(pluginName, 'SetHints', args => {
+      try {
+        let value = eval(args.active);
+        $gameSystem.him_hints = value;
+      } catch (e) {
+        console.warn(e);
+      }
+    });
+  }
 };
 
+(function () {
+  // * Только для RPG Maker MV
+  if (!PKD_HelpInMsg.isMV()) {
+    return;
+  }
 
-(function(){
-    
-    // * Только для RPG Maker MV
-    if(!PKD_HelpInMsg.isMV()) {
-        return;
-    }
-
-    //@[ALIAS]
-    var _Game_Interpreter_pluginCommand_3434 = Game_Interpreter.prototype.pluginCommand;
-    Game_Interpreter.prototype.pluginCommand = function (command, args) {
-        _Game_Interpreter_pluginCommand_3434.call(this, command, args);
-        if (command === 'HIM') {
-            try {
-                var state = false;
-                switch (args[0]) {
-                    case "SetWrap":
-                        state = eval(args[1]);
-                        $gameSystem.him_autoWW = state;
-                        break;
-                    case "SetHints":
-                        state = eval(args[1]);
-                        $gameSystem.him_hints = state;
-                        break;
-                    default:
-                        break;
-                }
-            } catch (e) {
-                console.warn(e);
-            }
+  //@[ALIAS]
+  var _Game_Interpreter_pluginCommand_3434 = Game_Interpreter.prototype.pluginCommand;
+  Game_Interpreter.prototype.pluginCommand = function (command, args) {
+    _Game_Interpreter_pluginCommand_3434.call(this, command, args);
+    if (command === 'HIM') {
+      try {
+        var state = false;
+        switch (args[0]) {
+          case 'SetWrap':
+            state = eval(args[1]);
+            $gameSystem.him_autoWW = state;
+            break;
+          case 'SetHints':
+            state = eval(args[1]);
+            $gameSystem.him_hints = state;
+            break;
+          default:
+            break;
         }
-    };
-
+      } catch (e) {
+        console.warn(e);
+      }
+    }
+  };
 })();
 
 // Generated by CoffeeScript 2.6.1
-String.prototype.replaceAll = function(search, replacement) {
+String.prototype.replaceAll = function (search, replacement) {
   var target;
   target = this;
   return target.split(search).join(replacement);
 };
 
-
 // Generated by CoffeeScript 2.6.1
-(function() {
+(function () {
   if (!PKD_HelpInMsg.isMV()) {
     return;
   }
-  if ((window.KDCore != null) && window.KDCore.Version >= '2.8') {
+  if (window.KDCore != null && window.KDCore.Version >= '2.8') {
     return;
   }
-  (function() {    //╒═════════════════════════════════════════════════════════════════════════╛
+  (function () {
+    //╒═════════════════════════════════════════════════════════════════════════╛
     // ■ Window_Base.coffee
     //╒═════════════════════════════════════════════════════════════════════════╛
     //---------------------------------------------------------------------------
     var ALIAS__initialize, _;
-    
+
     //@[DEFINES]
     _ = Window_Base.prototype;
-    
+
     // * Чтоб можно было Rectangle принимать в конструктор
     //@[ALIAS]
     ALIAS__initialize = _.initialize;
-    _.initialize = function(x, y, w, h) {
+    _.initialize = function (x, y, w, h) {
       if (x instanceof PIXI.Rectangle || x instanceof Rectangle) {
         return ALIAS__initialize.call(this, x.x, x.y, x.width, x.height);
       } else {
@@ -656,19 +644,18 @@ String.prototype.replaceAll = function(search, replacement) {
 // ■ END Window_Base.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
-(function() {
+(function () {
   var alias_TIOMM;
   if (!PKD_HelpInMsg.isMV()) {
     return;
   }
-  if ((window.KDCore != null) && window.KDCore.Version >= '2.8') {
+  if (window.KDCore != null && window.KDCore.Version >= '2.8') {
     return;
   }
   //@[ALIAS]
   alias_TIOMM = TouchInput._onMouseMove;
-  TouchInput._onMouseMove = function(event) {
+  TouchInput._onMouseMove = function (event) {
     var x, y;
     alias_TIOMM.call(this, event);
     x = Graphics.pageToCanvasX(event.pageX);
@@ -678,44 +665,43 @@ String.prototype.replaceAll = function(search, replacement) {
     }
   };
   //?NEW, from MZ
-  TouchInput._onHover = function(_x, _y) {
+  TouchInput._onHover = function (_x, _y) {
     this._x = _x;
     this._y = _y;
   };
 })();
 
-
 // Generated by CoffeeScript 2.6.1
-(function() {
-  PKD_HelpInMsg.initTxtDB = function() {
+(function () {
+  PKD_HelpInMsg.initTxtDB = function () {
     if (this.txtDb == null) {
-      return this.txtDb = {};
+      return (this.txtDb = {});
     }
   };
-  PKD_HelpInMsg.loadTxt = function(filename) {
+  PKD_HelpInMsg.loadTxt = function (filename) {
     var e;
     if (filename == null) {
       return;
     }
-    if (filename === "") {
+    if (filename === '') {
       return;
     }
     try {
-      PKD_HelpInMsg.loadTxtFile(filename, filename + ".txt");
+      PKD_HelpInMsg.loadTxtFile(filename, filename + '.txt');
     } catch (error) {
       e = error;
       console.warn(e);
     }
   };
-  PKD_HelpInMsg.loadTxtFile = function(name, src) {
+  PKD_HelpInMsg.loadTxtFile = function (name, src) {
     var url, xhr;
     xhr = new XMLHttpRequest();
-    url = "data/Hints/" + src;
-    xhr.open("GET", url);
+    url = 'data/Hints/' + src;
+    xhr.open('GET', url);
     xhr.overrideMimeType('text/plain');
-    xhr.onload = function() {
+    xhr.onload = function () {
       if (xhr.status < 400) {
-        return PKD_HelpInMsg.txtDb[name] = xhr.responseText;
+        return (PKD_HelpInMsg.txtDb[name] = xhr.responseText);
       } else {
         return console.warn("Can't load hint .txt file " + src);
       }
@@ -724,10 +710,9 @@ String.prototype.replaceAll = function(search, replacement) {
   };
 })();
 
-
 // Generated by CoffeeScript 2.6.1
-(function() {
-  PKD_HelpInMsg.toGlobalCoord = function(layer, coordSymbol = 'x') {
+(function () {
+  PKD_HelpInMsg.toGlobalCoord = function (layer, coordSymbol = 'x') {
     var node, t;
     t = layer[coordSymbol];
     node = layer;
@@ -735,9 +720,9 @@ String.prototype.replaceAll = function(search, replacement) {
       t -= node[coordSymbol];
       node = node.parent;
     }
-    return (t * -1) + layer[coordSymbol];
+    return t * -1 + layer[coordSymbol];
   };
-  PKD_HelpInMsg.getJDataById = function(id, source) {
+  PKD_HelpInMsg.getJDataById = function (id, source) {
     var d, i, len;
     for (i = 0, len = source.length; i < len; i++) {
       d = source[i];
@@ -747,7 +732,7 @@ String.prototype.replaceAll = function(search, replacement) {
     }
     return null;
   };
-  PKD_HelpInMsg.processExtraWrapText = function(text) {
+  PKD_HelpInMsg.processExtraWrapText = function (text) {
     var End, Start, i, len, ref, result, w;
     if (PKD_HelpInMsg.WordsCollection.length === 0) {
       return text;
@@ -759,8 +744,8 @@ String.prototype.replaceAll = function(search, replacement) {
     for (i = 0, len = ref.length; i < len; i++) {
       w = ref[i];
       if (text.contains(w)) {
-        ({Start, End} = PKD_HelpInMsg.getWrapSymbols(w));
-        if (!((Start != null) || (End != null))) {
+        ({ Start, End } = PKD_HelpInMsg.getWrapSymbols(w));
+        if (!(Start != null || End != null)) {
           continue;
         }
         result = Start + w + End;
@@ -769,9 +754,9 @@ String.prototype.replaceAll = function(search, replacement) {
     }
     return text;
   };
-  PKD_HelpInMsg.getItemHint = function(item) {
+  PKD_HelpInMsg.getItemHint = function (item) {
     var hintId;
-    if ((item != null) && (item.meta != null) && (item.meta.pHint != null) && item.meta.pHint !== "") {
+    if (item != null && item.meta != null && item.meta.pHint != null && item.meta.pHint !== '') {
       hintId = item.meta.pHint;
       return PKD_HelpInMsg.getHelpMessage(hintId);
     }
@@ -779,19 +764,18 @@ String.prototype.replaceAll = function(search, replacement) {
   };
 })();
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ DataManager.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var ALIAS__loadDatabase, _;
   //@[DEFINES]
   _ = DataManager;
   //@[ALIAS]
   ALIAS__loadDatabase = _.loadDatabase;
-  _.loadDatabase = function() {
+  _.loadDatabase = function () {
     ALIAS__loadDatabase.call(this);
     PKD_HelpInMsg.loadParams();
   };
@@ -800,27 +784,26 @@ String.prototype.replaceAll = function(search, replacement) {
 // ■ END DataManager.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Game_System.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var ALIAS__initialize, _;
   //@[DEFINES]
   _ = Game_System.prototype;
   //@[ALIAS]
   ALIAS__initialize = _.initialize;
-  _.initialize = function() {
+  _.initialize = function () {
     ALIAS__initialize.call(this);
     this.him_autoWW = true;
-    return this.him_hints = true;
+    return (this.him_hints = true);
   };
-  _.pkdIsHintsEnabled = function() {
+  _.pkdIsHintsEnabled = function () {
     return this.him_hints === true;
   };
-  _.pkdIsAutoWWEnabled = function() {
+  _.pkdIsAutoWWEnabled = function () {
     return this.him_autoWW === true;
   };
 })();
@@ -828,9 +811,8 @@ String.prototype.replaceAll = function(search, replacement) {
 // ■ END Game_System.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
-(function() {
+(function () {
   var Sprite_HoverLinkZone;
   Sprite_HoverLinkZone = class Sprite_HoverLinkZone extends Sprite {
     constructor(w, h, info) {
@@ -859,18 +841,16 @@ String.prototype.replaceAll = function(search, replacement) {
         return this.parent.removeChild(this);
       }
     }
-
   };
   PKD_HelpInMsg.Sprite_HoverLinkZone = Sprite_HoverLinkZone;
 })();
-
 
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Window_Base.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var ALIAS__processEscapeCharacter, CACHE, LoadFromIconIndex, _;
   // * ИЗ KDCORE, вынес отдельно, так как плагин не требует KDCORE и не хотелось код раздувать
 
@@ -879,26 +859,26 @@ String.prototype.replaceAll = function(search, replacement) {
     return;
   }
   // * NOT NEED IF KDCORE INSTALLED
-  if ((window.KDCore != null) && window.KDCore.Version >= '2.8') {
+  if (window.KDCore != null && window.KDCore.Version >= '2.8') {
     return;
   }
-  Array.prototype.isEmpty = function() {
+  Array.prototype.isEmpty = function () {
     return this.length === 0;
   };
-  String.prototype.isEmpty = function() {
+  String.prototype.isEmpty = function () {
     return this.length === 0 || !this.trim();
   };
-  String.isNullOrEmpty = function(str) {
+  String.isNullOrEmpty = function (str) {
     if (str != null) {
       return str.toString().isEmpty();
     } else {
       return true;
     }
   };
-  String.any = function(str) {
+  String.any = function (str) {
     return !String.isNullOrEmpty(str);
   };
-  Bitmap.prototype.drawOnMe = function(bitmap, x = 0, y = 0, sw = 0, sh = 0) {
+  Bitmap.prototype.drawOnMe = function (bitmap, x = 0, y = 0, sw = 0, sh = 0) {
     if (sw <= 0) {
       sw = bitmap.width;
     }
@@ -908,28 +888,28 @@ String.prototype.replaceAll = function(search, replacement) {
     this.blt(bitmap, 0, 0, bitmap.width, bitmap.height, x, y, sw, sh);
   };
   CACHE = {};
-  LoadFromIconIndex = function(iconIndex) {
+  LoadFromIconIndex = function (iconIndex) {
     var icon_bitmap, iconset, ph, pw, sx, sy;
     if (CACHE[iconIndex] == null) {
       iconset = ImageManager.loadSystem('IconSet');
-      if (Utils.RPGMAKER_NAME.contains("MV")) {
+      if (Utils.RPGMAKER_NAME.contains('MV')) {
         pw = Window_Base._iconWidth;
         ph = Window_Base._iconHeight;
       } else {
         pw = ImageManager.iconWidth;
         ph = ImageManager.iconHeight;
       }
-      sx = iconIndex % 16 * pw;
+      sx = (iconIndex % 16) * pw;
       sy = Math.floor(iconIndex / 16) * ph;
       icon_bitmap = new Bitmap(pw, ph);
-      icon_bitmap.addLoadListener(function() {
+      icon_bitmap.addLoadListener(function () {
         icon_bitmap.blt(iconset, sx, sy, pw, ph, 0, 0);
       });
       CACHE[iconIndex] = icon_bitmap;
     }
     return CACHE[iconIndex];
   };
-  Bitmap.prototype.drawIcon = function(x, y, icon, size = 32) {
+  Bitmap.prototype.drawIcon = function (x, y, icon, size = 32) {
     var bitmap;
     bitmap = null;
     if (icon instanceof Bitmap) {
@@ -943,7 +923,7 @@ String.prototype.replaceAll = function(search, replacement) {
   _ = Window_Base.prototype;
   //@[ALIAS]
   ALIAS__processEscapeCharacter = _.processEscapeCharacter;
-  _.processEscapeCharacter = function(code, textState) {
+  _.processEscapeCharacter = function (code, textState) {
     switch (code) {
       case 'CHEX':
         this.pProcessColorChangeHex(this.pObtainEscapeParamHexColor(textState));
@@ -962,7 +942,7 @@ String.prototype.replaceAll = function(search, replacement) {
     }
   };
   //?NEW
-  _.pObtainEscapeParamHexColor = function(textState) {
+  _.pObtainEscapeParamHexColor = function (textState) {
     var arr, regExp, textPart;
     regExp = /^\[(#?([0-9a-fA-F]{2}){3}|([0-9a-fA-F]){3})\]/;
     textPart = textState.text.slice(textState.index);
@@ -971,11 +951,11 @@ String.prototype.replaceAll = function(search, replacement) {
       textState.index += arr[0].length;
       return arr[1];
     } else {
-      return "";
+      return '';
     }
   };
   //?NEW
-  _.pObtainEscapeParamIconArr = function(textState) {
+  _.pObtainEscapeParamIconArr = function (textState) {
     var arr, params, regExp, textPart;
     regExp = /^\[(\d+,\s*\d+,\s*-?\d+,\s*-?\d+)\]/;
     textPart = textState.text.slice(textState.index);
@@ -983,7 +963,7 @@ String.prototype.replaceAll = function(search, replacement) {
     if (arr != null) {
       textState.index += arr[0].length;
       if (arr[1] != null) {
-        params = arr[1].split(",").map(function(i) {
+        params = arr[1].split(',').map(function (i) {
           return parseInt(i.trim());
         });
         return params;
@@ -992,7 +972,7 @@ String.prototype.replaceAll = function(search, replacement) {
     return [];
   };
   //?NEW
-  _.pObtainEscapeParamImgArr = function(textState) {
+  _.pObtainEscapeParamImgArr = function (textState) {
     var arr, params, regExp, textPart;
     regExp = /^\[(\w+,\s*\d+,\s*\d+,\s*-?\d+,\s*-?\d+)\]/;
     textPart = textState.text.slice(textState.index);
@@ -1000,7 +980,7 @@ String.prototype.replaceAll = function(search, replacement) {
     if (arr != null) {
       textState.index += arr[0].length;
       if (arr[1] != null) {
-        params = arr[1].split(",").map(function(i) {
+        params = arr[1].split(',').map(function (i) {
           if (isFinite(i)) {
             return parseInt(i.trim());
           } else {
@@ -1013,7 +993,7 @@ String.prototype.replaceAll = function(search, replacement) {
     return [];
   };
   //?NEW
-  _.pProcessColorChangeHex = function(colorHex) {
+  _.pProcessColorChangeHex = function (colorHex) {
     var e;
     try {
       this.changeTextColor(colorHex);
@@ -1025,7 +1005,7 @@ String.prototype.replaceAll = function(search, replacement) {
   };
   //?NEW
   //?params: [INDEX, SIZE, DX, DY]
-  _.pProcessDrawIconSized = function(params, textState) {
+  _.pProcessDrawIconSized = function (params, textState) {
     var dx, dy, e, iconIndex, size, staticMargin, x, y;
     try {
       if (params == null) {
@@ -1054,7 +1034,7 @@ String.prototype.replaceAll = function(search, replacement) {
       if (textState.drawing === true) {
         this.contents.drawIcon(x, y, iconIndex, size);
       }
-      textState.x += size + (staticMargin * 2) + dx;
+      textState.x += size + staticMargin * 2 + dx;
     } catch (error) {
       e = error;
       console.warn(e);
@@ -1062,7 +1042,7 @@ String.prototype.replaceAll = function(search, replacement) {
   };
   //?NEW
   //?params: [NAME, W, H, DX, DY]
-  _.pProcessDrawPictureSized = function(params, textState, isUnderText = false) {
+  _.pProcessDrawPictureSized = function (params, textState, isUnderText = false) {
     var drawBitmap, drawProcess, e, height, name, source, width, x, y;
     try {
       if (params == null) {
@@ -1088,7 +1068,7 @@ String.prototype.replaceAll = function(search, replacement) {
       drawBitmap = this.contents;
       source = this.pGetSourceImageForDrawPictureSized(name);
       if (textState.drawing === true) {
-        drawProcess = function() {
+        drawProcess = function () {
           var e;
           try {
             if (drawBitmap == null) {
@@ -1113,7 +1093,7 @@ String.prototype.replaceAll = function(search, replacement) {
     }
   };
   // * Данный метод вынесен отдельно, чтобы можно было переопределять папки
-  _.pGetSourceImageForDrawPictureSized = function(name) {
+  _.pGetSourceImageForDrawPictureSized = function (name) {
     return ImageManager.loadPicture(name);
   };
 })();
@@ -1121,26 +1101,25 @@ String.prototype.replaceAll = function(search, replacement) {
 // ■ END Window_Base.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Window_Base.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var ALIAS__convertEscapeCharacters, _;
   //@[DEFINES]
   _ = Window_Base.prototype;
   //@[ALIAS]
   ALIAS__convertEscapeCharacters = _.convertEscapeCharacters;
-  _.convertEscapeCharacters = function(text) {
+  _.convertEscapeCharacters = function (text) {
     text = ALIAS__convertEscapeCharacters.call(this, text);
     return this.pkdProcessExtraWrapText(text);
   };
-  _.pkdProcessExtraWrapText = function(text) {
+  _.pkdProcessExtraWrapText = function (text) {
     text = PKD_HelpInMsg.processExtraWrapText(text);
-    text = text.replace(/\\/g, "\x1b");
-    text = text.replace(/\x1b\x1b/g, "\\");
+    text = text.replace(/\\/g, '\x1b');
+    text = text.replace(/\x1b\x1b/g, '\\');
     return text;
   };
 })();
@@ -1148,10 +1127,9 @@ String.prototype.replaceAll = function(search, replacement) {
 // ■ END Window_Message.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //$[ENCODE]
-(function() {
+(function () {
   var Window_EventHelpInfo;
   Window_EventHelpInfo = class Window_EventHelpInfo extends Window_Base {
     constructor(infoData) {
@@ -1160,15 +1138,15 @@ String.prototype.replaceAll = function(search, replacement) {
       this.infoData = infoData;
       this._windowskin;
       this.openness = 0;
-      if ((this.infoData.Windowskin != null) && this.infoData.Windowskin !== "") {
+      if (this.infoData.Windowskin != null && this.infoData.Windowskin !== '') {
         this.windowskin = ImageManager.loadPicture(this.infoData.Windowskin);
       }
-      if ((this.infoData.Txt != null) && this.infoData.Txt !== "") {
+      if (this.infoData.Txt != null && this.infoData.Txt !== '') {
         this.drawInfoTextFromTxt();
       } else if (this.infoData.Text != null) {
         this.drawInfoText();
       }
-      backgroundType = this._convertBackgroundType(this.infoData["Background Type"]);
+      backgroundType = this._convertBackgroundType(this.infoData['Background Type']);
       if (backgroundType >= 0) {
         this.setBackgroundType(backgroundType);
       }
@@ -1177,9 +1155,9 @@ String.prototype.replaceAll = function(search, replacement) {
 
     _convertBackgroundType(string) {
       switch (string) {
-        case "Window":
+        case 'Window':
           return 0;
-        case "Dim":
+        case 'Dim':
           return 1;
         default:
           return 2;
@@ -1206,7 +1184,7 @@ String.prototype.replaceAll = function(search, replacement) {
 
     setStaticAnchor(vx, vy) {
       this.x -= Math.round(this.width * vx);
-      return this.y -= Math.round(this.height * vy);
+      return (this.y -= Math.round(this.height * vy));
     }
 
     drawInfoText() {
@@ -1223,12 +1201,12 @@ String.prototype.replaceAll = function(search, replacement) {
         if (PKD_HelpInMsg.txtDb[txtFilename] != null) {
           text = PKD_HelpInMsg.txtDb[txtFilename];
         } else {
-          text = ".txt file data for" + txtFilename + " not found";
+          text = '.txt file data for' + txtFilename + ' not found';
         }
       } catch (error) {
         e = error;
         console.warn(e);
-        text = "Error read .txt file " + this.infoData.Txt;
+        text = 'Error read .txt file ' + this.infoData.Txt;
       }
       return this.drawTextEx(text, 0, 0);
     }
@@ -1242,11 +1220,9 @@ String.prototype.replaceAll = function(search, replacement) {
     pkdProcessExtraWrapText(text) {
       return text; // * NOT INCLUDE
     }
-
   };
   PKD_HelpInMsg.Window_EventHelpInfo = Window_EventHelpInfo;
 })();
-
 
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
@@ -1254,16 +1230,16 @@ String.prototype.replaceAll = function(search, replacement) {
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
 //$[ENCODE]
-(function() {
+(function () {
   var _;
   //@[DEFINES]
   _ = Window_ItemList.prototype;
   //$[OVER MY]
-  _.pIsHintsAllowed = function() {
+  _.pIsHintsAllowed = function () {
     return PKD_HelpInMsg.IsShowItemHints === true;
   };
   //$[OVER MY]
-  _.pItemForHint = function() {
+  _.pItemForHint = function () {
     return this.item();
   };
 })();
@@ -1271,27 +1247,26 @@ String.prototype.replaceAll = function(search, replacement) {
 // ■ END Window_ItemList.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Window_Message.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var ALIAS__processEscapeCharacter, ALIAS__startMessage, ALIAS__terminateMessage, ALIAS__update, _;
   //@[DEFINES]
   _ = Window_Message.prototype;
   //@[ALIAS]
   ALIAS__startMessage = _.startMessage;
-  _.startMessage = function() {
+  _.startMessage = function () {
     this._tLinks = [];
     this._showLInfoTimer = 0;
     return ALIAS__startMessage.call(this);
   };
-  
+
   //@[ALIAS]
   ALIAS__processEscapeCharacter = _.processEscapeCharacter;
-  _.processEscapeCharacter = function(code, textState) {
+  _.processEscapeCharacter = function (code, textState) {
     ALIAS__processEscapeCharacter.call(this, ...arguments);
     if (code === PKD_HelpInMsg.LINK_SYMBOL) {
       this._workWithLink(textState);
@@ -1299,7 +1274,7 @@ String.prototype.replaceAll = function(search, replacement) {
   };
   //@[ALIAS]
   ALIAS__update = _.update;
-  _.update = function() {
+  _.update = function () {
     ALIAS__update.call(this);
     if (this._tLinks == null) {
       return;
@@ -1319,17 +1294,16 @@ String.prototype.replaceAll = function(search, replacement) {
   };
   //@[ALIAS]
   ALIAS__terminateMessage = _.terminateMessage;
-  _.terminateMessage = function() {
+  _.terminateMessage = function () {
     ALIAS__terminateMessage.call(this);
     this._hideHelpLinksInfo();
     this.terminateHelpLinks();
-    return this._tLinks = null;
+    return (this._tLinks = null);
   };
 })();
 
 // ■ END Window_Message.coffee
 //---------------------------------------------------------------------------
-
 
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
@@ -1337,11 +1311,11 @@ String.prototype.replaceAll = function(search, replacement) {
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
 //$[ENCODE]
-(function() {
+(function () {
   var _;
   //@[DEFINES]
   _ = Window_Message.prototype;
-  _.terminateHelpLinks = function() {
+  _.terminateHelpLinks = function () {
     var i, l, len, ref;
     if (this._tLinks == null) {
       return;
@@ -1352,17 +1326,17 @@ String.prototype.replaceAll = function(search, replacement) {
       l.removeFromParent();
     }
   };
-  _._isAnyHelpLinkUnderCursor = function() {
+  _._isAnyHelpLinkUnderCursor = function () {
     if (this._tLinks == null) {
       return false;
     }
-    return this._tLinks.some(function(l) {
+    return this._tLinks.some(function (l) {
       return l.isMouseIn();
     });
   };
-  _._showHelpLinkInfo = function() {
+  _._showHelpLinkInfo = function () {
     var e, info, infoData, underMouse;
-    underMouse = this._tLinks.find(function(l) {
+    underMouse = this._tLinks.find(function (l) {
       return l.isMouseIn();
     });
     if (underMouse == null) {
@@ -1392,25 +1366,25 @@ String.prototype.replaceAll = function(search, replacement) {
       return this._hideHelpLinksInfo();
     }
   };
-  _._hideHelpLinksInfo = function() {
+  _._hideHelpLinksInfo = function () {
     if (this.__helpLinkInfoWindow == null) {
       return;
     }
     this.__helpLinkInfoWindow.close();
     this.__helpLinkInfoWindow.removeFromParent();
     this.__helpLinkInfoWindow = null;
-    return this.__lastLinkHelpInfo = null;
+    return (this.__lastLinkHelpInfo = null);
   };
-  _._workWithLink = function(textState) {
+  _._workWithLink = function (textState) {
     var value;
     value = this._obtainEscapeTextCodeX(textState);
-    if (value !== "") {
+    if (value !== '') {
       return this._startHelpLink(value, textState);
     } else {
       return this._stopHelpLink(textState);
     }
   };
-  _._startHelpLink = function(value, textState) {
+  _._startHelpLink = function (value, textState) {
     if (this.__tLink != null) {
       return;
     }
@@ -1423,16 +1397,16 @@ String.prototype.replaceAll = function(search, replacement) {
     // * Предзагрузка картинки
     PKD_HelpInMsg.prepareHelpMessageSkin(value);
   };
-  _._stopHelpLink = function(textState) {
+  _._stopHelpLink = function (textState) {
     if (this.__tLink == null) {
       return;
     }
     this.__tLink.endX = textState.x;
     this.__tLink.EndIndex = textState.index;
     this._createTLinkHoverZone();
-    return this.__tLink = null;
+    return (this.__tLink = null);
   };
-  _._createTLinkHoverZone = function() {
+  _._createTLinkHoverZone = function () {
     var h, spr, w;
     w = this.__tLink.endX - this.__tLink.startX;
     h = this.lineHeight();
@@ -1443,7 +1417,7 @@ String.prototype.replaceAll = function(search, replacement) {
     return this._tLinks.push(spr);
   };
   //?[NEW]
-  _._obtainEscapeTextCodeX = function(textState) {
+  _._obtainEscapeTextCodeX = function (textState) {
     var arr;
     arr = /^\[(\w+)\]/.exec(textState.text.slice(textState.index));
     if (arr != null) {
@@ -1458,43 +1432,42 @@ String.prototype.replaceAll = function(search, replacement) {
 // ■ END Window_Message.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Window_Selectable.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var ALIAS__close, ALIAS__initialize, ALIAS__select, ALIAS__update, _;
   //@[DEFINES]
   _ = Window_Selectable.prototype;
   //@[ALIAS]
   ALIAS__initialize = _.initialize;
-  _.initialize = function() {
+  _.initialize = function () {
     ALIAS__initialize.call(this, ...arguments);
     if (this.pIsHintsAllowed()) {
       return this._himInitHints();
     }
   };
-  
+
   //@[ALIAS]
   ALIAS__select = _.select;
-  _.select = function() {
+  _.select = function () {
     ALIAS__select.call(this, ...arguments);
     if (this.pIsHintsAllowed()) {
       this._himShowHintDelayed();
     }
   };
-  
+
   //@[ALIAS]
   ALIAS__update = _.update;
-  _.update = function() {
+  _.update = function () {
     ALIAS__update.call(this, ...arguments);
     this._himUpdateHintShow();
   };
   //@[ALIAS]
   ALIAS__close = _.close;
-  _.close = function() {
+  _.close = function () {
     this._himHideHintNow();
     return ALIAS__close.call(this, ...arguments);
   };
@@ -1503,30 +1476,29 @@ String.prototype.replaceAll = function(search, replacement) {
 // ■ END Window_Selectable.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Window_Selectable.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var _;
   //@[DEFINES]
   _ = Window_Selectable.prototype;
-  _.pIsHintsAllowed = function() {
+  _.pIsHintsAllowed = function () {
     return false;
   };
-  _.pItemForHint = function() {
+  _.pItemForHint = function () {
     return null;
   };
-  _._himInitHints = function() {
+  _._himInitHints = function () {
     this._himHintTimerMax = PKD_HelpInMsg.ShowItemHintTimeDelay;
     this._himHintTimer = -1;
     this._himUpdateHintShow = this._himUpdateHintShowBody;
     this._himLastHintItem = -1;
     this._himHintWindow = null;
   };
-  _._himShowHintDelayed = function() {
+  _._himShowHintDelayed = function () {
     if (this._himLastHintItem === this.pItemForHint()) {
       return;
     }
@@ -1534,8 +1506,8 @@ String.prototype.replaceAll = function(search, replacement) {
     this._himHintTimer = 0;
   };
   //@[DYNAMIC]
-  _._himUpdateHintShow = function() {};
-  _._himUpdateHintShowBody = function() {
+  _._himUpdateHintShow = function () {};
+  _._himUpdateHintShowBody = function () {
     if (!this.isOpenAndActive()) {
       this._himHideHintNow();
       return;
@@ -1549,7 +1521,7 @@ String.prototype.replaceAll = function(search, replacement) {
       this._himShowHintNow();
     }
   };
-  _._himHideHintNow = function() {
+  _._himHideHintNow = function () {
     if (this._himHintWindow == null) {
       return;
     }
@@ -1558,7 +1530,7 @@ String.prototype.replaceAll = function(search, replacement) {
     this._himHintWindow = null;
     this._himLastHintItem = null;
   };
-  _._himShowHintNow = function() {
+  _._himShowHintNow = function () {
     var hintData;
     this._himLastHintItem = this.pItemForHint();
     //console.log(@_himLastHintItem)
@@ -1571,7 +1543,7 @@ String.prototype.replaceAll = function(search, replacement) {
       }
     }
   };
-  _._himCreateHintWindow = function(hintData) {
+  _._himCreateHintWindow = function (hintData) {
     var mx, my, rect, x, y;
     if (hintData == null) {
       return;
@@ -1587,10 +1559,10 @@ String.prototype.replaceAll = function(search, replacement) {
       } else {
         rect = this.itemRectWithPadding(this.index());
       }
-      mx = (rect.width / 3) + PKD_HelpInMsg.ItemHelpWindowPosMargins.x;
-      my = (rect.height + 2) + PKD_HelpInMsg.ItemHelpWindowPosMargins.y;
-      x = (PKD_HelpInMsg.toGlobalCoord(this, 'x')) + rect.x + mx;
-      y = (PKD_HelpInMsg.toGlobalCoord(this, 'y')) + rect.y + my;
+      mx = rect.width / 3 + PKD_HelpInMsg.ItemHelpWindowPosMargins.x;
+      my = rect.height + 2 + PKD_HelpInMsg.ItemHelpWindowPosMargins.y;
+      x = PKD_HelpInMsg.toGlobalCoord(this, 'x') + rect.x + mx;
+      y = PKD_HelpInMsg.toGlobalCoord(this, 'y') + rect.y + my;
     }
     this._himHintWindow.updatePlacementRelative(x, y);
     this._himHintWindow.open();
@@ -1600,22 +1572,21 @@ String.prototype.replaceAll = function(search, replacement) {
 // ■ END Window_Selectable.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Window_SkillList.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var _;
   //@[DEFINES]
   _ = Window_SkillList.prototype;
   //$[OVER MY]
-  _.pIsHintsAllowed = function() {
+  _.pIsHintsAllowed = function () {
     return PKD_HelpInMsg.IsShowItemHints === true;
   };
   //$[OVER MY]
-  _.pItemForHint = function() {
+  _.pItemForHint = function () {
     return this.item();
   };
 })();
@@ -1623,13 +1594,12 @@ String.prototype.replaceAll = function(search, replacement) {
 // ■ END Window_SkillList.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Window_Selectable.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var _;
   //@[DEFINES]
   _ = Window_Selectable.prototype;

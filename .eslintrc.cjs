@@ -18,6 +18,8 @@ module.exports = {
   ignorePatterns: [
     ".eslintrc.cjs",
     "commitlint.config.ts",
+    "frontend/js/plugins/PKD_HelpInMessages.js",
+    "frontend/js/plugins/PKD_VisualChoices_MZ.js",
     "frontend/js/plugins/PKD_SimpleQuestSystem.js",
     "frontend/js/plugins/TAA_CharacterPoses.js",
     "frontend/js/plugins/VisuMZ_*.js" 
