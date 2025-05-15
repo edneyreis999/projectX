@@ -11,15 +11,15 @@
  * @target MZ MV
  * @url https://kdworkshop.net/plugins/animax
  *
- * 
+ *
  * @help
  * ---------------------------------------------------------------------------
- * GUIDE: 
+ * GUIDE:
  *  https://gist.github.com/KageDesu/c3a74dddeea24f6e7f6f7baf590f1722
  * ---------------------------------------------------------------------------
  * If you like my Plugins, want more and offten updates,
  * please support me on Boosty or Patreon!
- * 
+ *
  * Boosty Page:
  *      https://boosty.to/kagedesu
  * Patreon Page:
@@ -28,7 +28,7 @@
  *      https://www.youtube.com/channel/UCA3R61ojF5vp5tGwJ1YqdgQ?
  *
  * You can use this plugin in your game thanks to all my Patrons!
- * 
+ *
  *
  *
  * @param xAnimations:structA
@@ -36,44 +36,44 @@
  * @type struct<LAnimaX>[]
  * @default []
  * @desc XAnima System Animations List
- * 
+ *
  * @param xAnimaParts:structA
  * @text Animation Layers List
  * @type struct<LAnimaXPart>[]
  * @default []
  * @desc XAnima System animation layers list
- * 
+ *
  * @param isUseAltPreload:b
  * @text Is Use Alt. Preload?
  * @type boolean
  * @default false
  * @desc If true - plugin will preload all images from folder charactersAA (not works in browser)
- * 
+ *
  * @param isUseWebp:b
  * @text Is Use .Webp?
  * @type boolean
  * @default false
  * @desc Is use alternative .webp format for images in folder charactersAA? All images should be in .webp, not .png
- * 
+ *
  * @param isWaitSpritesheetLoading:b
  * @text Is Wait Spritesheet Loading?
  * @type boolean
  * @default false
  * @desc If true - plugin will wait for all player spritesheets to be loaded before start Map Scene
- * 
+ *
  * @param isUseDiagonalMovement:b
  * @text Is Use Diagonal Movement?
  * @type boolean
  * @default false
  * @desc If true - plugin will use diagonal movement for player
- * 
+ *
  * @param isAllowDiagonalEventsActivation:b
  * @parent isUseDiagonalMovement:b
  * @text Is Allow Diagonal Events Activation?
  * @type boolean
  * @default false
  * @desc If true - starts events when player touch them diagonally
- * 
+ *
  * @param diagonalMovementSpeedKoef:i
  * @parent isUseDiagonalMovement:b
  * @text Diagonal Movement Speed Mod
@@ -82,61 +82,61 @@
  * @default 0.8
  * @min 0.01
  * @desc Diagonal movement speed modifier
- * 
+ *
  * @param inactiveAnimaXMapsList:intA
  * @text Inactive Maps List
  * @type number[]
  * @default []
  * @desc List of maps where XAnima System is inactive
- * 
+ *
  * @param spacer|endHolder @text‏‏‎ ‎@desc ===============================================
- * 
+ *
  * @command ChangePlayerAnimationSet
  * @text Change Player Animation
  * @desc Change player animation set
- * 
+ *
  * @arg animationSetName
  * @text Animation ID
  * @desc Animation ID form Animation List (plugin parameters)
  * @type text
  * @default
- * 
+ *
  * @command ResetPlayerAnimationSet
  * @text Reset Player Animation
  * @desc Reset player animation set to default (from Actor's Note)
- * 
+ *
  * @command ChangeEventAnimationSet
  * @text Change Event Animation
  * @desc Change Event animation set
- * 
+ *
  * @arg eventId
  * @text Character ID
  * @desc Animation target. Event ID. 0 - Player, -1 - current event ID, -2,-3,-4 - followers
  * @type number
  * @min -4
  * @default -1
- * 
+ *
  * @arg animationSetName
  * @text Animation ID
  * @desc Animation ID form Animation List (plugin parameters)
  * @type text
  * @default
- * 
+ *
  * @command ResetEventAnimationSet
  * @text Reset Event Animation
  * @desc Reset Event animation set to default (from Event page Comment or Empty)
- * 
+ *
  * @arg eventId
  * @text Character ID
  * @desc Animation target. Event ID. 0 - Player, -1 - current event ID, -2,-3,-4 - followers
  * @type number
  * @min -4
  * @default -1
- * 
+ *
  * @command ChangeFollowerAnimationSet
  * @text Change Follower Animation
  * @desc Change Follower animation set
- * 
+ *
  * @arg partyMemberIndex
  * @text Index
  * @desc Follower index: 0, 1, 2
@@ -144,17 +144,17 @@
  * @min 0
  * @max 2
  * @default 0
- * 
+ *
  * @arg animationSetName
  * @text Animation ID
  * @desc Animation ID form Animation List (plugin parameters)
  * @type text
  * @default
- * 
+ *
  * @command ResetFollowerAnimationSet
  * @text Reset Follower Animation
  * @desc Reset Follower animation set to default (from Actor's Note)
- * 
+ *
  * @arg partyMemberIndex
  * @text Index
  * @desc Follower index: 0, 1, 2
@@ -162,152 +162,152 @@
  * @min 0
  * @max 2
  * @default 0
- * 
+ *
  * @command PlayAnimationAction
  * @text Play Anima Action
  * @desc Start playing animation action for character
- * 
+ *
  * @arg actionName
  * @text Action Name
  * @desc Action Name form Actions List (plugin parameters) or empty string (clear all actions)
  * @type text
  * @default
- * 
+ *
  * @arg eventId
  * @text Character ID
  * @desc Animation target. Event ID. 0 - Player, -1 - current event ID, -2,-3,-4 - followers
  * @type number
  * @min -4
  * @default -1
- * 
- * 
+ *
+ *
  *  @arg isLoop
  *  @text Is Looping?
  *  @type boolean
  *  @default false
  *  @desc Animation will be looped while character is not moving, event commands is continue
- * 
+ *
  *  @arg isWait
  *  @text Is Wait?
  *  @type boolean
  *  @default true
  *  @desc Next event commands will wait animation to complete
- * 
+ *
  * @command PlayIndependentAnimationAction
  * @text Play Independent Anima Action
  * @desc Start playing independent animation action for character (with or without AnimaX)
- * 
+ *
  * @arg animationSetName
  * @text Animation ID
  * @desc Animation ID form Animation List (plugin parameters)
  * @type text
  * @default
- * 
+ *
  * @arg actionName
  * @text Action Name
  * @desc Action Name form Actions List (plugin parameters) or empty string (clear all actions)
  * @type text
  * @default
- * 
+ *
  * @arg eventId
  * @text Character ID
  * @desc Animation target. Event ID. 0 - Player, -1 - current event ID, -2,-3,-4 - followers
  * @type number
  * @min -4
  * @default -1
- * 
- * 
+ *
+ *
  *  @arg isLoop
  *  @text Is Looping?
  *  @type boolean
  *  @default false
  *  @desc Animation will be looped while character is not moving, event commands is continue
- * 
+ *
  *  @arg isWait
  *  @text Is Wait?
  *  @type boolean
  *  @default true
  *  @desc Next event commands will wait animation to complete
- * 
+ *
  * @command StopAnimationAction
  * @text Stop Anima Action
  * @desc Stop looping animation action for character
- * 
+ *
  * @arg eventId
  * @text Character ID
  * @desc Animation target. Event ID. 0 - Player, -1 - current event ID, -2,-3,-4 - followers
  * @type number
  * @min -4
  * @default -1
- * 
- * 
+ *
+ *
  * @command AddPart
  * @text Add Layer
  * @desc Add extra layer on character
- * 
+ *
  * @arg eventId
  * @text Character ID
  * @desc Animation target. Event ID. 0 - Player, -1 - current event ID, -2,-3,-4 - followers
  * @type number
  * @min -4
  * @default -1
- * 
- * 
+ *
+ *
  * @arg layerName
  * @text Layer ID
  * @desc Layer ID form Animation Layers List (plugin parameters)
  * @type text
  * @default
- * 
+ *
  * @arg isRelative
  * @text Relative?
  * @type boolean
  * @desc If false - layer will be loaded from CommonLayers folder, if true - layer will be loaded from character AnimaX folder
  * @default false
- * 
+ *
  * @command RemovePart
  * @text Remove Layer
  * @desc Remove extra layer from character
- * 
+ *
  * @arg eventId
  * @text Character ID
  * @desc Animation target. Event ID. 0 - Player, -1 - current event ID, -2,-3,-4 - followers
  * @type number
  * @min -4
  * @default -1
- * 
- * 
+ *
+ *
  * @arg layerName
  * @text Layer ID
  * @desc Added layer ID form Animation Layers List (plugin parameters)
  * @type text
  * @default
- * 
+ *
  * @command ClearParts
  * @text Clear layers
  * @desc Remove all layers from character
- * 
+ *
  * @arg eventId
  * @text Character ID
  * @desc Animation target. Event ID. 0 - Player, -1 - current event ID, -2,-3,-4 - followers
  * @type number
  * @min -4
  * @default -1
- * 
+ *
  * @command SetAnimaXState
  * @text Set AnimaX State
  * @desc Enable or Disable AnimaX
- * 
+ *
  * @arg isEnabled
  * @text Is AnimaX Enabled?
  * @type boolean
  * @default false
  * @desc
- * 
+ *
  * @command AnimaXPartyState
  * @text Set AnimaX State for Party
  * @desc Enable or Disable AnimaX for player or follwers
- * 
+ *
  * @arg partyMemberIndex
  * @text Member Index
  * @desc 0 - Player, 1, 2, 3 - followers
@@ -315,14 +315,14 @@
  * @min 0
  * @max 3
  * @default 0
- * 
+ *
  * @arg isEnabled
  * @text Is AnimaX Enabled?
  * @type boolean
  * @default false
  * @desc
- * 
- * 
+ *
+ *
  * @command EMPTY_HOLDER
  * @text ‏
  * @desc
@@ -334,14 +334,14 @@
  * @target MZ MV
  * @url https://kdworkshop.net/plugins/animax
  *
- * 
+ *
  * @help
  * ---------------------------------------------------------------------------
- * РУКОВОДСТВО: 
+ * РУКОВОДСТВО:
  *  https://gist.github.com/KageDesu/c3a74dddeea24f6e7f6f7baf590f1722
  * ---------------------------------------------------------------------------
  * Если Вам нравятся мои плагины, поддержите меня на Boosty!
- * 
+ *
  * Boosty:
  *      https://boosty.to/kagedesu
  * YouTube:
@@ -355,44 +355,44 @@
  * @type struct<LAnimaX>[]
  * @default []
  * @desc Список анимаций (профилей)
- * 
+ *
  * @param xAnimaParts:structA
  * @text Список слоёв
  * @type struct<LAnimaXPart>[]
  * @default []
  * @desc Список дополнительный слоёв (частей)
- * 
+ *
  * @param isUseAltPreload:b
  * @text Использовать альтернативную предзагрузку?
  * @type boolean
  * @default false
  * @desc Если ВКЛ - все изображения из папки charactersAA будут загружены в память (не работает в браузере)
- * 
+ *
  * @param isUseWebp:b
  * @text Использовать .Webp?
  * @type boolean
  * @default false
  * @desc Исползовать .webp формат изображений в папке charactersAA? Все файлы должны быть .webp, а не .png
- * 
+ *
  * @param isWaitSpritesheetLoading:b
  * @text Ждать загрузку спрайтлистов?
  * @type boolean
  * @default false
  * @desc Если ВКЛ - плагин будет ждать загрузки всех спрайтлистов игрока перед стартом карты
- * 
+ *
  * @param isUseDiagonalMovement:b
  * @text Использовать диагональное движение?
  * @type boolean
  * @default false
  * @desc Если ВКЛ - плагин будет использовать диагональное движение для игрока
- * 
+ *
  * @param isAllowDiagonalEventsActivation:b
  * @parent isUseDiagonalMovement:b
  * @text Разрешить активацию событий по диагонали?
  * @type boolean
  * @default false
  * @desc Если ВКЛ - события будут активироваться, когда игрок касается их по диагонали
- * 
+ *
  * @param diagonalMovementSpeedKoef:i
  * @parent isUseDiagonalMovement:b
  * @text Модификатор скорости диагонального движения
@@ -401,197 +401,197 @@
  * @default 0.8
  * @min 0.01
  * @desc
- * 
+ *
  * @param inactiveAnimaXMapsList:intA
  * @text Список карт без AnimaX
  * @type number[]
  * @default []
  * @desc Список карт, на которых AnimaX System не активен
- * 
+ *
  * @param spacer|endHolder @text‏‏‎ ‎@desc ===============================================
- * 
+ *
  * @command ChangePlayerAnimationSet
  * @text Изменить профиль анимации игрока
  * @desc
- * 
+ *
  * @arg animationSetName
  * @text Профиль
  * @desc ID (имя) профиля из Animation List (параметр плагина)
  * @type text
  * @default
- * 
+ *
  * @command ResetPlayerAnimationSet
  * @text Сбросить профиль игрока
  * @desc Сбросить до базового (который был указан в заметке персонажа)
- * 
+ *
  * @command ChangeEventAnimationSet
  * @text Изменить профиль анимации события
  * @desc
- * 
+ *
  * @arg eventId
  * @text Номер события
  * @desc Цифра - номер события. 0 - Игрок, -1 - текущее событие, -2,-3,-4 - последователи
  * @type number
  * @min -4
  * @default -1
- * 
+ *
  * @arg animationSetName
  * @text Профиль
  * @desc ID (имя) профиля из Animation List (параметр плагина)
  * @type text
  * @default
- * 
+ *
  * @command ResetEventAnimationSet
  * @text Сбросить профиль события
  * @desc Сбросить до базового (из комментария на странице или пустого)
- * 
+ *
  * @arg eventId
  * @text Номер события
  * @desc Цифра - номер события. 0 - Игрок, -1 - текущее событие, -2,-3,-4 - последователи
  * @type number
  * @min -4
  * @default -1
- * 
+ *
  * @command PlayAnimationAction
  * @text Анимационное действие
  * @desc
- * 
+ *
  * @arg actionName
  * @text Название действия
  * @desc Название действия из Actions List (параметр плагина) или пусто - чтобы отменить все
  * @type text
  * @default
- * 
+ *
  * @arg eventId
  * @text Номер события
  * @desc Цифра - номер события. 0 - Игрок, -1 - текущее событие, -2,-3,-4 - последователи
  * @type number
  * @min -4
  * @default -1
- * 
+ *
  *  @arg isLoop
  *  @text Зациклить?
  *  @type boolean
  *  @default false
  *  @desc Анимация действия будет зацикленна пока событие (персонаж) не сдвинуться с места
- * 
+ *
  *  @arg isWait
  *  @text Ждать окончания?
  *  @type boolean
  *  @default true
  *  @desc Следующая команда события будет ждать окончания анимации действия
- * 
+ *
  * @command PlayIndependentAnimationAction
  * @text Анимационное действие (независимое)
  * @desc Независиме анимационное действие для персонажа (с AnimaX или без него)
- * 
+ *
  * @arg animationSetName
  * @text Профиль
  * @desc ID (имя) профиля из Animation List (параметр плагина)
  * @type text
  * @default
- * 
+ *
  * @arg actionName
  * @text Название действия
  * @desc Название действия из Actions List (параметр плагина) или пусто - чтобы отменить все
  * @type text
  * @default
- * 
+ *
  * @arg eventId
  * @text Номер события
  * @desc Цифра - номер события. 0 - Игрок, -1 - текущее событие, -2,-3,-4 - последователи
  * @type number
  * @min -4
  * @default -1
- * 
+ *
  * @arg isLoop
  *  @text Зациклить?
  *  @type boolean
  *  @default false
  *  @desc Анимация действия будет зацикленна пока событие (персонаж) не сдвинуться с места
- * 
+ *
  *  @arg isWait
  *  @text Ждать окончания?
  *  @type boolean
  *  @default true
  *  @desc Следующая команда события будет ждать окончания анимации действия
- * 
+ *
  * @command StopAnimationAction
  * @text Остановить действие
  * @desc Остановить любое зацикленное анимационное действие
- * 
+ *
  * @arg eventId
  * @text Номер события
  * @desc Цифра - номер события. 0 - Игрок, -1 - текущее событие, -2,-3,-4 - последователи
  * @type number
  * @min -4
  * @default -1
- * 
+ *
  * @command AddPart
  * @text Добавить слой
  * @desc
- * 
+ *
  * @arg eventId
  * @text Номер события
  * @desc Цифра - номер события. 0 - Игрок, -1 - текущее событие, -2,-3,-4 - последователи
  * @type number
  * @min -4
  * @default -1
- * 
+ *
  * @arg layerName
  * @text Имя слоя
  * @desc Имя слоя из Animation Layers List (параметр плагина)
  * @type text
  * @default
- * 
+ *
  * @arg isRelative
  * @text Относительно?
  * @type boolean
  * @desc Если ВЫКЛ - слой будет из папки Common Layers, если ВКЛ - из папки профиля
  * @default false
- * 
+ *
  * @command RemovePart
  * @text Удалить слой
  * @desc
- * 
+ *
  * @arg eventId
  * @text Номер события
  * @desc Цифра - номер события. 0 - Игрок, -1 - текущее событие, -2,-3,-4 - последователи
  * @type number
  * @min -4
  * @default -1
- * 
+ *
  * @arg layerName
  * @text Имя слоя
  * @desc
  * @type text
  * @default
- * 
+ *
  * @command ClearParts
  * @text Удалить все слои
  * @desc
- * 
+ *
  * @arg eventId
  * @text Номер события
  * @desc Цифра - номер события. 0 - Игрок, -1 - текущее событие, -2,-3,-4 - последователи
  * @type number
  * @min -4
  * @default -1
- * 
+ *
  * @command SetAnimaXState
  * @text Состояние AnimaX (игра)
  * @desc Включить или выключить AnimaX для всей игры
- * 
+ *
  * @arg isEnabled
  * @text Включить?
  * @type boolean
  * @default false
  * @desc
- * 
+ *
  * @command AnimaXPartyState
  * @text Состояние AnimaX (партия)
  * @desc Включить или выключить AnimaX для персонажа (партии)
- * 
+ *
  * @arg partyMemberIndex
  * @text Номер персонажа
  * @desc 0 - Игрок, 1, 2, 3 - последователи
@@ -599,13 +599,13 @@
  * @min 0
  * @max 3
  * @default 0
- * 
+ *
  * @arg isEnabled
  * @text Включить?
  * @type boolean
  * @default false
  * @desc
- * 
+ *
  * @command EMPTY_HOLDER
  * @text ‏
  * @desc
@@ -617,14 +617,14 @@
  * @target MZ MV
  * @url https://kdworkshop.net/plugins/animax
  *
- * 
+ *
  * @help
  * ---------------------------------------------------------------------------
- * 指南: 
+ * 指南:
  *  https://gist.github.com/KageDesu/c3a74dddeea24f6e7f6f7baf590f1722
  * ---------------------------------------------------------------------------
  * 如果 您喜欢我的插件，想要更多和更频繁的更新，请在以下平台上支持我：
- * 
+ *
  * Boosty Page:
  *      https://boosty.to/kagedesu
  * Patreon Page:
@@ -640,44 +640,44 @@
  * @type struct<LAnimaX>[]
  * @default []
  * @desc 动画列表（配置文件）
- * 
+ *
  * @param xAnimaParts:structA
  * @text 层列表
  * @type struct<LAnimaXPart>[]
  * @default []
  * @desc 额外层（部分）列表
- * 
+ *
  * @param isUseAltPreload:b
  * @text 使用替代预加载？
  * @type boolean
  * @default false
  * @desc 如果开启 - 所有来自charactersAA文件夹的图像将加载到内存中（在浏览器中不起作用）
- * 
+ *
  * @param isUseWebp:b
  * @text 使用.Webp？
  * @type boolean
  * @default false
  * @desc 使用charactersAA文件夹中的.webp格式图像？所有文件必须是.webp，而不是.png
- * 
+ *
  * @param isWaitSpritesheetLoading:b
  * @text 等待精灵表加载？
  * @type boolean
  * @default false
  * @desc 如果开启 - 插件将在地图启动前等待加载所有玩家的精灵表
- * 
+ *
  * @param isUseDiagonalMovement:b
  * @text 使用对角移动？
  * @type boolean
  * @default false
  * @desc 如果开启 - 插件将为玩家使用对角移动
- * 
+ *
  * @param isAllowDiagonalEventsActivation:b
  * @parent isUseDiagonalMovement:b
  * @text 允许对角事件激活？
  * @type boolean
  * @default false
  * @desc 如果开启 - 当玩家对角接触事件时，事件将被激活
- * 
+ *
  * @param diagonalMovementSpeedKoef:i
  * @parent isUseDiagonalMovement:b
  * @text 对角移动速度系数
@@ -686,196 +686,196 @@
  * @default 0.8
  * @min 0.01
  * @desc
- * 
+ *
  * @param inactiveAnimaXMapsList:intA
  * @text 无AnimaX的地图列表
  * @type number[]
  * @default []
  * @desc AnimaX系统未激活的地图列表
- * 
+ *
  * @param spacer|endHolder @text‏‏‎ ‎@desc ===============================================
  * @command ChangePlayerAnimationSet
  * @text 更改玩家动画配置文件
  * @desc
- * 
+ *
  * @arg animationSetName
  * @text 配置文件
  * @desc Animation List中的配置文件ID（名称）（插件参数）
  * @type text
  * @default
- * 
+ *
  * @command ResetPlayerAnimationSet
  * @text 重置玩家配置文件
  * @desc 重置为基本配置文件（在角色备注中指定的）
- * 
+ *
  * @command ChangeEventAnimationSet
  * @text 更改事件动画配置文件
  * @desc
- * 
+ *
  * @arg eventId
  * @text 事件编号
  * @desc 数字 - 事件编号。0 - 玩家，-1 - 当前事件, -2,-3,-4 - 跟随者
  * @type number
  * @min -4
  * @default -1
- * 
+ *
  * @arg animationSetName
  * @text 配置文件
  * @desc Animation List中的配置文件ID（名称）（插件参数）
  * @type text
  * @default
- * 
+ *
  * @command ResetEventAnimationSet
  * @text 重置事件配置文件
  * @desc 重置为基本配置文件（从页面评论或为空）
- * 
+ *
  * @arg eventId
  * @text 事件编号
  * @desc 数字 - 事件编号。0 - 玩家，-1 - 当前事件, -2,-3,-4 - 跟随者
  * @type number
  * @min -4
  * @default -1
- * 
+ *
  * @command PlayAnimationAction
  * @text 动画动作
  * @desc
- * 
+ *
  * @arg actionName
  * @text 动作名称
  * @desc Actions List中的动作名称（插件参数）或为空以取消所有
  * @type text
  * @default
- * 
+ *
  * @arg eventId
  * @text 事件编号
  * @desc 数字 - 事件编号。0 - 玩家，-1 - 当前事件, -2,-3,-4 - 跟随者
  * @type number
  * @min -4
  * @default -1
- * 
+ *
  *  @arg isLoop
  *  @text 循环？
  *  @type boolean
  *  @default false
  *  @desc 动作动画将循环，直到事件（角色）移动
- * 
+ *
  *  @arg isWait
  *  @text 等待结束？
  *  @type boolean
  *  @default true
  *  @desc 下一个事件命令将等待动作动画结束
- * 
+ *
  * @command PlayIndependentAnimationAction
  * @text 独立动画动作
  * @desc 独立的角色动画动作（带或不带AnimaX）
- * 
+ *
  * @arg animationSetName
  * @text 配置文件
  * @desc Animation List中的配置文件ID（名称）（插件参数）
  * @type text
  * @default
- * 
+ *
  * @arg actionName
  * @text 动作名称
  * @desc Actions List中的动作名称（插件参数）或为空以取消所有
  * @type text
  * @default
- * 
+ *
  * @arg eventId
  * @text 事件编号
  * @desc 数字 - 事件编号。0 - 玩家，-1 - 当前事件, -2,-3,-4 - 跟随者
  * @type number
  * @min -4
  * @default -1
- * 
+ *
  * @arg isLoop
  *  @text 循环？
  *  @type boolean
  *  @default false
  *  @desc 动作动画将循环，直到事件（角色）移动
- * 
+ *
  *  @arg isWait
  *  @text 等待结束？
  *  @type boolean
  *  @default true
  *  @desc 下一个事件命令将等待动作动画结束
- * 
+ *
  * @command StopAnimationAction
  * @text 停止动作
  * @desc 停止任何循环的动画动作
- * 
+ *
  * @arg eventId
  * @text 事件编号
  * @desc 数字 - 事件编号。0 - 玩家，-1 - 当前事件, -2,-3,-4 - 跟随者
  * @type number
  * @min -4
  * @default -1
- * 
+ *
  * @command AddPart
  * @text 添加层
  * @desc
- * 
+ *
  * @arg eventId
  * @text 事件编号
  * @desc 数字 - 事件编号。0 - 玩家，-1 - 当前事件, -2,-3,-4 - 跟随者
  * @type number
  * @min -4
  * @default -1
- * 
+ *
  * @arg layerName
  * @text 层名称
  * @desc Animation Layers List中的层名称（插件参数）
  * @type text
  * @default
- * 
+ *
  * @arg isRelative
  * @text 相对？
  * @type boolean
  * @desc 如果关闭 - 层将来自Common Layers文件夹，如果打开 - 来自配置文件文件夹
  * @default false
- * 
+ *
  * @command RemovePart
  * @text 删除层
  * @desc
- * 
+ *
  * @arg eventId
  * @text 事件编号
  * @desc 数字 - 事件编号。0 - 玩家，-1 - 当前事件, -2,-3,-4 - 跟随者
  * @type number
  * @min -4
  * @default -1
- * 
+ *
  * @arg layerName
  * @text 层名称
  * @desc
  * @type text
  * @default
- * 
+ *
  * @command ClearParts
  * @text 删除所有层
  * @desc
- * 
+ *
  * @arg eventId
  * @text 事件编号
  * @desc 数字 - 事件编号。0 - 玩家，-1 - 当前事件, -2,-3,-4 - 跟随者
  * @type number
  * @min -4
  * @default -1
- * 
+ *
  * @command SetAnimaXState
  * @text AnimaX状态 (游戏)
  * @desc 更改AnimaX状态
- * 
+ *
  * @arg isEnabled
  * @text 启用？
  * @type boolean
  * @default false
  * @desc
- * 
+ *
  * @command AnimaXPartyState
  * @text AnimaX状态
  * @desc 更改AnimaX状态  (启用/禁用)
- * 
+ *
  * @arg partyMemberIndex
  * @text 成员编号
  * @desc 0 - 玩家, 1, 2, 3 - 跟随者
@@ -883,13 +883,13 @@
  * @min 0
  * @max 3
  * @default 0
- * 
+ *
  * @arg isEnabled
  * @text 启用？
  * @type boolean
  * @default false
  * @desc
- * 
+ *
  * @command EMPTY_HOLDER
  * @text ‏
  * @desc
@@ -1111,7 +1111,6 @@
  * @desc [可选] 层的动作动画设置
 */
 
-
 /*~struct~LAnimaXPartActionRule:
 
  * @param actionName
@@ -1262,7 +1261,6 @@
  * @desc 动画层将作为一个文件（精灵表）
 
 */
-
 
 /*~struct~LAnimaXPartDirLevel:
 
@@ -1517,13 +1515,13 @@
  * @text ID
  * @default
  * @desc Unique ID for animation (also folder Name)
- * 
+ *
  * @param base:s
  * @text Base
  * @type struct<LAnimaXSet>
  * @default
  * @desc Base animation set (for movement)
- * 
+ *
  * @param ABSZe
  * @text AABS Z
  * @default Only for Alpha ABS Z
@@ -1534,7 +1532,7 @@
  * @type struct<LAnimaXSet>
  * @default
  * @desc Battle state animation set
- * 
+ *
  * @param dead:s
  * @parent ABSZe
  * @text Dead
@@ -1547,20 +1545,20 @@
  * @type struct<LAnimaXAction>[]
  * @default []
  * @desc Actions List
-*/
+ */
 
 /*~struct~LAnimaX:ru
  * @param id
  * @text ID
  * @default
  * @desc Уникальный идентификатор для анимации (также имя папки)
- * 
+ *
  * @param base:s
  * @text Основное
  * @type struct<LAnimaXSet>
  * @default
  * @desc Основной набор анимаций (для движения)
- * 
+ *
  * @param ABSZe
  * @text AABS Z
  * @default Only for Alpha ABS Z
@@ -1571,7 +1569,7 @@
  * @type struct<LAnimaXSet>
  * @default
  * @desc Набор анимаций для состояния боя
- * 
+ *
  * @param dead:s
  * @parent ABSZe
  * @text Мертвый
@@ -1584,20 +1582,20 @@
  * @type struct<LAnimaXAction>[]
  * @default []
  * @desc Список действий
-*/
+ */
 
 /*~struct~LAnimaX:zh-cn
  * @param id
  * @text ID
  * @default
  * @desc 动画的唯一标识符（也是文件夹名称）
- * 
+ *
  * @param base:s
  * @text 基础
  * @type struct<LAnimaXSet>
  * @default
  * @desc 基础动画集（用于移动）
- * 
+ *
  * @param ABSZe
  * @text AABS Z
  * @default 仅用于 Alpha ABS Z
@@ -1608,7 +1606,7 @@
  * @type struct<LAnimaXSet>
  * @default
  * @desc 战斗状态的动画集
- * 
+ *
  * @param dead:s
  * @parent ABSZe
  * @text 死亡
@@ -1621,8 +1619,7 @@
  * @type struct<LAnimaXAction>[]
  * @default []
  * @desc 动作列表
-*/
-
+ */
 
 /*~struct~LAnimaXSet:
  * @param move:s
@@ -1630,7 +1627,7 @@
  * @type struct<LAnimaXParameters>
  * @default
  * @desc Movement animation settings
- * 
+ *
  * @param idle:s
  * @text Idle
  * @type struct<LAnimaXParameters>
@@ -1642,14 +1639,14 @@
  * @type struct<LAnimaXParameters>
  * @default
  * @desc [PRO] Dashing animation settings [Optional]
- * 
+ *
  * @param moveToIdleDelay:i
  * @text Idle Delay
  * @type number
  * @default 30
  * @min 0
  * @desc Speed of change from movement to idle when character is not moving
-*/
+ */
 
 /*~struct~LAnimaXSet:ru
  * @param move:s
@@ -1657,7 +1654,7 @@
  * @type struct<LAnimaXParameters>
  * @default
  * @desc Настройки анимации движения
- * 
+ *
  * @param idle:s
  * @text Бездействие
  * @type struct<LAnimaXParameters>
@@ -1669,14 +1666,14 @@
  * @type struct<LAnimaXParameters>
  * @default
  * @desc [PRO] Настройки анимации бега [Необязательно]
- * 
+ *
  * @param moveToIdleDelay:i
  * @text Задержка бездействия
  * @type number
  * @default 30
  * @min 0
  * @desc Скорость перехода от движения к бездействию, когда персонаж не двигается
-*/
+ */
 
 /*~struct~LAnimaXSet:zh-cn
  * @param move:s
@@ -1684,7 +1681,7 @@
  * @type struct<LAnimaXParameters>
  * @default
  * @desc 移动动画设置
- * 
+ *
  * @param idle:s
  * @text 空闲
  * @type struct<LAnimaXParameters>
@@ -1696,21 +1693,21 @@
  * @type struct<LAnimaXParameters>
  * @default
  * @desc [PRO] 冲刺动画设置 [可选]
- * 
+ *
  * @param moveToIdleDelay:i
  * @text 空闲延迟
  * @type number
  * @default 30
  * @min 0
  * @desc 当角色不移动时，从移动到空闲的变化速度
-*/
+ */
 
 /*~struct~LAnimaXAction:
  * @param name
  * @text Action Name
  * @default Action
  * @desc Name for aciton
- * 
+ *
  * @param animation:s
  * @text Settings
  * @type struct<LAnimaXParameters>
@@ -1767,14 +1764,14 @@
  * @desc [Optional] Script call at the end of the action
  *
  *
-*/
+ */
 
 /*~struct~LAnimaXAction:ru
  * @param name
  * @text Название действия
  * @default Действие
  * @desc Название действия
- * 
+ *
  * @param animation:s
  * @text Настройки
  * @type struct<LAnimaXParameters>
@@ -1830,14 +1827,14 @@
  * @default
  * @desc [Необязательно] Вызов скрипта в конце действия
  *
-*/
+ */
 
 /*~struct~LAnimaXAction:zh-cn
  * @param name
  * @text 动作名称
  * @default 动作
  * @desc 动作名称
- * 
+ *
  * @param animation:s
  * @text 设置
  * @type struct<LAnimaXParameters>
@@ -1893,7 +1890,7 @@
  * @default
  * @desc [可选] 动作结束时的脚本调用
  *
-*/
+ */
 
 /*~struct~LAnimaXParameters:
  * @param isOneDirection:b
@@ -1901,21 +1898,21 @@
  * @type boolean
  * @default false
  * @desc Animation will use only one direciton (without _D, _L, _R, _U frames)
- * 
+ *
  * @param frames:i
  * @text Frames Count
  * @type number
  * @default 3
  * @min 1
  * @desc Frames count
- * 
+ *
  * @param speed:i
  * @text Speed
  * @type number
  * @default 15
  * @min 1
  * @desc Frames change speed in frames
- * 
+ *
  * @param expandFirstFrame:i
  * @text Repeat first frame times
  * @type number
@@ -1923,13 +1920,13 @@
  * @min 0
  * @max 100
  * @desc Times to repeat first frame (make only first frame dalayed)
- * 
+ *
  * @param is8Way:b
  * @text Is Support Diagonal?
  * @type boolean
  * @default false
  * @desc Animation will support 8 way diagonal movement, require _DL, _DR, _UL, _UR frames images
- * 
+ *
  * @param dx:int
  * @text Offset X
  * @type number
@@ -1937,7 +1934,7 @@
  * @max 100
  * @default 0
  * @desc Animation offset by X coordinate
- * 
+ *
  * @param dy:int
  * @text Offset Y
  * @min -100
@@ -1954,11 +1951,11 @@
  *
  * @param isSepareteSpritesheet:bool
  * @parent isSpritesheet:bool
-    * @text Is Separate Spritesheet?
-    * @type boolean
-    * @default false
-    * @desc Animations will be on separate files (spritesheet) for 4 and 8 directions
-*/
+ * @text Is Separate Spritesheet?
+ * @type boolean
+ * @default false
+ * @desc Animations will be on separate files (spritesheet) for 4 and 8 directions
+ */
 
 /*~struct~LAnimaXParameters:ru
  * @param isOneDirection:b
@@ -1966,21 +1963,21 @@
  * @type boolean
  * @default false
  * @desc Анимация будет использовать только одно направление (без кадров _D, _L, _R, _U)
- * 
+ *
  * @param frames:i
  * @text Количество кадров
  * @type number
  * @default 3
  * @min 1
  * @desc Количество кадров
- * 
+ *
  * @param speed:i
  * @text Скорость
  * @type number
  * @default 15
  * @min 1
  * @desc Скорость смены кадров в кадрах
- * 
+ *
  * @param expandFirstFrame:i
  * @text Повторить первый кадр раз
  * @type number
@@ -1988,13 +1985,13 @@
  * @min 0
  * @max 100
  * @desc Количество повторений первого кадра (сделать только первый кадр задержанным)
- * 
+ *
  * @param is8Way:b
  * @text Поддержка диагонали?
  * @type boolean
  * @default false
  * @desc Анимация будет поддерживать 8-ми направленное диагональное движение, требует изображения кадров _DL, _DR, _UL, _UR
- * 
+ *
  * @param dx:int
  * @text Смещение по X
  * @type number
@@ -2002,7 +1999,7 @@
  * @max 100
  * @default 0
  * @desc Смещение анимации по координате X
- * 
+ *
  * @param dy:int
  * @text Смещение по Y
  * @min -100
@@ -2016,14 +2013,14 @@
  * @type boolean
  * @default false
  * @desc Анимации будут на одном файле (спрайт-лист)
-    *
-    * @param isSepareteSpritesheet:bool
-    * @parent isSpritesheet:bool
-    * @text Использовать отдельные спрайт-листы?
-    * @type boolean
-    * @default false
-    * @desc Анимации будут на отдельных файлах (спрайт-лист) для 4 и 8 направлений
-*/
+ *
+ * @param isSepareteSpritesheet:bool
+ * @parent isSpritesheet:bool
+ * @text Использовать отдельные спрайт-листы?
+ * @type boolean
+ * @default false
+ * @desc Анимации будут на отдельных файлах (спрайт-лист) для 4 и 8 направлений
+ */
 
 /*~struct~LAnimaXParameters:zh-cn
  * @param isOneDirection:b
@@ -2031,21 +2028,21 @@
  * @type boolean
  * @default false
  * @desc 动画将只使用一个方向（没有 _D, _L, _R, _U 帧）
- * 
+ *
  * @param frames:i
  * @text 帧数
  * @type number
  * @default 3
  * @min 1
  * @desc 帧数
- * 
+ *
  * @param speed:i
  * @text 速度
  * @type number
  * @default 15
  * @min 1
  * @desc 帧的变化速度
- * 
+ *
  * @param expandFirstFrame:i
  * @text 重复第一帧次数
  * @type number
@@ -2053,13 +2050,13 @@
  * @min 0
  * @max 100
  * @desc 重复第一帧的次数（只延迟第一帧）
- * 
+ *
  * @param is8Way:b
  * @text 是否支持对角线？
  * @type boolean
  * @default false
  * @desc 动画将支持 8 方向对角线移动，需要 _DL, _DR, _UL, _UR 帧图像
- * 
+ *
  * @param dx:int
  * @text X 偏移
  * @type number
@@ -2067,7 +2064,7 @@
  * @max 100
  * @default 0
  * @desc 动画的 X 坐标偏移
- * 
+ *
  * @param dy:int
  * @text Y 偏移
  * @min -100
@@ -2081,16 +2078,14 @@
  * @type boolean
  * @default false
  * @desc 动画将在单个文件（精灵表）上
-    *
-    * @param isSepareteSpritesheet:bool
-    * @parent isSpritesheet:bool
-    * @text 是单独的精灵表？
-    * @type boolean
-    * @default false
-    * @desc 动画将在单独的文件（精灵表）上，用于 4 和 8 个方向
-*/
-
-
+ *
+ * @param isSepareteSpritesheet:bool
+ * @parent isSpritesheet:bool
+ * @text 是单独的精灵表？
+ * @type boolean
+ * @default false
+ * @desc 动画将在单独的文件（精灵表）上，用于 4 和 8 个方向
+ */
 
 var Imported = Imported || {};
 Imported.PKD_AnimaX = true;
@@ -2099,7 +2094,7 @@ var PKD_ANIMAX = {};
 PKD_ANIMAX.version = 150;
 
 PKD_ANIMAX.isMV = () => {
-  return Utils.RPGMAKER_NAME.includes("MV");
+  return Utils.RPGMAKER_NAME.includes('MV');
 };
 
 // * Загрузка доп. методо поддержки плагинов
@@ -2108,15 +2103,13 @@ PKD_ANIMAX.ApplyExtensions = () => {
     PKD_ANIMAX.ApplyNETZPatch();
   }
 
-  if(window['mz3d'] != null) {
+  if (window['mz3d'] != null) {
     PKD_ANIMAX.ApplyMZ3DPatch();
   }
-
 };
 
 // * Алтернативный способ предзагрузки (все изображения)
 PKD_ANIMAX.PreloadAllImages = () => {
-
   if (!PKD_ANIMAX.IsUseAltPreload()) {
     return;
   }
@@ -2129,10 +2122,8 @@ PKD_ANIMAX.PreloadAllImages = () => {
 };
 
 PKD_ANIMAX.WalkIn = () => {
-
   const fs = require('fs');
   const path = require('path');
-
 
   let base = path.dirname(process.mainModule.filename);
   base = path.join(base, 'img/charactersAA/');
@@ -2166,492 +2157,480 @@ PKD_ANIMAX.WalkIn = () => {
   walk(base, ImageManager.loadAllAnimaX);
 };
 
-
 PKD_ANIMAX.RegisterPluginCommnads4MV = () => {
-
-    //@[ALIAS]
-    var _Game_Interpreter_pluginCommand_3434 = Game_Interpreter.prototype.pluginCommand;
-    Game_Interpreter.prototype.pluginCommand = function (command, args) {
-        _Game_Interpreter_pluginCommand_3434.call(this, command, args);
-        if (command === 'ChangePlayerAnimationSet') {
-            try {
-                let animSetId = args[0];
-                if(PKD_ANIMAX.KString.any(animSetId)) {
-                    PKD_ANIMAX.PluginCommand_ChangeCharaAnimationSet(0, animSetId);
-                }
-            } catch (e) {
-                console.warn(e);
-            }
-        } else if (command === 'ResetPlayerAnimationSet') {
-            try {
-                PKD_ANIMAX.PluginCommand_ChangeCharaAnimationSet(0, null);
-            } catch (e) {
-                console.warn(e);
-            }
-        } else if (command === 'ChangeEventAnimationSet') {
-            try {
-                let charaId = parseInt(args[0]);
-                let animSetId = args[1];
-                if(PKD_ANIMAX.KString.any(animSetId)) {
-                    PKD_ANIMAX.PluginCommand_ChangeCharaAnimationSet(charaId, animSetId);
-                }
-            } catch (e) {
-                console.warn(e);
-            }
-        } else if (command === 'ResetEventAnimationSet') {
-            try {
-                let charaId = parseInt(args[0]);
-                PKD_ANIMAX.PluginCommand_ChangeCharaAnimationSet(charaId, null);
-            } catch (e) {
-                console.warn(e);
-            }
-        } else if (command === 'ChangeFollowerAnimationSet') {
-            try {
-                let charaId = (parseInt(args[0]) + 2) * -1;
-                let animSetId = args[1];
-                if(PKD_ANIMAX.KString.any(animSetId)) {
-                    PKD_ANIMAX.PluginCommand_ChangeCharaAnimationSet(charaId, animSetId);
-                }
-            } catch (e) {
-                console.warn(e);
-            }
-        } else if (command === 'ResetFollowerAnimationSet') {
-            try {
-                let charaId = (parseInt(args[0]) + 2) * -1;
-                PKD_ANIMAX.PluginCommand_ChangeCharaAnimationSet(charaId, null);
-            } catch (e) {
-                console.warn(e);
-            }
-        } else if (command === 'PlayAnimationAction') {
-            try {
-                let actionName = args[0];
-                let charaId = parseInt(args[1]);
-                let isLoop = eval(args[2]);
-                let isWait = eval(args[3]);
-                PKD_ANIMAX.PluginCommand_PlayAnimationAction(actionName, charaId, isLoop, isWait);
-            } catch (e) {
-                console.warn(e);
-            }
-        } else if (command === 'PlayIndependentAction') {
-            try {
-                let animSetId = args[0];
-                let actionName = args[1];
-                let charaId = parseInt(args[2]);
-                let isLoop = eval(args[3]);
-                let isWait = eval(args[4]);
-                PKD_ANIMAX.PluginCommand_PlayIndependentAction(animSetId, actionName, charaId, isLoop, isWait);
-            } catch (e) {
-                console.warn(e);
-            }
-        } else if (command === 'StopAnimationAction') {
-            try {
-                let charaId = parseInt(args[0]);
-                PKD_ANIMAX.PluginCommand_StopAnimationAction(charaId);
-            } catch (e) {
-                console.warn(e);
-            }
-        } else if (command === 'AddAnimaLayer') {
-            try {
-                let charaId = parseInt(args[0]);
-                let layerName = args[1];
-                let isRelative = eval(args[2]);
-                PKD_ANIMAX.PluginCommand_AddPart(charaId, layerName, isRelative);
-            } catch (e) {
-                console.warn(e);
-            }
-        } else if (command === 'RemoveAnimaLayer') {
-            try {
-                let charaId = parseInt(args[0]);
-                let layerName = args[1];
-                PKD_ANIMAX.PluginCommand_RemovePart(charaId, layerName);
-            } catch (e) {
-                console.warn(e);
-            }
-        } else if (command === 'ClearAnimaLayers') {
-            try {
-                let charaId = parseInt(args[0]);
-                PKD_ANIMAX.PluginCommand_ClearParts(charaId);
-            } catch (e) {
-                console.warn(e);
-            }
-        } else if (command === 'SetAnimaXStateForParty') {
-            try {
-                let memberIndex = parseInt(args[0]);
-                let state = eval(args[1]);
-                PKD_ANIMAX.SetAnimaXStateForPartyMember(memberIndex, state);
-            } catch (e) {
-                console.warn(e);
-            }
-        } else if (command === 'EnableAnimaX') {
-            try {
-                PKD_ANIMAX.EnableAnimaX();
-            } catch (e) {
-                console.warn(e);
-            }
-        } else if (command === 'DisableAnimaX') {
-            try {
-                PKD_ANIMAX.DisableAnimaX();
-            } catch (e) {
-                console.warn(e);
-            }
+  //@[ALIAS]
+  var _Game_Interpreter_pluginCommand_3434 = Game_Interpreter.prototype.pluginCommand;
+  Game_Interpreter.prototype.pluginCommand = function (command, args) {
+    _Game_Interpreter_pluginCommand_3434.call(this, command, args);
+    if (command === 'ChangePlayerAnimationSet') {
+      try {
+        let animSetId = args[0];
+        if (PKD_ANIMAX.KString.any(animSetId)) {
+          PKD_ANIMAX.PluginCommand_ChangeCharaAnimationSet(0, animSetId);
         }
-    };
-
-
+      } catch (e) {
+        console.warn(e);
+      }
+    } else if (command === 'ResetPlayerAnimationSet') {
+      try {
+        PKD_ANIMAX.PluginCommand_ChangeCharaAnimationSet(0, null);
+      } catch (e) {
+        console.warn(e);
+      }
+    } else if (command === 'ChangeEventAnimationSet') {
+      try {
+        let charaId = parseInt(args[0]);
+        let animSetId = args[1];
+        if (PKD_ANIMAX.KString.any(animSetId)) {
+          PKD_ANIMAX.PluginCommand_ChangeCharaAnimationSet(charaId, animSetId);
+        }
+      } catch (e) {
+        console.warn(e);
+      }
+    } else if (command === 'ResetEventAnimationSet') {
+      try {
+        let charaId = parseInt(args[0]);
+        PKD_ANIMAX.PluginCommand_ChangeCharaAnimationSet(charaId, null);
+      } catch (e) {
+        console.warn(e);
+      }
+    } else if (command === 'ChangeFollowerAnimationSet') {
+      try {
+        let charaId = (parseInt(args[0]) + 2) * -1;
+        let animSetId = args[1];
+        if (PKD_ANIMAX.KString.any(animSetId)) {
+          PKD_ANIMAX.PluginCommand_ChangeCharaAnimationSet(charaId, animSetId);
+        }
+      } catch (e) {
+        console.warn(e);
+      }
+    } else if (command === 'ResetFollowerAnimationSet') {
+      try {
+        let charaId = (parseInt(args[0]) + 2) * -1;
+        PKD_ANIMAX.PluginCommand_ChangeCharaAnimationSet(charaId, null);
+      } catch (e) {
+        console.warn(e);
+      }
+    } else if (command === 'PlayAnimationAction') {
+      try {
+        let actionName = args[0];
+        let charaId = parseInt(args[1]);
+        let isLoop = eval(args[2]);
+        let isWait = eval(args[3]);
+        PKD_ANIMAX.PluginCommand_PlayAnimationAction(actionName, charaId, isLoop, isWait);
+      } catch (e) {
+        console.warn(e);
+      }
+    } else if (command === 'PlayIndependentAction') {
+      try {
+        let animSetId = args[0];
+        let actionName = args[1];
+        let charaId = parseInt(args[2]);
+        let isLoop = eval(args[3]);
+        let isWait = eval(args[4]);
+        PKD_ANIMAX.PluginCommand_PlayIndependentAction(animSetId, actionName, charaId, isLoop, isWait);
+      } catch (e) {
+        console.warn(e);
+      }
+    } else if (command === 'StopAnimationAction') {
+      try {
+        let charaId = parseInt(args[0]);
+        PKD_ANIMAX.PluginCommand_StopAnimationAction(charaId);
+      } catch (e) {
+        console.warn(e);
+      }
+    } else if (command === 'AddAnimaLayer') {
+      try {
+        let charaId = parseInt(args[0]);
+        let layerName = args[1];
+        let isRelative = eval(args[2]);
+        PKD_ANIMAX.PluginCommand_AddPart(charaId, layerName, isRelative);
+      } catch (e) {
+        console.warn(e);
+      }
+    } else if (command === 'RemoveAnimaLayer') {
+      try {
+        let charaId = parseInt(args[0]);
+        let layerName = args[1];
+        PKD_ANIMAX.PluginCommand_RemovePart(charaId, layerName);
+      } catch (e) {
+        console.warn(e);
+      }
+    } else if (command === 'ClearAnimaLayers') {
+      try {
+        let charaId = parseInt(args[0]);
+        PKD_ANIMAX.PluginCommand_ClearParts(charaId);
+      } catch (e) {
+        console.warn(e);
+      }
+    } else if (command === 'SetAnimaXStateForParty') {
+      try {
+        let memberIndex = parseInt(args[0]);
+        let state = eval(args[1]);
+        PKD_ANIMAX.SetAnimaXStateForPartyMember(memberIndex, state);
+      } catch (e) {
+        console.warn(e);
+      }
+    } else if (command === 'EnableAnimaX') {
+      try {
+        PKD_ANIMAX.EnableAnimaX();
+      } catch (e) {
+        console.warn(e);
+      }
+    } else if (command === 'DisableAnimaX') {
+      try {
+        PKD_ANIMAX.DisableAnimaX();
+      } catch (e) {
+        console.warn(e);
+      }
+    }
+  };
 };
 
 PKD_ANIMAX.RegisterPluginCommnads4MZ = () => {
+  const pluginName = 'PKD_AnimaX';
 
-    const pluginName = "PKD_AnimaX";
-
-    PKD_ANIMAX.RegisterPluginCommnadsForName(pluginName);
-    PKD_ANIMAX.RegisterPluginCommnadsForName(pluginName + "_MZ");
-
+  PKD_ANIMAX.RegisterPluginCommnadsForName(pluginName);
+  PKD_ANIMAX.RegisterPluginCommnadsForName(pluginName + '_MZ');
 };
 
-PKD_ANIMAX.RegisterPluginCommnadsForName = (pluginName) => {
+PKD_ANIMAX.RegisterPluginCommnadsForName = pluginName => {
+  PluginManager.registerCommand(pluginName, 'ChangePlayerAnimationSet', args => {
+    try {
+      let animationSetName = args.animationSetName;
+      if (PKD_ANIMAX.KString.any(animationSetName)) {
+        PKD_ANIMAX.PluginCommand_ChangeCharaAnimationSet(0, animationSetName);
+      }
+    } catch (e) {
+      console.warn(e);
+    }
+  });
 
-    PluginManager.registerCommand(pluginName, 'ChangePlayerAnimationSet', args => {
-        try {
-            let animationSetName = args.animationSetName;
-            if(PKD_ANIMAX.KString.any(animationSetName)) {
-                PKD_ANIMAX.PluginCommand_ChangeCharaAnimationSet(0, animationSetName);
-            }
-        } catch (e) {
-            console.warn(e);
-        }
-    });
+  PluginManager.registerCommand(pluginName, 'ResetPlayerAnimationSet', args => {
+    try {
+      PKD_ANIMAX.PluginCommand_ChangeCharaAnimationSet(0, null);
+    } catch (e) {
+      console.warn(e);
+    }
+  });
 
-    PluginManager.registerCommand(pluginName, 'ResetPlayerAnimationSet', args => {
-        try {
-            PKD_ANIMAX.PluginCommand_ChangeCharaAnimationSet(0, null);
-        } catch (e) {
-            console.warn(e);
-        }
-    });
+  PluginManager.registerCommand(pluginName, 'ChangeEventAnimationSet', args => {
+    try {
+      let animationSetName = args.animationSetName;
+      let charaId = parseInt(args.eventId);
+      if (PKD_ANIMAX.KString.any(animationSetName)) {
+        PKD_ANIMAX.PluginCommand_ChangeCharaAnimationSet(charaId, animationSetName);
+      }
+    } catch (e) {
+      console.warn(e);
+    }
+  });
 
-    PluginManager.registerCommand(pluginName, 'ChangeEventAnimationSet', args => {
-        try {
-            let animationSetName = args.animationSetName;
-            let charaId = parseInt(args.eventId);
-            if(PKD_ANIMAX.KString.any(animationSetName)) {
-                PKD_ANIMAX.PluginCommand_ChangeCharaAnimationSet(charaId, animationSetName);
-            }
-        } catch (e) {
-            console.warn(e);
-        }
-    });
+  PluginManager.registerCommand(pluginName, 'ResetEventAnimationSet', args => {
+    try {
+      let charaId = parseInt(args.eventId);
+      PKD_ANIMAX.PluginCommand_ChangeCharaAnimationSet(charaId, null);
+    } catch (e) {
+      console.warn(e);
+    }
+  });
 
-    PluginManager.registerCommand(pluginName, 'ResetEventAnimationSet', args => {
-        try {
-            let charaId = parseInt(args.eventId);
-            PKD_ANIMAX.PluginCommand_ChangeCharaAnimationSet(charaId, null);
-        } catch (e) {
-            console.warn(e);
-        }
-    });
+  PluginManager.registerCommand(pluginName, 'ChangeFollowerAnimationSet', args => {
+    try {
+      let animationSetName = args.animationSetName;
+      // 0 should be -2
+      // 1 should be -3
+      // 2 should be -4
+      let charaId = (parseInt(args.partyMemberIndex) + 2) * -1;
+      if (PKD_ANIMAX.KString.any(animationSetName)) {
+        PKD_ANIMAX.PluginCommand_ChangeCharaAnimationSet(charaId, animationSetName);
+      }
+    } catch (e) {
+      console.warn(e);
+    }
+  });
 
-    PluginManager.registerCommand(pluginName, 'ChangeFollowerAnimationSet', args => {
-        try {
-            let animationSetName = args.animationSetName;
-            // 0 should be -2
-            // 1 should be -3
-            // 2 should be -4
-            let charaId = (parseInt(args.partyMemberIndex) + 2) * -1;
-            if(PKD_ANIMAX.KString.any(animationSetName)) {
-                PKD_ANIMAX.PluginCommand_ChangeCharaAnimationSet(charaId, animationSetName);
-            }
-        } catch (e) {
-            console.warn(e);
-        }
-    });
+  PluginManager.registerCommand(pluginName, 'ResetFollowerAnimationSet', args => {
+    try {
+      let charaId = (parseInt(args.partyMemberIndex) + 2) * -1;
+      PKD_ANIMAX.PluginCommand_ChangeCharaAnimationSet(charaId, null);
+    } catch (e) {
+      console.warn(e);
+    }
+  });
 
-    PluginManager.registerCommand(pluginName, 'ResetFollowerAnimationSet', args => {
-        try {
-            let charaId = (parseInt(args.partyMemberIndex) + 2) * -1;
-            PKD_ANIMAX.PluginCommand_ChangeCharaAnimationSet(charaId, null);
-        } catch (e) {
-            console.warn(e);
-        }
-    });
+  PluginManager.registerCommand(pluginName, 'PlayAnimationAction', args => {
+    try {
+      let actionName = args.actionName;
+      let charaId = parseInt(args.eventId);
+      let isLoop = eval(args.isLoop);
+      let isWait = eval(args.isWait);
+      PKD_ANIMAX.PluginCommand_PlayAnimationAction(actionName, charaId, isLoop, isWait);
+    } catch (e) {
+      console.warn(e);
+    }
+  });
 
-    PluginManager.registerCommand(pluginName, 'PlayAnimationAction', args => {
-        try {
-            let actionName = args.actionName;
-            let charaId = parseInt(args.eventId);
-            let isLoop = eval(args.isLoop);
-            let isWait = eval(args.isWait);
-            PKD_ANIMAX.PluginCommand_PlayAnimationAction(actionName, charaId, isLoop, isWait);
-        } catch (e) {
-            console.warn(e);
-        }
-    });
+  PluginManager.registerCommand(pluginName, 'PlayIndependentAnimationAction', args => {
+    try {
+      let animationSetName = args.animationSetName;
+      let actionName = args.actionName;
+      let charaId = parseInt(args.eventId);
+      let isLoop = eval(args.isLoop);
+      let isWait = eval(args.isWait);
+      PKD_ANIMAX.PluginCommand_PlayIndependentAction(animationSetName, actionName, charaId, isLoop, isWait);
+    } catch (e) {
+      console.warn(e);
+    }
+  });
 
-    PluginManager.registerCommand(pluginName, 'PlayIndependentAnimationAction', args => {
-        try {
-            let animationSetName = args.animationSetName;
-            let actionName = args.actionName;
-            let charaId = parseInt(args.eventId);
-            let isLoop = eval(args.isLoop);
-            let isWait = eval(args.isWait);
-            PKD_ANIMAX.PluginCommand_PlayIndependentAction(animationSetName, actionName, charaId, isLoop, isWait);
-        } catch (e) {
-            console.warn(e);
-        }
-    });
+  PluginManager.registerCommand(pluginName, 'StopAnimationAction', args => {
+    try {
+      let charaId = parseInt(args.eventId);
+      PKD_ANIMAX.PluginCommand_StopAnimationAction(charaId);
+    } catch (e) {
+      console.warn(e);
+    }
+  });
 
-    PluginManager.registerCommand(pluginName, 'StopAnimationAction', args => {
-        try {
-            let charaId = parseInt(args.eventId);
-            PKD_ANIMAX.PluginCommand_StopAnimationAction(charaId);
-        } catch (e) {
-            console.warn(e);
-        }
-    });
+  PluginManager.registerCommand(pluginName, 'AddPart', args => {
+    try {
+      let charaId = parseInt(args.eventId);
+      let partId = args.layerName;
+      let isRelative = eval(args.isRelative);
+      PKD_ANIMAX.PluginCommand_AddPart(charaId, partId, isRelative);
+    } catch (e) {
+      console.warn(e);
+    }
+  });
 
-    PluginManager.registerCommand(pluginName, 'AddPart', args => {
-        try {
-            let charaId = parseInt(args.eventId);
-            let partId = args.layerName;
-            let isRelative = eval(args.isRelative);
-            PKD_ANIMAX.PluginCommand_AddPart(charaId, partId, isRelative);
-        } catch (e) {
-            console.warn(e);
-        }
-    });
+  PluginManager.registerCommand(pluginName, 'RemovePart', args => {
+    try {
+      let charaId = parseInt(args.eventId);
+      let partId = args.layerName;
+      PKD_ANIMAX.PluginCommand_RemovePart(charaId, partId);
+    } catch (e) {
+      console.warn(e);
+    }
+  });
 
-    PluginManager.registerCommand(pluginName, 'RemovePart', args => {
-        try {
-            let charaId = parseInt(args.eventId);
-            let partId = args.layerName;
-            PKD_ANIMAX.PluginCommand_RemovePart(charaId, partId);
-        } catch (e) {
-            console.warn(e);
-        }
-    });
+  PluginManager.registerCommand(pluginName, 'ClearParts', args => {
+    try {
+      let charaId = parseInt(args.eventId);
+      PKD_ANIMAX.PluginCommand_ClearParts(charaId);
+    } catch (e) {
+      console.warn(e);
+    }
+  });
 
-    PluginManager.registerCommand(pluginName, 'ClearParts', args => {
-        try {
-            let charaId = parseInt(args.eventId);
-            PKD_ANIMAX.PluginCommand_ClearParts(charaId);
-        } catch (e) {
-            console.warn(e);
-        }
-    });
+  PluginManager.registerCommand(pluginName, 'AnimaXPartyState', args => {
+    try {
+      let memberIndex = parseInt(args.partyMemberIndex);
+      let state = eval(args.isEnabled);
+      PKD_ANIMAX.SetAnimaXStateForPartyMember(memberIndex, state);
+    } catch (e) {
+      console.warn(e);
+    }
+  });
 
-    PluginManager.registerCommand(pluginName, 'AnimaXPartyState', args => {
-        try {
-            let memberIndex = parseInt(args.partyMemberIndex);
-            let state = eval(args.isEnabled);
-            PKD_ANIMAX.SetAnimaXStateForPartyMember(memberIndex, state);
-        } catch (e) {
-            console.warn(e);
-        }
-    });
-
-    PluginManager.registerCommand(pluginName, 'SetAnimaXState', args => {
-        try {
-            let state = eval(args.isEnabled);
-            if(state) {
-                PKD_ANIMAX.EnableAnimaX();
-            } else {
-                PKD_ANIMAX.DisableAnimaX();
-            }
-        } catch (e) {
-            console.warn(e);
-        }
-    });
-
-
+  PluginManager.registerCommand(pluginName, 'SetAnimaXState', args => {
+    try {
+      let state = eval(args.isEnabled);
+      if (state) {
+        PKD_ANIMAX.EnableAnimaX();
+      } else {
+        PKD_ANIMAX.DisableAnimaX();
+      }
+    } catch (e) {
+      console.warn(e);
+    }
+  });
 };
 
 (function () {
-
-Array.prototype.delete = function () {
+  Array.prototype.delete = function () {
     var L, a, ax, what;
     what = void 0;
     a = arguments;
     L = a.length;
     ax = void 0;
     while (L && this.length) {
-        what = a[--L];
-        while ((ax = this.indexOf(what)) !== -1) {
-            this.splice(ax, 1);
-        }
+      what = a[--L];
+      while ((ax = this.indexOf(what)) !== -1) {
+        this.splice(ax, 1);
+      }
     }
     return this;
-};
+  };
 
-Object.defineProperty(Array.prototype, "delete", {
-    enumerable: false
-});
-
+  Object.defineProperty(Array.prototype, 'delete', {
+    enumerable: false,
+  });
 })();
 
 (function () {
+  PKD_ANIMAX.PluginCommand_ChangeCharaAnimationSet = (charaId, animationSetName) => {
+    try {
+      let char = PKD_ANIMAX.GetProperCharacter(charaId, true);
+      if (char) {
+        char.setExternalAnimaX(animationSetName, false);
+      }
+      $gameTemp.netAnimaXLocal = null;
+    } catch (e) {
+      console.warn(e);
+    }
+  };
 
-    PKD_ANIMAX.PluginCommand_ChangeCharaAnimationSet = (charaId, animationSetName) => {
-        try {
-            let char = PKD_ANIMAX.GetProperCharacter(charaId, true);
-            if(char) {
-                char.setExternalAnimaX(animationSetName, false)
+  PKD_ANIMAX.PluginCommand_PlayAnimationAction = (actionName, charaId, isLoop, isWait) => {
+    try {
+      let char = PKD_ANIMAX.GetProperCharacter(charaId);
+      if (char) {
+        if (!PKD_ANIMAX.KString.any(actionName)) {
+          char.resetXAnima();
+          if (PKD_ANIMAX.IsNetworkGame() && !PKD_ANIMAX.InLocalMode()) {
+            PKD_ANIMAX.SendNetworkAnimaXAction(null, false, false);
+          }
+        } else {
+          if (char.startAnimaXCustomAction(actionName, isLoop, isWait)) {
+            if (isWait == true && isLoop == false) {
+              PKD_ANIMAX.SetInterpreterToWait(char);
             }
-            $gameTemp.netAnimaXLocal = null;
-        } catch (e) {
-            console.warn(e);
+          }
         }
-    };
+      }
+      $gameTemp.netAnimaXLocal = null;
+    } catch (e) {
+      console.warn(e);
+    }
+  };
 
-    PKD_ANIMAX.PluginCommand_PlayAnimationAction = (actionName, charaId, isLoop, isWait) => {
-        try {
-            let char = PKD_ANIMAX.GetProperCharacter(charaId);
-            if(char) {
-                if(!PKD_ANIMAX.KString.any(actionName)) {
-                    char.resetXAnima();
-                    if(PKD_ANIMAX.IsNetworkGame() && !PKD_ANIMAX.InLocalMode()) {
-                        PKD_ANIMAX.SendNetworkAnimaXAction(null, false, false);
-                    }
-                } else {
-                    if(char.startAnimaXCustomAction(actionName, isLoop, isWait)) {
-                        if(isWait == true && isLoop == false) {
-                            PKD_ANIMAX.SetInterpreterToWait(char);
-                        }
-                    }
-                }
-            }
-            $gameTemp.netAnimaXLocal = null;
-        } catch (e) {
-            console.warn(e);
+  PKD_ANIMAX.PluginCommand_StopAnimationAction = charaId => {
+    try {
+      let char = PKD_ANIMAX.GetProperCharacter(charaId);
+      if (char) {
+        char.resetXAnima();
+        if (PKD_ANIMAX.IsNetworkGame() && !PKD_ANIMAX.InLocalMode()) {
+          PKD_ANIMAX.SendNetworkAnimaXAction(null, false, false);
         }
-    };
+      }
+      $gameTemp.netAnimaXLocal = null;
+    } catch (e) {
+      console.warn(e);
+    }
+  };
 
-    PKD_ANIMAX.PluginCommand_StopAnimationAction = (charaId) => {
-        try {
-            let char = PKD_ANIMAX.GetProperCharacter(charaId);
-            if(char)
-            {
-                char.resetXAnima();
-                if(PKD_ANIMAX.IsNetworkGame() && !PKD_ANIMAX.InLocalMode()) {
-                    PKD_ANIMAX.SendNetworkAnimaXAction(null, false, false);
-                }
-            }
-            $gameTemp.netAnimaXLocal = null;
-        } catch (e) {
-            console.warn(e);
+  PKD_ANIMAX.PluginCommand_AddPart = (charaId, partId, isRelative) => {
+    try {
+      let char = PKD_ANIMAX.GetProperCharacter(charaId);
+      if (char) {
+        char.addNewXAnimPart(partId, isRelative);
+        if (PKD_ANIMAX.IsNetworkGame() && !PKD_ANIMAX.InLocalMode()) {
+          PKD_ANIMAX.SendNetworkChangePart(partId, isRelative, true);
         }
-    };
+      }
+      $gameTemp.netAnimaXLocal = null;
+    } catch (e) {
+      console.warn(e);
+    }
+  };
 
-    PKD_ANIMAX.PluginCommand_AddPart = (charaId, partId, isRelative) => {
-        try {
-            let char = PKD_ANIMAX.GetProperCharacter(charaId);
-            if(char) {
-                char.addNewXAnimPart(partId, isRelative);
-                if(PKD_ANIMAX.IsNetworkGame() && !PKD_ANIMAX.InLocalMode()) {
-                    PKD_ANIMAX.SendNetworkChangePart(partId, isRelative, true);
-                }
-            }
-            $gameTemp.netAnimaXLocal = null;
-        } catch (e) {
-            console.warn(e);
+  PKD_ANIMAX.PluginCommand_RemovePart = (charaId, partId) => {
+    try {
+      let char = PKD_ANIMAX.GetProperCharacter(charaId);
+      if (char) {
+        char.removeXAnimPart(partId);
+        if (PKD_ANIMAX.IsNetworkGame() && !PKD_ANIMAX.InLocalMode()) {
+          PKD_ANIMAX.SendNetworkChangePart(partId, false, false);
         }
-    };
+      }
+      $gameTemp.netAnimaXLocal = null;
+    } catch (e) {
+      console.warn(e);
+    }
+  };
 
-    PKD_ANIMAX.PluginCommand_RemovePart = (charaId, partId) => {
-        try {
-            let char = PKD_ANIMAX.GetProperCharacter(charaId);
-            if(char) {
-                char.removeXAnimPart(partId);
-                if(PKD_ANIMAX.IsNetworkGame() && !PKD_ANIMAX.InLocalMode()) {
-                    PKD_ANIMAX.SendNetworkChangePart(partId, false, false);
-                }
-            }
-            $gameTemp.netAnimaXLocal = null;
-        } catch (e) {
-            console.warn(e);
+  PKD_ANIMAX.PluginCommand_ClearParts = charaId => {
+    try {
+      let char = PKD_ANIMAX.GetProperCharacter(charaId);
+      if (char) {
+        char.clearXAnimParts();
+        if (PKD_ANIMAX.IsNetworkGame() && !PKD_ANIMAX.InLocalMode()) {
+          PKD_ANIMAX.SendNetworkClearAllParts();
         }
-    };
+      }
+      $gameTemp.netAnimaXLocal = null;
+    } catch (e) {
+      console.warn(e);
+    }
+  };
 
-    PKD_ANIMAX.PluginCommand_ClearParts = (charaId) => {
-        try {
-            let char = PKD_ANIMAX.GetProperCharacter(charaId);
-            if(char) {
-                char.clearXAnimParts();
-                if(PKD_ANIMAX.IsNetworkGame() && !PKD_ANIMAX.InLocalMode()) {
-                    PKD_ANIMAX.SendNetworkClearAllParts();
-                }
-            }
-            $gameTemp.netAnimaXLocal = null;
-        } catch (e) {
-            console.warn(e);
-        }
-    };
-
-    PKD_ANIMAX.GetProperCharacter = (charId, isForceGet = false) => {
-        var char = null;
-        if(PKD_ANIMAX.IsNetworkGame()) {
-            $gameTemp._lastAxNetworkChar = null;
-        }
-        try {
-            if (!charId || charId == 0) {
-                char = $gamePlayer;
-            } else if (charId == -1) {
-                let int = $gameMap._interpreter;
-                charId = int.eventId();
-                if (charId > 0) {
-                    char = $gameMap.event(charId);
-                } else {
-                    return null;
-                }
-            } else if (charId < -1) {
-                if(PKD_ANIMAX.IsNetworkGame()) {
-                    char = null;
-                } else {
-                    // * Party member
-                    var partyMemberIndex = Math.abs(charId) - 2;
-                    char = $gamePlayer.followers().follower(partyMemberIndex);
-                }
-            }
-            else {
-                char = $gameMap.event(charId);
-            }
-            if (!char) return null;
-            if(!isForceGet) // * If Force mode we can take Char without AnimaX
-                if (!char.isAnimX()) return null;
-            
-            if(PKD_ANIMAX.IsNetworkGame()) {
-                if(char == $gamePlayer) {
-                    $gameTemp._lastAxNetworkChar = 0;
-                } else { // * Иначе событие на карте
-                    $gameTemp._lastAxNetworkChar = char.eventId();
-                }
-            }
-            return char;
-        } catch (e) {
-            console.warn(e, "Can't find character with ID " + charId + " for PlayAnimationAction");
-        }
-    };
-
-    PKD_ANIMAX.SetInterpreterToWait = (char) => {
+  PKD_ANIMAX.GetProperCharacter = (charId, isForceGet = false) => {
+    var char = null;
+    if (PKD_ANIMAX.IsNetworkGame()) {
+      $gameTemp._lastAxNetworkChar = null;
+    }
+    try {
+      if (!charId || charId == 0) {
+        char = $gamePlayer;
+      } else if (charId == -1) {
         let int = $gameMap._interpreter;
-        int.xAnimaTarget = char;
-        int._waitMode = 'xAnima';
-    };
-
-    PKD_ANIMAX.PluginCommand_PlayIndependentAction = (profileId, actionName, charaId, isLoop, isWait) => {
-        try {
-            let char = PKD_ANIMAX.GetProperCharacter(charaId, true);
-            if(char) {
-                if(PKD_ANIMAX.KString.any(actionName)) {
-                    char.setExternalAnimaX(profileId, true)
-                    PKD_ANIMAX.PluginCommand_PlayAnimationAction(actionName, charaId, isLoop, isWait);
-                }
-            }
-            $gameTemp.netAnimaXLocal = null;
-        } catch (e) {
-            console.warn(e);
+        charId = int.eventId();
+        if (charId > 0) {
+          char = $gameMap.event(charId);
+        } else {
+          return null;
         }
-    };
+      } else if (charId < -1) {
+        if (PKD_ANIMAX.IsNetworkGame()) {
+          char = null;
+        } else {
+          // * Party member
+          var partyMemberIndex = Math.abs(charId) - 2;
+          char = $gamePlayer.followers().follower(partyMemberIndex);
+        }
+      } else {
+        char = $gameMap.event(charId);
+      }
+      if (!char) return null;
+      if (!isForceGet)
+        if (!char.isAnimX())
+          // * If Force mode we can take Char without AnimaX
+          return null;
 
+      if (PKD_ANIMAX.IsNetworkGame()) {
+        if (char == $gamePlayer) {
+          $gameTemp._lastAxNetworkChar = 0;
+        } else {
+          // * Иначе событие на карте
+          $gameTemp._lastAxNetworkChar = char.eventId();
+        }
+      }
+      return char;
+    } catch (e) {
+      console.warn(e, "Can't find character with ID " + charId + ' for PlayAnimationAction');
+    }
+  };
+
+  PKD_ANIMAX.SetInterpreterToWait = char => {
+    let int = $gameMap._interpreter;
+    int.xAnimaTarget = char;
+    int._waitMode = 'xAnima';
+  };
+
+  PKD_ANIMAX.PluginCommand_PlayIndependentAction = (profileId, actionName, charaId, isLoop, isWait) => {
+    try {
+      let char = PKD_ANIMAX.GetProperCharacter(charaId, true);
+      if (char) {
+        if (PKD_ANIMAX.KString.any(actionName)) {
+          char.setExternalAnimaX(profileId, true);
+          PKD_ANIMAX.PluginCommand_PlayAnimationAction(actionName, charaId, isLoop, isWait);
+        }
+      }
+      $gameTemp.netAnimaXLocal = null;
+    } catch (e) {
+      console.warn(e);
+    }
+  };
 })();
 
 /////////////////////////////////////////////////////////////////////////////
@@ -2659,115 +2638,113 @@ Object.defineProperty(Array.prototype, "delete", {
 // ■ Game_Player.js
 //╒═════════════════════════════════════════════════════════════════════════╛
 /////////////////////////////////////////////////////////////////////////////
-PKD_ANIMAX.ActivateDiagonalEventStart = (function(){
+PKD_ANIMAX.ActivateDiagonalEventStart = function () {
+  //@[ALIAS]
+  var _alias_Game_Player_triggerTouchAction = Game_Player.prototype.triggerTouchAction;
+  Game_Player.prototype.triggerTouchAction = function () {
+    if (this._diagonalDir) {
+      if (this.canStartLocalEvents()) {
+        this.checkEventTriggerThere([0, 1, 2]);
+        if ($gameMap.isEventRunning()) {
+          this._diagonalDir = 0;
+          return true;
+        }
+      }
+      return false;
+    } else return _alias_Game_Player_triggerTouchAction.call(this);
+  };
 
-    //@[ALIAS]
-    var _alias_Game_Player_triggerTouchAction = Game_Player.prototype.triggerTouchAction;
-    Game_Player.prototype.triggerTouchAction = function () {
-        if(this._diagonalDir) {
-            if(this.canStartLocalEvents()) {
-                this.checkEventTriggerThere([0, 1, 2]);
-                if($gameMap.isEventRunning()) {
-                    this._diagonalDir = 0;
-                    return true;
-                }
-            }
-            return false;
-        } else
-            return _alias_Game_Player_triggerTouchAction.call(this);
-    };
-
-    //@[ALIAS]
-    var _alias_Game_Player_checkEventTriggerThere = Game_Player.prototype.checkEventTriggerThere;
-    Game_Player.prototype.checkEventTriggerThere = function (triggers) {
-        if(this.canStartLocalEvents() && this._diagonalDir) {
-            var horz = ((this._diagonalDir === 1 || this._diagonalDir === 7) ? 4 : 6);
-            var vert = ((this._diagonalDir === 1 || this._diagonalDir === 3) ? 2 : 8);
-            var x2 = $gameMap.roundXWithDirection(this.x, horz);
-            var y2 = $gameMap.roundYWithDirection(this.y, vert);
-            this.startMapEvent(x2, y2, triggers, true);
-        } else
-            return _alias_Game_Player_checkEventTriggerThere.call(this, triggers);
-    };
-
-});
+  //@[ALIAS]
+  var _alias_Game_Player_checkEventTriggerThere = Game_Player.prototype.checkEventTriggerThere;
+  Game_Player.prototype.checkEventTriggerThere = function (triggers) {
+    if (this.canStartLocalEvents() && this._diagonalDir) {
+      var horz = this._diagonalDir === 1 || this._diagonalDir === 7 ? 4 : 6;
+      var vert = this._diagonalDir === 1 || this._diagonalDir === 3 ? 2 : 8;
+      var x2 = $gameMap.roundXWithDirection(this.x, horz);
+      var y2 = $gameMap.roundYWithDirection(this.y, vert);
+      this.startMapEvent(x2, y2, triggers, true);
+    } else return _alias_Game_Player_checkEventTriggerThere.call(this, triggers);
+  };
+};
 // ■ END Game_Player.js
 //---------------------------------------------------------------------------
 /////////////////////////////////////////////////////////////////////////////
 
-(function(){
-    ImageManager._axLoadWepbBitmapMV = function(folder, filename, hue, smooth) {
-        if (filename) {
-            var path = folder + encodeURIComponent(filename) + '.webp';
-            var bitmap = this.loadNormalBitmap(path, hue || 0);
-            bitmap.smooth = smooth;
-            return bitmap;
-        } else {
-            return this.loadEmptyBitmap();
-        }
-    };
+(function () {
+  ImageManager._axLoadWepbBitmapMV = function (folder, filename, hue, smooth) {
+    if (filename) {
+      var path = folder + encodeURIComponent(filename) + '.webp';
+      var bitmap = this.loadNormalBitmap(path, hue || 0);
+      bitmap.smooth = smooth;
+      return bitmap;
+    } else {
+      return this.loadEmptyBitmap();
+    }
+  };
 
-    ImageManager._axLoadWepbBitmapMZ = function(folder, filename) {
-        if (filename) {
-            const url = folder + Utils.encodeURI(filename) + ".webp";
-            return this.loadBitmapFromUrl(url);
-        } else {
-            return this._emptyBitmap;
-        }
-    };
+  ImageManager._axLoadWepbBitmapMZ = function (folder, filename) {
+    if (filename) {
+      const url = folder + Utils.encodeURI(filename) + '.webp';
+      return this.loadBitmapFromUrl(url);
+    } else {
+      return this._emptyBitmap;
+    }
+  };
 })();
 
+PKD_ANIMAX.ApplyMZ3DPatch = function () {
+  if (!mz3d) return;
 
-PKD_ANIMAX.ApplyMZ3DPatch = function() {
+  const _mz3d_isImageChanged = mz3d.Character.prototype.isImageChanged;
+  mz3d.Character.prototype.isImageChanged = function () {
+    if (_mz3d_isImageChanged.apply(this, arguments)) return true;
+    if (this._character.mv_sprite && this._character.mv_sprite.isAnimX()) {
+      return this._animaXBitmap !== this._character.mv_sprite.bitmap._url;
+    }
+    return false;
+  };
 
-	if(!mz3d)return;
+  const _mz3d_updateCharacter = mz3d.Character.prototype.updateCharacter;
+  mz3d.Character.prototype.updateCharacter = function () {
+    if (this._character.mv_sprite && this._character.mv_sprite.isAnimX()) {
+      this._animaXBitmap = this._character.mv_sprite.bitmap._url;
+    }
+    _mz3d_updateCharacter.apply(this, arguments);
+  };
 
-    const _mz3d_isImageChanged = mz3d.Character.prototype.isImageChanged;
-	mz3d.Character.prototype.isImageChanged = function() {
-		if(_mz3d_isImageChanged.apply(this,arguments)) return true;
-		if (this._character.mv_sprite && this._character.mv_sprite.isAnimX()) {
-			return this._animaXBitmap !== this._character.mv_sprite.bitmap._url;
-		}
-		return false;
-	}
+  const _mz3d_setMaterial = mz3d.Character.prototype.setMaterial;
+  mz3d.Character.prototype.setMaterial = async function (src) {
+    if (this._character.mv_sprite && this._character.mv_sprite.isAnimX()) {
+      if (!this.model.material) await _mz3d_setMaterial.apply(this, arguments);
+      let texture;
+      if (!this.model.material._animaX_Textures) this.model.material._animaX_Textures = {};
+      if (this.model.material._animaX_Textures[this._animaXBitmap]) {
+        texture = this.model.material._animaX_Textures[this._animaXBitmap];
+      } else {
+        texture = await mz3d.createTexture(this._animaXBitmap);
+        this.model.material._animaX_Textures[this._animaXBitmap] = texture;
+      }
+      await mz3d.waitTextureLoaded(texture);
+      this.model.textureLoaded = true;
+      texture.hasAlpha = true;
+      this.model.texture = texture;
+      this.model.material.diffuseTexture = texture;
+      //await this.model.setMaterial(this._animaXBitmap);
+      this.updateScale();
+      this.needsMaterialUpdate = true;
+    } else {
+      await _mz3d_setMaterial.apply(this, arguments);
+    }
+  };
 
-	const _mz3d_updateCharacter = mz3d.Character.prototype.updateCharacter;
-	mz3d.Character.prototype.updateCharacter = function() {
-		if (this._character.mv_sprite && this._character.mv_sprite.isAnimX()) {
-			this._animaXBitmap = this._character.mv_sprite.bitmap._url;
-		}
-		_mz3d_updateCharacter.apply(this,arguments);
-	}
-
-	const _mz3d_setMaterial = mz3d.Character.prototype.setMaterial;
-	mz3d.Character.prototype.setMaterial = async function(src){
-		if(this._character.mv_sprite && this._character.mv_sprite.isAnimX()){
-			if(!this.model.material) await _mz3d_setMaterial.apply(this,arguments);
-			let texture;
-			if(!this.model.material._animaX_Textures)this.model.material._animaX_Textures={};
-			if(this.model.material._animaX_Textures[this._animaXBitmap]){
-				texture = this.model.material._animaX_Textures[this._animaXBitmap];
-			}else{
-				texture = await mz3d.createTexture(this._animaXBitmap);
-				this.model.material._animaX_Textures[this._animaXBitmap]=texture;
-			}
-			await mz3d.waitTextureLoaded(texture);
-			this.model.textureLoaded=true;
-			texture.hasAlpha=true;
-			this.model.texture = texture
-			this.model.material.diffuseTexture = texture;
-			//await this.model.setMaterial(this._animaXBitmap);
-			this.updateScale();
-			this.needsMaterialUpdate=true;
-		}else{
-			await _mz3d_setMaterial.apply(this,arguments);
-		}
-	}
-
-	mz3d.util.override(XAnimaSet.prototype,'getAnimationByDirection', o=> function(dir){
-		return o.call(this,mz3d.transformFacing(dir,mz3d.blendCameraYaw.currentValue(),true));
-	});
-
+  mz3d.util.override(
+    XAnimaSet.prototype,
+    'getAnimationByDirection',
+    o =>
+      function (dir) {
+        return o.call(this, mz3d.transformFacing(dir, mz3d.blendCameraYaw.currentValue(), true));
+      },
+  );
 };
 
 // Generated by CoffeeScript 2.6.1
@@ -2775,11 +2752,11 @@ PKD_ANIMAX.ApplyMZ3DPatch = function() {
 // ■ PKD_ANIMAX.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var _;
   //@[DEFINES]
   _ = PKD_ANIMAX;
-  _.DisableAnimaX = function() {
+  _.DisableAnimaX = function () {
     var e;
     try {
       return $gameSystem.axSetAnimaXActiveState(false);
@@ -2788,7 +2765,7 @@ PKD_ANIMAX.ApplyMZ3DPatch = function() {
       return console.warn(e);
     }
   };
-  _.EnableAnimaX = function() {
+  _.EnableAnimaX = function () {
     var e;
     try {
       return $gameSystem.axSetAnimaXActiveState(true);
@@ -2797,7 +2774,7 @@ PKD_ANIMAX.ApplyMZ3DPatch = function() {
       return console.warn(e);
     }
   };
-  _.SetAnimaXStateForPlayer = function(state) {
+  _.SetAnimaXStateForPlayer = function (state) {
     var e;
     try {
       return $gameSystem.axSetAnimaXActiveStateForCharId(0, state);
@@ -2806,7 +2783,7 @@ PKD_ANIMAX.ApplyMZ3DPatch = function() {
       return console.warn(e);
     }
   };
-  _.SetAnimaXStateForPartyMember = function(memberIndex, state) {
+  _.SetAnimaXStateForPartyMember = function (memberIndex, state) {
     var e;
     try {
       return $gameSystem.axSetAnimaXActiveStateForCharId(memberIndex, state);
@@ -2815,7 +2792,7 @@ PKD_ANIMAX.ApplyMZ3DPatch = function() {
       return console.warn(e);
     }
   };
-  _.ChangePlayerAnimationSet = function(animSetId) {
+  _.ChangePlayerAnimationSet = function (animSetId) {
     var e;
     try {
       return PKD_ANIMAX.PluginCommand_ChangeCharaAnimationSet(0, animSetId);
@@ -2824,7 +2801,7 @@ PKD_ANIMAX.ApplyMZ3DPatch = function() {
       return console.warn(e);
     }
   };
-  _.ResetPlayerAnimationSet = function() {
+  _.ResetPlayerAnimationSet = function () {
     var e;
     try {
       return _.ChangePlayerAnimationSet(null);
@@ -2833,7 +2810,7 @@ PKD_ANIMAX.ApplyMZ3DPatch = function() {
       return console.warn(e);
     }
   };
-  _.ChangeEventAnimationSet = function(eventId, animSetId) {
+  _.ChangeEventAnimationSet = function (eventId, animSetId) {
     var e;
     try {
       return PKD_ANIMAX.PluginCommand_ChangeCharaAnimationSet(eventId, animSetId);
@@ -2842,7 +2819,7 @@ PKD_ANIMAX.ApplyMZ3DPatch = function() {
       return console.warn(e);
     }
   };
-  _.ResetEventAnimationSet = function(eventId) {
+  _.ResetEventAnimationSet = function (eventId) {
     var e;
     try {
       return _.ChangeEventAnimationSet(eventId, null);
@@ -2851,7 +2828,7 @@ PKD_ANIMAX.ApplyMZ3DPatch = function() {
       return console.warn(e);
     }
   };
-  _.PlayAnimationAction = function(actionName, charaId = 0, isLoop = false, isWait = false) {
+  _.PlayAnimationAction = function (actionName, charaId = 0, isLoop = false, isWait = false) {
     var e;
     try {
       return PKD_ANIMAX.PluginCommand_PlayAnimationAction(actionName, charaId, isLoop, isWait);
@@ -2860,7 +2837,7 @@ PKD_ANIMAX.ApplyMZ3DPatch = function() {
       return console.warn(e);
     }
   };
-  _.StopAnimationAction = function(charaId = 0) {
+  _.StopAnimationAction = function (charaId = 0) {
     var e;
     try {
       return PKD_ANIMAX.PluginCommand_StopAnimationAction(charaId);
@@ -2869,7 +2846,7 @@ PKD_ANIMAX.ApplyMZ3DPatch = function() {
       return console.warn(e);
     }
   };
-  _.AddLayer = function(charaId, layerName, isRelative = false) {
+  _.AddLayer = function (charaId, layerName, isRelative = false) {
     var e;
     try {
       return PKD_ANIMAX.PluginCommand_AddPart(charaId, layerName, isRelative);
@@ -2878,7 +2855,7 @@ PKD_ANIMAX.ApplyMZ3DPatch = function() {
       return console.warn(e);
     }
   };
-  _.RemoveLayer = function(charaId, layerName) {
+  _.RemoveLayer = function (charaId, layerName) {
     var e;
     try {
       return PKD_ANIMAX.PluginCommand_RemovePart(charaId, layerName);
@@ -2887,7 +2864,7 @@ PKD_ANIMAX.ApplyMZ3DPatch = function() {
       return console.warn(e);
     }
   };
-  _.RemoveAllLayers = function(charaId = 0) {
+  _.RemoveAllLayers = function (charaId = 0) {
     var e;
     try {
       return PKD_ANIMAX.PluginCommand_ClearParts(charaId);
@@ -2896,7 +2873,7 @@ PKD_ANIMAX.ApplyMZ3DPatch = function() {
       return console.warn(e);
     }
   };
-  _.PlayIndependentAction = function(profileName, actionName, charaId = 0, isLoop = false, isWait = false) {
+  _.PlayIndependentAction = function (profileName, actionName, charaId = 0, isLoop = false, isWait = false) {
     var e;
     try {
       return PKD_ANIMAX.PluginCommand_PlayIndependentAction(profileName, actionName, charaId, isLoop, isWait);
@@ -2905,19 +2882,19 @@ PKD_ANIMAX.ApplyMZ3DPatch = function() {
       return console.warn(e);
     }
   };
-  _.DisableDiagonalMovement = function() {
+  _.DisableDiagonalMovement = function () {
     var e;
     try {
-      return $gameSystem.paxDiagonalIsDisabled = true;
+      return ($gameSystem.paxDiagonalIsDisabled = true);
     } catch (error) {
       e = error;
       return console.warn(e);
     }
   };
-  _.EnableDiagonalMovement = function() {
+  _.EnableDiagonalMovement = function () {
     var e;
     try {
-      return $gameSystem.paxDiagonalIsDisabled = null;
+      return ($gameSystem.paxDiagonalIsDisabled = null);
     } catch (error) {
       e = error;
       return console.warn(e);
@@ -2928,18 +2905,17 @@ PKD_ANIMAX.ApplyMZ3DPatch = function() {
 // ■ END PKD_ANIMAX.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
-PKD_ANIMAX.LoadPluginSettings = function() {
+PKD_ANIMAX.LoadPluginSettings = function () {
   var a, animList, e, i, len, partsList;
-  PKD_ANIMAX.Params = new PKD_ANIMAX.ParamLoader("xAnimations:structA");
-  animList = PKD_ANIMAX.Params.getParam("xAnimations", []);
+  PKD_ANIMAX.Params = new PKD_ANIMAX.ParamLoader('xAnimations:structA');
+  animList = PKD_ANIMAX.Params.getParam('xAnimations', []);
   for (i = 0, len = animList.length; i < len; i++) {
     a = animList[i];
     a.actions = XAnimaTools.convertActionsFromParameters(a.actions);
   }
   PKD_ANIMAX.Animations = animList;
-  partsList = PKD_ANIMAX.Params.getParam("xAnimaParts", []);
+  partsList = PKD_ANIMAX.Params.getParam('xAnimaParts', []);
   PKD_ANIMAX.AnimationParts = partsList;
   if (PKD_ANIMAX.isMV()) {
     PKD_ANIMAX.RegisterPluginCommnads4MV();
@@ -2959,31 +2935,31 @@ PKD_ANIMAX.LoadPluginSettings = function() {
   }
 };
 
-PKD_ANIMAX.IsUseAltPreload = function() {
+PKD_ANIMAX.IsUseAltPreload = function () {
   return PKD_ANIMAX.Params.getParam('isUseAltPreload', false);
 };
 
-PKD_ANIMAX.IsUseWebp = function() {
+PKD_ANIMAX.IsUseWebp = function () {
   return PKD_ANIMAX.Params.getParam('isUseWebp', false);
 };
 
-PKD_ANIMAX.IsWaitSpritesheetLoading = function() {
+PKD_ANIMAX.IsWaitSpritesheetLoading = function () {
   return PKD_ANIMAX.Params.getParam('isWaitSpritesheetLoading', false);
 };
 
-PKD_ANIMAX.IsUseDiagonalMovement = function() {
+PKD_ANIMAX.IsUseDiagonalMovement = function () {
   return PKD_ANIMAX.Params.getParam('isUseDiagonalMovement', true);
 };
 
-PKD_ANIMAX.DiagonalMovementSpeedKoef = function() {
+PKD_ANIMAX.DiagonalMovementSpeedKoef = function () {
   return PKD_ANIMAX.Params.getParam('diagonalMovementSpeedKoef', 0.8);
 };
 
-PKD_ANIMAX.IsAllowDiagonalEventsActivation = function() {
+PKD_ANIMAX.IsAllowDiagonalEventsActivation = function () {
   return PKD_ANIMAX.Params.getParam('isAllowDiagonalEventsActivation', false);
 };
 
-PKD_ANIMAX.IsMapIsInactive = function(mapId) {
+PKD_ANIMAX.IsMapIsInactive = function (mapId) {
   var e, inactiveMapsArray;
   try {
     inactiveMapsArray = PKD_ANIMAX.Params.getParam('inactiveAnimaXMapsList', []);
@@ -2995,48 +2971,44 @@ PKD_ANIMAX.IsMapIsInactive = function(mapId) {
   return false;
 };
 
-
 var PKD_ANIMAX;
 (function (PKD_ANIMAX) {
-    var KString;
-    (function (KString) {
-        /**
-         * Checks if a string is not null, not undefined, and has a length greater than 0 (after trimming).
-         *
-         * @param {string} str - The string to check.
-         * @returns {boolean} True if the string is not null, not undefined, and has a length greater than 0 (after trimming), otherwise false.
-         */
-        KString.any = (str) => {
-            if (str === null || str === undefined) {
-                return false;
-            }
-            // * For compatibility with old verions of KDCore library
-            if (typeof str === "boolean") {
-                return str == true;
-            }
-            try {
-                if (typeof str == "string") {
-                    return str.length > 0 || str.trim().length > 0;
-                }
-                else {
-                    return str; // ??? just not null or undefined
-                }
-            }
-            catch (error) {
-                console.warn(error);
-                return false;
-            }
-        };
-    })(KString = PKD_ANIMAX.KString || (PKD_ANIMAX.KString = {}));
+  var KString;
+  (function (KString) {
+    /**
+     * Checks if a string is not null, not undefined, and has a length greater than 0 (after trimming).
+     *
+     * @param {string} str - The string to check.
+     * @returns {boolean} True if the string is not null, not undefined, and has a length greater than 0 (after trimming), otherwise false.
+     */
+    KString.any = str => {
+      if (str === null || str === undefined) {
+        return false;
+      }
+      // * For compatibility with old verions of KDCore library
+      if (typeof str === 'boolean') {
+        return str == true;
+      }
+      try {
+        if (typeof str == 'string') {
+          return str.length > 0 || str.trim().length > 0;
+        } else {
+          return str; // ??? just not null or undefined
+        }
+      } catch (error) {
+        console.warn(error);
+        return false;
+      }
+    };
+  })((KString = PKD_ANIMAX.KString || (PKD_ANIMAX.KString = {})));
 })(PKD_ANIMAX || (PKD_ANIMAX = {}));
-
 
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ ImageCache.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var ALIAS___musBeHeld, _;
   if (!PKD_ANIMAX.isMV()) {
     return;
@@ -3046,7 +3018,7 @@ var PKD_ANIMAX;
   // * AnimaX изображения нельзя удалять при переполнении памяти
   //@[ALIAS]
   ALIAS___musBeHeld = _._mustBeHeld;
-  _._mustBeHeld = function(item) {
+  _._mustBeHeld = function (item) {
     if (item.bitmap.url.contains('charactersAA')) {
       return true;
     }
@@ -3060,454 +3032,423 @@ var PKD_ANIMAX;
 // ■ END ImageCache.coffee
 //---------------------------------------------------------------------------
 
-
 var PKD_ANIMAX;
 (function (PKD_ANIMAX) {
-    var KAudio;
-    (function (KAudio) {
-        function PlaySE(name, pitch = 100, volume = 100) {
-            if (!PKD_ANIMAX.KString.any(name))
-                return;
-            let audioData = {
-                name: name,
-                pitch: pitch,
-                volume: volume,
-                pan: 0,
-                pos: 0
-            };
-            AudioManager.playStaticSe(audioData);
-        }
-        KAudio.PlaySE = PlaySE;
-    })(KAudio = PKD_ANIMAX.KAudio || (PKD_ANIMAX.KAudio = {}));
-})(PKD_ANIMAX || (PKD_ANIMAX = {}));
-
-
-var PKD_ANIMAX;
-(function (PKD_ANIMAX) {
-    var KGameEvents;
-    (function (KGameEvents) {
-        // * Return whole line that contains the commentCode
-        /**
-         * Retrieves a specific comment line from a game event based on the provided comment code.
-         *
-         * @param commentCode - The code to search for within the comment lines.
-         * @param event - The game event from which to retrieve the comment line.
-         * @returns The comment line containing the specified code, or `null` if not found.
-         *
-         * @remarks
-         * This function searches through the event's page list to find a comment line that includes the specified comment code.
-         * It looks for comment codes 108 and 408, which are typically used for comments in RPG Maker events.
-         * If the event or its page list is not available, or if no matching comment line is found, the function returns `null`.
-         *
-         * @throws Will log a warning to the console if an error occurs during the search process.
-         */
-        function GetCommentLine(commentCode, event) {
-            try {
-                if (!event)
-                    return null;
-                let page = event.page();
-                if (!page)
-                    return null;
-                let list = page.list;
-                if (!list)
-                    return null;
-                for (let i = 0; i < list.length; i++) {
-                    if (!list[i])
-                        continue;
-                    if (list[i].code === 108 || list[i].code === 408) {
-                        let line = list[i].parameters[0];
-                        if (line && line.includes(commentCode)) {
-                            return line;
-                        }
-                    }
-                }
-            }
-            catch (error) {
-                console.warn(error);
-            }
-            return null;
-        }
-        KGameEvents.GetCommentLine = GetCommentLine;
-    })(KGameEvents = PKD_ANIMAX.KGameEvents || (PKD_ANIMAX.KGameEvents = {}));
-})(PKD_ANIMAX || (PKD_ANIMAX = {}));
-
-
-var PKD_ANIMAX;
-(function (PKD_ANIMAX) {
-    var KGameItems;
-    (function (KGameItems) {
-        /**
-         * Checks if the given object has a meta property with the specified symbol.
-         *
-         * @param symbol - The symbol to check for in the meta property.
-         * @param obj - The object to check for the meta property.
-         * @returns `true` if the object has a meta property with the specified symbol, otherwise `false`.
-         * @throws Will log a warning to the console if an error occurs during the check.
-         */
-        function IsHaveMeta(symbol, obj) {
-            try {
-                return obj && obj.meta && obj.meta.hasOwnProperty(symbol);
-            }
-            catch (error) {
-                console.warn(error);
-            }
-            return false;
-        }
-        KGameItems.IsHaveMeta = IsHaveMeta;
-        /**
-         * Retrieves the metadata associated with a given symbol from an object.
-         *
-         * @param symbol - The key for the metadata to retrieve.
-         * @param obj - The object containing the metadata.
-         * @returns The metadata value associated with the symbol, or null if the symbol is not present or an error occurs.
-         */
-        function GetMeta(symbol, obj) {
-            try {
-                if (!IsHaveMeta(symbol, obj))
-                    return null;
-                return obj.meta[symbol];
-            }
-            catch (error) {
-                console.warn(error);
-            }
-            return null;
-        }
-        KGameItems.GetMeta = GetMeta;
-    })(KGameItems = PKD_ANIMAX.KGameItems || (PKD_ANIMAX.KGameItems = {}));
-})(PKD_ANIMAX || (PKD_ANIMAX = {}));
-
-
-var PKD_ANIMAX;
-(function (PKD_ANIMAX) {
-    var KUtils;
-    (function (KUtils) {
-        function CallWithDelay(callback, delay) {
-            if (!callback)
-                return;
-            return setTimeout(() => {
-                try {
-                    callback();
-                }
-                catch (error) {
-                    console.warn(error);
-                }
-            }, delay);
-        }
-        KUtils.CallWithDelay = CallWithDelay;
-    })(KUtils = PKD_ANIMAX.KUtils || (PKD_ANIMAX.KUtils = {}));
-})(PKD_ANIMAX || (PKD_ANIMAX = {}));
-
-
-var PKD_ANIMAX;
-(function (PKD_ANIMAX) {
-    class ParamLoader {
-        /**
-         * Creates an instance of ParamLoader.
-         * @param _pluginName The name of the plugin.
-         */
-        constructor(_pluginName) {
-            this._pluginName = _pluginName;
-            this._ppNameToParseNext = "";
-            this._paramsRaw = this.getPluginParametersByRoot(this._pluginName);
-            this._params = this.parseParameters(this._paramsRaw);
-        }
-        /**
-         * Gets the plugin parameters by the root name.
-         * @param rootName The root name of the plugin.
-         * @returns The plugin parameters if found, otherwise calls PluginManager.parameters.
-         */
-        getPluginParametersByRoot(rootName) {
-            /* @ts-ignore */
-            let allParametersRaw = PluginManager._parameters;
-            for (const property in allParametersRaw) {
-                if (allParametersRaw.hasOwnProperty(property)) {
-                    const pluginParameters = allParametersRaw[property];
-                    if (pluginParameters[rootName]) {
-                        return pluginParameters;
-                    }
-                }
-            }
-            return PluginManager.parameters(rootName);
-        }
-        /**
-         * Parses the parameters from the plugin.
-         * @param paramSet The raw parameter set.
-         * @returns The parsed parameters.
-         */
-        parseParameters(paramSet) {
-            const params = {};
-            for (const key in paramSet) {
-                if (paramSet.hasOwnProperty(key)) {
-                    this._ppNameToParseNext = key;
-                    const clearKey = this.parseKey(key);
-                    const typeKey = this.parseKeyType(key);
-                    params[clearKey] = this.parseParamItem(typeKey, paramSet[key]);
-                }
-            }
-            return params;
-        }
-        /**
-         * Parses the key to remove the type.
-         * @param keyRaw The raw key.
-         * @returns The parsed key.
-         */
-        parseKey(keyRaw) {
-            return keyRaw.split(":")[0];
-        }
-        /**
-         * Parses the key to get the type.
-         * @param keyRaw The raw key.
-         * @returns The type of the key.
-         */
-        parseKeyType(keyRaw) {
-            return keyRaw.split(":")[1];
-        }
-        /**
-         * Writes a detailed error message to the console.
-         */
-        writeDetailedError() {
-            try {
-                if (!PKD_ANIMAX.KString.any(this._ppNameToParseNext))
-                    return;
-                console.warn(`Please, check Plugin Parameter ${this._ppNameToParseNext} in plugin ${this._pluginName}`);
-            }
-            catch (e) {
-                console.warn(e);
-            }
-        }
-        /**
-         * Checks if the parameters are loaded.
-         * @returns True if the parameters are loaded, otherwise false.
-         */
-        isLoaded() {
-            return !!this._paramsRaw && this._paramsRaw.hasOwnProperty(this._pluginName);
-        }
-        /**
-         * Checks if a parameter exists.
-         * @param paramName The name of the parameter.
-         * @returns True if the parameter exists, otherwise false.
-         */
-        isHasParameter(paramName) {
-            return this._params.hasOwnProperty(paramName);
-        }
-        /**
-         * Gets the value of a parameter.
-         * @param paramName The name of the parameter.
-         * @param def The default value if the parameter is not found.
-         * @returns The value of the parameter or the default value.
-         */
-        getParam(paramName, def) {
-            if (this.isHasParameter(paramName)) {
-                const value = this._params[paramName];
-                if (value != null)
-                    return value;
-            }
-            return def;
-        }
-        /**
-         * Parses a parameter item based on its type.
-         * @param type The type of the parameter.
-         * @param item The parameter item.
-         * @returns The parsed parameter item.
-         */
-        parseParamItem(type, item) {
-            if (!type)
-                return item;
-            try {
-                switch (type) {
-                    case "int":
-                    case "i":
-                        return Number(item);
-                    case "intA":
-                        return this.parseArray(item, "int");
-                    case "bool":
-                    case "b":
-                    case "e":
-                        return eval(item);
-                    case "struct":
-                    case "s":
-                        return this.parseStruct(item);
-                    case "structA":
-                        return this.parseStructArray(item);
-                    case "str":
-                        return item;
-                    case "strA":
-                        return this.parseArray(item, "str");
-                    case "note":
-                        return this.parseNote(item);
-                    case "json":
-                    case "j":
-                        return this.parseJson(item);
-                    case "jA":
-                        return this.parseArray(item, "json");
-                    default:
-                        return item;
-                }
-            }
-            catch (e) {
-                console.warn(e);
-                this.writeDetailedError();
-                return item;
-            }
-        }
-        /**
-         * Parses an array of items.
-         * @param items The items to parse.
-         * @param type The type of the items.
-         * @returns The parsed array.
-         */
-        parseArray(items, type) {
-            try {
-                const elements = [];
-                const parsed = JsonEx.parse(items);
-                for (const p of parsed) {
-                    try {
-                        elements.push(this.parseParamItem(type, p));
-                    }
-                    catch (e) {
-                        console.warn(e);
-                    }
-                }
-                return elements;
-            }
-            catch (e) {
-                console.warn(e);
-                this.writeDetailedError();
-                return [];
-            }
-        }
-        /**
-         * Parses a struct item.
-         * @param item The item to parse.
-         * @returns The parsed struct.
-         */
-        parseStruct(item) {
-            try {
-                if (!item || !PKD_ANIMAX.KString.any(item))
-                    return null;
-                const parsed = JsonEx.parse(item);
-                return parsed ? this.parseParameters(parsed) : null;
-            }
-            catch (e) {
-                console.warn(e);
-                this.writeDetailedError();
-                return null;
-            }
-        }
-        /**
-         * Parses an array of struct items.
-         * @param items The items to parse.
-         * @returns The parsed array of structs.
-         */
-        parseStructArray(items) {
-            try {
-                const elements = [];
-                const parsed = JsonEx.parse(items);
-                for (const p of parsed) {
-                    try {
-                        elements.push(this.parseStruct(p));
-                    }
-                    catch (e) {
-                        console.warn(e);
-                        this.writeDetailedError();
-                    }
-                }
-                return elements;
-            }
-            catch (e) {
-                console.warn(e);
-                this.writeDetailedError();
-                return [];
-            }
-        }
-        /**
-         * Parses a note item.
-         * @param item The item to parse.
-         * @returns The parsed note.
-         */
-        parseNote(item) {
-            try {
-                const parsed = JsonEx.parse(item);
-                return parsed ? parsed : item;
-            }
-            catch (e) {
-                console.warn(e);
-                this.writeDetailedError();
-                return item;
-            }
-        }
-        /**
-         * Parses a JSON item.
-         * @param item The item to parse.
-         * @returns The parsed JSON.
-         */
-        parseJson(item) {
-            try {
-                const json = {};
-                const parsed = JsonEx.parse(item);
-                const elements = parsed.split('\n');
-                for (const element of elements) {
-                    const cx = `{${element}}`;
-                    try {
-                        const item = JsonEx.parse(cx);
-                        for (const key in item) {
-                            if (item.hasOwnProperty(key)) {
-                                json[key] = item[key];
-                            }
-                        }
-                    }
-                    catch (e) {
-                        console.warn(`Parameter ${element} has syntax errors, ignored`);
-                    }
-                }
-                return json;
-            }
-            catch (e) {
-                console.warn(e);
-                this.writeDetailedError();
-                return null; // To return default value
-            }
-        }
+  var KAudio;
+  (function (KAudio) {
+    function PlaySE(name, pitch = 100, volume = 100) {
+      if (!PKD_ANIMAX.KString.any(name)) return;
+      let audioData = {
+        name: name,
+        pitch: pitch,
+        volume: volume,
+        pan: 0,
+        pos: 0,
+      };
+      AudioManager.playStaticSe(audioData);
     }
-    PKD_ANIMAX.ParamLoader = ParamLoader;
+    KAudio.PlaySE = PlaySE;
+  })((KAudio = PKD_ANIMAX.KAudio || (PKD_ANIMAX.KAudio = {})));
 })(PKD_ANIMAX || (PKD_ANIMAX = {}));
 
+var PKD_ANIMAX;
+(function (PKD_ANIMAX) {
+  var KGameEvents;
+  (function (KGameEvents) {
+    // * Return whole line that contains the commentCode
+    /**
+     * Retrieves a specific comment line from a game event based on the provided comment code.
+     *
+     * @param commentCode - The code to search for within the comment lines.
+     * @param event - The game event from which to retrieve the comment line.
+     * @returns The comment line containing the specified code, or `null` if not found.
+     *
+     * @remarks
+     * This function searches through the event's page list to find a comment line that includes the specified comment code.
+     * It looks for comment codes 108 and 408, which are typically used for comments in RPG Maker events.
+     * If the event or its page list is not available, or if no matching comment line is found, the function returns `null`.
+     *
+     * @throws Will log a warning to the console if an error occurs during the search process.
+     */
+    function GetCommentLine(commentCode, event) {
+      try {
+        if (!event) return null;
+        let page = event.page();
+        if (!page) return null;
+        let list = page.list;
+        if (!list) return null;
+        for (let i = 0; i < list.length; i++) {
+          if (!list[i]) continue;
+          if (list[i].code === 108 || list[i].code === 408) {
+            let line = list[i].parameters[0];
+            if (line && line.includes(commentCode)) {
+              return line;
+            }
+          }
+        }
+      } catch (error) {
+        console.warn(error);
+      }
+      return null;
+    }
+    KGameEvents.GetCommentLine = GetCommentLine;
+  })((KGameEvents = PKD_ANIMAX.KGameEvents || (PKD_ANIMAX.KGameEvents = {})));
+})(PKD_ANIMAX || (PKD_ANIMAX = {}));
+
+var PKD_ANIMAX;
+(function (PKD_ANIMAX) {
+  var KGameItems;
+  (function (KGameItems) {
+    /**
+     * Checks if the given object has a meta property with the specified symbol.
+     *
+     * @param symbol - The symbol to check for in the meta property.
+     * @param obj - The object to check for the meta property.
+     * @returns `true` if the object has a meta property with the specified symbol, otherwise `false`.
+     * @throws Will log a warning to the console if an error occurs during the check.
+     */
+    function IsHaveMeta(symbol, obj) {
+      try {
+        return obj && obj.meta && obj.meta.hasOwnProperty(symbol);
+      } catch (error) {
+        console.warn(error);
+      }
+      return false;
+    }
+    KGameItems.IsHaveMeta = IsHaveMeta;
+    /**
+     * Retrieves the metadata associated with a given symbol from an object.
+     *
+     * @param symbol - The key for the metadata to retrieve.
+     * @param obj - The object containing the metadata.
+     * @returns The metadata value associated with the symbol, or null if the symbol is not present or an error occurs.
+     */
+    function GetMeta(symbol, obj) {
+      try {
+        if (!IsHaveMeta(symbol, obj)) return null;
+        return obj.meta[symbol];
+      } catch (error) {
+        console.warn(error);
+      }
+      return null;
+    }
+    KGameItems.GetMeta = GetMeta;
+  })((KGameItems = PKD_ANIMAX.KGameItems || (PKD_ANIMAX.KGameItems = {})));
+})(PKD_ANIMAX || (PKD_ANIMAX = {}));
+
+var PKD_ANIMAX;
+(function (PKD_ANIMAX) {
+  var KUtils;
+  (function (KUtils) {
+    function CallWithDelay(callback, delay) {
+      if (!callback) return;
+      return setTimeout(() => {
+        try {
+          callback();
+        } catch (error) {
+          console.warn(error);
+        }
+      }, delay);
+    }
+    KUtils.CallWithDelay = CallWithDelay;
+  })((KUtils = PKD_ANIMAX.KUtils || (PKD_ANIMAX.KUtils = {})));
+})(PKD_ANIMAX || (PKD_ANIMAX = {}));
+
+var PKD_ANIMAX;
+(function (PKD_ANIMAX) {
+  class ParamLoader {
+    /**
+     * Creates an instance of ParamLoader.
+     * @param _pluginName The name of the plugin.
+     */
+    constructor(_pluginName) {
+      this._pluginName = _pluginName;
+      this._ppNameToParseNext = '';
+      this._paramsRaw = this.getPluginParametersByRoot(this._pluginName);
+      this._params = this.parseParameters(this._paramsRaw);
+    }
+    /**
+     * Gets the plugin parameters by the root name.
+     * @param rootName The root name of the plugin.
+     * @returns The plugin parameters if found, otherwise calls PluginManager.parameters.
+     */
+    getPluginParametersByRoot(rootName) {
+      /* @ts-ignore */
+      let allParametersRaw = PluginManager._parameters;
+      for (const property in allParametersRaw) {
+        if (allParametersRaw.hasOwnProperty(property)) {
+          const pluginParameters = allParametersRaw[property];
+          if (pluginParameters[rootName]) {
+            return pluginParameters;
+          }
+        }
+      }
+      return PluginManager.parameters(rootName);
+    }
+    /**
+     * Parses the parameters from the plugin.
+     * @param paramSet The raw parameter set.
+     * @returns The parsed parameters.
+     */
+    parseParameters(paramSet) {
+      const params = {};
+      for (const key in paramSet) {
+        if (paramSet.hasOwnProperty(key)) {
+          this._ppNameToParseNext = key;
+          const clearKey = this.parseKey(key);
+          const typeKey = this.parseKeyType(key);
+          params[clearKey] = this.parseParamItem(typeKey, paramSet[key]);
+        }
+      }
+      return params;
+    }
+    /**
+     * Parses the key to remove the type.
+     * @param keyRaw The raw key.
+     * @returns The parsed key.
+     */
+    parseKey(keyRaw) {
+      return keyRaw.split(':')[0];
+    }
+    /**
+     * Parses the key to get the type.
+     * @param keyRaw The raw key.
+     * @returns The type of the key.
+     */
+    parseKeyType(keyRaw) {
+      return keyRaw.split(':')[1];
+    }
+    /**
+     * Writes a detailed error message to the console.
+     */
+    writeDetailedError() {
+      try {
+        if (!PKD_ANIMAX.KString.any(this._ppNameToParseNext)) return;
+        console.warn(`Please, check Plugin Parameter ${this._ppNameToParseNext} in plugin ${this._pluginName}`);
+      } catch (e) {
+        console.warn(e);
+      }
+    }
+    /**
+     * Checks if the parameters are loaded.
+     * @returns True if the parameters are loaded, otherwise false.
+     */
+    isLoaded() {
+      return !!this._paramsRaw && this._paramsRaw.hasOwnProperty(this._pluginName);
+    }
+    /**
+     * Checks if a parameter exists.
+     * @param paramName The name of the parameter.
+     * @returns True if the parameter exists, otherwise false.
+     */
+    isHasParameter(paramName) {
+      return this._params.hasOwnProperty(paramName);
+    }
+    /**
+     * Gets the value of a parameter.
+     * @param paramName The name of the parameter.
+     * @param def The default value if the parameter is not found.
+     * @returns The value of the parameter or the default value.
+     */
+    getParam(paramName, def) {
+      if (this.isHasParameter(paramName)) {
+        const value = this._params[paramName];
+        if (value != null) return value;
+      }
+      return def;
+    }
+    /**
+     * Parses a parameter item based on its type.
+     * @param type The type of the parameter.
+     * @param item The parameter item.
+     * @returns The parsed parameter item.
+     */
+    parseParamItem(type, item) {
+      if (!type) return item;
+      try {
+        switch (type) {
+          case 'int':
+          case 'i':
+            return Number(item);
+          case 'intA':
+            return this.parseArray(item, 'int');
+          case 'bool':
+          case 'b':
+          case 'e':
+            return eval(item);
+          case 'struct':
+          case 's':
+            return this.parseStruct(item);
+          case 'structA':
+            return this.parseStructArray(item);
+          case 'str':
+            return item;
+          case 'strA':
+            return this.parseArray(item, 'str');
+          case 'note':
+            return this.parseNote(item);
+          case 'json':
+          case 'j':
+            return this.parseJson(item);
+          case 'jA':
+            return this.parseArray(item, 'json');
+          default:
+            return item;
+        }
+      } catch (e) {
+        console.warn(e);
+        this.writeDetailedError();
+        return item;
+      }
+    }
+    /**
+     * Parses an array of items.
+     * @param items The items to parse.
+     * @param type The type of the items.
+     * @returns The parsed array.
+     */
+    parseArray(items, type) {
+      try {
+        const elements = [];
+        const parsed = JsonEx.parse(items);
+        for (const p of parsed) {
+          try {
+            elements.push(this.parseParamItem(type, p));
+          } catch (e) {
+            console.warn(e);
+          }
+        }
+        return elements;
+      } catch (e) {
+        console.warn(e);
+        this.writeDetailedError();
+        return [];
+      }
+    }
+    /**
+     * Parses a struct item.
+     * @param item The item to parse.
+     * @returns The parsed struct.
+     */
+    parseStruct(item) {
+      try {
+        if (!item || !PKD_ANIMAX.KString.any(item)) return null;
+        const parsed = JsonEx.parse(item);
+        return parsed ? this.parseParameters(parsed) : null;
+      } catch (e) {
+        console.warn(e);
+        this.writeDetailedError();
+        return null;
+      }
+    }
+    /**
+     * Parses an array of struct items.
+     * @param items The items to parse.
+     * @returns The parsed array of structs.
+     */
+    parseStructArray(items) {
+      try {
+        const elements = [];
+        const parsed = JsonEx.parse(items);
+        for (const p of parsed) {
+          try {
+            elements.push(this.parseStruct(p));
+          } catch (e) {
+            console.warn(e);
+            this.writeDetailedError();
+          }
+        }
+        return elements;
+      } catch (e) {
+        console.warn(e);
+        this.writeDetailedError();
+        return [];
+      }
+    }
+    /**
+     * Parses a note item.
+     * @param item The item to parse.
+     * @returns The parsed note.
+     */
+    parseNote(item) {
+      try {
+        const parsed = JsonEx.parse(item);
+        return parsed ? parsed : item;
+      } catch (e) {
+        console.warn(e);
+        this.writeDetailedError();
+        return item;
+      }
+    }
+    /**
+     * Parses a JSON item.
+     * @param item The item to parse.
+     * @returns The parsed JSON.
+     */
+    parseJson(item) {
+      try {
+        const json = {};
+        const parsed = JsonEx.parse(item);
+        const elements = parsed.split('\n');
+        for (const element of elements) {
+          const cx = `{${element}}`;
+          try {
+            const item = JsonEx.parse(cx);
+            for (const key in item) {
+              if (item.hasOwnProperty(key)) {
+                json[key] = item[key];
+              }
+            }
+          } catch (e) {
+            console.warn(`Parameter ${element} has syntax errors, ignored`);
+          }
+        }
+        return json;
+      } catch (e) {
+        console.warn(e);
+        this.writeDetailedError();
+        return null; // To return default value
+      }
+    }
+  }
+  PKD_ANIMAX.ParamLoader = ParamLoader;
+})(PKD_ANIMAX || (PKD_ANIMAX = {}));
 
 // Generated by CoffeeScript 2.6.1
-PKD_ANIMAX.IsNetworkGame = function() {
+PKD_ANIMAX.IsNetworkGame = function () {
   return Imported.Alpha_NETZ === true && ANNetwork.isConnected();
 };
 
 // * Некоторые команды плагина не будут автоматически синхронизированы
 // * Действует только ОДИН РАЗ (автоснятие флага), надо перед каждой командой ставить
-PKD_ANIMAX.SetLocalMode = function() {
-  return $gameTemp.netAnimaXLocal = true;
+PKD_ANIMAX.SetLocalMode = function () {
+  return ($gameTemp.netAnimaXLocal = true);
 };
 
-PKD_ANIMAX.InLocalMode = function() {
+PKD_ANIMAX.InLocalMode = function () {
   return $gameTemp.netAnimaXLocal === true;
 };
 
-PKD_ANIMAX.ApplyNETZPatch = function() {
+PKD_ANIMAX.ApplyNETZPatch = function () {
   var _alias_nAPI_onCustomCommand3434343;
-  PKD_ANIMAX.SendNetworkFlagAnimaXRefresh = function(actorId) {
+  PKD_ANIMAX.SendNetworkFlagAnimaXRefresh = function (actorId) {
     var data;
     data = {
       actorId,
-      mapId: $gameMap.mapId()
+      mapId: $gameMap.mapId(),
     };
-    return nAPI.sendCustomCommand("animaX:refreshXAnima", data);
+    return nAPI.sendCustomCommand('animaX:refreshXAnima', data);
   };
-  PKD_ANIMAX.SendNetworkPlayerExternalAnimaX = function() {
+  PKD_ANIMAX.SendNetworkPlayerExternalAnimaX = function () {
     var data;
     data = {
       actorId: $gameParty.leader().actorId(),
       animaX: $gameSystem.lastPlayerAnimaXExternProfile,
-      mapId: $gameMap.mapId()
+      mapId: $gameMap.mapId(),
     };
-    return nAPI.sendCustomCommand("animaX:playerExternal", data);
+    return nAPI.sendCustomCommand('animaX:playerExternal', data);
   };
-  PKD_ANIMAX.SendNetworkAnimaXAction = function(name, isLoop, isWait) {
+  PKD_ANIMAX.SendNetworkAnimaXAction = function (name, isLoop, isWait) {
     var data;
     data = {
       actorId: $gameParty.leader().actorId(),
@@ -3515,11 +3456,11 @@ PKD_ANIMAX.ApplyNETZPatch = function() {
       mapId: $gameMap.mapId(),
       name: name,
       isLoop,
-      isWait
+      isWait,
     };
-    nAPI.sendCustomCommand("animaX:action", data);
+    nAPI.sendCustomCommand('animaX:action', data);
   };
-  PKD_ANIMAX.SendNetworkChangePart = function(partId, isRelative, isAdd) {
+  PKD_ANIMAX.SendNetworkChangePart = function (partId, isRelative, isAdd) {
     var data;
     data = {
       actorId: $gameParty.leader().actorId(),
@@ -3527,33 +3468,33 @@ PKD_ANIMAX.ApplyNETZPatch = function() {
       mapId: $gameMap.mapId(),
       partId,
       isRelative,
-      isAdd
+      isAdd,
     };
-    nAPI.sendCustomCommand("animaX:changePart", data);
+    nAPI.sendCustomCommand('animaX:changePart', data);
   };
-  PKD_ANIMAX.SendNetworkClearAllParts = function() {
+  PKD_ANIMAX.SendNetworkClearAllParts = function () {
     var data;
     data = {
       actorId: $gameParty.leader().actorId(),
       charId: $gameTemp._lastAxNetworkChar,
-      mapId: $gameMap.mapId()
+      mapId: $gameMap.mapId(),
     };
-    nAPI.sendCustomCommand("animaX:clearAllParts", data);
+    nAPI.sendCustomCommand('animaX:clearAllParts', data);
   };
   _alias_nAPI_onCustomCommand3434343 = nAPI.onCustomCommand;
-  nAPI.onCustomCommand = function(name, data) {
+  nAPI.onCustomCommand = function (name, data) {
     var actorId, animaX, e, mapId, ref, ref1;
     _alias_nAPI_onCustomCommand3434343.call(this, ...arguments);
     try {
-      if (name === "animaX:refreshXAnima") {
-        ({actorId, mapId} = data);
+      if (name === 'animaX:refreshXAnima') {
+        ({ actorId, mapId } = data);
         //return unless $gameMap.mapId() == mapId
         // * Через поле, чтобы не было цикла отправки команды
         if ((ref = $gameActors.actor(actorId)) != null) {
           ref._isNeedAnimaXRefresh = true;
         }
-      } else if (name === "animaX:playerExternal") {
-        ({actorId, animaX, mapId} = data);
+      } else if (name === 'animaX:playerExternal') {
+        ({ actorId, animaX, mapId } = data);
         // * Для себя не нужно, так как используется другая gameSystem переменная
         if (actorId === $gameParty.leader().actorId()) {
           return;
@@ -3565,13 +3506,13 @@ PKD_ANIMAX.ApplyNETZPatch = function() {
         if ((ref1 = $gameActors.actor(actorId)) != null) {
           ref1._isNeedAnimaXRefresh = true;
         }
-      } else if (name === "animaX:action") {
+      } else if (name === 'animaX:action') {
         PKD_ANIMAX.onAnimaXActionFromNetwork(data);
         return;
-      } else if (name === "animaX:changePart") {
+      } else if (name === 'animaX:changePart') {
         PKD_ANIMAX.onAnimaXChangePartFromNetwork(data);
         return;
-      } else if (name === "animaX:clearAllParts") {
+      } else if (name === 'animaX:clearAllParts') {
         PKD_ANIMAX.onAnimaXClearAllPartsFromNetwork(data);
         return;
       }
@@ -3580,17 +3521,17 @@ PKD_ANIMAX.ApplyNETZPatch = function() {
       console.warn(e);
     }
   };
-  PKD_ANIMAX.onAnimaXActionFromNetwork = function(data) {
+  PKD_ANIMAX.onAnimaXActionFromNetwork = function (data) {
     var actorId, char, charId, e, isLoop, isWait, mapId, name;
     try {
-      ({actorId, mapId} = data);
+      ({ actorId, mapId } = data);
       if (actorId === $gameParty.leader().actorId()) {
         return;
       }
       if ($gameMap.mapId() !== mapId) {
         return;
       }
-      ({charId, name, isLoop, isWait} = data);
+      ({ charId, name, isLoop, isWait } = data);
       if (charId === 0) {
         char = $gameMap.networkCharacterByActorId(actorId);
       } else {
@@ -3609,14 +3550,14 @@ PKD_ANIMAX.ApplyNETZPatch = function() {
       return console.warn(e);
     }
   };
-  PKD_ANIMAX.onAnimaXChangePartFromNetwork = function(data) {
+  PKD_ANIMAX.onAnimaXChangePartFromNetwork = function (data) {
     var actorId, char, charId, e, isAdd, isRelative, mapId, partId;
     try {
-      ({actorId, mapId} = data);
+      ({ actorId, mapId } = data);
       if (actorId === $gameParty.leader().actorId()) {
         return;
       }
-      ({charId, partId, isRelative, isAdd} = data);
+      ({ charId, partId, isRelative, isAdd } = data);
       if (charId === 0) {
         char = $gameMap.networkCharacterByActorId(actorId);
       } else {
@@ -3639,14 +3580,14 @@ PKD_ANIMAX.ApplyNETZPatch = function() {
       return console.warn(e);
     }
   };
-  PKD_ANIMAX.onAnimaXClearAllPartsFromNetwork = function(data) {
+  PKD_ANIMAX.onAnimaXClearAllPartsFromNetwork = function (data) {
     var actorId, char, charId, e, mapId;
     try {
-      ({actorId, mapId} = data);
+      ({ actorId, mapId } = data);
       if (actorId === $gameParty.leader().actorId()) {
         return;
       }
-      ({charId} = data);
+      ({ charId } = data);
       if (charId === 0) {
         char = $gameMap.networkCharacterByActorId(actorId);
       } else {
@@ -3662,7 +3603,8 @@ PKD_ANIMAX.ApplyNETZPatch = function() {
       return console.warn(e);
     }
   };
-  (function() {    //╒═════════════════════════════════════════════════════════════════════════╛
+  (function () {
+    //╒═════════════════════════════════════════════════════════════════════════╛
     // ■ NETCharacter.coffee
     //╒═════════════════════════════════════════════════════════════════════════╛
     //---------------------------------------------------------------------------
@@ -3671,19 +3613,19 @@ PKD_ANIMAX.ApplyNETZPatch = function() {
     _ = NETCharacter.prototype;
     //@[ALIAS]
     ALIAS__refresh = _.refresh;
-    _.refresh = function() {
+    _.refresh = function () {
       ALIAS__refresh.call(this);
       return this.refreshAnimaX();
     };
     //@[ALIAS]
     ALIAS__update = _.update;
-    _.update = function() {
+    _.update = function () {
       ALIAS__update.call(this);
       if (this.isAnimX()) {
         return this._updateAnimX();
       }
     };
-    _.getCurrentAnimaXProfile = function() {
+    _.getCurrentAnimaXProfile = function () {
       var equipAnimaXSet;
       if (this.isAnimX()) {
         equipAnimaXSet = this._getEquipmentAnimaXSet();
@@ -3693,13 +3635,13 @@ PKD_ANIMAX.ApplyNETZPatch = function() {
       }
       return this.getInitialXProfile();
     };
-    _.getInitialXProfile = function() {
+    _.getInitialXProfile = function () {
       var actor;
       actor = this.getBattlerForAnimaX();
       if (actor == null) {
         return null;
       }
-      if (($gameSystem.netAnimaXExternelProfiles != null) && PKD_ANIMAX.KString.any($gameSystem.netAnimaXExternelProfiles[actor.actorId()])) {
+      if ($gameSystem.netAnimaXExternelProfiles != null && PKD_ANIMAX.KString.any($gameSystem.netAnimaXExternelProfiles[actor.actorId()])) {
         return $gameSystem.netAnimaXExternelProfiles[actor.actorId()];
       } else {
         return PKD_ANIMAX.KGameItems.GetMeta('xAnima', actor.actor());
@@ -3707,7 +3649,7 @@ PKD_ANIMAX.ApplyNETZPatch = function() {
     };
     // * Если хост выходит из игры, то на клиенте из-за обновления AnimaX вылетает ошибка
     // * так как данные игрока удаляются, поэтому доп. try catch
-    _.getBattlerForAnimaX = function() {
+    _.getBattlerForAnimaX = function () {
       var actor, e;
       try {
         actor = this.actor();
@@ -3719,7 +3661,7 @@ PKD_ANIMAX.ApplyNETZPatch = function() {
         //TODO: Временное решение
         // * Т.к. если хост выходит игра заканчивается (относительно NETZ 0.7)
         if (this.isAnimX()) {
-          this.getBattlerForAnimaX = function() {
+          this.getBattlerForAnimaX = function () {
             return $gameParty.leader();
           };
         }
@@ -3727,11 +3669,12 @@ PKD_ANIMAX.ApplyNETZPatch = function() {
       return actor;
     };
     //TODO: Временное решение
-    _.isDashingForAnimaX = function() {
+    _.isDashingForAnimaX = function () {
       return this._moveSpeed > 4;
     };
   })();
-  (function() {    // ■ END NETCharacter.coffee
+  (function () {
+    // ■ END NETCharacter.coffee
     //---------------------------------------------------------------------------
 
     //╒═════════════════════════════════════════════════════════════════════════╛
@@ -3739,13 +3682,13 @@ PKD_ANIMAX.ApplyNETZPatch = function() {
     //╒═════════════════════════════════════════════════════════════════════════╛
     //---------------------------------------------------------------------------
     var ALIAS___fillNetworkObserver, _;
-    
+
     //@[DEFINES]
     _ = Game_Actor.prototype;
-    
+
     //@[ALIAS]
     ALIAS___fillNetworkObserver = _._fillNetworkObserver;
-    _._fillNetworkObserver = function() {
+    _._fillNetworkObserver = function () {
       ALIAS___fillNetworkObserver.call(this);
       // * Эти все поля для обновления Visual Equipment
       this.netDataObserver.readField(this, '_isNeedAnimaXRefresh');
@@ -3754,7 +3697,8 @@ PKD_ANIMAX.ApplyNETZPatch = function() {
       this.netDataObserver.readField(this, 'axPreviousLayers');
     };
   })();
-  return (function() {    // ■ END Game_Actor.coffee
+  return (function () {
+    // ■ END Game_Actor.coffee
     //---------------------------------------------------------------------------
 
     //╒═════════════════════════════════════════════════════════════════════════╛
@@ -3762,14 +3706,14 @@ PKD_ANIMAX.ApplyNETZPatch = function() {
     //╒═════════════════════════════════════════════════════════════════════════╛
     //---------------------------------------------------------------------------
     var _;
-    
+
     //@[DEFINES]
     _ = Game_Map.prototype;
-    
+
     // * Этот метод появился только в NETZ 0.7
     if (_.networkCharacterByActorId == null) {
-      _.networkCharacterByActorId = function(actorId) {
-        return this.netChars().find(function(c) {
+      _.networkCharacterByActorId = function (actorId) {
+        return this.netChars().find(function (c) {
           return c.playerData().actorId === actorId;
         });
       };
@@ -3780,58 +3724,56 @@ PKD_ANIMAX.ApplyNETZPatch = function() {
 // ■ END Game_Map.coffee
 //---------------------------------------------------------------------------
 
-
 var AX_LoadingManager;
 (function (AX_LoadingManager) {
-    const directions4 = ['D', 'L', 'R', 'U'];
-    const directions8 = ['D', 'DL', 'DR', 'L', 'R', 'U', 'UL', 'UR'];
-    function IsLoadingDone() {
-        return _isAnimationsAreReady();
+  const directions4 = ['D', 'L', 'R', 'U'];
+  const directions8 = ['D', 'DL', 'DR', 'L', 'R', 'U', 'UL', 'UR'];
+  function IsLoadingDone() {
+    return _isAnimationsAreReady();
+  }
+  AX_LoadingManager.IsLoadingDone = IsLoadingDone;
+  function _isAnimationsAreReady() {
+    /*@ts-ignore*/
+    let playerProfileName = $gamePlayer.getInitialXProfile();
+    // * Skip for now
+    let actionsList = _getAllAnimationActionsFilesList(playerProfileName);
+    for (let action of actionsList) {
+      /*@ts-ignore*/
+      let bitmap = ImageManager.loadAnimaX(action);
+      if (!bitmap.isReady()) {
+        return false;
+      }
     }
-    AX_LoadingManager.IsLoadingDone = IsLoadingDone;
-    function _isAnimationsAreReady() {
-        /*@ts-ignore*/
-        let playerProfileName = $gamePlayer.getInitialXProfile();
+    let baseAnimations = _getAllBaseAnimationsForStates(playerProfileName);
+    for (let animationName of baseAnimations) {
+      /*@ts-ignore*/
+      let bitmap = ImageManager.loadAnimaX(animationName);
+      if (!bitmap.isReady()) {
+        return false;
+      }
+    }
+    return true;
+  }
+  let _cachedActionsList = {};
+  function _getAllAnimationActionsFilesList(animaXProfileName) {
+    if (_cachedActionsList[animaXProfileName]) {
+      return _cachedActionsList[animaXProfileName];
+    }
+    let fileslist = [];
+    /*@ts-ignore*/
+    let allAnimations = PKD_ANIMAX.Animations;
+    let animaXProfile = allAnimations.find(a => a.id === animaXProfileName);
+    if (!animaXProfile) {
+      return fileslist;
+    }
+    let actions = animaXProfile.actions;
+    for (let action of actions) {
+      let actionData = action;
+      if (actionData.isSpritesheet) {
+        fileslist.push(actionData.name);
+      } else {
         // * Skip for now
-        let actionsList = _getAllAnimationActionsFilesList(playerProfileName);
-        for (let action of actionsList) {
-            /*@ts-ignore*/
-            let bitmap = ImageManager.loadAnimaX(action);
-            if (!bitmap.isReady()) {
-                return false;
-            }
-        }
-        let baseAnimations = _getAllBaseAnimationsForStates(playerProfileName);
-        for (let animationName of baseAnimations) {
-            /*@ts-ignore*/
-            let bitmap = ImageManager.loadAnimaX(animationName);
-            if (!bitmap.isReady()) {
-                return false;
-            }
-        }
-        return true;
-    }
-    let _cachedActionsList = {};
-    function _getAllAnimationActionsFilesList(animaXProfileName) {
-        if (_cachedActionsList[animaXProfileName]) {
-            return _cachedActionsList[animaXProfileName];
-        }
-        let fileslist = [];
-        /*@ts-ignore*/
-        let allAnimations = PKD_ANIMAX.Animations;
-        let animaXProfile = allAnimations.find(a => a.id === animaXProfileName);
-        if (!animaXProfile) {
-            return fileslist;
-        }
-        let actions = animaXProfile.actions;
-        for (let action of actions) {
-            let actionData = action;
-            if (actionData.isSpritesheet) {
-                fileslist.push(actionData.name);
-            }
-            else {
-                // * Skip for now
-                /*if(actionData.is8Way) {
+        /*if(actionData.is8Way) {
                     for(let dir of directions8) {
                         for(let i = 0; i < actionData.frames; i++) {
                             fileslist.push(actionData.name + '_' + dir + '_' + i);
@@ -3844,48 +3786,46 @@ var AX_LoadingManager;
                         }
                     }
                 }*/
-            }
-        }
-        fileslist = fileslist.map(f => animaXProfileName + "/Actions/" + f);
-        _cachedActionsList[animaXProfileName] = fileslist;
-        return fileslist;
+      }
     }
-    let _cachedBaseAnimations = {};
-    function _getAllBaseAnimationsForStates(animaXProfileName) {
-        if (_cachedBaseAnimations[animaXProfileName]) {
-            return _cachedBaseAnimations[animaXProfileName];
+    fileslist = fileslist.map(f => animaXProfileName + '/Actions/' + f);
+    _cachedActionsList[animaXProfileName] = fileslist;
+    return fileslist;
+  }
+  let _cachedBaseAnimations = {};
+  function _getAllBaseAnimationsForStates(animaXProfileName) {
+    if (_cachedBaseAnimations[animaXProfileName]) {
+      return _cachedBaseAnimations[animaXProfileName];
+    }
+    let fileslist = [];
+    /*@ts-ignore*/
+    let allAnimations = PKD_ANIMAX.Animations;
+    let animaXProfile = allAnimations.find(a => a.id === animaXProfileName);
+    if (!animaXProfile) {
+      return fileslist;
+    }
+    let moveState = animaXProfile.base.move;
+    moveState.name = 'Move';
+    let idleState = animaXProfile.base.idle;
+    if (idleState) {
+      idleState.name = 'Idle';
+    }
+    let dashState = animaXProfile.base.dash;
+    if (dashState) {
+      dashState.name = 'Dashing';
+    }
+    let states = [moveState, idleState, dashState];
+    for (let state of states) {
+      if (!state) continue;
+      let actionData = state;
+      if (actionData.isSpritesheet) {
+        fileslist.push(actionData.name);
+        if (actionData.isSepareteSpritesheet) {
+          fileslist.push(actionData.name + '_DIAG');
         }
-        let fileslist = [];
-        /*@ts-ignore*/
-        let allAnimations = PKD_ANIMAX.Animations;
-        let animaXProfile = allAnimations.find(a => a.id === animaXProfileName);
-        if (!animaXProfile) {
-            return fileslist;
-        }
-        let moveState = animaXProfile.base.move;
-        moveState.name = "Move";
-        let idleState = animaXProfile.base.idle;
-        if (idleState) {
-            idleState.name = "Idle";
-        }
-        let dashState = animaXProfile.base.dash;
-        if (dashState) {
-            dashState.name = "Dashing";
-        }
-        let states = [moveState, idleState, dashState];
-        for (let state of states) {
-            if (!state)
-                continue;
-            let actionData = state;
-            if (actionData.isSpritesheet) {
-                fileslist.push(actionData.name);
-                if (actionData.isSepareteSpritesheet) {
-                    fileslist.push(actionData.name + "_DIAG");
-                }
-            }
-            else {
-                // * Skip for now
-                /*if(actionData.is8Way) {
+      } else {
+        // * Skip for now
+        /*if(actionData.is8Way) {
                     for(let dir of directions8) {
                         for(let i = 0; i < actionData.frames; i++) {
                             fileslist.push(actionData.name + '_' + dir + '_' + i);
@@ -3898,27 +3838,26 @@ var AX_LoadingManager;
                         }
                     }
                 }*/
-            }
-        }
-        fileslist = fileslist.map(f => animaXProfileName + "/" + f);
-        _cachedBaseAnimations[animaXProfileName] = fileslist;
-        return fileslist;
+      }
     }
+    fileslist = fileslist.map(f => animaXProfileName + '/' + f);
+    _cachedBaseAnimations[animaXProfileName] = fileslist;
+    return fileslist;
+  }
 })(AX_LoadingManager || (AX_LoadingManager = {}));
-
 
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ DataManager.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var ALIAS__loadDatabase, _;
   //@[DEFINES]
   _ = DataManager;
   //@[ALIAS]
   ALIAS__loadDatabase = _.loadDatabase;
-  _.loadDatabase = function() {
+  _.loadDatabase = function () {
     PKD_ANIMAX.LoadPluginSettings();
     PKD_ANIMAX.ApplyExtensions();
     PKD_ANIMAX.PreloadAllImages();
@@ -3929,15 +3868,14 @@ var AX_LoadingManager;
 // ■ END DataManager.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ DiagonalMovement
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-PKD_ANIMAX.ActivateDiagonalMovement = function() {
+PKD_ANIMAX.ActivateDiagonalMovement = function () {
   var get4Dir, get8Dir;
-  get8Dir = function(d) {
+  get8Dir = function (d) {
     switch (d) {
       case 1:
         return [4, 2];
@@ -3951,7 +3889,7 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
         return [0, 0];
     }
   };
-  get4Dir = function(horz, vert) {
+  get4Dir = function (horz, vert) {
     if (horz === 4 && vert === 2) {
       return 1;
     }
@@ -3966,34 +3904,35 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
     }
     return 0;
   };
-  (function() {    //╒═════════════════════════════════════════════════════════════════════════╛
+  (function () {
+    //╒═════════════════════════════════════════════════════════════════════════╛
     // ■ Game_CharacterBase.coffee
     //╒═════════════════════════════════════════════════════════════════════════╛
     //---------------------------------------------------------------------------
     var ALIAS__moveStraight, ALIAS__realMoveSpeed, ALIAS__setDirection, _;
-    
+
     //@[DEFINES]
     _ = Game_CharacterBase.prototype;
-    
+
     //@[ALIAS]
     ALIAS__moveStraight = _.moveStraight;
-    _.moveStraight = function(d) {
+    _.moveStraight = function (d) {
       this._diagonalDir = false;
       return ALIAS__moveStraight.call(this, d);
     };
-    
+
     //@[ALIAS]
     ALIAS__setDirection = _.setDirection;
-    _.setDirection = function(d) {
+    _.setDirection = function (d) {
       if (this._diagStraigten === true) {
         this._diagonalDir = false;
       }
       return ALIAS__setDirection.call(this, d);
     };
-    
+
     //@[ALIAS]
     ALIAS__realMoveSpeed = _.realMoveSpeed;
-    _.realMoveSpeed = function() {
+    _.realMoveSpeed = function () {
       var speed;
       speed = ALIAS__realMoveSpeed.call(this);
       if (this._diagonalDir) {
@@ -4002,7 +3941,7 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
         return speed;
       }
     };
-    _.moveDiagonally = function(horz, vert) {
+    _.moveDiagonally = function (horz, vert) {
       var diag, norm;
       diag = this.canPassDiagonally(this._x, this._y, horz, vert);
       norm = this.canPass(this._x, this._y, horz) || this.canPass(this._x, this._y, vert);
@@ -4026,7 +3965,7 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
       }
       this._diagStraigten = true;
     };
-    _.getOtherDirection = function(horz, vert) {
+    _.getOtherDirection = function (horz, vert) {
       if (this.canPass(this._x, this._y, horz)) {
         return horz;
       } else {
@@ -4034,7 +3973,8 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
       }
     };
   })();
-  (function() {    // ■ END Game_CharacterBase.coffee
+  (function () {
+    // ■ END Game_CharacterBase.coffee
     //---------------------------------------------------------------------------
 
     //╒═════════════════════════════════════════════════════════════════════════╛
@@ -4042,12 +3982,12 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
     //╒═════════════════════════════════════════════════════════════════════════╛
     //---------------------------------------------------------------------------
     var ALIAS__executeMove, _;
-    
+
     //@[DEFINES]
     _ = Game_Player.prototype;
-    
+
     //$[OVER]
-    _.canPassDiagonally = function(x, y, horz, vert) {
+    _.canPassDiagonally = function (x, y, horz, vert) {
       var x2, y2;
       x2 = $gameMap.roundXWithDirection(x, horz);
       y2 = $gameMap.roundYWithDirection(y, vert);
@@ -4056,15 +3996,15 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
       }
       return false;
     };
-    
+
     //$[OVER]
-    _.getInputDirection = function() {
+    _.getInputDirection = function () {
       return Input.dir8;
     };
-    
+
     //@[ALIAS]
     ALIAS__executeMove = _.executeMove;
-    _.executeMove = function(direction) {
+    _.executeMove = function (direction) {
       var horz, vert;
       if (direction % 2 === 0) {
         return ALIAS__executeMove.call(this, direction);
@@ -4074,7 +4014,8 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
       }
     };
   })();
-  (function() {    // ■ END Game_Player.coffee
+  (function () {
+    // ■ END Game_Player.coffee
     //---------------------------------------------------------------------------
 
     //╒═════════════════════════════════════════════════════════════════════════╛
@@ -4082,19 +4023,49 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
     //╒═════════════════════════════════════════════════════════════════════════╛
     //---------------------------------------------------------------------------
     var ALIAS__findDirectionTo, _;
-    
+
     //@[DEFINES]
     _ = Game_Player.prototype;
     ALIAS__findDirectionTo = _.findDirectionTo;
-    _.findDirectionTo = function(goalX, goalY) {
+    _.findDirectionTo = function (goalX, goalY) {
       if ($gameSystem.paxDiagonalIsDisabled === true) {
         return ALIAS__findDirectionTo.call(this, goalX, goalY);
       } else {
         return this._findDirectionToDiagonal(goalX, goalY);
       }
     };
-    _._findDirectionToDiagonal = function(goalX, goalY) {
-      var best, bestIndex, closedList, current, deltaX1, deltaX2, deltaY1, deltaY2, diag, direction, g1, g2, goaled, horz, i, index2, j, mapWidth, neighbor, node, nodeList, openList, pos1, pos2, searchLimit, start, vert, x1, x2, y1, y2;
+    _._findDirectionToDiagonal = function (goalX, goalY) {
+      var best,
+        bestIndex,
+        closedList,
+        current,
+        deltaX1,
+        deltaX2,
+        deltaY1,
+        deltaY2,
+        diag,
+        direction,
+        g1,
+        g2,
+        goaled,
+        horz,
+        i,
+        index2,
+        j,
+        mapWidth,
+        neighbor,
+        node,
+        nodeList,
+        openList,
+        pos1,
+        pos2,
+        searchLimit,
+        start,
+        vert,
+        x1,
+        x2,
+        y1,
+        y2;
       searchLimit = 16;
       mapWidth = $gameMap.width();
       nodeList = [];
@@ -4225,7 +4196,8 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
       return 0;
     };
   })();
-  (function() {    // ■ END Game_Player.coffee
+  (function () {
+    // ■ END Game_Player.coffee
     //---------------------------------------------------------------------------
 
     //╒═════════════════════════════════════════════════════════════════════════╛
@@ -4233,12 +4205,12 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
     //╒═════════════════════════════════════════════════════════════════════════╛
     //---------------------------------------------------------------------------
     var _;
-    
+
     //@[DEFINES]
     _ = Game_Follower.prototype;
-    
+
     //$[OVER]
-    _.realMoveSpeed = function() {
+    _.realMoveSpeed = function () {
       return $gamePlayer.realMoveSpeed();
     };
   })();
@@ -4249,19 +4221,18 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
 // ■ END Game_Follower.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Game_Actor.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var ALIAS__initMembers, ALIAS__refresh, _;
   //@[DEFINES]
   _ = Game_Actor.prototype;
   //@[ALIAS]
   ALIAS__initMembers = _.initMembers;
-  _.initMembers = function() {
+  _.initMembers = function () {
     ALIAS__initMembers.call(this);
     this.axLayersByEquips = [];
     this.axLayersByEquipsRelative = [];
@@ -4270,7 +4241,7 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
   };
   //@[ALIAS]
   ALIAS__refresh = _.refresh;
-  _.refresh = function() {
+  _.refresh = function () {
     ALIAS__refresh.call(this);
     this.refreshAnimaXLayers();
     this.requestRefreshAnimaX();
@@ -4280,26 +4251,25 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
 // ■ END Game_Actor.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Game_Actor.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var _;
   //@[DEFINES]
   _ = Game_Actor.prototype;
-  _.requestRefreshAnimaX = function() {
-    return this._isNeedAnimaXRefresh = true;
+  _.requestRefreshAnimaX = function () {
+    return (this._isNeedAnimaXRefresh = true);
   };
-  _.isNeedAnimaXRefresh = function() {
+  _.isNeedAnimaXRefresh = function () {
     return this._isNeedAnimaXRefresh === true;
   };
-  _.onAnimaXRefresh = function() {
-    return this._isNeedAnimaXRefresh = null;
+  _.onAnimaXRefresh = function () {
+    return (this._isNeedAnimaXRefresh = null);
   };
-  _.getAnimaXEquipmentSet = function() {
+  _.getAnimaXEquipmentSet = function () {
     var e, equipSet, i, len, ref;
     ref = this.equips();
     for (i = 0, len = ref.length; i < len; i++) {
@@ -4317,7 +4287,7 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
   // * Чтобы не удалялись части, которые добавленны параметром плагина
   // * используется массив axPreviousLayers, в котором храняться части
   // * которые были в прошлый раз, но в этот их уже нету - т.е. их надо удалить
-  _.refreshAnimaXLayers = function() {
+  _.refreshAnimaXLayers = function () {
     var e, equipLayer, i, len, ref;
     this.axPreviousLayers = [...this.axLayersByEquips, ...this.axLayersByEquipsRelative];
     this.axLayersByEquips = [];
@@ -4334,7 +4304,7 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
       this._registerLayerByEquip(equipLayer, true);
     }
   };
-  _._registerLayerByEquip = function(name, isRelative) {
+  _._registerLayerByEquip = function (name, isRelative) {
     if (!PKD_ANIMAX.KString.any(name)) {
       return;
     }
@@ -4350,20 +4320,20 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
 // ■ END Game_Actor.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Game_Character.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var _;
   //@[DEFINES]
   _ = Game_Character.prototype;
-  (function() {    // * Система анимации XAnima и ABS
+  (function () {
+    // * Система анимации XAnima и ABS
     // -----------------------------------------------------------------------
     // * Предзагрузить действие
-    _.preloadAnimaXAction = function(actionParams, isWaiting) {
+    _.preloadAnimaXAction = function (actionParams, isWaiting) {
       var animaSet;
       if (actionParams == null) {
         return;
@@ -4375,23 +4345,23 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
       this._axPreloadedActions[actionParams.name] = animaSet;
     };
     // * Создать AnimaXSet из параметров плагина анимации
-    _.createAnimaXActionSet = function(actionParams) {
+    _.createAnimaXActionSet = function (actionParams) {
       var animaSet, name;
       name = actionParams.name;
       animaSet = XAnimaTools.createXAnimaSetForAction(this.animXId(), actionParams);
       animaSet.preLoad();
       return animaSet;
     };
-    _.isAnimaXActionIsPreloaded = function(actionName) {
+    _.isAnimaXActionIsPreloaded = function (actionName) {
       return this.getPreloadAnimaXActionSet(actionName) != null;
     };
-    _.getPreloadAnimaXActionSet = function(actionName) {
+    _.getPreloadAnimaXActionSet = function (actionName) {
       return this._axPreloadedActions[actionName];
     };
-    _.refreshAnimaX = function() {
+    _.refreshAnimaX = function () {
       var animaXProfile;
       animaXProfile = this.getCurrentAnimaXProfile();
-      if ((this._currentAnimaXProfile != null) && (animaXProfile == null)) {
+      if (this._currentAnimaXProfile != null && animaXProfile == null) {
         this._currentAnimaXProfile = null;
         if (this.isAnimX()) {
           this.clearAnimaX();
@@ -4399,12 +4369,11 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
         return;
       }
       if (this._currentAnimaXProfile === animaXProfile) {
-
       } else {
         this.createNewAnimaXForCharacter(animaXProfile);
       }
     };
-    _.createNewAnimaXForCharacter = function(animaXProfile) {
+    _.createNewAnimaXForCharacter = function (animaXProfile) {
       var animaX;
       animaX = XAnimaTools.getXAnimaParamsForState('base', animaXProfile);
       if (animaX == null) {
@@ -4419,15 +4388,15 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
       this.refreshAnimaXLayers();
     };
     // * Получить профиль анимации (для загрузки)
-    _.getCurrentAnimaXProfile = function() {
+    _.getCurrentAnimaXProfile = function () {
       return null;
     };
     // * Получить начальный профиль персонажа (без экипировки)
-    _.getInitialXProfile = function() {
+    _.getInitialXProfile = function () {
       return null;
     };
     // * Регистрация действий (названий) и предзагрузка
-    _.registerAnimaXActions = function(animaXProfile) {
+    _.registerAnimaXActions = function (animaXProfile) {
       var action, actionList, i, len;
       actionList = XAnimaTools.getXAnimaActionList(animaXProfile);
       for (i = 0, len = actionList.length; i < len; i++) {
@@ -4439,11 +4408,11 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
       }
     };
     // * Набор имён стандартных действий (нужны для предзагрузки)
-    _.isAnimaXAADefaultAction = function(actionName) {
+    _.isAnimaXAADefaultAction = function (actionName) {
       return false;
     };
     // * Проверка обновления состояния анимации на Battler
-    _._updateAnimXRefresh = function() {
+    _._updateAnimXRefresh = function () {
       var b;
       b = this.getBattlerForAnimaX();
       if (b == null) {
@@ -4455,11 +4424,11 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
         b.onAnimaXRefresh();
       }
     };
-    _.getBattlerForAnimaX = function() {
+    _.getBattlerForAnimaX = function () {
       return null;
     };
     // * Получить набор экипировки для Анимации
-    _._getEquipmentAnimaXSet = function() {
+    _._getEquipmentAnimaXSet = function () {
       var b, equipmentXSet, initialProfile;
       initialProfile = this.getInitialXProfile();
       if (initialProfile == null) {
@@ -4471,12 +4440,12 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
       }
       equipmentXSet = b.getAnimaXEquipmentSet();
       if (equipmentXSet != null) {
-        return this.getInitialXProfile() + "_" + equipmentXSet;
+        return this.getInitialXProfile() + '_' + equipmentXSet;
       }
       return null;
     };
     // * Обновить слои с учётом экипировки
-    return _.refreshAnimaXLayers = function() {
+    return (_.refreshAnimaXLayers = function () {
       var actor, e, i, j, k, l, len, len1, len2, ref, ref1, ref2;
       if (!this.isAnimX()) {
         return;
@@ -4505,22 +4474,22 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
         e = error;
         console.warn(e);
       }
-    };
+    });
   })();
-  (function() {    // * Действия
+  (function () {
+    // * Действия
     // -----------------------------------------------------------------------
-    _.startAnimaXAA_Attack = function() {
+    _.startAnimaXAA_Attack = function () {
       return this.startAnimaXCustomAction('Attack', false, true);
     };
-    return _.startAnimaXAA_Defense = function() {
+    return (_.startAnimaXAA_Defense = function () {
       return this.startAnimaXCustomAction('Defense', true, false);
-    };
+    });
   })();
 })();
 
 // ■ END Game_Character.coffee
 //---------------------------------------------------------------------------
-
 
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
@@ -4528,24 +4497,25 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
 //$[ENCODE]
-(function() {
+(function () {
   var _;
   //@[DEFINES]
   _ = Game_Character.prototype;
-  (function() {    // * Система анимации XAnima
+  (function () {
+    // * Система анимации XAnima
     // -----------------------------------------------------------------------
-    
+
     //@[FROM Game_CharacterBase]
 
     // * Персонаж использует XAnima
-    _.isAnimX = function() {
+    _.isAnimX = function () {
       return this._isHaveAnimaX === true;
     };
     // * ID набора анимаций (по нему определяется имя папки)
-    _.animXId = function() {
+    _.animXId = function () {
       return this._axId;
     };
-    _.forceClearAnimaX = function() {
+    _.forceClearAnimaX = function () {
       var e;
       try {
         return this.refreshAnimaX();
@@ -4555,44 +4525,44 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
       }
     };
     // * Есть ли Idle анимация у текущего состояния
-    _.isHaveIdleAnimaX = function() {
+    _.isHaveIdleAnimaX = function () {
       return this._axIdle() != null;
     };
     // * Есть ли Dashing (бег) анимация у текущего состояния
-    _.isHaveDashAnimaX = function() {
+    _.isHaveDashAnimaX = function () {
       return this._axDashing() != null;
     };
     // * Есть ли анимация для состояния
-    _.isHaveAnimaXState = function(state) {
+    _.isHaveAnimaXState = function (state) {
       return this._axStates[state] != null;
     };
     // * Находится ли анимация в действии
-    _.isInAnimXAction = function() {
+    _.isInAnimXAction = function () {
       return this.isAnimX() && this.getCurrentAnimX().isAction();
     };
     // * Находится ли анимация в движении (имеется в виду moveSet)
     // * Также Dashing тоже является анимацией движения
-    _.isInMovementAnimaX = function() {
+    _.isInMovementAnimaX = function () {
       return this._axCurrent === this._axMovement();
     };
-    _.isInAnyMovementAnimaX = function() {
+    _.isInAnyMovementAnimaX = function () {
       return this.isInMovementAnimaX() || this.isInDashingAnimaX();
     };
     // * Находится ли анимация текущая в состоянии Idle
-    _.isInIdleAnimaX = function() {
+    _.isInIdleAnimaX = function () {
       return this._axCurrent === this._axIdle();
     };
     // * Находится ли анимация текущая в состоянии Dashing (Бег)
-    _.isInDashingAnimaX = function() {
+    _.isInDashingAnimaX = function () {
       return this._axCurrent === this._axDashing();
     };
     // * Когда запускается действие
-    _.onAnimaXActionStart = function() {
-      return this._xAnimaToIdleTimer = 0; // * Сбро таймера перехода в Idle
+    _.onAnimaXActionStart = function () {
+      return (this._xAnimaToIdleTimer = 0); // * Сбро таймера перехода в Idle
     };
-    
+
     // * Когда действие заканчивается
-    _.onAnimaXActionEnd = function() {
+    _.onAnimaXActionEnd = function () {
       var e;
       try {
         return this._processAnimaActionEndBehav();
@@ -4601,17 +4571,17 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
         return console.warn(e);
       }
     };
-    _._processAnimaActionEndBehav = function() {
+    _._processAnimaActionEndBehav = function () {
       var actionName, behav, e, scOnEnd, seOnEnd;
       try {
         if (this._axCurrent == null) {
           return;
         }
-        ({actionName, behav} = this._axCurrent);
+        ({ actionName, behav } = this._axCurrent);
         if (behav == null) {
           return;
         }
-        ({seOnEnd, scOnEnd} = behav);
+        ({ seOnEnd, scOnEnd } = behav);
         if (PKD_ANIMAX.KString.any(seOnEnd)) {
           PKD_ANIMAX.KAudio.PlaySE(seOnEnd);
         }
@@ -4629,7 +4599,7 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
       }
     };
     // * Должен ли ждать завершения действия
-    _.isShouldWaitAnimaXAction = function() {
+    _.isShouldWaitAnimaXAction = function () {
       var anima;
       if (this.isInAnyMovementAnimaX()) {
         return false;
@@ -4643,17 +4613,17 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
       return anima.isAction() && anima.isWait();
     };
     // * Есть ли данное действие у текущей XAnima конфигурации
-    _.isHaveAnimaXActionWithName = function(name) {
+    _.isHaveAnimaXActionWithName = function (name) {
       return this._axAvailableActionsList.contains(name);
     };
     // -----------------------------------------------------------------------
 
     // * Текущий XAnimaSet
-    _.getCurrentAnimX = function() {
+    _.getCurrentAnimX = function () {
       return this._axCurrent;
     };
     // * Запустить действие
-    _.startAnimaXAction = function(animX) {
+    _.startAnimaXAction = function (animX) {
       var e;
       try {
         this._axCurrent = animX;
@@ -4664,21 +4634,21 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
         return this.resetXAnimaState();
       }
     };
-    _._processAnimaActionStartBehav = function() {
+    _._processAnimaActionStartBehav = function () {
       var actionName, behav, e, scDelay, scOnStart, seDelay, seOnStart;
       try {
         if (this._axCurrent == null) {
           return;
         }
-        ({actionName, behav} = this._axCurrent);
+        ({ actionName, behav } = this._axCurrent);
         if (behav == null) {
           return;
         }
-        ({seOnStart, seDelay, scOnStart, scDelay} = behav);
+        ({ seOnStart, seDelay, scOnStart, scDelay } = behav);
         try {
           if (PKD_ANIMAX.KString.any(seOnStart)) {
-            if ((seDelay != null) && seDelay > 0) {
-              PKD_ANIMAX.KUtils.CallWithDelay(function() {
+            if (seDelay != null && seDelay > 0) {
+              PKD_ANIMAX.KUtils.CallWithDelay(function () {
                 return PKD_ANIMAX.KAudio.PlaySE(seOnStart);
               }, seDelay * 16);
             } else {
@@ -4691,8 +4661,8 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
         }
         try {
           if (PKD_ANIMAX.KString.any(scOnStart)) {
-            if ((scDelay != null) && scDelay > 0) {
-              return PKD_ANIMAX.KUtils.CallWithDelay(function() {
+            if (scDelay != null && scDelay > 0) {
+              return PKD_ANIMAX.KUtils.CallWithDelay(function () {
                 return eval(scOnStart);
               }, scDelay * 16);
             } else {
@@ -4708,9 +4678,9 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
         return console.warn(e);
       }
     };
-    
+
     // * Переключить состояние анимации (обычное, бой, и т.д.)
-    _.switchToXAnimaState = function(state) {
+    _.switchToXAnimaState = function (state) {
       if (this.isHaveAnimaXState(state)) {
         this._axState = state;
         if (!this.isInAnimXAction()) {
@@ -4724,7 +4694,7 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
     // * Инициализация
     // * Base состояние - стандартное, инициализируется всегда
     // * Если нет Base или нет movement, то не акитвируется система
-    _.initAnimaX = function(_axId, data) {
+    _.initAnimaX = function (_axId, data) {
       this._axId = _axId;
       this._axIsDestroyed = false;
       this.clearXAnimParts();
@@ -4740,7 +4710,7 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
       this._isHaveAnimaX = true;
       this.getCurrentAnimX().preLoad();
     };
-    _.deleteAnimaX = function() {
+    _.deleteAnimaX = function () {
       var e;
       try {
         if (!this.isAnimX()) {
@@ -4753,14 +4723,14 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
         this._isHaveAnimaX = false;
         this._currentAnimaXProfile = null;
         this._axIsDestroyed = true;
-        return this.__lastEventAnimaXExternProfile = null;
+        return (this.__lastEventAnimaXExternProfile = null);
       } catch (error) {
         e = error;
         return console.warn(e);
       }
     };
     // * Добавить анимацию для состояния
-    _.registerAnimaXState = function(state, data) {
+    _.registerAnimaXState = function (state, data) {
       var dashSet, e, idleSet, moveSet;
       try {
         if (data == null) {
@@ -4779,7 +4749,7 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
         if (idleSet != null) {
           idleSet.preLoad();
         }
-        if ((idleSet != null) && (data.moveToIdleDelay != null)) {
+        if (idleSet != null && data.moveToIdleDelay != null) {
           idleSet.moveToIdleDelay = data.moveToIdleDelay;
         }
         dashSet = this._createAnimaXSetFromParams(3, state, data.dash);
@@ -4794,14 +4764,14 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
       }
     };
     // * Сбросить состояние до базового
-    _.resetXAnimaState = function() {
+    _.resetXAnimaState = function () {
       this._axState = 'base';
       if (!this.isInAnimXAction()) {
         this.resetXAnima();
       }
     };
     // * Сбросить анимацию
-    _.resetXAnima = function() {
+    _.resetXAnima = function () {
       if (this.isInAnimXAction()) {
         this.onAnimaXActionEnd();
         if (this.__axShouldResetAnimaXAfterAction === true) {
@@ -4815,16 +4785,16 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
       this._setAnimaXToMovement();
     };
     // * Добавить действие (зарегестрировать, чтобы не было ошибок если вызвано, а нету файлов)
-    _.registerAnimaXAction = function(actionName) {
+    _.registerAnimaXAction = function (actionName) {
       return this._axAvailableActionsList.push(actionName);
     };
     // -----------------------------------------------------------------------
-    _._initMembersAnimaX = function() {
+    _._initMembersAnimaX = function () {
       this._xAnimaPartsRequireRefresh = false;
       this._xAnimaToIdleTimer = 0;
-      return this._isHaveAnimaX = false;
+      return (this._isHaveAnimaX = false);
     };
-    _._createXAnimaSetsForState = function(state, moveSet, idleSet, dashSet) {
+    _._createXAnimaSetsForState = function (state, moveSet, idleSet, dashSet) {
       this._axStates[state] = {};
       moveSet.preLoad();
       this._axStates[state].moveSet = moveSet;
@@ -4843,7 +4813,7 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
         this._axStates[state].dashSet = null;
       }
     };
-    _._createAnimaXSetFromParams = function(type, state, data) {
+    _._createAnimaXSetFromParams = function (type, state, data) {
       var axSet, e;
       axSet = null;
       try {
@@ -4853,11 +4823,13 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
           } else if (this.__axShouldResetAnimaXAfterAction === true) {
             axSet = XAnimaTools.createXAnimaSetForIndependentAction();
           }
-        } else if (type === 1) { // * IDLE
+        } else if (type === 1) {
+          // * IDLE
           if (data != null) {
             axSet = XAnimaTools.createXAnimaSetForIdle(this.animXId(), state, data);
           }
-        } else if (type === 3) { // * DASHING
+        } else if (type === 3) {
+          // * DASHING
           if (data != null) {
             axSet = XAnimaTools.createXAnimaSetForDashing(this.animXId(), state, data);
           }
@@ -4869,7 +4841,7 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
       }
       return axSet;
     };
-    _._updateAnimX = function() {
+    _._updateAnimX = function () {
       this._updateAnimXRefresh();
       if (this.isShouldWaitAnimaXAction()) {
         return;
@@ -4879,7 +4851,7 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
         return this._updateMoveIdleAnimaX();
       }
     };
-    _._updateMovingAnimX = function() {
+    _._updateMovingAnimX = function () {
       if (!this.isMoving()) {
         return;
       }
@@ -4891,7 +4863,7 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
         return this.resetXAnima();
       }
     };
-    _._updateMovingDashingAnimX = function() {
+    _._updateMovingDashingAnimX = function () {
       if (this.isDashingForAnimaX()) {
         if (!this.isInDashingAnimaX()) {
           this._setAnimaXToDashing();
@@ -4900,7 +4872,7 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
         this._setAnimaXToMovement();
       }
     };
-    _._updateMoveIdleAnimaX = function() {
+    _._updateMoveIdleAnimaX = function () {
       if (!this.isMoving()) {
         this._xAnimaToIdleTimer++;
         if (this._xAnimaToIdleTimer >= this._getAnimaXMoveToIdleDelay()) {
@@ -4908,13 +4880,13 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
         }
       }
     };
-    _._getAnimaXMoveToIdleDelay = function() {
+    _._getAnimaXMoveToIdleDelay = function () {
       return this._axIdle().moveToIdleDelay;
     };
-    _._axMovement = function() {
+    _._axMovement = function () {
       var e;
       try {
-        if ((this._axStates != null) && (this._axStates[this._axState] != null)) {
+        if (this._axStates != null && this._axStates[this._axState] != null) {
           return this._axStates[this._axState].moveSet;
         }
       } catch (error) {
@@ -4923,10 +4895,10 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
       }
       return null;
     };
-    _._axIdle = function() {
+    _._axIdle = function () {
       var e;
       try {
-        if ((this._axStates != null) && (this._axStates[this._axState] != null)) {
+        if (this._axStates != null && this._axStates[this._axState] != null) {
           return this._axStates[this._axState].idleSet;
         }
       } catch (error) {
@@ -4935,10 +4907,10 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
       }
       return null;
     };
-    _._axDashing = function() {
+    _._axDashing = function () {
       var e;
       try {
-        if ((this._axStates != null) && (this._axStates[this._axState] != null)) {
+        if (this._axStates != null && this._axStates[this._axState] != null) {
           return this._axStates[this._axState].dashSet;
         }
       } catch (error) {
@@ -4947,29 +4919,29 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
       }
       return null;
     };
-    _._setAnimaXToIdle = function() {
-      return this._axCurrent = this._axIdle();
+    _._setAnimaXToIdle = function () {
+      return (this._axCurrent = this._axIdle());
     };
-    _._setAnimaXToMovement = function() {
-      return this._axCurrent = this._axMovement();
+    _._setAnimaXToMovement = function () {
+      return (this._axCurrent = this._axMovement());
     };
-    _._setAnimaXToDashing = function() {
-      return this._axCurrent = this._axDashing();
+    _._setAnimaXToDashing = function () {
+      return (this._axCurrent = this._axDashing());
     };
-    _.clearAnimaX = function() {
+    _.clearAnimaX = function () {
       this.resetXAnima();
       this._isHaveAnimaX = false;
       this.initAnimaX(null, null);
     };
     // PARTS (LAYERS)
     // ----------------------------------------------------------------------
-    _.isAnimXPartsChanged = function() {
+    _.isAnimXPartsChanged = function () {
       return this._xAnimaPartsRequireRefresh === true;
     };
-    _.onAnimXPartsRefreshed = function() {
-      return this._xAnimaPartsRequireRefresh = false;
+    _.onAnimXPartsRefreshed = function () {
+      return (this._xAnimaPartsRequireRefresh = false);
     };
-    _.addNewXAnimPart = function(partId, isRelative = false) {
+    _.addNewXAnimPart = function (partId, isRelative = false) {
       var partSet;
       if (this.animaXParts[partId] != null) {
         return;
@@ -4981,19 +4953,19 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
       this.animaXParts[partId] = partSet;
       this._xAnimaPartsRequireRefresh = true;
     };
-    _.removeXAnimPart = function(partId) {
+    _.removeXAnimPart = function (partId) {
       this.animaXParts[partId] = null;
       delete this.animaXParts[partId];
       this._xAnimaPartsRequireRefresh = true;
     };
-    _.clearXAnimParts = function() {
+    _.clearXAnimParts = function () {
       this.animaXParts = {};
       this._xAnimaPartsRequireRefresh = true;
     };
     // -----------------------------------------------------------------------
 
     // * Запустить кастомное действие с параметрами (проверка предзагруженных)
-    _.startAnimaXCustomAction = function(name, isLoop = false, isWait = false) {
+    _.startAnimaXCustomAction = function (name, isLoop = false, isWait = false) {
       var actionParams, animaX;
       if (!this.isHaveAnimaXActionWithName(name)) {
         return false;
@@ -5023,92 +4995,92 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
 //---------------------------------------------------------------------------
 // -----------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Game_CharacterBase.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var _;
   //@[DEFINES]
   _ = Game_CharacterBase.prototype;
-  (function() {    // * Система анимации XAnima
+  (function () {
+    // * Система анимации XAnima
     // -----------------------------------------------------------------------
-    
+
     // * Персонаж использует XAnima
-    _.isAnimX = function() {
+    _.isAnimX = function () {
       return false;
     };
     // * ID набора анимаций
-    _.animXId = function() {
+    _.animXId = function () {
       return null;
     };
     // * Когда запускается действие
-    _.onAnimaXActionStart = function() {};
+    _.onAnimaXActionStart = function () {};
     // * Когда действие заканчивается
-    _.onAnimaXActionEnd = function() {};
-    
+    _.onAnimaXActionEnd = function () {};
+
     // * Находится ли анимация в действии
-    _.isInAnimXAction = function() {
+    _.isInAnimXAction = function () {
       return false;
     };
     // * Находится ли анимация в действии и необходимо ждать завершения
-    _.isAnimXIsBusy = function() {
+    _.isAnimXIsBusy = function () {
       return this.isAnimX() && this.isInAnimXAction() && this.isShouldWaitAnimaXAction();
     };
     // * Находится ли анимация в движении (имеется в виду moveSet)
-    _.isInMovementAnimaX = function() {
+    _.isInMovementAnimaX = function () {
       return false;
     };
     // * Надо ли применять анимацию бега на персонаже
-    _.isDashingForAnimaX = function() {
+    _.isDashingForAnimaX = function () {
       return false;
     };
     // * Находился ли персонаж в какой-либо анимации движения (или бег)
-    _.isInAnyMovementAnimaX = function() {
+    _.isInAnyMovementAnimaX = function () {
       return false;
     };
     // * Находится ли анимация в Idle
-    _.isInIdleAnimaX = function() {
+    _.isInIdleAnimaX = function () {
       return false;
     };
     // * Находится ли анимация текущая в состоянии Dashing (Бег)
-    _.isInDashingAnimaX = function() {
+    _.isInDashingAnimaX = function () {
       return false;
     };
     // * Есть ли Idle анимация у текущего состояния
-    _.isHaveIdleAnimaX = function() {
+    _.isHaveIdleAnimaX = function () {
       return false;
     };
     // * Есть ли анимация для состояния
-    _.isHaveAnimaXState = function() {
+    _.isHaveAnimaXState = function () {
       return false;
     };
     // * Есть ли Dashing (бег) анимация у текущего состояния
-    _.isHaveDashAnimaX = function() {
+    _.isHaveDashAnimaX = function () {
       return false;
     };
     // * Есть ли данное действие у текущей XAnima конфигурации
-    _.isHaveAnimaXActionWithName = function() {
+    _.isHaveAnimaXActionWithName = function () {
       return false;
     };
     // * Должен ли ждать завершения действия
-    _.isShouldWaitAnimaXAction = function() {
+    _.isShouldWaitAnimaXAction = function () {
       return false;
     };
     // * Отключить анимацию
-    _.clearAnimaX = function() {};
+    _.clearAnimaX = function () {};
     // * Действие является стандартным (используется для предзагрузки)
-    _.isAnimaXAADefaultAction = function(actionName) {
+    _.isAnimaXAADefaultAction = function (actionName) {
       return false;
     };
     // * Анимация действия была предзагруженна
-    _.isAnimaXActionIsPreloaded = function() {
+    _.isAnimaXActionIsPreloaded = function () {
       return false;
     };
     // * Были ли изменены слои (части) анимации?
-    _.isAnimXPartsChanged = function() {
+    _.isAnimXPartsChanged = function () {
       return false;
     };
   })();
@@ -5118,19 +5090,18 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
 //---------------------------------------------------------------------------
 // -----------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Game_Event.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var ALIAS__erase, ALIAS__setupPage, ALIAS__update, _;
   //@[DEFINES]
   _ = Game_Event.prototype;
   //@[ALIAS]
   ALIAS__erase = _.erase;
-  _.erase = function() {
+  _.erase = function () {
     if (this.isAnimX()) {
       this.clearXAnimParts();
     }
@@ -5138,15 +5109,15 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
   };
   //@[ALIAS]
   ALIAS__setupPage = _.setupPage;
-  _.setupPage = function() {
+  _.setupPage = function () {
     ALIAS__setupPage.call(this);
     this._isHaveAnimaX = false;
     return this.refreshAnimaX();
   };
-  
+
   //@[ALIAS]
   ALIAS__update = _.update;
-  _.update = function() {
+  _.update = function () {
     ALIAS__update.call(this);
     if (this.isAnimX()) {
       return this._updateAnimX();
@@ -5157,23 +5128,22 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
 // ■ END Game_Event.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Game_Event.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var _;
   //@[DEFINES]
   _ = Game_Event.prototype;
-  _.isAnimX = function() {
+  _.isAnimX = function () {
     if (!$gameSystem.axIsAnimaXActive()) {
       return false;
     }
     return Game_Character.prototype.isAnimX.call(this);
   };
-  _.setExternalAnimaX = function(name, isForIndependentAction = false) {
+  _.setExternalAnimaX = function (name, isForIndependentAction = false) {
     this.__lastEventAnimaXExternProfile = name;
     this.__axShouldResetAnimaXAfterAction = isForIndependentAction === true;
     this.refresh();
@@ -5182,7 +5152,7 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
       this.__axShouldReloadBitmaps = true;
     }
   };
-  _.getCurrentAnimaXProfile = function() {
+  _.getCurrentAnimaXProfile = function () {
     var animXParameter;
     if (this.page() == null) {
       return null;
@@ -5197,21 +5167,21 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
     }
     return null;
   };
-  _._parseAnimaXAParameterForEvent = function(animXParameter) {
+  _._parseAnimaXAParameterForEvent = function (animXParameter) {
     var id, parts;
     if (animXParameter == null) {
       return;
     }
-    parts = animXParameter.split(":");
+    parts = animXParameter.split(':');
     id = parts[1];
     return id;
   };
-  _.forceClearAnimaX = function() {
+  _.forceClearAnimaX = function () {
     var e;
     try {
       this.refresh();
       this.refreshAnimaX();
-      return this.__axShouldReloadBitmaps = true;
+      return (this.__axShouldReloadBitmaps = true);
     } catch (error) {
       e = error;
       return console.warn(e);
@@ -5222,26 +5192,25 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
 // ■ END Game_Event.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Game_Follower.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var ALIAS__refresh, ALIAS__update, _;
   //@[DEFINES]
   _ = Game_Follower.prototype;
   //@[ALIAS]
   ALIAS__refresh = _.refresh;
-  _.refresh = function() {
+  _.refresh = function () {
     ALIAS__refresh.call(this);
     return this.refreshAnimaX();
   };
-  
+
   //@[ALIAS]
   ALIAS__update = _.update;
-  _.update = function() {
+  _.update = function () {
     ALIAS__update.call(this);
     if (this.isAnimX()) {
       return this._updateAnimX();
@@ -5252,17 +5221,16 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
 // ■ END Game_Follower.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Game_Follower.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var _;
   //@[DEFINES]
   _ = Game_Follower.prototype;
-  _.isAnimX = function() {
+  _.isAnimX = function () {
     if (!$gameSystem.axIsAnimaXActive()) {
       return false;
     }
@@ -5271,7 +5239,7 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
     }
     return Game_Character.prototype.isAnimX.call(this);
   };
-  _.getCurrentAnimaXProfile = function() {
+  _.getCurrentAnimaXProfile = function () {
     var equipAnimaXSet;
     if (this.isAnimX()) {
       equipAnimaXSet = this._getEquipmentAnimaXSet();
@@ -5281,7 +5249,7 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
     }
     return this.getInitialXProfile();
   };
-  _.getInitialXProfile = function() {
+  _.getInitialXProfile = function () {
     var actor;
     if (PKD_ANIMAX.KString.any(this.__lastEventAnimaXExternProfile)) {
       return this.__lastEventAnimaXExternProfile;
@@ -5293,13 +5261,13 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
       return PKD_ANIMAX.KGameItems.GetMeta('xAnima', actor.actor());
     }
   };
-  _.getBattlerForAnimaX = function() {
+  _.getBattlerForAnimaX = function () {
     return this.actor();
   };
-  _.isDashingForAnimaX = function() {
+  _.isDashingForAnimaX = function () {
     return $gamePlayer.isDashing();
   };
-  _.setExternalAnimaX = function(name, isForIndependentAction = false) {
+  _.setExternalAnimaX = function (name, isForIndependentAction = false) {
     this.__lastEventAnimaXExternProfile = name;
     this.__axShouldResetAnimaXAfterAction = isForIndependentAction === true;
     this.refresh();
@@ -5308,12 +5276,12 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
       this.__axShouldReloadBitmaps = true;
     }
   };
-  _.forceClearAnimaX = function() {
+  _.forceClearAnimaX = function () {
     var e;
     try {
       this.refresh();
       this.refreshAnimaX();
-      return this.__axShouldReloadBitmaps = true;
+      return (this.__axShouldReloadBitmaps = true);
     } catch (error) {
       e = error;
       return console.warn(e);
@@ -5324,19 +5292,18 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
 // ■ END Game_Follower.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Game_Interpreter.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var ALIAS__updateWaitMode, _;
   //@[DEFINES]
   _ = Game_Interpreter.prototype;
   //@[ALIAS]
   ALIAS__updateWaitMode = _.updateWaitMode;
-  _.updateWaitMode = function() {
+  _.updateWaitMode = function () {
     if (this._waitMode === 'xAnima') {
       return this._updateXAnimaWait();
     } else {
@@ -5348,17 +5315,16 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
 // ■ END Game_Interpreter.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Game_Interpreter.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var _;
   //@[DEFINES]
   _ = Game_Interpreter.prototype;
-  _._updateXAnimaWait = function() {
+  _._updateXAnimaWait = function () {
     var waiting;
     waiting = this.xAnimaTarget.isInAnimXAction();
     if (!waiting) {
@@ -5372,19 +5338,18 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
 // ■ END Game_Interpreter.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Game_Map.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var ALIAS__setup, _;
   //@[DEFINES]
   _ = Game_Map.prototype;
   //@[ALIAS]
   ALIAS__setup = _.setup;
-  _.setup = function(mapId) {
+  _.setup = function (mapId) {
     ALIAS__setup.call(this, ...arguments);
     if (PKD_ANIMAX.IsMapIsInactive(mapId)) {
       PKD_ANIMAX.DisableAnimaX();
@@ -5397,23 +5362,23 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
 // ■ END Game_Map.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Game_Party.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var ALIAS__addActor, _;
   //@[DEFINES]
   _ = Game_Party.prototype;
   //@[ALIAS]
   ALIAS__addActor = _.addActor;
-  _.addActor = function(actorId) {
+  _.addActor = function (actorId) {
     var actor;
     ALIAS__addActor.call(this, actorId);
     // * Чтобы приминялась анимация с оружием (если была)
-    if (this._actors.includes(actorId)) { // * Если был добавлен
+    if (this._actors.includes(actorId)) {
+      // * Если был добавлен
       actor = $gameActors.actor(actorId);
       if (actor != null) {
         actor.refresh();
@@ -5425,13 +5390,12 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
 // ■ END Game_Party.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Game_Player.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var ALIAS__canMove, ALIAS__refresh, ALIAS__update, _;
   //@[DEFINES]
   _ = Game_Player.prototype;
@@ -5440,14 +5404,14 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
   // -----------------------------------------------------------------------
   //@[ALIAS]
   ALIAS__refresh = _.refresh;
-  _.refresh = function() {
+  _.refresh = function () {
     ALIAS__refresh.call(this);
     return this.refreshAnimaX();
   };
-  
+
   //@[ALIAS]
   ALIAS__canMove = _.canMove;
-  _.canMove = function() {
+  _.canMove = function () {
     if (this.isAnimXIsBusy()) {
       // * Дополнительная проверка анимации, т.к. Game_Player перекрывает метод canMove из Character_Base
       return false;
@@ -5456,7 +5420,7 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
   };
   //@[ALIAS]
   ALIAS__update = _.update;
-  _.update = function(sceneActive) {
+  _.update = function (sceneActive) {
     ALIAS__update.call(this, sceneActive);
     if (this.isAnimX()) {
       return this._updateAnimX();
@@ -5467,20 +5431,19 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
 // ■ END Game_Player.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Game_Player.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var _;
   //@[DEFINES]
   _ = Game_Player.prototype;
   //?[ANIMAX_E]
   // * Система анимации XAnima и ABS
   // -----------------------------------------------------------------------
-  _.isAnimX = function() {
+  _.isAnimX = function () {
     if (!$gameSystem.axIsAnimaXActive()) {
       return false;
     }
@@ -5489,7 +5452,7 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
     }
     return Game_Character.prototype.isAnimX.call(this);
   };
-  _.getCurrentAnimaXProfile = function() {
+  _.getCurrentAnimaXProfile = function () {
     var equipAnimaXSet;
     if (this.isAnimX()) {
       equipAnimaXSet = this._getEquipmentAnimaXSet();
@@ -5499,7 +5462,7 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
     }
     return this.getInitialXProfile();
   };
-  _.getInitialXProfile = function() {
+  _.getInitialXProfile = function () {
     if (PKD_ANIMAX.KString.any($gameSystem.lastPlayerAnimaXExternProfile)) {
       return $gameSystem.lastPlayerAnimaXExternProfile;
     } else {
@@ -5510,19 +5473,19 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
       }
     }
   };
-  _.isAnimaXAADefaultAction = function(actionName) {
+  _.isAnimaXAADefaultAction = function (actionName) {
     return ['Attack', 'Defense', 'Skill'].contains(actionName);
   };
-  _.getBattlerForAnimaX = function() {
+  _.getBattlerForAnimaX = function () {
     return $gameParty.leader();
   };
-  _.setExternalAnimaX = function(name, isForIndependentAction = false) {
+  _.setExternalAnimaX = function (name, isForIndependentAction = false) {
     $gameSystem.lastPlayerAnimaXExternProfile = name;
     this.__axShouldResetAnimaXAfterAction = isForIndependentAction === true;
     this.refresh();
     this.axExternalAnimaXForNet();
   };
-  _.axExternalAnimaXForNet = function() {
+  _.axExternalAnimaXForNet = function () {
     if (PKD_ANIMAX.InLocalMode()) {
       $gameTemp.netAnimaXLocal = null;
       return;
@@ -5532,10 +5495,10 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
       }
     }
   };
-  _.isDashingForAnimaX = function() {
+  _.isDashingForAnimaX = function () {
     return this.isDashing();
   };
-  _.forceClearAnimaX = function() {
+  _.forceClearAnimaX = function () {
     var e;
     try {
       this.refresh();
@@ -5550,20 +5513,19 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
 // ■ END Game_Player.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Game_System.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var _;
   //@[DEFINES]
   _ = Game_System.prototype;
-  _.axIsAnimaXActive = function() {
+  _.axIsAnimaXActive = function () {
     return this.__axIsAnimaXActive === true;
   };
-  _.axSetAnimaXActiveState = function(state) {
+  _.axSetAnimaXActiveState = function (state) {
     var e;
     try {
       this.__axIsAnimaXActive = state;
@@ -5573,7 +5535,7 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
       return console.warn(e);
     }
   };
-  _.axIsAnimaXActiveForCharId = function(charId) {
+  _.axIsAnimaXActiveForCharId = function (charId) {
     var key;
     if (!this.axIsAnimaXActive()) {
       return false;
@@ -5589,7 +5551,7 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
     key = charId;
     return !this.__axAnimaXNoActiveChars.contains(key);
   };
-  _.axSetAnimaXActiveStateForCharId = function(charId, activeState) {
+  _.axSetAnimaXActiveStateForCharId = function (charId, activeState) {
     var e, key;
     if (this.__axAnimaXNoActiveChars == null) {
       this.__axAnimaXNoActiveChars = [];
@@ -5616,7 +5578,7 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
       console.warn('error', e);
     }
   };
-  _.axRefreshAllEntities = function(withFollowers = false, withEvents = false) {
+  _.axRefreshAllEntities = function (withFollowers = false, withEvents = false) {
     var e, event, follower, i, j, len, len1, ref, ref1, results;
     try {
       $gamePlayer.forceClearAnimaX();
@@ -5648,49 +5610,48 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
 // ■ END Game_System.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ ImageManager.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var _;
   //@[DEFINES]
   _ = ImageManager;
-  _.loadAnimaX = function(filename) {
+  _.loadAnimaX = function (filename) {
     if (PKD_ANIMAX.IsUseWebp()) {
       return this.loadAnimaXw(filename);
     } else {
       return this.loadBitmap('img/charactersAA/', filename, 0, false);
     }
   };
-  _.loadAnimaXw = function(filename) {
+  _.loadAnimaXw = function (filename) {
     return this.axLoadWepbBitmap('img/charactersAA/', filename, 0, false);
   };
-  _.axLoadWepbBitmap = function(folder, filename, hue, smooth) {
+  _.axLoadWepbBitmap = function (folder, filename, hue, smooth) {
     if (PKD_ANIMAX.isMV()) {
       return this._axLoadWepbBitmapMV(...arguments);
     } else {
       return this._axLoadWepbBitmapMZ(folder, filename);
     }
   };
-  _.loadAllAnimaX = function(err, list) {
+  _.loadAllAnimaX = function (err, list) {
     var e, file, filename, i, len, path;
     try {
       if (err != null) {
         return console.warn(err);
       } else {
-        console.log("AnimaX, try preload " + list.length + " animation files");
+        console.log('AnimaX, try preload ' + list.length + ' animation files');
         path = PKD_ANIMAX._basePath;
         for (i = 0, len = list.length; i < len; i++) {
           file = list[i];
-          if (!file.contains(".png")) {
+          if (!file.contains('.png')) {
             continue;
           }
-          filename = file.replace(path, "");
-          filename = filename.replace(".png", "");
-          filename = filename.replaceAll("\\", "/");
+          filename = file.replace(path, '');
+          filename = filename.replace('.png', '');
+          filename = filename.replaceAll('\\', '/');
           ImageManager.loadAnimaX(filename);
         }
         return console.log('AnimaX, preload done');
@@ -5705,21 +5666,18 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
 // ■ END ImageManager.coffee
 //---------------------------------------------------------------------------
 
-
-
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Scene_Map.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var ALIAS__isReady, ALIAS__onMapLoaded, _;
   //@[DEFINES]
   _ = Scene_Map.prototype;
   //@[ALIAS]
   ALIAS__isReady = _.isReady;
-  _.isReady = function() {
+  _.isReady = function () {
     var e, result;
     result = ALIAS__isReady.call(this, ...arguments);
     if (result === true && PKD_ANIMAX.IsWaitSpritesheetLoading()) {
@@ -5735,7 +5693,7 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
   };
   //@[ALIAS]
   ALIAS__onMapLoaded = _.onMapLoaded;
-  _.onMapLoaded = function() {
+  _.onMapLoaded = function () {
     ALIAS__onMapLoaded.call(this);
     this.axPreloadAllAnimationOnMap();
     this.axRefreshForNetwork();
@@ -5745,17 +5703,16 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
 // ■ END Scene_Map.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Scene_Map.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var _;
   //@[DEFINES]
   _ = Scene_Map.prototype;
-  _.axPreloadAllAnimationOnMap = function() {
+  _.axPreloadAllAnimationOnMap = function () {
     var e, ev, f, i, j, len, len1, ref, ref1;
     try {
       if ($gamePlayer.isAnimX()) {
@@ -5780,8 +5737,8 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
       console.warn(e);
     }
   };
-  _.axRefreshForNetwork = function() {
-    if (PKD_ANIMAX.IsNetworkGame() && ($gameParty.leader() != null)) {
+  _.axRefreshForNetwork = function () {
+    if (PKD_ANIMAX.IsNetworkGame() && $gameParty.leader() != null) {
       return PKD_ANIMAX.SendNetworkFlagAnimaXRefresh($gameParty.leader().actorId());
     }
   };
@@ -5790,29 +5747,26 @@ PKD_ANIMAX.ActivateDiagonalMovement = function() {
 // ■ END Scene_Map.coffee
 //---------------------------------------------------------------------------
 
-
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Sprite.ts
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
 (() => {
-    //@[DEFINES]
-    const _ = Sprite.prototype;
-    Object.defineProperty(_, '__ay', {
-        get: function () {
-            if (this.isAnimX && this.isAnimX() && this._axCntr) {
-                return this.y - this._axCntr.rootAnimation.dy;
-            }
-            else {
-                return this.y;
-            }
-        },
-        configurable: true
-    });
+  //@[DEFINES]
+  const _ = Sprite.prototype;
+  Object.defineProperty(_, '__ay', {
+    get: function () {
+      if (this.isAnimX && this.isAnimX() && this._axCntr) {
+        return this.y - this._axCntr.rootAnimation.dy;
+      } else {
+        return this.y;
+      }
+    },
+    configurable: true,
+  });
 })();
 // ■ END Sprite.ts
 //---------------------------------------------------------------------------
-
 
 // Generated by CoffeeScript 2.6.1
 // * Спрайт для анимации слоя (части)
@@ -5851,22 +5805,32 @@ Sprite_AnimaXPart = class Sprite_AnimaXPart extends Sprite {
       return console.warn(e);
     }
   }
-
 };
-
 
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Sprite_Character.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
-  var ALIAS__characterBlockX, ALIAS__characterBlockY, ALIAS__characterPatternX, ALIAS__characterPatternY, ALIAS__isEmptyCharacter, ALIAS__isImageChanged, ALIAS__patternHeight, ALIAS__patternWidth, ALIAS__updateBitmap, ALIAS__updateFrame, ALIAS__updatePosition, ALIAS__updateVisibility, _;
+(function () {
+  var ALIAS__characterBlockX,
+    ALIAS__characterBlockY,
+    ALIAS__characterPatternX,
+    ALIAS__characterPatternY,
+    ALIAS__isEmptyCharacter,
+    ALIAS__isImageChanged,
+    ALIAS__patternHeight,
+    ALIAS__patternWidth,
+    ALIAS__updateBitmap,
+    ALIAS__updateFrame,
+    ALIAS__updatePosition,
+    ALIAS__updateVisibility,
+    _;
   //@[DEFINES]
   _ = Sprite_Character.prototype;
   //@[ALIAS]
   ALIAS__isEmptyCharacter = _.isEmptyCharacter;
-  _.isEmptyCharacter = function() {
+  _.isEmptyCharacter = function () {
     if (this.isAnimX()) {
       return false;
     } else {
@@ -5875,7 +5839,7 @@ Sprite_AnimaXPart = class Sprite_AnimaXPart extends Sprite {
   };
   //@[ALIAS]
   ALIAS__updateBitmap = _.updateBitmap;
-  _.updateBitmap = function() {
+  _.updateBitmap = function () {
     if (this.isAnimX()) {
       this._updateBitmapAnimX();
     } else {
@@ -5884,17 +5848,17 @@ Sprite_AnimaXPart = class Sprite_AnimaXPart extends Sprite {
   };
   //@[ALIAS]
   ALIAS__updateVisibility = _.updateVisibility;
-  _.updateVisibility = function() {
+  _.updateVisibility = function () {
     if (this.isAnimX()) {
       return this._updateVisibilityAnimX();
     } else {
       return ALIAS__updateVisibility.call(this);
     }
   };
-  
+
   //@[ALIAS]
   ALIAS__updateFrame = _.updateFrame;
-  _.updateFrame = function() {
+  _.updateFrame = function () {
     ALIAS__updateFrame.call(this);
     if (this.isAnimX()) {
       this._axCntr.updateSheetFrame(this);
@@ -5907,21 +5871,21 @@ Sprite_AnimaXPart = class Sprite_AnimaXPart extends Sprite {
   };
   //@[ALIAS]
   ALIAS__updatePosition = _.updatePosition;
-  _.updatePosition = function() {
+  _.updatePosition = function () {
     ALIAS__updatePosition.call(this);
     if (this.isAnimX()) {
       this.x += this._axCntr.rootAnimation.dx;
       this.y += this._axCntr.rootAnimation.dy;
     }
   };
-  
+
   //@[ALIAS]
   ALIAS__isImageChanged = _.isImageChanged;
-  _.isImageChanged = function() {
+  _.isImageChanged = function () {
     if (this.isAnimX()) {
       return this._animaXSet !== this._character.getCurrentAnimX();
     } else {
-      if ((this._character != null) && this._character.__axShouldReloadBitmaps === true) {
+      if (this._character != null && this._character.__axShouldReloadBitmaps === true) {
         this._character.__axShouldReloadBitmaps = null;
         return true;
       }
@@ -5930,7 +5894,7 @@ Sprite_AnimaXPart = class Sprite_AnimaXPart extends Sprite {
   };
   //@[ALIAS]
   ALIAS__patternWidth = _.patternWidth;
-  _.patternWidth = function() {
+  _.patternWidth = function () {
     if (this.isAnimX()) {
       if (this._character.getCurrentAnimX().isSpritesheet === true) {
         return this._character.getCurrentAnimX().sheetFrameWidth;
@@ -5941,10 +5905,10 @@ Sprite_AnimaXPart = class Sprite_AnimaXPart extends Sprite {
       return ALIAS__patternWidth.call(this);
     }
   };
-  
+
   //@[ALIAS]
   ALIAS__patternHeight = _.patternHeight;
-  _.patternHeight = function() {
+  _.patternHeight = function () {
     if (this.isAnimX()) {
       if (this._character.getCurrentAnimX().isSpritesheet === true) {
         return this._character.getCurrentAnimX().sheetFrameHeight;
@@ -5955,19 +5919,19 @@ Sprite_AnimaXPart = class Sprite_AnimaXPart extends Sprite {
       return ALIAS__patternHeight.call(this);
     }
   };
-  
+
   //@[ALIAS]
   ALIAS__characterBlockX = _.characterBlockX;
-  _.characterBlockX = function() {
+  _.characterBlockX = function () {
     if (this.isAnimX()) {
       return 0;
     }
     return ALIAS__characterBlockX.call(this);
   };
-  
+
   //@[ALIAS]
   ALIAS__characterBlockY = _.characterBlockY;
-  _.characterBlockY = function() {
+  _.characterBlockY = function () {
     if (this.isAnimX()) {
       return 0;
     }
@@ -5975,7 +5939,7 @@ Sprite_AnimaXPart = class Sprite_AnimaXPart extends Sprite {
   };
   //@[ALIAS]
   ALIAS__characterPatternX = _.characterPatternX;
-  _.characterPatternX = function() {
+  _.characterPatternX = function () {
     if (this.isAnimX()) {
       return 0;
     }
@@ -5983,7 +5947,7 @@ Sprite_AnimaXPart = class Sprite_AnimaXPart extends Sprite {
   };
   //@[ALIAS]
   ALIAS__characterPatternY = _.characterPatternY;
-  _.characterPatternY = function() {
+  _.characterPatternY = function () {
     if (this.isAnimX()) {
       return 0;
     }
@@ -5994,22 +5958,22 @@ Sprite_AnimaXPart = class Sprite_AnimaXPart extends Sprite {
 // ■ END Sprite_Character.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Sprite_Character.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var _;
   //@[DEFINES]
   _ = Sprite_Character.prototype;
-  (function() {    // * Система анимации XAnima
+  (function () {
+    // * Система анимации XAnima
     // -----------------------------------------------------------------------
-    _.isAnimX = function() {
+    _.isAnimX = function () {
       return this._character.isAnimX();
     };
-    _._updateVisibilityAnimX = function() {
+    _._updateVisibilityAnimX = function () {
       if (PKD_ANIMAX.isMV()) {
         Sprite_Base.prototype.updateVisibility.call(this);
       } else {
@@ -6023,7 +5987,7 @@ Sprite_AnimaXPart = class Sprite_AnimaXPart extends Sprite {
         }
       }
     };
-    _._updateBitmapAnimX = function() {
+    _._updateBitmapAnimX = function () {
       if (this.isImageChanged()) {
         this._animaXSet = this._character.getCurrentAnimX();
         this._refreshAnimXSetController();
@@ -6036,20 +6000,21 @@ Sprite_AnimaXPart = class Sprite_AnimaXPart extends Sprite {
         this._refreshAnimXPartSprites();
       }
     };
-    return _._refreshAnimXSetController = function() {
+    return (_._refreshAnimXSetController = function () {
       this._axCntr = new XAnimaSetController(this._character.direction(), this._animaXSet);
       return this._refreshAnimaXBitmap();
-    };
+    });
   })();
-  (function() {    // * Система анимации XAnima - Части (слои)
+  (function () {
+    // * Система анимации XAnima - Части (слои)
     // -----------------------------------------------------------------------
     // * Синхронизируем координаты нижнего слоя
-    _._updateAnimaXParts = function() {
+    _._updateAnimaXParts = function () {
       this._animaXPartBelow.x = this.x;
-      return this._animaXPartBelow.y = this.y;
+      return (this._animaXPartBelow.y = this.y);
     };
     // * Чтобы lower и upper body прозрачность была (в кустах)
-    _._updateAnimaXPartsDepth = function() {
+    _._updateAnimaXPartsDepth = function () {
       var i, j, len, len1, p, ref, ref1;
       // * Не обновлять, если не изменилась прозрачность
       if (this.__lBushDepth === this._bushDepth) {
@@ -6072,14 +6037,14 @@ Sprite_AnimaXPart = class Sprite_AnimaXPart extends Sprite {
         }
       }
     };
-    _.isXAnimPartsChanged = function() {
+    _.isXAnimPartsChanged = function () {
       if (this.isAnimX()) {
         return this._character.isAnimXPartsChanged();
       } else {
         return false;
       }
     };
-    _._refreshAnimXPartSprites = function() {
+    _._refreshAnimXPartSprites = function () {
       var i, len, part, ref;
       if (this._animaXParts == null) {
         return;
@@ -6091,10 +6056,10 @@ Sprite_AnimaXPart = class Sprite_AnimaXPart extends Sprite {
         this._addPartOnSpriteByDirection(part, this._axCntr.cDir);
       }
     };
-    _._refreshAnimaXBitmap = function() {
+    _._refreshAnimaXBitmap = function () {
       this.bitmap = this._axCntr.bitmap();
     };
-    _._createAnimaXParts = function() {
+    _._createAnimaXParts = function () {
       if (this._animaXParts != null) {
         this._destroyAnimaXParts();
       }
@@ -6114,7 +6079,7 @@ Sprite_AnimaXPart = class Sprite_AnimaXPart extends Sprite {
       this.parent.addChild(this._animaXPartBelow);
       this._character.onAnimXPartsRefreshed();
     };
-    _._destroyAnimaXParts = function() {
+    _._destroyAnimaXParts = function () {
       var i, len, p, ref;
       this._animaXParts.visible = false;
       this._animaXParts.parent.removeChild(this._animaXParts);
@@ -6133,7 +6098,7 @@ Sprite_AnimaXPart = class Sprite_AnimaXPart extends Sprite {
       }
       this.__lBushDepth = null;
     };
-    _._addAllAnimaXParts = function() {
+    _._addAllAnimaXParts = function () {
       var animaXPart, i, id, len, part, partData, parts, unsortedParts;
       parts = this._character.animaXParts;
       // * Преобразование в массив
@@ -6143,7 +6108,7 @@ Sprite_AnimaXPart = class Sprite_AnimaXPart extends Sprite {
         unsortedParts.push(partData);
       }
       // * Сортировка
-      unsortedParts.sort(function(a, b) {
+      unsortedParts.sort(function (a, b) {
         if (a.level > b.level) {
           return 1;
         }
@@ -6160,7 +6125,7 @@ Sprite_AnimaXPart = class Sprite_AnimaXPart extends Sprite {
       }
     };
     // * Добаить часть (слой) на персонажа с учётом "уровня" слоя (за или перед)
-    _._addPartOnSpriteByDirection = function(part, dir) {
+    _._addPartOnSpriteByDirection = function (part, dir) {
       var level;
       level = part.animPart.isBelowCharacter(dir);
       if (level === true) {
@@ -6178,134 +6143,120 @@ Sprite_AnimaXPart = class Sprite_AnimaXPart extends Sprite {
 //---------------------------------------------------------------------------
 // -----------------------------------------------------------------------
 
-
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Tilemap.ts
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
 (() => {
-    //@[DEFINES]
-    const _ = Tilemap.prototype;
-    /*@ts-ignore*/
-    //@[ALIAS]
-    const ALIAS___compareChildOrder = _._compareChildOrder;
-    /*@ts-ignore*/
-    _._compareChildOrder = function (a, b) {
-        if (a.z !== b.z) {
-            return a.z - b.z;
-        }
-        else if (a.__ay && b.__ay && (a.__ay !== b.__ay)) {
-            return a.__ay - b.__ay;
-        }
-        else if (a.y !== b.y) {
-            return a.y - b.y;
-        }
-        else if (a.x !== b.x) {
-            return a.x - b.x;
-        }
-        else {
-            return a.spriteId - b.spriteId;
-        }
-    };
+  //@[DEFINES]
+  const _ = Tilemap.prototype;
+  /*@ts-ignore*/
+  //@[ALIAS]
+  const ALIAS___compareChildOrder = _._compareChildOrder;
+  /*@ts-ignore*/
+  _._compareChildOrder = function (a, b) {
+    if (a.z !== b.z) {
+      return a.z - b.z;
+    } else if (a.__ay && b.__ay && a.__ay !== b.__ay) {
+      return a.__ay - b.__ay;
+    } else if (a.y !== b.y) {
+      return a.y - b.y;
+    } else if (a.x !== b.x) {
+      return a.x - b.x;
+    } else {
+      return a.spriteId - b.spriteId;
+    }
+  };
 })();
 // ■ END Tilemap.ts
 //---------------------------------------------------------------------------
 
-
 // * Анимация (одна единица анимации, последовательность кадров)
 class XAnima {
-    static FromConfig(config) {
-        return new XAnima(config.framesCount, config.fileName, config.isSpritesheet, config.spritesheetPart);
+  static FromConfig(config) {
+    return new XAnima(config.framesCount, config.fileName, config.isSpritesheet, config.spritesheetPart);
+  }
+  constructor(framesCount, fileName, isSpritesheet, spritesheetPart = -1) {
+    this.framesCount = 0;
+    this.fileName = '';
+    this.isSpritesheet = false;
+    this.spritesheetPart = -1;
+    // * Хранит только названия картинок кадров
+    this.frames = [];
+    this.framesCount = framesCount;
+    this.fileName = fileName;
+    this.isSpritesheet = isSpritesheet;
+    this.spritesheetPart = spritesheetPart;
+    this._parseFrames();
+  }
+  isReady() {
+    try {
+      for (let i = 0; i < this.frames.length; i++) {
+        let frame = this.frames[i];
+        let bitmap = XAnimaManager.loadImage(frame);
+        if (!bitmap.isReady()) {
+          return false;
+        }
+      }
+    } catch (error) {
+      console.warn(error);
     }
-    constructor(framesCount, fileName, isSpritesheet, spritesheetPart = -1) {
-        this.framesCount = 0;
-        this.fileName = "";
-        this.isSpritesheet = false;
-        this.spritesheetPart = -1;
-        // * Хранит только названия картинок кадров
-        this.frames = [];
-        this.framesCount = framesCount;
-        this.fileName = fileName;
-        this.isSpritesheet = isSpritesheet;
-        this.spritesheetPart = spritesheetPart;
-        this._parseFrames();
+    return true;
+  }
+  preLoad() {
+    for (let i = 0; i < this.frames.length; i++) {
+      let frame = this.frames[i];
+      XAnimaManager.loadImage(frame);
     }
-    isReady() {
-        try {
-            for (let i = 0; i < this.frames.length; i++) {
-                let frame = this.frames[i];
-                let bitmap = XAnimaManager.loadImage(frame);
-                if (!bitmap.isReady()) {
-                    return false;
-                }
-            }
-        }
-        catch (error) {
-            console.warn(error);
-        }
-        return true;
+  }
+  getFrame(index) {
+    if (this.isSpritesheet == true) {
+      return XAnimaManager.loadImage(this.frames[0]);
+    } else {
+      let frame = this.frames[index];
+      return XAnimaManager.loadImage(frame);
     }
-    preLoad() {
-        for (let i = 0; i < this.frames.length; i++) {
-            let frame = this.frames[i];
-            XAnimaManager.loadImage(frame);
-        }
+  }
+  expandFirstFrame(times) {
+    if (this.isSpritesheet == true) {
+      return;
+    } else {
+      this.framesCount += times;
+      for (let i = 0; i < times; i++) {
+        this.frames.splice(1, 0, this.frames[0]);
+      }
     }
-    getFrame(index) {
-        if (this.isSpritesheet == true) {
-            return XAnimaManager.loadImage(this.frames[0]);
-        }
-        else {
-            let frame = this.frames[index];
-            return XAnimaManager.loadImage(frame);
-        }
+  }
+  _parseFrames() {
+    if (this.isSpritesheet == true) {
+      if (this.spritesheetPart == -1) {
+        this.frames[0] = this.fileName;
+      } else {
+        this._parseSpritesheetPartFrame();
+      }
+    } else {
+      for (let i = 0; i < this.framesCount; i++) {
+        this.frames[i] = this.fileName + '_' + i;
+      }
     }
-    expandFirstFrame(times) {
-        if (this.isSpritesheet == true) {
-            return;
-        }
-        else {
-            this.framesCount += times;
-            for (let i = 0; i < times; i++) {
-                this.frames.splice(1, 0, this.frames[0]);
-            }
-        }
+  }
+  _parseSpritesheetPartFrame() {
+    if (this.spritesheetPart == 0) {
+      this.frames[0] = this.fileName;
+    } else {
+      this.frames[0] = this.fileName + '_DIAG';
     }
-    _parseFrames() {
-        if (this.isSpritesheet == true) {
-            if (this.spritesheetPart == -1) {
-                this.frames[0] = this.fileName;
-            }
-            else {
-                this._parseSpritesheetPartFrame();
-            }
-        }
-        else {
-            for (let i = 0; i < this.framesCount; i++) {
-                this.frames[i] = this.fileName + "_" + i;
-            }
-        }
-    }
-    _parseSpritesheetPartFrame() {
-        if (this.spritesheetPart == 0) {
-            this.frames[0] = this.fileName;
-        }
-        else {
-            this.frames[0] = this.fileName + "_DIAG";
-        }
-    }
+  }
 }
 window['XAnima'] = XAnima;
 
-
 var XAnimaManager;
 (function (XAnimaManager) {
-    function loadImage(filename) {
-        return ImageManager['loadAnimaX'](filename);
-    }
-    XAnimaManager.loadImage = loadImage;
+  function loadImage(filename) {
+    return ImageManager['loadAnimaX'](filename);
+  }
+  XAnimaManager.loadImage = loadImage;
 })(XAnimaManager || (XAnimaManager = {}));
-
 
 // Generated by CoffeeScript 2.6.1
 // * Дополнительный слой анимации
@@ -6349,23 +6300,23 @@ XAnimaPart = class XAnimaPart {
 
   // * Тут задаётся стандартное правило
   setDefaultRule(haveDirs, haveFrames, isSpritesheet, isSepareteSpritesheet) {
-    return this.rules['Basic'] = [haveDirs, haveFrames, isSpritesheet, isSepareteSpritesheet];
+    return (this.rules['Basic'] = [haveDirs, haveFrames, isSpritesheet, isSepareteSpritesheet]);
   }
 
   setRuleForMovement(haveDirs, haveFrames, isSpritesheet, isSepareteSpritesheet) {
-    return this.rules['Move'] = [haveDirs, haveFrames, isSpritesheet, isSepareteSpritesheet];
+    return (this.rules['Move'] = [haveDirs, haveFrames, isSpritesheet, isSepareteSpritesheet]);
   }
 
   setRuleForIdle(haveDirs, haveFrames, isSpritesheet, isSepareteSpritesheet) {
-    return this.rules['Idle'] = [haveDirs, haveFrames, isSpritesheet, isSepareteSpritesheet];
+    return (this.rules['Idle'] = [haveDirs, haveFrames, isSpritesheet, isSepareteSpritesheet]);
   }
 
   setRuleForDashing(haveDirs, haveFrames, isSpritesheet, isSepareteSpritesheet) {
-    return this.rules['Dashing'] = [haveDirs, haveFrames, isSpritesheet, isSepareteSpritesheet];
+    return (this.rules['Dashing'] = [haveDirs, haveFrames, isSpritesheet, isSepareteSpritesheet]);
   }
 
   setRuleForAction(actionName, haveDirs, haveFrames, isSpritesheet, isSepareteSpritesheet, fileName) {
-    return this.rules[actionName] = [haveDirs, haveFrames, isSpritesheet, isSepareteSpritesheet, fileName];
+    return (this.rules[actionName] = [haveDirs, haveFrames, isSpritesheet, isSepareteSpritesheet, fileName]);
   }
 
   disableForAction(actionName) {
@@ -6418,7 +6369,6 @@ XAnimaPart = class XAnimaPart {
     this.isSepareteSpritesheet = isSepareteSpritesheet;
     this._originalFramesCount = frames;
     if (this.isNoDirections === true) {
-
     } else if (this.isSpritesheet === true) {
       if (this.isSepareteSpritesheet === true) {
         this.animations[0] = new XAnima(frames, cFileName, this.isSpritesheet, 0);
@@ -6427,15 +6377,15 @@ XAnimaPart = class XAnimaPart {
         this.animations[0] = new XAnima(frames, cFileName, this.isSpritesheet);
       }
     } else {
-      this.animations[0] = new XAnima(frames, cFileName + "_D", this.isSpritesheet);
-      this.animations[1] = new XAnima(frames, cFileName + "_L", this.isSpritesheet);
-      this.animations[2] = new XAnima(frames, cFileName + "_R", this.isSpritesheet);
-      this.animations[3] = new XAnima(frames, cFileName + "_U", this.isSpritesheet);
+      this.animations[0] = new XAnima(frames, cFileName + '_D', this.isSpritesheet);
+      this.animations[1] = new XAnima(frames, cFileName + '_L', this.isSpritesheet);
+      this.animations[2] = new XAnima(frames, cFileName + '_R', this.isSpritesheet);
+      this.animations[3] = new XAnima(frames, cFileName + '_U', this.isSpritesheet);
       if (is8way === true) {
-        this.animations[4] = new XAnima(frames, cFileName + "_DL", this.isSpritesheet);
-        this.animations[5] = new XAnima(frames, cFileName + "_DR", this.isSpritesheet);
-        this.animations[6] = new XAnima(frames, cFileName + "_UL", this.isSpritesheet);
-        this.animations[7] = new XAnima(frames, cFileName + "_UR", this.isSpritesheet);
+        this.animations[4] = new XAnima(frames, cFileName + '_DL', this.isSpritesheet);
+        this.animations[5] = new XAnima(frames, cFileName + '_DR', this.isSpritesheet);
+        this.animations[6] = new XAnima(frames, cFileName + '_UL', this.isSpritesheet);
+        this.animations[7] = new XAnima(frames, cFileName + '_UR', this.isSpritesheet);
       }
     }
     this.preLoad();
@@ -6498,7 +6448,7 @@ XAnimaPart = class XAnimaPart {
           vertSize = 4;
         }
       }
-      return this.sheetFrameHeight = image.height / vertSize;
+      return (this.sheetFrameHeight = image.height / vertSize);
     } catch (error) {
       //console.log(@sheetFrameWidth + " - " + @sheetFrameHeight)
       e = error;
@@ -6623,9 +6573,7 @@ XAnimaPart = class XAnimaPart {
     }
     return 0;
   }
-
 };
-
 
 // Generated by CoffeeScript 2.6.1
 // * Набор анимаций для всех направлений
@@ -6656,7 +6604,7 @@ XAnimaSet = class XAnimaSet {
     this.isSepareteSpritesheet = isSepareteSpritesheet;
     this._setupAnimations();
     this.isLoop = false;
-    this.actionName = "Action";
+    this.actionName = 'Action';
     this.moveToIdleDelay = 30;
     this.waitActionEnd = true;
     this._extraFirstFrames = 0;
@@ -6679,15 +6627,15 @@ XAnimaSet = class XAnimaSet {
         this.animations[0] = new XAnima(this.frames, this.filename, this.isSpritesheet);
       }
     } else {
-      this.animations[0] = new XAnima(this.frames, this.filename + "_D", this.isSpritesheet);
-      this.animations[1] = new XAnima(this.frames, this.filename + "_L", this.isSpritesheet);
-      this.animations[2] = new XAnima(this.frames, this.filename + "_R", this.isSpritesheet);
-      this.animations[3] = new XAnima(this.frames, this.filename + "_U", this.isSpritesheet);
+      this.animations[0] = new XAnima(this.frames, this.filename + '_D', this.isSpritesheet);
+      this.animations[1] = new XAnima(this.frames, this.filename + '_L', this.isSpritesheet);
+      this.animations[2] = new XAnima(this.frames, this.filename + '_R', this.isSpritesheet);
+      this.animations[3] = new XAnima(this.frames, this.filename + '_U', this.isSpritesheet);
       if (this.is8WayAnimation()) {
-        this.animations[4] = new XAnima(this.frames, this.filename + "_DL", this.isSpritesheet);
-        this.animations[5] = new XAnima(this.frames, this.filename + "_DR", this.isSpritesheet);
-        this.animations[6] = new XAnima(this.frames, this.filename + "_UL", this.isSpritesheet);
-        this.animations[7] = new XAnima(this.frames, this.filename + "_UR", this.isSpritesheet);
+        this.animations[4] = new XAnima(this.frames, this.filename + '_DL', this.isSpritesheet);
+        this.animations[5] = new XAnima(this.frames, this.filename + '_DR', this.isSpritesheet);
+        this.animations[6] = new XAnima(this.frames, this.filename + '_UL', this.isSpritesheet);
+        this.animations[7] = new XAnima(this.frames, this.filename + '_UR', this.isSpritesheet);
       }
       return;
     }
@@ -6724,7 +6672,7 @@ XAnimaSet = class XAnimaSet {
           vertSize = 4;
         }
       }
-      return this.sheetFrameHeight = image.height / vertSize;
+      return (this.sheetFrameHeight = image.height / vertSize);
     } catch (error) {
       //console.log(@sheetFrameWidth + " - " + @sheetFrameHeight)
       e = error;
@@ -6740,11 +6688,11 @@ XAnimaSet = class XAnimaSet {
   getActionName() {
     switch (this.type) {
       case 0:
-        return "Move";
+        return 'Move';
       case 1:
-        return "Idle";
+        return 'Idle';
       case 3:
-        return "Dashing";
+        return 'Dashing';
       default:
         return this.actionName;
     }
@@ -6879,9 +6827,7 @@ XAnimaSet = class XAnimaSet {
   isIdle() {
     return this.type === 1;
   }
-
 };
-
 
 // Generated by CoffeeScript 2.6.1
 // * Контроллер анимации (смена кадров, направлений)
@@ -6955,7 +6901,8 @@ XAnimaSetController = class XAnimaSetController {
   _updateFrames(character) {
     // * Используется один и тотже алгоритм смены кадров для Dashing и Movement
     if (this.rootAnimation.isMovement() || this.rootAnimation.isDashing()) {
-      if (!this.rootAnimation.isNoFrames()) { // * IDLE AND ACTION SAME WAY
+      if (!this.rootAnimation.isNoFrames()) {
+        // * IDLE AND ACTION SAME WAY
         return this._updateMovement(character);
       }
     } else {
@@ -6990,7 +6937,8 @@ XAnimaSetController = class XAnimaSetController {
   }
 
   _setInitialFrame(frameIndex) {
-    if (this._initialFrame === true) { // * Установка начального кадра
+    if (this._initialFrame === true) {
+      // * Установка начального кадра
       return;
     }
     this.cFrame = frameIndex;
@@ -7005,7 +6953,7 @@ XAnimaSetController = class XAnimaSetController {
       this._timer += 0.5;
     }
     if (this._timer >= this._speed()) {
-      return this._timer = 0;
+      return (this._timer = 0);
     }
   }
 
@@ -7072,12 +7020,12 @@ XAnimaSetController = class XAnimaSetController {
     this._timer = 0;
     this.cFrame = 0;
     this._animPlaying = false;
-    return this._initialFrame = false;
+    return (this._initialFrame = false);
   }
 
   // * Если спрайт должен отрисовать новый кадр, то запрашиваем refresh
   requestRefresh() {
-    return this._requireRefresh = true;
+    return (this._requireRefresh = true);
   }
 
   bitmap() {
@@ -7087,30 +7035,29 @@ XAnimaSetController = class XAnimaSetController {
   isChanged() {
     return this._requireRefresh;
   }
-
 };
-
 
 // Generated by CoffeeScript 2.6.1
 // * Менеджер для работы с БД анимаций
 var XAnimaTools;
 
-XAnimaTools = function() {};
+XAnimaTools = function () {};
 
-(function() {  //╒═════════════════════════════════════════════════════════════════════════╛
+(function () {
+  //╒═════════════════════════════════════════════════════════════════════════╛
   // ■ XAnimaTools.coffee
   //╒═════════════════════════════════════════════════════════════════════════╛
   //---------------------------------------------------------------------------
   var _;
   //@[DEFINES]
   _ = XAnimaTools;
-  _.animationsDB = function() {
+  _.animationsDB = function () {
     return PKD_ANIMAX.Animations;
   };
-  _.animationPartsDB = function() {
+  _.animationPartsDB = function () {
     return PKD_ANIMAX.AnimationParts;
   };
-  _.covertCharDirecitonToDirectionIndex = function(cDir, is8WaySupported) {
+  _.covertCharDirecitonToDirectionIndex = function (cDir, is8WaySupported) {
     var e;
     try {
       switch (cDir) {
@@ -7157,7 +7104,7 @@ XAnimaTools = function() {};
     return 0;
   };
   // * Список всех действий анимации
-  _.getXAnimaActionList = function(id) {
+  _.getXAnimaActionList = function (id) {
     var data;
     data = this.getXAnimaSetById(id);
     if (data == null) {
@@ -7166,15 +7113,17 @@ XAnimaTools = function() {};
     return data.actions;
   };
   // * Анимация по имени (ID)
-  _.getXAnimaSetById = function(id) {
+  _.getXAnimaSetById = function (id) {
     var data;
     data = this.animationsDB();
-    return data != null ? data.find(function(d) {
-      return d.id === id;
-    }) : void 0;
+    return data != null
+      ? data.find(function (d) {
+          return d.id === id;
+        })
+      : void 0;
   };
   // * Настройки анимации для состояния
-  _.getXAnimaParamsForState = function(state, id) {
+  _.getXAnimaParamsForState = function (state, id) {
     var data;
     data = this.getXAnimaSetById(id);
     if (data == null) {
@@ -7183,24 +7132,28 @@ XAnimaTools = function() {};
     return data[state];
   };
   // * Настройки анимации для действия
-  _.getXAnimaParamsForAction = function(actionName, setId) {
+  _.getXAnimaParamsForAction = function (actionName, setId) {
     var data;
     data = this.getXAnimaActionList(setId);
-    return data != null ? data.find(function(a) {
-      return a.name === actionName;
-    }) : void 0;
+    return data != null
+      ? data.find(function (a) {
+          return a.name === actionName;
+        })
+      : void 0;
   };
   // * Часть анимации (слой) по имени
-  _.getXAnimaPartById = function(id) {
+  _.getXAnimaPartById = function (id) {
     var data;
     data = this.animationPartsDB();
-    return data != null ? data.find(function(a) {
-      return a.id === id;
-    }) : void 0;
+    return data != null
+      ? data.find(function (a) {
+          return a.id === id;
+        })
+      : void 0;
   };
-  
+
   // * Конвертировать массив Actions из параметров плагина в более компактный вид
-  _.convertActionsFromParameters = function(actions) {
+  _.convertActionsFromParameters = function (actions) {
     var action, i, item, len, shrinked;
     shrinked = [];
     for (i = 0, len = actions.length; i < len; i++) {
@@ -7222,11 +7175,11 @@ XAnimaTools = function() {};
     }
     return shrinked;
   };
-  _.createXAnimaSetForAction = function(id, params) {
+  _.createXAnimaSetForAction = function (id, params) {
     var animaSet, e;
     try {
       animaSet = this._createXAnimaSetFromParams(id, 2, null, params);
-      if ((animaSet != null) && (params.behav != null)) {
+      if (animaSet != null && params.behav != null) {
         animaSet.behav = params.behav;
       }
       return animaSet;
@@ -7236,7 +7189,7 @@ XAnimaTools = function() {};
       return null;
     }
   };
-  _.createXAnimaSetForMove = function(id, state, params) {
+  _.createXAnimaSetForMove = function (id, state, params) {
     var animaSet, e;
     try {
       animaSet = this._createXAnimaSetFromParams(id, 0, state, params);
@@ -7247,7 +7200,7 @@ XAnimaTools = function() {};
       return null;
     }
   };
-  _.createXAnimaSetForIdle = function(id, state, params) {
+  _.createXAnimaSetForIdle = function (id, state, params) {
     var animaSet, e;
     try {
       animaSet = this._createXAnimaSetFromParams(id, 1, state, params);
@@ -7258,7 +7211,7 @@ XAnimaTools = function() {};
       return null;
     }
   };
-  _.createXAnimaSetForDashing = function(id, state, params) {
+  _.createXAnimaSetForDashing = function (id, state, params) {
     var animaSet, e;
     try {
       animaSet = this._createXAnimaSetFromParams(id, 3, state, params);
@@ -7269,10 +7222,10 @@ XAnimaTools = function() {};
       return null;
     }
   };
-  _.createXAnimaSetForIndependentAction = function() {
+  _.createXAnimaSetForIndependentAction = function () {
     var animaSet, e;
     try {
-      animaSet = new XAnimaSet(0, "", 0, 0, true, false, true);
+      animaSet = new XAnimaSet(0, '', 0, 0, true, false, true);
       return animaSet;
     } catch (error) {
       e = error;
@@ -7280,11 +7233,12 @@ XAnimaTools = function() {};
       return null;
     }
   };
-  _._createXAnimaSetFromParams = function(id, type, state, params) {
+  _._createXAnimaSetFromParams = function (id, type, state, params) {
     var animaSet, e, filename, frames, is8Way, isOneDirection, isSepareteSpritesheet, isSpritesheet, speed;
     try {
-      ({frames, speed, isOneDirection, is8Way, isSpritesheet, isSepareteSpritesheet} = params);
-      if (type === 2) { // * Action
+      ({ frames, speed, isOneDirection, is8Way, isSpritesheet, isSepareteSpritesheet } = params);
+      if (type === 2) {
+        // * Action
         filename = this.createFilenameForAnimaAction(id, params.name);
       } else {
         filename = this.createFilenameForAnimaState(id, state, type);
@@ -7306,36 +7260,36 @@ XAnimaTools = function() {};
       return null;
     }
   };
-  _.createFilenameForAnimaState = function(id, state, type) {
+  _.createFilenameForAnimaState = function (id, state, type) {
     var path;
-    path = id + "/";
+    path = id + '/';
     if (state !== 'base') {
-      path += state + "/";
+      path += state + '/';
     }
     if (type === 0) {
-      path += "Move";
+      path += 'Move';
     } else if (type === 1) {
-      path += "Idle";
+      path += 'Idle';
     } else if (type === 3) {
-      path += "Dashing";
+      path += 'Dashing';
     }
     return path;
   };
-  _.createFilenameForAnimaAction = function(id, name) {
+  _.createFilenameForAnimaAction = function (id, name) {
     var path;
-    path = id + "/Actions/" + name;
+    path = id + '/Actions/' + name;
     return path;
   };
-  _.createFilenameForAnimaPart = function(id, name, isRelative) {
+  _.createFilenameForAnimaPart = function (id, name, isRelative) {
     var path;
     if (isRelative) {
-      path = id + "/Layers/" + name + "/";
+      path = id + '/Layers/' + name + '/';
     } else {
-      path = "CommonLayers/" + name + "/";
+      path = 'CommonLayers/' + name + '/';
     }
     return path;
   };
-  _.createXAnimaPart = function(id, partName, isRelative = false) {
+  _.createXAnimaPart = function (id, partName, isRelative = false) {
     var animaPartSet, e, params;
     try {
       params = this.getXAnimaPartById(partName);
@@ -7352,10 +7306,10 @@ XAnimaTools = function() {};
   };
   // * isRelative - относительно ID анимации, например Harold\Parts\hat
   // * Если isRealtive = false, то будет Parts\hat
-  _._createXAnimaPartFromParams = function(axId, partName, params, isRelative = false) {
+  _._createXAnimaPartFromParams = function (axId, partName, params, isRelative = false) {
     var actionRules, animaPart, baseRule, dashRule, e, filename, i, idleRule, isLowerBodyPart, layerRule, len, moveRule, rule, sortingLevel;
     try {
-      ({isLowerBodyPart, sortingLevel, baseRule, moveRule, idleRule, dashRule, actionRules, layerRule} = params);
+      ({ isLowerBodyPart, sortingLevel, baseRule, moveRule, idleRule, dashRule, actionRules, layerRule } = params);
       filename = this.createFilenameForAnimaPart(axId, partName, isRelative);
       animaPart = new XAnimaPart(filename, isLowerBodyPart, sortingLevel);
       animaPart.directionsLevels = this._convertLayerRuleToDirectionLevels(layerRule);
@@ -7382,7 +7336,14 @@ XAnimaTools = function() {};
           if (rule.enabled === false) {
             animaPart.disableForAction(rule.actionName);
           } else {
-            animaPart.setRuleForAction(rule.actionName, rule.actionRule.isHaveDirections, rule.actionRule.isHaveFrames, rule.actionRule.isSpritesheet, rule.actionRule.isSepareteSpritesheet, rule.fileName);
+            animaPart.setRuleForAction(
+              rule.actionName,
+              rule.actionRule.isHaveDirections,
+              rule.actionRule.isHaveFrames,
+              rule.actionRule.isSpritesheet,
+              rule.actionRule.isSepareteSpritesheet,
+              rule.fileName,
+            );
           }
         }
       } catch (error) {
@@ -7397,7 +7358,7 @@ XAnimaTools = function() {};
     }
   };
   // * Преобразовать структуру LAnimaXPartDirLevel в массив directionsLevels для слоя
-  _._convertLayerRuleToDirectionLevels = function(layerRule) {
+  _._convertLayerRuleToDirectionLevels = function (layerRule) {
     return [layerRule.dirD, layerRule.dirL, layerRule.dirR, layerRule.dirU, layerRule.dirDL, layerRule.dirDR, layerRule.dirUL, layerRule.dirUR, layerRule.noDir];
   };
 })();
