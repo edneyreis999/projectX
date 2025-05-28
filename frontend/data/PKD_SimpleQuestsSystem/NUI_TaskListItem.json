@@ -1,0 +1,75 @@
+{
+    "type": "group",
+    "id": "_taskItem",
+    "childrens": [
+        {
+            "type": "image",
+            "id": "_taskStatusIcon",
+            "parameters": {
+                "imageName": "Task_A",
+                "folderName": "pSQSystem",
+                "keepAspect": false
+            },
+            "bindings": {
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "size": {
+                    "width": "22hdp",
+                    "height": "24hdp"
+                }
+            }
+        },
+        {
+            "type": "textPro",
+            "id": "_taskText",
+            "effects": ["shadow" , "outline;color:#000000;thickness:1"],
+            "parameters": {
+                "alignment": "left",
+                "font": {
+                    "face": null,
+                    "size": 18,
+                    "italic": false,
+                    "bold": false,
+                    "weight": 500
+                },
+                "margins": { "x": 0, "y": 0 },
+                "outline": { "color": null, "width": 2 },
+                "textColor": "#FFFFFF",
+                "shadow": {
+                    "color": "#000",
+                    "opacity": 0,
+                    "margins": { "x": 1, "y": 1 }
+                },
+                "text": "Quest Task text here",
+                "multiline": false,
+                "verticalCentered": true,
+                "actualSize": false,
+                "trimWidth": false,
+                "trimHeight": false,
+                "verticalAlignment": "top",
+                "isStaticIconSize": false,
+                "iconSize": 1,
+                "iconPadding": {
+                    "left": 2,
+                    "right": 2,
+                    "top": 0,
+                    "bottom": 0
+                },
+                "verticalSpacing": 4
+            },
+            "bindings": {
+                "size": {
+                    "width": "100% - 24hdp - 2hdp",
+                    "height": "100%"
+                },
+                "fontSize": "18hdp",
+                "position": {
+                    "x": "prevEndX + 4hdp",
+                    "y": 0
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,398 @@
+{
+    "type": "screen",
+    "childrens": [
+        {
+            "type": "plane",
+            "id": "_backgroundSprite",
+            "parameters": {
+                "imageName": "backgroundFrame",
+                "folderName": "pSQSystem",
+                "margins": 44
+            },
+            "bindings": {
+                "size": {
+                    "width": "100%",
+                    "height": "100%"
+                }
+            }
+        },
+        {
+            "type": "group",
+            "id": "_questGroups",
+            "childrens": [
+                {
+                    "type": "legacyButton",
+                    "id": "groupA",
+                    "parameters": {
+                        "imageName": "GroupA",
+                        "isFull": true,
+                        "folderName": "pSQSystem",
+                        "isCheckAlpha": true,
+                        "forceSize": true
+                    },
+                    "bindings": {
+                        "size": {
+                            "width": "72hdp",
+                            "height": "72hdp"
+                        }
+                    }
+                },
+                {
+                    "type": "legacyButton",
+                    "id": "groupB",
+                    "parameters": {
+                        "imageName": "GroupB",
+                        "isFull": true,
+                        "folderName": "pSQSystem",
+                        "isCheckAlpha": true,
+                        "forceSize": true
+                    },
+                    "bindings": {
+                        "size": {
+                            "width": "72hdp",
+                            "height": "72hdp"
+                        },
+                        "position": {
+                            "x": "prevEndX + 6",
+                            "y": 0
+                        }
+                    }
+                },
+                {
+                    "type": "legacyButton",
+                    "id": "groupC",
+                    "createIf": "@PKD_SQS.PP.isHaveFailedQuests()",
+                    "parameters": {
+                        "imageName": "GroupC",
+                        "isFull": true,
+                        "folderName": "pSQSystem",
+                        "isCheckAlpha": true,
+                        "forceSize": true
+                    },
+                    "bindings": {
+                        "size": {
+                            "width": "72hdp",
+                            "height": "72hdp"
+                        },
+                        "position": {
+                            "x": "prevEndX + 6",
+                            "y": 0
+                        }
+                    }
+                }
+            ],
+            "bindings": {
+                "position": {
+                    "x": "24hdp",
+                    "y": "24hdp"
+                }
+            }
+        },
+        {
+            "type": "list",
+            "id": "_questsList",
+            "parameters": {
+                "maxCols": 1,
+                "isHaveSelectionEffect": false,
+                "selectionEffects": ["glow;distance:12;outerStrength:3"],
+                "scaleItemsWidth": false,
+                "scaleItemsHeight": false,
+                "defautItemHeight": 36,
+                "isDrawDefaultItemBack": false,
+                "backgroundType": 2,
+                "itemsPadding": 12,
+                "isHaveInOutAnimation": true,
+                "inAnimation": "field:x;duration:0.15;keyframes:0=0,100=3",
+                "outAnimation": "field:x;duration:0.15;keyframes:0=3,100=0"
+            },
+            "bindings": {
+                "size": {
+                    "width": "244hdp",
+                    "height": "100% - prevHeight - 102hdp"
+                },
+                "position": {
+                    "x": "12hdp",
+                    "y": "prevEndY + 24hdp"
+                }
+            }
+        },
+        {
+            "type": "image",
+            "id": "_lineSprite",
+            "parameters": {
+                "imageName": "Line",
+                "folderName": "pSQSystem",
+                "keepAspect": false
+            },
+            "bindings": {
+                "position": {
+                    "x": "prevEndX - 12hdp",
+                    "y": "center"
+                }
+            }
+        },
+        {
+            "type": "group",
+            "id": "_questInfoSection",
+            "bindings": {
+                "position": {
+                    "x": "prevEndX",
+                    "y": "10hdp"
+                },
+                "size": {
+                    "width": "100% - 234hdp - 8",
+                    "height": "100% - 40hdp"
+                }
+            },
+            "childrens": [
+                {
+                    "type": "image",
+                    "id": "_noAvailableQuestsSprite",
+                    "parameters": {
+                        "imageName": "noQuestsHolder",
+                        "folderName": "pSQSystem",
+                        "keepAspect": false
+                    },
+                    "bindings": {
+                        "position": {
+                            "x": "center",
+                            "y": "center"
+                        }
+                    }
+                },
+                {
+                    "type": "image",
+                    "id": "qiTitleImage",
+                    "parameters": {
+                        "imageName": "questTitle",
+                        "folderName": "pSQSystem",
+                        "keepAspect": false
+                    },
+                    "bindings": {
+                        "position": {
+                            "x": "center",
+                            "y": "30hdp"
+                        },
+                        "size": {
+                            "width": "400hdp",
+                            "height": "62hdp"
+                        }
+                    },
+                    "childrens": [
+                        {
+                            "type": "textPro",
+                            "id": "qiTitleText",
+                            "effects": ["shadow" , "outline;color:#000000;thickness:1"],
+                            "parameters": {
+                                "alignment": "center",
+                                "font": {
+                                    "face": null,
+                                    "size": 24,
+                                    "italic": false,
+                                    "bold": false,
+                                    "weight": 500
+                                },
+                                "margins": { "x": 0, "y": 0 },
+                                "outline": { "color": null, "width": 2 },
+                                "textColor": "#FFFFFF",
+                                "shadow": {
+                                    "color": "#000",
+                                    "opacity": 0,
+                                    "margins": { "x": 1, "y": 1 }
+                                },
+                                "text": "Quest Title Here",
+                                "multiline": false,
+                                "verticalCentered": true,
+                                "actualSize": false,
+                                "trimWidth": false,
+                                "trimHeight": false,
+                                "verticalAlignment": "top",
+                                "isStaticIconSize": false,
+                                "iconSize": 1,
+                                "iconPadding": {
+                                    "left": 2,
+                                    "right": 2,
+                                    "top": 0,
+                                    "bottom": 0
+                                },
+                                "verticalSpacing": 4
+                            },
+                            "bindings": {
+                                "size": {
+                                    "width": "100%",
+                                    "height": "30hdp"
+                                },
+                                "position": {
+                                    "x": 0,
+                                    "y": "-6hdp"
+                                },
+                                "fontSize": "24hdp"
+                            }
+                        },
+                        {
+                            "type": "image",
+                            "id": "_difficultyLevel",
+                            "parameters": {
+                                "imageName": "questDiff_1",
+                                "folderName": "pSQSystem",
+                                "keepAspect": false
+                            },
+                            "bindings": {
+                                "position": {
+                                    "x": "right + 16hdp",
+                                    "y": "-8hdp"
+                                },
+                                "size": {
+                                    "width": "65hdp",
+                                    "height": "16hdp"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "group",
+                    "id": "_questDescriptionContainer",
+                    "constants": {
+                        "fontSize": 16,
+                        "fontFace": ""
+                    },
+                    "bindings": {
+                        "position": {
+                            "x": "center - 4hdp",
+                            "y": "prevEndY + 4hdp"
+                        },
+                        "size": {
+                            "width": "90%",
+                            "height": "160hdp"
+                        }
+                    }
+                },
+                {
+                    "type": "image",
+                    "id": "qiTasksHeader",
+                    "parameters": {
+                        "imageName": "tasksHeader",
+                        "folderName": "pSQSystem",
+                        "keepAspect": false
+                    },
+                    "bindings": {
+                        "position": {
+                            "x": "center",
+                            "y": "prevEndY + 6hdp"
+                        }
+                    }
+                },
+                {
+                    "type": "list",
+                    "id": "_qiTasksList",
+                    "parameters": {
+                        "maxCols": 1,
+                        "isHaveSelectionEffect": false,
+                        "selectionEffects": ["glow;distance:12;outerStrength:3"],
+                        "scaleItemsWidth": false,
+                        "scaleItemsHeight": false,
+                        "defautItemHeight": 36,
+                        "isDrawDefaultItemBack": false,
+                        "backgroundType": 2,
+                        "itemsPadding": 12,
+                        "isHaveInOutAnimation": false,
+                        "inAnimation": "field:x;duration:0.15;keyframes:0=0,100=4",
+                        "outAnimation": "field:x;duration:0.15;keyframes:0=4,100=0"
+                    },
+                    "bindings": {
+                        "size": {
+                            "width": "90%",
+                            "height": "260hdp"
+                        },
+                        "position": {
+                            "x": "center",
+                            "y": "prevEndY + 4hdp"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "type": "image",
+            "id": "_activeHelp",
+            "parameters": {
+                "imageName": "ActiveHelp",
+                "folderName": "pSQSystem",
+                "keepAspect": false
+            },
+            "bindings": {
+                "position": {
+                    "x": "34hdp",
+                    "y": "bottom  - 18hdp"
+                }
+            }
+        },
+        {
+            "type": "button",
+            "id": "_closeButtonSprite",
+            "parameters": {
+                "imageName": "field",
+                "folderName": "pSQSystem",
+                "imageMargins": 8,
+
+                "clickSe": "",
+
+                "desaturateWhenDisabled": false,
+
+                "tint": "#9c3400",
+                "overTint": "#ff5500",
+                "activeTint": "#9c3400",
+                "tintAlpha": 0.55,
+                "disabledTint": "#AAAAAA",
+                "disabledTintAlpha": 0.5,
+
+                "keyboardKey": "menu",
+                "keyboardHandled": true,
+                "enabled": true
+            },
+            "bindings": {
+                "size": {
+                    "width": "48hdp",
+                    "height": "48hdp"
+                },
+                "position": {
+                    "x": "right - 2",
+                    "y": 2
+                }
+            },
+            "childrens": [{
+                "type": "text",
+                "effects": ["outline;color:#000000;thickness:1"],
+                "parameters": {
+                    "alignment": "center",
+                    "font": {
+                        "face": null,
+                        "size": 24,
+                        "italic": false,
+                        "bold": false,
+                        "weight": 500
+                    },
+                    "margins": { "x": 0, "y": 0 },
+                    "outline": { "color": null, "width": 2 },
+                    "textColor": "#FFFFFF",
+                    "shadow": {
+                        "color": "#000",
+                        "opacity": 0,
+                        "margins": { "x": 1, "y": 1 }
+                    },
+                    "text": "X",
+                    "multiline": false,
+                    "verticalCentered": true,
+                    "actualSize": false
+                },
+                "bindings": {
+                    "size": {
+                        "width": "100%",
+                        "height": "100%"
+                    }
+                }
+            }]
+        }
+    ]
+}

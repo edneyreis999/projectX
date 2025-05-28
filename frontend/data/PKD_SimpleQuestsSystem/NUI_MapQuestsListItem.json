@@ -20,7 +20,7 @@
         {
             "type": "textPro",
             "id": "questNameTextSpr",
-            "parameters": "outline:color=#000,width=2;alignment:left;trimWidth",
+            "parameters": "outline:color=#000,width=2;alignment:left;trimWidth;font:face=Play",
             "bindings": {
                 "size": {
                     "width": "200hdp",
