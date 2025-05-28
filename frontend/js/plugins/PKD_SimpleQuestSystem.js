@@ -323,11 +323,11 @@
  * @target MZ MV
  * @url https://kdworkshop.net/plugins/simple-quests-system
  *
- * 
+ *
  * @help
  * ---------------------------------------------------------------------------
  *
- * РУКОВОДСТВО: 
+ * РУКОВОДСТВО:
  * https://gist.github.com/KageDesu/7e2900af1ff113a5a91734d62f9123d6
  *
  * ---------------------------------------------------------------------------
@@ -347,7 +347,7 @@
  * https://stadnikova-ekaterina.itch.io/
  *
  * License: Creative Commons 4.0 Attribution, Share Alike, Commercial
- * 
+ *
  * @requiredAssets img/pSQSystem/ActiveHelp
  * @requiredAssets img/pSQSystem/Cat_All_00
  * @requiredAssets img/pSQSystem/Cat_All_01
@@ -364,60 +364,60 @@
  * @type struct<Quest>[]
  * @default []
  * @desc Quests
- * 
+ *
  * @param sqsPointers:structA
  * @text Pointers
  * @type struct<Pointer>[]
  * @default []
  * @desc Указатели для квестов
- * 
- * 
+ *
+ *
  * @param isUseAutoNavigation:b
  * @text Auto Navigation
  * @type boolean
  * @default false
  * @desc Исп. авто. навигацию?
- * 
+ *
  * @param sqsNavigation:structA
  * @parent isUseAutoNavigation:b
  * @text Navigation
  * @type struct<NavigatorPathToMap>[]
  * @default []
  * @desc Настройки переходов между картами, для автонавигации указателя задачи
- * 
+ *
  * @param sqsNavigationIgnore:intA
  * @parent isUseAutoNavigation:b
  * @text Ignore Maps
  * @type number[]
  * @default []
  * @desc ID карт, на который автонавигация не будет работать (исключения)
- * 
+ *
  * @param sqsQuestsCategories:structA
  * @text Categories
  * @type struct<CategoryButton>[]
  * @default ["{\"position:struct\":\"{\\\"x\\\":\\\"250\\\",\\\"y\\\":\\\"Graphics.height - 56\\\"}\",\"categoryId\":\"\",\"buttonImage:struct\":\"{\\\"main\\\":\\\"Cat_All_00\\\",\\\"hover\\\":\\\"Cat_All_01\\\",\\\"disabled\\\":\\\"Cat_All_03\\\"}\"}","{\"position:struct\":\"{\\\"x\\\":\\\"370\\\",\\\"y\\\":\\\"Graphics.height - 56\\\"}\",\"categoryId\":\"Main\",\"buttonImage:struct\":\"{\\\"main\\\":\\\"Cat_Main_00\\\",\\\"hover\\\":\\\"Cat_Main_01\\\",\\\"disabled\\\":\\\"Cat_Main_03\\\"}\"}","{\"position:struct\":\"{\\\"x\\\":\\\"510\\\",\\\"y\\\":\\\"Graphics.height - 56\\\"}\",\"categoryId\":\"Side\",\"buttonImage:struct\":\"{\\\"main\\\":\\\"Cat_Side_00\\\",\\\"hover\\\":\\\"Cat_Side_01\\\",\\\"disabled\\\":\\\"Cat_Side_03\\\"}\"}","{\"position:struct\":\"{\\\"x\\\":\\\"630\\\",\\\"y\\\":\\\"Graphics.height - 56\\\"}\",\"categoryId\":\"Other\",\"buttonImage:struct\":\"{\\\"main\\\":\\\"Cat_Other_00\\\",\\\"hover\\\":\\\"Cat_Other_01\\\",\\\"disabled\\\":\\\"Cat_Other_03\\\"}\"}"]
  * @desc [PRO] Категории квестов
- * 
- * 
+ *
+ *
  * @param nextCategoryKey
  * @parent sqsQuestsCategories:structA
  * @text Next Category
  * @desc Следующая категория (клавиатура)
  * @default
- * 
+ *
  * @param prevCategoryKey
  * @parent sqsQuestsCategories:structA
  * @text Prev Category
  * @desc Предыдущая категория (клавиатура)
  * @default
- * 
+ *
  * @param isSupportGamepad:b
  * @parent sqsQuestsCategories:structA
  * @type boolean
  * @text Is support gamepad?
  * @desc Будет ли в игре использоваться геймпад?
  * @default false
- * 
+ *
  * @param nextCategoryGamepadKey
  * @parent isSupportGamepad:b
  * @text Next Category GP
@@ -456,7 +456,7 @@
  * @value dRight
  * @desc Следующая категория (геймпад)
  * @default RB
- * 
+ *
  * @param prevCategoryGamepadKey
  * @parent isSupportGamepad:b
  * @text Prev Category GP
@@ -495,8 +495,8 @@
  * @value dRight
  * @desc Предыдущая категория (геймпад)
  * @default LB
- * 
- * 
+ *
+ *
  * @param isNeedMenuCommand:b
  * @type boolean
  * @text Command in menu?
@@ -504,7 +504,7 @@
  * @off Нет
  * @default true
  * @desc Добавить команду открыть журнал в игровое меню?
- * 
+ *
  * @param isSortByNew:b
  * @type boolean
  * @text New quests first
@@ -512,7 +512,7 @@
  * @off No
  * @default false
  * @desc Если ВКЛ. то новые квесты всегда будут вверху списка
- * 
+ *
  * @param isSortByActive:b
  * @type boolean
  * @text Active quests first
@@ -520,7 +520,7 @@
  * @off No
  * @default false
  * @desc Если ВКЛ. то активные квесты всегда будут вверху списка
- * 
+ *
  * @param isHaveFailedQuests:b
  * @type boolean
  * @text Failed quests
@@ -528,45 +528,45 @@
  * @off No
  * @default false
  * @desc Если ВКЛ. - будет добавлена категория проваленных заданий
- * 
+ *
  * @param buttonForOpenJournal
  * @type text
  * @text Open Journal Button
  * @default j
  * @desc Кнопка для открытия журнала заданий
- * 
+ *
  * @param buttonForOpenTasksWindow
  * @type text
  * @text Button for Tasks Window
  * @default t
  * @desc Кнопка для открытия или закрытия окошка с заданиями (на карте)
- * 
+ *
  * @param menuCommandText
  * @parent isNeedMenuCommand:b
  * @text Command title
  * @default Журнал
  * @desc Заголовок команды в меню
- * 
+ *
  * @param autoComplete:b
  * @type boolean
  * @text Auto Complete
  * @default false
  * @desc Автоматически помечать квест выполненным, если все задачи выполнены
- * 
+ *
  * @param spacer|visualSettings @text‏‏‎ ‎@desc ===============================================
- * 
+ *
  * @param visualSettings
  * @text Внешний вид журнала
- * 
- * 
- * 
+ *
+ *
+ *
  * @param visualPointers:structA
  * @parent visualSettings
  * @type struct<VPointer>[]
  * @text Map Pointers
  * @default ["{\"image\":\"QuestArrow_A\",\"color:color\":\"#bfcc2f\"}","{\"image\":\"QuestArrow_A\",\"color:color\":\"#277fc2\"}","{\"image\":\"QuestArrow_A\",\"color:color\":\"#c7205d\"}"]
  * @desc Указатели (Pro only) -> Число указателей = макс. возможному числу активных квестов
- * 
+ *
  * @param questArrowDefaultOpacity:int
  * @parent visualPointers:structA
  * @type number
@@ -575,58 +575,58 @@
  * @max 255
  * @default 150
  * @desc Прозрачность стрелки указателя
- * 
+ *
  * @param changeOpacityOverDistance:bool
  * @parent visualPointers:structA
  * @type boolean
  * @text Opacity over distance
  * @default true
  * @desc Изменять прозрачность указателя в зависимости от дальности цели
- * 
+ *
  * @param journalNotifyPosition:struct
  * @parent visualSettings
  * @type struct<XY2>
  * @text Notify settings
  * @default {"x":"Graphics.width / 2 - 200","y":"32"}
  * @desc Позиция изображения уведомления (questJournalUpdated.png)
- * 
+ *
  * @param questDifficultyPosition:struct
  * @parent visualSettings
  * @type struct<XY2>
  * @text Difficulty settings
  * @default {"x":"Graphics.width - 104","y":"85"}
  * @desc [PRO] Позиция изображения сложности (questDiff_X.png) квеста
- * 
+ *
  * @param spacer|mapTasksList @text‏‏‎ ‎@desc ===============================================
- * 
+ *
  * @param tasksListActive:bool
  * @type boolean
  * @text Tasks List? (Устарел)
  * @default false
  * @desc Показывать список активных квестов и заданий на карте?
- * 
+ *
  * @param tasksListSettings:struct
  * @parent tasksListActive:bool
  * @type struct<MapTasksList>
  * @text Settings
  * @default {"windowSettings":"","position:s":"{\"x:int\":\"0\",\"y:int\":\"192\"}","closeButtonPosition:s":"{\"x:int\":\"221\",\"y:int\":\"0\"}","closingDirection:str":"left","unhoveredOpacity:i":"160","windowWidth:i":"220","maxQuestsCount:i":"4","questHeight:i":"60","dynamicSize:b":"true","questsSettings":"","emptyListText:str":"No active quests","questInListFontSize:i":"13","beforeTask:str":"-\\}\\}","questsShowMode:str":"active"}
  * @desc Настройки окна со списком заданий
- * 
+ *
  * @param isUseNewQuestsWindow:bool
  * @type boolean
  * @text New Quests Window
  * @default true
  * @desc Использовать новое окно квестов?
- * 
+ *
  * @param nqw_questsShowMode:str
  * @parent isUseNewQuestsWindow:bool
  * @text Mode
- * @type select 
+ * @type select
  * @option active
  * @option all
  * @desc Режим отображения квестов (all - все, active - только активные)
- * @default all 
- * 
+ * @default all
+ *
  */
 /*:zh-cn
  * @plugindesc (v.1.7)[PRO] Simple quests system
@@ -634,11 +634,11 @@
  * @target MZ MV
  * @url https://kdworkshop.net/plugins/simple-quests-system
  *
- * 
+ *
  * @help
  * ---------------------------------------------------------------------------
  *
- * 指南: 
+ * 指南:
  * https://gist.github.com/KageDesu/7e2900af1ff113a5a91734d62f9123d6
  *
  * ---------------------------------------------------------------------------
@@ -657,7 +657,7 @@
  * https://stadnikova-ekaterina.itch.io/
  *
  * License: Creative Commons 4.0 Attribution, Share Alike, Commercial
- * 
+ *
  * @requiredAssets img/pSQSystem/ActiveHelp
  * @requiredAssets img/pSQSystem/Cat_All_00
  * @requiredAssets img/pSQSystem/Cat_All_01
@@ -674,58 +674,58 @@
  * @type struct<Quest>[]
  * @default []
  * @desc
- * 
+ *
  * @param sqsPointers:structA
  * @text 指针
  * @type struct<Pointer>[]
  * @default []
  * @desc 任务的指针
- * 
+ *
  * @param isUseAutoNavigation:b
  * @text 自动导航
  * @type boolean
  * @default false
  * @desc 是否使用新的自动导航系统？
- * 
+ *
  * @param sqsNavigation:structA
  * @parent isUseAutoNavigation:b
  * @text 导航
  * @type struct<NavigatorPathToMap>[]
  * @default []
  * @desc 在地图之间自动显示任务目标路径的链接
- * 
+ *
  * @param sqsNavigationIgnore:intA
  * @parent isUseAutoNavigation:b
  * @text 忽略地图
  * @type number[]
  * @default []
  * @desc 自动导航无法工作的地图ID
- * 
+ *
  * @param sqsQuestsCategories:structA
  * @text 分类
  * @type struct<CategoryButton>[]
  * @default ["{\"position:struct\":\"{\\\"x\\\":\\\"250\\\",\\\"y\\\":\\\"Graphics.height - 56\\\"}\",\"categoryId\":\"\",\"buttonImage:struct\":\"{\\\"main\\\":\\\"Cat_All_00\\\",\\\"hover\\\":\\\"Cat_All_01\\\",\\\"disabled\\\":\\\"Cat_All_03\\\"}\"}","{\"position:struct\":\"{\\\"x\\\":\\\"370\\\",\\\"y\\\":\\\"Graphics.height - 56\\\"}\",\"categoryId\":\"Main\",\"buttonImage:struct\":\"{\\\"main\\\":\\\"Cat_Main_00\\\",\\\"hover\\\":\\\"Cat_Main_01\\\",\\\"disabled\\\":\\\"Cat_Main_03\\\"}\"}","{\"position:struct\":\"{\\\"x\\\":\\\"510\\\",\\\"y\\\":\\\"Graphics.height - 56\\\"}\",\"categoryId\":\"Side\",\"buttonImage:struct\":\"{\\\"main\\\":\\\"Cat_Side_00\\\",\\\"hover\\\":\\\"Cat_Side_01\\\",\\\"disabled\\\":\\\"Cat_Side_03\\\"}\"}","{\"position:struct\":\"{\\\"x\\\":\\\"630\\\",\\\"y\\\":\\\"Graphics.height - 56\\\"}\",\"categoryId\":\"Other\",\"buttonImage:struct\":\"{\\\"main\\\":\\\"Cat_Other_00\\\",\\\"hover\\\":\\\"Cat_Other_01\\\",\\\"disabled\\\":\\\"Cat_Other_03\\\"}\"}"]
  * @desc [PRO] 任务的分类
- * 
+ *
  * @param nextCategoryKey
  * @parent sqsQuestsCategories:structA
  * @text 下一个分类
  * @desc 下一个分类的键盘按键
  * @default
- * 
+ *
  * @param prevCategoryKey
  * @parent sqsQuestsCategories:structA
  * @text 上一个分类
  * @desc 上一个分类的键盘按键
  * @default
- * 
+ *
  * @param isSupportGamepad:b
  * @parent sqsQuestsCategories:structA
  * @type boolean
  * @text 是否支持游戏手柄？
  * @desc 游戏是否使用游戏手柄控制？
  * @default false
- * 
+ *
  * @param nextCategoryGamepadKey
  * @parent isSupportGamepad:b
  * @text 下一个分类 GP
@@ -764,7 +764,7 @@
  * @value dRight
  * @desc 下一个分类的游戏手柄按键
  * @default RB
- * 
+ *
  * @param prevCategoryGamepadKey
  * @parent isSupportGamepad:b
  * @text 上一个分类 GP
@@ -803,7 +803,7 @@
  * @value dRight
  * @desc 上一个分类的游戏手柄按键
  * @default LB
- * 
+ *
  * @param isNeedMenuCommand:b
  * @type boolean
  * @text 菜单中的命令？
@@ -811,7 +811,7 @@
  * @off 不显示
  * @default true
  * @desc 在游戏菜单中显示打开任务日志的命令？
- * 
+ *
  * @param isSortByNew:b
  * @type boolean
  * @text 新任务优先
@@ -819,7 +819,7 @@
  * @off 否
  * @default false
  * @desc 如果为真 - 新任务将始终位于列表顶部
- * 
+ *
  * @param isSortByActive:b
  * @type boolean
  * @text 活跃任务优先
@@ -827,7 +827,7 @@
  * @off 否
  * @default false
  * @desc 如果为真 - 活跃任务将始终位于列表顶部
- * 
+ *
  * @param isHaveFailedQuests:b
  * @type boolean
  * @text 失败的任务
@@ -835,46 +835,46 @@
  * @off 否
  * @default false
  * @desc 如果为真 - 任务日志中将添加失败任务组
- * 
+ *
  * @param buttonForOpenJournal
  * @type text
  * @text 打开日志按钮
  * @default j
  * @desc 打开任务日志的按钮（在地图上）
- * 
+ *
  * @param buttonForOpenTasksWindow
  * @type text
  * @text 任务窗口按钮
  * @default t
  * @desc 打开或关闭地图任务窗口的按钮
- * 
+ *
  * @param menuCommandText
  * @parent isNeedMenuCommand:b
  * @text 命令标题
  * @default 任务
  * @desc 打开任务日志菜单命令的标题
- * 
+ *
  * @param autoComplete:b
  * @type boolean
  * @text 自动完成
  * @default false
  * @desc 如果所有任务完成，是否自动完成任务？
- * 
+ *
  * @param spacer|visualSettings @text‏‏‎ ‎@desc ===============================================
- * 
+ *
  * @param visualSettings
  * @text 视觉设置
- * 
- * 
- * 
- * 
+ *
+ *
+ *
+ *
  * @param visualPointers:structA
  * @parent visualSettings
  * @type struct<VPointer>[]
  * @text 地图指针
  * @default ["{\"image\":\"QuestArrow_A\",\"color:color\":\"#bfcc2f\"}","{\"image\":\"QuestArrow_A\",\"color:color\":\"#277fc2\"}","{\"image\":\"QuestArrow_A\",\"color:color\":\"#c7205d\"}"]
  * @desc 每个活跃任务的指针。（仅限专业版）-> 指针数量 = 最大活跃任务数
- * 
+ *
  * @param questArrowDefaultOpacity:int
  * @parent visualPointers:structA
  * @type number
@@ -883,58 +883,58 @@
  * @max 255
  * @default 150
  * @desc 地图上任务指针箭头的默认不透明度
- * 
+ *
  * @param changeOpacityOverDistance:bool
  * @parent visualPointers:structA
  * @type boolean
  * @text 随距离变化的不透明度
  * @default true
  * @desc 箭头不透明度随箭头目标距离变化
- * 
+ *
  * @param journalNotifyPosition:struct
  * @parent visualSettings
  * @type struct<XY2>
  * @text 通知设置
  * @default {"x":"Graphics.width / 2 - 200","y":"32"}
  * @desc 屏幕上通知图像（questJournalUpdated.png）的位置
- * 
+ *
  * @param questDifficultyPosition:struct
  * @parent visualSettings
  * @type struct<XY2>
  * @text 难度设置
  * @default {"x":"Graphics.width - 104","y":"85"}
  * @desc [PRO] 活跃任务难度图像（questDiff_X.png）位置
- * 
+ *
  * @param spacer|mapTasksList @text‏‏‎ ‎@desc ===============================================
- * 
+ *
  * @param tasksListActive:bool
  * @type boolean
  * @text 任务列表？（已弃用！）
  * @default false
  * @desc 在地图上显示任务列表窗口？
- * 
+ *
  * @param tasksListSettings:struct
  * @parent tasksListActive:bool
  * @type struct<MapTasksList>
  * @text 设置
  * @default {"windowSettings":"","position:s":"{\"x:int\":\"0\",\"y:int\":\"192\"}","closeButtonPosition:s":"{\"x:int\":\"221\",\"y:int\":\"0\"}","closingDirection:str":"left","unhoveredOpacity:i":"160","windowWidth:i":"220","maxQuestsCount:i":"4","questHeight:i":"60","dynamicSize:b":"true","questsSettings":"","emptyListText:str":"没有活跃任务","questInListFontSize:i":"13","beforeTask:str":"-\\}\\}","questsShowMode:str":"active"}
  * @desc 地图任务列表窗口设置
- * 
+ *
  * @param isUseNewQuestsWindow:bool
  * @type boolean
  * @text 新任务窗口
  * @default true
  * @desc 在地图上使用新任务窗口？
- * 
+ *
  * @param nqw_questsShowMode:str
  * @parent isUseNewQuestsWindow:bool
  * @text 模式
- * @type select 
+ * @type select
  * @option 活跃
  * @option 全部
  * @desc 列表中显示哪些任务？仅活跃任务或全部任务
  * @default 全部
- * 
+ *
  */
 /*~struct~Quest:
  * @param id
@@ -1051,9 +1051,6 @@
     * @desc Task goal event on this map
 */
 
-
-
-
 /*~struct~CategoryButton:
     * @param position:struct
     * @type struct<XY2>
@@ -1099,7 +1096,6 @@
  * @require 1
 */
 
- 
 /*~struct~XY2:
  * @param x
  * @text X
@@ -1263,7 +1259,6 @@
  @default active 
 */
 
-
 /*~struct~NavigatorPathToMap:
 * @param mapId:int
 * @text Destination Map ID
@@ -1350,7 +1345,6 @@
 
 */
 
-
 // * MAIN
 //%[Initialization in 0_@Initialize.ts]
 
@@ -1367,8 +1361,6 @@
  * 
  */
 
-
-
 /*!
  * pixi-filters - v4.2.0
  * Compiled Fri, 05 Aug 2022 19:51:27 UTC
@@ -1376,9 +1368,2335 @@
  * pixi-filters is licensed under the MIT License.
  * http://www.opensource.org/licenses/mit-license
  */
-var __filters=function(e,n,t,r,o,i,l,a){"use strict";var s=function(e,n){return(s=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(e,n){e.__proto__=n}||function(e,n){for(var t in n)Object.prototype.hasOwnProperty.call(n,t)&&(e[t]=n[t])})(e,n)};function u(e,n){function t(){this.constructor=e}s(e,n),e.prototype=null===n?Object.create(n):(t.prototype=n.prototype,new t)}var f=function(){return(f=Object.assign||function(e){for(var n,t=arguments,r=1,o=arguments.length;r<o;r++)for(var i in n=t[r])Object.prototype.hasOwnProperty.call(n,i)&&(e[i]=n[i]);return e}).apply(this,arguments)};Object.create;Object.create;var c="attribute vec2 aVertexPosition;\nattribute vec2 aTextureCoord;\n\nuniform mat3 projectionMatrix;\n\nvarying vec2 vTextureCoord;\n\nvoid main(void)\n{\n    gl_Position = vec4((projectionMatrix * vec3(aVertexPosition, 1.0)).xy, 0.0, 1.0);\n    vTextureCoord = aTextureCoord;\n}",m=function(e){function n(n){var t=e.call(this,c,"varying vec2 vTextureCoord;\nuniform sampler2D uSampler;\n\nuniform float gamma;\nuniform float contrast;\nuniform float saturation;\nuniform float brightness;\nuniform float red;\nuniform float green;\nuniform float blue;\nuniform float alpha;\n\nvoid main(void)\n{\n    vec4 c = texture2D(uSampler, vTextureCoord);\n\n    if (c.a > 0.0) {\n        c.rgb /= c.a;\n\n        vec3 rgb = pow(c.rgb, vec3(1. / gamma));\n        rgb = mix(vec3(.5), mix(vec3(dot(vec3(.2125, .7154, .0721), rgb)), rgb, saturation), contrast);\n        rgb.r *= red;\n        rgb.g *= green;\n        rgb.b *= blue;\n        c.rgb = rgb * brightness;\n\n        c.rgb *= c.a;\n    }\n\n    gl_FragColor = c * alpha;\n}\n")||this;return t.gamma=1,t.saturation=1,t.contrast=1,t.brightness=1,t.red=1,t.green=1,t.blue=1,t.alpha=1,Object.assign(t,n),t}return u(n,e),n.prototype.apply=function(e,n,t,r){this.uniforms.gamma=Math.max(this.gamma,1e-4),this.uniforms.saturation=this.saturation,this.uniforms.contrast=this.contrast,this.uniforms.brightness=this.brightness,this.uniforms.red=this.red,this.uniforms.green=this.green,this.uniforms.blue=this.blue,this.uniforms.alpha=this.alpha,e.applyFilter(this,n,t,r)},n}(n.Filter),p=function(e){function n(n){void 0===n&&(n=.5);var t=e.call(this,c,"\nuniform sampler2D uSampler;\nvarying vec2 vTextureCoord;\n\nuniform float threshold;\n\nvoid main() {\n    vec4 color = texture2D(uSampler, vTextureCoord);\n\n    // A simple & fast algorithm for getting brightness.\n    // It's inaccuracy , but good enought for this feature.\n    float _max = max(max(color.r, color.g), color.b);\n    float _min = min(min(color.r, color.g), color.b);\n    float brightness = (_max + _min) * 0.5;\n\n    if(brightness > threshold) {\n        gl_FragColor = color;\n    } else {\n        gl_FragColor = vec4(0.0, 0.0, 0.0, 0.0);\n    }\n}\n")||this;return t.threshold=n,t}return u(n,e),Object.defineProperty(n.prototype,"threshold",{get:function(){return this.uniforms.threshold},set:function(e){this.uniforms.threshold=e},enumerable:!1,configurable:!0}),n}(n.Filter),d=function(e){function n(n,r,o){void 0===n&&(n=4),void 0===r&&(r=3),void 0===o&&(o=!1);var i=e.call(this,c,o?"\nvarying vec2 vTextureCoord;\nuniform sampler2D uSampler;\n\nuniform vec2 uOffset;\nuniform vec4 filterClamp;\n\nvoid main(void)\n{\n    vec4 color = vec4(0.0);\n\n    // Sample top left pixel\n    color += texture2D(uSampler, clamp(vec2(vTextureCoord.x - uOffset.x, vTextureCoord.y + uOffset.y), filterClamp.xy, filterClamp.zw));\n\n    // Sample top right pixel\n    color += texture2D(uSampler, clamp(vec2(vTextureCoord.x + uOffset.x, vTextureCoord.y + uOffset.y), filterClamp.xy, filterClamp.zw));\n\n    // Sample bottom right pixel\n    color += texture2D(uSampler, clamp(vec2(vTextureCoord.x + uOffset.x, vTextureCoord.y - uOffset.y), filterClamp.xy, filterClamp.zw));\n\n    // Sample bottom left pixel\n    color += texture2D(uSampler, clamp(vec2(vTextureCoord.x - uOffset.x, vTextureCoord.y - uOffset.y), filterClamp.xy, filterClamp.zw));\n\n    // Average\n    color *= 0.25;\n\n    gl_FragColor = color;\n}\n":"\nvarying vec2 vTextureCoord;\nuniform sampler2D uSampler;\n\nuniform vec2 uOffset;\n\nvoid main(void)\n{\n    vec4 color = vec4(0.0);\n\n    // Sample top left pixel\n    color += texture2D(uSampler, vec2(vTextureCoord.x - uOffset.x, vTextureCoord.y + uOffset.y));\n\n    // Sample top right pixel\n    color += texture2D(uSampler, vec2(vTextureCoord.x + uOffset.x, vTextureCoord.y + uOffset.y));\n\n    // Sample bottom right pixel\n    color += texture2D(uSampler, vec2(vTextureCoord.x + uOffset.x, vTextureCoord.y - uOffset.y));\n\n    // Sample bottom left pixel\n    color += texture2D(uSampler, vec2(vTextureCoord.x - uOffset.x, vTextureCoord.y - uOffset.y));\n\n    // Average\n    color *= 0.25;\n\n    gl_FragColor = color;\n}")||this;return i._kernels=[],i._blur=4,i._quality=3,i.uniforms.uOffset=new Float32Array(2),i._pixelSize=new t.Point,i.pixelSize=1,i._clamp=o,Array.isArray(n)?i.kernels=n:(i._blur=n,i.quality=r),i}return u(n,e),n.prototype.apply=function(e,n,t,r){var o,i=this._pixelSize.x/n._frame.width,l=this._pixelSize.y/n._frame.height;if(1===this._quality||0===this._blur)o=this._kernels[0]+.5,this.uniforms.uOffset[0]=o*i,this.uniforms.uOffset[1]=o*l,e.applyFilter(this,n,t,r);else{for(var a=e.getFilterTexture(),s=n,u=a,f=void 0,c=this._quality-1,m=0;m<c;m++)o=this._kernels[m]+.5,this.uniforms.uOffset[0]=o*i,this.uniforms.uOffset[1]=o*l,e.applyFilter(this,s,u,1),f=s,s=u,u=f;o=this._kernels[c]+.5,this.uniforms.uOffset[0]=o*i,this.uniforms.uOffset[1]=o*l,e.applyFilter(this,s,t,r),e.returnFilterTexture(a)}},n.prototype._updatePadding=function(){this.padding=Math.ceil(this._kernels.reduce((function(e,n){return e+n+.5}),0))},n.prototype._generateKernels=function(){var e=this._blur,n=this._quality,t=[e];if(e>0)for(var r=e,o=e/n,i=1;i<n;i++)r-=o,t.push(r);this._kernels=t,this._updatePadding()},Object.defineProperty(n.prototype,"kernels",{get:function(){return this._kernels},set:function(e){Array.isArray(e)&&e.length>0?(this._kernels=e,this._quality=e.length,this._blur=Math.max.apply(Math,e)):(this._kernels=[0],this._quality=1)},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"clamp",{get:function(){return this._clamp},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"pixelSize",{get:function(){return this._pixelSize},set:function(e){"number"==typeof e?(this._pixelSize.x=e,this._pixelSize.y=e):Array.isArray(e)?(this._pixelSize.x=e[0],this._pixelSize.y=e[1]):e instanceof t.Point?(this._pixelSize.x=e.x,this._pixelSize.y=e.y):(this._pixelSize.x=1,this._pixelSize.y=1)},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"quality",{get:function(){return this._quality},set:function(e){this._quality=Math.max(1,Math.round(e)),this._generateKernels()},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"blur",{get:function(){return this._blur},set:function(e){this._blur=e,this._generateKernels()},enumerable:!1,configurable:!0}),n}(n.Filter),h=function(e){function n(t){var o=e.call(this,c,"uniform sampler2D uSampler;\nvarying vec2 vTextureCoord;\n\nuniform sampler2D bloomTexture;\nuniform float bloomScale;\nuniform float brightness;\n\nvoid main() {\n    vec4 color = texture2D(uSampler, vTextureCoord);\n    color.rgb *= brightness;\n    vec4 bloomColor = vec4(texture2D(bloomTexture, vTextureCoord).rgb, 0.0);\n    bloomColor.rgb *= bloomScale;\n    gl_FragColor = color + bloomColor;\n}\n")||this;o.bloomScale=1,o.brightness=1,o._resolution=r.settings.FILTER_RESOLUTION,"number"==typeof t&&(t={threshold:t});var i=Object.assign(n.defaults,t);o.bloomScale=i.bloomScale,o.brightness=i.brightness;var l=i.kernels,a=i.blur,s=i.quality,u=i.pixelSize,f=i.resolution;return o._extractFilter=new p(i.threshold),o._extractFilter.resolution=f,o._blurFilter=l?new d(l):new d(a,s),o.pixelSize=u,o.resolution=f,o}return u(n,e),n.prototype.apply=function(e,n,t,r,o){var i=e.getFilterTexture();this._extractFilter.apply(e,n,i,1,o);var l=e.getFilterTexture();this._blurFilter.apply(e,i,l,1),this.uniforms.bloomScale=this.bloomScale,this.uniforms.brightness=this.brightness,this.uniforms.bloomTexture=l,e.applyFilter(this,n,t,r),e.returnFilterTexture(l),e.returnFilterTexture(i)},Object.defineProperty(n.prototype,"resolution",{get:function(){return this._resolution},set:function(e){this._resolution=e,this._extractFilter&&(this._extractFilter.resolution=e),this._blurFilter&&(this._blurFilter.resolution=e)},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"threshold",{get:function(){return this._extractFilter.threshold},set:function(e){this._extractFilter.threshold=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"kernels",{get:function(){return this._blurFilter.kernels},set:function(e){this._blurFilter.kernels=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"blur",{get:function(){return this._blurFilter.blur},set:function(e){this._blurFilter.blur=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"quality",{get:function(){return this._blurFilter.quality},set:function(e){this._blurFilter.quality=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"pixelSize",{get:function(){return this._blurFilter.pixelSize},set:function(e){this._blurFilter.pixelSize=e},enumerable:!1,configurable:!0}),n.defaults={threshold:.5,bloomScale:1,brightness:1,kernels:null,blur:8,quality:4,pixelSize:1,resolution:r.settings.FILTER_RESOLUTION},n}(n.Filter),g=function(e){function n(n){void 0===n&&(n=8);var t=e.call(this,c,"varying vec2 vTextureCoord;\n\nuniform vec4 filterArea;\nuniform float pixelSize;\nuniform sampler2D uSampler;\n\nvec2 mapCoord( vec2 coord )\n{\n    coord *= filterArea.xy;\n    coord += filterArea.zw;\n\n    return coord;\n}\n\nvec2 unmapCoord( vec2 coord )\n{\n    coord -= filterArea.zw;\n    coord /= filterArea.xy;\n\n    return coord;\n}\n\nvec2 pixelate(vec2 coord, vec2 size)\n{\n    return floor( coord / size ) * size;\n}\n\nvec2 getMod(vec2 coord, vec2 size)\n{\n    return mod( coord , size) / size;\n}\n\nfloat character(float n, vec2 p)\n{\n    p = floor(p*vec2(4.0, -4.0) + 2.5);\n\n    if (clamp(p.x, 0.0, 4.0) == p.x)\n    {\n        if (clamp(p.y, 0.0, 4.0) == p.y)\n        {\n            if (int(mod(n/exp2(p.x + 5.0*p.y), 2.0)) == 1) return 1.0;\n        }\n    }\n    return 0.0;\n}\n\nvoid main()\n{\n    vec2 coord = mapCoord(vTextureCoord);\n\n    // get the rounded color..\n    vec2 pixCoord = pixelate(coord, vec2(pixelSize));\n    pixCoord = unmapCoord(pixCoord);\n\n    vec4 color = texture2D(uSampler, pixCoord);\n\n    // determine the character to use\n    float gray = (color.r + color.g + color.b) / 3.0;\n\n    float n =  65536.0;             // .\n    if (gray > 0.2) n = 65600.0;    // :\n    if (gray > 0.3) n = 332772.0;   // *\n    if (gray > 0.4) n = 15255086.0; // o\n    if (gray > 0.5) n = 23385164.0; // &\n    if (gray > 0.6) n = 15252014.0; // 8\n    if (gray > 0.7) n = 13199452.0; // @\n    if (gray > 0.8) n = 11512810.0; // #\n\n    // get the mod..\n    vec2 modd = getMod(coord, vec2(pixelSize));\n\n    gl_FragColor = color * character( n, vec2(-1.0) + modd * 2.0);\n\n}\n")||this;return t.size=n,t}return u(n,e),Object.defineProperty(n.prototype,"size",{get:function(){return this.uniforms.pixelSize},set:function(e){this.uniforms.pixelSize=e},enumerable:!1,configurable:!0}),n}(n.Filter),v=function(e){function n(n){var t=e.call(this,c,"precision mediump float;\n\nvarying vec2 vTextureCoord;\nuniform sampler2D uSampler;\nuniform vec4 filterArea;\n\nuniform float transformX;\nuniform float transformY;\nuniform vec3 lightColor;\nuniform float lightAlpha;\nuniform vec3 shadowColor;\nuniform float shadowAlpha;\n\nvoid main(void) {\n    vec2 transform = vec2(1.0 / filterArea) * vec2(transformX, transformY);\n    vec4 color = texture2D(uSampler, vTextureCoord);\n    float light = texture2D(uSampler, vTextureCoord - transform).a;\n    float shadow = texture2D(uSampler, vTextureCoord + transform).a;\n\n    color.rgb = mix(color.rgb, lightColor, clamp((color.a - light) * lightAlpha, 0.0, 1.0));\n    color.rgb = mix(color.rgb, shadowColor, clamp((color.a - shadow) * shadowAlpha, 0.0, 1.0));\n    gl_FragColor = vec4(color.rgb * color.a, color.a);\n}\n")||this;return t._thickness=2,t._angle=0,t.uniforms.lightColor=new Float32Array(3),t.uniforms.shadowColor=new Float32Array(3),Object.assign(t,{rotation:45,thickness:2,lightColor:16777215,lightAlpha:.7,shadowColor:0,shadowAlpha:.7},n),t.padding=1,t}return u(n,e),n.prototype._updateTransform=function(){this.uniforms.transformX=this._thickness*Math.cos(this._angle),this.uniforms.transformY=this._thickness*Math.sin(this._angle)},Object.defineProperty(n.prototype,"rotation",{get:function(){return this._angle/t.DEG_TO_RAD},set:function(e){this._angle=e*t.DEG_TO_RAD,this._updateTransform()},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"thickness",{get:function(){return this._thickness},set:function(e){this._thickness=e,this._updateTransform()},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"lightColor",{get:function(){return o.rgb2hex(this.uniforms.lightColor)},set:function(e){o.hex2rgb(e,this.uniforms.lightColor)},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"lightAlpha",{get:function(){return this.uniforms.lightAlpha},set:function(e){this.uniforms.lightAlpha=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"shadowColor",{get:function(){return o.rgb2hex(this.uniforms.shadowColor)},set:function(e){o.hex2rgb(e,this.uniforms.shadowColor)},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"shadowAlpha",{get:function(){return this.uniforms.shadowAlpha},set:function(e){this.uniforms.shadowAlpha=e},enumerable:!1,configurable:!0}),n}(n.Filter),y=function(e){function n(n,o,s,u){void 0===n&&(n=2),void 0===o&&(o=4),void 0===s&&(s=r.settings.FILTER_RESOLUTION),void 0===u&&(u=5);var f,c,m=e.call(this)||this;return"number"==typeof n?(f=n,c=n):n instanceof t.Point?(f=n.x,c=n.y):Array.isArray(n)&&(f=n[0],c=n[1]),m.blurXFilter=new a.BlurFilterPass(!0,f,o,s,u),m.blurYFilter=new a.BlurFilterPass(!1,c,o,s,u),m.blurYFilter.blendMode=i.BLEND_MODES.SCREEN,m.defaultFilter=new l.AlphaFilter,m}return u(n,e),n.prototype.apply=function(e,n,t,r){var o=e.getFilterTexture();this.defaultFilter.apply(e,n,t,r),this.blurXFilter.apply(e,n,o,1),this.blurYFilter.apply(e,o,t,0),e.returnFilterTexture(o)},Object.defineProperty(n.prototype,"blur",{get:function(){return this.blurXFilter.blur},set:function(e){this.blurXFilter.blur=this.blurYFilter.blur=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"blurX",{get:function(){return this.blurXFilter.blur},set:function(e){this.blurXFilter.blur=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"blurY",{get:function(){return this.blurYFilter.blur},set:function(e){this.blurYFilter.blur=e},enumerable:!1,configurable:!0}),n}(n.Filter),b=function(e){function n(t){var r=e.call(this,c,"uniform float radius;\nuniform float strength;\nuniform vec2 center;\nuniform sampler2D uSampler;\nvarying vec2 vTextureCoord;\n\nuniform vec4 filterArea;\nuniform vec4 filterClamp;\nuniform vec2 dimensions;\n\nvoid main()\n{\n    vec2 coord = vTextureCoord * filterArea.xy;\n    coord -= center * dimensions.xy;\n    float distance = length(coord);\n    if (distance < radius) {\n        float percent = distance / radius;\n        if (strength > 0.0) {\n            coord *= mix(1.0, smoothstep(0.0, radius / distance, percent), strength * 0.75);\n        } else {\n            coord *= mix(1.0, pow(percent, 1.0 + strength * 0.75) * radius / distance, 1.0 - percent);\n        }\n    }\n    coord += center * dimensions.xy;\n    coord /= filterArea.xy;\n    vec2 clampedCoord = clamp(coord, filterClamp.xy, filterClamp.zw);\n    vec4 color = texture2D(uSampler, clampedCoord);\n    if (coord != clampedCoord) {\n        color *= max(0.0, 1.0 - length(coord - clampedCoord));\n    }\n\n    gl_FragColor = color;\n}\n")||this;return r.uniforms.dimensions=new Float32Array(2),Object.assign(r,n.defaults,t),r}return u(n,e),n.prototype.apply=function(e,n,t,r){var o=n.filterFrame,i=o.width,l=o.height;this.uniforms.dimensions[0]=i,this.uniforms.dimensions[1]=l,e.applyFilter(this,n,t,r)},Object.defineProperty(n.prototype,"radius",{get:function(){return this.uniforms.radius},set:function(e){this.uniforms.radius=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"strength",{get:function(){return this.uniforms.strength},set:function(e){this.uniforms.strength=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"center",{get:function(){return this.uniforms.center},set:function(e){this.uniforms.center=e},enumerable:!1,configurable:!0}),n.defaults={center:[.5,.5],radius:100,strength:1},n}(n.Filter),x=function(e){function t(n,t,r){void 0===t&&(t=!1),void 0===r&&(r=1);var o=e.call(this,c,"varying vec2 vTextureCoord;\nuniform sampler2D uSampler;\nuniform sampler2D colorMap;\nuniform float _mix;\nuniform float _size;\nuniform float _sliceSize;\nuniform float _slicePixelSize;\nuniform float _sliceInnerSize;\nvoid main() {\n    vec4 color = texture2D(uSampler, vTextureCoord.xy);\n\n    vec4 adjusted;\n    if (color.a > 0.0) {\n        color.rgb /= color.a;\n        float innerWidth = _size - 1.0;\n        float zSlice0 = min(floor(color.b * innerWidth), innerWidth);\n        float zSlice1 = min(zSlice0 + 1.0, innerWidth);\n        float xOffset = _slicePixelSize * 0.5 + color.r * _sliceInnerSize;\n        float s0 = xOffset + (zSlice0 * _sliceSize);\n        float s1 = xOffset + (zSlice1 * _sliceSize);\n        float yOffset = _sliceSize * 0.5 + color.g * (1.0 - _sliceSize);\n        vec4 slice0Color = texture2D(colorMap, vec2(s0,yOffset));\n        vec4 slice1Color = texture2D(colorMap, vec2(s1,yOffset));\n        float zOffset = fract(color.b * innerWidth);\n        adjusted = mix(slice0Color, slice1Color, zOffset);\n\n        color.rgb *= color.a;\n    }\n    gl_FragColor = vec4(mix(color, adjusted, _mix).rgb, color.a);\n\n}")||this;return o.mix=1,o._size=0,o._sliceSize=0,o._slicePixelSize=0,o._sliceInnerSize=0,o._nearest=!1,o._scaleMode=null,o._colorMap=null,o._scaleMode=null,o.nearest=t,o.mix=r,o.colorMap=n,o}return u(t,e),t.prototype.apply=function(e,n,t,r){this.uniforms._mix=this.mix,e.applyFilter(this,n,t,r)},Object.defineProperty(t.prototype,"colorSize",{get:function(){return this._size},enumerable:!1,configurable:!0}),Object.defineProperty(t.prototype,"colorMap",{get:function(){return this._colorMap},set:function(e){var t;e&&(e instanceof n.Texture||(e=n.Texture.from(e)),(null===(t=e)||void 0===t?void 0:t.baseTexture)&&(e.baseTexture.scaleMode=this._scaleMode,e.baseTexture.mipmap=i.MIPMAP_MODES.OFF,this._size=e.height,this._sliceSize=1/this._size,this._slicePixelSize=this._sliceSize/this._size,this._sliceInnerSize=this._slicePixelSize*(this._size-1),this.uniforms._size=this._size,this.uniforms._sliceSize=this._sliceSize,this.uniforms._slicePixelSize=this._slicePixelSize,this.uniforms._sliceInnerSize=this._sliceInnerSize,this.uniforms.colorMap=e),this._colorMap=e)},enumerable:!1,configurable:!0}),Object.defineProperty(t.prototype,"nearest",{get:function(){return this._nearest},set:function(e){this._nearest=e,this._scaleMode=e?i.SCALE_MODES.NEAREST:i.SCALE_MODES.LINEAR;var n=this._colorMap;n&&n.baseTexture&&(n.baseTexture._glTextures={},n.baseTexture.scaleMode=this._scaleMode,n.baseTexture.mipmap=i.MIPMAP_MODES.OFF,n._updateID++,n.baseTexture.emit("update",n.baseTexture))},enumerable:!1,configurable:!0}),t.prototype.updateColorMap=function(){var e=this._colorMap;e&&e.baseTexture&&(e._updateID++,e.baseTexture.emit("update",e.baseTexture),this.colorMap=e)},t.prototype.destroy=function(n){void 0===n&&(n=!1),this._colorMap&&this._colorMap.destroy(n),e.prototype.destroy.call(this)},t}(n.Filter),_=function(e){function n(n,t){void 0===n&&(n=0),void 0===t&&(t=1);var r=e.call(this,c,"varying vec2 vTextureCoord;\nuniform sampler2D uSampler;\nuniform vec3 color;\nuniform float alpha;\n\nvoid main(void) {\n    vec4 currentColor = texture2D(uSampler, vTextureCoord);\n    gl_FragColor = vec4(mix(currentColor.rgb, color.rgb, currentColor.a * alpha), currentColor.a);\n}\n")||this;return r._color=0,r._alpha=1,r.uniforms.color=new Float32Array(3),r.color=n,r.alpha=t,r}return u(n,e),Object.defineProperty(n.prototype,"color",{get:function(){return this._color},set:function(e){var n=this.uniforms.color;"number"==typeof e?(o.hex2rgb(e,n),this._color=e):(n[0]=e[0],n[1]=e[1],n[2]=e[2],this._color=o.rgb2hex(n))},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"alpha",{get:function(){return this._alpha},set:function(e){this.uniforms.alpha=e,this._alpha=e},enumerable:!1,configurable:!0}),n}(n.Filter),C=function(e){function n(n,t,r){void 0===n&&(n=16711680),void 0===t&&(t=0),void 0===r&&(r=.4);var o=e.call(this,c,"varying vec2 vTextureCoord;\nuniform sampler2D uSampler;\nuniform vec3 originalColor;\nuniform vec3 newColor;\nuniform float epsilon;\nvoid main(void) {\n    vec4 currentColor = texture2D(uSampler, vTextureCoord);\n    vec3 colorDiff = originalColor - (currentColor.rgb / max(currentColor.a, 0.0000000001));\n    float colorDistance = length(colorDiff);\n    float doReplace = step(colorDistance, epsilon);\n    gl_FragColor = vec4(mix(currentColor.rgb, (newColor + colorDiff) * currentColor.a, doReplace), currentColor.a);\n}\n")||this;return o._originalColor=16711680,o._newColor=0,o.uniforms.originalColor=new Float32Array(3),o.uniforms.newColor=new Float32Array(3),o.originalColor=n,o.newColor=t,o.epsilon=r,o}return u(n,e),Object.defineProperty(n.prototype,"originalColor",{get:function(){return this._originalColor},set:function(e){var n=this.uniforms.originalColor;"number"==typeof e?(o.hex2rgb(e,n),this._originalColor=e):(n[0]=e[0],n[1]=e[1],n[2]=e[2],this._originalColor=o.rgb2hex(n))},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"newColor",{get:function(){return this._newColor},set:function(e){var n=this.uniforms.newColor;"number"==typeof e?(o.hex2rgb(e,n),this._newColor=e):(n[0]=e[0],n[1]=e[1],n[2]=e[2],this._newColor=o.rgb2hex(n))},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"epsilon",{get:function(){return this.uniforms.epsilon},set:function(e){this.uniforms.epsilon=e},enumerable:!1,configurable:!0}),n}(n.Filter),S=function(e){function n(n,t,r){void 0===t&&(t=200),void 0===r&&(r=200);var o=e.call(this,c,"precision mediump float;\n\nvarying mediump vec2 vTextureCoord;\n\nuniform sampler2D uSampler;\nuniform vec2 texelSize;\nuniform float matrix[9];\n\nvoid main(void)\n{\n   vec4 c11 = texture2D(uSampler, vTextureCoord - texelSize); // top left\n   vec4 c12 = texture2D(uSampler, vec2(vTextureCoord.x, vTextureCoord.y - texelSize.y)); // top center\n   vec4 c13 = texture2D(uSampler, vec2(vTextureCoord.x + texelSize.x, vTextureCoord.y - texelSize.y)); // top right\n\n   vec4 c21 = texture2D(uSampler, vec2(vTextureCoord.x - texelSize.x, vTextureCoord.y)); // mid left\n   vec4 c22 = texture2D(uSampler, vTextureCoord); // mid center\n   vec4 c23 = texture2D(uSampler, vec2(vTextureCoord.x + texelSize.x, vTextureCoord.y)); // mid right\n\n   vec4 c31 = texture2D(uSampler, vec2(vTextureCoord.x - texelSize.x, vTextureCoord.y + texelSize.y)); // bottom left\n   vec4 c32 = texture2D(uSampler, vec2(vTextureCoord.x, vTextureCoord.y + texelSize.y)); // bottom center\n   vec4 c33 = texture2D(uSampler, vTextureCoord + texelSize); // bottom right\n\n   gl_FragColor =\n       c11 * matrix[0] + c12 * matrix[1] + c13 * matrix[2] +\n       c21 * matrix[3] + c22 * matrix[4] + c23 * matrix[5] +\n       c31 * matrix[6] + c32 * matrix[7] + c33 * matrix[8];\n\n   gl_FragColor.a = c22.a;\n}\n")||this;return o.uniforms.texelSize=new Float32Array(2),o.uniforms.matrix=new Float32Array(9),void 0!==n&&(o.matrix=n),o.width=t,o.height=r,o}return u(n,e),Object.defineProperty(n.prototype,"matrix",{get:function(){return this.uniforms.matrix},set:function(e){var n=this;e.forEach((function(e,t){n.uniforms.matrix[t]=e}))},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"width",{get:function(){return 1/this.uniforms.texelSize[0]},set:function(e){this.uniforms.texelSize[0]=1/e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"height",{get:function(){return 1/this.uniforms.texelSize[1]},set:function(e){this.uniforms.texelSize[1]=1/e},enumerable:!1,configurable:!0}),n}(n.Filter),F=function(e){function n(){return e.call(this,c,"precision mediump float;\n\nvarying vec2 vTextureCoord;\n\nuniform sampler2D uSampler;\n\nvoid main(void)\n{\n    float lum = length(texture2D(uSampler, vTextureCoord.xy).rgb);\n\n    gl_FragColor = vec4(1.0, 1.0, 1.0, 1.0);\n\n    if (lum < 1.00)\n    {\n        if (mod(gl_FragCoord.x + gl_FragCoord.y, 10.0) == 0.0)\n        {\n            gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);\n        }\n    }\n\n    if (lum < 0.75)\n    {\n        if (mod(gl_FragCoord.x - gl_FragCoord.y, 10.0) == 0.0)\n        {\n            gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);\n        }\n    }\n\n    if (lum < 0.50)\n    {\n        if (mod(gl_FragCoord.x + gl_FragCoord.y - 5.0, 10.0) == 0.0)\n        {\n            gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);\n        }\n    }\n\n    if (lum < 0.3)\n    {\n        if (mod(gl_FragCoord.x - gl_FragCoord.y - 5.0, 10.0) == 0.0)\n        {\n            gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);\n        }\n    }\n}\n")||this}return u(n,e),n}(n.Filter),z=function(e){function n(t){var r=e.call(this,c,"varying vec2 vTextureCoord;\nuniform sampler2D uSampler;\n\nuniform vec4 filterArea;\nuniform vec2 dimensions;\n\nconst float SQRT_2 = 1.414213;\n\nconst float light = 1.0;\n\nuniform float curvature;\nuniform float lineWidth;\nuniform float lineContrast;\nuniform bool verticalLine;\nuniform float noise;\nuniform float noiseSize;\n\nuniform float vignetting;\nuniform float vignettingAlpha;\nuniform float vignettingBlur;\n\nuniform float seed;\nuniform float time;\n\nfloat rand(vec2 co) {\n    return fract(sin(dot(co.xy, vec2(12.9898, 78.233))) * 43758.5453);\n}\n\nvoid main(void)\n{\n    vec2 pixelCoord = vTextureCoord.xy * filterArea.xy;\n    vec2 dir = vec2(vTextureCoord.xy * filterArea.xy / dimensions - vec2(0.5, 0.5));\n    \n    gl_FragColor = texture2D(uSampler, vTextureCoord);\n    vec3 rgb = gl_FragColor.rgb;\n\n    if (noise > 0.0 && noiseSize > 0.0)\n    {\n        pixelCoord.x = floor(pixelCoord.x / noiseSize);\n        pixelCoord.y = floor(pixelCoord.y / noiseSize);\n        float _noise = rand(pixelCoord * noiseSize * seed) - 0.5;\n        rgb += _noise * noise;\n    }\n\n    if (lineWidth > 0.0)\n    {\n        float _c = curvature > 0. ? curvature : 1.;\n        float k = curvature > 0. ?(length(dir * dir) * 0.25 * _c * _c + 0.935 * _c) : 1.;\n        vec2 uv = dir * k;\n\n        float v = (verticalLine ? uv.x * dimensions.x : uv.y * dimensions.y) * min(1.0, 2.0 / lineWidth ) / _c;\n        float j = 1. + cos(v * 1.2 - time) * 0.5 * lineContrast;\n        rgb *= j;\n        float segment = verticalLine ? mod((dir.x + .5) * dimensions.x, 4.) : mod((dir.y + .5) * dimensions.y, 4.);\n        rgb *= 0.99 + ceil(segment) * 0.015;\n    }\n\n    if (vignetting > 0.0)\n    {\n        float outter = SQRT_2 - vignetting * SQRT_2;\n        float darker = clamp((outter - length(dir) * SQRT_2) / ( 0.00001 + vignettingBlur * SQRT_2), 0.0, 1.0);\n        rgb *= darker + (1.0 - darker) * (1.0 - vignettingAlpha);\n    }\n\n    gl_FragColor.rgb = rgb;\n}\n")||this;return r.time=0,r.seed=0,r.uniforms.dimensions=new Float32Array(2),Object.assign(r,n.defaults,t),r}return u(n,e),n.prototype.apply=function(e,n,t,r){var o=n.filterFrame,i=o.width,l=o.height;this.uniforms.dimensions[0]=i,this.uniforms.dimensions[1]=l,this.uniforms.seed=this.seed,this.uniforms.time=this.time,e.applyFilter(this,n,t,r)},Object.defineProperty(n.prototype,"curvature",{get:function(){return this.uniforms.curvature},set:function(e){this.uniforms.curvature=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"lineWidth",{get:function(){return this.uniforms.lineWidth},set:function(e){this.uniforms.lineWidth=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"lineContrast",{get:function(){return this.uniforms.lineContrast},set:function(e){this.uniforms.lineContrast=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"verticalLine",{get:function(){return this.uniforms.verticalLine},set:function(e){this.uniforms.verticalLine=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"noise",{get:function(){return this.uniforms.noise},set:function(e){this.uniforms.noise=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"noiseSize",{get:function(){return this.uniforms.noiseSize},set:function(e){this.uniforms.noiseSize=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"vignetting",{get:function(){return this.uniforms.vignetting},set:function(e){this.uniforms.vignetting=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"vignettingAlpha",{get:function(){return this.uniforms.vignettingAlpha},set:function(e){this.uniforms.vignettingAlpha=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"vignettingBlur",{get:function(){return this.uniforms.vignettingBlur},set:function(e){this.uniforms.vignettingBlur=e},enumerable:!1,configurable:!0}),n.defaults={curvature:1,lineWidth:1,lineContrast:.25,verticalLine:!1,noise:0,noiseSize:1,seed:0,vignetting:.3,vignettingAlpha:1,vignettingBlur:.3,time:0},n}(n.Filter),O=function(e){function n(n,t){void 0===n&&(n=1),void 0===t&&(t=5);var r=e.call(this,c,"precision mediump float;\n\nvarying vec2 vTextureCoord;\nvarying vec4 vColor;\n\nuniform vec4 filterArea;\nuniform sampler2D uSampler;\n\nuniform float angle;\nuniform float scale;\n\nfloat pattern()\n{\n   float s = sin(angle), c = cos(angle);\n   vec2 tex = vTextureCoord * filterArea.xy;\n   vec2 point = vec2(\n       c * tex.x - s * tex.y,\n       s * tex.x + c * tex.y\n   ) * scale;\n   return (sin(point.x) * sin(point.y)) * 4.0;\n}\n\nvoid main()\n{\n   vec4 color = texture2D(uSampler, vTextureCoord);\n   float average = (color.r + color.g + color.b) / 3.0;\n   gl_FragColor = vec4(vec3(average * 10.0 - 5.0 + pattern()), color.a);\n}\n")||this;return r.scale=n,r.angle=t,r}return u(n,e),Object.defineProperty(n.prototype,"scale",{get:function(){return this.uniforms.scale},set:function(e){this.uniforms.scale=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"angle",{get:function(){return this.uniforms.angle},set:function(e){this.uniforms.angle=e},enumerable:!1,configurable:!0}),n}(n.Filter),P=function(e){function i(o){var l=e.call(this)||this;l.angle=45,l._distance=5,l._resolution=r.settings.FILTER_RESOLUTION;var a=o?f(f({},i.defaults),o):i.defaults,s=a.kernels,u=a.blur,m=a.quality,p=a.pixelSize,h=a.resolution;l._tintFilter=new n.Filter(c,"varying vec2 vTextureCoord;\nuniform sampler2D uSampler;\nuniform float alpha;\nuniform vec3 color;\n\nuniform vec2 shift;\nuniform vec4 inputSize;\n\nvoid main(void){\n    vec4 sample = texture2D(uSampler, vTextureCoord - shift * inputSize.zw);\n\n    // Premultiply alpha\n    sample.rgb = color.rgb * sample.a;\n\n    // alpha user alpha\n    sample *= alpha;\n\n    gl_FragColor = sample;\n}"),l._tintFilter.uniforms.color=new Float32Array(4),l._tintFilter.uniforms.shift=new t.Point,l._tintFilter.resolution=h,l._blurFilter=s?new d(s):new d(u,m),l.pixelSize=p,l.resolution=h;var g=a.shadowOnly,v=a.rotation,y=a.distance,b=a.alpha,x=a.color;return l.shadowOnly=g,l.rotation=v,l.distance=y,l.alpha=b,l.color=x,l._updatePadding(),l}return u(i,e),i.prototype.apply=function(e,n,t,r){var o=e.getFilterTexture();this._tintFilter.apply(e,n,o,1),this._blurFilter.apply(e,o,t,r),!0!==this.shadowOnly&&e.applyFilter(this,n,t,0),e.returnFilterTexture(o)},i.prototype._updatePadding=function(){this.padding=this.distance+2*this.blur},i.prototype._updateShift=function(){this._tintFilter.uniforms.shift.set(this.distance*Math.cos(this.angle),this.distance*Math.sin(this.angle))},Object.defineProperty(i.prototype,"resolution",{get:function(){return this._resolution},set:function(e){this._resolution=e,this._tintFilter&&(this._tintFilter.resolution=e),this._blurFilter&&(this._blurFilter.resolution=e)},enumerable:!1,configurable:!0}),Object.defineProperty(i.prototype,"distance",{get:function(){return this._distance},set:function(e){this._distance=e,this._updatePadding(),this._updateShift()},enumerable:!1,configurable:!0}),Object.defineProperty(i.prototype,"rotation",{get:function(){return this.angle/t.DEG_TO_RAD},set:function(e){this.angle=e*t.DEG_TO_RAD,this._updateShift()},enumerable:!1,configurable:!0}),Object.defineProperty(i.prototype,"alpha",{get:function(){return this._tintFilter.uniforms.alpha},set:function(e){this._tintFilter.uniforms.alpha=e},enumerable:!1,configurable:!0}),Object.defineProperty(i.prototype,"color",{get:function(){return o.rgb2hex(this._tintFilter.uniforms.color)},set:function(e){o.hex2rgb(e,this._tintFilter.uniforms.color)},enumerable:!1,configurable:!0}),Object.defineProperty(i.prototype,"kernels",{get:function(){return this._blurFilter.kernels},set:function(e){this._blurFilter.kernels=e},enumerable:!1,configurable:!0}),Object.defineProperty(i.prototype,"blur",{get:function(){return this._blurFilter.blur},set:function(e){this._blurFilter.blur=e,this._updatePadding()},enumerable:!1,configurable:!0}),Object.defineProperty(i.prototype,"quality",{get:function(){return this._blurFilter.quality},set:function(e){this._blurFilter.quality=e},enumerable:!1,configurable:!0}),Object.defineProperty(i.prototype,"pixelSize",{get:function(){return this._blurFilter.pixelSize},set:function(e){this._blurFilter.pixelSize=e},enumerable:!1,configurable:!0}),i.defaults={rotation:45,distance:5,color:0,alpha:.5,shadowOnly:!1,kernels:null,blur:2,quality:3,pixelSize:1,resolution:r.settings.FILTER_RESOLUTION},i}(n.Filter),A=function(e){function n(n){void 0===n&&(n=5);var t=e.call(this,c,"precision mediump float;\n\nvarying vec2 vTextureCoord;\n\nuniform sampler2D uSampler;\nuniform float strength;\nuniform vec4 filterArea;\n\n\nvoid main(void)\n{\n\tvec2 onePixel = vec2(1.0 / filterArea);\n\n\tvec4 color;\n\n\tcolor.rgb = vec3(0.5);\n\n\tcolor -= texture2D(uSampler, vTextureCoord - onePixel) * strength;\n\tcolor += texture2D(uSampler, vTextureCoord + onePixel) * strength;\n\n\tcolor.rgb = vec3((color.r + color.g + color.b) / 3.0);\n\n\tfloat alpha = texture2D(uSampler, vTextureCoord).a;\n\n\tgl_FragColor = vec4(color.rgb * alpha, alpha);\n}\n")||this;return t.strength=n,t}return u(n,e),Object.defineProperty(n.prototype,"strength",{get:function(){return this.uniforms.strength},set:function(e){this.uniforms.strength=e},enumerable:!1,configurable:!0}),n}(n.Filter),T=function(e){function r(t){var o=e.call(this,c,"// precision highp float;\n\nvarying vec2 vTextureCoord;\nuniform sampler2D uSampler;\n\nuniform vec4 filterArea;\nuniform vec4 filterClamp;\nuniform vec2 dimensions;\nuniform float aspect;\n\nuniform sampler2D displacementMap;\nuniform float offset;\nuniform float sinDir;\nuniform float cosDir;\nuniform int fillMode;\n\nuniform float seed;\nuniform vec2 red;\nuniform vec2 green;\nuniform vec2 blue;\n\nconst int TRANSPARENT = 0;\nconst int ORIGINAL = 1;\nconst int LOOP = 2;\nconst int CLAMP = 3;\nconst int MIRROR = 4;\n\nvoid main(void)\n{\n    vec2 coord = (vTextureCoord * filterArea.xy) / dimensions;\n\n    if (coord.x > 1.0 || coord.y > 1.0) {\n        return;\n    }\n\n    float cx = coord.x - 0.5;\n    float cy = (coord.y - 0.5) * aspect;\n    float ny = (-sinDir * cx + cosDir * cy) / aspect + 0.5;\n\n    // displacementMap: repeat\n    // ny = ny > 1.0 ? ny - 1.0 : (ny < 0.0 ? 1.0 + ny : ny);\n\n    // displacementMap: mirror\n    ny = ny > 1.0 ? 2.0 - ny : (ny < 0.0 ? -ny : ny);\n\n    vec4 dc = texture2D(displacementMap, vec2(0.5, ny));\n\n    float displacement = (dc.r - dc.g) * (offset / filterArea.x);\n\n    coord = vTextureCoord + vec2(cosDir * displacement, sinDir * displacement * aspect);\n\n    if (fillMode == CLAMP) {\n        coord = clamp(coord, filterClamp.xy, filterClamp.zw);\n    } else {\n        if( coord.x > filterClamp.z ) {\n            if (fillMode == TRANSPARENT) {\n                discard;\n            } else if (fillMode == LOOP) {\n                coord.x -= filterClamp.z;\n            } else if (fillMode == MIRROR) {\n                coord.x = filterClamp.z * 2.0 - coord.x;\n            }\n        } else if( coord.x < filterClamp.x ) {\n            if (fillMode == TRANSPARENT) {\n                discard;\n            } else if (fillMode == LOOP) {\n                coord.x += filterClamp.z;\n            } else if (fillMode == MIRROR) {\n                coord.x *= -filterClamp.z;\n            }\n        }\n\n        if( coord.y > filterClamp.w ) {\n            if (fillMode == TRANSPARENT) {\n                discard;\n            } else if (fillMode == LOOP) {\n                coord.y -= filterClamp.w;\n            } else if (fillMode == MIRROR) {\n                coord.y = filterClamp.w * 2.0 - coord.y;\n            }\n        } else if( coord.y < filterClamp.y ) {\n            if (fillMode == TRANSPARENT) {\n                discard;\n            } else if (fillMode == LOOP) {\n                coord.y += filterClamp.w;\n            } else if (fillMode == MIRROR) {\n                coord.y *= -filterClamp.w;\n            }\n        }\n    }\n\n    gl_FragColor.r = texture2D(uSampler, coord + red * (1.0 - seed * 0.4) / filterArea.xy).r;\n    gl_FragColor.g = texture2D(uSampler, coord + green * (1.0 - seed * 0.3) / filterArea.xy).g;\n    gl_FragColor.b = texture2D(uSampler, coord + blue * (1.0 - seed * 0.2) / filterArea.xy).b;\n    gl_FragColor.a = texture2D(uSampler, coord).a;\n}\n")||this;return o.offset=100,o.fillMode=r.TRANSPARENT,o.average=!1,o.seed=0,o.minSize=8,o.sampleSize=512,o._slices=0,o._offsets=new Float32Array(1),o._sizes=new Float32Array(1),o._direction=-1,o.uniforms.dimensions=new Float32Array(2),o._canvas=document.createElement("canvas"),o._canvas.width=4,o._canvas.height=o.sampleSize,o.texture=n.Texture.from(o._canvas,{scaleMode:i.SCALE_MODES.NEAREST}),Object.assign(o,r.defaults,t),o}return u(r,e),r.prototype.apply=function(e,n,t,r){var o=n.filterFrame,i=o.width,l=o.height;this.uniforms.dimensions[0]=i,this.uniforms.dimensions[1]=l,this.uniforms.aspect=l/i,this.uniforms.seed=this.seed,this.uniforms.offset=this.offset,this.uniforms.fillMode=this.fillMode,e.applyFilter(this,n,t,r)},r.prototype._randomizeSizes=function(){var e=this._sizes,n=this._slices-1,t=this.sampleSize,r=Math.min(this.minSize/t,.9/this._slices);if(this.average){for(var o=this._slices,i=1,l=0;l<n;l++){var a=i/(o-l),s=Math.max(a*(1-.6*Math.random()),r);e[l]=s,i-=s}e[n]=i}else{i=1;var u=Math.sqrt(1/this._slices);for(l=0;l<n;l++){s=Math.max(u*i*Math.random(),r);e[l]=s,i-=s}e[n]=i}this.shuffle()},r.prototype.shuffle=function(){for(var e=this._sizes,n=this._slices-1;n>0;n--){var t=Math.random()*n>>0,r=e[n];e[n]=e[t],e[t]=r}},r.prototype._randomizeOffsets=function(){for(var e=0;e<this._slices;e++)this._offsets[e]=Math.random()*(Math.random()<.5?-1:1)},r.prototype.refresh=function(){this._randomizeSizes(),this._randomizeOffsets(),this.redraw()},r.prototype.redraw=function(){var e,n=this.sampleSize,t=this.texture,r=this._canvas.getContext("2d");r.clearRect(0,0,8,n);for(var o=0,i=0;i<this._slices;i++){e=Math.floor(256*this._offsets[i]);var l=this._sizes[i]*n,a=e>0?e:0,s=e<0?-e:0;r.fillStyle="rgba("+a+", "+s+", 0, 1)",r.fillRect(0,o>>0,n,l+1>>0),o+=l}t.baseTexture.update(),this.uniforms.displacementMap=t},Object.defineProperty(r.prototype,"sizes",{get:function(){return this._sizes},set:function(e){for(var n=Math.min(this._slices,e.length),t=0;t<n;t++)this._sizes[t]=e[t]},enumerable:!1,configurable:!0}),Object.defineProperty(r.prototype,"offsets",{get:function(){return this._offsets},set:function(e){for(var n=Math.min(this._slices,e.length),t=0;t<n;t++)this._offsets[t]=e[t]},enumerable:!1,configurable:!0}),Object.defineProperty(r.prototype,"slices",{get:function(){return this._slices},set:function(e){this._slices!==e&&(this._slices=e,this.uniforms.slices=e,this._sizes=this.uniforms.slicesWidth=new Float32Array(e),this._offsets=this.uniforms.slicesOffset=new Float32Array(e),this.refresh())},enumerable:!1,configurable:!0}),Object.defineProperty(r.prototype,"direction",{get:function(){return this._direction},set:function(e){if(this._direction!==e){this._direction=e;var n=e*t.DEG_TO_RAD;this.uniforms.sinDir=Math.sin(n),this.uniforms.cosDir=Math.cos(n)}},enumerable:!1,configurable:!0}),Object.defineProperty(r.prototype,"red",{get:function(){return this.uniforms.red},set:function(e){this.uniforms.red=e},enumerable:!1,configurable:!0}),Object.defineProperty(r.prototype,"green",{get:function(){return this.uniforms.green},set:function(e){this.uniforms.green=e},enumerable:!1,configurable:!0}),Object.defineProperty(r.prototype,"blue",{get:function(){return this.uniforms.blue},set:function(e){this.uniforms.blue=e},enumerable:!1,configurable:!0}),r.prototype.destroy=function(){var e;null===(e=this.texture)||void 0===e||e.destroy(!0),this.texture=this._canvas=this.red=this.green=this.blue=this._sizes=this._offsets=null},r.defaults={slices:5,offset:100,direction:0,fillMode:0,average:!1,seed:0,red:[0,0],green:[0,0],blue:[0,0],minSize:8,sampleSize:512},r.TRANSPARENT=0,r.ORIGINAL=1,r.LOOP=2,r.CLAMP=3,r.MIRROR=4,r}(n.Filter),w=function(e){function n(t){var r=this,o=Object.assign({},n.defaults,t),i=o.outerStrength,l=o.innerStrength,a=o.color,s=o.knockout,u=o.quality,f=Math.round(o.distance);return(r=e.call(this,c,"varying vec2 vTextureCoord;\nvarying vec4 vColor;\n\nuniform sampler2D uSampler;\n\nuniform float outerStrength;\nuniform float innerStrength;\n\nuniform vec4 glowColor;\n\nuniform vec4 filterArea;\nuniform vec4 filterClamp;\nuniform bool knockout;\n\nconst float PI = 3.14159265358979323846264;\n\nconst float DIST = __DIST__;\nconst float ANGLE_STEP_SIZE = min(__ANGLE_STEP_SIZE__, PI * 2.0);\nconst float ANGLE_STEP_NUM = ceil(PI * 2.0 / ANGLE_STEP_SIZE);\n\nconst float MAX_TOTAL_ALPHA = ANGLE_STEP_NUM * DIST * (DIST + 1.0) / 2.0;\n\nvoid main(void) {\n    vec2 px = vec2(1.0 / filterArea.x, 1.0 / filterArea.y);\n\n    float totalAlpha = 0.0;\n\n    vec2 direction;\n    vec2 displaced;\n    vec4 curColor;\n\n    for (float angle = 0.0; angle < PI * 2.0; angle += ANGLE_STEP_SIZE) {\n       direction = vec2(cos(angle), sin(angle)) * px;\n\n       for (float curDistance = 0.0; curDistance < DIST; curDistance++) {\n           displaced = clamp(vTextureCoord + direction * \n                   (curDistance + 1.0), filterClamp.xy, filterClamp.zw);\n\n           curColor = texture2D(uSampler, displaced);\n\n           totalAlpha += (DIST - curDistance) * curColor.a;\n       }\n    }\n    \n    curColor = texture2D(uSampler, vTextureCoord);\n\n    float alphaRatio = (totalAlpha / MAX_TOTAL_ALPHA);\n\n    float innerGlowAlpha = (1.0 - alphaRatio) * innerStrength * curColor.a;\n    float innerGlowStrength = min(1.0, innerGlowAlpha);\n    \n    vec4 innerColor = mix(curColor, glowColor, innerGlowStrength);\n\n    float outerGlowAlpha = alphaRatio * outerStrength * (1. - curColor.a);\n    float outerGlowStrength = min(1.0 - innerColor.a, outerGlowAlpha);\n\n    vec4 outerGlowColor = outerGlowStrength * glowColor.rgba;\n    \n    if (knockout) {\n      float resultAlpha = outerGlowAlpha + innerGlowAlpha;\n      gl_FragColor = vec4(glowColor.rgb * resultAlpha, resultAlpha);\n    }\n    else {\n      gl_FragColor = innerColor + outerGlowColor;\n    }\n}\n".replace(/__ANGLE_STEP_SIZE__/gi,""+(1/u/f).toFixed(7)).replace(/__DIST__/gi,f.toFixed(0)+".0"))||this).uniforms.glowColor=new Float32Array([0,0,0,1]),Object.assign(r,{color:a,outerStrength:i,innerStrength:l,padding:f,knockout:s}),r}return u(n,e),Object.defineProperty(n.prototype,"color",{get:function(){return o.rgb2hex(this.uniforms.glowColor)},set:function(e){o.hex2rgb(e,this.uniforms.glowColor)},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"outerStrength",{get:function(){return this.uniforms.outerStrength},set:function(e){this.uniforms.outerStrength=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"innerStrength",{get:function(){return this.uniforms.innerStrength},set:function(e){this.uniforms.innerStrength=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"knockout",{get:function(){return this.uniforms.knockout},set:function(e){this.uniforms.knockout=e},enumerable:!1,configurable:!0}),n.defaults={distance:10,outerStrength:4,innerStrength:0,color:16777215,quality:.1,knockout:!1},n}(n.Filter),D=function(e){function n(r){var o=e.call(this,c,"varying vec2 vTextureCoord;\nuniform sampler2D uSampler;\nuniform vec4 filterArea;\nuniform vec2 dimensions;\n\nuniform vec2 light;\nuniform bool parallel;\nuniform float aspect;\n\nuniform float gain;\nuniform float lacunarity;\nuniform float time;\nuniform float alpha;\n\n${perlin}\n\nvoid main(void) {\n    vec2 coord = vTextureCoord * filterArea.xy / dimensions.xy;\n\n    float d;\n\n    if (parallel) {\n        float _cos = light.x;\n        float _sin = light.y;\n        d = (_cos * coord.x) + (_sin * coord.y * aspect);\n    } else {\n        float dx = coord.x - light.x / dimensions.x;\n        float dy = (coord.y - light.y / dimensions.y) * aspect;\n        float dis = sqrt(dx * dx + dy * dy) + 0.00001;\n        d = dy / dis;\n    }\n\n    vec3 dir = vec3(d, d, 0.0);\n\n    float noise = turb(dir + vec3(time, 0.0, 62.1 + time) * 0.05, vec3(480.0, 320.0, 480.0), lacunarity, gain);\n    noise = mix(noise, 0.0, 0.3);\n    //fade vertically.\n    vec4 mist = vec4(noise, noise, noise, 1.0) * (1.0 - coord.y);\n    mist.a = 1.0;\n    // apply user alpha\n    mist *= alpha;\n\n    gl_FragColor = texture2D(uSampler, vTextureCoord) + mist;\n\n}\n".replace("${perlin}","vec3 mod289(vec3 x)\n{\n    return x - floor(x * (1.0 / 289.0)) * 289.0;\n}\nvec4 mod289(vec4 x)\n{\n    return x - floor(x * (1.0 / 289.0)) * 289.0;\n}\nvec4 permute(vec4 x)\n{\n    return mod289(((x * 34.0) + 1.0) * x);\n}\nvec4 taylorInvSqrt(vec4 r)\n{\n    return 1.79284291400159 - 0.85373472095314 * r;\n}\nvec3 fade(vec3 t)\n{\n    return t * t * t * (t * (t * 6.0 - 15.0) + 10.0);\n}\n// Classic Perlin noise, periodic variant\nfloat pnoise(vec3 P, vec3 rep)\n{\n    vec3 Pi0 = mod(floor(P), rep); // Integer part, modulo period\n    vec3 Pi1 = mod(Pi0 + vec3(1.0), rep); // Integer part + 1, mod period\n    Pi0 = mod289(Pi0);\n    Pi1 = mod289(Pi1);\n    vec3 Pf0 = fract(P); // Fractional part for interpolation\n    vec3 Pf1 = Pf0 - vec3(1.0); // Fractional part - 1.0\n    vec4 ix = vec4(Pi0.x, Pi1.x, Pi0.x, Pi1.x);\n    vec4 iy = vec4(Pi0.yy, Pi1.yy);\n    vec4 iz0 = Pi0.zzzz;\n    vec4 iz1 = Pi1.zzzz;\n    vec4 ixy = permute(permute(ix) + iy);\n    vec4 ixy0 = permute(ixy + iz0);\n    vec4 ixy1 = permute(ixy + iz1);\n    vec4 gx0 = ixy0 * (1.0 / 7.0);\n    vec4 gy0 = fract(floor(gx0) * (1.0 / 7.0)) - 0.5;\n    gx0 = fract(gx0);\n    vec4 gz0 = vec4(0.5) - abs(gx0) - abs(gy0);\n    vec4 sz0 = step(gz0, vec4(0.0));\n    gx0 -= sz0 * (step(0.0, gx0) - 0.5);\n    gy0 -= sz0 * (step(0.0, gy0) - 0.5);\n    vec4 gx1 = ixy1 * (1.0 / 7.0);\n    vec4 gy1 = fract(floor(gx1) * (1.0 / 7.0)) - 0.5;\n    gx1 = fract(gx1);\n    vec4 gz1 = vec4(0.5) - abs(gx1) - abs(gy1);\n    vec4 sz1 = step(gz1, vec4(0.0));\n    gx1 -= sz1 * (step(0.0, gx1) - 0.5);\n    gy1 -= sz1 * (step(0.0, gy1) - 0.5);\n    vec3 g000 = vec3(gx0.x, gy0.x, gz0.x);\n    vec3 g100 = vec3(gx0.y, gy0.y, gz0.y);\n    vec3 g010 = vec3(gx0.z, gy0.z, gz0.z);\n    vec3 g110 = vec3(gx0.w, gy0.w, gz0.w);\n    vec3 g001 = vec3(gx1.x, gy1.x, gz1.x);\n    vec3 g101 = vec3(gx1.y, gy1.y, gz1.y);\n    vec3 g011 = vec3(gx1.z, gy1.z, gz1.z);\n    vec3 g111 = vec3(gx1.w, gy1.w, gz1.w);\n    vec4 norm0 = taylorInvSqrt(vec4(dot(g000, g000), dot(g010, g010), dot(g100, g100), dot(g110, g110)));\n    g000 *= norm0.x;\n    g010 *= norm0.y;\n    g100 *= norm0.z;\n    g110 *= norm0.w;\n    vec4 norm1 = taylorInvSqrt(vec4(dot(g001, g001), dot(g011, g011), dot(g101, g101), dot(g111, g111)));\n    g001 *= norm1.x;\n    g011 *= norm1.y;\n    g101 *= norm1.z;\n    g111 *= norm1.w;\n    float n000 = dot(g000, Pf0);\n    float n100 = dot(g100, vec3(Pf1.x, Pf0.yz));\n    float n010 = dot(g010, vec3(Pf0.x, Pf1.y, Pf0.z));\n    float n110 = dot(g110, vec3(Pf1.xy, Pf0.z));\n    float n001 = dot(g001, vec3(Pf0.xy, Pf1.z));\n    float n101 = dot(g101, vec3(Pf1.x, Pf0.y, Pf1.z));\n    float n011 = dot(g011, vec3(Pf0.x, Pf1.yz));\n    float n111 = dot(g111, Pf1);\n    vec3 fade_xyz = fade(Pf0);\n    vec4 n_z = mix(vec4(n000, n100, n010, n110), vec4(n001, n101, n011, n111), fade_xyz.z);\n    vec2 n_yz = mix(n_z.xy, n_z.zw, fade_xyz.y);\n    float n_xyz = mix(n_yz.x, n_yz.y, fade_xyz.x);\n    return 2.2 * n_xyz;\n}\nfloat turb(vec3 P, vec3 rep, float lacunarity, float gain)\n{\n    float sum = 0.0;\n    float sc = 1.0;\n    float totalgain = 1.0;\n    for (float i = 0.0; i < 6.0; i++)\n    {\n        sum += totalgain * pnoise(P * sc, rep);\n        sc *= lacunarity;\n        totalgain *= gain;\n    }\n    return abs(sum);\n}\n"))||this;o.parallel=!0,o.time=0,o._angle=0,o.uniforms.dimensions=new Float32Array(2);var i=Object.assign(n.defaults,r);return o._angleLight=new t.Point,o.angle=i.angle,o.gain=i.gain,o.lacunarity=i.lacunarity,o.alpha=i.alpha,o.parallel=i.parallel,o.center=i.center,o.time=i.time,o}return u(n,e),n.prototype.apply=function(e,n,t,r){var o=n.filterFrame,i=o.width,l=o.height;this.uniforms.light=this.parallel?this._angleLight:this.center,this.uniforms.parallel=this.parallel,this.uniforms.dimensions[0]=i,this.uniforms.dimensions[1]=l,this.uniforms.aspect=l/i,this.uniforms.time=this.time,this.uniforms.alpha=this.alpha,e.applyFilter(this,n,t,r)},Object.defineProperty(n.prototype,"angle",{get:function(){return this._angle},set:function(e){this._angle=e;var n=e*t.DEG_TO_RAD;this._angleLight.x=Math.cos(n),this._angleLight.y=Math.sin(n)},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"gain",{get:function(){return this.uniforms.gain},set:function(e){this.uniforms.gain=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"lacunarity",{get:function(){return this.uniforms.lacunarity},set:function(e){this.uniforms.lacunarity=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"alpha",{get:function(){return this.uniforms.alpha},set:function(e){this.uniforms.alpha=e},enumerable:!1,configurable:!0}),n.defaults={angle:30,gain:.5,lacunarity:2.5,time:0,parallel:!0,center:[0,0],alpha:1},n}(n.Filter),j=function(e){function n(n,r,o){void 0===n&&(n=[0,0]),void 0===r&&(r=5),void 0===o&&(o=0);var i=e.call(this,c,"varying vec2 vTextureCoord;\nuniform sampler2D uSampler;\nuniform vec4 filterArea;\n\nuniform vec2 uVelocity;\nuniform int uKernelSize;\nuniform float uOffset;\n\nconst int MAX_KERNEL_SIZE = 2048;\n\n// Notice:\n// the perfect way:\n//    int kernelSize = min(uKernelSize, MAX_KERNELSIZE);\n// BUT in real use-case , uKernelSize < MAX_KERNELSIZE almost always.\n// So use uKernelSize directly.\n\nvoid main(void)\n{\n    vec4 color = texture2D(uSampler, vTextureCoord);\n\n    if (uKernelSize == 0)\n    {\n        gl_FragColor = color;\n        return;\n    }\n\n    vec2 velocity = uVelocity / filterArea.xy;\n    float offset = -uOffset / length(uVelocity) - 0.5;\n    int k = uKernelSize - 1;\n\n    for(int i = 0; i < MAX_KERNEL_SIZE - 1; i++) {\n        if (i == k) {\n            break;\n        }\n        vec2 bias = velocity * (float(i) / float(k) + offset);\n        color += texture2D(uSampler, vTextureCoord + bias);\n    }\n    gl_FragColor = color / float(uKernelSize);\n}\n")||this;return i.kernelSize=5,i.uniforms.uVelocity=new Float32Array(2),i._velocity=new t.ObservablePoint(i.velocityChanged,i),i.setVelocity(n),i.kernelSize=r,i.offset=o,i}return u(n,e),n.prototype.apply=function(e,n,t,r){var o=this.velocity,i=o.x,l=o.y;this.uniforms.uKernelSize=0!==i||0!==l?this.kernelSize:0,e.applyFilter(this,n,t,r)},Object.defineProperty(n.prototype,"velocity",{get:function(){return this._velocity},set:function(e){this.setVelocity(e)},enumerable:!1,configurable:!0}),n.prototype.setVelocity=function(e){if(Array.isArray(e)){var n=e[0],t=e[1];this._velocity.set(n,t)}else this._velocity.copyFrom(e)},n.prototype.velocityChanged=function(){this.uniforms.uVelocity[0]=this._velocity.x,this.uniforms.uVelocity[1]=this._velocity.y,this.padding=1+(Math.max(Math.abs(this._velocity.x),Math.abs(this._velocity.y))>>0)},Object.defineProperty(n.prototype,"offset",{get:function(){return this.uniforms.uOffset},set:function(e){this.uniforms.uOffset=e},enumerable:!1,configurable:!0}),n}(n.Filter),M=function(e){function n(n,t,r){void 0===t&&(t=.05),void 0===r&&(r=n.length);var o=e.call(this,c,"varying vec2 vTextureCoord;\nuniform sampler2D uSampler;\n\nuniform float epsilon;\n\nconst int MAX_COLORS = %maxColors%;\n\nuniform vec3 originalColors[MAX_COLORS];\nuniform vec3 targetColors[MAX_COLORS];\n\nvoid main(void)\n{\n    gl_FragColor = texture2D(uSampler, vTextureCoord);\n\n    float alpha = gl_FragColor.a;\n    if (alpha < 0.0001)\n    {\n      return;\n    }\n\n    vec3 color = gl_FragColor.rgb / alpha;\n\n    for(int i = 0; i < MAX_COLORS; i++)\n    {\n      vec3 origColor = originalColors[i];\n      if (origColor.r < 0.0)\n      {\n        break;\n      }\n      vec3 colorDiff = origColor - color;\n      if (length(colorDiff) < epsilon)\n      {\n        vec3 targetColor = targetColors[i];\n        gl_FragColor = vec4((targetColor + colorDiff) * alpha, alpha);\n        return;\n      }\n    }\n}\n".replace(/%maxColors%/g,r.toFixed(0)))||this;return o._replacements=[],o._maxColors=0,o.epsilon=t,o._maxColors=r,o.uniforms.originalColors=new Float32Array(3*r),o.uniforms.targetColors=new Float32Array(3*r),o.replacements=n,o}return u(n,e),Object.defineProperty(n.prototype,"replacements",{get:function(){return this._replacements},set:function(e){var n=this.uniforms.originalColors,t=this.uniforms.targetColors,r=e.length;if(r>this._maxColors)throw new Error("Length of replacements ("+r+") exceeds the maximum colors length ("+this._maxColors+")");n[3*r]=-1;for(var i=0;i<r;i++){var l=e[i],a=l[0];"number"==typeof a?a=o.hex2rgb(a):l[0]=o.rgb2hex(a),n[3*i]=a[0],n[3*i+1]=a[1],n[3*i+2]=a[2];var s=l[1];"number"==typeof s?s=o.hex2rgb(s):l[1]=o.rgb2hex(s),t[3*i]=s[0],t[3*i+1]=s[1],t[3*i+2]=s[2]}this._replacements=e},enumerable:!1,configurable:!0}),n.prototype.refresh=function(){this.replacements=this._replacements},Object.defineProperty(n.prototype,"maxColors",{get:function(){return this._maxColors},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"epsilon",{get:function(){return this.uniforms.epsilon},set:function(e){this.uniforms.epsilon=e},enumerable:!1,configurable:!0}),n}(n.Filter),R=function(e){function n(t,r){void 0===r&&(r=0);var o=e.call(this,c,"varying vec2 vTextureCoord;\nuniform sampler2D uSampler;\nuniform vec4 filterArea;\nuniform vec2 dimensions;\n\nuniform float sepia;\nuniform float noise;\nuniform float noiseSize;\nuniform float scratch;\nuniform float scratchDensity;\nuniform float scratchWidth;\nuniform float vignetting;\nuniform float vignettingAlpha;\nuniform float vignettingBlur;\nuniform float seed;\n\nconst float SQRT_2 = 1.414213;\nconst vec3 SEPIA_RGB = vec3(112.0 / 255.0, 66.0 / 255.0, 20.0 / 255.0);\n\nfloat rand(vec2 co) {\n    return fract(sin(dot(co.xy, vec2(12.9898, 78.233))) * 43758.5453);\n}\n\nvec3 Overlay(vec3 src, vec3 dst)\n{\n    // if (dst <= 0.5) then: 2 * src * dst\n    // if (dst > 0.5) then: 1 - 2 * (1 - dst) * (1 - src)\n    return vec3((dst.x <= 0.5) ? (2.0 * src.x * dst.x) : (1.0 - 2.0 * (1.0 - dst.x) * (1.0 - src.x)),\n                (dst.y <= 0.5) ? (2.0 * src.y * dst.y) : (1.0 - 2.0 * (1.0 - dst.y) * (1.0 - src.y)),\n                (dst.z <= 0.5) ? (2.0 * src.z * dst.z) : (1.0 - 2.0 * (1.0 - dst.z) * (1.0 - src.z)));\n}\n\n\nvoid main()\n{\n    gl_FragColor = texture2D(uSampler, vTextureCoord);\n    vec3 color = gl_FragColor.rgb;\n\n    if (sepia > 0.0)\n    {\n        float gray = (color.x + color.y + color.z) / 3.0;\n        vec3 grayscale = vec3(gray);\n\n        color = Overlay(SEPIA_RGB, grayscale);\n\n        color = grayscale + sepia * (color - grayscale);\n    }\n\n    vec2 coord = vTextureCoord * filterArea.xy / dimensions.xy;\n\n    if (vignetting > 0.0)\n    {\n        float outter = SQRT_2 - vignetting * SQRT_2;\n        vec2 dir = vec2(vec2(0.5, 0.5) - coord);\n        dir.y *= dimensions.y / dimensions.x;\n        float darker = clamp((outter - length(dir) * SQRT_2) / ( 0.00001 + vignettingBlur * SQRT_2), 0.0, 1.0);\n        color.rgb *= darker + (1.0 - darker) * (1.0 - vignettingAlpha);\n    }\n\n    if (scratchDensity > seed && scratch != 0.0)\n    {\n        float phase = seed * 256.0;\n        float s = mod(floor(phase), 2.0);\n        float dist = 1.0 / scratchDensity;\n        float d = distance(coord, vec2(seed * dist, abs(s - seed * dist)));\n        if (d < seed * 0.6 + 0.4)\n        {\n            highp float period = scratchDensity * 10.0;\n\n            float xx = coord.x * period + phase;\n            float aa = abs(mod(xx, 0.5) * 4.0);\n            float bb = mod(floor(xx / 0.5), 2.0);\n            float yy = (1.0 - bb) * aa + bb * (2.0 - aa);\n\n            float kk = 2.0 * period;\n            float dw = scratchWidth / dimensions.x * (0.75 + seed);\n            float dh = dw * kk;\n\n            float tine = (yy - (2.0 - dh));\n\n            if (tine > 0.0) {\n                float _sign = sign(scratch);\n\n                tine = s * tine / period + scratch + 0.1;\n                tine = clamp(tine + 1.0, 0.5 + _sign * 0.5, 1.5 + _sign * 0.5);\n\n                color.rgb *= tine;\n            }\n        }\n    }\n\n    if (noise > 0.0 && noiseSize > 0.0)\n    {\n        vec2 pixelCoord = vTextureCoord.xy * filterArea.xy;\n        pixelCoord.x = floor(pixelCoord.x / noiseSize);\n        pixelCoord.y = floor(pixelCoord.y / noiseSize);\n        // vec2 d = pixelCoord * noiseSize * vec2(1024.0 + seed * 512.0, 1024.0 - seed * 512.0);\n        // float _noise = snoise(d) * 0.5;\n        float _noise = rand(pixelCoord * noiseSize * seed) - 0.5;\n        color += _noise * noise;\n    }\n\n    gl_FragColor.rgb = color;\n}\n")||this;return o.seed=0,o.uniforms.dimensions=new Float32Array(2),"number"==typeof t?(o.seed=t,t=void 0):o.seed=r,Object.assign(o,n.defaults,t),o}return u(n,e),n.prototype.apply=function(e,n,t,r){var o,i;this.uniforms.dimensions[0]=null===(o=n.filterFrame)||void 0===o?void 0:o.width,this.uniforms.dimensions[1]=null===(i=n.filterFrame)||void 0===i?void 0:i.height,this.uniforms.seed=this.seed,e.applyFilter(this,n,t,r)},Object.defineProperty(n.prototype,"sepia",{get:function(){return this.uniforms.sepia},set:function(e){this.uniforms.sepia=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"noise",{get:function(){return this.uniforms.noise},set:function(e){this.uniforms.noise=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"noiseSize",{get:function(){return this.uniforms.noiseSize},set:function(e){this.uniforms.noiseSize=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"scratch",{get:function(){return this.uniforms.scratch},set:function(e){this.uniforms.scratch=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"scratchDensity",{get:function(){return this.uniforms.scratchDensity},set:function(e){this.uniforms.scratchDensity=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"scratchWidth",{get:function(){return this.uniforms.scratchWidth},set:function(e){this.uniforms.scratchWidth=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"vignetting",{get:function(){return this.uniforms.vignetting},set:function(e){this.uniforms.vignetting=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"vignettingAlpha",{get:function(){return this.uniforms.vignettingAlpha},set:function(e){this.uniforms.vignettingAlpha=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"vignettingBlur",{get:function(){return this.uniforms.vignettingBlur},set:function(e){this.uniforms.vignettingBlur=e},enumerable:!1,configurable:!0}),n.defaults={sepia:.3,noise:.3,noiseSize:1,scratch:.5,scratchDensity:.3,scratchWidth:1,vignetting:.3,vignettingAlpha:1,vignettingBlur:.3},n}(n.Filter),E=function(e){function n(t,r,o){void 0===t&&(t=1),void 0===r&&(r=0),void 0===o&&(o=.1);var i=e.call(this,c,"varying vec2 vTextureCoord;\nuniform sampler2D uSampler;\n\nuniform vec2 thickness;\nuniform vec4 outlineColor;\nuniform vec4 filterClamp;\n\nconst float DOUBLE_PI = 3.14159265358979323846264 * 2.;\n\nvoid main(void) {\n    vec4 ownColor = texture2D(uSampler, vTextureCoord);\n    vec4 curColor;\n    float maxAlpha = 0.;\n    vec2 displaced;\n    for (float angle = 0.; angle <= DOUBLE_PI; angle += ${angleStep}) {\n        displaced.x = vTextureCoord.x + thickness.x * cos(angle);\n        displaced.y = vTextureCoord.y + thickness.y * sin(angle);\n        curColor = texture2D(uSampler, clamp(displaced, filterClamp.xy, filterClamp.zw));\n        maxAlpha = max(maxAlpha, curColor.a);\n    }\n    float resultAlpha = max(maxAlpha, ownColor.a);\n    gl_FragColor = vec4((ownColor.rgb + outlineColor.rgb * (1. - ownColor.a)) * resultAlpha, resultAlpha);\n}\n".replace(/\$\{angleStep\}/,n.getAngleStep(o)))||this;return i._thickness=1,i.uniforms.thickness=new Float32Array([0,0]),i.uniforms.outlineColor=new Float32Array([0,0,0,1]),Object.assign(i,{thickness:t,color:r,quality:o}),i}return u(n,e),n.getAngleStep=function(e){var t=Math.max(e*n.MAX_SAMPLES,n.MIN_SAMPLES);return(2*Math.PI/t).toFixed(7)},n.prototype.apply=function(e,n,t,r){this.uniforms.thickness[0]=this._thickness/n._frame.width,this.uniforms.thickness[1]=this._thickness/n._frame.height,e.applyFilter(this,n,t,r)},Object.defineProperty(n.prototype,"color",{get:function(){return o.rgb2hex(this.uniforms.outlineColor)},set:function(e){o.hex2rgb(e,this.uniforms.outlineColor)},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"thickness",{get:function(){return this._thickness},set:function(e){this._thickness=e,this.padding=e},enumerable:!1,configurable:!0}),n.MIN_SAMPLES=1,n.MAX_SAMPLES=100,n}(n.Filter),I=function(e){function n(n){void 0===n&&(n=10);var t=e.call(this,c,"precision mediump float;\n\nvarying vec2 vTextureCoord;\n\nuniform vec2 size;\nuniform sampler2D uSampler;\n\nuniform vec4 filterArea;\n\nvec2 mapCoord( vec2 coord )\n{\n    coord *= filterArea.xy;\n    coord += filterArea.zw;\n\n    return coord;\n}\n\nvec2 unmapCoord( vec2 coord )\n{\n    coord -= filterArea.zw;\n    coord /= filterArea.xy;\n\n    return coord;\n}\n\nvec2 pixelate(vec2 coord, vec2 size)\n{\n\treturn floor( coord / size ) * size;\n}\n\nvoid main(void)\n{\n    vec2 coord = mapCoord(vTextureCoord);\n\n    coord = pixelate(coord, size);\n\n    coord = unmapCoord(coord);\n\n    gl_FragColor = texture2D(uSampler, coord);\n}\n")||this;return t.size=n,t}return u(n,e),Object.defineProperty(n.prototype,"size",{get:function(){return this.uniforms.size},set:function(e){"number"==typeof e&&(e=[e,e]),this.uniforms.size=e},enumerable:!1,configurable:!0}),n}(n.Filter),k=function(e){function n(n,t,r,o){void 0===n&&(n=0),void 0===t&&(t=[0,0]),void 0===r&&(r=5),void 0===o&&(o=-1);var i=e.call(this,c,"varying vec2 vTextureCoord;\nuniform sampler2D uSampler;\nuniform vec4 filterArea;\n\nuniform float uRadian;\nuniform vec2 uCenter;\nuniform float uRadius;\nuniform int uKernelSize;\n\nconst int MAX_KERNEL_SIZE = 2048;\n\nvoid main(void)\n{\n    vec4 color = texture2D(uSampler, vTextureCoord);\n\n    if (uKernelSize == 0)\n    {\n        gl_FragColor = color;\n        return;\n    }\n\n    float aspect = filterArea.y / filterArea.x;\n    vec2 center = uCenter.xy / filterArea.xy;\n    float gradient = uRadius / filterArea.x * 0.3;\n    float radius = uRadius / filterArea.x - gradient * 0.5;\n    int k = uKernelSize - 1;\n\n    vec2 coord = vTextureCoord;\n    vec2 dir = vec2(center - coord);\n    float dist = length(vec2(dir.x, dir.y * aspect));\n\n    float radianStep = uRadian;\n    if (radius >= 0.0 && dist > radius) {\n        float delta = dist - radius;\n        float gap = gradient;\n        float scale = 1.0 - abs(delta / gap);\n        if (scale <= 0.0) {\n            gl_FragColor = color;\n            return;\n        }\n        radianStep *= scale;\n    }\n    radianStep /= float(k);\n\n    float s = sin(radianStep);\n    float c = cos(radianStep);\n    mat2 rotationMatrix = mat2(vec2(c, -s), vec2(s, c));\n\n    for(int i = 0; i < MAX_KERNEL_SIZE - 1; i++) {\n        if (i == k) {\n            break;\n        }\n\n        coord -= center;\n        coord.y *= aspect;\n        coord = rotationMatrix * coord;\n        coord.y /= aspect;\n        coord += center;\n\n        vec4 sample = texture2D(uSampler, coord);\n\n        // switch to pre-multiplied alpha to correctly blur transparent images\n        // sample.rgb *= sample.a;\n\n        color += sample;\n    }\n\n    gl_FragColor = color / float(uKernelSize);\n}\n")||this;return i._angle=0,i.angle=n,i.center=t,i.kernelSize=r,i.radius=o,i}return u(n,e),n.prototype.apply=function(e,n,t,r){this.uniforms.uKernelSize=0!==this._angle?this.kernelSize:0,e.applyFilter(this,n,t,r)},Object.defineProperty(n.prototype,"angle",{get:function(){return this._angle},set:function(e){this._angle=e,this.uniforms.uRadian=e*Math.PI/180},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"center",{get:function(){return this.uniforms.uCenter},set:function(e){this.uniforms.uCenter=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"radius",{get:function(){return this.uniforms.uRadius},set:function(e){(e<0||e===1/0)&&(e=-1),this.uniforms.uRadius=e},enumerable:!1,configurable:!0}),n}(n.Filter),L=function(e){function n(t){var r=e.call(this,c,"varying vec2 vTextureCoord;\nuniform sampler2D uSampler;\n\nuniform vec4 filterArea;\nuniform vec4 filterClamp;\nuniform vec2 dimensions;\n\nuniform bool mirror;\nuniform float boundary;\nuniform vec2 amplitude;\nuniform vec2 waveLength;\nuniform vec2 alpha;\nuniform float time;\n\nfloat rand(vec2 co) {\n    return fract(sin(dot(co.xy, vec2(12.9898, 78.233))) * 43758.5453);\n}\n\nvoid main(void)\n{\n    vec2 pixelCoord = vTextureCoord.xy * filterArea.xy;\n    vec2 coord = pixelCoord / dimensions;\n\n    if (coord.y < boundary) {\n        gl_FragColor = texture2D(uSampler, vTextureCoord);\n        return;\n    }\n\n    float k = (coord.y - boundary) / (1. - boundary + 0.0001);\n    float areaY = boundary * dimensions.y / filterArea.y;\n    float v = areaY + areaY - vTextureCoord.y;\n    float y = mirror ? v : vTextureCoord.y;\n\n    float _amplitude = ((amplitude.y - amplitude.x) * k + amplitude.x ) / filterArea.x;\n    float _waveLength = ((waveLength.y - waveLength.x) * k + waveLength.x) / filterArea.y;\n    float _alpha = (alpha.y - alpha.x) * k + alpha.x;\n\n    float x = vTextureCoord.x + cos(v * 6.28 / _waveLength - time) * _amplitude;\n    x = clamp(x, filterClamp.x, filterClamp.z);\n\n    vec4 color = texture2D(uSampler, vec2(x, y));\n\n    gl_FragColor = color * _alpha;\n}\n")||this;return r.time=0,r.uniforms.amplitude=new Float32Array(2),r.uniforms.waveLength=new Float32Array(2),r.uniforms.alpha=new Float32Array(2),r.uniforms.dimensions=new Float32Array(2),Object.assign(r,n.defaults,t),r}return u(n,e),n.prototype.apply=function(e,n,t,r){var o,i;this.uniforms.dimensions[0]=null===(o=n.filterFrame)||void 0===o?void 0:o.width,this.uniforms.dimensions[1]=null===(i=n.filterFrame)||void 0===i?void 0:i.height,this.uniforms.time=this.time,e.applyFilter(this,n,t,r)},Object.defineProperty(n.prototype,"mirror",{get:function(){return this.uniforms.mirror},set:function(e){this.uniforms.mirror=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"boundary",{get:function(){return this.uniforms.boundary},set:function(e){this.uniforms.boundary=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"amplitude",{get:function(){return this.uniforms.amplitude},set:function(e){this.uniforms.amplitude[0]=e[0],this.uniforms.amplitude[1]=e[1]},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"waveLength",{get:function(){return this.uniforms.waveLength},set:function(e){this.uniforms.waveLength[0]=e[0],this.uniforms.waveLength[1]=e[1]},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"alpha",{get:function(){return this.uniforms.alpha},set:function(e){this.uniforms.alpha[0]=e[0],this.uniforms.alpha[1]=e[1]},enumerable:!1,configurable:!0}),n.defaults={mirror:!0,boundary:.5,amplitude:[0,20],waveLength:[30,100],alpha:[1,1],time:0},n}(n.Filter),N=function(e){function n(n,t,r){void 0===n&&(n=[-10,0]),void 0===t&&(t=[0,10]),void 0===r&&(r=[0,0]);var o=e.call(this,c,"precision mediump float;\n\nvarying vec2 vTextureCoord;\n\nuniform sampler2D uSampler;\nuniform vec4 filterArea;\nuniform vec2 red;\nuniform vec2 green;\nuniform vec2 blue;\n\nvoid main(void)\n{\n   gl_FragColor.r = texture2D(uSampler, vTextureCoord + red/filterArea.xy).r;\n   gl_FragColor.g = texture2D(uSampler, vTextureCoord + green/filterArea.xy).g;\n   gl_FragColor.b = texture2D(uSampler, vTextureCoord + blue/filterArea.xy).b;\n   gl_FragColor.a = texture2D(uSampler, vTextureCoord).a;\n}\n")||this;return o.red=n,o.green=t,o.blue=r,o}return u(n,e),Object.defineProperty(n.prototype,"red",{get:function(){return this.uniforms.red},set:function(e){this.uniforms.red=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"green",{get:function(){return this.uniforms.green},set:function(e){this.uniforms.green=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"blue",{get:function(){return this.uniforms.blue},set:function(e){this.uniforms.blue=e},enumerable:!1,configurable:!0}),n}(n.Filter),X=function(e){function n(t,r,o){void 0===t&&(t=[0,0]),void 0===o&&(o=0);var i=e.call(this,c,"varying vec2 vTextureCoord;\nuniform sampler2D uSampler;\nuniform vec4 filterArea;\nuniform vec4 filterClamp;\n\nuniform vec2 center;\n\nuniform float amplitude;\nuniform float wavelength;\n// uniform float power;\nuniform float brightness;\nuniform float speed;\nuniform float radius;\n\nuniform float time;\n\nconst float PI = 3.14159;\n\nvoid main()\n{\n    float halfWavelength = wavelength * 0.5 / filterArea.x;\n    float maxRadius = radius / filterArea.x;\n    float currentRadius = time * speed / filterArea.x;\n\n    float fade = 1.0;\n\n    if (maxRadius > 0.0) {\n        if (currentRadius > maxRadius) {\n            gl_FragColor = texture2D(uSampler, vTextureCoord);\n            return;\n        }\n        fade = 1.0 - pow(currentRadius / maxRadius, 2.0);\n    }\n\n    vec2 dir = vec2(vTextureCoord - center / filterArea.xy);\n    dir.y *= filterArea.y / filterArea.x;\n    float dist = length(dir);\n\n    if (dist <= 0.0 || dist < currentRadius - halfWavelength || dist > currentRadius + halfWavelength) {\n        gl_FragColor = texture2D(uSampler, vTextureCoord);\n        return;\n    }\n\n    vec2 diffUV = normalize(dir);\n\n    float diff = (dist - currentRadius) / halfWavelength;\n\n    float p = 1.0 - pow(abs(diff), 2.0);\n\n    // float powDiff = diff * pow(p, 2.0) * ( amplitude * fade );\n    float powDiff = 1.25 * sin(diff * PI) * p * ( amplitude * fade );\n\n    vec2 offset = diffUV * powDiff / filterArea.xy;\n\n    // Do clamp :\n    vec2 coord = vTextureCoord + offset;\n    vec2 clampedCoord = clamp(coord, filterClamp.xy, filterClamp.zw);\n    vec4 color = texture2D(uSampler, clampedCoord);\n    if (coord != clampedCoord) {\n        color *= max(0.0, 1.0 - length(coord - clampedCoord));\n    }\n\n    // No clamp :\n    // gl_FragColor = texture2D(uSampler, vTextureCoord + offset);\n\n    color.rgb *= 1.0 + (brightness - 1.0) * p * fade;\n\n    gl_FragColor = color;\n}\n")||this;return i.center=t,Object.assign(i,n.defaults,r),i.time=o,i}return u(n,e),n.prototype.apply=function(e,n,t,r){this.uniforms.time=this.time,e.applyFilter(this,n,t,r)},Object.defineProperty(n.prototype,"center",{get:function(){return this.uniforms.center},set:function(e){this.uniforms.center=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"amplitude",{get:function(){return this.uniforms.amplitude},set:function(e){this.uniforms.amplitude=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"wavelength",{get:function(){return this.uniforms.wavelength},set:function(e){this.uniforms.wavelength=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"brightness",{get:function(){return this.uniforms.brightness},set:function(e){this.uniforms.brightness=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"speed",{get:function(){return this.uniforms.speed},set:function(e){this.uniforms.speed=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"radius",{get:function(){return this.uniforms.radius},set:function(e){this.uniforms.radius=e},enumerable:!1,configurable:!0}),n.defaults={amplitude:30,wavelength:160,brightness:1,speed:500,radius:-1},n}(n.Filter),B=function(e){function n(n,t,r){void 0===t&&(t=0),void 0===r&&(r=1);var o=e.call(this,c,"varying vec2 vTextureCoord;\nuniform sampler2D uSampler;\nuniform sampler2D uLightmap;\nuniform vec4 filterArea;\nuniform vec2 dimensions;\nuniform vec4 ambientColor;\nvoid main() {\n    vec4 diffuseColor = texture2D(uSampler, vTextureCoord);\n    vec2 lightCoord = (vTextureCoord * filterArea.xy) / dimensions;\n    vec4 light = texture2D(uLightmap, lightCoord);\n    vec3 ambient = ambientColor.rgb * ambientColor.a;\n    vec3 intensity = ambient + light.rgb;\n    vec3 finalColor = diffuseColor.rgb * intensity;\n    gl_FragColor = vec4(finalColor, diffuseColor.a);\n}\n")||this;return o._color=0,o.uniforms.dimensions=new Float32Array(2),o.uniforms.ambientColor=new Float32Array([0,0,0,r]),o.texture=n,o.color=t,o}return u(n,e),n.prototype.apply=function(e,n,t,r){var o,i;this.uniforms.dimensions[0]=null===(o=n.filterFrame)||void 0===o?void 0:o.width,this.uniforms.dimensions[1]=null===(i=n.filterFrame)||void 0===i?void 0:i.height,e.applyFilter(this,n,t,r)},Object.defineProperty(n.prototype,"texture",{get:function(){return this.uniforms.uLightmap},set:function(e){this.uniforms.uLightmap=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"color",{get:function(){return this._color},set:function(e){var n=this.uniforms.ambientColor;"number"==typeof e?(o.hex2rgb(e,n),this._color=e):(n[0]=e[0],n[1]=e[1],n[2]=e[2],n[3]=e[3],this._color=o.rgb2hex(n))},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"alpha",{get:function(){return this.uniforms.ambientColor[3]},set:function(e){this.uniforms.ambientColor[3]=e},enumerable:!1,configurable:!0}),n}(n.Filter),G=function(e){function n(n,r,o,i){void 0===n&&(n=100),void 0===r&&(r=600);var l=e.call(this,c,"varying vec2 vTextureCoord;\n\nuniform sampler2D uSampler;\nuniform float blur;\nuniform float gradientBlur;\nuniform vec2 start;\nuniform vec2 end;\nuniform vec2 delta;\nuniform vec2 texSize;\n\nfloat random(vec3 scale, float seed)\n{\n    return fract(sin(dot(gl_FragCoord.xyz + seed, scale)) * 43758.5453 + seed);\n}\n\nvoid main(void)\n{\n    vec4 color = vec4(0.0);\n    float total = 0.0;\n\n    float offset = random(vec3(12.9898, 78.233, 151.7182), 0.0);\n    vec2 normal = normalize(vec2(start.y - end.y, end.x - start.x));\n    float radius = smoothstep(0.0, 1.0, abs(dot(vTextureCoord * texSize - start, normal)) / gradientBlur) * blur;\n\n    for (float t = -30.0; t <= 30.0; t++)\n    {\n        float percent = (t + offset - 0.5) / 30.0;\n        float weight = 1.0 - abs(percent);\n        vec4 sample = texture2D(uSampler, vTextureCoord + delta / texSize * percent * radius);\n        sample.rgb *= sample.a;\n        color += sample * weight;\n        total += weight;\n    }\n\n    color /= total;\n    color.rgb /= color.a + 0.00001;\n\n    gl_FragColor = color;\n}\n")||this;return l.uniforms.blur=n,l.uniforms.gradientBlur=r,l.uniforms.start=o||new t.Point(0,window.innerHeight/2),l.uniforms.end=i||new t.Point(600,window.innerHeight/2),l.uniforms.delta=new t.Point(30,30),l.uniforms.texSize=new t.Point(window.innerWidth,window.innerHeight),l.updateDelta(),l}return u(n,e),n.prototype.updateDelta=function(){this.uniforms.delta.x=0,this.uniforms.delta.y=0},Object.defineProperty(n.prototype,"blur",{get:function(){return this.uniforms.blur},set:function(e){this.uniforms.blur=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"gradientBlur",{get:function(){return this.uniforms.gradientBlur},set:function(e){this.uniforms.gradientBlur=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"start",{get:function(){return this.uniforms.start},set:function(e){this.uniforms.start=e,this.updateDelta()},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"end",{get:function(){return this.uniforms.end},set:function(e){this.uniforms.end=e,this.updateDelta()},enumerable:!1,configurable:!0}),n}(n.Filter),K=function(e){function n(){return null!==e&&e.apply(this,arguments)||this}return u(n,e),n.prototype.updateDelta=function(){var e=this.uniforms.end.x-this.uniforms.start.x,n=this.uniforms.end.y-this.uniforms.start.y,t=Math.sqrt(e*e+n*n);this.uniforms.delta.x=e/t,this.uniforms.delta.y=n/t},n}(G),q=function(e){function n(){return null!==e&&e.apply(this,arguments)||this}return u(n,e),n.prototype.updateDelta=function(){var e=this.uniforms.end.x-this.uniforms.start.x,n=this.uniforms.end.y-this.uniforms.start.y,t=Math.sqrt(e*e+n*n);this.uniforms.delta.x=-n/t,this.uniforms.delta.y=e/t},n}(G),W=function(e){function n(n,t,r,o){void 0===n&&(n=100),void 0===t&&(t=600);var i=e.call(this)||this;return i.tiltShiftXFilter=new K(n,t,r,o),i.tiltShiftYFilter=new q(n,t,r,o),i}return u(n,e),n.prototype.apply=function(e,n,t,r){var o=e.getFilterTexture();this.tiltShiftXFilter.apply(e,n,o,1),this.tiltShiftYFilter.apply(e,o,t,r),e.returnFilterTexture(o)},Object.defineProperty(n.prototype,"blur",{get:function(){return this.tiltShiftXFilter.blur},set:function(e){this.tiltShiftXFilter.blur=this.tiltShiftYFilter.blur=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"gradientBlur",{get:function(){return this.tiltShiftXFilter.gradientBlur},set:function(e){this.tiltShiftXFilter.gradientBlur=this.tiltShiftYFilter.gradientBlur=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"start",{get:function(){return this.tiltShiftXFilter.start},set:function(e){this.tiltShiftXFilter.start=this.tiltShiftYFilter.start=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"end",{get:function(){return this.tiltShiftXFilter.end},set:function(e){this.tiltShiftXFilter.end=this.tiltShiftYFilter.end=e},enumerable:!1,configurable:!0}),n}(n.Filter),Y=function(e){function n(t){var r=e.call(this,c,"varying vec2 vTextureCoord;\n\nuniform sampler2D uSampler;\nuniform float radius;\nuniform float angle;\nuniform vec2 offset;\nuniform vec4 filterArea;\n\nvec2 mapCoord( vec2 coord )\n{\n    coord *= filterArea.xy;\n    coord += filterArea.zw;\n\n    return coord;\n}\n\nvec2 unmapCoord( vec2 coord )\n{\n    coord -= filterArea.zw;\n    coord /= filterArea.xy;\n\n    return coord;\n}\n\nvec2 twist(vec2 coord)\n{\n    coord -= offset;\n\n    float dist = length(coord);\n\n    if (dist < radius)\n    {\n        float ratioDist = (radius - dist) / radius;\n        float angleMod = ratioDist * ratioDist * angle;\n        float s = sin(angleMod);\n        float c = cos(angleMod);\n        coord = vec2(coord.x * c - coord.y * s, coord.x * s + coord.y * c);\n    }\n\n    coord += offset;\n\n    return coord;\n}\n\nvoid main(void)\n{\n\n    vec2 coord = mapCoord(vTextureCoord);\n\n    coord = twist(coord);\n\n    coord = unmapCoord(coord);\n\n    gl_FragColor = texture2D(uSampler, coord );\n\n}\n")||this;return Object.assign(r,n.defaults,t),r}return u(n,e),Object.defineProperty(n.prototype,"offset",{get:function(){return this.uniforms.offset},set:function(e){this.uniforms.offset=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"radius",{get:function(){return this.uniforms.radius},set:function(e){this.uniforms.radius=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"angle",{get:function(){return this.uniforms.angle},set:function(e){this.uniforms.angle=e},enumerable:!1,configurable:!0}),n.defaults={radius:200,angle:4,padding:20,offset:new t.Point},n}(n.Filter),Z=function(e){function n(t){var r,o=Object.assign(n.defaults,t),i=o.maxKernelSize,l=function(e,n){var t={};for(var r in e)Object.prototype.hasOwnProperty.call(e,r)&&n.indexOf(r)<0&&(t[r]=e[r]);if(null!=e&&"function"==typeof Object.getOwnPropertySymbols){var o=0;for(r=Object.getOwnPropertySymbols(e);o<r.length;o++)n.indexOf(r[o])<0&&Object.prototype.propertyIsEnumerable.call(e,r[o])&&(t[r[o]]=e[r[o]])}return t}(o,["maxKernelSize"]);return r=e.call(this,c,"varying vec2 vTextureCoord;\nuniform sampler2D uSampler;\nuniform vec4 filterArea;\n\nuniform vec2 uCenter;\nuniform float uStrength;\nuniform float uInnerRadius;\nuniform float uRadius;\n\nconst float MAX_KERNEL_SIZE = ${maxKernelSize};\n\n// author: http://byteblacksmith.com/improvements-to-the-canonical-one-liner-glsl-rand-for-opengl-es-2-0/\nhighp float rand(vec2 co, float seed) {\n    const highp float a = 12.9898, b = 78.233, c = 43758.5453;\n    highp float dt = dot(co + seed, vec2(a, b)), sn = mod(dt, 3.14159);\n    return fract(sin(sn) * c + seed);\n}\n\nvoid main() {\n\n    float minGradient = uInnerRadius * 0.3;\n    float innerRadius = (uInnerRadius + minGradient * 0.5) / filterArea.x;\n\n    float gradient = uRadius * 0.3;\n    float radius = (uRadius - gradient * 0.5) / filterArea.x;\n\n    float countLimit = MAX_KERNEL_SIZE;\n\n    vec2 dir = vec2(uCenter.xy / filterArea.xy - vTextureCoord);\n    float dist = length(vec2(dir.x, dir.y * filterArea.y / filterArea.x));\n\n    float strength = uStrength;\n\n    float delta = 0.0;\n    float gap;\n    if (dist < innerRadius) {\n        delta = innerRadius - dist;\n        gap = minGradient;\n    } else if (radius >= 0.0 && dist > radius) { // radius < 0 means it's infinity\n        delta = dist - radius;\n        gap = gradient;\n    }\n\n    if (delta > 0.0) {\n        float normalCount = gap / filterArea.x;\n        delta = (normalCount - delta) / normalCount;\n        countLimit *= delta;\n        strength *= delta;\n        if (countLimit < 1.0)\n        {\n            gl_FragColor = texture2D(uSampler, vTextureCoord);\n            return;\n        }\n    }\n\n    // randomize the lookup values to hide the fixed number of samples\n    float offset = rand(vTextureCoord, 0.0);\n\n    float total = 0.0;\n    vec4 color = vec4(0.0);\n\n    dir *= strength;\n\n    for (float t = 0.0; t < MAX_KERNEL_SIZE; t++) {\n        float percent = (t + offset) / MAX_KERNEL_SIZE;\n        float weight = 4.0 * (percent - percent * percent);\n        vec2 p = vTextureCoord + dir * percent;\n        vec4 sample = texture2D(uSampler, p);\n\n        // switch to pre-multiplied alpha to correctly blur transparent images\n        // sample.rgb *= sample.a;\n\n        color += sample * weight;\n        total += weight;\n\n        if (t > countLimit){\n            break;\n        }\n    }\n\n    color /= total;\n    // switch back from pre-multiplied alpha\n    // color.rgb /= color.a + 0.00001;\n\n    gl_FragColor = color;\n}\n".replace("${maxKernelSize}",i.toFixed(1)))||this,Object.assign(r,l),r}return u(n,e),Object.defineProperty(n.prototype,"center",{get:function(){return this.uniforms.uCenter},set:function(e){this.uniforms.uCenter=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"strength",{get:function(){return this.uniforms.uStrength},set:function(e){this.uniforms.uStrength=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"innerRadius",{get:function(){return this.uniforms.uInnerRadius},set:function(e){this.uniforms.uInnerRadius=e},enumerable:!1,configurable:!0}),Object.defineProperty(n.prototype,"radius",{get:function(){return this.uniforms.uRadius},set:function(e){(e<0||e===1/0)&&(e=-1),this.uniforms.uRadius=e},enumerable:!1,configurable:!0}),n.defaults={strength:.1,center:[0,0],innerRadius:0,radius:-1,maxKernelSize:32},n}(n.Filter);return e.AdjustmentFilter=m,e.AdvancedBloomFilter=h,e.AsciiFilter=g,e.BevelFilter=v,e.BloomFilter=y,e.BulgePinchFilter=b,e.CRTFilter=z,e.ColorMapFilter=x,e.ColorOverlayFilter=_,e.ColorReplaceFilter=C,e.ConvolutionFilter=S,e.CrossHatchFilter=F,e.DotFilter=O,e.DropShadowFilter=P,e.EmbossFilter=A,e.GlitchFilter=T,e.GlowFilter=w,e.GodrayFilter=D,e.KawaseBlurFilter=d,e.MotionBlurFilter=j,e.MultiColorReplaceFilter=M,e.OldFilmFilter=R,e.OutlineFilter=E,e.PixelateFilter=I,e.RGBSplitFilter=N,e.RadialBlurFilter=k,e.ReflectionFilter=L,e.ShockwaveFilter=X,e.SimpleLightmapFilter=B,e.TiltShiftAxisFilter=G,e.TiltShiftFilter=W,e.TiltShiftXFilter=K,e.TiltShiftYFilter=q,e.TwistFilter=Y,e.ZoomBlurFilter=Z,Object.defineProperty(e,"__esModule",{value:!0}),e}({},PIXI,PIXI,PIXI,PIXI.utils,PIXI,PIXI.filters,PIXI.filters);Object.assign(PIXI.filters,__filters);
+var __filters = (function (e, n, t, r, o, i, l, a) {
+  'use strict';
+  var s = function (e, n) {
+    return (s =
+      Object.setPrototypeOf ||
+      ({ __proto__: [] } instanceof Array &&
+        function (e, n) {
+          e.__proto__ = n;
+        }) ||
+      function (e, n) {
+        for (var t in n) Object.prototype.hasOwnProperty.call(n, t) && (e[t] = n[t]);
+      })(e, n);
+  };
+  function u(e, n) {
+    function t() {
+      this.constructor = e;
+    }
+    s(e, n), (e.prototype = null === n ? Object.create(n) : ((t.prototype = n.prototype), new t()));
+  }
+  var f = function () {
+    return (f =
+      Object.assign ||
+      function (e) {
+        for (var n, t = arguments, r = 1, o = arguments.length; r < o; r++) for (var i in (n = t[r])) Object.prototype.hasOwnProperty.call(n, i) && (e[i] = n[i]);
+        return e;
+      }).apply(this, arguments);
+  };
+  Object.create;
+  Object.create;
+  var c =
+      'attribute vec2 aVertexPosition;\nattribute vec2 aTextureCoord;\n\nuniform mat3 projectionMatrix;\n\nvarying vec2 vTextureCoord;\n\nvoid main(void)\n{\n    gl_Position = vec4((projectionMatrix * vec3(aVertexPosition, 1.0)).xy, 0.0, 1.0);\n    vTextureCoord = aTextureCoord;\n}',
+    m = (function (e) {
+      function n(n) {
+        var t =
+          e.call(
+            this,
+            c,
+            'varying vec2 vTextureCoord;\nuniform sampler2D uSampler;\n\nuniform float gamma;\nuniform float contrast;\nuniform float saturation;\nuniform float brightness;\nuniform float red;\nuniform float green;\nuniform float blue;\nuniform float alpha;\n\nvoid main(void)\n{\n    vec4 c = texture2D(uSampler, vTextureCoord);\n\n    if (c.a > 0.0) {\n        c.rgb /= c.a;\n\n        vec3 rgb = pow(c.rgb, vec3(1. / gamma));\n        rgb = mix(vec3(.5), mix(vec3(dot(vec3(.2125, .7154, .0721), rgb)), rgb, saturation), contrast);\n        rgb.r *= red;\n        rgb.g *= green;\n        rgb.b *= blue;\n        c.rgb = rgb * brightness;\n\n        c.rgb *= c.a;\n    }\n\n    gl_FragColor = c * alpha;\n}\n',
+          ) || this;
+        return (t.gamma = 1), (t.saturation = 1), (t.contrast = 1), (t.brightness = 1), (t.red = 1), (t.green = 1), (t.blue = 1), (t.alpha = 1), Object.assign(t, n), t;
+      }
+      return (
+        u(n, e),
+        (n.prototype.apply = function (e, n, t, r) {
+          (this.uniforms.gamma = Math.max(this.gamma, 1e-4)),
+            (this.uniforms.saturation = this.saturation),
+            (this.uniforms.contrast = this.contrast),
+            (this.uniforms.brightness = this.brightness),
+            (this.uniforms.red = this.red),
+            (this.uniforms.green = this.green),
+            (this.uniforms.blue = this.blue),
+            (this.uniforms.alpha = this.alpha),
+            e.applyFilter(this, n, t, r);
+        }),
+        n
+      );
+    })(n.Filter),
+    p = (function (e) {
+      function n(n) {
+        void 0 === n && (n = 0.5);
+        var t =
+          e.call(
+            this,
+            c,
+            "\nuniform sampler2D uSampler;\nvarying vec2 vTextureCoord;\n\nuniform float threshold;\n\nvoid main() {\n    vec4 color = texture2D(uSampler, vTextureCoord);\n\n    // A simple & fast algorithm for getting brightness.\n    // It's inaccuracy , but good enought for this feature.\n    float _max = max(max(color.r, color.g), color.b);\n    float _min = min(min(color.r, color.g), color.b);\n    float brightness = (_max + _min) * 0.5;\n\n    if(brightness > threshold) {\n        gl_FragColor = color;\n    } else {\n        gl_FragColor = vec4(0.0, 0.0, 0.0, 0.0);\n    }\n}\n",
+          ) || this;
+        return (t.threshold = n), t;
+      }
+      return (
+        u(n, e),
+        Object.defineProperty(n.prototype, 'threshold', {
+          get: function () {
+            return this.uniforms.threshold;
+          },
+          set: function (e) {
+            this.uniforms.threshold = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        n
+      );
+    })(n.Filter),
+    d = (function (e) {
+      function n(n, r, o) {
+        void 0 === n && (n = 4), void 0 === r && (r = 3), void 0 === o && (o = !1);
+        var i =
+          e.call(
+            this,
+            c,
+            o
+              ? '\nvarying vec2 vTextureCoord;\nuniform sampler2D uSampler;\n\nuniform vec2 uOffset;\nuniform vec4 filterClamp;\n\nvoid main(void)\n{\n    vec4 color = vec4(0.0);\n\n    // Sample top left pixel\n    color += texture2D(uSampler, clamp(vec2(vTextureCoord.x - uOffset.x, vTextureCoord.y + uOffset.y), filterClamp.xy, filterClamp.zw));\n\n    // Sample top right pixel\n    color += texture2D(uSampler, clamp(vec2(vTextureCoord.x + uOffset.x, vTextureCoord.y + uOffset.y), filterClamp.xy, filterClamp.zw));\n\n    // Sample bottom right pixel\n    color += texture2D(uSampler, clamp(vec2(vTextureCoord.x + uOffset.x, vTextureCoord.y - uOffset.y), filterClamp.xy, filterClamp.zw));\n\n    // Sample bottom left pixel\n    color += texture2D(uSampler, clamp(vec2(vTextureCoord.x - uOffset.x, vTextureCoord.y - uOffset.y), filterClamp.xy, filterClamp.zw));\n\n    // Average\n    color *= 0.25;\n\n    gl_FragColor = color;\n}\n'
+              : '\nvarying vec2 vTextureCoord;\nuniform sampler2D uSampler;\n\nuniform vec2 uOffset;\n\nvoid main(void)\n{\n    vec4 color = vec4(0.0);\n\n    // Sample top left pixel\n    color += texture2D(uSampler, vec2(vTextureCoord.x - uOffset.x, vTextureCoord.y + uOffset.y));\n\n    // Sample top right pixel\n    color += texture2D(uSampler, vec2(vTextureCoord.x + uOffset.x, vTextureCoord.y + uOffset.y));\n\n    // Sample bottom right pixel\n    color += texture2D(uSampler, vec2(vTextureCoord.x + uOffset.x, vTextureCoord.y - uOffset.y));\n\n    // Sample bottom left pixel\n    color += texture2D(uSampler, vec2(vTextureCoord.x - uOffset.x, vTextureCoord.y - uOffset.y));\n\n    // Average\n    color *= 0.25;\n\n    gl_FragColor = color;\n}',
+          ) || this;
+        return (
+          (i._kernels = []),
+          (i._blur = 4),
+          (i._quality = 3),
+          (i.uniforms.uOffset = new Float32Array(2)),
+          (i._pixelSize = new t.Point()),
+          (i.pixelSize = 1),
+          (i._clamp = o),
+          Array.isArray(n) ? (i.kernels = n) : ((i._blur = n), (i.quality = r)),
+          i
+        );
+      }
+      return (
+        u(n, e),
+        (n.prototype.apply = function (e, n, t, r) {
+          var o,
+            i = this._pixelSize.x / n._frame.width,
+            l = this._pixelSize.y / n._frame.height;
+          if (1 === this._quality || 0 === this._blur) (o = this._kernels[0] + 0.5), (this.uniforms.uOffset[0] = o * i), (this.uniforms.uOffset[1] = o * l), e.applyFilter(this, n, t, r);
+          else {
+            for (var a = e.getFilterTexture(), s = n, u = a, f = void 0, c = this._quality - 1, m = 0; m < c; m++)
+              (o = this._kernels[m] + 0.5), (this.uniforms.uOffset[0] = o * i), (this.uniforms.uOffset[1] = o * l), e.applyFilter(this, s, u, 1), (f = s), (s = u), (u = f);
+            (o = this._kernels[c] + 0.5), (this.uniforms.uOffset[0] = o * i), (this.uniforms.uOffset[1] = o * l), e.applyFilter(this, s, t, r), e.returnFilterTexture(a);
+          }
+        }),
+        (n.prototype._updatePadding = function () {
+          this.padding = Math.ceil(
+            this._kernels.reduce(function (e, n) {
+              return e + n + 0.5;
+            }, 0),
+          );
+        }),
+        (n.prototype._generateKernels = function () {
+          var e = this._blur,
+            n = this._quality,
+            t = [e];
+          if (e > 0) for (var r = e, o = e / n, i = 1; i < n; i++) (r -= o), t.push(r);
+          (this._kernels = t), this._updatePadding();
+        }),
+        Object.defineProperty(n.prototype, 'kernels', {
+          get: function () {
+            return this._kernels;
+          },
+          set: function (e) {
+            Array.isArray(e) && e.length > 0 ? ((this._kernels = e), (this._quality = e.length), (this._blur = Math.max.apply(Math, e))) : ((this._kernels = [0]), (this._quality = 1));
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'clamp', {
+          get: function () {
+            return this._clamp;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'pixelSize', {
+          get: function () {
+            return this._pixelSize;
+          },
+          set: function (e) {
+            'number' == typeof e
+              ? ((this._pixelSize.x = e), (this._pixelSize.y = e))
+              : Array.isArray(e)
+                ? ((this._pixelSize.x = e[0]), (this._pixelSize.y = e[1]))
+                : e instanceof t.Point
+                  ? ((this._pixelSize.x = e.x), (this._pixelSize.y = e.y))
+                  : ((this._pixelSize.x = 1), (this._pixelSize.y = 1));
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'quality', {
+          get: function () {
+            return this._quality;
+          },
+          set: function (e) {
+            (this._quality = Math.max(1, Math.round(e))), this._generateKernels();
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'blur', {
+          get: function () {
+            return this._blur;
+          },
+          set: function (e) {
+            (this._blur = e), this._generateKernels();
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        n
+      );
+    })(n.Filter),
+    h = (function (e) {
+      function n(t) {
+        var o =
+          e.call(
+            this,
+            c,
+            'uniform sampler2D uSampler;\nvarying vec2 vTextureCoord;\n\nuniform sampler2D bloomTexture;\nuniform float bloomScale;\nuniform float brightness;\n\nvoid main() {\n    vec4 color = texture2D(uSampler, vTextureCoord);\n    color.rgb *= brightness;\n    vec4 bloomColor = vec4(texture2D(bloomTexture, vTextureCoord).rgb, 0.0);\n    bloomColor.rgb *= bloomScale;\n    gl_FragColor = color + bloomColor;\n}\n',
+          ) || this;
+        (o.bloomScale = 1), (o.brightness = 1), (o._resolution = r.settings.FILTER_RESOLUTION), 'number' == typeof t && (t = { threshold: t });
+        var i = Object.assign(n.defaults, t);
+        (o.bloomScale = i.bloomScale), (o.brightness = i.brightness);
+        var l = i.kernels,
+          a = i.blur,
+          s = i.quality,
+          u = i.pixelSize,
+          f = i.resolution;
+        return (o._extractFilter = new p(i.threshold)), (o._extractFilter.resolution = f), (o._blurFilter = l ? new d(l) : new d(a, s)), (o.pixelSize = u), (o.resolution = f), o;
+      }
+      return (
+        u(n, e),
+        (n.prototype.apply = function (e, n, t, r, o) {
+          var i = e.getFilterTexture();
+          this._extractFilter.apply(e, n, i, 1, o);
+          var l = e.getFilterTexture();
+          this._blurFilter.apply(e, i, l, 1),
+            (this.uniforms.bloomScale = this.bloomScale),
+            (this.uniforms.brightness = this.brightness),
+            (this.uniforms.bloomTexture = l),
+            e.applyFilter(this, n, t, r),
+            e.returnFilterTexture(l),
+            e.returnFilterTexture(i);
+        }),
+        Object.defineProperty(n.prototype, 'resolution', {
+          get: function () {
+            return this._resolution;
+          },
+          set: function (e) {
+            (this._resolution = e), this._extractFilter && (this._extractFilter.resolution = e), this._blurFilter && (this._blurFilter.resolution = e);
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'threshold', {
+          get: function () {
+            return this._extractFilter.threshold;
+          },
+          set: function (e) {
+            this._extractFilter.threshold = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'kernels', {
+          get: function () {
+            return this._blurFilter.kernels;
+          },
+          set: function (e) {
+            this._blurFilter.kernels = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'blur', {
+          get: function () {
+            return this._blurFilter.blur;
+          },
+          set: function (e) {
+            this._blurFilter.blur = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'quality', {
+          get: function () {
+            return this._blurFilter.quality;
+          },
+          set: function (e) {
+            this._blurFilter.quality = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'pixelSize', {
+          get: function () {
+            return this._blurFilter.pixelSize;
+          },
+          set: function (e) {
+            this._blurFilter.pixelSize = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        (n.defaults = { threshold: 0.5, bloomScale: 1, brightness: 1, kernels: null, blur: 8, quality: 4, pixelSize: 1, resolution: r.settings.FILTER_RESOLUTION }),
+        n
+      );
+    })(n.Filter),
+    g = (function (e) {
+      function n(n) {
+        void 0 === n && (n = 8);
+        var t =
+          e.call(
+            this,
+            c,
+            'varying vec2 vTextureCoord;\n\nuniform vec4 filterArea;\nuniform float pixelSize;\nuniform sampler2D uSampler;\n\nvec2 mapCoord( vec2 coord )\n{\n    coord *= filterArea.xy;\n    coord += filterArea.zw;\n\n    return coord;\n}\n\nvec2 unmapCoord( vec2 coord )\n{\n    coord -= filterArea.zw;\n    coord /= filterArea.xy;\n\n    return coord;\n}\n\nvec2 pixelate(vec2 coord, vec2 size)\n{\n    return floor( coord / size ) * size;\n}\n\nvec2 getMod(vec2 coord, vec2 size)\n{\n    return mod( coord , size) / size;\n}\n\nfloat character(float n, vec2 p)\n{\n    p = floor(p*vec2(4.0, -4.0) + 2.5);\n\n    if (clamp(p.x, 0.0, 4.0) == p.x)\n    {\n        if (clamp(p.y, 0.0, 4.0) == p.y)\n        {\n            if (int(mod(n/exp2(p.x + 5.0*p.y), 2.0)) == 1) return 1.0;\n        }\n    }\n    return 0.0;\n}\n\nvoid main()\n{\n    vec2 coord = mapCoord(vTextureCoord);\n\n    // get the rounded color..\n    vec2 pixCoord = pixelate(coord, vec2(pixelSize));\n    pixCoord = unmapCoord(pixCoord);\n\n    vec4 color = texture2D(uSampler, pixCoord);\n\n    // determine the character to use\n    float gray = (color.r + color.g + color.b) / 3.0;\n\n    float n =  65536.0;             // .\n    if (gray > 0.2) n = 65600.0;    // :\n    if (gray > 0.3) n = 332772.0;   // *\n    if (gray > 0.4) n = 15255086.0; // o\n    if (gray > 0.5) n = 23385164.0; // &\n    if (gray > 0.6) n = 15252014.0; // 8\n    if (gray > 0.7) n = 13199452.0; // @\n    if (gray > 0.8) n = 11512810.0; // #\n\n    // get the mod..\n    vec2 modd = getMod(coord, vec2(pixelSize));\n\n    gl_FragColor = color * character( n, vec2(-1.0) + modd * 2.0);\n\n}\n',
+          ) || this;
+        return (t.size = n), t;
+      }
+      return (
+        u(n, e),
+        Object.defineProperty(n.prototype, 'size', {
+          get: function () {
+            return this.uniforms.pixelSize;
+          },
+          set: function (e) {
+            this.uniforms.pixelSize = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        n
+      );
+    })(n.Filter),
+    v = (function (e) {
+      function n(n) {
+        var t =
+          e.call(
+            this,
+            c,
+            'precision mediump float;\n\nvarying vec2 vTextureCoord;\nuniform sampler2D uSampler;\nuniform vec4 filterArea;\n\nuniform float transformX;\nuniform float transformY;\nuniform vec3 lightColor;\nuniform float lightAlpha;\nuniform vec3 shadowColor;\nuniform float shadowAlpha;\n\nvoid main(void) {\n    vec2 transform = vec2(1.0 / filterArea) * vec2(transformX, transformY);\n    vec4 color = texture2D(uSampler, vTextureCoord);\n    float light = texture2D(uSampler, vTextureCoord - transform).a;\n    float shadow = texture2D(uSampler, vTextureCoord + transform).a;\n\n    color.rgb = mix(color.rgb, lightColor, clamp((color.a - light) * lightAlpha, 0.0, 1.0));\n    color.rgb = mix(color.rgb, shadowColor, clamp((color.a - shadow) * shadowAlpha, 0.0, 1.0));\n    gl_FragColor = vec4(color.rgb * color.a, color.a);\n}\n',
+          ) || this;
+        return (
+          (t._thickness = 2),
+          (t._angle = 0),
+          (t.uniforms.lightColor = new Float32Array(3)),
+          (t.uniforms.shadowColor = new Float32Array(3)),
+          Object.assign(t, { rotation: 45, thickness: 2, lightColor: 16777215, lightAlpha: 0.7, shadowColor: 0, shadowAlpha: 0.7 }, n),
+          (t.padding = 1),
+          t
+        );
+      }
+      return (
+        u(n, e),
+        (n.prototype._updateTransform = function () {
+          (this.uniforms.transformX = this._thickness * Math.cos(this._angle)), (this.uniforms.transformY = this._thickness * Math.sin(this._angle));
+        }),
+        Object.defineProperty(n.prototype, 'rotation', {
+          get: function () {
+            return this._angle / t.DEG_TO_RAD;
+          },
+          set: function (e) {
+            (this._angle = e * t.DEG_TO_RAD), this._updateTransform();
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'thickness', {
+          get: function () {
+            return this._thickness;
+          },
+          set: function (e) {
+            (this._thickness = e), this._updateTransform();
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'lightColor', {
+          get: function () {
+            return o.rgb2hex(this.uniforms.lightColor);
+          },
+          set: function (e) {
+            o.hex2rgb(e, this.uniforms.lightColor);
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'lightAlpha', {
+          get: function () {
+            return this.uniforms.lightAlpha;
+          },
+          set: function (e) {
+            this.uniforms.lightAlpha = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'shadowColor', {
+          get: function () {
+            return o.rgb2hex(this.uniforms.shadowColor);
+          },
+          set: function (e) {
+            o.hex2rgb(e, this.uniforms.shadowColor);
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'shadowAlpha', {
+          get: function () {
+            return this.uniforms.shadowAlpha;
+          },
+          set: function (e) {
+            this.uniforms.shadowAlpha = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        n
+      );
+    })(n.Filter),
+    y = (function (e) {
+      function n(n, o, s, u) {
+        void 0 === n && (n = 2), void 0 === o && (o = 4), void 0 === s && (s = r.settings.FILTER_RESOLUTION), void 0 === u && (u = 5);
+        var f,
+          c,
+          m = e.call(this) || this;
+        return (
+          'number' == typeof n ? ((f = n), (c = n)) : n instanceof t.Point ? ((f = n.x), (c = n.y)) : Array.isArray(n) && ((f = n[0]), (c = n[1])),
+          (m.blurXFilter = new a.BlurFilterPass(!0, f, o, s, u)),
+          (m.blurYFilter = new a.BlurFilterPass(!1, c, o, s, u)),
+          (m.blurYFilter.blendMode = i.BLEND_MODES.SCREEN),
+          (m.defaultFilter = new l.AlphaFilter()),
+          m
+        );
+      }
+      return (
+        u(n, e),
+        (n.prototype.apply = function (e, n, t, r) {
+          var o = e.getFilterTexture();
+          this.defaultFilter.apply(e, n, t, r), this.blurXFilter.apply(e, n, o, 1), this.blurYFilter.apply(e, o, t, 0), e.returnFilterTexture(o);
+        }),
+        Object.defineProperty(n.prototype, 'blur', {
+          get: function () {
+            return this.blurXFilter.blur;
+          },
+          set: function (e) {
+            this.blurXFilter.blur = this.blurYFilter.blur = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'blurX', {
+          get: function () {
+            return this.blurXFilter.blur;
+          },
+          set: function (e) {
+            this.blurXFilter.blur = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'blurY', {
+          get: function () {
+            return this.blurYFilter.blur;
+          },
+          set: function (e) {
+            this.blurYFilter.blur = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        n
+      );
+    })(n.Filter),
+    b = (function (e) {
+      function n(t) {
+        var r =
+          e.call(
+            this,
+            c,
+            'uniform float radius;\nuniform float strength;\nuniform vec2 center;\nuniform sampler2D uSampler;\nvarying vec2 vTextureCoord;\n\nuniform vec4 filterArea;\nuniform vec4 filterClamp;\nuniform vec2 dimensions;\n\nvoid main()\n{\n    vec2 coord = vTextureCoord * filterArea.xy;\n    coord -= center * dimensions.xy;\n    float distance = length(coord);\n    if (distance < radius) {\n        float percent = distance / radius;\n        if (strength > 0.0) {\n            coord *= mix(1.0, smoothstep(0.0, radius / distance, percent), strength * 0.75);\n        } else {\n            coord *= mix(1.0, pow(percent, 1.0 + strength * 0.75) * radius / distance, 1.0 - percent);\n        }\n    }\n    coord += center * dimensions.xy;\n    coord /= filterArea.xy;\n    vec2 clampedCoord = clamp(coord, filterClamp.xy, filterClamp.zw);\n    vec4 color = texture2D(uSampler, clampedCoord);\n    if (coord != clampedCoord) {\n        color *= max(0.0, 1.0 - length(coord - clampedCoord));\n    }\n\n    gl_FragColor = color;\n}\n',
+          ) || this;
+        return (r.uniforms.dimensions = new Float32Array(2)), Object.assign(r, n.defaults, t), r;
+      }
+      return (
+        u(n, e),
+        (n.prototype.apply = function (e, n, t, r) {
+          var o = n.filterFrame,
+            i = o.width,
+            l = o.height;
+          (this.uniforms.dimensions[0] = i), (this.uniforms.dimensions[1] = l), e.applyFilter(this, n, t, r);
+        }),
+        Object.defineProperty(n.prototype, 'radius', {
+          get: function () {
+            return this.uniforms.radius;
+          },
+          set: function (e) {
+            this.uniforms.radius = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'strength', {
+          get: function () {
+            return this.uniforms.strength;
+          },
+          set: function (e) {
+            this.uniforms.strength = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'center', {
+          get: function () {
+            return this.uniforms.center;
+          },
+          set: function (e) {
+            this.uniforms.center = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        (n.defaults = { center: [0.5, 0.5], radius: 100, strength: 1 }),
+        n
+      );
+    })(n.Filter),
+    x = (function (e) {
+      function t(n, t, r) {
+        void 0 === t && (t = !1), void 0 === r && (r = 1);
+        var o =
+          e.call(
+            this,
+            c,
+            'varying vec2 vTextureCoord;\nuniform sampler2D uSampler;\nuniform sampler2D colorMap;\nuniform float _mix;\nuniform float _size;\nuniform float _sliceSize;\nuniform float _slicePixelSize;\nuniform float _sliceInnerSize;\nvoid main() {\n    vec4 color = texture2D(uSampler, vTextureCoord.xy);\n\n    vec4 adjusted;\n    if (color.a > 0.0) {\n        color.rgb /= color.a;\n        float innerWidth = _size - 1.0;\n        float zSlice0 = min(floor(color.b * innerWidth), innerWidth);\n        float zSlice1 = min(zSlice0 + 1.0, innerWidth);\n        float xOffset = _slicePixelSize * 0.5 + color.r * _sliceInnerSize;\n        float s0 = xOffset + (zSlice0 * _sliceSize);\n        float s1 = xOffset + (zSlice1 * _sliceSize);\n        float yOffset = _sliceSize * 0.5 + color.g * (1.0 - _sliceSize);\n        vec4 slice0Color = texture2D(colorMap, vec2(s0,yOffset));\n        vec4 slice1Color = texture2D(colorMap, vec2(s1,yOffset));\n        float zOffset = fract(color.b * innerWidth);\n        adjusted = mix(slice0Color, slice1Color, zOffset);\n\n        color.rgb *= color.a;\n    }\n    gl_FragColor = vec4(mix(color, adjusted, _mix).rgb, color.a);\n\n}',
+          ) || this;
+        return (
+          (o.mix = 1),
+          (o._size = 0),
+          (o._sliceSize = 0),
+          (o._slicePixelSize = 0),
+          (o._sliceInnerSize = 0),
+          (o._nearest = !1),
+          (o._scaleMode = null),
+          (o._colorMap = null),
+          (o._scaleMode = null),
+          (o.nearest = t),
+          (o.mix = r),
+          (o.colorMap = n),
+          o
+        );
+      }
+      return (
+        u(t, e),
+        (t.prototype.apply = function (e, n, t, r) {
+          (this.uniforms._mix = this.mix), e.applyFilter(this, n, t, r);
+        }),
+        Object.defineProperty(t.prototype, 'colorSize', {
+          get: function () {
+            return this._size;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(t.prototype, 'colorMap', {
+          get: function () {
+            return this._colorMap;
+          },
+          set: function (e) {
+            var t;
+            e &&
+              (e instanceof n.Texture || (e = n.Texture.from(e)),
+              (null === (t = e) || void 0 === t ? void 0 : t.baseTexture) &&
+                ((e.baseTexture.scaleMode = this._scaleMode),
+                (e.baseTexture.mipmap = i.MIPMAP_MODES.OFF),
+                (this._size = e.height),
+                (this._sliceSize = 1 / this._size),
+                (this._slicePixelSize = this._sliceSize / this._size),
+                (this._sliceInnerSize = this._slicePixelSize * (this._size - 1)),
+                (this.uniforms._size = this._size),
+                (this.uniforms._sliceSize = this._sliceSize),
+                (this.uniforms._slicePixelSize = this._slicePixelSize),
+                (this.uniforms._sliceInnerSize = this._sliceInnerSize),
+                (this.uniforms.colorMap = e)),
+              (this._colorMap = e));
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(t.prototype, 'nearest', {
+          get: function () {
+            return this._nearest;
+          },
+          set: function (e) {
+            (this._nearest = e), (this._scaleMode = e ? i.SCALE_MODES.NEAREST : i.SCALE_MODES.LINEAR);
+            var n = this._colorMap;
+            n &&
+              n.baseTexture &&
+              ((n.baseTexture._glTextures = {}), (n.baseTexture.scaleMode = this._scaleMode), (n.baseTexture.mipmap = i.MIPMAP_MODES.OFF), n._updateID++, n.baseTexture.emit('update', n.baseTexture));
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        (t.prototype.updateColorMap = function () {
+          var e = this._colorMap;
+          e && e.baseTexture && (e._updateID++, e.baseTexture.emit('update', e.baseTexture), (this.colorMap = e));
+        }),
+        (t.prototype.destroy = function (n) {
+          void 0 === n && (n = !1), this._colorMap && this._colorMap.destroy(n), e.prototype.destroy.call(this);
+        }),
+        t
+      );
+    })(n.Filter),
+    _ = (function (e) {
+      function n(n, t) {
+        void 0 === n && (n = 0), void 0 === t && (t = 1);
+        var r =
+          e.call(
+            this,
+            c,
+            'varying vec2 vTextureCoord;\nuniform sampler2D uSampler;\nuniform vec3 color;\nuniform float alpha;\n\nvoid main(void) {\n    vec4 currentColor = texture2D(uSampler, vTextureCoord);\n    gl_FragColor = vec4(mix(currentColor.rgb, color.rgb, currentColor.a * alpha), currentColor.a);\n}\n',
+          ) || this;
+        return (r._color = 0), (r._alpha = 1), (r.uniforms.color = new Float32Array(3)), (r.color = n), (r.alpha = t), r;
+      }
+      return (
+        u(n, e),
+        Object.defineProperty(n.prototype, 'color', {
+          get: function () {
+            return this._color;
+          },
+          set: function (e) {
+            var n = this.uniforms.color;
+            'number' == typeof e ? (o.hex2rgb(e, n), (this._color = e)) : ((n[0] = e[0]), (n[1] = e[1]), (n[2] = e[2]), (this._color = o.rgb2hex(n)));
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'alpha', {
+          get: function () {
+            return this._alpha;
+          },
+          set: function (e) {
+            (this.uniforms.alpha = e), (this._alpha = e);
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        n
+      );
+    })(n.Filter),
+    C = (function (e) {
+      function n(n, t, r) {
+        void 0 === n && (n = 16711680), void 0 === t && (t = 0), void 0 === r && (r = 0.4);
+        var o =
+          e.call(
+            this,
+            c,
+            'varying vec2 vTextureCoord;\nuniform sampler2D uSampler;\nuniform vec3 originalColor;\nuniform vec3 newColor;\nuniform float epsilon;\nvoid main(void) {\n    vec4 currentColor = texture2D(uSampler, vTextureCoord);\n    vec3 colorDiff = originalColor - (currentColor.rgb / max(currentColor.a, 0.0000000001));\n    float colorDistance = length(colorDiff);\n    float doReplace = step(colorDistance, epsilon);\n    gl_FragColor = vec4(mix(currentColor.rgb, (newColor + colorDiff) * currentColor.a, doReplace), currentColor.a);\n}\n',
+          ) || this;
+        return (
+          (o._originalColor = 16711680),
+          (o._newColor = 0),
+          (o.uniforms.originalColor = new Float32Array(3)),
+          (o.uniforms.newColor = new Float32Array(3)),
+          (o.originalColor = n),
+          (o.newColor = t),
+          (o.epsilon = r),
+          o
+        );
+      }
+      return (
+        u(n, e),
+        Object.defineProperty(n.prototype, 'originalColor', {
+          get: function () {
+            return this._originalColor;
+          },
+          set: function (e) {
+            var n = this.uniforms.originalColor;
+            'number' == typeof e ? (o.hex2rgb(e, n), (this._originalColor = e)) : ((n[0] = e[0]), (n[1] = e[1]), (n[2] = e[2]), (this._originalColor = o.rgb2hex(n)));
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'newColor', {
+          get: function () {
+            return this._newColor;
+          },
+          set: function (e) {
+            var n = this.uniforms.newColor;
+            'number' == typeof e ? (o.hex2rgb(e, n), (this._newColor = e)) : ((n[0] = e[0]), (n[1] = e[1]), (n[2] = e[2]), (this._newColor = o.rgb2hex(n)));
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'epsilon', {
+          get: function () {
+            return this.uniforms.epsilon;
+          },
+          set: function (e) {
+            this.uniforms.epsilon = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        n
+      );
+    })(n.Filter),
+    S = (function (e) {
+      function n(n, t, r) {
+        void 0 === t && (t = 200), void 0 === r && (r = 200);
+        var o =
+          e.call(
+            this,
+            c,
+            'precision mediump float;\n\nvarying mediump vec2 vTextureCoord;\n\nuniform sampler2D uSampler;\nuniform vec2 texelSize;\nuniform float matrix[9];\n\nvoid main(void)\n{\n   vec4 c11 = texture2D(uSampler, vTextureCoord - texelSize); // top left\n   vec4 c12 = texture2D(uSampler, vec2(vTextureCoord.x, vTextureCoord.y - texelSize.y)); // top center\n   vec4 c13 = texture2D(uSampler, vec2(vTextureCoord.x + texelSize.x, vTextureCoord.y - texelSize.y)); // top right\n\n   vec4 c21 = texture2D(uSampler, vec2(vTextureCoord.x - texelSize.x, vTextureCoord.y)); // mid left\n   vec4 c22 = texture2D(uSampler, vTextureCoord); // mid center\n   vec4 c23 = texture2D(uSampler, vec2(vTextureCoord.x + texelSize.x, vTextureCoord.y)); // mid right\n\n   vec4 c31 = texture2D(uSampler, vec2(vTextureCoord.x - texelSize.x, vTextureCoord.y + texelSize.y)); // bottom left\n   vec4 c32 = texture2D(uSampler, vec2(vTextureCoord.x, vTextureCoord.y + texelSize.y)); // bottom center\n   vec4 c33 = texture2D(uSampler, vTextureCoord + texelSize); // bottom right\n\n   gl_FragColor =\n       c11 * matrix[0] + c12 * matrix[1] + c13 * matrix[2] +\n       c21 * matrix[3] + c22 * matrix[4] + c23 * matrix[5] +\n       c31 * matrix[6] + c32 * matrix[7] + c33 * matrix[8];\n\n   gl_FragColor.a = c22.a;\n}\n',
+          ) || this;
+        return (o.uniforms.texelSize = new Float32Array(2)), (o.uniforms.matrix = new Float32Array(9)), void 0 !== n && (o.matrix = n), (o.width = t), (o.height = r), o;
+      }
+      return (
+        u(n, e),
+        Object.defineProperty(n.prototype, 'matrix', {
+          get: function () {
+            return this.uniforms.matrix;
+          },
+          set: function (e) {
+            var n = this;
+            e.forEach(function (e, t) {
+              n.uniforms.matrix[t] = e;
+            });
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'width', {
+          get: function () {
+            return 1 / this.uniforms.texelSize[0];
+          },
+          set: function (e) {
+            this.uniforms.texelSize[0] = 1 / e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'height', {
+          get: function () {
+            return 1 / this.uniforms.texelSize[1];
+          },
+          set: function (e) {
+            this.uniforms.texelSize[1] = 1 / e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        n
+      );
+    })(n.Filter),
+    F = (function (e) {
+      function n() {
+        return (
+          e.call(
+            this,
+            c,
+            'precision mediump float;\n\nvarying vec2 vTextureCoord;\n\nuniform sampler2D uSampler;\n\nvoid main(void)\n{\n    float lum = length(texture2D(uSampler, vTextureCoord.xy).rgb);\n\n    gl_FragColor = vec4(1.0, 1.0, 1.0, 1.0);\n\n    if (lum < 1.00)\n    {\n        if (mod(gl_FragCoord.x + gl_FragCoord.y, 10.0) == 0.0)\n        {\n            gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);\n        }\n    }\n\n    if (lum < 0.75)\n    {\n        if (mod(gl_FragCoord.x - gl_FragCoord.y, 10.0) == 0.0)\n        {\n            gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);\n        }\n    }\n\n    if (lum < 0.50)\n    {\n        if (mod(gl_FragCoord.x + gl_FragCoord.y - 5.0, 10.0) == 0.0)\n        {\n            gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);\n        }\n    }\n\n    if (lum < 0.3)\n    {\n        if (mod(gl_FragCoord.x - gl_FragCoord.y - 5.0, 10.0) == 0.0)\n        {\n            gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);\n        }\n    }\n}\n',
+          ) || this
+        );
+      }
+      return u(n, e), n;
+    })(n.Filter),
+    z = (function (e) {
+      function n(t) {
+        var r =
+          e.call(
+            this,
+            c,
+            'varying vec2 vTextureCoord;\nuniform sampler2D uSampler;\n\nuniform vec4 filterArea;\nuniform vec2 dimensions;\n\nconst float SQRT_2 = 1.414213;\n\nconst float light = 1.0;\n\nuniform float curvature;\nuniform float lineWidth;\nuniform float lineContrast;\nuniform bool verticalLine;\nuniform float noise;\nuniform float noiseSize;\n\nuniform float vignetting;\nuniform float vignettingAlpha;\nuniform float vignettingBlur;\n\nuniform float seed;\nuniform float time;\n\nfloat rand(vec2 co) {\n    return fract(sin(dot(co.xy, vec2(12.9898, 78.233))) * 43758.5453);\n}\n\nvoid main(void)\n{\n    vec2 pixelCoord = vTextureCoord.xy * filterArea.xy;\n    vec2 dir = vec2(vTextureCoord.xy * filterArea.xy / dimensions - vec2(0.5, 0.5));\n    \n    gl_FragColor = texture2D(uSampler, vTextureCoord);\n    vec3 rgb = gl_FragColor.rgb;\n\n    if (noise > 0.0 && noiseSize > 0.0)\n    {\n        pixelCoord.x = floor(pixelCoord.x / noiseSize);\n        pixelCoord.y = floor(pixelCoord.y / noiseSize);\n        float _noise = rand(pixelCoord * noiseSize * seed) - 0.5;\n        rgb += _noise * noise;\n    }\n\n    if (lineWidth > 0.0)\n    {\n        float _c = curvature > 0. ? curvature : 1.;\n        float k = curvature > 0. ?(length(dir * dir) * 0.25 * _c * _c + 0.935 * _c) : 1.;\n        vec2 uv = dir * k;\n\n        float v = (verticalLine ? uv.x * dimensions.x : uv.y * dimensions.y) * min(1.0, 2.0 / lineWidth ) / _c;\n        float j = 1. + cos(v * 1.2 - time) * 0.5 * lineContrast;\n        rgb *= j;\n        float segment = verticalLine ? mod((dir.x + .5) * dimensions.x, 4.) : mod((dir.y + .5) * dimensions.y, 4.);\n        rgb *= 0.99 + ceil(segment) * 0.015;\n    }\n\n    if (vignetting > 0.0)\n    {\n        float outter = SQRT_2 - vignetting * SQRT_2;\n        float darker = clamp((outter - length(dir) * SQRT_2) / ( 0.00001 + vignettingBlur * SQRT_2), 0.0, 1.0);\n        rgb *= darker + (1.0 - darker) * (1.0 - vignettingAlpha);\n    }\n\n    gl_FragColor.rgb = rgb;\n}\n',
+          ) || this;
+        return (r.time = 0), (r.seed = 0), (r.uniforms.dimensions = new Float32Array(2)), Object.assign(r, n.defaults, t), r;
+      }
+      return (
+        u(n, e),
+        (n.prototype.apply = function (e, n, t, r) {
+          var o = n.filterFrame,
+            i = o.width,
+            l = o.height;
+          (this.uniforms.dimensions[0] = i), (this.uniforms.dimensions[1] = l), (this.uniforms.seed = this.seed), (this.uniforms.time = this.time), e.applyFilter(this, n, t, r);
+        }),
+        Object.defineProperty(n.prototype, 'curvature', {
+          get: function () {
+            return this.uniforms.curvature;
+          },
+          set: function (e) {
+            this.uniforms.curvature = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'lineWidth', {
+          get: function () {
+            return this.uniforms.lineWidth;
+          },
+          set: function (e) {
+            this.uniforms.lineWidth = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'lineContrast', {
+          get: function () {
+            return this.uniforms.lineContrast;
+          },
+          set: function (e) {
+            this.uniforms.lineContrast = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'verticalLine', {
+          get: function () {
+            return this.uniforms.verticalLine;
+          },
+          set: function (e) {
+            this.uniforms.verticalLine = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'noise', {
+          get: function () {
+            return this.uniforms.noise;
+          },
+          set: function (e) {
+            this.uniforms.noise = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'noiseSize', {
+          get: function () {
+            return this.uniforms.noiseSize;
+          },
+          set: function (e) {
+            this.uniforms.noiseSize = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'vignetting', {
+          get: function () {
+            return this.uniforms.vignetting;
+          },
+          set: function (e) {
+            this.uniforms.vignetting = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'vignettingAlpha', {
+          get: function () {
+            return this.uniforms.vignettingAlpha;
+          },
+          set: function (e) {
+            this.uniforms.vignettingAlpha = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'vignettingBlur', {
+          get: function () {
+            return this.uniforms.vignettingBlur;
+          },
+          set: function (e) {
+            this.uniforms.vignettingBlur = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        (n.defaults = { curvature: 1, lineWidth: 1, lineContrast: 0.25, verticalLine: !1, noise: 0, noiseSize: 1, seed: 0, vignetting: 0.3, vignettingAlpha: 1, vignettingBlur: 0.3, time: 0 }),
+        n
+      );
+    })(n.Filter),
+    O = (function (e) {
+      function n(n, t) {
+        void 0 === n && (n = 1), void 0 === t && (t = 5);
+        var r =
+          e.call(
+            this,
+            c,
+            'precision mediump float;\n\nvarying vec2 vTextureCoord;\nvarying vec4 vColor;\n\nuniform vec4 filterArea;\nuniform sampler2D uSampler;\n\nuniform float angle;\nuniform float scale;\n\nfloat pattern()\n{\n   float s = sin(angle), c = cos(angle);\n   vec2 tex = vTextureCoord * filterArea.xy;\n   vec2 point = vec2(\n       c * tex.x - s * tex.y,\n       s * tex.x + c * tex.y\n   ) * scale;\n   return (sin(point.x) * sin(point.y)) * 4.0;\n}\n\nvoid main()\n{\n   vec4 color = texture2D(uSampler, vTextureCoord);\n   float average = (color.r + color.g + color.b) / 3.0;\n   gl_FragColor = vec4(vec3(average * 10.0 - 5.0 + pattern()), color.a);\n}\n',
+          ) || this;
+        return (r.scale = n), (r.angle = t), r;
+      }
+      return (
+        u(n, e),
+        Object.defineProperty(n.prototype, 'scale', {
+          get: function () {
+            return this.uniforms.scale;
+          },
+          set: function (e) {
+            this.uniforms.scale = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'angle', {
+          get: function () {
+            return this.uniforms.angle;
+          },
+          set: function (e) {
+            this.uniforms.angle = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        n
+      );
+    })(n.Filter),
+    P = (function (e) {
+      function i(o) {
+        var l = e.call(this) || this;
+        (l.angle = 45), (l._distance = 5), (l._resolution = r.settings.FILTER_RESOLUTION);
+        var a = o ? f(f({}, i.defaults), o) : i.defaults,
+          s = a.kernels,
+          u = a.blur,
+          m = a.quality,
+          p = a.pixelSize,
+          h = a.resolution;
+        (l._tintFilter = new n.Filter(
+          c,
+          'varying vec2 vTextureCoord;\nuniform sampler2D uSampler;\nuniform float alpha;\nuniform vec3 color;\n\nuniform vec2 shift;\nuniform vec4 inputSize;\n\nvoid main(void){\n    vec4 sample = texture2D(uSampler, vTextureCoord - shift * inputSize.zw);\n\n    // Premultiply alpha\n    sample.rgb = color.rgb * sample.a;\n\n    // alpha user alpha\n    sample *= alpha;\n\n    gl_FragColor = sample;\n}',
+        )),
+          (l._tintFilter.uniforms.color = new Float32Array(4)),
+          (l._tintFilter.uniforms.shift = new t.Point()),
+          (l._tintFilter.resolution = h),
+          (l._blurFilter = s ? new d(s) : new d(u, m)),
+          (l.pixelSize = p),
+          (l.resolution = h);
+        var g = a.shadowOnly,
+          v = a.rotation,
+          y = a.distance,
+          b = a.alpha,
+          x = a.color;
+        return (l.shadowOnly = g), (l.rotation = v), (l.distance = y), (l.alpha = b), (l.color = x), l._updatePadding(), l;
+      }
+      return (
+        u(i, e),
+        (i.prototype.apply = function (e, n, t, r) {
+          var o = e.getFilterTexture();
+          this._tintFilter.apply(e, n, o, 1), this._blurFilter.apply(e, o, t, r), !0 !== this.shadowOnly && e.applyFilter(this, n, t, 0), e.returnFilterTexture(o);
+        }),
+        (i.prototype._updatePadding = function () {
+          this.padding = this.distance + 2 * this.blur;
+        }),
+        (i.prototype._updateShift = function () {
+          this._tintFilter.uniforms.shift.set(this.distance * Math.cos(this.angle), this.distance * Math.sin(this.angle));
+        }),
+        Object.defineProperty(i.prototype, 'resolution', {
+          get: function () {
+            return this._resolution;
+          },
+          set: function (e) {
+            (this._resolution = e), this._tintFilter && (this._tintFilter.resolution = e), this._blurFilter && (this._blurFilter.resolution = e);
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(i.prototype, 'distance', {
+          get: function () {
+            return this._distance;
+          },
+          set: function (e) {
+            (this._distance = e), this._updatePadding(), this._updateShift();
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(i.prototype, 'rotation', {
+          get: function () {
+            return this.angle / t.DEG_TO_RAD;
+          },
+          set: function (e) {
+            (this.angle = e * t.DEG_TO_RAD), this._updateShift();
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(i.prototype, 'alpha', {
+          get: function () {
+            return this._tintFilter.uniforms.alpha;
+          },
+          set: function (e) {
+            this._tintFilter.uniforms.alpha = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(i.prototype, 'color', {
+          get: function () {
+            return o.rgb2hex(this._tintFilter.uniforms.color);
+          },
+          set: function (e) {
+            o.hex2rgb(e, this._tintFilter.uniforms.color);
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(i.prototype, 'kernels', {
+          get: function () {
+            return this._blurFilter.kernels;
+          },
+          set: function (e) {
+            this._blurFilter.kernels = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(i.prototype, 'blur', {
+          get: function () {
+            return this._blurFilter.blur;
+          },
+          set: function (e) {
+            (this._blurFilter.blur = e), this._updatePadding();
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(i.prototype, 'quality', {
+          get: function () {
+            return this._blurFilter.quality;
+          },
+          set: function (e) {
+            this._blurFilter.quality = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(i.prototype, 'pixelSize', {
+          get: function () {
+            return this._blurFilter.pixelSize;
+          },
+          set: function (e) {
+            this._blurFilter.pixelSize = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        (i.defaults = { rotation: 45, distance: 5, color: 0, alpha: 0.5, shadowOnly: !1, kernels: null, blur: 2, quality: 3, pixelSize: 1, resolution: r.settings.FILTER_RESOLUTION }),
+        i
+      );
+    })(n.Filter),
+    A = (function (e) {
+      function n(n) {
+        void 0 === n && (n = 5);
+        var t =
+          e.call(
+            this,
+            c,
+            'precision mediump float;\n\nvarying vec2 vTextureCoord;\n\nuniform sampler2D uSampler;\nuniform float strength;\nuniform vec4 filterArea;\n\n\nvoid main(void)\n{\n\tvec2 onePixel = vec2(1.0 / filterArea);\n\n\tvec4 color;\n\n\tcolor.rgb = vec3(0.5);\n\n\tcolor -= texture2D(uSampler, vTextureCoord - onePixel) * strength;\n\tcolor += texture2D(uSampler, vTextureCoord + onePixel) * strength;\n\n\tcolor.rgb = vec3((color.r + color.g + color.b) / 3.0);\n\n\tfloat alpha = texture2D(uSampler, vTextureCoord).a;\n\n\tgl_FragColor = vec4(color.rgb * alpha, alpha);\n}\n',
+          ) || this;
+        return (t.strength = n), t;
+      }
+      return (
+        u(n, e),
+        Object.defineProperty(n.prototype, 'strength', {
+          get: function () {
+            return this.uniforms.strength;
+          },
+          set: function (e) {
+            this.uniforms.strength = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        n
+      );
+    })(n.Filter),
+    T = (function (e) {
+      function r(t) {
+        var o =
+          e.call(
+            this,
+            c,
+            '// precision highp float;\n\nvarying vec2 vTextureCoord;\nuniform sampler2D uSampler;\n\nuniform vec4 filterArea;\nuniform vec4 filterClamp;\nuniform vec2 dimensions;\nuniform float aspect;\n\nuniform sampler2D displacementMap;\nuniform float offset;\nuniform float sinDir;\nuniform float cosDir;\nuniform int fillMode;\n\nuniform float seed;\nuniform vec2 red;\nuniform vec2 green;\nuniform vec2 blue;\n\nconst int TRANSPARENT = 0;\nconst int ORIGINAL = 1;\nconst int LOOP = 2;\nconst int CLAMP = 3;\nconst int MIRROR = 4;\n\nvoid main(void)\n{\n    vec2 coord = (vTextureCoord * filterArea.xy) / dimensions;\n\n    if (coord.x > 1.0 || coord.y > 1.0) {\n        return;\n    }\n\n    float cx = coord.x - 0.5;\n    float cy = (coord.y - 0.5) * aspect;\n    float ny = (-sinDir * cx + cosDir * cy) / aspect + 0.5;\n\n    // displacementMap: repeat\n    // ny = ny > 1.0 ? ny - 1.0 : (ny < 0.0 ? 1.0 + ny : ny);\n\n    // displacementMap: mirror\n    ny = ny > 1.0 ? 2.0 - ny : (ny < 0.0 ? -ny : ny);\n\n    vec4 dc = texture2D(displacementMap, vec2(0.5, ny));\n\n    float displacement = (dc.r - dc.g) * (offset / filterArea.x);\n\n    coord = vTextureCoord + vec2(cosDir * displacement, sinDir * displacement * aspect);\n\n    if (fillMode == CLAMP) {\n        coord = clamp(coord, filterClamp.xy, filterClamp.zw);\n    } else {\n        if( coord.x > filterClamp.z ) {\n            if (fillMode == TRANSPARENT) {\n                discard;\n            } else if (fillMode == LOOP) {\n                coord.x -= filterClamp.z;\n            } else if (fillMode == MIRROR) {\n                coord.x = filterClamp.z * 2.0 - coord.x;\n            }\n        } else if( coord.x < filterClamp.x ) {\n            if (fillMode == TRANSPARENT) {\n                discard;\n            } else if (fillMode == LOOP) {\n                coord.x += filterClamp.z;\n            } else if (fillMode == MIRROR) {\n                coord.x *= -filterClamp.z;\n            }\n        }\n\n        if( coord.y > filterClamp.w ) {\n            if (fillMode == TRANSPARENT) {\n                discard;\n            } else if (fillMode == LOOP) {\n                coord.y -= filterClamp.w;\n            } else if (fillMode == MIRROR) {\n                coord.y = filterClamp.w * 2.0 - coord.y;\n            }\n        } else if( coord.y < filterClamp.y ) {\n            if (fillMode == TRANSPARENT) {\n                discard;\n            } else if (fillMode == LOOP) {\n                coord.y += filterClamp.w;\n            } else if (fillMode == MIRROR) {\n                coord.y *= -filterClamp.w;\n            }\n        }\n    }\n\n    gl_FragColor.r = texture2D(uSampler, coord + red * (1.0 - seed * 0.4) / filterArea.xy).r;\n    gl_FragColor.g = texture2D(uSampler, coord + green * (1.0 - seed * 0.3) / filterArea.xy).g;\n    gl_FragColor.b = texture2D(uSampler, coord + blue * (1.0 - seed * 0.2) / filterArea.xy).b;\n    gl_FragColor.a = texture2D(uSampler, coord).a;\n}\n',
+          ) || this;
+        return (
+          (o.offset = 100),
+          (o.fillMode = r.TRANSPARENT),
+          (o.average = !1),
+          (o.seed = 0),
+          (o.minSize = 8),
+          (o.sampleSize = 512),
+          (o._slices = 0),
+          (o._offsets = new Float32Array(1)),
+          (o._sizes = new Float32Array(1)),
+          (o._direction = -1),
+          (o.uniforms.dimensions = new Float32Array(2)),
+          (o._canvas = document.createElement('canvas')),
+          (o._canvas.width = 4),
+          (o._canvas.height = o.sampleSize),
+          (o.texture = n.Texture.from(o._canvas, { scaleMode: i.SCALE_MODES.NEAREST })),
+          Object.assign(o, r.defaults, t),
+          o
+        );
+      }
+      return (
+        u(r, e),
+        (r.prototype.apply = function (e, n, t, r) {
+          var o = n.filterFrame,
+            i = o.width,
+            l = o.height;
+          (this.uniforms.dimensions[0] = i),
+            (this.uniforms.dimensions[1] = l),
+            (this.uniforms.aspect = l / i),
+            (this.uniforms.seed = this.seed),
+            (this.uniforms.offset = this.offset),
+            (this.uniforms.fillMode = this.fillMode),
+            e.applyFilter(this, n, t, r);
+        }),
+        (r.prototype._randomizeSizes = function () {
+          var e = this._sizes,
+            n = this._slices - 1,
+            t = this.sampleSize,
+            r = Math.min(this.minSize / t, 0.9 / this._slices);
+          if (this.average) {
+            for (var o = this._slices, i = 1, l = 0; l < n; l++) {
+              var a = i / (o - l),
+                s = Math.max(a * (1 - 0.6 * Math.random()), r);
+              (e[l] = s), (i -= s);
+            }
+            e[n] = i;
+          } else {
+            i = 1;
+            var u = Math.sqrt(1 / this._slices);
+            for (l = 0; l < n; l++) {
+              s = Math.max(u * i * Math.random(), r);
+              (e[l] = s), (i -= s);
+            }
+            e[n] = i;
+          }
+          this.shuffle();
+        }),
+        (r.prototype.shuffle = function () {
+          for (var e = this._sizes, n = this._slices - 1; n > 0; n--) {
+            var t = (Math.random() * n) >> 0,
+              r = e[n];
+            (e[n] = e[t]), (e[t] = r);
+          }
+        }),
+        (r.prototype._randomizeOffsets = function () {
+          for (var e = 0; e < this._slices; e++) this._offsets[e] = Math.random() * (Math.random() < 0.5 ? -1 : 1);
+        }),
+        (r.prototype.refresh = function () {
+          this._randomizeSizes(), this._randomizeOffsets(), this.redraw();
+        }),
+        (r.prototype.redraw = function () {
+          var e,
+            n = this.sampleSize,
+            t = this.texture,
+            r = this._canvas.getContext('2d');
+          r.clearRect(0, 0, 8, n);
+          for (var o = 0, i = 0; i < this._slices; i++) {
+            e = Math.floor(256 * this._offsets[i]);
+            var l = this._sizes[i] * n,
+              a = e > 0 ? e : 0,
+              s = e < 0 ? -e : 0;
+            (r.fillStyle = 'rgba(' + a + ', ' + s + ', 0, 1)'), r.fillRect(0, o >> 0, n, (l + 1) >> 0), (o += l);
+          }
+          t.baseTexture.update(), (this.uniforms.displacementMap = t);
+        }),
+        Object.defineProperty(r.prototype, 'sizes', {
+          get: function () {
+            return this._sizes;
+          },
+          set: function (e) {
+            for (var n = Math.min(this._slices, e.length), t = 0; t < n; t++) this._sizes[t] = e[t];
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(r.prototype, 'offsets', {
+          get: function () {
+            return this._offsets;
+          },
+          set: function (e) {
+            for (var n = Math.min(this._slices, e.length), t = 0; t < n; t++) this._offsets[t] = e[t];
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(r.prototype, 'slices', {
+          get: function () {
+            return this._slices;
+          },
+          set: function (e) {
+            this._slices !== e &&
+              ((this._slices = e),
+              (this.uniforms.slices = e),
+              (this._sizes = this.uniforms.slicesWidth = new Float32Array(e)),
+              (this._offsets = this.uniforms.slicesOffset = new Float32Array(e)),
+              this.refresh());
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(r.prototype, 'direction', {
+          get: function () {
+            return this._direction;
+          },
+          set: function (e) {
+            if (this._direction !== e) {
+              this._direction = e;
+              var n = e * t.DEG_TO_RAD;
+              (this.uniforms.sinDir = Math.sin(n)), (this.uniforms.cosDir = Math.cos(n));
+            }
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(r.prototype, 'red', {
+          get: function () {
+            return this.uniforms.red;
+          },
+          set: function (e) {
+            this.uniforms.red = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(r.prototype, 'green', {
+          get: function () {
+            return this.uniforms.green;
+          },
+          set: function (e) {
+            this.uniforms.green = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(r.prototype, 'blue', {
+          get: function () {
+            return this.uniforms.blue;
+          },
+          set: function (e) {
+            this.uniforms.blue = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        (r.prototype.destroy = function () {
+          var e;
+          null === (e = this.texture) || void 0 === e || e.destroy(!0), (this.texture = this._canvas = this.red = this.green = this.blue = this._sizes = this._offsets = null);
+        }),
+        (r.defaults = { slices: 5, offset: 100, direction: 0, fillMode: 0, average: !1, seed: 0, red: [0, 0], green: [0, 0], blue: [0, 0], minSize: 8, sampleSize: 512 }),
+        (r.TRANSPARENT = 0),
+        (r.ORIGINAL = 1),
+        (r.LOOP = 2),
+        (r.CLAMP = 3),
+        (r.MIRROR = 4),
+        r
+      );
+    })(n.Filter),
+    w = (function (e) {
+      function n(t) {
+        var r = this,
+          o = Object.assign({}, n.defaults, t),
+          i = o.outerStrength,
+          l = o.innerStrength,
+          a = o.color,
+          s = o.knockout,
+          u = o.quality,
+          f = Math.round(o.distance);
+        return (
+          ((r =
+            e.call(
+              this,
+              c,
+              'varying vec2 vTextureCoord;\nvarying vec4 vColor;\n\nuniform sampler2D uSampler;\n\nuniform float outerStrength;\nuniform float innerStrength;\n\nuniform vec4 glowColor;\n\nuniform vec4 filterArea;\nuniform vec4 filterClamp;\nuniform bool knockout;\n\nconst float PI = 3.14159265358979323846264;\n\nconst float DIST = __DIST__;\nconst float ANGLE_STEP_SIZE = min(__ANGLE_STEP_SIZE__, PI * 2.0);\nconst float ANGLE_STEP_NUM = ceil(PI * 2.0 / ANGLE_STEP_SIZE);\n\nconst float MAX_TOTAL_ALPHA = ANGLE_STEP_NUM * DIST * (DIST + 1.0) / 2.0;\n\nvoid main(void) {\n    vec2 px = vec2(1.0 / filterArea.x, 1.0 / filterArea.y);\n\n    float totalAlpha = 0.0;\n\n    vec2 direction;\n    vec2 displaced;\n    vec4 curColor;\n\n    for (float angle = 0.0; angle < PI * 2.0; angle += ANGLE_STEP_SIZE) {\n       direction = vec2(cos(angle), sin(angle)) * px;\n\n       for (float curDistance = 0.0; curDistance < DIST; curDistance++) {\n           displaced = clamp(vTextureCoord + direction * \n                   (curDistance + 1.0), filterClamp.xy, filterClamp.zw);\n\n           curColor = texture2D(uSampler, displaced);\n\n           totalAlpha += (DIST - curDistance) * curColor.a;\n       }\n    }\n    \n    curColor = texture2D(uSampler, vTextureCoord);\n\n    float alphaRatio = (totalAlpha / MAX_TOTAL_ALPHA);\n\n    float innerGlowAlpha = (1.0 - alphaRatio) * innerStrength * curColor.a;\n    float innerGlowStrength = min(1.0, innerGlowAlpha);\n    \n    vec4 innerColor = mix(curColor, glowColor, innerGlowStrength);\n\n    float outerGlowAlpha = alphaRatio * outerStrength * (1. - curColor.a);\n    float outerGlowStrength = min(1.0 - innerColor.a, outerGlowAlpha);\n\n    vec4 outerGlowColor = outerGlowStrength * glowColor.rgba;\n    \n    if (knockout) {\n      float resultAlpha = outerGlowAlpha + innerGlowAlpha;\n      gl_FragColor = vec4(glowColor.rgb * resultAlpha, resultAlpha);\n    }\n    else {\n      gl_FragColor = innerColor + outerGlowColor;\n    }\n}\n'
+                .replace(/__ANGLE_STEP_SIZE__/gi, '' + (1 / u / f).toFixed(7))
+                .replace(/__DIST__/gi, f.toFixed(0) + '.0'),
+            ) || this).uniforms.glowColor = new Float32Array([0, 0, 0, 1])),
+          Object.assign(r, { color: a, outerStrength: i, innerStrength: l, padding: f, knockout: s }),
+          r
+        );
+      }
+      return (
+        u(n, e),
+        Object.defineProperty(n.prototype, 'color', {
+          get: function () {
+            return o.rgb2hex(this.uniforms.glowColor);
+          },
+          set: function (e) {
+            o.hex2rgb(e, this.uniforms.glowColor);
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'outerStrength', {
+          get: function () {
+            return this.uniforms.outerStrength;
+          },
+          set: function (e) {
+            this.uniforms.outerStrength = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'innerStrength', {
+          get: function () {
+            return this.uniforms.innerStrength;
+          },
+          set: function (e) {
+            this.uniforms.innerStrength = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'knockout', {
+          get: function () {
+            return this.uniforms.knockout;
+          },
+          set: function (e) {
+            this.uniforms.knockout = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        (n.defaults = { distance: 10, outerStrength: 4, innerStrength: 0, color: 16777215, quality: 0.1, knockout: !1 }),
+        n
+      );
+    })(n.Filter),
+    D = (function (e) {
+      function n(r) {
+        var o =
+          e.call(
+            this,
+            c,
+            'varying vec2 vTextureCoord;\nuniform sampler2D uSampler;\nuniform vec4 filterArea;\nuniform vec2 dimensions;\n\nuniform vec2 light;\nuniform bool parallel;\nuniform float aspect;\n\nuniform float gain;\nuniform float lacunarity;\nuniform float time;\nuniform float alpha;\n\n${perlin}\n\nvoid main(void) {\n    vec2 coord = vTextureCoord * filterArea.xy / dimensions.xy;\n\n    float d;\n\n    if (parallel) {\n        float _cos = light.x;\n        float _sin = light.y;\n        d = (_cos * coord.x) + (_sin * coord.y * aspect);\n    } else {\n        float dx = coord.x - light.x / dimensions.x;\n        float dy = (coord.y - light.y / dimensions.y) * aspect;\n        float dis = sqrt(dx * dx + dy * dy) + 0.00001;\n        d = dy / dis;\n    }\n\n    vec3 dir = vec3(d, d, 0.0);\n\n    float noise = turb(dir + vec3(time, 0.0, 62.1 + time) * 0.05, vec3(480.0, 320.0, 480.0), lacunarity, gain);\n    noise = mix(noise, 0.0, 0.3);\n    //fade vertically.\n    vec4 mist = vec4(noise, noise, noise, 1.0) * (1.0 - coord.y);\n    mist.a = 1.0;\n    // apply user alpha\n    mist *= alpha;\n\n    gl_FragColor = texture2D(uSampler, vTextureCoord) + mist;\n\n}\n'.replace(
+              '${perlin}',
+              'vec3 mod289(vec3 x)\n{\n    return x - floor(x * (1.0 / 289.0)) * 289.0;\n}\nvec4 mod289(vec4 x)\n{\n    return x - floor(x * (1.0 / 289.0)) * 289.0;\n}\nvec4 permute(vec4 x)\n{\n    return mod289(((x * 34.0) + 1.0) * x);\n}\nvec4 taylorInvSqrt(vec4 r)\n{\n    return 1.79284291400159 - 0.85373472095314 * r;\n}\nvec3 fade(vec3 t)\n{\n    return t * t * t * (t * (t * 6.0 - 15.0) + 10.0);\n}\n// Classic Perlin noise, periodic variant\nfloat pnoise(vec3 P, vec3 rep)\n{\n    vec3 Pi0 = mod(floor(P), rep); // Integer part, modulo period\n    vec3 Pi1 = mod(Pi0 + vec3(1.0), rep); // Integer part + 1, mod period\n    Pi0 = mod289(Pi0);\n    Pi1 = mod289(Pi1);\n    vec3 Pf0 = fract(P); // Fractional part for interpolation\n    vec3 Pf1 = Pf0 - vec3(1.0); // Fractional part - 1.0\n    vec4 ix = vec4(Pi0.x, Pi1.x, Pi0.x, Pi1.x);\n    vec4 iy = vec4(Pi0.yy, Pi1.yy);\n    vec4 iz0 = Pi0.zzzz;\n    vec4 iz1 = Pi1.zzzz;\n    vec4 ixy = permute(permute(ix) + iy);\n    vec4 ixy0 = permute(ixy + iz0);\n    vec4 ixy1 = permute(ixy + iz1);\n    vec4 gx0 = ixy0 * (1.0 / 7.0);\n    vec4 gy0 = fract(floor(gx0) * (1.0 / 7.0)) - 0.5;\n    gx0 = fract(gx0);\n    vec4 gz0 = vec4(0.5) - abs(gx0) - abs(gy0);\n    vec4 sz0 = step(gz0, vec4(0.0));\n    gx0 -= sz0 * (step(0.0, gx0) - 0.5);\n    gy0 -= sz0 * (step(0.0, gy0) - 0.5);\n    vec4 gx1 = ixy1 * (1.0 / 7.0);\n    vec4 gy1 = fract(floor(gx1) * (1.0 / 7.0)) - 0.5;\n    gx1 = fract(gx1);\n    vec4 gz1 = vec4(0.5) - abs(gx1) - abs(gy1);\n    vec4 sz1 = step(gz1, vec4(0.0));\n    gx1 -= sz1 * (step(0.0, gx1) - 0.5);\n    gy1 -= sz1 * (step(0.0, gy1) - 0.5);\n    vec3 g000 = vec3(gx0.x, gy0.x, gz0.x);\n    vec3 g100 = vec3(gx0.y, gy0.y, gz0.y);\n    vec3 g010 = vec3(gx0.z, gy0.z, gz0.z);\n    vec3 g110 = vec3(gx0.w, gy0.w, gz0.w);\n    vec3 g001 = vec3(gx1.x, gy1.x, gz1.x);\n    vec3 g101 = vec3(gx1.y, gy1.y, gz1.y);\n    vec3 g011 = vec3(gx1.z, gy1.z, gz1.z);\n    vec3 g111 = vec3(gx1.w, gy1.w, gz1.w);\n    vec4 norm0 = taylorInvSqrt(vec4(dot(g000, g000), dot(g010, g010), dot(g100, g100), dot(g110, g110)));\n    g000 *= norm0.x;\n    g010 *= norm0.y;\n    g100 *= norm0.z;\n    g110 *= norm0.w;\n    vec4 norm1 = taylorInvSqrt(vec4(dot(g001, g001), dot(g011, g011), dot(g101, g101), dot(g111, g111)));\n    g001 *= norm1.x;\n    g011 *= norm1.y;\n    g101 *= norm1.z;\n    g111 *= norm1.w;\n    float n000 = dot(g000, Pf0);\n    float n100 = dot(g100, vec3(Pf1.x, Pf0.yz));\n    float n010 = dot(g010, vec3(Pf0.x, Pf1.y, Pf0.z));\n    float n110 = dot(g110, vec3(Pf1.xy, Pf0.z));\n    float n001 = dot(g001, vec3(Pf0.xy, Pf1.z));\n    float n101 = dot(g101, vec3(Pf1.x, Pf0.y, Pf1.z));\n    float n011 = dot(g011, vec3(Pf0.x, Pf1.yz));\n    float n111 = dot(g111, Pf1);\n    vec3 fade_xyz = fade(Pf0);\n    vec4 n_z = mix(vec4(n000, n100, n010, n110), vec4(n001, n101, n011, n111), fade_xyz.z);\n    vec2 n_yz = mix(n_z.xy, n_z.zw, fade_xyz.y);\n    float n_xyz = mix(n_yz.x, n_yz.y, fade_xyz.x);\n    return 2.2 * n_xyz;\n}\nfloat turb(vec3 P, vec3 rep, float lacunarity, float gain)\n{\n    float sum = 0.0;\n    float sc = 1.0;\n    float totalgain = 1.0;\n    for (float i = 0.0; i < 6.0; i++)\n    {\n        sum += totalgain * pnoise(P * sc, rep);\n        sc *= lacunarity;\n        totalgain *= gain;\n    }\n    return abs(sum);\n}\n',
+            ),
+          ) || this;
+        (o.parallel = !0), (o.time = 0), (o._angle = 0), (o.uniforms.dimensions = new Float32Array(2));
+        var i = Object.assign(n.defaults, r);
+        return (
+          (o._angleLight = new t.Point()),
+          (o.angle = i.angle),
+          (o.gain = i.gain),
+          (o.lacunarity = i.lacunarity),
+          (o.alpha = i.alpha),
+          (o.parallel = i.parallel),
+          (o.center = i.center),
+          (o.time = i.time),
+          o
+        );
+      }
+      return (
+        u(n, e),
+        (n.prototype.apply = function (e, n, t, r) {
+          var o = n.filterFrame,
+            i = o.width,
+            l = o.height;
+          (this.uniforms.light = this.parallel ? this._angleLight : this.center),
+            (this.uniforms.parallel = this.parallel),
+            (this.uniforms.dimensions[0] = i),
+            (this.uniforms.dimensions[1] = l),
+            (this.uniforms.aspect = l / i),
+            (this.uniforms.time = this.time),
+            (this.uniforms.alpha = this.alpha),
+            e.applyFilter(this, n, t, r);
+        }),
+        Object.defineProperty(n.prototype, 'angle', {
+          get: function () {
+            return this._angle;
+          },
+          set: function (e) {
+            this._angle = e;
+            var n = e * t.DEG_TO_RAD;
+            (this._angleLight.x = Math.cos(n)), (this._angleLight.y = Math.sin(n));
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'gain', {
+          get: function () {
+            return this.uniforms.gain;
+          },
+          set: function (e) {
+            this.uniforms.gain = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'lacunarity', {
+          get: function () {
+            return this.uniforms.lacunarity;
+          },
+          set: function (e) {
+            this.uniforms.lacunarity = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'alpha', {
+          get: function () {
+            return this.uniforms.alpha;
+          },
+          set: function (e) {
+            this.uniforms.alpha = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        (n.defaults = { angle: 30, gain: 0.5, lacunarity: 2.5, time: 0, parallel: !0, center: [0, 0], alpha: 1 }),
+        n
+      );
+    })(n.Filter),
+    j = (function (e) {
+      function n(n, r, o) {
+        void 0 === n && (n = [0, 0]), void 0 === r && (r = 5), void 0 === o && (o = 0);
+        var i =
+          e.call(
+            this,
+            c,
+            'varying vec2 vTextureCoord;\nuniform sampler2D uSampler;\nuniform vec4 filterArea;\n\nuniform vec2 uVelocity;\nuniform int uKernelSize;\nuniform float uOffset;\n\nconst int MAX_KERNEL_SIZE = 2048;\n\n// Notice:\n// the perfect way:\n//    int kernelSize = min(uKernelSize, MAX_KERNELSIZE);\n// BUT in real use-case , uKernelSize < MAX_KERNELSIZE almost always.\n// So use uKernelSize directly.\n\nvoid main(void)\n{\n    vec4 color = texture2D(uSampler, vTextureCoord);\n\n    if (uKernelSize == 0)\n    {\n        gl_FragColor = color;\n        return;\n    }\n\n    vec2 velocity = uVelocity / filterArea.xy;\n    float offset = -uOffset / length(uVelocity) - 0.5;\n    int k = uKernelSize - 1;\n\n    for(int i = 0; i < MAX_KERNEL_SIZE - 1; i++) {\n        if (i == k) {\n            break;\n        }\n        vec2 bias = velocity * (float(i) / float(k) + offset);\n        color += texture2D(uSampler, vTextureCoord + bias);\n    }\n    gl_FragColor = color / float(uKernelSize);\n}\n',
+          ) || this;
+        return (i.kernelSize = 5), (i.uniforms.uVelocity = new Float32Array(2)), (i._velocity = new t.ObservablePoint(i.velocityChanged, i)), i.setVelocity(n), (i.kernelSize = r), (i.offset = o), i;
+      }
+      return (
+        u(n, e),
+        (n.prototype.apply = function (e, n, t, r) {
+          var o = this.velocity,
+            i = o.x,
+            l = o.y;
+          (this.uniforms.uKernelSize = 0 !== i || 0 !== l ? this.kernelSize : 0), e.applyFilter(this, n, t, r);
+        }),
+        Object.defineProperty(n.prototype, 'velocity', {
+          get: function () {
+            return this._velocity;
+          },
+          set: function (e) {
+            this.setVelocity(e);
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        (n.prototype.setVelocity = function (e) {
+          if (Array.isArray(e)) {
+            var n = e[0],
+              t = e[1];
+            this._velocity.set(n, t);
+          } else this._velocity.copyFrom(e);
+        }),
+        (n.prototype.velocityChanged = function () {
+          (this.uniforms.uVelocity[0] = this._velocity.x),
+            (this.uniforms.uVelocity[1] = this._velocity.y),
+            (this.padding = 1 + (Math.max(Math.abs(this._velocity.x), Math.abs(this._velocity.y)) >> 0));
+        }),
+        Object.defineProperty(n.prototype, 'offset', {
+          get: function () {
+            return this.uniforms.uOffset;
+          },
+          set: function (e) {
+            this.uniforms.uOffset = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        n
+      );
+    })(n.Filter),
+    M = (function (e) {
+      function n(n, t, r) {
+        void 0 === t && (t = 0.05), void 0 === r && (r = n.length);
+        var o =
+          e.call(
+            this,
+            c,
+            'varying vec2 vTextureCoord;\nuniform sampler2D uSampler;\n\nuniform float epsilon;\n\nconst int MAX_COLORS = %maxColors%;\n\nuniform vec3 originalColors[MAX_COLORS];\nuniform vec3 targetColors[MAX_COLORS];\n\nvoid main(void)\n{\n    gl_FragColor = texture2D(uSampler, vTextureCoord);\n\n    float alpha = gl_FragColor.a;\n    if (alpha < 0.0001)\n    {\n      return;\n    }\n\n    vec3 color = gl_FragColor.rgb / alpha;\n\n    for(int i = 0; i < MAX_COLORS; i++)\n    {\n      vec3 origColor = originalColors[i];\n      if (origColor.r < 0.0)\n      {\n        break;\n      }\n      vec3 colorDiff = origColor - color;\n      if (length(colorDiff) < epsilon)\n      {\n        vec3 targetColor = targetColors[i];\n        gl_FragColor = vec4((targetColor + colorDiff) * alpha, alpha);\n        return;\n      }\n    }\n}\n'.replace(
+              /%maxColors%/g,
+              r.toFixed(0),
+            ),
+          ) || this;
+        return (
+          (o._replacements = []),
+          (o._maxColors = 0),
+          (o.epsilon = t),
+          (o._maxColors = r),
+          (o.uniforms.originalColors = new Float32Array(3 * r)),
+          (o.uniforms.targetColors = new Float32Array(3 * r)),
+          (o.replacements = n),
+          o
+        );
+      }
+      return (
+        u(n, e),
+        Object.defineProperty(n.prototype, 'replacements', {
+          get: function () {
+            return this._replacements;
+          },
+          set: function (e) {
+            var n = this.uniforms.originalColors,
+              t = this.uniforms.targetColors,
+              r = e.length;
+            if (r > this._maxColors) throw new Error('Length of replacements (' + r + ') exceeds the maximum colors length (' + this._maxColors + ')');
+            n[3 * r] = -1;
+            for (var i = 0; i < r; i++) {
+              var l = e[i],
+                a = l[0];
+              'number' == typeof a ? (a = o.hex2rgb(a)) : (l[0] = o.rgb2hex(a)), (n[3 * i] = a[0]), (n[3 * i + 1] = a[1]), (n[3 * i + 2] = a[2]);
+              var s = l[1];
+              'number' == typeof s ? (s = o.hex2rgb(s)) : (l[1] = o.rgb2hex(s)), (t[3 * i] = s[0]), (t[3 * i + 1] = s[1]), (t[3 * i + 2] = s[2]);
+            }
+            this._replacements = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        (n.prototype.refresh = function () {
+          this.replacements = this._replacements;
+        }),
+        Object.defineProperty(n.prototype, 'maxColors', {
+          get: function () {
+            return this._maxColors;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'epsilon', {
+          get: function () {
+            return this.uniforms.epsilon;
+          },
+          set: function (e) {
+            this.uniforms.epsilon = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        n
+      );
+    })(n.Filter),
+    R = (function (e) {
+      function n(t, r) {
+        void 0 === r && (r = 0);
+        var o =
+          e.call(
+            this,
+            c,
+            'varying vec2 vTextureCoord;\nuniform sampler2D uSampler;\nuniform vec4 filterArea;\nuniform vec2 dimensions;\n\nuniform float sepia;\nuniform float noise;\nuniform float noiseSize;\nuniform float scratch;\nuniform float scratchDensity;\nuniform float scratchWidth;\nuniform float vignetting;\nuniform float vignettingAlpha;\nuniform float vignettingBlur;\nuniform float seed;\n\nconst float SQRT_2 = 1.414213;\nconst vec3 SEPIA_RGB = vec3(112.0 / 255.0, 66.0 / 255.0, 20.0 / 255.0);\n\nfloat rand(vec2 co) {\n    return fract(sin(dot(co.xy, vec2(12.9898, 78.233))) * 43758.5453);\n}\n\nvec3 Overlay(vec3 src, vec3 dst)\n{\n    // if (dst <= 0.5) then: 2 * src * dst\n    // if (dst > 0.5) then: 1 - 2 * (1 - dst) * (1 - src)\n    return vec3((dst.x <= 0.5) ? (2.0 * src.x * dst.x) : (1.0 - 2.0 * (1.0 - dst.x) * (1.0 - src.x)),\n                (dst.y <= 0.5) ? (2.0 * src.y * dst.y) : (1.0 - 2.0 * (1.0 - dst.y) * (1.0 - src.y)),\n                (dst.z <= 0.5) ? (2.0 * src.z * dst.z) : (1.0 - 2.0 * (1.0 - dst.z) * (1.0 - src.z)));\n}\n\n\nvoid main()\n{\n    gl_FragColor = texture2D(uSampler, vTextureCoord);\n    vec3 color = gl_FragColor.rgb;\n\n    if (sepia > 0.0)\n    {\n        float gray = (color.x + color.y + color.z) / 3.0;\n        vec3 grayscale = vec3(gray);\n\n        color = Overlay(SEPIA_RGB, grayscale);\n\n        color = grayscale + sepia * (color - grayscale);\n    }\n\n    vec2 coord = vTextureCoord * filterArea.xy / dimensions.xy;\n\n    if (vignetting > 0.0)\n    {\n        float outter = SQRT_2 - vignetting * SQRT_2;\n        vec2 dir = vec2(vec2(0.5, 0.5) - coord);\n        dir.y *= dimensions.y / dimensions.x;\n        float darker = clamp((outter - length(dir) * SQRT_2) / ( 0.00001 + vignettingBlur * SQRT_2), 0.0, 1.0);\n        color.rgb *= darker + (1.0 - darker) * (1.0 - vignettingAlpha);\n    }\n\n    if (scratchDensity > seed && scratch != 0.0)\n    {\n        float phase = seed * 256.0;\n        float s = mod(floor(phase), 2.0);\n        float dist = 1.0 / scratchDensity;\n        float d = distance(coord, vec2(seed * dist, abs(s - seed * dist)));\n        if (d < seed * 0.6 + 0.4)\n        {\n            highp float period = scratchDensity * 10.0;\n\n            float xx = coord.x * period + phase;\n            float aa = abs(mod(xx, 0.5) * 4.0);\n            float bb = mod(floor(xx / 0.5), 2.0);\n            float yy = (1.0 - bb) * aa + bb * (2.0 - aa);\n\n            float kk = 2.0 * period;\n            float dw = scratchWidth / dimensions.x * (0.75 + seed);\n            float dh = dw * kk;\n\n            float tine = (yy - (2.0 - dh));\n\n            if (tine > 0.0) {\n                float _sign = sign(scratch);\n\n                tine = s * tine / period + scratch + 0.1;\n                tine = clamp(tine + 1.0, 0.5 + _sign * 0.5, 1.5 + _sign * 0.5);\n\n                color.rgb *= tine;\n            }\n        }\n    }\n\n    if (noise > 0.0 && noiseSize > 0.0)\n    {\n        vec2 pixelCoord = vTextureCoord.xy * filterArea.xy;\n        pixelCoord.x = floor(pixelCoord.x / noiseSize);\n        pixelCoord.y = floor(pixelCoord.y / noiseSize);\n        // vec2 d = pixelCoord * noiseSize * vec2(1024.0 + seed * 512.0, 1024.0 - seed * 512.0);\n        // float _noise = snoise(d) * 0.5;\n        float _noise = rand(pixelCoord * noiseSize * seed) - 0.5;\n        color += _noise * noise;\n    }\n\n    gl_FragColor.rgb = color;\n}\n',
+          ) || this;
+        return (o.seed = 0), (o.uniforms.dimensions = new Float32Array(2)), 'number' == typeof t ? ((o.seed = t), (t = void 0)) : (o.seed = r), Object.assign(o, n.defaults, t), o;
+      }
+      return (
+        u(n, e),
+        (n.prototype.apply = function (e, n, t, r) {
+          var o, i;
+          (this.uniforms.dimensions[0] = null === (o = n.filterFrame) || void 0 === o ? void 0 : o.width),
+            (this.uniforms.dimensions[1] = null === (i = n.filterFrame) || void 0 === i ? void 0 : i.height),
+            (this.uniforms.seed = this.seed),
+            e.applyFilter(this, n, t, r);
+        }),
+        Object.defineProperty(n.prototype, 'sepia', {
+          get: function () {
+            return this.uniforms.sepia;
+          },
+          set: function (e) {
+            this.uniforms.sepia = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'noise', {
+          get: function () {
+            return this.uniforms.noise;
+          },
+          set: function (e) {
+            this.uniforms.noise = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'noiseSize', {
+          get: function () {
+            return this.uniforms.noiseSize;
+          },
+          set: function (e) {
+            this.uniforms.noiseSize = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'scratch', {
+          get: function () {
+            return this.uniforms.scratch;
+          },
+          set: function (e) {
+            this.uniforms.scratch = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'scratchDensity', {
+          get: function () {
+            return this.uniforms.scratchDensity;
+          },
+          set: function (e) {
+            this.uniforms.scratchDensity = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'scratchWidth', {
+          get: function () {
+            return this.uniforms.scratchWidth;
+          },
+          set: function (e) {
+            this.uniforms.scratchWidth = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'vignetting', {
+          get: function () {
+            return this.uniforms.vignetting;
+          },
+          set: function (e) {
+            this.uniforms.vignetting = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'vignettingAlpha', {
+          get: function () {
+            return this.uniforms.vignettingAlpha;
+          },
+          set: function (e) {
+            this.uniforms.vignettingAlpha = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'vignettingBlur', {
+          get: function () {
+            return this.uniforms.vignettingBlur;
+          },
+          set: function (e) {
+            this.uniforms.vignettingBlur = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        (n.defaults = { sepia: 0.3, noise: 0.3, noiseSize: 1, scratch: 0.5, scratchDensity: 0.3, scratchWidth: 1, vignetting: 0.3, vignettingAlpha: 1, vignettingBlur: 0.3 }),
+        n
+      );
+    })(n.Filter),
+    E = (function (e) {
+      function n(t, r, o) {
+        void 0 === t && (t = 1), void 0 === r && (r = 0), void 0 === o && (o = 0.1);
+        var i =
+          e.call(
+            this,
+            c,
+            'varying vec2 vTextureCoord;\nuniform sampler2D uSampler;\n\nuniform vec2 thickness;\nuniform vec4 outlineColor;\nuniform vec4 filterClamp;\n\nconst float DOUBLE_PI = 3.14159265358979323846264 * 2.;\n\nvoid main(void) {\n    vec4 ownColor = texture2D(uSampler, vTextureCoord);\n    vec4 curColor;\n    float maxAlpha = 0.;\n    vec2 displaced;\n    for (float angle = 0.; angle <= DOUBLE_PI; angle += ${angleStep}) {\n        displaced.x = vTextureCoord.x + thickness.x * cos(angle);\n        displaced.y = vTextureCoord.y + thickness.y * sin(angle);\n        curColor = texture2D(uSampler, clamp(displaced, filterClamp.xy, filterClamp.zw));\n        maxAlpha = max(maxAlpha, curColor.a);\n    }\n    float resultAlpha = max(maxAlpha, ownColor.a);\n    gl_FragColor = vec4((ownColor.rgb + outlineColor.rgb * (1. - ownColor.a)) * resultAlpha, resultAlpha);\n}\n'.replace(
+              /\$\{angleStep\}/,
+              n.getAngleStep(o),
+            ),
+          ) || this;
+        return (
+          (i._thickness = 1), (i.uniforms.thickness = new Float32Array([0, 0])), (i.uniforms.outlineColor = new Float32Array([0, 0, 0, 1])), Object.assign(i, { thickness: t, color: r, quality: o }), i
+        );
+      }
+      return (
+        u(n, e),
+        (n.getAngleStep = function (e) {
+          var t = Math.max(e * n.MAX_SAMPLES, n.MIN_SAMPLES);
+          return ((2 * Math.PI) / t).toFixed(7);
+        }),
+        (n.prototype.apply = function (e, n, t, r) {
+          (this.uniforms.thickness[0] = this._thickness / n._frame.width), (this.uniforms.thickness[1] = this._thickness / n._frame.height), e.applyFilter(this, n, t, r);
+        }),
+        Object.defineProperty(n.prototype, 'color', {
+          get: function () {
+            return o.rgb2hex(this.uniforms.outlineColor);
+          },
+          set: function (e) {
+            o.hex2rgb(e, this.uniforms.outlineColor);
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'thickness', {
+          get: function () {
+            return this._thickness;
+          },
+          set: function (e) {
+            (this._thickness = e), (this.padding = e);
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        (n.MIN_SAMPLES = 1),
+        (n.MAX_SAMPLES = 100),
+        n
+      );
+    })(n.Filter),
+    I = (function (e) {
+      function n(n) {
+        void 0 === n && (n = 10);
+        var t =
+          e.call(
+            this,
+            c,
+            'precision mediump float;\n\nvarying vec2 vTextureCoord;\n\nuniform vec2 size;\nuniform sampler2D uSampler;\n\nuniform vec4 filterArea;\n\nvec2 mapCoord( vec2 coord )\n{\n    coord *= filterArea.xy;\n    coord += filterArea.zw;\n\n    return coord;\n}\n\nvec2 unmapCoord( vec2 coord )\n{\n    coord -= filterArea.zw;\n    coord /= filterArea.xy;\n\n    return coord;\n}\n\nvec2 pixelate(vec2 coord, vec2 size)\n{\n\treturn floor( coord / size ) * size;\n}\n\nvoid main(void)\n{\n    vec2 coord = mapCoord(vTextureCoord);\n\n    coord = pixelate(coord, size);\n\n    coord = unmapCoord(coord);\n\n    gl_FragColor = texture2D(uSampler, coord);\n}\n',
+          ) || this;
+        return (t.size = n), t;
+      }
+      return (
+        u(n, e),
+        Object.defineProperty(n.prototype, 'size', {
+          get: function () {
+            return this.uniforms.size;
+          },
+          set: function (e) {
+            'number' == typeof e && (e = [e, e]), (this.uniforms.size = e);
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        n
+      );
+    })(n.Filter),
+    k = (function (e) {
+      function n(n, t, r, o) {
+        void 0 === n && (n = 0), void 0 === t && (t = [0, 0]), void 0 === r && (r = 5), void 0 === o && (o = -1);
+        var i =
+          e.call(
+            this,
+            c,
+            'varying vec2 vTextureCoord;\nuniform sampler2D uSampler;\nuniform vec4 filterArea;\n\nuniform float uRadian;\nuniform vec2 uCenter;\nuniform float uRadius;\nuniform int uKernelSize;\n\nconst int MAX_KERNEL_SIZE = 2048;\n\nvoid main(void)\n{\n    vec4 color = texture2D(uSampler, vTextureCoord);\n\n    if (uKernelSize == 0)\n    {\n        gl_FragColor = color;\n        return;\n    }\n\n    float aspect = filterArea.y / filterArea.x;\n    vec2 center = uCenter.xy / filterArea.xy;\n    float gradient = uRadius / filterArea.x * 0.3;\n    float radius = uRadius / filterArea.x - gradient * 0.5;\n    int k = uKernelSize - 1;\n\n    vec2 coord = vTextureCoord;\n    vec2 dir = vec2(center - coord);\n    float dist = length(vec2(dir.x, dir.y * aspect));\n\n    float radianStep = uRadian;\n    if (radius >= 0.0 && dist > radius) {\n        float delta = dist - radius;\n        float gap = gradient;\n        float scale = 1.0 - abs(delta / gap);\n        if (scale <= 0.0) {\n            gl_FragColor = color;\n            return;\n        }\n        radianStep *= scale;\n    }\n    radianStep /= float(k);\n\n    float s = sin(radianStep);\n    float c = cos(radianStep);\n    mat2 rotationMatrix = mat2(vec2(c, -s), vec2(s, c));\n\n    for(int i = 0; i < MAX_KERNEL_SIZE - 1; i++) {\n        if (i == k) {\n            break;\n        }\n\n        coord -= center;\n        coord.y *= aspect;\n        coord = rotationMatrix * coord;\n        coord.y /= aspect;\n        coord += center;\n\n        vec4 sample = texture2D(uSampler, coord);\n\n        // switch to pre-multiplied alpha to correctly blur transparent images\n        // sample.rgb *= sample.a;\n\n        color += sample;\n    }\n\n    gl_FragColor = color / float(uKernelSize);\n}\n',
+          ) || this;
+        return (i._angle = 0), (i.angle = n), (i.center = t), (i.kernelSize = r), (i.radius = o), i;
+      }
+      return (
+        u(n, e),
+        (n.prototype.apply = function (e, n, t, r) {
+          (this.uniforms.uKernelSize = 0 !== this._angle ? this.kernelSize : 0), e.applyFilter(this, n, t, r);
+        }),
+        Object.defineProperty(n.prototype, 'angle', {
+          get: function () {
+            return this._angle;
+          },
+          set: function (e) {
+            (this._angle = e), (this.uniforms.uRadian = (e * Math.PI) / 180);
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'center', {
+          get: function () {
+            return this.uniforms.uCenter;
+          },
+          set: function (e) {
+            this.uniforms.uCenter = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'radius', {
+          get: function () {
+            return this.uniforms.uRadius;
+          },
+          set: function (e) {
+            (e < 0 || e === 1 / 0) && (e = -1), (this.uniforms.uRadius = e);
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        n
+      );
+    })(n.Filter),
+    L = (function (e) {
+      function n(t) {
+        var r =
+          e.call(
+            this,
+            c,
+            'varying vec2 vTextureCoord;\nuniform sampler2D uSampler;\n\nuniform vec4 filterArea;\nuniform vec4 filterClamp;\nuniform vec2 dimensions;\n\nuniform bool mirror;\nuniform float boundary;\nuniform vec2 amplitude;\nuniform vec2 waveLength;\nuniform vec2 alpha;\nuniform float time;\n\nfloat rand(vec2 co) {\n    return fract(sin(dot(co.xy, vec2(12.9898, 78.233))) * 43758.5453);\n}\n\nvoid main(void)\n{\n    vec2 pixelCoord = vTextureCoord.xy * filterArea.xy;\n    vec2 coord = pixelCoord / dimensions;\n\n    if (coord.y < boundary) {\n        gl_FragColor = texture2D(uSampler, vTextureCoord);\n        return;\n    }\n\n    float k = (coord.y - boundary) / (1. - boundary + 0.0001);\n    float areaY = boundary * dimensions.y / filterArea.y;\n    float v = areaY + areaY - vTextureCoord.y;\n    float y = mirror ? v : vTextureCoord.y;\n\n    float _amplitude = ((amplitude.y - amplitude.x) * k + amplitude.x ) / filterArea.x;\n    float _waveLength = ((waveLength.y - waveLength.x) * k + waveLength.x) / filterArea.y;\n    float _alpha = (alpha.y - alpha.x) * k + alpha.x;\n\n    float x = vTextureCoord.x + cos(v * 6.28 / _waveLength - time) * _amplitude;\n    x = clamp(x, filterClamp.x, filterClamp.z);\n\n    vec4 color = texture2D(uSampler, vec2(x, y));\n\n    gl_FragColor = color * _alpha;\n}\n',
+          ) || this;
+        return (
+          (r.time = 0),
+          (r.uniforms.amplitude = new Float32Array(2)),
+          (r.uniforms.waveLength = new Float32Array(2)),
+          (r.uniforms.alpha = new Float32Array(2)),
+          (r.uniforms.dimensions = new Float32Array(2)),
+          Object.assign(r, n.defaults, t),
+          r
+        );
+      }
+      return (
+        u(n, e),
+        (n.prototype.apply = function (e, n, t, r) {
+          var o, i;
+          (this.uniforms.dimensions[0] = null === (o = n.filterFrame) || void 0 === o ? void 0 : o.width),
+            (this.uniforms.dimensions[1] = null === (i = n.filterFrame) || void 0 === i ? void 0 : i.height),
+            (this.uniforms.time = this.time),
+            e.applyFilter(this, n, t, r);
+        }),
+        Object.defineProperty(n.prototype, 'mirror', {
+          get: function () {
+            return this.uniforms.mirror;
+          },
+          set: function (e) {
+            this.uniforms.mirror = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'boundary', {
+          get: function () {
+            return this.uniforms.boundary;
+          },
+          set: function (e) {
+            this.uniforms.boundary = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'amplitude', {
+          get: function () {
+            return this.uniforms.amplitude;
+          },
+          set: function (e) {
+            (this.uniforms.amplitude[0] = e[0]), (this.uniforms.amplitude[1] = e[1]);
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'waveLength', {
+          get: function () {
+            return this.uniforms.waveLength;
+          },
+          set: function (e) {
+            (this.uniforms.waveLength[0] = e[0]), (this.uniforms.waveLength[1] = e[1]);
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'alpha', {
+          get: function () {
+            return this.uniforms.alpha;
+          },
+          set: function (e) {
+            (this.uniforms.alpha[0] = e[0]), (this.uniforms.alpha[1] = e[1]);
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        (n.defaults = { mirror: !0, boundary: 0.5, amplitude: [0, 20], waveLength: [30, 100], alpha: [1, 1], time: 0 }),
+        n
+      );
+    })(n.Filter),
+    N = (function (e) {
+      function n(n, t, r) {
+        void 0 === n && (n = [-10, 0]), void 0 === t && (t = [0, 10]), void 0 === r && (r = [0, 0]);
+        var o =
+          e.call(
+            this,
+            c,
+            'precision mediump float;\n\nvarying vec2 vTextureCoord;\n\nuniform sampler2D uSampler;\nuniform vec4 filterArea;\nuniform vec2 red;\nuniform vec2 green;\nuniform vec2 blue;\n\nvoid main(void)\n{\n   gl_FragColor.r = texture2D(uSampler, vTextureCoord + red/filterArea.xy).r;\n   gl_FragColor.g = texture2D(uSampler, vTextureCoord + green/filterArea.xy).g;\n   gl_FragColor.b = texture2D(uSampler, vTextureCoord + blue/filterArea.xy).b;\n   gl_FragColor.a = texture2D(uSampler, vTextureCoord).a;\n}\n',
+          ) || this;
+        return (o.red = n), (o.green = t), (o.blue = r), o;
+      }
+      return (
+        u(n, e),
+        Object.defineProperty(n.prototype, 'red', {
+          get: function () {
+            return this.uniforms.red;
+          },
+          set: function (e) {
+            this.uniforms.red = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'green', {
+          get: function () {
+            return this.uniforms.green;
+          },
+          set: function (e) {
+            this.uniforms.green = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'blue', {
+          get: function () {
+            return this.uniforms.blue;
+          },
+          set: function (e) {
+            this.uniforms.blue = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        n
+      );
+    })(n.Filter),
+    X = (function (e) {
+      function n(t, r, o) {
+        void 0 === t && (t = [0, 0]), void 0 === o && (o = 0);
+        var i =
+          e.call(
+            this,
+            c,
+            'varying vec2 vTextureCoord;\nuniform sampler2D uSampler;\nuniform vec4 filterArea;\nuniform vec4 filterClamp;\n\nuniform vec2 center;\n\nuniform float amplitude;\nuniform float wavelength;\n// uniform float power;\nuniform float brightness;\nuniform float speed;\nuniform float radius;\n\nuniform float time;\n\nconst float PI = 3.14159;\n\nvoid main()\n{\n    float halfWavelength = wavelength * 0.5 / filterArea.x;\n    float maxRadius = radius / filterArea.x;\n    float currentRadius = time * speed / filterArea.x;\n\n    float fade = 1.0;\n\n    if (maxRadius > 0.0) {\n        if (currentRadius > maxRadius) {\n            gl_FragColor = texture2D(uSampler, vTextureCoord);\n            return;\n        }\n        fade = 1.0 - pow(currentRadius / maxRadius, 2.0);\n    }\n\n    vec2 dir = vec2(vTextureCoord - center / filterArea.xy);\n    dir.y *= filterArea.y / filterArea.x;\n    float dist = length(dir);\n\n    if (dist <= 0.0 || dist < currentRadius - halfWavelength || dist > currentRadius + halfWavelength) {\n        gl_FragColor = texture2D(uSampler, vTextureCoord);\n        return;\n    }\n\n    vec2 diffUV = normalize(dir);\n\n    float diff = (dist - currentRadius) / halfWavelength;\n\n    float p = 1.0 - pow(abs(diff), 2.0);\n\n    // float powDiff = diff * pow(p, 2.0) * ( amplitude * fade );\n    float powDiff = 1.25 * sin(diff * PI) * p * ( amplitude * fade );\n\n    vec2 offset = diffUV * powDiff / filterArea.xy;\n\n    // Do clamp :\n    vec2 coord = vTextureCoord + offset;\n    vec2 clampedCoord = clamp(coord, filterClamp.xy, filterClamp.zw);\n    vec4 color = texture2D(uSampler, clampedCoord);\n    if (coord != clampedCoord) {\n        color *= max(0.0, 1.0 - length(coord - clampedCoord));\n    }\n\n    // No clamp :\n    // gl_FragColor = texture2D(uSampler, vTextureCoord + offset);\n\n    color.rgb *= 1.0 + (brightness - 1.0) * p * fade;\n\n    gl_FragColor = color;\n}\n',
+          ) || this;
+        return (i.center = t), Object.assign(i, n.defaults, r), (i.time = o), i;
+      }
+      return (
+        u(n, e),
+        (n.prototype.apply = function (e, n, t, r) {
+          (this.uniforms.time = this.time), e.applyFilter(this, n, t, r);
+        }),
+        Object.defineProperty(n.prototype, 'center', {
+          get: function () {
+            return this.uniforms.center;
+          },
+          set: function (e) {
+            this.uniforms.center = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'amplitude', {
+          get: function () {
+            return this.uniforms.amplitude;
+          },
+          set: function (e) {
+            this.uniforms.amplitude = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'wavelength', {
+          get: function () {
+            return this.uniforms.wavelength;
+          },
+          set: function (e) {
+            this.uniforms.wavelength = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'brightness', {
+          get: function () {
+            return this.uniforms.brightness;
+          },
+          set: function (e) {
+            this.uniforms.brightness = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'speed', {
+          get: function () {
+            return this.uniforms.speed;
+          },
+          set: function (e) {
+            this.uniforms.speed = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'radius', {
+          get: function () {
+            return this.uniforms.radius;
+          },
+          set: function (e) {
+            this.uniforms.radius = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        (n.defaults = { amplitude: 30, wavelength: 160, brightness: 1, speed: 500, radius: -1 }),
+        n
+      );
+    })(n.Filter),
+    B = (function (e) {
+      function n(n, t, r) {
+        void 0 === t && (t = 0), void 0 === r && (r = 1);
+        var o =
+          e.call(
+            this,
+            c,
+            'varying vec2 vTextureCoord;\nuniform sampler2D uSampler;\nuniform sampler2D uLightmap;\nuniform vec4 filterArea;\nuniform vec2 dimensions;\nuniform vec4 ambientColor;\nvoid main() {\n    vec4 diffuseColor = texture2D(uSampler, vTextureCoord);\n    vec2 lightCoord = (vTextureCoord * filterArea.xy) / dimensions;\n    vec4 light = texture2D(uLightmap, lightCoord);\n    vec3 ambient = ambientColor.rgb * ambientColor.a;\n    vec3 intensity = ambient + light.rgb;\n    vec3 finalColor = diffuseColor.rgb * intensity;\n    gl_FragColor = vec4(finalColor, diffuseColor.a);\n}\n',
+          ) || this;
+        return (o._color = 0), (o.uniforms.dimensions = new Float32Array(2)), (o.uniforms.ambientColor = new Float32Array([0, 0, 0, r])), (o.texture = n), (o.color = t), o;
+      }
+      return (
+        u(n, e),
+        (n.prototype.apply = function (e, n, t, r) {
+          var o, i;
+          (this.uniforms.dimensions[0] = null === (o = n.filterFrame) || void 0 === o ? void 0 : o.width),
+            (this.uniforms.dimensions[1] = null === (i = n.filterFrame) || void 0 === i ? void 0 : i.height),
+            e.applyFilter(this, n, t, r);
+        }),
+        Object.defineProperty(n.prototype, 'texture', {
+          get: function () {
+            return this.uniforms.uLightmap;
+          },
+          set: function (e) {
+            this.uniforms.uLightmap = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'color', {
+          get: function () {
+            return this._color;
+          },
+          set: function (e) {
+            var n = this.uniforms.ambientColor;
+            'number' == typeof e ? (o.hex2rgb(e, n), (this._color = e)) : ((n[0] = e[0]), (n[1] = e[1]), (n[2] = e[2]), (n[3] = e[3]), (this._color = o.rgb2hex(n)));
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'alpha', {
+          get: function () {
+            return this.uniforms.ambientColor[3];
+          },
+          set: function (e) {
+            this.uniforms.ambientColor[3] = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        n
+      );
+    })(n.Filter),
+    G = (function (e) {
+      function n(n, r, o, i) {
+        void 0 === n && (n = 100), void 0 === r && (r = 600);
+        var l =
+          e.call(
+            this,
+            c,
+            'varying vec2 vTextureCoord;\n\nuniform sampler2D uSampler;\nuniform float blur;\nuniform float gradientBlur;\nuniform vec2 start;\nuniform vec2 end;\nuniform vec2 delta;\nuniform vec2 texSize;\n\nfloat random(vec3 scale, float seed)\n{\n    return fract(sin(dot(gl_FragCoord.xyz + seed, scale)) * 43758.5453 + seed);\n}\n\nvoid main(void)\n{\n    vec4 color = vec4(0.0);\n    float total = 0.0;\n\n    float offset = random(vec3(12.9898, 78.233, 151.7182), 0.0);\n    vec2 normal = normalize(vec2(start.y - end.y, end.x - start.x));\n    float radius = smoothstep(0.0, 1.0, abs(dot(vTextureCoord * texSize - start, normal)) / gradientBlur) * blur;\n\n    for (float t = -30.0; t <= 30.0; t++)\n    {\n        float percent = (t + offset - 0.5) / 30.0;\n        float weight = 1.0 - abs(percent);\n        vec4 sample = texture2D(uSampler, vTextureCoord + delta / texSize * percent * radius);\n        sample.rgb *= sample.a;\n        color += sample * weight;\n        total += weight;\n    }\n\n    color /= total;\n    color.rgb /= color.a + 0.00001;\n\n    gl_FragColor = color;\n}\n',
+          ) || this;
+        return (
+          (l.uniforms.blur = n),
+          (l.uniforms.gradientBlur = r),
+          (l.uniforms.start = o || new t.Point(0, window.innerHeight / 2)),
+          (l.uniforms.end = i || new t.Point(600, window.innerHeight / 2)),
+          (l.uniforms.delta = new t.Point(30, 30)),
+          (l.uniforms.texSize = new t.Point(window.innerWidth, window.innerHeight)),
+          l.updateDelta(),
+          l
+        );
+      }
+      return (
+        u(n, e),
+        (n.prototype.updateDelta = function () {
+          (this.uniforms.delta.x = 0), (this.uniforms.delta.y = 0);
+        }),
+        Object.defineProperty(n.prototype, 'blur', {
+          get: function () {
+            return this.uniforms.blur;
+          },
+          set: function (e) {
+            this.uniforms.blur = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'gradientBlur', {
+          get: function () {
+            return this.uniforms.gradientBlur;
+          },
+          set: function (e) {
+            this.uniforms.gradientBlur = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'start', {
+          get: function () {
+            return this.uniforms.start;
+          },
+          set: function (e) {
+            (this.uniforms.start = e), this.updateDelta();
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'end', {
+          get: function () {
+            return this.uniforms.end;
+          },
+          set: function (e) {
+            (this.uniforms.end = e), this.updateDelta();
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        n
+      );
+    })(n.Filter),
+    K = (function (e) {
+      function n() {
+        return (null !== e && e.apply(this, arguments)) || this;
+      }
+      return (
+        u(n, e),
+        (n.prototype.updateDelta = function () {
+          var e = this.uniforms.end.x - this.uniforms.start.x,
+            n = this.uniforms.end.y - this.uniforms.start.y,
+            t = Math.sqrt(e * e + n * n);
+          (this.uniforms.delta.x = e / t), (this.uniforms.delta.y = n / t);
+        }),
+        n
+      );
+    })(G),
+    q = (function (e) {
+      function n() {
+        return (null !== e && e.apply(this, arguments)) || this;
+      }
+      return (
+        u(n, e),
+        (n.prototype.updateDelta = function () {
+          var e = this.uniforms.end.x - this.uniforms.start.x,
+            n = this.uniforms.end.y - this.uniforms.start.y,
+            t = Math.sqrt(e * e + n * n);
+          (this.uniforms.delta.x = -n / t), (this.uniforms.delta.y = e / t);
+        }),
+        n
+      );
+    })(G),
+    W = (function (e) {
+      function n(n, t, r, o) {
+        void 0 === n && (n = 100), void 0 === t && (t = 600);
+        var i = e.call(this) || this;
+        return (i.tiltShiftXFilter = new K(n, t, r, o)), (i.tiltShiftYFilter = new q(n, t, r, o)), i;
+      }
+      return (
+        u(n, e),
+        (n.prototype.apply = function (e, n, t, r) {
+          var o = e.getFilterTexture();
+          this.tiltShiftXFilter.apply(e, n, o, 1), this.tiltShiftYFilter.apply(e, o, t, r), e.returnFilterTexture(o);
+        }),
+        Object.defineProperty(n.prototype, 'blur', {
+          get: function () {
+            return this.tiltShiftXFilter.blur;
+          },
+          set: function (e) {
+            this.tiltShiftXFilter.blur = this.tiltShiftYFilter.blur = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'gradientBlur', {
+          get: function () {
+            return this.tiltShiftXFilter.gradientBlur;
+          },
+          set: function (e) {
+            this.tiltShiftXFilter.gradientBlur = this.tiltShiftYFilter.gradientBlur = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'start', {
+          get: function () {
+            return this.tiltShiftXFilter.start;
+          },
+          set: function (e) {
+            this.tiltShiftXFilter.start = this.tiltShiftYFilter.start = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'end', {
+          get: function () {
+            return this.tiltShiftXFilter.end;
+          },
+          set: function (e) {
+            this.tiltShiftXFilter.end = this.tiltShiftYFilter.end = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        n
+      );
+    })(n.Filter),
+    Y = (function (e) {
+      function n(t) {
+        var r =
+          e.call(
+            this,
+            c,
+            'varying vec2 vTextureCoord;\n\nuniform sampler2D uSampler;\nuniform float radius;\nuniform float angle;\nuniform vec2 offset;\nuniform vec4 filterArea;\n\nvec2 mapCoord( vec2 coord )\n{\n    coord *= filterArea.xy;\n    coord += filterArea.zw;\n\n    return coord;\n}\n\nvec2 unmapCoord( vec2 coord )\n{\n    coord -= filterArea.zw;\n    coord /= filterArea.xy;\n\n    return coord;\n}\n\nvec2 twist(vec2 coord)\n{\n    coord -= offset;\n\n    float dist = length(coord);\n\n    if (dist < radius)\n    {\n        float ratioDist = (radius - dist) / radius;\n        float angleMod = ratioDist * ratioDist * angle;\n        float s = sin(angleMod);\n        float c = cos(angleMod);\n        coord = vec2(coord.x * c - coord.y * s, coord.x * s + coord.y * c);\n    }\n\n    coord += offset;\n\n    return coord;\n}\n\nvoid main(void)\n{\n\n    vec2 coord = mapCoord(vTextureCoord);\n\n    coord = twist(coord);\n\n    coord = unmapCoord(coord);\n\n    gl_FragColor = texture2D(uSampler, coord );\n\n}\n',
+          ) || this;
+        return Object.assign(r, n.defaults, t), r;
+      }
+      return (
+        u(n, e),
+        Object.defineProperty(n.prototype, 'offset', {
+          get: function () {
+            return this.uniforms.offset;
+          },
+          set: function (e) {
+            this.uniforms.offset = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'radius', {
+          get: function () {
+            return this.uniforms.radius;
+          },
+          set: function (e) {
+            this.uniforms.radius = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'angle', {
+          get: function () {
+            return this.uniforms.angle;
+          },
+          set: function (e) {
+            this.uniforms.angle = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        (n.defaults = { radius: 200, angle: 4, padding: 20, offset: new t.Point() }),
+        n
+      );
+    })(n.Filter),
+    Z = (function (e) {
+      function n(t) {
+        var r,
+          o = Object.assign(n.defaults, t),
+          i = o.maxKernelSize,
+          l = (function (e, n) {
+            var t = {};
+            for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && n.indexOf(r) < 0 && (t[r] = e[r]);
+            if (null != e && 'function' == typeof Object.getOwnPropertySymbols) {
+              var o = 0;
+              for (r = Object.getOwnPropertySymbols(e); o < r.length; o++) n.indexOf(r[o]) < 0 && Object.prototype.propertyIsEnumerable.call(e, r[o]) && (t[r[o]] = e[r[o]]);
+            }
+            return t;
+          })(o, ['maxKernelSize']);
+        return (
+          (r =
+            e.call(
+              this,
+              c,
+              "varying vec2 vTextureCoord;\nuniform sampler2D uSampler;\nuniform vec4 filterArea;\n\nuniform vec2 uCenter;\nuniform float uStrength;\nuniform float uInnerRadius;\nuniform float uRadius;\n\nconst float MAX_KERNEL_SIZE = ${maxKernelSize};\n\n// author: http://byteblacksmith.com/improvements-to-the-canonical-one-liner-glsl-rand-for-opengl-es-2-0/\nhighp float rand(vec2 co, float seed) {\n    const highp float a = 12.9898, b = 78.233, c = 43758.5453;\n    highp float dt = dot(co + seed, vec2(a, b)), sn = mod(dt, 3.14159);\n    return fract(sin(sn) * c + seed);\n}\n\nvoid main() {\n\n    float minGradient = uInnerRadius * 0.3;\n    float innerRadius = (uInnerRadius + minGradient * 0.5) / filterArea.x;\n\n    float gradient = uRadius * 0.3;\n    float radius = (uRadius - gradient * 0.5) / filterArea.x;\n\n    float countLimit = MAX_KERNEL_SIZE;\n\n    vec2 dir = vec2(uCenter.xy / filterArea.xy - vTextureCoord);\n    float dist = length(vec2(dir.x, dir.y * filterArea.y / filterArea.x));\n\n    float strength = uStrength;\n\n    float delta = 0.0;\n    float gap;\n    if (dist < innerRadius) {\n        delta = innerRadius - dist;\n        gap = minGradient;\n    } else if (radius >= 0.0 && dist > radius) { // radius < 0 means it's infinity\n        delta = dist - radius;\n        gap = gradient;\n    }\n\n    if (delta > 0.0) {\n        float normalCount = gap / filterArea.x;\n        delta = (normalCount - delta) / normalCount;\n        countLimit *= delta;\n        strength *= delta;\n        if (countLimit < 1.0)\n        {\n            gl_FragColor = texture2D(uSampler, vTextureCoord);\n            return;\n        }\n    }\n\n    // randomize the lookup values to hide the fixed number of samples\n    float offset = rand(vTextureCoord, 0.0);\n\n    float total = 0.0;\n    vec4 color = vec4(0.0);\n\n    dir *= strength;\n\n    for (float t = 0.0; t < MAX_KERNEL_SIZE; t++) {\n        float percent = (t + offset) / MAX_KERNEL_SIZE;\n        float weight = 4.0 * (percent - percent * percent);\n        vec2 p = vTextureCoord + dir * percent;\n        vec4 sample = texture2D(uSampler, p);\n\n        // switch to pre-multiplied alpha to correctly blur transparent images\n        // sample.rgb *= sample.a;\n\n        color += sample * weight;\n        total += weight;\n\n        if (t > countLimit){\n            break;\n        }\n    }\n\n    color /= total;\n    // switch back from pre-multiplied alpha\n    // color.rgb /= color.a + 0.00001;\n\n    gl_FragColor = color;\n}\n".replace(
+                '${maxKernelSize}',
+                i.toFixed(1),
+              ),
+            ) || this),
+          Object.assign(r, l),
+          r
+        );
+      }
+      return (
+        u(n, e),
+        Object.defineProperty(n.prototype, 'center', {
+          get: function () {
+            return this.uniforms.uCenter;
+          },
+          set: function (e) {
+            this.uniforms.uCenter = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'strength', {
+          get: function () {
+            return this.uniforms.uStrength;
+          },
+          set: function (e) {
+            this.uniforms.uStrength = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'innerRadius', {
+          get: function () {
+            return this.uniforms.uInnerRadius;
+          },
+          set: function (e) {
+            this.uniforms.uInnerRadius = e;
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        Object.defineProperty(n.prototype, 'radius', {
+          get: function () {
+            return this.uniforms.uRadius;
+          },
+          set: function (e) {
+            (e < 0 || e === 1 / 0) && (e = -1), (this.uniforms.uRadius = e);
+          },
+          enumerable: !1,
+          configurable: !0,
+        }),
+        (n.defaults = { strength: 0.1, center: [0, 0], innerRadius: 0, radius: -1, maxKernelSize: 32 }),
+        n
+      );
+    })(n.Filter);
+  return (
+    (e.AdjustmentFilter = m),
+    (e.AdvancedBloomFilter = h),
+    (e.AsciiFilter = g),
+    (e.BevelFilter = v),
+    (e.BloomFilter = y),
+    (e.BulgePinchFilter = b),
+    (e.CRTFilter = z),
+    (e.ColorMapFilter = x),
+    (e.ColorOverlayFilter = _),
+    (e.ColorReplaceFilter = C),
+    (e.ConvolutionFilter = S),
+    (e.CrossHatchFilter = F),
+    (e.DotFilter = O),
+    (e.DropShadowFilter = P),
+    (e.EmbossFilter = A),
+    (e.GlitchFilter = T),
+    (e.GlowFilter = w),
+    (e.GodrayFilter = D),
+    (e.KawaseBlurFilter = d),
+    (e.MotionBlurFilter = j),
+    (e.MultiColorReplaceFilter = M),
+    (e.OldFilmFilter = R),
+    (e.OutlineFilter = E),
+    (e.PixelateFilter = I),
+    (e.RGBSplitFilter = N),
+    (e.RadialBlurFilter = k),
+    (e.ReflectionFilter = L),
+    (e.ShockwaveFilter = X),
+    (e.SimpleLightmapFilter = B),
+    (e.TiltShiftAxisFilter = G),
+    (e.TiltShiftFilter = W),
+    (e.TiltShiftXFilter = K),
+    (e.TiltShiftYFilter = q),
+    (e.TwistFilter = Y),
+    (e.ZoomBlurFilter = Z),
+    Object.defineProperty(e, '__esModule', { value: !0 }),
+    e
+  );
+})({}, PIXI, PIXI, PIXI, PIXI.utils, PIXI, PIXI.filters, PIXI.filters);
+Object.assign(PIXI.filters, __filters);
 //# sourceMappingURL=pixi-filters.js.map
-
 
 // Generated by CoffeeScript 2.6.1
 // ==========================================================================
@@ -1410,29 +3728,28 @@ KDCore._loader = 'loader_' + KDCore._fileVersion;
 KDCore[KDCore._loader] = [];
 
 // * Добавить библиотеку на загрузку
-KDCore.registerLibraryToLoad = function(lib) {
+KDCore.registerLibraryToLoad = function (lib) {
   return KDCore[KDCore._loader].push(lib);
 };
 
-if ((KDCore.Version != null) && KDCore.Version >= KDCore._fileVersion) {
+if (KDCore.Version != null && KDCore.Version >= KDCore._fileVersion) {
   // * ПРОПУСКАЕМ ЗАГРУЗКУ, так как уже загруженна более новая
   console.log('XDev KDCore ' + KDCore._fileVersion + ' skipped by new or exists version');
   KDCore._requireLoadLibrary = false;
 } else {
   KDCore.Version = KDCore._fileVersion;
   KDCore.LIBS = KDCore.LIBS || {};
-  KDCore.register = function(library) {
-    return this.LIBS[library.name] = library;
+  KDCore.register = function (library) {
+    return (this.LIBS[library.name] = library);
   };
   window.KDCore = KDCore;
   // * ТРЕБУЕТСЯ ЗАГРУЗКА БИБЛИОТЕК
   KDCore._requireLoadLibrary = true;
 }
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
-  Array.prototype.delete = function() {
+KDCore.registerLibraryToLoad(function () {
+  Array.prototype.delete = function () {
     var L, a, ax, what;
     what = void 0;
     a = arguments;
@@ -1446,25 +3763,25 @@ KDCore.registerLibraryToLoad(function() {
     }
     return this;
   };
-  Array.prototype.max = function() {
+  Array.prototype.max = function () {
     return Math.max.apply(null, this);
   };
-  Array.prototype.min = function() {
+  Array.prototype.min = function () {
     return Math.min.apply(null, this);
   };
-  Array.prototype.sample = function() {
+  Array.prototype.sample = function () {
     if (this.length === 0) {
       return [];
     }
     return this[KDCore.SDK.rand(0, this.length - 1)];
   };
-  Array.prototype.first = function() {
+  Array.prototype.first = function () {
     return this[0];
   };
-  Array.prototype.last = function() {
+  Array.prototype.last = function () {
     return this[this.length - 1];
   };
-  Array.prototype.shuffle = function() {
+  Array.prototype.shuffle = function () {
     var k, n, v;
     n = this.length;
     while (n > 1) {
@@ -1475,21 +3792,21 @@ KDCore.registerLibraryToLoad(function() {
       this[n] = v;
     }
   };
-  Array.prototype.count = function() {
+  Array.prototype.count = function () {
     return this.length;
   };
-  Array.prototype.isEmpty = function() {
+  Array.prototype.isEmpty = function () {
     return this.length === 0;
   };
   // * Ищет элемент, у которого поле ID == id
-  Array.prototype.getById = function(id) {
+  Array.prototype.getById = function (id) {
     return this.getByField('id', id);
   };
   // * Ищет элемент, у которого поле FIELD (имя поля) == value
-  Array.prototype.getByField = function(field, value) {
+  Array.prototype.getByField = function (field, value) {
     var e;
     try {
-      return this.find(function(item) {
+      return this.find(function (item) {
         return item[field] === value;
       });
     } catch (error) {
@@ -1498,155 +3815,151 @@ KDCore.registerLibraryToLoad(function() {
       return null;
     }
   };
-  Object.defineProperty(Array.prototype, "delete", {
-    enumerable: false
+  Object.defineProperty(Array.prototype, 'delete', {
+    enumerable: false,
   });
-  Object.defineProperty(Array.prototype, "max", {
-    enumerable: false
+  Object.defineProperty(Array.prototype, 'max', {
+    enumerable: false,
   });
-  Object.defineProperty(Array.prototype, "min", {
-    enumerable: false
+  Object.defineProperty(Array.prototype, 'min', {
+    enumerable: false,
   });
-  Object.defineProperty(Array.prototype, "sample", {
-    enumerable: false
+  Object.defineProperty(Array.prototype, 'sample', {
+    enumerable: false,
   });
-  Object.defineProperty(Array.prototype, "first", {
-    enumerable: false
+  Object.defineProperty(Array.prototype, 'first', {
+    enumerable: false,
   });
-  Object.defineProperty(Array.prototype, "last", {
-    enumerable: false
+  Object.defineProperty(Array.prototype, 'last', {
+    enumerable: false,
   });
-  Object.defineProperty(Array.prototype, "shuffle", {
-    enumerable: false
+  Object.defineProperty(Array.prototype, 'shuffle', {
+    enumerable: false,
   });
-  Object.defineProperty(Array.prototype, "count", {
-    enumerable: false
+  Object.defineProperty(Array.prototype, 'count', {
+    enumerable: false,
   });
-  Object.defineProperty(Array.prototype, "isEmpty", {
-    enumerable: false
+  Object.defineProperty(Array.prototype, 'isEmpty', {
+    enumerable: false,
   });
-  Object.defineProperty(Array.prototype, "getById", {
-    enumerable: false
+  Object.defineProperty(Array.prototype, 'getById', {
+    enumerable: false,
   });
-  return Object.defineProperty(Array.prototype, "getByField", {
-    enumerable: false
+  return Object.defineProperty(Array.prototype, 'getByField', {
+    enumerable: false,
   });
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
-  Number.prototype.do = function(method) {
+KDCore.registerLibraryToLoad(function () {
+  Number.prototype.do = function (method) {
     return KDCore.SDK.times(this, method);
   };
-  Number.prototype.clamp = function(min, max) {
+  Number.prototype.clamp = function (min, max) {
     return Math.min(Math.max(this, min), max);
   };
-  return Number.prototype.any = function(number) {
-    return (number != null) && typeof number === 'number' && number > 0;
-  };
+  return (Number.prototype.any = function (number) {
+    return number != null && typeof number === 'number' && number > 0;
+  });
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
-  String.prototype.toCss = function() {
+KDCore.registerLibraryToLoad(function () {
+  String.prototype.toCss = function () {
     return KDCore.Color.FromHex(this).CSS;
   };
-  String.prototype.toCSS = function() {
+  String.prototype.toCSS = function () {
     return this.toCss();
   };
-  String.prototype.isEmpty = function() {
+  String.prototype.isEmpty = function () {
     return this.length === 0 || !this.trim();
   };
-  String.isNullOrEmpty = function(str) {
+  String.isNullOrEmpty = function (str) {
     if (str != null) {
       return str.toString().isEmpty();
     } else {
       return true;
     }
   };
-  String.any = function(str) {
+  String.any = function (str) {
     return !String.isNullOrEmpty(str);
   };
-  return String.prototype.replaceAll = function(search, replacement) {
+  return (String.prototype.replaceAll = function (search, replacement) {
     var target;
     target = this;
     return target.split(search).join(replacement);
-  };
+  });
 });
-
 
 KDCore.registerLibraryToLoad(() => {
-    /**
-     * Checks if the RPG Maker version is MV.
-     * @returns {boolean} True if the RPG Maker version is MV, otherwise false.
-     */
-    KDCore.isMV = () => Utils.RPGMAKER_NAME.includes("MV");
-    /**
-     * Checks if the RPG Maker version is MZ.
-     * @returns {boolean} True if the RPG Maker version is MZ, otherwise false.
-     */
-    KDCore.isMZ = () => !KDCore.isMV();
-    /**
-     * Logs warnings to the console.
-     * @param {...any[]} args - The arguments to log as warnings.
-     */
-    KDCore.warning = (...args) => {
-        args.forEach(element => {
-            console.warn(element);
-        });
-    };
-    /**
-     * Generates a random string of the specified length.
-     * @param {number} length - The length of the generated string.
-     * @returns {string} The generated string.
-     */
-    KDCore.makeId = (length) => {
-        let result = '';
-        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-        const charactersLength = characters.length;
-        for (let i = 0; i < length; i++) {
-            result += characters.charAt(Math.floor(Math.random() * charactersLength));
-        }
-        return result;
-    };
-    //@[DEPREACTED]
-    /**
-     * Generates a random string of the specified length.
-     * @deprecated Use makeId instead.
-     * @param {number} length - The length of the generated string.
-     * @returns {string} The generated string.
-     */
-    KDCore.makeid = (length) => KDCore.makeId(length);
+  /**
+   * Checks if the RPG Maker version is MV.
+   * @returns {boolean} True if the RPG Maker version is MV, otherwise false.
+   */
+  KDCore.isMV = () => Utils.RPGMAKER_NAME.includes('MV');
+  /**
+   * Checks if the RPG Maker version is MZ.
+   * @returns {boolean} True if the RPG Maker version is MZ, otherwise false.
+   */
+  KDCore.isMZ = () => !KDCore.isMV();
+  /**
+   * Logs warnings to the console.
+   * @param {...any[]} args - The arguments to log as warnings.
+   */
+  KDCore.warning = (...args) => {
+    args.forEach(element => {
+      console.warn(element);
+    });
+  };
+  /**
+   * Generates a random string of the specified length.
+   * @param {number} length - The length of the generated string.
+   * @returns {string} The generated string.
+   */
+  KDCore.makeId = length => {
+    let result = '';
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    const charactersLength = characters.length;
+    for (let i = 0; i < length; i++) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    return result;
+  };
+  //@[DEPREACTED]
+  /**
+   * Generates a random string of the specified length.
+   * @deprecated Use makeId instead.
+   * @param {number} length - The length of the generated string.
+   * @returns {string} The generated string.
+   */
+  KDCore.makeid = length => KDCore.makeId(length);
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var SDK;
   //?[DEPRECATED]
   // * SDK
   //------------------------------------------------------------------------------
-  SDK = function() {
+  SDK = function () {
     throw new Error('This is a static class');
   };
-  SDK.rand = function(min, max) {
+  SDK.rand = function (min, max) {
     return Math.round(Math.random() * (max - min)) + min;
   };
-  SDK.setConstantToObject = function(object, constantName, constantValue) {
+  SDK.setConstantToObject = function (object, constantName, constantValue) {
     object[constantName] = constantValue;
     if (typeof object[constantName] === 'object') {
       Object.freeze(object[constantName]);
     }
     Object.defineProperty(object, constantName, {
-      writable: false
+      writable: false,
     });
   };
-  SDK.convertBitmapToBase64Data = function(bitmap) {
+  SDK.convertBitmapToBase64Data = function (bitmap) {
     return bitmap._canvas.toDataURL('image/png');
   };
-  SDK.times = function(times, method) {
+  SDK.times = function (times, method) {
     var i, results;
     i = 0;
     results = [];
@@ -1656,7 +3969,7 @@ KDCore.registerLibraryToLoad(function() {
     }
     return results;
   };
-  SDK.toGlobalCoord = function(layer, coordSymbol = 'x') {
+  SDK.toGlobalCoord = function (layer, coordSymbol = 'x') {
     var node, t;
     t = layer[coordSymbol];
     node = layer;
@@ -1664,35 +3977,35 @@ KDCore.registerLibraryToLoad(function() {
       t -= node[coordSymbol];
       node = node.parent;
     }
-    return (t * -1) + layer[coordSymbol];
+    return t * -1 + layer[coordSymbol];
   };
-  SDK.canvasToLocalX = function(layer, x) {
+  SDK.canvasToLocalX = function (layer, x) {
     while (layer) {
       x -= layer.x;
       layer = layer.parent;
     }
     return x;
   };
-  SDK.canvasToLocalY = function(layer, y) {
+  SDK.canvasToLocalY = function (layer, y) {
     while (layer) {
       y -= layer.y;
       layer = layer.parent;
     }
     return y;
   };
-  SDK.isInt = function(n) {
+  SDK.isInt = function (n) {
     return Number(n) === n && n % 1 === 0;
   };
-  SDK.isFloat = function(n) {
+  SDK.isFloat = function (n) {
     return Number(n) === n && n % 1 !== 0;
   };
-  SDK.checkSwitch = function(switchValue) {
+  SDK.checkSwitch = function (switchValue) {
     if (switchValue === 'A' || switchValue === 'B' || switchValue === 'C' || switchValue === 'D') {
       return true;
     }
     return false;
   };
-  SDK.toNumber = function(string, none = 0) {
+  SDK.toNumber = function (string, none = 0) {
     var number;
     if (string == null) {
       return none;
@@ -1703,23 +4016,22 @@ KDCore.registerLibraryToLoad(function() {
     }
     return number;
   };
-  SDK.isString = function(value) {
-    return typeof value === "string";
+  SDK.isString = function (value) {
+    return typeof value === 'string';
   };
-  SDK.isArray = function(value) {
+  SDK.isArray = function (value) {
     return Array.isArray(value);
   };
   //@[EXTEND]
-  return KDCore.SDK = SDK;
+  return (KDCore.SDK = SDK);
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var __alias_Bitmap_blt_kdCore, __alias_Bitmap_fillAll_kdCore;
   //@[ALIAS]
   __alias_Bitmap_fillAll_kdCore = Bitmap.prototype.fillAll;
-  Bitmap.prototype.fillAll = function(color) {
+  Bitmap.prototype.fillAll = function (color) {
     if (color instanceof KDCore.Color) {
       return this.fillRect(0, 0, this.width, this.height, color.CSS);
     } else {
@@ -1728,7 +4040,7 @@ KDCore.registerLibraryToLoad(function() {
   };
   //@[ALIAS]
   __alias_Bitmap_blt_kdCore = Bitmap.prototype.blt;
-  Bitmap.prototype.blt = function(source, sx, sy, sw, sh, dx, dy, dw, dh) {
+  Bitmap.prototype.blt = function (source, sx, sy, sw, sh, dx, dy, dw, dh) {
     if (this._needModBltDWH > 0) {
       dh = dw = this._needModBltDWH;
       __alias_Bitmap_blt_kdCore.call(this, source, sx, sy, sw, sh, dx, dy, dw, dh);
@@ -1737,7 +4049,7 @@ KDCore.registerLibraryToLoad(function() {
       __alias_Bitmap_blt_kdCore.call(this, ...arguments);
     }
   };
-  Bitmap.prototype.drawIcon = function(x, y, icon, size = 32, noSmoth = false) {
+  Bitmap.prototype.drawIcon = function (x, y, icon, size = 32, noSmoth = false) {
     var bitmap;
     bitmap = null;
     if (icon instanceof Bitmap) {
@@ -1749,7 +4061,7 @@ KDCore.registerLibraryToLoad(function() {
     this.drawOnMe(bitmap, x, y, size, size);
     this._context.imageSmoothingEnabled = true;
   };
-  Bitmap.prototype.drawOnMe = function(bitmap, x = 0, y = 0, sw = 0, sh = 0) {
+  Bitmap.prototype.drawOnMe = function (bitmap, x = 0, y = 0, sw = 0, sh = 0) {
     if (sw <= 0) {
       sw = bitmap.width;
     }
@@ -1758,87 +4070,84 @@ KDCore.registerLibraryToLoad(function() {
     }
     this.blt(bitmap, 0, 0, bitmap.width, bitmap.height, x, y, sw, sh);
   };
-  Bitmap.prototype.drawInMe = function(bitmap) {
+  Bitmap.prototype.drawInMe = function (bitmap) {
     return Bitmap.prototype.drawOnMe(bitmap, 0, 0, this.width, this.height);
   };
-  return Bitmap.prototype.drawTextFull = function(text, position = 'center') {
+  return (Bitmap.prototype.drawTextFull = function (text, position = 'center') {
     return this.drawText(text, 0, 0, this.width, this.height, position);
-  };
+  });
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   //?[NEW]
-  return DataManager.pkdRegisterNUIFile = function(folder, name) {
+  return (DataManager.pkdRegisterNUIFile = function (folder, name) {
     var _name, src;
-    _name = "$" + folder + "_" + name;
-    src = folder + "/" + name + ".json";
+    _name = '$' + folder + '_' + name;
+    src = folder + '/' + name + '.json';
     return DataManager._databaseFiles.push({
       name: _name,
-      src: src
+      src: src,
     });
-  };
+  });
 });
-
 
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   KDCore.EasingFuncs = KDCore.EasingFuncs || {};
-  return (function() {
+  return (function () {
     var _;
     _ = KDCore.EasingFuncs;
-    _.linear = function(t, b, c, d) {
-      return c * t / d + b;
+    _.linear = function (t, b, c, d) {
+      return (c * t) / d + b;
     };
-    _.easeInQuad = function(t, b, c, d) {
+    _.easeInQuad = function (t, b, c, d) {
       return c * (t /= d) * t + b;
     };
-    _.easeOutQuad = function(t, b, c, d) {
+    _.easeOutQuad = function (t, b, c, d) {
       return -c * (t /= d) * (t - 2) + b;
     };
-    _.easeInOutQuad = function(t, b, c, d) {
+    _.easeInOutQuad = function (t, b, c, d) {
       if ((t /= d / 2) < 1) {
-        return c / 2 * t * t + b;
+        return (c / 2) * t * t + b;
       } else {
-        return -c / 2 * ((--t) * (t - 2) - 1) + b;
+        return (-c / 2) * (--t * (t - 2) - 1) + b;
       }
     };
-    _.easeInCubic = function(t, b, c, d) {
+    _.easeInCubic = function (t, b, c, d) {
       return c * (t /= d) * t * t + b;
     };
-    _.easeOutCubic = function(t, b, c, d) {
+    _.easeOutCubic = function (t, b, c, d) {
       return c * ((t = t / d - 1) * t * t + 1) + b;
     };
-    return _.easeInOutCubic = function(t, b, c, d) {
+    return (_.easeInOutCubic = function (t, b, c, d) {
       if ((t /= d / 2) < 1) {
-        return c / 2 * t * t * t + b;
+        return (c / 2) * t * t * t + b;
       } else {
-        return c / 2 * ((t -= 2) * t * t + 2) + b;
+        return (c / 2) * ((t -= 2) * t * t + 2) + b;
       }
-    };
+    });
   })();
 });
-
 
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Game_CharacterBase.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var _;
   //@[DEFINES]
   _ = Game_CharacterBase.prototype;
   // * Нахожусь ли Я в точке по диагонале (рядом), относительно char
-  _.kdInDiagonalPointRelativeTo = function(char) {
+  _.kdInDiagonalPointRelativeTo = function (char) {
     var e, x, y;
     try {
       if (char == null) {
         return false;
       }
-      ({x, y} = char);
-      if (x === this.x - 1 && ((y === this.y - 1) || (y === this.y + 1))) {
+      ({ x, y } = char);
+      if (x === this.x - 1 && (y === this.y - 1 || y === this.y + 1)) {
         return true; // * left up or down
       }
       if (x === this.x + 1 && (y === this.y - 1 || y === this.y + 1)) {
@@ -1855,44 +4164,42 @@ KDCore.registerLibraryToLoad(function() {
 // ■ END Game_CharacterBase.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   // * В MZ нету данной функции, а она часто используется в моих плагинах
   if (!KDCore.isMZ()) {
     return;
   }
   //?[NEW] (from MV)
-  return ImageManager.loadEmptyBitmap = function() {
+  return (ImageManager.loadEmptyBitmap = function () {
     if (this._emptyBitmap != null) {
       return this._emptyBitmap;
     } else {
       return new Bitmap();
     }
-  };
+  });
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var _input_onKeyDown, _input_onKeyUp, i, j, k, l;
   Input.KeyMapperPKD = {};
-//Numbers
+  //Numbers
   for (i = j = 48; j <= 57; i = ++j) {
     Input.KeyMapperPKD[i] = String.fromCharCode(i);
   }
-//Letters Upper
+  //Letters Upper
   for (i = k = 65; k <= 90; i = ++k) {
     Input.KeyMapperPKD[i] = String.fromCharCode(i).toLowerCase();
   }
-//Letters Lower (for key code events)
+  //Letters Lower (for key code events)
   for (i = l = 97; l <= 122; i = ++l) {
     Input.KeyMapperPKD[i] = String.fromCharCode(i).toLowerCase();
   }
-  
+
   //@[ALIAS]
   _input_onKeyDown = Input._onKeyDown;
-  Input._onKeyDown = function(event) {
+  Input._onKeyDown = function (event) {
     _input_onKeyDown.call(this, event);
     if (Input.keyMapper[event.keyCode]) {
       return;
@@ -1901,7 +4208,7 @@ KDCore.registerLibraryToLoad(function() {
   };
   //@[ALIAS]
   _input_onKeyUp = Input._onKeyUp;
-  Input._onKeyUp = function(event) {
+  Input._onKeyUp = function (event) {
     _input_onKeyUp.call(this, event);
     if (Input.keyMapper[event.keyCode]) {
       return;
@@ -1909,27 +4216,26 @@ KDCore.registerLibraryToLoad(function() {
     Input._setStateWithMapperPKD(event.keyCode, false);
   };
   //?NEW
-  Input._setStateWithMapperPKD = function(keyCode, state = true) {
+  Input._setStateWithMapperPKD = function (keyCode, state = true) {
     var symbol;
     symbol = Input.KeyMapperPKD[keyCode];
     if (symbol != null) {
-      return this._currentState[symbol] = state;
+      return (this._currentState[symbol] = state);
     }
   };
   //?NEW
-  Input.isCancel = function() {
+  Input.isCancel = function () {
     return Input.isTriggered('cancel') || TouchInput.isCancelled();
   };
   //?NEW
-  return TouchInput.toPoint = function() {
+  return (TouchInput.toPoint = function () {
     return new KDCore.Point(TouchInput.x, TouchInput.y);
-  };
+  });
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
-  PluginManager.getPluginParametersByRoot = function(rootName) {
+KDCore.registerLibraryToLoad(function () {
+  PluginManager.getPluginParametersByRoot = function (rootName) {
     var pluginParameters, property;
     for (property in this._parameters) {
       if (this._parameters.hasOwnProperty(property)) {
@@ -1941,41 +4247,40 @@ KDCore.registerLibraryToLoad(function() {
     }
     return PluginManager.parameters(rootName);
   };
-  return PluginManager.isPluginParametersContentKey = function(pluginParameters, key) {
+  return (PluginManager.isPluginParametersContentKey = function (pluginParameters, key) {
     return pluginParameters[key] != null;
-  };
+  });
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var ___Sprite_alias_Move_KDCORE_2;
-  Sprite.prototype.moveToCenter = function(dx = 0, dy = 0) {
+  Sprite.prototype.moveToCenter = function (dx = 0, dy = 0) {
     return this.move(-this.bitmap.width / 2 + dx, -this.bitmap.height / 2 + dy);
   };
-  Sprite.prototype.setStaticAnchor = function(floatX = 1, floatY = 1) {
+  Sprite.prototype.setStaticAnchor = function (floatX = 1, floatY = 1) {
     this.x -= Math.round(this.width * floatX);
     this.y -= Math.round(this.height * floatY);
   };
-  Sprite.prototype.moveToParentCenter = function() {
+  Sprite.prototype.moveToParentCenter = function () {
     if (!this.parent) {
       return;
     }
     return this.move(this.parent.width / 2, this.parent.height / 2);
   };
   ___Sprite_alias_Move_KDCORE_2 = Sprite.prototype.move;
-  Sprite.prototype.move = function(x, y) {
+  Sprite.prototype.move = function (x, y) {
     if (x instanceof Array) {
       return ___Sprite_alias_Move_KDCORE_2.call(this, x[0], x[1]);
-    } else if (x instanceof KDCore.Point || ((x != null ? x.x : void 0) != null)) {
+    } else if (x instanceof KDCore.Point || (x != null ? x.x : void 0) != null) {
       return ___Sprite_alias_Move_KDCORE_2.call(this, x.x, x.y);
-    } else if ((x != null) && (x._x != null)) {
+    } else if (x != null && x._x != null) {
       return ___Sprite_alias_Move_KDCORE_2.call(this, x._x, x._y);
     } else {
       return ___Sprite_alias_Move_KDCORE_2.call(this, x, y);
     }
   };
-  Sprite.prototype.isContainsPoint = function(point) {
+  Sprite.prototype.isContainsPoint = function (point) {
     var rect, rx, ry;
     if (this.width === 0 || this.height === 0) {
       return false;
@@ -1986,7 +4291,7 @@ KDCore.registerLibraryToLoad(function() {
     return rect.contains(point.x, point.y);
   };
   // * Возвращает Rect с учётом Scale и Anchor спрайта
-  Sprite.prototype._getProperFullRect = function(rx, ry) {
+  Sprite.prototype._getProperFullRect = function (rx, ry) {
     var height, width, x, y;
     width = this.width * Math.abs(this.scale.x);
     height = this.height * Math.abs(this.scale.y);
@@ -2000,36 +4305,34 @@ KDCore.registerLibraryToLoad(function() {
     }
     return new PIXI.Rectangle(x, y, width, height);
   };
-  Sprite.prototype.fillAll = function(color) {
+  Sprite.prototype.fillAll = function (color) {
     if (color != null) {
       return this.bitmap.fillAll(color);
     } else {
       return this.fillAll(KDCore.Color.WHITE);
     }
   };
-  return Sprite.prototype.removeFromParent = function() {
+  return (Sprite.prototype.removeFromParent = function () {
     if (this.parent != null) {
       return this.parent.removeChild(this);
     }
-  };
+  });
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
-  return TouchInput.toMapPoint = function() {
+KDCore.registerLibraryToLoad(function () {
+  return (TouchInput.toMapPoint = function () {
     return this.toPoint().convertToMap();
-  };
+  });
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   KDCore.Utils = KDCore.Utils || {};
-  return (function() {
+  return (function () {
     var _;
     _ = KDCore.Utils;
-    _.getJDataById = function(id, source) {
+    _.getJDataById = function (id, source) {
       var d, j, len;
       for (j = 0, len = source.length; j < len; j++) {
         d = source[j];
@@ -2039,16 +4342,16 @@ KDCore.registerLibraryToLoad(function() {
       }
       return null;
     };
-    _.hasMeta = function(symbol, obj) {
-      return (obj != null) && (obj.meta != null) && (obj.meta[symbol] != null);
+    _.hasMeta = function (symbol, obj) {
+      return obj != null && obj.meta != null && obj.meta[symbol] != null;
     };
-    _.getValueFromMeta = function(symbol, obj) {
+    _.getValueFromMeta = function (symbol, obj) {
       if (!_.hasMeta(symbol, obj)) {
         return null;
       }
       return obj.meta[symbol];
     };
-    _.getNumberFromMeta = function(symbol, obj) {
+    _.getNumberFromMeta = function (symbol, obj) {
       var value;
       if (!_.hasMeta(symbol, obj)) {
         return null;
@@ -2060,27 +4363,27 @@ KDCore.registerLibraryToLoad(function() {
       }
       return value;
     };
-    _.isSceneMap = function() {
+    _.isSceneMap = function () {
       try {
         return !SceneManager.isSceneChanging() && SceneManager._scene instanceof Scene_Map;
       } catch (error) {
         return false;
       }
     };
-    _.isMapScene = function() {
+    _.isMapScene = function () {
       return this.isSceneMap();
     };
-    _.isSceneBattle = function() {
+    _.isSceneBattle = function () {
       try {
         return !SceneManager.isSceneChanging() && SceneManager._scene instanceof Scene_Battle;
       } catch (error) {
         return false;
       }
     };
-    _.isBattleScene = function() {
+    _.isBattleScene = function () {
       return this.isSceneBattle();
     };
-    _.getEventCommentValue = function(commentCode, list) {
+    _.getEventCommentValue = function (commentCode, list) {
       var comment, e, i, item;
       try {
         if (list && list.length > 1) {
@@ -2104,7 +4407,7 @@ KDCore.registerLibraryToLoad(function() {
       }
       return null;
     };
-    _.getEventCommentValueArray = function(commentCode, list) {
+    _.getEventCommentValueArray = function (commentCode, list) {
       var comment, comments, e, i, item;
       try {
         comments = [];
@@ -2129,10 +4432,10 @@ KDCore.registerLibraryToLoad(function() {
       }
       return comments;
     };
-    _.getPositionPointFromJSON = function(jsonSettings) {
+    _.getPositionPointFromJSON = function (jsonSettings) {
       return _.convertPositionPointFromJSON(jsonSettings.position);
     };
-    _.convertPositionPointFromJSON = function(position) {
+    _.convertPositionPointFromJSON = function (position) {
       var e, x, y;
       try {
         x = position[0];
@@ -2150,13 +4453,13 @@ KDCore.registerLibraryToLoad(function() {
         return KDCore.Point.Empty;
       }
     };
-    _.jsonPos = function(jsonPosition) {
+    _.jsonPos = function (jsonPosition) {
       return _.convertPositionPointFromJSON(jsonPosition);
     };
-    _.jsonPosXY = function(jsonPosition) {
+    _.jsonPosXY = function (jsonPosition) {
       var e, x, y;
       try {
-        ({x, y} = jsonPosition);
+        ({ x, y } = jsonPosition);
         return new KDCore.Point(eval(x), eval(y));
       } catch (error) {
         e = error;
@@ -2164,34 +4467,34 @@ KDCore.registerLibraryToLoad(function() {
         return KDCore.Point.Empty;
       }
     };
-    _.getVar = function(id) {
+    _.getVar = function (id) {
       return $gameVariables.value(id);
     };
-    _.setVar = function(id, value) {
+    _.setVar = function (id, value) {
       return $gameVariables.setValue(id, value);
     };
-    _.addToVar = function(id, value) {
+    _.addToVar = function (id, value) {
       var prevVal;
       prevVal = _.getVar(id);
       return _.setVar(id, prevVal + value);
     };
-    _.playSE = function(seFileName, pitch = 100, volume = 100) {
+    _.playSE = function (seFileName, pitch = 100, volume = 100) {
       var sound;
       if (seFileName == null) {
         return;
       }
-      if (seFileName === "") {
+      if (seFileName === '') {
         return;
       }
       sound = {
         name: seFileName,
         pan: 0,
         pitch: pitch,
-        volume: volume
+        volume: volume,
       };
       AudioManager.playStaticSe(sound);
     };
-    _.getItemTypeId = function(item) {
+    _.getItemTypeId = function (item) {
       if (DataManager.isWeapon(item)) {
         return 1;
       } else if (DataManager.isArmor(item)) {
@@ -2199,13 +4502,13 @@ KDCore.registerLibraryToLoad(function() {
       }
       return 0;
     };
-    _.getItemByType = function(itemId, typeId) {
+    _.getItemByType = function (itemId, typeId) {
       var data, e;
       try {
-        if ((typeId != null) && !isFinite(typeId) && KDCore.SDK.isString(typeId) && String.any(typeId)) {
-          if (typeId[0] === "w") {
+        if (typeId != null && !isFinite(typeId) && KDCore.SDK.isString(typeId) && String.any(typeId)) {
+          if (typeId[0] === 'w') {
             typeId = 1;
-          } else if (typeId[0] === "a") {
+          } else if (typeId[0] === 'a') {
             typeId = 2;
           } else {
             typeId = 0;
@@ -2219,8 +4522,8 @@ KDCore.registerLibraryToLoad(function() {
         return null;
       }
     };
-    _.loadFont = function(name) {
-      if (typeof FontManager === "undefined" || FontManager === null) {
+    _.loadFont = function (name) {
+      if (typeof FontManager === 'undefined' || FontManager === null) {
         return;
       }
       if (String.isNullOrEmpty(name)) {
@@ -2229,9 +4532,9 @@ KDCore.registerLibraryToLoad(function() {
       if (FontManager._states[name] != null) {
         return;
       }
-      FontManager.load(name, name + ".ttf");
+      FontManager.load(name, name + '.ttf');
     };
-    _.convertTimeShort = function(seconds) {
+    _.convertTimeShort = function (seconds) {
       var e;
       try {
         if (seconds > 59) {
@@ -2245,9 +4548,9 @@ KDCore.registerLibraryToLoad(function() {
         return seconds;
       }
     };
-    _.isPointInScreen = function(point, margin = 10) {
+    _.isPointInScreen = function (point, margin = 10) {
       var maxH, maxW, screenMargin, x, y;
-      ({x, y} = point);
+      ({ x, y } = point);
       maxW = Graphics.width;
       maxH = Graphics.height;
       // * Граница от краёв экрана
@@ -2258,10 +4561,10 @@ KDCore.registerLibraryToLoad(function() {
       if (y < screenMargin) {
         return false;
       }
-      if (x > (maxW - screenMargin)) {
+      if (x > maxW - screenMargin) {
         return false;
       }
-      if (y > (maxH - screenMargin)) {
+      if (y > maxH - screenMargin) {
         return false;
       }
       return true;
@@ -2269,16 +4572,16 @@ KDCore.registerLibraryToLoad(function() {
     // * Ассинхронная загрузка изображения, возвращает bitmap, когда загружен
     // * Пример использования loadImageAsync(a, b).then(метод)
     // в метод будет передан bitmap первым аргументом
-    _.loadImageAsync = async function(folder, filename) {
+    _.loadImageAsync = async function (folder, filename) {
       var promise;
-      promise = new Promise(function(resolve, reject) {
+      promise = new Promise(function (resolve, reject) {
         var b;
-        b = ImageManager.loadBitmap("img/" + folder + "/", filename);
-        return b.addLoadListener(function() {
+        b = ImageManager.loadBitmap('img/' + folder + '/', filename);
+        return b.addLoadListener(function () {
           return resolve(b);
         });
       });
-      return (await promise);
+      return await promise;
     };
     // * Преобразовать расширенное значение
     // * Значение может быть X -> X
@@ -2288,22 +4591,23 @@ KDCore.registerLibraryToLoad(function() {
     // * "X|V" -> из переменной X
     // * [Y] -> случайное число из массива (рекурсивно)
     //@[2.8.1] since
-    _.getEValue = function(value) {
+    _.getEValue = function (value) {
       var e, items, randomValue, variableId;
       try {
         if (value == null) {
           return null;
         }
         if (KDCore.SDK.isString(value)) {
-          if (isFinite(value)) { // * Число представленно строкой
+          if (isFinite(value)) {
+            // * Число представленно строкой
             return Number(value);
           }
           // * Массив представлен строкой (может быть без квадратных скобок)
-          if (value.contains(',') || (value.contains("[") && value.contains("]"))) {
-            value = value.replace("[", "");
-            value = value.replace("]", "");
+          if (value.contains(',') || (value.contains('[') && value.contains(']'))) {
+            value = value.replace('[', '');
+            value = value.replace(']', '');
             // * Преобразуем в число или строку (например если extended |V)
-            items = value.split(",").map(function(item) {
+            items = value.split(',').map(function (item) {
               var itemT;
               itemT = item.trim();
               if (isFinite(itemT)) {
@@ -2315,7 +4619,7 @@ KDCore.registerLibraryToLoad(function() {
             // * Вызываем снова эту функцию, но уже с массивом
             return KDCore.Utils.getEValue(items);
           }
-          if (value.contains("|V")) {
+          if (value.contains('|V')) {
             variableId = parseInt(value);
             return $gameVariables.value(variableId);
           }
@@ -2333,7 +4637,7 @@ KDCore.registerLibraryToLoad(function() {
       }
     };
     //@[2.8.2] since
-    _.isChanceIsGood = function(chance) {
+    _.isChanceIsGood = function (chance) {
       var e;
       try {
         if (chance > 1) {
@@ -2349,13 +4653,13 @@ KDCore.registerLibraryToLoad(function() {
     //@[2.8.2] since
     //KEY:w:3:1:50 , KEY:i:10:2:1|V
     //OUTPUT: [GameItem, COUNT]
-    _.parseItemFromConditionStr = function(conditionLine) {
+    _.parseItemFromConditionStr = function (conditionLine) {
       var amount, e, itemChance, itemId, parts, typeId;
       try {
-        if (!conditionLine.contains(":")) {
+        if (!conditionLine.contains(':')) {
           return null;
         }
-        parts = conditionLine.split(":");
+        parts = conditionLine.split(':');
         typeId = parts[1];
         itemId = KDCore.Utils.getEValue(parts[2]);
         amount = KDCore.Utils.getEValue(parts[3]);
@@ -2385,10 +4689,10 @@ KDCore.registerLibraryToLoad(function() {
       }
     };
     //@[3.2.1] since
-    _.isValidCE = function(commonEventId) {
+    _.isValidCE = function (commonEventId) {
       var e;
       try {
-        return commonEventId > 0 && ($dataCommonEvents[commonEventId] != null);
+        return commonEventId > 0 && $dataCommonEvents[commonEventId] != null;
       } catch (error) {
         e = error;
         KDCore.warning(e);
@@ -2396,7 +4700,7 @@ KDCore.registerLibraryToLoad(function() {
       }
     };
     //@[3.2.1] since
-    _.startCE = function(commonEventId) {
+    _.startCE = function (commonEventId) {
       var e;
       try {
         if (this.isValidCE(commonEventId)) {
@@ -2408,7 +4712,7 @@ KDCore.registerLibraryToLoad(function() {
       }
     };
     //@[3.2.1] since
-    _.checkSwitch = function(value) {
+    _.checkSwitch = function (value) {
       if (value == null) {
         return false;
       }
@@ -2420,13 +4724,13 @@ KDCore.registerLibraryToLoad(function() {
     //@[3.2.1] since
     // * Вызвать с задержкой в time миллисекунд
     // * Не забываем про bind
-    _.callDelayed = function(method, time = 1) {
+    _.callDelayed = function (method, time = 1) {
       var e;
       try {
         if (method == null) {
           return;
         }
-        setTimeout((function() {
+        setTimeout(function () {
           var e;
           try {
             return method();
@@ -2434,7 +4738,7 @@ KDCore.registerLibraryToLoad(function() {
             e = error;
             return KDCore.warning(e);
           }
-        }), time);
+        }, time);
       } catch (error) {
         e = error;
         KDCore.warning(e);
@@ -2442,11 +4746,11 @@ KDCore.registerLibraryToLoad(function() {
     };
     //@[3.2.1] since
     //<meta:1,2,3,4> -> [1,2,3,4]
-    _.getArrayOfNumbersFromMeta = function(symbol, obj) {
+    _.getArrayOfNumbersFromMeta = function (symbol, obj) {
       var e, values;
       try {
         values = this.getArrayOfValuesFromMeta(symbol, obj);
-        return values.map(function(v) {
+        return values.map(function (v) {
           return Number(v);
         });
       } catch (error) {
@@ -2458,7 +4762,7 @@ KDCore.registerLibraryToLoad(function() {
     //@[3.2.1] since
     //<meta:a,b,c> -> ["a", "b", "c"]
     //<meta:a> -> ["a"]
-    _.getArrayOfValuesFromMeta = function(symbol, obj) {
+    _.getArrayOfValuesFromMeta = function (symbol, obj) {
       var e, items, values;
       try {
         values = this.getValueFromMeta(symbol, obj);
@@ -2482,21 +4786,21 @@ KDCore.registerLibraryToLoad(function() {
     //<meta:value2>
     //...
     // -> [value1,value2,...]
-    _.getArrayOfValuesOfSameMeta = function(symbol, obj) {
+    _.getArrayOfValuesOfSameMeta = function (symbol, obj) {
       var e, j, len, line, lines, result;
       try {
         if (!this.hasMeta(symbol, obj)) {
           return [];
         }
-        lines = obj.note.split("\n").filter(function(l) {
+        lines = obj.note.split('\n').filter(function (l) {
           return l.contains(symbol);
         });
         result = [];
         for (j = 0, len = lines.length; j < len; j++) {
           line = lines[j];
           try {
-            line = line.replace("<" + symbol + ":", "");
-            line = line.replace(">", "");
+            line = line.replace('<' + symbol + ':', '');
+            line = line.replace('>', '');
             result.push(line);
           } catch (error) {
             e = error;
@@ -2511,13 +4815,13 @@ KDCore.registerLibraryToLoad(function() {
       return [];
     };
     //@[3.2.7] since
-    _.getIndexIn2DArrayByIJ = function(row, col, cols) {
+    _.getIndexIn2DArrayByIJ = function (row, col, cols) {
       return row * cols + col;
     };
     //@[3.2.7] since
     // * row - строка
     // * col - столбец
-    _.getIJByIndexIn2DArray = function(index, cols) {
+    _.getIJByIndexIn2DArray = function (index, cols) {
       var col, e, row;
       try {
         row = Math.floor(index / cols);
@@ -2530,7 +4834,7 @@ KDCore.registerLibraryToLoad(function() {
       }
     };
     //@[3.2.7] since
-    _.isSwitchIsTRUE = function(switchId) {
+    _.isSwitchIsTRUE = function (switchId) {
       var e;
       if (switchId == null) {
         return true;
@@ -2547,7 +4851,7 @@ KDCore.registerLibraryToLoad(function() {
       return false;
     };
     //@[3.5] since
-    _.convertBindingValue = function(sourceObj, bindingValue, element = null) {
+    _.convertBindingValue = function (sourceObj, bindingValue, element = null) {
       var e;
       try {
         return KDCore.UI.Builder._convertBindingValue(...arguments);
@@ -2558,7 +4862,7 @@ KDCore.registerLibraryToLoad(function() {
       return null;
     };
     //@[3.5] since
-    _.getRealSpriteSize = function(forField = 'x', sprite = null) {
+    _.getRealSpriteSize = function (forField = 'x', sprite = null) {
       var e, h, w;
       try {
         if (sprite == null) {
@@ -2586,7 +4890,7 @@ KDCore.registerLibraryToLoad(function() {
       return 0;
     };
     //@[3.5] since
-    _.string2hex = function(string) {
+    _.string2hex = function (string) {
       var e;
       try {
         if (typeof string === 'string' && string[0] === '#') {
@@ -2600,7 +4904,7 @@ KDCore.registerLibraryToLoad(function() {
       return 0xffffff;
     };
     //@[3.5] since
-    _.convertDP = function(value = 0, isHalf = false) {
+    _.convertDP = function (value = 0, isHalf = false) {
       var d, e, mod, modX, modY;
       try {
         if (Graphics.width === 816 && Graphics.height === 624) {
@@ -2619,7 +4923,7 @@ KDCore.registerLibraryToLoad(function() {
             mod += d / 2;
           } else if (mod > 1) {
             d = mod - 1;
-            mod = 1 + (d / 2);
+            mod = 1 + d / 2;
           }
         }
         return Math.round(value * mod);
@@ -2630,27 +4934,27 @@ KDCore.registerLibraryToLoad(function() {
       return 0;
     };
     //@[3.5.6] since
-    _.getValueWithDP = function(value) {
+    _.getValueWithDP = function (value) {
       var dpValue, e, negative, r, result, resultValue;
       try {
-        if (typeof value === "string") {
+        if (typeof value === 'string') {
           value = value.trim();
           // * Replace all HDP and DP
-          if (value.contains("hdp") || value.contains("dp")) {
+          if (value.contains('hdp') || value.contains('dp')) {
             if (value[0] === '-') {
-              value = value.replace("-", "");
+              value = value.replace('-', '');
               negative = true;
             } else {
               negative = false;
             }
-            if (value.contains("hdp")) {
-              r = new RegExp("(\\d+)hdp", "g");
+            if (value.contains('hdp')) {
+              r = new RegExp('(\\d+)hdp', 'g');
               result = r.exec(value);
               dpValue = Number(result[1]);
               resultValue = KDCore.Utils.convertDP(dpValue, true);
               value = value.replace(/(\d+)hdp/, resultValue);
-            } else if (value.contains("dp")) {
-              r = new RegExp("(\\d+)dp", "g");
+            } else if (value.contains('dp')) {
+              r = new RegExp('(\\d+)dp', 'g');
               result = r.exec(value);
               dpValue = Number(result[1]);
               resultValue = KDCore.Utils.convertDP(dpValue, false);
@@ -2671,7 +4975,7 @@ KDCore.registerLibraryToLoad(function() {
     };
     //@[2.9.7] since
     // * Shrink number 100000 to "100k" and ect, returns STRING
-    _.formatNumberToK = function(num) {
+    _.formatNumberToK = function (num) {
       var e;
       try {
         if (num >= 1000000000) {
@@ -2693,19 +4997,18 @@ KDCore.registerLibraryToLoad(function() {
   })();
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
-  return Window_Base.prototype.drawFaceWithCustomSize = function(faceName, faceIndex, x, y, finalSize) {
+KDCore.registerLibraryToLoad(function () {
+  return (Window_Base.prototype.drawFaceWithCustomSize = function (faceName, faceIndex, x, y, finalSize) {
     this.contents._needModBltDWH = finalSize;
     this.drawFace(faceName, faceIndex, x, y);
-  };
+  });
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
-  return (function() {    //╒═════════════════════════════════════════════════════════════════════════╛
+KDCore.registerLibraryToLoad(function () {
+  return (function () {
+    //╒═════════════════════════════════════════════════════════════════════════╛
     // ■ Window_Selectable.coffee
     //╒═════════════════════════════════════════════════════════════════════════╛
     //---------------------------------------------------------------------------
@@ -2714,7 +5017,7 @@ KDCore.registerLibraryToLoad(function() {
     _ = Window_Selectable.prototype;
     //@[ALIAS]
     ALIAS__select = _.select;
-    _.select = function(index) {
+    _.select = function (index) {
       var e;
       ALIAS__select.call(this, ...arguments);
       try {
@@ -2724,7 +5027,7 @@ KDCore.registerLibraryToLoad(function() {
         return KDCore.warning(e);
       }
     };
-    _._pOnSelectionChanged = function(newIndex) {
+    _._pOnSelectionChanged = function (newIndex) {
       var e;
       try {
         if (this._pkdLastSelectedIndex == null) {
@@ -2741,7 +5044,7 @@ KDCore.registerLibraryToLoad(function() {
         return KDCore.warning(e);
       }
     };
-    _.safeSelect = function(index = 0) {
+    _.safeSelect = function (index = 0) {
       var e;
       try {
         if (this.maxItems() > index) {
@@ -2754,35 +5057,35 @@ KDCore.registerLibraryToLoad(function() {
         return KDCore.warning(e);
       }
     };
-    
+
     // * Called only when new (different) index is selected
-    _.pOnSelectionChanged = function() {};
+    _.pOnSelectionChanged = function () {};
   })();
 });
 
 // ■ END Window_Selectable.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
-  return (function() {    // * Input Extension: KDGamepad
+KDCore.registerLibraryToLoad(function () {
+  return (function () {
+    // * Input Extension: KDGamepad
     //------------------------------------------------------------------------------
     // * Поддержка расширенного управления через геймпад (свой модуль)
     var ALIAS___updateGamepadState, _;
     //@[DEFINES]
     _ = Input;
     // * Активировать работу модуля KDGamepad
-    _.activateExtendedKDGamepad = function() {
-      return _._kdIsGamepadExtended = true;
+    _.activateExtendedKDGamepad = function () {
+      return (_._kdIsGamepadExtended = true);
     };
     //@[ALIAS]
     ALIAS___updateGamepadState = _._updateGamepadState;
-    _._updateGamepadState = function(gamepad) {
+    _._updateGamepadState = function (gamepad) {
       if (Input._kdIsGamepadExtended === true) {
         KDGamepad.update();
       }
-      if ((typeof $gameTemp !== "undefined" && $gameTemp !== null ? $gameTemp.__kdgpStopDefaultGamepad : void 0) === true) {
+      if ((typeof $gameTemp !== 'undefined' && $gameTemp !== null ? $gameTemp.__kdgpStopDefaultGamepad : void 0) === true) {
         return;
       }
       // * Режим перемещения без DPad
@@ -2796,10 +5099,10 @@ KDCore.registerLibraryToLoad(function() {
       }
       ALIAS___updateGamepadState.call(this, gamepad);
     };
-    window.KDGamepad = function() {
-      return new Error("This is static class");
+    window.KDGamepad = function () {
+      return new Error('This is static class');
     };
-    window.addEventListener("gamepadconnected", function(event) {
+    window.addEventListener('gamepadconnected', function (event) {
       var e;
       try {
         return KDGamepad.refresh();
@@ -2813,13 +5116,13 @@ KDCore.registerLibraryToLoad(function() {
         return KDGamepad.stop();
       }
     });
-    window.addEventListener("gamepaddisconnected", function(event) {
+    window.addEventListener('gamepaddisconnected', function (event) {
       var e;
       if (!KDGamepad.isExists()) {
         return;
       }
       try {
-        if ((event.gamepad != null) && event.gamepad === KDGamepad.gamepad) {
+        if (event.gamepad != null && event.gamepad === KDGamepad.gamepad) {
           return KDGamepad.stop();
         }
       } catch (error) {
@@ -2828,21 +5131,21 @@ KDCore.registerLibraryToLoad(function() {
         return KDGamepad.stop();
       }
     });
-    KDGamepad.stopDefaultGamepad = function() {
+    KDGamepad.stopDefaultGamepad = function () {
       $gameTemp.__kdgpStopDefaultGamepad = true;
     };
-    KDGamepad.resumeDefaultGamepad = function() {
+    KDGamepad.resumeDefaultGamepad = function () {
       $gameTemp.__kdgpStopDefaultGamepad = null;
     };
     // * Ссылка на геймпад
     KDGamepad.gamepad = null;
     // * Подключён ли Gamepad ?
-    KDGamepad.isExists = function() {
+    KDGamepad.isExists = function () {
       return KDGamepad.gamepad != null;
     };
     // * Инициализация состояния кнопок
     // * Этот метод вызывается автоматически из Refresh или при подключении Gamepad
-    KDGamepad.init = function(gamepad) {
+    KDGamepad.init = function (gamepad) {
       KDGamepad.gamepad = gamepad;
       this._isActive = true;
       this.buttonNames = [
@@ -2861,36 +5164,36 @@ KDCore.registerLibraryToLoad(function() {
         'dUp', // 12
         'dDown', // 13
         'dLeft', // 14
-        'dRight' // 15
+        'dRight', // 15
       ];
       this.reset();
     };
     // * Аналог Input.clear
-    KDGamepad.clear = function() {
+    KDGamepad.clear = function () {
       return KDGamepad.reset();
     };
     // * Сбросить состояние кнопок
-    KDGamepad.reset = function() {
+    KDGamepad.reset = function () {
       this.leftStick = {
         x: 0,
-        y: 0
+        y: 0,
       };
       this.rightStick = {
         x: 0,
-        y: 0
+        y: 0,
       };
       this.buttons = {};
       this.buttonsPressed = {};
       this.prevButtons = {};
     };
-    
+
     // * Остановить учёт геймпада
-    KDGamepad.stop = function() {
+    KDGamepad.stop = function () {
       KDGamepad.reset();
       KDGamepad.gamepad = null;
     };
     // * Функция проверки что нажата кнопка на геймпаде
-    KDGamepad._buttonPressed = function(gamepad, index) {
+    KDGamepad._buttonPressed = function (gamepad, index) {
       var b, e;
       try {
         if (!gamepad || !gamepad.buttons || index >= gamepad.buttons.length) {
@@ -2912,7 +5215,7 @@ KDCore.registerLibraryToLoad(function() {
       }
     };
     // * Каждый кадр (обновление состояний)
-    KDGamepad.update = function() {
+    KDGamepad.update = function () {
       var e, gp, i, isDown, j, len, name, ref;
       if (!KDGamepad.isActive()) {
         return;
@@ -2952,7 +5255,7 @@ KDCore.registerLibraryToLoad(function() {
     };
     // * Обновить и проверить состояние Gamepad
     // * Надо каждый раз это вызывать
-    KDGamepad.refresh = function() {
+    KDGamepad.refresh = function () {
       var e, gamepads, gp, i, isGamepadRefreshed, j, ref;
       try {
         isGamepadRefreshed = false;
@@ -2962,9 +5265,9 @@ KDCore.registerLibraryToLoad(function() {
           gamepads = navigator.webkitGetGamepads();
         }
         if (gamepads != null) {
-          for (i = j = 0, ref = gamepads.length; (0 <= ref ? j < ref : j > ref); i = 0 <= ref ? ++j : --j) {
+          for (i = j = 0, ref = gamepads.length; 0 <= ref ? j < ref : j > ref; i = 0 <= ref ? ++j : --j) {
             gp = gamepads[i];
-            if ((gp != null) && gp.mapping === 'standard') {
+            if (gp != null && gp.mapping === 'standard') {
               isGamepadRefreshed = true;
               if (KDGamepad.buttonNames != null) {
                 KDGamepad.gamepad = gp;
@@ -2986,11 +5289,11 @@ KDCore.registerLibraryToLoad(function() {
       }
     };
     // * Любое нажатие кнопки
-    KDGamepad.isKeyAny = function(name) {
+    KDGamepad.isKeyAny = function (name) {
       return KDGamepad.isKey(name) || KDGamepad.isKeyPressed(name);
     };
     // * Нажата ли кнопка (trigger нажал - отпустил)
-    KDGamepad.isKey = function(name) {
+    KDGamepad.isKey = function (name) {
       if (!KDGamepad.isExists()) {
         return false;
       }
@@ -3000,7 +5303,7 @@ KDCore.registerLibraryToLoad(function() {
       return this.buttons[name] === true;
     };
     // * Нажата ли кнопка (continues зажата)
-    KDGamepad.isKeyPressed = function(name) {
+    KDGamepad.isKeyPressed = function (name) {
       if (!KDGamepad.isExists()) {
         return false;
       }
@@ -3009,14 +5312,14 @@ KDCore.registerLibraryToLoad(function() {
       }
       return this.prevButtons[name] === true;
     };
-    KDGamepad.isDPadAny = function() {
-      return KDGamepad.isKeyAny("dLeft") || KDGamepad.isKeyAny("dRight") || KDGamepad.isKeyAny("dUp") || KDGamepad.isKeyAny("dDown");
+    KDGamepad.isDPadAny = function () {
+      return KDGamepad.isKeyAny('dLeft') || KDGamepad.isKeyAny('dRight') || KDGamepad.isKeyAny('dUp') || KDGamepad.isKeyAny('dDown');
     };
-    KDGamepad.isActive = function() {
+    KDGamepad.isActive = function () {
       return this._isActive === true;
     };
     // * Временно отключить обработку KDGamepad
-    KDGamepad.setActive = function(_isActive) {
+    KDGamepad.setActive = function (_isActive) {
       this._isActive = _isActive;
       if (KDGamepad.isActive()) {
         KDGamepad.refresh();
@@ -3025,20 +5328,19 @@ KDCore.registerLibraryToLoad(function() {
       }
     };
     // * Отключить перемещение игрока на DPad
-    KDGamepad.setNoDPadMovingMode = function(_noDpadMoving) {
+    KDGamepad.setNoDPadMovingMode = function (_noDpadMoving) {
       this._noDpadMoving = _noDpadMoving;
     };
-    return KDGamepad.isNoDPadMoving = function() {
+    return (KDGamepad.isNoDPadMoving = function () {
       return this._noDpadMoving === true;
-    };
+    });
   })();
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var BitmapSrc;
-  BitmapSrc = (function() {
+  BitmapSrc = function () {
     //?[DEPRECATED]
     class BitmapSrc {
       constructor() {
@@ -3057,10 +5359,10 @@ KDCore.registerLibraryToLoad(function() {
             pw = ImageManager.iconWidth;
             ph = ImageManager.iconHeight;
           }
-          sx = iconIndex % 16 * pw;
+          sx = (iconIndex % 16) * pw;
           sy = Math.floor(iconIndex / 16) * ph;
           icon_bitmap = new Bitmap(pw, ph);
-          icon_bitmap.addLoadListener(function() {
+          icon_bitmap.addLoadListener(function () {
             icon_bitmap.blt(iconset, sx, sy, pw, ph, 0, 0);
           });
           BitmapSrc.CACHE[iconIndex] = icon_bitmap;
@@ -3102,36 +5404,33 @@ KDCore.registerLibraryToLoad(function() {
         }
         return bs;
       }
-
-    };
+    }
 
     BitmapSrc.CACHE = {};
 
     return BitmapSrc;
-
-  }).call(this);
+  }.call(this);
   //@[EXTEND]
-  return KDCore.BitmapSrc = BitmapSrc;
+  return (KDCore.BitmapSrc = BitmapSrc);
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var Changer;
   // * Класс который может плавно изменять какой-либо параметр
   // * Работает в стиле chain методов
 
-    // * ------------------ ПРИМЕР ----------------------------------
+  // * ------------------ ПРИМЕР ----------------------------------
 
-    // * Меняем прозрачность 4 раза, туда-сюда, затем выводим done в консоль
+  // * Меняем прозрачность 4 раза, туда-сюда, затем выводим done в консоль
 
-    //@changer = new KDCore.Changer(someSprite)
+  //@changer = new KDCore.Changer(someSprite)
   //@changer.change('opacity').from(255)
   //            .to(0).step(5).speed(1).delay(30).repeat(4).reverse()
   //            .start().done(() -> console.log('done'))
   //@changer.update()
 
-    // * -------------------------------------------------------------
+  // * -------------------------------------------------------------
   Changer = class Changer {
     constructor(obj) {
       this.obj = obj;
@@ -3167,7 +5466,7 @@ KDCore.registerLibraryToLoad(function() {
     }
 
     isStarted() {
-      return (this._thread != null) || (this._delayThread != null);
+      return this._thread != null || this._delayThread != null;
     }
 
     from(_from) {
@@ -3296,7 +5595,7 @@ KDCore.registerLibraryToLoad(function() {
       var changer;
       changer = new Changer(sprite);
       changer.change('opacity').from(0).to(255).step(step);
-      changer.done(function() {
+      changer.done(function () {
         sprite.opacity = 255;
         if (onDone != null) {
           return onDone();
@@ -3312,7 +5611,7 @@ KDCore.registerLibraryToLoad(function() {
       var changer;
       changer = new Changer(sprite);
       changer.change('opacity').from(sprite.opacity).to(0).step(step);
-      changer.done(function() {
+      changer.done(function () {
         sprite.opacity = 0;
         if (onDone != null) {
           return onDone();
@@ -3323,16 +5622,16 @@ KDCore.registerLibraryToLoad(function() {
       }
       return changer;
     }
-
   };
-  (function() {    //╒═════════════════════════════════════════════════════════════════════════╛
+  (function () {
+    //╒═════════════════════════════════════════════════════════════════════════╛
     // ■ Changer.coffee
     //╒═════════════════════════════════════════════════════════════════════════╛
     //---------------------------------------------------------------------------
     var _;
     //@[DEFINES]
     _ = Changer.prototype;
-    _._prepare = function() {
+    _._prepare = function () {
       if (this._field == null) {
         return;
       }
@@ -3344,7 +5643,7 @@ KDCore.registerLibraryToLoad(function() {
       this.obj[this._field] = this._from;
       this._isPrepared = true;
     };
-    _._makeStep = function() {
+    _._makeStep = function () {
       var value;
       if (this.isDone()) {
         return;
@@ -3353,27 +5652,27 @@ KDCore.registerLibraryToLoad(function() {
       value += this._step;
       this.obj[this._field] = value;
     };
-    _._startThread = function() {
+    _._startThread = function () {
       this._prepare();
       if (this.isDone()) {
         return;
       }
       this._thread = new KDCore.TimedUpdate(this._speed, this._makeStep.bind(this));
-      return this._isBeenStarted = true;
+      return (this._isBeenStarted = true);
     };
-    _._updateChainedChanger = function() {
+    _._updateChainedChanger = function () {
       if (this._changer.isStarted()) {
         this._changer.update();
         if (this._changer.isDone()) {
           this._callDoneMethod();
           this._changer.stop();
-          return this._changer = null;
+          return (this._changer = null);
         }
       } else {
         return this._changer.start();
       }
     };
-    _._restart = function() {
+    _._restart = function () {
       if (!this._isCanRepeatMore()) {
         return;
       }
@@ -3387,7 +5686,7 @@ KDCore.registerLibraryToLoad(function() {
       this._prepare();
       return this.start();
     };
-    _._swapFromTo = function() {
+    _._swapFromTo = function () {
       var t;
       t = this._from;
       this._from = this._to;
@@ -3395,12 +5694,12 @@ KDCore.registerLibraryToLoad(function() {
       // * Инвентируем число step
       this._step *= -1;
     };
-    _._callDoneMethod = function() {
+    _._callDoneMethod = function () {
       if (this._onDoneMethod != null) {
         return this._onDoneMethod();
       }
     };
-    _._isCanRepeatMore = function() {
+    _._isCanRepeatMore = function () {
       if (this._repeatCount == null) {
         return true;
       }
@@ -3411,7 +5710,7 @@ KDCore.registerLibraryToLoad(function() {
       }
       return true;
     };
-    _._updateMainThread = function() {
+    _._updateMainThread = function () {
       this._thread.update();
       if (this.isDone()) {
         if (this._isRepeat === true) {
@@ -3429,14 +5728,13 @@ KDCore.registerLibraryToLoad(function() {
   //---------------------------------------------------------------------------
 
   //@[EXTEND]
-  return KDCore.Changer = Changer;
+  return (KDCore.Changer = Changer);
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var Color;
-  Color = (function() {
+  Color = function () {
     //rev 29.04.2024
     class Color {
       constructor(r1 = 255, g1 = 255, b1 = 255, a1 = 255) {
@@ -3455,14 +5753,14 @@ KDCore.registerLibraryToLoad(function() {
           if (bf >= 0) {
             p = Math.abs(bf - lightLevel) / lightLevel;
           }
-          newColor = this.ARR.map(function(c) {
-            return c - (p * c);
+          newColor = this.ARR.map(function (c) {
+            return c - p * c;
           });
         } else {
           if (bf >= 0) {
             p = (lightLevel - bf) / (255 - bf);
           }
-          newColor = this.ARR.map(function(c) {
+          newColor = this.ARR.map(function (c) {
             return [(255 - c) * p + c, 255].min();
           });
         }
@@ -3492,14 +5790,14 @@ KDCore.registerLibraryToLoad(function() {
         r = Math.floor(this.r).toString(16).padZero(2);
         g = Math.floor(this.g).toString(16).padZero(2);
         b = Math.floor(this.b).toString(16).padZero(2);
-        return this._colorHex = '#' + r + g + b;
+        return (this._colorHex = '#' + r + g + b);
       }
 
       toArray() {
         if (this._colorArray != null) {
           return this._colorArray;
         }
-        return this._colorArray = [this.r, this.g, this.b, this.a];
+        return (this._colorArray = [this.r, this.g, this.b, this.a]);
       }
 
       toCSS() {
@@ -3511,11 +5809,11 @@ KDCore.registerLibraryToLoad(function() {
         ng = Math.round(this.g);
         nb = Math.round(this.b);
         na = this.a / 255;
-        return this._colorCss = `rgba(${nr},${ng},${nb},${na})`;
+        return (this._colorCss = `rgba(${nr},${ng},${nb},${na})`);
       }
 
       toNumber() {
-        return Number(this.toHex().replace("#", "0x"));
+        return Number(this.toHex().replace('#', '0x'));
       }
 
       static Random() {
@@ -3530,7 +5828,7 @@ KDCore.registerLibraryToLoad(function() {
         var color, result, shorthandRegex;
         //Expand shorthand form (e.g. "03F") to full form (e.g. "0033FF")
         shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
-        hexString = hexString.replace(shorthandRegex, function(m, r, g, b) {
+        hexString = hexString.replace(shorthandRegex, function (m, r, g, b) {
           return r + r + g + g + b + b;
         });
         result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hexString);
@@ -3539,7 +5837,7 @@ KDCore.registerLibraryToLoad(function() {
           color = {
             r: parseInt(result[1], 16),
             g: parseInt(result[2], 16),
-            b: parseInt(result[3], 16)
+            b: parseInt(result[3], 16),
           };
         }
         if (color != null) {
@@ -3548,58 +5846,57 @@ KDCore.registerLibraryToLoad(function() {
           return Color.NONE;
         }
       }
-
-    };
+    }
 
     Object.defineProperties(Color.prototype, {
       R: {
-        get: function() {
+        get: function () {
           return this.r;
         },
-        configurable: true
+        configurable: true,
       },
       G: {
-        get: function() {
+        get: function () {
           return this.g;
         },
-        configurable: true
+        configurable: true,
       },
       B: {
-        get: function() {
+        get: function () {
           return this.b;
         },
-        configurable: true
+        configurable: true,
       },
       A: {
-        get: function() {
+        get: function () {
           return this.a;
         },
-        configurable: true
+        configurable: true,
       },
       ARR: {
-        get: function() {
+        get: function () {
           return this.toArray();
         },
-        configurable: true
+        configurable: true,
       },
       CSS: {
-        get: function() {
+        get: function () {
           return this.toCSS();
         },
-        configurable: true
+        configurable: true,
       },
       HEX: {
-        get: function() {
+        get: function () {
           return this.toHex();
         },
-        configurable: true
+        configurable: true,
       },
       OX: {
-        get: function() {
+        get: function () {
           return this.toNumber();
         },
-        configurable: true
-      }
+        configurable: true,
+      },
     });
 
     Color.AddConstantColor('NONE', new Color(0, 0, 0, 0));
@@ -3623,20 +5920,18 @@ KDCore.registerLibraryToLoad(function() {
     Color.AddConstantColor('ORANGE', new Color(255, 128, 0, 255));
 
     return Color;
-
-  }).call(this);
+  }.call(this);
   //@[EXTEND]
-  return KDCore.Color = Color;
+  return (KDCore.Color = Color);
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var Color, DevLog, __TMP_LOGS__;
   Color = KDCore.Color;
   __TMP_LOGS__ = [];
   DevLog = class DevLog {
-    constructor(prefix = "") {
+    constructor(prefix = '') {
       this.prefix = prefix;
       this._isShow = typeof DEV !== 'undefined';
       this._color = Color.BLACK;
@@ -3701,13 +5996,13 @@ KDCore.registerLibraryToLoad(function() {
         return;
       }
       if (text == null) {
-        console.log("");
+        console.log('');
       }
       this._printText(text);
     }
 
     _printText(text) {
-      text = this.prefix + " : " + text;
+      text = this.prefix + ' : ' + text;
       if (this._isUsingColor()) {
         return this._printTextWithColors(text);
       } else {
@@ -3733,22 +6028,20 @@ KDCore.registerLibraryToLoad(function() {
     }
 
     static EnableAllLogs() {
-      return __TMP_LOGS__.forEach(function(log) {
+      return __TMP_LOGS__.forEach(function (log) {
         return log.on();
       });
     }
-
   };
   //@[EXTEND]
-  return KDCore.DevLog = DevLog;
+  return (KDCore.DevLog = DevLog);
 });
-
 
 // Generated by CoffeeScript 2.6.1
 // * Класс для глобального события игры (НЕ события на карте)
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   //@[AUTO EXTEND]
-  return KDCore.GEvent = class GEvent {
+  return (KDCore.GEvent = class GEvent {
     constructor(name) {
       this.name = name;
       this.clear();
@@ -3782,37 +6075,35 @@ KDCore.registerLibraryToLoad(function() {
     }
 
     clear() {
-      return this.listeners = [];
+      return (this.listeners = []);
     }
-
-  };
+  });
 });
-
 
 // Generated by CoffeeScript 2.6.1
 // * Менеджер для управления глобальными событиями игры (GEvent) (НЕ события на карте)
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var GEventsManager;
   // * Данный менеджер глобальный, т.е. с ним работают ВСЕ плагины, которые его используют!
-  GEventsManager = function() {};
-  (function() {
+  GEventsManager = function () {};
+  (function () {
     var _;
     _ = GEventsManager;
     // * Существует ли событие с данным именем
-    _.isEventExists = function(gEventName) {
+    _.isEventExists = function (gEventName) {
       return this._getEventByName(gEventName) != null;
     };
     // * Получить список всех зарегестрированных событий (имён)
-    _.getAllEvents = function() {
+    _.getAllEvents = function () {
       if (this.events == null) {
         return [];
       }
-      return this.events.map(function(ev) {
+      return this.events.map(function (ev) {
         return ev.name;
       });
     };
     // * Зарегестрировать событие (используется только имя события)
-    _.register = function(gEventName) {
+    _.register = function (gEventName) {
       if (this.events == null) {
         this.events = [];
       }
@@ -3820,7 +6111,7 @@ KDCore.registerLibraryToLoad(function() {
     };
     // * Подписаться на событие (имя события) и слушатель
     // * если isSingle == true - то у события может быть только один исполнитель
-    _.subscribeFor = function(evName, listener, isSingle = false) {
+    _.subscribeFor = function (evName, listener, isSingle = false) {
       var ref;
       return (ref = this._getEventByName(evName)) != null ? ref.addListener(listener, isSingle) : void 0;
     };
@@ -3829,13 +6120,13 @@ KDCore.registerLibraryToLoad(function() {
     // * уже подписан на событие, ничего не будет (без дубликатов)
     //? ВНИМАНИЕ ! Если объект подписался через subscribeForX, то
     // выполнив clear по данному evName, он уже не подпишится!
-    _.subscribeForX = function(context, evName, listener) {
+    _.subscribeForX = function (context, evName, listener) {
       var e, key;
       try {
-        key = "__kdCoreGEvent_" + evName;
+        key = '__kdCoreGEvent_' + evName;
         if (context[key] == null) {
           this.subscribeFor(evName, listener);
-          return context[key] = true;
+          return (context[key] = true);
         }
       } catch (error) {
         e = error;
@@ -3843,32 +6134,31 @@ KDCore.registerLibraryToLoad(function() {
       }
     };
     // * Вызвать событие (по имени)
-    _.call = function(evName) {
+    _.call = function (evName) {
       var ref;
       return (ref = this._getEventByName(evName)) != null ? ref.call() : void 0;
     };
-    _.clear = function(evName) {
+    _.clear = function (evName) {
       var ref;
       return (ref = this._getEventByName(evName)) != null ? ref.clear() : void 0;
     };
-    _._getEventByName = function(name) {
+    _._getEventByName = function (name) {
       if (!this.events) {
         return null;
       }
-      return this.events.find(function(ev) {
+      return this.events.find(function (ev) {
         return ev.name === name;
       });
     };
   })();
   //@[EXTEND]
-  return KDCore.GEventsManager = GEventsManager;
+  return (KDCore.GEventsManager = GEventsManager);
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   //@[AUTO EXTEND]
-  return KDCore.MapAnchorPoint = class MapAnchorPoint {
+  return (KDCore.MapAnchorPoint = class MapAnchorPoint {
     constructor(x, y) {
       this.x = x;
       this.y = y;
@@ -3906,16 +6196,14 @@ KDCore.registerLibraryToLoad(function() {
       this._realX = this.x;
       this._realY = this.y;
     }
-
-  };
+  });
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   //@[AUTO EXTEND]
   //?[DEPRECATED]
-  return KDCore.ParametersManager = class ParametersManager {
+  return (KDCore.ParametersManager = class ParametersManager {
     constructor(pluginName) {
       this.pluginName = pluginName;
       this._cache = {};
@@ -3923,7 +6211,7 @@ KDCore.registerLibraryToLoad(function() {
     }
 
     isLoaded() {
-      return (this._parameters != null) && this._parameters.hasOwnProperty(this.pluginName);
+      return this._parameters != null && this._parameters.hasOwnProperty(this.pluginName);
     }
 
     isHasParameter(name) {
@@ -3947,7 +6235,7 @@ KDCore.registerLibraryToLoad(function() {
     }
 
     convertImage(object, fieldName) {
-      return object[fieldName] = this.loadImage(object[fieldName]);
+      return (object[fieldName] = this.loadImage(object[fieldName]));
     }
 
     loadImage(filename, smooth) {
@@ -3984,7 +6272,7 @@ KDCore.registerLibraryToLoad(function() {
     }
 
     putInCache(name, object) {
-      return this._cache[name] = object;
+      return (this._cache[name] = object);
     }
 
     getFromCache(name) {
@@ -4041,31 +6329,29 @@ KDCore.registerLibraryToLoad(function() {
     }
 
     getBooleanFromCache(name) {
-      return this.getFromCacheOrInit(name, function() {
+      return this.getFromCacheOrInit(name, function () {
         return this.getBoolean(name);
       });
     }
 
     getNumberFromCache(name) {
-      return this.getFromCacheOrInit(name, function() {
+      return this.getFromCacheOrInit(name, function () {
         return this.getNumber(name);
       });
     }
 
     getStringFromCache(name) {
-      return this.getFromCacheOrInit(name, function() {
+      return this.getFromCacheOrInit(name, function () {
         return this.getString(name);
       });
     }
-
-  };
+  });
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   //@[AUTO EXTEND]
-  return KDCore.ParamLoader = class ParamLoader {
+  return (KDCore.ParamLoader = class ParamLoader {
     constructor(pluginName) {
       this.pluginName = pluginName;
       this.paramsRaw = PluginManager.getPluginParametersByRoot(this.pluginName);
@@ -4086,11 +6372,11 @@ KDCore.registerLibraryToLoad(function() {
     }
 
     parseKey(keyRaw) {
-      return keyRaw.split(":")[0];
+      return keyRaw.split(':')[0];
     }
 
     parseKeyType(keyRaw) {
-      return keyRaw.split(":")[1];
+      return keyRaw.split(':')[1];
     }
 
     writeDetailedError() {
@@ -4099,7 +6385,7 @@ KDCore.registerLibraryToLoad(function() {
         if (!String.any(KDCore.__ppNameToParseNext)) {
           return;
         }
-        return console.warn("Please, check Plugin Parameter " + KDCore.__ppNameToParseNext + " in plugin " + this.pluginName);
+        return console.warn('Please, check Plugin Parameter ' + KDCore.__ppNameToParseNext + ' in plugin ' + this.pluginName);
       } catch (error) {
         e = error;
         return KDCore.warning(e);
@@ -4108,7 +6394,7 @@ KDCore.registerLibraryToLoad(function() {
 
     // * Проверка, загружены ли параметры плагина
     isLoaded() {
-      return (this.paramsRaw != null) && this.paramsRaw.hasOwnProperty(this.pluginName);
+      return this.paramsRaw != null && this.paramsRaw.hasOwnProperty(this.pluginName);
     }
 
     // * Имя параметра без ключа
@@ -4116,8 +6402,7 @@ KDCore.registerLibraryToLoad(function() {
       return this.params[paramName] != null;
     }
 
-    
-      // * Возвращает значение параметра (def - по умолчанию, если не найден)
+    // * Возвращает значение параметра (def - по умолчанию, если не найден)
     getParam(paramName, def) {
       var value;
       if (this.isHasParameter(paramName)) {
@@ -4139,34 +6424,34 @@ KDCore.registerLibraryToLoad(function() {
       }
       try {
         switch (type) {
-          case "int":
-          case "i":
+          case 'int':
+          case 'i':
             return Number(item);
-          case "intA":
-            return this.parseArray(item, "int");
-          case "bool":
-          case "b":
-          case "e":
+          case 'intA':
+            return this.parseArray(item, 'int');
+          case 'bool':
+          case 'b':
+          case 'e':
             return eval(item);
-          case "struct":
-          case "s":
+          case 'struct':
+          case 's':
             return this.parseStruct(item);
-          case "structA":
+          case 'structA':
             return this.parseStructArray(item);
-          case "str":
+          case 'str':
             return item;
-          case "strA":
-            return this.parseArray(item, "str");
-          case "note":
+          case 'strA':
+            return this.parseArray(item, 'str');
+          case 'note':
             return this.parseNote(item);
-          case "css":
+          case 'css':
             return item.toCss();
-          case "color":
+          case 'color':
             return KDCore.Color.FromHex(item);
-          case "json":
-          case "j":
+          case 'json':
+          case 'j':
             return this.parseJson(item);
-          case "jA":
+          case 'jA':
             return this.parseArray(item, 'json');
           default:
             return item;
@@ -4268,7 +6553,7 @@ KDCore.registerLibraryToLoad(function() {
         elements = parsed.split('\n');
         for (i = 0, len = elements.length; i < len; i++) {
           element = elements[i];
-          cx = "{" + element + "}";
+          cx = '{' + element + '}';
           try {
             item = JsonEx.parse(cx);
             for (key in item) {
@@ -4277,7 +6562,7 @@ KDCore.registerLibraryToLoad(function() {
             }
           } catch (error) {
             e = error;
-            KDCore.warning("Parameter " + element + " have syntax errors, ignored");
+            KDCore.warning('Parameter ' + element + ' have syntax errors, ignored');
           }
         }
         return json;
@@ -4288,15 +6573,13 @@ KDCore.registerLibraryToLoad(function() {
         return null; // * Чтобы default value был возвращён
       }
     }
-
-  };
+  });
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var Point;
-  Point = (function() {
+  Point = function () {
     class Point {
       constructor(_x = 0, _y = 0) {
         this._x = _x;
@@ -4308,7 +6591,7 @@ KDCore.registerLibraryToLoad(function() {
       }
 
       toString() {
-        return "[" + this._x + " ; " + this._y + "]";
+        return '[' + this._x + ' ; ' + this._y + ']';
       }
 
       isSame(anotherPoint) {
@@ -4351,8 +6634,8 @@ KDCore.registerLibraryToLoad(function() {
 
       mapPointOnScreen() {
         var nx, ny;
-        nx = (this._x * $gameMap.tileWidth()) - ($gameMap.displayX() * $gameMap.tileWidth());
-        ny = (this._y * $gameMap.tileHeight()) - ($gameMap.displayY() * $gameMap.tileHeight());
+        nx = this._x * $gameMap.tileWidth() - $gameMap.displayX() * $gameMap.tileWidth();
+        ny = this._y * $gameMap.tileHeight() - $gameMap.displayY() * $gameMap.tileHeight();
         return new Point(nx, ny);
       }
 
@@ -4377,63 +6660,60 @@ KDCore.registerLibraryToLoad(function() {
         }
         return Point._emptyPoint;
       }
-
-    };
+    }
 
     Object.defineProperties(Point.prototype, {
       x: {
-        get: function() {
+        get: function () {
           return this._x;
         },
-        configurable: true
+        configurable: true,
       },
       y: {
-        get: function() {
+        get: function () {
           return this._y;
         },
-        configurable: true
-      }
+        configurable: true,
+      },
     });
 
     Object.defineProperties(Point, {
       Empty: {
-        get: function() {
+        get: function () {
           return Point._getEmpty();
         },
-        configurable: false
-      }
+        configurable: false,
+      },
     });
 
-    Array.prototype.toPoint = function() {
+    Array.prototype.toPoint = function () {
       return new Point(this[0], this[1]);
     };
 
-    Object.defineProperty(Array.prototype, "toPoint", {
-      enumerable: false
+    Object.defineProperty(Array.prototype, 'toPoint', {
+      enumerable: false,
     });
 
-    Sprite.prototype.toPoint = function() {
+    Sprite.prototype.toPoint = function () {
       return new Point(this.x, this.y);
     };
 
-    Game_CharacterBase.prototype.toPoint = function() {
+    Game_CharacterBase.prototype.toPoint = function () {
       return new Point(this.x, this.y);
     };
 
     return Point;
-
-  }).call(this);
+  }.call(this);
   //@[EXTEND]
-  return KDCore.Point = Point;
+  return (KDCore.Point = Point);
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
-  return KDCore.Sprite = (function(superClass) {
+KDCore.registerLibraryToLoad(function () {
+  return (KDCore.Sprite = function (superClass) {
     //rev 07.05.22
 
-      //@[AUTO EXTEND]
+    //@[AUTO EXTEND]
     class Sprite extends superClass {
       constructor() {
         super(...arguments);
@@ -4503,61 +6783,61 @@ KDCore.registerLibraryToLoad(function() {
 
       dataBindings() {
         return {
-          x: function(v) {
+          x: function (v) {
             if (v != null) {
               return this.setPosition(v, this.y);
             }
           },
-          y: function(v) {
+          y: function (v) {
             if (v != null) {
               return this.setPosition(this.x, v);
             }
           },
-          position: function(v) {
+          position: function (v) {
             if (v != null) {
               return this.setPosition(v);
             }
           },
-          anchor: function(v) {
+          anchor: function (v) {
             if (v != null) {
               return this.setCommonAnchor(v);
             }
           },
-          animation: function(v) {
+          animation: function (v) {
             if (v != null) {
               return this.addAnimationRule(v);
             }
           },
-          opacity: function(v) {
+          opacity: function (v) {
             if (v != null) {
-              return this.opacity = v;
+              return (this.opacity = v);
             }
           },
-          visible: function(v) {
+          visible: function (v) {
             if (v != null) {
-              return this.visible = v;
+              return (this.visible = v);
             }
           },
-          scale: function(v) {
+          scale: function (v) {
             if (v != null) {
               return this.scale.set(v);
             }
           },
-          rotation: function(v) {
+          rotation: function (v) {
             if (v != null) {
-              return this.rotation = v;
+              return (this.rotation = v);
             }
           },
-          centeredScale: function(v) {
+          centeredScale: function (v) {
             if (v != null) {
               return this.setCenteredScale(v);
             }
           },
-          physicalBounds: function(v) {
+          physicalBounds: function (v) {
             if (v != null) {
-              return this._isNotHaveBounds = !v;
+              return (this._isNotHaveBounds = !v);
             }
-          }
+          },
         };
       }
 
@@ -4569,7 +6849,7 @@ KDCore.registerLibraryToLoad(function() {
             return;
           }
           this._refreshAnchoredCenter();
-          return this._scaleFactor = value;
+          return (this._scaleFactor = value);
         } catch (error) {
           e = error;
           return KDCore.warning(e);
@@ -4583,7 +6863,7 @@ KDCore.registerLibraryToLoad(function() {
           if (func != null) {
             return func.call(this, value);
           } else {
-            return console.warn("Binding " + binding + " not found!");
+            return console.warn('Binding ' + binding + ' not found!');
           }
         } catch (error) {
           e = error;
@@ -4690,10 +6970,10 @@ KDCore.registerLibraryToLoad(function() {
             this.x = x; // * Number
           }
           if (typeof y === 'string') {
-            return this.y = this._getValueByStr(y, 'y', bindedObj);
+            return (this.y = this._getValueByStr(y, 'y', bindedObj));
           } else {
             if (y != null) {
-              return this.y = y;
+              return (this.y = y);
             }
           }
         } catch (error) {
@@ -4719,61 +6999,61 @@ KDCore.registerLibraryToLoad(function() {
             v = KDCore.Utils.convertBindingValue(owner, value, this);
             return this._getValueByStr(v, forField, owner);
           }
-          if (value.contains("prevX")) {
-            value = value.replace("prevX", this._getPreviousChildData('x'));
+          if (value.contains('prevX')) {
+            value = value.replace('prevX', this._getPreviousChildData('x'));
             return this._getValueByStr(value, forField, owner);
           }
-          if (value.contains("prevY")) {
-            value = value.replace("prevY", this._getPreviousChildData('y'));
+          if (value.contains('prevY')) {
+            value = value.replace('prevY', this._getPreviousChildData('y'));
             return this._getValueByStr(value, forField, owner);
           }
-          if (value.contains("prevHeight")) {
-            value = value.replace("prevHeight", this._getPreviousChildData('height'));
+          if (value.contains('prevHeight')) {
+            value = value.replace('prevHeight', this._getPreviousChildData('height'));
             return this._getValueByStr(value, forField, owner);
           }
-          if (value.contains("prevWidth")) {
-            value = value.replace("prevWidth", this._getPreviousChildData('width'));
+          if (value.contains('prevWidth')) {
+            value = value.replace('prevWidth', this._getPreviousChildData('width'));
             return this._getValueByStr(value, forField, owner);
           }
-          if (value.contains("prevEndX")) {
-            value = value.replace("prevEndX", "prevX + prevWidth");
+          if (value.contains('prevEndX')) {
+            value = value.replace('prevEndX', 'prevX + prevWidth');
             return this._getValueByStr(value, forField, owner);
           }
-          if (value.contains("prevEndY")) {
-            value = value.replace("prevEndY", "prevY + prevHeight");
+          if (value.contains('prevEndY')) {
+            value = value.replace('prevEndY', 'prevY + prevHeight');
             return this._getValueByStr(value, forField, owner);
           }
-          if (value.contains("end")) {
-            value = value.replace("end", "100%");
+          if (value.contains('end')) {
+            value = value.replace('end', '100%');
           }
-          if (value.contains("begin")) {
+          if (value.contains('begin')) {
             if (forField === 'y') {
-              value = value.replace("begin", "-height");
+              value = value.replace('begin', '-height');
             } else {
-              value = value.replace("begin", "-width");
+              value = value.replace('begin', '-width');
             }
           }
-          if (value.contains("right")) {
-            value = value.replace("right", "100% - width");
+          if (value.contains('right')) {
+            value = value.replace('right', '100% - width');
             return this._getValueByStr(value, forField, owner);
           }
-          if (value.contains("left")) {
-            value = value.replace("left", "0");
+          if (value.contains('left')) {
+            value = value.replace('left', '0');
             return this._getValueByStr(value, forField, owner);
           }
-          if (value.contains("top")) {
-            value = value.replace("top", "0");
+          if (value.contains('top')) {
+            value = value.replace('top', '0');
             return this._getValueByStr(value, forField, owner);
           }
-          if (value.contains("bottom")) {
-            value = value.replace("bottom", "100% - height");
+          if (value.contains('bottom')) {
+            value = value.replace('bottom', '100% - height');
             return this._getValueByStr(value, forField, owner);
           }
           // * Replace all X%
-          if (value.contains("%")) {
-            r = new RegExp("(\\d+)%", "g");
+          if (value.contains('%')) {
+            r = new RegExp('(\\d+)%', 'g');
             result = r.exec(value);
-            while ((result != null)) {
+            while (result != null) {
               percentValue = Number(result[1]);
               resultValue = 0;
               if (this.parent != null) {
@@ -4785,10 +7065,10 @@ KDCore.registerLibraryToLoad(function() {
             }
           }
           // * Replace all HDP
-          if (value.contains("hdp")) {
-            r = new RegExp("(\\d+)hdp", "g");
+          if (value.contains('hdp')) {
+            r = new RegExp('(\\d+)hdp', 'g');
             result = r.exec(value);
-            while ((result != null)) {
+            while (result != null) {
               dpValue = Number(result[1]);
               resultValue = KDCore.Utils.convertDP(dpValue, true);
               value = value.replace(/(\d+)hdp/, resultValue);
@@ -4796,10 +7076,10 @@ KDCore.registerLibraryToLoad(function() {
             }
           }
           // * Replace all DP
-          if (value.contains("dp")) {
-            r = new RegExp("(\\d+)dp", "g");
+          if (value.contains('dp')) {
+            r = new RegExp('(\\d+)dp', 'g');
             result = r.exec(value);
-            while ((result != null)) {
+            while (result != null) {
               dpValue = Number(result[1]);
               resultValue = KDCore.Utils.convertDP(dpValue, false);
               value = value.replace(/(\d+)dp/, resultValue);
@@ -4809,18 +7089,18 @@ KDCore.registerLibraryToLoad(function() {
           if (value.contains('center')) {
             v = this._getValueByStr('50%', forField, owner);
             exValue = KDCore.Utils.getRealSpriteSize(forField, this);
-            exValue = v - (exValue / 2);
-            value = value.replace("center", exValue);
+            exValue = v - exValue / 2;
+            value = value.replace('center', exValue);
             return this._getValueByStr(value, forField, owner);
           }
-          if (value.contains("height")) {
-            exValue = KDCore.Utils.getRealSpriteSize("height", this);
-            value = value.replace("height", exValue);
+          if (value.contains('height')) {
+            exValue = KDCore.Utils.getRealSpriteSize('height', this);
+            value = value.replace('height', exValue);
             return this._getValueByStr(value, forField, owner);
           }
-          if (value.contains("width")) {
-            exValue = KDCore.Utils.getRealSpriteSize("width", this);
-            value = value.replace("width", exValue);
+          if (value.contains('width')) {
+            exValue = KDCore.Utils.getRealSpriteSize('width', this);
+            value = value.replace('width', exValue);
             return this._getValueByStr(value, forField, owner);
           }
           v = eval(value);
@@ -4846,9 +7126,9 @@ KDCore.registerLibraryToLoad(function() {
           if (prevChild == null) {
             return 0;
           }
-          if (forField === "x") {
+          if (forField === 'x') {
             return prevChild.x;
-          } else if (forField === "y") {
+          } else if (forField === 'y') {
             return prevChild.y;
           } else {
             return KDCore.Utils.getRealSpriteSize(forField, prevChild);
@@ -4896,10 +7176,15 @@ KDCore.registerLibraryToLoad(function() {
 
       appear(step, delay = 0) {
         this.opacity = 0;
-        this._opChanger = KDCore.Changer.CreateForOpacityUp(this, step, () => {
-          this._opChanger = null;
-          return this._updateOpChanger = function() {}; // * EMPTY
-        }, false); // * Not autostart for Delay
+        this._opChanger = KDCore.Changer.CreateForOpacityUp(
+          this,
+          step,
+          () => {
+            this._opChanger = null;
+            return (this._updateOpChanger = function () {}); // * EMPTY
+          },
+          false,
+        ); // * Not autostart for Delay
         if (delay > 0) {
           this._opChanger.delay(delay);
         }
@@ -4911,10 +7196,15 @@ KDCore.registerLibraryToLoad(function() {
       }
 
       disapper(step, delay = 0) {
-        this._opChanger = KDCore.Changer.CreateForOpacityDown(this, step, () => {
-          this._opChanger = null;
-          return this._updateOpChanger = function() {}; // * EMPTY
-        }, false); // * Not autostart for Delay
+        this._opChanger = KDCore.Changer.CreateForOpacityDown(
+          this,
+          step,
+          () => {
+            this._opChanger = null;
+            return (this._updateOpChanger = function () {}); // * EMPTY
+          },
+          false,
+        ); // * Not autostart for Delay
         if (delay > 0) {
           this._opChanger.delay(delay);
         }
@@ -4955,7 +7245,7 @@ KDCore.registerLibraryToLoad(function() {
         this.hideTooltip();
         this.removeChild(this._tooltip);
         this._tooltip = null;
-        return this.updateTooltip = function() {}; // * EMPTY
+        return (this.updateTooltip = function () {}); // * EMPTY
       }
 
       showTooltip() {
@@ -4979,7 +7269,6 @@ KDCore.registerLibraryToLoad(function() {
       updateTooltipBody() {
         if (this.isUnderMouse()) {
           if (this._tooltip.isTooltipActive()) {
-
           } else {
             if (this.isReady() && this.visible === true && this.opacity >= 255) {
               return this.showTooltip();
@@ -5006,12 +7295,12 @@ KDCore.registerLibraryToLoad(function() {
           this.y = this._moveAnimationItem._y;
           if (this._moveAnimationItem._duration <= 0) {
             this._moveAnimationItem = null;
-            this.updateMovingAnimation = function() {};
+            this.updateMovingAnimation = function () {};
           }
         } catch (error) {
           e = error;
           KDCore.warning(e);
-          this.updateMovingAnimation = function() {};
+          this.updateMovingAnimation = function () {};
         }
       }
 
@@ -5024,7 +7313,7 @@ KDCore.registerLibraryToLoad(function() {
           if (this._animationRules == null) {
             this._animationRules = [];
           }
-          if (typeof rule === 'object' && (rule.animationConfig != null) && (rule.update != null)) {
+          if (typeof rule === 'object' && rule.animationConfig != null && rule.update != null) {
             r = rule;
           } else {
             r = new KDCore.AnimationRule(rule, this);
@@ -5111,7 +7400,7 @@ KDCore.registerLibraryToLoad(function() {
             this.__lastCenterBaseY = this.y;
           }
           this.__anchoredCenterX = this.__lastCenterBaseX + this.realWidth() / 2;
-          return this.__anchoredCenterX = this.__lastCenterBaseY + this.realHeight() / 2;
+          return (this.__anchoredCenterX = this.__lastCenterBaseY + this.realHeight() / 2);
         } catch (error) {
           e = error;
           return KDCore.warning(e);
@@ -5125,7 +7414,7 @@ KDCore.registerLibraryToLoad(function() {
           newWidth = this.realWidth() * this.scale.x;
           newHeight = this.realHeight() * this.scale.y;
           this.x = this.__anchoredCenterX - newWidth / 2;
-          return this.y = this.__anchoredCenterX - newHeight / 2;
+          return (this.y = this.__anchoredCenterX - newHeight / 2);
         } catch (error) {
           e = error;
           return KDCore.warning(e);
@@ -5168,20 +7457,20 @@ KDCore.registerLibraryToLoad(function() {
         if (h == null) {
           h = w;
         }
-        return this.bitmap = new Bitmap(w, h);
+        return (this.bitmap = new Bitmap(w, h));
       }
 
       bImg(filename, sourceFolder) {
         var getterFunc;
-        getterFunc = function(filename) {
+        getterFunc = function (filename) {
           return ImageManager.loadPicture(filename);
         };
         if (sourceFolder != null) {
-          getterFunc = function(filename) {
-            return ImageManager.loadBitmap("img/" + sourceFolder + "/", filename);
+          getterFunc = function (filename) {
+            return ImageManager.loadBitmap('img/' + sourceFolder + '/', filename);
           };
         }
-        return this.bitmap = getterFunc(filename);
+        return (this.bitmap = getterFunc(filename));
       }
 
       onReady(method) {
@@ -5194,7 +7483,7 @@ KDCore.registerLibraryToLoad(function() {
         return this.bitmap.drawText(...arguments);
       }
 
-      drawTextFull(text, position = "center") {
+      drawTextFull(text, position = 'center') {
         if (this.textSettingsPosition != null) {
           position = this.textSettingsPosition;
         }
@@ -5244,7 +7533,7 @@ KDCore.registerLibraryToLoad(function() {
             return false;
           }
         }
-        for (i = j = 0, ref = this.children.length; (0 <= ref ? j < ref : j > ref); i = 0 <= ref ? ++j : --j) {
+        for (i = j = 0, ref = this.children.length; 0 <= ref ? j < ref : j > ref; i = 0 <= ref ? ++j : --j) {
           if (!this.children[i].bitmap.isReady()) {
             return false;
           }
@@ -5261,7 +7550,7 @@ KDCore.registerLibraryToLoad(function() {
         result = this.isContainsPoint(point);
         if (result && this.isCheckAlpha()) {
           try {
-            ({x, y} = point);
+            ({ x, y } = point);
             gx = KDCore.SDK.toGlobalCoord(this, 'x');
             gy = KDCore.SDK.toGlobalCoord(this, 'y');
             pixel = this.bitmap.getAlphaPixel(x - gx, y - gy);
@@ -5323,7 +7612,7 @@ KDCore.registerLibraryToLoad(function() {
             this.handleUpAction = this.selectPreviousHandlerItem;
             this.handleDownAction = this.selectNextHandlerItem;
           }
-          return this._handleManagerActive = true;
+          return (this._handleManagerActive = true);
         } catch (error) {
           e = error;
           return KDCore.warning(e);
@@ -5333,10 +7622,10 @@ KDCore.registerLibraryToLoad(function() {
       deactivateHandlerManagment() {
         var ref;
         this._handleManagerActive = false;
-        this.handleUpAction = function() {}; // * EMPTY
-        this.handleDownAction = function() {}; // * EMPTY
-        this.handleRightAction = function() {}; // * EMPTY
-        this.handleLeftAction = function() {}; // * EMPTY
+        this.handleUpAction = function () {}; // * EMPTY
+        this.handleDownAction = function () {}; // * EMPTY
+        this.handleRightAction = function () {}; // * EMPTY
+        this.handleLeftAction = function () {}; // * EMPTY
         if ((ref = $gameTemp.__pkdActiveKeyboardHandler) != null) {
           ref.pDeactivateHandler();
         }
@@ -5346,7 +7635,7 @@ KDCore.registerLibraryToLoad(function() {
       addChild(item) {
         var c, handlers;
         c = super.addChild(...arguments);
-        if (item instanceof KDCore.Sprite && (item.pIsSupportKeyboardHandle != null) && item.pIsSupportKeyboardHandle()) {
+        if (item instanceof KDCore.Sprite && item.pIsSupportKeyboardHandle != null && item.pIsSupportKeyboardHandle()) {
           handlers = this._pGetAllHandlers();
           item.pHandledIndex = handlers.length - 1;
         }
@@ -5378,7 +7667,7 @@ KDCore.registerLibraryToLoad(function() {
       _trySelectHandler(index) {
         var e, handlerItemToSelect;
         try {
-          handlerItemToSelect = this._pGetAllHandlers().find(function(i) {
+          handlerItemToSelect = this._pGetAllHandlers().find(function (i) {
             return i.pHandledIndex === index;
           });
           if (handlerItemToSelect != null) {
@@ -5392,8 +7681,8 @@ KDCore.registerLibraryToLoad(function() {
       }
 
       _pGetAllHandlers() {
-        return this.children.filter(function(i) {
-          return i instanceof KDCore.Sprite && (i.pIsSupportKeyboardHandle != null) && i.pIsSupportKeyboardHandle();
+        return this.children.filter(function (i) {
+          return i instanceof KDCore.Sprite && i.pIsSupportKeyboardHandle != null && i.pIsSupportKeyboardHandle();
         });
       }
 
@@ -5414,7 +7703,7 @@ KDCore.registerLibraryToLoad(function() {
       activeItemFilterOptions() {
         return {
           distance: 15,
-          outerStrength: 4
+          outerStrength: 4,
         };
       }
 
@@ -5518,7 +7807,7 @@ KDCore.registerLibraryToLoad(function() {
         if (!this.pIsSupportKeyboardHandle()) {
           return;
         }
-        if (($gameTemp.__pkdActiveKeyboardHandler != null) && $gameTemp.__pkdActiveKeyboardHandler !== this) {
+        if ($gameTemp.__pkdActiveKeyboardHandler != null && $gameTemp.__pkdActiveKeyboardHandler !== this) {
           $gameTemp.__pkdActiveKeyboardHandler.pDeactivateHandler();
         }
         this._handlerActive = true;
@@ -5531,7 +7820,7 @@ KDCore.registerLibraryToLoad(function() {
         try {
           //@filters = [new PIXI.filters.OutlineFilter(0.8, 0x99ff99, 0.5)]
           //@filters = [new PIXI.filters.GlowFilter(2, 0.8, 0, 0x09f9, 0.5)]
-          return this.filters = [new PIXI.filters.GlowFilter(this.activeItemFilterOptions())];
+          return (this.filters = [new PIXI.filters.GlowFilter(this.activeItemFilterOptions())]);
         } catch (error) {
           e = error;
           return KDCore.warning(e);
@@ -5667,11 +7956,11 @@ KDCore.registerLibraryToLoad(function() {
         if (items.length === 0) {
           return null;
         }
-        itemsInRow = items.filter(function(item) {
+        itemsInRow = items.filter(function (item) {
           return item.y === y;
         });
         if (itemsInRow.length > 0) {
-          itemsInRow.sort(function(a, b) {
+          itemsInRow.sort(function (a, b) {
             return a.x - b.x;
           });
           return itemsInRow[0];
@@ -5682,7 +7971,7 @@ KDCore.registerLibraryToLoad(function() {
             item = items[index];
             distances.push([index, Math.abs(item.x - rX) + Math.abs(item.y - y)]);
           }
-          distances.sort(function(a, b) {
+          distances.sort(function (a, b) {
             return a[1] - b[1];
           });
           return items[distances[0][0]];
@@ -5691,11 +7980,11 @@ KDCore.registerLibraryToLoad(function() {
 
       _pGetItemsByX(x, fromItems) {
         if (x >= 0) {
-          return fromItems.filter(function(item) {
+          return fromItems.filter(function (item) {
             return item.x > x;
           });
         } else {
-          return fromItems.filter(function(item) {
+          return fromItems.filter(function (item) {
             return item.x < Math.abs(x);
           });
         }
@@ -5707,11 +7996,11 @@ KDCore.registerLibraryToLoad(function() {
         if (items.length === 0) {
           return null;
         }
-        itemsInRow = items.filter(function(item) {
+        itemsInRow = items.filter(function (item) {
           return item.x === x;
         });
         if (itemsInRow.length > 0) {
-          itemsInRow.sort(function(a, b) {
+          itemsInRow.sort(function (a, b) {
             return a.y - b.y;
           });
           return itemsInRow[0];
@@ -5722,7 +8011,7 @@ KDCore.registerLibraryToLoad(function() {
             item = items[index];
             distances.push([index, Math.abs(item.x - x) + Math.abs(item.y - rY)]);
           }
-          distances.sort(function(a, b) {
+          distances.sort(function (a, b) {
             return a[1] - b[1];
           });
           return items[distances[0][0]];
@@ -5731,11 +8020,11 @@ KDCore.registerLibraryToLoad(function() {
 
       _pGetItemsByY(y, fromItems) {
         if (y >= 0) {
-          return fromItems.filter(function(item) {
+          return fromItems.filter(function (item) {
             return item.y > y;
           });
         } else {
-          return fromItems.filter(function(item) {
+          return fromItems.filter(function (item) {
             return item.y < Math.abs(y);
           });
         }
@@ -5752,7 +8041,7 @@ KDCore.registerLibraryToLoad(function() {
             func = ref[j];
             try {
               _n = func[0];
-              if ((_n != null) && (this[_n] != null)) {
+              if (_n != null && this[_n] != null) {
                 this[_n](...func[1]);
               }
             } catch (error) {
@@ -5760,7 +8049,7 @@ KDCore.registerLibraryToLoad(function() {
               KDCore.warning(e);
             }
           }
-          return this._requiredFuncs = null;
+          return (this._requiredFuncs = null);
         } catch (error) {
           e = error;
           return KDCore.warning(e);
@@ -5809,7 +8098,7 @@ KDCore.registerLibraryToLoad(function() {
               KDCore.warning(e);
             }
           }
-          return this._loadListeners = null;
+          return (this._loadListeners = null);
         } catch (error) {
           e = error;
           return KDCore.warning(e);
@@ -5835,19 +8124,19 @@ KDCore.registerLibraryToLoad(function() {
 
       _pDD_moving() {
         this.x = TouchInput.x - this._pDDTDelta.x;
-        return this.y = TouchInput.y - this._pDDTDelta.y;
+        return (this.y = TouchInput.y - this._pDDTDelta.y);
       }
 
       _pDD_startMove() {
         var x, y;
-        ({x, y} = TouchInput);
-        this._pDDTDelta = {x, y};
+        ({ x, y } = TouchInput);
+        this._pDDTDelta = { x, y };
         this.__ddIn = true;
       }
 
       _pDD_stopMove() {
         this.__ddIn = false;
-        console.log("DD DRAG POS: ");
+        console.log('DD DRAG POS: ');
         return console.log(this.x, this.y);
       }
 
@@ -5894,7 +8183,7 @@ KDCore.registerLibraryToLoad(function() {
         var e, h, height, margins, s, size, w, width;
         try {
           size = pluginParams.size;
-          ({w, h} = size);
+          ({ w, h } = size);
           try {
             if (String.any(w)) {
               if (isFinite(w)) {
@@ -5921,7 +8210,7 @@ KDCore.registerLibraryToLoad(function() {
             KDCore.warning(e);
             h = 100;
           }
-          ({width, height} = size);
+          ({ width, height } = size);
           try {
             if (String.any(width)) {
               if (isFinite(width)) {
@@ -5969,19 +8258,16 @@ KDCore.registerLibraryToLoad(function() {
           return KDCore.Sprite.FromBitmap(60, 30);
         }
       }
-
-    };
+    }
 
     return Sprite;
-
-  }).call(this, Sprite);
+  }.call(this, Sprite));
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   //@[AUTO EXTEND]
-  return KDCore.TimedUpdate = class TimedUpdate {
+  return (KDCore.TimedUpdate = class TimedUpdate {
     constructor(interval, method) {
       this.interval = interval;
       this.method = method;
@@ -6016,7 +8302,7 @@ KDCore.registerLibraryToLoad(function() {
     }
 
     once() {
-      return this._once = true;
+      return (this._once = true);
     }
 
     onUpdate(method) {
@@ -6024,7 +8310,7 @@ KDCore.registerLibraryToLoad(function() {
     }
 
     stop() {
-      return this.interval = null;
+      return (this.interval = null);
     }
 
     isAlive() {
@@ -6038,7 +8324,7 @@ KDCore.registerLibraryToLoad(function() {
         return;
       }
       value = KDCore.SDK.rand(min, max);
-      return this.interval += value;
+      return (this.interval += value);
     }
 
     call() {
@@ -6052,15 +8338,13 @@ KDCore.registerLibraryToLoad(function() {
         return KDCore.warning(e);
       }
     }
-
-  };
+  });
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   //@[AUTO EXTEND]
-  return KDCore.AnimationKeyFrame = class AnimationKeyFrame {
+  return (KDCore.AnimationKeyFrame = class AnimationKeyFrame {
     constructor(startValue, endValue, duration = 1, func = 'linear') {
       this.startValue = startValue;
       this.endValue = endValue;
@@ -6075,12 +8359,12 @@ KDCore.registerLibraryToLoad(function() {
     }
 
     reset() {
-      return this._t = 0;
+      return (this._t = 0);
     }
 
     update() {
       if (this._t < this._d) {
-        return this._t += 1;
+        return (this._t += 1);
       }
     }
 
@@ -6097,27 +8381,25 @@ KDCore.registerLibraryToLoad(function() {
     }
 
     easingFunc() {
-      if ((this.func != null) && (KDCore.EasingFuncs[this.func] != null)) {
+      if (this.func != null && KDCore.EasingFuncs[this.func] != null) {
         return KDCore.EasingFuncs[this.func];
       } else {
-        console.warn("Easing func " + this.func + " not found!");
+        console.warn('Easing func ' + this.func + ' not found!');
         return this.linear;
       }
     }
 
     // * Default one
     linear(t, b, c, d) {
-      return c * t / d + b;
+      return (c * t) / d + b;
     }
-
-  };
+  });
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   //@[AUTO EXTEND]
-  return KDCore.AnimationKeyLine = class AnimationKeyLine {
+  return (KDCore.AnimationKeyLine = class AnimationKeyLine {
     constructor(keyFramesList, totalDuration = 1, func = 'linear') {
       this.totalDuration = totalDuration;
       this.keyFrames = this._parseKeyFrames(keyFramesList, func);
@@ -6135,7 +8417,7 @@ KDCore.registerLibraryToLoad(function() {
 
     setRepeatsCount(repeatsLeftBase) {
       this.repeatsLeftBase = repeatsLeftBase;
-      return this.repeatsLeft = this.repeatsLeftBase;
+      return (this.repeatsLeft = this.repeatsLeftBase);
     }
 
     setLoop() {
@@ -6145,9 +8427,9 @@ KDCore.registerLibraryToLoad(function() {
     start(startDelay = 0) {
       this.startDelay = startDelay;
       if (this.startDelay === 0) {
-        return this._isStarted = true;
+        return (this._isStarted = true);
       } else {
-        return this._startTimer = this.startDelay * 60;
+        return (this._startTimer = this.startDelay * 60);
       }
     }
 
@@ -6178,9 +8460,11 @@ KDCore.registerLibraryToLoad(function() {
         return;
       }
       if (this.isEnd()) {
-        if (this.repeatsLeft === 0) { // * No repeats at all
+        if (this.repeatsLeft === 0) {
+          // * No repeats at all
           return;
-        } else if (this.repeatsLeft < 0) { // * Infinite Loop
+        } else if (this.repeatsLeft < 0) {
+          // * Infinite Loop
           this._resetKeyframes();
         } else {
           this.repeatsLeft -= 1;
@@ -6224,7 +8508,7 @@ KDCore.registerLibraryToLoad(function() {
           }
           value = KDCore.Utils.getValueWithDP(value);
           endValue = value;
-          if (key === "0") {
+          if (key === '0') {
             duration = 0;
           } else {
             prevKey = keys[index - 1];
@@ -6285,49 +8569,47 @@ KDCore.registerLibraryToLoad(function() {
         this._startTimer -= 1;
         if (this._startTimer <= 0) {
           this._isStarted = true;
-          return this._startTimer = null;
+          return (this._startTimer = null);
         }
       } catch (error) {
         e = error;
         return KDCore.warning(e);
       }
     }
-
-  };
+  });
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   //@[AUTO EXTEND]
-  return KDCore.AnimationRule = class AnimationRule {
+  return (KDCore.AnimationRule = class AnimationRule {
     constructor(animationConfig, obj) {
       var condition, delay, duration, func, keyframes, repeats;
-      if (typeof animationConfig === "string") {
+      if (typeof animationConfig === 'string') {
         animationConfig = KDCore.UI.Builder.ConvertShortcut(animationConfig);
       }
       this.animationConfig = Object.assign(this.defaultConfig(), animationConfig);
-      ({condition} = this.animationConfig);
+      ({ condition } = this.animationConfig);
       if (String.any(condition)) {
         if (eval(condition) === false) {
           return;
         }
       }
-      ({keyframes, duration, func, repeats, delay} = this.animationConfig);
+      ({ keyframes, duration, func, repeats, delay } = this.animationConfig);
       this.prepareKeyFrames(keyframes, obj);
       this.keyLine = new KDCore.AnimationKeyLine(keyframes, duration, func);
       if (repeats == null) {
         repeats = 0;
       }
       this.keyLine.setRepeatsCount(repeats);
-      if ((obj != null) && this.animationConfig.field === "_scaleFactor") {
+      if (obj != null && this.animationConfig.field === '_scaleFactor') {
         this.prepareObject(obj);
       }
-      if (this.animationConfig.relative === true && (obj != null)) {
+      if (this.animationConfig.relative === true && obj != null) {
         this.keyLine.setRelativeValue(obj[this.animationConfig.field]);
       }
       this.keyLine.start(delay);
-      if ((obj != null) && delay <= 0) {
+      if (obj != null && delay <= 0) {
         this.applyAnimation(obj);
       }
       return;
@@ -6337,8 +8619,8 @@ KDCore.registerLibraryToLoad(function() {
       var key, value;
       for (key in keyframes) {
         value = keyframes[key];
-        if (value === "@") {
-          if ((obj != null) && (obj[this.animationConfig.field] != null)) {
+        if (value === '@') {
+          if (obj != null && obj[this.animationConfig.field] != null) {
             keyframes[key] = obj[this.animationConfig.field];
           } else {
             keyframes[key] = 0;
@@ -6368,17 +8650,17 @@ KDCore.registerLibraryToLoad(function() {
 
     defaultConfig() {
       return {
-        field: "opacity",
+        field: 'opacity',
         duration: 1,
-        func: "linear",
+        func: 'linear',
         delay: 0,
         repeats: 0,
         relative: false,
         keyframes: {
-          "0": 0,
-          "100": 255
+          0: 0,
+          100: 255,
         },
-        condition: null
+        condition: null,
       };
     }
 
@@ -6410,7 +8692,7 @@ KDCore.registerLibraryToLoad(function() {
         if (this.keyLine == null) {
           return;
         }
-        return obj[this.animationConfig.field] = this.keyLine.getValue();
+        return (obj[this.animationConfig.field] = this.keyLine.getValue());
       } catch (error) {
         e = error;
         return KDCore.warning(e);
@@ -6420,7 +8702,7 @@ KDCore.registerLibraryToLoad(function() {
     prepareObject(obj) {
       var e;
       try {
-        if ((obj != null) && (obj.onBeforeChangeScaleFactor != null)) {
+        if (obj != null && obj.onBeforeChangeScaleFactor != null) {
           return obj.onBeforeChangeScaleFactor();
         }
       } catch (error) {
@@ -6428,19 +8710,16 @@ KDCore.registerLibraryToLoad(function() {
         return KDCore.warning(e);
       }
     }
-
-  };
+  });
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
-  
-    // * Button (Sprite_XButton)
+KDCore.registerLibraryToLoad(function () {
+  // * Button (Sprite_XButton)
 
-    //@[AUTO EXTEND]
+  //@[AUTO EXTEND]
   //?DEPRECATED
-  return KDCore.Button = class Button extends Sprite {
+  return (KDCore.Button = class Button extends Sprite {
     constructor() {
       super();
       this._mouseIn = false;
@@ -6472,22 +8751,22 @@ KDCore.registerLibraryToLoad(function() {
     }
 
     activateSlowUpdate() {
-      return this._slowUpdateActive = true;
+      return (this._slowUpdateActive = true);
     }
 
     setLocalMode() {
       this._realX = this.x;
       this._realY = this.y;
-      return this._localMode = true;
+      return (this._localMode = true);
     }
 
     setAlphaMode() {
-      return this._checkAlpha = true;
+      return (this._checkAlpha = true);
     }
 
     // * above, below
     setTextPosition(position) {
-      return this._textPosition = position;
+      return (this._textPosition = position);
     }
 
     setHelpText(text, size) {
@@ -6495,11 +8774,11 @@ KDCore.registerLibraryToLoad(function() {
     }
 
     setInfoData(data) {
-      return this._infoData = data;
+      return (this._infoData = data);
     }
 
     setOverrideMode() {
-      return this._override = true;
+      return (this._override = true);
     }
 
     isOverride() {
@@ -6523,7 +8802,7 @@ KDCore.registerLibraryToLoad(function() {
     }
 
     clearClickHandlers() {
-      return this._clickHandlers = [];
+      return (this._clickHandlers = []);
     }
 
     isLocalMode() {
@@ -6531,33 +8810,34 @@ KDCore.registerLibraryToLoad(function() {
     }
 
     setCondition(method) {
-      return this._condition = method;
+      return (this._condition = method);
     }
 
     setConditionForDisable(method) {
-      return this._condition2 = method;
+      return (this._condition2 = method);
     }
 
     getInfoData() {
       return this._infoData;
     }
 
-    simulateClick() { //?NEW
+    simulateClick() {
+      //?NEW
       return this.applyClickedState();
     }
 
-    simulateClickManual() { //?NEW
+    simulateClickManual() {
+      //?NEW
       this.simulateClick();
-      return setTimeout((() => {
+      return setTimeout(() => {
         try {
           return this.applyNormalState();
-        } catch (error) {
-
-        }
-      }), 50);
+        } catch (error) {}
+      }, 50);
     }
 
-    prepare() { //?NEW
+    prepare() {
+      //?NEW
       return this.slowUpdate();
     }
 
@@ -6579,19 +8859,19 @@ KDCore.registerLibraryToLoad(function() {
 
     show() {
       this.visible = true;
-      return this._manualHided = false;
+      return (this._manualHided = false);
     }
 
     hide() {
       this.visible = false;
-      return this._manualHided = true;
+      return (this._manualHided = true);
     }
 
     disable() {
       this._disabled = true;
       this._manualDisabled = true;
       this.refreshEnDisState();
-      return this._mouseIn = false;
+      return (this._mouseIn = false);
     }
 
     enable() {
@@ -6631,10 +8911,10 @@ KDCore.registerLibraryToLoad(function() {
       }
       if (this.cursorInButton()) {
         this._onMouseEnter();
-        return this._mouseIn = true;
+        return (this._mouseIn = true);
       } else {
         this._onMouseLeave();
-        return this._mouseIn = false;
+        return (this._mouseIn = false);
       }
     }
 
@@ -6715,30 +8995,30 @@ KDCore.registerLibraryToLoad(function() {
         return;
       }
       this._updateTextPosition();
-      return this._textSprite.visible = true;
+      return (this._textSprite.visible = true);
     }
 
     _hideText() {
       if (this._textSprite == null) {
         return;
       }
-      return this._textSprite.visible = false;
+      return (this._textSprite.visible = false);
     }
 
     _startComplexTimer() {
       this._stopComplexTimer();
-      return this._cTimer = setTimeout((() => {
+      return (this._cTimer = setTimeout(() => {
         if (this._mouseIn === true) {
-          return this._isNeedShowText = true;
+          return (this._isNeedShowText = true);
         }
-      }), 1000);
+      }, 1000));
     }
 
     _stopComplexTimer() {
       if (this._cTimer != null) {
         clearTimeout(this._cTimer);
       }
-      return this._isNeedShowText = false;
+      return (this._isNeedShowText = false);
     }
 
     updateMouseClick() {
@@ -6778,7 +9058,7 @@ KDCore.registerLibraryToLoad(function() {
 
     callClickHandler() {
       if (this._clickHandlers.length > 0) {
-        return this._clickHandlers.forEach(function(method) {
+        return this._clickHandlers.forEach(function (method) {
           return method();
         });
       }
@@ -6803,10 +9083,10 @@ KDCore.registerLibraryToLoad(function() {
       }
       try {
         result = this._condition();
-        return this.visible = !result;
+        return (this.visible = !result);
       } catch (error) {
         console.warn('wrong condition in button');
-        return this.visible = true;
+        return (this.visible = true);
       }
     }
 
@@ -6828,14 +9108,14 @@ KDCore.registerLibraryToLoad(function() {
 
     setButtonImages(img1, img2, img3, img4) {
       if (this._images != null) {
-        this._images.forEach(function(img) {
+        this._images.forEach(function (img) {
           if (img != null) {
             return img.parent.removeChild(img);
           }
         });
       }
       this._images = [new Sprite(img1), img2 != null ? new Sprite(img2) : void 0, img3 != null ? new Sprite(img3) : void 0, img4 != null ? new Sprite(img4) : void 0];
-      this._images.forEach((img) => {
+      this._images.forEach(img => {
         if (img != null) {
           return this.addChild(img);
         }
@@ -6846,19 +9126,19 @@ KDCore.registerLibraryToLoad(function() {
     applyNormalState() {
       var ref;
       this.refreshImages();
-      return (ref = this._images[0]) != null ? ref.visible = true : void 0;
+      return (ref = this._images[0]) != null ? (ref.visible = true) : void 0;
     }
 
     refreshImages() {
-      return this._images.forEach(function(img) {
-        return img != null ? img.visible = false : void 0;
+      return this._images.forEach(function (img) {
+        return img != null ? (img.visible = false) : void 0;
       });
     }
 
     applyCoverState() {
       this.refreshImages();
       if (this._images[1] != null) {
-        return this._images[1].visible = true;
+        return (this._images[1].visible = true);
       } else {
         return this.applyNormalState();
       }
@@ -6867,7 +9147,7 @@ KDCore.registerLibraryToLoad(function() {
     applyClickedState() {
       this.refreshImages();
       if (this._images[2] != null) {
-        return this._images[2].visible = true;
+        return (this._images[2].visible = true);
       } else {
         return this.applyNormalState();
       }
@@ -6878,7 +9158,7 @@ KDCore.registerLibraryToLoad(function() {
       if (this._textSprite) {
         this.removeChild(this._textSprite);
       }
-      w = Math.round(((size / 10) + 1) * 5 * text.length);
+      w = Math.round((size / 10 + 1) * 5 * text.length);
       h = size + 4;
       this._textSprite = new Sprite(new Bitmap(w, h));
       this._textSprite.bitmap.fontSize = size;
@@ -6904,7 +9184,7 @@ KDCore.registerLibraryToLoad(function() {
     applyDisableState() {
       var ref;
       this.refreshImages();
-      return (ref = this._images[3]) != null ? ref.visible = true : void 0;
+      return (ref = this._images[3]) != null ? (ref.visible = true) : void 0;
     }
 
     refreshEnDisState() {
@@ -6936,16 +9216,16 @@ KDCore.registerLibraryToLoad(function() {
 
     static FromSet(imgName, sourceFolder = null) {
       var button, getterFunc, img0, img1;
-      getterFunc = function(filename) {
+      getterFunc = function (filename) {
         return ImageManager.loadPicture(filename);
       };
       if (sourceFolder != null) {
-        getterFunc = function(filename) {
-          return ImageManager.loadBitmap("img/" + sourceFolder + "/", filename);
+        getterFunc = function (filename) {
+          return ImageManager.loadBitmap('img/' + sourceFolder + '/', filename);
         };
       }
-      img0 = getterFunc(imgName + "_00");
-      img1 = getterFunc(imgName + "_01");
+      img0 = getterFunc(imgName + '_00');
+      img1 = getterFunc(imgName + '_01');
       button = new KDCore.Button();
       button.setButtonImages(img0, img1, img0, img0);
       return button;
@@ -6953,34 +9233,32 @@ KDCore.registerLibraryToLoad(function() {
 
     static FromSetFull(imgName, sourceFolder = null) {
       var button, getterFunc, img0, img1, img2, img3;
-      getterFunc = function(filename) {
+      getterFunc = function (filename) {
         return ImageManager.loadPicture(filename);
       };
       if (sourceFolder != null) {
-        getterFunc = function(filename) {
-          return ImageManager.loadBitmap("img/" + sourceFolder + "/", filename);
+        getterFunc = function (filename) {
+          return ImageManager.loadBitmap('img/' + sourceFolder + '/', filename);
         };
       }
-      img0 = getterFunc(imgName + "_00");
-      img1 = getterFunc(imgName + "_01");
-      img2 = getterFunc(imgName + "_02");
-      img3 = getterFunc(imgName + "_03");
+      img0 = getterFunc(imgName + '_00');
+      img1 = getterFunc(imgName + '_01');
+      img2 = getterFunc(imgName + '_02');
+      img3 = getterFunc(imgName + '_03');
       button = new KDCore.Button();
       button.setButtonImages(img0, img1, img2, img3);
       return button;
     }
-
-  };
+  });
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var Sprite_ActorFace;
   //NUI 1.2
   //rev 18.08.24
 
-    //"type": "face"
+  //"type": "face"
   Sprite_ActorFace = class Sprite_ActorFace extends KDCore.Sprite {
     constructor(settings) {
       super();
@@ -6997,10 +9275,10 @@ KDCore.registerLibraryToLoad(function() {
 
     defaultSettings() {
       return {
-        faceName: "",
+        faceName: '',
         faceIndex: 0,
         size: 144,
-        mirror: false
+        mirror: false,
       };
     }
 
@@ -7020,18 +9298,18 @@ KDCore.registerLibraryToLoad(function() {
 
     dataBindings() {
       return Object.assign(super.dataBindings(), {
-        size: function(v) {
+        size: function (v) {
           return this.setSize(v);
         },
-        faceName: function(v) {
+        faceName: function (v) {
           return this.draw(v, this.settings.faceIndex);
         },
-        faceIndex: function(v) {
+        faceIndex: function (v) {
           return this.draw(this.settings.faceName, v);
         },
-        mirror: function(v) {
+        mirror: function (v) {
           return this.flipX(v);
-        }
+        },
       });
     }
 
@@ -7049,12 +9327,12 @@ KDCore.registerLibraryToLoad(function() {
       }
     }
 
-    draw(faceName = "", faceIndex = 0) {
+    draw(faceName = '', faceIndex = 0) {
       var e;
       try {
         this.settings.faceName = faceName;
         this.settings.faceIndex = faceIndex;
-        if (faceName === "") {
+        if (faceName === '') {
           this.image.bitmap.clear();
           return;
         }
@@ -7070,10 +9348,10 @@ KDCore.registerLibraryToLoad(function() {
       try {
         if (isMirror) {
           this.image.scale.x = -1;
-          return this.image.x = this.settings.size;
+          return (this.image.x = this.settings.size);
         } else {
           this.image.scale.x = 1;
-          return this.image.x = 0;
+          return (this.image.x = 0);
         }
       } catch (error) {
         e = error;
@@ -7141,19 +9419,17 @@ KDCore.registerLibraryToLoad(function() {
         return KDCore.warning(e);
       }
     }
-
   };
-  return KDCore.Sprite_ActorFace = Sprite_ActorFace;
+  return (KDCore.Sprite_ActorFace = Sprite_ActorFace);
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var Sprite_BaseCircle;
   //NUI 1.0
   //rev 28.04.24
 
-    //"type": "circle"
+  //"type": "circle"
   Sprite_BaseCircle = class Sprite_BaseCircle extends KDCore.Sprite {
     constructor(settings) {
       super();
@@ -7172,25 +9448,25 @@ KDCore.registerLibraryToLoad(function() {
         gradientStart: {
           x: 0,
           y: 100,
-          r: 30
+          r: 30,
         },
         gradientEnd: {
           x: 100,
           y: 100,
-          r: 70
+          r: 70,
         },
         fillColor: 0xffffff,
         fillAlpha: 1,
         strokeWidth: 4,
         strokeColor: 0x000000,
-        strokeAlpha: 1
+        strokeAlpha: 1,
       };
     }
 
     defaultGradientSettings() {
       return {
-        "0": "#9ff",
-        "1": "#033"
+        0: '#9ff',
+        1: '#033',
       };
     }
 
@@ -7200,35 +9476,35 @@ KDCore.registerLibraryToLoad(function() {
 
     dataBindings() {
       return Object.assign(super.dataBindings(), {
-        width: function(v) {
+        width: function (v) {
           if (v != null) {
             return this.setSize(v, this.settings.height);
           }
         },
-        height: function(v) {
+        height: function (v) {
           if (v != null) {
             return this.setSize(this.settings.width, v);
           }
         },
-        size: function(v) {
+        size: function (v) {
           if (v != null) {
             return this.setSize(v.width, v.height);
           }
         },
-        stroke: function(v) {
+        stroke: function (v) {
           if (v != null) {
             return this.setStroke(v.width, v.color, v.alpha);
           }
         },
-        fill: function(v) {
+        fill: function (v) {
           if (v != null) {
             return this.setFill(v.color, v.alpha);
           }
-        }
+        },
       });
     }
 
-    setFill(color = "#FFF", alpha = 1) {
+    setFill(color = '#FFF', alpha = 1) {
       var e;
       try {
         this.settings.fillColor = color;
@@ -7241,7 +9517,7 @@ KDCore.registerLibraryToLoad(function() {
       }
     }
 
-    setStroke(color = "#FFF", width = 0, alpha = 1) {
+    setStroke(color = '#FFF', width = 0, alpha = 1) {
       var e;
       try {
         this.settings.strokeColor = color;
@@ -7305,7 +9581,6 @@ KDCore.registerLibraryToLoad(function() {
     _applyGradientTexture(fillGradient) {
       var e;
       try {
-
       } catch (error) {
         /*{ width, height } = @settings
         c = document.createElement("canvas")
@@ -7340,11 +9615,11 @@ KDCore.registerLibraryToLoad(function() {
     _drawBaseCircle() {
       var colorData, d, e, fillAlpha, fillColor, height, strokeAlpha, strokeColor, strokeColorData, width;
       try {
-        ({width, height} = this.settings);
-        ({fillColor, fillAlpha} = this.settings);
+        ({ width, height } = this.settings);
+        ({ fillColor, fillAlpha } = this.settings);
         colorData = this._buildColorData(fillColor, fillAlpha);
         if (this.settings.strokeWidth > 0) {
-          ({strokeColor, strokeAlpha} = this.settings);
+          ({ strokeColor, strokeAlpha } = this.settings);
           strokeColorData = this._buildColorData(strokeColor, strokeAlpha);
           d = this.settings.strokeWidth;
           // * Base Fill
@@ -7418,25 +9693,23 @@ KDCore.registerLibraryToLoad(function() {
         // * Круг (элипс) рисуется от центра, что не удобно
         // при расчёте координат, поэтому сдвигаем в левый вверхний угол
         this.graphics.x = this.settings.width * 0.5;
-        return this.graphics.y = this.settings.height * 0.5;
+        return (this.graphics.y = this.settings.height * 0.5);
       } catch (error) {
         e = error;
         return KDCore.warning(e);
       }
     }
-
   };
-  return KDCore.Sprite_BaseCircle = Sprite_BaseCircle;
+  return (KDCore.Sprite_BaseCircle = Sprite_BaseCircle);
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var Sprite_BaseRect;
   //NUI 1.0
   //rev 28.04.24
 
-    //"type": "rect"
+  //"type": "rect"
   Sprite_BaseRect = class Sprite_BaseRect extends KDCore.Sprite {
     constructor(settings) {
       super();
@@ -7455,24 +9728,24 @@ KDCore.registerLibraryToLoad(function() {
         fillGradient: null, // { gradient stops }
         gradientStart: {
           x: 0,
-          y: 0
+          y: 0,
         },
         gradientEnd: {
           x: 0,
-          y: 100
+          y: 100,
         },
         fillColor: 0xffffff,
         fillAlpha: 1,
         strokeWidth: 4,
         strokeColor: 0x000000,
-        strokeAlpha: 1
+        strokeAlpha: 1,
       };
     }
 
     defaultGradientSettings() {
       return {
-        "0": "#9ff",
-        "1": "#033"
+        0: '#9ff',
+        1: '#033',
       };
     }
 
@@ -7481,7 +9754,7 @@ KDCore.registerLibraryToLoad(function() {
         topLeft: 0,
         topRight: 0,
         bottomRight: 0,
-        bottomLeft: 0
+        bottomLeft: 0,
       };
     }
 
@@ -7491,41 +9764,41 @@ KDCore.registerLibraryToLoad(function() {
 
     dataBindings() {
       return Object.assign(super.dataBindings(), {
-        width: function(v) {
+        width: function (v) {
           if (v != null) {
             return this.setSize(v, this.settings.height);
           }
         },
-        height: function(v) {
+        height: function (v) {
           if (v != null) {
             return this.setSize(this.settings.width, v);
           }
         },
-        size: function(v) {
+        size: function (v) {
           if (v != null) {
             return this.setSize(v.width, v.height);
           }
         },
-        stroke: function(v) {
+        stroke: function (v) {
           if (v != null) {
             return this.setStroke(v.width, v.color, v.alpha);
           }
         },
-        fill: function(v) {
+        fill: function (v) {
           if (v != null) {
             return this.setFill(v.color, v.alpha);
           }
         },
-        gradientStart: function(v) {
+        gradientStart: function (v) {
           if (v != null) {
             return this.setGradientStartEnd(v, this.settings.gradientEnd);
           }
         },
-        gradientEnd: function(v) {
+        gradientEnd: function (v) {
           if (v != null) {
             return this.setGradientStartEnd(this.settings.gradientStart, v);
           }
-        }
+        },
       });
     }
 
@@ -7553,7 +9826,7 @@ KDCore.registerLibraryToLoad(function() {
       }
     }
 
-    setFill(color = "#FFF", alpha = 1) {
+    setFill(color = '#FFF', alpha = 1) {
       var e;
       try {
         this.settings.fillColor = color;
@@ -7566,7 +9839,7 @@ KDCore.registerLibraryToLoad(function() {
       }
     }
 
-    setStroke(color = "#FFF", width = 0, alpha = 1) {
+    setStroke(color = '#FFF', width = 0, alpha = 1) {
       var e;
       try {
         this.settings.strokeColor = color;
@@ -7620,7 +9893,7 @@ KDCore.registerLibraryToLoad(function() {
           gradientSettings = Object.assign(this.defaultGradientSettings(), this.settings.fillGradient);
         }
         this._applyGradientTexture(gradientSettings);
-        if (typeof this.settings.corners === "number") {
+        if (typeof this.settings.corners === 'number') {
           return this._drawBaseRoundedRect();
         } else if (this.settings.corners != null) {
           cornersSettings = Object.assign(this.defaultCornersSettings(), this.settings.corners);
@@ -7638,9 +9911,9 @@ KDCore.registerLibraryToLoad(function() {
         if (KDCore.isMV()) {
           return;
         }
-        ({width, height} = this.settings);
-        c = document.createElement("canvas");
-        ctx = c.getContext("2d");
+        ({ width, height } = this.settings);
+        c = document.createElement('canvas');
+        ctx = c.getContext('2d');
         grd = ctx.createLinearGradient(this.settings.gradientStart.x, this.settings.gradientStart.y, this.settings.gradientEnd.x, this.settings.gradientEnd.y);
         for (key in fillGradient) {
           value = fillGradient[key];
@@ -7666,13 +9939,13 @@ KDCore.registerLibraryToLoad(function() {
       var alpha, c, e, parts;
       try {
         if (color == null) {
-          return "#FFF";
+          return '#FFF';
         }
         if (!String.any(color)) {
-          return "#FFF";
+          return '#FFF';
         }
-        if (color.contains("%")) {
-          parts = color.split("%");
+        if (color.contains('%')) {
+          parts = color.split('%');
           color = parts[0];
           alpha = Number(parts[1]);
           c = KDCore.Color.FromHex(color);
@@ -7684,18 +9957,18 @@ KDCore.registerLibraryToLoad(function() {
       } catch (error) {
         e = error;
         KDCore.warning(e);
-        return "#FFF";
+        return '#FFF';
       }
     }
 
     _drawBaseRoundedRect() {
       var colorData, corners, d, e, fillAlpha, fillColor, height, strokeAlpha, strokeColor, strokeColorData, width;
       try {
-        ({width, height, corners} = this.settings);
-        ({fillColor, fillAlpha} = this.settings);
+        ({ width, height, corners } = this.settings);
+        ({ fillColor, fillAlpha } = this.settings);
         colorData = this._buildColorData(fillColor, fillAlpha);
         if (this.settings.strokeWidth > 0) {
-          ({strokeColor, strokeAlpha} = this.settings);
+          ({ strokeColor, strokeAlpha } = this.settings);
           strokeColorData = this._buildColorData(strokeColor, strokeAlpha);
           d = this.settings.strokeWidth;
           // * Base Fill
@@ -7775,16 +10048,16 @@ KDCore.registerLibraryToLoad(function() {
         if (cornersSettings == null) {
           return;
         }
-        ({width, height} = this.settings);
-        ({fillColor, fillAlpha} = this.settings);
+        ({ width, height } = this.settings);
+        ({ fillColor, fillAlpha } = this.settings);
         colorData = this._buildColorData(fillColor, fillAlpha);
-        ({topLeft, topRight, bottomRight, bottomLeft} = cornersSettings);
+        ({ topLeft, topRight, bottomRight, bottomLeft } = cornersSettings);
         if (this.settings.strokeWidth > 0) {
-          ({strokeColor, strokeAlpha} = this.settings);
+          ({ strokeColor, strokeAlpha } = this.settings);
           strokeColorData = this._buildColorData(strokeColor, strokeAlpha);
           d = this.settings.strokeWidth;
           this._drawComplexRect(0, 0, width, height, colorData, topLeft, topRight, bottomRight, bottomLeft);
-          return this._drawComplexStroke(-d / 2, -d / 2, width + (d / 2), height + (d / 2), strokeColorData, d, topLeft, topRight, bottomRight, bottomLeft);
+          return this._drawComplexStroke(-d / 2, -d / 2, width + d / 2, height + d / 2, strokeColorData, d, topLeft, topRight, bottomRight, bottomLeft);
         } else {
           return this._drawComplexRect(0, 0, width, height, colorData, topLeft, topRight, bottomRight, bottomLeft);
         }
@@ -7869,25 +10142,23 @@ KDCore.registerLibraryToLoad(function() {
       var e;
       try {
         this.width = this.settings.width;
-        return this.height = this.settings.height;
+        return (this.height = this.settings.height);
       } catch (error) {
         e = error;
         return KDCore.warning(e);
       }
     }
-
   };
-  return KDCore.Sprite_BaseRect = Sprite_BaseRect;
+  return (KDCore.Sprite_BaseRect = Sprite_BaseRect);
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var Sprite_ButtonsGroup;
   // * Класс для реализации набора кнопок переключателей (Tabs)
   // * Когда только одна кнопка может быть нажата (выбрана)
 
-    //rev 07.10.21
+  //rev 07.10.21
   Sprite_ButtonsGroup = class Sprite_ButtonsGroup extends KDCore.Sprite {
     // buttonsArray = [
     //       {image: NAME, position: [X,Y]}, ...
@@ -7906,24 +10177,24 @@ KDCore.registerLibraryToLoad(function() {
     }
 
     getSelectedIndex() {
-      return this._buttons.findIndex(function(btn) {
+      return this._buttons.findIndex(function (btn) {
         return !btn.isEnabled();
       });
     }
-
   };
-  (function() {    //╒═════════════════════════════════════════════════════════════════════════╛
+  (function () {
+    //╒═════════════════════════════════════════════════════════════════════════╛
     // ■ PRIVATE
     //╒═════════════════════════════════════════════════════════════════════════╛
     //---------------------------------------------------------------------------
     var _;
     //@[DEFINES]
     _ = Sprite_ButtonsGroup.prototype;
-    _._createButton = function({image, position}) {
+    _._createButton = function ({ image, position }) {
       var btn, index, method;
       // * Так как кнопки работают как переключатели, то 03 должен быть всегда
       index = this._buttons.length;
-      btn = new KDCore.ButtonM(image, true, "Alpha");
+      btn = new KDCore.ButtonM(image, true, 'Alpha');
       btn.move(position);
       method = () => {
         return this._onButtonClick(index);
@@ -7932,7 +10203,7 @@ KDCore.registerLibraryToLoad(function() {
       this._buttons.push(btn);
       this.add(btn);
     };
-    _._onButtonClick = function(index = 0) {
+    _._onButtonClick = function (index = 0) {
       var ref;
       this._resetAllButtons();
       if ((ref = this._buttons[index]) != null) {
@@ -7942,7 +10213,7 @@ KDCore.registerLibraryToLoad(function() {
         this.clickCallback(index);
       }
     };
-    _._resetAllButtons = function() {
+    _._resetAllButtons = function () {
       var btn, i, len, ref;
       ref = this._buttons;
       for (i = 0, len = ref.length; i < len; i++) {
@@ -7955,19 +10226,18 @@ KDCore.registerLibraryToLoad(function() {
   })();
   // ■ END PRIVATE
   //---------------------------------------------------------------------------
-  return KDCore.Sprite_ButtonsGroup = Sprite_ButtonsGroup;
+  return (KDCore.Sprite_ButtonsGroup = Sprite_ButtonsGroup);
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var Sprite_ButtonsGroupHandler;
   // * Класс для реализации набора кнопок переключателей (Tabs)
   // * Когда только одна кнопка может быть нажата (выбрана)
   // * В отличии от Sprite_ButtonsGroup, принимает массив
   // * уже созданных кнопок
 
-    //rev 10.07.22
+  //rev 10.07.22
   Sprite_ButtonsGroupHandler = class Sprite_ButtonsGroupHandler extends KDCore.Sprite {
     // _buttons = [Button object with enable, disable, isEnable, addClickHandler methods]
     constructor(_buttons, clickCallback, activeIndex = 0) {
@@ -7985,20 +10255,20 @@ KDCore.registerLibraryToLoad(function() {
     }
 
     getSelectedIndex() {
-      return this._buttons.findIndex(function(btn) {
+      return this._buttons.findIndex(function (btn) {
         return !btn.isEnabled();
       });
     }
-
   };
-  (function() {    //╒═════════════════════════════════════════════════════════════════════════╛
+  (function () {
+    //╒═════════════════════════════════════════════════════════════════════════╛
     // ■ PRIVATE
     //╒═════════════════════════════════════════════════════════════════════════╛
     //---------------------------------------------------------------------------
     var _;
     //@[DEFINES]
     _ = Sprite_ButtonsGroupHandler.prototype;
-    _._processButton = function(btn, index) {
+    _._processButton = function (btn, index) {
       var method;
       // * Так как кнопки работают как переключатели, то 03 должен быть всегда
       method = () => {
@@ -8007,7 +10277,7 @@ KDCore.registerLibraryToLoad(function() {
       btn.addClickHandler(method);
       this.add(btn);
     };
-    _._onButtonClick = function(index = 0) {
+    _._onButtonClick = function (index = 0) {
       var ref;
       this._resetAllButtons();
       if ((ref = this._buttons[index]) != null) {
@@ -8017,7 +10287,7 @@ KDCore.registerLibraryToLoad(function() {
         this.clickCallback(index);
       }
     };
-    _._resetAllButtons = function() {
+    _._resetAllButtons = function () {
       var btn, i, len, ref;
       ref = this._buttons;
       for (i = 0, len = ref.length; i < len; i++) {
@@ -8030,17 +10300,16 @@ KDCore.registerLibraryToLoad(function() {
   })();
   // ■ END PRIVATE
   //---------------------------------------------------------------------------
-  return KDCore.Sprite_ButtonsGroupHandler = Sprite_ButtonsGroupHandler;
+  return (KDCore.Sprite_ButtonsGroupHandler = Sprite_ButtonsGroupHandler);
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var Sprite_Gauge;
   //NUI 1.1
   //rev 16.06.24
 
-    //"type": "gauge"
+  //"type": "gauge"
   Sprite_Gauge = class Sprite_Gauge extends KDCore.Sprite {
     constructor(settings) {
       super();
@@ -8055,19 +10324,19 @@ KDCore.registerLibraryToLoad(function() {
 
     defaultSettings() {
       return {
-        fillMode: "color", //image, plane, color
-        fillColor: "#ffffff",
+        fillMode: 'color', //image, plane, color
+        fillColor: '#ffffff',
         fillOpacity: 255,
-        imageName: "", // * for fill, if fillMode is image, for plane if fillMode is plane
-        folderName: "pictures",
+        imageName: '', // * for fill, if fillMode is image, for plane if fillMode is plane
+        folderName: 'pictures',
         margins: 2, // * For plane image
-        width: "auto",
-        height: "auto",
-        mask: "",
-        backColor: "#000000",
-        backImage: "",
+        width: 'auto',
+        height: 'auto',
+        mask: '',
+        backColor: '#000000',
+        backImage: '',
         backOpacity: 255,
-        vertical: false
+        vertical: false,
       };
     }
 
@@ -8088,7 +10357,7 @@ KDCore.registerLibraryToLoad(function() {
         if (this.isNotHaveBounds()) {
           return 0;
         }
-        if (this.settings.width !== "auto") {
+        if (this.settings.width !== 'auto') {
           return this.settings.width;
         } else if (this._gaugeSpr != null) {
           return this._gaugeSpr.realWidth(); //TODO: Gauge Modes
@@ -8106,7 +10375,7 @@ KDCore.registerLibraryToLoad(function() {
         if (this.isNotHaveBounds()) {
           return 0;
         }
-        if (this.settings.height !== "auto") {
+        if (this.settings.height !== 'auto') {
           return this.settings.height;
         } else if (this._gaugeSpr != null) {
           return this._gaugeSpr.realHeight(); //TODO: Gauge Modes
@@ -8120,41 +10389,41 @@ KDCore.registerLibraryToLoad(function() {
 
     dataBindings() {
       return Object.assign(super.dataBindings(), {
-        width: function(v) {
+        width: function (v) {
           if (v != null) {
             return this.setSize(v, this.settings.height);
           }
         },
-        height: function(v) {
+        height: function (v) {
           if (v != null) {
             return this.setSize(this.settings.width, v);
           }
         },
-        size: function(v) {
+        size: function (v) {
           if (v != null) {
             return this.setSize(v.width, v.height);
           }
         },
-        rate: function(v) {
+        rate: function (v) {
           if (v != null) {
             return this.draw(v);
           }
         },
-        fillImage: function(v) {
+        fillImage: function (v) {
           if (v != null) {
             return this.setFillImage(v);
           }
         },
-        fillColor: function(v) {
+        fillColor: function (v) {
           if (v != null) {
             return this.setFillColor(v);
           }
         },
-        fillOpacity: function(v) {
+        fillOpacity: function (v) {
           if (v != null) {
             return this.setFillOpacity(v);
           }
-        }
+        },
       });
     }
 
@@ -8181,7 +10450,7 @@ KDCore.registerLibraryToLoad(function() {
       var e, ref;
       try {
         this.settings.fillOpacity = opacity;
-        return (ref = this.fillLayer) != null ? ref.opacity = opacity : void 0;
+        return (ref = this.fillLayer) != null ? (ref.opacity = opacity) : void 0;
       } catch (error) {
         e = error;
         return KDCore.warning(e);
@@ -8205,7 +10474,6 @@ KDCore.registerLibraryToLoad(function() {
     setFillImage(imageName) {
       var e;
       try {
-
       } catch (error) {
         //TODO:
         e = error;
@@ -8213,13 +10481,13 @@ KDCore.registerLibraryToLoad(function() {
       }
     }
 
-    setSize(width = "auto", height = "auto") {
+    setSize(width = 'auto', height = 'auto') {
       var e;
       try {
-        if (width !== "auto") {
+        if (width !== 'auto') {
           width = this._getValueByStr(width, 'width', this);
         }
-        if (height !== "auto") {
+        if (height !== 'auto') {
           height = this._getValueByStr(height, 'height', this);
         }
         if (width != null) {
@@ -8255,7 +10523,7 @@ KDCore.registerLibraryToLoad(function() {
           return;
         }
         this._gaugeSpr.removeFromParent();
-        return this._gaugeSpr = null;
+        return (this._gaugeSpr = null);
       } catch (error) {
         e = error;
         return KDCore.warning(e);
@@ -8268,14 +10536,14 @@ KDCore.registerLibraryToLoad(function() {
         this._gaugeSpr = new KDCore.Sprite();
         this._gaugeBaseLayer.add(this._gaugeSpr);
         switch (this.settings.fillMode) {
-          case "image":
+          case 'image':
             return this._createImageGauge();
-          case "plane":
+          case 'plane':
             return this._createPlaneGauge();
-          case "color":
+          case 'color':
             return this._createColorGauge();
           default:
-            return console.warn("Unknown Gauge fillMode: " + this.settings.fillMode);
+            return console.warn('Unknown Gauge fillMode: ' + this.settings.fillMode);
         }
       } catch (error) {
         e = error;
@@ -8290,7 +10558,7 @@ KDCore.registerLibraryToLoad(function() {
           imageName: this.settings.imageName,
           folderName: this.settings.folderName,
           width: this.settings.width,
-          height: this.settings.height
+          height: this.settings.height,
         });
         return this._gaugeSourceImage.addLoadListener(this._onGaugeFillImageLoaded.bind(this));
       } catch (error) {
@@ -8331,11 +10599,11 @@ KDCore.registerLibraryToLoad(function() {
     _createPlaneGauge() {
       var e;
       try {
-        if (this.settings.width === "auto") {
+        if (this.settings.width === 'auto') {
           // * Нельзя создать Plane Gauge с auto размером, поэтому задаём стандартные значения
           this.settings.width = 80;
         }
-        if (this.settings.height === "auto") {
+        if (this.settings.height === 'auto') {
           this.settings.height = 20;
         }
         this._addBackground(this.settings.width, this.settings.height);
@@ -8344,7 +10612,7 @@ KDCore.registerLibraryToLoad(function() {
           folderName: this.settings.folderName,
           width: this.settings.width,
           height: this.settings.height,
-          margins: this.settings.margins
+          margins: this.settings.margins,
         });
         this.fillLayer.opacity = this.settings.fillOpacity;
         this._gaugeSpr.add(this.fillLayer);
@@ -8359,11 +10627,11 @@ KDCore.registerLibraryToLoad(function() {
     _createColorGauge() {
       var e;
       try {
-        if (this.settings.width === "auto") {
+        if (this.settings.width === 'auto') {
           // * Нельзя создать цветную Gauge с auto размером, поэтому задаём стандартные значения
           this.settings.width = 80;
         }
-        if (this.settings.height === "auto") {
+        if (this.settings.height === 'auto') {
           this.settings.height = 20;
         }
         this._addBackground(this.settings.width, this.settings.height);
@@ -8427,7 +10695,7 @@ KDCore.registerLibraryToLoad(function() {
           imageName: this.settings.mask,
           folderName: this.settings.folderName,
           width: this.settings.width,
-          height: this.settings.height
+          height: this.settings.height,
         });
         this._gaugeSpr.mask = gaugeMask.image;
         this._gaugeSpr.add(gaugeMask);
@@ -8458,7 +10726,7 @@ KDCore.registerLibraryToLoad(function() {
           imageName: this.settings.backImage,
           folderName: this.settings.folderName,
           width: this.settings.width,
-          height: this.settings.height
+          height: this.settings.height,
         });
       } catch (error) {
         e = error;
@@ -8488,11 +10756,11 @@ KDCore.registerLibraryToLoad(function() {
       var e;
       try {
         switch (this.settings.fillMode) {
-          case "image":
+          case 'image':
             return this._drawImageGauge(percent);
-          case "plane":
+          case 'plane':
             return this._drawPlaneGauge(percent);
-          case "color":
+          case 'color':
             return this._drawColorGauge(percent);
         }
       } catch (error) {
@@ -8548,14 +10816,12 @@ KDCore.registerLibraryToLoad(function() {
         return KDCore.warning(e);
       }
     }
-
   };
-  return KDCore.Sprite_Gauge = Sprite_Gauge;
+  return (KDCore.Sprite_Gauge = Sprite_Gauge);
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var Sprite_Group;
   //NUI 1.0
   //rev 02.08.24
@@ -8564,12 +10830,12 @@ KDCore.registerLibraryToLoad(function() {
       super();
       this.settings = Object.assign({}, this.defaultSettings(), settings);
       if (this.settings.horizontalNavigation === true) {
-        this.pIsVerticalKeyboardNavigation = function() {
+        this.pIsVerticalKeyboardNavigation = function () {
           return false;
         };
       }
       if (this.settings.freeNagivation === true) {
-        this.pIsFreeKeyboardNavigation = function() {
+        this.pIsFreeKeyboardNavigation = function () {
           return true;
         };
       }
@@ -8598,7 +10864,7 @@ KDCore.registerLibraryToLoad(function() {
       ref = this.children;
       for (i = 0, len = ref.length; i < len; i++) {
         c = ref[i];
-        if ((c.isLoaded != null) && !c.isLoaded()) {
+        if (c.isLoaded != null && !c.isLoaded()) {
           this._startWaitLoading(dataObject);
           return;
         }
@@ -8610,7 +10876,7 @@ KDCore.registerLibraryToLoad(function() {
       var e;
       this._dataObjectRef = _dataObjectRef;
       try {
-        return this._isNeedWaitLoadingChild = true;
+        return (this._isNeedWaitLoadingChild = true);
       } catch (error) {
         e = error;
         return KDCore.warning(e);
@@ -8622,38 +10888,38 @@ KDCore.registerLibraryToLoad(function() {
         keyboardHandling: false,
         horizontalNavigation: false,
         freeNagivation: false,
-        width: "auto",
-        height: "auto"
+        width: 'auto',
+        height: 'auto',
       };
     }
 
     dataBindings() {
       return Object.assign(super.dataBindings(), {
-        width: function(v) {
+        width: function (v) {
           if (v != null) {
             return this.setSize(v, this.settings.height);
           }
         },
-        height: function(v) {
+        height: function (v) {
           if (v != null) {
             return this.setSize(this.settings.width, v);
           }
         },
-        size: function(v) {
+        size: function (v) {
           if (v != null) {
             return this.setSize(v.width, v.height);
           }
-        }
+        },
       });
     }
 
-    setSize(width = "auto", height = "auto") {
+    setSize(width = 'auto', height = 'auto') {
       var e;
       try {
-        if (width !== "auto") {
+        if (width !== 'auto') {
           width = this._getValueByStr(width, 'width', this);
         }
-        if (height !== "auto") {
+        if (height !== 'auto') {
           height = this._getValueByStr(height, 'height', this);
         }
         if (width != null) {
@@ -8675,8 +10941,8 @@ KDCore.registerLibraryToLoad(function() {
         if (this.isNotHaveBounds()) {
           return 0;
         }
-        if (this.settings.width === "auto") {
-          return this._calculateMax("x", "width");
+        if (this.settings.width === 'auto') {
+          return this._calculateMax('x', 'width');
         }
       } catch (error) {
         e = error;
@@ -8691,8 +10957,8 @@ KDCore.registerLibraryToLoad(function() {
         if (this.isNotHaveBounds()) {
           return 0;
         }
-        if (this.settings.height === "auto") {
-          return this._calculateMax("y", "height");
+        if (this.settings.height === 'auto') {
+          return this._calculateMax('y', 'height');
         }
       } catch (error) {
         e = error;
@@ -8742,25 +11008,23 @@ KDCore.registerLibraryToLoad(function() {
       var e;
       try {
         this.width = this.realWidth();
-        return this.height = this.realHeight();
+        return (this.height = this.realHeight());
       } catch (error) {
         e = error;
         return KDCore.warning(e);
       }
     }
-
   };
-  return KDCore.Sprite_Group = Sprite_Group;
+  return (KDCore.Sprite_Group = Sprite_Group);
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var Sprite_Image;
   //NUI 1.0
   //rev 09.08.24
 
-    //"type": "image"
+  //"type": "image"
   Sprite_Image = class Sprite_Image extends KDCore.Sprite {
     constructor(settings) {
       super();
@@ -8775,7 +11039,7 @@ KDCore.registerLibraryToLoad(function() {
     isLoaded() {
       var e;
       try {
-        if (this.settings.width !== "auto" && this.settings.height !== "auto") {
+        if (this.settings.width !== 'auto' && this.settings.height !== 'auto') {
           return true;
         } else {
           return this._loaded === true;
@@ -8789,11 +11053,11 @@ KDCore.registerLibraryToLoad(function() {
 
     defaultSettings() {
       return {
-        imageName: "",
-        folderName: "pictures",
-        width: "auto",
-        height: "auto",
-        keepAspect: false
+        imageName: '',
+        folderName: 'pictures',
+        width: 'auto',
+        height: 'auto',
+        keepAspect: false,
       };
     }
 
@@ -8803,11 +11067,11 @@ KDCore.registerLibraryToLoad(function() {
         if (this.isNotHaveBounds()) {
           return 0;
         }
-        if (this.settings.width === "auto") {
+        if (this.settings.width === 'auto') {
           if (this._srcBitmap != null) {
             return this._srcBitmap.width;
           } else {
-            if ((this.image.bitmap != null) && this.image.bitmap.isReady()) {
+            if (this.image.bitmap != null && this.image.bitmap.isReady()) {
               return this.image.bitmap.width;
             }
           }
@@ -8827,11 +11091,11 @@ KDCore.registerLibraryToLoad(function() {
         if (this.isNotHaveBounds()) {
           return 0;
         }
-        if (this.settings.height === "auto") {
+        if (this.settings.height === 'auto') {
           if (this._srcBitmap != null) {
             return this._srcBitmap.height;
           } else {
-            if ((this.image.bitmap != null) && this.image.bitmap.isReady()) {
+            if (this.image.bitmap != null && this.image.bitmap.isReady()) {
               return this.image.bitmap.height;
             }
           }
@@ -8847,37 +11111,37 @@ KDCore.registerLibraryToLoad(function() {
 
     dataBindings() {
       return Object.assign(super.dataBindings(), {
-        width: function(v) {
+        width: function (v) {
           if (v != null) {
             return this.setSize(v, this.settings.height);
           }
         },
-        height: function(v) {
+        height: function (v) {
           if (v != null) {
             return this.setSize(this.settings.width, v);
           }
         },
-        size: function(v) {
+        size: function (v) {
           if (v != null) {
             return this.setSize(v.width, v.height);
           }
         },
-        image: function(v) {
+        image: function (v) {
           return this.draw(v);
         },
-        icon: function(v) {
+        icon: function (v) {
           return this.drawIcon(v);
-        }
+        },
       });
     }
 
-    setSize(width = "auto", height = "auto") {
+    setSize(width = 'auto', height = 'auto') {
       var e;
       try {
-        if (width !== "auto") {
+        if (width !== 'auto') {
           width = this._getValueByStr(width, 'width', this);
         }
-        if (height !== "auto") {
+        if (height !== 'auto') {
           height = this._getValueByStr(height, 'height', this);
         }
         if (width != null) {
@@ -8913,7 +11177,7 @@ KDCore.registerLibraryToLoad(function() {
         if (isFinite(iconIndex)) {
           return this.draw(iconIndex);
         } else {
-          return this.draw("");
+          return this.draw('');
         }
       } catch (error) {
         e = error;
@@ -8921,7 +11185,7 @@ KDCore.registerLibraryToLoad(function() {
       }
     }
 
-    draw(imageName = "") {
+    draw(imageName = '') {
       var e;
       try {
         if (String.any(imageName) && isFinite(imageName)) {
@@ -8953,7 +11217,7 @@ KDCore.registerLibraryToLoad(function() {
       var e, w;
       try {
         w = this.settings.width;
-        if (w === "auto") {
+        if (w === 'auto') {
           w = 32;
         }
         this.settings.height = w;
@@ -8970,9 +11234,9 @@ KDCore.registerLibraryToLoad(function() {
     _drawImage(imageName) {
       var e, folderName;
       try {
-        ({folderName} = this.settings);
+        ({ folderName } = this.settings);
         this._loaded = false;
-        this._srcBitmap = ImageManager.loadBitmap('img/' + folderName + "/", imageName);
+        this._srcBitmap = ImageManager.loadBitmap('img/' + folderName + '/', imageName);
         return this._srcBitmap.addLoadListener(this._onBitmapLoaded.bind(this));
       } catch (error) {
         e = error;
@@ -9003,7 +11267,7 @@ KDCore.registerLibraryToLoad(function() {
         b = this._srcBitmap;
         //TODO: Опция, чтобы размер был с учётом аспекта
         if (this.settings.keepAspect === true) {
-          ({width, height} = this._calculateAspectRatio(this.image.bitmap.width, this.image.bitmap.height, this._srcBitmap.width, this._srcBitmap.height));
+          ({ width, height } = this._calculateAspectRatio(this.image.bitmap.width, this.image.bitmap.height, this._srcBitmap.width, this._srcBitmap.height));
           fw = width;
           fh = height;
         } else {
@@ -9033,21 +11297,19 @@ KDCore.registerLibraryToLoad(function() {
         e = error;
         KDCore.warning(e);
       }
-      return {width, height};
+      return { width, height };
     }
-
   };
-  return KDCore.Sprite_Image = Sprite_Image;
+  return (KDCore.Sprite_Image = Sprite_Image);
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var Sprite_ImgButton;
   //NUI 1.0
   //rev 24.07.24
 
-    //"type": "legacyButton"
+  //"type": "legacyButton"
   Sprite_ImgButton = class Sprite_ImgButton extends KDCore.Sprite {
     constructor(settings) {
       super();
@@ -9058,21 +11320,21 @@ KDCore.registerLibraryToLoad(function() {
 
     defaultSettings() {
       return {
-        width: "auto",
-        height: "auto",
-        imageName: "",
+        width: 'auto',
+        height: 'auto',
+        imageName: '',
         isFull: false,
-        folderName: "pictures",
+        folderName: 'pictures',
         isCheckAlpha: false,
         handler: null,
-        forceSize: false // * Force change button bitmaps size
+        forceSize: false, // * Force change button bitmaps size
       };
     }
 
     isLoaded() {
       var e;
       try {
-        if (this.settings.width !== "auto" && this.settings.height !== "auto") {
+        if (this.settings.width !== 'auto' && this.settings.height !== 'auto') {
           return true;
         } else {
           return this._loaded === true;
@@ -9089,7 +11351,7 @@ KDCore.registerLibraryToLoad(function() {
         if (this.isNotHaveBounds()) {
           return 0;
         }
-        if (this.settings.width === "auto") {
+        if (this.settings.width === 'auto') {
           return this.button.realWidth();
         }
       } catch (error) {
@@ -9105,7 +11367,7 @@ KDCore.registerLibraryToLoad(function() {
         if (this.isNotHaveBounds()) {
           return 0;
         }
-        if (this.settings.height === "auto") {
+        if (this.settings.height === 'auto') {
           return this.button.realHeight();
         }
       } catch (error) {
@@ -9117,42 +11379,42 @@ KDCore.registerLibraryToLoad(function() {
 
     dataBindings() {
       return Object.assign(super.dataBindings(), {
-        width: function(v) {
+        width: function (v) {
           if (v != null) {
             return this.setSize(v, this.settings.height);
           }
         },
-        height: function(v) {
+        height: function (v) {
           if (v != null) {
             return this.setSize(this.settings.width, v);
           }
         },
-        size: function(v) {
+        size: function (v) {
           if (v != null) {
             return this.setSize(v.width, v.height);
           }
         },
-        image: function(v) {
+        image: function (v) {
           return this.setImage(v);
         },
-        enable: function(v) {
+        enable: function (v) {
           if (v != null) {
             return this.setEnabledState(v);
           }
         },
-        handler: function(v) {
+        handler: function (v) {
           return this.setClickHandler(v);
-        }
+        },
       });
     }
 
-    setSize(width = "auto", height = "auto") {
+    setSize(width = 'auto', height = 'auto') {
       var e;
       try {
-        if (width !== "auto") {
+        if (width !== 'auto') {
           width = this._getValueByStr(width, 'width', this);
         }
-        if (height !== "auto") {
+        if (height !== 'auto') {
           height = this._getValueByStr(height, 'height', this);
         }
         if (width != null) {
@@ -9171,7 +11433,7 @@ KDCore.registerLibraryToLoad(function() {
       }
     }
 
-    setImage(imageName = "") {
+    setImage(imageName = '') {
       var e;
       try {
         if (this.button != null) {
@@ -9190,7 +11452,7 @@ KDCore.registerLibraryToLoad(function() {
         }
         if (this._lastButtonHandler != null) {
           this.setClickHandler(this._lastButtonHandler);
-          return this._lastButtonHandler = null;
+          return (this._lastButtonHandler = null);
         }
       } catch (error) {
         e = error;
@@ -9223,7 +11485,7 @@ KDCore.registerLibraryToLoad(function() {
           return;
         }
         this.button.clearClickHandler();
-        if ((handler != null) && typeof handler === "function") {
+        if (handler != null && typeof handler === 'function') {
           this.settings.handler = handler;
           return this.button.addClickHandler(handler);
         }
@@ -9270,11 +11532,11 @@ KDCore.registerLibraryToLoad(function() {
     }
 
     isMouseIn() {
-      return (this.button != null) && this.button.isMouseIn();
+      return this.button != null && this.button.isMouseIn();
     }
 
     isActive() {
-      return (this.button != null) && this.button.isActive();
+      return this.button != null && this.button.isActive();
     }
 
     isDisabled() {
@@ -9282,7 +11544,7 @@ KDCore.registerLibraryToLoad(function() {
     }
 
     isEnabled() {
-      return (this.button != null) && this.button.isEnabled();
+      return this.button != null && this.button.isEnabled();
     }
 
     addClickHandler() {
@@ -9338,19 +11600,19 @@ KDCore.registerLibraryToLoad(function() {
           return;
         }
         this.button = new KDCore.ButtonM(this.settings.imageName, this.settings.isFull, this.settings.folderName);
-        if (this.settings.forceSize === true && this.settings.width !== "auto" && this.settings.height !== "auto") {
+        if (this.settings.forceSize === true && this.settings.width !== 'auto' && this.settings.height !== 'auto') {
           sourceFolder = this.settings.folderName;
           size = {
             width: this.settings.width,
-            height: this.settings.height
+            height: this.settings.height,
           };
-          this.button._getGetter = function() {
+          this.button._getGetter = function () {
             var getterFunc;
-            getterFunc = function(filename) {
+            getterFunc = function (filename) {
               var bitmap, outputBitmap;
               outputBitmap = new Bitmap(size.width, size.height);
               bitmap = ImageManager.loadBitmap('img/' + sourceFolder + '/', filename);
-              bitmap.addLoadListener(function() {
+              bitmap.addLoadListener(function () {
                 return outputBitmap.blt(bitmap, 0, 0, bitmap.width, bitmap.height, 0, 0, size.width, size.height);
               });
               return outputBitmap;
@@ -9362,7 +11624,7 @@ KDCore.registerLibraryToLoad(function() {
           this.button._setImageState(0);
         }
         if (this.settings.isCheckAlpha === true) {
-          this.button.isCheckAlpha = function() {
+          this.button.isCheckAlpha = function () {
             return true;
           };
         }
@@ -9402,7 +11664,7 @@ KDCore.registerLibraryToLoad(function() {
         this.button.removeFromParent();
         this._loaded = false;
         if ($gameTemp.kdButtonUnderMouse === this.button) {
-          return $gameTemp.kdButtonUnderMouse = null;
+          return ($gameTemp.kdButtonUnderMouse = null);
         }
       } catch (error) {
         e = error;
@@ -9414,26 +11676,24 @@ KDCore.registerLibraryToLoad(function() {
       var e;
       try {
         this.width = this.realWidth();
-        return this.height = this.realHeight();
+        return (this.height = this.realHeight());
       } catch (error) {
         e = error;
         return KDCore.warning(e);
       }
     }
-
   };
-  return KDCore.Sprite_ImgButton = Sprite_ImgButton;
+  return (KDCore.Sprite_ImgButton = Sprite_ImgButton);
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var Sprite_ItemsList;
   // * Класс который позволяет сделать список (на основе Window_Selectable), но из Sprite элементов, а не Draw на Bitmap
 
-    //rev 02.05.24
+  //rev 02.05.24
 
-    //TODO: Dynamic items height, controls handlers support
+  //TODO: Dynamic items height, controls handlers support
   Sprite_ItemsList = class Sprite_ItemsList extends Window_Selectable {
     constructor(r, settings = {}) {
       if (KDCore.isMV()) {
@@ -9454,7 +11714,7 @@ KDCore.registerLibraryToLoad(function() {
       return {
         maxCols: 1,
         isHaveSelectionEffect: false,
-        selectionEffects: ["glow;distance:12;outerStrength:3"],
+        selectionEffects: ['glow;distance:12;outerStrength:3'],
         scaleItemsWidth: false,
         scaleItemsHeight: false,
         defautItemHeight: 36,
@@ -9462,8 +11722,8 @@ KDCore.registerLibraryToLoad(function() {
         backgroundType: 2,
         itemsPadding: 12,
         isHaveInOutAnimation: false,
-        inAnimation: "field:x;duration:0.15;keyframes:0=0,100=4",
-        outAnimation: "field:x;duration:0.15;keyframes:0=4,100=0"
+        inAnimation: 'field:x;duration:0.15;keyframes:0=0,100=4',
+        outAnimation: 'field:x;duration:0.15;keyframes:0=4,100=0',
       };
     }
 
@@ -9523,7 +11783,7 @@ KDCore.registerLibraryToLoad(function() {
     }
 
     setSelectionHandler(handler) {
-      return this.pOnSelectionChanged = handler;
+      return (this.pOnSelectionChanged = handler);
     }
 
     itemAt(index) {
@@ -9560,7 +11820,7 @@ KDCore.registerLibraryToLoad(function() {
       if (KDCore.isMV()) {
         return this.setCursorRect(0, 0, 0, 0);
       } else {
-        return this._cursorSprite.visible = false;
+        return (this._cursorSprite.visible = false);
       }
     }
 
@@ -9569,16 +11829,16 @@ KDCore.registerLibraryToLoad(function() {
       this._itemsContainer.y = -this._scrollY;
       return this._updateItemsSelectionState();
     }
-
   };
-  (function() {    //╒═════════════════════════════════════════════════════════════════════════╛
+  (function () {
+    //╒═════════════════════════════════════════════════════════════════════════╛
     // ■ PRIVATE
     //╒═════════════════════════════════════════════════════════════════════════╛
     //---------------------------------------------------------------------------
     var _;
     //@[DEFINES]
     _ = Sprite_ItemsList.prototype;
-    _._createItemsContainer = function() {
+    _._createItemsContainer = function () {
       var ref;
       if (!this.isDrawWindowDefaultItemsBack()) {
         if ((ref = this._contentsBackSprite) != null) {
@@ -9593,14 +11853,14 @@ KDCore.registerLibraryToLoad(function() {
       this.addChild(this._downArrowSprite);
       return this.addChild(this._upArrowSprite);
     };
-    _._setupBackgroundType = function() {
+    _._setupBackgroundType = function () {
       return this.setBackgroundType(this.settings.backgroundType);
     };
-    _._createWindowContentMask = function() {
+    _._createWindowContentMask = function () {
       var e, m, maskBitmap;
       try {
         maskBitmap = new Bitmap(this.width - this._padding * 2, this.height - this._padding * 2);
-        maskBitmap.fillAll("#FFF");
+        maskBitmap.fillAll('#FFF');
         m = new Sprite(maskBitmap);
         this._windowItemsContentLayer.mask = m;
         return this._windowItemsContentLayer.addChild(m);
@@ -9609,7 +11869,7 @@ KDCore.registerLibraryToLoad(function() {
         return KDCore.warning(e);
       }
     };
-    _._adjustAutoItemsHeight = function(item) {
+    _._adjustAutoItemsHeight = function (item) {
       var e;
       try {
         if (item == null) {
@@ -9624,14 +11884,14 @@ KDCore.registerLibraryToLoad(function() {
           }
         }
         if (this.singleItemHeight === 0 || !this.singleItemHeight) {
-          return this.singleItemHeight = 36;
+          return (this.singleItemHeight = 36);
         }
       } catch (error) {
         e = error;
         return KDCore.warning(e);
       }
     };
-    _._clearPreviousItems = function() {
+    _._clearPreviousItems = function () {
       var c, e, i, j, len, len1, ref, results, toRemove;
       try {
         toRemove = [];
@@ -9651,7 +11911,7 @@ KDCore.registerLibraryToLoad(function() {
         return KDCore.warning(e);
       }
     };
-    _._drawNewItems = function() {
+    _._drawNewItems = function () {
       var e, i, index, item, len, ref, results;
       try {
         ref = this.getAllItems();
@@ -9666,7 +11926,7 @@ KDCore.registerLibraryToLoad(function() {
         return KDCore.warning(e);
       }
     };
-    _._addNewItemToList = function(item, index) {
+    _._addNewItemToList = function (item, index) {
       var e, rect;
       try {
         if (item == null) {
@@ -9682,7 +11942,7 @@ KDCore.registerLibraryToLoad(function() {
         return KDCore.warning(e);
       }
     };
-    _._adjustItemWidthAndHeight = function(item) {
+    _._adjustItemWidthAndHeight = function (item) {
       var e, scaleFactor;
       try {
         if (item == null) {
@@ -9694,14 +11954,14 @@ KDCore.registerLibraryToLoad(function() {
         }
         if (this.isNeedScaleItemsH()) {
           scaleFactor = this.lineHeight() / this._getItemHeight(item);
-          return item.scale.y = scaleFactor;
+          return (item.scale.y = scaleFactor);
         }
       } catch (error) {
         e = error;
         return KDCore.warning(e);
       }
     };
-    _._getItemWidth = function(item) {
+    _._getItemWidth = function (item) {
       var e, v;
       v = this._defaultItemWidth();
       try {
@@ -9724,10 +11984,10 @@ KDCore.registerLibraryToLoad(function() {
       }
       return v;
     };
-    _._defaultItemWidth = function() {
+    _._defaultItemWidth = function () {
       return this.width - this._padding * 2;
     };
-    _._getItemHeight = function(item) {
+    _._getItemHeight = function (item) {
       var e, v;
       v = 36;
       try {
@@ -9750,7 +12010,7 @@ KDCore.registerLibraryToLoad(function() {
       }
       return v;
     };
-    _._updateItemsSelectionState = function() {
+    _._updateItemsSelectionState = function () {
       var e;
       try {
         if (KDCore.isMZ()) {
@@ -9770,7 +12030,7 @@ KDCore.registerLibraryToLoad(function() {
         return KDCore.warning(e);
       }
     };
-    _._disableSelectionForAll = function() {
+    _._disableSelectionForAll = function () {
       var e, i, item, len, ref, results;
       try {
         if (this._prevSelectedIndex === -2) {
@@ -9789,13 +12049,13 @@ KDCore.registerLibraryToLoad(function() {
         return KDCore.warning(e);
       }
     };
-    _._selectItem = function(item) {
+    _._selectItem = function (item) {
       var e;
       try {
         if (item == null) {
           return;
         }
-        if ((this._prevSelectedIndex != null) && this._prevSelectedIndex >= 0) {
+        if (this._prevSelectedIndex != null && this._prevSelectedIndex >= 0) {
           this._deselectItem(this.itemAt(this._prevSelectedIndex));
         }
         this._playItemInAnimation(item);
@@ -9809,7 +12069,7 @@ KDCore.registerLibraryToLoad(function() {
         return KDCore.warning(e);
       }
     };
-    _._playItemInAnimation = function(item) {
+    _._playItemInAnimation = function (item) {
       var e;
       try {
         if (!this.settings.isHaveInOutAnimation) {
@@ -9822,13 +12082,13 @@ KDCore.registerLibraryToLoad(function() {
           return;
         }
         this._playItemAnimation(item, this.settings.inAnimation);
-        return this._isHaveInAnimation = true;
+        return (this._isHaveInAnimation = true);
       } catch (error) {
         e = error;
         return KDCore.warning(e);
       }
     };
-    _._selectItemVisually = function(item) {
+    _._selectItemVisually = function (item) {
       var e;
       try {
         if (item == null) {
@@ -9845,13 +12105,13 @@ KDCore.registerLibraryToLoad(function() {
           return;
         }
         KDCore.UI.Builder.ApplyEffects(item, this.settings.selectionEffects);
-        return this._isSelectionEffectBeenAdded = true;
+        return (this._isSelectionEffectBeenAdded = true);
       } catch (error) {
         e = error;
         return KDCore.warning(e);
       }
     };
-    _._deselectItem = function(item) {
+    _._deselectItem = function (item) {
       var e;
       try {
         if (item == null) {
@@ -9868,7 +12128,7 @@ KDCore.registerLibraryToLoad(function() {
         return KDCore.warning(e);
       }
     };
-    _._playItemOutAnimation = function(item) {
+    _._playItemOutAnimation = function (item) {
       var e;
       try {
         if (!this.settings.isHaveInOutAnimation) {
@@ -9884,13 +12144,13 @@ KDCore.registerLibraryToLoad(function() {
           return;
         }
         this._playItemAnimation(item, this.settings.outAnimation);
-        return this._isHaveInAnimation = false;
+        return (this._isHaveInAnimation = false);
       } catch (error) {
         e = error;
         return KDCore.warning(e);
       }
     };
-    _._playItemAnimation = function(item, animation) {
+    _._playItemAnimation = function (item, animation) {
       var e, root;
       try {
         if (item == null) {
@@ -9900,7 +12160,7 @@ KDCore.registerLibraryToLoad(function() {
         if (root == null) {
           return;
         }
-        if (typeof animation === "string") {
+        if (typeof animation === 'string') {
           animation = KDCore.UI.Builder.ConvertShortcut(animation);
         }
         return root.setAnimationRule(animation);
@@ -9909,7 +12169,7 @@ KDCore.registerLibraryToLoad(function() {
         return KDCore.warning(e);
       }
     };
-    _._deselectItemVisually = function(item) {
+    _._deselectItemVisually = function (item) {
       var e;
       try {
         if (item == null) {
@@ -9917,14 +12177,14 @@ KDCore.registerLibraryToLoad(function() {
         }
         if (this._isSelectionEffectBeenAdded === true) {
           item.filters = [];
-          return this._isSelectionEffectBeenAdded = false;
+          return (this._isSelectionEffectBeenAdded = false);
         }
       } catch (error) {
         e = error;
         return KDCore.warning(e);
       }
     };
-    _._selectItemAtIndex = function(index) {
+    _._selectItemAtIndex = function (index) {
       var e, item;
       try {
         if (this._prevSelectedIndex !== index) {
@@ -9933,7 +12193,7 @@ KDCore.registerLibraryToLoad(function() {
             return;
           }
           this._selectItem(item);
-          return this._prevSelectedIndex = index;
+          return (this._prevSelectedIndex = index);
         }
       } catch (error) {
         e = error;
@@ -9943,17 +12203,16 @@ KDCore.registerLibraryToLoad(function() {
   })();
   // ■ END PRIVATE
   //---------------------------------------------------------------------------
-  return KDCore.Sprite_ItemsList = Sprite_ItemsList;
+  return (KDCore.Sprite_ItemsList = Sprite_ItemsList);
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var Sprite_ItemsListN;
   //NUI 1.0
   //rev 03.05.24
 
-    //type: "list"
+  //type: "list"
   // * Этот класс служит только как Wrapper, чтобы можно было задавать настроки List через NUI схему
   Sprite_ItemsListN = class Sprite_ItemsListN extends KDCore.Sprite {
     constructor(settings) {
@@ -9964,10 +12223,13 @@ KDCore.registerLibraryToLoad(function() {
     }
 
     defaultSettings() {
-      return Object.assign({
-        width: 240,
-        height: 420
-      }, KDCore.Sprite_ItemsList.prototype.defaultSetting());
+      return Object.assign(
+        {
+          width: 240,
+          height: 420,
+        },
+        KDCore.Sprite_ItemsList.prototype.defaultSetting(),
+      );
     }
 
     /* (See parent class, this is just for reference)
@@ -9987,26 +12249,26 @@ KDCore.registerLibraryToLoad(function() {
            }*/
     dataBindings() {
       return Object.assign(super.dataBindings(), {
-        width: function(v) {
+        width: function (v) {
           if (v != null) {
             return this.setSize(v, this.settings.height);
           }
         },
-        height: function(v) {
+        height: function (v) {
           if (v != null) {
             return this.setSize(this.settings.width, v);
           }
         },
-        size: function(v) {
+        size: function (v) {
           if (v != null) {
             return this.setSize(v.width, v.height);
           }
         },
-        maxCols: function(v) {
+        maxCols: function (v) {
           if (v != null) {
             return this.setMaxCols(v);
           }
-        }
+        },
       });
     }
 
@@ -10121,7 +12383,7 @@ KDCore.registerLibraryToLoad(function() {
 
     // * END WRAPPED
 
-      // * Dev, (not use settings) , чтобы визуально видеть размеры окна при подгонке
+    // * Dev, (not use settings) , чтобы визуально видеть размеры окна при подгонке
     setBackgroundType() {
       var ref;
       return (ref = this.list) != null ? ref.setBackgroundType(...arguments) : void 0;
@@ -10158,7 +12420,7 @@ KDCore.registerLibraryToLoad(function() {
         this._lastSelectedIndex = this.list.index();
         this._lastHandlers = this.list._handlers;
         this.removeChild(this.list);
-        return this.list = null;
+        return (this.list = null);
       } catch (error) {
         e = error;
         return KDCore.warning(e);
@@ -10168,12 +12430,15 @@ KDCore.registerLibraryToLoad(function() {
     _createListWithSettings(settings) {
       var e;
       try {
-        this.list = new KDCore.Sprite_ItemsList({
-          x: 0,
-          y: 0,
-          width: settings.width,
-          height: settings.height
-        }, settings);
+        this.list = new KDCore.Sprite_ItemsList(
+          {
+            x: 0,
+            y: 0,
+            width: settings.width,
+            height: settings.height,
+          },
+          settings,
+        );
         return this.addChild(this.list);
       } catch (error) {
         e = error;
@@ -10200,20 +12465,18 @@ KDCore.registerLibraryToLoad(function() {
         if (this._isBeenActive === true) {
           this.list.activate();
         }
-        return this._isHaveStoredData = false;
+        return (this._isHaveStoredData = false);
       } catch (error) {
         e = error;
         return KDCore.warning(e);
       }
     }
-
   };
-  return KDCore.Sprite_ItemsListN = Sprite_ItemsListN;
+  return (KDCore.Sprite_ItemsListN = Sprite_ItemsListN);
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var Sprite_NUI;
   //NUI 1.0
   //rev 06.05.24
@@ -10259,7 +12522,7 @@ KDCore.registerLibraryToLoad(function() {
         if (owner == null) {
           owner = this;
         }
-        if (scheme["type"] != null) {
+        if (scheme['type'] != null) {
           this.nuiElement = KDCore.UI.Builder.Make(scheme, owner, this);
         } else {
           this.nuiElement = KDCore.UI.Builder.Factory(scheme, owner, this._afterLoadNuiAutoRefreshTime())[0];
@@ -10279,25 +12542,23 @@ KDCore.registerLibraryToLoad(function() {
           return;
         }
         this.nuiElement.removeFromParent();
-        return this.nuiElement = null;
+        return (this.nuiElement = null);
       } catch (error) {
         e = error;
         return KDCore.warning(e);
       }
     }
-
   };
-  return KDCore.Sprite_NUI = Sprite_NUI;
+  return (KDCore.Sprite_NUI = Sprite_NUI);
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var Sprite_Plane;
   //NUI 1.0
   //rev 25.04.24
 
-    //type: "plane"
+  //type: "plane"
   Sprite_Plane = class Sprite_Plane extends KDCore.Sprite {
     constructor(settings) {
       var bottom, folderName, imageName, left, margins, right, textureSource, top;
@@ -10306,11 +12567,11 @@ KDCore.registerLibraryToLoad(function() {
       this.plane = null;
       this.planeContainer = new KDCore.Sprite();
       this.addChild(this.planeContainer);
-      ({imageName, margins, folderName} = this.settings);
+      ({ imageName, margins, folderName } = this.settings);
       if (isFinite(margins)) {
         left = top = right = bottom = margins;
       } else {
-        ({left, top, right, bottom} = margins);
+        ({ left, top, right, bottom } = margins);
       }
       textureSource = ImageManager.loadBitmap('img/' + folderName + '/', imageName);
       textureSource.addLoadListener(() => {
@@ -10344,11 +12605,11 @@ KDCore.registerLibraryToLoad(function() {
 
     defaultSettings() {
       return {
-        imageName: "",
+        imageName: '',
         width: 100,
         height: 100,
         margins: 20,
-        folderName: "pictures"
+        folderName: 'pictures',
       };
     }
 
@@ -10373,21 +12634,21 @@ KDCore.registerLibraryToLoad(function() {
     //TODO: IMAGE
     dataBindings() {
       return Object.assign(super.dataBindings(), {
-        width: function(v) {
+        width: function (v) {
           if (v != null) {
             return this.setSize(v, this.plane.height);
           }
         },
-        height: function(v) {
+        height: function (v) {
           if (v != null) {
             return this.setSize(this.plane.width, v);
           }
         },
-        size: function(v) {
+        size: function (v) {
           if (v != null) {
             return this.setSize(v.width, v.height);
           }
-        }
+        },
       });
     }
 
@@ -10400,20 +12661,18 @@ KDCore.registerLibraryToLoad(function() {
           return;
         }
         this.plane.width = this.settings.width;
-        return this.plane.height = this.settings.height;
+        return (this.plane.height = this.settings.height);
       } catch (error) {
         e = error;
         return KDCore.warning(e);
       }
     }
-
   };
-  return KDCore.Sprite_Plane = Sprite_Plane;
+  return (KDCore.Sprite_Plane = Sprite_Plane);
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var Sprite_SButton;
   //NUI 1.0
   //rev 23.07.24
@@ -10460,7 +12719,8 @@ KDCore.registerLibraryToLoad(function() {
           this.filters = [];
           this._desaturated = false;
         }
-        if ((this.settings.disabledTint != null) && this._isEnabled === false) { // * Return to normal Tint
+        if (this.settings.disabledTint != null && this._isEnabled === false) {
+          // * Return to normal Tint
           this.applyTint(this.settings.activeTint, this.settings.tintAlpha);
         }
         this._isEnabled = true;
@@ -10475,7 +12735,7 @@ KDCore.registerLibraryToLoad(function() {
       var e;
       try {
         this._applyDisabledEffect();
-        return this._isEnabled = false;
+        return (this._isEnabled = false);
       } catch (error) {
         e = error;
         return KDCore.warning(e);
@@ -10519,51 +12779,51 @@ KDCore.registerLibraryToLoad(function() {
         imageMargins: 20,
         width: 160,
         height: 60,
-        clickSe: "Cursor1",
+        clickSe: 'Cursor1',
         desaturateWhenDisabled: false,
-        tint: "",
-        overTint: 0xFFFFDD,
-        activeTint: 0xAAAAAA,
+        tint: '',
+        overTint: 0xffffdd,
+        activeTint: 0xaaaaaa,
         tintAlpha: 0.5,
-        disabledTint: 0xAAAAAA,
+        disabledTint: 0xaaaaaa,
         disabledTintAlpha: 0.5,
-        keyboardKey: "",
+        keyboardKey: '',
         keyboardHandled: true,
-        enabled: true
+        enabled: true,
       };
     }
 
     //TODO: IMAGE!
     dataBindings() {
       return Object.assign(super.dataBindings(), {
-        width: function(v) {
+        width: function (v) {
           if (v != null) {
             return this.setSize(v, this.settings.height);
           }
         },
-        height: function(v) {
+        height: function (v) {
           if (v != null) {
             return this.setSize(this.settings.width, v);
           }
         },
-        size: function(v) {
+        size: function (v) {
           if (v != null) {
             return this.setSize(v.width, v.height);
           }
         },
-        style: function(v) {
+        style: function (v) {
           if (v != null) {
             return this.updateStyle(v);
           }
         },
-        handler: function(v) {
+        handler: function (v) {
           return this.setClickHandler(v);
         },
-        enable: function(v) {
+        enable: function (v) {
           if (v != null) {
             return this.setEnabledState(v);
           }
-        }
+        },
       });
     }
 
@@ -10609,8 +12869,8 @@ KDCore.registerLibraryToLoad(function() {
       var e;
       try {
         this.settings.onClick = null;
-        if ((handler != null) && typeof handler === 'function') {
-          return this.settings.onClick = handler;
+        if (handler != null && typeof handler === 'function') {
+          return (this.settings.onClick = handler);
         }
       } catch (error) {
         e = error;
@@ -10690,9 +12950,9 @@ KDCore.registerLibraryToLoad(function() {
         this.buttonPlane = new KDCore.Sprite_Plane({
           imageName: this.settings.imageName,
           margins: this.settings.imageMargins,
-          folderName: this.settings.folderName
+          folderName: this.settings.folderName,
         });
-        ({width, height} = this.settings);
+        ({ width, height } = this.settings);
         this.buttonPlane.setSize(width, height);
         return this.addChild(this.buttonPlane);
       } catch (error) {
@@ -10741,14 +13001,14 @@ KDCore.registerLibraryToLoad(function() {
           this._resetTintFilter();
           return;
         }
-        if (typeof tintValue === "string") {
+        if (typeof tintValue === 'string') {
           if (!String.any(tintValue)) {
             this._resetTintFilter();
             return;
           }
           tintValue = KDCore.Utils.string2hex(tintValue);
         }
-        return this.buttonPlane.filters = [new PIXI.filters.ColorOverlayFilter(tintValue, tintAlpha)];
+        return (this.buttonPlane.filters = [new PIXI.filters.ColorOverlayFilter(tintValue, tintAlpha)]);
       } catch (error) {
         e = error;
         return KDCore.warning(e);
@@ -10758,7 +13018,7 @@ KDCore.registerLibraryToLoad(function() {
     _resetTintFilter() {
       var e;
       try {
-        return this.buttonPlane.filters = [];
+        return (this.buttonPlane.filters = []);
       } catch (error) {
         e = error;
         return KDCore.warning(e);
@@ -10850,7 +13110,7 @@ KDCore.registerLibraryToLoad(function() {
             if (this._isUnderMouse === true) {
               this._onTap();
             }
-            return this._isMousePressed = false;
+            return (this._isMousePressed = false);
           }
         }
       } catch (error) {
@@ -10870,15 +13130,14 @@ KDCore.registerLibraryToLoad(function() {
         return KDCore.warning(e);
       }
     }
-
   };
-  return KDCore.Sprite_SButton = Sprite_SButton;
+  return (KDCore.Sprite_SButton = Sprite_SButton);
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
-  return (function() {    //NUI 1.3
+KDCore.registerLibraryToLoad(function () {
+  return (function () {
+    //NUI 1.3
     //rev 18.11.24
 
     //"type": "textPro"
@@ -10926,7 +13185,7 @@ KDCore.registerLibraryToLoad(function() {
         } catch (error) {
           e = error;
           KDCore.warning(e);
-          return "";
+          return '';
         }
         return outputText;
       }
@@ -10944,24 +13203,24 @@ KDCore.registerLibraryToLoad(function() {
             }
             outputText = window.__kdSharedTextProTextColorSourceWindow.convertEscapeCharacters(inputText);
           } else {
-            outputText = "";
+            outputText = '';
           }
         } catch (error) {
           e = error;
           KDCore.warning(e);
-          return "";
+          return '';
         }
         return outputText;
       }
 
       _makeInitialTextState(text) {
         return {
-          "text": text,
-          "buffer": "",
-          "index": 0,
-          "color": "", // * "" default
-          "fontSize": -1, // * -1 default
-          "iconIndex": -1 // * -1 none
+          text: text,
+          buffer: '',
+          index: 0,
+          color: '', // * "" default
+          fontSize: -1, // * -1 default
+          iconIndex: -1, // * -1 none
         };
       }
 
@@ -10986,7 +13245,7 @@ KDCore.registerLibraryToLoad(function() {
             this._saveTextConfig(textState);
             return this._processControlCharacter(textState, c);
           } else {
-            return textState.buffer += c;
+            return (textState.buffer += c);
           }
         } catch (error) {
           e = error;
@@ -10999,13 +13258,13 @@ KDCore.registerLibraryToLoad(function() {
         try {
           if (textState.buffer.length > 0 || textState.iconIndex > 0) {
             this._textsConfigs.push({
-              "text": textState.buffer,
-              "color": textState.color,
-              "fontSize": textState.fontSize,
-              "iconIndex": textState.iconIndex
+              text: textState.buffer,
+              color: textState.color,
+              fontSize: textState.fontSize,
+              iconIndex: textState.iconIndex,
             });
-            textState.buffer = "";
-            return textState.iconIndex = -1;
+            textState.buffer = '';
+            return (textState.iconIndex = -1);
           }
         } catch (error) {
           e = error;
@@ -11035,12 +13294,12 @@ KDCore.registerLibraryToLoad(function() {
             textState.index += arr[0].length;
             return arr[0].toUpperCase();
           } else {
-            return "";
+            return '';
           }
         } catch (error) {
           e = error;
           KDCore.warning(e);
-          return "";
+          return '';
         }
       }
 
@@ -11049,47 +13308,47 @@ KDCore.registerLibraryToLoad(function() {
         try {
           //TODO: chex param?
           switch (code) {
-            case "C":
+            case 'C':
               colorIndex = this._obtainEscapeParam(textState);
               if (colorIndex > 0) {
                 if (KDCore.isMV()) {
-                  return textState.color = window.__kdSharedTextProTextColorSourceWindow.textColor(colorIndex);
+                  return (textState.color = window.__kdSharedTextProTextColorSourceWindow.textColor(colorIndex));
                 } else {
-                  return textState.color = ColorManager.textColor(colorIndex);
+                  return (textState.color = ColorManager.textColor(colorIndex));
                 }
               } else {
-                return textState.color = "";
+                return (textState.color = '');
               }
               break;
-            case "I":
+            case 'I':
               iconIndex = this._obtainEscapeParam(textState);
               if (iconIndex > 0) {
                 textState.iconIndex = iconIndex;
                 // * Иконка - это отдельный спрайт, так что сохраняем текущий текст как отдельный
                 return this._saveTextConfig(textState);
               } else {
-                return textState.iconIndex = -1;
+                return (textState.iconIndex = -1);
               }
               break;
-            case "FS":
+            case 'FS':
               fontSize = this._obtainEscapeParam(textState);
-              return textState.fontSize = fontSize;
-            case "{": // * Make font bigger by 1
+              return (textState.fontSize = fontSize);
+            case '{': // * Make font bigger by 1
               currentFontSize = textState.fontSize;
               if (currentFontSize === -1) {
                 //TODO: ???
                 currentFontSize = this.settings.font.size;
               }
-              return textState.fontSize = currentFontSize + 1;
-            case "}":
+              return (textState.fontSize = currentFontSize + 1);
+            case '}':
               currentFontSize = textState.fontSize;
               if (currentFontSize === -1) {
                 //TODO: ???
                 currentFontSize = this.settings.font.size;
               }
-              return textState.fontSize = currentFontSize - 1;
+              return (textState.fontSize = currentFontSize - 1);
             default:
-              return KDCore.warning("Sprite_TextPro: Unknown escape code: " + code);
+              return KDCore.warning('Sprite_TextPro: Unknown escape code: ' + code);
           }
         } catch (error) {
           e = error;
@@ -11106,15 +13365,14 @@ KDCore.registerLibraryToLoad(function() {
             textState.index += arr[0].length;
             return parseInt(arr[0].slice(1));
           } else {
-            return "";
+            return '';
           }
         } catch (error) {
           e = error;
           KDCore.warning(e);
-          return "";
+          return '';
         }
       }
-
     };
     KDCore.TextProParser = TextProParser;
     TextProElementsBuilder = class TextProElementsBuilder {
@@ -11174,16 +13432,16 @@ KDCore.registerLibraryToLoad(function() {
           icon = new KDCore.Sprite_Image({
             imageName: config.iconIndex,
             width: iconSize,
-            height: iconSize
+            height: iconSize,
           });
           paddingGroup = new KDCore.Sprite_Group({
             width: iconSize + this.settings.iconPadding.left + this.settings.iconPadding.right,
-            height: iconSize + this.settings.iconPadding.top + this.settings.iconPadding.bottom
+            height: iconSize + this.settings.iconPadding.top + this.settings.iconPadding.bottom,
           });
           paddingGroup.addChild(icon);
-          icon.setPosition("center", "center");
+          icon.setPosition('center', 'center');
           line.addChild(paddingGroup);
-          return paddingGroup.setPosition("prevEndX", this._textElementVerticalPosition());
+          return paddingGroup.setPosition('prevEndX', this._textElementVerticalPosition());
         } catch (error) {
           e = error;
           return KDCore.warning(e);
@@ -11201,14 +13459,14 @@ KDCore.registerLibraryToLoad(function() {
           if (String.any(config.color)) {
             textSettings.textColor = config.color;
           }
-          textSettings.alignment = "left";
+          textSettings.alignment = 'left';
           textSettings.multiline = false;
           textSettings.verticalCentered = false;
           textSettings.actualSize = true;
           //TODO: margins control code \MX, \MY?
           textSettings.margins = {
-            "x": 0,
-            "y": 0
+            x: 0,
+            y: 0,
           };
           //console.log("Create text with settings " + JSON.stringify(textSettings))
           text = new KDCore.UI.Sprite_UIText2(textSettings, this.userTextStyle);
@@ -11222,7 +13480,7 @@ KDCore.registerLibraryToLoad(function() {
           //text.realWidth = f.bind(text)
           //text.realHeight = f2.bind(text)
           //text.setSize(metrics.width, metrics.height)
-          return text.setPosition("prevEndX", this._textElementVerticalPosition());
+          return text.setPosition('prevEndX', this._textElementVerticalPosition());
         } catch (error) {
           e = error;
           return KDCore.warning(e);
@@ -11233,7 +13491,7 @@ KDCore.registerLibraryToLoad(function() {
         var e;
         try {
           if (this.settings.verticalCentered === true) {
-            return "center";
+            return 'center';
           }
         } catch (error) {
           e = error;
@@ -11241,9 +13499,8 @@ KDCore.registerLibraryToLoad(function() {
         }
         return 0;
       }
-
     };
-    return KDCore.Sprite_TextPro = class Sprite_TextPro extends KDCore.Sprite {
+    return (KDCore.Sprite_TextPro = class Sprite_TextPro extends KDCore.Sprite {
       constructor(settings = {}, userTextStyle1 = {}) {
         super();
         this.userTextStyle = userTextStyle1;
@@ -11304,51 +13561,51 @@ KDCore.registerLibraryToLoad(function() {
 
       dataBindings() {
         return Object.assign(super.dataBindings(), {
-          text: function(v) {
+          text: function (v) {
             return this.drawText(v);
           },
-          style: function(v) {
+          style: function (v) {
             if (v != null) {
               return this.updateStyle(v);
             }
           },
-          width: function(v) {
+          width: function (v) {
             if (v != null) {
               return this.setSize(v, this.realHeight());
             }
           },
-          height: function(v) {
+          height: function (v) {
             if (v != null) {
               return this.setSize(this.realWidth(), v);
             }
           },
-          size: function(v) {
+          size: function (v) {
             if (v != null) {
               return this.setSize(v.width, v.height);
             }
           },
-          textColor: function(v) {
+          textColor: function (v) {
             if (v != null) {
               return this.updateStyle({
-                textColor: v
+                textColor: v,
               });
             }
           },
-          fontSize: function(v) {
+          fontSize: function (v) {
             if (v != null) {
               return this.updateFontSize(v);
             }
           },
-          iconSize: function(v) {
+          iconSize: function (v) {
             if (v != null) {
               return this.updateIconSize(v);
             }
           },
-          verticalSpacing: function(v) {
+          verticalSpacing: function (v) {
             if (v != null) {
               return this.updateVerticalSpacing(v);
             }
-          }
+          },
         });
       }
 
@@ -11360,8 +13617,8 @@ KDCore.registerLibraryToLoad(function() {
           return this.updateStyle({
             size: {
               width: w,
-              height: h
-            }
+              height: h,
+            },
           });
         } catch (error) {
           e = error;
@@ -11373,11 +13630,11 @@ KDCore.registerLibraryToLoad(function() {
         var e, font;
         try {
           font = Object.assign({}, this.settings.font);
-          if (typeof fontSize === "string") {
+          if (typeof fontSize === 'string') {
             fontSize = this._getValueByStr(fontSize, 'height', this);
           }
           font.size = fontSize;
-          return this.updateStyle({font});
+          return this.updateStyle({ font });
         } catch (error) {
           e = error;
           return KDCore.warning(e);
@@ -11387,10 +13644,10 @@ KDCore.registerLibraryToLoad(function() {
       updateIconSize(iconSize) {
         var e;
         try {
-          if (typeof iconSize === "string") {
+          if (typeof iconSize === 'string') {
             iconSize = this._getValueByStr(iconSize, 'height', this);
           }
-          return this.updateStyle({iconSize});
+          return this.updateStyle({ iconSize });
         } catch (error) {
           e = error;
           return KDCore.warning(e);
@@ -11400,11 +13657,11 @@ KDCore.registerLibraryToLoad(function() {
       updateVerticalSpacing(spacing) {
         var e;
         try {
-          if (typeof spacing === "string") {
+          if (typeof spacing === 'string') {
             spacing = this._getValueByStr(spacing, 'height', this);
           }
           return this.updateStyle({
-            verticalSpacing: spacing
+            verticalSpacing: spacing,
           });
         } catch (error) {
           e = error;
@@ -11442,10 +13699,10 @@ KDCore.registerLibraryToLoad(function() {
               left: 2,
               right: 2,
               top: 0,
-              bottom: 0
+              bottom: 0,
             },
             actualSize: false,
-            verticalSpacing: 4 // * only for multiline
+            verticalSpacing: 4, // * only for multiline
           });
         } catch (error) {
           e = error;
@@ -11458,7 +13715,7 @@ KDCore.registerLibraryToLoad(function() {
         var e;
         try {
           this._textsContainer.x += this.settings.margins.x;
-          return this._textsContainer.y += this.settings.margins.y;
+          return (this._textsContainer.y += this.settings.margins.y);
         } catch (error) {
           e = error;
           return KDCore.warning(e);
@@ -11517,7 +13774,7 @@ KDCore.registerLibraryToLoad(function() {
         var e;
         try {
           if (this.settings.verticalCentered === true) {
-            return "center";
+            return 'center';
           }
         } catch (error) {
           e = error;
@@ -11549,8 +13806,8 @@ KDCore.registerLibraryToLoad(function() {
           maxLineWidth = this.settings.size.width;
           maxHeight = this.settings.size.height;
           currentWidth = 0;
-          currentHeight = function() {
-            return lines.reduce(function(sum, line) {
+          currentHeight = function () {
+            return lines.reduce(function (sum, line) {
               return sum + line.realHeight();
             }, 0);
           };
@@ -11583,7 +13840,7 @@ KDCore.registerLibraryToLoad(function() {
               line.y += line.realHeight() + this.settings.verticalSpacing;
             } else {
               line.addChild(el);
-              el.setPosition("prevEndX", this._textElementVerticalPosition());
+              el.setPosition('prevEndX', this._textElementVerticalPosition());
             }
           }
         } catch (error) {
@@ -11602,20 +13859,18 @@ KDCore.registerLibraryToLoad(function() {
             spr = ref[i];
             spr.removeFromParent();
           }
-          return this._textLines = [];
+          return (this._textLines = []);
         } catch (error) {
           e = error;
           return KDCore.warning(e);
         }
       }
-
-    };
+    });
   })();
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad((function() {
+KDCore.registerLibraryToLoad(function () {
   var Sprite_TilingFrame;
   Sprite_TilingFrame = class Sprite_TilingFrame extends KDCore.Sprite {
     constructor(width, height, skinBitmap) {
@@ -11677,7 +13932,7 @@ KDCore.registerLibraryToLoad((function() {
       sprite.setFrame(0, 0, fw, fh);
       sprite.move(m, m);
       sprite.scale.x = w / fw;
-      return sprite.scale.y = h / fh;
+      return (sprite.scale.y = h / fh);
     }
 
     _refreshTFrame() {
@@ -11689,14 +13944,14 @@ KDCore.registerLibraryToLoad((function() {
         x: 0,
         y: 0,
         width: this.width,
-        height: this.height
+        height: this.height,
       };
       // * Координаты рамки на картинке
       srect = {
         x: fw,
         y: 0,
         width: fw,
-        height: fh
+        height: fh,
       };
       m = this._frameThickness(); // * Толщина
       ref = this._outFrame.children;
@@ -11764,14 +14019,12 @@ KDCore.registerLibraryToLoad((function() {
         child.visible = dw > 0 && dh > 0;
       }
     }
-
   };
-  return KDCore.Sprite_TilingFrame = Sprite_TilingFrame;
-}));
-
+  return (KDCore.Sprite_TilingFrame = Sprite_TilingFrame);
+});
 
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var Window_ExtTextLineBase;
   // * Данное окно используется как основа для Sprite_UITextExt
   //rev 07.10.21
@@ -11789,7 +14042,7 @@ KDCore.registerLibraryToLoad(function() {
 
     // * Нет отступов
     updatePadding() {
-      return this.padding = 0;
+      return (this.padding = 0);
     }
 
     // * Нет отступов
@@ -11815,12 +14068,12 @@ KDCore.registerLibraryToLoad(function() {
 
     // * Более гибкая настройка размера текста при { }
     makeFontBigger() {
-      return this.contents.fontSize += 1;
+      return (this.contents.fontSize += 1);
     }
 
     makeFontSmaller() {
       if (this.contents.fontSize > 1) {
-        return this.contents.fontSize -= 1;
+        return (this.contents.fontSize -= 1);
       }
     }
 
@@ -11830,7 +14083,7 @@ KDCore.registerLibraryToLoad(function() {
         return;
       }
       if (this.styleSettings.textColor != null) {
-        return this.contents.textColor = this.styleSettings.textColor;
+        return (this.contents.textColor = this.styleSettings.textColor);
       }
     }
 
@@ -11850,28 +14103,26 @@ KDCore.registerLibraryToLoad(function() {
         this.contents.fontItalic = this.fontSettings.italic;
       }
     }
-
   };
-  return KDCore.Window_ExtTextLineBase = Window_ExtTextLineBase;
+  return (KDCore.Window_ExtTextLineBase = Window_ExtTextLineBase);
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   // * Button M
   //------------------------------------------------------------------------------
   //@[AUTO EXTEND]
   // * Button Mini - упрощённый класс Sprite_XButton (KDCore.Button)
 
-    // * Принимает название файла изображения кнопки без _00
+  // * Принимает название файла изображения кнопки без _00
   // * Названия изображения должны быть в стандартном формате _00, _01, [_03]
   // * _02 - не используются в этом классе
 
-    // * Класс использует глобальную временную переменную для определения находится ли мышь в зоне кнопки
+  // * Класс использует глобальную временную переменную для определения находится ли мышь в зоне кнопки
 
-    //TODO: ADD ALPHA CHECK!
+  //TODO: ADD ALPHA CHECK!
 
-    // * Если isFull - true, значит нужен _03
+  // * Если isFull - true, значит нужен _03
   KDCore.ButtonM = class ButtonM extends KDCore.Sprite {
     constructor(filename, isFull = false, sourceFolder = null) {
       super();
@@ -11897,11 +14148,11 @@ KDCore.registerLibraryToLoad(function() {
     }
 
     setManualHover() {
-      return this._isManualHoverMode = true;
+      return (this._isManualHoverMode = true);
     }
 
     disableManualHover() {
-      return this._isManualHoverMode = false;
+      return (this._isManualHoverMode = false);
     }
 
     setManualSelected(_isManualSelected) {
@@ -11909,11 +14160,11 @@ KDCore.registerLibraryToLoad(function() {
     }
 
     enableClick() {
-      return this._isCanBeClicked = true;
+      return (this._isCanBeClicked = true);
     }
 
     disableClick() {
-      return this._isCanBeClicked = false;
+      return (this._isCanBeClicked = false);
     }
 
     desaturate() {
@@ -11977,7 +14228,7 @@ KDCore.registerLibraryToLoad(function() {
     }
 
     clearClickHandler() {
-      return this._handler = null;
+      return (this._handler = null);
     }
 
     // * Воспроизводит визуальный эффект нажатия
@@ -12030,9 +14281,8 @@ KDCore.registerLibraryToLoad(function() {
       super.update();
       return this._updateMain();
     }
-
   };
-  return (function() {    
+  return (function () {
     //╒═════════════════════════════════════════════════════════════════════════╛
     // ■ ButtonM Implementation
     //╒═════════════════════════════════════════════════════════════════════════╛
@@ -12040,7 +14290,7 @@ KDCore.registerLibraryToLoad(function() {
     var _, alias_SM_isAnyButtonPressed, alias_SM_onMapLoaded;
     //@[DEFINES]
     _ = KDCore.ButtonM.prototype;
-    _._loadBitmaps = function(filename, isFull = false, sourceFolder = null) {
+    _._loadBitmaps = function (filename, isFull = false, sourceFolder = null) {
       var getterFunc;
       getterFunc = this._getGetter(sourceFolder);
       this._bitmaps.push(getterFunc(filename + '_00'));
@@ -12050,7 +14300,7 @@ KDCore.registerLibraryToLoad(function() {
         this._bitmaps.push(getterFunc(filename + '_03'));
       }
     };
-    _._onBitmapLoaded = function() {
+    _._onBitmapLoaded = function () {
       var e;
       try {
         return this._executeLoadListeners();
@@ -12059,44 +14309,44 @@ KDCore.registerLibraryToLoad(function() {
         return KDCore.warning(e);
       }
     };
-    _._getGetter = function(sourceFolder = null) {
+    _._getGetter = function (sourceFolder = null) {
       var getterFunc;
-      getterFunc = function(filename) {
+      getterFunc = function (filename) {
         return ImageManager.loadPicture(filename);
       };
       if (sourceFolder !== null) {
-        getterFunc = function(filename) {
+        getterFunc = function (filename) {
           return ImageManager.loadBitmap('img/' + sourceFolder + '/', filename);
         };
       }
       return getterFunc;
     };
-    _._setImageState = function(index = 0) {
+    _._setImageState = function (index = 0) {
       if (this._bitmaps[index] == null) {
         index = 0;
       }
       this.bitmap = this._bitmaps[index];
       this._lastState = index;
     };
-    _._createThread = function() {
+    _._createThread = function () {
       this.hoverThread = new KDCore.TimedUpdate(3, this._updateHover.bind(this));
       this.hoverThread.applyTimeRange(-1, 1);
       this.hoverThread.call();
     };
     //?[DYNAMIC]
-    _._updateMain = function() {
+    _._updateMain = function () {
       this._updateMouseLogic();
       if (!this.isActive()) {
-        if (($gameTemp.kdButtonUnderMouse != null) && $gameTemp.kdButtonUnderMouse === this) {
-          return $gameTemp.kdButtonUnderMouse = null;
+        if ($gameTemp.kdButtonUnderMouse != null && $gameTemp.kdButtonUnderMouse === this) {
+          return ($gameTemp.kdButtonUnderMouse = null);
         }
       }
     };
-    _._updateMouseLogic = function() {
+    _._updateMouseLogic = function () {
       this.hoverThread.update();
       return this._updateMouseClick();
     };
-    _._updateHover = function() {
+    _._updateHover = function () {
       var e;
       if (!this.isActive()) {
         return;
@@ -12133,7 +14383,7 @@ KDCore.registerLibraryToLoad(function() {
         }
       }
     };
-    _._updateMouseClick = function() {
+    _._updateMouseClick = function () {
       if (!this.isActive()) {
         return;
       }
@@ -12153,15 +14403,15 @@ KDCore.registerLibraryToLoad(function() {
         }
       }
     };
-    _._startSimulation = function() {
+    _._startSimulation = function () {
       this._setImageState(1);
       this._simulateThread = new KDCore.TimedUpdate(10, () => {
         return this._setImageState(0);
       });
       this._simulateThread.once();
-      return this._updateMain = this._updateMouseClickSimulated;
+      return (this._updateMain = this._updateMouseClickSimulated);
     };
-    _._updateMouseClickSimulated = function() {
+    _._updateMouseClickSimulated = function () {
       this._simulateThread.update();
       if (!this._simulateThread.isAlive()) {
         this._simulateThread = null;
@@ -12172,7 +14422,7 @@ KDCore.registerLibraryToLoad(function() {
 
     //@[ALIAS]
     alias_SM_isAnyButtonPressed = Scene_Map.prototype.isAnyButtonPressed;
-    Scene_Map.prototype.isAnyButtonPressed = function() {
+    Scene_Map.prototype.isAnyButtonPressed = function () {
       if ($gameTemp.kdButtonUnderMouse != null) {
         return true;
       } else {
@@ -12182,11 +14432,11 @@ KDCore.registerLibraryToLoad(function() {
     //TODO: Добавить доп. проверку?
     //@[ALIAS]
     alias_SM_onMapLoaded = Scene_Map.prototype.onMapLoaded;
-    Scene_Map.prototype.onMapLoaded = function() {
+    Scene_Map.prototype.onMapLoaded = function () {
       $gameTemp.kdButtonUnderMouse = null;
-      setTimeout((function() {
-        return $gameTemp.kdButtonUnderMouse = null;
-      }), 50);
+      setTimeout(function () {
+        return ($gameTemp.kdButtonUnderMouse = null);
+      }, 50);
       return alias_SM_onMapLoaded.call(this);
     };
   })();
@@ -12195,13 +14445,12 @@ KDCore.registerLibraryToLoad(function() {
 // ■ END ButtonM Implementation
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   // * Button Mini User - класс с определением файла каждого состояния отдельно
   // * Принимает теже аргументы, только заместо имени файла, три изображения (имени)
   // ? states = { main, hover, disabled }
-  return KDCore.ButtonMU = class ButtonMU extends KDCore.ButtonM {
+  return (KDCore.ButtonMU = class ButtonMU extends KDCore.ButtonM {
     constructor() {
       super(...arguments);
     }
@@ -12217,13 +14466,11 @@ KDCore.registerLibraryToLoad(function() {
         this._bitmaps.push(getterFunc(states.disabled));
       }
     }
-
-  };
+  });
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var Sprite_TilingLine;
   Sprite_TilingLine = class Sprite_TilingLine extends KDCore.Sprite_TilingFrame {
     constructor() {
@@ -12244,20 +14491,19 @@ KDCore.registerLibraryToLoad(function() {
     _fillImagePartHeight() {
       return 26;
     }
-
   };
-  return KDCore.Sprite_TilingLine = Sprite_TilingLine;
+  return (KDCore.Sprite_TilingLine = Sprite_TilingLine);
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   // * Пространство имён для всех UIElements
   KDCore.UI = KDCore.UI || {};
-  (function() {    // * Общий класс для всех UI элементов
+  (function () {
+    // * Общий класс для всех UI элементов
     //?rev 07.02.2024
     var Sprite_UIElement;
-    Sprite_UIElement = (function() {
+    Sprite_UIElement = function () {
       // * ABSTRACT значит что класс сам по себе ничего не создаёт, не хранит данные
       //@[ABSTRACT]
       class Sprite_UIElement extends KDCore.Sprite {
@@ -12270,7 +14516,7 @@ KDCore.registerLibraryToLoad(function() {
         // * Стандартный набор настроек
         defaultParams() {
           return {
-            visible: true
+            visible: true,
           };
         }
 
@@ -12283,8 +14529,7 @@ KDCore.registerLibraryToLoad(function() {
         // * Общий метод
         drawText() {} // * EMPTY
 
-        
-          // * Если изначально невидимый (из параметров), то не активный вообще
+        // * Если изначально невидимый (из параметров), то не активный вообще
         isActive() {
           return this.params.visible === true;
         }
@@ -12304,7 +14549,7 @@ KDCore.registerLibraryToLoad(function() {
         }
 
         clearFilters() {
-          return this.filters = [];
+          return (this.filters = []);
         }
 
         // * Общий метод (можно ли редактировать визуально)
@@ -12387,7 +14632,7 @@ KDCore.registerLibraryToLoad(function() {
           var e;
           try {
             switch (property) {
-              case "position":
+              case 'position':
                 this._resetPosition();
                 break;
               default:
@@ -12398,25 +14643,24 @@ KDCore.registerLibraryToLoad(function() {
             KDCore.warning(e);
           }
         }
-
-      };
+      }
 
       // * Корневая директория для изображений
-      Sprite_UIElement.RootImageFolder = "Alpha";
+      Sprite_UIElement.RootImageFolder = 'Alpha';
 
       return Sprite_UIElement;
-
-    }).call(this);
+    }.call(this);
     KDCore.UI.Sprite_UIElement = Sprite_UIElement;
   })();
-  return (function() {    //╒═════════════════════════════════════════════════════════════════════════╛
+  return (function () {
+    //╒═════════════════════════════════════════════════════════════════════════╛
     // ■ PRIVATE.coffee
     //╒═════════════════════════════════════════════════════════════════════════╛
     //---------------------------------------------------------------------------
     var _;
     //@[DEFINES]
     _ = KDCore.UI.Sprite_UIElement.prototype;
-    _._init = function() {
+    _._init = function () {
       var e;
       this._prepare();
       try {
@@ -12425,14 +14669,14 @@ KDCore.registerLibraryToLoad(function() {
         e = error;
         KDCore.warning(e);
         // * Если при создании произошла ошибка, отключаем элемент
-        return this.isActive = function() {
+        return (this.isActive = function () {
           return false;
-        };
+        });
       }
     };
-    
+
     // * Подготовка элемента (проверка параметров)
-    _._prepare = function() {
+    _._prepare = function () {
       //@params = @defaultParams() unless @params?
       this.params = Object.assign({}, this.defaultParams(), this.params);
       if (this.params.visible != null) {
@@ -12440,16 +14684,16 @@ KDCore.registerLibraryToLoad(function() {
       }
     };
     // * Наследники создают свои элементы в этом методе
-    _._createContent = function() {}; // * EMPTY
-    
+    _._createContent = function () {}; // * EMPTY
+
     // * Сброс позиции
-    _._resetPosition = function() {
+    _._resetPosition = function () {
       var e, x, y;
       if (this.params.position == null) {
         return;
       }
       try {
-        ({x, y} = this.params.position);
+        ({ x, y } = this.params.position);
         if (isFinite(x) && isFinite(y)) {
           x = Number(x);
           y = Number(y);
@@ -12470,15 +14714,14 @@ KDCore.registerLibraryToLoad(function() {
 // ■ END PRIVATE.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var Sprite_ItemsListNHor;
   //TODO: NOT USED IN NUI 1.0
   //NUI 1.X !#!
   //rev 03.05.24
 
-    //"type": "horList"
+  //"type": "horList"
   Sprite_ItemsListNHor = class Sprite_ItemsListNHor extends KDCore.Sprite_ItemsListN {
     constructor() {
       super(...arguments);
@@ -12514,19 +14757,17 @@ KDCore.registerLibraryToLoad(function() {
       }
       return super.setItems(items);
     }
-
   };
-  return KDCore.Sprite_ItemsListNHor = Sprite_ItemsListNHor;
+  return (KDCore.Sprite_ItemsListNHor = Sprite_ItemsListNHor);
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var Sprite_Screen;
   //NUI 1.0
   //rev 04.05.24
 
-    //"type": "screen"
+  //"type": "screen"
   Sprite_Screen = class Sprite_Screen extends KDCore.Sprite_Group {
     constructor(settings) {
       super(settings);
@@ -12554,7 +14795,7 @@ KDCore.registerLibraryToLoad(function() {
       return Object.assign(defaultSettings, {
         width: Graphics.width,
         height: Graphics.height,
-        linkToMap: false //TODO: NOT USED IN NUI 1.0
+        linkToMap: false, //TODO: NOT USED IN NUI 1.0
       });
     }
 
@@ -12562,7 +14803,7 @@ KDCore.registerLibraryToLoad(function() {
       var e;
       try {
         if (this.settings.linkToMap === true) {
-          return this.anchorPoint = new KDCore.MapAnchorPoint(0, 0);
+          return (this.anchorPoint = new KDCore.MapAnchorPoint(0, 0));
         }
       } catch (error) {
         e = error;
@@ -12582,21 +14823,19 @@ KDCore.registerLibraryToLoad(function() {
           return;
         }
         this.x = this.anchorPoint.screenX();
-        return this.y = this.anchorPoint.screenY();
+        return (this.y = this.anchorPoint.screenY());
       } catch (error) {
         e = error;
         return KDCore.warning(e);
       }
     }
-
   };
-  return KDCore.Sprite_Screen = Sprite_Screen;
+  return (KDCore.Sprite_Screen = Sprite_Screen);
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
-  (function() {
+KDCore.registerLibraryToLoad(function () {
+  (function () {
     var Sprite_UIButton;
     // * Кнопка на экране, можно нажимать
     Sprite_UIButton = class Sprite_UIButton extends KDCore.UI.Sprite_UIElement {
@@ -12608,10 +14847,10 @@ KDCore.registerLibraryToLoad(function() {
       defaultParams() {
         return {
           visible: true,
-          image: "Button_Inventory",
+          image: 'Button_Inventory',
           isHaveDisabled: true,
           rootImageFolder: null, //?optional
-          click: "console.log('click')" // * число или код
+          click: "console.log('click')", // * число или код
         };
       }
 
@@ -12636,8 +14875,7 @@ KDCore.registerLibraryToLoad(function() {
         }
       }
 
-      
-        // * Просто вызов метода
+      // * Просто вызов метода
       call() {
         var ref;
         return (ref = this.button) != null ? ref.click() : void 0;
@@ -12651,11 +14889,11 @@ KDCore.registerLibraryToLoad(function() {
         }
         return (ref1 = this.button) != null ? ref1.simulateClick() : void 0;
       }
-
     };
     KDCore.UI.Sprite_UIButton = Sprite_UIButton;
   })();
-  return (function() {    //╒═════════════════════════════════════════════════════════════════════════╛
+  return (function () {
+    //╒═════════════════════════════════════════════════════════════════════════╛
     // ■ PRIVATE.coffee
     //╒═════════════════════════════════════════════════════════════════════════╛
     //---------------------------------------------------------------------------
@@ -12663,7 +14901,7 @@ KDCore.registerLibraryToLoad(function() {
     //@[DEFINES]
     _ = KDCore.UI.Sprite_UIButton.prototype;
     //$[OVER]
-    _._createContent = function() {
+    _._createContent = function () {
       if (this.params.image.isEmpty()) {
         KDCore.warning('You try create Button without image');
         return;
@@ -12672,7 +14910,7 @@ KDCore.registerLibraryToLoad(function() {
       this.add(this.button);
       return this._registerClickMethod();
     };
-    _._registerClickMethod = function() {
+    _._registerClickMethod = function () {
       var commonEventId, e, method, ref, script;
       if (!String.any(this.params.click)) {
         return;
@@ -12683,14 +14921,14 @@ KDCore.registerLibraryToLoad(function() {
         if (isFinite(this.params.click)) {
           commonEventId = parseInt(this.params.click);
           if (commonEventId > 0) {
-            method = function() {
+            method = function () {
               return $gameTemp.reserveCommonEvent(commonEventId);
             };
           }
         } else {
           // * Иначе скрипт
           script = this.params.click;
-          method = function() {
+          method = function () {
             return eval(script);
           };
         }
@@ -12707,10 +14945,10 @@ KDCore.registerLibraryToLoad(function() {
 // ■ END PRIVATE.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
-  (function() {    // * Рисует лицо персонажа (из папки Faces)
+KDCore.registerLibraryToLoad(function () {
+  (function () {
+    // * Рисует лицо персонажа (из папки Faces)
     var Sprite_UIFace;
     Sprite_UIFace = class Sprite_UIFace extends KDCore.UI.Sprite_UIElement {
       constructor() {
@@ -12721,10 +14959,10 @@ KDCore.registerLibraryToLoad(function() {
       defaultParams() {
         return {
           visible: true,
-          faceName: "Actor1",
+          faceName: 'Actor1',
           faceIndex: 0,
           mirror: false,
-          size: 144
+          size: 144,
         };
       }
 
@@ -12735,11 +14973,11 @@ KDCore.registerLibraryToLoad(function() {
       drawFace(faceName, faceIndex) {
         return this._drawFaceWhenReady(faceName, faceIndex);
       }
-
     };
     KDCore.UI.Sprite_UIFace = Sprite_UIFace;
   })();
-  return (function() {    //╒═════════════════════════════════════════════════════════════════════════╛
+  return (function () {
+    //╒═════════════════════════════════════════════════════════════════════════╛
     // ■ PRIVATE.coffee
     //╒═════════════════════════════════════════════════════════════════════════╛
     //---------------------------------------------------------------------------
@@ -12747,10 +14985,10 @@ KDCore.registerLibraryToLoad(function() {
     //@[DEFINES]
     _ = KDCore.UI.Sprite_UIFace.prototype;
     //$[OVER]
-    _._createContent = function() {
+    _._createContent = function () {
       return this._createFaceSprite();
     };
-    _._createFaceSprite = function() {
+    _._createFaceSprite = function () {
       this._faceSpr = KDCore.Sprite.FromBitmap(this.params.size);
       if (this.params.mirror === true) {
         this._flipFaceSpr();
@@ -12758,11 +14996,11 @@ KDCore.registerLibraryToLoad(function() {
       this.add(this._faceSpr);
       this._drawFaceWhenReady(this.params.faceName, this.params.faceIndex);
     };
-    _._flipFaceSpr = function() {
+    _._flipFaceSpr = function () {
       this._faceSpr.scale.x = -1;
       this._faceSpr.x = this.params.size;
     };
-    _._drawFaceWhenReady = function(name, index = 0) {
+    _._drawFaceWhenReady = function (name, index = 0) {
       var ref;
       if ((ref = this._faceSpr) != null) {
         ref.clear();
@@ -12773,12 +15011,12 @@ KDCore.registerLibraryToLoad(function() {
       if (index < 0) {
         return;
       }
-      this._drawOnReady = {name, index};
+      this._drawOnReady = { name, index };
       this._faceSourceBitmap = ImageManager.loadFace(name);
       this._faceSourceBitmap.addLoadListener(this._drawFace.bind(this));
       this._drawFace();
     };
-    _._drawFace = function() {
+    _._drawFace = function () {
       var fh, fw, size, sx, sy;
       if (this._faceSpr == null) {
         return;
@@ -12805,10 +15043,9 @@ KDCore.registerLibraryToLoad(function() {
 // ■ END PRIVATE.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
-  (function() {
+KDCore.registerLibraryToLoad(function () {
+  (function () {
     var Sprite_UIGauge;
     Sprite_UIGauge = class Sprite_UIGauge extends KDCore.UI.Sprite_UIElement {
       constructor() {
@@ -12819,13 +15056,13 @@ KDCore.registerLibraryToLoad(function() {
       defaultParams() {
         return {
           visible: true,
-          fill: "",
-          foreground: "",
-          mask: "",
-          backColor: "#000000".toCss(),
+          fill: '',
+          foreground: '',
+          mask: '',
+          backColor: '#000000'.toCss(),
           backOpacity: 255,
           vertical: false,
-          rootImageFolder: null //?optional
+          rootImageFolder: null, //?optional
         };
       }
 
@@ -12841,11 +15078,11 @@ KDCore.registerLibraryToLoad(function() {
       isVertical() {
         return this.params.vertical === true;
       }
-
     };
     KDCore.UI.Sprite_UIGauge = Sprite_UIGauge;
   })();
-  return (function() {    //╒═════════════════════════════════════════════════════════════════════════╛
+  return (function () {
+    //╒═════════════════════════════════════════════════════════════════════════╛
     // ■ PRIVATE.coffee
     //╒═════════════════════════════════════════════════════════════════════════╛
     //---------------------------------------------------------------------------
@@ -12853,11 +15090,11 @@ KDCore.registerLibraryToLoad(function() {
     //@[DEFINES]
     _ = KDCore.UI.Sprite_UIGauge.prototype;
     //$[OVER]
-    _._createContent = function() {
+    _._createContent = function () {
       // * Загружается главное изображение, затем уже все остальные, т.к. нужны размеры
       return this._loadFillImage();
     };
-    _._loadFillImage = function() {
+    _._loadFillImage = function () {
       // * Главное изображение, поэтому если не указано, то ничего
       if (this.params.fill.isEmpty()) {
         KDCore.warning('You try create Gauge without fill image');
@@ -12866,7 +15103,7 @@ KDCore.registerLibraryToLoad(function() {
       KDCore.Utils.loadImageAsync(this.rootImageFolder(), this.params.fill).then(this._createParts.bind(this));
     };
     // * Получаем изображение заполнения и создаём части (т.к. есть размеры)
-    _._createParts = function(fillBitmap) {
+    _._createParts = function (fillBitmap) {
       this.fillBitmap = fillBitmap;
       this._createBackground();
       this._createFillLayer();
@@ -12874,17 +15111,17 @@ KDCore.registerLibraryToLoad(function() {
       this._loadMask();
       return this._onReady();
     };
-    _._createBackground = function() {
+    _._createBackground = function () {
       this.background = KDCore.Sprite.FromBitmap(this.fillBitmap.width, this.fillBitmap.height);
       this.background.b().fillAll(this.params.backColor);
       this.background.opacity = this.params.backOpacity;
       return this.add(this.background);
     };
-    _._createFillLayer = function() {
+    _._createFillLayer = function () {
       this.fillLayer = KDCore.Sprite.FromBitmap(this.fillBitmap.width, this.fillBitmap.height);
       return this.add(this.fillLayer);
     };
-    _._loadForeground = function() {
+    _._loadForeground = function () {
       var fore;
       if (String.isNullOrEmpty(this.params.foreground)) {
         return;
@@ -12892,7 +15129,7 @@ KDCore.registerLibraryToLoad(function() {
       fore = KDCore.Sprite.FromImg(this.params.foreground, this.rootImageFolder());
       return this.add(fore);
     };
-    _._loadMask = function() {
+    _._loadMask = function () {
       var mask;
       if (String.isNullOrEmpty(this.params.mask)) {
         return;
@@ -12902,10 +15139,10 @@ KDCore.registerLibraryToLoad(function() {
       return this.add(mask);
     };
     // * Если что-то было до готовности, нарисовать
-    _._onReady = function() {
+    _._onReady = function () {
       this.drawGauge(this._lastValue);
     };
-    _._drawGauge = function(percent) {
+    _._drawGauge = function (percent) {
       if (this.fillLayer == null) {
         return;
       }
@@ -12916,12 +15153,12 @@ KDCore.registerLibraryToLoad(function() {
         return this._drawHorGauge(percent);
       }
     };
-    _._drawHorGauge = function(percent) {
+    _._drawHorGauge = function (percent) {
       var w;
       w = this.fillBitmap.width * percent;
       return this.fillLayer.b().blt(this.fillBitmap, 0, 0, w, this.fillLayer.height, 0, 0);
     };
-    _._drawVerGauge = function(percent) {
+    _._drawVerGauge = function (percent) {
       var h, hy;
       h = this.fillBitmap.height * percent;
       hy = this.fillBitmap.height - h;
@@ -12933,10 +15170,9 @@ KDCore.registerLibraryToLoad(function() {
 // ■ END PRIVATE.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
-  (function() {
+KDCore.registerLibraryToLoad(function () {
+  (function () {
     var Sprite_UIIcon;
     Sprite_UIIcon = class Sprite_UIIcon extends KDCore.UI.Sprite_UIElement {
       constructor() {
@@ -12949,7 +15185,7 @@ KDCore.registerLibraryToLoad(function() {
           visible: true,
           index: 0,
           size: 32,
-          rootImageFolder: null //?optional
+          rootImageFolder: null, //?optional
         };
       }
 
@@ -12961,11 +15197,11 @@ KDCore.registerLibraryToLoad(function() {
         this._lastValue = index;
         return this._drawIcon(index, noSmoth);
       }
-
     };
     KDCore.UI.Sprite_UIIcon = Sprite_UIIcon;
   })();
-  return (function() {    //╒═════════════════════════════════════════════════════════════════════════╛
+  return (function () {
+    //╒═════════════════════════════════════════════════════════════════════════╛
     // ■ PRIVATE.coffee
     //╒═════════════════════════════════════════════════════════════════════════╛
     //---------------------------------------------------------------------------
@@ -12973,19 +15209,19 @@ KDCore.registerLibraryToLoad(function() {
     //@[DEFINES]
     _ = KDCore.UI.Sprite_UIIcon.prototype;
     //$[OVER]
-    _._createContent = function() {
+    _._createContent = function () {
       this._createIcon();
       return this._drawIcon(this.params.index);
     };
-    _._createIcon = function() {
+    _._createIcon = function () {
       this._icon = KDCore.Sprite.FromBitmap(this.params.size, this.params.size);
       this.add(this._icon);
       return this._onReady();
     };
-    _._onReady = function() {
+    _._onReady = function () {
       return this.drawIcon(this._lastValue);
     };
-    _._drawIcon = function(index, noSmoth = false) {
+    _._drawIcon = function (index, noSmoth = false) {
       this._icon.clear();
       if (KDCore.SDK.isString(index)) {
         this._drawImageIcon(index, noSmoth);
@@ -12996,8 +15232,8 @@ KDCore.registerLibraryToLoad(function() {
         this._icon.drawIcon(0, 0, index, this.params.size, noSmoth);
       }
     };
-    _._drawImageIcon = function(imageName, noSmoth = false) {
-      return KDCore.Utils.loadImageAsync(this.rootImageFolder(), imageName).then((bitmap) => {
+    _._drawImageIcon = function (imageName, noSmoth = false) {
+      return KDCore.Utils.loadImageAsync(this.rootImageFolder(), imageName).then(bitmap => {
         return this._icon.drawIcon(0, 0, bitmap, this.params.size, noSmoth);
       });
     };
@@ -13007,10 +15243,9 @@ KDCore.registerLibraryToLoad(function() {
 // ■ END PRIVATE.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
-  (function() {
+KDCore.registerLibraryToLoad(function () {
+  (function () {
     var Sprite_UIImage;
     Sprite_UIImage = class Sprite_UIImage extends KDCore.UI.Sprite_UIElement {
       constructor() {
@@ -13021,8 +15256,8 @@ KDCore.registerLibraryToLoad(function() {
       defaultParams() {
         return {
           visible: true,
-          image: "",
-          rootImageFolder: null //?optional
+          image: '',
+          rootImageFolder: null, //?optional
         };
       }
 
@@ -13033,11 +15268,11 @@ KDCore.registerLibraryToLoad(function() {
       drawImage(image) {
         return this._drawImage(image);
       }
-
     };
     KDCore.UI.Sprite_UIImage = Sprite_UIImage;
   })();
-  return (function() {    //╒═════════════════════════════════════════════════════════════════════════╛
+  return (function () {
+    //╒═════════════════════════════════════════════════════════════════════════╛
     // ■ PRIVATE.coffee
     //╒═════════════════════════════════════════════════════════════════════════╛
     //---------------------------------------------------------------------------
@@ -13045,23 +15280,23 @@ KDCore.registerLibraryToLoad(function() {
     //@[DEFINES]
     _ = KDCore.UI.Sprite_UIImage.prototype;
     //$[OVER]
-    _._createContent = function() {
+    _._createContent = function () {
       return this._drawImage(this.params.image);
     };
-    _._drawImage = function(image) {
+    _._drawImage = function (image) {
       this._clearImage();
       if (!String.isNullOrEmpty(image)) {
         this._image = KDCore.Sprite.FromImg(image, this.rootImageFolder());
         this.add(this._image);
       }
     };
-    _._clearImage = function() {
+    _._clearImage = function () {
       if (this._image == null) {
         return;
       }
       this._image.visible = false;
       this.removeChild(this._image);
-      return this._image = null;
+      return (this._image = null);
     };
   })();
 });
@@ -13069,10 +15304,9 @@ KDCore.registerLibraryToLoad(function() {
 // ■ END PRIVATE.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
-  (function() {
+KDCore.registerLibraryToLoad(function () {
+  (function () {
     var Sprite_UIRect;
     Sprite_UIRect = class Sprite_UIRect extends KDCore.UI.Sprite_UIElement {
       constructor() {
@@ -13085,13 +15319,13 @@ KDCore.registerLibraryToLoad(function() {
           visible: true,
           size: {
             w: 60,
-            h: 20
+            h: 20,
           },
-          fillColor: "#FFFFFF".toCss(),
+          fillColor: '#FFFFFF'.toCss(),
           fillOpacity: 255,
-          borderColor: "#000000".toCss(),
+          borderColor: '#000000'.toCss(),
           borderThickness: 1,
-          borderOpacity: 255
+          borderOpacity: 255,
         };
       }
 
@@ -13106,11 +15340,11 @@ KDCore.registerLibraryToLoad(function() {
       drawBorder(color, thickness = 1, opacity = 255) {
         return this._drawBorder(color, thickness, opacity);
       }
-
     };
     KDCore.UI.Sprite_UIRect = Sprite_UIRect;
   })();
-  return (function() {    //╒═════════════════════════════════════════════════════════════════════════╛
+  return (function () {
+    //╒═════════════════════════════════════════════════════════════════════════╛
     // ■ PRIVATE.coffee
     //╒═════════════════════════════════════════════════════════════════════════╛
     //---------------------------------------------------------------------------
@@ -13118,7 +15352,7 @@ KDCore.registerLibraryToLoad(function() {
     //@[DEFINES]
     _ = KDCore.UI.Sprite_UIRect.prototype;
     //$[OVER]
-    _._createContent = function() {
+    _._createContent = function () {
       if (String.any(this.params.fillColor)) {
         this._createFill();
         this.fill(this.params.fillColor, this.params.fillOpacity);
@@ -13128,22 +15362,22 @@ KDCore.registerLibraryToLoad(function() {
         return this.drawBorder(this.params.borderColor, this.params.borderThickness, this.params.borderOpacity);
       }
     };
-    _._createFill = function() {
+    _._createFill = function () {
       this._fillSpr = KDCore.Sprite.FromBitmap(this.params.size.w, this.params.size.h);
       return this.addChild(this._fillSpr);
     };
-    _._createBorder = function() {
+    _._createBorder = function () {
       this._borderSprite = KDCore.Sprite.FromBitmap(this.params.size.w, this.params.size.h);
       return this.addChild(this._borderSprite);
     };
-    _._fill = function(color, opacity) {
+    _._fill = function (color, opacity) {
       if (this._fillSpr == null) {
         return;
       }
       this._fillSpr.fillAll(color);
       this._fillSpr.opacity = opacity;
     };
-    _._drawBorder = function(color, thickness, opacity) {
+    _._drawBorder = function (color, thickness, opacity) {
       var b;
       if (this._borderSprite == null) {
         return;
@@ -13158,7 +15392,7 @@ KDCore.registerLibraryToLoad(function() {
       b.fillRect(0, 0, thickness, b.height, color);
       // * Right line
       b.fillRect(b.width - thickness, 0, thickness, b.height, color);
-      return this._borderSprite.opacity = opacity;
+      return (this._borderSprite.opacity = opacity);
     };
   })();
 });
@@ -13166,10 +15400,10 @@ KDCore.registerLibraryToLoad(function() {
 // ■ END PRIVATE.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
-  (function() {    //NUI 1.0
+KDCore.registerLibraryToLoad(function () {
+  (function () {
+    //NUI 1.0
     //rev 11.05.22
 
     //"type": "legacyText"
@@ -13188,32 +15422,32 @@ KDCore.registerLibraryToLoad(function() {
           visible: true,
           size: {
             width: 60,
-            height: 20
+            height: 20,
           },
-          alignment: "center",
+          alignment: 'center',
           font: {
             face: null,
             size: 18,
-            italic: false
+            italic: false,
           },
           margins: {
             x: 0,
-            y: 0
+            y: 0,
           },
           outline: {
             color: null,
-            width: 2
+            width: 2,
           },
-          textColor: "#ffffff",
+          textColor: '#ffffff',
           shadow: {
-            color: "#000",
+            color: '#000',
             opacity: 0,
             margins: {
               x: 1,
-              y: 1
-            }
+              y: 1,
+            },
           },
-          text: ""
+          text: '',
         };
       }
 
@@ -13259,39 +15493,39 @@ KDCore.registerLibraryToLoad(function() {
 
       dataBindings() {
         return Object.assign(super.dataBindings(), {
-          text: function(v) {
+          text: function (v) {
             return this.drawText(v);
           },
-          style: function(v) {
+          style: function (v) {
             return this.updateStyle(v);
           },
-          width: function(v) {
+          width: function (v) {
             if (v != null) {
               return this.setSize(v, this.sizeHeight());
             }
           },
-          height: function(v) {
+          height: function (v) {
             if (v != null) {
               return this.setSize(this.sizeWidth(), v);
             }
           },
-          size: function(v) {
+          size: function (v) {
             if (v != null) {
               return this.setSize(v.width, v.height);
             }
           },
-          textColor: function(v) {
+          textColor: function (v) {
             if (v != null) {
               return this.updateStyle({
-                textColor: v
+                textColor: v,
               });
             }
           },
-          fontSize: function(v) {
+          fontSize: function (v) {
             if (v != null) {
               return this.updateFontSize(v);
             }
-          }
+          },
         });
       }
 
@@ -13305,8 +15539,8 @@ KDCore.registerLibraryToLoad(function() {
               w: w,
               h: h,
               width: w,
-              height: h
-            }
+              height: h,
+            },
           });
         } catch (error) {
           e = error;
@@ -13321,7 +15555,7 @@ KDCore.registerLibraryToLoad(function() {
           this._destroyOldContent();
           this._createContent();
           // * Redraw Text
-          return this.drawText(this._lastText || "");
+          return this.drawText(this._lastText || '');
         } catch (error) {
           e = error;
           return KDCore.warning(e);
@@ -13332,11 +15566,11 @@ KDCore.registerLibraryToLoad(function() {
         var e, font;
         try {
           font = Object.assign({}, this.params.font);
-          if (typeof fontSize === "string") {
+          if (typeof fontSize === 'string') {
             fontSize = this._getValueByStr(fontSize, 'height', this);
           }
           font.size = fontSize;
-          return this.updateStyle({font});
+          return this.updateStyle({ font });
         } catch (error) {
           e = error;
           return KDCore.warning(e);
@@ -13373,18 +15607,18 @@ KDCore.registerLibraryToLoad(function() {
         this.drawText(text);
         this._textSpr.b().textColor = this.params.textColor;
       }
-
     };
     KDCore.UI.Sprite_UIText = Sprite_UIText;
   })();
-  return (function() {    //╒═════════════════════════════════════════════════════════════════════════╛
+  return (function () {
+    //╒═════════════════════════════════════════════════════════════════════════╛
     // ■ PRIVATE.coffee
     //╒═════════════════════════════════════════════════════════════════════════╛
     //---------------------------------------------------------------------------
     var _;
     //@[DEFINES]
     _ = KDCore.UI.Sprite_UIText.prototype;
-    _._destroyOldContent = function() {
+    _._destroyOldContent = function () {
       var e, ref, ref1;
       try {
         if ((ref = this._shadowSpr) != null) {
@@ -13397,19 +15631,19 @@ KDCore.registerLibraryToLoad(function() {
       }
     };
     //$[OVER]
-    _._createContent = function() {
+    _._createContent = function () {
       if (this.params.shadow != null) {
         this._createShadow();
       }
       return this._createTextSprite();
     };
-    _._createTextSprite = function() {
+    _._createTextSprite = function () {
       this._textSpr = KDCore.Sprite.FromParams(this.params);
       this._textSpr.onReady(this._onReady.bind(this));
       return this.add(this._textSpr);
     };
     // * Выполнить по готовности
-    _._onReady = function() {
+    _._onReady = function () {
       // * Переключить метод, так как уже готов
       this.drawText = this._drawText;
       // * Написать то что нужно было до готовности (если есть)
@@ -13419,7 +15653,7 @@ KDCore.registerLibraryToLoad(function() {
       this.drawText(this._drawOnReady);
       this._drawOnReady = null;
     };
-    _._drawText = function(text) {
+    _._drawText = function (text) {
       this._lastText = text;
       if (this._textSpr == null) {
         return;
@@ -13436,36 +15670,36 @@ KDCore.registerLibraryToLoad(function() {
       }
     };
     // * Написать текст когда будет готов
-    _._drawTextWhenReady = function(text) {
+    _._drawTextWhenReady = function (text) {
       this._drawOnReady = text;
       return this._drawText(text);
     };
-    
+
     // * Заменить вхождения %1, %2 на значения параметров
-    _._convertFormatedString = function(/*text, args...*/) {
+    _._convertFormatedString = function (/*text, args...*/) {
       var e, i, j, ref, text;
       try {
         text = arguments[0];
-        for (i = j = 1, ref = arguments.length; (1 <= ref ? j < ref : j > ref); i = 1 <= ref ? ++j : --j) {
+        for (i = j = 1, ref = arguments.length; 1 <= ref ? j < ref : j > ref; i = 1 <= ref ? ++j : --j) {
           try {
             if (arguments[i] == null) {
               continue;
             }
-            text = text.replace("%" + i, arguments[i]);
+            text = text.replace('%' + i, arguments[i]);
           } catch (error) {
             e = error;
             KDCore.warning(e);
-            text = "[wrong format text input]";
+            text = '[wrong format text input]';
           }
         }
         return text;
       } catch (error) {
         e = error;
         KDCore.warning(e);
-        return "[wrong format text input]";
+        return '[wrong format text input]';
       }
     };
-    _._createShadow = function() {
+    _._createShadow = function () {
       this._shadowSpr = KDCore.Sprite.FromParams(this.params);
       this._shadowSpr.bitmap.textColor = this.params.shadow.color;
       this._shadowSpr.opacity = this.params.shadow.opacity;
@@ -13479,14 +15713,14 @@ KDCore.registerLibraryToLoad(function() {
 // ■ END PRIVATE.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
-  (function() {    //NUI 1.0
+KDCore.registerLibraryToLoad(function () {
+  (function () {
+    //NUI 1.0
     //rev 11.05.22
     var Sprite_UIText2;
-    
-      //"type": "text"
+
+    //"type": "text"
     Sprite_UIText2 = class Sprite_UIText2 extends KDCore.UI.Sprite_UIElement {
       constructor(params, userTextStyle) {
         super(params);
@@ -13505,37 +15739,37 @@ KDCore.registerLibraryToLoad(function() {
           visible: true,
           size: {
             width: 60,
-            height: 20
+            height: 20,
           },
-          alignment: "center",
+          alignment: 'center',
           font: {
             face: null,
             size: 18,
             italic: false,
             bold: false,
-            weight: 0 // * 0 - not used
+            weight: 0, // * 0 - not used
           },
           margins: {
             x: 0,
-            y: 0
+            y: 0,
           },
           outline: {
             color: null,
-            width: 2
+            width: 2,
           },
-          textColor: "#FFFFFF",
+          textColor: '#FFFFFF',
           shadow: {
-            color: "#000",
+            color: '#000',
             opacity: 0,
             margins: {
               x: 1,
-              y: 1
-            }
+              y: 1,
+            },
           },
-          text: "",
+          text: '',
           multiline: false,
           verticalCentered: true,
-          actualSize: false
+          actualSize: false,
         };
       }
 
@@ -13544,7 +15778,7 @@ KDCore.registerLibraryToLoad(function() {
         if (this.isNotHaveBounds()) {
           return 0;
         }
-        if ((this._textSpr != null) && this.params.actualSize === true) {
+        if (this._textSpr != null && this.params.actualSize === true) {
           return this.getMetrics().width;
         }
         if (this.params.size.w != null) {
@@ -13563,7 +15797,7 @@ KDCore.registerLibraryToLoad(function() {
         if (this.isNotHaveBounds()) {
           return 0;
         }
-        if ((this._textSpr != null) && this.params.actualSize === true) {
+        if (this._textSpr != null && this.params.actualSize === true) {
           return this.getMetrics().height;
         }
         if (this.params.size.h != null) {
@@ -13579,41 +15813,41 @@ KDCore.registerLibraryToLoad(function() {
 
       dataBindings() {
         return Object.assign(super.dataBindings(), {
-          text: function(v) {
+          text: function (v) {
             return this.drawText(v);
           },
-          style: function(v) {
+          style: function (v) {
             if (v != null) {
               return this.updateStyle(v);
             }
           },
-          width: function(v) {
+          width: function (v) {
             if (v != null) {
               return this.setSize(v, this.sizeHeight());
             }
           },
-          height: function(v) {
+          height: function (v) {
             if (v != null) {
               return this.setSize(this.sizeWidth(), v);
             }
           },
-          size: function(v) {
+          size: function (v) {
             if (v != null) {
               return this.setSize(v.width, v.height);
             }
           },
-          textColor: function(v) {
+          textColor: function (v) {
             if (v != null) {
               return this.updateStyle({
-                textColor: v
+                textColor: v,
               });
             }
           },
-          fontSize: function(v) {
+          fontSize: function (v) {
             if (v != null) {
               return this.updateFontSize(v);
             }
-          }
+          },
         });
       }
 
@@ -13633,8 +15867,8 @@ KDCore.registerLibraryToLoad(function() {
           return this.updateStyle({
             size: {
               w: w,
-              h: h
-            }
+              h: h,
+            },
           });
         } catch (error) {
           e = error;
@@ -13648,7 +15882,7 @@ KDCore.registerLibraryToLoad(function() {
 
       drawText(text) {
         if (text == null) {
-          text = "";
+          text = '';
         }
         this.params.text = text;
         this._drawText(text);
@@ -13663,12 +15897,12 @@ KDCore.registerLibraryToLoad(function() {
       }
 
       // * Пишет текст с определённым цветом (один раз)
-      drawTextColor(text, colorCss = "#FFF") {
+      drawTextColor(text, colorCss = '#FFF') {
         if (this._textSpr == null) {
           return;
         }
         this.updateStyle({
-          textColor: colorCss
+          textColor: colorCss,
         });
         this.drawText(text);
       }
@@ -13677,11 +15911,11 @@ KDCore.registerLibraryToLoad(function() {
         var e, font;
         try {
           font = Object.assign({}, this.params.font);
-          if (typeof fontSize === "string") {
+          if (typeof fontSize === 'string') {
             fontSize = this._getValueByStr(fontSize, 'height', this);
           }
           font.size = fontSize;
-          return this.updateStyle({font});
+          return this.updateStyle({ font });
         } catch (error) {
           e = error;
           return KDCore.warning(e);
@@ -13704,27 +15938,27 @@ KDCore.registerLibraryToLoad(function() {
       getMetrics() {
         return PIXI.TextMetrics.measureText(this._textSpr.text, this._textSpr.style);
       }
-
     };
     KDCore.UI.Sprite_UIText2 = Sprite_UIText2;
   })();
-  return (function() {    //╒═════════════════════════════════════════════════════════════════════════╛
+  return (function () {
+    //╒═════════════════════════════════════════════════════════════════════════╛
     // ■ PRIVATE.coffee
     //╒═════════════════════════════════════════════════════════════════════════╛
     //---------------------------------------------------------------------------
     var _;
     //@[DEFINES]
     _ = KDCore.UI.Sprite_UIText2.prototype;
-    _._applyParameters = function(params) {
+    _._applyParameters = function (params) {
       var e;
       try {
-        return this.textStyle = this._convertOldStyle(params, {});
+        return (this.textStyle = this._convertOldStyle(params, {}));
       } catch (error) {
         e = error;
         return KDCore.warning(e);
       }
     };
-    _._convertOldStyle = function(params = {}, style = {}) {
+    _._convertOldStyle = function (params = {}, style = {}) {
       var _textStyle, color, e, margins, opacity;
       try {
         this.params = Object.assign({}, this.params, params);
@@ -13739,7 +15973,7 @@ KDCore.registerLibraryToLoad(function() {
         if (this.params.font.bold === true) {
           _textStyle.fontWeight = 'bold';
         }
-        if ((this.params.font.weight != null) && this.params.font.weight > 0) {
+        if (this.params.font.weight != null && this.params.font.weight > 0) {
           _textStyle.fontWeight = this.params.font.weight;
         }
         if (String.any(this.params.outline.color) && this.params.outline.width > 0) {
@@ -13747,8 +15981,8 @@ KDCore.registerLibraryToLoad(function() {
           _textStyle.strokeThickness = this.params.outline.width;
         }
         _textStyle.fill = this.params.textColor;
-        if ((this.params.shadow != null) && this.params.shadow.opacity > 0) {
-          ({color, opacity, margins} = this.params.shadow);
+        if (this.params.shadow != null && this.params.shadow.opacity > 0) {
+          ({ color, opacity, margins } = this.params.shadow);
           _textStyle.dropShadow = true;
           _textStyle.dropShadowAngle = margins.y;
           _textStyle.dropShadowColor = color;
@@ -13771,7 +16005,7 @@ KDCore.registerLibraryToLoad(function() {
       }
       return _textStyle;
     };
-    _._createTextSprite = function() {
+    _._createTextSprite = function () {
       var style;
       style = new PIXI.TextStyle(this.textStyle);
       this._textSpr = new PIXI.Text('', style);
@@ -13781,7 +16015,7 @@ KDCore.registerLibraryToLoad(function() {
         this._needToDrawText = null;
       }
     };
-    _._drawText = function(text) {
+    _._drawText = function (text) {
       var e, h, height, maxLineWidth, textMetrics, w;
       if (this._textSpr == null) {
         this._needToDrawText = text;
@@ -13794,18 +16028,18 @@ KDCore.registerLibraryToLoad(function() {
       if (this.params.size.width != null) {
         this.params.size.w = this.params.size.width;
       }
-      ({w, h} = this.params.size);
+      ({ w, h } = this.params.size);
       try {
-        if (typeof text !== "string") {
+        if (typeof text !== 'string') {
           text = String(text);
         }
       } catch (error) {
         e = error;
         KDCore.warning(e);
-        text = "[wrong text input]";
+        text = '[wrong text input]';
       }
       textMetrics = PIXI.TextMetrics.measureText(text, this._textSpr.style);
-      ({height, maxLineWidth} = textMetrics);
+      ({ height, maxLineWidth } = textMetrics);
       if (this.params.verticalCentered === true) {
         this._textSpr.y = (h - height) / 2;
       } else {
@@ -13822,27 +16056,27 @@ KDCore.registerLibraryToLoad(function() {
       this._textSpr.y += this.params.margins.y;
     };
     // * Заменить вхождения %1, %2 на значения параметров
-    _._convertFormatedString = function(/*text, args...*/) {
+    _._convertFormatedString = function (/*text, args...*/) {
       var e, i, j, ref, text;
       try {
         text = arguments[0];
-        for (i = j = 1, ref = arguments.length; (1 <= ref ? j < ref : j > ref); i = 1 <= ref ? ++j : --j) {
+        for (i = j = 1, ref = arguments.length; 1 <= ref ? j < ref : j > ref; i = 1 <= ref ? ++j : --j) {
           try {
             if (arguments[i] == null) {
               continue;
             }
-            text = text.replace("%" + i, arguments[i]);
+            text = text.replace('%' + i, arguments[i]);
           } catch (error) {
             e = error;
             KDCore.warning(e);
-            text = "[wrong format text input]";
+            text = '[wrong format text input]';
           }
         }
         return text;
       } catch (error) {
         e = error;
         KDCore.warning(e);
-        return "[wrong format text input]";
+        return '[wrong format text input]';
       }
     };
   })();
@@ -13851,10 +16085,10 @@ KDCore.registerLibraryToLoad(function() {
 // ■ END PRIVATE.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
-  (function() {    //TODO: NOT USED IN NUI 1.0
+KDCore.registerLibraryToLoad(function () {
+  (function () {
+    //TODO: NOT USED IN NUI 1.0
     //NUI 1.X !#!
     //rev 03.05.22
 
@@ -13871,21 +16105,21 @@ KDCore.registerLibraryToLoad(function() {
           visible: true,
           size: {
             width: 200,
-            height: 60
+            height: 60,
           },
           font: {
             face: null,
             size: 14,
-            italic: false
+            italic: false,
           },
           margins: {
             x: 0,
-            y: 0
+            y: 0,
           },
           // * новые параметры (KDCore 2.7)
           //?null могут быть
           singleLine: false,
-          forceCentered: false
+          forceCentered: false,
         };
       }
 
@@ -13894,11 +16128,11 @@ KDCore.registerLibraryToLoad(function() {
       drawTextColor() {
         return this.drawText(...arguments);
       }
-
     };
     KDCore.UI.Sprite_UITextExt = Sprite_UITextExt;
   })();
-  return (function() {    //╒═════════════════════════════════════════════════════════════════════════╛
+  return (function () {
+    //╒═════════════════════════════════════════════════════════════════════════╛
     // ■ PRIVATE.coffee
     //╒═════════════════════════════════════════════════════════════════════════╛
     //---------------------------------------------------------------------------
@@ -13906,7 +16140,7 @@ KDCore.registerLibraryToLoad(function() {
     //@[DEFINES]
     _ = KDCore.UI.Sprite_UITextExt.prototype;
     //$[OVER]
-    _._destroyOldContent = function() {
+    _._destroyOldContent = function () {
       var e;
       try {
         if (this._textSpr == null) {
@@ -13919,7 +16153,7 @@ KDCore.registerLibraryToLoad(function() {
       }
     };
     //$[OVER]
-    _._createTextSprite = function() {
+    _._createTextSprite = function () {
       var rect;
       rect = new Rectangle(0, 0, this.sizeWidth(), this.sizeHeight());
       this._textSpr = new KDCore.Window_ExtTextLineBase(rect, this.params.font, this.params);
@@ -13927,7 +16161,7 @@ KDCore.registerLibraryToLoad(function() {
       this._textSpr.y = this.params.margins.y || 0;
       this.add(this._textSpr);
       // * На следующий кадр, чтобы не было потери текста (опасно)
-      setTimeout((() => {
+      setTimeout(() => {
         var e;
         try {
           return this._onReady();
@@ -13935,12 +16169,12 @@ KDCore.registerLibraryToLoad(function() {
           e = error;
           return KDCore.warning(e);
         }
-      }), 10);
+      }, 10);
       this._onReady(); // * Сразу
     };
-    
+
     //$[OVER]
-    _._drawText = function(text) {
+    _._drawText = function (text) {
       this._lastText = text;
       if (this._textSpr == null) {
         return;
@@ -13963,10 +16197,9 @@ KDCore.registerLibraryToLoad(function() {
 // ■ END PRIVATE.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
-  (function() {
+KDCore.registerLibraryToLoad(function () {
+  (function () {
     var Sprite_UITextWithBack;
     Sprite_UITextWithBack = class Sprite_UITextWithBack extends KDCore.UI.Sprite_UIElement {
       constructor() {
@@ -13981,40 +16214,40 @@ KDCore.registerLibraryToLoad(function() {
             visible: true,
             size: {
               w: 60,
-              h: 20
+              h: 20,
             },
-            alignment: "center",
+            alignment: 'center',
             font: {
               face: null,
               size: 18,
-              italic: false
+              italic: false,
             },
             margins: {
               x: 0,
-              y: 0
+              y: 0,
             },
             outline: {
               color: null,
-              width: 2
+              width: 2,
             },
-            textColor: "#000000".toCss()
+            textColor: '#000000'.toCss(),
           },
           rect: {
             visible: true,
             size: {
               w: 60,
-              h: 20
+              h: 20,
             },
-            fillColor: "#FFFFFF".toCss(),
+            fillColor: '#FFFFFF'.toCss(),
             fillOpacity: 255,
-            borderColor: "#000000".toCss(),
+            borderColor: '#000000'.toCss(),
             borderThickness: 1,
-            borderOpacity: 255
+            borderOpacity: 255,
           },
           textMargins: {
             x: 0,
-            y: 0
-          }
+            y: 0,
+          },
         };
       }
 
@@ -14044,11 +16277,11 @@ KDCore.registerLibraryToLoad(function() {
       isUnderMouse() {
         return this.rect.isUnderMouse();
       }
-
     };
     KDCore.UI.Sprite_UITextWithBack = Sprite_UITextWithBack;
   })();
-  return (function() {    //╒═════════════════════════════════════════════════════════════════════════╛
+  return (function () {
+    //╒═════════════════════════════════════════════════════════════════════════╛
     // ■ PRIVATE.coffee
     //╒═════════════════════════════════════════════════════════════════════════╛
     //---------------------------------------------------------------------------
@@ -14056,18 +16289,18 @@ KDCore.registerLibraryToLoad(function() {
     //@[DEFINES]
     _ = KDCore.UI.Sprite_UITextWithBack.prototype;
     //$[OVER]
-    _._createContent = function() {
+    _._createContent = function () {
       this._createRect();
       return this._createText();
     };
-    _._createRect = function() {
+    _._createRect = function () {
       this.rect = new KDCore.UI.Sprite_UIRect(this.params.rect);
       return this.addChild(this.rect);
     };
-    _._createText = function() {
+    _._createText = function () {
       var x, y;
       this.text = new KDCore.UI.Sprite_UIText(this.params.text);
-      ({x, y} = this.params.textMargins);
+      ({ x, y } = this.params.textMargins);
       this.text.move(x, y);
       return this.addChild(this.text);
     };
@@ -14077,10 +16310,9 @@ KDCore.registerLibraryToLoad(function() {
 // ■ END PRIVATE.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
-  (function() {
+KDCore.registerLibraryToLoad(function () {
+  (function () {
     var Sprite_UIColorGauge;
     Sprite_UIColorGauge = class Sprite_UIColorGauge extends KDCore.UI.Sprite_UIGauge {
       constructor() {
@@ -14093,22 +16325,22 @@ KDCore.registerLibraryToLoad(function() {
           visible: true,
           size: {
             w: 100,
-            h: 40
+            h: 40,
           },
-          fill: "#FFFFFF", // * В отличии от Gauge, тут цвет, а не картинка
-          foreground: "", // картинка
-          mask: "", // картинка
-          backColor: "#000000".toCss(),
+          fill: '#FFFFFF', // * В отличии от Gauge, тут цвет, а не картинка
+          foreground: '', // картинка
+          mask: '', // картинка
+          backColor: '#000000'.toCss(),
           backOpacity: 255,
           vertical: false,
-          rootImageFolder: null //?optional
+          rootImageFolder: null, //?optional
         };
       }
-
     };
     KDCore.UI.Sprite_UIColorGauge = Sprite_UIColorGauge;
   })();
-  return (function() {    //╒═════════════════════════════════════════════════════════════════════════╛
+  return (function () {
+    //╒═════════════════════════════════════════════════════════════════════════╛
     // ■ PRIVATE.coffee
     //╒═════════════════════════════════════════════════════════════════════════╛
     //---------------------------------------------------------------------------
@@ -14117,7 +16349,7 @@ KDCore.registerLibraryToLoad(function() {
     _ = KDCore.UI.Sprite_UIColorGauge.prototype;
     //$[OVER]
     // * Заместо изображения используем простой Bitmap с заливкой цвета
-    _._loadFillImage = function() {
+    _._loadFillImage = function () {
       var fillBitmap;
       fillBitmap = new Bitmap(this.params.size.w, this.params.size.h);
       fillBitmap.fillAll(this.params.fill);
@@ -14129,10 +16361,10 @@ KDCore.registerLibraryToLoad(function() {
 // ■ END PRIVATE.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
-  (function() {    // * Данный UI Элемент является только контейнером
+KDCore.registerLibraryToLoad(function () {
+  (function () {
+    // * Данный UI Элемент является только контейнером
     // * Он ничего не рисует, нужно добавлять в него
     // * контент методом addContent
 
@@ -14145,7 +16377,7 @@ KDCore.registerLibraryToLoad(function() {
       }
 
       isTooltipActive() {
-        return (this._opThread != null) || (this._opChanger != null) || this.opacity > 0;
+        return this._opThread != null || this._opChanger != null || this.opacity > 0;
       }
 
       activateTooltip(x, y, parent) {
@@ -14155,7 +16387,7 @@ KDCore.registerLibraryToLoad(function() {
         this.deactivateTooltip();
         this.move(x, y);
         this._opThread = new KDCore.TimedUpdate(this.params.delay, this.showTooltip.bind(this));
-        if (!this.params.isGlobal && (parent != null)) {
+        if (!this.params.isGlobal && parent != null) {
           parent.addChild(this);
         } else {
           // * Always on Top on Scene  (if Global)
@@ -14166,7 +16398,7 @@ KDCore.registerLibraryToLoad(function() {
       deactivateTooltip() {
         this._opThread = null;
         this._opChanger = null;
-        return this.opacity = 0;
+        return (this.opacity = 0);
       }
 
       showTooltip() {
@@ -14196,16 +16428,16 @@ KDCore.registerLibraryToLoad(function() {
           opacityChangeStep: 35,
           margins: {
             x: 8,
-            y: 8
+            y: 8,
           },
           isGlobal: true,
-          cursorRelative: true
+          cursorRelative: true,
         };
       }
 
       toCursor() {
         var x, y;
-        ({x, y} = this.params.margins);
+        ({ x, y } = this.params.margins);
         return this.move(TouchInput.x + x, TouchInput.y + y);
       }
 
@@ -14213,11 +16445,11 @@ KDCore.registerLibraryToLoad(function() {
       addContent(content) {
         return this.add(content);
       }
-
     };
     KDCore.UI.Sprite_UITooltip = Sprite_UITooltip;
   })();
-  return (function() {    //╒═════════════════════════════════════════════════════════════════════════╛
+  return (function () {
+    //╒═════════════════════════════════════════════════════════════════════════╛
     // ■ PRIVATE.coffee
     //╒═════════════════════════════════════════════════════════════════════════╛
     //---------------------------------------------------------------------------
@@ -14230,15 +16462,14 @@ KDCore.registerLibraryToLoad(function() {
 // ■ END PRIVATE.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var ALIAS__processEscapeCharacter, _;
   //@[DEFINES]
   _ = Window_Base.prototype;
   //@[ALIAS]
   ALIAS__processEscapeCharacter = _.processEscapeCharacter;
-  _.processEscapeCharacter = function(code, textState) {
+  _.processEscapeCharacter = function (code, textState) {
     switch (code) {
       case 'CHEX':
         this.pProcessColorChangeHex(this.pObtainEscapeParamHexColor(textState));
@@ -14257,7 +16488,7 @@ KDCore.registerLibraryToLoad(function() {
     }
   };
   //?NEW
-  _.pObtainEscapeParamHexColor = function(textState) {
+  _.pObtainEscapeParamHexColor = function (textState) {
     var arr, regExp, textPart;
     regExp = /^\[(#?([0-9a-fA-F]{2}){3}|([0-9a-fA-F]){3})\]/;
     textPart = textState.text.slice(textState.index);
@@ -14266,11 +16497,11 @@ KDCore.registerLibraryToLoad(function() {
       textState.index += arr[0].length;
       return arr[1];
     } else {
-      return "";
+      return '';
     }
   };
   //?NEW
-  _.pObtainEscapeParamIconArr = function(textState) {
+  _.pObtainEscapeParamIconArr = function (textState) {
     var arr, params, regExp, textPart;
     regExp = /^\[(\d+,\s*\d+,\s*-?\d+,\s*-?\d+)\]/;
     textPart = textState.text.slice(textState.index);
@@ -14278,7 +16509,7 @@ KDCore.registerLibraryToLoad(function() {
     if (arr != null) {
       textState.index += arr[0].length;
       if (arr[1] != null) {
-        params = arr[1].split(",").map(function(i) {
+        params = arr[1].split(',').map(function (i) {
           return parseInt(i.trim());
         });
         return params;
@@ -14287,7 +16518,7 @@ KDCore.registerLibraryToLoad(function() {
     return [];
   };
   //?NEW
-  _.pObtainEscapeParamImgArr = function(textState) {
+  _.pObtainEscapeParamImgArr = function (textState) {
     var arr, params, regExp, textPart;
     regExp = /^\[(\w+,\s*\d+,\s*\d+,\s*-?\d+,\s*-?\d+)\]/;
     textPart = textState.text.slice(textState.index);
@@ -14295,7 +16526,7 @@ KDCore.registerLibraryToLoad(function() {
     if (arr != null) {
       textState.index += arr[0].length;
       if (arr[1] != null) {
-        params = arr[1].split(",").map(function(i) {
+        params = arr[1].split(',').map(function (i) {
           if (isFinite(i)) {
             return parseInt(i.trim());
           } else {
@@ -14308,7 +16539,7 @@ KDCore.registerLibraryToLoad(function() {
     return [];
   };
   //?NEW
-  _.pProcessColorChangeHex = function(colorHex) {
+  _.pProcessColorChangeHex = function (colorHex) {
     var e;
     try {
       this.changeTextColor(colorHex);
@@ -14320,7 +16551,7 @@ KDCore.registerLibraryToLoad(function() {
   };
   //?NEW
   //?params: [INDEX, SIZE, DX, DY]
-  _.pProcessDrawIconSized = function(params, textState) {
+  _.pProcessDrawIconSized = function (params, textState) {
     var dx, dy, e, iconIndex, size, staticMargin, x, y;
     try {
       if (params == null) {
@@ -14357,7 +16588,7 @@ KDCore.registerLibraryToLoad(function() {
       } else {
         this.contents.drawIcon(x, y, iconIndex, size);
       }
-      textState.x += size + (staticMargin * 2) + dx;
+      textState.x += size + staticMargin * 2 + dx;
     } catch (error) {
       e = error;
       KDCore.warning(e);
@@ -14365,7 +16596,7 @@ KDCore.registerLibraryToLoad(function() {
   };
   //?NEW
   //?params: [NAME, W, H, DX, DY]
-  _.pProcessDrawPictureSized = function(params, textState, isUnderText = false) {
+  _.pProcessDrawPictureSized = function (params, textState, isUnderText = false) {
     var drawBitmap, drawProcess, e, height, name, source, width, x, y;
     try {
       if (params == null) {
@@ -14391,7 +16622,7 @@ KDCore.registerLibraryToLoad(function() {
       drawBitmap = this.contents;
       source = this.pGetSourceImageForDrawPictureSized(name);
       if ((KDCore.isMZ() && textState.drawing === true) || KDCore.isMV()) {
-        drawProcess = function() {
+        drawProcess = function () {
           var e;
           try {
             if (drawBitmap == null) {
@@ -14416,21 +16647,18 @@ KDCore.registerLibraryToLoad(function() {
     }
   };
   // * Данный метод вынесен отдельно, чтобы можно было переопределять папки
-  return _.pGetSourceImageForDrawPictureSized = function(name) {
+  return (_.pGetSourceImageForDrawPictureSized = function (name) {
     return ImageManager.loadPicture(name);
-  };
+  });
 });
 
-
 // Generated by CoffeeScript 2.6.1
 
-
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var FloatingWindow;
-  
-    // * Общий класс для всех окон на карте
+
+  // * Общий класс для всех окон на карте
   /*parameters
       {
           draggable: true,
@@ -14457,7 +16685,7 @@ KDCore.registerLibraryToLoad(function() {
         closeButton: false,
         moveToCenter: false,
         alwaysOnTop: false,
-        header: false
+        header: false,
       };
     }
 
@@ -14494,13 +16722,13 @@ KDCore.registerLibraryToLoad(function() {
 
     setOnReadyHandler(_readyHandler) {
       this._readyHandler = _readyHandler;
-      if ((this._readyHandler != null) && this._isReady === true) {
+      if (this._readyHandler != null && this._isReady === true) {
         return this._readyHandler();
       }
     }
 
     isDraggable() {
-      return this._isDraggable === true && (this._headerSpr != null) && this._headerSpr.visible === true && this.isOpen();
+      return this._isDraggable === true && this._headerSpr != null && this._headerSpr.visible === true && this.isOpen();
     }
 
     setCloseHandler(_closeHandler) {
@@ -14525,8 +16753,7 @@ KDCore.registerLibraryToLoad(function() {
 
     hideCloseButton() {} //TODO:
 
-    
-      // * Сдвиг заголовка по X, чтобы рамку не задевал
+    // * Сдвиг заголовка по X, чтобы рамку не задевал
     headerMarginX() {
       return 2;
     }
@@ -14540,7 +16767,7 @@ KDCore.registerLibraryToLoad(function() {
     closeButtonPosition() {
       return {
         x: this.width - 24,
-        y: 4
+        y: 4,
       };
     }
 
@@ -14561,7 +16788,7 @@ KDCore.registerLibraryToLoad(function() {
     }
 
     rootImageFolder() {
-      return "Alpha/Windows";
+      return 'Alpha/Windows';
     }
 
     update() {
@@ -14585,16 +16812,16 @@ KDCore.registerLibraryToLoad(function() {
       this._close();
       return Sprite.prototype.destroy.call(this);
     }
-
   };
-  (function() {    //╒═════════════════════════════════════════════════════════════════════════╛
+  (function () {
+    //╒═════════════════════════════════════════════════════════════════════════╛
     // ■ PRIVATE.coffee
     //╒═════════════════════════════════════════════════════════════════════════╛
     //---------------------------------------------------------------------------
     var _;
     //@[DEFINES]
     _ = FloatingWindow.prototype;
-    _._init = function() {
+    _._init = function () {
       var ref;
       // * Окно всегда закрыто
       this.visible = false;
@@ -14613,7 +16840,7 @@ KDCore.registerLibraryToLoad(function() {
     };
     // * Тут ничего не создавать, не двигать, так как
     // * конент создаётся Async, см. метод _createCustomElements
-    _._applyParameters = function() {
+    _._applyParameters = function () {
       var p;
       this._applyDefaults();
       if (this.parameters == null) {
@@ -14636,7 +16863,7 @@ KDCore.registerLibraryToLoad(function() {
         this._isAlwaysOnTop = p.alwaysOnTop;
       }
     };
-    _._applyDefaults = function() {
+    _._applyDefaults = function () {
       // * Окно можно перетаскивать мышкой (по умолчанию - да)
       this._isDraggable = true;
       this._isMoveToCenter = true;
@@ -14644,7 +16871,7 @@ KDCore.registerLibraryToLoad(function() {
       this._isHaveCloseButton = true;
       this._isAlwaysOnTop = true;
     };
-    _._initFloatingSystem = function() {
+    _._initFloatingSystem = function () {
       if ($gameTemp._floatingWindows == null) {
         // * Создаём массив окон, он нужен для правильного
         // закрытия окон (по очереди) и перемещения drag and drop
@@ -14656,20 +16883,21 @@ KDCore.registerLibraryToLoad(function() {
       // * Тоже вспомогательная переменная
       this._dragging = false;
     };
-    _._moveToStartPosition = function() {
+    _._moveToStartPosition = function () {
       if (this._isMoveToCenter === true) {
         return this.moveToCenter(Graphics.width / 2, Graphics.height / 2);
       }
     };
-    _._closeButtonClick = function() {
+    _._closeButtonClick = function () {
       // * При исчезании, кнопка не успевает себя "удалить"
       $gameTemp.kdButtonUnderMouse = null;
       this.callCloseHandler();
       return this.close();
     };
-    (function() {      // * DRAGGING
+    (function () {
+      // * DRAGGING
       // -----------------------------------------------------------------------
-      _._updateDragging = function() {
+      _._updateDragging = function () {
         if (!this.isDraggable()) {
           return;
         }
@@ -14695,7 +16923,7 @@ KDCore.registerLibraryToLoad(function() {
           this._stopDragging();
         }
       };
-      _._onDragStart = function() {
+      _._onDragStart = function () {
         // * Проверка, в области Header или нет
         if (!this._isMouseInHeader()) {
           return;
@@ -14707,12 +16935,12 @@ KDCore.registerLibraryToLoad(function() {
         // * Устанавливаем глобальную ссылку на объект перемещения
         $gameTemp.pkdDraggableInstance = this;
       };
-      _.getDeltaXY = function() {
+      _.getDeltaXY = function () {
         var p;
         p = new KDCore.Point(this.x, this.y);
         return p.delta(TouchInput);
       };
-      _._onDragging = function() {
+      _._onDragging = function () {
         // * Защита от перетаскивания за края экрана
         if (!this._isNewMousePositionOnScreen()) {
           return;
@@ -14722,7 +16950,7 @@ KDCore.registerLibraryToLoad(function() {
           return this._dragHandler();
         }
       };
-      _._stopDragging = function() {
+      _._stopDragging = function () {
         if (this._dragging === true) {
           this._dragging = false;
           this.opacity = 255;
@@ -14733,28 +16961,29 @@ KDCore.registerLibraryToLoad(function() {
         }
       };
       // * Освобождаем глобальную ссылку
-      _._clearDraggableGlocalInstance = function() {
+      _._clearDraggableGlocalInstance = function () {
         if ($gameTemp.pkdDraggableInstance === this) {
-          return $gameTemp.pkdDraggableInstance = null;
+          return ($gameTemp.pkdDraggableInstance = null);
         }
       };
-      _._isMouseInHeader = function() {
+      _._isMouseInHeader = function () {
         if (this._headerSpr == null) {
           return false;
         }
         return this._headerSpr.isContainsPoint(TouchInput);
       };
-      _._isNewMousePositionOnScreen = function() {
+      _._isNewMousePositionOnScreen = function () {
         return KDCore.Utils.isPointInScreen(TouchInput, 10);
       };
     })();
-    (function() {      // -----------------------------------------------------------------------
+    (function () {
+      // -----------------------------------------------------------------------
 
       // * CREATE ELEMENTS
       // -----------------------------------------------------------------------
-      
+
       // * Слои нужны, так как изображения загружаються асинхронно
-      _._createLayers = function() {
+      _._createLayers = function () {
         this._mainLayer = new Sprite();
         this._contentLayer = new Sprite();
         this._headerLayer = new Sprite();
@@ -14764,16 +16993,16 @@ KDCore.registerLibraryToLoad(function() {
         this.addChild(this._headerLayer);
         this.addChild(this._closeButtonLayer);
       };
-      _._loadWindowFrame = function() {
-        return KDCore.Utils.loadImageAsync(this.rootImageFolder(), "windowFrame").then(this._createWindow.bind(this));
+      _._loadWindowFrame = function () {
+        return KDCore.Utils.loadImageAsync(this.rootImageFolder(), 'windowFrame').then(this._createWindow.bind(this));
       };
-      _._createWindow = function(frameImage) {
+      _._createWindow = function (frameImage) {
         this.bitmap = new Bitmap(this.windowW, this.windowH);
         this.wFrame = new KDCore.Sprite_TilingFrame(this.windowW, this.windowH, frameImage);
         this._mainLayer.addChild(this.wFrame);
         this._createParts();
       };
-      _._createParts = function() {
+      _._createParts = function () {
         this._loadHeader();
         if (this._isHaveCloseButton === true) {
           this._createCloseButton();
@@ -14786,12 +17015,12 @@ KDCore.registerLibraryToLoad(function() {
           this._readyHandler();
         }
       };
-      _._loadHeader = function() {
-        return KDCore.Utils.loadImageAsync(this.rootImageFolder(), "headerLine").then(this._createHeader.bind(this));
+      _._loadHeader = function () {
+        return KDCore.Utils.loadImageAsync(this.rootImageFolder(), 'headerLine').then(this._createHeader.bind(this));
       };
-      _._createHeader = function(headerLineImage) {
+      _._createHeader = function (headerLineImage) {
         var w;
-        w = this.windowW - (this.headerMarginX() * 2);
+        w = this.windowW - this.headerMarginX() * 2;
         this._headerSpr = new KDCore.Sprite_TilingLine(w, headerLineImage.height, headerLineImage);
         this._headerSpr.x = this.headerMarginX();
         this._headerSpr.y = this.headerMarginY();
@@ -14803,8 +17032,8 @@ KDCore.registerLibraryToLoad(function() {
           this._headerSpr.visible = false;
         }
       };
-      _._createCloseButton = function() {
-        this._closeButton = new KDCore.ButtonM("windowCloseButton", false, this.rootImageFolder());
+      _._createCloseButton = function () {
+        this._closeButton = new KDCore.ButtonM('windowCloseButton', false, this.rootImageFolder());
         this._closeButtonLayer.addChild(this._closeButton);
         this._closeButton.move(this.closeButtonPosition());
         this._closeButton.addClickHandler(this._closeButtonClick.bind(this));
@@ -14812,16 +17041,17 @@ KDCore.registerLibraryToLoad(function() {
       //%[FOR CHILDRENS]
       // * Наследники создают свои элементы в этом методе
       // * Есть специальный метод addContent()
-      _._createCustomElements = function() {}; // * EMPTY
+      _._createCustomElements = function () {}; // * EMPTY
     })();
-    (function() {      // -----------------------------------------------------------------------
+    (function () {
+      // -----------------------------------------------------------------------
 
       // * MOUSE
       // -----------------------------------------------------------------------
-      
+
       // * Определение если мышка в области окна
       //TODO: Есть проблема при открытии окна сразу под курсором
-      _._registerMouseInOut = function() {
+      _._registerMouseInOut = function () {
         if (!this.isOpen()) {
           return;
         }
@@ -14838,16 +17068,16 @@ KDCore.registerLibraryToLoad(function() {
         }
       };
       // * Используется похожая система что и в KDCore.ButtonM
-      _._onMouseIn = function() {
-        return $gameTemp.floatingWindowUnderMouse = this;
+      _._onMouseIn = function () {
+        return ($gameTemp.floatingWindowUnderMouse = this);
       };
-      _._onMouseOut = function() {
+      _._onMouseOut = function () {
         if ($gameTemp.floatingWindowUnderMouse === this) {
-          return $gameTemp.floatingWindowUnderMouse = null;
+          return ($gameTemp.floatingWindowUnderMouse = null);
         }
       };
       // * Будем проверять мышка ли в окне только при открытом окне
-      _._createMouseCheckThread = function() {
+      _._createMouseCheckThread = function () {
         this._mouseCheckThread = new KDCore.TimedUpdate(1, this._registerMouseInOut.bind(this));
         this._updateMouseCheckThread = () => {
           return this._mouseCheckThread.update();
@@ -14855,18 +17085,19 @@ KDCore.registerLibraryToLoad(function() {
         return this._mouseCheckThread.call();
       };
       // * Когда окно закрывается, никаких проверок, обнуляем метод
-      _._destroyMouseCheckThread = function() {
+      _._destroyMouseCheckThread = function () {
         this._mouseCheckThread = null;
-        return this._updateMouseCheckThread = function() {};
+        return (this._updateMouseCheckThread = function () {});
       };
       //?DYNAMIC
-      _._updateMouseCheckThread = function() {}; // * EMPTY
+      _._updateMouseCheckThread = function () {}; // * EMPTY
     })();
-    (function() {      // -----------------------------------------------------------------------
+    (function () {
+      // -----------------------------------------------------------------------
 
       // * OPEN OR CLOSE
       // -----------------------------------------------------------------------
-      _._open = function() {
+      _._open = function () {
         var ref, ref1;
         this.visible = true;
         if ((ref = $gameTemp._floatingWindows) != null) {
@@ -14880,8 +17111,8 @@ KDCore.registerLibraryToLoad(function() {
         }
         return this._createMouseCheckThread();
       };
-      _._afterOpen = function() {}; // * EMPTY
-      _._close = function() {
+      _._afterOpen = function () {}; // * EMPTY
+      _._close = function () {
         this.visible = false;
         if (this._isAlwaysOnTop === true) {
           this.removeFromParent();
@@ -14891,26 +17122,28 @@ KDCore.registerLibraryToLoad(function() {
         this._onMouseOut();
         return this._destroyMouseCheckThread();
       };
-      _._afterClose = function() {}; // * EMPTY
+      _._afterClose = function () {}; // * EMPTY
     })();
   })();
-  (function() {    // ■ END PRIVATE.coffee
+  (function () {
+    // ■ END PRIVATE.coffee
     //---------------------------------------------------------------------------
 
     // * Если окно под курсором, нельзя нажимать на карте для движения игрока
     // -----------------------------------------------------------------------
-    (function() {      //╒═════════════════════════════════════════════════════════════════════════╛
+    (function () {
+      //╒═════════════════════════════════════════════════════════════════════════╛
       // ■ Scene_Map.coffee
       //╒═════════════════════════════════════════════════════════════════════════╛
       //---------------------------------------------------------------------------
       var ALIAS__isAnyButtonPressed, ALIAS__processMapTouch, _;
-      
+
       //@[DEFINES]
       _ = Scene_Map.prototype;
       if (KDCore.isMZ()) {
         //@[ALIAS]
         ALIAS__isAnyButtonPressed = _.isAnyButtonPressed;
-        _.isAnyButtonPressed = function() {
+        _.isAnyButtonPressed = function () {
           if ($gameTemp.floatingWindowUnderMouse != null) {
             return true;
           } else {
@@ -14920,7 +17153,7 @@ KDCore.registerLibraryToLoad(function() {
       } else {
         //@[ALIAS]
         ALIAS__processMapTouch = _.processMapTouch;
-        _.processMapTouch = function() {
+        _.processMapTouch = function () {
           if ($gameTemp.floatingWindowUnderMouse != null) {
             return;
           }
@@ -14932,21 +17165,20 @@ KDCore.registerLibraryToLoad(function() {
   //@[EXTEND]
   // ■ END Scene_Map.coffee
   //---------------------------------------------------------------------------
-  return KDCore.FloatingWindow = FloatingWindow;
+  return (KDCore.FloatingWindow = FloatingWindow);
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var HUI;
   // * Html UI Manager
   // * Набор инструментов для работы с HTML элементами интерфейса
-  HUI = function() {};
-  (function() {
+  HUI = function () {};
+  (function () {
     var _;
     //@[DEFINES]
     _ = HUI;
-    _.init = function() {
+    _.init = function () {
       // * Данный набор инструментов могут использовать многие плагины, поэтому проверка
       if (this.isInited()) {
         return;
@@ -14956,14 +17188,14 @@ KDCore.registerLibraryToLoad(function() {
       this.refresh();
     };
     // * Был ли создан (инициализирован) основной элемент
-    _.isInited = function() {
+    _.isInited = function () {
       return this.parent() != null;
     };
     // * Основной элемент родитель для всех элементов UI
-    _.parent = function() {
+    _.parent = function () {
       return this._parent;
     };
-    _.refresh = function() {
+    _.refresh = function () {
       if (!this.isInited()) {
         return;
       }
@@ -14972,7 +17204,7 @@ KDCore.registerLibraryToLoad(function() {
       this._parent.style.width = Graphics._canvas.style.width;
       this._parent.style.height = Graphics._canvas.style.height;
     };
-    _.initReactComponents = function(withBabel = true) {
+    _.initReactComponents = function (withBabel = true) {
       var e;
       try {
         if (withBabel) {
@@ -14984,7 +17216,7 @@ KDCore.registerLibraryToLoad(function() {
         return KDCore.warning(e);
       }
     };
-    _._loadBabel = function() {
+    _._loadBabel = function () {
       var e;
       try {
         return this._loadScript('https://unpkg.com/babel-standalone@6/babel.min.js');
@@ -14993,7 +17225,7 @@ KDCore.registerLibraryToLoad(function() {
         return KDCore.warning(e);
       }
     };
-    _._loadReact = function() {
+    _._loadReact = function () {
       var e;
       try {
         this._loadScript('https://unpkg.com/react@18/umd/react.production.min.js');
@@ -15003,20 +17235,20 @@ KDCore.registerLibraryToLoad(function() {
         return KDCore.warning(e);
       }
     };
-    _._loadScript = function(src, isReact = false) {
+    _._loadScript = function (src, isReact = false) {
       var e, script;
       try {
-        script = document.createElement("script");
+        script = document.createElement('script');
         if (isReact === true) {
-          script.type = "text/babel";
+          script.type = 'text/babel';
         } else {
-          script.type = "text/javascript";
+          script.type = 'text/javascript';
           script.crossorigin = true;
         }
         script.src = src;
         script.async = false;
         script.defer = true;
-        script.onerror = function(e) {
+        script.onerror = function (e) {
           KDCore.warning('HUI: Failed to load script');
           return KDCore.warning(e);
         };
@@ -15029,21 +17261,21 @@ KDCore.registerLibraryToLoad(function() {
         return KDCore.warning(e);
       }
     };
-    _.loadReactComponent = function(componentName, folder = 'data/uiComponents') {
+    _.loadReactComponent = function (componentName, folder = 'data/uiComponents') {
       var e, src;
       try {
-        src = folder + "/" + componentName + ".js";
+        src = folder + '/' + componentName + '.js';
         return this._loadScript(src, true);
       } catch (error) {
         e = error;
         return KDCore.warning(e);
       }
     };
-    _.addReactComponent = function(componentName, props, uniqueId = null) {
+    _.addReactComponent = function (componentName, props, uniqueId = null) {
       var e, element, reactElement, root;
       try {
         if (window[componentName] == null) {
-          KDCore.warning("Cant find " + componentName + ", make sure to load it first");
+          KDCore.warning('Cant find ' + componentName + ', make sure to load it first');
           return null;
         }
         if (uniqueId == null) {
@@ -15062,14 +17294,14 @@ KDCore.registerLibraryToLoad(function() {
       }
     };
     // * Simple React Component (without JSX!)
-    _.loadReactComponentFromFile = function(filename, props, uniqueId, handler, folder = "data/uiComponents") {
+    _.loadReactComponentFromFile = function (filename, props, uniqueId, handler, folder = 'data/uiComponents') {
       var e, url, xhr;
       try {
         xhr = new XMLHttpRequest();
-        url = folder + "/" + filename + ".js";
-        xhr.open("GET", url);
-        xhr.overrideMimeType("plain/text");
-        xhr.onload = function() {
+        url = folder + '/' + filename + '.js';
+        xhr.open('GET', url);
+        xhr.overrideMimeType('plain/text');
+        xhr.onload = function () {
           var e, element;
           eval(xhr.responseText);
           element = KDCore.HUI.addReactComponent(filename, props, uniqueId);
@@ -15088,7 +17320,7 @@ KDCore.registerLibraryToLoad(function() {
         return KDCore.warning(e);
       }
     };
-    _._getElementForReactComponent = function(componentId) {
+    _._getElementForReactComponent = function (componentId) {
       var e, element;
       try {
         this.removeElementById(componentId);
@@ -15100,14 +17332,14 @@ KDCore.registerLibraryToLoad(function() {
       }
       return null;
     };
-    _.loadElementFromFile = function(filename, handler, folder = "data/uiComponents") {
+    _.loadElementFromFile = function (filename, handler, folder = 'data/uiComponents') {
       var e, url, xhr;
       try {
         xhr = new XMLHttpRequest();
-        url = folder + "/" + filename + ".html";
-        xhr.open("GET", url);
-        xhr.overrideMimeType("plain/text");
-        xhr.onload = function() {
+        url = folder + '/' + filename + '.html';
+        xhr.open('GET', url);
+        xhr.overrideMimeType('plain/text');
+        xhr.onload = function () {
           var e, element, htmlElementText;
           // * Хотел отдельные данные передавать и заменять в HTML текст
           // * Но если у нас есть React компоненты, то это не надо
@@ -15129,22 +17361,22 @@ KDCore.registerLibraryToLoad(function() {
         return KDCore.warning(e);
       }
     };
-    _.addCSS = function(name, folder = "css") {
+    _.addCSS = function (name, folder = 'css') {
       var head;
       if (!this.isInited()) {
         this.init();
       }
-      head = document.getElementsByTagName("head")[0];
+      head = document.getElementsByTagName('head')[0];
       if (head != null) {
-        head.insertAdjacentHTML("beforeend", "<link rel=\"stylesheet\" href=\"$0/$1.css\" />".replace("$0", folder).replace("$1", name));
+        head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" href="$0/$1.css" />'.replace('$0', folder).replace('$1', name));
       }
     };
-    _.addElement = function(id, html, classes = null) {
+    _.addElement = function (id, html, classes = null) {
       var cls, element, i, len;
       if (!this.isInited()) {
         this.init();
       }
-      element = document.createElement("div");
+      element = document.createElement('div');
       element.id = id;
       element.innerHTML = html;
       if (classes != null) {
@@ -15156,7 +17388,7 @@ KDCore.registerLibraryToLoad(function() {
       this._parent.appendChild(element);
       return element;
     };
-    _.appendElement = function(element) {
+    _.appendElement = function (element) {
       var e;
       try {
         return this._parent.appendChild(element);
@@ -15166,10 +17398,10 @@ KDCore.registerLibraryToLoad(function() {
       }
     };
     // * Может быть NULL
-    _.getElement = function(id) {
+    _.getElement = function (id) {
       return document.getElementById(id);
     };
-    _.removeElement = function(element) {
+    _.removeElement = function (element) {
       if (element == null) {
         return;
       }
@@ -15179,7 +17411,7 @@ KDCore.registerLibraryToLoad(function() {
         this.removeElementById(element.id);
       }
     };
-    _.removeElementById = function(elementId) {
+    _.removeElementById = function (elementId) {
       var element;
       if (!this.isInited()) {
         return;
@@ -15190,28 +17422,27 @@ KDCore.registerLibraryToLoad(function() {
       }
     };
     // * PRIVATE ------------------------------------------------------------------
-    _._createMainParentInHtml = function() {
-      this._parent = document.createElement("div");
-      this._parent.id = "KDCoreMain";
+    _._createMainParentInHtml = function () {
+      this._parent = document.createElement('div');
+      this._parent.id = 'KDCoreMain';
       document.body.appendChild(this._parent);
     };
-    _._extendGraphicsClass = function() {
+    _._extendGraphicsClass = function () {
       var ALIAS___updateCanvas;
       //@[ALIAS]
       ALIAS___updateCanvas = Graphics._updateCanvas;
-      Graphics._updateCanvas = function() {
+      Graphics._updateCanvas = function () {
         ALIAS___updateCanvas.call(this);
         return KDCore.HUI.refresh();
       };
     };
   })();
   //@[EXTEND]
-  return KDCore.HUI = HUI;
+  return (KDCore.HUI = HUI);
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var ALIAS___onMouseUp, ALIAS___onRightButtonDown, ALIAS__clear, ALIAS__update, _;
   // * Right mouse pressed
   // * Определение когда правая (вторая) кнопка мыши зажата и удерживается
@@ -15220,14 +17451,14 @@ KDCore.registerLibraryToLoad(function() {
   _ = TouchInput;
   //@[ALIAS]
   ALIAS__clear = _.clear;
-  _.clear = function() {
+  _.clear = function () {
     ALIAS__clear.call(this);
     this._kdMousePressed2 = false;
     this._kdPressedTime2 = 0;
   };
   //@[ALIAS]
   ALIAS___onRightButtonDown = _._onRightButtonDown;
-  _._onRightButtonDown = function(event) {
+  _._onRightButtonDown = function (event) {
     var check;
     ALIAS___onRightButtonDown.call(this, event);
     // * Это значит что ALIAS метод прошёл (верные X и Y в Canvas)
@@ -15243,7 +17474,7 @@ KDCore.registerLibraryToLoad(function() {
   };
   //@[ALIAS]
   ALIAS___onMouseUp = _._onMouseUp;
-  _._onMouseUp = function(event) {
+  _._onMouseUp = function (event) {
     ALIAS___onMouseUp.call(this, event);
     if (event.button === 2) {
       this._kdMousePressed2 = false;
@@ -15251,34 +17482,34 @@ KDCore.registerLibraryToLoad(function() {
   };
   //@[ALIAS]
   ALIAS__update = _.update;
-  _.update = function() {
+  _.update = function () {
     ALIAS__update.call(this);
     if (this.kdIsPressed2()) {
       return this._kdPressedTime2++;
     }
   };
   //?[NEW]
-  return _.kdIsPressed2 = function() {
+  return (_.kdIsPressed2 = function () {
     return this._kdMousePressed2 === true;
-  };
+  });
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   // * Методы из RPG Maker MZ которых нет в RPG Maker MV
   if (KDCore.isMZ()) {
     return;
   }
-  (function() {    //╒═════════════════════════════════════════════════════════════════════════╛
+  (function () {
+    //╒═════════════════════════════════════════════════════════════════════════╛
     // ■ Scene_Base.coffee
     //╒═════════════════════════════════════════════════════════════════════════╛
     //---------------------------------------------------------------------------
     var _;
-    
+
     //@[DEFINES]
     _ = Scene_Base.prototype;
-    _.calcWindowHeight = function(numLines, selectable) {
+    _.calcWindowHeight = function (numLines, selectable) {
       if (selectable === true) {
         return Window_Selectable.prototype.fittingHeight(numLines);
       } else {
@@ -15286,7 +17517,8 @@ KDCore.registerLibraryToLoad(function() {
       }
     };
   })();
-  (function() {    // ■ END Scene_Base.coffee
+  (function () {
+    // ■ END Scene_Base.coffee
     //---------------------------------------------------------------------------
 
     //╒═════════════════════════════════════════════════════════════════════════╛
@@ -15294,14 +17526,15 @@ KDCore.registerLibraryToLoad(function() {
     //╒═════════════════════════════════════════════════════════════════════════╛
     //---------------------------------------------------------------------------
     var _;
-    
+
     //@[DEFINES]
     _ = Window_Selectable.prototype;
-    _.itemLineRect = function(index) {
+    _.itemLineRect = function (index) {
       return this.itemRect(index);
     };
   })();
-  (function() {    // ■ END Window_Selectable.coffee
+  (function () {
+    // ■ END Window_Selectable.coffee
     //---------------------------------------------------------------------------
 
     //╒═════════════════════════════════════════════════════════════════════════╛
@@ -15314,26 +17547,27 @@ KDCore.registerLibraryToLoad(function() {
     // * Чтоб можно было Rectangle принимать в конструктор
     //@[ALIAS]
     ALIAS__initialize = _.initialize;
-    _.initialize = function(x, y, w, h) {
+    _.initialize = function (x, y, w, h) {
       if (x instanceof PIXI.Rectangle || x instanceof Rectangle) {
         return ALIAS__initialize.call(this, x.x, x.y, x.width, x.height);
       } else {
         return ALIAS__initialize.call(this, ...arguments);
       }
     };
-    
+
     // * В MZ используется FS для изменения размера шрифта в тексте
     //@[ALIAS]
     ALIAS__processEscapeCharacter = _.processEscapeCharacter;
-    _.processEscapeCharacter = function(code, textState) {
-      if (code === "FS") {
+    _.processEscapeCharacter = function (code, textState) {
+      if (code === 'FS') {
         this.contents.fontSize = this.obtainEscapeParam(textState);
       } else {
         ALIAS__processEscapeCharacter.call(this, code, textState);
       }
     };
   })();
-  (function() {    // ■ END Window_Base.coffee
+  (function () {
+    // ■ END Window_Base.coffee
     //---------------------------------------------------------------------------
 
     //╒═════════════════════════════════════════════════════════════════════════╛
@@ -15341,16 +17575,17 @@ KDCore.registerLibraryToLoad(function() {
     //╒═════════════════════════════════════════════════════════════════════════╛
     //---------------------------------------------------------------------------
     var _;
-    
+
     //@[DEFINES]
     _ = Spriteset_Map.prototype;
-    _.findTargetSprite = function(target) {
-      return this._characterSprites.find(function(sprite) {
+    _.findTargetSprite = function (target) {
+      return this._characterSprites.find(function (sprite) {
         return sprite.checkCharacter(target);
       });
     };
   })();
-  return (function() {    // ■ END Spriteset_Map.coffee
+  return (function () {
+    // ■ END Spriteset_Map.coffee
     //---------------------------------------------------------------------------
 
     //╒═════════════════════════════════════════════════════════════════════════╛
@@ -15358,10 +17593,10 @@ KDCore.registerLibraryToLoad(function() {
     //╒═════════════════════════════════════════════════════════════════════════╛
     //---------------------------------------------------------------------------
     var _;
-    
+
     //@[DEFINES]
     _ = Sprite_Character.prototype;
-    _.checkCharacter = function(character) {
+    _.checkCharacter = function (character) {
       return this._character === character;
     };
   })();
@@ -15370,9 +17605,8 @@ KDCore.registerLibraryToLoad(function() {
 // ■ END Sprite_Character.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var alias_SM_processMapTouch, alias_TIOMM;
   //?SMouse better alternative
   if (KDCore.isMZ()) {
@@ -15381,12 +17615,11 @@ KDCore.registerLibraryToLoad(function() {
   // * Для ButtonM
   //@[ALIAS]
   alias_SM_processMapTouch = Scene_Map.prototype.processMapTouch;
-  Scene_Map.prototype.processMapTouch = function() {
+  Scene_Map.prototype.processMapTouch = function () {
     if ($gameTemp.kdButtonUnderMouse != null) {
       if ($gameTemp.kdButtonUnderMouse.parent == null) {
-        return $gameTemp.kdButtonUnderMouse = null;
+        return ($gameTemp.kdButtonUnderMouse = null);
       } else {
-
       }
     } else {
       return alias_SM_processMapTouch.call(this);
@@ -15394,7 +17627,7 @@ KDCore.registerLibraryToLoad(function() {
   };
   //@[ALIAS]
   alias_TIOMM = TouchInput._onMouseMove;
-  TouchInput._onMouseMove = function(event) {
+  TouchInput._onMouseMove = function (event) {
     var x, y;
     alias_TIOMM.call(this, event);
     x = Graphics.pageToCanvasX(event.pageX);
@@ -15403,17 +17636,16 @@ KDCore.registerLibraryToLoad(function() {
       return this._onHover(x, y);
     }
   };
-  
+
   //?NEW, from MZ
-  return TouchInput._onHover = function(_x, _y) {
+  return (TouchInput._onHover = function (_x, _y) {
     this._x = _x;
     this._y = _y;
-  };
+  });
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var ALIAS__clear, ALIAS__update, _;
   if (KDCore.isMZ()) {
     return;
@@ -15422,29 +17654,28 @@ KDCore.registerLibraryToLoad(function() {
   _ = Input;
   //@[ALIAS]
   ALIAS__clear = _.clear;
-  _.clear = function() {
+  _.clear = function () {
     ALIAS__clear.call(this);
-    return this._virtualButton = null;
+    return (this._virtualButton = null);
   };
   //@[ALIAS]
   ALIAS__update = _.update;
-  _.update = function() {
+  _.update = function () {
     ALIAS__update.call(this);
     if (this._virtualButton == null) {
       return;
     }
     this._latestButton = this._virtualButton;
     this._pressedTime = 0;
-    return this._virtualButton = null;
+    return (this._virtualButton = null);
   };
-  return _.virtualClick = function(buttonName) {
-    return this._virtualButton = buttonName;
-  };
+  return (_.virtualClick = function (buttonName) {
+    return (this._virtualButton = buttonName);
+  });
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var ALIAS___startLoading, _;
   // * В версии RPG Maker MZ 1.5.0 появился баг что картинки не успевают прогрузится
   // * Данный фикс, возвращает старое поведение
@@ -15455,7 +17686,7 @@ KDCore.registerLibraryToLoad(function() {
   _ = Bitmap.prototype;
   //@[ALIAS]
   ALIAS___startLoading = _._startLoading;
-  return _._startLoading = function() {
+  return (_._startLoading = function () {
     if (Utils.hasEncryptedImages()) {
       ALIAS___startLoading.call(this, ...arguments);
     } else {
@@ -15464,23 +17695,23 @@ KDCore.registerLibraryToLoad(function() {
       this._image.onload = this._onLoad.bind(this);
       this._image.onerror = this._onError.bind(this);
       this._destroyCanvas();
-      this._loadingState = "loading";
+      this._loadingState = 'loading';
       this._image.src = this._url;
     }
-  };
+  });
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var Builder;
   Builder = {};
-  (function() {    //NUI 1.0
+  (function () {
+    //NUI 1.0
     //rev 18.08.24
     var _;
     //@[DEFINES]
     _ = Builder;
-    _.Factory = function(jsonCollection, owner, exRefresh = 0) {
+    _.Factory = function (jsonCollection, owner, exRefresh = 0) {
       var e, item, items, j, key, len, value;
       try {
         if (jsonCollection == null) {
@@ -15494,14 +17725,14 @@ KDCore.registerLibraryToLoad(function() {
             items.push(item); // * Skip not UI elements definitions
           }
         }
-//owner[key] = item if owner?
+        //owner[key] = item if owner?
         for (j = 0, len = items.length; j < len; j++) {
           item = items[j];
           item.refreshBindings(owner, true);
         }
         // * Обновить привязки через MS ещё раз
         if (exRefresh > 0) {
-          setTimeout((function() {
+          setTimeout(function () {
             var e, k, len1, results;
             try {
               results = [];
@@ -15514,7 +17745,7 @@ KDCore.registerLibraryToLoad(function() {
               e = error;
               return KDCore.warning(e);
             }
-          }), exRefresh);
+          }, exRefresh);
         }
       } catch (error) {
         e = error;
@@ -15522,7 +17753,7 @@ KDCore.registerLibraryToLoad(function() {
       }
       return items;
     };
-    _.Make = function(jsonStructure, owner = null, parent = null) {
+    _.Make = function (jsonStructure, owner = null, parent = null) {
       var bindings, child, childrens, dataObject, e, item, j, len, parameters, shortcutData, subItem, type, value;
       try {
         if (jsonStructure == null) {
@@ -15533,11 +17764,11 @@ KDCore.registerLibraryToLoad(function() {
         }
         if (jsonStructure.shortcut != null) {
           shortcutData = KDCore.UI.Builder.ConvertShortcut(jsonStructure.shortcut);
-          ({type, parameters} = shortcutData);
+          ({ type, parameters } = shortcutData);
         } else {
-          ({type, parameters} = jsonStructure);
+          ({ type, parameters } = jsonStructure);
         }
-        if (typeof parameters === "string") {
+        if (typeof parameters === 'string') {
           parameters = KDCore.UI.Builder.ConvertShortcut(parameters);
         }
         if (jsonStructure.createIf != null) {
@@ -15550,7 +17781,7 @@ KDCore.registerLibraryToLoad(function() {
         if (item == null) {
           return null;
         }
-        ({dataObject, bindings, childrens} = jsonStructure);
+        ({ dataObject, bindings, childrens } = jsonStructure);
         // * Parent нужен чтобы работали настройки положения (center, %) и т.д.
         if (parent != null) {
           parent.addChild(item);
@@ -15563,7 +17794,7 @@ KDCore.registerLibraryToLoad(function() {
         }
         // * Сохраняем схему (но только этого элемента, без "детей")
         item.uiJsonScheme = Object.assign({}, jsonStructure, {
-          childrens: []
+          childrens: [],
         });
         // * Константы доступны не только у каждого элемента в схеме, но и у общего родителя
         if (jsonStructure.constants != null) {
@@ -15592,7 +17823,7 @@ KDCore.registerLibraryToLoad(function() {
           e = error;
           KDCore.warning(e);
         }
-        if ((childrens != null) && childrens.length > 0) {
+        if (childrens != null && childrens.length > 0) {
           for (j = 0, len = childrens.length; j < len; j++) {
             child = childrens[j];
             // * Дети всегда имеют родителя - этот элемент (а не owner)
@@ -15607,7 +17838,7 @@ KDCore.registerLibraryToLoad(function() {
         }
         if (jsonStructure.parent != null) {
           parent = jsonStructure.parent;
-          if ((owner != null) && (owner[parent] != null)) {
+          if (owner != null && owner[parent] != null) {
             owner[parent].addChild(item);
           }
         }
@@ -15634,7 +17865,7 @@ KDCore.registerLibraryToLoad(function() {
       return null;
     };
     // * dataObject может быть Null, если нет binding c $
-    _.ApplyBindings = function(uiElement, bindings, dataObject) {
+    _.ApplyBindings = function (uiElement, bindings, dataObject) {
       var dataBindings, e, field, value;
       try {
         if (uiElement == null) {
@@ -15661,7 +17892,7 @@ KDCore.registerLibraryToLoad(function() {
         KDCore.warning(e);
       }
     };
-    _.RefreshBindings = function(uiElement, dataObject) {
+    _.RefreshBindings = function (uiElement, dataObject) {
       var bindings, e;
       try {
         if (uiElement == null) {
@@ -15670,7 +17901,7 @@ KDCore.registerLibraryToLoad(function() {
         if (uiElement.uiJsonScheme == null) {
           return;
         }
-        ({bindings} = uiElement.uiJsonScheme);
+        ({ bindings } = uiElement.uiJsonScheme);
         if (bindings == null) {
           return;
         }
@@ -15680,7 +17911,7 @@ KDCore.registerLibraryToLoad(function() {
         KDCore.warning(e);
       }
     };
-    _.ApplyEffects = function(uiElement, effects) {
+    _.ApplyEffects = function (uiElement, effects) {
       var alpha, color, e, ef, efData, effectsArray, j, len, quality, thickness;
       try {
         if (uiElement == null) {
@@ -15697,11 +17928,11 @@ KDCore.registerLibraryToLoad(function() {
             continue;
           }
           efData = KDCore.UI.Builder.ConvertShortcut(ef);
-          if ((efData.shadow != null) && KDCore.isMZ()) {
+          if (efData.shadow != null && KDCore.isMZ()) {
             effectsArray.push(new PIXI.filters.DropShadowFilter(efData));
           }
-          if ((efData.outline != null) && KDCore.isMZ()) {
-            ({thickness, color, quality} = efData);
+          if (efData.outline != null && KDCore.isMZ()) {
+            ({ thickness, color, quality } = efData);
             if (thickness == null) {
               thickness = 1;
             }
@@ -15714,7 +17945,7 @@ KDCore.registerLibraryToLoad(function() {
             effectsArray.push(new PIXI.filters.GlowFilter(efData));
           }
           if (efData.tint != null) {
-            ({color, alpha} = efData);
+            ({ color, alpha } = efData);
             if (alpha == null) {
               alpha = 0.5;
             }
@@ -15722,14 +17953,14 @@ KDCore.registerLibraryToLoad(function() {
           }
         }
         if (effectsArray.length > 0) {
-          return uiElement.filters = effectsArray;
+          return (uiElement.filters = effectsArray);
         }
       } catch (error) {
         e = error;
         return KDCore.warning(e);
       }
     };
-    _.ApplyAnimations = function(uiElement, animations) {
+    _.ApplyAnimations = function (uiElement, animations) {
       var a, e, j, len;
       try {
         if (uiElement == null) {
@@ -15758,18 +17989,18 @@ KDCore.registerLibraryToLoad(function() {
         KDCore.warning(e);
       }
     };
-    _.ConvertBindingValue = function(sourceObj, bindingValue, element = null) {
+    _.ConvertBindingValue = function (sourceObj, bindingValue, element = null) {
       var e, i, j, ref, text, value;
       try {
         if (bindingValue instanceof Array) {
           text = bindingValue[0];
-          for (i = j = 1, ref = bindingValue.length; (1 <= ref ? j < ref : j > ref); i = 1 <= ref ? ++j : --j) {
+          for (i = j = 1, ref = bindingValue.length; 1 <= ref ? j < ref : j > ref; i = 1 <= ref ? ++j : --j) {
             if (bindingValue[i] == null) {
               continue;
             }
             value = this.ConvertBindingValue(sourceObj, bindingValue[i], element);
             if (value != null) {
-              text = text.replace("%" + i, value);
+              text = text.replace('%' + i, value);
             }
           }
           return text;
@@ -15782,7 +18013,7 @@ KDCore.registerLibraryToLoad(function() {
       }
       return bindingValue;
     };
-    _.CreateItemByType = function(type, initialParameters = {}) {
+    _.CreateItemByType = function (type, initialParameters = {}) {
       var e;
       try {
         // * SHOULD HAVE: dataBingins(size), realWidth, realHeight
@@ -15826,15 +18057,15 @@ KDCore.registerLibraryToLoad(function() {
       }
       return null;
     };
-    _._convertValueDataFromShortcut = function(valueData) {
+    _._convertValueDataFromShortcut = function (valueData) {
       var data, e, item, j, len, n, outerItems, p, v;
       try {
-        if (valueData.contains("|")) {
+        if (valueData.contains('|')) {
           data = {};
-          outerItems = valueData.split("|");
+          outerItems = valueData.split('|');
           for (j = 0, len = outerItems.length; j < len; j++) {
             item = outerItems[j];
-            p = item.split("=");
+            p = item.split('=');
             n = p.shift();
             v = p;
             if (v.length === 0) {
@@ -15846,26 +18077,26 @@ KDCore.registerLibraryToLoad(function() {
                   v = Number(v);
                 }
               } else {
-                v = KDCore.UI.Builder._convertValueDataFromShortcut(v.join("="));
+                v = KDCore.UI.Builder._convertValueDataFromShortcut(v.join('='));
               }
             }
             data[n] = v;
           }
           return data;
         }
-        data = KDCore.UI.Builder.ConvertShortcut(valueData, ",", "=");
+        data = KDCore.UI.Builder.ConvertShortcut(valueData, ',', '=');
         return data;
       } catch (error) {
         e = error;
         return KDCore.warning(e);
       }
     };
-    _.ConvertShortcut = function(shortcut, outerSep = ";", innerSep = ":") {
+    _.ConvertShortcut = function (shortcut, outerSep = ';', innerSep = ':') {
       var config, e, j, len, pair, value, valueData, valueName, values;
       try {
         config = {};
         values = shortcut.split(outerSep);
-//console.log(values)
+        //console.log(values)
         for (j = 0, len = values.length; j < len; j++) {
           value = values[j];
           if (!String.any(value)) {
@@ -15874,7 +18105,7 @@ KDCore.registerLibraryToLoad(function() {
           pair = value.split(innerSep);
           valueName = pair[0];
           valueData = pair[1];
-          if (String.any(valueData) && valueData.contains("=")) {
+          if (String.any(valueData) && valueData.contains('=')) {
             valueData = KDCore.UI.Builder._convertValueDataFromShortcut(valueData);
           } else {
             if (valueData == null) {
@@ -15894,15 +18125,15 @@ KDCore.registerLibraryToLoad(function() {
         return KDCore.warning(e);
       }
     };
-    _._convertBindingValue = function(sourceObj, bindingValue, element = null) {
+    _._convertBindingValue = function (sourceObj, bindingValue, element = null) {
       var captured, dpValue, e, evalString, r, result, resultValue;
       try {
         if (typeof bindingValue === 'string') {
           // * Replace all HDP
-          if (bindingValue.contains("hdp")) {
-            r = new RegExp("(\\d+)hdp", "g");
+          if (bindingValue.contains('hdp')) {
+            r = new RegExp('(\\d+)hdp', 'g');
             result = r.exec(bindingValue);
-            while ((result != null)) {
+            while (result != null) {
               dpValue = Number(result[1]);
               resultValue = KDCore.Utils.convertDP(dpValue, true);
               bindingValue = bindingValue.replace(/(\d+)hdp/, resultValue);
@@ -15910,10 +18141,10 @@ KDCore.registerLibraryToLoad(function() {
             }
           }
           // * Replace all DP
-          if (bindingValue.contains("dp")) {
-            r = new RegExp("(\\d+)dp", "g");
+          if (bindingValue.contains('dp')) {
+            r = new RegExp('(\\d+)dp', 'g');
             result = r.exec(bindingValue);
-            while ((result != null)) {
+            while (result != null) {
               dpValue = Number(result[1]);
               resultValue = KDCore.Utils.convertDP(dpValue, false);
               bindingValue = bindingValue.replace(/(\d+)dp/, resultValue);
@@ -15921,14 +18152,15 @@ KDCore.registerLibraryToLoad(function() {
             }
           }
           // * FORCE EVAL
-          if (bindingValue.contains("@") && bindingValue[0] === "@") {
-            evalString = bindingValue.replace("@", "");
+          if (bindingValue.contains('@') && bindingValue[0] === '@') {
+            evalString = bindingValue.replace('@', '');
             return eval(evalString);
           }
           // * EXTRA $ calculations
-          if (bindingValue.contains("~") && bindingValue[0] === "~") { // * POST EVAL
-            if (bindingValue.contains("$")) {
-              r = new RegExp("(\\$[\\w+.]*)", "g");
+          if (bindingValue.contains('~') && bindingValue[0] === '~') {
+            // * POST EVAL
+            if (bindingValue.contains('$')) {
+              r = new RegExp('(\\$[\\w+.]*)', 'g');
               result = r.exec(bindingValue);
               if (result != null) {
                 //console.log(result)
@@ -15951,13 +18183,13 @@ KDCore.registerLibraryToLoad(function() {
                 }
               }
             } else {
-              evalString = bindingValue.replace("~", "");
+              evalString = bindingValue.replace('~', '');
               return eval(evalString);
             }
           }
-          
+
           // * Default old style simple $
-          if (bindingValue.contains("$")) {
+          if (bindingValue.contains('$')) {
             return this._convertSingleBindingValue$(...arguments);
           }
         }
@@ -15967,24 +18199,25 @@ KDCore.registerLibraryToLoad(function() {
       }
       return bindingValue;
     };
-    _._convertSingleBindingValue$ = function(sourceObj, bindingValue, element) {
+    _._convertSingleBindingValue$ = function (sourceObj, bindingValue, element) {
       var e, field, parts, subData, subField;
       try {
-        field = bindingValue.replace("$", "");
-        if (field.contains(".")) { //$parent.width
-          parts = field.split(".");
+        field = bindingValue.replace('$', '');
+        if (field.contains('.')) {
+          //$parent.width
+          parts = field.split('.');
           // * Только одно вхождение
           field = parts[0];
           subField = parts[1];
           if (!String.any(field) && String.any(subField)) {
             if (element != null) {
-              return this._convertSingleBindingValue$(element, "$" + subField, element);
+              return this._convertSingleBindingValue$(element, '$' + subField, element);
             } else {
               return null;
             }
           }
           if (String.any(field) && !String.any(subField)) {
-            return this._convertSingleBindingValue$(sourceObj, "$" + field, element);
+            return this._convertSingleBindingValue$(sourceObj, '$' + field, element);
           }
           if (sourceObj != null) {
             if (typeof sourceObj[field] === 'function') {
@@ -15992,12 +18225,12 @@ KDCore.registerLibraryToLoad(function() {
             } else {
               subData = sourceObj[field];
             }
-            return this._convertSingleBindingValue$(subData, "$" + subField, element);
+            return this._convertSingleBindingValue$(subData, '$' + subField, element);
           } else {
             return null;
           }
         } else {
-          if ((sourceObj != null) && (sourceObj[field] != null)) {
+          if (sourceObj != null && sourceObj[field] != null) {
             if (typeof sourceObj[field] === 'function') {
               return sourceObj[field]();
             } else {
@@ -16015,23 +18248,24 @@ KDCore.registerLibraryToLoad(function() {
   })();
   //@[EXTEND]
   KDCore.UI = KDCore.UI || {};
-  return KDCore.UI.Builder = Builder;
+  return (KDCore.UI.Builder = Builder);
 });
 
-
 // Generated by CoffeeScript 2.6.1
-KDCore.registerLibraryToLoad(function() {
+KDCore.registerLibraryToLoad(function () {
   var alias_WBDTEX_KDCore29122021;
   // * <center>, для RPG Maker MZ и если нету Visu Message Core
   if (KDCore.isMZ()) {
     alias_WBDTEX_KDCore29122021 = Window_Base.prototype.drawTextEx;
-    Window_Base.prototype.drawTextEx = function(text, x, y, width) {
+    Window_Base.prototype.drawTextEx = function (text, x, y, width) {
       var e, newText;
       try {
-        if (Imported.VisuMZ_1_MessageCore !== true) { // * В Visu уже есть <center>
-          if (String.any(text) && text.contains("<center>")) {
-            if (text[0] === "<" && text[1] === "c") { // * Должен быть в начале строки
-              newText = text.replace("<center>", "");
+        if (Imported.VisuMZ_1_MessageCore !== true) {
+          // * В Visu уже есть <center>
+          if (String.any(text) && text.contains('<center>')) {
+            if (text[0] === '<' && text[1] === 'c') {
+              // * Должен быть в начале строки
+              newText = text.replace('<center>', '');
               return this.drawTextExInCenter(newText, x, y, width);
             }
           }
@@ -16044,16 +18278,17 @@ KDCore.registerLibraryToLoad(function() {
     };
   }
   //?NEW
-  Window_Base.prototype.drawTextExInCenter = function(text, x, y, width, height) {
+  Window_Base.prototype.drawTextExInCenter = function (text, x, y, width, height) {
     var e, newX, newY, textSize;
     try {
-      if (KDCore.isMV()) { // * В MV нет поддержки данного метода
+      if (KDCore.isMV()) {
+        // * В MV нет поддержки данного метода
         this.drawTextEx(...arguments);
         return;
       }
       textSize = this.textSizeEx(text);
       newX = x + width / 2 - textSize.width / 2;
-      if ((height != null) && height > 0) {
+      if (height != null && height > 0) {
         newY = y + height / 2 - textSize.height / 2;
       } else {
         newY = y;
@@ -16066,28 +18301,28 @@ KDCore.registerLibraryToLoad(function() {
     }
   };
   //?NEW
-  Window_Base.prototype.drawTextExWithWordWrap = function(text, x, y, width, maxLines) {
+  Window_Base.prototype.drawTextExWithWordWrap = function (text, x, y, width, maxLines) {
     var maxWidth, wrappedText;
-    this.drawTextEx("", 0, 0, 100);
+    this.drawTextEx('', 0, 0, 100);
     maxWidth = this.contentsWidth();
     wrappedText = Window_Message.prototype.pWordWrap.call(this, text, width || maxWidth, maxLines);
     this.__lastWrappedText = wrappedText;
     return this.drawTextEx(wrappedText, x, y, width);
   };
   //?NEW
-  return Window_Message.prototype.pWordWrap = function(text, maxWidth, maxLines) {
+  return (Window_Message.prototype.pWordWrap = function (text, maxWidth, maxLines) {
     var i, j, k, l, line, lines, newLines, ref, ref1, result, spaceLeft, spaceWidth, wordWidth, wordWidthWithSpace, words;
     lines = text.split('\n');
     maxWidth = maxWidth;
     spaceWidth = this.contents.measureTextWidth(' ');
     result = '';
     newLines = 1;
-    for (i = k = 0, ref = lines.length; (0 <= ref ? k < ref : k > ref); i = 0 <= ref ? ++k : --k) {
+    for (i = k = 0, ref = lines.length; 0 <= ref ? k < ref : k > ref; i = 0 <= ref ? ++k : --k) {
       spaceLeft = maxWidth;
       line = lines[i];
       words = line.split(' ');
-      for (j = l = 0, ref1 = words.length; (0 <= ref1 ? l < ref1 : l > ref1); j = 0 <= ref1 ? ++l : --l) {
-        wordWidth = this.contents.measureTextWidth(words[j].replaceAll(/\\C\[\d+\]/g, ""));
+      for (j = l = 0, ref1 = words.length; 0 <= ref1 ? l < ref1 : l > ref1; j = 0 <= ref1 ? ++l : --l) {
+        wordWidth = this.contents.measureTextWidth(words[j].replaceAll(/\\C\[\d+\]/g, ''));
         wordWidthWithSpace = wordWidth + spaceWidth;
         if (j === 0 || wordWidthWithSpace > spaceLeft) {
           if (j > 0) {
@@ -16112,13 +18347,8 @@ KDCore.registerLibraryToLoad(function() {
       }
     }
     return result;
-  };
+  });
 });
-
-
-
-
-
 
 // Generated by CoffeeScript 2.6.1
 // * Последний файл (после всех классов)
@@ -16132,7 +18362,7 @@ if (KDCore._requireLoadLibrary === true) {
     lib(KDCore);
   }
   KDCore[KDCore._loader] = [];
-  text = "%c  KDCore is loaded " + KDCore.Version + " + NUI " + KDCore.nuiVersion;
+  text = '%c  KDCore is loaded ' + KDCore.Version + ' + NUI ' + KDCore.nuiVersion;
   console.log(text, 'background: #222; color: #82b2ff');
 }
 
@@ -16147,143 +18377,131 @@ if (KDCore._requireLoadLibrary === true) {
 
 //Plugin KDCore builded by PKD PluginBuilder 2.2.2 - 23.11.2024
 
-(function(){
+(function () {
+  //TODO: Вынести в KDCore
 
-    //TODO: Вынести в KDCore
-
-    // EXAMPLE:
-    //var People = [
-    //    {Name:"AAA", Surname:"ZZZ"},
-    //    {Name: "Name", Surname: "AAA"}
-    //];
-    //People.sort(dynamicSort("Surname"));
-    //People.sort(dynamicSort("-Surname"));
-    function dynamicSort(property) {
-        var sortOrder = 1;
-        if(property[0] === "-") {
-            sortOrder = -1;
-            property = property.substr(1);
-        }
-        return function (a,b) {
-            var result = (a[property] < b[property]) ? -1 : (a[property] > b[property]) ? 1 : 0;
-            return result * sortOrder;
-        };
+  // EXAMPLE:
+  //var People = [
+  //    {Name:"AAA", Surname:"ZZZ"},
+  //    {Name: "Name", Surname: "AAA"}
+  //];
+  //People.sort(dynamicSort("Surname"));
+  //People.sort(dynamicSort("-Surname"));
+  function dynamicSort(property) {
+    var sortOrder = 1;
+    if (property[0] === '-') {
+      sortOrder = -1;
+      property = property.substr(1);
     }
+    return function (a, b) {
+      var result = a[property] < b[property] ? -1 : a[property] > b[property] ? 1 : 0;
+      return result * sortOrder;
+    };
+  }
 
-    KDCore.Utils.dynamicSort = dynamicSort; 
-
+  KDCore.Utils.dynamicSort = dynamicSort;
 })();
 
-(function(){
-    
-    ImageManager.loadPKDSQS = function (filename) {
-        return this.loadBitmap('img/pSQSystem/', filename, 0, false);
-    };
-
+(function () {
+  ImageManager.loadPKDSQS = function (filename) {
+    return this.loadBitmap('img/pSQSystem/', filename, 0, false);
+  };
 })();
 
 var Imported;
 (function (Imported) {
-    Imported.PKD_SQS = true;
+  Imported.PKD_SQS = true;
 })(Imported || (Imported = {}));
 var PKD_SQS;
 (function (PKD_SQS) {
-    PKD_SQS.version = 17;
-    function link(library) {
-        try {
-            this[library.name] = library;
-        }
-        catch (error) {
-            console.warn(error);
-        }
+  PKD_SQS.version = 17;
+  function link(library) {
+    try {
+      this[library.name] = library;
+    } catch (error) {
+      console.warn(error);
     }
-    PKD_SQS.link = link;
-    function GetNUIFile(name) {
-        return window["$PKD_SimpleQuestsSystem_" + name];
-    }
-    PKD_SQS.GetNUIFile = GetNUIFile;
+  }
+  PKD_SQS.link = link;
+  function GetNUIFile(name) {
+    return window['$PKD_SimpleQuestsSystem_' + name];
+  }
+  PKD_SQS.GetNUIFile = GetNUIFile;
 })(PKD_SQS || (PKD_SQS = {}));
 function SQOpenQuestJournal() {
-    try {
-        /*@ts-ignore*/
-        window.SQSM.OpenQuestJournal();
-    }
-    catch (error) {
-        console.warn(error);
-    }
+  try {
+    /*@ts-ignore*/
+    window.SQSM.OpenQuestJournal();
+  } catch (error) {
+    console.warn(error);
+  }
 }
 function SQOpenOrHideTasksWindow() {
-    try {
-        /*@ts-ignore*/
-        window.SQSM.SwitchOpenedClosedStateOfQuestsList();
-    }
-    catch (error) {
-        console.warn(error);
-    }
+  try {
+    /*@ts-ignore*/
+    window.SQSM.SwitchOpenedClosedStateOfQuestsList();
+  } catch (error) {
+    console.warn(error);
+  }
 }
-
-
-
 
 var PKD_SQS;
 (function (PKD_SQS) {
-    let PP;
-    (function (PP) {
-    })(PP = PKD_SQS.PP || (PKD_SQS.PP = {}));
-    function LoadPluginSettings() {
-        /*@ts-ignore*/
-        PKD_SQS.PP._loader = new KDCore.ParamLoader("sqsQuests:structA");
-    }
-    PKD_SQS.LoadPluginSettings = LoadPluginSettings;
+  let PP;
+  (function (PP) {})((PP = PKD_SQS.PP || (PKD_SQS.PP = {})));
+  function LoadPluginSettings() {
+    /*@ts-ignore*/
+    PKD_SQS.PP._loader = new KDCore.ParamLoader('sqsQuests:structA');
+  }
+  PKD_SQS.LoadPluginSettings = LoadPluginSettings;
 })(PKD_SQS || (PKD_SQS = {}));
-
 
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Plugin Paramters.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var _;
   //@[DEFINES]
   _ = PKD_SQS.PP;
-  _.isNeedCommandInMenu = function() {
-    return _._loader.getParam("isNeedMenuCommand", true);
+  _.isNeedCommandInMenu = function () {
+    return _._loader.getParam('isNeedMenuCommand', true);
   };
-  _.isSortByNew = function() {
-    return _._loader.getParam("isSortByNew", false);
+  _.isSortByNew = function () {
+    return _._loader.getParam('isSortByNew', false);
   };
-  _.isSortByActive = function() {
-    return _._loader.getParam("isSortByActive", false);
+  _.isSortByActive = function () {
+    return _._loader.getParam('isSortByActive', false);
   };
-  _.menuCommandText = function() {
-    return _._loader.getParam("menuCommandText", "Quests");
+  _.menuCommandText = function () {
+    return _._loader.getParam('menuCommandText', 'Quests');
   };
-  _.getQuestNotifyPosition = function() {
-    return _._loader.getParam("journalNotifyPosition", {});
+  _.getQuestNotifyPosition = function () {
+    return _._loader.getParam('journalNotifyPosition', {});
   };
-  _.getQuestsArrows = function() {
-    return _._loader.getParam("visualPointers", []);
+  _.getQuestsArrows = function () {
+    return _._loader.getParam('visualPointers', []);
   };
-  _.getQuestJournalOpenButton = function() {
-    return _._loader.getParam("buttonForOpenJournal", "j");
+  _.getQuestJournalOpenButton = function () {
+    return _._loader.getParam('buttonForOpenJournal', 'j');
   };
-  _.getTasksWindowOpenButton = function() {
-    return _._loader.getParam("buttonForOpenTasksWindow", "t");
+  _.getTasksWindowOpenButton = function () {
+    return _._loader.getParam('buttonForOpenTasksWindow', 't');
   };
-  _.getDifficultyLevelSettings = function() {
-    return _._loader.getParam("questDifficultyPosition", {
-      x: "Graphics.width - 104",
-      y: 85
+  _.getDifficultyLevelSettings = function () {
+    return _._loader.getParam('questDifficultyPosition', {
+      x: 'Graphics.width - 104',
+      y: 85,
     });
   };
   // * Это было добавлено с обновлением, поэтому параметров может и не быть, возвращаем null
-  _.getQuestsCategories = function() {
-    return _._loader.getParam("sqsQuestsCategories", null);
+  _.getQuestsCategories = function () {
+    return _._loader.getParam('sqsQuestsCategories', null);
   };
-  _.createAllQuests = function() {
+  _.createAllQuests = function () {
     var i, len, q, quests, questsRaw;
-    questsRaw = _._loader.getParam("sqsQuests", []);
+    questsRaw = _._loader.getParam('sqsQuests', []);
     quests = [];
     for (i = 0, len = questsRaw.length; i < len; i++) {
       q = questsRaw[i];
@@ -16291,9 +18509,9 @@ var PKD_SQS;
     }
     return quests;
   };
-  _.createAllPoints = function() {
+  _.createAllPoints = function () {
     var i, len, p, points, questsPointsRaw;
-    questsPointsRaw = _._loader.getParam("sqsPointers", []);
+    questsPointsRaw = _._loader.getParam('sqsPointers', []);
     points = [];
     for (i = 0, len = questsPointsRaw.length; i < len; i++) {
       p = questsPointsRaw[i];
@@ -16302,18 +18520,18 @@ var PKD_SQS;
     return points;
   };
   // * DEPRECATED
-  _.isTasksWindowActive = function() {
-    return _._loader.getParam("tasksListActive", false);
+  _.isTasksWindowActive = function () {
+    return _._loader.getParam('tasksListActive', false);
   };
-  _.tasksListSettings = function() {
-    return _._loader.getParam("tasksListSettings", {
+  _.tasksListSettings = function () {
+    return _._loader.getParam('tasksListSettings', {
       position: {
         x: 0,
-        y: 192
+        y: 192,
       },
       closeButtonPosition: {
         x: 221,
-        y: 0
+        y: 0,
       },
       closingDirection: 'left',
       unhoveredOpacity: 160,
@@ -16321,84 +18539,83 @@ var PKD_SQS;
       questHeight: 60,
       maxQuestsCount: 4,
       dynamicSize: true,
-      emptyListText: "No active quests",
+      emptyListText: 'No active quests',
       questInListFontSize: 13,
-      beforeTask: "-\\}\\}",
-      questsShowMode: "active" // * all
+      beforeTask: '-\\}\\}',
+      questsShowMode: 'active', // * all
     });
   };
-  _.isAutoCompleteQuests = function() {
-    return _._loader.getParam("autoComplete", false);
+  _.isAutoCompleteQuests = function () {
+    return _._loader.getParam('autoComplete', false);
   };
-  _.navigationData = function() {
-    return _._loader.getParam("sqsNavigation", []);
+  _.navigationData = function () {
+    return _._loader.getParam('sqsNavigation', []);
   };
-  _.ignoredAutoNavigationMaps = function() {
-    return _._loader.getParam("sqsNavigationIgnore", []);
+  _.ignoredAutoNavigationMaps = function () {
+    return _._loader.getParam('sqsNavigationIgnore', []);
   };
-  _.isUseAutoNavigation = function() {
-    return _._loader.getParam("isUseAutoNavigation", false);
+  _.isUseAutoNavigation = function () {
+    return _._loader.getParam('isUseAutoNavigation', false);
   };
   // * Update 1.5
-  _.getQuestArrowDefaultOpacity = function() {
-    return _._loader.getParam("questArrowDefaultOpacity", 120);
+  _.getQuestArrowDefaultOpacity = function () {
+    return _._loader.getParam('questArrowDefaultOpacity', 120);
   };
-  _.isChangeOpacityOverDistance = function() {
-    return _._loader.getParam("changeOpacityOverDistance", true);
+  _.isChangeOpacityOverDistance = function () {
+    return _._loader.getParam('changeOpacityOverDistance', true);
   };
-  _.isHaveFailedQuests = function() {
-    return _._loader.getParam("isHaveFailedQuests", false);
+  _.isHaveFailedQuests = function () {
+    return _._loader.getParam('isHaveFailedQuests', false);
   };
-  _.nextCategoryKeyboardKey = function() {
-    return _._loader.getParam("nextCategoryKey", "");
+  _.nextCategoryKeyboardKey = function () {
+    return _._loader.getParam('nextCategoryKey', '');
   };
-  _.prevCategoryKeyboardKey = function() {
-    return _._loader.getParam("prevCategoryKey", "");
+  _.prevCategoryKeyboardKey = function () {
+    return _._loader.getParam('prevCategoryKey', '');
   };
-  _.isSupportGamepad = function() {
-    return _._loader.getParam("isSupportGamepad", false);
+  _.isSupportGamepad = function () {
+    return _._loader.getParam('isSupportGamepad', false);
   };
-  _.nextCategoryGamepadKey = function() {
-    return _._loader.getParam("nextCategoryGamepadKey", "RB");
+  _.nextCategoryGamepadKey = function () {
+    return _._loader.getParam('nextCategoryGamepadKey', 'RB');
   };
-  _.prevCategoryGamepadKey = function() {
-    return _._loader.getParam("prevCategoryGamepadKey", "LB");
+  _.prevCategoryGamepadKey = function () {
+    return _._loader.getParam('prevCategoryGamepadKey', 'LB');
   };
   // * Update 1.6
-  _.isUseNewQuestsWindow = function() {
-    return _._loader.getParam("isUseNewQuestsWindow", true);
+  _.isUseNewQuestsWindow = function () {
+    return _._loader.getParam('isUseNewQuestsWindow', true);
   };
-  _.getNewQuestWindowShowMode = function() {
-    return _._loader.getParam("nqw_questsShowMode", "all");
+  _.getNewQuestWindowShowMode = function () {
+    return _._loader.getParam('nqw_questsShowMode', 'all');
   };
 })();
 
 // ■ END Plugin Paramters.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ DataManager.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var ALIAS__loadDataFile, _, pkdRegisterLocalNUIFile;
   //@[DEFINES]
   _ = DataManager;
-  pkdRegisterLocalNUIFile = function(name) {
-    return DataManager.pkdRegisterNUIFile("PKD_SimpleQuestsSystem", name);
+  pkdRegisterLocalNUIFile = function (name) {
+    return DataManager.pkdRegisterNUIFile('PKD_SimpleQuestsSystem', name);
   };
-  pkdRegisterLocalNUIFile("NUI_MapQuestsList");
-  pkdRegisterLocalNUIFile("NUI_MapQuestsListItem");
-  pkdRegisterLocalNUIFile("NUI_QuestsScene");
-  pkdRegisterLocalNUIFile("NUI_QuestListItem");
-  pkdRegisterLocalNUIFile("NUI_TaskListItem");
+  pkdRegisterLocalNUIFile('NUI_MapQuestsList');
+  pkdRegisterLocalNUIFile('NUI_MapQuestsListItem');
+  pkdRegisterLocalNUIFile('NUI_QuestsScene');
+  pkdRegisterLocalNUIFile('NUI_QuestListItem');
+  pkdRegisterLocalNUIFile('NUI_TaskListItem');
   //@[ALIAS]
   ALIAS__loadDataFile = _.loadDataFile;
-  _.loadDataFile = function(name, src) {
-    if (src.contains("PKD_SimpleQuestsSystem")) {
-      src = src.replace("Test_", "");
+  _.loadDataFile = function (name, src) {
+    if (src.contains('PKD_SimpleQuestsSystem')) {
+      src = src.replace('Test_', '');
     }
     return ALIAS__loadDataFile.call(this, name, src);
   };
@@ -16406,7 +18623,6 @@ var PKD_SQS;
 
 // ■ END DataManager.coffee
 //---------------------------------------------------------------------------
-
 
 // Generated by CoffeeScript 2.6.1
 var FWindow_SQSMapTW;
@@ -16418,7 +18634,7 @@ FWindow_SQSMapTW = class FWindow_SQSMapTW extends KDCore.FloatingWindow {
       closeButton: true,
       moveToCenter: false,
       alwaysOnTop: true,
-      header: false
+      header: false,
     });
     this._isHovered = false;
     this._threads = [];
@@ -16449,7 +18665,7 @@ FWindow_SQSMapTW = class FWindow_SQSMapTW extends KDCore.FloatingWindow {
   }
 
   rootImageFolder() {
-    return "pSQSystem";
+    return 'pSQSystem';
   }
 
   isUnderMouse() {
@@ -16462,7 +18678,7 @@ FWindow_SQSMapTW = class FWindow_SQSMapTW extends KDCore.FloatingWindow {
   }
 
   isInOpenedState() {
-    return (this._closeButton != null) && this._closeButton.visible === true;
+    return this._closeButton != null && this._closeButton.visible === true;
   }
 
   closeButtonPosition() {
@@ -16485,7 +18701,7 @@ FWindow_SQSMapTW = class FWindow_SQSMapTW extends KDCore.FloatingWindow {
     } else {
       totalLinesCount = itemsCount;
     }
-    this.height = (totalLinesCount * s.questHeight) + 10;
+    this.height = totalLinesCount * s.questHeight + 10;
     this._mainLayer.removeChild(this.wFrame);
     this.wFrame = new KDCore.Sprite_TilingFrame(this.windowW, this.height, this._frameImage);
     this._mainLayer.addChild(this.wFrame);
@@ -16513,16 +18729,16 @@ FWindow_SQSMapTW = class FWindow_SQSMapTW extends KDCore.FloatingWindow {
     } else {
       moveDir = 1;
     }
-    this._moveSym = "";
+    this._moveSym = '';
     moveDest = 0;
     direction = this.userSettings().closingDirection;
     switch (direction) {
-      case "left":
-        this._moveSym = "x";
+      case 'left':
+        this._moveSym = 'x';
         moveDest = [0, -this.width - 1][moveDir];
         break;
-      case "right":
-        this._moveSym = "x";
+      case 'right':
+        this._moveSym = 'x';
         moveDest = [this.x - this.width - this.closeButtonPosition().x, this.x + this.width + this.closeButtonPosition().x][moveDir];
     }
     this._moveAnimated(this._moveSym, moveDest);
@@ -16546,21 +18762,21 @@ FWindow_SQSMapTW = class FWindow_SQSMapTW extends KDCore.FloatingWindow {
     this._threads[1] = null;
     this._moveChangerX = null;
     if (this._moveDir === 'out') {
-      if (this.userSettings().closingDirection === "left") {
+      if (this.userSettings().closingDirection === 'left') {
         this[this._moveSym] = -this.width + 2;
       } else {
         this[this._moveSym] = this.x - 2;
       }
-      this._changeButtonTo("open");
+      this._changeButtonTo('open');
       this._threads[0] = null;
       this.opacity = 255;
     } else {
-      if (this.userSettings().closingDirection === "left") {
+      if (this.userSettings().closingDirection === 'left') {
         this[this._moveSym] = 0;
       } else {
         this[this._moveSym] = this.userSettings().position.x;
       }
-      this._changeButtonTo("close");
+      this._changeButtonTo('close');
     }
   }
 
@@ -16583,7 +18799,7 @@ FWindow_SQSMapTW = class FWindow_SQSMapTW extends KDCore.FloatingWindow {
     r = new Rectangle(-8, -4, this.width + 16, this.height + 6);
     w = new Window_SQSTasksWindowList(r);
     w.refresh();
-    setTimeout((function() {
+    setTimeout(function () {
       var e;
       try {
         return w.refresh();
@@ -16591,7 +18807,7 @@ FWindow_SQSMapTW = class FWindow_SQSMapTW extends KDCore.FloatingWindow {
         e = error;
         return console.warn(e);
       }
-    }), 10);
+    }, 10);
     this.setSubWindow(w);
     if (this.userSettings().dynamicSize === true) {
       w.setRefreshCallback(this.refreshSize.bind(this));
@@ -16660,8 +18876,7 @@ FWindow_SQSMapTW = class FWindow_SQSMapTW extends KDCore.FloatingWindow {
     this._threads[0] = this._opChanger;
   }
 
-  
-    //$[OVER]
+  //$[OVER]
   _closeButtonClick() {
     if (this.isInAnimation()) {
       return;
@@ -16679,7 +18894,7 @@ FWindow_SQSMapTW = class FWindow_SQSMapTW extends KDCore.FloatingWindow {
 
   _createCloseButton() {
     super._createCloseButton();
-    this._openButton = new KDCore.ButtonM("windowOpenButton", false, this.rootImageFolder());
+    this._openButton = new KDCore.ButtonM('windowOpenButton', false, this.rootImageFolder());
     this._closeButtonLayer.addChild(this._openButton);
     this._openButton.move(this.closeButtonPosition());
     this._openButton.addClickHandler(this._closeButtonClick.bind(this));
@@ -16690,49 +18905,45 @@ FWindow_SQSMapTW = class FWindow_SQSMapTW extends KDCore.FloatingWindow {
     this._frameImage = img;
     return KDCore.FloatingWindow.prototype._createWindow.call(this, img);
   }
-
 };
 
-
 (() => {
-    const _ = Game_Map.prototype;
-    //@[ALIAS]
-    const a_requestRefresh = _.requestRefresh;
-    _.requestRefresh = function (...args) {
-        a_requestRefresh.call(this, ...args);
-        try {
-            SQS_QuestAndTaskAutoConditionsManager.RefreshAllQuestsAndTasksAutoConditions();
-        }
-        catch (error) {
-            console.warn(error);
-        }
-    };
+  const _ = Game_Map.prototype;
+  //@[ALIAS]
+  const a_requestRefresh = _.requestRefresh;
+  _.requestRefresh = function (...args) {
+    a_requestRefresh.call(this, ...args);
+    try {
+      SQS_QuestAndTaskAutoConditionsManager.RefreshAllQuestsAndTasksAutoConditions();
+    } catch (error) {
+      console.warn(error);
+    }
+  };
 })();
-
 
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Game_Player.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var _;
   //@[DEFINES]
   _ = Game_Player.prototype;
-  _.sqGetQuestsData = function() {
+  _.sqGetQuestsData = function () {
     if (this.sqQData == null) {
       this.sqQData = new SQS_Keep();
     }
     return this.sqQData;
   };
   // * Перенёс в Game_Temp, чтобы пересоздавались после загрузки игры из сохранения
-  _.sqGetAllQuests = function() {
+  _.sqGetAllQuests = function () {
     if ($gameTemp.sqQuests == null) {
       $gameTemp.sqQuests = PKD_SQS.PP.createAllQuests();
     }
     return $gameTemp.sqQuests;
   };
-  _.sqGetAllPoints = function() {
+  _.sqGetAllPoints = function () {
     if ($gameTemp.sqPoints == null) {
       $gameTemp.sqPoints = PKD_SQS.PP.createAllPoints();
     }
@@ -16743,21 +18954,18 @@ FWindow_SQSMapTW = class FWindow_SQSMapTW extends KDCore.FloatingWindow {
 // ■ END Game_Player.coffee
 //---------------------------------------------------------------------------
 
-
-
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Scene_Boot.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var ALIAS__start, _;
   //@[DEFINES]
   _ = Scene_Boot.prototype;
   //@[ALIAS]
   ALIAS__start = _.start;
-  _.start = function() {
+  _.start = function () {
     PKD_SQS.LoadPluginSettings();
     ALIAS__start.call(this, ...arguments);
     if (PKD_SQS.PP.isSupportGamepad()) {
@@ -16769,19 +18977,18 @@ FWindow_SQSMapTW = class FWindow_SQSMapTW extends KDCore.FloatingWindow {
 // ■ END Scene_Boot.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Scene_Map.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var ALIAS__onMapLoaded, ALIAS__stop, ALIAS__terminate, ALIAS__update, _;
   //@[DEFINES]
   _ = Scene_Map.prototype;
   //@[ALIAS]
   ALIAS__onMapLoaded = _.onMapLoaded;
-  _.onMapLoaded = function() {
+  _.onMapLoaded = function () {
     ALIAS__onMapLoaded.call(this);
     SQSM.init(); //?
     this.loadSQSPoints();
@@ -16795,19 +19002,19 @@ FWindow_SQSMapTW = class FWindow_SQSMapTW extends KDCore.FloatingWindow {
   };
   //@[ALIAS]
   ALIAS__terminate = _.terminate;
-  _.terminate = function() {
+  _.terminate = function () {
     Sprite_MapQuestsList.Destroy();
     return ALIAS__terminate.call(this, ...arguments);
   };
   //@[ALIAS]
   ALIAS__stop = _.stop;
-  _.stop = function() {
+  _.stop = function () {
     Sprite_MapQuestsList.Destroy();
     return ALIAS__stop.call(this, ...arguments);
   };
   //@[ALIAS]
   ALIAS__update = _.update;
-  _.update = function() {
+  _.update = function () {
     ALIAS__update.call(this);
     return this.updateSQSOpenByButton();
   };
@@ -16816,17 +19023,16 @@ FWindow_SQSMapTW = class FWindow_SQSMapTW extends KDCore.FloatingWindow {
 // ■ END Scene_Map.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Scene_Map.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var _;
   //@[DEFINES]
   _ = Scene_Map.prototype;
-  _.loadSQSOpenButton = function() {
+  _.loadSQSOpenButton = function () {
     this.sqsOpenButton = PKD_SQS.PP.getQuestJournalOpenButton();
     this.sqsOpenTasksWindow = PKD_SQS.PP.getTasksWindowOpenButton();
     if (String.any(this.sqsOpenButton) || String.any(this.sqsOpenTasksWindow)) {
@@ -16834,31 +19040,31 @@ FWindow_SQSMapTW = class FWindow_SQSMapTW extends KDCore.FloatingWindow {
     }
   };
   //?DYNAMIC
-  _.updateSQSOpenByButton = function() {}; // * EMPTY
-  _.updateSQSOpenByButtonBody = function() {
+  _.updateSQSOpenByButton = function () {}; // * EMPTY
+  _.updateSQSOpenByButtonBody = function () {
     if ($gameMessage.isBusy()) {
       return;
     }
     if ($gameMap.isEventRunning()) {
       return;
     }
-    if ((this.sqsOpenButton != null) && Input.isTriggered(this.sqsOpenButton)) {
+    if (this.sqsOpenButton != null && Input.isTriggered(this.sqsOpenButton)) {
       SQOpenQuestJournal();
       return;
     }
-    if ((this.sqsOpenTasksWindow != null) && Input.isTriggered(this.sqsOpenTasksWindow)) {
+    if (this.sqsOpenTasksWindow != null && Input.isTriggered(this.sqsOpenTasksWindow)) {
       SQOpenOrHideTasksWindow();
       return;
     }
   };
-  _.loadSQSPoints = function() {
+  _.loadSQSPoints = function () {
     var activeQuests, arrowData, arrows, i, len, q, qIndex, questsWithPoints;
     this._spriteset.sqClearQuestNavigator();
     activeQuests = SQSM.getActiveQuests();
     if (activeQuests.length === 0) {
       return;
     }
-    questsWithPoints = activeQuests.filter(function(q) {
+    questsWithPoints = activeQuests.filter(function (q) {
       return SQSM.isQuestHavePoints(q.id);
     });
     //console.info questsWithPoints
@@ -16876,15 +19082,15 @@ FWindow_SQSMapTW = class FWindow_SQSMapTW extends KDCore.FloatingWindow {
       }
     }
   };
-  _._createSQSArrowsForQuest = function(quest, arrowData) {
+  _._createSQSArrowsForQuest = function (quest, arrowData) {
     var i, len, point, points, task, tasks;
     points = SQSM.getPointsForQuest(quest.id);
     if (!points.isHaveAnyPoints()) {
       return;
     }
-    
+
     // * Текущие (не выполненные и видимые) задачи квеста, которые имеют точки
-    tasks = quest.getTasksForPointers().filter(function(t) {
+    tasks = quest.getTasksForPointers().filter(function (t) {
       return points.isHavePointsOnCurrentMap(t.index);
     });
     for (i = 0, len = tasks.length; i < len; i++) {
@@ -16893,7 +19099,7 @@ FWindow_SQSMapTW = class FWindow_SQSMapTW extends KDCore.FloatingWindow {
       this._createSQSArrowForQuestTask(point, arrowData);
     }
   };
-  _._createSQSArrowForQuestTask = function(point, arrowData) {
+  _._createSQSArrowForQuestTask = function (point, arrowData) {
     var plSprite, sq;
     plSprite = this._spriteset.findTargetSprite($gamePlayer);
     sq = new SQSQuestArrow(plSprite, arrowData.image, arrowData.color);
@@ -16901,26 +19107,25 @@ FWindow_SQSMapTW = class FWindow_SQSMapTW extends KDCore.FloatingWindow {
     this._spriteset.sqAddOnQuestNavigator(sq);
   };
   //?{VERSION}
-  _.showSQSNotify = function() {};
+  _.showSQSNotify = function () {};
 })();
 
 // ■ END Scene_Map.coffee
 //---------------------------------------------------------------------------
-
 
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Scene_Map.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var _;
   //@[DEFINES]
   _ = Scene_Map.prototype;
-  _.sqIsTaskWindowExists = function() {
+  _.sqIsTaskWindowExists = function () {
     return this._sqTasksWindow != null;
   };
-  _.loadSQSTasksWindow = function() {
+  _.loadSQSTasksWindow = function () {
     var e, h, p, w;
     if (!PKD_SQS.PP.isTasksWindowActive()) {
       return;
@@ -16935,9 +19140,9 @@ FWindow_SQSMapTW = class FWindow_SQSMapTW extends KDCore.FloatingWindow {
       this._sqTasksWindow.y = p.position.y;
       this._sqTasksWindow.open();
       this.addChild(this._sqTasksWindowContainer);
-      setTimeout((function() {
+      setTimeout(function () {
         return SQSM.RefreshMapQuestsList();
-      }), 200);
+      }, 200);
       this.refreshSQSTaskWindowVisibility();
     } catch (error) {
       e = error;
@@ -16945,7 +19150,7 @@ FWindow_SQSMapTW = class FWindow_SQSMapTW extends KDCore.FloatingWindow {
       this._sqTasksWindow = null;
     }
   };
-  _.refreshSQSTaskWindowVisibility = function() {
+  _.refreshSQSTaskWindowVisibility = function () {
     var ref, ref1;
     if ($gameSystem._sqsIsTaskWindowDisabled === true) {
       if ((ref = this._sqTasksWindow) != null) {
@@ -16960,7 +19165,7 @@ FWindow_SQSMapTW = class FWindow_SQSMapTW extends KDCore.FloatingWindow {
       }
     }
   };
-  _.tryOpenOrCloseSQSTaskWindow = function() {
+  _.tryOpenOrCloseSQSTaskWindow = function () {
     var e;
     if (!this.sqIsTaskWindowExists()) {
       return;
@@ -16972,7 +19177,7 @@ FWindow_SQSMapTW = class FWindow_SQSMapTW extends KDCore.FloatingWindow {
       return console.warn(e);
     }
   };
-  _.openSQSTaskWindow = function() {
+  _.openSQSTaskWindow = function () {
     var e;
     if (!this.sqIsTaskWindowExists()) {
       return;
@@ -16986,7 +19191,7 @@ FWindow_SQSMapTW = class FWindow_SQSMapTW extends KDCore.FloatingWindow {
       return console.warn(e);
     }
   };
-  _.closeSQSTaskWindow = function() {
+  _.closeSQSTaskWindow = function () {
     var e;
     if (!this.sqIsTaskWindowExists()) {
       return;
@@ -17000,7 +19205,7 @@ FWindow_SQSMapTW = class FWindow_SQSMapTW extends KDCore.FloatingWindow {
       return console.warn(e);
     }
   };
-  _.refreshSQSTaskWindow = function() {
+  _.refreshSQSTaskWindow = function () {
     var e;
     if (!this.sqIsTaskWindowExists()) {
       return;
@@ -17018,19 +19223,18 @@ FWindow_SQSMapTW = class FWindow_SQSMapTW extends KDCore.FloatingWindow {
 // ■ END Scene_Map.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Scene_Menu.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var ALIAS__createCommandWindow, _;
   //@[DEFINES]
   _ = Scene_Menu.prototype;
   //@[ALIAS]
   ALIAS__createCommandWindow = _.createCommandWindow;
-  _.createCommandWindow = function() {
+  _.createCommandWindow = function () {
     ALIAS__createCommandWindow.call(this);
     this._commandWindow.setHandler('sqsJournal', SQSM.OpenQuestJournal);
   };
@@ -17038,7 +19242,6 @@ FWindow_SQSMapTW = class FWindow_SQSMapTW extends KDCore.FloatingWindow {
 
 // ■ END Scene_Menu.coffee
 //---------------------------------------------------------------------------
-
 
 // Generated by CoffeeScript 2.6.1
 var Scene_SQSJournal;
@@ -17055,7 +19258,7 @@ Scene_SQSJournal = class Scene_SQSJournal extends Scene_MenuBase {
   create() {
     super.create();
     this._group = 0;
-    this._category = ""; // * All
+    this._category = ''; // * All
     this._data = [];
     this._closeButton = PKD_SQS.PP.getQuestJournalOpenButton();
     this._createMainScheme();
@@ -17083,7 +19286,7 @@ Scene_SQSJournal = class Scene_SQSJournal extends Scene_MenuBase {
   _createMainScheme() {
     var e, ref;
     try {
-      KDCore.Sprite_NUI.FromScheme(PKD_SQS.GetNUIFile("NUI_QuestsScene"), this);
+      KDCore.Sprite_NUI.FromScheme(PKD_SQS.GetNUIFile('NUI_QuestsScene'), this);
       return (ref = this._closeButtonSprite) != null ? ref.setClickHandler(this.popScene.bind(this)) : void 0;
     } catch (error) {
       e = error;
@@ -17119,7 +19322,7 @@ Scene_SQSJournal = class Scene_SQSJournal extends Scene_MenuBase {
       }
       this._applySortings();
       currentGroup = this._group;
-      questsSprites = this._data.map(function(q) {
+      questsSprites = this._data.map(function (q) {
         return new Sprite_SQSQuestListItem(q, currentGroup);
       });
       this._questsList.setItems(questsSprites);
@@ -17230,7 +19433,7 @@ Scene_SQSJournal = class Scene_SQSJournal extends Scene_MenuBase {
 
   _createHelpText() {
     var ref;
-    return (ref = this._activeHelp) != null ? ref.visible = false : void 0;
+    return (ref = this._activeHelp) != null ? (ref.visible = false) : void 0;
   }
 
   _updateNavigation() {
@@ -17281,7 +19484,7 @@ Scene_SQSJournal = class Scene_SQSJournal extends Scene_MenuBase {
   _updateCloseByButton() {
     var e;
     try {
-      if ((this._closeButton != null) && Input.isTriggered(this._closeButton)) {
+      if (this._closeButton != null && Input.isTriggered(this._closeButton)) {
         this.popScene();
       }
     } catch (error) {
@@ -17289,16 +19492,14 @@ Scene_SQSJournal = class Scene_SQSJournal extends Scene_MenuBase {
       return console.warn(e);
     }
   }
-
 };
-
 
 // Generated by CoffeeScript 2.6.1
 var Sprite_MapQuestsListItem;
 
 Sprite_MapQuestsListItem = class Sprite_MapQuestsListItem extends KDCore.Sprite_NUI {
   constructor(quest) {
-    super(PKD_SQS.GetNUIFile("NUI_MapQuestsListItem"));
+    super(PKD_SQS.GetNUIFile('NUI_MapQuestsListItem'));
     this.quest = quest;
     this.refresh();
     if (this.uiConstant('autoRefreshIntervalInSeconds') > 0) {
@@ -17310,7 +19511,7 @@ Sprite_MapQuestsListItem = class Sprite_MapQuestsListItem extends KDCore.Sprite_
   startAutoRefreshThread() {
     var e;
     try {
-      return this._autoRefreshThread = new KDCore.TimedUpdate(this.uiConstant('autoRefreshIntervalInSeconds') * 60, this.refreshIfNeeds.bind(this));
+      return (this._autoRefreshThread = new KDCore.TimedUpdate(this.uiConstant('autoRefreshIntervalInSeconds') * 60, this.refreshIfNeeds.bind(this)));
     } catch (error) {
       e = error;
       return console.warn(e);
@@ -17332,11 +19533,11 @@ Sprite_MapQuestsListItem = class Sprite_MapQuestsListItem extends KDCore.Sprite_
   }
 
   questLongName() {
-    return this._getSafeQuestFieldOr('title', "???");
+    return this._getSafeQuestFieldOr('title', '???');
   }
 
   _getSafeQuestFieldOr(fieldName, defaultValue) {
-    if ((this.quest != null) && (this.quest[fieldName] != null)) {
+    if (this.quest != null && this.quest[fieldName] != null) {
       return this.quest[fieldName];
     } else {
       return defaultValue;
@@ -17361,7 +19562,7 @@ Sprite_MapQuestsListItem = class Sprite_MapQuestsListItem extends KDCore.Sprite_
       e = error;
       console.warn(e);
     }
-    return "???";
+    return '???';
   }
 
   questActivePointerColor() {
@@ -17374,9 +19575,9 @@ Sprite_MapQuestsListItem = class Sprite_MapQuestsListItem extends KDCore.Sprite_
     } catch (error) {
       e = error;
       console.warn(e);
-      return "#FFFFFF";
+      return '#FFFFFF';
     }
-    return this.uiConstant("defaultQuestNameColor");
+    return this.uiConstant('defaultQuestNameColor');
   }
 
   isQuestAreActiveNow() {
@@ -17404,7 +19605,7 @@ Sprite_MapQuestsListItem = class Sprite_MapQuestsListItem extends KDCore.Sprite_
       e = error;
       console.warn(e);
     }
-    return "???";
+    return '???';
   }
 
   refresh() {
@@ -17427,7 +19628,7 @@ Sprite_MapQuestsListItem = class Sprite_MapQuestsListItem extends KDCore.Sprite_
     var e, parsedText, text;
     try {
       text = this.questLastTaskText();
-      if (text.contains("V[")) {
+      if (text.contains('V[')) {
         parsedText = this._convertControlCharacters(text);
         if (this.__lastTaskText !== parsedText) {
           this.__lastTaskText = parsedText;
@@ -17448,33 +19649,31 @@ Sprite_MapQuestsListItem = class Sprite_MapQuestsListItem extends KDCore.Sprite_
     } catch (error) {
       e = error;
       console.warn(e);
-      return "";
+      return '';
     }
     return outputText;
   }
-
 };
-
 
 // Generated by CoffeeScript 2.6.1
 var Sprite_MapQuestsList;
 
 Sprite_MapQuestsList = class Sprite_MapQuestsList extends KDCore.Sprite_NUI {
   constructor() {
-    super(PKD_SQS.GetNUIFile("NUI_MapQuestsList"));
-    this.opacity = this.uiConstant("initialOpacity");
+    super(PKD_SQS.GetNUIFile('NUI_MapQuestsList'));
+    this.opacity = this.uiConstant('initialOpacity');
     this._isUnderMouseState = false;
     this._questListItems = [];
     //@startRefreshThread()
     this._onUnderMouseExit();
     this.makeQuestsItems();
     this.refresh();
-    setTimeout((() => {
+    setTimeout(() => {
       return this.refresh();
-    }), 100);
-    setTimeout((() => {
+    }, 100);
+    setTimeout(() => {
       return this.refresh();
-    }), 200);
+    }, 200);
     return;
   }
 
@@ -17502,7 +19701,7 @@ Sprite_MapQuestsList = class Sprite_MapQuestsList extends KDCore.Sprite_NUI {
     try {
       w = new Sprite_MapQuestsList();
       SceneManager._scene.addChild(w);
-      return SceneManager._scene._sqMapQuestsList = w;
+      return (SceneManager._scene._sqMapQuestsList = w);
     } catch (error) {
       e = error;
       return console.warn(e);
@@ -17610,7 +19809,7 @@ Sprite_MapQuestsList = class Sprite_MapQuestsList extends KDCore.Sprite_NUI {
   }
 
   isShowActiveOnlyQuests() {
-    return PKD_SQS.PP.getNewQuestWindowShowMode() === "active";
+    return PKD_SQS.PP.getNewQuestWindowShowMode() === 'active';
   }
 
   //TODO: Maybe to Sprite_NUI ??
@@ -17620,7 +19819,7 @@ Sprite_MapQuestsList = class Sprite_MapQuestsList extends KDCore.Sprite_NUI {
     }
     this.refreshThread = new KDCore.TimedUpdate(2, this.refresh.bind(this));
     this.refreshThread.setAfter(5, () => {
-      return this.refreshThread = null;
+      return (this.refreshThread = null);
     });
   }
 
@@ -17637,12 +19836,12 @@ Sprite_MapQuestsList = class Sprite_MapQuestsList extends KDCore.Sprite_NUI {
       if (this.isUnderMouse()) {
         if (this._isUnderMouseState === false) {
           this._onUnderMouseEnter();
-          return this._isUnderMouseState = true;
+          return (this._isUnderMouseState = true);
         }
       } else {
         if (this._isUnderMouseState === true) {
           this._onUnderMouseExit();
-          return this._isUnderMouseState = false;
+          return (this._isUnderMouseState = false);
         }
       }
     } catch (error) {
@@ -17686,7 +19885,7 @@ Sprite_MapQuestsList = class Sprite_MapQuestsList extends KDCore.Sprite_NUI {
       }
       y = 0;
       if (!this.isShowActiveOnlyQuests()) {
-        quests = SQSM.playerCurrentQuestsForCategory("");
+        quests = SQSM.playerCurrentQuestsForCategory('');
       } else {
         quests = SQSM.getActiveQuests();
       }
@@ -17709,9 +19908,7 @@ Sprite_MapQuestsList = class Sprite_MapQuestsList extends KDCore.Sprite_NUI {
       return console.warn(e);
     }
   }
-
 };
-
 
 // Generated by CoffeeScript 2.6.1
 var SQSQuestArrow;
@@ -17724,7 +19921,7 @@ SQSQuestArrow = class SQSQuestArrow extends Sprite {
     this.anchor.x = 0.5;
     this.anchor.y = 0.5;
     this.resetAfterTarget();
-    if ((arrowColor != null) || String.any(arrowColor)) {
+    if (arrowColor != null || String.any(arrowColor)) {
       this.applyArrowColor(arrowColor);
     }
     return;
@@ -17754,7 +19951,7 @@ SQSQuestArrow = class SQSQuestArrow extends Sprite {
   resetAfterTarget() {
     this.distThread = null;
     this.resetArrowOpacity();
-    return this.visible = false;
+    return (this.visible = false);
   }
 
   applyArrowColor(arrowColor) {
@@ -17764,7 +19961,7 @@ SQSQuestArrow = class SQSQuestArrow extends Sprite {
   }
 
   resetArrowOpacity() {
-    return this.opacity = this.baseOpacity();
+    return (this.opacity = this.baseOpacity());
   }
 
   update() {
@@ -17809,7 +20006,7 @@ SQSQuestArrow = class SQSQuestArrow extends Sprite {
       }
       this.resetArrowOpacity();
       // * Change opacity over distance, from 255 to @baseOpacity()
-      this.opacity = this.baseOpacity() + this.baseOpacity() - (dist * 10);
+      this.opacity = this.baseOpacity() + this.baseOpacity() - dist * 10;
       if (this.opacity < this.baseOpacity()) {
         this.opacity = this.baseOpacity();
       }
@@ -17832,13 +20029,11 @@ SQSQuestArrow = class SQSQuestArrow extends Sprite {
     original = targetSprite.getBlendColor();
     targetSprite.setBlendColor(this.arrColor);
     targetSprite._sqBlended = true;
-    setTimeout((function() {
+    setTimeout(function () {
       return targetSprite.setBlendColor(original);
-    }), 200);
+    }, 200);
   }
-
 };
-
 
 // Generated by CoffeeScript 2.6.1
 //1:41
@@ -17846,7 +20041,7 @@ var Sprite_SQSNotifyLine;
 
 Sprite_SQSNotifyLine = class Sprite_SQSNotifyLine extends Sprite {
   constructor() {
-    super(ImageManager.loadPKDSQS("questJournalUpdated"));
+    super(ImageManager.loadPKDSQS('questJournalUpdated'));
     this.opacity = 0;
     this.fullVisisble = false;
     this.fadeOutTimer = 140;
@@ -17878,7 +20073,7 @@ Sprite_SQSNotifyLine = class Sprite_SQSNotifyLine extends Sprite {
   updateShowUpOpacity() {
     this.opacity += 6;
     if (this.opacity >= 255) {
-      return this.fullVisisble = true;
+      return (this.fullVisisble = true);
     }
   }
 
@@ -17889,127 +20084,120 @@ Sprite_SQSNotifyLine = class Sprite_SQSNotifyLine extends Sprite {
     }
     if (this.fadeOutTimer <= 0) {
       this.opacity = 0;
-      return this.visible = false;
+      return (this.visible = false);
     }
   }
-
 };
 
-
 class Sprite_SQSQuestListItem extends Sprite {
-    constructor(_quest, _groupIndex) {
-        super();
-        this._quest = _quest;
-        this._groupIndex = _groupIndex;
-        this._isSelected = false;
-        this._create();
-        this._refreshActiveMarkColor();
+  constructor(_quest, _groupIndex) {
+    super();
+    this._quest = _quest;
+    this._groupIndex = _groupIndex;
+    this._isSelected = false;
+    this._create();
+    this._refreshActiveMarkColor();
+  }
+  activateInList() {
+    this._isSelected = true;
+    this._questItem.refreshBindings(this);
+    this._clearNewMark();
+  }
+  deactivateInList() {
+    this._isSelected = false;
+    this._questItem.refreshBindings(this);
+  }
+  isNewQuest() {
+    //@ts-ignore
+    return SQSM.isQuestHaveNewMark(this.quest.id) && this._groupIndex === 0;
+  }
+  isSelected() {
+    return this._isSelected;
+  }
+  questName() {
+    return this.quest.titleForList;
+  }
+  isQuestActive() {
+    //@ts-ignore
+    return SQSM.isQuestActive(this.quest.id);
+  }
+  refresh() {
+    this._questItem.refreshBindings(this);
+    this._refreshActiveMarkColor();
+  }
+  // * Если мы в текущих заданиях, то используется для проверки можно ли задать квест активным
+  // * т.е. если у него путевые точки
+  isEnabled() {
+    //@ts-ignore
+    return SQSM.isQuestHavePoints(this.quest.id) && this._groupIndex === 0;
+  }
+  setActivatedInListState(value) {}
+  realWidth() {
+    return this._questItem.realWidth();
+  }
+  realHeight() {
+    return this._questItem.realHeight();
+  }
+  get quest() {
+    return this._quest;
+  }
+  _create() {
+    //@ts-ignore
+    KDCore.Sprite_NUI.FromScheme(this._scheme(), this);
+  }
+  _refreshActiveMarkColor() {
+    try {
+      //@ts-ignore
+      let index = SQSM.getQuestActiveIndex(this.quest.id);
+      if (index < 0) return;
+      let opacity = this._questItem.uiConstant('ActiveQuestMarkColorOverlayOpacity');
+      if (opacity <= 0) return;
+      //@ts-ignore
+      let arrowData = SQSM.getQuestsArrows()[index];
+      let colorArray = [...arrowData.color.ARR];
+      colorArray[3] = opacity;
+      this._questActiveMark.image.setBlendColor(colorArray);
+    } catch (error) {
+      console.warn(error);
     }
-    activateInList() {
-        this._isSelected = true;
-        this._questItem.refreshBindings(this);
-        this._clearNewMark();
-    }
-    deactivateInList() {
-        this._isSelected = false;
-        this._questItem.refreshBindings(this);
-    }
-    isNewQuest() {
-        //@ts-ignore
-        return SQSM.isQuestHaveNewMark(this.quest.id) && this._groupIndex === 0;
-    }
-    isSelected() {
-        return this._isSelected;
-    }
-    questName() {
-        return this.quest.titleForList;
-    }
-    isQuestActive() {
-        //@ts-ignore
-        return SQSM.isQuestActive(this.quest.id);
-    }
-    refresh() {
-        this._questItem.refreshBindings(this);
-        this._refreshActiveMarkColor();
-    }
-    // * Если мы в текущих заданиях, то используется для проверки можно ли задать квест активным
-    // * т.е. если у него путевые точки
-    isEnabled() {
-        //@ts-ignore
-        return SQSM.isQuestHavePoints(this.quest.id) && this._groupIndex === 0;
-    }
-    setActivatedInListState(value) { }
-    realWidth() {
-        return this._questItem.realWidth();
-    }
-    realHeight() {
-        return this._questItem.realHeight();
-    }
-    get quest() {
-        return this._quest;
-    }
-    _create() {
-        //@ts-ignore
-        KDCore.Sprite_NUI.FromScheme(this._scheme(), this);
-    }
-    _refreshActiveMarkColor() {
-        try {
-            //@ts-ignore
-            let index = SQSM.getQuestActiveIndex(this.quest.id);
-            if (index < 0)
-                return;
-            let opacity = this._questItem.uiConstant('ActiveQuestMarkColorOverlayOpacity');
-            if (opacity <= 0)
-                return;
-            //@ts-ignore
-            let arrowData = SQSM.getQuestsArrows()[index];
-            let colorArray = [...arrowData.color.ARR];
-            colorArray[3] = opacity;
-            this._questActiveMark.image.setBlendColor(colorArray);
-        }
-        catch (error) {
-            console.warn(error);
-        }
-    }
-    _scheme() {
-        return PKD_SQS.GetNUIFile("NUI_QuestListItem");
-    }
-    _clearNewMark() {
-        //@ts-ignore
-        SQSM.clearQuestNewMark(this.quest.id);
-    }
+  }
+  _scheme() {
+    return PKD_SQS.GetNUIFile('NUI_QuestListItem');
+  }
+  _clearNewMark() {
+    //@ts-ignore
+    SQSM.clearQuestNewMark(this.quest.id);
+  }
 }
-
 
 class Sprite_SQSTaskListItem extends Sprite {
-    constructor(_task) {
-        super();
-        this._task = _task;
-        this._create();
-    }
-    realWidth() {
-        return this._taskItem.realWidth();
-    }
-    realHeight() {
-        return this._taskItem.realHeight();
-    }
-    get task() {
-        return this._task;
-    }
-    _create() {
-        var _a, _b;
-        //@ts-ignore
-        KDCore.Sprite_NUI.FromScheme(this._scheme(), this);
-        let taskIconName = this.task.isComplete() ? "Task_B" : this.task.isFailed() ? "Task_C" : "Task_A";
-        (_a = this._taskStatusIcon) === null || _a === void 0 ? void 0 : _a.draw(taskIconName);
-        (_b = this._taskText) === null || _b === void 0 ? void 0 : _b.draw(this.task.text);
-        this._taskItem.refreshBindings();
-    }
-    _scheme() {
-        return PKD_SQS.GetNUIFile("NUI_TaskListItem");
-    }
+  constructor(_task) {
+    super();
+    this._task = _task;
+    this._create();
+  }
+  realWidth() {
+    return this._taskItem.realWidth();
+  }
+  realHeight() {
+    return this._taskItem.realHeight();
+  }
+  get task() {
+    return this._task;
+  }
+  _create() {
+    var _a, _b;
+    //@ts-ignore
+    KDCore.Sprite_NUI.FromScheme(this._scheme(), this);
+    let taskIconName = this.task.isComplete() ? 'Task_B' : this.task.isFailed() ? 'Task_C' : 'Task_A';
+    (_a = this._taskStatusIcon) === null || _a === void 0 ? void 0 : _a.draw(taskIconName);
+    (_b = this._taskText) === null || _b === void 0 ? void 0 : _b.draw(this.task.text);
+    this._taskItem.refreshBindings();
+  }
+  _scheme() {
+    return PKD_SQS.GetNUIFile('NUI_TaskListItem');
+  }
 }
-
 
 // Generated by CoffeeScript 2.6.1
 var Sprite_SQSTextLine;
@@ -18031,20 +20219,20 @@ Sprite_SQSTextLine = class Sprite_SQSTextLine extends Sprite {
 
   _createTextBaseWindow() {
     var fontFace, fontSize, h, w;
-    ({w, h, fontSize, fontFace} = this.textSettings);
+    ({ w, h, fontSize, fontFace } = this.textSettings);
     this.tWindow = new Window_SQSTextBase(new Rectangle(0, 0, w, h), fontSize, fontFace);
     return this.addChild(this.tWindow);
   }
 
   refreshText() {
     this._refreshText();
-    setTimeout((() => {
+    setTimeout(() => {
       return this._refreshText();
-    }), 2);
+    }, 2);
     if (KDCore.isMV()) {
-      return setTimeout((() => {
+      return setTimeout(() => {
         return this._refreshText();
-      }), 10);
+      }, 10);
     }
   }
 
@@ -18052,16 +20240,14 @@ Sprite_SQSTextLine = class Sprite_SQSTextLine extends Sprite {
     this.tWindow.contents.clear();
     return this.tWindow.drawTextExWithWordWrap(this.text, 0, 0, this.tWindow.width);
   }
-
 };
-
 
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Spriteset_Map.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var ALIAS__createUpperLayer, _;
   //@[DEFINES]
   _ = Spriteset_Map.prototype;
@@ -18073,7 +20259,7 @@ Sprite_SQSTextLine = class Sprite_SQSTextLine extends Sprite {
 
   //@[ALIAS]
   ALIAS__createUpperLayer = _.createUpperLayer;
-  _.createUpperLayer = function() {
+  _.createUpperLayer = function () {
     this.sqCreateQuestNavigatorLayer();
     return ALIAS__createUpperLayer.call(this, ...arguments);
   };
@@ -18082,20 +20268,19 @@ Sprite_SQSTextLine = class Sprite_SQSTextLine extends Sprite {
 // ■ END Spriteset_Map.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Spriteset_Map.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var _;
   //@[DEFINES]
   _ = Spriteset_Map.prototype;
-  _.sqAddOnQuestNavigator = function(sprite) {
+  _.sqAddOnQuestNavigator = function (sprite) {
     return this._sqLayer01.addChild(sprite);
   };
-  _.sqCreateQuestNavigatorLayer = function() {
+  _.sqCreateQuestNavigatorLayer = function () {
     this._sqLayer01 = new Sprite();
     this._sqLayer01.z = 1;
     //@_tilemap.addChild @_sqLayer01
@@ -18105,7 +20290,7 @@ Sprite_SQSTextLine = class Sprite_SQSTextLine extends Sprite {
     this.__th = $gameMap.tileHeight();
     this.addChild(this._sqLayer01);
   };
-  _.sqClearQuestNavigator = function() {
+  _.sqClearQuestNavigator = function () {
     var c, i, len, ref;
     ref = this._sqLayer01.children;
     for (i = 0, len = ref.length; i < len; i++) {
@@ -18121,380 +20306,360 @@ Sprite_SQSTextLine = class Sprite_SQSTextLine extends Sprite {
 // ■ END Spriteset_Map.coffee
 //---------------------------------------------------------------------------
 
-
 class SQS_Condition {
-    static FromConfig(config) {
-        let switchId = config.switchId || 0;
-        let variableId = config.variableId || 0;
-        let variableConditionMode = config.variableConditionMode || 'equal';
-        let variableValue = config.variableValue || 0;
-        let script = config.script || '';
-        return new SQS_Condition(switchId, variableId, variableConditionMode, variableValue, script);
+  static FromConfig(config) {
+    let switchId = config.switchId || 0;
+    let variableId = config.variableId || 0;
+    let variableConditionMode = config.variableConditionMode || 'equal';
+    let variableValue = config.variableValue || 0;
+    let script = config.script || '';
+    return new SQS_Condition(switchId, variableId, variableConditionMode, variableValue, script);
+  }
+  constructor(switchId = 0, variableId = 0, variableConditionMode = 'equal', variableValue = 0, script = 'true') {
+    this.switchId = switchId;
+    this.variableId = variableId;
+    this.variableConditionMode = variableConditionMode;
+    this.variableValue = variableValue;
+    this.script = script;
+  }
+  evaluate() {
+    var switchResult = true;
+    var variableResult = true;
+    var scriptResult = true;
+    if (this.switchId > 0) {
+      if (!$gameSwitches.value(this.switchId)) {
+        switchResult = false;
+      }
     }
-    constructor(switchId = 0, variableId = 0, variableConditionMode = 'equal', variableValue = 0, script = 'true') {
-        this.switchId = switchId;
-        this.variableId = variableId;
-        this.variableConditionMode = variableConditionMode;
-        this.variableValue = variableValue;
-        this.script = script;
+    if (this.variableId > 0) {
+      switch (this.variableConditionMode) {
+        case 'equal':
+          if ($gameVariables.value(this.variableId) != this.variableValue) {
+            variableResult = false;
+          }
+          break;
+        case 'more':
+          if ($gameVariables.value(this.variableId) <= this.variableValue) {
+            variableResult = false;
+          }
+          break;
+        case 'less':
+          if ($gameVariables.value(this.variableId) >= this.variableValue) {
+            variableResult = false;
+          }
+          break;
+      }
     }
-    evaluate() {
-        var switchResult = true;
-        var variableResult = true;
-        var scriptResult = true;
-        if (this.switchId > 0) {
-            if (!$gameSwitches.value(this.switchId)) {
-                switchResult = false;
-            }
-        }
-        if (this.variableId > 0) {
-            switch (this.variableConditionMode) {
-                case 'equal':
-                    if ($gameVariables.value(this.variableId) != this.variableValue) {
-                        variableResult = false;
-                    }
-                    break;
-                case 'more':
-                    if ($gameVariables.value(this.variableId) <= this.variableValue) {
-                        variableResult = false;
-                    }
-                    break;
-                case 'less':
-                    if ($gameVariables.value(this.variableId) >= this.variableValue) {
-                        variableResult = false;
-                    }
-                    break;
-            }
-        }
-        if (this.script !== '') {
-            scriptResult = eval(this.script);
-        }
-        return switchResult && variableResult && scriptResult;
+    if (this.script !== '') {
+      scriptResult = eval(this.script);
     }
+    return switchResult && variableResult && scriptResult;
+  }
 }
 window['SQS_Condition'] = SQS_Condition;
-
 
 /**
  * The SQS_Keep class manages the state of quests and tasks, including their visibility,
  * completion, and failure statuses. It also tracks active quests and marks new quests.
  */
 class SQS_Keep {
-    constructor() {
-        this.reset();
+  constructor() {
+    this.reset();
+  }
+  /**
+   * Resets all quest and task statuses to their initial states.
+   */
+  reset() {
+    this._completedQuests = [];
+    this._visibleQuests = [];
+    this._failedQuests = [];
+    this._newQuests = [];
+    this._questCompleteTasksStatuses = {};
+    this._questFailedTasksStatuses = {};
+    this._questVisibleTasksStatuses = {};
+    this._questVisibleDescription = {};
+    this._activeQuests = [];
+  }
+  /**
+   * Checks if a quest has been added.
+   * @param questId - The ID of the quest.
+   * @returns True if the quest is added, false otherwise.
+   */
+  isAddedQuest(questId) {
+    if (!this._visibleQuests) {
+      this._visibleQuests = [];
     }
-    /**
-     * Resets all quest and task statuses to their initial states.
-     */
-    reset() {
-        this._completedQuests = [];
-        this._visibleQuests = [];
-        this._failedQuests = [];
-        this._newQuests = [];
-        this._questCompleteTasksStatuses = {};
-        this._questFailedTasksStatuses = {};
-        this._questVisibleTasksStatuses = {};
-        this._questVisibleDescription = {};
-        this._activeQuests = [];
+    return this._visibleQuests.includes(questId);
+  }
+  /**
+   * Checks if a quest is complete.
+   * @param questId - The ID of the quest.
+   * @returns True if the quest is complete, false otherwise.
+   */
+  isCompleteQuest(questId) {
+    if (!this._completedQuests) {
+      this._completedQuests = [];
     }
-    /**
-     * Checks if a quest has been added.
-     * @param questId - The ID of the quest.
-     * @returns True if the quest is added, false otherwise.
-     */
-    isAddedQuest(questId) {
-        if (!this._visibleQuests) {
-            this._visibleQuests = [];
+    return this._completedQuests.includes(questId);
+  }
+  /**
+   * Checks if a quest has failed.
+   * @param questId - The ID of the quest.
+   * @returns True if the quest has failed, false otherwise.
+   */
+  isFailedQuest(questId) {
+    if (!this._failedQuests) {
+      this._failedQuests = [];
+    }
+    return this._failedQuests.includes(questId);
+  }
+  /**
+   * Checks if a quest is active.
+   * @param questId - The ID of the quest.
+   * @returns True if the quest is active, false otherwise.
+   */
+  isActiveQuest(questId) {
+    if (!this._activeQuests) {
+      this._activeQuests = [];
+    }
+    return this._activeQuests.includes(questId);
+  }
+  /**
+   * Checks if a task within a quest is visible.
+   * @param questId - The ID of the quest.
+   * @param index - The index of the task.
+   * @returns True if the task is visible, false otherwise.
+   */
+  isTaskVisible(questId, index) {
+    if (!this._questVisibleTasksStatuses) {
+      this._questVisibleTasksStatuses = {};
+    }
+    if (index === 0) return true;
+    const data = this._questVisibleTasksStatuses[questId];
+    if (!data) return false;
+    return data.includes(index);
+  }
+  /**
+   * Checks if a task within a quest is complete.
+   * @param questId - The ID of the quest.
+   * @param index - The index of the task.
+   * @returns True if the task is complete, false otherwise.
+   */
+  isTaskComplete(questId, index) {
+    if (!this._questCompleteTasksStatuses) {
+      this._questCompleteTasksStatuses = {};
+    }
+    const data = this._questCompleteTasksStatuses[questId];
+    if (!data) return false;
+    return data.includes(index);
+  }
+  /**
+   * Checks if a task within a quest has failed.
+   * @param questId - The ID of the quest.
+   * @param index - The index of the task.
+   * @returns True if the task has failed, false otherwise.
+   */
+  isTaskFailed(questId, index) {
+    if (!this._questFailedTasksStatuses) {
+      this._questFailedTasksStatuses = {};
+    }
+    const data = this._questFailedTasksStatuses[questId];
+    if (!data) return false;
+    return data.includes(index);
+  }
+  /**
+   * Gets the description index for a quest.
+   * @param questId - The ID of the quest.
+   * @returns The description index of the quest.
+   */
+  getQuestDescriptionIndex(questId) {
+    if (!this._questVisibleDescription) {
+      this._questVisibleDescription = {};
+    }
+    if (!this._questVisibleDescription[questId]) return 0;
+    return this._questVisibleDescription[questId];
+  }
+  /**
+   * Sets a quest as active.
+   * @param questId - The ID of the quest.
+   */
+  setActiveQuest(questId) {
+    if (this.isActiveQuest(questId)) return;
+    try {
+      let isAdded = false;
+      for (let i = 0; i < this._activeQuests.length; i++) {
+        if (!this._activeQuests[i]) {
+          this._activeQuests[i] = questId;
+          isAdded = true;
+          break;
         }
-        return this._visibleQuests.includes(questId);
+      }
+      if (!isAdded) {
+        this._activeQuests.push(questId);
+      }
+    } catch (error) {
+      console.warn(error);
     }
-    /**
-     * Checks if a quest is complete.
-     * @param questId - The ID of the quest.
-     * @returns True if the quest is complete, false otherwise.
-     */
-    isCompleteQuest(questId) {
-        if (!this._completedQuests) {
-            this._completedQuests = [];
-        }
-        return this._completedQuests.includes(questId);
+  }
+  /**
+   * Removes a quest from the active quests.
+   * @param questId - The ID of the quest.
+   */
+  removeActiveQuest(questId) {
+    if (!this.isActiveQuest(questId)) return;
+    const index = this.getActiveQuestIndex(questId);
+    if (index >= 0) this._activeQuests[index] = null;
+  }
+  /**
+   * Gets the index of an active quest.
+   * @param questId - The ID of the quest.
+   * @returns The index of the active quest, or -1 if not found.
+   */
+  getActiveQuestIndex(questId) {
+    if (!this.isActiveQuest(questId)) return -1;
+    return this._activeQuests.indexOf(questId);
+  }
+  /**
+   * Adds a quest to the visible quests.
+   * @param questId - The ID of the quest.
+   */
+  addQuest(questId) {
+    if (!this.isAddedQuest(questId)) {
+      this._visibleQuests.push(questId);
+      this.registerMarkForNewQuest(questId);
     }
-    /**
-     * Checks if a quest has failed.
-     * @param questId - The ID of the quest.
-     * @returns True if the quest has failed, false otherwise.
-     */
-    isFailedQuest(questId) {
-        if (!this._failedQuests) {
-            this._failedQuests = [];
-        }
-        return this._failedQuests.includes(questId);
+  }
+  /**
+   * Registers a quest as new.
+   * @param questId - The ID of the quest.
+   */
+  registerMarkForNewQuest(questId) {
+    if (!this._newQuests) this._newQuests = [];
+    if (!this._newQuests.includes(questId)) this._newQuests.push(questId);
+  }
+  /**
+   * Marks a quest as complete.
+   * @param questId - The ID of the quest.
+   */
+  completeQuest(questId) {
+    if (!this.isCompleteQuest(questId)) this._completedQuests.push(questId);
+  }
+  /**
+   * Marks a quest as failed.
+   * @param questId - The ID of the quest.
+   */
+  failQuest(questId) {
+    if (!this.isFailedQuest(questId)) this._failedQuests.push(questId);
+  }
+  /**
+   * Sets the description index for a quest.
+   * @param questId - The ID of the quest.
+   * @param index - The description index.
+   */
+  setDescriptionForQuest(questId, index) {
+    if (!this._questVisibleDescription) {
+      this._questVisibleDescription = {};
     }
-    /**
-     * Checks if a quest is active.
-     * @param questId - The ID of the quest.
-     * @returns True if the quest is active, false otherwise.
-     */
-    isActiveQuest(questId) {
-        if (!this._activeQuests) {
-            this._activeQuests = [];
-        }
-        return this._activeQuests.includes(questId);
+    this._questVisibleDescription[questId] = index;
+  }
+  /**
+   * Adds a visible task to a quest.
+   * @param questId - The ID of the quest.
+   * @param index - The index of the task.
+   */
+  addVisibleTaskForQuest(questId, index) {
+    if (!this._questVisibleTasksStatuses) {
+      this._questVisibleTasksStatuses = {};
     }
-    /**
-     * Checks if a task within a quest is visible.
-     * @param questId - The ID of the quest.
-     * @param index - The index of the task.
-     * @returns True if the task is visible, false otherwise.
-     */
-    isTaskVisible(questId, index) {
-        if (!this._questVisibleTasksStatuses) {
-            this._questVisibleTasksStatuses = {};
-        }
-        if (index === 0)
-            return true;
-        const data = this._questVisibleTasksStatuses[questId];
-        if (!data)
-            return false;
-        return data.includes(index);
+    if (!this._questVisibleTasksStatuses[questId]) {
+      this._questVisibleTasksStatuses[questId] = [];
     }
-    /**
-     * Checks if a task within a quest is complete.
-     * @param questId - The ID of the quest.
-     * @param index - The index of the task.
-     * @returns True if the task is complete, false otherwise.
-     */
-    isTaskComplete(questId, index) {
-        if (!this._questCompleteTasksStatuses) {
-            this._questCompleteTasksStatuses = {};
-        }
-        const data = this._questCompleteTasksStatuses[questId];
-        if (!data)
-            return false;
-        return data.includes(index);
+    if (!this._questVisibleTasksStatuses[questId].includes(index)) {
+      this._questVisibleTasksStatuses[questId].push(index);
     }
-    /**
-     * Checks if a task within a quest has failed.
-     * @param questId - The ID of the quest.
-     * @param index - The index of the task.
-     * @returns True if the task has failed, false otherwise.
-     */
-    isTaskFailed(questId, index) {
-        if (!this._questFailedTasksStatuses) {
-            this._questFailedTasksStatuses = {};
-        }
-        const data = this._questFailedTasksStatuses[questId];
-        if (!data)
-            return false;
-        return data.includes(index);
+  }
+  /**
+   * Marks a task within a quest as complete.
+   * @param questId - The ID of the quest.
+   * @param index - The index of the task.
+   */
+  completeTaskForQuest(questId, index) {
+    if (!this._questCompleteTasksStatuses) {
+      this._questCompleteTasksStatuses = {};
     }
-    /**
-     * Gets the description index for a quest.
-     * @param questId - The ID of the quest.
-     * @returns The description index of the quest.
-     */
-    getQuestDescriptionIndex(questId) {
-        if (!this._questVisibleDescription) {
-            this._questVisibleDescription = {};
-        }
-        if (!this._questVisibleDescription[questId])
-            return 0;
-        return this._questVisibleDescription[questId];
+    if (!this._questCompleteTasksStatuses[questId]) {
+      this._questCompleteTasksStatuses[questId] = [];
     }
-    /**
-     * Sets a quest as active.
-     * @param questId - The ID of the quest.
-     */
-    setActiveQuest(questId) {
-        if (this.isActiveQuest(questId))
-            return;
-        try {
-            let isAdded = false;
-            for (let i = 0; i < this._activeQuests.length; i++) {
-                if (!this._activeQuests[i]) {
-                    this._activeQuests[i] = questId;
-                    isAdded = true;
-                    break;
-                }
-            }
-            if (!isAdded) {
-                this._activeQuests.push(questId);
-            }
-        }
-        catch (error) {
-            console.warn(error);
-        }
+    if (!this._questCompleteTasksStatuses[questId].includes(index)) {
+      this._questCompleteTasksStatuses[questId].push(index);
     }
-    /**
-     * Removes a quest from the active quests.
-     * @param questId - The ID of the quest.
-     */
-    removeActiveQuest(questId) {
-        if (!this.isActiveQuest(questId))
-            return;
-        const index = this.getActiveQuestIndex(questId);
-        if (index >= 0)
-            this._activeQuests[index] = null;
+  }
+  /**
+   * Marks a task within a quest as failed.
+   * @param questId - The ID of the quest.
+   * @param index - The index of the task.
+   */
+  failTaskForQuest(questId, index) {
+    if (!this._questFailedTasksStatuses) {
+      this._questFailedTasksStatuses = {};
     }
-    /**
-     * Gets the index of an active quest.
-     * @param questId - The ID of the quest.
-     * @returns The index of the active quest, or -1 if not found.
-     */
-    getActiveQuestIndex(questId) {
-        if (!this.isActiveQuest(questId))
-            return -1;
-        return this._activeQuests.indexOf(questId);
+    if (!this._questFailedTasksStatuses[questId]) {
+      this._questFailedTasksStatuses[questId] = [];
     }
-    /**
-     * Adds a quest to the visible quests.
-     * @param questId - The ID of the quest.
-     */
-    addQuest(questId) {
-        if (!this.isAddedQuest(questId)) {
-            this._visibleQuests.push(questId);
-            this.registerMarkForNewQuest(questId);
-        }
+    if (!this._questFailedTasksStatuses[questId].includes(index)) {
+      this._questFailedTasksStatuses[questId].push(index);
     }
-    /**
-     * Registers a quest as new.
-     * @param questId - The ID of the quest.
-     */
-    registerMarkForNewQuest(questId) {
-        if (!this._newQuests)
-            this._newQuests = [];
-        if (!this._newQuests.includes(questId))
-            this._newQuests.push(questId);
-    }
-    /**
-     * Marks a quest as complete.
-     * @param questId - The ID of the quest.
-     */
-    completeQuest(questId) {
-        if (!this.isCompleteQuest(questId))
-            this._completedQuests.push(questId);
-    }
-    /**
-     * Marks a quest as failed.
-     * @param questId - The ID of the quest.
-     */
-    failQuest(questId) {
-        if (!this.isFailedQuest(questId))
-            this._failedQuests.push(questId);
-    }
-    /**
-     * Sets the description index for a quest.
-     * @param questId - The ID of the quest.
-     * @param index - The description index.
-     */
-    setDescriptionForQuest(questId, index) {
-        if (!this._questVisibleDescription) {
-            this._questVisibleDescription = {};
-        }
-        this._questVisibleDescription[questId] = index;
-    }
-    /**
-     * Adds a visible task to a quest.
-     * @param questId - The ID of the quest.
-     * @param index - The index of the task.
-     */
-    addVisibleTaskForQuest(questId, index) {
-        if (!this._questVisibleTasksStatuses) {
-            this._questVisibleTasksStatuses = {};
-        }
-        if (!this._questVisibleTasksStatuses[questId]) {
-            this._questVisibleTasksStatuses[questId] = [];
-        }
-        if (!this._questVisibleTasksStatuses[questId].includes(index)) {
-            this._questVisibleTasksStatuses[questId].push(index);
-        }
-    }
-    /**
-     * Marks a task within a quest as complete.
-     * @param questId - The ID of the quest.
-     * @param index - The index of the task.
-     */
-    completeTaskForQuest(questId, index) {
-        if (!this._questCompleteTasksStatuses) {
-            this._questCompleteTasksStatuses = {};
-        }
-        if (!this._questCompleteTasksStatuses[questId]) {
-            this._questCompleteTasksStatuses[questId] = [];
-        }
-        if (!this._questCompleteTasksStatuses[questId].includes(index)) {
-            this._questCompleteTasksStatuses[questId].push(index);
-        }
-    }
-    /**
-     * Marks a task within a quest as failed.
-     * @param questId - The ID of the quest.
-     * @param index - The index of the task.
-     */
-    failTaskForQuest(questId, index) {
-        if (!this._questFailedTasksStatuses) {
-            this._questFailedTasksStatuses = {};
-        }
-        if (!this._questFailedTasksStatuses[questId]) {
-            this._questFailedTasksStatuses[questId] = [];
-        }
-        if (!this._questFailedTasksStatuses[questId].includes(index)) {
-            this._questFailedTasksStatuses[questId].push(index);
-        }
-    }
-    /**
-     * Clears the mark for a new quest.
-     * @param questId - The ID of the quest.
-     */
-    clearMarkForNewQuest(questId) {
-        if (!this._newQuests)
-            return;
-        const index = this._newQuests.indexOf(questId);
-        if (index !== -1)
-            this._newQuests.splice(index, 1);
-    }
-    /**
-     * Clears all marks for new quests.
-     */
-    clearAllMarks() {
-        this._newQuests = [];
-    }
-    /**
-     * Checks if a quest is marked as new.
-     * @param questId - The ID of the quest.
-     * @returns True if the quest is marked as new, false otherwise.
-     */
-    isQuestMarkedAsNew(questId) {
-        if (!this._newQuests)
-            return false;
-        return this._newQuests.includes(questId);
-    }
+  }
+  /**
+   * Clears the mark for a new quest.
+   * @param questId - The ID of the quest.
+   */
+  clearMarkForNewQuest(questId) {
+    if (!this._newQuests) return;
+    const index = this._newQuests.indexOf(questId);
+    if (index !== -1) this._newQuests.splice(index, 1);
+  }
+  /**
+   * Clears all marks for new quests.
+   */
+  clearAllMarks() {
+    this._newQuests = [];
+  }
+  /**
+   * Checks if a quest is marked as new.
+   * @param questId - The ID of the quest.
+   * @returns True if the quest is marked as new, false otherwise.
+   */
+  isQuestMarkedAsNew(questId) {
+    if (!this._newQuests) return false;
+    return this._newQuests.includes(questId);
+  }
 }
 window['SQS_Keep'] = SQS_Keep;
 
-
 // Generated by CoffeeScript 2.6.1
 // * Главный менеджер квестов
-window.SQSM = function() {};
+window.SQSM = function () {};
 
-SQSM.init = function() {
+SQSM.init = function () {
   $gamePlayer.sqGetAllQuests();
   $gamePlayer.sqGetQuestsData();
   $gamePlayer.sqGetAllPoints();
 };
 
 // * Все все квесты в игре
-SQSM.quests = function() {
+SQSM.quests = function () {
   return $gamePlayer.sqGetAllQuests();
 };
 
 // * Все квесты, которые есть у игрока (добавлены)
-SQSM.playerCurrentQuests = function() {
+SQSM.playerCurrentQuests = function () {
   var e, quests;
-  quests = SQSM.quests().filter(function(q) {
+  quests = SQSM.quests().filter(function (q) {
     return SQSM.isQuestVisible(q.id) && !SQSM.isQuestComplete(q.id) && !SQSM.isQuestFailed(q.id);
   });
   try {
-    quests.sort(KDCore.Utils.dynamicSort("-priority"));
+    quests.sort(KDCore.Utils.dynamicSort('-priority'));
   } catch (error) {
     e = error;
     console.warn(e);
@@ -18503,7 +20668,7 @@ SQSM.playerCurrentQuests = function() {
 };
 
 // * Все квесты, которые есть у игрока (добавленны) в определённой группе
-SQSM.playerCurrentQuestsForCategory = function(catId) {
+SQSM.playerCurrentQuestsForCategory = function (catId) {
   var quests;
   quests = SQSM.playerCurrentQuests();
   // * Если пусто, без фильтра, все
@@ -18511,20 +20676,20 @@ SQSM.playerCurrentQuestsForCategory = function(catId) {
     return quests;
   } else {
     // * Фильтр по группе
-    return quests.filter(function(q) {
+    return quests.filter(function (q) {
       return q.catId === catId;
     });
   }
 };
 
 // * Все квесты, которые есть у игрока (были выполнены)
-SQSM.playerCompletedQuests = function() {
+SQSM.playerCompletedQuests = function () {
   var e, quests;
-  quests = SQSM.quests().filter(function(q) {
+  quests = SQSM.quests().filter(function (q) {
     return SQSM.isQuestComplete(q.id);
   });
   try {
-    quests.sort(KDCore.Utils.dynamicSort("-priority"));
+    quests.sort(KDCore.Utils.dynamicSort('-priority'));
   } catch (error) {
     e = error;
     console.warn(e);
@@ -18533,13 +20698,13 @@ SQSM.playerCompletedQuests = function() {
 };
 
 // * Все квесты, которые есть у игрока (были провалены)
-SQSM.playerFailedQuests = function() {
+SQSM.playerFailedQuests = function () {
   var e, quests;
-  quests = SQSM.quests().filter(function(q) {
+  quests = SQSM.quests().filter(function (q) {
     return SQSM.isQuestFailed(q.id);
   });
   try {
-    quests.sort(KDCore.Utils.dynamicSort("-priority"));
+    quests.sort(KDCore.Utils.dynamicSort('-priority'));
   } catch (error) {
     e = error;
     console.warn(e);
@@ -18548,7 +20713,7 @@ SQSM.playerFailedQuests = function() {
 };
 
 // * Все квесты, которые есть у игрока (были выполнены), в определённо группе
-SQSM.playerCompletedQuestsForCategory = function(catId) {
+SQSM.playerCompletedQuestsForCategory = function (catId) {
   var quests;
   quests = SQSM.playerCompletedQuests();
   // * Если пусто, без фильтра, все
@@ -18556,14 +20721,14 @@ SQSM.playerCompletedQuestsForCategory = function(catId) {
     return quests;
   } else {
     // * Фильтр по группе
-    return quests.filter(function(q) {
+    return quests.filter(function (q) {
       return q.catId === catId;
     });
   }
 };
 
 // * Все квесты, которые есть у игрока (были провалены), в определённо группе
-SQSM.playerFailedQuestsForCategory = function(catId) {
+SQSM.playerFailedQuestsForCategory = function (catId) {
   var quests;
   quests = SQSM.playerFailedQuests();
   // * Если пусто, без фильтра, все
@@ -18571,54 +20736,54 @@ SQSM.playerFailedQuestsForCategory = function(catId) {
     return quests;
   } else {
     // * Фильтр по группе
-    return quests.filter(function(q) {
+    return quests.filter(function (q) {
       return q.catId === catId;
     });
   }
 };
 
-SQSM.keep = function() {
+SQSM.keep = function () {
   return $gamePlayer.sqGetQuestsData();
 };
 
-SQSM.isQuestComplete = function(id) {
+SQSM.isQuestComplete = function (id) {
   return SQSM.keep().isCompleteQuest(id);
 };
 
-SQSM.isQuestFailed = function(id) {
+SQSM.isQuestFailed = function (id) {
   return SQSM.keep().isFailedQuest(id);
 };
 
 // * Начинаем с 1, а не с нуля
-SQSM.isQuestTaskComplete = function(id, index) {
+SQSM.isQuestTaskComplete = function (id, index) {
   return SQSM.keep().isTaskComplete(id, index - 1);
 };
 
 // * Начинаем с 1, а не с нуля
-SQSM.isQuestTaskFailed = function(id, index) {
+SQSM.isQuestTaskFailed = function (id, index) {
   return SQSM.keep().isTaskFailed(id, index - 1);
 };
 
 // * Начинаем с 1, а не с нуля
-SQSM.isQuestTaskVisible = function(id, index) {
+SQSM.isQuestTaskVisible = function (id, index) {
   return SQSM.keep().isTaskVisible(id, index - 1);
 };
 
-SQSM.isQuestVisible = function(id) {
+SQSM.isQuestVisible = function (id) {
   return SQSM.keep().isAddedQuest(id);
 };
 
-SQSM.isQuestActive = function(id) {
+SQSM.isQuestActive = function (id) {
   return SQSM.keep().isActiveQuest(id);
 };
 
-SQSM.getActiveQuests = function() {
-  return SQSM.playerCurrentQuests().filter(function(q) {
+SQSM.getActiveQuests = function () {
+  return SQSM.playerCurrentQuests().filter(function (q) {
     return q.isActive();
   });
 };
 
-SQSM.getQuestActiveIndex = function(id) {
+SQSM.getQuestActiveIndex = function (id) {
   if (SQSM.isQuestActive(id)) {
     return SQSM.keep().getActiveQuestIndex(id);
   } else {
@@ -18626,17 +20791,17 @@ SQSM.getQuestActiveIndex = function(id) {
   }
 };
 
-SQSM.points = function() {
+SQSM.points = function () {
   return $gamePlayer.sqGetAllPoints();
 };
 
-SQSM.getPointsForQuest = function(id) {
-  return SQSM.points().find(function(p) {
+SQSM.getPointsForQuest = function (id) {
+  return SQSM.points().find(function (p) {
     return p.questId === id;
   });
 };
 
-SQSM.isQuestHavePoints = function(id) {
+SQSM.isQuestHavePoints = function (id) {
   var points;
   points = SQSM.getPointsForQuest(id);
   if (points == null) {
@@ -18645,11 +20810,11 @@ SQSM.isQuestHavePoints = function(id) {
   return points.isHaveAnyPoints();
 };
 
-SQSM.getQuestsArrows = function() {
+SQSM.getQuestsArrows = function () {
   return PKD_SQS.PP.getQuestsArrows();
 };
 
-SQSM.onAnyQuestProgressChange = function() {
+SQSM.onAnyQuestProgressChange = function () {
   // * not good way :)
   if (SceneManager._scene instanceof Scene_Map) {
     SceneManager._scene.loadSQSPoints();
@@ -18659,7 +20824,7 @@ SQSM.onAnyQuestProgressChange = function() {
   SQS_QuestAndTaskAutoConditionsManager.RefreshAllQuestsAndTasksAutoConditions();
 };
 
-SQSM.showNotify = function() {
+SQSM.showNotify = function () {
   var e;
   try {
     // * not good way
@@ -18679,7 +20844,7 @@ SQSM.showNotify = function() {
   }
 };
 
-SQSM.clearQuestNewMark = function(id) {
+SQSM.clearQuestNewMark = function (id) {
   var e;
   try {
     SQSM.keep().clearMarkForNewQuest(id);
@@ -18689,7 +20854,7 @@ SQSM.clearQuestNewMark = function(id) {
   }
 };
 
-SQSM.isQuestHaveNewMark = function(id) {
+SQSM.isQuestHaveNewMark = function (id) {
   var e;
   try {
     return SQSM.keep().isQuestMarkedAsNew(id);
@@ -18701,7 +20866,7 @@ SQSM.isQuestHaveNewMark = function(id) {
 
 // * Список квестов (на карте)
 // * ============================================================================
-SQSM.RefreshMapQuestsList = function() {
+SQSM.RefreshMapQuestsList = function () {
   var e;
   try {
     if (KDCore.Utils.isSceneMap() && PKD_SQS.PP.isTasksWindowActive()) {
@@ -18715,7 +20880,7 @@ SQSM.RefreshMapQuestsList = function() {
   }
 };
 
-SQSM.HideMapQuestsList = function() {
+SQSM.HideMapQuestsList = function () {
   var e;
   try {
     $gameSystem._sqsIsTaskWindowDisabled = true;
@@ -18729,7 +20894,7 @@ SQSM.HideMapQuestsList = function() {
   }
 };
 
-SQSM.ShowMapQuestsList = function() {
+SQSM.ShowMapQuestsList = function () {
   var e;
   try {
     $gameSystem._sqsIsTaskWindowDisabled = null;
@@ -18743,7 +20908,7 @@ SQSM.ShowMapQuestsList = function() {
   }
 };
 
-SQSM.SwitchOpenedClosedStateOfQuestsList = function() {
+SQSM.SwitchOpenedClosedStateOfQuestsList = function () {
   var e;
   try {
     if (!PKD_SQS.PP.isTasksWindowActive()) {
@@ -18759,7 +20924,7 @@ SQSM.SwitchOpenedClosedStateOfQuestsList = function() {
   }
 };
 
-SQSM.OpenMapQuestsList = function() {
+SQSM.OpenMapQuestsList = function () {
   var e;
   try {
     if (!PKD_SQS.PP.isTasksWindowActive()) {
@@ -18775,7 +20940,7 @@ SQSM.OpenMapQuestsList = function() {
   }
 };
 
-SQSM.CloseMapQuestsList = function() {
+SQSM.CloseMapQuestsList = function () {
   var e;
   try {
     if (!PKD_SQS.PP.isTasksWindowActive()) {
@@ -18795,30 +20960,30 @@ SQSM.CloseMapQuestsList = function() {
 // * ============================================================================
 
 // * Открыть журнал квестов
-SQSM.OpenQuestJournal = function() {
+SQSM.OpenQuestJournal = function () {
   return SceneManager.push(Scene_SQSJournal);
 };
 
 // * Открыть (добавить) квест игроку
-SQSM.AddQuest = function(id) {
+SQSM.AddQuest = function (id) {
   SQSM.keep().addQuest(id);
   SQSM.showNotify();
 };
 
 // * Начинаем с 1, а не с нуля
-SQSM.ShowDescriptionForQuest = function(id, index) {
+SQSM.ShowDescriptionForQuest = function (id, index) {
   SQSM.keep().setDescriptionForQuest(id, index - 1);
   SQSM.showNotify();
 };
 
 // * Начинаем с 1, а не с нуля
-SQSM.ShowTaskForQuest = function(id, index) {
+SQSM.ShowTaskForQuest = function (id, index) {
   SQSM.keep().addVisibleTaskForQuest(id, index - 1);
   SQSM.onAnyQuestProgressChange();
 };
 
 // * Начинаем с 1, а не с нуля
-SQSM.CompleteTaskForQuest = function(id, index) {
+SQSM.CompleteTaskForQuest = function (id, index) {
   SQSM.keep().completeTaskForQuest(id, index - 1);
   if (SceneManager._scene instanceof Scene_Map) {
     if (SQSM.isQuestActive(id)) {
@@ -18834,12 +20999,12 @@ SQSM.CompleteTaskForQuest = function(id, index) {
 };
 
 // * Начинаем с 1, а не с нуля
-SQSM.FailTaskForQuest = function(id, index) {
+SQSM.FailTaskForQuest = function (id, index) {
   SQSM.keep().failTaskForQuest(id, index - 1);
   SQSM.onAnyQuestProgressChange();
 };
 
-SQSM._checkQuestAutoComplete = function(id) {
+SQSM._checkQuestAutoComplete = function (id) {
   var e, quest;
   try {
     if (!PKD_SQS.PP.isAutoCompleteQuests()) {
@@ -18851,7 +21016,7 @@ SQSM._checkQuestAutoComplete = function(id) {
     if (!this.isQuestVisible(id)) {
       return false;
     }
-    quest = SQSM.playerCurrentQuests().find(function(q) {
+    quest = SQSM.playerCurrentQuests().find(function (q) {
       return q.id === id;
     });
     if (quest) {
@@ -18866,34 +21031,34 @@ SQSM._checkQuestAutoComplete = function(id) {
 
 // * Добавить квест в группу выполненные квесты
 // * Неправильное название, но так было в первой версии, так что нельзя менять
-SQSM.CompletQuest = function(id) {
+SQSM.CompletQuest = function (id) {
   SQSM.keep().completeQuest(id);
   SQSM.SetActiveQuest(id, false);
   SQSM.onAnyQuestProgressChange();
   SQSM._checkCompletedCallback(id);
 };
 
-SQSM.CompleteQuest = function(id) {
+SQSM.CompleteQuest = function (id) {
   return SQSM.CompletQuest(id);
 };
 
 // * Добавить квест в группу проваленные квесты
-SQSM.FailQuest = function(id) {
+SQSM.FailQuest = function (id) {
   SQSM.keep().failQuest(id);
   SQSM.SetActiveQuest(id, false);
   SQSM.onAnyQuestProgressChange();
   SQSM._checkFailedCallback(id);
 };
 
-SQSM._checkCompletedCallback = function(id) {
+SQSM._checkCompletedCallback = function (id) {
   var ceId, e, quest;
   try {
-    quest = SQSM.playerCompletedQuests().find(function(q) {
+    quest = SQSM.playerCompletedQuests().find(function (q) {
       return q.id === id;
     });
     ceId = quest.onCompletedCe;
     if (ceId != null) {
-      setTimeout((function() {
+      setTimeout(function () {
         var e;
         try {
           return KDCore.Utils.startCE(ceId);
@@ -18901,7 +21066,7 @@ SQSM._checkCompletedCallback = function(id) {
           e = error;
           return console.warn(e);
         }
-      }), 1);
+      }, 1);
     }
   } catch (error) {
     e = error;
@@ -18909,10 +21074,10 @@ SQSM._checkCompletedCallback = function(id) {
   }
 };
 
-SQSM._checkFailedCallback = function(id) {
+SQSM._checkFailedCallback = function (id) {
   var ceId, e, quest;
   try {
-    quest = SQSM.playerFailedQuests().find(function(q) {
+    quest = SQSM.playerFailedQuests().find(function (q) {
       return q.id === id;
     });
     if (quest == null) {
@@ -18920,7 +21085,7 @@ SQSM._checkFailedCallback = function(id) {
     }
     ceId = quest.onFailedCe;
     if (ceId != null) {
-      setTimeout((function() {
+      setTimeout(function () {
         var e;
         try {
           return KDCore.Utils.startCE(ceId);
@@ -18928,7 +21093,7 @@ SQSM._checkFailedCallback = function(id) {
           e = error;
           return console.warn(e);
         }
-      }), 1);
+      }, 1);
     }
   } catch (error) {
     e = error;
@@ -18937,7 +21102,7 @@ SQSM._checkFailedCallback = function(id) {
 };
 
 // * Сделать квест активным (если true)
-SQSM.SetActiveQuest = function(id, state = true) {
+SQSM.SetActiveQuest = function (id, state = true) {
   if (state === true) {
     SQSM.keep().setActiveQuest(id);
   } else {
@@ -18947,7 +21112,7 @@ SQSM.SetActiveQuest = function(id, state = true) {
 };
 
 // * Удаляет квест (всю информацию, словно и не добавляли)
-SQSM.ResetQuest = function(id) {
+SQSM.ResetQuest = function (id) {
   var e, keep;
   try {
     if (this.isQuestActive(id)) {
@@ -18955,7 +21120,7 @@ SQSM.ResetQuest = function(id) {
     }
     // * Remove all information about tasks
     keep = SQSM.keep();
-    if ((keep._questVisibleTasksStatuses != null) && (keep._questVisibleTasksStatuses[id] != null)) {
+    if (keep._questVisibleTasksStatuses != null && keep._questVisibleTasksStatuses[id] != null) {
       delete keep._questVisibleTasksStatuses[id];
     }
     if (keep._questCompleteTasksStatuses != null) {
@@ -18982,13 +21147,13 @@ SQSM.ResetQuest = function(id) {
 };
 
 // * Показать все задачи для квеста
-SQSM.ShowAllTasksForQuest = function(id) {
+SQSM.ShowAllTasksForQuest = function (id) {
   var e, i, j, quest, ref;
   try {
-    quest = SQSM.quests().find(function(q) {
+    quest = SQSM.quests().find(function (q) {
       return q.id === id;
     });
-    for (i = j = 0, ref = quest.tasks.length; (0 <= ref ? j < ref : j > ref); i = 0 <= ref ? ++j : --j) {
+    for (i = j = 0, ref = quest.tasks.length; 0 <= ref ? j < ref : j > ref; i = 0 <= ref ? ++j : --j) {
       SQSM.keep().addVisibleTaskForQuest(id, i);
     }
     SQSM.onAnyQuestProgressChange();
@@ -18997,7 +21162,6 @@ SQSM.ShowAllTasksForQuest = function(id) {
     console.warn(e);
   }
 };
-
 
 // Generated by CoffeeScript 2.6.1
 var SQS_Points;
@@ -19064,7 +21228,7 @@ SQS_Points = class SQS_Points {
     var map, maps;
     if (this.isHavePointsForTask(taskIndex)) {
       maps = this.tasksPoints[taskIndex];
-      map = maps.find(function(m) {
+      map = maps.find(function (m) {
         return m.mapId === mapId;
       });
       if (map != null) {
@@ -19095,7 +21259,7 @@ SQS_Points = class SQS_Points {
     if (PKD_SQS.PP.ignoredAutoNavigationMaps().contains(cur)) {
       return 0;
     }
-    goalData = items.find(function(item) {
+    goalData = items.find(function (item) {
       return item.mapId === goalMapId;
     });
     if (!goalData) {
@@ -19122,259 +21286,251 @@ SQS_Points = class SQS_Points {
   getPointOnCurrentMap(taskIndex) {
     return this.getPointOnMap(taskIndex, $gameMap.mapId());
   }
-
 };
 
-
 class SQS_Quest {
-    constructor(questData) {
-        this.id = questData.id;
-        this.title = questData.title;
-        this.titleImage = questData.titleImage;
-        this.titleForList = questData.titleForList;
-        this.priority = questData.priority || 0;
-        this.catId = questData.categoryId || "";
-        this.difficulty = questData.difficulty || 0;
-        this.onCompletedCe = questData.onCompleted || 0;
-        this.onFailedCe = questData.onFailed || 0;
-        this.autoConditions = questData.autoConditions;
-        this.descriptions = questData.descriptions || [];
-        this.tasks = [];
-        this.createTasks(questData.tasks);
-        this.createDescriptions(this.descriptions);
+  constructor(questData) {
+    this.id = questData.id;
+    this.title = questData.title;
+    this.titleImage = questData.titleImage;
+    this.titleForList = questData.titleForList;
+    this.priority = questData.priority || 0;
+    this.catId = questData.categoryId || '';
+    this.difficulty = questData.difficulty || 0;
+    this.onCompletedCe = questData.onCompleted || 0;
+    this.onFailedCe = questData.onFailed || 0;
+    this.autoConditions = questData.autoConditions;
+    this.descriptions = questData.descriptions || [];
+    this.tasks = [];
+    this.createTasks(questData.tasks);
+    this.createDescriptions(this.descriptions);
+  }
+  createTasks(tasksData) {
+    for (let index = 0; index < tasksData.length; index++) {
+      const task = tasksData[index];
+      this.tasks.push(new SQS_Task(this.id, index, task));
     }
-    createTasks(tasksData) {
-        for (let index = 0; index < tasksData.length; index++) {
-            const task = tasksData[index];
-            this.tasks.push(new SQS_Task(this.id, index, task));
-        }
+  }
+  createDescriptions(descriptions) {
+    this.descriptions = descriptions;
+  }
+  isHaveAutoConditions() {
+    return !!this.autoConditions;
+  }
+  addCondition() {
+    if (this.isHaveAutoConditions() && this.autoConditions.addConditions) {
+      return SQS_Condition.FromConfig(this.autoConditions.addConditions);
+    } else {
+      return null;
     }
-    createDescriptions(descriptions) {
-        this.descriptions = descriptions;
+  }
+  failCondition() {
+    if (this.isHaveAutoConditions() && this.autoConditions.failConditions) {
+      return SQS_Condition.FromConfig(this.autoConditions.failConditions);
+    } else {
+      return null;
     }
-    isHaveAutoConditions() {
-        return !!this.autoConditions;
+  }
+  completeCondition() {
+    if (this.isHaveAutoConditions() && this.autoConditions.completeConditions) {
+      return SQS_Condition.FromConfig(this.autoConditions.completeConditions);
+    } else {
+      return null;
     }
-    addCondition() {
-        if (this.isHaveAutoConditions() && this.autoConditions.addConditions) {
-            return SQS_Condition.FromConfig(this.autoConditions.addConditions);
-        }
-        else {
-            return null;
-        }
+  }
+  isComplete() {
+    /*@ts-ignore*/
+    return SQSM.isQuestComplete(this.id);
+  }
+  isFailed() {
+    /*@ts-ignore*/
+    return SQSM.isQuestFailed(this.id);
+  }
+  isVisible() {
+    /*@ts-ignore*/
+    return SQSM.isQuestVisible(this.id);
+  }
+  isActive() {
+    /*@ts-ignore*/
+    return SQSM.isQuestActive(this.id);
+  }
+  isTaskComplete(index) {
+    var _a;
+    return ((_a = this.getTask(index)) === null || _a === void 0 ? void 0 : _a.isComplete()) || false;
+  }
+  isTaskFailed(index) {
+    var _a;
+    return ((_a = this.getTask(index)) === null || _a === void 0 ? void 0 : _a.isFailed()) || false;
+  }
+  getTask(index = 0) {
+    return this.tasks[index];
+  }
+  getVisibleTasks() {
+    return this.tasks.filter(t => t.isVisible());
+  }
+  isAllTasksCompleted() {
+    return this.tasks.every(t => t.isComplete());
+  }
+  getTasksForPointers() {
+    return this.getVisibleTasks().filter(t => !t.isComplete());
+  }
+  getDescription(index = 0) {
+    return this.descriptions[index];
+  }
+  getActiveDescription() {
+    /*@ts-ignore*/
+    const index = SQSM.keep().getQuestDescriptionIndex(this.id);
+    const description = this.getDescription(index);
+    if (description) {
+      return description;
+    } else {
+      return 'You should add at least one description to Quest parameters!';
     }
-    failCondition() {
-        if (this.isHaveAutoConditions() && this.autoConditions.failConditions) {
-            return SQS_Condition.FromConfig(this.autoConditions.failConditions);
-        }
-        else {
-            return null;
-        }
-    }
-    completeCondition() {
-        if (this.isHaveAutoConditions() && this.autoConditions.completeConditions) {
-            return SQS_Condition.FromConfig(this.autoConditions.completeConditions);
-        }
-        else {
-            return null;
-        }
-    }
-    isComplete() {
-        /*@ts-ignore*/
-        return SQSM.isQuestComplete(this.id);
-    }
-    isFailed() {
-        /*@ts-ignore*/
-        return SQSM.isQuestFailed(this.id);
-    }
-    isVisible() {
-        /*@ts-ignore*/
-        return SQSM.isQuestVisible(this.id);
-    }
-    isActive() {
-        /*@ts-ignore*/
-        return SQSM.isQuestActive(this.id);
-    }
-    isTaskComplete(index) {
-        var _a;
-        return ((_a = this.getTask(index)) === null || _a === void 0 ? void 0 : _a.isComplete()) || false;
-    }
-    isTaskFailed(index) {
-        var _a;
-        return ((_a = this.getTask(index)) === null || _a === void 0 ? void 0 : _a.isFailed()) || false;
-    }
-    getTask(index = 0) {
-        return this.tasks[index];
-    }
-    getVisibleTasks() {
-        return this.tasks.filter(t => t.isVisible());
-    }
-    isAllTasksCompleted() {
-        return this.tasks.every(t => t.isComplete());
-    }
-    getTasksForPointers() {
-        return this.getVisibleTasks().filter(t => !t.isComplete());
-    }
-    getDescription(index = 0) {
-        return this.descriptions[index];
-    }
-    getActiveDescription() {
-        /*@ts-ignore*/
-        const index = SQSM.keep().getQuestDescriptionIndex(this.id);
-        const description = this.getDescription(index);
-        if (description) {
-            return description;
-        }
-        else {
-            return "You should add at least one description to Quest parameters!";
-        }
-    }
-    getDifficulty() {
-        return this.difficulty;
-    }
+  }
+  getDifficulty() {
+    return this.difficulty;
+  }
 }
 window['SQS_Quest'] = SQS_Quest;
-
 
 /**
  * Manages the automatic conditions for quests and tasks.
  */
 class SQS_QuestAndTaskAutoConditionsManager {
-    constructor() { }
-    /**
-     * Refreshes all auto conditions for quests and tasks.
-     */
-    static RefreshAllQuestsAndTasksAutoConditions() {
-        //console.log('RefreshAllQuestsAndTasksAutoConditions');
-        try {
-            this.RefreshAllQuestsAutoConditions();
-        }
-        catch (error) {
-            console.warn(error);
-        }
+  constructor() {}
+  /**
+   * Refreshes all auto conditions for quests and tasks.
+   */
+  static RefreshAllQuestsAndTasksAutoConditions() {
+    //console.log('RefreshAllQuestsAndTasksAutoConditions');
+    try {
+      this.RefreshAllQuestsAutoConditions();
+    } catch (error) {
+      console.warn(error);
     }
-    static RefreshAllQuestsAutoConditions() {
-        try {
-            this.AutoAddQuests();
-            this.AutoCompleteQuests();
-            this.AutoFailQuests();
-        }
-        catch (error) {
-            console.warn(error);
-        }
+  }
+  static RefreshAllQuestsAutoConditions() {
+    try {
+      this.AutoAddQuests();
+      this.AutoCompleteQuests();
+      this.AutoFailQuests();
+    } catch (error) {
+      console.warn(error);
     }
-    static AutoAddQuests() {
+  }
+  static AutoAddQuests() {
+    /*@ts-ignore*/
+    let allQuests = SQSM.quests();
+    /*@ts-ignore*/
+    let currentQuests = allQuests.filter(
+      q =>
+        SQSM.isQuestVisible(q.id) ||
         /*@ts-ignore*/
-        let allQuests = SQSM.quests();
+        SQSM.isQuestComplete(q.id) ||
         /*@ts-ignore*/
-        let currentQuests = allQuests.filter(q => SQSM.isQuestVisible(q.id) ||
+        SQSM.isQuestFailed(q.id),
+    );
+    let newQuests = allQuests.filter(q => !currentQuests.includes(q));
+    if (newQuests.length > 0) {
+      newQuests.forEach(q => {
+        if (q.isHaveAutoConditions()) {
+          let addCondition = q.addCondition();
+          if (addCondition === null || addCondition === void 0 ? void 0 : addCondition.evaluate()) {
+            console.log('Quest ' + q.id + ' is auto added');
             /*@ts-ignore*/
-            SQSM.isQuestComplete(q.id) ||
-            /*@ts-ignore*/
-            SQSM.isQuestFailed(q.id));
-        let newQuests = allQuests.filter(q => !currentQuests.includes(q));
-        if (newQuests.length > 0) {
-            newQuests.forEach(q => {
-                if (q.isHaveAutoConditions()) {
-                    let addCondition = q.addCondition();
-                    if (addCondition === null || addCondition === void 0 ? void 0 : addCondition.evaluate()) {
-                        console.log("Quest " + q.id + " is auto added");
-                        /*@ts-ignore*/
-                        SQSM.AddQuest(q.id);
-                        return;
-                    }
-                }
-            });
+            SQSM.AddQuest(q.id);
+            return;
+          }
         }
+      });
     }
-    static AutoCompleteQuests() {
-        /*@ts-ignore*/
-        let quests = SQSM.quests().filter(q => SQSM.isQuestVisible(q.id) && !SQSM.isQuestComplete(q.id) && !SQSM.isQuestFailed(q.id));
-        quests.forEach(q => {
-            if (q.isHaveAutoConditions()) {
-                let completeCondition = q.completeCondition();
-                if (completeCondition === null || completeCondition === void 0 ? void 0 : completeCondition.evaluate()) {
-                    console.log("Quest " + q.id + " is auto completed");
-                    /*@ts-ignore*/
-                    SQSM.CompleteQuest(q.id);
-                }
-            }
-        });
-    }
-    static AutoFailQuests() {
-        /*@ts-ignore*/
-        let quests = SQSM.quests().filter(q => SQSM.isQuestVisible(q.id) && !SQSM.isQuestComplete(q.id) && !SQSM.isQuestFailed(q.id));
-        quests.forEach(q => {
-            if (q.isHaveAutoConditions()) {
-                let failCondition = q.failCondition();
-                if (failCondition === null || failCondition === void 0 ? void 0 : failCondition.evaluate()) {
-                    console.log("Quest " + q.id + " is auto failed");
-                    /*@ts-ignore*/
-                    SQSM.FailQuest(q.id);
-                }
-            }
-        });
-    }
+  }
+  static AutoCompleteQuests() {
+    /*@ts-ignore*/
+    let quests = SQSM.quests().filter(q => SQSM.isQuestVisible(q.id) && !SQSM.isQuestComplete(q.id) && !SQSM.isQuestFailed(q.id));
+    quests.forEach(q => {
+      if (q.isHaveAutoConditions()) {
+        let completeCondition = q.completeCondition();
+        if (completeCondition === null || completeCondition === void 0 ? void 0 : completeCondition.evaluate()) {
+          console.log('Quest ' + q.id + ' is auto completed');
+          /*@ts-ignore*/
+          SQSM.CompleteQuest(q.id);
+        }
+      }
+    });
+  }
+  static AutoFailQuests() {
+    /*@ts-ignore*/
+    let quests = SQSM.quests().filter(q => SQSM.isQuestVisible(q.id) && !SQSM.isQuestComplete(q.id) && !SQSM.isQuestFailed(q.id));
+    quests.forEach(q => {
+      if (q.isHaveAutoConditions()) {
+        let failCondition = q.failCondition();
+        if (failCondition === null || failCondition === void 0 ? void 0 : failCondition.evaluate()) {
+          console.log('Quest ' + q.id + ' is auto failed');
+          /*@ts-ignore*/
+          SQSM.FailQuest(q.id);
+        }
+      }
+    });
+  }
 }
 window['SQS_QuestAndTaskAutoConditionsManager'] = SQS_QuestAndTaskAutoConditionsManager;
-
 
 /**
  * Represents a task in the Simple Quest System.
  */
 class SQS_Task {
-    /**
-     * Constructs a new instance of the SQS_Task class.
-     *
-     * @param {string} qid - The ID of the task.
-     * @param {number} index - The index of the task.
-     * @param {string} text - The text of the task.
-     */
-    constructor(qid, index, text) {
-        this.qid = qid;
-        this.index = index;
-        this.text = text;
-    }
-    /**
-     * Checks if the task is complete.
-     * @returns {boolean} True if the task is complete, false otherwise.
-     */
-    isComplete() {
-        /*@ts-ignore*/
-        return SQSM.keep().isTaskComplete(this.qid, this.index);
-    }
-    /**
-     * Checks if the task has failed.
-     * @returns {boolean} True if the task has failed, false otherwise.
-     */
-    isFailed() {
-        /*@ts-ignore*/
-        return SQSM.keep().isTaskFailed(this.qid, this.index);
-    }
-    /**
-     * Checks if the task is visible.
-     * @returns A boolean indicating whether the task is visible.
-     */
-    isVisible() {
-        /*@ts-ignore*/
-        return SQSM.keep().isTaskVisible(this.qid, this.index);
-    }
+  /**
+   * Constructs a new instance of the SQS_Task class.
+   *
+   * @param {string} qid - The ID of the task.
+   * @param {number} index - The index of the task.
+   * @param {string} text - The text of the task.
+   */
+  constructor(qid, index, text) {
+    this.qid = qid;
+    this.index = index;
+    this.text = text;
+  }
+  /**
+   * Checks if the task is complete.
+   * @returns {boolean} True if the task is complete, false otherwise.
+   */
+  isComplete() {
+    /*@ts-ignore*/
+    return SQSM.keep().isTaskComplete(this.qid, this.index);
+  }
+  /**
+   * Checks if the task has failed.
+   * @returns {boolean} True if the task has failed, false otherwise.
+   */
+  isFailed() {
+    /*@ts-ignore*/
+    return SQSM.keep().isTaskFailed(this.qid, this.index);
+  }
+  /**
+   * Checks if the task is visible.
+   * @returns A boolean indicating whether the task is visible.
+   */
+  isVisible() {
+    /*@ts-ignore*/
+    return SQSM.keep().isTaskVisible(this.qid, this.index);
+  }
 }
 window['SQS_Task'] = SQS_Task;
-
 
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Window_MenuCommand.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var ALIAS__addOriginalCommands, _;
   //@[DEFINES]
   _ = Window_MenuCommand.prototype;
   //@[ALIAS]
   ALIAS__addOriginalCommands = _.addOriginalCommands;
-  _.addOriginalCommands = function() {
+  _.addOriginalCommands = function () {
     ALIAS__addOriginalCommands.call(this);
     if (PKD_SQS.PP.isNeedCommandInMenu()) {
       this.addCommand(PKD_SQS.PP.menuCommandText(), 'sqsJournal', true);
@@ -19384,7 +21540,6 @@ window['SQS_Task'] = SQS_Task;
 
 // ■ END Window_MenuCommand.coffee
 //---------------------------------------------------------------------------
-
 
 // Generated by CoffeeScript 2.6.1
 var Window_SQSTasksWindowList;
@@ -19453,12 +21608,12 @@ Window_SQSTasksWindowList = class Window_SQSTasksWindowList extends Window_Selec
     try {
       index = SQSM.getQuestActiveIndex(quest.id);
       if (index < 0) {
-        this.contents.textColor = "#FFFFFF";
+        this.contents.textColor = '#FFFFFF';
         text = quest.titleForList;
       } else {
         arrow = SQSM.getQuestsArrows()[index];
         color = arrow.color.HEX;
-        text = "\\CHEX[" + color + "]" + quest.titleForList;
+        text = '\\CHEX[' + color + ']' + quest.titleForList;
       }
       this.drawTextEx(text, rect.x, rect.y, this.width);
     } catch (error) {
@@ -19469,11 +21624,11 @@ Window_SQSTasksWindowList = class Window_SQSTasksWindowList extends Window_Selec
   }
 
   makeFontBigger() {
-    return this.contents.fontSize += 1;
+    return (this.contents.fontSize += 1);
   }
 
   makeFontSmaller() {
-    return this.contents.fontSize -= 1;
+    return (this.contents.fontSize -= 1);
   }
 
   //$[OVER]
@@ -19505,7 +21660,7 @@ Window_SQSTasksWindowList = class Window_SQSTasksWindowList extends Window_Selec
     } catch (error) {
       e = error;
       console.warn(e);
-      return "???";
+      return '???';
     }
   }
 
@@ -19535,8 +21690,8 @@ Window_SQSTasksWindowList = class Window_SQSTasksWindowList extends Window_Selec
   }
 
   _prepareQuestsList() {
-    if (this.settings().questsShowMode === "all") {
-      this._quests = SQSM.playerCurrentQuestsForCategory("");
+    if (this.settings().questsShowMode === 'all') {
+      this._quests = SQSM.playerCurrentQuestsForCategory('');
     } else {
       this._quests = SQSM.getActiveQuests();
     }
@@ -19581,9 +21736,7 @@ Window_SQSTasksWindowList = class Window_SQSTasksWindowList extends Window_Selec
     y = this.canvasToLocalY(TouchInput.y);
     return this.isContentsArea(x, y);
   }
-
 };
-
 
 // Generated by CoffeeScript 2.6.1
 var Window_SQSTextBase;
@@ -19598,7 +21751,7 @@ Window_SQSTextBase = class Window_SQSTextBase extends Window_Base {
   }
 
   updatePadding() {
-    return this.padding = 0;
+    return (this.padding = 0);
   }
 
   itemPadding() {
@@ -19614,20 +21767,18 @@ Window_SQSTextBase = class Window_SQSTextBase extends Window_Base {
       this.contents.fontSize = this.fontSize;
     }
   }
-
 };
-
 
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Scene_Map.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var _;
   //@[DEFINES]
   _ = Scene_Map.prototype;
-  _.showSQSNotify = function() {
+  _.showSQSNotify = function () {
     // * Если нету спрайта, то создаём
     if (this._sqsNotifyLine == null) {
       this._sqsNotifyLine = new Sprite_SQSNotifyLine();
@@ -19648,22 +21799,21 @@ Window_SQSTextBase = class Window_SQSTextBase extends Window_Base {
 // ■ END Scene_Map.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Scene_SQSJournal.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var _;
   //@[DEFINES]
   _ = Scene_SQSJournal.prototype;
-  _._clearQuestInfo = function() {
+  _._clearQuestInfo = function () {
     var ref, ref1, ref2, ref3;
     this.qiTitleImage.visible = false;
-    this.qiTitleText.draw("");
+    this.qiTitleText.draw('');
     if ((ref = this.qiDesc) != null) {
-      ref.setText("");
+      ref.setText('');
     }
     this.qiTasksHeader.visible = false;
     if ((ref1 = this._qiTasksList) != null) {
@@ -19676,7 +21826,7 @@ Window_SQSTextBase = class Window_SQSTextBase extends Window_Base {
       ref3.visible = false;
     }
   };
-  _._showActiveQuestData = function() {
+  _._showActiveQuestData = function () {
     var descText, descrpt, e, e2, ref;
     if (String.any(this.activeQuestData.titleImage)) {
       this.qiTitleImage.visible = true;
@@ -19692,7 +21842,7 @@ Window_SQSTextBase = class Window_SQSTextBase extends Window_Base {
         descText = JsonEx.parse('"' + descrpt + '"');
       } catch (error) {
         e2 = error;
-        descText = "Something wrong with Description text, maybe you lost quotes";
+        descText = 'Something wrong with Description text, maybe you lost quotes';
       }
     }
     if ((ref = this.qiDesc) != null) {
@@ -19703,7 +21853,7 @@ Window_SQSTextBase = class Window_SQSTextBase extends Window_Base {
     this._showQuestDifficulty();
     this._refreshActiveHelp();
   };
-  _._showQuestDifficulty = function() {
+  _._showQuestDifficulty = function () {
     var diffLevel;
     if (this.activeQuestData == null) {
       return;
@@ -19714,17 +21864,17 @@ Window_SQSTextBase = class Window_SQSTextBase extends Window_Base {
     diffLevel = this.activeQuestData.difficulty;
     if (diffLevel >= 1) {
       this._difficultyLevel.visible = true;
-      this._difficultyLevel.draw("questDiff_" + diffLevel);
+      this._difficultyLevel.draw('questDiff_' + diffLevel);
     } else {
       this._difficultyLevel.visible = false;
     }
   };
-  _._showActiveTasks = function() {
+  _._showActiveTasks = function () {
     var e, ref, tasks, tasksSprites;
     try {
       tasks = this.activeQuestData.getVisibleTasks();
       tasks.reverse();
-      tasksSprites = tasks.map(function(t) {
+      tasksSprites = tasks.map(function (t) {
         return new Sprite_SQSTaskListItem(t);
       });
       if ((ref = this._qiTasksList) != null) {
@@ -19735,11 +21885,11 @@ Window_SQSTextBase = class Window_SQSTextBase extends Window_Base {
       console.warn(e);
     }
   };
-  _._createQuestMain = function() {
+  _._createQuestMain = function () {
     this._createQuestDescription();
     return this._clearQuestInfo();
   };
-  _._createQuestDescription = function() {
+  _._createQuestDescription = function () {
     var fontFace, fontSize, height, width;
     if (this._questDescriptionContainer == null) {
       return;
@@ -19748,23 +21898,23 @@ Window_SQSTextBase = class Window_SQSTextBase extends Window_Base {
     height = this._questDescriptionContainer.realHeight();
     fontFace = this._questDescriptionContainer.uiConstant('fontFace');
     fontSize = this._questDescriptionContainer.uiConstant('fontSize');
-    this.qiDesc = new Sprite_SQSTextLine("", {
+    this.qiDesc = new Sprite_SQSTextLine('', {
       w: width,
       h: height,
       fontFace: fontFace,
-      fontSize: fontSize
+      fontSize: fontSize,
     });
     this._questDescriptionContainer.addChild(this.qiDesc);
   };
-  _._refreshActiveHelp = function() {
+  _._refreshActiveHelp = function () {
     var ref, ref1;
     if (this._questsList == null) {
       return;
     }
     if (this._questsList.selectedItem() != null) {
-      return (ref = this._activeHelp) != null ? ref.visible = this._questsList.selectedItem().isEnabled() : void 0;
+      return (ref = this._activeHelp) != null ? (ref.visible = this._questsList.selectedItem().isEnabled()) : void 0;
     } else {
-      return (ref1 = this._activeHelp) != null ? ref1.visible = false : void 0;
+      return (ref1 = this._activeHelp) != null ? (ref1.visible = false) : void 0;
     }
   };
 })();
@@ -19772,17 +21922,16 @@ Window_SQSTextBase = class Window_SQSTextBase extends Window_Base {
 // ■ END Scene_SQSJournal.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Scene_SQSJournal.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var _;
   //@[DEFINES]
   _ = Scene_SQSJournal.prototype;
-  _._createCategories = function() {
+  _._createCategories = function () {
     var ref, ref1, ref2;
     if ((ref = this.groupA) != null) {
       ref.addClickHandler(() => {
@@ -19800,7 +21949,7 @@ Window_SQSTextBase = class Window_SQSTextBase extends Window_Base {
       });
     }
   };
-  _._onGroupClick = function(index) {
+  _._onGroupClick = function (index) {
     var ref, ref1, ref2, ref3, ref4, ref5, ref6, ref7, ref8;
     if (index === 0) {
       if ((ref = this.groupA) != null) {
@@ -19837,37 +21986,36 @@ Window_SQSTextBase = class Window_SQSTextBase extends Window_Base {
     this._refrshQuestsList();
     this._refreshEmptyJournalHolder();
   };
-  _._refreshEmptyJournalHolder = function() {
+  _._refreshEmptyJournalHolder = function () {
     if (this._questsList.maxItems() <= 0) {
       return this._showEmptyJournalHolder();
     } else {
       return this._hideEmptyJournalHolder();
     }
   };
-  _._showEmptyJournalHolder = function() {
+  _._showEmptyJournalHolder = function () {
     var ref;
-    return (ref = this._noAvailableQuestsSprite) != null ? ref.visible = true : void 0;
+    return (ref = this._noAvailableQuestsSprite) != null ? (ref.visible = true) : void 0;
   };
-  _._hideEmptyJournalHolder = function() {
+  _._hideEmptyJournalHolder = function () {
     var ref;
-    return (ref = this._noAvailableQuestsSprite) != null ? ref.visible = false : void 0;
+    return (ref = this._noAvailableQuestsSprite) != null ? (ref.visible = false) : void 0;
   };
 })();
 
 // ■ END Scene_SQSJournal.coffee
 //---------------------------------------------------------------------------
 
-
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
 // ■ Scene_SQSJournal.coffee
 //╒═════════════════════════════════════════════════════════════════════════╛
 //---------------------------------------------------------------------------
-(function() {
+(function () {
   var _;
   //@[DEFINES]
   _ = Scene_SQSJournal.prototype;
-  _._createQuestsCategories = function() {
+  _._createQuestsCategories = function () {
     var cat, categories, e, i, len;
     this._categoriesButtons = [];
     try {
@@ -19886,9 +22034,9 @@ Window_SQSTextBase = class Window_SQSTextBase extends Window_Base {
       console.warn(e);
     }
   };
-  _._createCategoryButton = function(cat) {
+  _._createCategoryButton = function (cat) {
     var catButton, id, x, y;
-    catButton = new KDCore.ButtonMU(cat.buttonImage, true, "pSQSystem");
+    catButton = new KDCore.ButtonMU(cat.buttonImage, true, 'pSQSystem');
     this.addChild(catButton);
     x = eval(cat.position.x);
     y = eval(cat.position.y);
@@ -19901,14 +22049,14 @@ Window_SQSTextBase = class Window_SQSTextBase extends Window_Base {
       return this._onCategoryClick(id);
     });
   };
-  _._onCategoryClick = function(catId) {
+  _._onCategoryClick = function (catId) {
     var b, btn, i, len, ref;
     ref = this._categoriesButtons;
     for (i = 0, len = ref.length; i < len; i++) {
       b = ref[i];
       b.enable();
     }
-    btn = this._categoriesButtons.find(function(b) {
+    btn = this._categoriesButtons.find(function (b) {
       return b.catId === catId;
     });
     if (btn != null) {
@@ -19918,7 +22066,7 @@ Window_SQSTextBase = class Window_SQSTextBase extends Window_Base {
     this._refrshQuestsList();
     this._refreshEmptyJournalHolder();
   };
-  _._updateCategoriesNavigation = function() {
+  _._updateCategoriesNavigation = function () {
     if (KDGamepad.isKey(PKD_SQS.PP.nextCategoryGamepadKey())) {
       this._onSwitchNextCategory();
       return;
@@ -19933,11 +22081,11 @@ Window_SQSTextBase = class Window_SQSTextBase extends Window_Base {
       return;
     }
   };
-  _._onSwitchPrevCategory = function() {
+  _._onSwitchPrevCategory = function () {
     var button, currentCatIndex, currentCategoryName, e, newIndex;
     try {
       currentCategoryName = this._category;
-      button = this._categoriesButtons.find(function(b) {
+      button = this._categoriesButtons.find(function (b) {
         return b.catId === currentCategoryName;
       });
       currentCatIndex = this._categoriesButtons.indexOf(button);
@@ -19953,11 +22101,11 @@ Window_SQSTextBase = class Window_SQSTextBase extends Window_Base {
       console.warn(e);
     }
   };
-  _._onSwitchNextCategory = function() {
+  _._onSwitchNextCategory = function () {
     var button, currentCatIndex, currentCategoryName, e, newIndex;
     try {
       currentCategoryName = this._category;
-      button = this._categoriesButtons.find(function(b) {
+      button = this._categoriesButtons.find(function (b) {
         return b.catId === currentCategoryName;
       });
       currentCatIndex = this._categoriesButtons.indexOf(button);

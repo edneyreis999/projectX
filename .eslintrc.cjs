@@ -22,6 +22,7 @@ module.exports = {
     "frontend/js/plugins/PKD_VisualChoices_MZ.js",
     "frontend/js/plugins/PKD_SimpleQuestSystem.js",
     "frontend/js/plugins/TAA_CharacterPoses.js",
+    "frontend/js/plugins/PKD_AnimaX.js",
     "frontend/js/plugins/VisuMZ_*.js" 
   ],
   overrides: [
