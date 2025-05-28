@@ -1,0 +1,125 @@
+{
+    "type": "group",
+    "id": "_questItem",
+    "constants": {
+        "ActiveQuestMarkColorOverlayOpacity": 150
+    },
+    "bindings": {
+        "size": {
+            "width": "212hdp",
+            "height": "40hdp"
+        }
+    },
+    "childrens": [
+        {
+            "type": "textPro",
+            "id": "_questNameText",
+            "parameters": {
+                "alignment": "left",
+                "font": {
+                    "face": null,
+                    "size": 20,
+                    "italic": false,
+                    "bold": false,
+                    "weight": 500
+                },
+                "margins": { "x": 0, "y": 0 },
+                "outline": { "color": "#000000", "width": 2 },
+                "textColor": "#FFFFFF",
+                "shadow": {
+                    "color": "#000",
+                    "opacity": 0,
+                    "margins": { "x": 1, "y": 1 }
+                },
+                "text": "",
+                "multiline": false,
+                "verticalCentered": true,
+                "actualSize": false,
+                "trimWidth": false,
+                "trimHeight": false,
+                "verticalAlignment": "top",
+                "isStaticIconSize": true,
+                "iconSize": 28,
+                "iconPadding": {
+                    "left": 2,
+                    "right": 2,
+                    "top": 0,
+                    "bottom": 0
+                },
+                "verticalSpacing": 4
+            },
+            "bindings": {
+                "size": {
+                    "width": "100% - 12hdp",
+                    "height": "100%"
+                },
+                "fontSize": "19hdp",
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "text": "$questName"
+            }
+        },
+        {
+            "type": "image",
+            "id": "_cursorImage",
+            "parameters": {
+                "imageName": "Quest_Selected",
+                "folderName": "pSQSystem",
+                "keepAspect": false
+            },
+            "bindings": {
+                "position": {
+                    "x": "right - 2",
+                    "y": 0
+                },
+                "size": {
+                    "width": "18hdp",
+                    "height": "24hdp"
+                },
+                "visible": "$isSelected"
+            }
+        },
+        {
+            "type": "image",
+            "id": "_questActiveMark",
+            "parameters": {
+                "imageName": "Quest_Active",
+                "folderName": "pSQSystem",
+                "keepAspect": false
+            },
+            "bindings": {
+                "position": {
+                    "x": "right - 2",
+                    "y": 0
+                },
+                "size": {
+                    "width": "18hdp",
+                    "height": "24hdp"
+                },
+                "visible": "$isQuestActive"
+            }
+        },
+        {
+            "type": "image",
+            "id": "_questNewMark",
+            "createIf": "$isNewQuest",
+            "parameters": {
+                "imageName": "Quest_New",
+                "folderName": "pSQSystem",
+                "keepAspect": false
+            },
+            "bindings": {
+                "position": {
+                    "x": 0,
+                    "y": -2
+                },
+                "size": {
+                    "width": "32hdp",
+                    "height": "12hdp"
+                }
+            }
+        }
+    ]
+}

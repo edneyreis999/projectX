@@ -6,7 +6,7 @@
  */
 
 /*:
- * @plugindesc (v.1.6.1)[PRO] Simple quests system
+ * @plugindesc (v.1.7)[PRO] Simple quests system
  * @author Pheonix KageDesu
  * @target MZ MV
  * @url https://kdworkshop.net/plugins/simple-quests-system
@@ -246,104 +246,7 @@
  * @param visualSettings
  * @text Visual Settings
  * 
- * @param questJournalBackground:struct
- * @parent visualSettings
- * @type struct<XY2>
- * @text Background Position
- * @default {"x":"(Graphics.width / 2) - 408","y":"(Graphics.height / 2) - 312"}
- * @desc Journal background image (JournalBackground.png) position
  * 
- * @param questJournalLine:struct
- * @parent visualSettings
- * @type struct<XY2>
- * @text Separate Line Position
- * @default {"x":"234","y":"140"}
- * @desc Separate line (Line.png) between quests lists and description position
- * 
- * @param questsListSettings:struct
- * @parent visualSettings
- * @text Quests List
- * @type struct<QuestsList>
- * @desc Quests List visual settings
- * @default {"position:struct":"{\"x\":\"20\",\"y\":\"176\"}","height:int":"360","textLine:struct":"{\"lineSize:struct\":\"{\\\"w\\\":\\\"200\\\",\\\"h\\\":\\\"36\\\"}\",\"face:str\":\"\",\"size:int\":\"20\"}"}
- * 
- * @param questsListCursor:struct
- * @parent questsListSettings:struct
- * @type struct<XY2>
- * @text Cursor Margins
- * @default {"x":"186","y":"18"}
- * @desc Cursor (Quest_Selected.png) margins relative list item
- * 
- * @param questsListActive:struct
- * @parent questsListSettings:struct
- * @type struct<XY2>
- * @text Active Icon Margins
- * @default {"x":"186","y":"18"}
- * @desc Active quest icon (Quest_Active.png) margins relative list item
- * 
- * @param questsListNewMark:struct
- * @parent questsListSettings:struct
- * @type struct<XY2>
- * @text New Quest Mark Margins
- * @default {"x":"2","y":"0"}
- * @desc [PRO] New quest mark (Quest_New.png) margins relative list item
- * 
- * @param questHeaderSettings:struct
- * @text Name Settings
- * @parent visualSettings
- * @type struct<QuestHeader>
- * @desc Quest Header (name) text settings
- * @default {"position:struct":"{\"x\":\"386\",\"y\":\"100\"}","position2:struct":"{\"x\":\"250\",\"y\":\"80\"}","textLine:struct":"{\"lineSize:struct\":\"{\\\"w\\\":\\\"256\\\",\\\"h\\\":\\\"84\\\"}\",\"face:str\":\"\",\"size:int\":\"20\"}"}
- * 
- * @param questDescSettings:struct
- * @text Description Settings
- * @parent visualSettings
- * @type struct<QuestDesc>
- * @desc Quest Description text settings
- * @default {"position:struct":"{\"x\":\"270\",\"y\":\"160\"}","textLine:struct":"{\"lineSize:struct\":\"{\\\"w\\\":\\\"460\\\",\\\"h\\\":\\\"140\\\"}\",\"face:str\":\"\",\"size:int\":\"14\"}"}
- * 
- * @param questTaskHeaderSettings:struct
- * @parent visualSettings
- * @type struct<XY2>
- * @text Tasks Header
- * @default {"x":"230","y":"300"}
- * @desc Tasks header image position (tasksHeader.png)
- * 
- * @param questGroupButtonA:struct
- * @parent visualSettings
- * @type struct<XY2>
- * @text Button Group A
- * @default {"x":"30","y":"80"}
- * @desc Currents quests group button position
- * 
- * @param questGroupButtonB:struct
- * @parent visualSettings
- * @type struct<XY2>
- * @text Button Group B
- * @default {"x":"140","y":"80"}
- * @desc Completed quests group button position
- * 
- * @param questGroupButtonC:struct
- * @parent visualSettings
- * @type struct<XY2>
- * @text Button Group C
- * @default {"x":"250","y":"80"}
- * @desc Completed quests group button position
- * 
- * 
- * @param questsTasksSettings:struct
- * @parent visualSettings
- * @type struct<QuestTask>
- * @text Tasks texts settings
- * @default {"positions:structA":"[\"{\\\"x\\\":\\\"270\\\",\\\"y\\\":\\\"340\\\"}\",\"{\\\"x\\\":\\\"270\\\",\\\"y\\\":\\\"370\\\"}\",\"{\\\"x\\\":\\\"270\\\",\\\"y\\\":\\\"400\\\"}\",\"{\\\"x\\\":\\\"270\\\",\\\"y\\\":\\\"430\\\"}\",\"{\\\"x\\\":\\\"270\\\",\\\"y\\\":\\\"460\\\"}\",\"{\\\"x\\\":\\\"270\\\",\\\"y\\\":\\\"490\\\"}\",\"{\\\"x\\\":\\\"270\\\",\\\"y\\\":\\\"520\\\"}\",\"{\\\"x\\\":\\\"270\\\",\\\"y\\\":\\\"550\\\"}\"]","position:struct":"{\"x\":\"-24\",\"y\":\"4\"}","textLine:struct":"{\"lineSize:struct\":\"{\\\"w\\\":\\\"420\\\",\\\"h\\\":\\\"60\\\"}\",\"face:str\":\"\",\"size:int\":\"20\"}"}
- * @desc Quest tasks texts settings
- * 
- * @param questJournalActiveHelp:struct
- * @parent visualSettings
- * @type struct<XY2>
- * @text Activate help
- * @default {"x":"36","y":"Graphics.height - 56"}
- * @desc Set active quest help image (ActiveHelp.png) position
  * 
  * @param visualPointers:structA
  * @parent visualSettings
@@ -415,7 +318,7 @@
  * 
  */
 /*:ru
- * @plugindesc (v.1.6.1)[PRO] Simple quests system
+ * @plugindesc (v.1.7)[PRO] Simple quests system
  * @author Pheonix KageDesu
  * @target MZ MV
  * @url https://kdworkshop.net/plugins/simple-quests-system
@@ -655,103 +558,7 @@
  * @param visualSettings
  * @text Внешний вид журнала
  *
- * @param questJournalBackground:struct
- * @parent visualSettings
- * @type struct<XY2>
- * @text Background Position
- * @default {"x":"(Graphics.width / 2) - 408","y":"(Graphics.height / 2) - 312"}
- * @desc Позиция картинки задника (JournalBackground.png)
  *
- * @param questJournalLine:struct
- * @parent visualSettings
- * @type struct<XY2>
- * @text Separate Line Position
- * @default {"x":"234","y":"140"}
- * @desc Позиция линии (Line.png) разделителя
- *
- * @param questsListSettings:struct
- * @parent visualSettings
- * @text Quests List
- * @type struct<QuestsList>
- * @desc Визуальные настройки списка квестов
- * @default {"position:struct":"{\"x\":\"20\",\"y\":\"176\"}","height:int":"360","textLine:struct":"{\"lineSize:struct\":\"{\\\"w\\\":\\\"200\\\",\\\"h\\\":\\\"36\\\"}\",\"face:str\":\"\",\"size:int\":\"20\"}"}
- *
- * @param questsListCursor:struct
- * @parent questsListSettings:struct
- * @type struct<XY2>
- * @text Cursor Margins
- * @default {"x":"186","y":"18"}
- * @desc Смещение курсора (Quest_Selected.png)
- *
- * @param questsListActive:struct
- * @parent questsListSettings:struct
- * @type struct<XY2>
- * @text Active Icon Margins
- * @default {"x":"186","y":"18"}
- * @desc Смещение иконки (Quest_Active.png) активного квеста
- *
- * @param questsListNewMark:struct
- * @parent questsListSettings:struct
- * @type struct<XY2>
- * @text New Quest Mark Margins
- * @default {"x":"2","y":"0"}
- * @desc [PRO] Смещение иконки (Quest_New.png) нового квеста
- *
- * @param questHeaderSettings:struct
- * @text Name Settings
- * @parent visualSettings
- * @type struct<QuestHeader>
- * @desc Настройки заголовка (названия) квеста
- * @default {"position:struct":"{\"x\":\"386\",\"y\":\"100\"}","position2:struct":"{\"x\":\"250\",\"y\":\"80\"}","textLine:struct":"{\"lineSize:struct\":\"{\\\"w\\\":\\\"256\\\",\\\"h\\\":\\\"84\\\"}\",\"face:str\":\"\",\"size:int\":\"20\"}"}
- *
- * @param questDescSettings:struct
- * @text Description Settings
- * @parent visualSettings
- * @type struct<QuestDesc>
- * @desc Настройки текста описания квеста
- * @default {"position:struct":"{\"x\":\"270\",\"y\":\"160\"}","textLine:struct":"{\"lineSize:struct\":\"{\\\"w\\\":\\\"460\\\",\\\"h\\\":\\\"140\\\"}\",\"face:str\":\"\",\"size:int\":\"14\"}"}
- *
- * @param questTaskHeaderSettings:struct
- * @parent visualSettings
- * @type struct<XY2>
- * @text Tasks Header
- * @default {"x":"230","y":"300"}
- * @desc Позиция заголовка задач (tasksHeader.png)
- *
- * @param questGroupButtonA:struct
- * @parent visualSettings
- * @type struct<XY2>
- * @text Button Group A
- * @default {"x":"30","y":"80"}
- * @desc Позиция кнопки текущих квестов
- *
- * @param questGroupButtonB:struct
- * @parent visualSettings
- * @type struct<XY2>
- * @text Button Group B
- * @default {"x":"140","y":"80"}
- * @desc Позиция кнопки выполненных квестов
- *
- * @param questGroupButtonC:struct
- * @parent visualSettings
- * @type struct<XY2>
- * @text Button Group C
- * @default {"x":"250","y":"80"}
- * @desc Позиция кнопки проваленных квестов
- *
- * @param questsTasksSettings:struct
- * @parent visualSettings
- * @type struct<QuestTask>
- * @text Tasks texts settings
- * @default {"positions:structA":"[\"{\\\"x\\\":\\\"270\\\",\\\"y\\\":\\\"340\\\"}\",\"{\\\"x\\\":\\\"270\\\",\\\"y\\\":\\\"370\\\"}\",\"{\\\"x\\\":\\\"270\\\",\\\"y\\\":\\\"400\\\"}\",\"{\\\"x\\\":\\\"270\\\",\\\"y\\\":\\\"430\\\"}\",\"{\\\"x\\\":\\\"270\\\",\\\"y\\\":\\\"460\\\"}\",\"{\\\"x\\\":\\\"270\\\",\\\"y\\\":\\\"490\\\"}\",\"{\\\"x\\\":\\\"270\\\",\\\"y\\\":\\\"520\\\"}\",\"{\\\"x\\\":\\\"270\\\",\\\"y\\\":\\\"550\\\"}\"]","position:struct":"{\"x\":\"-24\",\"y\":\"4\"}","textLine:struct":"{\"lineSize:struct\":\"{\\\"w\\\":\\\"420\\\",\\\"h\\\":\\\"60\\\"}\",\"face:str\":\"\",\"size:int\":\"20\"}"}
- * @desc Настройки текста задачи квеста
- *
- * @param questJournalActiveHelp:struct
- * @parent visualSettings
- * @type struct<XY2>
- * @text Activate help
- * @default {"x":"36","y":"Graphics.height - 56"}
- * @desc Позация изображения подсказки (ActiveHelp.png) установки активного квеста
  *
  * @param visualPointers:structA
  * @parent visualSettings
@@ -822,7 +629,7 @@
  *
  */
 /*:zh-cn
- * @plugindesc (v.1.6.1)[PRO] Simple quests system
+ * @plugindesc (v.1.7)[PRO] Simple quests system
  * @author Pheonix KageDesu
  * @target MZ MV
  * @url https://kdworkshop.net/plugins/simple-quests-system
@@ -1058,103 +865,8 @@
  * @param visualSettings
  * @text 视觉设置
  *
- * @param questJournalBackground:struct
- * @parent visualSettings
- * @type struct<XY2>
- * @text 背景位置
- * @default {"x":"(Graphics.width / 2) - 408","y":"(Graphics.height / 2) - 312"}
- * @desc 日志背景图像（JournalBackground.png）位置
  *
- * @param questJournalLine:struct
- * @parent visualSettings
- * @type struct<XY2>
- * @text 分隔线位置
- * @default {"x":"234","y":"140"}
- * @desc 任务列表和描述之间的分隔线（Line.png）位置
  *
- * @param questsListSettings:struct
- * @parent visualSettings
- * @text 任务列表
- * @type struct<QuestsList>
- * @desc 任务列表的视觉设置
- * @default {"position:struct":"{\"x\":\"20\",\"y\":\"176\"}","height:int":"360","textLine:struct":"{\"lineSize:struct\":\"{\\\"w\\\":\\\"200\\\",\\\"h\\\":\\\"36\\\"}\",\"face:str\":\"\",\"size:int\":\"20\"}"}
- *
- * @param questsListCursor:struct
- * @parent questsListSettings:struct
- * @type struct<XY2>
- * @text 光标边距
- * @default {"x":"186","y":"18"}
- * @desc 光标（Quest_Selected.png）相对于列表项的边距
- *
- * @param questsListActive:struct
- * @parent questsListSettings:struct
- * @type struct<XY2>
- * @text 活跃图标边距
- * @default {"x":"186","y":"18"}
- * @desc 活跃任务图标（Quest_Active.png）相对于列表项的边距
- *
- * @param questsListNewMark:struct
- * @parent questsListSettings:struct
- * @type struct<XY2>
- * @text 新任务标记边距
- * @default {"x":"2","y":"0"}
- * @desc [PRO] 新任务标记（Quest_New.png）相对于列表项的边距
- *
- * @param questHeaderSettings:struct
- * @text 名称设置
- * @parent visualSettings
- * @type struct<QuestHeader>
- * @desc 任务标题（名称）文本设置
- * @default {"position:struct":"{\"x\":\"386\",\"y\":\"100\"}","position2:struct":"{\"x\":\"250\",\"y\":\"80\"}","textLine:struct":"{\"lineSize:struct\":\"{\\\"w\\\":\\\"256\\\",\\\"h\\\":\\\"84\\\"}\",\"face:str\":\"\",\"size:int\":\"20\"}"}
- *
- * @param questDescSettings:struct
- * @text 描述设置
- * @parent visualSettings
- * @type struct<QuestDesc>
- * @desc 任务描述文本设置
- * @default {"position:struct":"{\"x\":\"270\",\"y\":\"160\"}","textLine:struct":"{\"lineSize:struct\":\"{\\\"w\\\":\\\"460\\\",\\\"h\\\":\\\"140\\\"}\",\"face:str\":\"\",\"size:int\":\"14\"}"}
- *
- * @param questTaskHeaderSettings:struct
- * @parent visualSettings
- * @type struct<XY2>
- * @text 任务标题
- * @default {"x":"230","y":"300"}
- * @desc 任务标题图像位置（tasksHeader.png）
- *
- * @param questGroupButtonA:struct
- * @parent visualSettings
- * @type struct<XY2>
- * @text 按钮组 A
- * @default {"x":"30","y":"80"}
- * @desc 当前任务组按钮位置
- *
- * @param questGroupButtonB:struct
- * @parent visualSettings
- * @type struct<XY2>
- * @text 按钮组 B
- * @default {"x":"140","y":"80"}
- * @desc 已完成任务组按钮位置
- *
- * @param questGroupButtonC:struct
- * @parent visualSettings
- * @type struct<XY2>
- * @text 按钮组 C
- * @default {"x":"250","y":"80"}
- * @desc 已完成任务组按钮位置
- *
- * @param questsTasksSettings:struct
- * @parent visualSettings
- * @type struct<QuestTask>
- * @text 任务文本设置
- * @default {"positions:structA":"[\"{\\\"x\\\":\\\"270\\\",\\\"y\\\":\\\"340\\\"}\",\"{\\\"x\\\":\\\"270\\\",\\\"y\\\":\\\"370\\\"}\",\"{\\\"x\\\":\\\"270\\\",\\\"y\\\":\\\"400\\\"}\",\"{\\\"x\\\":\\\"270\\\",\\\"y\\\":\\\"430\\\"}\",\"{\\\"x\\\":\\\"270\\\",\\\"y\\\":\\\"460\\\"}\",\"{\\\"x\\\":\\\"270\\\",\\\"y\\\":\\\"490\\\"}\",\"{\\\"x\\\":\\\"270\\\",\\\"y\\\":\\\"520\\\"}\",\"{\\\"x\\\":\\\"270\\\",\\\"y\\\":\\\"550\\\"}\"]","position:struct":"{\"x\":\"-24\",\"y\":\"4\"}","textLine:struct":"{\"lineSize:struct\":\"{\\\"w\\\":\\\"420\\\",\\\"h\\\":\\\"60\\\"}\",\"face:str\":\"\",\"size:int\":\"20\"}"}
- * @desc 任务文本设置
- *
- * @param questJournalActiveHelp:struct
- * @parent visualSettings
- * @type struct<XY2>
- * @text 激活帮助
- * @default {"x":"36","y":"Graphics.height - 56"}
- * @desc 设置活跃任务帮助图像（ActiveHelp.png）位置
  *
  * @param visualPointers:structA
  * @parent visualSettings
@@ -1337,100 +1049,6 @@
     * @default 1
     * @min 1
     * @desc Task goal event on this map
-*/
-
-/*~struct~QuestsList:
-    * @param position:struct
-    * @type struct<XY2>
-    * @text Position
-    * @default {"x":"20","y":"120"}
-    * @desc Quests list position
-
-    * @param height:int
-    * @text List height
-    * @type number
-    * @default 360
-    * @min 40
-    * @desc Quests list height in pixels (Width settings see in List Item settings)
-
-    * @param textLine:struct
-    * @type struct<TextLine>
-    * @text List Item
-    * @default {"lineSize:struct":"{\"w\":\"200\",\"h\":\"36\"}","face:str":"","size:int":"20"}
-    * @desc List item (quest name in list) settings
-*/
-
-/*~struct~QuestHeader:
-    * @param position:struct
-    * @type struct<XY2>
-    * @text Text Position
-    * @default {"x":"356","y":"100"}
-    * @desc Quest Name Position
-
-    * @param position2:struct
-    * @type struct<XY2>
-    * @text Image Position
-    * @default {"x":"220","y":"80"}
-    * @desc Quest title image position
-
-    * @param textLine:struct
-    * @type struct<TextLine>
-    * @text Text Settings
-    * @default {"lineSize:struct":"{\"w\":\"256\",\"h\":\"80\"}","face:str":"","size:int":"20"}
-    * @desc Quest Name text box settings
-*/
-
-/*~struct~QuestDesc:
-    * @param position:struct
-    * @type struct<XY2>
-    * @text Text Position
-    * @default {"x":"240","y":"160"}
-    * @desc Quest Description Position
-
-    * @param textLine:struct
-    * @type struct<TextLine>
-    * @text Text Settings
-    * @default {"lineSize:struct":"{\"w\":\"460\",\"h\":\"140\"}","face:str":"","size:int":"14"}
-    * @desc Quest Description text box settings
-*/
-
-/*~struct~QuestTask:
-    * @param positions:structA
-    * @type struct<XY2>[]
-    * @text Positions
-    * @default []
-    * @desc Positions for each task
-
-    * @param position:struct
-    * @type struct<XY2>
-    * @text Status Icon
-    * @default {"x":"-22","y":"4"}
-    * @desc Task status icon position (relative task text)
-
-    * @param textLine:struct
-    * @type struct<TextLine>
-    * @text Text Settings
-    * @default {"lineSize:struct":"{\"w\":\"420\",\"h\":\"60\"}","face:str":"","size:int":"20"}
-    * @desc Task text box settings
-*/
-
-/*~struct~TextLine:
-    * @param lineSize:struct
-    * @type struct<WH2>
-    * @text Line Size
-    * @default {"w":"200","h":"36"}
-    * @desc Text block size (width and height)
-
-    * @param face:str
-    * @text Font Face
-    * @default
-    * @desc Font face from fonts folder (your game should support custom fonts)
-    *
-    * @param size:int
-    * @text Font Size
-    * @type number
-    * @default 24
-    * @min 1
 */
 
 /*~struct~CategoryButton:
@@ -4089,7 +3707,7 @@ Object.assign(PIXI.filters, __filters);
 // * LIBRARY WITH MZ AND MZ SUPPORT
 //! {OUTER FILE}
 
-//?rev 05.09.24
+//?rev 23.11.24
 var KDCore;
 
 window.Imported = window.Imported || {};
@@ -4100,9 +3718,9 @@ KDCore = KDCore || {};
 
 // * Двузначные числа нельзя в версии, сравнение идёт по первой цифре поулчается (3.43 - нельзя, можно 3.4.3)
 //%[МЕНЯТЬ ПРИ ИЗМЕНЕНИИ]
-KDCore._fileVersion = '3.6';
+KDCore._fileVersion = '3.6.2';
 
-KDCore.nuiVersion = '1.4';
+KDCore.nuiVersion = '1.4.1';
 
 // * Методы и библиотеки данной версии
 KDCore._loader = 'loader_' + KDCore._fileVersion;
@@ -4273,31 +3891,23 @@ KDCore.registerLibraryToLoad(function () {
   });
 });
 
-KDCore.registerLibraryToLoad(function () {
+KDCore.registerLibraryToLoad(() => {
   /**
    * Checks if the RPG Maker version is MV.
    * @returns {boolean} True if the RPG Maker version is MV, otherwise false.
    */
-  KDCore.isMV = function () {
-    return Utils.RPGMAKER_NAME.includes('MV');
-  };
+  KDCore.isMV = () => Utils.RPGMAKER_NAME.includes('MV');
   /**
    * Checks if the RPG Maker version is MZ.
    * @returns {boolean} True if the RPG Maker version is MZ, otherwise false.
    */
-  KDCore.isMZ = function () {
-    return !KDCore.isMV();
-  };
+  KDCore.isMZ = () => !KDCore.isMV();
   /**
    * Logs warnings to the console.
    * @param {...any[]} args - The arguments to log as warnings.
    */
-  KDCore.warning = function () {
-    var args = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-      args[_i] = arguments[_i];
-    }
-    args.forEach(function (element) {
+  KDCore.warning = (...args) => {
+    args.forEach(element => {
       console.warn(element);
     });
   };
@@ -4306,11 +3916,11 @@ KDCore.registerLibraryToLoad(function () {
    * @param {number} length - The length of the generated string.
    * @returns {string} The generated string.
    */
-  KDCore.makeId = function (length) {
-    var result = '';
-    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    var charactersLength = characters.length;
-    for (var i = 0; i < length; i++) {
+  KDCore.makeId = length => {
+    let result = '';
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    const charactersLength = characters.length;
+    for (let i = 0; i < length; i++) {
       result += characters.charAt(Math.floor(Math.random() * charactersLength));
     }
     return result;
@@ -4322,9 +3932,7 @@ KDCore.registerLibraryToLoad(function () {
    * @param {number} length - The length of the generated string.
    * @returns {string} The generated string.
    */
-  KDCore.makeid = function (length) {
-    return KDCore.makeId(length);
-  };
+  KDCore.makeid = length => KDCore.makeId(length);
 });
 
 // Generated by CoffeeScript 2.6.1
@@ -11878,6 +11486,7 @@ KDCore.registerLibraryToLoad(function () {
         }
         this.button.clearClickHandler();
         if (handler != null && typeof handler === 'function') {
+          this.settings.handler = handler;
           return this.button.addClickHandler(handler);
         }
       } catch (error) {
@@ -11958,13 +11567,25 @@ KDCore.registerLibraryToLoad(function () {
     }
 
     disable() {
-      var ref;
-      return (ref = this.button) != null ? ref.disable() : void 0;
+      var e, ref;
+      try {
+        this.settings.enabled = false;
+        return (ref = this.button) != null ? ref.disable() : void 0;
+      } catch (error) {
+        e = error;
+        return console.warn(e);
+      }
     }
 
     enable() {
-      var ref;
-      return (ref = this.button) != null ? ref.disable() : void 0;
+      var e, ref;
+      try {
+        this.settings.enabled = true;
+        return (ref = this.button) != null ? ref.enable() : void 0;
+      } catch (error) {
+        e = error;
+        return console.warn(e);
+      }
     }
 
     // * ==============
@@ -12009,6 +11630,9 @@ KDCore.registerLibraryToLoad(function () {
         }
         if (this.settings.handler != null) {
           this.setClickHandler(this.settings.handler);
+        }
+        if (this.settings.enabled === false) {
+          this.button.disable();
         }
         this.button.addLoadListener(this._onLoaded.bind(this));
         return this.addChild(this.button);
@@ -13514,7 +13138,7 @@ KDCore.registerLibraryToLoad(function () {
 KDCore.registerLibraryToLoad(function () {
   return (function () {
     //NUI 1.3
-    //rev 01.09.22
+    //rev 18.11.24
 
     //"type": "textPro"
     var TextProElementsBuilder, TextProParser;
@@ -13523,13 +13147,7 @@ KDCore.registerLibraryToLoad(function () {
       constructor(settings1) {
         this.settings = settings1;
         this._textsConfigs = [];
-        if (KDCore.isMV()) {
-          // * TODO: Very bad! Need to fix it
-          if (!window.__kdSharedTextProTextColorSourceWindow) {
-            window.__kdSharedTextProTextColorSourceWindow = new Window_Base(0, 0, 0, 0);
-          }
-        }
-        // this._parseAllText();
+        this._parseAllText();
         return;
       }
 
@@ -13561,19 +13179,32 @@ KDCore.registerLibraryToLoad(function () {
       }
 
       _convertControlCharacters(inputText) {
+        var e;
+        try {
+          return TextProParser.ConvertControlCharacters(inputText);
+        } catch (error) {
+          e = error;
+          KDCore.warning(e);
+          return '';
+        }
+        return outputText;
+      }
+
+      static ConvertControlCharacters(inputText) {
         var e, outputText;
         try {
-          outputText = Window_Base.prototype.convertEscapeCharacters.call(
-            {
-              actorName: function () {
-                return Window_Base.prototype.actorName.call(null, ...arguments);
-              },
-              partyMemberName: function () {
-                return Window_Base.prototype.partyMemberName.call(null, ...arguments);
-              },
-            },
-            inputText,
-          );
+          if (String.any(inputText)) {
+            if (window.__kdSharedTextProTextColorSourceWindow == null) {
+              if (KDCore.isMV()) {
+                window.__kdSharedTextProTextColorSourceWindow = new Window_Base(0, 0, 0, 0);
+              } else {
+                window.__kdSharedTextProTextColorSourceWindow = new Window_Base(new Rectangle(0, 0, 0, 0));
+              }
+            }
+            outputText = window.__kdSharedTextProTextColorSourceWindow.convertEscapeCharacters(inputText);
+          } else {
+            outputText = '';
+          }
         } catch (error) {
           e = error;
           KDCore.warning(e);
@@ -13688,6 +13319,7 @@ KDCore.registerLibraryToLoad(function () {
               } else {
                 return (textState.color = '');
               }
+              break;
             case 'I':
               iconIndex = this._obtainEscapeParam(textState);
               if (iconIndex > 0) {
@@ -13697,6 +13329,7 @@ KDCore.registerLibraryToLoad(function () {
               } else {
                 return (textState.iconIndex = -1);
               }
+              break;
             case 'FS':
               fontSize = this._obtainEscapeParam(textState);
               return (textState.fontSize = fontSize);
@@ -13741,6 +13374,7 @@ KDCore.registerLibraryToLoad(function () {
         }
       }
     };
+    KDCore.TextProParser = TextProParser;
     TextProElementsBuilder = class TextProElementsBuilder {
       // * settings - it's a Sprite_TextPro settings
       constructor(configs1, settings1, userTextStyle1) {
@@ -13937,12 +13571,12 @@ KDCore.registerLibraryToLoad(function () {
           },
           width: function (v) {
             if (v != null) {
-              return this.setSize(v, this.sizeHeight());
+              return this.setSize(v, this.realHeight());
             }
           },
           height: function (v) {
             if (v != null) {
-              return this.setSize(this.sizeWidth(), v);
+              return this.setSize(this.realWidth(), v);
             }
           },
           size: function (v) {
@@ -18741,7 +18375,7 @@ if (KDCore._requireLoadLibrary === true) {
 // ==========================================================================
 // ==========================================================================
 
-//Plugin KDCore builded by PKD PluginBuilder 2.2.2 - 05.09.2024
+//Plugin KDCore builded by PKD PluginBuilder 2.2.2 - 23.11.2024
 
 (function () {
   //TODO: Вынести в KDCore
@@ -18769,38 +18403,6 @@ if (KDCore._requireLoadLibrary === true) {
 })();
 
 (function () {
-  const patch = function () {
-    if (!Window_SQSQuestsList) return;
-
-    // * В MV в этом методе позиция присваивается
-    Window_SQSQuestsList.prototype._refreshCursor = function () {
-      if (!KDCore.isMV()) return;
-      var pad = this._padding;
-      var x = this._cursorRect.x + pad - this.origin.x;
-      var y = this._cursorRect.y + pad - this.origin.y;
-      var w = this._cursorRect.width;
-      var h = this._cursorRect.height;
-      var m = 4;
-      var x2 = Math.max(x, pad);
-      var y2 = Math.max(y, pad);
-      var ox = x - x2;
-      var oy = y - y2;
-      var w2 = Math.min(w, this._width - pad - x2);
-      var h2 = Math.min(h, this._height - pad - y2);
-      var bitmap = new Bitmap(w2, h2);
-
-      this._windowCursorSprite.bitmap = bitmap;
-      this._windowCursorSprite.setFrame(0, 0, w2, h2);
-      this._windowCursorSprite.move(x2, y2);
-    };
-  };
-
-  setTimeout(() => {
-    patch();
-  }, 100);
-})();
-
-(function () {
   ImageManager.loadPKDSQS = function (filename) {
     return this.loadBitmap('img/pSQSystem/', filename, 0, false);
   };
@@ -18810,15 +18412,14 @@ var Imported;
 (function (Imported) {
   Imported.PKD_SQS = true;
 })(Imported || (Imported = {}));
-//console.log("PKD_SimpleQuestSystem version: 15");
 var PKD_SQS;
 (function (PKD_SQS) {
-  PKD_SQS.version = 15;
+  PKD_SQS.version = 17;
   function link(library) {
     try {
       this[library.name] = library;
     } catch (error) {
-      KDCore.warning(error);
+      console.warn(error);
     }
   }
   PKD_SQS.link = link;
@@ -18829,192 +18430,31 @@ var PKD_SQS;
 })(PKD_SQS || (PKD_SQS = {}));
 function SQOpenQuestJournal() {
   try {
+    /*@ts-ignore*/
     window.SQSM.OpenQuestJournal();
   } catch (error) {
-    KDCore.warning(error);
+    console.warn(error);
   }
 }
 function SQOpenOrHideTasksWindow() {
   try {
+    /*@ts-ignore*/
     window.SQSM.SwitchOpenedClosedStateOfQuestsList();
   } catch (error) {
-    KDCore.warning(error);
+    console.warn(error);
   }
 }
 
 var PKD_SQS;
 (function (PKD_SQS) {
-  var PP;
+  let PP;
   (function (PP) {})((PP = PKD_SQS.PP || (PKD_SQS.PP = {})));
   function LoadPluginSettings() {
+    /*@ts-ignore*/
     PKD_SQS.PP._loader = new KDCore.ParamLoader('sqsQuests:structA');
   }
   PKD_SQS.LoadPluginSettings = LoadPluginSettings;
 })(PKD_SQS || (PKD_SQS = {}));
-
-// Generated by CoffeeScript 2.6.1
-// * Общий класс для всех UI элементов
-//? FROM AABSZ (rev 13.10.20), modified
-(function () {
-  var Sprite_UIElement;
-  Sprite_UIElement = function () {
-    // * ABSTRACT значит что класс сам по себе ничего не создаёт, не хранит данные
-    //@[ABSTRACT]
-    class Sprite_UIElement extends KDCore.Sprite {
-      constructor(params) {
-        super();
-        this.params = params;
-        this._init();
-      }
-
-      // * Стандартный набор настроек
-      defaultParams() {
-        return {
-          visible: true,
-        };
-      }
-
-      // * Общий метод (есть у всех элементов)
-      // * По умолчанию вызывает drawText, но потомки могут переопределить
-      draw() {
-        return this.drawText(...arguments);
-      }
-
-      // * Общий метод
-      drawText() {} // * EMPTY
-
-      // * Если изначально невидимый (из параметров), то не активный вообще
-      isActive() {
-        return this.params.visible === true;
-      }
-
-      rootImageFolder() {
-        return Sprite_UIElement.RootImageFolder;
-      }
-
-      // * Сделать чёрно белым
-      desaturate() {
-        this.filters = [new PIXI.filters.ColorMatrixFilter()];
-        this.filters[0].desaturate();
-      }
-
-      // * Общий метод (можно ли редактировать визуально)
-      isCanBeEdited() {
-        return false;
-      }
-
-      // * Общий метод (надо ли скрывать при игровом сообщнии)
-      isHaveHideWithMessageFlag() {
-        return false;
-      }
-
-      // * Общий метод (находится ли объект под мышкой)
-      isUnderMouse() {
-        var ref;
-        return (ref = this.zeroChild()) != null ? ref.isUnderMouse() : void 0;
-      }
-
-      // * Параметры первого элемента (если он есть)
-      realWidth() {
-        var child;
-        child = this.zeroChild();
-        if (child != null) {
-          if (child instanceof PKD_SQS.Sprite_UIElement) {
-            return child.realWidth();
-          } else {
-            return child.width;
-          }
-        }
-        return 0;
-      }
-
-      realHeight() {
-        var child;
-        child = this.zeroChild();
-        if (child != null) {
-          if (child instanceof PKD_SQS.Sprite_UIElement) {
-            return child.realHeight();
-          } else {
-            return child.height;
-          }
-        }
-        return 0;
-      }
-
-      // * Первый "физический" элемент (спрайт)
-      zeroChild() {
-        return this.children[0];
-      }
-
-      // * Метод восстановления значения на стандартные настройки
-      reset(property) {
-        var e;
-        try {
-          switch (property) {
-            case 'position':
-              this._resetPosition();
-              break;
-            default:
-              this[property] = this.params[property];
-          }
-        } catch (error) {
-          e = error;
-          KDCore.warning(e);
-        }
-      }
-    }
-
-    // * Корневая директория для изображений
-    Sprite_UIElement.RootImageFolder = 'pSQSystem';
-
-    return Sprite_UIElement;
-  }.call(this);
-  PKD_SQS.link(Sprite_UIElement);
-})();
-
-(function () {
-  //╒═════════════════════════════════════════════════════════════════════════╛
-  // ■ PRIVATE.coffee
-  //╒═════════════════════════════════════════════════════════════════════════╛
-  //---------------------------------------------------------------------------
-  var _;
-  //@[DEFINES]
-  _ = PKD_SQS.Sprite_UIElement.prototype;
-  _._init = function () {
-    var e;
-    this._prepare();
-    try {
-      return this._createContent();
-    } catch (error) {
-      e = error;
-      KDCore.warning(e);
-      // * Если при создании произошла ошибка, отключаем элемент
-      return (this.isActive = function () {
-        return false;
-      });
-    }
-  };
-
-  // * Подготовка элемента (проверка параметров)
-  _._prepare = function () {
-    if (this.params == null) {
-      this.params = this.defaultParams();
-    }
-    return (this.visible = this.params.visible);
-  };
-  // * Наследники создают свои элементы в этом методе
-  _._createContent = function () {}; // * EMPTY
-
-  // * Сброс позиции
-  _._resetPosition = function () {
-    var x, y;
-    ({ x, y } = this.params.position);
-    this.move(x, y);
-  };
-})();
-
-// ■ END PRIVATE.coffee
-//---------------------------------------------------------------------------
 
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
@@ -19040,50 +18480,8 @@ var PKD_SQS;
   _.getQuestNotifyPosition = function () {
     return _._loader.getParam('journalNotifyPosition', {});
   };
-  _.getQuestListWindowSettings = function () {
-    return _._loader.getParam('questsListSettings', {});
-  };
-  _.getQuestHeaderSettings = function () {
-    return _._loader.getParam('questHeaderSettings', {});
-  };
-  _.getQuestDescSettings = function () {
-    return _._loader.getParam('questDescSettings', {});
-  };
-  _.getQuestTasksHeaderSettings = function () {
-    return _._loader.getParam('questTaskHeaderSettings', {});
-  };
-  _.getGroupButtonA = function () {
-    return _._loader.getParam('questGroupButtonA', {});
-  };
-  _.getGroupButtonB = function () {
-    return _._loader.getParam('questGroupButtonB', {});
-  };
-  _.getQuestTasksSettings = function () {
-    return _._loader.getParam('questsTasksSettings', {});
-  };
   _.getQuestsArrows = function () {
     return _._loader.getParam('visualPointers', []);
-  };
-  _.getQuestListCursorMargins = function () {
-    return _._loader.getParam('questsListCursor', {});
-  };
-  _.getQuestListActiveIconMargins = function () {
-    return _._loader.getParam('questsListActive', {});
-  };
-  _.getQuestJournalBackImgPosition = function () {
-    return _._loader.getParam('questJournalBackground', {});
-  };
-  _.getQuestActiveHelpImgPosition = function () {
-    return _._loader.getParam('questJournalActiveHelp', {});
-  };
-  _.getQuestJournalSeparateLinePosition = function () {
-    return _._loader.getParam('questJournalLine', {});
-  };
-  _.getQuestListNewMarkMargins = function () {
-    return _._loader.getParam('questsListNewMark', {
-      x: 2,
-      y: 0,
-    });
   };
   _.getQuestJournalOpenButton = function () {
     return _._loader.getParam('buttonForOpenJournal', 'j');
@@ -19169,12 +18567,6 @@ var PKD_SQS;
   _.isHaveFailedQuests = function () {
     return _._loader.getParam('isHaveFailedQuests', false);
   };
-  _.getGroupButtonC = function () {
-    return _._loader.getParam('questGroupButtonC', {
-      x: 250,
-      y: 80,
-    });
-  };
   _.nextCategoryKeyboardKey = function () {
     return _._loader.getParam('nextCategoryKey', '');
   };
@@ -19216,6 +18608,9 @@ var PKD_SQS;
   };
   pkdRegisterLocalNUIFile('NUI_MapQuestsList');
   pkdRegisterLocalNUIFile('NUI_MapQuestsListItem');
+  pkdRegisterLocalNUIFile('NUI_QuestsScene');
+  pkdRegisterLocalNUIFile('NUI_QuestListItem');
+  pkdRegisterLocalNUIFile('NUI_TaskListItem');
   //@[ALIAS]
   ALIAS__loadDataFile = _.loadDataFile;
   _.loadDataFile = function (name, src) {
@@ -19410,7 +18805,7 @@ FWindow_SQSMapTW = class FWindow_SQSMapTW extends KDCore.FloatingWindow {
         return w.refresh();
       } catch (error) {
         e = error;
-        return KDCore.warning(e);
+        return console.warn(e);
       }
     }, 10);
     this.setSubWindow(w);
@@ -19512,32 +18907,16 @@ FWindow_SQSMapTW = class FWindow_SQSMapTW extends KDCore.FloatingWindow {
   }
 };
 
-var __spreadArray =
-  (this && this.__spreadArray) ||
-  function (to, from, pack) {
-    if (pack || arguments.length === 2)
-      for (var i = 0, l = from.length, ar; i < l; i++) {
-        if (ar || !(i in from)) {
-          if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-          ar[i] = from[i];
-        }
-      }
-    return to.concat(ar || Array.prototype.slice.call(from));
-  };
-(function () {
-  var _ = Game_Map.prototype;
+(() => {
+  const _ = Game_Map.prototype;
   //@[ALIAS]
-  var a_requestRefresh = _.requestRefresh;
-  _.requestRefresh = function () {
-    var args = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-      args[_i] = arguments[_i];
-    }
-    a_requestRefresh.call.apply(a_requestRefresh, __spreadArray([this], args, false));
+  const a_requestRefresh = _.requestRefresh;
+  _.requestRefresh = function (...args) {
+    a_requestRefresh.call(this, ...args);
     try {
       SQS_QuestAndTaskAutoConditionsManager.RefreshAllQuestsAndTasksAutoConditions();
     } catch (error) {
-      KDCore.warning(error);
+      console.warn(error);
     }
   };
 })();
@@ -19767,7 +19146,7 @@ var __spreadArray =
       this.refreshSQSTaskWindowVisibility();
     } catch (error) {
       e = error;
-      KDCore.warning(e);
+      console.warn(e);
       this._sqTasksWindow = null;
     }
   };
@@ -19795,7 +19174,7 @@ var __spreadArray =
       return this._sqTasksWindow._closeButtonClick();
     } catch (error) {
       e = error;
-      return KDCore.warning(e);
+      return console.warn(e);
     }
   };
   _.openSQSTaskWindow = function () {
@@ -19809,7 +19188,7 @@ var __spreadArray =
       }
     } catch (error) {
       e = error;
-      return KDCore.warning(e);
+      return console.warn(e);
     }
   };
   _.closeSQSTaskWindow = function () {
@@ -19823,7 +19202,7 @@ var __spreadArray =
       }
     } catch (error) {
       e = error;
-      return KDCore.warning(e);
+      return console.warn(e);
     }
   };
   _.refreshSQSTaskWindow = function () {
@@ -19836,7 +19215,7 @@ var __spreadArray =
       this.refreshSQSTaskWindowVisibility();
     } catch (error) {
       e = error;
-      KDCore.warning(e);
+      console.warn(e);
     }
   };
 })();
@@ -19872,11 +19251,17 @@ Scene_SQSJournal = class Scene_SQSJournal extends Scene_MenuBase {
     super();
   }
 
+  needsCancelButton() {
+    return false;
+  }
+
   create() {
     super.create();
+    this._group = 0;
+    this._category = ''; // * All
+    this._data = [];
     this._closeButton = PKD_SQS.PP.getQuestJournalOpenButton();
-    this._createBackground();
-    this._createSepLine();
+    this._createMainScheme();
     this._createWindows();
     this._createHelpText();
     return this._onGroupClick(0);
@@ -19890,11 +19275,6 @@ Scene_SQSJournal = class Scene_SQSJournal extends Scene_MenuBase {
     return this._updateCloseByButton();
   }
 
-  stop() {
-    this.ql.clearQuestMarks();
-    return super.stop();
-  }
-
   setQuestInfo(questData) {
     this._clearQuestInfo();
     this.activeQuestData = questData;
@@ -19903,75 +19283,148 @@ Scene_SQSJournal = class Scene_SQSJournal extends Scene_MenuBase {
     }
   }
 
-  _createBackground() {
-    var backSprite, pos, x, y;
-    pos = PKD_SQS.PP.getQuestJournalBackImgPosition();
-    x = eval(pos.x);
-    y = eval(pos.y);
-    backSprite = new Sprite(ImageManager.loadPKDSQS('JournalBackground'));
-    backSprite.move(x, y);
-    return this.addChild(backSprite);
-  }
-
-  _createSepLine() {
-    var lineSprite, pos, x, y;
-    pos = PKD_SQS.PP.getQuestJournalSeparateLinePosition();
-    x = eval(pos.x);
-    y = eval(pos.y);
-    lineSprite = new Sprite(ImageManager.loadPKDSQS('Line'));
-    lineSprite.move(x, y);
-    return this.addChild(lineSprite);
+  _createMainScheme() {
+    var e, ref;
+    try {
+      KDCore.Sprite_NUI.FromScheme(PKD_SQS.GetNUIFile('NUI_QuestsScene'), this);
+      return (ref = this._closeButtonSprite) != null ? ref.setClickHandler(this.popScene.bind(this)) : void 0;
+    } catch (error) {
+      e = error;
+      return console.warn('error', e);
+    }
   }
 
   _createWindows() {
     this._createCategories(); //?part 2, это группы текущие \ выполненные
     this._createQuestsList();
-    this._createQuestMain();
-    this._createQuestsCategories(); //?part 3 [PRO only]
+    this._createQuestMain(); //?part 1
+    this._createQuestsCategories(); //?part 3
   }
 
-  _createQuestsCategories() {} // * EMPTY
-
   _createQuestsList() {
-    var params, rect, textLineSettings, x, y;
-    params = PKD_SQS.PP.getQuestListWindowSettings();
-    textLineSettings = {
-      w: eval(params.textLine.lineSize.w),
-      h: eval(params.textLine.lineSize.h),
-      fontFace: params.textLine.face,
-      fontSize: params.textLine.size,
-    };
-    x = eval(params.position.x);
-    y = eval(params.position.y);
-    rect = new Rectangle(x, y, textLineSettings.w, params.height);
-    this.ql = new Window_SQSQuestsList(rect);
-    this.ql.setSettings(textLineSettings);
-    this.ql.setHandler('cancel', this.popScene.bind(this));
-    this.ql.setHandler('ok', this.changeActiveQuest.bind(this));
-    this.ql.refresh();
-    this.ql.activate();
+    this._questsList.setOkHandler(this.changeActiveQuest.bind(this));
+    this._questsList.setCancelHandler(this.popScene.bind(this));
     this._refreshEmptyJournalHolder();
-    this.addChild(this.ql);
+  }
+
+  _refrshQuestsList() {
+    var _category, currentGroup, e, questsSprites;
+    try {
+      _category = this._category;
+      if (this._group === 0) {
+        this._data = SQSM.playerCurrentQuestsForCategory(_category);
+      } else if (this._group === 1) {
+        this._data = SQSM.playerCompletedQuestsForCategory(_category);
+      } else if (this._group === 2) {
+        this._data = SQSM.playerFailedQuestsForCategory(_category);
+      } else {
+        this._data = [];
+      }
+      this._applySortings();
+      currentGroup = this._group;
+      questsSprites = this._data.map(function (q) {
+        return new Sprite_SQSQuestListItem(q, currentGroup);
+      });
+      this._questsList.setItems(questsSprites);
+      return this._questsList.activate(0);
+    } catch (error) {
+      e = error;
+      return console.warn(e);
+    }
+  }
+
+  _applySortings() {
+    if (PKD_SQS.PP.isSortByNew()) {
+      this._sortByNewQuests();
+    }
+    if (PKD_SQS.PP.isSortByActive()) {
+      this._sortByActiveFirst();
+    }
+  }
+
+  _sortByNewQuests() {
+    var i, j, k, lastAddedQuests, len, len1, len2, newDataPre, q, ref, ref1;
+    // * Сортировка (новые сперва вверху)
+    lastAddedQuests = [];
+    newDataPre = [];
+    ref = this._data;
+    for (i = 0, len = ref.length; i < len; i++) {
+      q = ref[i];
+      if (SQSM.isQuestHaveNewMark(q.id)) {
+        lastAddedQuests.push(q);
+      }
+    }
+    for (j = 0, len1 = lastAddedQuests.length; j < len1; j++) {
+      q = lastAddedQuests[j];
+      newDataPre.push(q);
+    }
+    ref1 = this._data;
+    for (k = 0, len2 = ref1.length; k < len2; k++) {
+      q = ref1[k];
+      if (!newDataPre.contains(q)) {
+        newDataPre.push(q);
+      }
+    }
+    this._data = newDataPre;
+  }
+
+  _sortByActiveFirst() {
+    var activateQuests, i, j, k, len, len1, len2, newData, q, ref, ref1;
+    // * Сортировка (aктивные вверху)
+    activateQuests = [];
+    newData = [];
+    ref = this._data;
+    for (i = 0, len = ref.length; i < len; i++) {
+      q = ref[i];
+      if (SQSM.isQuestActive(q.id)) {
+        activateQuests.push(q);
+      }
+    }
+    for (j = 0, len1 = activateQuests.length; j < len1; j++) {
+      q = activateQuests[j];
+      newData.push(q);
+    }
+    ref1 = this._data;
+    for (k = 0, len2 = ref1.length; k < len2; k++) {
+      q = ref1[k];
+      if (!newData.contains(q)) {
+        newData.push(q);
+      }
+    }
+    this._data = newData;
   }
 
   changeActiveQuest() {
-    var q, state;
-    if (!this.ql.isCurrentItemEnabled()) {
+    var item, q, state;
+    this._questsList.activate();
+    item = this._questsList.selectedItem();
+    if (item == null) {
       return;
     }
-    q = this.ql.quest();
+    if (!item.isEnabled()) {
+      return;
+    }
+    q = item.quest;
+    if (q == null) {
+      return;
+    }
     state = SQSM.isQuestActive(q.id);
     SQSM.SetActiveQuest(q.id, !state);
-    this.ql.refresh();
-    this.ql.activate();
+    item.refresh();
   }
 
   _refreshSelectedQuestInfo() {
-    var newSelectedQuest;
-    if (this.ql == null) {
+    var item, newSelectedQuest;
+    if (this._questsList == null) {
       return;
     }
-    newSelectedQuest = this.ql.quest();
+    item = this._questsList.selectedItem();
+    if (item == null) {
+      this.setQuestInfo(null);
+      this._lastSelectedQuest = null;
+      return;
+    }
+    newSelectedQuest = item.quest;
     if (this._lastSelectedQuest !== newSelectedQuest) {
       this.setQuestInfo(newSelectedQuest);
       this._lastSelectedQuest = newSelectedQuest;
@@ -19979,14 +19432,8 @@ Scene_SQSJournal = class Scene_SQSJournal extends Scene_MenuBase {
   }
 
   _createHelpText() {
-    var pos, x, y;
-    pos = PKD_SQS.PP.getQuestActiveHelpImgPosition();
-    x = eval(pos.x);
-    y = eval(pos.y);
-    this._activeHelp = new Sprite(ImageManager.loadPKDSQS('ActiveHelp'));
-    this._activeHelp.move(x, y);
-    this._activeHelp.visible = false;
-    return this.addChild(this._activeHelp);
+    var ref;
+    return (ref = this._activeHelp) != null ? (ref.visible = false) : void 0;
   }
 
   _updateNavigation() {
@@ -20007,7 +19454,7 @@ Scene_SQSJournal = class Scene_SQSJournal extends Scene_MenuBase {
 
   _onSwitchPrevGroup() {
     var currentGroupIndex, newIndex;
-    currentGroupIndex = this.ql._group;
+    currentGroupIndex = this._group;
     newIndex = currentGroupIndex - 1;
     if (newIndex < 0) {
       newIndex = 2;
@@ -20017,7 +19464,7 @@ Scene_SQSJournal = class Scene_SQSJournal extends Scene_MenuBase {
 
   _onSwitchNextGroup() {
     var currentGroupIndex, newIndex;
-    currentGroupIndex = this.ql._group;
+    currentGroupIndex = this._group;
     newIndex = currentGroupIndex + 1;
     if (newIndex > 2) {
       newIndex = 0;
@@ -20026,7 +19473,8 @@ Scene_SQSJournal = class Scene_SQSJournal extends Scene_MenuBase {
   }
 
   _onSwitchGroup() {
-    if (this.groupA.isDisabled()) {
+    var ref;
+    if ((ref = this.groupA) != null ? ref.isDisabled() : void 0) {
       this._onGroupClick(1);
     } else {
       this._onGroupClick(0);
@@ -20041,7 +19489,7 @@ Scene_SQSJournal = class Scene_SQSJournal extends Scene_MenuBase {
       }
     } catch (error) {
       e = error;
-      return KDCore.warning(e);
+      return console.warn(e);
     }
   }
 };
@@ -20066,7 +19514,7 @@ Sprite_MapQuestsListItem = class Sprite_MapQuestsListItem extends KDCore.Sprite_
       return (this._autoRefreshThread = new KDCore.TimedUpdate(this.uiConstant('autoRefreshIntervalInSeconds') * 60, this.refreshIfNeeds.bind(this)));
     } catch (error) {
       e = error;
-      return KDCore.warning(e);
+      return console.warn(e);
     }
   }
 
@@ -20112,7 +19560,7 @@ Sprite_MapQuestsListItem = class Sprite_MapQuestsListItem extends KDCore.Sprite_
       }
     } catch (error) {
       e = error;
-      KDCore.warning(e);
+      console.warn(e);
     }
     return '???';
   }
@@ -20126,7 +19574,7 @@ Sprite_MapQuestsListItem = class Sprite_MapQuestsListItem extends KDCore.Sprite_
       }
     } catch (error) {
       e = error;
-      KDCore.warning(e);
+      console.warn(e);
       return '#FFFFFF';
     }
     return this.uiConstant('defaultQuestNameColor');
@@ -20141,7 +19589,7 @@ Sprite_MapQuestsListItem = class Sprite_MapQuestsListItem extends KDCore.Sprite_
       }
     } catch (error) {
       e = error;
-      KDCore.warning(e);
+      console.warn(e);
     }
     return false;
   }
@@ -20155,7 +19603,7 @@ Sprite_MapQuestsListItem = class Sprite_MapQuestsListItem extends KDCore.Sprite_
       }
     } catch (error) {
       e = error;
-      KDCore.warning(e);
+      console.warn(e);
     }
     return '???';
   }
@@ -20172,7 +19620,7 @@ Sprite_MapQuestsListItem = class Sprite_MapQuestsListItem extends KDCore.Sprite_
       }
     } catch (error) {
       e = error;
-      return KDCore.warning(e);
+      return console.warn(e);
     }
   }
 
@@ -20189,28 +19637,18 @@ Sprite_MapQuestsListItem = class Sprite_MapQuestsListItem extends KDCore.Sprite_
       }
     } catch (error) {
       e = error;
-      KDCore.warning(e);
+      console.warn(e);
     }
     return false;
   }
 
   _convertControlCharacters(inputText) {
-    var e, outputText;
+    var e;
     try {
-      outputText = Window_Base.prototype.convertEscapeCharacters.call(
-        {
-          actorName: function () {
-            return Window_Base.prototype.actorName.call(null, ...arguments);
-          },
-          partyMemberName: function () {
-            return Window_Base.prototype.partyMemberName.call(null, ...arguments);
-          },
-        },
-        inputText,
-      );
+      return KDCore.TextProParser.ConvertControlCharacters(inputText);
     } catch (error) {
       e = error;
-      KDCore.warning(e);
+      console.warn(e);
       return '';
     }
     return outputText;
@@ -20248,7 +19686,7 @@ Sprite_MapQuestsList = class Sprite_MapQuestsList extends KDCore.Sprite_NUI {
       return SceneManager._scene._sqMapQuestsList;
     } catch (error) {
       e = error;
-      return KDCore.warning(e);
+      return console.warn(e);
     }
   }
 
@@ -20266,7 +19704,7 @@ Sprite_MapQuestsList = class Sprite_MapQuestsList extends KDCore.Sprite_NUI {
       return (SceneManager._scene._sqMapQuestsList = w);
     } catch (error) {
       e = error;
-      return KDCore.warning(e);
+      return console.warn(e);
     }
   }
 
@@ -20281,7 +19719,7 @@ Sprite_MapQuestsList = class Sprite_MapQuestsList extends KDCore.Sprite_NUI {
       return w.removeFromParent();
     } catch (error) {
       e = error;
-      return KDCore.warning(e);
+      return console.warn(e);
     }
   }
 
@@ -20295,7 +19733,7 @@ Sprite_MapQuestsList = class Sprite_MapQuestsList extends KDCore.Sprite_NUI {
       return w != null ? w.refresh() : void 0;
     } catch (error) {
       e = error;
-      return KDCore.warning(e);
+      return console.warn(e);
     }
   }
 
@@ -20319,7 +19757,7 @@ Sprite_MapQuestsList = class Sprite_MapQuestsList extends KDCore.Sprite_NUI {
       }
     } catch (error) {
       e = error;
-      KDCore.warning(e);
+      console.warn(e);
     }
     return 300;
   }
@@ -20408,7 +19846,7 @@ Sprite_MapQuestsList = class Sprite_MapQuestsList extends KDCore.Sprite_NUI {
       }
     } catch (error) {
       e = error;
-      return KDCore.warning(e);
+      return console.warn(e);
     }
   }
 
@@ -20421,7 +19859,7 @@ Sprite_MapQuestsList = class Sprite_MapQuestsList extends KDCore.Sprite_NUI {
       }
     } catch (error) {
       e = error;
-      return KDCore.warning(e);
+      return console.warn(e);
     }
   }
 
@@ -20434,7 +19872,7 @@ Sprite_MapQuestsList = class Sprite_MapQuestsList extends KDCore.Sprite_NUI {
       }
     } catch (error) {
       e = error;
-      return KDCore.warning(e);
+      return console.warn(e);
     }
   }
 
@@ -20467,7 +19905,7 @@ Sprite_MapQuestsList = class Sprite_MapQuestsList extends KDCore.Sprite_NUI {
       }
     } catch (error) {
       e = error;
-      return KDCore.warning(e);
+      return console.warn(e);
     }
   }
 };
@@ -20651,47 +20089,115 @@ Sprite_SQSNotifyLine = class Sprite_SQSNotifyLine extends Sprite {
   }
 };
 
-// Generated by CoffeeScript 2.6.1
-var Sprite_SQSTaskLine;
-
-Sprite_SQSTaskLine = class Sprite_SQSTaskLine extends Sprite {
-  constructor(task) {
+class Sprite_SQSQuestListItem extends Sprite {
+  constructor(_quest, _groupIndex) {
     super();
-    this.task = task;
-    this.params = PKD_SQS.PP.getQuestTasksSettings();
-    this._createTaskStatusIcon();
-    this._createTaskText();
-    return;
+    this._quest = _quest;
+    this._groupIndex = _groupIndex;
+    this._isSelected = false;
+    this._create();
+    this._refreshActiveMarkColor();
   }
-
-  _createTaskStatusIcon() {
-    var iconImage, taskIcon, x, y;
-    x = eval(this.params.position.x);
-    y = eval(this.params.position.y);
-    iconImage = 'Task_A';
-    if (this.task.isComplete()) {
-      iconImage = 'Task_B';
-    } else if (this.task.isFailed()) {
-      iconImage = 'Task_C';
+  activateInList() {
+    this._isSelected = true;
+    this._questItem.refreshBindings(this);
+    this._clearNewMark();
+  }
+  deactivateInList() {
+    this._isSelected = false;
+    this._questItem.refreshBindings(this);
+  }
+  isNewQuest() {
+    //@ts-ignore
+    return SQSM.isQuestHaveNewMark(this.quest.id) && this._groupIndex === 0;
+  }
+  isSelected() {
+    return this._isSelected;
+  }
+  questName() {
+    return this.quest.titleForList;
+  }
+  isQuestActive() {
+    //@ts-ignore
+    return SQSM.isQuestActive(this.quest.id);
+  }
+  refresh() {
+    this._questItem.refreshBindings(this);
+    this._refreshActiveMarkColor();
+  }
+  // * Если мы в текущих заданиях, то используется для проверки можно ли задать квест активным
+  // * т.е. если у него путевые точки
+  isEnabled() {
+    //@ts-ignore
+    return SQSM.isQuestHavePoints(this.quest.id) && this._groupIndex === 0;
+  }
+  setActivatedInListState(value) {}
+  realWidth() {
+    return this._questItem.realWidth();
+  }
+  realHeight() {
+    return this._questItem.realHeight();
+  }
+  get quest() {
+    return this._quest;
+  }
+  _create() {
+    //@ts-ignore
+    KDCore.Sprite_NUI.FromScheme(this._scheme(), this);
+  }
+  _refreshActiveMarkColor() {
+    try {
+      //@ts-ignore
+      let index = SQSM.getQuestActiveIndex(this.quest.id);
+      if (index < 0) return;
+      let opacity = this._questItem.uiConstant('ActiveQuestMarkColorOverlayOpacity');
+      if (opacity <= 0) return;
+      //@ts-ignore
+      let arrowData = SQSM.getQuestsArrows()[index];
+      let colorArray = [...arrowData.color.ARR];
+      colorArray[3] = opacity;
+      this._questActiveMark.image.setBlendColor(colorArray);
+    } catch (error) {
+      console.warn(error);
     }
-    taskIcon = new Sprite(ImageManager.loadPKDSQS(iconImage));
-    this.addChild(taskIcon);
-    taskIcon.move(x, y);
   }
+  _scheme() {
+    return PKD_SQS.GetNUIFile('NUI_QuestListItem');
+  }
+  _clearNewMark() {
+    //@ts-ignore
+    SQSM.clearQuestNewMark(this.quest.id);
+  }
+}
 
-  _createTaskText() {
-    var taskText, textSize;
-    textSize = this.params.textLine.lineSize;
-    taskText = new Sprite_SQSTextLine(this.task.text, {
-      w: eval(textSize.w),
-      h: eval(textSize.h),
-      fontFace: this.params.textLine.face,
-      fontSize: this.params.textLine.size,
-    });
-    // * Позиция задаётся в массиве поизиций, поэтому нет доп. смещения самого текста
-    return this.addChild(taskText);
+class Sprite_SQSTaskListItem extends Sprite {
+  constructor(_task) {
+    super();
+    this._task = _task;
+    this._create();
   }
-};
+  realWidth() {
+    return this._taskItem.realWidth();
+  }
+  realHeight() {
+    return this._taskItem.realHeight();
+  }
+  get task() {
+    return this._task;
+  }
+  _create() {
+    var _a, _b;
+    //@ts-ignore
+    KDCore.Sprite_NUI.FromScheme(this._scheme(), this);
+    let taskIconName = this.task.isComplete() ? 'Task_B' : this.task.isFailed() ? 'Task_C' : 'Task_A';
+    (_a = this._taskStatusIcon) === null || _a === void 0 ? void 0 : _a.draw(taskIconName);
+    (_b = this._taskText) === null || _b === void 0 ? void 0 : _b.draw(this.task.text);
+    this._taskItem.refreshBindings();
+  }
+  _scheme() {
+    return PKD_SQS.GetNUIFile('NUI_TaskListItem');
+  }
+}
 
 // Generated by CoffeeScript 2.6.1
 var Sprite_SQSTextLine;
@@ -20800,38 +20306,23 @@ Sprite_SQSTextLine = class Sprite_SQSTextLine extends Sprite {
 // ■ END Spriteset_Map.coffee
 //---------------------------------------------------------------------------
 
-var SQS_Condition = /** @class */ (function () {
-  function SQS_Condition(switchId, variableId, variableConditionMode, variableValue, script) {
-    if (switchId === void 0) {
-      switchId = 0;
-    }
-    if (variableId === void 0) {
-      variableId = 0;
-    }
-    if (variableConditionMode === void 0) {
-      variableConditionMode = 'equal';
-    }
-    if (variableValue === void 0) {
-      variableValue = 0;
-    }
-    if (script === void 0) {
-      script = 'true';
-    }
+class SQS_Condition {
+  static FromConfig(config) {
+    let switchId = config.switchId || 0;
+    let variableId = config.variableId || 0;
+    let variableConditionMode = config.variableConditionMode || 'equal';
+    let variableValue = config.variableValue || 0;
+    let script = config.script || '';
+    return new SQS_Condition(switchId, variableId, variableConditionMode, variableValue, script);
+  }
+  constructor(switchId = 0, variableId = 0, variableConditionMode = 'equal', variableValue = 0, script = 'true') {
     this.switchId = switchId;
     this.variableId = variableId;
     this.variableConditionMode = variableConditionMode;
     this.variableValue = variableValue;
     this.script = script;
   }
-  SQS_Condition.FromConfig = function (config) {
-    var switchId = config.switchId || 0;
-    var variableId = config.variableId || 0;
-    var variableConditionMode = config.variableConditionMode || 'equal';
-    var variableValue = config.variableValue || 0;
-    var script = config.script || '';
-    return new SQS_Condition(switchId, variableId, variableConditionMode, variableValue, script);
-  };
-  SQS_Condition.prototype.evaluate = function () {
+  evaluate() {
     var switchResult = true;
     var variableResult = true;
     var scriptResult = true;
@@ -20863,22 +20354,22 @@ var SQS_Condition = /** @class */ (function () {
       scriptResult = eval(this.script);
     }
     return switchResult && variableResult && scriptResult;
-  };
-  return SQS_Condition;
-})();
+  }
+}
+window['SQS_Condition'] = SQS_Condition;
 
 /**
  * The SQS_Keep class manages the state of quests and tasks, including their visibility,
  * completion, and failure statuses. It also tracks active quests and marks new quests.
  */
-var SQS_Keep = /** @class */ (function () {
-  function SQS_Keep() {
+class SQS_Keep {
+  constructor() {
     this.reset();
   }
   /**
    * Resets all quest and task statuses to their initial states.
    */
-  SQS_Keep.prototype.reset = function () {
+  reset() {
     this._completedQuests = [];
     this._visibleQuests = [];
     this._failedQuests = [];
@@ -20888,181 +20379,195 @@ var SQS_Keep = /** @class */ (function () {
     this._questVisibleTasksStatuses = {};
     this._questVisibleDescription = {};
     this._activeQuests = [];
-  };
+  }
   /**
    * Checks if a quest has been added.
    * @param questId - The ID of the quest.
    * @returns True if the quest is added, false otherwise.
    */
-  SQS_Keep.prototype.isAddedQuest = function (questId) {
+  isAddedQuest(questId) {
     if (!this._visibleQuests) {
       this._visibleQuests = [];
     }
     return this._visibleQuests.includes(questId);
-  };
+  }
   /**
    * Checks if a quest is complete.
    * @param questId - The ID of the quest.
    * @returns True if the quest is complete, false otherwise.
    */
-  SQS_Keep.prototype.isCompleteQuest = function (questId) {
+  isCompleteQuest(questId) {
     if (!this._completedQuests) {
       this._completedQuests = [];
     }
     return this._completedQuests.includes(questId);
-  };
+  }
   /**
    * Checks if a quest has failed.
    * @param questId - The ID of the quest.
    * @returns True if the quest has failed, false otherwise.
    */
-  SQS_Keep.prototype.isFailedQuest = function (questId) {
+  isFailedQuest(questId) {
     if (!this._failedQuests) {
       this._failedQuests = [];
     }
     return this._failedQuests.includes(questId);
-  };
+  }
   /**
    * Checks if a quest is active.
    * @param questId - The ID of the quest.
    * @returns True if the quest is active, false otherwise.
    */
-  SQS_Keep.prototype.isActiveQuest = function (questId) {
+  isActiveQuest(questId) {
     if (!this._activeQuests) {
       this._activeQuests = [];
     }
     return this._activeQuests.includes(questId);
-  };
+  }
   /**
    * Checks if a task within a quest is visible.
    * @param questId - The ID of the quest.
    * @param index - The index of the task.
    * @returns True if the task is visible, false otherwise.
    */
-  SQS_Keep.prototype.isTaskVisible = function (questId, index) {
+  isTaskVisible(questId, index) {
     if (!this._questVisibleTasksStatuses) {
       this._questVisibleTasksStatuses = {};
     }
     if (index === 0) return true;
-    var data = this._questVisibleTasksStatuses[questId];
+    const data = this._questVisibleTasksStatuses[questId];
     if (!data) return false;
     return data.includes(index);
-  };
+  }
   /**
    * Checks if a task within a quest is complete.
    * @param questId - The ID of the quest.
    * @param index - The index of the task.
    * @returns True if the task is complete, false otherwise.
    */
-  SQS_Keep.prototype.isTaskComplete = function (questId, index) {
+  isTaskComplete(questId, index) {
     if (!this._questCompleteTasksStatuses) {
       this._questCompleteTasksStatuses = {};
     }
-    var data = this._questCompleteTasksStatuses[questId];
+    const data = this._questCompleteTasksStatuses[questId];
     if (!data) return false;
     return data.includes(index);
-  };
+  }
   /**
    * Checks if a task within a quest has failed.
    * @param questId - The ID of the quest.
    * @param index - The index of the task.
    * @returns True if the task has failed, false otherwise.
    */
-  SQS_Keep.prototype.isTaskFailed = function (questId, index) {
+  isTaskFailed(questId, index) {
     if (!this._questFailedTasksStatuses) {
       this._questFailedTasksStatuses = {};
     }
-    var data = this._questFailedTasksStatuses[questId];
+    const data = this._questFailedTasksStatuses[questId];
     if (!data) return false;
     return data.includes(index);
-  };
+  }
   /**
    * Gets the description index for a quest.
    * @param questId - The ID of the quest.
    * @returns The description index of the quest.
    */
-  SQS_Keep.prototype.getQuestDescriptionIndex = function (questId) {
+  getQuestDescriptionIndex(questId) {
     if (!this._questVisibleDescription) {
       this._questVisibleDescription = {};
     }
     if (!this._questVisibleDescription[questId]) return 0;
     return this._questVisibleDescription[questId];
-  };
+  }
   /**
    * Sets a quest as active.
    * @param questId - The ID of the quest.
    */
-  SQS_Keep.prototype.setActiveQuest = function (questId) {
+  setActiveQuest(questId) {
     if (this.isActiveQuest(questId)) return;
-    this._activeQuests[0] = questId;
-  };
+    try {
+      let isAdded = false;
+      for (let i = 0; i < this._activeQuests.length; i++) {
+        if (!this._activeQuests[i]) {
+          this._activeQuests[i] = questId;
+          isAdded = true;
+          break;
+        }
+      }
+      if (!isAdded) {
+        this._activeQuests.push(questId);
+      }
+    } catch (error) {
+      console.warn(error);
+    }
+  }
   /**
    * Removes a quest from the active quests.
    * @param questId - The ID of the quest.
    */
-  SQS_Keep.prototype.removeActiveQuest = function (questId) {
+  removeActiveQuest(questId) {
     if (!this.isActiveQuest(questId)) return;
-    var index = this.getActiveQuestIndex(questId);
+    const index = this.getActiveQuestIndex(questId);
     if (index >= 0) this._activeQuests[index] = null;
-  };
+  }
   /**
    * Gets the index of an active quest.
    * @param questId - The ID of the quest.
    * @returns The index of the active quest, or -1 if not found.
    */
-  SQS_Keep.prototype.getActiveQuestIndex = function (questId) {
+  getActiveQuestIndex(questId) {
     if (!this.isActiveQuest(questId)) return -1;
     return this._activeQuests.indexOf(questId);
-  };
+  }
   /**
    * Adds a quest to the visible quests.
    * @param questId - The ID of the quest.
    */
-  SQS_Keep.prototype.addQuest = function (questId) {
+  addQuest(questId) {
     if (!this.isAddedQuest(questId)) {
       this._visibleQuests.push(questId);
       this.registerMarkForNewQuest(questId);
     }
-  };
+  }
   /**
    * Registers a quest as new.
    * @param questId - The ID of the quest.
    */
-  SQS_Keep.prototype.registerMarkForNewQuest = function (questId) {
+  registerMarkForNewQuest(questId) {
     if (!this._newQuests) this._newQuests = [];
     if (!this._newQuests.includes(questId)) this._newQuests.push(questId);
-  };
+  }
   /**
    * Marks a quest as complete.
    * @param questId - The ID of the quest.
    */
-  SQS_Keep.prototype.completeQuest = function (questId) {
+  completeQuest(questId) {
     if (!this.isCompleteQuest(questId)) this._completedQuests.push(questId);
-  };
+  }
   /**
    * Marks a quest as failed.
    * @param questId - The ID of the quest.
    */
-  SQS_Keep.prototype.failQuest = function (questId) {
+  failQuest(questId) {
     if (!this.isFailedQuest(questId)) this._failedQuests.push(questId);
-  };
+  }
   /**
    * Sets the description index for a quest.
    * @param questId - The ID of the quest.
    * @param index - The description index.
    */
-  SQS_Keep.prototype.setDescriptionForQuest = function (questId, index) {
+  setDescriptionForQuest(questId, index) {
     if (!this._questVisibleDescription) {
       this._questVisibleDescription = {};
     }
     this._questVisibleDescription[questId] = index;
-  };
+  }
   /**
    * Adds a visible task to a quest.
    * @param questId - The ID of the quest.
    * @param index - The index of the task.
    */
-  SQS_Keep.prototype.addVisibleTaskForQuest = function (questId, index) {
+  addVisibleTaskForQuest(questId, index) {
     if (!this._questVisibleTasksStatuses) {
       this._questVisibleTasksStatuses = {};
     }
@@ -21072,13 +20577,13 @@ var SQS_Keep = /** @class */ (function () {
     if (!this._questVisibleTasksStatuses[questId].includes(index)) {
       this._questVisibleTasksStatuses[questId].push(index);
     }
-  };
+  }
   /**
    * Marks a task within a quest as complete.
    * @param questId - The ID of the quest.
    * @param index - The index of the task.
    */
-  SQS_Keep.prototype.completeTaskForQuest = function (questId, index) {
+  completeTaskForQuest(questId, index) {
     if (!this._questCompleteTasksStatuses) {
       this._questCompleteTasksStatuses = {};
     }
@@ -21088,13 +20593,13 @@ var SQS_Keep = /** @class */ (function () {
     if (!this._questCompleteTasksStatuses[questId].includes(index)) {
       this._questCompleteTasksStatuses[questId].push(index);
     }
-  };
+  }
   /**
    * Marks a task within a quest as failed.
    * @param questId - The ID of the quest.
    * @param index - The index of the task.
    */
-  SQS_Keep.prototype.failTaskForQuest = function (questId, index) {
+  failTaskForQuest(questId, index) {
     if (!this._questFailedTasksStatuses) {
       this._questFailedTasksStatuses = {};
     }
@@ -21104,33 +20609,33 @@ var SQS_Keep = /** @class */ (function () {
     if (!this._questFailedTasksStatuses[questId].includes(index)) {
       this._questFailedTasksStatuses[questId].push(index);
     }
-  };
+  }
   /**
    * Clears the mark for a new quest.
    * @param questId - The ID of the quest.
    */
-  SQS_Keep.prototype.clearMarkForNewQuest = function (questId) {
+  clearMarkForNewQuest(questId) {
     if (!this._newQuests) return;
-    var index = this._newQuests.indexOf(questId);
+    const index = this._newQuests.indexOf(questId);
     if (index !== -1) this._newQuests.splice(index, 1);
-  };
+  }
   /**
    * Clears all marks for new quests.
    */
-  SQS_Keep.prototype.clearAllMarks = function () {
+  clearAllMarks() {
     this._newQuests = [];
-  };
+  }
   /**
    * Checks if a quest is marked as new.
    * @param questId - The ID of the quest.
    * @returns True if the quest is marked as new, false otherwise.
    */
-  SQS_Keep.prototype.isQuestMarkedAsNew = function (questId) {
+  isQuestMarkedAsNew(questId) {
     if (!this._newQuests) return false;
     return this._newQuests.includes(questId);
-  };
-  return SQS_Keep;
-})();
+  }
+}
+window['SQS_Keep'] = SQS_Keep;
 
 // Generated by CoffeeScript 2.6.1
 // * Главный менеджер квестов
@@ -21331,7 +20836,7 @@ SQSM.showNotify = function () {
       SQSM.RefreshMapQuestsList();
     } catch (error) {
       e = error;
-      KDCore.warning(e);
+      console.warn(e);
     }
   } catch (error) {
     e = error;
@@ -21371,7 +20876,7 @@ SQSM.RefreshMapQuestsList = function () {
     return SQS_QuestAndTaskAutoConditionsManager.RefreshAllQuestsAndTasksAutoConditions();
   } catch (error) {
     e = error;
-    return KDCore.warning(e);
+    return console.warn(e);
   }
 };
 
@@ -21385,7 +20890,7 @@ SQSM.HideMapQuestsList = function () {
     return Sprite_MapQuestsList.Refresh();
   } catch (error) {
     e = error;
-    return KDCore.warning(e);
+    return console.warn(e);
   }
 };
 
@@ -21399,7 +20904,7 @@ SQSM.ShowMapQuestsList = function () {
     return Sprite_MapQuestsList.Refresh();
   } catch (error) {
     e = error;
-    return KDCore.warning(e);
+    return console.warn(e);
   }
 };
 
@@ -21415,7 +20920,7 @@ SQSM.SwitchOpenedClosedStateOfQuestsList = function () {
     return SceneManager._scene.tryOpenOrCloseSQSTaskWindow();
   } catch (error) {
     e = error;
-    return KDCore.warning(e);
+    return console.warn(e);
   }
 };
 
@@ -21431,7 +20936,7 @@ SQSM.OpenMapQuestsList = function () {
     return SceneManager._scene.openSQSTaskWindow();
   } catch (error) {
     e = error;
-    return KDCore.warning(e);
+    return console.warn(e);
   }
 };
 
@@ -21447,7 +20952,7 @@ SQSM.CloseMapQuestsList = function () {
     return SceneManager._scene.closeSQSTaskWindow();
   } catch (error) {
     e = error;
-    return KDCore.warning(e);
+    return console.warn(e);
   }
 };
 
@@ -21519,7 +21024,7 @@ SQSM._checkQuestAutoComplete = function (id) {
     }
   } catch (error) {
     e = error;
-    KDCore.warning(e);
+    console.warn(e);
   }
   return false;
 };
@@ -21559,13 +21064,13 @@ SQSM._checkCompletedCallback = function (id) {
           return KDCore.Utils.startCE(ceId);
         } catch (error) {
           e = error;
-          return KDCore.warning(e);
+          return console.warn(e);
         }
       }, 1);
     }
   } catch (error) {
     e = error;
-    KDCore.warning(e);
+    console.warn(e);
   }
 };
 
@@ -21586,13 +21091,13 @@ SQSM._checkFailedCallback = function (id) {
           return KDCore.Utils.startCE(ceId);
         } catch (error) {
           e = error;
-          return KDCore.warning(e);
+          return console.warn(e);
         }
       }, 1);
     }
   } catch (error) {
     e = error;
-    KDCore.warning(e);
+    console.warn(e);
   }
 };
 
@@ -21637,7 +21142,7 @@ SQSM.ResetQuest = function (id) {
     keep._newQuests.delete(id);
   } catch (error) {
     e = error;
-    KDCore.warning(e);
+    console.warn(e);
   }
 };
 
@@ -21654,7 +21159,7 @@ SQSM.ShowAllTasksForQuest = function (id) {
     SQSM.onAnyQuestProgressChange();
   } catch (error) {
     e = error;
-    KDCore.warning(e);
+    console.warn(e);
   }
 };
 
@@ -21710,7 +21215,7 @@ SQS_Points = class SQS_Points {
           }
         } catch (error) {
           e = error;
-          KDCore.warning(e);
+          console.warn(e);
           return 0;
         }
       } else {
@@ -21783,10 +21288,7 @@ SQS_Points = class SQS_Points {
   }
 };
 
-// Generated by CoffeeScript 2.6.1
-var SQS_Quest;
-
-SQS_Quest = class SQS_Quest {
+class SQS_Quest {
   constructor(questData) {
     this.id = questData.id;
     this.title = questData.title;
@@ -21795,212 +21297,189 @@ SQS_Quest = class SQS_Quest {
     this.priority = questData.priority || 0;
     this.catId = questData.categoryId || '';
     this.difficulty = questData.difficulty || 0;
-    this.tasks = [];
     this.onCompletedCe = questData.onCompleted || 0;
     this.onFailedCe = questData.onFailed || 0;
     this.autoConditions = questData.autoConditions;
+    this.descriptions = questData.descriptions || [];
+    this.tasks = [];
     this.createTasks(questData.tasks);
-    this.createDescriptions(questData.descriptions);
-    return;
+    this.createDescriptions(this.descriptions);
   }
-
-  //{VERSION}
   createTasks(tasksData) {
-    var i, index, len, task;
-    for (index = i = 0, len = tasksData.length; i < len; index = ++i) {
-      task = tasksData[index];
-      if (index < 4) {
-        this.tasks.push(new SQS_Task(this.id, index, task));
-      }
+    for (let index = 0; index < tasksData.length; index++) {
+      const task = tasksData[index];
+      this.tasks.push(new SQS_Task(this.id, index, task));
     }
   }
-
-  //{VERSION}
   createDescriptions(descriptions) {
     this.descriptions = descriptions;
-    if (this.descriptions.length > 4) {
-      this.descriptions = this.descriptions.slice(0, 4);
-    }
   }
-
   isHaveAutoConditions() {
-    return this.autoConditions != null;
+    return !!this.autoConditions;
   }
-
   addCondition() {
-    if (this.isHaveAutoConditions() && this.autoConditions.addConditions != null) {
+    if (this.isHaveAutoConditions() && this.autoConditions.addConditions) {
       return SQS_Condition.FromConfig(this.autoConditions.addConditions);
     } else {
       return null;
     }
   }
-
   failCondition() {
-    if (this.isHaveAutoConditions() && this.autoConditions.failConditions != null) {
+    if (this.isHaveAutoConditions() && this.autoConditions.failConditions) {
       return SQS_Condition.FromConfig(this.autoConditions.failConditions);
     } else {
       return null;
     }
   }
-
   completeCondition() {
-    if (this.isHaveAutoConditions() && this.autoConditions.completeConditions != null) {
+    if (this.isHaveAutoConditions() && this.autoConditions.completeConditions) {
       return SQS_Condition.FromConfig(this.autoConditions.completeConditions);
     } else {
       return null;
     }
   }
-
   isComplete() {
+    /*@ts-ignore*/
     return SQSM.isQuestComplete(this.id);
   }
-
   isFailed() {
+    /*@ts-ignore*/
     return SQSM.isQuestFailed(this.id);
   }
-
   isVisible() {
+    /*@ts-ignore*/
     return SQSM.isQuestVisible(this.id);
   }
-
-  // * Активен в навигаторе (выбран для слежения)
   isActive() {
+    /*@ts-ignore*/
     return SQSM.isQuestActive(this.id);
   }
-
   isTaskComplete(index) {
-    var ref;
-    return (ref = this.getTask(index)) != null ? ref.isComplete() : void 0;
+    var _a;
+    return ((_a = this.getTask(index)) === null || _a === void 0 ? void 0 : _a.isComplete()) || false;
   }
-
   isTaskFailed(index) {
-    var ref;
-    return (ref = this.getTask(index)) != null ? ref.isFailed() : void 0;
+    var _a;
+    return ((_a = this.getTask(index)) === null || _a === void 0 ? void 0 : _a.isFailed()) || false;
   }
-
   getTask(index = 0) {
     return this.tasks[index];
   }
-
   getVisibleTasks() {
-    return this.tasks.filter(function (t) {
-      return t.isVisible();
-    });
+    return this.tasks.filter(t => t.isVisible());
   }
-
   isAllTasksCompleted() {
-    return this.tasks.every(function (t) {
-      return t.isComplete();
-    });
+    return this.tasks.every(t => t.isComplete());
   }
-
   getTasksForPointers() {
-    return this.getVisibleTasks().filter(function (t) {
-      return !t.isComplete();
-    });
+    return this.getVisibleTasks().filter(t => !t.isComplete());
   }
-
   getDescription(index = 0) {
     return this.descriptions[index];
   }
-
   getActiveDescription() {
-    var description, index;
-    index = SQSM.keep().getQuestDescriptionIndex(this.id);
-    description = this.getDescription(index);
-    if (String.any(description)) {
+    /*@ts-ignore*/
+    const index = SQSM.keep().getQuestDescriptionIndex(this.id);
+    const description = this.getDescription(index);
+    if (description) {
       return description;
     } else {
       return 'You should add at least one description to Quest parameters!';
     }
   }
-
   getDifficulty() {
     return this.difficulty;
   }
-};
+}
+window['SQS_Quest'] = SQS_Quest;
 
 /**
  * Manages the automatic conditions for quests and tasks.
  */
-var SQS_QuestAndTaskAutoConditionsManager = /** @class */ (function () {
-  function SQS_QuestAndTaskAutoConditionsManager() {}
+class SQS_QuestAndTaskAutoConditionsManager {
+  constructor() {}
   /**
    * Refreshes all auto conditions for quests and tasks.
    */
-  SQS_QuestAndTaskAutoConditionsManager.RefreshAllQuestsAndTasksAutoConditions = function () {
+  static RefreshAllQuestsAndTasksAutoConditions() {
     //console.log('RefreshAllQuestsAndTasksAutoConditions');
     try {
       this.RefreshAllQuestsAutoConditions();
     } catch (error) {
-      KDCore.warning(error);
+      console.warn(error);
     }
-  };
-  SQS_QuestAndTaskAutoConditionsManager.RefreshAllQuestsAutoConditions = function () {
+  }
+  static RefreshAllQuestsAutoConditions() {
     try {
       this.AutoAddQuests();
       this.AutoCompleteQuests();
       this.AutoFailQuests();
     } catch (error) {
-      KDCore.warning(error);
+      console.warn(error);
     }
-  };
-  SQS_QuestAndTaskAutoConditionsManager.AutoAddQuests = function () {
-    var allQuests = SQSM.quests();
-    var currentQuests = allQuests.filter(function (q) {
-      return SQSM.isQuestVisible(q.id) || SQSM.isQuestComplete(q.id) || SQSM.isQuestFailed(q.id);
-    });
-    var newQuests = allQuests.filter(function (q) {
-      return !currentQuests.includes(q);
-    });
+  }
+  static AutoAddQuests() {
+    /*@ts-ignore*/
+    let allQuests = SQSM.quests();
+    /*@ts-ignore*/
+    let currentQuests = allQuests.filter(
+      q =>
+        SQSM.isQuestVisible(q.id) ||
+        /*@ts-ignore*/
+        SQSM.isQuestComplete(q.id) ||
+        /*@ts-ignore*/
+        SQSM.isQuestFailed(q.id),
+    );
+    let newQuests = allQuests.filter(q => !currentQuests.includes(q));
     if (newQuests.length > 0) {
-      newQuests.forEach(function (q) {
+      newQuests.forEach(q => {
         if (q.isHaveAutoConditions()) {
-          var addCondition = q.addCondition();
+          let addCondition = q.addCondition();
           if (addCondition === null || addCondition === void 0 ? void 0 : addCondition.evaluate()) {
             console.log('Quest ' + q.id + ' is auto added');
+            /*@ts-ignore*/
             SQSM.AddQuest(q.id);
             return;
           }
         }
       });
     }
-  };
-  SQS_QuestAndTaskAutoConditionsManager.AutoCompleteQuests = function () {
-    var quests = SQSM.quests().filter(function (q) {
-      return SQSM.isQuestVisible(q.id) && !SQSM.isQuestComplete(q.id) && !SQSM.isQuestFailed(q.id);
-    });
-    quests.forEach(function (q) {
+  }
+  static AutoCompleteQuests() {
+    /*@ts-ignore*/
+    let quests = SQSM.quests().filter(q => SQSM.isQuestVisible(q.id) && !SQSM.isQuestComplete(q.id) && !SQSM.isQuestFailed(q.id));
+    quests.forEach(q => {
       if (q.isHaveAutoConditions()) {
-        var completeCondition = q.completeCondition();
+        let completeCondition = q.completeCondition();
         if (completeCondition === null || completeCondition === void 0 ? void 0 : completeCondition.evaluate()) {
           console.log('Quest ' + q.id + ' is auto completed');
+          /*@ts-ignore*/
           SQSM.CompleteQuest(q.id);
         }
       }
     });
-  };
-  SQS_QuestAndTaskAutoConditionsManager.AutoFailQuests = function () {
-    var quests = SQSM.quests().filter(function (q) {
-      return SQSM.isQuestVisible(q.id) && !SQSM.isQuestComplete(q.id) && !SQSM.isQuestFailed(q.id);
-    });
-    quests.forEach(function (q) {
+  }
+  static AutoFailQuests() {
+    /*@ts-ignore*/
+    let quests = SQSM.quests().filter(q => SQSM.isQuestVisible(q.id) && !SQSM.isQuestComplete(q.id) && !SQSM.isQuestFailed(q.id));
+    quests.forEach(q => {
       if (q.isHaveAutoConditions()) {
-        var failCondition = q.failCondition();
+        let failCondition = q.failCondition();
         if (failCondition === null || failCondition === void 0 ? void 0 : failCondition.evaluate()) {
           console.log('Quest ' + q.id + ' is auto failed');
+          /*@ts-ignore*/
           SQSM.FailQuest(q.id);
         }
       }
     });
-  };
-  return SQS_QuestAndTaskAutoConditionsManager;
-})();
+  }
+}
+window['SQS_QuestAndTaskAutoConditionsManager'] = SQS_QuestAndTaskAutoConditionsManager;
 
 /**
  * Represents a task in the Simple Quest System.
  */
-var SQS_Task = /** @class */ (function () {
+class SQS_Task {
   /**
    * Constructs a new instance of the SQS_Task class.
    *
@@ -22008,7 +21487,7 @@ var SQS_Task = /** @class */ (function () {
    * @param {number} index - The index of the task.
    * @param {string} text - The text of the task.
    */
-  function SQS_Task(qid, index, text) {
+  constructor(qid, index, text) {
     this.qid = qid;
     this.index = index;
     this.text = text;
@@ -22017,25 +21496,28 @@ var SQS_Task = /** @class */ (function () {
    * Checks if the task is complete.
    * @returns {boolean} True if the task is complete, false otherwise.
    */
-  SQS_Task.prototype.isComplete = function () {
+  isComplete() {
+    /*@ts-ignore*/
     return SQSM.keep().isTaskComplete(this.qid, this.index);
-  };
+  }
   /**
    * Checks if the task has failed.
    * @returns {boolean} True if the task has failed, false otherwise.
    */
-  SQS_Task.prototype.isFailed = function () {
+  isFailed() {
+    /*@ts-ignore*/
     return SQSM.keep().isTaskFailed(this.qid, this.index);
-  };
+  }
   /**
    * Checks if the task is visible.
    * @returns A boolean indicating whether the task is visible.
    */
-  SQS_Task.prototype.isVisible = function () {
+  isVisible() {
+    /*@ts-ignore*/
     return SQSM.keep().isTaskVisible(this.qid, this.index);
-  };
-  return SQS_Task;
-})();
+  }
+}
+window['SQS_Task'] = SQS_Task;
 
 // Generated by CoffeeScript 2.6.1
 //╒═════════════════════════════════════════════════════════════════════════╛
@@ -22057,346 +21539,6 @@ var SQS_Task = /** @class */ (function () {
 })();
 
 // ■ END Window_MenuCommand.coffee
-//---------------------------------------------------------------------------
-
-// Generated by CoffeeScript 2.6.1
-var Window_SQSQuestsList;
-
-Window_SQSQuestsList = class Window_SQSQuestsList extends Window_Selectable {
-  constructor(rect, textLineSettings) {
-    super(rect);
-    this._group = 0;
-    this._category = ''; // * All
-    this._data = [];
-    this._prepareParams();
-    this.setBackgroundType(2);
-    this._createExtraCursor();
-    return;
-  }
-
-  setGroup(_group) {
-    this._group = _group;
-    this.refresh();
-    if (this.maxItems() === 0) {
-      return this.select(-1);
-    } else {
-      return this.select(0);
-    }
-  }
-
-  setCategory(_category1) {
-    this._category = _category1;
-    return this.setGroup(this._group);
-  }
-
-  maxItems() {
-    if (this._data != null) {
-      return this._data.length;
-    } else {
-      return 0;
-    }
-  }
-
-  rowSpacing() {
-    return 0;
-  }
-
-  select(index) {
-    super.select(index);
-    this._checkMarkViewedForClear(index);
-    return this.refresh();
-  }
-
-  quest() {
-    return this.questAt(this.index());
-  }
-
-  questAt(index) {
-    if (this._data != null && index >= 0) {
-      return this._data[index];
-    } else {
-      return null;
-    }
-  }
-
-  isCurrentItemEnabled() {
-    return this.isEnabled(this.quest());
-  }
-
-  drawItemBackground(index) {} // * nothing
-
-  // * Если мы в текущих заданиях, то используется для проверки можно ли задать квест активным
-  // * т.е. если у него путевые точки
-  isEnabled(quest) {
-    if (quest == null) {
-      return false;
-    }
-    if (this._group === 0) {
-      return SQSM.isQuestHavePoints(quest.id);
-    } else {
-      return false;
-    }
-  }
-
-  makeItemList() {
-    var _category;
-    _category = this._category;
-    //_category = "" if _category == "all"
-    if (this._group === 0) {
-      this._data = SQSM.playerCurrentQuestsForCategory(_category);
-    } else if (this._group === 1) {
-      this._data = SQSM.playerCompletedQuestsForCategory(_category);
-    } else if (this._group === 2) {
-      this._data = SQSM.playerFailedQuestsForCategory(_category);
-    } else {
-      this._data = [];
-    }
-    this._applySortings();
-  }
-
-  drawItem(index) {
-    var quest, rect;
-    quest = this.questAt(index);
-    if (quest == null) {
-      return;
-    }
-    if (this.index() !== index) {
-      this.contents.paintOpacity = 120;
-    } else {
-      this.changePaintOpacity(true); //@isEnabled(quest)
-    }
-    rect = this.itemRect(index);
-    this.drawTextEx(quest.titleForList, rect.x, rect.y, rect.width);
-    if (SQSM.isQuestActive(quest.id)) {
-      this.drawQuestActiveSymbol(quest, rect);
-    }
-    if (SQSM.isQuestHaveNewMark(quest.id) && this._group === 0) {
-      this.drawQuestNewMark(rect);
-    }
-  }
-
-  drawQuestActiveSymbol(quest, rect) {
-    var actSym, arrow, bc, dx, dy, index;
-    dx = rect.x + this._activeQuestMargins.x;
-    dy = rect.y + this._activeQuestMargins.y;
-    actSym = new Sprite(this._curActBitmap);
-    actSym.x = dx;
-    actSym.y = dy;
-    this.addChild(actSym);
-    this._activeSymbols.push(actSym);
-    index = SQSM.getQuestActiveIndex(quest.id);
-    if (index < 0) {
-      return;
-    }
-    arrow = SQSM.getQuestsArrows()[index];
-    bc = [...arrow.color.ARR];
-    bc[3] = 150;
-    actSym.setBlendColor(bc);
-  }
-
-  drawQuestNewMark(rect) {} // * EMPTY, PRO only
-
-  refresh() {
-    this._clearActiveFlags();
-    this._clearNewMarks();
-    this.makeItemList();
-    return super.refresh();
-  }
-
-  // * Вызывается, когда сцена закрывается (из сцены)
-  clearQuestMarks() {
-    var i, len, q, ref;
-    if (this._questsForClearMarks == null) {
-      return;
-    }
-    ref = this._questsForClearMarks;
-    for (i = 0, len = ref.length; i < len; i++) {
-      q = ref[i];
-      SQSM.clearQuestNewMark(q);
-    }
-  }
-
-  resetFontSettings() {
-    super.resetFontSettings();
-    if (this.textLineSettings == null) {
-      return;
-    }
-    if (String.any(this.textLineSettings.fontFace)) {
-      this.contents.fontFace = this.textLineSettings.fontFace;
-    }
-    if (this.textLineSettings.fontSize > 0) {
-      this.contents.fontSize = this.textLineSettings.fontSize;
-    }
-  }
-
-  _refreshCursor() {} // * EMPTY
-
-  _updateCursor() {
-    super._updateCursor();
-    this._curSpr.visible = this._cursorSprite.visible;
-    if (this._curSpr.visible === true) {
-      this._curSpr.visible = this.maxItems() > 0;
-    }
-    this._curSpr.y = this._cursorSprite.y + this._cursorMargins.y;
-    this._curSpr.x = this._cursorSprite.x + this._cursorMargins.x;
-  }
-};
-
-(function () {
-  //╒═════════════════════════════════════════════════════════════════════════╛
-  // ■ Window_SQSQuestsList.coffee
-  //╒═════════════════════════════════════════════════════════════════════════╛
-  //---------------------------------------------------------------------------
-  var _;
-  //@[DEFINES]
-  _ = Window_SQSQuestsList.prototype;
-  _._prepareParams = function () {
-    var _activeQuestMargins, _cursorMargins, _newMarkMargins;
-    _cursorMargins = PKD_SQS.PP.getQuestListCursorMargins();
-    _activeQuestMargins = PKD_SQS.PP.getQuestListActiveIconMargins();
-    _newMarkMargins = PKD_SQS.PP.getQuestListNewMarkMargins();
-    this._cursorMargins = {
-      x: eval(_cursorMargins.x),
-      y: eval(_cursorMargins.y),
-    };
-    this._activeQuestMargins = {
-      x: eval(_activeQuestMargins.x),
-      y: eval(_activeQuestMargins.y),
-    };
-    this._newMarkMargins = {
-      x: eval(_newMarkMargins.x),
-      y: eval(_newMarkMargins.y),
-    };
-  };
-  _._clearActiveFlags = function () {
-    var i, item, len, ref;
-    if (this._activeSymbols == null) {
-      this._activeSymbols = [];
-    }
-    ref = this._activeSymbols;
-    for (i = 0, len = ref.length; i < len; i++) {
-      item = ref[i];
-      item.visible = false;
-      this.removeChild(item);
-    }
-    this._activeSymbols = [];
-  };
-  _._clearNewMarks = function () {
-    var i, item, len, ref;
-    if (this._newMarks == null) {
-      this._newMarks = [];
-    }
-    ref = this._newMarks;
-    for (i = 0, len = ref.length; i < len; i++) {
-      item = ref[i];
-      item.visible = false;
-      this.removeChild(item);
-    }
-    this._newMarks = [];
-  };
-  _.setSettings = function (textLineSettings1) {
-    var h;
-    this.textLineSettings = textLineSettings1;
-    this.resetFontSettings();
-    h = this.textLineSettings.h;
-    this.lineHeight = function () {
-      return h;
-    };
-  };
-  _._createExtraCursor = function () {
-    if (KDCore.isMV()) {
-      this._cursorSprite = this._windowCursorSprite;
-    }
-    this._curActBitmap = ImageManager.loadPKDSQS('Quest_Active');
-    this._curMarkNewBitmap = ImageManager.loadPKDSQS('Quest_New');
-    this._curMarkNewBitmap.addLoadListener(() => {
-      var e;
-      try {
-        return this.refresh();
-      } catch (error) {
-        e = error;
-        return KDCore.warning(e);
-      }
-    });
-    this._curSpr = new Sprite(ImageManager.loadPKDSQS('Quest_Selected'));
-    this.addChild(this._curSpr);
-  };
-  // * Отмечаем, что данный квест был просмотрен, т.е. надо снять с него статус "новый"
-  _._checkMarkViewedForClear = function (index) {
-    var quest;
-    if (index < 0) {
-      return;
-    }
-    quest = this.questAt(index);
-    if (quest == null) {
-      return;
-    }
-    if (this._questsForClearMarks == null) {
-      this._questsForClearMarks = [];
-    }
-    this._questsForClearMarks.push(quest.id);
-  };
-  _._applySortings = function () {
-    if (PKD_SQS.PP.isSortByNew()) {
-      this._sortByNewQuests();
-    }
-    if (PKD_SQS.PP.isSortByActive()) {
-      this._sortByActiveFirst();
-    }
-  };
-  _._sortByNewQuests = function () {
-    var i, j, k, lastAddedQuests, len, len1, len2, newDataPre, q, ref, ref1;
-    // * Сортировка (новые сперва вверху)
-    lastAddedQuests = [];
-    newDataPre = [];
-    ref = this._data;
-    for (i = 0, len = ref.length; i < len; i++) {
-      q = ref[i];
-      if (SQSM.isQuestHaveNewMark(q.id)) {
-        lastAddedQuests.push(q);
-      }
-    }
-    for (j = 0, len1 = lastAddedQuests.length; j < len1; j++) {
-      q = lastAddedQuests[j];
-      newDataPre.push(q);
-    }
-    ref1 = this._data;
-    for (k = 0, len2 = ref1.length; k < len2; k++) {
-      q = ref1[k];
-      if (!newDataPre.contains(q)) {
-        newDataPre.push(q);
-      }
-    }
-    this._data = newDataPre;
-  };
-  _._sortByActiveFirst = function () {
-    var activateQuests, i, j, k, len, len1, len2, newData, q, ref, ref1;
-    // * Сортировка (aктивные вверху)
-    activateQuests = [];
-    newData = [];
-    ref = this._data;
-    for (i = 0, len = ref.length; i < len; i++) {
-      q = ref[i];
-      if (SQSM.isQuestActive(q.id)) {
-        activateQuests.push(q);
-      }
-    }
-    for (j = 0, len1 = activateQuests.length; j < len1; j++) {
-      q = activateQuests[j];
-      newData.push(q);
-    }
-    ref1 = this._data;
-    for (k = 0, len2 = ref1.length; k < len2; k++) {
-      q = ref1[k];
-      if (!newData.contains(q)) {
-        newData.push(q);
-      }
-    }
-    this._data = newData;
-  };
-})();
-
-// ■ END Window_SQSQuestsList.coffee
 //---------------------------------------------------------------------------
 
 // Generated by CoffeeScript 2.6.1
@@ -22476,7 +21618,7 @@ Window_SQSTasksWindowList = class Window_SQSTasksWindowList extends Window_Selec
       this.drawTextEx(text, rect.x, rect.y, this.width);
     } catch (error) {
       e = error;
-      KDCore.warning(e);
+      console.warn(e);
     }
     this.resetTextColor();
   }
@@ -22517,7 +21659,7 @@ Window_SQSTasksWindowList = class Window_SQSTasksWindowList extends Window_Selec
       return tasks.last().text;
     } catch (error) {
       e = error;
-      KDCore.warning(e);
+      console.warn(e);
       return '???';
     }
   }
@@ -22667,29 +21809,30 @@ Window_SQSTextBase = class Window_SQSTextBase extends Window_Base {
   //@[DEFINES]
   _ = Scene_SQSJournal.prototype;
   _._clearQuestInfo = function () {
-    var ref, ref1;
+    var ref, ref1, ref2, ref3;
     this.qiTitleImage.visible = false;
-    this.qiTitleText.setText('');
-    this.qiDesc.setText('');
+    this.qiTitleText.draw('');
+    if ((ref = this.qiDesc) != null) {
+      ref.setText('');
+    }
     this.qiTasksHeader.visible = false;
-    if (this.qiTasks != null) {
-      this.removeChild(this.qiTasks);
-      this._createQuestTasks(); // * Пересоздаём холдер
+    if ((ref1 = this._qiTasksList) != null) {
+      ref1.setItems([]);
     }
-    if ((ref = this._activeHelp) != null) {
-      ref.visible = false;
+    if ((ref2 = this._activeHelp) != null) {
+      ref2.visible = false;
     }
-    if ((ref1 = this._difficultyLevel) != null) {
-      ref1.visible = false;
+    if ((ref3 = this._difficultyLevel) != null) {
+      ref3.visible = false;
     }
   };
   _._showActiveQuestData = function () {
-    var descText, descrpt, e, e2;
+    var descText, descrpt, e, e2, ref;
     if (String.any(this.activeQuestData.titleImage)) {
       this.qiTitleImage.visible = true;
-      this.qiTitleImage.bitmap = ImageManager.loadPKDSQS(this.activeQuestData.titleImage);
+      this.qiTitleImage.draw(this.activeQuestData.titleImage);
     }
-    this.qiTitleText.setText(this.activeQuestData.title);
+    this.qiTitleText.draw(this.activeQuestData.title);
     descrpt = this.activeQuestData.getActiveDescription();
     try {
       descText = JsonEx.parse(descrpt);
@@ -22702,103 +21845,77 @@ Window_SQSTextBase = class Window_SQSTextBase extends Window_Base {
         descText = 'Something wrong with Description text, maybe you lost quotes';
       }
     }
-    this.qiDesc.setText(descText);
+    if ((ref = this.qiDesc) != null) {
+      ref.setText(descText);
+    }
     this.qiTasksHeader.visible = true;
     this._showActiveTasks();
     this._showQuestDifficulty();
     this._refreshActiveHelp();
   };
-  //?VERSION
-  _._showQuestDifficulty = function () {}; // * EMPTY
-  _._showActiveTasks = function () {
-    var i, index, len, params, posArray, task, tasks;
-    params = PKD_SQS.PP.getQuestTasksSettings();
-    posArray = params.positions.map(function (p) {
-      return [eval(p.x), eval(p.y)];
-    });
-    tasks = this.activeQuestData.getVisibleTasks();
-    //TODO: Сортировка по выполненным? Или просто по добавленным
-    tasks.reverse();
-    for (index = i = 0, len = tasks.length; i < len; index = ++i) {
-      task = tasks[index];
-      if (index < posArray.length) {
-        this._showNextTask(task, posArray[index]);
-      }
+  _._showQuestDifficulty = function () {
+    var diffLevel;
+    if (this.activeQuestData == null) {
+      return;
+    }
+    if (this._difficultyLevel == null) {
+      return;
+    }
+    diffLevel = this.activeQuestData.difficulty;
+    if (diffLevel >= 1) {
+      this._difficultyLevel.visible = true;
+      this._difficultyLevel.draw('questDiff_' + diffLevel);
+    } else {
+      this._difficultyLevel.visible = false;
     }
   };
-  _._showNextTask = function (task, pos) {
-    var taskItem;
-    taskItem = new Sprite_SQSTaskLine(task);
-    taskItem.move(pos[0], pos[1]);
-    return this.qiTasks.addChild(taskItem);
+  _._showActiveTasks = function () {
+    var e, ref, tasks, tasksSprites;
+    try {
+      tasks = this.activeQuestData.getVisibleTasks();
+      tasks.reverse();
+      tasksSprites = tasks.map(function (t) {
+        return new Sprite_SQSTaskListItem(t);
+      });
+      if ((ref = this._qiTasksList) != null) {
+        ref.setItems(tasksSprites);
+      }
+    } catch (error) {
+      e = error;
+      console.warn(e);
+    }
   };
   _._createQuestMain = function () {
-    this._createQuestTitle();
     this._createQuestDescription();
-    this._createQuestTasksHeader();
-    this._createQuestTasks();
-    this._createDifficultyLevel();
     return this._clearQuestInfo();
   };
-  _._createQuestTitle = function () {
-    var imgX, imgY, params, textSize, x, y;
-    params = PKD_SQS.PP.getQuestHeaderSettings();
-    this.qiTitleImage = new Sprite();
-    imgX = eval(params.position2.x);
-    imgY = eval(params.position2.y);
-    this.qiTitleImage.move(imgX, imgY);
-    this.addChild(this.qiTitleImage);
-    textSize = params.textLine.lineSize;
-    this.qiTitleText = new Sprite_SQSTextLine('', {
-      w: eval(textSize.w),
-      h: eval(textSize.h),
-      fontFace: params.textLine.face,
-      fontSize: params.textLine.size,
-    });
-    x = eval(params.position.x);
-    y = eval(params.position.y);
-    this.qiTitleText.move(x, y);
-    this.addChild(this.qiTitleText);
-  };
   _._createQuestDescription = function () {
-    var params, textSize, x, y;
-    params = PKD_SQS.PP.getQuestDescSettings();
-    textSize = params.textLine.lineSize;
+    var fontFace, fontSize, height, width;
+    if (this._questDescriptionContainer == null) {
+      return;
+    }
+    width = this._questDescriptionContainer.realWidth();
+    height = this._questDescriptionContainer.realHeight();
+    fontFace = this._questDescriptionContainer.uiConstant('fontFace');
+    fontSize = this._questDescriptionContainer.uiConstant('fontSize');
     this.qiDesc = new Sprite_SQSTextLine('', {
-      w: eval(textSize.w),
-      h: eval(textSize.h),
-      fontFace: params.textLine.face,
-      fontSize: params.textLine.size,
+      w: width,
+      h: height,
+      fontFace: fontFace,
+      fontSize: fontSize,
     });
-    x = eval(params.position.x);
-    y = eval(params.position.y);
-    this.qiDesc.move(x, y);
-    return this.addChild(this.qiDesc);
-  };
-  _._createQuestTasksHeader = function () {
-    var params, x, y;
-    params = PKD_SQS.PP.getQuestTasksHeaderSettings();
-    this.qiTasksHeader = new Sprite(ImageManager.loadPKDSQS('tasksHeader'));
-    x = eval(params.x);
-    y = eval(params.y);
-    this.qiTasksHeader.move(x, y);
-    this.addChild(this.qiTasksHeader);
-  };
-  _._createQuestTasks = function () {
-    this.qiTasks = new Sprite(); // * holder
-    this.addChild(this.qiTasks);
-  };
-  _._createDifficultyLevel = function () {
-    var params, x, y;
-    this._difficultyLevel = new Sprite();
-    params = PKD_SQS.PP.getDifficultyLevelSettings();
-    x = eval(params.x);
-    y = eval(params.y);
-    this._difficultyLevel.move(x, y);
-    this.addChild(this._difficultyLevel);
+    this._questDescriptionContainer.addChild(this.qiDesc);
   };
   _._refreshActiveHelp = function () {
-    return (this._activeHelp.visible = this.ql.isCurrentItemEnabled());
+    var ref, ref1;
+    if (this._questsList == null) {
+      return;
+    }
+    if (this._questsList.selectedItem() != null) {
+      return (ref = this._activeHelp) != null ? (ref.visible = this._questsList.selectedItem().isEnabled()) : void 0;
+    } else {
+      return (ref1 = this._activeHelp) != null ? (ref1.visible = false) : void 0;
+    }
   };
 })();
 
@@ -22815,86 +21932,74 @@ Window_SQSTextBase = class Window_SQSTextBase extends Window_Base {
   //@[DEFINES]
   _ = Scene_SQSJournal.prototype;
   _._createCategories = function () {
-    var paramsA, paramsB, paramsC, x, y;
-    this.groupA = new KDCore.ButtonM('GroupA', true, 'pSQSystem');
-    this.groupB = new KDCore.ButtonM('GroupB', true, 'pSQSystem');
-    this.addChild(this.groupA);
-    this.addChild(this.groupB);
-    this.groupA.addClickHandler(() => {
-      return this._onGroupClick(0);
-    });
-    this.groupB.addClickHandler(() => {
-      return this._onGroupClick(1);
-    });
-    // * По умолчанию включена (выбрана)
-    this.groupA.disable();
-    paramsA = PKD_SQS.PP.getGroupButtonA();
-    x = eval(paramsA.x);
-    y = eval(paramsA.y);
-    this.groupA.move(x, y);
-    paramsB = PKD_SQS.PP.getGroupButtonB();
-    x = eval(paramsB.x);
-    y = eval(paramsB.y);
-    this.groupB.move(x, y);
-    if (PKD_SQS.PP.isHaveFailedQuests()) {
-      this.groupC = new KDCore.ButtonM('GroupC', true, 'pSQSystem');
-      this.addChild(this.groupC);
-      this.groupC.addClickHandler(() => {
+    var ref, ref1, ref2;
+    if ((ref = this.groupA) != null) {
+      ref.addClickHandler(() => {
+        return this._onGroupClick(0);
+      });
+    }
+    if ((ref1 = this.groupB) != null) {
+      ref1.addClickHandler(() => {
+        return this._onGroupClick(1);
+      });
+    }
+    if ((ref2 = this.groupC) != null) {
+      ref2.addClickHandler(() => {
         return this._onGroupClick(2);
       });
-      paramsC = PKD_SQS.PP.getGroupButtonC();
-      x = eval(paramsC.x);
-      y = eval(paramsC.y);
-      this.groupC.move(x, y);
     }
   };
   _._onGroupClick = function (index) {
+    var ref, ref1, ref2, ref3, ref4, ref5, ref6, ref7, ref8;
     if (index === 0) {
-      this.groupA.disable();
-      this.groupB.enable();
-      if (this.groupC != null) {
-        this.groupC.enable();
+      if ((ref = this.groupA) != null) {
+        ref.disable();
+      }
+      if ((ref1 = this.groupB) != null) {
+        ref1.enable();
+      }
+      if ((ref2 = this.groupC) != null) {
+        ref2.enable();
       }
     } else if (index === 1) {
-      this.groupB.disable();
-      this.groupA.enable();
-      if (this.groupC != null) {
-        this.groupC.enable();
+      if ((ref3 = this.groupB) != null) {
+        ref3.disable();
+      }
+      if ((ref4 = this.groupA) != null) {
+        ref4.enable();
+      }
+      if ((ref5 = this.groupC) != null) {
+        ref5.enable();
       }
     } else if (index === 2) {
-      this.groupC.disable();
-      this.groupA.enable();
-      this.groupB.enable();
+      if ((ref6 = this.groupC) != null) {
+        ref6.disable();
+      }
+      if ((ref7 = this.groupA) != null) {
+        ref7.enable();
+      }
+      if ((ref8 = this.groupB) != null) {
+        ref8.enable();
+      }
     }
-    this.ql.setGroup(index);
+    this._group = index;
+    this._refrshQuestsList();
     this._refreshEmptyJournalHolder();
   };
   _._refreshEmptyJournalHolder = function () {
-    if (this.ql.maxItems() <= 0) {
+    if (this._questsList.maxItems() <= 0) {
       return this._showEmptyJournalHolder();
     } else {
       return this._hideEmptyJournalHolder();
     }
   };
   _._showEmptyJournalHolder = function () {
-    var image;
-    if (this.emptyJournalHolder == null) {
-      this.emptyJournalHolder = new Sprite();
-      image = ImageManager.loadPKDSQS('noQuestsHolder');
-      image.addLoadListener(() => {
-        this.emptyJournalHolder.x = Graphics.width / 2 - image.width / 2;
-        return (this.emptyJournalHolder.y = Graphics.height / 2 - image.height / 2);
-      });
-      this.emptyJournalHolder.bitmap = image;
-      this.addChild(this.emptyJournalHolder);
-    }
-    return (this.emptyJournalHolder.visible = true);
+    var ref;
+    return (ref = this._noAvailableQuestsSprite) != null ? (ref.visible = true) : void 0;
   };
   _._hideEmptyJournalHolder = function () {
-    if (this.emptyJournalHolder == null) {
-      return;
-    }
-    return (this.emptyJournalHolder.visible = false);
+    var ref;
+    return (ref = this._noAvailableQuestsSprite) != null ? (ref.visible = false) : void 0;
   };
 })();
 
@@ -22957,23 +22062,9 @@ Window_SQSTextBase = class Window_SQSTextBase extends Window_Base {
     if (btn != null) {
       btn.disable();
     }
-    this.ql.setCategory(catId);
-  };
-  _._showQuestDifficulty = function () {
-    var diffLevel;
-    if (this.activeQuestData == null) {
-      return;
-    }
-    if (this._difficultyLevel == null) {
-      return;
-    }
-    diffLevel = this.activeQuestData.difficulty;
-    if (diffLevel >= 1) {
-      this._difficultyLevel.visible = true;
-      this._difficultyLevel.bitmap = ImageManager.loadPKDSQS('questDiff_' + diffLevel);
-    } else {
-      this._difficultyLevel.visible = false;
-    }
+    this._category = catId;
+    this._refrshQuestsList();
+    this._refreshEmptyJournalHolder();
   };
   _._updateCategoriesNavigation = function () {
     if (KDGamepad.isKey(PKD_SQS.PP.nextCategoryGamepadKey())) {
@@ -22993,7 +22084,7 @@ Window_SQSTextBase = class Window_SQSTextBase extends Window_Base {
   _._onSwitchPrevCategory = function () {
     var button, currentCatIndex, currentCategoryName, e, newIndex;
     try {
-      currentCategoryName = this.ql._category;
+      currentCategoryName = this._category;
       button = this._categoriesButtons.find(function (b) {
         return b.catId === currentCategoryName;
       });
@@ -23007,13 +22098,13 @@ Window_SQSTextBase = class Window_SQSTextBase extends Window_Base {
       }
     } catch (error) {
       e = error;
-      KDCore.warning(e);
+      console.warn(e);
     }
   };
   _._onSwitchNextCategory = function () {
     var button, currentCatIndex, currentCategoryName, e, newIndex;
     try {
-      currentCategoryName = this.ql._category;
+      currentCategoryName = this._category;
       button = this._categoriesButtons.find(function (b) {
         return b.catId === currentCategoryName;
       });
@@ -23027,7 +22118,7 @@ Window_SQSTextBase = class Window_SQSTextBase extends Window_Base {
       }
     } catch (error) {
       e = error;
-      KDCore.warning(e);
+      console.warn(e);
     }
   };
 })();
@@ -23035,97 +22126,4 @@ Window_SQSTextBase = class Window_SQSTextBase extends Window_Base {
 // ■ END Scene_SQSJournal.coffee
 //---------------------------------------------------------------------------
 
-// Generated by CoffeeScript 2.6.1
-//╒═════════════════════════════════════════════════════════════════════════╛
-// ■ SQS_Keep.coffee
-//╒═════════════════════════════════════════════════════════════════════════╛
-//---------------------------------------------------------------------------
-(function () {
-  var _;
-  //@[DEFINES]
-  _ = SQS_Keep.prototype;
-  _.setActiveQuest = function (questId) {
-    var i, index, isAdded, len, q, ref;
-    if (this.isActiveQuest(questId)) {
-      return;
-    }
-    isAdded = false;
-    ref = this._activeQuests;
-    for (index = i = 0, len = ref.length; i < len; index = ++i) {
-      q = ref[index];
-      if (q == null) {
-        this._activeQuests[index] = questId;
-        isAdded = true;
-        break;
-      }
-    }
-    if (!isAdded) {
-      this._activeQuests.push(questId);
-    }
-  };
-})();
-
-// ■ END SQS_Keep.coffee
-//---------------------------------------------------------------------------
-
-// Generated by CoffeeScript 2.6.1
-//╒═════════════════════════════════════════════════════════════════════════╛
-// ■ SQS_Quest.coffee
-//╒═════════════════════════════════════════════════════════════════════════╛
-//---------------------------------------------------------------------------
-(function () {
-  var _;
-  //@[DEFINES]
-  _ = SQS_Quest.prototype;
-  _.createTasks = function (tasksData) {
-    var i, index, len, task;
-    for (index = i = 0, len = tasksData.length; i < len; index = ++i) {
-      task = tasksData[index];
-      this.tasks.push(new SQS_Task(this.id, index, task));
-    }
-  };
-  _.createDescriptions = function (descriptions) {
-    // * no limits
-    this.descriptions = descriptions;
-  };
-})();
-
-// ■ END SQS_Quest.coffee
-//---------------------------------------------------------------------------
-
-// Generated by CoffeeScript 2.6.1
-//╒═════════════════════════════════════════════════════════════════════════╛
-// ■ Window_SQSQuestsList.coffee
-//╒═════════════════════════════════════════════════════════════════════════╛
-//---------------------------------------------------------------------------
-(function () {
-  var _;
-  //@[DEFINES]
-  _ = Window_SQSQuestsList.prototype;
-  _.drawQuestNewMark = function (rect) {
-    /*dx = rect.x + @_newMarkMargins.x
-    dy = rect.y + @_newMarkMargins.y
-    markSym = new Sprite(@_curMarkNewBitmap)
-    markSym.x = dx
-    markSym.y = dy
-    @addChild markSym
-    @_newMarks.push(markSym)*/
-    var dx, dy, e;
-    if (this._newMarkMargins == null) {
-      return;
-    }
-    try {
-      dx = rect.x + this._newMarkMargins.x;
-      dy = rect.y + this._newMarkMargins.y;
-      this.contents.drawOnMe(this._curMarkNewBitmap, dx, dy);
-    } catch (error) {
-      e = error;
-      KDCore.warning(e);
-    }
-  };
-})();
-
-// ■ END Window_SQSQuestsList.coffee
-//---------------------------------------------------------------------------
-
-//Plugin PKD_SimpleQuestSystem builded by PKD PluginBuilder 2.2.2 - 07.09.2024
+//Plugin PKD_SimpleQuestSystem builded by PKD PluginBuilder 2.2.2 - 27.11.2024
