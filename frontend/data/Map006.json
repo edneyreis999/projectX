@@ -364,6 +364,7 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "People3", "direction": 2, "pattern": 1, "characterIndex": 4 },
           "list": [
+            { "code": 108, "indent": 0, "parameters": ["XA:Tordan"] },
             { "code": 101, "indent": 0, "parameters": ["People3", 4, 0, 2, "Tordan"] },
             { "code": 401, "indent": 0, "parameters": ["Eu tentei confiar em você, Thorin. Tentei lhe dar espaço,"] },
             { "code": 401, "indent": 0, "parameters": ["mas você nunca muda."] },
@@ -438,6 +439,7 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "People3", "direction": 2, "pattern": 1, "characterIndex": 4 },
           "list": [
+            { "code": 108, "indent": 0, "parameters": ["XA:Tordan"] },
             { "code": 111, "indent": 0, "parameters": [1, 9, 0, 2, 0] },
             { "code": 355, "indent": 1, "parameters": ["SQSM.CompleteTaskForQuest(\"legadoFamilia\", 2);"] },
             { "code": 655, "indent": 1, "parameters": ["SQSM.CompleteTaskForQuest(\"legadoFamilia\", 3);"] },
@@ -507,6 +509,7 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "People3", "direction": 2, "pattern": 1, "characterIndex": 4 },
           "list": [
+            { "code": 108, "indent": 0, "parameters": ["XA:Tordan"] },
             { "code": 101, "indent": 0, "parameters": ["People3", 4, 0, 2, "Tordan"] },
             { "code": 401, "indent": 0, "parameters": ["Vá dormir, Thorin!"] },
             { "code": 0, "indent": 0, "parameters": [] }
