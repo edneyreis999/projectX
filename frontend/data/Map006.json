@@ -202,53 +202,7 @@
       "y": 7
     },
     null,
-    {
-      "id": 5,
-      "name": "Dormir",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
-          "list": [
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [-1, { "list": [{ "code": 3, "indent": null }, { "code": 4, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 3, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 4, "indent": null }] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        }
-      ],
-      "x": 2,
-      "y": 5
-    },
+    null,
     null,
     {
       "id": 7,
@@ -1087,10 +1041,7 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Nature", "direction": 4, "pattern": 0, "characterIndex": 3 },
           "list": [
-            { "code": 101, "indent": 0, "parameters": ["Nature", 3, 0, 2, "Sáparo Boca-de-Corneta"] },
-            { "code": 401, "indent": 0, "parameters": ["Tá querendo um biscoito, Thorin?! Anda logo,"] },
-            { "code": 401, "indent": 0, "parameters": ["o tempo tá passando e o jogo acabando! Mete o"] },
-            { "code": 401, "indent": 0, "parameters": ["pé, camarada!"] },
+            { "code": 108, "indent": 0, "parameters": ["XA:Saparo"] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -1098,45 +1049,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": false
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 10,
-            "variableValid": true,
-            "variableValue": 2
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Nature", "direction": 2, "pattern": 0, "characterIndex": 3 },
-          "list": [
-            { "code": 101, "indent": 0, "parameters": ["Nature", 3, 0, 2, "Sáparo Boca-de-Corneta"] },
-            { "code": 401, "indent": 0, "parameters": ["Tá de castigo, tá de castigo! HHAHAHHAHA!"] },
-            { "code": 401, "indent": 0, "parameters": ["Desiste, Thorin. É melhor obedecer o seu pai"] },
-            { "code": 401, "indent": 0, "parameters": ["dessa vez!"] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
+          "stepAnime": true,
           "through": false,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         }
       ],
       "x": 5,
@@ -1177,7 +1093,7 @@
             { "code": 355, "indent": 1, "parameters": ["SQSM.CompleteTaskForQuest(\"legadoFamilia\", 5);"] },
             { "code": 655, "indent": 1, "parameters": ["SQSM.CompleteQuest(\"legadoFamilia\");"] },
             { "code": 655, "indent": 1, "parameters": ["SQSM.AddQuest(\"horaDeCrescer\");"] },
-            { "code": 655, "indent": 1, "parameters": ["SQSM.SetActiveQuest(\"horaDeCrescer\"); Activate"] },
+            { "code": 655, "indent": 1, "parameters": ["SQSM.AddQuest(\"horaDeCrescer\");"] },
             { "code": 655, "indent": 1, "parameters": ["SQSM.ShowDescriptionForQuest(\"horaDeCrescer\");"] },
             { "code": 655, "indent": 1, "parameters": ["SQSM.ShowTaskForQuest(\"horaDeCrescer\", 1);"] },
             { "code": 121, "indent": 1, "parameters": [10, 10, 1] },
