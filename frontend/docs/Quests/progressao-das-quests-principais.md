@@ -19,79 +19,50 @@ Descrições (Narrativa Progressiva)
 
 ## 2. A Semifinal
 
-A primeira missão jogável com Thorin começa com o jogador preso em um pesadelo, onde sua mãe aparece ao seu lado, dizendo que “eles estão sem tempo”. A cena é rápida, estranha, e Thorin mal consegue compreender o que está acontecendo, quando um Ignoto pula na sua frente de repente. Ele acorda repentinamente, sendo chamado com urgência por seu mascote — um falante Sáparo boca-de-corneta — que avisa que ele está atrasado para a semifinal do Campeonato de Futebol Rúnico contra o time Machado de Mithril. Sem tempo para verificar equipamentos ou se preparar, Thorin sai correndo do Distrito Residencial de Gildrat, atravessa o Distrito Comercial e finalmente alcança o Estádio dos Machados Enferrujados. Lá, encontra o treinador Dragobour em desespero: seu time está em desvantagem e o atacante principal — Thorin — ainda não apareceu. A missão termina quando Thorin finalmente se apresenta ao treinador.
-Essa missão serve como introdução à cidade, seus distritos, ritmo de jogo e atmosfera cultural, enquanto planta as primeiras sementes do mistério sobre sua mãe e o mundo espiritual.
+Descrição Geral
+
+A primeira missão jogável com **Thorin** começa com o jogador preso em um pesadelo onde sua mãe surge avisando que “eles estão sem tempo”. Após o susto, Thorin acorda ao som do mascote **Sáparo boca-de-corneta**, que o lembra de que ele está **atrasado para a semifinal do Campeonato de Futebol Rúnico** contra os *Machados de Mithril*.  
+Sem tempo para verificar equipamentos, Thorin atravessa os distritos de **Gildrat** rumo ao Estádio dos Machados Enferrujados. Lá, encontra o treinador **Dragobour** em desespero: o time está sem seu atacante principal. Depois de resolver um impasse sobre equipamento, Thorin entra em campo, decide a partida com a última jogada e, no auge da comemoração, recebe ordens inesperadas de três guardas imperiais enviados por seu pai. A missão termina quando Thorin, ainda segurando o troféu, é escoltado para casa sob forte tensão.
 
 Tasks
 
-- Corra até o Estádio dos Machados Enferrujados
-- Fale com o treinador Dragobour
+- Corra até o Estádio dos Machados Enferrujados  
+- Fale com o treinador Dragobour  
+- Entre em campo para a última jogada  
+- Volte para casa com os guardas imperiais  
 
 Descrições (Narrativa Progressiva)
 
-1. Você despertou de um pesadelo estranho, onde uma mulher falava com urgência ao seu lado e um ser ameaçador surgiu diante de você. Ao acordar, seu mascote, um Sáparo boca-de-corneta, te alerta: você está atrasado para a semifinal contra os Machados de Mithril! Corra até o Estádio dos Machados Enferrujados, em Gildrat, capital do Império dos Anões.
-2. Você despertou de um pesadelo estranho, onde uma mulher falava com urgência ao seu lado e um ser ameaçador surgiu diante de você. Ao acordar, seu mascote, um Sáparo boca-de-corneta, te alertou: você estava atrasado para a semifinal contra os Machados de Mithril! Sem tempo para se preparar, você correu pelas ruas de Gildrat, capital do Império dos Anões, até alcançar o Estádio dos Machados Enferrujados. O treinador Dragobour, desesperado, aguardava sua chegada. Agora fale com ele.
-3. Você despertou de um pesadelo estranho, onde uma mulher falava com urgência ao seu lado e um ser ameaçador surgiu diante de você. Após ser alertado por seu mascote, você atravessou as ruas de Gildrat, capital do Império dos Anões, e chegou ao estádio. O treinador Dragobour, aliviado com sua chegada, agora pode finalmente colocar seu atacante principal em campo. A semifinal está prestes a começar — mas o que parecia apenas um dia esportivo logo mostrará ser muito mais do que isso.
+1. Você despertou de um pesadelo em que sua mãe o alertou de que o tempo estava acabando e, logo depois, o mascote Sáparo gritou que você estava atrasado para a semifinal contra os Machados de Mithril. **Corra agora pelas ruas de Gildrat e chegue ao Estádio dos Machados Enferrujados antes que o jogo comece!**
 
-## 3. Peso da Tradição
+2. Depois de acordar sobressaltado e atravessar Gildrat em disparada, você chegou atrasado ao Estádio dos Machados Enferrujados, mas o treinador Dragobour barrou sua entrada por falta de capacete. **Vasculhe o vestiário imediatamente, encontre o velho capacete rúnico e volte a falar com Dragobour antes que o juiz apite!**
 
-Após finalmente chegar ao Estádio dos Machados Enferrujados, Thorin é recebido por um Dragobour furioso, não apenas pelo atraso, mas porque esqueceu seu equipamento de proteção. Dragobur manda Thorin encontrar qualquer capacete e, sem tempo para buscar outro, ele vai até o vestiário.
+3. Tendo encontrado o capacete perdido, você retornou a Dragobour, entrou em campo nos acréscimos e marcou o gol decisivo que garantiu a vitória dos Machados Enferrujados. **Erga o troféu sob os aplausos e celebre depressa — guardas imperiais já se aproximam do gramado!**
 
-O espaço do vestiário é introduzido pela primeira vez no jogo, e o clima é propositalmente cômico: enquanto procura pelo capacete, Thorin invade acidentalmente a ala do time feminino de base, que também usa o local. Curioso, ele é rapidamente descoberto e expulso aos tapas pelas garotas.
+4. Enquanto celebrava com o troféu em mãos, os guardas imperiais Kilin, Mhordred e Tharok atravessaram a multidão, exigindo sua escolta imediata por ordem de seu pai. **Siga os guardas de volta para casa sem demora e descubra por que seu retorno foi convocado tão urgentemente!**
 
-Thorin encontra então um capacete antigo, esquecido por algum jogador.Após equipar o capacete no menu de armaduras, surge a task para retornar à beira do campo e falar novamente com Dragobour. O treinador então revela que aquela era seu capacete, obejeto lendário usado por ele na única vitória em finais que o time já teve. A missão se encerra e  prepara o jogador para a jogada final da semifinal. A missão introduz o sistema de otimização de status de forma prática e memorável, combinando humor e aprendizado mecânico.
+## 3. Fim de Jogo
+
+Descrição Geral
+
+Vitorioso na semifinal, Thorin mal teve tempo de comemorar: guardas imperiais enviados por seu pai, o general **Tordan Forja-Prata**, interromperam a festa e o escoltaram até casa. Lá, Tordan o espera na cozinha para um acerto de contas: futebol rúnico não serve de ofício, e um futuro como aprendiz de explorador de minas já está marcado para o amanhecer seguinte. A missão cobre o confronto familiar — do primeiro diálogo tenso até a noite em que Thorin vai dormir, resignado, mas com o troféu apertado contra o peito.
 
 Tasks
 
-- Entre no vestiário dos Machados Enferrujados
-- Procure pelo capacete antigo do treinador
-- Equipe o capacete antigo no menu de armaduras
-- Volte ao campo e fale com o treinador
+- Fale com **Tordan** na cozinha  
+- Pegue seu troféu no quarto  
+- Volte para a cozinha e enfrente a decisão do seu pai  
+- Vá para o seu quarto e durma  
 
 Descrições (Narrativa Progressiva)
 
-1. Você finalmente chegou ao Estádio dos Machados Enferrujados, e o treinador Dragobour está furioso com seu atraso. Peça desculpas e tente entrar em campo.
-2. Você chegou ao Estádio dos Machados Enferrujados, onde o treinador Dragobour o recebeu furioso com seu atraso. Após pedir desculpas e se prontificar a entrar em campo, Dragobour nota que você está sem capacete — e diz que não pode jogar assim. "Dê um jeito de conseguir um!" foi tudo o que ele disse.
-3. Você chegou ao Estádio dos Machados Enferrujados, onde foi repreendido por Dragobour pelo atraso. Ao tentar entrar em campo, ele recusou sua entrada por falta de equipamento. Sem opção, você entrou no vestiário do estádio em busca de qualquer capacete disponível. Encontre um e equipe-se no menu de armaduras.
-4. Você chegou atrasado ao estádio e foi barrado por Dragobour por estar sem capacete. No vestiário, encontrou um capacete antigo e se equipou. Ao voltar, Dragobour revela: o capacete era dele — usado na única final vencida pela equipe. Vá ao campo para a jogada final!
+1. Após marcar o gol da vitória e ser escoltado pelos guardas imperiais, você chegou em casa carregando a euforia do estádio. Tordan o aguarda na cozinha, furioso com sua demora e com o próprio esporte. **Converse com seu pai imediatamente e descubra por que ele exigiu seu retorno!**
 
-Notas Adicionais
+2. Depois de encarar o sermão de Tordan e descobrir que ele planejou seu futuro como aprendiz de minerador, você percebeu que só o troféu de melhor jogador pode provar seu talento. **Suba correndo ao quarto, pegue o troféu e volte à cozinha antes que seu pai perca a paciência!**
 
-- Primeira introdução prática do sistema de equipamento e otimização de status.
-- Espaço do vestiário introduzido brevemente com tom de comédia.
-- Revelação emocional ao final cria vínculo com o treinador e a história do time.
+3. Tendo mostrado o troféu, você tentou convencer Tordan do valor do futebol, mas ele permaneceu irredutível: o treinamento na mina começa ao amanhecer com Balastrus. **Aceite a ordem, deixe a cozinha e volte ao quarto para descansar — amanhã sua vida mudará.**
 
-## 4. Fim de Jogo
-
-Após se equipar, Thorin entra em campo para realizar a última jogada da semifinal. A partida se transforma em uma sequência jogável de tutorial de combate, adaptada como uma jogada simbólica de futebol rúnico, onde o jogador aprende os princípios do sistema de batalha por turnos. Com ritmo épico e simbólico, Thorin dribla adversários, realiza ações especiais e, por fim, marca o gol da vitória.
-
-A comemoração é interrompida por uma escolta de guardas imperiais, que invadem o estádio à procura de Thorin. Sob ordens de Tordan Forja-Prata, general de Gildrat e pai de Thorin, os guardas levam o garoto de volta para casa, ignorando as súplicas de Dragobour e dos companheiros de equipe.
-
-Em casa, Thorin é obrigado a enfrentar seu pai em um intenso diálogo. O general Tordan o repreende por gastar tempo com futebol rúnico e revela ter arranjado um emprego como aprendiz de explorador de minas. O treinamento começa no dia seguinte com Balastrus, na taverna da cidade. Mesmo mostrando seu troféu de melhor jogador da liga amadora, Thorin não consegue mudar a decisão do pai. A missão termina quando o garoto, frustrado e sem escolha, vai dormir.
-
-Tasks
-
-- Entre em campo para a última jogada
-- Volte para casa com os guardas imperiais
-- Fale com Tordan na cozinha
-- Pegue seu troféu no quarto
-- Volte para a cozinha e enfrente a decisão do seu pai
-- Vá para o seu quarto e durma
-
-Descrições (Narrativa Progressiva)
-
-1. Após se equipar com o capacete antigo de Dragobour, você entra em campo para a jogada final da semifinal. A partida está em suas mãos — e talvez o destino do time também.
-2. Após marcar o gol da vitória na semifinal, sua comemoração foi interrompida por guardas imperiais enviados por Tordan Forja-Prata. Sem escolha, você voltou para casa sob escolta. Agora, fale com seu pai na cozinha.
-3. Após marcar o gol decisivo, ser levado por guardas imperiais e retornar para casa, você encontrou seu pai, Tordan, na cozinha. O diálogo foi intenso: ele condena seu envolvimento com futebol rúnico. Vá ao seu quarto e pegue o troféu de melhor jogador da liga amadora.
-4. Mesmo após mostrar seu troféu, Tordan não recua. Ele já arranjou um trabalho como aprendiz de explorador de mina, sob supervisão de Balastrus, com início ao amanhecer. Vá para seu quarto e durma — amanhã tudo mudará.
-
-Notas Adicionais
-
-- Introdução ao sistema de combate disfarçado como jogada de futebol rúnico.
-- Primeiro grande momento de virada dramática e conflito familiar.
-- Encerramento de um mini-arco introdutório da juventude de Thorin.
-
-## É Hora de Crescer
+## 4. É Hora de Crescer
 
 Thorin tem mais um de seus estranhos pesadelos. Sua mãe aparece em sonhos pela segunda vez, falando em urgência e alertando que “o tempo está se esgotando”. Antes que consiga terminar sua mensagem, ela desaparece, e Thorin acorda com seu mascote Sáparo boca-de-corneta o chamando — mais uma vez, está atrasado. Desta vez, para encontrar Balastrus na taverna, conforme ordem de seu pai.
 
@@ -120,7 +91,7 @@ Notas Adicionais
 - Introdução leve à ideia de equipamentos e armaduras.
 - Marca o início formal do “emprego” forçado de Thorin com Balastrus.
 
-## Primeiro Contrato
+## 5. Primeiro Contrato
 
 Ao chegar à taverna, Thorin vai direto ao balcão perguntar por Balastrus. O atendente aponta uma mesa nos fundos, onde o misterioso e imponente anão o espera. A conversa entre eles é seca e direta. Balastrus informa que está organizando uma expedição até a mina de Kravens, ao sul de Gildrat, e que tudo o que Thorin precisa saber é como manejar uma picareta.
 
@@ -151,7 +122,7 @@ Notas Adicionais
 - Introdução à estrutura de dungeon e expedições.
 - Conexão reforçada com os três guardas aliados e o domínio de Tordan sobre a vida de Thorin.
 
-## Trilha de Gelo
+## 6. Trilha de Gelo
 
 Após entregar o contrato a Tusk, Thorin parte com ele e os três guardas imperiais — Kilin, Mhordred e Tharok — em direção à mina de Kravens. A missão se passa inteiramente no mapa-múndi, fora dos limites de Gildrat, marcando a primeira experiência do jogador em deslocamento livre pelo world map.
 
@@ -172,7 +143,7 @@ Notas Adicionais
 - Primeira experiência de world map e sistema de batalhas aleatórias.
 - Reforço do papel dos guardas como acompanhantes ativos na jornada de Thorin.
 
-## Acampamento de Kravens
+## 7. Acampamento de Kravens
 
 A missão começa na entrada da mina de Kravens, onde foi montado um pequeno acampamento de tendas usado pelos anões para descansar antes de entrar nas escavações. Ao chegar, Thorin é abordado por um guarda local distraído, que estava jogando cartas. O guarda questiona brevemente seus documentos, mas o libera ao perceber que ele está na companhia da escolta oficial. Antes de deixá-lo passar, avisa que Tusk está o esperando ao lado da fogueira.
 
@@ -200,7 +171,7 @@ Notas Adicionais
 - Fortalece vínculos narrativos entre Thorin e os guardas.
 - Ritmo mais calmo, criando contraste com a missão seguinte.
 
-## Minerador Aprendiz
+## 8. Minerador Aprendiz
 
 A missão começa com Thorin tendo mais um pesadelo. Sua mãe aparece em meio à escuridão, visivelmente aflita, dizendo que ele precisa agir antes que Gildrat caia — ou muitos morrerão. Em tom urgente, ela deixa uma mensagem enigmática: “Não quebre o selo. Lembre-se da canção.” Antes que Thorin possa responder, ele desperta.
 
@@ -231,7 +202,7 @@ Notas Adicionais
 - Introduz o primeiro boss (Cristaleão)
 - Revela um possível mistério central com o Sig Metal e os pesadelos
 
-## Sem Voltar Atrás
+## 9. Sem Voltar Atrás
 
 Após o sucesso da missão na mina de Kravens, Tusk pede para Thorin juntar suas coisas e encontrá-lo na saída. Animado com os resultados da expedição, Tusk deseja retornar imediatamente a Gildrat para apresentar os minérios a Balastros.
 
@@ -257,7 +228,7 @@ Notas Adicionais
 - Fortalece o contraste entre pragmatismo de Tusk e bom senso dos guardas
 - Reforça clima e riscos das Montanhas Congeladas
 
-## De Volta ao Ninho
+## 10. De Volta ao Ninho
 
 Após a perigosa missão na mina de Kravens e a travessia sob nevasca pelas Montanhas Congeladas, Thorin e o grupo retornam à Estrada do Cão Luar. Tusk, que acompanhou a jornada, chega junto ao grupo, enquanto Balastros os aguarda ansioso pelo relatório da expedição. Há alívio pelo retorno, mas também expectativa — especialmente quanto ao desempenho do novo recruta.
 
