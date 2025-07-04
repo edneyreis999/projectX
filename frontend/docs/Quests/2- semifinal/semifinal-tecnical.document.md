@@ -111,3 +111,21 @@
 | Versão | Data       | Autor    | Mudança                                       |
 | ------ | ---------- | -------- | --------------------------------------------- |
 | 0.2    | 2025‑06‑13 | Curiosão | Documento reescrito com feedback de cenas 1‑5 |
+
+## 6. Anotações Khawe
+
+* Fusão de duas Quests em uma. "Chegue ao estádio" e o "Elmo Perdido" se tornaram "A Semifinal".
+
+* Task "Encontre um Elmo" adicionada.
+
+* Task "Fale novamente com Dragobur" adicionada.
+
+* Trata-se da Semifinal, não da final. Sendo assim, não existirá o ato de levantar o troféu, pois ainda será disputado mais um jogo.
+
+* Dois novos mapas foram adicionados para que o jogador tenha liberdade de explorar. Praça central e Distrito das Fábricas. O intuito é, com o tempo e recursos, colocar algumas interações básicas e até itens como prêmio pela exploração.
+
+* Correção da narrativa progressiva 3: "Tendo encontrado o capacete perdido, você retornou a Dragobour, entrou em campo nos acréscimos e marcou o gol decisivo que garantiu a vitória dos Machados Enferrujados. Comemore depressa — a confirmação do seu time nas finais, Guardas Imperiais já se aproximam do gramado!"
+
+* Correção da narrativa progressiva 4: "Enquanto celebravam, os Guardas Imperiais Kilin, Mhordred e Tharok atravessaram a multidão, exigindo sua escolta imediata por ordem de seu pai. Siga os guardas de volta para casa sem demora e descubra por que seu retorno foi convocado tão urgentemente!"
+
+* Talvez possamos colocar uma cena onde se Thorin escolhe a resposta rude, Kilin luta com ele desarmado e, quando ele perde, é obrigado a voltar.
