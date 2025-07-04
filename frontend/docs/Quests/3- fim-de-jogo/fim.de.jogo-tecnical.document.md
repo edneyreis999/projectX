@@ -79,3 +79,7 @@
 | Versão | Data       | Autor    | Mudança           |
 | ------ | ---------- | -------- | ----------------- |
 | 0.1    | 2025-06-14 | Curiosão | Documento inicial |
+
+## 6. Anotações Khawe
+
+* Thorin desafia Kilin durante a Quest "A Semifinal".
