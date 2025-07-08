@@ -13,7 +13,7 @@
 
 | Item              | Valor / Descrição                                                                   |
 | ----------------- | ----------------------------------------------------------------------------------- |
-| Variáveis globais | `v_q_semifinal_progress` (1 a 8, controla toda a quest)                             |
+| Variáveis globais | `v_q_semifinal_progress` (1 a 8, controla toda a quest), `v_q_vestiario_progress` (0 a 2, controla interações no gueg)                             |
 | Plugins / Scripts | *MessageChoiceStyle*, Plugin de câmera suave, (minijogo “futebol rúnico” TBD)       |
 | Restrições gerais | Texto de alto contraste; VO opcional; cutscenes ≤ 3 min totais                     |
 
@@ -27,6 +27,12 @@
 * **6:** Cena da vitória e comemoração final.
 * **7:** Conversa final com Dragobour na beira do campo; inicia cena dos guardas.
 * **8:** Ao ser levado pelos guardas e trocar de mapa para o distrito residencial.
+
+### 3.1 Fluxo atualizado da variável `v_q_vestiario_progress`
+
+* **0:** Pode ativar a interação.
+* **1:** Ativa a dinâmica do tapa na cara.
+* **2:** O vestiário feminino passaa estar bloqueado
 
 ## 4. Cenas da Quest
 
