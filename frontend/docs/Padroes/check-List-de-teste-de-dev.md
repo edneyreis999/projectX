@@ -7,7 +7,9 @@
 [ ] A quest deve ser concluída de forma completa e natural, sem necessidade de usar o atalho de desenvolvedor (CTRL) para pular eventos.  
 [ ] Não há soft locks (situações onde o jogador fica preso sem poder progredir ou resetar) (ex. eu entrei em um mapa/local que não está previsto na quest, tem teleporte para voltar?)
 [ ] Os *NPCs principais* da quest devem ter falas diferentes e contextualizadas para cada estado global da quest, enquanto forem relevantes no enredo.  
-[ ] Ao iniciar uma conversa, os NPCs devem virar para o jogador corretamente antes de exibir o diálogo.  
+[ ] Ao iniciar uma conversa, os NPCs devem virar para o jogador corretamente antes de exibir o diálogo.
+[ ] As tasks estão sendo cumpridas e finalizadas no simple quest system?
+[ ] Tracking mission está ativo em todas as tasks das quests?
 
 ## Coerência narrativa
 
