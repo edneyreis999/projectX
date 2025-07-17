@@ -1,4 +1,4 @@
-# 🎮 Narrative Structure Document (NSD)
+# 🎮 Narrative Structure Document (NSD) - Fluxo Visual De Cenas
 
 ## 📄 Quest: [Nome da Quest]
 
@@ -6,14 +6,15 @@
 
 - [ ] **Concluído**
 - **Nome da quest**: [Placeholder]
+- **Importância na campanha**: [Main / Side / Tutorial / Outro]
 - **Arco narrativo**: [Placeholder]
 - **Quest anterior**: [Placeholder]
 - **Conflito central**: [Placeholder]
-- **Local principal**: [Placeholder]
 - **Objetivo narrativo global**: [Placeholder]  
 - **Premissa resumida**: [Placeholder]  
 - **Resumo*** [Placeholder]
-- **Importância na campanha**: [Main / Side / Tutorial / Outro]
+- **Locais principais**: [Placeholder formato lista]
+- **NPCs principais**: [Placeholder formato lista]
 
 ---
 
@@ -24,7 +25,6 @@
 | Tipo | Descrição |
 |------|-----------|
 | **Flags / Decisões anteriores** | [Ex.: Jogador brigou com o pai em `[Quest_X]`] |
-| **Estado emocional do protagonista** | [Placeholder] |
 | **Limitações ou bloqueios** | [Placeholder] |
 
 ---
