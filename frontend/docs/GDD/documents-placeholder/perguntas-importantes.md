@@ -65,6 +65,6 @@
 
 ### Conjunto de perguntas para o **Checkpoint 5 – Tasks Detalhadas**
 
-1. **“`[draft-tabela-tasks]`Parabéns, segue o rascunho das Tasks acima.** ⚡ **Revise apenas as colunas AÇÃO e CONDIÇÃO:**<br>• Se a Ação não descreve bem o que o jogador faz, edite o verbo.<br>• Se a Condição (gatilho narrativo) estiver errada, corrija no próprio texto.<br>*(Não se preocupe com a coluna Descrição ainda — vamos refiná-la na próxima pergunta.)*”
+1. **“Baseado em tudo que foi conversado e nos beats em que o jogador deve fazer algo além de ficar só escutando, criei uma lista de tasks que vai aparecer in game para o jogador para que ele conclua essa quest do começo ao fim sem ficar perdido sem saber o que fazer. `[draft-tabela-tasks]`segue o rascunho das Tasks acima.** ⚡ **Revise apenas as colunas AÇÃO e CONDIÇÃO:**<br>• Se a Ação não descreve bem o que o jogador faz, edite o verbo.<br>• Se a Condição (gatilho narrativo) estiver errada, corrija no próprio texto.<br>*(Não se preocupe com a coluna Descrição ainda — vamos refiná-la na próxima pergunta.)*”
 2. **“Show!** Agora olhe as **DESCRIÇÕES acumulativas** (a coluna do meio). Elas devem resumir tudo o que o jogador já fez até cada etapa.<br>**Ajuste o texto** onde achar que falta ou sobra contexto.”
 3. **“Excelente!** Aqui está a tabela final atualizada:<br>`[tabelaTasksFinal]`<br>**Tudo certo ou falta ajustar algo mínimo?**”

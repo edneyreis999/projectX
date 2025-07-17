@@ -72,20 +72,7 @@ Quest: [Nome da Quest]
 
 ---
 
-## 5️⃣ Estado Final & Ganchos *(Checkpoint 4)*
-
-- [ ] **Concluído**
-
-| Aspecto | Resultado |
-|---------|-----------|
-| **Flags narrativas setadas** | [Placeholder] |
-| **Mudança de relacionamento** | [Placeholder] |
-| **Gancho para próxima quest** | [Placeholder] |
-| **Consequências visíveis imediatas** | [Placeholder] |
-
----
-
-## 6️⃣ Tasks Detalhadas *(Checkpoint 5)*
+## 6️⃣ Tasks Detalhadas *(Checkpoint 4)*
 
 - [ ] **Concluído**
 
@@ -95,3 +82,14 @@ Quest: [Nome da Quest]
 | T2 | ... | ... | ... |
 
 ---
+
+## 5️⃣ Estado Final & Ganchos *(Checkpoint 5)*
+
+- [ ] **Concluído**
+
+| Aspecto | Resultado |
+|---------|-----------|
+| **Flags narrativas setadas** | [Placeholder] |
+| **Mudança de relacionamento** | [Placeholder] |
+| **Gancho para próxima quest** | [Placeholder] |
+| **Consequências visíveis imediatas** | [Placeholder] |
