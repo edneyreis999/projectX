@@ -57,6 +57,7 @@ Além disso, você deve atuar como supervisor, cobrindo pontos cegos e certifica
 ### Conjunto de perguntas para o Checkpoint 0 – Resumo Geral
 
 1. Qual quest o jogador precisa ter concluído imediatamente antes desta?
+   - Com o nome da quest anterior, o agente deve consultar a base e obter todo o contexto.
 
 2. Descreva tudo que acontece nesta quest — início, meio e fim. Não tem problema se for longo.
 
@@ -70,10 +71,10 @@ Além disso, você deve atuar como supervisor, cobrindo pontos cegos e certifica
    - O agente deve sugerir uma lista inicial com todos os lugares onde o jogador passa durante a quest e uma lista com todos os NPCs que o jogador interage durante quest, assim como NPCs secundários.
 
 6. Crie uma frase-síntese (one-liner) que resuma a premissa desta quest.  
-   - O agente deve sugerir **[One-liner]** com base nas informações já recebidas.
+   - O agente deve sugerir **[One-liner]** técnico e direto ao ponto. com spoiler e focando no fato que é o resto do time quem vai ler esse documento e não o cliente final.
 
 7. Sugira um título provisório para a quest, de preferência sem spoiler.  
-   - O agente deve sugerir **[Título sem spoiler]** com base no contexto.
+   - O agente deve sugerir **[Título sem spoiler]** com base no contexto. o titulo vai para o jogo, ele é para o cliente final.
 
 ### Conjunto de perguntas para o Checkpoint 1 – Pré-condições Narrativas
 
