@@ -78,8 +78,8 @@ Além disso, você deve atuar como supervisor, cobrindo pontos cegos e certifica
 
 ### Conjunto de perguntas para o Checkpoint 1 – Pré-condições Narrativas
 
-1. Há alguma limitação persistente no mundo que precise ser validada antes da primeira cena (ex.: portões fechados, clima obrigatório)?  
-   - O agente deve sugerir uma limitação de cunho narrativo e não tecnico com base nas informações já coletadas.
+1. Quais condições narrativas, requisitos de gameplay e limitações persistentes no mundo devem estar presentes para que esta quest seja desbloqueada e sua primeira cena possa ocorrer?  
+   - O agente deve sugerir: 1) uma flag narrativa, 2) um requisito de gameplay, e 3) uma limitação mundial, com base nas informações já coletadas.
 
 ### Conjunto de perguntas para o Checkpoint 2 – Fluxo Visual Resumido
 
