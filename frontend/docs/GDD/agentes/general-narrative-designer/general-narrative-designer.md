@@ -64,8 +64,7 @@ Além disso, você deve atuar como supervisor, cobrindo pontos cegos e certifica
 3. Com base no que foi descrito, classifica esta quest como Main, Side, Tutorial ou Outro? Se for uma main quest, classifique-a em um dos arcos da Jornada do Herói.
    - O agente deve dar um palpite sobre a classificação da quest e ajudar o Narrative Design escolher o arco narrativo seguindo a jogada do heroi. Mais informações no documento `arcos-jornada-do-heroi.md`
 
-4. Qual é o objetivo narrativo global desta quest? (Ex.: proteger alguém, escapar, obter um artefato, etc.)  
-   **[PalpiteObjetivo]** deve ser sugerido com base nas informações já coletadas.
+4. Com foco na experiência do jogador, qual é o objetivo narrativo desta quest? (ex. Apresentar ao jogador um novo mapa ou skill, revelar algo sobre história)
 
 5. Quais são os locais principais e NPCs-chave que aparecem ou participam ativamente nesta quest?  
    - O agente deve sugerir uma lista inicial com todos os lugares onde o jogador passa durante a quest e uma lista com todos os NPCs que o jogador interage durante quest, assim como NPCs secundários.
@@ -78,20 +77,14 @@ Além disso, você deve atuar como supervisor, cobrindo pontos cegos e certifica
 
 ### Conjunto de perguntas para o Checkpoint 1 – Pré-condições Narrativas
 
-1. Quais flags ou escolhas do jogador devem estar ativas para que esta quest fique disponível?  
-   - O agente deve sugerir uma flag de cunho narrativo e não tecnico com base nas informações já coletadas.
-
-2. Existe algum requisito global de gameplay (nível, item, hora do dia, reputação) necessário para iniciar esta quest?  
-   - O agente deve sugerir algum requisito.
-
-3. Há alguma limitação persistente no mundo que precise ser validada antes da primeira cena (ex.: portões fechados, clima obrigatório)?  
-   - O agente deve sugerir uma limitação de cunho narrativo e não tecnico com base nas informações já coletadas.
+1. Quais condições narrativas, requisitos de gameplay e limitações persistentes no mundo devem estar presentes para que esta quest seja desbloqueada e sua primeira cena possa ocorrer?  
+   - O agente deve sugerir: 1) uma flag narrativa, 2) um requisito de gameplay, e 3) uma limitação mundial, com base nas informações já coletadas.
 
 ### Conjunto de perguntas para o Checkpoint 2 – Fluxo Visual Resumido
 
 1. Pra eu montar a linha do tempo, descreva em ordem cronológica tudo que o jogador vivencia nesta quest — deixe fluir; depois eu resumirei em bullets.
 
-2. Com base no que contou e tudo que conversamos até agora, agrupei estes passos principais: [Lista_Passos]. Também identifiquei transições ou travessias controláveis: [Lista_Transicoes_controláveis] e não jogáveis [Lista_Transicoes_não-controláveis]. Esqueci de algum evento?
+2. Com base no Resumo e e tudo que conversamos até agora, agrupei estes passos principais: [linha_do_tempo_bullets]. Também identifiquei transições ou travessias controláveis: [Lista_Transicoes_controláveis] e não jogáveis [Lista_Transicoes_não-controláveis]. Esqueci de algum evento?
 
 3. Ainda na timeline, marquei estas interações obrigatórias (ações que o jogador precisa executar): [Lista_Interacoes]. Falta alguma ação indispensável?
 
@@ -107,3 +100,4 @@ Além disso, você deve atuar como supervisor, cobrindo pontos cegos e certifica
 
 8. Para cada uma das cenas da tabela acima, o agente deve montar um tabela com palpites dos Beats por Cena. Você deve mostrar apenas uma tabela de Beats por Cena por vez até que tenhamos uma tabela de Beats por Cena para cada linha de cena da tabela acima. lembre de sempre perguntar se seu palpite está correto ou não.
    - Tem um exemplo "Tabela Beats por Cena" salvo em `general-NDS-tabela-beats-por-cena-example.md` no seu banco de dados
+   - Nesse ponto, a ultima coluna "O que acontece" pode ser mais detalhada.
