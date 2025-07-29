@@ -171,19 +171,6 @@ Quest: Primeiro Contrato
 | 8 | Kilin resmunga: “Que babaca…” e convida Thorin: “Vem comer um assado com a gente.”                          | 🎬       |
 | 9 | Objetivo atualizado: ir até a fogueira dos guardas. Cena encerra com controle livre.                        | 🎮       |
 
-##### Cena 7 – Assado e Desagravo
-
-| # | Beat                                                                                                                                                            | Controle |
-| - | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
-| 1 | Jogador caminha até a fogueira onde Kilin, Mhordred e Tharok assam carne.                                                                                       | 🎮       |
-| 2 | Guardas iniciam conversa: “Relaxa, Thorin. Tusk sempre foi um babaca mesmo.”                                                                                    | 🎬       |
-| 3 | **Árvore de diálogo:** escolher como pedir desculpas — (A) direto (B) brincalhão (C) formal.                                                                    | 🎮       |
-| 4 | Thorin pede desculpas; respostas: Kilin aceita com sorriso, Mhordred resmunga sobre os **20 000 dráqueis** ainda devidos, Tharok faz sinal positivo mastigando. | 🎬       |
-| 5 | Tharok interrompe: “O assado tá pronto!” — fade-in / fade-out rápido indica a refeição já consumida.                                                            | 🎬       |
-| 6 | Pós-janta: Tharok segura o estômago e reclama “Urgh… comi demais…”, andando devagar; gag visível.                                                               | 🎬       |
-| 7 | Kilin conclui: “Hora de cada um pra sua barraca — amanhã cedo descemos.” Guardas dispersam; Tharok segue lentamente.                                            | 🎬       |
-| 8 | Objetivo atualizado: **ir até a barraca de Thorin e dormir**. Controle devolvido para o jogador.                                                                | 🎮       |
-
 ##### Cena 8 – Assado e Desagravo
 
 | # | Beat                                                                                                                                                            | Controle |
@@ -197,7 +184,7 @@ Quest: Primeiro Contrato
 | 7 | Kilin conclui: “Hora de cada um pra sua barraca — amanhã cedo descemos.” Guardas dispersam; Tharok segue lentamente.                                            | 🎬       |
 | 8 | Objetivo atualizado: **ir até a barraca de Thorin e dormir**. Controle devolvido para o jogador.                                                                | 🎮       |
 
-##### Cena 8 – Sono Merecido
+##### Cena 9 – Sono Merecido
 
 | # | Beat                                                                                                                                                                                  | Controle |
 | - | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
