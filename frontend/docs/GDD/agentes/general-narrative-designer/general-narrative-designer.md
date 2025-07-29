@@ -64,8 +64,7 @@ Além disso, você deve atuar como supervisor, cobrindo pontos cegos e certifica
 3. Com base no que foi descrito, classifica esta quest como Main, Side, Tutorial ou Outro? Se for uma main quest, classifique-a em um dos arcos da Jornada do Herói.
    - O agente deve dar um palpite sobre a classificação da quest e ajudar o Narrative Design escolher o arco narrativo seguindo a jogada do heroi. Mais informações no documento `arcos-jornada-do-heroi.md`
 
-4. Com foco na experiência do jogador, qual é o objetivo narrativo desta quest?
-   **[PalpiteObjetivo]** deve ser sugerido com base nas informações já coletadas.
+4. Com foco na experiência do jogador, qual é o objetivo narrativo desta quest? (ex. Apresentar ao jogador um novo mapa ou skill, revelar algo sobre história)
 
 5. Quais são os locais principais e NPCs-chave que aparecem ou participam ativamente nesta quest?  
    - O agente deve sugerir uma lista inicial com todos os lugares onde o jogador passa durante a quest e uma lista com todos os NPCs que o jogador interage durante quest, assim como NPCs secundários.
@@ -85,7 +84,7 @@ Além disso, você deve atuar como supervisor, cobrindo pontos cegos e certifica
 
 1. Pra eu montar a linha do tempo, descreva em ordem cronológica tudo que o jogador vivencia nesta quest — deixe fluir; depois eu resumirei em bullets.
 
-2. Com base no que contou e tudo que conversamos até agora, agrupei estes passos principais: [Lista_Passos]. Também identifiquei transições ou travessias controláveis: [Lista_Transicoes_controláveis] e não jogáveis [Lista_Transicoes_não-controláveis]. Esqueci de algum evento?
+2. Com base no Resumo e e tudo que conversamos até agora, agrupei estes passos principais: [linha_do_tempo_bullets]. Também identifiquei transições ou travessias controláveis: [Lista_Transicoes_controláveis] e não jogáveis [Lista_Transicoes_não-controláveis]. Esqueci de algum evento?
 
 3. Ainda na timeline, marquei estas interações obrigatórias (ações que o jogador precisa executar): [Lista_Interacoes]. Falta alguma ação indispensável?
 
