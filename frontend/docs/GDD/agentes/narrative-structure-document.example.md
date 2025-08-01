@@ -29,7 +29,7 @@
 
 ---
 
-### 3️⃣ Fluxo Visual Resumido *(Checkpoint 2)*
+## 3️⃣ Fluxo Visual Resumido *(Checkpoint 2)*
 
 - [ ] **Concluído**
 
