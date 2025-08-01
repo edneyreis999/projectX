@@ -44,7 +44,7 @@
 
 ### 3️⃣ Fluxo Visual Resumido *(Checkpoint 2)*
 
-- [ ] **Concluído**
+- [x] **Concluído**
 
 ```plaintext
 Quest: O Eco do Cristaleão
