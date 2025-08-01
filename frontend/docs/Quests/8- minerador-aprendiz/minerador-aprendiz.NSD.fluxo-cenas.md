@@ -47,7 +47,7 @@
 - [x] **Concluído**
 
 ```plaintext
-Quest: O Eco do Cristaleão
+Quest: Minerador Aprendiz
  ├── Cena 1: Sonho Recorrente — Premissa: A mãe de Thorin reaparece em sonho, reforçando a urgência de impedir Damburr.
  │      ├── Beat 1: Alerta Onírico — Thorin sonha com sua mãe insistindo para ele agir rápido. (🎬)
  │      ├── Beat 2: Acordar Interrompido — Tusk invade a barraca dizendo que ele está atrasado. (🎬)
