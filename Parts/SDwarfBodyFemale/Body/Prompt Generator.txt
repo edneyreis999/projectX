@@ -1,5 +1,0 @@
-Redesenhe a ilustração de um cabelo em vários ângulos igual a referência acima.  
-- Mantenha as posições como elas estão
-- Adote uma paleta de cor em pastel
-- Use hachura para sombrear
-- Exporte o arquivo como uma spritesheet no tamanho 576 x 768
