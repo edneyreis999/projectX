@@ -1,0 +1,69 @@
+{
+  "LayerOrder": {
+    "Face": 99,
+    "Walk": 100,
+    "Sv": 99
+  },
+"Parts":[
+  {
+    "Name": "Helmet 1",
+    "BaseImages": {
+      "Walk": "Parts/SDwarfBody/Helmets/Helmet1.png"
+    }
+  },
+  {
+    "Name": "Helmet 2",
+    "BaseImages": {
+      "Walk": "Parts/SDwarfBody/Helmets/Helmet2.png"
+    }
+  },
+  {
+    "Name": "Helmet 3",
+    "BaseImages": {
+      "Walk": "Parts/SDwarfBody/Helmets/Helmet3.png"
+    }
+  },
+  {
+    "Name": "Helmet 4",
+    "BaseImages": {
+      "Walk": "Parts/SDwarfBody/Helmets/Helmet4.png"
+    }
+  },
+  {
+    "Name": "Helmet 5",
+    "BaseImages": {
+      "Walk": "Parts/SDwarfBody/Helmets/Helmet5.png"
+    }
+  },
+    {
+    "Name": "Helmet 6",
+    "BaseImages": {
+      "Walk": "Parts/SDwarfBody/Helmets/Helmet6.png"
+    }
+  },
+    {
+    "Name": "Helmet 7",
+    "BaseImages": {
+      "Walk": "Parts/SDwarfBody/Helmets/Helmet7.png"
+    }
+  },
+  {
+    "Name": "Helmet 8",
+    "BaseImages": {
+      "Walk": "Parts/SDwarfBody/Helmets/Helmet8.png"
+    }
+  },
+  {
+    "Name": "Helmet 9",
+    "BaseImages": {
+      "Walk": "Parts/SDwarfBody/Helmets/Helmet9.png"
+    }
+  },
+  {
+    "Name": "Helmet 10",
+    "BaseImages": {
+      "Walk": "Parts/SDwarfBody/Helmets/Helmet10.png"
+    }
+  }
+]
+}
