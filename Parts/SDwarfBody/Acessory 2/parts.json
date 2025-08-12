@@ -1,0 +1,15 @@
+{
+  "LayerOrder": {
+    "Face": 4,
+    "Walk": 4,
+    "Sv": 4
+  },
+  "Parts": [
+    {
+      "Name": "scar1",
+      "BaseImages": {
+        "Walk": "Parts/SDwarfBody/Acessory 2/scar1.png"
+      }
+    }
+  ]
+}

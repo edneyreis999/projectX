@@ -16,6 +16,12 @@
       "BaseImages": {
         "Walk": "Parts/SDwarfBody/Nose/Nariz2.png"
       }
+    },
+    {
+      "Name": "Nariz 3",
+      "BaseImages": {
+        "Walk": "Parts/SDwarfBody/Nose/Nariz3.png"
+      }
     }
   ]
 }
