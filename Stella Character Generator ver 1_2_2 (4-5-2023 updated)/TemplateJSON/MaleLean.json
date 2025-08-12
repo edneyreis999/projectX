@@ -1,0 +1,165 @@
+{
+  "Layers": [
+    {
+      "Name": "Base",
+      "Category": "Body",
+      "Part": "Lean Male",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Head",
+      "Category": "Head",
+      "Part": "Head01",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Rear Hair",
+      "Category": "Rear Hair",
+      "Part": "Hair 06",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Eyes Right",
+      "Category": "Eye-Right",
+      "Part": "Eye05",
+      "Offsets": {
+        "Face": "-3, 0"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Eyes Left",
+      "Category": "Eye-Left",
+      "Part": "Eye05",
+      "Offsets": {
+        "Face": "2, 0"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Eyebrows",
+      "Category": "Eyebrows",
+      "Part": "Brow03",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Nose",
+      "Category": "Nose",
+      "Part": "Nose01",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Mouth",
+      "Category": "Mouth",
+      "Part": "Mouth09",
+      "Offsets": {
+        "Face": "1, 3"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Facial Mark",
+      "Category": "Facial Marks",
+      "Part": "Face6",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Glasses",
+      "Category": "Glasses",
+      "Part": "Glasses2",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Front Hair",
+      "Category": "Front Hair",
+      "Part": "Front09",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Ahoge",
+      "Category": "Ahoge",
+      "Part": "Ahoge2",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Socks",
+      "Category": "Socks",
+      "Part": "Socks04",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Shoes",
+      "Category": "Shoes",
+      "Part": "Shoes02",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Clothing Bottom",
+      "Category": "Clothing Bottom",
+      "Part": "Bottom05",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Clothing Top",
+      "Category": "Clothing Top",
+      "Part": "Top02",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Hat",
+      "Category": "Hat",
+      "Part": "Hat1",
+      "Offsets": {},
+      "Visible": false,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    }
+  ],
+  "BodyType": "Male Lean",
+  "BodyTypeVariation": ""
+}
