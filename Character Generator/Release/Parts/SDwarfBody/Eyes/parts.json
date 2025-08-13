@@ -1,0 +1,17 @@
+{
+  "LayerOrder": {
+    "Face": 3,
+    "Walk": 3,
+    "Sv": 3
+  },
+  "Parts": [
+    {
+      "Name": "Eye01",
+      "PreviewImage": "Parts/SDwarfBody/Eyes/FG_Eyes_p01.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBody/Eyes/FG_Eyes_p01.png",
+        "Walk": "Parts/SDwarfBody/Eyes/eyes1.png"
+      }
+    }
+  ]
+}

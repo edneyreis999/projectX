@@ -1,0 +1,223 @@
+{
+  "Layers": [
+    {
+      "Name": "Base",
+      "Category": "Body",
+      "Part": "Slim Female",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Head",
+      "Category": "Head",
+      "Part": "Head01",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Rear Hair",
+      "Category": "Rear Hair",
+      "Part": "Hair07",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {
+        "Walk": {
+          "ff0000ff": {
+            "Hue": 0,
+            "Saturation": 0,
+            "Lightness": 0,
+            "Color": ""
+          }
+        },
+        "Sv": {
+          "ff0000ff": {
+            "Hue": 0,
+            "Saturation": 0,
+            "Lightness": 0,
+            "Color": null
+          }
+        },
+        "Face": {
+          "ff0000ff": {
+            "Hue": 0,
+            "Saturation": 0,
+            "Lightness": 0,
+            "Color": ""
+          }
+        }
+      }
+    },
+    {
+      "Name": "Eyes Right",
+      "Category": "Eye-Right",
+      "Part": "Eye01",
+      "Offsets": {
+        "Face": "-3, 0",
+        "Sv": "0, 0",
+        "Walk": "0, 0"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Eyes Left",
+      "Category": "Eye-Left",
+      "Part": "Eye01",
+      "Offsets": {
+        "Face": "3, 0",
+        "Sv": "0, 0",
+        "Walk": "0, 0"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Nose",
+      "Category": "Nose",
+      "Part": "Nose04",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Eyebrows",
+      "Category": "Eyebrows",
+      "Part": "Brow01",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {
+        "Face": {
+          "ffff0000": {
+            "Hue": 0,
+            "Saturation": 0,
+            "Lightness": 0,
+            "Color": ""
+          },
+          "ff0000ff": {
+            "Hue": 0,
+            "Saturation": 0,
+            "Lightness": 0,
+            "Color": "#FFFF8C00"
+          }
+        }
+      }
+    },
+    {
+      "Name": "Mouth",
+      "Category": "Mouth",
+      "Part": "Mouth09",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Front Hair",
+      "Category": "Front Hair",
+      "Part": "Front05",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Socks",
+      "Category": "Socks",
+      "Part": "Socks04",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Shoes",
+      "Category": "Shoes",
+      "Part": "Shoes07",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Clothing Bottom",
+      "Category": "Clothing Bottom",
+      "Part": "Bottom06",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Clothing Top",
+      "Category": "Clothing Top",
+      "Part": "Top06",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Glasses",
+      "Category": "Glasses",
+      "Part": "Glasses01",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Ahoge",
+      "Category": "Ahoge",
+      "Part": "Ahoge4",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Hat",
+      "Category": "Hat",
+      "Part": "Hat2",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {
+        "Face": {
+          "ff0000ff": {
+            "Hue": 0,
+            "Saturation": 0,
+            "Lightness": 0,
+            "Color": "#FF4679AD"
+          }
+        },
+        "Walk": {
+          "ff0000ff": {
+            "Hue": 0,
+            "Saturation": 0,
+            "Lightness": 0,
+            "Color": "#FF3B87D6"
+          }
+        },
+        "Sv": {
+          "ff0000ff": {
+            "Hue": 0,
+            "Saturation": 0,
+            "Lightness": 0,
+            "Color": "#FF3B87D6"
+          }
+        }
+      }
+    }
+  ],
+  "BodyType": "Female Slim",
+  "BodyTypeVariation": ""
+}
