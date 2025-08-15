@@ -1,0 +1,81 @@
+{
+  "Layers": [
+    {
+      "Name": "Base",
+      "Category": "Body",
+      "Part": "BodyFem",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Cabelo",
+      "Category": "Rear Hair",
+      "Part": "RearHair03",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Franja",
+      "Category": "Front Hair",
+      "Part": "FrontHair03",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Olhos",
+      "Category": "Eyes",
+      "Part": "Eye04",
+      "Offsets": {
+        "Face": "0, 1",
+        "Sv": "0, 1",
+        "Walk": "0, 1"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "sobrancelha",
+      "Category": "Eyebrows",
+      "Part": "Eyebrows 4",
+      "Offsets": {
+        "Face": "0, 1",
+        "Sv": "0, 1",
+        "Walk": "0, 1"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "nariz",
+      "Category": "Nose",
+      "Part": "Nariz 1",
+      "Offsets": {
+        "Face": "0, -1",
+        "Sv": "0, -1",
+        "Walk": "0, -1"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "roupa",
+      "Category": "Clothing",
+      "Part": "Clothing03",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    }
+  ],
+  "BodyType": "SDwarfBodyFemale",
+  "BodyTypeVariation": ""
+}
