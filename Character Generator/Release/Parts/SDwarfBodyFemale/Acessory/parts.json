@@ -1,56 +1,15 @@
 {
   "LayerOrder": {
-    "Face": 100,
-    "Walk": 100,
-    "Sv": 100
+    "Face": 3,
+    "Walk": 3,
+    "Sv": 3
   },
   "Parts": [
     {
-      "Name": "Glasses01",
+      "Name": "Tapa olho",
       "PreviewImage": "Parts/SDwarfBodyFemale/Acessory/PV_TV_Glasses_p01.png",
       "BaseImages": {
-        "Face": "Parts/SDwarfBodyFemale/Acessory/PV_TV_Glasses_p01.png",
-        "Walk": "Parts/SDwarfBodyFemale/Acessory/TV_Glasses_p01.png"
-      }
-    },
-    {
-      "Name": "Glasses02",
-      "PreviewImage": "Parts/SDwarfBodyFemale/Acessory/PV_TV_Glasses_p02.png",
-      "BaseImages": {
-        "Face": "Parts/SDwarfBodyFemale/Acessory/PV_TV_Glasses_p02.png",
-        "Walk": "Parts/SDwarfBodyFemale/Acessory/TV_Glasses_p02.png"
-      }
-    },
-    {
-      "Name": "Glasses03",
-      "PreviewImage": "Parts/SDwarfBodyFemale/Acessory/PV_TV_Glasses_p03.png",
-      "BaseImages": {
-        "Face": "Parts/SDwarfBodyFemale/Acessory/PV_TV_Glasses_p03.png",
-        "Walk": "Parts/SDwarfBodyFemale/Acessory/TV_Glasses_p03.png"
-      }
-    },
-    {
-      "Name": "Glasses04",
-      "PreviewImage": "Parts/SDwarfBodyFemale/Acessory/PV_TV_Glasses_p04.png",
-      "BaseImages": {
-        "Face": "Parts/SDwarfBodyFemale/Acessory/PV_TV_Glasses_p04.png",
-        "Walk": "Parts/SDwarfBodyFemale/Acessory/TV_Glasses_p04.png"
-      }
-    },
-    {
-      "Name": "Glasses05",
-      "PreviewImage": "Parts/SDwarfBodyFemale/Acessory/PV_TV_Glasses_p05.png",
-      "BaseImages": {
-        "Face": "Parts/SDwarfBodyFemale/Acessory/PV_TV_Glasses_p05.png",
-        "Walk": "Parts/SDwarfBodyFemale/Acessory/TV_Glasses_p05.png"
-      }
-    },
-    {
-      "Name": "Glasses06",
-      "PreviewImage": "Parts/SDwarfBodyFemale/Acessory/PV_TV_Glasses_p06.png",
-      "BaseImages": {
-        "Face": "Parts/SDwarfBodyFemale/Acessory/PV_TV_Glasses_p06.png",
-        "Walk": "Parts/SDwarfBodyFemale/Acessory/TV_Glasses_p06.png"
+        "Walk": "Parts/SDwarfBodyFemale/Acessory/tapaOlho.png"
       }
     }
   ]

@@ -8,25 +8,25 @@
   {
     "Name": "Eyebrows 1",
     "BaseImages": {
-      "Walk": "Parts/SDwarfBody/Eyebrows/Eyebrow1.png"
+      "Walk": "Parts/SDwarfBodyFemale/Eyebrows/Eyebrow1.png"
     }
   },
   {
     "Name": "Eyebrows 2",
     "BaseImages": {
-      "Walk": "Parts/SDwarfBody/Eyebrows/Eyebrow2.png"
+      "Walk": "Parts/SDwarfBodyFemale/Eyebrows/Eyebrow2.png"
     }
   },
   {
     "Name": "Eyebrows 3",
     "BaseImages": {
-      "Walk": "Parts/SDwarfBody/Eyebrows/Eyebrow3.png"
+      "Walk": "Parts/SDwarfBodyFemale/Eyebrows/Eyebrow3.png"
     }
   },
   {
     "Name": "Eyebrows 4",
     "BaseImages": {
-      "Walk": "Parts/SDwarfBody/Eyebrows/Eyebrow4.png"
+      "Walk": "Parts/SDwarfBodyFemale/Eyebrows/Eyebrow4.png"
     }
   }
   
