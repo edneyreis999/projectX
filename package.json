@@ -8,7 +8,8 @@
     "format": "prettier --write \"frontend/js/plugins/**/*.{ts,js}\"",
     "prepare": "husky install",
     "commit": "cz",
-    "debug": "nw --remote-debugging-port=9222 ./frontend"
+    "debug": "nw --remote-debugging-port=9222 ./frontend",
+    "format:json": "prettier --write \"frontend/**/*.json\""
   },
   "keywords": [],
   "author": "Edney Antonio Reis Filho",
