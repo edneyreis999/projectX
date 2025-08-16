@@ -247,9 +247,10 @@
             "variableValue": 6
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "daratrine", "direction": 6, "pattern": 1, "characterIndex": 3 },
+          "image": { "tileId": 0, "characterName": "$Tusk", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Tusk"] },
+            { "code": 205, "indent": 0, "parameters": [0, { "list": [{ "code": 18, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 18, "indent": null }] },
             { "code": 221, "indent": 0, "parameters": [] },
             { "code": 122, "indent": 0, "parameters": [30, 30, 0, 0, 7] },
             { "code": 205, "indent": 0, "parameters": [2, { "list": [{ "code": 40, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
@@ -2025,9 +2026,10 @@
             "variableValue": 10
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "daratrine", "direction": 6, "pattern": 1, "characterIndex": 3 },
+          "image": { "tileId": 0, "characterName": "$Tusk", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Tusk"] },
+            { "code": 205, "indent": 0, "parameters": [0, { "list": [{ "code": 18, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 18, "indent": null }] },
             { "code": 221, "indent": 0, "parameters": [] },
             { "code": 122, "indent": 0, "parameters": [33, 33, 0, 0, 11] },
             { "code": 222, "indent": 0, "parameters": [] },

@@ -120,11 +120,8 @@
             "variableValue": 5
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "daratrine", "direction": 2, "pattern": 1, "characterIndex": 1 },
-          "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Balastrus"] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
+          "image": { "tileId": 0, "characterName": "$Balastrus", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -152,9 +149,8 @@
             "variableValue": 1
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "daratrine", "direction": 2, "pattern": 1, "characterIndex": 1 },
+          "image": { "tileId": 0, "characterName": "$Balastrus", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Balastrus"] },
             {
               "code": 205,
               "indent": 0,
@@ -247,7 +243,7 @@
           ],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 2,
+          "moveSpeed": 4,
           "moveType": 0,
           "priorityType": 1,
           "stepAnime": false,
@@ -310,9 +306,8 @@
             "variableValue": 1
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "daratrine", "direction": 2, "pattern": 1, "characterIndex": 1 },
+          "image": { "tileId": 0, "characterName": "$Taverneiro", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Taverneiro"] },
             { "code": 101, "indent": 0, "parameters": ["People1", 6, 0, 2, "Taverneiro Bud"] },
             { "code": 401, "indent": 0, "parameters": ["Seja bem-vindo à taverna do Bardo Bombado!"] },
             { "code": 401, "indent": 0, "parameters": ["Que tal uma cerveja ou hidromel? Se é maior "] },

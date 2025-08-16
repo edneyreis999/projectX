@@ -798,11 +798,8 @@
             "variableValue": 2
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Soldiers", "direction": 4, "pattern": 0, "characterIndex": 0 },
-          "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Tharok"] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
+          "image": { "tileId": 0, "characterName": "$Tharok", "direction": 4, "pattern": 1, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -868,11 +865,8 @@
             "variableValue": 2
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Soldiers", "direction": 4, "pattern": 0, "characterIndex": 0 },
-          "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Kilin"] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
+          "image": { "tileId": 0, "characterName": "$Kilin", "direction": 4, "pattern": 1, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -938,11 +932,8 @@
             "variableValue": 2
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Soldiers", "direction": 4, "pattern": 0, "characterIndex": 0 },
-          "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Mhordred"] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
+          "image": { "tileId": 0, "characterName": "$Mhordred", "direction": 4, "pattern": 1, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,

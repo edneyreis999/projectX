@@ -209,9 +209,8 @@
             "variableValue": 2
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "daratrine", "direction": 2, "pattern": 1, "characterIndex": 3 },
+          "image": { "tileId": 0, "characterName": "$Tusk", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Tusk"] },
             {
               "code": 205,
               "indent": 0,
@@ -313,11 +312,8 @@
             "variableValue": 4
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "daratrine", "direction": 2, "pattern": 2, "characterIndex": 3 },
-          "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Tusk"] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
+          "image": { "tileId": 0, "characterName": "$Tusk", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -345,11 +341,8 @@
             "variableValue": 4
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "daratrine", "direction": 2, "pattern": 1, "characterIndex": 3 },
-          "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Tusk"] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
+          "image": { "tileId": 0, "characterName": "$Tusk", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -358,7 +351,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 1,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {
@@ -1552,11 +1545,8 @@
             "variableValue": 4
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Soldiers", "direction": 8, "pattern": 1, "characterIndex": 1 },
-          "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Kilin"] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
+          "image": { "tileId": 0, "characterName": "$Kilin", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -1651,11 +1641,8 @@
             "variableValue": 4
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Soldiers", "direction": 8, "pattern": 1, "characterIndex": 1 },
-          "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Mhordred"] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
+          "image": { "tileId": 0, "characterName": "$Mhordred", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -1750,11 +1737,8 @@
             "variableValue": 4
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Soldiers", "direction": 4, "pattern": 1, "characterIndex": 1 },
-          "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Tharok"] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
+          "image": { "tileId": 0, "characterName": "$Tharok", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -2031,11 +2015,8 @@
             "variableValue": 4
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "daratrine", "direction": 2, "pattern": 1, "characterIndex": 1 },
-          "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Balastrus"] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
+          "image": { "tileId": 0, "characterName": "$Balastrus", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,

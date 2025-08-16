@@ -1,0 +1,33 @@
+{
+  "LayerOrder": {
+    "Face": 4,
+    "Walk": 4,
+    "Sv": 4
+  },
+"Parts":[
+  {
+    "Name": "Eyebrows 1",
+    "BaseImages": {
+      "Walk": "Parts/SDwarfBodyFemale/Eyebrows/Eyebrow1.png"
+    }
+  },
+  {
+    "Name": "Eyebrows 2",
+    "BaseImages": {
+      "Walk": "Parts/SDwarfBodyFemale/Eyebrows/Eyebrow2.png"
+    }
+  },
+  {
+    "Name": "Eyebrows 3",
+    "BaseImages": {
+      "Walk": "Parts/SDwarfBodyFemale/Eyebrows/Eyebrow3.png"
+    }
+  },
+  {
+    "Name": "Eyebrows 4",
+    "BaseImages": {
+      "Walk": "Parts/SDwarfBodyFemale/Eyebrows/Eyebrow4.png"
+    }
+  }
+  
+]}

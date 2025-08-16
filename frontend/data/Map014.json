@@ -177,7 +177,7 @@
             "variableValue": 2
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "daratrine", "direction": 8, "pattern": 1, "characterIndex": 2 },
+          "image": { "tileId": 0, "characterName": "$Treinador", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [
             { "code": 355, "indent": 0, "parameters": ["SQSM.CompleteTaskForQuest(\"aSemifinal\", 2);"] },
             { "code": 655, "indent": 0, "parameters": ["SQSM.ShowTaskForQuest(\"aSemifinal\", 3);"] },
@@ -232,7 +232,7 @@
             "variableValue": 3
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "daratrine", "direction": 8, "pattern": 1, "characterIndex": 2 },
+          "image": { "tileId": 0, "characterName": "$Treinador", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [
             { "code": 101, "indent": 0, "parameters": ["Actor2", 4, 0, 2, "Dragobur"] },
             { "code": 401, "indent": 0, "parameters": ["Se apresse, Thorin, a partida está quase"] },
@@ -266,9 +266,8 @@
             "variableValue": 5
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "daratrine", "direction": 8, "pattern": 2, "characterIndex": 2 },
+          "image": { "tileId": 0, "characterName": "$Treinador", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Dragobur"] },
             { "code": 111, "indent": 0, "parameters": [4, 3, 5, 51] },
             {
               "code": 205,
@@ -374,11 +373,8 @@
             "variableValue": 0
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "People1", "direction": 2, "pattern": 1, "characterIndex": 2 },
-          "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Filena"] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
+          "image": { "tileId": 0, "characterName": "$Filena", "direction": 4, "pattern": 1, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": {
             "list": [
@@ -549,9 +545,10 @@
             "variableValue": 6
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Soldiers", "direction": 6, "pattern": 1, "characterIndex": 1 },
+          "image": { "tileId": 0, "characterName": "$Kilin", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Kilin"] },
+            { "code": 205, "indent": 0, "parameters": [0, { "list": [{ "code": 3, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 3, "indent": null }] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -1684,9 +1681,10 @@
             "variableValue": 6
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Soldiers", "direction": 6, "pattern": 1, "characterIndex": 1 },
+          "image": { "tileId": 0, "characterName": "$Tharok", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Tharok"] },
+            { "code": 205, "indent": 0, "parameters": [0, { "list": [{ "code": 17, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 17, "indent": null }] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -1754,9 +1752,10 @@
             "variableValue": 6
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Soldiers", "direction": 6, "pattern": 1, "characterIndex": 1 },
+          "image": { "tileId": 0, "characterName": "$Mhordred", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Mhordred"] },
+            { "code": 205, "indent": 0, "parameters": [0, { "list": [{ "code": 18, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 18, "indent": null }] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,

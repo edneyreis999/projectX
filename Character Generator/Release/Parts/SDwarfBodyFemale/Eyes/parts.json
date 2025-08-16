@@ -1,64 +1,40 @@
 {
   "LayerOrder": {
-    "Face": 100,
-    "Walk": 100,
-    "Sv": 100
+    "Face": 3,
+    "Walk": 3,
+    "Sv": 3
   },
   "Parts": [
     {
       "Name": "Eye01",
       "PreviewImage": "Parts/SDwarfBodyFemale/Eyes/FG_Eyes_p01.png",
       "BaseImages": {
-        "Face": "Parts/SDwarfBodyFemale/Eyes/FG_Eyes_p01.png"
+        "Face": "Parts/SDwarfBodyFemale/Eyes/FG_Eyes_p01.png",
+        "Walk": "Parts/SDwarfBodyFemale/Eyes/eyes1.png"
       }
     },
     {
       "Name": "Eye02",
       "PreviewImage": "Parts/SDwarfBodyFemale/Eyes/FG_Eyes_p02.png",
       "BaseImages": {
-        "Face": "Parts/SDwarfBodyFemale/Eyes/FG_Eyes_p02.png"
+        "Face": "Parts/SDwarfBodyFemale/Eyes/FG_Eyes_p02.png",
+        "Walk": "Parts/SDwarfBodyFemale/Eyes/eyes2.png"
       }
     },
     {
       "Name": "Eye03",
       "PreviewImage": "Parts/SDwarfBodyFemale/Eyes/FG_Eyes_p03.png",
       "BaseImages": {
-        "Face": "Parts/SDwarfBodyFemale/Eyes/FG_Eyes_p03.png"
+        "Face": "Parts/SDwarfBodyFemale/Eyes/FG_Eyes_p03.png",
+        "Walk": "Parts/SDwarfBodyFemale/Eyes/eyes3.png"
       }
     },
     {
       "Name": "Eye04",
       "PreviewImage": "Parts/SDwarfBodyFemale/Eyes/FG_Eyes_p04.png",
       "BaseImages": {
-        "Face": "Parts/SDwarfBodyFemale/Eyes/FG_Eyes_p04.png"
-      }
-    },
-    {
-      "Name": "Eye05",
-      "PreviewImage": "Parts/SDwarfBodyFemale/Eyes/FG_Eyes_p05.png",
-      "BaseImages": {
-        "Face": "Parts/SDwarfBodyFemale/Eyes/FG_Eyes_p05.png"
-      }
-    },
-    {
-      "Name": "Eye06",
-      "PreviewImage": "Parts/SDwarfBodyFemale/Eyes/FG_Eyes_p06.png",
-      "BaseImages": {
-        "Face": "Parts/SDwarfBodyFemale/Eyes/FG_Eyes_p06.png"
-      }
-    },
-    {
-      "Name": "Eye07",
-      "PreviewImage": "Parts/SDwarfBodyFemale/Eyes/FG_Eyes_p07.png",
-      "BaseImages": {
-        "Face": "Parts/SDwarfBodyFemale/Eyes/FG_Eyes_p07.png"
-      }
-    },
-    {
-      "Name": "Eye08",
-      "PreviewImage": "Parts/SDwarfBodyFemale/Eyes/FG_Eyes_p08.png",
-      "BaseImages": {
-        "Face": "Parts/SDwarfBodyFemale/Eyes/FG_Eyes_p08.png"
+        "Face": "Parts/SDwarfBodyFemale/Eyes/FG_Eyes_p04.png",
+        "Walk": "Parts/SDwarfBodyFemale/Eyes/eyes4.png"
       }
     }
   ]
