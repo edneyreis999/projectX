@@ -1,0 +1,113 @@
+{
+  "Layers": [
+    {
+      "Name": "Base",
+      "Category": "Body",
+      "Part": "BodyMasc",
+      "Offsets": {},
+      "Visible": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Olhos",
+      "Category": "Eyes",
+      "Part": "Eye01",
+      "Offsets": {
+        "Face": "3, -1",
+        "Sv": "0, 1",
+        "Walk": "0, 1"
+      },
+      "Visible": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Roupa",
+      "Category": "Clothing",
+      "Part": "Clothing03",
+      "Offsets": {},
+      "Visible": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Cabelo",
+      "Category": "Rear Hair",
+      "Part": "RearHair02",
+      "Offsets": {
+        "Face": "0, -1",
+        "Sv": "0, -1",
+        "Walk": "0, -1"
+      },
+      "Visible": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Barba",
+      "Category": "Beard",
+      "Part": "Beard02",
+      "Offsets": {
+        "Face": "0, 0",
+        "Sv": "0, 0",
+        "Walk": "0, 0"
+      },
+      "Visible": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Nariz",
+      "Category": "Nose",
+      "Part": "Nariz 3",
+      "Offsets": {
+        "Face": "-5, 2",
+        "Sv": "0, 2",
+        "Walk": "0, 2"
+      },
+      "Visible": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Capacete",
+      "Category": "Helmets",
+      "Part": "Helmet 7",
+      "Offsets": {
+        "Face": "0, 1",
+        "Sv": "0, 1",
+        "Walk": "0, 1"
+      },
+      "Visible": false,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "extra",
+      "Category": "Acessory 2",
+      "Part": "rugas1",
+      "Offsets": {
+        "Face": "1, -5",
+        "Sv": "1, 0",
+        "Walk": "1, 0"
+      },
+      "Visible": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Franja",
+      "Category": "Front Hair",
+      "Part": "FrontHair01",
+      "Offsets": {},
+      "Visible": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Sobrancelha",
+      "Category": "Eyebrows",
+      "Part": "Eyebrows 3",
+      "Offsets": {
+        "Face": "0, 5",
+        "Sv": "0, 1",
+        "Walk": "0, 1"
+      },
+      "Visible": true,
+      "LayerSettings": {}
+    }
+  ],
+  "BodyType": "SDwarfBody"
+}

@@ -7,86 +7,16 @@
   "Parts": [
     {
       "Name": "Face01",
-      "PreviewImage": "Parts/SDwarfBody/Face/FG_Face_p01_c1_m001.png",
+      "PreviewImage": "Parts/SDwarfBody/Face/face1.png",
       "BaseImages": {
-        "Face": "Parts/SDwarfBody/Face/FG_Face_p01_c1_m001.png"
+        "Face": "Parts/SDwarfBody/Face/face1.png"
       }
     },
     {
       "Name": "Face02",
-      "PreviewImage": "Parts/SDwarfBody/Face/FG_Face_p02_c1_m001.png",
+      "PreviewImage": "Parts/SDwarfBody/Face/face2.png",
       "BaseImages": {
-        "Face": "Parts/SDwarfBody/Face/FG_Face_p02_c1_m001.png"
-      }
-    },
-    {
-      "Name": "Face03",
-      "PreviewImage": "Parts/SDwarfBody/Face/FG_Face_p03_c1_m001.png",
-      "BaseImages": {
-        "Face": "Parts/SDwarfBody/Face/FG_Face_p03_c1_m001.png"
-      }
-    },
-    {
-      "Name": "Face04",
-      "PreviewImage": "Parts/SDwarfBody/Face/FG_Face_p04_c1_m001.png",
-      "BaseImages": {
-        "Face": "Parts/SDwarfBody/Face/FG_Face_p04_c1_m001.png"
-      }
-    },
-    {
-      "Name": "Face05",
-      "PreviewImage": "Parts/SDwarfBody/Face/FG_Face_p05_c1_m001.png",
-      "BaseImages": {
-        "Face": "Parts/SDwarfBody/Face/FG_Face_p05_c1_m001.png"
-      }
-    },
-    {
-      "Name": "Face06",
-      "PreviewImage": "Parts/SDwarfBody/Face/FG_Face_p06_c1_m001.png",
-      "BaseImages": {
-        "Face": "Parts/SDwarfBody/Face/FG_Face_p06_c1_m001.png"
-      }
-    },
-    {
-      "Name": "Face07",
-      "PreviewImage": "Parts/SDwarfBody/Face/FG_Face_p07_c1_m001.png",
-      "BaseImages": {
-        "Face": "Parts/SDwarfBody/Face/FG_Face_p07_c1_m001.png"
-      }
-    },
-    {
-      "Name": "Face08",
-      "PreviewImage": "Parts/SDwarfBody/Face/FG_Face_p08_c1_m001.png",
-      "BaseImages": {
-        "Face": "Parts/SDwarfBody/Face/FG_Face_p08_c1_m001.png"
-      }
-    },
-    {
-      "Name": "Face09",
-      "PreviewImage": "Parts/SDwarfBody/Face/FG_Face_p09_c1_m001.png",
-      "BaseImages": {
-        "Face": "Parts/SDwarfBody/Face/FG_Face_p09_c1_m001.png"
-      }
-    },
-    {
-      "Name": "Face10",
-      "PreviewImage": "Parts/SDwarfBody/Face/FG_Face_p10_c1_m001.png",
-      "BaseImages": {
-        "Face": "Parts/SDwarfBody/Face/FG_Face_p10_c1_m001.png"
-      }
-    },
-    {
-      "Name": "Face11",
-      "PreviewImage": "Parts/SDwarfBody/Face/FG_Face_p11_c1_m001.png",
-      "BaseImages": {
-        "Face": "Parts/SDwarfBody/Face/FG_Face_p11_c1_m001.png"
-      }
-    },
-    {
-      "Name": "Face12",
-      "PreviewImage": "Parts/SDwarfBody/Face/FG_Face_p12_c1_m001.png",
-      "BaseImages": {
-        "Face": "Parts/SDwarfBody/Face/FG_Face_p12_c1_m001.png"
+        "Face": "Parts/SDwarfBody/Face/face2.png"
       }
     }
   ]

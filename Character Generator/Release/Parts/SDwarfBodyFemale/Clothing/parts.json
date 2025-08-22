@@ -1,8 +1,8 @@
 {
   "LayerOrder": {
-    "Face": 1,
-    "Walk": 1,
-    "Sv": 1
+    "Face": 5,
+    "Walk": 5,
+    "Sv": 5
   },
   "Parts": [
     {

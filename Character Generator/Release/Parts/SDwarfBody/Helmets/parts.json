@@ -1,8 +1,8 @@
 {
   "LayerOrder": {
-    "Face": 99,
-    "Walk": 100,
-    "Sv": 99
+    "Face": 10,
+    "Walk": 10,
+    "Sv": 10
   },
 "Parts":[
   {
@@ -26,7 +26,8 @@
   {
     "Name": "Helmet 4",
     "BaseImages": {
-      "Walk": "Parts/SDwarfBody/Helmets/Helmet4.png"
+      "Walk": "Parts/SDwarfBody/Helmets/Helmet4.png",
+      "Face": "Parts/SDwarfBody/Helmets/Portrait_Helmet4.png"
     }
   },
   {
@@ -44,7 +45,8 @@
     {
     "Name": "Helmet 7",
     "BaseImages": {
-      "Walk": "Parts/SDwarfBody/Helmets/Helmet7.png"
+      "Walk": "Parts/SDwarfBody/Helmets/Helmet7.png",
+      "Face": "Parts/SDwarfBody/Helmets/Portrait_Helmet7.png"
     }
   },
   {

@@ -8,6 +8,7 @@
   {
     "Name": "Eyebrows 1",
     "BaseImages": {
+      "Face": "Parts/SDwarfBodyFemale/Eyebrows/Portrait_Eyebrow1.png",
       "Walk": "Parts/SDwarfBodyFemale/Eyebrows/Eyebrow1.png"
     }
   },
@@ -26,6 +27,7 @@
   {
     "Name": "Eyebrows 4",
     "BaseImages": {
+      "Face": "Parts/SDwarfBodyFemale/Eyebrows/Portrait_Eyebrow4.png",
       "Walk": "Parts/SDwarfBodyFemale/Eyebrows/Eyebrow4.png"
     }
   }

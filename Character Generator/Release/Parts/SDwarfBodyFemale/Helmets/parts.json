@@ -44,7 +44,8 @@
     {
     "Name": "Helmet 7",
     "BaseImages": {
-      "Walk": "Parts/SDwarfBodyFemale/Helmets/Helmet7.png"
+      "Walk": "Parts/SDwarfBodyFemale/Helmets/Helmet7.png",
+      "Face": "Parts/SDwarfBodyFemale/Helmets/Portrait_Helmet7.png"
     }
   },
   {
