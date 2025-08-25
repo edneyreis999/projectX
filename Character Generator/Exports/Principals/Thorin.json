@@ -89,7 +89,7 @@
       "Category": "Nose",
       "Part": "Nariz 2",
       "Offsets": {
-        "Face": "0, -1",
+        "Face": "-3, 5",
         "Sv": "0, -1",
         "Walk": "0, -1"
       },
@@ -105,6 +105,17 @@
         "Face": "1, 0",
         "Sv": "1, 0",
         "Walk": "1, 0"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "boca",
+      "Category": "Mouth",
+      "Part": "Portrait_Boca1",
+      "Offsets": {
+        "Face": "-3, -10"
       },
       "Visible": true,
       "UseSkinToneColoring": true,

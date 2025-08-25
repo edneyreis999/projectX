@@ -6,7 +6,6 @@
       "Part": "BodyMasc",
       "Offsets": {},
       "Visible": true,
-      "UseSkinToneColoring": true,
       "LayerSettings": {}
     },
     {
@@ -19,20 +18,18 @@
         "Walk": "0, 1"
       },
       "Visible": true,
-      "UseSkinToneColoring": true,
       "LayerSettings": {}
     },
     {
       "Name": "Sobrancelha",
       "Category": "Eyebrows",
-      "Part": "Eyebrows 2",
+      "Part": "Eyebrows 3",
       "Offsets": {
-        "Face": "0, 1",
+        "Face": "3, -5",
         "Sv": "0, 1",
         "Walk": "0, 1"
       },
       "Visible": true,
-      "UseSkinToneColoring": true,
       "LayerSettings": {}
     },
     {
@@ -41,16 +38,6 @@
       "Part": "Clothing03",
       "Offsets": {},
       "Visible": true,
-      "UseSkinToneColoring": true,
-      "LayerSettings": {}
-    },
-    {
-      "Name": "Franja",
-      "Category": "Front Hair",
-      "Part": "FrontHair02",
-      "Offsets": {},
-      "Visible": true,
-      "UseSkinToneColoring": true,
       "LayerSettings": {}
     },
     {
@@ -63,7 +50,6 @@
         "Walk": "0, -1"
       },
       "Visible": true,
-      "UseSkinToneColoring": true,
       "LayerSettings": {}
     },
     {
@@ -76,7 +62,6 @@
         "Walk": "0, 0"
       },
       "Visible": true,
-      "UseSkinToneColoring": true,
       "LayerSettings": {}
     },
     {
@@ -84,12 +69,11 @@
       "Category": "Nose",
       "Part": "Nariz 3",
       "Offsets": {
-        "Face": "0, 2",
+        "Face": "-7, -1",
         "Sv": "0, 2",
         "Walk": "0, 2"
       },
       "Visible": true,
-      "UseSkinToneColoring": true,
       "LayerSettings": {}
     },
     {
@@ -102,23 +86,28 @@
         "Walk": "0, 1"
       },
       "Visible": false,
-      "UseSkinToneColoring": true,
       "LayerSettings": {}
     },
     {
       "Name": "extra",
       "Category": "Acessory 2",
-      "Part": "scar1",
+      "Part": "rugas1",
       "Offsets": {
-        "Face": "1, 0",
+        "Face": "-2, -7",
         "Sv": "1, 0",
         "Walk": "1, 0"
       },
+      "Visible": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Franja",
+      "Category": "Front Hair",
+      "Part": "FrontHair02",
+      "Offsets": {},
       "Visible": false,
-      "UseSkinToneColoring": true,
       "LayerSettings": {}
     }
   ],
-  "BodyType": "SDwarfBody",
-  "BodyTypeVariation": ""
+  "BodyType": "SDwarfBody"
 }

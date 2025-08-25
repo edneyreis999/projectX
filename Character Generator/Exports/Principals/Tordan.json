@@ -6,7 +6,6 @@
       "Part": "BodyMasc",
       "Offsets": {},
       "Visible": true,
-      "UseSkinToneColoring": true,
       "LayerSettings": {}
     },
     {
@@ -19,7 +18,6 @@
         "Walk": "0, 2"
       },
       "Visible": true,
-      "UseSkinToneColoring": true,
       "LayerSettings": {}
     },
     {
@@ -27,12 +25,11 @@
       "Category": "Eyebrows",
       "Part": "Eyebrows 1",
       "Offsets": {
-        "Face": "0, 2",
+        "Face": "0, -9",
         "Sv": "0, 2",
         "Walk": "0, 2"
       },
       "Visible": true,
-      "UseSkinToneColoring": true,
       "LayerSettings": {}
     },
     {
@@ -45,7 +42,6 @@
         "Walk": "0, -1"
       },
       "Visible": true,
-      "UseSkinToneColoring": true,
       "LayerSettings": {}
     },
     {
@@ -54,7 +50,6 @@
       "Part": "Clothing07",
       "Offsets": {},
       "Visible": true,
-      "UseSkinToneColoring": true,
       "LayerSettings": {}
     },
     {
@@ -63,7 +58,6 @@
       "Part": "FrontHair03",
       "Offsets": {},
       "Visible": true,
-      "UseSkinToneColoring": true,
       "LayerSettings": {}
     },
     {
@@ -76,7 +70,6 @@
         "Walk": "0, 0"
       },
       "Visible": true,
-      "UseSkinToneColoring": true,
       "LayerSettings": {}
     },
     {
@@ -89,7 +82,6 @@
         "Walk": "0, -1"
       },
       "Visible": true,
-      "UseSkinToneColoring": true,
       "LayerSettings": {}
     },
     {
@@ -102,23 +94,20 @@
         "Walk": "0, 1"
       },
       "Visible": false,
-      "UseSkinToneColoring": true,
       "LayerSettings": {}
     },
     {
       "Name": "extra",
       "Category": "Acessory 2",
-      "Part": "scar1",
+      "Part": "rugas1",
       "Offsets": {
-        "Face": "1, 0",
+        "Face": "-1, -2",
         "Sv": "1, 0",
         "Walk": "1, 0"
       },
-      "Visible": false,
-      "UseSkinToneColoring": true,
+      "Visible": true,
       "LayerSettings": {}
     }
   ],
-  "BodyType": "SDwarfBody",
-  "BodyTypeVariation": ""
+  "BodyType": "SDwarfBody"
 }

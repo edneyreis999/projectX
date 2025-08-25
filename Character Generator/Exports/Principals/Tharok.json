@@ -113,6 +113,15 @@
       "Visible": false,
       "UseSkinToneColoring": true,
       "LayerSettings": {}
+    },
+    {
+      "Name": "boca",
+      "Category": "Mouth",
+      "Part": "Portrait_Boca2",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
     }
   ],
   "BodyType": "SDwarfBody",
