@@ -38,7 +38,7 @@
     {
       "Name": "Roupa",
       "Category": "Clothing",
-      "Part": "Clothing05",
+      "Part": "Clothing01",
       "Offsets": {},
       "Visible": true,
       "UseSkinToneColoring": true,
@@ -122,7 +122,7 @@
       "LayerSettings": {}
     },
     {
-      "Name": "capacete",
+      "Name": "Capacete",
       "Category": "Helmets",
       "Part": "Helmet 7",
       "Offsets": {},
