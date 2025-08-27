@@ -44,6 +44,14 @@
         "Face": "Parts/SDwarfBodyFemale/Rear Hair/FG_RearHair1_p05_c1_m003.png",
         "Walk": "Parts/SDwarfBodyFemale/Rear Hair/TV_RearHair2_p05.png"
       }
+    },
+    {
+      "Name": "RearHair06",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Rear Hair/FG_RearHair1_p06_c1_m003.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale/Rear Hair/FG_RearHair1_p06_c1_m003.png",
+        "Walk": "Parts/SDwarfBodyFemale/Rear Hair/TV_RearHair2_p06.png"
+      }
     }
   ]
 }

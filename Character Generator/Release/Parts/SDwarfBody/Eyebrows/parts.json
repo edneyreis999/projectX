@@ -15,7 +15,8 @@
   {
     "Name": "Eyebrows 2",
     "BaseImages": {
-      "Walk": "Parts/SDwarfBody/Eyebrows/Eyebrow2.png"
+      "Walk": "Parts/SDwarfBody/Eyebrows/Eyebrow2.png",
+      "Face": "Parts/SDwarfBody/Eyebrows/Portrait_Eyebrow2.png"
     }
   },
   {

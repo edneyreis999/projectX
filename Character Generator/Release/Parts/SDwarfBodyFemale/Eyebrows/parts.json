@@ -15,13 +15,15 @@
   {
     "Name": "Eyebrows 2",
     "BaseImages": {
-      "Walk": "Parts/SDwarfBodyFemale/Eyebrows/Eyebrow2.png"
+      "Walk": "Parts/SDwarfBodyFemale/Eyebrows/Eyebrow2.png",
+      "Face": "Parts/SDwarfBodyFemale/Eyebrows/Portrait_Eyebrow2.png"
     }
   },
   {
     "Name": "Eyebrows 3",
     "BaseImages": {
-      "Walk": "Parts/SDwarfBodyFemale/Eyebrows/Eyebrow3.png"
+      "Walk": "Parts/SDwarfBodyFemale/Eyebrows/Eyebrow3.png",
+      "Face": "Parts/SDwarfBodyFemale/Eyebrows/Portrait_Eyebrow3.png"
     }
   },
   {
