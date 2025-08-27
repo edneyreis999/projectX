@@ -124,7 +124,7 @@
         "pitch": 100,
         "volume": 90
     },
-    "editMapId": 6,
+    "editMapId": 46,
     "elements": [
         "",
         "Físico",
@@ -347,9 +347,9 @@
             "volume": 90
         }
     ],
-    "startMapId": 5,
-    "startX": 0,
-    "startY": 21,
+    "startMapId": 46,
+    "startX": 10,
+    "startY": 8,
     "switches": [
         "",
         "Jogada segura",
@@ -401,8 +401,6 @@
         "",
         "",
         "",
-        "",
-        "Habilitar Menu de Quests",
         "",
         "",
         "",
@@ -611,7 +609,7 @@
         }
     ],
     "testTroopId": 29,
-    "title1Name": "Snow",
+    "title1Name": "Ruins",
     "title2Name": "",
     "titleBgm": {
         "name": "Theme4",
@@ -664,7 +662,8 @@
         "",
         "",
         "",
-        "v_treino",
+        "",
+        "",
         "",
         "",
         "",
@@ -726,7 +725,7 @@
         "",
         ""
     ],
-    "versionId": 44238045,
+    "versionId": 56747726,
     "victoryMe": {
         "name": "Victory1",
         "pan": 0,

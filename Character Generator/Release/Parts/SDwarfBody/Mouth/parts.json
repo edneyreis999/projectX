@@ -1,0 +1,23 @@
+{
+  "LayerOrder": {
+    "Face": 3,
+    "Walk": 3,
+    "Sv": 3
+  },
+  "Parts": [
+    {
+      "Name": "Portrait_Boca1",
+      "PreviewImage": "Parts/SDwarfBody/Mouth/Portrait_Boca1.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBody/Mouth/Portrait_Boca1.png"
+      }
+    },
+    {
+      "Name": "Portrait_Boca2",
+      "PreviewImage": "Parts/SDwarfBody/Mouth/Portrait_Boca2.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBody/Mouth/Portrait_Boca2.png"
+      }
+    }
+  ]
+}

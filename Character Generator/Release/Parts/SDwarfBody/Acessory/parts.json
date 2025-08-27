@@ -7,9 +7,10 @@
   "Parts": [
     {
       "Name": "Tapa olho",
-      "PreviewImage": "Parts/SDwarfBody/Acessory/PV_TV_Glasses_p01.png",
+      "PreviewImage": "Parts/SDwarfBody/Acessory/Portrait_tapaOlho.png.png",
       "BaseImages": {
-        "Walk": "Parts/SDwarfBody/Acessory/tapaOlho.png"
+        "Walk": "Parts/SDwarfBody/Acessory/tapaOlho.png",
+        "Face": "Parts/SDwarfBody/Acessory/Portrait_tapaOlho.png"
       }
     }
   ]

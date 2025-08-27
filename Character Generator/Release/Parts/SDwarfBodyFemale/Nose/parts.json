@@ -8,7 +8,8 @@
     {
       "Name": "Nariz 1",
       "BaseImages": {
-        "Walk": "Parts/SDwarfBodyFemale/Nose/Nariz1.png"
+        "Walk": "Parts/SDwarfBodyFemale/Nose/Nariz1.png",
+        "Face": "Parts/SDwarfBodyFemale/Nose/Portrait_Nariz1.png"
       }
     },
     {

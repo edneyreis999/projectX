@@ -65,7 +65,7 @@
     {
       "Name": "Barba",
       "Category": "Beard",
-      "Part": "Beard07",
+      "Part": "Beard06",
       "Offsets": {
         "Face": "0, 0",
         "Sv": "0, 0",
@@ -111,6 +111,15 @@
         "Walk": "1, 0"
       },
       "Visible": false,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "boca",
+      "Category": "Mouth",
+      "Part": "Portrait_Boca2",
+      "Offsets": {},
+      "Visible": true,
       "UseSkinToneColoring": true,
       "LayerSettings": {}
     }

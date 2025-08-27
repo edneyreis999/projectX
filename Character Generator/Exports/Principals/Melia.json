@@ -6,7 +6,6 @@
       "Part": "BodyFem",
       "Offsets": {},
       "Visible": true,
-      "UseSkinToneColoring": true,
       "LayerSettings": {}
     },
     {
@@ -15,16 +14,14 @@
       "Part": "RearHair03",
       "Offsets": {},
       "Visible": true,
-      "UseSkinToneColoring": true,
       "LayerSettings": {}
     },
     {
       "Name": "Franja",
       "Category": "Front Hair",
-      "Part": "FrontHair03",
+      "Part": "FrontHair02",
       "Offsets": {},
       "Visible": true,
-      "UseSkinToneColoring": true,
       "LayerSettings": {}
     },
     {
@@ -37,7 +34,6 @@
         "Walk": "0, 1"
       },
       "Visible": true,
-      "UseSkinToneColoring": true,
       "LayerSettings": {}
     },
     {
@@ -50,7 +46,6 @@
         "Walk": "0, 1"
       },
       "Visible": true,
-      "UseSkinToneColoring": true,
       "LayerSettings": {}
     },
     {
@@ -63,7 +58,6 @@
         "Walk": "0, -1"
       },
       "Visible": true,
-      "UseSkinToneColoring": true,
       "LayerSettings": {}
     },
     {
@@ -72,10 +66,24 @@
       "Part": "Clothing03",
       "Offsets": {},
       "Visible": true,
-      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "boca",
+      "Category": "Mouth",
+      "Part": "Portrait_Boca1",
+      "Offsets": {},
+      "Visible": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "ruga",
+      "Category": "Acessory 2",
+      "Part": "Rugas 1",
+      "Offsets": {},
+      "Visible": true,
       "LayerSettings": {}
     }
   ],
-  "BodyType": "SDwarfBodyFemale",
-  "BodyTypeVariation": ""
+  "BodyType": "SDwarfBodyFemale"
 }
