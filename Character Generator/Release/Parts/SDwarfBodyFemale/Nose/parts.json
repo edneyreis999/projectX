@@ -1,8 +1,8 @@
 {
   "LayerOrder": {
-    "Face": 100,
-    "Walk": 100,
-    "Sv": 100
+    "Face": 4,
+    "Walk": 4,
+    "Sv": 4
   },
   "Parts": [
     {
@@ -15,7 +15,22 @@
     {
       "Name": "Nariz 2",
       "BaseImages": {
-        "Walk": "Parts/SDwarfBodyFemale/Nose/Nariz2.png"
+        "Walk": "Parts/SDwarfBodyFemale/Nose/Nariz2.png",
+        "Face": "Parts/SDwarfBodyFemale/Nose/Portrait_Nariz2.png"
+      }
+    },
+    {
+      "Name": "Nariz 3",
+      "BaseImages": {
+        "Walk": "Parts/SDwarfBodyFemale/Nose/Nariz3.png",
+        "Face": "Parts/SDwarfBodyFemale/Nose/Portrait_Nariz3.png"
+      }
+    },
+    {
+      "Name": "Nariz 4",
+      "BaseImages": {
+        "Walk": "Parts/SDwarfBodyFemale/Nose/Nariz1.png",
+        "Face": "Parts/SDwarfBodyFemale/Nose/Portrait_Nariz4.png"
       }
     }
   ]

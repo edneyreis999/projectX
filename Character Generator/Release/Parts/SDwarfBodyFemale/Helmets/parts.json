@@ -26,7 +26,8 @@
   {
     "Name": "Helmet 4",
     "BaseImages": {
-      "Walk": "Parts/SDwarfBodyFemale/Helmets/Helmet4.png"
+      "Walk": "Parts/SDwarfBodyFemale/Helmets/Helmet4.png",
+      "Face": "Parts/SDwarfBodyFemale/Helmets/Portrait_Helmet4.png"
     }
   },
   {
@@ -38,7 +39,8 @@
     {
     "Name": "Helmet 6",
     "BaseImages": {
-      "Walk": "Parts/SDwarfBodyFemale/Helmets/Helmet6.png"
+      "Walk": "Parts/SDwarfBodyFemale/Helmets/Helmet6.png",
+      "Face": "Parts/SDwarfBodyFemale/Helmets/Portrait_Helmet6.png"
     }
   },
     {
@@ -51,7 +53,8 @@
   {
     "Name": "Helmet 8",
     "BaseImages": {
-      "Walk": "Parts/SDwarfBodyFemale/Helmets/Helmet8.png"
+      "Walk": "Parts/SDwarfBodyFemale/Helmets/Helmet8.png",
+      "Face": "Parts/SDwarfBodyFemale/Helmets/Portrait_Helmet8.png"
     }
   },
   {
