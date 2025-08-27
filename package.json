@@ -5,9 +5,10 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint \"frontend/js/plugins/**/*.{ts,js}\" --fix",
+    "lint:check": "eslint \"frontend/js/plugins/**/*.{ts,js}\" --max-warnings=0",
     "format": "prettier --write \"frontend/js/plugins/**/*.{ts,js}\"",
     "prepare": "husky install",
-    "commit": "cz",
+    "commit": "HUSKY_CZ=1 cz",
     "debug": "nw --remote-debugging-port=9222 ./frontend",
     "format:json": "prettier --write \"frontend/**/*.json\" \"System.json\""
   },

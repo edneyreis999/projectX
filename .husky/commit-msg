@@ -1,5 +1,11 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-# disable commitlint for now
-# npx --no -- commitlint --edit ""
+npx --no -- commitlint --edit "$1" || {
+  echo "❌ Mensagem de commit fora do padrão Conventional Commits."
+  echo "Dica: rode 'npm run commit' no terminal."
+  if command -v osascript >/dev/null 2>&1; then
+    osascript -e 'display notification "Mensagem inválida. Use `npm run commit`." with title "Commit abortado" subtitle "Conventional Commits"'
+  fi
+  exit 1
+}
