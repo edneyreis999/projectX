@@ -1,12 +1,32 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
+set -e
+
+# Exigir commit via Commitizen para garantir mensagem válida antes de formatar
+if [ -z "$HUSKY_CZ" ]; then
+  echo "⚠️  Commit abortado: use 'npm run commit' no terminal para seguir o padrão."
+  # Notificação no macOS
+  if command -v osascript >/dev/null 2>&1; then
+    osascript -e 'display notification "Use `npm run commit` (Commitizen)" with title "Commit padronizado" subtitle "Conventional Commits"'
+  fi
+  exit 1
+  # Se preferir apenas avisar e não bloquear, troque o exit 1 por:
+  # exit 0
+fi
+
+echo "➤ Formatando (Prettier)..."
 npm run format
 npm run format:json
-npm run lint
 
-# Verificar se os comandos anteriores foram bem-sucedidos
-if [ $? -ne 0 ]; then
-  echo "Erro: O commit foi abortado devido a erros de formatação ou lint."
+echo "➤ Aplicando correções automáticas (ESLint --fix)..."
+npm run lint || true
+
+echo "➤ Adicionando arquivos formatados/ajustados ao stage..."
+git add -A
+
+echo "➤ Verificando se restaram erros de lint..."
+npm run lint:check || {
+  echo "Erro: O commit foi abortado pois ainda há erros de lint após a formatação."
   exit 1
-fi
+}

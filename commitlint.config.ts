@@ -22,42 +22,106 @@ module.exports = {
     ],
   },
   prompt: {
-    // só perguntar o necessário
-    skipQuestions: [
-      "scope",
-      "body",
-      "isBreaking",
-      "breakingBody",
-      "breaking",
-      "issuesBody",
-      "issues",
-    ],
     questions: {
       type: {
-        description: "Selecione o tipo de mudança que está comitando",
+        description: "Select the type of change that you're committing",
         enum: {
-          feat: { description: "✨ Nova funcionalidade", title: "Features", emoji: "✨" },
-          fix: { description: "🐞 Correção de bug", title: "Bug Fixes", emoji: "🐞" },
-          docs: { description: "📝 Alterações de documentação", title: "Documentation", emoji: "📝" },
-          style: { description: "🎨 Estilo (formatação, etc.)", title: "Styles", emoji: "🎨" },
-          refactor: { description: "🧰 Refatoração (sem mudança de comportamento)", title: "Refactor", emoji: "🧰" },
-          perf: { description: "⚡ Melhoria de performance", title: "Performance", emoji: "⚡" },
-          test: { description: "✅ Adição/ajuste de testes", title: "Tests", emoji: "✅" },
-          build: { description: "🏗️ Build ou dependências", title: "Builds", emoji: "🏗️" },
-          ci: { description: "⚙️ Configuração de CI", title: "CI", emoji: "⚙️" },
-          chore: { description: "🧹 Tarefas diversas (sem mudar src/test)", title: "Chores", emoji: "🧹" },
-          revert: { description: "⏪ Reverte um commit", title: "Reverts", emoji: "⏪" },
-          bump: { description: "⏭️ Promover versão", title: "Bumps", emoji: "⏭️" },
+          feat: {
+            description: "✨ Adding a new feature",
+            title: "Features",
+            emoji: "✨",
+          },
+          fix: {
+            description: "� A bug fix",
+            title: "Bug Fixes",
+            emoji: "�",
+          },
+          docs: {
+            description: "� Documentation only changes",
+            title: "Documentation",
+            emoji: "�",
+          },
+          style: {
+            description:
+              "� Changes that do not affect the meaning of the code (formatting, lint fixes, etc)",
+            title: "Styles",
+            emoji: "�",
+          },
+          refactor: {
+            description:
+              "� A code change that neither fixes a bug nor adds a feature",
+            title: "Code Refactoring",
+            emoji: "�",
+          },
+          perf: {
+            description: "� A code change that improves performance",
+            title: "Performance Improvements",
+            emoji: "�",
+          },
+          test: {
+            description: "� Adding missing tests or correcting existing tests",
+            title: "Tests",
+            emoji: "�",
+          },
+          build: {
+            description:
+              "�  Changes that affect the build system or external dependencies (example scopes: cz, npm)",
+            title: "Builds",
+            emoji: "�",
+          },
+          ci: {
+            description:
+              "�  Changes to our CI configuration files and scripts (example scopes: Jenkins, BrowserStack)",
+            title: "Continuous Integrations",
+            emoji: "�",
+          },
+          chore: {
+            description: "� Other changes that don't modify src or test files",
+            title: "Chores",
+            emoji: "�",
+          },
+          revert: {
+            description: "�  Reverts a previous commit",
+            title: "Reverts",
+            emoji: "�",
+          },
+          bump: {
+            description: "⏭️  Use when promoting version",
+            title: "Bumps",
+            emoji: "⏭️",
+          },
         },
       },
-      subject: {
-        description: "Escreva uma descrição curta, no imperativo",
+      scope: {
+        description:
+          "What is the scope of this change (e.g. component or file name)",
       },
-      // Usando uma pergunta sim/não existente para cumprir o requisito
-      // (padrão é "não"). Não dispara perguntas adicionais pois estão em skipQuestions.
+      subject: {
+        description:
+          "Write a short, imperative tense description of the change",
+      },
+      body: {
+        description: "Provide a longer description of the change",
+      },
+      isBreaking: {
+        description: "Are there any breaking changes?",
+      },
+      breakingBody: {
+        description:
+          "A BREAKING CHANGE commit requires a body. Please enter a longer description of the commit itself",
+      },
+      breaking: {
+        description: "Describe the breaking changes",
+      },
       isIssueAffected: {
-        description: "Você alterou o arquivo system.json do jogo?",
-        default: false,
+        description: "Does this change affect any open issues?",
+      },
+      issuesBody: {
+        description:
+          "If issues are closed, the commit requires a body. Please enter a longer description of the commit itself",
+      },
+      issues: {
+        description: 'Add issue references (e.g. "fix #123", "re #123".)',
       },
     },
   },
