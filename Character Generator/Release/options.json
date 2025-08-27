@@ -1,5 +1,5 @@
 {
-  "CurrentBodyType": "SDwarfBody",
+  "CurrentBodyType": "SDwarfBodyFemale",
   "ImportJsonOnLoad": "",
   "UseNearestNeighbor": [
     "Walk",
@@ -279,7 +279,11 @@
     "Walk",
     "Sv",
     "Walk",
+    "Sv",
+    "Walk",
+    "Sv",
+    "Walk",
     "Sv"
   ],
-  "LastFile": "E:\\Projetos\\projectX\\Character Generator\\Exports\\NPCs\\Kravens\\Expedicionario1.json"
+  "LastFile": "C:\\GitHub_Trabalho\\projectX\\Character Generator\\Exports\\Principals\\Filena.json"
 }

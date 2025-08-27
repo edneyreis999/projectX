@@ -373,7 +373,7 @@
           "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
           "list": [
             { "code": 213, "indent": 0, "parameters": [-1, 1, false] },
-            { "code": 101, "indent": 0, "parameters": ["Personagens Daratrine/Thorin_fut", 0, 0, 2, "Thorin"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 2, 0, 2, "Thorin"] },
             { "code": 401, "indent": 0, "parameters": ["Nossa, que cheiro bom..."] },
             { "code": 101, "indent": 0, "parameters": ["SF_People1", 3, 0, 2, "Malia"] },
             { "code": 401, "indent": 0, "parameters": ["Será que o time principal vai conseguir?"] },
@@ -857,7 +857,7 @@
           "directionFix": false,
           "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
           "list": [
-            { "code": 101, "indent": 0, "parameters": ["Personagens Daratrine/Thorin_fut", 0, 0, 2, "Thorin"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 2, 0, 2, "Thorin"] },
             { "code": 401, "indent": 0, "parameters": ["Hum... aqui só tem um monte de uniformes"] },
             { "code": 401, "indent": 0, "parameters": ["velhos do time!"] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -891,7 +891,7 @@
           "directionFix": false,
           "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
           "list": [
-            { "code": 101, "indent": 0, "parameters": ["Actor1", 2, 0, 2, ""] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 2, 0, 2, "Thoin"] },
             { "code": 401, "indent": 0, "parameters": ["Ah! Aqui está o elmo."] },
             { "code": 357, "indent": 0, "parameters": ["Coreto_Quests", "addArmor", "Add Armor", { "armorID": "51" }] },
             { "code": 657, "indent": 0, "parameters": ["Armor ID = 51"] },
@@ -932,7 +932,7 @@
           "directionFix": false,
           "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
           "list": [
-            { "code": 101, "indent": 0, "parameters": ["Personagens Daratrine/Thorin_fut", 0, 0, 2, "Thorin"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 2, 0, 2, "Thorin"] },
             { "code": 401, "indent": 0, "parameters": ["Não tem mais nada aqui que possa me ajudar!"] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
