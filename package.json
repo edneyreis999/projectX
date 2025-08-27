@@ -9,7 +9,7 @@
     "prepare": "husky install",
     "commit": "cz",
     "debug": "nw --remote-debugging-port=9222 ./frontend",
-    "format:json": "prettier --write \"frontend/**/*.json\""
+    "format:json": "prettier --write \"frontend/**/*.json\" \"System.json\""
   },
   "keywords": [],
   "author": "Edney Antonio Reis Filho",
