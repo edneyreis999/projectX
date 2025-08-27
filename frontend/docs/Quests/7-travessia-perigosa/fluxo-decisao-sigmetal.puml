@@ -1,0 +1,99 @@
+@startuml
+' Título do Diagrama Focado na Decisão
+title Fluxo de Decisão do Item 'Sigmetal'
+
+' Estilos baseados no guia de melhores práticas
+skinparam activity {
+    BackgroundColor #LightGray
+    BorderColor #555
+    ArrowColor #555
+    FontName Arial
+}
+skinparam note {
+    BackgroundColor #LightYellow
+    BorderColor #555
+}
+
+start
+
+partition "Mina de Kravens (Final da Quest 'Minerador Aprendiz')" {
+    :Derrotar o boss Cristaleão;
+    #LightGreen:Obter o minério 'Sigmetal';
+    note right: O jogador agora possui o item de quest.
+
+    if (Jogador entrega o Sigmetal para Tusk?) then (Sim)
+        :Entregar Sigmetal para Tusk;
+        note right
+            ' Flag: PLAYER_HAS_SIGMETAL = false
+            ' Flag: TUSK_CREDIT = true
+            Tusk irá tomar o crédito pela descoberta
+            na frente de Balastros.
+        end note
+        
+        ' Este caminho converge com o resultado da entrega tardia para Tusk
+        goto TuskTakesCredit
+
+    else (Não)
+        :Esconder o Sigmetal e entregar 10 Kravens;
+        note right
+            ' Flag: PLAYER_HAS_SIGMETAL = true
+            ' Flag: TUSK_CREDIT = false
+            Jogador avança para a próxima quest
+            com o Sigmetal no inventário.
+        end note
+    endif
+}
+
+' Aqui ocorreria o restante da quest "A Travessia Perigosa"
+' (Viagem, Combates, etc.)
+' ...
+
+partition "Estrada do Cão Luar (Quest 'A Travessia Perigosa')" {
+    
+    if (O jogador ainda possui o Sigmetal?) then (Sim)
+        ' O jogador que escondeu o item chega neste ponto de decisão múltipla.
+        if (Escolhe entregar para Tusk?) then (Sim)
+            :Entregar Sigmetal para Tusk;
+            
+            label TuskTakesCredit
+            #LightCoral:Tusk se gaba para Balastros;
+            :Thorin reage à mentira;
+            
+        elseif (Escolhe entregar para Balastros?) then (Sim)
+            #LightBlue:Entregar Sigmetal para Balastros;
+            :Balastros analisa o item em silêncio;
+            :Balastros age com mistério;
+            note left
+                ' Flag: PLAYER_HAS_SIGMETAL = false
+                ' Flag: BALASTROS_KNOWS = true
+                O mistério sobre o Sigmetal se aprofunda.
+            end note
+
+        elseif (Escolhe colocar no Balaio?) then (Sim)
+            :Colocar Sigmetal no Balaio junto com outros minérios;
+            #LightYellow:Balastros faz comentário enigmático (item perdido);
+            note left
+                ' Flag: PLAYER_HAS_SIGMETAL = false
+                ' Flag: SIGMETAL_LOST_TO_CHEST = true
+                O jogador não tem mais o item,
+                Balastros não suspeita de nada.
+            end note
+
+        else (Não entregar a ninguém)
+            :Manter o Sigmetal escondido;
+            #LightYellow:Balastros faz comentario sobre o bolso do Thorin.;
+            note left
+                ' Flag: PLAYER_HAS_SIGMETAL = true
+                O jogador mantém o item para eventos futuros.                
+            end note
+        endif
+    
+    else (Não / Já entregou na mina)
+        ' Este é o fluxo para o jogador que escolheu a "Opção A" anteriormente.
+        ' Ele apenas observa a consequência.
+        -> TuskTakesCredit;
+    endif
+}
+
+stop
+@enduml

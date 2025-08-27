@@ -29,7 +29,7 @@
 
 ---
 
-## 3️⃣ Fluxo Visual Resumido *(Checkpoint 2)*
+### 3️⃣ Fluxo Visual Resumido *(Checkpoint 2)*
 
 - [ ] **Concluído**
 
@@ -43,3 +43,37 @@ Quest: [Nome da Quest]
         └── Beat 2: [Nome] — Premissa: [Premissa resumida do beat]
 
 ```
+
+#### Tabela de Cenas
+
+| # | Nome da Cena                | Premissa resumida (expandida)                                                                                                                                                              |
+| - | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1 | Titulo cena 1    | Premissa cena 1 |
+| 2 | Titulo cena 2 | Premissa cena 2 |
+
+---
+
+##### Beats por Cena
+
+###### Cena 1 – Clareira de Kravens
+
+| #  | Beat                                             | Descrição / Decisões do Jogador                        | Controle |
+| ---|-------------------------------------------------|-------------------------------------------------------|----------|
+| 1  | Beat 1                                          | Descrição do Beat 1                                   | 🎬       |
+| 2  | Beat 2                                          | Jogador pode escolher:                                     | 🎮       |
+|     | — Decisão A       | Descrição decisão 1                   |          |
+|     | — Decisão B       | Descrição decisão 2                                      |          |
+| 3  | Beat 3                                          | Descrição do Beat 3                                   | 🎬       |
+
+---
+
+###### Cena 2 – Travessia no Mapamúndi (Detalhada)
+
+| #  | Beat                                             | Descrição / Decisões do Jogador                        | Controle |
+| 1  | Beat 1                                          | Descrição do Beat 1                                   | 🎬       |
+| 2  | Beat 2                                          | Jogador pode escolher:                                     | 🎮       |
+|     | — Decisão A       | Descrição decisão 1                   |          |
+|     | — Decisão B       | Descrição decisão 2                                      |          |
+| 3  | Beat 3                                          | Descrição do Beat 3                                   | 🎬       |
+
+---
