@@ -124,7 +124,7 @@
         "pitch": 100,
         "volume": 90
     },
-    "editMapId": 5,
+    "editMapId": 6,
     "elements": [
         "",
         "Físico",
@@ -348,8 +348,8 @@
         }
     ],
     "startMapId": 5,
-    "startX": 1,
-    "startY": 22,
+    "startX": 0,
+    "startY": 21,
     "switches": [
         "",
         "Jogada segura",
@@ -403,6 +403,7 @@
         "",
         "",
         "Habilitar Menu de Quests",
+        "",
         "",
         "",
         "",
@@ -663,8 +664,7 @@
         "",
         "",
         "",
-        "",
-        "",
+        "v_treino",
         "",
         "",
         "",
@@ -726,7 +726,7 @@
         "",
         ""
     ],
-    "versionId": 56747726,
+    "versionId": 44238045,
     "victoryMe": {
         "name": "Victory1",
         "pan": 0,
