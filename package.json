@@ -8,7 +8,7 @@
     "lint:check": "eslint \"frontend/js/plugins/**/*.{ts,js}\" --max-warnings=0",
     "format": "prettier --write \"frontend/js/plugins/**/*.{ts,js}\"",
     "prepare": "husky install",
-    "commit": "HUSKY_CZ=1 cz",
+    "commit": "cross-env HUSKY_CZ=1 cz",
     "debug": "nw --remote-debugging-port=9222 ./frontend",
     "format:json": "prettier --write \"frontend/**/*.json\" \"System.json\""
   },
@@ -30,6 +30,7 @@
     "@typescript-eslint/eslint-plugin": "^7.16.0",
     "@typescript-eslint/parser": "^7.16.0",
     "commitizen": "^4.3.0",
+    "cross-env": "^10.0.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",

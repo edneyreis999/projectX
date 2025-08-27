@@ -1,0 +1,11 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Commit (Commitizen)",
+            "type": "npm",
+            "script": "commit",
+            "problemMatcher": []
+        }
+    ]
+}
