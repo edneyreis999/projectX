@@ -8,7 +8,8 @@
     {
       "Name": "Nariz 1",
       "BaseImages": {
-        "Walk": "Parts/SDwarfBody/Nose/Nariz1.png"
+        "Walk": "Parts/SDwarfBody/Nose/Nariz1.png",
+        "Face": "Parts/SDwarfBody/Nose/Portrait_Nariz1.png"
       }
     },
     {
@@ -23,6 +24,13 @@
       "BaseImages": {
         "Walk": "Parts/SDwarfBody/Nose/Nariz3.png",
         "Face": "Parts/SDwarfBody/Nose/Portrait_Nariz3.png"
+      }
+    },
+    {
+      "Name": "Nariz 4",
+      "BaseImages": {
+        "Walk": "Parts/SDwarfBody/Nose/Nariz1.png",
+        "Face": "Parts/SDwarfBody/Nose/Portrait_Nariz4.png"
       }
     }
   ]

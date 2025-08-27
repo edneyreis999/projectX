@@ -39,7 +39,8 @@
     {
     "Name": "Helmet 6",
     "BaseImages": {
-      "Walk": "Parts/SDwarfBody/Helmets/Helmet6.png"
+      "Walk": "Parts/SDwarfBody/Helmets/Helmet6.png",
+      "Face": "Parts/SDwarfBody/Helmets/Portrait_Helmet6.png"
     }
   },
     {
@@ -52,7 +53,8 @@
   {
     "Name": "Helmet 8",
     "BaseImages": {
-      "Walk": "Parts/SDwarfBody/Helmets/Helmet8.png"
+      "Walk": "Parts/SDwarfBody/Helmets/Helmet8.png",
+      "Face":"Parts/SDwarfBody/Helmets/Portrait_Helmet8.png"
     }
   },
   {
