@@ -209,7 +209,7 @@
           "directionFix": true,
           "image": { "tileId": 0, "characterName": "$BigMonster1-inv", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [
-            { "code": 101, "indent": 0, "parameters": ["Personagens Daratrine/Thorin_armor", 0, 0, 2, "Thorin"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 0, 0, 2, "Thorin"] },
             { "code": 401, "indent": 0, "parameters": ["Que parede mais estranha..."] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
@@ -243,7 +243,7 @@
           "image": { "tileId": 0, "characterName": "$BigMonster1-inv", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [
             { "code": 213, "indent": 0, "parameters": [-1, 1, true] },
-            { "code": 101, "indent": 0, "parameters": ["Personagens Daratrine/Thorin_fut", 0, 0, 2, "Thorin"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 0, 0, 2, "Thorin"] },
             { "code": 401, "indent": 0, "parameters": ["Tem algo enorme se mexendo aqui!"] },
             {
               "code": 205,
@@ -294,7 +294,7 @@
             { "code": 101, "indent": 0, "parameters": ["Personagens Daratrine/Mhordred", 0, 0, 2, "Mhordred"] },
             { "code": 401, "indent": 0, "parameters": ["Thorin! Cuidado!"] },
             { "code": 230, "indent": 0, "parameters": [10] },
-            { "code": 101, "indent": 0, "parameters": ["Personagens Daratrine/Kilin", 0, 0, 2, "Kilin"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal1", 3, 0, 2, "Kilin"] },
             { "code": 401, "indent": 0, "parameters": ["Guardas Imperiais, cumpram seu dever! Formação"] },
             { "code": 401, "indent": 0, "parameters": ["do Cão-Dragão!"] },
             { "code": 301, "indent": 0, "parameters": [0, 29, false, false] },
@@ -341,13 +341,13 @@
           "directionFix": true,
           "image": { "tileId": 0, "characterName": "!Crystal", "direction": 6, "pattern": 1, "characterIndex": 0 },
           "list": [
-            { "code": 101, "indent": 0, "parameters": ["Personagens Daratrine/Thorin_armor", 0, 0, 2, "Thorin"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 0, 0, 2, "Thorin"] },
             { "code": 401, "indent": 0, "parameters": ["Yey! O Cristaleão estava escondendo um"] },
             { "code": 401, "indent": 0, "parameters": ["Cristal de Sigmetal! "] },
             { "code": 357, "indent": 0, "parameters": ["Coreto_Quests", "addKeyItem", "Add Key Item", { "itemID": "10" }] },
             { "code": 657, "indent": 0, "parameters": ["Item ID = 10"] },
             { "code": 122, "indent": 0, "parameters": [25, 25, 1, 0, 4] },
-            { "code": 101, "indent": 0, "parameters": ["Personagens Daratrine/Thorin_armor", 0, 0, 2, "Thorin"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 0, 0, 2, "Thorin"] },
             { "code": 401, "indent": 0, "parameters": ["Eu tenho que voltar, ainda há mais trabalho"] },
             { "code": 401, "indent": 0, "parameters": ["a ser feito!"] },
             { "code": 230, "indent": 0, "parameters": [1] },
@@ -459,7 +459,7 @@
           "list": [
             { "code": 250, "indent": 0, "parameters": [{ "name": "Breath", "volume": 90, "pitch": 100, "pan": 0 }] },
             { "code": 213, "indent": 0, "parameters": [-1, 8, true] },
-            { "code": 101, "indent": 0, "parameters": ["Personagens Daratrine/Thorin_armor", 0, 0, 2, "Thorin"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 0, 0, 2, "Thorin"] },
             { "code": 401, "indent": 0, "parameters": ["Que barulho foi esse?"] },
             { "code": 101, "indent": 0, "parameters": ["Personagens Daratrine/Thorin_armor", 0, 0, 2, "Thorin"] },
             { "code": 401, "indent": 0, "parameters": ["Acho que veio daquela parede!"] },
