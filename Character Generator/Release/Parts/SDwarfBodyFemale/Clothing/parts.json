@@ -60,6 +60,14 @@
         "Face": "Parts/SDwarfBodyFemale/Clothing/FG_Clothing1_p07.png",
         "Walk": "Parts/SDwarfBodyFemale/Clothing/TV_Clothing2_p07.png"
       }
+    },
+    {
+      "Name": "Clothing08",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Clothing/FG_Clothing1_p08.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale/Clothing/FG_Clothing1_p08.png",
+        "Walk": "Parts/SDwarfBodyFemale/Clothing/TV_Clothing2_p08.png"
+      }
     }
   ]
 }
