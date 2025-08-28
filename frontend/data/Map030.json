@@ -503,7 +503,7 @@
               "code": 205,
               "indent": 0,
               "parameters": [
-                3,
+                14,
                 { "list": [{ "code": 45, "parameters": ["Move To: 11,19"], "indent": null }, { "code": 17, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }
               ]
             },
@@ -620,7 +620,7 @@
               "code": 205,
               "indent": 0,
               "parameters": [
-                3,
+                14,
                 {
                   "list": [{ "code": 45, "parameters": ["Move To: 17,24"], "indent": null }, { "code": 37, "indent": null }, { "code": 39, "indent": null }, { "code": 0 }],
                   "repeat": false,
@@ -720,8 +720,8 @@
           "walkAnime": true
         }
       ],
-      "x": 5,
-      "y": 17
+      "x": 7,
+      "y": 16
     },
     {
       "id": 3,
@@ -941,8 +941,8 @@
           "walkAnime": false
         }
       ],
-      "x": 7,
-      "y": 17
+      "x": 6,
+      "y": 16
     },
     {
       "id": 5,
@@ -1981,8 +1981,8 @@
           "walkAnime": false
         }
       ],
-      "x": 6,
-      "y": 17
+      "x": 5,
+      "y": 16
     },
     {
       "id": 15,
