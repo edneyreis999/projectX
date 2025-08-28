@@ -1297,7 +1297,7 @@
           "image": { "tileId": 0, "characterName": "Nature", "direction": 4, "pattern": 0, "characterIndex": 3 },
           "list": [
             { "code": 108, "indent": 0, "parameters": ["XA:Saparo"] },
-            { "code": 101, "indent": 0, "parameters": ["Nature", 3, 0, 2, "Sáparo Boca-de-corneta"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 6, 0, 2, "Sáparo Boca-de-corneta"] },
             { "code": 401, "indent": 0, "parameters": ["Anda logo, Thorin, mete o pé! Nenhum "] },
             { "code": 401, "indent": 0, "parameters": ["time gosta de jogadores sem senso de "] },
             { "code": 401, "indent": 0, "parameters": ["responsabilidade!"] },
