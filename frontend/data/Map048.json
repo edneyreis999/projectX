@@ -593,7 +593,6 @@
           "directionFix": true,
           "image": { "tileId": 0, "characterName": "kilin", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Kilin"] },
             { "code": 205, "indent": 0, "parameters": [3, { "list": [{ "code": 39, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 39, "indent": null }] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -665,7 +664,6 @@
           "directionFix": true,
           "image": { "tileId": 0, "characterName": "mhordred", "direction": 8, "pattern": 0, "characterIndex": 0 },
           "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Mhordred"] },
             { "code": 205, "indent": 0, "parameters": [4, { "list": [{ "code": 39, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 39, "indent": null }] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -737,7 +735,6 @@
           "directionFix": true,
           "image": { "tileId": 0, "characterName": "tharok", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Tharok"] },
             { "code": 205, "indent": 0, "parameters": [5, { "list": [{ "code": 39, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 39, "indent": null }] },
             { "code": 0, "indent": 0, "parameters": [] }

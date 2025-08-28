@@ -5,7 +5,7 @@
   { "id": 3, "expanded": true, "name": "Ekios", "order": 4, "parentId": 0, "scrollX": 6228, "scrollY": 2481, "quick": false },
   { "id": 4, "expanded": true, "name": "SQS_Test_JS", "order": 44, "parentId": 15, "scrollX": 875, "scrollY": 492.5 },
   { "id": 5, "expanded": true, "name": "Coreto", "order": 1, "parentId": 0, "scrollX": 884.7272727272727, "scrollY": 676.909090909091, "quick": false },
-  { "id": 6, "expanded": true, "name": "Casa da Família Forjaprata", "order": 21, "parentId": 7, "scrollX": 742.8, "scrollY": 418.2, "quick": false },
+  { "id": 6, "expanded": true, "name": "Casa da Família Forjaprata", "order": 21, "parentId": 7, "scrollX": 884.7272727272727, "scrollY": 490.3636363636364, "quick": false },
   { "id": 7, "expanded": true, "name": "Distrito Residencial", "order": 19, "parentId": 43, "scrollX": 893.4545454545455, "scrollY": 940.909090909091, "quick": false },
   { "id": 8, "expanded": true, "name": "Distrito Comercial", "order": 27, "parentId": 43, "scrollX": 884.7272727272727, "scrollY": 752.1818181818182, "quick": false },
   { "id": 9, "expanded": true, "name": "Campo de Futebol Rúnico", "order": 25, "parentId": 14, "scrollX": 742.8, "scrollY": 418.2, "quick": false },

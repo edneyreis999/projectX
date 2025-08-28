@@ -410,7 +410,6 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Evil", "direction": 2, "pattern": 0, "characterIndex": 1 },
           "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Tusk"] },
             {
               "code": 205,
               "indent": 0,
@@ -518,7 +517,6 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Evil", "direction": 2, "pattern": 0, "characterIndex": 1 },
           "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Tusk"] },
             { "code": 101, "indent": 0, "parameters": ["Personagens Daratrine/Tusk", 0, 0, 2, "Tusk"] },
             { "code": 401, "indent": 0, "parameters": ["O que está fazendo aqui parado?"] },
             { "code": 401, "indent": 0, "parameters": ["Vai trabalhar!"] },
@@ -553,7 +551,6 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Evil", "direction": 2, "pattern": 1, "characterIndex": 1 },
           "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Tusk"] },
             { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 5, 0, 2, "Tusk"] },
             { "code": 401, "indent": 0, "parameters": ["O que é que você está fazendo aqui, moleque?!"] },
             { "code": 401, "indent": 0, "parameters": ["Ainda há trabalho a ser feito! Por onde saiu?"] },
@@ -902,7 +899,7 @@
             "variableValue": 3
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Actor2", "direction": 6, "pattern": 1, "characterIndex": 2 },
+          "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario2", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": {
@@ -1478,10 +1475,7 @@
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "kilin", "direction": 8, "pattern": 1, "characterIndex": 0 },
-          "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Kilin"] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -1548,10 +1542,7 @@
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "mhordred", "direction": 8, "pattern": 1, "characterIndex": 0 },
-          "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Mhordred"] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -1618,10 +1609,7 @@
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "tharok", "direction": 8, "pattern": 1, "characterIndex": 0 },
-          "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Tharok"] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,

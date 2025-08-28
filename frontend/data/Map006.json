@@ -1002,7 +1002,7 @@
             { "code": 241, "indent": 0, "parameters": [{ "name": "Town1", "volume": 50, "pitch": 100, "pan": 0 }] },
             { "code": 230, "indent": 0, "parameters": [120] },
             { "code": 222, "indent": 0, "parameters": [] },
-            { "code": 101, "indent": 0, "parameters": ["Nature", 3, 0, 2, "Sáparo-Boca-De-Corneta"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 6, 0, 2, "Sáparo-Boca-De-Corneta"] },
             { "code": 401, "indent": 0, "parameters": ["Acorda, bobalhão!"] },
             { "code": 222, "indent": 0, "parameters": [] },
             {
@@ -1021,13 +1021,13 @@
             { "code": 505, "indent": 0, "parameters": [{ "code": 14, "parameters": [0, 0], "indent": null }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 14, "parameters": [0, 0], "indent": null }] },
             { "code": 213, "indent": 0, "parameters": [12, 1, false] },
-            { "code": 101, "indent": 0, "parameters": ["Nature", 3, 0, 2, "Sáparo-Boca-De-Corneta"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 6, 0, 2, "Sáparo-Boca-De-Corneta"] },
             { "code": 401, "indent": 0, "parameters": ["Você está atrasado novamente,"] },
             { "code": 401, "indent": 0, "parameters": ["a partida contra o time dos Picaretas de Mitril"] },
             { "code": 401, "indent": 0, "parameters": ["já está começando!"] },
             { "code": 357, "indent": 0, "parameters": ["PKD_AnimaX", "StopAnimationAction", "Stop Anima Action", { "eventId": "0" }] },
             { "code": 657, "indent": 0, "parameters": ["Character ID = 0"] },
-            { "code": 101, "indent": 0, "parameters": ["Nature", 3, 0, 2, "Sáparo-Boca-De-Corneta"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 6, 0, 2, "Sáparo-Boca-De-Corneta"] },
             { "code": 401, "indent": 0, "parameters": ["HAHAHAHAHAHA!"] },
             { "code": 221, "indent": 0, "parameters": [] },
             { "code": 222, "indent": 0, "parameters": [] },
@@ -1152,7 +1152,7 @@
             { "code": 505, "indent": 0, "parameters": [{ "code": 14, "parameters": [0, 0], "indent": null }] },
             { "code": 357, "indent": 0, "parameters": ["PKD_AnimaX", "StopAnimationAction", "Stop Anima Action", { "eventId": "0" }] },
             { "code": 657, "indent": 0, "parameters": ["Character ID = 0"] },
-            { "code": 101, "indent": 0, "parameters": ["Nature", 3, 0, 2, "Sáparo"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 6, 0, 2, "Sáparo"] },
             { "code": 401, "indent": 0, "parameters": ["Acorde, Thorin, meu filho querido. Não me faça"] },
             { "code": 401, "indent": 0, "parameters": ["vergonha, ou se verá comigo! Para o distrito"] },
             { "code": 401, "indent": 0, "parameters": ["comercial central, você deve ir, Balastrus te"] },
@@ -1294,10 +1294,10 @@
             "variableValue": 1
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Nature", "direction": 4, "pattern": 0, "characterIndex": 3 },
+          "image": { "tileId": 0, "characterName": "Portraits menores/Principal2", "direction": 4, "pattern": 0, "characterIndex": 3 },
           "list": [
             { "code": 108, "indent": 0, "parameters": ["XA:Saparo"] },
-            { "code": 101, "indent": 0, "parameters": ["Nature", 3, 0, 2, "Sáparo Boca-de-corneta"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 6, 0, 2, "Sáparo Boca-de-corneta"] },
             { "code": 401, "indent": 0, "parameters": ["Anda logo, Thorin, mete o pé! Nenhum "] },
             { "code": 401, "indent": 0, "parameters": ["time gosta de jogadores sem senso de "] },
             { "code": 401, "indent": 0, "parameters": ["responsabilidade!"] },
@@ -1330,10 +1330,10 @@
             "variableValue": 8
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Nature", "direction": 4, "pattern": 0, "characterIndex": 3 },
+          "image": { "tileId": 0, "characterName": "Portraits menores/Principal2", "direction": 4, "pattern": 0, "characterIndex": 3 },
           "list": [
             { "code": 108, "indent": 0, "parameters": ["XA:Saparo"] },
-            { "code": 101, "indent": 0, "parameters": ["Nature", 3, 0, 2, "Sáparo Boca-de-Corneta"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 6, 0, 2, "Sáparo Boca-de-Corneta"] },
             { "code": 401, "indent": 0, "parameters": ["Vai chorar?! Tô quase com dó de você!"] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
@@ -1364,10 +1364,10 @@
             "variableValue": 2
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Nature", "direction": 4, "pattern": 0, "characterIndex": 3 },
+          "image": { "tileId": 0, "characterName": "Portraits menores/Principal2", "direction": 4, "pattern": 0, "characterIndex": 3 },
           "list": [
             { "code": 108, "indent": 0, "parameters": ["XA:Saparo"] },
-            { "code": 101, "indent": 0, "parameters": ["Nature", 3, 0, 2, "Sáparo Boca-de-corneta"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 6, 0, 2, "Sáparo Boca-de-corneta"] },
             { "code": 401, "indent": 0, "parameters": ["Tu não vai me alimentar não?!"] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
