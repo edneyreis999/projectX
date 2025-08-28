@@ -606,7 +606,7 @@
             "variableValue": 1
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "$Tordan", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Tordan", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
             { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 3, 0, 2, "Tordan"] },
             { "code": 401, "indent": 0, "parameters": ["Eu tentei confiar em você, Thorin. Tentei lhe dar espaço,"] },
@@ -681,7 +681,7 @@
             "variableValue": 2
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "$Tordan", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Tordan", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
             { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 3, 0, 2, "Tordan"] },
             { "code": 401, "indent": 0, "parameters": ["A minha paciência está se esgotando, Thorin!"] },
@@ -714,7 +714,7 @@
             "variableValue": 3
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "$Tordan", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Tordan", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
             { "code": 111, "indent": 0, "parameters": [1, 9, 0, 1, 0] },
             { "code": 101, "indent": 1, "parameters": ["Portraits menores/Principal2", 3, 0, 2, "Tordan"] },
@@ -814,7 +814,7 @@
             "variableValue": 4
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "$Tordan", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Tordan", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
             { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 3, 0, 2, "Tordan"] },
             { "code": 401, "indent": 0, "parameters": ["Vá dormir, Thorin!"] },
@@ -960,7 +960,7 @@
             "variableValue": 0
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "$Melia", "direction": 4, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Melia", "direction": 4, "pattern": 1, "characterIndex": 0 },
           "list": [
             { "code": 223, "indent": 0, "parameters": [[-68, -68, 0, 68], 1, false] },
             { "code": 241, "indent": 0, "parameters": [{ "name": "Theme3", "volume": 55, "pitch": 50, "pan": 0 }] },
@@ -1110,7 +1110,7 @@
             "variableValue": 5
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "$Melia", "direction": 4, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Melia", "direction": 4, "pattern": 1, "characterIndex": 0 },
           "list": [
             { "code": 205, "indent": 0, "parameters": [12, { "list": [{ "code": 39, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 39, "indent": null }] },
@@ -1256,7 +1256,7 @@
             "variableValue": 11
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "$MãeThorin", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Melia", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },

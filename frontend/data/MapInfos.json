@@ -9,7 +9,7 @@
   { "id": 7, "expanded": true, "name": "Distrito Residencial", "order": 19, "parentId": 43, "scrollX": 742.8, "scrollY": 1021.8, "quick": false },
   { "id": 8, "expanded": true, "name": "Distrito Comercial", "order": 27, "parentId": 43, "scrollX": 742.8, "scrollY": 408.59999999999997, "quick": false },
   { "id": 9, "expanded": true, "name": "Campo de Futebol Rúnico", "order": 25, "parentId": 14, "scrollX": 742.8, "scrollY": 418.2, "quick": false },
-  { "id": 10, "expanded": false, "name": "Vestiário", "order": 26, "parentId": 14, "scrollX": 742.8, "scrollY": 733.8, "quick": false },
+  { "id": 10, "expanded": false, "name": "Vestiário", "order": 26, "parentId": 14, "scrollX": 884.7272727272727, "scrollY": 652.909090909091, "quick": false },
   { "id": 11, "expanded": false, "name": "Sala do Conselho", "order": 36, "parentId": 27, "scrollX": 784.8888888888889, "scrollY": 666.2222222222222, "quick": false },
   { "id": 12, "expanded": false, "name": "Taverna", "order": 31, "parentId": 8, "scrollX": 742.8, "scrollY": 408.59999999999997, "quick": false },
   { "id": 13, "expanded": true, "name": "Loja de roupas", "order": 30, "parentId": 8, "scrollX": 675.2727272727273, "scrollY": 380.1818181818182, "quick": false },
