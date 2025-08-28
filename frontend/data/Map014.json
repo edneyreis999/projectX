@@ -177,7 +177,7 @@
             "variableValue": 2
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "$Treinador", "direction": 8, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Treinador", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [
             { "code": 355, "indent": 0, "parameters": ["SQSM.CompleteTaskForQuest(\"aSemifinal\", 2);"] },
             { "code": 655, "indent": 0, "parameters": ["SQSM.ShowTaskForQuest(\"aSemifinal\", 3);"] },
@@ -232,7 +232,7 @@
             "variableValue": 3
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "$Treinador", "direction": 8, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Treinador", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [
             { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 4, 0, 2, "Dragobur"] },
             { "code": 401, "indent": 0, "parameters": ["Se apresse, Thorin, a partida está quase"] },
@@ -266,7 +266,7 @@
             "variableValue": 5
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "$Treinador", "direction": 8, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Treinador", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [
             { "code": 111, "indent": 0, "parameters": [4, 3, 5, 51] },
             {
@@ -373,7 +373,7 @@
             "variableValue": 0
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "$Filena", "direction": 4, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Filena", "direction": 4, "pattern": 1, "characterIndex": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": {
@@ -545,7 +545,7 @@
             "variableValue": 6
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "$Kilin", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Kilin", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
             { "code": 205, "indent": 0, "parameters": [0, { "list": [{ "code": 3, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 3, "indent": null }] },
@@ -706,12 +706,12 @@
             { "code": 205, "indent": 0, "parameters": [10, { "list": [{ "code": 25, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 25, "indent": null }] },
             { "code": 213, "indent": 0, "parameters": [7, 1, false] },
-            { "code": 101, "indent": 0, "parameters": ["Actor3", 2, 0, 2, "Ishia"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/JogadoresFutebol", 0, 0, 2, "Ishia"] },
             { "code": 401, "indent": 0, "parameters": ["Eu sou Mc ferrou, mas ele é Mc deu mal! "] },
             { "code": 401, "indent": 0, "parameters": ["Toma, Thorin! Receba! AHHAHAHHAHHA!"] },
-            { "code": 101, "indent": 0, "parameters": ["Actor2", 5, 0, 2, "Magali"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/JogadoresFutebol", 1, 0, 2, "Magali"] },
             { "code": 401, "indent": 0, "parameters": ["Que babado!"] },
-            { "code": 101, "indent": 0, "parameters": ["SF_Actor2", 6, 0, 2, "Shane"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/JogadoresFutebol", 3, 0, 2, "Shane"] },
             { "code": 401, "indent": 0, "parameters": ["Eita lasqueira!"] },
             { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 4, 0, 2, "Dragobur"] },
             { "code": 401, "indent": 0, "parameters": ["É frustrante, mas dessa vez eu não tenho"] },
@@ -917,7 +917,7 @@
             { "code": 401, "indent": 0, "parameters": ["de acesso. Só mais uma partida e finalmente"] },
             { "code": 401, "indent": 0, "parameters": ["teremos nossa chance na liga profissional."] },
             { "code": 213, "indent": 0, "parameters": [2, 1, false] },
-            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal1", 2, 0, 2, "Filena"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal1", 2, 0, 2, "Principal/$Filena"] },
             { "code": 401, "indent": 0, "parameters": ["Exatamente. Nós seremos os melhores jogadores"] },
             { "code": 401, "indent": 0, "parameters": ["de futebol rúnico da cidade!"] },
             { "code": 213, "indent": 0, "parameters": [3, 4, false] },
@@ -990,18 +990,18 @@
             { "code": 205, "indent": 0, "parameters": [10, { "list": [{ "code": 25, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 25, "indent": null }] },
             { "code": 213, "indent": 0, "parameters": [7, 1, false] },
-            { "code": 101, "indent": 0, "parameters": ["Actor3", 2, 0, 2, "Ishia"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/JogadoresFutebol", 0, 0, 2, "Ishia"] },
             { "code": 401, "indent": 0, "parameters": ["Eu sou Mc ferrou, mas ele é Mc deu mal! "] },
             { "code": 401, "indent": 0, "parameters": ["Toma, Thorin! Receba! AHHAHAHHAHHA!"] },
-            { "code": 101, "indent": 0, "parameters": ["Actor2", 5, 0, 2, "Magali"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/JogadoresFutebol", 1, 0, 2, "Magali"] },
             { "code": 401, "indent": 0, "parameters": ["Que babado!"] },
-            { "code": 101, "indent": 0, "parameters": ["SF_Actor2", 6, 0, 2, "Shane"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/JogadoresFutebol", 3, 0, 2, "Shane"] },
             { "code": 401, "indent": 0, "parameters": ["Eita lasqueira!"] },
             { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 4, 0, 2, "Dragobur"] },
             { "code": 401, "indent": 0, "parameters": ["É frustrante, mas dessa vez eu não tenho"] },
             { "code": 401, "indent": 0, "parameters": ["como te salvar, Thorin. É melhor você obedecer,"] },
             { "code": 401, "indent": 0, "parameters": ["vá com eles para casa. Nos falamos depois."] },
-            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal1", 2, 0, 2, "Filena"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal1", 2, 0, 2, "Principal/$Filena"] },
             { "code": 401, "indent": 0, "parameters": ["Qual seu problema? Você não pode deixar ele"] },
             { "code": 401, "indent": 0, "parameters": ["falar assim com você, Thorin!"] },
             { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal1", 3, 0, 2, "Kilin"] },
@@ -1396,7 +1396,7 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Estadio/$Torcedor2", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [
-            { "code": 101, "indent": 0, "parameters": ["People1", 3, 0, 2, ""] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/TorcedoresVestiario", 1, 0, 2, ""] },
             { "code": 401, "indent": 0, "parameters": ["Não jogar, Thorin?"] },
             { "code": 401, "indent": 0, "parameters": ["Todos estão contando com você!"] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -1468,7 +1468,7 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Estadio/$Torcedor1", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [
-            { "code": 101, "indent": 0, "parameters": ["SF_Actor2", 6, 0, 2, ""] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/TorcedoresVestiario", 2, 0, 2, ""] },
             { "code": 401, "indent": 0, "parameters": ["Thorin... você precisa jogar!"] },
             { "code": 401, "indent": 0, "parameters": ["Estamos perdendo."] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -1540,7 +1540,7 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Estadio/$Torcedor3", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [
-            { "code": 101, "indent": 0, "parameters": ["People4", 6, 0, 2, ""] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/TorcedoresVestiario", 0, 0, 2, ""] },
             { "code": 401, "indent": 0, "parameters": ["O que tá fazendo aí?"] },
             { "code": 401, "indent": 0, "parameters": ["Vai lá jogar, Thorin!"] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -1681,7 +1681,7 @@
             "variableValue": 6
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "$Tharok", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Tharok", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
             { "code": 205, "indent": 0, "parameters": [0, { "list": [{ "code": 17, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 17, "indent": null }] },
@@ -1752,7 +1752,7 @@
             "variableValue": 6
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "$Mhordred", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Mhordred", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
             { "code": 205, "indent": 0, "parameters": [0, { "list": [{ "code": 18, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 18, "indent": null }] },
