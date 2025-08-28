@@ -434,11 +434,8 @@
             "variableValue": 7
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "kilin", "direction": 2, "pattern": 0, "characterIndex": 0 },
-          "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Kilin"] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
+          "image": { "tileId": 0, "characterName": "Principal/$Kilin", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -466,9 +463,8 @@
             "variableValue": 8
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "kilin", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Kilin", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Kilin"] },
             {
               "code": 205,
               "indent": 0,
@@ -779,10 +775,7 @@
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "mhordred", "direction": 4, "pattern": 0, "characterIndex": 0 },
-          "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Mhordred"] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -877,11 +870,8 @@
             "variableValue": 7
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "tharok", "direction": 2, "pattern": 0, "characterIndex": 0 },
-          "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Tharok"] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
+          "image": { "tileId": 0, "characterName": "Principal/$Tharok", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -909,11 +899,8 @@
             "variableValue": 8
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "tharok", "direction": 2, "pattern": 0, "characterIndex": 0 },
-          "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Tharok"] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
+          "image": { "tileId": 0, "characterName": "Principal/$Tharok", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -1021,11 +1008,11 @@
             "variableValue": 5
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "dwarf1", "direction": 2, "pattern": 0, "characterIndex": 4 },
+          "image": { "tileId": 0, "characterName": "Kravens/$GuardaKravens", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [
             { "code": 205, "indent": 0, "parameters": [6, { "list": [{ "code": 18, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 18, "indent": null }] },
-            { "code": 101, "indent": 0, "parameters": ["Actor3", 4, 0, 2, "Guarda"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/GuardaExpedicionarios", 0, 0, 2, "Guarda"] },
             { "code": 401, "indent": 0, "parameters": ["Hahaha! Mais uma vez, eu ganhei!"] },
             { "code": 401, "indent": 0, "parameters": ["Me deve uma maçã!"] },
             {
@@ -1044,7 +1031,7 @@
             { "code": 505, "indent": 0, "parameters": [{ "code": 14, "parameters": [0, 0], "indent": null }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 14, "parameters": [0, 0], "indent": null }] },
             { "code": 213, "indent": 0, "parameters": [7, 5, true] },
-            { "code": 101, "indent": 0, "parameters": ["Actor3", 5, 0, 2, "Vendedor"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/GuardaExpedicionarios", 1, 0, 2, "Vendedor"] },
             { "code": 401, "indent": 0, "parameters": ["Não é justo! Você está marcando as cartas, "] },
             { "code": 401, "indent": 0, "parameters": ["tenho certeza!"] },
             {
@@ -1073,17 +1060,17 @@
             },
             { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 2,11"], "indent": null }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 25, "indent": null }] },
-            { "code": 101, "indent": 0, "parameters": ["Actor3", 4, 0, 2, "Guarda"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/GuardaExpedicionarios", 0, 0, 2, "Guarda"] },
             { "code": 401, "indent": 0, "parameters": ["Ei! Quem são vocês?"] },
             { "code": 401, "indent": 0, "parameters": ["Mais gente da expedição do Tusk?"] },
             { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 0, 0, 2, "Thorin"] },
             { "code": 401, "indent": 0, "parameters": ["Sim, meu nome é Thorin. "] },
             { "code": 401, "indent": 0, "parameters": ["Estou aqui a mando dele."] },
             { "code": 213, "indent": 0, "parameters": [6, 2, true] },
-            { "code": 101, "indent": 0, "parameters": ["Actor3", 4, 0, 2, "Guarda"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/GuardaExpedicionarios", 0, 0, 2, "Guarda"] },
             { "code": 401, "indent": 0, "parameters": ["Ah, mais reforços."] },
             { "code": 401, "indent": 0, "parameters": ["Não esperava mais ninguém hoje..."] },
-            { "code": 101, "indent": 0, "parameters": ["Actor3", 4, 0, 2, "Guarda"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/GuardaExpedicionarios", 0, 0, 2, "Guarda"] },
             { "code": 401, "indent": 0, "parameters": ["Espere aí. Eu preciso ter certeza, por acaso"] },
             { "code": 401, "indent": 0, "parameters": ["você tem o contrato aí?! Entregue-o para mim!"] },
             {
@@ -1106,7 +1093,7 @@
             { "code": 101, "indent": 1, "parameters": ["Portraits menores/Principal2", 0, 0, 2, "Thorin"] },
             { "code": 401, "indent": 1, "parameters": ["Já mostrei o contrato ao Tusk, mas tudo bem,"] },
             { "code": 401, "indent": 1, "parameters": ["aqui está."] },
-            { "code": 101, "indent": 1, "parameters": ["Actor3", 4, 0, 2, "Guarda"] },
+            { "code": 101, "indent": 1, "parameters": ["Portraits menores/GuardaExpedicionarios", 0, 0, 2, "Guarda"] },
             { "code": 401, "indent": 1, "parameters": ["Deixe-me verificar isso..."] },
             {
               "code": 205,
@@ -1137,7 +1124,7 @@
             { "code": 505, "indent": 1, "parameters": [{ "code": 44, "parameters": [{ "name": "Decision3", "volume": 90, "pitch": 100, "pan": 0 }], "indent": 0 }] },
             { "code": 505, "indent": 1, "parameters": [{ "code": 25, "indent": null }] },
             { "code": 505, "indent": 1, "parameters": [{ "code": 33, "indent": null }] },
-            { "code": 101, "indent": 1, "parameters": ["Actor3", 4, 0, 2, "Guarda"] },
+            { "code": 101, "indent": 1, "parameters": ["Portraits menores/GuardaExpedicionarios", 0, 0, 2, "Guarda"] },
             { "code": 401, "indent": 1, "parameters": ["Tudo certo por aqui! Tusk está logo ali, "] },
             { "code": 401, "indent": 1, "parameters": ["descendo para a fogueira!"] },
             {
@@ -1188,11 +1175,11 @@
             { "code": 101, "indent": 1, "parameters": ["Portraits menores/Principal2", 0, 0, 2, "Thorin"] },
             { "code": 401, "indent": 1, "parameters": ["Já mostrei o contrato ao Tusk, não acho"] },
             { "code": 401, "indent": 1, "parameters": ["que seja necessário mostrar a você também."] },
-            { "code": 101, "indent": 1, "parameters": ["Actor3", 4, 0, 2, "Guarda"] },
+            { "code": 101, "indent": 1, "parameters": ["Portraits menores/GuardaExpedicionarios", 0, 0, 2, "Guarda"] },
             { "code": 401, "indent": 1, "parameters": ["Você é abusado, ein, moleque! Anões assim não"] },
             { "code": 401, "indent": 1, "parameters": ["costumam durar muito por aqui..."] },
             { "code": 213, "indent": 1, "parameters": [6, 7, false] },
-            { "code": 101, "indent": 1, "parameters": ["Actor3", 4, 0, 2, "Guarda"] },
+            { "code": 101, "indent": 1, "parameters": ["Portraits menores/GuardaExpedicionarios", 0, 0, 2, "Guarda"] },
             { "code": 401, "indent": 1, "parameters": ["Boa sorte lá fora! Infelizmente para você,"] },
             { "code": 401, "indent": 1, "parameters": ["sem contrato, ninguém pode entrar. Fora daqui!"] },
             { "code": 201, "indent": 1, "parameters": [0, 3, 143, 48, 0, 0] },
@@ -1236,9 +1223,9 @@
             "variableValue": 6
           },
           "directionFix": true,
-          "image": { "tileId": 0, "characterName": "dwarf1", "direction": 6, "pattern": 0, "characterIndex": 4 },
+          "image": { "tileId": 0, "characterName": "Kravens/$GuardaKravens", "direction": 6, "pattern": 2, "characterIndex": 0 },
           "list": [
-            { "code": 101, "indent": 0, "parameters": ["Actor3", 4, 0, 2, "Guarda"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/GuardaExpedicionarios", 0, 0, 2, "Guarda"] },
             { "code": 401, "indent": 0, "parameters": ["Tusk está te esperando do lado de baixo "] },
             { "code": 401, "indent": 0, "parameters": ["da fogueira."] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -1308,9 +1295,9 @@
             "variableValue": 0
           },
           "directionFix": true,
-          "image": { "tileId": 0, "characterName": "Actor3", "direction": 4, "pattern": 0, "characterIndex": 1 },
+          "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario5", "direction": 4, "pattern": 1, "characterIndex": 0 },
           "list": [
-            { "code": 101, "indent": 0, "parameters": ["Actor3", 1, 0, 2, "Serena"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/GuardaExpedicionarios", 1, 0, 2, "Vendedor"] },
             { "code": 401, "indent": 0, "parameters": ["Eu mal consigo comprar mercadorias para vender"] },
             { "code": 401, "indent": 0, "parameters": ["E o pouco que consigo esses guardas me roubam"] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -1391,9 +1378,9 @@
             "variableValue": 0
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Actor2", "direction": 2, "pattern": 0, "characterIndex": 1 },
+          "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario1", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [
-            { "code": 101, "indent": 0, "parameters": ["Actor2", 1, 0, 2, "Naga"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/GuardaExpedicionarios", 3, 0, 2, "Naga"] },
             { "code": 401, "indent": 0, "parameters": ["Nada como carne quente e cerveja gelada para "] },
             { "code": 401, "indent": 0, "parameters": ["recuperarmos as forças!"] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -1481,9 +1468,9 @@
             "variableValue": 0
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Actor2", "direction": 6, "pattern": 1, "characterIndex": 2 },
+          "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario2", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [
-            { "code": 101, "indent": 0, "parameters": ["Actor2", 2, 0, 2, "Rascal"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/GuardaExpedicionarios", 4, 0, 2, "Rascal"] },
             { "code": 401, "indent": 0, "parameters": ["Nada como carne quente e cerveja gelada para "] },
             { "code": 401, "indent": 0, "parameters": ["recuperarmos as forças!"] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -1614,7 +1601,6 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "", "direction": 6, "pattern": 0, "characterIndex": 0 },
           "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Tusk"] },
             { "code": 101, "indent": 0, "parameters": ["Personagens Daratrine/Tusk", 0, 0, 2, "Tusk"] },
             { "code": 401, "indent": 0, "parameters": ["Bora!"] },
             { "code": 108, "indent": 0, "parameters": ["Desenvolver um diálogo que uma tempestade de neve está se aproximando"] },
@@ -1924,11 +1910,8 @@
             "variableValue": 7
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "mhordred", "direction": 2, "pattern": 0, "characterIndex": 0 },
-          "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Mhordred"] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
+          "image": { "tileId": 0, "characterName": "Principal/$Mhordred", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -1956,11 +1939,8 @@
             "variableValue": 8
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "mhordred", "direction": 2, "pattern": 0, "characterIndex": 0 },
-          "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Mhordred"] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
+          "image": { "tileId": 0, "characterName": "Principal/$Mhordred", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -2522,10 +2502,7 @@
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "kilin", "direction": 4, "pattern": 0, "characterIndex": 0 },
-          "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Kilin"] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -2621,10 +2598,7 @@
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "tharok", "direction": 4, "pattern": 0, "characterIndex": 0 },
-          "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Tharok"] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -2721,7 +2695,7 @@
           "directionFix": true,
           "image": { "tileId": 0, "characterName": "Actor3", "direction": 4, "pattern": 0, "characterIndex": 1 },
           "list": [
-            { "code": 101, "indent": 0, "parameters": ["Actor3", 1, 0, 2, "Serena"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/GuardaExpedicionarios", 1, 0, 2, "Vendedor"] },
             { "code": 401, "indent": 0, "parameters": ["Eu mal consigo comprar mercadorias para vender"] },
             { "code": 401, "indent": 0, "parameters": ["E o pouco que consigo esses guardas me roubam"] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -2947,7 +2921,7 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Actor2", "direction": 4, "pattern": 0, "characterIndex": 1 },
           "list": [
-            { "code": 101, "indent": 0, "parameters": ["Actor2", 1, 0, 2, "Naga"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/GuardaExpedicionarios", 3, 0, 2, "Naga"] },
             { "code": 401, "indent": 0, "parameters": ["Nada como carne quente e cerveja gelada para "] },
             { "code": 401, "indent": 0, "parameters": ["recuperarmos as forças!"] },
             { "code": 0, "indent": 0, "parameters": [] }
