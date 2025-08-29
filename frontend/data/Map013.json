@@ -311,6 +311,8 @@
             { "code": 121, "indent": 0, "parameters": [6, 6, 0] },
             { "code": 122, "indent": 0, "parameters": [32, 32, 0, 0, 4] },
             { "code": 123, "indent": 0, "parameters": ["A", 0] },
+            { "code": 230, "indent": 0, "parameters": [60] },
+            { "code": 355, "indent": 0, "parameters": ["SceneManager.push(Scene_Equip);"] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
