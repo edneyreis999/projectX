@@ -533,68 +533,7 @@
       "x": 44,
       "y": 16
     },
-    {
-      "id": 5,
-      "name": "9 Kravens",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 61,
-            "switch1Valid": true,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
-          "list": [
-            { "code": 355, "indent": 0, "parameters": ["(() => {"] },
-            { "code": 655, "indent": 0, "parameters": ["  const KRAVEN_ID = 9;"] },
-            { "code": 655, "indent": 0, "parameters": ["  const STATE_VAR = 25;"] },
-            { "code": 655, "indent": 0, "parameters": ["  const TARGET_STATE = 3;"] },
-            { "code": 655, "indent": 0, "parameters": ["  const QUEST_SWITCH = 61;"] },
-            { "code": 655, "indent": 0, "parameters": [""] },
-            { "code": 655, "indent": 0, "parameters": ["  if (!$gameSwitches.value(QUEST_SWITCH)) return;"] },
-            { "code": 655, "indent": 0, "parameters": [""] },
-            { "code": 655, "indent": 0, "parameters": ["  const have = $gameParty.numItems($dataItems[KRAVEN_ID]) || 0;"] },
-            { "code": 655, "indent": 0, "parameters": ["  const state = $gameVariables.value(STATE_VAR) || 0;"] },
-            { "code": 655, "indent": 0, "parameters": [""] },
-            { "code": 655, "indent": 0, "parameters": ["  if (have >= 9 && state !== TARGET_STATE) {"] },
-            { "code": 655, "indent": 0, "parameters": ["    $gameVariables.setValue(STATE_VAR, TARGET_STATE);"] },
-            { "code": 655, "indent": 0, "parameters": ["    $gameVariables.setValue(26, 1);"] },
-            { "code": 655, "indent": 0, "parameters": ["    $gameMessage.add(\"Pronto, já peguei todos os minérios, hora de voltar até aquele coalho miserável...\");"] },
-            { "code": 655, "indent": 0, "parameters": ["    $gameSwitches.setValue(QUEST_SWITCH, false);"] },
-            { "code": 655, "indent": 0, "parameters": ["  }"] },
-            { "code": 655, "indent": 0, "parameters": ["})();"] },
-            { "code": 655, "indent": 0, "parameters": [""] },
-            { "code": 655, "indent": 0, "parameters": [" "] },
-            { "code": 230, "indent": 0, "parameters": [10] },
-            { "code": 122, "indent": 0, "parameters": [35, 35, 0, 0, 1] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 4,
-          "walkAnime": true
-        }
-      ],
-      "x": 2,
-      "y": 0
-    },
+    null,
     {
       "id": 6,
       "name": "Anao",
@@ -4851,6 +4790,7 @@
       ],
       "x": 38,
       "y": 23
-    }
+    },
+    null
   ]
 }
