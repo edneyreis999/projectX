@@ -408,7 +408,7 @@
             "variableValue": 3
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Evil", "direction": 2, "pattern": 0, "characterIndex": 1 },
+          "image": { "tileId": 0, "characterName": "Principal/$Tusk", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
             {
               "code": 205,
@@ -517,7 +517,7 @@
             "variableValue": 3
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Evil", "direction": 2, "pattern": 0, "characterIndex": 1 },
+          "image": { "tileId": 0, "characterName": "Principal/$Tusk", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
             { "code": 101, "indent": 0, "parameters": ["Personagens Daratrine/Tusk", 0, 0, 2, "Tusk"] },
             { "code": 401, "indent": 0, "parameters": ["O que está fazendo aqui parado?"] },
@@ -551,7 +551,7 @@
             "variableValue": 4
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Evil", "direction": 2, "pattern": 0, "characterIndex": 1 },
+          "image": { "tileId": 0, "characterName": "Principal/$Tusk", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
             { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 5, 0, 2, "Tusk"] },
             { "code": 401, "indent": 0, "parameters": ["O que é que você está fazendo aqui, moleque?!"] },
@@ -622,7 +622,7 @@
             "variableValue": 7
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Evil", "direction": 2, "pattern": 1, "characterIndex": 1 },
+          "image": { "tileId": 0, "characterName": "Principal/$Tusk", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
             { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 5, 0, 2, "Tusk"] },
             { "code": 401, "indent": 0, "parameters": ["Eu já não te falei para parar de perder tempo"] },
@@ -923,162 +923,8 @@
       "x": 18,
       "y": 38
     },
-    {
-      "id": 5,
-      "name": "Minerador",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 33,
-            "variableValid": true,
-            "variableValue": 3
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Actor2", "direction": 2, "pattern": 0, "characterIndex": 1 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              { "code": 2, "indent": null },
-              { "code": 2, "indent": null },
-              { "code": 3, "indent": null },
-              { "code": 3, "indent": null },
-              { "code": 0, "parameters": [] }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 32,
-            "variableValid": true,
-            "variableValue": 9
-          },
-          "directionFix": false,
-          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 10,
-      "y": 24
-    },
-    {
-      "id": 6,
-      "name": "Minerador",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 33,
-            "variableValid": true,
-            "variableValue": 3
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario2", "direction": 2, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              { "code": 4, "indent": null },
-              { "code": 4, "indent": null },
-              { "code": 4, "indent": null },
-              { "code": 4, "indent": null },
-              { "code": 0, "parameters": [] }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 32,
-            "variableValid": true,
-            "variableValue": 9
-          },
-          "directionFix": false,
-          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 12,
-      "y": 15
-    },
+    null,
+    null,
     {
       "id": 7,
       "name": "Transfer (Mina de Kravens 1F)",
@@ -1290,7 +1136,7 @@
     null,
     {
       "id": 10,
-      "name": "Minerador",
+      "name": "Expedicionário 5",
       "note": "",
       "pages": [
         {
@@ -1310,14 +1156,22 @@
             "variableValue": 3
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Actor3", "direction": 4, "pattern": 0, "characterIndex": 1 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario5", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/GuardaExpedicionarios", 1, 0, 2, "Xender"] },
+            { "code": 401, "indent": 0, "parameters": ["É melhor ter muito cuidado quando andar por aí."] },
+            { "code": 401, "indent": 0, "parameters": ["Está tudo desmoronando, meu jovem!"] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
           "moveFrequency": 3,
           "moveRoute": {
             "list": [
+              { "code": 2, "indent": null },
+              { "code": 2, "indent": null },
+              { "code": 2, "indent": null },
               { "code": 3, "indent": null },
               { "code": 3, "indent": null },
-              { "code": 4, "indent": null },
+              { "code": 3, "indent": null },
               { "code": 0, "parameters": [] }
             ],
             "repeat": true,
@@ -1325,7 +1179,7 @@
             "wait": false
           },
           "moveSpeed": 3,
-          "moveType": 0,
+          "moveType": 3,
           "priorityType": 1,
           "stepAnime": false,
           "through": false,
@@ -1344,9 +1198,9 @@
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 32,
+            "variableId": 33,
             "variableValid": true,
-            "variableValue": 9
+            "variableValue": 10
           },
           "directionFix": false,
           "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
@@ -1362,12 +1216,12 @@
           "walkAnime": true
         }
       ],
-      "x": 5,
-      "y": 10
+      "x": 30,
+      "y": 5
     },
     {
       "id": 11,
-      "name": "Minerador",
+      "name": "Minerador 1",
       "note": "",
       "pages": [
         {
@@ -1387,8 +1241,13 @@
             "variableValue": 3
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "People1", "direction": 2, "pattern": 1, "characterIndex": 6 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "image": { "tileId": 0, "characterName": "Kravens/$Minerador1Andar1", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/GuardaExpedicionarios", 5, 0, 2, "Eldrin"] },
+            { "code": 401, "indent": 0, "parameters": ["Minha pícareta quebrou! Mas que merda!"] },
+            { "code": 213, "indent": 0, "parameters": [0, 7, false] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
           "moveFrequency": 3,
           "moveRoute": {
             "list": [
@@ -1404,7 +1263,7 @@
             "wait": false
           },
           "moveSpeed": 3,
-          "moveType": 0,
+          "moveType": 1,
           "priorityType": 1,
           "stepAnime": false,
           "through": false,
@@ -1441,8 +1300,8 @@
           "walkAnime": true
         }
       ],
-      "x": 25,
-      "y": 10
+      "x": 7,
+      "y": 17
     },
     null,
     {
@@ -1467,7 +1326,7 @@
             "variableValue": 4
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "kilin", "direction": 8, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Kilin", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
@@ -1534,7 +1393,7 @@
             "variableValue": 4
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "mhordred", "direction": 8, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Mhordred", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
@@ -1601,45 +1460,8 @@
             "variableValue": 4
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "tharok", "direction": 8, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Tharok", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 33,
-            "variableValid": true,
-            "variableValue": 5
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "tharok", "direction": 8, "pattern": 1, "characterIndex": 0 },
-          "list": [
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [15, { "list": [{ "code": 45, "parameters": ["Move To: 23,20"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move To: 23,20"], "indent": null }] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
