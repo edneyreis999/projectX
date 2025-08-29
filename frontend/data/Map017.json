@@ -2222,9 +2222,9 @@
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 33,
+            "variableId": 30,
             "variableValid": true,
-            "variableValue": 1
+            "variableValue": 5
           },
           "directionFix": false,
           "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
@@ -2721,8 +2721,8 @@
           "walkAnime": true
         }
       ],
-      "x": 14,
-      "y": 12
+      "x": 5,
+      "y": 21
     },
     {
       "id": 15,
@@ -2846,8 +2846,8 @@
           "walkAnime": true
         }
       ],
-      "x": 15,
-      "y": 12
+      "x": 4,
+      "y": 22
     },
     {
       "id": 16,
@@ -2971,8 +2971,8 @@
           "walkAnime": true
         }
       ],
-      "x": 16,
-      "y": 12
+      "x": 6,
+      "y": 22
     },
     {
       "id": 17,
