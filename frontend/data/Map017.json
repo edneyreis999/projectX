@@ -252,11 +252,11 @@
             { "code": 101, "indent": 1, "parameters": ["Portraits menores/Principal2", 0, 0, 2, "Thorin"] },
             { "code": 401, "indent": 1, "parameters": ["Fedelho?! Por um acaso o nome Forjaprata lhe"] },
             { "code": 401, "indent": 1, "parameters": ["diz alguma coisa?!"] },
-            { "code": 101, "indent": 1, "parameters": ["Portraits menores/Principal2", 5, 0, 2, "Jogador"] },
+            { "code": 101, "indent": 1, "parameters": ["Portraits menores/Principal2", 5, 0, 2, "Tusk"] },
             { "code": 401, "indent": 1, "parameters": ["Forjaprata?!... você é um Forjaprata?"] },
             { "code": 101, "indent": 1, "parameters": ["Portraits menores/Principal2", 0, 0, 2, "Thorin"] },
             { "code": 401, "indent": 1, "parameters": ["Thorin Forjaprata, ao seu dispor."] },
-            { "code": 101, "indent": 1, "parameters": ["Portraits menores/Principal2", 5, 0, 2, "Jogador"] },
+            { "code": 101, "indent": 1, "parameters": ["Portraits menores/Principal2", 5, 0, 2, "Tusk"] },
             { "code": 401, "indent": 1, "parameters": ["As coisas estão ficando interessantes! Eu já"] },
             { "code": 401, "indent": 1, "parameters": ["entendi, sou o cão de Balastrus e você o do"] },
             { "code": 401, "indent": 1, "parameters": ["seu pai. Nós dois estamos aqui para sermos "] },
@@ -316,7 +316,11 @@
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Principal/$Tusk", "direction": 2, "pattern": 1, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "list": [
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 5, 0, 2, "Tusk"] },
+            { "code": 401, "indent": 0, "parameters": ["Pare de me encher o saco!"] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -2604,7 +2608,7 @@
     },
     {
       "id": 14,
-      "name": "Tulla",
+      "name": "Expedicionário 1",
       "note": "",
       "pages": [
         {
@@ -2624,8 +2628,12 @@
             "variableValue": 3
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario1", "direction": 4, "pattern": 1, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario1", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Expedicionário 1"] },
+            { "code": 401, "indent": 0, "parameters": ["É perigoso lá fora, se prepare."] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -2683,7 +2691,11 @@
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario1", "direction": 2, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "list": [
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Expedicionário 1"] },
+            { "code": 401, "indent": 0, "parameters": ["Preciso dormir! Vou correr para casa."] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -2725,11 +2737,11 @@
         }
       ],
       "x": 5,
-      "y": 21
+      "y": 22
     },
     {
       "id": 15,
-      "name": "Ronan",
+      "name": "Expedicionário 2",
       "note": "",
       "pages": [
         {
@@ -2750,7 +2762,11 @@
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario2", "direction": 2, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "list": [
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Expedicionário 2"] },
+            { "code": 401, "indent": 0, "parameters": ["Quanto antes partirmos, mais rápido podemos voltar!"] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -2808,7 +2824,11 @@
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario2", "direction": 2, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "list": [
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Expedicionário 2"] },
+            { "code": 401, "indent": 0, "parameters": ["Finalmente chegamos. Estou exausto!"] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -2854,7 +2874,7 @@
     },
     {
       "id": 16,
-      "name": "Sirena",
+      "name": "Expedicionário 3",
       "note": "",
       "pages": [
         {
@@ -2875,7 +2895,11 @@
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario3", "direction": 2, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "list": [
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Expedicionário 3"] },
+            { "code": 401, "indent": 0, "parameters": ["Odeio esse trabalho!"] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -2933,7 +2957,11 @@
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario3", "direction": 2, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "list": [
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Expedicionário 3"] },
+            { "code": 401, "indent": 0, "parameters": ["Eu esperava receber o pagamento hoje. Mas que merda!"] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -2977,73 +3005,7 @@
       "x": 6,
       "y": 22
     },
-    {
-      "id": 17,
-      "name": "Pinguço",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 30,
-            "variableValid": true,
-            "variableValue": 3
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario4", "direction": 2, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 33,
-            "variableValid": true,
-            "variableValue": 1
-          },
-          "directionFix": false,
-          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": true,
-          "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 5,
-      "y": 22
-    },
+    null,
     {
       "id": 18,
       "name": "Baú",
