@@ -4,102 +4,94 @@
 //=============================================================================
 
 /**
- * Classe de domínio da Mina de Kravens seguindo princípios de Clean Architecture
- * Contém apenas JavaScript puro, sem dependências do RPG Maker
+ * Classe de domínio da Mina de Kravens seguindo princípios de Domain Driven Design
+ * Contém apenas JavaScript puro, sem dependências externas
+ * Responsável apenas pela regra de negócio da mineração
  */
 class MinaKravensDomain {
-  constructor(config) {
-    this.totalKravensNecessarios = config.totalKravensNecessarios;
-    this.totalKravensNaMina = config.totalKravensNaMina;
-    this.idItemKraven = config.idItemKraven;
-    this.idItemPedra = config.idItemPedra;
-    this.idVarKravensColetados = config.idVarKravensColetados;
-    this.idVarPilhasRestantes = config.idVarPilhasRestantes;
-    this.idVarEstadoBoss = config.idVarEstadoBoss;
-
-    // Services (injetados via dependência)
-    this.coreService = config.coreService;
-    this.questService = config.questService;
-    this.logger = config.logger;
-
-    // Estado dinâmico
-    this.kravensColetados = 0;
-    this.pilhasRestantes = this.totalKravensNaMina;
+  constructor(totalKravensNecessarios, totalPilhasDisponiveis) {
+    this.totalKravensNecessarios = totalKravensNecessarios;
+    this.totalPilhasDisponiveis = totalPilhasDisponiveis;
   }
 
   /**
-   * Sincroniza o estado com as variáveis do jogo
+   * Determina o resultado da mineração baseado no estado atual
+   * @param {number} kravensJaColetados - Quantidade de Kravens já coletados
+   * @param {number} pilhasJaMineradas - Quantidade de pilhas já mineradas
+   * @returns {Object} Resultado da mineração com tipo e informações adicionais
    */
-  syncFromGameVariables() {
-    this.kravensColetados = this.coreService.getGameVariable(this.idVarKravensColetados, 0);
+  executarMineracao(kravensJaColetados, pilhasJaMineradas) {
+    const pilhasRestantes = this.totalPilhasDisponiveis - pilhasJaMineradas;
 
-    if (this.idVarPilhasRestantes > 0) {
-      let pilhasRestantesSalvas = this.coreService.getGameVariable(this.idVarPilhasRestantes, 0);
-
-      // Inicializa no primeiro uso de um novo jogo (quando ambas estão 0)
-      if (pilhasRestantesSalvas <= 0 && this.kravensColetados <= 0) {
-        pilhasRestantesSalvas = this.totalKravensNaMina;
-        this.coreService.setGameVariable(this.idVarPilhasRestantes, pilhasRestantesSalvas);
-      }
-
-      this.pilhasRestantes = pilhasRestantesSalvas;
+    // Se o jogador já coletou todos os Kravens necessários, sempre retorna pedra
+    if (this.isQuestCompleta(kravensJaColetados)) {
+      return {
+        tipo: 'Pedra',
+        questCompleta: true,
+        pilhasRestantes: pilhasRestantes - 1,
+        kravensColetados: kravensJaColetados,
+      };
     }
+
+    // Calcula a chance de drop de Kraven
+    const pilhasRestantesAposMineracao = pilhasRestantes - 1;
+    const chanceDeObterKraven = this.calcularChanceKraven(kravensJaColetados, pilhasRestantesAposMineracao);
+
+    // Determina o resultado
+    const obteuKraven = Math.random() * 100 <= chanceDeObterKraven;
+    const novosKravensColetados = obteuKraven ? kravensJaColetados + 1 : kravensJaColetados;
+
+    return {
+      tipo: obteuKraven ? 'Kraven' : 'Pedra',
+      questCompleta: this.isQuestCompleta(novosKravensColetados),
+      deveAtivarRachadura: this.shouldAtivarRachadura(novosKravensColetados),
+      pilhasRestantes: pilhasRestantesAposMineracao,
+      kravensColetados: novosKravensColetados,
+      chanceCalculada: chanceDeObterKraven,
+    };
   }
 
   /**
-   * Calcula a chance de drop de Kraven baseado nas pilhas restantes
+   * Calcula a chance de drop de Kraven baseado no estado atual
+   * @param {number} kravensJaColetados - Kravens já coletados
+   * @param {number} pilhasRestantes - Pilhas restantes após a mineração atual
+   * @returns {number} Chance em percentual (0-100)
    */
-  calcularChanceKraven(pilhasRestantesParaMeta) {
-    this.logger.debug('Estado antes do cálculo de chance', {
-      kravensColetados: this.kravensColetados,
-      totalNecessarios: this.totalKravensNecessarios,
-      pilhasRestantesParaMeta,
-    });
+  calcularChanceKraven(kravensJaColetados, pilhasRestantes) {
+    const kravensRestantesParaConcluir = this.totalKravensNecessarios - kravensJaColetados;
 
-    const kravensRestantesParaConcluir = this.totalKravensNecessarios - this.kravensColetados;
+    // Se não há pilhas restantes, não pode obter Kraven
+    if (pilhasRestantes <= 0) {
+      return 0;
+    }
 
-    // Se o número de pilhas restantes é igual ao número de Kravens que faltam, chance = 100%
-    if (pilhasRestantesParaMeta <= kravensRestantesParaConcluir - 1) {
+    // Se o número de pilhas restantes é igual ou menor ao número de Kravens que faltam, chance = 100%
+    // Isso garante que o jogador sempre conseguirá os Kravens restantes
+    if (pilhasRestantes <= kravensRestantesParaConcluir) {
       return 100;
     }
 
     // Fórmula para chance gradual (limitada a 100%)
-    const chancePercentual = (kravensRestantesParaConcluir / pilhasRestantesParaMeta) * 100;
-    const chanceFinal = Math.min(chancePercentual, 100);
-    this.logger.debug('Chance calculada (%)', chanceFinal);
-    return chanceFinal;
+    const chancePercentual = (kravensRestantesParaConcluir / pilhasRestantes) * 100;
+    return Math.min(chancePercentual, 100);
   }
 
   /**
    * Verifica se a quest foi completada
+   * @param {number} kravensColetados - Quantidade de Kravens coletados
+   * @returns {boolean}
    */
-  isQuestCompleta() {
-    return this.kravensColetados >= this.totalKravensNecessarios;
+  isQuestCompleta(kravensColetados) {
+    return kravensColetados >= this.totalKravensNecessarios;
   }
 
   /**
    * Verifica se deve ativar a rachadura (falta apenas 1 Kraven)
+   * @param {number} kravensColetados - Quantidade de Kravens coletados
+   * @returns {boolean}
    */
-  shouldAtivarRachadura() {
-    return this.kravensColetados === this.totalKravensNecessarios - 1;
-  }
-
-  /**
-   * Ativa a rachadura e atualiza o estado do boss
-   */
-  ativarRachadura() {
-    this.logger.warn('Rachadura ativada! Preparando para liberação do boss.');
-    this.coreService.setGameVariable(this.idVarEstadoBoss, 1);
-  }
-
-  /**
-   * Atualiza as variáveis do jogo após mineração
-   */
-  updateGameState() {
-    this.coreService.setGameVariable(this.idVarKravensColetados, this.kravensColetados);
-    if (this.idVarPilhasRestantes > 0) {
-      this.coreService.setGameVariable(this.idVarPilhasRestantes, this.pilhasRestantes);
-    }
+  shouldAtivarRachadura(kravensColetados) {
+    return kravensColetados === this.totalKravensNecessarios - 1;
   }
 }
 

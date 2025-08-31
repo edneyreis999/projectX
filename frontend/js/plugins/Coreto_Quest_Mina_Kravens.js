@@ -196,23 +196,21 @@
       constructor() {
         super('Mina de Kravens', Logger);
 
-        // Configuração do domínio
-        const domainConfig = {
-          totalKravensNecessarios: TOTAL_KRAVENS_PARA_MISSAO,
-          totalKravensNaMina: TOTAL_KRAVENS_NA_MINA,
+        // Instanciação do domínio (apenas regra de negócio)
+        this.domain = new window.MinaKravensDomain(TOTAL_KRAVENS_PARA_MISSAO, TOTAL_KRAVENS_NA_MINA);
+
+        // Configuração para o Use Case
+        const useCaseConfig = {
           idItemKraven: ID_ITEM_KRAVEN,
           idItemPedra: ID_ITEM_PEDRA,
           idVarKravensColetados: ID_VAR_KRAVENS_COLETADOS,
           idVarPilhasRestantes: ID_VAR_PILHAS_RESTANTES,
           idVarEstadoBoss: ID_VAR_ESTADO_BOSS,
-          coreService: window.CoretoCore,
-          questService: window.coreto,
-          logger: Logger,
+          totalPilhasDisponiveis: TOTAL_KRAVENS_NA_MINA,
         };
 
-        // Instanciação das camadas
-        this.domain = new window.MinaKravensDomain(domainConfig);
-        this.useCase = new window.MineracaoUseCase(this.domain, window.coreto, Logger);
+        // Instanciação do Use Case com todas as dependências
+        this.useCase = new window.MineracaoUseCase(this.domain, window.CoretoCore, window.coreto, Logger, useCaseConfig);
       }
 
       /**

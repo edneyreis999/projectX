@@ -5,13 +5,22 @@
 
 /**
  * Use Case para mineração na Mina de Kravens
- * Contém apenas JavaScript puro, sem dependências do RPG Maker
+ * Responsável por orquestrar a regra de negócio do domínio com os services
  */
 class MineracaoUseCase {
-  constructor(domain, questService, logger) {
+  constructor(domain, coreService, questService, logger, config) {
     this.domain = domain;
+    this.coreService = coreService;
     this.questService = questService;
     this.logger = logger;
+
+    // Configuração dos IDs e variáveis do RPG Maker
+    this.idItemKraven = config.idItemKraven;
+    this.idItemPedra = config.idItemPedra;
+    this.idVarKravensColetados = config.idVarKravensColetados;
+    this.idVarPilhasRestantes = config.idVarPilhasRestantes;
+    this.idVarEstadoBoss = config.idVarEstadoBoss;
+    this.totalPilhasDisponiveis = config.totalPilhasDisponiveis;
   }
 
   /**
@@ -20,82 +29,110 @@ class MineracaoUseCase {
    * @returns {string} 'Kraven' | 'Pedra'
    */
   executarMineracao(pilhaId) {
-    // Sincroniza estado com as variáveis do jogo
-    this.domain.syncFromGameVariables();
+    // Obtém o estado atual do jogo
+    const kravensJaColetados = this._obterKravensColetados();
+    const pilhasJaMineradas = this._obterPilhasJaMineradas();
 
     this.logger.info('Iniciando mineração', {
       pilhaId,
-      pilhasRestantes: this.domain.pilhasRestantes,
-      kravensColetados: this.domain.kravensColetados,
+      kravensJaColetados,
+      pilhasJaMineradas,
+      pilhasRestantes: this.totalPilhasDisponiveis - pilhasJaMineradas,
     });
 
-    // Se o jogador já coletou todos os Kravens necessários, sempre retorna pedra
-    if (this.domain.isQuestCompleta()) {
-      this._consumirPilha();
-      this._adicionarItem(this.domain.idItemPedra);
-      this.logger.info('Pedra obtida. Nenhum Kraven necessário.', {
-        pilhasRestantes: this.domain.pilhasRestantes,
-      });
-      return 'Pedra';
+    // Executa a mineração usando o domínio
+    const resultado = this.domain.executarMineracao(kravensJaColetados, pilhasJaMineradas);
+
+    this.logger.info('Resultado da mineração', resultado);
+
+    // Processa o resultado
+    this._processarResultado(resultado);
+
+    return resultado.tipo;
+  }
+
+  /**
+   * Obtém a quantidade de Kravens já coletados
+   * @private
+   * @returns {number}
+   */
+  _obterKravensColetados() {
+    return this.coreService.getGameVariable(this.idVarKravensColetados, 0);
+  }
+
+  /**
+   * Obtém a quantidade de pilhas já mineradas
+   * @private
+   * @returns {number}
+   */
+  _obterPilhasJaMineradas() {
+    if (this.idVarPilhasRestantes > 0) {
+      const pilhasRestantesSalvas = this.coreService.getGameVariable(this.idVarPilhasRestantes, 0);
+
+      // Inicializa no primeiro uso de um novo jogo (quando ambas estão 0)
+      if (pilhasRestantesSalvas <= 0 && this._obterKravensColetados() <= 0) {
+        this.coreService.setGameVariable(this.idVarPilhasRestantes, this.totalPilhasDisponiveis);
+        return 0; // Nenhuma pilha foi minerada ainda
+      }
+
+      return this.totalPilhasDisponiveis - pilhasRestantesSalvas;
     }
 
-    // Calcula a chance de drop
-    const pilhasRestantesParaMeta = this.domain.pilhasRestantes - this.domain.kravensColetados;
-    this._consumirPilha();
+    // Se não há variável de controle, assume que nenhuma pilha foi minerada
+    return 0;
+  }
 
-    const chanceDeObterKraven = this.domain.calcularChanceKraven(pilhasRestantesParaMeta);
-    this.logger.info('Chance de obter Kraven (%)', chanceDeObterKraven);
+  /**
+   * Processa o resultado da mineração
+   * @private
+   * @param {Object} resultado - Resultado retornado pelo domínio
+   */
+  _processarResultado(resultado) {
+    // Adiciona o item apropriado ao inventário
+    const itemId = resultado.tipo === 'Kraven' ? this.idItemKraven : this.idItemPedra;
+    this._adicionarItem(itemId);
 
-    // Determina o resultado
-    if (Math.random() * 100 <= chanceDeObterKraven) {
-      return this._processarKravenObtido();
-    } else {
-      return this._processarPedraObtida();
+    // Atualiza as variáveis do jogo
+    this._atualizarVariaveisJogo(resultado);
+
+    // Ativa rachadura se necessário
+    if (resultado.deveAtivarRachadura) {
+      this._ativarRachadura();
+    }
+
+    this.logger.info(`${resultado.tipo} obtido!`, {
+      kravensColetados: resultado.kravensColetados,
+      pilhasRestantes: resultado.pilhasRestantes,
+      questCompleta: resultado.questCompleta,
+    });
+  }
+
+  /**
+   * Atualiza as variáveis do jogo com o novo estado
+   * @private
+   * @param {Object} resultado - Resultado da mineração
+   */
+  _atualizarVariaveisJogo(resultado) {
+    this.coreService.setGameVariable(this.idVarKravensColetados, resultado.kravensColetados);
+
+    if (this.idVarPilhasRestantes > 0) {
+      this.coreService.setGameVariable(this.idVarPilhasRestantes, resultado.pilhasRestantes);
     }
   }
 
   /**
-   * Consome uma pilha da mina
+   * Ativa a rachadura e atualiza o estado do boss
    * @private
    */
-  _consumirPilha() {
-    this.domain.pilhasRestantes = Math.max(0, this.domain.pilhasRestantes - 1);
-    this.logger.debug('Pilha consumida', { pilhasRestantes: this.domain.pilhasRestantes });
-  }
-
-  /**
-   * Processa a obtenção de um Kraven
-   * @private
-   */
-  _processarKravenObtido() {
-    this._adicionarItem(this.domain.idItemKraven);
-    this.domain.kravensColetados++;
-    this.domain.updateGameState();
-
-    this.logger.info('Kraven obtido!', { totalColetado: this.domain.kravensColetados });
-
-    // Verifica se deve ativar a rachadura
-    if (this.domain.shouldAtivarRachadura()) {
-      this.domain.ativarRachadura();
-    }
-
-    return 'Kraven';
-  }
-
-  /**
-   * Processa a obtenção de uma Pedra
-   * @private
-   */
-  _processarPedraObtida() {
-    this._adicionarItem(this.domain.idItemPedra);
-    this.domain.updateGameState();
-    this.logger.info('Pedra obtida.');
-    return 'Pedra';
+  _ativarRachadura() {
+    this.logger.warn('Rachadura ativada! Preparando para liberação do boss.');
+    this.coreService.setGameVariable(this.idVarEstadoBoss, 1);
   }
 
   /**
    * Adiciona item ao inventário usando o serviço de quest
    * @private
+   * @param {number} itemId - ID do item
    */
   _adicionarItem(itemId) {
     const success = this.questService.addItemToInventory(itemId, 1);
