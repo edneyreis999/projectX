@@ -29,26 +29,37 @@ class MineracaoUseCase {
    * @returns {string} 'Kraven' | 'Pedra'
    */
   executarMineracao(pilhaId) {
-    // Obtém o estado atual do jogo
-    const kravensJaColetados = this._obterKravensColetados();
-    const pilhasJaMineradas = this._obterPilhasJaMineradas();
+    try {
+      // Obtém o estado atual do jogo
+      const kravensJaColetados = this._obterKravensColetados();
+      const pilhasJaMineradas = this._obterPilhasJaMineradas();
+      const rachaduraJaAtivada = this._verificarSeRachaduraJaFoiAtivada();
 
-    this.logger.info('Iniciando mineração', {
-      pilhaId,
-      kravensJaColetados,
-      pilhasJaMineradas,
-      pilhasRestantes: this.totalPilhasDisponiveis - pilhasJaMineradas,
-    });
+      // Executa a mineração usando o domínio COM o parâmetro da rachadura
+      const resultado = this.domain.executarMineracao(kravensJaColetados, pilhasJaMineradas, rachaduraJaAtivada);
 
-    // Executa a mineração usando o domínio
-    const resultado = this.domain.executarMineracao(kravensJaColetados, pilhasJaMineradas);
+      // Log crítico apenas para resultados importantes
+      if (resultado.deveAtivarRachadura || resultado.questCompleta) {
+        this.logger.info('Resultado crítico da mineração:', {
+          tipo: resultado.tipo,
+          deveAtivarRachadura: resultado.deveAtivarRachadura,
+          questCompleta: resultado.questCompleta,
+          kravensColetados: resultado.kravensColetados,
+        });
+      }
 
-    this.logger.info('Resultado da mineração', resultado);
+      // Processa o resultado
+      this._processarResultado(resultado);
 
-    // Processa o resultado
-    this._processarResultado(resultado);
-
-    return resultado.tipo;
+      return resultado.tipo;
+    } catch (error) {
+      this.logger.error('Erro durante executarMineracao:', {
+        error: error.message,
+        stack: error.stack,
+        pilhaId,
+      });
+      throw error;
+    }
   }
 
   /**
@@ -78,7 +89,6 @@ class MineracaoUseCase {
       return this.totalPilhasDisponiveis - pilhasRestantesSalvas;
     }
 
-    // Se não há variável de controle, assume que nenhuma pilha foi minerada
     return 0;
   }
 
@@ -88,23 +98,27 @@ class MineracaoUseCase {
    * @param {Object} resultado - Resultado retornado pelo domínio
    */
   _processarResultado(resultado) {
-    // Adiciona o item apropriado ao inventário
-    const itemId = resultado.tipo === 'Kraven' ? this.idItemKraven : this.idItemPedra;
-    this._adicionarItem(itemId);
+    try {
+      // Adiciona o item apropriado ao inventário
+      const itemId = resultado.tipo === 'Kraven' ? this.idItemKraven : this.idItemPedra;
+      this._adicionarItem(itemId);
 
-    // Atualiza as variáveis do jogo
-    this._atualizarVariaveisJogo(resultado);
+      // Atualiza as variáveis do jogo
+      this._atualizarVariaveisJogo(resultado);
 
-    // Ativa rachadura se necessário
-    if (resultado.deveAtivarRachadura) {
-      this._ativarRachadura();
+      // Ativa rachadura se necessário
+      if (resultado.deveAtivarRachadura) {
+        this.logger.warn('Rachadura ativada! Boss liberado.');
+        this._ativarRachadura();
+      }
+    } catch (error) {
+      this.logger.error('Erro durante _processarResultado:', {
+        error: error.message,
+        stack: error.stack,
+        resultado,
+      });
+      throw error;
     }
-
-    this.logger.info(`${resultado.tipo} obtido!`, {
-      kravensColetados: resultado.kravensColetados,
-      pilhasRestantes: resultado.pilhasRestantes,
-      questCompleta: resultado.questCompleta,
-    });
   }
 
   /**
@@ -113,10 +127,19 @@ class MineracaoUseCase {
    * @param {Object} resultado - Resultado da mineração
    */
   _atualizarVariaveisJogo(resultado) {
-    this.coreService.setGameVariable(this.idVarKravensColetados, resultado.kravensColetados);
+    try {
+      this.coreService.setGameVariable(this.idVarKravensColetados, resultado.kravensColetados);
 
-    if (this.idVarPilhasRestantes > 0) {
-      this.coreService.setGameVariable(this.idVarPilhasRestantes, resultado.pilhasRestantes);
+      if (this.idVarPilhasRestantes > 0) {
+        this.coreService.setGameVariable(this.idVarPilhasRestantes, resultado.pilhasRestantes);
+      }
+    } catch (error) {
+      this.logger.error('Erro durante _atualizarVariaveisJogo:', {
+        error: error.message,
+        stack: error.stack,
+        resultado,
+      });
+      throw error;
     }
   }
 
@@ -125,8 +148,18 @@ class MineracaoUseCase {
    * @private
    */
   _ativarRachadura() {
-    this.logger.warn('Rachadura ativada! Preparando para liberação do boss.');
-    this.coreService.setGameVariable(this.idVarEstadoBoss, 1);
+    try {
+      // PROTEÇÃO: Só atualiza estado do boss se a variável for válida
+      if (this.idVarEstadoBoss > 0) {
+        this.coreService.setGameVariable(this.idVarEstadoBoss, 1);
+      }
+    } catch (error) {
+      this.logger.error('Erro durante _ativarRachadura:', {
+        error: error.message,
+        idVarEstadoBoss: this.idVarEstadoBoss,
+      });
+      // NÃO re-lança o erro para não quebrar a mineração
+    }
   }
 
   /**
@@ -135,11 +168,25 @@ class MineracaoUseCase {
    * @param {number} itemId - ID do item
    */
   _adicionarItem(itemId) {
-    const success = this.questService.addItemToInventory(itemId, 1);
-    if (!success) {
-      this.logger.error('Falha ao adicionar item ao inventário:', itemId);
+    try {
+      return this.questService.addItemToInventory(itemId, 1);
+    } catch (error) {
+      this.logger.error('Erro durante _adicionarItem:', {
+        error: error.message,
+        itemId,
+      });
+      throw error;
     }
-    return success;
+  }
+
+  /**
+   * Verifica se a rachadura já foi ativada checando o estado do boss
+   * @private
+   * @returns {boolean}
+   */
+  _verificarSeRachaduraJaFoiAtivada() {
+    const estadoBoss = this.coreService.getGameVariable(this.idVarEstadoBoss, 0);
+    return estadoBoss >= 1;
   }
 }
 

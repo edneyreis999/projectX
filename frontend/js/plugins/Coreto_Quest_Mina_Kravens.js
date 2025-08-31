@@ -217,14 +217,33 @@
        * Minera uma pilha
        */
       minar(pilhaId) {
-        return this.safeExecute(() => this.useCase.executarMineracao(pilhaId), 'Mineração');
+        try {
+          const kravensAtuais = window.CoretoCore.getGameVariable(ID_VAR_KRAVENS_COLETADOS, 0);
+
+          // Log crítico apenas para quest já completa
+          if (this.domain.isQuestCompleta(kravensAtuais)) {
+            Logger.warn('Tentativa de mineração com quest já completa:', {
+              kravensAtuais,
+              totalKravensNecessarios: TOTAL_KRAVENS_PARA_MISSAO,
+            });
+          }
+
+          return this.safeExecute(() => this.useCase.executarMineracao(pilhaId), 'Mineração');
+        } catch (error) {
+          Logger.error('Erro crítico durante mineração:', {
+            error: error.message,
+            stack: error.stack,
+            pilhaId,
+          });
+          throw error;
+        }
       }
 
       /**
        * Método legado para compatibilidade
        */
-      registrarPilha(pilhaId) {
-        Logger.debug('RegistrarPilha chamado (no-op)', { pilhaId });
+      registrarPilha() {
+        // Método legado para compatibilidade (no-op)
       }
 
       /**
@@ -240,8 +259,6 @@
 
     // Instância global para compatibilidade
     window.MinaKravens = new MinaKravensController();
-
-    Logger.info('Plugin inicializado com sucesso.');
 
     // -----------------------
     // Plugin Commands
@@ -262,9 +279,7 @@
           Logger.error('Erro: O ID do evento não foi encontrado.');
           return;
         }
-        Logger.info('MinerarPilha acionado', { pilhaId });
-        const resultado = window.MinaKravens.minar(pilhaId);
-        Logger.info('Resultado da mineração', resultado);
+        window.MinaKravens.minar(pilhaId);
       } catch (e) {
         Logger.error('Erro durante a execução de MinerarPilha:', e);
       }
