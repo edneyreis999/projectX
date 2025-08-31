@@ -65,6 +65,16 @@
 var coreto = coreto || {};
 const pluginName = 'Coreto_Quests';
 
+// Cria logger usando o sistema do Coreto Core
+const Logger = window.CoretoCore
+  ? window.CoretoCore.createLogger(pluginName)
+  : {
+      debug: console.log,
+      info: console.info,
+      warn: console.warn,
+      error: console.error,
+    };
+
 /**
  * Adiciona um item ao inventário usando o sistema da Coreto ou padrão do RPG Maker
  * @param {string} type - O tipo do item ("item", "weapon", "armor")
@@ -101,10 +111,10 @@ coreto.addInventoryItem = function (type, id, amount = 1) {
     const message = `Recebeu ${itemIcon} \\c[4]${itemName}\\c[0]!`;
     $gameMessage.add(message);
 
-    console.log(`[Coreto_Quests] Added: ${item.name} (${type}).`);
+    Logger.info(`Added: ${item.name} (${type}).`);
     return true;
   } else {
-    console.warn(`[Coreto_Quests] Item not found: Type(${type}), ID(${id}).`);
+    Logger.warn(`Item not found: Type(${type}), ID(${id}).`);
     return false;
   }
 };
@@ -145,10 +155,10 @@ coreto.removeInventoryItem = function (type, id, amount = 1) {
     const message = `Usou ${itemIcon} \\c[2]${itemName}\\c[0]!`;
     $gameMessage.add(message);
 
-    console.log(`[Coreto_Quests] Removed: ${item.name} (${type}).`);
+    Logger.info(`Removed: ${item.name} (${type}).`);
     return true;
   } else {
-    console.warn(`[Coreto_Quests] Item not found: Type(${type}), ID(${id}).`);
+    Logger.warn(`Item not found: Type(${type}), ID(${id}).`);
     return false;
   }
 };
@@ -169,7 +179,7 @@ coreto.addItemToInventory = function (itemId, amount = 1) {
 coreto.BaseQuest = class BaseQuest {
   constructor(questName, logger) {
     this.questName = questName;
-    this.logger = logger || console;
+    this.logger = logger || Logger;
   }
 
   /**
@@ -254,6 +264,9 @@ PluginManager.registerCommand(pluginName, 'addArmor', args => {
   const armorID = Number(args.armorID);
   coreto.addInventoryItem('armor', armorID);
 });
+
+// Log de inicialização do plugin
+Logger.info('Plugin inicializado com sucesso. Sistema de logging integrado com Coreto Core.');
 
 PluginManager.registerCommand(pluginName, 'removeArmor', args => {
   const armorID = Number(args.armorID);
