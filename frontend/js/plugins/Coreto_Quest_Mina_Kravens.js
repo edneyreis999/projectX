@@ -161,294 +161,123 @@
   const ID_VAR_PILHAS_RESTANTES = Number(params['PilhasRestantesVariableId'] || 0);
 
   // -----------------------
-  // Domínio: Mina de Kravens (Clean Architecture - Domain Layer)
+  // Importa as classes de domínio e use case
   // -----------------------
-  class MinaKravensDomain {
-    /**
-     * Classe de domínio da Mina de Kravens seguindo princípios de Clean Architecture
-     */
-    constructor(config) {
-      this.totalKravensNecessarios = config.totalKravensNecessarios;
-      this.totalKravensNaMina = config.totalKravensNaMina;
-      this.idItemKraven = config.idItemKraven;
-      this.idItemPedra = config.idItemPedra;
-      this.idVarKravensColetados = config.idVarKravensColetados;
-      this.idVarPilhasRestantes = config.idVarPilhasRestantes;
-      this.idVarEstadoBoss = config.idVarEstadoBoss;
 
-      // Services
-      this.coreService = window.CoretoCore;
-      this.questService = window.coreto;
-      this.logger = config.logger;
+  // Função para carregar script dinamicamente
+  function loadScript(src) {
+    return new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = src;
+      script.onload = resolve;
+      script.onerror = reject;
+      document.head.appendChild(script);
+    });
+  }
 
-      // Estado dinâmico
-      this.kravensColetados = 0;
-      this.pilhasRestantes = this.totalKravensNaMina;
+  // Carrega as classes necessárias
+  Promise.all([
+    window.MinaKravensDomain ? Promise.resolve() : loadScript('./js/plugins/MinaKravensDomain.js'),
+    window.MineracaoUseCase ? Promise.resolve() : loadScript('./js/plugins/MineracaoUseCase.js'),
+  ])
+    .then(() => {
+      // Inicializa o controller após carregar as dependências
+      initializeController();
+    })
+    .catch(error => {
+      Logger.error('Erro ao carregar dependências:', error);
+    });
+
+  function initializeController() {
+    // -----------------------
+    // Interface/Controller Layer
+    // -----------------------
+    class MinaKravensController extends window.coreto.BaseQuest {
+      constructor() {
+        super('Mina de Kravens', Logger);
+
+        // Configuração do domínio
+        const domainConfig = {
+          totalKravensNecessarios: TOTAL_KRAVENS_PARA_MISSAO,
+          totalKravensNaMina: TOTAL_KRAVENS_NA_MINA,
+          idItemKraven: ID_ITEM_KRAVEN,
+          idItemPedra: ID_ITEM_PEDRA,
+          idVarKravensColetados: ID_VAR_KRAVENS_COLETADOS,
+          idVarPilhasRestantes: ID_VAR_PILHAS_RESTANTES,
+          idVarEstadoBoss: ID_VAR_ESTADO_BOSS,
+          coreService: window.CoretoCore,
+          questService: window.coreto,
+          logger: Logger,
+        };
+
+        // Instanciação das camadas
+        this.domain = new window.MinaKravensDomain(domainConfig);
+        this.useCase = new window.MineracaoUseCase(this.domain, window.coreto, Logger);
+      }
+
+      /**
+       * Minera uma pilha
+       */
+      minar(pilhaId) {
+        return this.safeExecute(() => this.useCase.executarMineracao(pilhaId), 'Mineração');
+      }
+
+      /**
+       * Método legado para compatibilidade
+       */
+      registrarPilha(pilhaId) {
+        Logger.debug('RegistrarPilha chamado (no-op)', { pilhaId });
+      }
+
+      /**
+       * Alterna logs em tempo de execução
+       */
+      alternarLogs() {
+        const newState = !Logger.enabled;
+        Logger.setEnabled(newState);
+        const note = `Logs ${newState ? 'ativados' : 'desativados'} via comando.`;
+        console.info(Logger.prefix, new Date().toISOString(), note);
+      }
     }
 
-    /**
-     * Sincroniza o estado com as variáveis do jogo
-     */
-    syncFromGameVariables() {
-      this.kravensColetados = this.coreService.getGameVariable(this.idVarKravensColetados, 0);
+    // Instância global para compatibilidade
+    window.MinaKravens = new MinaKravensController();
 
-      if (this.idVarPilhasRestantes > 0) {
-        let pilhasRestantesSalvas = this.coreService.getGameVariable(this.idVarPilhasRestantes, 0);
+    Logger.info('Plugin inicializado com sucesso.');
 
-        // Inicializa no primeiro uso de um novo jogo (quando ambas estão 0)
-        if (pilhasRestantesSalvas <= 0 && this.kravensColetados <= 0) {
-          pilhasRestantesSalvas = this.totalKravensNaMina;
-          this.coreService.setGameVariable(this.idVarPilhasRestantes, pilhasRestantesSalvas);
+    // -----------------------
+    // Plugin Commands
+    // -----------------------
+    PluginManager.registerCommand(pluginName, 'RegistrarPilha', args => {
+      try {
+        const pilhaId = Number(args?.pilhaId ?? 0);
+        window.MinaKravens.registrarPilha(pilhaId);
+      } catch (e) {
+        Logger.error('Erro ao executar RegistrarPilha:', e);
+      }
+    });
+
+    PluginManager.registerCommand(pluginName, 'MinerarPilha', function () {
+      try {
+        const pilhaId = this?._eventId; // Captura o ID do evento atual
+        if (!pilhaId) {
+          Logger.error('Erro: O ID do evento não foi encontrado.');
+          return;
         }
-
-        this.pilhasRestantes = pilhasRestantesSalvas;
+        Logger.info('MinerarPilha acionado', { pilhaId });
+        const resultado = window.MinaKravens.minar(pilhaId);
+        Logger.info('Resultado da mineração', resultado);
+      } catch (e) {
+        Logger.error('Erro durante a execução de MinerarPilha:', e);
       }
-    }
+    });
 
-    /**
-     * Calcula a chance de drop de Kraven baseado nas pilhas restantes
-     */
-    calcularChanceKraven(pilhasRestantesParaMeta) {
-      this.logger.debug('Estado antes do cálculo de chance', {
-        kravensColetados: this.kravensColetados,
-        totalNecessarios: this.totalKravensNecessarios,
-        pilhasRestantesParaMeta,
-      });
-
-      const kravensRestantesParaConcluir = this.totalKravensNecessarios - this.kravensColetados;
-
-      // Se o número de pilhas restantes é igual ao número de Kravens que faltam, chance = 100%
-      if (pilhasRestantesParaMeta <= kravensRestantesParaConcluir - 1) {
-        return 100;
+    PluginManager.registerCommand(pluginName, 'AlternarLogs', function () {
+      try {
+        window.MinaKravens.alternarLogs();
+      } catch (e) {
+        Logger.error('Erro ao alternar logs:', e);
       }
-
-      // Fórmula para chance gradual (limitada a 100%)
-      const chancePercentual = (kravensRestantesParaConcluir / pilhasRestantesParaMeta) * 100;
-      const chanceFinal = Math.min(chancePercentual, 100);
-      this.logger.debug('Chance calculada (%)', chanceFinal);
-      return chanceFinal;
-    }
-
-    /**
-     * Verifica se a quest foi completada
-     */
-    isQuestCompleta() {
-      return this.kravensColetados >= this.totalKravensNecessarios;
-    }
-
-    /**
-     * Verifica se deve ativar a rachadura (falta apenas 1 Kraven)
-     */
-    shouldAtivarRachadura() {
-      return this.kravensColetados === this.totalKravensNecessarios - 1;
-    }
-
-    /**
-     * Ativa a rachadura e atualiza o estado do boss
-     */
-    ativarRachadura() {
-      this.logger.warn('Rachadura ativada! Preparando para liberação do boss.');
-      this.coreService.setGameVariable(this.idVarEstadoBoss, 1);
-    }
-
-    /**
-     * Atualiza as variáveis do jogo após mineração
-     */
-    updateGameState() {
-      this.coreService.setGameVariable(this.idVarKravensColetados, this.kravensColetados);
-      if (this.idVarPilhasRestantes > 0) {
-        this.coreService.setGameVariable(this.idVarPilhasRestantes, this.pilhasRestantes);
-      }
-    }
+    });
   }
-
-  // -----------------------
-  // Use Case: Mineração (Clean Architecture - Use Case Layer)
-  // -----------------------
-  class MineracaoUseCase {
-    constructor(domain, questService, logger) {
-      this.domain = domain;
-      this.questService = questService;
-      this.logger = logger;
-    }
-
-    /**
-     * Executa a mineração de uma pilha
-     * @param {number} pilhaId - ID da pilha (evento)
-     * @returns {string} 'Kraven' | 'Pedra'
-     */
-    executarMineracao(pilhaId) {
-      // Sincroniza estado com as variáveis do jogo
-      this.domain.syncFromGameVariables();
-
-      this.logger.info('Iniciando mineração', {
-        pilhaId,
-        pilhasRestantes: this.domain.pilhasRestantes,
-        kravensColetados: this.domain.kravensColetados,
-      });
-
-      // Se o jogador já coletou todos os Kravens necessários, sempre retorna pedra
-      if (this.domain.isQuestCompleta()) {
-        this._consumirPilha();
-        this._adicionarItem(this.domain.idItemPedra);
-        this.logger.info('Pedra obtida. Nenhum Kraven necessário.', {
-          pilhasRestantes: this.domain.pilhasRestantes,
-        });
-        return 'Pedra';
-      }
-
-      // Calcula a chance de drop
-      const pilhasRestantesParaMeta = this.domain.pilhasRestantes - this.domain.kravensColetados;
-      this._consumirPilha();
-
-      const chanceDeObterKraven = this.domain.calcularChanceKraven(pilhasRestantesParaMeta);
-      this.logger.info('Chance de obter Kraven (%)', chanceDeObterKraven);
-
-      // Determina o resultado
-      if (Math.random() * 100 <= chanceDeObterKraven) {
-        return this._processarKravenObtido();
-      } else {
-        return this._processarPedraObtida();
-      }
-    }
-
-    /**
-     * Consome uma pilha da mina
-     * @private
-     */
-    _consumirPilha() {
-      this.domain.pilhasRestantes = Math.max(0, this.domain.pilhasRestantes - 1);
-      this.logger.debug('Pilha consumida', { pilhasRestantes: this.domain.pilhasRestantes });
-    }
-
-    /**
-     * Processa a obtenção de um Kraven
-     * @private
-     */
-    _processarKravenObtido() {
-      this._adicionarItem(this.domain.idItemKraven);
-      this.domain.kravensColetados++;
-      this.domain.updateGameState();
-
-      this.logger.info('Kraven obtido!', { totalColetado: this.domain.kravensColetados });
-
-      // Verifica se deve ativar a rachadura
-      if (this.domain.shouldAtivarRachadura()) {
-        this.domain.ativarRachadura();
-      }
-
-      return 'Kraven';
-    }
-
-    /**
-     * Processa a obtenção de uma Pedra
-     * @private
-     */
-    _processarPedraObtida() {
-      this._adicionarItem(this.domain.idItemPedra);
-      this.domain.updateGameState();
-      this.logger.info('Pedra obtida.');
-      return 'Pedra';
-    }
-
-    /**
-     * Adiciona item ao inventário usando o serviço de quest
-     * @private
-     */
-    _adicionarItem(itemId) {
-      const success = this.questService.addItemToInventory(itemId, 1);
-      if (!success) {
-        this.logger.error('Falha ao adicionar item ao inventário:', itemId);
-      }
-      return success;
-    }
-  }
-
-  // -----------------------
-  // Interface/Controller Layer
-  // -----------------------
-  class MinaKravensController extends window.coreto.BaseQuest {
-    constructor() {
-      super('Mina de Kravens', Logger);
-
-      // Configuração do domínio
-      const domainConfig = {
-        totalKravensNecessarios: TOTAL_KRAVENS_PARA_MISSAO,
-        totalKravensNaMina: TOTAL_KRAVENS_NA_MINA,
-        idItemKraven: ID_ITEM_KRAVEN,
-        idItemPedra: ID_ITEM_PEDRA,
-        idVarKravensColetados: ID_VAR_KRAVENS_COLETADOS,
-        idVarPilhasRestantes: ID_VAR_PILHAS_RESTANTES,
-        idVarEstadoBoss: ID_VAR_ESTADO_BOSS,
-        logger: Logger,
-      };
-
-      // Instanciação das camadas
-      this.domain = new MinaKravensDomain(domainConfig);
-      this.useCase = new MineracaoUseCase(this.domain, window.coreto, Logger);
-    }
-
-    /**
-     * Minera uma pilha
-     */
-    minar(pilhaId) {
-      return this.safeExecute(() => this.useCase.executarMineracao(pilhaId), 'Mineração');
-    }
-
-    /**
-     * Método legado para compatibilidade
-     */
-    registrarPilha(pilhaId) {
-      Logger.debug('RegistrarPilha chamado (no-op)', { pilhaId });
-    }
-
-    /**
-     * Alterna logs em tempo de execução
-     */
-    alternarLogs() {
-      const newState = !Logger.enabled;
-      Logger.setEnabled(newState);
-      const note = `Logs ${newState ? 'ativados' : 'desativados'} via comando.`;
-      console.info(Logger.prefix, new Date().toISOString(), note);
-    }
-  }
-  // Instância global para compatibilidade
-  window.MinaKravens = new MinaKravensController();
-
-  Logger.info('Plugin inicializado com sucesso.');
-
-  // -----------------------
-  // Plugin Commands
-  // -----------------------
-  PluginManager.registerCommand(pluginName, 'RegistrarPilha', args => {
-    try {
-      const pilhaId = Number(args?.pilhaId ?? 0);
-      window.MinaKravens.registrarPilha(pilhaId);
-    } catch (e) {
-      Logger.error('Erro ao executar RegistrarPilha:', e);
-    }
-  });
-
-  PluginManager.registerCommand(pluginName, 'MinerarPilha', function () {
-    try {
-      const pilhaId = this?._eventId; // Captura o ID do evento atual
-      if (!pilhaId) {
-        Logger.error('Erro: O ID do evento não foi encontrado.');
-        return;
-      }
-      Logger.info('MinerarPilha acionado', { pilhaId });
-      const resultado = window.MinaKravens.minar(pilhaId);
-      Logger.info('Resultado da mineração', resultado);
-    } catch (e) {
-      Logger.error('Erro durante a execução de MinerarPilha:', e);
-    }
-  });
-
-  PluginManager.registerCommand(pluginName, 'AlternarLogs', function () {
-    try {
-      window.MinaKravens.alternarLogs();
-    } catch (e) {
-      Logger.error('Erro ao alternar logs:', e);
-    }
-  });
 })();
