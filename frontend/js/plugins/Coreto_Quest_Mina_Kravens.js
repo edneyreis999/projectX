@@ -52,6 +52,12 @@
  * @default 26
  * @desc Quantidade total de Kravens que o jogador já possui.
  *
+ * @param PilhasRestantesVariableId
+ * @text Variável Pilhas Restantes
+ * @type variable
+ * @default 0
+ * @desc Variável do jogo usada para salvar as pilhas restantes na mina.
+ *
  * @help
  * ----------------------------------------------------------------------------
  * **Coreto Gameplay Mina Kravens**
@@ -93,24 +99,41 @@
   const pluginName = 'Coreto_Quest_Mina_Kravens';
   const parameters = PluginManager.parameters(pluginName);
 
-  const minerioItemId = Number(parameters['MinerioItemId'] || 1);
-  const pedraItemId = Number(parameters['PedraItemId'] || 2);
-  const bossStateVariableId = Number(parameters['BossStateVariableId'] || 0);
-  const totalMinerioQuest = Number(parameters['TotalMinerioQuest'] || 4);
-  const totalMinerioMina = Number(parameters['TotalMinerioMina'] || 30);
-  const mineroKraven = Number(parameters['MineroKraven'] || 26);
+  const minerioItemIdParam = Number(parameters['MinerioItemId'] || 1);
+  const pedraItemIdParam = Number(parameters['PedraItemId'] || 2);
+  const bossStateVariableIdParams = Number(parameters['BossStateVariableId'] || 0);
+  const totalMineralRequiredParams = Number(parameters['TotalMinerioQuest'] || 4);
+  const totalMineralsInMineParams = Number(parameters['TotalMinerioMina'] || 30);
+  const minerioKravensColetadoParams = Number(parameters['MineroKraven'] || 26);
+  const pilhasRestantesVarIdParam = Number(parameters['PilhasRestantesVariableId'] || 0);
 
   class MinaKravens {
     constructor() {
-      this.kravensObtidos = 0;
-      this.pilhasRestantes = totalMinerioMina;
-      this.totalMinerioQuest = totalMinerioQuest;
-      this.totalMinerioMina = totalMinerioMina;
+      this.collectedKravens = window.$gameVariables ? Number($gameVariables.value(minerioKravensColetadoParams) || 0) : 0;
+      this.pilhasRestantes = totalMineralsInMineParams;
+      this.totalMinerioQuest = totalMineralRequiredParams;
+      this.totalMinerioMina = totalMineralsInMineParams;
+    }
+
+    syncFromVar() {
+      // Helper para garantir que sempre usamos o valor salvo
+      this.collectedKravens = Number($gameVariables.value(minerioKravensColetadoParams) || 0);
+      if (pilhasRestantesVarIdParam > 0) {
+        let pr = Number($gameVariables.value(pilhasRestantesVarIdParam) ?? 0);
+
+        // Inicializa no primeiro uso de um novo jogo (quando ambas estão 0)
+        if (pr <= 0 && this.collectedKravens <= 0) {
+          pr = this.totalMinerioMina;
+          $gameVariables.setValue(pilhasRestantesVarIdParam, pr);
+        }
+
+        this.pilhasRestantes = pr;
+      }
     }
 
     calcularChance(pilhasRestantes) {
-      console.log(`this.kravensObtidos: ${this.kravensObtidos}`);
-      const faltandoKravens = this.totalMinerioQuest - this.kravensObtidos;
+      console.log(`this.kravensObtidos: ${this.collectedKravens}`);
+      const faltandoKravens = this.totalMinerioQuest - this.collectedKravens;
       console.log(`faltandoKravens: ${faltandoKravens}`);
 
       // Se o número de pilhas restantes é igual ao número de Kravens que faltam, chance = 100%
@@ -125,32 +148,45 @@
     }
 
     minar() {
+      // Garante que collectedKravens reflete o save atual
+      this.syncFromVar();
+
       // Se o jogador já coletou todos os Kravens necessários
-      if (this.kravensObtidos >= this.totalMinerioQuest) {
-        this.pilhasRestantes--;
-        this.adicionarItem(pedraItemId);
+      console.log(`Kravens obtidos: ${this.collectedKravens}`);
+      console.log(`Total de Kravens necessários: ${this.totalMinerioQuest}`);
+      if (this.collectedKravens >= this.totalMinerioQuest) {
+        this.pilhasRestantes = Math.max(0, this.pilhasRestantes - 1);
+        if (pilhasRestantesVarIdParam > 0) {
+          $gameVariables.setValue(pilhasRestantesVarIdParam, this.pilhasRestantes);
+        }
+        this.adicionarItem(pedraItemIdParam);
         console.log('Pedra obtida. Nenhum Kraven necessário.');
         return 'Pedra';
       }
 
-      const pilhasRestantes = this.pilhasRestantes - this.kravensObtidos;
-      this.pilhasRestantes--;
+      const pilhasRestantes = this.pilhasRestantes - this.collectedKravens;
+      this.pilhasRestantes = Math.max(0, this.pilhasRestantes - 1);
+      if (pilhasRestantesVarIdParam > 0) {
+        $gameVariables.setValue(pilhasRestantesVarIdParam, this.pilhasRestantes);
+      }
+      console.log(`Total de Pilhas Restantes: ${this.pilhasRestantes}`);
+
       const chance = this.calcularChance(pilhasRestantes);
       console.log(`Chance calculada: ${chance}%`);
 
       if (Math.random() * 100 <= chance) {
-        this.adicionarItem(minerioItemId);
-        this.kravensObtidos++;
-        console.log(`Kraven obtido! Total: ${this.kravensObtidos}`);
-        $gameVariables.setValue(mineroKraven, this.kravensObtidos);
+        this.adicionarItem(minerioItemIdParam);
+        this.collectedKravens++;
+        console.log(`Kraven obtido! Total: ${this.collectedKravens}`);
+        $gameVariables.setValue(minerioKravensColetadoParams, this.collectedKravens);
 
-        if (this.kravensObtidos === this.totalMinerioQuest - 1) {
+        if (this.collectedKravens === this.totalMinerioQuest - 1) {
           this.ativarRachadura();
         }
 
         return 'Kraven';
       } else {
-        this.adicionarItem(pedraItemId);
+        this.adicionarItem(pedraItemIdParam);
         console.log('Pedra obtida.');
         return 'Pedra';
       }
@@ -162,7 +198,7 @@
 
     ativarRachadura() {
       console.log('Rachadura ativada! Teletransportando jogador.');
-      $gameVariables.setValue(bossStateVariableId, 1);
+      $gameVariables.setValue(bossStateVariableIdParams, 1);
     }
   }
 
