@@ -1,4 +1,4 @@
-const MinaKravensDomain = require('../plugins/MinaKravensDomain');
+const MinaKravensDomain = require('../domain/MinaKravensDomain');
 
 describe('MinaKravensDomain', () => {
   let domain;

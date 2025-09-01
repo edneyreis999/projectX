@@ -177,8 +177,8 @@
 
   // Carrega as classes necessárias
   Promise.all([
-    window.MinaKravensDomain ? Promise.resolve() : loadScript('./js/plugins/MinaKravensDomain.js'),
-    window.MineracaoUseCase ? Promise.resolve() : loadScript('./js/plugins/MineracaoUseCase.js'),
+    window.MinaKravensDomain ? Promise.resolve() : loadScript('./js/domain/MinaKravensDomain.js'),
+    window.MineracaoUseCase ? Promise.resolve() : loadScript('./js/domain/MineracaoUseCase.js'),
   ])
     .then(() => {
       // Inicializa o controller após carregar as dependências
