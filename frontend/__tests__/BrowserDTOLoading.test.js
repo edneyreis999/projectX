@@ -104,7 +104,7 @@ describe('Browser DTO Loading Tests', () => {
     // Agora carrega os domínios
     const domainPromises = [
       mockWindow.MinaKravensDomain ? Promise.resolve() : mockLoadScript('./js/domain/MinaKravensDomain.js'),
-      mockWindow.MineracaoUseCase ? Promise.resolve() : mockLoadScript('./js/domain/MineracaoUseCase.js'),
+      mockWindow.MineracaoUseCase ? Promise.resolve() : mockLoadScript('./js/aplication/MineracaoUseCase.js'),
     ];
 
     await Promise.all(domainPromises);
@@ -119,7 +119,7 @@ describe('Browser DTO Loading Tests', () => {
     await Promise.all([mockLoadScript('./js/dto/MineracaoRequestDTO.js'), mockLoadScript('./js/dto/MineracaoResponseDTO.js')]);
 
     // Carrega domínios depois
-    await Promise.all([mockLoadScript('./js/domain/MinaKravensDomain.js'), mockLoadScript('./js/domain/MineracaoUseCase.js')]);
+    await Promise.all([mockLoadScript('./js/domain/MinaKravensDomain.js'), mockLoadScript('./js/aplication/MineracaoUseCase.js')]);
 
     // Testa criação de instâncias
     const domain = new mockWindow.MinaKravensDomain(5, 10);
@@ -187,7 +187,7 @@ describe('Browser DTO Loading Tests', () => {
         // Segunda fase: carrega domínios
         return Promise.all([
           mockWindow.MinaKravensDomain ? Promise.resolve() : mockLoadScript('./js/domain/MinaKravensDomain.js'),
-          mockWindow.MineracaoUseCase ? Promise.resolve() : mockLoadScript('./js/domain/MineracaoUseCase.js'),
+          mockWindow.MineracaoUseCase ? Promise.resolve() : mockLoadScript('./js/aplication/MineracaoUseCase.js'),
         ]);
       })
       .then(() => {

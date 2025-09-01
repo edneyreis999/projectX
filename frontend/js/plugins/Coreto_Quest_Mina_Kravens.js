@@ -184,7 +184,7 @@
       // DTOs carregados, agora carrega os domínios
       return Promise.all([
         window.MinaKravensDomain ? Promise.resolve() : loadScript('./js/domain/MinaKravensDomain.js'),
-        window.MineracaoUseCase ? Promise.resolve() : loadScript('./js/domain/MineracaoUseCase.js'),
+        window.MineracaoUseCase ? Promise.resolve() : loadScript('./js/aplication/MineracaoUseCase.js'),
       ]);
     })
     .then(() => {
