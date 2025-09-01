@@ -90,8 +90,8 @@ describe('MinaKravensDomain', () => {
 
   describe('executarMineracao', () => {
     beforeEach(() => {
-      // Mock Math.random para testes determinísticos
-      jest.spyOn(Math, 'random').mockRestore();
+      // Remove qualquer mock anterior
+      jest.restoreAllMocks();
     });
 
     afterEach(() => {
@@ -107,8 +107,8 @@ describe('MinaKravensDomain', () => {
       expect(resultado.kravensColetados).toBe(5);
     });
 
-    test('deve retornar Kraven quando Math.random favorece', () => {
-      jest.spyOn(Math, 'random').mockReturnValue(0.1); // 10% - deve dar Kraven se chance > 10%
+    test('deve retornar Kraven quando _gerarNumeroAleatorio favorece', () => {
+      jest.spyOn(domain, '_gerarNumeroAleatorio').mockReturnValue(0.1); // 10% - deve dar Kraven se chance > 10%
 
       const resultado = domain.executarMineracao(2, 3); // 3 Kravens restantes, 6 pilhas restantes após mineração
 
@@ -120,8 +120,8 @@ describe('MinaKravensDomain', () => {
       expect(resultado.chanceCalculada).toBe(50); // (3/6) * 100 = 50%
     });
 
-    test('deve retornar Pedra quando Math.random não favorece', () => {
-      jest.spyOn(Math, 'random').mockReturnValue(0.9); // 90% - deve dar Pedra se chance < 90%
+    test('deve retornar Pedra quando _gerarNumeroAleatorio não favorece', () => {
+      jest.spyOn(domain, '_gerarNumeroAleatorio').mockReturnValue(0.9); // 90% - deve dar Pedra se chance < 90%
 
       const resultado = domain.executarMineracao(2, 3); // 3 Kravens restantes, 6 pilhas restantes após mineração
 
@@ -134,7 +134,7 @@ describe('MinaKravensDomain', () => {
     });
 
     test('deve ativar rachadura quando falta apenas 1 Kraven', () => {
-      jest.spyOn(Math, 'random').mockReturnValue(0.1); // Força obtenção de Kraven
+      jest.spyOn(domain, '_gerarNumeroAleatorio').mockReturnValue(0.1); // Força obtenção de Kraven
 
       const resultado = domain.executarMineracao(3, 2); // 2 Kravens restantes
 
@@ -145,7 +145,7 @@ describe('MinaKravensDomain', () => {
     });
 
     test('deve completar quest ao coletar o último Kraven', () => {
-      jest.spyOn(Math, 'random').mockReturnValue(0.1); // Força obtenção de Kraven
+      jest.spyOn(domain, '_gerarNumeroAleatorio').mockReturnValue(0.1); // Força obtenção de Kraven
 
       const resultado = domain.executarMineracao(4, 2); // 1 Kraven restante
 
@@ -199,16 +199,15 @@ describe('MinaKravensDomain', () => {
 
   describe('integração - fluxo completo de mineração', () => {
     test('deve simular uma quest completa', () => {
-      jest.spyOn(Math, 'random').mockReturnValue(0.1); // Sempre favorece Kraven
-
-      const domain = new MinaKravensDomain(3, 5);
+      const testDomain = new MinaKravensDomain(3, 5);
+      jest.spyOn(testDomain, '_gerarNumeroAleatorio').mockReturnValue(0.1); // Sempre favorece Kraven
       let kravensColetados = 0;
       let pilhasJaMineradas = 0;
       const resultados = [];
 
       // Simula mineração até completar a quest
       while (kravensColetados < 3 && pilhasJaMineradas < 5) {
-        const resultado = domain.executarMineracao(kravensColetados, pilhasJaMineradas);
+        const resultado = testDomain.executarMineracao(kravensColetados, pilhasJaMineradas);
         resultados.push(resultado);
 
         kravensColetados = resultado.kravensColetados;
@@ -229,22 +228,21 @@ describe('MinaKravensDomain', () => {
     });
 
     test('deve simular mineração com má sorte (apenas pedras)', () => {
-      jest.spyOn(Math, 'random').mockReturnValue(0.9); // Nunca favorece Kraven exceto em 100%
-
-      const domain = new MinaKravensDomain(2, 5); // 2 Kravens, 5 pilhas para ter mais margem
+      const testDomain = new MinaKravensDomain(2, 5); // 2 Kravens, 5 pilhas para ter mais margem
+      jest.spyOn(testDomain, '_gerarNumeroAleatorio').mockReturnValue(0.9); // Nunca favorece Kraven exceto em 100%
 
       // Primeira mineração - deve dar pedra (2 Kravens restantes / 4 pilhas restantes = 50%)
-      const resultado1 = domain.executarMineracao(0, 0);
+      const resultado1 = testDomain.executarMineracao(0, 0);
       expect(resultado1.tipo).toBe('Pedra');
       expect(resultado1.kravensColetados).toBe(0);
 
       // Segunda mineração - deve dar pedra (2 Kravens restantes / 3 pilhas restantes = 66.67%)
-      const resultado2 = domain.executarMineracao(0, 1);
+      const resultado2 = testDomain.executarMineracao(0, 1);
       expect(resultado2.tipo).toBe('Pedra');
       expect(resultado2.kravensColetados).toBe(0);
 
       // Terceira mineração - deve dar Kraven (2 Kravens restantes / 2 pilhas restantes = 100%)
-      const resultado3 = domain.executarMineracao(0, 2);
+      const resultado3 = testDomain.executarMineracao(0, 2);
       expect(resultado3.chanceCalculada).toBe(100); // Garantia de drop na última chance
     });
   });
@@ -344,7 +342,7 @@ describe('MinaKravensDomain', () => {
   describe('testes de comportamento probabilístico', () => {
     test('deve distribuir resultados de acordo com a probabilidade', () => {
       // Teste estatístico com muitas execuções
-      const domain = new MinaKravensDomain(1, 100); // 1 Kraven necessário, 100 pilhas
+      const testDomain = new MinaKravensDomain(1, 100); // 1 Kraven necessário, 100 pilhas
       let kravensObtidos = 0;
       const totalTestes = 1000;
 
@@ -353,13 +351,13 @@ describe('MinaKravensDomain', () => {
       const pilhasJaMineradas = 50; // 49 pilhas restantes após mineração
 
       // Calcula chance esperada: 1/49 * 100 ≈ 2.04%
-      const chanceEsperada = domain.calcularChanceKraven(kravensJaColetados, 49);
+      const chanceEsperada = testDomain.calcularChanceKraven(kravensJaColetados, 49);
 
-      // Simula muitas minerações com Math.random real (não mockado)
-      jest.restoreAllMocks(); // Remove qualquer mock do Math.random
+      // Simula muitas minerações com _gerarNumeroAleatorio real (não mockado)
+      jest.restoreAllMocks(); // Remove qualquer mock anterior
 
       for (let i = 0; i < totalTestes; i++) {
-        const resultado = domain.executarMineracao(kravensJaColetados, pilhasJaMineradas);
+        const resultado = testDomain.executarMineracao(kravensJaColetados, pilhasJaMineradas);
         if (resultado.tipo === 'Kraven') {
           kravensObtidos++;
         }
@@ -374,12 +372,11 @@ describe('MinaKravensDomain', () => {
 
   describe('cenários específicos da rachadura', () => {
     test('ativou rachadura e a próxima pilha foi Kraven (deve completar a missão)', () => {
-      jest.spyOn(Math, 'random').mockReturnValue(0.1); // Força obtenção de Kraven
-
-      const domain = new MinaKravensDomain(3, 5); // 3 Kravens necessários, 5 pilhas
+      const testDomain = new MinaKravensDomain(3, 5); // 3 Kravens necessários, 5 pilhas
+      jest.spyOn(testDomain, '_gerarNumeroAleatorio').mockReturnValue(0.1); // Força obtenção de Kraven
 
       // Simula até ativar rachadura (2 Kravens coletados = falta 1)
-      const resultado = domain.executarMineracao(2, 2); // 2 coletados, 2 pilhas já mineradas
+      const resultado = testDomain.executarMineracao(2, 2); // 2 coletados, 2 pilhas já mineradas
 
       expect(resultado.tipo).toBe('Kraven');
       expect(resultado.questCompleta).toBe(true); // Deve completar a missão
@@ -388,12 +385,11 @@ describe('MinaKravensDomain', () => {
     });
 
     test('ativou rachadura e a próxima pilha foi pedra comum (não completa a missão e atualiza %)', () => {
-      jest.spyOn(Math, 'random').mockReturnValue(0.9); // Força obtenção de Pedra
-
-      const domain = new MinaKravensDomain(3, 6); // 3 Kravens necessários, 6 pilhas
+      const testDomain = new MinaKravensDomain(3, 6); // 3 Kravens necessários, 6 pilhas
+      jest.spyOn(testDomain, '_gerarNumeroAleatorio').mockReturnValue(0.9); // Força obtenção de Pedra
 
       // Simula situação onde já havia rachadura ativada (2 Kravens coletados = falta 1)
-      const resultado = domain.executarMineracao(2, 3); // 2 coletados, 3 pilhas já mineradas
+      const resultado = testDomain.executarMineracao(2, 3); // 2 coletados, 3 pilhas já mineradas
 
       expect(resultado.tipo).toBe('Pedra');
       expect(resultado.questCompleta).toBe(false); // Não deve completar a missão
@@ -404,13 +400,12 @@ describe('MinaKravensDomain', () => {
     });
 
     test('ativou rachadura e a próxima pilha é a última pilha (100% de chance de vir Kraven)', () => {
-      // Não mocka Math.random para testar se a chance de 100% funciona naturalmente
+      // Não mocka _gerarNumeroAleatorio para testar se a chance de 100% funciona naturalmente
+      const testDomain = new MinaKravensDomain(2, 4); // 2 Kravens necessários, 4 pilhas
       jest.restoreAllMocks();
 
-      const domain = new MinaKravensDomain(2, 4); // 2 Kravens necessários, 4 pilhas
-
       // Simula até a penúltima pilha com rachadura ativada (1 Kraven coletado = falta 1)
-      const resultado = domain.executarMineracao(1, 2); // 1 coletado, 2 pilhas já mineradas (sobram 2 pilhas, após mineração sobra 1)
+      const resultado = testDomain.executarMineracao(1, 2); // 1 coletado, 2 pilhas já mineradas (sobram 2 pilhas, após mineração sobra 1)
 
       expect(resultado.chanceCalculada).toBe(100); // 1 Kraven restante / 1 pilha restante = 100% de chance
       expect(resultado.tipo).toBe('Kraven'); // Deve ser Kraven devido à chance de 100%

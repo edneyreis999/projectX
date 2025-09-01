@@ -63,7 +63,7 @@ class MinaKravensDomain {
     }
 
     // Determina o resultado
-    const randomValue = Math.random() * 100;
+    const randomValue = this._gerarNumeroAleatorio() * 100;
     const obteuKraven = randomValue <= chanceDeObterKraven;
     const novosKravensColetados = obteuKraven ? kravensJaColetados + 1 : kravensJaColetados;
 
@@ -151,6 +151,16 @@ class MinaKravensDomain {
     }
 
     return shouldActivate;
+  }
+
+  /**
+   * Gera um número aleatório entre 0 e 1
+   * Função isolada para facilitar testes (mock)
+   * @private
+   * @returns {number} Número entre 0 e 1
+   */
+  _gerarNumeroAleatorio() {
+    return Math.random();
   }
 }
 

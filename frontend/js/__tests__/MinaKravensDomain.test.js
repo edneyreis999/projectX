@@ -494,13 +494,8 @@ describe('MinaKravensDomain', () => {
 
   describe('testes de comportamento probabilístico', () => {
     test('deve distribuir resultados de acordo com a probabilidade', () => {
-      // Garante que Math.random está limpo antes do teste estatístico
-      jest.restoreAllMocks();
-
-      // Teste estatístico com muitas execuções
+      // Simula diferentes valores de Math.random para teste determinístico
       const domain = new MinaKravensDomain(1, 100); // 1 Kraven necessário, 100 pilhas
-      let kravensObtidos = 0;
-      const totalTestes = 1000;
 
       // Fixa o estado inicial
       const kravensJaColetados = 0;
@@ -508,19 +503,33 @@ describe('MinaKravensDomain', () => {
 
       // Calcula chance esperada: 1/49 * 100 ≈ 2.04%
       const chanceEsperada = domain.calcularChanceKraven(kravensJaColetados, 49);
+      expect(chanceEsperada).toBeCloseTo(2.04, 1);
 
-      // Simula muitas minerações
-      for (let i = 0; i < totalTestes; i++) {
-        const resultado = domain.executarMineracao(kravensJaColetados, pilhasJaMineradas);
-        if (resultado.tipo === 'Kraven') {
-          kravensObtidos++;
-        }
-      }
+      // Teste com valor que deveria dar Kraven (1% < 2.04%)
+      jest.spyOn(Math, 'random').mockReturnValue(0.01); // 1%
+      const resultadoKraven = domain.executarMineracao(kravensJaColetados, pilhasJaMineradas);
+      expect(resultadoKraven.tipo).toBe('Kraven');
+      expect(resultadoKraven.chanceCalculada).toBeCloseTo(2.04, 1);
 
-      const porcentagemObtida = (kravensObtidos / totalTestes) * 100;
+      // Teste com valor que deveria dar Pedra (5% > 2.04%)
+      jest.spyOn(Math, 'random').mockReturnValue(0.05); // 5%
+      const resultadoPedra = domain.executarMineracao(kravensJaColetados, pilhasJaMineradas);
+      expect(resultadoPedra.tipo).toBe('Pedra');
+      expect(resultadoPedra.chanceCalculada).toBeCloseTo(2.04, 1);
 
-      // Aceita uma margem de erro de ±1% para o teste estatístico
-      expect(porcentagemObtida).toBeCloseTo(chanceEsperada, 0);
+      // Teste no limite exato (2.04%)
+      jest.spyOn(Math, 'random').mockReturnValue(0.0204); // Exatamente 2.04%
+      const resultadoLimite = domain.executarMineracao(kravensJaColetados, pilhasJaMineradas);
+      expect(resultadoLimite.tipo).toBe('Kraven'); // <= chance, deve dar Kraven
+      expect(resultadoLimite.chanceCalculada).toBeCloseTo(2.04, 1);
+
+      // Teste ligeiramente acima do limite (2.05%)
+      jest.spyOn(Math, 'random').mockReturnValue(0.0205); // 2.05%
+      const resultadoAcimaLimite = domain.executarMineracao(kravensJaColetados, pilhasJaMineradas);
+      expect(resultadoAcimaLimite.tipo).toBe('Pedra'); // > chance, deve dar Pedra
+      expect(resultadoAcimaLimite.chanceCalculada).toBeCloseTo(2.04, 1);
+
+      jest.restoreAllMocks();
     });
   });
 });
