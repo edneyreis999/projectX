@@ -27,7 +27,7 @@
         MineracaoRequestDTO = window.MineracaoRequestDTO;
         MineracaoResponseDTO = window.MineracaoResponseDTO;
       }
-      
+
       if (!MineracaoRequestDTO || !MineracaoResponseDTO) {
         throw new Error('DTOs não carregados. Certifique-se de que MineracaoRequestDTO.js e MineracaoResponseDTO.js foram carregados antes de usar MineracaoUseCase');
       }

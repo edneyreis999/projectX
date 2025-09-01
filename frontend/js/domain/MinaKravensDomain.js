@@ -27,7 +27,7 @@
         MineracaoRequestDTO = window.MineracaoRequestDTO;
         MineracaoResponseDTO = window.MineracaoResponseDTO;
       }
-      
+
       if (!MineracaoRequestDTO || !MineracaoResponseDTO) {
         throw new Error('DTOs não carregados. Certifique-se de que MineracaoRequestDTO.js e MineracaoResponseDTO.js foram carregados antes de usar MinaKravensDomain');
       }
@@ -53,7 +53,7 @@
     executarMineracao(request) {
       // Garante que os DTOs estão carregados
       ensureDTOsLoaded();
-      
+
       // Validação do input
       if (!(request instanceof MineracaoRequestDTO)) {
         throw new Error('Request deve ser uma instância de MineracaoRequestDTO');
