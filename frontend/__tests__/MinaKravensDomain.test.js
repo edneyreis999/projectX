@@ -104,7 +104,7 @@ describe('MinaKravensDomain', () => {
       const request = new MineracaoRequestDTO({
         kravensJaColetados: 5,
         pilhasJaMineradas: 3,
-        rachaduraJaAtivada: false
+        rachaduraJaAtivada: false,
       });
 
       const resultado = domain.executarMineracao(request);
@@ -121,7 +121,7 @@ describe('MinaKravensDomain', () => {
       const request = new MineracaoRequestDTO({
         kravensJaColetados: 2,
         pilhasJaMineradas: 3,
-        rachaduraJaAtivada: false
+        rachaduraJaAtivada: false,
       });
 
       const resultado = domain.executarMineracao(request); // 3 Kravens restantes, 6 pilhas restantes após mineração
@@ -140,7 +140,7 @@ describe('MinaKravensDomain', () => {
       const request = new MineracaoRequestDTO({
         kravensJaColetados: 2,
         pilhasJaMineradas: 3,
-        rachaduraJaAtivada: false
+        rachaduraJaAtivada: false,
       });
 
       const resultado = domain.executarMineracao(request); // 3 Kravens restantes, 6 pilhas restantes após mineração
@@ -159,7 +159,7 @@ describe('MinaKravensDomain', () => {
       const request = new MineracaoRequestDTO({
         kravensJaColetados: 3,
         pilhasJaMineradas: 2,
-        rachaduraJaAtivada: false
+        rachaduraJaAtivada: false,
       });
 
       const resultado = domain.executarMineracao(request); // 2 Kravens restantes
@@ -176,7 +176,7 @@ describe('MinaKravensDomain', () => {
       const request = new MineracaoRequestDTO({
         kravensJaColetados: 4,
         pilhasJaMineradas: 2,
-        rachaduraJaAtivada: false
+        rachaduraJaAtivada: false,
       });
 
       const resultado = domain.executarMineracao(request); // 1 Kraven restante
@@ -194,7 +194,7 @@ describe('MinaKravensDomain', () => {
       const request = new MineracaoRequestDTO({
         kravensJaColetados: 3,
         pilhasJaMineradas: 7,
-        rachaduraJaAtivada: false
+        rachaduraJaAtivada: false,
       });
 
       const resultado = domain.executarMineracao(request); // 10 - 7 - 1 = 2 pilhas restantes
@@ -207,7 +207,7 @@ describe('MinaKravensDomain', () => {
       const request = new MineracaoRequestDTO({
         kravensJaColetados: 1,
         pilhasJaMineradas: 4,
-        rachaduraJaAtivada: false
+        rachaduraJaAtivada: false,
       });
 
       const resultado = domain.executarMineracao(request);
@@ -222,7 +222,7 @@ describe('MinaKravensDomain', () => {
       const request = new MineracaoRequestDTO({
         kravensJaColetados: 0,
         pilhasJaMineradas: 0,
-        rachaduraJaAtivada: false
+        rachaduraJaAtivada: false,
       });
 
       const resultado = domain.executarMineracao(request);
@@ -235,7 +235,7 @@ describe('MinaKravensDomain', () => {
       const request = new MineracaoRequestDTO({
         kravensJaColetados: 10,
         pilhasJaMineradas: 3,
-        rachaduraJaAtivada: false
+        rachaduraJaAtivada: false,
       });
 
       const resultado = domain.executarMineracao(request); // 10 > 5 necessários
@@ -249,7 +249,7 @@ describe('MinaKravensDomain', () => {
       const request = new MineracaoRequestDTO({
         kravensJaColetados: 2,
         pilhasJaMineradas: 10,
-        rachaduraJaAtivada: false
+        rachaduraJaAtivada: false,
       });
 
       const resultado = domain.executarMineracao(request); // Todas as pilhas foram mineradas
@@ -272,7 +272,7 @@ describe('MinaKravensDomain', () => {
         const request = new MineracaoRequestDTO({
           kravensJaColetados: kravensColetados,
           pilhasJaMineradas: pilhasJaMineradas,
-          rachaduraJaAtivada: false
+          rachaduraJaAtivada: false,
         });
         const resultado = testDomain.executarMineracao(request);
         resultados.push(resultado);
@@ -302,7 +302,7 @@ describe('MinaKravensDomain', () => {
       const request1 = new MineracaoRequestDTO({
         kravensJaColetados: 0,
         pilhasJaMineradas: 0,
-        rachaduraJaAtivada: false
+        rachaduraJaAtivada: false,
       });
       const resultado1 = testDomain.executarMineracao(request1);
       expect(resultado1.tipo).toBe('Pedra');
@@ -312,7 +312,7 @@ describe('MinaKravensDomain', () => {
       const request2 = new MineracaoRequestDTO({
         kravensJaColetados: 0,
         pilhasJaMineradas: 1,
-        rachaduraJaAtivada: false
+        rachaduraJaAtivada: false,
       });
       const resultado2 = testDomain.executarMineracao(request2);
       expect(resultado2.tipo).toBe('Pedra');
@@ -322,7 +322,7 @@ describe('MinaKravensDomain', () => {
       const request3 = new MineracaoRequestDTO({
         kravensJaColetados: 0,
         pilhasJaMineradas: 2,
-        rachaduraJaAtivada: false
+        rachaduraJaAtivada: false,
       });
       const resultado3 = testDomain.executarMineracao(request3);
       expect(resultado3.chanceCalculada).toBe(100); // Garantia de drop na última chance
@@ -354,7 +354,7 @@ describe('MinaKravensDomain', () => {
       const request = new MineracaoRequestDTO({
         kravensJaColetados: 2,
         pilhasJaMineradas: 3,
-        rachaduraJaAtivada: false
+        rachaduraJaAtivada: false,
       });
 
       const resultado = domain.executarMineracao(request);
@@ -382,7 +382,7 @@ describe('MinaKravensDomain', () => {
       const request = new MineracaoRequestDTO({
         kravensJaColetados: 5,
         pilhasJaMineradas: 2,
-        rachaduraJaAtivada: false
+        rachaduraJaAtivada: false,
       });
 
       const resultado = domain.executarMineracao(request);
@@ -411,7 +411,7 @@ describe('MinaKravensDomain', () => {
         const request = new MineracaoRequestDTO({
           kravensJaColetados: 0,
           pilhasJaMineradas: pilhasJaMineradas,
-          rachaduraJaAtivada: false
+          rachaduraJaAtivada: false,
         });
         const resultado = domain.executarMineracao(request);
         const pilhasRestantes = resultado.pilhasRestantes;
@@ -426,7 +426,7 @@ describe('MinaKravensDomain', () => {
       const request = new MineracaoRequestDTO({
         kravensJaColetados: 0,
         pilhasJaMineradas: 0,
-        rachaduraJaAtivada: false
+        rachaduraJaAtivada: false,
       });
       const resultado = domain.executarMineracao(request);
 
@@ -439,7 +439,7 @@ describe('MinaKravensDomain', () => {
       const request = new MineracaoRequestDTO({
         kravensJaColetados: 3,
         pilhasJaMineradas: 5,
-        rachaduraJaAtivada: false
+        rachaduraJaAtivada: false,
       });
       const resultado = domain.executarMineracao(request);
 
@@ -469,7 +469,7 @@ describe('MinaKravensDomain', () => {
         const request = new MineracaoRequestDTO({
           kravensJaColetados: kravensJaColetados,
           pilhasJaMineradas: pilhasJaMineradas,
-          rachaduraJaAtivada: false
+          rachaduraJaAtivada: false,
         });
         const resultado = testDomain.executarMineracao(request);
         if (resultado.tipo === 'Kraven') {
@@ -479,8 +479,17 @@ describe('MinaKravensDomain', () => {
 
       const porcentagemObtida = (kravensObtidos / totalTestes) * 100;
 
-      // Aceita uma margem de erro de ±1% para o teste estatístico
-      expect(porcentagemObtida).toBeCloseTo(chanceEsperada, 0);
+      // Aceita uma margem de erro ampla para o teste estatístico
+      // Com 1000 iterações em uma probabilidade baixa (~2%), a variância estatística normal
+      // pode causar flutuações significativas. Testamos se o resultado está dentro de um range razoável (0.5% a 4%)
+      expect(porcentagemObtida).toBeGreaterThanOrEqual(0.5);
+      expect(porcentagemObtida).toBeLessThanOrEqual(4.0);
+
+      // Alternativamente, podemos verificar se está dentro de uma faixa de 3 desvios padrão
+      const expectedStdDev = (Math.sqrt(totalTestes * (chanceEsperada / 100) * (1 - chanceEsperada / 100)) / totalTestes) * 100;
+      const margin = 3 * expectedStdDev; // 3 desvios padrão (~99.7% dos casos)
+      expect(porcentagemObtida).toBeGreaterThanOrEqual(Math.max(0, chanceEsperada - margin));
+      expect(porcentagemObtida).toBeLessThanOrEqual(chanceEsperada + margin);
     });
   });
 
@@ -493,7 +502,7 @@ describe('MinaKravensDomain', () => {
       const request = new MineracaoRequestDTO({
         kravensJaColetados: 2,
         pilhasJaMineradas: 2,
-        rachaduraJaAtivada: false
+        rachaduraJaAtivada: false,
       });
       const resultado = testDomain.executarMineracao(request); // 2 coletados, 2 pilhas já mineradas
 
@@ -511,7 +520,7 @@ describe('MinaKravensDomain', () => {
       const request = new MineracaoRequestDTO({
         kravensJaColetados: 2,
         pilhasJaMineradas: 3,
-        rachaduraJaAtivada: false
+        rachaduraJaAtivada: false,
       });
       const resultado = testDomain.executarMineracao(request); // 2 coletados, 3 pilhas já mineradas
 
@@ -532,7 +541,7 @@ describe('MinaKravensDomain', () => {
       const request = new MineracaoRequestDTO({
         kravensJaColetados: 1,
         pilhasJaMineradas: 2,
-        rachaduraJaAtivada: false
+        rachaduraJaAtivada: false,
       });
       const resultado = testDomain.executarMineracao(request); // 1 coletado, 2 pilhas já mineradas (sobram 2 pilhas, após mineração sobra 1)
 
@@ -550,7 +559,7 @@ describe('MinaKravensDomain', () => {
       const request = new MineracaoRequestDTO({
         kravensJaColetados: 2,
         pilhasJaMineradas: 3,
-        rachaduraJaAtivada: false
+        rachaduraJaAtivada: false,
       });
 
       jest.spyOn(domain, '_gerarNumeroAleatorio').mockReturnValue(0.1); // Força Kraven
@@ -592,7 +601,7 @@ describe('MinaKravensDomain', () => {
       const request = new MineracaoRequestDTO({
         kravensJaColetados: 4,
         pilhasJaMineradas: 2,
-        rachaduraJaAtivada: false
+        rachaduraJaAtivada: false,
       });
 
       jest.spyOn(domain, '_gerarNumeroAleatorio').mockReturnValue(0.1); // Força Kraven
@@ -619,7 +628,7 @@ describe('MinaKravensDomain', () => {
       const request = new MineracaoRequestDTO({
         kravensJaColetados: 5, // Quest já completa
         pilhasJaMineradas: 3,
-        rachaduraJaAtivada: false
+        rachaduraJaAtivada: false,
       });
 
       const response = domain.executarMineracao(request);
@@ -634,7 +643,7 @@ describe('MinaKravensDomain', () => {
       const request = new MineracaoRequestDTO({
         kravensJaColetados: 3,
         pilhasJaMineradas: 2,
-        rachaduraJaAtivada: true // Rachadura ativada = 100% chance
+        rachaduraJaAtivada: true, // Rachadura ativada = 100% chance
       });
 
       // Não precisa mockar _gerarNumeroAleatorio pois rachadura força 100%
@@ -651,7 +660,7 @@ describe('MinaKravensDomain', () => {
         new MineracaoRequestDTO({
           kravensJaColetados: -1,
           pilhasJaMineradas: 3,
-          rachaduraJaAtivada: false
+          rachaduraJaAtivada: false,
         });
       }).toThrow('kravensJaColetados deve ser um número não negativo');
 
@@ -659,7 +668,7 @@ describe('MinaKravensDomain', () => {
         new MineracaoRequestDTO({
           kravensJaColetados: 2,
           pilhasJaMineradas: -1,
-          rachaduraJaAtivada: false
+          rachaduraJaAtivada: false,
         });
       }).toThrow('pilhasJaMineradas deve ser um número não negativo');
 
@@ -667,7 +676,7 @@ describe('MinaKravensDomain', () => {
         new MineracaoRequestDTO({
           kravensJaColetados: 2,
           pilhasJaMineradas: 3,
-          rachaduraJaAtivada: 'invalid'
+          rachaduraJaAtivada: 'invalid',
         });
       }).toThrow('rachaduraJaAtivada deve ser um boolean');
     });
@@ -680,7 +689,7 @@ describe('MinaKravensDomain', () => {
           deveAtivarRachadura: false,
           pilhasRestantes: 5,
           kravensColetados: 2,
-          chanceCalculada: 50
+          chanceCalculada: 50,
         });
       }).toThrow('tipo deve ser "Kraven" ou "Pedra"');
 
@@ -691,7 +700,7 @@ describe('MinaKravensDomain', () => {
           deveAtivarRachadura: false,
           pilhasRestantes: 5,
           kravensColetados: 2,
-          chanceCalculada: 50
+          chanceCalculada: 50,
         });
       }).toThrow('questCompleta deve ser um boolean');
 
@@ -702,7 +711,7 @@ describe('MinaKravensDomain', () => {
           deveAtivarRachadura: false,
           pilhasRestantes: 5,
           kravensColetados: -1,
-          chanceCalculada: 50
+          chanceCalculada: 50,
         });
       }).toThrow('kravensColetados deve ser um número não negativo');
 
@@ -713,7 +722,7 @@ describe('MinaKravensDomain', () => {
           deveAtivarRachadura: false,
           pilhasRestantes: 5,
           kravensColetados: 2,
-          chanceCalculada: 150
+          chanceCalculada: 150,
         });
       }).toThrow('chanceCalculada deve ser um número entre 0 e 100');
     });
@@ -722,11 +731,11 @@ describe('MinaKravensDomain', () => {
       const request = new MineracaoRequestDTO({
         kravensJaColetados: 2,
         pilhasJaMineradas: 3,
-        rachaduraJaAtivada: false
+        rachaduraJaAtivada: false,
       });
 
       expect(request.isValid()).toBe(true);
-      
+
       const plainRequest = request.toPlainObject();
       expect(plainRequest.kravensJaColetados).toBe(2);
 
@@ -740,7 +749,7 @@ describe('MinaKravensDomain', () => {
         deveAtivarRachadura: true,
         pilhasRestantes: 5,
         kravensColetados: 4,
-        chanceCalculada: 75
+        chanceCalculada: 75,
       });
 
       expect(kravenResponse.isKraven()).toBe(true);
@@ -751,7 +760,7 @@ describe('MinaKravensDomain', () => {
         deveAtivarRachadura: false,
         pilhasRestantes: 5,
         kravensColetados: 3,
-        chanceCalculada: 25
+        chanceCalculada: 25,
       });
 
       expect(pedraResponse.isPedra()).toBe(true);
