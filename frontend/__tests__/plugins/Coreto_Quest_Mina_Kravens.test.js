@@ -3,7 +3,15 @@
  * Plugin de gerenciamento da Mina de Kravens para RPG Maker MZ
  */
 
-const { setupRPGMakerEnvironment, setupGlobalMocks, resetDependencyState, setupDefaultParameters, mockPromiseAll, simulatePluginInitialization, createMockThis } = require('../../../test-utils');
+const {
+  setupRPGMakerEnvironment,
+  setupGlobalMocks,
+  resetDependencyState,
+  setupDefaultParameters,
+  mockPromiseAll,
+  simulatePluginInitialization,
+  createMockThis,
+} = require('./utils/test-utils.helper.cjs');
 
 describe('Coreto_Quest_Mina_Kravens Plugin', () => {
   beforeAll(() => {
