@@ -78,15 +78,31 @@
         // Executa a mineração usando o domínio com DTO
         const resultado = this.domain.executarMineracao(request);
 
-        // Log crítico apenas para resultados importantes usando métodos do DTO
+        // -- INÍCIO DAS NOVAS LINHAS DE LOG --
+
+        // Loga a chance calculada, especialmente se for um valor crítico (0, 100)
+        if (resultado.chanceCalculada === 100 || resultado.chanceCalculada === 0) {
+          this.logger.info('Chance de Kraven calculada pelo domínio', {
+            chance: resultado.chanceCalculada,
+            kravensColetados: resultado.kravensColetados,
+            pilhasRestantes: resultado.pilhasRestantes,
+          });
+        }
+
+        // Loga o resultado da mineração (o que o jogador obteve)
+        this.logger.info(`Jogador minerou e obteve: ${resultado.tipo}`);
+
+        // Log crítico usando os métodos do DTO, agora na camada correta
         if (resultado.shouldActivateCrack() || resultado.isQuestComplete()) {
-          this.logger.info('Resultado crítico da mineração:', {
+          this.logger.warn('Resultado crítico da mineração:', {
+            // Usando .warn para destacar
             tipo: resultado.tipo,
             deveAtivarRachadura: resultado.deveAtivarRachadura,
             questCompleta: resultado.questCompleta,
             kravensColetados: resultado.kravensColetados,
           });
         }
+        // -- FIM DAS NOVAS LINHAS DE LOG --
 
         // Processa o resultado
         this._processarResultado(resultado);

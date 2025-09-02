@@ -84,12 +84,6 @@
       } else if (pilhasRestantesAposMineracao > 0 && pilhasRestantesAposMineracao <= kravensRestantesParaConcluir) {
         // Se após esta mineração, as pilhas restantes são iguais ou menores que os Kravens necessários, garante 100%
         chanceDeObterKraven = 100;
-        if (typeof console !== 'undefined') {
-          console.log('[MinaKravensDomain] Última chance - 100% garantido:', {
-            pilhasRestantesAposMineracao,
-            kravensNecessarios: kravensRestantesParaConcluir,
-          });
-        }
       } else {
         chanceDeObterKraven = this.calcularChanceKraven(kravensJaColetados, pilhasRestantesAposMineracao);
       }
@@ -97,10 +91,6 @@
       // CORREÇÃO DO BUG: Se rachadura já foi ativada, força 100% de chance
       if (rachaduraJaAtivada && !this.isQuestCompleta(kravensJaColetados)) {
         chanceDeObterKraven = 100;
-        // Mantém log crítico sobre rachadura
-        if (typeof console !== 'undefined') {
-          console.log('[MinaKravensDomain] Rachadura ativada - 100% chance de Kraven');
-        }
       }
 
       // Determina o resultado
@@ -117,16 +107,6 @@
       };
 
       const resultado = obteuKraven ? MineracaoResponseDTO.createKravenResponse(responseData) : MineracaoResponseDTO.createPedraResponse(responseData);
-
-      // Mantém log crítico do resultado final
-      if (typeof console !== 'undefined' && (resultado.shouldActivateCrack() || resultado.isQuestComplete())) {
-        console.log('[MinaKravensDomain] Resultado crítico:', {
-          tipo: resultado.tipo,
-          kravensColetados: resultado.kravensColetados,
-          deveAtivarRachadura: resultado.deveAtivarRachadura,
-          questCompleta: resultado.questCompleta,
-        });
-      }
 
       return resultado;
     }
@@ -148,13 +128,6 @@
       // Se o número de pilhas restantes é igual ou menor ao número de Kravens que faltam, chance = 100%
       // Isso garante que o jogador sempre conseguirá os Kravens restantes
       if (pilhasRestantes <= kravensRestantesParaConcluir) {
-        // Mantém log crítico para situação de 100% de chance
-        if (typeof console !== 'undefined') {
-          console.log('[MinaKravensDomain] Situação crítica - 100% chance:', {
-            pilhasRestantes,
-            kravensNecessarios: kravensRestantesParaConcluir,
-          });
-        }
         return 100;
       }
 
@@ -183,14 +156,6 @@
       const faltaUmKraven = kravensColetados === this.totalKravensNecessarios - 1;
       const questJaCompleta = this.isQuestCompleta(kravensColetados);
       const shouldActivate = faltaUmKraven && !questJaCompleta;
-
-      // Mantém log crítico apenas para ativação da rachadura
-      if (typeof console !== 'undefined' && shouldActivate) {
-        console.log('[MinaKravensDomain] Rachadura será ativada!', {
-          kravensColetados,
-          faltaUm: true,
-        });
-      }
 
       return shouldActivate;
     }

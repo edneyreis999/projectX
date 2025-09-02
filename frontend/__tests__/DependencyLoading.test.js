@@ -53,7 +53,7 @@ describe('Dependency Loading Tests', () => {
 
   test('Use Case should work with domain and DTOs', () => {
     const MinaKravensDomain = require('../js/domain/MinaKravensDomain');
-    const MineracaoUseCase = require('../js/aplication/MineracaoUseCase');
+    const MineracaoUseCase = require('../js/application/MineracaoUseCase');
 
     const domain = new MinaKravensDomain(5, 10);
     const mockServices = {
