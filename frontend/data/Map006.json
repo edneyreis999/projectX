@@ -257,9 +257,9 @@
             { "code": 404, "indent": 0, "parameters": [] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
+          "moveSpeed": 5,
           "moveType": 0,
           "priorityType": 0,
           "stepAnime": false,
@@ -661,7 +661,7 @@
           "priorityType": 1,
           "stepAnime": false,
           "through": false,
-          "trigger": 1,
+          "trigger": 0,
           "walkAnime": false
         },
         {
@@ -902,7 +902,7 @@
           "priorityType": 1,
           "stepAnime": false,
           "through": false,
-          "trigger": 1,
+          "trigger": 0,
           "walkAnime": true
         },
         {
