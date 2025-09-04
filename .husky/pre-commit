@@ -15,18 +15,5 @@ if [ -z "$HUSKY_CZ" ]; then
   # exit 0
 fi
 
-echo "➤ Formatando (Prettier)..."
-npm run format
-npm run format:json
-
-echo "➤ Aplicando correções automáticas (ESLint --fix)..."
-npm run lint || true
-
-echo "➤ Adicionando arquivos formatados/ajustados ao stage..."
-git add -A
-
-echo "➤ Verificando se restaram erros de lint..."
-npm run lint:check || {
-  echo "Erro: O commit foi abortado pois ainda há erros de lint após a formatação."
-  exit 1
-}
+echo "➤ Validando e formatando apenas arquivos em stage (lint-staged)..."
+npx lint-staged

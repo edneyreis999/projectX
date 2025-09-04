@@ -65,15 +65,26 @@
 var coreto = coreto || {};
 const pluginName = 'Coreto_Quests';
 
+// Cria logger usando o sistema do Coreto Core
+const Logger = window.CoretoCore
+  ? window.CoretoCore.createLogger(pluginName)
+  : {
+      debug: console.log,
+      info: console.info,
+      warn: console.warn,
+      error: console.error,
+    };
+
 /**
- * Adds an item, weapon, or armor to the inventory.
- * @param {string} type - The type of item ("item", "weapon", "armor").
- * @param {number} id - The ID of the item in the database.
+ * Adiciona um item ao inventário usando o sistema da Coreto ou padrão do RPG Maker
+ * @param {string} type - O tipo do item ("item", "weapon", "armor")
+ * @param {number} id - O ID do item no banco de dados
+ * @param {number} amount - Quantidade a adicionar (padrão: 1)
  */
-coreto.addInventoryItem = function (type, id) {
+coreto.addInventoryItem = function (type, id, amount = 1) {
   let item;
 
-  // Determine the item type
+  // Determina o tipo do item
   switch (type) {
     case 'item':
       item = $dataItems[id];
@@ -86,32 +97,35 @@ coreto.addInventoryItem = function (type, id) {
       break;
   }
 
-  // Add the item to the inventory
+  // Adiciona o item ao inventário
   if (item) {
-    $gameParty.gainItem(item, 1);
+    $gameParty.gainItem(item, amount);
 
-    // Play a sound effect
+    // Reproduz um efeito sonoro
     AudioManager.playSe({ name: 'Item3', volume: 90, pitch: 100, pan: 0 });
 
-    // Show a message
+    // Exibe uma mensagem
     $gameMessage.setPositionType(0);
     const itemIcon = `\\i[${item.iconIndex}]`;
     const itemName = item.name;
     const message = `Recebeu ${itemIcon} \\c[4]${itemName}\\c[0]!`;
     $gameMessage.add(message);
 
-    console.log(`[Coreto_Quests] Added: ${item.name} (${type}).`);
+    Logger.info(`Added: ${item.name} (${type}).`);
+    return true;
   } else {
-    console.warn(`[Coreto_Quests] Item not found: Type(${type}), ID(${id}).`);
+    Logger.warn(`Item not found: Type(${type}), ID(${id}).`);
+    return false;
   }
 };
 
 /**
- * Removes an item, weapon, or armor from the inventory.
- * @param {string} type - The type of item ("item", "weapon", "armor").
- * @param {number} id - The ID of the item in the database.
+ * Remove um item do inventário
+ * @param {string} type - O tipo do item ("item", "weapon", "armor")
+ * @param {number} id - O ID do item no banco de dados
+ * @param {number} amount - Quantidade a remover (padrão: 1)
  */
-coreto.removeInventoryItem = function (type, id) {
+coreto.removeInventoryItem = function (type, id, amount = 1) {
   let item;
 
   // Determine the item type
@@ -129,7 +143,7 @@ coreto.removeInventoryItem = function (type, id) {
 
   // Remove the item from the inventory
   if (item) {
-    $gameParty.loseItem(item, 1);
+    $gameParty.loseItem(item, amount);
 
     // Play a sound effect
     AudioManager.playSe({ name: 'Item3', volume: 90, pitch: 100, pan: 0 });
@@ -141,9 +155,85 @@ coreto.removeInventoryItem = function (type, id) {
     const message = `Usou ${itemIcon} \\c[2]${itemName}\\c[0]!`;
     $gameMessage.add(message);
 
-    console.log(`[Coreto_Quests] Removed: ${item.name} (${type}).`);
+    Logger.info(`Removed: ${item.name} (${type}).`);
+    return true;
   } else {
-    console.warn(`[Coreto_Quests] Item not found: Type(${type}), ID(${id}).`);
+    Logger.warn(`Item not found: Type(${type}), ID(${id}).`);
+    return false;
+  }
+};
+
+/**
+ * Adiciona item ao inventário (wrapper simplificado)
+ * Mantém compatibilidade com código existente
+ * @param {number} itemId - ID do item
+ * @param {number} amount - Quantidade (padrão: 1)
+ */
+coreto.addItemToInventory = function (itemId, amount = 1) {
+  return this.addInventoryItem('item', itemId, amount);
+};
+
+/**
+ * Classe base para gerenciamento de Quests
+ */
+coreto.BaseQuest = class BaseQuest {
+  constructor(questName, logger) {
+    this.questName = questName;
+    this.logger = logger || Logger;
+  }
+
+  /**
+   * Adiciona item usando o sistema de quests
+   * @param {string} type - Tipo do item
+   * @param {number} itemId - ID do item
+   * @param {number} amount - Quantidade
+   */
+  addItem(type, itemId, amount = 1) {
+    const success = coreto.addInventoryItem(type, itemId, amount);
+    if (success) {
+      this.logger.info?.(`Item adicionado: ${type} ID:${itemId} x${amount}`);
+    }
+    return success;
+  }
+
+  /**
+   * Remove item usando o sistema de quests
+   * @param {string} type - Tipo do item
+   * @param {number} itemId - ID do item
+   * @param {number} amount - Quantidade
+   */
+  removeItem(type, itemId, amount = 1) {
+    const success = coreto.removeInventoryItem(type, itemId, amount);
+    if (success) {
+      this.logger.info?.(`Item removido: ${type} ID:${itemId} x${amount}`);
+    }
+    return success;
+  }
+
+  /**
+   * Verifica se uma condição de progresso foi atingida
+   * @param {number} current - Valor atual
+   * @param {number} target - Valor alvo
+   * @param {string} description - Descrição para logs
+   */
+  checkProgress(current, target, description = '') {
+    const progress = Math.min(current / target, 1) * 100;
+    this.logger.debug?.(`Progresso ${description}: ${current}/${target} (${progress.toFixed(1)}%)`);
+    return current >= target;
+  }
+
+  /**
+   * Executa uma ação de quest com tratamento de erro
+   * @param {Function} action - Ação a ser executada
+   * @param {string} actionName - Nome da ação para logs
+   */
+  safeExecute(action, actionName = 'Quest Action') {
+    try {
+      return action();
+    } catch (error) {
+      this.logger.error?.(`Erro em ${actionName}:`, error);
+      return false;
+    }
   }
 };
 
@@ -174,6 +264,9 @@ PluginManager.registerCommand(pluginName, 'addArmor', args => {
   const armorID = Number(args.armorID);
   coreto.addInventoryItem('armor', armorID);
 });
+
+// Log de inicialização do plugin
+Logger.info('Plugin inicializado com sucesso. Sistema de logging integrado com Coreto Core.');
 
 PluginManager.registerCommand(pluginName, 'removeArmor', args => {
   const armorID = Number(args.armorID);

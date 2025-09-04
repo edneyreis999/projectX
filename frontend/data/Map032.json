@@ -618,7 +618,7 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Actor3", "direction": 4, "pattern": 0, "characterIndex": 1 },
           "list": [
-            { "code": 101, "indent": 0, "parameters": ["Actor3", 1, 0, 2, "Serena"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/GuardaExpedicionarios", 1, 0, 2, "Vendedor"] },
             { "code": 401, "indent": 0, "parameters": ["Nós precisamos entrar na mina!"] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
@@ -670,7 +670,7 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Actor2", "direction": 2, "pattern": 0, "characterIndex": 1 },
           "list": [
-            { "code": 101, "indent": 0, "parameters": ["Actor2", 1, 0, 2, "Naga"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/GuardaExpedicionarios", 3, 0, 2, "Naga"] },
             { "code": 401, "indent": 0, "parameters": ["Nós precisamos entrar na mina!"] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
@@ -721,7 +721,7 @@
             "variableValue": 0
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Actor2", "direction": 6, "pattern": 1, "characterIndex": 2 },
+          "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario2", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [
             { "code": 101, "indent": 0, "parameters": ["Actor2", 2, 0, 2, "Rascal"] },
             { "code": 401, "indent": 0, "parameters": ["Nós precisamos entrar na mina!"] },

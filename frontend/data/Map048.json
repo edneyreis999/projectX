@@ -209,7 +209,7 @@
           "directionFix": true,
           "image": { "tileId": 0, "characterName": "$BigMonster1-inv", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [
-            { "code": 101, "indent": 0, "parameters": ["Personagens Daratrine/Thorin_armor", 0, 0, 2, "Thorin"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 0, 0, 2, "Thorin"] },
             { "code": 401, "indent": 0, "parameters": ["Que parede mais estranha..."] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
@@ -243,7 +243,7 @@
           "image": { "tileId": 0, "characterName": "$BigMonster1-inv", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [
             { "code": 213, "indent": 0, "parameters": [-1, 1, true] },
-            { "code": 101, "indent": 0, "parameters": ["Personagens Daratrine/Thorin_fut", 0, 0, 2, "Thorin"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 0, 0, 2, "Thorin"] },
             { "code": 401, "indent": 0, "parameters": ["Tem algo enorme se mexendo aqui!"] },
             {
               "code": 205,
@@ -291,10 +291,10 @@
             { "code": 205, "indent": 0, "parameters": [-1, { "list": [{ "code": 19, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 19, "indent": null }] },
             { "code": 213, "indent": 0, "parameters": [-1, 5, false] },
-            { "code": 101, "indent": 0, "parameters": ["Personagens Daratrine/Mhordred", 0, 0, 2, "Mhordred"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal1", 5, 0, 2, "Mhordred"] },
             { "code": 401, "indent": 0, "parameters": ["Thorin! Cuidado!"] },
             { "code": 230, "indent": 0, "parameters": [10] },
-            { "code": 101, "indent": 0, "parameters": ["Personagens Daratrine/Kilin", 0, 0, 2, "Kilin"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal1", 3, 0, 2, "Kilin"] },
             { "code": 401, "indent": 0, "parameters": ["Guardas Imperiais, cumpram seu dever! Formação"] },
             { "code": 401, "indent": 0, "parameters": ["do Cão-Dragão!"] },
             { "code": 301, "indent": 0, "parameters": [0, 29, false, false] },
@@ -341,13 +341,13 @@
           "directionFix": true,
           "image": { "tileId": 0, "characterName": "!Crystal", "direction": 6, "pattern": 1, "characterIndex": 0 },
           "list": [
-            { "code": 101, "indent": 0, "parameters": ["Personagens Daratrine/Thorin_armor", 0, 0, 2, "Thorin"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 0, 0, 2, "Thorin"] },
             { "code": 401, "indent": 0, "parameters": ["Yey! O Cristaleão estava escondendo um"] },
             { "code": 401, "indent": 0, "parameters": ["Cristal de Sigmetal! "] },
             { "code": 357, "indent": 0, "parameters": ["Coreto_Quests", "addKeyItem", "Add Key Item", { "itemID": "10" }] },
             { "code": 657, "indent": 0, "parameters": ["Item ID = 10"] },
             { "code": 122, "indent": 0, "parameters": [25, 25, 1, 0, 4] },
-            { "code": 101, "indent": 0, "parameters": ["Personagens Daratrine/Thorin_armor", 0, 0, 2, "Thorin"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 0, 0, 2, "Thorin"] },
             { "code": 401, "indent": 0, "parameters": ["Eu tenho que voltar, ainda há mais trabalho"] },
             { "code": 401, "indent": 0, "parameters": ["a ser feito!"] },
             { "code": 230, "indent": 0, "parameters": [1] },
@@ -459,9 +459,9 @@
           "list": [
             { "code": 250, "indent": 0, "parameters": [{ "name": "Breath", "volume": 90, "pitch": 100, "pan": 0 }] },
             { "code": 213, "indent": 0, "parameters": [-1, 8, true] },
-            { "code": 101, "indent": 0, "parameters": ["Personagens Daratrine/Thorin_armor", 0, 0, 2, "Thorin"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 0, 0, 2, "Thorin"] },
             { "code": 401, "indent": 0, "parameters": ["Que barulho foi esse?"] },
-            { "code": 101, "indent": 0, "parameters": ["Personagens Daratrine/Thorin_armor", 0, 0, 2, "Thorin"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 0, 0, 2, "Thorin"] },
             { "code": 401, "indent": 0, "parameters": ["Acho que veio daquela parede!"] },
             { "code": 205, "indent": 0, "parameters": [-1, { "list": [{ "code": 19, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 19, "indent": null }] },
@@ -593,7 +593,6 @@
           "directionFix": true,
           "image": { "tileId": 0, "characterName": "kilin", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Kilin"] },
             { "code": 205, "indent": 0, "parameters": [3, { "list": [{ "code": 39, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 39, "indent": null }] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -665,7 +664,6 @@
           "directionFix": true,
           "image": { "tileId": 0, "characterName": "mhordred", "direction": 8, "pattern": 0, "characterIndex": 0 },
           "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Mhordred"] },
             { "code": 205, "indent": 0, "parameters": [4, { "list": [{ "code": 39, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 39, "indent": null }] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -737,7 +735,6 @@
           "directionFix": true,
           "image": { "tileId": 0, "characterName": "tharok", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [
-            { "code": 108, "indent": 0, "parameters": ["XA:Tharok"] },
             { "code": 205, "indent": 0, "parameters": [5, { "list": [{ "code": 39, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 39, "indent": null }] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -1251,8 +1248,8 @@
           "walkAnime": false
         }
       ],
-      "x": 1,
-      "y": 5
+      "x": 29,
+      "y": 4
     }
   ]
 }

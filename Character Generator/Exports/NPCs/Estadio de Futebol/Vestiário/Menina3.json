@@ -1,0 +1,109 @@
+{
+  "Layers": [
+    {
+      "Name": "roupa",
+      "Category": "Clothing",
+      "Part": "Clothing08",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Base",
+      "Category": "Body",
+      "Part": "BodyFem",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Franja",
+      "Category": "Front Hair",
+      "Part": "FrontHair02",
+      "Offsets": {
+        "Face": "1, 4"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Olhos",
+      "Category": "Eyes",
+      "Part": "Eye03",
+      "Offsets": {
+        "Face": "-5, 24",
+        "Sv": "0, 2",
+        "Walk": "0, 2"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "sobrancelha",
+      "Category": "Eyebrows",
+      "Part": "Eyebrows 1",
+      "Offsets": {
+        "Face": "0, 18",
+        "Sv": "0, 8",
+        "Walk": "0, 2"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "nariz",
+      "Category": "Nose",
+      "Part": "Nariz 1",
+      "Offsets": {
+        "Face": "0, -2",
+        "Sv": "0, -2",
+        "Walk": "0, -2"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "capacete",
+      "Category": "Helmets",
+      "Part": "Helmet 8",
+      "Offsets": {
+        "Face": "-2, 5",
+        "Sv": "0, 0",
+        "Walk": "0, -1"
+      },
+      "Visible": false,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "boca",
+      "Category": "Mouth",
+      "Part": "Portrait_Boca1",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Cabelo",
+      "Category": "Rear Hair",
+      "Part": "RearHair05",
+      "Offsets": {
+        "Face": "2, 0",
+        "Sv": "0, 0",
+        "Walk": "0, 0"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    }
+  ],
+  "BodyType": "SDwarfBodyFemale",
+  "BodyTypeVariation": ""
+}
