@@ -119,7 +119,7 @@
           "priorityType": 1,
           "stepAnime": false,
           "through": false,
-          "trigger": 1,
+          "trigger": 0,
           "walkAnime": false
         },
         {
@@ -212,7 +212,7 @@
           "priorityType": 1,
           "stepAnime": false,
           "through": false,
-          "trigger": 1,
+          "trigger": 0,
           "walkAnime": true
         },
         {
@@ -315,7 +315,7 @@
           "priorityType": 1,
           "stepAnime": false,
           "through": false,
-          "trigger": 1,
+          "trigger": 0,
           "walkAnime": false
         },
         {
@@ -1001,7 +1001,7 @@
             { "code": 401, "indent": 0, "parameters": ["É frustrante, mas dessa vez eu não tenho"] },
             { "code": 401, "indent": 0, "parameters": ["como te salvar, Thorin. É melhor você obedecer,"] },
             { "code": 401, "indent": 0, "parameters": ["vá com eles para casa. Nos falamos depois."] },
-            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal1", 2, 0, 2, "Principal/$Filena"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal1", 2, 0, 2, "Filena"] },
             { "code": 401, "indent": 0, "parameters": ["Qual seu problema? Você não pode deixar ele"] },
             { "code": 401, "indent": 0, "parameters": ["falar assim com você, Thorin!"] },
             { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal1", 3, 0, 2, "Kilin"] },
