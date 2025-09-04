@@ -129,7 +129,7 @@
           "priorityType": 1,
           "stepAnime": false,
           "through": false,
-          "trigger": 2,
+          "trigger": 0,
           "walkAnime": true
         },
         {
@@ -248,7 +248,7 @@
           "priorityType": 1,
           "stepAnime": false,
           "through": false,
-          "trigger": 2,
+          "trigger": 0,
           "walkAnime": true
         },
         {
@@ -277,7 +277,7 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 2,
+          "trigger": 0,
           "walkAnime": true
         }
       ],

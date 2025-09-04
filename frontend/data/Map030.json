@@ -266,28 +266,7 @@
             { "code": 129, "indent": 0, "parameters": [6, 1, false] },
             { "code": 129, "indent": 0, "parameters": [7, 1, false] },
             { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 5, 0, 2, "Tusk"] },
-            { "code": 401, "indent": 0, "parameters": ["Ah, finalmente chegaram. Anda garoto, vamos"] },
-            { "code": 401, "indent": 0, "parameters": ["até perto da minha tenda!"] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                1,
-                { "list": [{ "code": 45, "parameters": ["Move To: 3,19"], "indent": null }, { "code": 18, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
-              ]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move To: 3,19"], "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 18, "indent": null }] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                -1,
-                { "list": [{ "code": 45, "parameters": ["Move To: 4,19"], "indent": null }, { "code": 17, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
-              ]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move To: 4,19"], "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 17, "indent": null }] },
+            { "code": 401, "indent": 0, "parameters": ["Ah, finalmente chegaram."] },
             { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 5, 0, 2, "Tusk"] },
             { "code": 401, "indent": 0, "parameters": ["Se perdeu no caminho, novato?"] },
             { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 5, 0, 2, "Tusk"] },
@@ -347,7 +326,7 @@
           "priorityType": 1,
           "stepAnime": true,
           "through": false,
-          "trigger": 1,
+          "trigger": 0,
           "walkAnime": false
         },
         {
@@ -380,7 +359,7 @@
           "walkAnime": true
         }
       ],
-      "x": 6,
+      "x": 7,
       "y": 19
     },
     {
@@ -720,8 +699,8 @@
           "walkAnime": true
         }
       ],
-      "x": 7,
-      "y": 16
+      "x": 11,
+      "y": 19
     },
     {
       "id": 3,
@@ -941,8 +920,8 @@
           "walkAnime": false
         }
       ],
-      "x": 6,
-      "y": 16
+      "x": 10,
+      "y": 18
     },
     {
       "id": 5,
@@ -2013,8 +1992,8 @@
           "walkAnime": false
         }
       ],
-      "x": 5,
-      "y": 16
+      "x": 9,
+      "y": 19
     },
     {
       "id": 15,
@@ -2175,7 +2154,7 @@
           "priorityType": 1,
           "stepAnime": true,
           "through": false,
-          "trigger": 1,
+          "trigger": 0,
           "walkAnime": false
         },
         {
