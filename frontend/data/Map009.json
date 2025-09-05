@@ -831,7 +831,6 @@
             },
             { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 11,12"], "indent": null }] },
             { "code": 213, "indent": 0, "parameters": [7, 14, false] },
-            { "code": 322, "indent": 0, "parameters": [3, "Thorin_Fut", 0, "Personagens Daratrine/Thorin_fut", 0, "Thorin-fut"] },
             { "code": 230, "indent": 0, "parameters": [120] },
             { "code": 122, "indent": 0, "parameters": [29, 29, 0, 0, 7] },
             { "code": 201, "indent": 0, "parameters": [0, 14, 9, 7, 4, 0] },

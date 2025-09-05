@@ -4,6 +4,8 @@
     "id": 1,
     "list": [
       { "code": 111, "indent": 0, "parameters": [12, "$gameActors.actor(3).isEquipped($dataArmors[51])"] },
+      { "code": 322, "indent": 1, "parameters": [3, "", 0, "Portraits menores/Principal2", 1, "Thorin"] },
+      { "code": 322, "indent": 1, "parameters": [1, "People1", 0, "Portraits menores/Principal2", 1, "Actor1_1"] },
       { "code": 212, "indent": 1, "parameters": [-1, 91, false] },
       { "code": 357, "indent": 1, "parameters": ["PKD_AnimaX", "ChangePlayerAnimationSet", "Change Player Animation", { "animationSetName": "Thorin_OldHelmet" }] },
       { "code": 657, "indent": 1, "parameters": ["Animation ID = Thorin_OldHelmet"] },
@@ -39,6 +41,7 @@
     "id": 3,
     "list": [
       { "code": 111, "indent": 0, "parameters": [12, "$gameActors.actor(3).equips().includes($dataArmors[7])"] },
+      { "code": 322, "indent": 1, "parameters": [3, "", 0, "Portraits menores/Principal2", 0, "Thorin"] },
       { "code": 357, "indent": 1, "parameters": ["PKD_AnimaX", "ChangePlayerAnimationSet", "Change Player Animation", { "animationSetName": "Thorin_Armor" }] },
       { "code": 657, "indent": 1, "parameters": ["Animation ID = Thorin_Armor"] },
       { "code": 212, "indent": 1, "parameters": [-1, 91, false] },
