@@ -229,7 +229,7 @@
           "priorityType": 1,
           "stepAnime": false,
           "through": false,
-          "trigger": 1,
+          "trigger": 0,
           "walkAnime": false
         },
         {
@@ -301,7 +301,7 @@
           "priorityType": 1,
           "stepAnime": false,
           "through": false,
-          "trigger": 1,
+          "trigger": 0,
           "walkAnime": false
         },
         {
@@ -330,7 +330,7 @@
           "priorityType": 1,
           "stepAnime": false,
           "through": false,
-          "trigger": 1,
+          "trigger": 0,
           "walkAnime": true
         }
       ],
@@ -509,7 +509,7 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": true,
-          "trigger": 2,
+          "trigger": 0,
           "walkAnime": true
         },
         {
@@ -542,7 +542,7 @@
           "priorityType": 1,
           "stepAnime": false,
           "through": false,
-          "trigger": 1,
+          "trigger": 0,
           "walkAnime": true
         },
         {
@@ -571,7 +571,7 @@
           "priorityType": 1,
           "stepAnime": false,
           "through": false,
-          "trigger": 1,
+          "trigger": 0,
           "walkAnime": true
         },
         {
@@ -781,7 +781,7 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": true,
-          "trigger": 2,
+          "trigger": 0,
           "walkAnime": true
         },
         {
@@ -815,7 +815,7 @@
           "priorityType": 1,
           "stepAnime": false,
           "through": false,
-          "trigger": 1,
+          "trigger": 0,
           "walkAnime": true
         },
         {
@@ -844,7 +844,7 @@
           "priorityType": 1,
           "stepAnime": false,
           "through": false,
-          "trigger": 1,
+          "trigger": 0,
           "walkAnime": true
         },
         {
@@ -911,7 +911,7 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": true,
-          "trigger": 2,
+          "trigger": 0,
           "walkAnime": true
         },
         {
@@ -946,7 +946,7 @@
           "priorityType": 1,
           "stepAnime": false,
           "through": false,
-          "trigger": 1,
+          "trigger": 0,
           "walkAnime": true
         },
         {
@@ -975,7 +975,7 @@
           "priorityType": 1,
           "stepAnime": false,
           "through": false,
-          "trigger": 1,
+          "trigger": 0,
           "walkAnime": true
         },
         {
@@ -1284,7 +1284,7 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 1,
+          "trigger": 2,
           "walkAnime": true
         },
         {

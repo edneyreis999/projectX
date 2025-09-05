@@ -3261,7 +3261,7 @@
         }
       ],
       "x": 98,
-      "y": 45
+      "y": 46
     },
     {
       "id": 4,
@@ -3289,7 +3289,6 @@
           "list": [
             { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
             { "code": 201, "indent": 0, "parameters": [0, 30, 1, 11, 0, 0] },
-            { "code": 122, "indent": 0, "parameters": [33, 33, 0, 0, 2] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -3308,7 +3307,7 @@
     },
     {
       "id": 5,
-      "name": "Expedicionário 1",
+      "name": "Kaldorn 1",
       "note": "",
       "pages": [
         {
@@ -3334,7 +3333,7 @@
               "code": 205,
               "indent": 0,
               "parameters": [
-                5,
+                0,
                 {
                   "list": [
                     { "code": 2, "indent": null },
@@ -3470,7 +3469,7 @@
     },
     {
       "id": 6,
-      "name": "Expedicionário 2",
+      "name": "Torvald 1",
       "note": "",
       "pages": [
         {
@@ -3496,7 +3495,7 @@
               "code": 205,
               "indent": 0,
               "parameters": [
-                6,
+                0,
                 {
                   "list": [
                     { "code": 2, "indent": null },
@@ -3614,7 +3613,7 @@
     },
     {
       "id": 7,
-      "name": "Expedicionário 3",
+      "name": "Borrin 1",
       "note": "",
       "pages": [
         {
@@ -3640,7 +3639,7 @@
               "code": 205,
               "indent": 0,
               "parameters": [
-                7,
+                0,
                 {
                   "list": [
                     { "code": 2, "indent": null },
@@ -3816,6 +3815,15 @@
             { "code": 205, "indent": 0, "parameters": [2, { "list": [{ "code": 17, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 17, "indent": null }] },
             { "code": 213, "indent": 0, "parameters": [2, 8, false] },
+            { "code": 205, "indent": 0, "parameters": [5, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
+            { "code": 213, "indent": 0, "parameters": [5, 1, false] },
+            { "code": 205, "indent": 0, "parameters": [6, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
+            { "code": 213, "indent": 0, "parameters": [6, 1, false] },
+            { "code": 205, "indent": 0, "parameters": [7, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
+            { "code": 213, "indent": 0, "parameters": [7, 1, false] },
             { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 0, 0, 2, "Thorin"] },
             { "code": 401, "indent": 0, "parameters": ["Mas o que foi isso?!"] },
             { "code": 205, "indent": 0, "parameters": [-1, { "list": [{ "code": 18, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }] },
@@ -4001,7 +4009,7 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 2,
           "walkAnime": true
         },
         {
@@ -4030,7 +4038,7 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 2,
           "walkAnime": true
         }
       ],
@@ -4063,7 +4071,6 @@
           "list": [
             { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
             { "code": 201, "indent": 0, "parameters": [0, 30, 1, 11, 0, 0] },
-            { "code": 122, "indent": 0, "parameters": [33, 33, 0, 0, 2] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -4133,7 +4140,7 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 2,
           "walkAnime": true
         },
         {
@@ -4162,7 +4169,7 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 2,
           "walkAnime": true
         }
       ],
@@ -4222,7 +4229,7 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 2,
           "walkAnime": true
         },
         {
@@ -4251,7 +4258,7 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 2,
           "walkAnime": true
         }
       ],
@@ -4311,7 +4318,7 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 2,
           "walkAnime": true
         },
         {
@@ -4340,11 +4347,11 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 2,
           "walkAnime": true
         }
       ],
-      "x": 127,
+      "x": 126,
       "y": 51
     },
     {
@@ -4400,7 +4407,7 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 2,
           "walkAnime": true
         },
         {
@@ -4429,11 +4436,11 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 2,
           "walkAnime": true
         }
       ],
-      "x": 126,
+      "x": 127,
       "y": 51
     },
     {
@@ -4465,7 +4472,7 @@
             { "code": 205, "indent": 0, "parameters": [-1, { "list": [{ "code": 1, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
             { "code": 213, "indent": 0, "parameters": [-1, 1, false] },
-            { "code": 101, "indent": 0, "parameters": ["Personagens Daratrine/Thorin_armor", 0, 0, 2, "Thorin"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 0, 0, 2, "Thorin"] },
             { "code": 401, "indent": 0, "parameters": ["E no fim aquela caverna escondia uma passagem"] },
             { "code": 401, "indent": 0, "parameters": ["secreta! Agora pé na estrada!"] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -4611,7 +4618,7 @@
             "variableValue": 3
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "tharok", "direction": 4, "pattern": 0, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Tharok", "direction": 4, "pattern": 1, "characterIndex": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
@@ -4707,7 +4714,7 @@
             "variableValue": 3
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "kilin", "direction": 4, "pattern": 0, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Kilin", "direction": 4, "pattern": 1, "characterIndex": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
@@ -4803,7 +4810,7 @@
             "variableValue": 3
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "mhordred", "direction": 4, "pattern": 0, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Mhordred", "direction": 4, "pattern": 1, "characterIndex": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
@@ -5469,7 +5476,7 @@
             "variableValue": 5
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "kilin", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Kilin", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
@@ -5516,7 +5523,7 @@
     },
     {
       "id": 28,
-      "name": "Tharok Travessia",
+      "name": "Mhordred Travessia",
       "note": "",
       "pages": [
         {
@@ -5565,7 +5572,7 @@
             "variableValue": 5
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "tharok", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Mhordred", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
@@ -5661,7 +5668,7 @@
             "variableValue": 5
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "tharok", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Tharok", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
@@ -5761,7 +5768,7 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 2,
           "walkAnime": true
         },
         {
@@ -5794,7 +5801,7 @@
           "walkAnime": true
         }
       ],
-      "x": 106,
+      "x": 108,
       "y": 68
     },
     {
@@ -5848,7 +5855,7 @@
             "variableValue": 7
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "daratrine", "direction": 8, "pattern": 0, "characterIndex": 3 },
+          "image": { "tileId": 0, "characterName": "Principal/$Tusk", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
@@ -5877,15 +5884,10 @@
             "variableValue": 8
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "daratrine", "direction": 8, "pattern": 0, "characterIndex": 3 },
+          "image": { "tileId": 0, "characterName": "Principal/$Tusk", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
             { "code": 205, "indent": 0, "parameters": [0, { "list": [{ "code": 25, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 25, "indent": null }] },
-            { "code": 213, "indent": 0, "parameters": [0, 7, false] },
-            { "code": 101, "indent": 0, "parameters": ["Personagens Daratrine/Thorin_armor", 0, 0, 2, "Thorin"] },
-            { "code": 401, "indent": 0, "parameters": ["Essa foi por pouco!"] },
-            { "code": 101, "indent": 0, "parameters": ["Evil", 1, 0, 2, "Tusk"] },
-            { "code": 401, "indent": 0, "parameters": ["Moleque irritante!"] },
             {
               "code": 205,
               "indent": 0,
@@ -5896,8 +5898,11 @@
             },
             { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 95,55"], "indent": null }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 19, "indent": null }] },
-            { "code": 101, "indent": 0, "parameters": ["Personagens Daratrine/Thorin_armor", 0, 0, 2, "Thorin"] },
-            { "code": 401, "indent": 0, "parameters": ["De nada, \"Senhor\" Tusk..."] },
+            { "code": 213, "indent": 0, "parameters": [0, 7, false] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 0, 0, 2, "Thorin"] },
+            { "code": 401, "indent": 0, "parameters": ["Essa foi por pouco!"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 5, 0, 2, "Tusk"] },
+            { "code": 401, "indent": 0, "parameters": ["Moleque irritante!"] },
             {
               "code": 205,
               "indent": 0,
@@ -5914,6 +5919,8 @@
             { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 99,49"], "indent": null }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 39, "indent": null }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 37, "indent": null }] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 0, 0, 2, "Thorin"] },
+            { "code": 401, "indent": 0, "parameters": ["De nada..."] },
             { "code": 123, "indent": 0, "parameters": ["A", 0] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
@@ -5944,7 +5951,7 @@
             "variableValue": 0
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "tusk", "direction": 8, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Tusk", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
@@ -5991,7 +5998,7 @@
     },
     {
       "id": 32,
-      "name": "Anã 1 Gildrat",
+      "name": "Kaldorn 2",
       "note": "",
       "pages": [
         {
@@ -6040,7 +6047,7 @@
             "variableValue": 7
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Actor2", "direction": 8, "pattern": 0, "characterIndex": 1 },
+          "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario1", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": {
@@ -6079,18 +6086,18 @@
             "variableValue": 8
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Actor2", "direction": 8, "pattern": 0, "characterIndex": 1 },
+          "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario1", "direction": 2, "pattern": 2, "characterIndex": 0 },
           "list": [
             { "code": 205, "indent": 0, "parameters": [0, { "list": [{ "code": 25, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 25, "indent": null }] },
-            { "code": 101, "indent": 0, "parameters": ["Actor2", 1, 0, 2, "Tulla"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/GuardaExpedicionarios", 3, 0, 2, "Kaldorn"] },
             { "code": 401, "indent": 0, "parameters": ["Você nos salvou! Qualquer dia desses, te pago"] },
             { "code": 401, "indent": 0, "parameters": ["uma cerveja!"] },
             {
               "code": 205,
               "indent": 0,
               "parameters": [
-                32,
+                0,
                 {
                   "list": [{ "code": 45, "parameters": ["Move to: 98,50"], "indent": null }, { "code": 39, "indent": null }, { "code": 37, "indent": null }, { "code": 0 }],
                   "repeat": false,
@@ -6142,7 +6149,7 @@
             "variableValue": 0
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Actor2", "direction": 8, "pattern": 0, "characterIndex": 1 },
+          "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario1", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
@@ -6189,7 +6196,7 @@
     },
     {
       "id": 33,
-      "name": "Anão 2 Gildrat",
+      "name": "Torvald 2",
       "note": "",
       "pages": [
         {
@@ -6238,7 +6245,7 @@
             "variableValue": 7
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario2", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario2", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
@@ -6271,13 +6278,13 @@
           "list": [
             { "code": 205, "indent": 0, "parameters": [0, { "list": [{ "code": 25, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 25, "indent": null }] },
-            { "code": 101, "indent": 0, "parameters": ["Actor2", 2, 0, 2, "Roman"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/GuardaExpedicionarios", 4, 0, 2, "Torvald"] },
             { "code": 401, "indent": 0, "parameters": ["Já chega, estou indo para casa!"] },
             {
               "code": 205,
               "indent": 0,
               "parameters": [
-                33,
+                0,
                 {
                   "list": [{ "code": 45, "parameters": ["Move to: 99,48"], "indent": null }, { "code": 39, "indent": null }, { "code": 37, "indent": null }, { "code": 0 }],
                   "repeat": false,
@@ -6376,7 +6383,7 @@
     },
     {
       "id": 34,
-      "name": "Anã 3 Gildrat",
+      "name": "Borrin 2",
       "note": "",
       "pages": [
         {
@@ -6425,7 +6432,7 @@
             "variableValue": 7
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario3", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario3", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": {
@@ -6469,14 +6476,14 @@
           "list": [
             { "code": 205, "indent": 0, "parameters": [0, { "list": [{ "code": 25, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 25, "indent": null }] },
-            { "code": 101, "indent": 0, "parameters": ["SF_Actor3", 1, 0, 2, "Sirena"] },
-            { "code": 401, "indent": 0, "parameters": ["Achei que íamos morrer... Obrigada, Thorin!"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/GuardaExpedicionarios", 2, 0, 2, "Borrin"] },
+            { "code": 401, "indent": 0, "parameters": ["Achei que íamos morrer... Obrigado, Thorin!"] },
             { "code": 401, "indent": 0, "parameters": ["Gildrat está logo ali, finalmente!"] },
             {
               "code": 205,
               "indent": 0,
               "parameters": [
-                34,
+                0,
                 {
                   "list": [{ "code": 45, "parameters": ["Move to: 100,48"], "indent": null }, { "code": 39, "indent": null }, { "code": 37, "indent": null }, { "code": 0 }],
                   "repeat": false,
@@ -6528,7 +6535,7 @@
             "variableValue": 0
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Actor3", "direction": 8, "pattern": 1, "characterIndex": 1 },
+          "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario3", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
@@ -6628,7 +6635,7 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 2,
           "walkAnime": true
         },
         {
@@ -6661,7 +6668,7 @@
           "walkAnime": true
         }
       ],
-      "x": 106,
+      "x": 108,
       "y": 69
     },
     {
@@ -6719,7 +6726,7 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 2,
           "walkAnime": true
         },
         {
@@ -6752,7 +6759,7 @@
           "walkAnime": true
         }
       ],
-      "x": 106,
+      "x": 108,
       "y": 70
     },
     {
@@ -6810,7 +6817,7 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 2,
           "walkAnime": true
         },
         {
@@ -6843,7 +6850,7 @@
           "walkAnime": true
         }
       ],
-      "x": 106,
+      "x": 108,
       "y": 71
     },
     {
@@ -7222,7 +7229,7 @@
     },
     {
       "id": 40,
-      "name": "Anã 1 surge",
+      "name": "Kaldorn deslizamento",
       "note": "",
       "pages": [
         {
@@ -7316,7 +7323,7 @@
               "code": 205,
               "indent": 0,
               "parameters": [
-                40,
+                0,
                 {
                   "list": [{ "code": 1, "indent": null }, { "code": 1, "indent": null }, { "code": 2, "indent": null }, { "code": 39, "indent": null }, { "code": 37, "indent": null }, { "code": 0 }],
                   "repeat": false,
@@ -7417,7 +7424,7 @@
     },
     {
       "id": 41,
-      "name": "Anão 2 surge",
+      "name": "Torvald deslizamento",
       "note": "",
       "pages": [
         {
@@ -7501,7 +7508,7 @@
               "code": 205,
               "indent": 0,
               "parameters": [
-                41,
+                0,
                 {
                   "list": [{ "code": 1, "indent": null }, { "code": 1, "indent": null }, { "code": 39, "indent": null }, { "code": 37, "indent": null }, { "code": 0 }],
                   "repeat": false,
@@ -7591,7 +7598,7 @@
     },
     {
       "id": 42,
-      "name": "Anã 3 surge",
+      "name": "Borrin deslizamento",
       "note": "",
       "pages": [
         {
@@ -7686,7 +7693,7 @@
               "code": 205,
               "indent": 0,
               "parameters": [
-                42,
+                0,
                 {
                   "list": [{ "code": 1, "indent": null }, { "code": 1, "indent": null }, { "code": 3, "indent": null }, { "code": 39, "indent": null }, { "code": 37, "indent": null }, { "code": 0 }],
                   "repeat": false,
@@ -7774,6 +7781,97 @@
       ],
       "x": 131,
       "y": 56
+    },
+    {
+      "id": 43,
+      "name": "Trigger batalha boss",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 34,
+            "variableValid": true,
+            "variableValue": 6
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [34, 34, 0, 0, 7] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_4_MapCameraZoom",
+                "CameraFocusTargetTile",
+                "Camera: Focus Target Tile",
+                { "MapX:eval": "97", "MapY:eval": "53", "Duration:num": "150", "EasingType:str": "InOutSine" }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Map Tile X = 97"] },
+            { "code": 657, "indent": 0, "parameters": ["Map Tile Y = 53"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 150"] },
+            { "code": 657, "indent": 0, "parameters": ["Easing Type = InOutSine"] },
+            { "code": 357, "indent": 0, "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusWait", "Camera: Wait for Focus", {}] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 0, 0, 2, "Thorin"] },
+            { "code": 401, "indent": 0, "parameters": ["Lascou! Eles estão cercados, nós temos que"] },
+            { "code": 401, "indent": 0, "parameters": ["ajudar!"] },
+            { "code": 357, "indent": 0, "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusPlayer", "Camera: Focus Player", { "Duration:num": "60", "EasingType:str": "InOutSine" }] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 60"] },
+            { "code": 657, "indent": 0, "parameters": ["Easing Type = InOutSine"] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 34,
+            "variableValid": true,
+            "variableValue": 8
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 108,
+      "y": 72
     }
   ]
 }

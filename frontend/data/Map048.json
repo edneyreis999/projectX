@@ -339,7 +339,7 @@
             "variableValue": 3
           },
           "directionFix": true,
-          "image": { "tileId": 0, "characterName": "!Crystal", "direction": 6, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "!Crystal", "direction": 6, "pattern": 0, "characterIndex": 0 },
           "list": [
             { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 0, 0, 2, "Thorin"] },
             { "code": 401, "indent": 0, "parameters": ["Yey! O Cristaleão estava escondendo um"] },
@@ -369,7 +369,7 @@
           "stepAnime": true,
           "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {
@@ -435,7 +435,7 @@
           "priorityType": 0,
           "stepAnime": true,
           "through": false,
-          "trigger": 0,
+          "trigger": 2,
           "walkAnime": false
         },
         {
@@ -475,7 +475,7 @@
           "priorityType": 1,
           "stepAnime": true,
           "through": false,
-          "trigger": 1,
+          "trigger": 2,
           "walkAnime": false
         },
         {
@@ -504,7 +504,7 @@
           "priorityType": 0,
           "stepAnime": true,
           "through": false,
-          "trigger": 0,
+          "trigger": 2,
           "walkAnime": false
         },
         {
@@ -533,7 +533,7 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 2,
           "walkAnime": true
         }
       ],
@@ -1250,6 +1250,7 @@
       ],
       "x": 29,
       "y": 4
-    }
+    },
+    null
   ]
 }
