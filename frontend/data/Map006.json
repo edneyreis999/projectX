@@ -991,6 +991,7 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Principal/$Melia", "direction": 4, "pattern": 1, "characterIndex": 0 },
           "list": [
+            { "code": 322, "indent": 0, "parameters": [3, "", 0, "Portraits menores/Principal2", 2, "Thorin"] },
             { "code": 223, "indent": 0, "parameters": [[-68, -68, 0, 68], 1, false] },
             { "code": 241, "indent": 0, "parameters": [{ "name": "Theme3", "volume": 55, "pitch": 50, "pan": 0 }] },
             { "code": 205, "indent": 0, "parameters": [12, { "list": [{ "code": 39, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }] },
