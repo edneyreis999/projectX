@@ -631,13 +631,13 @@
                 "PKD_VisualChoices_MZ",
                 "OpenVisualChoice",
                 "Visual Choices",
-                { "menuId": "myMenu", "posType": "-2", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "Titulo Opcional", "source": "Plugin parameters" }
+                { "menuId": "myMenu", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "", "source": "Plugin parameters" }
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Group ID = myMenu"] },
-            { "code": 657, "indent": 0, "parameters": ["Position type = -2"] },
+            { "code": 657, "indent": 0, "parameters": ["Position type = 0"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = {\"x:int\":\"0\",\"y:int\":\"0\"}"] },
-            { "code": 657, "indent": 0, "parameters": ["Header Text = Titulo Opcional"] },
+            { "code": 657, "indent": 0, "parameters": ["Header Text = "] },
             { "code": 657, "indent": 0, "parameters": ["Settings from = Plugin parameters"] },
             { "code": 102, "indent": 0, "parameters": [["innFutebol1", "innFutebol2"], 1, 0, 2, 0] },
             { "code": 402, "indent": 0, "parameters": [0, "innFutebol1"] },
