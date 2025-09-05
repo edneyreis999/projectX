@@ -565,13 +565,13 @@
                 "PKD_VisualChoices_MZ",
                 "OpenVisualChoice",
                 "Visual Choices",
-                { "menuId": "tuskMina", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "Entregar o minério?!", "source": "Plugin parameters" }
+                { "menuId": "tuskMina", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "", "source": "Plugin parameters" }
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Group ID = tuskMina"] },
             { "code": 657, "indent": 0, "parameters": ["Position type = 0"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = {\"x:int\":\"0\",\"y:int\":\"0\"}"] },
-            { "code": 657, "indent": 0, "parameters": ["Header Text = Entregar o minério?!"] },
+            { "code": 657, "indent": 0, "parameters": ["Header Text = "] },
             { "code": 657, "indent": 0, "parameters": ["Settings from = Plugin parameters"] },
             { "code": 102, "indent": 0, "parameters": [["tuskMina1", "tuskMina2"], 1, 0, 2, 0] },
             { "code": 402, "indent": 0, "parameters": [0, "tuskMina1"] },
@@ -634,13 +634,13 @@
                 "PKD_VisualChoices_MZ",
                 "OpenVisualChoice",
                 "Visual Choices",
-                { "menuId": "tresEscolhas", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "O que fazer?", "source": "Plugin parameters" }
+                { "menuId": "tresEscolhas", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "", "source": "Plugin parameters" }
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Group ID = tresEscolhas"] },
             { "code": 657, "indent": 0, "parameters": ["Position type = 0"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = {\"x:int\":\"0\",\"y:int\":\"0\"}"] },
-            { "code": 657, "indent": 0, "parameters": ["Header Text = O que fazer?"] },
+            { "code": 657, "indent": 0, "parameters": ["Header Text = "] },
             { "code": 657, "indent": 0, "parameters": ["Settings from = Plugin parameters"] },
             { "code": 102, "indent": 0, "parameters": [["kravens1", "desconversar2", "sigmetal3"], 1, 0, 2, 0] },
             { "code": 402, "indent": 0, "parameters": [0, "kravens1"] },
@@ -1224,10 +1224,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": true,
-          "through": true,
+          "stepAnime": false,
+          "through": false,
           "trigger": 4,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {
@@ -1291,10 +1291,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": true,
-          "through": true,
+          "stepAnime": false,
+          "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {
@@ -1358,10 +1358,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": true,
+          "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {

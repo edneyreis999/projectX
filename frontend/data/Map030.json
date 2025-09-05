@@ -335,10 +335,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": true,
+          "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {
@@ -402,10 +402,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": true,
+          "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {
@@ -435,10 +435,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": true,
+          "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {
@@ -468,10 +468,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": true,
+          "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {
@@ -564,10 +564,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": true,
+          "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {
@@ -665,10 +665,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": true,
+          "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {
@@ -701,10 +701,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": true,
+          "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {
@@ -730,10 +730,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 0,
-          "stepAnime": true,
+          "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         }
       ],
       "x": 9,
@@ -875,13 +875,13 @@
                 "PKD_VisualChoices_MZ",
                 "OpenVisualChoice",
                 "Visual Choices",
-                { "menuId": "entregarNaoEntregar", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "Faça sua escolha", "source": "Plugin parameters" }
+                { "menuId": "entregarNaoEntregar", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "", "source": "Plugin parameters" }
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Group ID = entregarNaoEntregar"] },
             { "code": 657, "indent": 0, "parameters": ["Position type = 0"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = {\"x:int\":\"0\",\"y:int\":\"0\"}"] },
-            { "code": 657, "indent": 0, "parameters": ["Header Text = Faça sua escolha"] },
+            { "code": 657, "indent": 0, "parameters": ["Header Text = "] },
             { "code": 657, "indent": 0, "parameters": ["Settings from = Plugin parameters"] },
             { "code": 102, "indent": 0, "parameters": [["entregar1", "naoEntregar2"], 1, 0, 2, 0] },
             { "code": 402, "indent": 0, "parameters": [0, "entregar1"] },
@@ -996,10 +996,10 @@
           "moveSpeed": 3,
           "moveType": 3,
           "priorityType": 1,
-          "stepAnime": true,
+          "stepAnime": false,
           "through": false,
           "trigger": 3,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {
@@ -1030,10 +1030,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": true,
+          "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {
@@ -1063,10 +1063,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": true,
+          "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {
@@ -1146,10 +1146,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": true,
+          "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {
@@ -1750,10 +1750,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": true,
+          "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {
@@ -1772,7 +1772,7 @@
             "variableValue": 8
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Principal/$Mhordred", "direction": 4, "pattern": 2, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Mhordred", "direction": 4, "pattern": 1, "characterIndex": 0 },
           "list": [
             { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal1", 5, 0, 2, "Mhordred"] },
             { "code": 401, "indent": 0, "parameters": ["Este lugar é perigoso, Thorin. Mas não é como"] },
@@ -1784,10 +1784,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": true,
+          "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {
@@ -1813,10 +1813,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 0,
-          "stepAnime": true,
+          "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         }
       ],
       "x": 11,
@@ -1890,13 +1890,13 @@
                 "PKD_VisualChoices_MZ",
                 "OpenVisualChoice",
                 "Visual Choices",
-                { "menuId": "partirNeve", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "Quem vou apoiar?", "source": "Plugin parameters" }
+                { "menuId": "partirNeve", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "", "source": "Plugin parameters" }
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Group ID = partirNeve"] },
             { "code": 657, "indent": 0, "parameters": ["Position type = 0"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = {\"x:int\":\"0\",\"y:int\":\"0\"}"] },
-            { "code": 657, "indent": 0, "parameters": ["Header Text = Quem vou apoiar?"] },
+            { "code": 657, "indent": 0, "parameters": ["Header Text = "] },
             { "code": 657, "indent": 0, "parameters": ["Settings from = Plugin parameters"] },
             { "code": 102, "indent": 0, "parameters": [["partirNeve", "naoNeve"], 1, 0, 2, 0] },
             { "code": 402, "indent": 0, "parameters": [0, "partirNeve"] },
@@ -1989,10 +1989,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": true,
+          "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {
@@ -2327,10 +2327,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 0,
-          "stepAnime": true,
+          "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {
@@ -2356,10 +2356,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": true,
+          "stepAnime": false,
           "through": false,
           "trigger": 4,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {
@@ -2452,10 +2452,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": true,
+          "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {
@@ -2540,7 +2540,7 @@
             "variableValid": true,
             "variableValue": 11
           },
-          "directionFix": true,
+          "directionFix": false,
           "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario3", "direction": 4, "pattern": 2, "characterIndex": 0 },
           "list": [
             { "code": 101, "indent": 0, "parameters": ["Portraits menores/GuardaExpedicionarios", 1, 0, 2, "Vendedor"] },
@@ -2564,10 +2564,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": true,
+          "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {

@@ -38,6 +38,7 @@
     264, 264, 264, 264, 264, 264, 264, 264, 264, 264, 264, 264, 264, 264, 264, 264, 264, 264, 264, 264, 264, 264, 264, 264, 264, 264, 264, 264, 264, 264, 264, 264, 264, 264, 264, 264, 264, 264, 264,
     264, 264, 264, 264, 264, 264, 264, 264, 264, 264, 264, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265,
     265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 266, 265, 266, 266, 266, 266, 266, 266, 266, 265, 265, 265, 265, 265, 265, 265, 265, 266, 266, 266, 266, 265, 266, 266, 266, 265, 265, 265, 265,
+    265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 266, 265, 266, 266, 266, 266, 266, 266, 266, 265, 265, 265, 265, 265, 265, 265, 265, 266, 266, 266, 266, 265, 266, 266, 266, 265, 265, 265, 265,
     265, 265, 265, 265, 265, 265, 266, 266, 266, 266, 266, 266, 266, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 266, 266, 266, 266, 266, 266, 266, 266, 265, 265, 265, 265, 265, 265, 265, 265,
     265, 266, 266, 266, 266, 266, 266, 266, 266, 265, 265, 265, 265, 265, 265, 265, 265, 266, 266, 266, 266, 266, 266, 266, 266, 266, 265, 265, 265, 265, 265, 265, 265, 265, 266, 266, 266, 266, 266,
     266, 266, 266, 266, 265, 265, 265, 265, 265, 265, 265, 265, 266, 266, 266, 266, 266, 266, 266, 266, 266, 265, 265, 265, 265, 265, 265, 265, 265, 266, 266, 266, 266, 266, 266, 266, 266, 266, 265,
@@ -164,7 +165,7 @@
       "y": 4
     },
     {
-      "id": 3,
+      "id": 2,
       "name": "Cama",
       "note": "",
       "pages": [
@@ -180,12 +181,50 @@
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 30,
-            "variableValid": true,
-            "variableValue": 8
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
           },
           "directionFix": false,
-          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "image": { "tileId": 0, "characterName": "Kravens/!$cobertorCama", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 4,
+      "y": 4
+    },
+    {
+      "id": 3,
+      "name": "Dormir",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [
             {
               "code": 357,
@@ -194,13 +233,13 @@
                 "PKD_VisualChoices_MZ",
                 "OpenVisualChoice",
                 "Visual Choices",
-                { "menuId": "dormirMina", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"-20\"}", "headerText": "Bora nanar?", "source": "Plugin parameters" }
+                { "menuId": "dormirMina", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"-20\"}", "headerText": "", "source": "Plugin parameters" }
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Group ID = dormirMina"] },
             { "code": 657, "indent": 0, "parameters": ["Position type = 0"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = {\"x:int\":\"0\",\"y:int\":\"-20\"}"] },
-            { "code": 657, "indent": 0, "parameters": ["Header Text = Bora nanar?"] },
+            { "code": 657, "indent": 0, "parameters": ["Header Text = "] },
             { "code": 657, "indent": 0, "parameters": ["Settings from = Plugin parameters"] },
             { "code": 102, "indent": 0, "parameters": [["dormirKravens1", "naoKravens2"], 1, 0, 0, 0] },
             { "code": 402, "indent": 0, "parameters": [0, "dormirKravens1"] },
@@ -249,7 +288,7 @@
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
           "moveType": 0,
-          "priorityType": 1,
+          "priorityType": 0,
           "stepAnime": false,
           "through": false,
           "trigger": 0,

@@ -239,13 +239,13 @@
                 "PKD_VisualChoices_MZ",
                 "OpenVisualChoice",
                 "Visual Choices",
-                { "menuId": "retrucarNaoRetrucar", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "Faça sua escolha", "source": "Plugin parameters" }
+                { "menuId": "retrucarNaoRetrucar", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "", "source": "Plugin parameters" }
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Group ID = retrucarNaoRetrucar"] },
             { "code": 657, "indent": 0, "parameters": ["Position type = 0"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = {\"x:int\":\"0\",\"y:int\":\"0\"}"] },
-            { "code": 657, "indent": 0, "parameters": ["Header Text = Faça sua escolha"] },
+            { "code": 657, "indent": 0, "parameters": ["Header Text = "] },
             { "code": 657, "indent": 0, "parameters": ["Settings from = Plugin parameters"] },
             { "code": 102, "indent": 0, "parameters": [["retrucar1", "ficarCalado2"], 1, 0, 2, 0] },
             { "code": 402, "indent": 0, "parameters": [0, "retrucar1"] },
@@ -296,7 +296,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {
@@ -453,13 +453,13 @@
                 "PKD_VisualChoices_MZ",
                 "OpenVisualChoice",
                 "Visual Choices",
-                { "menuId": "sigmetalTusk", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "Confiar em Tusk?", "source": "Plugin parameters" }
+                { "menuId": "sigmetalTusk", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "", "source": "Plugin parameters" }
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Group ID = sigmetalTusk"] },
             { "code": 657, "indent": 0, "parameters": ["Position type = 0"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = {\"x:int\":\"0\",\"y:int\":\"0\"}"] },
-            { "code": 657, "indent": 0, "parameters": ["Header Text = Confiar em Tusk?"] },
+            { "code": 657, "indent": 0, "parameters": ["Header Text = "] },
             { "code": 657, "indent": 0, "parameters": ["Settings from = Plugin parameters"] },
             { "code": 102, "indent": 0, "parameters": [["sigmetalTusk1", "nadaTusk2"], 1, 0, 2, 0] },
             { "code": 402, "indent": 0, "parameters": [0, "sigmetalTusk1"] },
@@ -706,13 +706,13 @@
                 "PKD_VisualChoices_MZ",
                 "OpenVisualChoice",
                 "Visual Choices",
-                { "menuId": "longeOuPerto", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "Faça sua escolha", "source": "Plugin parameters" }
+                { "menuId": "longeOuPerto", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "", "source": "Plugin parameters" }
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Group ID = longeOuPerto"] },
             { "code": 657, "indent": 0, "parameters": ["Position type = 0"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = {\"x:int\":\"0\",\"y:int\":\"0\"}"] },
-            { "code": 657, "indent": 0, "parameters": ["Header Text = Faça sua escolha"] },
+            { "code": 657, "indent": 0, "parameters": ["Header Text = "] },
             { "code": 657, "indent": 0, "parameters": ["Settings from = Plugin parameters"] },
             { "code": 102, "indent": 0, "parameters": [["aproximar1", "ficarLonge2"], 1, 0, 2, 0] },
             { "code": 402, "indent": 0, "parameters": [0, "aproximar1"] },
@@ -1384,13 +1384,13 @@
                 "PKD_VisualChoices_MZ",
                 "OpenVisualChoice",
                 "Visual Choices",
-                { "menuId": "longeOuPerto", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "Faça sua escolha", "source": "Plugin parameters" }
+                { "menuId": "longeOuPerto", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "", "source": "Plugin parameters" }
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Group ID = longeOuPerto"] },
             { "code": 657, "indent": 0, "parameters": ["Position type = 0"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = {\"x:int\":\"0\",\"y:int\":\"0\"}"] },
-            { "code": 657, "indent": 0, "parameters": ["Header Text = Faça sua escolha"] },
+            { "code": 657, "indent": 0, "parameters": ["Header Text = "] },
             { "code": 657, "indent": 0, "parameters": ["Settings from = Plugin parameters"] },
             { "code": 102, "indent": 0, "parameters": [["aproximar1", "ficarLonge2"], 1, 0, 2, 0] },
             { "code": 402, "indent": 0, "parameters": [0, "aproximar1"] },
@@ -1900,7 +1900,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {
@@ -1996,7 +1996,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {
@@ -2025,7 +2025,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {
@@ -2092,7 +2092,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {
@@ -2443,13 +2443,13 @@
                 "PKD_VisualChoices_MZ",
                 "OpenVisualChoice",
                 "Visual Choices",
-                { "menuId": "sigmetalTusk", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "Confiar em Tusk?", "source": "Plugin parameters" }
+                { "menuId": "sigmetalTusk", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "", "source": "Plugin parameters" }
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Group ID = sigmetalTusk"] },
             { "code": 657, "indent": 0, "parameters": ["Position type = 0"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = {\"x:int\":\"0\",\"y:int\":\"0\"}"] },
-            { "code": 657, "indent": 0, "parameters": ["Header Text = Confiar em Tusk?"] },
+            { "code": 657, "indent": 0, "parameters": ["Header Text = "] },
             { "code": 657, "indent": 0, "parameters": ["Settings from = Plugin parameters"] },
             { "code": 102, "indent": 0, "parameters": [["sigmetalTusk1", "nadaTusk2"], 1, 0, 2, 0] },
             { "code": 402, "indent": 0, "parameters": [0, "sigmetalTusk1"] },
@@ -2607,13 +2607,13 @@
                 "PKD_VisualChoices_MZ",
                 "OpenVisualChoice",
                 "Visual Choices",
-                { "menuId": "casaIr", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "Ir para casa?", "source": "Plugin parameters" }
+                { "menuId": "casaIr", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "", "source": "Plugin parameters" }
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Group ID = casaIr"] },
             { "code": 657, "indent": 0, "parameters": ["Position type = 0"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = {\"x:int\":\"0\",\"y:int\":\"0\"}"] },
-            { "code": 657, "indent": 0, "parameters": ["Header Text = Ir para casa?"] },
+            { "code": 657, "indent": 0, "parameters": ["Header Text = "] },
             { "code": 657, "indent": 0, "parameters": ["Settings from = Plugin parameters"] },
             { "code": 102, "indent": 0, "parameters": [["casaIr1", "casaIr2"], 1, 0, 2, 0] },
             { "code": 402, "indent": 0, "parameters": [0, "casaIr1"] },
@@ -2770,7 +2770,7 @@
           "moveType": 0,
           "priorityType": 0,
           "stepAnime": false,
-          "through": true,
+          "through": false,
           "trigger": 0,
           "walkAnime": true
         }
@@ -2841,7 +2841,7 @@
           "moveType": 0,
           "priorityType": 0,
           "stepAnime": false,
-          "through": true,
+          "through": false,
           "trigger": 0,
           "walkAnime": true
         }
@@ -2912,7 +2912,7 @@
           "moveType": 0,
           "priorityType": 0,
           "stepAnime": false,
-          "through": true,
+          "through": false,
           "trigger": 0,
           "walkAnime": true
         }
@@ -3110,13 +3110,13 @@
                 "PKD_VisualChoices_MZ",
                 "OpenVisualChoice",
                 "Visual Choices",
-                { "menuId": "bauDeTesouro", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "O que entregar?", "source": "Plugin parameters" }
+                { "menuId": "bauDeTesouro", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "", "source": "Plugin parameters" }
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Group ID = bauDeTesouro"] },
             { "code": 657, "indent": 0, "parameters": ["Position type = 0"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = {\"x:int\":\"0\",\"y:int\":\"0\"}"] },
-            { "code": 657, "indent": 0, "parameters": ["Header Text = O que entregar?"] },
+            { "code": 657, "indent": 0, "parameters": ["Header Text = "] },
             { "code": 657, "indent": 0, "parameters": ["Settings from = Plugin parameters"] },
             { "code": 102, "indent": 0, "parameters": [["kravens1", "sigmetal2", "nenhum3"], 1, 0, 2, 0] },
             { "code": 402, "indent": 0, "parameters": [0, "kravens1"] },
@@ -3376,13 +3376,13 @@
                 "PKD_VisualChoices_MZ",
                 "OpenVisualChoice",
                 "Visual Choices",
-                { "menuId": "bauDeTesouro", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "O que entregar?", "source": "Plugin parameters" }
+                { "menuId": "bauDeTesouro", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "", "source": "Plugin parameters" }
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Group ID = bauDeTesouro"] },
             { "code": 657, "indent": 0, "parameters": ["Position type = 0"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = {\"x:int\":\"0\",\"y:int\":\"0\"}"] },
-            { "code": 657, "indent": 0, "parameters": ["Header Text = O que entregar?"] },
+            { "code": 657, "indent": 0, "parameters": ["Header Text = "] },
             { "code": 657, "indent": 0, "parameters": ["Settings from = Plugin parameters"] },
             { "code": 102, "indent": 0, "parameters": [["kravens1", "nenhum3"], 1, 0, 2, 0] },
             { "code": 402, "indent": 0, "parameters": [0, "kravens1"] },
@@ -3461,7 +3461,7 @@
             { "code": 205, "indent": 1, "parameters": [-1, { "list": [{ "code": 18, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }] },
             { "code": 505, "indent": 1, "parameters": [{ "code": 18, "indent": null }] },
             { "code": 101, "indent": 1, "parameters": ["Portraits menores/Principal2", 5, 0, 2, "Tusk"] },
-            { "code": 401, "indent": 1, "parameters": ["Já cabamos por aqui, senhor."] },
+            { "code": 401, "indent": 1, "parameters": ["Já acabamos por aqui, senhor."] },
             { "code": 101, "indent": 1, "parameters": ["Portraits menores/Principal1", 0, 0, 2, "Balastrus"] },
             { "code": 401, "indent": 1, "parameters": ["Ótimo!"] },
             { "code": 122, "indent": 1, "parameters": [34, 34, 0, 0, 11] },
@@ -3509,13 +3509,13 @@
                 "PKD_VisualChoices_MZ",
                 "OpenVisualChoice",
                 "Visual Choices",
-                { "menuId": "bauDeTesouro", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "O que entregar?", "source": "Plugin parameters" }
+                { "menuId": "bauDeTesouro", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "", "source": "Plugin parameters" }
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Group ID = bauDeTesouro"] },
             { "code": 657, "indent": 0, "parameters": ["Position type = 0"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = {\"x:int\":\"0\",\"y:int\":\"0\"}"] },
-            { "code": 657, "indent": 0, "parameters": ["Header Text = O que entregar?"] },
+            { "code": 657, "indent": 0, "parameters": ["Header Text = "] },
             { "code": 657, "indent": 0, "parameters": ["Settings from = Plugin parameters"] },
             { "code": 102, "indent": 0, "parameters": [["kravens1", "nenhum3"], 1, 0, 2, 0] },
             { "code": 402, "indent": 0, "parameters": [0, "kravens1"] },
@@ -3534,7 +3534,7 @@
             { "code": 205, "indent": 1, "parameters": [-1, { "list": [{ "code": 18, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }] },
             { "code": 505, "indent": 1, "parameters": [{ "code": 18, "indent": null }] },
             { "code": 101, "indent": 1, "parameters": ["Portraits menores/Principal2", 5, 0, 2, "Tusk"] },
-            { "code": 401, "indent": 1, "parameters": ["Já cabamos por aqui, senhor."] },
+            { "code": 401, "indent": 1, "parameters": ["Já acabamos por aqui, senhor."] },
             { "code": 101, "indent": 1, "parameters": ["Portraits menores/Principal1", 0, 0, 2, "Balastrus"] },
             { "code": 401, "indent": 1, "parameters": ["Ótimo!"] },
             { "code": 121, "indent": 1, "parameters": [47, 47, 1] },
@@ -3583,13 +3583,13 @@
                 "PKD_VisualChoices_MZ",
                 "OpenVisualChoice",
                 "Visual Choices",
-                { "menuId": "bauDeTesouro", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "O que entregar?", "source": "Plugin parameters" }
+                { "menuId": "bauDeTesouro", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "", "source": "Plugin parameters" }
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Group ID = bauDeTesouro"] },
             { "code": 657, "indent": 0, "parameters": ["Position type = 0"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = {\"x:int\":\"0\",\"y:int\":\"0\"}"] },
-            { "code": 657, "indent": 0, "parameters": ["Header Text = O que entregar?"] },
+            { "code": 657, "indent": 0, "parameters": ["Header Text = "] },
             { "code": 657, "indent": 0, "parameters": ["Settings from = Plugin parameters"] },
             { "code": 102, "indent": 0, "parameters": [["kravens1", "nenhum3"], 1, 0, 2, 0] },
             { "code": 402, "indent": 0, "parameters": [0, "kravens1"] },

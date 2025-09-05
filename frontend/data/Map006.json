@@ -224,13 +224,13 @@
                 "PKD_VisualChoices_MZ",
                 "OpenVisualChoice",
                 "Visual Choices",
-                { "menuId": "dormirNaoDormir", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"-20\"}", "headerText": "Bora nanar?", "source": "Plugin parameters" }
+                { "menuId": "dormirNaoDormir", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"-20\"}", "headerText": "", "source": "Plugin parameters" }
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Group ID = dormirNaoDormir"] },
             { "code": 657, "indent": 0, "parameters": ["Position type = 0"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = {\"x:int\":\"0\",\"y:int\":\"-20\"}"] },
-            { "code": 657, "indent": 0, "parameters": ["Header Text = Bora nanar?"] },
+            { "code": 657, "indent": 0, "parameters": ["Header Text = "] },
             { "code": 657, "indent": 0, "parameters": ["Settings from = Plugin parameters"] },
             { "code": 102, "indent": 0, "parameters": [["dormir1", "naoDormir2"], 1, 0, 0, 0] },
             { "code": 402, "indent": 0, "parameters": [0, "dormir1"] },
@@ -322,13 +322,13 @@
                 "PKD_VisualChoices_MZ",
                 "OpenVisualChoice",
                 "Visual Choices",
-                { "menuId": "dormirNaoDormir", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"-20\"}", "headerText": "Bora nanar?", "source": "Plugin parameters" }
+                { "menuId": "dormirNaoDormir", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"-20\"}", "headerText": "", "source": "Plugin parameters" }
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Group ID = dormirNaoDormir"] },
             { "code": 657, "indent": 0, "parameters": ["Position type = 0"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = {\"x:int\":\"0\",\"y:int\":\"-20\"}"] },
-            { "code": 657, "indent": 0, "parameters": ["Header Text = Bora nanar?"] },
+            { "code": 657, "indent": 0, "parameters": ["Header Text = "] },
             { "code": 657, "indent": 0, "parameters": ["Settings from = Plugin parameters"] },
             { "code": 102, "indent": 0, "parameters": [["dormir1", "naoDormir2"], 1, 0, 0, 0] },
             { "code": 402, "indent": 0, "parameters": [0, "dormir1"] },
