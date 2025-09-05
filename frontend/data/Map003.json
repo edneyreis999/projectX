@@ -1,7 +1,7 @@
 {
   "autoplayBgm": false,
   "autoplayBgs": false,
-  "battleback1Name": "IceCave",
+  "battleback1Name": "Snowfield",
   "battleback2Name": "Snowfield",
   "bgm": { "name": "", "pan": 0, "pitch": 100, "volume": 90 },
   "bgs": { "name": "", "pan": 0, "pitch": 100, "volume": 90 },

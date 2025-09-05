@@ -1,7 +1,7 @@
 {
   "autoplayBgm": false,
   "autoplayBgs": false,
-  "battleback1Name": "RockCave",
+  "battleback1Name": "Stone1",
   "battleback2Name": "Stone1",
   "bgm": { "name": "", "pan": 0, "pitch": 100, "volume": 90 },
   "bgs": { "name": "", "pan": 0, "pitch": 100, "volume": 90 },
