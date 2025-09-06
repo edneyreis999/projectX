@@ -567,125 +567,11 @@
             },
             { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 24,08"], "indent": null }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 19, "indent": null }] },
-            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal1", 2, 0, 2, "Principal/$Filena"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal1", 2, 0, 2, "Filena"] },
             { "code": 401, "indent": 0, "parameters": ["Até que enfim, achei que tinha ficado com medo"] },
             { "code": 401, "indent": 0, "parameters": ["e desistido!"] },
             { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 1, 0, 2, "Thorin"] },
             { "code": 401, "indent": 0, "parameters": ["Eu, com medo? Nunca!"] },
-            { "code": 230, "indent": 0, "parameters": [60] },
-            { "code": 250, "indent": 0, "parameters": [{ "name": "Bell3", "volume": 50, "pitch": 100, "pan": 0 }] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [7, { "list": [{ "code": 45, "parameters": ["Move to: 12,03"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 12,03"], "indent": null }] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [6, { "list": [{ "code": 45, "parameters": ["Move to: 17,09"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 17,09"], "indent": null }] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [5, { "list": [{ "code": 45, "parameters": ["Move to: 11,05"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 11,05"], "indent": null }] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [4, { "list": [{ "code": 45, "parameters": ["Move to: 10,02"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 10,02"], "indent": null }] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [3, { "list": [{ "code": 45, "parameters": ["Move to: 18,09"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 18,09"], "indent": null }] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [2, { "list": [{ "code": 45, "parameters": ["Move to: 19,06"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 19,06"], "indent": null }] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [1, { "list": [{ "code": 45, "parameters": ["Move to: 19,02"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 19,02"], "indent": null }] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [-1, { "list": [{ "code": 45, "parameters": ["Move to: 11,02"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 11,02"], "indent": null }] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 1, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Interação"] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "PKD_VisualChoices_MZ",
-                "OpenVisualChoice",
-                "Visual Choices",
-                { "menuId": "myMenu", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "", "source": "Plugin parameters" }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Group ID = myMenu"] },
-            { "code": 657, "indent": 0, "parameters": ["Position type = 0"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = {\"x:int\":\"0\",\"y:int\":\"0\"}"] },
-            { "code": 657, "indent": 0, "parameters": ["Header Text = "] },
-            { "code": 657, "indent": 0, "parameters": ["Settings from = Plugin parameters"] },
-            { "code": 102, "indent": 0, "parameters": [["innFutebol1", "innFutebol2"], 1, 0, 2, 0] },
-            { "code": 402, "indent": 0, "parameters": [0, "innFutebol1"] },
-            { "code": 0, "indent": 1, "parameters": [] },
-            { "code": 402, "indent": 0, "parameters": [1, "innFutebol2"] },
-            { "code": 0, "indent": 1, "parameters": [] },
-            { "code": 404, "indent": 0, "parameters": [] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [-1, { "list": [{ "code": 45, "parameters": ["Move to: 6,05"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 6,05"], "indent": null }] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Escolha o que fazer"] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "PKD_VisualChoices_MZ",
-                "OpenVisualChoice",
-                "Visual Choices",
-                { "menuId": "jogadaFinal", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "", "source": "Plugin parameters" }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Group ID = jogadaFinal"] },
-            { "code": 657, "indent": 0, "parameters": ["Position type = 0"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = {\"x:int\":\"0\",\"y:int\":\"0\"}"] },
-            { "code": 657, "indent": 0, "parameters": ["Header Text = "] },
-            { "code": 657, "indent": 0, "parameters": ["Settings from = Plugin parameters"] },
-            { "code": 102, "indent": 0, "parameters": [["jogadaSegura", "jogadaArriscada"], 1, 0, 2, 0] },
-            { "code": 402, "indent": 0, "parameters": [0, "jogadaSegura"] },
-            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 1, ""] },
-            { "code": 401, "indent": 1, "parameters": ["Parabéns, você conseguiu marcar o gol e levar seu time a"] },
-            { "code": 401, "indent": 1, "parameters": ["vitória!"] },
-            { "code": 355, "indent": 1, "parameters": ["SQSM.CompleteTaskForQuest(\"aSemifinal\", 6);"] },
-            { "code": 655, "indent": 1, "parameters": ["SQSM.ShowTaskForQuest(\"aSemifinal\", 7);"] },
-            { "code": 655, "indent": 1, "parameters": ["SQSM.ShowDescriptionForQuest(\"aSemifinal\", 3);"] },
-            { "code": 0, "indent": 1, "parameters": [] },
-            { "code": 402, "indent": 0, "parameters": [1, "jogadaArriscada"] },
-            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 1, ""] },
-            { "code": 401, "indent": 1, "parameters": ["Parabéns, você conseguiu marcar o gol e levar seu time a"] },
-            { "code": 401, "indent": 1, "parameters": ["vitória!"] },
-            { "code": 355, "indent": 1, "parameters": ["SQSM.CompleteTaskForQuest(\"aSemifinal\", 6);"] },
-            { "code": 655, "indent": 1, "parameters": ["SQSM.ShowTaskForQuest(\"aSemifinal\", 7);"] },
-            { "code": 655, "indent": 1, "parameters": ["SQSM.ShowDescriptionForQuest(\"aSemifinal\", 3);"] },
-            { "code": 0, "indent": 1, "parameters": [] },
-            { "code": 404, "indent": 0, "parameters": [] },
             { "code": 122, "indent": 0, "parameters": [29, 29, 0, 0, 6] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
@@ -727,112 +613,13 @@
           "directionFix": false,
           "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
           "list": [
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    { "code": 45, "parameters": ["Move to: 14,09"], "indent": null },
-                    { "code": 16, "indent": null },
-                    { "code": 14, "parameters": [0, 0], "indent": null },
-                    { "code": 14, "parameters": [0, 0], "indent": null },
-                    { "code": 0 }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 14,09"], "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 14, "parameters": [0, 0], "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 14, "parameters": [0, 0], "indent": null }] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                1,
-                { "list": [{ "code": 45, "parameters": ["Move to: 15,09"], "indent": null }, { "code": 25, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }
-              ]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 15,09"], "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 25, "indent": null }] },
-            { "code": 213, "indent": 0, "parameters": [1, 1, false] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                2,
-                { "list": [{ "code": 45, "parameters": ["Move to: 13,10"], "indent": null }, { "code": 25, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }
-              ]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 13,10"], "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 25, "indent": null }] },
-            { "code": 213, "indent": 0, "parameters": [2, 4, false] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                3,
-                {
-                  "list": [
-                    { "code": 45, "parameters": ["Move to: 15,11"], "indent": null },
-                    { "code": 14, "parameters": [0, 0], "indent": null },
-                    { "code": 14, "parameters": [0, 0], "indent": null },
-                    { "code": 14, "parameters": [0, 0], "indent": null },
-                    { "code": 25, "indent": null },
-                    { "code": 0 }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 15,11"], "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 14, "parameters": [0, 0], "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 14, "parameters": [0, 0], "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 14, "parameters": [0, 0], "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 25, "indent": null }] },
-            { "code": 212, "indent": 0, "parameters": [3, 36, false] },
-            { "code": 101, "indent": 0, "parameters": ["People3", 2, 0, 2, "Tordek"] },
-            { "code": 401, "indent": 0, "parameters": ["Vencemos! Estamos na grande final!"] },
-            { "code": 213, "indent": 0, "parameters": [-1, 1, true] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [4, { "list": [{ "code": 45, "parameters": ["Move to: 8,9"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 8,9"], "indent": null }] },
-            { "code": 213, "indent": 0, "parameters": [4, 7, false] },
-            { "code": 101, "indent": 0, "parameters": ["Actor3", 7, 0, 2, "Margot"] },
-            { "code": 401, "indent": 0, "parameters": ["Nós não vamos perder da próxima vez!"] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [5, { "list": [{ "code": 45, "parameters": ["Move to: 6,10"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 6,10"], "indent": null }] },
-            { "code": 213, "indent": 0, "parameters": [5, 8, false] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [6, { "list": [{ "code": 45, "parameters": ["Move to: 6,09"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 6,09"], "indent": null }] },
-            { "code": 213, "indent": 0, "parameters": [6, 6, false] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [7, { "list": [{ "code": 45, "parameters": ["Move to: 11,12"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 11,12"], "indent": null }] },
-            { "code": 213, "indent": 0, "parameters": [7, 14, false] },
-            { "code": 230, "indent": 0, "parameters": [120] },
+            { "code": 223, "indent": 0, "parameters": [[-255, -255, -255, 0], 60, true] },
+            { "code": 101, "indent": 0, "parameters": ["Dwarves", 0, 0, 1, "Rheed"] },
+            { "code": 401, "indent": 0, "parameters": ["Thorin entra em campo quando falta apenas um tempo para o fim da partida. "] },
+            { "code": 401, "indent": 0, "parameters": ["Após uma rápida troca de passes com Filena, ele marca 6 pontos. "] },
+            { "code": 401, "indent": 0, "parameters": ["Em seguida, o juiz apita e decreta a vitória para os Machados Enferrujados."] },
             { "code": 122, "indent": 0, "parameters": [29, 29, 0, 0, 7] },
+            { "code": 223, "indent": 0, "parameters": [[0, 0, 0, 0], 1, true] },
             { "code": 201, "indent": 0, "parameters": [0, 14, 9, 7, 4, 0] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
