@@ -40,3 +40,9 @@
 
 - Do not commit secrets. Use environment variables locally and documentation in code for required settings.
 - JSON assets are formatted via `npm run format:json`; avoid manual reflow to reduce diff noise.
+
+## Plugin Standardization
+
+- Plan: see `frontend/js/PLANO_PADRONIZACAO_PLUGINS.md` for architecture, naming, tests and Definition of Done for quest plugins.
+- Reuse check: before creating a new plugin, review `frontend/docs/plugins` to reuse documented patterns or methods.
+- Onboarding: for a quick primer on plugin structure, see the "Estrutura de Plugins" section in `README.md`.
