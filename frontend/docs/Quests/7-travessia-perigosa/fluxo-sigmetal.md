@@ -76,13 +76,13 @@ subgraph ESTRADA["Estrada do Cão Luar (Quest 'A Travessia Perigosa')"]
     %%  PLAYER_HAS_SIGMETAL=false
     %%  v_sigmetal_destino = 2 (TUSK)
 
-    %% 3 - Balaio (apenas se tiver Sigmetal)
-    B2c{"Confirmar colocar no Balaio?"}
-    B7["Colocar Sigmetal no Balaio<br>junto com outros minérios"]
+    %% 3 - baú de Kravens (apenas se tiver Sigmetal)
+    B2c{"Confirmar colocar no baú de Kravens?"}
+    B7["Colocar Sigmetal no baú de Kravens<br>junto com outros minérios"]
     
     %% Efeitos:
     %%  PLAYER_HAS_SIGMETAL=false
-    %%  v_sigmetal_destino = 3 (BALAIO)
+    %%  v_sigmetal_destino = 3 (BAU)
 
     %% Observação: não existe opção explícita "Não entregar a ninguém".
     %% Se o jogador sair do diálogo sem confirmar 1–3 e tiver Sigmetal,
@@ -95,7 +95,7 @@ subgraph ESTRADA["Estrada do Cão Luar (Quest 'A Travessia Perigosa')"]
     B8["Thori: Queria ver a cara do meu pai se me visse entregando um desses."]:::yellow
 
     %% Entrega de Kravens no Baú (sempre deposita todos do inventário)
-    subgraph BAU["Baú de Kravens"]
+    subgraph BAU["baú de Kravens"]
         D1{"Depositar todos os Kravens do inventário"}
         D2["Baú recebe 9 (exemplo)"]
         D3["Baú recebe 10 (exemplo)"]
@@ -124,7 +124,7 @@ subgraph ESTRADA["Estrada do Cão Luar (Quest 'A Travessia Perigosa')"]
     %% B2 opções (1–3) — evitar sintaxe de lista no Markdown do Mermaid
     B2 -- "Opção 1: Entregar para Balastrus" --> B2a
     B2 -- "Opção 2: Entregar para Tusk" --> B2b
-    B2 -- "Opção 3: Entregar no Balaio" --> B2c
+    B2 -- "Opção 3: Entregar no baú de Kravens" --> B2c
 
     %% Confirmação/cancelamento das 1–3 (apenas quando PLAYER_HAS_SIGMETAL = true)
     B2a -- "Entregar" --> B4
@@ -169,7 +169,7 @@ subgraph ESTRADA["Estrada do Cão Luar (Quest 'A Travessia Perigosa')"]
     %% Mapeamento do final por v_sigmetal_destino (inteiros)
     F1 -- "2 (TUSK)" --> C1
     F1 -- "1 (BALASTRUS)" --> F2
-    F1 -- "3 (BALAIO)" --> F3
+    F1 -- "3 (BAU)" --> F3
     F1 -- "0 (NINGUEM)" --> F4
 
     %% Cena Tusk (mantida do diagrama anterior)
@@ -183,7 +183,7 @@ subgraph ESTRADA["Estrada do Cão Luar (Quest 'A Travessia Perigosa')"]
 end
 %% =====================================================
 %% Legenda (v_sigmetal_destino)
-%% 0 = NINGUEM | 1 = BALASTRUS | 2 = TUSK | 3 = BALAIO
+%% 0 = NINGUEM | 1 = BALASTRUS | 2 = TUSK | 3 = BAU
 %% Tusk na mina também seta 2 (TUSK).
 %% Opções 1–3 só aparecem se o jogador tiver o Sigmetal na bolsa.
 %% Não existe opção "Não entregar a ninguém"; sair sem entregar define 0 se tiver Sigmetal.
