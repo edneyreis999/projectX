@@ -4877,17 +4877,17 @@
             "variableValue": 0
           },
           "directionFix": false,
-          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "image": { "tileId": 0, "characterName": "Boss/$CoretoBoss1", "direction": 4, "pattern": 1, "characterIndex": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
           "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
+          "priorityType": 1,
+          "stepAnime": true,
           "through": false,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         },
         {
           "conditions": {
@@ -4905,8 +4905,8 @@
             "variableValid": true,
             "variableValue": 7
           },
-          "directionFix": true,
-          "image": { "tileId": 0, "characterName": "$BigMonster2", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Boss/$CoretoBoss1", "direction": 4, "pattern": 1, "characterIndex": 0 },
           "list": [
             { "code": 213, "indent": 0, "parameters": [-1, 1, true] },
             {
@@ -6875,18 +6875,18 @@
             "variableValid": false,
             "variableValue": 0
           },
-          "directionFix": false,
-          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "directionFix": true,
+          "image": { "tileId": 0, "characterName": "Boss/$CoretoBoss1", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
           "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
+          "priorityType": 1,
+          "stepAnime": true,
           "through": false,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         },
         {
           "conditions": {
@@ -6905,7 +6905,7 @@
             "variableValue": 7
           },
           "directionFix": true,
-          "image": { "tileId": 0, "characterName": "$BigMonster2", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Boss/$CoretoBoss1", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
             { "code": 213, "indent": 0, "parameters": [-1, 1, true] },
             {
@@ -7064,17 +7064,17 @@
             "variableValue": 0
           },
           "directionFix": false,
-          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "image": { "tileId": 0, "characterName": "Boss/$CoretoBoss1", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
           "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
+          "priorityType": 1,
+          "stepAnime": true,
           "through": false,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         },
         {
           "conditions": {
@@ -7092,8 +7092,8 @@
             "variableValid": true,
             "variableValue": 7
           },
-          "directionFix": true,
-          "image": { "tileId": 0, "characterName": "$BigMonster2", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Boss/$CoretoBoss1", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
             { "code": 213, "indent": 0, "parameters": [-1, 1, true] },
             {
