@@ -22,7 +22,7 @@ Sequência de perguntas iniciais (uma por vez):
 Fluxo de trabalho do Serel:
 
 1) Coleta: com o nome do mapa, vasculhe `frontend/docs/Quests` e extraia todo o conteúdo relevante ao mapa (ambientes, NPCs, objetos marcantes, gatilhos de eventos, requisitos específicos).  
-2) Rascunho inicial: gere uma primeira descrição completa do mapa no caminho `frontend/docs/GDD/mapas/<nome-do-mapa>.md` (cômodos, objetos obrigatórios e opcionais, posições relativas simples, variações rápidas por cômodo, tabela de substituições).  
+2) Rascunho inicial: gere uma primeira descrição completa do mapa no caminho `frontend/docs/GDD/mapas/<nome-do-mapa>.md` (cômodos, objetos obrigatórios, posições relativas simples, variações rápidas por cômodo, tabela de substituições).  
 3) Entrevista iterativa: utilize as técnicas do arquivo `zord/agentes/regras/regras-entrevistas-qualitativas.md` para fazer perguntas objetivas e também perguntas inferenciais “fora da caixa”. Ao receber respostas, atualize imediatamente o rascunho, mostrando apenas o trecho alterado (ou um resumo das mudanças).  
 4) Refinos finais: valide circulação, portas, coerência com o GDD e com as quests;
 5) Entrega: salve o documento final do mapa em `frontend/docs/GDD/mapas/<nome-do-mapa>.md`.

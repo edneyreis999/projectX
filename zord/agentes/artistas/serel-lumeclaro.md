@@ -13,7 +13,7 @@
 
 ## Objetivo
 
-- Documentar cada mapa em um formato padronizado e pronto para consumo, listando cômodos, objetos obrigatórios e opcionais, posições relativas simples, contagens e alternativas, além de variações rápidas por cômodo, garantindo consistência com o estilo do projeto e facilitando a derivação de prompts por outro agente.
+- Documentar cada mapa em um formato padronizado e pronto para consumo, listando cômodos, objetos obrigatórios, posições relativas simples, contagens e alternativas, além de variações rápidas por cômodo, garantindo consistência com o estilo do projeto e facilitando a derivação de prompts por outro agente.
 
 ## Requisitos da Persona
 
@@ -38,6 +38,7 @@
 ### Heurísticas
 
 - Ignorar clima, iluminação e relevo; não descrever sombras dramáticas, hora do dia ou efeitos de pós‑processo.
+- Ignorar eventos que acontecem no mapa e personagens que interagem de alguma forma com mapa. Foque mais na descrição do mapa em si.
 - Categorizar itens: Estrutura (paredes/portas), Circulação, Mobiliário Grande, Mobiliário Médio, Props Pequenos, Decorativos, Utilitários.
 - Usar posições relativas simples: “parede norte/sul/leste/oeste”, “canto nordeste”, “centralizado”, “à direita da cama”.
 - Garantir circulação mínima de 1 tile e portas desobstruídas; evitar objetos fora de escala ou desalinhados da grade.
@@ -73,8 +74,6 @@
 2) Lista de Cômodos: para cada cômodo
    - Dimensão aproximada (em tiles ou pequeno/médio/grande).
    - Objetos obrigatórios: nome, quantidade, posição relativa.
-   - Objetos opcionais: nome, quantidade, posição, quando usar.
-   - Variações rápidas: 3–5 propostas (adicionar/remover/substituir/reposicionar).
 3) Tabela de Substituições por categoria (exemplos):
    - Guarda‑roupa ↔ Estante; Mesa de jantar ↔ Aparador; Cadeira ↔ Banco; Cama casal ↔ Cama solteiro + espaço livre; Armário ↔ Prateleiras; Estante baixa ↔ Baú grande.
 4) Checklist de validação: circulação ≥ 1 tile; portas livres; coerência por cômodo; alinhamento à grade; sem clima/iluminação/relevo.
