@@ -3,7 +3,7 @@
 ```mermaid
 flowchart TD
 %% =====================================================
-%% Fluxo de Decisão do Item "Sigmetal" (Mermaid robusto)
+%% Fluxo de Decisão do Item "Sigmetal" (Mermaid atualizado)
 %% =====================================================
 
 %% ---- Estilos aproximando as cores do .puml ----
@@ -25,15 +25,16 @@ subgraph KRAVENS["Mina de Kravens (Final da Quest 'Minerador Aprendiz')"]
 
     %% Nota: O jogador agora possui o item de quest.
 
-    A3{"Jogador entrega o Sigmetal<br>para Tusk?"}
+    A3{"Entregar o Sigmetal para Tusk<br>na mina de Kravens?"}
 
-    A4["Entregar Sigmetal para Tusk"]
-    %% Flags (puml note):
-    %%  PLAYER_HAS_SIGMETAL=false; TUSK_CREDIT=true
+    A4["Entregar Sigmetal para Tusk (na mina)"]
+    %% Efeitos:
+    %%  PLAYER_HAS_SIGMETAL=false
+    %%  v_sigmetal_destino = 2 (TUSK)
 
-    A5["Esconder o Sigmetal e<br>entregar 10 Kravens"]
-    %% Flags (puml note):
-    %%  PLAYER_HAS_SIGMETAL=true; TUSK_CREDIT=false
+    A5["Não entregar a Tusk na mina<br>(seguir viagem com Sigmetal)"]
+    %% Efeitos:
+    %%  PLAYER_HAS_SIGMETAL=true
 
     A1 --> A2
     A2 --> A3
@@ -41,65 +42,151 @@ subgraph KRAVENS["Mina de Kravens (Final da Quest 'Minerador Aprendiz')"]
     A3 -- "Não" --> A5
 end
 
-%% Se entregou na mina, vai direto para a cena de crédito do Tusk
-A4 --> C1
-
-%% Se escondeu, prossegue (viagem/combates etc.)
-A5 --> B1
+%% Após a mina, segue a viagem
+A4 --> B0
+A5 --> B0
 
 %% =====================================================
 %% Partição: Estrada do Cão Luar (Quest "A Travessia Perigosa")
 %% =====================================================
 subgraph ESTRADA["Estrada do Cão Luar (Quest 'A Travessia Perigosa')"]
-    B1{"O jogador ainda<br>possui o Sigmetal?"}
+    B0["Prosseguir viagem (combates/encontros)"]
 
-    %% --- Ramo SIM: múltiplas decisões ---
-    B2{"Escolhe entregar<br>para Tusk?"}
-    B3["Entregar Sigmetal para Tusk"]
+    %% Check auxiliar: tem Sigmetal na bolsa?
+    B1{"O jogador possui o Sigmetal<br>na bolsa?"}
 
-    B4["Entregar Sigmetal<br>para Balastros"]:::blue
+    %% Decisão central (sem opção explícita de "não entregar");
+    %% opções 1–3 só aparecem se B1 = Sim
+    B2{"Escolhe para quem vai entregar Sigmetal"}
+
+    %% Opções (com confirmar/cancelar nas 1–3)
+    %% 1 - Balastrus (apenas se tiver Sigmetal)
+    B2a{"Confirmar entrega para Balastrus?"}
+    B4["Entregar Sigmetal para Balastrus"]:::blue
+  
+    %% Efeitos da entrega a Balastrus:
+    %%  PLAYER_HAS_SIGMETAL=false
+    %%  v_sigmetal_destino = 1 (BALASTRUS)
+
+    %% 2 - Tusk (apenas se tiver Sigmetal)
+    B2b{"Confirmar entrega para Tusk?"}
+    B3["Entregar Sigmetal para Tusk (na estrada)"]
+    
+    %% Efeitos:
+    %%  PLAYER_HAS_SIGMETAL=false
+    %%  v_sigmetal_destino = 2 (TUSK)
+
+    %% 3 - baú de Kravens (apenas se tiver Sigmetal)
+    B2c{"Confirmar colocar no baú de Kravens?"}
+    B7["Colocar Sigmetal no baú de Kravens<br>junto com outros minérios"]
+    
+    %% Efeitos:
+    %%  PLAYER_HAS_SIGMETAL=false
+    %%  v_sigmetal_destino = 3 (BAU)
+
+    %% Observação: não existe opção explícita "Não entregar a ninguém".
+    %% Se o jogador sair do diálogo sem confirmar 1–3 e tiver Sigmetal,
+    %% então v_sigmetal_destino = 0 (NINGUEM) e o item permanece na bolsa.
+
+    %% Consequências narrativas breves (mantidas do diagrama anterior)
     B5["Balastros analisa o item<br>em silêncio"]
-    B6["Balastros age com mistério"]
-    %% Flags:
-    %%  PLAYER_HAS_SIGMETAL=false; BALASTROS_KNOWS=true
+    B6["Ha tempo não via um desses..."]
 
-    B7["Colocar Sigmetal no Balaio<br>junto com outros minérios"]
-    B8["Balastros faz comentário enigmático<br>(item perdido)"]:::yellow
-    %% Flags:
-    %%  PLAYER_HAS_SIGMETAL=false; SIGMETAL_LOST_TO_CHEST=true
+    B8["Thori: Queria ver a cara do meu pai se me visse entregando um desses."]:::yellow
 
-    B9["Manter o Sigmetal escondido"]
-    B10["Balastros faz comentário sobre<br>o bolso do Thorin"]:::yellow
-    %% Flags:
-    %%  PLAYER_HAS_SIGMETAL=true
+    %% Entrega de Kravens no Baú (sempre deposita todos do inventário)
+    subgraph BAU["baú de Kravens"]
+        D1{"Depositar todos os Kravens do inventário"}
+        D2["Baú recebe 9 (exemplo)"]
+        D3["Baú recebe 10 (exemplo)"]
+        %% Efeitos:
+        %%  KRAVENS_INVENTARIO = 0 após depósito (pode voltar depois com mais)
+    end
 
-    %% --- Ramo NÃO: já entregou antes, observa a consequência ---
-    B1 -- "Não / Já entregou na mina" --> C1
+    %% Falar com Balastrus e decidir encerrar cena
+    N1["Falar com Balastrus (NPC)"]
+    N2{"Tem Kravens no inventário?"}
+    N3["'Ir para casa' DISPONÍVEL (inventário vazio)"]
+    N4["'Ir para casa' INDISPONÍVEL (ainda possui Kravens)"]
 
-    %% Encadeamentos do ramo SIM
-    B1 -- "Sim" --> B2
-    B2 -- "Sim" --> B3
-    B2 -- "Não, entregar para Balastros?" --> B4
-    B2 -- "Não, colocar no Balaio?" --> B7
-    B2 -- "Não entregar a ninguém" --> B9
+    %% Final baseado em v_sigmetal_destino
+    F1{"Final depende de v_sigmetal_destino"}
+    C1["Final: Tusk se gaba para Balastrus"]:::coral
+    C2["Thorin reage à mentira"]
+    F2["Final: Balastrus agradesse Thorin e diz que vai recompensa-lo"]
+    F3["Final: Balastrus vai até o bau e agradesse toda expedição, incluindo Tusk. Diz que essa expedição foi a melhor dos ultimos anos."]
+    F4["Final: Balastrus faz comentario sobre bolso de Thorin estar cheio"]
 
-    %% Desdobramentos dos caminhos alternativos
-    B3 --> C1
+    %% Encadeamentos principais
+    B0 --> B1
+    B1 --> B2
+
+    %% B2 opções (1–3) — evitar sintaxe de lista no Markdown do Mermaid
+    B2 -- "Opção 1: Entregar para Balastrus" --> B2a
+    B2 -- "Opção 2: Entregar para Tusk" --> B2b
+    B2 -- "Opção 3: Entregar no baú de Kravens" --> B2c
+
+    %% Confirmação/cancelamento das 1–3 (apenas quando PLAYER_HAS_SIGMETAL = true)
+    B2a -- "Entregar" --> B4
+    B2a -- "Cancelar" --> B2
+
+    B2b -- "Entregar" --> B3
+    B2b -- "Cancelar" --> B2
+
+    B2c -- "Colocar" --> B7
+    B2c -- "Cancelar" --> B2
+
+    %% Desdobramentos narrativos curtos após a entrega (seguem viagem)
     B4 --> B5
     B5 --> B6
-    B6 --> END
+    B6 --> D1
+
+    B3 --> D1
+
     B7 --> B8
-    B8 --> END
-    B9 --> B10
-    B10 --> END
+    B8 --> D1
+
+    %% Saída sem entregar (não é opção explícita):
+    %% se PLAYER_HAS_SIGMETAL=true então v_sigmetal_destino=0 e segue
+    B2 -- "Sair sem entregar" --> B10
+    B10["Sai do diálogo sem entregar<br>(v_sigmetal_destino=0 se tiver Sigmetal)"]:::yellow
+    B10 --> D1
+
+    %% Fluxo dos Kravens no Baú
+    D1 -- "Ex.: recebeu 9" --> D2
+    D1 -- "Ex.: recebeu 10" --> D3
+    D2 --> N1
+    D3 --> N1
+
+    %% Checagem da opção 'Ir para casa'
+    N1 --> N2
+    N2 -- "Não (inventário vazio)" --> N3
+    N2 -- "Sim (ainda tem)" --> N4
+
+    %% Encerramento quando escolhe 'Ir para casa'
+    N3 --> F1
+
+    %% Mapeamento do final por v_sigmetal_destino (inteiros)
+    F1 -- "2 (TUSK)" --> C1
+    F1 -- "1 (BALASTRUS)" --> F2
+    F1 -- "3 (BAU)" --> F3
+    F1 -- "0 (NINGUEM)" --> F4
+
+    %% Cena Tusk (mantida do diagrama anterior)
+    C1 --> C2
+    C2 --> END
+
+    %% Finais alternativos também encerram a cena
+    F2 --> END
+    F3 --> END
+    F4 --> END
 end
-
 %% =====================================================
-%% Cena comum: Tusk toma o crédito (label TuskTakesCredit)
-%% =====================================================
-C1["Tusk se gaba para Balastros"]:::coral
-C2["Thorin reage à mentira"]
-
-C1 --> C2
-C2 --> END
+%% Legenda (v_sigmetal_destino)
+%% 0 = NINGUEM | 1 = BALASTRUS | 2 = TUSK | 3 = BAU
+%% Tusk na mina também seta 2 (TUSK).
+%% Opções 1–3 só aparecem se o jogador tiver o Sigmetal na bolsa.
+%% Não existe opção "Não entregar a ninguém"; sair sem entregar define 0 se tiver Sigmetal.
+%% A opção 'Ir para casa' aparece no Balastrus quando KRAVENS_INVENTARIO = 0.
+%% A cena final dispara somente ao escolher 'Ir para casa'.
 ```
