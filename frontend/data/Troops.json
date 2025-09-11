@@ -290,10 +290,9 @@
   {
     "id": 11,
     "members": [
-      { "enemyId": 10, "x": 199, "y": 201, "hidden": false },
-      { "enemyId": 10, "x": 163, "y": 441, "hidden": false },
-      { "enemyId": 10, "x": 331, "y": 332, "hidden": false },
-      { "enemyId": 8, "x": 111, "y": 338, "hidden": false }
+      { "enemyId": 10, "x": 314, "y": 295, "hidden": false },
+      { "enemyId": 10, "x": 225, "y": 473, "hidden": false },
+      { "enemyId": 8, "x": 133, "y": 386, "hidden": false }
     ],
     "name": "Lobo Comum*3, Lobo Branco",
     "pages": [
@@ -789,7 +788,7 @@
   },
   {
     "id": 29,
-    "members": [{ "enemyId": 20, "x": 170, "y": 444, "hidden": false }],
+    "members": [{ "enemyId": 20, "x": 125, "y": 402, "hidden": false }],
     "name": "Cristaleão",
     "pages": [
       {

@@ -170,7 +170,7 @@
       { "skillId": 41, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 }
     ],
     "battlerHue": 0,
-    "battlerName": "SF_Whitewolf",
+    "battlerName": "Coreto_Lobaris",
     "dropItems": [
       { "dataId": 1, "denominator": 1, "kind": 0 },
       { "dataId": 1, "denominator": 1, "kind": 0 },
@@ -183,7 +183,7 @@
       { "code": 31, "dataId": 1, "value": 0 }
     ],
     "gold": 0,
-    "name": "Lobo Branco",
+    "name": "Lobaris Alfa",
     "note": "",
     "params": [300, 100, 10, 10, 10, 10, 10, 10]
   },
@@ -215,7 +215,7 @@
       { "skillId": 41, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 }
     ],
     "battlerHue": 0,
-    "battlerName": "SF_Wolf",
+    "battlerName": "Coreto_Lobaris_B",
     "dropItems": [
       { "dataId": 1, "denominator": 1, "kind": 0 },
       { "dataId": 1, "denominator": 1, "kind": 0 },
@@ -228,7 +228,7 @@
       { "code": 31, "dataId": 1, "value": 0 }
     ],
     "gold": 0,
-    "name": "Lobo Comum",
+    "name": "Lobaris Beta",
     "note": "",
     "params": [100, 0, 10, 10, 10, 10, 10, 10]
   },
@@ -428,7 +428,7 @@
   {
     "id": 20,
     "actions": [{ "conditionParam1": 0, "conditionParam2": 0, "conditionType": 0, "rating": 5, "skillId": 1 }],
-    "battlerHue": 46,
+    "battlerHue": 0,
     "battlerName": "Coreto_Cristaleao",
     "dropItems": [
       { "dataId": 1, "denominator": 1, "kind": 0 },

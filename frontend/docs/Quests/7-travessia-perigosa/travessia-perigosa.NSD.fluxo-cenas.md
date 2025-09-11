@@ -73,7 +73,7 @@ Quest: A Travessia Perigosa
 | - | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | 1 | **Clareira de Kravens**     | Discussão tensa sobre a tempestade iminente; Kilin alerta Tusk sobre os riscos; jogador faz múltiplas escolhas para apoiar Kilin ou Tusk; Tusk ameaça retenção de pagamento para quem não partir. |
 | 2 | **Travessia no Mapamúndi**  | Retorno perigoso sob tempestade com batalhas contra inimigos fortalecidos; sequência intensa de batalhas; quebra narrativa com Reed e o jogador criança; exploração da caverna com puzzle e item “Símbolo da Trégua”; confronto com boss perto de Gildrat. |
-| 3 | **Encontro com Balastros**  | Chegada com tempo limpo; organização para entrega dos minérios no balaio; múltiplas opções para entrega do Sigmetal (para Tusk, Balastros, no balaio ou não entregar); cenas e diálogos variáveis conforme escolha; encerramento com Balastros.         |
+| 3 | **Encontro com Balastros**  | Chegada com tempo limpo; organização para entrega dos minérios no baú de Kravens; múltiplas opções para entrega do Sigmetal (para Tusk, Balastros, no baú de Kravens ou não entregar); cenas e diálogos variáveis conforme escolha; encerramento com Balastros.         |
 | 4 | **Retorno para casa**       | Travessia noturna e silenciosa; chegada em casa sem ninguém; diálogos opcionais no quarto do pai e com Sáparo; transição para sonho final envolvendo o selo ancestral.                                                         |
 
 ---
@@ -116,11 +116,11 @@ Quest: A Travessia Perigosa
 | #  | Beat                                          | Descrição                                                                                                            | Controle |
 | ---|-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------|----------|
 | 1  | Chegada na Estrada do Cão Luar                 | O grupo chega com o tempo limpo após a tempestade; Balastros os aguarda ansioso.                                      | 🎬       |
-| 2  | Organização da entrega                          | Balastros e Tusk organizam o grupo em fila para entregar os minérios no balaio central.                              | 🎬       |
-| 3  | Entrega dos Cravens                            | Jogador entrega manualmente os minérios Cravens (9 ou 10) no balaio; condição para avançar.                          | 🎮       |
+| 2  | Organização da entrega                          | Balastros e Tusk organizam o grupo em fila para entregar os minérios no baú de Kravens central.                      | 🎬       |
+| 3  | Entrega dos Cravens                            | Jogador entrega manualmente os minérios Cravens (9 ou 10) no baú de Kravens; condição para avançar.                  | 🎮       |
 | 4  | Cenas condicionais após entrega dos Cravens   | Dependendo da posse e entrega do Sigmetal, ocorrem as seguintes situações:                                           | 🎬       |
 |     | — Se Tusk já tem o Sigmetal (ou recebe antes) | Tusk faz cena empolgada dizendo a Balastros que ele encontrou o Sigmetal; Thorin reage, pois sabe que foi ele quem achou.|          |
-|     | — Se jogador entregou o Sigmetal no balaio ou diretamente para Balastros | Balastros analisa o Sigmetal, mantém silêncio, e o minério “finge que nada aconteceu”, mantendo o mistério.           |          |
+|     | — Se jogador entregou o Sigmetal no baú de Kravens ou diretamente para Balastros | Balastros analisa o Sigmetal, mantém silêncio, e o minério “finge que nada aconteceu”, mantendo o mistério.           |          |
 |     | — Se jogador não entregou o Sigmetal          | Após entrega dos Cravens, Balastros conversa com Thorin e comenta enigmaticamente:                                   |          |
 |     |                                                | “Você está muito novo para carregar tanto peso nos bolsos... Mas tudo bem. Nem todo baú se abre no primeiro puxão.” |          |
 | 5  | Conversa final com Balastros                    | Jogador pode dialogar com Balastros, encerrando a cena; diálogos variam conforme as escolhas anteriores.             | 🎮       |
