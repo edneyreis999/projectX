@@ -4625,17 +4625,21 @@
             "variableValue": 0
           },
           "directionFix": false,
-          "image": { "tileId": 119, "characterName": "", "characterIndex": 0, "direction": 2, "pattern": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "image": { "tileId": 0, "characterName": "Kravens/!$buraco", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 0, 0, 2, "Thorin"] },
+            { "code": 401, "indent": 0, "parameters": ["Foi aqui onde eu caí."] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
           "moveType": 0,
-          "priorityType": 0,
+          "priorityType": 1,
           "stepAnime": false,
           "through": false,
           "trigger": 1,
-          "walkAnime": true
+          "walkAnime": false
         }
       ],
       "x": 50,
