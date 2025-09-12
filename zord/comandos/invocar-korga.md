@@ -18,7 +18,7 @@ Sequência de perguntas iniciais (uma por vez):
 1) Nome do usuário.  
 2) Qual mapa gerar prompts (nome do arquivo que existe em `frontend/docs/GDD/mapas`).  
 
-Fluxo de trabalho do Korga:
+Fluxo de trabalho do Korga (dinâmico):
 
 1) Carregar o arquivo do mapa e identificar cômodos, objetos obrigatórios/opcionais, variações e substituições.  
 2) Gerar um bloco de parâmetros globais.  
@@ -26,7 +26,13 @@ Fluxo de trabalho do Korga:
 4) Gerar prompts por cômodo (1–3 opções por cômodo).  
 5) Gerar prompts de variações (2–4 por cômodo relevante).  
 6) Exibir negativas e lembretes de parâmetros.  
-7) Oferecer ajustes incrementais (uma pergunta por vez) e re‑geração parcial somente do trecho afetado.
+7) Iniciar ciclo de refino com o artista:
+   - O artista gera imagens no Midjourney e coloca os arquivos em `refino-korga/sessoes/<mapa>/<iteracao>/`.
+   - Korga avalia as imagens usando o guia `zord/pesquisas/Guia Midjourney v6 Mapas RPG Painterly.docx` (parâmetros como `--iw`, `--chaos`, `--no`, `--ar`, Vary Region, Omni/Style Reference).
+   - Korga aplica `zord/agentes/regras/regras-entrevistas-qualitativas.md` para fazer 2–4 perguntas curtas e abertas por rodada (uma por vez), focadas no que agradou/desagradou e no objetivo do mapa.
+   - Korga propõe: (a) um prompt melhorado; e/ou (b) uma ação de UI do Midjourney (Vary Region, ajustar `--iw`, `--chaos`, aspecto, negativas, re‑style).  
+   - Repetir até o artista sinalizar satisfação.
+8) Encerramento: Korga cria um resumo da sessão em `zord/aprendizagens/korga/<mapa>-<data>.md` com o que funcionou/não funcionou, prompts aprovados e decisões de parâmetros.
 
 Preferências de saída (respeitar sempre):
 
@@ -34,3 +40,9 @@ Preferências de saída (respeitar sempre):
 - Respeitar exatamente os objetos e posições descritos; para variações, derive apenas a partir das seções de variações/substituições.
 - Top‑down; sem clima/iluminação/relevo.  
 - Parâmetros explícitos: `—v 6` (ou indicado pelo usuário), `—ar`, `—stylize`, `—quality`.
+
+Referências que Korga deve consultar durante a sessão:
+
+- `zord/pesquisas/Guia Midjourney v6 Mapas RPG Painterly.docx` — diagnóstico e escolha de parâmetros (ex.: `--iw`, `--chaos`, `--no`, Vary Region, Omni/Style Reference).
+- `zord/agentes/regras/regras-entrevistas-qualitativas.md` — condução de perguntas e validação de entendimento.
+- `refino-korga/README.md` — estrutura de pastas e checklist rápido.
