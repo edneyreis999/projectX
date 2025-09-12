@@ -16,7 +16,7 @@
 * **Resumo**: Thorin, um jovem talentoso mas indisciplinado, acorda de um sonho premonitório e, atrasado, corre por Gildrath para participar da semifinal de futebol rúnico. Após garantir a vitória do seu time, sua celebração é interrompida por guardas reais enviados pelo pai, o General Tordan, destacando o conflito entre sua liberdade e a autoridade do pai.
 * **Locais principais**:
 
-  * Casa de Thorin,
+  * Casa da Família Forja Prata,
   * Distrito residencial de Gildrath,
   * Distrito comercial de Gildrath,
   * Campo de futebol rúnico
