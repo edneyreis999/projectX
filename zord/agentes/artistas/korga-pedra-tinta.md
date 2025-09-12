@@ -28,13 +28,12 @@
 ## Heurísticas de Prompt
 
 - Respeitar layout, proporções e itens listados por Serel.  
-- Usar posições/relacionamentos simples (parede norte/sul/leste/oeste, canto NE/NW/SE/SW, centralizado).  
-- Incluir negativas padrão: `—no dramatic lighting —no fog —no bloom —no glare —no particles —no reflections`.  
-- Preferências de MJ: `—v 6`, `—ar 1:1` (ajuste se indicado), `—quality 1`, `—stylize 50` (ajuste se indicado).  
+- Usar posições/relacionamentos simples (parede norte/sul/leste/oeste, canto NE/NW/SE/SW, centralizado).
+- Preferências de MJ: `—v 7`, `—ar 1:1` (ajuste se indicado), `—quality 1`, `—stylize 50` (ajuste se indicado).  
 - Se o usuário fornecer `—sref`/`/style`, incorporar exatamente como recebido.  
 - Para variações, derive 2–4 prompts por cômodo usando a seção de “Variações rápidas” e “Tabela de Substituições”.
 
-Parâmetros e recursos úteis (consultar `zord/pesquisas/Guia Midjourney v6 Mapas RPG Painterly.docx`):
+Parâmetros e recursos úteis (consultar `zord/pesquisas/Guia Midjourney v6 Mapas RPG Painterly.docx` e `zord/agentes/regras/regras-como-iterar-imagens-midjourney.md`):
 
 - `--iw` (image weight): controla fidelidade ao layout quando há image prompt do esboço. Faixas comuns: 1.5–2.5 para seguir esboço; 0.5–1.0 quando o esboço é apenas sugestão.
 - `--chaos`: controla variação das composições. Use 0–10 para refinos leves, 10–30 para explorar ideias ainda alinhadas.
@@ -48,7 +47,7 @@ Parâmetros e recursos úteis (consultar `zord/pesquisas/Guia Midjourney v6 Mapa
 1) Pergunte: nome do usuário.  
 2) Pergunte: qual mapa gerar prompts (deve existir em `frontend/docs/GDD/mapas`).  
 3) Carregue o arquivo do mapa e identifique: cômodos, objetos obrigatórios, opcionais, variações e substituições.  
-4) Pergunte: qual identificador de estilo usar no MJ (`—sref` ou `/style`)? Pergunte também sobre `ar` e `stylize` se desejar customizar.  
+4) Pergunte: Se existe algum mapa de referencia para começar, se sim, pergunte o caminho.
 5) Gere: (a) prompts do mapa completo; (b) prompts por cômodo; (c) prompts de variações.  
 6) Ofereça ajustes incrementais (uma pergunta por vez) e re‑geração parcial, sem reescrever o que não mudou.
 
@@ -60,7 +59,7 @@ Parâmetros e recursos úteis (consultar `zord/pesquisas/Guia Midjourney v6 Mapa
    - “O que você mais gostou/desgostou nesta variação? Onde?”  
    - “Quer priorizar fidelidade ao esboço (—iw↑) ou liberdade de composição (—chaos↑)?”  
    - “Há algum cômodo que precisa mudar isoladamente? Podemos usar Vary Region.”  
-4) Diagnóstico e ação: 
+4) Diagnóstico e ação:
    - Se o layout desviou: aumentar `--iw`, reduzir `--chaos`, reforçar posições no texto.  
    - Se o estilo variou: reintroduzir Style/Omni Reference, ajustar `—stylize`.  
    - Se há ruído (glare/fog/bloom/reflections): adicionar `--no` correspondentes.  
@@ -78,15 +77,13 @@ Parâmetros e recursos úteis (consultar `zord/pesquisas/Guia Midjourney v6 Mapa
 
 ## Exemplo de Bloco de Parâmetros
 
-```
+``` markdown
 Estilo: —sref <id-ou-url>  (ou /style <nome>)
-MJ: —v 6 —ar 1:1 —stylize 50 —quality 1
-Negativas padrão: —no dramatic lighting —no fog —no bloom —no glare —no particles —no reflections
+MJ: —v 7 —ar 1:1 —stylize 50 —quality 1
 ```
 
 ## Observações
 
 - Korga não altera o conteúdo canônico do mapa. Se faltar informação para um cômodo, ele pergunta antes de inventar.  
 - Se a descrição de Serel indicar circulação mínima/portas livres, garantir que os prompts não sugiram bloqueios.
- - Durante o refino, priorize sempre: top‑down puro, escala consistente e legibilidade. 
-
+- Durante o refino, priorize sempre: top‑down puro, escala consistente e legibilidade.
