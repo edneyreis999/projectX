@@ -10,7 +10,9 @@
             this.totalKravensNecessarios = totalKravensNecessarios;
             this.totalPilhasDisponiveis = totalPilhasDisponiveis;
         }
-        _gerarNumeroAleatorio() { return Math.random(); }
+        _gerarNumeroAleatorio() {
+            return Math.random();
+        }
         executarMineracao(request) {
             this.assertValidRequest(request);
             const { kravensJaColetados, pilhasJaMineradas, rachaduraJaAtivada } = request;
@@ -52,9 +54,7 @@
                 kravensColetados: novosKravensColetados,
                 chanceCalculada: chanceDeObterKraven,
             };
-            const response = obteuKraven
-                ? { tipo: 'Kraven', ...responseData }
-                : { tipo: 'Pedra', ...responseData };
+            const response = obteuKraven ? { tipo: 'Kraven', ...responseData } : { tipo: 'Pedra', ...responseData };
             this.assertValidResponse(response);
             return response;
         }
@@ -107,9 +107,7 @@
     }
     // Helpers removidos - informações acessíveis diretamente da resposta
     // Compat Node/Browser (mantém padrão atual)
-    // @ts-ignore - module may be undefined in browser
     if (typeof module !== 'undefined' && module.exports) {
-        // @ts-ignore
         module.exports = MinaKravensDomain;
     }
     else if (globalThis) {

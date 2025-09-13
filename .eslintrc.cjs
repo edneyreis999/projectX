@@ -1,7 +1,7 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: 'tsconfig.json',
+    project: ['./tsconfig.eslint.json'],
     tsconfigRootDir: __dirname,
     sourceType: 'module',
   },
@@ -25,10 +25,19 @@ module.exports = {
     "frontend/js/plugins/TAA_CharacterPoses.js",
     "frontend/js/plugins/PKD_AnimaX.js",
     "frontend/js/plugins/VisuMZ_*.js",
+    "dist",
+    "coverage",
+    "node_modules",
   ],
   overrides: [
     {
-      files: ['*.ts'],
+      files: ['**/*.ts'],
+      parser: require.resolve('@typescript-eslint/parser'),
+      parserOptions: {
+        project: ['./tsconfig.eslint.json'],
+        tsconfigRootDir: __dirname,
+        sourceType: 'module',
+      },
       rules: {
         '@typescript-eslint/interface-name-prefix': 'off',
         '@typescript-eslint/explicit-function-return-type': 'off',
@@ -37,11 +46,12 @@ module.exports = {
       },
     },
     {
-      files: ['*.js'],
-      parser: 'espree',
+      files: ['**/*.js'],
+      parser: require.resolve('espree'),
       parserOptions: {
         ecmaVersion: 2020,
         sourceType: 'module',
+        project: null,
       },
       rules: {
         'prettier/prettier': [
