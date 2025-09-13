@@ -3,25 +3,36 @@
 // MinaKravensDomain.ts
 //=============================================================================
 
-// Referências dinâmicas a DTOs para compatibilidade Node/Browser
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-let MineracaoRequestDTORef: any;
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-let MineracaoResponseDTORef: any;
+(function () {
+  'use strict';
 
-// Acessa de forma segura os ambientes Node/Browser via checagem de module
-// @ts-ignore - module pode não existir no browser
-if (typeof module !== 'undefined' && module.exports) {
-  // Node.js (testes)
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
-  MineracaoRequestDTORef = require('../dto/MineracaoRequestDTO');
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
-  MineracaoResponseDTORef = require('../dto/MineracaoResponseDTO');
-} else {
-  // Browser (runtime do jogo)
-  MineracaoRequestDTORef = (globalThis as any).MineracaoRequestDTO;
-  MineracaoResponseDTORef = (globalThis as any).MineracaoResponseDTO;
-}
+  // Resolver local de DTOs (evita variáveis globais)
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  let __reqDTO: any | null = null;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  let __respDTO: any | null = null;
+
+  function resolveDomainDTOs() {
+    // @ts-ignore - module pode não existir no browser
+    if (typeof module !== 'undefined' && module.exports) {
+      if (!__reqDTO) {
+        // eslint-disable-next-line @typescript-eslint/no-var-requires
+        __reqDTO = require('../dto/MineracaoRequestDTO');
+      }
+      if (!__respDTO) {
+        // eslint-disable-next-line @typescript-eslint/no-var-requires
+        __respDTO = require('../dto/MineracaoResponseDTO');
+      }
+    } else {
+      const g: any = (globalThis as any);
+      __reqDTO = __reqDTO || (g && g.MineracaoRequestDTO);
+      __respDTO = __respDTO || (g && g.MineracaoResponseDTO);
+    }
+    if (!__reqDTO || !__respDTO) {
+      throw new Error('DTOs não carregados. Carregue MineracaoRequestDTO/MineracaoResponseDTO antes do domínio.');
+    }
+    return { MineracaoRequestDTO: __reqDTO, MineracaoResponseDTO: __respDTO };
+  }
 
 class MinaKravensDomain {
   public readonly totalKravensNecessarios: number;
@@ -34,8 +45,8 @@ class MinaKravensDomain {
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   executarMineracao(request: any) {
-    ensureDTOsLoaded();
-    if (!(request instanceof MineracaoRequestDTORef)) {
+    const { MineracaoRequestDTO, MineracaoResponseDTO } = resolveDomainDTOs();
+    if (!(request instanceof MineracaoRequestDTO)) {
       throw new Error('Request deve ser uma instância de MineracaoRequestDTO');
     }
 
@@ -43,7 +54,7 @@ class MinaKravensDomain {
     const pilhasRestantes = this.totalPilhasDisponiveis - pilhasJaMineradas;
 
     if (this.isQuestCompleta(kravensJaColetados)) {
-      return MineracaoResponseDTORef.createPedraResponse({
+      return MineracaoResponseDTO.createPedraResponse({
         questCompleta: true,
         deveAtivarRachadura: false,
         pilhasRestantes: pilhasRestantes - 1,
@@ -81,8 +92,8 @@ class MinaKravensDomain {
     };
 
     return obteuKraven
-      ? MineracaoResponseDTORef.createKravenResponse(responseData)
-      : MineracaoResponseDTORef.createPedraResponse(responseData);
+      ? MineracaoResponseDTO.createKravenResponse(responseData)
+      : MineracaoResponseDTO.createPedraResponse(responseData);
   }
 
   calcularChanceKraven(kravensJaColetados: number, pilhasRestantes: number) {
@@ -106,16 +117,7 @@ class MinaKravensDomain {
   protected _gerarNumeroAleatorio() { return Math.random(); }
 }
 
-function ensureDTOsLoaded() {
-  if (!MineracaoRequestDTORef || !MineracaoResponseDTORef) {
-    const g: any = (globalThis as any);
-    MineracaoRequestDTORef = g && g.MineracaoRequestDTO ? g.MineracaoRequestDTO : MineracaoRequestDTORef;
-    MineracaoResponseDTORef = g && g.MineracaoResponseDTO ? g.MineracaoResponseDTO : MineracaoResponseDTORef;
-  }
-  if (!MineracaoRequestDTORef || !MineracaoResponseDTORef) {
-    throw new Error('DTOs não carregados. Carregue MineracaoRequestDTO/MineracaoResponseDTO antes do domínio.');
-  }
-}
+// remove ensure; usa resolveDomainDTOs
 
 // Compat Node/Browser (mantém padrão atual)
 // @ts-ignore - module may be undefined in browser
@@ -126,4 +128,4 @@ if (typeof module !== 'undefined' && module.exports) {
   (globalThis as any).MinaKravensDomain = MinaKravensDomain;
 }
 
-// Removido export default para evitar emissão de CommonJS no browser
+})();

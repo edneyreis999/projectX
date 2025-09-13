@@ -5,6 +5,7 @@
 - Plano de Migração: `frontend/plano-migracao-typescript/PLANO_MIGRACAO_TS.md`
 - Correção de Exports no NW.js: `frontend/plano-migracao-typescript/PLANO_CORRECAO_EXPORTS_NW.md`
 - Correção de Testes (Jest): `frontend/plano-migracao-typescript/PLANO_CORRECAO_TESTES.md`
+- Correção de Identificadores (Application): `frontend/plano-migracao-typescript/PLANO_CORRECAO_IDENTIFICADORES_APPLICATION.md`
 
 ## Resumo do que já foi feito
 
@@ -32,9 +33,10 @@
 - Evitar `export`/`export default` em arquivos carregados via `<script>`; emitir CommonJS no browser causa erro.
 - Manter ordem de carregamento no plugin: DTOs → Domain → UseCase.
 - `instanceof` entre ambientes pode falhar se referências divergirem; manter `require` em Node ajuda.
-- Se o watch/compilação parar de emitir `.js`, apagar `tsconfig.domain-dto.tsbuildinfo` (ou executar `tsc -p tsconfig.domain-dto.json --force`) destrava o rebuild incremental.
+- Se o watch/compilação parar de emitir `.js`, apagar `tsconfig.domain-dto.tsbuildinfo` destrava o rebuild incremental.
 
 Status atual da migração:
+
 - Domain/DTO em TypeScript gerando `.js` side-by-side.
 - Testes passando 100% (148/148) e cobertura gerada em `./coverage`.
 
@@ -51,7 +53,12 @@ Status atual da migração:
 - Avisos de `app.nw` em modo unpacked são esperados e inofensivos.
 
 Status atual no NW.js:
+
 - `npm run debug` funcionando; DTO/Domain carregados via `<script>` sem erros de módulo.
+
+Pendência atual (Application):
+
+- Resolver `SyntaxError: Identifier 'MineracaoRequestDTORef' has already been declared` conforme plano de correção de identificadores da Application.
 
 ## Como rodar em desenvolvimento (estado atual)
 
@@ -61,6 +68,7 @@ Status atual no NW.js:
 - Testes: `npm test` (transforma `.ts` com `@swc/jest`).
 
 Recomendações:
+
 - Use `npm run debug:ts` para garantir build TS antes de abrir o jogo.
 - Mantenha `npm run watch:types` ativo durante a sessão de desenvolvimento.
 

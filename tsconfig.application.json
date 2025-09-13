@@ -1,0 +1,22 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "noEmitOnError": true,
+    "rootDir": "frontend/js",
+    "outDir": "frontend/js",
+    "skipLibCheck": true,
+    "declaration": true
+  },
+  "include": [
+    "frontend/js/application/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
+

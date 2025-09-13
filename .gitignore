@@ -2,6 +2,7 @@
 /dist
 /frontend/js/**/*.d.ts
 /tsconfig.domain-dto.tsbuildinfo
+/tsconfig.application.tsbuildinfo
 /node_modules
 /.history
 .DS_Store

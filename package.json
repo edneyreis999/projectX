@@ -13,7 +13,9 @@
     "format:json": "prettier --write \"frontend/**/*.json\" \"System.json\"",
     "build:types": "tsc -p tsconfig.domain-dto.json",
     "watch:types": "tsc -p tsconfig.domain-dto.json -w",
-    "debug:ts": "npm run build:types && npm run debug"
+    "debug:ts": "npm run build:types && npm run build:app-types && npm run debug",
+    "build:app-types": "tsc -p tsconfig.application.json",
+    "watch:app-types": "tsc -p tsconfig.application.json -w"
   },
   "keywords": [],
   "author": "Edney Antonio Reis Filho",
