@@ -1,5 +1,4 @@
-const MineracaoUseCase = require('../js/application/MineracaoUseCase');
-// DTO classes removed - using plain objects for tests
+import MineracaoUseCase from '../js/application/MineracaoUseCase';
 
 describe('MineracaoUseCase', () => {
   let useCase, mockDomain, mockCoreService, mockQuestService, mockLogger;
@@ -109,14 +108,14 @@ describe('MineracaoUseCase', () => {
           .mockReturnValueOnce(0); // Boss não ativado
 
         // Domain retorna resultado Kraven
-        const domainResponse = ({
+        const domainResponse = {
           tipo: 'Kraven',
           questCompleta: false,
           deveAtivarRachadura: false,
           pilhasRestantes: 7,
           kravensColetados: 3,
           chanceCalculada: 50,
-        });
+        };
         mockDomain.executarMineracao.mockReturnValue(domainResponse);
 
         // Executa
@@ -144,14 +143,14 @@ describe('MineracaoUseCase', () => {
           .mockReturnValueOnce(0); // Boss não ativado
 
         // Domain retorna resultado Pedra
-        const domainResponse = ({
+        const domainResponse = {
           tipo: 'Pedra',
           questCompleta: false,
           deveAtivarRachadura: false,
           pilhasRestantes: 7,
           kravensColetados: 2,
           chanceCalculada: 50,
-        });
+        };
         mockDomain.executarMineracao.mockReturnValue(domainResponse);
 
         // Executa
@@ -172,14 +171,14 @@ describe('MineracaoUseCase', () => {
           .mockReturnValueOnce(1); // Boss ativado
 
         // Domain retorna resultado de quest completa
-        const domainResponse = ({
+        const domainResponse = {
           tipo: 'Pedra',
           questCompleta: true,
           deveAtivarRachadura: false,
           pilhasRestantes: 4,
           kravensColetados: 5,
           chanceCalculada: 0,
-        });
+        };
         mockDomain.executarMineracao.mockReturnValue(domainResponse);
 
         // Executa
@@ -203,14 +202,14 @@ describe('MineracaoUseCase', () => {
           .mockReturnValueOnce(0); // Boss não ativado
 
         // Domain retorna resultado que deve ativar rachadura
-        const domainResponse = ({
+        const domainResponse = {
           tipo: 'Kraven',
           questCompleta: false,
           deveAtivarRachadura: true,
           pilhasRestantes: 5,
           kravensColetados: 4,
           chanceCalculada: 75,
-        });
+        };
         mockDomain.executarMineracao.mockReturnValue(domainResponse);
 
         // Executa
@@ -232,14 +231,14 @@ describe('MineracaoUseCase', () => {
           .mockReturnValueOnce(0); // Boss não ativado
 
         // Domain retorna Kraven com rachadura
-        const domainResponse = ({
+        const domainResponse = {
           tipo: 'Kraven',
           questCompleta: false,
           deveAtivarRachadura: true,
           pilhasRestantes: 6,
           kravensColetados: 5,
           chanceCalculada: 100,
-        });
+        };
         mockDomain.executarMineracao.mockReturnValue(domainResponse);
 
         // Executa
@@ -259,14 +258,14 @@ describe('MineracaoUseCase', () => {
           .mockReturnValueOnce(1); // Boss já ativado (rachadura ativa)
 
         // Domain deve receber rachadura ativada = true
-        const domainResponse = ({
+        const domainResponse = {
           tipo: 'Kraven',
           questCompleta: true,
           deveAtivarRachadura: false,
           pilhasRestantes: 4,
           kravensColetados: 5,
           chanceCalculada: 100,
-        });
+        };
         mockDomain.executarMineracao.mockReturnValue(domainResponse);
 
         // Executa
@@ -294,14 +293,14 @@ describe('MineracaoUseCase', () => {
           .mockReturnValueOnce(1); // Boss ativado (rachadura ativa)
 
         // Domain retorna quest completa
-        const domainResponse = ({
+        const domainResponse = {
           tipo: 'Kraven',
           questCompleta: true,
           deveAtivarRachadura: false,
           pilhasRestantes: 2,
           kravensColetados: 5,
           chanceCalculada: 100,
-        });
+        };
         mockDomain.executarMineracao.mockReturnValue(domainResponse);
 
         // Executa
@@ -325,14 +324,14 @@ describe('MineracaoUseCase', () => {
           .mockReturnValueOnce(1); // Boss ativado
 
         // Domain retorna Pedra (azar mesmo com rachadura)
-        const domainResponse = ({
+        const domainResponse = {
           tipo: 'Pedra',
           questCompleta: false,
           deveAtivarRachadura: true, // Continua com rachadura
           pilhasRestantes: 3,
           kravensColetados: 4,
           chanceCalculada: 100,
-        });
+        };
         mockDomain.executarMineracao.mockReturnValue(domainResponse);
 
         // Executa
@@ -357,14 +356,14 @@ describe('MineracaoUseCase', () => {
           .mockReturnValueOnce(1); // Boss ativado
 
         // Domain sempre retorna Pedra quando quest completa
-        const domainResponse = ({
+        const domainResponse = {
           tipo: 'Pedra',
           questCompleta: true,
           deveAtivarRachadura: false,
           pilhasRestantes: 2,
           kravensColetados: 5,
           chanceCalculada: 0,
-        });
+        };
         mockDomain.executarMineracao.mockReturnValue(domainResponse);
 
         // Executa uma vez para testar
@@ -382,14 +381,14 @@ describe('MineracaoUseCase', () => {
           .mockReturnValueOnce(2) // Pilhas restantes
           .mockReturnValueOnce(1); // Boss ativado
 
-        const domainResponse = ({
+        const domainResponse = {
           tipo: 'Pedra',
           questCompleta: true,
           deveAtivarRachadura: false,
           pilhasRestantes: 1,
           kravensColetados: 6,
           chanceCalculada: 0,
-        });
+        };
         mockDomain.executarMineracao.mockReturnValue(domainResponse);
 
         // Executa
@@ -407,14 +406,14 @@ describe('MineracaoUseCase', () => {
           .mockReturnValueOnce(1) // Última pilha
           .mockReturnValueOnce(1); // Boss ativado
 
-        const domainResponse = ({
+        const domainResponse = {
           tipo: 'Pedra',
           questCompleta: true,
           deveAtivarRachadura: false,
           pilhasRestantes: 0,
           kravensColetados: 7,
           chanceCalculada: 0,
-        });
+        };
         mockDomain.executarMineracao.mockReturnValue(domainResponse);
 
         // Executa
@@ -435,14 +434,14 @@ describe('MineracaoUseCase', () => {
         // Setup normal - DTOs devem estar disponíveis
         mockCoreService.getGameVariable.mockReturnValueOnce(2).mockReturnValueOnce(8).mockReturnValueOnce(0);
 
-        const domainResponse = ({
+        const domainResponse = {
           tipo: 'Kraven',
           questCompleta: false,
           deveAtivarRachadura: false,
           pilhasRestantes: 7,
           kravensColetados: 3,
           chanceCalculada: 50,
-        });
+        };
         mockDomain.executarMineracao.mockReturnValue(domainResponse);
 
         // Executa (deve funcionar normalmente)
@@ -457,14 +456,14 @@ describe('MineracaoUseCase', () => {
         // Setup para 100% de chance
         mockCoreService.getGameVariable.mockReturnValueOnce(4).mockReturnValueOnce(1).mockReturnValueOnce(1);
 
-        const domainResponse = ({
+        const domainResponse = {
           tipo: 'Kraven',
           questCompleta: true,
           deveAtivarRachadura: false,
           pilhasRestantes: 0,
           kravensColetados: 5,
           chanceCalculada: 100,
-        });
+        };
         mockDomain.executarMineracao.mockReturnValue(domainResponse);
 
         // Executa
@@ -481,14 +480,14 @@ describe('MineracaoUseCase', () => {
       test('deve logar resultado da mineração', () => {
         mockCoreService.getGameVariable.mockReturnValueOnce(2).mockReturnValueOnce(8).mockReturnValueOnce(0);
 
-        const domainResponse = ({
+        const domainResponse = {
           tipo: 'Kraven',
           questCompleta: false,
           deveAtivarRachadura: false,
           pilhasRestantes: 7,
           kravensColetados: 3,
           chanceCalculada: 50,
-        });
+        };
         mockDomain.executarMineracao.mockReturnValue(domainResponse);
 
         // Executa
@@ -501,14 +500,14 @@ describe('MineracaoUseCase', () => {
       test('deve logar eventos críticos (rachadura, quest completa)', () => {
         mockCoreService.getGameVariable.mockReturnValueOnce(4).mockReturnValueOnce(3).mockReturnValueOnce(0);
 
-        const domainResponse = ({
+        const domainResponse = {
           tipo: 'Kraven',
           questCompleta: true,
           deveAtivarRachadura: false,
           pilhasRestantes: 2,
           kravensColetados: 5,
           chanceCalculada: 100,
-        });
+        };
         mockDomain.executarMineracao.mockReturnValue(domainResponse);
 
         // Executa
@@ -548,14 +547,14 @@ describe('MineracaoUseCase', () => {
       test('deve capturar e logar erros do processamento', () => {
         mockCoreService.getGameVariable.mockReturnValueOnce(2).mockReturnValueOnce(8).mockReturnValueOnce(0);
 
-        const domainResponse = ({
+        const domainResponse = {
           tipo: 'Kraven',
           questCompleta: false,
           deveAtivarRachadura: false,
           pilhasRestantes: 7,
           kravensColetados: 3,
           chanceCalculada: 50,
-        });
+        };
         mockDomain.executarMineracao.mockReturnValue(domainResponse);
 
         // Força erro no questService
@@ -677,14 +676,14 @@ describe('MineracaoUseCase', () => {
 
   describe('_processarResultado', () => {
     test('deve adicionar item correto (Kraven)', () => {
-      const resultado = ({
+      const resultado = {
         tipo: 'Kraven',
         questCompleta: false,
         deveAtivarRachadura: false,
         pilhasRestantes: 7,
         kravensColetados: 3,
         chanceCalculada: 50,
-      });
+      };
 
       useCase._processarResultado(resultado);
 
@@ -694,14 +693,14 @@ describe('MineracaoUseCase', () => {
     });
 
     test('deve adicionar item correto (Pedra)', () => {
-      const resultado = ({
+      const resultado = {
         tipo: 'Pedra',
         questCompleta: false,
         deveAtivarRachadura: false,
         pilhasRestantes: 7,
         kravensColetados: 2,
         chanceCalculada: 50,
-      });
+      };
 
       useCase._processarResultado(resultado);
 
@@ -711,14 +710,14 @@ describe('MineracaoUseCase', () => {
     });
 
     test('deve atualizar variáveis do jogo', () => {
-      const resultado = ({
+      const resultado = {
         tipo: 'Kraven',
         questCompleta: false,
         deveAtivarRachadura: false,
         pilhasRestantes: 5,
         kravensColetados: 4,
         chanceCalculada: 75,
-      });
+      };
 
       useCase._processarResultado(resultado);
 
@@ -727,14 +726,14 @@ describe('MineracaoUseCase', () => {
     });
 
     test('deve ativar rachadura quando necessário', () => {
-      const resultado = ({
+      const resultado = {
         tipo: 'Kraven',
         questCompleta: false,
         deveAtivarRachadura: true,
         pilhasRestantes: 5,
         kravensColetados: 4,
         chanceCalculada: 75,
-      });
+      };
 
       useCase._processarResultado(resultado);
 
@@ -743,14 +742,14 @@ describe('MineracaoUseCase', () => {
     });
 
     test('deve tratar erros durante processamento', () => {
-      const resultado = ({
+      const resultado = {
         tipo: 'Kraven',
         questCompleta: false,
         deveAtivarRachadura: false,
         pilhasRestantes: 7,
         kravensColetados: 3,
         chanceCalculada: 50,
-      });
+      };
 
       const error = new Error('Erro durante processamento');
       mockQuestService.addItemToInventory.mockImplementation(() => {
@@ -771,14 +770,14 @@ describe('MineracaoUseCase', () => {
 
   describe('_atualizarVariaveisJogo', () => {
     test('deve atualizar Kravens coletados', () => {
-      const resultado = ({
+      const resultado = {
         tipo: 'Kraven',
         questCompleta: false,
         deveAtivarRachadura: false,
         pilhasRestantes: 7,
         kravensColetados: 3,
         chanceCalculada: 50,
-      });
+      };
 
       useCase._atualizarVariaveisJogo(resultado);
 
@@ -786,14 +785,14 @@ describe('MineracaoUseCase', () => {
     });
 
     test('deve atualizar pilhas restantes', () => {
-      const resultado = ({
+      const resultado = {
         tipo: 'Pedra',
         questCompleta: false,
         deveAtivarRachadura: false,
         pilhasRestantes: 5,
         kravensColetados: 2,
         chanceCalculada: 40,
-      });
+      };
 
       useCase._atualizarVariaveisJogo(resultado);
 
@@ -810,14 +809,14 @@ describe('MineracaoUseCase', () => {
         totalPilhasDisponiveis: 10,
       });
 
-      const resultado = ({
+      const resultado = {
         tipo: 'Kraven',
         questCompleta: false,
         deveAtivarRachadura: false,
         pilhasRestantes: 7,
         kravensColetados: 3,
         chanceCalculada: 50,
-      });
+      };
 
       useCaseWithoutPilhas._atualizarVariaveisJogo(resultado);
 
@@ -827,14 +826,14 @@ describe('MineracaoUseCase', () => {
     });
 
     test('deve tratar erros durante atualização', () => {
-      const resultado = ({
+      const resultado = {
         tipo: 'Kraven',
         questCompleta: false,
         deveAtivarRachadura: false,
         pilhasRestantes: 7,
         kravensColetados: 3,
         chanceCalculada: 50,
-      });
+      };
 
       const error = new Error('Erro durante atualização');
       mockCoreService.setGameVariable.mockImplementation(() => {
@@ -933,14 +932,14 @@ describe('MineracaoUseCase', () => {
 
       mockCoreService.getGameVariable.mockReturnValue(0);
 
-      const domainResponse = ({
+      const domainResponse = {
         tipo: 'Pedra',
         questCompleta: false,
         deveAtivarRachadura: false,
         pilhasRestantes: 0,
         kravensColetados: 0,
         chanceCalculada: 0,
-      });
+      };
       mockDomain.executarMineracao.mockReturnValue(domainResponse);
 
       // Deve funcionar sem erros
@@ -960,14 +959,14 @@ describe('MineracaoUseCase', () => {
 
       mockCoreService.getGameVariable.mockReturnValue(2);
 
-      const domainResponse = ({
+      const domainResponse = {
         tipo: 'Kraven',
         questCompleta: false,
         deveAtivarRachadura: false,
         pilhasRestantes: 7,
         kravensColetados: 3,
         chanceCalculada: 50,
-      });
+      };
       mockDomain.executarMineracao.mockReturnValue(domainResponse);
 
       // Deve funcionar e não tentar acessar variáveis inválidas
@@ -981,14 +980,14 @@ describe('MineracaoUseCase', () => {
         .mockReturnValueOnce(2) // Pilhas restantes
         .mockReturnValueOnce(1); // Boss ativado
 
-      const domainResponse = ({
+      const domainResponse = {
         tipo: 'Pedra',
         questCompleta: true,
         deveAtivarRachadura: false,
         pilhasRestantes: 1,
         kravensColetados: 8,
         chanceCalculada: 0,
-      });
+      };
       mockDomain.executarMineracao.mockReturnValue(domainResponse);
 
       const resultado = useCase.executarMineracao(123);
@@ -1008,14 +1007,14 @@ describe('MineracaoUseCase', () => {
         .mockReturnValueOnce(5) // Pilhas restantes
         .mockReturnValueOnce(1); // Boss já ativado
 
-      const domainResponse = ({
+      const domainResponse = {
         tipo: 'Kraven',
         questCompleta: false,
         deveAtivarRachadura: true,
         pilhasRestantes: 4,
         kravensColetados: 4,
         chanceCalculada: 100,
-      });
+      };
       mockDomain.executarMineracao.mockReturnValue(domainResponse);
 
       const resultado = useCase.executarMineracao(123);
@@ -1046,14 +1045,14 @@ describe('MineracaoUseCase', () => {
           .mockReturnValueOnce(10 - index - 1) // Pilhas restantes
           .mockReturnValueOnce(step.kravens >= 4 ? 1 : 0); // Boss ativado após penúltimo
 
-        const domainResponse = ({
+        const domainResponse = {
           tipo: step.esperado,
           questCompleta: step.kravens + 1 >= 5,
           deveAtivarRachadura: step.deveAtivarRachadura,
           pilhasRestantes: 10 - index - 2,
           kravensColetados: step.kravens + 1,
           chanceCalculada: step.kravens >= 3 ? 100 : 50,
-        });
+        };
         mockDomain.executarMineracao.mockReturnValue(domainResponse);
 
         const resultado = useCase.executarMineracao(123 + index);
@@ -1073,14 +1072,14 @@ describe('MineracaoUseCase', () => {
         .mockReturnValueOnce(10) // Pilhas restantes
         .mockReturnValueOnce(0); // Boss não ativado
 
-      const response1 = ({
+      const response1 = {
         tipo: 'Kraven',
         questCompleta: false,
         deveAtivarRachadura: false,
         pilhasRestantes: 9,
         kravensColetados: 1,
         chanceCalculada: 55,
-      });
+      };
       mockDomain.executarMineracao.mockReturnValue(response1);
 
       const resultado1 = useCase.executarMineracao(1);
@@ -1095,14 +1094,14 @@ describe('MineracaoUseCase', () => {
         .mockReturnValueOnce(9) // Pilhas restantes (baseado no resultado anterior)
         .mockReturnValueOnce(0); // Boss ainda não ativado
 
-      const response2 = ({
+      const response2 = {
         tipo: 'Pedra',
         questCompleta: false,
         deveAtivarRachadura: false,
         pilhasRestantes: 8,
         kravensColetados: 1, // Não aumenta porque foi Pedra
         chanceCalculada: 50,
-      });
+      };
       mockDomain.executarMineracao.mockReturnValue(response2);
 
       const resultado2 = useCase.executarMineracao(2);
@@ -1125,14 +1124,14 @@ describe('MineracaoUseCase', () => {
         .mockReturnValueOnce(4) // Pilhas restantes
         .mockReturnValueOnce(0); // Boss não ativado
 
-      const domainResponse = ({
+      const domainResponse = {
         tipo: 'Kraven',
         questCompleta: false,
         deveAtivarRachadura: true, // Deve ativar rachadura
         pilhasRestantes: 3,
         kravensColetados: 4,
         chanceCalculada: 100,
-      });
+      };
       mockDomain.executarMineracao.mockReturnValue(domainResponse);
 
       // Executa
@@ -1172,14 +1171,14 @@ describe('MineracaoUseCase', () => {
         .mockReturnValueOnce(0) // Sem pilhas restantes
         .mockReturnValueOnce(0); // Boss não ativado
 
-      const domainResponse = ({
+      const domainResponse = {
         tipo: 'Pedra',
         questCompleta: false,
         deveAtivarRachadura: false,
         pilhasRestantes: -1, // Negativo indica esgotamento
         kravensColetados: 2,
         chanceCalculada: 0,
-      });
+      };
       mockDomain.executarMineracao.mockReturnValue(domainResponse);
 
       const resultado = useCase.executarMineracao(123);
@@ -1204,14 +1203,14 @@ describe('MineracaoUseCase', () => {
 
       mockCoreService.getGameVariable.mockReturnValueOnce(0).mockReturnValueOnce(1000).mockReturnValueOnce(0);
 
-      const domainResponse = ({
+      const domainResponse = {
         tipo: 'Kraven',
         questCompleta: false,
         deveAtivarRachadura: false,
         pilhasRestantes: 999,
         kravensColetados: 1,
         chanceCalculada: 1,
-      });
+      };
       mockDomain.executarMineracao.mockReturnValue(domainResponse);
 
       const resultado = extremeUseCase.executarMineracao(123);
@@ -1233,14 +1232,14 @@ describe('MineracaoUseCase', () => {
           .mockReturnValueOnce(10 - i) // Pilhas diminuindo
           .mockReturnValueOnce(i >= 4 ? 1 : 0); // Boss ativo no final
 
-        const domainResponse = ({
+        const domainResponse = {
           tipo: i < 4 ? 'Kraven' : 'Pedra', // Últimas são pedra
           questCompleta: i >= 4,
           deveAtivarRachadura: i === 3, // Ativa no penúltimo
           pilhasRestantes: 9 - i,
           kravensColetados: i < 4 ? i + 1 : 5,
           chanceCalculada: i >= 3 ? 100 : 50,
-        });
+        };
         mockDomain.executarMineracao.mockReturnValue(domainResponse);
 
         const resultado = useCase.executarMineracao(100 + i);

@@ -1,4 +1,4 @@
-const MinaKravensDomain = require('../js/domain/MinaKravensDomain');
+import MinaKravensDomain from '../js/domain/MinaKravensDomain';
 // DTO classes removed - using plain objects for tests
 
 describe('MinaKravensDomain', () => {

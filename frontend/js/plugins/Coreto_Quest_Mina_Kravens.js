@@ -164,31 +164,17 @@
   // Importa as classes de domínio e use case
   // -----------------------
 
-  // Função para carregar script dinamicamente
-  function loadScript(src) {
-    return new Promise((resolve, reject) => {
-      const script = document.createElement('script');
-      script.src = src;
-      script.onload = resolve;
-      script.onerror = reject;
-      document.head.appendChild(script);
-    });
-  }
-
-  // Carrega as classes necessárias - Domain e Application (DTOs não são mais carregados via script)
-  Promise.all([
-    window.MinaKravensDomain ? Promise.resolve() : loadScript('./js/domain/MinaKravensDomain.js'),
-    window.MineracaoUseCase ? Promise.resolve() : loadScript('./js/application/MineracaoUseCase.js'),
-  ])
-    .then(() => {
+  // Carrega as classes necessárias - Domain e Application usando imports dinâmicos
+  Promise.all([import('../domain/MinaKravensDomain.js').then(m => ({ MinaKravensDomain: m.default })), import('../application/MineracaoUseCase.js').then(m => ({ MineracaoUseCase: m.default }))])
+    .then(([{ MinaKravensDomain }, { MineracaoUseCase }]) => {
       // Inicializa o controller após carregar as dependências
-      initializeController();
+      initializeController(MinaKravensDomain, MineracaoUseCase);
     })
     .catch(error => {
       Logger.error('Erro ao carregar dependências:', error);
     });
 
-  function initializeController() {
+  function initializeController(MinaKravensDomain, MineracaoUseCase) {
     // -----------------------
     // Interface/Controller Layer
     // -----------------------
@@ -197,7 +183,7 @@
         super('Mina de Kravens', Logger);
 
         // Instanciação do domínio (apenas regra de negócio)
-        this.domain = new window.MinaKravensDomain(TOTAL_KRAVENS_PARA_MISSAO, TOTAL_KRAVENS_NA_MINA);
+        this.domain = new MinaKravensDomain(TOTAL_KRAVENS_PARA_MISSAO, TOTAL_KRAVENS_NA_MINA);
 
         // Configuração para o Use Case
         const useCaseConfig = {
@@ -210,7 +196,7 @@
         };
 
         // Instanciação do Use Case com todas as dependências
-        this.useCase = new window.MineracaoUseCase(this.domain, window.CoretoCore, window.coreto, Logger, useCaseConfig);
+        this.useCase = new MineracaoUseCase(this.domain, window.CoretoCore, window.coreto, Logger, useCaseConfig);
       }
 
       /**

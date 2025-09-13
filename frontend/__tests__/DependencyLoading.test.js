@@ -3,10 +3,11 @@
 // DependencyLoading.test.js
 //=============================================================================
 
+import MinaKravensDomain from '../js/domain/MinaKravensDomain';
+import MineracaoUseCase from '../js/application/MineracaoUseCase';
+
 describe('Dependency Loading Tests', () => {
   test('Domain should work with plain objects (no DTO classes)', () => {
-    const MinaKravensDomain = require('../js/domain/MinaKravensDomain');
-
     const domain = new MinaKravensDomain(5, 10);
     const request = {
       kravensJaColetados: 0,
@@ -25,8 +26,6 @@ describe('Dependency Loading Tests', () => {
   });
 
   test('Domain classes should work with plain request objects', () => {
-    const MinaKravensDomain = require('../js/domain/MinaKravensDomain');
-
     const domain = new MinaKravensDomain(5, 10);
     const request = {
       kravensJaColetados: 0,
@@ -40,9 +39,6 @@ describe('Dependency Loading Tests', () => {
   });
 
   test('Use Case should work with domain and DTOs', () => {
-    const MinaKravensDomain = require('../js/domain/MinaKravensDomain');
-    const MineracaoUseCase = require('../js/application/MineracaoUseCase');
-
     const domain = new MinaKravensDomain(5, 10);
     const mockServices = {
       coreService: {
@@ -69,7 +65,6 @@ describe('Dependency Loading Tests', () => {
   });
 
   test('Should validate request object (domain validation)', () => {
-    const MinaKravensDomain = require('../js/domain/MinaKravensDomain');
     const domain = new MinaKravensDomain(5, 10);
 
     // Tenta passar um objeto simples ao invés de DTO
@@ -83,8 +78,6 @@ describe('Dependency Loading Tests', () => {
   });
 
   test('Should work with plain objects (no DTO classes needed)', () => {
-    const MinaKravensDomain = require('../js/domain/MinaKravensDomain');
-
     const domain = new MinaKravensDomain(5, 10);
     const request = {
       kravensJaColetados: 0,
