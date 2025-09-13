@@ -15,6 +15,13 @@ My first RPG made using RPG Maker a a
 - DTOs (Contratos): `frontend/js/dto/<CasoDeUso>{Request,Response}DTO.js`
   - Validação de dados, utilitários de serialização e fábricas estáticas.
 
+## TypeScript — DTOs Globais
+
+- Declarações de tipos compartilhados ficam em `frontend/js/dto/*.d.ts`.
+- Use `interface`/`type` no escopo global (sem `export`/`import`).
+- Não adicione `export {}` em `.d.ts` (evita virar módulo).
+- Exemplos: `MineracaoRequest`, `MineracaoResponse`, `TipoMineracao`.
+
 - Testes:
   - Domain/Use Case: `frontend/__tests__/*.test.js`
   - Plugin (ambiente MZ): `frontend/__tests__/plugins/*.test.js`

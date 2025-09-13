@@ -95,7 +95,7 @@
                         deveAtivarRachadura: resultado.deveAtivarRachadura,
                         pilhasRestantes: resultado.pilhasRestantes,
                         kravensColetados: resultado.kravensColetados,
-                        chanceCalculada: resultado.chanceCalculada
+                        chanceCalculada: resultado.chanceCalculada,
                     },
                 });
                 throw error;
@@ -118,7 +118,7 @@
                         deveAtivarRachadura: resultado.deveAtivarRachadura,
                         pilhasRestantes: resultado.pilhasRestantes,
                         kravensColetados: resultado.kravensColetados,
-                        chanceCalculada: resultado.chanceCalculada
+                        chanceCalculada: resultado.chanceCalculada,
                     },
                 });
                 throw error;
@@ -155,9 +155,7 @@
         }
     }
     // Compat Node/Browser (mantém padrão atual)
-    // @ts-ignore - module may be undefined in browser
     if (typeof module !== 'undefined' && module.exports) {
-        // @ts-ignore
         module.exports = MineracaoUseCase;
     }
     else {
