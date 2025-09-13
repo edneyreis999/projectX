@@ -29,6 +29,7 @@
 - Evitar `export`/`export default` em arquivos carregados via `<script>`; emitir CommonJS no browser causa erro.
 - Manter ordem de carregamento no plugin: DTOs → Domain → UseCase.
 - `instanceof` entre ambientes pode falhar se referências divergirem; manter `require` em Node ajuda.
+- Se o watch/compilação parar de emitir `.js`, apagar `tsconfig.domain-dto.tsbuildinfo` (ou executar `tsc -p tsconfig.domain-dto.json --force`) destrava o rebuild incremental.
 
 ## Correção NW.js — Tasks Executadas
 

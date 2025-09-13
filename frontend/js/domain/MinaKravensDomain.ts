@@ -9,8 +9,9 @@ let MineracaoRequestDTORef: any;
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 let MineracaoResponseDTORef: any;
 
-// Acessa de forma segura os ambientes Node/Browser via globalThis
-if ((globalThis as any) && (globalThis as any).module && (globalThis as any).module.exports) {
+// Acessa de forma segura os ambientes Node/Browser via checagem de module
+// @ts-ignore - module pode não existir no browser
+if (typeof module !== 'undefined' && module.exports) {
   // Node.js (testes)
   // eslint-disable-next-line @typescript-eslint/no-var-requires
   MineracaoRequestDTORef = require('../dto/MineracaoRequestDTO');

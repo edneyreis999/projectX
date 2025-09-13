@@ -114,9 +114,10 @@ class MineracaoResponseDTO {
 
 // Compat Node/Browser (mantém padrão atual)
 // @ts-ignore - module may be undefined in browser
-if ((globalThis as any) && (globalThis as any).module && (globalThis as any).module.exports) {
-  (globalThis as any).module.exports = MineracaoResponseDTO;
-} else if ((globalThis as any)) {
+if (typeof module !== 'undefined' && (module as any).exports) {
+  // @ts-ignore
+  module.exports = MineracaoResponseDTO;
+} else {
   (globalThis as any).MineracaoResponseDTO = MineracaoResponseDTO;
 }
 
