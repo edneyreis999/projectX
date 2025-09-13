@@ -4,6 +4,7 @@
 
 - Plano de Migração: `frontend/plano-migracao-typescript/PLANO_MIGRACAO_TS.md`
 - Correção de Exports no NW.js: `frontend/plano-migracao-typescript/PLANO_CORRECAO_EXPORTS_NW.md`
+- Correção de Testes (Jest): `frontend/plano-migracao-typescript/PLANO_CORRECAO_TESTES.md`
 
 ## Resumo do que já foi feito
 
@@ -22,6 +23,8 @@
 - [x] Emitir `.js` e `.d.ts` no mesmo diretório, sem alterar `plugins.js`/`index.html`.
 - [x] Ajustar `.gitignore` para ignorar `.d.ts` e `*.tsbuildinfo` relevantes.
 - [x] Rodar `npm test` e validar comportamento/coverage local.
+- [x] Ajustar `jest.config.ts` para `coverageDirectory: "./coverage"` (geração local de cobertura).
+- [x] Confirmar que `npm run debug` não apresenta mais `ReferenceError: exports is not defined`.
 
 ### Lições aprendidas — Migração
 
@@ -30,6 +33,10 @@
 - Manter ordem de carregamento no plugin: DTOs → Domain → UseCase.
 - `instanceof` entre ambientes pode falhar se referências divergirem; manter `require` em Node ajuda.
 - Se o watch/compilação parar de emitir `.js`, apagar `tsconfig.domain-dto.tsbuildinfo` (ou executar `tsc -p tsconfig.domain-dto.json --force`) destrava o rebuild incremental.
+
+Status atual da migração:
+- Domain/DTO em TypeScript gerando `.js` side-by-side.
+- Testes passando 100% (148/148) e cobertura gerada em `./coverage`.
 
 ## Correção NW.js — Tasks Executadas
 
@@ -43,12 +50,19 @@
 - `globalThis` funciona em Node e Browser, reduzindo condicionais e declarações extras.
 - Avisos de `app.nw` em modo unpacked são esperados e inofensivos.
 
+Status atual no NW.js:
+- `npm run debug` funcionando; DTO/Domain carregados via `<script>` sem erros de módulo.
+
 ## Como rodar em desenvolvimento (estado atual)
 
 - Build TS único: `npm run build:types` (gera `.js` em `frontend/js/{dto,domain}`).
 - Watch TS: `npm run watch:types` (manter em um terminal durante o dev).
 - Debug do jogo: `npm run debug` (ou `npm run debug:ts` para garantir build antes).
 - Testes: `npm test` (transforma `.ts` com `@swc/jest`).
+
+Recomendações:
+- Use `npm run debug:ts` para garantir build TS antes de abrir o jogo.
+- Mantenha `npm run watch:types` ativo durante a sessão de desenvolvimento.
 
 Observações:
 
