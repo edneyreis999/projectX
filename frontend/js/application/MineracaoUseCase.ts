@@ -6,8 +6,6 @@
 (function () {
   'use strict';
 
-  // Nota: Use Case não depende mais de classes DTO; constrói objetos literais tipados
-
   class MineracaoUseCase {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   private domain: any;
@@ -108,8 +106,7 @@
     return 0;
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  private _processarResultado(resultado: any) {
+  private _processarResultado(resultado: MineracaoResponse) {
     try {
       const itemId = resultado.tipo === 'Kraven' ? this.idItemKraven : this.idItemPedra;
       this._adicionarItem(itemId);
@@ -137,8 +134,7 @@
     }
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  private _atualizarVariaveisJogo(resultado: any) {
+  private _atualizarVariaveisJogo(resultado: MineracaoResponse) {
     try {
       this.coreService.setGameVariable(this.idVarKravensColetados, resultado.kravensColetados);
 

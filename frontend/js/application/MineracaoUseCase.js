@@ -5,7 +5,6 @@
 //=============================================================================
 (function () {
     'use strict';
-    // Nota: Use Case não depende mais de classes DTO; constrói objetos literais tipados
     class MineracaoUseCase {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         constructor(domain, coreService, questService, logger, config) {
@@ -76,7 +75,6 @@
             }
             return 0;
         }
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         _processarResultado(resultado) {
             try {
                 const itemId = resultado.tipo === 'Kraven' ? this.idItemKraven : this.idItemPedra;
@@ -103,7 +101,6 @@
                 throw error;
             }
         }
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         _atualizarVariaveisJogo(resultado) {
             try {
                 this.coreService.setGameVariable(this.idVarKravensColetados, resultado.kravensColetados);

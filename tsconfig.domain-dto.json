@@ -16,8 +16,7 @@
   },
   "include": [
     "frontend/js/domain/**/*.ts",
-    "frontend/js/dto/**/*.ts",
-    "frontend/js/dto/types.d.ts"
+    "frontend/js/dto/**/*.ts"
   ],
   "exclude": [
     "node_modules",

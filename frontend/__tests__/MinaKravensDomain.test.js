@@ -1,6 +1,5 @@
 const MinaKravensDomain = require('../js/domain/MinaKravensDomain');
-const MineracaoRequestDTO = require('../js/dto/MineracaoRequestDTO');
-const MineracaoResponseDTO = require('../js/dto/MineracaoResponseDTO');
+// DTO classes removed - using plain objects for tests
 
 describe('MinaKravensDomain', () => {
   let domain;
@@ -101,7 +100,7 @@ describe('MinaKravensDomain', () => {
     });
 
     test('deve sempre retornar pedra quando quest está completa', () => {
-      const request = new MineracaoRequestDTO({
+      const request = ({
         kravensJaColetados: 5,
         pilhasJaMineradas: 3,
         rachaduraJaAtivada: false,
@@ -118,7 +117,7 @@ describe('MinaKravensDomain', () => {
     test('deve retornar Kraven quando _gerarNumeroAleatorio favorece', () => {
       jest.spyOn(domain, '_gerarNumeroAleatorio').mockReturnValue(0.1); // 10% - deve dar Kraven se chance > 10%
 
-      const request = new MineracaoRequestDTO({
+      const request = ({
         kravensJaColetados: 2,
         pilhasJaMineradas: 3,
         rachaduraJaAtivada: false,
@@ -137,7 +136,7 @@ describe('MinaKravensDomain', () => {
     test('deve retornar Pedra quando _gerarNumeroAleatorio não favorece', () => {
       jest.spyOn(domain, '_gerarNumeroAleatorio').mockReturnValue(0.9); // 90% - deve dar Pedra se chance < 90%
 
-      const request = new MineracaoRequestDTO({
+      const request = ({
         kravensJaColetados: 2,
         pilhasJaMineradas: 3,
         rachaduraJaAtivada: false,
@@ -156,7 +155,7 @@ describe('MinaKravensDomain', () => {
     test('deve ativar rachadura quando falta apenas 1 Kraven', () => {
       jest.spyOn(domain, '_gerarNumeroAleatorio').mockReturnValue(0.1); // Força obtenção de Kraven
 
-      const request = new MineracaoRequestDTO({
+      const request = ({
         kravensJaColetados: 3,
         pilhasJaMineradas: 2,
         rachaduraJaAtivada: false,
@@ -173,7 +172,7 @@ describe('MinaKravensDomain', () => {
     test('deve completar quest ao coletar o último Kraven', () => {
       jest.spyOn(domain, '_gerarNumeroAleatorio').mockReturnValue(0.1); // Força obtenção de Kraven
 
-      const request = new MineracaoRequestDTO({
+      const request = ({
         kravensJaColetados: 4,
         pilhasJaMineradas: 2,
         rachaduraJaAtivada: false,
@@ -191,7 +190,7 @@ describe('MinaKravensDomain', () => {
       // Cenário: 2 Kravens restantes, 2 pilhas restantes após mineração = 100%
       // Domain: 5 Kravens, 10 pilhas. 3 coletados = 2 restantes. 7 mineradas = 3 antes, 2 após
       // Chance = 100% porque 2 pilhas restantes <= 2 Kravens restantes
-      const request = new MineracaoRequestDTO({
+      const request = ({
         kravensJaColetados: 3,
         pilhasJaMineradas: 7,
         rachaduraJaAtivada: false,
@@ -204,7 +203,7 @@ describe('MinaKravensDomain', () => {
     });
 
     test('deve calcular pilhas restantes corretamente', () => {
-      const request = new MineracaoRequestDTO({
+      const request = ({
         kravensJaColetados: 1,
         pilhasJaMineradas: 4,
         rachaduraJaAtivada: false,
@@ -219,7 +218,7 @@ describe('MinaKravensDomain', () => {
   describe('cenários de borda', () => {
     test('deve funcionar com valores mínimos', () => {
       const domain = new MinaKravensDomain(1, 1);
-      const request = new MineracaoRequestDTO({
+      const request = ({
         kravensJaColetados: 0,
         pilhasJaMineradas: 0,
         rachaduraJaAtivada: false,
@@ -232,7 +231,7 @@ describe('MinaKravensDomain', () => {
     });
 
     test('deve funcionar quando já coletou mais Kravens que necessário', () => {
-      const request = new MineracaoRequestDTO({
+      const request = ({
         kravensJaColetados: 10,
         pilhasJaMineradas: 3,
         rachaduraJaAtivada: false,
@@ -246,7 +245,7 @@ describe('MinaKravensDomain', () => {
     });
 
     test('deve funcionar quando não há pilhas restantes', () => {
-      const request = new MineracaoRequestDTO({
+      const request = ({
         kravensJaColetados: 2,
         pilhasJaMineradas: 10,
         rachaduraJaAtivada: false,
@@ -269,7 +268,7 @@ describe('MinaKravensDomain', () => {
 
       // Simula mineração até completar a quest
       while (kravensColetados < 3 && pilhasJaMineradas < 5) {
-        const request = new MineracaoRequestDTO({
+        const request = ({
           kravensJaColetados: kravensColetados,
           pilhasJaMineradas: pilhasJaMineradas,
           rachaduraJaAtivada: false,
@@ -299,7 +298,7 @@ describe('MinaKravensDomain', () => {
       jest.spyOn(testDomain, '_gerarNumeroAleatorio').mockReturnValue(0.9); // Nunca favorece Kraven exceto em 100%
 
       // Primeira mineração - deve dar pedra (2 Kravens restantes / 4 pilhas restantes = 50%)
-      const request1 = new MineracaoRequestDTO({
+      const request1 = ({
         kravensJaColetados: 0,
         pilhasJaMineradas: 0,
         rachaduraJaAtivada: false,
@@ -309,7 +308,7 @@ describe('MinaKravensDomain', () => {
       expect(resultado1.kravensColetados).toBe(0);
 
       // Segunda mineração - deve dar pedra (2 Kravens restantes / 3 pilhas restantes = 66.67%)
-      const request2 = new MineracaoRequestDTO({
+      const request2 = ({
         kravensJaColetados: 0,
         pilhasJaMineradas: 1,
         rachaduraJaAtivada: false,
@@ -319,7 +318,7 @@ describe('MinaKravensDomain', () => {
       expect(resultado2.kravensColetados).toBe(0);
 
       // Terceira mineração - deve dar Kraven (2 Kravens restantes / 2 pilhas restantes = 100%)
-      const request3 = new MineracaoRequestDTO({
+      const request3 = ({
         kravensJaColetados: 0,
         pilhasJaMineradas: 2,
         rachaduraJaAtivada: false,
@@ -351,7 +350,7 @@ describe('MinaKravensDomain', () => {
 
   describe('testes de propriedades de saída', () => {
     test('deve retornar todas as propriedades esperadas na mineração', () => {
-      const request = new MineracaoRequestDTO({
+      const request = ({
         kravensJaColetados: 2,
         pilhasJaMineradas: 3,
         rachaduraJaAtivada: false,
@@ -379,7 +378,7 @@ describe('MinaKravensDomain', () => {
     });
 
     test('deve retornar propriedades corretas quando quest completa', () => {
-      const request = new MineracaoRequestDTO({
+      const request = ({
         kravensJaColetados: 5,
         pilhasJaMineradas: 2,
         rachaduraJaAtivada: false,
@@ -408,7 +407,7 @@ describe('MinaKravensDomain', () => {
 
     test('deve manter consistência: pilhasJaMineradas + pilhasRestantes = totalPilhasDisponiveis', () => {
       for (let pilhasJaMineradas = 0; pilhasJaMineradas <= 10; pilhasJaMineradas++) {
-        const request = new MineracaoRequestDTO({
+        const request = ({
           kravensJaColetados: 0,
           pilhasJaMineradas: pilhasJaMineradas,
           rachaduraJaAtivada: false,
@@ -423,7 +422,7 @@ describe('MinaKravensDomain', () => {
   describe('testes de diferentes configurações de domínio', () => {
     test('deve funcionar com configuração pequena (1 Kraven, 1 Pilha)', () => {
       const domain = new MinaKravensDomain(1, 1);
-      const request = new MineracaoRequestDTO({
+      const request = ({
         kravensJaColetados: 0,
         pilhasJaMineradas: 0,
         rachaduraJaAtivada: false,
@@ -436,7 +435,7 @@ describe('MinaKravensDomain', () => {
 
     test('deve funcionar com configuração grande (10 Kravens, 20 Pilhas)', () => {
       const domain = new MinaKravensDomain(10, 20);
-      const request = new MineracaoRequestDTO({
+      const request = ({
         kravensJaColetados: 3,
         pilhasJaMineradas: 5,
         rachaduraJaAtivada: false,
@@ -466,7 +465,7 @@ describe('MinaKravensDomain', () => {
       jest.restoreAllMocks(); // Remove qualquer mock anterior
 
       for (let i = 0; i < totalTestes; i++) {
-        const request = new MineracaoRequestDTO({
+        const request = ({
           kravensJaColetados: kravensJaColetados,
           pilhasJaMineradas: pilhasJaMineradas,
           rachaduraJaAtivada: false,
@@ -499,7 +498,7 @@ describe('MinaKravensDomain', () => {
       jest.spyOn(testDomain, '_gerarNumeroAleatorio').mockReturnValue(0.1); // Força obtenção de Kraven
 
       // Simula até ativar rachadura (2 Kravens coletados = falta 1)
-      const request = new MineracaoRequestDTO({
+      const request = ({
         kravensJaColetados: 2,
         pilhasJaMineradas: 2,
         rachaduraJaAtivada: false,
@@ -517,7 +516,7 @@ describe('MinaKravensDomain', () => {
       jest.spyOn(testDomain, '_gerarNumeroAleatorio').mockReturnValue(0.9); // Força obtenção de Pedra
 
       // Simula situação onde já havia rachadura ativada (2 Kravens coletados = falta 1)
-      const request = new MineracaoRequestDTO({
+      const request = ({
         kravensJaColetados: 2,
         pilhasJaMineradas: 3,
         rachaduraJaAtivada: false,
@@ -538,7 +537,7 @@ describe('MinaKravensDomain', () => {
       jest.restoreAllMocks();
 
       // Simula até a penúltima pilha com rachadura ativada (1 Kraven coletado = falta 1)
-      const request = new MineracaoRequestDTO({
+      const request = ({
         kravensJaColetados: 1,
         pilhasJaMineradas: 2,
         rachaduraJaAtivada: false,
@@ -556,7 +555,7 @@ describe('MinaKravensDomain', () => {
 
   describe('interface com DTOs', () => {
     test('deve aceitar MineracaoRequestDTO e retornar resposta válida', () => {
-      const request = new MineracaoRequestDTO({
+      const request = ({
         kravensJaColetados: 2,
         pilhasJaMineradas: 3,
         rachaduraJaAtivada: false,
@@ -595,7 +594,7 @@ describe('MinaKravensDomain', () => {
     });
 
     test('deve criar response DTO com métodos de conveniência', () => {
-      const request = new MineracaoRequestDTO({
+      const request = ({
         kravensJaColetados: 4,
         pilhasJaMineradas: 2,
         rachaduraJaAtivada: false,
@@ -616,7 +615,7 @@ describe('MinaKravensDomain', () => {
     });
 
     test('deve criar response apropriada para quest completa', () => {
-      const request = new MineracaoRequestDTO({
+      const request = ({
         kravensJaColetados: 5, // Quest já completa
         pilhasJaMineradas: 3,
         rachaduraJaAtivada: false,
@@ -631,7 +630,7 @@ describe('MinaKravensDomain', () => {
     });
 
     test('deve funcionar com rachadura já ativada', () => {
-      const request = new MineracaoRequestDTO({
+      const request = ({
         kravensJaColetados: 3,
         pilhasJaMineradas: 2,
         rachaduraJaAtivada: true, // Rachadura ativada = 100% chance
@@ -645,10 +644,10 @@ describe('MinaKravensDomain', () => {
     });
   });
 
-  describe('DTOs - validação de entrada e saída', () => {
-    test('MineracaoRequestDTO deve validar dados de entrada', () => {
+  describe('Domain validation', () => {
+    test('Domain should validate invalid request data', () => {
       expect(() => {
-        new MineracaoRequestDTO({
+        domain.executarMineracao({
           kravensJaColetados: -1,
           pilhasJaMineradas: 3,
           rachaduraJaAtivada: false,
@@ -656,7 +655,7 @@ describe('MinaKravensDomain', () => {
       }).toThrow('kravensJaColetados deve ser um número não negativo');
 
       expect(() => {
-        new MineracaoRequestDTO({
+        domain.executarMineracao({
           kravensJaColetados: 2,
           pilhasJaMineradas: -1,
           rachaduraJaAtivada: false,
@@ -664,7 +663,7 @@ describe('MinaKravensDomain', () => {
       }).toThrow('pilhasJaMineradas deve ser um número não negativo');
 
       expect(() => {
-        new MineracaoRequestDTO({
+        domain.executarMineracao({
           kravensJaColetados: 2,
           pilhasJaMineradas: 3,
           rachaduraJaAtivada: 'invalid',
@@ -672,60 +671,17 @@ describe('MinaKravensDomain', () => {
       }).toThrow('rachaduraJaAtivada deve ser um boolean');
     });
 
-    test('MineracaoResponseDTO deve validar dados de saída', () => {
-      expect(() => {
-        new MineracaoResponseDTO({
-          tipo: 'Invalid',
-          questCompleta: true,
-          deveAtivarRachadura: false,
-          pilhasRestantes: 5,
-          kravensColetados: 2,
-          chanceCalculada: 50,
-        });
-      }).toThrow('tipo deve ser "Kraven" ou "Pedra"');
-
-      expect(() => {
-        new MineracaoResponseDTO({
-          tipo: 'Kraven',
-          questCompleta: 'invalid',
-          deveAtivarRachadura: false,
-          pilhasRestantes: 5,
-          kravensColetados: 2,
-          chanceCalculada: 50,
-        });
-      }).toThrow('questCompleta deve ser um boolean');
-
-      expect(() => {
-        new MineracaoResponseDTO({
-          tipo: 'Kraven',
-          questCompleta: true,
-          deveAtivarRachadura: false,
-          pilhasRestantes: 5,
-          kravensColetados: -1,
-          chanceCalculada: 50,
-        });
-      }).toThrow('kravensColetados deve ser um número não negativo');
-
-      expect(() => {
-        new MineracaoResponseDTO({
-          tipo: 'Kraven',
-          questCompleta: true,
-          deveAtivarRachadura: false,
-          pilhasRestantes: 5,
-          kravensColetados: 2,
-          chanceCalculada: 150,
-        });
-      }).toThrow('chanceCalculada deve ser um número entre 0 e 100');
-    });
-
-    test('DTOs devem ter métodos utilitários funcionais', () => {
-      const request = new MineracaoRequestDTO({
+    test('Domain should work with plain objects', () => {
+      const request = {
         kravensJaColetados: 2,
         pilhasJaMineradas: 3,
         rachaduraJaAtivada: false,
-      });
+      };
 
-      expect(request.isValid()).toBe(true);
+      // Plain objects work fine with domain
+      const result = domain.executarMineracao(request);
+      expect(result.tipo).toBeDefined();
+      expect(result.kravensColetados).toBeGreaterThanOrEqual(2);
 
       // Verifica estrutura da request
       expect(request.kravensJaColetados).toBe(2);
