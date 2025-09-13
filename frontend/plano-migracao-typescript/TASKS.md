@@ -77,6 +77,38 @@ Status atual no NW.js:
 
 Status atual: **COMPLETO** ✅
 
+### Tasks Executadas - Correção de Erro "Unexpected token 'export'" (13/Set/2025)
+
+- [x] **Diagnóstico**: Identificado que arquivos DTO compilados continham `export {};` causando erro no NW.js
+- [x] **Correção nos arquivos compilados**: Removido `export {};` dos arquivos `.js` gerados em `frontend/js/dto/`
+- [x] **Correção nos arquivos source**:
+  - Removidos `export interface` e `export type` dos arquivos `.ts` e `.d.ts` dos DTOs
+  - Removidos `import type` dos arquivos Domain e Application
+  - DTOs transformados em tipos/interfaces globais (ambient declarations)
+- [x] **Ajuste de configurações TypeScript**:
+  - `tsconfig.domain-dto.json`: Incluído `frontend/js/dto/**/*.ts` no `include`
+  - `tsconfig.application.json`: Incluído `frontend/js/dto/**/*.d.ts` para referência de tipos
+- [x] **Rebuild completo**: Limpeza de cache e recompilação bem-sucedida
+- [x] **Validação final**:
+  - ✅ `npm test`: 147 testes passando (5 suites, 88.54% coverage)
+  - ✅ `npm run debug:ts`: Executa sem erro de export, NW.js inicia corretamente
+
+### Lições aprendidas — Erro "export" no NW.js
+
+**Causa raiz**: TypeScript emite `export {};` quando detecta qualquer sintaxe de módulo (`export`/`import`) nos arquivos, forçando-os a serem tratados como módulos CommonJS/ESM. No ambiente NW.js, scripts são carregados via `<script>` tags sem bundler, causando `SyntaxError: Unexpected token 'export'`.
+
+**Solução definitiva**:
+1. **DTOs como tipos globais**: Usar apenas `interface` e `type` sem `export`, transformando-os em ambient declarations
+2. **Remover imports**: Domain e Application não devem usar `import type`, dependem dos tipos globais
+3. **Configuração TypeScript**: Manter `moduleDetection: legacy` e incluir DTOs apenas como referência `.d.ts`
+4. **Padrão para futuro**: Nunca usar `export`/`import` em arquivos que serão carregados via `<script>` no NW.js
+
+**Prevenção**:
+- Verificar após cada build: `rg -n "export" frontend/js/dto/*.js frontend/js/domain/*.js frontend/js/application/*.js`
+- Resultado esperado: apenas `module.exports` condicionais para compatibilidade Node
+
+Status: **RESOLVIDO DEFINITIVAMENTE** ✅
+
 ## Como rodar em desenvolvimento (estado atual)
 
 - Build TS único: `npm run build:types` (gera `.js` em `frontend/js/{dto,domain}`).
