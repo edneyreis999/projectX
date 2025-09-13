@@ -56,6 +56,13 @@ Status atual no NW.js:
 
 - `npm run debug` funcionando; DTO/Domain carregados via `<script>` sem erros de módulo.
 
+### Lições aprendidas — Application
+
+- Evite `let/const` no topo para referências a DTOs em arquivos carregados via `<script>` (NW.js cria bindings globais não re‑declaráveis).
+- Encapsule o módulo em uma IIFE e resolva dependências (DTOs) por função local com cache em closure; exponha apenas a classe no final (`module.exports`/`globalThis`).
+- Em testes (Node), use `require` no resolvedor; em Browser, leia de `globalThis`.
+- Padrão reaproveitável: `resolveUseCaseDTOs()`/`resolveDomainDTOs()` em vez de variáveis globais `*Ref`.
+
 Pendência atual (Application):
 
 - Resolver `SyntaxError: Identifier 'MineracaoRequestDTORef' has already been declared` conforme plano de correção de identificadores da Application.
