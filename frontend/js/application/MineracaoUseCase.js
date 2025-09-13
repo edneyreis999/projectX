@@ -42,7 +42,7 @@
                     });
                 }
                 this.logger.info(`Jogador minerou e obteve: ${resultado.tipo}`);
-                if (resultado.shouldActivateCrack() || resultado.isQuestComplete()) {
+                if (resultado.deveAtivarRachadura || resultado.questCompleta) {
                     this.logger.warn('Resultado crítico da mineração:', {
                         tipo: resultado.tipo,
                         deveAtivarRachadura: resultado.deveAtivarRachadura,
@@ -79,10 +79,10 @@
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         _processarResultado(resultado) {
             try {
-                const itemId = resultado.isKraven() ? this.idItemKraven : this.idItemPedra;
+                const itemId = resultado.tipo === 'Kraven' ? this.idItemKraven : this.idItemPedra;
                 this._adicionarItem(itemId);
                 this._atualizarVariaveisJogo(resultado);
-                if (resultado.shouldActivateCrack()) {
+                if (resultado.deveAtivarRachadura) {
                     this.logger.warn('Rachadura ativada! Boss liberado.');
                     this._ativarRachadura();
                 }
@@ -91,7 +91,14 @@
                 this.logger.error('Erro durante _processarResultado:', {
                     error: error.message,
                     stack: error.stack,
-                    resultado: resultado.toPlainObject(),
+                    resultado: {
+                        tipo: resultado.tipo,
+                        questCompleta: resultado.questCompleta,
+                        deveAtivarRachadura: resultado.deveAtivarRachadura,
+                        pilhasRestantes: resultado.pilhasRestantes,
+                        kravensColetados: resultado.kravensColetados,
+                        chanceCalculada: resultado.chanceCalculada
+                    },
                 });
                 throw error;
             }
@@ -99,17 +106,23 @@
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         _atualizarVariaveisJogo(resultado) {
             try {
-                const stats = resultado.getStats();
-                this.coreService.setGameVariable(this.idVarKravensColetados, stats.kravensColetados);
+                this.coreService.setGameVariable(this.idVarKravensColetados, resultado.kravensColetados);
                 if (this.idVarPilhasRestantes > 0) {
-                    this.coreService.setGameVariable(this.idVarPilhasRestantes, stats.pilhasRestantes);
+                    this.coreService.setGameVariable(this.idVarPilhasRestantes, resultado.pilhasRestantes);
                 }
             }
             catch (error) {
                 this.logger.error('Erro durante _atualizarVariaveisJogo:', {
                     error: error.message,
                     stack: error.stack,
-                    resultado: resultado.toPlainObject(),
+                    resultado: {
+                        tipo: resultado.tipo,
+                        questCompleta: resultado.questCompleta,
+                        deveAtivarRachadura: resultado.deveAtivarRachadura,
+                        pilhasRestantes: resultado.pilhasRestantes,
+                        kravensColetados: resultado.kravensColetados,
+                        chanceCalculada: resultado.chanceCalculada
+                    },
                 });
                 throw error;
             }

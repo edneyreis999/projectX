@@ -66,7 +66,6 @@ class MinaKravensDomain {
         kravensColetados: kravensJaColetados,
         chanceCalculada: 0,
       };
-      attachResponseHelpers(response);
       assertValidResponse(response);
       return response;
     }
@@ -102,7 +101,6 @@ class MinaKravensDomain {
     const response: MineracaoResponse = obteuKraven
       ? { tipo: 'Kraven', ...responseData }
       : { tipo: 'Pedra', ...responseData };
-    attachResponseHelpers(response);
     assertValidResponse(response);
     return response;
   }
@@ -128,23 +126,7 @@ class MinaKravensDomain {
   protected _gerarNumeroAleatorio() { return Math.random(); }
 }
 
-function attachResponseHelpers(res: MineracaoResponse) {
-  res.isKraven = function () { return this.tipo === 'Kraven'; };
-  res.isPedra = function () { return this.tipo === 'Pedra'; };
-  res.isQuestComplete = function () { return this.questCompleta; };
-  res.shouldActivateCrack = function () { return this.deveAtivarRachadura; };
-  res.getStats = function () { return { kravensColetados: this.kravensColetados, pilhasRestantes: this.pilhasRestantes, chanceCalculada: this.chanceCalculada }; };
-  res.toPlainObject = function () {
-    return {
-      tipo: this.tipo,
-      questCompleta: this.questCompleta,
-      deveAtivarRachadura: this.deveAtivarRachadura,
-      pilhasRestantes: this.pilhasRestantes,
-      kravensColetados: this.kravensColetados,
-      chanceCalculada: this.chanceCalculada,
-    };
-  };
-}
+// Helpers removidos - informações acessíveis diretamente da resposta
 
 // Compat Node/Browser (mantém padrão atual)
 // @ts-ignore - module may be undefined in browser

@@ -175,18 +175,11 @@
     });
   }
 
-  // Carrega as classes necessárias - DTOs primeiro, depois domínios
+  // Carrega as classes necessárias - Domain e Application (DTOs não são mais carregados via script)
   Promise.all([
-    window.MineracaoRequestDTO ? Promise.resolve() : loadScript('./js/dto/MineracaoRequestDTO.js'),
-    window.MineracaoResponseDTO ? Promise.resolve() : loadScript('./js/dto/MineracaoResponseDTO.js'),
+    window.MinaKravensDomain ? Promise.resolve() : loadScript('./js/domain/MinaKravensDomain.js'),
+    window.MineracaoUseCase ? Promise.resolve() : loadScript('./js/application/MineracaoUseCase.js'),
   ])
-    .then(() => {
-      // DTOs carregados, agora carrega os domínios
-      return Promise.all([
-        window.MinaKravensDomain ? Promise.resolve() : loadScript('./js/domain/MinaKravensDomain.js'),
-        window.MineracaoUseCase ? Promise.resolve() : loadScript('./js/application/MineracaoUseCase.js'),
-      ]);
-    })
     .then(() => {
       // Inicializa o controller após carregar as dependências
       initializeController();

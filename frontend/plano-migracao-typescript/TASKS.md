@@ -6,6 +6,7 @@
 - Correção de Exports no NW.js: `frontend/plano-migracao-typescript/PLANO_CORRECAO_EXPORTS_NW.md`
 - Correção de Testes (Jest): `frontend/plano-migracao-typescript/PLANO_CORRECAO_TESTES.md`
 - Correção de Identificadores (Application): `frontend/plano-migracao-typescript/PLANO_CORRECAO_IDENTIFICADORES_APPLICATION.md`
+- Diagnóstico de `exports` e testes: `frontend/plano-migracao-typescript/DIAGNOSTICO_EXPORTS_E_TESTES.md`
 
 ## Resumo do que já foi feito
 
@@ -63,9 +64,18 @@ Status atual no NW.js:
 - Em testes (Node), use `require` no resolvedor; em Browser, leia de `globalThis`.
 - Padrão reaproveitável: `resolveUseCaseDTOs()`/`resolveDomainDTOs()` em vez de variáveis globais `*Ref`.
 
-Pendência atual (Application):
+### Tasks Executadas - Correção de Identificadores e Exports
 
-- Resolver `SyntaxError: Identifier 'MineracaoRequestDTORef' has already been declared` conforme plano de correção de identificadores da Application.
+- [x] **Plano 1 - Correção de Identificadores Duplicados**: Ambos `MineracaoUseCase.ts` e `MinaKravensDomain.ts` já estavam adequadamente encapsulados em IIFE, resolvendo conflitos de nomes globais.
+- [x] **Plano 2 - Correção de Exports e Testes**: 
+  - Confirmado que não há injeção de CommonJS problemática em Application/Domain
+  - TypeScript configs já configurados com `esModuleInterop: false` e `moduleDetection: legacy`
+  - Plugin atualizado para não carregar scripts de DTO (apenas Domain → Application)
+  - Testes atualizados para usar verificações estruturais em vez de métodos helper
+  - Classe Domain simplificada: removidos métodos helper, informações acessíveis diretamente das propriedades
+  - Application atualizada para acessar propriedades da resposta diretamente
+
+Status atual: **COMPLETO** ✅
 
 ## Como rodar em desenvolvimento (estado atual)
 

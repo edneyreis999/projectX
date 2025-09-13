@@ -569,17 +569,15 @@ describe('MinaKravensDomain', () => {
       // Verifica que retornou um objeto de resposta válido
       expect(response && typeof response).toBe('object');
 
-      // Verifica propriedades usando métodos do DTO
-      expect(response.isKraven()).toBe(true);
-      expect(response.isPedra()).toBe(false);
-      expect(response.isQuestComplete()).toBe(false);
-      expect(response.shouldActivateCrack()).toBe(false);
+      // Verifica propriedades diretamente da resposta
+      expect(response.tipo).toBe('Kraven');
+      expect(response.questCompleta).toBe(false);
+      expect(response.deveAtivarRachadura).toBe(false);
 
-      // Verifica stats
-      const stats = response.getStats();
-      expect(stats.kravensColetados).toBe(3);
-      expect(stats.pilhasRestantes).toBe(6);
-      expect(stats.chanceCalculada).toBe(50);
+      // Verifica stats diretamente
+      expect(response.kravensColetados).toBe(3);
+      expect(response.pilhasRestantes).toBe(6);
+      expect(response.chanceCalculada).toBe(50);
     });
 
     test('deve rejeitar parâmetros inválidos (validação no Domain)', () => {
@@ -607,20 +605,14 @@ describe('MinaKravensDomain', () => {
 
       const response = domain.executarMineracao(request);
 
-      // Testa métodos de conveniência
-      expect(response.isKraven()).toBe(true);
-      expect(response.isQuestComplete()).toBe(true);
-      expect(response.shouldActivateCrack()).toBe(false); // Quest completa, não ativa rachadura
+      // Testa propriedades diretas
+      expect(response.tipo).toBe('Kraven');
+      expect(response.questCompleta).toBe(true);
+      expect(response.deveAtivarRachadura).toBe(false); // Quest completa, não ativa rachadura
 
-      // Testa serialização
-      const plainObject = response.toPlainObject();
-      expect(plainObject.tipo).toBe('Kraven');
-      expect(plainObject.questCompleta).toBe(true);
-
-      // Testa reconstrução a partir de objeto simples
-      const recreated = MineracaoResponseDTO.fromPlainObject(plainObject);
-      expect(recreated.isKraven()).toBe(true);
-      expect(recreated.isQuestComplete()).toBe(true);
+      // Verifica estrutura da resposta
+      expect(response.tipo).toBe('Kraven');
+      expect(response.questCompleta).toBe(true);
     });
 
     test('deve criar response apropriada para quest completa', () => {
@@ -632,10 +624,10 @@ describe('MinaKravensDomain', () => {
 
       const response = domain.executarMineracao(request);
 
-      expect(response.isPedra()).toBe(true);
-      expect(response.isQuestComplete()).toBe(true);
-      expect(response.shouldActivateCrack()).toBe(false);
-      expect(response.getStats().chanceCalculada).toBe(0);
+      expect(response.tipo).toBe('Pedra');
+      expect(response.questCompleta).toBe(true);
+      expect(response.deveAtivarRachadura).toBe(false);
+      expect(response.chanceCalculada).toBe(0);
     });
 
     test('deve funcionar com rachadura já ativada', () => {
@@ -648,8 +640,8 @@ describe('MinaKravensDomain', () => {
       // Não precisa mockar _gerarNumeroAleatorio pois rachadura força 100%
       const response = domain.executarMineracao(request);
 
-      expect(response.isKraven()).toBe(true); // Com rachadura sempre deve ser Kraven
-      expect(response.getStats().chanceCalculada).toBe(100);
+      expect(response.tipo).toBe('Kraven'); // Com rachadura sempre deve ser Kraven
+      expect(response.chanceCalculada).toBe(100);
     });
   });
 
@@ -735,35 +727,10 @@ describe('MinaKravensDomain', () => {
 
       expect(request.isValid()).toBe(true);
 
-      const plainRequest = request.toPlainObject();
-      expect(plainRequest.kravensJaColetados).toBe(2);
-
-      const recreatedRequest = MineracaoRequestDTO.fromPlainObject(plainRequest);
-      expect(recreatedRequest.kravensJaColetados).toBe(2);
-      expect(recreatedRequest.isValid()).toBe(true);
-
-      // Test response static factories
-      const kravenResponse = MineracaoResponseDTO.createKravenResponse({
-        questCompleta: false,
-        deveAtivarRachadura: true,
-        pilhasRestantes: 5,
-        kravensColetados: 4,
-        chanceCalculada: 75,
-      });
-
-      expect(kravenResponse.isKraven()).toBe(true);
-      expect(kravenResponse.shouldActivateCrack()).toBe(true);
-
-      const pedraResponse = MineracaoResponseDTO.createPedraResponse({
-        questCompleta: false,
-        deveAtivarRachadura: false,
-        pilhasRestantes: 5,
-        kravensColetados: 3,
-        chanceCalculada: 25,
-      });
-
-      expect(pedraResponse.isPedra()).toBe(true);
-      expect(pedraResponse.shouldActivateCrack()).toBe(false);
+      // Verifica estrutura da request
+      expect(request.kravensJaColetados).toBe(2);
+      expect(request.pilhasJaMineradas).toBe(3);
+      expect(request.rachaduraJaAtivada).toBe(false);
     });
   });
 });
