@@ -66,5 +66,33 @@ module.exports = {
         ],
       },
     },
+    {
+      // Ban CommonJS in migrated ESM layers
+      files: ['frontend/js/domain/**/*.{ts,js}', 'frontend/js/application/**/*.{ts,js}', 'frontend/js/dto/**/*.{ts,js}'],
+      rules: {
+        'no-restricted-globals': [
+          'error',
+          {
+            name: 'module',
+            message: 'CommonJS module object is banned in ESM layers. Use export/import instead.'
+          },
+          {
+            name: 'exports',
+            message: 'CommonJS exports object is banned in ESM layers. Use export/import instead.'
+          }
+        ],
+        'no-restricted-syntax': [
+          'error',
+          {
+            selector: 'CallExpression[callee.name="require"]',
+            message: 'CommonJS require() is banned in ESM layers. Use import instead.'
+          },
+          {
+            selector: 'AssignmentExpression[left.object.name="module"][left.property.name="exports"]',
+            message: 'CommonJS module.exports is banned in ESM layers. Use export instead.'
+          }
+        ]
+      }
+    },
   ],
 };
