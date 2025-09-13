@@ -13,10 +13,10 @@
     "declaration": true
   },
   "include": [
-    "frontend/js/application/**/*.ts"
+    "frontend/js/application/**/*.ts",
+    "frontend/js/dto/types.d.ts"
   ],
   "exclude": [
     "node_modules"
   ]
 }
-

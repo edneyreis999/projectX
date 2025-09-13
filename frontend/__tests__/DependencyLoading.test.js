@@ -47,7 +47,7 @@ describe('Dependency Loading Tests', () => {
     });
 
     const resultado = domain.executarMineracao(request);
-    expect(resultado).toBeInstanceOf(MineracaoResponseDTO);
+    expect(resultado && typeof resultado).toBe('object');
     expect(['Kraven', 'Pedra']).toContain(resultado.tipo);
   });
 
@@ -80,7 +80,7 @@ describe('Dependency Loading Tests', () => {
     expect(['Kraven', 'Pedra']).toContain(resultado);
   });
 
-  test('Should validate DTO instances correctly', () => {
+  test('Should validate request object (domain validation)', () => {
     const MinaKravensDomain = require('../js/domain/MinaKravensDomain');
     const domain = new MinaKravensDomain(5, 10);
 
@@ -89,9 +89,9 @@ describe('Dependency Loading Tests', () => {
       domain.executarMineracao({
         kravensJaColetados: 0,
         pilhasJaMineradas: 0,
-        rachaduraJaAtivada: false,
+        rachaduraJaAtivada: 'nope',
       });
-    }).toThrow('Request deve ser uma instância de MineracaoRequestDTO');
+    }).toThrow('rachaduraJaAtivada deve ser um boolean');
   });
 
   test('Should maintain lazy loading functionality', () => {

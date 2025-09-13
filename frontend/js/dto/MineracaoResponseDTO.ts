@@ -5,10 +5,11 @@
 
 // Usa globalThis para compatibilidade Node/Browser sem declarar globals
 
-type TipoMineracao = 'Kraven' | 'Pedra';
+// evitar duplicar o tipo global de ambient types; usar alias local
+type __LocalTipoMineracao = 'Kraven' | 'Pedra';
 
 type MineracaoResponseInput = {
-  tipo: TipoMineracao;
+  tipo: __LocalTipoMineracao;
   questCompleta: boolean;
   deveAtivarRachadura: boolean;
   pilhasRestantes: number;
@@ -23,7 +24,7 @@ type MineracaoStats = {
 };
 
 class MineracaoResponseDTO {
-  public readonly tipo: TipoMineracao;
+  public readonly tipo: __LocalTipoMineracao;
   public readonly questCompleta: boolean;
   public readonly deveAtivarRachadura: boolean;
   public readonly pilhasRestantes: number;

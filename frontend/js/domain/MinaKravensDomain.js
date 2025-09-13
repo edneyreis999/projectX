@@ -5,32 +5,41 @@
 //=============================================================================
 (function () {
     'use strict';
-    // Resolver local de DTOs (evita variáveis globais)
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    let __reqDTO = null;
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    let __respDTO = null;
-    function resolveDomainDTOs() {
-        // @ts-ignore - module pode não existir no browser
-        if (typeof module !== 'undefined' && module.exports) {
-            if (!__reqDTO) {
-                // eslint-disable-next-line @typescript-eslint/no-var-requires
-                __reqDTO = require('../dto/MineracaoRequestDTO');
-            }
-            if (!__respDTO) {
-                // eslint-disable-next-line @typescript-eslint/no-var-requires
-                __respDTO = require('../dto/MineracaoResponseDTO');
-            }
+    // Type guards and validation helpers
+    function isValidRequest(req) {
+        return (req &&
+            typeof req.kravensJaColetados === 'number' && req.kravensJaColetados >= 0 &&
+            typeof req.pilhasJaMineradas === 'number' && req.pilhasJaMineradas >= 0 &&
+            typeof req.rachaduraJaAtivada === 'boolean');
+    }
+    function assertValidRequest(req) {
+        if (req == null || typeof req !== 'object') {
+            throw new Error('Request inválida: esperado objeto MineracaoRequest');
         }
-        else {
-            const g = globalThis;
-            __reqDTO = __reqDTO || (g && g.MineracaoRequestDTO);
-            __respDTO = __respDTO || (g && g.MineracaoResponseDTO);
+        if (typeof req.kravensJaColetados !== 'number' || req.kravensJaColetados < 0) {
+            throw new Error('kravensJaColetados deve ser um número não negativo');
         }
-        if (!__reqDTO || !__respDTO) {
-            throw new Error('DTOs não carregados. Carregue MineracaoRequestDTO/MineracaoResponseDTO antes do domínio.');
+        if (typeof req.pilhasJaMineradas !== 'number' || req.pilhasJaMineradas < 0) {
+            throw new Error('pilhasJaMineradas deve ser um número não negativo');
         }
-        return { MineracaoRequestDTO: __reqDTO, MineracaoResponseDTO: __respDTO };
+        if (typeof req.rachaduraJaAtivada !== 'boolean') {
+            throw new Error('rachaduraJaAtivada deve ser um boolean');
+        }
+    }
+    function assertValidResponse(res) {
+        const tipoOK = res.tipo === 'Kraven' || res.tipo === 'Pedra';
+        if (!tipoOK)
+            throw new Error('tipo deve ser "Kraven" ou "Pedra"');
+        if (typeof res.questCompleta !== 'boolean')
+            throw new Error('questCompleta deve ser um boolean');
+        if (typeof res.deveAtivarRachadura !== 'boolean')
+            throw new Error('deveAtivarRachadura deve ser um boolean');
+        if (typeof res.pilhasRestantes !== 'number')
+            throw new Error('pilhasRestantes deve ser um número');
+        if (typeof res.kravensColetados !== 'number' || res.kravensColetados < 0)
+            throw new Error('kravensColetados deve ser um número não negativo');
+        if (typeof res.chanceCalculada !== 'number' || res.chanceCalculada < 0 || res.chanceCalculada > 100)
+            throw new Error('chanceCalculada deve ser um número entre 0 e 100');
     }
     class MinaKravensDomain {
         constructor(totalKravensNecessarios, totalPilhasDisponiveis) {
@@ -39,20 +48,21 @@
         }
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         executarMineracao(request) {
-            const { MineracaoRequestDTO, MineracaoResponseDTO } = resolveDomainDTOs();
-            if (!(request instanceof MineracaoRequestDTO)) {
-                throw new Error('Request deve ser uma instância de MineracaoRequestDTO');
-            }
+            assertValidRequest(request);
             const { kravensJaColetados, pilhasJaMineradas, rachaduraJaAtivada } = request;
             const pilhasRestantes = this.totalPilhasDisponiveis - pilhasJaMineradas;
             if (this.isQuestCompleta(kravensJaColetados)) {
-                return MineracaoResponseDTO.createPedraResponse({
+                const response = {
+                    tipo: 'Pedra',
                     questCompleta: true,
                     deveAtivarRachadura: false,
                     pilhasRestantes: pilhasRestantes - 1,
                     kravensColetados: kravensJaColetados,
                     chanceCalculada: 0,
-                });
+                };
+                attachResponseHelpers(response);
+                assertValidResponse(response);
+                return response;
             }
             const pilhasRestantesAposMineracao = pilhasRestantes - 1;
             const kravensRestantesParaConcluir = this.totalKravensNecessarios - kravensJaColetados;
@@ -79,9 +89,12 @@
                 kravensColetados: novosKravensColetados,
                 chanceCalculada: chanceDeObterKraven,
             };
-            return obteuKraven
-                ? MineracaoResponseDTO.createKravenResponse(responseData)
-                : MineracaoResponseDTO.createPedraResponse(responseData);
+            const response = obteuKraven
+                ? { tipo: 'Kraven', ...responseData }
+                : { tipo: 'Pedra', ...responseData };
+            attachResponseHelpers(response);
+            assertValidResponse(response);
+            return response;
         }
         calcularChanceKraven(kravensJaColetados, pilhasRestantes) {
             const kravensRestantesParaConcluir = this.totalKravensNecessarios - kravensJaColetados;
@@ -102,7 +115,23 @@
         }
         _gerarNumeroAleatorio() { return Math.random(); }
     }
-    // remove ensure; usa resolveDomainDTOs
+    function attachResponseHelpers(res) {
+        res.isKraven = function () { return this.tipo === 'Kraven'; };
+        res.isPedra = function () { return this.tipo === 'Pedra'; };
+        res.isQuestComplete = function () { return this.questCompleta; };
+        res.shouldActivateCrack = function () { return this.deveAtivarRachadura; };
+        res.getStats = function () { return { kravensColetados: this.kravensColetados, pilhasRestantes: this.pilhasRestantes, chanceCalculada: this.chanceCalculada }; };
+        res.toPlainObject = function () {
+            return {
+                tipo: this.tipo,
+                questCompleta: this.questCompleta,
+                deveAtivarRachadura: this.deveAtivarRachadura,
+                pilhasRestantes: this.pilhasRestantes,
+                kravensColetados: this.kravensColetados,
+                chanceCalculada: this.chanceCalculada,
+            };
+        };
+    }
     // Compat Node/Browser (mantém padrão atual)
     // @ts-ignore - module may be undefined in browser
     if (typeof module !== 'undefined' && module.exports) {

@@ -5,33 +5,7 @@
 //=============================================================================
 (function () {
     'use strict';
-    // Resolvedor local de DTOs (sem variáveis globais)
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    let __cachedReq = null;
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    let __cachedResp = null;
-    function resolveUseCaseDTOs() {
-        // @ts-ignore - module pode não existir no browser
-        if (typeof module !== 'undefined' && module.exports) {
-            if (!__cachedReq) {
-                // eslint-disable-next-line @typescript-eslint/no-var-requires
-                __cachedReq = require('../dto/MineracaoRequestDTO');
-            }
-            if (!__cachedResp) {
-                // eslint-disable-next-line @typescript-eslint/no-var-requires
-                __cachedResp = require('../dto/MineracaoResponseDTO');
-            }
-        }
-        else {
-            const g = globalThis;
-            __cachedReq = __cachedReq || (g && g.MineracaoRequestDTO);
-            __cachedResp = __cachedResp || (g && g.MineracaoResponseDTO);
-        }
-        if (!__cachedReq || !__cachedResp) {
-            throw new Error('DTOs não carregados. Certifique-se de que MineracaoRequestDTO.js e MineracaoResponseDTO.js foram carregados antes de usar MineracaoUseCase');
-        }
-        return { MineracaoRequestDTO: __cachedReq, MineracaoResponseDTO: __cachedResp };
-    }
+    // Nota: Use Case não depende mais de classes DTO; constrói objetos literais tipados
     class MineracaoUseCase {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         constructor(domain, coreService, questService, logger, config) {
@@ -48,16 +22,15 @@
         }
         executarMineracao(pilhaId) {
             try {
-                const { MineracaoRequestDTO } = resolveUseCaseDTOs();
                 const kravensJaColetados = this._obterKravensColetados();
                 const pilhasJaMineradas = this._obterPilhasJaMineradas();
                 const rachaduraJaAtivada = this._verificarSeRachaduraJaFoiAtivada();
-                // Cria o DTO de request
-                const request = new MineracaoRequestDTO({
+                // Cria o request literal (sem classe)
+                const request = {
                     kravensJaColetados,
                     pilhasJaMineradas,
                     rachaduraJaAtivada,
-                });
+                };
                 // Executa a mineração usando o domínio
                 const resultado = this.domain.executarMineracao(request);
                 // Logs críticos

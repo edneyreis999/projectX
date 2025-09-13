@@ -555,7 +555,7 @@ describe('MinaKravensDomain', () => {
   });
 
   describe('interface com DTOs', () => {
-    test('deve aceitar MineracaoRequestDTO e retornar MineracaoResponseDTO', () => {
+    test('deve aceitar MineracaoRequestDTO e retornar resposta válida', () => {
       const request = new MineracaoRequestDTO({
         kravensJaColetados: 2,
         pilhasJaMineradas: 3,
@@ -566,9 +566,8 @@ describe('MinaKravensDomain', () => {
 
       const response = domain.executarMineracao(request);
 
-      // Verifica que retornou um DTO
-      expect(response).toBeInstanceOf(MineracaoResponseDTO);
-      expect(response.isValid()).toBe(true);
+      // Verifica que retornou um objeto de resposta válido
+      expect(response && typeof response).toBe('object');
 
       // Verifica propriedades usando métodos do DTO
       expect(response.isKraven()).toBe(true);
@@ -583,18 +582,18 @@ describe('MinaKravensDomain', () => {
       expect(stats.chanceCalculada).toBe(50);
     });
 
-    test('deve rejeitar parâmetros que não são MineracaoRequestDTO', () => {
+    test('deve rejeitar parâmetros inválidos (validação no Domain)', () => {
       expect(() => {
         domain.executarMineracao({ kravensJaColetados: 2, pilhasJaMineradas: 3 });
-      }).toThrow('Request deve ser uma instância de MineracaoRequestDTO');
+      }).toThrow('rachaduraJaAtivada deve ser um boolean');
 
       expect(() => {
         domain.executarMineracao(null);
-      }).toThrow('Request deve ser uma instância de MineracaoRequestDTO');
+      }).toThrow('Request inválida: esperado objeto MineracaoRequest');
 
       expect(() => {
         domain.executarMineracao('invalid');
-      }).toThrow('Request deve ser uma instância de MineracaoRequestDTO');
+      }).toThrow('Request inválida: esperado objeto MineracaoRequest');
     });
 
     test('deve criar response DTO com métodos de conveniência', () => {
