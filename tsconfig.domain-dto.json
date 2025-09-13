@@ -1,0 +1,25 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "noEmitOnError": true,
+    "allowJs": true,
+    "rootDir": "frontend/js",
+    "outDir": "frontend/js"
+  },
+  "include": [
+    "frontend/js/domain/**/*.ts",
+    "frontend/js/dto/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "frontend/js/plugins",
+    "frontend/js/application"
+  ]
+}
