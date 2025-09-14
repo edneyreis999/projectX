@@ -3,14 +3,14 @@
 // MineracaoUseCase.ts
 //=============================================================================
 
+import MinaKravensDomain from '../domain/MinaKravensDomain';
 import type { MineracaoRequest } from '../dto/MineracaoRequestDTO';
 import type { MineracaoResponse } from '../dto/MineracaoResponseDTO';
 
 ('use strict');
 
 class MineracaoUseCase {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  private domain: any;
+  private domain: MinaKravensDomain;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   private coreService: any;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
