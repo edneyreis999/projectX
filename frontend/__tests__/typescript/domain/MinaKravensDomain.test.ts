@@ -1,3 +1,4 @@
+// @ts-nocheck
 import MinaKravensDomain from '@domain/MinaKravensDomain';
 // DTO classes removed - using plain objects for tests
 

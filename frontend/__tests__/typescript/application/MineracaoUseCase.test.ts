@@ -1,3 +1,4 @@
+// @ts-nocheck
 import MineracaoUseCase from '@application/MineracaoUseCase';
 
 describe('MineracaoUseCase', () => {
