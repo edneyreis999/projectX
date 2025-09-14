@@ -1,4 +1,4 @@
-import MineracaoUseCase from '../js/application/MineracaoUseCase';
+import MineracaoUseCase from '../frontend/js/application/MineracaoUseCase';
 
 describe('MineracaoUseCase', () => {
   let useCase, mockDomain, mockCoreService, mockQuestService, mockLogger;

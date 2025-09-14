@@ -1,7 +1,7 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: ['./tsconfig.json'],
+    project: ['./tsconfig.json', './tsconfig.test.json'],
     tsconfigRootDir: __dirname,
     sourceType: 'module',
   },
@@ -34,7 +34,7 @@ module.exports = {
       files: ['**/*.ts'],
       parser: require.resolve('@typescript-eslint/parser'),
       parserOptions: {
-        project: ['./tsconfig.json'],
+        project: ['./tsconfig.json', './tsconfig.test.json'],
         tsconfigRootDir: __dirname,
         sourceType: 'module',
       },
@@ -68,7 +68,7 @@ module.exports = {
     },
     {
       // Ban CommonJS in migrated ESM layers
-      files: ['frontend/js/domain/**/*.{ts,js}', 'frontend/js/application/**/*.{ts,js}', 'frontend/js/dto/**/*.{ts,js}'],
+      files: ['frontend/js/domain/**/*.{ts,js}', 'frontend/js/application/**/*.{ts,js}', 'frontend/js/dto/**/*.{ts,js}', 'frontend/typescript/**/*.{ts,js}'],
       rules: {
         'no-restricted-globals': [
           'error',
@@ -92,6 +92,19 @@ module.exports = {
             message: 'CommonJS module.exports is banned in ESM layers. Use export instead.'
           }
         ]
+      }
+    },
+    {
+      // Disable any-related rules for test files
+      files: ['frontend/__tests__/typescript/**/*.ts'],
+      rules: {
+        '@typescript-eslint/no-explicit-any': 'off',
+        '@typescript-eslint/no-unsafe-argument': 'off',
+        '@typescript-eslint/no-unsafe-assignment': 'off',
+        '@typescript-eslint/no-unsafe-call': 'off',
+        '@typescript-eslint/no-unsafe-member-access': 'off',
+        '@typescript-eslint/no-unsafe-return': 'off',
+        '@typescript-eslint/no-implicit-any-return': 'off'
       }
     },
   ],

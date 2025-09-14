@@ -4,15 +4,15 @@
   "description": "My first project with RPG Maker MZ",
   "scripts": {
     "test": "jest",
-    "lint": "eslint \"frontend/js/plugins/**/*.{ts,js}\" --fix",
-    "lint:check": "eslint \"frontend/js/plugins/**/*.{ts,js}\" --max-warnings=0",
-    "format": "prettier --write \"frontend/js/plugins/**/*.{ts,js}\"",
+    "lint": "eslint \"frontend/js/plugins/**/*.{ts,js}\" \"frontend/typescript/**/*.{ts,js}\" --fix",
+    "lint:check": "eslint \"frontend/js/plugins/**/*.{ts,js}\" \"frontend/typescript/**/*.{ts,js}\" --max-warnings=0",
+    "format": "prettier --write \"frontend/js/plugins/**/*.{ts,js}\" \"frontend/typescript/**/*.{ts,js}\"",
     "prepare": "husky install",
     "commit": "cross-env HUSKY_CZ=1 cz",
     "debug": "nw --remote-debugging-port=9222 ./frontend",
     "format:json": "prettier --write \"frontend/**/*.json\" \"System.json\"",
-    "build:types": "tsc -p tsconfig.json",
-    "watch:types": "tsc -p tsconfig.json -w",
+    "build:types": "rm -f .tsbuildinfo && tsc -p tsconfig.build.json",
+    "watch:types": "rm -f .tsbuildinfo && tsc -p tsconfig.json -w",
     "start:dev": "npm run build:types && npm run debug"
   },
   "keywords": [],
@@ -57,6 +57,10 @@
   },
   "lint-staged": {
     "frontend/js/plugins/**/*.{ts,js}": [
+      "prettier --write",
+      "eslint --fix --max-warnings=0"
+    ],
+    "frontend/typescript/**/*.{ts,js}": [
       "prettier --write",
       "eslint --fix --max-warnings=0"
     ],

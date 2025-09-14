@@ -3,8 +3,8 @@
 // MinaKravensDomain.ts
 //=============================================================================
 
-import type { MineracaoRequest } from '../dto/MineracaoRequestDTO';
-import type { MineracaoResponse } from '../dto/MineracaoResponseDTO';
+import type { MineracaoRequest } from '@dto/MineracaoRequestDTO';
+import type { MineracaoResponse } from '@dto/MineracaoResponseDTO';
 
 ('use strict');
 

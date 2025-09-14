@@ -4,31 +4,29 @@
     "module": "esnext",
     "moduleDetection": "auto",
     "strict": true,
-    "noImplicitAny": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
 
-    "rootDir": "frontend",
+    "rootDir": "frontend/typescript",
     "outDir": "frontend/js",
     "declaration": true,
     "declarationDir": "frontend/js",
     "sourceMap": false,
     "noEmitOnError": true,
-    "emitDeclarationOnly": false,
     "incremental": true,
     "tsBuildInfoFile": ".tsbuildinfo",
 
-    "baseUrl": "frontend",
+    "baseUrl": "frontend/typescript",
     "paths": {
-      "@domain/*": ["typescript/domain/*"],
-      "@application/*": ["typescript/application/*"],
-      "@dto/*": ["typescript/dto/*"],
-      "@libs/*": ["typescript/libs/*"],
-      "@adapters/*": ["typescript/adapters/*"],
-      "@infra/*": ["typescript/infrastructure/*"],
-      "@plugins/*": ["typescript/plugins/*"]
+      "@domain/*": ["domain/*"],
+      "@application/*": ["application/*"],
+      "@dto/*": ["dto/*"],
+      "@libs/*": ["libs/*"],
+      "@adapters/*": ["adapters/*"],
+      "@infra/*": ["infrastructure/*"],
+      "@plugins/*": ["plugins/*"]
     },
     "typeRoots": [
       "frontend/typescript/types",
@@ -43,13 +41,13 @@
     "frontend/typescript/adapters/**/*.ts",
     "frontend/typescript/infrastructure/**/*.ts",
     "frontend/typescript/plugins/**/*.ts",
-    "frontend/typescript/types/**/*.d.ts",
-    "frontend/__tests__/typescript/**/*.ts"
+    "frontend/typescript/types/**/*.d.ts"
   ],
   "exclude": [
     "node_modules",
     "dist",
     "coverage",
-    "frontend/js/**"
+    "frontend/js/**",
+    "frontend/__tests__/**"
   ]
 }

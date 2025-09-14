@@ -3,9 +3,9 @@
 // MineracaoUseCase.ts
 //=============================================================================
 
-import MinaKravensDomain from '../domain/MinaKravensDomain';
-import type { MineracaoRequest } from '../dto/MineracaoRequestDTO';
-import type { MineracaoResponse } from '../dto/MineracaoResponseDTO';
+import MinaKravensDomain from '@domain/MinaKravensDomain';
+import type { MineracaoRequest } from '@dto/MineracaoRequestDTO';
+import type { MineracaoResponse } from '@dto/MineracaoResponseDTO';
 
 ('use strict');
 

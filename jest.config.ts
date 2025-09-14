@@ -90,7 +90,15 @@ const config: Config = {
   // ],
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
-  // moduleNameMapper: {},
+  moduleNameMapper: {
+    "^@domain/(.*)$": "<rootDir>/frontend/typescript/domain/$1",
+    "^@application/(.*)$": "<rootDir>/frontend/typescript/application/$1",
+    "^@dto/(.*)$": "<rootDir>/frontend/typescript/dto/$1",
+    "^@libs/(.*)$": "<rootDir>/frontend/typescript/libs/$1",
+    "^@adapters/(.*)$": "<rootDir>/frontend/typescript/adapters/$1",
+    "^@infra/(.*)$": "<rootDir>/frontend/typescript/infrastructure/$1",
+    "^@plugins/(.*)$": "<rootDir>/frontend/typescript/plugins/$1"
+  },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
   // modulePathIgnorePatterns: [],

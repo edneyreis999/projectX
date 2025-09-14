@@ -42,20 +42,36 @@ npm run commit
 
 ```
 frontend/
-├── js/
-│   ├── domain/           # Clean Architecture - Domain Layer
-│   │   ├── MinaKravensDomain.js    # Business logic for mining quest
-│   │   └── MineracaoUseCase.js     # Mining use cases
-│   ├── adapters/         # Clean Architecture - Adapter Layer
-│   │   ├── log/         # Logging adapters
-│   │   └── services/    # Service adapters
-│   ├── plugins/         # RPG Maker MZ plugins (42 files)
-│   │   └── Coreto_*.js  # Battle delay system plugins
-│   ├── libs/            # Third-party libraries
-│   └── __tests__/       # Test files
-├── data/                # RPG Maker game data (JSON files)
-├── save/                # Game save files
-└── package.json         # Game runtime configuration
+├── typescript/          # TypeScript source code (Clean Architecture)
+│   ├── domain/         # Domain Layer - Business logic
+│   │   └── MinaKravensDomain.ts    # Mining quest business logic
+│   ├── application/    # Application Layer - Use cases
+│   │   └── MineracaoUseCase.ts     # Mining use cases
+│   ├── dto/            # Data Transfer Objects
+│   │   ├── MineracaoRequestDTO.ts  # Mining request interface
+│   │   └── MineracaoResponseDTO.ts # Mining response interface
+│   ├── adapters/       # Adapter Layer - External interfaces
+│   ├── infrastructure/ # Infrastructure Layer - External services
+│   ├── libs/           # Shared libraries
+│   ├── plugins/        # TypeScript plugins
+│   └── types/          # Manual type definitions
+├── js/                 # Compiled JavaScript output
+│   ├── domain/         # Generated .js and .d.ts files
+│   ├── application/    # Generated .js and .d.ts files
+│   ├── dto/            # Generated .js and .d.ts files
+│   ├── adapters/       # Adapter implementations
+│   ├── plugins/        # RPG Maker MZ plugins (JS only)
+│   │   └── Coreto_*.js # Battle delay system plugins
+│   └── libs/           # Third-party libraries
+├── __tests__/          # Test files
+│   ├── typescript/     # TypeScript layer tests
+│   │   ├── domain/     # Domain layer tests
+│   │   ├── application/ # Application layer tests
+│   │   └── dto/        # DTO tests
+│   └── plugins/        # Plugin tests (JS)
+├── data/               # RPG Maker game data (JSON files)
+├── save/               # Game save files
+└── package.json        # Game runtime configuration
 ```
 
 ### Plugin System Architecture
@@ -64,8 +80,12 @@ frontend/
 
 The codebase follows Clean Architecture principles:
 
-- **Domain Layer**: Pure business logic (`js/domain/`)
-- **Plugins**: RPG Maker specific implementations
+- **Domain Layer**: Pure business logic (`frontend/typescript/domain/`)
+- **Application Layer**: Use cases and orchestration (`frontend/typescript/application/`)
+- **DTO Layer**: Data transfer objects and interfaces (`frontend/typescript/dto/`)
+- **Adapter Layer**: External service interfaces (`frontend/typescript/adapters/`)
+- **Infrastructure Layer**: External service implementations (`frontend/typescript/infrastructure/`)
+- **Plugins**: RPG Maker specific implementations (`frontend/js/plugins/`)
 
 #### RPG Maker MZ Plugin Structure
 
@@ -108,9 +128,30 @@ Multi-module plugin system with shared state:
 
 ### TypeScript Configuration
 
-- ES2022 target with experimental decorators
-- CommonJS modules for RPG Maker compatibility
-- Incremental compilation enabled
+- **Source Directory**: `frontend/typescript/` (TypeScript source files)
+- **Output Directory**: `frontend/js/` (Compiled JavaScript and declaration files)
+- **Target**: ES2020 with ESNext modules for modern compatibility
+- **Incremental compilation**: Enabled with `.tsbuildinfo` caching
+- **Build command**: `npm run build:types`
+- **Watch mode**: `npm run watch:types`
+
+#### Import Aliases
+
+Path aliases are configured for clean imports:
+
+- `@domain/*` → `frontend/typescript/domain/*`
+- `@application/*` → `frontend/typescript/application/*`
+- `@dto/*` → `frontend/typescript/dto/*`
+- `@libs/*` → `frontend/typescript/libs/*`
+- `@adapters/*` → `frontend/typescript/adapters/*`
+- `@infra/*` → `frontend/typescript/infrastructure/*`
+- `@plugins/*` → `frontend/typescript/plugins/*`
+
+#### Build Output
+
+- TypeScript files in `frontend/typescript/` compile to JavaScript in `frontend/js/`
+- Declaration files (`.d.ts`) are generated alongside JavaScript files
+- Runtime loads only from `frontend/js/` - never directly from `frontend/typescript/`
 
 ## Testing Strategy
 
@@ -121,13 +162,16 @@ Jest is configured to find tests in:
 - `frontend/__tests__/**/*.[jt]s?(x)`
 - `frontend/**/?(*.)+(spec|test).[tj]s?(x)`
 
-### Domain Testing
+### TypeScript Layer Testing
 
-Domain classes are tested separately from RPG Maker runtime:
+Clean Architecture layers are tested separately from RPG Maker runtime:
 
-- Pure JavaScript classes can be tested in isolation
-- Use case classes test business logic flow
+- **Domain tests**: `frontend/__tests__/typescript/domain/` - Pure business logic tests
+- **Application tests**: `frontend/__tests__/typescript/application/` - Use case and orchestration tests
+- **DTO tests**: `frontend/__tests__/typescript/dto/` - Data contract validation tests
+- Tests import directly from TypeScript source using aliases (`@domain/*`, `@application/*`, etc.)
 - Mock adapters for external dependencies
+- Coverage includes both TypeScript source and generated JavaScript
 
 ## Development Workflow
 
