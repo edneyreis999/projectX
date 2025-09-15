@@ -3,58 +3,42 @@
 // DependencyLoading.test.js
 //=============================================================================
 
+import MinaKravensDomain from '../js/domain/MinaKravensDomain';
+import MineracaoUseCase from '../js/application/MineracaoUseCase';
+
 describe('Dependency Loading Tests', () => {
-  test('DTOs should be properly loaded and functional', () => {
-    // Testa se os DTOs existem e funcionam corretamente
-    const MineracaoRequestDTO = require('../js/dto/MineracaoRequestDTO');
-    const MineracaoResponseDTO = require('../js/dto/MineracaoResponseDTO');
-
-    expect(MineracaoRequestDTO).toBeDefined();
-    expect(MineracaoResponseDTO).toBeDefined();
-
-    // Testa criação de DTOs
-    const request = new MineracaoRequestDTO({
-      kravensJaColetados: 0,
-      pilhasJaMineradas: 0,
-      rachaduraJaAtivada: false,
-    });
-
-    expect(request).toBeInstanceOf(MineracaoRequestDTO);
-    expect(request.isValid()).toBe(true);
-
-    const response = MineracaoResponseDTO.createKravenResponse({
-      questCompleta: false,
-      deveAtivarRachadura: false,
-      pilhasRestantes: 9,
-      kravensColetados: 1,
-      chanceCalculada: 50,
-    });
-
-    expect(response).toBeInstanceOf(MineracaoResponseDTO);
-    expect(response.isValid()).toBe(true);
-  });
-
-  test('Domain classes should work with DTOs', () => {
-    const MinaKravensDomain = require('../js/domain/MinaKravensDomain');
-    const MineracaoRequestDTO = require('../js/dto/MineracaoRequestDTO');
-    const MineracaoResponseDTO = require('../js/dto/MineracaoResponseDTO');
-
+  test('Domain should work with plain objects (no DTO classes)', () => {
     const domain = new MinaKravensDomain(5, 10);
-    const request = new MineracaoRequestDTO({
+    const request = {
       kravensJaColetados: 0,
       pilhasJaMineradas: 0,
       rachaduraJaAtivada: false,
-    });
+    };
 
     const resultado = domain.executarMineracao(request);
-    expect(resultado).toBeInstanceOf(MineracaoResponseDTO);
+    expect(resultado && typeof resultado).toBe('object');
+    expect(resultado.tipo).toBeDefined();
+    expect(resultado.questCompleta).toBeDefined();
+    expect(resultado.deveAtivarRachadura).toBeDefined();
+    expect(resultado.pilhasRestantes).toBeDefined();
+    expect(resultado.kravensColetados).toBeDefined();
+    expect(resultado.chanceCalculada).toBeDefined();
+  });
+
+  test('Domain classes should work with plain request objects', () => {
+    const domain = new MinaKravensDomain(5, 10);
+    const request = {
+      kravensJaColetados: 0,
+      pilhasJaMineradas: 0,
+      rachaduraJaAtivada: false,
+    };
+
+    const resultado = domain.executarMineracao(request);
+    expect(resultado && typeof resultado).toBe('object');
     expect(['Kraven', 'Pedra']).toContain(resultado.tipo);
   });
 
   test('Use Case should work with domain and DTOs', () => {
-    const MinaKravensDomain = require('../js/domain/MinaKravensDomain');
-    const MineracaoUseCase = require('../js/application/MineracaoUseCase');
-
     const domain = new MinaKravensDomain(5, 10);
     const mockServices = {
       coreService: {
@@ -80,8 +64,7 @@ describe('Dependency Loading Tests', () => {
     expect(['Kraven', 'Pedra']).toContain(resultado);
   });
 
-  test('Should validate DTO instances correctly', () => {
-    const MinaKravensDomain = require('../js/domain/MinaKravensDomain');
+  test('Should validate request object (domain validation)', () => {
     const domain = new MinaKravensDomain(5, 10);
 
     // Tenta passar um objeto simples ao invés de DTO
@@ -89,25 +72,20 @@ describe('Dependency Loading Tests', () => {
       domain.executarMineracao({
         kravensJaColetados: 0,
         pilhasJaMineradas: 0,
-        rachaduraJaAtivada: false,
+        rachaduraJaAtivada: 'nope',
       });
-    }).toThrow('Request deve ser uma instância de MineracaoRequestDTO');
+    }).toThrow('rachaduraJaAtivada deve ser um boolean');
   });
 
-  test('Should maintain lazy loading functionality', () => {
-    // Testa se a função ensureDTOsLoaded funciona como esperado
-    // No ambiente Node.js, os DTOs devem estar sempre carregados
-    const MinaKravensDomain = require('../js/domain/MinaKravensDomain');
-    const MineracaoRequestDTO = require('../js/dto/MineracaoRequestDTO');
-
+  test('Should work with plain objects (no DTO classes needed)', () => {
     const domain = new MinaKravensDomain(5, 10);
-    const request = new MineracaoRequestDTO({
+    const request = {
       kravensJaColetados: 0,
       pilhasJaMineradas: 0,
       rachaduraJaAtivada: false,
-    });
+    };
 
-    // Deve funcionar normalmente, confirmando que o lazy loading não quebra a funcionalidade
+    // Should work normally with plain objects
     expect(() => {
       domain.executarMineracao(request);
     }).not.toThrow();
