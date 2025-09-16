@@ -204,9 +204,6 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Principal/$Melia", "direction": 4, "pattern": 2, "characterIndex": 0 },
           "list": [
-            { "code": 108, "indent": 0, "parameters": ["Até o momento não fui capaz de inserir emojis diretamente nas conversas com os bustos em tamanho real. "] },
-            { "code": 408, "indent": 0, "parameters": ["O máximo que o plugin ofereceu até o momento é a capacidade de inserir animações de batalha e outros efeitos"] },
-            { "code": 408, "indent": 0, "parameters": ["do tipo diretamente nas conversas e execução dos eventos."] },
             { "code": 241, "indent": 0, "parameters": [{ "name": "Dungeon5", "volume": 35, "pitch": 100, "pan": 0 }] },
             {
               "code": 357,
@@ -475,7 +472,7 @@
             { "code": 657, "indent": 0, "parameters": ["Battle Animation ID = 22"] },
             { "code": 657, "indent": 0, "parameters": ["Mirror Animation? = false"] },
             { "code": 657, "indent": 0, "parameters": ["Wait For Animation? = false"] },
-            { "code": 108, "indent": 0, "parameters": ["Exemplo de animação inserida diretamente na conversa através dos bustos."] },
+            { "code": 108, "indent": 0, "parameters": ["Exemplo de animação inserida diretamente na conversa através de outro plugin em compatibilidade com os bustos."] },
             { "code": 230, "indent": 0, "parameters": [60] },
             {
               "code": 357,
