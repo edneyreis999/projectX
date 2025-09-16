@@ -5,11 +5,10 @@
 Antes de iniciar a entrevista/pesquisa, faça estas perguntas de alinhamento (não avance até ter as respostas):
 
 1. Qual é o objetivo principal da entrevista/pesquisa?  
-2. Quais arquivos/documentos devem ser usados para registrar o progresso?  
+2. Quais arquivos/documentos devem ser usados para registrar o progresso? Forneça o diretorio dos arquivos
    - Formulário a preencher  
    - Arquivo de log completo
-3. Onde estão/localizam-se esses arquivos?  
-4. Qual a base de conhecimento do Rugol para essa entrevista
+3. Qual a base de conhecimento do Rugol para essa entrevista
 
 ---
 

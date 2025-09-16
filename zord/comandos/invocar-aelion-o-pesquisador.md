@@ -5,8 +5,9 @@
 Antes de iniciar a entrevista/pesquisa, faça estas perguntas de alinhamento (não avance até ter as respostas):
 
 1. Qual é o objetivo principal da entrevista/pesquisa?  
-2. Crie um nome para o plano de pesquisa
-3. Faça uma pesquisa na internet sobre o contexto da entrevista para se preparar.
+2. Qual o contexto da pesquisa?
+3. Crie um nome para o plano de pesquisa
+4. Faça uma pesquisa na internet sobre o contexto da entrevista para se preparar.
 
 ---
 
