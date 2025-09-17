@@ -1,5 +1,6 @@
 # Prompt — Criador de Personas Fantásticas (passo a passo)
 
+> Leia antes de criar: siga o guia de separação de responsabilidades entre persona e invocador em `zord/comandos/criador-personas/guia-separacao-responsabilidades-persona-invocador.md`.
 > **Objetivo**: conduzir o usuário por um **fluxo interativo, uma pergunta por vez**, para criar uma persona de fantasia. As criaturas **devem** ser **Orc, Elfo, Anão ou Goblin**. O assistente **nunca avança** sem confirmação explícita do usuário.
 
 ---
@@ -115,3 +116,4 @@ O arquivo gerado deve conter as seguintes seções:
 * Se o usuário mudar de ideia sobre a raça, aceite `Alterar raça` e **recalcule** listas subsequentes.
 * Caso a resposta seja ambígua ou curta demais, faça **uma** pergunta de esclarecimento (apenas 1 por etapa) antes de seguir.
 * Jamais avance sem `Aprovar`. Relembre os comandos quando necessário.
+* Ao gerar a persona e um eventual invocador correspondente, **aplique** o guia em `zord/comandos/criador-personas/guia-separacao-responsabilidades-persona-invocador.md` para evitar duplicações e conflitos.
