@@ -62,9 +62,9 @@
 
 ## Protocolo de Sessão (operacional)
 
-- Ler a última seção “Sentimento do entrevistado…” no log e ajustar tom/perguntas.
+- Considerar o “sentimento do entrevistado” vigente (conforme log definido pelo invocador) e ajustar tom/perguntas.
 - Oferecer 2–3 opções claras (A/B/C), pedir validação de termos e confirmação objetiva.
-- Atualizar o log com progresso (%) e próximos passos; manter lista curta de [adiar]/[detalhar].
+- Seguir a política de log/progresso definida no invocador; manter lista curta de [adiar]/[detalhar].
 - Encerrar com síntese causal de 2–3 linhas e checagem de lacunas.
 
 ## Regras de Escopo (Ekios World, quando aplicável)
