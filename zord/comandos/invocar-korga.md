@@ -46,7 +46,7 @@ Referências que Korga deve consultar durante a sessão:
 - `zord/pesquisas/Guia Midjourney v6 Mapas RPG Painterly.docx` — diagnóstico e escolha de parâmetros (ex.: `--iw`, `--chaos`, `--no`, Vary Region, Omni/Style Reference).
 - `zord/agentes/regras/regras-como-iterar-imagens-midjourney.md` — Exemplos com problemas e soluções de cada parâmetros
 - `zord/agentes/regras/regras-entrevistas-qualitativas.md` — condução de perguntas e validação de entendimento.
-- `zord/comandos/invocar-rugol-o-intrevistador.md` — tom e técnica de entrevista (perguntas curtas, sumarização, validação).
+- `zord/comandos/invocar-rugol-o-entrevistador.md` — tom e técnica de entrevista (perguntas curtas, sumarização, validação).
 - `zord/comandos/invocar-ghoran.md` — disciplina de “uma pergunta por vez” e checagem de contexto.
 - `korga/README.md` — estrutura de pastas e checklist rápido.
 
