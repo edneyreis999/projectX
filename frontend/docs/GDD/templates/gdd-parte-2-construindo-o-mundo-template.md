@@ -1,9 +1,14 @@
 # GDD — Construindo o Mundo (Template)
 
 <!--
-Público‑alvo: equipe de Narrative Design.
-Base: zord/pesquisas/Plano de GDD Narrativo para RPG Maker.docx — Parte II (Construindo o Mundo) + docs em frontend/docs/GDD.
-Importante: este arquivo é um TEMPLATE. Não descreva o mundo final aqui; preencha os campos objetivamente.
+Público‑alvo: equipe de Narrative Design e Game Design.
+Base: inspirado em “Parte II: Construindo o Mundo – O Palco para a Sua História”
+(zord/pesquisas/Plano de GDD Narrativo para RPG Maker.docx), adaptado para formato
+agnóstico de engine.
+Importante: este arquivo é um TEMPLATE. Não descreva o mundo final aqui; preencha os
+campos de forma objetiva e verificável.
+Nota: onde houver referência a elementos de jogo (ex.: níveis, cenas, zonas,
+variáveis/flags), use os equivalentes do seu ambiente de desenvolvimento.
 -->
 
 ## Progresso e Pesos
@@ -21,7 +26,7 @@ Importante: este arquivo é um TEMPLATE. Não descreva o mundo final aqui; preen
 - S5 Facções, Poder e Economia: 10%
 - S6 Tecnologia/Magia e Regras do Sistema: 10%
 - S7 Ecologia e Criaturas: 8%
-- S8 Regiões Jogáveis e Mapeamento no RPG Maker MZ: 18%
+- S8 Regiões Jogáveis e Mapeamento: 18%
 - S9 Clima, Dia/Noite e Estados Ambientais: 8%
 - S11 Gating e Progressão no Mundo: 10%
 
@@ -29,6 +34,12 @@ Resumo Geral (preencher após cada rodada de edição):
 
 - Total marcado: x/y itens
 - Progresso ponderado: z%
+
+---
+
+# Parte 1 — Contexto Narrativo
+
+Aplicável a jogos e livros de fantasia. Os itens desta parte focam na consistência do mundo e na utilidade prática para cenas, capítulos e/ou conteúdo jogável.
 
 ---
 
@@ -61,24 +72,24 @@ Concluído: x/3 (y%)
 
 ## S2 — História e Linha do Tempo
 
-Objetivo: delinear eventos macro que explicam o estado atual do mundo; útil para ambientação, rumores e gating.
+Objetivo: delinear eventos macro que explicam o estado atual do mundo; útil para ambientação, rumores, capítulos/cenas e gating de conteúdo.
 
 Campos:
 
 - Linha do tempo sintética: <!-- 5–7 marcos; formato AAAA: evento curto -->
 - Causas e efeitos centrais: <!-- 3 bullets ligando causa→efeito →estado atual -->
-- Eventos recentes que afetam o jogo: <!-- 2–3; justificam encontros e facções -->
+- Eventos recentes que afetam a narrativa: <!-- 2–3; justificam encontros, cenas e facções -->
 
 Critérios de Aceitação:
 
 - 5–7 marcos cronológicos, sem lore excessiva.
-- Cada evento recente mapeado para 1 consequência in‑game.
+- Cada evento recente mapeado para 1 consequência concreta (em cenas/capítulos).
 
 Checklist:
 
 - [ ] Linha do tempo (5–7 marcos)
 - [ ] 3 relações causa→efeito
-- [ ] 2–3 eventos recentes com impacto jogável
+- [ ] 2–3 eventos recentes com impacto narrativo e/ou jogável
 
 Concluído: x/3 (y%)
 
@@ -91,13 +102,13 @@ Objetivo: definir macro‑geografia e biomas que afetam encontros, recursos, nav
 Campos:
 
 - Mapa macro (descrição textual): <!-- regiões, barreiras naturais, pontos de interesse -->
-- Biomas principais: <!-- 3–6; cada um com clima, terreno, recursos típicos -->
+- Biomas principais: <!-- 3–6; cada um com clima, terreno, recursos/serviços típicos -->
 - Riscos ambientais por bioma: <!-- 1–2 por bioma -->
 
 Critérios de Aceitação:
 
-- Biomas listados com 3 atributos mínimos (clima, terreno, recursos).
-- Riscos com impacto jogável (dano, lentidão, exigência de item).
+- Biomas listados com 3 atributos mínimos (clima, terreno, recursos/serviços).
+- Riscos com impacto prático (p. ex., dano/lentidão/exigência de item no jogo; obstáculos/pressão em cenas narrativas).
 
 Checklist:
 
@@ -115,14 +126,14 @@ Objetivo: tornar práticas as nuances sociais que influenciam diálogos, rumores
 
 Campos:
 
-- Costumes e tabus: <!-- 3–5; efeito nos NPCs/lojas -->
-- Religiões/mitos dominantes: <!-- 1–2; símbolo/prática → efeito de jogo -->
+- Costumes e tabus: <!-- 3–5; efeito prático em interações (pessoas/lojas/cenas) -->
+- Religiões/mitos dominantes: <!-- 1–2; símbolo/prática → efeito prático -->
 - Idiomas/variações de fala: <!-- 1–2 marcas linguísticas → uso moderado -->
 
 Critérios de Aceitação:
 
-- Cada costume/tabu com uma manifestação jogável.
-- Religiosidade com 1 ganchos práticos (evento, item, local).
+- Cada costume/tabu com uma manifestação narrativa.
+- Religiosidade com 1 gancho prático (evento, item, local, rito/cena).
 
 Checklist:
 
@@ -147,13 +158,13 @@ Campos:
 Critérios de Aceitação:
 
 - Facções com objetivos claros e recursos únicos.
-- Tensões conectadas a mudanças de estado (switch/variável) no jogo.
+- Tensões conectadas a mudanças de estado rastreáveis (marcos narrativos).
 
 Checklist:
 
 - [ ] 2–4 facções modeladas
 - [ ] Economia regional definida
-- [ ] Tensões com estados mutáveis mapeados
+- [ ] Tensões com estados mutáveis/rastreáveis mapeados
 
 Concluído: x/3 (y%)
 
@@ -167,12 +178,12 @@ Campos:
 
 - Fontes e custos: <!-- ex.: mana/energia, consumíveis, cooldowns, sacrifícios -->
 - Limites e proibições: <!-- o que não pode; evita retcons -->
-- Impactos no design: <!-- 3 exemplos concretos (porta, cura, mobilidade) -->
+- Impactos no design: <!-- 3 exemplos concretos (porta, cura, mobilidade) e/ou consequências narrativas -->
 
 Critérios de Aceitação:
 
 - Cada “poder” ou regra com 1 custo e 1 limite.
-- 3 impactos diretos em puzzles/traversal/combate.
+- 3 impactos diretos em conflitos/limitações de cena.
 
 Checklist:
 
@@ -192,49 +203,54 @@ Campos:
 
 - Lista de criaturas por bioma: <!-- 2–3 por bioma -->
 - Comportamentos e gatilhos: <!-- agressivo, territorial, noturno; gatilho → efeito -->
-- Recursos/itens associados: <!-- drops, crafting -->
 
 Critérios de Aceitação:
 
-- Cada criatura ligada a 1 bioma, 1 comportamento e 1 recurso.
+- Cada criatura ligada a 1 bioma, 1 comportamento e 1 recurso/valor.
 
 Checklist:
 
 - [ ] 2–3 criaturas por bioma
 - [ ] Gatilhos comportamentais definidos
-- [ ] Tabela de drops/crafting básica
+- [ ] Relevância narrativa básica
 
 Concluído: x/3 (y%)
 
 ---
 
-## S8 — Regiões Jogáveis e Mapeamento no RPG Maker MZ
+# Parte 2 — Contexto para Jogos (agnóstico de engine)
 
-Objetivo: mapear o mundo para artefatos do MZ (Map IDs, Tilesets, Region IDs, Terrain Tags) e entradas de conteúdo.
+Aplica a qualquer engine. Traduza elementos para os artefatos do seu projeto (p. ex., níveis/cenas, camadas, zonas/regiões, marcadores/tags, flags/variáveis), sem depender de nomes proprietários.
+
+---
+
+## S8 — Regiões Jogáveis e Mapeamento
+
+Objetivo: mapear o mundo para artefatos do projeto (níveis/cenas, coleções visuais, zonas/tags e transições) e entradas de conteúdo.
 
 Campos:
 
-- Regiões jogáveis: <!-- tabela curta Nome → Map_ID(s) → Tileset_ID → notas -->
-- Uso de Region IDs: <!-- 3–6 IDs por mapa para encontros, armadilhas, colisões especiais -->
-- Uso de Terrain Tags: <!-- 0–7 para travessia/efeitos -->
-- Portas/Transições: <!-- conexões entre mapas; condições de entrada -->
+- Regiões jogáveis: <!-- tabela curta Nome → Nível/Cena(s) → Coleção visual (tileset/palette/material) → notas -->
+- Uso de Zonas/Regiões: <!-- 3–6 zonas por nível para encontros, armadilhas, colisões especiais, scripts/triggers -->
+- Uso de Tags de Terreno/Área: <!-- 0–7 categorias para travessia/efeitos (lento, escorregadio, venenoso etc.) -->
+- Portas/Transições: <!-- conexões entre níveis/cenas; condições de entrada/saída → carregamento, checkpoints -->
 
 Critérios de Aceitação:
 
-- Cada região com ao menos 1 Map_ID e Tileset_ID.
-- Regras de Region ID e Terrain Tag documentadas por mapa.
+- Cada região com ao menos 1 nível/cena e uma coleção visual definida.
+- Regras de zonas e tags de terreno/área documentadas por nível/cena.
 
 Checklist:
 
-- [ ] Tabela regiões → Map_ID/Tileset_ID
-- [ ] Region IDs por mapa definidos
-- [ ] Terrain Tags por mapa definidos
+- [ ] Tabela regiões → Nível/Cena/Coleção visual
+- [ ] Zonas/regiões por nível definidas
+- [ ] Tags de terreno/área por nível definidas
 - [ ] Portas/transferências mapeadas
 
 Concluído: x/4 (y%)
 
 <!-- Exemplo mínimo de linha de tabela (substituir):
-Região: Planalto Seco | Map_ID: 005,006 | Tileset_ID: 02 | Region IDs: 1=grama alta, 2=armadilha | Terrain: 1=areia (lento)
+Região: Planalto Seco | Nível/Cena: planalto_005, planalto_006 | Coleção visual: tileset_deserto_v2 | Zonas: 1=grama alta, 2=armadilha | Tag terreno: areia (lento)
 -->
 
 ---
@@ -245,18 +261,18 @@ Objetivo: definir estados que alteram visibilidade, encontros e navegação.
 
 Campos:
 
-- Ciclo de tempo: <!-- variável V###_HoraDia (0–23) → efeitos de BGM, luz -->
+- Ciclo de tempo: <!-- parâmetro/variável HoraDia (0–23) → efeitos de trilha/ambiente sonoro, iluminação, spawn -->
 - Climas possíveis: <!-- chuva, neblina, tempestade; efeitos e taxas de encontro -->
 - Estados ambientais locais: <!-- enchente, nevasca, poeira; bloqueios e danos -->
 
 Critérios de Aceitação:
 
-- Variável de hora documentada e efeitos por faixa.
+- Parâmetro de hora documentado e efeitos por faixa.
 - Climas com impactos claros (probabilidades/gating/dano).
 
 Checklist:
 
-- [ ] Definição da variável de hora (V###)
+- [ ] Definição do parâmetro de hora (nome/faixa)
 - [ ] Lista de climas com efeitos
 - [ ] Estados ambientais e condições de entrada/saída
 
@@ -278,14 +294,14 @@ Campos:
 Critérios de Aceitação:
 
 - Cada bloqueio possui ao menos 1 chave e 1 alternativa.
-- Estados rastreados em switches/variáveis específicos.
+- Estados rastreados em flags/variáveis específicos.
 
 Checklist:
 
 - [ ] Lista de bloqueios com condição
 - [ ] Chaves/alternativas mapeadas
 - [ ] E‑C‑R registrado para decisões
-- [ ] Estados ligados a S/V concretos
+- [ ] Estados ligados a flags/variáveis concretos
 
 Concluído: x/4 (y%)
 

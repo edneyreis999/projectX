@@ -1,21 +1,29 @@
- Em tempos passados, quando Ékkios ainda era jovem e a vida seguia um ritmo mais sereno, existia uma raça de seres humanoides que habitava a superfície do continente. Eram conhecidos como Os Antigos, reverenciados por sua sabedoria e poder. Seu império se estendia por todo o continente, com cidades prosperando em todas as regiões.
+A Queda dos Antigos
 
- No entanto, com o passar dos anos, tudo começou a mudar. Vitalis, também conhecido como o Deus da Vida, tornava-se mais forte e abrasador, fazendo com que as temperaturas subissem. As chuvas rarearam e os ventos já não sopravam mais. Os primeiros a sentir os efeitos dessas mudanças foram aqueles que habitavam a parte norte do império, responsáveis pela mineração. O calor implacável tornou a vida na superfície insuportável e assim, começaram a cavar túneis e cavernas subterrâneas como refúgio contra o poder escaldante do sol.
+Em tempos passados, quando Ékkios ainda era jovem e a vida seguia um ritmo sereno, uma raça de seres humanoides habitava a superfície do continente. Eram conhecidos como Os Antigos, reverenciados por sua sabedoria e poder. Seu império se estendia por todo o continente, com cidades prósperas em todas as regiões.
 
- Dessa forma, os Antigos, após migrarem para o subsolo em definitivo, passaram a ser conhecidos como Ignotos. Mudaram drásticamente seus habitos, desenvolveram a habilidade de cultivar plantas para alimentação que cresciam mesmo sem a benção da luz do sol, já que tudo na superfície morria. Com o tempo, o grande império que haviam construído perdeu-se.
+Com o passar dos séculos, porém, os Antigos se voltaram para a magia e a alquimia, tornando-se cada vez mais autossuficientes. Aos poucos, começaram a esquecer — ou até a menosprezar — a bênção de Vitasolis, o deus Sol, que havia lhes concedido fartura e prosperidade.
 
- Havia poucas regiões frias restando no continente, algubs ignotos tentaram mudar-se para esses locais, entretanto, não conseguiram se adaptar, plantar ou caçar.
+Enciumado e furioso, Vitasolis decidiu castigá-los. Aproximou-se de Galru e deu início a um verão avassalador, abrasador e interminável, com o propósito de erradicar a vida e provar aos Antigos que ainda dependiam de suas bênçãos diárias. As chuvas cessaram, os ventos se calaram, e a superfície tornou-se quase inabitável.
 
- Com o tempo, os habitantes das sombras tornaram-se cada vez mais autossuficientes, dominando a alquimia para criar subsistência. Entretanto, ao longo dos anos, os mais velhos, que haviam nascido e vivido boa parte de suas vidas na superfície, tornaram-se mais agressivos e ansiosos, reivindicando o velho mundo de volta e corrempendo mais e mais membros da raça a cada novo ciclo da lua que já quase não era vista no céu pelos exploradores.
+Desesperados, os Antigos cavaram túneis e cavernas subterrâneas, buscando refúgio contra o poder inclemente do sol. Mas a ira de Vitasolis não cessou. Convencido de que, longe de sua luz, eles invariavelmente morreriam, o deus enviou um de seus servos celestes para criar um selo mágico, aprisionando os Antigos debaixo da terra para sempre.
 
- Temendo que se voltassem contra ele e usassem da benção da alquimia e magia para destroná-lo, Vitalis decidiu criar um selo mágico para os isolar completamente da superfície.
+⸻
 
- Com o tempo, ignotos tornaram-se dependentes de poções feitas para simular os efeitos que o sol, numa temperatura correta, teria sobre o corpo deles, consumindo grandes quantidades a cada novo dia, fazendo com que os recursos escasseassem. Os efeitos colaterais da abstinência foram agitação, fúria incontrolável e guerra entre o próprio povo.
+O Povo das Sombras
 
- Gradualmente, facções surgiram e começaram a tomar controle de cada pequeno pedaço de terra restante. As guerras entre essas facções tornaram-se cada vez mais brutais, A sociedade Ignota desmoronou, afundando de vez em um abismo que parecia não ter fim.
+A partir de então, os Antigos passaram a ser conhecidos como Ignotos. Seus costumes mudaram radicalmente: aprenderam a cultivar plantas que cresciam sem luz solar e a produzir poções para substituir os efeitos do sol sobre o corpo.
 
- Encontraram-se presos sob a terra e, em algum momento, seus corpor evoluíram, fundindo-se com as sombras de maneira a não precisar mais do brilho do astro de fogo. Haviam se tornado sua ruína, criaturas irreconhecíveis que mais se pareciam com monstros. Finalmente esqueceram-se da vida que conheciam antes, da sabedoria e prosperidade da qual uma vez desfrutaram. O que restou foi apenas caos e destruição.
+O grande império da superfície perdeu-se com o tempo, restando apenas ruínas queimadas pela fúria de Vitasolis.
 
- Um de seus líderes, previu então que em breve seriam libertos, pois Vitalis os considerava tão insgificantes que ficara descuidado e já não se lembrava do selo. Os ignotos estavam finalmente prontos para obter sua vingança, mergulhariam o mundo da superfície em sangue e caos.
+Os Ignotos, cada vez mais autossuficientes, aprofundaram-se na alquimia e na magia. Porém, o isolamento e a dependência das poções trouxeram efeitos colaterais: agitação, fúria incontrolável e divisões internas. Facções surgiram, guerras civis devastaram o submundo, e a antiga sociedade afundou em caos.
 
-"Preparem-se, óh filhos e filhas, pois em breve... toda criação sofrerá o mesmo desespero ao qual nos submeteram!".
+Com as gerações, seus corpos evoluíram para se adaptar às trevas, fundindo-se às sombras. Tornaram-se irreconhecíveis, mais próximos de monstros do que de homens. O passado de sabedoria e prosperidade foi esquecido. Restaram apenas ruína e destruição.
+
+⸻
+
+A Promessa da Vingança
+
+Certo líder dos Ignotos, em meio ao colapso de sua sociedade, profetizou que o tempo da vingança se aproximava. Vitasolis, em sua arrogância, já não se lembrava do selo que os mantinha presos. Quando a oportunidade chegasse, os Ignotos emergiriam novamente à superfície, trazendo consigo guerra e sangue.
+
+“Preparem-se, ó filhos e filhas, pois em breve… toda a criação sofrerá o mesmo desespero ao qual fomos condenados!”

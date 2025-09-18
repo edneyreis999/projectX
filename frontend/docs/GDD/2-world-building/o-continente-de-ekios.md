@@ -80,10 +80,12 @@ Campos:
   - Ruptura do selo → ignotos libertos → escalada de conflito → queda de Gildrat → refugiados em Daratrine.
   - Divisão élfica (Conselho isolacionista vs seguidores de Elmartin) → ajuda condicionada → progresso depende de convencer o líder dos seguidores de Elmartin; sua filha integra o grupo de Thorin no retorno a Gildrat.
   - Magia cara/limitada + tecnologia rudimentar → viagens e mobilização lentas → necessidade de soluções locais (ex.: canoa dos goblins) e alianças táticas.
+  - Influência do Profeta das Sombras (visões/sonhos) sobre Dambur → decisão de iniciar a exploração de Melios para localizar o selo → ordem de explosão do selo apesar dos alertas culturais (via explosivos de Balastrus).
 - Eventos recentes que afetam o jogo:
   - Desmoronamento nas Minas de Melios → rota principal bloqueada; missão de desobstrução ou desvio; recursos escassos aumentam risco/encontros.
   - Travessia do grande rio → tribo goblin em Metsa ajuda após missão principal; um goblin artesão entra no grupo e constrói o barco; libera navegação fluvial.
   - O Alerta aos Elfos em Arcaror → persuasão/condições cumpridas; parte dos elfos (seguidores de Elmartin) aliam-se; desbloqueia suporte mágico/recursos para o próximo arco.
+  - Vestígios em Metsa (relato de Zik, batedor goblin) → carro leve de lenhadores goblins tombado; dois anões encontrados “secos” (vida drenada); odor acre de reagentes; marcas de arrasto/garras somem em fenda → sinal de expansão dos Ignotos e gatilho para recrutamento de Zik.
 
 Critérios de Aceitação:
 
@@ -221,9 +223,19 @@ Objetivo: conectar criaturas a biomas, recursos e comportamentos que informam en
 
 Campos:
 
-- Lista de criaturas por bioma: <!-- 2–3 por bioma -->
-- Comportamentos e gatilhos: <!-- agressivo, territorial, noturno; gatilho → efeito -->
-- Recursos/itens associados: <!-- drops, crafting -->
+- Lista de criaturas por bioma:
+  - Subsolo/Melios → Ignotos Sombrio (magia), Ignotos Bruto (infértil para magia)
+  - Metsa (fissuras/bordas de túnel) → vestígios de Ignotos; goblins; fauna local
+- Comportamentos e gatilhos (Ignotos):
+  - Gatilhos de aparição: ruptura de selos/estruturas; ruído contínuo de mineração/explosões; cheiro de matéria orgânica fresca; luz intensa em áreas profundas.
+  - Primeiro minuto: ataque imediato e silencioso; neutralizam vivos e cessam fontes de ruído/luz.
+  - Padrão de ação: eliminar/abater; coletar matéria orgânica e levar ao subsolo para alquimia; priorizam grupos isolados.
+  - Retirada: retorno rápido com cargas; desabam/selam passagens; deixam zona “estéril”.
+  - Variação: Ignotos Brutos (inférteis para magia) deixam rastro físico de destruição (objetos quebrados) e recuam em blocos.
+- Recursos/itens associados (pistas diegéticas):
+  - Odor acre de reagentes; marcas de garras e arrasto; corpos “secos” (vida drenada); resíduos vítreos/ampolas rachadas ocasionais.
+- Cena exemplar (Metsa):
+  - Madrugada após nevasca leve; carro leve de lenhadores goblins tombado; dois anões (longe de Gildrat) encontrados “secos”; trilhas de arrasto somem em fenda; Zik (batedor goblin) relata “cheiro químico” persistente — indício de expansão dos Ignotos e motivação para seu recrutamento (início do Ato II).
 
 Critérios de Aceitação:
 
