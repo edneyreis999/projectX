@@ -1,8 +1,8 @@
 # Plano de Melhoria da Explicação do Sistema de Magia
 
-Objetivo: Reestruturar e detalhar `temp-gdd-ekios/magia.md` para esclarecer fundamentos, taxonomia, custos/limites, progressão e o papel das Pedras de Runas Mágicas, incorporando uma análise comparativa de referência externa sem citar nomes próprios dessa referência.
+Objetivo: Criar `temp-gdd-ekios/magia.v2.md`, reestruturando e detalhando a explicação do sistema de magia para esclarecer fundamentos, taxonomia, custos/limites, progressão e o papel das Pedras de Runas Mágicas, incorporando uma análise comparativa de referência externa sem citar nomes próprios dessa referência, e mantendo o arquivo original inalterado.
 
-Escopo: Alterar apenas `temp-gdd-ekios/magia.md` com base neste plano. Não introduzir novos sistemas além dos já previstos (mana, natureza elemental, combinações, selos verbais rúnicos, progressão élfica, Pedras de Runas Mágicas, ilusão restrita à comunicação telepática, técnicas corporais e de cura, técnicas sábias como entidades vinculadas).
+Escopo: Não alterar `temp-gdd-ekios/magia.md`. Produzir um novo arquivo `temp-gdd-ekios/magia.v2.md` com base neste plano. Não introduzir novos sistemas além dos já previstos (mana, natureza elemental, combinações, selos verbais rúnicos, progressão élfica, Pedras de Runas Mágicas, ilusão restrita à comunicação telepática, técnicas corporais e de cura, técnicas sábias como entidades vinculadas).
 
 Critérios de aceite (gerais):
 
@@ -49,7 +49,7 @@ Pontos para analisar e mapear para Ekios (descrever sem nomes próprios):
 
 ## Tarefas (imperativo, detalhadas)
 
-1) Redesenhe a estrutura de `magia.md` para leitura por objetivos
+1) Estruture `magia.v2.md` para leitura por objetivos
 
 - Introduza um “Como funciona em 1 minuto” (resumo guiado por fluxo: mana → selos verbais rúnicos → natureza → custo/risco → exemplos).
 - Reordene seções para: Fundamentos → Sintaxe Rúnica → Naturezas e Combinações → Taxonomia → Custos e Riscos → Pedras de Runas Mágicas → Progressão → Exemplos → Sociedade/História → Glossário.
@@ -129,8 +129,8 @@ Pontos para analisar e mapear para Ekios (descrever sem nomes próprios):
 
 ## Entregáveis
 
-- `temp-gdd-ekios/magia.md` reestruturado conforme Tarefas 1–14.
-- Glossário e anexos (sílabas rúnicas e templates) incorporados ao final do documento.
+- `temp-gdd-ekios/magia.v2.md` criado e completo conforme Tarefas 1–14.
+- Glossário e anexos (sílabas rúnicas e templates) incorporados ao final do novo documento.
 
 ## Observações de implementação
 
