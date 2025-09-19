@@ -7,7 +7,7 @@
 ### **Cidades/locais relevantes para essa raça -**
 
 ```jsx
- **Cetra:** Além de sua terra natal, ****há outra ****cidade de suma importância, Cetra, na qual também se encontra a torre da magia universal do continente de Ékios que recebera o mesmo nome da cidade. É considerado um polo que ensina criaturas e forasteiros a aprimorar seus talentos mágicos.
+ **Cetra:** Além de sua terra natal, ****há outra ****cidade de suma importância, Cetra, na qual também se encontra a torre da magia universal do continente de Ekios que recebera o mesmo nome da cidade. É considerado um polo que ensina criaturas e forasteiros a aprimorar seus talentos mágicos.
 ```
 
 ### **Expectiva de Vida -**
@@ -57,7 +57,7 @@
 ### **História -**
 
 ```jsx
- Arcaror, uma tribo de elfos manipuladores de magia que se localizava ao leste de Ékios, na grande grande extremidade de fronteira da Floresta de Metsa com o território desconhecido, foi o primeira a ser alertada sobre os perigos e devastação que os Ignotos vinham causando. Avisaram goblins, ogros, trolls e orcs logo em seguida.
+ Arcaror, uma tribo de elfos manipuladores de magia que se localizava ao leste de Ekios, na grande grande extremidade de fronteira da Floresta de Metsa com o território desconhecido, foi o primeira a ser alertada sobre os perigos e devastação que os Ignotos vinham causando. Avisaram goblins, ogros, trolls e orcs logo em seguida.
 ```
 
 ### **Interações com Outras Raças -**

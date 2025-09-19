@@ -45,5 +45,3 @@
 ```coffeescript
  Com as Pedras Abençoadas, a aliança primeiro foi capaz de resistir aos avanços dos Ignotos, para logo em seguida, vencer diversas lutas. A combinação entre fúria, habilidades de combate corpo a corpo e magia se provou formidável. A esperança havia retornado,orcs, trolls e ogros tornaram-se máquinas de destruição com poderes elementais fluindo pelo corpo. 
 ```
-
-# **7. O Fim da Guerra e o Sacrifício do Mago:**

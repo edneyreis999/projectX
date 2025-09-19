@@ -1,7 +1,7 @@
 ### **Terra Natal -**
 
 ```jsx
- [Gildrat](https://www.notion.so/Gildrat-63f772b8968344559caf7e1bb490d168?pvs=21) ficava no coração das montanhas que se erguiam a noroeste de Ékios, antes da grande invasão. Depois da destruição de sua terra natal causada pela guerra, grande parte dos anões que restaram não quiseram se juntar às outras raças em [Daratrine](https://www.notion.so/Daratrine-3668c72504d74cf78186255b91da8fb9?pvs=21), realocando-se para as cordilheiras mais altas ao norte, fundando assim [Nova Gildrat](https://www.notion.so/Nova-Gildrat-24db9412ec20440097d131a93ff2625d?pvs=21).
+ [Gildrat](https://www.notion.so/Gildrat-63f772b8968344559caf7e1bb490d168?pvs=21) ficava no coração das montanhas que se erguiam a noroeste de Ekios, antes da grande invasão. Depois da destruição de sua terra natal causada pela guerra, grande parte dos anões que restaram não quiseram se juntar às outras raças em [Daratrine](https://www.notion.so/Daratrine-3668c72504d74cf78186255b91da8fb9?pvs=21), realocando-se para as cordilheiras mais altas ao norte, fundando assim [Nova Gildrat](https://www.notion.so/Nova-Gildrat-24db9412ec20440097d131a93ff2625d?pvs=21).
 ```
 
 ### **Poderes/Habilidades:** -

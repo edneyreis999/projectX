@@ -1,6 +1,6 @@
 A Queda dos Antigos
 
-Em tempos passados, quando Ékkios ainda era jovem e a vida seguia um ritmo sereno, uma raça de seres humanoides habitava a superfície do continente. Eram conhecidos como Os Antigos, reverenciados por sua sabedoria e poder. Seu império se estendia por todo o continente, com cidades prósperas em todas as regiões.
+Em tempos passados, quando Ekios ainda era jovem e a vida seguia um ritmo sereno, uma raça de seres humanoides habitava a superfície do continente. Eram conhecidos como Os Antigos, reverenciados por sua sabedoria e poder. Seu império se estendia por todo o continente, com cidades prósperas em todas as regiões.
 
 Com o passar dos séculos, porém, os Antigos se voltaram para a magia e a alquimia, tornando-se cada vez mais autossuficientes. Aos poucos, começaram a esquecer — ou até a menosprezar — a bênção de Vitasolis, o deus Sol, que havia lhes concedido fartura e prosperidade.
 

@@ -1,31 +1,30 @@
-# arcaror
 
-```coffeescript
- É a deslumbrante cidade mágica dos elfos, localizada ao extremo oeste do continente de Ekios, lugar onde os elfos florescem em sua conexão com a magia e a natureza.
-```
+# Arcaror
 
-# **Arquitetura e Paisagem:**
+## Resumo
 
-```coffeescript
- A cidade de Arcaror é construída com uma arquitetura élfica impressionante. As casas e edifícios são feitos de mármores cortados e dispostos através da magia, muitas vezes fundidos organicamente com alguma outra substância, sempre com ênfase em clarabóias e muita luz. As estruturas são elegantes, com curvas suaves e entalhes intrincados.
+Arcaror é a deslumbrante cidade mágica dos elfos, localizada no extremo oeste de Ekios. É um centro de harmonia entre magia e natureza, onde tradição, arquitetura e espiritualidade se fundem.
 
- **Moradias nas Árvores:** Muitas casas dos elfos estão localizadas nas árvores, conectadas por passarelas mágicas e plataformas flutuantes. Elas se misturam perfeitamente com aura densa que rodeia a cidade.
+---
 
- **Jardins Encantados:** Arcaror é famosa também por seus jardins encantados. Eles são repletos de flores mágicas que brilham à noite e árvores antigas que sussurram segredos, sendo muitos deles locais de meditação e contemplação.
-```
+## Arquitetura e Paisagem
 
-# **Magia e Sociedade:**
+* **Estilo Élfico:** Construções de mármore moldado por magia, com curvas suaves, entalhes detalhados e claraboias que privilegiam a luz natural.
+* **Moradias nas Árvores:** Casas suspensas em árvores, ligadas por passarelas mágicas e plataformas flutuantes, integrando-se à aura mística da cidade.
+* **Jardins Encantados:** Repletos de flores luminosas à noite e árvores ancestrais que sussurram segredos. Servem como locais de contemplação e meditação.
 
-```coffeescript
- **Conselho dos Anciãos:** A cidade é governada por um conselho de elfos sábios e experientes, conhecido como o "Conselho dos Anciãos." Eles tomam decisões importantes para a comunidade e protegem os segredos mágicos da cidade.
-```
+---
 
-# **Cultura e Tradições:**
+## Magia e Sociedade
 
-```coffeescript
- **Danças e Música Élfica:** Os elfos de Arcaror são conhecidos por suas belas danças e músicas élficas. Eles realizam festivais anuais com apresentações mágicas de dança e músicos talentosos.
+* **Conselho dos Anciãos:** Grupo de elfos sábios que governa a cidade, preservando tradições e guardando os segredos arcanos de Arcaror.
 
- **Festivais das Estações:** Arcaror celebra as mudanças de estações com festivais mágicos. Cada festival é marcado por rituais e tradições únicas que honram a natureza.
+---
 
- **Guardiões da Natureza e da Vida:** Os elfos de Arcaror veem-se como guardiões da floresta circundante, assim como dos rios próximos e da vida. Protegem a vida selvagem e as criaturas mágicas que habitam a área.
-```
+## Cultura e Tradições
+
+* **Danças e Música Élfica:** Celebrações marcadas por performances artísticas mágicas e apresentações musicais refinadas.
+* **Festivais das Estações:** Cada mudança de estação é acompanhada por rituais e festividades que honram a natureza.
+* **Guardiões da Natureza:** Os elfos se consideram protetores das florestas, rios e criaturas mágicas que vivem ao redor da cidade.
+
+---
