@@ -1,6 +1,7 @@
 # Magia em Ekios — v2
 
 Sumário
+
 - Resumo de 1 Minuto
 - Fundamentos
 - Sintaxe Rúnica (Selos Verbais)
@@ -23,7 +24,7 @@ Sumário
 
 ## Resumo de 1 Minuto
 
-Mana é a energia que alimenta toda magia. Conjurar é pronunciar sequências rúnicas (selos verbais) que descrevem intenção: elemento, forma, magnitude, duração, alcance, alvo, ancoragem e condições. Afinidade facilita certos elementos; maestria reduz custo, tempo e falhas. As cinco naturezas (fogo, vento, raio, terra, água) podem ser combinadas para efeitos compostos. Pedras de Runas Mágicas amplificam e estabilizam conjurações, mas esgotam mana e, ao zerar, drenam energia vital (risco de morte). Ilusões são limitadas à comunicação telepática. Técnicas de selamento não existem. Apenas elfos mantêm ranks de maturidade mágica. 
+Mana é a energia que alimenta toda magia. Conjurar é pronunciar sequências rúnicas (selos verbais) que descrevem intenção: elemento, forma, magnitude, duração, alcance, alvo, ancoragem e condições. Afinidade facilita certos elementos; maestria reduz custo, tempo e falhas. As cinco naturezas (fogo, vento, raio, terra, água) podem ser combinadas para efeitos compostos. Pedras de Runas Mágicas amplificam e estabilizam conjurações, mas esgotam mana e, ao zerar, drenam energia vital (risco de morte)
 
 ---
 
@@ -42,6 +43,7 @@ Mana é a energia que alimenta toda magia. Conjurar é pronunciar sequências r�
 Conjurar é compor uma frase rúnica. Cada “sílaba rúnica” tem uma função semântica.
 
 Categorias de sílabas rúnicas
+
 - elemento: fogo, vento, raio, terra, água
 - forma: flecha, orbe, lâmina, muro, neblina, corrente, véu
 - magnitude: 1 (mínima) a 5 (alta)
@@ -52,14 +54,17 @@ Categorias de sílabas rúnicas
 - condição (opcional): umidade, metal, calor, frio, vento-favorável
 
 Ordem recomendada
+
 1) elemento 2) forma 3) magnitude 4) duração 5) alcance 6) alvo 7) ancoragem 8) condição
 
 Regras práticas
+
 - Inversões mudam ênfase e custo (ex.: colocar “magnitude” cedo tende a aumentar custo e efeito bruto).
 - “Mantras longos” (mais sílabas): mais estáveis e econômicos em mana.
 - “Invocações curtas” (menos sílabas): rápidas, porém mais caras e propensas a falha.
 
 Exemplo progressivo (mesmo efeito com maior maestria)
+
 - Básico: “fogo flecha 1 instante médio único visão”
 - Intermediário: “fogo flecha 2 curta médio único visão ponto”
 - Avançado (sequência reduzida por maestria): “fogo flecha 2 médio visão” (conjurador experiente subentende alvo e ancoragem)
@@ -75,6 +80,7 @@ Exemplo progressivo (mesmo efeito com maior maestria)
 - Água: controle de fluidos, pressão, gelo (via combinação); favorecida por umidade; reduzida em desertos.
 
 Vantagem situacional (exemplos)
+
 - Água ganha eficiência em cavernas úmidas; raio ganha com metais próximos; fogo perde potência sob chuva intensa.
 
 ---
@@ -84,6 +90,7 @@ Vantagem situacional (exemplos)
 Combinar elementos gera efeitos compostos; requer controle e timing precisos.
 
 Exemplos
+
 - Água + Vento → Gelo (resfriamento e solidificação local)
 - Água + Fogo → Vapor (cortina de vapor, queimadura superficial e ocultação)
 - Terra + Fogo → Areia vítrea (solidificação instantânea superficial)
@@ -91,10 +98,12 @@ Exemplos
 - Vento + Raio → Tempestade elétrica (descargas em arco, imprevisíveis)
 
 Pré-requisitos
+
 - Maestria mínima por elemento (sugestão: 2 para combinações simples, 3+ para complexas).
 - Sequências coordenadas ou intercaladas; erros causam dissipação ou retrocesso de mana.
 
 Riscos
+
 - Desalinhamento de tempo entre elementos causa instabilidade e custo dobrado.
 - Falha crítica pode causar descarga no conjurador ou colapso do efeito.
 
@@ -106,6 +115,7 @@ Riscos
 - Maestria: proficiência adquirida; reduz custo/tempo/complexidade e melhora estabilidade.
 
 Indicadores práticos
+
 - Taxa de falha (% por tentativa)
 - Tempo de conjuração (segundos/verso)
 - Custo relativo de mana (escala narrativa 1–5)
@@ -118,18 +128,17 @@ Indicadores práticos
 - Ofensivas: dano direto/indireto (ex.: projéteis, lâminas de vento, ondas de pressão)
 - Defensivas: barreiras, deflexão, amortecimento
 - Gerais: utilidade (luz, manipulação de terreno, secagem/controlar ambiente)
-- Ilusórias (restritas à telepatia): comunicação mental, sugestão leve, compartilhamento de impressões — sem criação de imagens físicas/sonoras no ambiente
+- Telepatia: comunicação mental, sugestão leve, compartilhamento de impressões
 - Corporais: reforço físico temporário via mana (força/velocidade/resistência)
 - Cura: recuperação gradual de ferimentos/doenças (com limites)
 - Sábias (entidades vinculadas): poder emprestado por entidades pactuadas sob condições claras
 
-Nota: técnicas de selamento não existem neste sistema.
-
 Exemplos-limite por categoria
+
 - Ofensivas: “fogo flecha 1” (permitido); “explosão total instantânea 5 em área-média” (permitido, altíssimo risco)
 - Defensivas: “terra muro 2” (permitido); “barreira absoluta impenetrável prolongada” (não permitido — custo inviável)
 - Gerais: “luz orbe 1” (permitido); “controle total de clima regional” (não permitido — escopo fora da taxonomia)
-- Ilusórias: “mente elo 1 curto único toque” (permitido); “projeção de miragens tangíveis” (não permitido)
+- Telepatia: “mente elo 1 curto único toque” (permitido); “projeção de miragens tangíveis” (não permitido)
 - Corporais: “corpo vigor 1 curta si toque” (permitido); “invulnerabilidade total” (não permitido)
 - Cura: “cura tecido 1 toque breve” (permitido); “regeneração instantânea de membro” (não permitido)
 - Sábias: “canalização limitada por condição” (permitido); “posse total permanente” (não permitido)
@@ -144,7 +153,8 @@ Exemplos-limite por categoria
 - Foco sensorial: realce auditivo/visual em janelas curtas.
 
 Custos e riscos
-- Tremores finos após uso prolongado (particularmente com raio).
+
+- Tremores finos após uso prolongado.
 - Arritmias respiratórias com mantras longos durante esforço intenso.
 - Lesões por sobrecarga se combinadas com baixa reserva de mana.
 
@@ -171,27 +181,32 @@ Custos e riscos
 ## Pedras de Runas Mágicas
 
 Tipos
+
 - Amplificação: multiplica potência (típico 2–5×; raras podem chegar a 10× sob risco extremo).
 - Estabilização: reduz taxa de falha, suaviza picos de custo.
 - Foco elemental: melhora controle/eficiência de um elemento específico.
 - Armazenamento: acumula mana para uso posterior (descarga controlada).
 
 Atributos
+
 - Multiplicador de potência (M)
 - Limite de carga (C)
 - Taxa de drenagem (D)
 - Ressonância com afinidade do usuário (R)
 
 Sintonização
+
 - Exige tempo de alinhamento (minutos a horas) e teste de ressonância.
 - Falhas geram zumbido, calor excessivo, tontura ou dessintonia temporária.
 
 Ciclo de risco
+
 1) Consome mana do usuário
 2) Ao zerar, puxa da reserva da Pedra
 3) Ao zerar a Pedra, passa a drenar energia vital → risco de morte
 
 Exemplos práticos
+
 - Usuário sem afinidade: com Pedra de Estabilização + Foco elemental consegue “fogo flecha 1” estável; sem a Pedra, falharia.
 - Usuário experiente: com Pedra de Amplificação em 8×, executa “raio lâmina 3”, mas entra em pré-colapso por drenagem acelerada (suspende antes de falha crítica).
 - Falha evitável: tentativa de combinar Água+Vento com Pedra mal sintonizada gera “gelo” fragmentado; ao perceber zumbido e calor, o conjurador interrompe, evitando queimadura rúnica.
@@ -201,16 +216,20 @@ Exemplos práticos
 ## Custos, Esgotamento e Riscos
 
 Modelo de custo narrativo
+
 - custo_base(elemento) × magnitude × duração × complexidade_da_sequência ÷ maestria × modificadores_do_ambiente
 
 Gatilhos de exaustão
+
 - Sinais: pontadas nas têmporas, visão turva, tremores, perda de palavras rúnicas.
 - Ao zerar mana: iniciar drenagem de energia vital com sintomas agudos (frio interno, fadiga extrema, taquicardia ou bradicardia).
 
 Consequências graduais
+
 - Tontura → Tremor → Perda de consciência → Dano vital (necessita cuidados) → Risco de morte.
 
 Salvaguardas
+
 - Interromper mantra ao primeiro sinal de dessintonia.
 - Preferir mantras longos em operações críticas.
 - Usar Pedras de Estabilização ao combinar elementos.
@@ -219,11 +238,10 @@ Salvaguardas
 
 ## Progressão (Ênfase Élfica)
 
-- Ranks (somente elfos): maturidade no uso da mana, sem relação com guerra. Indicadores: comprimento mínimo de sequência estável, capacidade de combinar elementos sem Pedra, autonomia energética, uso de selos mágicos (tatuagens) mais complexos.
+- Ranks (somente elfos): maturidade no uso da mana. Indicadores: comprimento mínimo de sequência estável, capacidade de combinar elementos sem Pedra, autonomia energética, uso de selos mágicos (tatuagens) mais complexos.
 - Progressão dual:
   - Capacidade: quantidade de mana e magnitude sustentável.
   - Controle: precisão, estabilidade, velocidade com segurança.
-- Talento inato vs. trabalho duro: não adotado como eixo de classificação — foco em maturidade prática e resultados observáveis.
 
 ---
 
@@ -232,6 +250,7 @@ Salvaguardas
 Formato: Intenção → Sequência rúnica → Elemento(s) → Custo narrativo → Risco → Resultado
 
 1) Projétil elemental simples
+
 - Intenção: acertar um alvo a 15 m.
 - Sequência: “fogo flecha 1 instante médio único visão”
 - Elementos: fogo
@@ -240,6 +259,7 @@ Formato: Intenção → Sequência rúnica → Elemento(s) → Custo narrativo �
 - Resultado: projétil ígneo de baixa potência.
 
 2) Barreira terrestre
+
 - Intenção: erguer cobertura contra flechas por 10 s.
 - Sequência: “terra muro 2 curta curto área-pequena ponto”
 - Elementos: terra
@@ -248,6 +268,7 @@ Formato: Intenção → Sequência rúnica → Elemento(s) → Custo narrativo �
 - Resultado: mureta de 1,2 m de altura.
 
 3) Gelo combinado
+
 - Intenção: imobilizar o chão sob dois oponentes por alguns segundos.
 - Sequência: “água neblina 2 curta médio área-pequena visão” + “vento véu 2 curta médio área-pequena visão” (intercaladas)
 - Elementos: água + vento → gelo
@@ -256,6 +277,7 @@ Formato: Intenção → Sequência rúnica → Elemento(s) → Custo narrativo �
 - Resultado: lâmina de gelo fina sob os alvos, reduzindo mobilidade.
 
 4) Cura leve
+
 - Intenção: fechar corte superficial e estancar sangramento.
 - Sequência: “cura tecido 1 breve toque único ancoragem-toque”
 - Elementos: n/a (técnica de cura canalizada)
@@ -264,6 +286,7 @@ Formato: Intenção → Sequência rúnica → Elemento(s) → Custo narrativo �
 - Resultado: cicatrização acelerada e dor reduzida.
 
 5) Comunicação telepática (ilusão restrita)
+
 - Intenção: estabelecer elo mental com aliado a 5 m.
 - Sequência: “mente elo 1 curta curto único toque”
 - Elementos: n/a (técnica ilusória restrita)
@@ -298,6 +321,7 @@ Formato: Intenção → Sequência rúnica → Elemento(s) → Custo narrativo �
 ## Anexos
 
 Mini-lista de sílabas rúnicas (exemplos)
+
 - elemento: fogo, vento, raio, terra, água
 - forma: flecha, orbe, lâmina, muro, neblina, corrente, véu
 - magnitude: 1, 2, 3, 4, 5
@@ -308,10 +332,12 @@ Mini-lista de sílabas rúnicas (exemplos)
 - condição: umidade, metal, calor, frio, vento-favorável
 
 Templates de conjuração
+
 - Rápida (alta resposta, maior custo/falha): “elemento forma magnitude alcance alvo”
 - Estável (baixo risco/custo): “elemento forma magnitude duração alcance alvo ancoragem [condição]”
 
 ---
 
 Notas
+
 - Este documento substitui a explicação funcional, mantendo o arquivo original como referência de lore. Não há menções a sistemas externos; toda terminologia está ajustada ao mundo de Ekios.
