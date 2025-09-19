@@ -1,7 +1,7 @@
-Crie um plano no imperativo dividido em tasks detalhadas em temp-gdd-ekios/<nome-do-plano>.md para fazer uma melhoria na explicação do sitema de magia descrito em temp-gdd-ekios/magia.md. Use como exemplo o arquivo temp-gdd-ekios/Chakra.docx. Mas nunca mencione Chakra, Naruto ou qualquer tipo de nome próprio do documento temp-gdd-ekios/Chakra.docx quando estiver propondo melhorias em temp-gdd-ekios/magia.md. Ao invés disso, descreva detalhadamente seu funcionamento.
-Não altere o temp-gdd-ekios/<nome-do-plano>.md concentre-se somente no plano de alteração.
+Crie um plano no imperativo dividido em tasks detalhadas em temp-gdd-ekios/<nome-do-plano>.md para fazer uma melhoria na explicação do sitema de magia descrito em frontend/docs/GDD/2-world-building/magia.md. Use como base o arquivo temp-gdd-ekios/Dragon-Age_Magia.docx. Qualquer tipo de nome próprio do documento quando estiver propondo melhorias em frontend/docs/GDD/2-world-building/magia.md. Ao invés disso, descreva detalhadamente seu funcionamento.
+Não altere o frontend/docs/GDD/2-world-building/magia.md ainda. Concentre-se somente no plano de alteração.
 
-Como analisar o arquivo temp-gdd-ekios/Chakra.docx:
+Como analisar o arquivo temp-gdd-ekios/Dragon-Age_Magia.docx:
 
 Pontos para excluir: São pontos que eu não vou cobrir no meu sistema de magia descrito em temp-gdd-ekios/<nome-do-plano>.md
 Pontos para analisar: São pontos que tem alguma semelhança com o meu sistema.Para cada um deles, eu vou tentar descrever qual a semelhança.
