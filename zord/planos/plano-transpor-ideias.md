@@ -1,9 +1,5 @@
 # Plano para transpor ideias de outros mundos no meu mundo
 
-Aqui está a versão do seu prompt reorganizada, em linguagem imperativa, clara e técnica, para que uma LLM entenda exatamente o que fazer:
-
-⸻
-
 Contexto
  • Plano Alteração (PA): temp-gdd-ekios/<nome-do-plano>.md
  • Documento de outro World Building: temp-gdd-ekios/Dragon-Age_Magia.docx
