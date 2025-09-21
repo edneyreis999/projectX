@@ -27,13 +27,13 @@ Resumo Geral (preencher após cada rodada de edição):
 
 ---
 
-# Parte 1 — Contexto Narrativo
+## Parte 1 — Contexto Narrativo
 
 Aplicável a jogos e livros de fantasia. Os itens desta parte focam na consistência do mundo e na utilidade prática para cenas, capítulos e/ou conteúdo jogável.
 
 ---
 
-## S1 — Visão Geral do Mundo
+### S1 — Visão Geral do Mundo
 
 Objetivo: estabelecer a identidade do mundo em 1–3 parágrafos claros, úteis para decisões de design e consistência.
 
@@ -65,7 +65,7 @@ Concluído: 3/3 (100%)
 
 ---
 
-## S2 — História e Linha do Tempo
+### S2 — História e Linha do Tempo
 
 Objetivo: delinear eventos macro que explicam o estado atual do mundo; útil para ambientação, rumores, capítulos/cenas e gating de conteúdo.
 
@@ -107,7 +107,7 @@ Concluído: 3/3 (100%)
 
 ---
 
-## S3 — Geografia e Biomas
+### S3 — Geografia e Biomas
 
 Objetivo: definir macro‑geografia e biomas que afetam encontros, recursos, navegação e estética.
 
@@ -142,7 +142,7 @@ Concluído: 3/3 (100%)
 
 ---
 
-## S4 — Cultura e Sociedade
+### S4 — Cultura e Sociedade
 
 Objetivo: tornar práticas as nuances sociais que influenciam diálogos, rumores, comércio e conflitos.
 
@@ -183,7 +183,7 @@ Concluído: 3/3 (100%)
 
 ---
 
-## S5 — Facções, Poder e Economia
+### S5 — Facções, Poder e Economia
 
 Objetivo: definir atores coletivos e interesses que direcionam conflitos, comércio e missões.
 
@@ -218,7 +218,7 @@ Concluído: 3/3 (100%)
 
 ---
 
-## S6 — Tecnologia/Magia e Regras do Sistema
+### S6 — Tecnologia/Magia e Regras do Sistema
 
 Objetivo: definir limites e custos de tecnologia/magia que afetam traversal, combate e puzzles.
 
@@ -269,7 +269,7 @@ Concluído: 3/3 (100%)
 
 ---
 
-## S7 — Ecologia e Criaturas
+### S7 — Ecologia e Criaturas
 
 Objetivo: conectar criaturas a biomas, recursos e comportamentos que informam encontros e ambientação.
 
@@ -303,13 +303,13 @@ Concluído: 3/3 (100%)
 
 ---
 
-# Parte 2 — Contexto para Jogos (agnóstico de engine)
+## Parte 2 — Contexto para Jogos (agnóstico de engine)
 
 Aplica a qualquer engine. Traduza elementos para os artefatos do seu projeto (níveis/cenas, camadas, zonas/regiões, marcadores/tags, flags/variáveis), sem depender de nomes proprietários.
 
 ---
 
-## S8 — Regiões Jogáveis e Mapeamento
+### S8 — Regiões Jogáveis e Mapeamento
 
 Objetivo: mapear o mundo para artefatos do projeto (níveis/cenas, coleções visuais, zonas/tags e transições) e entradas de conteúdo.
 
@@ -341,7 +341,7 @@ Concluído: 3/4 (75%)
 
 ---
 
-## S11 — Gating e Progressão no Mundo
+### S11 — Gating e Progressão no Mundo
 
 Objetivo: estabelecer bloqueios e chaves (itens, reputação, estados) que liberam novas áreas e conteúdos.
 
