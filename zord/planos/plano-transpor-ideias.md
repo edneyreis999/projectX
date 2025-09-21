@@ -7,7 +7,7 @@ Contexto
 
 Instruções gerais
 
- 1. Crie um plano detalhado, dividido em tasks, no arquivo Plano Alteração (PA).
+ 1. Crie um novo arquivo em `temp-gdd-ekios/<nome-do-plano>.md` com um plano detalhado, dividido em tasks, no arquivo Plano Alteração (PA).
  2. Não altere o arquivo Documento Alterar diretamente. Instrua explicitamente a criar uma nova versão dele, copiando o conteúdo original e adicionando as melhorias propostas.
  3. Use o Documento de outro World Building como referência para sugerir melhorias.
  4. Ao transpor trechos, remova nomes próprios do documento de referência. Reescreva-os de forma que soem originais no contexto de Documento Alterar.

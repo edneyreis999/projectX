@@ -18,7 +18,6 @@ Contexto: Baseado em v1 + Sessão 7 (v2 log); escopo agnóstico de engine; itens
 - S6 Tecnologia/Magia e Regras do Sistema: 10%
 - S7 Ecologia e Criaturas: 8%
 - S8 Regiões Jogáveis e Mapeamento: 18%
-- S9 Clima, Dia/Noite e Estados Ambientais: 8%
 - S11 Gating e Progressão no Mundo: 10%
 
 Resumo Geral (preencher após cada rodada de edição):
@@ -141,7 +140,7 @@ Objetivo: tornar práticas as nuances sociais que influenciam diálogos, rumores
 
 Campos:
 
-- Costumes e tabus (Daratrine — acampamento multi‑raças, pós‑derrota de Gildrat):
+- Costumes e tabus (Daratrine — pós‑derrota de Gildrat):
   - Silêncio noturno das 3ª às 6ª horas: protege vigílias e feridos; falas altas geram repreensão/boato.
   - Proibição de ritos de sangue no perímetro: itens/rituais suspeitos são confiscados; reincidência leva a expulsão.
   - Prioridade a refugiados em filas e recursos: crianças/feridos antecedem; alterar ordem gera penalidade social/comercial.
@@ -299,31 +298,6 @@ Checklist:
 - [ ] Portas/transferências mapeadas
 
 Concluído: 3/4 (75%)
-
----
-
-## S9 — Clima, Dia/Noite e Estados Ambientais
-
-Objetivo: definir estados que alteram visibilidade, encontros e navegação.
-
-Campos:
-
-- Ciclo de tempo: parâmetro HoraDia (0–23) → efeitos em iluminação, ambiente sonoro e spawns por faixa (noite: predadores/ignotos aumentam; dia: comércio/rotas abertas). [detalhar]
-- Climas possíveis: chuva (reduz visibilidade/atenua fogo), neblina (campos visuais curtos), tempestade (riscos elétricos/queda de árvores). [detalhar]
-- Estados ambientais locais: enchente, nevasca, poeira; condições de entrada/saída dependem de regiões e gating de S11. [adiar]
-
-Critérios de Aceitação:
-
-- Parâmetro de hora documentado e efeitos por faixa.
-- Climas com impactos claros.
-
-Checklist:
-
-- [x] Definição do parâmetro de hora (nome/faixa)
-- [x] Lista de climas com efeitos
-- [ ] Estados ambientais e condições de entrada/saída
-
-Concluído: 2/3 (67%) — seção [adiar] para estados ambientais específicos.
 
 ---
 
