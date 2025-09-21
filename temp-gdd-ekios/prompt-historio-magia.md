@@ -1,16 +1,47 @@
-# Bla
+# Plano para transpor ideias de outros mundos no meu mundo
 
-Alias
-Plano Alteração (PA): temp-gdd-ekios/<nome-do-plano>.md
-Arquivo Dragon Age: temp-gdd-ekios/Dragon-Age_Magia.docx
+Aqui está a versão do seu prompt reorganizada, em linguagem imperativa, clara e técnica, para que uma LLM entenda exatamente o que fazer:
 
-Crie um plano no imperativo dividido em tasks detalhadas em Plano Alteração para fazer uma melhoria na explicação do sitema de magia descrito em frontend/docs/GDD/2-world-building/magia.md. Use como base o arquivo Arquivo Dragon Age. Qualquer tipo de nome próprio do documento quando estiver propondo melhorias em frontend/docs/GDD/2-world-building/magia.md. Ao invés disso, descreva detalhadamente seu funcionamento.
-Não altere o frontend/docs/GDD/2-world-building/magia.md ainda. Concentre-se somente no plano de alteração.
-O plano deve ter instrução para não alterar o arquivo frontend/docs/GDD/2-world-building/magia.md, mas sim cirar uma nova versão dele copiando o que ele já tem e adicionando as melhorias sugeridas no pano.
+⸻
+
+Contexto
+ • Plano Alteração (PA): temp-gdd-ekios/<nome-do-plano>.md
+ • Documento de outro World Building: temp-gdd-ekios/Dragon-Age_Magia.docx
+ • Documento Alterar (base): frontend/docs/GDD/2-world-building/magia.md
+
+Instruções gerais
+
+ 1. Crie um plano detalhado, dividido em tasks, no arquivo Plano Alteração (PA).
+ 2. Não altere o arquivo Documento Alterar diretamente. Instrua explicitamente a criar uma nova versão dele, copiando o conteúdo original e adicionando as melhorias propostas.
+ 3. Use o Documento de outro World Building como referência para sugerir melhorias.
+ 4. Ao transpor trechos, remova nomes próprios do documento de referência. Reescreva-os de forma que soem originais no contexto de Documento Alterar.
+ 5. Concentre-se apenas na elaboração do plano de alteração. Não execute o plano.
+
+Estrutura do plano
+
+Para cada trecho analisado do Documento de outro World Building, descreva:
+ • Tópico: qual parte do Documento Alterar será adicionada ou editada.
+ • Fonte: fragmento do Documento de outro World Building usado como base.
+ • Alteração no destino:
+ • Se for edição, indique qual trecho do Documento Alterar será modificado e como.
+ • Se for adição, descreva como o novo conteúdo será integrado ao Documento Alterar, mantendo coerência com o que já está documentado.
+
+Restrições (fora de escopo)
+ • Não remova tópicos inteiros já existentes em Documento Alterar.
+ • Não aplique o plano sem autorização explícita.
+
+⸻
+
+Seções do Plano
+
+ 1. Análise inicial: Meus comentários sobre o Documento Alterar.
+ 2. Análise do Documento de outro World Building: Meus comentários sobre o Documento de outro World Building. O que e como podemos aproveitar.
+
+⸻
 
 ---
 
-## Analise inicial
+## 1. Analise inicial
 
 no arquivo frontend/docs/GDD/GDD.Narrative-geral.md nas sessões
 Desenvolvimento dos Personagens - Thorin
@@ -18,9 +49,9 @@ Mistérios e Revelações
 A Percepção do Mundo Espiritual e o Poder Oculto de Thorin
 
 Conta um pouco como é o poder especial do Thorin (personagem princial) e também aborda o fato dele ter herdado esse poder da mãe dele.
-Também conta um pouco sobre a visão dos anões sobre esse poder. Toda essa explicação está muito rasa. no Arquivo Dragon Age tem explicações muito mais coerentes sobre a visão da sociedade em relação a magia que podemos utilizar.
+Também conta um pouco sobre a visão dos anões sobre esse poder. Toda essa explicação está muito rasa. no `Documento de outro World Building` tem explicações muito mais coerentes sobre a visão da sociedade em relação a magia que podemos utilizar.
 
-No arquivo zord/sessoes/ekios-world/ekios-world-v2.log.md as duas Pergunta(s) do Rugol revelam a minha dificuldade em entender/criar melhor como funciona o sistema de magia de Telepatia/Conversar com Mortos. E o sistema do véu em Arquivo Dragon Age parece se encaixar para resolver o problema. óbvio que ele vai precisar ser adaptado para o meu universo, mas tem informações valiosissimas ali que podemos usar/adaptar e incluir no Plano Alteração.
+No arquivo zord/sessoes/ekios-world/ekios-world-v2.log.md as duas Pergunta(s) do Rugol revelam a minha dificuldade em entender/criar melhor como funciona o sistema de magia de Telepatia/Conversar com Mortos. E o sistema do véu em `Documento de outro World Building` parece se encaixar para resolver o problema. óbvio que ele vai precisar ser adaptado para o meu universo, mas tem informações valiosissimas ali que podemos usar/adaptar e incluir no `Plano Alteração`.
 
 Pergunta(s) do Rugol
 
@@ -43,7 +74,7 @@ Resposta do entrevistado (resumo)
 
 ---
 
-## Como Analisar Arquivo Dragon Age
+## 2. Como Analisar `Documento de outro World Building`
 
 Pontos para excluir: São pontos que eu não vou cobrir no meu sistema de magia.
 Pontos para analisar: São pontos que tem alguma semelhança com o meu sistema.Para cada um deles, eu vou descrever qual a semelhança.
@@ -99,7 +130,7 @@ Pontos para analisar:
   - Adaptar o texto para dizer que esse ritual era a punição em Gildrat quando um anão era pego fazendo magia. Os anões pagavam elfos para conduzir o ritual em Gildrat. Muitos elfos não gostavam dessa pratica, que é abolida em Arcaror. E a contratação de elfos para conduzir esses rituais foi um dos vários motivos que levou elfos não gostar de anões e vice versa.
 
 - A Dependência e Corrupção do Lyrium
-  - Ler o arquivo frontend/docs/GDD/2-world-building/raca-ignotos.md O Lyrium tem muita semelhança com as poções que foram feitas pelos Ignotos para sobreviver embaixo da terra. Use o texto do Arquivo Dragon Age mas adapte para se encaixar na história do arquivo da raca-ignotos. Os ignotos que são inferteis, são inferteis porque são viciados em Lyrium que deixam eles agressivos e muta seus corpos para ficarem precidos com monstros.
+  - Ler o arquivo frontend/docs/GDD/2-world-building/raca-ignotos.md O Lyrium tem muita semelhança com as poções que foram feitas pelos Ignotos para sobreviver embaixo da terra. Use o texto do `Documento de outro World Building` mas adapte para se encaixar na história do arquivo da raca-ignotos. Os ignotos que são inferteis, são inferteis porque são viciados em Lyrium que deixam eles agressivos e muta seus corpos para ficarem precidos com monstros.
 
 - Instituições e Controle
   - Cetra do meu universo pode facilemte substituir O Círculo dos Magos e a Chantry com as devidas alterações.
