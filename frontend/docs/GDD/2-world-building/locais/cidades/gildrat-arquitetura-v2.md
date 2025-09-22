@@ -8,7 +8,7 @@ Objetivo: Descrever a arquitetura, urbanismo e engenharia da cidade-império de 
 - **Localização:** Cidade-império esculpida no coração de uma cordilheira fria, localizada no norte do continente de Ekios.
 - **Origem e história resumida:** Por eras, Gildrat foi um símbolo de poder e engenhosidade anã. Sua sociedade era rígida, estratificada em castas e com profundo temor à magia. A cidade caiu após a quebra do selo de Melios e a invasão dos Ignotos.
 - **Cultura predominante e influências externas:** Cultura anã, com forte valorização da riqueza, status e tradição. Influências externas eram limitadas e vistas com desconfiança.
-- **População:** Quase exclusivamente composta por anões.
+- **População:** Aproximadamente 70.000 anões (antes da queda).
 
 ## 2. Assentamento e Morfologia Urbana
 
@@ -57,7 +57,7 @@ A iluminação em Gildrat combina soluções práticas e simbólicas:
 - **Envelopes de defesa:** A cidade era protegida por imponentes **muralhas de pedra maciça** e grandes portões. Os próprios salões monumentais eram projetados para serem posições defensivas.
 - **Controle de acesso e fluxos:** [a definir]
 - **Estratégias de resiliência:** [a definir]
-- **Vigilância e resposta:** [a definir]
+- **Vigilância e resposta:** A defesa era garantida pela temida **Guarda de Ferro**, o exército de elite de Gildrat, que protegia as fronteiras e as valiosas rotas comerciais do império.
 
 ## 6. Governança e Instituições
 
@@ -65,7 +65,10 @@ A iluminação em Gildrat combina soluções práticas e simbólicas:
 
 ## 7. Economia e Produção
 
-- [a definir]
+A economia de Gildrat girava em torno da mineração e da metalurgia.
+- **Principais Produtos:** Armas, armaduras e tudo que pudesse ser forjado com a maestria anã. A inovação nas técnicas de forja era altamente valorizada.
+- **Ciclo Econômico:** A vida econômica era marcada por grandiosas expedições de mineração, financiadas por nobres e comerciantes. O sucesso de uma expedição era um evento cívico, celebrado por toda a cidade. Os minérios extraídos eram levados diretamente para as forjas para serem transformados em produtos de alto valor ou vendidos nos mercados.
+- **Comércio:** Embora desconfiados de estrangeiros, os anões mantinham um comércio ativo no Distrito Externo, onde mercadores de outras raças podiam negociar, consolidando o poder econômico de Gildrat através do monopólio de seus produtos de metalurgia.
 
 ## 8. Habitação e Vida Cotidiana
 
@@ -75,6 +78,8 @@ O mobiliário anão é robusto, funcional e construído para durar gerações. F
 
 ## 9. Cultura, Religião e Simbologia
 
+A espiritualidade anã não se centrava em templos ou deuses formais, mas sim na honra aos ancestrais e na celebração das grandes conquistas.
+
 ### 9.1 Simbologia e Narrativa Arquitetônica
 
 A arquitetura de Gildrat é uma crônica da história e dos valores anões. As paredes dos grandes salões e do castelo são adornadas com baixos-relevos que narram feitos heróicos e a história dos clãs. Em honra aos ancestrais, rostos de antigos imperadores são esculpidos diretamente nas pilastras do castelo. O portão principal é guardado por sete estátuas monumentais dos fundadores da cidade, com o imperador Dambur em destaque no centro.
@@ -82,6 +87,7 @@ A arquitetura de Gildrat é uma crônica da história e dos valores anões. As p
 ## 10. Arquitetura Cívica e Espaços Públicos
 
 - **Edifícios Notáveis:**
+  - **Muro das Memórias:** Mais do que uma simples parede, era o coração cívico e espiritual da cidade. Localizado em uma praça central, era ali que as famílias celebravam as vitórias de seus entes queridos em expedições de mineração ou lamentavam suas perdas, depositando oferendas e preces em nichos esculpidos na rocha.
   - **Castelo de Gildrat:** Sede do poder imperial.
   - **Estádio dos Machados Enferrujados:** Local de eventos esportivos, como o futebol rúnico.
   - **Loja Martelo & Malha:** Estabelecimento comercial conhecido.
