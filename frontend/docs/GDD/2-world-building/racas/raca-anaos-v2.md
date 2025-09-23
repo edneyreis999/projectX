@@ -2,7 +2,7 @@
 
 ## **Terra Natal -**
 
-[Gildrat](../locais/cidades/gildrat-v2.md) ficava no coração das montanhas que se erguiam a noroeste de Ekios, antes da grande invasão dos Ignotos. Depois da destruição de sua terra natal causada pela guerra, os anões sobreviventes se refugiaram em Daratrine.
+Gildrat ficava no coração das montanhas que se erguiam a noroeste de Ekios, antes da grande invasão dos Ignotos. Depois da destruição de sua terra natal causada pela guerra, os anões sobreviventes se refugiaram em Daratrine. [ler mais em Gildrat](../locais/cidades/gildrat-v2.md).
 
 ### **Poderes/Habilidades:** -
 

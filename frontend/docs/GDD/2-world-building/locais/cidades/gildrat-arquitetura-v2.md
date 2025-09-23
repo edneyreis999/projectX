@@ -66,6 +66,7 @@ A iluminação em Gildrat combina soluções práticas e simbólicas:
 ## 7. Economia e Produção
 
 A economia de Gildrat girava em torno da mineração e da metalurgia.
+
 - **Principais Produtos:** Armas, armaduras e tudo que pudesse ser forjado com a maestria anã. A inovação nas técnicas de forja era altamente valorizada.
 - **Ciclo Econômico:** A vida econômica era marcada por grandiosas expedições de mineração, financiadas por nobres e comerciantes. O sucesso de uma expedição era um evento cívico, celebrado por toda a cidade. Os minérios extraídos eram levados diretamente para as forjas para serem transformados em produtos de alto valor ou vendidos nos mercados.
 - **Comércio:** Embora desconfiados de estrangeiros, os anões mantinham um comércio ativo no Distrito Externo, onde mercadores de outras raças podiam negociar, consolidando o poder econômico de Gildrat através do monopólio de seus produtos de metalurgia.
