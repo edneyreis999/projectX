@@ -24,28 +24,23 @@ Barracas de comercio e bares.
 
 ### Características Culturais
 
-A sociedade de Gildrat era exclusivamente anã e governada por um imperador. A cultura de castas era rígida e se refletia na própria arquitetura da cidade. Os distritos residenciais eram segregados: as famílias nobres e poderosas viviam em áreas privilegiadas, próximas ao Castelo de Gildrat, enquanto as classes trabalhadoras e comerciantes se concentravam nos distritos comerciais, mais próximos dos mercados e das entradas das minas.
+A sociedade de Gildrat era exclusivamente anã e governada por um imperador. A cultura de castas era rígida e se refletia na própria arquitetura da cidade. [ler mais na arquitetura](./gildrat-arquitetura-v2.md)
 
-## Economia
+## Economia e Produção
 
-**Principais produtos:** armas, armaduras e tudo que possa ser forjado.
-**Metais preciosos:** A base da riqueza de Gildrat.
+A economia de Gildrat girava em torno da mineração e da metalurgia, sendo os metais preciosos a base de sua riqueza.
 
-### Funcionamento
+- **Principais Produtos:** Armas, armaduras e tudo que pudesse ser forjado com a maestria anã. A inovação nas técnicas de forja era altamente valorizada.
+- **Ciclo Econômico:** A vida econômica era marcada por grandiosas expedições de mineração, financiadas por nobres e comerciantes. O sucesso de uma expedição era um evento cívico, celebrado por toda a cidade. Os minérios extraídos eram levados diretamente para as forjas para serem transformados em produtos de alto valor ou vendidos nos mercados.
+- **Comércio:** Embora desconfiados de estrangeiros, os anões mantinham um comércio ativo no Distrito Externo, onde mercadores de outras raças podiam negociar. [ler mais na arquitetura](./gildrat-arquitetura-v2.md)
 
-A economia girava em torno das expedições de mineração. Estes empreendimentos, financiados por nobres e comerciantes, partiam da cidade com grande alarde. O retorno de uma expedição bem-sucedida era um evento celebrado por todos, com os minérios sendo levados diretamente para as forjas para serem transformados em produtos ou vendidos a preços altíssimos no mercado. Gildrat era um polo comercial que atraía mercadores de outras raças, embora fossem restritos ao distrito comercial e sempre tratados com uma calculada desconfiança.
-
-#### Transporte Urbano
+### Transporte Urbano
 
 A pé.
 
 ## Centro Político da cidade
 
 Hall do castelo.
-
-### Centro Religioso
-
-Não havia um centro religioso formal. A espiritualidade anã era mais focada no respeito aos ancestrais e na celebração das conquistas, como visto no Muro das Memórias.
 
 ## Centros de Comércio
 
@@ -60,12 +55,17 @@ Tavernas e praças. Caça esportiva fora dos limites das montanhas.
 
 ## Força Militar
 
-Os anões são muito gananciosos e expansionistas. Estão sempre a procura de dominar regiões perto de minas. Forjam armas e armaduras e estão em um constante processo de melhoria das suas tecnicas, seu exército é vasto, conhecido como Guarda de Ferro.
+O exército de Gildrat, conhecido como **Guarda de Ferro**, era uma força militar vasta e temida. Famosos por suas armas e armaduras de qualidade superior, os anões de Gildrat estavam em um processo constante de melhoria de suas técnicas de forja e guerra. [ler mais sobre os anões](../../racas/raca-anaos-v2.md)
 
-## Áreas Residenciais
+- **Vigilância e resposta:** [a definir]
 
-- Classe Alta
-- Classe Baixa
+## Governança e Instituições
+
+- [a definir]
+
+## Cartografia e Nomenclatura
+
+- [a definir]
 
 ## História
 

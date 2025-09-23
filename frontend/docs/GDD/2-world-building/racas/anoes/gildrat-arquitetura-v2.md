@@ -6,15 +6,14 @@ Objetivo: Descrever a arquitetura, urbanismo e engenharia da cidade-império de 
 
 - **Nome(s), epítetos e alcunhas:** Gildrat, "o império dos anões".
 - **Localização:** Cidade-império esculpida no coração de uma cordilheira fria, localizada no norte do continente de Ekios.
-- **Origem e história resumida:** Por eras, Gildrat foi um símbolo de poder e engenhosidade anã. Sua sociedade era rígida, estratificada em castas e com profundo temor à magia. A cidade caiu após a quebra do selo de Melios e a invasão dos Ignotos.
-- **Cultura predominante e influências externas:** Cultura anã, com forte valorização da riqueza, status e tradição. Influências externas eram limitadas e vistas com desconfiança.
-- **População:** Aproximadamente 70.000 anões (antes da queda).
+- **Origem e história resumida:** Por eras, Gildrat foi um símbolo de poder e engenhosidade anã. A cidade caiu após a quebra do selo de Melios e a invasão dos Ignotos. [ler mais em Gildrat](./gildrat-v2.md)
+- **Cultura predominante e influências externas:** Cultura predominantemente anã. [ler mais sobre os anões](./raca-anaos-v2.md)
 
 ## 2. Assentamento e Morfologia Urbana
 
 - **Tipologia de implantação:** Predominantemente subterrânea e montanhosa. A cidade foi "esculpida na rocha", com vastos salões e túneis.
 - **Modelos de organização:** O modelo de organização urbana de Gildrat é o **Linear-Funcional**. Inspirado em grandes cidades subterrâneas, o layout se estende horizontalmente a partir de um grande eixo central que conecta as áreas vitais da cidade, como o castelo, os distritos comerciais e as áreas residenciais. Essa organização reflete a importância da circulação e da defesa, permitindo um controle de fluxo eficiente e a criação de gargalos estratégicos em caso de invasão.
-- **Zoneamento funcional:** O zoneamento de Gildrat refletia diretamente sua rígida estrutura de castas. As zonas principais eram:
+- **Zoneamento funcional:** O zoneamento de Gildrat refletia diretamente a rígida estrutura de castas da sociedade anã. [ler mais sobre os anões](./raca-anaos-v2.md) As zonas principais eram:
   - **Distrito do Castelo (Nobreza):** Área central, mais segura e luxuosa, onde vive a nobreza, próxima ao castelo.
   - **Distrito Comercial e Residencial (Comerciantes e Trabalhadores):** Ocupa o centro da cidade. Nele, há uma praça de comércio interna, frequentada apenas por anões, com tavernas e restaurantes. As residências desta casta localizam-se ao redor deste centro.
   - **Distrito Externo (Desprivilegiados e Comércio Exterior):** Localizado nas áreas externas, mais frias e próximas aos portões. Aqui vivem os desprivilegiados. Neste distrito, há uma grande praça de comércio a céu aberto, inspirada nas *Champagne Fairs*, onde anões negociam com outras raças como goblins e trolls.
@@ -57,19 +56,6 @@ A iluminação em Gildrat combina soluções práticas e simbólicas:
 - **Envelopes de defesa:** A cidade era protegida por imponentes **muralhas de pedra maciça** e grandes portões. Os próprios salões monumentais eram projetados para serem posições defensivas.
 - **Controle de acesso e fluxos:** [a definir]
 - **Estratégias de resiliência:** [a definir]
-- **Vigilância e resposta:** A defesa era garantida pela temida **Guarda de Ferro**, o exército de elite de Gildrat, que protegia as fronteiras e as valiosas rotas comerciais do império.
-
-## 6. Governança e Instituições
-
-- [a definir]
-
-## 7. Economia e Produção
-
-A economia de Gildrat girava em torno da mineração e da metalurgia.
-
-- **Principais Produtos:** Armas, armaduras e tudo que pudesse ser forjado com a maestria anã. A inovação nas técnicas de forja era altamente valorizada.
-- **Ciclo Econômico:** A vida econômica era marcada por grandiosas expedições de mineração, financiadas por nobres e comerciantes. O sucesso de uma expedição era um evento cívico, celebrado por toda a cidade. Os minérios extraídos eram levados diretamente para as forjas para serem transformados em produtos de alto valor ou vendidos nos mercados.
-- **Comércio:** Embora desconfiados de estrangeiros, os anões mantinham um comércio ativo no Distrito Externo, onde mercadores de outras raças podiam negociar, consolidando o poder econômico de Gildrat através do monopólio de seus produtos de metalurgia.
 
 ## 8. Habitação e Vida Cotidiana
 
@@ -79,7 +65,7 @@ O mobiliário anão é robusto, funcional e construído para durar gerações. F
 
 ## 9. Cultura, Religião e Simbologia
 
-A espiritualidade anã não se centrava em templos ou deuses formais, mas sim na honra aos ancestrais e na celebração das grandes conquistas.
+A espiritualidade da cidade se manifestava em sua arquitetura, honrando ancestrais e grandes conquistas em vez de deuses ou templos formais. [ler mais sobre os anões](./raca-anaos-v2.md)
 
 ### 9.1 Simbologia e Narrativa Arquitetônica
 
@@ -104,10 +90,6 @@ A arquitetura de Gildrat é uma crônica da história e dos valores anões. As p
 - [a definir]
 
 ## 13. Crescimento, Cronologia e Camadas Urbanas
-
-- [a definir]
-
-## 14. Cartografia e Nomenclatura
 
 - [a definir]
 
