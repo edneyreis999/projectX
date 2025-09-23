@@ -23,12 +23,25 @@ Objetivo: preparar insumos, conduzir entrevista e solicitar a entrega final no f
 
 ## Passos de orquestração
 
-1) Coleta e síntese: a partir do nome do mapa, vasculhe as fontes e produza um briefing objetivo para o Serel contendo: áreas/cômodos, restrições canônicas, NPCs/itens relevantes e requisitos de jogabilidade/tema.
-2) Rascunho inicial (Serel): envie o briefing ao Serel e peça o documento no “Formato de saída” definido no agente.
-3) Entrevista iterativa: conduza perguntas objetivas e também inferenciais “fora da caixa” seguindo `zord/agentes/regras/regras-entrevistas-qualitativas.md`. Após cada resposta do usuário, peça ao Serel para atualizar o rascunho e mostrar apenas o trecho alterado (ou um breve resumo das mudanças).
-4) Coerência canônica: confronte o rascunho com `frontend/docs/GDD/2-world-building` e ajuste onde houver conflito.
-5) Validação final: verifique circulação ≥ 1 tile, portas livres, alinhamento à grade e coerência por cômodo.
-6) Entrega: salve o documento final em `frontend/docs/GDD/2-world-building/locais/<nome-do-mapa>.md`.
+1) **Coleta e Síntese:** A partir do nome do mapa, vasculhe as fontes e produza um briefing objetivo para o Serel contendo: áreas/cômodos, restrições canônicas, NPCs/itens relevantes e requisitos de jogabilidade/tema.
+2) **Rascunho Inicial (Serel):** Envie o briefing ao Serel e peça o documento no “Formato de saída” definido no agente.
+3) **Entrevista Iterativa:** Conduza perguntas objetivas e também inferenciais “fora da caixa” seguindo `zord/agentes/regras/regras-entrevistas-qualitativas.md`. Após cada resposta do usuário, peça ao Serel para atualizar o rascunho e mostrar apenas o trecho alterado (ou um breve resumo das mudanças).
+4) **Coerência Canônica:** Confronte o rascunho com `frontend/docs/GDD/2-world-building` e ajuste onde houver conflito.
+5) **Validação Final:** Verifique circulação ≥ 1 tile, portas livres, alinhamento à grade e coerência por cômodo.
+6) **Entrega Final:**
+   a. Salve o documento principal da descrição do mapa em `frontend/docs/GDD/2-world-building/locais/<nome-do-mapa>.md`.
+   b. Crie um segundo arquivo chamado `frontend/docs/GDD/2-world-building/locais/<nome-do-mapa>.info.md`.
+   c. Neste arquivo `.info.md`, documente as evidências nas quests e no GDD usadas para criar a descrição. Para cada evidência, copie um trecho relevante do documento original e adicione um link para a fonte.
+
+      **Exemplo de conteúdo para o `.info.md`:**
+
+      ```markdown
+      Com a ruptura do selo, terríveis criaturas conhecidas como Ignotos foram libertas, dando início à ruína do império de Gildrat. [ler mais em Ignotos](../raca-ignotos.md)
+
+      A espiritualidade da cidade se manifestava em sua arquitetura, honrando ancestrais e grandes conquistas em vez de deuses ou templos formais. [ler mais sobre os anões](./raca-anaos-v2.md)
+
+      Por eras, Gildrat foi um símbolo de poder e engenhosidade anã. A cidade caiu após a quebra do selo de Melios e a invasão dos Ignotos. [ler mais em Gildrat](./gildrat-v2.md)
+      ```
 
 ## Diretrizes de perguntas “fora da caixa” (para a entrevista)
 
@@ -39,6 +52,6 @@ Objetivo: preparar insumos, conduzir entrevista e solicitar a entrega final no f
 
 ## Preferências de saída (contrato com o Serel)
 
-- Usar exatamente o formato definido em `zord/agentes/artistas/serel-lumeclaro.md` (Sumário, Lista de Cômodos, Tabela de Substituições, Checklist).
+- Usar exatamente o formato definido em `zord/agentes/artistas/serel-lumeclaro.md`.
 - Não gerar prompts; apenas a descrição do mapa.
 - Ao atualizar versões durante a entrevista, mostrar trecho alterado ou resumo das mudanças.

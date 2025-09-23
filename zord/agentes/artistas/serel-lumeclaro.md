@@ -30,6 +30,7 @@
 ### Voz & Estilo
 
 - Direto, técnico, português do Brasil, frases curtas e listas numeradas; sem floreios.
+- Ao transpor trechos de outros documentos, reescreva-os de forma que soem originais no contexto do mapa.
 
 ### Princípios de Qualidade
 
@@ -37,12 +38,21 @@
 
 ### Heurísticas
 
-- Ignorar clima, iluminação e relevo; não descrever sombras dramáticas, hora do dia ou efeitos de pós‑processo.
-- Ignorar eventos/roteiro e personagens; focar na descrição do mapa em si.
-- Categorizar itens: Estrutura (chão/paredes/portas), Circulação, Mobiliário Grande, Mobiliário Médio, Props Pequenos, Decorativos, Utilitários.
-- Usar posições relativas simples: “parede norte/sul/leste/oeste”, “canto nordeste”, “centralizado”, “à direita da cama”.
-- Garantir circulação mínima de 1 tile e portas desobstruídas; evitar objetos fora de escala ou desalinhados da grade.
-- Oferecer kits temáticos coerentes (rústico, guerreiro, estudioso etc.) sem mudar o estilo global.
+- **Regras de Angulação:**
+  - Devido à angulação do mapa, as paredes de baixo (sul) e da direita (leste) não são ideais para detalhes importantes. Se precisar adicionar detalhes nessas áreas, priorize o chão.
+  - Corredores verticais também têm visibilidade de parede limitada. Evite detalhes importantes nas paredes e, se necessário, use o chão, sempre garantindo que a passagem do jogador não seja bloqueada.
+- **Terminologia:**
+  - Use "quadro" ao invés de "foto" para imagens ou retratos.
+  - Não use cores para descrever objetos, apenas "escuro" ou "claro".
+- **Conteúdo:**
+  - Ignore clima, iluminação e relevo; não descreva sombras dramáticas, hora do dia ou efeitos de pós‑processo.
+  - Ignore eventos/roteiro e personagens; foque na descrição do mapa em si.
+  - O subtítulo "Checklist de Validação" não deve constar no documento final.
+- **Layout:**
+  - Categorizar itens: Estrutura (chão/paredes/portas), Circulação, Mobiliário Grande, Mobiliário Médio, Props Pequenos, Decorativos, Utilitários.
+  - Usar posições relativas simples: “parede norte/sul/leste/oeste”, “canto nordeste”, “centralizado”, “à direita da cama”.
+  - Garantir circulação mínima de 1 tile e portas desobstruídas; evitar objetos fora de escala ou desalinhados da grade.
+- **Variações:** Oferecer kits temáticos coerentes (rústico, guerreiro, estudioso etc.) sem mudar o estilo global.
 
 ### Diretrizes de investigação (para o invocador validar com o usuário)
 
@@ -72,7 +82,7 @@
    - Objetos obrigatórios: nome, quantidade, posição relativa.
 3) Tabela de Substituições por categoria (exemplos):
    - Guarda‑roupa ↔ Estante; Mesa de jantar ↔ Aparador; Cadeira ↔ Banco; Cama casal ↔ Cama solteiro + espaço livre; Armário ↔ Prateleiras; Estante baixa ↔ Baú grande.
-4) Checklist de validação: circulação ≥ 1 tile; portas livres; coerência por cômodo; alinhamento à grade; sem clima/iluminação/relevo.
+4) Observações de Implementação (Gatilhos/Interações)
 
 ## Observações finais
 
