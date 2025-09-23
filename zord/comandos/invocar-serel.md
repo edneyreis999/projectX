@@ -25,13 +25,18 @@ Objetivo: preparar insumos, conduzir entrevista e solicitar a entrega final no f
 
 1) **Coleta e Síntese:** A partir do nome do mapa, vasculhe as fontes e produza um briefing objetivo para o Serel contendo: áreas/cômodos, restrições canônicas, NPCs/itens relevantes e requisitos de jogabilidade/tema.
 2) **Rascunho Inicial (Serel):** Envie o briefing ao Serel e peça o documento no “Formato de saída” definido no agente.
-3) **Entrevista Iterativa:** Conduza perguntas objetivas e também inferenciais “fora da caixa” seguindo `zord/agentes/regras/regras-entrevistas-qualitativas.md`. Após cada resposta do usuário, peça ao Serel para atualizar o rascunho e mostrar apenas o trecho alterado (ou um breve resumo das mudanças).
+3) **Entrevista Iterativa com Rugol:** Para refinar o rascunho, invoque o agente entrevistador `Rugol` (definido em `zord/agentes/entrevistadores/persona-Rugol-v3.md`).
+    - **Configuração da Invocação:** Use as diretrizes com as seguintes adaptações para este contexto:
+        - **Não é necessário guardar logs da entrevista.**
+        - **`maxPerguntasPorRodada`:** Defina como 5.
+        - **Condição de término:** A entrevista continua até que o usuário encerre explicitamente.
+    - **Processo:** Após cada rodada de entrevista com Rugol, use as informações coletadas para pedir ao Serel que atualize o rascunho do mapa, mostrando apenas o trecho alterado ou um resumo das mudanças.
 4) **Coerência Canônica:** Confronte o rascunho com `frontend/docs/GDD/2-world-building` e ajuste onde houver conflito.
 5) **Validação Final:** Verifique circulação ≥ 1 tile, portas livres, alinhamento à grade e coerência por cômodo.
 6) **Entrega Final:**
    a. Salve o documento principal da descrição do mapa em `frontend/docs/GDD/2-world-building/locais/<nome-do-mapa>.md`.
    b. Crie um segundo arquivo chamado `frontend/docs/GDD/2-world-building/locais/<nome-do-mapa>.info.md`.
-   c. Neste arquivo `.info.md`, documente as evidências nas quests e no GDD usadas para criar a descrição. Para cada evidência, copie um trecho relevante do documento original e adicione um link para a fonte.
+   c. Neste arquivo `.info.md`, documente as evidências do GDD usadas para criar a descrição. Para cada evidência, copie um trecho relevante do documento original e adicione um link para a fonte.
 
       **Exemplo de conteúdo para o `.info.md`:**
 
