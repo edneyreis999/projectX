@@ -1,0 +1,23 @@
+{
+  "LayerOrder": {
+    "Face": 1,
+    "Walk": 100,
+    "Sv": 100
+  },
+  "Parts": [
+    {
+      "Name": "Face01",
+      "PreviewImage": "Parts/SDwarfBody/Face/face1.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBody/Face/face1.png"
+      }
+    },
+    {
+      "Name": "Face02",
+      "PreviewImage": "Parts/SDwarfBody/Face/face2.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBody/Face/face2.png"
+      }
+    }
+  ]
+}

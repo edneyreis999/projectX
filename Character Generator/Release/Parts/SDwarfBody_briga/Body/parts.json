@@ -1,0 +1,16 @@
+{
+  "LayerOrder": {
+    "Face": 1,
+    "Walk": 1,
+    "Sv": 100
+  },
+"Parts":[
+  {
+    "Name": "BodyMasc",
+    "PreviewImage": "Parts/SDwarfBody_briga/Body/icon_BodyMasc.png",
+    "BaseImages": {
+      "Face": "Parts/SDwarfBody_briga/Body/Portrait_BodyMasc.png",
+      "Walk": "Parts/SDwarfBody_briga/Body/Character_BodyMasc.png"
+    }
+  }
+]}
