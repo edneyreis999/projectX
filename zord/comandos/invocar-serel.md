@@ -12,7 +12,7 @@ Objetivo: preparar insumos, conduzir entrevista e solicitar a entrega final no f
 
 ## Fontes de informação (coleta pelo invocador)
 
-- `frontend/docs/Quests` — buscar tudo relacionado ao mapa informado (NPCs, estados de progresso, eventos, props mencionados).
+- `frontend/docs/Quests` — buscar tudo relacionado ao mapa informado (NPCs, estados de progresso, eventos, props mencionados, **e mapas adjacentes para estabelecer as conexões**).
 - `frontend/docs/GDD` — visão geral, regras de mundo, elementos canônicos (com ênfase em `frontend/docs/GDD/2-world-building`).
 - referências visuais do projeto em `frontend/img/parallaxes/!*` (para reforçar estilo).
 
@@ -23,7 +23,7 @@ Objetivo: preparar insumos, conduzir entrevista e solicitar a entrega final no f
 
 ## Passos de orquestração
 
-1) **Coleta e Síntese:** A partir do nome do mapa, vasculhe as fontes e produza um briefing objetivo para o Serel contendo: áreas/cômodos, restrições canônicas, NPCs/itens relevantes e requisitos de jogabilidade/tema.
+1) **Coleta e Síntese:** A partir do nome do mapa, vasculhe as fontes e produza um briefing objetivo para o Serel contendo: áreas/cômodos, **mapas conectados e suas posições**, restrições canônicas, NPCs/itens relevantes e requisitos de jogabilidade/tema.
 2) **Rascunho Inicial e Salvamento (Serel):** Envie o briefing ao Serel, peça o documento no “Formato de saída” e **salve-o imediatamente** no caminho de saída (`frontend/docs/GDD/2-world-building/locais/<nome-do-mapa>.md`).
 3) **Entrevista Iterativa com Rugol:** Para refinar o mapa, invoque o agente entrevistador `Rugol` (definido em `zord/agentes/entrevistadores/persona-Rugol-v3.md`). O usuário poderá ler o arquivo salvo antes de responder.
     - **Configuração da Invocação:** Use as diretrizes com as seguintes adaptações para este contexto:

@@ -18,12 +18,13 @@ O fluxo da casa é direto, conectando um hall de entrada a uma cozinha integrada
 ### 3.1) Hall de Entrada
 
 - **Dimensão:** Pequeno (≈3×3 tiles).
+- **Ambientação:** A entrada da casa, conectando-se diretamente ao Distrito Residencial.
 - **Objetos Obrigatórios:**
-  1. **Porta Principal:** 1, na parede sul. Uma porta pesada de madeira reforçada com ferro, um símbolo de segurança.
+  1. **Porta Principal:** 1, na parede oeste. Uma porta pesada de madeira reforçada com ferro, que leva ao exterior.
   2. **Tapete de Entrada:** 1, no chão, logo após a porta. Feito de couro grosso, com um brasão familiar simplificado.
 - **Objetos Opcionais:**
   - **Suporte de Botas:** 1, no canto sudoeste do chão. Para remover a sujeira das minas ou da cidade.
-  - **Cabideiro de Parede:** 1, na parede oeste. Ganchos de ferro forjado para casacos pesados.
+  - **Cabideiro de Parede:** 1, na parede leste. Ganchos de ferro forjado para casacos pesados.
 
 ### 3.2) Cozinha/Sala de Jantar Integrada
 
@@ -97,3 +98,7 @@ O fluxo da casa é direto, conectando um hall de entrada a uma cozinha integrada
 - **Baú da Funda (Despensa):** "Pegar funda" (Semifinal).
 - **Poleiro do Sáparo (Quarto de Thorin):** Fala provocativa (Sáparo‑boca‑de‑corneta).
 - **Cama (Quarto de Thorin):** "Dormir & Encerrar" quando objetivo ativo.
+
+## 6) Conexões
+
+- **Distrito Residencial (Mapa 007):** A conexão se dá pela porta principal na **parede oeste** do Hall de Entrada.

@@ -77,12 +77,15 @@
 ## Formato de saída
 
 1) Sumário do mapa (2–3 linhas).
-2) Lista de Cômodos: para cada cômodo
+2) Diretrizes de Estilo e Materiais.
+3) Lista de Cômodos/Áreas: para cada um
    - Dimensão aproximada (em tiles ou pequeno/médio/grande).
    - Objetos obrigatórios: nome, quantidade, posição relativa.
-3) Tabela de Substituições por categoria (exemplos):
-   - Guarda‑roupa ↔ Estante; Mesa de jantar ↔ Aparador; Cadeira ↔ Banco; Cama casal ↔ Cama solteiro + espaço livre; Armário ↔ Prateleiras; Estante baixa ↔ Baú grande.
-4) Observações de Implementação (Gatilhos/Interações)
+4) Tabela de Substituições por categoria (exemplos).
+5) Observações de Implementação (Gatilhos/Interações).
+6) Conexões:
+   - Lista em bullet points dos mapas que se conectam a este.
+   - Detalhar o ponto de conexão (ex: "Parede Oeste", "Porta Norte do Corredor").
 
 ## Observações finais
 
