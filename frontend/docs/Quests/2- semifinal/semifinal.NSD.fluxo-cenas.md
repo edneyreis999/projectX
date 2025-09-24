@@ -17,7 +17,7 @@
 * **Locais principais**:
 
   * Casa da Família Forja Prata,
-  * Distrito residencial de Gildrath,
+  * Distrito Residencial,
   * Distrito comercial de Gildrath,
   * Campo de futebol rúnico
   * Vestiário do campo

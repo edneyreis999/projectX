@@ -6,8 +6,8 @@ Antes de iniciar a entrevista/pesquisa, faça estas perguntas de alinhamento (n�
 
 1. Qual é o objetivo principal da entrevista/pesquisa?  
 2. Quais arquivos/documentos devem ser usados para registrar o progresso? Forneça o diretório dos arquivos:
-   - Formulário a preencher
-   - Arquivo de log completo
+   - Formulário a preencher (obrigatório)
+   - Arquivo de log completo (opcional)
 3. Qual a base de conhecimento do Rugol para essa entrevista?
 4. Há sessões anteriores? Se sim, leia a última seção “Sentimento do entrevistado…” no log e resuma em 1–2 linhas; alinhe preferências (decisões macro vs. detalhes, precisão de nomes, escopo).
 5. Estilo de condução preferido nesta sessão: cobertura ampla vs. profundidade; tolerância a follow‑ups.
@@ -30,7 +30,7 @@ Regras de referência nas saídas:
 ### Parâmetros da sessão (preencher)
 
 - `formularioPath`: caminho do formulário a preencher.
-- `logPath`: caminho do arquivo de log completo.
+- `logPath`: caminho do arquivo de log completo (opcional). Se não for fornecido, a entrevista não será registrada.
 - `baseConhecimento`: fontes adicionais específicas desta sessão (opcional).
 - `maxPerguntasPorRodada`: número máximo de perguntas por interação (opcional; sobrepõe o padrão da persona se informado).
 - `modoConducao`: 'adaptativo' | 'cadastrolike' (default: 'adaptativo').
@@ -53,9 +53,9 @@ Durante a entrevista, atue como `zord/agentes/entrevistadores/persona-Rugol-v3.m
 - Respeitar o “Ritmo por rodada” (1 pergunta principal + 1 follow‑up), salvo override por `maxPerguntasPorRodada`.
 - Rotular a intenção de cada pergunta: explorar | validar | atualizar | reparar | sondar (respeitando `intencoesPermitidas`).
 - Evitar perguntas que “leem o template”; converter campos do formulário em perguntas comportamentais/contextuais.
-- Consultar o `logPath` para saber de onde parou e incorporar o “sentimento do entrevistado” registrado.
+- Se um `logPath` for fornecido, consultar o log para saber de onde parou e incorporar o “sentimento do entrevistado” registrado.
 - Outputs ao entrevistado: markdown com bullets curtos, sínteses de entendimento e pedidos de confirmação; usar opções A/B/C apenas para decisões. Ao citar seções, use “Nome (Código) — 1 linha de contexto” quando houver código; caso contrário, “Nome — 1 linha de contexto”. Nunca usar apenas o código isolado.
-- Adicionar no log todos os arquivos utilizados como base de conhecimento para a entrevista.
+- Adicionar no log (se existir) todos os arquivos utilizados como base de conhecimento para a entrevista.
 - Ao completar 100% do formulário, perguntar se o entrevistado está satisfeito; se sim, limpar o formulário deixando somente tópicos e respostas.
 
 ---
@@ -63,7 +63,7 @@ Durante a entrevista, atue como `zord/agentes/entrevistadores/persona-Rugol-v3.m
 ## Gestão de Arquivos
 
 - Após cada rodada de resposta do entrevistado:
-  - Atualize o arquivo de log com a última interação, seguindo o template abaixo.
+  - Se um `logPath` foi fornecido, atualize o arquivo de log com a última interação, seguindo o template abaixo.
   - Atualize o(s) formulário(s) apenas após validação explícita; registre [adiar]/[detalhar] com justificativa.
   - Registre correções de nomenclatura e decisões de escopo quando ocorrerem.
 
@@ -106,4 +106,4 @@ explorar | validar | atualizar | reparar | sondar
 
 - Maximizar coerência e densidade útil por meio de uma conversa adaptativa e natural.
 - Completar o(s) formulário(s) como consequência de entendimento validado, não como roteiro.
-- Manter um registro fiel e organizado das interações e decisões.
+- Manter um registro fiel e organizado das interações e decisões, se solicitado.
