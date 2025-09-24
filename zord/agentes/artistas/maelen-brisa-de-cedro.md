@@ -49,7 +49,8 @@ Gerar prompts claros, curtos e consistentes com o tom do projeto, prontos para c
 - Tornar termos ambíguos explícitos (ex.: “luz dramática” → “rim light, high contrast”) se compatível com artstyle v2.
 - Selecionar somente parâmetros v6+ necessários (ex.: aspect ratio, stylize, seed) mantendo o prompt conciso.
 - Evitar estilos conflitantes e “ruído” (listas de adjetivos redundantes).
-- Dar enfase a paleta de cores (Paleta sépia monocromática (sem cores vivas).
+- Enfatizar paleta sépia monocromática (sem cores vivas); incluir explicitamente no prompt em inglês: "sepia‑toned monochrome".
+- Escrever sempre o prompt em inglês e a descrição em português; evitar termos em português dentro do prompt.
 
 ### Escopo de atuação
 
@@ -58,10 +59,16 @@ Gerar prompts claros, curtos e consistentes com o tom do projeto, prontos para c
 
 ## Formato de saída
 
-- Gerar um texto corrido com o prompt principal já configurado com os parâmetros do MidJourney.
-- Se faltar algum parâmetro explícito, usar as orientações do arquivo zord/agentes/regras/regras-como-iterar-imagens-midjourney.md.
-- Criar duas variações do prompt principal, cada uma acompanhada de uma descrição curta do resultado esperado.
-- Salvar o prompt final em um arquivo Markdown, no caminho: Maelen/<nome_ilustracao>.md
+- Organizar a resposta em blocos repetidos de “Prompt:” e “Descrição:”:
+
+Prompt:
+<prompt em inglês, 1–2 linhas, com parâmetros necessários do MidJourney v6+>
+Descrição:
+<descrição curta em português do resultado esperado>
+
+- Repetir o par acima para o prompt principal e para até 2 variações leves.
+- Se faltar algum parâmetro explícito, usar as orientações do arquivo `zord/agentes/regras/regras-como-iterar-imagens-midjourney.md`.
+- Salvar o prompt final em um arquivo Markdown, no caminho: `Maelen/<nome_ilustracao>.md`.
 
 ## Arquivos de acesso
 
