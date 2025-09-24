@@ -24,18 +24,18 @@ Objetivo: preparar insumos, conduzir entrevista e solicitar a entrega final no f
 ## Passos de orquestração
 
 1) **Coleta e Síntese:** A partir do nome do mapa, vasculhe as fontes e produza um briefing objetivo para o Serel contendo: áreas/cômodos, restrições canônicas, NPCs/itens relevantes e requisitos de jogabilidade/tema.
-2) **Rascunho Inicial (Serel):** Envie o briefing ao Serel e peça o documento no “Formato de saída” definido no agente.
-3) **Entrevista Iterativa com Rugol:** Para refinar o rascunho, invoque o agente entrevistador `Rugol` (definido em `zord/agentes/entrevistadores/persona-Rugol-v3.md`).
+2) **Rascunho Inicial e Salvamento (Serel):** Envie o briefing ao Serel, peça o documento no “Formato de saída” e **salve-o imediatamente** no caminho de saída (`frontend/docs/GDD/2-world-building/locais/<nome-do-mapa>.md`).
+3) **Entrevista Iterativa com Rugol:** Para refinar o mapa, invoque o agente entrevistador `Rugol` (definido em `zord/agentes/entrevistadores/persona-Rugol-v3.md`). O usuário poderá ler o arquivo salvo antes de responder.
     - **Configuração da Invocação:** Use as diretrizes com as seguintes adaptações para este contexto:
         - **Não é necessário guardar logs da entrevista.**
         - **`maxPerguntasPorRodada`:** Defina como 5.
         - **Condição de término:** A entrevista continua até que o usuário encerre explicitamente.
-    - **Processo:** Após cada rodada de entrevista com Rugol, use as informações coletadas para pedir ao Serel que atualize o rascunho do mapa, mostrando apenas o trecho alterado ou um resumo das mudanças.
+    - **Processo:** Após cada rodada de entrevista com Rugol, use as informações coletadas para pedir ao Serel que **atualize o arquivo de mapa já salvo**, mostrando apenas o trecho alterado ou um resumo das mudanças.
 4) **Coerência Canônica:** Confronte o rascunho com `frontend/docs/GDD/2-world-building` e ajuste onde houver conflito.
 5) **Validação Final:** Verifique circulação ≥ 1 tile, portas livres, alinhamento à grade e coerência por cômodo.
 6) **Entrega Final:**
-   a. Salve o documento principal da descrição do mapa em `frontend/docs/GDD/2-world-building/locais/<nome-do-mapa>.md`.
-   b. Crie um segundo arquivo chamado `frontend/docs/GDD/2-world-building/locais/<nome-do-mapa>.info.md`.
+   a. **O documento principal já está salvo e atualizado.**
+   b. Crie o segundo arquivo, `frontend/docs/GDD/2-world-building/locais/<nome-do-mapa>.info.md`.
    c. Neste arquivo `.info.md`, documente as evidências do GDD usadas para criar a descrição. Para cada evidência, copie um trecho relevante do documento original e adicione um link para a fonte.
 
       **Exemplo de conteúdo para o `.info.md`:**
@@ -47,13 +47,6 @@ Objetivo: preparar insumos, conduzir entrevista e solicitar a entrega final no f
 
       Por eras, Gildrat foi um símbolo de poder e engenhosidade anã. A cidade caiu após a quebra do selo de Melios e a invasão dos Ignotos. [ler mais em Gildrat](./gildrat-v2.md)
       ```
-
-## Diretrizes de perguntas “fora da caixa” (para a entrevista)
-
-- “Se Thorin é filho de Thordan (general) e moram juntos, deseja insígnias militares e móveis de alto padrão?”
-- “Se Thorin conversa com a mãe em sonho, incluir objetos dela no quarto/santuário? Há relíquias?”
-- “Se a quest exige treino marcial, prefere suporte de armadura na sala ou espaço de treino dedicado?”
-- “Se um NPC é mestre cervejeiro, a cozinha/dispensa deve refletir barris, prateleiras e utilitários específicos?”
 
 ## Preferências de saída (contrato com o Serel)
 

@@ -73,7 +73,9 @@ Anotar no log a intenção escolhida, as seções afetadas no formato “Nome (C
 
 - Estrutura sugerida de resposta ao entrevistado:
   - Síntese breve (1–2 linhas) do que foi entendido.
-  - Pergunta principal + (opcional) follow‑up.
+  - As perguntas devem ser apresentadas no seguinte formato, para facilitar a resposta do usuário:
+    - <Pergunta>
+      [Resposta]:
 - Se houver referência a formulário: listar “Nome (Código) — 1 linha de contexto/impacto” (ou “Nome — 1 linha” se não houver código).
 - Regras:
   - Nunca usar “Sx” isolado.
