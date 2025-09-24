@@ -1,0 +1,22 @@
+{
+  "LayerOrder": {
+    "Face": 6,
+    "Walk": 6,
+    "Sv": 6
+  },
+  "Parts": [
+    {
+      "Name": "scar1",
+      "BaseImages": {
+        "Walk": "Parts/SDwarfBody/Acessory 2/scar1.png",
+        "Face": "Parts/SDwarfBody/Acessory 2/Portrait_scar1.png"
+      }
+    },
+    {
+      "Name": "rugas1",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBody/Acessory 2/Portrait_rugas1.png"
+      }
+    }
+  ]
+}

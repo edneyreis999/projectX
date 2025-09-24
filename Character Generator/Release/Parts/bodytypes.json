@@ -4,6 +4,22 @@
     "PreviewImage":"Parts/SDwarfBody/PreviewImage.png"
   },
   {
+    "Name": "SDwarfBody_bracosaolado",
+    "PreviewImage":"Parts/SDwarfBody_bracosaolado/PreviewImage.png"
+  },
+  {
+   "Name": "SDwarfBody_briga",
+   "PreviewImage":"Parts/SDwarfBody_briga/PreviewImage.png"
+ },
+   {
+    "Name": "SDwarfBody_susto",
+    "PreviewImage":"Parts/SDwarfBody_susto/PreviewImage.png"
+  },
+   {
+    "Name": "SDwarfBody_triste",
+    "PreviewImage":"Parts/SDwarfBody_triste/PreviewImage.png"
+  },
+  {
     "Name": "SDwarfBodyFemale",
     "PreviewImage":"Parts/SDwarfBodyFemale/PreviewImage.png"
   }
