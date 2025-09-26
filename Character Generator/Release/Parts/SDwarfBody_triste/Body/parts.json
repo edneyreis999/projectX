@@ -1,0 +1,16 @@
+{
+  "LayerOrder": {
+    "Face": 1,
+    "Walk": 1,
+    "Sv": 100
+  },
+"Parts":[
+  {
+    "Name": "BodyMasc",
+    "PreviewImage": "Parts/_triste/Body/icon_BodyMasc.png",
+    "BaseImages": {
+      "Face": "Parts/_triste/Body/Portrait_BodyMasc.png",
+      "Walk": "Parts/_triste/Body/Character_BodyMasc.png"
+    }
+  }
+]}

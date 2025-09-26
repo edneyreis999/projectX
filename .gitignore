@@ -8,6 +8,7 @@
 /.history
 .DS_Store
 /tasks
+/Maelen
 frontend/save/config.rmmzsave
 frontend/save/global.rmmzsave
 frontend/save/file0.rmmzsave
