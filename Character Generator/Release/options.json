@@ -1,5 +1,5 @@
 {
-  "CurrentBodyType": "SDwarfBody_briga",
+  "CurrentBodyType": "SDwarfBody",
   "ImportJsonOnLoad": "",
   "UseNearestNeighbor": [
     "Walk",
@@ -313,7 +313,19 @@
     "Walk",
     "Sv",
     "Walk",
+    "Sv",
+    "Walk",
+    "Sv",
+    "Walk",
+    "Sv",
+    "Walk",
+    "Sv",
+    "Walk",
+    "Sv",
+    "Walk",
+    "Sv",
+    "Walk",
     "Sv"
   ],
-  "LastFile": "E:\\Projetos\\projectX\\Character Generator\\Exports\\Principals\\Thorin_medo.json"
+  "LastFile": "E:\\Projetos\\projectX\\Character Generator\\Exports\\Principals\\Thorin.json"
 }

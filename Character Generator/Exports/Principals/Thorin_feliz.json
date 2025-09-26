@@ -10,18 +10,9 @@
       "LayerSettings": {}
     },
     {
-      "Name": "armadura",
-      "Category": "Clothing",
-      "Part": "Clothing05",
-      "Offsets": {},
-      "Visible": true,
-      "UseSkinToneColoring": true,
-      "LayerSettings": {}
-    },
-    {
-      "Name": "olho",
+      "Name": "olhos",
       "Category": "Eyes",
-      "Part": "Eye01_3",
+      "Part": "Eye01",
       "Offsets": {},
       "Visible": true,
       "UseSkinToneColoring": true,
@@ -30,8 +21,23 @@
     {
       "Name": "sobrancelha",
       "Category": "Eyebrows",
-      "Part": "Eyebrows 4",
-      "Offsets": {},
+      "Part": "Eyebrows 3",
+      "Offsets": {
+        "Face": "0, -4",
+        "Sv": "0, -4",
+        "Walk": "0, -4"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "boca",
+      "Category": "Mouth",
+      "Part": "Portrait_Boca2",
+      "Offsets": {
+        "Face": "-1, 2"
+      },
       "Visible": true,
       "UseSkinToneColoring": true,
       "LayerSettings": {}
@@ -41,17 +47,8 @@
       "Category": "Nose",
       "Part": "Nariz 2",
       "Offsets": {
-        "Face": "0, 4"
+        "Face": "0, 5"
       },
-      "Visible": true,
-      "UseSkinToneColoring": true,
-      "LayerSettings": {}
-    },
-    {
-      "Name": "boca",
-      "Category": "Mouth",
-      "Part": "Portrait_Boca3",
-      "Offsets": {},
       "Visible": true,
       "UseSkinToneColoring": true,
       "LayerSettings": {}
@@ -78,12 +75,32 @@
       "Name": "capacete",
       "Category": "Helmets",
       "Part": "Helmet 7",
+      "Offsets": {
+        "Face": "0, 3"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "armadura",
+      "Category": "Clothing",
+      "Part": "Clothing05",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "cicatriz",
+      "Category": "Acessory 2",
+      "Part": "scar1",
       "Offsets": {},
       "Visible": true,
       "UseSkinToneColoring": true,
       "LayerSettings": {}
     }
   ],
-  "BodyType": "SDwarfBody_susto",
+  "BodyType": "SDwarfBody_bracosaolado",
   "BodyTypeVariation": ""
 }
