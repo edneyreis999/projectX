@@ -2,8 +2,7 @@
 
 <!-- Somente TEMPLATE. Não descreva conteúdo final aqui. Preencha com textos curtos, objetivos e testáveis. -->
 
-- Público-alvo: equipe de narrativa, design e implementação (RPG Maker MZ)
-- Base (persona): zord/agentes/game-designs/persona_throllim_cinza_memoria.md (Throllim Cinza-Memória)
+- Público-alvo: equipe de narrativa e design
 
 <!-- Alinhamento rápido (meta do template):
   - Foco do template: Personagem (identidade estável + transformação + uso em cena)
@@ -16,11 +15,7 @@
 
 ## 1) Identidade Estável
 
-Objetivo
-
-- Consolidar atributos fixos e essência do personagem.
-
-Campos
+Objetivo: Consolidar atributos fixos e essência do personagem.
 
 - Nome: <!-- 1–2 palavras, sem sobrenomes complexos -->
 - Papel Narrativo: <!-- Herói, Mentor, Vilão, Aliado, Anti-herói etc. -->
@@ -32,7 +27,7 @@ Campos
 - Medo Fundamental: <!-- 1 item: fracasso, abandono, morte -->
 - Virtude Principal: <!-- 1 item: coragem, compaixão, disciplina -->
 - Fraqueza Principal: <!-- 1 item: arrogância, impulsividade, teimosia -->
-- Aparência/Marca: <!-- 1 frase inequívoca: silhueta, adereço, gesto/repetição visual -->
+- Aparência: <!-- 1 frase inequívoca: silhueta, adereço, gesto/repetição visual -->
 - Motivação Raiz: <!-- 1–2 frases: causa profunda que move a jornada -->
 - Maior sonho: <!-- 1 frase -->
 - Maior medo: <!-- 1 frase -->
@@ -42,21 +37,18 @@ Campos
 
 ## 2) Linha de Transformação
 
-Objetivo
-
-- Mapear a evolução emocional e decisória por Ato, conectando objetivos imediatos aos valores centrais e às contradições internas. Incluir variações físicas, psicológicas, preferências e relações ativas por Ato.
-
-Campos
+Objetivo:  Mapear a evolução emocional e decisória por Ato, conectando objetivos imediatos aos valores centrais e às contradições internas. Incluir variações físicas, psicológicas, preferências e relações ativas por Ato.
 
 Ato I / Fase de Chamado
 
+- Jornada narrativa: <!-- como o personagem se desenvolveu durante este ato e quais características mudaram ao longo do ato -->
 - Emoção Predominante: <!-- ex.: ansiedade, curiosidade, negação -->
-- Objetivo Imediato: <!-- 1 verbo ativo + alvo curto -->
+- Objetivo Inicial: <!-- 1 verbo ativo + alvo curto -->
 - Relação com Valores Centrais: <!-- 1–2 frases -->
 - Contradições Internas Ativas: <!-- bullets curtos -->
-- Faixa etária: <!-- jovem/adulto/maduro; números opcionais -->
+- Faixa etária: <!-- jovem/adulto/maduro/idoso -->
 - Tipo físico: <!-- ex.: magro, atlético, robusto -->
-- Cicatrizes/Marcas: <!-- onde, aparência, origem breve -->
+- Cicatrizes: <!-- onde, aparência, origem breve -->
 - Arquétipo predominante: <!-- ex.: Inocente, Explorador, Rebelde, Sábio -->
 - Formas de agir/pensar: <!-- 2–3 traços observáveis -->
 - Lugar/situação/atividade favorita:
@@ -69,6 +61,7 @@ Ato I / Fase de Chamado
 
 Ato II / Provação
 
+- Jornada narrativa: <!-- como o personagem se desenvolveu durante este ato e quais características mudaram ao longo do ato -->
 - Emoção Predominante: <!-- ex.: tensão, esperança, culpa -->
 - Objetivo Imediato: <!-- 1 verbo ativo + alvo curto -->
 - Relação com Valores Centrais: <!-- 1–2 frases -->
@@ -88,11 +81,12 @@ Ato II / Provação
 
 Ato III / Transformação
 
+- Jornada narrativa: <!-- como o personagem se desenvolveu durante este ato e quais características mudaram ao longo do ato -->
 - Emoção Predominante: <!-- ex.: resolução, coragem, aceitação -->
 - Objetivo Imediato: <!-- 1 verbo ativo + alvo curto -->
 - Relação com Valores Centrais: <!-- 1–2 frases -->
 - Contradições Internas Ativas: <!-- bullets curtos -->
-- Faixa etária: <!-- se aplicável -->
+- Faixa etária: <!-- se houver passagem de tempo/ajuste -->
 - Tipo físico: <!-- estado final -->
 - Cicatrizes/Marcas: <!-- síntese/ênfase -->
 - Arquétipo predominante: <!-- síntese/transformação -->
@@ -115,4 +109,3 @@ Ato III / Transformação
 ---
 
 <!-- Fim do TEMPLATE de Personagem (Framework Coreto + Throllim). -->
-
