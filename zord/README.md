@@ -23,7 +23,7 @@ Arquivos e caminhos relevantes (referência rápida):
 - zord/comandos/invocar-ghoran.md
 - zord/comandos/invocar-grumak.md
 - zord/comandos/invocar-throllim-a-criadora-de-templates.md
-- zord/comandos/invocar-rugol-o-intrevistador.md
+- zord/comandos/invocar-rugol-o-entrevistador.md
 - zord/comandos/criador-de-personas.md
 - zord/agentes/auxiliares/persona_ghoran.md
 - zord/agentes/criadores-documentos/persona_grumak_quebra_loop.md
@@ -83,7 +83,7 @@ Abaixo, um catálogo das personas principais, com finalidade, entradas ideais, s
 - Entradas ideais: objetivo da sessão, local do formulário a preencher, arquivo de log, base de conhecimento.
 - Saída esperada: logs iterativos de sessão, atualização de formulários e, se necessário, uma síntese final.
 - Onde salvar: defina “Formulário” e “Arquivo de log” ao iniciar (ver comando abaixo).
-- Como invocar: `zord/comandos/invocar-rugol-o-intrevistador.md`.
+- Como invocar: `zord/comandos/invocar-rugol-o-entrevistador.md`.
 
 ### Leo, o Arquiteto de Fluxos (diagramas de quest)
 
@@ -139,7 +139,7 @@ Exemplos rápidos:
 - Ghoran: abrir `zord/comandos/invocar-ghoran.md` → colar no LLM → responder 3 perguntas iniciais → receber blueprint por eventos, CE e mapa de teste → salvar em `/ghoran`.
 - Grumak: abrir `zord/comandos/invocar-grumak.md` → fornecer diagrama + contexto → receber/atualizar seção “Checklist Perguntas de QA” no próprio arquivo.
 - Throllim: abrir `zord/comandos/invocar-throllim-a-criadora-de-templates.md` → informar foco e destino → receber template GDD com % de progresso.
-- Rugol: abrir `zord/comandos/invocar-rugol-o-intrevistador.md` → definir objetivo, formulário e log → a cada rodada, o log é atualizado e o formulário evolui.
+- Rugol: abrir `zord/comandos/invocar-rugol-o-entrevistador.md` → definir objetivo, formulário e log → a cada rodada, o log é atualizado e o formulário evolui.
 - Leo (diagramas): abrir `zord/agentes/entrevistadores/criador-de-diagramas-quest-PlantUML/criador-de-diagramas-quest-PlantUML.md` → seguir as perguntas → obter diagrama final.
 - Theodore (NSD): abrir `zord/agentes/quests/general-narrative-designer/general-narrative-designer.md` → seguir checkpoints → salvar documento final ao fim de cada etapa aprovada.
 
