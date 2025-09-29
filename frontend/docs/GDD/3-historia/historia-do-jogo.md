@@ -23,7 +23,7 @@ O mundo de Thorin é Gildrat, a capital do império anão. Sua vida é dividida 
 O chamado não é para uma aventura gloriosa, mas uma sentença. Tordan informa a Thorin que seu futuro como jogador acabou e que, na manhã seguinte, ele começará a trabalhar como aprendiz de explorador de minas. A missão é se apresentar a um anão chamado **Balastrus** na taverna. Este é o evento que perturba fundamentalmente o mundo de Thorin e o força a um novo caminho.
 
 - **Eventos Chave:**
-  - **Quest: Fim de Jogo:** Tordan impõe o novo destino a Thorin: "Amanhã ao amanhecer apresentar-se-á a Balastros na taverna. Aprendiz de minerador. Ponto final.”
+  - **Quest: Fim de Jogo:** Tordan impõe o novo destino a Thorin: "Amanhã ao amanhecer apresentar-se-á a Balastrus na taverna. Aprendiz de minerador. Ponto final.”
 
 *Fonte: Quest "Fim de Jogo".*
 
@@ -42,10 +42,9 @@ Thorin se recusa a aceitar seu novo destino. Ao acordar, ele ignora as ordens do
 
 **Conhecer um NPC chave que oferece orientação ou um item crucial.**
 
-Thorin encontra dois mentores em potencial, embora não tradicionais:
+Thorin encontra seus mentores em potencial, embora não tradicionais:
 
-1. **Balastrus:** Um anão misterioso e pragmático que formaliza a entrada de Thorin no mundo da mineração através de um contrato. Ele não oferece sabedoria, mas sim a porta de entrada para a jornada.
-2. **Os Guardas (Kilin, Mhordred, Tharok):** Inicialmente antagonistas, eles se tornam aliados e mentores práticos, ensinando Thorin sobre o mundo real fora da nobreza de Gildrat, como na cômica cena da compra da armadura.
+1. **Os Guardas (Kilin, Mhordred, Tharok):** Inicialmente antagonistas, eles se tornam aliados e mentores práticos, ensinando Thorin sobre o mundo real fora da nobreza de Gildrat, como na cômica cena da compra da armadura.
 
 - **Eventos Chave:**
   - **Quest: Primeiro Contrato:** Thorin encontra Balastrus na taverna e assina o contrato, sendo oficialmente um aprendiz. Balastrus o direciona para **Tusk**, o líder da expedição.
@@ -95,50 +94,69 @@ A "caverna oculta" é a **Mina de Melios**, o local do selo ancestral. A aproxim
 
 **A grande crise ou batalha no meio do jogo.**
 
-A provação ocorre na chegada a Melios. O grupo encontra a mina bloqueada pelos **Corvos**, um grupo de anões que se recusa a trabalhar após encontrar um estranho bloco de ferro com símbolos. A crise é o confronto direto com eles para obter acesso à mina, uma batalha que representa o conflito entre a ambição (Balastrus) e o pressentimento de perigo (os Corvos).
+A provação inicia na chegada a Melios e culmina com a quebra de um antigo selo. O grupo encontra a mina bloqueada pelos **Corvos**, anões que abandonaram a escavação após encontrar um selo de ferro adornado por símbolos estranhos. As canções antigas dos ancestrais já alertavam sobre isso — um presságio de que algo aprisionado não deveria ser perturbado. Mesmo assim, por influência política e pressão do imperador **Damburr** (cujo juízo está sutilmente afetado pelo **Profeta das Sombras**), **Balastrus** decide avançar a qualquer custo.
 
 - **Eventos Chave:**
-  - **Quest: A Voz do Conselho:** O confronto verbal e a subsequente batalha de chefe contra os Corvos na entrada da Mina de Melios.
-  - **Resultado:** Os Corvos são derrotados e partem, deixando o caminho livre, mas o aviso sobre o perigo do "bloco misterioso" permanece.
+  - **Confronto em Melios:** Diálogo tenso seguido de boss fight contra os Corvos. Após a vitória, eles reafirmam o perigo do selo e se retiram.
+  - **Quebra do Selo:** Balastrus, inventor anão, usa sua nova invenção — o dinamite — para destruir o selo, contra os avisos dos Corvos e os cânticos ancestrais. O grupo atravessa a passagem recém-aberta e encontra uma sala ampla, abarrotada de metais preciosos. Balastrus entra em júbilo e ordena que iniciem a extração imediatamente.
+  - **A Fumaça e o Primeiro Morto:** Uma fumaça espessa começa a preencher a sala. Balastrus racionaliza que é reação química do dinamite com o ar da mina e manda continuar. Um grito corta o ar; um anão escavador cai morto. O pânico se instaura.
+  - **Aparição dos Ignotos:** Criaturas saem da névoa e cercam a equipe. O grupo luta em retirada pelo corredor; um Ignoto salta à frente e bloqueia a passagem — mini‑chefe improvisado. Após derrotá‑lo, a passagem se abre, mas novos Ignotos surgem.
+  - **Sacrifício Tático:** Para garantir a fuga, **Kilin** e **Tharok** ficam para bloquear os inimigos enquanto gritam para que **Thorin** fuja com **Mhordred** por uma passagem lateral. Eles alcançam a entrada da mina e batem em retirada rumo a Gildrat.
 
-*Fonte: Quest "A Voz do Conselho".*
+Resultado narrativo: o selo se rompeu; os Ignotos estão livres. A ambição venceu o pressentimento — e trouxe a ruína à porta.
+
+Fontes: Quest "A Voz do Conselho"; worldbuilding (canções de Melios e influência do Profeta); notas do autor (selo, dinamite, fumaça, fuga).
 
 ## 9. A Recompensa
 
 **Obtenção de um item ou conhecimento crucial.**
 
-A recompensa imediata é o acesso à Mina de Melios. No entanto, a verdadeira "recompensa" desta fase da jornada é a descoberta de conhecimento crucial:
+A "recompensa" aqui é amarga: conhecimento e consequência.
 
-1. **O Sigmetal:** Encontrado na Quest "Minerador Aprendiz", este minério raro é um item-chave cujo propósito ainda é desconhecido, mas que Balastrus claramente cobiça.
-2. **O Selo:** A consequência de entrar em Melios será a descoberta do selo ancestral. A "recompensa" por interagir com ele será a libertação dos Ignotos, revelando a verdadeira ameaça ao mundo.
+- **Sigmetal (anterior):** O raro minério obtido em Kravens permanece como recurso cobiçado e possivelmente ligado às tecnologias/rituais futuros. Propósito exato: `[a definir]`.
+- **Verdade do Selo:** A quebra do selo revela a existência e natureza da ameaça dos **Ignotos**. O grupo agora sabe que algo antigo foi libertado e que Gildrat pode estar em risco imediato.
+- **Flag Político:** Damburr, apoiado por Balastrus, assumirá controle de Melios, apesar dos alertas. Repercussões no conselho: `[a definir]`.
 
-- **Eventos Chave:**
-  - **Quest: Minerador Aprendiz:** Obtenção do Sigmetal após derrotar o Cristaleão.
-  - **Próximos Passos:** A exploração de Melios levará à descoberta do selo. `[a definir]`
+Próximos passos imediatos: fuga de Melios, retorno a Gildrat e tentativa de alertar o conselho/alto comando.
 
 ## 10. O Caminho de Volta
 
 **A jornada em direção ao clímax final.**
 
-Esta etapa começará após a quebra do selo em Melios e a libertação dos Ignotos. O "caminho de volta" será a fuga de Melios e o retorno a uma Gildrat agora sob a ameaça de um exército das sombras. A jornada não será mais sobre mineração, mas sobre sobrevivência e alerta.
+Começa com a fuga de Melios e o retorno apressado a Gildrat para alertar o conselho, **Tordan** e **Damburr**. A jornada deixa de ser sobre mineração e passa a ser sobre sobrevivência e tomada de decisão sob pressão.
 
-- **Eventos Futuros:** `[a definir]`
+- **Fuga de Melios:** Thorin e Mhordred alcançam a entrada e correm de volta a Gildrat. Estado de Kilin e Tharok após o bloqueio: `[a definir]` (reaparecem mais tarde).
+- **Aviso em Gildrat:** O grupo tenta relatar a verdade sobre Melios. Reação do conselho/imperador sob influência do Profeta: `[a definir]`.
+- **Consequência Macro (do worldbuilding):** A ruptura do selo precipita a ofensiva dos Ignotos. Em breve, Gildrat entra em colapso e sobreviventes recuam para fundar/fortificar **Daratrine**. Sequência e forma exata dessa queda: `[a definir]`.
+- **Decisão Estratégica:** Com a região sob ameaça, decide‑se enviar delegações para fora de Gildrat em busca de ajuda. **Thorin** é escolhido para um desses grupos.
 
 ## 11. A Ressurreição
 
 **O clímax final, onde o herói enfrenta a morte e renasce transformado.**
 
-O clímax da história de Thorin, onde ele confrontará a maior ameaça (provavelmente o Profeta dos Ignotos) e usará todo o conhecimento e habilidades que adquiriu. Seus sonhos recorrentes com sua mãe e sua habilidade única provavelmente desempenharão um papel central aqui. Ele deixará de ser um "aprendiz" para se tornar um herói.
+A rota final ocorre em uma grande caverna que liga a região de Gildrat ao restante do continente. Durante a travessia, perdas pesadas atingem o grupo — incluindo a morte de **Tordan**. No ápice do perigo, para salvar os companheiros, **Thorin** libera seu poder onírico e "encarna" o espírito de sua mãe, como uma invocação efêmera que canaliza poder do Reino da Mana.
 
-- **Eventos Futuros:** `[a definir]`
+- **Reconhecimento do Pai:** Diante desse poder, Tordan reconhece que a mãe de Thorin possuía dons semelhantes. Ele pede perdão e afirma que o filho é o único capaz de conduzir os anões à salvação. Momento de reconciliação e passagem do legado.
+- **Sacrifício de Mhordred:** Mhordred morre para salvar Thorin e os demais, despedindo‑se com humor: lembra que Thorin ainda deve 20 mil Drakeis a ele.
+- **Conquista do Pico:** Thorin, **Filena**, **Kilin** e mais um aliado `[a definir]` derrotam o último chefe e alcançam o topo da montanha.
+
+Referências de lore: ver "Magia — Reino da Mana (Sonhos & Espíritos)" e "Taxonomia — Técnicas Sábias" para basear a manifestação onírica de Thorin de modo consistente com as regras do sistema.
 
 ## 12. O Retorno com o Elixir
 
 **O final, mostrando o mundo salvo ou mudado pelo herói.**
 
-O estado do mundo após a batalha final. Como Ekios e seus povos mudaram após o conflito com os Ignotos. O "elixir" pode ser a paz, uma nova aliança entre as raças, ou o conhecimento que Thorin adquiriu para garantir que a ameaça não retorne.
+No topo, uma cena de dualidade encerra a jornada: de um lado, **Gildrat** sendo atacada pelos Ignotos — guerra, desespero e morte; do outro, um mundo novo, uma floresta viva e verde que os anões nunca viram, pois Gildrat é coberta por neve o ano todo. O herói não salvou o mundo antigo, mas abriu caminho para um futuro.
 
-- **Eventos Futuros:** `[a definir]`
+- **Elixir Temático:** O elixir não é objeto, é o fardo e a visão. Thorin abandona o sonho do futebol rúnico e assume o dever de guiar seu povo por uma terra desconhecida, buscar os **Elfos** (Arcaror) e forjar uma aliança capaz de impedir a ruína completa.
+- **Estado Final:** Refugiados organizados em **Daratrine**, rota aberta para contato com Arcaror, ameaça dos Ignotos persiste sem comando único `[a definir detalhes]`.
+
+Notas pendentes para detalhar em iterações futuras:
+
+- Quem é o 4º membro que alcança o topo com Thorin, Filena e Kilin? `[a definir]`
+- Flags de sobrevivência/retorno de Kilin e Tharok após Melios. `[a definir]`
+- Reação de Damburr e do conselho após o alerta. `[a definir]`
+- Papel do Sigmetal no Ato II/III. `[a definir]`
 
 ---
 
@@ -167,3 +185,18 @@ O ritmo da jornada inicial é projetado para alternar entre momentos de alta ten
 
 - **Pico (Alta Tensão):**
   - **Quest 8: A Voz do Conselho:** Tensão política no conselho, seguida pela batalha de chefe contra os Corvos.
+
+— Pós‑Melios (novo):
+
+- **Pico (Choque/Descoberta):**
+  - Quebra do selo em Melios, fumaça, primeiro morto e aparição dos Ignotos.
+- **Vale (Fuga Tensa):**
+  - Retirada às pressas, sacrifício tático de Kilin/Tharok; corrida de volta a Gildrat.
+- **Pico (Queda Macro):**
+  - Escalada da ameaça, colapso de Gildrat e êxodo para Daratrine. `[a definir ordem/cenas]`
+
+Estrutura macro em atos (síntese):
+
+- **Ato I:** Mundo comum → chamado → Kravens → Conselho → Melios (Provação) → selo quebrado.
+- **Ato II:** Fuga → alerta em Gildrat → avanço dos Ignotos → queda/êxodo → decisão de buscar ajuda e partir pela caverna.
+- **Ato III:** Travessia da caverna, perdas (Tordan, Mhordred), clímax onírico de Thorin, chefe final, topo da montanha → novo mundo e novo fardo.

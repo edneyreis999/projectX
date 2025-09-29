@@ -69,7 +69,7 @@ A espiritualidade da cidade se manifestava em sua arquitetura, honrando ancestra
 
 ### 9.1 Simbologia e Narrativa Arquitetônica
 
-A arquitetura de Gildrat é uma crônica da história e dos valores anões. As paredes dos grandes salões e do castelo são adornadas com baixos-relevos que narram feitos heróicos e a história dos clãs. Em honra aos ancestrais, rostos de antigos imperadores são esculpidos diretamente nas pilastras do castelo. O portão principal é guardado por sete estátuas monumentais dos fundadores da cidade, com o imperador Dambur em destaque no centro.
+A arquitetura de Gildrat é uma crônica da história e dos valores anões. As paredes dos grandes salões e do castelo são adornadas com baixos-relevos que narram feitos heróicos e a história dos clãs. Em honra aos ancestrais, rostos de antigos imperadores são esculpidos diretamente nas pilastras do castelo. O portão principal é guardado por sete estátuas monumentais dos fundadores da cidade, com o imperador Damburr em destaque no centro.
 
 ## 10. Arquitetura Cívica e Espaços Públicos
 

@@ -204,7 +204,7 @@ Notas Adicionais
 
 ## 9. Sem Voltar Atrás
 
-Após o sucesso da missão na mina de Kravens, Tusk pede para Thorin juntar suas coisas e encontrá-lo na saída. Animado com os resultados da expedição, Tusk deseja retornar imediatamente a Gildrat para apresentar os minérios a Balastros.
+Após o sucesso da missão na mina de Kravens, Tusk pede para Thorin juntar suas coisas e encontrá-lo na saída. Animado com os resultados da expedição, Tusk deseja retornar imediatamente a Gildrat para apresentar os minérios a Balastrus.
 
 No entanto, do lado de fora, uma nevasca começa a se formar nas Montanhas Congeladas. Uma discussão acalorada toma conta do grupo, especialmente entre os três guardas imperiais — Kilin, Mhordred e Tharok — que tentam convencer Tusk a esperar até o dia seguinte. Argumentam que passar a noite na clareira próxima seria mais seguro, dadas as condições do clima.
 
@@ -219,7 +219,7 @@ Tasks
 
 Descrições (Narrativa Progressiva)
 
-1. Após concluir sua missão na mina de Kravens, Tusk pediu que você juntasse suas coisas e o encontrasse na saída. Animado com os resultados da expedição, ele quer retornar a Gildrat imediatamente para apresentar tudo a Balastros. Encontre-o e prepare-se para partir.
+1. Após concluir sua missão na mina de Kravens, Tusk pediu que você juntasse suas coisas e o encontrasse na saída. Animado com os resultados da expedição, ele quer retornar a Gildrat imediatamente para apresentar tudo a Balastrus. Encontre-o e prepare-se para partir.
 2. Após concluir sua missão na mina de Kravens e encontrar Tusk na saída, ele insistiu em retornar a Gildrat imediatamente, animado para apresentar os resultados da expedição. Mesmo com uma nevasca se formando nas Montanhas Congeladas, ele ignorou os alertas dos guardas e ameaçou cortar o pagamento de quem ficasse. Agora, enfrente a trilha congelada de volta à cidade.
 
 Notas Adicionais
@@ -230,9 +230,9 @@ Notas Adicionais
 
 ## 10. De Volta ao Ninho
 
-Após a perigosa missão na mina de Kravens e a travessia sob nevasca pelas Montanhas Congeladas, Thorin e o grupo retornam à Estrada do Cão Luar. Tusk, que acompanhou a jornada, chega junto ao grupo, enquanto Balastros os aguarda ansioso pelo relatório da expedição. Há alívio pelo retorno, mas também expectativa — especialmente quanto ao desempenho do novo recruta.
+Após a perigosa missão na mina de Kravens e a travessia sob nevasca pelas Montanhas Congeladas, Thorin e o grupo retornam à Estrada do Cão Luar. Tusk, que acompanhou a jornada, chega junto ao grupo, enquanto Balastrus os aguarda ansioso pelo relatório da expedição. Há alívio pelo retorno, mas também expectativa — especialmente quanto ao desempenho do novo recruta.
 
-Durante a conversa, o jogador pode optar, mais uma vez, por entregar ou não o estranho minério de Sig Metal. A coleta do restante dos minérios é feita por Tusk e Balastros juntos. Caso Thorin entregue o Sig Metal, Balastros o analisa brevemente e o guarda sem demonstrar reação. Caso omita, Balastros o encara com olhos clínicos e diz, em tom enigmático: “Você está muito novo para carregar tanto peso nos bolsos... Mas tudo bem. Nem todo baú se abre no primeiro puxão.”
+Durante a conversa, o jogador pode optar, mais uma vez, por entregar ou não o estranho minério de Sig Metal. A coleta do restante dos minérios é feita por Tusk e Balastrus juntos. Caso Thorin entregue o Sig Metal, Balastrus o analisa brevemente e o guarda sem demonstrar reação. Caso omita, Balastrus o encara com olhos clínicos e diz, em tom enigmático: “Você está muito novo para carregar tanto peso nos bolsos... Mas tudo bem. Nem todo baú se abre no primeiro puxão.”
 
 Com a entrega finalizada, Thorin é dispensado. Já em Gildrat, ao retornar para casa, percebe que seu pai ainda não voltou. Sozinho, exausto e confuso com os eventos do dia, Thorin se deita para descansar.
 
@@ -249,8 +249,8 @@ Tasks
 
 Descrições (Narrativa Progressiva)
 
-1. Após retornar das Montanhas Congeladas com Tusk e os guardas, você chegou à Estrada do Cão Luar, onde Balastros já aguardava. Ele parecia ansioso por notícias da missão. Agora que a recepção terminou, é hora de entregar os minérios coletados a Balastros e Tusk.
-2. Com os minérios entregues, Balastros e Tusk avaliaram sua performance. Balastros demonstrou satisfação — mas sua expressão indicava que talvez tenha notado algo não dito. Agora, retorne para o distrito residencial, vá para casa e descanse.
+1. Após retornar das Montanhas Congeladas com Tusk e os guardas, você chegou à Estrada do Cão Luar, onde Balastrus já aguardava. Ele parecia ansioso por notícias da missão. Agora que a recepção terminou, é hora de entregar os minérios coletados a Balastrus e Tusk.
+2. Com os minérios entregues, Balastrus e Tusk avaliaram sua performance. Balastrus demonstrou satisfação — mas sua expressão indicava que talvez tenha notado algo não dito. Agora, retorne para o distrito residencial, vá para casa e descanse.
 
 Notas Adicionais
 

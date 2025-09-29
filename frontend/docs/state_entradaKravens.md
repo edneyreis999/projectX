@@ -83,7 +83,7 @@ Este documento detalha os estados da variável `state_EntradaKravens`, descreven
 
 ## Estado 7
 
-**Descrição**: Kilin, Mhordred e Tarok chegam atrasados, mas acabam entrando no grupo de Thorin. Eles entram no 1F da Mina de Kravens para minerar os minérios de Kraven.  
+**Descrição**: Kilin, Mhordred e Tharok chegam atrasados, mas acabam entrando no grupo de Thorin. Eles entram no 1F da Mina de Kravens para minerar os minérios de Kraven.  
 **Troca para o Estado 8**:  
 
 - **Evento**: Tusk  
