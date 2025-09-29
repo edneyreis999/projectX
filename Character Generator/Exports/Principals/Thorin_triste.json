@@ -1,0 +1,107 @@
+{
+  "Layers": [
+    {
+      "Name": "Base",
+      "Category": "Body",
+      "Part": "BodyMasc",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "armadura",
+      "Category": "Clothing",
+      "Part": "Clothing05",
+      "Offsets": {
+        "Face": "-62, 0",
+        "Sv": "-62, 0",
+        "Walk": "-62, 0"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "olho",
+      "Category": "Eyes",
+      "Part": "Eye01",
+      "Offsets": {
+        "Face": "54, 1",
+        "Sv": "4, 0",
+        "Walk": "4, 0"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "sobrancelha",
+      "Category": "Eyebrows",
+      "Part": "Eyebrows 4",
+      "Offsets": {
+        "Face": "48, 2"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "nariz",
+      "Category": "Nose",
+      "Part": "Nariz 2",
+      "Offsets": {
+        "Face": "54, 5"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "boca",
+      "Category": "Mouth",
+      "Part": "Portrait_Boca1",
+      "Offsets": {
+        "Face": "56, -6"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "cabelo",
+      "Category": "Rear Hair",
+      "Part": "RearHair04",
+      "Offsets": {
+        "Face": "53, 10"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "franja",
+      "Category": "Front Hair",
+      "Part": "FrontHair01",
+      "Offsets": {
+        "Face": "55, 5"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "capacete",
+      "Category": "Helmets",
+      "Part": "Helmet 7",
+      "Offsets": {
+        "Face": "51, 9"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    }
+  ],
+  "BodyType": "SDwarfBody_triste",
+  "BodyTypeVariation": ""
+}

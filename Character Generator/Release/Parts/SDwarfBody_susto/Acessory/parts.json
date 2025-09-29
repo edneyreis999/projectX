@@ -1,0 +1,17 @@
+{
+  "LayerOrder": {
+    "Face": 5,
+    "Walk": 5,
+    "Sv": 5
+  },
+  "Parts": [
+    {
+      "Name": "Tapa olho",
+      "PreviewImage": "Parts/SDwarfBody/Acessory/Portrait_tapaOlho.png.png",
+      "BaseImages": {
+        "Walk": "Parts/SDwarfBody/Acessory/tapaOlho.png",
+        "Face": "Parts/SDwarfBody/Acessory/Portrait_tapaOlho.png"
+      }
+    }
+  ]
+}

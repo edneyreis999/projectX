@@ -1,0 +1,111 @@
+{
+  "Layers": [
+    {
+      "Name": "Base",
+      "Category": "Body",
+      "Part": "BodyMasc",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "olhos",
+      "Category": "Eyes",
+      "Part": "Eye01",
+      "Offsets": {
+        "Face": "56, 6",
+        "Sv": "56, 6",
+        "Walk": "56, 6"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "nariz",
+      "Category": "Nose",
+      "Part": "Nariz 2",
+      "Offsets": {
+        "Face": "53, 12",
+        "Sv": "53, 12",
+        "Walk": "53, 12"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "boca",
+      "Category": "Mouth",
+      "Part": "Portrait_Boca3",
+      "Offsets": {
+        "Face": "52, 6",
+        "Sv": "52, 6",
+        "Walk": "52, 6"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "sobrancelha",
+      "Category": "Eyebrows",
+      "Part": "Eyebrows 5",
+      "Offsets": {
+        "Face": "58, 6",
+        "Sv": "58, 6",
+        "Walk": "58, 6"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "cabelo",
+      "Category": "Rear Hair",
+      "Part": "RearHair04",
+      "Offsets": {
+        "Face": "54, 10",
+        "Sv": "54, 10",
+        "Walk": "54, 10"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "franja",
+      "Category": "Front Hair",
+      "Part": "FrontHair01",
+      "Offsets": {
+        "Face": "50, 10"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "capacete",
+      "Category": "Helmets",
+      "Part": "Helmet 7",
+      "Offsets": {
+        "Face": "55, 8"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "armadura",
+      "Category": "Clothing",
+      "Part": "Clothing05",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    }
+  ],
+  "BodyType": "SDwarfBody_briga",
+  "BodyTypeVariation": ""
+}

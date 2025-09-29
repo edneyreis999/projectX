@@ -1,0 +1,41 @@
+{
+  "LayerOrder": {
+    "Face": 3,
+    "Walk": 3,
+    "Sv": 3
+  },
+"Parts": [
+  {
+    "Name": "RearHair01",
+    "PreviewImage": "Parts/SDwarfBody/Rear Hair/FG_RearHair1_p01_c1_m003.png",
+    "BaseImages": {
+      "Face": "Parts/SDwarfBody/Rear Hair/FG_RearHair1_p01_c1_m003.png",
+      "Walk": "Parts/SDwarfBody/Rear Hair/TV_RearHair2_p01.png"
+    }
+  },
+  {
+    "Name": "RearHair02",
+    "PreviewImage": "Parts/SDwarfBody/Rear Hair/FG_RearHair1_p02_c1_m003.png",
+    "BaseImages": {
+      "Face": "Parts/SDwarfBody/Rear Hair/FG_RearHair1_p02_c1_m003.png",
+      "Walk": "Parts/SDwarfBody/Rear Hair/TV_RearHair2_p02.png"
+    }
+  },
+  {
+    "Name": "RearHair03",
+    "PreviewImage": "Parts/SDwarfBody/Rear Hair/FG_RearHair1_p03_c1_m003.png",
+    "BaseImages": {
+      "Face": "Parts/SDwarfBody/Rear Hair/FG_RearHair1_p03_c1_m003.png",
+      "Walk": "Parts/SDwarfBody/Rear Hair/TV_RearHair2_p03.png"
+    }
+  },
+  {
+    "Name": "RearHair04",
+    "PreviewImage": "Parts/SDwarfBody/Rear Hair/FG_RearHair1_p04_c1_m003.png",
+    "BaseImages": {
+      "Face": "Parts/SDwarfBody/Rear Hair/FG_RearHair1_p04_c1_m003.png",
+      "Walk": "Parts/SDwarfBody/Rear Hair/TV_RearHair2_p04.png"
+    }
+  }
+]
+}
