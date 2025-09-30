@@ -29,7 +29,7 @@
   * Filena
   * Tordan
   * Kilin
-  * Mordread e Tarok
+  * Mhordred e Tharok
   * Companheiros de time
   * Time adversário
   * Torcida nas arquibancadas

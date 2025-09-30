@@ -22,7 +22,7 @@ A Sala do Conselho, também usada como sala do trono, é o centro do poder no Ca
 ### 3. Salão Principal
 
 - **Localização:** A área aberta entre a entrada e a Plataforma do Poder.
-- **Descrição:** O espaço é dominado por um longo tapete feito de couro de dragão, que vai da entrada até a escadaria da plataforma. Delegados como Balastros e o grupo de Thorin se posicionam sobre este tapete para se dirigir ao conselho.
+- **Descrição:** O espaço é dominado por um longo tapete feito de couro de dragão, que vai da entrada até a escadaria da plataforma. Delegados como Balastrus e o grupo de Thorin se posicionam sobre este tapete para se dirigir ao conselho.
 
 ### 4. Paredes Laterais (Leste e Oeste)
 

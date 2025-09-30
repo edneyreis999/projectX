@@ -12,7 +12,7 @@
 - **Conflito central**: Tusk pressiona a equipe a partir em meio a uma tempestade de neve para apresentar os resultados da expedição, enquanto Thorin e os guardas enfrentam as consequências dessa decisão.  
 - **Objetivo narrativo global**: Escalar a tensão do mistério do selo, reforçar o aprendizado do jogador com batalhas desafiadoras e aprofundar os laços de Thorin com os guardas.  
 - **Premissa resumida**: Thorin e seu grupo desafiam uma nevasca para retornar de Kravens com minérios; a quest termina com um pesadelo que amplia o mistério do selo ancestral e da missão do protagonista.  
-- **Resumo**: A quest começa com uma discussão acalorada na clareira de Kravens sobre a iminente tempestade de neve. Tusk insiste em partir imediatamente, ameaçando os membros que se recusarem com a perda de pagamento. O grupo, incluindo Thorin e os guardas, parte contrariado, enfrentando perigosas batalhas durante a travessia pelo mapamúndi sob nevasca. Ao retornarem à Estrada do Cão Luar, Balastros os aguarda ansioso. O jogador pode escolher entregar ou omitir o minério raro Sigmetal. Após a entrega, Thorin retorna sozinho para casa e tem um pesadelo intenso com sua mãe, que o alerta sobre um selo ancestral rachado, encerrando a missão.  
+- **Resumo**: A quest começa com uma discussão acalorada na clareira de Kravens sobre a iminente tempestade de neve. Tusk insiste em partir imediatamente, ameaçando os membros que se recusarem com a perda de pagamento. O grupo, incluindo Thorin e os guardas, parte contrariado, enfrentando perigosas batalhas durante a travessia pelo mapamúndi sob nevasca. Ao retornarem à Estrada do Cão Luar, Balastrus os aguarda ansioso. O jogador pode escolher entregar ou omitir o minério raro Sigmetal. Após a entrega, Thorin retorna sozinho para casa e tem um pesadelo intenso com sua mãe, que o alerta sobre um selo ancestral rachado, encerrando a missão.  
 - **Locais principais**:  
   - Clareira de Kravens  
   - Mapamúndi (travessia sob nevasca)  
@@ -21,7 +21,7 @@
 - **NPCs principais**:  
   - Thorin  
   - Tusk  
-  - Balastros  
+  - Balastrus  
   - Kilin  
   - Mhordred  
   - Tharok  
@@ -56,10 +56,10 @@ Quest: A Travessia Perigosa
  │      ├── Beat 2: Encontros com inimigos fortalecidos (🎮)
  │      ├── Beat 3: Abrigo em cavernas — ativação de sidequests (🎮)
  │      └── Beat 4: Confronto com boss próximo a Gildrat (🎮)
- ├── Cena 3: Encontro com Balastros — Premissa: Relatório e entrega do Sigmetal com múltiplas escolhas
+ ├── Cena 3: Encontro com Balastrus — Premissa: Relatório e entrega do Sigmetal com múltiplas escolhas
  │      ├── Beat 1: Chegada do grupo e recepção ansiosa (🎬)
- │      ├── Beat 2: Diálogo com Balastros (🎮) — múltiplas escolhas para entrega do Sigmetal
- │      └── Beat 3: Reação de Balastros ou Tusk conforme escolha (🎬)
+ │      ├── Beat 2: Diálogo com Balastrus (🎮) — múltiplas escolhas para entrega do Sigmetal
+ │      └── Beat 3: Reação de Balastrus ou Tusk conforme escolha (🎬)
  └── Cena 4: Retorno para casa — Premissa: Caminho noturno simples e introspetivo
         ├── Beat 1: Travessia pelo mapa escurecido (🎮)
         └── Beat 2: Chegada à casa e início do sonho (🎬)
@@ -73,7 +73,7 @@ Quest: A Travessia Perigosa
 | - | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | 1 | **Clareira de Kravens**     | Discussão tensa sobre a tempestade iminente; Kilin alerta Tusk sobre os riscos; jogador faz múltiplas escolhas para apoiar Kilin ou Tusk; Tusk ameaça retenção de pagamento para quem não partir. |
 | 2 | **Travessia no Mapamúndi**  | Retorno perigoso sob tempestade com batalhas contra inimigos fortalecidos; sequência intensa de batalhas; quebra narrativa com Reed e o jogador criança; exploração da caverna com puzzle e item “Símbolo da Trégua”; confronto com boss perto de Gildrat. |
-| 3 | **Encontro com Balastros**  | Chegada com tempo limpo; organização para entrega dos minérios no baú de Kravens; múltiplas opções para entrega do Sigmetal (para Tusk, Balastros, no baú de Kravens ou não entregar); cenas e diálogos variáveis conforme escolha; encerramento com Balastros.         |
+| 3 | **Encontro com Balastrus**  | Chegada com tempo limpo; organização para entrega dos minérios no baú de Kravens; múltiplas opções para entrega do Sigmetal (para Tusk, Balastrus, no baú de Kravens ou não entregar); cenas e diálogos variáveis conforme escolha; encerramento com Balastrus.         |
 | 4 | **Retorno para casa**       | Travessia noturna e silenciosa; chegada em casa sem ninguém; diálogos opcionais no quarto do pai e com Sáparo; transição para sonho final envolvendo o selo ancestral.                                                         |
 
 ---
@@ -86,11 +86,11 @@ Quest: A Travessia Perigosa
 | ---|-------------------------------------------------|-------------------------------------------------------|----------|
 | 1  | Aviso de Kilin                                   | Kilin, chefe da guarda real, alerta Tusk sobre a tempestade se formando e o perigo iminente.  | 🎬       |
 | 2  | Reação inicial do grupo                          | O grupo demonstra preocupação; muitos concordam com Kilin, mas alguns hesitam.               | 🎬       |
-| 3  | Discordância de Tusk                             | Tusk nega o perigo e afirma que a missão deve continuar para satisfazer Balastros.          | 🎬       |
+| 3  | Discordância de Tusk                             | Tusk nega o perigo e afirma que a missão deve continuar para satisfazer Balastrus.          | 🎬       |
 | 4  | Debate acirrado                                  | Jogador pode escolher:                                     | 🎮       |
 |     | — Apoiar Kilin (sugerir esperar a tempestade passar)       | Reforça a cautela e tenta convencer os outros a adiar a partida.                           |          |
 |     | — Apoiar Tusk (incitar a partida imediata)                    | Ajuda Tusk a pressionar o grupo a partir rapidamente.                                     |          |
-| 5  | Cartada final de Tusk                             | Tusk reafirma sua autoridade, lembra o acordo com Balastros e ameaça retenção de pagamento para quem não partir. | 🎬       |
+| 5  | Cartada final de Tusk                             | Tusk reafirma sua autoridade, lembra o acordo com Balastrus e ameaça retenção de pagamento para quem não partir. | 🎬       |
 | 6  | Decisão final do grupo                           | O grupo decide partir sob a pressão de Tusk, mesmo contrariado.                           | 🎬       |
 
 ---
@@ -111,19 +111,19 @@ Quest: A Travessia Perigosa
 
 ---
 
-##### Cena 3 – Encontro com Balastros (Rascunho detalhado e sequencial)
+##### Cena 3 – Encontro com Balastrus (Rascunho detalhado e sequencial)
 
 | #  | Beat                                          | Descrição                                                                                                            | Controle |
 | ---|-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------|----------|
-| 1  | Chegada na Estrada do Cão Luar                 | O grupo chega com o tempo limpo após a tempestade; Balastros os aguarda ansioso.                                      | 🎬       |
-| 2  | Organização da entrega                          | Balastros e Tusk organizam o grupo em fila para entregar os minérios no baú de Kravens central.                      | 🎬       |
+| 1  | Chegada na Estrada do Cão Luar                 | O grupo chega com o tempo limpo após a tempestade; Balastrus os aguarda ansioso.                                      | 🎬       |
+| 2  | Organização da entrega                          | Balastrus e Tusk organizam o grupo em fila para entregar os minérios no baú de Kravens central.                      | 🎬       |
 | 3  | Entrega dos Cravens                            | Jogador entrega manualmente os minérios Cravens (9 ou 10) no baú de Kravens; condição para avançar.                  | 🎮       |
 | 4  | Cenas condicionais após entrega dos Cravens   | Dependendo da posse e entrega do Sigmetal, ocorrem as seguintes situações:                                           | 🎬       |
-|     | — Se Tusk já tem o Sigmetal (ou recebe antes) | Tusk faz cena empolgada dizendo a Balastros que ele encontrou o Sigmetal; Thorin reage, pois sabe que foi ele quem achou.|          |
-|     | — Se jogador entregou o Sigmetal no baú de Kravens ou diretamente para Balastros | Balastros analisa o Sigmetal, mantém silêncio, e o minério “finge que nada aconteceu”, mantendo o mistério.           |          |
-|     | — Se jogador não entregou o Sigmetal          | Após entrega dos Cravens, Balastros conversa com Thorin e comenta enigmaticamente:                                   |          |
+|     | — Se Tusk já tem o Sigmetal (ou recebe antes) | Tusk faz cena empolgada dizendo a Balastrus que ele encontrou o Sigmetal; Thorin reage, pois sabe que foi ele quem achou.|          |
+|     | — Se jogador entregou o Sigmetal no baú de Kravens ou diretamente para Balastrus | Balastrus analisa o Sigmetal, mantém silêncio, e o minério “finge que nada aconteceu”, mantendo o mistério.           |          |
+|     | — Se jogador não entregou o Sigmetal          | Após entrega dos Cravens, Balastrus conversa com Thorin e comenta enigmaticamente:                                   |          |
 |     |                                                | “Você está muito novo para carregar tanto peso nos bolsos... Mas tudo bem. Nem todo baú se abre no primeiro puxão.” |          |
-| 5  | Conversa final com Balastros                    | Jogador pode dialogar com Balastros, encerrando a cena; diálogos variam conforme as escolhas anteriores.             | 🎮       |
+| 5  | Conversa final com Balastrus                    | Jogador pode dialogar com Balastrus, encerrando a cena; diálogos variam conforme as escolhas anteriores.             | 🎮       |
 
 ---
 
