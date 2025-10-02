@@ -99,6 +99,15 @@
       "Visible": true,
       "UseSkinToneColoring": true,
       "LayerSettings": {}
+    },
+    {
+      "Name": "barba",
+      "Category": "Beard",
+      "Part": "Beard06",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
     }
   ],
   "BodyType": "SDwarfBody_bracosaolado",

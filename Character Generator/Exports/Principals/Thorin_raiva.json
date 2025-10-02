@@ -1,6 +1,19 @@
 {
   "Layers": [
     {
+      "Name": "cabelo",
+      "Category": "Rear Hair",
+      "Part": "RearHair04",
+      "Offsets": {
+        "Face": "54, 35",
+        "Sv": "54, 35",
+        "Walk": "54, 35"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
       "Name": "Base",
       "Category": "Body",
       "Part": "BodyMasc",
@@ -14,9 +27,9 @@
       "Category": "Eyes",
       "Part": "Eye01",
       "Offsets": {
-        "Face": "56, 6",
-        "Sv": "56, 6",
-        "Walk": "56, 6"
+        "Face": "56, 29",
+        "Sv": "56, 29",
+        "Walk": "56, 29"
       },
       "Visible": true,
       "UseSkinToneColoring": true,
@@ -27,9 +40,9 @@
       "Category": "Nose",
       "Part": "Nariz 2",
       "Offsets": {
-        "Face": "53, 12",
-        "Sv": "53, 12",
-        "Walk": "53, 12"
+        "Face": "53, 34",
+        "Sv": "53, 34",
+        "Walk": "53, 34"
       },
       "Visible": true,
       "UseSkinToneColoring": true,
@@ -40,9 +53,9 @@
       "Category": "Mouth",
       "Part": "Portrait_Boca3",
       "Offsets": {
-        "Face": "52, 6",
-        "Sv": "52, 6",
-        "Walk": "52, 6"
+        "Face": "52, 28",
+        "Sv": "52, 28",
+        "Walk": "52, 28"
       },
       "Visible": true,
       "UseSkinToneColoring": true,
@@ -53,22 +66,9 @@
       "Category": "Eyebrows",
       "Part": "Eyebrows 5",
       "Offsets": {
-        "Face": "58, 6",
-        "Sv": "58, 6",
-        "Walk": "58, 6"
-      },
-      "Visible": true,
-      "UseSkinToneColoring": true,
-      "LayerSettings": {}
-    },
-    {
-      "Name": "cabelo",
-      "Category": "Rear Hair",
-      "Part": "RearHair04",
-      "Offsets": {
-        "Face": "54, 10",
-        "Sv": "54, 10",
-        "Walk": "54, 10"
+        "Face": "58, 32",
+        "Sv": "58, 32",
+        "Walk": "58, 32"
       },
       "Visible": true,
       "UseSkinToneColoring": true,
@@ -79,7 +79,9 @@
       "Category": "Front Hair",
       "Part": "FrontHair01",
       "Offsets": {
-        "Face": "50, 10"
+        "Face": "50, 30",
+        "Sv": "0, 20",
+        "Walk": "0, 20"
       },
       "Visible": true,
       "UseSkinToneColoring": true,
@@ -90,7 +92,9 @@
       "Category": "Helmets",
       "Part": "Helmet 7",
       "Offsets": {
-        "Face": "55, 8"
+        "Face": "55, 26",
+        "Sv": "0, 18",
+        "Walk": "0, 18"
       },
       "Visible": true,
       "UseSkinToneColoring": true,
@@ -101,6 +105,19 @@
       "Category": "Clothing",
       "Part": "Clothing05",
       "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Layer#9",
+      "Category": "Beard",
+      "Part": "Beard06",
+      "Offsets": {
+        "Face": "56, 33",
+        "Sv": "56, 33",
+        "Walk": "56, 33"
+      },
       "Visible": true,
       "UseSkinToneColoring": true,
       "LayerSettings": {}

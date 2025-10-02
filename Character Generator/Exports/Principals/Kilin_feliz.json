@@ -1,39 +1,22 @@
 {
   "Layers": [
     {
-      "Name": "Layer#10",
-      "Category": "Acessory 2",
-      "Part": "scar1",
-      "Offsets": {
-        "Face": "52, 11",
-        "Sv": "52, 11",
-        "Walk": "52, 11"
-      },
-      "Visible": true,
-      "UseSkinToneColoring": true,
-      "LayerSettings": {}
-    },
-    {
       "Name": "Base",
       "Category": "Body",
       "Part": "BodyMasc",
-      "Offsets": {
-        "Face": "0, 0",
-        "Sv": "0, 0",
-        "Walk": "0, 0"
-      },
+      "Offsets": {},
       "Visible": true,
       "UseSkinToneColoring": true,
       "LayerSettings": {}
     },
     {
-      "Name": "olho",
+      "Name": "olhos",
       "Category": "Eyes",
-      "Part": "Eye01",
+      "Part": "Eye02",
       "Offsets": {
-        "Face": "54, 9",
-        "Sv": "4, 8",
-        "Walk": "4, 8"
+        "Face": "-1, 7",
+        "Sv": "-1, 7",
+        "Walk": "-1, 7"
       },
       "Visible": true,
       "UseSkinToneColoring": true,
@@ -42,24 +25,11 @@
     {
       "Name": "sobrancelha",
       "Category": "Eyebrows",
-      "Part": "Eyebrows 4",
+      "Part": "Eyebrows 1",
       "Offsets": {
-        "Face": "48, 9",
-        "Sv": "0, 7",
-        "Walk": "0, 7"
-      },
-      "Visible": true,
-      "UseSkinToneColoring": true,
-      "LayerSettings": {}
-    },
-    {
-      "Name": "nariz",
-      "Category": "Nose",
-      "Part": "Nariz 2",
-      "Offsets": {
-        "Face": "52, 12",
-        "Sv": "-2, 7",
-        "Walk": "-2, 7"
+        "Face": "0, -4",
+        "Sv": "0, -4",
+        "Walk": "0, -4"
       },
       "Visible": true,
       "UseSkinToneColoring": true,
@@ -68,11 +38,24 @@
     {
       "Name": "boca",
       "Category": "Mouth",
-      "Part": "Portrait_Boca1",
+      "Part": "Portrait_Boca2",
       "Offsets": {
-        "Face": "56, -2",
-        "Sv": "0, 4",
-        "Walk": "0, 4"
+        "Face": "-1, 4",
+        "Sv": "0, 2",
+        "Walk": "0, 2"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "nariz",
+      "Category": "Nose",
+      "Part": "Nariz 3",
+      "Offsets": {
+        "Face": "-6, 5",
+        "Sv": "-6, 0",
+        "Walk": "-6, 0"
       },
       "Visible": true,
       "UseSkinToneColoring": true,
@@ -82,10 +65,8 @@
       "Name": "cabelo",
       "Category": "Rear Hair",
       "Part": "RearHair04",
-      "Offsets": {
-        "Face": "53, 10"
-      },
-      "Visible": true,
+      "Offsets": {},
+      "Visible": false,
       "UseSkinToneColoring": true,
       "LayerSettings": {}
     },
@@ -93,9 +74,7 @@
       "Name": "franja",
       "Category": "Front Hair",
       "Part": "FrontHair01",
-      "Offsets": {
-        "Face": "55, 5"
-      },
+      "Offsets": {},
       "Visible": true,
       "UseSkinToneColoring": true,
       "LayerSettings": {}
@@ -103,9 +82,9 @@
     {
       "Name": "capacete",
       "Category": "Helmets",
-      "Part": "Helmet 7",
+      "Part": "Helmet 4",
       "Offsets": {
-        "Face": "51, 9"
+        "Face": "0, 3"
       },
       "Visible": true,
       "UseSkinToneColoring": true,
@@ -114,30 +93,35 @@
     {
       "Name": "armadura",
       "Category": "Clothing",
-      "Part": "Clothing05",
-      "Offsets": {
-        "Face": "-2, 0",
-        "Sv": "-2, 0",
-        "Walk": "-2, 0"
-      },
+      "Part": "Clothing06",
+      "Offsets": {},
       "Visible": true,
       "UseSkinToneColoring": true,
       "LayerSettings": {}
     },
     {
-      "Name": "Layer#9",
+      "Name": "cicatriz",
+      "Category": "Acessory 2",
+      "Part": "scar1",
+      "Offsets": {},
+      "Visible": false,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "barba",
       "Category": "Beard",
-      "Part": "Beard06",
+      "Part": "Beard08",
       "Offsets": {
-        "Face": "57, 10",
-        "Sv": "57, 10",
-        "Walk": "57, 10"
+        "Face": "0, 3",
+        "Sv": "0, 3",
+        "Walk": "0, 3"
       },
       "Visible": true,
       "UseSkinToneColoring": true,
       "LayerSettings": {}
     }
   ],
-  "BodyType": "SDwarfBody_triste",
+  "BodyType": "SDwarfBody_bracosaolado",
   "BodyTypeVariation": ""
 }
