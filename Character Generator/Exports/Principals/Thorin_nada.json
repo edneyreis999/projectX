@@ -126,6 +126,15 @@
       "Visible": true,
       "UseSkinToneColoring": true,
       "LayerSettings": {}
+    },
+    {
+      "Name": "Layer#11",
+      "Category": "Beard",
+      "Part": "Beard06",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
     }
   ],
   "BodyType": "SDwarfBody",
