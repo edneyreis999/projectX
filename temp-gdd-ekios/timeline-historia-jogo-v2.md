@@ -93,9 +93,44 @@ Flags narrativos globais: **selo quebrado**; **Ignotos libertos**; **responsabil
 > - **Personagens-chave**: Filena (tradição/consciência), Balastrus (ambição/invenção), Guardas (dever a Tordan > opinião pessoal), Thorin (da ingenuidade política ao fardo).  
 > - **Consequência explícita**: a catástrofe decorre de **uma escolha humana** (testar a pólvora e violar o selo), não de acidente.
 >
-### 11 - ?? - [gap a definir]
+### 11 - Gildrat em alarme: separação, audiência e reinvindicação
 
-Thorin e Mhordred correm para Gildrat para alertar o conselho e o Imperador. Reação institucional, contramedidas e desdobramentos políticos: [gap a definir].
+**11a – Chegada e separação do grupo**  
+Às portas de Gildrat, o grupo enfim retorna, mas a tensão explode em **divisão imediata**:  
+
+- **Mhordred** leva **Tusk** diretamente ao Conselho para se explicar.  
+- **Filena** recusa-se a ver novamente o Imperador e anuncia que voltará para casa.  
+- O jogador assume controle de **Thorin**, e deve escolher para onde ir: **seguir Filena** ou **apresentar-se ao Conselho**.
+
+**11b – Ramo Filena: descoberta em casa**  
+Se Thorin acompanha Filena, juntos descobrem que o **pai dela** foi enviado em uma expedição para **Kravens**. Surge a urgência de alertar os anões daquela região e trazê-los de volta.  
+👉 Isso libera a missão **“Aviso em Kravens”**.  
+
+**11c – Ramo Conselho: audiência e confronto com Tordan**  
+No Conselho, Damburr exige medidas. Tordan monta um grupo de elite para resgatar **Kilin** em Melios.  
+Thorin tenta se voluntariar, mas o pai nega com dureza: “Apenas guardas imperiais têm esse direito.”  
+Em um gesto de bravura, Thorin se volta ao Imperador e declara:  
+> “Sou filho do General Tordan Forjaprata. Reinvindico meu dever de alistar-me na **Guarda de Ferro**. Não fugirei do fardo do meu sangue.”  
+A fala ecoa no salão: não é só rebeldia, é a **formalização** de Thorin como guarda.  
+👉 Isso libera a missão **“Resgate em Melios”**.
+
+**11d – A ferida antiga exposta**  
+A reinvindicação dói mais porque remete à antiga briga de pai e filho (na cena 4). Antes, Thorin disse que **nunca seria guarda**, rejeitando o orgulho da família. Agora, ele o faz diante de Damburr e dos conselheiros — um choque que arranca respeito e raiva em igual medida.  
+Tordan sente a humilhação de ser desafiado em público, mas não pode negar a necessidade: ninguém conhece a região melhor que Thorin.
+
+**11e – Preparação e flags globais**  
+De volta às ruas de Gildrat, o jogador pode organizar suprimentos mínimos antes de partir. O arco só avança quando **as duas missões forem concluídas** (Kravens e Melios), costurando a progressão narrativa:  
+
+- **Melios** → arco de crescimento, descoberta dos poderes oníricos e conexão com o **Profeta das Sombras**.  
+- **Kravens** → arco de relação com Filena, reencontro com o **pai dela**, e revelação da importância do **Sigmetal**.  
+
+> **Nota de design (drama e agência do jogador)**  
+>
+> - **Separação do grupo** dá agência imediata: a primeira escolha (seguir Filena ou ir ao Conselho) **abre os dois ramos principais**.  
+> - **Reivindicação de Thorin** é um momento-chave de personagem: retoma o conflito com Tordan e o transforma em bravura pública.  
+> - **Progressão narrativa dupla**: o arco só se completa quando **ambas missões** (Kravens e Melios) forem concluídas, garantindo equilíbrio entre **crescimento pessoal (poderes oníricos)** e **crescimento relacional (Filena + Sigmetal)**.  
+> - **Pacing dramático**: mantenha o Conselho denso e tenso, mas a cena em casa com Filena íntima e mais pessoal, contrastando política × vínculo.  
+> - **Economia**: compras limitadas (emergência), reforçando urgência do estado de alerta.  
 
 ### 12 - ?? - [gap a definir]
 
