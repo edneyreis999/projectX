@@ -40,19 +40,19 @@ Na clareira de Melios, o grupo “Corvos” bloqueia a passagem e relata ter enc
 
 Balastrus ignora presságios e ordena dinamite no bloco rúnico (a câmara do selo). A explosão abre uma passagem até uma sala repleta de metais. Fumaça espessa toma o local; um escavador cai morto e a ameaça real se revela: Ignotos emergem da névoa. Após um mini‑chefe que bloqueia a rota, o grupo bate em retirada. Kilin e Tharok ficam para segurar os inimigos; Thorin e Mhordred escapam por uma passagem lateral com o objetivo de alertar Gildrat. Flags globais marcam: selo quebrado, Ignotos libertos.
 
-## 11 - Alerta em Gildrat
+## ?? - [gap a definir]
 
 Thorin e Mhordred correm para Gildrat para alertar o conselho e o Imperador. Reação institucional, contramedidas e desdobramentos políticos: [gap a definir].
 
-## 12 - Colapso de Gildrat e êxodo para o refúgio
+## ?? - [gap a definir]
 
 A ruptura do selo precipita a ofensiva dos Ignotos; Gildrat entra em colapso. Sobreviventes fogem e começam a fortificar um novo refúgio — o embrião de Daratrine. Sequência exata de cenas, rotas e perdas no êxodo: [gap a definir]. Status final de Kilin e Tharok após Melios: [gap a definir].
 
-## 13 - A Ressurreição: travessia final e legado
+## ?? - [gap a definir]
 
 Na grande caverna que liga a região de Gildrat ao restante do continente, o grupo sofre perdas pesadas, [Gap a definir - quem morre? Tordan?]. Para salvar os companheiros, Thorin libera um poder onírico consistente com o “Reino da Mana”, canalizando o espírito de sua mãe em manifestação efêmera. Tordan reconhece o legado da mãe de Thorin e pede perdão ao filho. Mhordred se sacrifica para garantir a passagem, despedindo‑se com humor e cobrando os “20 mil dráqueis”. O grupo — Thorin, Filena, Kilin e mais um aliado [gap a definir] — derrota o último chefe e alcança o pico.
 
-## 14 - Retorno com o elixir: Daratrine e um mundo novo
+## ?? - [gap a definir]
 
 No topo, a narrativa alterna duas visões: Gildrat, em guerra e desespero sob ataque dos Ignotos, e, além da cordilheira, uma floresta viva que Thorin jamais viu. O elixir não é um artefato, mas a visão e o fardo: Thorin abandona o sonho do futebol rúnico e assume o dever de guiar seu povo à sobrevivência, abrir caminho até Arcaror (Elfos) e forjar alianças. Refugiados se organizam em Daratrine; a ameaça dos Ignotos persiste [gap a definir detalhes].
 
@@ -71,11 +71,4 @@ No topo, a narrativa alterna duas visões: Gildrat, em guerra e desespero sob at
 
 ### Ideias para melhoria da Narrativa
 
-- Plantar, nas cenas iniciais, versos da “canção” citada pela mãe (“Lembre‑se da canção”) para payoff ritual no clímax.
-- Transformar o fluxo do Sigmetal em fio condutor: pequenas variações de cena/loot e falas em “Travessia” e “Conselho” conforme `v_sigmetal_destino`.
-- Inserir interlúdios curtos com Rheed (Noite da História) entre atos para reforçar a moldura e respirar o pacing.
-- Dar sinais visuais e sonoros do selo rachado após Kravens (ruído/sussurro) para preparar Melios sem exposição direta.
-- Evoluir Tordan de antagonista rígido a pai complexo por meio de pequenos lapsos de empatia (retratos/pausas) antes do pedido de perdão no clímax.
-- Desenvolver a relação com Filena antes da audiência (opcionais/side‑beats) para aumentar o peso dramático na acusação.
-- Tornar Tusk um rival complexo (motivações próprias, arcos de respeito/mutualidade) em vez de apenas rude.
-- Usar a fumaça de Melios como mecânica (debuffs de medo/visão/precisão) para dar tensão adicional à fuga contra Ignotos.
+### Perguntas para responder
