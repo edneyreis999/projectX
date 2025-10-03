@@ -68,32 +68,31 @@ Derrotados, os Corvos se retiram, mantendo o aviso: **não mexam no selo**. A ex
 ### 10 - Quebra do selo em Melios: a liberação dos Ignotos
 
 **10a – Preparação: ordens, dúvidas e a primeira pólvora**  
-Na câmara do selo, Balastrus determina que todos se posicionem. Ele revela sua nova invenção — a **pólvora** — e a montagem de **dinamites** para abrir passagem no bloco rúnico. É **o primeiro teste em campo**.  
-Filena se opõe com firmeza, citando os avisos dos Corvos e as canções ancestrais. **Kilin, Mhordred e Tharok** trocam olhares: não concordam, mas **têm ordens de Tordan** para manter Thorin seguro, não para desafiar Balastrus. **Thorin**, ainda alheio ao tabuleiro político, tenta entender a hierarquia e a pressa em “fazer o que precisa ser feito”. **Tusk** avalia riscos e reforça a segurança, sem se comprometer com o mérito da decisão.
+Na câmara do selo, Balastrus determina posições e revela sua nova invenção — **pólvora** e **dinamites** — no **primeiro teste em campo**.  
+Filena se opõe e evoca as canções ancestrais. **Kilin, Mhordred e Tharok** não concordam, mas cumprem a ordem maior: **manter Thorin vivo** (mandato de Tordan). **Thorin** tenta decifrar a política por trás da pressa. **Tusk** cumpre e manda cumprir todas as ordens ditas por Balastrus.
 
-**10b – Armando a carga: a convicção de Balastrus**  
-Balastrus pessoalmente confere os estopins. O discurso dele é calculado: “progresso, prosperidade, legitimidade do Conselho”. A cena evidencia a **ambição** acima da prudência — e a tensão entre **autoridade técnica** (o inventor confiante) e **tradição** (os avisos que ele escolhe ignorar). Filena exige suspensão do plano; Balastrus lembra que a missão tem **mandato imperial**. Os guardas **não levantam armas contra ele**: a prioridade é Thorin.
+**10b – Abertura da câmara: euforia de riqueza**  
+A detonação rompe o bloco rúnico e revela um **salão repleto de metais e minérios raros**, intactos. **Balastrus e Tusk** entram **exultantes**: contam veios, estimam rotas de extração e projetam **fortuna**.  
+Por **alguns minutos**, o clima é de **descoberta e prosperidade**: tochas acesas, ferramentas examinando o veio, passos ecoando sobre pedra limpa — **parece uma vitória**.
 
-**10c – Detonação: o selo parte, algo desperta**  
-A explosão rasga a câmara. **Fumaça espessa**, **metal estalando**, poeira e um **grave sussurro** que parece vir da pedra. O chão treme; uma passagem se abre para um salão de metais e sombra. Um escavador cai sufocado. A sensação coletiva não é “êxito” — é **violação**. Thorin encara o vazio recém-aberto e percebe, tarde demais, que não existem garantias quando a pressa é maior que a sabedoria.
+**10c – Névoa e presságio**  
+Aos poucos, **uma névoa densa** começa a se espalhar pelo salão recém-aberto. O ar piora; há um **grave sussurro** que parece vir da rocha. A euforia cede lugar a olhares cautelosos. Um **escavador** cambaleia, **cai e morre**. O barulho das ferramentas cessa. A sensação torna-se de **violação**, não de conquista.
 
-**10d – Primeira aparição: os Ignotos**  
-Movimentos na névoa. **Figuras deformadas** emergem, guiadas pelo ruído e pelo cheiro da pólvora. O **primeiro mini-chefe** fecha a rota. **Kilin e Tharok** formam a linha de contenção; **Mhordred** puxa Thorin e **Filena** para a rota lateral com **Tusk**. Balastrus tenta sustentar a retirada sem admitir erro; as ordens viram gritos. O combate confirma o que Filena temia: **o selo guardava algo vivo**.
+**10d – Primeira aparição: os Ignotos fecham a saída**  
+Sombras se movem na névoa. **Ignotos** emergem e **fecham a passagem de volta** pela qual o grupo entrou, posicionando um **mini-chefe** como barreira.  
+**Kilin e Tharok** formam a linha de contenção para segurar o avanço; **Mhordred** conduz **Thorin** e **Filena** com **Tusk** por uma rota lateral. Balastrus tenta manter o controle sem admitir erro, mas as ordens viram gritos.
 
 **10e – Fuga e consequências: a dívida que nasce aqui**  
-A separação do grupo é forçada: **Kilin e Tharok** ficam para segurar os Ignotos enquanto **Thorin, Filena, Mhordred e Tusk** escapam por uma fenda.  
-Flags narrativas: **selo quebrado**; **Ignotos libertos**; **responsabilidade moral** de Balastrus e **fardo** sobre Thorin. Filena encara Thorin: “Agora você entende por que lutamos?” — e Thorin, sem resposta, só corre. A missão não termina com vitória; termina com **uma dívida** que o mundo irá cobrar.
+A separação é forçada: **Kilin e Tharok** ficam para ganhar tempo; **Thorin, Filena, Mhordred e Tusk** escapam por uma fenda.  
+Flags narrativos globais: **selo quebrado**; **Ignotos libertos**; **responsabilidade moral** de Balastrus; **fardo** sobre Thorin. Filena encara Thorin: “Agora você entende por que lutamos?” Ele não responde — **só corre**.
 
-> **Nota de design (drama e jogabilidade)**  
+> **Nota de design (ritmo dramático e leitura moral)**  
 >
-> - **Alavancas dramáticas**:  
->   - **Primeiro uso da pólvora/dinamite** (invenção de Balastrus) → risco pioneiro, alta incerteza.  
->   - **Conflito de papéis**: Filena (consciência e tradição) × Balastrus (progresso e poder); Guardas (dever a Tordan) × convicções pessoais.  
->   - **Arco de Thorin**: ignorância política → choque de realidade; inicia a culpa/fardo do herói.  
-> - **Core loop da cena**: Preparação tensa → Detonação → Aparição dos Ignotos (mini-boss bloqueando rota) → **Decisão tática** de separação → Fuga com **flags globais** ativadas.  
-> - **Feedback audiovisual**: a detonação deve **soar “errada”** — pós-eco grave, vento inverso, partículas “puxando” para dentro; os Ignotos surgem com **leitmotiv de baixa frequência**.  
-> - **Consequência explícita**: a cena deve **deixar claro** que a ruptura foi **uma escolha humana**, não um acidente. Isso alimenta o dilema moral nas cenas seguintes.
-
+> - **Sequência temporal explícita**: **(1)** explosão → **(2)** **euforia inicial** na sala repleta de minérios → **(3)** **névoa tardia** e presságio → **(4)** morte do minerador → **(5)** **Ignotos** emergem e **bloqueiam a saída** → **(6)** mini-boss segurando a rota → **(7)** **separação do grupo**.  
+> - **Alavancas dramáticas**: primeiro **“ganhamos”** (riqueza), depois **“pagamos”** (o preço da pressa).  
+> - **Personagens-chave**: Filena (tradição/consciência), Balastrus (ambição/invenção), Guardas (dever a Tordan > opinião pessoal), Thorin (da ingenuidade política ao fardo).  
+> - **Consequência explícita**: a catástrofe decorre de **uma escolha humana** (testar a pólvora e violar o selo), não de acidente.
+>
 ### 11 - ?? - [gap a definir]
 
 Thorin e Mhordred correm para Gildrat para alertar o conselho e o Imperador. Reação institucional, contramedidas e desdobramentos políticos: [gap a definir].
