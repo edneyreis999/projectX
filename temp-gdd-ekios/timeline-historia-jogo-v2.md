@@ -65,9 +65,34 @@ Derrotados, os Corvos se retiram, mantendo o aviso: **não mexam no selo**. A ex
 
 > **Nota de design**: Estruture esta sequência em **duas etapas distintas**: (1) **bloqueio no mapamúndi** com exibição do **mandato** e **sem combate**; (2) **clareira de Melios** com o **chefe dos Corvos**, culminando no impasse e combate. Reforce em falas e descrições a **dupla leitura moral**: antagonistas para Balastrus/Conselho, protetores segundo a **canção ancestral**.
 
-### 10 - 10 - Quebra do selo em Melios: a liberação dos Ignotos
+### 10 - Quebra do selo em Melios: a liberação dos Ignotos
 
-Balastrus ignora presságios e ordena dinamite no bloco rúnico (a câmara do selo). A explosão abre uma passagem até uma sala repleta de metais. Fumaça espessa toma o local; um escavador cai morto e a ameaça real se revela: Ignotos emergem da névoa. Após um mini‑chefe que bloqueia a rota, o grupo bate em retirada. Kilin e Tharok ficam para segurar os inimigos; Thorin e Mhordred escapam por uma passagem lateral com o objetivo de alertar Gildrat. Flags globais marcam: selo quebrado, Ignotos libertos.
+**10a – Preparação: ordens, dúvidas e a primeira pólvora**  
+Na câmara do selo, Balastrus determina que todos se posicionem. Ele revela sua nova invenção — a **pólvora** — e a montagem de **dinamites** para abrir passagem no bloco rúnico. É **o primeiro teste em campo**.  
+Filena se opõe com firmeza, citando os avisos dos Corvos e as canções ancestrais. **Kilin, Mhordred e Tharok** trocam olhares: não concordam, mas **têm ordens de Tordan** para manter Thorin seguro, não para desafiar Balastrus. **Thorin**, ainda alheio ao tabuleiro político, tenta entender a hierarquia e a pressa em “fazer o que precisa ser feito”. **Tusk** avalia riscos e reforça a segurança, sem se comprometer com o mérito da decisão.
+
+**10b – Armando a carga: a convicção de Balastrus**  
+Balastrus pessoalmente confere os estopins. O discurso dele é calculado: “progresso, prosperidade, legitimidade do Conselho”. A cena evidencia a **ambição** acima da prudência — e a tensão entre **autoridade técnica** (o inventor confiante) e **tradição** (os avisos que ele escolhe ignorar). Filena exige suspensão do plano; Balastrus lembra que a missão tem **mandato imperial**. Os guardas **não levantam armas contra ele**: a prioridade é Thorin.
+
+**10c – Detonação: o selo parte, algo desperta**  
+A explosão rasga a câmara. **Fumaça espessa**, **metal estalando**, poeira e um **grave sussurro** que parece vir da pedra. O chão treme; uma passagem se abre para um salão de metais e sombra. Um escavador cai sufocado. A sensação coletiva não é “êxito” — é **violação**. Thorin encara o vazio recém-aberto e percebe, tarde demais, que não existem garantias quando a pressa é maior que a sabedoria.
+
+**10d – Primeira aparição: os Ignotos**  
+Movimentos na névoa. **Figuras deformadas** emergem, guiadas pelo ruído e pelo cheiro da pólvora. O **primeiro mini-chefe** fecha a rota. **Kilin e Tharok** formam a linha de contenção; **Mhordred** puxa Thorin e **Filena** para a rota lateral com **Tusk**. Balastrus tenta sustentar a retirada sem admitir erro; as ordens viram gritos. O combate confirma o que Filena temia: **o selo guardava algo vivo**.
+
+**10e – Fuga e consequências: a dívida que nasce aqui**  
+A separação do grupo é forçada: **Kilin e Tharok** ficam para segurar os Ignotos enquanto **Thorin, Filena, Mhordred e Tusk** escapam por uma fenda.  
+Flags narrativas: **selo quebrado**; **Ignotos libertos**; **responsabilidade moral** de Balastrus e **fardo** sobre Thorin. Filena encara Thorin: “Agora você entende por que lutamos?” — e Thorin, sem resposta, só corre. A missão não termina com vitória; termina com **uma dívida** que o mundo irá cobrar.
+
+> **Nota de design (drama e jogabilidade)**  
+>
+> - **Alavancas dramáticas**:  
+>   - **Primeiro uso da pólvora/dinamite** (invenção de Balastrus) → risco pioneiro, alta incerteza.  
+>   - **Conflito de papéis**: Filena (consciência e tradição) × Balastrus (progresso e poder); Guardas (dever a Tordan) × convicções pessoais.  
+>   - **Arco de Thorin**: ignorância política → choque de realidade; inicia a culpa/fardo do herói.  
+> - **Core loop da cena**: Preparação tensa → Detonação → Aparição dos Ignotos (mini-boss bloqueando rota) → **Decisão tática** de separação → Fuga com **flags globais** ativadas.  
+> - **Feedback audiovisual**: a detonação deve **soar “errada”** — pós-eco grave, vento inverso, partículas “puxando” para dentro; os Ignotos surgem com **leitmotiv de baixa frequência**.  
+> - **Consequência explícita**: a cena deve **deixar claro** que a ruptura foi **uma escolha humana**, não um acidente. Isso alimenta o dilema moral nas cenas seguintes.
 
 ### 11 - ?? - [gap a definir]
 
