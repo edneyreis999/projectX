@@ -14,6 +14,8 @@ Thorin desperta de um pesadelo premonitório com sua mãe (“o tempo está acab
 
 Em casa, Thorin confronta o pai, o General Tordan Forja‑Prata. Ele tenta apelar a um antigo troféu do próprio Tordan, mas é humilhado. Tordan decreta: a carreira no esporte acabou; ao amanhecer, Thorin deve apresentar‑se a Balastrus na taverna para ser aprendiz de minerador. Thorin vai para o quarto e adormece sob tensão.
 
++**Ampliação do conflito (Guarda de Ferro):** durante a discussão, Tordan esfrega na cara de Thorin que ele **já passou da idade** de entrar para a **Guarda de Ferro** e que seu **dever** era **reivindicar essa honra diante do Imperador e do Conselho**. Thorin reage com desprezo às formalidades nobres e declara que **“nunca”** fará isso, por não ver **honra** na Guarda de Ferro. Indignado, Tordan **impõe**: se o filho não quer ser guarda, **será minerador** sob Balastrus — “como os anões de casta menor”. A sentença de Tordan é tanto **paterna** quanto **política**, e empurra Thorin para o eixo de Balastrus.
+
 ### 4 - 4 - É Hora de Crescer: tentativa de fuga, armadura e taverna
 
 Novo sonho com a mãe reforça a urgência. Thorin decide treinar com Filena para a final, mas, ao sair de casa, é interceptado pelos três guardas enviados por Tordan. No caminho, concluem que ele não pode se apresentar a Balastrus trajando roupa de jogo; seguem para a loja e, após um momento cômico, equipam Thorin com sua primeira armadura — com Mhordred bancando a compra a contragosto. Por fim, o deixam na taverna para o encontro com Balastrus.
@@ -29,6 +31,8 @@ Depois de outro sonho com a mãe — “Se você não agir, Gildrat cairá. Não
 ### 7 - 7 - A Travessia Perigosa: nevasca e escolhas sobre o Sigmetal
 
 Com a tempestade de neve chegando, Tusk impõe o retorno imediato a Gildrat. Durante a travessia, o jogador pode definir o destino do Sigmetal — entregar a Balastrus, a Tusk, colocá‑lo no baú de Kravens ou seguir sem entregar — variável rastreada por `v_sigmetal_destino` (0/1/2/3). Há a possibilidade de buscar abrigo em cavernas para evitar combates reforçados pela nevasca. De volta à Estrada do Cão‑Luar, ocorre a entrega de minérios; Thorin retorna para casa. À noite, um pesadelo intensifica o mistério do selo ancestral (rachado) e da missão do protagonista.
+
++**Nota de continuidade (Kravens):** um **pequeno grupo de anões decide permanecer** em Kravens apesar da ordem de recuo durante a nevasca — **entre eles, o pai de Filena**. Ele **discorda de Tusk** e **permanece na mina**, ciente do **risco de perder o pagamento**.
 
 ### 8 - A Voz do Conselho: paga, política e o chamado a Melios
 
@@ -72,11 +76,13 @@ Na câmara do selo, Balastrus determina posições e revela sua nova invenção 
 Filena se opõe e evoca as canções ancestrais. **Kilin, Mhordred e Tharok** não concordam, mas cumprem a ordem maior: **manter Thorin vivo** (mandato de Tordan). **Thorin** tenta decifrar a política por trás da pressa. **Tusk** cumpre e manda cumprir todas as ordens ditas por Balastrus.
 
 **10b – Abertura da câmara: euforia de riqueza**  
-A detonação rompe o bloco rúnico e revela um **salão repleto de metais e minérios raros**, intactos. **Balastrus e Tusk** entram **exultantes**: contam veios, estimam rotas de extração e projetam **fortuna**.  
++A detonação rompe o bloco rúnico e revela um **salão repleto de metais e minérios raros**, intactos. **Balastrus e Tusk** entram **exultantes**: contam veios, estimam rotas de extração e projetam **fortuna**. No centro do salão há uma **grande rocha** que parece **trancar** outro compartimento; além dela, abrem-se **dois caminhos laterais**, **direita** e **esquerda**, ainda não explorados. Balastrus entrega a **Thorin uma segunda caixa de explosivos** para “**abrir a rocha do meio**” e ampliar o acesso.
 Por **alguns minutos**, o clima é de **descoberta e prosperidade**: tochas acesas, ferramentas examinando o veio, passos ecoando sobre pedra limpa — **parece uma vitória**.
 
 **10c – Névoa e presságio**  
-Aos poucos, **uma névoa densa** começa a se espalhar pelo salão recém-aberto. O ar piora; há um **grave sussurro** que parece vir da rocha. A euforia cede lugar a olhares cautelosos. Um **escavador** cambaleia, **cai e morre**. O barulho das ferramentas cessa. A sensação torna-se de **violação**, não de conquista.
+Aos poucos, **uma névoa densa** começa a se espalhar pelo salão recém-aberto. O ar piora; há um **grave sussurro** que parece vir da rocha. A euforia cede lugar a olhares cautelosos.
+A "voz" grave **falha** e se **desdobra em duas camadas** fora de sincronia, com uma leve **latência** — como se um **fantoche** recebesse comandos à distância.
+Um **escavador** cambaleia, **cai e morre**. O barulho das ferramentas cessa. A sensação torna-se de **violação**, não de conquista.
 
 **10d – Primeira aparição: os Ignotos fecham a saída**  
 Sombras se movem na névoa. **Ignotos** emergem e **fecham a passagem de volta** pela qual o grupo entrou, posicionando um **mini-chefe** como barreira.  
@@ -103,7 +109,8 @@ Flags narrativos globais: **selo quebrado**; **Ignotos libertos**; **responsabil
 - O jogador assume controle de **Thorin**, e deve escolher para onde ir: **seguir Filena** ou **apresentar-se ao Conselho**.
 
 **11b – Ramo Filena: descoberta em casa**  
-Se Thorin acompanha Filena, juntos descobrem que o **pai dela** foi enviado em uma expedição para **Kravens**. Surge a urgência de alertar os anões daquela região e trazê-los de volta.  
++Se Thorin acompanha Filena, juntos descobrem que o **pai dela** está **em Kravens** — ele foi com uma frente de trabalho e, durante a nevasca, **discordou de Tusk**, **ficando na mina** mesmo sob risco de **perder o pagamento**. Há urgência em **avisar Kravens** sobre os Ignotos e garantir **a segurança do pai de Filena**, que **não voltou com o grupo de Thorin para Gildrat**.  
+
 👉 Isso libera a missão **“Aviso em Kravens”**.  
 
 **11c – Ramo Conselho: audiência e confronto com Tordan**  
@@ -118,31 +125,96 @@ A fala ecoa no salão: não é só rebeldia, é a **formalização** de Thorin c
 A reinvindicação dói mais porque remete à antiga briga de pai e filho (na cena 4). Antes, Thorin disse que **nunca seria guarda**, rejeitando o orgulho da família. Agora, ele o faz diante de Damburr e dos conselheiros — um choque que arranca respeito e raiva em igual medida.  
 Tordan sente a humilhação de ser desafiado em público, mas não pode negar a necessidade: ninguém conhece a região melhor que Thorin.
 
-**11e – Preparação e flags globais**  
-De volta às ruas de Gildrat, o jogador pode organizar suprimentos mínimos antes de partir. O arco só avança quando **as duas missões forem concluídas** (Kravens e Melios), costurando a progressão narrativa:  
+### 11 - Gildrat em alarme: separação, audiência e reivindicação
 
-- **Melios** → arco de crescimento, descoberta dos poderes oníricos e conexão com o **Profeta das Sombras**.  
-- **Kravens** → arco de relação com Filena, reencontro com o **pai dela**, e revelação da importância do **Sigmetal**.  
+**11a – Chegada, estado de alerta e separação do grupo**  
+Thorin, Filena, Mhordred e Tusk chegam exaustos a **Gildrat** ao cair da noite. Os portões internos estão em **estado de alerta**; sentinelas exigem relatório imediato. A cidade “sente” a tensão — batedores circulam e correm rumores de ataques nas rotas comerciais.  
+A pressão gera **divisão imediata**:  
 
-> **Nota de design (drama e agência do jogador)**  
+- **Mhordred** leva **Tusk** diretamente ao Conselho para se explicar.  
+- **Filena** recusa-se a ver o Imperador novamente e vai **para casa**.  
+- O jogador assume o controle de **Thorin** e pode escolher: **seguir Filena** ou **apresentar-se ao Conselho**.
+
+**11b – Ramo Filena: descoberta em casa**  
+Se Thorin acompanha Filena, juntos descobrem que o **pai dela** está **em Kravens** — ele foi com uma frente de trabalho e, durante a nevasca, **discordou de Tusk**, **permanecendo na mina** mesmo sob risco de **perder o pagamento**.  
+👉 Libera a missão **“Aviso em Kravens”**.
+
+**11c – Ramo Conselho: audiência, confronto com Tordan e ferida antiga**  
+Se Thorin vai ao Conselho, **Damburr** exige medidas imediatas. **Tordan** monta um grupo de elite para **resgatar Kilin** em Melios.  
+Thorin se voluntaria, mas o pai nega com dureza: “Apenas **guardas imperiais** têm esse direito.”  
+Diante do Imperador e dos conselheiros, Thorin declara:  
+> “Sou filho do General Tordan Forja-Prata. **Reivindico** meu dever de alistar-me na **Guarda de Ferro**.”  
+O salão estaca: não é insolência — é **compromisso público**. A fala reabre a **ferida antiga** (da discussão em *Fim de Jogo*): antes, Thorin desprezara as formalidades e dissera que **nunca** seria guarda; agora assume o fardo **em público**. Tordan sente o golpe de honra, mas não pode negar a **necessidade tática** — ninguém conhece as rotas como Thorin.  
+👉 Libera a missão **“Resgate em Melios”**.
+
+**11e – Preparação**  
+Nas ruas de Gildrat, organize **suprimentos mínimos**; o estado de alerta restringe a oferta. O **arco só avança quando as duas missões** (Kravens **e** Melios) forem concluídas.  
+
+- **Melios** → crescimento de Thorin, descoberta dos **poderes oníricos** e conexão com o **Profeta das Sombras**.  
+- **Kravens** → relação com **Filena**, encontro com o **pai dela** e confirmação do **Sigmetal** como peça-chave contra os Ignotos.  
+**Easter egg**: se o jogador voltar para a **casa de Thorin** e conversar com **Sáparo-boca-de-corneta**, pode **recrutá-lo** para o grupo.  
+
+> **Nota de design (drama, agência e pacing)**  
 >
-> - **Separação do grupo** dá agência imediata: a primeira escolha (seguir Filena ou ir ao Conselho) **abre os dois ramos principais**.  
-> - **Reivindicação de Thorin** é um momento-chave de personagem: retoma o conflito com Tordan e o transforma em bravura pública.  
-> - **Progressão narrativa dupla**: o arco só se completa quando **ambas missões** (Kravens e Melios) forem concluídas, garantindo equilíbrio entre **crescimento pessoal (poderes oníricos)** e **crescimento relacional (Filena + Sigmetal)**.  
-> - **Pacing dramático**: mantenha o Conselho denso e tenso, mas a cena em casa com Filena íntima e mais pessoal, contrastando política × vínculo.  
-> - **Economia**: compras limitadas (emergência), reforçando urgência do estado de alerta.  
+> - **Estado de alerta** e **separação imediata** dão agência ao jogador logo na chegada.  
+> - A **reivindicação** de Thorin na **Guarda de Ferro** costura o conflito antigo com Tordan em um gesto público de bravura.  
+> - O **progresso narrativo é duplo**: o arco só “fecha” quando **Melios** e **Kravens** forem resolvidos (sem executar ambas simultaneamente; cada rota reage ao avanço do tempo).  
+> - **Economia** comprimida (estoque curto) reforça a urgência.  
+> - **Easter egg** do **Sáparo** adiciona humor, história e uma variação estratégica sem quebrar o tom político da cena.
 
-### 12 - ?? - [gap a definir]
+### 12 - Melios: Resgate de Kilin e o eco do selo
 
-A ruptura do selo precipita a ofensiva dos Ignotos; Gildrat entra em colapso. Sobreviventes fogem e começam a fortificar um novo refúgio — o embrião de Daratrine. Sequência exata de cenas, rotas e perdas no êxodo: [gap a definir]. Status final de Kilin e Tharok após Melios: [gap a definir].
+> **Pode acontecer em paralelo com a Cena 13 (Kravens). A que for concluída por última destrava a Cena 14.**
 
-### 13 - ?? - [gap a definir]
+**12a – Retomada do acesso**  
+Equipe de Thorin (como Guarda de Ferro reivindicado) reabre passagem até Melios, contorna desabamentos e assenta uma rota segura de retirada. Rastros confirmam que **Kilin** e **Tharok** permanecem vivos contendo os Ignotos.
 
-Na grande caverna que liga a região de Gildrat ao restante do continente, o grupo sofre perdas pesadas, [Gap a definir - quem morre? Tordan?]. Para salvar os companheiros, Thorin libera um poder onírico consistente com o “Reino da Mana”, canalizando o espírito de sua mãe em manifestação efêmera. Tordan reconhece o legado da mãe de Thorin e pede perdão ao filho. Mhordred se sacrifica para garantir a passagem, despedindo‑se com humor e cobrando os “20 mil drakels”. O grupo — Thorin, Filena, Kilin e mais um aliado [gap a definir] — derrota o último chefe e alcança o pico.
+**12b – Contato e retirada tática**  
+Localizam **Kilin** em posição defensiva. Combates menores testam o grupo; a prioridade é **extrair o aliado** e fechar caminhos secundários para atrasar Ignotos.
 
-### 14 - ?? - [gap a definir]
+**12c – O eco onírico**  
+No interior de Melios, **Thorin** entra no **Reino da Mana**: lampejos oníricos e a **sombra do Profeta das Sombras** pressionam sua mente. Ele contém o impulso e vislumbra a intenção de **aniquilar Gildrat**. A **silhueta no sonho usa uma coroa** e agora o **Profeta das Sombras** sabe quem Thorin é — e sabe que ele pode ser o único a **frustrar seus planos**.
 
-No topo, a narrativa alterna duas visões: Gildrat, em guerra e desespero sob ataque dos Ignotos, e, além da cordilheira, uma floresta viva que Thorin jamais viu. O elixir não é um artefato, mas a visão e o fardo: Thorin abandona o sonho do futebol rúnico e assume o dever de guiar seu povo à sobrevivência, abrir caminho até Arcaror (Elfos) e forjar alianças. Refugiados se organizam em Daratrine; a ameaça dos Ignotos persiste [gap a definir detalhes].
+**12d – Saída e flags**  
+Retorno a Gildrat com **Kilin**, **Tharok** e **Balastrus**. Preparação para a defesa da cidade é mencionada, mas só dispara após conclusão de **12** e **13**.
+
+### 13 - Kravens: Aviso, pai de Filena e a câmara de Sigmetal
+
+> **Pode acontecer em paralelo com a Cena 12 (Melios). A que for concluída por última destrava a Cena 14.**
+
+**13a – Chegada sob ataque**  
+Assim que **Thorin** e **Filena** alcançam **Kravens**, encontram a área **sob ataque dos Ignotos**. O objetivo imediato é **estancar perdas**, estabilizar a linha e **organizar a retirada** das equipes presas na mina.
+
+**13b – Resgate e corredor de evacuação**  
+O grupo abre um **corredor defensivo** para tirar trabalhadores e batedores. Combates de contenção se intercalam com tarefas de proteção a civis e demolição controlada para **fechar acessos** dos Ignotos.
+
+**13c – O pai de Filena**  
+Eles encontram o **pai de Filena** — resistente, desconfiado e **avesso a nobres** (incluindo Thorin). O atrito é explícito, mas, durante um aperto, **Thorin salva a vida** dele e do seu pelotão improvisado. Ao final, o pai de Filena **reconhece o valor pessoal** de Thorin, ainda que continue hostil à nobreza.
+
+**13d – Virada com Sigmetal (buraco do Cristaleão e boss)**  
+Para virar a maré, Thorin e Filena acessam o **buraco aberto pelo Cristaleão**, recuperam **Sigmetal bruto** e o empregam taticamente contra os Ignotos (fraqueza confirmada **in-lore**). A luta culmina no **boss de Kravens** — um líder Ignoto que bloqueia a saída principal. O uso de **Sigmetal** (arremessos/armadilhas/binários com explosivos) **quebra a resistência** e permite a limpeza da área imediata.
+
+**13e – Evacuação, saque controlado e flags**  
+Com a ameaça contida, o grupo realiza **saque controlado de Sigmetal** (quanto for possível carregar com segurança) e conclui a **evacuação**. Retornam a **Gildrat** com **um monte de Sigmetal** pronto para forja.
+Flags: `pai_filena_localizado = true`, `pai_filena_respeita_thorin = true`, `sigmetal_coletado = true`, `kravens_evacuada = true`.
+
+### 14 - Retorno a Gildrat: Armadilha no Distrito Externo e Julgamento de Thorin
+
+> **Desencadeada ao concluir as missões (12 e 13).**
+
+**14a – Forja e preparação**  
+Com o **Sigmetal** de Kravens, as forjas de Gildrat iniciam produção acelerada de **armas e pontas**. Em paralelo, planeja-se uma **armadilha com dinamites** no **Distrito Comercial Externo** para atrair e eliminar um grande contingente de **Ignotos**.
+
+**14b – Atração e detonação**  
+Batedores atraem os inimigos; quando concentrados, as **cargas detonam** em cadeia. Parte dos Ignotos é destruída, mas a massa que resiste ameaça **romper a linha**.
+
+**14c – Poder onírico em público**  
+Para impedir o colapso, **Thorin** é **obrigado a usar poder onírico em público** e **salva o dia**. A cidade vibra pela sobrevivência — e em seguida silencia, tensa.
+
+**14d – Sala do Trono: convocação para julgamento**  
+Com o campo limpo, todos retornam à **Sala do Trono**. Ao saber do **uso de magia**, **Damburr** **convoca julgamento imediato** de Thorin.
+
+> **Nota**: Esta cena resulta das ideias integradas do documento *ideis-no-carro.indo-londrina.md*: negociar dynamite para priorizar **Kravens**, retorno com **Sigmetal**, **grande caçada**/armadilha no distrito, uso **público de magia** por Thorin e **convocação para julgamento** por Damburr.
 
 ---
 
@@ -160,6 +232,7 @@ No topo, a narrativa alterna duas visões: Gildrat, em guerra e desespero sob at
 - - O jogador volta com um saco de sigmetal para Gildrat.
 - - Independente de qual escolha foi feita, na volta para Gildrat eles vão armar uma grande caçada contra os Ignotos e colocar uma grande pedra no lugar onde era o selo. Mas logo na saida, eles já são supreendidos com os Ignotos na frente do distrito comercial externo. Acontece uma grande guerra e Thorin salva o dia usando seu poder ónirico
 - - Com todos os ignotos mortos, os anões voltam para a sala do Trono contar a novidade. Damburr ao saber que Thorin usou magia, convoca imediatamente uma reunião para julga-lo.
+— **Consolidado na Cena 14**: os pontos acima foram incorporados na "Cena 14 - Retorno a Gildrat: Armadilha no Distrito Externo e Julgamento de Thorin" (negociação de dinamite para Kravens; retorno com Sigmetal; armadilha com dinamites; uso público do poder onírico; convocação de julgamento por Damburr).
 - - Thordan nesse tribunal age de forma muito dura contra Thorin, e o condena ao ritual de Severança.
 - Como os anões estão em guerra contra os ignotos e não conseguem chamar elfos de Arcaror para conduzir
 - o ritual, eles decidem que Thorin deve ser exilado. Thordan também ordena que guardas reais
