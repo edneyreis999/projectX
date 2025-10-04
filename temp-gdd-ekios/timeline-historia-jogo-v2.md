@@ -198,23 +198,44 @@ Para virar a maré, Thorin e Filena acessam o **buraco aberto pelo Cristaleão**
 Com a ameaça contida, o grupo realiza **saque controlado de Sigmetal** (quanto for possível carregar com segurança) e conclui a **evacuação**. Retornam a **Gildrat** com **um monte de Sigmetal** pronto para forja.
 Flags: `pai_filena_localizado = true`, `pai_filena_respeita_thorin = true`, `sigmetal_coletado = true`, `kravens_evacuada = true`.
 
-### 14 - Retorno a Gildrat: Armadilha no Distrito Externo e Julgamento de Thorin
+### 14 - Retorno a Gildrat: Armadilha no Distrito Externo, General Ignoto e Casca do Profeta
 
 > **Desencadeada ao concluir as missões (12 e 13).**
 
 **14a – Forja e preparação**  
 Com o **Sigmetal** de Kravens, as forjas de Gildrat iniciam produção acelerada de **armas e pontas**. Em paralelo, planeja-se uma **armadilha com dinamites** no **Distrito Comercial Externo** para atrair e eliminar um grande contingente de **Ignotos**.
 
-**14b – Atração e detonação**  
-Batedores atraem os inimigos; quando concentrados, as **cargas detonam** em cadeia. Parte dos Ignotos é destruída, mas a massa que resiste ameaça **romper a linha**.
+**14b – Atração e detonação em três fileiras (isco & funil)**  
+Batedores atraem os inimigos para o **Distrito Comercial Externo**. As cargas de dinamite estão dispostas em **três fileiras**:  
 
-**14c – Poder onírico em público**  
-Para impedir o colapso, **Thorin** é **obrigado a usar poder onírico em público** e **salva o dia**. A cidade vibra pela sobrevivência — e em seguida silencia, tensa.
+- **Linha 1:** imediatamente diante do **portão interno** (rasga a fachada);  
+- **Linha 2:** no **meio da praça** (estreita o corredor, empurrando o enxame para o funil);  
+- **Linha 3:** no **final da praça** (ponto de saturação).  
+As duas primeiras linhas detonam e **dividem** a massa. Na terceira, o **General Ignoto** ergue um **campo de mana** e **contém a explosão**.  
+Linha de diálogo (tom sarcástico): “**HAHAHA, vocês não vão me deter com esses truques bárbaros.**”
 
-**14d – Sala do Trono: convocação para julgamento**  
-Com o campo limpo, todos retornam à **Sala do Trono**. Ao saber do **uso de magia**, **Damburr** **convoca julgamento imediato** de Thorin.
+**14c – Guerra aberta e colapso da linha**  
+Com a fachada do portão **destruída** pela primeira linha, os anões são **forçados a sair** de dentro do castelo para a praça. A batalha vira **guerra de atrito** no funil. Mesmo com armas de **Sigmetal**, a linha **cede**. O jogador deve **recuar** unidades, proteger civis e impedir a quebra total.
 
-> **Nota**: Esta cena resulta das ideias integradas do documento *ideis-no-carro.indo-londrina.md*: negociar dynamite para priorizar **Kravens**, retorno com **Sigmetal**, **grande caçada**/armadilha no distrito, uso **público de magia** por Thorin e **convocação para julgamento** por Damburr.
+**14d – Overchannel público de Thorin (vitória material)**  
+Para impedir o colapso, **Thorin usa poder onírico em público** e **vira a maré**, permitindo que o grupo **elimine o General Ignoto**. Após o esforço, Thorin sofre **Resíduo Onírico** (UI treme; veios luminescentes no antebraço) e fica **extremamente fraco**.
+
+**14e – Possessão e Boss “Casca do Profeta” (clímax espiritual)**  
+O **Profeta das Sombras**, atraído pelo excesso de mana e pelo rastro de morte, **possui** Thorin parcialmente. Forma-se ao redor do herói uma **Casca onírica** — uma figura colosal de **vidro‑sombra**. Thorin permanece **adormecido** no centro.  
+Mecânica: barra **HP da Casca** + barra **Corrupção de Thorin**. O objetivo é **purificar** (reduzir Corrupção) sem destruir o corpo. O grupo combate **reflexos distorcidos** das próprias habilidades. Ao final, Filena conduz um **ritual de ancoragem** para romper a possessão.
+
+**14f – A decisão de Mhordred (escolha impossível)**  
+Após a purificação, a instabilidade do distrito ameaça **ruir**. O jogador escolhe:  
+
+- **EVACUAR SOLDADOS** — **Mhordred** segura a linha sozinho enquanto a tropa e civis fogem. Ele **se sacrifica**.  
+- **SELAR A ROTA** — redirecionar Sigmetal para o canal estrutural e **fechar** o distrito; um **pelotão** fica para trás e morre, **Mhordred sobrevive** carregando a culpa.  
+Flags: `end_choice = "evac" | "seal"`, `mhordred_alive = false/true`, `garrison_losses = "low"/"high"`.
+
+**14g – Queda e luto imediato**  
+Com a Casca dissipada, **Thorin desmaia**. Cena curta de **lamento**: Tordan observa de longe; Filena se ajoelha ao lado do herói. (Mini‑payoff contido; sem tribunal.)
+
+**14h – Pós‑créditos: o sono e o horizonte**  
+Dias depois, **quarto de Thorin**. Ele **dorme**; a cena **esvanece para branco**, restando apenas a **cama**. A câmera lateraliza; Thorin **abre o olho**. Contraplano: no horizonte, a **silhueta do Profeta verdadeiro** diante de um **exército imenso** de Ignotos. Um único **sussurro dissonante**. **Corte seco**.
 
 ---
 
@@ -232,18 +253,7 @@ Com o campo limpo, todos retornam à **Sala do Trono**. Ao saber do **uso de mag
 - - O jogador volta com um saco de sigmetal para Gildrat.
 - - Independente de qual escolha foi feita, na volta para Gildrat eles vão armar uma grande caçada contra os Ignotos e colocar uma grande pedra no lugar onde era o selo. Mas logo na saida, eles já são supreendidos com os Ignotos na frente do distrito comercial externo. Acontece uma grande guerra e Thorin salva o dia usando seu poder ónirico
 - - Com todos os ignotos mortos, os anões voltam para a sala do Trono contar a novidade. Damburr ao saber que Thorin usou magia, convoca imediatamente uma reunião para julga-lo.
-— **Consolidado na Cena 14**: os pontos acima foram incorporados na "Cena 14 - Retorno a Gildrat: Armadilha no Distrito Externo e Julgamento de Thorin" (negociação de dinamite para Kravens; retorno com Sigmetal; armadilha com dinamites; uso público do poder onírico; convocação de julgamento por Damburr).
-- - Thordan nesse tribunal age de forma muito dura contra Thorin, e o condena ao ritual de Severança.
-- Como os anões estão em guerra contra os ignotos e não conseguem chamar elfos de Arcaror para conduzir
-- o ritual, eles decidem que Thorin deve ser exilado. Thordan também ordena que guardas reais
-- acompanhem Thorin em seu exílio, para garantir que ele passe pelo ritual de Severança.
-- - Naquela noite, Thorin dorme e sonha com o Profeta da Noite que tem a sua mãe acorrentada no mundo da mana. Thorin tenta salva-la durante o sonho mas o Profeta é mais forte, e quando ele vai morrer, ele é acordado na sela. Thorin, Filena e seu grupo partem na calada da noite para Fenda da Alvorada para cumprir a sentença. Mas agora o profeta sabe onde ele está e para onde ele vai, e promete vingança.
-- - A Fenda da Alvorada é uma dungeon dificil e cheia de inimigos poderosos e proximo ao final, o profeta estava lá, aguardando Thorin para mata-lo. A batalha é intensa, mas Thorin e seu grupo conseguem mata-lo e chegam ao outro lado.
-- - O final do jogo se passa em um acampamento onde Thorin, Filena e seu grupo estão acampados. Thorin lamenta por ter sido exilado de sua própria cidade pelo seu próprio pai e coberto de raiva assiste Gildrat ser atacada pelos Ignotos. Até que Tharok (ou Mhordred fantasma) explica para ele a tomada de decisão de seu pai e que ele fez aquilo justamente para salva-lo e salvar Gildrat. E entrega uma carta a ele, escrita por seu pai, que pede desculpas por não ter acreditado nele antes e dizendo que o destino dele está em Arcaror e que ele deve falar com Elmartin.
-- NOTAS:
-- - Quando eles derroram o Cristaleão, ao invés dele só dropar o Sigmetal, ele vai revelar o sigmetal e uma passagem escondida, que vai estar trancada por um grande pedra.
-- Plot: na cena do Tribunal, Thorin já sabia que o Profeta das Sombras ainda estava vivo e age durante os sonhos para corromper a mente dos anões manipulando eles para liberta-lo de sua prisão.
-- Thordan reconheceu o discurso de Thorin identico ao de sua mulher Melia, e pensou rápido para condenar o filho. Ele sabia que se dependesse de Damburr e Balastrus, Thorin seria condenado a morte, por isso ele teve que manter uma posição firme e convenceu a todos do concelho que o ritual de Severança era o melhor caminho. Mas não só isso, ele exilou Thorin de Gildrat e colocou seus guardas de confiança atrás dele para escolta-lo até o fim da Fenda da Alvorada para que Thorin pudesse cumprir o seu destino de encontrar Elmartin em Arcaror e quem sabe assim, salvar Gildrat dos Ignotos.
+— **Consolidado na Cena 14**: negociação de dinamite para Kravens; retorno com Sigmetal; armadilha com dinamites em três fileiras; uso público do poder onírico por Thorin; **batalha contra o General Ignoto**; **possessão e boss “Casca do Profeta”**; **decisão final com Mhordred**; **pós‑créditos** com o Profeta verdadeiro e seu exército.
 
 ## Considerações finais
 
