@@ -99,31 +99,6 @@ Flags narrativos globais: **selo quebrado**; **Ignotos libertos**; **responsabil
 > - **Personagens-chave**: Filena (tradição/consciência), Balastrus (ambição/invenção), Guardas (dever a Tordan > opinião pessoal), Thorin (da ingenuidade política ao fardo).  
 > - **Consequência explícita**: a catástrofe decorre de **uma escolha humana** (testar a pólvora e violar o selo), não de acidente.
 >
-### 11 - Gildrat em alarme: separação, audiência e reinvindicação
-
-**11a – Chegada e separação do grupo**  
-Às portas de Gildrat, o grupo enfim retorna, mas a tensão explode em **divisão imediata**:  
-
-- **Mhordred** leva **Tusk** diretamente ao Conselho para se explicar.  
-- **Filena** recusa-se a ver novamente o Imperador e anuncia que voltará para casa.  
-- O jogador assume controle de **Thorin**, e deve escolher para onde ir: **seguir Filena** ou **apresentar-se ao Conselho**.
-
-**11b – Ramo Filena: descoberta em casa**  
-+Se Thorin acompanha Filena, juntos descobrem que o **pai dela** está **em Kravens** — ele foi com uma frente de trabalho e, durante a nevasca, **discordou de Tusk**, **ficando na mina** mesmo sob risco de **perder o pagamento**. Há urgência em **avisar Kravens** sobre os Ignotos e garantir **a segurança do pai de Filena**, que **não voltou com o grupo de Thorin para Gildrat**.  
-
-👉 Isso libera a missão **“Aviso em Kravens”**.  
-
-**11c – Ramo Conselho: audiência e confronto com Tordan**  
-No Conselho, Damburr exige medidas. Tordan monta um grupo de elite para resgatar **Kilin** em Melios.  
-Thorin tenta se voluntariar, mas o pai nega com dureza: “Apenas guardas imperiais têm esse direito.”  
-Em um gesto de bravura, Thorin se volta ao Imperador e declara:  
-> “Sou filho do General Tordan Forjaprata. Reinvindico meu dever de alistar-me na **Guarda de Ferro**. Não fugirei do fardo do meu sangue.”  
-A fala ecoa no salão: não é só rebeldia, é a **formalização** de Thorin como guarda.  
-👉 Isso libera a missão **“Resgate em Melios”**.
-
-**11d – A ferida antiga exposta**  
-A reinvindicação dói mais porque remete à antiga briga de pai e filho (na cena 4). Antes, Thorin disse que **nunca seria guarda**, rejeitando o orgulho da família. Agora, ele o faz diante de Damburr e dos conselheiros — um choque que arranca respeito e raiva em igual medida.  
-Tordan sente a humilhação de ser desafiado em público, mas não pode negar a necessidade: ninguém conhece a região melhor que Thorin.
 
 ### 11 - Gildrat em alarme: separação, audiência e reivindicação
 
@@ -147,7 +122,7 @@ Diante do Imperador e dos conselheiros, Thorin declara:
 O salão estaca: não é insolência — é **compromisso público**. A fala reabre a **ferida antiga** (da discussão em *Fim de Jogo*): antes, Thorin desprezara as formalidades e dissera que **nunca** seria guarda; agora assume o fardo **em público**. Tordan sente o golpe de honra, mas não pode negar a **necessidade tática** — ninguém conhece as rotas como Thorin.  
 👉 Libera a missão **“Resgate em Melios”**.
 
-**11e – Preparação**  
+**11d – Preparação**  
 Nas ruas de Gildrat, organize **suprimentos mínimos**; o estado de alerta restringe a oferta. O **arco só avança quando as duas missões** (Kravens **e** Melios) forem concluídas.  
 
 - **Melios** → crescimento de Thorin, descoberta dos **poderes oníricos** e conexão com o **Profeta das Sombras**.  
