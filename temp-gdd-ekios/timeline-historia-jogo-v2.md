@@ -239,22 +239,6 @@ Dias depois, **quarto de Thorin**. Ele **dorme**; a cena **esvanece para branco*
 
 ---
 
-## Integração de ideias do arquivo 'ideis-no-carro.indo-londrina.md'
-
-- Resolver alguns dos Gaps
-- - Quando o selo de Melios cai e os Ignotos emboscam o grupo de Thorin, Thorin ou Balastrus usam o Sigmetal para afastar/matar alguns Ignotos (aqui o grupo presencia uma possível fraquesa dos Ignotos com o minerio de Sigmetal)
-- - Depois de se livrar da emboscada, Thorin, Filena, Mhordred, Tharok e Balastrus para Gildrat. Essa volta pode ser usada para aprofundar mais no backeground dos personagens e os laços com Thorin.
-- - Chegando em Gildrat o grupo conta ao concelho tudo que aconteceu e do perigo dos Ignotos. Thordan monta um exercito de guerreiros experientes para ir de volta a Melios resgatar Kilin e Tharok. Nessa volta ele também descobre que o pai da Filena foi mandado em uma expedição para Kravens.
-- - O jogador tem duas escolhas:
-- - Se alistar para o exercito e voltar a Melios para salvar Kilin.
-- - O jogador volta com Kilin para Gildrat.
-- - Ir com Filena a Kravens avisar os anões que estão em Kravens sobre a nova ameaça e voltar com eles para Gildrat.
-- - Para ele escolher Kravens, ele precisa convencer Balastrus e dar um pouco de dinamite a eles.
-- - O jogador volta com um saco de sigmetal para Gildrat.
-- - Independente de qual escolha foi feita, na volta para Gildrat eles vão armar uma grande caçada contra os Ignotos e colocar uma grande pedra no lugar onde era o selo. Mas logo na saida, eles já são supreendidos com os Ignotos na frente do distrito comercial externo. Acontece uma grande guerra e Thorin salva o dia usando seu poder ónirico
-- - Com todos os ignotos mortos, os anões voltam para a sala do Trono contar a novidade. Damburr ao saber que Thorin usou magia, convoca imediatamente uma reunião para julga-lo.
-— **Consolidado na Cena 14**: negociação de dinamite para Kravens; retorno com Sigmetal; armadilha com dinamites em três fileiras; uso público do poder onírico por Thorin; **batalha contra o General Ignoto**; **possessão e boss “Casca do Profeta”**; **decisão final com Mhordred**; **pós‑créditos** com o Profeta verdadeiro e seu exército.
-
 ## Considerações finais
 
 ### Notas para o Narrative design
