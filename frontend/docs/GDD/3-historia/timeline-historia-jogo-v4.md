@@ -241,11 +241,13 @@ Os Corvos explicam o motivo da interrupção: eles **ouviram a canção dos ance
 **Decisão do Jogador:**
 
 - Apoiar Balastrus (pressionar pela passagem).
-- Tentar apaziguar os Corvos (pedir cautela).
+- Não se envolver
 A tensão escala para combate independentemente da postura adotada.
+A participação de **Thorin** é decidida pelo jogador no momento da escolha acima: ele pode entrar no combate ou permanecer fora, conforme a opção tomada.
 
 **Cena 9d – A Batalha Contra os Corvos**  
 Balastrus se recusa a recuar, e o impasse escala para um combate. Os Corvos lutam como uma "boss fight", usando suas ferramentas de mineração como armas.
+Se **Filena** estiver na party do jogador, ela **não participa** do combate na Cena 9d (permanece fora da luta).  
 
 **Cena 9e – Retirada e Presságio**  
 Derrotados, os Corvos se retiram, mas deixam um último aviso: **não mexam no selo**. A expedição monta acampamento, decidindo entrar em Melios ao amanhecer.
