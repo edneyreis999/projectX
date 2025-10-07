@@ -18,12 +18,12 @@ Objetivo: conduzir um fluxo curtíssimo para gerar um único prompt final pronto
   - `criterios`: 3–6 bullets claros e testáveis.
   - `restricoes`: limites/proibições/suposições vetadas.
 - `outputs`:
-  - `resultPath`: `zik-prompts-oneshot/<YYYYMMDD>-<HHmmss>-<slug>.md` (versão imutável por execução).
+  - `resultPath`: `zik-prompts-oneshot/<slug>-vN.md` (versão incremental por execução: `v1`, `v2`, ...).
 - `knowledgeBase` (opcional): somente os arquivos explicitamente informados pelo usuário.
 - `policies`:
   - Saída padrão em 2 blocos: Prompt Final → Formulário completo para invocar Rugol (opcional).
-  - Sem log de entrevista. Em ajustes, criar NOVA VERSÃO (novo `resultPath`).
-  - Guardrail operacional: o Zik NÃO deve executar o prompt one‑shot que ele próprio gerar; deve APENAS salvar em `zik-prompts-oneshot/<YYYYMMDD>-<HHmmss>-<slug>.md` e exibir o caminho para auditoria humana.
+  - Sem log de entrevista. Em ajustes, criar NOVA VERSÃO (novo `resultPath`, incrementando `vN`).
+  - o Zik NÃO deve executar o prompt one‑shot que ele próprio gerar; deve APENAS salvar em `zik-prompts-oneshot/<slug>-vN.md` e exibir o caminho para auditoria humana.
 - `limits`:
   - Mínimo de perguntas; 1 rodada curta antes de entregar, quando necessário.
 
@@ -43,9 +43,9 @@ Se a qualidade ficar bloqueada por ambiguidade: faça 3–6 perguntas objetivas.
 
 1) Preparar contexto mínimo para o Zik com os `inputs` coletados; propor defaults quando algum campo estiver faltando (marcar como sugestão).  
 2) Invocar o Zik para montar o “Prompt Final” em bloco único e as seções complementares na ordem padrão — sem executar o prompt gerado.  
-3) Salvamento imediato: criar `resultPath = zik-prompts-oneshot/<YYYYMMDD>-<HHmmss>-<slug-da-tarefa>.md`.  
+3) Salvamento imediato: criar `resultPath = zik-prompts-oneshot/<slug-da-tarefa>-vN.md`.  
    - `slug-da-tarefa`: derivado da `tarefa` (lowercase, hífens, sem acentos; máx. 6 palavras).  
-   - Em “Ajustar” ou “Refazer”, gerar NOVO ARQUIVO com novo `<HHmmss>` (ou sufixo `-vNN` se preferir), preservando versões anteriores.  
+   - `N` inicia em 1 e incrementa a cada “Ajustar” ou “Refazer”, preservando versões anteriores.  
 4) Exibir o caminho salvo e o conteúdo ao usuário.  
 5) Se solicitado, iterar apenas nos itens apontados e re‑salvar. Se a ambiguidade crescer, oferecer “Invocar Rugol”.
 
@@ -76,10 +76,4 @@ Observações:
 Envie em uma única mensagem:  
 `Tarefa:` 1–2 frases  |  `Formato:` ex.: seções/tabela/JSON  |  `Critérios:` 3–6 bullets  |  `Restrições:` escopo e proibições  |  `Fontes:` paths/trechos (opcional).  
 
-O invocador devolverá imediatamente: Prompt Final + Checklist + (se faltar) Campos de Entrada, salvará em `zik-prompts-oneshot/<YYYYMMDD>-<HHmmss>-<slug>.md` e aguardará `Aprovar` ou `Ajustar`.
-
-## Referências
-
-- Persona: `zord/agentes/entrevistadores/zik-troca-rapida.md` (comportamento, heurísticas e formato de saída).
-- Inspirações: `zord/comandos/invocar-serel.md`, `zord/comandos/invocar-rugol-o-entrevistador.md`.
-- Guia DRY: `zord/comandos/criador-personas/guia-separacao-responsabilidades-persona-invocador.md`.
+O invocador devolverá imediatamente: Prompt Final + Checklist + (se faltar) Campos de Entrada, salvará em `zik-prompts-oneshot/<slug>-vN.md` e aguardará `Aprovar` ou `Ajustar`.
