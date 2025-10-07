@@ -151,3 +151,9 @@
 | **8-E** | **Ordem de Tordan**           | Capitão da guarda anuncia, em voz firme, que Thorin deve acompanhar o pelotão “em nome do General Tordan” — conflito de autoridade explícito. |
 | **8-F** | **Escolha de Diálogo**        | Prompt oferece duas respostas: **Gentil (“Tudo bem, vou com vocês”)** ou **Resistir (“Não têm esse direito!”)** — dá agência ao jogador.   |
 | **8-G** | **Cercado**                   | Independentemente da escolha, guardas formam círculo e conduzem Thorin rumo à saída — prepara transição para Cena 9.                       |
+
+**Decisão do Jogador:**
+
+- Gentil (“Tudo bem, vou com vocês”).
+- Resistir (“Não têm esse direito!”).
+Afeta apenas falas e tom; Thorin é escoltado de qualquer forma.

@@ -110,6 +110,13 @@ Ao chegarem no Distrito Comercial, Tharok aponta que a roupa de jogo de Thorin �
 **Cena 4e – Tutorial na Loja de Armaduras**  
 Em uma cena cômica com o vendedor, o jogador aprende as mecânicas de compra e equipamento de itens. Sem dinheiro, Thorin não pode pagar pela armadura. A contragosto, **Mhordred** paga pela peça. Thorin equipa sua primeira armadura.
 
+**Decisão do Jogador:**
+
+- "Determinado" (insiste em não comprar agora).
+- "Esquivar (de comprar)" (tenta sair pela tangente).
+- "Fugir" (tenta escapar da compra).
+As opções alteram apenas falas e tom; o resultado é o mesmo: Mhordred paga e Thorin deve equipar a armadura.
+
 **Cena 4f – Última Parada: A Taverna**  
 Já devidamente trajado, Thorin segue sozinho para a taverna. Ao entrar, a próxima cena se inicia.
 
@@ -117,6 +124,12 @@ Já devidamente trajado, Thorin segue sozinho para a taverna. Ao entrar, a próx
 
 **Cena 5a – Contrato na Taverna**  
 Dentro da taverna, **Balastrus** entrega a Thorin a papelada de seu contrato como aprendiz. A primeira expedição será para a mina de **Kravens**. Thorin assina.
+
+**Decisão do Jogador:**
+
+- Hesitar antes de assinar.
+- Assinar imediatamente.
+Muda apenas diálogos; em ambos os casos o contrato é assinado.
 
 **Cena 5b – Caminho ao Ponto de Encontro**  
 Thorin viaja do Distrito Comercial até a **Estrada do Cão-Luar**. O clima esfria à medida que a serra se aproxima.
@@ -178,6 +191,12 @@ Se o Sigmetal for entregue a Tusk ainda em Kravens, a rota de destino do minéri
 **Cena 7a – Debate e Partida Forçada**  
 De volta à clareira, os batedores avisam sobre uma forte tempestade se aproximando. Kilin sugere prudência e recomenda esperar, mas Tusk, focado nos prazos, exige a partida imediata, ameaçando cortar o pagamento de quem ficar. O grupo parte sob uma forte nevasca. *Nota: um pequeno grupo de anões, incluindo o pai de Filena, discorda de Tusk e decide permanecer em Kravens, aceitando o risco.*
 
+**Decisão do Jogador:**
+
+- Apoiar Kilin (sugerir esperar a tempestade passar).
+- Apoiar Tusk (insistir na partida imediata).
+A escolha afeta apenas falas e reações; o grupo parte assim mesmo.
+
 **Cena 7b – Travessia Sob Nevasca**  
 A viagem de volta a Gildrat é perigosa. Os inimigos no mapa-múndi estão mais fortes devido à tempestade. O jogador pode buscar abrigo em cavernas laterais para evitar combates e encontrar pequenos eventos.
 
@@ -219,6 +238,12 @@ Na clareira, o grupo encontra o **chefe dos Corvos**. O ambiente é tenso. Há s
 **Cena 9c – O Impasse e a Revelação**  
 Os Corvos explicam o motivo da interrupção: eles **ouviram a canção dos ancestrais** e encontraram um grande **bloco de ferro coberto de runas** — um **selo** que não deve ser profanado. Eles temem que Damburr, se souber da descoberta, queira destruir o selo. Para Balastrus, eles estão apenas atrapalhando o progresso; para os rebeldes e para a mãe de Thorin (em suas visões), eles estão protegendo a história anã.
 
+**Decisão do Jogador:**
+
+- Apoiar Balastrus (pressionar pela passagem).
+- Tentar apaziguar os Corvos (pedir cautela).
+A tensão escala para combate independentemente da postura adotada.
+
 **Cena 9d – A Batalha Contra os Corvos**  
 Balastrus se recusa a recuar, e o impasse escala para um combate. Os Corvos lutam como uma "boss fight", usando suas ferramentas de mineração como armas.
 
@@ -250,6 +275,8 @@ Thorin, Filena, Mhordred e Tusk chegam a Gildrat e a encontram em **estado de al
 
 - **Seguir Filena** para sua casa.
 - **Apresentar-se ao Conselho** com Mhordred e Tusk.
+
+Essa escolha abre o ramo Filena (Aviso em Kravens) ou o ramo Conselho (Resgate em Melios); o arco avança apenas após concluir ambos.
 
 **Cena 11b – Ramo Filena: A Descoberta**  
 Se seguir Filena, Thorin descobre que o **pai dela** não está em casa. Ele fazia parte do grupo que permaneceu em **Kravens** durante a nevasca, por discordar de Tusk. Isso libera a missão **"Aviso em Kravens"**.
@@ -316,6 +343,8 @@ Após a purificação, o distrito ameaça desabar.
 
 - **EVACUAR SOLDADOS:** Mhordred se sacrifica para segurar a linha enquanto todos fogem.
 - **SELAR A ROTA:** O distrito é selado com Sigmetal, sacrificando um pelotão que fica para trás, mas salvando Mhordred.
+
+A decisão define o sacrifício (Mhordred ou um pelotão) e altera o desfecho emocional da batalha.
 
 **Cena 14g – Queda e Luto**  
 Com a Casca dissipada, Thorin desmaia. A cena termina em um momento de lamento silencioso, com Tordan observando de longe e Filena ao lado do herói.

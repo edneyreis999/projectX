@@ -203,6 +203,12 @@ Quest: A Voz do Conselho
 | 4  | Início da Batalha         | Os Corvos se revoltam; inicia-se a boss fight contra o grupo de anões.                        | 🎮       |
 | 5  | Vitória do Grupo          | Após a batalha, os Corvos derrotados revelam detalhes do bloco e decidem abandonar o local.   | 🎬       |
 
+**Decisão do Jogador:**
+
+- Apoiar Balastrus (pressionar pela passagem).
+- Tentar apaziguar os Corvos (pedir cautela).
+A tensão escala para combate independentemente da postura adotada.
+
 ##### Cena 8 – Conclusão
 
 | #  | Beat                      | Descrição / Decisões do Jogador                                                               | Controle |

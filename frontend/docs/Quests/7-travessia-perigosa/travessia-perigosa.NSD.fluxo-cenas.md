@@ -93,6 +93,12 @@ Quest: A Travessia Perigosa
 | 5  | Cartada final de Tusk                             | Tusk reafirma sua autoridade, lembra o acordo com Balastrus e ameaça retenção de pagamento para quem não partir. | 🎬       |
 | 6  | Decisão final do grupo                           | O grupo decide partir sob a pressão de Tusk, mesmo contrariado.                           | 🎬       |
 
+**Decisão do Jogador:**
+
+- Apoiar Kilin (sugerir esperar a tempestade passar).
+- Apoiar Tusk (insistir na partida imediata).
+A escolha afeta apenas falas e reações; o grupo parte assim mesmo.
+
 ---
 
 ##### Cena 2 – Travessia no Mapamúndi (Detalhada)
@@ -124,6 +130,14 @@ Quest: A Travessia Perigosa
 |     | — Se jogador não entregou o Sigmetal          | Após entrega dos Cravens, Balastrus conversa com Thorin e comenta enigmaticamente:                                   |          |
 |     |                                                | “Você está muito novo para carregar tanto peso nos bolsos... Mas tudo bem. Nem todo baú se abre no primeiro puxão.” |          |
 | 5  | Conversa final com Balastrus                    | Jogador pode dialogar com Balastrus, encerrando a cena; diálogos variam conforme as escolhas anteriores.             | 🎮       |
+
+**Decisão do Jogador:**
+
+- Entregar a Balastrus.
+- Entregar a Tusk.
+- Guardar no baú de Kravens.
+- Não entregar a ninguém.
+Define `v_sigmetal_destino`; todos os Kravens são depositados no baú da expedição.
 
 ---
 
