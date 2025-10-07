@@ -176,7 +176,7 @@ A seriedade da missão é quebrada por uma gag cômica: Kilin, Mhordred e, por �
 Durante a coleta, ao minerar o nono Kraven, o chão sob os pés de Thorin cede, e ele despenca para um andar inferior e esquecido da mina.
 
 **Cena 6e – O Cristaleão, Primeiro Chefe**  
-No andar desconhecido, uma criatura feita de cristal, o **Cristaleão**, desperta de uma parede. Esta é a primeira batalha de chefe do jogo. Ao ser derrotado, o monstro dropa um minério raro e desconhecido: **Sigmetal**.
+No andar desconhecido, uma criatura feita de cristal, o **Cristaleão**, desperta de uma parede. Esta é a primeira batalha de chefe do jogo. Ao ser derrotado, o monstro dropa um minério raro e desconhecido: **Sigmetal** e revela uma passagem oculta adiante, bloqueada por uma pedra gigante.
 
 **Cena 6f – O Dilema do Sigmetal**  
 Com 9 Kravens e 1 Sigmetal no inventário, o jogador precisa decidir o que fazer.
@@ -257,6 +257,7 @@ Na câmara do selo, Balastrus revela sua nova invenção: **pólvora e dinamites
 
 **Cena 10b – Euforia da Riqueza**  
 A explosão rompe o selo rúnico, revelando um salão repleto de minérios raros. Balastrus e Tusk entram eufóricos, projetando a fortuna que irão extrair. No centro, uma grande rocha parece trancar outro compartimento. Balastrus entrega a Thorin mais explosivos para abrir caminho. Por um momento, a missão parece um sucesso absoluto.
+*Nota: Esses explosivos serão usados mais adiante para abrir a passagem revelada pelo Cristaleão (Cena 6e), possibilitando a virada com Sigmetal em Kravens (Cena 13d).*
 
 **Cena 10c – A Névoa e o Presságio**  
 A euforia dura pouco. Uma névoa densa começa a se espalhar pelo salão. Um sussurro grave e dissonante, que parece falhar e se dessincronizar, ecoa da rocha. Um dos escavadores cambaleia e morre subitamente. A sensação de vitória se transforma em uma de violação.
@@ -315,7 +316,7 @@ O grupo abre um corredor defensivo para evacuar os trabalhadores, alternando ent
 Eles encontram o pai de Filena, um anão rude e avesso a nobres. Durante a batalha, Thorin salva sua vida, ganhando seu respeito a contragosto.
 
 **Cena 13d – A Virada com Sigmetal**  
-Para virar a maré, Thorin e Filena usam o buraco criado pelo Cristaleão para acessar uma câmara de **Sigmetal bruto**. Eles confirmam que o minério é a principal fraqueza dos Ignotos e o usam para derrotar o líder Ignoto que bloqueia a saída.
+Para virar o jogo, Thorin e Filena alcançam a passagem revelada pelo Cristaleão — ainda bloqueada por uma rocha gigante. Usando os explosivos que **Balastrus** entregou a **Thorin** na **Cena 10b – Euforia da Riqueza**, eles abrem a entrada e acessam uma câmara de **Sigmetal bruto**. Eles confirmam que o minério é a principal fraqueza dos Ignotos e o usam para derrotar o líder Ignoto que bloqueia a saída.
 
 **Cena 13e – Evacuação e Saque**  
 Com a ameaça contida, o grupo realiza um saque controlado de Sigmetal e conclui a evacuação, retornando a Gildrat com o recurso vital.
