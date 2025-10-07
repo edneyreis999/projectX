@@ -91,7 +91,7 @@ As escolhas de tom aprofundam o conflito, mas a conclusão é a mesma: a tensão
 Durante a discução, Thorin busca um dos antigos troféus de futebol runico de Thordan. Ao encontrá-lo, Thorin tenta tocar a memória do pai contida no objeto, mas é humilhado por Tordan, que chama o troféu de "sucata brilhante".
 
 **Cena 3d – A Sentença**  
-Como punição pela desonra e para forçá-lo a um caminho que considera digno, Tordan decreta: ao amanhecer, Thorin deverá se apresentar a **Balastrus**, na taverna, para se tornar um aprendiz de minerador. A porta se fecha. No corredor, **Sáparo** surge para zombar. Thorin sobe para seu quarto em silêncio.
+No auge do atrito, Thorin encara o pai e crava: “Não quero entrar para a Guarda.” A resposta de Tordan vem curta e irrecorrível, como ordem de quartel: “Então você vai trabalhar como minerador.” Ao amanhecer, deverá se apresentar a **Balastrus**, na taverna, para iniciar como aprendiz. A porta se fecha; no corredor, **Sáparo** surge para zombar. Thorin sobe para o quarto em silêncio, com a certeza amarga de que, mais cedo do que gostaria, terá de decidir o que reivindicar diante de quem manda.
 
 ### 4 - É Hora de Crescer: Fuga Frustrada
 
