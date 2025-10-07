@@ -23,6 +23,7 @@ Objetivo: conduzir um fluxo curtíssimo para gerar um único prompt final pronto
 - `policies`:
   - Saída padrão em 2 blocos: Prompt Final → Formulário completo para invocar Rugol (opcional).
   - Sem log de entrevista. Em ajustes, criar NOVA VERSÃO (novo `resultPath`).
+  - Guardrail operacional: o Zik NÃO deve executar o prompt one‑shot que ele próprio gerar; deve APENAS salvar em `zik-prompts-oneshot/<YYYYMMDD>-<HHmmss>-<slug>.md` e exibir o caminho para auditoria humana.
 - `limits`:
   - Mínimo de perguntas; 1 rodada curta antes de entregar, quando necessário.
 
@@ -41,7 +42,7 @@ Se a qualidade ficar bloqueada por ambiguidade: faça 3–6 perguntas objetivas.
 ## Passos de orquestração
 
 1) Preparar contexto mínimo para o Zik com os `inputs` coletados; propor defaults quando algum campo estiver faltando (marcar como sugestão).  
-2) Invocar o Zik para montar o “Prompt Final” em bloco único e as seções complementares na ordem padrão.  
+2) Invocar o Zik para montar o “Prompt Final” em bloco único e as seções complementares na ordem padrão — sem executar o prompt gerado.  
 3) Salvamento imediato: criar `resultPath = zik-prompts-oneshot/<YYYYMMDD>-<HHmmss>-<slug-da-tarefa>.md`.  
    - `slug-da-tarefa`: derivado da `tarefa` (lowercase, hífens, sem acentos; máx. 6 palavras).  
    - Em “Ajustar” ou “Refazer”, gerar NOVO ARQUIVO com novo `<HHmmss>` (ou sufixo `-vNN` se preferir), preservando versões anteriores.  
