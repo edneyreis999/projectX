@@ -1,4 +1,4 @@
-# Timeline do Jogo - Versão 4
+# Timeline do Jogo - Versão 5
 
 *Este documento detalha a sequência de eventos principal do jogo, integrando informações dos documentos de quest e notas de design para criar uma narrativa coesa e aprofundada.*
 
@@ -262,7 +262,9 @@ A explosão rompe o selo rúnico, revelando um salão repleto de minérios raros
 *Nota: Esses explosivos serão usados mais adiante para abrir a passagem revelada pelo Cristaleão (Cena 6e), possibilitando a virada com Sigmetal em Kravens (Cena 13d).*
 
 **Cena 10c – A Névoa e o Presságio**  
-A euforia dura pouco. Uma névoa densa começa a se espalhar pelo salão. Um sussurro grave e dissonante, que parece falhar e se dessincronizar, ecoa da rocha. Um dos escavadores cambaleia e morre subitamente. A sensação de vitória se transforma em uma de violação.
+A euforia dura pouco. Uma névoa densa começa a se espalhar pelo salão. Thorin desfalece e é lançado ao **Reino da Mana**. Escondido atrás de uma pedra, ele testemunha o **Profeta das Sombras** conversando com um anão cuja identidade permanece oculta — vê-se apenas a silhueta. O diálogo revela a **ganância do anão por Ekios** e o Profeta o parabeniza: o plano para libertá-lo, a ele e aos **Ignotos**, funcionou. O próximo passo é claro: **destruir Gildrat** assim que **Vitasolis** — o segundo sol — surgir no céu, para que o astro presencie a vingança dos Ignotos.  
+Thorin se move e faz um ruído. O Profeta para, volta-se para a pedra e sussurra, dissonante: "**Quem está ai?**". Em um gesto, despedaça a rocha, expondo Thorin, e avança para atacá-lo — quando, de súbito, **Filena o sacode**, despertando-o no mundo físico, em meio à retirada.
+Um sussurro grave e dissonante, que parece falhar e se dessincronizar, ecoa da rocha. Um dos escavadores cambaleia e morre subitamente. A sensação de vitória se transforma em uma de violação.
 
 **Cena 10d – A Primeira Aparição dos Ignotos**  
 Sombras se movem na névoa. Criaturas desconhecidas, os **Ignotos**, emergem e bloqueiam a saída, com um mini-chefe guardando a passagem.
@@ -278,19 +280,26 @@ Thorin, Filena, Mhordred e Tusk chegam a Gildrat e a encontram em **estado de al
 
 - **Seguir Filena** para sua casa.
 - **Apresentar-se ao Conselho** com Mhordred e Tusk.
+- **Quando o segundo sol chegar** (missão principal de gatilho)
 
-Essa escolha abre o ramo Filena (Aviso em Kravens) ou o ramo Conselho (Resgate em Melios); o arco avança apenas após concluir ambos.
+Essa escolha abre o ramo Filena (Aviso em Kravens) ou o ramo Conselho (Resgate em Melios).
 
 **Cena 11b – Ramo Filena: A Descoberta**  
 Se seguir Filena, Thorin descobre que o **pai dela** não está em casa. Ele fazia parte do grupo que permaneceu em **Kravens** durante a nevasca, por discordar de Tusk. Isso libera a missão **"Aviso em Kravens"**.
 
 **Cena 11c – Ramo Conselho: A Reivindicação**  
-Se for ao Conselho, Thorin testemunha Tordan montando uma tropa de elite para resgatar Kilin em Melios. Thorin se voluntaria, mas Tordan o rejeita, afirmando que apenas **guardas imperiais** têm esse direito. Em um ato de desafio e compromisso, Thorin declara publicamente:
+Se for ao Conselho, Thorin testemunha o depoimento de Tusk sobre o ocorrido em Melios. no meio do depoimento, Thordan na sala do trono e começa montar uma tropa de elite para resgatar Kilin em Melios. Thorin se voluntaria, mas Tordan o rejeita, afirmando que apenas **guardas imperiais** têm esse direito. Em um ato de desafio e compromisso, Thorin declara publicamente:
 > “Sou filho do General Tordan Forja-Prata. **Reivindico** meu dever de alistar-me na **Guarda de Ferro**.”
-A declaração choca o salão e força Tordan a aceitá-lo. Isso libera a missão **"Resgate em Melios"**.
+A declaração choca o salão e força Tordan a aceitá-lo. Isso libera a missão **"Resgate em Melios"**.  
+Thordan se retira do salão depois do fim da cena e vai para casa.
 
-**Cena 11d – Preparação**  
-O arco narrativo só avança quando ambas as missões ("Aviso em Kravens" e "Resgate em Melios") forem concluídas. O jogador pode se preparar em Gildrat, mas os suprimentos são limitados devido ao estado de alerta.
+**Cena 11d – Quando o Segundo Sol Chegar**  
+
+A missão começa se **Thorin decide voltar para casa** ao chegar em **Gildrat**. Ele conversa com o pai e pode **avisar Tordan** sobre o presságio: os **Ignotos atacarão Gildrat no primeiro dia em que Vitasolis surgir no céu**. Após o diálogo, Thorin fica **liberado para dormir em sua casa**, o que **conclui a missão "Quando o Segundo Sol Chegar"**.  
+
+Concluir essa missão **destrava o avanço da história principal**. As missões **"Aviso em Kravens"** e **"Resgate em Melios"** tornam-se **opcionais** antes do ataque dos Ignotos — o arco pode prosseguir sem que sejam completadas.  
+
+Ao dormir, ocorre uma **cutscene** mostrando o **surgimento de Vitasolis (o segundo sol)** no horizonte; a tela treme e a missão **"Defender Gildrat"** é automaticamente iniciada.
 
 ### 12 - Melios: Resgate e o Eco do Selo
 
