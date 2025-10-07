@@ -1,0 +1,73 @@
+{
+  "LayerOrder": {
+    "Face": 5,
+    "Walk": 5,
+    "Sv": 5
+  },
+  "Parts": [
+    {
+      "Name": "Clothing01",
+      "PreviewImage": "Parts/SDwarfBodyFemale_susto/Clothing/FG_Clothing1_p01.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale_susto/Clothing/FG_Clothing1_p01.png",
+        "Walk": "Parts/SDwarfBodyFemale_susto/Clothing/TV_Clothing2_p01.png"
+      }
+    },
+    {
+      "Name": "Clothing02",
+      "PreviewImage": "Parts/SDwarfBodyFemale_susto/Clothing/FG_Clothing1_p02.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale_susto/Clothing/FG_Clothing1_p02.png",
+        "Walk": "Parts/SDwarfBodyFemale_susto/Clothing/TV_Clothing2_p02.png"
+      }
+    },
+    {
+      "Name": "Clothing03",
+      "PreviewImage": "Parts/SDwarfBodyFemale_susto/Clothing/FG_Clothing1_p03.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale_susto/Clothing/FG_Clothing1_p03.png",
+        "Walk": "Parts/SDwarfBodyFemale_susto/Clothing/TV_Clothing2_p03.png"
+      }
+    },
+    {
+      "Name": "Clothing04",
+      "PreviewImage": "Parts/SDwarfBodyFemale_susto/Clothing/FG_Clothing1_p04.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale_susto/Clothing/FG_Clothing1_p04.png",
+        "Walk": "Parts/SDwarfBodyFemale_susto/Clothing/TV_Clothing2_p04.png"
+      }
+    },
+    {
+      "Name": "Clothing05",
+      "PreviewImage": "Parts/SDwarfBodyFemale_susto/Clothing/FG_Clothing1_p05.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale_susto/Clothing/FG_Clothing1_p05.png",
+        "Walk": "Parts/SDwarfBodyFemale_susto/Clothing/TV_Clothing2_p05.png"
+      }
+    },
+    {
+      "Name": "Clothing06",
+      "PreviewImage": "Parts/SDwarfBodyFemale_susto/Clothing/FG_Clothing1_p06.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale_susto/Clothing/FG_Clothing1_p06.png",
+        "Walk": "Parts/SDwarfBodyFemale_susto/Clothing/TV_Clothing2_p06.png"
+      }
+    },
+    {
+      "Name": "Clothing07",
+      "PreviewImage": "Parts/SDwarfBodyFemale_susto/Clothing/FG_Clothing1_p07.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale_susto/Clothing/FG_Clothing1_p07.png",
+        "Walk": "Parts/SDwarfBodyFemale_susto/Clothing/TV_Clothing2_p07.png"
+      }
+    },
+    {
+      "Name": "Clothing08",
+      "PreviewImage": "Parts/SDwarfBodyFemale_susto/Clothing/FG_Clothing1_p08.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale_susto/Clothing/FG_Clothing1_p08.png",
+        "Walk": "Parts/SDwarfBodyFemale_susto/Clothing/TV_Clothing2_p08.png"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "LayerOrder": {
+    "Face": 4,
+    "Walk": 4,
+    "Sv": 4
+  },
+  "Parts": [
+    {
+      "Name": "Rugas 1",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Acessory 2/Rugas1.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale/Acessory 2/Rugas1.png"
+      }
+    }
+  ]
+}

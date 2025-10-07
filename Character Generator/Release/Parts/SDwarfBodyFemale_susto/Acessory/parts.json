@@ -1,0 +1,16 @@
+{
+  "LayerOrder": {
+    "Face": 3,
+    "Walk": 3,
+    "Sv": 3
+  },
+  "Parts": [
+    {
+      "Name": "Tapa olho",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Acessory/PV_TV_Glasses_p01.png",
+      "BaseImages": {
+        "Walk": "Parts/SDwarfBodyFemale/Acessory/tapaOlho.png"
+      }
+    }
+  ]
+}

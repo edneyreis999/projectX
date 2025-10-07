@@ -1,0 +1,115 @@
+{
+  "Layers": [
+    {
+      "Name": "cabelo",
+      "Category": "Rear Hair",
+      "Part": "RearHair05",
+      "Offsets": {
+        "Face": "32, 25",
+        "Sv": "32, 25",
+        "Walk": "32, 25"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "corpo",
+      "Category": "Body",
+      "Part": "BodyFem",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "roupa",
+      "Category": "Clothing",
+      "Part": "Clothing01",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "olhos",
+      "Category": "Eyes",
+      "Part": "Eye04",
+      "Offsets": {
+        "Face": "35, 20",
+        "Sv": "35, 20",
+        "Walk": "35, 20"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "nariz",
+      "Category": "Nose",
+      "Part": "Nariz 1",
+      "Offsets": {
+        "Face": "37, 18",
+        "Sv": "37, 18",
+        "Walk": "37, 18"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "sobrancelha",
+      "Category": "Eyebrows",
+      "Part": "Eyebrows 4",
+      "Offsets": {
+        "Face": "30, 40",
+        "Sv": "30, 40",
+        "Walk": "30, 40"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "boca",
+      "Category": "Mouth",
+      "Part": "Portrait_Boca1",
+      "Offsets": {
+        "Face": "36, 20",
+        "Sv": "36, 20",
+        "Walk": "36, 20"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "capacete",
+      "Category": "Helmets",
+      "Part": "Helmet 7",
+      "Offsets": {
+        "Face": "34, 24",
+        "Sv": "34, 24",
+        "Walk": "34, 24"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "franja",
+      "Category": "Front Hair",
+      "Part": "FrontHair02",
+      "Offsets": {
+        "Face": "32, 19",
+        "Sv": "32, 19",
+        "Walk": "32, 19"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    }
+  ],
+  "BodyType": "SDwarfBodyFemale_triste",
+  "BodyTypeVariation": ""
+}

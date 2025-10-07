@@ -1,0 +1,44 @@
+{
+  "LayerOrder": {
+    "Face": 0,
+    "Walk": 91,
+    "Sv": 100
+  },
+  "Parts": [
+    {
+      "Name": "Wing01",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Wings/icon_Wing_p01.png",
+      "BaseImages": {
+        "Walk": "Parts/SDwarfBodyFemale/Wings/TV_Wing2_p01.png"
+      }
+    },
+    {
+      "Name": "Wing02",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Wings/icon_Wing_p02.png",
+      "BaseImages": {
+        "Walk": "Parts/SDwarfBodyFemale/Wings/TV_Wing2_p02.png"
+      }
+    },
+    {
+      "Name": "Wing03",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Wings/icon_Wing_p03.png",
+      "BaseImages": {
+        "Walk": "Parts/SDwarfBodyFemale/Wings/TV_Wing2_p03.png"
+      }
+    },
+    {
+      "Name": "Wing04",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Wings/icon_Wing_p04.png",
+      "BaseImages": {
+        "Walk": "Parts/SDwarfBodyFemale/Wings/TV_Wing2_p04.png"
+      }
+    },
+    {
+      "Name": "Wing05",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Wings/icon_Wing_p05.png",
+      "BaseImages": {
+        "Walk": "Parts/SDwarfBodyFemale/Wings/TV_Wing2_p05.png"
+      }
+    }
+  ]
+}
