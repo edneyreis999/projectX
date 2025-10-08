@@ -1,0 +1,115 @@
+{
+  "Layers": [
+    {
+      "Name": "Base",
+      "Category": "Body",
+      "Part": "BodyFem",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "cabelo",
+      "Category": "Rear Hair",
+      "Part": "RearHair05",
+      "Offsets": {
+        "Face": "34, 22",
+        "Sv": "34, 22",
+        "Walk": "34, 22"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "roupa",
+      "Category": "Clothing",
+      "Part": "Clothing01",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "nariz",
+      "Category": "Nose",
+      "Part": "Nariz 1",
+      "Offsets": {
+        "Face": "40, 20",
+        "Sv": "40, 20",
+        "Walk": "40, 20"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "franja",
+      "Category": "Front Hair",
+      "Part": "FrontHair02",
+      "Offsets": {
+        "Face": "37, 22",
+        "Sv": "37, 22",
+        "Walk": "37, 22"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "capacete",
+      "Category": "Helmets",
+      "Part": "Helmet 7",
+      "Offsets": {
+        "Face": "38, 19",
+        "Sv": "38, 19",
+        "Walk": "38, 19"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "olhos",
+      "Category": "Eyes",
+      "Part": "Eye04",
+      "Offsets": {
+        "Face": "40, 15",
+        "Sv": "40, 15",
+        "Walk": "40, 15"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Layer#7",
+      "Category": "Eyebrows",
+      "Part": "Eyebrows 1",
+      "Offsets": {
+        "Face": "44, 35",
+        "Sv": "44, 35",
+        "Walk": "44, 35"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Layer#8",
+      "Category": "Mouth",
+      "Part": "Portrait_Boca3",
+      "Offsets": {
+        "Face": "40, 30",
+        "Sv": "40, 30",
+        "Walk": "40, 30"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    }
+  ],
+  "BodyType": "SDwarfBodyFemale_briga",
+  "BodyTypeVariation": ""
+}

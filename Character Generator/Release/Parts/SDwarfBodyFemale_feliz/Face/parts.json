@@ -1,0 +1,93 @@
+{
+  "LayerOrder": {
+    "Face": 1,
+    "Walk": 100,
+    "Sv": 100
+  },
+  "Parts": [
+    {
+      "Name": "Face01",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Face/FG_Face_p01_c1_m001.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale/Face/FG_Face_p01_c1_m001.png"
+      }
+    },
+    {
+      "Name": "Face02",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Face/FG_Face_p02_c1_m001.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale/Face/FG_Face_p02_c1_m001.png"
+      }
+    },
+    {
+      "Name": "Face03",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Face/FG_Face_p03_c1_m001.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale/Face/FG_Face_p03_c1_m001.png"
+      }
+    },
+    {
+      "Name": "Face04",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Face/FG_Face_p04_c1_m001.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale/Face/FG_Face_p04_c1_m001.png"
+      }
+    },
+    {
+      "Name": "Face05",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Face/FG_Face_p05_c1_m001.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale/Face/FG_Face_p05_c1_m001.png"
+      }
+    },
+    {
+      "Name": "Face06",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Face/FG_Face_p06_c1_m001.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale/Face/FG_Face_p06_c1_m001.png"
+      }
+    },
+    {
+      "Name": "Face07",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Face/FG_Face_p07_c1_m001.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale/Face/FG_Face_p07_c1_m001.png"
+      }
+    },
+    {
+      "Name": "Face08",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Face/FG_Face_p08_c1_m001.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale/Face/FG_Face_p08_c1_m001.png"
+      }
+    },
+    {
+      "Name": "Face09",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Face/FG_Face_p09_c1_m001.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale/Face/FG_Face_p09_c1_m001.png"
+      }
+    },
+    {
+      "Name": "Face10",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Face/FG_Face_p10_c1_m001.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale/Face/FG_Face_p10_c1_m001.png"
+      }
+    },
+    {
+      "Name": "Face11",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Face/FG_Face_p11_c1_m001.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale/Face/FG_Face_p11_c1_m001.png"
+      }
+    },
+    {
+      "Name": "Face12",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Face/FG_Face_p12_c1_m001.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale/Face/FG_Face_p12_c1_m001.png"
+      }
+    }
+  ]
+}

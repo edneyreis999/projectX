@@ -1,0 +1,23 @@
+{
+  "LayerOrder": {
+    "Face": 100,
+    "Walk": 100,
+    "Sv": 100
+  },
+"Parts":[
+  {
+    "Name": "Ears01",
+    "PreviewImage": "Parts/SDwarfBodyFemale/Ears/FG_Ears_p01.png",
+    "BaseImages": {
+      "Face": "Parts/SDwarfBodyFemale/Ears/FG_Ears_p01.png"
+    }
+  },
+  {
+    "Name": "Ears02",
+    "PreviewImage": "Parts/SDwarfBodyFemale/Ears/FG_Ears_p02.png",
+    "BaseImages": {
+      "Face": "Parts/SDwarfBodyFemale/Ears/FG_Ears_p02.png"
+    }
+  }
+  
+]}

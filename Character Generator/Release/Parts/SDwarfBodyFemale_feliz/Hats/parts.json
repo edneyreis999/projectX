@@ -1,0 +1,65 @@
+{
+  "LayerOrder": {
+    "Face": 100,
+    "Walk": 101,
+    "Sv": 100
+  },
+  "Parts": [
+    {
+      "Name": "Capacete de Dragão",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Hats/icon_CapaceteDragao.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale/Hats/Portrait_CapaceteDragao.png",
+        "Walk": "Parts/SDwarfBodyFemale/Hats/Character_CapaceteDragao.png"
+      }
+    },
+    {
+      "Name": "Bandana",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Hats/icon_Bandana.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale/Hats/Portrait_Bandana.png",
+        "Walk": "Parts/SDwarfBodyFemale/Hats/Character_Bandana.png"
+      }
+    },
+    {
+      "Name": "Chapeu1",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Hats/icon_Chapeu.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale/Hats/Portrait_Chapeu.png",
+        "Walk": "Parts/SDwarfBodyFemale/Hats/Character_Chapeu.png"
+      }
+    },
+    {
+      "Name": "Chapeu2",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Hats/icon_Chapeu2.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale/Hats/Portrait_Chapeu2.png",
+        "Walk": "Parts/SDwarfBodyFemale/Hats/Character_Chapeu2.png"
+      }
+    },
+    {
+      "Name": "Oculos1",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Hats/icon_Oculos1.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale/Hats/Portrait_Oculos1.png",
+        "Walk": "Parts/SDwarfBodyFemale/Hats/Character_Oculos1.png"
+      }
+    },
+    {
+      "Name": "Oculos2",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Hats/icon_Oculos2.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale/Hats/Portrait_Oculos2.png",
+        "Walk": "Parts/SDwarfBodyFemale/Hats/Character_Oculos2.png"
+      }
+    },
+    {
+      "Name": "Tiara",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Hats/icon_Tiara.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale/Hats/Portrait_Tiara.png",
+        "Walk": "Parts/SDwarfBodyFemale/Hats/Character_Tiara.png"
+      }
+    }
+  ]
+}

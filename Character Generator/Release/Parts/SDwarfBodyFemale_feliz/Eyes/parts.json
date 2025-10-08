@@ -1,0 +1,49 @@
+{
+  "LayerOrder": {
+    "Face": 3,
+    "Walk": 3,
+    "Sv": 3
+  },
+  "Parts": [
+    {
+      "Name": "Eye01",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Eyes/FG_Eyes_p01.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale/Eyes/FG_Eyes_p01.png",
+        "Walk": "Parts/SDwarfBodyFemale/Eyes/eyes1.png"
+      }
+    },
+    {
+      "Name": "Eye02",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Eyes/FG_Eyes_p02.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale/Eyes/FG_Eyes_p02.png",
+        "Walk": "Parts/SDwarfBodyFemale/Eyes/eyes2.png"
+      }
+    },
+    {
+      "Name": "Eye03",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Eyes/FG_Eyes_p03.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale/Eyes/FG_Eyes_p03.png",
+        "Walk": "Parts/SDwarfBodyFemale/Eyes/eyes3.png"
+      }
+    },
+    {
+      "Name": "Eye04",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Eyes/FG_Eyes_p04.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale/Eyes/FG_Eyes_p04.png",
+        "Walk": "Parts/SDwarfBodyFemale/Eyes/eyes4.png"
+      }
+    },
+    {
+      "Name": "Eye04_2",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Eyes/FG_Eyes_p04_2.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale/Eyes/FG_Eyes_p04_2.png",
+        "Walk": "Parts/SDwarfBodyFemale/Eyes/eyes4_2.png"
+      }
+    }
+  ]
+}

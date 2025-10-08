@@ -1,0 +1,49 @@
+{
+  "LayerOrder": {
+    "Face": 6,
+    "Walk": 6,
+    "Sv": 6
+  },
+  "Parts": [
+    {
+      "Name": "FrontHair01",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Front Hair/FG_FrontHair_p01_c1_m003.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale/Front Hair/FG_FrontHair_p01_c1_m003.png",
+        "Walk": "Parts/SDwarfBodyFemale/Front Hair/TV_FrontHair1_p01.png"
+      }
+    },
+    {
+      "Name": "FrontHair02",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Front Hair/FG_FrontHair_p02_c1_m003.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale/Front Hair/FG_FrontHair_p02_c1_m003.png",
+        "Walk": "Parts/SDwarfBodyFemale/Front Hair/TV_FrontHair1_p02.png"
+      }
+    },
+    {
+      "Name": "FrontHair03",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Front Hair/FG_FrontHair_p03_c1_m003.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale/Front Hair/FG_FrontHair_p03_c1_m003.png",
+        "Walk": "Parts/SDwarfBodyFemale/Front Hair/TV_FrontHair1_p03.png"
+      }
+    },
+    {
+      "Name": "FrontHair04",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Front Hair/FG_FrontHair_p04_c1_m003.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale/Front Hair/FG_FrontHair_p04_c1_m003.png",
+        "Walk": "Parts/SDwarfBodyFemale/Front Hair/TV_FrontHair1_p04.png"
+      }
+    },
+    {
+      "Name": "FrontHair05",
+      "PreviewImage": "Parts/SDwarfBodyFemale/Front Hair/FG_FrontHair_p05_c1_m003.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBodyFemale/Front Hair/FG_FrontHair_p05_c1_m003.png",
+        "Walk": "Parts/SDwarfBodyFemale/Front Hair/TV_FrontHair1_p05.png"
+      }
+    }
+  ]
+}

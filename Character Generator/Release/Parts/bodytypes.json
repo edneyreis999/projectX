@@ -22,5 +22,21 @@
   {
     "Name": "SDwarfBodyFemale",
     "PreviewImage":"Parts/SDwarfBodyFemale/PreviewImage.png"
+  },
+    {
+    "Name": "SDwarfBodyFemale_feliz",
+    "PreviewImage":"Parts/SDwarfBodyFemale_feliz/PreviewImage.png"
+  },
+    {
+    "Name": "SDwarfBodyFemale_triste",
+    "PreviewImage":"Parts/SDwarfBodyFemale_triste/PreviewImage.png"
+  },
+    {
+    "Name": "SDwarfBodyFemale_susto",
+    "PreviewImage":"Parts/SDwarfBodyFemale_susto/PreviewImage.png"
+  },
+    {
+    "Name": "SDwarfBodyFemale_briga",
+    "PreviewImage":"Parts/SDwarfBodyFemale_briga/PreviewImage.png"
   }
 ]
