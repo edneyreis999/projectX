@@ -96,7 +96,7 @@ Quest: Primeiro Contrato
 | 3 | Jogador caminha até o balcão e inicia diálogo com o dono.                                                                                       | 🎮       |
 | 4 | Dono indica onde Balastrus está; câmera faz novo pan até a mesa dele e retorna.                                                                 | 🎬       |
 | 5 | Jogador vai até Balastrus e inicia conversa.                                                                                                    | 🎮       |
-| 6 | Balastrus comenta que achou que Thorin não viria, reconhece-o como filho de Thordan e apresenta a vaga na expedição mostrando o contrato.       | 🎬       |
+| 6 | Balastrus comenta que achou que Thorin não viria, reconhece-o como filho de Tordan e apresenta a vaga na expedição mostrando o contrato.       | 🎬       |
 | 7 | **Árvore de diálogo:** (A) aceitar logo (B) questionar riscos.                                                                                  | 🎮       |
 | 8 | Balastrus responde ao caminho escolhido, deseja boa sorte, indica a Estrada do Cão Luar e sai de cena. **Contrato é adicionado ao inventário.** | 🎬       |
 
@@ -127,7 +127,7 @@ Quest: Primeiro Contrato
 | 1 | Ao deixar Tusk, Thorin ouve vozes alteradas vindas de uma barraca próxima; som abafado indica discussão.                                                                                                                                                    | 🎬       |
 | 2 | **Pan de câmera:** enquadra a barraca fechada onde Balastrus e três guardas reais discutem.                                                                                                                                                                 | 🎬       |
 | 3 | **Escolha do jogador:** (A) aproximar-se para escutar melhor (B) permanecer onde está fingindo não ouvir.                                                                                                                                                   | 🎮       |
-| 4 | Se o jogador se aproxima, cutscene interna revela Balastrus negando escolta; guardas citam ordem de Thordan.                                                                                                                                                | 🎬       |
+| 4 | Se o jogador se aproxima, cutscene interna revela Balastrus negando escolta; guardas citam ordem de Tordan.                                                                                                                                                | 🎬       |
 | 5 | Thorin (pensamento): “Kilin, Mhordred, Tharok? O que eles estão fazendo aqui?”                                                                                                                                                                              | 🎬       |
 | 6 | Balastrus cede e, antes de partir, encara Tusk: “Muito bem, Tusk. Eu financio, você extrai, e cada dracma de Kravens vem parar nas minhas mãos. Fique de olho nesses soldados: se custarem um grama que seja do meu lucro, será você quem prestará contas.” | 🎬       |
 | 7 | Interface: **“Kilin, Mhordred e Tharok juntaram-se ao grupo.”**                                                                                                                                                                                             | 🎬       |

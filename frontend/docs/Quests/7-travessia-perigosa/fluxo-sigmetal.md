@@ -89,7 +89,7 @@ subgraph ESTRADA["Estrada do Cão Luar (Quest 'A Travessia Perigosa')"]
     %% então v_sigmetal_destino = 0 (NINGUEM) e o item permanece na bolsa.
 
     %% Consequências narrativas breves (mantidas do diagrama anterior)
-    B5["Balastros analisa o item<br>em silêncio"]
+    B5["Balastrus analisa o item<br>em silêncio"]
     B6["Ha tempo não via um desses..."]
 
     B8["Thori: Queria ver a cara do meu pai se me visse entregando um desses."]:::yellow

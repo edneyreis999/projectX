@@ -11,8 +11,8 @@
 * **Quest anterior**: A Semifinal
 * **Conflito central**: Thorin tenta afirmar seu valor no Futebol Rúnico enquanto o pai, General Tordan, impõe um trabalho “de verdade” e mantém controle absoluto sobre sua vida.
 * **Objetivo narrativo global**: Provar talento e autonomia de Thorin versus a autoridade de Tordan.
-* **Premissa resumida**: Após a semifinal, Thorin é escoltado para casa, discute com Tordan, exibe o troféu, é ridicularizado e termina forçado a encontrar Balastros para uma expedição às minas de Kravens.
-* **Resumo**: Thorin é escoltado por dois guardas imperiais até o Distrito Residencial e o jogador retoma o controle apenas para atravessar a rua até a Casa Forja Prata 🎮. Assim que entra, uma cutscene assume 🎬: Tordan já o aguarda na cozinha. O diálogo oferece três tons possíveis (respeitoso, sarcástico ou rebelde), mas sempre converge quando Thorin pega o troféu da semifinal na sala de troféus e o exibe ao pai. Tordan ri, rotula o prêmio de “sucata brilhante” e decreta que futebol rúnico não é futuro; impõe, então, que ao amanhecer Thorin se apresente a Balastros na taverna para partir numa expedição às minas de Kravens. No corredor, Sáparo-boca-de-corneta aparece apenas para zombar — “Olha o campeão voltando no cabresto!” — acentuando a humilhação. Sem alternativas imediatas, Thorin sobe ao quarto 🎮; a missão encerra com ele deitado, dividido entre obedecer ou lutar pelos próprios sonhos, indo na manhã seguinte treinar com Filena a jogada especial que estavam bolando.
+* **Premissa resumida**: Após a semifinal, Thorin é escoltado para casa, discute com Tordan, exibe o troféu, é ridicularizado e termina forçado a encontrar Balastrus para uma expedição às minas de Kravens.
+* **Resumo**: Thorin é escoltado por dois guardas imperiais até o Distrito Residencial e o jogador retoma o controle apenas para atravessar a rua até a Casa Forja Prata 🎮. Assim que entra, uma cutscene assume 🎬: Tordan já o aguarda na cozinha. O diálogo oferece três tons possíveis (respeitoso, sarcástico ou rebelde), mas sempre converge quando Thorin pega o troféu da semifinal na sala de troféus e o exibe ao pai. Tordan ri, rotula o prêmio de “sucata brilhante” e decreta que futebol rúnico não é futuro; impõe, então, que ao amanhecer Thorin se apresente a Balastrus na taverna para partir numa expedição às minas de Kravens. No corredor, Sáparo-boca-de-corneta aparece apenas para zombar — “Olha o campeão voltando no cabresto!” — acentuando a humilhação. Sem alternativas imediatas, Thorin sobe ao quarto 🎮; a missão encerra com ele deitado, dividido entre obedecer ou lutar pelos próprios sonhos, indo na manhã seguinte treinar com Filena a jogada especial que estavam bolando.
 * **Locais principais**:
 
   * Distrito Residencial
@@ -96,7 +96,7 @@ Quest: Fim de Jogo
 | 3 | Choque na Cozinha      | Tordan condena futebol → Diálogo ramificado → Defesa do sonho → Desdém do pai               | Thorin confronta o pai sobre o sonho de jogar futebol rúnico e o preconceito de classe. |
 | 4 | Busca do Troféu        | Objetivo “lembrar Tordan” → Sáparo zomba → Thorin encontra troféu juvenil do pai → Reflexão | Thorin busca um troféu antigo para lembrar Tordan de seus próprios sonhos.              |
 | 5 | Troféu Desprezado      | Entrega do troféu → Retrato reflete nostalgia → Desprezo público → Humilhação               | Tordan despreza seu próprio troféu e o sonho de Thorin, aprofundando o conflito.        |
-| 6 | Sentença às Minas      | Tordan impõe trabalho → Saída brusca → Porta trancada → Corredor livre                      | Tordan obriga Thorin a trabalhar nas minas sob Balastros, selando a ordem.              |
+| 6 | Sentença às Minas      | Tordan impõe trabalho → Saída brusca → Porta trancada → Corredor livre                      | Tordan obriga Thorin a trabalhar nas minas sob Balastrus, selando a ordem.              |
 | 7 | Silêncio no Quarto     | Thorin entra no quarto → Pensamento único → Dorme                                           | Thorin pondera seus sonhos antes de adormecer, encerrando a missão.                     |
 
 #### Beats por Cena
@@ -158,7 +158,7 @@ Quest: Fim de Jogo
 | # | Nome do Beat                | Premissa resumida                                                                                                                                    | Tipo |
 | - | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
 | 1 | **Levantada de Autoridade** | Tordan ergue-se da cadeira, impondo presença sobre Thorin.                                                                                           | 🎬   |
-| 2 | **Ordem Irrevogável**       | Portrait de Tordan mostra frieza enquanto decreta: “Amanhã ao amanhecer apresentar-se-á a Balastros na taverna. Aprendiz de minerador. Ponto final.” | 🎬   |
+| 2 | **Ordem Irrevogável**       | Portrait de Tordan mostra frieza enquanto decreta: “Amanhã ao amanhecer apresentar-se-á a Balastrus na taverna. Aprendiz de minerador. Ponto final.” | 🎬   |
 | 3 | **Saída & Porta Fechada**   | Tordan vira de costas, dá dois - três passos; quick fade-out/fade-in revela-o já dentro do próprio quarto, porta sendo trancada.                     | 🎬   |
 | 4 | **Corredor Livre**          | Cutscene termina; controle volta ao jogador, HUD: “Volte para seu quarto e descanse”.                                                                | 🎮   |
 | 5 | **Caminho Solitário**       | Jogador conduz Thorin pelo corredor vazio até o quarto dele.                                                                                         | 🎮   |
