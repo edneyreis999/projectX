@@ -987,7 +987,7 @@
                 "BASIC: Enter Bust",
                 {
                   "PictureID:eval": "3",
-                  "PictureName:str": "Portraits/Principal/Kilin",
+                  "PictureName:str": "Portraits/Principal/Kilin_feliz",
                   "Origin:str": "Bust",
                   "Position:num": "4",
                   "StartOffsetX:eval": "200",
@@ -999,7 +999,7 @@
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Picture ID = 3"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Kilin"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Kilin_feliz"] },
             { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = 4"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = 200"] },
@@ -1155,7 +1155,7 @@
                 "BASIC: Enter Bust",
                 {
                   "PictureID:eval": "3",
-                  "PictureName:str": "Portraits/Principal/Kilin",
+                  "PictureName:str": "Portraits/Principal/Kilin_triste",
                   "Origin:str": "Bust",
                   "Position:num": "4",
                   "StartOffsetX:eval": "200",
@@ -1167,7 +1167,7 @@
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Picture ID = 3"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Kilin"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Kilin_triste"] },
             { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = 4"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = 200"] },
@@ -1345,6 +1345,35 @@
                 "Basic_EnterBust",
                 "BASIC: Enter Bust",
                 {
+                  "PictureID:eval": "2",
+                  "PictureName:str": "Portraits/Principal/Filena_susto",
+                  "Origin:str": "Bust",
+                  "Position:num": "4",
+                  "StartOffsetX:eval": "200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Filena_susto"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 4"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = 200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
                   "PictureID:eval": "4",
                   "PictureName:str": "Portraits/Principal/Thorin Armadura Hemet_medo",
                   "Origin:str": "Bust",
@@ -1393,6 +1422,35 @@
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
             { "code": 401, "indent": 0, "parameters": ["Então este é o meu fim?! Não quero morrer aqui,"] },
             { "code": 401, "indent": 0, "parameters": ["no meio do nada…"] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "3",
+                  "PictureName:str": "Portraits/Principal/Kilin_raiva",
+                  "Origin:str": "Bust",
+                  "Position:num": "2",
+                  "StartOffsetX:eval": "200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 3"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Kilin_raiva"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 2"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = 200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             {
               "code": 357,
               "indent": 0,
@@ -1592,7 +1650,7 @@
                 "BASIC: Enter Bust",
                 {
                   "PictureID:eval": "2",
-                  "PictureName:str": "Portraits/Principal/Filena",
+                  "PictureName:str": "Portraits/Principal/Filena_feliz",
                   "Origin:str": "Bust",
                   "Position:num": "6",
                   "StartOffsetX:eval": "200",
@@ -1604,7 +1662,7 @@
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Filena"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Filena_feliz"] },
             { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = 6"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = 200"] },

@@ -1,0 +1,145 @@
+{
+  "Layers": [
+    {
+      "Name": "Layer#10",
+      "Category": "Acessory 2",
+      "Part": "scar1",
+      "Offsets": {
+        "Face": "52, 11",
+        "Sv": "52, 11",
+        "Walk": "52, 11"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Base",
+      "Category": "Body",
+      "Part": "BodyMasc",
+      "Offsets": {
+        "Face": "0, 0",
+        "Sv": "0, 0",
+        "Walk": "0, 0"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "olho",
+      "Category": "Eyes",
+      "Part": "Eye02",
+      "Offsets": {
+        "Face": "54, 9",
+        "Sv": "4, 8",
+        "Walk": "4, 8"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "sobrancelha",
+      "Category": "Eyebrows",
+      "Part": "Eyebrows 4",
+      "Offsets": {
+        "Face": "48, 15",
+        "Sv": "0, 13",
+        "Walk": "0, 13"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "nariz",
+      "Category": "Nose",
+      "Part": "Nariz 3",
+      "Offsets": {
+        "Face": "52, 12",
+        "Sv": "-2, 7",
+        "Walk": "-2, 7"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "boca",
+      "Category": "Mouth",
+      "Part": "Portrait_Boca1",
+      "Offsets": {
+        "Face": "56, -2",
+        "Sv": "0, 4",
+        "Walk": "0, 4"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "cabelo",
+      "Category": "Rear Hair",
+      "Part": "RearHair04",
+      "Offsets": {
+        "Face": "53, 10"
+      },
+      "Visible": false,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "franja",
+      "Category": "Front Hair",
+      "Part": "FrontHair01",
+      "Offsets": {
+        "Face": "55, 5"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "capacete",
+      "Category": "Helmets",
+      "Part": "Helmet 4",
+      "Offsets": {
+        "Face": "53, 3",
+        "Sv": "2, -6",
+        "Walk": "2, -6"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "armadura",
+      "Category": "Clothing",
+      "Part": "Clothing06",
+      "Offsets": {
+        "Face": "-2, 0",
+        "Sv": "-2, 0",
+        "Walk": "-2, 0"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Layer#9",
+      "Category": "Beard",
+      "Part": "Beard08",
+      "Offsets": {
+        "Face": "57, 10",
+        "Sv": "57, 10",
+        "Walk": "57, 10"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    }
+  ],
+  "BodyType": "SDwarfBody_triste",
+  "BodyTypeVariation": ""
+}
