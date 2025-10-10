@@ -280,7 +280,7 @@ Thorin, Filena, Mhordred e Tusk chegam a Gildrat e a encontram em **estado de al
 
 - **Seguir Filena** para sua casa.
 - **Apresentar-se ao Conselho** com Mhordred e Tusk.
-- **Quando o segundo sol chegar** (missão principal de gatilho)
+- **Quando o segundo sol chegar** (desbloqueia preparação para o ataque dos Ignotos)
 
 Essa escolha abre o ramo Filena (Aviso em Kravens) ou o ramo Conselho (Resgate em Melios).
 
@@ -295,11 +295,9 @@ Thordan se retira do salão depois do fim da cena e vai para casa.
 
 **Cena 11d – Quando o Segundo Sol Chegar**  
 
-A missão começa se **Thorin decide voltar para casa** ao chegar em **Gildrat**. Ele conversa com o pai e pode **avisar Tordan** sobre o presságio: os **Ignotos atacarão Gildrat no primeiro dia em que Vitasolis surgir no céu**. Após o diálogo, Thorin fica **liberado para dormir em sua casa**, o que **conclui a missão "Quando o Segundo Sol Chegar"**.  
+A missão começa se **Thorin decide voltar para casa** ao chegar em **Gildrat**. Ele conversa com o pai e pode **avisar Tordan** sobre o presságio: os **Ignotos atacarão Gildrat no primeiro dia em que Vitasolis surgir no céu**. Após o diálogo, Thorin fica **liberado para preparar os recursos para o confronto**, o que **conclui a missão "Quando o Segundo Sol Chegar"**.  
 
-Concluir essa missão **destrava o avanço da história principal**. As missões **"Aviso em Kravens"** e **"Resgate em Melios"** tornam-se **opcionais** antes do ataque dos Ignotos — o arco pode prosseguir sem que sejam completadas.  
-
-Ao dormir, ocorre uma **cutscene** mostrando o **surgimento de Vitasolis (o segundo sol)** no horizonte; a tela treme e a missão **"Defender Gildrat"** é automaticamente iniciada.
+Concluir essa missão **destrava o avanço da história principal**. As missões **"Aviso em Kravens"** e **"Resgate em Melios"** tornam-se não mais possíveis de ser concluidas antes do ataque dos Ignotos — o arco vai prosseguir para cena 14 Defender Gildrat: Clímax.  
 
 ### 12 - Melios: Resgate e o Eco do Selo
 
@@ -332,34 +330,21 @@ Para virar o jogo, Thorin e Filena alcançam a passagem revelada pelo Cristaleã
 **Cena 13e – Evacuação e Saque**  
 Com a ameaça contida, o grupo realiza um saque controlado de Sigmetal e conclui a evacuação, retornando a Gildrat com o recurso vital.
 
-### 14 - Defender Gildrat: Clímax e Sacrifício
+### 14 - Defender Gildrat: Clímax
 
-**Cena 14a – Forja e Preparação**  
-As forjas de Gildrat trabalham sem parar, usando o Sigmetal para criar armas. Uma armadilha com dinamites é preparada no **Distrito Comercial Externo**.
-
-**Cena 14b – A Armadilha**  
+**Cena 14a – A Armadilha**  
 Batedores atraem os Ignotos para a armadilha. Duas fileiras de explosivos detonam, afunilando o exército inimigo. No entanto, o **General Ignoto** usa um campo de mana para conter a terceira e mais poderosa explosão.
 
-**Cena 14c – Guerra Aberta**  
-Com a fachada do portão destruída, a batalha se torna uma guerra de atrito na praça. Mesmo com as armas de Sigmetal, a linha de defesa anã começa a ceder.
+**Cena 14b – Guerra Aberta**  
+A batalha se torna uma guerra de atrito na praça. O exercito dos anões vs o exercito dos Ignotos.
+A força do exercito dos anões depende do desempenho do jogador ao se preparar para o confronto.
 
-**Cena 14d – O Poder Onírico de Thorin**  
+**Cena 14c – O Poder Onírico de Thorin**  
 Para impedir a derrota, Thorin usa seu poder onírico em público pela primeira vez, virando a maré da batalha e permitindo que seu grupo elimine o General Ignoto. O esforço o deixa extremamente fraco, sofrendo de **Resíduo Onírico**.
 
-**Cena 14e – A Casca do Profeta**  
-Atraído pela mana, o **Profeta das Sombras** possui parcialmente Thorin, criando uma **Casca onírica** — um chefe colossal de vidro-sombra com Thorin adormecido em seu centro. O objetivo da luta é purificar Thorin sem matá-lo. Filena conduz um ritual para quebrar a possessão.
+**Cena 14d – A Casca do Profeta**  
+Atraído pela mana, o **Profeta das Sombras** possui parcialmente Thorin, criando uma **Casca onírica** — um chefe colossal de vidro-sombra com Thorin adormecido em seu centro. O objetivo da luta é purificar Thorin sem matá-lo.
 
-**Cena 14f – A Decisão de Mhordred**  
-Após a purificação, o distrito ameaça desabar.
-**Decisão do Jogador:**
-
-- **EVACUAR SOLDADOS:** Mhordred se sacrifica para segurar a linha enquanto todos fogem.
-- **SELAR A ROTA:** O distrito é selado com Sigmetal, sacrificando um pelotão que fica para trás, mas salvando Mhordred.
-
-A decisão define o sacrifício (Mhordred ou um pelotão) e altera o desfecho emocional da batalha.
-
-**Cena 14g – Queda e Luto**  
-Com a Casca dissipada, Thorin desmaia. A cena termina em um momento de lamento silencioso, com Tordan observando de longe e Filena ao lado do herói.
-
-**Cena 14h – Pós-créditos: O Despertar**  
-Dias depois, Thorin está dormindo em seu quarto. A cena esvanece para branco, e então ele abre um olho. Em um contraplano, no horizonte, a silhueta do verdadeiro **Profeta das Sombras** observa um exército imenso de Ignotos. Um único sussurro dissonante é ouvido. **Corte seco.**
+**Cena 14e – Pós-créditos: O Despertar**  
+Vão existir cenas pós credito para cada um dos personagens. Mas a principal é:
+Dias depois, Thorin volta de jogo jogo de futebol runico e vai dormir em seu quarto. A cena esvanece para branco, e então ele abre um olho. Em um contraplano, no horizonte, a silhueta do verdadeiro **Profeta das Sombras** observa um exército imenso de Ignotos. Um único sussurro dissonante é ouvido. **Corte seco.**
