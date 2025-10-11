@@ -333,17 +333,17 @@ Com a ameaça contida, o grupo realiza um saque controlado de Sigmetal e conclui
 ### 14 - Defender Gildrat: Clímax
 
 **Cena 14a – A Armadilha**  
-Batedores atraem os Ignotos para a armadilha. Duas fileiras de explosivos detonam, afunilando o exército inimigo. No entanto, o **General Ignoto** usa um campo de mana para conter a terceira e mais poderosa explosão.
+Batedores atraem os Ignotos Gigantes para uma armadilha. Duas fileiras de explosivos detonam, afunilando o exército inimigo. No entanto, o **General Ignoto** usa um campo de mana para conter a terceira e mais poderosa explosão.
 
 **Cena 14b – Guerra Aberta**  
 A batalha se torna uma guerra de atrito na praça. O exercito dos anões vs o exercito dos Ignotos.
 A força do exercito dos anões depende do desempenho do jogador ao se preparar para o confronto.
 
 **Cena 14c – O Poder Onírico de Thorin**  
-Para impedir a derrota, Thorin usa seu poder onírico em público pela primeira vez, virando a maré da batalha e permitindo que seu grupo elimine o General Ignoto. O esforço o deixa extremamente fraco, sofrendo de **Resíduo Onírico**.
+Para impedir a derrota, Thorin usa seu poder onírico em público pela primeira vez, virando a maré da batalha e permitindo que seu grupo elimine o General Ignoto. O esforço o deixa extremamente fraco.
 
 **Cena 14d – A Casca do Profeta**  
-Atraído pela mana, o **Profeta das Sombras** possui parcialmente Thorin, criando uma **Casca onírica** — um chefe colossal de vidro-sombra com Thorin adormecido em seu centro. O objetivo da luta é purificar Thorin sem matá-lo.
+Através do Reino da Mana, o **Profeta das Sombras** possui parcialmente Thorin, criando uma **Casca onírica** — um chefe colossal de vidro-sombra com Thorin adormecido em seu centro. O objetivo da luta é purificar Thorin sem matá-lo.
 
 **Cena 14e – Pós-créditos: O Despertar**  
 Vão existir cenas pós credito para cada um dos personagens. Mas a principal é:
