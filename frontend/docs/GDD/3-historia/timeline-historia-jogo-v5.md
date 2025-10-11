@@ -302,7 +302,7 @@ Concluir essa missão **destrava o avanço da história principal**. As missões
 ### 12 - Melios: Resgate e o Eco do Selo
 
 **Cena 12a – Retomada do Acesso**  
-Como um Guarda de Ferro, Thorin lidera uma equipe para reabrir a passagem para Melios. Os rastros confirmam que Kilin e Tharok estão vivos, contendo o avanço dos Ignotos.
+Como um Guarda de Ferro, Thorin lidera uma equipe para reabrir a passagem para Melios. Os rastros confirmam que Kilin, Tharok e Balastrus estão vivos, contendo o avanço dos Ignotos.
 
 **Cena 12b – Retirada Tática**  
 O grupo localiza Kilin em uma posição defensiva e o extrai com sucesso, fechando rotas secundárias para atrasar os inimigos.

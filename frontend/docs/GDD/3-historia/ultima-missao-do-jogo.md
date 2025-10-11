@@ -1,13 +1,14 @@
 # A ultima missão do Jogo
 
-Esse documento trás em detalhes como vai funcionar a dinamica das ultimas missões do jogo após o retorno da cena [Cena 11](timeline-historia-jogo-v5.md#11---gildrat-em-alarme-escolhas-e-consequências). Respeitando uma experiência profunda em narrativa emergente, worldbuilding sistêmico e estrutura convergente (final definido).
+Esse documento trás em detalhes como vai funcionar a dinamica das ultimas missões do jogo após o retorno da cena [Cena 11](timeline-historia-jogo-v5.md#11---gildrat-em-alarme-escolhas-e-consequências). Respeitando uma experiência profunda em [narrativa sistemica](../../../../zord/pesquisas/narrativa-sistemica.md), worldbuilding sistêmico e estrutura convergente (final definido).
 
 ## Preparativos em Gildrat
 
-### Introdução da fase na Noite da História com Rheed
+Após retornar de Melios, Thorin traz a notícia de que os Ignotos estão prestes a atacar Gildrat e comunica seu pai, Thordan.
+A fase de preparação tem início quando a missão “Quando o Segundo Sol Chegar” é ativada.
 
-Essa fase se inicia logo depois de o jogador voltar de Melios com a noticia que os Ignotos estão prestes a atacar Gildrat. Thorin precisa preparar as defesas com os recursos reunidos durante o jogo.
-Essa fase se encerra quando o jogador dorme e aparece a cutscene do segundo sol chegando no céu.
+A partir desse momento, o jogador deve organizar as defesas da cidade utilizando os recursos reunidos durante o jogo.
+A fase se encerra quando o jogador dorme, acionando a cutscene do segundo sol surgindo no céu.
 
 ### Gameplay
 
@@ -18,7 +19,7 @@ Essa fase se encerra quando o jogador dorme e aparece a cutscene do segundo sol 
 - Missão: **“Defender Gildrat”** é ativada após o jogador dormir.  
   - Antes de dormir, vai ter um save obrigatório. E o save é desabilitado durante a missão **“Defender Gildrat”**.
 - Atividades:
-  - [Quests para organizar defesa de Gildrat](../../Quests/10-quando-segundo-sol-chegar/quando-segundo-sol-chegar.NSD.fluxo-cenas.md)
+  - [Quando o Segundo Sol Chegar](../../Quests/10-quando-segundo-sol-chegar/quando-segundo-sol-chegar.NSD.fluxo-cenas.md)
 
 Notas para brainstorm:
 Preciso pensar em mais atividades que o jogador pode fazer nessa fase 1.
@@ -47,6 +48,11 @@ As seguintes variáveis inteiras serão usadas para compor o Índice de Prepara�
 | `v_empatia_filena`        | 0–5     | A profundidade da conexão e confiança entre Thorin e Filena.                             | Aumenta ao apoiar Filena e suas causas.                                                 | Aprofunda o arco de relacionamento e pode desbloquear habilidades de combate em dupla. Libera final que Filena beija Thorin.  |
 | `v_folego_time_runico`    | 0–3     | A prontidão do time de futebol rúnico para atuar como uma unidade de suporte.            | 0: Inativo. 1: Reunido. 2: Treinado. 3: Equipado.                                       | Adiciona uma habilidade de invocação que pode ser usada uma vez durante as batalhas.              |
 | `v_preparo_militar`       | 0–9     | O nível de preparação tática e de recursos da Guarda de Ferro.                           | Aumenta ao ajudar na logística, completar missões de resgate e fortalecer defesas.      | Determina a força das linhas de frente e a disponibilidade de recursos na batalha final. |
+
+### Matriz de Convergência por Fase
+
+Notas de brainstorm:
+Eu ainda não tenho nada que representa a soma das variaveis ou algo do tipo. Precisa? O que eu posso colocar de alteração?
 
 ### Inicio das mecanicas de fase
 
@@ -189,7 +195,16 @@ O jogo termina com o grupo salvando Thorin do boss casca.
 
 Com a Casca dissipada, Thorin acorda. A cena termina em um momento de lamento silencioso, com Tordan observando de longe e Filena ao lado do herói.
 
-(Dialogo depois de derrotar o boss e salvar Thorin ainda está a definir.)
+Notas de brainstorm:
+Dialogo depois de derrotar o boss e salvar Thorin ainda está a definir.
+Fechos Convergentes:
+Eu preciso pensar em finais diferentes de acordo com a soma das variaveis em `### Impacto das decisões no gameplay`
+
+- Final A
+- Final B
+- Final C
+
+Eu preciso levar em consideração também as `## Notas proximo jogo`
 
 ## Pós-créditos: O Despertar**  
 
@@ -200,3 +215,15 @@ Dias depois, Thorin está jogando Runico em um campeonato junto da Filena. Seu p
 (Colocar mais cenas pós creditos de cada um dos personagens. A cena pós credito é somente uma imagem)
 
 Thorin vai dormir em seu quarto. A cena esvanece para branco, fica somente a cama dele ainda colorida, a camera se aproxima de Thorin e então ele abre um olho. Em um contraplano, no horizonte, a silhueta do verdadeiro **Profeta das Sombras** o observa e um exército imenso de Ignotos aparece na frente dele. Um único sussurro dissonante é ouvido. **Corte seco.**
+
+## Notas proximo jogo
+
+Esse jogo é o primeiro de uma trilogia de jogos.
+[A História completa dos 3 jogos](historia-de-daratrine.md)
+
+No proximo jogo vai contecer:
+
+- Um dos guardas vai virar fantasma e o Thorin vai passar o jogo todo conversando com ele.
+- Gildrat vai cair de qualquer jeito nos proximos jogos, mesmo que ela seja salva nesse jogo.
+- Thorin vai fugir de Gildrat para pedir ajuda para os Elfos no proximo jogo
+- No proximo jogo Thorin vai ser julgado pelo concelho dos Anões por ter usado Magia.
