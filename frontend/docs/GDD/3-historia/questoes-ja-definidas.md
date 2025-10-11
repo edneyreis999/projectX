@@ -2,7 +2,7 @@
 
 Esse documento trás em detalhes como vai funcionar a dinamica das ultimas missões do jogo após o retorno da cena [Cena 11](timeline-historia-jogo-v5.md#11---gildrat-em-alarme-escolhas-e-consequências). Respeitando uma experiência profunda em narrativa emergente, worldbuilding sistêmico e estrutura convergente (final definido).
 
-## Fase 1 – Preparativos em Gildrat
+## Preparativos em Gildrat
 
 ### Introdução da fase na Noite da História com Rheed
 
@@ -25,7 +25,6 @@ Preciso pensar em mais atividades que o jogador pode fazer nessa fase 1.
 Tem por exemplo o Kilin e o Balastrus que podem ser salvos em Melios.
 Tem alguma mini quest com Thordan?
 Tem alguma miniquest com Filena? Talvez envolve-la na quest para recrutar o time de futebol runico?
-Qual impacto do "Sigmetal destino"?
 Tem Alguma miniquest com os Corvos? Qual? Qual efeito nas fases seguintes?
 
 ### Impacto das decisões no gameplay
@@ -35,7 +34,7 @@ As escolhas determinam quais ajudas o jogador recebe nas fases seguintes e qual 
 As seguintes variáveis inteiras serão usadas para compor o Índice de Preparação (`v_IP`), que medirá a prontidão e a força de Gildrat contra os Ignotos:
 
 | Nome da Variável          | Domínio | Definição Diegética                                                                      | Condições de Mudança                                                                    | Efeitos Sistêmicos                                                                      |
-| ------------------------- | ------- | ---------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------
+| ------------------------- | ------- | ---------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | -
 | `v_sigmetal_destino`      | 0–3     | O destino do primeiro Sigmetal encontrado. Reflete a prioridade do jogador.              | Definido na Cena 7c.                                                                    | Determina a disponibilidade de um recurso/arma de Sigmetal.         |
 | `v_reforco_sigmetal`      | 0–1     | Dar Sigmetal para os anões ferreiros criar armas para os anões              | O Jogador deve pegar um carregamento de Sigmetal na sala que o Cristaleão revelou depois de ser derrotado                                                                    | Equipa todos os exercitos com arma de Sigmetal         |
 | `v_influencia_corvos`     | 0–5     | O nível de confiança e colaboração com os Corvos.                                        | Aumenta ao ajuda-los sair de Melios sem confronto.                   | Aumenta o exercito da milicia civil              |
@@ -56,16 +55,18 @@ A história corta para Rheed, que introduz a primeira fase (Fase 1 – Execuçã
 
 ---
 
-## Fase 1 – Execução das Armadilhas
+## Defender Gildrat
 
-### Introdução da Fase 1 na Noite da História com Rheed
+### Fase 1 – Execução das Armadilhas
+
+#### Introdução da Fase 1 na Noite da História com Rheed
 
 Rheed conta a história que os Ignotos marcharam até a frente de Gildrat e estavam esperando a hora de atacar. O conselho se reúne para executar o plano das armadilhas. depois corta para cena de gameplay.
 
 Notas de brainstorm:
 Eu preciso de uma cena de filme, serie ou jogo para me inspirar a descrever essa cena.
 
-### Gameplay Fase 1
+#### Gameplay Fase 1
 
 - Diálogo no **Conselho de Gildrat**:
   - Damburr pergunta sobre as armadilhas.
@@ -84,7 +85,7 @@ Eu preciso de uma cena de filme, serie ou jogo para me inspirar a descrever essa
   - Diálogo cômico entre a isca e o General Ignoto.
   - Os 7 Ignotos gigantes corre atrás da isca em direção às armadilhas.
 
-### Impacto das decisões da Fase 1 no gameplay
+#### Impacto das decisões da Fase 1 no gameplay
 
 | Isca escolhida                    | Resultado das armadilhas |
 |----------------------------------|---------------------------|
@@ -95,7 +96,7 @@ Esses resultados influenciam a fase 2:
 
 - Próxima fase vai iniciar com 7 blocos de tropa de ignoto que o jogador vai ter que derrotar Antes de poder lutar com o Boss, que é o General Ignoto Mas se as armadilhas funcionarem, então esse número cai para 5 combates.
 
-### Desfecho da Fase 1
+#### Desfecho da Fase 1
 
 - Isca corre de volta ao castelo.  
 - Armadilhas são ativadas.  
@@ -105,9 +106,9 @@ Esses resultados influenciam a fase 2:
 
 ---
 
-## Fase 2 – Execução dos Exércitos
+### Fase 2 – Execução dos Exércitos
 
-### Introdução da Fase 2 na Noite da História com Rheed
+#### Introdução da Fase 2 na Noite da História com Rheed
 
 Após as armadilhas, e a intervenção do General Ignoto, Rheed narra o início da batalha principal entre os exércitos de Gildrat e os Ignotos.
 
@@ -116,7 +117,7 @@ Ao final o jogador tem que escolher qual vai ser os 4 jogadores que ele vai leva
 Nota de brainstorm:
 O que o Rheed pode falar aqui para dar inicio a cena de gameplay? O que ele falaria para instigar o jogador a jogar a proxima fase?
 
-### Gameplay Fase 2
+#### Gameplay Fase 2
 
 - Retorno à visão topdown.  
 - Portões de Gildrat se abrem e **os exércitos saem para lutar**:
@@ -132,7 +133,7 @@ A batalha com cada um dos grupos serão divida em 2 fases.
 A primera fase são só lacaios Ignotos.
 A segunda fase são lacaios + Ignoto gante
 
-### Impacto das decisões no gameplay da Fase 2
+#### Impacto das decisões no gameplay da Fase 2
 
 Variações já definidas:
 
@@ -151,7 +152,7 @@ Algumas variaveis aferam o dano de todos os exercitos:
 Notas de Brainstorm:
 Como calcular o dano das invocações?
 
-### Desfecho da Fase 2
+#### Desfecho da Fase 2
 
 Assim que o time de Thorin derrota o **General Ignoto**, Aparece uma cutscene onde o **General Ignoto** destroi, com a armadilha de dinamite que não detonou, toda a frente da fortaleza de Gildrat e ordena que todos os ignotos entrem no castelo. Thorin nessa hora é forçado a usar seu poder e invocar um espírito que invoca meteoros para acabar com o ataque.
 
@@ -164,18 +165,18 @@ Pode ter alguma variação onde é o próprio Thorin que destroi a frente de Gil
 
 ---
 
-## Fase 3 – Último Boss
+### Fase 3 – Último Boss
 
-### Introdução da Fase 3 se na Noite da História com Rheed
+#### Introdução da Fase 3 se na Noite da História com Rheed
 
 Rheed narra o funcionamento do [Reino da Mana](../2-world-building/magia.md#reino-da-mana-sonhos--espíritos) e da [Barreira](../2-world-building/magia.md#barreira-entre-mundos), em tom de história de terror.
 
-### Gameplay Fase 3
+#### Gameplay Fase 3
 
 - Cena retorna ao **Distrito Comercial Externo**.  No formato topdown com diálogos.
 - Luta por turno contra o ultimo boss.
 
-### Desfecho da fase
+#### Desfecho da fase
 
 Thorin desmaia depois de usar seu poder onírico.
 Devido a guerra e a destruição, a Barreira está muito fina no Distrito Comercial Externo. O Profeta das sombras aproveita esse momento para possuir Thorin.
@@ -190,7 +191,8 @@ Com a Casca dissipada, Thorin acorda. A cena termina em um momento de lamento si
 
 (Dialogo depois de derrotar o boss e salvar Thorin ainda está a definir.)
 
-**Pós-créditos: O Despertar**  
+## Pós-créditos: O Despertar**  
+
 Ilustrações + Texto mostram que
 Dias depois, Thorin está jogando Runico em um campeonato junto da Filena. Seu pai está na torcida.
 (O Fantasma de Mhordred aparece na torcida, mas é um easteregg)
