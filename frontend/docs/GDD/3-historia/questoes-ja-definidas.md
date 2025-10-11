@@ -160,13 +160,15 @@ Assim que o time de Thorin derrota o **General Ignoto**, Aparece uma cutscene on
 Notas de brainstorm:
 Mhordred precisa morrer para salvar alguém ou alguma coisa (Talvez colocar a decisão de quem ele vai salvar fica a escolha do jogador)
 
+Pode ter alguma variação onde é o próprio Thorin que destroi a frente de Gildrat com os meteoros.
+
 ---
 
 ## Fase 3 – Último Boss
 
 ### Introdução da Fase 3 se na Noite da História com Rheed
 
-Rheed narra o funcionamento do **Reino da Mana** e da **Barreira**, em tom de história de terror.
+Rheed narra o funcionamento do [Reino da Mana](../2-world-building/magia.md#reino-da-mana-sonhos--espíritos) e da [Barreira](../2-world-building/magia.md#barreira-entre-mundos), em tom de história de terror.
 
 ### Gameplay Fase 3
 
@@ -175,9 +177,13 @@ Rheed narra o funcionamento do **Reino da Mana** e da **Barreira**, em tom de hi
 
 ### Desfecho da fase
 
-O grupo de Thorin tenta acordá-lo após o uso de seu poder onírico.
-Alguns dialogos, animações e etc.
-Após o Dialogo, Thorin se transforma no ultimo boss. (Thorin possuido pelo poder do Profeta das Sombras) Começa a batalha final.
+Thorin desmaia depois de usar seu poder onírico.
+Devido a guerra e a destruição, a Barreira está muito fina no Distrito Comercial Externo. O Profeta das sombras aproveita esse momento para possuir Thorin.
+
+Thorin se transforma no ultimo boss. Thorin possuido pelo poder do Profeta das Sombras Começa a batalha final.
+
+Atraído pela mana, o **Profeta das Sombras** possui parcialmente Thorin, criando uma **Casca onírica** — um chefe colossal de vidro-sombra com Thorin adormecido em seu centro. O objetivo da luta é purificar Thorin sem matá-lo.
+
 O jogo termina com o grupo salvando Thorin do boss casca.
 
 Com a Casca dissipada, Thorin acorda. A cena termina em um momento de lamento silencioso, com Tordan observando de longe e Filena ao lado do herói.
