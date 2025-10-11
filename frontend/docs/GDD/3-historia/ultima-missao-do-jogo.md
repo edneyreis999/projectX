@@ -23,10 +23,6 @@ A fase se encerra quando o jogador dorme, acionando a cutscene do segundo sol su
 
 Notas para brainstorm:
 Preciso pensar em mais atividades que o jogador pode fazer nessa fase 1.
-Tem por exemplo o Kilin e o Balastrus que podem ser salvos em Melios.
-Tem alguma mini quest com Thordan?
-Tem alguma miniquest com Filena? Talvez envolve-la na quest para recrutar o time de futebol runico?
-Tem Alguma miniquest com os Corvos? Qual? Qual efeito nas fases seguintes?
 
 ### Impacto das decisões no gameplay
 
