@@ -2,13 +2,13 @@
 
 Esse documento trás em detalhes como vai funcionar a dinamica das ultimas missões do jogo após o retorno da cena [Cena 11](timeline-historia-jogo-v5.md#11---gildrat-em-alarme-escolhas-e-consequências). Respeitando uma experiência profunda em [narrativa sistemica](../../../../zord/pesquisas/narrativa-sistemica.md), worldbuilding sistêmico e estrutura convergente (final definido).
 
-## Preparativos em Gildrat
+## Preparativos em [Gildrat](../2-world-building/racas/anoes/gildrat-v2.md)
 
-Após retornar de Melios, Thorin traz a notícia de que os Ignotos estão prestes a atacar Gildrat e comunica seu pai, Thordan.
+Após retornar de Melios, Thorin traz a notícia de que os [Ignotos](../2-world-building/racas/raca-ignotos.md) estão prestes a atacar Gildrat e comunica seu pai, Thordan.
 A fase de preparação tem início quando a missão “Quando o Segundo Sol Chegar” é ativada.
 
 A partir desse momento, o jogador deve organizar as defesas da cidade utilizando os recursos reunidos durante o jogo.
-A fase se encerra quando o jogador dorme, acionando a cutscene do segundo sol surgindo no céu.
+A fase se encerra quando o jogador dorme ([Casa da Família Forja Prata](../2-world-building/locais/casa-da-família-forjaprata.md)), acionando a cutscene do segundo sol surgindo no céu.
 
 ### Gameplay
 
@@ -16,7 +16,7 @@ A fase se encerra quando o jogador dorme, acionando a cutscene do segundo sol su
   - [Ajudar pai da Filena em Kravens](timeline-historia-jogo-v5.md#13---kravens-aviso-e-a-força-do-sigmetal)
   - [Resgatar Kilin, Tharok e Balastrus](timeline-historia-jogo-v5.md#12---melios-resgate-e-o-eco-do-selo)
   - Organizar defesa de Gildrat.
-- Missão: **“Defender Gildrat”** é ativada após o jogador dormir.  
+- Missão: [“Defender Gildrat”](timeline-historia-jogo-v5.md#14---defender-gildrat-clímax) é ativada após o jogador dormir.  
   - Antes de dormir, vai ter um save obrigatório. E o save é desabilitado durante a missão **“Defender Gildrat”**.
 - Atividades:
   - [Quando o Segundo Sol Chegar](../../Quests/10-quando-segundo-sol-chegar/quando-segundo-sol-chegar.NSD.fluxo-cenas.md)
@@ -33,10 +33,10 @@ As seguintes variáveis inteiras serão usadas para compor o Índice de Prepara�
 | Nome da Variável          | Domínio | Definição Diegética                                                                      | Condições de Mudança                                                                    | Efeitos Sistêmicos                                                                      |
 | ------------------------- | ------- | ---------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | -
 | `v_sigmetal_destino`      | 0–3     | O destino do primeiro Sigmetal encontrado. Reflete a prioridade do jogador.              | Definido na Cena 7c.                                                                    | Determina a disponibilidade de um recurso/arma de Sigmetal.         |
-| `v_reforco_sigmetal`      | 0–1     | Dar Sigmetal para os anões ferreiros criar armas para os anões              | O Jogador deve pegar um carregamento de Sigmetal na sala que o Cristaleão revelou depois de ser derrotado                                                                    | Equipa todos os exercitos com arma de Sigmetal         |
-| `v_influencia_corvos`     | 0–5     | O nível de confiança e colaboração com os Corvos.                                        | Aumenta ao ajuda-los sair de Melios sem confronto.                   | Aumenta o exercito da milicia civil              |
-| `v_resgate_melios`        | 0–3     | O sucesso da operação de resgate em Melios.                                              | 0: Ninguém salvo. 1: Balastrus salvo. 2: Kilin Salvo 4: Tharok salvo. 5: Todos salvos.                  | Afeta a moral da Guarda de Ferro e a disponibilidade de escolha dos NPCs no time do Thorin na batalha final.                     |
-| `v_resgate_kravens`        | 0–2     | O sucesso da operação de resgate em Kravens.                                              | 0: Ninguém salvo. 1: Grupo de rebelde salvo. 2: Grupos de rebeldes                  | Afeta a quantidade do exercito de rebeldes.|
+| `v_reforco_sigmetal`      | 0–1     | Dar Sigmetal para os anões ferreiros criar armas para os anões              | O Jogador deve pegar um carregamento de Sigmetal na sala que o [Cristaleão](timeline-historia-jogo-v5.md#6---minerador-aprendiz-a-queda-e-o-sigmetal) revelou depois de ser derrotado                                                                    | Equipa todos os exercitos com arma de Sigmetal         |
+| `v_influencia_corvos`     | 0–5     | O nível de confiança e colaboração com os [Corvos](timeline-historia-jogo-v5.md#9---os-corvos-de-melios-o-selo-e-a-canção).                                        | Aumenta ao ajuda-los sair de [Melios](timeline-historia-jogo-v5.md#10---quebra-do-selo-em-melios-a-liberação-dos-ignotos) sem confronto.                   | Aumenta o exercito da milicia civil              |
+| `v_resgate_melios`        | 0–3     | O sucesso da operação de resgate em [Melios](timeline-historia-jogo-v5.md#10---quebra-do-selo-em-melios-a-liberação-dos-ignotos).                                              | 0: Ninguém salvo. 1: Balastrus salvo. 2: Kilin Salvo 4: Tharok salvo. 5: Todos salvos.                  | Afeta a moral da Guarda de Ferro e a disponibilidade de escolha dos NPCs no time do Thorin na batalha final.                     |
+| `v_resgate_kravens`        | 0–2     | O sucesso da operação de resgate em [Kravens](timeline-historia-jogo-v5.md#13---kravens-aviso-e-a-força-do-sigmetal).                                              | 0: Ninguém salvo. 1: Grupo de rebelde salvo. 2: Grupos de rebeldes                  | Afeta a quantidade do exercito de rebeldes.|
 | `v_treinamento_rebeldes`        | 0–2     | O sucesso da operação de resgate em Kravens.                                              | 0: Sem treinamento. 1: Filena **OU** Mhordead treinam rebeldes. 2: Filena **E** Mhordred treinam os rebeldes                  | Afeta a qualidade do exercito de rebeldes.|
 | `v_pai_filena`        | 0–1     | O sucesso da operação de resgatar o pai da Filena em Kravens.                                              | 0: Sem resgate. 1: Pai da Filne foi resgatado.                 | Afeta a moral do exercito de rebeldes.|
 | `v_moral_gildrat`         | 0–9     | A moral e a esperança dos cidadãos de Gildrat.                                           | Aumenta com atos heroicos e comunicação; diminui com pânico e perdas.                   | Modula a eficácia de milícias corvos e a atmosfera da cidade.                           |
@@ -125,9 +125,9 @@ O que o Rheed pode falar aqui para dar inicio a cena de gameplay? O que ele fala
 - Portões de Gildrat se abrem e **os exércitos saem para lutar**:
   - **Exército dos Guardas de Ferro (centro)** — líder Thordan.  
   - **Exército dos Rebeldes (direita)** — líder pai da Filena (se salvo).  
-  - **Exército dos Corvos (esqurda)** — líder dos corvos (se recrutado)
+  - **Exército dos Corvos (esqurda)** — líder dos Corvos (se recrutado)
   - **Grupo de Thorin (logo atrás).**
-- Diálogo entre o **General Ignoto** e **Thordan**.  
+- Diálogo entre o **[General Ignoto](../2-world-building/racas/raca-ignotos.md)** e **Thordan**.  
 - Após o diálogo, um video do confronto: ambos os exércitos se enfrentando, seguido de um clarão.
 - Gameplay: o jogador deve derrotar **os Ignotos gigantes e seus lacaios** e, ao final, o **General Ignoto**.
 
@@ -141,7 +141,7 @@ Variações já definidas:
 
 - Para cada uma das batalhas o jogador ganha uma habilidade de "invocar exercito" que da dano em area em todos os inimigos.
 - Os exercitos são:
-  - Exército dos Guardas de Ferro (v_preparo_militar, v_resgate_melios)
+- [Exército dos Guardas de Ferro](../2-world-building/racas/anoes/gildrat-v2.md#força-militar) (v_preparo_militar, v_resgate_melios)
   - Exército dos Rebeldes (v_resgate_kravens, v_treinamento_rebeldes, v_pai_filena)
   - Exército dos Corvos (v_influencia_corvos)
 
@@ -175,7 +175,7 @@ Rheed narra o funcionamento do [Reino da Mana](../2-world-building/magia.md#rein
 
 #### Gameplay Fase 3
 
-- Cena retorna ao **Distrito Comercial Externo**.  No formato topdown com diálogos.
+- Cena retorna ao [**Distrito Comercial Externo**](../2-world-building/racas/anoes/gildrat-v2.md#distritos).  No formato topdown com diálogos.
 - Luta por turno contra o ultimo boss.
 
 #### Desfecho da fase
@@ -183,7 +183,7 @@ Rheed narra o funcionamento do [Reino da Mana](../2-world-building/magia.md#rein
 Thorin desmaia depois de usar seu poder onírico.
 Devido a guerra e a destruição, a Barreira está muito fina no Distrito Comercial Externo. O Profeta das sombras aproveita esse momento para possuir Thorin.
 
-Thorin se transforma no ultimo boss. Thorin possuido pelo poder do Profeta das Sombras Começa a batalha final.
+Thorin se transforma no ultimo boss. Thorin possuido pelo poder do [Profeta das Sombras](../2-world-building/magia.md#proibições-e-tabus) Começa a batalha final.
 
 Atraído pela mana, o **Profeta das Sombras** possui parcialmente Thorin, criando uma **Casca onírica** — um chefe colossal de vidro-sombra com Thorin adormecido em seu centro. O objetivo da luta é purificar Thorin sem matá-lo.
 
