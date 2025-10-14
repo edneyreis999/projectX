@@ -96,7 +96,7 @@ Quest: Fim de Jogo
 | 3 | Choque na Cozinha      | Tordan condena futebol → Diálogo ramificado → Defesa do sonho → Desdém do pai               | Thorin confronta o pai sobre o sonho de jogar futebol rúnico e o preconceito de classe. |
 | 4 | Busca do Troféu        | Objetivo “lembrar Tordan” → Sáparo zomba → Thorin encontra troféu juvenil do pai → Reflexão | Thorin busca um troféu antigo para lembrar Tordan de seus próprios sonhos.              |
 | 5 | Troféu Desprezado      | Entrega do troféu → Retrato reflete nostalgia → Desprezo público → Humilhação               | Tordan despreza seu próprio troféu e o sonho de Thorin, aprofundando o conflito.        |
-| 6 | Sentença às Minas      | Tordan impõe trabalho → Saída brusca → Porta trancada → Corredor livre                      | Tordan obriga Thorin a trabalhar nas minas sob Balastrus, selando a ordem.              |
+| 6 | Sentença às Minas      | Recusa à Guarda → Tordan impõe trabalho → Saída brusca → Porta trancada → Corredor livre    | Thorin declara que não quer entrar para a Guarda; Tordan responde que ele “vai trabalhar como minerador”, selando a ordem sob Balastrus. |
 | 7 | Silêncio no Quarto     | Thorin entra no quarto → Pensamento único → Dorme                                           | Thorin pondera seus sonhos antes de adormecer, encerrando a missão.                     |
 
 #### Beats por Cena
@@ -158,7 +158,7 @@ Quest: Fim de Jogo
 | # | Nome do Beat                | Premissa resumida                                                                                                                                    | Tipo |
 | - | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
 | 1 | **Levantada de Autoridade** | Tordan ergue-se da cadeira, impondo presença sobre Thorin.                                                                                           | 🎬   |
-| 2 | **Ordem Irrevogável**       | Portrait de Tordan mostra frieza enquanto decreta: “Amanhã ao amanhecer apresentar-se-á a Balastrus na taverna. Aprendiz de minerador. Ponto final.” | 🎬   |
+| 2 | **Ordem Irrevogável**       | Thorin encara e solta: “Não quero entrar para a Guarda.” O portrait de Tordan endurece e ele decreta: “Então você vai trabalhar como minerador. Amanhã ao amanhecer apresentar-se-á a Balastrus na taverna. Aprendiz de minerador. Ponto final.” | 🎬   |
 | 3 | **Saída & Porta Fechada**   | Tordan vira de costas, dá dois - três passos; quick fade-out/fade-in revela-o já dentro do próprio quarto, porta sendo trancada.                     | 🎬   |
 | 4 | **Corredor Livre**          | Cutscene termina; controle volta ao jogador, HUD: “Volte para seu quarto e descanse”.                                                                | 🎮   |
 | 5 | **Caminho Solitário**       | Jogador conduz Thorin pelo corredor vazio até o quarto dele.                                                                                         | 🎮   |
