@@ -200,8 +200,19 @@ Quest: A Voz do Conselho
 | 1  | Chegada à Clareira        | O grupo alcança Melios e encontra os Corvos bloqueando a entrada da mina.                     | 🎬       |
 | 2  | Conflito Verbal           | Balastrus exige passagem; os Corvos explicam sobre o bloco misterioso e se recusam a sair.    | 🎬       |
 | 3  | Escalada da Tensão        | O diálogo se intensifica; Thorin pode escolher apoiar Balastrus ou tentar apaziguar os Corvos. | 🎮       |
-| 4  | Início da Batalha         | Os Corvos se revoltam; inicia-se a boss fight contra o grupo de anões.                        | 🎮       |
+| 4  | Início da Batalha         | Os Corvos se revoltam; inicia-se a boss fight contra o grupo de anões. Regra: se Filena estiver na party, ela não participa; a participação de Thorin é definida pela escolha do jogador (pode lutar ou permanecer fora). | 🎮       |
 | 5  | Vitória do Grupo          | Após a batalha, os Corvos derrotados revelam detalhes do bloco e decidem abandonar o local.   | 🎬       |
+
+**Decisão do Jogador:**
+
+- Apoiar Balastrus (pressionar pela passagem).
+- Não se envolver
+A tensão escala para combate independentemente da postura adotada.
+
+**Participação na Batalha (regra):**  
+
+- Se **Filena** estiver na party do jogador, ela **não participa** do combate contra os Corvos (permanece fora da luta).  
+- A participação de **Thorin** é decidida pelo jogador no momento da escolha acima: ele pode entrar no combate ou permanecer fora, conforme a opção tomada.
 
 ##### Cena 8 – Conclusão
 

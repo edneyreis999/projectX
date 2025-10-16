@@ -1,4 +1,4 @@
-# Timeline do Jogo - Versão 4
+# Timeline do Jogo - Versão 5
 
 *Este documento detalha a sequência de eventos principal do jogo, integrando informações dos documentos de quest e notas de design para criar uma narrativa coesa e aprofundada.*
 
@@ -91,7 +91,7 @@ As escolhas de tom aprofundam o conflito, mas a conclusão é a mesma: a tensão
 Durante a discução, Thorin busca um dos antigos troféus de futebol runico de Thordan. Ao encontrá-lo, Thorin tenta tocar a memória do pai contida no objeto, mas é humilhado por Tordan, que chama o troféu de "sucata brilhante".
 
 **Cena 3d – A Sentença**  
-Como punição pela desonra e para forçá-lo a um caminho que considera digno, Tordan decreta: ao amanhecer, Thorin deverá se apresentar a **Balastrus**, na taverna, para se tornar um aprendiz de minerador. A porta se fecha. No corredor, **Sáparo** surge para zombar. Thorin sobe para seu quarto em silêncio.
+No auge do atrito, Thorin encara o pai e crava: “Não quero entrar para a Guarda.” A resposta de Tordan vem curta e irrecorrível, como ordem de quartel: “Então você vai trabalhar como minerador.” Ao amanhecer, deverá se apresentar a **Balastrus**, na taverna, para iniciar como aprendiz. A porta se fecha; no corredor, **Sáparo** surge para zombar. Thorin sobe para o quarto em silêncio, com a certeza amarga de que, mais cedo do que gostaria, terá de decidir o que reivindicar diante de quem manda.
 
 ### 4 - É Hora de Crescer: Fuga Frustrada
 
@@ -110,6 +110,13 @@ Ao chegarem no Distrito Comercial, Tharok aponta que a roupa de jogo de Thorin �
 **Cena 4e – Tutorial na Loja de Armaduras**  
 Em uma cena cômica com o vendedor, o jogador aprende as mecânicas de compra e equipamento de itens. Sem dinheiro, Thorin não pode pagar pela armadura. A contragosto, **Mhordred** paga pela peça. Thorin equipa sua primeira armadura.
 
+**Decisão do Jogador:**
+
+- "Determinado" (insiste em não comprar agora).
+- "Esquivar (de comprar)" (tenta sair pela tangente).
+- "Fugir" (tenta escapar da compra).
+As opções alteram apenas falas e tom; o resultado é o mesmo: Mhordred paga e Thorin deve equipar a armadura.
+
 **Cena 4f – Última Parada: A Taverna**  
 Já devidamente trajado, Thorin segue sozinho para a taverna. Ao entrar, a próxima cena se inicia.
 
@@ -117,6 +124,12 @@ Já devidamente trajado, Thorin segue sozinho para a taverna. Ao entrar, a próx
 
 **Cena 5a – Contrato na Taverna**  
 Dentro da taverna, **Balastrus** entrega a Thorin a papelada de seu contrato como aprendiz. A primeira expedição será para a mina de **Kravens**. Thorin assina.
+
+**Decisão do Jogador:**
+
+- Hesitar antes de assinar.
+- Assinar imediatamente.
+Muda apenas diálogos; em ambos os casos o contrato é assinado.
 
 **Cena 5b – Caminho ao Ponto de Encontro**  
 Thorin viaja do Distrito Comercial até a **Estrada do Cão-Luar**. O clima esfria à medida que a serra se aproxima.
@@ -163,7 +176,7 @@ A seriedade da missão é quebrada por uma gag cômica: Kilin, Mhordred e, por �
 Durante a coleta, ao minerar o nono Kraven, o chão sob os pés de Thorin cede, e ele despenca para um andar inferior e esquecido da mina.
 
 **Cena 6e – O Cristaleão, Primeiro Chefe**  
-No andar desconhecido, uma criatura feita de cristal, o **Cristaleão**, desperta de uma parede. Esta é a primeira batalha de chefe do jogo. Ao ser derrotado, o monstro dropa um minério raro e desconhecido: **Sigmetal**.
+No andar desconhecido, uma criatura feita de cristal, o **Cristaleão**, desperta de uma parede. Esta é a primeira batalha de chefe do jogo. Ao ser derrotado, o monstro dropa um minério raro e desconhecido: **Sigmetal** e revela uma passagem oculta adiante, bloqueada por uma pedra gigante.
 
 **Cena 6f – O Dilema do Sigmetal**  
 Com 9 Kravens e 1 Sigmetal no inventário, o jogador precisa decidir o que fazer.
@@ -177,6 +190,12 @@ Se o Sigmetal for entregue a Tusk ainda em Kravens, a rota de destino do minéri
 
 **Cena 7a – Debate e Partida Forçada**  
 De volta à clareira, os batedores avisam sobre uma forte tempestade se aproximando. Kilin sugere prudência e recomenda esperar, mas Tusk, focado nos prazos, exige a partida imediata, ameaçando cortar o pagamento de quem ficar. O grupo parte sob uma forte nevasca. *Nota: um pequeno grupo de anões, incluindo o pai de Filena, discorda de Tusk e decide permanecer em Kravens, aceitando o risco.*
+
+**Decisão do Jogador:**
+
+- Apoiar Kilin (sugerir esperar a tempestade passar).
+- Apoiar Tusk (insistir na partida imediata).
+A escolha afeta apenas falas e reações; o grupo parte assim mesmo.
 
 **Cena 7b – Travessia Sob Nevasca**  
 A viagem de volta a Gildrat é perigosa. Os inimigos no mapa-múndi estão mais fortes devido à tempestade. O jogador pode buscar abrigo em cavernas laterais para evitar combates e encontrar pequenos eventos.
@@ -219,8 +238,16 @@ Na clareira, o grupo encontra o **chefe dos Corvos**. O ambiente é tenso. Há s
 **Cena 9c – O Impasse e a Revelação**  
 Os Corvos explicam o motivo da interrupção: eles **ouviram a canção dos ancestrais** e encontraram um grande **bloco de ferro coberto de runas** — um **selo** que não deve ser profanado. Eles temem que Damburr, se souber da descoberta, queira destruir o selo. Para Balastrus, eles estão apenas atrapalhando o progresso; para os rebeldes e para a mãe de Thorin (em suas visões), eles estão protegendo a história anã.
 
+**Decisão do Jogador:**
+
+- Apoiar Balastrus (pressionar pela passagem).
+- Não se envolver
+A tensão escala para combate independentemente da postura adotada.
+A participação de **Thorin** é decidida pelo jogador no momento da escolha acima: ele pode entrar no combate ou permanecer fora, conforme a opção tomada.
+
 **Cena 9d – A Batalha Contra os Corvos**  
 Balastrus se recusa a recuar, e o impasse escala para um combate. Os Corvos lutam como uma "boss fight", usando suas ferramentas de mineração como armas.
+Se **Filena** estiver na party do jogador, ela **não participa** do combate na Cena 9d (permanece fora da luta).  
 
 **Cena 9e – Retirada e Presságio**  
 Derrotados, os Corvos se retiram, mas deixam um último aviso: **não mexam no selo**. A expedição monta acampamento, decidindo entrar em Melios ao amanhecer.
@@ -232,9 +259,12 @@ Na câmara do selo, Balastrus revela sua nova invenção: **pólvora e dinamites
 
 **Cena 10b – Euforia da Riqueza**  
 A explosão rompe o selo rúnico, revelando um salão repleto de minérios raros. Balastrus e Tusk entram eufóricos, projetando a fortuna que irão extrair. No centro, uma grande rocha parece trancar outro compartimento. Balastrus entrega a Thorin mais explosivos para abrir caminho. Por um momento, a missão parece um sucesso absoluto.
+*Nota: Esses explosivos serão usados mais adiante para abrir a passagem revelada pelo Cristaleão (Cena 6e), possibilitando a virada com Sigmetal em Kravens (Cena 13d).*
 
 **Cena 10c – A Névoa e o Presságio**  
-A euforia dura pouco. Uma névoa densa começa a se espalhar pelo salão. Um sussurro grave e dissonante, que parece falhar e se dessincronizar, ecoa da rocha. Um dos escavadores cambaleia e morre subitamente. A sensação de vitória se transforma em uma de violação.
+A euforia dura pouco. Uma névoa densa começa a se espalhar pelo salão. Thorin desfalece e é lançado ao **Reino da Mana**. Escondido atrás de uma pedra, ele testemunha o **Profeta das Sombras** conversando com um anão cuja identidade permanece oculta — vê-se apenas a silhueta. O diálogo revela a **ganância do anão por Ekios** e o Profeta o parabeniza: o plano para libertá-lo, a ele e aos **Ignotos**, funcionou. O próximo passo é claro: **destruir Gildrat** assim que **Vitasolis** — o segundo sol — surgir no céu, para que o astro presencie a vingança dos Ignotos.  
+Thorin se move e faz um ruído. O Profeta para, volta-se para a pedra e sussurra, dissonante: "**Quem está ai?**". Em um gesto, despedaça a rocha, expondo Thorin, e avança para atacá-lo — quando, de súbito, **Filena o sacode**, despertando-o no mundo físico, em meio à retirada.
+Um sussurro grave e dissonante, que parece falhar e se dessincronizar, ecoa da rocha. Um dos escavadores cambaleia e morre subitamente. A sensação de vitória se transforma em uma de violação.
 
 **Cena 10d – A Primeira Aparição dos Ignotos**  
 Sombras se movem na névoa. Criaturas desconhecidas, os **Ignotos**, emergem e bloqueiam a saída, com um mini-chefe guardando a passagem.
@@ -250,22 +280,29 @@ Thorin, Filena, Mhordred e Tusk chegam a Gildrat e a encontram em **estado de al
 
 - **Seguir Filena** para sua casa.
 - **Apresentar-se ao Conselho** com Mhordred e Tusk.
+- **Quando o segundo sol chegar** (desbloqueia preparação para o ataque dos Ignotos)
+
+Essa escolha abre o ramo Filena (Aviso em Kravens) ou o ramo Conselho (Resgate em Melios).
 
 **Cena 11b – Ramo Filena: A Descoberta**  
 Se seguir Filena, Thorin descobre que o **pai dela** não está em casa. Ele fazia parte do grupo que permaneceu em **Kravens** durante a nevasca, por discordar de Tusk. Isso libera a missão **"Aviso em Kravens"**.
 
 **Cena 11c – Ramo Conselho: A Reivindicação**  
-Se for ao Conselho, Thorin testemunha Tordan montando uma tropa de elite para resgatar Kilin em Melios. Thorin se voluntaria, mas Tordan o rejeita, afirmando que apenas **guardas imperiais** têm esse direito. Em um ato de desafio e compromisso, Thorin declara publicamente:
+Se for ao Conselho, Thorin testemunha o depoimento de Tusk sobre o ocorrido em Melios. no meio do depoimento, Thordan na sala do trono e começa montar uma tropa de elite para resgatar Kilin em Melios. Thorin se voluntaria, mas Tordan o rejeita, afirmando que apenas **guardas imperiais** têm esse direito. Em um ato de desafio e compromisso, Thorin declara publicamente:
 > “Sou filho do General Tordan Forja-Prata. **Reivindico** meu dever de alistar-me na **Guarda de Ferro**.”
-A declaração choca o salão e força Tordan a aceitá-lo. Isso libera a missão **"Resgate em Melios"**.
+A declaração choca o salão e força Tordan a aceitá-lo. Isso libera a missão **"Resgate em Melios"**.  
+Thordan se retira do salão depois do fim da cena e vai para casa.
 
-**Cena 11d – Preparação**  
-O arco narrativo só avança quando ambas as missões ("Aviso em Kravens" e "Resgate em Melios") forem concluídas. O jogador pode se preparar em Gildrat, mas os suprimentos são limitados devido ao estado de alerta.
+**Cena 11d – Quando o Segundo Sol Chegar**  
+
+A missão começa se **Thorin decide voltar para casa** ao chegar em **Gildrat**. Ele conversa com o pai e pode **avisar Tordan** sobre o presságio: os **Ignotos atacarão Gildrat no primeiro dia em que Vitasolis surgir no céu**. Após o diálogo, Thorin fica **liberado para preparar os recursos para o confronto**, o que **conclui a missão "Quando o Segundo Sol Chegar"**.  
+
+Concluir essa missão **destrava o avanço da história principal**. As missões **"Aviso em Kravens"** e **"Resgate em Melios"** tornam-se não mais possíveis de ser concluidas antes do ataque dos Ignotos — o arco vai prosseguir para cena 14 Defender Gildrat: Clímax.  
 
 ### 12 - Melios: Resgate e o Eco do Selo
 
 **Cena 12a – Retomada do Acesso**  
-Como um Guarda de Ferro, Thorin lidera uma equipe para reabrir a passagem para Melios. Os rastros confirmam que Kilin e Tharok estão vivos, contendo o avanço dos Ignotos.
+Como um Guarda de Ferro, Thorin lidera uma equipe para reabrir a passagem para Melios. Os rastros confirmam que Kilin, Tharok e Balastrus estão vivos, contendo o avanço dos Ignotos.
 
 **Cena 12b – Retirada Tática**  
 O grupo localiza Kilin em uma posição defensiva e o extrai com sucesso, fechando rotas secundárias para atrasar os inimigos.
@@ -288,37 +325,26 @@ O grupo abre um corredor defensivo para evacuar os trabalhadores, alternando ent
 Eles encontram o pai de Filena, um anão rude e avesso a nobres. Durante a batalha, Thorin salva sua vida, ganhando seu respeito a contragosto.
 
 **Cena 13d – A Virada com Sigmetal**  
-Para virar a maré, Thorin e Filena usam o buraco criado pelo Cristaleão para acessar uma câmara de **Sigmetal bruto**. Eles confirmam que o minério é a principal fraqueza dos Ignotos e o usam para derrotar o líder Ignoto que bloqueia a saída.
+Para virar o jogo, Thorin e Filena alcançam a passagem revelada pelo Cristaleão — ainda bloqueada por uma rocha gigante. Usando os explosivos que **Balastrus** entregou a **Thorin** na **Cena 10b – Euforia da Riqueza**, eles abrem a entrada e acessam uma câmara de **Sigmetal bruto**. Eles confirmam que o minério é a principal fraqueza dos Ignotos e o usam para derrotar o líder Ignoto que bloqueia a saída.
 
 **Cena 13e – Evacuação e Saque**  
 Com a ameaça contida, o grupo realiza um saque controlado de Sigmetal e conclui a evacuação, retornando a Gildrat com o recurso vital.
 
-### 14 - A Batalha de Gildrat: Clímax e Sacrifício
+### 14 - Defender Gildrat: Clímax
 
-**Cena 14a – Forja e Preparação**  
-As forjas de Gildrat trabalham sem parar, usando o Sigmetal para criar armas. Uma armadilha com dinamites é preparada no **Distrito Comercial Externo**.
+**Cena 14a – A Armadilha**  
+Batedores atraem os Ignotos Gigantes para uma armadilha. Duas fileiras de explosivos detonam, afunilando o exército inimigo. No entanto, o **General Ignoto** usa um campo de mana para conter a terceira e mais poderosa explosão.
 
-**Cena 14b – A Armadilha**  
-Batedores atraem os Ignotos para a armadilha. Duas fileiras de explosivos detonam, afunilando o exército inimigo. No entanto, o **General Ignoto** usa um campo de mana para conter a terceira e mais poderosa explosão.
+**Cena 14b – Guerra Aberta**  
+A batalha se torna uma guerra de atrito na praça. O exercito dos anões vs o exercito dos Ignotos.
+A força do exercito dos anões depende do desempenho do jogador ao se preparar para o confronto.
 
-**Cena 14c – Guerra Aberta**  
-Com a fachada do portão destruída, a batalha se torna uma guerra de atrito na praça. Mesmo com as armas de Sigmetal, a linha de defesa anã começa a ceder.
+**Cena 14c – O Poder Onírico de Thorin**  
+Para impedir a derrota, Thorin usa seu poder onírico em público pela primeira vez, virando a maré da batalha e permitindo que seu grupo elimine o General Ignoto. O esforço o deixa extremamente fraco.
 
-**Cena 14d – O Poder Onírico de Thorin**  
-Para impedir a derrota, Thorin usa seu poder onírico em público pela primeira vez, virando a maré da batalha e permitindo que seu grupo elimine o General Ignoto. O esforço o deixa extremamente fraco, sofrendo de **Resíduo Onírico**.
+**Cena 14d – A Casca do Profeta**  
+Através do Reino da Mana, o **Profeta das Sombras** possui parcialmente Thorin, criando uma **Casca onírica** — um chefe colossal de vidro-sombra com Thorin adormecido em seu centro. O objetivo da luta é purificar Thorin sem matá-lo.
 
-**Cena 14e – A Casca do Profeta**  
-Atraído pela mana, o **Profeta das Sombras** possui parcialmente Thorin, criando uma **Casca onírica** — um chefe colossal de vidro-sombra com Thorin adormecido em seu centro. O objetivo da luta é purificar Thorin sem matá-lo. Filena conduz um ritual para quebrar a possessão.
-
-**Cena 14f – A Decisão de Mhordred**  
-Após a purificação, o distrito ameaça desabar.
-**Decisão do Jogador:**
-
-- **EVACUAR SOLDADOS:** Mhordred se sacrifica para segurar a linha enquanto todos fogem.
-- **SELAR A ROTA:** O distrito é selado com Sigmetal, sacrificando um pelotão que fica para trás, mas salvando Mhordred.
-
-**Cena 14g – Queda e Luto**  
-Com a Casca dissipada, Thorin desmaia. A cena termina em um momento de lamento silencioso, com Tordan observando de longe e Filena ao lado do herói.
-
-**Cena 14h – Pós-créditos: O Despertar**  
-Dias depois, Thorin está dormindo em seu quarto. A cena esvanece para branco, e então ele abre um olho. Em um contraplano, no horizonte, a silhueta do verdadeiro **Profeta das Sombras** observa um exército imenso de Ignotos. Um único sussurro dissonante é ouvido. **Corte seco.**
+**Cena 14e – Pós-créditos: O Despertar**  
+Vão existir cenas pós credito para cada um dos personagens. Mas a principal é:
+Dias depois, Thorin volta de jogo jogo de futebol runico e vai dormir em seu quarto. A cena esvanece para branco, e então ele abre um olho. Em um contraplano, no horizonte, a silhueta do verdadeiro **Profeta das Sombras** observa um exército imenso de Ignotos. Um único sussurro dissonante é ouvido. **Corte seco.**

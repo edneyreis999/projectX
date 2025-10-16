@@ -68,7 +68,15 @@ Quest: A Travessia Perigosa
 |     | — Apoiar Kilin (sugerir esperar a tempestade passar)       | Reforça a cautela e tenta convencer os outros a adiar a partida.                           |          |
 |     | — Apoiar Tusk (incitar a partida imediata)                    | Ajuda Tusk a pressionar o grupo a partir rapidamente.                                     |          |
 | 5  | Cartada final de Tusk                             | Tusk reafirma sua autoridade, lembra o acordo com Balastrus e ameaça retenção de pagamento para quem não partir. | 🎬       |
-| 6  | Decisão final do grupo                           | O grupo decide partir sob a pressão de Tusk.                         | 🎬       |
+| 6  | Decisão final do grupo                           | O grupo decide partir sob a pressão de Tusk, mesmo contrariado.                           | 🎬       |
+
+**Decisão do Jogador:**
+
+- Apoiar Kilin (sugerir esperar a tempestade passar).
+- Apoiar Tusk (insistir na partida imediata).
+A escolha afeta apenas falas e reações; o grupo parte assim mesmo.
+
+---
 
 ##### Cena 2 – Travessia no Mapamúndi (Detalhada)
 
@@ -76,5 +84,46 @@ Quest: A Travessia Perigosa
 | ---|------------------------------------------|-----------------------------------------------------------------------------------------------------|----------|
 | 1  | Início da travessia                      | O grupo começa a travessia sob forte tempestade de neve, enfrentando o clima severo.                | 🎮       |
 | 2  | Encontros com inimigos fortalecidos     | O jogador enfrenta inimigos já conhecidos, porém em versões mais poderosas e agressivas.            | 🎮       |
-| 3  | Sequência intensa de batalhas            | Cerca de 3 batalhas seguidas próximas uma da outra, gerando tensão e desafio para o jogador.       | 🎮       |
-| 4  | Quebra narrativa - Uma avanlance acontece, seguida por um deslizamento de rochas que bloqueia os caminhos convencionais e separa o grupo. Thorin e a Guarda de Ferro são forçados a procurar um novo caminho encontrando então uma mina desconhecida, encerrando a quest.
+| 3  | Sequência intensa de batalhas            | Cerca de 6 batalhas seguidas próximas uma da outra, gerando tensão e desafio para o jogador.       | 🎮       |
+| 4  | Quebra narrativa - Flash para Reed e criança | Jogador é teletransportado para a noite da história, onde Reed narra e uma criança (jogador infantil) reclama da repetição das batalhas. | 🎬       |
+| 5  | Reed menciona a caverna                   | Reed explica que ao lado deles há uma caverna, abrindo uma nova possibilidade na história.          | 🎬       |
+| 6  | Retorno à travessia no Mapamúndi          | A narrativa retorna ao mapa mundi, agora com a entrada da caverna liberada.                         | 🎮       |
+| 7  | Exploração da caverna                      | Jogador entra na caverna, resolve um puzzle e obtém o item “Símbolo da Trégua”.                    | 🎮       |
+| 8  | Funcionalidade do Símbolo da Trégua       | O item permite acumular e absorver as batalhas convencionais do mapa mundi para serem enfrentadas em um combate único posteriormente. | 🎮       |
+| 9  | Confronto com boss próximo a Gildrat      | Após as interações na caverna e batalhas, o jogador enfrenta um boss desafiador perto do destino. | 🎮       |
+
+---
+
+##### Cena 3 – Encontro com Balastrus (Rascunho detalhado e sequencial)
+
+| #  | Beat                                          | Descrição                                                                                                            | Controle |
+| ---|-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------|----------|
+| 1  | Chegada na Estrada do Cão Luar                 | O grupo chega com o tempo limpo após a tempestade; Balastrus os aguarda ansioso.                                      | 🎬       |
+| 2  | Organização da entrega                          | Balastrus e Tusk organizam o grupo em fila para entregar os minérios no baú de Kravens central.                      | 🎬       |
+| 3  | Entrega dos Cravens                            | Jogador entrega manualmente os minérios Cravens (9 ou 10) no baú de Kravens; condição para avançar.                  | 🎮       |
+| 4  | Cenas condicionais após entrega dos Cravens   | Dependendo da posse e entrega do Sigmetal, ocorrem as seguintes situações:                                           | 🎬       |
+|     | — Se Tusk já tem o Sigmetal (ou recebe antes) | Tusk faz cena empolgada dizendo a Balastrus que ele encontrou o Sigmetal; Thorin reage, pois sabe que foi ele quem achou.|          |
+|     | — Se jogador entregou o Sigmetal no baú de Kravens ou diretamente para Balastrus | Balastrus analisa o Sigmetal, mantém silêncio, e o minério “finge que nada aconteceu”, mantendo o mistério.           |          |
+|     | — Se jogador não entregou o Sigmetal          | Após entrega dos Cravens, Balastrus conversa com Thorin e comenta enigmaticamente:                                   |          |
+|     |                                                | “Você está muito novo para carregar tanto peso nos bolsos... Mas tudo bem. Nem todo baú se abre no primeiro puxão.” |          |
+| 5  | Conversa final com Balastrus                    | Jogador pode dialogar com Balastrus, encerrando a cena; diálogos variam conforme as escolhas anteriores.             | 🎮       |
+
+**Decisão do Jogador:**
+
+- Entregar a Balastrus.
+- Entregar a Tusk.
+- Guardar no baú de Kravens.
+- Não entregar a ninguém.
+Define `v_sigmetal_destino`; todos os Kravens são depositados no baú da expedição.
+
+---
+
+##### Cena 4 – Retorno para casa (Detalhado e Condicional)
+
+| #  | Beat                                    | Descrição                                                                                                    | Controle |
+| ---|----------------------------------------|--------------------------------------------------------------------------------------------------------------|----------|
+| 1  | Travessia noturna                      | Thorin atravessa o mapa escurecido e silencioso, refletindo sobre os eventos recentes.                       | 🎮       |
+| 2  | Chegada à casa                         | Thorin chega em casa e percebe que não há ninguém.                                                          | 🎮       |
+| 3  | Diálogo interno opcional               | Caso o jogador visite o quarto do pai, Thorin fala consigo mesmo, questionando o paradeiro do pai.            | 🎮       |
+| 4  | Interação opcional com Sáparo Boca de Corneta | Thorin pode encontrar Sáparo e perguntar sobre o pai, expressando preocupação e frustração.                   | 🎮       |
+| 5  | Início do sonho final                  | Cutscene ou transição para o sonho com a mãe de Thorin, envolvendo o selo ancestral e mistério crescente.    | 🎬       |
