@@ -200,6 +200,15 @@ A escolha afeta apenas falas e reações; o grupo parte assim mesmo.
 **Cena 7b – Travessia Sob Nevasca**  
 A viagem de volta a Gildrat é perigosa. Os inimigos no mapa-múndi estão mais fortes devido à tempestade. O jogador pode buscar abrigo em cavernas laterais para evitar combates e encontrar pequenos eventos.
 
+**Cena 7b.1 – Travessia Tóxica: Mina do Esgoto**  
+Forçados pela nevasca, Thorin e a Guarda de Ferro atravessam a Mina do Esgoto: exploração com puzzles, criaturas venenosas e um breve retorno ao coreto com Rheed que introduz o item “Símbolo da Trégua”.
+
+**Cena 7b.2 – Câmara de Decantação: Pestesporo**  
+No nível inferior, o grupo enfrenta o chefe Pestesporo na câmara anóxica e reabre a passagem para a superfície, retomando a rota de volta a Gildrat.
+
+**Cena 7b.3 – Ameaça Lupina: Alcatéia do Gelo**  
+Já do lado de fora, reencontram Tusk e os expedicionários cercados por Lobos do Gelo; a batalha reúne os grupos e libera o caminho até a Estrada do Cão‑Luar.
+
 **Cena 7c – Entrega na Estrada do Cão-Luar (Decisão Central)**  
 Ao reencontrar Balastrus na Estrada do Cão-Luar, o jogador deve definir o destino do Sigmetal, caso ainda não o tenha feito.
 **Decisão do Jogador:**

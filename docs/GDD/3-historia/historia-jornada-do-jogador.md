@@ -181,6 +181,7 @@ O ritmo da jornada inicial é projetado para alternar entre momentos de alta ten
 
 - **Pico (Alta Tensão):**
   - **Quest 2: A Semifinal:** Urgência da partida, gol da virada com Filena.
+    - Nota: primeira quest jogável após o prólogo “A Noite da História”.
   - **Quest 3: Fim de Jogo:** Confronto emocional com Tordan.
 
 - **Vale (Exploração/Preparação):**

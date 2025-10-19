@@ -7,7 +7,7 @@
 * [x] **Concluído**
 * **Nome da quest**: Hora de Crescer
 * **Importância na campanha**: Main
-* **Arco narrativo**: Ato I – Chamado à Aventura
+* **Arco narrativo**: Ato I — Recusa do Chamado
 * **Quest anterior**: Fim de Jogo
 * **Conflito central**: Thorin deseja seguir seu sonho de se tornar jogador de futebol rúnico, mas seu pai o força a abandonar tudo e obedecer ao Império.
 * **Objetivo narrativo global**: Apresentar ao jogador o novo destino imposto a Thorin — tornar-se um minerador contra sua vontade — e introduzir mecânicas de equipamento e compra por meio da visita à loja de armaduras.

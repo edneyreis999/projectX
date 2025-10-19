@@ -13,12 +13,12 @@
 * **Conflito central**: A liberdade e paixão por futebol rúnico de Thorin entram em choque com a autoridade e o controle impostos por seu pai, o General Tordan.
 * **Objetivo narrativo global**: Apresentar Thorin, destacando seu traço de irresponsabilidade, sua paixão e excelência no futebol rúnico, e instaurar o conflito entre a independência do protagonista e a autoridade de seu pai, o poderoso General Tordan.
 * **Premissa resumida**: Após despertar de um pesadelo premonitório, o talentoso porém indisciplinado Thorin corre contra o tempo para garantir a vitória em um jogo de futebol rúnico. Mas durante a comemoração, um grupo de guardas reais, a mando de seu pai, exige que Thorin volte para casa.
-* **Resumo**: Thorin, um jovem talentoso mas indisciplinado, acorda de um sonho premonitório e, atrasado, corre por Gildrath para participar da semifinal de futebol rúnico. Após garantir a vitória do seu time, sua celebração é interrompida por guardas reais enviados pelo pai, o General Tordan, destacando o conflito entre sua liberdade e a autoridade do pai.
+* **Resumo**: Thorin, um jovem talentoso mas indisciplinado, acorda de um sonho premonitório e, atrasado, corre por Gildrat para participar da semifinal de futebol rúnico. Após garantir a vitória do seu time, sua celebração é interrompida por guardas reais enviados pelo pai, o General Tordan, destacando o conflito entre sua liberdade e a autoridade do pai.
 * **Locais principais**:
 
   * Casa da Família Forja Prata,
   * Distrito Residencial,
-  * Distrito comercial de Gildrath,
+  * Distrito comercial de Gildrat,
   * Campo de futebol rúnico
   * Vestiário do campo
 * **NPCs principais**:
@@ -59,7 +59,7 @@
 |---|---------------------------|----------------------------------------------------------------------------------------------------------------------------------------|----------|
 | 1 | Pesadelo Premonitório     | Música calma → Aviso da mãe → Jump-scare → Thorin acorda                                                                               | No sonho, a mãe de Thorin o alerta sobre uma ameaça iminente antes de uma criatura irromper nas sombras e pular na tela. |
 | 2 | Alvorada Atrasada         | Quarto de Thorin → Sáparo avisa → Pegar a funda → Porta da casa → Entrada do Distrito Comercial                                        | Thorin acorda atrasado e, sob o grito do sáparo, precisa correr para o estádio. |
-| 3 | Corrida pelas Ruas        | Distrito Comercial → Bloqueio ao Castelo → Desviar de pedestres → Portão do estádio                                                    | O jogador guia Thorin pelos bairros de Gildrath até chegar ao portão do estádio. |
+| 3 | Corrida pelas Ruas        | Distrito Comercial → Bloqueio ao Castelo → Desviar de pedestres → Portão do estádio                                                    | O jogador guia Thorin pelos bairros de Gildrat até chegar ao portão do estádio. |
 | 4 | Bronca no Gramado         | Portão do estádio → Treinador Dragobur aponta falta do capacete                                                                        | Dragobur dá uma bronca sobre o atraso e barra a entrada de Thorin ao notar que ele esqueceu o capacete. |
 | 5 | Capacete Perdido          | Tentativa vestiário feminino (gag) → Vestiário masculino → Encontra e equipa capacete                                                  | Entre gag no vestiário feminino e armários bagunçados, Thorin encontra e equipa o capacete antigo do treinador. |
 | 6 | Pronto pra Jogar          | Retorna a Dragobur → Liberação para campo                                                                                              | Capacete posto, Thorin recebe a permissão de Dragobur para entrar em campo. |
