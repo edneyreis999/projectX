@@ -227,15 +227,13 @@ Para a surpresa de Thorin, **Filena** é trazida sob escolta. Ela é acusada de 
 **Cena 8d – O Chamado a Melios**  
 Balastrus manipula a situação e consegue a concessão para explorar a mina de **Melios**. Para garantir que Tordan não sabotará seus planos, ele exige que Thorin, como testemunha dos eventos recentes, participe da nova expedição. O destino de Thorin é selado pela política.
 
-### 9 - Os Corvos de Melios: O Selo e a Canção
-
-**Cena 9a – Bloqueio no Mapa-múndi**  
+**Cena 8e – Bloqueio no Mapa-múndi**  
 No caminho para Melios, a expedição é barrada por um destacamento dos **Corvos**, uma facção de mineradores independentes. Balastrus apresenta o **mandato** oficial concedido pelo Conselho. Sem conflito, os Corvos liberam a passagem para a clareira de Melios.
 
-**Cena 9b – Chegada à Clareira**  
+**Cena 8f – Chegada à Clareira**  
 Na clareira, o grupo encontra o **chefe dos Corvos**. O ambiente é tenso. Há sinais de mineração interrompida e vigias atentos. Os Corvos não parecem intimidados, mas firmes em sua posição.
 
-**Cena 9c – O Impasse e a Revelação**  
+**Cena 8g – O Impasse e a Revelação**  
 Os Corvos explicam o motivo da interrupção: eles **ouviram a canção dos ancestrais** e encontraram um grande **bloco de ferro coberto de runas** — um **selo** que não deve ser profanado. Eles temem que Damburr, se souber da descoberta, queira destruir o selo. Para Balastrus, eles estão apenas atrapalhando o progresso; para os rebeldes e para a mãe de Thorin (em suas visões), eles estão protegendo a história anã.
 
 **Decisão do Jogador:**
@@ -245,11 +243,11 @@ Os Corvos explicam o motivo da interrupção: eles **ouviram a canção dos ance
 A tensão escala para combate independentemente da postura adotada.
 A participação de **Thorin** é decidida pelo jogador no momento da escolha acima: ele pode entrar no combate ou permanecer fora, conforme a opção tomada.
 
-**Cena 9d – A Batalha Contra os Corvos**  
+**Cena 8h – A Batalha Contra os Corvos**  
 Balastrus se recusa a recuar, e o impasse escala para um combate. Os Corvos lutam como uma "boss fight", usando suas ferramentas de mineração como armas.
 Se **Filena** estiver na party do jogador, ela **não participa** do combate na Cena 9d (permanece fora da luta).  
 
-**Cena 9e – Retirada e Presságio**  
+**Cena 8i – Retirada e Presságio**  
 Derrotados, os Corvos se retiram, mas deixam um último aviso: **não mexam no selo**. A expedição monta acampamento, decidindo entrar em Melios ao amanhecer.
 
 ### 10 - Quebra do Selo em Melios: A Liberação dos Ignotos
