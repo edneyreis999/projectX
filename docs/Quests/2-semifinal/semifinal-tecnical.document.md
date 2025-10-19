@@ -7,7 +7,7 @@
 * **Objetivo principal do jogador:** Ajudar Thorin a chegar ao estádio, garantir a vitória e vivenciar as consequências imediatas.
 * **Emoção‑âncora:** urgência → triunfo → tensão.
 * **Localizações centrais:** Casa de Thorin (Mapa 006), Entrada do Estádio (Mapa 014), Vestiário (Mapa 010), Gramado central (Mapa 012).
-* **Personagens‑chave:** Thorin (protagonista), Dragobour (treinador), Jogadores do Time, Guardas Kilin/Mhordred/Tharok.
+* **Personagens‑chave:** Thorin (protagonista), Dragobur (treinador), Jogadores do Time, Guardas Kilin/Mhordred/Tharok.
 
 ## 2. Configuração Técnica Global
 
@@ -21,11 +21,11 @@
 
 * **1:** Início da quest.
 * **2:** Chegada ao mapa do estádio.
-* **3:** Após falar com Dragobour, recebe missão de pegar o Elmo.
+* **3:** Após falar com Dragobur, recebe missão de pegar o Elmo.
 * **4:** Pega o Elmo.
 * **5:** Veste o Elmo e retorna ao treinador; segue para o campo.
 * **6:** Cena da vitória e comemoração final.
-* **7:** Conversa final com Dragobour na beira do campo; inicia cena dos guardas.
+* **7:** Conversa final com Dragobur na beira do campo; inicia cena dos guardas.
 * **8:** Ao ser levado pelos guardas e trocar de mapa para o distrito residencial.
 
 ### 3.1 Fluxo atualizado da variável `v_q_vestiario_progress`
@@ -52,18 +52,18 @@
 | **Emoções‑chave**      | Saudade → Ansiedade → Determinação.                                                                      |
 | **Restrições**         | ≤ 60 s de diálogo; acessível.                                                                            |
 
-### Cena 2 — “Portão/Vestiário – Confronto com Dragobour & Capacete Lendário” ✅
+### Cena 2 — “Portão/Vestiário – Confronto com Dragobur & Capacete Lendário” ✅
 
 | Item                   | Detalhe                                                                                                                                 |
 | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| **Resumo de Premissa** | Thorin chega atrasado; Dragobour barra sua entrada por falta de capacete; ele vasculha o vestiário e encontra o lendário capacete.      |
+| **Resumo de Premissa** | Thorin chega atrasado; Dragobur barra sua entrada por falta de capacete; ele vasculha o vestiário e encontra o lendário capacete.      |
 | **Contexto Narrativo** | Amanhecer nublado; Entrada do Estádio (Mapa 014) → Vestiário (Mapa 010).                                                                |
-| **Personagens**        | Thorin, Dragobour, Jogadores coadjuvantes, NPC da ala feminina (gag).                                                                   |
-| **Objetivo Dramático** | Reforçar disciplina de Dragobour; mostrar descuido de Thorin; conectar capacete ao passado do treinador.                                |
+| **Personagens**        | Thorin, Dragobur, Jogadores coadjuvantes, NPC da ala feminina (gag).                                                                   |
+| **Objetivo Dramático** | Reforçar disciplina de Dragobur; mostrar descuido de Thorin; conectar capacete ao passado do treinador.                                |
 | **Interatividade**     | Exploração livre em 3 armários; cada erro gera comentário; gag da porta feminina (NPC dá tapa e bloqueia acesso ≤ 20 s).               |
 | **Fluxo**              | Diálogo no portão → exploração → obtém/equipa capacete → retorna ao portão → entrada liberada.                                          |
 | **Gatilhos**           | `v_q_semifinal_progress` vai de 2 até 5 conforme ações.                                                                                 |
-| **Assets**             | Portraits Dragobour (2), sprite Thorin + capacete.                                                                                      |
+| **Assets**             | Portraits Dragobur (2), sprite Thorin + capacete.                                                                                      |
 | **Integração**         | Mapa 014 Evento #002; Mapa 010 Eventos #013‑015 (armários), #007 (gag).                                                                 |
 | **Emoções‑chave**      | Pressa → Frustração → Humor → Confiança.                                                                                                |
 | **Restrições**         | ≤ 90 s se acerto imediato; ≤ 3 min máximo.                                                                                              |
@@ -74,7 +74,7 @@
 | ---------------------- | -------------------------------------------------------------------------------------                                            |
 | **Resumo de Premissa** | Tutorial/minijogo de “futebol rúnico” que culmina no gol da vitória.                                                             |
 | **Contexto Narrativo** | Campo de Futebol Rúnico (Mapa 009); arquibancadas vazias na lore atual.                                                         |
-| **Personagens**        | Thorin, Dragobour (à margem), Jogadores adversários e aliados.                                                                   |
+| **Personagens**        | Thorin, Dragobur (à margem), Jogadores adversários e aliados.                                                                   |
 | **Objetivo Dramático** | Ensinar mecânica de combate; reforçar heroísmo.                                                                                  |
 | **Interatividade**     | Minijogo por turnos (detalhes TBD).                                                                                              |
 | **Fluxo**              | Entrada em campo → minijogo → slow‑mo do gol → comemoração curta.                                                                |
@@ -90,10 +90,10 @@
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Resumo de Premissa** | No auge da comemoração, três guardas chegam com ordens de Tordan Forja‑Prata: escoltar Thorin imediatamente. Clima vira de triunfo para tensão, encerrando a quest num cliff‑hanger.                                               |
 | **Contexto Narrativo** | Entrada do Estádio Machados Enferrujados (Mapa 014), fim da manhã.                                                                                                                            |
-| **Personagens**        | Thorin, Kilin (porta‑voz), Mhordred, Tharok, Dragobour.                                                                                                                                     |
+| **Personagens**        | Thorin, Kilin (porta‑voz), Mhordred, Tharok, Dragobur.                                                                                                                                     |
 | **Objetivo Dramático** | Cortar êxtase da vitória, introduzir autoridade do pai e preparar gancho para próxima quest.                                                                                                  |
 | **Interatividade**     | Escolha de resposta para Kilin (resignado ou irritado), afeta apenas flavor text futuro.                                                                                                      |
-| **Fluxo**              | Conversa final com Dragobour → chegada dos guardas → escolha → escolta → troca de mapa.                                                                                                      |
+| **Fluxo**              | Conversa final com Dragobur → chegada dos guardas → escolha → escolta → troca de mapa.                                                                                                      |
 | **Gatilhos**           | `v_q_semifinal_progress = 7` inicia cena; ao trocar de mapa, `v_q_semifinal_progress = 8`.                                                                                                   |
 | **Assets**             | SFX passos metálicos, BGM “Tension Undercurrent”, portrait Kilin, fade‑to‑black.                                                                                                             |
 | **Emoções‑chave**      | Surpresa → Injustiça → Resignação/Indignação.                                                                                                                                                |

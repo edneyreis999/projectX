@@ -5,7 +5,7 @@
 **Título do Jogo:**
 
 **Resumo:**
-O jogo se passa durante uma noite especial em Daratrine, onde Reed, o narrador, relata a história de sua criação. O jogador começa como uma das crianças ouvindo Reed. Ao interagir com ele, é transportado magicamente para Gilgrath, antes da queda do Império, assumindo o papel de Thorin, filho do General vigente. Vivendo a história diretamente como Thorin, o jogador descobre eventos essenciais para a criação de Daratrine, adquirindo poderes e formando equipes para enfrentar desafios. O jogador alterna entre o presente na noite da história com Reed e o passado como Thorin, experienciando uma narrativa que funciona como um cinema interativo.
+O jogo se passa durante uma noite especial em Daratrine, onde Rheed, o narrador, relata a história de sua criação. O jogador começa como uma das crianças ouvindo Rheed. Ao interagir com ele, é transportado magicamente para Gildrat, antes da queda do Império, assumindo o papel de Thorin, filho do General vigente. Vivendo a história diretamente como Thorin, o jogador descobre eventos essenciais para a criação de Daratrine, adquirindo poderes e formando equipes para enfrentar desafios. O jogador alterna entre o presente na noite da história com Rheed e o passado como Thorin, experienciando uma narrativa que funciona como um cinema interativo.
 
 **Gênero:** RPG Old-school
 
@@ -18,7 +18,7 @@ O jogo se passa durante uma noite especial em Daratrine, onde Reed, o narrador, 
 ## 2. História e Temática
 
 **Enredo Principal:**
-Thorin é um jovem anão inicialmente rebelde que descobre possuir o poder de falar com os mortos, herdado de sua mãe, cuja história permanece misteriosa. Conforme explora e domina essa habilidade, Thorin prevê a chegada iminente dos ignotos, entidades que ameaçam devastar o continente de Ekios. Sua jornada envolve entender sua origem, assumir responsabilidades e impedir a catástrofe anunciada.
+Thorin é um jovem anão inicialmente rebelde que descobre possuir o poder de falar com os mortos, herdado de sua mãe, cuja história permanece misteriosa. Conforme explora e domina essa habilidade, Thorin prevê a chegada iminente dos Ignotos, entidades que ameaçam devastar o continente de Ekios. Sua jornada envolve entender sua origem, assumir responsabilidades e impedir a catástrofe anunciada.
 
 **Personagens Principais:**
 

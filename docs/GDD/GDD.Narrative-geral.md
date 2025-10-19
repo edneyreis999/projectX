@@ -6,18 +6,18 @@ Este documento detalha especificamente a narrativa do jogo Daratrine, aprofundan
 
 ## 1. Introdução Narrativa
 
-- **Conceito Central:** A história é contada através de dois períodos distintos — o presente, representado pela "Noite da História" com Theodore Reed, e o passado, vivido pelo jogador na pele de Thorin. Essa estrutura permite uma experiência interativa e emocionalmente conectada, onde o jogador alterna entre espectador e protagonista.
+- **Conceito Central:** A história é contada através de dois períodos distintos — o presente, representado pela "Noite da História" com Theodore Rheed, e o passado, vivido pelo jogador na pele de Thorin. Essa estrutura permite uma experiência interativa e emocionalmente conectada, onde o jogador alterna entre espectador e protagonista.
 
 ## 2. Estrutura da Narrativa
 
-- **Divisão Temporal:** A narrativa se divide entre a noite presente em Daratrine, onde Theodore Reed conta a história, e o passado em Gildrat, onde o jogador vive os eventos como Thorin.
+- **Divisão Temporal:** A narrativa se divide entre a noite presente em Daratrine, onde Theodore Rheed conta a história, e o passado em Gildrat, onde o jogador vive os eventos como Thorin.
 - **Interatividade Narrativa:** O jogador pode influenciar a história por meio da moeda Ludus, inserindo ou modificando elementos narrativos e mecânicos conforme sua preferência. Essa personalização cria uma narrativa maleável que se adapta ao estilo de jogo.
 
 ## 3. Desenvolvimento dos Personagens
 
-- **Thorin:** Jovem anão inicialmente rebelde que descobre ter o poder de se comunicar com os mortos, herdado de sua mãe. Ao longo do jogo, ele amadurece e assume o papel de protetor de Ekios contra a ameaça dos ignotos.
-- **Reed (Narrador):** Theodore Reed é o anão contador oficial de histórias do universo Coreto Studio, atuando como porta-voz essencial das narrativas. Durante a "Noite da História", Reed não apenas narra os acontecimentos, mas também orienta o jogador, permitindo que este utilize a moeda Ludus para moldar a experiência de jogo conforme seu gosto. Ele atua como "juiz", equilibrando elementos históricos autênticos com entretenimento e diversão.
-- **Balastrus e Tusk:** Balastrus é um estrategista perspicaz que almeja o trono do imperador Damburr. Tusk é seu braço direito, executando suas ordens. Juntos, eles articulam os eventos que culminam na liberação dos ignotos.
+- **Thorin:** Jovem anão inicialmente rebelde que descobre ter o poder de se comunicar com os mortos, herdado de sua mãe. Ao longo do jogo, ele amadurece e assume o papel de protetor de Ekios contra a ameaça dos Ignotos.
+- **Rheed (Narrador):** Theodore Rheed é o anão contador oficial de histórias do universo Coreto Studio, atuando como porta-voz essencial das narrativas. Durante a "Noite da História", Rheed não apenas narra os acontecimentos, mas também orienta o jogador, permitindo que este utilize a moeda Ludus para moldar a experiência de jogo conforme seu gosto. Ele atua como "juiz", equilibrando elementos históricos autênticos com entretenimento e diversão.
+- **Balastrus e Tusk:** Balastrus é um estrategista perspicaz que almeja o trono do imperador Damburr. Tusk é seu braço direito, executando suas ordens. Juntos, eles articulam os eventos que culminam na liberação dos Ignotos.
 - **Tordan:** Pai de Thorin e general leal do império, que se opõe aos planos de Balastrus. Sua integridade e presença são obstáculos para a ascensão do antagonista.
 - **Mentores Adicionais:** Além de Tordan, Thorin conta com outras figuras que ajudam diretamente no desenvolvimento de seu poder e na sua jornada de amadurecimento:
   - **A Mãe de Thorin:** Mesmo desaparecida, ela se manifesta para o filho através de sonhos. Nessas aparições oníricas, ela oferece pistas e orientações sobre o dom de falar com os mortos, revelando gradualmente a natureza do poder herdado.
@@ -26,7 +26,7 @@ Este documento detalha especificamente a narrativa do jogo Daratrine, aprofundan
 ## 4. Mistérios e Revelações
 
 - **História da Mãe de Thorin:** O passado da mãe de Thorin é revelado aos poucos, aumentando o mistério e o envolvimento emocional do jogador. Sua conexão com o poder de falar com os mortos é essencial para a trama.
-- **Origem e Natureza dos Ignotos:** Os ignotos são introduzidos como uma ameaça desconhecida, cuja origem é revelada gradualmente, aumentando a tensão narrativa e conectando-se diretamente aos erros políticos dos personagens.
+- **Origem e Natureza dos Ignotos:** Os Ignotos são introduzidos como uma ameaça desconhecida, cuja origem é revelada gradualmente, aumentando a tensão narrativa e conectando-se diretamente aos erros políticos dos personagens.
 
 ## 5. Espiritualidade e Cultura
 
@@ -53,4 +53,4 @@ Portanto, o poder de Thorin é mantido oculto tanto por segurança quanto por ta
 ## 8. Conclusão Narrativa
 
 - **Resolução:** O jogo apresenta múltiplos finais baseados nas decisões do jogador ao longo da história. Cada desfecho oferece uma resolução coerente com as escolhas feitas e o crescimento emocional de Thorin.
-- **Conexão com Personagens do Presente:** Apesar de a "Noite da História" ocorrer muito tempo após os eventos principais vividos por Thorin, os personagens presentes durante essa noite não têm ligação direta com os acontecimentos do passado. A narrativa contada por Reed acontece já em uma Daratrine estabelecida — um reflexo do legado deixado por Thorin —, enquanto a história que está sendo narrada se passa antes mesmo da fundação da cidade.
+- **Conexão com Personagens do Presente:** Apesar de a "Noite da História" ocorrer muito tempo após os eventos principais vividos por Thorin, os personagens presentes durante essa noite não têm ligação direta com os acontecimentos do passado. A narrativa contada por Rheed acontece já em uma Daratrine estabelecida — um reflexo do legado deixado por Thorin —, enquanto a história que está sendo narrada se passa antes mesmo da fundação da cidade.

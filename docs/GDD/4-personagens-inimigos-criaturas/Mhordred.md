@@ -86,7 +86,7 @@ Primeiro Combate: O jogador testemunha seu poder ofensivo avassalador. Enquanto 
 
 Sua impaciência o coloca em conflito direto com Tusk e Thorin. Ele começa a perceber que sua força bruta, embora eficaz em combate, cria complicações diplomáticas e táticas que Kilin precisa resolver frequentemente.
 
-## 2.1) Linha de Transformação avançada - Ato II / Provação / Até a volta de Mélios
+## 2.1) Linha de Transformação avançada - Ato II / Provação / Até a volta de Melios
 
 Emoção Predominante: Frustração, Fúria.
 
@@ -104,7 +104,7 @@ Principais inimigos: Tusk (alvo de seu ódio pessoal), Balastrus, a inação.
 
 Travessia Perigosa: Mhordred concorda com Tusk em prosseguir durante a tempestade. Ele vê o mau tempo não como um perigo, mas como um desafio a ser superado pela força e resistência. Fica furioso quando Kilin cede ao pedido de Thorin, vendo isso como um ato de fraqueza e um insulto à capacidade da Guarda de Ferro.
 
-Tavessia Tóxica/Ameaça Lupina/Barganha do Sigmetal: Mhordred é a linha de frente em todos os combates. Ele protege Thorin por dever, mas seu respeito pelo jovem só começa a nascer quando o vê lutar ou tomar uma decisão corajosa. Ele encara Balastrus abertamente, com desdém, vendo-o como um político covarde que se esconde atrás de lacaios.
+Travessia Tóxica/Ameaça Lupina/Barganha do Sigmetal: Mhordred é a linha de frente em todos os combates. Ele protege Thorin por dever, mas seu respeito pelo jovem só começa a nascer quando o vê lutar ou tomar uma decisão corajosa. Ele encara Balastrus abertamente, com desdém, vendo-o como um político covarde que se esconde atrás de lacaios.
 
 ## 3) Linha de Transformação básica
 
@@ -134,7 +134,7 @@ Principais inimigos: Ignotos.
 
 ## 3.2) Gatilhos do Ato III - mudanças à caminho
 
-Quebra do Selo em Mélios: A captura de Kilin e Tharok é seu ponto de virada. A ordem de Kilin para que ele fuja com Thorin e Filena é a mais difícil que já cumpriu, indo contra seu instinto de nunca abandonar um irmão.
+Quebra do Selo em Melios: A captura de Kilin e Tharok é seu ponto de virada. A ordem de Kilin para que ele fuja com Thorin e Filena é a mais difícil que já cumpriu, indo contra seu instinto de nunca abandonar um irmão.
 
 O Prisioneiro (perspectiva de Mhordred): Enquanto Kilin está preso, Mhordred está no inferno. Ele é o líder. Cada decisão pesa uma tonelada. Ele tenta imitar a calma de Kilin e falha, ficando frustrado. Ele comete erros, mas sua determinação feroz em proteger os jovens o força a aprender e a se adaptar, desenvolvendo um respeito tardio pela dificuldade do trabalho de Kilin.
 

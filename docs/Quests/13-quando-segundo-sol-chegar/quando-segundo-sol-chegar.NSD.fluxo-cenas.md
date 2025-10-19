@@ -184,12 +184,12 @@ A partir daqui eu não sei o que fazer. sei que se o Thorin fizer alguma coisa q
 - **Beats Narrativos:**
     1. Se o jogador ajudou os Corvos, o mensageiro retorna.
     2. "Você nos respeitou. Agora, ouça."
-    3. Ele ensina ao Saparo-Boca-de-Corneta uma "canção" ancestral — na verdade, uma frequência sônica que desorienta os Ignotos.
-    4. Isso se traduz em uma nova habilidade de "debuff" para o Saparo, que ele pode usar em área.
+    3. Ele ensina ao Sáparo-Boca-de-Corneta uma "canção" ancestral — na verdade, uma frequência sônica que desorienta os Ignotos.
+    4. Isso se traduz em uma nova habilidade de "debuff" para o Sáparo, que ele pode usar em área.
 - **Custos/Requisitos:** Médio. Requer a implementação de uma nova habilidade.
 - **Efeitos em Variáveis:**
   - `v_influencia_corvos` **+2**
   - **Desbloqueia a habilidade "Canção do Desvanecer".**
 - **Convergência:** A habilidade dá ao jogador uma nova ferramenta tática para a batalha final.
 - **Teaser:** O Corvo: "Eles vieram da dissonância. Devolva-os a ela."
-- **pré-requisito:**  **Saparo-Boca-de-Corneta** no grupo.
+- **pré-requisito:**  **Sáparo-Boca-de-Corneta** no grupo.

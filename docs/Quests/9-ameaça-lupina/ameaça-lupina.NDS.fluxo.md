@@ -15,7 +15,7 @@
 - **Resumo**: Após passarem pela Mina do Esgoto, o grupo se depara com a perturbadora cena de uma emboscada em grande escala. Tusk e os outros três expedicionários estão cercados por um grupo de 4 lobos. Thorin e os membros da Guarda de Ferro com ele se juntam a eles para o combate, evitando assim uma grande catástrofe.
 - **Locais principais**:  
   - World Map
-  - Estrada do Cão-luar (encerramento da quest)
+  - Estrada do Cão Luar (encerramento da quest)
 **NPCs principais**:  
   - Thorin  
   - Kilin  
@@ -69,4 +69,4 @@ Quest: Ameaça Lupina -
 | 1  | Retorno a Superfície                    | Thorin retorna com a Guarda de Ferro e vê Tusk e os expedicionários anãos cercados por Lobos de Gelo.                       | 🎮       |
 | 2  | Batalha Feroz               | O grupo equilibra a batalha e todos sobrevivem.   | 🎮       |
 | 3  | Diálogo              | 🎮       | Os expedicionários agradecem a Thorin, mas Tusk ainda o trata com desdém.
-| 4  | Gildrat à vista!                 | O caminho está livre novamente e o grupo finalmente chega à Estrada do Cão-luar e a quest se encerra.
+| 4  | Gildrat à vista!                 | O caminho está livre novamente e o grupo finalmente chega à Estrada do Cão Luar e a quest se encerra.

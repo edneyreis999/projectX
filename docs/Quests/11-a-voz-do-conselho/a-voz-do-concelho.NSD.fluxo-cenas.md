@@ -12,19 +12,19 @@
 - **Quest anterior**: A Travessia Perigosa  
 - **Conflito central**: Thorin, agora reconhecido por Balastrus, é usado como peça política para legitimar os interesses de exploração de Melios, mas acaba vendo sua amiga Filena ser acusada injustamente, confrontando sua lealdade entre amigos, pai e política imperial.  
 - **Objetivo narrativo global**:  
-  - Recompensar o jogador pela expedição anterior (primeira grande paga em Dráqueis).  
+  - Recompensar o jogador pela expedição anterior (primeira grande paga em Drakeis).  
   - Introduzir Balastrus dentro do círculo político do Imperador Damburr.  
   - Apresentar Filena como vítima da repressão e engatar seu arco.  
   - Direcionar o jogador ao próximo destino narrativo: Mina de Melios.  
 - **Premissa resumida**: Após receber sua primeira paga por Kravens, Thorin acompanha Balastrus até o conselho de Damburr, onde testemunha a crise política causada pelas rebeliões. Filena é acusada de incitar protestos, e Balastrus aproveita para obter o direito de minerar Melios — levando Thorin e seus aliados para legitimar a expedição. A jornada termina com a chegada a Melios e a batalha contra os Corvos, o grupo de anões que abandonou a mineração após encontrar um bloco misterioso.  
 - **Resumo**:  
   A quest começa com Thorin acordando de um sonho intenso com sua mãe. O Sáparo Boca de Corneta o lembra do compromisso com Balastrus. Na taverna, Thorin recebe sua paga e participa de uma conversa sobre a expedição. Guardas então convocam Balastrus ao conselho do Imperador, arrastando também Thorin, Tusk e os demais. No castelo, Thorin testemunha Damburr e seus conselheiros discutindo a onda de rebeliões e a escassez de recursos. Filena é trazida sob acusação de sedição. Balastrus defende a mineração e conquista o direito de explorar Melios, mas exige que Thorin vá junto para impedir sabotagens de Tordan.  
-  Após a audiência, Balastrus libera Thorin para gastar seus Dráqueis no mercado da cidade. O jogador pode se equipar e, depois, encontra o grupo no portão da Estrada do Cão Luar. A caravana parte rumo a Melios, atravessando o mapamúndi com os guardas reais, Balastrus e Tusk.  
+  Após a audiência, Balastrus libera Thorin para gastar seus Drakeis no mercado da cidade. O jogador pode se equipar e, depois, encontra o grupo no portão da Estrada do Cão Luar. A caravana parte rumo a Melios, atravessando o mapamúndi com os guardas reais, Balastrus e Tusk.  
   Ao chegar a Melios, encontram os Corvos, grupo de anões que havia abandonado a exploração após encontrar um bloco de ferro adornado com símbolos estranhos. O confronto se torna inevitável: os Corvos atuam como boss fight. Após a vitória, eles explicam o motivo de sua desistência e partem. A quest termina com a clareira de Melios aberta, preparando o próximo arco narrativo.  
 - **Locais principais**:  
   - Casa da Família Forja Prata (início)  
-  - Taverna de Gildrath  
-  - Praça/ruas de Gildrath (mercado)  
+- Taverna de Gildrat  
+  - Praça/ruas de Gildrat (mercado)  
   - Castelo de Damburr (sala do conselho)  
   - Estrada do Cão Luar  
   - Mapamúndi (travessia até Melios)  
@@ -67,8 +67,8 @@ Thorin desperta de um sonho intenso com sua mãe. Logo é interpelado pelo Sápa
 
 ##### Ida à taverna e pagamento
 
-Thorin vai até a Taverna de Gildrath. Lá encontra Balastrus, Tusk e outros participantes da expedição anterior.
-Balastrus, em seu tom cínico, elogia o desempenho da missão e entrega a Thorin sua primeira recompensa em Dráqueis, reconhecendo-o diante dos demais.
+Thorin vai até a Taverna de Gildrat. Lá encontra Balastrus, Tusk e outros participantes da expedição anterior.
+Balastrus, em seu tom cínico, elogia o desempenho da missão e entrega a Thorin sua primeira recompensa em Drakeis, reconhecendo-o diante dos demais.
 
 ##### Convocação ao conselho imperial
 
@@ -84,7 +84,7 @@ Balastrus, aproveitando a oportunidade, apresenta os resultados da mineração d
 
 ##### Liberdade para se preparar
 
-Após a audiência, Balastrus dá liberdade a Thorin para gastar seus Dráqueis nas lojas do centro da cidade. O jogador pode visitar mercados e se equipar antes de seguir viagem.
+Após a audiência, Balastrus dá liberdade a Thorin para gastar seus Drakeis nas lojas do centro da cidade. O jogador pode visitar mercados e se equipar antes de seguir viagem.
 
 ##### Reencontro na Estrada do Cão Luar
 
@@ -112,14 +112,14 @@ Quest: A Voz do Conselho
  │      Cronologia: Sonho com a mãe → Thorin acorda → Sáparo o lembra do compromisso na taverna
  │      Premissa: Thorin desperta de mais um sonho intenso e recebe de Sáparo o lembrete para encontrar Balastrus.
  ├── Cena 2: A Taverna e o Pagamento
- │      Cronologia: Thorin vai até a taverna → Conversa com Balastrus → Recebe Dráqueis → Guardas convocam todos
+ │      Cronologia: Thorin vai até a taverna → Conversa com Balastrus → Recebe Drakeis → Guardas convocam todos
  │      Premissa: Thorin recebe sua paga, mas é arrastado junto com Balastrus e Tusk ao conselho imperial.
  ├── Cena 3: O Conselho de Damburr
  │      Cronologia: Sala do trono → Discussão sobre rebeliões → Filena acusada → Balastrus ganha direito a Melios
  │      Premissa: O jogador testemunha intrigas políticas; Filena surge como prisioneira e Balastrus conquista a exploração de Melios.
  ├── Cena 4: Preparativos na Cidade
  │      Cronologia: Balastrus libera Thorin → Jogador explora mercado e lojas
- │      Premissa: Jogador pode usar Dráqueis para comprar equipamentos antes da partida.
+ │      Premissa: Jogador pode usar Drakeis para comprar equipamentos antes da partida.
  ├── Cena 5: Estrada do Cão Luar
  │      Cronologia: Thorin encontra Balastrus, Tusk e guardas no portão
  │      Premissa: O grupo se reúne para a expedição rumo a Melios.
@@ -144,15 +144,15 @@ Quest: A Voz do Conselho
 | 1  | Sonho Intenso           | Thorin sonha com sua mãe, em tom urgente, alertando-o de um perigo maior.                      | 🎬       |
 | 2  | Despertar Sobressaltado | Thorin acorda assustado, comenta sozinho (“De novo esse sonho...”) ou pensa em voz alta.       | 🎬       |
 | 3  | Interrupção de Sáparo   | Sáparo Boca de Corneta surge e lembra Thorin do compromisso na taverna com Balastrus.          | 🎬       |
-| 4  | Retomada de Controle    | HUD exibe o objetivo: “Vá até a Taverna de Gildrath”; jogador controla Thorin para sair de casa. | 🎮       |
+| 4  | Retomada de Controle    | HUD exibe o objetivo: “Vá até a Taverna de Gildrat”; jogador controla Thorin para sair de casa. | 🎮       |
 
 ##### Cena 2 – A Taverna e o Pagamento
 
 | #  | Beat                        | Descrição / Decisões do Jogador                                                                  | Controle |
 | ---|-----------------------------|--------------------------------------------------------------------------------------------------|----------|
-| 1  | Chegada à Taverna           | Thorin chega à Taverna de Gildrath e encontra Balastrus, Tusk e outros membros da expedição.     | 🎮       |
+| 1  | Chegada à Taverna           | Thorin chega à Taverna de Gildrat e encontra Balastrus, Tusk e outros membros da expedição.     | 🎮       |
 | 2  | Conversa com Balastrus      | Balastrus, em tom cínico, elogia a expedição e reconhece o desempenho de Tusk e Thorin.          | 🎬       |
-| 3  | Recompensa em Dráqueis      | Balastrus entrega Dráqueis a Thorin, sua primeira grande paga, reforçando sensação de conquista. | 🎬       |
+| 3  | Recompensa em Drakeis      | Balastrus entrega Drakeis a Thorin, sua primeira grande paga, reforçando sensação de conquista. | 🎬       |
 | 4  | Interrupção dos Guardas     | Guardas imperiais entram e anunciam que Balastrus deve se apresentar no conselho imediatamente.  | 🎬       |
 | 5  | Convocação Estendida        | Sob ordens de Tordan, Thorin, Tusk e os demais são arrastados juntos para o castelo.             | 🎬       |
 
@@ -162,7 +162,7 @@ Quest: A Voz do Conselho
 | ---|--------------------------------|-------------------------------------------------------------------------------------------------|----------|
 | 1  | Entrada no Castelo             | O grupo é conduzido até a sala do trono, onde Damburr discute com seus conselheiros e Tordan. Durante a chegada, o grupo vê uma multidão protestando em frente ao castelo.  | 🎬       |
 | 2  | Debate sobre Rebeliões         | Conselheiros relatam aumento das revoltas e a falta de recursos para controlar a população.     | 🎬       |
-| 3  | Aparição de Filena             | Guardas trazem Filena como prisioneira, acusada de incitar a rebelião em Gildrath.             | 🎬       |
+| 3  | Aparição de Filena             | Guardas trazem Filena como prisioneira, acusada de incitar a rebelião em Gildrat.             | 🎬       |
 | 4  | Defesa de Balastrus            | Balastrus apresenta os resultados da mineração de Kravens e se exalta, defendendo sua importância. | 🎬    |
 | 5  | Conquista de Melios            | Balastrus pressiona e consegue o direito de explorar Melios, mas Balastrus exige que Thorin vá junto. | 🎬    |
 
@@ -170,9 +170,9 @@ Quest: A Voz do Conselho
 
 | #  | Beat                      | Descrição / Decisões do Jogador                                                                 | Controle |
 | ---|---------------------------|-----------------------------------------------------------------------------------------------|----------|
-| 1  | Liberdade Concedida       | Após a audiência, Balastrus diz a Thorin que ele pode usar seus Dráqueis no mercado antes da partida. | 🎬       |
-| 2  | Exploração do Mercado     | Jogador pode andar pelas ruas de Gildrath, interagir com vendedores e NPCs.                   | 🎮       |
-| 3  | Compras Opcionais         | Jogador decide se gasta Dráqueis em equipamentos, itens de cura ou upgrades de status.        | 🎮       |
+| 1  | Liberdade Concedida       | Após a audiência, Balastrus diz a Thorin que ele pode usar seus Drakeis no mercado antes da partida. | 🎬       |
+| 2  | Exploração do Mercado     | Jogador pode andar pelas ruas de Gildrat, interagir com vendedores e NPCs.                   | 🎮       |
+| 3  | Compras Opcionais         | Jogador decide se gasta Drakeis em equipamentos, itens de cura ou upgrades de status.        | 🎮       |
 | 4  | Preparativos Encerrados   | HUD atualiza objetivo: “Encontre Balastrus no portão da Estrada do Cão Luar”.                 | 🎬       |
 
 ##### Cena 5 – Estrada do Cão Luar

@@ -9,12 +9,12 @@
 - **Importância na campanha**: Main (tamanho reduzido)
 - **Arco narrativo**: Recusa do Chamado  
 - **Quest anterior**: Ameaça Lupina  
-- **Conflito central**: O grupo retorna à Gildrat e encontra Balastrus os esperando na Estrada do Cão-luar, ansioso por saber os resultados da última expedição e recolher os minérios. O jogador tem escolhas a fazer com grande impacto na narrativa. Thorin espera nunca mais ver Balastrus ou Tusk, nem ouvir falar das expedições, mas quando o pagamento não é realizado na data prometida, começa a desconfiar de que a situação está longe de acabar. Ele retorna para casa e dorme, sonhando com Mélia outra vez, que desta vez lhe mostra um símbolo estranho.
+- **Conflito central**: O grupo retorna à Gildrat e encontra Balastrus os esperando na Estrada do Cão Luar, ansioso por saber os resultados da última expedição e recolher os minérios. O jogador tem escolhas a fazer com grande impacto na narrativa. Thorin espera nunca mais ver Balastrus ou Tusk, nem ouvir falar das expedições, mas quando o pagamento não é realizado na data prometida, começa a desconfiar de que a situação está longe de acabar. Ele retorna para casa e dorme, sonhando com Mélia outra vez, que desta vez lhe mostra um símbolo estranho.
 - **Objetivo narrativo global**: Introduzir ramificações narrativas, o selo que prende os Ignotos e dar ao jogador a escolha do que fazer em relação aos minérios coletados.
 - **Premissa resumida**: Thorin se vê dividido, pois não sabe ao certo quais serão os impactos de suas escolhas a longo prazo. Balastrus está ansioso pelos resultados e acaba o precionando um pouco.  
-- **Resumo**: Após a sequência da nevasca e batalhas, o grupo está de volta à Gildrat. Eles prestam contas na Estrada do Cão-luar antes de receberem o pagamento enfim irem para casa. Balastrus resolve então adiar o pagamento para o dia seguinte.
+- **Resumo**: Após a sequência da nevasca e batalhas, o grupo está de volta à Gildrat. Eles prestam contas na Estrada do Cão Luar antes de receberem o pagamento enfim irem para casa. Balastrus resolve então adiar o pagamento para o dia seguinte.
 - **Locais principais**:  
-  - Estrada do Cão-luar
+  - Estrada do Cão Luar
   - Distrito Comercial
   - Distrito Residencial
   - Casa dos Forjaprata
@@ -42,8 +42,8 @@
 ### 3️ Fluxo Visual Resumido *(Checkpoint 2)*
 
 Quest: Barganha do Sigmetal -
- ├── Cena 1: Estrada do Cão-luar — Premissa: Conversa com Balastrus sobre a entrega dos minérios e multiplas escolhas
- │      ├── Beat 1: Chegada à Estrada do Cão-luar (🎬)
+ ├── Cena 1: Estrada do Cão Luar — Premissa: Conversa com Balastrus sobre a entrega dos minérios e multiplas escolhas
+ │      ├── Beat 1: Chegada à Estrada do Cão Luar (🎬)
  │      ├── Beat 2: Conversa com Balastrus (🎮)
  │      ├── Beat 3: Escolhas sobre qual minério entregar (🎮)
  │
@@ -75,7 +75,7 @@ Quest: Barganha do Sigmetal -
 
 ##### Beats por cena
 
-##### Cena 1 – Estrada do Cão-luar
+##### Cena 1 – Estrada do Cão Luar
 
 | #  | Beat                                    | Descrição                                                                                                    | Controle |
 | ---|----------------------------------------|--------------------------------------------------------------------------------------------------------------|----------|

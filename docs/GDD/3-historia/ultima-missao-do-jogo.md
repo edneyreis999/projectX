@@ -78,7 +78,7 @@ Eu preciso de uma cena de filme, serie ou jogo para me inspirar a descrever essa
   > “Precisamos de alguém bem chato que atraia a atenção deles. Para as armadilhas”
 - Cena de humor cinematográfico: a câmera percorre todos os presentes e foca no escolhido.
 - **Escolha automática da isca (ordem de eficiência):**
-  1. Saparo Boca-de-Corneta (se recrutado)  
+  1. Sáparo Boca-de-Corneta (se recrutado)  
   2. Tusk (padrão)
 - Cena no mapa do distrito comercial externo (visão topdown):
   - Exército dos Ignotos posicionado em frente ao castelo.
@@ -91,7 +91,7 @@ Eu preciso de uma cena de filme, serie ou jogo para me inspirar a descrever essa
 
 | Isca escolhida                    | Resultado das armadilhas |
 |----------------------------------|---------------------------|
-| Saparo Boca-de-Corneta           | Funcionam 100%            |
+| Sáparo Boca-de-Corneta           | Funcionam 100%            |
 | Tusk                             | Portão se abre, mas ninguém sai |
 
 Esses resultados influenciam a fase 2:

@@ -86,7 +86,7 @@ Primeiro Combate: Ao saírem da montanha e atravessarem Ekios para chegar até a
 
 É testado constantemente conforme a expedição avança, conseguindo pouco a pouco se aproximar de Thorin e atrair sua atenção, ensinando-o a prever o tempo, situações e inimigos.
 
-## 2.1) Linha de Transformação avançada - Ato II / Provação / Até a volta de Mélios
+## 2.1) Linha de Transformação avançada - Ato II / Provação / Até a volta de Melios
 
 Emoção Predominante: Conflito.
 
@@ -98,7 +98,7 @@ Contradições Internas Ativas: Dar ouvido aos seus instintos vs. Dar ouvidos à
 
 Arquétipo predominante: Mentor.
 
-Principais inimigos: Tusk, o anão caolho, Balastrus, Imperador Dambur (a ser tratado de forma sutil), políticos.
+Principais inimigos: Tusk, o anão caolho, Balastrus, Imperador Damburr (a ser tratado de forma sutil), políticos.
 
 ## 2.2) Gatilhos do Ato II - mudanças à caminho
 
@@ -106,17 +106,17 @@ Aqui ocorrem os pontos de virada que quebram a identidade estável de Kilin.
 
 Travessia Perigosa: Tusk insiste em voltar mesmo sob uma forte tempestade de neve, para oferecer os resultados da expedição que se encerrou abruptamente a Balastrus o mais rápido possível. Kilin oferece uma visão lógica sobre os perigos, insistindo que deveriam esperar, conseguindo até mesmo convencer os outros expedicionarios. Mas Tusk não cede, ele ameaça e pressiona os trabalhadores a respeito de seus pagamentos e Kilin percebe que o diálogo não adiantará no caso do caolho. Mas antes que possa desembainhar sua espada, Thorin pede a ele pessoalmente para que sigam Tusk, afim de não piorar mais a situação. Espantado, Kilin se vê incapaz de dizer não ao garoto que demonstrou prestar mais atenção em suas palavras do que ele poderia imaginar. Ele prepara a Guarda de Ferro para os combates que haverão durante a travessia.
 
-Tavessia Tóxica/Ameaça Lupina/Barganha do Sigmetal: Kilin se aproxima cada vez mais de Thorin à medida em que situações ocorrem. Ele não só luta pelo garoto, mas também o ensina a sobreviver. Thorin acaba falando um pouco sobre sua família e Kilin menciona pela primeira vez as rebeliões que estão acontecendo em Gildrat. Quando retornam à Estrada do Cão-luar, Kilin não gosta de ver Balastrus precionando para que Thorin lhe conte sobre o que encontrou na mina, mas age normalmente e observa tudoa atentamente, a espera de uma brecha ou informação que possa usar contra ele.
+Travessia Tóxica/Ameaça Lupina/Barganha do Sigmetal: Kilin se aproxima cada vez mais de Thorin à medida em que situações ocorrem. Ele não só luta pelo garoto, mas também o ensina a sobreviver. Thorin acaba falando um pouco sobre sua família e Kilin menciona pela primeira vez as rebeliões que estão acontecendo em Gildrat. Quando retornam à Estrada do Cão Luar, Kilin não gosta de ver Balastrus precionando para que Thorin lhe conte sobre o que encontrou na mina, mas age normalmente e observa tudoa atentamente, a espera de uma brecha ou informação que possa usar contra ele.
 
 ## 3) Linha de Transformação básica
 
-O grupo é forçado a se aventurar em uma nova expedição, dessa vez na Mina de Mélios, a mais perigosa das redondezas. Incapaz de fazer com que seu imperador visse o estado crítico que seu povo e cidade-fortaleza se encontravam, só lhe restou voltar à missão de proteger Thorin.
+O grupo é forçado a se aventurar em uma nova expedição, dessa vez na Mina de Melios, a mais perigosa das redondezas. Incapaz de fazer com que seu imperador visse o estado crítico que seu povo e cidade-fortaleza se encontravam, só lhe restou voltar à missão de proteger Thorin.
 
 ## 3.1) Linha de Transformação avançada - Ato III / Transformação
 
 Emoção Predominante: Resolução, Aceitação
 
-Objetivo Imediato: Fazer Dambur enxergar a realidade dos problemas de Gildrat e proteger Thorin novamente.
+Objetivo Imediato: Fazer Damburr enxergar a realidade dos problemas de Gildrat e proteger Thorin novamente.
 
 Relação com Valores Centrais: Seu "Dever" evolui de seguir ordens para uma responsabilidade maior com o futuro do povo anão, mesmo que isso signifique desafiar velhas leis.
 
@@ -132,13 +132,13 @@ Cicatrizes: Não possui.
 
 Principais amizades: Thorin (relação de respeito mútuo), Mhordred e Tharok.
 
-Principais inimigos: Balastrus, Dambur, Ignotos.
+Principais inimigos: Balastrus, Damburr, Ignotos.
 
 ## 3.2) Gatilhos do Ato III - mudanças à caminho
 
-A Voz do Conselho: Aqui a transformação de Kilin é consolidada, podendo ser mostrada de diferentes pontos narrativos. Kilin acompanha o grupo à Mina de Mélios, já que o imperador não quis lhe dar ouvidos. Ele acaba sendo tragado pelo fluxo de acontecimentos, retornando à tarefa anterior de proteger Filena (amiga de Thorin) e Thorin, que agora é capaz de sentir sua ansiedade.
+A Voz do Conselho: Aqui a transformação de Kilin é consolidada, podendo ser mostrada de diferentes pontos narrativos. Kilin acompanha o grupo à Mina de Melios, já que o imperador não quis lhe dar ouvidos. Ele acaba sendo tragado pelo fluxo de acontecimentos, retornando à tarefa anterior de proteger Filena (amiga de Thorin) e Thorin, que agora é capaz de sentir sua ansiedade.
 
-Quebra do Selo em Mélios: Apesar de seus avisos, Balastrus rompe um selo rúnico antigo e liberta a terrível ameaça dos Ignotos. Kilin luta bravamente, mas é incapaz de conter a ameaça. Ele fica para trás junto de Tharok para que Mhordred, Thorin e Filena consigam fugir.
+Quebra do Selo em Melios: Apesar de seus avisos, Balastrus rompe um selo rúnico antigo e liberta a terrível ameaça dos Ignotos. Kilin luta bravamente, mas é incapaz de conter a ameaça. Ele fica para trás junto de Tharok para que Mhordred, Thorin e Filena consigam fugir.
 
 O Prisioneiro: Kilin acredita que Mhordred e os outros voltarão para resgatá-los, mas enquanto está preso, acaba sendo obrigado a confrontar velhos fantasmas. Como Mhordred se sairá liderando sozinho o grupo de Thorin? Talvez ele não confie tanto em seu velho amuigo como imaginava. Como o Lorde Anão, comandante da Guarda de Ferro pôde acabar se tornando um prisioneiro impotente? Essas questões mexem com sua cabeça. Ele ainda demonstra honra, silêncio e disciplina em seu semblante por fora, mas por dentro, trancafiado em sua mente, grita desesperadamente por ajuda.
 

@@ -85,8 +85,8 @@ A escolha afeta apenas falas e reações; o grupo parte assim mesmo.
 | 1  | Início da travessia                      | O grupo começa a travessia sob forte tempestade de neve, enfrentando o clima severo.                | 🎮       |
 | 2  | Encontros com inimigos fortalecidos     | O jogador enfrenta inimigos já conhecidos, porém em versões mais poderosas e agressivas.            | 🎮       |
 | 3  | Sequência intensa de batalhas            | Cerca de 6 batalhas seguidas próximas uma da outra, gerando tensão e desafio para o jogador.       | 🎮       |
-| 4  | Quebra narrativa - Flash para Reed e criança | Jogador é teletransportado para a noite da história, onde Reed narra e uma criança (jogador infantil) reclama da repetição das batalhas. | 🎬       |
-| 5  | Reed menciona a caverna                   | Reed explica que ao lado deles há uma caverna, abrindo uma nova possibilidade na história.          | 🎬       |
+| 4  | Quebra narrativa - Flash para Rheed e criança | Jogador é teletransportado para a noite da história, onde Rheed narra e uma criança (jogador infantil) reclama da repetição das batalhas. | 🎬       |
+| 5  | Rheed menciona a caverna                   | Rheed explica que ao lado deles há uma caverna, abrindo uma nova possibilidade na história.          | 🎬       |
 | 6  | Retorno à travessia no Mapamúndi          | A narrativa retorna ao mapa mundi, agora com a entrada da caverna liberada.                         | 🎮       |
 | 7  | Exploração da caverna                      | Jogador entra na caverna, resolve um puzzle e obtém o item “Símbolo da Trégua”.                    | 🎮       |
 | 8  | Funcionalidade do Símbolo da Trégua       | O item permite acumular e absorver as batalhas convencionais do mapa mundi para serem enfrentadas em um combate único posteriormente. | 🎮       |

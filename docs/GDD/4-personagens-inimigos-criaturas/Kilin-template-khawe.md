@@ -159,7 +159,7 @@ O que ele busca de benefício na trama principal? Seu benefício buscado é pura
 
 ## Desenvolvimento Emocional
 
-Qual é o seu maior sonho e objetivo no momento? Seu maior sonho é um dia se aposentar em uma pequena forja nas montanhas, em paz e silêncio, com exceção do barulho das marteladas forjando novos caminhos. Seu objetivo imediato é a sobrevivência do povo anão como um todo, fazendo Dambur enxergar a realidade dos problemas que permeiam Gildrat.
+Qual é o seu maior sonho e objetivo no momento? Seu maior sonho é um dia se aposentar em uma pequena forja nas montanhas, em paz e silêncio, com exceção do barulho das marteladas forjando novos caminhos. Seu objetivo imediato é a sobrevivência do povo anão como um todo, fazendo Damburr enxergar a realidade dos problemas que permeiam Gildrat.
 
 Quem é sua pessoa favorita? Como ela o faz se sentir? Seu irmão de armas, Mhordred. Apesar da natureza explosiva de Mhordred ser o oposto da sua, Kilin vê a lealdade absoluta sob a fúria. Mhordred o faz se sentir equilibrado; a fúria dele o lembra do fogo que ele mesmo se esforça tanto para manter sob controle.
 

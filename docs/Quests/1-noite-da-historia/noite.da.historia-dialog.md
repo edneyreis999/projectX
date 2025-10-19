@@ -2,10 +2,10 @@
 
 ## 1. Contexto Consolidado
 
-* **Premissa resumida:** Durante o festival “Noite da História”, um jovem espectador alcança a primeira fileira diante de Theodore Reed, revela seu nome e é envolto por uma fumaça mágica que o transporta ao passado de Thorin. fileciteturn4file0
-* **Emoção-âncora:** Maravilha com leve urgência. fileciteturn4file0
+* **Premissa resumida:** Durante o festival “Noite da História”, um jovem espectador alcança a primeira fileira diante de Theodore Rheed, revela seu nome e é envolto por uma fumaça mágica que o transporta ao passado de Thorin.
+* **Emoção-âncora:** Maravilha com leve urgência. 
 * **Cenas:** 1 (listada abaixo)
-* **Variáveis globais:** `v_qNoite_progress`, `v_player_name` fileciteturn4file0
+* **Variáveis globais:** `v_qNoite_progress`, `v_player_name` 
 * **Plugins/Observações:** Nenhum plugin adicional; lógica nativa do RPG Maker.
 
 ## 2. Cenas Detalhadas
@@ -13,7 +13,7 @@
 ### Cena 1 — “Chegada & Conto” ✅
 
 **Contexto**
-Noite fresca de outono na Praça Central de Daratrine (Mapa 005). A fogueira estala, projetando sombras nas crianças. Um **brilho azulado** marca um banco vazio em frente ao palco. Theodore “Rheed” Reed, anão contador de histórias de riso fácil, anda de um lado a outro, balançando as tranças da barba.
+Noite fresca de outono na Praça Central de Daratrine (Mapa 005). A fogueira estala, projetando sombras nas crianças. Um **brilho azulado** marca um banco vazio em frente ao palco. Theodore “Rheed” Rheed, anão contador de histórias de riso fácil, anda de um lado a outro, balançando as tranças da barba.
 
 **Objetivo Dramático**
 Despertar curiosidade e relacionar o atraso do jogador ao atraso de Thorin.
@@ -49,7 +49,7 @@ Despertar curiosidade e relacionar o atraso do jogador ao atraso de Thorin.
 * Quando `v_qNoite_progress == 2`, transferência automática para a quest **“A Semifinal”**.
 
 **Restrição de Tempo**
-Cena ≤ 2 min (nome aceito) / ≤ 5 min (nome digitado). fileciteturn4file0
+Cena ≤ 2 min (nome aceito) / ≤ 5 min (nome digitado). 
 
 ## 4. Notas Adicionais
 
@@ -57,4 +57,5 @@ Cena ≤ 2 min (nome aceito) / ≤ 5 min (nome digitado). filecite
 * **Dependências:** Evento “brilho azul” ID ‑18, Evento 017 Rheed.
 * **Restrições extras:** Cena deve permanecer acessível (texto < 280 caracteres por balão).
 
-*Gerado em: 2025‑06‑17 00:00 (America/Sao\_Paulo)*
+*Gerado em: 2025‑06‑17 00:00 (America/Sao_Paulo)*
+
