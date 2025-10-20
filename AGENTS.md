@@ -46,3 +46,14 @@
 - Plan: see `frontend/js/PLANO_PADRONIZACAO_PLUGINS.md` for architecture, naming, tests and Definition of Done for quest plugins.
 - Reuse check: before creating a new plugin, review `frontend/docs/plugins` to reuse documented patterns or methods.
 - Onboarding: for a quick primer on plugin structure, see the "Estrutura de Plugins" section in `README.md`.
+
+## Navegação no zord-project
+
+- Localização: `zord-project` é irmão de `projectX` no mesmo workspace. Do raiz de `projectX`, acesse com: `cd .. && cd zord-project`.
+- Voltar ao `projectX`: a partir do `zord-project`, use: `cd .. && cd projectX`.
+- Estrutura relevante: os comandos operacionais e playbooks ficam em `zord-project/comandos/`.
+- Resolução de “comandos”: sempre que houver a instrução “executar um comando dentro de 'comandos'”, interprete como “navegue até `zord-project` e encontre/execute o arquivo correspondente em `comandos/`”. Ex.: `zord-project/comandos/<arquivo>.md`.
+- Descoberta rápida:
+  - Listar comandos: `ls -la ../zord-project/comandos` (a partir de `projectX`).
+  - Buscar por um nome: `rg -n "<termo>" ../zord-project/comandos`.
+- Convenção: mantenha leituras e execuções de instruções sempre no contexto do `zord-project` quando o pedido mencionar “comandos”.
