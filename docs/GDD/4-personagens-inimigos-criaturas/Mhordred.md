@@ -32,7 +32,7 @@ Maior sonho: Morrer em uma batalha gloriosa, defendendo aqueles que ama, e ter s
 
 Maior medo: Ser incapaz de proteger seus amigos em um momento crucial; ser visto como fraco ou inútil.
 
-Principais parentescos: Kilin (melhor amigo/irmão de armas), Tharok (protegido/aluno).
+Principais parentescos: Kilin (melhor amigo/irmão de armas).
 
 ## 1.1) Linha de Transformação básica
 
@@ -68,7 +68,7 @@ Hobbies: Beber em competições, treinar até a exaustão, colecionar troféus d
 
 Reações quando contrariado: Grita, bate o punho na mesa, desafia o interlocutor para um duelo.
 
-Principais amizades: Kilin, seu pilar de calma, e Tharok, a quem ele ensina a lutar de forma agressiva.
+Principais amizades: Kilin, seu pilar de calma.
 
 Principais inimigos: Qualquer um que ele considere fraco, covarde ou desonesto.
 
@@ -108,13 +108,13 @@ Travessia Tóxica/Ameaça Lupina/Barganha do Sigmetal: Mhordred é a linha de fr
 
 ## 3) Linha de Transformação básica
 
-Com o sequestro de Kilin e Tharok, Mhordred é forçado a assumir a liderança, um papel para o qual não está preparado. O peso da responsabilidade o obriga a tentar pensar antes de agir.
+Com o sequestro de Kilin, Mhordred é forçado a assumir a liderança, um papel para o qual não está preparado. O peso da responsabilidade o obriga a tentar pensar antes de agir.
 
 ## 3.1) Linha de Transformação avançada - Ato III / Transformação
 
 Emoção Predominante: Responsabilidade, Desespero.
 
-Objetivo Imediato: Manter Thorin e Filena vivos, resgatar Kilin, Tharok e o pai da Filena.
+Objetivo Imediato: Manter Thorin e Filena vivos, resgatar Kilin e o pai da Filena.
 
 Relação com Valores Centrais: Seus valores de "Lealdade" e "Força" são testados. Ele precisa usar sua força não apenas para destruir, mas para proteger ativamente, o que exige um controle que ele raramente exercita.
 
@@ -134,7 +134,7 @@ Principais inimigos: Ignotos.
 
 ## 3.2) Gatilhos do Ato III - mudanças à caminho
 
-Quebra do Selo em Melios: A captura de Kilin e Tharok é seu ponto de virada. A ordem de Kilin para que ele fuja com Thorin e Filena é a mais difícil que já cumpriu, indo contra seu instinto de nunca abandonar um irmão.
+Quebra do Selo em Melios: A captura de Kilin é seu ponto de virada. A ordem de Kilin para que ele fuja com Thorin e Filena é a mais difícil que já cumpriu, indo contra seu instinto de nunca abandonar um irmão.
 
 O Prisioneiro (perspectiva de Mhordred): Enquanto Kilin está preso, Mhordred está no inferno. Ele é o líder. Cada decisão pesa uma tonelada. Ele tenta imitar a calma de Kilin e falha, ficando frustrado. Ele comete erros, mas sua determinação feroz em proteger os jovens o força a aprender e a se adaptar, desenvolvendo um respeito tardio pela dificuldade do trabalho de Kilin.
 

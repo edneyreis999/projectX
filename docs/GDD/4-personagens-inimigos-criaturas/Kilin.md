@@ -32,7 +32,7 @@ Maior sonho: Aposentar-se em paz em uma pequena forja nas montanhas.
 
 Maior medo: Falhar em sua liderança e ver alguém sob seus cuidados morrer novamente.
 
-Principais parentescos: Pai (guerreiro da Guarda de Ferro), Mãe (artesã), Mhordred (melhor amigo), Tharok (amigo próximo).
+Principais parentescos: Pai (guerreiro da Guarda de Ferro), Mãe (artesã), Mhordred (melhor amigo).
 
 ## 1.1) Linha de Transformação básica
 
@@ -68,7 +68,7 @@ Hobbies: Apreciar pequenas coisas em solidão, beber, afiar sua espada e assisti
 
 Reações quando contrariado: Torna-se ainda mais silencioso e imóvel.
 
-Principais amizades: Mhordred, seu irmão de armas, e Tharok, o mais jovem dos três a quem ele e Mhordred vinham treinando juntos.
+Principais amizades: Mhordred, seu irmão de armas.
 
 Principais inimigos: Nenhum ser em especial, apenas a imprudência e a desonestidade.
 
@@ -78,7 +78,7 @@ Arco narrativo do personagem no jogo atualmente: Expedições - Ele atua como um
 
 A Semifinal: Kilin deixará para Mhordred a função de brigar com Thorin quando a Guarda o busca à força pela primeira vez durante a partida de futebol Rúnico. Kilin fala pouco, mas acaba admitindo que também não sabe ao certo como reagir à situação de ter que cuidar de alguém de forma tão específica, pois nunca teve irmãos, primos ou qualquer coisa parecida.
 
-Primeiro Contrato: Tordan antecipa a desobediência de Thorin e manda que seus guardas o esperem escondido ao lado de fora de casa para o caso dele tentar fugir novamente. Ele estava certo, Thorin tenta fugir, mas é impedido por Kilin, Mhordred e Tharok. O veterano entende a fúria do garoto, vê Mhordred discutindo constantemente com ele, mas ao invés de fazer o mesmo, resolve aconselhá-lo de forma sutil a agir com calma, ainda que no início Thorin ignore tudo o que saia de sua boca.
+Primeiro Contrato: Tordan antecipa a desobediência de Thorin e manda que seus guardas o esperem escondido ao lado de fora de casa para o caso dele tentar fugir novamente. Ele estava certo, Thorin tenta fugir, mas é impedido por Kilin e Mhordred. O veterano entende a fúria do garoto, vê Mhordred discutindo constantemente com ele, mas ao invés de fazer o mesmo, resolve aconselhá-lo de forma sutil a agir com calma, ainda que no início Thorin ignore tudo o que saia de sua boca.
 
 Primeiro Combate: Ao saírem da montanha e atravessarem Ekios para chegar até a Mina de Kravens, O jogador testemunha sua maestria defensiva durante os combates, percebendo que Kilin é diferente de qualquer outro guerreiro que já tenha visto.
 
@@ -130,7 +130,7 @@ Hobbies: Forjar, beber e meditar.
 
 Cicatrizes: Não possui.
 
-Principais amizades: Thorin (relação de respeito mútuo), Mhordred e Tharok.
+Principais amizades: Thorin (relação de respeito mútuo), Mhordred.
 
 Principais inimigos: Balastrus, Damburr, Ignotos.
 
@@ -138,7 +138,7 @@ Principais inimigos: Balastrus, Damburr, Ignotos.
 
 A Voz do Conselho: Aqui a transformação de Kilin é consolidada, podendo ser mostrada de diferentes pontos narrativos. Kilin acompanha o grupo à Mina de Melios, já que o imperador não quis lhe dar ouvidos. Ele acaba sendo tragado pelo fluxo de acontecimentos, retornando à tarefa anterior de proteger Filena (amiga de Thorin) e Thorin, que agora é capaz de sentir sua ansiedade.
 
-Quebra do Selo em Melios: Apesar de seus avisos, Balastrus rompe um selo rúnico antigo e liberta a terrível ameaça dos Ignotos. Kilin luta bravamente, mas é incapaz de conter a ameaça. Ele fica para trás junto de Tharok para que Mhordred, Thorin e Filena consigam fugir.
+Quebra do Selo em Melios: Apesar de seus avisos, Balastrus rompe um selo rúnico antigo e liberta a terrível ameaça dos Ignotos. Kilin luta bravamente, mas é incapaz de conter a ameaça. Ele fica para trás para que Mhordred, Thorin e Filena consigam fugir.
 
 O Prisioneiro: Kilin acredita que Mhordred e os outros voltarão para resgatá-los, mas enquanto está preso, acaba sendo obrigado a confrontar velhos fantasmas. Como Mhordred se sairá liderando sozinho o grupo de Thorin? Talvez ele não confie tanto em seu velho amuigo como imaginava. Como o Lorde Anão, comandante da Guarda de Ferro pôde acabar se tornando um prisioneiro impotente? Essas questões mexem com sua cabeça. Ele ainda demonstra honra, silêncio e disciplina em seu semblante por fora, mas por dentro, trancafiado em sua mente, grita desesperadamente por ajuda.
 

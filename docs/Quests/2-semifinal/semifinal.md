@@ -20,4 +20,4 @@ Sem tempo para verificar equipamentos, Thorin atravessa os distritos de **Gildra
 
 3. Tendo encontrado o capacete perdido, você retornou a Dragobur, entrou em campo nos acréscimos e marcou o gol decisivo que garantiu a vitória dos Machados Enferrujados. **Erga o troféu sob os aplausos e celebre depressa — guardas imperiais já se aproximam do gramado!**
 
-4. Enquanto celebrava com o troféu em mãos, os guardas imperiais Kilin, Mhordred e Tharok atravessaram a multidão, exigindo sua escolta imediata por ordem de seu pai. **Siga os guardas de volta para casa sem demora e descubra por que seu retorno foi convocado tão urgentemente!**
+4. Enquanto celebrava com o troféu em mãos, os guardas imperiais Kilin e Mhordred atravessaram a multidão, exigindo sua escolta imediata por ordem de seu pai. **Siga os guardas de volta para casa sem demora e descubra por que seu retorno foi convocado tão urgentemente!**
