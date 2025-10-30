@@ -156,7 +156,7 @@ Com o cativeiro de Kilin, Mhordred é forçado a assumir momentaneamente a lider
 
 ### 3.1) Linha de Transformação avançada - Ato III / Transformação
 
-Emoção Predominante: Responsabilidade, Desespero.
+Emoção Predominante: Responsabilidade, Ansiedade.
 
 Objetivo Imediato: Manter Thorin e Filena vivos, resgatar Kilin, fazer Valamir pagar.
 
@@ -223,4 +223,22 @@ O trauma de Mhordred se dá ao ser forçado a fugir enquanto seus irmãos perman
 
 ### Como lidar com a descoberta de que Thorin, a quem você deve proteger, usa magia? Durante um momento de desespero, Thorin, de alguma forma, usa magia, o que é considerado um sacrilégio entre os anões
 
-Mhordred não se importaria com o conceito de "sacrilégio". Sua reação seria puramente pragmática e focada no combate. Ele veria a magia e faria uma única pergunta: "Isso é forte? Você pode usar isso para matar nossos inimigos?" Para ele, poder é poder. Se a magia de Thorin pode ser usada como uma arma para proteger o grupo, então é uma ferramenta bem-vinda ao arsenal.
+Mhordred não se importaria com o conceito de "sacrilégio". Sua reação seria puramente pragmática e focada no combate. Ele veria a magia e faria duas pergunta: "Isso é forte? Você pode usar isso para matar nossos inimigos?" Para ele, poder é poder. Se a magia de Thorin pode ser usada como uma arma para proteger o grupo, então é uma ferramenta bem-vinda ao arsenal.
+
+## Quem passará mal na fogueira e não vai acordar?
+
+Mhordred passará mal por comer carne estragada. Na manhã seguinte, a guarda se atrasará para acompanhar Thorin e Filena, pois Kilin percebe que o irmão está mal e ficará para ajudá-lo primeiro.
+
+## Qual a reação de Mhordred sob a hipótese de não ter acordado na hora certa para acompanhar Thorin na mina de Kravens?
+
+Mhordred colocará a culpa na carne. Ficará furioso com o vendedor e até dirá que quando tiver tempo fará a devida cobrança. Sua raiva será direcionada a todos, não apenas a si mesmo, já que foi uma sequência de acontecimentos que o impossibilitou de estar nas minas na hora certa.
+
+## Qual cena na mina de Mélios vai explicitamente mostrar a mudança do arco de Mhordred?
+
+O retorno para resgatar Kilin, com Thorim já na Guarda de Ferro e, consequentemente, sua morte em batalha.
+
+## Qual a reação dos guerreiros depois do resgate de Kilin?
+
+Mhordred está aliviado e Kilin orgulhoso, tanto dele quanto de Thorin. Mhordred devolve a liderança do grupo a Kilin e ira o peso do mundo dos ombros. Ele até gostou da experiência, mas sabe que não nasceu para isso, é bom precisar somente focar no ataque novamente!
+
+Kilin percebe que se preocupou atoa, que seu irmão de armas fez um ótimo trabalho e também se sente aliviado. Ele rasga elogios a todos, diz a Thorin que o recebe de braços abertos como novo guerreiro.

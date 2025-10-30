@@ -22,7 +22,7 @@ Medo Fundamental: Fracasso.
 
 Virtude Principal: Calma.
 
-Fraqueza Principal: Cansaço (de décadas de batalhas).
+Fraqueza Principal: Cansaço (de décadas de batalhas e o desejo de se aposentar).
 
 Aparência: Postura ereta que irradia autoridade silenciosa, com barba trançada por anéis de ferro e um bigode volumoso.
 
@@ -144,7 +144,7 @@ Os remanescentes da Família Corvinus se recusam a deixar o local mesmo sob o de
 
 ## 3) Linha de Transformação básica
 
-O grupo é forçado a se aventurar em uma nova expedição, dessa vez na Mina de Melios, a mais perigosa das redondezas. Incapaz de fazer com que seu imperador visse o estado crítico que seu povo e cidade-fortaleza se encontravam, só lhe restou voltar à missão de proteger Thorin.
+A ameaça dos Ignotos é eminente. Avisar o império passa a ser prioridade, mas todos os caminhos estão repletos de inimigos e o grupo agora tem um novo líder, Mhordred, que fora da esfera militar não tem experiência nenhuma.
 
 ### 3.1) Linha de Transformação avançada - Ato III / Transformação
 
@@ -152,11 +152,11 @@ Emoção Predominante: Resolução, Aceitação.
 
 Objetivo Imediato: Fazer Dambur enxergar a realidade dos problemas de Gildrat e proteger Thorin e Filena novamente.
 
-Relação com Valores Centrais: Seu "Dever" evolui de seguir ordens para uma responsabilidade maior com o futuro do povo anão, mesmo que isso signifique desafiar velhas leis.
+Relação com Valores Centrais: Seu "Dever" evolui de seguir ordens para uma responsabilidade maior com o futuro do povo anão e aqueles que estão sob sua proteção.
 
-Contradições Internas Ativas: O desejo de se aposentar em paz vs. a aceitação de seu papel crucial como guerreiro.
+Contradições Internas Ativas: O desejo de se aposentar em paz vs. a aceitação de seu papel crucial como guerreiro e o destino cruel que soferá nas mãos dos Ignotos.
 
-Arquétipo predominante: Sábio, Governante (no sentido de conselheiro da perspectiva militar).
+Arquétipo predominante: Prisioneiro.
 
 Profissão/ocupação: Lorde Anão, Conselheiro Militar do Império.
 
