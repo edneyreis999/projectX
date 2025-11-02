@@ -12,7 +12,7 @@
 - **Conflito central**: Tusk pressiona a equipe a partir em meio a uma tempestade de neve para apresentar os resultados da expedição, enquanto Thorin e os guardas enfrentam as consequências dessa decisão.  
 - **Objetivo narrativo global**: Escalar a tensão do mistério sobre as expedições, reforçar o aprendizado do jogador com batalhas desafiadoras e aprofundar os laços de Thorin com os guardas.  
 - **Premissa resumida**: Thorin e seu grupo desafiam a nevasca para retornar de Kravens com minérios; a quest termina após uma avalanche que bloqueia os caminhos, separa o grupo e força Thorin com a Guarda de Ferro a tomar outro caminho.  
-- **Resumo**: A quest começa com uma discussão acalorada na clareira de Kravens sobre a iminente tempestade de neve. Tusk insiste em partir imediatamente, ameaçando os membros que se recusarem com a perda de pagamento. O grupo, incluindo Thorin, Kilin, Mhordred e Tharok, partem contrariados, enfrentando perigosas batalhas durante a travessia pelo mapamúndi sob nevasca, até serem forçados a tomar outro caminho.
+- **Resumo**: A quest começa com uma discussão acalorada na clareira de Kravens sobre a iminente tempestade de neve. Tusk insiste em partir imediatamente, ameaçando os membros que se recusarem com a perda de pagamento. O grupo, incluindo Thorin, Kilin, Mhordred, Filena e Borin, partem contrariados. Durante a travessia, uma forte avalanche separa o grupo. Thorin, Kilin, Mhordred, Filena e Tusk ficam juntos, mas são forçados a desviar por uma mina desconhecida, a Mina do Esgoto.
 - **Locais principais**:  
   - Clareira de Kravens  
   - Mapamúndi (travessia sob nevasca)  
@@ -21,7 +21,8 @@
   - Tusk  
   - Kilin  
   - Mhordred  
-  - Tharok  
+  - Filena  
+  - Borin  
   - Mineradores secundários
 
 ### 2️⃣ Pré-condições Narrativas *(Checkpoint 1)*
@@ -45,15 +46,15 @@ Quest: A Travessia Perigosa
  ├── Cena 2: Travessia no Mapamúndi — Premissa: Retorno perigoso com batalhas fortalecidas
  │      ├── Beat 1: Início da travessia na tempestade (🎮)
  │      ├── Beat 2: Encontros com inimigos fortalecidos (🎮)
- │      ├── Beat 3: Avalanche e deslizamento de pedras (🎮)
- │      └── Beat 4: Descoberta de uma nova mina (esgoto) (🎮)
+ │      ├── Beat 3: Avalanche e separação do grupo (🎬)
+ │      └── Beat 4: Descoberta da Mina do Esgoto (🎮)
 
 #### Tabela de Cenas
 
 | # | Nome da Cena                | Premissa resumida (expandida)                                                                                                                                                              |
 | - | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | 1 | **Clareira de Kravens**     | Discussão tensa sobre a tempestade iminente; Kilin alerta Tusk sobre os riscos; jogador faz múltiplas escolhas para apoiar Kilin ou Tusk; Tusk ameaça retenção de pagamento para quem não partir. |
-| 2 | **Travessia no Mapamúndi**  | Retorno perigoso sob tempestade com batalhas contra inimigos fortalecidos; quebra de narrativa através de uma avalanche seguida por um deslizamento de pedras que separa o grupo. |
+| 2 | **Travessia no Mapamúndi**  | Retorno perigoso sob tempestade com batalhas contra inimigos fortalecidos; uma avalanche separa o grupo, forçando Thorin, Kilin, Mhordred, Filena e Tusk a encontrar um novo caminho pela Mina do Esgoto. |
 
 #### Beats por Cena
 
@@ -84,13 +85,9 @@ A escolha afeta apenas falas e reações; o grupo parte assim mesmo.
 | ---|------------------------------------------|-----------------------------------------------------------------------------------------------------|----------|
 | 1  | Início da travessia                      | O grupo começa a travessia sob forte tempestade de neve, enfrentando o clima severo.                | 🎮       |
 | 2  | Encontros com inimigos fortalecidos     | O jogador enfrenta inimigos já conhecidos, porém em versões mais poderosas e agressivas.            | 🎮       |
-| 3  | Sequência intensa de batalhas            | Cerca de 6 batalhas seguidas próximas uma da outra, gerando tensão e desafio para o jogador.       | 🎮       |
-| 4  | Quebra narrativa - Flash para Rheed e criança | Jogador é teletransportado para a noite da história, onde Rheed narra e uma criança (jogador infantil) reclama da repetição das batalhas. | 🎬       |
-| 5  | Rheed menciona a caverna                   | Rheed explica que ao lado deles há uma caverna, abrindo uma nova possibilidade na história.          | 🎬       |
-| 6  | Retorno à travessia no Mapamúndi          | A narrativa retorna ao mapa mundi, agora com a entrada da caverna liberada.                         | 🎮       |
-| 7  | Exploração da caverna                      | Jogador entra na caverna, resolve um puzzle e obtém o item “Símbolo da Trégua”.                    | 🎮       |
-| 8  | Funcionalidade do Símbolo da Trégua       | O item permite acumular e absorver as batalhas convencionais do mapa mundi para serem enfrentadas em um combate único posteriormente. | 🎮       |
-| 9  | Confronto com boss próximo a Gildrat      | Após as interações na caverna e batalhas, o jogador enfrenta um boss desafiador perto do destino. | 🎮       |
+| 3  | Avalanche e Separação                    | Uma forte avalanche separa o grupo. Thorin, Kilin, Mhordred, Filena e Tusk ficam juntos, mas isolados. Borin e os outros expedicionários ficam para trás. | 🎬       |
+| 4  | Novo Caminho                             | O grupo percebe que o caminho de volta para Gildrat está bloqueado, assim como o caminho para Kravens. A única opção é uma mina desconhecida, a Mina do Esgoto. | 🎬       |
+| 5  | Entrada na Mina do Esgoto                | O grupo entra na mina, dando início à próxima quest.                                                | 🎮       |
 
 ---
 

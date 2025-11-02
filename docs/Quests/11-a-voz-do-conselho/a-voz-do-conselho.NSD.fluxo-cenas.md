@@ -37,7 +37,7 @@
   - Damburr (imperador)  
   - General Tordan  
   - Filena  
-  - Guardas reais (Kilin, Mhordred, Tharok)  
+  - Guardas reais (Kilin, Mhordred)  
   - Conselheiros de Damburr  
   - Vendedores do mercado  
   - Os Corvos (grupo de anões — boss fight)  
@@ -89,7 +89,7 @@ Após a audiência, Balastrus dá liberdade a Thorin para gastar seus Drakeis na
 ##### Reencontro na Estrada do Cão Luar
 
 Ao final das compras, Thorin deve ir até o portão da Estrada do Cão Luar.  
-Lá encontra Balastrus, Tusk, Filena e o trio de guardas reais (Kilin, Mhordred e Tharok), que se juntam à expedição rumo a Melios.
+Lá encontra Balastrus, Tusk, Filena e a dupla de guardas reais (Kilin e Mhordred), que se juntam à expedição rumo a Melios.
 
 ##### Travessia até Melios
 

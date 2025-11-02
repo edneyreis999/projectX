@@ -15,7 +15,7 @@ As notas a seguir fornecem contexto sobre decisões de design que afetam a exper
 2. **Economia e Progressão:** O jogador receberá sua primeira pagamento em **Drakeis** após a audiência no Conselho (Cena 8). A partir desse ponto, ele poderá gastar a moeda no mercado de Gildrat para comprar itens, equipamentos e suprimentos. Nesse ponto do projeto ainda **não** estamos focando nos itens que le pode comprar, preços e etc. POr hora ele vai receber o pagamento e não tem onde gastar.
 
 3. **Recrutamento de Aliados:** Personagens secundários podem ser recrutados para o grupo em momentos específicos. Um exemplo notável é **Sáparo-boca-de-corneta**, que pode se juntar a Thorin se o jogador retornar para casa durante a preparação para as missões de resgate (Cena 11). Este tipo de "easter egg" recompensa a exploração e oferece variações estratégicas. Por hora, o único personagem secundario que é opcional é o **Sáparo-boca-de-corneta**. Os outros 6 personagens secundarios são:
-   1. Os 3 guardas (Kilin, Mhordred e Tharok) são recrutados logo na primeira viagem ao world map.
+   1. Os 2 guardas (Kilin e Mhordred) são recrutados logo na primeira viagem ao world map.
    2. Filena, Tusk e Balastrus são recutados na primeira viagem ao Melios.
 
 4. **Desenvolvimento de Habilidades:** As habilidades de Thorin, especialmente seus poderes oníricos, são desenvolvidas em momentos-chave da narrativa. O primeiro uso público e consciente ocorre na Cena 14, com consequências mecânicas (Resíduo Onírico) e narrativas (possessão pelo Profeta das Sombras).
@@ -23,10 +23,9 @@ As notas a seguir fornecem contexto sobre decisões de design que afetam a exper
    2. Os guardas são classicos guardas imperiais anões.
       1. Kilin estapada e escudo
       2. Mhordred martelo de duas mãos
-      3. Tharok 2 machadinhas
-      4. Filena machado grande de duas mãos
-      5. Balastrus alquimista
-      6. Tusk espadachin (uma espada de uma mão estilo esgrima)
+      3. Filena machado grande de duas mãos
+      4. Balastrus alquimista
+      5. Tusk espadachin (uma espada de uma mão estilo esgrima)
 
 ---
 
@@ -60,7 +59,7 @@ Atrasado, Thorin corre desesperadamente pelo Distrito Comercial de Gildrat em di
 Thorin entra em campo nos acréscimos. Em uma jogada ensaiada, ele faz uma tabela com sua parceira de time, **Filena**. Com um potente **disparo rúnico**, ele marca o gol da virada. A torcida explode em comemoração.
 
 **Cena 2d – Comemoração Interrompida**  
-A celebração é cortada pelo som de um portão lateral rangendo. Três guardas da Guarda de Ferro — **Kilin, Mhordred e Tharok** — entram no campo, silenciando a multidão. Eles agem "em nome do General Tordan".
+A celebração é cortada pelo som de um portão lateral rangendo. Dois guardas da Guarda de Ferro — **Kilin e Mhordred** — entram no campo, silenciando a multidão. Eles agem "em nome do General Tordan".
 
 **Cena 2e – Escolha de Postura**  
 Os guardas informam que Thorin deve acompanhá-los.
@@ -99,13 +98,13 @@ No auge do atrito, Thorin encara o pai e crava: “Não quero entrar para a Guar
 Durante a noite, a mãe de Thorin reaparece em sonho, mais uma vez alertando que o tempo está se esgotando e que ele precisa impedir **Damburr**.
 
 **Cena 4b – Interceptado na Porta**  
-Determinado a ignorar a ordem do pai, Thorin decide ir treinar com Filena. No entanto, ao tentar sair de casa, é imediatamente cercado por **Kilin, Mhordred e Tharok**, que o aguardavam. A ordem de Tordan é clara: escoltá-lo diretamente até Balastrus.
+Determinado a ignorar a ordem do pai, Thorin decide ir treinar com Filena. No entanto, ao tentar sair de casa, é imediatamente cercado por **Kilin e Mhordred**, que o aguardavam. A ordem de Tordan é clara: escoltá-lo diretamente até Balastrus.
 
 **Cena 4c – Rua Sob Vigilância**  
 O jogador conduz Thorin pelas ruas, mas a conversa tensa com os guardas não surte efeito. Eles não o deixarão desviar do trajeto.
 
 **Cena 4d – A Roupa Inadequada**  
-Ao chegarem no Distrito Comercial, Tharok aponta que a roupa de jogo de Thorin é imprópria para se apresentar a um anão nobre. O grupo decide parar em uma loja de armaduras.
+Ao chegarem no Distrito Comercial, Mhordred aponta que a roupa de jogo de Thorin é imprópria para se apresentar a um anão nobre. O grupo decide parar em uma loja de armaduras.
 
 **Cena 4e – Tutorial na Loja de Armaduras**  
 Em uma cena cômica com o vendedor, o jogador aprende as mecânicas de compra e equipamento de itens. Sem dinheiro, Thorin não pode pagar pela armadura. A contragosto, **Mhordred** paga pela peça. Thorin equipa sua primeira armadura.
@@ -138,7 +137,7 @@ Thorin viaja do Distrito Comercial até a **Estrada do Cão-Luar**. O clima esfr
 No ponto de encontro, **Tusk**, o líder da expedição, reclama do atraso de Thorin e do que chama de "comboio real". Apesar da irritação, ele aceita o contrato e entrega a Thorin um kit básico de mineração.
 
 **Cena 5d – Escolta Imposta**  
-Uma breve discussão entre Balastrus e a guarda imperial termina com **Kilin, Mhordred e Tharok** se juntando ao grupo. Fica estabelecido, no entanto, que no campo a autoridade de Tusk é absoluta.
+Uma breve discussão entre Balastrus e a guarda imperial termina com **Kilin e Mhordred** se juntando ao grupo. Fica estabelecido, no entanto, que no campo a autoridade de Tusk é absoluta. Nesse momento, Filena, acompanhada de seu amigo e rival de Thorin no time de futebol rúnico, Borin, são apresentados como novos expedicionarios para ir junto com a expedição de Tusk para Kravens.
 
 **Cena 5e – Travessia Gélida**  
 O grupo viaja pelo mapa-múndi sob uma neve leve. A jornada inclui combates tutoriais que introduzem as mecânicas de equipe.
@@ -156,7 +155,7 @@ Para aliviar a tensão, Kilin oferece comida ao grupo. Thorin tem a oportunidade
 - Pedir desculpas de forma direta.
 - Fazer uma piada para quebrar o gelo.
 - Oferecer um pedido de desculpas formal.
-A cena termina com um momento de leveza, com Tharok exagerando na comida.
+A cena termina com um momento de leveza, com Mhordred exagerando na comida.
 
 **Cena 5i – Fim da Missão**  
 Thorin se retira para sua barraca para descansar.
@@ -170,7 +169,7 @@ Um novo sonho com sua mãe traz um aviso urgente: "Se você não agir, Gildrat c
 Na entrada de Kravens, Tusk dá instruções claras: a meta é coletar 10 unidades de minério **Kraven**. Ele também proíbe estritamente que toquem em qualquer minério de coloração lilás.
 
 **Cena 6c – Guardas Atrasados**  
-A seriedade da missão é quebrada por uma gag cômica: Kilin, Mhordred e, por último, Tharok chegam atrasados, com este último reclamando de um "piriri".
+A seriedade da missão é quebrada por uma gag cômica: Kilin e, por último, Mhordred chegam atrasados, com este último reclamando de um "piriri".
 
 **Cena 6d – Mineração e Queda**  
 Durante a coleta, ao minerar o nono Kraven, o chão sob os pés de Thorin cede, e ele despenca para um andar inferior e esquecido da mina.
@@ -189,7 +188,7 @@ Se o Sigmetal for entregue a Tusk ainda em Kravens, a rota de destino do minéri
 ### 7 - A Travessia Perigosa: Nevasca e Escolhas
 
 **Cena 7a – Debate e Partida Forçada**  
-De volta à clareira, os batedores avisam sobre uma forte tempestade se aproximando. Kilin sugere prudência e recomenda esperar, mas Tusk, focado nos prazos, exige a partida imediata, ameaçando cortar o pagamento de quem ficar. O grupo parte sob uma forte nevasca. *Nota: um pequeno grupo de anões, incluindo o pai de Filena, discorda de Tusk e decide permanecer em Kravens, aceitando o risco.*
+De volta à clareira, os batedores avisam sobre uma forte tempestade se aproximando. Kilin sugere prudência e recomenda esperar, mas Tusk, focado nos prazos, exige a partida imediata, ameaçando cortar o pagamento de quem ficar. O grupo parte sob uma forte nevasca. *Nota: um pequeno grupo de anões, incluindo o pai de Filena, discorda de Tusk mas não tem escolha a não ser seguir o anão.*
 
 **Decisão do Jogador:**
 
@@ -198,16 +197,23 @@ De volta à clareira, os batedores avisam sobre uma forte tempestade se aproxima
 A escolha afeta apenas falas e reações; o grupo parte assim mesmo.
 
 **Cena 7b – Travessia Sob Nevasca**  
-A viagem de volta a Gildrat é perigosa. Os inimigos no mapa-múndi estão mais fortes devido à tempestade. O jogador pode buscar abrigo em cavernas laterais para evitar combates e encontrar pequenos eventos.
+Pouco depois de sair de Kravens, uma forte avalanche/nevasca separa os expedicionários. Filena é puxada/arrastada para longe de seu amigo Borin e permanece junto do grupo do jogador (grupo de Thorin). Tusk também se separa dos demais expedicionários e termina junto com o grupo do jogador. Borin fica preso em Kravens e não consegue seguir viagem. Os demais expedicionários (fora do grupo do jogador) ficam presos no caminho entre Kravens e Gildrat e precisam recuar para Gildrat devido à severa nevasca. A única solução para o grupo do jogador é atravessar a “Mina do Esgoto” que leva até Gildrat.
+
+*   **Composição do grupo do jogador APÓS a separação:**
+    *   Thorin
+    *   Kilin
+    *   Mhordred
+    *   Filena
+    *   Tusk
 
 **Cena 7b.1 – Travessia Tóxica: Mina do Esgoto**  
-Forçados pela nevasca, Thorin e a Guarda de Ferro atravessam a Mina do Esgoto: exploração com puzzles, criaturas venenosas e um breve retorno ao coreto com Rheed que introduz o item “Símbolo da Trégua”.
+Forçados pela nevasca que bloqueou o caminho de volta, o grupo de Thorin (Thorin, Kilin, Mhordred, Filena e Tusk) não tem outra escolha a não ser entrar na perigosa Mina do Esgoto. A travessia é marcada por exploração, puzzles ambientais, criaturas venenosas e um breve retorno ao coreto com Rheed, que introduz o item “Símbolo da Trégua”.
 
 **Cena 7b.2 – Câmara de Decantação: Pestesporo**  
 No nível inferior, o grupo enfrenta o chefe Pestesporo na câmara anóxica e reabre a passagem para a superfície, retomando a rota de volta a Gildrat.
 
 **Cena 7b.3 – Ameaça Lupina: Alcatéia do Gelo**  
-Já do lado de fora, reencontram Tusk e os expedicionários cercados por Lobos do Gelo; a batalha reúne os grupos e libera o caminho até a Estrada do Cão‑Luar.
+Já do lado de fora, o grupo é cercado por Lobos do Gelo; a batalha libera o caminho até a Estrada do Cão‑Luar.
 
 **Cena 7c – Entrega na Estrada do Cão-Luar (Decisão Central)**  
 Ao reencontrar Balastrus na Estrada do Cão-Luar, o jogador deve definir o destino do Sigmetal, caso ainda não o tenha feito.
@@ -225,7 +231,7 @@ A cena se encerra com uma breve reação dos NPCs baseada na escolha do jogador.
 ### 8 - A Voz do Conselho: Crise e Convocação
 
 **Cena 8a – Convocação ao Conselho**  
-Guardas imperiais convocam Balastrus para uma audiência com o **Imperador Damburr**. Graças à influência política de Tordan, Thorin, Tusk e os guardas (Kilin, Mhordred, Tharok) também são levados. O tom é solene; a sessão decidirá o futuro das expedições em meio a uma crise crescente.
+Guardas imperiais convocam Balastrus para uma audiência com o **Imperador Damburr**. Graças à influência política de Tordan, Thorin, Tusk e os guardas (Kilin e Mhordred) também são levados. O tom é solene; a sessão decidirá o futuro das expedições em meio a uma crise crescente.
 
 **Cena 8b – A Crise Política**  
 Damburr e seus conselheiros debatem a escassez de recursos e as rebeliões que se espalham pelo império. Balastrus usa a oportunidade para reforçar sua importância econômica. O Conselho está dividido entre repressão e a busca por novas fontes de minério.
@@ -262,7 +268,7 @@ Derrotados, os Corvos se retiram, mas deixam um último aviso: **não mexam no s
 ### 10 - Quebra do Selo em Melios: A Liberação dos Ignotos
 
 **Cena 10a – Preparação e Dúvidas**  
-Na câmara do selo, Balastrus revela sua nova invenção: **pólvora e dinamites**. Este será o primeiro teste em campo. Filena se opõe, evocando as canções ancestrais. Kilin, Mhordred e Tharok, embora desconfortáveis, cumprem a ordem de Tordan de manter Thorin vivo. Tusk apenas obedece Balastrus.
+Na câmara do selo, Balastrus revela sua nova invenção: **pólvora e dinamites**. Este será o primeiro teste em campo. Filena se opõe, evocando as canções ancestrais. Kilin e Mhordred, embora desconfortáveis, cumprem a ordem de Tordan de manter Thorin vivo. Tusk apenas obedece Balastrus.
 
 **Cena 10b – Euforia da Riqueza**  
 A explosão rompe o selo rúnico, revelando um salão repleto de minérios raros. Balastrus e Tusk entram eufóricos, projetando a fortuna que irão extrair. No centro, uma grande rocha parece trancar outro compartimento. Balastrus entrega a Thorin mais explosivos para abrir caminho. Por um momento, a missão parece um sucesso absoluto.
@@ -277,7 +283,7 @@ Um sussurro grave e dissonante, que parece falhar e se dessincronizar, ecoa da r
 Sombras se movem na névoa. Criaturas desconhecidas, os **Ignotos**, emergem e bloqueiam a saída, com um mini-chefe guardando a passagem.
 
 **Cena 10e – Fuga e Separação**  
-O caos se instaura. Kilin e Tharok formam uma linha de contenção para ganhar tempo, enquanto Mhordred guia Thorin, Filena e Tusk por uma rota de fuga lateral. A separação é forçada. O selo está quebrado, os Ignotos estão livres, e o fardo da responsabilidade recai sobre Thorin. Filena o encara: "Agora você entende por que lutamos?". Ele não responde, apenas corre.
+O caos se instaura. Kilin forma uma linha de contenção para ganhar tempo, enquanto Mhordred guia Thorin, Filena e Tusk por uma rota de fuga lateral. A separação é forçada. O selo está quebrado, os Ignotos estão livres, e o fardo da responsabilidade recai sobre Thorin. Filena o encara: "Agora você entende por que lutamos?". Ele não responde, apenas corre.
 
 ### 11 - Gildrat em Alarme: Escolhas e Consequências
 
@@ -309,7 +315,7 @@ Concluir essa missão **destrava o avanço da história principal**. As missões
 ### 12 - Melios: Resgate e o Eco do Selo
 
 **Cena 12a – Retomada do Acesso**  
-Como um Guarda de Ferro, Thorin lidera uma equipe para reabrir a passagem para Melios. Os rastros confirmam que Kilin, Tharok e Balastrus estão vivos, contendo o avanço dos Ignotos.
+Como um Guarda de Ferro, Thorin lidera uma equipe para reabrir a passagem para Melios. Os rastros confirmam que Kilin e Balastrus estão vivos, contendo o avanço dos Ignotos.
 
 **Cena 12b – Retirada Tática**  
 O grupo localiza Kilin em uma posição defensiva e o extrai com sucesso, fechando rotas secundárias para atrasar os inimigos.
@@ -318,7 +324,7 @@ O grupo localiza Kilin em uma posição defensiva e o extrai com sucesso, fechan
 Dentro de Melios, a proximidade com a energia liberada pelo selo faz Thorin entrar no **Reino da Mana**. Ele tem vislumbres oníricos e vê a sombra do **Profeta das Sombras**, que agora sabe de sua existência e de seu potencial para frustrar seus planos de aniquilar Gildrat.
 
 **Cena 12d – Retorno a Gildrat**  
-A equipe retorna a Gildrat com Kilin, Tharok e Balastrus. A preparação para a defesa da cidade é iminente.
+A equipe retorna a Gildrat com Kilin e Balastrus. A preparação para a defesa da cidade é iminente.
 
 ### 13 - Kravens: Aviso e a Força do Sigmetal
 
