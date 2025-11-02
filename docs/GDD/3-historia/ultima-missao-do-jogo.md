@@ -13,7 +13,7 @@ A fase se encerra quando o jogador dorme ([Casa da Família Forja Prata](../2-wo
 ### Gameplay
 
 - O jogador deve resolver conflitos internos de Gildrat. Exemplo:
-  - [Ajudar pai da Filena em Kravens](timeline-historia-jogo-v5.md#13---kravens-aviso-e-a-força-do-sigmetal)
+  - [Ajudar Borin em Kravens](timeline-historia-jogo-v5.md#13---kravens-aviso-e-a-força-do-sigmetal)
   - [Resgatar Kilin e Balastrus](timeline-historia-jogo-v5.md#12---melios-resgate-e-o-eco-do-selo)
   - Organizar defesa de Gildrat.
 - Missão: [“Defender Gildrat”](timeline-historia-jogo-v5.md#14---defender-gildrat-clímax) é ativada após o jogador dormir.  
@@ -38,7 +38,7 @@ As seguintes variáveis inteiras serão usadas para compor o Índice de Prepara�
 | `v_resgate_melios`        | 0–3     | O sucesso da operação de resgate em [Melios](timeline-historia-jogo-v5.md#10---quebra-do-selo-em-melios-a-liberação-dos-ignotos).                                              | 0: Ninguém salvo. 1: Balastrus salvo. 2: Kilin Salvo. 3: Todos salvos.                  | Afeta a moral da Guarda de Ferro e a disponibilidade de escolha dos NPCs no time do Thorin na batalha final.                     |
 | `v_resgate_kravens`        | 0–2     | O sucesso da operação de resgate em [Kravens](timeline-historia-jogo-v5.md#13---kravens-aviso-e-a-força-do-sigmetal).                                              | 0: Ninguém salvo. 1: Grupo de rebelde salvo. 2: Grupos de rebeldes                  | Afeta a quantidade do exercito de rebeldes.|
 | `v_treinamento_rebeldes`        | 0–2     | O sucesso da operação de resgate em Kravens.                                              | 0: Sem treinamento. 1: Filena **OU** Mhordead treinam rebeldes. 2: Filena **E** Mhordred treinam os rebeldes                  | Afeta a qualidade do exercito de rebeldes.|
-| `v_pai_filena`        | 0–1     | O sucesso da operação de resgatar o pai da Filena em Kravens.                                              | 0: Sem resgate. 1: Pai da Filne foi resgatado.                 | Afeta a moral do exercito de rebeldes.|
+| `v_pai_filena`        | 0–1     | O sucesso da operação de resgatar Borin em Kravens.                                              | 0: Sem resgate. 1: Borin foi resgatado.                 | Afeta a moral do exercito de rebeldes.|
 | `v_moral_gildrat`         | 0–9     | A moral e a esperança dos cidadãos de Gildrat.                                           | Aumenta com atos heroicos e comunicação; diminui com pânico e perdas.                   | Modula a eficácia de milícias corvos e a atmosfera da cidade.                           |
 | `v_boa_vontade_thordan`   | 0–5     | O nível de respeito e entendimento entre Thorin e seu pai, Tordan.                        | Aumenta com diálogo respeitoso e atos alinhados à Guarda;         | Desbloqueia itens de família e do passado de Thordan            |
 | `v_empatia_filena`        | 0–5     | A profundidade da conexão e confiança entre Thorin e Filena.                             | Aumenta ao apoiar Filena e suas causas.                                                 | Aprofunda o arco de relacionamento e pode desbloquear habilidades de combate em dupla. Libera final que Filena beija Thorin.  |
@@ -124,7 +124,7 @@ O que o Rheed pode falar aqui para dar inicio a cena de gameplay? O que ele fala
 - Retorno à visão topdown.  
 - Portões de Gildrat se abrem e **os exércitos saem para lutar**:
   - **Exército dos Guardas de Ferro (centro)** — líder Thordan.  
-  - **Exército dos Rebeldes (direita)** — líder pai da Filena (se salvo).  
+  - **Exército dos Rebeldes (direita)** — Borin lidera os rebeldes (se resgatado).  
   - **Exército dos Corvos (esqurda)** — líder dos Corvos (se recrutado)
   - **Grupo de Thorin (logo atrás).**
 - Diálogo entre o **[General Ignoto](../2-world-building/racas/raca-ignotos.md)** e **Thordan**.  
@@ -205,7 +205,7 @@ Eu preciso levar em consideração também as `## Notas proximo jogo`
 ## Pós-créditos: O Despertar**  
 
 Ilustrações + Texto mostram que
-Dias depois, Thorin está jogando Runico em um campeonato junto da Filena. Seu pai está na torcida.
+No final, Filena e Borin vão estar jogando ao lado de Thorin na final do campeonato.
 (O Fantasma de Mhordred aparece na torcida, mas é um easteregg)
 
 (Colocar mais cenas pós creditos de cada um dos personagens. A cena pós credito é somente uma imagem)
