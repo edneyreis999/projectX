@@ -14,7 +14,7 @@ As notas a seguir fornecem contexto sobre decisões de design que afetam a exper
 
 2. **Economia e Progressão:** O jogador receberá sua primeira pagamento em **Drakeis** após a audiência no Conselho (Cena 8). A partir desse ponto, ele poderá gastar a moeda no mercado de Gildrat para comprar itens, equipamentos e suprimentos. Nesse ponto do projeto ainda **não** estamos focando nos itens que le pode comprar, preços e etc. POr hora ele vai receber o pagamento e não tem onde gastar.
 
-3. **Recrutamento de Aliados:** Personagens secundários podem ser recrutados para o grupo em momentos específicos. Um exemplo notável é **Sáparo-boca-de-corneta**, que pode se juntar a Thorin se o jogador retornar para casa durante a preparação para as missões de resgate (Cena 11). Este tipo de "easter egg" recompensa a exploração e oferece variações estratégicas. Por hora, o único personagem secundario que é opcional é o **Sáparo-boca-de-corneta**. Os outros 6 personagens secundarios são:
+3. **Recrutamento de Aliados:** Personagens secundários reforçam o grupo de Thorin em momentos específicos. **Sáparo-boca-de-corneta** não entra mais como membro jogável: ao visitá-lo durante a preparação (Cena 11), o jogador destrava o apoio logístico das armadilhas sem alterar a composição da party. Este tipo de "easter egg" recompensa a exploração e oferece variações estratégicas. Os demais seis personagens secundários seguem presentes como parceiros de aventura:
    1. Os 2 guardas (Kilin e Mhordred) são recrutados logo na primeira viagem ao world map.
    2. Filena, Tusk e Balastrus são recutados na primeira viagem ao Melios.
 
@@ -298,12 +298,12 @@ Thorin, Filena, Mhordred e Tusk chegam a Gildrat e a encontram em **estado de al
 Essa escolha abre o ramo Filena (Aviso em Kravens) ou o ramo Conselho (Resgate em Melios).
 
 **Cena 11b – Ramo Filena: A Descoberta**  
-Se seguir Filena, Thorin descobre que o **pai dela** não está em casa. Ele fazia parte do grupo que permaneceu em **Kravens** durante a nevasca, por discordar de Tusk. Isso libera a missão **"Aviso em Kravens"**.
+Se seguir Filena, Thorin descobre que o **pai dela** não está em casa. Ele fazia parte do grupo que permaneceu em **Kravens** durante a nevasca, por discordar de Tusk. Isso libera a missão **"Aviso em Kravens"** e seta `v_unlock_kravens = 1`, permitindo deslocamento seguro até a ilha.
 
 **Cena 11c – Ramo Conselho: A Reivindicação**  
 Se for ao Conselho, Thorin testemunha o depoimento de Tusk sobre o ocorrido em Melios. no meio do depoimento, Thordan na sala do trono e começa montar uma tropa de elite para resgatar Kilin em Melios. Thorin se voluntaria, mas Tordan o rejeita, afirmando que apenas **guardas imperiais** têm esse direito. Em um ato de desafio e compromisso, Thorin declara publicamente:
 > “Sou filho do General Tordan Forja-Prata. **Reivindico** meu dever de alistar-me na **Guarda de Ferro**.”
-A declaração choca o salão e força Tordan a aceitá-lo. Isso libera a missão **"Resgate em Melios"**.  
+A declaração choca o salão e força Tordan a aceitá-lo. Isso libera a missão **"Resgate em Melios"** e define `v_unlock_melios = 1`, abrindo a rota oficial até a mina.  
 Thordan se retira do salão depois do fim da cena e vai para casa.
 
 **Cena 11d – Quando o Segundo Sol Chegar**  
@@ -318,7 +318,7 @@ Concluir essa missão **destrava o avanço da história principal**. As missões
 Como um Guarda de Ferro, Thorin lidera uma equipe para reabrir a passagem para Melios. Os rastros confirmam que Kilin e Balastrus estão vivos, contendo o avanço dos Ignotos.
 
 **Cena 12b – Retirada Tática**  
-O grupo localiza Kilin em uma posição defensiva e o extrai com sucesso, fechando rotas secundárias para atrasar os inimigos.
+O grupo localiza Kilin em uma posição defensiva e o extrai com sucesso, fechando rotas secundárias para atrasar os inimigos. Durante a operação, Thorin organiza a evacuação do **Grupo dos Corvos** escondido na mina. Libertar o contingente principal concede +5 em `v_influencia_corvos`, enquanto três Corvos isolados — presos em túneis laterais — rendem +1 cada ao serem resgatados.
 
 **Cena 12c – O Eco Onírico**  
 Dentro de Melios, a proximidade com a energia liberada pelo selo faz Thorin entrar no **Reino da Mana**. Ele tem vislumbres oníricos e vê a sombra do **Profeta das Sombras**, que agora sabe de sua existência e de seu potencial para frustrar seus planos de aniquilar Gildrat.
@@ -335,7 +335,7 @@ Ao chegar em Kravens com Filena, Thorin encontra a mina sob ataque massivo dos I
 O grupo abre um corredor defensivo para evacuar os trabalhadores, alternando entre combate e proteção de civis.
 
 **Cena 13c – O Pai de Filena**  
-Eles encontram o pai de Filena, um anão rude e avesso a nobres. Durante a batalha, Thorin salva sua vida, ganhando seu respeito a contragosto.
+Eles encontram o pai de Filena, um anão rude e avesso a nobres. Durante a batalha, Thorin salva sua vida, ganhando seu respeito a contragosto. Concluir o resgate define `v_resgate_borin = 1`, fortalecendo a moral dos rebeldes.
 
 **Cena 13d – A Virada com Sigmetal**  
 Para virar o jogo, Thorin e Filena alcançam a passagem revelada pelo Cristaleão — ainda bloqueada por uma rocha gigante. Usando os explosivos que **Balastrus** entregou a **Thorin** na **Cena 10b – Euforia da Riqueza**, eles abrem a entrada e acessam uma câmara de **Sigmetal bruto**. Eles confirmam que o minério é a principal fraqueza dos Ignotos e o usam para derrotar o líder Ignoto que bloqueia a saída.

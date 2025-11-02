@@ -114,6 +114,7 @@ A provação inicia na chegada a Melios e culmina com a quebra de um antigo selo
   - **Quebra do Selo:** Balastrus, inventor anão, usa sua nova invenção — o dinamite — para destruir o selo, contra os avisos dos Corvos e os cânticos ancestrais. O grupo atravessa a passagem recém-aberta e encontra uma sala ampla, abarrotada de metais preciosos. Balastrus entra em júbilo e ordena que iniciem a extração imediatamente.
   - **A Fumaça e o Primeiro Morto:** Uma fumaça espessa começa a preencher a sala. Balastrus racionaliza que é reação química do dinamite com o ar da mina e manda continuar. Um grito corta o ar; um anão escavador cai morto. O pânico se instaura.
   - **Aparição dos Ignotos:** Criaturas saem da névoa e cercam a equipe. O grupo luta em retirada pelo corredor; um Ignoto salta à frente e bloqueia a passagem — mini‑chefe improvisado. Após derrotá‑lo, a passagem se abre, mas novos Ignotos surgem.
+  - **Corvos a Salvar:** Durante a retirada, Thorin encontra o contingente principal dos Corvos escondido em um abrigo lateral. Evacuar o grupo concede +5 em `v_influencia_corvos`, enquanto três corvos isolados adicionam +1 cada ao contador.
   - **Sacrifício Tático:** Para garantir a fuga, **Kilin** fica para bloquear os inimigos enquanto grita para que **Thorin** fuja com **Mhordred** por uma passagem lateral. Eles alcançam a entrada da mina e batem em retirada rumo a Gildrat.
   - **Visão no Reino da Mana:** Thorin tem uma visão onírica em que testemunha o **Profeta das Sombras** e seu cúmplice, entendendo seu plano de libertar os **Ignotos** e destruir Gildrat.
 
@@ -138,9 +139,11 @@ Próximos passos imediatos: fuga de Melios, retorno a Gildrat e preparação par
 
 Após a fuga de Melios, Thorin retorna a Gildrat sob estado de alerta. O jogador faz uma escolha crucial que define a próxima missão:
 
-- **Seguir Filena:** Leva à missão “Aviso em Kravens”.
-- **Ir ao Conselho:** Leva Thorin a se alistar na Guarda de Ferro e à missão “Resgate em Melios”.
+- **Seguir Filena:** Leva à missão “Aviso em Kravens” e define `v_unlock_kravens = 1`.
+- **Ir ao Conselho:** Leva Thorin a se alistar na Guarda de Ferro, ativa a missão “Resgate em Melios” e define `v_unlock_melios = 1`.
 - **Ir para casa:** Leva à missão “Quando o Segundo Sol Chegar”, onde ele pode avisar **Tordan** sobre o ataque iminente.
+
+Independentemente da escolha, Balastrus sobrevive ao caos em Melios e retorna junto com o grupo para Gildrat, participando das discussões de preparação e confirmando o sucesso do resgate.
 
 ## 11. A Ressurreição
 
