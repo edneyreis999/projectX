@@ -29,9 +29,7 @@ O mapa "MvP Narrativa Sistêmica" é um **mapa simulado** para testar os cálcul
 | NPC | Localização | Função na Quest | Variável(is) Alterada(s) | Fluxo de Interação |
 |-----|-------------|-----------------|-------------------------|-------------------|
 | **NPC Unlock Melios** | Gildrat | Libera passagem para Melios | `v_unlock_melios` (+1) | "Passagem para Melios liberada" |
-| **Kilin** | Melios | Representa resgate de Kilin | `v_resgate_melios` (+1) | "Você salvou Kilin" |
-| **Balastrus** | Melios | Representa resgate de Balastrus | `v_resgate_melios` (+1) | "Você salvou Balastrus" |
-| **Salvar Ambos** | Melios | Representa resgate total em Melios | `v_resgate_melios` (+1) | "Você salvou Kilin e Balastrus" |
+| **Kilin** | Melios | Representa resgate de Kilin | `v_resgate_kilin` (+1) | "Você salvou Kilin" |
 | **Grupo Corvos em Melios** | Melios | Representa a evacuação do grupo principal dos Corvos | `v_influencia_corvos` (+5) | "Os Corvos escaparam com sua ajuda" |
 | **Corvo Isolado 1** | Melios | Resgate de corvo preso na mina | `v_influencia_corvos` (+1) | "Você libertou o primeiro Corvo" |
 | **Corvo Isolado 2** | Melios | Resgate de corvo ferido | `v_influencia_corvos` (+1) | "Você libertou o segundo Corvo" |
@@ -53,7 +51,7 @@ O mapa "MvP Narrativa Sistêmica" é um **mapa simulado** para testar os cálcul
 |-----|-------------|-----------------|-------------------------|-------------------|
 | **NPC Unlock Kravens** | Gildrat | Libera passagem para Kravens | `v_unlock_kravens` (+1) | "Passagem para Kravens liberada" |
 | **Borin** | Kravens | Representa resgate de Borin | `v_resgate_borin` (+1)<br>`v_resgate_kravens` (+1) | "Você salvou Borin" |
-| **Grupo Rebelde 1** | Kravens | Representa primeiro grupo de rebeldes | `v_resgate_kravens` (+1) | "Você salvou o primeiro grupo de rebeldes" |
+| **Grupo Rebelde 1** | Kravens | Representa primeiro grupo de rebeldes | `v_resgate_kravens` (+3) | "Você salvou o primeiro grupo de rebeldes" |
 | **Cristaleão/Sigmetal** | Kravens | Representa coleta de Sigmetal | `v_reforco_sigmetal` (+1) | "Você coletou os Sigmetals em Kravens" |
 
 **Notas**:
