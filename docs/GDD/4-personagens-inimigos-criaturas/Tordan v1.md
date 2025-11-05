@@ -12,7 +12,7 @@ Raça: Anão.
 
 Cabelos: Barba longa e tradicional.
 
-Olhos: Verdes, mas frios e cansados, carregados de luto e dever.
+Olhos: Verdes, mas frios e cansados, carregados de abandono e dever.
 
 Altura: Robusto e imponente, com a postura inflexível de um General.
 
@@ -22,17 +22,17 @@ Medo Fundamental: Fracasso (deixar Gildrat cair por inação) e não saber como 
 
 Virtude Principal: Disciplina, Visão Estratégica.
 
-Fraqueza Principal: Frieza Emocional, Luto Não Resolvido.
+Fraqueza Principal: Frieza Emocional, Abandono Não Resolvido.
 
 Aparência: Sempre em sua armadura de General da Guarda de Ferro. Sua expressão é severa e fechada. Ele acredita que os fins justificam os meios.
 
-Motivação Raiz: A morte de sua esposa, Mélia, para uma doença desconhecida, quebrou sua capacidade de se conectar emocionalmente, especialmente com seu filho. Ele canalizou seu luto em um foco pragmático e implacável no futuro de Gildrat. Ele vê a burocracia do Império como uma fraqueza e, por isso, alia-se a Tibério Valamir; ele sabe que Valamir usa métodos extremos, mas acredita que essa aliança (tecnologia + força militar) é a única forma de garantir a sobrevivência do império.
+Motivação Raiz: O desaparecimento de sua esposa, Mélia, quebrou sua capacidade de se conectar emocionalmente, especialmente com seu filho. Ele canalizou esse sentimento em um foco pragmático e implacável no futuro de Gildrat. Ele vê a burocracia do Império como uma fraqueza e, por isso, alia-se a Tibério Valamir [Ler mais sobre Valamir em](<Valamir v3.md>); ele sabe que Valamir usa métodos extremos, mas acredita que essa aliança (tecnologia + força militar) é a única forma de garantir a sobrevivência do império.
 
-Maior sonho: Ver Gildrat próspera e segura (um legado que honre Mélia e a cidade que ela tanto amava).
+Maior sonho: Ver Gildrat próspera e segura.
 
-Maior medo: Ver Gildrat ruir por inação (o que motiva sua aliança com Valamir) e ver seu filho se tornar "fraco" e incapaz de sobreviver no mundo que ele considera cruel.
+Maior medo: Ver Gildrat ruir por inação (o que motiva sua aliança com Valamir), ver seu filho se tornar "fraco" e incapaz de sobreviver no mundo que ele considera cruel.
 
-Principais parentescos: Thorin (filho), Mélia (esposa falecida), Tibério Valamir (aliado pragmático).
+Principais parentescos: Thorin (filho), Mélia (esposa desaparecida), Tibério Valamir (aliado pragmático).
 
 ### 1.1) Linha de Transformação básica
 
@@ -64,7 +64,7 @@ Lugar/situação/atividade detestada: A "frivolidade" (futebol rúnico de Thorin
 
 Profissão/ocupação: General da Guarda de Ferro, Mão do Imperador.
 
-Hobbies: Nenhum. Seu trabalho e seus planos consumiram seu luto.
+Hobbies: Nenhum. Seu trabalho e seus planos consumiram sua tristeza.
 
 Reações quando contrariado: Um comando curto, frio e irrecorrível.
 
@@ -78,126 +78,178 @@ Arco narrativo do personagem no jogo atualmente: Ele é o NPC que inicia a jorna
 
 #### Quest - Fim de Jogo
 
-Ele envia a Guarda de Ferro (Kilin e Mhordred) para buscar Thorin no estádio. Uma demonstração pública de poder, mostrando que seu "Dever" está acima da paixão de seu filho.
+Tordan finalmente confronta seu filho. Ele vê o troféu de futebol rúnico (que o lembra do passado com Mélia) e o rejeita como "sucata". Ele dá a sentença: Thorin trabalhará para Valamir nas expedições. "Um anão fraco não consegue sobreviver a crueldade do mundo".
 
 #### Quest - Primeiro Contrato
 
-Valamir espera por Thorin na taverna da Pedra Vulcânica. Seu tratamento para o filho de Tordan é igual ao tratamento que oferece para todos os outros, dureza e crueldade: "Seu pai acredita que você tem potencial. Prove que ele não está errado". Assim que o contrato é assinado, o Mercenário deixa o estabelecimento e diz ao garoto para encontrá-lo na Estrada do Cão-luar, onde o resto da expedição aguarda.
-
-Valamir não gosta quando descobre que Tordan também ordenou a dois membros da Guarda de Ferro, Kilin [Ler mais sobre Kilin em](Kilin.md) e Mhordred [Ler mais sobre Mhordred em](Mhordred.md), que supervisionem Thorin durante a expedição. Ele não admitirá que, para proteger o garoto, os guerreiros intervenham em suas ordens. Há uma breve discussão, mas acaba cedendo.
-
-Ele parte na frente com seus anões e fica furioso com a demora de Thorin para chegar. Assim que vê a caravana do garoto chegar à Clareira de Kraven, discute primeiro com Thorin e depois com Mhordred, disparando uma série de acusações contra eles. Mhordred desafia Valamir para um duelo, com Kilin intervindo para que os nervos se acalmam. Valamir se recolhe logo depois.
-
-#### Quest - Minerador Aprendiz
-
-Valamir, a contragosto, dá instruções a Thorin dentro da Mina de Kravens a respeito do trabalho. Ele vê o garoto indo e vindo constanemente ao invés de trabalhar, o que o irrita um pouco. Sempre que Thorin passa por ele, o Mercenário o questiona sobre o que encontrou, na esperança que o garoto tenha encontrado Sigmetal, minério raro do qual o império já não dispõe há algum tempo.
-
-A missão termina quando Thorin entrega o Sigmetal a ele ou lhe diz que já acabou de minerar todos os Kravens.
+Antecipando a fuga de Thorin, Tordan posiciona Kilin e Mhordred nos arredores de sua casa. Uma jogada tática, tratando seu filho como um problema estratégico a ser gerenciado, enfurecendo ainda mais o garoto e acabando quase que por completo com qualquer chance de reconciliação.
 
 ## 2) Linha de Transformação básica
 
-Valamir trabalha para ganhar reconhecimento e com isso ganhar o direito de explorar as maiores minas do continente. Ele se torna um personagem jogável por puro pragmatismo, pois passa a precisar do grupo de Thorin para sobreviver e, ao mesmo tempo, pode ajudá-los a atravessar a Mina do Esgoto [Ler mais sobre a Mina do Esgoto em](../2-world-building/locais/mina-esgoto/mina-do-esgoto.md).
+Tordan vê seu plano e o de Valamir avançarem, mas a libertação dos Ignotos (o erro de cálculo de Valamir) e a perda de seu melhor homem (Kilin) mudam tudo, forçando-o a abandonar a política e assumir seu papel como General de Guerra.
 
 ### 2.1) Linha de Transformação avançada - Ato II / Provação / Até a volta de Melios
 
-Jornada narrativa: Valamir é convocado ao conselho. Ele usa a crise (rebeliões) para pressionar Dambur e conseguir os direitos sobre a Mina de Mélios. Ele se junta à party como um personagem jogável (Alquimista). Sua arrogância atinge o auge em Mélios, onde ele ignora os avisos de Kilin e Thorin, libertando os Ignotos.
+Jornada narrativa: Ele trabalha com Valamir no conselho para conseguir Mélios, acreditando que é o próximo passo lógico. Porém, Valamir o surpreende quando insiste em levar Thorin para a Mina de Mélios, única expedição não-passificada e, portanto, a mais mortal de todo continente. Ele tenta negar seu pedido, mas Dambur intervém e as coisas saem do controle.Quando Mélios falha e Kilin é perdido, sua fé nos "fins justificam os meios" é abalada. Sua aliança com Valamir racha severamente.
 
-Emoção Predominante: Arrogância -> Medo (após a quebra).
+Emoção Predominante: Confiança (em Valamir) -> Dúvida / Fúria (após a perda de Kilin e libertação dos Ignotos).
 
-Objetivo Imediato: Obter o poder da Mina de Mélios para si e alcançar prestígio.
+Objetivo Imediato: Conseguir o direito de explorar Mélios.
 
-Relação com Valores Centrais: Sua busca por "Poder" o cega. Ele acredita que sua "Eficiência" (dinamites) pode resolver qualquer problema.
+Relação com Valores Centrais: Tordan e Valamir querem destituir a família Corvinus do poder, uma das únicas famílias anãs tradicionais que ainda possuem prestígio suficiente para fazer frente aos interesses políticos dos dois.
 
-Contradições Internas Ativas: Ouvir aos avisos vs. ir em frente e mudar seu destino ao quebrar o selo.
+Contradições Internas Ativas: Sua aliança com Valamir vs. a perda de seu homem mais leal e honrado (Kilin), exposição de seu filho Thorin ao perigo de forma tão extrema.
 
-Arquétipo predominante: Tirano, Mago (Alquimista).
+Arquétipo predominante: O Governante.
 
-Principais inimigos: Os Corvos (tradicionalistas), Kilin (a voz da cautela).
+Principais inimigos: Os Corvos (tradicionalistas que atrapalham o crescimento da cidade de Gildrat), Ignotos.
 
 ### 2.2) Gatilhos do Ato II - mudanças à caminho
 
-#### Quest - Travessia Perigosa
-
-Valamir insiste em voltar mesmo sob uma forte tempestade de neve, usando o comprimisso do dia seguinte, onde a cúpula dos conselheiros se reuniria no Palácio Real, como justificativa. Kilin oferece uma visão lógica sobre os perigos, insistindo que deveriam esperar, conseguindo convencer rapidamente os outros expedicionarios. Mas Valamir não cede, ele ameaça e pressiona os trabalhadores com o corte de seus pagamentos, fazendo com que todos mudem de ideia e a expedição parta.
-
-Eles iniciam a marcha de volta à Gildrat bem a tempo de presenciar um grande deslizamento de rochas que bloqueia quase todos os caminhos e impede o grupo de avançar. A tempestade se acentua e eles são forçados a buscar abrigo.
-
-#### Quest - Travessia Tóxica/Ameaça Lupina/Barganha do Sigmetal
-
-Eles entram em uma mina desativada, a visibilidade é baixa e o perigo tangível, pois descobrem se tratar de uma antiga mina de escoamento de esgoto.
-
-Valamir, por pragmatismo, é forçado a entrar no grupo do jogador, já que precisa deles para sobreviver aos possíveis inimigos pelo caminho. Em troca ele oferece de seus apretrechos para atravessar o território desconhecido. Ele se torna o 5º membro jogável da equipe. Avançando, eles enfim encontram encontram uma sala que parece oferecer uma saída para o outro lado da mina, contornando por dentro o deslizamento que aconteceu do lado de fora, mas o Petesporo [Ler mais sobre o Boss Petesporo em](mina-do-esgoto.md), cogumelo gigante e venenoso, surge e bloqueia o caminho. O grupo luta e sai vitorioso.
-
-Voltando à superfície, encontram o restante do grupo que havia se separado deles cercado por Lobos de Gelo que caçavam nos arredores de Gildrat. Não há como avançar sem uma luta, mas Valamir insiste em tentar assim mesmo. O restante do grupo se prepara para entrar na batalha, pressionando Valamir a repensar sua decisão. Ele acaba desistindo da ideia de avançar sozinho e se prepara para lutar.
-
-Depois da batalha, todos retornam a Estrada do Cão-Luar. Valamir pressiona Thorin para que lhe conte exatamente o que aconteceu em Kravens, com a situação podendo se acentuar ainda mais caso o jogador tenha optado por não entregar o Sigmetal para o Mercenário antes de partirem da Kravens. Em seguida ele dispensa os expedicionários dizendo que o pagamento será feito apenas no dia seguinte, instruindo-os a encontrá-lo na Taverna da Pedra Vulcânica ao amanhecer.
-
 #### Quest - A Voz do Conselho
 
-Todos estão perante Dambur no Palácio Real. As pautas são apresentadas e a discussão tem início. Valamir apresenta os resultados da última expedição enquanto a família Corvinus é destituida de seu cargo por não conseguir romper um selo rúnico antigo, além de não conseguirem conter uma pequena rebelião entre seus expedicionários. Valamir ganha o direito sobre a Mina de Mélios, com os Corvos argumentando que ele não possui sangue nobre e, portanto, seria um sacrilégio confiar a mina mais preciosa do continente e o destino do imépério a ele. O mercenário sugere então levar Thorin consigo novamente, dizendo que a linhagem do garoto falaria por ele. Antes que Tordan possa intervir, já que Mélios é também a mina mais perigosa de toda Ekios, Dambur concorda e entrega ao Mercenário um decreto real.
-
-#### Quest - Quebra do Selo em Melios
-
-Os remanescentes da Família Corvinus se recusam a deixar o local mesmo sob o decreto real entregue a Valamir. Uma batalha acontece e os Corvos saem derrotados. Finalmente o grupo entra na mina, com Valamir abrindo caminho direto até selo usando suas criações. Ele não cede, ignora todos os avisos e liberta a terrível ameaça dos Ignotos. Todos lutam bravamente, mas são incapaz de conter a ameaça. Kilin fica para trás, segurando os inimigos e ordenando que Mhordred, Thorin e Filena fujam de Mélios. Valamir aproveita o momento de caos e foge também.
+Todos estão perante Dambur no Palácio Real. As pautas são apresentadas e a discussão tem início. Valamir apresenta os resultados da última expedição enquanto a família Corvinus é destituida de seu cargo por não conseguir romper um selo rúnico antigo, além de não conseguirem conter uma pequena rebelião entre seus expedicionários. Valamir ganha o direito sobre a Mina de Mélios e, com isso, os planos de ambos contra o tradicionalismo anão são praticamente consolidados, mas Valamir começa a agir de forma inesperada. Ele insiste em levar Thorin até a Mina de Mélios até que Dambur cede e resolve atender ao pedido, algo que com certeza não estava nos planos de Tordan.
 
 ## 3) Linha de Transformação básica
 
-Gildrat precisa encarar as consequências dos atos de Valamir. Pela primeira vez ele paree repensar suas ações. Dessa vez o peso se torna grande demais para suportar, ao invés de glória e prestígio, caso não consiga reverter a situação, ficará conhecido como "Aquele que causou a queda do império".
+Ameaçado pelos Ignotos e traído por Valamir, Tordan foca na única coisa que resta: a defesa militar. A reivindicação de Thorin para ser parte da Guarda de Ferro o choca e, e ele vê, pela primeira vez, seu filho como algo mais do que meramente uma criança.
 
 ### 3.1) Linha de Transformação avançada - Ato III / Transformação
 
-Jornada narrativa: Valamir retorna a Gildrat. Ele está em pânico, sabendo que o império irá culpá-lo pelo desastre e pela perda de Kilin. Quando Thorin e Mhordred organizam o resgate de Kilin, Valamir insiste em ir junto.
+Tordan está em modo de crise, furioso. Após descobrir sobre a ameaça dos Ignotos e a perda de seu guerreiro mais primoroso, Kilin, Ele rejeita a ideia de que Thorin se voluntarie para o resgate. Aceita apenas quando é forçado, ao ver o próprio filho "reivindicar" seu lugar na Guarda de Ferro.
 
-Emoção Predominante: Culpa, Medo -> Resolução Pragmática.
+Porém, não havia acabado por ali. Valamir causa um alvoroço no conselho ao dizer que Kilin tentou prejudicá-lo em prol de sua própria segurança, que o Lorde Anão tentou abandoná-lo como distração para os inimigos enquanto fugia dos demais. Thorin, Mhordred e Filena também ficam furiosos. Nenhum deles acredita em sequer uma palavra. Dambur proíbe qualquer tentativa de resgate a Kilin, chamando-o de "maior traidor do império anão".
 
-Objetivo Imediato: Resgatar Kilin (para começar a reparar seus erros) e usar sua genialidade (alquimia, constructos, engenhocas) para parar os Ignotos.
+A situação piora quando são "forçados" a aceitar a ajuda de Valamir (agora arrependido), vendo-o liderar as defesas da cidade.
 
-Relação com Valores Centrais: Seus valores são recontextualizados. "Eficiência" não é mais sobre lucro, é sobre sobrevivência. "Poder" não é sobre status, é sobre ter os meios para evitar o fim do mundo.
+Emoção Predominante: Dever (Militar), Luto (por Kilin), Orgulho (Relutante, por Thorin).
 
-Contradições Internas Ativas: Aceitar ser reconhecido por sua genialidade vs. a necessidade de ser reconhecido pelo sangue / Seu orgulho ferido vs. sua lógica, que agora dita que ele deve ajudar.
+Objetivo Imediato: Resgatar Kilin, reaproximar-se de Thorin e salvar Gildrat.
 
-Arquétipo predominante: O Arrependido, O Inventor (Aliado Redimido).
+Relação com Valores Centrais: Seu "Dever" militar assume o controle total. Seu "Pragmatismo" o força a aceitar a ajuda de Thorin e do Valamir arrependido, mesmo a contragosto.
 
-Profissão/ocupação: Financiador da Resistência / Mestre Inventor de Gildrat.
+Contradições Internas Ativas: O General (que precisa de soldados) vs. o Pai (que quer proteger o último resquício de Mélia).
 
-Hobbies: Criar armas, desenvolver explosivos táticos, construir constructos de defesa.
+Arquétipo predominante: O General, O Pai (Redimido).
 
-Cicatrizes: Mentais. O peso de ter desencadeado o que pode ser o apocalipse.
+Profissão/ocupação: General e Fundador da Guarda de Ferro, Líder da Defesa de Gildrat.
 
-Principais amizades: Nenhuma. Ele agora busca reestabelecer seu valor como anão.
+Principais amizades: Nenhuma.
 
-Principais inimigos: Os Ignotos (a variável que ele não calculou).
+Principais inimigos: Os Ignotos.
 
 ### 3.2) Gatilhos do Ato III - mudanças à caminho
 
 #### Quest -Quando o Segundo Sol Chegar
 
-Mhordred prende Valamir assim que saem de Mélios e o leva perante o conselho. Com quase todos os membros em seu bolso, ele é absolvido e volta a jogar o jogo da manipulação dizendo que apenas estava cumprindo as ordens de Dambur. Porém, também está assustado e enxerga pela primeira vez as consequências de seus atos. O prestígio já não importa mais, apenas a sobrevivência. Ele assume então o papel de liderar a defesa de Gildrat, colocando suas invenções de vez no mapa. Ele percebe que todos ficam impressionados com as engenhocas que construiu e percebe pela primeira vez que talvez o sangue não importe tanto assimn. Mhordred, Thorin e Filena ainda o olham com desprezo e ele percebe que precisa consertar as coisas.
+Tordan prepara a Guarda de Ferro para a investida dos Ignotos contra a cidade. Ele também tenta se reaproximar do filho, ao mesmo tempo em que precisa manter sua raiva contra Valamir contida, já que a traição dele ainda está fresca. Ele passa algum tempo sozinho na sala do trono para pensar, imagina que há mais por trás de tudo o que estão lhe contando.
 
-Quando o grupo decide partir na missão de resgate, Valamir já os espera na Estrada do Cão-luar. Lhes diz que os preparaivos para a defesa da cidade já estão bem adiantados, e que por isso deseja acompanhá-los, afinal, os Ignotos estarem libertos é sua culpa. Ainda relutantes, o grupo aceita. Eles atravessam Ekios para chegar em Mélios, sempre lutando. Valamir agora luta com honra, sem reclamações e sem tentar fugir.
+Uma carga grande de sentimentos do passado que ele pensou ter enterrado voltam à tona, fazendo com que Tordan se sinta fraco pela primeira vez em muito tempo. Ele vê Dambur recuar como um convarde e se trancafiar em algum lugar seguro, repudiando-o e se perguntando porque o havia apoiado como imperador, já que não via nele mais valor nenhum.
 
-Se Thorin entregou o Sigmetal a ele, projeta de presente para o garoto uma braçadeira tecnológica e super resistente, que além de protegê-lo, impulsiona seus golpes elevando tudo a uma "Técnica Perfeita". Inclusive, este é o nome que ele dá ao apetrecho.
+As mini-quests do personagem se iniciam a partir deste ponto.
 
-Assim que retornam à Gildrat, a batalha final tem início e, durante o combate, fica evidente que há algo errado com Kilin. Ele ainda é fisicamente forte, mas hesita, dá conselhos contraditórios ou se perde em pensamentos, mostrando que sua mente está fragmentada. No meio da batalha o inimigo desfere um golpe mortal contra Mhordred, que morre na frente dos demais.
-
-Percebendo o grupo vulnerável, o Comandante Ignoto prepara um ataque devastador que matará a todos. Thorin, em um ato de puro desespero libera seu poder mágico para salvá-los, mudando o rumo da batalha. Todos lamentam a morte do companheiro caído, mas sentem alívio. O Ignotos remanescentes começam a recuar. Thorin é o primeiro a reconhecer que, sem Valamir e suas invenções, jamais teriam vencido.
-
-Kilin e Filena também o cumprimenta, fazendo com o que o Mercenário perceba que a resposta para os seus problemas sempre esteve em sua genialidade, que tudo isso vai além do sangue e da linhagem. A Guerra ainda não acabou, ele sabe que há muito pela frente, mas estará pronto para lutar, agora ao lado de seus novos amigos.
-
-## 4) Resumo do Arco Narrativo e Mudanças do Valamir
+## 4) Resumo do Arco Narrativo e Mudanças do Tordan
 
 ### Ato I
 
-O "Carrasco Burguês". Ele age como um NPC patrão impiedoso, para quem Thorin é enviado para ser "endurecido".
+O "Pai Sombrio". Devastado pelo abandono de sua esposa Mélia, ele é incapaz de ser pai, apenas General. Ele se alia ao pragmático Valamir e envia seu filho Thorin para trabalhar para ele, como um plano para "endurecer" o garoto e prepará-lo para o futuro.
 
 ### Ato II
 
-O "Antagonista Jogável". Ele é forçado a se juntar a Thorin e os outros para sobreviver às consequências de suas próprias decisões.
+O "Aliado Conspirador". Ele e Valamir manipulam o conselho para garantir a expedição a Mélios. No entanto, a ganância de Valamir causa o apocalipse (Libertação dos Ignotos) e a perda do braço direito de Tordan, Kilin.
 
-Mudança/Gatilho: O momento crucial é a "Travessia Perigosa". Onde, pela primeira vez, percebe que nem sempre poderá escapar do peso de suas decisões.
+Mudança/Gatilho: O momento crucial é a discussão no conselho. Valamir cria uma rede de intrigas e mentiras para se salvar, causando uma rusga em sua aliança com Tordan e atraindo a raiva do restante do grupo.
 
 ### Ato III
 
-"Inventor Redimido". Aterrorizado pelo que fez, Valamir se junta ao resgate de Kilin para reparar suas alianças. Ele percebe que sua prepotência e desejo cego por reconhecimento quase destruiu seu prêmio. Ele dedica sua genialidade com engenhocas para salvar Gildrat, liderando as defesas tecnológicas ao lado da Guarda de Ferro.
+O "General Redimido". Traído por seu aliado e confrontado com o fim do mundo, Tordan abandona a política e se torna o líder militar. Seu ponto de virada é quando Thorin reivindica seu lugar na Guarda de Ferro, forçando Tordan a finalmente ver Thorin como um homem. Ele monta o plano para uma investida secreta, contra as ordens de Dambur, para resgatar Kilin, além de mobilizar o restante da Guarda de Ferro para a defesa da cidade.
 
-Mudança/Gatilho: Ele percebe que os anões passam a reconhecer sua genialidade enquanto prepara a defesa da cidade-império contra os Ignotos através de suas engenhocas. O reconhecimento que tanto buscava vêm de onde ele nunca poderia esperar.
+Mudança/Gatilho: Ele percebe que Thorin finalmente está crescendo, como tanto desejou. Com a ameaça eminente de morte, decide conversar uma vez mais com o filho e tentar reatar laços antigos.
+
+## 5) Mini-Quests de Conexão com Tordan
+
+### 1. O Troféu Quebrado (Versão Revisada)
+
+Beats Narrativos: Thorin encontra Tordan na cozinha, o mesmo local onde a primeira discussão aconteceu. Um de seus troféus de futebol rúnico está sobre a mesa, seu pai encara o objeto em silêncio.
+
+Thorin pode se aproximar e iniciar a conversa. Quando isso acontece, Tordan confessa o real motivo de seu ódio: "Mélia... ela adorava ver você jogar. Ela adorava esse jogo estúpido. E no fim... ela amou mais a liberdade dela do que a nós." Ele revela que, após ela partir, ele não conseguia mais olhar para o campo, ou para Thorin, sem sentir o abandono dela.
+
+Custos/Requisitos: Mínimo. Reutiliza a cozinha da Casa Forja-Prata.
+
+Efeitos em Variáveis:
+
+Se Thorin for empático ("Eu também sinto falta dela."): v_boa_vontade_thordan +2. (Esta escolha abre as próximas quests).
+
+Se Thorin for acusatório ("E você me culpou por isso."): v_boa_vontade_thordan -1. (Esta escolha encerra o arco de reconciliação), o arco de convergência entra em vigor: Tordan não está mais com raiva de Thorin, ele está compartilhando sua dor. "Eu entendo que esteja com raiva de mim. Você tem os olhos dela e também o mesmo temperamento. Não deixe que o mundo quebre você... como me quebrou, filho. Isto é para você". Tordan entrega a Thorin um pequeno baú com sua velha funda dentro, feita com pele especial de um Lobo de Gelo, caçado por ele mesmo. Ele explica que em sua juventude, essa também era sua arma preferida.
+
+### 2. A Funda do General (Item de Recompensa)
+
+Pré-requisito: Ter completado "O Troféu Quebrado" com empatia (v_boa_vontade_thordan > 0).
+
+Beats Narrativos: Tordan chama Thorin para seus aposentos pessoais, um local que Thorin raramente visita. O quarto é austero, militar, exceto por um pequeno baú trancado e uma foto de sua mãe na parede. Seu pai o encara: "Eu rejeitei seu caminho. Eu tentei forçá-lo a ser o que eu queria. Hoje reconheço o erro que cometi".
+
+Ele abre o baú. Lá dentro está uma Funda (Sling) belíssima e elaborada, feita com pele de Lobo de Gelo.
+
+Descrição do Item: Não é uma funda de criança. Ela é tecida com tiras de couro e trançada com os fios de metal. O berço da funda, onde pedras se encaixam, é forrado com um pequeno pedaço de seda azul-clara — a cor do vestido favorito de Mélia.
+
+Tordan entrega a funda a Thorin. "Sua mãe teceu a primeira. Esta... eu mesmo fiz. Que ela proteja o que restou da minha família."
+
+Tordan, em seguida, leva Thorin até um espaço de treinamento (pode ser no castelo ou perto do campo de futebol) onde pequenos alvos estão espalhados. Ele ensina o filho a atirar com mais precisão e força, além de entregar alguns minérios com aparência rudimentar. "Isso é resultado do tempo da minha aliança com Valamir, você sabe... antes dele trair a todos nós. Atire, você vai gostar". Será no mapa que seria o vestiário.
+
+Enquanto estiver usando essa munição, os ataques de Thorin causam dano extra baseado no atributo escolhido (munição pode ser explosiva, bomba de fumaça, veneno entre outros).
+
+Custos/Requisitos: Médio. Requer a criação de um novo item (Funda do General), uma nova cena nos aposentos de Tordan, além da criação de um novo e pequeno espaço para treinamento.
+
+Efeitos em Variáveis:
+
+v_boa_vontade_thordan +2
+
+Thorin recebe o item "Funda do General" (Dano Alto, +Velocidade, +Chance Crítica).
+
+Convergência: Tordan não está apenas dando uma arma; ele está validando o caminho de Thorin, fundindo seu próprio dever com a memória de Mélia (seda azul).
+
+Teaser: Tordan: "Use-a no campo de batalha. E talvez... um dia... no campo de jogo novamente."
+
+### 2. Hora do Show (Substitui "A Funda do General")
+
+Beats Narrativos: Tordan convoca Thorin para a sala de guerra. "A Guarda está sobrecarregada. Nossos batedores relataram Ignotos perto das fronteiras, sondando o terreno. Você é um guerreiro agora, portanto, vou tratá-lo como tal. Há muitos pontos cegos por onde os inimigos podem entrar. Vá até a estrada do Cão-luar e ajude com os preparativos de defesa... tome cuidado, é claro".
+
+Thorin deve ir sozinho e realizar alguma tarefa simples (podendo ser ajudar Valamir com algum preparativo ou vasculhar a área em busca de Ignotos).
+
+Ao retornar, Thorin reporta a Tordan. "Você fez um bom trabalho. Dispensado."
+
+Custos/Requisitos: Baixo. Reutiliza a área da Estrada do Cão-luar.
+
+Efeitos em Variáveis:
+
+v_boa_vontade_thordan +1 (Respeito relutante por cumprir uma ordem direta).
+
+v_preparo_militar +1.
+
+### 3 Beat do Fim do Jogo: Paz que Dura Pouco Ainda é Paz - Feito através de imagens - Beat por Beat
+
+Contexto: Esta cena ocorre na seção "Pós-créditos: O Despertar", após a batalha final ter sido vencida e Gildrat ter sido salva (for now).
+
+#### Versão A: Caminho da Empatia
+
+Pré-requisito: O jogador escolheu a opção "Empático" na mini-quest "O Troféu Quebrado", completando o arco de reconciliação através da memória de Mélia. O v_boa_vontade_thordan está alto.
+
+Cena: O Estádio dos Machados Enferrujados está vazio, com poucos fãs ao redor. A atmosfera é de reconstrução, novos começos. É um dia de campeonato, e o time de Thorin e Filena está jogando.
+
+Beats Narrativos: Thorin e Filena estão em campo. Eles estão jogando com a confiança de veteranos. Eles marcam um gol, e a torcida celebra. No meio da comemoração, Thorin instintivamente olha para as arquibancadas. Ele procura a seção onde as famílias se sentam. Lá, sentado sozinho em um banco de pedra, está Tordan. Ele não está de armadura de General, mas com trajes mais simples. Ele não está sorrindo, mas a severidade em seu rosto desapareceu, substituída por uma expressão de melancolia e orgulho.
+
+Seus olhos se encontram. Tordan levanta a mão e dá um lento e deliberado aceno. Não é a saudação de um General, mas o gesto de um pai.
+
+Tom e Significado: Esperançoso e agridoce. Tordan não está no jogo apenas por Thorin; ele está lá para honrar as boas memória de Mélia e a família que eles foram. Ao aceitar o futebol rúnico, ele finalmente se reconectou com a parte de si mesmo que morreu com o abandono dela.
+
+#### Versão B: Caminho do Respeito (Hostil)
+
+Pré-requisito: O jogador escolheu a opção "Acusatório" na mini-quest "O Troféu Quebrado", completando o arco de reconciliação através do dever militar.
+
+Cena: O Estádio dos Machados Enferrujados. A atmosfera é de uma competição acirrada. O foco está na habilidade e na estratégia do jogo.
+
+Beats Narrativos: Thorin e Filena estão em campo, movendo-se com uma precisão tática letal. Cada passe é calculado, eles não estão apenas jogando; estão executando manobras.
+
+Thorin olha instintivamente para a multidão. Lá, de pé e de braços cruzados, está Tordan. Ele está em seu uniforme completo de General da Guarda de Ferro. Thorin executa uma jogada particularmente brilhante — marcando um gol. Tordan sorri. Thorin vê o gesto e dá um aceno em resposta, antes de se virar de volta para o jogo. Há emoção silenciosa. Depois do jogo, Tordan espera por Thorin perto do estádio e lhe diz estar orgulhoso. "Agora, vamos apra casa, moleque!". Thorin finalmente amolece o coração e sorri para o pai.
+
+Tom e Significado: Respeitoso. Tordan não está lá para reviver o passado ou curar feridas emocionais. Ele está lá porque finalmente entende que as habilidades que Thorin aprimorou no campo — precisão, velocidade, trabalho em equipe — são as mesmas que o tornaram um herói de guerra. Ele é seu filho, seu legado, a parte palpável que ainda lhe resta. Ele não irá arriscar isso novamente.
