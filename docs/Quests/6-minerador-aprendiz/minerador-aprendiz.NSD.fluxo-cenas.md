@@ -26,7 +26,6 @@
   - Tusk
   - Kilin
   - Mhordred
-  - Tharok
   - Cristaleão (boss)
   - Mineradores secundários
 
@@ -56,7 +55,7 @@ Quest: Minerador Aprendiz
  │      ├── Beat 1: Caminhada até a mina — Tusk caminha rumo à entrada da caverna. (🎬)
  │      ├── Beat 2: Instruções de Tusk — Fala sobre os 10 Kravens e o raro Sigmetal. (🎬)
  │      └── Beat 3: Rumo ao Andar 2 — Jogador leva Thorin até a escada. (🎮)
- ├── Cena 3: Guardas Atrasados — Premissa: Os guardas chegam atrasados, cena cômica com o "piriri" do Tharok.
+ ├── Cena 3: Guardas Atrasados — Premissa: Os guardas chegam atrasados, cena cômica com o "piriri" do Mhordred.
  │      └── Beat 1: Interrupção Engraçada — Guardas surgem pedindo para esperar, rindo da situação. (🎬)
  ├── Cena 4: Mineração Subterrânea — Premissa: Thorin coleta os Kravens enquanto tenta terminar logo o serviço.
  │      ├── Beat 1: Início da coleta — Jogador começa a minerar os Kravens. (🎮)
@@ -85,7 +84,7 @@ Quest: Minerador Aprendiz
 | 1 | **Sonho Recorrente**       | Thorin sonha novamente com sua mãe, que o alerta para agir rápido e deter Damburr. Ao acordar, Tusk invade sua barraca apressando-o para a expedição.                                |
 | 2 | **Rumo à Mina de Kravens** | O jogador guia Thorin até a entrada da mina; cutscene mostra Tusk à frente, indicando o caminho.                                                                                       |
 | 3 | **Briefing de Tusk**       | Tusk instrui os mineradores sobre o minério Kraven e menciona o raro Sigmetal. Thorin recebe sua missão: minerar 10 Kravens e reportar qualquer anomalia.                              |
-| 4 | **Atrasados com Piriri**   | Ao tentar descer, os guardas surgem atrasados por causa de Tharok, que abusou do assado na noite anterior. Cena cômica antes do início da mineração.                                   |
+| 4 | **Atrasados com Piriri**   | Ao tentar descer, os guardas surgem atrasados por causa de Mhordred, que abusou do assado na noite anterior. Cena cômica antes do início da mineração.                                   |
 | 5 | **Minerando Kravens**      | Thorin minera os Kravens no segundo andar. A cada minério, ele comenta estar mais próximo de terminar. Ao pegar o nono, o chão treme e ele despenca para um nível abaixo.             |
 | 6 | **Cristaleão Desperto**    | Thorin encontra o vulto de uma criatura na parede. Ao interagir (ou tentar fugir), inicia uma batalha com o Cristaleão, o primeiro boss do jogo.                                      |
 | 7 | **O Dilema do Sigmetal**   | Após derrotar o Cristaleão e obter o Sigmetal, Thorin deve escolher entre entregar esse minério ou completar a tarefa inicial coletando o 10º Kraven.                                 |
@@ -123,7 +122,7 @@ Quest: Minerador Aprendiz
 | - |------|----------|
 | 1 | Jogador clica para descer ao segundo andar da mina. | 🎮 |
 | 2 | Cutscene interrompe com os guardas correndo até Thorin. | 🎬 |
-| 3 | Os guardas reclamam de Tharok, que exagerou no assado e atrasou todos. | 🎬 |
+| 3 | Os guardas reclamam de Mhordred, que exagerou no assado e atrasou todos. | 🎬 |
 | 4 | Cena termina com os guardas se juntando ao grupo. | 🎬 |
 
 ##### Cena 5 – Minerando Kravens

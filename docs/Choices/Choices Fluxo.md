@@ -24,7 +24,7 @@
 
   - ### Choices: Finalizar com segurança - Arriscar uma jogada espetacular
 
-- **Futebol Rúnico:** Depois do jogo, quando o Treinador Dragobur conversa com Thorin sobre alguns detalhes da partida, os guardas imperiais Kilin, Mhordred e Tharok surgem para arrastar o filho rebelde de volta para casa. Thorin pode escolher entre entender que aquele é apenas o trabalho dos guardas, ou brigar com Kilin.
+- **Futebol Rúnico:** Depois do jogo, quando o Treinador Dragobur conversa com Thorin sobre alguns detalhes da partida, os guardas imperiais Kilin e Mhordred surgem para arrastar o filho rebelde de volta para casa. Thorin pode escolher entre entender que aquele é apenas o trabalho dos guardas, ou brigar com Kilin.
 
   - ### Choices: Manter a calma - Desafiar o guarda
 

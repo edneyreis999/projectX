@@ -21,8 +21,7 @@
 **NPCs principais**:  
   - Thorin  
   - Kilin  
-  - Mhordred  
-  - Tharok
+  - Mhordred
   - Tusk
   - Balastrus
   - Expedicionários anãos
@@ -79,7 +78,7 @@ Quest: Barganha do Sigmetal -
 
 | #  | Beat                                    | Descrição                                                                                                    | Controle |
 | ---|----------------------------------------|--------------------------------------------------------------------------------------------------------------|----------|
-| 1  | Chegada à Gildrat                      | Thorin retorna com a Guarda de Ferro, Tusk e os outros expedicionários                       | 🎮       |
+| 1  | Chegada à Gildrat                      | Thorin retorna com Kilin, Mhordred, Filena, Tusk e os outros expedicionários                       | 🎮       |
 | 2  | Diálogo com Balastrus               | Ansioso e sedento por ótimas notícias, Balastrus preciona Thorin.    | 🎮       |
 | 3  |Escolhas do Jogador| Thorin pode escolher entre entregar apenas os Kravens ou também o Sigmetal. As escolham terão impacto na narrativa.                | 🎮       |
 | 4  | Volta para casa                  | Balastrus e Tusk dispensam os expedicionários, mas adiam o pagamento. Thorin fica confuso, pois esperava não ter mais que ver seus contratantes ou lidar com expedições novamente. Ele aceita o adiamento imposto, pois era a única coisa que poderia fazer, e finalmente retorna para casa.   | 🎬       |
