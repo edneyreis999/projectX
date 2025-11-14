@@ -142,9 +142,9 @@ Principais inimigos: Os Ignotos.
 
 #### Quest -Quando o Segundo Sol Chegar
 
-Tordan prepara a Guarda de Ferro para a investida dos Ignotos contra a cidade. Ele também tenta se reaproximar do filho, ao mesmo tempo em que precisa manter sua raiva contra Valamir contida, já que a traição dele ainda está fresca. Ele passa algum tempo sozinho na sala do trono para pensar, imagina que há mais por trás de tudo o que estão lhe contando.
+Tordan prepara a Guarda de Ferro para a investida dos Ignotos contra a cidade. Ele também tenta se reaproximar do filho, ao mesmo tempo em que precisa manter sua raiva contra Valamir contida, já que a traição dele ainda está fresca. Ele passa algum tempo sozinho na sala do trono para pensar, imaginando se há mais por trás de tudo o que estão lhe contando.
 
-Uma carga grande de sentimentos do passado que ele pensou ter enterrado voltam à tona, fazendo com que Tordan se sinta fraco pela primeira vez em muito tempo. Ele vê Dambur recuar como um convarde e se trancafiar em algum lugar seguro, repudiando-o e se perguntando porque o havia apoiado como imperador, já que não via nele mais valor nenhum.
+Uma carga grande de sentimentos do passado que ele pensou ter enterrado voltam à tona, fazendo com que Tordan se sinta fraco pela primeira vez em muito tempo. Ele vê Dambur recuar como um convarde e se trancafiar em algum lugar seguro, repudiando-o e se perguntando porque o havia apoiado como imperador, já que não via mais valor nenhum nele.
 
 As mini-quests do personagem se iniciam a partir deste ponto.
 
@@ -162,7 +162,7 @@ Mudança/Gatilho: O momento crucial é a discussão no conselho. Valamir cria um
 
 ### Ato III
 
-O "General Redimido". Traído por seu aliado e confrontado com o fim do mundo, Tordan abandona a política e se torna o líder militar. Seu ponto de virada é quando Thorin reivindica seu lugar na Guarda de Ferro, forçando Tordan a finalmente ver Thorin como um homem. Ele monta o plano para uma investida secreta, contra as ordens de Dambur, para resgatar Kilin, além de mobilizar o restante da Guarda de Ferro para a defesa da cidade.
+O "General Redimido". Traído por seu aliado e confrontado com o fim do mundo, Tordan abandona a política e se torna o líder militar. Seu ponto de virada é quando Thorin reivindica seu lugar na Guarda de Ferro, forçando Tordan a finalmente vê-lo como um homem.
 
 Mudança/Gatilho: Ele percebe que Thorin finalmente está crescendo, como tanto desejou. Com a ameaça eminente de morte, decide conversar uma vez mais com o filho e tentar reatar laços antigos.
 
@@ -194,7 +194,7 @@ Descrição do Item: Não é uma funda de criança. Ela é tecida com tiras de c
 
 Tordan entrega a funda a Thorin. "Sua mãe teceu a primeira. Esta... eu mesmo fiz. Que ela proteja o que restou da minha família."
 
-Tordan, em seguida, leva Thorin até um espaço de treinamento (pode ser no castelo ou perto do campo de futebol) onde pequenos alvos estão espalhados. Ele ensina o filho a atirar com mais precisão e força, além de entregar alguns minérios com aparência rudimentar. "Isso é resultado do tempo da minha aliança com Valamir, você sabe... antes dele trair a todos nós. Atire, você vai gostar". Será no mapa que seria o vestiário.
+Tordan, em seguida, leva Thorin até um espaço de treinamento que fica dentro do vestiário, no estádio dos Machados Enferrujados, onde pequenos alvos estão espalhados. Ele ensina o filho a atirar com mais precisão e força, além de entregar alguns minérios com aparência rudimentar. "Isso é resultado do tempo da minha aliança com Valamir, você sabe... antes dele trair a todos nós. Atire, você vai gostar".
 
 Enquanto estiver usando essa munição, os ataques de Thorin causam dano extra baseado no atributo escolhido (munição pode ser explosiva, bomba de fumaça, veneno entre outros).
 
@@ -228,7 +228,7 @@ v_preparo_militar +1.
 
 ### 3 Beat do Fim do Jogo: Paz que Dura Pouco Ainda é Paz - Feito através de imagens - Beat por Beat
 
-Contexto: Esta cena ocorre na seção "Pós-créditos: O Despertar", após a batalha final ter sido vencida e Gildrat ter sido salva (for now).
+Contexto: Esta cena ocorre na seção "Pós-créditos: O Despertar", após a batalha final ter sido vencida e Gildrat ter sido salva (for now). (Feita por imagens, criando um novo fluxo de beats narrativos).
 
 #### Versão A: Caminho da Empatia
 
@@ -236,9 +236,7 @@ Pré-requisito: O jogador escolheu a opção "Empático" na mini-quest "O Trofé
 
 Cena: O Estádio dos Machados Enferrujados está vazio, com poucos fãs ao redor. A atmosfera é de reconstrução, novos começos. É um dia de campeonato, e o time de Thorin e Filena está jogando.
 
-Beats Narrativos: Thorin e Filena estão em campo. Eles estão jogando com a confiança de veteranos. Eles marcam um gol, e a torcida celebra. No meio da comemoração, Thorin instintivamente olha para as arquibancadas. Ele procura a seção onde as famílias se sentam. Lá, sentado sozinho em um banco de pedra, está Tordan. Ele não está de armadura de General, mas com trajes mais simples. Ele não está sorrindo, mas a severidade em seu rosto desapareceu, substituída por uma expressão de melancolia e orgulho.
-
-Seus olhos se encontram. Tordan levanta a mão e dá um lento e deliberado aceno. Não é a saudação de um General, mas o gesto de um pai.
+Beats Narrativos: Thorin e Filena estão em campo. Eles marcam um gol, e a torcida celebra. No meio da comemoração, Thorin instintivamente olha para as arquibancadas. Ele procura a seção onde as famílias se sentam. Lá, sentado sozinho em um banco de pedra, está Tordan. Ele não está de armadura de General, mas com trajes mais simples. Ele não está sorrindo, mas a severidade em seu rosto desapareceu, substituída por uma expressão de melancolia e orgulho.
 
 Tom e Significado: Esperançoso e agridoce. Tordan não está no jogo apenas por Thorin; ele está lá para honrar as boas memória de Mélia e a família que eles foram. Ao aceitar o futebol rúnico, ele finalmente se reconectou com a parte de si mesmo que morreu com o abandono dela.
 
@@ -248,8 +246,6 @@ Pré-requisito: O jogador escolheu a opção "Acusatório" na mini-quest "O Trof
 
 Cena: O Estádio dos Machados Enferrujados. A atmosfera é de uma competição acirrada. O foco está na habilidade e na estratégia do jogo.
 
-Beats Narrativos: Thorin e Filena estão em campo, movendo-se com uma precisão tática letal. Cada passe é calculado, eles não estão apenas jogando; estão executando manobras.
-
-Thorin olha instintivamente para a multidão. Lá, de pé e de braços cruzados, está Tordan. Ele está em seu uniforme completo de General da Guarda de Ferro. Thorin executa uma jogada particularmente brilhante — marcando um gol. Tordan sorri. Thorin vê o gesto e dá um aceno em resposta, antes de se virar de volta para o jogo. Há emoção silenciosa. Depois do jogo, Tordan espera por Thorin perto do estádio e lhe diz estar orgulhoso. "Agora, vamos apra casa, moleque!". Thorin finalmente amolece o coração e sorri para o pai.
+Beats Narrativos: Thorin e Filena estão em campo. Thorin olha instintivamente para a multidão. Lá, de pé e de braços cruzados, está Tordan. Ele está em seu uniforme completo de General da Guarda de Ferro. Thorin executa uma jogada particularmente brilhante — marcando um gol. Tordan sorri. Thorin vê o gesto. Depois do jogo, Tordan espera por Thorin perto do estádio, eles sorriem e: "Agora, vamos apra casa, moleque!", aparece escrito na tela antes dos créditos finais.
 
 Tom e Significado: Respeitoso. Tordan não está lá para reviver o passado ou curar feridas emocionais. Ele está lá porque finalmente entende que as habilidades que Thorin aprimorou no campo — precisão, velocidade, trabalho em equipe — são as mesmas que o tornaram um herói de guerra. Ele é seu filho, seu legado, a parte palpável que ainda lhe resta. Ele não irá arriscar isso novamente.
