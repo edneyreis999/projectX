@@ -1,26 +1,26 @@
 {
   "autoplayBgm": false,
   "autoplayBgs": false,
-  "battleback1Name": "",
-  "battleback2Name": "",
+  "battleback1Name": "DirtField",
+  "battleback2Name": "Town3",
   "bgm": { "name": "", "pan": 0, "pitch": 100, "volume": 90 },
   "bgs": { "name": "", "pan": 0, "pitch": 100, "volume": 90 },
   "disableDashing": false,
   "displayName": "",
   "encounterList": [],
   "encounterStep": 30,
-  "height": 40,
+  "height": 30,
   "note": "",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
-  "parallaxName": "",
+  "parallaxName": "!DistritoResidencial",
   "parallaxShow": true,
   "parallaxSx": 0,
   "parallaxSy": 0,
   "scrollType": 0,
-  "specifyBattleback": false,
-  "tilesetId": 11,
-  "width": 60,
+  "specifyBattleback": true,
+  "tilesetId": 7,
+  "width": 25,
   "data": [
     6275, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274,
     6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6278, 6273, 6272, 6272, 6272,
@@ -268,8 +268,29 @@
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 265, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265,
+    265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265,
+    265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265,
+    265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 266, 266, 266, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265,
+    265, 266, 266, 266, 266, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 266, 266, 266, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265,
+    265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 266, 266, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 266,
+    266, 266, 266, 266, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 266, 266, 266, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265,
+    265, 265, 265, 265, 265, 265, 265, 265, 266, 266, 266, 266, 266, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 266, 266, 266, 266, 265,
+    265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 266, 266, 266, 266, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265,
+    265, 265, 265, 265, 266, 266, 266, 266, 266, 266, 266, 266, 266, 266, 266, 266, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 266, 266, 266, 265, 265, 265, 265, 265,
+    265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 266, 266, 266, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 266, 266, 266, 266, 266,
+    266, 266, 265, 266, 266, 266, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 266, 266, 266, 266, 266, 266, 266, 266, 266, 266, 266, 265, 265, 265, 265, 265, 265, 265, 265,
+    265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 266, 266, 266, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265,
+    266, 266, 266, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 266, 266, 266, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265,
+    265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 266, 266, 266, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 266, 266, 266,
+    265, 265, 265, 265, 266, 266, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 266, 265, 265, 265, 265, 266, 266, 266, 266, 266, 266, 266, 266, 266, 266, 265, 265, 265, 265, 265, 265, 265,
+    265, 265, 266, 266, 266, 265, 265, 266, 266, 266, 266, 266, 266, 266, 266, 266, 266, 266, 266, 266, 266, 265, 265, 265, 265, 265, 265, 266, 266, 266, 265, 266, 266, 266, 266, 266, 266, 266, 266,
+    266, 266, 266, 266, 266, 266, 266, 265, 265, 265, 265, 265, 265, 265, 266, 265, 265, 266, 265, 266, 266, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265,
+    266, 266, 266, 266, 266, 266, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265,
+    265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -330,7 +351,48 @@
     null,
     {
       "id": 1,
-      "name": "Braseiro Grande",
+      "name": "Ir para Distrito Comercial",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 23,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 29,
+            "variableValid": true,
+            "variableValue": 1
+          },
+          "directionFix": true,
+          "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 2, "characterIndex": 7 },
+          "list": [
+            { "code": 201, "indent": 0, "parameters": [0, 8, 1, 19, 0, 0] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 4,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 4,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        }
+      ],
+      "x": 24,
+      "y": 25
+    },
+    {
+      "id": 2,
+      "name": "Entrar em casa",
       "note": "",
       "pages": [
         {
@@ -350,25 +412,169 @@
             "variableValue": 0
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Distrito Residncial Nobre/$Fonte", "direction": 4, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "image": { "tileId": 0, "characterName": "!DoorCoreto", "direction": 2, "pattern": 2, "characterIndex": 0 },
+          "list": [
+            { "code": 250, "indent": 0, "parameters": [{ "name": "Open1", "volume": 90, "pitch": 100, "pan": 0 }] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                0,
+                {
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true,
+                  "list": [{ "code": 17 }, { "code": 15, "parameters": [3] }, { "code": 18 }, { "code": 15, "parameters": [3] }, { "code": 19 }, { "code": 37 }, { "code": 0 }]
+                }
+              ]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 17 }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 15, "parameters": [3] }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 18 }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 15, "parameters": [3] }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 19 }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 37 }] },
+            { "code": 205, "indent": 0, "parameters": [-1, { "repeat": false, "skippable": true, "wait": true, "list": [{ "code": 12 }, { "code": 0 }] }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 12 }] },
+            { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
+            { "code": 201, "indent": 0, "parameters": [0, 6, 19, 9, 4, 0] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                0,
+                {
+                  "list": [{ "code": 18 }, { "code": 15, "parameters": [3] }, { "code": 16, "indent": null }, { "code": 38, "indent": null }, { "code": 0 }],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 18 }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 15, "parameters": [3] }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 38, "indent": null }] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 6,
+          "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": true,
+          "stepAnime": false,
           "through": false,
           "trigger": 0,
           "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 11,
+            "variableValid": true,
+            "variableValue": 1
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "!Door1", "direction": 2, "pattern": 1, "tileId": 0 },
+          "list": [
+            { "code": 250, "indent": 0, "parameters": [{ "name": "Open1", "volume": 90, "pitch": 100, "pan": 0 }] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                0,
+                {
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true,
+                  "list": [{ "code": 17 }, { "code": 15, "parameters": [3] }, { "code": 18 }, { "code": 15, "parameters": [3] }, { "code": 19 }, { "code": 37 }, { "code": 0 }]
+                }
+              ]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 17 }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 15, "parameters": [3] }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 18 }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 15, "parameters": [3] }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 19 }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 37 }] },
+            { "code": 205, "indent": 0, "parameters": [-1, { "repeat": false, "skippable": true, "wait": true, "list": [{ "code": 12 }, { "code": 0 }] }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 12 }] },
+            { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
+            { "code": 201, "indent": 0, "parameters": [0, 6, 19, 9, 4, 0] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                0,
+                {
+                  "list": [{ "code": 18 }, { "code": 15, "parameters": [3] }, { "code": 16, "indent": null }, { "code": 38, "indent": null }, { "code": 0 }],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 18 }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 15, "parameters": [3] }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 38, "indent": null }] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 11,
+            "variableValid": true,
+            "variableValue": 2
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "!Door1", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
         }
       ],
-      "x": 32,
-      "y": 20
+      "x": 7,
+      "y": 23
     },
     {
-      "id": 2,
-      "name": "Obter posição",
+      "id": 3,
+      "name": "Ir para Distrito Comercial",
       "note": "",
       "pages": [
         {
@@ -379,6 +585,97 @@
             "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
+            "switch1Id": 23,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 29,
+            "variableValid": true,
+            "variableValue": 1
+          },
+          "directionFix": true,
+          "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 2, "characterIndex": 7 },
+          "list": [
+            { "code": 201, "indent": 0, "parameters": [0, 8, 1, 19, 0, 0] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 4,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 4,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        }
+      ],
+      "x": 24,
+      "y": 24
+    },
+    {
+      "id": 4,
+      "name": "Palavra final de Kilin",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 38,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 27,
+            "variableValid": true,
+            "variableValue": 1
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                5,
+                { "list": [{ "code": 45, "parameters": ["Move to: 13,25"], "indent": null }, { "code": 25, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
+              ]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 13,25"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 25, "indent": null }] },
+            { "code": 205, "indent": 0, "parameters": [-1, { "list": [{ "code": 18, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 18, "indent": null }] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal1", 3, 0, 2, "Kilin"] },
+            { "code": 401, "indent": 0, "parameters": ["Acredite, Thorin. Também não gostamos de sempre"] },
+            { "code": 401, "indent": 0, "parameters": ["ter que arrastá-lo  de volta para casa. Mas as"] },
+            { "code": 401, "indent": 0, "parameters": ["ordens do seu pai são absolutas."] },
+            { "code": 121, "indent": 0, "parameters": [9, 9, 0] },
+            { "code": 122, "indent": 0, "parameters": [27, 27, 0, 0, 1] },
+            { "code": 123, "indent": 0, "parameters": ["A", 0] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
             "switch1Id": 1,
             "switch1Valid": false,
             "switch2Id": 1,
@@ -390,17 +687,186 @@
           "directionFix": false,
           "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
           "list": [
-            { "code": 122, "indent": 0, "parameters": [37, 37, 0, 3, 5, -1, 0] },
-            { "code": 122, "indent": 0, "parameters": [38, 38, 0, 3, 5, -1, 1] },
-            { "code": 285, "indent": 0, "parameters": [36, 6, 1, 37, 38] },
-            { "code": 111, "indent": 0, "parameters": [1, 36, 0, 2, 0] },
-            { "code": 282, "indent": 1, "parameters": [12] },
-            { "code": 0, "indent": 1, "parameters": [] },
-            { "code": 412, "indent": 0, "parameters": [] },
-            { "code": 111, "indent": 0, "parameters": [1, 36, 0, 1, 0] },
-            { "code": 282, "indent": 1, "parameters": [11] },
-            { "code": 0, "indent": 1, "parameters": [] },
-            { "code": 412, "indent": 0, "parameters": [] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal1", 3, 0, 2, "Kilin"] },
+            { "code": 401, "indent": 0, "parameters": ["Thorin, é melhor ir logo. Se Tordan ficar "] },
+            { "code": 401, "indent": 0, "parameters": ["impaciênte, todos nós sofreremos as "] },
+            { "code": 401, "indent": 0, "parameters": ["consequências!"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal1", 7, 0, 2, "Tharok"] },
+            { "code": 401, "indent": 0, "parameters": ["Nós te vimos crescer, Thorin. Quer realmente"] },
+            { "code": 401, "indent": 0, "parameters": ["assistir a nós três nos dando mal por sua"] },
+            { "code": 401, "indent": 0, "parameters": ["causa?!"] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal1", 5, 0, 2, "Mhordred"] },
+            { "code": 401, "indent": 0, "parameters": ["Anda logo, moleque!"] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 7,
+      "y": 25
+    },
+    {
+      "id": 5,
+      "name": "Kilin",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 8,
+            "variableValid": false,
+            "variableValue": 1
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "", "direction": 4, "pattern": 1, "characterIndex": 1 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 29,
+            "variableValid": true,
+            "variableValue": 6
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Principal/$Kilin", "direction": 4, "pattern": 1, "characterIndex": 0 },
+          "list": [
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal1", 3, 0, 2, "Kilin"] },
+            { "code": 401, "indent": 0, "parameters": ["Vá Thorin, o tempo está passando!"] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 32,
+            "variableValid": true,
+            "variableValue": 1
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Principal/$Kilin", "direction": 4, "pattern": 1, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 32,
+            "variableValid": true,
+            "variableValue": 2
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 14,
+      "y": 25
+    },
+    {
+      "id": 6,
+      "name": "Tempo",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 29,
+            "variableValid": true,
+            "variableValue": 8
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 223, "indent": 0, "parameters": [[-68, -68, 0, 68], 60, false] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -411,17 +877,8 @@
           "stepAnime": false,
           "through": false,
           "trigger": 4,
-          "walkAnime": false
-        }
-      ],
-      "x": 0,
-      "y": 0
-    },
-    {
-      "id": 3,
-      "name": "Lume-pedra",
-      "note": "",
-      "pages": [
+          "walkAnime": true
+        },
         {
           "conditions": {
             "actorId": 1,
@@ -434,929 +891,14 @@
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Distrito Residncial Nobre/$Iluminacao", "direction": 2, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 6,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 35,
-      "y": 17
-    },
-    {
-      "id": 4,
-      "name": "Lume-pedra",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Distrito Residncial Nobre/$Iluminacao", "direction": 2, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 6,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 34,
-      "y": 22
-    },
-    {
-      "id": 5,
-      "name": "Lume-pedra",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Distrito Residncial Nobre/$Iluminacao", "direction": 2, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 6,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 25,
-      "y": 16
-    },
-    {
-      "id": 6,
-      "name": "Lume-pedra",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Distrito Residncial Nobre/$Iluminacao", "direction": 2, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 6,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 25,
-      "y": 23
-    },
-    {
-      "id": 7,
-      "name": "Tocha",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Distrito Residncial Nobre/$Iluminacao", "direction": 4, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 6,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 15,
-      "y": 19
-    },
-    {
-      "id": 8,
-      "name": "Tocha",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Distrito Residncial Nobre/$Iluminacao", "direction": 4, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 6,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 20,
-      "y": 19
-    },
-    {
-      "id": 9,
-      "name": "Tocha",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Distrito Residncial Nobre/$Iluminacao", "direction": 4, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 6,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 10,
-      "y": 21
-    },
-    {
-      "id": 10,
-      "name": "Tocha",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Distrito Residncial Nobre/$Iluminacao", "direction": 4, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 6,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 15,
-      "y": 21
-    },
-    {
-      "id": 11,
-      "name": "Tocha",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Distrito Residncial Nobre/$Iluminacao", "direction": 4, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 6,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 10,
-      "y": 19
-    },
-    {
-      "id": 12,
-      "name": "Tocha",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Distrito Residncial Nobre/$Iluminacao", "direction": 6, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 6,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 37,
-      "y": 19
-    },
-    {
-      "id": 13,
-      "name": "Tocha",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Distrito Residncial Nobre/$Iluminacao", "direction": 6, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 6,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 37,
-      "y": 21
-    },
-    {
-      "id": 14,
-      "name": "Tocha",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Distrito Residncial Nobre/$Iluminacao", "direction": 6, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 6,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 50,
-      "y": 19
-    },
-    {
-      "id": 15,
-      "name": "Tocha",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Distrito Residncial Nobre/$Iluminacao", "direction": 4, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 6,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 20,
-      "y": 21
-    },
-    {
-      "id": 16,
-      "name": "Tocha",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Distrito Residncial Nobre/$Iluminacao", "direction": 6, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 6,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 27,
-      "y": 26
-    },
-    {
-      "id": 17,
-      "name": "Tocha",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Distrito Residncial Nobre/$Iluminacao", "direction": 4, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 6,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 24,
-      "y": 26
-    },
-    {
-      "id": 18,
-      "name": "Tocha",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Distrito Residncial Nobre/$Iluminacao", "direction": 6, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 6,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 27,
-      "y": 39
-    },
-    {
-      "id": 19,
-      "name": "Tocha",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Distrito Residncial Nobre/$Iluminacao", "direction": 6, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 6,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 32,
-      "y": 13
-    },
-    {
-      "id": 20,
-      "name": "Tocha",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Distrito Residncial Nobre/$Iluminacao", "direction": 4, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 6,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 29,
-      "y": 13
-    },
-    {
-      "id": 21,
-      "name": "Tocha",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Distrito Residncial Nobre/$Iluminacao", "direction": 4, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 6,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 24,
-      "y": 33
-    },
-    {
-      "id": 22,
-      "name": "Tocha",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Distrito Residncial Nobre/$Iluminacao", "direction": 4, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 6,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 24,
-      "y": 39
-    },
-    {
-      "id": 23,
-      "name": "Tocha",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Distrito Residncial Nobre/$Iluminacao", "direction": 6, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 6,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 27,
-      "y": 33
-    },
-    {
-      "id": 24,
-      "name": "Tocha",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Distrito Residncial Nobre/$Iluminacao", "direction": 6, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 6,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 44,
-      "y": 21
-    },
-    {
-      "id": 25,
-      "name": "Tocha",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Distrito Residncial Nobre/$Iluminacao", "direction": 6, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 6,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 50,
-      "y": 21
-    },
-    {
-      "id": 26,
-      "name": "Tocha",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Distrito Residncial Nobre/$Iluminacao", "direction": 6, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 6,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 44,
-      "y": 19
-    },
-    {
-      "id": 27,
-      "name": "Tileset Preload",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
+            "variableId": 32,
+            "variableValid": true,
+            "variableValue": 1
           },
           "directionFix": false,
           "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
           "list": [
-            { "code": 282, "indent": 0, "parameters": [12] },
-            { "code": 230, "indent": 0, "parameters": [1] },
-            { "code": 282, "indent": 0, "parameters": [11] },
-            { "code": 214, "indent": 0, "parameters": [] },
+            { "code": 223, "indent": 0, "parameters": [[17, 0, 0, 0], 60, false] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -1366,7 +908,7 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 3,
+          "trigger": 4,
           "walkAnime": true
         }
       ],
@@ -1374,7 +916,338 @@
       "y": 0
     },
     {
-      "id": 28,
+      "id": 7,
+      "name": "tempo",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 23,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 34,
+            "variableValid": true,
+            "variableValue": 6
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 1, "characterIndex": 1 },
+          "list": [
+            { "code": 223, "indent": 0, "parameters": [[-68, -68, 0, 68], 500, true] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 34,
+            "variableValid": true,
+            "variableValue": 7
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 2,
+      "y": 0
+    },
+    {
+      "id": 8,
+      "name": "Tarok",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 8,
+            "variableValid": false,
+            "variableValue": 1
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "", "direction": 4, "pattern": 1, "characterIndex": 1 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 29,
+            "variableValid": true,
+            "variableValue": 6
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Principal/$Tharok", "direction": 4, "pattern": 1, "characterIndex": 0 },
+          "list": [
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal1", 7, 0, 2, "Tarok"] },
+            { "code": 401, "indent": 0, "parameters": ["Anda logo, garoto. Não vai querer me ver"] },
+            { "code": 401, "indent": 0, "parameters": ["quando fico irritado!"] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 32,
+            "variableValid": true,
+            "variableValue": 1
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Principal/$Tharok", "direction": 4, "pattern": 1, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 32,
+            "variableValid": true,
+            "variableValue": 2
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 14,
+      "y": 26
+    },
+    {
+      "id": 9,
+      "name": "Mhordred",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 8,
+            "variableValid": false,
+            "variableValue": 1
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "", "direction": 4, "pattern": 1, "characterIndex": 1 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 29,
+            "variableValid": true,
+            "variableValue": 6
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Principal/$Mhordred", "direction": 4, "pattern": 1, "characterIndex": 0 },
+          "list": [
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal1", 5, 0, 2, "Mhordred"] },
+            { "code": 401, "indent": 0, "parameters": ["Você conseguirá dormir bem a noite sabendo"] },
+            { "code": 401, "indent": 0, "parameters": ["que seu pai nos puniu por sua causa?! Entre"] },
+            { "code": 401, "indent": 0, "parameters": ["logo!"] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 32,
+            "variableValid": true,
+            "variableValue": 1
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Principal/$Mhordred", "direction": 4, "pattern": 1, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 32,
+            "variableValid": true,
+            "variableValue": 2
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 14,
+      "y": 24
+    },
+    {
+      "id": 10,
       "name": "Posição state 2",
       "note": "",
       "pages": [
@@ -1454,153 +1327,10 @@
         }
       ],
       "x": 0,
-      "y": 1
+      "y": 0
     },
     {
-      "id": 29,
-      "name": "Tempo",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 29,
-            "variableValid": true,
-            "variableValue": 8
-          },
-          "directionFix": false,
-          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
-          "list": [
-            { "code": 223, "indent": 0, "parameters": [[-68, -68, 0, 68], 60, false] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 4,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 32,
-            "variableValid": true,
-            "variableValue": 1
-          },
-          "directionFix": false,
-          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
-          "list": [
-            { "code": 223, "indent": 0, "parameters": [[17, 0, 0, 0], 60, false] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 4,
-          "walkAnime": true
-        }
-      ],
-      "x": 1,
-      "y": 1
-    },
-    {
-      "id": 30,
-      "name": "tempo",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 23,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 34,
-            "variableValid": true,
-            "variableValue": 6
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 1, "characterIndex": 1 },
-          "list": [
-            { "code": 223, "indent": 0, "parameters": [[-68, -68, 0, 68], 500, true] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 34,
-            "variableValid": true,
-            "variableValue": 7
-          },
-          "directionFix": false,
-          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 2,
-      "y": 1
-    },
-    {
-      "id": 31,
+      "id": 11,
       "name": "Tempo",
       "note": "",
       "pages": [

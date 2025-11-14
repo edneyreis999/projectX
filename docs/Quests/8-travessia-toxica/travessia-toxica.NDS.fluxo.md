@@ -9,9 +9,9 @@
 - **Importância na campanha**: Main  
 - **Arco narrativo**: Recusa do Chamado  
 - **Quest anterior**: Travessia Perigosa  
-- **Conflito central**: O grupo encontra a mina abandonada, adaptada como esgoto de Gildrat, infestada por mutações venenosas. Não há outro caminho, pois todos os outros foram bloqueados pela recente avalanche. Só resta ao grupo avançar. [Ler mais sobre a mina em](../../GDD/2-world-building/locais/mina-esgoto/mina-do-esgoto.md) -
+- **Conflito central**: O grupo (Thorin, Kilin, Mhordred, Filena e Tusk) encontra a mina abandonada, adaptada como esgoto de Gildrat, infestada por mutações venenosas. Não há outro caminho, pois todos os outros foram bloqueados pela recente avalanche. Só resta ao grupo avançar. [Ler mais sobre a mina em](../../GDD/2-world-building/locais/mina-esgoto/mina-do-esgoto.md) -
 - **Objetivo narrativo global**: Introduzir a primeira cena de retorno ao Coreto com Rheed e as crianças, criar atmosfera claustrofóbica, reforçar a ameaça das mutações e introduzir o Símbolo da Trégua como mecânica antes do retorno à Gildrat.
-- **Premissa resumida**: Thorin e os guerreiros da Guarda de Ferro que o acompanham encontram a entrada de uma antiga mina/esgoto, enquanto fogem da tempestade de neve. Exploram dois níveis repletos de puzzles, armadilhas ambientais e criaturas mutantes, culminando no confronto com o chefe Pestesporo antes que possam deixar a Mina do Esgoto. [Ler mais sobre as criaturas da mina em](frontend/docs/GDD/4-personagens-inimigos-criaturas/mina-do-esgoto.md) -
+- **Premissa resumida**: Thorin e seu grupo (Kilin, Mhordred, Filena e Tusk) encontram a entrada de uma antiga mina/esgoto, enquanto fogem da tempestade de neve. Exploram dois níveis repletos de puzzles, armadilhas ambientais e criaturas mutantes, culminando no confronto com o chefe Pestesporo antes que possam deixar a Mina do Esgoto. [Ler mais sobre as criaturas da mina em](frontend/docs/GDD/4-personagens-inimigos-criaturas/mina-do-esgoto.md) -
 - **Resumo**: Após a sequência da nevasca, o grupo encontra a entrada de uma mina abandonada que servia como sistema de esgoto anão. O 1º nível introduz puzzles, sinalizações, a nova cena de Rheed e o Símbolo da Trégua. O 2º nível intensifica os combates e conduz à Câmara de Decantação, onde o chefe Pestesporo desperta.
 - **Locais principais**:  
   - Entrada da Mina do Esgoto
@@ -22,7 +22,8 @@
   - Thorin  
   - Kilin  
   - Mhordred  
-  - Tharok
+  - Filena  
+  - Tusk  
   - Rheed
   - Crianças
 **Criaturas principais**:

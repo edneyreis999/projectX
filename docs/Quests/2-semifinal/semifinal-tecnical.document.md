@@ -7,7 +7,7 @@
 * **Objetivo principal do jogador:** Ajudar Thorin a chegar ao estádio, garantir a vitória e vivenciar as consequências imediatas.
 * **Emoção‑âncora:** urgência → triunfo → tensão.
 * **Localizações centrais:** Casa de Thorin (Mapa 006), Entrada do Estádio (Mapa 014), Vestiário (Mapa 010), Gramado central (Mapa 012).
-* **Personagens‑chave:** Thorin (protagonista), Dragobur (treinador), Jogadores do Time, Guardas Kilin/Mhordred/Tharok.
+* **Personagens‑chave:** Thorin (protagonista), Dragobur (treinador), Jogadores do Time, Guardas Kilin/Mhordred.
 
 ## 2. Configuração Técnica Global
 
@@ -90,7 +90,7 @@
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Resumo de Premissa** | No auge da comemoração, três guardas chegam com ordens de Tordan Forja‑Prata: escoltar Thorin imediatamente. Clima vira de triunfo para tensão, encerrando a quest num cliff‑hanger.                                               |
 | **Contexto Narrativo** | Entrada do Estádio Machados Enferrujados (Mapa 014), fim da manhã.                                                                                                                            |
-| **Personagens**        | Thorin, Kilin (porta‑voz), Mhordred, Tharok, Dragobur.                                                                                                                                     |
+| **Personagens**        | Thorin, Kilin (porta‑voz), Mhordred, Dragobur.                                                                                                                                     |
 | **Objetivo Dramático** | Cortar êxtase da vitória, introduzir autoridade do pai e preparar gancho para próxima quest.                                                                                                  |
 | **Interatividade**     | Escolha de resposta para Kilin (resignado ou irritado), afeta apenas flavor text futuro.                                                                                                      |
 | **Fluxo**              | Conversa final com Dragobur → chegada dos guardas → escolha → escolta → troca de mapa.                                                                                                      |

@@ -8,7 +8,7 @@ Sem rodeios, Balastrus apresenta um contrato de aprendiz de minerador, que Thori
 
 Na estrada do Cão-Luar, Thorin encontra Tusk, de cara amarrada, como se estivesse acostumado a lidar com recrutas indesejáveis. Após um breve resmungo, Tusk recebe o contrato assinado por Thorin e lhe entrega uma picareta.
 
-Logo depois, Thorin escuta, de dentro de uma tenda, as vozes de Kilin, Mhordred e Tharok conversando com Balastrus. Ele só ouve o final da discussão, mas percebe que, por ordem direta de seu pai, os três guardas também irão acompanhá-lo nessa primeira missão.
+Logo depois, Thorin escuta, de dentro de uma tenda, as vozes de Kilin e Mhordred conversando com Balastrus. Ele só ouve o final da discussão, mas percebe que, por ordem direta de seu pai, os dois guardas também irão acompanhá-lo nessa primeira missão. Além deles, Filena e seu rival, Borin, também se juntam à expedição.
 
 A missão termina quando Tusk convoca os recrutas e inicia a marcha em direção à mina de Kravens, marcando o início da primeira dungeon jogável.
 
@@ -23,10 +23,10 @@ A missão termina quando Tusk convoca os recrutas e inicia a marcha em direção
 
 1. Você chegou à taverna e perguntou ao balconista sobre Balastrus. Ele apontou uma mesa no fundo, onde o mentor designado por seu pai o esperava. Vá até lá e fale com Balastrus.
 2. Você encontrou Balastrus na taverna. Ele explicou que você participará de uma expedição à mina de Kravens e entregou um contrato para você assinar. Após isso, você foi enviado à estrada do Cão-Luar, onde deve encontrar Tusk e entregar o documento.
-3. Você falou com o balconista, assinou o contrato com Balastrus e chegou à estrada do Cão-Luar, onde entregou o documento a Tusk. Após um breve resmungo, ele lhe deu sua primeira picareta. Logo em seguida, você escutou a decisão: os guardas Kilin, Mhordred e Tharok irão acompanhá-lo nesta missão. Saia da estrada do Cão-Luar e siga Tusk até a mina de Kravens — a expedição já começou!
+3. Você falou com o balconista, assinou o contrato com Balastrus e chegou à estrada do Cão-Luar, onde entregou o documento a Tusk. Após um breve resmungo, ele lhe deu sua primeira picareta. Logo em seguida, você escutou a decisão: os guardas Kilin e Mhordred irão acompanhá-lo nesta missão, junto com Filena e seu rival, Borin. Saia da estrada do Cão-Luar e siga Tusk até a mina de Kravens — a expedição já começou!
 
 ## Notas Adicionais
 
 * Primeira aparição de Balastrus e Tusk.
 * Introdução à estrutura de dungeon e expedições.
-* Conexão reforçada com os três guardas aliados e o domínio de Tordan sobre a vida de Thorin.
+* Conexão reforçada com os dois guardas aliados e o domínio de Tordan sobre a vida de Thorin.

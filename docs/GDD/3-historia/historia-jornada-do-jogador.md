@@ -46,7 +46,7 @@ O chamado não é para uma aventura gloriosa, mas uma sentença. Tordan informa 
 Thorin se recusa a aceitar seu novo destino. Ao acordar, ainda afetado pelo sonho com sua mãe — que o adverte sobre **Damburr** e o perigo de “quebrar o selo” — ele ignora as ordens do pai e decide ir ao estádio para treinar com **Filena** para a final do campeonato. Sua rebelião, no entanto, é rapidamente frustrada e termina de forma cômica e humilhante, reforçando a recusa como ato falho.
 
 - **Eventos Chave:**
-  - **Quest: É Hora de Crescer:** Thorin tenta sair de casa para ir ao campo de futebol, mas é interceptado na porta pelos guardas **Kilin**, **Mhordred** e **Tharok**, que já previam sua desobediência por ordem de Tordan. A cena da compra da armadura termina com **Mhordred** pagando pelo equipamento de Thorin, marcando seu fracasso em continuar a recusar.
+  - **Quest: É Hora de Crescer:** Thorin tenta sair de casa para ir ao campo de futebol, mas é interceptado na porta pelos guardas **Kilin** e **Mhordred**, que já previam sua desobediência por ordem de Tordan. A cena da compra da armadura termina com **Mhordred** pagando pelo equipamento de Thorin, marcando seu fracasso em continuar a recusar.
 
 *Fonte: Quest "É Hora de Crescer".*
 
@@ -56,7 +56,7 @@ Thorin se recusa a aceitar seu novo destino. Ao acordar, ainda afetado pelo sonh
 
 Thorin encontra seus mentores em potencial, embora não tradicionais:
 
-1. **Os Guardas (Kilin, Mhordred, Tharok):** Inicialmente antagonistas, eles se tornam aliados e mentores práticos, ensinando Thorin sobre o mundo real fora da nobreza de Gildrat, como na cômica cena da compra da armadura.
+1. **Os Guardas (Kilin, Mhordred):** Inicialmente antagonistas, eles se tornam aliados e mentores práticos, ensinando Thorin sobre o mundo real fora da nobreza de Gildrat, como na cômica cena da compra da armadura.
 
 - **Eventos Chave:**
   - **Quest: Primeiro Contrato:** Thorin encontra Balastrus na taverna e assina o contrato, sendo oficialmente um aprendiz. Balastrus o direciona para **Tusk**, o líder da expedição.
@@ -67,7 +67,7 @@ Thorin encontra seus mentores em potencial, embora não tradicionais:
 
 **Deixar a área inicial e entrar no mundo maior.**
 
-Com o contrato assinado e acompanhado pelos guardas, Thorin deixa os muros de Gildrat para trás e parte em sua primeira expedição à **Mina de Kravens**. Esta é a primeira vez que o jogador explora o mapa‑múndi, enfrentando perigos reais e deixando para trás, à força, sua vida antiga. O limiar é literal: a saída da cidade em direção a um território desconhecido e perigoso.
+Com o contrato assinado e acompanhado pelos guardas, Thorin deixa os muros de Gildrat para trás e parte em sua primeira expedição à **Mina de Kravens**. Nesta expedição, ele é acompanhado por Filena e seu rival, Borin. Esta é a primeira vez que o jogador explora o mapa‑múndi, enfrentando perigos reais e deixando para trás, à força, sua vida antiga. O limiar é literal: a saída da cidade em direção a um território desconhecido e perigoso.
 
 - **Eventos Chave:**
   - **Quest: Primeiro Contrato:** O grupo, liderado por **Tusk**, inicia a marcha em direção à mina de Kravens; durante a viagem na neve ocorrem combates tutoriais introduzindo mecânicas de equipe.
@@ -82,7 +82,7 @@ Com o contrato assinado e acompanhado pelos guardas, Thorin deixa os muros de Gi
 Esta fase é composta pela expedição a Kravens e suas consequências imediatas.
 
 - **Testes:** Aprender a minerar, navegar pela primeira dungeon, enfrentar monstros e o primeiro chefe (o **Cristaleão**), sobreviver à perigosa viagem de volta a Gildrat durante uma tempestade de neve e lidar com decisões de alto impacto sob pressão.
-- **Aliados:** A relação com **Kilin, Mhordred e Tharok** se solidifica. Eles passam de meros guardas a companheiros de equipe, que o defendem e o ajudam.
+- **Aliados:** A relação com **Kilin e Mhordred** se solidifica. Eles passam de meros guardas a companheiros de equipe, que o defendem e o ajudam. A presença de **Filena** no grupo também se torna uma constante.
 - **Inimigos:** As criaturas na mina e o **Cristaleão**. **Tusk** se estabelece como um líder de expedição rude e antagônico.
 
 - **Eventos Chave:**
@@ -114,7 +114,8 @@ A provação inicia na chegada a Melios e culmina com a quebra de um antigo selo
   - **Quebra do Selo:** Balastrus, inventor anão, usa sua nova invenção — o dinamite — para destruir o selo, contra os avisos dos Corvos e os cânticos ancestrais. O grupo atravessa a passagem recém-aberta e encontra uma sala ampla, abarrotada de metais preciosos. Balastrus entra em júbilo e ordena que iniciem a extração imediatamente.
   - **A Fumaça e o Primeiro Morto:** Uma fumaça espessa começa a preencher a sala. Balastrus racionaliza que é reação química do dinamite com o ar da mina e manda continuar. Um grito corta o ar; um anão escavador cai morto. O pânico se instaura.
   - **Aparição dos Ignotos:** Criaturas saem da névoa e cercam a equipe. O grupo luta em retirada pelo corredor; um Ignoto salta à frente e bloqueia a passagem — mini‑chefe improvisado. Após derrotá‑lo, a passagem se abre, mas novos Ignotos surgem.
-  - **Sacrifício Tático:** Para garantir a fuga, **Kilin** e **Tharok** ficam para bloquear os inimigos enquanto gritam para que **Thorin** fuja com **Mhordred** por uma passagem lateral. Eles alcançam a entrada da mina e batem em retirada rumo a Gildrat.
+  - **Corvos a Salvar:** Durante a retirada, Thorin encontra o contingente principal dos Corvos escondido em um abrigo lateral. Evacuar o grupo concede +5 em `v_influencia_corvos`, enquanto três corvos isolados adicionam +1 cada ao contador.
+  - **Sacrifício Tático:** Para garantir a fuga, **Kilin** fica para bloquear os inimigos enquanto grita para que **Thorin** fuja com **Mhordred** por uma passagem lateral. Eles alcançam a entrada da mina e batem em retirada rumo a Gildrat.
   - **Visão no Reino da Mana:** Thorin tem uma visão onírica em que testemunha o **Profeta das Sombras** e seu cúmplice, entendendo seu plano de libertar os **Ignotos** e destruir Gildrat.
 
 Resultado narrativo: o selo se rompeu; os Ignotos estão livres. A ambição venceu o pressentimento — e trouxe a ruína à porta.
@@ -138,9 +139,11 @@ Próximos passos imediatos: fuga de Melios, retorno a Gildrat e preparação par
 
 Após a fuga de Melios, Thorin retorna a Gildrat sob estado de alerta. O jogador faz uma escolha crucial que define a próxima missão:
 
-- **Seguir Filena:** Leva à missão “Aviso em Kravens”.
-- **Ir ao Conselho:** Leva Thorin a se alistar na Guarda de Ferro e à missão “Resgate em Melios”.
+- **Seguir Filena:** Leva à missão “Aviso em Kravens” e define `v_unlock_kravens = 1`.
+- **Ir ao Conselho:** Leva Thorin a se alistar na Guarda de Ferro, ativa a missão “Resgate em Melios” e define `v_unlock_melios = 1`.
 - **Ir para casa:** Leva à missão “Quando o Segundo Sol Chegar”, onde ele pode avisar **Tordan** sobre o ataque iminente.
+
+Independentemente da escolha, Balastrus sobrevive ao caos em Melios e retorna junto com o grupo para Gildrat, participando das discussões de preparação e confirmando o sucesso do resgate.
 
 ## 11. A Ressurreição
 
@@ -163,7 +166,7 @@ Após a defesa de Gildrat, uma cena pós‑créditos revela que a vitória foi t
 
 Notas pendentes para detalhar em iterações futuras:
 
-- Flags de sobrevivência/retorno de Kilin e Tharok após Melios. `[a definir]`
+- Flags de sobrevivência/retorno de Kilin após Melios. `[a definir]`
 - Reação de Damburr e do conselho após o alerta. `[a definir]`
 - Papel do Sigmetal no Ato II/III. `[a definir]`
 
