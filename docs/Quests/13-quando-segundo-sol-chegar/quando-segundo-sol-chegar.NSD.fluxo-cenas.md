@@ -66,10 +66,9 @@ Thorin discute com o pai e o concelho para ir nessa missão [Cena 11](../../GDD/
 Um pouco mais de detalhes:
 [Cena 12](../../GDD/3-historia/timeline-historia-jogo-v5.md#12---melios-resgate-e-o-eco-do-selo)
 
- Tem 3 personagens para resgarar:
+ Tem 2 personagens para resgarar:
 
 - Kilin
-- Tharok
 - Balastrus
 
 Eu queria algo que não fosse tão simples salvar os 3. Mas ao mesmo tempo, tem as limitações do RPG Maker.
@@ -157,7 +156,7 @@ Falta uma missão para Trinar o time de futebol runico e/ou rebeldes.
 **Manifestação para `v_sigmetal_destino = 1` (Entregue a Balastrus)**
 
 Notas de brainstorm:
-O Sigmetal com Balastrus pode ajudar de alguma forma a salvar Balastrus, Kilin e Tharok
+O Sigmetal com Balastrus pode ajudar de alguma forma a salvar Balastrus e Kilin
 E quando o jogador terminar o resgate, Balastrus entrega a Thorin um **"Protetor de Braço de Sigmetal"**.
 
 **Manifestação para `v_sigmetal_destino = 2` (Entregue a Tusk)**

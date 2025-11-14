@@ -13,8 +13,8 @@ A fase se encerra quando o jogador dorme ([Casa da Família Forja Prata](../2-wo
 ### Gameplay
 
 - O jogador deve resolver conflitos internos de Gildrat. Exemplo:
-  - [Ajudar pai da Filena em Kravens](timeline-historia-jogo-v5.md#13---kravens-aviso-e-a-força-do-sigmetal)
-  - [Resgatar Kilin, Tharok e Balastrus](timeline-historia-jogo-v5.md#12---melios-resgate-e-o-eco-do-selo)
+  - [Ajudar Borin em Kravens](timeline-historia-jogo-v5.md#13---kravens-aviso-e-a-força-do-sigmetal)
+  - [Resgatar Kilin e Balastrus](timeline-historia-jogo-v5.md#12---melios-resgate-e-o-eco-do-selo)
   - Organizar defesa de Gildrat.
 - Missão: [“Defender Gildrat”](timeline-historia-jogo-v5.md#14---defender-gildrat-clímax) é ativada após o jogador dormir.  
   - Antes de dormir, vai ter um save obrigatório. E o save é desabilitado durante a missão **“Defender Gildrat”**.
@@ -34,11 +34,13 @@ As seguintes variáveis inteiras serão usadas para compor o Índice de Prepara�
 | ------------------------- | ------- | ---------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | -
 | `v_sigmetal_destino`      | 0–3     | O destino do primeiro Sigmetal encontrado. Reflete a prioridade do jogador.              | Definido na Cena 7c.                                                                    | Determina a disponibilidade de um recurso/arma de Sigmetal.         |
 | `v_reforco_sigmetal`      | 0–1     | Dar Sigmetal para os anões ferreiros criar armas para os anões              | O Jogador deve pegar um carregamento de Sigmetal na sala que o [Cristaleão](timeline-historia-jogo-v5.md#6---minerador-aprendiz-a-queda-e-o-sigmetal) revelou depois de ser derrotado                                                                    | Equipa todos os exercitos com arma de Sigmetal         |
-| `v_influencia_corvos`     | 0–5     | O nível de confiança e colaboração com os [Corvos](timeline-historia-jogo-v5.md#9---os-corvos-de-melios-o-selo-e-a-canção).                                        | Aumenta ao ajuda-los sair de [Melios](timeline-historia-jogo-v5.md#10---quebra-do-selo-em-melios-a-liberação-dos-ignotos) sem confronto.                   | Aumenta o exercito da milicia civil              |
-| `v_resgate_melios`        | 0–3     | O sucesso da operação de resgate em [Melios](timeline-historia-jogo-v5.md#10---quebra-do-selo-em-melios-a-liberação-dos-ignotos).                                              | 0: Ninguém salvo. 1: Balastrus salvo. 2: Kilin Salvo 4: Tharok salvo. 5: Todos salvos.                  | Afeta a moral da Guarda de Ferro e a disponibilidade de escolha dos NPCs no time do Thorin na batalha final.                     |
+| `v_unlock_kravens`        | 0–1     | Disponibilidade logística para acessar Kravens após a audiência.                        | Ativado ao liberar a missão **Aviso em Kravens** (Cena 11b).                            | Permite deslocamento da party até Kravens.                                            |
+| `v_unlock_melios`         | 0–1     | Autorização oficial para o resgate em Melios.                                           | Ativado ao aceitar a missão **Resgate em Melios** (Cena 11c).                           | Destrava a ida da Guarda de Ferro para Melios.                                        |
+| `v_influencia_corvos`     | 0–8     | O nível de confiança e colaboração com os [Corvos](timeline-historia-jogo-v5.md#9---os-corvos-de-melios-o-selo-e-a-canção).                                        | +5 ao evacuar o grupo principal em Melios; +1 para cada Corvo isolado; ações de apoio em Gildrat.                   | Aumenta o exercito da milicia civil              |
+| `v_resgate_melios`        | 0–3     | O sucesso da operação de resgate em [Melios](timeline-historia-jogo-v5.md#10---quebra-do-selo-em-melios-a-liberação-dos-ignotos).                                              | 0: Ninguém salvo. 1: Balastrus salvo. 2: Kilin Salvo. 3: Todos salvos.                  | Afeta a moral da Guarda de Ferro e a disponibilidade de escolha dos NPCs no time do Thorin na batalha final.                     |
 | `v_resgate_kravens`        | 0–2     | O sucesso da operação de resgate em [Kravens](timeline-historia-jogo-v5.md#13---kravens-aviso-e-a-força-do-sigmetal).                                              | 0: Ninguém salvo. 1: Grupo de rebelde salvo. 2: Grupos de rebeldes                  | Afeta a quantidade do exercito de rebeldes.|
-| `v_treinamento_rebeldes`        | 0–2     | O sucesso da operação de resgate em Kravens.                                              | 0: Sem treinamento. 1: Filena **OU** Mhordead treinam rebeldes. 2: Filena **E** Mhordred treinam os rebeldes                  | Afeta a qualidade do exercito de rebeldes.|
-| `v_pai_filena`        | 0–1     | O sucesso da operação de resgatar o pai da Filena em Kravens.                                              | 0: Sem resgate. 1: Pai da Filne foi resgatado.                 | Afeta a moral do exercito de rebeldes.|
+| `v_treinamento_rebeldes`        | 0–2     | Capacidade de combate do contingente rebelde.                                              | 0: Sem treinamento. 1: Filena **OU** Mhordred treinam rebeldes. 2: Filena **E** Mhordred treinam os rebeldes.                  | Afeta a qualidade do exercito de rebeldes.|
+| `v_resgate_borin`        | 0–1     | Resgate do pai de Filena durante o cerco em Kravens.                                              | 0: Sem resgate. 1: Borin foi resgatado.                 | Afeta a moral do exercito de rebeldes e o relacionamento com Filena.|
 | `v_moral_gildrat`         | 0–9     | A moral e a esperança dos cidadãos de Gildrat.                                           | Aumenta com atos heroicos e comunicação; diminui com pânico e perdas.                   | Modula a eficácia de milícias corvos e a atmosfera da cidade.                           |
 | `v_boa_vontade_thordan`   | 0–5     | O nível de respeito e entendimento entre Thorin e seu pai, Tordan.                        | Aumenta com diálogo respeitoso e atos alinhados à Guarda;         | Desbloqueia itens de família e do passado de Thordan            |
 | `v_empatia_filena`        | 0–5     | A profundidade da conexão e confiança entre Thorin e Filena.                             | Aumenta ao apoiar Filena e suas causas.                                                 | Aprofunda o arco de relacionamento e pode desbloquear habilidades de combate em dupla. Libera final que Filena beija Thorin.  |
@@ -78,7 +80,7 @@ Eu preciso de uma cena de filme, serie ou jogo para me inspirar a descrever essa
   > “Precisamos de alguém bem chato que atraia a atenção deles. Para as armadilhas”
 - Cena de humor cinematográfico: a câmera percorre todos os presentes e foca no escolhido.
 - **Escolha automática da isca (ordem de eficiência):**
-  1. Sáparo Boca-de-Corneta (se recrutado)  
+  1. Sáparo Boca-de-Corneta (se a preparação com ele foi concluída em Gildrat)  
   2. Tusk (padrão)
 - Cena no mapa do distrito comercial externo (visão topdown):
   - Exército dos Ignotos posicionado em frente ao castelo.
@@ -91,7 +93,7 @@ Eu preciso de uma cena de filme, serie ou jogo para me inspirar a descrever essa
 
 | Isca escolhida                    | Resultado das armadilhas |
 |----------------------------------|---------------------------|
-| Sáparo Boca-de-Corneta           | Funcionam 100%            |
+| Sáparo Boca-de-Corneta (apoio acionado) | Funcionam 100%            |
 | Tusk                             | Portão se abre, mas ninguém sai |
 
 Esses resultados influenciam a fase 2:
@@ -124,7 +126,7 @@ O que o Rheed pode falar aqui para dar inicio a cena de gameplay? O que ele fala
 - Retorno à visão topdown.  
 - Portões de Gildrat se abrem e **os exércitos saem para lutar**:
   - **Exército dos Guardas de Ferro (centro)** — líder Thordan.  
-  - **Exército dos Rebeldes (direita)** — líder pai da Filena (se salvo).  
+  - **Exército dos Rebeldes (direita)** — Borin lidera os rebeldes (se resgatado).  
   - **Exército dos Corvos (esqurda)** — líder dos Corvos (se recrutado)
   - **Grupo de Thorin (logo atrás).**
 - Diálogo entre o **[General Ignoto](../2-world-building/racas/raca-ignotos.md)** e **Thordan**.  
@@ -142,7 +144,7 @@ Variações já definidas:
 - Para cada uma das batalhas o jogador ganha uma habilidade de "invocar exercito" que da dano em area em todos os inimigos.
 - Os exercitos são:
 - [Exército dos Guardas de Ferro](../2-world-building/racas/anoes/gildrat-v2.md#força-militar) (v_preparo_militar, v_resgate_melios)
-  - Exército dos Rebeldes (v_resgate_kravens, v_treinamento_rebeldes, v_pai_filena)
+  - Exército dos Rebeldes (v_resgate_kravens, v_treinamento_rebeldes, v_resgate_borin)
   - Exército dos Corvos (v_influencia_corvos)
 
 O dano das invocações varia de acorco com o valor das variaveis.
@@ -205,7 +207,7 @@ Eu preciso levar em consideração também as `## Notas proximo jogo`
 ## Pós-créditos: O Despertar**  
 
 Ilustrações + Texto mostram que
-Dias depois, Thorin está jogando Runico em um campeonato junto da Filena. Seu pai está na torcida.
+No final, Filena e Borin vão estar jogando ao lado de Thorin na final do campeonato.
 (O Fantasma de Mhordred aparece na torcida, mas é um easteregg)
 
 (Colocar mais cenas pós creditos de cada um dos personagens. A cena pós credito é somente uma imagem)

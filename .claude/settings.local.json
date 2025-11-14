@@ -10,7 +10,8 @@
       "Bash(grep:*)",
       "Bash(npx eslint:*)",
       "Bash(npx tsc:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "mcp__sequential-thinking__sequentialthinking"
     ],
     "deny": [],
     "ask": []

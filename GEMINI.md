@@ -39,3 +39,14 @@ Este método garante que:
 -   A navegação pela documentação seja intuitiva.
 
 Ao criar ou editar documentos, siga este padrão para garantir que a base de conhecimento do projeto permaneça organizada e coesa.
+
+## Navegação no zord-project
+
+- Localização: `zord-project` é irmão de `projectX` no mesmo workspace. Do raiz de `projectX`, acesse com: `cd .. && cd zord-project`.
+- Voltar ao `projectX`: a partir do `zord-project`, use: `cd .. && cd projectX`.
+- Estrutura relevante: os comandos operacionais e playbooks ficam em `zord-project/comandos/`.
+- Resolução de “comandos”: sempre que houver a instrução “executar um comando dentro de 'comandos'”, interprete como “navegue até `zord-project` e encontre/execute o arquivo correspondente em `comandos/`”. Ex.: `zord-project/comandos/<arquivo>.md`.
+- Descoberta rápida:
+  - Listar comandos: `ls -la ../zord-project/comandos` (a partir de `projectX`).
+  - Buscar por um nome: `rg -n "<termo>" ../zord-project/comandos`.
+- Convenção: mantenha leituras e execuções de instruções sempre no contexto do `zord-project` quando o pedido mencionar “comandos”.

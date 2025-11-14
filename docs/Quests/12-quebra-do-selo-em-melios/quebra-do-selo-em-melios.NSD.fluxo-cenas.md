@@ -14,7 +14,7 @@
   - Concretizar o ponto de não-retorno: o selo é destruído.  
   - Revelar a ameaça real (Ignotos) e deslocar o foco de “mineração” para “sobrevivência”.  
   - Gerar consequências: fuga, alerta em Gildrat e escalada do conflito macro.  
-- **Premissa resumida**: Após derrotar os Corvos na entrada de Melios, Balastrus ignora os alertas e ordena o uso de dinamite para romper um bloco de ferro rúnico — o selo. A explosão abre um corredor que leva a uma sala repleta de metais preciosos. Balastrus celebra e ordena a extração imediata, mas uma fumaça espessa toma o ambiente. Um minerador cai morto; Ignotos emergem da névoa. O grupo luta em retirada, enfrenta um mini-chefe que bloqueia a saída e, ao vencê-lo, corre rumo à entrada. Novos inimigos surgem; Kilin e Tharok ficam para segurar os Ignotos enquanto Thorin e Mhordred escapam por uma passagem lateral para avisar Gildrat.
+- **Premissa resumida**: Após derrotar os Corvos na entrada de Melios, Balastrus ignora os alertas e ordena o uso de dinamite para romper um bloco de ferro rúnico — o selo. A explosão abre um corredor que leva a uma sala repleta de metais preciosos. Balastrus celebra e ordena a extração imediata, mas uma fumaça espessa toma o ambiente. Um minerador cai morto; Ignotos emergem da névoa. O grupo luta em retirada, enfrenta um mini-chefe que bloqueia a saída e, ao vencê-lo, corre rumo à entrada. Novos inimigos surgem; Kilin fica para segurar os Ignotos enquanto Thorin e Mhordred escapam por uma passagem lateral para avisar Gildrat.
 
 - **Locais principais**:  
   - Entrada da Mina de Melios (pós-boss Corvos)  
@@ -25,7 +25,7 @@
   - Thorin  
   - Balastrus  
   - Tusk  
-  - Kilin, Mhordred, Tharok  
+  - Kilin, Mhordred  
   - Anões escavadores (extras)  
   - Ignotos (mini-chefe e mobs)  
   - Os Corvos (referência contextual; não participam desta quest)
@@ -94,7 +94,7 @@
 | #  | Beat                       | Descrição                                                                                                     | Controle |
 |---:|----------------------------|---------------------------------------------------------------------------------------------------------------|----------|
 | 1  | Novos Inimigos             | Dois Ignotos surgem por trás; ameaça de cercar o grupo.                                                       | 🎬       |
-| 2  | Decisão Relâmpago          | Kilin e Tharok decidem ficar para segurar os inimigos.                                                        | 🎬       |
+| 2  | Decisão Relâmpago          | Kilin decide ficar para segurar os inimigos.                                                        | 🎬       |
 | 3  | Fuga Forçada               | Eles gritam para Thorin fugir com Mhordred por uma passagem lateral.                                         | 🎬       |
 | 4  | Corrida para a Entrada     | Trecho de fuga jogável com obstáculos leves; UI indica saída.                                                | 🎮       |
 
@@ -116,7 +116,7 @@
   - `SELO_MELIOS_QUEBRADO = true`  
   - `IGNOTOS_LIBERTOS = true`  
   - `ALERTA_GILDRAT_PENDENTE = true`  
-  - `KILIN_THAROK_STATUS = [a definir]` (separam-se do grupo nesta cena)  
+  - `KILIN_STATUS = [a definir]` (separa-se do grupo nesta cena)  
 - **Consequências narrativas**:  
   - Escalada de encontros de Ignotos no mundo. `[a definir intensidade/zona]`  
   - Próxima missão foca na volta a Gildrat e na audiência/alerta. `[a definir]`  
@@ -132,7 +132,7 @@
 
 ### 5️⃣ Elenco e Recursos
 
-- **NPCs**: Thorin, Balastrus, Tusk, Kilin, Mhordred, Tharok, 2–4 escavadores, 1 Ignoto (mini‑chefe), 2 Ignotos (adds).  
+- **NPCs**: Thorin, Balastrus, Tusk, Kilin, Mhordred, 2–4 escavadores, 1 Ignoto (mini‑chefe), 2 Ignotos (adds).  
 - **Locais**: Entrada de Melios, Câmara do Selo, Sala dos Metais, Corredor de Fuga.  
 - **Itens/props**: cargas de dinamite, ferramentas de mineração, pilhas de minério, tochas/faróis.  
 - **Música/FX**: explosão abafada, zumbido/sussurros em névoa, batimentos/respiração ofegante na fuga.
