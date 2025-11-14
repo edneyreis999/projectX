@@ -178,13 +178,13 @@ Custos/Requisitos: Mínimo. Reutiliza a cozinha da Casa Forja-Prata.
 
 Efeitos em Variáveis:
 
-Se Thorin for empático ("Eu também sinto falta dela."): v_boa_vontade_thordan +2. (Esta escolha abre as próximas quests).
+Se Thorin for empático ("Eu também sinto falta dela."): v_boa_vontade_thordan +25. (Esta escolha abre as próximas quests).
 
-Se Thorin for acusatório ("E você me culpou por isso."): v_boa_vontade_thordan -1. (Esta escolha encerra o arco de reconciliação), o arco de convergência entra em vigor: Tordan não está mais com raiva de Thorin, ele está compartilhando sua dor. "Eu entendo que esteja com raiva de mim. Você tem os olhos dela e também o mesmo temperamento. Não deixe que o mundo quebre você... como me quebrou, filho. Isto é para você". Tordan entrega a Thorin um pequeno baú com sua velha funda dentro, feita com pele especial de um Lobo de Gelo, caçado por ele mesmo. Ele explica que em sua juventude, essa também era sua arma preferida.
+Se Thorin for acusatório ("E você me culpou por isso."): v_boa_vontade_thordan +0. (Esta escolha encerra o arco de reconciliação), o arco de convergência entra em vigor: Tordan não está mais com raiva de Thorin, ele está compartilhando sua dor. "Eu entendo que esteja com raiva de mim. Você tem os olhos dela e também o mesmo temperamento. Não deixe que o mundo quebre você... como me quebrou, filho. Isto é para você". Tordan entrega a Thorin um pequeno baú com sua velha funda dentro, feita com pele especial de um Lobo de Gelo, caçado por ele mesmo. Ele explica que em sua juventude, essa também era sua arma preferida.
 
 ### 2. A Funda do General (Item de Recompensa)
 
-Pré-requisito: Ter completado "O Troféu Quebrado" com empatia (v_boa_vontade_thordan > 0).
+Pré-requisito: Ter completado "O Troféu Quebrado" com empatia (v_boa_vontade_thordan > 25).
 
 Beats Narrativos: Tordan chama Thorin para seus aposentos pessoais, um local que Thorin raramente visita. O quarto é austero, militar, exceto por um pequeno baú trancado e uma foto de sua mãe na parede. Seu pai o encara: "Eu rejeitei seu caminho. Eu tentei forçá-lo a ser o que eu queria. Hoje reconheço o erro que cometi".
 
@@ -202,7 +202,7 @@ Custos/Requisitos: Médio. Requer a criação de um novo item (Funda do General)
 
 Efeitos em Variáveis:
 
-v_boa_vontade_thordan +2
+v_boa_vontade_thordan +10
 
 Thorin recebe o item "Funda do General" (Dano Alto, +Velocidade, +Chance Crítica).
 
@@ -222,9 +222,9 @@ Custos/Requisitos: Baixo. Reutiliza a área da Estrada do Cão-luar.
 
 Efeitos em Variáveis:
 
-v_boa_vontade_thordan +1 (Respeito relutante por cumprir uma ordem direta).
+v_boa_vontade_thordan +15 (Respeito por cumprir uma ordem direta).
 
-v_preparo_militar +1.
+v_preparo_militar +15.
 
 ### 3 Beat do Fim do Jogo: Paz que Dura Pouco Ainda é Paz - Feito através de imagens - Beat por Beat
 
