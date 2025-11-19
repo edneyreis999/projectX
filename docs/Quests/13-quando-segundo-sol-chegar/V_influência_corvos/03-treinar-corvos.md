@@ -27,7 +27,7 @@ Quest avançada que fecha o arco de preparação militar da Corvos. Thorin e Fil
   - Filena (apoio emocional)
   - Soldados (guerreiros da facção dos corvos a serem treinados)
 - **Variáveis / Flags Alteradas:**
-  - `v_forca_guarda`
+  - `v_influencia_corvos`
 
 ## Desfechos Possíveis
 
@@ -39,4 +39,4 @@ Quest avançada que fecha o arco de preparação militar da Corvos. Thorin e Fil
 
 ## Recompensas
 
-- **v_forca_guarda:** +30 pontos (do total de 100)
+- **v_influencia_corvos:** +30 pontos (do total de 100)

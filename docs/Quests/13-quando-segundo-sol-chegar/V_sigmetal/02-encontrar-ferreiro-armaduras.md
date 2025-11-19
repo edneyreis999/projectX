@@ -26,7 +26,7 @@ Thorin precisa encontrar um mestre ferreiro que possa converter o Sigmetal em ar
   - Thorin (protagonista)
   - Mestre Ferreiro (NPC principal)
 - **Variáveis / Flags Alteradas:**
-  - `v_forca_civil`
+  - `v_reforco_sigmetal`
 
 ## Desfechos Possíveis
 
@@ -38,4 +38,4 @@ Thorin precisa encontrar um mestre ferreiro que possa converter o Sigmetal em ar
 
 ## Recompensas
 
-- **v_forca_civil:** +50 pontos (do total de 100)
+- **v_reforco_sigmetal:** +50 pontos (do total de 100)

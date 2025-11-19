@@ -1,4 +1,4 @@
-# Índice das 21 Quests - Sistema de Narrativa Sistêmica v2.0
+# Índice das 19 Quests - Sistema de Narrativa Sistêmica v2.0
 
 **Data:** 2025-11-04
 **Versão:** 2.0 (Escala 0-100 com Lei de Pareto)
@@ -7,26 +7,25 @@
 
 ## Resumo do Sistema
 
-- **Total de Quests:** 21
-- **Variáveis Principais:** 5 (+ 1 binária)
-- **Escala:** 0-100 pontos para cada variável
+- **Total de Quests:** 19
+- **Variáveis Principais (pastas):** `v_armadilhas`, `V_força_guarda`, `V_força_civil`, `V_influência_corvos`, `V_sigmetal`
+- **Escala de Referência:** 0-100 pontos para cada variável principal (ver totais atuais em **Total Máximo Possível**)
 - **Princípio:** Lei de Pareto 80/20 (quests fáceis = alta recompensa, quests difíceis = baixa recompensa)
 
 ---
 
-## 🎪 ARMADILHAS (5 quests) → v_pontos_armadilhas (0-100)
+## 🎪 ARMADILHAS (3 quests) → v_pontos_armadilhas (0-100)
 
-| # | Quest | Dificuldade | Localização | Pontos | Gatilho |
-|---|-------|-------------|-------------|--------|---------|
-| 01 | Mapear Posições Estratégicas | Fácil | Gildrat | +25 | Automático |
-| 02 | Testar Dinamite | Fácil | Gildrat | +25 | Completar 01 |
-| 03 | Recrutar Sáparo como Isca | Fácil | Gildrat | +20 | Completar 02 |
-| 04 | Posicionar Armadilhas no Caminho | Média | Gildrat | +15 | Kravens visitado + 03 |
-| 05 | Criar Rota de Fuga para Isca | Difícil | Gildrat | +15 | v_pontos_armadilhas ≥ 70 |
+| # | Quest | Dificuldade | Localização | Pontos | Requisitos |
+|---|-------|-------------|-------------|--------|------------|
+| 01 | Testar Dinamite | Fácil | Estrada do Cão-luar | +50 | N/A |
+| 02 | Testar Armadilhas | Fácil | Estrada do Cão-luar | +25 | N/A |
+| 03 | Apaziguar Discussões | Fácil | Distrito Comercial | +25 | N/A |
 
 **Total Possível:** 100 pontos
 
 **Faixas de Eficácia:**
+
 - 0-30 pontos → 7 grupos de inimigos (muito difícil)
 - 31-60 pontos → 6 grupos (difícil)
 - 61-80 pontos → 5 grupos (normal)
@@ -36,19 +35,18 @@
 
 ## ⚔️ GUARDA DE FERRO (5 quests) → v_forca_guarda (0-100)
 
-| # | Quest | Dificuldade | Localização | Pontos | Gatilho |
-|---|-------|-------------|-------------|--------|---------|
-| 06 | Organizar Logística Militar | Fácil | Gildrat | +25 | Automático |
-| 07 | Fortificar Muralhas | Fácil | Gildrat | +25 | Automático |
-| 08 | Treinar Formações de Combate | Fácil | Gildrat | +20 | Completar 06 |
-| 09 | Resgatar Kilin em Melios | Média | Melios | +20 | Melios liberado |
-| 10 | Preparar Arsenal da Guarda | Difícil | Gildrat | +10 | v_forca_guarda ≥ 70 |
+| # | Quest | Dificuldade | Localização | Pontos | Requisitos |
+|---|-------|-------------|-------------|--------|------------|
+| 01 | Treinando a Guarda de Ferro | Fácil | Campo de Treinamento | +30 | N/A |
+| 02 | Resgatando Kilin | Difícil | Campo de Treinamento | +30 | Ter completado "Treinando a Guarda de Ferro" |
+| 03 | Boas-vindas à Guarda de Ferro | Fácil | Taverna da Pedra Vulcânica | +10 | Ter completado "Resgatando Kilin" |
+| 04 | Guerreiro Fragmentado | Fácil | Campo de Treinamento | +15 | Ter completado "Resgatando Kilin" e "Boas-vindas à Guarda de Ferro" |
+| 05 | O Novo Lorde Anão | Fácil | Taverna da Pedra Vulcânica | +15 | Ter completado "Resgatando Kilin" |
 
 **Total Possível:** 100 pontos
 
-**Bônus:** Quest 08 dá +25 se Kilin foi resgatado (ao invés de +20)
-
 **Escala de Dano:**
+
 ```
 Dano = 1667 × (1 + v_forca_guarda/100) × (1 + sigmetal×0.5)
 
@@ -61,19 +59,20 @@ Dano = 1667 × (1 + v_forca_guarda/100) × (1 + sigmetal×0.5)
 
 ## 👥 EXÉRCITO CIVIL (5 quests) → v_forca_civil (0-100)
 
-| # | Quest | Dificuldade | Localização | Pontos | Gatilho |
-|---|-------|-------------|-------------|--------|---------|
-| 11 | Recrutar Civis para Milícia | Fácil | Gildrat | +30 | Automático |
-| 12 | Treinar Time Rúnico como Unidade | Fácil | Gildrat | +25 | Automático |
-| 13 | Resgatar Borin em Kravens | Média | Kravens | +20 | Kravens liberado |
-| 14 | Resgatar Grupos de Rebeldes | Média | Kravens | +15 | Kravens visitado |
-| 15 | Treinar Rebeldes | Difícil | Gildrat | +10 | v_forca_civil ≥ 70 |
+| # | Quest | Dificuldade | Localização | Pontos | Requisitos |
+|---|-------|-------------|-------------|--------|------------|
+| 01 | Resgatar Rebeldes e Borin em Kravens | Média | Casa da Filena | +30 | N/A |
+| 02 | Resgatar Grupos de Rebeldes em Kravens | Fácil | Campo de Treinamento | +20 | Ter completado "Resgatar Rebeldes e Borin em Kravens" |
+| 03 | Treinar Time Rúnico | Fácil | Campo de Treinamento | +15 | N/A |
+| 04 | Recrutar Civis | Fácil | Campo de Treinamento | +20 | N/A |
+| 05 | Treinar Civis | Fácil | Campo de Treinamento | +15 | Ter completado "Recrutar Civis" |
 
 **Total Possível:** 100 pontos
 
 **Composição:** Rebeldes + Civis + Time Rúnico
 
 **Escala de Dano:**
+
 ```
 Dano = 1667 × (1 + v_forca_civil/100) × (1 + sigmetal×0.5)
 
@@ -84,19 +83,18 @@ Dano = 1667 × (1 + v_forca_civil/100) × (1 + sigmetal×0.5)
 
 ---
 
-## 🦅 CORVOS (5 quests) → v_influencia_corvos (0-100)
+## 🦅 CORVOS (3 quests) → v_influencia_corvos (0-100)
 
-| # | Quest | Dificuldade | Localização | Pontos | Gatilho |
-|---|-------|-------------|-------------|--------|---------|
-| 16 | Negociar Aliança com Corvos | Fácil | Gildrat | +25 | Automático |
-| 17 | Resgatar Grupo Principal | Média | Melios | +30 | Melios liberado |
-| 18 | Resgatar Corvo Isolado 1 | Média | Melios | +15 | Exploração (túnel leste) |
-| 19 | Resgatar Corvo Isolado 2 | Média | Melios | +15 | Exploração (câmara sul) |
-| 20 | Resgatar Corvo Isolado 3 | Média | Melios | +15 | Exploração (seção profunda) |
+| # | Quest | Dificuldade | Localização | Pontos | Requisitos |
+|---|-------|-------------|-------------|--------|------------|
+| 01 | Resgatar Corvos e Família Principal | Difícil | Sala do Conselho | +35 | N/A |
+| 02 | Canção Ancestral | Mediana | Sala do Conselho | +35 | Ter completado "Resgatar Corvos e Família Principal" |
+| 03 | Treinar Corvos | Mediana | Sala do Conselho | +30 | Ter completado "Canção Ancestral" |
 
 **Total Possível:** 100 pontos
 
 **Escala de Dano:**
+
 ```
 Dano = 1667 × (1 + v_influencia_corvos/100) × (1 + sigmetal×0.5)
 
@@ -107,132 +105,161 @@ Dano = 1667 × (1 + v_influencia_corvos/100) × (1 + sigmetal×0.5)
 
 ---
 
-## 🔥 SIGMETAL (1 quest) → v_reforco_sigmetal (0-1)
+## 🔥 SIGMETAL (3 quests) → v_reforco_sigmetal (0-1 binária) + reforços
 
-| # | Quest | Dificuldade | Localização | Valor | Gatilho |
-|---|-------|-------------|-------------|-------|---------|
-| 21 | Coletar Sigmetal na Câmara Revelada | Média | Kravens | 0→1 | Cristaleão derrotado + Dinamite |
+| # | Quest | Dificuldade | Localização | Pontos / Valor | Requisitos |
+|---|-------|-------------|-------------|----------------|------------|
+| 01 | Coletar Sigmetal na Câmara Revelada | Difícil | Estrada do Cão-luar | 0→1 (binária) | N/A |
+| 02 | Encontrar Ferreiro Para Armaduras | Mediano | Distrito Comercial | +50 | Ter completado "Coletar Sigmetal na Câmara Revelada" |
+| 03 | Encontrar Ferreiro Para Armas | Mediano | Distrito Comercial | +50 | Ter completado "Coletar Sigmetal na Câmara Revelada" |
+
+**Total Possível em reforços:** 100 pontos (+ flag binária de Sigmetal)
 
 **Efeito:** Multiplicador global de +50% para TODOS os 3 exércitos
 
-**Impacto:**
-- Sem Sigmetal: Dano máximo = 3334 HP
-- Com Sigmetal: Dano máximo = 5000 HP (one-hit kill nos bosses)
+**Impacto aproximado:**
+
+- Sem Sigmetal: Dano máximo ≈ 3334 HP
+- Com Sigmetal: Dano máximo ≈ 5000 HP (one-hit kill nos bosses)
 
 ---
 
 ## 📊 Distribuição por Localização
 
-### 🏰 GILDRAT (12 quests)
-- Armadilhas: 5 quests (01-05)
-- Guarda: 4 quests (06, 07, 08, 10)
-- Civil: 3 quests (11, 12, 15)
-- Corvos: 0 quests
+### Estrada do Cão-luar (3 quests)
 
-**Pontos totais disponíveis em Gildrat:** 265 pontos
+- Testar Dinamite (Armadilhas)
+- Testar Armadilhas (Armadilhas)
+- Coletar Sigmetal na Câmara Revelada (Sigmetal)
 
-### ⛰️ MELIOS (6 quests)
-- Guarda: 1 quest (09)
-- Corvos: 5 quests (17-20, incluindo 16 que libera acesso)
-- Armadilhas: 0 quests
-- Civil: 0 quests
+### Distrito Comercial (3 quests)
 
-**Pontos totais disponíveis em Melios:** 120 pontos
+- Apaziguar Discussões (Armadilhas)
+- Encontrar Ferreiro Para Armaduras (Sigmetal)
+- Encontrar Ferreiro Para Armas (Sigmetal)
 
-### ⚒️ KRAVENS (3 quests + 1 especial)
-- Civil: 2 quests (13, 14)
-- Sigmetal: 1 quest (21)
-- Armadilhas: 0 quests
-- Guarda: 0 quests
+### Casa da Filena (1 quest)
 
-**Pontos totais disponíveis em Kravens:** 35 pontos + Sigmetal
+- Resgatar Rebeldes e Borin em Kravens (Exército Civil)
+
+### Campo de Treinamento (7 quests)
+
+- Resgatar Grupos de Rebeldes em Kravens (Exército Civil)
+- Treinar Time Rúnico (Exército Civil)
+- Recrutar Civis (Exército Civil)
+- Treinar Civis (Exército Civil)
+- Treinando a Guarda de Ferro (Guarda de Ferro)
+- Resgatando Kilin (Guarda de Ferro)
+- Guerreiro Fragmentado (Guarda de Ferro)
+
+### Taverna da Pedra Vulcânica (2 quests)
+
+- Boas-vindas à Guarda de Ferro (Guarda de Ferro)
+- O Novo Lorde Anão (Guarda de Ferro)
+
+### Sala do Conselho (3 quests)
+
+- Resgatar Corvos e Família Principal (Corvos)
+- Canção Ancestral (Corvos)
+- Treinar Corvos (Corvos)
 
 ---
 
 ## 🎯 Distribuição por Dificuldade
 
-### Fácil (Soft Core) - 10 quests
-- Alta recompensa (20-30 pontos)
-- Liberadas automaticamente em Gildrat
-- **Quests:** 01, 02, 03, 06, 07, 08, 11, 12, 16
+### Fácil (Soft Core) - 11 quests
 
-**Total de pontos:** 225 pontos (54% do total)
+- Alta recompensa (15-50 pontos)
+- Requisitos simples ou N/A
+- **Quests:** Testar Dinamite, Testar Armadilhas, Apaziguar Discussões, Resgatar Grupos de Rebeldes em Kravens, Treinar Time Rúnico, Recrutar Civis, Treinar Civis, Treinando a Guarda de Ferro, Boas-vindas à Guarda de Ferro, Guerreiro Fragmentado, O Novo Lorde Anão
 
-### Média - 8 quests
-- Recompensa moderada (15-30 pontos)
-- Requer visitar Melios ou Kravens
-- **Quests:** 04, 09, 13, 14, 17, 18, 19, 20
+**Total de pontos:** 240 pontos
 
-**Total de pontos:** 165 pontos (40% do total)
+### Média - 5 quests
+
+- Recompensa moderada (30-50 pontos)
+- Dependem de outras quests ou decisões narrativas
+- **Quests:** Resgatar Rebeldes e Borin em Kravens, Canção Ancestral, Treinar Corvos, Encontrar Ferreiro Para Armaduras, Encontrar Ferreiro Para Armas
+
+**Total de pontos:** 195 pontos
 
 ### Difícil (Hard Core) - 3 quests
-- Baixa recompensa (10-15 pontos)
-- Requer pontuação alta (≥70) na variável específica
-- **Quests:** 05, 10, 15
 
-**Total de pontos:** 35 pontos (8% do total)
+- Recompensa estratégica (pontos e/ou multiplicador)
+- Normalmente ligadas a exploração em Mélios/Kravens ou momentos críticos
+- **Quests:** Resgatar Corvos e Família Principal, Resgatando Kilin, Coletar Sigmetal na Câmara Revelada
 
-### Especial - 1 quest
-- Multiplicador binário
-- **Quest:** 21 (Sigmetal)
+**Total de pontos:** 65 pontos (50 + 35 + 0, sem contar o multiplicador de Sigmetal)
 
 ---
 
 ## 🔄 Fluxo de Progressão Recomendado
 
 ### Fase 1: Preparação Inicial em Gildrat
-**Quests disponíveis imediatamente:**
-- 01 - Mapear Posições
-- 02 - Testar Dinamite
-- 03 - Recrutar Sáparo
-- 06 - Logística Militar
-- 07 - Fortificar Muralhas
-- 11 - Recrutar Civis
-- 12 - Treinar Time Rúnico
-- 16 - Negociar com Corvos
 
-**Pontos ganhos:** 195 pontos
+**Quests com Requisitos = N/A (camada 0):**
 
-### Fase 2: Expedições (Melios e Kravens)
-**Melios:**
-- 09 - Resgatar Kilin (+20)
-- 17 - Resgatar Grupo Corvos (+30)
-- 18, 19, 20 - Corvos Isolados (+45)
+- Testar Dinamite (Armadilhas)
+- Testar Armadilhas (Armadilhas)
+- Apaziguar Discussões (Armadilhas)
+- Resgatar Rebeldes e Borin em Kravens (Exército Civil)
+- Treinar Time Rúnico (Exército Civil)
+- Recrutar Civis (Exército Civil)
+- Treinando a Guarda de Ferro (Guarda de Ferro)
+- Resgatar Corvos e Família Principal (Corvos)
+- Coletar Sigmetal na Câmara Revelada (Sigmetal)
 
-**Kravens:**
-- 13 - Resgatar Borin (+20)
-- 14 - Resgatar Rebeldes (+15)
-- 21 - Coletar Sigmetal (multiplicador)
+**Pontos ganhos (sem contar Sigmetal binário):** 230 pontos
 
-**Pontos ganhos:** 130 pontos + Sigmetal
+### Fase 2: Quests de 1ª camada (dependem apenas de Fase 1)
 
-### Fase 3: Preparação Avançada em Gildrat
-**Quests desbloqueadas por alta pontuação:**
-- 04 - Posicionar Armadilhas (requer Kravens) (+15)
-- 05 - Rota de Fuga (requer v_pontos_armadilhas ≥ 70) (+15)
-- 08 - Treinar Formações (requer 06) (+20)
-- 10 - Preparar Arsenal (requer v_forca_guarda ≥ 70) (+10)
-- 15 - Treinar Rebeldes (requer v_forca_civil ≥ 70) (+10)
+- Resgatar Grupos de Rebeldes em Kravens (Exército Civil) — requer "Resgatar Rebeldes e Borin em Kravens"
+- Treinar Civis (Exército Civil) — requer "Recrutar Civis"
+- Resgatando Kilin (Guarda de Ferro) — requer "Treinando a Guarda de Ferro"
+- Canção Ancestral (Corvos) — requer "Resgatar Corvos e Família Principal"
+- Encontrar Ferreiro Para Armaduras (Sigmetal) — requer "Coletar Sigmetal na Câmara Revelada"
+- Encontrar Ferreiro Para Armas (Sigmetal) — requer "Coletar Sigmetal na Câmara Revelada"
+
+**Pontos ganhos:** 200 pontos
+
+### Fase 3: Quests de 2+ camadas (cadeias mais longas)
+
+- Boas-vindas à Guarda de Ferro (Guarda de Ferro) — requer "Resgatando Kilin"
+- O Novo Lorde Anão (Guarda de Ferro) — requer "Resgatando Kilin"
+- Treinar Corvos (Corvos) — requer "Canção Ancestral"
+- Guerreiro Fragmentado (Guarda de Ferro) — requer "Resgatando Kilin" e "Boas-vindas à Guarda de Ferro"
 
 **Pontos ganhos:** 70 pontos
 
 ### Total Máximo Possível
-**Pontos:** 195 + 130 + 70 = 395 pontos distribuídos em 4 variáveis de 100 cada
-**Sigmetal:** Coletado (multiplicador ×1.5)
+
+**Pontos brutos somando todas as quests:** 230 (Fase 1) + 200 (Fase 2) + 70 (Fase 3) = **500 pontos**
+
+**Totais por variável (considerando o que está nas quests):**
+
+- v_pontos_armadilhas: 100 (50 + 25 + 25)
+- v_forca_guarda: 100 (30 + 30 + 10 + 15 + 15)
+- v_forca_civil: 100 (30 + 20 + 15 + 20 + 15)
+- v_influencia_corvos: 100 (35 + 35 + 30)
+- v_reforco_sigmetal: 100 (50 + 50)
+
+**Observação:** Os cálculos de dano abaixo continuam usando a escala alvo de 0-100 por variável; se mantido este design, os valores acima precisam ser normalizados ou capados na implementação.
 
 ---
 
 ## 📈 Cenários de Gameplay
 
 ### 🏆 Jogador 100% (Hardcore Completionist)
-**Quests completadas:** 21/21
+
+**Quests completadas:** 19/19
 
 **Variáveis:**
+
 - v_pontos_armadilhas = 100
 - v_forca_guarda = 100
 - v_forca_civil = 100
 - v_influencia_corvos = 100
-- v_reforco_sigmetal = 1
+- v_reforco_sigmetal = 100
 
 **Resultado Fase 1:** 4 grupos de inimigos
 **Resultado Fase 2:** Cada exército causa 5000 HP (one-hit kill)
@@ -240,14 +267,16 @@ Dano = 1667 × (1 + v_influencia_corvos/100) × (1 + sigmetal×0.5)
 ---
 
 ### ⚠️ Jogador 50% (Casual Balanceado)
-**Quests completadas:** ~10-12/21 (maioria fáceis)
+
+**Quests completadas:** ~10-12/19 (maioria fáceis)
 
 **Variáveis:**
+
 - v_pontos_armadilhas = 50
 - v_forca_guarda = 50
 - v_forca_civil = 50
 - v_influencia_corvos = 50
-- v_reforco_sigmetal = 1
+- v_reforco_sigmetal = 50
 
 **Resultado Fase 1:** 6 grupos de inimigos
 **Resultado Fase 2:** Cada exército causa 3750 HP
@@ -255,9 +284,11 @@ Dano = 1667 × (1 + v_influencia_corvos/100) × (1 + sigmetal×0.5)
 ---
 
 ### ❌ Jogador Mínimo (Story Only)
-**Quests completadas:** 0/21 (só história linear)
+
+**Quests completadas:** 0/19 (só história linear)
 
 **Variáveis:**
+
 - v_pontos_armadilhas = 0
 - v_forca_guarda = 0
 - v_forca_civil = 0
@@ -271,32 +302,28 @@ Dano = 1667 × (1 + v_influencia_corvos/100) × (1 + sigmetal×0.5)
 
 ## 🎨 Arcos Narrativos Aprofundados
 
-| Personagem | Quests Relacionadas | Desenvolvimento |
-|------------|---------------------|-----------------|
-| **Balastrus** | 01-05, 21 | Redenção após quebrar selo, inventor estratégico |
-| **Thordan** | 06, 10 | Relação pai-filho, reconhecimento de Thorin |
-| **Kilin** | 08, 09 | Resgate, mentor veterano, líder tático |
-| **Mhordred** | 09, 15 | Culpa por deixar Kilin, redenção como instrutor |
-| **Filena** | 12, 13, 15 | Evolução de jogadora a líder militar, relação com pai |
-| **Borin** | 13, 15 | Rebelde que respeita Thorin, líder dos mineradores |
-| **Corvos** | 16-20 | Facção independente, confiança conquistada |
-| **Time Rúnico** | 12 | Transformação de esporte para guerra |
-| **Sáparo** | 03, 05 | Comic relief, lealdade, heroísmo improvável |
+- **v_armadilhas (Armadilhas):** Reforça o arco de Valamir como inventor estratégico e a relação de confiança entre Thorin e Valamir.
+- **V_força_civil (Exército Civil):** Reforça o arco de Filena e Borin, mostrando rebeldes, civis e time rúnico se organizando em exército.
+- **V_força_guarda (Guarda de Ferro):** Reforça o arco de Kilin e Mhordred, trabalhando culpa, liderança e sucessão na Guarda de Ferro.
+- **V_influência_corvos (Corvos):** Reforça o arco de Corvinus/Corvos como facção independente, negociando confiança com Gildrat.
+- **V_sigmetal (Sigmetal):** Reforça novamente o arco de Valamir e a descoberta do Sigmetal como arma central contra os Ignotos.
 
 ---
 
 ## 🔧 Implementação Técnica
 
 ### Variáveis do RPG Maker MZ
+
 ```javascript
-$gameVariables.setValue(1, v_pontos_armadilhas);    // 0-100
-$gameVariables.setValue(2, v_forca_guarda);         // 0-100
-$gameVariables.setValue(3, v_forca_civil);          // 0-100
-$gameVariables.setValue(4, v_influencia_corvos);    // 0-100
-$gameVariables.setValue(5, v_reforco_sigmetal);     // 0-1
+$gameVariables.setValue(1, v_pontos_armadilhas);   // v_armadilhas (0-100)
+$gameVariables.setValue(2, v_forca_guarda);        // V_força_guarda (0-100)
+$gameVariables.setValue(3, v_forca_civil);         // V_força_civil (0-100)
+$gameVariables.setValue(4, v_influencia_corvos);   // V_influência_corvos (0-100)
+$gameVariables.setValue(5, v_reforco_sigmetal);    // V_sigmetal (0-100, multiplicador)
 ```
 
 ### Cálculo de Grupos (Fase 1)
+
 ```javascript
 const pontos = $gameVariables.value(1);
 let grupos;
@@ -308,6 +335,7 @@ else grupos = 7;
 ```
 
 ### Cálculo de Dano (Fase 2)
+
 ```javascript
 function calcularDano(id_var_forca) {
   const BASE = 1667;
@@ -325,14 +353,14 @@ function calcularDano(id_var_forca) {
 
 ## 📋 Checklist de Criação
 
-- [x] 05 quests de Armadilhas
-- [x] 05 quests da Guarda de Ferro
-- [x] 05 quests do Exército Civil
-- [x] 05 quests dos Corvos
-- [x] 01 quest de Sigmetal
-- [x] Distribuição de pontos com Lei de Pareto
-- [x] Gatilhos por dificuldade (fácil/média/difícil)
-- [x] Arcos narrativos para cada personagem
+- [ ] 03 quests de Armadilhas
+- [ ] 05 quests da Guarda de Ferro
+- [ ] 05 quests do Exército Civil
+- [ ] 03 quests dos Corvos
+- [ ] 03 quests de Sigmetal
+- [ ] Distribuição de pontos com Lei de Pareto revisada
+- [ ] Gatilhos por dificuldade (fácil/média/difícil)
+- [ ] Arcos narrativos para cada variável principal
 - [ ] Implementação no RPG Maker MZ
 - [ ] Testes de balanceamento
 - [ ] Validação de dano máximo (5000 HP)
