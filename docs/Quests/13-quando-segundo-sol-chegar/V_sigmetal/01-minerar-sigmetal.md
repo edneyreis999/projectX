@@ -2,60 +2,45 @@
 
 ## Identificação
 
-- **Tipo:** Multiplicador Global de Todos os Exércitos
-- **Dificuldade:** Média (Requer ter derrotado Cristaleão e possuir dinamite de Balastrus)
-- **Localização:** Kravens (câmara secreta revelada pelo Cristaleão)
+- **Tipo:** Reforço em Armaduras e Armas.
+- **Dificuldade:** Difícil (Requer ir à Kravens).
+- **Localização:** Estrada do Cão-luar.
+- **Nome Artístico:** 1/4 de Bravura, 3/4 de Idiotice!
+- **Desbloqueia ao Iniciar:** 3º Andar da mina, onde o Crista-Leão foi derrotado.
 
 ## Contexto Narrativo
 
-Quest crucial que aprofunda o arco de Balastrus e a descoberta do Sigmetal como arma anti-Ignoto. Na Cena 6e, Thorin derrotou o Cristaleão que revelou uma passagem bloqueada por pedra gigante. Na Cena 10b, Balastrus entregou dinamites a Thorin. Esta quest conecta esses dois momentos - Thorin usa os explosivos para abrir a câmara e descobre depósito massivo de Sigmetal, o minério lilás proibido que é a fraqueza primária dos Ignotos.
-
-Esta descoberta tem peso narrativo: o minério que Tusk proibiu de tocar na Cena 6b (por ordens de Damburr) acaba sendo a salvação de Gildrat. Aprofunda tema de "conhecimento proibido pode salvar vidas".
+Quest crucial que aprofunda o arco de Valamir e a descoberta do Sigmetal como arma anti-Ignoto. Na Cena 6e, Thorin derrotou o Cristaleão que revelou uma passagem bloqueada por pedra gigante. Na Cena 10b, Valamir entregou dinamites a Thorin. Esta quest conecta esses dois momentos - Thorin usa os explosivos para abrir a câmara e descobre depósito massivo de Sigmetal, o minério lilás proibido, que é a fraqueza primária dos Ignotos.
 
 ## Gatilhos
 
-- **Condições de início:** Retornar a Kravens com dinamite de Balastrus e ter derrotado Cristaleão
-- **Requisitos:**
-  - `flag_cristaleao_derrotado = ON` (Cena 6e)
-  - Possuir dinamite de Balastrus (recebida na Cena 10b)
-  - Passagem para Kravens liberada
+- **NPC com a quest:** Valamir.
+- **Requisitos:** N/A.
+- **Gatilho:** Thorin recebe a missão quando fala com Valamir na Estrada do Cão-luar.
+ **Condição para concluir:** Ir até Kravens e voltar com ao menos 10 Minérios de Sigmetal.
 
 ## Estrutura Sistêmica
 
 - **Atores Envolvidos:**
   - Thorin (protagonista/descobridor)
   - Filena (companheira, testemunha da descoberta)
-  - Balastrus (diálogo posterior em Gildrat sobre importância do Sigmetal)
-  - Cristaleão (boss derrotado anteriormente que revelou passagem)
-- **Variáveis / Flags Alteradas:**
-  - `v_reforco_sigmetal` (0→1)
-  - `flag_sigmetal_coletado` (switch)
-- **Consequências:**
-  - TODOS os 3 exércitos ganham armas de Sigmetal
-  - Multiplicador de +50% de dano para Guarda, Civil e Corvos
-  - Balastrus cria armas anti-Ignoto em massa
-  - Narrativa: Thorin prova que conhecimento (mesmo proibido) salva vidas
+  - Valamir (diálogo posterior em Gildrat sobre importância do Sigmetal)
+  - **Variáveis / Flags Alteradas:**
+  - `v_reforco_sigmetal`
 
 ## Desfechos Possíveis
 
-- **Final A (Sigmetal Coletado):** Thorin detona dinamite, abre câmara, encontra veio massivo de Sigmetal lilás — Coleta minério suficiente para armar todos (`v_reforco_sigmetal = 1`, `flag_sigmetal_coletado = ON`)
+- **Final A (Sigmetal Coletado):** Thorin detona dinamite, abre câmara, encontra veio massivo de Sigmetal lilás — Coleta minério suficiente para armar todos.
   - **Impacto Global:**
     - Dano da Guarda: ×1.5
     - Dano do Civil: ×1.5
     - Dano dos Corvos: ×1.5
 
-- **Final B (Ignora/Não Tem Dinamite):** Câmara permanece selada — Exércitos lutam com armas convencionais, menos eficazes (`v_reforco_sigmetal = 0`)
-  - **Impacto:** Todos os exércitos têm dano reduzido, batalhas finais mais difíceis
-
+- **Final B (Ignora/Não Tem Dinamite):** Câmara permanece selada — Exércitos lutam com armas convencionais, menos eficazes.
+  
 ## Recompensas
 
-- **v_reforco_sigmetal:** 0→1 (multiplicador binário)
-- **Efeito Mecânico:** Multiplica dano de TODOS os exércitos por 1.5 (+50%)
-- **Narrativa:**
-  - Cena de Thorin e Filena maravilhados com o brilho lilás do Sigmetal
-  - Balastrus em Gildrat: "Você encontrou! Com isso, temos chance de vencer!"
-  - Cutscene mostrando forjas de Gildrat criando armas de Sigmetal
-  - Armeiros: "Nunca vi metal que corta Ignotos assim..."
+- N/A.
 
 ## Notas de Design
 
@@ -104,6 +89,7 @@ Corvos com força 10: 1667 × 2.0 × 1.5 = 5000 HP ✓
 - Feedback visual nas armas dos NPCs em Gildrat (brilho lilás sutil)
 
 NPC + Trigger
+
 - Local
   Npc + Trigger + Local que Termina a missão
 

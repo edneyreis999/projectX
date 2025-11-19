@@ -1,19 +1,23 @@
-# Resgatar Kilin em Melios
+# Resgatando Kilin
 
 ## Identificação
 
-- **Tipo:** Reforço Exército Guarda de Ferro
-- **Dificuldade:** Média (Requer ir a Melios)
-- **Localização:** Melios (mina profunda)
+- **Tipo:** Reforço na Habilidade da Guarda de Ferro.
+- **Dificuldade:** Difícil.
+- **Localização:** Campo de Treinamento.
+- **Nome Artístico:** O Resgate do Soldado Kilin.
+- **Desbloqueia ao Iniciar:** Lado Leste da Mina de Mélios.
 
 ## Contexto Narrativo
 
-Quest crítica que aprofunda os arcos de Kilin, Mhordred e Balastrus. Kilin é um comandante veterano da Guarda de Ferro, mentor de muitos guardas e símbolo de resistência. Seu resgate não é apenas tático - é emocional. Mhordred sente culpa por ter deixado Kilin para trás durante a fuga da Cena 10e. Balastrus sente responsabilidade pelo desastre que causou ao quebrar o selo. O resgate é um momento de redenção para ambos.
+Quest crítica que aprofunda os arcos de Kilin, Mhordred e Valamir. Kilin é um comandante veterano da Guarda de Ferro, mentor de muitos guardas e símbolo de resistência. Seu resgate não é apenas tático - é emocional. Mhordred sente culpa por ter deixado Kilin para trás durante a fuga da Cena 10e. Valamir sente responsabilidade pelo desastre que causou ao quebrar o selo, mentir sobre Kilin tê-lo atacado e manipulado o conselho. Ele insiste em ir junto.
 
 ## Gatilhos
 
-- **Condições de início:** Falar com NPC que libera passagem para Melios
-- **Requisitos:** Passagem para Melios liberada
+- **NPC com a quest:** Mhordred.
+- **Requisitos:** Ter completado a quest: Treinando a Guarda de Ferro - Caçadores Caçados.
+- **Gatilho:** Thorin recebe a missão assim que fala com Mhordred depois de completar a quest: Treinando a Guarda de Ferro - Caçadores Caçados.
+ **Condição para concluir:** Resgatar Kilin.
 
 ## Estrutura Sistêmica
 
@@ -21,22 +25,15 @@ Quest crítica que aprofunda os arcos de Kilin, Mhordred e Balastrus. Kilin é u
   - Kilin (NPC a ser resgatado)
   - Thorin (protagonista)
   - Mhordred (companheiro)
-  - Balastrus (menciona culpa em diálogo)
+  - Valamir (menciona culpa em diálogo)
+  - Filena (apoio emocional)
 - **Variáveis / Flags Alteradas:**
   - `v_forca_guarda`
-  - `flag_kilin_resgatado` (switch)
-- **Consequências:**
-  - Kilin volta como membro do grupo de Thorin
-  - Kilin disponível para treinar Guarda (quest 08)
-  - Mhordred tem diálogo de alívio e gratidão
 
 ## Desfechos Possíveis
 
-- **Final A (Resgate Bem-sucedido):** Thorin encontra Kilin defendendo posição sozinho contra Ignotos — Kilin se junta ao grupo, emocionado (`v_forca_guarda + 20`, `flag_kilin_resgatado = ON`)
-- **Final B (Kilin Deixado em Melios):** Jogador não vai a Melios — Kilin não participa das batalhas finais, Mhordred carrega culpa
+- **Final A (Resgate Bem-sucedido):** Thorin encontra Kilin e o resgata — Kilin se junta ao grupo, emocionado.
 
 ## Recompensas
 
-- **v_forca_guarda:** +20 pontos (20% do total de 100)
-- **Narrativa:** Cena emocional de reencontro, Mhordred abraça Kilin
-- **Mecânica:** Kilin se torna companheiro permanente do grupo de Thorin
+- **v_forca_guarda:** +30 pontos (do total de 100)

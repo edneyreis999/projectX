@@ -1,41 +1,40 @@
-# Resgatar Grupos de Rebeldes em Kravens
+# Recrutar Civis
 
 ## Identificação
 
-- **Tipo:** Reforço Exército Civil
-- **Dificuldade:** Média (Requer ir a Kravens)
-- **Localização:** Kravens (túneis da mina)
+- **Tipo:** Reforço Exército Civil.
+- **Dificuldade:** Fácil.
+- **Localização:** Campo de Treinamento.
+- **Nome Artístico:** Você Aí, Com Cara de Herói!
+- **Desbloqueia ao Iniciar:** N/A.
 
 ## Contexto Narrativo
 
-Quest que aprofunda o tema dos rebeldes e mineradores como força política e militar. Grupos de mineradores que discordaram de Tusk durante a Cena 7a ficaram presos em Kravens. Eles são rebeldes por natureza - desconfiam da autoridade de Gildrat. Thorin precisa ganhar a confiança deles através de ações, não palavras. Resgatar esses grupos significa trazer mão-de-obra experiente e guerreiros de guerrilha para o Exército Civil.
+Filena está preocupada que o número de combatentes apenas com os rebeldes e time de futebol rúnico não sejam suficientes para enfrentar os Ignotos. Ela sugere a Thorin recrutar os civis que estiverem dispostos a lutar, e diz a ele que o melhor lugar para encontrá-los é no distrito comercial.
 
 ## Gatilhos
 
-- **Condições de início:** Durante a missão em Kravens, após avisos de NPCs sobre grupos presos
-- **Requisitos:** Estar em Kravens
+- **NPC com a quest:** Filena.
+- **Requisitos:** Completar a quest "Resgatar Rebeldes e Borin - Turno Eterno".
+- **Gatilho:** Thorin recebe a missão depois de voltar de Kravens com ao menos um dos grupos resgatados.
+ **Condição para concluir:**  Conseguir a ajuda de ao menos 5 civis.
 
 ## Estrutura Sistêmica
 
 - **Atores Envolvidos:**
   - Thorin (protagonista)
-  - Grupos de mineradores rebeldes (NPCs)
-  - Filena (companheira, ajuda a convencer rebeldes)
+  - Filena (companheira, motivação emocional)
+  - Civis (NPCs que são vendedores, ferreiros, cozinheiros e gente comum em Gildrat)
 - **Variáveis / Flags Alteradas:**
   - `v_forca_civil`
-  - `flag_rebeldes_resgatados` (switch)
-- **Consequências:**
-  - 20-30 rebeldes se juntam ao Exército Civil
-  - Rebeldes disponíveis para treinamento (quest 15)
-  - Moral dos rebeldes aumenta
 
 ## Desfechos Possíveis
 
-- **Final A (Resgate Completo):** Thorin resgata 3 grupos diferentes de túneis colapsados — Rebeldes concordam em defender Gildrat (`v_forca_civil + 15`, `flag_rebeldes_resgatados = ON`)
-- **Final B (Resgate Parcial):** Apenas 1-2 grupos resgatados — Menos rebeldes (`v_forca_civil + 8`)
-- **Final C (Ignora):** Rebeldes morrem nos túneis, Exército Civil enfraquecido
-
+- **Final A (Resgate Completo):** Thorin tem êxito em recrutar civis.
+- **Final B (Ignora):** Jogador ignora a quest.
+  
 ## Recompensas
 
-- **v_forca_civil:** +15 pontos (15% do total de 100)
-- **Narrativa:** Rebeldes cantam canção de mineração ao serem libertados, reconhecendo Thorin como "um de nós"
+- **v_forca_civil:** +20 pontos (do total de 100)
+- **Narrativa:** Os civis também se encantam com o discurso motivador de Thorin e se juntam à causa.
+  

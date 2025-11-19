@@ -1,41 +1,42 @@
-# Resgatar Borin em Kravens
+# Resgatar Rebeldes e Borin em Kravens
 
 ## Identificação
 
-- **Tipo:** Reforço Exército Civil
-- **Dificuldade:** Média (Requer ir a Kravens)
-- **Localização:** Kravens (mina sob ataque)
-
+- **Tipo:** Reforço no Exército Civil.
+- **Dificuldade:** Média (Requer ir a Kravens).
+- **Localização:** Casa da Filena.
+- **Nome Artístico:** O Turno Eterno (Sugerindo que eles nunca param de trabalhar e, se o trabalho já era ruim e precário antes, imagine agora que serão escravos até o fim de seus dias, a não ser que sejam salvos!).
+- **Desbloqueia ao Iniciar:** Mina de Kravens (Que deve estar trancada até o início dessa Quest).
+  
 ## Contexto Narrativo
 
-Quest emocional que aprofunda profundamente o arco de Filena e introduz Borin (pai dela) como personagem importante. Borin é um minerador rebelde, rude e avesso a nobres, que ficou preso em Kravens durante o ataque dos Ignotos. O resgate cria um triângulo narrativo: Thorin (nobre), Filena (filha) e Borin (rebelde anti-nobre). Thorin salvar a vida de Borin cria uma dívida emocional complexa e abre caminho para Borin liderar os rebeldes na defesa de Gildrat.
+Quest emocional que aprofunda o arco de Filena e Thorin, além de introduzir a perspectiva dos rebeldes (já que a família da Filena sempre esteve na liderança da revolução) como personagens importantes. Além deles, Borin, também membro da equipe de Futebol Rúnico Machados Enferrujados, a mesma de Thorin e Filena, está preso na Mina de Kravens. É um minerador rebelde, rude e avesso aos nobres, mas sua principal característica é ser o rival de Thorin pela posição de capitão do time e o coração de Filena. Eles se odeiam, o que confere um peso narrativo maior quando Thorin e os demais tem que lidar com a escolha de salvá-lo ou não.
 
 ## Gatilhos
 
-- **Condições de início:** Chegar em Kravens durante ataque dos Ignotos
-- **Requisitos:** Passagem para Kravens liberada
+- **NPC com a quest:** Filena.
+- **Requisitos:** N/A
+- **Gatilho:** Thorin recebe a missão enquanto discute com Filena.
+ **Condição para concluir:** Resgatar ao menos um dos grupos.
 
 ## Estrutura Sistêmica
 
 - **Atores Envolvidos:**
-  - Borin (NPC a ser resgatado - pai de Filena)
+  - Borin (NPC a ser resgatado - Rival de Thorin)
   - Thorin (protagonista)
   - Filena (companheira, motivação emocional)
+  - Rebeldes (NPCs que se juntarão ao exército de Gildrat)
 - **Variáveis / Flags Alteradas:**
   - `v_forca_civil`
-  - `flag_borin_resgatado` (switch)
-- **Consequências:**
-  - Borin se torna líder dos rebeldes
-  - Borin muda atitude em relação a Thorin (respeito a contragosto)
-  - Filena fica emocionalmente grata a Thorin
-
+  
 ## Desfechos Possíveis
 
-- **Final A (Resgate Bem-sucedido):** Thorin salva Borin de grupo de Ignotos — Borin reconhece com grunhido: "Você não é como os outros nobres" (`v_forca_civil + 20`, `flag_borin_resgatado = ON`)
-- **Final B (Borin Morre):** Jogador não consegue chegar a tempo — Filena devastada, rebeldes sem líder
+- **Final A (Resgate Bem-sucedido):** Thorin salva Borin e o grupo de rebeldes.
+- **Final B (Borin Morre):** Thorin salva apenas o grupo de rebeldes.
+- **Final c (Borin Morre):** Thorin salva apenas Borin.
+- **Final d (Borin Morre):** Jogador ignora a quest.
 
 ## Recompensas
 
-- **v_forca_civil:** +20 pontos (20% do total de 100)
-- **Narrativa:** Cena de Filena abraçando pai ferido, olhando para Thorin com gratidão silenciosa
-- **Mecânica:** Borin se torna líder NPC dos rebeldes (aparece em diálogos de preparação)
+- **v_forca_civil:** +30 pontos (do total de 100)
+- **Narrativa:** Cena de Filena olhando para Thorin com gratidão silenciosa. Sua admiração pelo amigo cresce.
