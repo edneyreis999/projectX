@@ -32,11 +32,11 @@ Quest emocional que aprofunda o arco de Filena e Thorin, além de introduzir a p
 ## Desfechos Possíveis
 
 - **Final A (Resgate Bem-sucedido):** Thorin salva Borin e o grupo de rebeldes.
-
-## Condição de Falha
-
 - **Final B (Borin Morre):** Thorin salva apenas o grupo de rebeldes.
 - **Final C (Apenas Borin é salvo):** Thorin salva apenas Borin.
+  
+## Condição de Falha
+
 - **Final D (Quest ignorada):** Jogador ignora a quest.
 
 ## Recompensas

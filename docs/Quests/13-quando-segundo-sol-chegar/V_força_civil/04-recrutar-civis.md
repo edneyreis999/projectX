@@ -15,7 +15,7 @@ Filena está preocupada de que o número de combatentes apenas com os rebeldes e
 ## Gatilhos
 
 - **NPC com a quest:** Filena.
-- **Requisitos:** Completar a quest "Resgatar Rebeldes e Borin - Turno Eterno".
+- **Requisitos:** N/A.
 - **Gatilho:** Thorin recebe a missão depois de voltar de Kravens com ao menos um dos grupos resgatados.
 - **Condição para concluir:**  Conseguir a ajuda de ao menos 5 civis.
 

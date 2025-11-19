@@ -35,8 +35,8 @@ Quest avançada que fecha o arco de preparação militar da Corvos. Thorin e Fil
 
 ## Condição de Falha
 
-- **Final B (Ignora):** Jogador não completa a quest.
+- **Final B (Ignora):** Jogador ignora a quest.
 
 ## Recompensas
 
-- **v_forca_guarda:** +25 pontos (do total de 100)
+- **v_forca_guarda:** +30 pontos (do total de 100)

@@ -18,8 +18,7 @@ Kilin pede a ajuda de Thorin para uma cerimônia que está planejando. Mhordred 
 - **Requisitos:** Ter completado a quest: Resgatando Kilin - O Resgate do Soldado Kilin.
 - **Gatilho:** Thorin recebe a missão assim que completa a quest: Resgatando Kilin - O Resgate do Soldado Kilin.
 - **Condição para concluir:**
-  - Comprar um presente legal para Mhordred e entregá-lo a Kilin.
-  - Assistir à cerimônia.
+  - Ir até um vendedor e comprar um presente para Mhordred, depois entregá-lo a Kilin.
 
 ## Estrutura Sistêmica
 
@@ -33,7 +32,7 @@ Kilin pede a ajuda de Thorin para uma cerimônia que está planejando. Mhordred 
 
 ## Desfechos Possíveis
 
-- **Final A (Compra do presente):** Thorin encontra o presente perfeito e o entrega a Kilin. Mhordred fica feliz e aceita o novo cargo.
+- **Final A (Compra do presente):** Thorin encontra um presente o entrega a Kilin.
 
 ## Condição de Falha
 

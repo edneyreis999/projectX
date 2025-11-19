@@ -34,6 +34,10 @@ Quest crítica que aprofunda os arcos de Kilin, Mhordred e Valamir. Kilin é um 
 
 - **Final A (Resgate Bem-sucedido):** Thorin encontra Kilin e o resgata — Kilin se junta ao grupo, emocionado.
 
+## Condição de Falha
+
+- **Final B (Ignora):** Jogador ignora a quest, Kilin não é salvo.
+
 ## Recompensas
 
 - **v_forca_guarda:** +30 pontos (do total de 100)

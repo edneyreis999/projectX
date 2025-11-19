@@ -35,10 +35,10 @@ Quest que aprofunda o relacionamento entre Thorin e Sáparo Boca-de-Corneta, sua
 ## Condição de Falha
 
 - **Final B (Recusa):** Thorin protege Sáparo e não o coloca em risco.
-- **Final C (Ignora):** Jogador não completa a quest.
+- **Final C (Ignora):** Jogador ignora a quest.
 
 ## Recompensas
 
-- **v_influencia_corvos:** +25 pontos (do total de 100).
+- **v_influencia_corvos:** +35 pontos (do total de 100).
 - **Skill:** Canção do Desvanecer.
 - **Narrativa:** Cena de treinamento cômica com Sáparo aprendendo a "berrar e correr".

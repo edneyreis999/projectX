@@ -18,7 +18,7 @@ Valamir, como inventor, criou dinamite mas precisa calibrar a potência ideal pa
 
 - **NPC com a quest:** Valamir.
 - **Requisitos:** N/A.
-   **Gatilho:** Thorin é ordenado por Todan a sair em patrulha. Uma destas exigências durante o trabalho é que visite Valamir na Estrada do Cão-luar e o ajude com o que for preciso. Os ânimos estão a flor da pele, mas esta é a chance de Thorin se provar um grande guerreiro.
+   **Gatilho:** Thorin é ordenado por Tordan a sair em patrulha. Uma destas exigências durante o trabalho é que visite Valamir na Estrada do Cão-luar e o ajude com o que for preciso. Os ânimos estão a flor da pele, mas esta é a chance de Thorin se provar um grande guerreiro.
     **Condição para concluir:** Explodir 3 dinamites.
 
 ## Estrutura Sistêmica
@@ -32,7 +32,7 @@ Valamir, como inventor, criou dinamite mas precisa calibrar a potência ideal pa
 
 ## Desfechos Possíveis
 
-- **Final A (Sucesso Total):** Todos os 3 testes são bem-sucedidos — Balastrus calibra a dinamite perfeitamente.
+- **Final A (Sucesso Total):** Todos os 3 testes são bem-sucedidos — Valamir calibra a dinamite perfeitamente.
 
 ## Condição de Falha
 
