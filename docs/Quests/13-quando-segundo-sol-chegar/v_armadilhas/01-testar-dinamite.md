@@ -18,10 +18,10 @@ Valamir, como inventor, criou dinamite mas precisa calibrar a potência ideal pa
 
 - **NPC com a quest:** Valamir.
 - **Requisitos:** N/A.
- - **Gatilho:** Falar com Valamir na Estrada do Cão-luar.
- - **Condição para concluir:**
-   - Interagir com 3 eventos de dinamite na Estrada do Cão-luar.
-   - Falar com Valamir.
+- **Gatilho:** Falar com Valamir na Estrada do Cão-luar.
+- **Condição para concluir:**
+  - Interagir com 3 eventos de dinamite na Estrada do Cão-luar.
+  - Falar com Valamir.
 
 ## Estrutura Sistêmica
 

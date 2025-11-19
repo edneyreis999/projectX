@@ -6,7 +6,7 @@
 - **Dificuldade:** Difícil (Requer ir à Kravens).
 - **Localização:** Estrada do Cão-luar.
 - **Nome Artístico:** 1/4 de Bravura, 3/4 de Idiotice!
-- **Desbloqueia ao Iniciar:** Ao falar com a entrada, agora o jogador tem opção de colocar dinamites.
+- **Desbloqueio:** Ao falar com a entrada da mina, aparece a opção de colocar dinamites.
 
 ## Contexto Narrativo
 
@@ -40,4 +40,4 @@ Quest crucial que aprofunda o arco de Valamir e a descoberta do Sigmetal como ar
   
 ## Recompensas
 
-- N/A.
+- **v_reforco_sigmetal:** +0 pontos (do total de 100) — apenas desbloqueio do Sigmetal como recurso de reforço.
