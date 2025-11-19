@@ -15,9 +15,13 @@ Thorin conversa com Kilin e percebe que ele já não é mais o mesmo. Sua respir
 ## Gatilhos
 
 - **NPC com a quest:** Kilin.
-- **Requisitos:** Ter completado a quest: Resgatando Kilin - O Resgate do Soldado Kilin.
-- **Gatilho:** Thorin recebe a missão assim que completa a quest: Resgatando Kilin - O Resgate do Soldado Kilin.
- **Condição para concluir:** Lutar com Kilin.
+- **Requisitos:** Ter completado as quests:
+  - Resgatando Kilin - O Resgate do Soldado Kilin
+  - Boas-vindas à Guarda de Ferro - O Bebê Chorão Cresceu!
+- **Gatilho:** Falar com Kilin no Campo de Treinamento.
+- **Condição para concluir:**
+  - Lutar com Kilin no Campo de Treinamento.
+  - Falar com Kilin após a luta.
 
 ## Estrutura Sistêmica
 
@@ -30,6 +34,9 @@ Thorin conversa com Kilin e percebe que ele já não é mais o mesmo. Sua respir
 ## Desfechos Possíveis
 
 - **Final A (Luta Bem-sucedida):** Thorin enfrenta Kilin.
+
+## Condição de Falha
+
 - **Final B (Ignora):** Jogador não aceita o duelo com Kilin.
 
 ## Recompensas

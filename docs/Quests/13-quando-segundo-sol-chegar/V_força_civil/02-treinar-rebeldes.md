@@ -15,9 +15,11 @@ Quest que aprofunda o tema dos rebeldes e mineradores como força política e mi
 ## Gatilhos
 
 - **NPC com a quest:** Filena.
-- **Requisitos:** Completar a quest "Resgatar Rebeldes e Borin - Turno Eterno".
-- **Gatilho:** Thorin recebe a missão depois de voltar de Kravens com ao menos um dos grupos resgatados.
-- Condição para concluir: Interagir com os rebeldes e dar instruções.
+- **Requisitos:** Completar a quest "Resgatar Rebeldes e Borin - Turno Eterno", através dos final A ou B.
+- **Gatilho:** Falar com Filena no Campo de Treinamento.
+- **Condição para concluir:**
+  - Interagir com 3 NPCs rebeldes no Campo de Treinamento.
+  - Falar com Filena após o treinamento.
 
 ## Estrutura Sistêmica
 
@@ -32,6 +34,9 @@ Quest que aprofunda o tema dos rebeldes e mineradores como força política e mi
 ## Desfechos Possíveis
 
 - **Final A (Treinamento Completo):** Thorin e Filena tem êxito em treinar os rebeldes.
+
+## Condição de Falha
+
 - **Final B (Ignora):** Jogador ignora a quest.
 
 ## Recompensas

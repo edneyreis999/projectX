@@ -15,9 +15,11 @@ Quest que aprofunda a relação do time de futebol rúnico "Machados Enferrujado
 ## Gatilhos
 
 - **NPC com a quest:** Filena.
-- **Requisitos:** Completar a quest "Resgatar Rebeldes e Borin - Turno Eterno".
-- **Gatilho:** Thorin recebe a missão depois de voltar de Kravens com ao menos um dos grupos resgatados.
-- **Condição para concluir:**  Interagir com o antigo time de futebol rúnico e dar instruções.
+- **Requisitos:** N/A.
+- **Gatilho:** Falar com Filena no Campo de Treinamento.
+- **Condição para concluir:**
+  - Interagir com o time de futebol rúnico no Campo de Treinamento.
+  - Falar com Filena após o treinamento.
 
 ## Estrutura Sistêmica
 
@@ -32,6 +34,9 @@ Quest que aprofunda a relação do time de futebol rúnico "Machados Enferrujado
 ## Desfechos Possíveis
 
 - **Final A (Treinamento Completo):** Thorin e Filena têm êxito em treinar o time rúnico.
+
+## Condição de Falha
+
 - **Final B (Ignora):** Jogador ignora a quest.
 
 ## Recompensas

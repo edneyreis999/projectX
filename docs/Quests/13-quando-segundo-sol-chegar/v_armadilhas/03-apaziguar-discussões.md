@@ -16,8 +16,10 @@ Quest que também faz parte do arco narrativo de Thorin e Valamir, logo após as
 
 - **NPC com a quest:** Valamir.
 - **Requisitos:** N/A
-- **Gatilho:** Thorin recebe a missão de Valamir no primeiro momento em que fala com ele.
- **Condição para concluir:** Fazer um discurso para nobres e plebeus.
+- **Gatilho:** Falar com Valamir no Distrito Comercial.
+- **Condição para concluir:**
+  - Conversar com 3 NPCs nobres e plebeus em discussão.
+  - Falar com Valamir após o discurso.
 
 ## Estrutura Sistêmica
 
@@ -31,6 +33,9 @@ Quest que também faz parte do arco narrativo de Thorin e Valamir, logo após as
 ## Desfechos Possíveis
 
 - **Final A (Discussão Apaziguada):** Todos se acalmam e percebem que estão lutando pelo mesmo motivo, a sobrevivência do povo anão. Diferenças de casta não importam mais.
+
+## Condição de Falha
+
 - **Final B (Ignora):** Discussão cresce e se torna uma briga generalizada. Os anões estão mais divididos do que nunca.
 
 ## Recompensas

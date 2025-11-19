@@ -16,8 +16,10 @@ Quest que também faz parte do arco narrativo de Thorin e Valamir, logo após as
 
 - **NPC com a quest:** Valamir.
 - **Requisitos:** N/A
-- **Gatilho:** Thorin recebe a missão de Valamir no primeiro momento em que fala com ele.
- **Condição para concluir:** Instalar 3 armadilhas com sucesso e, se possível, testá-las (em uma das três armadilhas, alguma criatura ou Ignoto será programada para ser capturada e ativar a arapuca, validando assim a missão de Thorin).
+- **Gatilho:** Falar com Valamir na Estrada do Cão-luar.
+- **Condição para concluir:**
+  - Instalar 3 armadilhas na Estrada do Cão-luar.
+  - Falar com Valamir.
 
 ## Estrutura Sistêmica
 
@@ -30,6 +32,9 @@ Quest que também faz parte do arco narrativo de Thorin e Valamir, logo após as
 ## Desfechos Possíveis
 
 - **Final A (Completa):** Thorin mapeia todos os 3 pontos de gargalo sugeridos por Valamir — que elogia a precisão do garoto.
+
+## Condição de Falha
+
 - **Final B (Ignora):** Jogador ignora a quest — Armadilhas não serão otimizadas para os pontos estratégicos.
 
 ## Recompensas

@@ -16,8 +16,10 @@ Quest crítica que aprofunda os arcos de Kilin, Mhordred e Valamir. Kilin é um 
 
 - **NPC com a quest:** Mhordred.
 - **Requisitos:** Ter completado a quest: Treinando a Guarda de Ferro - Caçadores Caçados.
-- **Gatilho:** Thorin recebe a missão assim que fala com Mhordred depois de completar a quest: Treinando a Guarda de Ferro - Caçadores Caçados.
- **Condição para concluir:** Resgatar Kilin.
+- **Gatilho:** Falar com Mhordred no Campo de Treinamento.
+- **Condição para concluir:**
+  - Resgatar Kilin na área de Mélios.
+  - Falar com Mhordred após o resgate.
 
 ## Estrutura Sistêmica
 
@@ -33,6 +35,10 @@ Quest crítica que aprofunda os arcos de Kilin, Mhordred e Valamir. Kilin é um 
 ## Desfechos Possíveis
 
 - **Final A (Resgate Bem-sucedido):** Thorin encontra Kilin e o resgata — Kilin se junta ao grupo, emocionado.
+
+## Condição de Falha
+
+- **Final B (Ignora):** Jogador ignora a quest, Kilin não é salvo.
 
 ## Recompensas
 

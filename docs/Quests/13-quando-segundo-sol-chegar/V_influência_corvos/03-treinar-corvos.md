@@ -16,8 +16,10 @@ Quest avançada que fecha o arco de preparação militar da Corvos. Thorin e Fil
 
 - **NPC com a quest:** Corvinus.
 - **Requisitos:** Ter completado a quest: Canção Ancestral.
-- **Gatilho:** Thorin recebe a missão quando conversa com Corvinus na Sala do Conselho, após ter êxito na quest: Canção Ancestral.
-- **Condição para concluir:** Interagir com os soldados e dar instruções.
+- **Gatilho:** Falar com Corvinus na Sala do Conselho.
+- **Condição para concluir:**
+  - Interagir com 3 soldados da facção dos Corvos na Sala do Conselho ou área indicada.
+  - Falar com Corvinus após o treinamento.
 
 ## Estrutura Sistêmica
 
@@ -27,13 +29,16 @@ Quest avançada que fecha o arco de preparação militar da Corvos. Thorin e Fil
   - Filena (apoio emocional)
   - Soldados (guerreiros da facção dos corvos a serem treinados)
 - **Variáveis / Flags Alteradas:**
-  - `v_forca_guarda`
+  - `v_influencia_corvos`
 
 ## Desfechos Possíveis
 
 - **Final A (Arsenal Completo):** Thorin e Filena treinam os corvos.
-- **Final B (Ignora):** Jogador não completa a quest.
+
+## Condição de Falha
+
+- **Final B (Ignora):** Jogador ignora a quest.
 
 ## Recompensas
 
-- **v_forca_guarda:** +25 pontos (do total de 100)
+- **v_influencia_corvos:** +30 pontos (do total de 100)

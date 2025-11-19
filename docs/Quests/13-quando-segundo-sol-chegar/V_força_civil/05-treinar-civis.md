@@ -15,9 +15,11 @@ Thorin e Filena treinam os civis que aceitaram se juntar à causa em táticas an
 ## Gatilhos
 
 - **NPC com a quest:** Filena.
-- **Requisitos:** Completar a quest "Resgatar Rebeldes e Borin - Turno Eterno".
-- **Gatilho:** Thorin recebe a missão depois de voltar de Kravens com ao menos um dos grupos resgatados.
-- **Condição para concluir:**   Interagir com os civis e dar instruções.
+- **Requisitos:** Completar a quest "Recrutar Civis - Ei! Você Aí, com Cara de Herói".
+- **Gatilho:** Falar com Filena no Campo de Treinamento.
+- **Condição para concluir:**
+  - Interagir com 5 civis no Campo de Treinamento.
+  - Falar com Filena após o treinamento.
 
 ## Estrutura Sistêmica
 
@@ -31,6 +33,9 @@ Thorin e Filena treinam os civis que aceitaram se juntar à causa em táticas an
 ## Desfechos Possíveis
 
 - **Final A (Resgate Completo):** Thorin tem êxito em recrutar civis.
+
+## Condição de Falha
+
 - **Final B (Ignora):** Jogador ignora a quest.
 
 ## Recompensas

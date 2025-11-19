@@ -15,9 +15,11 @@ Filena está preocupada de que o número de combatentes apenas com os rebeldes e
 ## Gatilhos
 
 - **NPC com a quest:** Filena.
-- **Requisitos:** Completar a quest "Resgatar Rebeldes e Borin - Turno Eterno".
-- **Gatilho:** Thorin recebe a missão depois de voltar de Kravens com ao menos um dos grupos resgatados.
-- **Condição para concluir:**  Conseguir a ajuda de ao menos 5 civis.
+- **Requisitos:** N/A.
+- **Gatilho:** Falar com Filena no Campo de Treinamento.
+- **Condição para concluir:**
+  - Conversar com 5 civis no Distrito Comercial.
+  - Falar com Filena no Campo de Treinamento.
 
 ## Estrutura Sistêmica
 
@@ -31,6 +33,9 @@ Filena está preocupada de que o número de combatentes apenas com os rebeldes e
 ## Desfechos Possíveis
 
 - **Final A (Resgate Completo):** Thorin tem êxito em recrutar civis.
+
+## Condição de Falha
+
 - **Final B (Ignora):** Jogador ignora a quest.
   
 ## Recompensas

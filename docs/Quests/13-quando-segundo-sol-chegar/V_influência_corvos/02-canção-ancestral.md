@@ -16,8 +16,10 @@ Quest que aprofunda o relacionamento entre Thorin e Sáparo Boca-de-Corneta, sua
 
 - **NPC com a quest:** Corvinus.
 - **Requisitos:** Ter completado a quest: Resgatar Corvos.
-- **Gatilho:** Thorin recebe a missão quando conversa com Corvinus na Sala do Conselho, após ter êxito na quest: Resgatar Corvos.
-- **Condição para concluir:** Decidir se usará ou não o Sáparo como isca.
+- **Gatilho:** Falar com Corvinus na Sala do Conselho.
+- **Condição para concluir:**
+  - Falar com Sáparo na Sala do Conselho.
+  - Falar com Corvinus para confirmar a decisão sobre usar ou não Sáparo como isca.
 
 ## Estrutura Sistêmica
 
@@ -31,11 +33,14 @@ Quest que aprofunda o relacionamento entre Thorin e Sáparo Boca-de-Corneta, sua
 ## Desfechos Possíveis
 
 - **Final A (Aceita):** Thorin treina Sáparo para correr em rota específica, berrar nos momentos certos e servir de isca para atrair os Ignotos às armadilhas.
+
+## Condição de Falha
+
 - **Final B (Recusa):** Thorin protege Sáparo e não o coloca em risco.
-- **Final C (Ignora):** Jogador não completa a quest.
+- **Final C (Ignora):** Jogador ignora a quest.
 
 ## Recompensas
 
-- **v_influencia_corvos:** +25 pontos (do total de 100).
+- **v_influencia_corvos:** +35 pontos (do total de 100).
 - **Skill:** Canção do Desvanecer.
 - **Narrativa:** Cena de treinamento cômica com Sáparo aprendendo a "berrar e correr".

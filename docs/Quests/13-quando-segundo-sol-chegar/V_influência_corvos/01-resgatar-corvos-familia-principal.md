@@ -16,8 +16,10 @@ Quest diplomática que aprofunda o arco dos Corvos como facção independente e 
 
 - **NPC com a quest:** Corvinus.
 - **Requisitos:** N/A.
-- **Gatilho:** Thorin recebe a missão assim que conversa com Corvinus na Sala do Conselho.
-- **Condição para concluir:** Resgatar ao menos os Corvos que são membros da família (recompensa se torna 35 pontos).
+- **Gatilho:** Falar com Corvinus na Sala do Conselho.
+- **Condição para concluir:**
+  - Resgatar ao menos 1 membro da família de Corvos em Mélios.
+  - Falar com Corvinus na Sala do Conselho.
 
 ## Estrutura Sistêmica
 
@@ -30,10 +32,13 @@ Quest diplomática que aprofunda o arco dos Corvos como facção independente e 
 
 ## Desfechos Possíveis
 
-- **Final A (Negociação Bem-sucedida):** Thorin tem êxito no resgate e prova a Corvinus que não é como os outros anões da nobreza.
-- **Final B (Ignora):** Jogador ignora a quest e os Corvos não participam da defesa de Gildrat.
+- **Final A (Negociação Bem-sucedida):** Thorin tem êxito no resgate de ao menos 1 membro da família.
 
+## Condição de Falha
+
+- **Final B (Ignora):** Jogador ignora a quest e não salva ninguém.
+  
 ## Recompensas
 
-- **v_influencia_corvos:** +35-50 pontos (do total de 100)
+- **v_influencia_corvos:** +35 pontos (do total de 100)
 - **Narrativa:** Corvinus: "Lutamos por nós mesmos, não por Damburr. Mas você... você é diferente"
