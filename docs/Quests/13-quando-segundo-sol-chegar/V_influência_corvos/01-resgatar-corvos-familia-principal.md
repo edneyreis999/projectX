@@ -1,41 +1,39 @@
-# Negociar Aliança com os Corvos
+# Resgatar Corvos e Família Principal
 
 ## Identificação
 
-- **Tipo:** Reforço Exército Corvos
-- **Dificuldade:** Fácil (Soft Core)
-- **Localização:** Gildrat (local de encontro secreto dos Corvos)
+- **Tipo:** Reforço dos Corvos.
+- **Dificuldade:** Difícil.
+- **Localização:** Sala do Conselho.
+- **Nome Artístico:** Pássaros Encurralados.
+- **Desbloqueia ao Iniciar:** Mina de Mélios lado Oeste.
 
 ## Contexto Narrativo
 
-Quest diplomática que aprofunda o arco dos Corvos como facção independente e desconfiada. Os Corvos são mineradores que rejeitaram a autoridade de Damburr e Gildrat. Eles têm memórias amargas do conflito da Cena 8h quando lutaram contra o grupo de Thorin. Thorin precisa convencê-los que defender Gildrat contra Ignotos é diferente de servir Damburr - é sobre sobrevivência de todos os anões. Quest testa habilidade diplomática de Thorin.
+Quest diplomática que aprofunda o arco dos Corvos como facção independente e desconfiada. Os Corvos são mineradores que rejeitaram a autoridade de Dambur e Gildrat. Eles têm memórias amargas do conflito da Cena 8h, quando lutaram contra o grupo de Thorin. Thorin precisa convencê-los que defender Gildrat contra Ignotos é diferente de servir Dambur - é sobre sobrevivência de todos os anões.
 
 ## Gatilhos
 
-- **Condições de início:** Encontrar Chefe dos Corvos em local secreto (NPC aparece após retornar de Melios)
-- **Requisitos:** Nenhum (quest liberada automaticamente)
+- **NPC com a quest:** Corvinus.
+- **Requisitos:** N/A.
+- **Gatilho:** Thorin recebe a missão assim que conversa com Corvinus na Sala do Conselho.
+- **Condição para concluir:** Resgatar ao menos os Corvos que são membros da família (recompensa se torna 35 pontos).
 
 ## Estrutura Sistêmica
 
 - **Atores Envolvidos:**
-  - Chefe dos Corvos (NPC principal)
+  - Corvinus (NPC principal)
   - Thorin (protagonista/negociador)
   - Membros dos Corvos (NPCs de background)
 - **Variáveis / Flags Alteradas:**
   - `v_influencia_corvos`
-  - `flag_alianca_corvos` (switch)
-- **Consequências:**
-  - Corvos concordam em lutar ao lado de Gildrat
-  - Acesso a quests de resgate em Melios fica mais fácil
-  - Corvos compartilham informações sobre túneis de Melios
 
 ## Desfechos Possíveis
 
-- **Final A (Negociação Bem-sucedida):** Thorin convence Corvos citando canção ancestral e ameaça comum dos Ignotos — Aliança formada (`v_influencia_corvos + 25`, `flag_alianca_corvos = ON`)
-- **Final B (Negociação Falha):** Thorin usa argumento errado (servir Damburr) — Corvos recusam, menor cooperação (`v_influencia_corvos + 10`)
-- **Final C (Ignora):** Corvos não participam da defesa de Gildrat
+- **Final A (Negociação Bem-sucedida):** Thorin tem êxito no resgate e prova a Corvinus que não é como os outros anões da nobreza.
+- **Final B (Ignora):** Jogador ignora a quest e os Corvos não participam da defesa de Gildrat.
 
 ## Recompensas
 
-- **v_influencia_corvos:** +25 pontos (25% do total de 100)
-- **Narrativa:** Chefe dos Corvos: "Lutamos por nós mesmos, não por Damburr. Mas você... você é diferente"
+- **v_influencia_corvos:** +35-50 pontos (do total de 100)
+- **Narrativa:** Corvinus: "Lutamos por nós mesmos, não por Damburr. Mas você... você é diferente"

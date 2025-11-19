@@ -1,42 +1,42 @@
-# Resgatar Kilin em Melios
+# O Novo Lorde Anão
 
 ## Identificação
 
-- **Tipo:** Reforço Exército Guarda de Ferro
-- **Dificuldade:** Média (Requer ir a Melios)
-- **Localização:** Melios (mina profunda)
-
+- **Tipo:** Reforço na Habilidade da Guarda de Ferro.
+- **Dificuldade:** Fácil.
+- **Localização:** Taverna da Pedra Vulcânica.
+- **Nome Artístico:** O Novo Lorde Anão.
+- **Desbloqueia ao Iniciar:** N/A.
+  
 ## Contexto Narrativo
 
-Quest crítica que aprofunda os arcos de Kilin, Mhordred e Balastrus. Kilin é um comandante veterano da Guarda de Ferro, mentor de muitos guardas e símbolo de resistência. Seu resgate não é apenas tático - é emocional. Mhordred sente culpa por ter deixado Kilin para trás durante a fuga da Cena 10e. Balastrus sente responsabilidade pelo desastre que causou ao quebrar o selo. O resgate é um momento de redenção para ambos.
+Kilin pede a ajuda de Thorin para uma cerimônia que está planejando. Mhordred será eleito de forma oficial como novo Lorde Anão, comandante da Guarda de Ferro. Kilin pretente se aposentar assim que a guerra acabar, caso eles tenham êxito em sobreviver. A missão de Thorin é encontrar um presente adequado para a nova posição militar assumida por Mhordred e entregá-lo a Kilin.
 
 ## Gatilhos
 
-- **Condições de início:** Falar com NPC que libera passagem para Melios
-- **Requisitos:** Passagem para Melios liberada
+- **NPC com a quest:** Kilin.
+- **Requisitos:** Ter completado a quest: Resgatando Kilin - O Resgate do Soldado Kilin.
+- **Gatilho:** Thorin recebe a missão assim que completa a quest: Resgatando Kilin - O Resgate do Soldado Kilin.
+- **Condição para concluir:**
+  - Comprar um presente legal para Mhordred e entregá-lo a Kilin.
+  - Assistir à cerimônia.
 
 ## Estrutura Sistêmica
 
 - **Atores Envolvidos:**
-  - Kilin (NPC a ser resgatado)
+  - Kilin (Mentor)
   - Thorin (protagonista)
   - Mhordred (companheiro)
-  - Balastrus (menciona culpa em diálogo)
+  - Guarda de Ferro (companheiros que vão assistir à cerimônia)
 - **Variáveis / Flags Alteradas:**
   - `v_forca_guarda`
-  - `flag_kilin_resgatado` (switch)
-- **Consequências:**
-  - Kilin volta como membro do grupo de Thorin
-  - Kilin disponível para treinar Guarda (quest 08)
-  - Mhordred tem diálogo de alívio e gratidão
 
 ## Desfechos Possíveis
 
-- **Final A (Resgate Bem-sucedido):** Thorin encontra Kilin defendendo posição sozinho contra Ignotos — Kilin se junta ao grupo, emocionado (`v_forca_guarda + 20`, `flag_kilin_resgatado = ON`)
-- **Final B (Kilin Deixado em Melios):** Jogador não vai a Melios — Kilin não participa das batalhas finais, Mhordred carrega culpa
+- **Final A (Compra do presente):** Thorin encontra o presente perfeito e o entrega a Kilin. Mhordred fica feliz e aceita o novo cargo.
+- **Final B (Ignora):** Jogador decide não ajudar Kilin.
 
 ## Recompensas
 
-- **v_forca_guarda:** +20 pontos (20% do total de 100)
-- **Narrativa:** Cena emocional de reencontro, Mhordred abraça Kilin
-- **Mecânica:** Kilin se torna companheiro permanente do grupo de Thorin
+- **v_forca_guarda:** +15 pontos (do total de 100)
+- **Narrativa:** Cena emocional da cerimônia de posse do novo Lorde Anão.

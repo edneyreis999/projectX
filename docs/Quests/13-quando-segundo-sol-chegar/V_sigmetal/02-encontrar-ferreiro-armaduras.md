@@ -1,39 +1,38 @@
-# Recrutar Civis para Milícia
+# Encontrar Ferreiro Para Armaduras
 
 ## Identificação
 
-- **Tipo:** Reforço Exército Civil
-- **Dificuldade:** Fácil (Soft Core)
-- **Localização:** Gildrat (praça central)
+- **Tipo:** Reforço em Armaduras e Armas.
+- **Dificuldade:** Mediano.
+- **Localização:** Distrito Comercial.
+- **Nome Artístico:** O Leviatã de Espinhos (Apelido do ferreiro que fazia as melhores armaduras de Gildrat, até resolver se aposentar - Leviatã de Armadura é a criatura com a pele mais dura entre a fauna de Ekios).
+- **Desbloqueia ao Iniciar:** N/A.
 
 ## Contexto Narrativo
 
-Quest que mostra Thorin conectando-se com o povo comum de Gildrat. Comerciantes, artesãos e pais de família decidem pegar em armas para defender seus lares. Esta quest aprofunda o tema de que a verdadeira força de Gildrat não vem apenas da Guarda de Ferro, mas da união de todo o povo. Thorin descobre que liderança não é só sobre táticas militares, mas sobre inspirar e mobilizar pessoas comuns a serem heróicas.
+Thorin precisa encontrar um mestre ferreiro que possa converter o Sigmetal em armaduras para proteger os exércitos.
 
 ## Gatilhos
 
-- **Condições de início:** Falar com Organizador da Praça Central após retornar de Melios
-- **Requisitos:** Nenhum (quest liberada automaticamente)
+- **NPC com a quest:** Valamir.
+- **Requisitos:** Ter completado a quest: Minerar Sigmetal - 1/4 de Bravura, 3/4 de Idiotice!
+- **Gatilho:** Thorin recebe a missão quando fala com Valamir após completar a quest: Minerar Sigmetal - 1/4 de Bravura, 3/4 de Idiotice!
+- **Condição para concluir:** Conseguir que ao menos 5 armaduras sejam forjadas.
 
 ## Estrutura Sistêmica
 
 - **Atores Envolvidos:**
+  - Valamir (NPC secundário)
   - Thorin (protagonista)
-  - Organizador da Milícia (NPC)
-  - Civis voluntários (NPCs de background)
+  - Mestre Ferreiro (NPC principal)
 - **Variáveis / Flags Alteradas:**
   - `v_forca_civil`
-  - `flag_civis_recrutados` (switch)
-- **Consequências:**
-  - Civis formam primeira onda de defesa
-  - Desbloqueia diálogos emocionais com famílias
 
 ## Desfechos Possíveis
 
-- **Final A (Recrutamento Bem-sucedido):** Thorin consegue recrutar 50+ civis voluntários através de discurso inspirador — Milícia formada (`v_forca_civil + 30`, `flag_civis_recrutados = ON`)
-- **Final B (Ignora):** Civis permanecem desorganizados, menor número de voluntários
+- **Final A (Armaduras Forjadas):** Thorin consegue convencer o mestre ferreiro a forjar as armaduras.
+- **Final B (Ignora):** Jogador ignora a quest.
 
 ## Recompensas
 
-- **v_forca_civil:** +30 pontos (30% do total de 100)
-- **Narrativa:** Cena de Thorin discursando na praça, famílias se abraçando antes de se voluntariar
+- **v_forca_civil:** +50 pontos (do total de 100)
