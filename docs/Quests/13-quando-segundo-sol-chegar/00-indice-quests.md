@@ -8,7 +8,7 @@
 ## Resumo do Sistema
 
 - **Total de Quests:** 19
-- **Variáveis Principais (pastas):** `v_armadilhas`, `V_força_guarda`, `V_força_civil`, `V_influência_corvos`, `V_sigmetal`
+- **Variáveis Principais (pastas):** `v_armadilhas`, `v_pontos_armadilhas`, `v_forca_guarda`, `v_forca_civil`, `v_influencia_corvos`, `v_reforco_sigmetal`
 - **Escala de Referência:** 0-100 pontos para cada variável principal (ver totais atuais em **Total Máximo Possível**)
 - **Princípio:** Lei de Pareto 80/20 (quests fáceis = alta recompensa, quests difíceis = baixa recompensa)
 
@@ -48,11 +48,11 @@
 **Escala de Dano:**
 
 ```
-Dano = 1667 × (1 + v_forca_guarda/100) × (1 + sigmetal×0.5)
+Dano = 1667 × (1 + v_forca_guarda/100) × (1 + (v_reforco_sigmetal/100) * 0.5)
 
 0 pontos:   1667 HP
 50 pontos:  2500 HP
-100 pontos: 3334 HP (sem Sigmetal) / 5000 HP (com Sigmetal)
+100 pontos: 3334 HP (sem Sigmetal) / 5000 HP (com Sigmetal máximo)
 ```
 
 ---
@@ -74,11 +74,11 @@ Dano = 1667 × (1 + v_forca_guarda/100) × (1 + sigmetal×0.5)
 **Escala de Dano:**
 
 ```
-Dano = 1667 × (1 + v_forca_civil/100) × (1 + sigmetal×0.5)
+Dano = 1667 × (1 + v_forca_civil/100) × (1 + (v_reforco_sigmetal/100) * 0.5)
 
 0 pontos:   1667 HP
 50 pontos:  2500 HP
-100 pontos: 3334 HP (sem Sigmetal) / 5000 HP (com Sigmetal)
+100 pontos: 3334 HP (sem Sigmetal) / 5000 HP (com Sigmetal máximo)
 ```
 
 ---
@@ -96,31 +96,33 @@ Dano = 1667 × (1 + v_forca_civil/100) × (1 + sigmetal×0.5)
 **Escala de Dano:**
 
 ```
-Dano = 1667 × (1 + v_influencia_corvos/100) × (1 + sigmetal×0.5)
+Dano = 1667 × (1 + v_influencia_corvos/100) × (1 + (v_reforco_sigmetal/100) * 0.5)
 
 0 pontos:   1667 HP
 50 pontos:  2500 HP
-100 pontos: 3334 HP (sem Sigmetal) / 5000 HP (com Sigmetal)
+100 pontos: 3334 HP (sem Sigmetal) / 5000 HP (com Sigmetal máximo)
 ```
 
 ---
 
-## 🔥 SIGMETAL (3 quests) → v_reforco_sigmetal (0-1 binária) + reforços
+## 🔥 SIGMETAL (3 quests) → v_reforco_sigmetal (0-100, reforço total)
 
-| # | Quest | Dificuldade | Localização | Pontos / Valor | Requisitos |
-|---|-------|-------------|-------------|----------------|------------|
-| 01 | Coletar Sigmetal na Câmara Revelada | Difícil | Estrada do Cão-luar | 0→1 (binária) | N/A |
+| # | Quest | Dificuldade | Localização | Pontos Sigmetal | Requisitos |
+|---|-------|-------------|-------------|-----------------|------------|
+| 01 | Coletar Sigmetal na Câmara Revelada | Difícil | Estrada do Cão-luar | 0 (desbloqueio do recurso) | N/A |
 | 02 | Encontrar Ferreiro Para Armaduras | Mediano | Distrito Comercial | +50 | Ter completado "Coletar Sigmetal na Câmara Revelada" |
 | 03 | Encontrar Ferreiro Para Armas | Mediano | Distrito Comercial | +50 | Ter completado "Coletar Sigmetal na Câmara Revelada" |
 
-**Total Possível em reforços:** 100 pontos (+ flag binária de Sigmetal)
+**Total Possível em v_reforco_sigmetal:** 100 pontos (0 → 100)
 
-**Efeito:** Multiplicador global de +50% para TODOS os 3 exércitos
+**Efeito:** Multiplicador global de até +50% para TODOS os 3 exércitos, de forma escalar.
 
-**Impacto aproximado:**
+**Modelo de multiplicador Sigmetal:**
 
-- Sem Sigmetal: Dano máximo ≈ 3334 HP
-- Com Sigmetal: Dano máximo ≈ 5000 HP (one-hit kill nos bosses)
+- Fórmula: `mult_sigmetal = 1 + (sigmetal / 100) * 0.5`
+- 0 Sigmetal → 1.0×
+- 50 Sigmetal → 1.25×
+- 100 Sigmetal → 1.5× (dano máximo com Sigmetal)
 
 ---
 
@@ -241,9 +243,9 @@ Dano = 1667 × (1 + v_influencia_corvos/100) × (1 + sigmetal×0.5)
 - v_forca_guarda: 100 (30 + 30 + 10 + 15 + 15)
 - v_forca_civil: 100 (30 + 20 + 15 + 20 + 15)
 - v_influencia_corvos: 100 (35 + 35 + 30)
-- v_reforco_sigmetal: 100 (50 + 50)
+- v_reforco_sigmetal: 100 (0 + 50 + 50)
 
-**Observação:** Os cálculos de dano abaixo continuam usando a escala alvo de 0-100 por variável; se mantido este design, os valores acima precisam ser normalizados ou capados na implementação.
+**Observação:** Todos os valores usam agora escala 0-100, incluindo v_reforco_sigmetal, que é aplicado como multiplicador escalar via `(v_reforco_sigmetal/100) * 0.5`.
 
 ---
 
@@ -302,11 +304,11 @@ Dano = 1667 × (1 + v_influencia_corvos/100) × (1 + sigmetal×0.5)
 
 ## 🎨 Arcos Narrativos Aprofundados
 
-- **v_armadilhas (Armadilhas):** Reforça o arco de Valamir como inventor estratégico e a relação de confiança entre Thorin e Valamir.
-- **V_força_civil (Exército Civil):** Reforça o arco de Filena e Borin, mostrando rebeldes, civis e time rúnico se organizando em exército.
-- **V_força_guarda (Guarda de Ferro):** Reforça o arco de Kilin e Mhordred, trabalhando culpa, liderança e sucessão na Guarda de Ferro.
-- **V_influência_corvos (Corvos):** Reforça o arco de Corvinus/Corvos como facção independente, negociando confiança com Gildrat.
-- **V_sigmetal (Sigmetal):** Reforça novamente o arco de Valamir e a descoberta do Sigmetal como arma central contra os Ignotos.
+- **v_pontos_armadilhas (Armadilhas):** Reforça o arco de Valamir como inventor estratégico e a relação de confiança entre Thorin e Valamir.
+- **v_forca_civil (Exército Civil):** Reforça o arco de Filena e Borin, mostrando rebeldes, civis e time rúnico se organizando em exército.
+- **v_forca_guarda (Guarda de Ferro):** Reforça o arco de Kilin e Mhordred, trabalhando culpa, liderança e sucessão na Guarda de Ferro.
+- **v_influencia_corvos (Corvos):** Reforça o arco de Corvinus/Corvos como facção independente, negociando confiança com Gildrat.
+- **v_reforco_sigmetal (Sigmetal):** Reforça novamente o arco de Valamir e a descoberta do Sigmetal como arma central contra os Ignotos.
 
 ---
 
@@ -315,11 +317,28 @@ Dano = 1667 × (1 + v_influencia_corvos/100) × (1 + sigmetal×0.5)
 ### Variáveis do RPG Maker MZ
 
 ```javascript
-$gameVariables.setValue(1, v_pontos_armadilhas);   // v_armadilhas (0-100)
-$gameVariables.setValue(2, v_forca_guarda);        // V_força_guarda (0-100)
-$gameVariables.setValue(3, v_forca_civil);         // V_força_civil (0-100)
-$gameVariables.setValue(4, v_influencia_corvos);   // V_influência_corvos (0-100)
-$gameVariables.setValue(5, v_reforco_sigmetal);    // V_sigmetal (0-100, multiplicador)
+$gameVariables.setValue(1, v_pontos_armadilhas);   // v_pontos_armadilhas (0-100)
+$gameVariables.setValue(2, v_forca_guarda);        // v_forca_guarda (0-100)
+$gameVariables.setValue(3, v_forca_civil);         // v_forca_civil (0-100)
+$gameVariables.setValue(4, v_influencia_corvos);   // v_influencia_corvos (0-100)
+$gameVariables.setValue(5, v_reforco_sigmetal);    // Valor escalar de 0-100 representando o nível total de reforço Sigmetal.
+```
+
+### Atualização da variável de Sigmetal por quest
+
+Implementação sugerida para manter v_reforco_sigmetal coerente com o modelo escalar:
+
+```javascript
+// Q1 - Coletar Sigmetal na Câmara Revelada
+// Apenas desbloqueia o recurso: mantém o valor atual (0 por padrão).
+
+// Q2 - Encontrar Ferreiro Para Armaduras
+const atualSigmetal = $gameVariables.value(5);
+$gameVariables.setValue(5, Math.min(100, atualSigmetal + 50));
+
+// Q3 - Encontrar Ferreiro Para Armas
+const atualSigmetal2 = $gameVariables.value(5);
+$gameVariables.setValue(5, Math.min(100, atualSigmetal2 + 50));
 ```
 
 ### Cálculo de Grupos (Fase 1)
@@ -340,10 +359,10 @@ else grupos = 7;
 function calcularDano(id_var_forca) {
   const BASE = 1667;
   const forca = $gameVariables.value(id_var_forca);
-  const sigmetal = $gameVariables.value(5);
+  const sigmetal = $gameVariables.value(5); // agora escalar 0-100
 
   const mult_forca = 1 + (forca / 100);
-  const mult_sigmetal = 1 + (sigmetal * 0.5);
+  const mult_sigmetal = 1 + (sigmetal / 100) * 0.5;
 
   return Math.floor(BASE * mult_forca * mult_sigmetal);
 }

@@ -33,7 +33,7 @@ Kilin pede a ajuda de Thorin para uma cerimônia que está planejando. Mhordred 
 
 ## Desfechos Possíveis
 
-- **Final A (Compra do presente):** Thorin encontra um presente o entrega a Kilin.
+- **Final A (Compra do presente):** Thorin encontra um presente e o entrega a Kilin.
 
 ## Condição de Falha
 
