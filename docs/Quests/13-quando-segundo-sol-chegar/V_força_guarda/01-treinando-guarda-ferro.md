@@ -16,10 +16,10 @@ Quest que aprofunda o papel de Thorin na Guarda de Ferro. A Guarda de Ferro prec
 
 - **NPC com a quest:** Mhordred.
 - **Requisitos:** N/A.
-   **Gatilho:** Thorin pode falar com Mhordred a qualquer momento enquanto o jogador realiza as outras mini-quests. Ele parece abatido e confessa ao garoto que não sabe mais o que fazer. O peso da liderança da Guarda de Ferro naquele momento lhe parece mais do que pode aguentar. Thorin o anima a não desistir e o convence a tentar novamente. Ele ainda diz que, apesar de não ser um grande guerreiro, pode ajudar o amigo a se comunicar de forma mais apropriada com os outros soldados.
-
-   (Nota do roteirista: Imagino o que no meio do discurso de Thorin, ele comece a cantar: "Vamos a batalha, guerrear, vencer! Derrotar os Ignotos, é o que vai valer - Estilo capitão Chang no filme da Mulan kkkk <https://www.youtube.com/watch?v=RYd-vhiXCNE>).
-- **Condição para concluir:** Discursar para os soldados.
+ - **Gatilho:** Falar com Mhordred no Campo de Treinamento.
+ - **Condição para concluir:**
+   - Falar com 3 soldados no Campo de Treinamento (discurso).
+   - Falar com Mhordred após o discurso.
 
 ## Estrutura Sistêmica
 

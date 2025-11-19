@@ -16,11 +16,10 @@ Quest diplomática que aprofunda o arco dos Corvos como facção independente e 
 
 - **NPC com a quest:** Corvinus.
 - **Requisitos:** N/A.
-- **Gatilho:** Thorin recebe a missão assim que conversa com Corvinus na Sala do Conselho.
-- **Condição para concluir:** A missão opera com pagamento variável (por cabeça), permitindo o sucesso parcial. Não é obrigatório resgatar todos para concluir a missão:
-  - Valor Unitário: 5 pontos por NPC resgatado.
-  - Alvos Principais: 5 Membros da Família (Máx: 25 pontos).
-  - Alvos Bônus: 2 Trabalhadores Perdidos (Máx: 10 pontos).
+- **Gatilho:** Falar com Corvinus na Sala do Conselho.
+- **Condição para concluir:**
+  - Resgatar ao menos 1 membro da família de Corvos em Mélios.
+  - Falar com Corvinus na Sala do Conselho.
 
 ## Estrutura Sistêmica
 

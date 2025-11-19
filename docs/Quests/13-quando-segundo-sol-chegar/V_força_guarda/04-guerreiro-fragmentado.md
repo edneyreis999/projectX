@@ -18,8 +18,10 @@ Thorin conversa com Kilin e percebe que ele já não é mais o mesmo. Sua respir
 - **Requisitos:** Ter completado as quests:
   - Resgatando Kilin - O Resgate do Soldado Kilin
   - Boas-vindas à Guarda de Ferro - O Bebê Chorão Cresceu!
-- **Gatilho:** Thorin recebe a missão assim que completa a quest: Resgatando Kilin - O Resgate do Soldado Kilin.
- **Condição para concluir:** Lutar com Kilin.
+- **Gatilho:** Falar com Kilin no Campo de Treinamento.
+- **Condição para concluir:**
+  - Lutar com Kilin no Campo de Treinamento.
+  - Falar com Kilin após a luta.
 
 ## Estrutura Sistêmica
 

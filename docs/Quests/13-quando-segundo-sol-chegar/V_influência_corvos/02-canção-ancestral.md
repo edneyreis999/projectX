@@ -16,8 +16,10 @@ Quest que aprofunda o relacionamento entre Thorin e Sáparo Boca-de-Corneta, sua
 
 - **NPC com a quest:** Corvinus.
 - **Requisitos:** Ter completado a quest: Resgatar Corvos.
-- **Gatilho:** Thorin recebe a missão quando conversa com Corvinus na Sala do Conselho, após ter êxito na quest: Resgatar Corvos.
-- **Condição para concluir:** Decidir se usará ou não o Sáparo como isca.
+- **Gatilho:** Falar com Corvinus na Sala do Conselho.
+- **Condição para concluir:**
+  - Falar com Sáparo na Sala do Conselho.
+  - Falar com Corvinus para confirmar a decisão sobre usar ou não Sáparo como isca.
 
 ## Estrutura Sistêmica
 

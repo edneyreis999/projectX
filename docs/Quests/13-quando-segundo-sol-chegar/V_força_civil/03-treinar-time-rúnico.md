@@ -16,8 +16,10 @@ Quest que aprofunda a relação do time de futebol rúnico "Machados Enferrujado
 
 - **NPC com a quest:** Filena.
 - **Requisitos:** N/A.
-- **Gatilho:** Thorin recebe a missão depois de voltar de Kravens com ao menos um dos grupos resgatados.
-- **Condição para concluir:**  Interagir com o antigo time de futebol rúnico e dar instruções.
+- **Gatilho:** Falar com Filena no Campo de Treinamento.
+- **Condição para concluir:**
+  - Interagir com o time de futebol rúnico no Campo de Treinamento.
+  - Falar com Filena após o treinamento.
 
 ## Estrutura Sistêmica
 

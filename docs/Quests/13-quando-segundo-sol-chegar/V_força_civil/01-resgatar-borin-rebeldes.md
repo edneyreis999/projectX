@@ -16,8 +16,10 @@ Quest emocional que aprofunda o arco de Filena e Thorin, além de introduzir a p
 
 - **NPC com a quest:** Filena.
 - **Requisitos:** N/A.
-- **Gatilho:** Thorin recebe a missão enquanto discute com Filena.
-- **Condição para concluir:** Resgatar ao menos um dos grupos.
+- **Gatilho:** Falar com Filena na Casa da Filena.
+- **Condição para concluir:**
+  - Resgatar ao menos um dos grupos de rebeldes em Kravens.
+  - Falar com Filena após o resgate.
 
 ## Estrutura Sistêmica
 

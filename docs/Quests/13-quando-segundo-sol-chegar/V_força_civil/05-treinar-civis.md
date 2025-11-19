@@ -16,8 +16,10 @@ Thorin e Filena treinam os civis que aceitaram se juntar à causa em táticas an
 
 - **NPC com a quest:** Filena.
 - **Requisitos:** Completar a quest "Recrutar Civis - Ei! Você Aí, com Cara de Herói".
-- **Gatilho:** Thorin recebe a missão depois de voltar de Kravens com ao menos um dos grupos resgatados.
-- **Condição para concluir:**   Interagir com os civis e dar instruções.
+- **Gatilho:** Falar com Filena no Campo de Treinamento.
+- **Condição para concluir:**
+  - Interagir com 5 civis no Campo de Treinamento.
+  - Falar com Filena após o treinamento.
 
 ## Estrutura Sistêmica
 

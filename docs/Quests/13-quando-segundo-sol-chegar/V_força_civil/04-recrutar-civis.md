@@ -16,8 +16,10 @@ Filena está preocupada de que o número de combatentes apenas com os rebeldes e
 
 - **NPC com a quest:** Filena.
 - **Requisitos:** N/A.
-- **Gatilho:** Thorin recebe a missão depois de voltar de Kravens com ao menos um dos grupos resgatados.
-- **Condição para concluir:**  Conseguir a ajuda de ao menos 5 civis.
+- **Gatilho:** Falar com Filena no Campo de Treinamento.
+- **Condição para concluir:**
+  - Conversar com 5 civis no Distrito Comercial.
+  - Falar com Filena no Campo de Treinamento.
 
 ## Estrutura Sistêmica
 

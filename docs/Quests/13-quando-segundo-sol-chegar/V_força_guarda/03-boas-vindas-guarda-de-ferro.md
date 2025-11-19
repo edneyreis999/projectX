@@ -16,8 +16,10 @@ Quest crítica que aprofunda os arcos de Kilin, Mhordred Thorin. Kilin, agora de
 
 - **NPC com a quest:** Kilin.
 - **Requisitos:** Ter completado a quest: Resgatando Kilin - O Resgate do Soldado Kilin.
-- **Gatilho:** Thorin recebe a missão assim que completa a quest: Resgatando Kilin - O Resgate do Soldado Kilin.
- **Condição para concluir:** Participar do Trote feito pelos colegas da Guarda.
+- **Gatilho:** Falar com Kilin na Taverna da Pedra Vulcânica.
+- **Condição para concluir:**
+  - Participar do trote com a Guarda de Ferro.
+  - Falar com Kilin após o trote.
 
 ## Estrutura Sistêmica
 

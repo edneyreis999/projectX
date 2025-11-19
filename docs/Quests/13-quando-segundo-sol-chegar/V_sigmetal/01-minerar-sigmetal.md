@@ -16,8 +16,10 @@ Quest crucial que aprofunda o arco de Valamir e a descoberta do Sigmetal como ar
 
 - **NPC com a quest:** Valamir.
 - **Requisitos:** N/A.
-- **Gatilho:** Thorin recebe a missão quando fala com Valamir na Estrada do Cão-luar.
- **Condição para concluir:** Ir até Kravens e voltar com ao menos 10 Minérios de Sigmetal.
+- **Gatilho:** Falar com Valamir na Estrada do Cão-luar.
+- **Condição para concluir:**
+  - Coletar ao menos 10 Minérios de Sigmetal em Kravens.
+  - Falar com Valamir após retornar.
 
 ## Estrutura Sistêmica
 

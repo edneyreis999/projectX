@@ -16,8 +16,10 @@ Quest avançada que fecha o arco de preparação militar da Corvos. Thorin e Fil
 
 - **NPC com a quest:** Corvinus.
 - **Requisitos:** Ter completado a quest: Canção Ancestral.
-- **Gatilho:** Thorin recebe a missão quando conversa com Corvinus na Sala do Conselho, após ter êxito na quest: Canção Ancestral.
-- **Condição para concluir:** Interagir com os soldados e dar instruções.
+- **Gatilho:** Falar com Corvinus na Sala do Conselho.
+- **Condição para concluir:**
+  - Interagir com 3 soldados da facção dos Corvos na Sala do Conselho ou área indicada.
+  - Falar com Corvinus após o treinamento.
 
 ## Estrutura Sistêmica
 
