@@ -32,7 +32,7 @@ Thorin precisa encontrar um mestre ferreiro que possa converter o Sigmetal em ar
 
 ## Desfechos Possíveis
 
-- **Final A (Armaduras Forjadas):** Thorin consegue convencer o mestre ferreiro a forjar as armas.
+- **Final A (Armas Forjadas):** Thorin consegue convencer o mestre ferreiro a forjar as armas.
 
 ## Condição de Falha
 
