@@ -15,9 +15,9 @@ Quest emocional que aprofunda o arco de Filena e Thorin, além de introduzir a p
 ## Gatilhos
 
 - **NPC com a quest:** Filena.
-- **Requisitos:** N/A
+- **Requisitos:** N/A.
 - **Gatilho:** Thorin recebe a missão enquanto discute com Filena.
- **Condição para concluir:** Resgatar ao menos um dos grupos.
+- **Condição para concluir:** Resgatar ao menos um dos grupos.
 
 ## Estrutura Sistêmica
 
@@ -33,8 +33,8 @@ Quest emocional que aprofunda o arco de Filena e Thorin, além de introduzir a p
 
 - **Final A (Resgate Bem-sucedido):** Thorin salva Borin e o grupo de rebeldes.
 - **Final B (Borin Morre):** Thorin salva apenas o grupo de rebeldes.
-- **Final c (Borin Morre):** Thorin salva apenas Borin.
-- **Final d (Borin Morre):** Jogador ignora a quest.
+- **Final C (Apenas Borin é salvo):** Thorin salva apenas Borin.
+- **Final D (Quest ignorada):** Jogador ignora a quest.
 
 ## Recompensas
 

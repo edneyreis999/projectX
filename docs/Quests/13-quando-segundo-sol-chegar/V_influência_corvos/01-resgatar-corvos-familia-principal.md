@@ -10,14 +10,14 @@
 
 ## Contexto Narrativo
 
-Quest diplomática que aprofunda o arco dos Corvos como facção independente e desconfiada. Os Corvos são mineradores que rejeitaram a autoridade de Dambur e Gildrat. Eles têm memórias amargas do conflito da Cena 8h quando lutaram contra o grupo de Thorin. Thorin precisa convencê-los que defender Gildrat contra Ignotos é diferente de servir Dambur - é sobre sobrevivência de todos os anões.
+Quest diplomática que aprofunda o arco dos Corvos como facção independente e desconfiada. Os Corvos são mineradores que rejeitaram a autoridade de Dambur e Gildrat. Eles têm memórias amargas do conflito da Cena 8h, quando lutaram contra o grupo de Thorin. Thorin precisa convencê-los que defender Gildrat contra Ignotos é diferente de servir Dambur - é sobre sobrevivência de todos os anões.
 
 ## Gatilhos
 
 - **NPC com a quest:** Corvinus.
 - **Requisitos:** N/A.
 - **Gatilho:** Thorin recebe a missão assim que conversa com Corvinus na Sala do Conselho.
- **Condição para concluir:** Resgatar ao menos os Corvos que são membros da família (recompensa se torna 35 pontos).
+- **Condição para concluir:** Resgatar ao menos os Corvos que são membros da família (recompensa se torna 35 pontos).
 
 ## Estrutura Sistêmica
 
@@ -31,7 +31,7 @@ Quest diplomática que aprofunda o arco dos Corvos como facção independente e 
 ## Desfechos Possíveis
 
 - **Final A (Negociação Bem-sucedida):** Thorin tem êxito no resgate e prova a Corvinus que não é como os outros anões da nobreza.
-- **Final B (Ignora):** Jogador ignora a quest e os Corvos não participam da defesa de Gildrat
+- **Final B (Ignora):** Jogador ignora a quest e os Corvos não participam da defesa de Gildrat.
 
 ## Recompensas
 

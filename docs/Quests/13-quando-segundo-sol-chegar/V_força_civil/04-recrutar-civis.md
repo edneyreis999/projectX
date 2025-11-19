@@ -10,14 +10,14 @@
 
 ## Contexto Narrativo
 
-Filena está preocupada que o número de combatentes apenas com os rebeldes e time de futebol rúnico não sejam suficientes para enfrentar os Ignotos. Ela sugere a Thorin recrutar os civis que estiverem dispostos a lutar, e diz a ele que o melhor lugar para encontrá-los é no distrito comercial.
+Filena está preocupada de que o número de combatentes apenas com os rebeldes e time de futebol rúnico não sejam suficientes para enfrentar os Ignotos. Ela sugere a Thorin recrutar os civis que estiverem dispostos a lutar, e diz a ele que o melhor lugar para encontrá-los é no distrito comercial.
 
 ## Gatilhos
 
 - **NPC com a quest:** Filena.
 - **Requisitos:** Completar a quest "Resgatar Rebeldes e Borin - Turno Eterno".
 - **Gatilho:** Thorin recebe a missão depois de voltar de Kravens com ao menos um dos grupos resgatados.
- **Condição para concluir:**  Conseguir a ajuda de ao menos 5 civis.
+- **Condição para concluir:**  Conseguir a ajuda de ao menos 5 civis.
 
 ## Estrutura Sistêmica
 

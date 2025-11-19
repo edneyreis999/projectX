@@ -15,14 +15,14 @@ Thorin precisa encontrar um mestre ferreiro que possa converter o Sigmetal em ar
 ## Gatilhos
 
 - **NPC com a quest:** Valamir.
-- **Requisitos:** Ter completado a quest:  Minerar Sigmetal - 1/4 de Bravura, 3/4 de Idiotice!
-- **Gatilho:** Thorin recebe a missão quando fala com Valamir após completar a quest Ter completado a quest:  Minerar Sigmetal - 1/4 de Bravura, 3/4 de Idiotice!
- **Condição para concluir:** Conseguir que ao menos 5 armaduras sejam forjadas.
+- **Requisitos:** Ter completado a quest: Minerar Sigmetal - 1/4 de Bravura, 3/4 de Idiotice!
+- **Gatilho:** Thorin recebe a missão quando fala com Valamir após completar a quest: Minerar Sigmetal - 1/4 de Bravura, 3/4 de Idiotice!
+- **Condição para concluir:** Conseguir que ao menos 5 armaduras sejam forjadas.
 
 ## Estrutura Sistêmica
 
 - **Atores Envolvidos:**
-- - Valamir (NPC secundário)
+  - Valamir (NPC secundário)
   - Thorin (protagonista)
   - Mestre Ferreiro (NPC principal)
 - **Variáveis / Flags Alteradas:**

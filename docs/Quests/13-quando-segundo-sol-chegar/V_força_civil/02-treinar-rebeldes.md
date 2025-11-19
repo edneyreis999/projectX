@@ -17,7 +17,7 @@ Quest que aprofunda o tema dos rebeldes e mineradores como força política e mi
 - **NPC com a quest:** Filena.
 - **Requisitos:** Completar a quest "Resgatar Rebeldes e Borin - Turno Eterno".
 - **Gatilho:** Thorin recebe a missão depois de voltar de Kravens com ao menos um dos grupos resgatados.
- **Condição para concluir:** Interagir com os rebeldes e dar instruções.
+- Condição para concluir: Interagir com os rebeldes e dar instruções.
 
 ## Estrutura Sistêmica
 

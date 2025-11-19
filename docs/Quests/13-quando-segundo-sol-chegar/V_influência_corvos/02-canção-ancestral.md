@@ -15,9 +15,9 @@ Quest que aprofunda o relacionamento entre Thorin e Sáparo Boca-de-Corneta, sua
 ## Gatilhos
 
 - **NPC com a quest:** Corvinus.
-- **Requisitos:** Ter completado a quest: Canção Ancestral.
-- **Gatilho:** Thorin recebe a missão quando conversa com Corvinus na Sala do Conselho, após ter êxito na quest: Canção Ancestral.
- **Condição para concluir:** Decidir se usará ou não o Sáparo como isca.
+- **Requisitos:** Ter completado a quest: Resgatar Corvos.
+- **Gatilho:** Thorin recebe a missão quando conversa com Corvinus na Sala do Conselho, após ter êxito na quest: Resgatar Corvos.
+- **Condição para concluir:** Decidir se usará ou não o Sáparo como isca.
 
 ## Estrutura Sistêmica
 
@@ -30,7 +30,7 @@ Quest que aprofunda o relacionamento entre Thorin e Sáparo Boca-de-Corneta, sua
   
 ## Desfechos Possíveis
 
-- **Final A (Aceita):** Thorin treina Sáparo para correr em rota específica e gritar nos momentos certos.
+- **Final A (Aceita):** Thorin treina Sáparo para correr em rota específica, berrar nos momentos certos e servir de isca para atrair os Ignotos às armadilhas.
 - **Final B (Recusa):** Thorin protege Sáparo e não o coloca em risco.
 - **Final C (Ignora):** Jogador não completa a quest.
 
