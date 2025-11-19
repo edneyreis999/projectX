@@ -32,6 +32,9 @@ Quest que aprofunda a relação do time de futebol rúnico "Machados Enferrujado
 ## Desfechos Possíveis
 
 - **Final A (Treinamento Completo):** Thorin e Filena têm êxito em treinar o time rúnico.
+
+## Condição de Falha
+
 - **Final B (Ignora):** Jogador ignora a quest.
 
 ## Recompensas

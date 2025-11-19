@@ -36,6 +36,8 @@ Quest crucial que aprofunda o arco de Valamir e a descoberta do Sigmetal como ar
     - Dano do Civil: ×1.5
     - Dano dos Corvos: ×1.5
 
+## Condição de Falha
+
 - **Final B (Ignora/Não Tem Dinamite):** Câmara permanece selada — Exércitos lutam com armas convencionais, menos eficazes.
   
 ## Recompensas

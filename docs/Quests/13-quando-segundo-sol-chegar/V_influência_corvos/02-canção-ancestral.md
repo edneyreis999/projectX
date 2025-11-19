@@ -31,6 +31,9 @@ Quest que aprofunda o relacionamento entre Thorin e Sáparo Boca-de-Corneta, sua
 ## Desfechos Possíveis
 
 - **Final A (Aceita):** Thorin treina Sáparo para correr em rota específica, berrar nos momentos certos e servir de isca para atrair os Ignotos às armadilhas.
+
+## Condição de Falha
+
 - **Final B (Recusa):** Thorin protege Sáparo e não o coloca em risco.
 - **Final C (Ignora):** Jogador não completa a quest.
 

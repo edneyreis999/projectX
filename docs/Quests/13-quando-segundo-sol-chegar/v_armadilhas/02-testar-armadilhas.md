@@ -30,6 +30,9 @@ Quest que também faz parte do arco narrativo de Thorin e Valamir, logo após as
 ## Desfechos Possíveis
 
 - **Final A (Completa):** Thorin mapeia todos os 3 pontos de gargalo sugeridos por Valamir — que elogia a precisão do garoto.
+
+## Condição de Falha
+
 - **Final B (Ignora):** Jogador ignora a quest — Armadilhas não serão otimizadas para os pontos estratégicos.
 
 ## Recompensas

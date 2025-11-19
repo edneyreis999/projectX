@@ -34,6 +34,9 @@ Kilin pede a ajuda de Thorin para uma cerimônia que está planejando. Mhordred 
 ## Desfechos Possíveis
 
 - **Final A (Compra do presente):** Thorin encontra o presente perfeito e o entrega a Kilin. Mhordred fica feliz e aceita o novo cargo.
+
+## Condição de Falha
+
 - **Final B (Ignora):** Jogador decide não ajudar Kilin.
 
 ## Recompensas

@@ -33,6 +33,9 @@ Quest que aprofunda o papel de Thorin na Guarda de Ferro. A Guarda de Ferro prec
 ## Desfechos Possíveis
 
 - **Final A (Treinamento Completo):** Thorin e Mhordred treinam a Guarda em formações de cerco e contra-ataque — Sinergia perfeita.
+
+## Condição de Falha
+
 - **Final B (Ignora):** Guarda usa táticas padrão, menos eficaz contra Ignotos.
 
 ## Recompensas

@@ -32,6 +32,9 @@ Quest que aprofunda o tema dos rebeldes e mineradores como força política e mi
 ## Desfechos Possíveis
 
 - **Final A (Treinamento Completo):** Thorin e Filena tem êxito em treinar os rebeldes.
+
+## Condição de Falha
+
 - **Final B (Ignora):** Jogador ignora a quest.
 
 ## Recompensas

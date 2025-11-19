@@ -32,6 +32,9 @@ Quest crítica que aprofunda os arcos de Kilin, Mhordred Thorin. Kilin, agora de
 ## Desfechos Possíveis
 
 - **Final A (Thorin Completa o Ritual de Iniciação):** Thorin participa do trote e é reconhecido por Kilin, O Lorde Anão, como membro oficial da Guarda de Ferro.
+
+## Condição de Falha
+
 - **Final B (Ignora):** Jogador não participa do trote.
 
 ## Recompensas

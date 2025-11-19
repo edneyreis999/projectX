@@ -31,6 +31,9 @@ Thorin e Filena treinam os civis que aceitaram se juntar à causa em táticas an
 ## Desfechos Possíveis
 
 - **Final A (Resgate Completo):** Thorin tem êxito em recrutar civis.
+
+## Condição de Falha
+
 - **Final B (Ignora):** Jogador ignora a quest.
 
 ## Recompensas

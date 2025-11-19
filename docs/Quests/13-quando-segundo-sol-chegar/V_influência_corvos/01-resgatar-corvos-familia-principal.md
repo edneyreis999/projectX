@@ -31,6 +31,9 @@ Quest diplomática que aprofunda o arco dos Corvos como facção independente e 
 ## Desfechos Possíveis
 
 - **Final A (Negociação Bem-sucedida):** Thorin tem êxito no resgate e prova a Corvinus que não é como os outros anões da nobreza.
+
+## Condição de Falha
+
 - **Final B (Ignora):** Jogador ignora a quest e os Corvos não participam da defesa de Gildrat.
 
 ## Recompensas

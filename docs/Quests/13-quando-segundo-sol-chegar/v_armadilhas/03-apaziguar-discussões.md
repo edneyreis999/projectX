@@ -31,6 +31,9 @@ Quest que também faz parte do arco narrativo de Thorin e Valamir, logo após as
 ## Desfechos Possíveis
 
 - **Final A (Discussão Apaziguada):** Todos se acalmam e percebem que estão lutando pelo mesmo motivo, a sobrevivência do povo anão. Diferenças de casta não importam mais.
+
+## Condição de Falha
+
 - **Final B (Ignora):** Discussão cresce e se torna uma briga generalizada. Os anões estão mais divididos do que nunca.
 
 ## Recompensas

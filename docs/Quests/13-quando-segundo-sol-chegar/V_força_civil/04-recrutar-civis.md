@@ -31,6 +31,9 @@ Filena está preocupada de que o número de combatentes apenas com os rebeldes e
 ## Desfechos Possíveis
 
 - **Final A (Resgate Completo):** Thorin tem êxito em recrutar civis.
+
+## Condição de Falha
+
 - **Final B (Ignora):** Jogador ignora a quest.
   
 ## Recompensas

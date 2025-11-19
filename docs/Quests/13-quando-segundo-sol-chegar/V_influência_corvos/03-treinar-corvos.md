@@ -32,6 +32,9 @@ Quest avançada que fecha o arco de preparação militar da Corvos. Thorin e Fil
 ## Desfechos Possíveis
 
 - **Final A (Arsenal Completo):** Thorin e Filena treinam os corvos.
+
+## Condição de Falha
+
 - **Final B (Ignora):** Jogador não completa a quest.
 
 ## Recompensas

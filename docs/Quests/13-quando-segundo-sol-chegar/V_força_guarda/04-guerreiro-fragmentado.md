@@ -30,6 +30,9 @@ Thorin conversa com Kilin e percebe que ele já não é mais o mesmo. Sua respir
 ## Desfechos Possíveis
 
 - **Final A (Luta Bem-sucedida):** Thorin enfrenta Kilin.
+
+## Condição de Falha
+
 - **Final B (Ignora):** Jogador não aceita o duelo com Kilin.
 
 ## Recompensas
