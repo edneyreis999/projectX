@@ -33,6 +33,9 @@ Valamir, como inventor, criou dinamite mas precisa calibrar a potência ideal pa
 ## Desfechos Possíveis
 
 - **Final A (Sucesso Total):** Todos os 3 testes são bem-sucedidos — Balastrus calibra a dinamite perfeitamente.
+
+## Condição de Falha
+
 - **Final B (Ignora):** Jogador não realiza os testes — Dinamites não calibradas, menor eficácia contra os Ignotos.
 
 ## Recompensas
