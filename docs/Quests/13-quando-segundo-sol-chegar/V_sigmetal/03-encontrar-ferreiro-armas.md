@@ -1,45 +1,43 @@
-# Treinar Rebeldes para Combate Organizado
+# Encontrar Ferreiro Para Armas
 
 ## Identificação
 
-- **Tipo:** Reforço Exército Civil
-- **Dificuldade:** Difícil (Hard Core - requer v_forca_civil ≥ 70)
-- **Localização:** Gildrat (campo de treinamento improvisado)
+- **Tipo:** Reforço em Armaduras e Armas.
+- **Dificuldade:** Mediano.
+- **Localização:** Distrito Comercial.
+- **Nome Artístico:** O Bafo do Dragão (Apelido do ferreiro que fazia as melhores armas de Gildrat, até resolver se aposentar - Irmão do Leviatã de Armadura, a família deles remonta gerações de ferreiros).
+- **Desbloqueia ao Iniciar:** N/A.
 
 ## Contexto Narrativo
 
-Quest avançada que fecha o arco do Exército Civil e aprofunda as relações entre Filena, Mhordred e os rebeldes. Mineradores sabem lutar individualmente, mas não como exército organizado. Filena e Mhordred (se jogador completou quests anteriores) oferecem-se para treinar os rebeldes em táticas de grupo. Esta quest só é liberada para jogadores engajados, mostrando transformação completa de civis e rebeldes em força militar coordenada.
+Thorin precisa encontrar um mestre ferreiro que possa converter o Sigmetal em armas para ampliar o poder de batalha dos exércitos.
 
 ## Gatilhos
 
-- **Condições de início:** Ter v_forca_civil ≥ 70 (completado quase todas as quests do Civil)
-- **Requisitos:**
-  - `v_forca_civil ≥ 70`
-  - `flag_borin_resgatado = ON` OU `flag_rebeldes_resgatados = ON`
+- **NPC com a quest:** Valamir.
+- **Requisitos:** Ter completado a quest: Minerar Sigmetal - 1/4 de Bravura, 3/4 de Idiotice!
+- **Gatilho:** Falar com Valamir na Estrada do Cão-luar.
+- **Condição para concluir:**
+  - Falar com o Mestre Ferreiro no Distrito Comercial.
+  - Obter 1 arma de Sigmetal.
 
 ## Estrutura Sistêmica
 
 - **Atores Envolvidos:**
-  - Filena (instrutora principal)
-  - Mhordred (instrutor secundário)
-  - Thorin (coordenador)
-  - Borin (supervisor, se resgatado)
-  - Rebeldes (trainees)
+  - Valamir (NPC secundário)
+  - Thorin (protagonista)
+  - Mestre Ferreiro (NPC principal)
 - **Variáveis / Flags Alteradas:**
-  - `v_forca_civil`
-  - `flag_rebeldes_treinados` (switch)
-- **Consequências:**
-  - Rebeldes aprendem formações militares
-  - Filena e rebeldes criam vínculo (arco dela se desenvolve)
-  - Exército Civil atinge máxima eficiência
+  - `v_reforco_sigmetal`
 
 ## Desfechos Possíveis
 
-- **Final A (Filena E Mhordred Treinam):** Dupla de instrutores cria programa de treinamento completo — Rebeldes viram soldados disciplinados (`v_forca_civil + 10`, `flag_rebeldes_treinados = ON`)
-- **Final B (Não Liberada):** Quest não aparece se jogador não atingiu 70 pontos
+- **Final A (Armas Forjadas):** Thorin consegue convencer o mestre ferreiro a forjar as armas.
+
+## Condição de Falha
+
+- **Final B (Ignora):** Jogador ignora a quest.
 
 ## Recompensas
 
-- **v_forca_civil:** +10 pontos (10% do total de 100) - **Completa os 100%**
-- **Narrativa:** Cena de Filena liderando rebeldes em exercício, Borin observando com orgulho
-- **Reconhecimento:** Rebeldes passam a chamar Filena de "Comandante"
+- **v_reforco_sigmetal:** +50 pontos (do total de 100)

@@ -1,10 +1,12 @@
-# Caçadores Caçados
+# Treinando a Guarda de Ferro
 
 ## Identificação
 
-- **Tipo:** Reforço no Exército Guarda de Ferro.
-- **Dificuldade:** Média.
-- **Localização:** Gildrat (campo de treinamento).
+- **Tipo:** Reforço na Habilidade da Guarda de Ferro.
+- **Dificuldade:** Fácil.
+- **Localização:** Campo de Treinamento.
+- **Nome Artístico:** Caçadores Caçados.
+- **Desbloqueia ao Iniciar:** N/A.
 
 ## Contexto Narrativo
 
@@ -13,10 +15,11 @@ Quest que aprofunda o papel de Thorin na Guarda de Ferro. A Guarda de Ferro prec
 ## Gatilhos
 
 - **NPC com a quest:** Mhordred.
-- **Requisitos:** Nenhum.
-   **Gatilho:** Thorin pode falar com Mhordred a qualquer momento enquanto o jogador realiza as outras mini-quests. Ele parece abatido e confessa ao garoto que não sabe mais o que fazer. O peso da liderança da Guarda de Ferro naquele momento lhe parece mais do que pode aguentar. Thorin o anima a não desistir e o convence a tentar novamente. Ele ainda diz que, apesar de não ser um grande guerreiro, pode ajudar o amigo a se comunicar de forma mais apropriada com os outros soldados.
-
-   (Nota do roteirista: Imagino o que no meio do discurso de Thorin, ele comece a cantar: "Vamos a batalha, guerrear, vencer! Derrotar os Ignotos, é o que vai valer - Estilo capitão Chang no filme da Mulan kkkk <https://www.youtube.com/watch?v=RYd-vhiXCNE>).
+- **Requisitos:** N/A.
+ - **Gatilho:** Falar com Mhordred no Campo de Treinamento.
+ - **Condição para concluir:**
+   - Falar com 3 soldados no Campo de Treinamento (discurso).
+   - Falar com Mhordred após o discurso.
 
 ## Estrutura Sistêmica
 
@@ -26,20 +29,16 @@ Quest que aprofunda o papel de Thorin na Guarda de Ferro. A Guarda de Ferro prec
   - Mhordred (co-instrutor)
 - **Variáveis / Flags Alteradas:**
   - `v_forca_guarda`
-  - `aquele_destinado_liderar` (influencia de Thorin sobre todos os exércitos de Gildrat)
-  
-- **Consequências:**
-  - Guarda aprende táticas anti-Ignoto.
-  - Adniração de Mhordred por Thorin cresce.
-  - Influência de Thorin como líder cresce.
 
 ## Desfechos Possíveis
 
-- **Final A (com Kilin):** Thorin e Mhordred treinam a Guarda em formações de cerco e contra-ataque — Sinergia perfeita.
+- **Final A (Treinamento Completo):** Thorin e Mhordred treinam a Guarda em formações de cerco e contra-ataque — Sinergia perfeita.
+
+## Condição de Falha
+
 - **Final B (Ignora):** Guarda usa táticas padrão, menos eficaz contra Ignotos.
 
 ## Recompensas
 
-- **v_forca_guarda:** +20-25 pontos (do total de 100).
-- **v_aquele_destinado_liderar:** +25 pontos (do total de 100).
+- **v_forca_guarda:** +30 pontos (do total de 100).
 - **Narrativa:** Cena de Thorin ensinando e sendo reconhecido como líder nato.
