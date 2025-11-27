@@ -1,194 +1,147 @@
-# Atividades Quando segundo sol chegar
+﻿# NSD - Quando o Segundo Sol Chegar (Fluxo Visual de Quests)
 
-Quests que o jogador pode fazer para ajudar nos preparativos da defesa de Gildrat.
+## O Troféu Quebrado (Tordan - Quest de Prelúdio)
 
-## Destino Sigmetal
+- Thorin, Mhordred, Filena e Valamir retornam da Quest: "Quebra do selo em Mélios", que se encerra logo após a discussão do conselho onde Valamir é absolvido das acusações e Thorin desafia o pai para se tornar membro da Guarda de Ferro.
 
-## Mini-quests em Gildrat
+- Tordan deixa a corte logo depois e vai para casa. Antes de sair, entretanto, ele diz a Thorin que deseja falar com ele. Isso encerra a quest anterior: "Quebra do Selo em Mélios", e dá início a quest: "Troféu Quebrado". Thorin encontra Tordan na cozinha de sua casa, o mesmo local onde a primeira discussão entre os dois aconteceu, ainda no início do jogo. Um de seus troféus de futebol rúnico está sobre a mesa, seu pai encara o objeto em silêncio. Thorin pode se aproximar e iniciar a conversa. Quando isso acontece, Tordan confessa o real motivo de seu ódio: "Mélia... ela adorava ver você jogar. Ela adorava esse jogo estúpido ainda mais do que eu. E no fim... ela amou mais a liberdade dela do que a nós." Ele revela que, após ela partir, ele não conseguia mais olhar para o campo e para o jogo, ou para Thorin, sem sentir a dor do abandono dela.
 
-### Ajudar na Forja**
+- O Jogador tem multipla escolha: Se Thorin for acusatório ("E você me culpou por isso.") - Tordan responde sem raiva: "Eu entendo que esteja com raiva de mim. Você tem os olhos dela e também o mesmo temperamento. Não deixe que o mundo quebre você... como me quebrou, filho. Isto é para você". Tordan entrega a Thorin um pequeno baú com sua velha funda dentro, feita com pele especial de um Lobo de Gelo, caçado por ele mesmo. Ele explica que em sua juventude, essa também era sua arma preferida.
 
-- **Beats Narrativos:**
-    1. Thorin passa pelo distrito das forjas e vê ferreiros sobrecarregados.
-    2. Um mestre-ferreiro (NPC genérico) reclama da falta de braços para operar os foles.
-    3. O jogador participa de um mini-game rítmico simples para operar os foles.
-    4. Com o fogo mais forte, os ferreiros conseguem forjar um lote extra de armas e armaduras.
-    5. O mestre-ferreiro agradece e comenta que, se tivessem Sigmetal, o resultado poderia ser mais eficaz.
-- **Custos/Requisitos:** Baixo. Reutiliza a área das forjas de Gildrat e NPCs de ferreiros. O mini-game pode ser uma simples sequência de botões.
-- **Efeitos em Variáveis:**
-  - `v_preparo_militar` **+1** (Pelas pontas de flecha extras)
-  - `v_moral_gildrat` **+1** (Por ajudar no esforço de guerra)
-- **Convergência:** A atividade é autocontida. O diálogo do ferreiro serve como dica para a importância do Sigmetal.
-- **Teaser:** "Cada lâmina conta. Mas contra o que estamos lutando? Nem os generais parecem saber."
+- Se Thorin escolher ser empático, seu pai o chama para seus aposentos pessoais, um local que o garoto raramente visita. O quarto é austero, militar, exceto por um pequeno baú trancado e uma foto de sua mãe na parede. Seu pai o encara: "Eu rejeitei seu caminho. Eu tentei forçá-lo a ser o que eu queria. Hoje reconheço o erro que cometi". Ele abre o baú. Lá dentro está uma Funda (Sling) belíssima e elaborada, feita com pele de Lobo de Gelo.
 
-### Acalmar os Civis na Praça**
+- Descrição do Item: Não é uma funda de criança. Ela é tecida com tiras de couro e trançada com os fios de metal. O berço da funda, onde pedras se encaixam, é forrado com um pequeno pedaço de seda azul-claro, a cor do vestido favorito de Mélia.Tordan entrega a funda a Thorin. "Sua mãe a teceu. Que ela proteja o que restou da minha família".
 
-- **Beats Narrativos:**
-    1. Na praça central, um grupo de civis está aglomerado em pânico, espalhando rumores.
-    2. Um guarda (NPC genérico) tenta acalmá-los, sem sucesso.
-    3. Thorin pode intervir. O jogador escolhe uma abordagem de diálogo:
-        - **Honesta:** "A situação é séria, mas a Guarda de Ferro está se preparando."
-        - **Inspiradora:** "Somos anões! Já enfrentamos coisa pior nas profundezas!"
-        - **Pragmática:** "Pânico só vai atrapalhar. Voltem para suas casas e tranquem as portas."
-    4. Dependendo da escolha, o grupo se dispersa mais ou menos calmo.
-- **Custos/Requisitos:** Mínimo. Apenas diálogos e NPCs genéricos na praça de Gildrat.
-- **Efeitos em Variáveis:**
-  - Escolha Inspiradora: `v_moral_gildrat` **+2**
-  - Escolha Honesta: `v_moral_gildrat` **+1**
-  - Escolha Pragmática: `v_moral_gildrat` **-1** (aumenta o medo, mas a praça fica livre)
-- **Convergência:** A cena termina com o guarda agradecendo Thorin. O estado da `v_moral_gildrat` influenciará eventos posteriores.
-- **Teaser:** "É o caos. Se não confiarem nos guardas, em quem vão confiar?"
+- Tordan, em seguida, leva Thorin até um espaço de treinamento que fica dentro do vestiário, no estádio dos Machados Enferrujados, onde pequenos alvos estão espalhados. Ele ensina o filho a atirar com mais precisão e força, além de entregar alguns minérios com aparência rudimentar. "Isso é resultado do tempo da minha aliança com Valamir, você sabe... antes dele trair a todos nós. Atire, você vai gostar".
 
-### Patrulha com a Guarda**
+- Enquanto estiver usando essa munição, os ataques de Thorin causam dano extra baseado no atributo escolhido (munição pode ser explosiva, bomba de fumaça, veneno entre outros).
 
-- **Beats Narrativos:**
-    1. Thorin encontra um pequeno esquadrão de guardas se preparando para uma patrulha no Distrito Residencial.
-    2. O líder da patrulha (NPC genérico) está nervoso. Ele menciona que é a primeira patrulha dele desde que "as sombras foram vistas em Melios".
-    3. Thorin pode se oferecer para acompanhá-los.
-    4. A patrulha é uma curta caminhada com diálogos sobre o medo e o dever.
-    5. Um barulho suspeito leva a um beco, mas é apenas um um civil assustado. A forma como Thorin reage (com calma ou agressividade) afeta o jovem líder.
-- **Custos/Requisitos:** Baixo. Reutiliza o mapa do Distrito Residencial e NPCs de guardas.
-- **Efeitos em Variáveis:**
-  - Escolha calma: `v_preparo_militar` **+1** (A patrulha bem-sucedida aumenta a segurança percebida)
-  - Escolha ?: `v_...`
-  - Escolha ?: `v_...`
-- **Convergência:** A patrulha termina e os guardas retornam ao seu posto, mais confiantes.
-- **Teaser:** "O medo é o verdadeiro inimigo. Ele se esconde em cada sombra."
+- Após a escolha do caminho pelo jogador, a quest: "Troféu Quebrado" se encerra. Tordan pede que o filho tome cuidado, o manda sair em patrulha - e A quest "Quando o Segundo Sol Chegar" - (com todas as suas mini-quests) é iniciada!
 
-## Resgate em Melios
+## Resumo Geral (Checkpoint 0)
 
-Nota de brainstorm:
+- Importância: Hub sistêmico de preparação para a defesa de Gildrat após "Quebra do Selo em Melios".
+- Escopo: 19 quests distribuídas em 5 variáveis principais; escala 0-100 com Lei de Pareto (versão 2.0 do índice - 2025-11-04).
+- Objetivo: permitir ao jogador fortalecer armadilhas, Guarda de Ferro, exército civil, influência dos Corvos e reforço com Sigmetal antes da batalha final.
+- Resultado: cada variável pode chegar a 100 pontos; Sigmetal atua como multiplicador global de dano (+50% em 100).
 
-Como pode ser a dinamica dessa missão? Em qual missão de qual jogo posso me inspirar?
+## Variáveis e Totais
 
-O jogador já passou pela Mina de Melios uma vez na [Cena 10](../../GDD/3-historia/timeline-historia-jogo-v5.md#10---quebra-do-selo-em-melios-a-liberação-dos-ignotos).
-Thorin discute com o pai e o concelho para ir nessa missão [Cena 11](../../GDD/3-historia/timeline-historia-jogo-v5.md#11---gildrat-em-alarme-escolhas-e-consequências).
-Um pouco mais de detalhes:
-[Cena 12](../../GDD/3-historia/timeline-historia-jogo-v5.md#12---melios-resgate-e-o-eco-do-selo)
+| Variável | Função | Quests | Pontuação Máxima |
+| --- | --- | --- | --- |
+| v_pontos_armadilhas | Reduz grupos de inimigos na Fase 1 | 3 | 100 |
+| v_forca_guarda | Dano/impacto da Guarda de Ferro | 5 | 100 |
+| v_forca_civil | Dano/impacto de rebeldes + civis + time rúnico | 5 | 100 |
+| v_influencia_corvos | Dano/impacto dos Corvos | 3 | 100 |
+| v_reforco_sigmetal | Multiplicador global de dano (0→+50%) | 3 | 100 |
 
- Tem 2 personagens para resgarar:
+## Quests por Variável (conforme 00-indice-quests)
 
-- Kilin
-- Balastrus
+### Armadilhas → v_pontos_armadilhas
 
-Eu queria algo que não fosse tão simples salvar os 3. Mas ao mesmo tempo, tem as limitações do RPG Maker.
-Talvez deixar escondido durante a narrativa um "truque" que se o jogador usar ele consegue resgatar os 3. Nesse caso, precisariamos dar várias dicas durante a missão de qual é esse truque que o jogador pode usar para salvar os 3.
-Caso contratio ele salva 1 ou 2 personagens só.
+| # | Quest | Dificuldade | Localização | Pontos | Requisitos |
+| --- | --- | --- | --- | --- | --- |
+| 01 | Testar Dinamite | Fácil | Estrada do Cão-luar | +50 | N/A |
+| 02 | Testar Armadilhas | Fácil | Estrada do Cão-luar | +25 | N/A |
+| 03 | Apaziguar Discussões | Fácil | Distrito Comercial | +25 | N/A |
 
-## Conexão com Thordan
+### Guarda de Ferro → v_forca_guarda
 
-### O Troféu Quebrado**
+| # | Quest | Dificuldade | Localização | Pontos | Requisitos |
+| --- | --- | --- | --- | --- | --- |
+| 01 | Treinando a Guarda de Ferro | Fácil | Campo de Treinamento | +30 | N/A |
+| 02 | Resgatando Kilin | Difícil | Campo de Treinamento | +30 | Ter completado "Treinando a Guarda de Ferro" |
+| 03 | Boas-vindas à Guarda de Ferro | Fácil | Taverna da Pedra Vulcânica | +10 | Ter completado "Resgatando Kilin" |
+| 04 | Guerreiro Fragmentado | Fácil | Campo de Treinamento | +15 | Ter completado "Resgatando Kilin" e "Boas-vindas à Guarda de Ferro" |
+| 05 | O Novo Lorde Anão | Fácil | Taverna da Pedra Vulcânica | +15 | Ter completado "Resgatando Kilin" |
 
-- **Beats Narrativos:**
-    1. Thorin encontra Tordan na cozinha, o mesmo local da discussão na Cena 3.
-    2. O antigo troféu de futebol rúnico de Tordan está sobre a mesa, e ele o encara em silêncio.
-    3. Thorin pode iniciar uma conversa sobre o passado.
-    4. A conversa pode levar a uma confissão rara de Tordan sobre por que ele abandonou o esporte pela pressão de seu próprio pai.
-    5. O resultado depende da empatia de Thorin.
-- **Custos/Requisitos:** Mínimo. Reutiliza a cozinha da Casa Forja-Prata.
-- **Efeitos em Variáveis:**
-  - Se Thorin for empático: `v_boa_vontade_thordan` **+2**, `v_empatia_filena` **+1** (se Thorin mencionar Filena e o esporte)
-  - Se Thorin for acusatório: `v_boa_vontade_thordan` **-1**
-- **Convergência:** Um momento raro de conexão (ou mais atrito) entre pai e filho.
-- **Teaser:** Tordan: "Houve um tempo em que tudo que importava era o próximo gol. O mundo era mais simples."
+### Exército Civil → v_forca_civil
 
-## Conexão com Filena
+| # | Quest | Dificuldade | Localização | Pontos | Requisitos |
+| --- | --- | --- | --- | --- | --- |
+| 01 | Resgatar Rebeldes e Borin em Kravens | Média | Casa da Filena | +30 | N/A |
+| 02 | Resgatar Grupos de Rebeldes em Kravens | Fácil | Campo de Treinamento | +20 | Ter completado "Resgatar Rebeldes e Borin em Kravens" |
+| 03 | Treinar Time Rúnico | Fácil | Campo de Treinamento | +15 | N/A |
+| 04 | Recrutar Civis | Fácil | Campo de Treinamento | +20 | N/A |
+| 05 | Treinar Civis | Fácil | Campo de Treinamento | +15 | Ter completado "Recrutar Civis" |
 
-### Recrutando os Batedores**
+### Corvos → v_influencia_corvos
 
-- **Beats Narrativos:**
-    1. Thorin encontra Filena perto do Estádio dos Machados Enferrujados.
-    2. Ela teve a ideia de usar a agilidade e coordenação do time de futebol para criar uma unidade de batedores.
-    3. Ela pede a Thorin para ajudá-la a convencer 3 ex-jogadores (NPCs genéricos em diferentes partes da cidade).
-    4. Cada "recrutamento" é um pequeno desafio de diálogo. Um tem medo, outro acha a ideia ridícula, o terceiro aceita na hora.
-    5. Uma vez reunidos, Filena os condiz para o campo de treinamento dos rebeldes.
-- **Custos/Requisitos:** Baixo. Apenas diálogos e movimentação pela cidade.
-- **Efeitos em Variáveis:**
-  - `v_folego_time_runico` = **+1** (Reunido)
-  - `v_empatia_filena` **+2**
-  - `v_preparo_militar` **+1** (Uma nova unidade de suporte está disponível)
-- **Convergência:** O time está pronto e aparecerá como NPCs aliados em certas partes da defesa de Gildrat.
-- **Teaser:** Filena: "Eles não são soldados. Mas sabem como se esquivar e correr. Às vezes, isso é o suficiente."
+| # | Quest | Dificuldade | Localização | Pontos | Requisitos |
+| --- | --- | --- | --- | --- | --- |
+| 01 | Resgatar Corvos e Família Principal | Difícil | Sala do Conselho | +35 | N/A |
+| 02 | Canção Ancestral | Mediana | Sala do Conselho | +35 | Ter completado "Resgatar Corvos e Família Principal" |
+| 03 | Treinar Corvos | Mediana | Sala do Conselho | +30 | Ter completado "Canção Ancestral" |
 
-### A Jogada Ensaiada**
+### Sigmetal → v_reforco_sigmetal
 
-- **Beats Narrativos:**
-    1. Filena está preocupada com a falta de poder de fogo de Thorin.
-    2. Ela o leva para um campo de futebol runico.
-    3. "Lembre-se da semifinal? Vamos treinar uma nova versão daquela jogada."
-    4. Ela ensina a Thorin uma nova habilidade de combate que combina o disparo rúnico dele com um movimento de flanqueio dela (uma habilidade de dupla).
-    5. O jogador pratica a habilidade em alguns alvos de treinamento.
-- **Custos/Requisitos:** Médio. Requer a implementação de uma nova habilidade de combate.
-- **Efeitos em Variáveis:**
-  - `v_empatia_filena` **+2**
-  - **Desbloqueia a habilidade "Disparo em Tabela".**
-- **Convergência:** A habilidade fica permanentemente disponível para o jogador quando Filena está na party.
-- **Teaser:** Filena: "Na guerra, assim como no campo, você precisa confiar no seu parceiro."
+| # | Quest | Dificuldade | Localização | Pontos Sigmetal | Requisitos |
+| --- | --- | --- | --- | --- | --- |
+| 01 | Coletar Sigmetal na Câmera Revelada | Difícil | Estrada do Cão-luar | 0 (desbloqueio) | N/A |
+| 02 | Encontrar Ferreiro Para Armaduras | Mediano | Distrito Comercial | +50 | Ter completado "Coletar Sigmetal na Câmera Revelada" |
+| 03 | Encontrar Ferreiro Para Armas | Mediano | Distrito Comercial | +50 | Ter completado "Coletar Sigmetal na Câmera Revelada" |
 
-### O Uniforme da Sorte**
+## Fluxo de Progressão Recomendado
 
-- **Beats Narrativos:**
-    1. Filena está triste, olhando para o estádio vazio. Ela fala sobre a importância cultural do time.
-    2. Ela sugere que, para levantar a moral, eles deveriam criar "uniformes de batalha" para o time de batedores.
-    3. A quest envolve coletar materiais simples de diferentes lojas (reutilizadas) em Gildrat: tecido resistente de um alfaiate, pigmento azul de um alquimista.
-    4. Com os materiais, eles criam os uniformes (cutscene).
-    5. Ver o time uniformizado aumenta a moral de todos.
-- **Custos/Requisitos:** Baixo. Uma "fetch quest" simples. Pode gerar uma skin alternativa para os NPCs do time.
-- **Efeitos em Variáveis:**
-  - `v_folego_time_runico` = **3** (Equipado)
-  - `v_moral_gildrat` **+1**
-  - `v_empatia_filena` **+1**
-- **Convergência:** O time agora tem uma aparência distinta, reforçando visualmente a escolha do jogador.
-- **Teaser:** Um dos jogadores: "Se vamos morrer, pelo menos vamos morrer com as cores do nosso time."
+### Fase 1 – Preparo inicial (sem requisitos)
 
-Notas de brainstorm:
-Falta uma missão para Trinar o time de futebol runico e/ou rebeldes.
+- Testar Dinamite; Testar Armadilhas; Apaziguar Discussões.
+- Resgatar Rebeldes e Borin em Kravens; Treinar Time Rúnico; Recrutar Civis.
+- Treinando a Guarda de Ferro.
+- Resgatar Corvos e Família Principal.
+- Coletar Sigmetal na Câmera Revelada.
+- Pontos estimados: 230 (sem Sigmetal escalar).
 
-## Impacto Sigmetal destino
+### Fase 2 – Cadeia de primeira camada
 
-**Manifestação para `v_sigmetal_destino = 0` (Guardado para Si)**
+- Resgatar Grupos de Rebeldes em Kravens; Treinar Civis.
+- Resgatando Kilin.
+- Canção Ancestral.
+- Encontrar Ferreiro Para Armaduras; Encontrar Ferreiro Para Armas.
+- Pontos estimados: 200.
 
-- **Evento:** O jogador tem o Sigmetal em seu inventário desde o início da Fase 1.
-- **Descrição:** Ele pode levar o metal a um ferreiro no centro de Gildrat para criar uma **Munição de Sigmetal personalizada**.
-- **Custos/Requisitos:** Médio. Requer um novo item de arma.
-- **Efeitos:** `v_preparo_militar` **+1**. O jogador ganha uma munição poderosa.
+### Fase 3 – Cadeias longas / payoff
 
-**Manifestação para `v_sigmetal_destino = 1` (Entregue a Balastrus)**
+- Boas-vindas à Guarda de Ferro; O Novo Lorde Anão; Guerreiro Fragmentado.
+- Treinar Corvos.
+- Pontos estimados: 70.
 
-Notas de brainstorm:
-O Sigmetal com Balastrus pode ajudar de alguma forma a salvar Balastrus e Kilin
-E quando o jogador terminar o resgate, Balastrus entrega a Thorin um **"Protetor de Braço de Sigmetal"**.
+## Distribuição por Localização
 
-**Manifestação para `v_sigmetal_destino = 2` (Entregue a Tusk)**
-Notas de brainstorm:
-Ainda não sei o que fazer. Ajudar de alguma forma no resgate de Melios se Tusk estiver no grupo?
+- Estrada do Cão-luar: Testar Dinamite; Testar Armadilhas; Coletar Sigmetal na Câmera Revelada.
+- Distrito Comercial: Apaziguar Discussões; Encontrar Ferreiro Para Armaduras; Encontrar Ferreiro Para Armas.
+- Casa da Filena: Resgatar Rebeldes e Borin em Kravens.
+- Campo de Treinamento: Resgatar Grupos de Rebeldes em Kravens; Treinar Time Rúnico; Recrutar Civis; Treinar Civis; Treinando a Guarda de Ferro; Resgatando Kilin; Guerreiro Fragmentado.
+- Taverna da Pedra Vulcânica: Boas-vindas à Guarda de Ferro; O Novo Lorde Anão.
+- Sala do Conselho: Resgatar Corvos e Família Principal; Canção Ancestral; Treinar Corvos.
 
-**Manifestação para `v_sigmetal_destino = 3` (Guardado no Baú)**
-Notas de brainstorm:
-Ainda não sei o que fazer.
+## Escalas e Fórmulas de Referência
 
-## Envolvimento dos Corvos
+- Grupos de inimigos (v_pontos_armadilhas):
+  - 0–30 → 7 grupos; 31–60 → 6; 61–80 → 5; 81–100 → 4.
 
-### A Oferta Secreta**
+- Dano por exército (Guarda/Civil/Corvos):
+  
+function calcularDano(idVarForca) {
+  const BASE = 1667;
+  const forca = $gameVariables.value(idVarForca);
+  const sigmetal = $gameVariables.value(5); // 0-100 escalar
+  const multForca = 1 + (forca / 100);
+  const multSigmetal = 1 + (sigmetal / 100) *0.5;
+  return Math.floor(BASE* multForca * multSigmetal);
+}
 
-- **Beats Narrativos:**
-    1. Um NPC encapuzado (um Corvo) aborda Thorin em um beco.
-    2. Ele se apresenta como um mensageiro dos Corvos. Ele diz: "Nós também ouvimos a canção do fim. A Guarda de Ferro não pode vencer sozinha."
+- Multiplicador Sigmetal:
+  
+```javascript
+mult_sigmetal = 1 + (v_reforco_sigmetal / 100) * 0.5;
+```
 
-Notas de brainstorm:
-A partir daqui eu não sei o que fazer. sei que se o Thorin fizer alguma coisa que o Corvo pedir, ele ganha v_influencia_corvos
+## Navegação para as Subquests
 
-### A Canção Ancestral**
-
-- **Beats Narrativos:**
-    1. Se o jogador ajudou os Corvos, o mensageiro retorna.
-    2. "Você nos respeitou. Agora, ouça."
-    3. Ele ensina ao Sáparo-Boca-de-Corneta uma "canção" ancestral — na verdade, uma frequência sônica que desorienta os Ignotos.
-    4. Isso se traduz em uma nova habilidade de "debuff" para o Sáparo, que ele pode usar em área.
-- **Custos/Requisitos:** Médio. Requer a implementação de uma nova habilidade.
-- **Efeitos em Variáveis:**
-  - `v_influencia_corvos` **+2**
-  - **Desbloqueia a habilidade "Canção do Desvanecer".**
-- **Convergência:** A habilidade dá ao jogador uma nova ferramenta tática para a batalha final.
-- **Teaser:** O Corvo: "Eles vieram da dissonância. Devolva-os a ela."
-- **pré-requisito:**  **Sáparo-Boca-de-Corneta** no grupo.
+- Armadilhas: `docs/Quests/13-quando-segundo-sol-chegar/v_armadilhas`.
+- Guarda de Ferro: `docs/Quests/13-quando-segundo-sol-chegar/V_força_guarda`.
+- Exército Civil: `docs/Quests/13-quando-segundo-sol-chegar/V_força_civil`.
+- Corvos: `docs/Quests/13-quando-segundo-sol-chegar/V_influência_corvos`.
+- Sigmetal: `docs/Quests/13-quando-segundo-sol-chegar/V_sigmetal`.
+- Índice-mestre: `docs/Quests/13-quando-segundo-sol-chegar/00-indice-quests.md`.
