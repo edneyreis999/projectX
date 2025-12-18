@@ -1196,7 +1196,7 @@
                   "StartOffsetX:eval": "-200",
                   "StartOffsetY:eval": "+0",
                   "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto",
+                  "HorzMirror:str": "Auto-Reverse",
                   "Duration:eval": "20"
                 }
               ]
@@ -1208,7 +1208,7 @@
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
             { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
@@ -1263,7 +1263,7 @@
                   "StartOffsetX:eval": "-200",
                   "StartOffsetY:eval": "+0",
                   "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto",
+                  "HorzMirror:str": "Auto-Reverse",
                   "Duration:eval": "20"
                 }
               ]
@@ -1275,7 +1275,7 @@
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
             { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
@@ -1337,7 +1337,7 @@
                   "StartOffsetX:eval": "-200",
                   "StartOffsetY:eval": "+0",
                   "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto",
+                  "HorzMirror:str": "Auto-Reverse",
                   "Duration:eval": "20"
                 }
               ]
@@ -1349,7 +1349,7 @@
             { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
             { "code": 657, "indent": 1, "parameters": ["Start Offset Y = +0"] },
             { "code": 657, "indent": 1, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto"] },
+            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 1, "parameters": [43, 43, 0] },
             { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
@@ -1359,29 +1359,51 @@
               "indent": 1,
               "parameters": [
                 "VisuMZ_2_VNPictureBusts",
+                "Move_MoveToPosition",
+                "MOVE: Move Bust(s) to Position",
+                { "PictureID:arrayeval": "[\"1\"]", "TargetPosition:eval": "8", "EasingType:str": "InOutSine", "FlipDirection:str": "Flip", "Duration:eval": "20" }
+              ]
+            },
+            { "code": 657, "indent": 1, "parameters": ["Picture ID(s) = [\"1\"]"] },
+            { "code": 657, "indent": 1, "parameters": ["Target Position = 8"] },
+            { "code": 657, "indent": 1, "parameters": ["Move Easing = InOutSine"] },
+            { "code": 657, "indent": 1, "parameters": ["Flip Direction = Flip"] },
+            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
+            {
+              "code": 357,
+              "indent": 1,
+              "parameters": ["VisuMZ_2_VNPictureBusts", "Basic_MirrorBust", "BASIC: Mirror Bust(s)", { "PictureID:arrayeval": "[\"1\"]", "HorzMirror:str": "Auto-Reverse" }]
+            },
+            { "code": 657, "indent": 1, "parameters": ["Picture ID(s) = [\"1\"]"] },
+            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            {
+              "code": 357,
+              "indent": 1,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
                 "Basic_EnterBust",
                 "BASIC: Enter Bust",
                 {
                   "PictureID:eval": "2",
-                  "PictureName:str": "Portraits/Principal/Thorin_colorido",
+                  "PictureName:str": "Portraits/Principal/CriancaOrc_",
                   "Origin:str": "Bust",
-                  "Position:num": "7",
+                  "Position:num": "2",
                   "StartOffsetX:eval": "-200",
                   "StartOffsetY:eval": "+0",
                   "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
+                  "HorzMirror:str": "Auto",
                   "Duration:eval": "20"
                 }
               ]
             },
             { "code": 657, "indent": 1, "parameters": ["Picture ID = 2"] },
-            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Thorin_colorido"] },
+            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/CriancaOrc_"] },
             { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 1, "parameters": ["Screen Position = 7"] },
+            { "code": 657, "indent": 1, "parameters": ["Screen Position = 2"] },
             { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
             { "code": 657, "indent": 1, "parameters": ["Start Offset Y = +0"] },
             { "code": 657, "indent": 1, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto"] },
             { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 1, "parameters": [44, 44, 0] },
             { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
@@ -1425,7 +1447,7 @@
                 "BASIC: Enter Bust",
                 {
                   "PictureID:eval": "2",
-                  "PictureName:str": "Portraits/Principal/Thorin_colorido",
+                  "PictureName:str": "Portraits/Principal/CriancaOrc_",
                   "Origin:str": "Bust",
                   "Position:num": "5",
                   "StartOffsetX:eval": "-200",
@@ -1437,7 +1459,7 @@
               ]
             },
             { "code": 657, "indent": 1, "parameters": ["Picture ID = 2"] },
-            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Thorin_colorido"] },
+            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/CriancaOrc_"] },
             { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
             { "code": 657, "indent": 1, "parameters": ["Screen Position = 5"] },
             { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
@@ -1558,7 +1580,7 @@
                   "StartOffsetX:eval": "-200",
                   "StartOffsetY:eval": "+0",
                   "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto",
+                  "HorzMirror:str": "Auto-Reverse",
                   "Duration:eval": "20"
                 }
               ]
@@ -1570,7 +1592,7 @@
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
             { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
