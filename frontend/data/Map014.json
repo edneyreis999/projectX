@@ -128,7 +128,7 @@
             { "code": 505, "indent": 0, "parameters": [{ "code": 37 }] },
             { "code": 205, "indent": 0, "parameters": [-1, { "repeat": false, "skippable": true, "wait": true, "list": [{ "code": 12 }, { "code": 0 }] }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 12 }] },
-            { "code": 201, "indent": 0, "parameters": [0, 10, 9, 20, 0, 0] },
+            { "code": 201, "indent": 0, "parameters": [0, 10, 12, 22, 0, 0] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -292,22 +292,22 @@
               "code": 205,
               "indent": 1,
               "parameters": [
-                -1,
-                { "list": [{ "code": 45, "parameters": ["Move to: 7,6"], "indent": null }, { "code": 18, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }
+                2,
+                { "list": [{ "code": 45, "parameters": ["Move to: 10,6"], "indent": null }, { "code": 25, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
               ]
             },
-            { "code": 505, "indent": 1, "parameters": [{ "code": 45, "parameters": ["Move to: 7,6"], "indent": null }] },
-            { "code": 505, "indent": 1, "parameters": [{ "code": 18, "indent": null }] },
+            { "code": 505, "indent": 1, "parameters": [{ "code": 45, "parameters": ["Move to: 10,6"], "indent": null }] },
+            { "code": 505, "indent": 1, "parameters": [{ "code": 25, "indent": null }] },
             {
               "code": 205,
               "indent": 1,
               "parameters": [
-                2,
-                { "list": [{ "code": 45, "parameters": ["Move to: 9,6"], "indent": null }, { "code": 25, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }
+                -1,
+                { "list": [{ "code": 45, "parameters": ["Move to: 12,4"], "indent": null }, { "code": 18, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }
               ]
             },
-            { "code": 505, "indent": 1, "parameters": [{ "code": 45, "parameters": ["Move to: 9,6"], "indent": null }] },
-            { "code": 505, "indent": 1, "parameters": [{ "code": 25, "indent": null }] },
+            { "code": 505, "indent": 1, "parameters": [{ "code": 45, "parameters": ["Move to: 12,4"], "indent": null }] },
+            { "code": 505, "indent": 1, "parameters": [{ "code": 18, "indent": null }] },
             { "code": 101, "indent": 1, "parameters": ["Portraits menores/Principal2", 4, 0, 2, "Dragobur"] },
             { "code": 401, "indent": 1, "parameters": ["Eu tenho que reconhecer, você nunca decepciona!"] },
             { "code": 401, "indent": 1, "parameters": ["Agora pare de perder tempo e entre em campo."] },
@@ -594,7 +594,7 @@
             "variableValue": 6
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Principal/$Kilin", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Kilin", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [
             { "code": 205, "indent": 0, "parameters": [0, { "list": [{ "code": 3, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 3, "indent": null }] },
@@ -640,8 +640,8 @@
           "walkAnime": true
         }
       ],
-      "x": 2,
-      "y": 7
+      "x": 12,
+      "y": 9
     },
     {
       "id": 6,
@@ -673,7 +673,7 @@
             { "code": 505, "indent": 0, "parameters": [{ "code": 39, "indent": null }] },
             { "code": 205, "indent": 0, "parameters": [13, { "list": [{ "code": 39, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 39, "indent": null }] },
-            { "code": 203, "indent": 0, "parameters": [3, 0, 8, 8, 8] },
+            { "code": 203, "indent": 0, "parameters": [3, 0, 13, 6, 4] },
             { "code": 205, "indent": 0, "parameters": [2, { "list": [{ "code": 25, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 25, "indent": null }] },
             { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 4, 0, 2, "Dragobur"] },
@@ -682,10 +682,19 @@
             { "code": 401, "indent": 0, "parameters": ["de acesso. Só mais uma partida e finalmente"] },
             { "code": 401, "indent": 0, "parameters": ["teremos nossa chance na liga profissional."] },
             { "code": 213, "indent": 0, "parameters": [2, 1, false] },
+            { "code": 205, "indent": 0, "parameters": [-1, { "list": [{ "code": 18, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 18, "indent": null }] },
             { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal1", 2, 0, 2, "Filena"] },
             { "code": 401, "indent": 0, "parameters": ["Exatamente. Nós seremos os melhores jogadores"] },
             { "code": 401, "indent": 0, "parameters": ["de futebol rúnico da cidade!"] },
             { "code": 213, "indent": 0, "parameters": [3, 4, false] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [-1, { "list": [{ "code": 18, "indent": null }, { "code": 17, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 18, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 17, "indent": null }] },
             { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 1, 0, 2, "Thorin"] },
             { "code": 401, "indent": 0, "parameters": ["Obrigado, treinador!"] },
             { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 4, 0, 2, "Dragobur"] },
@@ -980,7 +989,7 @@
               "parameters": [
                 13,
                 {
-                  "list": [{ "code": 40, "indent": null }, { "code": 45, "parameters": ["Move to: 6,8"], "indent": null }, { "code": 25, "indent": null }, { "code": 0 }],
+                  "list": [{ "code": 40, "indent": null }, { "code": 45, "parameters": ["Move to: 13,7"], "indent": null }, { "code": 25, "indent": null }, { "code": 0 }],
                   "repeat": false,
                   "skippable": false,
                   "wait": false
@@ -988,7 +997,7 @@
               ]
             },
             { "code": 505, "indent": 0, "parameters": [{ "code": 40, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 6,8"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 13,7"], "indent": null }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 25, "indent": null }] },
             {
               "code": 205,
@@ -996,7 +1005,7 @@
               "parameters": [
                 14,
                 {
-                  "list": [{ "code": 40, "indent": null }, { "code": 45, "parameters": ["Move to: 6,6"], "indent": null }, { "code": 25, "indent": null }, { "code": 0 }],
+                  "list": [{ "code": 40, "indent": null }, { "code": 45, "parameters": ["Move to: 11,7"], "indent": null }, { "code": 25, "indent": null }, { "code": 0 }],
                   "repeat": false,
                   "skippable": false,
                   "wait": false
@@ -1004,7 +1013,7 @@
               ]
             },
             { "code": 505, "indent": 0, "parameters": [{ "code": 40, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 6,6"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 11,7"], "indent": null }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 25, "indent": null }] },
             {
               "code": 205,
@@ -1012,7 +1021,7 @@
               "parameters": [
                 5,
                 {
-                  "list": [{ "code": 40, "indent": null }, { "code": 45, "parameters": ["Move to: 6,7"], "indent": null }, { "code": 25, "indent": null }, { "code": 0 }],
+                  "list": [{ "code": 40, "indent": null }, { "code": 45, "parameters": ["Move to: 12,7"], "indent": null }, { "code": 25, "indent": null }, { "code": 0 }],
                   "repeat": false,
                   "skippable": false,
                   "wait": false
@@ -1020,7 +1029,7 @@
               ]
             },
             { "code": 505, "indent": 0, "parameters": [{ "code": 40, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 6,7"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 12,7"], "indent": null }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 25, "indent": null }] },
             { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal1", 3, 0, 2, "Kilin"] },
             { "code": 401, "indent": 0, "parameters": ["Thorin Forjaprata! Por ordem de seu pai, Tordan Forjaprata,"] },
@@ -1092,13 +1101,13 @@
                 5,
                 {
                   "list": [
-                    { "code": 2, "indent": null },
-                    { "code": 2, "indent": null },
-                    { "code": 2, "indent": null },
-                    { "code": 2, "indent": null },
-                    { "code": 2, "indent": null },
-                    { "code": 2, "indent": null },
-                    { "code": 2, "indent": null },
+                    { "code": 1, "indent": null },
+                    { "code": 1, "indent": null },
+                    { "code": 1, "indent": null },
+                    { "code": 1, "indent": null },
+                    { "code": 1, "indent": null },
+                    { "code": 1, "indent": null },
+                    { "code": 1, "indent": null },
                     { "code": 0 }
                   ],
                   "repeat": false,
@@ -1107,13 +1116,13 @@
                 }
               ]
             },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 2, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 2, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 2, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 2, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 2, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 2, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 2, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
             {
               "code": 205,
               "indent": 0,
@@ -1121,13 +1130,13 @@
                 14,
                 {
                   "list": [
-                    { "code": 2, "indent": null },
-                    { "code": 2, "indent": null },
-                    { "code": 2, "indent": null },
-                    { "code": 2, "indent": null },
-                    { "code": 2, "indent": null },
-                    { "code": 2, "indent": null },
-                    { "code": 2, "indent": null },
+                    { "code": 1, "indent": null },
+                    { "code": 1, "indent": null },
+                    { "code": 1, "indent": null },
+                    { "code": 1, "indent": null },
+                    { "code": 1, "indent": null },
+                    { "code": 1, "indent": null },
+                    { "code": 1, "indent": null },
                     { "code": 0 }
                   ],
                   "repeat": false,
@@ -1136,13 +1145,13 @@
                 }
               ]
             },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 2, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 2, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 2, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 2, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 2, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 2, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 2, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
             {
               "code": 205,
               "indent": 0,
@@ -1150,13 +1159,13 @@
                 13,
                 {
                   "list": [
-                    { "code": 2, "indent": null },
-                    { "code": 2, "indent": null },
-                    { "code": 2, "indent": null },
-                    { "code": 2, "indent": null },
-                    { "code": 2, "indent": null },
-                    { "code": 2, "indent": null },
-                    { "code": 2, "indent": null },
+                    { "code": 1, "indent": null },
+                    { "code": 1, "indent": null },
+                    { "code": 1, "indent": null },
+                    { "code": 1, "indent": null },
+                    { "code": 1, "indent": null },
+                    { "code": 1, "indent": null },
+                    { "code": 1, "indent": null },
                     { "code": 0 }
                   ],
                   "repeat": false,
@@ -1165,13 +1174,13 @@
                 }
               ]
             },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 2, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 2, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 2, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 2, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 2, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 2, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 2, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
             {
               "code": 205,
               "indent": 0,
@@ -1179,13 +1188,13 @@
                 -1,
                 {
                   "list": [
-                    { "code": 12, "indent": null },
-                    { "code": 12, "indent": null },
-                    { "code": 12, "indent": null },
-                    { "code": 12, "indent": null },
-                    { "code": 12, "indent": null },
-                    { "code": 12, "indent": null },
-                    { "code": 12, "indent": null },
+                    { "code": 1, "indent": null },
+                    { "code": 1, "indent": null },
+                    { "code": 1, "indent": null },
+                    { "code": 1, "indent": null },
+                    { "code": 1, "indent": null },
+                    { "code": 1, "indent": null },
+                    { "code": 1, "indent": null },
                     { "code": 0 }
                   ],
                   "repeat": false,
@@ -1194,13 +1203,13 @@
                 }
               ]
             },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 12, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 12, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 12, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 12, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 12, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 12, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 12, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
             { "code": 230, "indent": 0, "parameters": [120] },
             { "code": 201, "indent": 0, "parameters": [0, 7, 13, 24, 0, 0] },
             { "code": 122, "indent": 0, "parameters": [29, 29, 0, 0, 8] },
@@ -1662,7 +1671,7 @@
           "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 2, "characterIndex": 7 },
           "list": [
             { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
-            { "code": 201, "indent": 0, "parameters": [0, 9, 14, 12, 0, 0] },
+            { "code": 201, "indent": 0, "parameters": [0, 9, 6, 17, 0, 0] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 4,
@@ -1705,8 +1714,8 @@
           "walkAnime": true
         }
       ],
-      "x": 13,
-      "y": 5
+      "x": 11,
+      "y": 4
     },
     {
       "id": 13,
@@ -1730,7 +1739,7 @@
             "variableValue": 6
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Principal/$Tharok", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Tharok", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [
             { "code": 205, "indent": 0, "parameters": [0, { "list": [{ "code": 17, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 17, "indent": null }] },
@@ -1776,8 +1785,8 @@
           "walkAnime": true
         }
       ],
-      "x": 2,
-      "y": 8
+      "x": 13,
+      "y": 9
     },
     {
       "id": 14,
@@ -1801,7 +1810,7 @@
             "variableValue": 6
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Principal/$Mhordred", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Mhordred", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [
             { "code": 205, "indent": 0, "parameters": [0, { "list": [{ "code": 18, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 18, "indent": null }] },
@@ -1847,8 +1856,8 @@
           "walkAnime": true
         }
       ],
-      "x": 2,
-      "y": 6
+      "x": 11,
+      "y": 9
     },
     {
       "id": 15,
@@ -1973,7 +1982,77 @@
       "x": 0,
       "y": 8
     },
-    null,
+    {
+      "id": 18,
+      "name": "Teleporte (Campo de Futebol Rúnico)",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 23,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 29,
+            "variableValid": true,
+            "variableValue": 5
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 2, "characterIndex": 7 },
+          "list": [
+            { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
+            { "code": 201, "indent": 0, "parameters": [0, 9, 6, 17, 0, 0] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 4,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 4,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 4,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 29,
+            "variableValid": true,
+            "variableValue": 8
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 1, "characterIndex": 2 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 4,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 5,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": false
+        }
+      ],
+      "x": 12,
+      "y": 4
+    },
     null,
     {
       "id": 20,
