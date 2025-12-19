@@ -273,8 +273,158 @@
   ],
   "events": [
     null,
-    null,
-    null,
+    {
+      "id": 1,
+      "name": "Teleporte (Distrito Residencial)",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 23,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 29,
+            "variableValid": false,
+            "variableValue": 1
+          },
+          "directionFix": true,
+          "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 2, "characterIndex": 7 },
+          "list": [
+            { "code": 201, "indent": 0, "parameters": [0, 7, 32, 48, 0, 0] },
+            { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 4,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 4,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 23,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 29,
+            "variableValid": true,
+            "variableValue": 3
+          },
+          "directionFix": true,
+          "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 2, "characterIndex": 7 },
+          "list": [
+            { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
+            { "code": 201, "indent": 0, "parameters": [0, 7, 32, 48, 0, 0] },
+            { "code": 122, "indent": 0, "parameters": [32, 32, 0, 0, 4] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 4,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 4,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        }
+      ],
+      "x": 4,
+      "y": 0
+    },
+    {
+      "id": 2,
+      "name": "Teleporte (Distrito Residencial)",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 23,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 29,
+            "variableValid": false,
+            "variableValue": 1
+          },
+          "directionFix": true,
+          "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 2, "characterIndex": 7 },
+          "list": [
+            { "code": 201, "indent": 0, "parameters": [0, 7, 32, 48, 0, 0] },
+            { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 4,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 4,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 23,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 29,
+            "variableValid": true,
+            "variableValue": 3
+          },
+          "directionFix": true,
+          "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 2, "characterIndex": 7 },
+          "list": [
+            { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
+            { "code": 201, "indent": 0, "parameters": [0, 7, 32, 48, 0, 0] },
+            { "code": 122, "indent": 0, "parameters": [32, 32, 0, 0, 4] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 4,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 4,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        }
+      ],
+      "x": 3,
+      "y": 0
+    },
     {
       "id": 3,
       "name": "Ir para o campo de Futebol",
@@ -555,8 +705,8 @@
           "directionFix": true,
           "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 2, "characterIndex": 7 },
           "list": [
+            { "code": 201, "indent": 0, "parameters": [0, 7, 32, 48, 0, 0] },
             { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
-            { "code": 201, "indent": 0, "parameters": [0, 7, 23, 25, 0, 0] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 4,
@@ -589,7 +739,7 @@
           "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 2, "characterIndex": 7 },
           "list": [
             { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
-            { "code": 201, "indent": 0, "parameters": [0, 7, 23, 25, 0, 0] },
+            { "code": 201, "indent": 0, "parameters": [0, 7, 32, 48, 0, 0] },
             { "code": 122, "indent": 0, "parameters": [32, 32, 0, 0, 4] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
@@ -604,12 +754,12 @@
           "walkAnime": true
         }
       ],
-      "x": 4,
+      "x": 2,
       "y": 0
     },
     {
       "id": 7,
-      "name": "Teleporte (Distrito Residencial)",
+      "name": "Teleporte (Externo)",
       "note": "",
       "pages": [
         {
@@ -631,42 +781,7 @@
           "directionFix": true,
           "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 2, "characterIndex": 7 },
           "list": [
-            { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
-            { "code": 201, "indent": 0, "parameters": [0, 7, 23, 25, 0, 0] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
-          "moveFrequency": 4,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 4,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 23,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 29,
-            "variableValid": true,
-            "variableValue": 3
-          },
-          "directionFix": true,
-          "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 2, "characterIndex": 7 },
-          "list": [
-            { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
-            { "code": 201, "indent": 0, "parameters": [0, 7, 23, 25, 0, 0] },
-            { "code": 122, "indent": 0, "parameters": [32, 32, 0, 0, 4] },
+            { "code": 201, "indent": 0, "parameters": [0, 21, 14, 13, 0, 0] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 4,
@@ -680,8 +795,8 @@
           "walkAnime": true
         }
       ],
-      "x": 3,
-      "y": 0
+      "x": 20,
+      "y": 39
     },
     {
       "id": 8,
@@ -954,10 +1069,9 @@
       "x": 5,
       "y": 3
     },
-    null,
     {
-      "id": 13,
-      "name": "EV013",
+      "id": 12,
+      "name": "Teleporte (Externo)",
       "note": "",
       "pages": [
         {
@@ -979,7 +1093,7 @@
           "directionFix": true,
           "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 2, "characterIndex": 7 },
           "list": [
-            { "code": 201, "indent": 0, "parameters": [0, 17, 8, 2, 0, 0] },
+            { "code": 201, "indent": 0, "parameters": [0, 21, 14, 13, 0, 0] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 4,
@@ -993,12 +1107,13 @@
           "walkAnime": true
         }
       ],
-      "x": 20,
+      "x": 18,
       "y": 39
     },
+    null,
     {
       "id": 14,
-      "name": "Porta (Vestiário)",
+      "name": "Porta (Taverna )",
       "note": "",
       "pages": [
         {
@@ -1042,6 +1157,7 @@
             { "code": 505, "indent": 0, "parameters": [{ "code": 37 }] },
             { "code": 205, "indent": 0, "parameters": [-1, { "repeat": false, "skippable": true, "wait": true, "list": [{ "code": 12 }, { "code": 0 }] }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 12 }] },
+            { "code": 201, "indent": 0, "parameters": [0, 12, 9, 11, 0, 0] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -1089,7 +1205,7 @@
     },
     {
       "id": 15,
-      "name": "Porta (Vestiário)",
+      "name": "Porta",
       "note": "",
       "pages": [
         {
@@ -1180,7 +1296,7 @@
     },
     {
       "id": 16,
-      "name": "Porta (Vestiário)",
+      "name": "Porta",
       "note": "",
       "pages": [
         {
@@ -1271,7 +1387,7 @@
     },
     {
       "id": 17,
-      "name": "Porta (Vestiário)",
+      "name": "Porta (Loja de Roupas)",
       "note": "",
       "pages": [
         {
@@ -1315,6 +1431,7 @@
             { "code": 505, "indent": 0, "parameters": [{ "code": 37 }] },
             { "code": 205, "indent": 0, "parameters": [-1, { "repeat": false, "skippable": true, "wait": true, "list": [{ "code": 12 }, { "code": 0 }] }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 12 }] },
+            { "code": 201, "indent": 0, "parameters": [0, 13, 9, 13, 0, 0] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -1362,7 +1479,7 @@
     },
     {
       "id": 18,
-      "name": "Porta (Vestiário)",
+      "name": "Porta (Banco)",
       "note": "",
       "pages": [
         {
@@ -1475,8 +1592,8 @@
           "directionFix": true,
           "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 2, "characterIndex": 7 },
           "list": [
+            { "code": 201, "indent": 0, "parameters": [0, 7, 32, 48, 0, 0] },
             { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
-            { "code": 201, "indent": 0, "parameters": [0, 7, 23, 25, 0, 0] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 4,
@@ -1509,7 +1626,7 @@
           "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 2, "characterIndex": 7 },
           "list": [
             { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
-            { "code": 201, "indent": 0, "parameters": [0, 7, 23, 25, 0, 0] },
+            { "code": 201, "indent": 0, "parameters": [0, 7, 32, 48, 0, 0] },
             { "code": 122, "indent": 0, "parameters": [32, 32, 0, 0, 4] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
@@ -1570,7 +1687,7 @@
     },
     {
       "id": 21,
-      "name": "EV021",
+      "name": "Teleporte (Externo)",
       "note": "",
       "pages": [
         {
@@ -1592,7 +1709,7 @@
           "directionFix": true,
           "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 2, "characterIndex": 7 },
           "list": [
-            { "code": 201, "indent": 0, "parameters": [0, 17, 8, 2, 0, 0] },
+            { "code": 201, "indent": 0, "parameters": [0, 21, 14, 13, 0, 0] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 4,
@@ -1609,82 +1726,7 @@
       "x": 19,
       "y": 39
     },
-    {
-      "id": 22,
-      "name": "Teleporte (Distrito Residencial)",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 23,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 29,
-            "variableValid": false,
-            "variableValue": 1
-          },
-          "directionFix": true,
-          "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 2, "characterIndex": 7 },
-          "list": [
-            { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
-            { "code": 201, "indent": 0, "parameters": [0, 7, 23, 25, 0, 0] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
-          "moveFrequency": 4,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 4,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 23,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 29,
-            "variableValid": true,
-            "variableValue": 3
-          },
-          "directionFix": true,
-          "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 2, "characterIndex": 7 },
-          "list": [
-            { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
-            { "code": 201, "indent": 0, "parameters": [0, 7, 23, 25, 0, 0] },
-            { "code": 122, "indent": 0, "parameters": [32, 32, 0, 0, 4] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
-          "moveFrequency": 4,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 4,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        }
-      ],
-      "x": 2,
-      "y": 0
-    },
+    null,
     {
       "id": 23,
       "name": "Mhordred",
@@ -1725,47 +1767,7 @@
     },
     null,
     null,
-    {
-      "id": 26,
-      "name": "EV026",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 23,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 29,
-            "variableValid": false,
-            "variableValue": 1
-          },
-          "directionFix": true,
-          "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 2, "characterIndex": 7 },
-          "list": [
-            { "code": 201, "indent": 0, "parameters": [0, 17, 8, 2, 0, 0] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
-          "moveFrequency": 4,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 4,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        }
-      ],
-      "x": 18,
-      "y": 39
-    },
+    null,
     null,
     {
       "id": 28,
