@@ -439,47 +439,7 @@
   ],
   "events": [
     null,
-    {
-      "id": 1,
-      "name": "Ir para Distrito Comercial",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 23,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 29,
-            "variableValid": true,
-            "variableValue": 1
-          },
-          "directionFix": true,
-          "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 2, "characterIndex": 7 },
-          "list": [
-            { "code": 201, "indent": 0, "parameters": [0, 8, 1, 19, 0, 0] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
-          "moveFrequency": 4,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 4,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        }
-      ],
-      "x": 63,
-      "y": 21
-    },
+    null,
     {
       "id": 2,
       "name": "Entrar em casa",
