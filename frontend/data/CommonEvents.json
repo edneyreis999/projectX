@@ -58,7 +58,7 @@
       { "code": 401, "indent": 1, "parameters": ["Taverna da Pedra Vulcânica."] },
       { "code": 122, "indent": 1, "parameters": [32, 32, 0, 0, 5] },
       { "code": 121, "indent": 1, "parameters": [6, 6, 1] },
-      { "code": 201, "indent": 1, "parameters": [0, 8, 26, 33, 0, 0] },
+      { "code": 201, "indent": 1, "parameters": [0, 8, 8, 29, 0, 0] },
       { "code": 0, "indent": 1, "parameters": [] },
       { "code": 412, "indent": 0, "parameters": [] },
       { "code": 0, "indent": 0, "parameters": [] }
