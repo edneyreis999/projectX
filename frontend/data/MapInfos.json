@@ -41,7 +41,7 @@
   { "id": 39, "expanded": true, "name": "Entrada de Kravens 04 - OLD", "order": 32, "parentId": 15, "scrollX": 875, "scrollY": 861.5, "quick": false },
   { "id": 40, "expanded": true, "name": "Entrada de Melios", "order": 14, "parentId": 35, "scrollX": 875, "scrollY": 707.5, "quick": false },
   { "id": 41, "expanded": false, "name": "Segundo Sol - Boss Final", "order": 46, "parentId": 42, "scrollX": 0, "scrollY": 0, "quick": false },
-  { "id": 42, "expanded": false, "name": "Fim de Jogo", "order": 42, "parentId": 15, "scrollX": 0, "scrollY": 0, "quick": false },
+  { "id": 42, "expanded": true, "name": "Fim de Jogo", "order": 42, "parentId": 15, "scrollX": 0, "scrollY": 0, "quick": false },
   { "id": 43, "expanded": true, "name": "Gildrat", "order": 16, "parentId": 3, "scrollX": 1750, "scrollY": 969, "quick": false },
   null,
   null,

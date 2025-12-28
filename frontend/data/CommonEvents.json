@@ -323,9 +323,9 @@
     "id": 13,
     "list": [
       { "code": 121, "indent": 0, "parameters": [63, 63, 0] },
-      { "code": 426, "indent": 0, "parameters": [0, 3, 0, 230] },
-      { "code": 426, "indent": 0, "parameters": [0, 3, 0, 231] },
-      { "code": 426, "indent": 0, "parameters": [0, 3, 0, 232] },
+      { "code": 355, "indent": 0, "parameters": ["$gameActors.actor(3).learnSkill(232);"] },
+      { "code": 355, "indent": 0, "parameters": ["$gameActors.actor(3).learnSkill(233);"] },
+      { "code": 355, "indent": 0, "parameters": ["$gameActors.actor(3).learnSkill(234);"] },
       { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
       { "code": 401, "indent": 0, "parameters": ["Skills de Reforço adicionadas!"] },
       { "code": 0, "indent": 0, "parameters": [] }
@@ -365,7 +365,34 @@
   { "id": 15, "list": [{ "code": 0, "indent": 0, "parameters": [] }], "name": "", "switchId": 1, "trigger": 0 },
   { "id": 16, "list": [{ "code": 0, "indent": 0, "parameters": [] }], "name": "", "switchId": 1, "trigger": 0 },
   { "id": 17, "list": [{ "code": 0, "indent": 0, "parameters": [] }], "name": "", "switchId": 1, "trigger": 0 },
-  { "id": 18, "list": [{ "code": 0, "indent": 0, "parameters": [] }], "name": "", "switchId": 1, "trigger": 0 },
-  { "id": 19, "list": [{ "code": 0, "indent": 0, "parameters": [] }], "name": "", "switchId": 1, "trigger": 0 },
-  { "id": 20, "list": [{ "code": 0, "indent": 0, "parameters": [] }], "name": "", "switchId": 1, "trigger": 0 }
+  {
+    "id": 18,
+    "list": [
+      { "code": 355, "indent": 0, "parameters": ["$gameActors.actor(3).forgetSkill(232);"] },
+      { "code": 0, "indent": 0, "parameters": [] }
+    ],
+    "name": "Esquecer_Skill_Guarda",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 19,
+    "list": [
+      { "code": 355, "indent": 0, "parameters": ["$gameActors.actor(3).forgetSkill(233);"] },
+      { "code": 0, "indent": 0, "parameters": [] }
+    ],
+    "name": "Esquecer_Skill_Civil",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 20,
+    "list": [
+      { "code": 355, "indent": 0, "parameters": ["$gameActors.actor(3).forgetSkill(234);"] },
+      { "code": 0, "indent": 0, "parameters": [] }
+    ],
+    "name": "Esquecer_Skill_Corvos",
+    "switchId": 1,
+    "trigger": 0
+  }
 ]
