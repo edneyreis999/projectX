@@ -279,10 +279,89 @@
     "switchId": 46,
     "trigger": 2
   },
-  { "id": 11, "list": [{ "code": 0, "indent": 0, "parameters": [] }], "name": "", "switchId": 1, "trigger": 0 },
-  { "id": 12, "list": [{ "code": 0, "indent": 0, "parameters": [] }], "name": "", "switchId": 1, "trigger": 0 },
-  { "id": 13, "list": [{ "code": 0, "indent": 0, "parameters": [] }], "name": "", "switchId": 1, "trigger": 0 },
-  { "id": 14, "list": [{ "code": 0, "indent": 0, "parameters": [] }], "name": "", "switchId": 1, "trigger": 0 },
+  {
+    "id": 11,
+    "list": [
+      { "code": 121, "indent": 0, "parameters": [61, 61, 0] },
+      { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+      { "code": 401, "indent": 0, "parameters": ["Gildrat se prepara para o ataque dos Ignotos..."] },
+      { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+      { "code": 401, "indent": 0, "parameters": ["A última defesa está prestes a começar."] },
+      { "code": 230, "indent": 0, "parameters": [30] },
+      { "code": 0, "indent": 0, "parameters": [] }
+    ],
+    "name": "Init_Quando_Segundo_Sol",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 12,
+    "list": [
+      { "code": 121, "indent": 0, "parameters": [62, 62, 0] },
+      { "code": 122, "indent": 0, "parameters": [86, 86, 0, 0, 7] },
+      { "code": 111, "indent": 0, "parameters": [1, 62, 0, 31, 1] },
+      { "code": 122, "indent": 1, "parameters": [86, 86, 0, 0, 6] },
+      { "code": 0, "indent": 1, "parameters": [] },
+      { "code": 412, "indent": 0, "parameters": [] },
+      { "code": 111, "indent": 0, "parameters": [1, 62, 0, 61, 1] },
+      { "code": 122, "indent": 1, "parameters": [86, 86, 0, 0, 5] },
+      { "code": 0, "indent": 1, "parameters": [] },
+      { "code": 412, "indent": 0, "parameters": [] },
+      { "code": 111, "indent": 0, "parameters": [1, 62, 0, 81, 1] },
+      { "code": 122, "indent": 1, "parameters": [86, 86, 0, 0, 4] },
+      { "code": 0, "indent": 1, "parameters": [] },
+      { "code": 412, "indent": 0, "parameters": [] },
+      { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
+      { "code": 401, "indent": 0, "parameters": ["Fase 1 terá \\V[86] grupos de inimigos!"] },
+      { "code": 0, "indent": 0, "parameters": [] }
+    ],
+    "name": "Calcular_Grupos_Fase1",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 13,
+    "list": [
+      { "code": 121, "indent": 0, "parameters": [63, 63, 0] },
+      { "code": 426, "indent": 0, "parameters": [0, 3, 0, 230] },
+      { "code": 426, "indent": 0, "parameters": [0, 3, 0, 231] },
+      { "code": 426, "indent": 0, "parameters": [0, 3, 0, 232] },
+      { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
+      { "code": 401, "indent": 0, "parameters": ["Skills de Reforço adicionadas!"] },
+      { "code": 0, "indent": 0, "parameters": [] }
+    ],
+    "name": "Setup_Skills_Reforco",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 14,
+    "list": [
+      { "code": 121, "indent": 0, "parameters": [64, 64, 0] },
+      { "code": 122, "indent": 0, "parameters": [96, 96, 0, 1, 63] },
+      { "code": 122, "indent": 0, "parameters": [96, 96, 1, 1, 64] },
+      { "code": 122, "indent": 0, "parameters": [96, 96, 1, 1, 65] },
+      { "code": 122, "indent": 0, "parameters": [97, 97, 0, 0, 8] },
+      { "code": 111, "indent": 0, "parameters": [1, 96, 0, 90, 1] },
+      { "code": 122, "indent": 1, "parameters": [97, 97, 0, 0, 7] },
+      { "code": 0, "indent": 1, "parameters": [] },
+      { "code": 412, "indent": 0, "parameters": [] },
+      { "code": 111, "indent": 0, "parameters": [1, 96, 0, 180, 1] },
+      { "code": 122, "indent": 1, "parameters": [97, 97, 0, 0, 6] },
+      { "code": 0, "indent": 1, "parameters": [] },
+      { "code": 412, "indent": 0, "parameters": [] },
+      { "code": 111, "indent": 0, "parameters": [1, 96, 0, 240, 1] },
+      { "code": 122, "indent": 1, "parameters": [97, 97, 0, 0, 5] },
+      { "code": 0, "indent": 1, "parameters": [] },
+      { "code": 412, "indent": 0, "parameters": [] },
+      { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
+      { "code": 401, "indent": 0, "parameters": ["Fase 2 terá \\V[97] exércitos inimigos!"] },
+      { "code": 0, "indent": 0, "parameters": [] }
+    ],
+    "name": "Calcular_Eventos_Fase2",
+    "switchId": 1,
+    "trigger": 0
+  },
   { "id": 15, "list": [{ "code": 0, "indent": 0, "parameters": [] }], "name": "", "switchId": 1, "trigger": 0 },
   { "id": 16, "list": [{ "code": 0, "indent": 0, "parameters": [] }], "name": "", "switchId": 1, "trigger": 0 },
   { "id": 17, "list": [{ "code": 0, "indent": 0, "parameters": [] }], "name": "", "switchId": 1, "trigger": 0 },
