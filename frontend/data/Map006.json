@@ -97,10 +97,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": false,
+          "stepAnime": true,
           "through": false,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         }
       ],
       "x": 13,
@@ -135,10 +135,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": false,
+          "stepAnime": true,
           "through": false,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         }
       ],
       "x": 11,
@@ -173,10 +173,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": false,
+          "stepAnime": true,
           "through": false,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         }
       ],
       "x": 14,
@@ -211,10 +211,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": false,
+          "stepAnime": true,
           "through": false,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         }
       ],
       "x": 4,
@@ -684,10 +684,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 0,
-          "stepAnime": false,
+          "stepAnime": true,
           "through": false,
           "trigger": 4,
-          "walkAnime": true
+          "walkAnime": false
         },
         {
           "conditions": {
@@ -1012,7 +1012,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {
@@ -1233,7 +1233,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Não posso?! Então nós veremos. O jantar foi servido no horário de sempre e retirado a pouco. Espero que tenha comido no campo, pois não há privilégios nessa casa para aqueles que não seguem as regras. Vá domir."
+                "Não posso?! Então nós veremos. O jantar foi servido no horário de sempre e retirado a pouco. Espero que tenha comido no campo, pois não há privilégios nessa casa para aqueles que não seguem as regras. Vá dormir."
               ]
             },
             {
@@ -1276,9 +1276,15 @@
               "indent": 1,
               "parameters": [
                 8,
-                { "list": [{ "code": 45, "parameters": ["Move to: 4,15"], "indent": null }, { "code": 19, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
+                {
+                  "list": [{ "code": 31, "indent": null }, { "code": 45, "parameters": ["Move to: 4,15"], "indent": null }, { "code": 19, "indent": null }, { "code": 0 }],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
               ]
             },
+            { "code": 505, "indent": 1, "parameters": [{ "code": 31, "indent": null }] },
             { "code": 505, "indent": 1, "parameters": [{ "code": 45, "parameters": ["Move to: 4,15"], "indent": null }] },
             { "code": 505, "indent": 1, "parameters": [{ "code": 19, "indent": null }] },
             { "code": 121, "indent": 1, "parameters": [9, 9, 1] },
@@ -1421,7 +1427,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 1,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {
@@ -1538,7 +1544,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {
@@ -1602,10 +1608,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": false,
+          "stepAnime": true,
           "through": false,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         }
       ],
       "x": 5,
@@ -2887,10 +2893,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": false,
+          "stepAnime": true,
           "through": false,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         }
       ],
       "x": 7,
@@ -2925,10 +2931,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": false,
+          "stepAnime": true,
           "through": false,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         }
       ],
       "x": 19,
@@ -2963,10 +2969,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": false,
+          "stepAnime": true,
           "through": false,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         }
       ],
       "x": 2,
@@ -3001,10 +3007,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": false,
+          "stepAnime": true,
           "through": false,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         }
       ],
       "x": 9,
@@ -3039,10 +3045,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": false,
+          "stepAnime": true,
           "through": false,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         }
       ],
       "x": 19,

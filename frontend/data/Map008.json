@@ -189,13 +189,13 @@
     2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2072, 1543, 2064, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048,
     2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2052, 2076, 2076, 2076, 2073, 1543, 2064, 2048, 2048, 2048, 2048,
     2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2052, 291, 292, 293, 2056, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2072, 1, 2, 3, 2080,
-    1543, 2064, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2072, 299, 300, 301, 2064, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048,
-    2048, 2048, 2072, 9, 10, 11, 2080, 1543, 2064, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2072, 9, 10, 11, 2064, 2048, 2048, 2048, 2048, 2048, 2048, 2048,
-    2048, 2048, 2048, 2048, 2048, 2048, 2048, 2072, 17, 18, 19, 2080, 1543, 2064, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2072, 17, 18, 19, 2064, 2048,
-    2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2072, 25, 26, 27, 2080, 1543, 2064, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048,
-    2048, 2072, 25, 26, 27, 2064, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2050, 2068, 2068, 2068, 2074, 1543, 2064, 2048, 2048, 2048, 2048, 2048, 2048,
-    2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2050, 2068, 2068, 2068, 2049, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2072,
-    1543, 2064, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048,
+    1543, 2064, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2072, 299, 300, 301, 2066, 2076, 2076, 2076, 2076, 2056, 2048, 2048, 2048, 2048, 2048, 2048, 2048,
+    2048, 2048, 2072, 9, 10, 11, 2080, 1543, 2064, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2072, 9, 10, 11, 2080, 1584, 1585, 1586, 1587, 2064, 2048, 2048,
+    2048, 2048, 2048, 2048, 2048, 2048, 2048, 2072, 17, 18, 19, 2080, 1543, 2064, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2072, 17, 18, 19, 2080, 1592,
+    1593, 1594, 1595, 2064, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2072, 25, 26, 27, 2080, 1543, 2064, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048,
+    2048, 2072, 25, 26, 27, 2080, 1600, 1601, 1602, 1603, 2064, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2050, 2068, 2068, 2068, 2074, 1543, 2064, 2048, 2048, 2048, 2048, 2048, 2048,
+    2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2050, 2068, 2068, 2068, 2074, 1608, 1609, 1610, 1611, 2064, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2072,
+    1543, 2064, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2050, 2068, 2068, 2068, 2068, 2049, 2048, 2048, 2048, 2048, 2048, 2048,
     2048, 2048, 2048, 2048, 2048, 2048, 2048, 2072, 1543, 2064, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048,
     2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2072, 1543, 2064, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048,
     2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2048, 2052, 2076, 2076, 2076, 2076, 2076, 2073, 1543, 2064, 2048, 2048, 2048, 2048, 2048, 2048,
@@ -492,15 +492,17 @@
           "list": [
             { "code": 355, "indent": 0, "parameters": ["SQSM.CompleteTaskForQuest(\"horaDeCrescer\", 2);"] },
             {
-              "code": 205,
+              "code": 357,
               "indent": 0,
-              "parameters": [
-                -1,
-                { "list": [{ "code": 45, "parameters": ["Move to: 4,21"], "indent": null }, { "code": 18, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }
-              ]
+              "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusTargetEvent", "Camera: Focus Target Event", { "EventID:eval": "14", "Duration:num": "60", "EasingType:str": "InOutSine" }]
             },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 4,21"], "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 18, "indent": null }] },
+            { "code": 657, "indent": 0, "parameters": ["Event ID = 14"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 60"] },
+            { "code": 657, "indent": 0, "parameters": ["Easing Type = InOutSine"] },
+            { "code": 357, "indent": 0, "parameters": ["VisuMZ_4_MapCameraZoom", "ZoomWait", "Zoom: Wait for Zoom", {}] },
+            { "code": 357, "indent": 0, "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusPlayer", "Camera: Focus Player", { "Duration:num": "60", "EasingType:str": "InOutSine" }] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 60"] },
+            { "code": 657, "indent": 0, "parameters": ["Easing Type = InOutSine"] },
             { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal1", 3, 0, 2, "Kilin"] },
             { "code": 401, "indent": 0, "parameters": ["Ali está, a Taverna da Pedra Vulcânica."] },
             { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 1, 0, 2, "Thorin"] },
@@ -511,6 +513,35 @@
             { "code": 401, "indent": 0, "parameters": ["Nós só vamos até aqui, siga em frente, garoto."] },
             { "code": 401, "indent": 0, "parameters": ["E não fuja, não queremos ter que arrastá-lo de"] },
             { "code": 401, "indent": 0, "parameters": ["volta aos gritos. Está na hora de crescer."] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [10, { "list": [{ "code": 45, "parameters": ["Move to: 30,19"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 30,19"], "indent": null }] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [11, { "list": [{ "code": 45, "parameters": ["Move to: 31,19"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 31,19"], "indent": null }] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [-1, { "list": [{ "code": 45, "parameters": ["Move to: 32,19"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 32,19"], "indent": null }] },
+            { "code": 213, "indent": 0, "parameters": [23, 2, false] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                10,
+                { "list": [{ "code": 45, "parameters": ["Move to: 30,19"], "indent": null }, { "code": 18, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }
+              ]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 30,19"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 18, "indent": null }] },
             { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal1", 5, 0, 2, "Mhordred"] },
             { "code": 401, "indent": 0, "parameters": ["Espera! Vamos mesmo deixar que ele encontre"] },
             { "code": 401, "indent": 0, "parameters": ["Tibério Balastrus assim?"] },
@@ -530,69 +561,22 @@
             {
               "code": 205,
               "indent": 0,
-              "parameters": [9, { "list": [{ "code": 45, "parameters": ["Move to: 7,21"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 7,21"], "indent": null }] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [10, { "list": [{ "code": 45, "parameters": ["Move to: 9,21"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }]
+              "parameters": [10, { "list": [{ "code": 45, "parameters": ["Move to: 9,21"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }]
             },
             { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 9,21"], "indent": null }] },
             {
-              "code": 205,
+              "code": 357,
               "indent": 0,
-              "parameters": [
-                10,
-                {
-                  "list": [{ "code": 45, "parameters": ["Move to: 26,33"], "indent": null }, { "code": 39, "indent": null }, { "code": 37, "indent": null }, { "code": 0 }],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
+              "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusTargetEvent", "Camera: Focus Target Event", { "EventID:eval": "14", "Duration:num": "60", "EasingType:str": "InOutSine" }]
             },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 26,33"], "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 39, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 37, "indent": null }] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                11,
-                {
-                  "list": [{ "code": 45, "parameters": ["Move to: 26,33"], "indent": null }, { "code": 39, "indent": null }, { "code": 37, "indent": null }, { "code": 0 }],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 26,33"], "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 39, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 37, "indent": null }] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                9,
-                {
-                  "list": [{ "code": 45, "parameters": ["Move to: 26,33"], "indent": null }, { "code": 39, "indent": null }, { "code": 37, "indent": null }, { "code": 0 }],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 26,33"], "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 39, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 37, "indent": null }] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [-1, { "list": [{ "code": 45, "parameters": ["Move to: 6,21"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 6,21"], "indent": null }] },
+            { "code": 657, "indent": 0, "parameters": ["Event ID = 14"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 60"] },
+            { "code": 657, "indent": 0, "parameters": ["Easing Type = InOutSine"] },
+            { "code": 357, "indent": 0, "parameters": ["VisuMZ_4_MapCameraZoom", "ZoomWait", "Zoom: Wait for Zoom", {}] },
+            { "code": 357, "indent": 0, "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusPlayer", "Camera: Focus Player", { "Duration:num": "60", "EasingType:str": "InOutSine" }] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 60"] },
+            { "code": 657, "indent": 0, "parameters": ["Easing Type = InOutSine"] },
+            { "code": 230, "indent": 0, "parameters": [300] },
             { "code": 122, "indent": 0, "parameters": [32, 32, 0, 0, 3] },
             { "code": 123, "indent": 0, "parameters": ["A", 0] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -870,9 +854,190 @@
     },
     {
       "id": 9,
-      "name": "Tharok",
+      "name": "Guardas esperando",
       "note": "",
       "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 32,
+            "variableValid": true,
+            "variableValue": 1
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 355, "indent": 0, "parameters": ["SQSM.CompleteTaskForQuest(\"horaDeCrescer\", 1);"] },
+            { "code": 205, "indent": 0, "parameters": [-1, { "list": [{ "code": 19, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 19, "indent": null }] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [11, { "list": [{ "code": 14, "parameters": [3, 0], "indent": null }, { "code": 25, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 14, "parameters": [3, 0], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 25, "indent": null }] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [10, { "list": [{ "code": 14, "parameters": [3, 0], "indent": null }, { "code": 25, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 14, "parameters": [3, 0], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 25, "indent": null }] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Principal/Thorin Armadura Hemet_medo",
+                  "Origin:str": "Bust",
+                  "Position:num": "3",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Thorin Armadura Hemet_me…"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 3"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
+            { "code": 101, "indent": 0, "parameters": ["", 3, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["O que vocês estão fazendo aqui?!"] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "2",
+                  "PictureName:str": "Portraits/Principal/Kilin",
+                  "Origin:str": "Bust",
+                  "Position:num": "7",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Kilin"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 7"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Seu pai, nos mandou esperar por você aqui. Ele não nasceu ontem, Thorin, sabia que você tentaria fugir."] },
+            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
+            { "code": 101, "indent": 0, "parameters": ["", 3, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Você tem que me deixar ir, Kilin. É minha última chance... de seguir o meu sonho."] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "2",
+                  "PictureName:str": "Portraits/Principal/Mhordred_raiva",
+                  "Origin:str": "Bust",
+                  "Position:num": "10",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Mhordred_raiva"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 10"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [45, 45, 0] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "É claro! Por que não?! Vossa senhoria deseja mais alguma coisa, café da manhã na cama todos os dias e banhos de espuma, por exeplo? Se deixarmos você ir seremos jogados na cadeia. E preciso confessar que entre você e nós, eu sempre escolherei a nós! Agora comece a andar, fedelho."
+              ]
+            },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\",\"2\",\"3\"]",
+                  "EndOffsetX:eval": "-200",
+                  "EndOffsetY:eval": "+0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\",\"2\",\"3\"]"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
+            { "code": 355, "indent": 0, "parameters": ["SQSM.ShowTaskForQuest(\"horaDeCrescer\", 2);"] },
+            { "code": 122, "indent": 0, "parameters": [32, 32, 0, 0, 2] },
+            { "code": 123, "indent": 0, "parameters": ["A", 0] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": false
+        },
         {
           "conditions": {
             "actorId": 1,
@@ -890,35 +1055,6 @@
             "variableValue": 2
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Principal/$Tharok", "direction": 4, "pattern": 1, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 32,
-            "variableValid": true,
-            "variableValue": 4
-          },
-          "directionFix": false,
           "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
@@ -927,13 +1063,13 @@
           "moveType": 0,
           "priorityType": 0,
           "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
+          "through": true,
+          "trigger": 1,
+          "walkAnime": false
         }
       ],
-      "x": 3,
-      "y": 3
+      "x": 37,
+      "y": 19
     },
     {
       "id": 10,
@@ -954,10 +1090,10 @@
             "switch2Valid": false,
             "variableId": 32,
             "variableValid": true,
-            "variableValue": 2
+            "variableValue": 1
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Principal/$Kilin", "direction": 4, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Kilin", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
@@ -983,10 +1119,39 @@
             "switch2Valid": false,
             "variableId": 32,
             "variableValid": true,
-            "variableValue": 4
+            "variableValue": 2
           },
           "directionFix": false,
-          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Kilin", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 32,
+            "variableValid": true,
+            "variableValue": 3
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
@@ -994,13 +1159,13 @@
           "moveType": 0,
           "priorityType": 0,
           "stepAnime": false,
-          "through": false,
+          "through": true,
           "trigger": 0,
           "walkAnime": true
         }
       ],
-      "x": 4,
-      "y": 3
+      "x": 34,
+      "y": 17
     },
     {
       "id": 11,
@@ -1021,10 +1186,10 @@
             "switch2Valid": false,
             "variableId": 32,
             "variableValid": true,
-            "variableValue": 2
+            "variableValue": 1
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Principal/$Mhordred", "direction": 4, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Mhordred", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
@@ -1050,10 +1215,39 @@
             "switch2Valid": false,
             "variableId": 32,
             "variableValid": true,
-            "variableValue": 4
+            "variableValue": 2
           },
           "directionFix": false,
-          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Mhordred", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 32,
+            "variableValid": true,
+            "variableValue": 3
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
@@ -1061,13 +1255,13 @@
           "moveType": 0,
           "priorityType": 0,
           "stepAnime": false,
-          "through": false,
+          "through": true,
           "trigger": 0,
           "walkAnime": true
         }
       ],
-      "x": 5,
-      "y": 3
+      "x": 35,
+      "y": 17
     },
     {
       "id": 12,
@@ -1110,7 +1304,225 @@
       "x": 18,
       "y": 39
     },
-    null,
+    {
+      "id": 13,
+      "name": "Guardas esperando",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 32,
+            "variableValid": true,
+            "variableValue": 1
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 355, "indent": 0, "parameters": ["SQSM.CompleteTaskForQuest(\"horaDeCrescer\", 1);"] },
+            { "code": 205, "indent": 0, "parameters": [-1, { "list": [{ "code": 19, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 19, "indent": null }] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [11, { "list": [{ "code": 14, "parameters": [3, 0], "indent": null }, { "code": 25, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 14, "parameters": [3, 0], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 25, "indent": null }] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [10, { "list": [{ "code": 14, "parameters": [3, 0], "indent": null }, { "code": 25, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 14, "parameters": [3, 0], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 25, "indent": null }] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Principal/Thorin Armadura Hemet_medo",
+                  "Origin:str": "Bust",
+                  "Position:num": "3",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Thorin Armadura Hemet_me…"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 3"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
+            { "code": 101, "indent": 0, "parameters": ["", 3, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["O que vocês estão fazendo aqui?!"] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "2",
+                  "PictureName:str": "Portraits/Principal/Kilin",
+                  "Origin:str": "Bust",
+                  "Position:num": "7",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Kilin"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 7"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Seu pai, nos mandou esperar por você aqui. Ele não nasceu ontem, Thorin, sabia que você tentaria fugir."] },
+            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
+            { "code": 101, "indent": 0, "parameters": ["", 3, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Você tem que me deixar ir, Kilin. É minha última chance... de seguir o meu sonho."] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "2",
+                  "PictureName:str": "Portraits/Principal/Mhordred_raiva",
+                  "Origin:str": "Bust",
+                  "Position:num": "10",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Mhordred_raiva"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 10"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [45, 45, 0] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "É claro! Por que não?! Vossa senhoria deseja mais alguma coisa, café da manhã na cama todos os dias e banhos de espuma, por exeplo? Se deixarmos você ir seremos jogados na cadeia. E preciso confessar que entre você e nós, eu sempre escolherei a nós! Agora comece a andar, fedelho."
+              ]
+            },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\",\"2\",\"3\"]",
+                  "EndOffsetX:eval": "-200",
+                  "EndOffsetY:eval": "+0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\",\"2\",\"3\"]"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
+            { "code": 355, "indent": 0, "parameters": ["SQSM.ShowTaskForQuest(\"horaDeCrescer\", 2);"] },
+            { "code": 122, "indent": 0, "parameters": [32, 32, 0, 0, 2] },
+            { "code": 123, "indent": 0, "parameters": ["A", 0] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 32,
+            "variableValid": true,
+            "variableValue": 2
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 1,
+          "walkAnime": false
+        }
+      ],
+      "x": 38,
+      "y": 19
+    },
     {
       "id": 14,
       "name": "Porta (Taverna )",

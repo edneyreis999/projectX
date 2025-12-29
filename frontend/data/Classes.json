@@ -452,7 +452,8 @@
       { "level": 8, "note": "", "skillId": 208 },
       { "level": 12, "note": "", "skillId": 227 },
       { "level": 15, "note": "", "skillId": 228 },
-      { "level": 20, "note": "", "skillId": 229 }
+      { "level": 20, "note": "", "skillId": 229 },
+      { "level": 1, "skillId": 230, "note": "" }
     ],
     "name": "Arqueiro",
     "note": "",
