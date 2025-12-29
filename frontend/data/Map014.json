@@ -1,8 +1,8 @@
 {
   "autoplayBgm": false,
   "autoplayBgs": false,
-  "battleback1Name": "",
-  "battleback2Name": "",
+  "battleback1Name": "Stone2",
+  "battleback2Name": "Stone2",
   "bgm": { "name": "", "pan": 0, "pitch": 100, "volume": 90 },
   "bgs": { "name": "", "pan": 0, "pitch": 100, "volume": 90 },
   "disableDashing": false,
@@ -18,7 +18,7 @@
   "parallaxSx": 0,
   "parallaxSy": 0,
   "scrollType": 0,
-  "specifyBattleback": false,
+  "specifyBattleback": true,
   "tilesetId": 11,
   "width": 30,
   "data": [
@@ -1726,7 +1726,7 @@
             { "code": 657, "indent": 1, "parameters": ["Flip Direction = None"] },
             { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
             { "code": 657, "indent": 1, "parameters": ["Auto-Erase? = true"] },
-            { "code": 301, "indent": 1, "parameters": [0, 18, false, true] },
+            { "code": 301, "indent": 1, "parameters": [0, 19, false, true] },
             { "code": 601, "indent": 1, "parameters": [] },
             {
               "code": 357,
@@ -2505,7 +2505,7 @@
             { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
             { "code": 657, "indent": 1, "parameters": ["Auto-Erase? = true"] },
             { "code": 230, "indent": 1, "parameters": [100] },
-            { "code": 301, "indent": 1, "parameters": [0, 18, false, true] },
+            { "code": 301, "indent": 1, "parameters": [0, 19, false, true] },
             { "code": 601, "indent": 1, "parameters": [] },
             {
               "code": 357,

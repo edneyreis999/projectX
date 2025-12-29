@@ -471,7 +471,7 @@
     "id": 22,
     "actions": [{ "conditionParam1": 0, "conditionParam2": 0, "conditionType": 0, "rating": 5, "skillId": 1 }],
     "battlerHue": 0,
-    "battlerName": "Blackknight",
+    "battlerName": "",
     "dropItems": [
       { "dataId": 1, "denominator": 1, "kind": 0 },
       { "dataId": 1, "denominator": 1, "kind": 0 },
@@ -484,7 +484,7 @@
       { "code": 31, "dataId": 1, "value": 0 }
     ],
     "gold": 0,
-    "name": "Kilin",
+    "name": "",
     "note": "",
     "params": [100, 0, 10, 10, 10, 10, 10, 10]
   },
@@ -639,7 +639,7 @@
     "id": 30,
     "actions": [{ "conditionParam1": 0, "conditionParam2": 0, "conditionType": 0, "rating": 5, "skillId": 1 }],
     "battlerHue": 0,
-    "battlerName": "",
+    "battlerName": "Mhordred",
     "dropItems": [
       { "dataId": 1, "denominator": 1, "kind": 0 },
       { "dataId": 1, "denominator": 1, "kind": 0 },
@@ -652,9 +652,9 @@
       { "code": 31, "dataId": 1, "value": 0 }
     ],
     "gold": 0,
-    "name": "Kilin Inimigo",
+    "name": "Mhordred",
     "note": "",
-    "params": [100, 0, 10, 10, 10, 10, 10, 10]
+    "params": [50000, 5000, 500, 500, 500, 500, 500, 500]
   },
   {
     "id": 31,

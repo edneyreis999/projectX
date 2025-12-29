@@ -484,8 +484,8 @@
   },
   {
     "id": 18,
-    "members": [{ "enemyId": 26, "x": 187, "y": 346, "hidden": false }],
-    "name": "Mhordred",
+    "members": [],
+    "name": "",
     "pages": [
       {
         "conditions": {
@@ -509,8 +509,8 @@
   },
   {
     "id": 19,
-    "members": [],
-    "name": "",
+    "members": [{ "enemyId": 30, "x": 217, "y": 382, "hidden": false }],
+    "name": "Mhordred",
     "pages": [
       {
         "conditions": {
