@@ -88,7 +88,48 @@
   ],
   "events": [
     null,
-    null,
+    {
+      "id": 1,
+      "name": "Teleporte (Campo de Futebol Rúnico)",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 23,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 29,
+            "variableValid": true,
+            "variableValue": 1
+          },
+          "directionFix": true,
+          "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 2, "characterIndex": 7 },
+          "list": [
+            { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
+            { "code": 201, "indent": 0, "parameters": [0, 14, 26, 14, 0, 0] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 4,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 4,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        }
+      ],
+      "x": 12,
+      "y": 23
+    },
     {
       "id": 2,
       "name": "Menina no vestiário 1",
@@ -153,7 +194,7 @@
           "walkAnime": true
         }
       ],
-      "x": 17,
+      "x": 20,
       "y": 14
     },
     {
@@ -178,16 +219,30 @@
             "variableValue": 0
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Estadio/Vestiario/$Menina2", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Estadio/Vestiario/$Menina2", "direction": 8, "pattern": 0, "characterIndex": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveRoute": {
+            "list": [
+              { "code": 3, "indent": null },
+              { "code": 3, "indent": null },
+              { "code": 3, "indent": null },
+              { "code": 17, "indent": null },
+              { "code": 17, "indent": null },
+              { "code": 17, "indent": null },
+              { "code": 19, "indent": null },
+              { "code": 0, "parameters": [] }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
           "moveSpeed": 3,
-          "moveType": 0,
+          "moveType": 3,
           "priorityType": 1,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 4,
           "walkAnime": true
         },
         {
@@ -220,7 +275,7 @@
           "walkAnime": true
         }
       ],
-      "x": 19,
+      "x": 18,
       "y": 18
     },
     {
@@ -245,7 +300,7 @@
             "variableValue": 0
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Estadio/Vestiario/$Menina3", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Estadio/Vestiario/$Menina3", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
@@ -287,8 +342,8 @@
           "walkAnime": true
         }
       ],
-      "x": 20,
-      "y": 14
+      "x": 17,
+      "y": 15
     },
     {
       "id": 5,
@@ -312,12 +367,28 @@
             "variableValue": 0
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Estadio/Vestiario/$Menina1", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Estadio/Vestiario/$Menina1", "direction": 8, "pattern": 0, "characterIndex": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveRoute": {
+            "list": [
+              { "code": 3, "indent": null },
+              { "code": 4, "indent": null },
+              { "code": 4, "indent": null },
+              { "code": 4, "indent": null },
+              { "code": 1, "indent": null },
+              { "code": 1, "indent": null },
+              { "code": 1, "indent": null },
+              { "code": 2, "indent": null },
+              { "code": 19, "indent": null },
+              { "code": 0, "parameters": [] }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
           "moveSpeed": 3,
-          "moveType": 0,
+          "moveType": 3,
           "priorityType": 1,
           "stepAnime": false,
           "through": false,
@@ -355,7 +426,7 @@
         }
       ],
       "x": 21,
-      "y": 17
+      "y": 18
     },
     null,
     {
@@ -376,68 +447,189 @@
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 31,
-            "variableValid": true,
+            "variableValid": false,
             "variableValue": 1
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "", "direction": 6, "pattern": 0, "characterIndex": 3 },
           "list": [
-            { "code": 101, "indent": 0, "parameters": ["Portraits menores/TorcedoresVestiario", 4, 0, 2, "Malia"] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Futebol/Menina_medo_cansada",
+                  "Origin:str": "Bust",
+                  "Position:num": "8",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Futebol/Menina_medo_cansada"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 8"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
             { "code": 401, "indent": 0, "parameters": ["Os treinos tem sido tão exaustivos!"] },
-            { "code": 101, "indent": 0, "parameters": ["Portraits menores/TorcedoresVestiario", 5, 0, 2, "Kiria"] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "2",
+                  "PictureName:str": "Portraits/Futebol/Menina_tapa_cansada",
+                  "Origin:str": "Bust",
+                  "Position:num": "1",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Futebol/Menina_tapa_cansada"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
+            { "code": 101, "indent": 0, "parameters": ["", 4, 0, 2, ""] },
             { "code": 401, "indent": 0, "parameters": ["Sim, eu sempre chego em casa dolorida!"] },
-            { "code": 205, "indent": 0, "parameters": [2, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
-            { "code": 213, "indent": 0, "parameters": [5, 1, false] },
-            { "code": 213, "indent": 0, "parameters": [2, 5, false] },
-            { "code": 101, "indent": 0, "parameters": ["Portraits menores/TorcedoresVestiario", 5, 0, 2, "Kiria"] },
-            { "code": 401, "indent": 0, "parameters": ["Socorro, tem um pervertido no vestiário"] },
-            { "code": 401, "indent": 0, "parameters": ["feminino!"] },
-            { "code": 101, "indent": 0, "parameters": ["Portraits menores/TorcedoresVestiario", 4, 0, 2, "Malia"] },
-            { "code": 401, "indent": 0, "parameters": ["Tarado!!"] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Futebol/Menina_susto",
+                  "Origin:str": "Bust",
+                  "Position:num": "8",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Futebol/Menina_susto"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 8"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
+            { "code": 101, "indent": 0, "parameters": ["", 4, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Mas o que é isso?! Socorro, tem um pervertido no vestiário feminino!"] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "2",
+                  "PictureName:str": "Portraits/Futebol/Menina_tapa_raiva",
+                  "Origin:str": "Bust",
+                  "Position:num": "1",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Futebol/Menina_tapa_raiva"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
+            { "code": 101, "indent": 0, "parameters": ["", 4, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Thorin, seu desgraçado! Dessa vez você não me "] },
+            { "code": 401, "indent": 0, "parameters": ["escapa!"] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\",\"2\"]",
+                  "EndOffsetX:eval": "+200",
+                  "EndOffsetY:eval": "-0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\",\"2\"]"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset X = +200"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset Y = -0"] },
+            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
+            { "code": 205, "indent": 0, "parameters": [4, { "list": [{ "code": 25, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 25, "indent": null }] },
+            { "code": 205, "indent": 0, "parameters": [4, { "list": [{ "code": 25, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 25, "indent": null }] },
+            { "code": 205, "indent": 0, "parameters": [3, { "list": [{ "code": 25, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 25, "indent": null }] },
+            { "code": 205, "indent": 0, "parameters": [5, { "list": [{ "code": 25, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 25, "indent": null }] },
             {
               "code": 205,
               "indent": 0,
               "parameters": [
                 2,
-                {
-                  "list": [
-                    { "code": 16, "indent": null },
-                    { "code": 1, "indent": null },
-                    { "code": 1, "indent": null },
-                    { "code": 3, "indent": null },
-                    { "code": 3, "indent": null },
-                    { "code": 3, "indent": null },
-                    { "code": 1, "indent": null },
-                    { "code": 1, "indent": null },
-                    { "code": 0 }
-                  ],
-                  "repeat": false,
-                  "skippable": true,
-                  "wait": true
-                }
+                { "list": [{ "code": 45, "parameters": ["Move to: 15,20"], "indent": null }, { "code": 25, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
               ]
             },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 3, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 3, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 3, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 15,20"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 25, "indent": null }] },
             { "code": 212, "indent": 0, "parameters": [2, 39, false] },
             { "code": 250, "indent": 0, "parameters": [{ "name": "Damage3", "volume": 50, "pitch": 100, "pan": 0 }] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [-1, { "list": [{ "code": 1, "indent": null }, { "code": 1, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }]
-            },
+            { "code": 205, "indent": 0, "parameters": [-1, { "list": [{ "code": 1, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
-            { "code": 122, "indent": 0, "parameters": [31, 31, 0, 0, 2] },
-            { "code": 357, "indent": 0, "parameters": ["VisuMZ_1_EventsMoveCore", "EventLocationSave", "Event Location: Save", { "EventId:eval": "2" }] },
-            { "code": 657, "indent": 0, "parameters": ["Event ID = 2"] },
+            { "code": 122, "indent": 0, "parameters": [31, 31, 0, 0, 1] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -464,14 +656,68 @@
             "switch2Valid": false,
             "variableId": 31,
             "variableValid": true,
-            "variableValue": 2
+            "variableValue": 1
           },
           "directionFix": false,
           "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
           "list": [
-            { "code": 101, "indent": 0, "parameters": ["Portraits menores/TorcedoresVestiario", 4, 0, 2, "Malia"] },
-            { "code": 401, "indent": 0, "parameters": ["Você não tem nenhuma decência?! Saia já daqui, "] },
-            { "code": 401, "indent": 0, "parameters": ["seu miserável!"] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Futebol/Menina_tapa_raiva",
+                  "Origin:str": "Bust",
+                  "Position:num": "5",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Futebol/Menina_tapa_raiva"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 5"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Você não tem nenhuma decência?! Saia já daqui, seu miserável!"] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\"]",
+                  "EndOffsetX:eval": "-200",
+                  "EndOffsetY:eval": "+0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\"]"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -515,50 +761,10 @@
         }
       ],
       "x": 15,
-      "y": 18
+      "y": 21
     },
     null,
-    {
-      "id": 9,
-      "name": "Saída para Estádio",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 28,
-            "variableValid": false,
-            "variableValue": 1
-          },
-          "directionFix": false,
-          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
-          "list": [
-            { "code": 201, "indent": 0, "parameters": [0, 14, 26, 14, 0, 0] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        }
-      ],
-      "x": 12,
-      "y": 23
-    },
+    null,
     null,
     null,
     null,
@@ -586,9 +792,63 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Estadio/Vestiario/!$Capacete", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
-            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 2, 0, 2, "Thorin"] },
-            { "code": 401, "indent": 0, "parameters": ["Hum... aqui só tem um monte de uniformes"] },
-            { "code": 401, "indent": 0, "parameters": ["velhos do time!"] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Principal/Thorin",
+                  "Origin:str": "Bust",
+                  "Position:num": "5",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Thorin"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 5"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Hum... aqui só tem um monte de uniformes velhos do time!"] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\"]",
+                  "EndOffsetX:eval": "-200",
+                  "EndOffsetY:eval": "+0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\"]"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -620,8 +880,63 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Estadio/Vestiario/!$Capacete", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
-            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 2, 0, 2, "Thoin"] },
-            { "code": 401, "indent": 0, "parameters": ["Ah! Aqui está o elmo."] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Principal/Thorin",
+                  "Origin:str": "Bust",
+                  "Position:num": "5",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Thorin"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 5"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Ah! Aqui está o elmo!"] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\"]",
+                  "EndOffsetX:eval": "-200",
+                  "EndOffsetY:eval": "+0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\"]"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
             { "code": 357, "indent": 0, "parameters": ["Coreto_Quests", "addArmor", "Add Armor", { "armorID": "51" }] },
             { "code": 657, "indent": 0, "parameters": ["Armor ID = 51"] },
             { "code": 357, "indent": 0, "parameters": ["VisuMZ_1_MainMenuCore", "MenuCommandForceShow", "Menu Command: Force Show", { "Symbols:arraystr": "[\"equip\"]" }] },
@@ -665,8 +980,63 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Estadio/Vestiario/!$Armadura", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
-            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 2, 0, 2, "Thorin"] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Principal/Thorin",
+                  "Origin:str": "Bust",
+                  "Position:num": "5",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Thorin"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 5"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
             { "code": 401, "indent": 0, "parameters": ["Não tem mais nada aqui que possa me ajudar!"] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\"]",
+                  "EndOffsetX:eval": "-200",
+                  "EndOffsetY:eval": "+0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\"]"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
