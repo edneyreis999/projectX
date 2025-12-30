@@ -113,7 +113,7 @@
             { "code": 223, "indent": 1, "parameters": [[-255, -255, -255, 0], 30, true] },
             { "code": 230, "indent": 1, "parameters": [30] },
             { "code": 250, "indent": 1, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
-            { "code": 201, "indent": 1, "parameters": [0, 37, 8, 6, 0, 0] },
+            { "code": 201, "indent": 1, "parameters": [0, 37, 14, 14, 2, 0] },
             { "code": 223, "indent": 1, "parameters": [[0, 0, 0, 0], 30, true] },
             { "code": 0, "indent": 1, "parameters": [] },
             { "code": 402, "indent": 0, "parameters": [1, "Ainda não estou pronto"] },
