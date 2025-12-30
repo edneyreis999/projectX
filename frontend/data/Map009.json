@@ -580,16 +580,100 @@
               "indent": 0,
               "parameters": [
                 -1,
-                { "list": [{ "code": 45, "parameters": ["Move to: 24,08"], "indent": null }, { "code": 19, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
+                { "list": [{ "code": 45, "parameters": ["Move to: 21,10"], "indent": null }, { "code": 17, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
               ]
             },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 24,08"], "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 19, "indent": null }] },
-            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal1", 2, 0, 2, "Filena"] },
-            { "code": 401, "indent": 0, "parameters": ["Até que enfim, achei que tinha ficado com medo"] },
-            { "code": 401, "indent": 0, "parameters": ["e desistido!"] },
-            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 1, 0, 2, "Thorin"] },
-            { "code": 401, "indent": 0, "parameters": ["Eu, com medo? Nunca!"] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 21,10"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 17, "indent": null }] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Principal/Filena_nada",
+                  "Origin:str": "Bust",
+                  "Position:num": "9",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Filena_nada"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 9"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Até que enfim, achei que tinha ficado com medo e desistido!"] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "2",
+                  "PictureName:str": "Portraits/Principal/Thorin Helmet",
+                  "Origin:str": "Bust",
+                  "Position:num": "1",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Thorin Helmet"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Eu, com medo?! Nunca!"] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\",\"2\"]",
+                  "EndOffsetX:eval": "+200",
+                  "EndOffsetY:eval": "-0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\",\"2\"]"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset X = +200"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset Y = -0"] },
+            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
             { "code": 122, "indent": 0, "parameters": [29, 29, 0, 0, 6] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
@@ -632,13 +716,72 @@
           "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
           "list": [
             { "code": 223, "indent": 0, "parameters": [[-255, -255, -255, 0], 60, true] },
-            { "code": 101, "indent": 0, "parameters": ["Dwarves", 0, 0, 1, "Rheed"] },
-            { "code": 401, "indent": 0, "parameters": ["Thorin entra em campo quando falta apenas um tempo para o fim da partida. "] },
-            { "code": 401, "indent": 0, "parameters": ["Após uma rápida troca de passes com Filena, ele marca 6 pontos. "] },
-            { "code": 401, "indent": 0, "parameters": ["Em seguida, o juiz apita e decreta a vitória para os Machados Enferrujados."] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Principal/Reed final",
+                  "Origin:str": "Bust",
+                  "Position:num": "5",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Reed final"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 5"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Thorin entra em campo quando falta apenas um tempo para o fim da partida. Após uma rápida troca de passes com Filena, ele marca 6 pontos. Em seguida, o juiz apita e decreta a vitória para os Machados Enferrujados."
+              ]
+            },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\"]",
+                  "EndOffsetX:eval": "+200",
+                  "EndOffsetY:eval": "-0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\"]"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset X = +200"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset Y = -0"] },
+            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
             { "code": 122, "indent": 0, "parameters": [29, 29, 0, 0, 7] },
             { "code": 223, "indent": 0, "parameters": [[0, 0, 0, 0], 1, true] },
-            { "code": 201, "indent": 0, "parameters": [0, 14, 9, 7, 4, 0] },
+            { "code": 201, "indent": 0, "parameters": [0, 14, 10, 7, 6, 0] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
