@@ -509,8 +509,8 @@
   },
   {
     "id": 19,
-    "members": [],
-    "name": "",
+    "members": [{ "enemyId": 30, "x": 217, "y": 382, "hidden": false }],
+    "name": "Mhordred",
     "pages": [
       {
         "conditions": {
@@ -813,8 +813,8 @@
   },
   {
     "id": 30,
-    "members": [],
-    "name": "",
+    "members": [{ "enemyId": 21, "x": 160, "y": 370, "hidden": false }],
+    "name": "Capitão Ignoto",
     "pages": [
       {
         "conditions": {

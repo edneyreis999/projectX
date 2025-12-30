@@ -9,7 +9,7 @@
   "displayName": "",
   "encounterList": [],
   "encounterStep": 30,
-  "height": 20,
+  "height": 18,
   "note": "",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
@@ -22,63 +22,166 @@
   "tilesetId": 10,
   "width": 22,
   "data": [
-    1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 5971, 5969, 5969, 5969, 5969, 5969, 5969, 5959, 5969,
-    5969, 5969, 5969, 5969, 5969, 5969, 5969, 5969, 5969, 5969, 5973, 1544, 1544, 5968, 6322, 6322, 6322, 6322, 6322, 6322, 5968, 6322, 6322, 6322, 6322, 6322, 6322, 6322, 6322, 6322, 6322, 6322,
-    5968, 1544, 1544, 5968, 6328, 6328, 6328, 6328, 6328, 6328, 5968, 6328, 6328, 6328, 6328, 6328, 6328, 6328, 6328, 6328, 6328, 6328, 5968, 1544, 1544, 5968, 2994, 2980, 2980, 2980, 2980, 2996,
-    5968, 2994, 2980, 2980, 2980, 2980, 2980, 2980, 2980, 2980, 2980, 2996, 5968, 1544, 1544, 5968, 2976, 2960, 2960, 2960, 2960, 2984, 5968, 2976, 2960, 2960, 2964, 2988, 2988, 2988, 2988, 2988,
-    2968, 2984, 5968, 1544, 1544, 5968, 3000, 2988, 2972, 2988, 2988, 2998, 5968, 2976, 2960, 2960, 2984, 4098, 4084, 4084, 4084, 4100, 2976, 2984, 5980, 1544, 1544, 5955, 5969, 5981, 2992, 5979,
-    5969, 5969, 5975, 2976, 2960, 2960, 2984, 4080, 4064, 4064, 4064, 4088, 2976, 2984, 6327, 1544, 1544, 5968, 6322, 6326, 2992, 6323, 6322, 6322, 6326, 2976, 2960, 2960, 2984, 4104, 4092, 4092,
-    4092, 4102, 2976, 2984, 6333, 1544, 1544, 5968, 6328, 6332, 2992, 6329, 6328, 6328, 6332, 2976, 2960, 2960, 2962, 2980, 2980, 2980, 2980, 2980, 2961, 2966, 3005, 1544, 1544, 5968, 3003, 2993,
-    2991, 2993, 2993, 2993, 2983, 2989, 2988, 2988, 2988, 2988, 2988, 2988, 2972, 2988, 2988, 2998, 5978, 1544, 1544, 5955, 5969, 5969, 5969, 5969, 5969, 5981, 2992, 5979, 5969, 5959, 5969, 5969,
-    5969, 5981, 2992, 5979, 5969, 5969, 5963, 1544, 1544, 5968, 6322, 6322, 6322, 6322, 6322, 6326, 2992, 6323, 6322, 5968, 6322, 6322, 6322, 6326, 2992, 6323, 6322, 6322, 5968, 1544, 1544, 5968,
-    6328, 6328, 6328, 6328, 6328, 6332, 2992, 6329, 6328, 5968, 6328, 6328, 6328, 6332, 2992, 6329, 6328, 6328, 5968, 1544, 1544, 5968, 2994, 2980, 2980, 2980, 2980, 2980, 2963, 2980, 2996, 5968,
-    2994, 2980, 2980, 2980, 2963, 2980, 2980, 2996, 5968, 1544, 1544, 5968, 2976, 2960, 2960, 2960, 2960, 2960, 2960, 2960, 2984, 5968, 2976, 2960, 2960, 2960, 2960, 2960, 2960, 2984, 5968, 1544,
-    1544, 5968, 2976, 2960, 2960, 2960, 2960, 2960, 2960, 2960, 2984, 5968, 2976, 2960, 2960, 2960, 2960, 2960, 2960, 2984, 5968, 1544, 1544, 5968, 3000, 2988, 2988, 2988, 2988, 2988, 2988, 2988,
-    2998, 5968, 3000, 2988, 2988, 2988, 2988, 2988, 2988, 2998, 5968, 1544, 1544, 5977, 5969, 5969, 5969, 5969, 5969, 5969, 5969, 5969, 5969, 5967, 5969, 5969, 5969, 5969, 5969, 5969, 5969, 5969,
-    5975, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 1544, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 134, 0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 142, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6019, 6017, 6017, 6017, 6017, 6017, 6017, 6007, 6017, 6017, 6017, 6017, 6017, 6017, 6017, 6017, 6017, 6017, 6017, 6021, 0, 0,
+    6016, 6370, 6370, 6370, 6370, 6370, 6370, 6016, 6370, 6370, 6370, 6370, 6370, 6370, 6370, 6370, 6370, 6370, 6370, 6016, 0, 0, 6016, 6376, 6376, 6376, 6376, 6376, 6376, 6016, 6376, 6376, 6376,
+    6376, 6376, 6376, 6376, 6376, 6376, 6376, 6376, 6016, 0, 0, 6016, 3282, 3268, 3268, 3268, 3268, 3284, 6016, 3282, 3268, 3268, 3268, 3268, 3268, 3268, 3268, 3268, 3268, 3284, 6016, 0, 0, 6016,
+    3264, 3248, 3248, 3248, 3248, 3272, 6016, 3264, 3248, 3248, 3252, 3276, 3276, 3276, 3276, 3276, 3256, 3272, 6016, 0, 0, 6016, 3288, 3276, 3260, 3276, 3276, 3286, 6016, 3264, 3248, 3248, 3272,
+    4098, 4084, 4084, 4084, 4100, 3264, 3272, 6016, 0, 0, 6003, 6017, 6029, 3280, 6027, 6017, 6017, 6023, 3264, 3248, 3248, 3272, 4080, 4064, 4064, 4064, 4088, 3264, 3272, 6016, 0, 0, 6016, 6370,
+    6374, 3280, 6371, 6370, 6370, 6374, 3264, 3248, 3248, 3272, 4104, 4092, 4092, 4092, 4102, 3264, 3272, 6016, 0, 0, 6016, 6376, 6380, 3280, 6377, 6376, 6376, 6380, 3264, 3248, 3248, 3250, 3268,
+    3268, 3268, 3268, 3268, 3249, 3272, 6016, 0, 0, 6016, 3291, 3281, 3279, 3281, 3281, 3281, 3271, 3277, 3276, 3256, 3248, 3252, 3276, 3276, 3260, 3276, 3276, 3286, 6016, 0, 0, 6003, 6017, 6017,
+    6017, 6017, 6017, 6029, 3280, 6027, 6021, 3264, 3248, 3272, 6019, 6029, 3280, 6027, 6017, 6017, 6011, 0, 0, 6016, 6370, 6370, 6370, 6370, 6370, 6374, 3280, 6371, 6016, 3264, 3248, 3272, 6016,
+    6374, 3280, 6371, 6370, 6370, 6016, 0, 0, 6016, 6376, 6376, 6376, 6376, 6376, 6380, 3280, 6377, 6016, 3288, 3256, 3272, 6016, 6380, 3280, 6377, 6376, 6376, 6016, 0, 0, 6016, 3282, 3268, 3268,
+    3268, 3268, 3268, 3251, 3284, 6016, 144, 3264, 3272, 6016, 3282, 3251, 3268, 3268, 3284, 6016, 0, 0, 6016, 3288, 3276, 3276, 3276, 3276, 3276, 3276, 3286, 6016, 3291, 3261, 3286, 6016, 3288, 3276,
+    3276, 3276, 3286, 6016, 0, 0, 6025, 6017, 6017, 6017, 6017, 6017, 6017, 6017, 6017, 6015, 6029, 3292, 6027, 6015, 6017, 6017, 6017, 6017, 6017, 6023, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 134, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 142, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 4, 0, 132, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 12, 0, 140, 141, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 19, 20, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 4, 0, 132, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 12, 0, 140,
+    141, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 19, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 105, 0, 0, 556, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 113, 517, 0, 512, 539, 539, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 545, 0, 0, 0, 0, 0, 0, 0, 0, 265, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 545, 0, 265, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 545, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 540, 540, 0, 0, 0, 0, 0, 0, 536, 0, 0, 0, 0, 0, 530, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 536, 530, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 517, 0, 530, 0, 0, 0, 0, 0, 532, 0, 0, 0, 2, 0, 0, 0, 0, 0, 545, 545, 36, 512, 512, 512, 537, 0, 0, 0, 0, 0, 0, 0, 0, 28, 10, 0, 0, 0, 0, 0, 0, 24, 25, 26, 0, 548, 537,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 28, 32, 33, 34, 28, 548, 537, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 548, 40, 36, 42, 548, 0, 545, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 545, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 538, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 538, 131, 130, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 16, 7, 538, 128, 129, 136, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 0, 0, 0, 0, 0, 15, 0, 0, 0, 139, 0, 0, 0, 0, 522,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    266, 556, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 517, 517, 0, 512, 539, 539, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 545, 0, 0, 0, 0, 0, 0, 0, 0, 265, 0, 0, 0, 0, 0, 0, 0, 0, 265, 0, 0, 0, 545,
-    0, 265, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 265, 265, 265, 545, 265, 0, 265, 0, 0, 0, 0, 0, 0, 0, 540, 540, 0, 0, 0, 0, 0, 0, 536, 0, 0, 0, 0, 0, 530, 0, 0, 0, 0, 266, 520, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 265, 265, 265,
-    265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 0, 0, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 0, 0,
-    265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 0, 0, 265, 9, 0, 536, 530, 265, 265, 265, 0, 0, 0, 0, 265, 265, 265, 528, 517, 266, 530, 265, 0,
-    0, 265, 266, 532, 0, 266, 27, 2, 265, 0, 0, 0, 0, 545, 545, 36, 512, 512, 512, 537, 265, 0, 0, 265, 0, 0, 0, 0, 28, 10, 265, 0, 0, 0, 0, 27, 24, 25, 26, 27, 548, 537, 265, 0, 0, 265, 265, 265, 0,
-    265, 265, 265, 265, 0, 0, 0, 0, 28, 32, 33, 34, 28, 548, 537, 265, 0, 0, 265, 265, 265, 0, 265, 265, 265, 265, 0, 0, 0, 0, 548, 40, 36, 42, 548, 266, 545, 265, 0, 0, 265, 265, 265, 0, 265, 265,
-    265, 265, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 545, 266, 0, 0, 265, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 265, 0, 0, 265, 265, 265, 265, 265, 265, 265, 0, 265, 265, 265, 265, 265, 265,
-    265, 538, 265, 265, 265, 265, 0, 0, 265, 265, 6, 265, 265, 265, 265, 0, 265, 265, 265, 131, 265, 265, 265, 538, 265, 130, 265, 265, 0, 0, 265, 265, 265, 265, 265, 265, 265, 0, 5, 265, 265, 265, 7,
-    128, 129, 538, 136, 265, 136, 265, 0, 0, 265, 265, 265, 0, 265, 265, 0, 0, 13, 0, 265, 0, 15, 0, 0, 0, 0, 0, 139, 265, 0, 0, 265, 522, 266, 0, 0, 0, 0, 0, 0, 0, 265, 0, 0, 0, 0, 0, 0, 0, 0, 265,
-    0, 0, 265, 0, 0, 0, 0, 0, 0, 0, 0, 0, 265, 0, 0, 0, 0, 0, 0, 0, 0, 265, 0, 0, 265, 0, 0, 0, 0, 0, 0, 0, 0, 0, 265, 0, 0, 0, 0, 0, 0, 0, 0, 265, 0, 0, 265, 265, 265, 265, 265, 265, 265, 265, 265,
-    265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 265, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0,
-    0, 5, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 5, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 5, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5,
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0,
-    0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0,
-    0, 0, 5, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 5, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0,
+    0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0
   ],
   "events": [
     null,
-    null,
-    null,
-    null,
+    {
+      "id": 1,
+      "name": "EV001",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 6, "pattern": 0, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 13,
+      "y": 15
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 4, "pattern": 0, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 11,
+      "y": 15
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 14,
+      "y": 2
+    },
     {
       "id": 4,
       "name": "EV004",
@@ -101,21 +204,21 @@
             "variableValue": 0
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "CasaForjaprata/!$cobertorCama", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": false,
+          "stepAnime": true,
           "through": false,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         }
       ],
-      "x": 2,
-      "y": 5
+      "x": 4,
+      "y": 2
     },
     {
       "id": 5,
@@ -187,7 +290,7 @@
           "moveType": 0,
           "priorityType": 0,
           "stepAnime": false,
-          "through": true,
+          "through": false,
           "trigger": 0,
           "walkAnime": true
         },
@@ -216,9 +319,9 @@
           "moveType": 0,
           "priorityType": 0,
           "stepAnime": false,
-          "through": false,
+          "through": true,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         },
         {
           "conditions": {
@@ -533,7 +636,7 @@
           "moveType": 0,
           "priorityType": 0,
           "stepAnime": false,
-          "through": true,
+          "through": false,
           "trigger": 0,
           "walkAnime": true
         }
@@ -581,10 +684,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 0,
-          "stepAnime": false,
+          "stepAnime": true,
           "through": false,
           "trigger": 4,
-          "walkAnime": true
+          "walkAnime": false
         },
         {
           "conditions": {
@@ -643,7 +746,7 @@
           "directionFix": true,
           "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 2, "characterIndex": 7 },
           "list": [
-            { "code": 201, "indent": 0, "parameters": [0, 7, 7, 24, 0, 0] },
+            { "code": 201, "indent": 0, "parameters": [0, 7, 5, 22, 0, 0] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 4,
@@ -718,8 +821,8 @@
           "walkAnime": true
         }
       ],
-      "x": 20,
-      "y": 9
+      "x": 12,
+      "y": 16
     },
     {
       "id": 8,
@@ -785,11 +888,11 @@
                   "PictureID:eval": "1",
                   "PictureName:str": "Portraits/Principal/Tordan",
                   "Origin:str": "Bust",
-                  "Position:num": "3",
+                  "Position:num": "9",
                   "StartOffsetX:eval": "-200",
                   "StartOffsetY:eval": "+0",
                   "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto",
+                  "HorzMirror:str": "Auto-Reverse",
                   "Duration:eval": "20"
                 }
               ]
@@ -797,11 +900,11 @@
             { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
             { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Tordan"] },
             { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 3"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 9"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
             { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
@@ -815,25 +918,25 @@
                 "BASIC: Enter Bust",
                 {
                   "PictureID:eval": "2",
-                  "PictureName:str": "Portraits/Principal/Thorin Armadura Hemet_raiva",
+                  "PictureName:str": "Portraits/Principal/Thorin Helmet",
                   "Origin:str": "Bust",
-                  "Position:num": "7",
+                  "Position:num": "1",
                   "StartOffsetX:eval": "-200",
                   "StartOffsetY:eval": "+0",
                   "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto",
+                  "HorzMirror:str": "Auto-Reverse",
                   "Duration:eval": "20"
                 }
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Thorin Armadura Hemet_ra…"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Thorin Helmet"] },
             { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 7"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 1"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
             { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
@@ -864,7 +967,7 @@
             { "code": 401, "indent": 0, "parameters": ["Eu não vou. Obrigado, mas isso não é o que eu escolhi para mim."] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
             { "code": 101, "indent": 0, "parameters": ["", 1, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["E o que você escolheu para você? Futebol rúnico? Isso é brincadeira de criança, está na hora de crescer!"] },
+            { "code": 401, "indent": 0, "parameters": ["E o que você escolheu para você? Futebol Rúnico? Isso é brincadeira de criança, está na hora de crescer!"] },
             { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
             { "code": 101, "indent": 0, "parameters": ["", 1, 0, 2, ""] },
             { "code": 401, "indent": 0, "parameters": ["Eu sou bom no que faço e posso provar!"] },
@@ -877,9 +980,9 @@
                 "BASIC: Exit Bust(s)",
                 {
                   "PictureID:arrayeval": "[\"1\",\"2\"]",
-                  "EndOffsetX:eval": "-200",
-                  "EndOffsetY:eval": "+0",
-                  "EasingType:str": "InSine",
+                  "EndOffsetX:eval": "+200",
+                  "EndOffsetY:eval": "-0",
+                  "EasingType:str": "OutSine",
                   "FlipDirection:str": "None",
                   "Duration:eval": "20",
                   "AutoErase:eval": "true"
@@ -887,9 +990,9 @@
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\",\"2\"]"] },
-            { "code": 657, "indent": 0, "parameters": ["End Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["End Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset X = +200"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset Y = -0"] },
+            { "code": 657, "indent": 0, "parameters": ["Exit Easing = OutSine"] },
             { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
@@ -909,7 +1012,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {
@@ -945,7 +1048,7 @@
                   "StartOffsetX:eval": "-200",
                   "StartOffsetY:eval": "+0",
                   "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto",
+                  "HorzMirror:str": "Auto-Reverse",
                   "Duration:eval": "20"
                 }
               ]
@@ -957,7 +1060,7 @@
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
             { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
             { "code": 101, "indent": 0, "parameters": ["", 3, 0, 2, ""] },
@@ -1028,25 +1131,25 @@
                 "BASIC: Enter Bust",
                 {
                   "PictureID:eval": "1",
-                  "PictureName:str": "Portraits/Principal/Tordan",
+                  "PictureName:str": "Portraits/Principal/Tordan_zangado",
                   "Origin:str": "Bust",
-                  "Position:num": "3",
+                  "Position:num": "9",
                   "StartOffsetX:eval": "-200",
                   "StartOffsetY:eval": "+0",
                   "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto",
+                  "HorzMirror:str": "Auto-Reverse",
                   "Duration:eval": "20"
                 }
               ]
             },
             { "code": 657, "indent": 1, "parameters": ["Picture ID = 1"] },
-            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Tordan"] },
+            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Tordan_zangado"] },
             { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 1, "parameters": ["Screen Position = 3"] },
+            { "code": 657, "indent": 1, "parameters": ["Screen Position = 9"] },
             { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
             { "code": 657, "indent": 1, "parameters": ["Start Offset Y = +0"] },
             { "code": 657, "indent": 1, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto"] },
+            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 1, "parameters": [43, 43, 0] },
             { "code": 101, "indent": 1, "parameters": ["Portraits menores/Principal2", 3, 0, 2, ""] },
@@ -1060,29 +1163,58 @@
                 "BASIC: Enter Bust",
                 {
                   "PictureID:eval": "2",
-                  "PictureName:str": "Portraits/Principal/Thorin Armadura Hemet_raiva",
+                  "PictureName:str": "Portraits/Principal/Thorin_capacete_bravo",
                   "Origin:str": "Bust",
-                  "Position:num": "7",
+                  "Position:num": "1",
                   "StartOffsetX:eval": "-200",
                   "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto",
+                  "EasingType:str": "InSine",
+                  "HorzMirror:str": "Auto-Reverse",
                   "Duration:eval": "20"
                 }
               ]
             },
             { "code": 657, "indent": 1, "parameters": ["Picture ID = 2"] },
-            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Thorin Armadura Hemet_ra…"] },
+            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Thorin_capacete_bravo"] },
             { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 1, "parameters": ["Screen Position = 7"] },
+            { "code": 657, "indent": 1, "parameters": ["Screen Position = 1"] },
             { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
             { "code": 657, "indent": 1, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 1, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto"] },
+            { "code": 657, "indent": 1, "parameters": ["Entrance Easing = InSine"] },
+            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 1, "parameters": [44, 44, 0] },
             { "code": 101, "indent": 1, "parameters": ["", 1, 0, 2, ""] },
             { "code": 401, "indent": 1, "parameters": ["Isso não é diferente dos seus prêmios políticos! Você ganha a vida manipulando as pessoas, deveria ao menos me dar o benefício da dúvida!"] },
+            {
+              "code": 357,
+              "indent": 1,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Principal/Tordan",
+                  "Origin:str": "Bust",
+                  "Position:num": "9",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 1, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Tordan"] },
+            { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 1, "parameters": ["Screen Position = 9"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 1, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 1, "parameters": [43, 43, 0] },
             { "code": 101, "indent": 1, "parameters": ["", 3, 0, 2, ""] },
             {
@@ -1101,7 +1233,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Não posso?! Então nós veremos. O jantar foi servido no horário de sempre e retirado a pouco. Espero que tenha comido no campo, pois não há privilégios nessa casa para aqueles que não seguem as regras. Vá domir."
+                "Não posso?! Então nós veremos. O jantar foi servido no horário de sempre e retirado a pouco. Espero que tenha comido no campo, pois não há privilégios nessa casa para aqueles que não seguem as regras. Vá dormir."
               ]
             },
             {
@@ -1113,8 +1245,8 @@
                 "BASIC: Exit Bust(s)",
                 {
                   "PictureID:arrayeval": "[\"1\",\"2\"]",
-                  "EndOffsetX:eval": "-200",
-                  "EndOffsetY:eval": "+0",
+                  "EndOffsetX:eval": "+200",
+                  "EndOffsetY:eval": "-0",
                   "EasingType:str": "InSine",
                   "FlipDirection:str": "None",
                   "Duration:eval": "20",
@@ -1123,28 +1255,45 @@
               ]
             },
             { "code": 657, "indent": 1, "parameters": ["Picture ID(s) = [\"1\",\"2\"]"] },
-            { "code": 657, "indent": 1, "parameters": ["End Offset X = -200"] },
-            { "code": 657, "indent": 1, "parameters": ["End Offset Y = +0"] },
+            { "code": 657, "indent": 1, "parameters": ["End Offset X = +200"] },
+            { "code": 657, "indent": 1, "parameters": ["End Offset Y = -0"] },
             { "code": 657, "indent": 1, "parameters": ["Exit Easing = InSine"] },
             { "code": 657, "indent": 1, "parameters": ["Flip Direction = None"] },
             { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
             { "code": 657, "indent": 1, "parameters": ["Auto-Erase? = true"] },
+            {
+              "code": 357,
+              "indent": 1,
+              "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusTargetEvent", "Camera: Focus Target Event", { "EventID:eval": "18", "Duration:num": "400", "EasingType:str": "InOutSine" }]
+            },
+            { "code": 657, "indent": 1, "parameters": ["Event ID = 18"] },
+            { "code": 657, "indent": 1, "parameters": ["Duration = 400"] },
+            { "code": 657, "indent": 1, "parameters": ["Easing Type = InOutSine"] },
+            { "code": 205, "indent": 1, "parameters": [-1, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
+            { "code": 505, "indent": 1, "parameters": [{ "code": 16, "indent": null }] },
+            {
+              "code": 205,
+              "indent": 1,
+              "parameters": [
+                8,
+                {
+                  "list": [{ "code": 31, "indent": null }, { "code": 45, "parameters": ["Move to: 4,15"], "indent": null }, { "code": 19, "indent": null }, { "code": 0 }],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            { "code": 505, "indent": 1, "parameters": [{ "code": 31, "indent": null }] },
+            { "code": 505, "indent": 1, "parameters": [{ "code": 45, "parameters": ["Move to: 4,15"], "indent": null }] },
+            { "code": 505, "indent": 1, "parameters": [{ "code": 19, "indent": null }] },
             { "code": 121, "indent": 1, "parameters": [9, 9, 1] },
             { "code": 121, "indent": 1, "parameters": [10, 10, 0] },
             { "code": 123, "indent": 1, "parameters": ["B", 0] },
             { "code": 355, "indent": 1, "parameters": ["SQSM.CompleteTaskForQuest(\"fimDeJogo\", 3);"] },
             { "code": 655, "indent": 1, "parameters": ["SQSM.ShowTaskForQuest(\"fimDeJogo\", 4);"] },
             { "code": 655, "indent": 1, "parameters": ["SQSM.ShowDescriptionForQuest(\"fimDeJogo\", 3);"] },
-            {
-              "code": 205,
-              "indent": 1,
-              "parameters": [
-                8,
-                { "list": [{ "code": 45, "parameters": ["Move to: 4,15"], "indent": null }, { "code": 19, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
-              ]
-            },
-            { "code": 505, "indent": 1, "parameters": [{ "code": 45, "parameters": ["Move to: 4,15"], "indent": null }] },
-            { "code": 505, "indent": 1, "parameters": [{ "code": 19, "indent": null }] },
+            { "code": 357, "indent": 1, "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusWait", "Camera: Wait for Focus", {}] },
             {
               "code": 357,
               "indent": 1,
@@ -1154,7 +1303,7 @@
                 "BASIC: Enter Bust",
                 {
                   "PictureID:eval": "1",
-                  "PictureName:str": "Portraits/Principal/Tordan",
+                  "PictureName:str": "Portraits/Principal/Tordan_triste",
                   "Origin:str": "Bust",
                   "Position:num": "5",
                   "StartOffsetX:eval": "-200",
@@ -1166,7 +1315,7 @@
               ]
             },
             { "code": 657, "indent": 1, "parameters": ["Picture ID = 1"] },
-            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Tordan"] },
+            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Tordan_triste"] },
             { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
             { "code": 657, "indent": 1, "parameters": ["Screen Position = 5"] },
             { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
@@ -1203,6 +1352,9 @@
             { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
             { "code": 657, "indent": 1, "parameters": ["Auto-Erase? = true"] },
             { "code": 213, "indent": 1, "parameters": [8, 8, false] },
+            { "code": 357, "indent": 1, "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusPlayer", "Camera: Focus Player", { "Duration:num": "120", "EasingType:str": "InOutSine" }] },
+            { "code": 657, "indent": 1, "parameters": ["Duration = 120"] },
+            { "code": 657, "indent": 1, "parameters": ["Easing Type = InOutSine"] },
             { "code": 122, "indent": 1, "parameters": [27, 27, 0, 0, 4] },
             { "code": 0, "indent": 1, "parameters": [] },
             { "code": 411, "indent": 0, "parameters": [] },
@@ -1215,7 +1367,7 @@
                 "BASIC: Enter Bust",
                 {
                   "PictureID:eval": "1",
-                  "PictureName:str": "Portraits/Principal/Tordan",
+                  "PictureName:str": "Portraits/Principal/Tordan_zangado",
                   "Origin:str": "Bust",
                   "Position:num": "5",
                   "StartOffsetX:eval": "-200",
@@ -1227,7 +1379,7 @@
               ]
             },
             { "code": 657, "indent": 1, "parameters": ["Picture ID = 1"] },
-            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Tordan"] },
+            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Tordan_zangado"] },
             { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
             { "code": 657, "indent": 1, "parameters": ["Screen Position = 5"] },
             { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
@@ -1275,7 +1427,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 1,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {
@@ -1334,25 +1486,25 @@
                 "BASIC: Enter Bust",
                 {
                   "PictureID:eval": "1",
-                  "PictureName:str": "Portraits/Principal/Tordan",
+                  "PictureName:str": "Portraits/Principal/Tordan_zangado",
                   "Origin:str": "Bust",
                   "Position:num": "5",
                   "StartOffsetX:eval": "-200",
                   "StartOffsetY:eval": "+0",
                   "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto",
+                  "HorzMirror:str": "Auto-Reverse",
                   "Duration:eval": "20"
                 }
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Tordan"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Tordan_zangado"] },
             { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = 5"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
             { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
             { "code": 101, "indent": 0, "parameters": ["", 3, 0, 2, ""] },
@@ -1392,7 +1544,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {
@@ -1427,7 +1579,44 @@
       "x": 12,
       "y": 7
     },
-    null,
+    {
+      "id": 9,
+      "name": "EV009",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 5,
+      "y": 12
+    },
     {
       "id": 10,
       "name": "Troféu 2",
@@ -1499,7 +1688,7 @@
           "walkAnime": true
         }
       ],
-      "x": 13,
+      "x": 15,
       "y": 14
     },
     {
@@ -1548,7 +1737,7 @@
                 "BASIC: Enter Bust",
                 {
                   "PictureID:eval": "1",
-                  "PictureName:str": "Portraits/Principal/Melia",
+                  "PictureName:str": "Portraits/Principal/Mélia_desespero",
                   "Origin:str": "Bust",
                   "Position:num": "5",
                   "StartOffsetX:eval": "-200",
@@ -1560,7 +1749,7 @@
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Melia"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Mélia_desespero"] },
             { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = 5"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
@@ -1601,68 +1790,6 @@
             { "code": 505, "indent": 0, "parameters": [{ "code": 40, "indent": null }] },
             { "code": 205, "indent": 0, "parameters": [12, { "list": [{ "code": 39, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 39, "indent": null }] },
-            { "code": 213, "indent": 0, "parameters": [-1, 2, false] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "1",
-                  "PictureName:str": "Portraits/Principal/Thorin",
-                  "Origin:str": "Bust",
-                  "Position:num": "5",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Thorin"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 5"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": ["Mamãe, espere! Mas que droga, o que foi esse sonho maluco? Eu não a vejo a tanto tempo, o que tudo isso realmente significa? Eu sou a chave? Gildrat cairá?!"]
-            },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_ExitBusts",
-                "BASIC: Exit Bust(s)",
-                {
-                  "PictureID:arrayeval": "[\"1\"]",
-                  "EndOffsetX:eval": "-200",
-                  "EndOffsetY:eval": "+0",
-                  "EasingType:str": "InSine",
-                  "FlipDirection:str": "None",
-                  "Duration:eval": "20",
-                  "AutoErase:eval": "true"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\"]"] },
-            { "code": 657, "indent": 0, "parameters": ["End Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["End Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
             { "code": 231, "indent": 0, "parameters": [1, "SF_Monster_3", 1, 0, 480, 912, 220, 220, 255, 0] },
             { "code": 249, "indent": 0, "parameters": [{ "name": "Horror", "volume": 85, "pitch": 100, "pan": 0 }] },
             { "code": 232, "indent": 0, "parameters": [1, 0, 1, 0, 464, 328, 220, 220, 255, 0, 30, true, 2] },
@@ -1681,6 +1808,13 @@
             { "code": 230, "indent": 0, "parameters": [120] },
             { "code": 222, "indent": 0, "parameters": [] },
             {
+              "code": 205,
+              "indent": 0,
+              "parameters": [-1, { "list": [{ "code": 14, "parameters": [1, 0], "indent": null }, { "code": 18, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 14, "parameters": [1, 0], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 18, "indent": null }] },
+            {
               "code": 357,
               "indent": 0,
               "parameters": [
@@ -1689,9 +1823,9 @@
                 "BASIC: Enter Bust",
                 {
                   "PictureID:eval": "1",
-                  "PictureName:str": "Portraits/Principal/Saparo",
+                  "PictureName:str": "Portraits/Principal/Sáparo_pistola",
                   "Origin:str": "Bust",
-                  "Position:num": "5",
+                  "Position:num": "9",
                   "StartOffsetX:eval": "-200",
                   "StartOffsetY:eval": "+0",
                   "EasingType:str": "OutSine",
@@ -1701,9 +1835,9 @@
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Saparo"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Sáparo_pistola"] },
             { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 5"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 9"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
             { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
@@ -1711,7 +1845,84 @@
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Acorda, bobalhão! Ha-ha!"] },
+            { "code": 401, "indent": 0, "parameters": ["Até que enfim você acordou, bela adormecida de uma figa!"] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "2",
+                  "PictureName:str": "Portraits/Principal/Thorin_confusão",
+                  "Origin:str": "Bust",
+                  "Position:num": "1",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Thorin_confusão"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": ["Mas que droga, o que foi esse sonho maluco? Eu não a vejo a tanto tempo, o que tudo isso realmente significa? Eu sou a chave? Gildrat cairá?!"]
+            },
+            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Eu não tô nem aí, só crianças tem medo de pesadelos! Você tem dois minutos antes de eu considerar seu nariz meu café da manhã. Ah, e os Picaretas de Mitril já estão em campo. Se a gente perder porque você dormiu demais, Filena nunca vai te perdoar."
+              ]
+            },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "2",
+                  "PictureName:str": "Portraits/Principal/Thorin_bobo",
+                  "Origin:str": "Bust",
+                  "Position:num": "1",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Thorin_bobo"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Não vai me perdoar?! Fica frio ae, periquito! Aquela garota me ama!"] },
             {
               "code": 357,
               "indent": 0,
@@ -1720,9 +1931,9 @@
                 "Basic_ExitBusts",
                 "BASIC: Exit Bust(s)",
                 {
-                  "PictureID:arrayeval": "[\"1\"]",
-                  "EndOffsetX:eval": "-200",
-                  "EndOffsetY:eval": "+0",
+                  "PictureID:arrayeval": "[\"1\",\"2\"]",
+                  "EndOffsetX:eval": "+200",
+                  "EndOffsetY:eval": "-0",
                   "EasingType:str": "InSine",
                   "FlipDirection:str": "None",
                   "Duration:eval": "20",
@@ -1730,14 +1941,13 @@
                 }
               ]
             },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\"]"] },
-            { "code": 657, "indent": 0, "parameters": ["End Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["End Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\",\"2\"]"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset X = +200"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset Y = -0"] },
             { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
             { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
-            { "code": 222, "indent": 0, "parameters": [] },
             {
               "code": 205,
               "indent": 0,
@@ -1753,80 +1963,8 @@
             },
             { "code": 505, "indent": 0, "parameters": [{ "code": 14, "parameters": [0, 0], "indent": null }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 14, "parameters": [0, 0], "indent": null }] },
-            { "code": 213, "indent": 0, "parameters": [12, 1, false] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "1",
-                  "PictureName:str": "Portraits/Principal/Saparo",
-                  "Origin:str": "Bust",
-                  "Position:num": "5",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Saparo"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 5"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Você tem dois minutos antes de eu considerar seu nariz meu café da manhã. Ah, e os Picaretas de Mitril já estão em campo. Se a gente perder porque você dormiu demais, Filena nunca vai te perdoar."
-              ]
-            },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_ExitBusts",
-                "BASIC: Exit Bust(s)",
-                {
-                  "PictureID:arrayeval": "[\"1\"]",
-                  "EndOffsetX:eval": "-200",
-                  "EndOffsetY:eval": "+0",
-                  "EasingType:str": "InSine",
-                  "FlipDirection:str": "None",
-                  "Duration:eval": "20",
-                  "AutoErase:eval": "true"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\"]"] },
-            { "code": 657, "indent": 0, "parameters": ["End Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["End Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
-            { "code": 221, "indent": 0, "parameters": [] },
-            { "code": 222, "indent": 0, "parameters": [] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [-1, { "list": [{ "code": 14, "parameters": [1, 0], "indent": null }, { "code": 18, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 14, "parameters": [1, 0], "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 18, "indent": null }] },
-            { "code": 213, "indent": 0, "parameters": [-1, 7, false] },
+            { "code": 205, "indent": 0, "parameters": [-1, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
             {
               "code": 357,
               "indent": 0,
@@ -1973,7 +2111,7 @@
                 "BASIC: Enter Bust",
                 {
                   "PictureID:eval": "1",
-                  "PictureName:str": "Portraits/Principal/Melia",
+                  "PictureName:str": "Portraits/Principal/Mélia_alerta",
                   "Origin:str": "Bust",
                   "Position:num": "5",
                   "StartOffsetX:eval": "-200",
@@ -1985,7 +2123,7 @@
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Melia"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Mélia_alerta"] },
             { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = 5"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
@@ -2039,13 +2177,79 @@
                 "BASIC: Enter Bust",
                 {
                   "PictureID:eval": "1",
-                  "PictureName:str": "Portraits/Principal/Thorin",
+                  "PictureName:str": "Portraits/Principal/Thorin_assustado",
                   "Origin:str": "Bust",
-                  "Position:num": "5",
+                  "Position:num": "1",
                   "StartOffsetX:eval": "-200",
                   "StartOffsetY:eval": "+0",
                   "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Thorin_assustado"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Eu ainda não entendo o que isso tudo significa... por que você foi embora, mamãe?"] },
+            { "code": 357, "indent": 0, "parameters": ["PKD_AnimaX", "StopAnimationAction", "Stop Anima Action", { "eventId": "0" }] },
+            { "code": 657, "indent": 0, "parameters": ["Character ID = 0"] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "2",
+                  "PictureName:str": "Portraits/Principal/Saparo",
+                  "Origin:str": "Bust",
+                  "Position:num": "9",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Saparo"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 9"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Dormiu com as mulas-tatu?! Acordou com o coice! HAHA!"] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Principal/Thorin",
+                  "Origin:str": "Bust",
+                  "Position:num": "1",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
                   "Duration:eval": "20"
                 }
               ]
@@ -2053,15 +2257,21 @@
             { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
             { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Thorin"] },
             { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 5"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 1"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
             { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Eu ainda não entendo o que isso tudo significa... por que você foi embora, mamãe?"] },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Eu tive uma noite ruim... mas quer saber? Hoje ninguém vai estragar o meu dia, nem você nem o meu pai! Partiu treinar, a final do campeonato está chegando e eu não tenho tempo para um trabalho idiota como uma expedição. "
+              ]
+            },
             {
               "code": 357,
               "indent": 0,
@@ -2070,9 +2280,9 @@
                 "Basic_ExitBusts",
                 "BASIC: Exit Bust(s)",
                 {
-                  "PictureID:arrayeval": "[\"1\"]",
-                  "EndOffsetX:eval": "-200",
-                  "EndOffsetY:eval": "+0",
+                  "PictureID:arrayeval": "[\"1\",\"2\"]",
+                  "EndOffsetX:eval": "+200",
+                  "EndOffsetY:eval": "-0",
                   "EasingType:str": "InSine",
                   "FlipDirection:str": "None",
                   "Duration:eval": "20",
@@ -2080,13 +2290,15 @@
                 }
               ]
             },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\"]"] },
-            { "code": 657, "indent": 0, "parameters": ["End Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["End Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\",\"2\"]"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset X = +200"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset Y = -0"] },
             { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
             { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
+            { "code": 357, "indent": 0, "parameters": ["PKD_AnimaX", "StopAnimationAction", "Stop Anima Action", { "eventId": "0" }] },
+            { "code": 657, "indent": 0, "parameters": ["Character ID = 0"] },
             {
               "code": 205,
               "indent": 0,
@@ -2102,111 +2314,6 @@
             },
             { "code": 505, "indent": 0, "parameters": [{ "code": 14, "parameters": [0, 0], "indent": null }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 14, "parameters": [0, 0], "indent": null }] },
-            { "code": 357, "indent": 0, "parameters": ["PKD_AnimaX", "StopAnimationAction", "Stop Anima Action", { "eventId": "0" }] },
-            { "code": 657, "indent": 0, "parameters": ["Character ID = 0"] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "1",
-                  "PictureName:str": "Portraits/Principal/Saparo",
-                  "Origin:str": "Bust",
-                  "Position:num": "3",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Saparo"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 3"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Acorde, Thorin, meu filho querido. Não me faça vergonha, ou se verá comigo! Para o distrito comercial central, você deve ir, Balastrus te espera, você não pode mais fugir! HAHAHAHHAHA!"
-              ]
-            },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "1",
-                  "PictureName:str": "Portraits/Principal/Thorin",
-                  "Origin:str": "Bust",
-                  "Position:num": "7",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Thorin"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 7"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Nem que a vaca tussa! Tordan já deve ter ido trabalhar. A final do campeonato está chegando, não tenho tempo para um trabalho idiota como uma expedição! Combinei com a Filena de treinarmos outra jogada, preciso chegar ao campo!"
-              ]
-            },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_ExitBusts",
-                "BASIC: Exit Bust(s)",
-                {
-                  "PictureID:arrayeval": "[\"1\",\"2\"]",
-                  "EndOffsetX:eval": "-200",
-                  "EndOffsetY:eval": "+0",
-                  "EasingType:str": "InSine",
-                  "FlipDirection:str": "None",
-                  "Duration:eval": "20",
-                  "AutoErase:eval": "true"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\",\"2\"]"] },
-            { "code": 657, "indent": 0, "parameters": ["End Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["End Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
-            { "code": 357, "indent": 0, "parameters": ["PKD_AnimaX", "StopAnimationAction", "Stop Anima Action", { "eventId": "0" }] },
-            { "code": 657, "indent": 0, "parameters": ["Character ID = 0"] },
             { "code": 221, "indent": 0, "parameters": [] },
             { "code": 357, "indent": 0, "parameters": ["PKD_AnimaX", "ChangePlayerAnimationSet", "Change Player Animation", { "animationSetName": "Thorin_OldHelmet" }] },
             { "code": 657, "indent": 0, "parameters": ["Animation ID = Thorin_OldHelmet"] },
@@ -2328,7 +2435,7 @@
                 "BASIC: Enter Bust",
                 {
                   "PictureID:eval": "1",
-                  "PictureName:str": "Portraits/Principal/Saparo",
+                  "PictureName:str": "Portraits/Principal/Sáparo_provocação",
                   "Origin:str": "Bust",
                   "Position:num": "5",
                   "StartOffsetX:eval": "-200",
@@ -2340,7 +2447,7 @@
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Saparo"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Sáparo_provocação"] },
             { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = 5"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
@@ -2757,8 +2864,233 @@
       "x": 5,
       "y": 4
     },
-    null,
-    null,
-    null
+    {
+      "id": 13,
+      "name": "EV013",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 7,
+      "y": 8
+    },
+    {
+      "id": 14,
+      "name": "EV014",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 19,
+      "y": 12
+    },
+    {
+      "id": 15,
+      "name": "EV015",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 4, "pattern": 0, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 2,
+      "y": 9
+    },
+    {
+      "id": 16,
+      "name": "EV016",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 4, "pattern": 0, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 9,
+      "y": 6
+    },
+    {
+      "id": 17,
+      "name": "EV017",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 6, "pattern": 0, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 19,
+      "y": 6
+    },
+    {
+      "id": 18,
+      "name": "Mélia",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 3,
+      "y": 12
+    }
   ]
 }
