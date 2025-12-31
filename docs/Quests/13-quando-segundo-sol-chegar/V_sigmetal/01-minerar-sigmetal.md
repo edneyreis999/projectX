@@ -10,23 +10,23 @@
 
 ## Contexto Narrativo
 
-Quest crucial que aprofunda o arco de Valamir e a descoberta do Sigmetal como arma anti-Ignoto. Na Cena 6e, Thorin derrotou o Cristaleão que revelou uma passagem bloqueada por pedra gigante. Na Cena 10b, Valamir entregou dinamites a Thorin. Esta quest conecta esses dois momentos - Thorin usa os explosivos para abrir a câmara e descobre depósito massivo de Sigmetal, o minério lilás proibido, que é a fraqueza primária dos Ignotos.
+Quest crucial que aprofunda o arco de Balastrus e a descoberta do Sigmetal como arma anti-Ignoto. Na Cena 6e, Thorin derrotou o Cristaleão que revelou uma passagem bloqueada por pedra gigante. Na Cena 10b, Balastrus entregou dinamites a Thorin. Esta quest conecta esses dois momentos - Thorin usa os explosivos para abrir a câmara e descobre depósito massivo de Sigmetal, o minério lilás proibido, que é a fraqueza primária dos Ignotos.
 
 ## Gatilhos
 
-- **NPC com a quest:** Valamir.
+- **NPC com a quest:** Balastrus.
 - **Requisitos:** N/A.
-- **Gatilho:** Falar com Valamir na Estrada do Cão-luar.
+- **Gatilho:** Falar com Balastrus na Estrada do Cão-luar.
 - **Condição para concluir:**
   - Coletar ao menos 10 Minérios de Sigmetal em Kravens.
-  - Falar com Valamir após retornar.
+  - Falar com Balastrus após retornar.
 
 ## Estrutura Sistêmica
 
 - **Atores Envolvidos:**
   - Thorin (protagonista/descobridor)
   - Filena (companheira, testemunha da descoberta)
-  - Valamir (diálogo posterior em Gildrat sobre importância do Sigmetal)
+  - Balastrus (diálogo posterior em Gildrat sobre importância do Sigmetal)
   - **Variáveis / Flags Alteradas:**
   - `v_reforco_sigmetal`
 

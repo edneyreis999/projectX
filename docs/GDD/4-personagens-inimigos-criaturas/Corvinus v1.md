@@ -20,7 +20,7 @@ Altura: Robusto e forte, um minerador experiente.
 
 Valores Centrais: Tradição.
 
-Medo Fundamental: Ver Valamir tomar o poder.
+Medo Fundamental: Ver Balastrus tomar o poder.
 
 Virtude Principal: Honra e ferocidade (Respeito aos ancestrais).
 
@@ -28,7 +28,7 @@ Fraqueza Principal: Teimosia (incapacidade de se comunicar com a "Gildrat modern
 
 Aparência: Postura defensiva, usa ferramentas de mineração como armas. Veste armaduras leves.
 
-Motivação Raiz: Ele e sua facção (Os Corvos) são mineradores independentes que descobriram o Selo de Mélios. Sua única motivação é proter Gildrat e o legado dos ancestrais da manipulação de (Valamir/Balastrus) e da ignorância en (Damburr).
+Motivação Raiz: Ele e sua facção (Os Corvos) são mineradores independentes que descobriram o Selo de Mélios. Sua única motivação é proter Gildrat e o legado dos ancestrais da manipulação de (Balastrus/Balastrus) e da ignorância en (Damburr).
 
 Maior sonho: Ver os de sangue-ruim longe do palácio, da nobreza e dos assuntos que dizem respeito ao futuro de Gildrat.
 
@@ -68,7 +68,7 @@ Reações quando contrariado: N/A.
 
 Principais amizades: N/A.
 
-Principais inimigos: Dambur, Tordan, Valamir.
+Principais inimigos: Dambur, Tordan, Balastrus.
 
 ### 1.3) Gatilhos do Ato I - mudanças à caminho
 
@@ -80,15 +80,15 @@ N/A.
 
 ## 2) Linha de Transformação básica
 
-Corvinus é o guardião da tradição de seu povo. Ele tenta impedir a ganância de Valamir através da força, falha, e é forçado a recuar, mas não antes de dar um aviso final que se prova verdadeiro.
+Corvinus é o guardião da tradição de seu povo. Ele tenta impedir a ganância de Balastrus através da força, falha, e é forçado a recuar, mas não antes de dar um aviso final que se prova verdadeiro.
 
 ### 2.1) Linha de Transformação avançada - Ato II / Provação / Até a volta de Melios
 
-Jornada narrativa: Corvinus e seus mineradores independentes (Os Corvos) bloqueiam a expedição de Valamir na Mina de Mélios. Ele é forçado a lutar e é derrotado.
+Jornada narrativa: Corvinus e seus mineradores independentes (Os Corvos) bloqueiam a expedição de Balastrus na Mina de Mélios. Ele é forçado a lutar e é derrotado.
 
 Emoção Predominante: Frustração.
 
-Objetivo Inicial: Impedir que Valamir tome a Mina de Mélios.
+Objetivo Inicial: Impedir que Balastrus tome a Mina de Mélios.
 
 Relação com Valores Centrais: Ele está agindo puramente por seu valor de "Proteção" de sua cultura e ancestrais.
 
@@ -118,7 +118,7 @@ Objetivo Imediato: Resgatar os Corvos que ainda estão presos nas minas e se pre
 
 Relação com Valores Centrais: Seus valores de "Proteção" e "Sabedoria Ancestral" são recontextualizados. O único objetivo agora é proteger Gildrat.
 
-Contradições Internas Ativas: A necessidade de se aliar com as mesmas pessoas que o derrotaram e causaram o desastre (Thorin, Valamir).
+Contradições Internas Ativas: A necessidade de se aliar com as mesmas pessoas que o derrotaram e causaram o desastre (Thorin, Balastrus).
 
 Arquétipo predominante: O Sábio, O Aliado Inesperado.
 
@@ -146,7 +146,7 @@ Corvinus pode se unir ao grande exército de Gildrat, motivado pela coragem e ho
 
 ### Ato II
 
-A "Nobreza Ignorada". Corvinus é introduzido como um antagonista que resiste em entregar a Mina de Mélios à Valamir, mesmo sob decreto real. Ele é motivado pela sabedoria ancestral, mas é derrotado em combate e forçado a recuar.
+A "Nobreza Ignorada". Corvinus é introduzido como um antagonista que resiste em entregar a Mina de Mélios à Balastrus, mesmo sob decreto real. Ele é motivado pela sabedoria ancestral, mas é derrotado em combate e forçado a recuar.
 
 Mudança/Gatilho: Sua transformação ocorre fora da tela, quando a "Quebra do Selo em Mélios" (Cena 10) prova que seus avisos estavam corretos.
 

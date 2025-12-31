@@ -304,11 +304,11 @@ Dano = 1667 × (1 + v_influencia_corvos/100) × (1 + (v_reforco_sigmetal/100) * 
 
 ## 🎨 Arcos Narrativos Aprofundados
 
-- **v_pontos_armadilhas (Armadilhas):** Reforça o arco de Valamir como inventor estratégico e a relação de confiança entre Thorin e Valamir.
+- **v_pontos_armadilhas (Armadilhas):** Reforça o arco de Balastrus como inventor estratégico e a relação de confiança entre Thorin e Balastrus.
 - **v_forca_civil (Exército Civil):** Reforça o arco de Filena e Borin, mostrando rebeldes, civis e time rúnico se organizando em exército.
 - **v_forca_guarda (Guarda de Ferro):** Reforça o arco de Kilin e Mhordred, trabalhando culpa, liderança e sucessão na Guarda de Ferro.
 - **v_influencia_corvos (Corvos):** Reforça o arco de Corvinus/Corvos como facção independente, negociando confiança com Gildrat.
-- **v_reforco_sigmetal (Sigmetal):** Reforça novamente o arco de Valamir e a descoberta do Sigmetal como arma central contra os Ignotos.
+- **v_reforco_sigmetal (Sigmetal):** Reforça novamente o arco de Balastrus e a descoberta do Sigmetal como arma central contra os Ignotos.
 
 ---
 

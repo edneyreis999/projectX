@@ -10,7 +10,7 @@
 
 ## Contexto Narrativo
 
-Quest crítica que aprofunda os arcos de Kilin, Mhordred e Valamir. Kilin é um comandante veterano da Guarda de Ferro, mentor de muitos guardas e símbolo de resistência. Seu resgate não é apenas tático - é emocional. Mhordred sente culpa por ter deixado Kilin para trás durante a fuga da Cena 10e. Valamir sente responsabilidade pelo desastre que causou ao quebrar o selo, mentir sobre Kilin tê-lo atacado e manipulado o conselho. Ele insiste em ir junto.
+Quest crítica que aprofunda os arcos de Kilin, Mhordred e Balastrus. Kilin é um comandante veterano da Guarda de Ferro, mentor de muitos guardas e símbolo de resistência. Seu resgate não é apenas tático - é emocional. Mhordred sente culpa por ter deixado Kilin para trás durante a fuga da Cena 10e. Balastrus sente responsabilidade pelo desastre que causou ao quebrar o selo, mentir sobre Kilin tê-lo atacado e manipulado o conselho. Ele insiste em ir junto.
 
 ## Gatilhos
 
@@ -27,7 +27,7 @@ Quest crítica que aprofunda os arcos de Kilin, Mhordred e Valamir. Kilin é um 
   - Kilin (NPC a ser resgatado)
   - Thorin (protagonista)
   - Mhordred (companheiro)
-  - Valamir (menciona culpa em diálogo)
+  - Balastrus (menciona culpa em diálogo)
   - Filena (apoio emocional)
 - **Variáveis / Flags Alteradas:**
   - `v_forca_guarda`

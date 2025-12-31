@@ -10,28 +10,28 @@
 
 ## Contexto Narrativo
 
-Quest que também faz parte do arco narrativo de Thorin e Valamir, logo após as repercucões da última reunião do conselho de Gildrat. Há muitos pontos cegos por onde os inimigos podem entrar. Valamir pede a Thorin que identifique essas vulnerabilidades e coloque armadilhas a fim de testá-las.
+Quest que também faz parte do arco narrativo de Thorin e Balastrus, logo após as repercucões da última reunião do conselho de Gildrat. Há muitos pontos cegos por onde os inimigos podem entrar. Balastrus pede a Thorin que identifique essas vulnerabilidades e coloque armadilhas a fim de testá-las.
 
 ## Gatilhos
 
-- **NPC com a quest:** Valamir.
+- **NPC com a quest:** Balastrus.
 - **Requisitos:** N/A
-- **Gatilho:** Falar com Valamir na Estrada do Cão-luar.
+- **Gatilho:** Falar com Balastrus na Estrada do Cão-luar.
 - **Condição para concluir:**
   - Instalar 3 armadilhas na Estrada do Cão-luar.
-  - Falar com Valamir.
+  - Falar com Balastrus.
 
 ## Estrutura Sistêmica
 
 - **Atores Envolvidos:**
-  - Valamir (NPC principal)
+  - Balastrus (NPC principal)
   - Thorin (protagonista)
 - **Variáveis / Flags Alteradas:**
   - `v_pontos_armadilhas`
 
 ## Desfechos Possíveis
 
-- **Final A (Completa):** Thorin mapeia todos os 3 pontos de gargalo sugeridos por Valamir — que elogia a precisão do garoto.
+- **Final A (Completa):** Thorin mapeia todos os 3 pontos de gargalo sugeridos por Balastrus — que elogia a precisão do garoto.
 
 ## Condição de Falha
 
@@ -40,4 +40,4 @@ Quest que também faz parte do arco narrativo de Thorin e Valamir, logo após as
 ## Recompensas
 
 - **v_pontos_armadilhas:** +25 pontos (do total de 100)
-- **Narrativa:** Diálogo de Valamir explicando a importância da topografia na guerra.
+- **Narrativa:** Diálogo de Balastrus explicando a importância da topografia na guerra.

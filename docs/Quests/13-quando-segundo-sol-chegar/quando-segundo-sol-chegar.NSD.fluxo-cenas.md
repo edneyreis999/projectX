@@ -2,7 +2,7 @@
 
 ## O Troféu Quebrado (Tordan - Quest de Prelúdio)
 
-- Thorin, Mhordred, Filena e Valamir retornam da Quest: "Quebra do selo em Mélios", que se encerra logo após a discussão do conselho onde Valamir é absolvido das acusações e Thorin desafia o pai para se tornar membro da Guarda de Ferro.
+- Thorin, Mhordred, Filena e Balastrus retornam da Quest: "Quebra do selo em Mélios", que se encerra logo após a discussão do conselho onde Balastrus é absolvido das acusações e Thorin desafia o pai para se tornar membro da Guarda de Ferro.
 
 - Tordan deixa a corte logo depois e vai para casa. Antes de sair, entretanto, ele diz a Thorin que deseja falar com ele. Isso encerra a quest anterior: "Quebra do Selo em Mélios", e dá início a quest: "Troféu Quebrado". Thorin encontra Tordan na cozinha de sua casa, o mesmo local onde a primeira discussão entre os dois aconteceu, ainda no início do jogo. Um de seus troféus de futebol rúnico está sobre a mesa, seu pai encara o objeto em silêncio. Thorin pode se aproximar e iniciar a conversa. Quando isso acontece, Tordan confessa o real motivo de seu ódio: "Mélia... ela adorava ver você jogar. Ela adorava esse jogo estúpido ainda mais do que eu. E no fim... ela amou mais a liberdade dela do que a nós." Ele revela que, após ela partir, ele não conseguia mais olhar para o campo e para o jogo, ou para Thorin, sem sentir a dor do abandono dela.
 
@@ -12,7 +12,7 @@
 
 - Descrição do Item: Não é uma funda de criança. Ela é tecida com tiras de couro e trançada com os fios de metal. O berço da funda, onde pedras se encaixam, é forrado com um pequeno pedaço de seda azul-claro, a cor do vestido favorito de Mélia.Tordan entrega a funda a Thorin. "Sua mãe a teceu. Que ela proteja o que restou da minha família".
 
-- Tordan, em seguida, leva Thorin até um espaço de treinamento que fica dentro do vestiário, no estádio dos Machados Enferrujados, onde pequenos alvos estão espalhados. Ele ensina o filho a atirar com mais precisão e força, além de entregar alguns minérios com aparência rudimentar. "Isso é resultado do tempo da minha aliança com Valamir, você sabe... antes dele trair a todos nós. Atire, você vai gostar".
+- Tordan, em seguida, leva Thorin até um espaço de treinamento que fica dentro do vestiário, no estádio dos Machados Enferrujados, onde pequenos alvos estão espalhados. Ele ensina o filho a atirar com mais precisão e força, além de entregar alguns minérios com aparência rudimentar. "Isso é resultado do tempo da minha aliança com Balastrus, você sabe... antes dele trair a todos nós. Atire, você vai gostar".
 
 - Enquanto estiver usando essa munição, os ataques de Thorin causam dano extra baseado no atributo escolhido (munição pode ser explosiva, bomba de fumaça, veneno entre outros).
 

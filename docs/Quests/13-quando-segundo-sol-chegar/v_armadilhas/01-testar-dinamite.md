@@ -10,31 +10,31 @@
 
 ## Contexto Narrativo
 
-Quest que pode remediar a relação de confiança entre Thorin e Valamir.
+Quest que pode remediar a relação de confiança entre Thorin e Balastrus.
 
-Valamir, como inventor, criou dinamite mas precisa calibrar a potência ideal para maximizar dano aos Ignotos sem destruir as estruturas de Gildrat. Thorin participa dos testes práticos, demonstrando que está disposto a contribuir ativamente para a defesa, não apenas como soldado, mas como parceiro científico. Um diálogo tem início e é aqui a primeira vez em que Thorin questiona Valamir sobre ter mentido a respeito de Kilin.
+Balastrus, como inventor, criou dinamite mas precisa calibrar a potência ideal para maximizar dano aos Ignotos sem destruir as estruturas de Gildrat. Thorin participa dos testes práticos, demonstrando que está disposto a contribuir ativamente para a defesa, não apenas como soldado, mas como parceiro científico. Um diálogo tem início e é aqui a primeira vez em que Thorin questiona Balastrus sobre ter mentido a respeito de Kilin.
 
 ## Gatilhos
 
-- **NPC com a quest:** Valamir.
+- **NPC com a quest:** Balastrus.
 - **Requisitos:** N/A.
-- **Gatilho:** Falar com Valamir na Estrada do Cão-luar.
+- **Gatilho:** Falar com Balastrus na Estrada do Cão-luar.
 - **Condição para concluir:**
   - Interagir com 3 eventos de dinamite na Estrada do Cão-luar.
-  - Falar com Valamir.
+  - Falar com Balastrus.
 
 ## Estrutura Sistêmica
 
 - **Atores Envolvidos:**
   - Tordan (NPC secundário)
-  - Valamir (NPC principal)
+  - Balastrus (NPC principal)
   - Thorin (protagonista)
 - **Variáveis / Flags Alteradas:**
   - `v_pontos_armadilhas`
 
 ## Desfechos Possíveis
 
-- **Final A (Sucesso Total):** Todos os 3 testes são bem-sucedidos — Valamir calibra a dinamite perfeitamente.
+- **Final A (Sucesso Total):** Todos os 3 testes são bem-sucedidos — Balastrus calibra a dinamite perfeitamente.
 
 ## Condição de Falha
 

@@ -86,11 +86,11 @@ Quando Thorin tenta fugir de casa, os dois guardas dão um susto no garoto, surg
 
 #### Quest - Primeiro Contrato
 
-Tibério Valamir não fica feliz com o comunicado de Kilin [Ler mais sobre Kilin em](Kilin.md) sobre a Guarda de Ferro acompanhar Thorin durante a jornada (o garoto acaba encontrando Filena na Estrada do Cão-Luar e descobre que ela irá na expedição porque precisa urgentemente do dinheiro, aumentando ainda mais o peso do cuidado da Guarda de Ferro, já que Thorin não aceitará ficar longe da amiga), Mhordred começa uma discussão, mas Kilin a interrompe e encerra dizendo que a decisão fora tomada pela própria Mão do Imperador, Tordan, o pai de Thorin. Os ânimos se acalmam um pouco e o grupo começa a marchar.
+Tibério Balastrus não fica feliz com o comunicado de Kilin [Ler mais sobre Kilin em](Kilin.md) sobre a Guarda de Ferro acompanhar Thorin durante a jornada (o garoto acaba encontrando Filena na Estrada do Cão-Luar e descobre que ela irá na expedição porque precisa urgentemente do dinheiro, aumentando ainda mais o peso do cuidado da Guarda de Ferro, já que Thorin não aceitará ficar longe da amiga), Mhordred começa uma discussão, mas Kilin a interrompe e encerra dizendo que a decisão fora tomada pela própria Mão do Imperador, Tordan, o pai de Thorin. Os ânimos se acalmam um pouco e o grupo começa a marchar.
 
 Ao saírem da montanha e atravessarem Ekios para chegar até a Mina de Kravens, O jogador testemunha o poder ofensivo avassalador de Mhordred. Enquanto Kilin é um mestre em defesa, Mhordred é um redemoinho de ataques, abrindo caminho através das fileiras inimigas com fúria e precisão brutal. Eles se atrasam um pouco devido às batalhas.
 
-Assim que chegam ao acampamento, Valamir discute com Thorin, disparando uma série de acusações contra o garoto. Mhordred novamente inicia uma discussão acalorada e desafia o mercenário para um duelo. Kilin intervém, Valamir se recolhe e o grupo senta à beira da fogueira para comer. Mhordred compra carne de um dos vendedores ali presente e todos se fartam. Pouco tempo depois, o grupo resolve dormir, mas Kilin pede que Thorin fique um pouco mais.
+Assim que chegam ao acampamento, Balastrus discute com Thorin, disparando uma série de acusações contra o garoto. Mhordred novamente inicia uma discussão acalorada e desafia o mercenário para um duelo. Kilin intervém, Balastrus se recolhe e o grupo senta à beira da fogueira para comer. Mhordred compra carne de um dos vendedores ali presente e todos se fartam. Pouco tempo depois, o grupo resolve dormir, mas Kilin pede que Thorin fique um pouco mais.
 
 #### Quest - Minerador Aprendiz
 
@@ -98,7 +98,7 @@ A expedição começa na mina de Kravens e a Guarda de Ferro chega atrasada, dei
 
 ## 2) Linha de Transformação básica
 
-Sua impaciência o coloca em conflito direto com Valamir, Thorin e agora Filena. Ele começa a perceber que sua força bruta, embora eficaz em combate, cria complicações diplomáticas e táticas que Kilin precisa resolver frequentemente.
+Sua impaciência o coloca em conflito direto com Balastrus, Thorin e agora Filena. Ele começa a perceber que sua força bruta, embora eficaz em combate, cria complicações diplomáticas e táticas que Kilin precisa resolver frequentemente.
 
 ### 2.1) Linha de Transformação avançada - Ato II / Provação / Até a volta de Melios
 
@@ -106,49 +106,49 @@ Emoção Predominante: Frustração, Fúria.
 
 Objetivo Imediato: Eliminar qualquer ameaça que atrase a missão.
 
-Relação com Valores Centrais: Seu instinto, baseado no valor da "Força", diz que Valamir é uma cobra que deve ser esmagada. Mas, apesar de concordar com ele, Kilin os impede de agir. Sua "Lealdade" ao seu irmão de armas e, relutantemente, a Thorin, força o Berserker a se conter.
+Relação com Valores Centrais: Seu instinto, baseado no valor da "Força", diz que Balastrus é uma cobra que deve ser esmagada. Mas, apesar de concordar com ele, Kilin os impede de agir. Sua "Lealdade" ao seu irmão de armas e, relutantemente, a Thorin, força o Berserker a se conter.
 
 Contradições Internas Ativas: Seguir as ordens de Kilin vs. seu julgamento de que a ação imediata é necessária.
 
 Arquétipo predominante: Sombra (sua raiva descontrolada), Herói (em sua própria mente).
 
-Principais inimigos: Valamir e a inação.
+Principais inimigos: Balastrus e a inação.
 
 ### 2.2) Gatilhos do Ato II - mudanças à caminho
 
 #### Quest - Travessia Perigosa
 
-Mhordred concorda com Valamir pela primeira e única vez na vida, sobre prosseguir mesmo durante a tempestade. Ele vê o mau tempo não como um perigo, mas como um desafio a ser superado pela força e resistência. Ele começa a se enfurecer com Kilin, já que seu líder insiste que o grupo deveria esperar para partir, ainda incapaz de compreender que apesar da Guarda de Ferro ser formada por exímeis guerreiros que definitivamente achariam a travessia uma tarde no parque, Thorin e Filena dificilmente sairíam ilesos dessa jornada. Ele se acalma quando, sob o pedido de Thorin, Kilin concorda em prosseguir.
+Mhordred concorda com Balastrus pela primeira e única vez na vida, sobre prosseguir mesmo durante a tempestade. Ele vê o mau tempo não como um perigo, mas como um desafio a ser superado pela força e resistência. Ele começa a se enfurecer com Kilin, já que seu líder insiste que o grupo deveria esperar para partir, ainda incapaz de compreender que apesar da Guarda de Ferro ser formada por exímeis guerreiros que definitivamente achariam a travessia uma tarde no parque, Thorin e Filena dificilmente sairíam ilesos dessa jornada. Ele se acalma quando, sob o pedido de Thorin, Kilin concorda em prosseguir.
 
 Mhordred é a linha de frente em todos os combates. Após um deslizamento de rochas e da maioria das passagens serem bloqueadas, entretanto, o grupo é forçado a entrar em uma mina desconhecida.
 
 #### Quest - Travessia Tóxica/Ameaça Lupina/Barganha do Sigmetal
 
-Pouco depois descobrem se tratar de uma mina desativada, usada em tempos antigos para escoar esgoto. Dentro da Mina do Esgoto [Ler mais sobre a Mina do Esgoto em](../2-world-building/locais/mina-esgoto/mina-do-esgoto.md), ele é ordenado por Kilin a proteger Filena especificamente. Ele odeia a tarefa, mas a cumpre com uma lealdade carrancuda. O grupo ainda é forçado a aceitar Valamir entre eles, já que precisam de seus apretrechos para atravessar o território desconhecido (podendo ser algum tipo de lanterna, pequeno constructo ou ferramenta para abrir comportas emprerradas). Assim ele se torna o 5º membro jogável da equipe. Eles enfim encontram uma sala que parece oferecer uma saída para o outro lado da mina, contornando por dentro o deslizamento que aconteceu do lado de fora, mas o Petesporo [Ler mais sobre o Boss Petesporo em](mina-do-esgoto.md), cogumelo gigante e venenoso, surge e bloqueia o caminho. O grupo luta e sai vitorioso.
+Pouco depois descobrem se tratar de uma mina desativada, usada em tempos antigos para escoar esgoto. Dentro da Mina do Esgoto [Ler mais sobre a Mina do Esgoto em](../2-world-building/locais/mina-esgoto/mina-do-esgoto.md), ele é ordenado por Kilin a proteger Filena especificamente. Ele odeia a tarefa, mas a cumpre com uma lealdade carrancuda. O grupo ainda é forçado a aceitar Balastrus entre eles, já que precisam de seus apretrechos para atravessar o território desconhecido (podendo ser algum tipo de lanterna, pequeno constructo ou ferramenta para abrir comportas emprerradas). Assim ele se torna o 5º membro jogável da equipe. Eles enfim encontram uma sala que parece oferecer uma saída para o outro lado da mina, contornando por dentro o deslizamento que aconteceu do lado de fora, mas o Petesporo [Ler mais sobre o Boss Petesporo em](mina-do-esgoto.md), cogumelo gigante e venenoso, surge e bloqueia o caminho. O grupo luta e sai vitorioso.
 
- Voltando à superfície, encontram o restante do grupo que havia se separado deles cercado por Lobos de Gelo que caçavam nos arredores de Gildrat. Não há como avançar sem uma luta, mas Valamir insiste em tentar assim mesmo. Mhordred se prepara para lutar ao lado de Kilin, e se surpreende ao ouvir Thorin dizer que, ao invés de se esconder, também lutará. Essa situação é diferente das demais, pois eles ainda não foram vistos e poderiam simplesmente esperar que as criaturas comessem e em seguida partissem. Uma sentelha de admiração pelo garoto surge.
+ Voltando à superfície, encontram o restante do grupo que havia se separado deles cercado por Lobos de Gelo que caçavam nos arredores de Gildrat. Não há como avançar sem uma luta, mas Balastrus insiste em tentar assim mesmo. Mhordred se prepara para lutar ao lado de Kilin, e se surpreende ao ouvir Thorin dizer que, ao invés de se esconder, também lutará. Essa situação é diferente das demais, pois eles ainda não foram vistos e poderiam simplesmente esperar que as criaturas comessem e em seguida partissem. Uma sentelha de admiração pelo garoto surge.
 
- Depois da batalha, todos retornam a Estrada do Cão-Luar. Valamir pressiona Thorin a respeito dos minérios que encontrou, mas Kilin pede a Mhordred que não reaja e apenas observe.
+ Depois da batalha, todos retornam a Estrada do Cão-Luar. Balastrus pressiona Thorin a respeito dos minérios que encontrou, mas Kilin pede a Mhordred que não reaja e apenas observe.
 
 #### Quest - A Voz do Conselho
 
-Na manhã seguinte todos estão perante Dambur no Palácio Real. Eles assistem ao debate calados até que a coisa se intensifica e o equilíbrio de poder muda. A família Corvinus é destituida de seu cargo por não conseguir romper um selo rúnico antigo, cravejado com símbolos estranhos, além de não conseguirem também conter uma pequena rebelião entre seus expedicionários. Valamir ganha o direito sobre a Mina de Mélios e, como se não bastasse, ele ainda consegue autorização para levar Thorin e Filena consigo novamente, Mhordred fica furioso ao perceber que sua missão como "babá" ainda não terminou, mas mantém silêncio perante o Imperador Dambur e seu conselho.
+Na manhã seguinte todos estão perante Dambur no Palácio Real. Eles assistem ao debate calados até que a coisa se intensifica e o equilíbrio de poder muda. A família Corvinus é destituida de seu cargo por não conseguir romper um selo rúnico antigo, cravejado com símbolos estranhos, além de não conseguirem também conter uma pequena rebelião entre seus expedicionários. Balastrus ganha o direito sobre a Mina de Mélios e, como se não bastasse, ele ainda consegue autorização para levar Thorin e Filena consigo novamente, Mhordred fica furioso ao perceber que sua missão como "babá" ainda não terminou, mas mantém silêncio perante o Imperador Dambur e seu conselho.
 
 #### Quest - Quebra do Selo em Melios
 
-Os remanescentes da Família Corvinus se recusam a deixar o local mesmo sob o decreto real entregue a Valamir e uma batalha acontece. Derrotados, finalmente partem enquanto o grupo entra na mina. Valamir vai até selo, transpondo todos os obstáculos e o rompe, ignorando todos os avisos que recebera, libertando então a terrível ameaça dos Ignotos. Kilin e Mhordred lutam bravamente, mas são incapazez de conter a ameaça.
+Os remanescentes da Família Corvinus se recusam a deixar o local mesmo sob o decreto real entregue a Balastrus e uma batalha acontece. Derrotados, finalmente partem enquanto o grupo entra na mina. Balastrus vai até selo, transpondo todos os obstáculos e o rompe, ignorando todos os avisos que recebera, libertando então a terrível ameaça dos Ignotos. Kilin e Mhordred lutam bravamente, mas são incapazez de conter a ameaça.
 
-Ficando para trás, Kilin ordena que Mhordred pegue Thorin e Filena e fujam de Mélios, com a intenção de avisar a todo reino sobre os terríveis inimigos. Essa é a ordem mais difícil de cumprir que Mhordred já recebera, pois vai diretamente contra seu instinto de nunca abandonar um irmão. Relutante, ele obedece, Valamir aproveita o momento de caos e foge também.
+Ficando para trás, Kilin ordena que Mhordred pegue Thorin e Filena e fujam de Mélios, com a intenção de avisar a todo reino sobre os terríveis inimigos. Essa é a ordem mais difícil de cumprir que Mhordred já recebera, pois vai diretamente contra seu instinto de nunca abandonar um irmão. Relutante, ele obedece, Balastrus aproveita o momento de caos e foge também.
 
-Mhordred vê que Valamir está os seguindo e resiste ao impulso de matá-lo ali mesmo, marcando seu primeiro ponte de mudança. Ao invés disso, ele decide levar o déspota de volta para que seja julgado perante o consé-lho.
+Mhordred vê que Balastrus está os seguindo e resiste ao impulso de matá-lo ali mesmo, marcando seu primeiro ponte de mudança. Ao invés disso, ele decide levar o déspota de volta para que seja julgado perante o consé-lho.
 
- Enquanto Kilin está preso, Mhordred está em uma séria enrrascada. Ele é o líder. Cada decisão pesa uma tonelada. Ele tenta imitar a calma de Kilin e falha, ficando frustrado. Ele comete erros, mas sua determinação feroz em proteger os jovens o força a aprender e a se adaptar. Antes que possam sair da Clareira de Mélios, enfrentam um Ignoto muito poderoso (mini boss). Mhordred vai na frente e ataca primeiro, deixando os demais desprotegidos. O grupo vence a batalha, mas Thorin lhe diz que ele e Filena escaparam por um fio, levando o Berserker a enxergar melhor as quase consequências de seus atos. Este é seu segundo ponto de mudança, nas lutas que acontecem a seguir até retornarem à Gildrat, ele permanece ao lado de Thorin, Filena e Valamir (por conveniência e sobreviência) o tempo todo.
+ Enquanto Kilin está preso, Mhordred está em uma séria enrrascada. Ele é o líder. Cada decisão pesa uma tonelada. Ele tenta imitar a calma de Kilin e falha, ficando frustrado. Ele comete erros, mas sua determinação feroz em proteger os jovens o força a aprender e a se adaptar. Antes que possam sair da Clareira de Mélios, enfrentam um Ignoto muito poderoso (mini boss). Mhordred vai na frente e ataca primeiro, deixando os demais desprotegidos. O grupo vence a batalha, mas Thorin lhe diz que ele e Filena escaparam por um fio, levando o Berserker a enxergar melhor as quase consequências de seus atos. Este é seu segundo ponto de mudança, nas lutas que acontecem a seguir até retornarem à Gildrat, ele permanece ao lado de Thorin, Filena e Balastrus (por conveniência e sobreviência) o tempo todo.
 
-Quando chegam ao palácio, eles expõem a situação. Mhordred entrega Valamir e conta ao conselho tudo o que ele fez, esperando que fosse condenado. Mas nada acontece. A maioria dos membros do conselho são financiados secretamente pelo próprio Valamir, e votam pela sua soltura. Ele ainda alega que estava "apenas cumprindo as ordens de Dambur", voltando assim a atenção toda para o imperador. Incapaz de encobrir os problemas dessa vez, Dambur manda mobilizar o Exército Real e a Guarda de Ferro para que defendam a cidade. Thorin interrompe a conversa, dizendo que Kilin está preso e na mina de Kravens também há outros prisioneiros.
+Quando chegam ao palácio, eles expõem a situação. Mhordred entrega Balastrus e conta ao conselho tudo o que ele fez, esperando que fosse condenado. Mas nada acontece. A maioria dos membros do conselho são financiados secretamente pelo próprio Balastrus, e votam pela sua soltura. Ele ainda alega que estava "apenas cumprindo as ordens de Dambur", voltando assim a atenção toda para o imperador. Incapaz de encobrir os problemas dessa vez, Dambur manda mobilizar o Exército Real e a Guarda de Ferro para que defendam a cidade. Thorin interrompe a conversa, dizendo que Kilin está preso e na mina de Kravens também há outros prisioneiros.
 
 O conselho, inclusive Tordan, votam contra enviar tropas para resgatá-los, mas concordam na decisão de permitir que um pequeno grupo faça tentativas em menor escala de recuperar aqueles capturados. Mhordred fica responsável por reunir mais alguns soldados e partir, mas Thorin interrompe diz que vai lutar ao lado dele, com Filena o apoiando. Tordan o proíbe, então Thorin, chocando a todos, declara perante o conselho que fará uso de seu direito de nascença como anão ao se alistar para a Guarda de Ferro. Incapaz de impedir o filho, Tordan concorda. Filena também se coloca sob o comando de Mhordred. O Berserker passa a reconhecer Thorin e Filena como irmãos de armas, ele se vira para eles e diz: "Talvez eu estivesse errado sobre vocês. Até que tem culhões!"
 
-Valamir parece arrependido de seus atos e, perante a destruição eminente, se torna o líder da defesa de Gildrat com seus apretrechos.
+Balastrus parece arrependido de seus atos e, perante a destruição eminente, se torna o líder da defesa de Gildrat com seus apretrechos.
 
 ## 3) Linha de Transformação básica
 
@@ -158,7 +158,7 @@ Com o cativeiro de Kilin, Mhordred é forçado a assumir momentaneamente a lider
 
 Emoção Predominante: Responsabilidade, Desespero.
 
-Objetivo Imediato: Manter Thorin e Filena vivos, resgatar Kilin, fazer Valamir pagar.
+Objetivo Imediato: Manter Thorin e Filena vivos, resgatar Kilin, fazer Balastrus pagar.
 
 Relação com Valores Centrais: Seus valores de "Lealdade" e "Força" são testados. Ele precisa usar sua força não apenas para destruir, mas para proteger ativamente, o que exige um controle que ele raramente exercita.
 
@@ -180,11 +180,11 @@ Principais inimigos: Ignotos.
 
 #### Quest -Quando o Segundo Sol Chegar
 
-Quando decidem partir na missão de resgate, Valamir já os espera na Estrada do Cão-luar. Lhes diz que os preparaivos para a defesa da cidade já estão bem adiantados, e que por isso deseja acompanhá-los, afinal, os Ignotos estarem libertos é sua culpa. Ainda relutantes, o grupo aceita.
+Quando decidem partir na missão de resgate, Balastrus já os espera na Estrada do Cão-luar. Lhes diz que os preparaivos para a defesa da cidade já estão bem adiantados, e que por isso deseja acompanhá-los, afinal, os Ignotos estarem libertos é sua culpa. Ainda relutantes, o grupo aceita.
 
-Eles atravessam Ekios para chegar em Mélios, sempre lutando. Valamir agora luta com honra, sem reclamações e sem tentar fugir. Thorin, Filena e Mhordred reconhecem as mudanças nele e também sua genialidade em criar apetrechos que auxiliam na batalha e em diversas outras situações. Kilin é finalmente liberto e, ao lado de seus amigos, precisa se preparar para a batalha final. Ainda na Clareira de Mélios, antes de voltar, Mhordred recebe um abraço cheio de orgulho de seu irmão, que o parabeniza por ter liderado o grupo e superado suas limitações. Ele apresenta Thorin, agora como um membro oficial da Guarda de Ferro e diz estar orgulhoso do garoto. Kilin abraça o filho de Tordan e diz que essa decisão o surpreendeu. Ele é ainda melhor do que o Lord Anão pensou que pudesse se tornar. Filena também se mostrou uma grande guerreira e não recuou, mesmo sem qualqier experiência militar, recebendo o apreço e uma reverência de Kilin. Por último, contra qualquer pensamento lógico, Mhordred aponta para Valamir, que os ajudara a abrir caminho pelas hordas inimigas para resgatar o Lorde Anão. Kilin, ainda com o pé atrás, estende a mão e o cumprimenta.
+Eles atravessam Ekios para chegar em Mélios, sempre lutando. Balastrus agora luta com honra, sem reclamações e sem tentar fugir. Thorin, Filena e Mhordred reconhecem as mudanças nele e também sua genialidade em criar apetrechos que auxiliam na batalha e em diversas outras situações. Kilin é finalmente liberto e, ao lado de seus amigos, precisa se preparar para a batalha final. Ainda na Clareira de Mélios, antes de voltar, Mhordred recebe um abraço cheio de orgulho de seu irmão, que o parabeniza por ter liderado o grupo e superado suas limitações. Ele apresenta Thorin, agora como um membro oficial da Guarda de Ferro e diz estar orgulhoso do garoto. Kilin abraça o filho de Tordan e diz que essa decisão o surpreendeu. Ele é ainda melhor do que o Lord Anão pensou que pudesse se tornar. Filena também se mostrou uma grande guerreira e não recuou, mesmo sem qualqier experiência militar, recebendo o apreço e uma reverência de Kilin. Por último, contra qualquer pensamento lógico, Mhordred aponta para Balastrus, que os ajudara a abrir caminho pelas hordas inimigas para resgatar o Lorde Anão. Kilin, ainda com o pé atrás, estende a mão e o cumprimenta.
 
-Eles retornam à Gildrat. A invasão começa e o grupo agora enfrenta o Comandante Ignoto. Durante o combate fica evidente que há algo errado com Kilin. Ele ainda é fisicamente forte, mas hesita, dá conselhos contraditórios ou se perde em pensamentos, mostrando que sua mente está fragmentada. No meio da batalha o inimigo desfere um golpe mortal contra Mhordred, que morre perante os olhos de Kilin, Thorin, Filena e Valamir. Ele sorri em seu último suspiro.
+Eles retornam à Gildrat. A invasão começa e o grupo agora enfrenta o Comandante Ignoto. Durante o combate fica evidente que há algo errado com Kilin. Ele ainda é fisicamente forte, mas hesita, dá conselhos contraditórios ou se perde em pensamentos, mostrando que sua mente está fragmentada. No meio da batalha o inimigo desfere um golpe mortal contra Mhordred, que morre perante os olhos de Kilin, Thorin, Filena e Balastrus. Ele sorri em seu último suspiro.
 
 ## 4) Resumo do Arco Narrativo e Mudanças do Mhordred
 
@@ -210,9 +210,9 @@ O Estopim (Gatilho 4): Na batalha final, ele cumpre seu dever final. Ele se sacr
 
 ## Respostas de Mhordred aos Dilemas
 
-### Valamir está constantemente testando os limites, desrespeitando a autoridade da Guarda de Ferro e tomando decisões imprudentes que colocam as expedições em risco, tudo por uma busca egoísta de ganho próprio
+### Balastrus está constantemente testando os limites, desrespeitando a autoridade da Guarda de Ferro e tomando decisões imprudentes que colocam as expedições em risco, tudo por uma busca egoísta de ganho próprio
 
-Mhordred não perderia tempo com discussões. Na primeira ofensa direta a Kilin ou ameaça a Thorin, ele confrontaria Valamir fisicamente. Sua resposta seria uma ameaça curta e direta: "Fale assim de novo e eu arranco sua língua." Ele teria que ser contido por Kilin para não resolver o "problema Valamir" permanentemente.
+Mhordred não perderia tempo com discussões. Na primeira ofensa direta a Kilin ou ameaça a Thorin, ele confrontaria Balastrus fisicamente. Sua resposta seria uma ameaça curta e direta: "Fale assim de novo e eu arranco sua língua." Ele teria que ser contido por Kilin para não resolver o "problema Balastrus" permanentemente.
 
 ### Como lidar com um Imperador focado apenas em lucro e que explora trabalhadores? Ao retornar, Kilin testemunha o Imperador ignorando avisos de segurança nas minas, revoluções pela cidade e as condições precárias dos trabalhadores mais pobres em favor de contratos mais lucrativos
 

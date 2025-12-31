@@ -14,9 +14,9 @@ Thorin precisa encontrar um mestre ferreiro que possa converter o Sigmetal em ar
 
 ## Gatilhos
 
-- **NPC com a quest:** Valamir.
+- **NPC com a quest:** Balastrus.
 - **Requisitos:** Ter completado a quest: Minerar Sigmetal - 1/4 de Bravura, 3/4 de Idiotice!
-- **Gatilho:** Falar com Valamir na Estrada do Cão-luar.
+- **Gatilho:** Falar com Balastrus na Estrada do Cão-luar.
 - **Condição para concluir:**
   - Falar com o Mestre Ferreiro no Distrito Comercial.
   - Obter 1 arma de Sigmetal.
@@ -24,7 +24,7 @@ Thorin precisa encontrar um mestre ferreiro que possa converter o Sigmetal em ar
 ## Estrutura Sistêmica
 
 - **Atores Envolvidos:**
-  - Valamir (NPC secundário)
+  - Balastrus (NPC secundário)
   - Thorin (protagonista)
   - Mestre Ferreiro (NPC principal)
 - **Variáveis / Flags Alteradas:**

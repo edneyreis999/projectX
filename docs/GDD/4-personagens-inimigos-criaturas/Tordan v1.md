@@ -6,7 +6,7 @@ Objetivo: Consolidar atributos fixos e essência do personagem.
 
 Nome: Tordan Forjaprata.
 
-Papel Narrativo: Antagonista (para Thorin), Líder Militar (Mão do Imperador e fundado da Guarda de Ferro), Aliado Pragmático (de Valamir).
+Papel Narrativo: Antagonista (para Thorin), Líder Militar (Mão do Imperador e fundado da Guarda de Ferro), Aliado Pragmático (de Balastrus).
 
 Raça: Anão.
 
@@ -26,13 +26,13 @@ Fraqueza Principal: Frieza Emocional, Abandono Não Resolvido.
 
 Aparência: Sempre em sua armadura de General da Guarda de Ferro. Sua expressão é severa e fechada. Ele acredita que os fins justificam os meios.
 
-Motivação Raiz: O desaparecimento de sua esposa, Mélia, quebrou sua capacidade de se conectar emocionalmente, especialmente com seu filho. Ele canalizou esse sentimento em um foco pragmático e implacável no futuro de Gildrat. Ele vê a burocracia do Império como uma fraqueza e, por isso, alia-se a Tibério Valamir [Ler mais sobre Valamir em](<Valamir v3.md>); ele sabe que Valamir usa métodos extremos, mas acredita que essa aliança (tecnologia + força militar) é a única forma de garantir a sobrevivência do império.
+Motivação Raiz: O desaparecimento de sua esposa, Mélia, quebrou sua capacidade de se conectar emocionalmente, especialmente com seu filho. Ele canalizou esse sentimento em um foco pragmático e implacável no futuro de Gildrat. Ele vê a burocracia do Império como uma fraqueza e, por isso, alia-se a Tibério Balastrus [Ler mais sobre Balastrus em](<Balastrus v3.md>); ele sabe que Balastrus usa métodos extremos, mas acredita que essa aliança (tecnologia + força militar) é a única forma de garantir a sobrevivência do império.
 
 Maior sonho: Ver Gildrat próspera e segura.
 
-Maior medo: Ver Gildrat ruir por inação (o que motiva sua aliança com Valamir), ver seu filho se tornar "fraco" e incapaz de sobreviver no mundo que ele considera cruel.
+Maior medo: Ver Gildrat ruir por inação (o que motiva sua aliança com Balastrus), ver seu filho se tornar "fraco" e incapaz de sobreviver no mundo que ele considera cruel.
 
-Principais parentescos: Thorin (filho), Mélia (esposa desaparecida), Tibério Valamir (aliado pragmático).
+Principais parentescos: Thorin (filho), Mélia (esposa desaparecida), Tibério Balastrus (aliado pragmático).
 
 ### 1.1) Linha de Transformação básica
 
@@ -40,11 +40,11 @@ Objetivo: Mapear a evolução emocional e decisória ato por ato, conectando obj
 
 ### 1.2) Linha de Transformação avançada - Ato I / Fase de Chamado /
 
-Jornada narrativa: Atua como o principal antagonista doméstico de Thorin. Sua dor o impede de ser pai, e ele só consegue ser um General. Ele envia Thorin para trabalhar para Valamir como um plano deliberado: sabendo dos métodos extremos de seu aliado, ele espera "endurecer" o garoto e prepará-lo para os planos que ele e Valamir têm para o futuro.
+Jornada narrativa: Atua como o principal antagonista doméstico de Thorin. Sua dor o impede de ser pai, e ele só consegue ser um General. Ele envia Thorin para trabalhar para Balastrus como um plano deliberado: sabendo dos métodos extremos de seu aliado, ele espera "endurecer" o garoto e prepará-lo para os planos que ele e Balastrus têm para o futuro.
 
 Emoção Predominante: Frieza, Frustração (com Thorin).
 
-Objetivo Inicial: Forçar Thorin a amadurecer e colocá-lo no centro de seus planos com Valamir.
+Objetivo Inicial: Forçar Thorin a amadurecer e colocá-lo no centro de seus planos com Balastrus.
 
 Relação com Valores Centrais: Seu "Pragmatismo" e senso de "Dever" (para com o futuro de Gildrat) anulam seu papel de pai.
 
@@ -68,7 +68,7 @@ Hobbies: Nenhum. Seu trabalho e seus planos consumiram sua tristeza.
 
 Reações quando contrariado: Um comando curto, frio e irrecorrível.
 
-Principais amizades: Tibério Valamir (Aliado pragmático).
+Principais amizades: Tibério Balastrus (Aliado pragmático).
 
 Principais inimigos: A estagnação (Dambur, tradicionalistas), Corvos.
 
@@ -78,7 +78,7 @@ Arco narrativo do personagem no jogo atualmente: Ele é o NPC que inicia a jorna
 
 #### Quest - Fim de Jogo
 
-Tordan finalmente confronta seu filho. Ele vê o troféu de futebol rúnico (que o lembra do passado com Mélia) e o rejeita como "sucata". Ele dá a sentença: Thorin trabalhará para Valamir nas expedições. "Um anão fraco não consegue sobreviver a crueldade do mundo".
+Tordan finalmente confronta seu filho. Ele vê o troféu de futebol rúnico (que o lembra do passado com Mélia) e o rejeita como "sucata". Ele dá a sentença: Thorin trabalhará para Balastrus nas expedições. "Um anão fraco não consegue sobreviver a crueldade do mundo".
 
 #### Quest - Primeiro Contrato
 
@@ -86,19 +86,19 @@ Antecipando a fuga de Thorin, Tordan posiciona Kilin e Mhordred nos arredores de
 
 ## 2) Linha de Transformação básica
 
-Tordan vê seu plano e o de Valamir avançarem, mas a libertação dos Ignotos (o erro de cálculo de Valamir) e a perda de seu melhor homem (Kilin) mudam tudo, forçando-o a abandonar a política e assumir seu papel como General de Guerra.
+Tordan vê seu plano e o de Balastrus avançarem, mas a libertação dos Ignotos (o erro de cálculo de Balastrus) e a perda de seu melhor homem (Kilin) mudam tudo, forçando-o a abandonar a política e assumir seu papel como General de Guerra.
 
 ### 2.1) Linha de Transformação avançada - Ato II / Provação / Até a volta de Melios
 
-Jornada narrativa: Ele trabalha com Valamir no conselho para conseguir Mélios, acreditando que é o próximo passo lógico. Porém, Valamir o surpreende quando insiste em levar Thorin para a Mina de Mélios, única expedição não-passificada e, portanto, a mais mortal de todo continente. Ele tenta negar seu pedido, mas Dambur intervém e as coisas saem do controle.Quando Mélios falha e Kilin é perdido, sua fé nos "fins justificam os meios" é abalada. Sua aliança com Valamir racha severamente.
+Jornada narrativa: Ele trabalha com Balastrus no conselho para conseguir Mélios, acreditando que é o próximo passo lógico. Porém, Balastrus o surpreende quando insiste em levar Thorin para a Mina de Mélios, única expedição não-passificada e, portanto, a mais mortal de todo continente. Ele tenta negar seu pedido, mas Dambur intervém e as coisas saem do controle.Quando Mélios falha e Kilin é perdido, sua fé nos "fins justificam os meios" é abalada. Sua aliança com Balastrus racha severamente.
 
-Emoção Predominante: Confiança (em Valamir) -> Dúvida / Fúria (após a perda de Kilin e libertação dos Ignotos).
+Emoção Predominante: Confiança (em Balastrus) -> Dúvida / Fúria (após a perda de Kilin e libertação dos Ignotos).
 
 Objetivo Imediato: Conseguir o direito de explorar Mélios.
 
-Relação com Valores Centrais: Tordan e Valamir querem destituir a família Corvinus do poder, uma das únicas famílias anãs tradicionais que ainda possuem prestígio suficiente para fazer frente aos interesses políticos dos dois.
+Relação com Valores Centrais: Tordan e Balastrus querem destituir a família Corvinus do poder, uma das únicas famílias anãs tradicionais que ainda possuem prestígio suficiente para fazer frente aos interesses políticos dos dois.
 
-Contradições Internas Ativas: Sua aliança com Valamir vs. a perda de seu homem mais leal e honrado (Kilin), exposição de seu filho Thorin ao perigo de forma tão extrema.
+Contradições Internas Ativas: Sua aliança com Balastrus vs. a perda de seu homem mais leal e honrado (Kilin), exposição de seu filho Thorin ao perigo de forma tão extrema.
 
 Arquétipo predominante: O Governante.
 
@@ -108,25 +108,25 @@ Principais inimigos: Os Corvos (tradicionalistas que atrapalham o crescimento da
 
 #### Quest - A Voz do Conselho
 
-Todos estão perante Dambur no Palácio Real. As pautas são apresentadas e a discussão tem início. Valamir apresenta os resultados da última expedição enquanto a família Corvinus é destituida de seu cargo por não conseguir romper um selo rúnico antigo, além de não conseguirem conter uma pequena rebelião entre seus expedicionários. Valamir ganha o direito sobre a Mina de Mélios e, com isso, os planos de ambos contra o tradicionalismo anão são praticamente consolidados, mas Valamir começa a agir de forma inesperada. Ele insiste em levar Thorin até a Mina de Mélios até que Dambur cede e resolve atender ao pedido, algo que com certeza não estava nos planos de Tordan.
+Todos estão perante Dambur no Palácio Real. As pautas são apresentadas e a discussão tem início. Balastrus apresenta os resultados da última expedição enquanto a família Corvinus é destituida de seu cargo por não conseguir romper um selo rúnico antigo, além de não conseguirem conter uma pequena rebelião entre seus expedicionários. Balastrus ganha o direito sobre a Mina de Mélios e, com isso, os planos de ambos contra o tradicionalismo anão são praticamente consolidados, mas Balastrus começa a agir de forma inesperada. Ele insiste em levar Thorin até a Mina de Mélios até que Dambur cede e resolve atender ao pedido, algo que com certeza não estava nos planos de Tordan.
 
 ## 3) Linha de Transformação básica
 
-Ameaçado pelos Ignotos e traído por Valamir, Tordan foca na única coisa que resta: a defesa militar. A reivindicação de Thorin para ser parte da Guarda de Ferro o choca e, e ele vê, pela primeira vez, seu filho como algo mais do que meramente uma criança.
+Ameaçado pelos Ignotos e traído por Balastrus, Tordan foca na única coisa que resta: a defesa militar. A reivindicação de Thorin para ser parte da Guarda de Ferro o choca e, e ele vê, pela primeira vez, seu filho como algo mais do que meramente uma criança.
 
 ### 3.1) Linha de Transformação avançada - Ato III / Transformação
 
 Tordan está em modo de crise, furioso. Após descobrir sobre a ameaça dos Ignotos e a perda de seu guerreiro mais primoroso, Kilin, Ele rejeita a ideia de que Thorin se voluntarie para o resgate. Aceita apenas quando é forçado, ao ver o próprio filho "reivindicar" seu lugar na Guarda de Ferro.
 
-Porém, não havia acabado por ali. Valamir causa um alvoroço no conselho ao dizer que Kilin tentou prejudicá-lo em prol de sua própria segurança, que o Lorde Anão tentou abandoná-lo como distração para os inimigos enquanto fugia dos demais. Thorin, Mhordred e Filena também ficam furiosos. Nenhum deles acredita em sequer uma palavra. Dambur proíbe qualquer tentativa de resgate a Kilin, chamando-o de "maior traidor do império anão".
+Porém, não havia acabado por ali. Balastrus causa um alvoroço no conselho ao dizer que Kilin tentou prejudicá-lo em prol de sua própria segurança, que o Lorde Anão tentou abandoná-lo como distração para os inimigos enquanto fugia dos demais. Thorin, Mhordred e Filena também ficam furiosos. Nenhum deles acredita em sequer uma palavra. Dambur proíbe qualquer tentativa de resgate a Kilin, chamando-o de "maior traidor do império anão".
 
-A situação piora quando são "forçados" a aceitar a ajuda de Valamir (agora arrependido), vendo-o liderar as defesas da cidade.
+A situação piora quando são "forçados" a aceitar a ajuda de Balastrus (agora arrependido), vendo-o liderar as defesas da cidade.
 
 Emoção Predominante: Dever (Militar), Luto (por Kilin), Orgulho (Relutante, por Thorin).
 
 Objetivo Imediato: Resgatar Kilin, reaproximar-se de Thorin e salvar Gildrat.
 
-Relação com Valores Centrais: Seu "Dever" militar assume o controle total. Seu "Pragmatismo" o força a aceitar a ajuda de Thorin e do Valamir arrependido, mesmo a contragosto.
+Relação com Valores Centrais: Seu "Dever" militar assume o controle total. Seu "Pragmatismo" o força a aceitar a ajuda de Thorin e do Balastrus arrependido, mesmo a contragosto.
 
 Contradições Internas Ativas: O General (que precisa de soldados) vs. o Pai (que quer proteger o último resquício de Mélia).
 
@@ -142,7 +142,7 @@ Principais inimigos: Os Ignotos.
 
 #### Quest -Quando o Segundo Sol Chegar
 
-Tordan prepara a Guarda de Ferro para a investida dos Ignotos contra a cidade. Ele também tenta se reaproximar do filho, ao mesmo tempo em que precisa manter sua raiva contra Valamir contida, já que a traição dele ainda está fresca. Ele passa algum tempo sozinho na sala do trono para pensar, imaginando se há mais por trás de tudo o que estão lhe contando.
+Tordan prepara a Guarda de Ferro para a investida dos Ignotos contra a cidade. Ele também tenta se reaproximar do filho, ao mesmo tempo em que precisa manter sua raiva contra Balastrus contida, já que a traição dele ainda está fresca. Ele passa algum tempo sozinho na sala do trono para pensar, imaginando se há mais por trás de tudo o que estão lhe contando.
 
 Uma carga grande de sentimentos do passado que ele pensou ter enterrado voltam à tona, fazendo com que Tordan se sinta fraco pela primeira vez em muito tempo. Ele vê Dambur recuar como um convarde e se trancafiar em algum lugar seguro, repudiando-o e se perguntando porque o havia apoiado como imperador, já que não via mais valor nenhum nele.
 
@@ -152,13 +152,13 @@ As mini-quests do personagem se iniciam a partir deste ponto.
 
 ### Ato I
 
-O "Pai Sombrio". Devastado pelo abandono de sua esposa Mélia, ele é incapaz de ser pai, apenas General. Ele se alia ao pragmático Valamir e envia seu filho Thorin para trabalhar para ele, como um plano para "endurecer" o garoto e prepará-lo para o futuro.
+O "Pai Sombrio". Devastado pelo abandono de sua esposa Mélia, ele é incapaz de ser pai, apenas General. Ele se alia ao pragmático Balastrus e envia seu filho Thorin para trabalhar para ele, como um plano para "endurecer" o garoto e prepará-lo para o futuro.
 
 ### Ato II
 
-O "Aliado Conspirador". Ele e Valamir manipulam o conselho para garantir a expedição a Mélios. No entanto, a ganância de Valamir causa o apocalipse (Libertação dos Ignotos) e a perda do braço direito de Tordan, Kilin.
+O "Aliado Conspirador". Ele e Balastrus manipulam o conselho para garantir a expedição a Mélios. No entanto, a ganância de Balastrus causa o apocalipse (Libertação dos Ignotos) e a perda do braço direito de Tordan, Kilin.
 
-Mudança/Gatilho: O momento crucial é a discussão no conselho. Valamir cria uma rede de intrigas e mentiras para se salvar, causando uma rusga em sua aliança com Tordan e atraindo a raiva do restante do grupo.
+Mudança/Gatilho: O momento crucial é a discussão no conselho. Balastrus cria uma rede de intrigas e mentiras para se salvar, causando uma rusga em sua aliança com Tordan e atraindo a raiva do restante do grupo.
 
 ### Ato III
 
@@ -194,7 +194,7 @@ Descrição do Item: Não é uma funda de criança. Ela é tecida com tiras de c
 
 Tordan entrega a funda a Thorin. "Sua mãe teceu a primeira. Esta... eu mesmo fiz. Que ela proteja o que restou da minha família."
 
-Tordan, em seguida, leva Thorin até um espaço de treinamento que fica dentro do vestiário, no estádio dos Machados Enferrujados, onde pequenos alvos estão espalhados. Ele ensina o filho a atirar com mais precisão e força, além de entregar alguns minérios com aparência rudimentar. "Isso é resultado do tempo da minha aliança com Valamir, você sabe... antes dele trair a todos nós. Atire, você vai gostar".
+Tordan, em seguida, leva Thorin até um espaço de treinamento que fica dentro do vestiário, no estádio dos Machados Enferrujados, onde pequenos alvos estão espalhados. Ele ensina o filho a atirar com mais precisão e força, além de entregar alguns minérios com aparência rudimentar. "Isso é resultado do tempo da minha aliança com Balastrus, você sabe... antes dele trair a todos nós. Atire, você vai gostar".
 
 Enquanto estiver usando essa munição, os ataques de Thorin causam dano extra baseado no atributo escolhido (munição pode ser explosiva, bomba de fumaça, veneno entre outros).
 
@@ -214,7 +214,7 @@ Teaser: Tordan: "Use-a no campo de batalha. E talvez... um dia... no campo de jo
 
 Beats Narrativos: Tordan convoca Thorin para a sala de guerra. "A Guarda está sobrecarregada. Nossos batedores relataram Ignotos perto das fronteiras, sondando o terreno. Você é um guerreiro agora, portanto, vou tratá-lo como tal. Há muitos pontos cegos por onde os inimigos podem entrar. Vá até a estrada do Cão-luar e ajude com os preparativos de defesa... tome cuidado, é claro".
 
-Thorin deve ir sozinho e realizar alguma tarefa simples (podendo ser ajudar Valamir com algum preparativo ou vasculhar a área em busca de Ignotos).
+Thorin deve ir sozinho e realizar alguma tarefa simples (podendo ser ajudar Balastrus com algum preparativo ou vasculhar a área em busca de Ignotos).
 
 Ao retornar, Thorin reporta a Tordan. "Você fez um bom trabalho. Dispensado."
 

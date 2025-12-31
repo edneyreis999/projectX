@@ -10,22 +10,22 @@
 
 ## Contexto Narrativo
 
-Quest que também faz parte do arco narrativo de Thorin e Valamir, logo após as repercucões da última reunião do conselho de Gildrat. Uma grande discussão acontece no distrito comercial, entre nobres revoltados e plebeus que vendiam suas mercadorias. Valamir decide não intervir e manda Thorin, sob autoridade da Guarda de Ferro, apaziguar a disputa e fazer um discurso inspirador que possa unir as duas castas de anões.
+Quest que também faz parte do arco narrativo de Thorin e Balastrus, logo após as repercucões da última reunião do conselho de Gildrat. Uma grande discussão acontece no distrito comercial, entre nobres revoltados e plebeus que vendiam suas mercadorias. Balastrus decide não intervir e manda Thorin, sob autoridade da Guarda de Ferro, apaziguar a disputa e fazer um discurso inspirador que possa unir as duas castas de anões.
 
 ## Gatilhos
 
-- **NPC com a quest:** Valamir.
+- **NPC com a quest:** Balastrus.
 - **Requisitos:** N/A
-- **Gatilho:** Falar com Valamir no Distrito Comercial.
+- **Gatilho:** Falar com Balastrus no Distrito Comercial.
 - **Condição para concluir:**
   - Conversar com 3 NPCs nobres e plebeus em discussão.
-  - Falar com Valamir após o discurso.
+  - Falar com Balastrus após o discurso.
 
 ## Estrutura Sistêmica
 
 - **Atores Envolvidos:**
   - Thorin (protagonista)
-  - Valamir (NPC principal)
+  - Balastrus (NPC principal)
   - Outros anões (NPCs que estão discutindo)
 - **Variáveis / Flags Alteradas:**
   - `v_pontos_armadilhas`
