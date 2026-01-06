@@ -1,4 +1,4 @@
-# 🎮 Narrative Structure Document (NSD) - Fluxo Visual De Cenas
+﻿# 🎮 Narrative Structure Document (NSD) - Fluxo Visual De Cenas
 
 ## 📄 Quest: Quebra do Selo em Melios
 
@@ -14,21 +14,21 @@
   - Concretizar o ponto de não-retorno: o selo é destruído.  
   - Revelar a ameaça real (Ignotos) e deslocar o foco de “mineração” para “sobrevivência”.  
   - Gerar consequências: fuga, alerta em Gildrat e escalada do conflito macro.  
-- **Premissa resumida**: Após derrotar os Corvos na entrada de Melios, Balastrus ignora os alertas e ordena o uso de dinamite para romper um bloco de ferro rúnico — o selo. A explosão abre um corredor que leva a uma sala repleta de metais preciosos. Balastrus celebra e ordena a extração imediata, mas uma fumaça espessa toma o ambiente. Um minerador cai morto; Ignotos emergem da névoa. O grupo luta em retirada, enfrenta um mini-chefe que bloqueia a saída e, ao vencê-lo, corre rumo à entrada. Novos inimigos surgem; Kilin fica para segurar os Ignotos enquanto Thorin e Mhordred escapam por uma passagem lateral para avisar Gildrat.
+- **Premissa resumida**: Após derrotar os Corvos na entrada de Melios, Balastrus ignora os alertas e ordena o uso de dinamite para romper um bloco de ferro rúnico — o selo. A explosão abre um corredor que leva a uma sala repleta de metais preciosos. Balastrus celebra e ordena a extração imediata, mas uma fumaça espessa toma o ambiente. Um minerador cai morto; Ignotos emergem da névoa. O grupo luta em retirada, enfrenta um mini-chefe que bloqueia a saída e, ao vencê-lo, corre rumo à entrada. Novos inimigos surgem; Kilin fica para segurar os Ignotos enquanto Thorin e Mhordred escapam por uma passagem lateral para avisar Gildrat. Filena tenta dissuadir Balastrus e fica ao lado de Thorin durante a retirada.
 
 - **Locais principais**:  
   - Entrada da Mina de Melios (pós-boss Corvos)  
   - Câmara do Selo (bloco de ferro rúnico)  
   - Sala dos Metais (tesouro)  
   - Corredor de fuga até a entrada  
-- **NPCs principais**:  
+- **NPCs principais**:
   - Thorin  
   - Balastrus  
-  - Tusk  
+  - Filena  
   - Kilin, Mhordred  
-  - Anões escavadores (extras)  
+  - Anoes escavadores (extras)  
   - Ignotos (mini-chefe e mobs)  
-  - Os Corvos (referência contextual; não participam desta quest)
+  - Os Corvos (referencia contextual; nao participam desta quest)  
 
 ---
 
@@ -54,7 +54,7 @@
 | #  | Beat                         | Descrição                                                                                         | Controle |
 |---:|------------------------------|---------------------------------------------------------------------------------------------------|----------|
 | 1  | Chegada ao Selo              | O grupo entra na câmara e vê o bloco de ferro rúnico com símbolos estranhos.                     | 🎬       |
-| 2  | Presságios                   | Kilin menciona as canções sobre Melios; Tusk desdenha.                                            | 🎬       |
+| 2  | Pressagios                   | Kilin menciona as cancoes sobre Melios; Filena reforca o alerta e Balastrus desdenha.                                            | ??       |
 | 3  | Ordem de Balastrus           | Balastrus decide romper o bloco com dinamite.                                                     | 🎬       |
 
 ##### Cena 2 – Preparativos Explosivos
@@ -95,7 +95,7 @@
 |---:|----------------------------|---------------------------------------------------------------------------------------------------------------|----------|
 | 1  | Novos Inimigos             | Dois Ignotos surgem por trás; ameaça de cercar o grupo.                                                       | 🎬       |
 | 2  | Decisão Relâmpago          | Kilin decide ficar para segurar os inimigos.                                                        | 🎬       |
-| 3  | Fuga Forçada               | Eles gritam para Thorin fugir com Mhordred por uma passagem lateral.                                         | 🎬       |
+| 3  | Fuga Forcada               | Eles gritam para Thorin fugir com Mhordred por uma passagem lateral; Filena empurra os escavadores e segue na retirada.                                         | ??       |
 | 4  | Corrida para a Entrada     | Trecho de fuga jogável com obstáculos leves; UI indica saída.                                                | 🎮       |
 
 ##### Cena 7 – Saída e Encerramento
@@ -132,7 +132,7 @@
 
 ### 5️⃣ Elenco e Recursos
 
-- **NPCs**: Thorin, Balastrus, Tusk, Kilin, Mhordred, 2–4 escavadores, 1 Ignoto (mini‑chefe), 2 Ignotos (adds).  
+- **NPCs**: Thorin, Balastrus, Filena, Kilin, Mhordred, 2-4 escavadores, 1 Ignoto (mini-chefe), 2 Ignotos (adds).  
 - **Locais**: Entrada de Melios, Câmara do Selo, Sala dos Metais, Corredor de Fuga.  
 - **Itens/props**: cargas de dinamite, ferramentas de mineração, pilhas de minério, tochas/faróis.  
 - **Música/FX**: explosão abafada, zumbido/sussurros em névoa, batimentos/respiração ofegante na fuga.
@@ -146,3 +146,5 @@
 - Recuar sob fumaça e derrotar o Ignoto que bloqueia a passagem.  
 - Fugir com Mhordred pela passagem lateral e alcançar a entrada.  
 - Novo objetivo global: voltar a Gildrat e alertar o Conselho.
+
+
