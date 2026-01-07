@@ -82,7 +82,7 @@
     "maxLevel": 99,
     "name": "Kilin",
     "nickname": "",
-    "note": "<ABS:0>\n<noTarget:2>\n<xAnima:Kilin>\n<xAnimaSet:woHelmet>",
+    "note": "",
     "profile": ""
   },
   {
@@ -99,24 +99,24 @@
     "maxLevel": 99,
     "name": "Mhordred",
     "nickname": "",
-    "note": "<ABS:0>\n<noTarget:4>\n<xAnima:Mhordred>\n<xAnimaSet:woHelmet>",
+    "note": "",
     "profile": ""
   },
   {
     "id": 7,
-    "battlerName": "Tharok",
+    "battlerName": "",
     "characterIndex": 0,
-    "characterName": "Principal/$Tharok",
-    "classId": 4,
-    "equips": [2, 35, 61, 16, 0],
-    "faceIndex": 7,
-    "faceName": "Portraits menores/Principal1",
+    "characterName": "",
+    "classId": 1,
+    "equips": [0, 0, 0, 0, 0],
+    "faceIndex": 0,
+    "faceName": "",
     "traits": [],
     "initialLevel": 1,
     "maxLevel": 99,
-    "name": "Tharok",
+    "name": "",
     "nickname": "",
-    "note": "<ABS:0>\n<noTarget:3>\n<xAnima:Tharok>\n<xAnimaSet:woHelmet>",
+    "note": "",
     "profile": ""
   },
   {
