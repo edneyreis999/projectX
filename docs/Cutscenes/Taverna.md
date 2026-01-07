@@ -1,6 +1,6 @@
-﻿# ðŸ“ Design de Cutscene: [Nome da Cena]
+﻿# Design de Cutscene
 
-**DescriÃ§Ã£o:** Conjunto de cenas que acontecem em um curto perÃ­odo de tempo, com o jogador podendo ou nÃ£o interagir e fazer escolhas.
+**Descrição:** Conjunto de cenas que acontecem em um curto perÃ­odo de tempo, com o jogador podendo ou nÃ£o interagir e fazer escolhas.
 **Cutscene:** Assinando contrato.
 **Mapa onde acontece:** Taverna
 **Personagens Envolvidos:**
