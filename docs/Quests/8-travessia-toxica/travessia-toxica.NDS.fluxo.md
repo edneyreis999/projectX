@@ -1,4 +1,4 @@
-# 🎮 Narrative Structure Document (NSD) - Fluxo Visual De Cenas
+﻿# 🎮 Narrative Structure Document (NSD) - Fluxo Visual De Cenas
 
 ## 📄 Quest: Travessia Tóxica
 
@@ -9,10 +9,10 @@
 - **Importância na campanha**: Main  
 - **Arco narrativo**: Recusa do Chamado  
 - **Quest anterior**: Travessia Perigosa  
-- **Conflito central**: O grupo (Thorin, Kilin, Mhordred, Filena e Tusk) encontra a mina abandonada, adaptada como esgoto de Gildrat, infestada por mutações venenosas. Não há outro caminho, pois todos os outros foram bloqueados pela recente avalanche. Só resta ao grupo avançar. [Ler mais sobre a mina em](../../GDD/2-world-building/locais/mina-esgoto/mina-do-esgoto.md) -
+- **Conflito central**: O grupo (Thorin, Kilin, Mhordred, Filena e Balastrus) encontra a mina abandonada, adaptada como esgoto de Gildrat, infestada por mutações venenosas. Não há outro caminho, pois todos os outros foram bloqueados pela recente avalanche. Só resta ao grupo avançar. [Ler mais sobre a mina em](../../GDD/2-world-building/locais/mina-esgoto/mina-do-esgoto.md) -
 - **Objetivo narrativo global**: Introduzir a primeira cena de retorno ao Coreto com Rheed e as crianças, criar atmosfera claustrofóbica, reforçar a ameaça das mutações e introduzir o Símbolo da Trégua como mecânica antes do retorno à Gildrat.
-- **Premissa resumida**: Thorin e seu grupo (Kilin, Mhordred, Filena e Tusk) encontram a entrada de uma antiga mina/esgoto, enquanto fogem da tempestade de neve. Exploram dois níveis repletos de puzzles, armadilhas ambientais e criaturas mutantes, culminando no confronto com o chefe Pestesporo antes que possam deixar a Mina do Esgoto. [Ler mais sobre as criaturas da mina em](frontend/docs/GDD/4-personagens-inimigos-criaturas/mina-do-esgoto.md) -
-- **Resumo**: Após a sequência da nevasca, o grupo encontra a entrada de uma mina abandonada que servia como sistema de esgoto anão. O 1º nível introduz puzzles, sinalizações, a nova cena de Rheed e o Símbolo da Trégua. O 2º nível intensifica os combates e conduz à Câmara de Decantação, onde o chefe Pestesporo desperta.
+- **Premissa resumida**: Thorin e seu grupo (Kilin, Mhordred, Filena e Balastrus) encontram a entrada de uma antiga mina/esgoto, enquanto fogem da tempestade de neve. Exploram dois níveis repletos de puzzles, armadilhas ambientais e criaturas mutantes, culminando no confronto com o chefe Pestesporo antes que possam deixar a Mina do Esgoto. [Ler mais sobre as criaturas da mina em](frontend/docs/GDD/4-personagens-inimigos-criaturas/mina-do-esgoto.md) -
+- **Resumo**: Após a sequência da nevasca, o grupo encontra a entrada de uma mina abandonada que servia como sistema de esgoto anão. O 1º nível introduz puzzles, sinalizações, a nova cena de Rheed e o Símbolo da Trégua. O 2º nível intensifica os combates e conduz à Câmara de Decantação, onde o chefe Pestesporo desperta. Filena segue ao lado de Thorin, cobra cautela e lembra que precisa voltar com o pagamento.
 - **Locais principais**:  
   - Entrada da Mina do Esgoto
   - Coreto (dissipação da névoa das memórias e volta para a cena do Rheed)
@@ -23,7 +23,7 @@
   - Kilin  
   - Mhordred  
   - Filena  
-  - Tusk  
+  - Balastrus  
   - Rheed
   - Crianças
 **Criaturas principais**:
@@ -74,7 +74,7 @@ Quest: Travessia Tóxica - Mina do Esgoto
 
 | #  | Beat                                             | Descrição / Decisões do Jogador                        | Controle |
 | ---|-------------------------------------------------|-------------------------------------------------------|----------|
-| 1  | Descoberta da entrada sob neve                                  | O grupo, fugindo da avalanche e da tempestade, encontra a entrada da antiga mina/esgoto, o único caminho possível.  | 🎬       |
+| 1  | Descoberta da entrada sob neve                                  | O grupo, fugindo da avalanche e da tempestade, encontra a entrada da antiga mina/esgoto, o unico caminho possivel; Filena se aproxima de Thorin e reforca que nao podem recuar.  | ??       |
 | 2  | Corredor circular e puzzles de válvulas                         | O jogador explora o anel de manutenção e deve resolver puzzles ambientais, manipulando válvulas para drenar lodo ou abrir passagens.               | 🎬       |
 | 3  | Leitura de registros e runas                             | Opcionalmente, o jogador pode encontrar e ler antigos registros anões, descobrindo mais sobre a história do local e a origem das criaturas.          | 🎬       |
 | 4  | Névoa das lembranças                                  | A primeira cena de quebra narrativa ocorre: a realidade da mina se dissipa e o jogador é transportado para o Coreto, com Rheed e as crianças. | 🎮       |
@@ -102,3 +102,4 @@ Quest: Travessia Tóxica - Mina do Esgoto
 Nível 1 (combate moderado): Entrada → corte para o Rheed → retorno ao jogo que leva à uma Câmara onde estará o Símbolo de Trégua → Leitura de sinalizações → Casa de Válvulas inativa → Descida ao Nível 2.
 
 Nível 2 (Combate massivo): Plataformas sobre lodo → Salas de gradeamento → Corredores de condensado → Câmara (boss) → saída interna.
+

@@ -1,4 +1,4 @@
-# Fluxo sigmetal
+﻿# Fluxo sigmetal
 
 ```mermaid
 flowchart TD
@@ -25,14 +25,14 @@ subgraph KRAVENS["Mina de Kravens (Final da Quest 'Minerador Aprendiz')"]
 
     %% Nota: O jogador agora possui o item de quest.
 
-    A3{"Entregar o Sigmetal para Tusk<br>na mina de Kravens?"}
+    A3{"Entregar o Sigmetal para Balastrus<br>na mina de Kravens?"}
 
-    A4["Entregar Sigmetal para Tusk (na mina)"]
+    A4["Entregar Sigmetal para Balastrus (na mina)"]
     %% Efeitos:
     %%  PLAYER_HAS_SIGMETAL=false
     %%  v_sigmetal_destino = 2 (TUSK)
 
-    A5["Não entregar a Tusk na mina<br>(seguir viagem com Sigmetal)"]
+    A5["Não entregar a Balastrus na mina<br>(seguir viagem com Sigmetal)"]
     %% Efeitos:
     %%  PLAYER_HAS_SIGMETAL=true
 
@@ -68,9 +68,9 @@ subgraph ESTRADA["Estrada do Cão Luar (Quest 'A Travessia Perigosa')"]
     %%  PLAYER_HAS_SIGMETAL=false
     %%  v_sigmetal_destino = 1 (BALASTRUS)
 
-    %% 2 - Tusk (apenas se tiver Sigmetal)
-    B2b{"Confirmar entrega para Tusk?"}
-    B3["Entregar Sigmetal para Tusk (na estrada)"]
+    %% 2 - Balastrus (apenas se tiver Sigmetal)
+    B2b{"Confirmar entrega para Balastrus?"}
+    B3["Entregar Sigmetal para Balastrus (na estrada)"]
     
     %% Efeitos:
     %%  PLAYER_HAS_SIGMETAL=false
@@ -111,10 +111,10 @@ subgraph ESTRADA["Estrada do Cão Luar (Quest 'A Travessia Perigosa')"]
 
     %% Final baseado em v_sigmetal_destino
     F1{"Final depende de v_sigmetal_destino"}
-    C1["Final: Tusk se gaba para Balastrus"]:::coral
+    C1["Final: Balastrus anuncia o Sigmetal ao grupo"]:::coral
     C2["Thorin reage à mentira"]
     F2["Final: Balastrus agradesse Thorin e diz que vai recompensa-lo"]
-    F3["Final: Balastrus vai até o bau e agradesse toda expedição, incluindo Tusk. Diz que essa expedição foi a melhor dos ultimos anos."]
+    F3["Final: Balastrus vai até o bau e agradesse toda expedição, incluindo a guarda. Diz que essa expedição foi a melhor dos ultimos anos."]
     F4["Final: Balastrus faz comentario sobre bolso de Thorin estar cheio"]
 
     %% Encadeamentos principais
@@ -123,7 +123,7 @@ subgraph ESTRADA["Estrada do Cão Luar (Quest 'A Travessia Perigosa')"]
 
     %% B2 opções (1–3) — evitar sintaxe de lista no Markdown do Mermaid
     B2 -- "Opção 1: Entregar para Balastrus" --> B2a
-    B2 -- "Opção 2: Entregar para Tusk" --> B2b
+    B2 -- "Opção 2: Entregar para Balastrus" --> B2b
     B2 -- "Opção 3: Entregar no baú de Kravens" --> B2c
 
     %% Confirmação/cancelamento das 1–3 (apenas quando PLAYER_HAS_SIGMETAL = true)
@@ -172,7 +172,7 @@ subgraph ESTRADA["Estrada do Cão Luar (Quest 'A Travessia Perigosa')"]
     F1 -- "3 (BAU)" --> F3
     F1 -- "0 (NINGUEM)" --> F4
 
-    %% Cena Tusk (mantida do diagrama anterior)
+    %% Cena Balastrus na estrada (mantida do diagrama anterior)
     C1 --> C2
     C2 --> END
 
@@ -184,7 +184,7 @@ end
 %% =====================================================
 %% Legenda (v_sigmetal_destino)
 %% 0 = NINGUEM | 1 = BALASTRUS | 2 = TUSK | 3 = BAU
-%% Tusk na mina também seta 2 (TUSK).
+%% Balastrus na mina também seta 2 (TUSK).
 %% Opções 1–3 só aparecem se o jogador tiver o Sigmetal na bolsa.
 %% Não existe opção "Não entregar a ninguém"; sair sem entregar define 0 se tiver Sigmetal.
 %% A opção 'Ir para casa' aparece no Balastrus quando KRAVENS_INVENTARIO = 0.
