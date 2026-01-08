@@ -11,8 +11,8 @@
 
 **Bustos Envolvidos:**
 
-* [Kilin] (ID: `1`)
-* [Mhordred] (ID: `2`)
+* [Kilin] (ID: `1`) `Portraits/Principal/`
+* [Mhordred] (ID: `2`)`Portraits/Principal/`
 
 ---
 
