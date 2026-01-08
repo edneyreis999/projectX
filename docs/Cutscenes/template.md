@@ -2,7 +2,8 @@
 
 **ID da Cena:** `nome_da_cena_no_csv` (ex: opening, battle_intro)
 **Local:** [Nome do Mapa]
-**Personagens Envolvidos:**
+
+**Eventos Envolvidos:**
 
 * [Nome] (ID: `lucas`)
 * [Nome] (ID: `maria`)
