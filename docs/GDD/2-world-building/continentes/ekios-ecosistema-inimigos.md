@@ -2,9 +2,11 @@
 
 **Autor**: Claude Code (Game Designer Sênior IA)
 **Data de Criação**: 2026-01-07
-**Versão**: 1.0
-**Status**: Aprovado
+**Data de Última Revisão**: 2026-01-07
+**Versão**: 2.0
+**Status**: Revisado (Progressão Lv 1-30 + RM MZ)
 **Jogo**: Daratrine: A Origem
+**Engine**: RPG Maker MZ
 
 ---
 
@@ -15,11 +17,20 @@ Este documento define o ecossistema completo de inimigos do continente gelado **
 **Contexto do Jogo**:
 - **3 dungeons principais**: Kravens (mineração), Esgoto de Gildrat (tóxico), Melios (sagrada)
 - **World map**: Encontros aleatórios na Estrada do Cão-Luar e cordilheira
-- **Progressão**: Níveis 1-12 (Early 1-5, Mid 5-8, Late 8-12)
+- **Progressão**: Níveis 1-30 com âncoras narrativas
+  - **Lv 1**: Prólogo e saída de Gildrat
+  - **Lv 10**: Kravens (Cristaleão + Sigmetal)
+  - **Lv 15**: Esgoto (Pestesporo)
+  - **Lv 20**: Corvos de Melios (boss humano)
+  - **Lv 25**: Quebra do Selo (primeiros Ignotos)
+  - **Lv 30**: Defesa de Gildrat (General Ignoto)
 - **Loot**: Moeda única **Ludos** (sem sistema de crafting complexo)
 - **Estilo visual**: Bestiário medieval em sépia monocromático, hachuras, alto contraste
+- **Engine**: RPG Maker MZ (encontros por passos, sistema de turnos, troops, estados)
 
 **Ênfase**: 70% subterrâneo (minas/cavernas), 30% superfície (cordilheira gelada)
+
+*Fonte: [gildrat-v2.md](../racas/anoes/gildrat-v2.md)*
 
 ---
 
@@ -36,7 +47,9 @@ Este documento define o ecossistema completo de inimigos do continente gelado **
 - Estabelecimento da Guarda de Ferro como força militar dominante
 - Expedições regulares de mineração a Kravens e minas secundárias
 - **Melios permanece respeitada** como mina sagrada/proibida (alertas culturais sobre não profanar o local)
-- Comércio limitado com goblins (Metsa). trolls e rarissimos elfos no Distrito Externo de Gildrat
+- Comércio limitado com goblins (Metsa), trolls e raríssimos elfos no Distrito Externo de Gildrat
+
+*Fonte: [gildrat-v2.md](../racas/anoes/gildrat-v2.md) e [o-continente-de-ekios.md](../o-continente-de-ekios.md#s2--história-e-linha-do-tempo)*
 
 ### 1.2. Geografia e Clima
 
@@ -50,6 +63,8 @@ Este documento define o ecossistema completo de inimigos do continente gelado **
 
 **Características Geológicas**: Montanhas rochosas, cavernas extensas, geleiras, fendas profundas.
 
+*Fonte: [o-continente-de-ekios.md](../o-continente-de-ekios.md#s3--geografia-e-biomas)*
+
 ### 1.3. População e Cultura
 
 **Raças Dominantes**: Anões de Gildrat (70.000 habitantes no apogeu).
@@ -59,6 +74,8 @@ Este documento define o ecossistema completo de inimigos do continente gelado **
 **Economia Principal**: Mineração e metalurgia; expedições de mineração são eventos cívicos celebrados.
 
 **Força Militar**: **Guarda de Ferro** — exército elite anão; patrulhas regulares na cordilheira e escoltas de expedições.
+
+*Fonte: [gildrat-v2.md](../racas/anoes/gildrat-v2.md) e [gildrat-arquitetura-v2.md](../racas/anoes/gildrat-arquitetura-v2.md)*
 
 ---
 
@@ -77,7 +94,7 @@ Este documento define o ecossistema completo de inimigos do continente gelado **
 - Encostas (bosques de pinheiros, rios congelados)
 - Vales (entorno de Gildrat, áreas seguras)
 
-### 2.2. Dungeon 1 — Mina de Kravens (Early Game, Níveis 1-5)
+### 2.2. Dungeon 1 — Mina de Kravens (Níveis 5-10, Âncora Lv 10)
 
 **Localização**: Serra ao norte de Gildrat, acessível pela Estrada do Cão-Luar.
 
@@ -89,24 +106,26 @@ Este documento define o ecossistema completo de inimigos do continente gelado **
 - **Túneis Ativos** (entrada/níveis superiores): área de trabalho regular dos anões; criaturas são "pragas" conhecidas
 - **Andar Esquecido** (após queda de Thorin, Cena 6d): nível inferior selado há décadas; criaturas maiores/mais perigosas
 
-**Inimigos**:
+**Inimigos** (RM MZ):
 
-| Nome | Nível | Tipo | Comportamento | Localização |
+| Nome | Nível | Tipo | Comportamento (Troops/Estados) | Localização |
 |------|-------|------|---------------|-------------|
-| **Morcego de Caverna** | 1-2 | Fauna (Fodder) | Voa em grupos de 3-5; ataque rápido mas fraco; foge se 50% do grupo morrer | Túneis Ativos |
-| **Aranha Mineira** | 2-3 | Fauna (Fodder/Mid) | Tece teias (slow); veneno fraco; emboscada em tetos; patrulha em duplas | Túneis Ativos |
-| **Aranha Gigante** | 3-4 | Fauna (Mid-tier) | Teia maior (imobiliza 2 turnos); veneno médio; patrulha em duplas ou trios | Andar Esquecido |
-| **Rato Gigante Mutante** | 3-4 | Fauna (Mid-tier) | Roedor agressivo; ataque em bando (4-6); variação rara "Rato Alfa" (elite menor) | Andar Esquecido |
-| **Cristaleão** | 5 | Boss (Criatura de cristal) | Ver seção de bosses | Andar Esquecido (câmara final) |
+| **Morcego de Caverna** | 5-6 | Fauna (Fodder) | Troops de 3-5 unidades; ataque básico; habilidade passiva: **Fuga em Bando** (chance de fugir se restarem <50% do grupo) | Túneis Ativos |
+| **Aranha Mineira** | 6-7 | Fauna (Fodder/Mid) | Troops de 2-3 unidades; habilidade: **Teia Pegajosa** (aplica estado Lento por 2 turnos, chance 70%) | Túneis Ativos |
+| **Aranha Gigante** | 7-9 | Fauna (Mid-tier) | Troops de 2 unidades; habilidade: **Teia Paralisante** (aplica estado Paralisado por 2 turnos, chance 60%); veneno médio (DoT -10 HP/turno, 3 turnos) | Andar Esquecido |
+| **Rato Gigante Mutante** | 7-9 | Fauna (Mid-tier) | Troops de 4-6 unidades; buff passivo: **Força da Horda** (se 3+ ratos vivos, +20% ATK); variação rara "Rato Alfa" (elite menor, buffa aliados) | Andar Esquecido |
+| **Cristaleão** | 10 | Boss (Camaleão de minérios) | Ver seção de bosses | Andar Esquecido (câmara final) |
 
-**Perigos Ambientais**:
-- **Colapso pontual** (evento scriptado em área específica)
+**Perigos Ambientais** (RM MZ):
+- **Colapso pontual**: Evento de mapa com switch; dano fixo (30-50 HP) se personagem estiver na tile; aviso visual (rachaduras, poeira caindo) 3 segundos antes
 
 **Recompensas Narrativas**:
 - **Sigmetal** (minério raro) dropado pelo Cristaleão (Cena 6e)
 - Liberação de acesso ao 10º Kraven para completar contrato
 
-### 2.3. Dungeon 2 — Esgoto de Gildrat (Mid Game, Níveis 5-8)
+**Nota de Design**: Jogador chega aqui após **World Map (Lv 1-5)**, então Kravens é a primeira dungeon fechada do jogo.
+
+### 2.3. Dungeon 2 — Esgoto de Gildrat (Níveis 10-15, Âncora Lv 15)
 
 **Localização**: Sistema de drenagem subterrâneo de Gildrat, acessível por entrada na nevasca (Cena 7b.1).
 
@@ -118,54 +137,68 @@ Este documento define o ecossistema completo de inimigos do continente gelado **
 - **Túneis Superiores**: esgotos ativos; água corrente; criaturas oportunistas
 - **Câmara de Decantação** (nível inferior): câmara anóxica (baixo oxigênio); fungos gigantes; boss fight
 
-**Inimigos**:
+**Inimigos** (RM MZ):
 
-| Nome | Nível | Tipo | Comportamento | Localização |
+| Nome | Nível | Tipo | Comportamento (Troops/Estados) | Localização |
 |------|-------|------|---------------|-------------|
-| **Rato de Esgoto** | 5-6 | Fauna (Fodder) | Ataque em enxames de 4-6; carrega doenças (debuff: -10% defesa, 3 turnos) | Túneis Superiores |
-| **Limo Ácido** | 6 | Criatura Tóxica (Mid) | Gelatinoso; ataque corpo a corpo dissolve armadura (debuff: -15% defesa física, 5 turnos); lento (velocidade -30%) mas resistente (HP alto) | Túneis Superiores e Câmara |
-| **Fungo Venenoso Gigante** | 7 | Criatura Tóxica (Elite) | Imóvel; lança esporos (AOE, raio 3m, veneno); precisa destruir "cabeça" (parte específica) para matar | Câmara de Decantação |
-| **Gosma Tóxica** | 7 | Criatura Tóxica (Mid) | Variação maior do Limo; divide-se em 2 limos menores ao ser atacado com AOE; cuidado com magias de área | Câmara de Decantação |
-| **Pestesporo** | 8 | Boss (Fungo colossal) | Ver seção de bosses | Câmara de Decantação (final) |
+| **Rato de Esgoto** | 10-11 | Fauna (Fodder) | Troops de 4-6 unidades; habilidade: **Mordida Doente** (aplica estado Doença: -10% DEF, 3 turnos, chance 50%) | Túneis Superiores |
+| **Limo Ácido** | 11-12 | Criatura Tóxica (Mid) | Troop individual ou dupla; habilidade: **Dissolução Ácida** (aplica estado Armadura Dissolvida: -15% DEF física, 5 turnos); trait: Velocidade -30%, HP alto | Túneis Superiores e Câmara |
+| **Fungo Venenoso Gigante** | 13-14 | Criatura Tóxica (Elite) | Troop fixo imóvel; habilidade: **Nuvem de Esporos** (atinge todos os personagens, aplica estado Envenenado: DoT -15 HP/turno, 4 turnos); mecânica de partes (destruir "cabeça" para derrotar) | Câmara de Decantação |
+| **Gosma Tóxica** | 13-14 | Criatura Tóxica (Mid) | Troop individual; mecânica especial: **Divisão** (ao receber habilidade de área, divide-se em 2 Limos Ácidos menores com 30% HP cada via evento comum) | Câmara de Decantação |
+| **Pestesporo** | 15 | Boss (Fungo colossal) | Ver seção de bosses | Câmara de Decantação (final) |
 
-**Perigos Ambientais**:
-- **Água tóxica** (dano leve contínuo se entrar; áreas claramente marcadas por cor esverdeada)
-- **Vapor venenoso** (efeito visual; dano leve contínuo se entrar; dissipa em área aberta)
+**Perigos Ambientais** (RM MZ):
+- **Água tóxica**: Tiles específicas aplicam dano contínuo (3-5 HP/segundo) via evento paralelo; áreas marcadas com tint esverdeado
+- **Vapor venenoso**: Zona específica com overlay visual; aplica debuff leve via evento (estado Intoxicado: -5% Velocidade) enquanto personagem estiver na região
 
 **Recompensas Narrativas**:
 - **Liberação de passagem** para superfície (saída do esgoto)
 - Retorno à Estrada do Cão-Luar (Cena 7b.3)
 
-### 2.4. Dungeon 3 — Mina de Melios (Late Game, Níveis 8-12)
+### 2.4. Dungeon 3 — Mina de Melios (Níveis 15-20, Âncora Lv 20)
 
 **Localização**: Mina sagrada ao norte de Gildrat, além de Kravens; acessível após obter mandato do Conselho (Cena 8).
 
-**Tema**: Mina proibida por tradição; selos ancestrais; energia estranha (foreshadowing da quebra futura); guardiões construtos.
+**Tema**: Mina proibida por tradição; selos ancestrais; energia estranha (foreshadowing da quebra futura); guardiões construtos; **confronto com Corvos de Melios** (Lv 20).
 
 **Bioma**: Túneis antigos de pedra lavrada (pré-Gildrat?); runas gravadas nas paredes; cristais emitem brilho azulado instável; temperatura fria; atmosfera opressiva.
 
 **Estrutura**:
 - **Corredores/Entrada**: patrulhas de guardiões construtos; elementais de pedra
-- **Câmara do Selo** (profunda): selo de ferro com runas; energia instável (foreshadowing); boss fight
+- **Acampamento dos Corvos** (mid-dungeon): encontro narrativo com facção rebelde; boss fight humano (Lv 20)
+- **Câmara do Selo** (profunda): selo de ferro com runas; energia instável (foreshadowing); Guardião Colossal de Pedra
 
-**Inimigos**:
+**Mecânica Especial — Visão Limitada** (RM MZ):
+- Toda a dungeon usa overlay/picture circular (raio ~7 tiles) ao redor do líder do party
+- Implementação via plugin de fog of war OU picture que segue player com blend subtract/multiply
+- Cristais luminescentes marcam pontos de interesse (brilho sutil atravessa a escuridão)
+- Efeito narrativo: atmosfera opressiva, medo do desconhecido, foreshadowing
 
-| Nome | Nível | Tipo | Comportamento | Localização |
+**Inimigos** (RM MZ):
+
+| Nome | Nível | Tipo | Comportamento (Troops/Estados) | Localização |
 |------|-------|------|---------------|-------------|
-| **Guardião Menor de Pedra** | 8-9 | Construto (Elite) | Construto lento mas resistente (redução de dano físico 30%); ataque pesado; patrulha rígida em duplas; não foge | Corredores |
-| **Elemental de Terra** | 9-10 | Criatura Mágica (Elite) | Criatura mágica; ataca com rochas projetadas (dano à distância); resistente a físico (redução 40%); fraco contra magia | Corredores e Câmara |
-| **Guardião Ancião** | 10-11 | Construto (Elite/Sub-boss) | Construto maior; mecânica: armadura de pedra (precisa quebrar com 3 ataques pesados); ataques em área (cone frontal) | Câmara do Selo (entrada) |
-| **Sombra Errante** | 11 | Criatura Mágica Espectral (Elite) | Criatura espectral; causa medo (debuff: -20% ataque, 4 turnos); ataque intangível (ignora armadura física); foreshadowing da energia selada | Câmara do Selo (perto do selo) |
-| **[Boss de Melios - A Definir]** | 12 | Boss | Opções: (1) Guardião Colossal de Pedra OU (2) Manifestação da Energia Selada (sem revelar Ignotos diretamente) | Câmara do Selo (final, após quebra do selo narrativa) |
+| **Guardião Menor de Pedra** | 15-17 | Construto (Elite) | Troops de 2 unidades; trait: Resistência Física 30%; baixa Velocidade; não foge; ataque pesado (high power, baixa accuracy) | Corredores |
+| **Elemental de Terra** | 16-18 | Criatura Mágica (Elite) | Troop individual; habilidade: **Projétil Rochoso** (alvo único, elemento Terra); trait: Resistência Física 40%, Fraqueza Mágica 25%; não foge | Corredores e Câmara |
+| **Guardião Ancião** | 18-19 | Construto (Elite/Sub-boss) | Troop individual fixo (evento); mecânica de partes: **Armadura de Pedra** (precisa causar 3x dano crítico ou quebrar via habilidade especial); habilidade: **Golpe Esmagador** (atinge linha frontal) | Câmara do Selo (entrada) |
+| **Sombra Errante** | 19 | Criatura Mágica Espectral (Elite) | Troop individual; habilidade: **Sussurro do Medo** (aplica estado Medo: -20% ATK, 4 turnos, todos personagens); trait: ataques ignoram DEF física; foreshadowing da energia selada | Câmara do Selo (perto do selo) |
+| **Corvos de Melios (Líder + 3-4 aliados)** | 20 | Boss Humano | Boss fight narrativo com facção rebelde; ver seção de bosses | Acampamento dos Corvos |
+| **Guardião Colossal de Pedra** | 20 | Boss (Construto gigante) | Ver seção de bosses | Câmara do Selo (final) |
 
-**Perigos Ambientais**:
-- **Energia instável** (distorções visuais perto do selo; brilho azulado pulsante; som de zumbido grave; **sem dano mecânico**, apenas atmosfera)
-- **Colapsos pontuais** (após quebra do selo na Cena 10b; jogador pode fugir facilmente)
+**Perigos Ambientais** (RM MZ):
+- **Energia instável**: Efeito visual via picture/overlay pulsante (azul translúcido); SE de zumbido grave; **sem dano mecânico**, apenas atmosfera
+- **Visão limitada**: Descrita acima; obriga jogador a explorar com cautela
+- **Colapsos pontuais**: Após quebra do selo narrativa (Cena 10b); evento scriptado com timer (jogador tem 5 segundos para sair da tile)
 
 **Recompensas Narrativas**:
 - **Acesso a minérios raros** (salão após o selo; narrativa de riqueza efêmera antes da invasão dos Ignotos)
+- **Sigmetal adicional** (se exploração pós-quebra)
 
-### 2.5. World Map — Encontros Aleatórios (Superfície)
+**Nota de Design**: Boss dos **Corvos de Melios (Lv 20)** é o pico de dificuldade "humana" antes da quebra do selo e aparição dos Ignotos (Lv 25+).
+
+### 2.5. World Map — Encontros Aleatórios (Superfície, Níveis 1-5)
+
+**CRÍTICO**: Jogador explora World Map **ANTES de entrar em Kravens**. Esta é a área de **tutorial de combate** e apresentação do loop básico do jogo.
 
 **Estrada do Cão-Luar / Cordilheira Gelada**:
 - Rota principal entre Gildrat e Kravens
@@ -176,19 +209,32 @@ Este documento define o ecossistema completo de inimigos do continente gelado **
 - Espalhadas pela cordilheira
 - Refúgios de bandidos e goblins renegados
 
-**Inimigos do World Map**:
+**Inimigos do World Map** (RM MZ):
 
-| Nome | Nível | Tipo | Comportamento | Localização |
+| Nome | Nível | Tipo | Comportamento (Troops/Encounter Rate) | Localização |
 |------|-------|------|---------------|-------------|
-| **Lobo de Gelo** | 4-6 | Predador (Mid-tier) | Matilha de 3-4; cooperação tática (foca alvo mais fraco); foge se líder morrer ou 50% da matilha cair | Estrada, Cordilheira |
-| **Lobo Alpha de Gelo** | 7-8 | Predador (Elite) | Líder de matilha; aura gélida (debuff em área: -10% velocidade aliados, raio 5m); buffa lobos comuns (+20% ataque); cristais de gelo nas costas (fantasia vibrante) | Cordilheira (raro) |
-| **Urso Colossal** | 8-9 | Predador (Elite, raro) | Urso gigante com pedra/cristais nas costas (fantasia vibrante); territorial; alto HP; ataque pesado (investida); não foge | Encostas, Cordilheira |
-| **Bandido Anão Renegado** | 5-7 | Humanoide Hostil (Mid/Elite) | Exilados de Gildrat (reflexo do lado obscuro do sistema de castas); usam armadura/armas anãs; cooperam em grupos de 4-6; chamam reforços se HP <50%; fogem se isolados | Minas Abandonadas |
-| **Goblin Saqueador** | 4-5 | Humanoide Hostil (Mid) | Renegados de Metsa (conecta com lore existente); arqueiros; fogem de corpo a corpo; emboscadas em terreno elevado | Encostas, Minas Abandonadas |
+| **Lobo Jovem** | 1-2 | Predador (Fodder) | Troops de 2-3 unidades; ataque básico; encounter rate alto (tutorial); habilidade passiva: **Fuga Instintiva** (foge se HP <30%) | Estrada (primeiras áreas) |
+| **Lobo de Gelo** | 3-5 | Predador (Mid-tier) | Troops de 3-4 unidades; cooperação: **Caça em Matilha** (buff +15% ATK se 3+ lobos vivos); encounter rate médio | Estrada, Cordilheira |
+| **Goblin Saqueador** | 2-4 | Humanoide Hostil (Mid) | Troops de 2-3 unidades; habilidade: **Flecha** (alvo único, elemento físico); trait: Foge se superado (1 goblin restante); encounter rate médio | Encostas, Minas Abandonadas |
+| **Bandido Anão Renegado** | 3-5 | Humanoide Hostil (Mid) | Troops de 2-4 unidades; habilidade: **Chamado de Reforços** (event troop, adiciona 1-2 aliados se HP <50%); armor/weapon anãs; encounter rate baixo | Minas Abandonadas |
+| **Lobo Alpha de Gelo** | 5 (Raro) | Predador (Elite) | Troop individual ou com 2 Lobos de Gelo; habilidade: **Uivo Gélido** (aplica estado Lento: -10% Velocidade, 3 turnos, todos personagens); buff passivo: **Líder de Matilha** (+20% ATK para lobos aliados); encounter rate muito baixo | Cordilheira (áreas remotas) |
 
-**Perigos Ambientais (World Map)**:
-- **Tempestade de neve** (efeito visual; reduz visibilidade -70%; não causa dano; aumenta chance de encontro em 20%)
-- **Avalanche** (evento raro/narrativo em passagens; jogador pode fugir com QTE simples)
+**Progressão de Encounter Rate**:
+- **Áreas próximas a Gildrat (Lv 1-2)**: encounter rate alto, inimigos fracos (Lobo Jovem, Goblin Saqueador)
+- **Estrada do Cão-Luar (Lv 2-4)**: encounter rate médio, inimigos mid-tier (Lobo de Gelo, Bandido Anão)
+- **Cordilheira remota (Lv 4-5)**: encounter rate baixo, possibilidade de elite (Lobo Alpha)
+
+**Perigos Ambientais** (RM MZ):
+- **Tempestade de neve**: Evento de mapa com switch; overlay visual (névoa branca); aumenta encounter rate em +20% enquanto ativo; duração: 2-3 minutos
+- **Avalanche**: Evento narrativo scriptado em passagens específicas; aviso sonoro (estrondo crescente); jogador tem 5 segundos para mover-se para tile segura
+
+**Objetivo de Design**:
+1. **Ensinar loop básico**: ataque, defesa, habilidades, itens
+2. **Apresentar famílias de inimigos**: predadores (lobos) e humanoides (goblins/bandidos)
+3. **Introduzir status effects**: Lento (Lobo Alpha), Fuga (mecânica de escape)
+4. **Preparar jogador para Kravens**: Lv 5 ao chegar na dungeon
+
+*Fonte: [o-continente-de-ekios.md](../o-continente-de-ekios.md#s3--geografia-e-biomas)*
 
 ---
 
@@ -277,44 +323,54 @@ Este documento define o ecossistema completo de inimigos do continente gelado **
 
 ## 4. Bosses de Dungeon — Mecânicas e Telégrafos
 
-### 4.1. Cristaleão (Kravens, Nível 5)
+### 4.1. Cristaleão (Kravens, Nível 10)
 
-**Tipo**: Criatura de cristal/mineral (fauna mágica rara).
+**Tipo**: Camaleão de minérios (reptil mineral mimetizado).
 
 **Localização**: Andar Esquecido de Kravens, câmara final (Cena 6e).
 
-**Aparência Visual** (diretrizes de arte):
-- Criatura quadrúpede (leão/pantera) feita de cristais transparentes azulados
-- Corpo angular com facetas brilhantes
-- Partes destacáveis: braços (garras), pernas, cauda cristalina
-- Olhos brilham em azul intenso
-- Hachuras internas sugerem estrutura cristalina
+**Conceito**: Criatura capaz de **camuflar-se** perfeitamente entre os minérios e cristais de Kravens. Predador de emboscada que aguarda mineradores incautos.
 
-**Mecânicas de Combate**:
+**Aparência Visual** (diretrizes de arte):
+- Criatura reptiliana (camaleão) quadrúpede com pele cristalina
+- Corpo alongado com cauda preênsil
+- Pele mimetiza textura e cor dos minérios ao redor (facetas angulares, brilho azulado)
+- Partes destacáveis: membros anteriores (garras), membros posteriores, cauda
+- Olhos com pupilas verticais brilham levemente
+- Língua longa pode atacar à distância
+- Hachuras sugerem escamas cristalinas
+
+**Mecânicas de Combate** (RM MZ):
 
 **Fase 1 (100%-60% HP)**:
-- **Garras Cristalinas**: ataque corpo a corpo padrão (dano médio)
-- **Projeção de Fragmentos**: dispara fragmentos de cristal (dano à distância, telegrafado por brilho nos ombros)
-- **Telégrafo**: cristais nos ombros brilham 2 segundos antes do disparo
+- **Garras Cristalinas**: Ataque físico básico (alvo único, dano médio)
+- **Língua Lacerante**: Habilidade especial (alvo único, dano médio, chance 30% de aplicar estado Sangramento: DoT -8 HP/turno, 3 turnos)
+- **Projeção de Fragmentos** (Telegrafada):
+  - **Turno de Carregamento**: Cristaleão entra em estado **Carregando** (mensagem: "Cristaleão brilha intensamente!"); animação de brilho nos ombros; não ataca neste turno
+  - **Turno de Execução**: Habilidade **Projeção de Fragmentos** (atinge alvo aleatório, dano alto, elemento físico)
 
 **Fase 2 (60%-30% HP)**:
-- **Quebra de Partes**: jogador pode atacar braços/pernas individualmente
-  - Quebrar 1 braço: -30% dano de garras
-  - Quebrar 2 braços: Cristaleão usa apenas Projeção de Fragmentos
-  - Quebrar 1 perna: -20% velocidade
-- **Investida Cristalina**: corre em linha reta (telegrafado por recuo + rugido), alto dano + knockback
-- **Telégrafo**: recua 3 metros, ruge (som grave), depois investe
+- **Quebra de Partes** (mecânica via estados/traits):
+  - Membros anteriores/posteriores têm "partes" destrutíveis
+  - Ao causar dano crítico em membro específico, Cristaleão recebe trait permanente (ex.: **Pata Quebrada**: -30% dano de Garras, -20% Velocidade)
+  - Se ambos membros anteriores quebrados: Cristaleão só usa Língua Lacerante e Projeção de Fragmentos
+- **Investida Brutal** (Telegrafada):
+  - **Turno de Carregamento**: Estado **Recuando** (mensagem: "Cristaleão recua e ruge!"); SE de rugido grave; não ataca
+  - **Turno de Execução**: **Investida Brutal** (atinge linha frontal, dano alto, aplica estado Atordoado: 1 turno, chance 70%)
 
 **Fase 3 (<30% HP)**:
-- **Fúria Cristalina**: velocidade aumenta +30%; ataques mais frequentes
-- **Explosão de Fragmentos** (AOE): dispara fragmentos em todas as direções (telegrafado por corpo inteiro brilhando)
-- **Telégrafo**: corpo inteiro pulsa com luz azulada intensa por 3 segundos, depois explode (raio 5m)
+- **Fúria Cristalina**: Trait permanente (+30% Velocidade, +20% frequência de ações)
+- **Explosão de Fragmentos** (Telegrafada, AOE):
+  - **Turno de Carregamento**: Estado **Pulsando** (mensagem: "O corpo de Cristaleão pulsa com energia instável!"); animação de pulso azul; não ataca
+  - **Turno de Execução**: **Explosão de Fragmentos** (atinge todos os personagens, dano muito alto, elemento físico)
 
 **Recompensa**:
 - **1 unidade de Sigmetal** (minério raro, narrativa)
-- **50 Ludos**
+- **100 Ludos**
 
-### 4.2. Pestesporo (Esgoto de Gildrat, Nível 8)
+**Nota de Design**: Primeiros boss; ensina mecânicas de telegrafação (1 turno de aviso) e quebra de partes (alvo específico).
+
+### 4.2. Pestesporo (Esgoto de Gildrat, Nível 15)
 
 **Tipo**: Fungo colossal tóxico.
 
@@ -327,48 +383,120 @@ Este documento define o ecossistema completo de inimigos do continente gelado **
 - Olhos/boca: aberturas escuras que liberam esporos
 - Hachuras grossas sugerem textura fúngica
 
-**Mecânicas de Combate**:
+**Mecânicas de Combate** (RM MZ):
 
 **Fase 1 (100%-70% HP)**:
-- **Esporos Venenosos** (AOE): libera nuvem de esporos (raio 4m, veneno -20 HP/turno, 5 turnos)
-- **Telégrafo**: cabeça incha (animação de 2 segundos), depois explode esporos
-- **Tentáculos de Raiz**: ataque corpo a corpo (alcance médio, dano baixo mas imobiliza 1 turno)
+- **Tentáculos de Raiz**: Ataque físico básico (alvo único, dano baixo, aplica estado Enraizado: não pode fugir, 1 turno, chance 60%)
+- **Esporos Venenosos** (Telegrafada, AOE):
+  - **Turno de Carregamento**: Estado **Inflando** (mensagem: "A cabeça de Pestesporo incha!"); animação de expansão da cabeça; não ataca
+  - **Turno de Execução**: **Esporos Venenosos** (atinge todos os personagens, aplica estado Envenenado: DoT -20 HP/turno, 5 turnos, elemento Veneno)
 
 **Fase 2 (70%-40% HP)**:
-- **Invocação de Fungos Menores**: cria 2-3 Fungos Venenosos Gigantes (HP 30 cada, imóveis)
-- Fungos menores também lançam esporos (AOE menor, raio 2m)
-- **Chuva de Esporos**: ataque em área maior (raio 6m, telegrafado por tremor no chão)
-- **Telégrafo**: chão treme (partículas de poeira caem), 3 segundos depois chuva de esporos
+- **Invocação de Fungos Menores**: Evento comum spawna 2-3 Fungos Venenosos Gigantes (HP baixo, imóveis, atacam com Esporos menores: alvo único, veneno)
+- **Chuva de Esporos** (Telegrafada, AOE):
+  - **Turno de Carregamento**: Estado **Tremor** (mensagem: "O chão treme e partículas caem!"); animação de tela tremendo; não ataca
+  - **Turno de Execução**: **Chuva de Esporos** (atinge todos os personagens, dano alto + estado Envenenado, elemento Veneno)
+- **Estratégia**: Jogador deve eliminar fungos menores rapidamente para reduzir pressão de veneno
 
 **Fase 3 (<40% HP)**:
-- **Ambiente Anóxico** (opcional): mecânica narrativa de barra de ar? Ou timer visual apenas
-- **Fúria Fúngica**: velocidade de ataques aumenta +40%
-- **Explosão Final**: ao morrer, libera nuvem tóxica massiva (raio 8m, alto dano se não fugir)
-- **Telégrafo**: corpo inteiro começa a pulsar/vibrar; jogador tem 5 segundos para sair da área
+- **Fúria Fúngica**: Trait permanente (+40% Velocidade, +20% frequência de ações)
+- **Ambiente Anóxico** (mecânica narrativa): Mensagens de batalha ("O ar está escasso!"); efeito visual (overlay escurecido); sem dano mecânico, apenas atmosfera
+- **Explosão Final** (ao ser derrotado):
+  - Pestesporo não morre imediatamente ao chegar a 0 HP
+  - Entra em estado **Pulsando** (mensagem: "Pestesporo pulsa violentamente!")
+  - Jogador tem 2 turnos para usar comando especial **Fugir da Explosão** OU evento comum força fuga automática
+  - Se jogador não fugir: **Explosão Tóxica** (atinge todos os personagens, dano massivo, pode causar wipe)
 
 **Recompensa**:
 - **Liberação de passagem** para superfície (narrativa)
-- **80 Ludos**
+- **150 Ludos**
 
-### 4.3. [Boss de Melios] (Nível 12) — A Definir
+**Nota de Design**: Ensina mecânicas de priorização de adds (fungos menores) e escape condicional (explosão final).
 
-**Opções Sugeridas**:
+### 4.3. Corvos de Melios (Melios, Nível 20, Boss Humano)
 
-**Opção A: Guardião Colossal de Pedra**
-- Construto gigante (5m de altura)
-- Mecânicas: armadura de pedra multicamadas (precisa quebrar 3 partes), ataques em área (terremoto, rochas caindo do teto), fases de invulnerabilidade (precisa ativar pilares rúnicos na arena)
-- Telégrafo: runas no corpo brilham antes de ataques especiais
+**Tipo**: Facção rebelde de mineradores independentes (boss fight narrativo).
 
-**Opção B: Manifestação da Energia Selada**
-- Criatura espectral/elemental de energia azulada (não Ignoto, mas "eco" do selo)
-- Mecânicas: ataques intangíveis (ignora armadura), teleporte pela arena, invoca Sombras Errantes menores, drena mana do jogador
-- Telégrafo: distorções visuais (ar ondula) antes de teleporte; brilho intenso antes de dreno de mana
-- **Foreshadowing sutil**: NPCs comentam que a energia "não deveria estar acordada"
+**Localização**: Acampamento dos Corvos, mid-dungeon de Melios (Cena 8).
 
-**Recompensa** (ambas opções):
+**Contexto Narrativo**: Os Corvos de Melios são mineradores independentes que protegem a mina sagrada. Confronto inevitável quando Thorin e grupo tentam acessar a Câmara do Selo.
+
+**Composição do Encounter**:
+- **Líder dos Corvos** (Lv 20, Guerreiro Anão): HP alto, DEF alta, ataque pesado
+- **2-3 Capangas** (Lv 18-19, Mix de classes): Arqueiro, Guerreiro, Curandeiro
+
+**Mecânicas de Combate** (RM MZ):
+
+**Fase 1 (100%-50% HP do Líder)**:
+- **Líder**: Ataque básico pesado (alvo único, dano alto); habilidade **Comando de Batalha** (buffa aliados: +20% ATK/DEF, 3 turnos)
+- **Arqueiro**: **Flecha Perfurante** (alvo único, ignora 30% DEF)
+- **Guerreiro**: **Golpe Duplo** (alvo único, 2 hits consecutivos)
+- **Curandeiro** (se presente): **Cura** (alvo único, restaura ~30% HP); **Purificação** (remove 1 estado negativo)
+
+**Fase 2 (<50% HP do Líder OU 2+ capangas derrotados)**:
+- **Líder**: Entra em estado **Fúria** (+30% ATK, -10% DEF); habilidade **Investida Furiosa** (alvo único, dano massivo, aplica estado Atordoado: 1 turno, chance 50%)
+- **Capangas restantes**: Aumentam agressividade (priorizam alvos com HP baixo)
+- **Estratégia**: Jogador pode focar Líder primeiro (alta ameaça) OU eliminar capangas (reduzir suporte)
+
+**Recompensa**:
+- **Passagem liberada para Câmara do Selo** (narrativa)
+- **200 Ludos**
+- **Item narrativo**: Emblema dos Corvos (prova de confronto)
+
+**Nota de Design**: Boss fight "humano" (pico de dificuldade não-sobrenatural). Ensina priorização de alvos e gestão de suporte (curandeiro).
+
+*Fonte: [o-continente-de-ekios.md](../o-continente-de-ekios.md#s2--história-e-linha-do-tempo)*
+
+---
+
+### 4.4. Guardião Colossal de Pedra (Melios, Nível 20, Boss Construto)
+
+**Tipo**: Construto gigante guardião do selo (5m de altura).
+
+**Localização**: Câmara do Selo, profunda em Melios (final da dungeon).
+
+**Conceito**: Guardião ancestral que protege o selo de Melios. Ativado quando jogador se aproxima do selo.
+
+**Aparência Visual** (diretrizes de arte):
+- Construto humanóide gigante feito de pedra lavrada
+- Corpo segmentado: torso, braços, pernas com juntas rúnicas brilhantes (azul fraco)
+- Runas gravadas no peito e ombros (pulsam ao atacar)
+- Armadura de pedra multicamadas (visual de placas sobrepostas)
+- Olhos vazios emanam brilho azulado
+- Hachuras densas sugerem peso e solidez
+
+**Mecânicas de Combate** (RM MZ):
+
+**Fase 1 (100%-70% HP)**:
+- **Punho de Pedra**: Ataque físico básico (alvo único, dano alto, chance 30% de aplicar estado Atordoado: 1 turno)
+- **Armadura Multicamadas**: Trait permanente (Resistência Física 50%, Fraqueza Mágica 30%)
+- **Terremoto** (Telegrafada, AOE):
+  - **Turno de Carregamento**: Estado **Preparando Golpe** (mensagem: "Runas no peito do Guardião brilham!"); animação de runas pulsando; não ataca
+  - **Turno de Execução**: **Terremoto** (atinge todos os personagens, dano alto, aplica estado Desequilibrado: -20% Evasão, 2 turnos, elemento Terra)
+
+**Fase 2 (70%-40% HP)**:
+- **Ativar Pilares Rúnicos** (mecânica de puzzle):
+  - Guardião entra em estado **Invulnerável** (recebe 1 dano apenas)
+  - 3 pilares rúnicos na arena acendem (eventos de mapa)
+  - Jogador deve interagir com pilares na ordem correta (pista visual: runas pulsam em sequência)
+  - Ao ativar todos pilares: Guardião perde invulnerabilidade e recebe debuff **Selado** (-30% DEF, 5 turnos)
+- **Rochas Caindo** (Telegrafada):
+  - **Turno de Carregamento**: Estado **Convocando** (mensagem: "Rochas se desprendem do teto!"); SE de rachadura
+  - **Turno de Execução**: **Rochas Caindo** (atinge alvos aleatórios, dano médio, 3-4 hits)
+
+**Fase 3 (<40% HP)**:
+- **Fúria Ancestral**: Trait permanente (+40% Velocidade, +30% ATK)
+- **Golpe Colossal** (Telegrafada, single-target massivo):
+  - **Turno de Carregamento**: Estado **Carregando Poder** (mensagem: "O Guardião ergue ambos os braços!"); animação de brilho intenso nas runas
+  - **Turno de Execução**: **Golpe Colossal** (atinge alvo com maior ameaça, dano massivo, pode one-shot se jogador não defendeu/usou buff)
+
+**Recompensa**:
 - **Acesso ao salão de minérios raros** (narrativa)
-- **120 Ludos**
-- **Item narrativo único** (artefato relacionado ao selo? Ou minério raro para quest futura)
+- **250 Ludos**
+- **Sigmetal adicional** (minério raro)
+- **Fragmento do Selo** (item narrativo, quest futura)
+
+**Nota de Design**: Boss final de Melios pré-quebra do selo. Ensina mecânicas de puzzle ambiental (pilares) e gestão de invulnerabilidade. Foreshadowing: NPCs comentam que "o guardião não deveria ter acordado".
 
 ---
 
@@ -763,27 +891,140 @@ Alguns inimigos dropam itens narrativos (não equipáveis, mas usados em quests)
 | **Guardião Ancião + Elemental** (Melios) | 10-11 | Muito Alta | Dupla com resistências opostas (físico/mágico) | Nível 10+; balancear ataques físicos e mágicos |
 | **Boss de Melios** | 12 | Muito Alta | Boss final do Ato I (pré-Ignotos) | Nível 12; equipamento otimizado; grupo completo |
 
-### 10.3. Densidade de Spawn e Ritmo
+### 10.3. Densidade de Spawn e Ritmo (RM MZ)
 
-**Kravens** (mina ativa):
-- **Túneis Ativos**: Alta densidade (encontro a cada 30-50m); inimigos fracos (morcegos, aranhas pequenas)
-- **Andar Esquecido**: Média densidade (encontro a cada 70-100m); inimigos mais fortes (aranhas grandes, ratos)
-- **Objetivo**: Aprendizado gradual; jogador se sente poderoso no final
+Esta seção define **encounter rates**, **composição de troops**, e **variações** para cada região, usando nomenclatura de RPG Maker MZ.
 
-**Esgoto de Gildrat** (travessia tóxica):
-- **Túneis Superiores**: Média densidade (encontro a cada 50-70m); ratos/limos
-- **Câmara de Decantação**: Baixa densidade (encontro controlado); fungos gigantes + boss
-- **Objetivo**: Tensão crescente; ambiente hostil adiciona pressão
+---
 
-**Melios** (mina sagrada):
-- **Corredores**: Baixa densidade (encontro a cada 100-150m); guardiões/elementais (todos elite)
-- **Câmara do Selo**: Muito baixa (encontros narrativos); boss final
-- **Objetivo**: Cada encontro é significativo; atmosfera opressiva
+#### World Map — Estrada do Cão-Luar (Lv 1-5, Tutorial)
 
-**World Map** (superfície):
-- **Estrada do Cão-Luar**: Média densidade (encontro a cada 200-300m); lobos, bandidos
-- **Cordilheira**: Baixa densidade (encontro a cada 400-500m); predadores raros (Alpha, Urso)
-- **Objetivo**: Exploração; encontros são imprevisíveis
+**Encounter Rate**: 8-12 steps (alto, para ensinar loop básico)
+
+**Troops (Encounter Table)**:
+- **Troop 1**: 2-3 Lobos Jovens (70% chance, primeiras áreas)
+- **Troop 2**: 2-3 Goblins Saqueadores (50% chance, encostas)
+- **Troop 3**: 3-4 Lobos de Gelo (40% chance, áreas intermediárias)
+- **Troop 4**: 2-4 Bandidos Anões (30% chance, minas abandonadas)
+- **Troop 5 (Raro)**: 1 Lobo Alpha + 2 Lobos de Gelo (5% chance, cordilheira remota)
+
+**Variações por Faixa de Level**:
+- **Lv 1-2**: Apenas Troops 1-2 (encounter rate 10 steps)
+- **Lv 3-4**: Troops 1-4 (encounter rate 12 steps)
+- **Lv 5**: Todas troops incluindo rara (encounter rate 15 steps, aumenta dificuldade)
+
+**Safe Spots**: Acampamentos da Guarda de Ferro (eventos de mapa sem encounters); entrada de Gildrat (zona segura)
+
+**Gates Narrativos**: Jogador deve atingir Lv 5 antes de Kravens (gate via evento ou diálogo NPC)
+
+---
+
+#### Kravens — Mina Ativa (Lv 5-10)
+
+**Túneis Ativos** (entrada/níveis superiores):
+- **Encounter Rate**: 15-20 steps (médio-alto)
+- **Troops**:
+  - Troop 1: 3-5 Morcegos de Caverna (80% chance)
+  - Troop 2: 2-3 Aranhas Mineiras (60% chance)
+  - Troop 3: 4 Morcegos + 1 Aranha (40% chance, variação)
+- **Safe Spots**: Sala de descanso dos mineradores (evento fixo no mapa)
+
+**Andar Esquecido** (após queda de Thorin):
+- **Encounter Rate**: 20-25 steps (médio)
+- **Troops**:
+  - Troop 1: 2 Aranhas Gigantes (70% chance)
+  - Troop 2: 4-6 Ratos Gigantes Mutantes (60% chance)
+  - Troop 3: 1 Aranha Gigante + 3 Ratos (50% chance, variação)
+  - Troop 4: 1 Rato Alfa + 4 Ratos comuns (20% chance, elite menor)
+- **Safe Spots**: Ante-sala do boss (zero encounters)
+
+**Boss Encounter**: Cristaleão (evento fixo, sem encounters aleatórios na câmara)
+
+**Objetivo**: Progressão gradual; jogador ganha confiança com morcegos/aranhas menores antes de enfrentar criaturas maiores.
+
+---
+
+#### Esgoto de Gildrat — Travessia Tóxica (Lv 10-15)
+
+**Túneis Superiores**:
+- **Encounter Rate**: 18-22 steps (médio)
+- **Troops**:
+  - Troop 1: 4-6 Ratos de Esgoto (70% chance)
+  - Troop 2: 2 Limos Ácidos (60% chance)
+  - Troop 3: 5 Ratos + 1 Limo (50% chance, variação)
+- **Safe Spots**: Nenhum (travessia forçada, aumenta tensão)
+
+**Câmara de Decantação**:
+- **Encounter Rate**: 30-40 steps (baixo, encontros controlados)
+- **Troops**:
+  - Troop 1: 2 Fungos Venenosos Gigantes (fixos, imóveis, podem ser evitados parcialmente)
+  - Troop 2: 1 Gosma Tóxica (fixo, evento específico)
+- **Safe Spots**: Ante-sala do boss (zero encounters)
+
+**Boss Encounter**: Pestesporo (evento fixo)
+
+**Objetivo**: Ambiente hostil adiciona pressão; jogador deve gerenciar recursos (HP/MP) sem safe spots frequentes.
+
+---
+
+#### Melios — Mina Sagrada (Lv 15-20)
+
+**Corredores/Entrada**:
+- **Encounter Rate**: 35-45 steps (baixo, cada encontro é significativo)
+- **Troops**:
+  - Troop 1: 2 Guardiões Menores de Pedra (80% chance, elites)
+  - Troop 2: 1 Elemental de Terra (70% chance, elite)
+  - Troop 3: 1 Guardião + 1 Elemental (40% chance, variação)
+  - Troop 4: 1 Sombra Errante (30% chance, elite espectral, perto do selo)
+- **Safe Spots**: Ante-sala dos Corvos (zero encounters); ante-sala do Guardião Colossal (zero encounters)
+
+**Acampamento dos Corvos** (mid-dungeon):
+- **Encounter Rate**: 0 (encontro narrativo fixo)
+- **Boss Encounter**: Corvos de Melios (evento fixo, Lv 20)
+
+**Câmara do Selo**:
+- **Encounter Rate**: 0 (encontros narrativos/fixos apenas)
+- **Boss Encounter**: Guardião Colossal de Pedra (evento fixo, Lv 20)
+
+**Mecânica Especial**: Visão limitada (descrita na Seção 2.4); aumenta tensão apesar de encounter rate baixo.
+
+**Objetivo**: Atmosfera opressiva; cada encontro exige preparação; exploração cautelosa recompensada.
+
+---
+
+#### Gates Narrativos e Progressão
+
+**Antes de Kravens** (Lv 5):
+- Jogador deve atingir Lv 5 no World Map antes de entrada ser liberada (gate via NPC ou evento)
+
+**Antes de Esgoto** (Lv 10):
+- Jogador deve completar Kravens (obter Sigmetal) antes de nevasca forçar entrada no Esgoto
+
+**Antes de Melios** (Lv 15):
+- Jogador deve obter mandato do Conselho (Cena 8) após completar Esgoto
+
+**Pós-Melios** (Lv 25-30):
+- Quebra do Selo (Cena 10) desbloqueia novos encounters (Ignotos) e regiões (não coberto neste documento)
+
+---
+
+#### Pontos de Alívio (Safe Zones)
+
+**Filosofia**: Safe spots são raros em dungeons para manter tensão, mas presentes em momentos narrativos chave.
+
+**Implementação** (RM MZ):
+- Regiões de mapa com encounter rate = 0
+- Eventos que desabilitam encounters temporariamente
+- Switches que controlam encounter rate por área
+
+**Exemplos**:
+- Acampamentos da Guarda de Ferro (World Map)
+- Sala de descanso dos mineradores (Kravens)
+- Ante-salas de bosses (todas dungeons)
+
+---
+
+**Nota de Design**: Encounter rates devem ser testadas e ajustadas em playtest para balancear ritmo narrativo vs grinding necessário.
 
 ---
 
@@ -803,12 +1044,18 @@ Ver **Seção 7** para detalhes completos.
 
 ## 12. Notas de Produção
 
-### Para Designers
+### Para Designers (RM MZ)
 
-- Use as tabelas de inimigos por dungeon (Seção 3) como base para implementação
-- Progressão de níveis 1-12 está mapeada (Early 1-5, Mid 5-8, Late 8-12)
-- Bosses têm mecânicas únicas detalhadas (Seção 4); telégrafos são críticos para fairness
-- Perigos ambientais são **flavor** (Seção 7); não devem ser punitivos
+- Use as tabelas de inimigos por dungeon (Seções 2-3) como base para implementação de Troops
+- **Progressão Lv 1-30 está mapeada**:
+  - Lv 1: Prólogo/World Map (tutorial)
+  - Lv 10: Kravens (Cristaleão)
+  - Lv 15: Esgoto (Pestesporo)
+  - Lv 20: Melios (Corvos + Guardião Colossal)
+  - Lv 25-30: Pós-quebra do selo (não coberto neste documento)
+- Bosses têm mecânicas únicas detalhadas (Seção 4); **telégrafos baseados em turnos** (estado Carregando → Execução)
+- Perigos ambientais são **flavor** (Seção 7); implementados via eventos, não punitivos
+- **Encounter rates** detalhados na Seção 10.3; ajustar em playtest
 
 ### Para Artistas
 
@@ -848,14 +1095,18 @@ Ver **Seção 7** para detalhes completos.
 |-------|-----------|----------|
 | **Ludos** | Moeda oficial de Gildrat | Economia, loot |
 | **Guarda de Ferro** | Exército elite dos anões | Facção militar; NPCs Kilin e Mhordred |
-| **Melios** | Minas sagradas onde Ignotos estão selados | Localização proibida; dungeon late game |
+| **Melios** | Minas sagradas onde Ignotos estão selados | Localização proibida; dungeon late game (Lv 15-20) |
 | **Ignotos** | Criaturas sombrias seladas em Melios | **NÃO aparecem neste período** (documento cobre pré-quebra do selo) |
 | **Sigmetal** | Minério raro dropado pelo Cristaleão | Item narrativo; usado futuramente contra Ignotos |
-| **Kravens** | Mina ativa de exploração de minério Kraven | Dungeon early game |
-| **Estrada do Cão-Luar** | Rota principal entre Gildrat e Kravens | World map; local de encontros aleatórios |
-| **Corvos** | Facção rebelde de mineradores independentes | NPCs; protegem Melios; confronto na Cena 8 |
-| **Cristaleão** | Boss de Kravens; criatura de cristal | Primeiro boss do jogo |
-| **Pestesporo** | Boss do Esgoto; fungo colossal tóxico | Segundo boss do jogo |
+| **Kravens** | Mina ativa de exploração de minério Kraven | Primeira dungeon (Lv 5-10) |
+| **Estrada do Cão-Luar** | Rota principal entre Gildrat e Kravens | World map; tutorial de combate (Lv 1-5) |
+| **Corvos de Melios** | Facção rebelde de mineradores independentes | NPCs; protegem Melios; boss fight humano (Lv 20) |
+| **Cristaleão** | Boss de Kravens; camaleão de minérios capaz de camuflagem | Primeiro boss do jogo (Lv 10) |
+| **Pestesporo** | Boss do Esgoto; fungo colossal tóxico | Segundo boss do jogo (Lv 15) |
+| **Guardião Colossal de Pedra** | Boss de Melios; construto gigante guardião do selo | Boss final pré-quebra do selo (Lv 20) |
+| **RM MZ** | RPG Maker MZ | Engine do jogo; mecânicas baseadas em turnos, troops, encounter rates |
+
+*Fonte: [o-continente-de-ekios.md](../o-continente-de-ekios.md) e [gildrat-v2.md](../racas/anoes/gildrat-v2.md)*
 
 ### 14.2. Referências Externas (Inspiração)
 
@@ -878,6 +1129,7 @@ Ver **Seção 7** para detalhes completos.
 | Versão | Data | Autor | Mudanças |
 |--------|------|-------|----------|
 | 1.0 | 2026-01-07 | Claude Code (Game Designer Sênior IA) | Versão inicial completa; aprovado pelo usuário (respostas da entrevista incorporadas) |
+| 2.0 | 2026-01-07 | Claude Code (Game Designer Sênior IA) | **REVISÃO COMPLETA**: (1) Progressão ajustada para Lv 1-30 com âncoras narrativas (Lv 1, 10, 15, 20, 25, 30); (2) Todas mecânicas convertidas para RPG Maker MZ (troops, encounter rates, estados, turnos); (3) Cristaleão corrigido para camaleão de minérios com camuflagem; (4) Boss de Melios definido como Guardião Colossal de Pedra + adição de Corvos de Melios (Lv 20, boss humano); (5) Visão limitada adicionada em Melios; (6) Telégrafos adaptados para sistema de turnos (estado Carregando → Execução); (7) Seção 10.3 reescrita para encounter rates e gates narrativos; (8) World Map rebalanceado para Lv 1-5 (tutorial); (9) Fontes com links adicionadas seguindo padrão distrito-residencial.info.md |
 
 ---
 
