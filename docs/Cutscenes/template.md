@@ -1,63 +1,82 @@
-# 📝 Design de Cutscene: [Nome da Cena]
+# Design de Cutscene
 
-**ID da Cena:** `nome_da_cena_no_csv` (ex: opening, battle_intro)
-**Local:** [Nome do Mapa]
+**Descrição:** [Resumo curto da cena, objetivo e contexto]
+**Cutscene:** [Nome da cutscene]
+**Mapa onde acontece:** `[ID_do_mapa]` ([Caminho])
 
-**Eventos Envolvidos:**
+**Personagens Envolvidos:**
 
-* [Nome] (ID: `lucas`)
-* [Nome] (ID: `maria`)
-* [Nome] (ID: `camera`)
+* [Nome] (Evento ID: `[ID]`)
+* [Nome] (Actor ID: `[ID]`)
+* [Nome] (Evento ID: `[ID]`)
+
+**Bustos Envolvidos:**
+
+* [Nome] (ID: `[ID_busto]`, arquivo: `Portraits/Principal/[Arquivo]`)
+* [Nome] (ID: `[ID_busto]`, arquivo: `Portraits/Principal/[Arquivo]`)
 
 ---
 
-## 🎞️ Roteiro de Ações
+## Roteiro de Ações - Beat por Beat
 
-| Scene (ID) | Character (ID) | Action | Details (Parâmetros) | Wait (true/false) | 📝 Notas de Direção |
+| Cena | Personagem | Acao - movimento do personagem | Detalhes (parametros) | esperar (true/false) | Notas de Direcao |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `nome_cena` | `camera` | `cinematic` | `true, true` | `true` | Inicia barras pretas |
-| `nome_cena` | `camera` | `bgm` | `play, NOME_MUSICA, 90, true` | `true` | Toca música tema |
-| `nome_cena` | `camera` | `focus on` | `ID_DO_PERSONAGEM` | `true` | Foca no protagonista |
-| `nome_cena` | `ID_CHAR` | `move` | `x, y` | `true` | Move para posição inicial |
-| `nome_cena` | `ID_CHAR` | `balloon` | `1` | `true` | Exclamação (!) |
-| `nome_cena` | `ID_CHAR` | `talk` | `"Texto do diálogo aqui."` | `true` | Fala inicial |
-| `nome_cena` | `ID_CHAR` | `move` | `x, y` | `false` | Move enquanto fala... |
-| `nome_cena` | `ID_CHAR` | `talk` | `"Falo andando."` | `true` | ...termina de falar |
-| `nome_cena` | `camera` | `cinematic` | `false, true` | `true` | Fim da cena |
+| `nome_da_cena` | `camera` | `cinematic` | `true` | `true` | |
+| `nome_da_cena` | `camera` | `bgm` | `play, NOME_MUSICA, 70, true` | `true` | |
+| `nome_da_cena` | `bust` | `enter` | `Arquivo, ID_busto, posicao, offsetX=-200, offsetY=0, easing=OutSine, mirror=Auto-Reverse, duration=20` | `true` | |
+| `nome_da_cena` | `sistema` | `switch` | `ID, on/off` | `false` | |
+| `nome_da_cena` | `Personagem` | `talk` | `Texto do dialogo...` | `true` | |
+| `nome_da_cena` | `bust` | `exit` | `ID_busto, offsetX=+200, offsetY=0, easing=InSine, duration=20` | `true` | |
+| `nome_da_cena` | `Personagem` | `move` | `x,y (rota; turn toward player)` | `true` | |
+| `nome_da_cena` | `sistema` | `choice` | `ID_escolha (opcoes: opcao1, opcao2)` | `true` | `Opcao: opcao1` |
+| `nome_da_cena` | `sistema` | `name input` | `Actor ID, max N` | `true` | `Opcao: opcao2` |
+| `nome_da_cena` | `sistema` | `quest` | `MetodoDeQuest("idQuest", valor)` | `false` | |
+| `nome_da_cena` | `sistema` | `variavel` | `ID = valor` | `false` | |
+| `nome_da_cena` | `camera` | `cinematic` | `false` | `true` | |
 
 ---
 
-## 📚 Referência Rápida de Comandos (Cutscene Director Pro)
+## Referências Rápidas de Comandos (Cutscene Director Pro)
 
-### 🎥 Câmera & Visual
+### Câmera & Visual - Plugin "Visu MZ"
 
-* **Foco:** `focus on` | [cite_start]*Detalhes:* `character_id` [cite: 56]
-* **Zoom:** `zoom` ou `focus zoom` | [cite_start]*Detalhes:* `in` ou `out` [cite: 57, 58]
-* **Barras Pretas:** `cinematic` | [cite_start]*Detalhes:* `true` (ativar) ou `false` (desativar) [cite: 58]
-* **Tremer:** `shake` | [cite_start]*Detalhes:* (vazio) [cite: 52]
-* **Flash:** `flash` | [cite_start]*Detalhes:* `r,g,b,duration` (ex: `255,255,255,30`) [cite: 53]
-* **Tom:** `tone` | [cite_start]*Detalhes:* `r,g,b,gamma,duration` [cite: 54]
+* **Foco:** `focus on` | *Detalhes:* `character_id`
+* **Zoom:** `zoom` ou `focus zoom` | *Detalhes:* `in` ou `out`
+* **Barras Pretas:** `cinematic` | *Detalhes:* `true` (ativar) ou `false` (desativar)
+* **Tremer:** `shake` | *Detalhes:* (vazio)
+* **Flash:** `flash` | *Detalhes:* `r,g,b,duration` (ex: `255,255,255,30`)
+* **Tom:** `tone` | *Detalhes:* `r,g,b,gamma,duration`
 
-### 🎭 Personagem
+### Personagem
 
-* **Mover:** `move` | [cite_start]*Detalhes:* `x,y` [cite: 42]
-* **Teleportar:** `teleport` | [cite_start]*Detalhes:* `x,y` [cite: 44]
-* **Virar:** `turn` | [cite_start]*Detalhes:* `up`, `down`, `left`, `right` [cite: 43]
-* **Falar:** `talk` | [cite_start]*Detalhes:* `"Texto entre aspas"` (Obrigatório aspas se usar vírgula) [cite: 46, 160]
-* **Balão:** `balloon` | [cite_start]*Detalhes:* ID do ícone (1-8) [cite: 47]
-* **Transparência:** `transparent` | [cite_start]*Detalhes:* `true` ou `false` [cite: 44]
+* **Mover:** `move` | *Detalhes:* `x,y`
+* **Teleportar:** `teleport` | *Detalhes:* `x,y`
+* **Virar:** `turn` | *Detalhes:* `up`, `down`, `left`, `right`
+* **Falar:** `talk` | *Detalhes:* `"Texto entre aspas"` (Obrigatorio aspas se usar virgula)
+* **Balão:** `balloon` | *Detalhes:* ID do icone (1-8)
+* **Transparência:** `transparent` | *Detalhes:* `true` ou `false`
 
-### 🔊 Áudio
+### Bustos - Plugin "NPV PicturesBusts"
 
-* **Música:** `bgm` | [cite_start]*Detalhes:* `play, filename, volume, loop` ou `fadeOut, duration` [cite: 60]
-* **Som:** `sound` | [cite_start]*Detalhes:* `filename` (SE) [cite: 49]
-* **Voz:** `voice` | [cite_start]*Detalhes:* `filename` [cite: 50]
+* **Adicionar:** `enter` | *Detalhes:* `filename, ID_bust, position`
+* **Trocar:** `change` | *Detalhes:* `filename, ID_bust`
+* **Tirar:** `exit` | *Detalhes:* `ID_bust`
 
-### ⚙️ Sistema
+### Audio
 
-* **Variável:** `var` | [cite_start]*Detalhes:* `ID, valor` [cite: 62]
-* **Switch:** `switch` | [cite_start]*Detalhes:* `ID, on/off` [cite: 63]
-* **Common Event:** `callCommon` | [cite_start]*Detalhes:* `ID` [cite: 64]
-* **Espera Manual:** `wait` | [cite_start]*Detalhes:* `frames` [cite: 66]
+* **Música:** `bgm` | *Detalhes:* `play, filename, volume, loop` ou `fadeOut, duration`
+* **Som:** `sound` | *Detalhes:* `filename` (SE)
+* **Voz:** `voice` | *Detalhes:* `filename`
 
----
+### Sistema
+
+* **Variável:** `var` | *Detalhes:* `ID, valor`
+* **Switch:** `switch` | *Detalhes:* `ID, on/off`
+* **Common Event:** `callCommon` | *Detalhes:* `ID`
+* **Espera Manual:** `wait` | *Detalhes:* `frames`
+
+### Regras
+
+* Não pode haver o comando Baloon (balão de expressão) durante os diálogos, devem ser usados somente antes ou depois de um diálogo iniciado.
+* Durante os diálogos, expressões dos atores devem ser representados por alterações no busto.
+* Colocar um "Início" e "Fim" de diálogo antes de colocar ou tirar os bustos.
