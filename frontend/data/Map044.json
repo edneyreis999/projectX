@@ -1,4 +1,4 @@
-﻿{
+{
   "autoplayBgm": false,
   "autoplayBgs": false,
   "battleback1Name": "",
@@ -92,7 +92,7 @@
     null,
     {
       "id": 1,
-      "name": "MMhordred",
+      "name": "Mhordred",
       "note": "",
       "pages": [
         {
@@ -241,40 +241,38 @@
           },
           "list": [
             {
-              "code": 108,
-              "indent": 0,
-              "parameters": ["Cutscene: Teste de Template"]
-            },
-            {
               "code": 241,
               "indent": 0,
               "parameters": [
                 {
+                  "name": "Field1",
                   "pan": 0,
                   "pitch": 100,
-                  "name": "Field1",
                   "volume": 70
                 }
               ]
             },
             {
-              "code": 357,
+              "code": 205,
               "indent": 0,
               "parameters": [
-                "VisuMZ_4_MapCameraZoom",
-                "CameraFocusTargetEvent",
-                "Camera: Focus Target Event",
+                2,
                 {
-                  "Duration:num": "30",
-                  "EventID:eval": "2",
-                  "EasingType:str": "InOutSine"
+                  "list": [
+                    {
+                      "code": 40,
+                      "parameters": []
+                    },
+                    {
+                      "code": 0,
+                      "parameters": []
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
                 }
               ]
-            },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusWait", "Camera: Wait for Focus", {}]
             },
             {
               "code": 357,
@@ -284,8 +282,8 @@
                 "ZoomChange",
                 "Zoom: Change Zoom",
                 {
-                  "Duration:num": "30",
                   "TargetScale:num": "1.2",
+                  "Duration:num": "30",
                   "EasingType:str": "InOutSine"
                 }
               ]
@@ -296,26 +294,78 @@
               "parameters": ["VisuMZ_4_MapCameraZoom", "ZoomWait", "Zoom: Wait for Zoom", {}]
             },
             {
-              "code": 355,
+              "code": 357,
               "indent": 0,
-              "parameters": ["$gameMap.event(2).locate(12, 10);"]
+              "parameters": [
+                "VisuMZ_4_MapCameraZoom",
+                "CameraFocusTargetEvent",
+                "Camera: Focus Target Event",
+                {
+                  "EventID:eval": "2",
+                  "Duration:num": "30",
+                  "EasingType:str": "InOutSine"
+                }
+              ]
+            },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusWait", "Camera: Wait for Focus", {}]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                2,
+                {
+                  "list": [
+                    {
+                      "code": 45,
+                      "parameters": ["Move to: 12,10"],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
             },
             {
               "code": 250,
               "indent": 0,
               "parameters": [
                 {
+                  "name": "Bell1",
                   "pan": 0,
                   "pitch": 100,
-                  "name": "Bell1",
                   "volume": 90
                 }
               ]
             },
             {
-              "code": 355,
+              "code": 205,
               "indent": 0,
-              "parameters": ["$gameMap.event(2).setDirection(8);"]
+              "parameters": [
+                2,
+                {
+                  "list": [
+                    {
+                      "code": 19,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
             },
             {
               "code": 213,
@@ -323,11 +373,6 @@
               "parameters": [2, 1, true]
             },
             {
-              "code": 108,
-              "indent": 0,
-              "parameters": ["start_dialog"]
-            },
-            {
               "code": 357,
               "indent": 0,
               "parameters": [
@@ -335,35 +380,15 @@
                 "Basic_EnterBust",
                 "BASIC: Enter Bust",
                 {
-                  "StartOffsetX:eval": "-200",
-                  "Origin:str": "Bust",
-                  "PictureName:str": "Portraits/Principal/Kilin_feliz",
                   "PictureID:eval": "1",
-                  "EasingType:str": "OutSine",
-                  "Duration:eval": "20",
-                  "Position:num": "1",
-                  "StartOffsetY:eval": "+0",
-                  "HorzMirror:str": "Auto-Reverse"
-                }
-              ]
-            },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "StartOffsetX:eval": "200",
+                  "PictureName:str": "Portraits/Principal/Kilin_feliz",
                   "Origin:str": "Bust",
-                  "PictureName:str": "Portraits/Principal/Mhordred_feliz",
-                  "PictureID:eval": "2",
-                  "EasingType:str": "OutSine",
-                  "Duration:eval": "20",
-                  "Position:num": "9",
+                  "Position:num": "1",
+                  "StartOffsetX:eval": "-200",
                   "StartOffsetY:eval": "+0",
-                  "HorzMirror:str": "Auto-Reverse"
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
                 }
               ]
             },
@@ -380,16 +405,16 @@
             {
               "code": 401,
               "indent": 0,
-              "parameters": ["Que manh? bonita!"]
+              "parameters": ["Que manhã bonita!"]
             },
             {
               "code": 250,
               "indent": 0,
               "parameters": [
                 {
+                  "name": "Bell1",
                   "pan": 0,
                   "pitch": 100,
-                  "name": "Bell1",
                   "volume": 90
                 }
               ]
@@ -399,30 +424,11 @@
               "indent": 0,
               "parameters": [
                 "VisuMZ_4_MapCameraZoom",
-                "CameraFocusTargetEvent",
-                "Camera: Focus Target Event",
-                {
-                  "Duration:num": "30",
-                  "EventID:eval": "1",
-                  "EasingType:str": "InOutSine"
-                }
-              ]
-            },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusWait", "Camera: Wait for Focus", {}]
-            },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_4_MapCameraZoom",
                 "ZoomChange",
                 "Zoom: Change Zoom",
                 {
-                  "Duration:num": "30",
                   "TargetScale:num": "1.2",
+                  "Duration:num": "30",
                   "EasingType:str": "InOutSine"
                 }
               ]
@@ -433,26 +439,98 @@
               "parameters": ["VisuMZ_4_MapCameraZoom", "ZoomWait", "Zoom: Wait for Zoom", {}]
             },
             {
-              "code": 355,
+              "code": 357,
               "indent": 0,
-              "parameters": ["$gameMap.event(1).locate(14, 10);"]
+              "parameters": [
+                "VisuMZ_4_MapCameraZoom",
+                "CameraFocusTargetEvent",
+                "Camera: Focus Target Event",
+                {
+                  "EventID:eval": "1",
+                  "Duration:num": "30",
+                  "EasingType:str": "InOutSine"
+                }
+              ]
+            },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusWait", "Camera: Wait for Focus", {}]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                1,
+                {
+                  "list": [
+                    {
+                      "code": 45,
+                      "parameters": ["Move to: 14,10"],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
             },
             {
               "code": 250,
               "indent": 0,
               "parameters": [
                 {
+                  "name": "Bell2",
                   "pan": 0,
                   "pitch": 100,
-                  "name": "Bell2",
                   "volume": 90
                 }
               ]
             },
             {
-              "code": 355,
+              "code": 205,
               "indent": 0,
-              "parameters": ["$gameMap.event(1).setDirection(4);"]
+              "parameters": [
+                1,
+                {
+                  "list": [
+                    {
+                      "code": 17,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "2",
+                  "PictureName:str": "Portraits/Principal/Mhordred_feliz",
+                  "Origin:str": "Bust",
+                  "Position:num": "9",
+                  "StartOffsetX:eval": "200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
             },
             {
               "code": 121,
@@ -470,18 +548,34 @@
               "parameters": ["Kilin! Acordou cedo..."]
             },
             {
-              "code": 355,
+              "code": 205,
               "indent": 0,
-              "parameters": ["$gameMap.event(2).setDirection(6);"]
+              "parameters": [
+                2,
+                {
+                  "list": [
+                    {
+                      "code": 18,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
             },
             {
               "code": 250,
               "indent": 0,
               "parameters": [
                 {
+                  "name": "Bell3",
                   "pan": 0,
                   "pitch": 100,
-                  "name": "Bell3",
                   "volume": 90
                 }
               ]
@@ -491,11 +585,30 @@
               "indent": 0,
               "parameters": [
                 "VisuMZ_4_MapCameraZoom",
+                "ZoomChange",
+                "Zoom: Change Zoom",
+                {
+                  "TargetScale:num": "1.2",
+                  "Duration:num": "30",
+                  "EasingType:str": "InOutSine"
+                }
+              ]
+            },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": ["VisuMZ_4_MapCameraZoom", "ZoomWait", "Zoom: Wait for Zoom", {}]
+            },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_4_MapCameraZoom",
                 "CameraFocusTargetEvent",
                 "Camera: Focus Target Event",
                 {
-                  "Duration:num": "30",
                   "EventID:eval": "2",
+                  "Duration:num": "30",
                   "EasingType:str": "InOutSine"
                 }
               ]
@@ -518,7 +631,7 @@
             {
               "code": 401,
               "indent": 0,
-              "parameters": ["U?, eu sempre acordo cedo!"]
+              "parameters": ["Ué, eu sempre acordo cedo!"]
             },
             {
               "code": 121,
@@ -545,9 +658,9 @@
               "indent": 0,
               "parameters": [
                 {
+                  "name": "Item1",
                   "pan": 0,
                   "pitch": 100,
-                  "name": "Item1",
                   "volume": 90
                 }
               ]
@@ -565,7 +678,7 @@
             {
               "code": 401,
               "indent": 0,
-              "parameters": ["Aquilo foi uma soneca estrat?gica."]
+              "parameters": ["Aquilo foi uma soneca estratégica."]
             },
             {
               "code": 121,
@@ -580,7 +693,7 @@
             {
               "code": 401,
               "indent": 0,
-              "parameters": ["Soneca estrat?gica?"]
+              "parameters": ["Soneca estratégica?"]
             },
             {
               "code": 225,
@@ -592,9 +705,9 @@
               "indent": 0,
               "parameters": [
                 {
+                  "name": "Blow1",
                   "pan": 0,
                   "pitch": 100,
-                  "name": "Blow1",
                   "volume": 90
                 }
               ]
@@ -612,24 +725,12 @@
             {
               "code": 401,
               "indent": 0,
-              "parameters": ["Meu est?mago est? protestando!"]
+              "parameters": ["Meu estômago está protestando!"]
             },
             {
               "code": 224,
               "indent": 0,
-              "parameters": [[255, 255, 255, 255], 30, true]
-            },
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "pan": 0,
-                  "pitch": 100,
-                  "name": "Lightning1",
-                  "volume": 90
-                }
-              ]
+              "parameters": [[255, 255, 255, 30], 30, true]
             },
             {
               "code": 213,
@@ -654,16 +755,16 @@
             {
               "code": 223,
               "indent": 0,
-              "parameters": [[255, 180, 120, 80], 60, true]
+              "parameters": [[50, 50, 50, 80], 60, true]
             },
             {
               "code": 250,
               "indent": 0,
               "parameters": [
                 {
+                  "name": "Chime1",
                   "pan": 0,
                   "pitch": 100,
-                  "name": "Chime1",
                   "volume": 90
                 }
               ]
@@ -696,7 +797,7 @@
             {
               "code": 401,
               "indent": 0,
-              "parameters": ["? bem aconchegante."]
+              "parameters": ["É bem aconchegante."]
             },
             {
               "code": 121,
@@ -718,17 +819,33 @@
               "indent": 0,
               "parameters": [
                 {
+                  "name": "Magic1",
                   "pan": 0,
                   "pitch": 100,
-                  "name": "Magic1",
                   "volume": 90
                 }
               ]
             },
             {
-              "code": 355,
+              "code": 205,
               "indent": 0,
-              "parameters": ["$gameMap.event(2).setTransparent(true);"]
+              "parameters": [
+                2,
+                {
+                  "list": [
+                    {
+                      "code": 39,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
             },
             {
               "code": 230,
@@ -748,7 +865,7 @@
             {
               "code": 401,
               "indent": 0,
-              "parameters": ["Ta-da! T? invis?vel!"]
+              "parameters": ["Ta-da! Tô invisível!"]
             },
             {
               "code": 121,
@@ -763,26 +880,84 @@
             {
               "code": 401,
               "indent": 0,
-              "parameters": ["Voc? est? transparente!"]
+              "parameters": ["Você está transparente!"]
             },
             {
-              "code": 355,
+              "code": 205,
               "indent": 0,
-              "parameters": ["$gameMap.event(2).setTransparent(false);"]
+              "parameters": [
+                2,
+                {
+                  "list": [
+                    {
+                      "code": 40,
+                      "parameters": []
+                    },
+                    {
+                      "code": 42,
+                      "parameters": [255]
+                    },
+                    {
+                      "code": 0,
+                      "parameters": []
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
             },
             {
-              "code": 355,
+              "code": 205,
               "indent": 0,
-              "parameters": ["$gameMap.event(2).setDirection(6);"]
+              "parameters": [
+                2,
+                {
+                  "list": [
+                    {
+                      "code": 40,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                2,
+                {
+                  "list": [
+                    {
+                      "code": 18,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
             },
             {
               "code": 250,
               "indent": 0,
               "parameters": [
                 {
+                  "name": "Item1",
                   "pan": 0,
                   "pitch": 100,
-                  "name": "Item1",
                   "volume": 90
                 }
               ]
@@ -803,23 +978,23 @@
               "parameters": ["Ok, olhe isso!"]
             },
             {
-              "code": 355,
+              "code": 203,
               "indent": 0,
-              "parameters": ["$gameMap.event(2).locate(11, 8);"]
+              "parameters": [2, 13, 10, 0]
             },
             {
               "code": 224,
               "indent": 0,
-              "parameters": [[0, 255, 255, 255], 20, true]
+              "parameters": [[0, 255, 255, 20], 20, true]
             },
             {
               "code": 250,
               "indent": 0,
               "parameters": [
                 {
+                  "name": "Teleport",
                   "pan": 0,
                   "pitch": 100,
-                  "name": "Teleport1",
                   "volume": 90
                 }
               ]
@@ -840,18 +1015,34 @@
               "parameters": ["Teleportar!"]
             },
             {
-              "code": 355,
+              "code": 205,
               "indent": 0,
-              "parameters": ["$gameMap.event(1).setDirection(4);"]
+              "parameters": [
+                1,
+                {
+                  "list": [
+                    {
+                      "code": 17,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
             },
             {
               "code": 250,
               "indent": 0,
               "parameters": [
                 {
+                  "name": "Bell1",
                   "pan": 0,
                   "pitch": 100,
-                  "name": "Bell1",
                   "volume": 90
                 }
               ]
@@ -872,18 +1063,18 @@
               "parameters": ["Impressionante!"]
             },
             {
-              "code": 355,
+              "code": 203,
               "indent": 0,
-              "parameters": ["$gameMap.event(1).locate(12, 8);"]
+              "parameters": [1, 15, 10, 0]
             },
             {
               "code": 250,
               "indent": 0,
               "parameters": [
                 {
+                  "name": "Teleport",
                   "pan": 0,
                   "pitch": 100,
-                  "name": "Teleport1",
                   "volume": 90
                 }
               ]
@@ -901,7 +1092,7 @@
             {
               "code": 401,
               "indent": 0,
-              "parameters": ["Eu consigo teleportar tamb?m."]
+              "parameters": ["Eu consigo teleportar também."]
             },
             {
               "code": 121,
@@ -916,24 +1107,40 @@
             {
               "code": 401,
               "indent": 0,
-              "parameters": ["Voc? consegue fazer o jogador desaparecer?"]
+              "parameters": ["Você consegue fazer o jogador desaparecer?"]
             },
             {
               "code": 250,
               "indent": 0,
               "parameters": [
                 {
+                  "name": "Magic1",
                   "pan": 0,
                   "pitch": 100,
-                  "name": "Magic1",
                   "volume": 90
                 }
               ]
             },
             {
-              "code": 355,
+              "code": 205,
               "indent": 0,
-              "parameters": ["$gamePlayer.setTransparent(true);"]
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 39,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
             },
             {
               "code": 230,
@@ -975,27 +1182,54 @@
               "indent": 0,
               "parameters": [
                 {
+                  "name": "Barrier",
                   "pan": 0,
                   "pitch": 100,
-                  "name": "Teleport1",
                   "volume": 90
                 }
               ]
             },
             {
-              "code": 355,
+              "code": 205,
               "indent": 0,
-              "parameters": ["$gamePlayer.locate(13, 7);"]
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 16,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
             },
             {
-              "code": 355,
+              "code": 205,
               "indent": 0,
-              "parameters": ["$gamePlayer.setDirection(2);"]
-            },
-            {
-              "code": 355,
-              "indent": 0,
-              "parameters": ["$gamePlayer.setTransparent(false);"]
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 40,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
             },
             {
               "code": 213,
@@ -1007,9 +1241,9 @@
               "indent": 0,
               "parameters": [
                 {
+                  "name": "Item1",
                   "pan": 0,
                   "pitch": 100,
-                  "name": "Item1",
                   "volume": 90
                 }
               ]
@@ -1027,7 +1261,7 @@
             {
               "code": 401,
               "indent": 0,
-              "parameters": ["Voc? venceu dessa vez!"]
+              "parameters": ["Você venceu dessa vez!"]
             },
             {
               "code": 213,
@@ -1039,9 +1273,9 @@
               "indent": 0,
               "parameters": [
                 {
+                  "name": "Bell2",
                   "pan": 0,
                   "pitch": 100,
-                  "name": "Bell2",
                   "volume": 90
                 }
               ]
@@ -1059,7 +1293,7 @@
             {
               "code": 401,
               "indent": 0,
-              "parameters": ["Vit?ria!"]
+              "parameters": ["Vitória!"]
             },
             {
               "code": 121,
@@ -1084,20 +1318,33 @@
                 "Basic_ExitBusts",
                 "BASIC: Exit Bust(s)",
                 {
-                  "AutoErase:eval": "true",
+                  "PictureID:arrayeval": "[\"1\"]",
+                  "EndOffsetX:eval": "-200",
+                  "EndOffsetY:eval": "+0",
                   "EasingType:str": "InSine",
-                  "EndOffsetX:eval": "200",
-                  "Duration:eval": "20",
                   "FlipDirection:str": "None",
-                  "PictureID:arrayeval": "[\"1\",\"2\"]",
-                  "EndOffsetY:eval": "+0"
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
                 }
               ]
             },
             {
-              "code": 108,
+              "code": 357,
               "indent": 0,
-              "parameters": ["finish_dialog"]
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"2\"]",
+                  "EndOffsetX:eval": "200",
+                  "EndOffsetY:eval": "+0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
             },
             {
               "code": 242,
@@ -1107,38 +1354,72 @@
             {
               "code": 223,
               "indent": 0,
-              "parameters": [[255, 255, 255, 0], 60, true]
+              "parameters": [[0, 0, 0, 0], 60, true]
             },
             {
               "code": 250,
               "indent": 0,
               "parameters": [
                 {
+                  "name": "Chime1",
                   "pan": 0,
                   "pitch": 100,
-                  "name": "Chime1",
                   "volume": 90
                 }
               ]
             },
             {
-              "code": 355,
+              "code": 205,
               "indent": 0,
-              "parameters": ["$gameMap.event(2).locate(6, 7);"]
+              "parameters": [
+                2,
+                {
+                  "list": [
+                    {
+                      "code": 45,
+                      "parameters": ["Move to: 6,7"],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
             },
             {
-              "code": 355,
+              "code": 205,
               "indent": 0,
-              "parameters": ["$gameMap.event(1).locate(7, 7);"]
+              "parameters": [
+                1,
+                {
+                  "list": [
+                    {
+                      "code": 45,
+                      "parameters": ["Move to: 7,7"],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
             },
             {
               "code": 250,
               "indent": 0,
               "parameters": [
                 {
+                  "name": "Bell3",
                   "pan": 0,
                   "pitch": 100,
-                  "name": "Bell3",
                   "volume": 90
                 }
               ]
@@ -1151,8 +1432,8 @@
                 "ZoomChange",
                 "Zoom: Change Zoom",
                 {
-                  "Duration:num": "30",
                   "TargetScale:num": "1.0",
+                  "Duration:num": "30",
                   "EasingType:str": "InOutSine"
                 }
               ]
@@ -1170,8 +1451,8 @@
                 "CameraFocusPlayer",
                 "Camera: Focus Player",
                 {
-                  "EasingType:str": "InOutSine",
-                  "Duration:num": "60"
+                  "Duration:num": "60",
+                  "EasingType:str": "InOutSine"
                 }
               ]
             },
@@ -1179,11 +1460,6 @@
               "code": 357,
               "indent": 0,
               "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusWait", "Camera: Wait for Focus", {}]
-            },
-            {
-              "code": 214,
-              "indent": 0,
-              "parameters": []
             },
             {
               "code": 0,
@@ -1209,11 +1485,63 @@
           "stepAnime": false,
           "through": false,
           "trigger": 3,
-          "walkAnime": true
+          "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
         }
       ],
-      "x": 1,
-      "y": 1
-    }
+      "x": 0,
+      "y": 0
+    },
+    null
   ]
 }

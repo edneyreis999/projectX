@@ -20,23 +20,22 @@
 
 | Cena | Personagem | Ação - movimento do personagem | Detalhes (parâmetros) | esperar (true/false) | Notas de Direção |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `Teste de Template` | `camera` | `cinematic` | `true` | `true` |  |
 | `Teste de Template` | `camera` | `bgm` | `play,Field1,70,true` | `true` |  |
 | `Teste de Template` | `Kilin` | `focus zoom` | `in` | `true` |  |
-| `Teste de Template` | `Kilin` | `move` | `12,10` | `true` |  |
+| `Teste de Template` | `Kilin` | `move to` | `12,10` | `true` |  |
 | `Teste de Template` | `Kilin` | `sound` | `Bell1` | `false` |  |
 | `Teste de Template` | `Kilin` | `turn` | `up` | `false` |  |
 | `Teste de Template` | `Kilin` | `balloon` | `1` | `true` |  |
 | `Teste de Template` | `start_dialog` |  |  |  |  |
 | `Teste de Template` | `bust` | `enter` | `Kilin_feliz.png, 1, 1` | `false` |  |
-| `Teste de Template` | `bust` | `enter` | `Mhordred_feliz.png, 2, 9` | `false` |  |
 | `Teste de Template` | `camera` | `switch` | `43, on` | `false` |  |
 | `Teste de Template` | `Kilin` | `talk` | `Que manhã bonita!` | `true` |  |
 | `Teste de Template` | `camera` | `voice` | `Bell1` | `true` |  |
 | `Teste de Template` | `Mhordred` | `focus zoom` | `in` | `true` |  |
-| `Teste de Template` | `Mhordred` | `move` | `14,10` | `true` |  |
+| `Teste de Template` | `Mhordred` | `move to` | `14,10` | `true` |  |
 | `Teste de Template` | `Mhordred` | `sound` | `Bell2` | `false` |  |
 | `Teste de Template` | `Mhordred` | `turn` | `left` | `false` |  |
+| `Teste de Template` | `bust` | `enter` | `Mhordred_feliz.png, 2, 9` | `false` |  |
 | `Teste de Template` | `camera` | `switch` | `44, on` | `false` |  |
 | `Teste de Template` | `Mhordred` | `talk` | `Kilin! Acordou cedo...` | `true` |  |
 | `Teste de Template` | `Kilin` | `turn` | `right` | `false` |  |
@@ -56,8 +55,7 @@
 | `Teste de Template` | `Kilin` | `sound` | `Blow1` | `false` |  |
 | `Teste de Template` | `camera` | `switch` | `43, on` | `false` |  |
 | `Teste de Template` | `Kilin` | `talk` | `Meu estômago está protestando!` | `true` |  |
-| `Teste de Template` | `camera` | `flash` | `255,255,255,30` | `true` |  |
-| `Teste de Template` | `camera` | `sound` | `Lightning1` | `false` |  |
+| `Teste de Template` | `camera` | `flash` | `50,50,50,30` | `true` |  |
 | `Teste de Template` | `Mhordred` | `balloon` | `1` | `true` |  |
 | `Teste de Template` | `camera` | `switch` | `44, on` | `false` |  |
 | `Teste de Template` | `Mhordred` | `talk` | `Ei, o que foi isso?` | `true` |  |
@@ -81,17 +79,17 @@
 | `Teste de Template` | `Kilin` | `sound` | `Item1` | `false` |  |
 | `Teste de Template` | `camera` | `switch` | `43, on` | `false` |  |
 | `Teste de Template` | `Kilin` | `talk` | `Ok, olhe isso!` | `true` |  |
-| `Teste de Template` | `Kilin` | `teleport` | `11,8` | `false` |  |
+| `Teste de Template` | `Kilin` | `teleport` | `13,10` | `false` |  |
 | `Teste de Template` | `camera` | `flash` | `0,255,255,20` | `true` |  |
-| `Teste de Template` | `camera` | `sound` | `Teleport1` | `false` |  |
+| `Teste de Template` | `camera` | `sound` | `Teleport` | `false` |  |
 | `Teste de Template` | `camera` | `switch` | `43, on` | `false` |  |
 | `Teste de Template` | `Kilin` | `talk` | `Teleportar!` | `true` |  |
 | `Teste de Template` | `Mhordred` | `turn` | `left` | `false` |  |
 | `Teste de Template` | `Mhordred` | `sound` | `Bell1` | `false` |  |
 | `Teste de Template` | `camera` | `switch` | `44, on` | `false` |  |
 | `Teste de Template` | `Mhordred` | `talk` | `Impressionante!` | `true` |  |
-| `Teste de Template` | `Mhordred` | `teleport` | `12,8` | `false` |  |
-| `Teste de Template` | `camera` | `sound` | `Teleport1` | `false` |  |
+| `Teste de Template` | `Mhordred` | `teleport` | `15,10` | `false` |  |
+| `Teste de Template` | `camera` | `sound` | `Teleport` | `false` |  |
 | `Teste de Template` | `camera` | `switch` | `44, on` | `false` |  |
 | `Teste de Template` | `Mhordred` | `talk` | `Eu consigo teleportar também.` | `true` |  |
 | `Teste de Template` | `camera` | `switch` | `43, on` | `false` |  |
@@ -103,8 +101,7 @@
 | `Teste de Template` | `Mhordred` | `talk` | `O jogador desapareceu.` | `true` |  |
 | `Teste de Template` | `camera` | `switch` | `43, on` | `false` |  |
 | `Teste de Template` | `Kilin` | `talk` | `E agora ele vai reaparecer!` | `true` |  |
-| `Teste de Template` | `camera` | `sound` | `Teleport1` | `false` |  |
-| `Teste de Template` | `player` | `teleport` | `13,7` | `false` |  |
+| `Teste de Template` | `camera` | `sound` | `Barrier` | `false` |  |
 | `Teste de Template` | `player` | `turn` | `down` | `false` |  |
 | `Teste de Template` | `player` | `transparent` | `false` | `false` |  |
 | `Teste de Template` | `Mhordred` | `balloon` | `3` | `true` |  |
@@ -117,13 +114,13 @@
 | `Teste de Template` | `Kilin` | `talk` | `Vitória!` | `true` |  |
 | `Teste de Template` | `camera` | `switch` | `44, on` | `false` |  |
 | `Teste de Template` | `Mhordred` | `talk` | `Lidera o caminho!` | `true` |  |
-| `Teste de Template` | `VPNBust` | `exit` | `1, 2` | `false` |  |
+| `Teste de Template` | `bust` | `exit` | `1, 2` | `false` |  |
 | `Teste de Template` | `finish_dialog` |  |  |  |  |
 | `Teste de Template` | `camera` | `bgm` | `fadeOut,120` | `true` |  |
-| `Teste de Template` | `camera` | `tone` | `255,255,255,0,60` | `true` |  |
+| `Teste de Template` | `camera` | `tone` | `normal,60` | `true` |  |
 | `Teste de Template` | `camera` | `sound` | `Chime1` | `false` |  |
-| `Teste de Template` | `Kilin` | `move` | `6,7` | `false` |  |
-| `Teste de Template` | `Mhordred` | `move` | `7,7` | `true` |  |
+| `Teste de Template` | `Kilin` | `move to` | `6,7` | `false` |  |
+| `Teste de Template` | `Mhordred` | `move to` | `7,7` | `true` |  |
 | `Teste de Template` | `Mhordred` | `sound` | `Bell3` | `false` |  |
 | `Teste de Template` | `camera` | `cinematic` | `false` | `true` |  |
 | `Teste de Template` | `camera` | `focus zoom` | `out` | `true` |  |
@@ -132,6 +129,9 @@
 ---
 
 ## Regras
+
+* Falas devem estar em português e com acento quando necessário.
+* Sempre analise a necessidade do `Auto-Reverse` em `h_mirror` para os bustos.
 
 ## Referências Rápidas de Comandos (Cutscene Director Pro)
 
@@ -142,11 +142,11 @@
 * **Barras Pretas:** `cinematic` | *Detalhes:* `true` (ativar) ou `false` (desativar)
 * **Tremer:** `shake` | *Detalhes:* (vazio)
 * **Flash:** `flash` | *Detalhes:* `r,g,b,duration` (ex: `255,255,255,30`)
-* **Tom:** `tone` | *Detalhes:* `r,g,b,gamma,duration`
+* **Tom:** `tone` | *Detalhes:* `r,g,b,gamma,duration` ou `normal,duration` ou `escuro, duration` ou `sepia duration` ou `por do sol, duration` ou `noite, duration`
 
 ### Personagem
 
-* **Mover:** `move` | *Detalhes:* `x,y`
+* **Mover:** `move to` | *Detalhes:* Script: Move to: `x,y`
 * **Teleportar:** `teleport` | *Detalhes:* `x,y`
 * **Virar:** `turn` | *Detalhes:* `up`, `down`, `left`, `right`
 * **Falar:** `talk` | *Detalhes:* `"Texto entre aspas"` (Obrigatório aspas se usar vírgula)
@@ -155,7 +155,9 @@
 
 ### Bustos
 
-* **Adicionar:** `enter` | *Detalhes:* `filename, ID_bust, position`
+* O Plugin utilizado é o VNPictureBusts
+
+* **Adicionar:** `enter` | *Detalhes:* `filename, ID_bust, position, h_mirror`
 * **Trocar:** `change` | *Detalhes:* `filename, ID_bust`
 * **Tirar:** `exit` | *Detalhes:* `ID_bust`
 
