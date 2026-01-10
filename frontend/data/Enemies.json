@@ -920,12 +920,12 @@
   },
   {
     "id": 35,
-    "name": "",
-    "battlerName": "",
+    "name": "Guardião Menor de Pedra",
+    "battlerName": "Guardiao_Menor_de_Pedra",
     "battlerHue": 0,
-    "exp": 0,
-    "gold": 0,
-    "params": [1, 0, 0, 0, 0, 0, 0, 0],
+    "exp": 128,
+    "gold": 80,
+    "params": [370, 0, 42, 42, 42, 42, 42, 42],
     "actions": [
       {
         "skillId": 1,
@@ -947,12 +947,12 @@
   },
   {
     "id": 36,
-    "name": "",
-    "battlerName": "",
+    "name": "Elemental de Terra",
+    "battlerName": "Elemental_de_Terra",
     "battlerHue": 0,
-    "exp": 0,
-    "gold": 0,
-    "params": [1, 0, 0, 0, 0, 0, 0, 0],
+    "exp": 136,
+    "gold": 85,
+    "params": [390, 0, 44, 44, 44, 44, 44, 44],
     "actions": [
       {
         "skillId": 1,
@@ -974,12 +974,12 @@
   },
   {
     "id": 37,
-    "name": "",
-    "battlerName": "",
+    "name": "Guardião Ancião",
+    "battlerName": "Guardiao_Anciao",
     "battlerHue": 0,
-    "exp": 0,
-    "gold": 0,
-    "params": [1, 0, 0, 0, 0, 0, 0, 0],
+    "exp": 144,
+    "gold": 90,
+    "params": [410, 0, 46, 46, 46, 46, 46, 46],
     "actions": [
       {
         "skillId": 1,
@@ -1001,12 +1001,12 @@
   },
   {
     "id": 38,
-    "name": "",
-    "battlerName": "",
+    "name": "Sombra Errante",
+    "battlerName": "Sombra_Errante",
     "battlerHue": 0,
-    "exp": 0,
-    "gold": 0,
-    "params": [1, 0, 0, 0, 0, 0, 0, 0],
+    "exp": 152,
+    "gold": 95,
+    "params": [430, 0, 48, 48, 48, 48, 48, 48],
     "actions": [
       {
         "skillId": 1,
@@ -1028,12 +1028,12 @@
   },
   {
     "id": 39,
-    "name": "",
-    "battlerName": "",
+    "name": "Corvos de Melios",
+    "battlerName": "Corvos_de_Melios",
     "battlerHue": 0,
-    "exp": 0,
-    "gold": 0,
-    "params": [1, 0, 0, 0, 0, 0, 0, 0],
+    "exp": 160,
+    "gold": 100,
+    "params": [675, 0, 75, 75, 75, 75, 75, 75],
     "actions": [
       {
         "skillId": 1,
@@ -1055,12 +1055,12 @@
   },
   {
     "id": 40,
-    "name": "",
-    "battlerName": "",
+    "name": "Guardião Colossal",
+    "battlerName": "Guardiao_Colossal",
     "battlerHue": 0,
-    "exp": 0,
-    "gold": 0,
-    "params": [1, 0, 0, 0, 0, 0, 0, 0],
+    "exp": 160,
+    "gold": 100,
+    "params": [675, 0, 75, 75, 75, 75, 75, 75],
     "actions": [
       {
         "skillId": 1,

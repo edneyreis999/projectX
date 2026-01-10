@@ -292,8 +292,8 @@ describe('Enemies.json Structure Validation', () => {
         expect(enemiesData[i].name).toBe('');
       }
 
-      // Region 4: IDs 35-45 (11 empty slots - not yet implemented)
-      for (let i = 35; i <= 45; i++) {
+      // Region 4: IDs 41-45 (5 empty slots - expansion after implemented enemies)
+      for (let i = 41; i <= 45; i++) {
         expect(enemiesData[i]).toBeDefined();
         expect(enemiesData[i].name).toBe('');
       }
@@ -305,16 +305,16 @@ describe('Enemies.json Structure Validation', () => {
       }
     });
 
-    test('total of 80 empty slots should exist (excluding separators and implemented enemies)', () => {
-      // Implemented: 5 (Region 1) + 5 (Region 2) + 5 (Region 3) = 15 enemies
-      // Empty: 5 (R1 expansion) + 5 (R2 expansion) + 5 (R3 expansion) + 11 (R4) + 54 (R5) = 80 slots
+    test('total of 74 empty slots should exist (excluding separators and implemented enemies)', () => {
+      // Implemented: 5 (Region 1) + 5 (Region 2) + 5 (Region 3) + 6 (Region 4) = 21 enemies
+      // Empty: 5 (R1 expansion) + 5 (R2 expansion) + 5 (R3 expansion) + 5 (R4 expansion) + 54 (R5) = 74 slots
       let emptyCount = 0;
       for (let i = 1; i <= 100; i++) {
         if (enemiesData[i].name === '') {
           emptyCount++;
         }
       }
-      expect(emptyCount).toBe(80);
+      expect(emptyCount).toBe(74);
     });
 
     test('should have exactly 5 separators', () => {
