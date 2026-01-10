@@ -623,12 +623,12 @@
   },
   {
     "id": 24,
-    "name": "",
-    "battlerName": "",
+    "name": "Rato de Esgoto",
+    "battlerName": "Rato_de_Esgoto",
     "battlerHue": 0,
-    "exp": 0,
-    "gold": 0,
-    "params": [1, 0, 0, 0, 0, 0, 0, 0],
+    "exp": 80,
+    "gold": 50,
+    "params": [250, 0, 30, 30, 30, 30, 30, 30],
     "actions": [
       {
         "skillId": 1,
@@ -650,12 +650,12 @@
   },
   {
     "id": 25,
-    "name": "",
-    "battlerName": "",
+    "name": "Limo Ácido",
+    "battlerName": "Limo_Acido",
     "battlerHue": 0,
-    "exp": 0,
-    "gold": 0,
-    "params": [1, 0, 0, 0, 0, 0, 0, 0],
+    "exp": 88,
+    "gold": 55,
+    "params": [270, 0, 32, 32, 32, 32, 32, 32],
     "actions": [
       {
         "skillId": 1,
@@ -677,12 +677,12 @@
   },
   {
     "id": 26,
-    "name": "",
-    "battlerName": "",
+    "name": "Fungo Venenoso Gigante",
+    "battlerName": "Fungo_Venenoso_Gigante",
     "battlerHue": 0,
-    "exp": 0,
-    "gold": 0,
-    "params": [1, 0, 0, 0, 0, 0, 0, 0],
+    "exp": 104,
+    "gold": 65,
+    "params": [310, 0, 36, 36, 36, 36, 36, 36],
     "actions": [
       {
         "skillId": 1,
@@ -704,12 +704,12 @@
   },
   {
     "id": 27,
-    "name": "",
-    "battlerName": "",
+    "name": "Gosma Tóxica",
+    "battlerName": "Gosma_Toxica",
     "battlerHue": 0,
-    "exp": 0,
-    "gold": 0,
-    "params": [1, 0, 0, 0, 0, 0, 0, 0],
+    "exp": 104,
+    "gold": 65,
+    "params": [310, 0, 36, 36, 36, 36, 36, 36],
     "actions": [
       {
         "skillId": 1,
@@ -731,12 +731,12 @@
   },
   {
     "id": 28,
-    "name": "",
-    "battlerName": "",
+    "name": "Pestesporo",
+    "battlerName": "Pestesporo",
     "battlerHue": 0,
-    "exp": 0,
-    "gold": 0,
-    "params": [1, 0, 0, 0, 0, 0, 0, 0],
+    "exp": 120,
+    "gold": 75,
+    "params": [525, 0, 60, 60, 60, 60, 60, 60],
     "actions": [
       {
         "skillId": 1,
