@@ -56,7 +56,7 @@ describe('Troops.json Database Validation', () => {
         const troop = troopsData[i];
         expect(troop).toBeDefined();
 
-        requiredFields.forEach((field) => {
+        requiredFields.forEach(field => {
           expect(troop).toHaveProperty(field);
         });
       }
@@ -105,8 +105,8 @@ describe('Troops.json Database Validation', () => {
     test('All members have required fields (enemyId, x, y, hidden)', () => {
       for (let i = 1; i < troopsData.length; i++) {
         const troop = troopsData[i];
-        troop.members.forEach((member, memberIndex) => {
-          requiredMemberFields.forEach((field) => {
+        troop.members.forEach(member => {
+          requiredMemberFields.forEach(field => {
             expect(member).toHaveProperty(field);
           });
         });
@@ -116,7 +116,7 @@ describe('Troops.json Database Validation', () => {
     test('All members have valid enemyId (number > 0)', () => {
       for (let i = 1; i < troopsData.length; i++) {
         const troop = troopsData[i];
-        troop.members.forEach((member, memberIndex) => {
+        troop.members.forEach(member => {
           expect(typeof member.enemyId).toBe('number');
           expect(member.enemyId).toBeGreaterThan(0);
         });
@@ -126,7 +126,7 @@ describe('Troops.json Database Validation', () => {
     test('All members have valid x coordinate (within canvas bounds 0-640+)', () => {
       for (let i = 1; i < troopsData.length; i++) {
         const troop = troopsData[i];
-        troop.members.forEach((member) => {
+        troop.members.forEach(member => {
           expect(typeof member.x).toBe('number');
           expect(member.x).toBeGreaterThanOrEqual(0);
           // Allow some overflow beyond 640 for formations with many enemies
@@ -137,7 +137,7 @@ describe('Troops.json Database Validation', () => {
     test('All members have valid y coordinate (within canvas bounds 0-480)', () => {
       for (let i = 1; i < troopsData.length; i++) {
         const troop = troopsData[i];
-        troop.members.forEach((member) => {
+        troop.members.forEach(member => {
           expect(typeof member.y).toBe('number');
           expect(member.y).toBeGreaterThanOrEqual(0);
           expect(member.y).toBeLessThanOrEqual(480);
@@ -148,7 +148,7 @@ describe('Troops.json Database Validation', () => {
     test('All members have Y coordinate fixed at 436 (battle UI baseline)', () => {
       for (let i = 1; i < troopsData.length; i++) {
         const troop = troopsData[i];
-        troop.members.forEach((member) => {
+        troop.members.forEach(member => {
           expect(member.y).toBe(436);
         });
       }
@@ -157,7 +157,7 @@ describe('Troops.json Database Validation', () => {
     test('All members have hidden field as boolean', () => {
       for (let i = 1; i < troopsData.length; i++) {
         const troop = troopsData[i];
-        troop.members.forEach((member) => {
+        troop.members.forEach(member => {
           expect(typeof member.hidden).toBe('boolean');
         });
       }
@@ -166,7 +166,7 @@ describe('Troops.json Database Validation', () => {
     test('No members are hidden (all should be visible initially)', () => {
       for (let i = 1; i < troopsData.length; i++) {
         const troop = troopsData[i];
-        troop.members.forEach((member) => {
+        troop.members.forEach(member => {
           expect(member.hidden).toBe(false);
         });
       }
@@ -179,12 +179,12 @@ describe('Troops.json Database Validation', () => {
 
   describe('Position Calculation Validation', () => {
     test('Members with same count have consistent spacing', () => {
-      const troopsWithTwo = troopsData.filter((t) => t && t.members.length === 2);
+      const troopsWithTwo = troopsData.filter(t => t && t.members.length === 2);
       if (troopsWithTwo.length > 0) {
         const firstTroop = troopsWithTwo[0];
         const expectedSpacing = firstTroop.members[1].x - firstTroop.members[0].x;
 
-        troopsWithTwo.forEach((troop) => {
+        troopsWithTwo.forEach(troop => {
           const spacing = troop.members[1].x - troop.members[0].x;
           expect(spacing).toBe(expectedSpacing);
         });
@@ -219,7 +219,7 @@ describe('Troops.json Database Validation', () => {
     test('All pages have required structure (conditions, list, span)', () => {
       for (let i = 1; i < troopsData.length; i++) {
         const troop = troopsData[i];
-        troop.pages.forEach((page, pageIndex) => {
+        troop.pages.forEach(page => {
           expect(page).toHaveProperty('conditions');
           expect(page).toHaveProperty('list');
           expect(page).toHaveProperty('span');
@@ -230,7 +230,7 @@ describe('Troops.json Database Validation', () => {
     test('All pages have empty event list (code: 0)', () => {
       for (let i = 1; i < troopsData.length; i++) {
         const troop = troopsData[i];
-        troop.pages.forEach((page) => {
+        troop.pages.forEach(page => {
           expect(Array.isArray(page.list)).toBe(true);
           expect(page.list.length).toBeGreaterThan(0);
           expect(page.list[0].code).toBe(0);
@@ -243,32 +243,19 @@ describe('Troops.json Database Validation', () => {
     test('All pages have span set to 0', () => {
       for (let i = 1; i < troopsData.length; i++) {
         const troop = troopsData[i];
-        troop.pages.forEach((page) => {
+        troop.pages.forEach(page => {
           expect(page.span).toBe(0);
         });
       }
     });
 
     test('All pages have valid conditions structure', () => {
-      const requiredConditionFields = [
-        'actorHp',
-        'actorId',
-        'actorValid',
-        'enemyHp',
-        'enemyIndex',
-        'enemyValid',
-        'switchId',
-        'switchValid',
-        'turnA',
-        'turnB',
-        'turnEnding',
-        'turnValid',
-      ];
+      const requiredConditionFields = ['actorHp', 'actorId', 'actorValid', 'enemyHp', 'enemyIndex', 'enemyValid', 'switchId', 'switchValid', 'turnA', 'turnB', 'turnEnding', 'turnValid'];
 
       for (let i = 1; i < troopsData.length; i++) {
         const troop = troopsData[i];
-        troop.pages.forEach((page) => {
-          requiredConditionFields.forEach((field) => {
+        troop.pages.forEach(page => {
+          requiredConditionFields.forEach(field => {
             expect(page.conditions).toHaveProperty(field);
           });
         });
@@ -284,7 +271,7 @@ describe('Troops.json Database Validation', () => {
     test('All enemy IDs in troops exist in Enemies.json', () => {
       for (let i = 1; i < troopsData.length; i++) {
         const troop = troopsData[i];
-        troop.members.forEach((member, memberIndex) => {
+        troop.members.forEach(member => {
           const enemy = enemiesData[member.enemyId];
           expect(enemy).toBeDefined();
           expect(enemy).not.toBeNull();
@@ -296,7 +283,7 @@ describe('Troops.json Database Validation', () => {
     test('No troops reference separator entries (=== REGION ===)', () => {
       for (let i = 1; i < troopsData.length; i++) {
         const troop = troopsData[i];
-        troop.members.forEach((member) => {
+        troop.members.forEach(member => {
           const enemy = enemiesData[member.enemyId];
           expect(enemy.name).not.toMatch(/^=== .+ ===$/);
         });
@@ -306,7 +293,7 @@ describe('Troops.json Database Validation', () => {
     test('No troops reference empty enemy slots', () => {
       for (let i = 1; i < troopsData.length; i++) {
         const troop = troopsData[i];
-        troop.members.forEach((member) => {
+        troop.members.forEach(member => {
           const enemy = enemiesData[member.enemyId];
           expect(enemy.name).not.toBe('');
         });
@@ -373,7 +360,7 @@ describe('Troops.json Database Validation', () => {
         const troop = troopsData[i];
 
         // Get unique enemy IDs in this troop
-        const uniqueEnemyIds = new Set(troop.members.map((m) => m.enemyId));
+        const uniqueEnemyIds = new Set(troop.members.map(m => m.enemyId));
 
         // If single enemy type with count > 1, should match pattern
         if (uniqueEnemyIds.size === 1 && troop.members.length > 1) {
@@ -388,7 +375,7 @@ describe('Troops.json Database Validation', () => {
       for (let i = 1; i < troopsData.length; i++) {
         const troop = troopsData[i];
 
-        if (bossNames.some((name) => troop.name.includes(name))) {
+        if (bossNames.some(name => troop.name.includes(name))) {
           // Boss troops should not have "x1" suffix
           expect(troop.name).not.toMatch(/x1$/);
         }
@@ -402,7 +389,7 @@ describe('Troops.json Database Validation', () => {
         const troop = troopsData[i];
 
         // Get unique enemy IDs in this troop
-        const uniqueEnemyIds = new Set(troop.members.map((m) => m.enemyId));
+        const uniqueEnemyIds = new Set(troop.members.map(m => m.enemyId));
 
         // If multiple enemy types, should match mixed pattern
         if (uniqueEnemyIds.size > 1) {
@@ -422,7 +409,7 @@ describe('Troops.json Database Validation', () => {
 
       for (let i = 1; i <= 10; i++) {
         const troop = troopsData[i];
-        troop.members.forEach((member) => {
+        troop.members.forEach(member => {
           expect(worldMapEnemyIds).toContain(member.enemyId);
         });
       }
@@ -433,7 +420,7 @@ describe('Troops.json Database Validation', () => {
 
       for (let i = 11; i <= 20; i++) {
         const troop = troopsData[i];
-        troop.members.forEach((member) => {
+        troop.members.forEach(member => {
           expect(kravensEnemyIds).toContain(member.enemyId);
         });
       }
@@ -444,7 +431,7 @@ describe('Troops.json Database Validation', () => {
 
       for (let i = 21; i <= 28; i++) {
         const troop = troopsData[i];
-        troop.members.forEach((member) => {
+        troop.members.forEach(member => {
           expect(esgotoEnemyIds).toContain(member.enemyId);
         });
       }
@@ -455,10 +442,32 @@ describe('Troops.json Database Validation', () => {
 
       for (let i = 29; i <= 36; i++) {
         const troop = troopsData[i];
-        troop.members.forEach((member) => {
+        troop.members.forEach(member => {
           expect(meliosEnemyIds).toContain(member.enemyId);
         });
       }
+    });
+  });
+
+  // ==========================================
+  // Prettier Formatting Compliance
+  // ==========================================
+
+  describe('Prettier Formatting Compliance', () => {
+    test('File is formatted according to Prettier configuration', () => {
+      // Read the raw file content
+      const rawContent = fs.readFileSync(troopsPath, 'utf8');
+
+      // Check for consistent formatting patterns
+      expect(rawContent).toContain('[\n'); // Array starts with newline
+      expect(rawContent).not.toMatch(/,\s*}/); // No trailing commas in objects
+
+      // Verify proper indentation (2 spaces as per .prettierrc)
+      expect(rawContent).toMatch(/\n  {/); // Objects indented with 2 spaces
+      expect(rawContent).toMatch(/\n    "/); // Properties indented with 4 spaces
+
+      // Verify it can be parsed (already done in beforeAll, but ensures no hidden chars)
+      expect(() => JSON.parse(rawContent)).not.toThrow();
     });
   });
 });
