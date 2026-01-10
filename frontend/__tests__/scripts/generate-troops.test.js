@@ -13,6 +13,8 @@ const {
   buildEnemyNameMapping,
   resolveEnemyId,
   createEmptyBattlePage,
+  createSeparatorEntry,
+  createEmptySlotEntry,
   generateTroop,
   generateAllTroops,
 } = require('../../scripts/generate-troops');
@@ -225,6 +227,78 @@ describe('generate-troops.js', () => {
   });
 
   // ==========================================
+  // Separator Entry Tests
+  // ==========================================
+
+  describe('createSeparatorEntry', () => {
+    test('should create separator with correct structure', () => {
+      const separator = createSeparatorEntry(1, 'ESTRADA DO CÃO-LUAR');
+
+      expect(separator).toHaveProperty('id');
+      expect(separator).toHaveProperty('name');
+      expect(separator).toHaveProperty('members');
+      expect(separator).toHaveProperty('pages');
+    });
+
+    test('should have correct separator name format', () => {
+      const separator = createSeparatorEntry(1, 'ESTRADA DO CÃO-LUAR');
+      expect(separator.name).toBe('=== ESTRADA DO CÃO-LUAR ===');
+    });
+
+    test('should have empty members array', () => {
+      const separator = createSeparatorEntry(1, 'ESTRADA DO CÃO-LUAR');
+      expect(separator.members).toEqual([]);
+    });
+
+    test('should have valid ID', () => {
+      const separator = createSeparatorEntry(22, 'MINAS DE KRAVENS');
+      expect(separator.id).toBe(22);
+    });
+
+    test('should have pages array with at least one page', () => {
+      const separator = createSeparatorEntry(1, 'ESTRADA DO CÃO-LUAR');
+      expect(Array.isArray(separator.pages)).toBe(true);
+      expect(separator.pages.length).toBeGreaterThan(0);
+    });
+  });
+
+  // ==========================================
+  // Empty Slot Entry Tests
+  // ==========================================
+
+  describe('createEmptySlotEntry', () => {
+    test('should create empty slot with correct structure', () => {
+      const emptySlot = createEmptySlotEntry(12);
+
+      expect(emptySlot).toHaveProperty('id');
+      expect(emptySlot).toHaveProperty('name');
+      expect(emptySlot).toHaveProperty('members');
+      expect(emptySlot).toHaveProperty('pages');
+    });
+
+    test('should have empty name', () => {
+      const emptySlot = createEmptySlotEntry(12);
+      expect(emptySlot.name).toBe('');
+    });
+
+    test('should have empty members array', () => {
+      const emptySlot = createEmptySlotEntry(12);
+      expect(emptySlot.members).toEqual([]);
+    });
+
+    test('should have valid ID', () => {
+      const emptySlot = createEmptySlotEntry(42);
+      expect(emptySlot.id).toBe(42);
+    });
+
+    test('should have pages array with at least one page', () => {
+      const emptySlot = createEmptySlotEntry(12);
+      expect(Array.isArray(emptySlot.pages)).toBe(true);
+      expect(emptySlot.pages.length).toBeGreaterThan(0);
+    });
+  });
+
+  // ==========================================
   // Troop Generation Tests
   // ==========================================
 
@@ -350,7 +424,7 @@ describe('generate-troops.js', () => {
       expect(troops[0]).toBeNull();
     });
 
-    test('should generate correct number of troops', () => {
+    test('should generate correct structure with separators and empty slots', () => {
       const definitions = [
         {
           id: 1,
@@ -368,23 +442,31 @@ describe('generate-troops.js', () => {
 
       const troops = generateAllTroops(definitions, mockNameMapping);
 
-      // Should have null + 2 troops = 3 entries
-      expect(troops).toHaveLength(3);
+      // New structure includes all regions even with only world_map troops
+      // null + world_map (separator + 2 troops + 10 empty slots) + other regions (3 separators + empty slots)
+      // The function creates a 71-element array but filters out remaining nulls
+      // So we get: null + 1 separator + 2 troops + 10 empty slots + 3 separators + 30 empty slots = 47 entries
+      expect(troops.length).toBeGreaterThanOrEqual(13); // At minimum: null + separator + 2 troops + 10 empty slots
       expect(troops[0]).toBeNull();
-      expect(troops[1].id).toBe(1);
-      expect(troops[2].id).toBe(2);
+      expect(troops[1].name).toBe('=== ESTRADA DO CÃO-LUAR ==='); // Separator
+      expect(troops[2].id).toBe(2); // First troop remapped to ID 2
+      expect(troops[3].id).toBe(3); // Second troop remapped to ID 3
+
+      // Validate empty slots exist
+      expect(troops[12].name).toBe(''); // Empty slot
+      expect(troops[12].members).toEqual([]);
     });
 
-    test('should preserve troop IDs from definitions', () => {
+    test('should remap troop IDs based on region position', () => {
       const definitions = [
         {
-          id: 5,
+          id: 1,
           name: 'Lobo Jovem x2',
           region: 'world_map',
           members: [{ enemyName: 'Lobo Jovem', count: 2 }],
         },
         {
-          id: 10,
+          id: 2,
           name: 'Goblin Saqueador x2',
           region: 'world_map',
           members: [{ enemyName: 'Goblin Saqueador', count: 2 }],
@@ -393,8 +475,11 @@ describe('generate-troops.js', () => {
 
       const troops = generateAllTroops(definitions, mockNameMapping);
 
-      expect(troops[1].id).toBe(5);
-      expect(troops[2].id).toBe(10);
+      // World Map region starts at ID 2, so troops are remapped to IDs 2 and 3
+      expect(troops[2].id).toBe(2);
+      expect(troops[3].id).toBe(3);
+      expect(troops[2].name).toBe('Lobo Jovem x2');
+      expect(troops[3].name).toBe('Goblin Saqueador x2');
     });
   });
 
@@ -413,19 +498,36 @@ describe('generate-troops.js', () => {
       // Generate all troops
       const troops = generateAllTroops(troopDefinitions, nameMapping);
 
-      // Validate generated troops
-      expect(troops).toHaveLength(37); // null + 36 troops
+      // Validate generated troops with new structure
+      expect(troops).toHaveLength(71); // null + 4 separators + 36 troops + 30 empty slots
       expect(troops[0]).toBeNull();
 
-      // Validate each troop
+      // Count entry types
+      let separatorCount = 0;
+      let combatTroopCount = 0;
+      let emptySlotCount = 0;
+
       for (let i = 1; i < troops.length; i++) {
         const troop = troops[i];
         expect(troop).toHaveProperty('id');
         expect(troop).toHaveProperty('name');
         expect(troop).toHaveProperty('members');
         expect(troop).toHaveProperty('pages');
-        expect(troop.members.length).toBeGreaterThan(0);
+
+        // Categorize entry type
+        if (troop.name.match(/^=== .+ ===$/)) {
+          separatorCount++;
+        } else if (troop.name === '' && troop.members.length === 0) {
+          emptySlotCount++;
+        } else if (troop.members.length > 0) {
+          combatTroopCount++;
+        }
       }
+
+      // Validate counts
+      expect(separatorCount).toBe(4);
+      expect(combatTroopCount).toBe(36);
+      expect(emptySlotCount).toBe(30);
     });
 
     test('should correctly resolve all enemy names from definitions', () => {

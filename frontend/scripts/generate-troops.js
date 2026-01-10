@@ -127,6 +127,37 @@ function createEmptyBattlePage() {
 }
 
 /**
+ * Creates a separator entry for regional organization.
+ *
+ * @param {number} id - The ID for the separator entry
+ * @param {string} regionName - The region name (e.g., "ESTRADA DO CÃO-LUAR")
+ * @returns {Object} Separator troop object
+ */
+function createSeparatorEntry(id, regionName) {
+  return {
+    id,
+    name: `=== ${regionName} ===`,
+    members: [],
+    pages: [createEmptyBattlePage()],
+  };
+}
+
+/**
+ * Creates an empty slot entry for future troop additions.
+ *
+ * @param {number} id - The ID for the empty slot entry
+ * @returns {Object} Empty slot troop object
+ */
+function createEmptySlotEntry(id) {
+  return {
+    id,
+    name: '',
+    members: [],
+    pages: [createEmptyBattlePage()],
+  };
+}
+
+/**
  * Generates a single troop object in RPG Maker MZ format.
  *
  * @param {Object} definition - Troop definition from troop-definitions.js
@@ -170,7 +201,21 @@ function generateTroop(definition, nameMapping) {
 }
 
 /**
- * Generates all troops from definitions array.
+ * Generates all troops from definitions array with regional separators and empty slots.
+ *
+ * New structure:
+ * - ID 1: Separator "=== ESTRADA DO CÃO-LUAR ==="
+ * - IDs 2-11: 10 World Map troops (remapped from logical IDs 1-10)
+ * - IDs 12-21: 10 empty slots
+ * - ID 22: Separator "=== MINAS DE KRAVENS ==="
+ * - IDs 23-32: 10 Kravens troops (remapped from logical IDs 11-20)
+ * - IDs 33-42: 10 empty slots
+ * - ID 43: Separator "=== ESGOTO DE GILDRAT ==="
+ * - IDs 44-51: 8 Esgoto troops (remapped from logical IDs 21-28)
+ * - IDs 52-61: 10 empty slots
+ * - ID 62: Separator "=== RUÍNAS DE MELIOS ==="
+ * - IDs 63-70: 8 Melios troops (remapped from logical IDs 29-36)
+ * Total: 71 entries (null + 70 entries)
  *
  * @param {Array} definitions - Array of troop definitions
  * @param {Map<string, number>} nameMapping - Enemy name to ID mapping
@@ -179,12 +224,77 @@ function generateTroop(definition, nameMapping) {
 function generateAllTroops(definitions, nameMapping) {
   const troops = [null]; // RPG Maker MZ index 0 placeholder
 
-  for (const definition of definitions) {
-    const troop = generateTroop(definition, nameMapping);
-    troops.push(troop);
+  // Regional configuration
+  const regions = [
+    {
+      name: 'ESTRADA DO CÃO-LUAR',
+      key: 'world_map',
+      separatorId: 1,
+      startId: 2,
+      count: 10,
+      emptySlotStart: 12,
+      emptySlotCount: 10,
+    },
+    {
+      name: 'MINAS DE KRAVENS',
+      key: 'kravens',
+      separatorId: 22,
+      startId: 23,
+      count: 10,
+      emptySlotStart: 33,
+      emptySlotCount: 10,
+    },
+    {
+      name: 'ESGOTO DE GILDRAT',
+      key: 'esgoto',
+      separatorId: 43,
+      startId: 44,
+      count: 8,
+      emptySlotStart: 52,
+      emptySlotCount: 10,
+    },
+    {
+      name: 'RUÍNAS DE MELIOS',
+      key: 'melios',
+      separatorId: 62,
+      startId: 63,
+      count: 8,
+      emptySlotStart: null, // Last region has no empty slots after it
+      emptySlotCount: 0,
+    },
+  ];
+
+  // Build troops array up to ID 70
+  const troopsById = new Array(71).fill(null);
+  troopsById[0] = null; // RPG Maker MZ placeholder
+
+  // Process each region
+  for (const region of regions) {
+    // Add separator
+    troopsById[region.separatorId] = createSeparatorEntry(region.separatorId, region.name);
+
+    // Get troop definitions for this region
+    const regionDefinitions = definitions.filter(def => def.region === region.key);
+
+    // Generate troops with remapped IDs
+    regionDefinitions.forEach((definition, index) => {
+      const remappedId = region.startId + index;
+      const troop = generateTroop(definition, nameMapping);
+      troop.id = remappedId; // Remap ID to new position
+      troopsById[remappedId] = troop;
+    });
+
+    // Add empty slots (if this region has them)
+    if (region.emptySlotCount > 0) {
+      for (let i = 0; i < region.emptySlotCount; i++) {
+        const emptySlotId = region.emptySlotStart + i;
+        troopsById[emptySlotId] = createEmptySlotEntry(emptySlotId);
+      }
+    }
   }
 
-  return troops;
+  // Filter out any remaining nulls and return
+  return troopsById.filter((troop, index) => index === 0 || troop !== null);
 }
 
 // ==========================================
@@ -231,8 +341,9 @@ function writeJsonFile(filePath, data) {
  * Generates and logs a summary of troops created per region.
  *
  * @param {Array} definitions - Array of troop definitions
+ * @param {Array} troops - Generated troops array
  */
-function logGenerationSummary(definitions) {
+function logGenerationSummary(definitions, troops) {
   const regionCounts = {
     world_map: 0,
     kravens: 0,
@@ -245,12 +356,15 @@ function logGenerationSummary(definitions) {
   }
 
   console.log('\n✓ Troops generation complete!');
-  console.log('\nSummary by region:');
-  console.log(`  World Map (IDs 1-10):    ${regionCounts.world_map} troops`);
-  console.log(`  Kravens (IDs 11-20):     ${regionCounts.kravens} troops`);
-  console.log(`  Esgoto (IDs 21-28):      ${regionCounts.esgoto} troops`);
-  console.log(`  Melios (IDs 29-36):      ${regionCounts.melios} troops`);
-  console.log(`\n  Total:                   ${definitions.length} troops (+ null placeholder)`);
+  console.log('\nSummary by region (with new organizational structure):');
+  console.log(`  World Map (IDs 2-11):      ${regionCounts.world_map} troops + separator (ID 1) + 10 empty slots (IDs 12-21)`);
+  console.log(`  Kravens (IDs 23-32):       ${regionCounts.kravens} troops + separator (ID 22) + 10 empty slots (IDs 33-42)`);
+  console.log(`  Esgoto (IDs 44-51):        ${regionCounts.esgoto} troops + separator (ID 43) + 10 empty slots (IDs 52-61)`);
+  console.log(`  Melios (IDs 63-70):        ${regionCounts.melios} troops + separator (ID 62)`);
+  console.log(`\n  Total entries:             ${troops.length} (null placeholder + 4 separators + ${definitions.length} troops + 30 empty slots)`);
+  console.log(`  Combat troops:             ${definitions.length}`);
+  console.log(`  Separators:                4`);
+  console.log(`  Empty slots:               30`);
   console.log(`\nOutput written to: ${PATHS.output}\n`);
 }
 
@@ -300,7 +414,7 @@ function main() {
     console.log('✓ File written successfully');
 
     // Step 7: Summary
-    logGenerationSummary(definitions);
+    logGenerationSummary(definitions, troops);
 
     process.exit(0);
   } catch (error) {
@@ -317,6 +431,8 @@ if (typeof module !== 'undefined' && module.exports) {
     buildEnemyNameMapping,
     resolveEnemyId,
     createEmptyBattlePage,
+    createSeparatorEntry,
+    createEmptySlotEntry,
     generateTroop,
     generateAllTroops,
   };
