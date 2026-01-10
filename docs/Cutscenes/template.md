@@ -6,7 +6,6 @@
 
 **Personagens Envolvidos:**
 
-* [Nome] (Evento ID: `[ID]`)
 * [Nome] (Actor ID: `[ID]`)
 * [Nome] (Evento ID: `[ID]`)
 
@@ -16,6 +15,20 @@
 * [Nome] (ID: `[ID_busto]`, arquivo: `Portraits/Principal/[Arquivo]`)
 
 ---
+
+## Regras
+
+* Sempre que faltar informacao, pergunte.
+* O comando Baloon (balao de expressao) nao pode ser executado entre os comando `start_dialog` e `finished_dialog`.
+* Durante os dialogos, expressoes dos atores devem ser representados por alteracoes no busto.
+* Colocar um "Inicio" e "Fim" de dialogo antes de colocar ou tirar os bustos.
+* Sempre que um comando de `move to`, `inivisibilidade` ou `turn` for usado, os bustos devem ser tirados da tela.
+Os busto do personagem correspondente sempre deve aparecer quando ele falar.
+* Sempre aplicar Wait em comandos de Rota de Movimento. Se tiverem varios comandos de Rota de movimentos seguidos, aplique o Wait no apenas ultimo da sequencia.
+* Toda acao de rota de movimento seguida uma da outra e com o mesmo personagem, deixa-as em um unico comando.
+* Falas devem estar em portugues e com acento quando necessario.
+* Sempre analise a necessidade do `Auto-Reverse` em `h_mirror` para os bustos.
+* O arquivo de saída deve ter o Nome da Cena e "Implementacao".
 
 ## Roteiro de Ações - Beat por Beat
 
@@ -27,17 +40,22 @@
 | `nome_da_cena` | `sistema` | `switch` | `ID, on/off` | `false` | |
 | `nome_da_cena` | `Personagem` | `talk` | `Texto do dialogo...` | `true` | |
 | `nome_da_cena` | `bust` | `exit` | `ID_busto, offsetX=+200, offsetY=0, easing=InSine, duration=20` | `true` | |
-| `nome_da_cena` | `Personagem` | `move` | `x,y (rota; turn toward player)` | `true` | |
+| `nome_da_cena` | `Personagem` | `move to` | `x,y (rota; turn toward player)` | `true` | |
 | `nome_da_cena` | `sistema` | `choice` | `ID_escolha (opcoes: opcao1, opcao2)` | `true` | `Opcao: opcao1` |
 | `nome_da_cena` | `sistema` | `name input` | `Actor ID, max N` | `true` | `Opcao: opcao2` |
 | `nome_da_cena` | `sistema` | `quest` | `MetodoDeQuest("idQuest", valor)` | `false` | |
-| `nome_da_cena` | `sistema` | `variavel` | `ID = valor` | `false` | |
+| `nome_da_cena` | `sistema` | `var` | `ID, valor` | `false` | |
 | `nome_da_cena` | `camera` | `cinematic` | `false` | `true` | |
 
 ---
 
 ## Referências Rápidas de Comandos (Cutscene Director Pro)
 
+### Mensagem
+
+* **Exibir Mensagem:** `talk` | *Detalhes:* `"Texto entre aspas"` (Obrigatorio aspas se usar virgula)
+* **Exibir Escolhas:** `choice` | *Detalhes:* `ID_escolha (opcoes: opcao1, opcao2)`
+ 
 ### Câmera & Visual - Plugin "Visu MZ"
 
 * **Foco:** `focus on` | *Detalhes:* `character_id`
@@ -49,14 +67,16 @@
 
 ### Personagem
 
-* **Mover:** `move` | *Detalhes:* `x,y`
-* **Teleportar:** `teleport` | *Detalhes:* `x,y`
-* **Virar:** `turn` | *Detalhes:* `up`, `down`, `left`, `right`
-* **Falar:** `talk` | *Detalhes:* `"Texto entre aspas"` (Obrigatorio aspas se usar virgula)
+* **Invisibilidade:** `invisibilidade` | *Detalhes:* `on` ou `off`
 * **Balão:** `balloon` | *Detalhes:* ID do icone (1-8)
-* **Transparência:** `transparent` | *Detalhes:* `true` ou `false`
 
-### Bustos - Plugin "NPV PicturesBusts"
+### Movimento
+
+* **Mover:** `move to` | *Detalhes:* `x,y`
+* **Deslocamento do Mapa:** `map_position` | *Detalhes:* `x,y`
+* **Virar:** `turn` | *Detalhes:* `up`, `down`, `left`, `right` 
+
+### Bustos - Plugin "VNPicturesBusts"
 
 * **Adicionar:** `enter` | *Detalhes:* `filename, ID_bust, position`
 * **Trocar:** `change` | *Detalhes:* `filename, ID_bust`
@@ -73,10 +93,4 @@
 * **Variável:** `var` | *Detalhes:* `ID, valor`
 * **Switch:** `switch` | *Detalhes:* `ID, on/off`
 * **Common Event:** `callCommon` | *Detalhes:* `ID`
-* **Espera Manual:** `wait` | *Detalhes:* `frames`
-
-### Regras
-
-* Não pode haver o comando Baloon (balão de expressão) durante os diálogos, devem ser usados somente antes ou depois de um diálogo iniciado.
-* Durante os diálogos, expressões dos atores devem ser representados por alterações no busto.
-* Colocar um "Início" e "Fim" de diálogo antes de colocar ou tirar os bustos.
+* **Espera Manual:** `wait` | *Detalhes:* `frames`.
