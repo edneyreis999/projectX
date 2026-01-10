@@ -29,12 +29,12 @@
   },
   {
     "id": 2,
-    "name": "",
-    "battlerName": "",
+    "name": "Lobo Jovem",
+    "battlerName": "Lobo_Jovem",
     "battlerHue": 0,
-    "exp": 0,
-    "gold": 0,
-    "params": [1, 0, 0, 0, 0, 0, 0, 0],
+    "exp": 8,
+    "gold": 5,
+    "params": [70, 0, 12, 12, 12, 12, 12, 12],
     "actions": [
       {
         "skillId": 1,
@@ -56,12 +56,12 @@
   },
   {
     "id": 3,
-    "name": "",
-    "battlerName": "",
+    "name": "Goblin Saqueador",
+    "battlerName": "Goblin_Saqueador",
     "battlerHue": 0,
-    "exp": 0,
-    "gold": 0,
-    "params": [1, 0, 0, 0, 0, 0, 0, 0],
+    "exp": 24,
+    "gold": 15,
+    "params": [110, 0, 16, 16, 16, 16, 16, 16],
     "actions": [
       {
         "skillId": 1,
@@ -83,12 +83,12 @@
   },
   {
     "id": 4,
-    "name": "",
-    "battlerName": "",
+    "name": "Lobo de Gelo",
+    "battlerName": "Lobo_de_Gelo",
     "battlerHue": 0,
-    "exp": 0,
-    "gold": 0,
-    "params": [1, 0, 0, 0, 0, 0, 0, 0],
+    "exp": 32,
+    "gold": 20,
+    "params": [130, 0, 18, 18, 18, 18, 18, 18],
     "actions": [
       {
         "skillId": 1,
@@ -110,12 +110,12 @@
   },
   {
     "id": 5,
-    "name": "",
-    "battlerName": "",
+    "name": "Bandido Anão Renegado",
+    "battlerName": "Bandido_Anao_Renegado",
     "battlerHue": 0,
-    "exp": 0,
-    "gold": 0,
-    "params": [1, 0, 0, 0, 0, 0, 0, 0],
+    "exp": 40,
+    "gold": 25,
+    "params": [150, 0, 20, 20, 20, 20, 20, 20],
     "actions": [
       {
         "skillId": 1,
@@ -137,12 +137,12 @@
   },
   {
     "id": 6,
-    "name": "",
-    "battlerName": "",
+    "name": "Lobo Alpha de Gelo",
+    "battlerName": "Lobo_Alpha_de_Gelo",
     "battlerHue": 0,
-    "exp": 0,
-    "gold": 0,
-    "params": [1, 0, 0, 0, 0, 0, 0, 0],
+    "exp": 40,
+    "gold": 25,
+    "params": [225, 0, 30, 30, 30, 30, 30, 30],
     "actions": [
       {
         "skillId": 1,
