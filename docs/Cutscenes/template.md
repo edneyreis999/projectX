@@ -16,20 +16,6 @@
 
 ---
 
-## Regras
-
-* Sempre que faltar informacao, pergunte.
-* O comando Baloon (balao de expressao) nao pode ser executado entre os comando `start_dialog` e `finished_dialog`.
-* Durante os dialogos, expressoes dos atores devem ser representados por alteracoes no busto.
-* Colocar um "Inicio" e "Fim" de dialogo antes de colocar ou tirar os bustos.
-* Sempre que um comando de `move to`, `inivisibilidade` ou `turn` for usado, os bustos devem ser tirados da tela.
-Os busto do personagem correspondente sempre deve aparecer quando ele falar.
-* Sempre aplicar Wait em comandos de Rota de Movimento. Se tiverem varios comandos de Rota de movimentos seguidos, aplique o Wait no apenas ultimo da sequencia.
-* Toda acao de rota de movimento seguida uma da outra e com o mesmo personagem, deixa-as em um unico comando.
-* Falas devem estar em portugues e com acento quando necessario.
-* Sempre analise a necessidade do `Auto-Reverse` em `h_mirror` para os bustos.
-* O arquivo de saída deve ter o Nome da Cena e "Implementacao".
-
 ## Roteiro de Ações - Beat por Beat
 
 | Cena | Personagem | Acao - movimento do personagem | Detalhes (parametros) | esperar (true/false) | Notas de Direcao |
