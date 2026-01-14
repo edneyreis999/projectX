@@ -1,0 +1,653 @@
+{
+  "autoplayBgm": false,
+  "autoplayBgs": false,
+  "battleback1Name": "",
+  "battleback2Name": "",
+  "bgm": { "name": "", "pan": 0, "pitch": 100, "volume": 90 },
+  "bgs": { "name": "", "pan": 0, "pitch": 100, "volume": 90 },
+  "disableDashing": false,
+  "displayName": "",
+  "encounterList": [],
+  "encounterStep": 30,
+  "height": 13,
+  "note": "",
+  "parallaxLoopX": false,
+  "parallaxLoopY": false,
+  "parallaxName": "",
+  "parallaxShow": true,
+  "parallaxSx": 0,
+  "parallaxSy": 0,
+  "scrollType": 0,
+  "specifyBattleback": false,
+  "tilesetId": 9,
+  "width": 17,
+  "data": [
+    2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912,
+    2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912,
+    2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912,
+    2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912,
+    2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912,
+    2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912,
+    2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 2912, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+  ],
+  "events": [
+    null,
+    {
+      "id": 1,
+      "name": "NPC Historia",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "People1", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [1, 1, 0, 0, 1] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": true,
+            "variableValue": 1
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "People1", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 4,
+      "y": 9
+    },
+    {
+      "id": 2,
+      "name": "Rheed",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 1
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Reed", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 3,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": true,
+            "variableValue": 1
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Reed", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Principal/Reed final",
+                  "Origin:str": "Bust",
+                  "Position:num": "5",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Reed final"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 5"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Olha s� quem chegou atrasado! A gente estava te esperando..."] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\"]",
+                  "EndOffsetX:eval": "-200",
+                  "EndOffsetY:eval": "+0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\"]"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                2,
+                { "list": [{ "code": 45, "parameters": ["Move to: 12,9"], "indent": null }, { "code": 25, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
+              ]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 12,9"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 25, "indent": null }] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Principal/Reed final",
+                  "Origin:str": "Bust",
+                  "Position:num": "5",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Reed final"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 5"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Humm... acho que j� vi voc� antes! Seu nome � Dulgarin, certo?"] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\"]",
+                  "EndOffsetX:eval": "-200",
+                  "EndOffsetY:eval": "+0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\"]"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "PKD_VisualChoices_MZ",
+                "OpenVisualChoice",
+                "Visual Choices",
+                { "menuId": "qualSeuNome", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "", "source": "Plugin parameters" }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Group ID = qualSeuNome"] },
+            { "code": 657, "indent": 0, "parameters": ["Position type = 0"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = {\"x:int\":\"0\",\"y:int\":\"0\"}"] },
+            { "code": 657, "indent": 0, "parameters": ["Header Text = "] },
+            { "code": 657, "indent": 0, "parameters": ["Settings from = Plugin parameters"] },
+            { "code": 102, "indent": 0, "parameters": [["qualSeuNome1", "qualSeuNome2"], 1, 0, 2, 0] },
+            { "code": 402, "indent": 0, "parameters": [0, "qualSeuNome1"] },
+            {
+              "code": 357,
+              "indent": 1,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Principal/Reed final",
+                  "Origin:str": "Bust",
+                  "Position:num": "9",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 1, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Reed final"] },
+            { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 1, "parameters": ["Screen Position = 9"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 1, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 1, "parameters": [43, 43, 0] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 1, "parameters": ["Aha! Eu sabia! Parece que a mem�ria deste velho an�o ainda funciona bem!"] },
+            {
+              "code": 357,
+              "indent": 1,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "2",
+                  "PictureName:str": "Portraits/Principal/CriancaOrc_",
+                  "Origin:str": "Bust",
+                  "Position:num": "1",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 1, "parameters": ["Picture ID = 2"] },
+            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/CriancaOrc_"] },
+            { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 1, "parameters": ["Screen Position = 1"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 1, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto"] },
+            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 1, "parameters": [44, 44, 0] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 1, "parameters": ["Como voc� sabia o meu nome?!"] },
+            { "code": 121, "indent": 1, "parameters": [43, 43, 0] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 1, "parameters": ["Sou um contador de hist�rias! Conhe�o bem os habitantes de toda Daratrine!!"] },
+            {
+              "code": 357,
+              "indent": 1,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\",\"2\"]",
+                  "EndOffsetX:eval": "+200",
+                  "EndOffsetY:eval": "-0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 1, "parameters": ["Picture ID(s) = [\"1\",\"2\"]"] },
+            { "code": 657, "indent": 1, "parameters": ["End Offset X = +200"] },
+            { "code": 657, "indent": 1, "parameters": ["End Offset Y = -0"] },
+            { "code": 657, "indent": 1, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 1, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 1, "parameters": ["Auto-Erase? = true"] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 402, "indent": 0, "parameters": [1, "qualSeuNome2"] },
+            {
+              "code": 357,
+              "indent": 1,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "2",
+                  "PictureName:str": "Portraits/Principal/CriancaOrc_",
+                  "Origin:str": "Bust",
+                  "Position:num": "5",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 1, "parameters": ["Picture ID = 2"] },
+            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/CriancaOrc_"] },
+            { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 1, "parameters": ["Screen Position = 5"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 1, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto"] },
+            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 1, "parameters": [44, 44, 0] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 1, "parameters": ["Voc� quase acertou, miseravi! Eu disse quase. S� errou a pron�ncia, todas as letras e a pessoa. N�o sou Dulgarin, meu nome �..."] },
+            {
+              "code": 357,
+              "indent": 1,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"2\"]",
+                  "EndOffsetX:eval": "-200",
+                  "EndOffsetY:eval": "+0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 1, "parameters": ["Picture ID(s) = [\"2\"]"] },
+            { "code": 657, "indent": 1, "parameters": ["End Offset X = -200"] },
+            { "code": 657, "indent": 1, "parameters": ["End Offset Y = +0"] },
+            { "code": 657, "indent": 1, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 1, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 1, "parameters": ["Auto-Erase? = true"] },
+            { "code": 303, "indent": 1, "parameters": [1, 8] },
+            {
+              "code": 357,
+              "indent": 1,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Principal/Reed final",
+                  "Origin:str": "Bust",
+                  "Position:num": "5",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 1, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Reed final"] },
+            { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 1, "parameters": ["Screen Position = 5"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 1, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 1, "parameters": [43, 43, 0] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 1, "parameters": ["� um prazer te conhecer, \\N[1]! Agora, voltando � nossa hist�ria..."] },
+            {
+              "code": 357,
+              "indent": 1,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\"]",
+                  "EndOffsetX:eval": "-200",
+                  "EndOffsetY:eval": "+0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 1, "parameters": ["Picture ID(s) = [\"1\"]"] },
+            { "code": 657, "indent": 1, "parameters": ["End Offset X = -200"] },
+            { "code": 657, "indent": 1, "parameters": ["End Offset Y = +0"] },
+            { "code": 657, "indent": 1, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 1, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 1, "parameters": ["Auto-Erase? = true"] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 404, "indent": 0, "parameters": [] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                2,
+                { "list": [{ "code": 45, "parameters": ["Move to: 8,9"], "indent": null }, { "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
+              ]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 8,9"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Principal/Reed final",
+                  "Origin:str": "Bust",
+                  "Position:num": "5",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Reed final"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 5"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": ["Ah, Daratrine! Como eu amo essa cidade! Voc�s sabiam que este lugar j� foi nada mais do que um ref�gio para soldados feridos? Por pouco, n�o fomos riscados do mapa!"]
+            },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Antes de qualquer coisa, preciso contar a hist�ria de Gildrat, o Imp�rio dos An�es!"] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Essa hist�ria come�a com um an�o cabe�a dura, chamado Thorin!"] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Vamos, feche os olhos! E deixe essa antiga po��o te transportar para a hist�ria."] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\"]",
+                  "EndOffsetX:eval": "-200",
+                  "EndOffsetY:eval": "+0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\"]"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
+            { "code": 355, "indent": 0, "parameters": ["SQSM.ShowDescriptionForQuest(\"assistirNoiteHistoria\", 3);"] },
+            { "code": 655, "indent": 0, "parameters": ["SQSM.CompleteQuest(\"assistirNoiteHistoria\");"] },
+            { "code": 123, "indent": 0, "parameters": ["A", 0] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 3,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Reed", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 3,
+          "walkAnime": true
+        }
+      ],
+      "x": 8,
+      "y": 9
+    }
+  ]
+}

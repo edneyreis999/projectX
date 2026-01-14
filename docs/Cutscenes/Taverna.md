@@ -1,6 +1,6 @@
 ﻿# Design de Cutscene
 
-**Descrição:** Conjunto de cenas que acontecem em um curto perÃ­odo de tempo, com o jogador podendo ou nÃ£o interagir e fazer escolhas.
+**Descrição:** Conjunto de cenas que acontecem em um curto perí­odo de tempo, com o jogador podendo ou não interagir e fazer escolhas.
 **Cutscene:** Assinando contrato.
 **Mapa onde acontece:** Taverna
 **Personagens Envolvidos:**
@@ -11,6 +11,11 @@
 * [Filena] (ID: `04`)
 
 ---
+
+## Observações
+
+* Até então, o personagem Durgan, o taverneiro da cena, tinha outro nome dentro do RPGmaker e banco de dados. Você precisará fazer a substituição.
+* A personagem Filena até então não fazia parte dessa cena, você precisará implementá-la.
 
 ## 🎞️ Roteiro de Ações - Beat por Beat
 
@@ -41,6 +46,17 @@
 | `Filena_se_retira` | `Filena` | `move` | `9,13` | `true` | Filena sai da Taverna | |
 
 ---
+
+## Regras
+
+* Sempre que faltar informação, pergunte.
+* O comando Balão (balloon de expressao) não pode ser executado entre os comandos `start_dialog` e `finished_dialog`.
+* Durante os diálogos, as expressões dos atores devem ser representadas por alterações no busto.
+* Sempre que um comando de `move`, `transparent` ou `turn` for usado, os bustos devem sair da tela.
+* O busto do personagem correspondente sempre deve aparecer quando ele falar.
+* Sempre aplicar `wait` quando um balão for usado antes de um busto entrar em cena.
+* Sempre aplicar `wait` em comandos de rota de movimento; se houver varios comandos de rota seguidos, aplique o `wait` apenas no último da sequência.
+* Toda ação de rota de movimento seguida e com o mesmo personagem deve ser condensada em um único comando.
 
 ## Referências Rápidas de Comandos (Cutscene Director Pro)
 
