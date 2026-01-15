@@ -544,25 +544,25 @@
                 "BASIC: Enter Bust",
                 {
                   "PictureID:eval": "2",
-                  "PictureName:str": "Actor1_7",
+                  "PictureName:str": "Portraits/Kravens/Expedicionario5",
                   "Origin:str": "Bust",
                   "Position:num": "9",
                   "StartOffsetX:eval": "-200",
                   "StartOffsetY:eval": "+0",
                   "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
+                  "HorzMirror:str": "Auto",
                   "Duration:eval": "20"
                 }
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Actor1_7"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Kravens/Expedicionario5"] },
             { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = 9"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
             { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
@@ -718,16 +718,18 @@
             { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
+            { "code": 122, "indent": 0, "parameters": [32, 32, 0, 0, 6] },
+            { "code": 230, "indent": 0, "parameters": [60] },
             {
               "code": 205,
               "indent": 0,
               "parameters": [
                 5,
-                { "list": [{ "code": 45, "parameters": ["Move to: 2,06"], "indent": null }, { "code": 2, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
+                { "list": [{ "code": 45, "parameters": ["Move to: 2,6"], "indent": null }, { "code": 18, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
               ]
             },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 2,06"], "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 2, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 2,6"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 18, "indent": null }] },
             {
               "code": 357,
               "indent": 0,
@@ -777,7 +779,7 @@
                 "Basic_ExitBusts",
                 "BASIC: Exit Bust(s)",
                 {
-                  "PictureID:arrayeval": "[\"1\"]",
+                  "PictureID:arrayeval": "[\"3\"]",
                   "EndOffsetX:eval": "-200",
                   "EndOffsetY:eval": "+0",
                   "EasingType:str": "InSine",
@@ -787,7 +789,7 @@
                 }
               ]
             },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\"]"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"3\"]"] },
             { "code": 657, "indent": 0, "parameters": ["End Offset X = -200"] },
             { "code": 657, "indent": 0, "parameters": ["End Offset Y = +0"] },
             { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
@@ -808,7 +810,7 @@
                 "BASIC: Enter Bust",
                 {
                   "PictureID:eval": "1",
-                  "PictureName:str": "Portraits/Principal/Thorin",
+                  "PictureName:str": "Portraits/Principal/thorin_apaixonado",
                   "Origin:str": "Bust",
                   "Position:num": "0",
                   "StartOffsetX:eval": "-200",
@@ -820,7 +822,7 @@
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Thorin"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/thorin_apaixonado"] },
             { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = 0"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
@@ -902,7 +904,7 @@
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [45, 45, 0] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Thorin"] },
-            { "code": 401, "indent": 0, "parameters": ["Conta outra..."] },
+            { "code": 401, "indent": 0, "parameters": ["Conta outra, seu tapado..."] },
             {
               "code": 357,
               "indent": 0,
@@ -928,6 +930,22 @@
             { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                2,
+                {
+                  "list": [{ "code": 45, "parameters": ["Move to: 9,12"], "indent": null }, { "code": 39, "indent": null }, { "code": 37, "indent": null }, { "code": 0 }],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 9,12"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 39, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 37, "indent": null }] },
             { "code": 122, "indent": 0, "parameters": [30, 30, 0, 0, 1] },
             { "code": 121, "indent": 0, "parameters": [32, 32, 0] },
             { "code": 123, "indent": 0, "parameters": ["A", 0] },

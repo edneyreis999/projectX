@@ -23,6 +23,18 @@
 * A personagem Filena até então não fazia parte dessa cena, você precisará implementá-la.
 * Sempre que for usar o plugin de bustos, há um exemplo que você pode seguir como referência no mapa 05 - frontend\data\Map005.json
 
+## Váriáveis Utilizadas na cena
+
+* hora_de_crescer ≥ 5
+* Dentro do evento em que a personagem Filena está, a variável pré-programada deve ser hora_de_crescer ≥ 6
+* Antes da personagem Filena entrar em cena, a variável hora_de_crescer ≥ 5 deve ser alterada para hora_de_crescer ≥ 6.
+
+## Posições de Bustos
+
+* Os bustos que aparecem sozinhos devem sempre estar na posição 5.
+* Os bustos de Thorin devem sempre estar na posição 1.
+* Para os demais bustos, com base no contexto, utilize sempre as posições 3, 7 e 9.
+
 ## 🎞️ Roteiro de Ações - Beat por Beat
 
 | Cena | Personagem | Ação - movimento do personagem | Detalhes (parâmetros) | esperar (true/false) | Notas de Direção | Falas |
@@ -46,7 +58,7 @@
 | `Thorin_arranja_outra_desculpa` | `Thorin` | `talk` | `Aquilo foi só força de expressão. Como eu já disse, meu braço ainda dói, mas, não ferir o orgulho do povo anão de sermos os mais resistentes trabalhadores e, também sou incapaz de abandonar uma amiga!` | `true` | Thorin apela para o sentimentalismo | |
 | `Foco_em_Filena` | `camera` | `foco` |  | `true` | Thorin olha para Filena e a câmera foca na expressão dela | |
 | `Balastrus_aceita_os_contratos` | `Balastrus` | `talk` | `Como quiserem. Mas eu exijo que trabalhem e muito, se custarem uma drákel sequer do meu lucro porque estão fazendo corpo mole, vão pagar muito caro por isso. Vão até a Estrada do Cão-luar, entreguem os contratos assinados para Brok, meu lacaio que estará esperando por vocês. Ele lhes entregará os materiais que precisam. Agora, com licença.` | `true` | Balastrus se prepara para sair | |
-| `Balastrus_se_retira` | `Balastrus` | `move` | `9,13` | `true` | Balastrus sai da Taverna | |
+| `Balastrus_se_retira` | `Balastrus` | `move` `invisibilidade on` `atravessar on`| `9,12` | `true` | Balastrus sai da Taverna | |
 | `Thorin_conversa_Filena` | `Thorin` | `talk` | `Eu não esperava ver você aqui! Mas que bela coincidência!.` | `true` | Thorin tenta puxar assunto com Filena | |
 | `Filena_responde_Thorin` | `Filena` | `talk` | `Coincidência?! Não existem coincidências, Thorin. O que existe são filhinhos de papai como você que não precisam trabalhar na vida e encaram tudo como uma nova e grande aventura, uma nova oportunidade para se provar, mas os meus, os anões pobres e esquecidos de Gildrat, estão morrendo de fome. Deve ser muito bom ter nascido rico, mas o mundo não gira em torno e você. Este trabalha é uma merda, é quase um trabalho-escravo, só não me restava mais escolha...` | `true` | Filena conversa com Thorin sobre o motivo de aceitar | |
 | `Filena_se_retira` | `Filena` | `move` | `9,13` | `true` | Filena sai da Taverna | |
@@ -63,6 +75,7 @@
 * Sempre aplicar `wait` quando um balão for usado antes de um busto entrar em cena.
 * Sempre aplicar `wait` em comandos de rota de movimento; se houver varios comandos de rota seguidos, aplique o `wait` apenas no último da sequência.
 * Toda ação de rota de movimento seguida e com o mesmo personagem deve ser condensada em um único comando.
+* Sempre utilizar antes de cada fala no sistema de bustos os Switches de Número 43 a 46, que são selecionados com base no ID de cada busto.
 
 ## Referências Rápidas de Comandos (Cutscene Director Pro)
 
@@ -96,6 +109,3 @@
 * **Switch:** `switch` | [cite_start]*Detalhes:* `ID, on/off` [cite: 63]
 * **Common Event:** `callCommon` | [cite_start]*Detalhes:* `ID` [cite: 64]
 * **Espera Manual:** `wait` | [cite_start]*Detalhes:* `frames` [cite: 66]
-
-falar dos switches de fala 01 - 02 - dos ids de bustos durante as falas
-Dizer os screen position
