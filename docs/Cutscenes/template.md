@@ -20,7 +20,6 @@
 
 | Cena | Personagem | Acao - movimento do personagem | Detalhes (parametros) | esperar (true/false) | Notas de Direcao |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `nome_da_cena` | `camera` | `cinematic` | `true` | `true` | |
 | `nome_da_cena` | `camera` | `bgm` | `play, NOME_MUSICA, 70, true` | `true` | |
 | `nome_da_cena` | `bust` | `enter` | `Arquivo, ID_busto, posicao, offsetX=-200, offsetY=0, easing=OutSine, mirror=Auto-Reverse, duration=20` | `true` | |
 | `nome_da_cena` | `sistema` | `switch` | `ID, on/off` | `false` | |
@@ -37,6 +36,10 @@
 
 ## Referências Rápidas de Comandos (Cutscene Director Pro)
 
+### Controle de Fluxo
+
+* **Comentário:** `comment` | *Detalhes:* `Comentário em aspas`
+
 ### Mensagem
 
 * **Exibir Mensagem:** `talk` | *Detalhes:* `"Texto entre aspas"` (Obrigatorio aspas se usar virgula)
@@ -46,7 +49,6 @@
 
 * **Foco:** `focus on` | *Detalhes:* `character_id`
 * **Zoom:** `zoom` ou `focus zoom` | *Detalhes:* `in` ou `out`
-* **Barras Pretas:** `cinematic` | *Detalhes:* `true` (ativar) ou `false` (desativar)
 * **Tremer:** `shake` | *Detalhes:* (vazio)
 * **Flash:** `flash` | *Detalhes:* `r,g,b,duration` (ex: `255,255,255,30`)
 * **Tom:** `tone` | *Detalhes:* `r,g,b,gamma,duration`
@@ -80,3 +82,4 @@
 * **Switch:** `switch` | *Detalhes:* `ID, on/off`
 * **Common Event:** `callCommon` | *Detalhes:* `ID`
 * **Espera Manual:** `wait` | *Detalhes:* `frames`.
+
