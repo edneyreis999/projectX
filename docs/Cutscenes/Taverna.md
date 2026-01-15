@@ -2,7 +2,7 @@
 
 **Descrição:** Conjunto de cenas que acontecem em um curto perí­odo de tempo, com o jogador podendo ou não interagir e fazer escolhas.
 **Cutscene:** Assinando contrato.
-**Mapa onde acontece:** Taverna
+**Mapa onde acontece:** Taverna - frontend\data\Map012.json
 **Personagens Envolvidos:**
 
 * [Balastrus] (ID: `08`)
@@ -10,12 +10,18 @@
 * [Durgan] (ID: `?`)
 * [Filena] (ID: `04`)
 
----
+**Bustos Envolvidos:**
+
+* [Balastrus] (ID: `?`, arquivo: `Portraits/Principal/`)
+* [Thorin] (ID: `?`, arquivo: `Portraits/Principal/`)
+* [Durgan] (ID: `?`, arquivo: `Portraits/Principal/`)
+* [Filena] (ID: `?`, arquivo: `Portraits/Principal/`)
 
 ## Observações
 
 * Até então, o personagem Durgan, o taverneiro da cena, tinha outro nome dentro do RPGmaker e banco de dados. Você precisará fazer a substituição.
 * A personagem Filena até então não fazia parte dessa cena, você precisará implementá-la.
+* Sempre que for usar o plugin de bustos, há um exemplo que você pode seguir como referência no mapa 05 - frontend\data\Map005.json
 
 ## 🎞️ Roteiro de Ações - Beat por Beat
 
@@ -90,3 +96,6 @@
 * **Switch:** `switch` | [cite_start]*Detalhes:* `ID, on/off` [cite: 63]
 * **Common Event:** `callCommon` | [cite_start]*Detalhes:* `ID` [cite: 64]
 * **Espera Manual:** `wait` | [cite_start]*Detalhes:* `frames` [cite: 66]
+
+falar dos switches de fala 01 - 02 - dos ids de bustos durante as falas
+Dizer os screen position
