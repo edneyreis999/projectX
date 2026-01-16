@@ -75,7 +75,7 @@
 * Sempre aplicar `wait` quando um balão for usado antes de um busto entrar em cena.
 * Sempre aplicar `wait` em comandos de rota de movimento; se houver varios comandos de rota seguidos, aplique o `wait` apenas no último da sequência.
 * Toda ação de rota de movimento seguida e com o mesmo personagem deve ser condensada em um único comando.
-* Sempre utilizar antes de cada fala no sistema de bustos os Switches de Número 43 a 46, que são selecionados com base no ID de cada busto.
+* Sempre utilizar antes de cada fala no sistema de bustos os Switches de Número 43 a 46, que são selecionados com base no ID de cada busto. Sempre que o ID de busto for 1, o Switche usado será o 43, sempre que o busto tiver ID 2, o Switche 44, quando o busto usado tiver o ID 3, o Switche 45 deve estar ativo e, sempre que o busto utilizado corresponder ao ID 4, o Switche número 46 será obrigatório antes da fala daquele personagem.
 
 ## Referências Rápidas de Comandos (Cutscene Director Pro)
 
