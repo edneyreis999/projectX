@@ -1,4 +1,4 @@
-# 🎮 Narrative Structure Document (NSD) - Fluxo Visual De Cenas
+﻿# 🎮 Narrative Structure Document (NSD) - Fluxo Visual De Cenas
 
 ## 📄 Quest: A Travessia Perigosa
 
@@ -9,16 +9,16 @@
 - **Importância na campanha**: Main  
 - **Arco narrativo**: Recusa do Chamado  
 - **Quest anterior**: Minerador Aprendiz  
-- **Conflito central**: Tusk pressiona a equipe a partir em meio a uma tempestade de neve para apresentar os resultados da expedição, enquanto Thorin e os guardas enfrentam as consequências dessa decisão.  
+- **Conflito central**: Balastrus pressiona a equipe a partir em meio a uma tempestade de neve para apresentar os resultados da expedição, enquanto Thorin e os guardas enfrentam as consequências dessa decisão.  
 - **Objetivo narrativo global**: Escalar a tensão do mistério sobre as expedições, reforçar o aprendizado do jogador com batalhas desafiadoras e aprofundar os laços de Thorin com os guardas.  
 - **Premissa resumida**: Thorin e seu grupo desafiam a nevasca para retornar de Kravens com minérios; a quest termina após uma avalanche que bloqueia os caminhos, separa o grupo e força Thorin com a Guarda de Ferro a tomar outro caminho.  
-- **Resumo**: A quest começa com uma discussão acalorada na clareira de Kravens sobre a iminente tempestade de neve. Tusk insiste em partir imediatamente, ameaçando os membros que se recusarem com a perda de pagamento. O grupo, incluindo Thorin, Kilin, Mhordred, Filena e Borin, partem contrariados. Durante a travessia, uma forte avalanche separa o grupo. Thorin, Kilin, Mhordred, Filena e Tusk ficam juntos, mas são forçados a desviar por uma mina desconhecida, a Mina do Esgoto.
+- **Resumo**: A quest começa com uma discussão acalorada na clareira de Kravens sobre a iminente tempestade de neve. Balastrus insiste em partir imediatamente, ameaçando os membros que se recusarem com a perda de pagamento. Filena apoia Kilin e lembra que precisa do pagamento, mas nao aceita morrer na neve. O grupo, incluindo Thorin, Kilin, Mhordred, Filena e Borin, partem contrariados. Durante a travessia, uma forte avalanche separa o grupo. Thorin, Kilin, Mhordred, Filena e Balastrus ficam juntos, mas são forçados a desviar por uma mina desconhecida, a Mina do Esgoto.
 - **Locais principais**:  
   - Clareira de Kravens  
   - Mapamúndi (travessia sob nevasca)  
 - **NPCs principais**:  
   - Thorin  
-  - Tusk  
+  - Balastrus  
   - Kilin  
   - Mhordred  
   - Filena  
@@ -41,7 +41,7 @@
 Quest: A Travessia Perigosa
  ├── Cena 1: Clareira de Kravens — Premissa: Discussão tensa sobre a tempestade com múltiplas escolhas do jogador
  │      ├── Beat 1: Aviso dos mineradores sobre a tempestade (🎬)
- │      ├── Beat 2: Debate entre Tusk, guardas e mineradores (🎮) — múltiplas escolhas
+ │      ├── Beat 2: Debate entre Balastrus, guardas e mineradores (🎮) — múltiplas escolhas
  │      └── Beat 3: Decisão do grupo em partir ou esperar (🎬)
  ├── Cena 2: Travessia no Mapamúndi — Premissa: Retorno perigoso com batalhas fortalecidas
  │      ├── Beat 1: Início da travessia na tempestade (🎮)
@@ -53,8 +53,8 @@ Quest: A Travessia Perigosa
 
 | # | Nome da Cena                | Premissa resumida (expandida)                                                                                                                                                              |
 | - | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 1 | **Clareira de Kravens**     | Discussão tensa sobre a tempestade iminente; Kilin alerta Tusk sobre os riscos; jogador faz múltiplas escolhas para apoiar Kilin ou Tusk; Tusk ameaça retenção de pagamento para quem não partir. |
-| 2 | **Travessia no Mapamúndi**  | Retorno perigoso sob tempestade com batalhas contra inimigos fortalecidos; uma avalanche separa o grupo, forçando Thorin, Kilin, Mhordred, Filena e Tusk a encontrar um novo caminho pela Mina do Esgoto. |
+| 1 | **Clareira de Kravens**     | Discussão tensa sobre a tempestade iminente; Kilin alerta Balastrus sobre os riscos; jogador faz múltiplas escolhas para apoiar Kilin ou Balastrus; Balastrus ameaça retenção de pagamento para quem não partir. |
+| 2 | **Travessia no Mapamúndi**  | Retorno perigoso sob tempestade com batalhas contra inimigos fortalecidos; uma avalanche separa o grupo, forçando Thorin, Kilin, Mhordred, Filena e Balastrus a encontrar um novo caminho pela Mina do Esgoto. |
 
 #### Beats por Cena
 
@@ -62,19 +62,19 @@ Quest: A Travessia Perigosa
 
 | #  | Beat                                             | Descrição / Decisões do Jogador                        | Controle |
 | ---|-------------------------------------------------|-------------------------------------------------------|----------|
-| 1  | Aviso de Kilin                                   | Kilin, chefe da guarda real, alerta Tusk sobre a tempestade se formando e o perigo iminente.  | 🎬       |
-| 2  | Reação inicial do grupo                          | O grupo demonstra preocupação; muitos concordam com Kilin, mas alguns hesitam.               | 🎬       |
-| 3  | Discordância de Tusk                             | Tusk nega o perigo e afirma que a missão deve continuar para satisfazer Balastrus.          | 🎬       |
+| 1  | Aviso de Kilin                                   | Kilin, chefe da guarda real, alerta Balastrus sobre a tempestade se formando e o perigo iminente.  | 🎬       |
+| 2  | Reacao inicial do grupo                          | O grupo demonstra preocupacao; Filena apoia Kilin e lembra que precisa do pagamento, mas nao aceita morrer na neve.               | ??       |
+| 3  | Discordância de Balastrus                             | Balastrus nega o perigo e afirma que a missão deve continuar para cumprir o contrato.          | 🎬       |
 | 4  | Debate acirrado                                  | Jogador pode escolher:                                     | 🎮       |
 |     | — Apoiar Kilin (sugerir esperar a tempestade passar)       | Reforça a cautela e tenta convencer os outros a adiar a partida.                           |          |
-|     | — Apoiar Tusk (incitar a partida imediata)                    | Ajuda Tusk a pressionar o grupo a partir rapidamente.                                     |          |
-| 5  | Cartada final de Tusk                             | Tusk reafirma sua autoridade, lembra o acordo com Balastrus e ameaça retenção de pagamento para quem não partir. | 🎬       |
-| 6  | Decisão final do grupo                           | O grupo decide partir sob a pressão de Tusk, mesmo contrariado.                           | 🎬       |
+|     | — Apoiar Balastrus (incitar a partida imediata)                    | Ajuda Balastrus a pressionar o grupo a partir rapidamente.                                     |          |
+| 5  | Cartada final de Balastrus                             | Balastrus reafirma sua autoridade, lembra o acordo com Balastrus e ameaça retenção de pagamento para quem não partir. | 🎬       |
+| 6  | Decisão final do grupo                           | O grupo decide partir sob a pressão de Balastrus, mesmo contrariado.                           | 🎬       |
 
 **Decisão do Jogador:**
 
 - Apoiar Kilin (sugerir esperar a tempestade passar).
-- Apoiar Tusk (insistir na partida imediata).
+- Apoiar Balastrus (insistir na partida imediata).
 A escolha afeta apenas falas e reações; o grupo parte assim mesmo.
 
 ---
@@ -85,7 +85,7 @@ A escolha afeta apenas falas e reações; o grupo parte assim mesmo.
 | ---|------------------------------------------|-----------------------------------------------------------------------------------------------------|----------|
 | 1  | Início da travessia                      | O grupo começa a travessia sob forte tempestade de neve, enfrentando o clima severo.                | 🎮       |
 | 2  | Encontros com inimigos fortalecidos     | O jogador enfrenta inimigos já conhecidos, porém em versões mais poderosas e agressivas.            | 🎮       |
-| 3  | Avalanche e Separação                    | Uma forte avalanche separa o grupo. Thorin, Kilin, Mhordred, Filena e Tusk ficam juntos, mas isolados. Borin e os outros expedicionários ficam para trás. | 🎬       |
+| 3  | Avalanche e Separacao                    | Uma forte avalanche separa o grupo. Thorin, Kilin, Mhordred, Filena e Balastrus ficam juntos, mas isolados; Filena ampara Thorin e insiste em seguir. Borin e os outros expedicionarios ficam para tras. | ??       |
 | 4  | Novo Caminho                             | O grupo percebe que o caminho de volta para Gildrat está bloqueado, assim como o caminho para Kravens. A única opção é uma mina desconhecida, a Mina do Esgoto. | 🎬       |
 | 5  | Entrada na Mina do Esgoto                | O grupo entra na mina, dando início à próxima quest.                                                | 🎮       |
 
@@ -96,10 +96,10 @@ A escolha afeta apenas falas e reações; o grupo parte assim mesmo.
 | #  | Beat                                          | Descrição                                                                                                            | Controle |
 | ---|-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------|----------|
 | 1  | Chegada na Estrada do Cão Luar                 | O grupo chega com o tempo limpo após a tempestade; Balastrus os aguarda ansioso.                                      | 🎬       |
-| 2  | Organização da entrega                          | Balastrus e Tusk organizam o grupo em fila para entregar os minérios no baú de Kravens central.                      | 🎬       |
+| 2  | Organização da entrega                          | Balastrus e os capatazes organizam o grupo em fila para entregar os minérios no baú de Kravens central.                      | 🎬       |
 | 3  | Entrega dos Cravens                            | Jogador entrega manualmente os minérios Cravens (9 ou 10) no baú de Kravens; condição para avançar.                  | 🎮       |
 | 4  | Cenas condicionais após entrega dos Cravens   | Dependendo da posse e entrega do Sigmetal, ocorrem as seguintes situações:                                           | 🎬       |
-|     | — Se Tusk já tem o Sigmetal (ou recebe antes) | Tusk faz cena empolgada dizendo a Balastrus que ele encontrou o Sigmetal; Thorin reage, pois sabe que foi ele quem achou.|          |
+|     | — Se Balastrus já tem o Sigmetal (ou recebe antes) | Balastrus faz cena empolgada dizendo a Balastrus que ele encontrou o Sigmetal; Thorin reage, pois sabe que foi ele quem achou.|          |
 |     | — Se jogador entregou o Sigmetal no baú de Kravens ou diretamente para Balastrus | Balastrus analisa o Sigmetal, mantém silêncio, e o minério “finge que nada aconteceu”, mantendo o mistério.           |          |
 |     | — Se jogador não entregou o Sigmetal          | Após entrega dos Cravens, Balastrus conversa com Thorin e comenta enigmaticamente:                                   |          |
 |     |                                                | “Você está muito novo para carregar tanto peso nos bolsos... Mas tudo bem. Nem todo baú se abre no primeiro puxão.” |          |
@@ -108,7 +108,7 @@ A escolha afeta apenas falas e reações; o grupo parte assim mesmo.
 **Decisão do Jogador:**
 
 - Entregar a Balastrus.
-- Entregar a Tusk.
+- Entregar a Balastrus.
 - Guardar no baú de Kravens.
 - Não entregar a ninguém.
 Define `v_sigmetal_destino`; todos os Kravens são depositados no baú da expedição.
@@ -124,3 +124,4 @@ Define `v_sigmetal_destino`; todos os Kravens são depositados no baú da expedi
 | 3  | Diálogo interno opcional               | Caso o jogador visite o quarto do pai, Thorin fala consigo mesmo, questionando o paradeiro do pai.            | 🎮       |
 | 4  | Interação opcional com Sáparo Boca de Corneta | Thorin pode encontrar Sáparo e perguntar sobre o pai, expressando preocupação e frustração.                   | 🎮       |
 | 5  | Início do sonho final                  | Cutscene ou transição para o sonho com a mãe de Thorin, envolvendo o selo ancestral e mistério crescente.    | 🎬       |
+

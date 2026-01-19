@@ -2,11 +2,8 @@
   null,
   {
     "id": 1,
-    "members": [
-      { "enemyId": 1, "x": 336, "y": 436, "hidden": false },
-      { "enemyId": 1, "x": 480, "y": 436, "hidden": false }
-    ],
-    "name": "Goblin*2",
+    "name": "=== ESTRADA DO CÃO-LUAR ===",
+    "members": [],
     "pages": [
       {
         "conditions": {
@@ -23,18 +20,34 @@
           "turnEnding": false,
           "turnValid": false
         },
-        "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
         "span": 0
       }
     ]
   },
   {
     "id": 2,
+    "name": "Lobo Jovem x2",
     "members": [
-      { "enemyId": 2, "x": 337, "y": 436, "hidden": false },
-      { "enemyId": 2, "x": 480, "y": 436, "hidden": false }
+      {
+        "enemyId": 2,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 2,
+        "x": 354,
+        "y": 436,
+        "hidden": false
+      }
     ],
-    "name": "Gnomo*2",
     "pages": [
       {
         "conditions": {
@@ -51,18 +64,40 @@
           "turnEnding": false,
           "turnValid": false
         },
-        "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
         "span": 0
       }
     ]
   },
   {
     "id": 3,
+    "name": "Lobo Jovem x3",
     "members": [
-      { "enemyId": 3, "x": 337, "y": 436, "hidden": false },
-      { "enemyId": 3, "x": 479, "y": 436, "hidden": false }
+      {
+        "enemyId": 2,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 2,
+        "x": 354,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 2,
+        "x": 481,
+        "y": 436,
+        "hidden": false
+      }
     ],
-    "name": "Corvo*2",
     "pages": [
       {
         "conditions": {
@@ -79,15 +114,34 @@
           "turnEnding": false,
           "turnValid": false
         },
-        "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
         "span": 0
       }
     ]
   },
   {
     "id": 4,
-    "members": [{ "enemyId": 4, "x": 408, "y": 436, "hidden": false }],
-    "name": "Treant",
+    "name": "Goblin Saqueador x2",
+    "members": [
+      {
+        "enemyId": 3,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 3,
+        "x": 354,
+        "y": 436,
+        "hidden": false
+      }
+    ],
     "pages": [
       {
         "conditions": {
@@ -104,15 +158,40 @@
           "turnEnding": false,
           "turnValid": false
         },
-        "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
         "span": 0
       }
     ]
   },
   {
     "id": 5,
-    "members": [{ "enemyId": 5, "x": 408, "y": 436, "hidden": false }],
-    "name": "Hi_monstro",
+    "name": "Goblin Saqueador x3",
+    "members": [
+      {
+        "enemyId": 3,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 3,
+        "x": 354,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 3,
+        "x": 481,
+        "y": 436,
+        "hidden": false
+      }
+    ],
     "pages": [
       {
         "conditions": {
@@ -129,20 +208,40 @@
           "turnEnding": false,
           "turnValid": false
         },
-        "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
         "span": 0
       }
     ]
   },
   {
     "id": 6,
+    "name": "Lobo de Gelo x3",
     "members": [
-      { "enemyId": 1, "x": 231, "y": 436, "hidden": false },
-      { "enemyId": 2, "x": 354, "y": 436, "hidden": false },
-      { "enemyId": 1, "x": 477, "y": 436, "hidden": false },
-      { "enemyId": 2, "x": 600, "y": 436, "hidden": false }
+      {
+        "enemyId": 4,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 4,
+        "x": 354,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 4,
+        "x": 481,
+        "y": 436,
+        "hidden": false
+      }
     ],
-    "name": "Goblin*2, Gnomo*2",
     "pages": [
       {
         "conditions": {
@@ -159,20 +258,46 @@
           "turnEnding": false,
           "turnValid": false
         },
-        "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
         "span": 0
       }
     ]
   },
   {
     "id": 7,
+    "name": "Lobo de Gelo x4",
     "members": [
-      { "enemyId": 1, "x": 227, "y": 436, "hidden": false },
-      { "enemyId": 2, "x": 350, "y": 436, "hidden": false },
-      { "enemyId": 1, "x": 473, "y": 436, "hidden": false },
-      { "enemyId": 3, "x": 600, "y": 436, "hidden": false }
+      {
+        "enemyId": 4,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 4,
+        "x": 354,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 4,
+        "x": 481,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 4,
+        "x": 608,
+        "y": 436,
+        "hidden": false
+      }
     ],
-    "name": "Goblin*2, Gnomo, Corvo",
     "pages": [
       {
         "conditions": {
@@ -189,20 +314,40 @@
           "turnEnding": false,
           "turnValid": false
         },
-        "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
         "span": 0
       }
     ]
   },
   {
     "id": 8,
+    "name": "Bandido Anão Renegado x3",
     "members": [
-      { "enemyId": 6, "x": 191, "y": 375, "hidden": false },
-      { "enemyId": 6, "x": 307, "y": 444, "hidden": false },
-      { "enemyId": 6, "x": 475, "y": 444, "hidden": false },
-      { "enemyId": 6, "x": 613, "y": 396, "hidden": false }
+      {
+        "enemyId": 5,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 5,
+        "x": 354,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 5,
+        "x": 481,
+        "y": 436,
+        "hidden": false
+      }
     ],
-    "name": "Rebeldes",
     "pages": [
       {
         "conditions": {
@@ -217,17 +362,14 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": true
+          "turnValid": false
         },
         "list": [
-          { "code": 129, "indent": 0, "parameters": [5, 0, false] },
-          { "code": 101, "indent": 0, "parameters": ["Soldiers", 2, 0, 2, ""] },
-          { "code": 401, "indent": 0, "parameters": ["Thorin, cuidado!"] },
-          { "code": 339, "indent": 0, "parameters": [1, 5, 1, 0] },
-          { "code": 339, "indent": 0, "parameters": [1, 5, 1, 1] },
-          { "code": 339, "indent": 0, "parameters": [1, 5, 1, 2] },
-          { "code": 339, "indent": 0, "parameters": [1, 5, 1, 3] },
-          { "code": 0, "indent": 0, "parameters": [] }
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
         ],
         "span": 0
       }
@@ -235,8 +377,27 @@
   },
   {
     "id": 9,
-    "members": [],
-    "name": "--------------------",
+    "name": "Lobo Alpha de Gelo x1 + Lobo de Gelo x2",
+    "members": [
+      {
+        "enemyId": 6,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 4,
+        "x": 354,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 4,
+        "x": 481,
+        "y": 436,
+        "hidden": false
+      }
+    ],
     "pages": [
       {
         "conditions": {
@@ -253,19 +414,46 @@
           "turnEnding": false,
           "turnValid": false
         },
-        "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
         "span": 0
       }
     ]
   },
   {
     "id": 10,
+    "name": "Goblin Saqueador x2 + Bandido Anão Renegado x2",
     "members": [
-      { "enemyId": 10, "x": 107, "y": 345, "hidden": false },
-      { "enemyId": 10, "x": 103, "y": 444, "hidden": false },
-      { "enemyId": 10, "x": 104, "y": 241, "hidden": false }
+      {
+        "enemyId": 3,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 3,
+        "x": 354,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 5,
+        "x": 481,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 5,
+        "x": 608,
+        "y": 436,
+        "hidden": false
+      }
     ],
-    "name": "Lobo Comum*3",
     "pages": [
       {
         "conditions": {
@@ -282,19 +470,46 @@
           "turnEnding": false,
           "turnValid": false
         },
-        "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
         "span": 0
       }
     ]
   },
   {
     "id": 11,
+    "name": "Lobo de Gelo x2 + Lobo Jovem x2",
     "members": [
-      { "enemyId": 10, "x": 314, "y": 295, "hidden": false },
-      { "enemyId": 10, "x": 225, "y": 473, "hidden": false },
-      { "enemyId": 8, "x": 133, "y": 386, "hidden": false }
+      {
+        "enemyId": 4,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 4,
+        "x": 354,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 2,
+        "x": 481,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 2,
+        "x": 608,
+        "y": 436,
+        "hidden": false
+      }
     ],
-    "name": "Lobo Comum*3, Lobo Branco",
     "pages": [
       {
         "conditions": {
@@ -311,15 +526,21 @@
           "turnEnding": false,
           "turnValid": false
         },
-        "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
         "span": 0
       }
     ]
   },
   {
     "id": 12,
-    "members": [{ "enemyId": 9, "x": 191, "y": 376, "hidden": false }],
-    "name": "Urso Marrom",
+    "name": "",
+    "members": [],
     "pages": [
       {
         "conditions": {
@@ -336,19 +557,21 @@
           "turnEnding": false,
           "turnValid": false
         },
-        "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
         "span": 0
       }
     ]
   },
   {
     "id": 13,
-    "members": [
-      { "enemyId": 9, "x": 262, "y": 385, "hidden": false },
-      { "enemyId": 11, "x": 103, "y": 444, "hidden": false },
-      { "enemyId": 11, "x": 103, "y": 301, "hidden": false }
-    ],
-    "name": "Urso Marrom, Corvo*2",
+    "name": "",
+    "members": [],
     "pages": [
       {
         "conditions": {
@@ -365,19 +588,21 @@
           "turnEnding": false,
           "turnValid": false
         },
-        "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
         "span": 0
       }
     ]
   },
   {
     "id": 14,
-    "members": [
-      { "enemyId": 11, "x": 107, "y": 444, "hidden": false },
-      { "enemyId": 11, "x": 214, "y": 373, "hidden": false },
-      { "enemyId": 11, "x": 98, "y": 296, "hidden": false }
-    ],
-    "name": "Corvo*3",
+    "name": "",
+    "members": [],
     "pages": [
       {
         "conditions": {
@@ -394,18 +619,21 @@
           "turnEnding": false,
           "turnValid": false
         },
-        "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
         "span": 0
       }
     ]
   },
   {
     "id": 15,
-    "members": [
-      { "enemyId": 3, "x": 337, "y": 436, "hidden": false },
-      { "enemyId": 3, "x": 479, "y": 436, "hidden": false }
-    ],
-    "name": "Corvo*2",
+    "name": "",
+    "members": [],
     "pages": [
       {
         "conditions": {
@@ -422,20 +650,21 @@
           "turnEnding": false,
           "turnValid": false
         },
-        "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
         "span": 0
       }
     ]
   },
   {
     "id": 16,
-    "members": [
-      { "enemyId": 10, "x": 267, "y": 438, "hidden": false },
-      { "enemyId": 10, "x": 271, "y": 227, "hidden": false },
-      { "enemyId": 11, "x": 151, "y": 298, "hidden": false },
-      { "enemyId": 11, "x": 71, "y": 394, "hidden": false }
-    ],
-    "name": "Lobo Comum*2, Corvo*2",
+    "name": "",
+    "members": [],
     "pages": [
       {
         "conditions": {
@@ -452,15 +681,21 @@
           "turnEnding": false,
           "turnValid": false
         },
-        "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
         "span": 0
       }
     ]
   },
   {
     "id": 17,
-    "members": [],
     "name": "",
+    "members": [],
     "pages": [
       {
         "conditions": {
@@ -477,15 +712,21 @@
           "turnEnding": false,
           "turnValid": false
         },
-        "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
         "span": 0
       }
     ]
   },
   {
     "id": 18,
-    "members": [],
     "name": "",
+    "members": [],
     "pages": [
       {
         "conditions": {
@@ -502,15 +743,21 @@
           "turnEnding": false,
           "turnValid": false
         },
-        "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
         "span": 0
       }
     ]
   },
   {
     "id": 19,
-    "members": [{ "enemyId": 30, "x": 217, "y": 382, "hidden": false }],
-    "name": "Mhordred",
+    "name": "",
+    "members": [],
     "pages": [
       {
         "conditions": {
@@ -527,15 +774,21 @@
           "turnEnding": false,
           "turnValid": false
         },
-        "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
         "span": 0
       }
     ]
   },
   {
     "id": 20,
+    "name": "",
     "members": [],
-    "name": "--------------------",
     "pages": [
       {
         "conditions": {
@@ -552,19 +805,21 @@
           "turnEnding": false,
           "turnValid": false
         },
-        "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
         "span": 0
       }
     ]
   },
   {
     "id": 21,
-    "members": [
-      { "enemyId": 16, "x": 56, "y": 206, "hidden": false },
-      { "enemyId": 16, "x": 154, "y": 304, "hidden": false },
-      { "enemyId": 16, "x": 65, "y": 397, "hidden": false }
-    ],
-    "name": "Aranha Cristalina*3",
+    "name": "",
+    "members": [],
     "pages": [
       {
         "conditions": {
@@ -581,20 +836,21 @@
           "turnEnding": false,
           "turnValid": false
         },
-        "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
         "span": 0
       }
     ]
   },
   {
     "id": 22,
-    "members": [
-      { "enemyId": 16, "x": 79, "y": 260, "hidden": false },
-      { "enemyId": 16, "x": 87, "y": 403, "hidden": false },
-      { "enemyId": 16, "x": 200, "y": 319, "hidden": false },
-      { "enemyId": 16, "x": 278, "y": 444, "hidden": false }
-    ],
-    "name": "Aranha Cristalina*4",
+    "name": "=== MINAS DE KRAVENS ===",
+    "members": [],
     "pages": [
       {
         "conditions": {
@@ -611,18 +867,40 @@
           "turnEnding": false,
           "turnValid": false
         },
-        "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
         "span": 0
       }
     ]
   },
   {
     "id": 23,
+    "name": "Morcego de Caverna x3",
     "members": [
-      { "enemyId": 17, "x": 277, "y": 444, "hidden": false },
-      { "enemyId": 17, "x": 108, "y": 283, "hidden": false }
+      {
+        "enemyId": 13,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 13,
+        "x": 354,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 13,
+        "x": 481,
+        "y": 436,
+        "hidden": false
+      }
     ],
-    "name": "Besouro Bombardeiro*2",
     "pages": [
       {
         "conditions": {
@@ -639,19 +917,46 @@
           "turnEnding": false,
           "turnValid": false
         },
-        "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
         "span": 0
       }
     ]
   },
   {
     "id": 24,
+    "name": "Morcego de Caverna x4",
     "members": [
-      { "enemyId": 18, "x": 98, "y": 286, "hidden": false },
-      { "enemyId": 18, "x": 130, "y": 431, "hidden": false },
-      { "enemyId": 18, "x": 256, "y": 348, "hidden": false }
+      {
+        "enemyId": 13,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 13,
+        "x": 354,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 13,
+        "x": 481,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 13,
+        "x": 608,
+        "y": 436,
+        "hidden": false
+      }
     ],
-    "name": "Escorpião Prata*3",
     "pages": [
       {
         "conditions": {
@@ -668,20 +973,52 @@
           "turnEnding": false,
           "turnValid": false
         },
-        "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
         "span": 0
       }
     ]
   },
   {
     "id": 25,
+    "name": "Morcego de Caverna x5",
     "members": [
-      { "enemyId": 18, "x": 73, "y": 251, "hidden": false },
-      { "enemyId": 18, "x": 76, "y": 382, "hidden": false },
-      { "enemyId": 18, "x": 254, "y": 313, "hidden": false },
-      { "enemyId": 18, "x": 334, "y": 444, "hidden": false }
+      {
+        "enemyId": 13,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 13,
+        "x": 354,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 13,
+        "x": 481,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 13,
+        "x": 608,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 13,
+        "x": 735,
+        "y": 436,
+        "hidden": false
+      }
     ],
-    "name": "Escorpião Prata*4",
     "pages": [
       {
         "conditions": {
@@ -698,15 +1035,34 @@
           "turnEnding": false,
           "turnValid": false
         },
-        "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
         "span": 0
       }
     ]
   },
   {
     "id": 26,
-    "members": [{ "enemyId": 19, "x": 116, "y": 385, "hidden": false }],
-    "name": "Vibora Marfim",
+    "name": "Aranha Mineira x2",
+    "members": [
+      {
+        "enemyId": 14,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 14,
+        "x": 354,
+        "y": 436,
+        "hidden": false
+      }
+    ],
     "pages": [
       {
         "conditions": {
@@ -723,19 +1079,40 @@
           "turnEnding": false,
           "turnValid": false
         },
-        "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
         "span": 0
       }
     ]
   },
   {
     "id": 27,
+    "name": "Aranha Mineira x3",
     "members": [
-      { "enemyId": 19, "x": 122, "y": 412, "hidden": false },
-      { "enemyId": 18, "x": 271, "y": 281, "hidden": false },
-      { "enemyId": 18, "x": 393, "y": 444, "hidden": false }
+      {
+        "enemyId": 14,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 14,
+        "x": 354,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 14,
+        "x": 481,
+        "y": 436,
+        "hidden": false
+      }
     ],
-    "name": "Vibora Marfim, Escorpião Prata*2",
     "pages": [
       {
         "conditions": {
@@ -752,19 +1129,46 @@
           "turnEnding": false,
           "turnValid": false
         },
-        "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
         "span": 0
       }
     ]
   },
   {
     "id": 28,
+    "name": "Morcego de Caverna x3 + Aranha Mineira x1",
     "members": [
-      { "enemyId": 17, "x": 127, "y": 385, "hidden": false },
-      { "enemyId": 16, "x": 282, "y": 242, "hidden": false },
-      { "enemyId": 16, "x": 223, "y": 444, "hidden": false }
+      {
+        "enemyId": 13,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 13,
+        "x": 354,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 13,
+        "x": 481,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 14,
+        "x": 608,
+        "y": 436,
+        "hidden": false
+      }
     ],
-    "name": "Besouro Bombardeiro, Aranha Cristalina*2",
     "pages": [
       {
         "conditions": {
@@ -781,15 +1185,34 @@
           "turnEnding": false,
           "turnValid": false
         },
-        "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
         "span": 0
       }
     ]
   },
   {
     "id": 29,
-    "members": [{ "enemyId": 20, "x": 125, "y": 402, "hidden": false }],
-    "name": "Cristaleão",
+    "name": "Aranha Gigante x2",
+    "members": [
+      {
+        "enemyId": 15,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 15,
+        "x": 354,
+        "y": 436,
+        "hidden": false
+      }
+    ],
     "pages": [
       {
         "conditions": {
@@ -806,15 +1229,46 @@
           "turnEnding": false,
           "turnValid": false
         },
-        "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
         "span": 0
       }
     ]
   },
   {
     "id": 30,
-    "members": [{ "enemyId": 21, "x": 160, "y": 370, "hidden": false }],
-    "name": "Capitão Ignoto",
+    "name": "Rato Gigante Mutante x4",
+    "members": [
+      {
+        "enemyId": 16,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 16,
+        "x": 354,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 16,
+        "x": 481,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 16,
+        "x": 608,
+        "y": 436,
+        "hidden": false
+      }
+    ],
     "pages": [
       {
         "conditions": {
@@ -831,7 +1285,1493 @@
           "turnEnding": false,
           "turnValid": false
         },
-        "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Aranha Gigante x1 + Rato Gigante Mutante x3",
+    "members": [
+      {
+        "enemyId": 15,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 16,
+        "x": 354,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 16,
+        "x": 481,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 16,
+        "x": 608,
+        "y": 436,
+        "hidden": false
+      }
+    ],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Cristaleão",
+    "members": [
+      {
+        "enemyId": 17,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      }
+    ],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "name": "",
+    "members": [],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "name": "",
+    "members": [],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "name": "",
+    "members": [],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "name": "",
+    "members": [],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "name": "",
+    "members": [],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "name": "",
+    "members": [],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "name": "",
+    "members": [],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "name": "",
+    "members": [],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "name": "",
+    "members": [],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "name": "",
+    "members": [],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "name": "=== ESGOTO DE GILDRAT ===",
+    "members": [],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Rato de Esgoto x4",
+    "members": [
+      {
+        "enemyId": 24,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 24,
+        "x": 354,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 24,
+        "x": 481,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 24,
+        "x": 608,
+        "y": 436,
+        "hidden": false
+      }
+    ],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Rato de Esgoto x5",
+    "members": [
+      {
+        "enemyId": 24,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 24,
+        "x": 354,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 24,
+        "x": 481,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 24,
+        "x": 608,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 24,
+        "x": 735,
+        "y": 436,
+        "hidden": false
+      }
+    ],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Limo Ácido x1",
+    "members": [
+      {
+        "enemyId": 25,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      }
+    ],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Limo Ácido x2",
+    "members": [
+      {
+        "enemyId": 25,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 25,
+        "x": 354,
+        "y": 436,
+        "hidden": false
+      }
+    ],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Rato de Esgoto x3 + Limo Ácido x1",
+    "members": [
+      {
+        "enemyId": 24,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 24,
+        "x": 354,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 24,
+        "x": 481,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 25,
+        "x": 608,
+        "y": 436,
+        "hidden": false
+      }
+    ],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Fungo Venenoso Gigante x2",
+    "members": [
+      {
+        "enemyId": 26,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 26,
+        "x": 354,
+        "y": 436,
+        "hidden": false
+      }
+    ],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Gosma Tóxica x1",
+    "members": [
+      {
+        "enemyId": 27,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      }
+    ],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Pestesporo",
+    "members": [
+      {
+        "enemyId": 28,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      }
+    ],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "name": "",
+    "members": [],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "name": "",
+    "members": [],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "name": "",
+    "members": [],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "name": "",
+    "members": [],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "name": "",
+    "members": [],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "name": "",
+    "members": [],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "name": "",
+    "members": [],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "name": "",
+    "members": [],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "name": "",
+    "members": [],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "name": "",
+    "members": [],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "name": "=== RUÍNAS DE MELIOS ===",
+    "members": [],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "name": "Guardião Menor de Pedra x2",
+    "members": [
+      {
+        "enemyId": 35,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 35,
+        "x": 354,
+        "y": 436,
+        "hidden": false
+      }
+    ],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "name": "Guardião Menor de Pedra x3",
+    "members": [
+      {
+        "enemyId": 35,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 35,
+        "x": 354,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 35,
+        "x": 481,
+        "y": 436,
+        "hidden": false
+      }
+    ],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Elemental de Terra x1",
+    "members": [
+      {
+        "enemyId": 36,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      }
+    ],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Guardião Menor de Pedra x1 + Elemental de Terra x1",
+    "members": [
+      {
+        "enemyId": 35,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      },
+      {
+        "enemyId": 36,
+        "x": 354,
+        "y": 436,
+        "hidden": false
+      }
+    ],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Guardião Ancião x1",
+    "members": [
+      {
+        "enemyId": 37,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      }
+    ],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Sombra Errante x1",
+    "members": [
+      {
+        "enemyId": 38,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      }
+    ],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Corvos de Melios",
+    "members": [
+      {
+        "enemyId": 39,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      }
+    ],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "name": "Guardião Colossal",
+    "members": [
+      {
+        "enemyId": 40,
+        "x": 227,
+        "y": 436,
+        "hidden": false
+      }
+    ],
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
         "span": 0
       }
     ]
