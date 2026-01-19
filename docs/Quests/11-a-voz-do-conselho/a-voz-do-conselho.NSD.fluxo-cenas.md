@@ -1,4 +1,4 @@
-# 🎮 Narrative Structure Document (NSD) - Fluxo Visual De Cenas
+﻿# 🎮 Narrative Structure Document (NSD) - Fluxo Visual De Cenas
 
 ## 📄 Quest: A Voz do Conselho
 
@@ -18,8 +18,8 @@
   - Direcionar o jogador ao próximo destino narrativo: Mina de Melios.  
 - **Premissa resumida**: Após receber sua primeira paga por Kravens, Thorin acompanha Balastrus até o conselho de Damburr, onde testemunha a crise política causada pelas rebeliões. Filena é acusada de incitar protestos, e Balastrus aproveita para obter o direito de minerar Melios — levando Thorin e seus aliados para legitimar a expedição. A jornada termina com a chegada a Melios e a batalha contra os Corvos, o grupo de anões que abandonou a mineração após encontrar um bloco misterioso.  
 - **Resumo**:  
-  A quest começa com Thorin acordando de um sonho intenso com sua mãe. O Sáparo Boca de Corneta o lembra do compromisso com Balastrus. Na taverna, Thorin recebe sua paga e participa de uma conversa sobre a expedição. Guardas então convocam Balastrus ao conselho do Imperador, arrastando também Thorin, Tusk e os demais. No castelo, Thorin testemunha Damburr e seus conselheiros discutindo a onda de rebeliões e a escassez de recursos. Filena é trazida sob acusação de sedição. Balastrus defende a mineração e conquista o direito de explorar Melios, mas exige que Thorin vá junto para impedir sabotagens de Tordan.  
-  Após a audiência, Balastrus libera Thorin para gastar seus Drakeis no mercado da cidade. O jogador pode se equipar e, depois, encontra o grupo no portão da Estrada do Cão Luar. A caravana parte rumo a Melios, atravessando o mapamúndi com os guardas reais, Balastrus e Tusk.  
+  A quest começa com Thorin acordando de um sonho intenso com sua mãe. O Sáparo Boca de Corneta o lembra do compromisso com Balastrus. Na taverna, Thorin recebe sua paga e participa de uma conversa sobre a expedição. Guardas então convocam Balastrus ao conselho do Imperador, arrastando também Thorin, Balastrus e os demais. No castelo, Thorin testemunha Damburr e seus conselheiros discutindo a onda de rebeliões e a escassez de recursos. Filena é trazida sob acusação de sedição. Balastrus defende a mineração e conquista o direito de explorar Melios, mas exige que Thorin vá junto para impedir sabotagens de Tordan. Thorin e Filena trocam um olhar; ela exige que ele nao se cale.  
+  Após a audiência, Balastrus libera Thorin para gastar seus Drakeis no mercado da cidade. O jogador pode se equipar e, depois, encontra o grupo no portão da Estrada do Cão Luar. A caravana parte rumo a Melios, atravessando o mapamúndi com os guardas reais, Balastrus e os guardas.  
   Ao chegar a Melios, encontram os Corvos, grupo de anões que havia abandonado a exploração após encontrar um bloco de ferro adornado com símbolos estranhos. O confronto se torna inevitável: os Corvos atuam como boss fight. Após a vitória, eles explicam o motivo de sua desistência e partem. A quest termina com a clareira de Melios aberta, preparando o próximo arco narrativo.  
 - **Locais principais**:  
   - Casa da Família Forja Prata (início)  
@@ -33,7 +33,6 @@
   - Thorin  
   - Sáparo Boca de Corneta  
   - Balastrus  
-  - Tusk  
   - Damburr (imperador)  
   - General Tordan  
   - Filena  
@@ -67,19 +66,19 @@ Thorin desperta de um sonho intenso com sua mãe. Logo é interpelado pelo Sápa
 
 ##### Ida à taverna e pagamento
 
-Thorin vai até a Taverna de Gildrat. Lá encontra Balastrus, Tusk e outros participantes da expedição anterior.
+Thorin vai até a Taverna de Gildrat. Lá encontra Balastrus e outros participantes da expedição anterior.
 Balastrus, em seu tom cínico, elogia o desempenho da missão e entrega a Thorin sua primeira recompensa em Drakeis, reconhecendo-o diante dos demais.
 
 ##### Convocação ao conselho imperial
 
 Durante essa cena na taverna, guardas imperiais chegam e anunciam que Balastrus deve comparecer ao conselho do Imperador Damburr imediatamente.  
-Thorin, Tusk e outros envolvidos também acabam sendo levados junto, sob ordens de Tordan.  
+Thorin, Balastrus e outros envolvidos também acabam sendo levados junto, sob ordens de Tordan.  
 Durante a saída rumo ao castelo, eles veem bastante revolta e protestos na frente do castelo.
 
 ##### Conselho de Damburr e a rebelião
 
 No castelo, Thorin testemunha Damburr discutindo com seus conselheiros e Tordan a respeito das rebeliões no Império. Fica evidente a escassez de recursos para “comprar a paz” e a necessidade de medidas mais duras.  
-Filena é trazida sob acusação de incitar a rebelião. O clima esquenta.  
+Filena é trazida sob acusação de incitar a rebelião. O clima esquenta. Thorin e Filena trocam um olhar; ela exige que ele nao se cale.  
 Balastrus, aproveitando a oportunidade, apresenta os resultados da mineração de Kravens e defende sua utilidade. Ele consegue, ali, o direito de explorar Melios, mas exige que Thorin vá junto para impedir sabotagens de Tordan.
 
 ##### Liberdade para se preparar
@@ -89,7 +88,7 @@ Após a audiência, Balastrus dá liberdade a Thorin para gastar seus Drakeis na
 ##### Reencontro na Estrada do Cão Luar
 
 Ao final das compras, Thorin deve ir até o portão da Estrada do Cão Luar.  
-Lá encontra Balastrus, Tusk, Filena e a dupla de guardas reais (Kilin e Mhordred), que se juntam à expedição rumo a Melios.
+Lá encontra Balastrus, Filena e a dupla de guardas reais (Kilin e Mhordred), que se juntam à expedição rumo a Melios. Filena avisa a Thorin que vai seguir porque a familia precisa do pagamento, mesmo odiando o reino.
 
 ##### Travessia até Melios
 
@@ -113,8 +112,10 @@ Quest: A Voz do Conselho
  │      Premissa: Thorin desperta de mais um sonho intenso e recebe de Sáparo o lembrete para encontrar Balastrus.
  ├── Cena 2: A Taverna e o Pagamento
  │      Cronologia: Thorin vai até a taverna → Conversa com Balastrus → Recebe Drakeis → Guardas convocam todos
- │      Premissa: Thorin recebe sua paga, mas é arrastado junto com Balastrus e Tusk ao conselho imperial.
+ │      Premissa: Thorin recebe sua paga, mas é arrastado junto com Balastrus e os guardas ao conselho imperial.
  ├── Cena 3: O Conselho de Damburr
  │      Cronologia: Sala do trono → Discussão sobre rebeliões → Filena acusada → Balastrus ganha direito a Melios
  │      Premissa: O jogador testemunha intrigas políticas; Filena surge como prisioneira e Balastrus conquista a exploração de Melios.
  ├── Cena 4: Preparativos na Cidade
+
+
