@@ -108,9 +108,9 @@
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 64,
+            "variableId": 79,
             "variableValid": true,
-            "variableValue": 99
+            "variableValue": 0
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Principal/$Filena", "direction": 2, "pattern": 1, "characterIndex": 0 },
