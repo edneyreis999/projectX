@@ -74,7 +74,7 @@ Quest: Quando o Segundo Sol Chegar - Fase Final
 | **2-A - Entrada na casa** | O Jogador controla Thorin, que entra na Casa dos Forjaprata e conversa com Tordan. | JOG |
 | **2-B - Tordan se desculpa para Thorin** | Tordan reconhece seu erro ao sufocar o sonho de Thorin. | CS |
 | **2-C - O perdão de Thorin** | Thorin tem a escolha de perdoar, ou não, o pai. | JOG |
-| **2-D - Noite de sono** | Thorin se dirige para a cama para dormi | JOG |
+| **2-D - Noite de sono** | Thorin se dirige para a cama para dormir | JOG |
 | **2-E - Defesa de Gildrat** | O jogador decide se quer ir para defesa de Gildrat, ou se preparar mais | JOG |
 
 ##### Cena 3 - Defesa de Gildrat
@@ -94,9 +94,13 @@ Quest: Quando o Segundo Sol Chegar - Fase Final
 | Beat | Premissa Resumida | Tipo |
 | ---- | ---------------- | ---- |
 | **4-A - Thorin vs Ignotos** | O jogador se direciona aos ignotos na ordem que desejar enfrentá-los. | JOG |
-| **4-B - General Ignoto** | Fala do General Ignoto para Thorin. | CS |
-| **4-C - Thorin vs General Ignoto** | O jogador se direciona ao General Ignoto para enfrentá-lo. | JOG |
-| **4-D - Passagem** | O jogador se direciona ao ponto que o levará para a fase final. | JOG |
+| **4-B - Bloqueio do General** | Mensagem de bloqueio. Batalha com general liberada após derrtoa de todos os grupos. | CS |
+| **4-C - General Ignoto** | Fala do General Ignoto para Thorin. | CS |
+| **4-D - Thorin vs General Ignoto** | O jogador se direciona ao General Ignoto para enfrentá-lo. | JOG |
+| **4-E - Bloqueio da Passagem** | Mensagem de bloqueio. Teleporte liberado após derrota do general | CS |
+| **4-B - Bloqueio da Passagem 2** | Passagem liberada após derrtoa de todos os grupos. | CS |
+| **4 F - Passagem** | O jogador se direciona ao ponto que o levará para a fase final. | JOG |
+| **4-G - Conclusão** | Mensagem de conclusão da fase. | CS |
 
 ##### Cena 5 - Confronto com o Chefe Ignotos
 
