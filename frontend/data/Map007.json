@@ -1682,7 +1682,7 @@
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 29,
-            "variableValid": true,
+            "variableValid": false,
             "variableValue": 1
           },
           "directionFix": true,

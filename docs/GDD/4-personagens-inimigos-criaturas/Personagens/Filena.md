@@ -26,13 +26,15 @@ Fraqueza Principal: Raiva e orgulho ferido.
 
 Aparencia: Vestes gastas de futebol rúnico ou de trabalho, clava pequena, escudo médio e marcas de calos nas mãos.
 
-Motivacao Raiz: A familia, liderada por seu pai, Fileus, líder rebelde, está à beira da extinção e passando necessidade. Filena aceita trabalho bracal mal pago nas minas, quase escravo, indo contra tudo o que sempre acreditou para cuidar dos seus.
+Motivacao Raiz: A familia, liderada por seu pai, Fileus, líder rebelde, está à beira da extinção e passando necessidade. Filena aceita trabalho bracal mal pago nas minas, quase escravo, indo contra
+tudo o que sempre acreditou para cuidar dos seus.
 
 Maior sonho: Ver o povo de Gildrat livre da corrupção e lhes devolver a dignidade.
 
 Maior medo: Ser obrigada a trair seu pai e sua causa para sobreviver.
 
-Principais parentescos: Pai (Fileus, grande lider rebelde), Borin (amigo do time de futebol rúnico e segundo melhor jogador, atrás apenas de Thoin, de quem é rival declarado pela posição e também afeição romantica de Filena), Thorin (amigo de infância por quem sente uma paixão reprimida).
+Principais parentescos: Pai (Fileus, grande lider rebelde), Borin (amigo do time de futebol rúnico e segundo melhor jogador, atrás apenas de Thoin, de quem é rival declarado pela posição e também
+afeição romantica de Filena), Thorin (amigo de infância por quem sente uma paixão reprimida).
 
 ### 1.1) Linha de Transformação básica
 
@@ -40,7 +42,9 @@ Objetivo: Mapear a evolução emocional e decisória ato por ato, conectando obj
 
 ### 1.2) Linha de Transformação avançada - Ato I / Fase de Chamado /
 
-Jornada narrativa: Filena aparece de surpresa na Estrada do Cão-Luar para se juntar a expedição. Sua família está sem recursos e ela precisa do trabalho braçal. Quando Thorin se aproxima e finalmente se anima com a ideia de ir trabalhar nas minas como seu pai queria, agora, ao lado de Filena, ela corta seu entusiasmo com: "Nem todos nasceram ricos como voce, Thorin. Se você falhar, seu pai irá gritar e no dia seguinte tudo voltará ao normal. Se eu falhar, os meus com certeza vão morrer de fome". Ela tem sentimentos confusos por Thorin, mas os deixa de lado por necessidade e raiva.
+Jornada narrativa: Filena aparece de surpresa na Estrada do Cão-Luar para se juntar a expedição. Sua família está sem recursos e ela precisa do trabalho braçal. Quando Thorin se aproxima e finalmente
+se anima com a ideia de ir trabalhar nas minas como seu pai queria, agora, ao lado de Filena, ela corta seu entusiasmo com: "Nem todos nasceram ricos como voce, Thorin. Se você falhar, seu pai irá
+gritar e no dia seguinte tudo voltará ao normal. Se eu falhar, os meus com certeza vão morrer de fome". Ela tem sentimentos confusos por Thorin, mas os deixa de lado por necessidade e raiva.
 
 Emoção Predominante: Necessidade, raiva contida.
 
@@ -74,23 +78,29 @@ Principais inimigos: A corrupção do reino e o sistema de exploração.
 
 ### 1.3) Gatilhos do Ato I - mudanças a caminho
 
-Arco narrativo do personagem no jogo atualmente: Expedições até o End Game- Filena acompanha Thorin nas missóes logo após o início do jogo (Mina de Kravens, Travessia Perigosa, Mina do Esgoto), expondo o conflito social em cada cena.
+Arco narrativo do personagem no jogo atualmente: Expedições até o End Game- Filena acompanha Thorin nas missóes logo após o início do jogo (Mina de Kravens, Travessia Perigosa, Mina do Esgoto),
+expondo o conflito social em cada cena.
 
 #### Quest - Primeiro Contrato
 
-Filena surge na Estrada do Cão-Luar, revela a necessidade da familia e entra na expedição. Ela diz a Thorin que ele nao entende a realidade de quem não nasceu rico.
+Filena surge na Estrada do Cão-Luar, revela a necessidade da familia e entra na expedição. Ela diz a Thorin que ele não entende a realidade de quem não nasceu rico. Quando vê os guardas reais ali para
+proteger unica e exclusivamente Thorin, concorda com a provocação de Borin e reforça a leitura de privilegio que ele faz.
 
 #### Quest - Minerador Aprendiz (Mina de Kravens)
 
-Filena trabalha lado a lado na mina e fica presente nas cenas de mineração e descoberta do Sigmetal, mas fala pouco pois há uma guerra silenciosa dentro dela por seus valores. Ela começa a contar aqui, por metáforas, para Thorin sobre a relação da sua família com os rebeldes.
+Filena trabalha lado a lado na mina com Thorin, mesmo contra sua vontade, além de ficar presente nas cenas de mineração e descoberta do Sigmetal, mas fala pouco pois há uma guerra silenciosa dentro
+dela por seus valores. Ela começa a contar para Thorin aqui, por metáforas, sobre a relação da sua família com os rebeldes.
 
 ## 2) Linha de Transformação básica
 
-Filena se torna cada vez mais ativa e política. Ela suporta os abusos de Balastrus durante a expedição de Kravens, mas decide mudar de empregador quando os demais retornam à Gildrat. No dia seguinte, quando Thorin vai receber seu pagamento, ele pergunta se Filena já apareceu para pegar o dela. Balastrus responde que sim, mas que a "traidora" resolveu trabalhar para seu maior rival agora, Corvin, da família Corvinus, e que já partira para outra expedição em Mélios.
+Filena se torna cada vez mais ativa e política. Ela suporta os abusos de Balastrus durante a expedição de Kravens, mas decide mudar de empregador quando os demais retornam à Gildrat. No dia seguinte,
+quando Thorin vai receber seu pagamento, ele pergunta se Filena já apareceu para pegar o dela. Balastrus responde que sim, mas que a "traidora" resolveu trabalhar para seu maior rival agora, Corvin,
+da família Corvinus, e que já partira para outra expedição em Mélios.
 
 ### 2.1) Linha de Transformação avançada - Ato II / Provação / Até a volta de Mélios
 
-Jornada narrativa: Em Travessia Perigosa, Filena é forçada a partir com os demais mesmo sob a nevasca. Em Travessia Tóxica, entra na Mina do Esgoto com o grupo. Na Voz do Conselho, ela é acusada publicamente de incitar protestos durante as expedições. A presença dela torna o conflito pessoal para Thorin.
+Jornada narrativa: Em Travessia Perigosa, Filena é forçada a partir com os demais mesmo sob a nevasca. Em Travessia Tóxica, entra na Mina do Esgoto com o grupo. Na Voz do Conselho, ela é acusada
+publicamente de incitar protestos durante as expedições. A presença dela torna o conflito pessoal para Thorin.
 
 Emoção Predominante: Indignação, firmeza.
 
@@ -120,7 +130,8 @@ Filena assume papel de liderança civil quando a quest "Quando o segundo sol che
 
 ### 3.1) Linha de Transformação avançada - Ato III / Transformação
 
-Jornada narrativa: Em "Quando o Segundo Sol Chegar", Filena lidera o treinamento de rebeldes, civis e do time rúnico. Ela pode, junto de Mhordred, treinar e fortalecer a força civil. Sua conexão com Thorin aprofunda.
+Jornada narrativa: Em "Quando o Segundo Sol Chegar", Filena lidera o treinamento de rebeldes, civis e do time rúnico. Ela pode, junto de Mhordred, treinar e fortalecer a força civil. Sua conexão com
+Thorin aprofunda.
 
 Emoção Predominante: Coragem, responsabilidade.
 

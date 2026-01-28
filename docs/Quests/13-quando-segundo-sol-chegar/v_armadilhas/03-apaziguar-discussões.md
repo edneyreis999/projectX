@@ -1,45 +1,79 @@
-# Apaziguar Discussões
+# Narrative Structure Document (NSD) - Apaziguar Discussões (Quando o Segundo Sol Chegar)
 
-## Identificação
+## Quest: Apaziguar Discussões
 
-- **Tipo:** Reforço Armadilhas Fase 1 ou 2.
-- **Dificuldade:** Fácil.
-- **Localização:** Distrito Comercial.
-- **Nome Artístico:** Sangue Azul, Suor Vermelho (Este é o nome chamativo que deve ir para dentro do jogo e aparecer ao player - Sangue azul pelos nobres que estão discutindo, suor vermelho pelos anões simples que apenas trabalham e se sentem oprimidos).
-- **Desbloqueia ao Iniciar:** N/A
+### 1 Resumo Geral (Checkpoint 0)
 
-## Contexto Narrativo
+- [ ] Em andamento
+- Nome da quest: Apaziguar Discussões
+- Importância na campanha: reforça a liderança de Thorin ao mostrar que diplomacia reorganiza o tecido social de Gildrat.
+- Arco narrativo: Thorin exerce autoridade moral ao acalmar nobres e plebeus em conflito, equilibrando a população.
+- Objetivo narrativo global: provar que a união de Gildrat depende de confiança e diálogo.
+- Premissa resumida: Balastrus delega a Thorin a missão de unir ambos os lados da discussão e estabelecer um caminho comum.
 
-Quest que também faz parte do arco narrativo de Thorin e Balastrus, logo após as repercucões da última reunião do conselho de Gildrat. Uma grande discussão acontece no distrito comercial, entre nobres revoltados e plebeus que vendiam suas mercadorias. Balastrus decide não intervir e manda Thorin, sob autoridade da Guarda de Ferro, apaziguar a disputa e fazer um discurso inspirador que possa unir as duas castas de anões.
+- Locais principais
+  - Distrito Comercial de Gildrat
+  - Praça das Câmaras
+- NPCs principais
+  - Thorin
+  - Balastrus
+  - Filena
+  - Vendedores plebeus
 
-## Gatilhos
+### 2 Pré-condições Narrativas (Checkpoint 1)
 
-- **NPC com a quest:** Balastrus.
-- **Requisitos:** N/A
-- **Gatilho:** Falar com Balastrus no Distrito Comercial.
-- **Condição para concluir:**
-  - Conversar com 3 NPCs nobres e plebeus em discussão.
-  - Falar com Balastrus após o discurso.
+| Tipo | Descrição |
+| --- | --- |
+| Flags / Decisões anteriores | _armadilhas_acesso liberada e _confianca_balastrus em crescimento depois dos testes de armadilhas. |
+| Limitações ou bloqueios | Thorin precisa aceitar o comando diplomático da Guarda antes de fazer o discurso. |
 
-## Estrutura Sistêmica
+### 3 Fluxo Visual Resumido (Checkpoint 2)
 
-- **Atores Envolvidos:**
-  - Thorin (protagonista)
-  - Balastrus (NPC principal)
-  - Outros anões (NPCs que estão discutindo)
-- **Variáveis / Flags Alteradas:**
-  - `v_pontos_armadilhas`
+- [ ] Em andamento
 
-## Desfechos Possíveis
+`plaintext
+Quest: Apaziguar Discussões
+ +-- Cena 1: Praça das Câmaras - Briefing de Balastrus
+ |      +-- Beat 1: Balastrus explica que evitar derramamento de sangue depende do discurso de Thorin.
+ |      +-- Beat 2: A Guarda acompanha o jogador até o centro da discórdia.
+ +-- Cena 2: Debate entre nobres e plebeus
+ |      +-- Beat 1: Thorin conversa com líderes nobres, ouvindo suas exigências de ordem.
+ |      +-- Beat 2: O jogador se aproxima de plebeus furiosos e oferece apoio.
+ |      +-- Beat 3: Filena media o clima e reforça o tom pacífico do discurso.
+ +-- Cena 3: Proposta simbólica
+        +-- Beat 1: Thorin propõe compartilhar recursos e proteger todos com armadilhas coordenadas.
+        +-- Beat 2: Um teste rápido mostra que a trégua fortalece a rede de defesa.
+`
 
-- **Final A (Discussão Apaziguada):** Todos se acalmam e percebem que estão lutando pelo mesmo motivo, a sobrevivência do povo anão. Diferenças de casta não importam mais.
+#### Tabela de Cenas
 
-## Condição de Falha
+| # | Nome da Cena | Premissa resumida (expandida) |
+| --- | --- | --- |
+| 1 | **Briefing de Balastrus** | A Guarda confia uma postura diplomática a Thorin e destaca os riscos da violência. |
+| 2 | **Debate na praça** | O jogador alterna entre nobres e plebeus, equilibrando argumentos e sentimentos. |
+| 3 | **Sinal de união** | A proposta de proteção compartilhada demonstra que armadilhas protegem todos. |
 
-- **Final B (Ignora):** Discussão cresce e se torna uma briga generalizada. Os anões estão mais divididos do que nunca.
+#### Beats por Cena
 
-## Recompensas
+##### Cena 1 - Briefing de Balastrus
 
-- **v_pontos_armadilhas:** +25 pontos (do total de 100)
-- **Narrativa:** Thorin faz um discurso inspirador e passa a ser visto como líder.
-  
+| Beat | Premissa Resumida | Tipo |
+| ---- | ---------------- | ---- |
+| **1-A - Instruções da Guarda** | Balastrus detalha limites e esperança do discurso. | CS |
+| **1-B - Aproximação** | O jogador acompanha a Guarda até a Praça das Câmaras. | JOG |
+
+##### Cena 2 - Debate na praça
+
+| Beat | Premissa Resumida | Tipo |
+| ---- | ---------------- | ---- |
+| **2-A - Nobres exigem ordem** | Thorin ouve nobres que defendem privilégios históricos. | CS |
+| **2-B - Plebeus procuram justiça** | O jogador demonstra empatia e propõe objetivos comuns. | JOG |
+| **2-C - Filena reforça paz** | A mediadora complementa a conversa com um apelo emocional. | CS |
+
+##### Cena 3 - Sinal de união
+
+| Beat | Premissa Resumida | Tipo |
+| ---- | ---------------- | ---- |
+| **3-A - Compromisso coletivo** | Thorin propõe dividir recursos e planos de defesa. | CS |
+| **3-B - Teste de armadilha** | Um disparo seguro demonstra que a trégua protege todos. | JOG |
+| **3-C - Confirmação narrativa** | Balastrus atualiza _pontos_armadilhas e elogia o discurso. | CS |
