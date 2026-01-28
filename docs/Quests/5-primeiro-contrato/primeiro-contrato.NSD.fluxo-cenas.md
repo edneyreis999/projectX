@@ -92,82 +92,87 @@ Quest: Primeiro Contrato
 
 ##### Cena 1 - Contrato na Taverna
 
-| Beat                                         | Premissa Resumida                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Tipo |
-| -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---- |
-| **1-A - Entrada na taverna**                 | O Jogador controla Thorin, que entra na Taverna da Pedra Vulcânica e pergunta ao taverneiro Durgan onde está Balastrus.                                                                                                                                                                                                                                                                                                                                                                                      | JOG  |
-| **1-B - A Resposta do anão Franzino**        | Durgan responde que Balastrus está numa das mesas do canto e que é impossível não notar a "careca".                                                                                                                                                                                                                                                                                                                                                                                                          | CS   |
-| **1-C - Thorin se senta**                    | O Jogador controla Thorin, que se dirige à mesa do contratante e senta para falar.                                                                                                                                                                                                                                                                                                                                                                                                                           | JOG  |
-| **1-D - Ombro machucado**                    | Thorin começa a conversa com Balastrus, alega estar com o ombro ferido e tenta sair de gaiato da expedição. Balastrus não acredita nele, mas também não insiste.                                                                                                                                                                                                                                                                                                                                             | CS   |
-| **1-E - Falsa vitória**                      | O jogador controla Thorin, que se levanta para sair da Taverna e comemorar, ativando a próxima cutscene através de um trigger de passos.                                                                                                                                                                                                                                                                                                                                                                     | JOG  |
-| **1-F - Eternos rivais**                     | Borin entra na taverna e, quando vê Thorin, começa a discutir com ele. Borin se cansa de dar atenção à Thorin, vai falar com Balastrus, entrega o contrato a ele e pergunta se Filena também já entregou o dela. Thorin ouve a conversa e vai falar com Balastrus novamente.                                                                                                                                                                                                                                 | CS   |
-| **1-G - Espere, senhor Balastrus!**          | O Jogador controla Thorin que volta para falar com Balastrus assim que escuta o nome da Filena.                                                                                                                                                                                                                                                                                                                                                                                                              | JOG  |
-| **1-H - Pelas garotas e pela glória**        | Thorin diz a Balastrus que se enganou, ele não só quer, como precisa estar na expedição. Quando questionado sobre o ombro machucadovo, ele diz que o povo anão nunca faz corpo mole e que grande parte da história foi apenas "força de expressão". Balastrus manda Borin sair e diz a Thorin que o tempo está se esgotando, ele precisa pegar um contrato com o taverneiro, assinar e levar até a Estrada do Cão-luar, pois o grupo já estava de partida. O Mercenário se levanta e também deixa a taverna. | CS   |
-| **1-I - Sai da Frente que atrás vem gente!** | O Jogador controla Thorin, que precisa ir até o taverneiro, pegar o contrato, assinar e levá-lo até a estrada do Cão-luar.                                                                                                                                                                                                                                                                                                                                                                                   | JOG  |
+| ID | Titulo | Premissa Resumida | Tipo |
+| --- | --- | --- | --- |
+| 1-A | Entrada na taverna | O Jogador controla Thorin,<br>que entra na Taverna da Pedra Vulcânica e pergunta ao taverneiro Durgan onde está Balastrus. | JOG |
+| 1-B | A Resposta do anão Franzino | Durgan responde que Balastrus está numa das mesas do canto e que é impossível não notar a "careca". | CS |
+| 1-C | Thorin se senta | O Jogador controla Thorin,<br>que se dirige à mesa do contratante e senta para falar. | JOG |
+| 1-D | Ombro machucado | Thorin começa a conversa com Balastrus, alega estar com o ombro ferido e tenta sair de gaiato da expedição.<br>Balastrus não acredita nele, mas também não insiste. | CS |
+| 1-E | Falsa vitória | O jogador controla Thorin,<br>que se levanta para sair da Taverna e comemorar,<br>ativando a próxima cutscene através de um trigger de passos. | JOG |
+| 1-F | Eternos rivais | Borin entra na taverna e, quando vê Thorin, começa a discutir com ele.<br>Borin se cansa de dar atenção à Thorin, vai falar com Balastrus, entrega o contrato a ele e pergunta se Filena também já entregou o dela.<br>Thorin ouve a conversa e vai falar com Balastrus novamente. | CS |
+| 1-G | Espere, senhor Balastrus! | O Jogador controla Thorin que volta para falar com Balastrus assim que escuta o nome da Filena. | JOG |
+| 1-H | Pelas garotas e pela glória | Thorin diz a Balastrus que se enganou, ele não só quer, como precisa estar na expedição.<br>Quando questionado sobre o ombro machucadovo, ele diz que o povo anão nunca faz corpo mole e que grande parte da história foi apenas "força de expressão".<br>Balastrus manda Borin sair e diz a Thorin que o tempo está se esgotando, ele precisa pegar um contrato com o taverneiro, assinar e levar até a Estrada do Cão-luar, pois o grupo já estava de partida.<br>O Mercenário se levanta e também deixa a taverna. | CS |
+| 1-I | Sai da Frente que atrás vem gente! | O Jogador controla Thorin,<br>que precisa ir até o taverneiro,<br>pegar o contrato,<br>assinar e levá-lo até a estrada do Cão-luar. | JOG |
 
 ##### Cena 2 - Caminho ao Encontro
 
-| Beat                          | Premissa Resumida                                                 | Tipo |
-| ----------------------------- | ----------------------------------------------------------------- | ---- |
-| **2-A - Contrato com Durgan** | Thorin pega o contrato no balcao da taverna.                      | JOG  |
-| **2-B - Saida da cidade**     | Thorin atravessa o Distrito Comercial rumo a Estrada do Cao Luar. | JOG  |
-| **2-C - Chegada ao ponto**    | Thorin encontra Balastrus e o grupo na estrada.                   | JOG  |
+| ID | Titulo | Premissa Resumida | Tipo |
+| --- | --- | --- | --- |
+| 2-A | Passarinho que acorda cedo pega minhoca | O Jogador controla Thorin,<br>que atravessa o Distrito Comercial rumo a Estrada do Cao Luar. | JOG |
+| 2-B | Thorin, o Gado | O Jogador controla Thorin,<br>que chega à Estrada do Cão-luar e encontra Balastrus e o grupo. | JOG |
 
 ##### Cena 3 - Entrega do Contrato
 
-| Beat                          | Premissa Resumida                                                              | Tipo |
-| ----------------------------- | ------------------------------------------------------------------------------ | ---- |
-| **3-A - Borin com Filena**    | Borin conversa com Filena enquanto o grupo aguarda.                            | CS   |
-| **3-B - Entrega do contrato** | Thorin entrega o contrato a Balastrus.                                         | JOG  |
-| **3-C - Provocacao do Borin** | Borin confronta Thorin por ter mudado de ideia e provoca: "filhinho de papai". | CS   |
-| **3-D - Balastrus adiante**   | Balastrus segue para baixo da estrada e inicia a organizacao do grupo.         | CS   |
+| ID | Titulo | Premissa Resumida | Tipo |
+| --- | --- | --- | --- |
+| 3-A | Fura olho | Thorin vê Borin conversando com Filena enquanto o grupo aguarda.<br>Ele fica enciumado. | CS |
+| 3-B | Novo no pedaço | O jogador controla Thorin,<br>que precisa ir até Brutus,<br>lacaio de Balastrus para entregar o contrato e receber orientações. | JOG |
+| 3-C | Até tu, Brutus filho meu | Brutus insulta Thorin, que pode escolher retrucar ou não.<br>No fim do diálogo, o lacaio entrega a ele uma picareta e a carta de acesso à Mina de Kravens. | CS |
+| 3-D | Mantenha os inimigos por perto | O jogador controla Thorin,<br>que vai até perto de Borin e Filena para interromper a conversa. | JOG |
+| 3-E | Filhinho de Papai | Borin fica furioso com a interrupção de Thorin e volta a discutir com ele.<br>"Filhinho de papai" é seu xingamento mais leve. | CS |
+| 3-F | Obedece quem tem juízo | Balastrus retoma a palavra,<br>manda que todos calem a boca e inicia a organização dos grupos. | CS |
 
 ##### Cena 4 - Divisao de Times
 
-| Beat                          | Premissa Resumida                                                                                                                                                                                                                                | Tipo |
-| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---- |
-| **4-A - Pedido de Thorin**    | Thorin sussurra que quer ficar no mesmo time que Filena, como se fosse uma oração.                                                                                                                                                               | CS   |
-| **4-B - Zoeira do Borin**     | Borin provoca Thorin porque Filena esta no time dele e Thorin escolhe reagir ou não.                                                                                                                                                             | JOG  |
-| **4-C - Chegada dos guardas** | Kilin e Mhordred aparecem e discutem com Balastrus.                                                                                                                                                                                              | CS   |
-| **4-D - Troca de times**      | Balastrus muda a escala, Filena vai para a equipe de Thorin e a marcha comeca. Filena não gosta do fato de Thorin estar sendo protegido por guardas reais e por um momento pensa que Borin tem razão, se enfurece por estar na equipe de Thorin. | CS   |
+| ID | Titulo | Premissa Resumida | Tipo |
+| --- | --- | --- | --- |
+| 4-A | Oração | Thorin sussurra que quer ficar no mesmo time que Filena,<br>como se fosse uma oração. | CS |
+| 4-B | Não se pode ter tudo na vida | Depois que Balastrus divide os grupos,<br>Borin provoca Thorin porque Filena está no time dele. | CS |
+| 4-C | Guardiões | Kilin e Mhordred aparecem de repente e iniciam uma discussão com Balastrus. | CS |
+| 4-C | Enxerido | O jogador controla Thorin,<br>que precisa escolher entre permanecer onde está ou ir mais perto para ouvir as discussões de Balastrus com Kilin e Mhordred | JOG |
+| 4-D | Mudança de Maré | Balastrus muda a escala depois da discussão, colocando Filena na equipe de Thorin e a marcha comeca.<br>Filena não gosta do fato de Thorin estar sendo protegido por guardas reais e por um momento pensa que Borin tem razão,<br>se enfurece por estar na mesma equipe que ele. | CS |
 
 ##### Cena 5 - Travessia Gelida
 
-| Beat                         | Premissa Resumida                                                                                                                                                              | Tipo |
-| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---- |
-| **5-A - Mapa e objetivo**    | Mapamundi abre com tutorial e objetivo de chegar a Kravens. Primeiras batalhas. Thorin discute com Kilin e Mhordred por causa da super proteção enquanto está perto de Filena. | JOG  |
-| **5-B - Combates tutoriais** | Encontros leves exibem habilidades do grupo e ensinam mecanicas de equipe.                                                                                                     | JOG  |
-| **5-C - Chegada ao portao**  | Fade-out marca checkpoint e transicao para o Portao de Kravens.                                                                                                                | CS   |
+| ID | Titulo | Premissa Resumida | Tipo |
+| --- | --- | --- | --- |
+| 5-A | Mapa e objetivo | Mapamundi abre com tutorial e objetivo de chegar a Kravens.<br>Primeiras batalhas.<br>Thorin discute com Kilin e Mhordred por causa da super proteção enquanto está perto de Filena. | JOG |
+| 5-B | Combates tutoriais | Encontros leves exibem habilidades do grupo e ensinam mecanicas de equipe. | JOG |
+| 5-C | Chegada ao portao | Fade-out marca checkpoint e transicao para o Portao de Kravens. | CS |
 
 ##### Cena 6 - Portao de Kravens
 
-| Beat                          | Premissa Resumida                                          | Tipo |
-| ----------------------------- | ---------------------------------------------------------- | ---- |
-| **6-A - Burocracia na grade** | Guardas locais pedem o contrato e questionam o atraso.     | CS   |
-| **6-B - Entrega do contrato** | Jogador seleciona entregar o documento ao guarda.          | JOG  |
-| **6-C - Entrada liberada**    | Contrato conferido, portao destrancado e entrada liberada. | CS   |
-| **6-D - Portao se fecha**     | Grupo entra e o portao fecha atras.                        | JOG  |
+| ID | Titulo | Premissa Resumida | Tipo |
+| --- | --- | --- | --- |
+| 6-A | Burocracia na grade | Guardas locais pedem o contrato e questionam o atraso. | CS |
+| 6-B | Entrega do contrato | Jogador seleciona entregar o documento ao guarda. | JOG |
+| 6-C | Entrada liberada | Contrato conferido, portao destrancado e entrada liberada. | CS |
+| 6-D | Portao se fecha | Grupo entra e o portao fecha atras. | JOG |
 
 ##### Cena 7 - Briefing a Fogueira
 
-| Beat                           | Premissa Resumida                                                   | Tipo |
-| ------------------------------ | ------------------------------------------------------------------- | ---- |
-| **7-A - Pan de apresentacao**  | Camera destaca Balastrus na fogueira e retorna a Thorin.            | CS   |
-| **7-B - Reprimenda e escolha** | Balastrus reclama do atraso; jogador decide se responde ou se cala. | JOG  |
-| **7-C - Plano do amanhecer**   | Lider define a descida e reforca a hierarquia do grupo.             | CS   |
-| **7-D - Conflito e convite**   | Mhordred desafia Balastrus; Kilin encerra e convida para o assado.  | CS   |
+| ID | Titulo | Premissa Resumida | Tipo |
+| --- | --- | --- | --- |
+| 7-A | Pan de apresentacao | Camera destaca Balastrus na fogueira e retorna a Thorin. | CS |
+| 7-B | Reprimenda e escolha | Balastrus reclama do atraso; jogador decide se responde ou se cala. | JOG |
+| 7-C | Plano do amanhecer | Lider define a descida e reforca a hierarquia do grupo. | CS |
+| 7-D | Conflito e convite | Mhordred desafia Balastrus; Kilin encerra e convida para o assado. | CS |
 
 ##### Cena 8 - Assado e Desagravo
 
-| Beat                          | Premissa Resumida                                                                                                                                 | Tipo |
-| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
-| **8-A - Quebra de tensao**    | Conversa informal na fogueira aproxima Thorin dos guardas.                                                                                        | JOG  |
-| **8-B - Pedido de desculpas** | Jogador escolhe como Thorin se desculpa por como vinha agindo.                                                                                    | JOG  |
-| **8-C - Gag do assado**       | Refeicao termina com humor de Mhordred.                                                                                                           | CS   |
-| **8-D - Hora de dormir**      | Objetivo atualizado para ir ate a barraca. Filena se levanta com Mhordred, mas Kilin pede a Thorin que fique, jogador escolhe se vai ficar ou não | JOG  |
+| ID | Titulo | Premissa Resumida | Tipo |
+| --- | --- | --- | --- |
+| 8-A | Quebra de tensao | Conversa informal na fogueira aproxima Thorin dos guardas. | JOG |
+| 8-B | Pedido de desculpas | Jogador escolhe como Thorin se desculpa por como vinha agindo. | JOG |
+| 8-C | Gag do assado | Refeicao termina com humor de Mhordred. | CS |
+| 8-D | Hora de dormir | Objetivo atualizado para ir ate a barraca.<br>Filena se levanta com Mhordred, mas Kilin pede a Thorin que fique,<br>jogador escolhe se vai ficar ou não | JOG |
 
 ##### Cena 9 - Sono Merecido
 
-| Beat                          | Premissa Resumida                             | Tipo |
-| ----------------------------- | --------------------------------------------- | ---- |
-| **9-A - Retorno a barraca**   | Jogador guia Thorin ate sua barraca.          | JOG  |
-| **9-B - Decisao de descanso** | Prompt confirma o descanso e encerra a quest. | JOG  |
+| ID | Titulo | Premissa Resumida | Tipo |
+| --- | --- | --- | --- |
+| 9-A | Retorno a barraca | Jogador guia Thorin ate sua barraca. | JOG |
+| 9-B | Decisao de descanso | Prompt confirma o descanso e encerra a quest. | JOG |
+
+
+
