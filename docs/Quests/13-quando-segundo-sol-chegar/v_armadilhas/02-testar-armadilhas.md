@@ -61,7 +61,7 @@ Quest: Testar Armadilhas
 
 | Beat | Premissa Resumida | Tipo |
 | ---- | ---------------- | ---- |
-| **1-A - Encontro com Balastrus** | Thorin confirma os gargalos e escuta as expectativas de Balastrus. | CS |
+| **1-A - Encontro com Balastrus** | Thorin confirma os gargalos e escuta as expectativas de Balastrus sobre as armadilhas. | CS |
 | **1-B - Alinhamento com Tordan** | Tordan compara notas sobre as últimas incursões. | CS |
 
 ##### Cena 2 - Instalação metódica
