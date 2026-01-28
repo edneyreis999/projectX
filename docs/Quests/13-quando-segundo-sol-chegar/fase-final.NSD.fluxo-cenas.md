@@ -73,9 +73,14 @@ Quest: Quando o Segundo Sol Chegar - Fase Final
 | ---- | ---------------- | ---- |
 | **2-A - Entrada na casa** | O Jogador controla Thorin, que entra na Casa dos Forjaprata e conversa com Tordan. | JOG |
 | **2-B - Tordan se desculpa para Thorin** | Tordan reconhece seu erro ao sufocar o sonho de Thorin. | CS |
-| **2-C - O perdão de Thorin** | Thorin tem a escolha de perdoar, ou não, o pai. | JOG |
-| **2-D - Noite de sono** | Thorin se dirige para a cama para dormir | JOG |
-| **2-E - Defesa de Gildrat** | O jogador decide se quer ir para defesa de Gildrat, ou se preparar mais | JOG |
+| **2-B-a - Thorin perdoa o pai** | Jogador escolhe perdoar o pai. | CHOICE |
+| **2-B-b - Thorin não perdoa o pai** | Jogador escolhe não perdoar o pai. | CHOICE |
+| **2-C - Noite de sono** | Thorin se dirige para a cama. | CS |
+| **2-C-a - Dormir** | Jogador escolhe dormir. | CHOICE |
+| **2-C-b - Não dormir** | Jogador escolhe não dormir. | CHOICE |
+| **2-D - Defesa de Gildrat** | O jogador decide se quer ir para defesa de Gildrat, ou se preparar mais | CS |
+| **2-D-a - Defesa de Gildrat** | O jogador escolhe ir para defesa de Gildrat. | CHOICE |
+| **2-D-b - Defesa de Gildrat** | O jogador escolhe se preparar melhor. | CHOICE |
 
 ##### Cena 3 - Defesa de Gildrat
 

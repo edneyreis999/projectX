@@ -83,5 +83,5 @@ Quest: Testar Dinamite
 
 | Beat | Premissa Resumida | Tipo |
 | ---- | ---------------- | ---- |
-| **4-A - Celebração** | Balastrus reconhece que Thorin pode liderar experiências e atualiza `v_pontos_armadilhas`. | CS |
+| **4-A - Celebração** | Balastrus reconhece que Thorin pode liderar experiências. | CS |
 | **4-B - Decisão futura** | Thorin decide aplicar os aprendizados nas próximas armadilhas, prometendo voltar para ajustar o esquema. | CS |
