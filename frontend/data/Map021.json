@@ -6404,8 +6404,10 @@
           "directionFix": false,
           "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
           "list": [
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["**1-B - Diálogo com guardas** | Os guaras conversa com Thorin. | CS |"] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"1-B\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Diálogo com Guardas\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Os guardas conversam com Thorin.\""] },
+            { "code": 121, "indent": 0, "parameters": [102, 102, 0] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,

@@ -40,7 +40,7 @@
   "boat": { "bgm": { "name": "Ship1", "pan": 0, "pitch": 100, "volume": 90 }, "characterIndex": 0, "characterName": "Vehicle", "startMapId": 0, "startX": 0, "startY": 0 },
   "currencyUnit": "Ludos",
   "defeatMe": { "name": "Defeat1", "pan": 0, "pitch": 100, "volume": 90 },
-  "editMapId": 17,
+  "editMapId": 21,
   "elements": ["", "Físico", "Fogo", "Gelo", "Trovão", "Água", "Terra", "Vento", "Luz", "Trevas"],
   "equipTypes": ["", "Arma", "Escudo", "Cabeça", "Corpo", "Acessório"],
   "gameTitle": "Daratrine - A Origem",
@@ -194,7 +194,7 @@
     "",
     "",
     "",
-    ""
+    "NSD_format"
   ],
   "terms": {
     "basic": ["Nível", "Nv", "PV", "PV", "PM", "PM", "PT", "PT", "EXP", "EXP"],
@@ -394,9 +394,20 @@
     "",
     "",
     "total_preparacao",
-    "quando_segundo_sol_chegar"
+    "quando_segundo_sol_chegar",
+    "",
+    "beat",
+    "nome",
+    "descricao",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
   ],
-  "versionId": 36467351,
+  "versionId": 45384922,
   "victoryMe": { "name": "Victory1", "pan": 0, "pitch": 100, "volume": 90 },
   "weaponTypes": ["", "Adaga", "Espada", "Malho", "Machado", "Chicote", "Cajado", "Arco", "Funda", "Arma de Fogo", "Garra", "Luva", "Lança", ""],
   "windowTone": [0, 0, 0, 0],
