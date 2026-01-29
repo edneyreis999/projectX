@@ -372,12 +372,11 @@
       { "code": 122, "indent": 0, "parameters": [101, 101, 0, 0, 0] },
       { "code": 122, "indent": 0, "parameters": [102, 102, 0, 0, 0] },
       { "code": 122, "indent": 0, "parameters": [103, 103, 0, 0, 0] },
-      { "code": 121, "indent": 0, "parameters": [102, 102, 1] },
       { "code": 0, "indent": 0, "parameters": [] }
     ],
     "name": "NSD_Format",
     "switchId": 102,
-    "trigger": 2
+    "trigger": 0
   },
   { "id": 17, "list": [{ "code": 0, "indent": 0, "parameters": [] }], "name": "", "switchId": 1, "trigger": 0 },
   {
