@@ -682,6 +682,13 @@
             { "code": 223, "indent": 2, "parameters": [[0, 0, 0, 0], 30, true] },
             { "code": 0, "indent": 2, "parameters": [] },
             { "code": 402, "indent": 1, "parameters": [1, "Ainda não estou pronto"] },
+            {
+              "code": 205,
+              "indent": 2,
+              "parameters": [8, { "list": [{ "code": 39, "indent": null }, { "code": 37, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }]
+            },
+            { "code": 505, "indent": 2, "parameters": [{ "code": 39, "indent": null }] },
+            { "code": 505, "indent": 2, "parameters": [{ "code": 37, "indent": null }] },
             { "code": 101, "indent": 2, "parameters": ["", 0, 0, 2, ""] },
             { "code": 401, "indent": 2, "parameters": ["Prepare-se bem antes de partir."] },
             { "code": 122, "indent": 2, "parameters": [61, 61, 0, 0, 2] },
@@ -1779,7 +1786,7 @@
           "moveType": 0,
           "priorityType": 1,
           "stepAnime": false,
-          "through": true,
+          "through": false,
           "trigger": 0,
           "walkAnime": true
         }
