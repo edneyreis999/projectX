@@ -13,7 +13,6 @@
 
 - Locais principais
   - Distrito Comercial de Gildrat
-  - Praça das Câmaras
 - NPCs principais
   - Thorin
   - Balastrus
@@ -59,8 +58,8 @@ Quest: Apaziguar Discussões
 
 | Beat | Premissa Resumida | Tipo |
 | ---- | ---------------- | ---- |
-| **1-A - Instruções da Guarda** | Balastrus detalha limites e esperança do discurso. | CS |
-| **1-B - Aproximação** | O jogador acompanha a Guarda até a Praça das Câmaras. | JOG |
+| **1-A - Instruções da Guarda** | Balastrus detalha limites de ua discução que está acontecendo no Distrito Comercial de Gildrat.| CS |
+| **1-B - Aproximação** | O jogador acompanha a Guarda até o Distrito Comercial. | JOG |
 
 ##### Cena 2 - Debate na praça
 
@@ -75,5 +74,6 @@ Quest: Apaziguar Discussões
 | Beat | Premissa Resumida | Tipo |
 | ---- | ---------------- | ---- |
 | **3-A - Compromisso coletivo** | Thorin propõe dividir recursos e planos de defesa. | CS |
-| **3-B - Teste de armadilha** | Um disparo seguro demonstra que a trégua protege todos. | JOG |
-| **3-C - Confirmação narrativa** | Balastrus atualiza _pontos_armadilhas e elogia o discurso. | CS |
+| **3-B - De volta ao Cão Luar** | Thorin retorna ao Cão Luar com todos. | JOG |
+| **3-C - Teste de armadilha** | Um disparo seguro demonstra que a trégua protege todos. | CS |
+| **3-D - Confirmação narrativa** | Balastrus elogia o discurso de Thorin. | CS |

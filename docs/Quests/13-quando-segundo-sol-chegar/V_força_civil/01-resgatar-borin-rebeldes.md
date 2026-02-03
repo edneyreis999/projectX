@@ -62,7 +62,8 @@ Quest: Resgatar Borin e Rebeldes em Kravens
 | Beat | Premissa Resumida | Tipo |
 | ---- | ---------------- | ---- |
 | **1-A - Conversa urgente** | Filena revela a captura de Borin e o estado dos rebeldes. | CS |
-| **1-B - Compromisso de Thorin** | Thorin aceita o pedido por respeito à Filena e ao grupo de futebol. | CHOICE |
+| **1-A-a - Compromisso de Thorin** | Thorin aceita o pedido por respeito à Filena e ao grupo de futebol. | CHOICE |
+| **1-A-b - Compromisso de Thorin** | Thorin não aceita o pedido. | CHOICE |
 
 ##### Cena 2 - Infiltração em Kravens
 
