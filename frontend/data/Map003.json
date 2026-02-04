@@ -2407,7 +2407,7 @@
     },
     {
       "id": 15,
-      "name": "Rocha 2",
+      "name": "Bloqueio",
       "note": "",
       "pages": [
         {
@@ -2424,7 +2424,7 @@
             "switch2Valid": false,
             "variableId": 34,
             "variableValid": true,
-            "variableValue": 5
+            "variableValue": 3
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Other1", "direction": 2, "pattern": 0, "characterIndex": 2 },
@@ -2438,14 +2438,120 @@
           "through": false,
           "trigger": 0,
           "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 71,
+            "variableValid": true,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "!Other1", "direction": 2, "pattern": 0, "characterIndex": 2 },
+          "list": [
+            { "code": 111, "indent": 0, "parameters": [1, 62, 0, 150, 1] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 1, "parameters": ["Dinamite plantada"] },
+            {
+              "code": 205,
+              "indent": 1,
+              "parameters": [
+                -1,
+                { "list": [{ "code": 45, "parameters": ["Move to:44,40"], "indent": null }, { "code": 19, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
+              ]
+            },
+            { "code": 505, "indent": 1, "parameters": [{ "code": 45, "parameters": ["Move to:44,40"], "indent": null }] },
+            { "code": 505, "indent": 1, "parameters": [{ "code": 19, "indent": null }] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 1, "parameters": ["Explosão"] },
+            { "code": 214, "indent": 1, "parameters": [] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 411, "indent": 0, "parameters": [] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 1, "parameters": ["A avalanche bloqueou a passagem."] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 412, "indent": 0, "parameters": [] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 71,
+            "variableValid": true,
+            "variableValue": 1
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "!Other1", "direction": 2, "pattern": 0, "characterIndex": 2 },
+          "list": [
+            { "code": 111, "indent": 0, "parameters": [1, 62, 0, 150, 1] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 1, "parameters": ["Dinamite plantada"] },
+            {
+              "code": 205,
+              "indent": 1,
+              "parameters": [
+                -1,
+                { "list": [{ "code": 45, "parameters": ["Move to:44,40"], "indent": null }, { "code": 19, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
+              ]
+            },
+            { "code": 505, "indent": 1, "parameters": [{ "code": 45, "parameters": ["Move to:44,40"], "indent": null }] },
+            { "code": 505, "indent": 1, "parameters": [{ "code": 19, "indent": null }] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 1, "parameters": ["Explosão"] },
+            { "code": 214, "indent": 1, "parameters": [] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 411, "indent": 0, "parameters": [] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 1, "parameters": ["A avalanche bloqueou a passagem."] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 412, "indent": 0, "parameters": [] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
         }
       ],
-      "x": 51,
-      "y": 29
+      "x": 43,
+      "y": 37
     },
     {
       "id": 16,
-      "name": "Rocha 3",
+      "name": "Bloqueio",
       "note": "",
       "pages": [
         {
@@ -2462,7 +2568,7 @@
             "switch2Valid": false,
             "variableId": 34,
             "variableValid": true,
-            "variableValue": 5
+            "variableValue": 3
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Other1", "direction": 2, "pattern": 0, "characterIndex": 2 },
@@ -2476,10 +2582,116 @@
           "through": false,
           "trigger": 0,
           "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 71,
+            "variableValid": true,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "!Other1", "direction": 2, "pattern": 0, "characterIndex": 2 },
+          "list": [
+            { "code": 111, "indent": 0, "parameters": [1, 62, 0, 150, 1] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 1, "parameters": ["Dinamite plantada"] },
+            {
+              "code": 205,
+              "indent": 1,
+              "parameters": [
+                -1,
+                { "list": [{ "code": 45, "parameters": ["Move to:44,40"], "indent": null }, { "code": 19, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
+              ]
+            },
+            { "code": 505, "indent": 1, "parameters": [{ "code": 45, "parameters": ["Move to:44,40"], "indent": null }] },
+            { "code": 505, "indent": 1, "parameters": [{ "code": 19, "indent": null }] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 1, "parameters": ["Explosão"] },
+            { "code": 214, "indent": 1, "parameters": [] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 411, "indent": 0, "parameters": [] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 1, "parameters": ["A avalanche bloqueou a passagem."] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 412, "indent": 0, "parameters": [] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 71,
+            "variableValid": true,
+            "variableValue": 1
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "!Other1", "direction": 2, "pattern": 0, "characterIndex": 2 },
+          "list": [
+            { "code": 111, "indent": 0, "parameters": [1, 62, 0, 150, 1] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 1, "parameters": ["Dinamite plantada"] },
+            {
+              "code": 205,
+              "indent": 1,
+              "parameters": [
+                -1,
+                { "list": [{ "code": 45, "parameters": ["Move to:44,40"], "indent": null }, { "code": 19, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
+              ]
+            },
+            { "code": 505, "indent": 1, "parameters": [{ "code": 45, "parameters": ["Move to:44,40"], "indent": null }] },
+            { "code": 505, "indent": 1, "parameters": [{ "code": 19, "indent": null }] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 1, "parameters": ["Explosão"] },
+            { "code": 214, "indent": 1, "parameters": [] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 411, "indent": 0, "parameters": [] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 1, "parameters": ["A avalanche bloqueou a passagem."] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 412, "indent": 0, "parameters": [] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
         }
       ],
-      "x": 50,
-      "y": 28
+      "x": 45,
+      "y": 37
     },
     {
       "id": 17,
@@ -2976,7 +3188,7 @@
             "switch2Valid": false,
             "variableId": 34,
             "variableValid": true,
-            "variableValue": 5
+            "variableValue": 3
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Other1", "direction": 2, "pattern": 0, "characterIndex": 2 },
@@ -2990,14 +3202,120 @@
           "through": false,
           "trigger": 0,
           "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 71,
+            "variableValid": true,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "!Other1", "direction": 2, "pattern": 0, "characterIndex": 2 },
+          "list": [
+            { "code": 111, "indent": 0, "parameters": [1, 62, 0, 150, 1] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 1, "parameters": ["Dinamite plantada"] },
+            {
+              "code": 205,
+              "indent": 1,
+              "parameters": [
+                -1,
+                { "list": [{ "code": 45, "parameters": ["Move to:44,40"], "indent": null }, { "code": 19, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
+              ]
+            },
+            { "code": 505, "indent": 1, "parameters": [{ "code": 45, "parameters": ["Move to:44,40"], "indent": null }] },
+            { "code": 505, "indent": 1, "parameters": [{ "code": 19, "indent": null }] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 1, "parameters": ["Explosão"] },
+            { "code": 214, "indent": 1, "parameters": [] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 411, "indent": 0, "parameters": [] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 1, "parameters": ["A avalanche bloqueou a passagem."] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 412, "indent": 0, "parameters": [] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 71,
+            "variableValid": true,
+            "variableValue": 1
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "!Other1", "direction": 2, "pattern": 0, "characterIndex": 2 },
+          "list": [
+            { "code": 111, "indent": 0, "parameters": [1, 62, 0, 150, 1] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 1, "parameters": ["Dinamite plantada"] },
+            {
+              "code": 205,
+              "indent": 1,
+              "parameters": [
+                -1,
+                { "list": [{ "code": 45, "parameters": ["Move to:44,40"], "indent": null }, { "code": 19, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
+              ]
+            },
+            { "code": 505, "indent": 1, "parameters": [{ "code": 45, "parameters": ["Move to:44,40"], "indent": null }] },
+            { "code": 505, "indent": 1, "parameters": [{ "code": 19, "indent": null }] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 1, "parameters": ["Explosão"] },
+            { "code": 214, "indent": 1, "parameters": [] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 411, "indent": 0, "parameters": [] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 1, "parameters": ["A avalanche bloqueou a passagem."] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 412, "indent": 0, "parameters": [] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
         }
       ],
-      "x": 46,
-      "y": 33
+      "x": 44,
+      "y": 37
     },
     {
       "id": 22,
-      "name": "Bloqueio",
+      "name": "Teleporte (Estrada do Cão Luar)",
       "note": "",
       "pages": [
         {
@@ -3012,103 +3330,33 @@
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 34,
-            "variableValid": true,
-            "variableValue": 5
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "!Other1", "direction": 2, "pattern": 0, "characterIndex": 2 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 0, "characterIndex": 7 },
+          "list": [
+            { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
+            { "code": 201, "indent": 0, "parameters": [0, 24, 16, 33, 8, 0] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": false,
+          "stepAnime": true,
           "through": false,
-          "trigger": 0,
-          "walkAnime": true
+          "trigger": 1,
+          "walkAnime": false
         }
       ],
-      "x": 47,
-      "y": 33
+      "x": 36,
+      "y": 63
     },
-    {
-      "id": 23,
-      "name": "Bloqueio",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 34,
-            "variableValid": true,
-            "variableValue": 5
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "!Other1", "direction": 2, "pattern": 0, "characterIndex": 2 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 48,
-      "y": 33
-    },
-    {
-      "id": 24,
-      "name": "Bloqueio",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 34,
-            "variableValid": true,
-            "variableValue": 5
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "!Other1", "direction": 2, "pattern": 0, "characterIndex": 2 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 49,
-      "y": 33
-    },
+    null,
+    null,
     {
       "id": 25,
       "name": "Corvo 1",
