@@ -1654,6 +1654,11 @@
             { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Dependendo do resgate, Borin aceita trabalhar com Thorin ou recusa..\""] },
             { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 122, "indent": 0, "parameters": [71, 71, 1, 0, 1] },
+            { "code": 355, "indent": 0, "parameters": ["SQSM.CompleteTaskForQuest(\"resgatarBorin\", 3);"] },
+            { "code": 111, "indent": 0, "parameters": [1, 72, 0, 2, 0] },
+            { "code": 355, "indent": 1, "parameters": ["SQSM.CompleteQuest(\"resgatarBorin\");"] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 412, "indent": 0, "parameters": [] },
             { "code": 123, "indent": 0, "parameters": ["A", 0] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
@@ -1930,6 +1935,11 @@
             { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Thorin libera o primeiro grupo de rebeldes e decide quantos pôr em segurança.\""] },
             { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 122, "indent": 0, "parameters": [72, 72, 1, 0, 1] },
+            { "code": 355, "indent": 0, "parameters": ["SQSM.CompleteTaskForQuest(\"resgatarBorin\", 4);"] },
+            { "code": 111, "indent": 0, "parameters": [1, 71, 0, 2, 0] },
+            { "code": 355, "indent": 1, "parameters": ["SQSM.CompleteQuest(\"resgatarBorin\");"] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 412, "indent": 0, "parameters": [] },
             { "code": 123, "indent": 0, "parameters": ["A", 0] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
