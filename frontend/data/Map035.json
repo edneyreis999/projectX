@@ -1619,6 +1619,35 @@
           "through": false,
           "trigger": 0,
           "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 61,
+            "variableValid": true,
+            "variableValue": 2
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
         }
       ],
       "x": 48,
@@ -2359,7 +2388,7 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Mina de Melios/!$Pedras", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [
-            { "code": 111, "indent": 0, "parameters": [1, 62, 0, 150, 1] },
+            { "code": 111, "indent": 0, "parameters": [8, 11] },
             { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
             { "code": 401, "indent": 1, "parameters": ["Explosão"] },
             { "code": 123, "indent": 1, "parameters": ["A", 0] },
@@ -2479,6 +2508,8 @@
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
             { "code": 401, "indent": 0, "parameters": ["Resgate bem sucedido."] },
             { "code": 122, "indent": 0, "parameters": [73, 73, 0, 0, 2] },
+            { "code": 355, "indent": 0, "parameters": ["SQSM.CompleteTaskForQuest(\"resgatarKilin\", 2);"] },
+            { "code": 655, "indent": 0, "parameters": ["SQSM.CompleteQuest(\"resgatarKilin\");"] },
             { "code": 214, "indent": 0, "parameters": [] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
@@ -2513,13 +2544,19 @@
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
+            "variableId": 61,
+            "variableValid": true,
+            "variableValue": 2
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Kravens/$Minerador1Andar1", "direction": 2, "pattern": 1, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "list": [
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Resgate bem sucedido."] },
+            { "code": 122, "indent": 0, "parameters": [85, 85, 1, 0, 1] },
+            { "code": 214, "indent": 0, "parameters": [] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -2551,13 +2588,19 @@
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
+            "variableId": 61,
+            "variableValid": true,
+            "variableValue": 2
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Kravens/$Minerador1Andar1", "direction": 2, "pattern": 1, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "list": [
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Resgate bem sucedido."] },
+            { "code": 122, "indent": 0, "parameters": [85, 85, 1, 0, 1] },
+            { "code": 214, "indent": 0, "parameters": [] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -2569,8 +2612,8 @@
           "walkAnime": true
         }
       ],
-      "x": 85,
-      "y": 78
+      "x": 11,
+      "y": 41
     },
     {
       "id": 23,
@@ -2589,13 +2632,19 @@
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
+            "variableId": 61,
+            "variableValid": true,
+            "variableValue": 2
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Kravens/$Minerador1Andar1", "direction": 2, "pattern": 1, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "list": [
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Resgate bem sucedido."] },
+            { "code": 122, "indent": 0, "parameters": [85, 85, 1, 0, 1] },
+            { "code": 214, "indent": 0, "parameters": [] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -2607,8 +2656,8 @@
           "walkAnime": true
         }
       ],
-      "x": 84,
-      "y": 47
+      "x": 87,
+      "y": 46
     },
     {
       "id": 24,
@@ -2627,13 +2676,19 @@
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
+            "variableId": 61,
+            "variableValid": true,
+            "variableValue": 2
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Kravens/$Minerador1Andar1", "direction": 2, "pattern": 1, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "list": [
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Resgate bem sucedido."] },
+            { "code": 122, "indent": 0, "parameters": [85, 85, 1, 0, 1] },
+            { "code": 214, "indent": 0, "parameters": [] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -2645,8 +2700,50 @@
           "walkAnime": true
         }
       ],
-      "x": 14,
-      "y": 42
+      "x": 87,
+      "y": 78
+    },
+    {
+      "id": 25,
+      "name": "Teleporte (Entrada de Kravens)",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 61,
+            "variableValid": true,
+            "variableValue": 2
+          },
+          "directionFix": true,
+          "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 2, "characterIndex": 7 },
+          "list": [
+            { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
+            { "code": 201, "indent": 0, "parameters": [0, 40, 15, 7, 0, 0] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        }
+      ],
+      "x": 48,
+      "y": 89
     }
   ]
 }

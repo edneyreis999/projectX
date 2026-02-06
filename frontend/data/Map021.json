@@ -6408,6 +6408,10 @@
             { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Diálogo com Guardas\""] },
             { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Os guardas conversam com Thorin.\""] },
             { "code": 117, "indent": 0, "parameters": [16] },
+            { "code": 129, "indent": 0, "parameters": [6, 1, true] },
+            { "code": 129, "indent": 0, "parameters": [4, 1, true] },
+            { "code": 129, "indent": 0, "parameters": [8, 1, true] },
+            { "code": 129, "indent": 0, "parameters": [2, 1, true] },
             { "code": 123, "indent": 0, "parameters": ["A", 0] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],

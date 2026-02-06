@@ -110,7 +110,16 @@
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 8, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [66, 66, 1, 0, 1] },
+            { "code": 111, "indent": 0, "parameters": [1, 66, 0, 10, 0] },
+            { "code": 122, "indent": 1, "parameters": [83, 83, 0, 0, 2] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 412, "indent": 0, "parameters": [] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Você minerou 1  Sigmetal."] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -122,8 +131,8 @@
           "walkAnime": true
         }
       ],
-      "x": 6,
-      "y": 11
+      "x": 2,
+      "y": 9
     },
     {
       "id": 3,
@@ -148,7 +157,16 @@
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 8, "pattern": 1, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [66, 66, 1, 0, 1] },
+            { "code": 111, "indent": 0, "parameters": [1, 66, 0, 10, 0] },
+            { "code": 122, "indent": 1, "parameters": [83, 83, 0, 0, 2] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 412, "indent": 0, "parameters": [] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Você minerou 1  Sigmetal."] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -186,7 +204,16 @@
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 8, "pattern": 1, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [66, 66, 1, 0, 1] },
+            { "code": 111, "indent": 0, "parameters": [1, 66, 0, 10, 0] },
+            { "code": 122, "indent": 1, "parameters": [83, 83, 0, 0, 2] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 412, "indent": 0, "parameters": [] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Você minerou 1  Sigmetal."] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -198,8 +225,8 @@
           "walkAnime": true
         }
       ],
-      "x": 9,
-      "y": 8
+      "x": 2,
+      "y": 5
     },
     {
       "id": 5,
@@ -224,7 +251,16 @@
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 8, "pattern": 1, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [66, 66, 1, 0, 1] },
+            { "code": 111, "indent": 0, "parameters": [1, 66, 0, 10, 0] },
+            { "code": 122, "indent": 1, "parameters": [83, 83, 0, 0, 2] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 412, "indent": 0, "parameters": [] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Você minerou 1  Sigmetal."] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -236,8 +272,8 @@
           "walkAnime": true
         }
       ],
-      "x": 2,
-      "y": 5
+      "x": 6,
+      "y": 8
     },
     {
       "id": 6,
@@ -262,7 +298,16 @@
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 8, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [66, 66, 1, 0, 1] },
+            { "code": 111, "indent": 0, "parameters": [1, 66, 0, 10, 0] },
+            { "code": 122, "indent": 1, "parameters": [83, 83, 0, 0, 2] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 412, "indent": 0, "parameters": [] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Você minerou 1  Sigmetal."] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -274,8 +319,8 @@
           "walkAnime": true
         }
       ],
-      "x": 4,
-      "y": 8
+      "x": 12,
+      "y": 11
     },
     {
       "id": 7,
@@ -300,7 +345,16 @@
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 8, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [66, 66, 1, 0, 1] },
+            { "code": 111, "indent": 0, "parameters": [1, 66, 0, 10, 0] },
+            { "code": 122, "indent": 1, "parameters": [83, 83, 0, 0, 2] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 412, "indent": 0, "parameters": [] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Você minerou 1  Sigmetal."] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -337,8 +391,17 @@
             "variableValue": 0
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 8, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 8, "pattern": 1, "characterIndex": 0 },
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [66, 66, 1, 0, 1] },
+            { "code": 111, "indent": 0, "parameters": [1, 66, 0, 10, 0] },
+            { "code": 122, "indent": 1, "parameters": [83, 83, 0, 0, 2] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 412, "indent": 0, "parameters": [] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Você minerou 1  Sigmetal."] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -351,7 +414,7 @@
         }
       ],
       "x": 12,
-      "y": 11
+      "y": 8
     },
     {
       "id": 9,
@@ -376,7 +439,16 @@
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 8, "pattern": 1, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [66, 66, 1, 0, 1] },
+            { "code": 111, "indent": 0, "parameters": [1, 66, 0, 10, 0] },
+            { "code": 122, "indent": 1, "parameters": [83, 83, 0, 0, 2] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 412, "indent": 0, "parameters": [] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Você minerou 1  Sigmetal."] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -388,8 +460,8 @@
           "walkAnime": true
         }
       ],
-      "x": 9,
-      "y": 11
+      "x": 8,
+      "y": 5
     },
     {
       "id": 10,
@@ -413,8 +485,17 @@
             "variableValue": 0
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 8, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 8, "pattern": 1, "characterIndex": 0 },
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [66, 66, 1, 0, 1] },
+            { "code": 111, "indent": 0, "parameters": [1, 66, 0, 10, 0] },
+            { "code": 122, "indent": 1, "parameters": [83, 83, 0, 0, 2] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 412, "indent": 0, "parameters": [] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Você minerou 1  Sigmetal."] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
@@ -426,8 +507,98 @@
           "walkAnime": true
         }
       ],
+      "x": 9,
+      "y": 10
+    },
+    {
+      "id": 11,
+      "name": "Teleporte (Area escondida)",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
+            { "code": 201, "indent": 0, "parameters": [0, 48, 14, 27, 0, 0] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        }
+      ],
       "x": 7,
-      "y": 5
+      "y": 13
+    },
+    null,
+    {
+      "id": 13,
+      "name": "EV013",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 8, "pattern": 0, "characterIndex": 0 },
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [66, 66, 1, 0, 1] },
+            { "code": 111, "indent": 0, "parameters": [1, 66, 0, 10, 0] },
+            { "code": 122, "indent": 1, "parameters": [83, 83, 0, 0, 2] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 412, "indent": 0, "parameters": [] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Você minerou 1  Sigmetal."] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 4,
+      "y": 7
     }
   ]
 }
