@@ -111,8 +111,8 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 8, "pattern": 0, "characterIndex": 0 },
           "list": [
-            { "code": 122, "indent": 0, "parameters": [66, 66, 1, 0, 1] },
-            { "code": 111, "indent": 0, "parameters": [1, 66, 0, 10, 0] },
+            { "code": 122, "indent": 0, "parameters": [84, 84, 1, 0, 1] },
+            { "code": 111, "indent": 0, "parameters": [1, 84, 0, 10, 0] },
             { "code": 122, "indent": 1, "parameters": [83, 83, 0, 0, 2] },
             { "code": 0, "indent": 1, "parameters": [] },
             { "code": 412, "indent": 0, "parameters": [] },
@@ -132,7 +132,7 @@
         }
       ],
       "x": 2,
-      "y": 9
+      "y": 8
     },
     {
       "id": 3,
@@ -158,8 +158,8 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [
-            { "code": 122, "indent": 0, "parameters": [66, 66, 1, 0, 1] },
-            { "code": 111, "indent": 0, "parameters": [1, 66, 0, 10, 0] },
+            { "code": 122, "indent": 0, "parameters": [84, 84, 1, 0, 1] },
+            { "code": 111, "indent": 0, "parameters": [1, 84, 0, 10, 0] },
             { "code": 122, "indent": 1, "parameters": [83, 83, 0, 0, 2] },
             { "code": 0, "indent": 1, "parameters": [] },
             { "code": 412, "indent": 0, "parameters": [] },
@@ -205,8 +205,8 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [
-            { "code": 122, "indent": 0, "parameters": [66, 66, 1, 0, 1] },
-            { "code": 111, "indent": 0, "parameters": [1, 66, 0, 10, 0] },
+            { "code": 122, "indent": 0, "parameters": [84, 84, 1, 0, 1] },
+            { "code": 111, "indent": 0, "parameters": [1, 84, 0, 10, 0] },
             { "code": 122, "indent": 1, "parameters": [83, 83, 0, 0, 2] },
             { "code": 0, "indent": 1, "parameters": [] },
             { "code": 412, "indent": 0, "parameters": [] },
@@ -252,8 +252,8 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [
-            { "code": 122, "indent": 0, "parameters": [66, 66, 1, 0, 1] },
-            { "code": 111, "indent": 0, "parameters": [1, 66, 0, 10, 0] },
+            { "code": 122, "indent": 0, "parameters": [84, 84, 1, 0, 1] },
+            { "code": 111, "indent": 0, "parameters": [1, 84, 0, 10, 0] },
             { "code": 122, "indent": 1, "parameters": [83, 83, 0, 0, 2] },
             { "code": 0, "indent": 1, "parameters": [] },
             { "code": 412, "indent": 0, "parameters": [] },
@@ -272,7 +272,7 @@
           "walkAnime": true
         }
       ],
-      "x": 6,
+      "x": 5,
       "y": 8
     },
     {
@@ -299,8 +299,8 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 8, "pattern": 0, "characterIndex": 0 },
           "list": [
-            { "code": 122, "indent": 0, "parameters": [66, 66, 1, 0, 1] },
-            { "code": 111, "indent": 0, "parameters": [1, 66, 0, 10, 0] },
+            { "code": 122, "indent": 0, "parameters": [84, 84, 1, 0, 1] },
+            { "code": 111, "indent": 0, "parameters": [1, 84, 0, 10, 0] },
             { "code": 122, "indent": 1, "parameters": [83, 83, 0, 0, 2] },
             { "code": 0, "indent": 1, "parameters": [] },
             { "code": 412, "indent": 0, "parameters": [] },
@@ -319,8 +319,8 @@
           "walkAnime": true
         }
       ],
-      "x": 12,
-      "y": 11
+      "x": 7,
+      "y": 5
     },
     {
       "id": 7,
@@ -346,8 +346,8 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 8, "pattern": 0, "characterIndex": 0 },
           "list": [
-            { "code": 122, "indent": 0, "parameters": [66, 66, 1, 0, 1] },
-            { "code": 111, "indent": 0, "parameters": [1, 66, 0, 10, 0] },
+            { "code": 122, "indent": 0, "parameters": [84, 84, 1, 0, 1] },
+            { "code": 111, "indent": 0, "parameters": [1, 84, 0, 10, 0] },
             { "code": 122, "indent": 1, "parameters": [83, 83, 0, 0, 2] },
             { "code": 0, "indent": 1, "parameters": [] },
             { "code": 412, "indent": 0, "parameters": [] },
@@ -393,8 +393,8 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [
-            { "code": 122, "indent": 0, "parameters": [66, 66, 1, 0, 1] },
-            { "code": 111, "indent": 0, "parameters": [1, 66, 0, 10, 0] },
+            { "code": 122, "indent": 0, "parameters": [84, 84, 1, 0, 1] },
+            { "code": 111, "indent": 0, "parameters": [1, 84, 0, 10, 0] },
             { "code": 122, "indent": 1, "parameters": [83, 83, 0, 0, 2] },
             { "code": 0, "indent": 1, "parameters": [] },
             { "code": 412, "indent": 0, "parameters": [] },
@@ -438,10 +438,10 @@
             "variableValue": 0
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 8, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 8, "pattern": 0, "characterIndex": 0 },
           "list": [
-            { "code": 122, "indent": 0, "parameters": [66, 66, 1, 0, 1] },
-            { "code": 111, "indent": 0, "parameters": [1, 66, 0, 10, 0] },
+            { "code": 122, "indent": 0, "parameters": [84, 84, 1, 0, 1] },
+            { "code": 111, "indent": 0, "parameters": [1, 84, 0, 10, 0] },
             { "code": 122, "indent": 1, "parameters": [83, 83, 0, 0, 2] },
             { "code": 0, "indent": 1, "parameters": [] },
             { "code": 412, "indent": 0, "parameters": [] },
@@ -460,8 +460,8 @@
           "walkAnime": true
         }
       ],
-      "x": 8,
-      "y": 5
+      "x": 12,
+      "y": 11
     },
     {
       "id": 10,
@@ -487,8 +487,8 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [
-            { "code": 122, "indent": 0, "parameters": [66, 66, 1, 0, 1] },
-            { "code": 111, "indent": 0, "parameters": [1, 66, 0, 10, 0] },
+            { "code": 122, "indent": 0, "parameters": [84, 84, 1, 0, 1] },
+            { "code": 111, "indent": 0, "parameters": [1, 84, 0, 10, 0] },
             { "code": 122, "indent": 1, "parameters": [83, 83, 0, 0, 2] },
             { "code": 0, "indent": 1, "parameters": [] },
             { "code": 412, "indent": 0, "parameters": [] },
@@ -507,8 +507,8 @@
           "walkAnime": true
         }
       ],
-      "x": 9,
-      "y": 10
+      "x": 8,
+      "y": 11
     },
     {
       "id": 11,
@@ -552,10 +552,9 @@
       "x": 7,
       "y": 13
     },
-    null,
     {
-      "id": 13,
-      "name": "EV013",
+      "id": 12,
+      "name": "EV012",
       "note": "",
       "pages": [
         {
@@ -575,10 +574,10 @@
             "variableValue": 0
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 8, "pattern": 0, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "CasaForjaprata/$Iluminacao", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [
-            { "code": 122, "indent": 0, "parameters": [66, 66, 1, 0, 1] },
-            { "code": 111, "indent": 0, "parameters": [1, 66, 0, 10, 0] },
+            { "code": 122, "indent": 0, "parameters": [84, 84, 1, 0, 1] },
+            { "code": 111, "indent": 0, "parameters": [1, 84, 0, 10, 0] },
             { "code": 122, "indent": 1, "parameters": [83, 83, 0, 0, 2] },
             { "code": 0, "indent": 1, "parameters": [] },
             { "code": 412, "indent": 0, "parameters": [] },
@@ -597,8 +596,9 @@
           "walkAnime": true
         }
       ],
-      "x": 4,
-      "y": 7
-    }
+      "x": 9,
+      "y": 8
+    },
+    null
   ]
 }
