@@ -171,7 +171,6 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 0, "characterIndex": 7 },
           "list": [
-            { "code": 250, "indent": 0, "parameters": [{ "name": "Open1", "volume": 90, "pitch": 100, "pan": 0 }] },
             {
               "code": 205,
               "indent": 0,
@@ -234,6 +233,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Principal/$Tusk", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"Brutus-3\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Partida marcada\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"A caravana consegue partir, os batedores liberam o caminho e Brutus celebra o avanço.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             {
               "code": 205,
               "indent": 0,
@@ -649,6 +652,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Principal/$Tusk", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"Brutus-1\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Intimidação\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Brutus ameaça Thorin e lembra que seu pai não o protege aqui.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 5, 0, 2, "Brutus"] },
             { "code": 401, "indent": 0, "parameters": ["O que você quer, moleque?! Eu estou sem "] },
             { "code": 401, "indent": 0, "parameters": ["paciência para as suas gracinhas, Thorin."] },
@@ -685,6 +692,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Principal/$Tusk", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"Brutus-2\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Sigmetal revelado\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Brutus exibe o Sigmetal, manda o grupo para a Taverna da Pedra Vulcânica amanhã e ordena o depósito.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal2", 5, 0, 2, "Brutus"] },
             { "code": 401, "indent": 0, "parameters": ["O que você quer, moleque?!"] },
             {
@@ -911,6 +922,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Principal/$Tusk", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"Bau-1\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Pagamento adiado\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"O responsável adia o pagamento e manda voltar à Taverna da Pedra Vulcânica amanhã.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             {
               "code": 205,
               "indent": 0,
@@ -1493,6 +1508,10 @@
           "directionFix": false,
           "image": { "characterIndex": 0, "characterName": "People3", "direction": 2, "pattern": 0, "tileId": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"Balastrus-4\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Pedido do minerador\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Minerador pede 10 Sigmetal extras antes de voltar para reforçar a guarda.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 111, "indent": 0, "parameters": [1, 83, 0, 2, 0] },
             { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
             { "code": 401, "indent": 1, "parameters": ["Parabéns, você conseguiu o sigmetal necessário."] },
@@ -1543,6 +1562,10 @@
           "directionFix": false,
           "image": { "characterIndex": 0, "characterName": "People3", "direction": 2, "pattern": 0, "tileId": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"Balastrus-5\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Entrega ordenada\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Balastrus manda levar o Sigmetal aos ferreiros para reforçar a defesa.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Minerador"] },
             { "code": 401, "indent": 0, "parameters": ["Leve o Sigmetal aos ferreiros!"] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -1576,6 +1599,10 @@
           "directionFix": false,
           "image": { "characterIndex": 1, "characterName": "People3", "direction": 2, "pattern": 0, "tileId": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"Balastrus-6\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Armaduras urgentes\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Balastrus lembra que as armaduras reforçadas precisam do Sigmetal recuperado.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Ferreiro"] },
             { "code": 401, "indent": 0, "parameters": ["Preciso de Sigmetal para as armaduras."] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -1609,6 +1636,10 @@
           "directionFix": false,
           "image": { "characterIndex": 1, "characterName": "People3", "direction": 2, "pattern": 0, "tileId": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"Balastrus-7\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Reforço pronto\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"O ferreiro anuncia armaduras reforçadas prontas com bônus de pontos e libera o retorno.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 111, "indent": 0, "parameters": [1, 84, 0, 0, 0] },
             { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, "Ferreiro"] },
             { "code": 401, "indent": 1, "parameters": ["Sigmetal! Posso forjar armaduras reforçadas!"] },
@@ -1664,6 +1695,10 @@
           "directionFix": false,
           "image": { "characterIndex": 2, "characterName": "People3", "direction": 2, "pattern": 0, "tileId": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"Balastrus-8\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Pedido de armas\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Balastrus manda parte do Sigmetal ao armeiro para forjar peças reforçadas.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Armeiro"] },
             { "code": 401, "indent": 0, "parameters": ["Preciso de Sigmetal para as armas."] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -1697,6 +1732,10 @@
           "directionFix": false,
           "image": { "characterIndex": 2, "characterName": "People3", "direction": 2, "pattern": 0, "tileId": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"Balastrus-9\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Armas concluídas\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Armeiro confirma que as armas reforçadas estão prontas e anota o bônus.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 111, "indent": 0, "parameters": [1, 85, 0, 0, 0] },
             { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, "Armeiro"] },
             { "code": 401, "indent": 1, "parameters": ["Sigmetal! Posso forjar armas reforçadas!"] },
@@ -2145,9 +2184,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 0, "characterIndex": 7 },
           "list": [
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["| **2-B - Balastrus explica riscos** | Balastrus detalha o"] },
-            { "code": 401, "indent": 0, "parameters": ["que cada carga representa e por que precisa de testes.| CS |"] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"QuestDinamite-7-1\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Briefing e testes\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Balastrus detalha os riscos e comanda três testes de dinamite para calibrar o sistema.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 102, "indent": 0, "parameters": [["Vamos testar", "Agora não"], 0, 0, 2, 0] },
             { "code": 402, "indent": 0, "parameters": [0, "Vamos testar"] },
             { "code": 223, "indent": 1, "parameters": [[-255, -255, -255, 0], 30, true] },
@@ -2216,6 +2256,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"QuestDinamite-7-2\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Dinamite calibrada\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Confirmam que a dinamite está calibrada e pronta para uso.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Valamir"] },
             { "code": 401, "indent": 0, "parameters": ["A dinamite já está calibrada, Thorin!"] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -2258,9 +2302,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 0, "characterIndex": 7 },
           "list": [
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["| **2-B - Balastrus explica riscos** | Balastrus detalha o"] },
-            { "code": 401, "indent": 0, "parameters": ["que cada carga representa e por que precisa de testes.| CS |"] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"QuestDinamite-8-1\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Briefing repetido\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Balastrus repete o briefing e reforça os testes de explosão para validar o cronômetro.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 102, "indent": 0, "parameters": [["Vamos testar", "Agora não"], 0, 0, 2, 0] },
             { "code": 402, "indent": 0, "parameters": [0, "Vamos testar"] },
             { "code": 223, "indent": 1, "parameters": [[-255, -255, -255, 0], 30, true] },
@@ -2329,6 +2374,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"QuestDinamite-8-2\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Dinamite confirmada\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Reafirmam que a dinamite calibrada permanece pronta para uso.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Valamir"] },
             { "code": 401, "indent": 0, "parameters": ["A dinamite já está calibrada, Thorin!"] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -2371,6 +2420,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Kravens/$GuardaKravens", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"Ferreiro-1\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Pedido inicial\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"O ferreiro solicita Sigmetal para preparar armaduras reforçadas.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Ferreiro"] },
             { "code": 401, "indent": 0, "parameters": ["Preciso de Sigmetal para as armaduras."] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -2404,6 +2457,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Kravens/$GuardaKravens", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"Ferreiro-2\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Forja ativa\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"O ferreiro registra o uso do Sigmetal, o bônus adquirido e permite voltar depois.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 111, "indent": 0, "parameters": [1, 84, 0, 5, 1] },
             { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, "Ferreiro"] },
             { "code": 401, "indent": 1, "parameters": ["Sigmetal! Posso forjar armaduras reforçadas!"] },
@@ -2466,6 +2523,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Kravens/$GuardaKravens", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"Ferreiro-3\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Entrega completa\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Confirmam que as armaduras reforçadas ficaram prontas e aguardam entrega.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Ferreiro"] },
             { "code": 401, "indent": 0, "parameters": ["As armaduras estão prontas!"] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -2508,6 +2569,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Kravens/$GuardaKravens", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"Armeiro-1\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Pedido inicial\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Armeiro pede Sigmetal para forjar armas reforçadas.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Armeiro"] },
             { "code": 401, "indent": 0, "parameters": ["Preciso de Sigmetal para as armas."] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -2541,6 +2606,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Kravens/$GuardaKravens", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"Armeiro-2\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Forja ativa\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"O armeiro registra o bônus em Sigmetal e oferece voltar depois.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Armeiro"] },
             { "code": 401, "indent": 0, "parameters": ["Sigmetal! Posso forjar armas reforçadas!"] },
             { "code": 102, "indent": 0, "parameters": [["Forjar armas", "Agora não"], 0, 0, 2, 0] },
@@ -2596,6 +2665,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Kravens/$GuardaKravens", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"Armeiro-3\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Armas prontas\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"As armas reforçadas estão concluídas e aguardam entrega.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Armeiro"] },
             { "code": 401, "indent": 0, "parameters": ["As armas estão prontas!"] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -3298,6 +3371,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Principal/$Balastrus", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"Bau-3\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Confirmação de entrega\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Confirmam que o material foi deixado no baú e podem seguir.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             {
               "code": 205,
               "indent": 0,
@@ -3654,6 +3731,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Principal/$Balastrus", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"BalastrusKhawe-5\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Boas-vindas\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Balastrus celebra ver Thorin seguro e confirma o plano.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal1", 0, 0, 2, "Balastrus"] },
             { "code": 401, "indent": 0, "parameters": ["É bom ver que está a salvo, senhor Forjaprata!"] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -3687,6 +3768,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Principal/$Balastrus", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"BalastrusKhawe-6\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Provocações\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Balastrus provoca Brutus, elogia Thorin e manda organizar os minérios.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal1", 0, 0, 2, "Balastrus"] },
             { "code": 401, "indent": 0, "parameters": ["Sim, senhor Forjaprata. O que deseja?!"] },
             {
@@ -3850,6 +3935,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Principal/$Balastrus", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"BalastrusKhawe-7\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Encerramento\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Balastrus encerra a reunião, lembra do pagamento e dissolve o grupo.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["Portraits menores/Principal1", 0, 0, 2, "Balastrus"] },
             { "code": 401, "indent": 0, "parameters": ["Muito bem, senhor Forjaprata! Acho que isso é"] },
             { "code": 401, "indent": 0, "parameters": ["tudo."] },
@@ -4042,6 +4131,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario1", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"Kaldorn-1\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Aviso\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Kaldorn alerta sobre os perigos que rondam a região.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Kaldorn "] },
             { "code": 401, "indent": 0, "parameters": ["É perigoso lá fora, se prepare."] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -4113,6 +4206,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario2", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"Torvald-1\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Pressa\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Torvald insiste em partir logo para voltar mais cedo.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Torvald"] },
             { "code": 401, "indent": 0, "parameters": ["Quanto antes partirmos, mais rápido podemos voltar!"] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -4184,6 +4281,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario3", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"Borrin-1\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Desânimo\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Borrin confessa odiar o trabalho pesado.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Borrin"] },
             { "code": 401, "indent": 0, "parameters": ["Odeio esse trabalho!"] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -4255,6 +4356,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"VoltaKravens-1\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Depósito\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Thorin entrega os minérios e recebe ordens sobre o baú.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 355, "indent": 0, "parameters": ["SQSM.CompleteTaskForQuest(\"travessiaPerigosa\", 1);"] },
             { "code": 655, "indent": 0, "parameters": ["SQSM.ShowTaskForQuest(\"travessiaPerigosa\", 2);"] },
             {
@@ -4414,6 +4519,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Chest", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"Bau-4\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Saída preparada\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Reafirmam que os registros estão completos e liberam a saída.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             {
               "code": 357,
               "indent": 0,
@@ -4680,6 +4789,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Chest", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"Bau-2\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Reforço do adiamento\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Repetem que não há pagamento hoje e pedem para aguardar.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             {
               "code": 357,
               "indent": 0,
@@ -5184,6 +5297,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario1", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"KaldornBau-2\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Fadiga\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Kaldorn comenta que está com sono depois de cuidar do baú.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Kaldorn"] },
             { "code": 401, "indent": 0, "parameters": ["Caramba, estou com muito sono!"] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -5284,6 +5401,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario2", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"TorvaldBau-2\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Saudação\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Torvald celebra o retorno a Gildrat depois da jornada.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Torvald"] },
             { "code": 401, "indent": 0, "parameters": ["É bom ver Gildrat novamente!"] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -5384,6 +5505,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario3", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"BorrinBau-2\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Cofre empoeirado\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Borrin brinca que o cofre está cheio de teias de aranha e cobras.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Borrin"] },
             { "code": 401, "indent": 0, "parameters": ["Meu cofre no banco deve estar cheio de teias de aranha e"] },
             { "code": 401, "indent": 0, "parameters": ["cobras. Já não vê dinheiro a muito tempo!"] },
@@ -5582,9 +5707,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 0, "characterIndex": 7 },
           "list": [
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["| **2-B - Sincronizar armadilhas** | Balastrus ordena a"] },
-            { "code": 401, "indent": 0, "parameters": ["calibração dos tempos e do cronômetro. | "] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"Armadilhas-25-1\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Sincronização\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Balastrus orienta a calibração do cronômetro e registra os primeiros pontos.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
             { "code": 401, "indent": 0, "parameters": ["Armadilhas +50 pontos!"] },
             { "code": 122, "indent": 0, "parameters": [62, 62, 1, 0, 50] },
@@ -5620,6 +5746,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 1 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"Armadilhas-25-2\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Prontidão\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Confirmação de que a armadilha está pronta para o combate.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Engenheiro"] },
             { "code": 401, "indent": 0, "parameters": ["A armadilha está pronta para o combate!"] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -5653,6 +5783,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 0, "characterIndex": 7 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"Armadilhas-25-3\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Pontuação\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"O sistema registra novos pontos pela manutenção das armadilhas.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"3-C\""] },
             { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Teste de Armadilha\""] },
             { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Um disparo seguro demonstra que a trégua protege todos.\""] },
@@ -5692,6 +5826,10 @@
           "directionFix": false,
           "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"Armadilhas-25-4\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Ciclo completo\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Registram a conclusão do teste e liberam os próximos passos.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Engenheiro"] },
             { "code": 401, "indent": 0, "parameters": ["A armadilha está pronta para o combate!"] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -5734,9 +5872,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 0, "characterIndex": 7 },
           "list": [
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["| **2-B - Balastrus explica riscos** | Balastrus detalha o"] },
-            { "code": 401, "indent": 0, "parameters": ["que cada carga representa e por que precisa de testes.| CS |"] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"QuestDinamite-26-1\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Briefing repetido\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Balastrus repete o roteiro dos testes e recalibra as cargas.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 102, "indent": 0, "parameters": [["Vamos testar", "Agora não"], 0, 0, 2, 0] },
             { "code": 402, "indent": 0, "parameters": [0, "Vamos testar"] },
             { "code": 223, "indent": 1, "parameters": [[-255, -255, -255, 0], 30, true] },
@@ -5803,6 +5942,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"QuestDinamite-26-2\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Confirmação final\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Confirmam que a dinamite está pronta para uso.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Valamir"] },
             { "code": 401, "indent": 0, "parameters": ["A dinamite já está calibrada, Thorin!"] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -5845,9 +5988,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 0, "characterIndex": 7 },
           "list": [
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["| **2-B - Sincronizar armadilhas** | Balastrus ordena a"] },
-            { "code": 401, "indent": 0, "parameters": ["calibração dos tempos e do cronômetro. | "] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"Armadilhas-27-1\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Sincronização\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Balastrus orienta a calibração do cronômetro e registra os pontos.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
             { "code": 401, "indent": 0, "parameters": ["Armadilhas +50 pontos!"] },
             { "code": 122, "indent": 0, "parameters": [62, 62, 1, 0, 50] },
@@ -5883,6 +6027,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 1 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"Armadilhas-27-2\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Prontidão\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Novamente a armadilha é considerada pronta.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Engenheiro"] },
             { "code": 401, "indent": 0, "parameters": ["A armadilha está pronta para o combate!"] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -5925,9 +6073,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 0, "characterIndex": 7 },
           "list": [
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["| **2-B - Sincronizar armadilhas** | Balastrus ordena a"] },
-            { "code": 401, "indent": 0, "parameters": ["calibração dos tempos e do cronômetro. | "] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"Armadilhas-28-1\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Sincronização\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Mais uma sequência de calibração reforça o cronômetro.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
             { "code": 401, "indent": 0, "parameters": ["Armadilhas +50 pontos!"] },
             { "code": 122, "indent": 0, "parameters": [62, 62, 1, 0, 50] },
@@ -5963,6 +6112,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 1 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"Armadilhas-28-2\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Prontidão\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Armamentos estão prontos e confirmam o status.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Engenheiro"] },
             { "code": 401, "indent": 0, "parameters": ["A armadilha está pronta para o combate!"] },
             { "code": 0, "indent": 0, "parameters": [] }
