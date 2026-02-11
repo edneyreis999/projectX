@@ -195,8 +195,6 @@
             { "code": 655, "indent": 2, "parameters": ["SQSM.CompleteTaskForQuest(\"resgatarBorin\", 1);"] },
             { "code": 655, "indent": 2, "parameters": ["SQSM.ShowTaskForQuest(\"resgatarBorin\", 2);"] },
             { "code": 655, "indent": 2, "parameters": ["SQSM.OpenQuestJournal()"] },
-            { "code": 122, "indent": 2, "parameters": [71, 71, 0, 0, 1] },
-            { "code": 122, "indent": 2, "parameters": [72, 72, 0, 0, 1] },
             { "code": 0, "indent": 2, "parameters": [] },
             { "code": 411, "indent": 1, "parameters": [] },
             { "code": 101, "indent": 2, "parameters": ["", 0, 0, 2, ""] },
@@ -289,7 +287,7 @@
             { "code": 122, "indent": 0, "parameters": [64, 64, 1, 0, 30] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
             { "code": 401, "indent": 0, "parameters": ["Exército Civil +30 pontos!"] },
-            { "code": 122, "indent": 0, "parameters": [79, 79, 0, 0, 1] },
+            { "code": 122, "indent": 0, "parameters": [71, 71, 0, 0, 3] },
             { "code": 123, "indent": 0, "parameters": ["B", 0] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
