@@ -203,7 +203,7 @@
     null,
     {
       "id": 1,
-      "name": "Descoberta",
+      "name": "Teleporte (Mina de Esgoto 2F)",
       "note": "",
       "pages": [
         {
@@ -218,106 +218,241 @@
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 40,
-            "variableValid": true,
-            "variableValue": 3
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 65,
+            "switch1Valid": true,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [
+            { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
+            { "code": 201, "indent": 0, "parameters": [0, 25, 1, 9, 0, 0] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        }
+      ],
+      "x": 28,
+      "y": 27
+    },
+    {
+      "id": 2,
+      "name": "Teleporte (Mina de Esgoto 2F)",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 65,
+            "switch1Valid": true,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [
+            { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
+            { "code": 201, "indent": 0, "parameters": [0, 25, 1, 9, 0, 0] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        }
+      ],
+      "x": 29,
+      "y": 27
+    },
+    {
+      "id": 3,
+      "name": "Filena Livro",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
           },
           "directionFix": false,
           "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 40,
+            "variableValid": true,
+            "variableValue": 5
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Principal/$Filena", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "list": [
+            { "code": 355, "indent": 0, "parameters": ["if ($gameVariables.value(40) === 0) $gameVariables.setValue(40, 1);"] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 40,
+            "variableValid": true,
+            "variableValue": 6
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Principal/$Filena", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
             {
               "code": 205,
               "indent": 0,
               "parameters": [
-                14,
-                { "list": [{ "code": 45, "parameters": ["Move to: 24,19"], "indent": null }, { "code": 25, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }
+                12,
+                { "list": [{ "code": 45, "parameters": ["Move to: 19,9"], "indent": null }, { "code": 19, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }
               ]
             },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 24,19"], "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 25, "indent": null }] },
-            { "code": 230, "indent": 0, "parameters": [300] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 19,9"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 19, "indent": null }] },
             {
               "code": 205,
               "indent": 0,
               "parameters": [
                 13,
-                { "list": [{ "code": 45, "parameters": ["Move to: 25,21"], "indent": null }, { "code": 19, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }
+                { "list": [{ "code": 45, "parameters": ["Move to: 20,9"], "indent": null }, { "code": 19, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
               ]
             },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 25,21"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 20,9"], "indent": null }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 19, "indent": null }] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                12,
-                { "list": [{ "code": 45, "parameters": ["Move to: 23,21"], "indent": null }, { "code": 19, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
-              ]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 23,21"], "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 19, "indent": null }] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "1",
-                  "PictureName:str": "Portraits/Principal/Filena_feliz",
-                  "Origin:str": "Bust",
-                  "Position:num": "5",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Filena_feliz"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 5"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "indent": 0, "code": 122, "parameters": [101, 101, 0, 4, "\"1-D\""] },
-            { "indent": 0, "code": 122, "parameters": [102, 102, 0, 4, "\"Falta uma v?lvula\""] },
-            { "indent": 0, "code": 122, "parameters": [103, 103, 0, 4, "\"Cada um puxou uma v?lvula uma de cada vez. S? falta a do Balastrus.\""] },
-            { "indent": 0, "code": 117, "parameters": [16] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_ExitBusts",
-                "BASIC: Exit Bust(s)",
-                {
-                  "PictureID:arrayeval": "[\"1\"]",
-                  "EndOffsetX:eval": "-200",
-                  "EndOffsetY:eval": "+0",
-                  "EasingType:str": "InSine",
-                  "FlipDirection:str": "None",
-                  "Duration:eval": "20",
-                  "AutoErase:eval": "true"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\"]"] },
-            { "code": 657, "indent": 0, "parameters": ["End Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["End Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
-            { "code": 213, "indent": 0, "parameters": [12, 5, true] },
-            { "code": 213, "indent": 0, "parameters": [13, 7, true] },
-            { "code": 230, "indent": 0, "parameters": [123] },
+            { "code": 205, "indent": 0, "parameters": [3, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
+            { "code": 205, "indent": 0, "parameters": [-1, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
+            { "code": 230, "indent": 0, "parameters": [40] },
             {
               "code": 357,
               "indent": 0,
@@ -329,7 +464,7 @@
                   "PictureID:eval": "1",
                   "PictureName:str": "Portraits/Principal/Kilin_raiva",
                   "Origin:str": "Bust",
-                  "Position:num": "9",
+                  "Position:num": "10",
                   "StartOffsetX:eval": "-200",
                   "StartOffsetY:eval": "+0",
                   "EasingType:str": "OutSine",
@@ -341,18 +476,18 @@
             { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
             { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Kilin_raiva"] },
             { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 9"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 10"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
             { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
             { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "indent": 0, "code": 122, "parameters": [101, 101, 0, 4, "\"1-E/A\""] },
-            { "indent": 0, "code": 122, "parameters": [102, 102, 0, 4, "\"N?o conte comigo\""] },
-            { "indent": 0, "code": 122, "parameters": [103, 103, 0, 4, "\"Balastrus n?o quer ajudar depois da discuss?o e de ter sido acusado de tomar decis?es tolas.\""] },
-            { "indent": 0, "code": 117, "parameters": [16] },
-            { "code": 230, "indent": 0, "parameters": [1] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"1-I/A\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Nem que a vaca-morcego tussa\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Kilin diz que o grupo nao precisa de Balastrus e que consegue operar o mecanismo sem ele.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            { "code": 230, "indent": 0, "parameters": [20] },
             {
               "code": 357,
               "indent": 0,
@@ -383,9 +518,9 @@
             { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "indent": 0, "code": 122, "parameters": [101, 101, 0, 4, "\"1-E/B\""] },
-            { "indent": 0, "code": 122, "parameters": [102, 102, 0, 4, "\"Mesmo barco\""] },
-            { "indent": 0, "code": 122, "parameters": [103, 103, 0, 4, "\"Thorin lembra que est?o no mesmo barco e precisam se ajudar para sair.\""] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"1-I/B\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Orgulho de guerreiro\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Mhordred concorda: primeiro eles tentam sozinhos, Balastrus fica como ultima opcao.\""] },
             { "code": 117, "indent": 0, "parameters": [16] },
             {
               "code": 357,
@@ -396,7 +531,7 @@
                 "BASIC: Enter Bust",
                 {
                   "PictureID:eval": "3",
-                  "PictureName:str": "Portraits/Principal/Filena_briga",
+                  "PictureName:str": "Portraits/Principal/Filena",
                   "Origin:str": "Bust",
                   "Position:num": "3",
                   "StartOffsetX:eval": "-200",
@@ -408,7 +543,7 @@
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Picture ID = 3"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Filena_briga"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Filena"] },
             { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = 3"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
@@ -417,10 +552,11 @@
             { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [45, 45, 0] },
-            { "indent": 0, "code": 122, "parameters": [101, 101, 0, 4, "\"1-E/C\""] },
-            { "indent": 0, "code": 122, "parameters": [102, 102, 0, 4, "\"Tudo bem\""] },
-            { "indent": 0, "code": 122, "parameters": [103, 103, 0, 4, "\"Balastrus decide ajudar e puxa a sua v?lvula.\""] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"1-I/C\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Arrogância\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Filena começa a perder a paciência com a teimosia de Kilin e Mhordred.\""] },
             { "code": 117, "indent": 0, "parameters": [16] },
+            { "code": 230, "indent": 0, "parameters": [20] },
             {
               "code": 357,
               "indent": 0,
@@ -430,7 +566,7 @@
                 "BASIC: Enter Bust",
                 {
                   "PictureID:eval": "4",
-                  "PictureName:str": "Portraits/Principal/Thorin Armadura Helmet",
+                  "PictureName:str": "Portraits/Principal/Thorin Armadura Hemet_raiva",
                   "Origin:str": "Bust",
                   "Position:num": "1",
                   "StartOffsetX:eval": "-200",
@@ -442,7 +578,7 @@
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Picture ID = 4"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Thorin Armadura Helmet"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Thorin Armadura Hemet_ra…"] },
             { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = 1"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
@@ -451,10 +587,21 @@
             { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [46, 46, 0] },
-            { "indent": 0, "code": 122, "parameters": [101, 101, 0, 4, "\"1-E/D\""] },
-            { "indent": 0, "code": 122, "parameters": [102, 102, 0, 4, "\"Agora eu\""] },
-            { "indent": 0, "code": 122, "parameters": [103, 103, 0, 4, "\"Thorin puxa a sua v?lvula. A passagem se abre.\""] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"1-I/D\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Eu estava escutando\""] },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                103,
+                103,
+                0,
+                4,
+                "\"Thorin acusa Kilin de ser hipócrita. Ele disse que o garoto precisava escutar mais e não ser tão orgulhoso, mas agora se recusa a pedir a ajuda de Balastrus.\""
+              ]
+            },
             { "code": 117, "indent": 0, "parameters": [16] },
+            { "code": 230, "indent": 0, "parameters": [20] },
             {
               "code": 357,
               "indent": 0,
@@ -480,15 +627,90 @@
             { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
-            { "code": 221, "indent": 0, "parameters": [] },
-            { "code": 122, "indent": 0, "parameters": [40, 40, 0, 0, 4] },
-            { "code": 222, "indent": 0, "parameters": [] },
-            { "code": 129, "indent": 0, "parameters": [5, 0, false] },
-            { "code": 129, "indent": 0, "parameters": [6, 0, false] },
-            { "code": 129, "indent": 0, "parameters": [4, 0, false] },
-            { "code": 129, "indent": 0, "parameters": [8, 0, false] },
+            { "code": 230, "indent": 0, "parameters": [40] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Principal/Filena",
+                  "Origin:str": "Bust",
+                  "Position:num": "5",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Filena"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 5"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"1-J\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Não se pode discutir com pedras, elas sempre vencem\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Filena conta para o restante do grupo o que descobriu.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\"]",
+                  "EndOffsetX:eval": "-200",
+                  "EndOffsetY:eval": "+0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\"]"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
+            { "code": 230, "indent": 0, "parameters": [30] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
-            { "code": 401, "indent": 0, "parameters": ["Kilin, Mhordred, Filena e Balastrus se juntaram ao grupo."] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
+            { "code": 401, "indent": 0, "parameters": ["Dicas do puzzle:"] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
+            { "code": 401, "indent": 0, "parameters": ["Valvula 1: tres alavancas juntas, duas corretas e uma inutiliza o mecanismo."] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
+            { "code": 401, "indent": 0, "parameters": ["Valvula 2: alavanca muito dura, precisa de muita forca fisica."] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
+            { "code": 401, "indent": 0, "parameters": ["Valvula 3: maquinario instavel; precisa de alguem firme sob pressao."] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
+            { "code": 401, "indent": 0, "parameters": ["Valvula final: Balastrus deve ser acionado por ultimo, depois das tres anteriores."] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
+            { "code": 401, "indent": 0, "parameters": ["Ninguem pode soltar sua valvula ate a ultima ser ativada."] },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameSystem._map24ValveChoices = {21:0,22:0,23:0}; setSelfSwitchValue($gameMap.mapId(), 21, 'A', false); setSelfSwitchValue($gameMap.mapId(), 22, 'A', false); setSelfSwitchValue($gameMap.mapId(), 23, 'A', false); setSelfSwitchValue($gameMap.mapId(), 24, 'A', false); $gameSwitches.setValue(60,false); $gameSwitches.setValue(61,false); $gameSwitches.setValue(62,false); $gameSwitches.setValue(63,false); $gameMap.event(12).locate(0,0); $gameMap.event(13).locate(0,0); $gameMap.event(14).locate(0,0); $gameMap.event(15).locate(0,0);"
+              ]
+            },
+            { "code": 221, "indent": 0, "parameters": [] },
+            { "code": 122, "indent": 0, "parameters": [40, 40, 0, 0, 7] },
+            { "code": 222, "indent": 0, "parameters": [] },
             { "code": 123, "indent": 0, "parameters": ["A", 0] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
@@ -496,9 +718,9 @@
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
           "moveType": 0,
-          "priorityType": 0,
+          "priorityType": 1,
           "stepAnime": false,
-          "through": false,
+          "through": true,
           "trigger": 3,
           "walkAnime": true
         },
@@ -530,13 +752,40 @@
           "through": false,
           "trigger": 0,
           "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 40,
+            "variableValid": true,
+            "variableValue": 7
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
         }
       ],
-      "x": 1,
-      "y": 0
+      "x": 22,
+      "y": 10
     },
-    null,
-    null,
     null,
     null,
     null,
@@ -596,7 +845,7 @@
           "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [
             { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
-            { "code": 201, "indent": 0, "parameters": [0, 25, 2, 0, 0, 0] },
+            { "code": 201, "indent": 0, "parameters": [0, 25, 1, 9, 0, 0] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -613,148 +862,8 @@
       "x": 27,
       "y": 27
     },
-    {
-      "id": 10,
-      "name": "Teleporte (Mina de Esgoto 2F)",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 65,
-            "switch1Valid": true,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 0 },
-          "list": [
-            { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
-            { "code": 201, "indent": 0, "parameters": [0, 25, 2, 0, 0, 0] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        }
-      ],
-      "x": 28,
-      "y": 27
-    },
-    {
-      "id": 11,
-      "name": "Teleporte (Mina de Esgoto 2F)",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 65,
-            "switch1Valid": true,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 0 },
-          "list": [
-            { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
-            { "code": 201, "indent": 0, "parameters": [0, 25, 2, 0, 0, 0] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        }
-      ],
-      "x": 29,
-      "y": 27
-    },
+    null,
+    null,
     {
       "id": 12,
       "name": "Kilin",
@@ -797,16 +906,89 @@
             "wait": false
           },
           "moveSpeed": 3,
-          "moveType": 3,
+          "moveType": 0,
           "priorityType": 1,
           "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
           "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 40,
+            "variableValid": true,
+            "variableValue": 6
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Principal/$Kilin", "direction": 8, "pattern": 0, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              { "code": 1, "parameters": [] },
+              { "code": 1, "parameters": [] },
+              { "code": 3, "parameters": [] },
+              { "code": 3, "parameters": [] },
+              { "code": 4, "parameters": [] },
+              { "code": 4, "parameters": [] },
+              { "code": 2, "parameters": [] },
+              { "code": 2, "parameters": [] },
+              { "code": 0, "parameters": [] }
+            ],
+            "repeat": true,
+            "skippable": true,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": true,
           "trigger": 0,
           "walkAnime": true
         }
       ],
       "x": 20,
-      "y": 23
+      "y": 10
     },
     {
       "id": 13,
@@ -850,78 +1032,13 @@
             "wait": false
           },
           "moveSpeed": 3,
-          "moveType": 3,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 22,
-      "y": 23
-    },
-    {
-      "id": 14,
-      "name": "Filena",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 40,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Principal/$Filena", "direction": 2, "pattern": 1, "characterIndex": 0 },
-          "list": [
-            { "code": 355, "indent": 0, "parameters": ["if ($gameVariables.value(40) === 0) $gameVariables.setValue(40, 1);"] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              { "code": 1, "parameters": [] },
-              { "code": 1, "parameters": [] },
-              { "code": 3, "parameters": [] },
-              { "code": 3, "parameters": [] },
-              { "code": 4, "parameters": [] },
-              { "code": 4, "parameters": [] },
-              { "code": 2, "parameters": [] },
-              { "code": 2, "parameters": [] },
-              { "code": 0, "parameters": [] }
-            ],
-            "repeat": true,
-            "skippable": true,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 3,
+          "moveType": 0,
           "priorityType": 1,
           "stepAnime": false,
           "through": true,
-          "trigger": 1,
+          "trigger": 0,
           "walkAnime": true
-        }
-      ],
-      "x": 24,
-      "y": 19
-    },
-    {
-      "id": 15,
-      "name": "Balastrus",
-      "note": "",
-      "pages": [
+        },
         {
           "conditions": {
             "actorId": 1,
@@ -939,7 +1056,36 @@
             "variableValue": 0
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Principal/$Balastrus", "direction": 8, "pattern": 0, "characterIndex": 0 },
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 40,
+            "variableValid": true,
+            "variableValue": 6
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Principal/$Mhordred", "direction": 8, "pattern": 0, "characterIndex": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": {
@@ -959,15 +1105,179 @@
             "wait": false
           },
           "moveSpeed": 3,
-          "moveType": 3,
+          "moveType": 0,
           "priorityType": 1,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 23,
+      "y": 9
+    },
+    {
+      "id": 14,
+      "name": "Filena",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 40,
+            "variableValid": true,
+            "variableValue": 3
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Principal/$Filena", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 3,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 40,
+            "variableValid": true,
+            "variableValue": 4
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
           "stepAnime": false,
           "through": false,
           "trigger": 0,
           "walkAnime": true
         }
       ],
-      "x": 21,
+      "x": 22,
+      "y": 22
+    },
+    {
+      "id": 15,
+      "name": "Balastrus",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 40,
+            "variableValid": true,
+            "variableValue": 6
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Principal/$Balastrus", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              { "code": 1, "parameters": [] },
+              { "code": 1, "parameters": [] },
+              { "code": 3, "parameters": [] },
+              { "code": 3, "parameters": [] },
+              { "code": 4, "parameters": [] },
+              { "code": 4, "parameters": [] },
+              { "code": 2, "parameters": [] },
+              { "code": 2, "parameters": [] },
+              { "code": 0, "parameters": [] }
+            ],
+            "repeat": true,
+            "skippable": true,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 40,
+            "variableValid": true,
+            "variableValue": 7
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Principal/$Balastrus", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              { "code": 1, "parameters": [] },
+              { "code": 1, "parameters": [] },
+              { "code": 3, "parameters": [] },
+              { "code": 3, "parameters": [] },
+              { "code": 4, "parameters": [] },
+              { "code": 4, "parameters": [] },
+              { "code": 2, "parameters": [] },
+              { "code": 2, "parameters": [] },
+              { "code": 0, "parameters": [] }
+            ],
+            "repeat": true,
+            "skippable": true,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 11,
       "y": 24
     },
     {
@@ -981,7 +1291,7 @@
             "selfSwitchValid": false,
             "actorId": 1,
             "switch1Valid": false,
-            "variableValue": 1,
+            "variableValue": 3,
             "itemValid": false,
             "itemId": 1,
             "variableValid": true,
@@ -994,18 +1304,17 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [
+            { "code": 355, "indent": 0, "parameters": ["$gameMap.event(12).locate(0,0); $gameMap.event(13).locate(0,0); $gameMap.event(15).locate(0,0);"] },
             {
               "code": 205,
               "indent": 0,
               "parameters": [
                 14,
-                { "list": [{ "code": 45, "parameters": ["Move to: 24,23"], "indent": null }, { "code": 25, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
+                { "list": [{ "code": 45, "parameters": ["Move to: 21,23"], "indent": null }, { "code": 25, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
               ]
             },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 24,23"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 21,23"], "indent": null }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 25, "indent": null }] },
-            { "code": 205, "indent": 0, "parameters": [-1, { "list": [{ "code": 19, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 19, "indent": null }] },
             {
               "code": 357,
               "indent": 0,
@@ -1036,12 +1345,12 @@
             { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "indent": 0, "code": 122, "parameters": [101, 101, 0, 4, "\"1-B\""] },
+            { "indent": 0, "code": 122, "parameters": [101, 101, 0, 4, "\"1-F\""] },
             { "indent": 0, "code": 122, "parameters": [102, 102, 0, 4, "\"É melhor nos separar e procurar por pistas!\""] },
             {
               "indent": 0,
               "code": 122,
-              "parameters": [103, 103, 0, 4, "\"O grupo entra na Mina do Esgoto e se depara com uma estrutura que nunca viram antes. Filena sugere que se separem e procurem por pistas.\""]
+              "parameters": [103, 103, 0, 4, "\"O grupo entra na Mina do Esgoto e se depara com uma estrutura que nunca viram antes. Filena sugere que procurem por pistas.\""]
             },
             { "indent": 0, "code": 117, "parameters": [16] },
             {
@@ -1071,12 +1380,9 @@
             { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
             { "code": 230, "indent": 0, "parameters": [60] },
             { "code": 221, "indent": 0, "parameters": [] },
-            { "indent": 0, "code": 122, "parameters": [40, 40, 0, 0, 2] },
+            { "indent": 0, "code": 122, "parameters": [40, 40, 0, 0, 4] },
             { "code": 222, "indent": 0, "parameters": [] },
             { "code": 123, "indent": 0, "parameters": ["A", 0] },
-            { "code": 129, "indent": 0, "parameters": [4, 1, false] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
-            { "code": 401, "indent": 0, "parameters": ["Filena deixou o grupo do jogador."] },
             { "indent": 0, "code": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -1096,290 +1402,6 @@
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 40,
-            "variableValid": true,
-            "variableValue": 2
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 0 },
-          "list": [
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                14,
-                {
-                  "list": [
-                    { "code": 4, "indent": null },
-                    { "code": 4, "indent": null },
-                    { "code": 4, "indent": null },
-                    { "code": 4, "indent": null },
-                    { "code": 4, "indent": null },
-                    { "code": 4, "indent": null },
-                    { "code": 4, "indent": null },
-                    { "code": 4, "indent": null },
-                    { "code": 2, "indent": null },
-                    { "code": 2, "indent": null },
-                    { "code": 2, "indent": null },
-                    { "code": 4, "indent": null },
-                    { "code": 2, "indent": null },
-                    { "code": 2, "indent": null },
-                    { "code": 2, "indent": null },
-                    { "code": 0 }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 4, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 4, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 4, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 4, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 4, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 4, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 4, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 4, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 2, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 2, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 2, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 4, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 2, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 2, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 2, "indent": null }] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusTargetEvent", "Camera: Focus Target Event", { "EventID:eval": "18", "Duration:num": "150", "EasingType:str": "InOutSine" }]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Event ID = 18"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 150"] },
-            { "code": 657, "indent": 0, "parameters": ["Easing Type = InOutSine"] },
-            { "code": 357, "indent": 0, "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusWait", "Camera: Wait for Focus", {}] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "1",
-                  "PictureName:str": "Portraits/Principal/Filena_triste",
-                  "Origin:str": "Bust",
-                  "Position:num": "5",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Filena_triste"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 5"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "indent": 0, "code": 122, "parameters": [101, 101, 0, 4, "\"1-C/B\""] },
-            { "indent": 0, "code": 122, "parameters": [102, 102, 0, 4, "\"Livro dos Mineradores Ferrosos.\""] },
-            {
-              "indent": 0,
-              "code": 122,
-              "parameters": [
-                103,
-                103,
-                0,
-                4,
-                "\"Filena explica a Thorin que o livro está escrito em linguaguem criada pelos trabalhadores e castas mais pobres. Contém informações sobre a mina, mas também dicas de como se esconder dos guardas, passagens não mapeadas, horários das trocas de turno e etc. Trabalhavam em situação quase escrava.\""
-              ]
-            },
-            { "indent": 0, "code": 117, "parameters": [16] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_ExitBusts",
-                "BASIC: Exit Bust(s)",
-                {
-                  "PictureID:arrayeval": "[\"1\"]",
-                  "EndOffsetX:eval": "-200",
-                  "EndOffsetY:eval": "+0",
-                  "EasingType:str": "InSine",
-                  "FlipDirection:str": "None",
-                  "Duration:eval": "20",
-                  "AutoErase:eval": "true"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\"]"] },
-            { "code": 657, "indent": 0, "parameters": ["End Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["End Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
-            { "code": 205, "indent": 0, "parameters": [14, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
-            { "code": 357, "indent": 0, "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusPlayer", "Camera: Focus Player", { "Duration:num": "120", "EasingType:str": "InOutSine" }] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 120"] },
-            { "code": 657, "indent": 0, "parameters": ["Easing Type = InOutSine"] },
-            { "code": 221, "indent": 0, "parameters": [] },
-            { "indent": 0, "code": 122, "parameters": [40, 40, 0, 0, 3] },
-            { "code": 222, "indent": 0, "parameters": [] },
-            { "code": 123, "indent": 0, "parameters": ["B", 0] },
-            { "indent": 0, "code": 0, "parameters": [] }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 3,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "B",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "switch1Id": 1,
-            "selfSwitchValid": false,
-            "actorId": 1,
-            "switch1Valid": false,
-            "variableValue": 4,
-            "itemValid": false,
-            "itemId": 1,
-            "variableValid": true,
-            "switch2Valid": false,
-            "switch2Id": 1,
-            "selfSwitchCh": "A",
-            "variableId": 40,
-            "actorValid": false
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 0 },
-          "list": [
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [14, { "list": [{ "code": 45, "parameters": ["Move to: 12,20"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": true, "wait": false }]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 12,20"], "indent": null }] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [12, { "list": [{ "code": 45, "parameters": ["Move to: 18,23"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": true, "wait": false }]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 18,23"], "indent": null }] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [15, { "list": [{ "code": 45, "parameters": ["Move to: 11,28"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": true, "wait": false }]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 11,28"], "indent": null }] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [13, { "list": [{ "code": 45, "parameters": ["Move to: 23,8"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": true, "wait": false }]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 23,8"], "indent": null }] },
-            { "code": 230, "indent": 0, "parameters": [180] },
-            { "code": 355, "indent": 0, "parameters": ["setSelfSwitchValue($gameMap.mapId(), 21, 'A', true); $gameSwitches.setValue(60, true);"] },
-            { "code": 230, "indent": 0, "parameters": [30] },
-            { "code": 355, "indent": 0, "parameters": ["setSelfSwitchValue($gameMap.mapId(), 22, 'A', true); $gameSwitches.setValue(61, true);"] },
-            { "code": 230, "indent": 0, "parameters": [30] },
-            { "code": 355, "indent": 0, "parameters": ["setSelfSwitchValue($gameMap.mapId(), 23, 'A', true); $gameSwitches.setValue(62, true);"] },
-            { "code": 230, "indent": 0, "parameters": [30] },
-            { "code": 355, "indent": 0, "parameters": ["setSelfSwitchValue($gameMap.mapId(), 24, 'A', true); $gameSwitches.setValue(63, true);"] },
-            { "code": 123, "indent": 0, "parameters": ["C", 0] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 3,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "C",
             "selfSwitchValid": true,
             "switch1Id": 1,
             "switch1Valid": false,
@@ -1406,87 +1428,7 @@
       "x": 0,
       "y": 0
     },
-    {
-      "id": 17,
-      "name": "Quebra de memoria",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 65,
-            "switch1Valid": true,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 0 },
-          "list": [
-            { "code": 221, "indent": 0, "parameters": [] },
-            { "code": 101, "indent": 0, "parameters": ["Personagens Daratrine/Reed", 0, 0, 2, "Sistema"] },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "A realidade da mina se dissipa e a cena corta para o Coreto, com Rheed e as criancas. Ele fala para elas sobre o simbolo de Tregua e a aventura que Thorin e os outros estao prestes a enfrentar. O grupo avanca para o 2 andar."
-              ]
-            },
-            { "code": 222, "indent": 0, "parameters": [] },
-            { "code": 122, "indent": 0, "parameters": [40, 40, 0, 0, 5] },
-            { "code": 123, "indent": 0, "parameters": ["A", 0] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 3,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 0,
-      "y": 1
-    },
+    null,
     {
       "id": 18,
       "name": "Livro",
@@ -1506,46 +1448,7 @@
             "switch2Valid": false,
             "variableId": 40,
             "variableValid": true,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "!Weapon", "direction": 6, "pattern": 1, "characterIndex": 6 },
-          "list": [
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Um livro antigo, escrito em uma língua esquisita... \"Manual dos Trabalhadores Ferrosos\". Pode haver informações aqui, mas não consigo ler. Talvez alguém comigo consiga."
-              ]
-            },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 2,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 40,
-            "variableValid": true,
-            "variableValue": 1
+            "variableValue": 4
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Weapon", "direction": 6, "pattern": 1, "characterIndex": 6 },
@@ -1580,10 +1483,10 @@
             { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "indent": 0, "code": 122, "parameters": [101, 101, 0, 4, "\"1-C/A\""] },
-            { "indent": 0, "code": 122, "parameters": [102, 102, 0, 4, "\"Língua Morta\""] },
-            { "indent": 0, "code": 122, "parameters": [103, 103, 0, 4, "\"Isso está escrito em uma linguagem antiga... Não consigo entender, mas talvez alguém aqui possa.\""] },
-            { "indent": 0, "code": 117, "parameters": [16] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"1-G\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Livro antigo\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Este livro parece conter algumas informações, mas não consigo entender. Talvez alguém da equipe possa...\" "] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             {
               "code": 357,
               "indent": 0,
@@ -1609,6 +1512,103 @@
             { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
+            { "code": 221, "indent": 0, "parameters": [] },
+            { "code": 122, "indent": 0, "parameters": [40, 40, 0, 0, 5] },
+            { "code": 222, "indent": 0, "parameters": [] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                -1,
+                { "list": [{ "code": 45, "parameters": ["Move to: 16,8"], "indent": null }, { "code": 18, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }
+              ]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 16,8"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 18, "indent": null }] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                3,
+                { "list": [{ "code": 45, "parameters": ["Move to: 17,8"], "indent": null }, { "code": 25, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
+              ]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 17,8"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 25, "indent": null }] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Principal/Filena_triste",
+                  "Origin:str": "Bust",
+                  "Position:num": "5",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Filena_triste"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 5"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"1-H\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Livro dos Mineradores Ferrosos\""] },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                103,
+                103,
+                0,
+                4,
+                "\"Filena explica a Thorin que o livro revela o funcionamento da mina, turnos de guarda e pistas sobre as valvulas e diz que deveriam falar com Kilin e Mhordred.\""
+              ]
+            },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\"]",
+                  "EndOffsetX:eval": "-200",
+                  "EndOffsetY:eval": "+0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\"]"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
+            { "code": 355, "indent": 0, "parameters": ["$gameMap.event(14).locate(22,10); $gameMap.event(12).locate(20,10); $gameMap.event(13).locate(23,9); $gameMap.event(15).locate(11,24);"] },
+            { "code": 221, "indent": 0, "parameters": [] },
+            { "code": 122, "indent": 0, "parameters": [40, 40, 0, 0, 6] },
+            { "code": 222, "indent": 0, "parameters": [] },
+            { "code": 123, "indent": 0, "parameters": ["A", 0] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -1628,6 +1628,35 @@
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
             "selfSwitchValid": false,
             "switch1Id": 1,
             "switch1Valid": false,
@@ -1635,7 +1664,7 @@
             "switch2Valid": false,
             "variableId": 40,
             "variableValid": true,
-            "variableValue": 3
+            "variableValue": 8
           },
           "directionFix": false,
           "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
@@ -1651,8 +1680,8 @@
           "walkAnime": true
         }
       ],
-      "x": 17,
-      "y": 10
+      "x": 16,
+      "y": 9
     },
     null,
     null,
@@ -1673,15 +1702,57 @@
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
+            "variableId": 40,
+            "variableValid": true,
+            "variableValue": 7
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Switch1", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
-            { "code": 401, "indent": 0, "parameters": ["que alavancas estranhas"] },
+            { "code": 401, "indent": 0, "parameters": ["Valvula 1: tres alavancas acopladas, duas corretas e uma inutiliza o mecanismo."] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
+            { "code": 401, "indent": 0, "parameters": ["Escolha quem tem leitura tecnica para identificar o padrao certo."] },
+            { "code": 102, "indent": 0, "parameters": [["Filena", "Kilin", "Mhordred"], 2, 0, 2, 0] },
+            { "code": 402, "indent": 0, "parameters": [0, "Filena"] },
+            { "code": 221, "indent": 1, "parameters": [] },
+            { "code": 355, "indent": 1, "parameters": ["$gameMap.event(14).setImage('Principal/$Filena', 0); $gameMap.event(14).setTransparent(false); $gameMap.event(14).setOpacity(255);"] },
+            { "code": 355, "indent": 1, "parameters": ["$gameMap.event(14).locate(12,20);"] },
+            { "code": 205, "indent": 1, "parameters": [14, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": true, "wait": false }] },
+            { "code": 222, "indent": 1, "parameters": [] },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameSystem._map24ValveChoices = $gameSystem._map24ValveChoices || {}; $gameSystem._map24ValveChoices[21] = 14; setSelfSwitchValue($gameMap.mapId(), 21, 'A', true); $gameSwitches.setValue(60, true);"
+              ]
+            },
+            { "code": 402, "indent": 0, "parameters": [1, "Kilin"] },
+            { "code": 221, "indent": 1, "parameters": [] },
+            { "code": 355, "indent": 1, "parameters": ["$gameMap.event(12).setImage('Principal/$Kilin', 0); $gameMap.event(12).setTransparent(false); $gameMap.event(12).setOpacity(255);"] },
+            { "code": 355, "indent": 1, "parameters": ["$gameMap.event(12).locate(12,20);"] },
+            { "code": 205, "indent": 1, "parameters": [12, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": true, "wait": false }] },
+            { "code": 222, "indent": 1, "parameters": [] },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameSystem._map24ValveChoices = $gameSystem._map24ValveChoices || {}; $gameSystem._map24ValveChoices[21] = 12; setSelfSwitchValue($gameMap.mapId(), 21, 'A', true); $gameSwitches.setValue(60, true);"
+              ]
+            },
+            { "code": 402, "indent": 0, "parameters": [2, "Mhordred"] },
+            { "code": 221, "indent": 1, "parameters": [] },
+            { "code": 355, "indent": 1, "parameters": ["$gameMap.event(13).setImage('Principal/$Mhordred', 0); $gameMap.event(13).setTransparent(false); $gameMap.event(13).setOpacity(255);"] },
+            { "code": 355, "indent": 1, "parameters": ["$gameMap.event(13).locate(12,20);"] },
+            { "code": 205, "indent": 1, "parameters": [13, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": true, "wait": false }] },
+            { "code": 222, "indent": 1, "parameters": [] },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameSystem._map24ValveChoices = $gameSystem._map24ValveChoices || {}; $gameSystem._map24ValveChoices[21] = 13; setSelfSwitchValue($gameMap.mapId(), 21, 'A', true); $gameSwitches.setValue(60, true);"
+              ]
+            },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -1707,14 +1778,14 @@
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 40,
-            "variableValid": false,
-            "variableValue": 4
+            "variableValid": true,
+            "variableValue": 7
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Switch1", "direction": 6, "pattern": 2, "characterIndex": 2 },
           "list": [
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
-            { "code": 401, "indent": 0, "parameters": ["que alavancas estranhas"] },
+            { "code": 401, "indent": 0, "parameters": ["Valvula travada por um aliado."] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -1748,15 +1819,57 @@
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
+            "variableId": 40,
+            "variableValid": true,
+            "variableValue": 7
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Switch1", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
-            { "code": 401, "indent": 0, "parameters": ["que alavancas estranhas"] },
+            { "code": 401, "indent": 0, "parameters": ["Valvula 2: alavanca muito dura, destrava mecanismos pesados."] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
+            { "code": 401, "indent": 0, "parameters": ["Escolha quem tem mais forca fisica para segurar sob carga."] },
+            { "code": 102, "indent": 0, "parameters": [["Filena", "Kilin", "Mhordred"], 2, 0, 2, 0] },
+            { "code": 402, "indent": 0, "parameters": [0, "Filena"] },
+            { "code": 221, "indent": 1, "parameters": [] },
+            { "code": 355, "indent": 1, "parameters": ["$gameMap.event(14).setImage('Principal/$Filena', 0); $gameMap.event(14).setTransparent(false); $gameMap.event(14).setOpacity(255);"] },
+            { "code": 355, "indent": 1, "parameters": ["$gameMap.event(14).locate(18,23);"] },
+            { "code": 205, "indent": 1, "parameters": [14, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": true, "wait": false }] },
+            { "code": 222, "indent": 1, "parameters": [] },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameSystem._map24ValveChoices = $gameSystem._map24ValveChoices || {}; $gameSystem._map24ValveChoices[22] = 14; setSelfSwitchValue($gameMap.mapId(), 22, 'A', true); $gameSwitches.setValue(61, true);"
+              ]
+            },
+            { "code": 402, "indent": 0, "parameters": [1, "Kilin"] },
+            { "code": 221, "indent": 1, "parameters": [] },
+            { "code": 355, "indent": 1, "parameters": ["$gameMap.event(12).setImage('Principal/$Kilin', 0); $gameMap.event(12).setTransparent(false); $gameMap.event(12).setOpacity(255);"] },
+            { "code": 355, "indent": 1, "parameters": ["$gameMap.event(12).locate(18,23);"] },
+            { "code": 205, "indent": 1, "parameters": [12, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": true, "wait": false }] },
+            { "code": 222, "indent": 1, "parameters": [] },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameSystem._map24ValveChoices = $gameSystem._map24ValveChoices || {}; $gameSystem._map24ValveChoices[22] = 12; setSelfSwitchValue($gameMap.mapId(), 22, 'A', true); $gameSwitches.setValue(61, true);"
+              ]
+            },
+            { "code": 402, "indent": 0, "parameters": [2, "Mhordred"] },
+            { "code": 221, "indent": 1, "parameters": [] },
+            { "code": 355, "indent": 1, "parameters": ["$gameMap.event(13).setImage('Principal/$Mhordred', 0); $gameMap.event(13).setTransparent(false); $gameMap.event(13).setOpacity(255);"] },
+            { "code": 355, "indent": 1, "parameters": ["$gameMap.event(13).locate(18,23);"] },
+            { "code": 205, "indent": 1, "parameters": [13, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": true, "wait": false }] },
+            { "code": 222, "indent": 1, "parameters": [] },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameSystem._map24ValveChoices = $gameSystem._map24ValveChoices || {}; $gameSystem._map24ValveChoices[22] = 13; setSelfSwitchValue($gameMap.mapId(), 22, 'A', true); $gameSwitches.setValue(61, true);"
+              ]
+            },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -1781,15 +1894,15 @@
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
+            "variableId": 40,
+            "variableValid": true,
+            "variableValue": 7
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Switch1", "direction": 6, "pattern": 2, "characterIndex": 2 },
           "list": [
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
-            { "code": 401, "indent": 0, "parameters": ["que alavancas estranhas"] },
+            { "code": 401, "indent": 0, "parameters": ["Valvula travada por um aliado."] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -1823,15 +1936,57 @@
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
+            "variableId": 40,
+            "variableValid": true,
+            "variableValue": 7
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Switch1", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
-            { "code": 401, "indent": 0, "parameters": ["que alavancas estranhas"] },
+            { "code": 401, "indent": 0, "parameters": ["Valvula 3: maquinario instavel, qualquer hesitacao compromete tudo."] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
+            { "code": 401, "indent": 0, "parameters": ["Escolha quem nao se intimida sob pressao e mantem o ritmo."] },
+            { "code": 102, "indent": 0, "parameters": [["Filena", "Kilin", "Mhordred"], 2, 0, 2, 0] },
+            { "code": 402, "indent": 0, "parameters": [0, "Filena"] },
+            { "code": 221, "indent": 1, "parameters": [] },
+            { "code": 355, "indent": 1, "parameters": ["$gameMap.event(14).setImage('Principal/$Filena', 0); $gameMap.event(14).setTransparent(false); $gameMap.event(14).setOpacity(255);"] },
+            { "code": 355, "indent": 1, "parameters": ["$gameMap.event(14).locate(23,8);"] },
+            { "code": 205, "indent": 1, "parameters": [14, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": true, "wait": false }] },
+            { "code": 222, "indent": 1, "parameters": [] },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameSystem._map24ValveChoices = $gameSystem._map24ValveChoices || {}; $gameSystem._map24ValveChoices[23] = 14; setSelfSwitchValue($gameMap.mapId(), 23, 'A', true); $gameSwitches.setValue(62, true);"
+              ]
+            },
+            { "code": 402, "indent": 0, "parameters": [1, "Kilin"] },
+            { "code": 221, "indent": 1, "parameters": [] },
+            { "code": 355, "indent": 1, "parameters": ["$gameMap.event(12).setImage('Principal/$Kilin', 0); $gameMap.event(12).setTransparent(false); $gameMap.event(12).setOpacity(255);"] },
+            { "code": 355, "indent": 1, "parameters": ["$gameMap.event(12).locate(23,8);"] },
+            { "code": 205, "indent": 1, "parameters": [12, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": true, "wait": false }] },
+            { "code": 222, "indent": 1, "parameters": [] },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameSystem._map24ValveChoices = $gameSystem._map24ValveChoices || {}; $gameSystem._map24ValveChoices[23] = 12; setSelfSwitchValue($gameMap.mapId(), 23, 'A', true); $gameSwitches.setValue(62, true);"
+              ]
+            },
+            { "code": 402, "indent": 0, "parameters": [2, "Mhordred"] },
+            { "code": 221, "indent": 1, "parameters": [] },
+            { "code": 355, "indent": 1, "parameters": ["$gameMap.event(13).setImage('Principal/$Mhordred', 0); $gameMap.event(13).setTransparent(false); $gameMap.event(13).setOpacity(255);"] },
+            { "code": 355, "indent": 1, "parameters": ["$gameMap.event(13).locate(23,8);"] },
+            { "code": 205, "indent": 1, "parameters": [13, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": true, "wait": false }] },
+            { "code": 222, "indent": 1, "parameters": [] },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameSystem._map24ValveChoices = $gameSystem._map24ValveChoices || {}; $gameSystem._map24ValveChoices[23] = 13; setSelfSwitchValue($gameMap.mapId(), 23, 'A', true); $gameSwitches.setValue(62, true);"
+              ]
+            },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -1856,15 +2011,15 @@
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
+            "variableId": 40,
+            "variableValid": true,
+            "variableValue": 7
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Switch1", "direction": 6, "pattern": 2, "characterIndex": 2 },
           "list": [
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
-            { "code": 401, "indent": 0, "parameters": ["que alavancas estranhas"] },
+            { "code": 401, "indent": 0, "parameters": ["Valvula travada por um aliado."] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -1898,15 +2053,17 @@
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
+            "variableId": 40,
+            "variableValid": true,
+            "variableValue": 7
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Switch1", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
-            { "code": 401, "indent": 0, "parameters": ["que alavancas estranhas"] },
+            { "code": 401, "indent": 0, "parameters": ["Esta valvula final so pode ser operada por Balastrus."] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
+            { "code": 401, "indent": 0, "parameters": ["Primeiro, posicione os tres aliados e depois use a alavanca do Thorin."] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -1931,15 +2088,15 @@
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
+            "variableId": 40,
+            "variableValid": true,
+            "variableValue": 7
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Switch1", "direction": 6, "pattern": 2, "characterIndex": 2 },
           "list": [
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
-            { "code": 401, "indent": 0, "parameters": ["que alavancas estranhas"] },
+            { "code": 401, "indent": 0, "parameters": ["Balastrus esta segurando a valvula final."] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -2008,16 +2165,232 @@
             "switch2Valid": false,
             "variableId": 40,
             "variableValid": true,
-            "variableValue": 4
+            "variableValue": 7
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Switch1", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [
-            { "code": 355, "indent": 0, "parameters": ["setSelfSwitchValue($gameMap.mapId(), 25, 'A', true); $gameSwitches.setValue(64, true); $gameSwitches.setValue(65, true);"] },
-            { "code": 250, "indent": 0, "parameters": [{ "name": "Open1", "pan": 0, "pitch": 100, "volume": 90 }] },
-            { "code": 212, "indent": 0, "parameters": [9, 1, false] },
-            { "code": 212, "indent": 0, "parameters": [10, 1, false] },
-            { "code": 212, "indent": 0, "parameters": [11, 1, false] },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "$gameSystem._map24ValveChoices && $gameSystem._map24ValveChoices[21] === 14 && $gameSystem._map24ValveChoices[22] === 12 && $gameSystem._map24ValveChoices[23] === 13"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameMap.event(15).setImage('Principal/$Balastrus', 0); $gameMap.event(15).setTransparent(false); $gameMap.event(15).setOpacity(255); $gameMap.event(15).turnTowardCharacter($gamePlayer); $gameMap.event(15).locate(11,24);"
+              ]
+            },
+            { "code": 205, "indent": 1, "parameters": [-1, { "list": [{ "code": 17, "indent": null }, { "code": 0 }], "repeat": false, "skippable": true, "wait": true }] },
+            { "code": 505, "indent": 1, "parameters": [{ "code": 17, "indent": null }] },
+            {
+              "code": 357,
+              "indent": 1,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Principal/Thorin Armadura Helmet",
+                  "Origin:str": "Bust",
+                  "Position:num": "5",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 1, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Thorin Armadura Helmet"] },
+            { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 1, "parameters": ["Screen Position = 5"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 1, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Isso aqui é simples?! Além da alavanca têm mais 3 botões, eu não faço ideia do que fazer. Santa criação, eu preciso da ajuda de alguém que conheça mecanismos e engenhocas, vou pedir ao Balastrus. "
+              ]
+            },
+            {
+              "code": 357,
+              "indent": 1,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\"]",
+                  "EndOffsetX:eval": "-200",
+                  "EndOffsetY:eval": "+0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 1, "parameters": ["Picture ID(s) = [\"1\"]"] },
+            { "code": 657, "indent": 1, "parameters": ["End Offset X = -200"] },
+            { "code": 657, "indent": 1, "parameters": ["End Offset Y = +0"] },
+            { "code": 657, "indent": 1, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 1, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 1, "parameters": ["Auto-Erase? = true"] },
+            {
+              "code": 205,
+              "indent": 1,
+              "parameters": [
+                -1,
+                { "list": [{ "code": 45, "parameters": ["Move to: 12,24"], "indent": null }, { "code": 17, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
+              ]
+            },
+            { "code": 505, "indent": 1, "parameters": [{ "code": 45, "parameters": ["Move to: 12,24"], "indent": null }] },
+            { "code": 505, "indent": 1, "parameters": [{ "code": 17, "indent": null }] },
+            {
+              "code": 357,
+              "indent": 1,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Principal/Thorin Armadura Helmet",
+                  "Origin:str": "Bust",
+                  "Position:num": "5",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 1, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Thorin Armadura Helmet"] },
+            { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 1, "parameters": ["Screen Position = 5"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 1, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 1, "parameters": ["Eu preciso da sua ajuda."] },
+            {
+              "code": 357,
+              "indent": 1,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "2",
+                  "PictureName:str": "Portraits/Principal/Balastrus",
+                  "Origin:str": "Bust",
+                  "Position:num": "9",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 1, "parameters": ["Picture ID = 2"] },
+            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Balastrus"] },
+            { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 1, "parameters": ["Screen Position = 9"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 1, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, "Balastrus"] },
+            { "code": 401, "indent": 1, "parameters": ["Eu nao devia ajudar voces..."] },
+            { "code": 401, "indent": 1, "parameters": ["Mas eu tambem preciso sair daqui. Nao soltem as outras valvulas."] },
+            {
+              "code": 357,
+              "indent": 1,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\",\"2\"]",
+                  "EndOffsetX:eval": "-200",
+                  "EndOffsetY:eval": "+0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 1, "parameters": ["Picture ID(s) = [\"1\",\"2\"]"] },
+            { "code": 657, "indent": 1, "parameters": ["End Offset X = -200"] },
+            { "code": 657, "indent": 1, "parameters": ["End Offset Y = +0"] },
+            { "code": 657, "indent": 1, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 1, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 1, "parameters": ["Auto-Erase? = true"] },
+            { "code": 357, "indent": 1, "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusWait", "Camera: Wait for Focus", {}] },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "var b=$gameMap.event(15); var v=$gameMap.event(24); if (b && v) { b.setImage('Principal/$Balastrus', 0); b.setTransparent(false); b.setOpacity(255); b.turnTowardCharacter($gamePlayer); var tx=v.x; var ty=v.y; var guard=0; while ((b.x!==tx || b.y!==ty) && guard<120) { var dir=b.findDirectionTo(tx,ty); if(!dir){ break; } b.moveStraight(dir); this.wait(8); guard++; } b.turnTowardCharacter(v); }"
+              ]
+            },
+            { "code": 205, "indent": 1, "parameters": [15, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": true, "wait": false }] },
+            { "code": 221, "indent": 1, "parameters": [] },
+            { "code": 230, "indent": 1, "parameters": [20] },
+            { "code": 122, "indent": 1, "parameters": [40, 40, 0, 0, 8] },
+            { "code": 355, "indent": 1, "parameters": ["setSelfSwitchValue($gameMap.mapId(), 24, 'A', true); $gameSwitches.setValue(63, true);"] },
+            { "code": 355, "indent": 1, "parameters": ["setSelfSwitchValue($gameMap.mapId(), 25, 'A', true); $gameSwitches.setValue(64, true); $gameSwitches.setValue(65, true);"] },
+            { "code": 250, "indent": 1, "parameters": [{ "name": "Open1", "pan": 0, "pitch": 100, "volume": 90 }] },
+            { "code": 212, "indent": 1, "parameters": [9, 1, false] },
+            { "code": 212, "indent": 1, "parameters": [10, 1, false] },
+            { "code": 212, "indent": 1, "parameters": [11, 1, false] },
+            { "code": 250, "indent": 1, "parameters": [{ "name": "Move1", "pan": 0, "pitch": 100, "volume": 90 }] },
+            { "code": 222, "indent": 1, "parameters": [] },
+            { "code": 357, "indent": 1, "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusPlayer", "Camera: Focus Player", { "Duration:num": "60", "EasingType:str": "InOutSine" }] },
+            { "code": 657, "indent": 1, "parameters": ["Duration = 60"] },
+            { "code": 657, "indent": 1, "parameters": ["Easing Type = InOutSine"] },
+            { "code": 355, "indent": 1, "parameters": ["for (var i=12;i<=15;i++){ var ev=$gameMap.event(i); if (ev) { ev.setTransparent(true); ev.locate(0,0); } }"] },
+            { "code": 129, "indent": 1, "parameters": [4, 0, false] },
+            { "code": 129, "indent": 1, "parameters": [5, 0, false] },
+            { "code": 129, "indent": 1, "parameters": [6, 0, false] },
+            { "code": 129, "indent": 1, "parameters": [8, 0, false] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, "Sistema"] },
+            { "code": 401, "indent": 1, "parameters": ["Balastrus entrou no grupo."] },
+            { "code": 411, "indent": 0, "parameters": [] },
+            { "code": 249, "indent": 1, "parameters": [{ "name": "Buzzer1", "volume": 90, "pitch": 100, "pan": 0 }] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, "Sistema"] },
+            { "code": 401, "indent": 1, "parameters": ["A ordem das valvulas nao faz sentido mecanico."] },
+            { "code": 401, "indent": 1, "parameters": ["Revise as dicas e tente novamente."] },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "setSelfSwitchValue($gameMap.mapId(), 21, 'A', false); setSelfSwitchValue($gameMap.mapId(), 22, 'A', false); setSelfSwitchValue($gameMap.mapId(), 23, 'A', false); $gameSwitches.setValue(60,false); $gameSwitches.setValue(61,false); $gameSwitches.setValue(62,false); $gameMap.event(12).locate(0,0); $gameMap.event(13).locate(0,0); $gameMap.event(14).locate(0,0); $gameMap.event(12).setTransparent(true); $gameMap.event(13).setTransparent(true); $gameMap.event(14).setTransparent(true);"
+              ]
+            },
+            { "code": 355, "indent": 1, "parameters": ["$gameSystem._map24ValveChoices = {21:0,22:0,23:0};"] },
+            { "code": 412, "indent": 0, "parameters": [] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
