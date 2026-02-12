@@ -2389,13 +2389,17 @@
           "image": { "tileId": 0, "characterName": "Mina de Melios/!$Pedras", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [
             { "code": 111, "indent": 0, "parameters": [8, 11] },
-            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 1, "parameters": ["Explosão"] },
+            { "code": 122, "indent": 1, "parameters": [101, 101, 0, 4, "\"2-A\""] },
+            { "code": 122, "indent": 1, "parameters": [102, 102, 0, 4, "\"Explodir pedra\""] },
+            { "code": 122, "indent": 1, "parameters": [103, 103, 0, 4, "\"Thorin explode as pedras com uma dinamite.\""] },
+            { "code": 117, "indent": 1, "parameters": [16] },
             { "code": 123, "indent": 1, "parameters": ["A", 0] },
             { "code": 0, "indent": 1, "parameters": [] },
             { "code": 411, "indent": 0, "parameters": [] },
-            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 1, "parameters": ["Preciso pensar em uma maneira de retirar essas pedras."] },
+            { "code": 122, "indent": 1, "parameters": [101, 101, 0, 4, "\"2-B\""] },
+            { "code": 122, "indent": 1, "parameters": [102, 102, 0, 4, "\"Bloqueio de passagem\""] },
+            { "code": 122, "indent": 1, "parameters": [103, 103, 0, 4, "\"Sem possuir dinamites Thorin não é capaz de passar pelas pedras.\""] },
+            { "code": 117, "indent": 1, "parameters": [16] },
             { "code": 0, "indent": 1, "parameters": [] },
             { "code": 412, "indent": 0, "parameters": [] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -2505,8 +2509,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Principal/$Kilin", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Resgate bem sucedido."] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"2-C\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Resgate Bem Sucedido\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Thorin e seu grupo resgatam Kilin.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 122, "indent": 0, "parameters": [73, 73, 0, 0, 2] },
             { "code": 355, "indent": 0, "parameters": ["SQSM.CompleteTaskForQuest(\"resgatarKilin\", 2);"] },
             { "code": 655, "indent": 0, "parameters": ["SQSM.CompleteQuest(\"resgatarKilin\");"] },
@@ -2551,6 +2557,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Kravens/$Minerador1Andar1", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"2-A\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Resgate de Corvo\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Thorin resgata os corvos na mina de Melios.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
             { "code": 401, "indent": 0, "parameters": ["Resgate bem sucedido."] },
             { "code": 122, "indent": 0, "parameters": [85, 85, 1, 0, 1] },
@@ -2568,8 +2578,8 @@
           "walkAnime": true
         }
       ],
-      "x": 12,
-      "y": 72
+      "x": 11,
+      "y": 75
     },
     {
       "id": 22,
@@ -2595,6 +2605,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Kravens/$Minerador1Andar1", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"2-A\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Resgate de Corvo\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Thorin resgata os corvos na mina de Melios.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
             { "code": 401, "indent": 0, "parameters": ["Resgate bem sucedido."] },
             { "code": 122, "indent": 0, "parameters": [85, 85, 1, 0, 1] },
@@ -2639,6 +2653,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Kravens/$Minerador1Andar1", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"2-A\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Resgate de Corvo\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Thorin resgata os corvos na mina de Melios.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
             { "code": 401, "indent": 0, "parameters": ["Resgate bem sucedido."] },
             { "code": 122, "indent": 0, "parameters": [85, 85, 1, 0, 1] },
@@ -2657,7 +2675,7 @@
         }
       ],
       "x": 87,
-      "y": 46
+      "y": 79
     },
     {
       "id": 24,
@@ -2683,6 +2701,10 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Kravens/$Minerador1Andar1", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"2-A\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Resgate de Corvo\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Thorin resgata os corvos na mina de Melios.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
             { "code": 401, "indent": 0, "parameters": ["Resgate bem sucedido."] },
             { "code": 122, "indent": 0, "parameters": [85, 85, 1, 0, 1] },
@@ -2701,7 +2723,7 @@
         }
       ],
       "x": 87,
-      "y": 78
+      "y": 46
     },
     {
       "id": 25,
