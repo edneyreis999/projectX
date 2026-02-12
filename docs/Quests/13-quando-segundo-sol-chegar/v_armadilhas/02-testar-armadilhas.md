@@ -61,28 +61,19 @@ Quest: Testar Armadilhas
 
 | Beat | Premissa Resumida | Tipo |
 | ---- | ---------------- | ---- |
-| **1-A - Encontro com Balastrus** | Thorin confirma os gargalos e escuta as expectativas de Balastrus sobre as armadilhas. | CS |
-| **1-B - Alinhamento com Tordan** | Tordan compara notas sobre as últimas incursões. | CS |
+| **1-A - Conversar com Balastrus** | O jogador interage com Balastrus | JOG | 
+| **1-B - Encontro com Balastrus** | Thorin confirma os gargalos e escuta as expectativas de Balastrus sobre as armadilhas. | CS |
 
 ##### Cena 2 - Instalação metódica
 
 | Beat | Premissa Resumida | Tipo |
 | ---- | ---------------- | ---- |
-| **2-A - Posicionar armadilha 1** | O jogador escolhe o terreno e planta a primeira armadilha. | JOG |
-| **2-B - Sincronizar armadilhas** | Balastrus ordena a calibração dos tempos e do cronômetro. | CS |
-| **2-C - Replicar o processo** | Thorin repete os passos para o segundo e terceiro pontos. | JOG |
+| **2-A - Deslocamento** | O jogador vai até a primeira armadilha | JOG | 
+| **2-B - Posicionar Armadilha** | Thorin planta a armadilha. | CS |
 
-##### Cena 3 - Sequência de testes
-
-| Beat | Premissa Resumida | Tipo |
-| ---- | ---------------- | ---- |
-| **3-A - Primeiro disparo simulado** | O jogador observa o impacto da primeira armadilha em uma onda direcionada. | JOG |
-| **3-B - Ajuste rápido** | Um desvio requer correção manual pela equipe. | CS |
-| **3-C - Coordenação final** | Tordan coordena guardas enquanto a última armadilha dispara. | JOG |
-
-##### Cena 4 - Relatório de confiança
+##### Cena 3 - Relatório de confiança
 
 | Beat | Premissa Resumida | Tipo |
 | ---- | ---------------- | ---- |
-| **4-A - Reconhecimento** | Balastrus elogia o processo e atualiza o contador _pontos_armadilhas. | CS |
-| **4-B - Decisão seguinte** | Thorin promete expandir o método para outras rotas. | CS |
+| **3-A - Deslocamento** | O jogador vai até a primeira armadilha | JOG | 
+| **3-B - Reconhecimento** | Balastrus elogia o processo. | CS |

@@ -61,27 +61,23 @@ Quest: Testar Dinamite
 
 | Beat | Premissa Resumida | Tipo |
 | ---- | ---------------- | ---- |
-| **1-A - Aproximação** | Thorin e Tordan atravessam a Estrada do Cão-luar, observando crateras antigas. | JOG |
+| **1-A - Aproximação** | Thorin e Tordan atravessam a Estrada do Cão-luar. | JOG |
 | **1-B - Primeiro diálogo** | Balastrus recebe a dupla e diz que precisa de provas de confiança antes de liberar a dinamite. | CS |
 
 ##### Cena 2 - Preparação experimental
 
 | Beat | Premissa Resumida | Tipo |
 | ---- | ---------------- | ---- |
-| **2-A - Organização do campo** | O jogador posiciona barris e ajusta sensores de vibração. | JOG |
-| **2-B - Balastrus explica riscos** | Balastrus detalha o que cada carga representa e por que precisa de testes. | CS |
-
-##### Cena 3 - Testes de dinamite
-
-| Beat | Premissa Resumida | Tipo |
-| ---- | ---------------- | ---- |
-| **3-A - Teste 1: rocha solta** | Jogador aciona a primeira dinamite e observa o impacto seguro. | JOG |
-| **3-B - Teste 2: armadilha móvel** | Balastrus pede ajuste rápido após o segundo disparo; o jogador corrige a mira. | JOG |
-| **3-C - Teste 3: estrutura reforçada** | Uma terceira explosão exige timing perfeito; a equipe celebra o sucesso. | JOG |
+| **2-A - Deslocamento** | Jogador se desloca até a primera mina. | JOG |
+| **2-B - Teste 1: Rocha solta** | Jogador aciona a primeira dinamite e observa o impacto seguro. | CS |
+| **2-C - Deslocamento** | Jogador se desloca até a segunda mina. | JOG |
+| **2-D - Teste 2: Armadilha Móvel** | Balastrus pede ajuste rápido após o segundo disparo; o jogador corrige a mira. | CS |
+| **2-E - Deslocamento** | Jogador se desloca até a terceira mina. | JOG |
+| **2-F - Teste 3: Estrutura Reforçada** | Uma terceira explosão demonstra timing perfeito; a equipe celebra o sucesso. | CS |
 
 ##### Cena 4 - Reconhecimento e ajuste
 
 | Beat | Premissa Resumida | Tipo |
 | ---- | ---------------- | ---- |
-| **4-A - Celebração** | Balastrus reconhece que Thorin pode liderar experiências. | CS |
-| **4-B - Decisão futura** | Thorin decide aplicar os aprendizados nas próximas armadilhas, prometendo voltar para ajustar o esquema. | CS |
+| **3-A - Deslocamento** | Jogador se desloca até a Balastrus. | JOG |
+| **3-B - Celebração** | Balastrus reconhece que Thorin pode liderar experiências. | CS |

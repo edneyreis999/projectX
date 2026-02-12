@@ -63,7 +63,7 @@ Quest: Resgatando Kilin
 | ---- | ---------------- | ---- |
 | **1-A - Balanço da culpa** | Balastrus admite que sua mentira afastou Kilin e concorda em liderar o resgate. | CS |
 | **1-B - Mhordred se desculpa** | Mhordred lembra a importância de Kilin na Guarda e se oferece para abrir o caminho. | CS |
-| **1-C - Escolha de abordagem** | Jogador define o foco da missão: velocidade ou segurança. | CHOICE |
+| **1-C - Escolha** | Jogador escolhe realizar ou não o resgate. | CHOICE |
 
 ##### Cena 2 - Travessia pelas Minas
 
@@ -71,8 +71,6 @@ Quest: Resgatando Kilin
 | ---- | ---------------- | ---- |
 | **2-A - Túneis do leste** | Jogador escolhe um túnel inundado mais longo (mais seguro). | JOG |
 | **2-B - Túneis do oeste** | Jogador escolhe a rota curta, mas cheia de ruínas (risco alto). | JOG |
-| **2-C - Armadilha desativada** | Mhordred desativa uma armadilha com instruções do jogador. | CS |
-| **2-D - Mensagem de Filena** | Filena avisa que Kilin deixará um sinal ao se mover. | CS |
 
 ##### Cena 3 - Câmara do Reformatado
 

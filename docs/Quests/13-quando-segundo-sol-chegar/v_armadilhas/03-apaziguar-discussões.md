@@ -59,7 +59,7 @@ Quest: Apaziguar Discussões
 | Beat | Premissa Resumida | Tipo |
 | ---- | ---------------- | ---- |
 | **1-A - Instruções da Guarda** | Balastrus detalha limites de ua discução que está acontecendo no Distrito Comercial de Gildrat.| CS |
-| **1-B - Aproximação** | O jogador acompanha a Guarda até o Distrito Comercial. | JOG |
+| **1-B - Deslocamento** | O jogador vai até o Distrito Comercial. | JOG |
 
 ##### Cena 2 - Debate na praça
 

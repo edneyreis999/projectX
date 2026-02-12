@@ -71,13 +71,13 @@ Quest: Treinando a Guarda de Ferro
 | **2-A - Discurso motivacional** | Thorin inspira os guardas com memórias das vitórias passadas e a necessidade de proteger Gildrat. | CS |
 | **2-B - Demonstração anti-Ignoto** | Mhordred apresenta os equipamentos e provocações que farão a guarda reagir com precisão. | CS |
 | **2-C - Escolha de foco** | O jogador decide enfatizar disciplina de cerco ou mobilidade leve. | CHOICE |
-| **2-D - Aplicação imediata** | O grupo testa a escolha com um curto exercício. | JOG |
+| **2-D - Aplicação imediata** | O grupo testa a escolha com um curto exercício. | CS |
 
 ##### Cena 3 - Treinamento no Campo
 
 | Beat | Premissa Resumida | Tipo |
 | ---- | ---------------- | ---- |
-| **3-A - Treinamento de Campo** | Os recrutas praticam manobras em duplas sob supervisão de Thorin. | JOG |
+| **3-A - Treinamento de Campo** | Os recrutas praticam manobras em duplas sob supervisão de Thorin. | CS |
 
 ##### Cena 4 - Alojamento e Compromisso
 
