@@ -1694,7 +1694,7 @@
             "switch2Valid": false,
             "variableId": 61,
             "variableValid": true,
-            "variableValue": 2
+            "variableValue": 3
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Principal/$Tordan", "direction": 2, "pattern": 1, "characterIndex": 0 },
