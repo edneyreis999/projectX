@@ -25,6 +25,7 @@ module.exports = {
     "frontend/js/plugins/TAA_CharacterPoses.js",
     "frontend/js/plugins/PKD_AnimaX.js",
     "frontend/js/plugins/VisuMZ_*.js",
+    "frontend/js/plugins/PKD_SimpleFishing.js",
     "dist",
     "coverage",
     "node_modules",

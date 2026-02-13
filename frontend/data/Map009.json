@@ -615,40 +615,10 @@
             { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Até que enfim, achei que tinha ficado com medo e desistido!"] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "2",
-                  "PictureName:str": "Portraits/Principal/Thorin Helmet",
-                  "Origin:str": "Bust",
-                  "Position:num": "1",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Thorin Helmet"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 1"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Eu, com medo?! Nunca!"] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"6-D\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Entrada em Campo\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Cutscene (sem controle): Thorin corre pelo gramado até sua posição inicial, recebendo cumprimentos dos companheiros.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             {
               "code": 357,
               "indent": 0,
@@ -746,14 +716,10 @@
             { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Thorin entra em campo quando falta apenas um tempo para o fim da partida. Após uma rápida troca de passes com Filena, ele marca 6 pontos. Em seguida, o juiz apita e decreta a vitória para os Machados Enferrujados."
-              ]
-            },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"7-A\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Explosão da Torcida\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Arquibancadas entram em frenesi; confetes mágicos e cantos ecoam, sublinhando a magnitude da virada.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             {
               "code": 357,
               "indent": 0,
