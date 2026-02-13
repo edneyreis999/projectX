@@ -1081,7 +1081,7 @@
           "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 0, "characterIndex": 7 },
           "list": [
             { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
-            { "code": 201, "indent": 0, "parameters": [0, 33, 28, 5, 2, 0] },
+            { "code": 201, "indent": 0, "parameters": [0, 33, 28, 7, 2, 0] },
             { "code": 355, "indent": 0, "parameters": ["SQSM.CompleteTaskForQuest(\"resgatarBorin\", 2);"] },
             { "code": 655, "indent": 0, "parameters": ["SQSM.ShowTaskForQuest(\"resgatarBorin\", 3);"] },
             { "code": 655, "indent": 0, "parameters": ["SQSM.ShowTaskForQuest(\"resgatarBorin\", 4);"] },

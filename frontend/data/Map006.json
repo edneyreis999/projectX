@@ -654,7 +654,7 @@
             "switch2Valid": true,
             "variableId": 61,
             "variableValid": true,
-            "variableValue": 2
+            "variableValue": 1
           },
           "directionFix": false,
           "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
@@ -675,7 +675,7 @@
             { "code": 221, "indent": 1, "parameters": [] },
             { "code": 223, "indent": 1, "parameters": [[-255, -255, -255, 0], 30, true] },
             { "code": 250, "indent": 1, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
-            { "code": 122, "indent": 1, "parameters": [61, 61, 0, 0, 3] },
+            { "code": 122, "indent": 1, "parameters": [61, 61, 0, 0, 4] },
             { "code": 201, "indent": 1, "parameters": [0, 21, 14, 13, 0, 0] },
             { "code": 223, "indent": 1, "parameters": [[0, 0, 0, 0], 30, true] },
             { "code": 314, "indent": 1, "parameters": [0, 0] },
@@ -1648,7 +1648,7 @@
             "switch2Valid": false,
             "variableId": 61,
             "variableValid": true,
-            "variableValue": 1
+            "variableValue": 2
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Principal/$Tordan", "direction": 2, "pattern": 1, "characterIndex": 0 },
@@ -1659,10 +1659,12 @@
             { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 102, "indent": 0, "parameters": [["Perdoar", "Ignorar"], 1, 0, 2, 0] },
             { "code": 402, "indent": 0, "parameters": [0, "Perdoar"] },
-            { "code": 122, "indent": 1, "parameters": [61, 61, 0, 0, 2] },
+            { "code": 122, "indent": 1, "parameters": [61, 61, 0, 0, 3] },
+            { "code": 357, "indent": 1, "parameters": ["Coreto_Quests", "addWeapon", "Add Weapon", { "weaponID": "50" }] },
+            { "code": 657, "indent": 1, "parameters": ["Weapon ID = 50"] },
             { "code": 0, "indent": 1, "parameters": [] },
             { "code": 402, "indent": 0, "parameters": [1, "Ignorar"] },
-            { "code": 122, "indent": 1, "parameters": [61, 61, 0, 0, 2] },
+            { "code": 122, "indent": 1, "parameters": [61, 61, 0, 0, 3] },
             { "code": 0, "indent": 1, "parameters": [] },
             { "code": 404, "indent": 0, "parameters": [] },
             { "code": 121, "indent": 0, "parameters": [9, 9, 0] },
