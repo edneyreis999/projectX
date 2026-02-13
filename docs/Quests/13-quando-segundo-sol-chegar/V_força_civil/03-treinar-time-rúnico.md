@@ -1,45 +1,88 @@
-# Treinar Time Rúnico
+﻿# Narrative Structure Document (NSD) - Treinar Time Rúnico
 
-## Identificação
+## Quest: Treinar Time Rúnico - V Força Civil
 
-- **Tipo:** Reforço Exército Civil.
-- **Dificuldade:** Fácil.
-- **Localização:** Campo de Treinamento.
-- **Nome Artístico:** Jogadores Caros!
-- **Desbloqueia ao Iniciar:** N/A.
+### 1 Resumo Geral (Checkpoint 0)
 
-## Contexto Narrativo
+- [ ] Em andamento
+- Nome da quest: Treinar Time Rúnico em Kravens
+- Importancia na campanha: reforça a presença simbólica da força civil enquanto integra o time rúnico
+- Arco narrativo: orgulho comunitário, disciplina coletiva e respeito às tradições esportivas
+- Objetivo narrativo global: convencer o time Machados Enferrujados a usar a quadra como laboratório de defesa para Gildrat
+- Premissa resumida: Filena guia Thorin até o Campo de Treinamento, eles trabalham com os jogadores e traduzem a paixão por futebol rúnico em táticas contras os Ignotos.
 
-Quest que aprofunda a relação do time de futebol rúnico "Machados Enferrujados" com Thorin e Filena, além de integrá-los ao exército de Gildrat.
+- Locais principais
+  - Campo de Treinamento
+  - Quadra Rúnica
+- NPCs principais
+  - Thorin
+  - Filena
+  - Time Machados Enferrujados (capitão, arqueiros e apoio)
+  - Borin (aparece se resgatado)
 
-## Gatilhos
+### 2 Pré-condições Narrativas (Checkpoint 1)
 
-- **NPC com a quest:** Filena.
-- **Requisitos:** N/A.
-- **Gatilho:** Falar com Filena no Campo de Treinamento.
-- **Condição para concluir:**
-  - Interagir com o time de futebol rúnico no Campo de Treinamento.
-  - Falar com Filena após o treinamento.
+| Tipo | Descrição |
+| --- | --- |
+| Flags / Decisões anteriores | Ter salvo ou aliado Borin e os rebeldes no turno anterior, garantindo acesso ao time. |
+| Limitações ou bloqueios | Necessário conversar com Filena no Campo de Treinamento; o time só se compromete se Thorin demonstrar respeito às tradições locais. |
 
-## Estrutura Sistêmica
+### 3 Fluxo Visual Resumido (Checkpoint 2)
 
-- **Atores Envolvidos:**
-  - Borin (Situacional (apenas se Thorin também o salvou) - Rival de Thorin)
-  - Thorin (protagonista)
-  - Filena (companheira, motivação emocional)
-  - Time de Futebol Rúnico (NPCs Jogadores do time Machados Enferrujados)
-- **Variáveis / Flags Alteradas:**
-  - `v_forca_civil`
+- [ ] Em andamento
 
-## Desfechos Possíveis
+```plaintext
+Quest: Treinar Time Rúnico - V Força Civil
+ +-- Cena 1: Campo de Treinamento - Filena explica o vínculo entre esporte e defesa.
+        +-- Beat 1: Thorin observa os jogadores e escuta a desconfiança do capitão.
+ +-- Cena 2: Entendendo os Capitães
+        +-- Beat 1: Capitão dos Arqueiros exige compromisso com precisão e honestidade.
+        +-- Beat 2: Capitão do Bixete quer garantias de que o time não será explorado.
+        +-- Beat 3: Líder de Apoio pede confirmações logísticas para manter o time em pé.
+ +-- Cena 3: Simulação na Quadra Rúnica
+ |      +-- Beat 1: Drills com runas e passes especiais mostram disciplina tática.
+ |      +-- Beat 2: Filena liga cada exercício à defesa de Gildrat.
+ +-- Cena 4: Fechamento com Filena
+ |      +-- Beat 1: O time canta a canção dos campeões e Filena oficializa a flag `v_forca_civil`.
+```
 
-- **Final A (Treinamento Completo):** Thorin e Filena têm êxito em treinar o time rúnico.
+#### Tabela de Cenas
 
-## Condição de Falha
+| # | Nome da Cena | Premissa resumida (expandida) |
+| --- | --- | --- |
+| 1 | **Apresentação do Time** | Filena pede que Thorin prove que entende o espírito rúnico antes de pedir reforços. |
+| 2 | **Conquista dos Capitães** | Cada capitão expõe medos distintos e Thorin responde com ações concretas. |
+| 3 | **Treino Ritual** | A quadra vira campo de batalha simbólico com drills que conectam esporte e combate. |
+| 4 | **Coroação com Filena** | O time canta, celebrando a nova identidade e Filena registra o ingresso deles na força civil. |
 
-- **Final B (Ignora):** Jogador ignora a quest.
+#### Beats por Cena
 
-## Recompensas
+##### Cena 1 - Apresentação do Time
 
-- **v_forca_civil:** +15 pontos (do total de 100)
-- **Narrativa:** O time canta a canção dos campeões e ganham confiança para lutar contra os Ignotos.
+| Beat | Premissa Resumida | Tipo |
+| ---- | ---------------- | ---- |
+| **1-A - Boas-vindas rúnica** | Filena explica a importância da tradição esportiva; Thorin observa o clima. | CS |
+| **1-B - Desafio do Capitão** | O capitão declara que o time precisa de provas de respeito, não só promessas. | CHOICE |
+
+##### Cena 2 - Conquista dos Capitães
+
+| Beat | Premissa Resumida | Tipo |
+| ---- | ---------------- | ---- |
+| **2-A - Capitão dos Arqueiros** | Discute precisão e foco; Thorin mostra planos de defesa próximos. | CS |
+| **2-B - Capitão do Bixete** | Exige garantias de que eles não virarão soldados descartáveis. | CS |
+| **2-C - Líder do Apoio** | Quer recursos e logística; Filena apresenta reforços e suprimentos. | CS |
+
+##### Cena 3 - Treino Ritual
+
+| Beat | Premissa Resumida | Tipo |
+| ---- | ---------------- | ---- |
+| **3-A - Drills rúnicos** | Jogadores praticam passes com runas; Thorin participa e sente o ritmo. | JOG |
+| **3-B - Direção de Filena** | Filena compara o treino ao que será exigido na defesa de Gildrat. | CS |
+| **3-C - Canto dos Campeões** | O time canta celebrando a nova aliança. | CS |
+
+##### Cena 4 - Coroação com Filena
+
+| Beat | Premissa Resumida | Tipo |
+| ---- | ---------------- | ---- |
+| **4-A - Cerimônia de Entronização** | Filena formaliza a entrada do time na força civil. | CS |
+| **4-B - Flag ativada** | `v_forca_civil` soma +15 pontos e entrega bônus narrativos. | CS |
