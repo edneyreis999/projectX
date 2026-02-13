@@ -252,7 +252,7 @@
             "variableValue": 0
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "!Door2", "direction": 4, "pattern": 0, "characterIndex": 5 },
           "list": [
             { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
             { "code": 201, "indent": 0, "parameters": [0, 25, 1, 9, 0, 0] },
@@ -262,7 +262,7 @@
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
           "moveType": 0,
-          "priorityType": 0,
+          "priorityType": 1,
           "stepAnime": false,
           "through": false,
           "trigger": 1,
@@ -323,7 +323,7 @@
             "variableValue": 0
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "!Door2", "direction": 4, "pattern": 0, "characterIndex": 5 },
           "list": [
             { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
             { "code": 201, "indent": 0, "parameters": [0, 25, 1, 9, 0, 0] },
@@ -333,7 +333,7 @@
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
           "moveType": 0,
-          "priorityType": 0,
+          "priorityType": 1,
           "stepAnime": false,
           "through": false,
           "trigger": 1,
@@ -462,7 +462,7 @@
                 "BASIC: Enter Bust",
                 {
                   "PictureID:eval": "1",
-                  "PictureName:str": "Portraits/Principal/Kilin_raiva",
+                  "PictureName:str": "Portraits/Principal/Kilin_nada",
                   "Origin:str": "Bust",
                   "Position:num": "10",
                   "StartOffsetX:eval": "-200",
@@ -474,7 +474,7 @@
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Kilin_raiva"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Kilin_nada"] },
             { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = 10"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
@@ -484,8 +484,8 @@
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
             { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"1-I/A\""] },
-            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Nem que a vaca-morcego tussa\""] },
-            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Kilin diz que o grupo nao precisa de Balastrus e que consegue operar o mecanismo sem ele.\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"A boa estratégia é sempre o melhor ataque\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Kilin diz que o grupo precisa trabalhar de forma rápida e eficiente para avançar pela mina.\""] },
             { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 230, "indent": 0, "parameters": [20] },
             {
@@ -497,7 +497,7 @@
                 "BASIC: Enter Bust",
                 {
                   "PictureID:eval": "2",
-                  "PictureName:str": "Portraits/Principal/Mhordred_susto",
+                  "PictureName:str": "Portraits/Principal/Mhordred_nada",
                   "Origin:str": "Bust",
                   "Position:num": "7",
                   "StartOffsetX:eval": "-200",
@@ -509,7 +509,7 @@
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Mhordred_susto"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Mhordred_nada"] },
             { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = 7"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
@@ -520,7 +520,11 @@
             { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
             { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"1-I/B\""] },
             { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Orgulho de guerreiro\""] },
-            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Mhordred concorda: primeiro eles tentam sozinhos, Balastrus fica como ultima opcao.\""] },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [103, 103, 0, 4, "\"Mhordred diz que não gosta desse tipo de lógica, que prefere lutar a se sentar e discutir estratégias de um quebra-cabeças.\""]
+            },
             { "code": 117, "indent": 0, "parameters": [16] },
             {
               "code": 357,
@@ -553,8 +557,12 @@
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [45, 45, 0] },
             { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"1-I/C\""] },
-            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Arrogância\""] },
-            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Filena começa a perder a paciência com a teimosia de Kilin e Mhordred.\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Mesmo barco\""] },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [103, 103, 0, 4, "\"Filena diz que estão todos no mesmo barco e, se quiserem sobreviver, precisarão enfrentar todas as etapas, até mesmo as chatas como Mhordred disse.\""]
+            },
             { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 230, "indent": 0, "parameters": [20] },
             {
@@ -566,7 +574,7 @@
                 "BASIC: Enter Bust",
                 {
                   "PictureID:eval": "4",
-                  "PictureName:str": "Portraits/Principal/Thorin Armadura Hemet_raiva",
+                  "PictureName:str": "Portraits/Principal/Thorin Armadura Helmet",
                   "Origin:str": "Bust",
                   "Position:num": "1",
                   "StartOffsetX:eval": "-200",
@@ -578,7 +586,7 @@
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Picture ID = 4"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Thorin Armadura Hemet_ra…"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Thorin Armadura Helmet"] },
             { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = 1"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
@@ -588,17 +596,11 @@
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [46, 46, 0] },
             { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"1-I/D\""] },
-            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Eu estava escutando\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Cadê o Balastrus?\""] },
             {
               "code": 122,
               "indent": 0,
-              "parameters": [
-                103,
-                103,
-                0,
-                4,
-                "\"Thorin acusa Kilin de ser hipócrita. Ele disse que o garoto precisava escutar mais e não ser tão orgulhoso, mas agora se recusa a pedir a ajuda de Balastrus.\""
-              ]
+              "parameters": [103, 103, 0, 4, "\"Thorin lembra ao grupo que já não veem o Balastrus há algum tempo, mas os outros não parecem preocupados e nem querendo saber dele.\""]
             },
             { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 230, "indent": 0, "parameters": [20] },
@@ -659,8 +661,8 @@
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
             { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"1-J\""] },
-            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Não se pode discutir com pedras, elas sempre vencem\""] },
-            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Filena conta para o restante do grupo o que descobriu.\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Enigma sujo\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Filena explica em detalhes as instroções sobre o quebra-cabeças.\""] },
             { "code": 117, "indent": 0, "parameters": [16] },
             {
               "code": 357,
@@ -689,23 +691,44 @@
             { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
             { "code": 230, "indent": 0, "parameters": [30] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
+            { "code": 401, "indent": 0, "parameters": ["Instruções detalhadas:"] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
-            { "code": 401, "indent": 0, "parameters": ["Dicas do puzzle:"] },
+            { "code": 401, "indent": 0, "parameters": ["Válvula 1: São três alavancas juntas, uma correta e outras duas que se puxadas inutilizam o mecanismo."] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
-            { "code": 401, "indent": 0, "parameters": ["Valvula 1: tres alavancas juntas, duas corretas e uma inutiliza o mecanismo."] },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": ["Válvula 2: A alavanca está posicionada em uma área de risco, em baixo de uma velha parede de pedras pontiagudas que pode desabar a qualquer momento."]
+            },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
-            { "code": 401, "indent": 0, "parameters": ["Valvula 2: alavanca muito dura, precisa de muita forca fisica."] },
+            { "code": 401, "indent": 0, "parameters": ["Válvula 3: A alavanca está emperrada, é necessário muita força física para puxá-la e mantê-la assim durante algum tempo."] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
-            { "code": 401, "indent": 0, "parameters": ["Valvula 3: maquinario instavel; precisa de alguem firme sob pressao."] },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": ["Válvula final: uma alavanca simples, sem quaisquer requisitos aparentes. Até mesmo um filhinho de papai mimado e tapado saberia o que fazer com ela. "]
+            },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
-            { "code": 401, "indent": 0, "parameters": ["Valvula final: Balastrus deve ser acionado por ultimo, depois das tres anteriores."] },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Problema e lógica central do quebra-cabeças: A válvula 2 só poderá ser ativada depois que a número 1 também estiver ativa e assim sucessivamente. Ninguém pode soltar sua alavanca até que a última seja ativada, ou todas serão inutilizadas."
+              ]
+            },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
-            { "code": 401, "indent": 0, "parameters": ["Ninguem pode soltar sua valvula ate a ultima ser ativada."] },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Tentativa e erro: Se a sequência de escolhas estiver errada, ao puxar a última alavanca um som estridente será emitido e o quebra-cabeças recomeçará. Se acertar, a passagem para o 2 andar subterrâneo da mina deve ser liberada. "
+              ]
+            },
             {
               "code": 355,
               "indent": 0,
               "parameters": [
-                "$gameSystem._map24ValveChoices = {21:0,22:0,23:0}; setSelfSwitchValue($gameMap.mapId(), 21, 'A', false); setSelfSwitchValue($gameMap.mapId(), 22, 'A', false); setSelfSwitchValue($gameMap.mapId(), 23, 'A', false); setSelfSwitchValue($gameMap.mapId(), 24, 'A', false); $gameSwitches.setValue(60,false); $gameSwitches.setValue(61,false); $gameSwitches.setValue(62,false); $gameSwitches.setValue(63,false); $gameMap.event(12).locate(0,0); $gameMap.event(13).locate(0,0); $gameMap.event(14).locate(0,0); $gameMap.event(15).locate(0,0);"
+                "$gameSystem._map24ValveChoices = {21:0,22:0,23:0}; setSelfSwitchValue($gameMap.mapId(), 21, 'A', false); setSelfSwitchValue($gameMap.mapId(), 22, 'A', false); setSelfSwitchValue($gameMap.mapId(), 23, 'A', false); $gameSwitches.setValue(60,false); $gameSwitches.setValue(61,false); $gameSwitches.setValue(62,false); $gameMap.event(12).locate(0,0); $gameMap.event(13).locate(0,0); $gameMap.event(14).locate(0,0); $gameMap.event(15).locate(0,0);"
               ]
             },
             { "code": 221, "indent": 0, "parameters": [] },
@@ -842,7 +865,7 @@
             "variableValue": 0
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "!Door2", "direction": 4, "pattern": 1, "characterIndex": 5 },
           "list": [
             { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
             { "code": 201, "indent": 0, "parameters": [0, 25, 1, 9, 0, 0] },
@@ -852,7 +875,7 @@
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
           "moveType": 0,
-          "priorityType": 0,
+          "priorityType": 1,
           "stepAnime": false,
           "through": false,
           "trigger": 1,
@@ -1277,8 +1300,8 @@
           "walkAnime": true
         }
       ],
-      "x": 11,
-      "y": 24
+      "x": 14,
+      "y": 28
     },
     {
       "id": 16,
@@ -1710,11 +1733,18 @@
           "image": { "tileId": 0, "characterName": "!Switch1", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
-            { "code": 401, "indent": 0, "parameters": ["Valvula 1: tres alavancas acopladas, duas corretas e uma inutiliza o mecanismo."] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
-            { "code": 401, "indent": 0, "parameters": ["Escolha quem tem leitura tecnica para identificar o padrao certo."] },
-            { "code": 102, "indent": 0, "parameters": [["Filena", "Kilin", "Mhordred"], 2, 0, 2, 0] },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": ["Válvula 1: As três alavancas acopladas são idênticas, é preciso alguém muito inteligente e com conhecimento em línguas de código para descobrir qual a certa."]
+            },
+            { "code": 102, "indent": 0, "parameters": [["Filena", "Kilin", "Mhordred", "Resetar escolhas"], 2, 0, 2, 0] },
             { "code": 402, "indent": 0, "parameters": [0, "Filena"] },
+            { "code": 111, "indent": 1, "parameters": [12, "(function(){var c=$gameSystem._map24ValveChoices||{}; return c[22]===14 || c[23]===14;})()"] },
+            { "code": 101, "indent": 2, "parameters": ["", 0, 0, 2, "Sistema"] },
+            { "code": 401, "indent": 2, "parameters": ["Esse aliado ja esta segurando outra valvula. Escolha outro personagem."] },
+            { "code": 115, "indent": 2, "parameters": [] },
+            { "code": 412, "indent": 1, "parameters": [] },
             { "code": 221, "indent": 1, "parameters": [] },
             { "code": 355, "indent": 1, "parameters": ["$gameMap.event(14).setImage('Principal/$Filena', 0); $gameMap.event(14).setTransparent(false); $gameMap.event(14).setOpacity(255);"] },
             { "code": 355, "indent": 1, "parameters": ["$gameMap.event(14).locate(12,20);"] },
@@ -1728,6 +1758,11 @@
               ]
             },
             { "code": 402, "indent": 0, "parameters": [1, "Kilin"] },
+            { "code": 111, "indent": 1, "parameters": [12, "(function(){var c=$gameSystem._map24ValveChoices||{}; return c[22]===12 || c[23]===12;})()"] },
+            { "code": 101, "indent": 2, "parameters": ["", 0, 0, 2, "Sistema"] },
+            { "code": 401, "indent": 2, "parameters": ["Esse aliado ja esta segurando outra valvula. Escolha outro personagem."] },
+            { "code": 115, "indent": 2, "parameters": [] },
+            { "code": 412, "indent": 1, "parameters": [] },
             { "code": 221, "indent": 1, "parameters": [] },
             { "code": 355, "indent": 1, "parameters": ["$gameMap.event(12).setImage('Principal/$Kilin', 0); $gameMap.event(12).setTransparent(false); $gameMap.event(12).setOpacity(255);"] },
             { "code": 355, "indent": 1, "parameters": ["$gameMap.event(12).locate(12,20);"] },
@@ -1741,6 +1776,11 @@
               ]
             },
             { "code": 402, "indent": 0, "parameters": [2, "Mhordred"] },
+            { "code": 111, "indent": 1, "parameters": [12, "(function(){var c=$gameSystem._map24ValveChoices||{}; return c[22]===13 || c[23]===13;})()"] },
+            { "code": 101, "indent": 2, "parameters": ["", 0, 0, 2, "Sistema"] },
+            { "code": 401, "indent": 2, "parameters": ["Esse aliado ja esta segurando outra valvula. Escolha outro personagem."] },
+            { "code": 115, "indent": 2, "parameters": [] },
+            { "code": 412, "indent": 1, "parameters": [] },
             { "code": 221, "indent": 1, "parameters": [] },
             { "code": 355, "indent": 1, "parameters": ["$gameMap.event(13).setImage('Principal/$Mhordred', 0); $gameMap.event(13).setTransparent(false); $gameMap.event(13).setOpacity(255);"] },
             { "code": 355, "indent": 1, "parameters": ["$gameMap.event(13).locate(12,20);"] },
@@ -1753,6 +1793,17 @@
                 "$gameSystem._map24ValveChoices = $gameSystem._map24ValveChoices || {}; $gameSystem._map24ValveChoices[21] = 13; setSelfSwitchValue($gameMap.mapId(), 21, 'A', true); $gameSwitches.setValue(60, true);"
               ]
             },
+            { "code": 402, "indent": 0, "parameters": [3, "Resetar escolhas"] },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "setSelfSwitchValue($gameMap.mapId(), 21, 'A', false); setSelfSwitchValue($gameMap.mapId(), 22, 'A', false); setSelfSwitchValue($gameMap.mapId(), 23, 'A', false); $gameSwitches.setValue(60,false); $gameSwitches.setValue(61,false); $gameSwitches.setValue(62,false); $gameMap.event(12).locate(0,0); $gameMap.event(13).locate(0,0); $gameMap.event(14).locate(0,0); $gameMap.event(15).locate(0,0); $gameMap.event(12).setTransparent(true); $gameMap.event(13).setTransparent(true); $gameMap.event(14).setTransparent(true); $gameMap.event(15).setTransparent(true);"
+              ]
+            },
+            { "code": 355, "indent": 1, "parameters": ["$gameSystem._map24ValveChoices = {21:0,22:0,23:0};"] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, "Sistema"] },
+            { "code": 401, "indent": 1, "parameters": ["Escolhas resetadas. Reposicione os aliados."] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -1785,7 +1836,7 @@
           "image": { "tileId": 0, "characterName": "!Switch1", "direction": 6, "pattern": 2, "characterIndex": 2 },
           "list": [
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
-            { "code": 401, "indent": 0, "parameters": ["Valvula travada por um aliado."] },
+            { "code": 401, "indent": 0, "parameters": ["Válvula ativada por um aliado."] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -1827,11 +1878,14 @@
           "image": { "tileId": 0, "characterName": "!Switch1", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
-            { "code": 401, "indent": 0, "parameters": ["Valvula 2: alavanca muito dura, destrava mecanismos pesados."] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
-            { "code": 401, "indent": 0, "parameters": ["Escolha quem tem mais forca fisica para segurar sob carga."] },
-            { "code": 102, "indent": 0, "parameters": [["Filena", "Kilin", "Mhordred"], 2, 0, 2, 0] },
+            { "code": 401, "indent": 0, "parameters": ["Válvula 3: A alavanca está emperrada, é preciso muita força física para ativá-la."] },
+            { "code": 102, "indent": 0, "parameters": [["Filena", "Kilin", "Mhordred", "Resetar escolhas"], 2, 0, 2, 0] },
             { "code": 402, "indent": 0, "parameters": [0, "Filena"] },
+            { "code": 111, "indent": 1, "parameters": [12, "(function(){var c=$gameSystem._map24ValveChoices||{}; return c[21]===14 || c[23]===14;})()"] },
+            { "code": 101, "indent": 2, "parameters": ["", 0, 0, 2, "Sistema"] },
+            { "code": 401, "indent": 2, "parameters": ["Esse aliado ja esta segurando outra valvula. Escolha outro personagem."] },
+            { "code": 115, "indent": 2, "parameters": [] },
+            { "code": 412, "indent": 1, "parameters": [] },
             { "code": 221, "indent": 1, "parameters": [] },
             { "code": 355, "indent": 1, "parameters": ["$gameMap.event(14).setImage('Principal/$Filena', 0); $gameMap.event(14).setTransparent(false); $gameMap.event(14).setOpacity(255);"] },
             { "code": 355, "indent": 1, "parameters": ["$gameMap.event(14).locate(18,23);"] },
@@ -1845,6 +1899,11 @@
               ]
             },
             { "code": 402, "indent": 0, "parameters": [1, "Kilin"] },
+            { "code": 111, "indent": 1, "parameters": [12, "(function(){var c=$gameSystem._map24ValveChoices||{}; return c[21]===12 || c[23]===12;})()"] },
+            { "code": 101, "indent": 2, "parameters": ["", 0, 0, 2, "Sistema"] },
+            { "code": 401, "indent": 2, "parameters": ["Esse aliado ja esta segurando outra valvula. Escolha outro personagem."] },
+            { "code": 115, "indent": 2, "parameters": [] },
+            { "code": 412, "indent": 1, "parameters": [] },
             { "code": 221, "indent": 1, "parameters": [] },
             { "code": 355, "indent": 1, "parameters": ["$gameMap.event(12).setImage('Principal/$Kilin', 0); $gameMap.event(12).setTransparent(false); $gameMap.event(12).setOpacity(255);"] },
             { "code": 355, "indent": 1, "parameters": ["$gameMap.event(12).locate(18,23);"] },
@@ -1858,6 +1917,11 @@
               ]
             },
             { "code": 402, "indent": 0, "parameters": [2, "Mhordred"] },
+            { "code": 111, "indent": 1, "parameters": [12, "(function(){var c=$gameSystem._map24ValveChoices||{}; return c[21]===13 || c[23]===13;})()"] },
+            { "code": 101, "indent": 2, "parameters": ["", 0, 0, 2, "Sistema"] },
+            { "code": 401, "indent": 2, "parameters": ["Esse aliado ja esta segurando outra valvula. Escolha outro personagem."] },
+            { "code": 115, "indent": 2, "parameters": [] },
+            { "code": 412, "indent": 1, "parameters": [] },
             { "code": 221, "indent": 1, "parameters": [] },
             { "code": 355, "indent": 1, "parameters": ["$gameMap.event(13).setImage('Principal/$Mhordred', 0); $gameMap.event(13).setTransparent(false); $gameMap.event(13).setOpacity(255);"] },
             { "code": 355, "indent": 1, "parameters": ["$gameMap.event(13).locate(18,23);"] },
@@ -1870,6 +1934,17 @@
                 "$gameSystem._map24ValveChoices = $gameSystem._map24ValveChoices || {}; $gameSystem._map24ValveChoices[22] = 13; setSelfSwitchValue($gameMap.mapId(), 22, 'A', true); $gameSwitches.setValue(61, true);"
               ]
             },
+            { "code": 402, "indent": 0, "parameters": [3, "Resetar escolhas"] },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "setSelfSwitchValue($gameMap.mapId(), 21, 'A', false); setSelfSwitchValue($gameMap.mapId(), 22, 'A', false); setSelfSwitchValue($gameMap.mapId(), 23, 'A', false); $gameSwitches.setValue(60,false); $gameSwitches.setValue(61,false); $gameSwitches.setValue(62,false); $gameMap.event(12).locate(0,0); $gameMap.event(13).locate(0,0); $gameMap.event(14).locate(0,0); $gameMap.event(15).locate(0,0); $gameMap.event(12).setTransparent(true); $gameMap.event(13).setTransparent(true); $gameMap.event(14).setTransparent(true); $gameMap.event(15).setTransparent(true);"
+              ]
+            },
+            { "code": 355, "indent": 1, "parameters": ["$gameSystem._map24ValveChoices = {21:0,22:0,23:0};"] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, "Sistema"] },
+            { "code": 401, "indent": 1, "parameters": ["Escolhas resetadas. Reposicione os aliados."] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -1902,7 +1977,7 @@
           "image": { "tileId": 0, "characterName": "!Switch1", "direction": 6, "pattern": 2, "characterIndex": 2 },
           "list": [
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
-            { "code": 401, "indent": 0, "parameters": ["Valvula travada por um aliado."] },
+            { "code": 401, "indent": 0, "parameters": ["Válvula ativada por um aliado."] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -1944,11 +2019,20 @@
           "image": { "tileId": 0, "characterName": "!Switch1", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
-            { "code": 401, "indent": 0, "parameters": ["Valvula 3: maquinario instavel, qualquer hesitacao compromete tudo."] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
-            { "code": 401, "indent": 0, "parameters": ["Escolha quem nao se intimida sob pressao e mantem o ritmo."] },
-            { "code": 102, "indent": 0, "parameters": [["Filena", "Kilin", "Mhordred"], 2, 0, 2, 0] },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Válvula 2: Usado no passado para testar a coragem dos trabalhadores. Não se pode hesitar, soltar a alavanca antes da hora inutiliza todas as outras, quem seria capaz de lidar com isso, o desabamento iminente de pedras e com as criaturas que rondam a mina e ainda sim se manter firme mesmo sobre pressão?"
+              ]
+            },
+            { "code": 102, "indent": 0, "parameters": [["Filena", "Kilin", "Mhordred", "Resetar escolhas"], 2, 0, 2, 0] },
             { "code": 402, "indent": 0, "parameters": [0, "Filena"] },
+            { "code": 111, "indent": 1, "parameters": [12, "(function(){var c=$gameSystem._map24ValveChoices||{}; return c[21]===14 || c[22]===14;})()"] },
+            { "code": 101, "indent": 2, "parameters": ["", 0, 0, 2, "Sistema"] },
+            { "code": 401, "indent": 2, "parameters": ["Esse aliado ja esta segurando outra valvula. Escolha outro personagem."] },
+            { "code": 115, "indent": 2, "parameters": [] },
+            { "code": 412, "indent": 1, "parameters": [] },
             { "code": 221, "indent": 1, "parameters": [] },
             { "code": 355, "indent": 1, "parameters": ["$gameMap.event(14).setImage('Principal/$Filena', 0); $gameMap.event(14).setTransparent(false); $gameMap.event(14).setOpacity(255);"] },
             { "code": 355, "indent": 1, "parameters": ["$gameMap.event(14).locate(23,8);"] },
@@ -1962,6 +2046,11 @@
               ]
             },
             { "code": 402, "indent": 0, "parameters": [1, "Kilin"] },
+            { "code": 111, "indent": 1, "parameters": [12, "(function(){var c=$gameSystem._map24ValveChoices||{}; return c[21]===12 || c[22]===12;})()"] },
+            { "code": 101, "indent": 2, "parameters": ["", 0, 0, 2, "Sistema"] },
+            { "code": 401, "indent": 2, "parameters": ["Esse aliado ja esta segurando outra valvula. Escolha outro personagem."] },
+            { "code": 115, "indent": 2, "parameters": [] },
+            { "code": 412, "indent": 1, "parameters": [] },
             { "code": 221, "indent": 1, "parameters": [] },
             { "code": 355, "indent": 1, "parameters": ["$gameMap.event(12).setImage('Principal/$Kilin', 0); $gameMap.event(12).setTransparent(false); $gameMap.event(12).setOpacity(255);"] },
             { "code": 355, "indent": 1, "parameters": ["$gameMap.event(12).locate(23,8);"] },
@@ -1975,6 +2064,11 @@
               ]
             },
             { "code": 402, "indent": 0, "parameters": [2, "Mhordred"] },
+            { "code": 111, "indent": 1, "parameters": [12, "(function(){var c=$gameSystem._map24ValveChoices||{}; return c[21]===13 || c[22]===13;})()"] },
+            { "code": 101, "indent": 2, "parameters": ["", 0, 0, 2, "Sistema"] },
+            { "code": 401, "indent": 2, "parameters": ["Esse aliado ja esta segurando outra valvula. Escolha outro personagem."] },
+            { "code": 115, "indent": 2, "parameters": [] },
+            { "code": 412, "indent": 1, "parameters": [] },
             { "code": 221, "indent": 1, "parameters": [] },
             { "code": 355, "indent": 1, "parameters": ["$gameMap.event(13).setImage('Principal/$Mhordred', 0); $gameMap.event(13).setTransparent(false); $gameMap.event(13).setOpacity(255);"] },
             { "code": 355, "indent": 1, "parameters": ["$gameMap.event(13).locate(23,8);"] },
@@ -1987,6 +2081,17 @@
                 "$gameSystem._map24ValveChoices = $gameSystem._map24ValveChoices || {}; $gameSystem._map24ValveChoices[23] = 13; setSelfSwitchValue($gameMap.mapId(), 23, 'A', true); $gameSwitches.setValue(62, true);"
               ]
             },
+            { "code": 402, "indent": 0, "parameters": [3, "Resetar escolhas"] },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "setSelfSwitchValue($gameMap.mapId(), 21, 'A', false); setSelfSwitchValue($gameMap.mapId(), 22, 'A', false); setSelfSwitchValue($gameMap.mapId(), 23, 'A', false); $gameSwitches.setValue(60,false); $gameSwitches.setValue(61,false); $gameSwitches.setValue(62,false); $gameMap.event(12).locate(0,0); $gameMap.event(13).locate(0,0); $gameMap.event(14).locate(0,0); $gameMap.event(15).locate(0,0); $gameMap.event(12).setTransparent(true); $gameMap.event(13).setTransparent(true); $gameMap.event(14).setTransparent(true); $gameMap.event(15).setTransparent(true);"
+              ]
+            },
+            { "code": 355, "indent": 1, "parameters": ["$gameSystem._map24ValveChoices = {21:0,22:0,23:0};"] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, "Sistema"] },
+            { "code": 401, "indent": 1, "parameters": ["Escolhas resetadas. Reposicione os aliados."] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -2019,7 +2124,7 @@
           "image": { "tileId": 0, "characterName": "!Switch1", "direction": 6, "pattern": 2, "characterIndex": 2 },
           "list": [
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
-            { "code": 401, "indent": 0, "parameters": ["Valvula travada por um aliado."] },
+            { "code": 401, "indent": 0, "parameters": ["Válvula ativada por um aliado."] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -2036,83 +2141,7 @@
       "x": 23,
       "y": 8
     },
-    {
-      "id": 24,
-      "name": "Valvula Balastrus",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 40,
-            "variableValid": true,
-            "variableValue": 7
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "!Switch1", "direction": 2, "pattern": 0, "characterIndex": 0 },
-          "list": [
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
-            { "code": 401, "indent": 0, "parameters": ["Esta valvula final so pode ser operada por Balastrus."] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
-            { "code": 401, "indent": 0, "parameters": ["Primeiro, posicione os tres aliados e depois use a alavanca do Thorin."] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 40,
-            "variableValid": true,
-            "variableValue": 7
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "!Switch1", "direction": 6, "pattern": 2, "characterIndex": 2 },
-          "list": [
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
-            { "code": 401, "indent": 0, "parameters": ["Balastrus esta segurando a valvula final."] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        }
-      ],
-      "x": 11,
-      "y": 28
-    },
+    null,
     {
       "id": 25,
       "name": "Alavanca Thorin",
@@ -2138,7 +2167,7 @@
           "image": { "tileId": 0, "characterName": "!Switch1", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
-            { "code": 401, "indent": 0, "parameters": ["que alavancas estranhas"] },
+            { "code": 401, "indent": 0, "parameters": ["Que alavanca mais estranha!"] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -2170,6 +2199,22 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Switch1", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [
+            { "code": 102, "indent": 0, "parameters": [["Puxar alavanca", "Resetar escolhas", "Cancelar"], 2, 0, 2, 0] },
+            { "code": 402, "indent": 0, "parameters": [0, "Puxar alavanca"] },
+            { "code": 402, "indent": 0, "parameters": [1, "Resetar escolhas"] },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "setSelfSwitchValue($gameMap.mapId(), 21, 'A', false); setSelfSwitchValue($gameMap.mapId(), 22, 'A', false); setSelfSwitchValue($gameMap.mapId(), 23, 'A', false); $gameSwitches.setValue(60,false); $gameSwitches.setValue(61,false); $gameSwitches.setValue(62,false); $gameMap.event(12).locate(0,0); $gameMap.event(13).locate(0,0); $gameMap.event(14).locate(0,0); $gameMap.event(15).locate(0,0); $gameMap.event(12).setTransparent(true); $gameMap.event(13).setTransparent(true); $gameMap.event(14).setTransparent(true); $gameMap.event(15).setTransparent(true);"
+              ]
+            },
+            { "code": 355, "indent": 1, "parameters": ["$gameSystem._map24ValveChoices = {21:0,22:0,23:0};"] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, "Sistema"] },
+            { "code": 401, "indent": 1, "parameters": ["Escolhas resetadas. Reposicione os aliados."] },
+            { "code": 115, "indent": 1, "parameters": [] },
+            { "code": 402, "indent": 0, "parameters": [2, "Cancelar"] },
+            { "code": 115, "indent": 1, "parameters": [] },
             {
               "code": 111,
               "indent": 0,
@@ -2185,8 +2230,15 @@
                 "$gameMap.event(15).setImage('Principal/$Balastrus', 0); $gameMap.event(15).setTransparent(false); $gameMap.event(15).setOpacity(255); $gameMap.event(15).turnTowardCharacter($gamePlayer); $gameMap.event(15).locate(11,24);"
               ]
             },
-            { "code": 205, "indent": 1, "parameters": [-1, { "list": [{ "code": 17, "indent": null }, { "code": 0 }], "repeat": false, "skippable": true, "wait": true }] },
-            { "code": 505, "indent": 1, "parameters": [{ "code": 17, "indent": null }] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, "Thorin"] },
+            { "code": 401, "indent": 1, "parameters": ["A válvula está estável, mas há um mecanismo adicional com três botões de cores diferentes."] },
+            { "code": 401, "indent": 1, "parameters": ["Eles precisam ser pressionados na ordem correta antes da alavanca ou vai emperrar a coisa toda!."] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, "Thorin"] },
+            { "code": 401, "indent": 1, "parameters": ["Tentamos sem ajuda e erramos a sequência."] },
+            { "code": 249, "indent": 1, "parameters": [{ "name": "Shock1", "volume": 90, "pitch": 100, "pan": 0 }] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, "Sistema"] },
+            { "code": 401, "indent": 1, "parameters": ["Se errarmos de novo, todos ficaremos presos aqui."] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, "Thorin"] },
             {
               "code": 357,
               "indent": 1,
@@ -2216,14 +2268,8 @@
             { "code": 657, "indent": 1, "parameters": ["Entrance Easing = OutSine"] },
             { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
-            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "Isso aqui é simples?! Além da alavanca têm mais 3 botões, eu não faço ideia do que fazer. Santa criação, eu preciso da ajuda de alguém que conheça mecanismos e engenhocas, vou pedir ao Balastrus. "
-              ]
-            },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, "Thorin"] },
+            { "code": 401, "indent": 1, "parameters": ["Balastrussssssssssss!"] },
             {
               "code": 357,
               "indent": 1,
@@ -2249,47 +2295,17 @@
             { "code": 657, "indent": 1, "parameters": ["Flip Direction = None"] },
             { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
             { "code": 657, "indent": 1, "parameters": ["Auto-Erase? = true"] },
+            { "code": 121, "indent": 1, "parameters": [43, 43, 0] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, "Thorin"] },
+            { "code": 401, "indent": 1, "parameters": ["Se há alguém que entende desse tipo de engenhoca é aquele careca."] },
+            { "code": 355, "indent": 1, "parameters": ["$gamePlayer.setDirection(4);"] },
             {
-              "code": 205,
+              "code": 355,
               "indent": 1,
               "parameters": [
-                -1,
-                { "list": [{ "code": 45, "parameters": ["Move to: 12,24"], "indent": null }, { "code": 17, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
+                "var b=$gameMap.event(15); if (b) { b.setImage('Principal/$Balastrus', 0); b.setTransparent(false); b.setOpacity(255); b.locate(14,28); var tx=$gamePlayer.x-1; var ty=$gamePlayer.y; var guard=0; while ((b.x!==tx || b.y!==ty) && guard<180) { var dir=b.findDirectionTo(tx,ty); if(!dir){ break; } b.moveStraight(dir); this.wait(8); guard++; } b.turnTowardCharacter($gamePlayer); }"
               ]
             },
-            { "code": 505, "indent": 1, "parameters": [{ "code": 45, "parameters": ["Move to: 12,24"], "indent": null }] },
-            { "code": 505, "indent": 1, "parameters": [{ "code": 17, "indent": null }] },
-            {
-              "code": 357,
-              "indent": 1,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "1",
-                  "PictureName:str": "Portraits/Principal/Thorin Armadura Helmet",
-                  "Origin:str": "Bust",
-                  "Position:num": "5",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 1, "parameters": ["Picture ID = 1"] },
-            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Thorin Armadura Helmet"] },
-            { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 1, "parameters": ["Screen Position = 5"] },
-            { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 1, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 1, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
-            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 1, "parameters": ["Eu preciso da sua ajuda."] },
             {
               "code": 357,
               "indent": 1,
@@ -2319,9 +2335,54 @@
             { "code": 657, "indent": 1, "parameters": ["Entrance Easing = OutSine"] },
             { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 1, "parameters": [44, 44, 0] },
             { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, "Balastrus"] },
-            { "code": 401, "indent": 1, "parameters": ["Eu nao devia ajudar voces..."] },
-            { "code": 401, "indent": 1, "parameters": ["Mas eu tambem preciso sair daqui. Nao soltem as outras valvulas."] },
+            { "code": 401, "indent": 1, "parameters": ["O que foi?! Deixa eu adivinhar, vocês inúteis perceberam que sem a minha ajuda não conseguem fazer nada. Acertei?!"] },
+            {
+              "code": 357,
+              "indent": 1,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Principal/Thorin Armadura Helmet",
+                  "Origin:str": "Bust",
+                  "Position:num": "1",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 1, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Thorin Armadura Helmet"] },
+            { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 1, "parameters": ["Screen Position = 1"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 1, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 1, "parameters": [43, 43, 0] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, "Thorin"] },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Muito engradado. Mas sabe o que é ainda mais engraçado?! Ficarmos presos aqui para sempre. Porque é o que vai acontecer se eu errar de novo. E então, ainda quer bancar o engraçadinho?"
+              ]
+            },
+            { "code": 121, "indent": 1, "parameters": [44, 44, 0] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, "Balastrus"] },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": ["De repente você ficou abusado ein, moleque! Eu vou ajudar, mas somente porque eu quero sair daqui pra não ter que ver mais a cara feia de vocês."]
+            },
             {
               "code": 357,
               "indent": 1,
@@ -2331,6 +2392,91 @@
                 "BASIC: Exit Bust(s)",
                 {
                   "PictureID:arrayeval": "[\"1\",\"2\"]",
+                  "EndOffsetX:eval": "+200",
+                  "EndOffsetY:eval": "-0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 1, "parameters": ["Picture ID(s) = [\"1\",\"2\"]"] },
+            { "code": 657, "indent": 1, "parameters": ["End Offset X = +200"] },
+            { "code": 657, "indent": 1, "parameters": ["End Offset Y = -0"] },
+            { "code": 657, "indent": 1, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 1, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 1, "parameters": ["Auto-Erase? = true"] },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "var b=$gameMap.event(15); if (b) { var tx=22; var ty=27; var guard=0; while ((b.x!==tx || b.y!==ty) && guard<180) { var dir=b.findDirectionTo(tx,ty); if(!dir){ break; } b.moveStraight(dir); this.wait(8); guard++; } b.turnTowardCharacter($gamePlayer); }"
+              ]
+            },
+            { "code": 230, "indent": 1, "parameters": [45] },
+            {
+              "code": 357,
+              "indent": 1,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Principal/Balastrus",
+                  "Origin:str": "Bust",
+                  "Position:num": "5",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 1, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Balastrus"] },
+            { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 1, "parameters": ["Screen Position = 5"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 1, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 1, "parameters": [43, 43, 0] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": ["Já vi mecanismos desse tipo antes. As cores fazem referência às castas de trabalhadores que servem à Gildrat, como representação direta dos três poderes da criação anã."]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": ["Amarelo para a casta mais baixa, porém mais importantes: mineradores, funcionários do esgoto, fazendeiros e cacadores. Sem eles a cidade-império ruiria."]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": ["Vermelho para os militares, a força que garante nossa proteção. Os da casta média, não são anões simples, mas também não são nobres e nem de vital importância."]
+            },
+            { "code": 401, "indent": 1, "parameters": ["Branco para a Elite de Gildrat, nobres, sacerdotes e politicos, aqueles que lideram."] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, "Sistema"] },
+            { "code": 401, "indent": 1, "parameters": ["Balastrus pressiona os botões em sequência: amarelo, vermelho e branco."] },
+            { "code": 250, "indent": 1, "parameters": [{ "name": "Open1", "pan": 0, "pitch": 100, "volume": 90 }] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, "Sistema"] },
+            { "code": 401, "indent": 1, "parameters": ["Balastrus puxa a alavanca. O mecanismo destrava o caminho para o próximo andar da mina."] },
+            {
+              "code": 357,
+              "indent": 1,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\"]",
                   "EndOffsetX:eval": "-200",
                   "EndOffsetY:eval": "+0",
                   "EasingType:str": "InSine",
@@ -2340,47 +2486,41 @@
                 }
               ]
             },
-            { "code": 657, "indent": 1, "parameters": ["Picture ID(s) = [\"1\",\"2\"]"] },
+            { "code": 657, "indent": 1, "parameters": ["Picture ID(s) = [\"1\"]"] },
             { "code": 657, "indent": 1, "parameters": ["End Offset X = -200"] },
             { "code": 657, "indent": 1, "parameters": ["End Offset Y = +0"] },
             { "code": 657, "indent": 1, "parameters": ["Exit Easing = InSine"] },
             { "code": 657, "indent": 1, "parameters": ["Flip Direction = None"] },
             { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
             { "code": 657, "indent": 1, "parameters": ["Auto-Erase? = true"] },
-            { "code": 357, "indent": 1, "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusWait", "Camera: Wait for Focus", {}] },
-            {
-              "code": 355,
-              "indent": 1,
-              "parameters": [
-                "var b=$gameMap.event(15); var v=$gameMap.event(24); if (b && v) { b.setImage('Principal/$Balastrus', 0); b.setTransparent(false); b.setOpacity(255); b.turnTowardCharacter($gamePlayer); var tx=v.x; var ty=v.y; var guard=0; while ((b.x!==tx || b.y!==ty) && guard<120) { var dir=b.findDirectionTo(tx,ty); if(!dir){ break; } b.moveStraight(dir); this.wait(8); guard++; } b.turnTowardCharacter(v); }"
-              ]
-            },
-            { "code": 205, "indent": 1, "parameters": [15, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": true, "wait": false }] },
-            { "code": 221, "indent": 1, "parameters": [] },
-            { "code": 230, "indent": 1, "parameters": [20] },
-            { "code": 122, "indent": 1, "parameters": [40, 40, 0, 0, 8] },
-            { "code": 355, "indent": 1, "parameters": ["setSelfSwitchValue($gameMap.mapId(), 24, 'A', true); $gameSwitches.setValue(63, true);"] },
-            { "code": 355, "indent": 1, "parameters": ["setSelfSwitchValue($gameMap.mapId(), 25, 'A', true); $gameSwitches.setValue(64, true); $gameSwitches.setValue(65, true);"] },
-            { "code": 250, "indent": 1, "parameters": [{ "name": "Open1", "pan": 0, "pitch": 100, "volume": 90 }] },
             { "code": 212, "indent": 1, "parameters": [9, 1, false] },
             { "code": 212, "indent": 1, "parameters": [10, 1, false] },
             { "code": 212, "indent": 1, "parameters": [11, 1, false] },
             { "code": 250, "indent": 1, "parameters": [{ "name": "Move1", "pan": 0, "pitch": 100, "volume": 90 }] },
-            { "code": 222, "indent": 1, "parameters": [] },
-            { "code": 357, "indent": 1, "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusPlayer", "Camera: Focus Player", { "Duration:num": "60", "EasingType:str": "InOutSine" }] },
-            { "code": 657, "indent": 1, "parameters": ["Duration = 60"] },
-            { "code": 657, "indent": 1, "parameters": ["Easing Type = InOutSine"] },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "var p=$gamePlayer; var spots=[{id:12,x:p.x-1,y:p.y+1},{id:13,x:p.x+1,y:p.y+1},{id:14,x:p.x-1,y:p.y-1},{id:15,x:p.x+1,y:p.y-1}]; for (var s=0; s<spots.length; s++) { var d=spots[s]; var ev=$gameMap.event(d.id); if (!ev) continue; ev.setTransparent(false); var guard=0; while ((ev.x!==d.x || ev.y!==d.y) && guard<180) { var dir=ev.findDirectionTo(d.x,d.y); if(!dir){ break; } ev.moveStraight(dir); this.wait(6); guard++; } ev.turnTowardCharacter(p); } this.wait(20);"
+              ]
+            },
+            { "code": 230, "indent": 1, "parameters": [85] },
+            { "code": 221, "indent": 1, "parameters": [] },
+            { "code": 230, "indent": 1, "parameters": [20] },
+            { "code": 122, "indent": 1, "parameters": [40, 40, 0, 0, 8] },
+            { "code": 355, "indent": 1, "parameters": ["setSelfSwitchValue($gameMap.mapId(), 25, 'A', true); $gameSwitches.setValue(64, true); $gameSwitches.setValue(65, true);"] },
             { "code": 355, "indent": 1, "parameters": ["for (var i=12;i<=15;i++){ var ev=$gameMap.event(i); if (ev) { ev.setTransparent(true); ev.locate(0,0); } }"] },
             { "code": 129, "indent": 1, "parameters": [4, 0, false] },
             { "code": 129, "indent": 1, "parameters": [5, 0, false] },
             { "code": 129, "indent": 1, "parameters": [6, 0, false] },
             { "code": 129, "indent": 1, "parameters": [8, 0, false] },
+            { "code": 222, "indent": 1, "parameters": [] },
             { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, "Sistema"] },
-            { "code": 401, "indent": 1, "parameters": ["Balastrus entrou no grupo."] },
+            { "code": 401, "indent": 1, "parameters": ["Balastrus entrou no grupo do jogador."] },
             { "code": 411, "indent": 0, "parameters": [] },
-            { "code": 249, "indent": 1, "parameters": [{ "name": "Buzzer1", "volume": 90, "pitch": 100, "pan": 0 }] },
+            { "code": 249, "indent": 1, "parameters": [{ "name": "Shock1", "volume": 90, "pitch": 100, "pan": 0 }] },
             { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, "Sistema"] },
-            { "code": 401, "indent": 1, "parameters": ["A ordem das valvulas nao faz sentido mecanico."] },
+            { "code": 401, "indent": 1, "parameters": ["A ordem das válvulas não faz sentido mecânico."] },
             { "code": 401, "indent": 1, "parameters": ["Revise as dicas e tente novamente."] },
             {
               "code": 355,
@@ -2421,11 +2561,7 @@
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Switch1", "direction": 6, "pattern": 2, "characterIndex": 2 },
-          "list": [
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
-            { "code": 401, "indent": 0, "parameters": ["que alavancas estranhas"] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,

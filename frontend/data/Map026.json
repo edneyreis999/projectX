@@ -1,8 +1,8 @@
 {
   "autoplayBgm": false,
   "autoplayBgs": false,
-  "battleback1Name": "",
-  "battleback2Name": "",
+  "battleback1Name": "Stone1",
+  "battleback2Name": "Stone1",
   "bgm": { "name": "", "pan": 0, "pitch": 100, "volume": 90 },
   "bgs": { "name": "", "pan": 0, "pitch": 100, "volume": 90 },
   "disableDashing": false,
@@ -18,7 +18,7 @@
   "parallaxSx": 0,
   "parallaxSy": 0,
   "scrollType": 0,
-  "specifyBattleback": false,
+  "specifyBattleback": true,
   "tilesetId": 14,
   "width": 31,
   "data": [
@@ -157,5 +157,843 @@
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
   ],
-  "events": []
+  "events": [
+    null,
+    {
+      "id": 1,
+      "name": "Boss Petesporo",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Monster", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 15,
+      "y": 19
+    },
+    {
+      "id": 2,
+      "name": "Companion Filena",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Principal/$Filena", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 40,
+            "variableValid": true,
+            "variableValue": 9
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 0,
+      "y": 5
+    },
+    {
+      "id": 3,
+      "name": "Companion Kilin",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Principal/$Kilin", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 40,
+            "variableValid": true,
+            "variableValue": 9
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 0,
+      "y": 2
+    },
+    {
+      "id": 4,
+      "name": "Companion Mhordred",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Principal/$Mhordred", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 40,
+            "variableValid": true,
+            "variableValue": 9
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 0,
+      "y": 9
+    },
+    {
+      "id": 5,
+      "name": "Companion Balastrus",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Principal/$Balastrus", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 40,
+            "variableValid": true,
+            "variableValue": 9
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 0,
+      "y": 7
+    },
+    {
+      "id": 6,
+      "name": "Intro Boss Dormindo",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 40,
+            "variableValid": true,
+            "variableValue": 8
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [
+            { "code": 221, "indent": 0, "parameters": [] },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "var boss=$gameMap.event(1); if (boss) { boss.setImage('Monster',0); boss.locate(15,19); boss.setTransparent(false); boss.setOpacity(255); boss.setDirection(2); boss.setPattern(1); boss.setMoveSpeed(3); }"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "var p=$gamePlayer; var c=[{id:2,img:'Principal/$Filena',x:p.x-1,y:p.y},{id:3,img:'Principal/$Kilin',x:p.x+1,y:p.y},{id:4,img:'Principal/$Mhordred',x:p.x,y:p.y+1},{id:5,img:'Principal/$Balastrus',x:p.x,y:p.y-1}]; for (var i=0;i<c.length;i++){ var d=c[i]; var ev=$gameMap.event(d.id); if(!ev) continue; ev.setImage(d.img,0); ev.locate(d.x,d.y); ev.setOpacity(255); ev.setTransparent(true); ev.turnTowardCharacter(p);} "
+              ]
+            },
+            { "code": 222, "indent": 0, "parameters": [] },
+            { "code": 355, "indent": 0, "parameters": ["for (var i=2;i<=5;i++){ var ev=$gameMap.event(i); if(ev){ ev.setTransparent(false);} } this.wait(20);"] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusTargetEvent", "Camera: Focus Target Event", { "EventID:eval": "1", "Duration:num": "200", "EasingType:str": "InOutSine" }]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Event ID = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 200"] },
+            { "code": 657, "indent": 0, "parameters": ["Easing Type = InOutSine"] },
+            { "code": 213, "indent": 0, "parameters": [1, 10, true] },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": ["var boss=$gameMap.event(1); if (boss) { $gameTemp.requestBalloon(boss, 10); } this.wait(12); var b2=$gameMap.event(1); if (b2) { $gameTemp.requestBalloon(b2, 10); }"]
+            },
+            { "code": 230, "indent": 0, "parameters": [20] },
+            { "code": 357, "indent": 0, "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusWait", "Camera: Wait for Focus", {}] },
+            { "code": 250, "indent": 0, "parameters": [{ "name": "Float1", "volume": 55, "pitch": 100, "pan": 0 }] },
+            { "code": 230, "indent": 0, "parameters": [10] },
+            { "code": 357, "indent": 0, "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusPlayer", "Camera: Focus Player", { "Duration:num": "60", "EasingType:str": "InOutSine" }] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 60"] },
+            { "code": 657, "indent": 0, "parameters": ["Easing Type = InOutSine"] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Principal/Thorin Armadura Helmet",
+                  "Origin:str": "Bust",
+                  "Position:num": "1",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Thorin Armadura Helmet"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"3-A\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Boss adormecido\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Thorin sussurra que o boss parece estar dormindo e que não há outro caminho além de passar por ele.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "2",
+                  "PictureName:str": "Portraits/Principal/Filena",
+                  "Origin:str": "Bust",
+                  "Position:num": "10",
+                  "StartOffsetX:eval": "200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Filena"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 10"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = 200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"3-B\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Do grego, estrategia\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Filena começa a bolar um plano, pensar em uma estratégia que possa fazer o grupo evitar o confronto com o boss.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "3",
+                  "PictureName:str": "Portraits/Principal/Mhordred_susto",
+                  "Origin:str": "Bust",
+                  "Position:num": "7",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 3"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Mhordred_susto"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 7"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [45, 45, 0] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"3-C\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Lugar estranho\""] },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                103,
+                103,
+                0,
+                4,
+                "\"Mhordred diz nunca havia visto um lugar como aquele. Que ter isso sob a cidade-império, bem debaixo de seus pés, sem que tantos anões saibam, é assustador. Ele só teme uma coisa na vida, pessoas e seus segredos.\""
+              ]
+            },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "4",
+                  "PictureName:str": "Portraits/Principal/Balastrus",
+                  "Origin:str": "Bust",
+                  "Position:num": "3",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 4"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Balastrus"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 3"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [46, 46, 0] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"3-D\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Sarcasmo\""] },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [103, 103, 0, 4, "\"Balastrus retruca dizendo que isso não é uma visita guiada nem o festival do soltício, Mhordred deveria ficar mais atento aos arredores.\""]
+            },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\",\"2\",\"3\",\"4\"]",
+                  "EndOffsetX:eval": "+200",
+                  "EndOffsetY:eval": "-0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\",\"2\",\"3\",\"4\"]"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset X = +200"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset Y = -0"] },
+            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusTargetEvent", "Camera: Focus Target Event", { "EventID:eval": "1", "Duration:num": "160", "EasingType:str": "InOutSine" }]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Event ID = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 160"] },
+            { "code": 657, "indent": 0, "parameters": ["Easing Type = InOutSine"] },
+            { "code": 213, "indent": 0, "parameters": [1, 1, true] },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": ["var boss=$gameMap.event(1); if (boss) { $gameTemp.requestBalloon(boss, 1); } this.wait(12); var b2=$gameMap.event(1); if (b2) { $gameTemp.requestBalloon(b2, 1); }"]
+            },
+            { "code": 230, "indent": 0, "parameters": [20] },
+            { "code": 357, "indent": 0, "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusWait", "Camera: Wait for Focus", {}] },
+            { "code": 250, "indent": 0, "parameters": [{ "name": "Float1", "volume": 55, "pitch": 100, "pan": 0 }] },
+            { "code": 230, "indent": 0, "parameters": [10] },
+            { "code": 357, "indent": 0, "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusPlayer", "Camera: Focus Player", { "Duration:num": "160", "EasingType:str": "InOutSine" }] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 160"] },
+            { "code": 657, "indent": 0, "parameters": ["Easing Type = InOutSine"] },
+            { "code": 230, "indent": 0, "parameters": [40] },
+            { "code": 250, "indent": 0, "parameters": [{ "name": "Shock1", "pan": 0, "pitch": 100, "volume": 90 }] },
+            { "code": 355, "indent": 0, "parameters": ["var boss=$gameMap.event(1); if (boss) { boss.turnTowardCharacter($gamePlayer); }"] },
+            { "code": 301, "indent": 0, "parameters": [0, 32, false, false] },
+            { "code": 122, "indent": 0, "parameters": [40, 40, 0, 0, 8] },
+            { "code": 355, "indent": 0, "parameters": ["var boss=$gameMap.event(1); if (boss) { boss.setTransparent(true); boss.locate(0,0); }"] },
+            { "code": 355, "indent": 0, "parameters": ["$gamePlayer.locate(15,19); $gamePlayer.setDirection(2);"] },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "var p=$gamePlayer; var c=[{id:2,img:'Principal/$Filena',x:p.x-1,y:p.y},{id:3,img:'Principal/$Kilin',x:p.x+1,y:p.y},{id:4,img:'Principal/$Mhordred',x:p.x,y:p.y+1},{id:5,img:'Principal/$Balastrus',x:p.x,y:p.y-1}]; for (var i=0;i<c.length;i++){ var d=c[i]; var ev=$gameMap.event(d.id); if(!ev) continue; ev.setImage(d.img,0); ev.setTransparent(false); ev.setOpacity(255); ev.locate(d.x,d.y); ev.turnTowardCharacter(p); }"
+              ]
+            },
+            { "code": 357, "indent": 0, "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusPlayer", "Camera: Focus Player", { "Duration:num": "45", "EasingType:str": "InOutSine" }] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 45"] },
+            { "code": 657, "indent": 0, "parameters": ["Easing Type = InOutSine"] },
+            { "code": 230, "indent": 0, "parameters": [20] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Principal/Thorin Armadura Helmet",
+                  "Origin:str": "Bust",
+                  "Position:num": "1",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Thorin Armadura Helmet"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"3-E\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Terra a vista, marujos!\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Thorin aponta para frente e diz que a saída está logo ali.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "2",
+                  "PictureName:str": "Portraits/Principal/Filena",
+                  "Origin:str": "Bust",
+                  "Position:num": "3",
+                  "StartOffsetX:eval": "200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Filena"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 3"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = 200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"3-F\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Alívio\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Filena respira aliviada e diz: finalmente.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "3",
+                  "PictureName:str": "Portraits/Principal/Balastrus",
+                  "Origin:str": "Bust",
+                  "Position:num": "9",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 3"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Balastrus"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 9"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [45, 45, 0] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"3-G\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Sem paciência\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Balastrus reclama que nao aguenta mais ficar perto deles.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "4",
+                  "PictureName:str": "Portraits/Principal/Kilin_nada",
+                  "Origin:str": "Bust",
+                  "Position:num": "5",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 4"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Kilin_nada"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 5"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [46, 46, 0] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"3-H\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Crianças briguentas\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Kilin manda Balastrus calar a boca e diz que ele e Mhordred parecem crianças que só sabem brigar.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\",\"2\",\"3\",\"4\"]",
+                  "EndOffsetX:eval": "-200",
+                  "EndOffsetY:eval": "+0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\",\"2\",\"3\",\"4\"]"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
+            { "code": 221, "indent": 0, "parameters": [] },
+            { "code": 122, "indent": 0, "parameters": [40, 40, 0, 0, 9] },
+            { "code": 222, "indent": 0, "parameters": [] },
+            { "code": 123, "indent": 0, "parameters": ["A", 0] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 15,
+      "y": 32
+    },
+    null,
+    null,
+    {
+      "id": 9,
+      "name": "Teleporte",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 40,
+            "variableValid": true,
+            "variableValue": 8
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "!Door2", "direction": 4, "pattern": 0, "characterIndex": 5 },
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [40, 40, 0, 0, 9] },
+            { "code": 355, "indent": 0, "parameters": ["for (var i=2;i<=5;i++){ var ev=$gameMap.event(i); if (ev) { ev.setTransparent(true); ev.locate(0,0); } }"] },
+            { "code": 201, "indent": 0, "parameters": [0, 3, 22, 58, 0, 0] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 15,
+      "y": 3
+    }
+  ]
 }
