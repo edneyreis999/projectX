@@ -455,46 +455,20 @@
             { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 1, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 122, "indent": 1, "parameters": [101, 101, 0, 4, "\"6-B\""] },
+            { "code": 122, "indent": 1, "parameters": [102, 102, 0, 4, "\"Lenda do Capacete\""] },
             {
-              "code": 401,
+              "code": 122,
               "indent": 1,
               "parameters": [
-                "Eu tenho que reconhecer, você nunca decepciona! Agora pare de perder tempo e entre em campo. Só temos mais um minuto, tempo suficiente para uma última jogada. Não faça nada arriscado, você me entendeu?"
+                103,
+                103,
+                0,
+                4,
+                "\"Dragobur inspeciona o capacete e faz um aceno de aprovação. Ele conta que aquele era seu capacete quando o time venceu, pela primeira e única vez, o campeonato que o levou à Liga Profissional; os jogadores da época tatuaram “Dragobur” na runa frontal — reforça valor simbólico do item.\""
               ]
             },
-            {
-              "code": 357,
-              "indent": 1,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "2",
-                  "PictureName:str": "Portraits/Principal/Thorin Helmet",
-                  "Origin:str": "Bust",
-                  "Position:num": "1",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 1, "parameters": ["Picture ID = 2"] },
-            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Thorin Helmet"] },
-            { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 1, "parameters": ["Screen Position = 1"] },
-            { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 1, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 1, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 1, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 1, "parameters": ["Deixa comigo, treinador!"] },
+            { "code": 117, "indent": 1, "parameters": [16] },
             { "code": 205, "indent": 1, "parameters": [2, { "list": [{ "code": 19, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
             { "code": 505, "indent": 1, "parameters": [{ "code": 19, "indent": null }] },
             {
@@ -972,78 +946,10 @@
             { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Parabéns, Thorin, você conseguiu! Todos vocês conseguiram! Nós estamos na final da divisão de acesso. Só mais uma partida e finalmente teremos nossa chance na liga profissional."
-              ]
-            },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "2",
-                  "PictureName:str": "Portraits/Principal/Thorin Helmet",
-                  "Origin:str": "Bust",
-                  "Position:num": "1",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Thorin Helmet"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 1"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Obrigado, treinador!"] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "3",
-                  "PictureName:str": "Portraits/Principal/Filena_feliz_khawe",
-                  "Origin:str": "Bust",
-                  "Position:num": "3",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 3"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Filena_feliz_khawe"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 3"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [45, 45, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Mas é claro que conseguimos, somos os melhores jogadores de futebol rúnico de todo império, por que a surpresa?!"] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"7-B\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Heroi do Time\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Companheiros e Dragobur erguem Thorin nos ombros; câmera gira 360° — reforça a vitória e o vínculo de equipe.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             {
               "code": 357,
               "indent": 0,
@@ -1137,104 +1043,14 @@
             { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Thorin Forjaprata! Por ordem de seu pai, Tordan Forjaprata, você deve retornar imediatamente!"] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"7-E\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Ordem de Tordan\""] },
             {
-              "code": 357,
+              "code": 122,
               "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "2",
-                  "PictureName:str": "Portraits/Principal/Thorin Helmet",
-                  "Origin:str": "Bust",
-                  "Position:num": "1",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
+              "parameters": [103, 103, 0, 4, "\"Capitão da guarda anuncia, em voz firme, que Thorin deve acompanhar o pelotão 'em nome do General Tordan' — conflito de autoridade explícito.\""]
             },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Thorin Helmet"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 1"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 4, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["O quê, mas o que é que está acontecendo aqui?"] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "3",
-                  "PictureName:str": "Portraits/Principal/Treinador",
-                  "Origin:str": "Bust",
-                  "Position:num": "3",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 3"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Treinador"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 3"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [45, 45, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 3, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Vocês não podem entrar aqui e fazer o que bem entenderem, é um espaço público, a Guarda de Ferro não tem autoridade aqui!"] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "4",
-                  "PictureName:str": "Portraits/Principal/Mhordred_raiva",
-                  "Origin:str": "Bust",
-                  "Position:num": "7",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 4"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Mhordred_raiva"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 7"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [46, 46, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 3, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Silêncio, cão! Você ousa interferir numa ordem direta da mão do imperador?!"] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             {
               "code": 357,
               "indent": 0,
@@ -1268,163 +1084,6 @@
             { "code": 205, "indent": 0, "parameters": [10, { "list": [{ "code": 25, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 25, "indent": null }] },
             { "code": 213, "indent": 0, "parameters": [7, 8, false] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "1",
-                  "PictureName:str": "Portraits/Principal/Treinador",
-                  "Origin:str": "Bust",
-                  "Position:num": "0",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Treinador"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 0"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 4, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["É frustrante, mas dessa vez eu não tenho como te salvar, Thorin. É melhor você obedecer, vá com eles para casa. Nos falamos depois."] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "2",
-                  "PictureName:str": "Portraits/Principal/Filena_briga",
-                  "Origin:str": "Bust",
-                  "Position:num": "3",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Filena_briga"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 3"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 2, 0, 2, ""] },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": ["Qual é o problema de vocês? Ninguém fala assim com a gente, especialmente guardas reais, que só fazem rugir contra o povo que deveriam proteger!"]
-            },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "3",
-                  "PictureName:str": "Portraits/Principal/Kilin_nada",
-                  "Origin:str": "Bust",
-                  "Position:num": "9",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 3"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Kilin_nada"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 9"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [45, 45, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 3, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Thorin, eu não vou repetir. Temos ordens para levá-lo à força se for preciso."] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "4",
-                  "PictureName:str": "Portraits/Principal/Mhordred_sarcástico",
-                  "Origin:str": "Bust",
-                  "Position:num": "7",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 4"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Mhordred_sarcástico"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 7"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [46, 46, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 3, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Isso, resista, criança. Eu estava mesmo torcendo por isso. Uma boa briga para me exércitar!"] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_ExitBusts",
-                "BASIC: Exit Bust(s)",
-                {
-                  "PictureID:arrayeval": "[\"1\",\"2\",\"3\",\"4\"]",
-                  "EndOffsetX:eval": "+200",
-                  "EndOffsetY:eval": "-0",
-                  "EasingType:str": "InSine",
-                  "FlipDirection:str": "None",
-                  "Duration:eval": "20",
-                  "AutoErase:eval": "true"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\",\"2\",\"3\",\"4\"]"] },
-            { "code": 657, "indent": 0, "parameters": ["End Offset X = +200"] },
-            { "code": 657, "indent": 0, "parameters": ["End Offset Y = -0"] },
-            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
             {
               "code": 357,
               "indent": 0,
@@ -1472,107 +1131,20 @@
             { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 1, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 1, "parameters": ["", 3, 0, 2, ""] },
-            { "code": 401, "indent": 1, "parameters": ["Acho que todos precisamos nos acalmar. Vocês só estão cumprindo ordens, afinal. Eu vou com vocês..."] },
+            { "code": 122, "indent": 1, "parameters": [101, 101, 0, 4, "\"7-F\""] },
+            { "code": 122, "indent": 1, "parameters": [102, 102, 0, 4, "\"Escolha de Diálogo\""] },
             {
-              "code": 357,
+              "code": 122,
               "indent": 1,
               "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "2",
-                  "PictureName:str": "Portraits/Principal/Mhordred_nada",
-                  "Origin:str": "Bust",
-                  "Position:num": "9",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
+                103,
+                103,
+                0,
+                4,
+                "\"[Escolha Gentil] Prompt oferece duas respostas: **Gentil (“Tudo bem, vou com vocês”)** ou **Resistir (“Não têm esse direito!”)** — dá agência ao jogador.\""
               ]
             },
-            { "code": 657, "indent": 1, "parameters": ["Picture ID = 2"] },
-            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Mhordred_nada"] },
-            { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 1, "parameters": ["Screen Position = 9"] },
-            { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 1, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 1, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 1, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 1, "parameters": ["", 3, 0, 2, ""] },
-            { "code": 401, "indent": 1, "parameters": ["Mas que chato, por um momento, achei mesmo que você tivesse culhões, moleque."] },
-            {
-              "code": 357,
-              "indent": 1,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "3",
-                  "PictureName:str": "Portraits/Principal/Filena_briga",
-                  "Origin:str": "Bust",
-                  "Position:num": "3",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 1, "parameters": ["Picture ID = 3"] },
-            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Filena_briga"] },
-            { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 1, "parameters": ["Screen Position = 3"] },
-            { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 1, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 1, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 1, "parameters": [45, 45, 0] },
-            { "code": 101, "indent": 1, "parameters": ["", 3, 0, 2, ""] },
-            { "code": 401, "indent": 1, "parameters": ["Esses guardinhas arrogantes de merda!"] },
-            {
-              "code": 357,
-              "indent": 1,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "4",
-                  "PictureName:str": "Portraits/Principal/Kilin",
-                  "Origin:str": "Bust",
-                  "Position:num": "7",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 1, "parameters": ["Picture ID = 4"] },
-            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Kilin"] },
-            { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 1, "parameters": ["Screen Position = 7"] },
-            { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 1, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 1, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 1, "parameters": [46, 46, 0] },
-            { "code": 101, "indent": 1, "parameters": ["", 3, 0, 2, ""] },
-            { "code": 401, "indent": 1, "parameters": ["Já chega, Filena. Não torne isso pior do que precisa ser. Agora vamos, Thorin."] },
-            { "code": 121, "indent": 1, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 1, "parameters": ["", 3, 0, 2, ""] },
-            { "code": 401, "indent": 1, "parameters": ["Desculpe, Filena. Tem que ser assim, não teríamos a mínima chance contra eles! Vejo você depois..."] },
+            { "code": 117, "indent": 1, "parameters": [16] },
             {
               "code": 357,
               "indent": 1,
@@ -1675,9 +1247,20 @@
             { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 1, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 1, "parameters": ["", 3, 0, 2, ""] },
-            { "code": 401, "indent": 1, "parameters": ["Se tocar nela, Mhordred, eu acabo com você!"] },
-            { "code": 122, "indent": 1, "parameters": [35, 35, 0, 0, 1] },
+            { "code": 122, "indent": 1, "parameters": [101, 101, 0, 4, "\"7-F\""] },
+            { "code": 122, "indent": 1, "parameters": [102, 102, 0, 4, "\"Escolha de Diálogo\""] },
+            {
+              "code": 122,
+              "indent": 1,
+              "parameters": [
+                103,
+                103,
+                0,
+                4,
+                "\"[Escolha Resistir] Prompt oferece duas respostas: **Gentil (“Tudo bem, vou com vocês”)** ou **Resistir (“Não têm esse direito!”)** — dá agência ao jogador.\""
+              ]
+            },
+            { "code": 117, "indent": 1, "parameters": [16] },
             {
               "code": 357,
               "indent": 1,
@@ -1735,8 +1318,10 @@
             { "code": 657, "indent": 2, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 2, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 2, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 2, "parameters": ["", 3, 0, 2, ""] },
-            { "code": 401, "indent": 2, "parameters": ["Seu arrogante! Você é fraco, espero que tenha aprendio a lição!"] },
+            { "code": 122, "indent": 2, "parameters": [101, 101, 0, 4, "\"7-G\""] },
+            { "code": 122, "indent": 2, "parameters": [102, 102, 0, 4, "\"Cercado\""] },
+            { "code": 122, "indent": 2, "parameters": [103, 103, 0, 4, "\"Independentemente da escolha, guardas formam círculo e conduzem Thorin rumo à saída — prepara transição de cena.\""] },
+            { "code": 117, "indent": 2, "parameters": [16] },
             {
               "code": 357,
               "indent": 2,
@@ -1794,40 +1379,10 @@
             { "code": 657, "indent": 2, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 2, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 2, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 2, "parameters": ["", 3, 0, 2, ""] },
-            { "code": 401, "indent": 2, "parameters": ["Eu... perdi."] },
-            {
-              "code": 357,
-              "indent": 2,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "2",
-                  "PictureName:str": "Portraits/Principal/Mhordred_sarcástico",
-                  "Origin:str": "Bust",
-                  "Position:num": "9",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 2, "parameters": ["Picture ID = 2"] },
-            { "code": 657, "indent": 2, "parameters": ["Picture File = Portraits/Principal/Mhordred_sarcástico"] },
-            { "code": 657, "indent": 2, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 2, "parameters": ["Screen Position = 9"] },
-            { "code": 657, "indent": 2, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 2, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 2, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 2, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 2, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 2, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 2, "parameters": ["", 3, 0, 2, ""] },
-            { "code": 401, "indent": 2, "parameters": ["Fedelho abusado, espero que tenha aprendido a lição. Comparado a você, eu sou um Deus! AHAHAHA!"] },
+            { "code": 122, "indent": 2, "parameters": [101, 101, 0, 4, "\"7-G\""] },
+            { "code": 122, "indent": 2, "parameters": [102, 102, 0, 4, "\"Cercado\""] },
+            { "code": 122, "indent": 2, "parameters": [103, 103, 0, 4, "\"Independentemente da escolha, guardas formam círculo e conduzem Thorin rumo à saída — prepara transição de cena.\""] },
+            { "code": 117, "indent": 2, "parameters": [16] },
             {
               "code": 357,
               "indent": 2,
@@ -1978,47 +1533,10 @@
             { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Eu nem deveria parabenizá-lo pela vitória! O que eu te disse?! Sua jogada imprudente poderia ter colocado tudo a perder!"] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "2",
-                  "PictureName:str": "Portraits/Principal/Thorin Helmet",
-                  "Origin:str": "Bust",
-                  "Position:num": "1",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Thorin Helmet"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 1"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": ["Você disse corretamente, poderia, velho. Mas não colocou. Só ganhamos por causa da minha jogada, acho que um pouco de respeito e gratidão seria bom!"]
-            },
-            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Seu moleque arrogante!"] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"7-B\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Heroi do Time\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Companheiros e Dragobur erguem Thorin nos ombros; câmera gira 360° — reforça a vitória e o vínculo de equipe.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             {
               "code": 357,
               "indent": 0,
@@ -2112,139 +1630,14 @@
             { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Thorin Forjaprata! Por ordem de seu pai, Tordan Forjaprata, você deve retornar imediatamente!"] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"7-E\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Ordem de Tordan\""] },
             {
-              "code": 357,
+              "code": 122,
               "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "2",
-                  "PictureName:str": "Portraits/Principal/Thorin Helmet",
-                  "Origin:str": "Bust",
-                  "Position:num": "0",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
+              "parameters": [103, 103, 0, 4, "\"Capitão da guarda anuncia, em voz firme, que Thorin deve acompanhar o pelotão 'em nome do General Tordan' — conflito de autoridade explícito.\""]
             },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Thorin Helmet"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 0"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 4, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["O quê, mas o que é que está acontecendo aqui?"] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "3",
-                  "PictureName:str": "Portraits/Principal/Treinador_dragobur_rindo",
-                  "Origin:str": "Bust",
-                  "Position:num": "5",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 3"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Treinador_dragobur_rindo"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 5"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [45, 45, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 3, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Ótimo, parece que sempre podemos contar com o Karma, não é mesmo! Seu moleque mimado, já estava mesmo na hora de aprender uma lição!"] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "4",
-                  "PictureName:str": "Portraits/Principal/Mhordred_sarcástico",
-                  "Origin:str": "Bust",
-                  "Position:num": "7",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 4"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Mhordred_sarcástico"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 7"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [46, 46, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 3, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Xi! Que falta de sorte, parece que nem mesmo o seu treinador gosta de você! AHAHA!"] },
-            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 4, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Eu não vou a lugar algum com vocês! Eu não reconheço sua autoridade!"] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "4",
-                  "PictureName:str": "Portraits/Principal/Mhordred_raiva",
-                  "Origin:str": "Bust",
-                  "Position:num": "7",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 4"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Mhordred_raiva"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 7"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [46, 46, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 3, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Além de burro, também é surdo. São ordens do seu pai, moleque, agora ande logo antes que eu decida arrastá-lo de volta até sua casa!"] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             {
               "code": 357,
               "indent": 0,
@@ -2325,33 +1718,20 @@
             { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 1, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 1, "parameters": ["", 3, 0, 2, ""] },
-            { "code": 401, "indent": 1, "parameters": ["Que se dane, a culpa é toda do meu pai mesmo, nada mais justo do que dizer isso diretamente a ele."] },
+            { "code": 122, "indent": 1, "parameters": [101, 101, 0, 4, "\"7-F\""] },
+            { "code": 122, "indent": 1, "parameters": [102, 102, 0, 4, "\"Escolha de Diálogo\""] },
             {
-              "code": 357,
+              "code": 122,
               "indent": 1,
               "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_ExitBusts",
-                "BASIC: Exit Bust(s)",
-                {
-                  "PictureID:arrayeval": "[\"1\"]",
-                  "EndOffsetX:eval": "-200",
-                  "EndOffsetY:eval": "+0",
-                  "EasingType:str": "InSine",
-                  "FlipDirection:str": "None",
-                  "Duration:eval": "20",
-                  "AutoErase:eval": "true"
-                }
+                103,
+                103,
+                0,
+                4,
+                "\"[Escolha Gentil] Prompt oferece duas respostas: **Gentil (“Tudo bem, vou com vocês”)** ou **Resistir (“Não têm esse direito!”)** — dá agência ao jogador.\""
               ]
             },
-            { "code": 657, "indent": 1, "parameters": ["Picture ID(s) = [\"1\"]"] },
-            { "code": 657, "indent": 1, "parameters": ["End Offset X = -200"] },
-            { "code": 657, "indent": 1, "parameters": ["End Offset Y = +0"] },
-            { "code": 657, "indent": 1, "parameters": ["Exit Easing = InSine"] },
-            { "code": 657, "indent": 1, "parameters": ["Flip Direction = None"] },
-            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
-            { "code": 657, "indent": 1, "parameters": ["Auto-Erase? = true"] },
+            { "code": 117, "indent": 1, "parameters": [16] },
             {
               "code": 357,
               "indent": 1,
@@ -2454,8 +1834,20 @@
             { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 1, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 1, "parameters": ["", 3, 0, 2, ""] },
-            { "code": 401, "indent": 1, "parameters": ["Eu vou te ensinar uma lição, guardinha!"] },
+            { "code": 122, "indent": 1, "parameters": [101, 101, 0, 4, "\"7-F\""] },
+            { "code": 122, "indent": 1, "parameters": [102, 102, 0, 4, "\"Escolha de Diálogo\""] },
+            {
+              "code": 122,
+              "indent": 1,
+              "parameters": [
+                103,
+                103,
+                0,
+                4,
+                "\"[Escolha Resistir] Prompt oferece duas respostas: **Gentil (“Tudo bem, vou com vocês”)** ou **Resistir (“Não têm esse direito!”)** — dá agência ao jogador.\""
+              ]
+            },
+            { "code": 117, "indent": 1, "parameters": [16] },
             {
               "code": 357,
               "indent": 1,
@@ -2514,8 +1906,10 @@
             { "code": 657, "indent": 2, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 2, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 2, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 2, "parameters": ["", 3, 0, 2, ""] },
-            { "code": 401, "indent": 2, "parameters": ["Seu arrogante! Você é fraco, espero que tenha aprendio a lição!"] },
+            { "code": 122, "indent": 2, "parameters": [101, 101, 0, 4, "\"7-G\""] },
+            { "code": 122, "indent": 2, "parameters": [102, 102, 0, 4, "\"Cercado\""] },
+            { "code": 122, "indent": 2, "parameters": [103, 103, 0, 4, "\"Independentemente da escolha, guardas formam círculo e conduzem Thorin rumo à saída — prepara transição de cena.\""] },
+            { "code": 117, "indent": 2, "parameters": [16] },
             {
               "code": 357,
               "indent": 2,
@@ -2541,6 +1935,51 @@
             { "code": 657, "indent": 2, "parameters": ["Flip Direction = None"] },
             { "code": 657, "indent": 2, "parameters": ["Duration = 20"] },
             { "code": 657, "indent": 2, "parameters": ["Auto-Erase? = true"] },
+            {
+              "code": 205,
+              "indent": 2,
+              "parameters": [14, { "list": [{ "code": 45, "parameters": ["Move to: 10,11"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }]
+            },
+            { "code": 505, "indent": 2, "parameters": [{ "code": 45, "parameters": ["Move to: 10,11"], "indent": null }] },
+            {
+              "code": 205,
+              "indent": 2,
+              "parameters": [
+                5,
+                { "list": [{ "code": 45, "parameters": ["Move to: 10,12"], "indent": null }, { "code": 17, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
+              ]
+            },
+            { "code": 505, "indent": 2, "parameters": [{ "code": 45, "parameters": ["Move to: 10,12"], "indent": null }] },
+            { "code": 505, "indent": 2, "parameters": [{ "code": 17, "indent": null }] },
+            { "code": 213, "indent": 2, "parameters": [14, 5, false] },
+            {
+              "code": 205,
+              "indent": 2,
+              "parameters": [-1, { "list": [{ "code": 45, "parameters": ["Move to: 11,12"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }]
+            },
+            { "code": 505, "indent": 2, "parameters": [{ "code": 45, "parameters": ["Move to: 11,12"], "indent": null }] },
+            { "code": 121, "indent": 2, "parameters": [2, 2, 1] },
+            { "code": 230, "indent": 2, "parameters": [120] },
+            {
+              "code": 205,
+              "indent": 2,
+              "parameters": [14, { "list": [{ "code": 45, "parameters": ["Move to: 2,6"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }]
+            },
+            { "code": 505, "indent": 2, "parameters": [{ "code": 45, "parameters": ["Move to: 2,6"], "indent": null }] },
+            {
+              "code": 205,
+              "indent": 2,
+              "parameters": [5, { "list": [{ "code": 45, "parameters": ["Move to: 2,7"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }]
+            },
+            { "code": 505, "indent": 2, "parameters": [{ "code": 45, "parameters": ["Move to: 2,7"], "indent": null }] },
+            {
+              "code": 205,
+              "indent": 2,
+              "parameters": [-1, { "list": [{ "code": 45, "parameters": ["Move to: 11,12"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }]
+            },
+            { "code": 505, "indent": 2, "parameters": [{ "code": 45, "parameters": ["Move to: 11,12"], "indent": null }] },
+            { "code": 201, "indent": 2, "parameters": [0, 7, 5, 23, 0, 0] },
+            { "code": 122, "indent": 2, "parameters": [29, 29, 0, 0, 8] },
             { "code": 0, "indent": 2, "parameters": [] },
             { "code": 603, "indent": 1, "parameters": [] },
             {
@@ -2573,40 +2012,10 @@
             { "code": 657, "indent": 2, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 2, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 2, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 2, "parameters": ["", 3, 0, 2, ""] },
-            { "code": 401, "indent": 2, "parameters": ["Eu... perdi."] },
-            {
-              "code": 357,
-              "indent": 2,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "2",
-                  "PictureName:str": "Portraits/Principal/Mhordred_sarcástico",
-                  "Origin:str": "Bust",
-                  "Position:num": "9",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 2, "parameters": ["Picture ID = 2"] },
-            { "code": 657, "indent": 2, "parameters": ["Picture File = Portraits/Principal/Mhordred_sarcástico"] },
-            { "code": 657, "indent": 2, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 2, "parameters": ["Screen Position = 9"] },
-            { "code": 657, "indent": 2, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 2, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 2, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 2, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 2, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 2, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 2, "parameters": ["", 3, 0, 2, ""] },
-            { "code": 401, "indent": 2, "parameters": ["Fedelho abusado, espero que tenha aprendido a lição. Comparado a você, eu sou um Deus! AHAHAHA!"] },
+            { "code": 122, "indent": 2, "parameters": [101, 101, 0, 4, "\"7-G\""] },
+            { "code": 122, "indent": 2, "parameters": [102, 102, 0, 4, "\"Cercado\""] },
+            { "code": 122, "indent": 2, "parameters": [103, 103, 0, 4, "\"Independentemente da escolha, guardas formam círculo e conduzem Thorin rumo à saída — prepara transição de cena.\""] },
+            { "code": 117, "indent": 2, "parameters": [16] },
             {
               "code": 357,
               "indent": 2,

@@ -19,6 +19,7 @@
 - **Resumo**: Thorin, um jovem talentoso mas indisciplinado, acorda de um sonho premonitório e, atrasado, corre por Gildrat para participar da semifinal de futebol rúnico. Após garantir a vitória do
   seu time, sua celebração é interrompida por guardas reais enviados pelo pai, o General Tordan, destacando o conflito entre sua liberdade e a autoridade do pai.
 - **Locais principais**:
+
   - Casa da Família Forja Prata,
   - Distrito Residencial,
   - Distrito comercial de Gildrat,
@@ -126,35 +127,25 @@
 
 #### Cena 6 – Pronto pra Jogar
 
-| ID      | Titulo                      | Premissa Resumida                                                                                                                                                                                                                      | Tipo |
-| ------- | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
-| **6-A** | **Reencontro com Dragobur** | Jogador conduz Thorin de volta ao portão do campo; o treinador inspeciona o capacete e faz um aceno de aprovação.                                                                                                                      |
-| **6-B** | **Lenda do Capacete**       | Dragobur conta que aquele era seu capacete quando o time venceu, pela primeira e única vez, o campeonato que o levou à Liga Profissional; os jogadores da época tatuaram “Dragobur” na runa frontal — reforça valor simbólico do item. |
-| **6-C** | **Portões se Abrem**        | Portão do gramado se escancara; torcida vibra — sinal claro de avanço narrativo.                                                                                                                                                       |
-| **6-D** | **Entrada em Campo**        | Cutscene (sem controle): Thorin corre pelo gramado até sua posição inicial, recebendo cumprimentos dos companheiros.                                                                                                                   |
-| **6-E** | **Objetivo em Foco**        | HUD troca para **“Marque o gol da virada”**; controle será retomado pelo jogador na cena seguinte.                                                                                                                                     |
+| ID      | Titulo                      | Premissa Resumida                                                                                                                                                                                                                                                                             | Tipo  |
+| ------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| **6-A** | **Reencontro com Dragobur** | Jogador conduz Thorin de volta a Dragobur.                                                                                                                                                                                                                                                    | 🎮    |
+| **6-B** | **Lenda do Capacete**       | Dragobur inspeciona o capacete e faz um aceno de aprovação. Ele conta que aquele era seu capacete quando o time venceu, pela primeira e única vez, o campeonato que o levou à Liga Profissional; os jogadores da época tatuaram “Dragobur” na runa frontal — reforça valor simbólico do item. | 🎬    |
+| **6-C** | **Rumo ao campo**           | Jogador conduz Thorin de volta à entrada do campo.                                                                                                                                                                                                                                            | 🎮    |
+| **6-D** | **Entrada em Campo**        | Cutscene (sem controle): Thorin corre pelo gramado até sua posição inicial, recebendo cumprimentos dos companheiros.                                                                                                                                                                          | 🎬    |
+| **6-E** | **Tutorial**                | Jogador controla Thorin seguindo um passo a passo indicado pelo jogo. [ver material de tutorial]                                                                                                                                                                                              | 🎮 📝 |
 
-#### Cena 7 – Gol da Virada
+#### Cena 7 – Comemoração Cortada
 
-| Beat    | Rótulo curto             | O que acontece / Por que importa                                                                                                                          |
-| ------- | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **7-A** | **Bola em Jogo**         | Controle retorna ao jogador: apito do juiz, Thorin recebe o passe inicial já sob pressão — introduz a mecânica de movimentação em campo.                  |
-| **7-B** | **Drible & Tabela**      | Pequeno minigame de passe rápido: Thorin faz tabela com Filena, avança superando dois marcadores — mantém urgência e mostra trabalho em equipe.           |
-| **7-C** | **Bloqueio Adversário**  | Zagueiro grandalhão corta o ângulo; quick-time prompt para desviar ou fintar — eleva a tensão antes do clímax.                                            |
-| **7-D** | **Disparo Rúnico**       | Thorin empunha a _funda_ e dispara a bola imbuída de runas; câmera em slow-motion acompanha o efeito de energia até o gol — momento heróico.              |
-| **7-E** | **Virada & Apito Final** | Bola balança a rede, placar vira; juiz apita fim da partida, torcida explode, companheiros cercam Thorin — prepara transição para a comemoração (Cena 8). |
-
-#### Cena 8 – Comemoração Cortada
-
-| Beat    | Rótulo curto            | O que acontece / Por que importa                                                                                                              |
-| ------- | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| **8-A** | **Explosão da Torcida** | Arquibancadas entram em frenesi; confetes mágicos e cantos ecoam, sublinhando a magnitude da virada.                                          |
-| **8-B** | **Herói do Time**       | Companheiros e Dragobur erguem Thorin nos ombros; câmera gira 360° — reforça a vitória e o vínculo de equipe.                                 |
-| **8-C** | **Momento com Filena**  | Filena encara Thorin com sorriso orgulhoso e trocam um high-five/flerte rápido — humaniza o protagonista antes da virada de tom.              |
-| **8-D** | **Entrada dos Guardas** | Portão lateral range; tropa de guardas reais marcha coordenada, tambores soam, torcida vai silenciando — introduz tensão imediata.            |
-| **8-E** | **Ordem de Tordan**     | Capitão da guarda anuncia, em voz firme, que Thorin deve acompanhar o pelotão “em nome do General Tordan” — conflito de autoridade explícito. |
-| **8-F** | **Escolha de Diálogo**  | Prompt oferece duas respostas: **Gentil (“Tudo bem, vou com vocês”)** ou **Resistir (“Não têm esse direito!”)** — dá agência ao jogador.      |
-| **8-G** | **Cercado**             | Independentemente da escolha, guardas formam círculo e conduzem Thorin rumo à saída — prepara transição para Cena 9.                          |
+| ID      | Titulo                  | Premissa Resumida                                                                                                                             | Tipo |
+| ------- | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
+| **7-A** | **Explosão da Torcida** | Arquibancadas entram em frenesi; confetes mágicos e cantos ecoam, sublinhando a magnitude da virada.                                          | 🎬   |
+| **7-B** | **Herói do Time**       | Companheiros e Dragobur erguem Thorin nos ombros; câmera gira 360° — reforça a vitória e o vínculo de equipe.                                 | 🎬   |
+| **7-C** | **Momento com Filena**  | Filena encara Thorin com sorriso orgulhoso e trocam um high-five/flerte rápido — humaniza o protagonista antes da virada de tom.              | 🎬   |
+| **7-D** | **Entrada dos Guardas** | Portão lateral range; tropa de guardas reais marcha coordenada, tambores soam, torcida vai silenciando — introduz tensão imediata.            | 🎬   |
+| **7-E** | **Ordem de Tordan**     | Capitão da guarda anuncia, em voz firme, que Thorin deve acompanhar o pelotão “em nome do General Tordan” — conflito de autoridade explícito. | 🎬   |
+| **7-F** | **Escolha de Diálogo**  | Prompt oferece duas respostas: **Gentil (“Tudo bem, vou com vocês”)** ou **Resistir (“Não têm esse direito!”)** — dá agência ao jogador.      | 🎮   |
+| **7-G** | **Cercado**             | Independentemente da escolha, guardas formam círculo e conduzem Thorin rumo à saída — prepara transição de cena.                              | 🎬   |
 
 **Decisão do Jogador:**
 
