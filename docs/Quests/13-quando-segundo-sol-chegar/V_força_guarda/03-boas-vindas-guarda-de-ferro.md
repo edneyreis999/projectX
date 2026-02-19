@@ -1,45 +1,71 @@
-# Boas-vindas à Guarda de Ferro
+﻿# Narrative Structure Document (NSD) - Boas-vindas à Guarda de Ferro
 
-## Identificação
+## Quest: Boas-vindas à Guarda de Ferro - V Força Guarda
 
-- **Tipo:** Reforço na Habilidade da Guarda de Ferro.
-- **Dificuldade:** Fácil.
-- **Localização:** Taverna da Pedra Vulcânica.
-- **Nome Artístico:** O Bebê Chorão Cresceu!
-- **Desbloqueia ao Iniciar:** N/A.
+### 1 Resumo Geral (Checkpoint 0)
 
-## Contexto Narrativo
+- [ ] Em andamento
+- Nome da quest: Boas-vindas à Guarda de Ferro
+- Importancia na campanha: posiciona Thorin como aliado oficial da Guarda e fortalece o vínculo com Kilin após seu retorno
+- Arco narrativo: reconhecimento público, humor forjado por irmandade e autoridade crescente de Kilin
+- Objetivo narrativo global: ritualizar o trote para mostrar que Thorin já pertence à Guarda e que a unidade está unida contra os Ignotos
+- Premissa resumida: Kilin convoca Thorin à Taverna da Pedra Vulcânica, relembra o passado e organiza um trote para afirmar o novo status do protagonista.
 
-Quest crítica que aprofunda os arcos de Kilin, Mhordred Thorin. Kilin, agora de volta, discursa para a Guarda de Ferro pela primeira vez após o cativeiro. Ele reconhece Thorin como membro oficial e faz um trote com ele.
+- Locais principais
+  - Taverna da Pedra Vulcânica
+  - Salão de Reuniões da Guarda
+- NPCs principais
+  - Kilin
+  - Thorin
+  - Mhordred
+  - Soldados da Guarda de Ferro
 
-## Gatilhos
+### 2 Pré-condições Narrativas (Checkpoint 1)
 
-- **NPC com a quest:** Kilin.
-- **Requisitos:** Ter completado a quest: Resgatando Kilin - O Resgate do Soldado Kilin.
-- **Gatilho:** Falar com Kilin na Taverna da Pedra Vulcânica.
-- **Condição para concluir:**
-  - Participar do trote com a Guarda de Ferro.
-  - Falar com Kilin após o trote.
+| Tipo | Descrição |
+| --- | --- |
+| Flags / Decisões anteriores | Completar “Resgatando Kilin - O Resgate do Soldado Kilin”. |
+| Limitações ou bloqueios | Kilin precisa ter sido libertado e aceitar Thorin após ele assumir o trote. |
 
-## Estrutura Sistêmica
+### 3 Fluxo Visual Resumido (Checkpoint 2)
 
-- **Atores Envolvidos:**
-  - Kilin (Amigo e Mentor)
-  - Thorin (protagonista)
-  - Mhordred (companheiro)
-  - Soldados (guerreiros da Guarda de Ferro)
-- **Variáveis / Flags Alteradas:**
-  - `v_forca_guarda`
+- [ ] Em andamento
 
-## Desfechos Possíveis
+```plaintext
+Quest: Boas-vindas à Guarda de Ferro - V Força Guarda
+ +-- Cena 1: Taverna da Pedra Vulcânica - Kilin chama Thorin para o trote.
+        +-- Beat 1: Kilin relembra o cativeiro e provoca brincando que Thorin ainda é criança.
+ +-- Cena 2: Ritual do Trote
+        +-- Beat 1: Soldados recitam histórias e desafiam Thorin a repetir juramentos.
+        +-- Beat 2: Mhordred provoca Thorin sobre a honra da Guarda e exige resposta clara.
+        +-- Beat 3: Kilin afirma que Thorin já é um deles e destaca a importância do novo papel.
+ +-- Cena 3: Reconhecimento em coro
+ |      +-- Beat 1: Guarda aplaude, Thorin responde com gesto simbólico.
+ |      +-- Beat 2: Kilin ativa a flag `v_forca_guarda` e encerra o ritual.
+```
 
-- **Final A (Thorin Completa o Ritual de Iniciação):** Thorin participa do trote e é reconhecido por Kilin, O Lorde Anão, como membro oficial da Guarda de Ferro.
+#### Tabela de Cenas
 
-## Condição de Falha
+| # | Nome da Cena | Premissa resumida (expandida) |
+| --- | --- | --- |
+| 1 | **Kilin convoca o trote** | Ele explica que tudo isso é uma cerimônia de boas-vindas e quer que Thorin participe com humor. |
+| 2 | **Rito do Trote** | Soldados e Mhordred testam o protagonista com provocações e histórias. |
+| 3 | **Coro coletivo** | O grupo celebra, o canto sobe e a resposta ativa `v_forca_guarda`. |
 
-- **Final B (Ignora):** Jogador não participa do trote.
+#### Beats por Cena
 
-## Recompensas
+##### Cena 1 - Kilin convoca o trote
 
-- **v_forca_guarda:** +10 pontos (do total de 100)
-- **Narrativa:** Cena emocional, toda a Guarda de Ferro reconhece Thorin como guerreiro.
+| Beat | Premissa Resumida | Tipo |
+| ---- | ---------------- | ---- |
+| **1-A - Discurso de retorno** | Kilin relembra eventos e conecta Thorin ao trote honorífico. | CS |
+| **1-A-a - Celebrar** | O jogador escolhe celebrar. | CHOICE |
+| **1-A-b - Agora não** | O jogador escolhe não celebrar. | CHOICE |
+
+
+##### Cena 2 - Rito do Trote
+
+| Beat | Premissa Resumida | Tipo |
+| ---- | ---------------- | ---- |
+| **2-A - Celebração** | A Guarda celebra o momento. | CS |
+| **2-B - Adiar Celebração** | A Guarda não celebra o momento. | CS |

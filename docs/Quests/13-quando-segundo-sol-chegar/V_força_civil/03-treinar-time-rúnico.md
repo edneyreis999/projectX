@@ -57,32 +57,17 @@ Quest: Treinar Time Rúnico - V Força Civil
 
 #### Beats por Cena
 
-##### Cena 1 - Apresentação do Time
+##### Cena 1 - Treino do Time
 
 | Beat | Premissa Resumida | Tipo |
 | ---- | ---------------- | ---- |
-| **1-A - Boas-vindas rúnica** | Filena explica a importância da tradição esportiva; Thorin observa o clima. | CS |
-| **1-B - Desafio do Capitão** | O capitão declara que o time precisa de provas de respeito, não só promessas. | CHOICE |
+| **1-A - Treino do Time de Futebol Rúnico** | Filena treina o time de Futebol Rúnico. | CS |
+| **1-A-a - Treinar** | O jogador escolhe ajudar no treino. | CHOICE |
+| **1-A-b - Agora não** | O jogador escolhe não ajudar no treino. | CHOICE |
+| **1-B - Resposta do time** | O time mostra que pode subir ao campo como apoio civil. | CS |
 
-##### Cena 2 - Conquista dos Capitães
-
-| Beat | Premissa Resumida | Tipo |
-| ---- | ---------------- | ---- |
-| **2-A - Capitão dos Arqueiros** | Discute precisão e foco; Thorin mostra planos de defesa próximos. | CS |
-| **2-B - Capitão do Bixete** | Exige garantias de que eles não virarão soldados descartáveis. | CS |
-| **2-C - Líder do Apoio** | Quer recursos e logística; Filena apresenta reforços e suprimentos. | CS |
-
-##### Cena 3 - Treino Ritual
+##### Cena 2 - Time pronto
 
 | Beat | Premissa Resumida | Tipo |
 | ---- | ---------------- | ---- |
-| **3-A - Drills rúnicos** | Jogadores praticam passes com runas; Thorin participa e sente o ritmo. | JOG |
-| **3-B - Direção de Filena** | Filena compara o treino ao que será exigido na defesa de Gildrat. | CS |
-| **3-C - Canto dos Campeões** | O time canta celebrando a nova aliança. | CS |
-
-##### Cena 4 - Coroação com Filena
-
-| Beat | Premissa Resumida | Tipo |
-| ---- | ---------------- | ---- |
-| **4-A - Cerimônia de Entronização** | Filena formaliza a entrada do time na força civil. | CS |
-| **4-B - Flag ativada** | `v_forca_civil` soma +15 pontos e entrega bônus narrativos. | CS |
+| **2-A - Time pronto** | Os rebeldes e o time rúnico estão bem treinados. | CS |

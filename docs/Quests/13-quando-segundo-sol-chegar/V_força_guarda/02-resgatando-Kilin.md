@@ -61,30 +61,22 @@ Quest: Resgatando Kilin
 
 | Beat | Premissa Resumida | Tipo |
 | ---- | ---------------- | ---- |
-| **1-A - Balanço da culpa** | Balastrus admite que sua mentira afastou Kilin e concorda em liderar o resgate. | CS |
-| **1-B - Mhordred se desculpa** | Mhordred lembra a importância de Kilin na Guarda e se oferece para abrir o caminho. | CS |
-| **1-C - Escolha** | Jogador escolhe realizar ou não o resgate. | CHOICE |
+| **1-A - Pedido de Mhordred** | Mhordred pede ajudar para ir salvar Kilin. | CS |
+| **1-A-a - Resgatar Kilin** | Jogador escolhe realizar o resgate. | CHOICE |
+| **1-A-b - Agora não** | Jogador escolhe não realizar o resgate. | CHOICE |
 
-##### Cena 2 - Travessia pelas Minas
-
-| Beat | Premissa Resumida | Tipo |
-| ---- | ---------------- | ---- |
-| **2-A - Túneis do leste** | Jogador escolhe um túnel inundado mais longo (mais seguro). | JOG |
-| **2-B - Túneis do oeste** | Jogador escolhe a rota curta, mas cheia de ruínas (risco alto). | JOG |
-
-##### Cena 3 - Câmara do Reformatado
+##### Cena 2 - Mina de Melios
 
 | Beat | Premissa Resumida | Tipo |
 | ---- | ---------------- | ---- |
-| **3-A - Sinais de Kilin** | Rastros de armadura indicam onde Kilin foi levado. | CS |
-| **3-B - Emboscada emocional** | Balastrus enfrenta um brilho dos Ignotos que acusam sua culpa. | CS |
-| **3-C - Diálogo com Kilin** | Acordar Kilin e ouvir sua versão dos fatos. | CS |
-| **3-D - Escolha de confiança** | Jogador escolhe confiar imediatamente em Kilin ou testá-lo. | CHOICE |
+| **2-A - Chegada na Mina de Melios** | O jogador de caminha até a mina de Melios. | JOG |
+| **2-B - Explodir pedra** | Thorin explode a pedra com uma dinamite. | CS |
+| **2-C - Resgate Bem Sucedido** | Thorin e seu grupo resgatam Kilin. | CS |
 
-##### Cena 4 - Retorno com o Mentor
+##### Cena 4 - Retorno a Gildrat
 
 | Beat | Premissa Resumida | Tipo |
 | ---- | ---------------- | ---- |
-| **4-A - Reconhecimento final** | Kilin agradece e renova seu juramento à Guarda. | CS |
-| **4-B - Balastrus busca perdão** | Balastrus suplica por um novo começo. | CS |
-| **4-C - Preparação para a defesa** | Thorin e Kilin definem as próximas etapas da defesa de Gildrat. | CS |
+| **3-A - De volta ao Conselho** | Jogador retorna à Sala do Conselho. | JOG |
+| **3-B - Reconhecimento final** | Kilin agradece e renova seu juramento à Guarda. | CS |
+| **3-C - Guarda fortalecida** | Kilin agora está com a Guarda. | CS |

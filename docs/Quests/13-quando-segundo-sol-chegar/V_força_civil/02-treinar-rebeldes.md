@@ -62,27 +62,6 @@ Quest: Treinar Rebeldes - V Força Civil
 | Beat | Premissa Resumida | Tipo |
 | ---- | ---------------- | ---- |
 | **1-A - Introdução de Filena** | Filena explica o objetivo de transformar rebeldes em aliados confiantes. | CS |
-| **1-B - Objetivo do Treinamento** | Thorin recebe o desafio de conquistar três líderes e ajudar na coordenação. | CHOICE |
-
-##### Cena 2 - Confiança dos Líderes
-
-| Beat | Premissa Resumida | Tipo |
-| ---- | ---------------- | ---- |
-| **2-A - Líder da Mineração** | O líder espera que Thorin reforce a importância dos recursos e profecias. | CS |
-| **2-B - Líder do Combate** | Debate sobre defesa de Gildrat e promessas quebradas; Thorin confirma capacidade. | CS |
-| **2-C - Líder Logístico** | Lógica logística exige dados sobre reforços; Thorin soma suporte prático. | CS |
-
-##### Cena 3 - Treinamento em Campo
-
-| Beat | Premissa Resumida | Tipo |
-| ---- | ---------------- | ---- |
-| **3-A - Coordenação de Formações** | Thorin conduz a simulação por ondas, destacando táticas defensivas. | JOG |
-| **3-B - Apoio de Filena** | Filena explica que o grupo é a próxima muralha de Gildrat. | CS |
-| **3-C - Canto dos Rebeldes** | Rebeldes entoam canção de mineração, reconhecendo Thorin como um deles. | CS |
-
-##### Cena 4 - Debrief com Filena
-
-| Beat | Premissa Resumida | Tipo |
-| ---- | ---------------- | ---- |
-| **4-A - Confirmação de Filena** | Filena registra o sucesso e define que os rebeldes integram a força civil. | CS |
-| **4-B - Flag ativada** | v_forca_civil soma +20 pontos e reforça presença no mapa. | CS |
+| **1-B-a - Treinar** | Thorin decide se ajudará com o treino, ou não. | CHOICE |
+| **1-B-b - Agora não** | Thorin decide se ajudará com o treino, ou não. | CHOICE |
+| **1-C - Treino Alinhado** | Filena treina os rebelde com ajuda de Thorin. | CS |

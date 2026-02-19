@@ -2389,9 +2389,9 @@
           "image": { "tileId": 0, "characterName": "Mina de Melios/!$Pedras", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [
             { "code": 111, "indent": 0, "parameters": [8, 11] },
-            { "code": 122, "indent": 1, "parameters": [101, 101, 0, 4, "\"2-A\""] },
+            { "code": 122, "indent": 1, "parameters": [101, 101, 0, 4, "\"2-B\""] },
             { "code": 122, "indent": 1, "parameters": [102, 102, 0, 4, "\"Explodir pedra\""] },
-            { "code": 122, "indent": 1, "parameters": [103, 103, 0, 4, "\"Thorin explode as pedras com uma dinamite.\""] },
+            { "code": 122, "indent": 1, "parameters": [103, 103, 0, 4, "\"Thorin explode a pedra com uma dinamite.\""] },
             { "code": 117, "indent": 1, "parameters": [16] },
             { "code": 123, "indent": 1, "parameters": ["A", 0] },
             { "code": 0, "indent": 1, "parameters": [] },

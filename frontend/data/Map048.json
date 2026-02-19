@@ -426,7 +426,7 @@
             { "code": 250, "indent": 1, "parameters": [{ "name": "Explosion4", "volume": 40, "pitch": 100, "pan": 0 }] },
             { "code": 122, "indent": 1, "parameters": [101, 101, 0, 4, "\"2-B\""] },
             { "code": 122, "indent": 1, "parameters": [102, 102, 0, 4, "\"Explodir parede\""] },
-            { "code": 122, "indent": 1, "parameters": [103, 103, 0, 4, "\"Thorin explode a parede da mina e descobre uma passagem.\""] },
+            { "code": 122, "indent": 1, "parameters": [103, 103, 0, 4, "\"Thorin explode a parede da mina e descobre uma passagem.\".\""] },
             { "code": 117, "indent": 1, "parameters": [16] },
             { "code": 123, "indent": 1, "parameters": ["A", 0] },
             { "code": 0, "indent": 1, "parameters": [] },
