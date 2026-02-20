@@ -2516,7 +2516,7 @@
             "switch2Valid": false,
             "variableId": 61,
             "variableValid": true,
-            "variableValue": 2
+            "variableValue": 1
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Other1", "direction": 2, "pattern": 0, "characterIndex": 2 },
@@ -2589,7 +2589,7 @@
           "walkAnime": true
         }
       ],
-      "x": 44,
+      "x": 42,
       "y": 38
     },
     {
@@ -2669,7 +2669,7 @@
             "switch2Valid": false,
             "variableId": 61,
             "variableValid": true,
-            "variableValue": 2
+            "variableValue": 1
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Other1", "direction": 2, "pattern": 0, "characterIndex": 2 },
@@ -3298,7 +3298,7 @@
             "switch2Valid": false,
             "variableId": 61,
             "variableValid": true,
-            "variableValue": 2
+            "variableValue": 1
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Other1", "direction": 2, "pattern": 0, "characterIndex": 2 },
@@ -3371,7 +3371,7 @@
           "walkAnime": true
         }
       ],
-      "x": 42,
+      "x": 44,
       "y": 38
     },
     {
@@ -3406,7 +3406,7 @@
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
           "moveType": 0,
-          "priorityType": 1,
+          "priorityType": 0,
           "stepAnime": true,
           "through": false,
           "trigger": 1,
@@ -3493,7 +3493,7 @@
             "switch2Valid": false,
             "variableId": 61,
             "variableValid": true,
-            "variableValue": 2
+            "variableValue": 1
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Other1", "direction": 2, "pattern": 0, "characterIndex": 2 },
@@ -3566,7 +3566,7 @@
           "walkAnime": true
         }
       ],
-      "x": 46,
+      "x": 45,
       "y": 38
     },
     {
@@ -3646,7 +3646,7 @@
             "switch2Valid": false,
             "variableId": 61,
             "variableValid": true,
-            "variableValue": 2
+            "variableValue": 1
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Other1", "direction": 2, "pattern": 0, "characterIndex": 2 },
@@ -3719,8 +3719,8 @@
           "walkAnime": true
         }
       ],
-      "x": 47,
-      "y": 34
+      "x": 46,
+      "y": 38
     },
     {
       "id": 25,
@@ -5350,7 +5350,7 @@
             "switch2Valid": false,
             "variableId": 61,
             "variableValid": true,
-            "variableValue": 2
+            "variableValue": 1
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Other1", "direction": 2, "pattern": 0, "characterIndex": 2 },
@@ -5424,7 +5424,7 @@
         }
       ],
       "x": 47,
-      "y": 35
+      "y": 36
     },
     {
       "id": 38,
@@ -6434,7 +6434,7 @@
             "switch2Valid": false,
             "variableId": 61,
             "variableValid": true,
-            "variableValue": 2
+            "variableValue": 1
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Other1", "direction": 2, "pattern": 0, "characterIndex": 2 },
@@ -6508,7 +6508,7 @@
         }
       ],
       "x": 47,
-      "y": 36
+      "y": 35
     },
     {
       "id": 44,
@@ -8823,7 +8823,159 @@
       "x": 36,
       "y": 22
     },
-    null,
+    {
+      "id": 58,
+      "name": "Bloqueio tóxico",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 40,
+            "variableValid": true,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "!Other1", "direction": 2, "pattern": 0, "characterIndex": 2 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 34,
+            "variableValid": true,
+            "variableValue": 3
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "!Other1", "direction": 2, "pattern": 0, "characterIndex": 2 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 61,
+            "variableValid": true,
+            "variableValue": 1
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "!Other1", "direction": 2, "pattern": 0, "characterIndex": 2 },
+          "list": [
+            { "code": 111, "indent": 0, "parameters": [8, 11] },
+            {
+              "code": 205,
+              "indent": 1,
+              "parameters": [
+                -1,
+                { "list": [{ "code": 45, "parameters": ["Move to:44,40"], "indent": null }, { "code": 19, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
+              ]
+            },
+            { "code": 505, "indent": 1, "parameters": [{ "code": 45, "parameters": ["Move to:44,40"], "indent": null }] },
+            { "code": 505, "indent": 1, "parameters": [{ "code": 19, "indent": null }] },
+            { "code": 122, "indent": 1, "parameters": [101, 101, 0, 4, "\"2-B\""] },
+            { "code": 122, "indent": 1, "parameters": [102, 102, 0, 4, "\"Explosão\""] },
+            { "code": 122, "indent": 1, "parameters": [103, 103, 0, 4, "\"Thorin planta uma dinamite e se afasta para explodir a avalanche.\".\""] },
+            { "code": 117, "indent": 1, "parameters": [16] },
+            { "code": 123, "indent": 1, "parameters": ["A", 0] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 411, "indent": 0, "parameters": [] },
+            { "code": 122, "indent": 1, "parameters": [101, 101, 0, 4, "\"2-C\""] },
+            { "code": 122, "indent": 1, "parameters": [102, 102, 0, 4, "\"Bloqueio de Passagem\""] },
+            { "code": 122, "indent": 1, "parameters": [103, 103, 0, 4, "\"Sem dinamites o jogador não é capaz de passar pela avalanche.\""] },
+            { "code": 117, "indent": 1, "parameters": [16] },
+            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 1, "parameters": ["A avalanche bloqueou a passagem."] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 412, "indent": 0, "parameters": [] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 47,
+      "y": 34
+    },
     {
       "id": 59,
       "name": "Teleporte (Estrada do Cão Luar - Volta de Kravens)",
@@ -9104,7 +9256,36 @@
           "moveType": 0,
           "priorityType": 0,
           "stepAnime": false,
-          "through": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 61,
+            "variableValid": true,
+            "variableValue": 1
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": true,
           "trigger": 0,
           "walkAnime": true
         }
@@ -9129,9 +9310,9 @@
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 40,
+            "variableId": 61,
             "variableValid": true,
-            "variableValue": 0
+            "variableValue": 1
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Principal/$Kilin", "direction": 2, "pattern": 1, "characterIndex": 0 },
@@ -9171,7 +9352,36 @@
           "moveType": 0,
           "priorityType": 0,
           "stepAnime": false,
-          "through": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 61,
+            "variableValid": true,
+            "variableValue": 1
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": true,
           "trigger": 0,
           "walkAnime": true
         }
@@ -9238,77 +9448,7 @@
           "moveType": 0,
           "priorityType": 0,
           "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 45,
-      "y": 35
-    },
-    null,
-    null,
-    null,
-    {
-      "id": 67,
-      "name": "Bloqueio tóxico",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 40,
-            "variableValid": true,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "!Other1", "direction": 2, "pattern": 0, "characterIndex": 2 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 34,
-            "variableValid": true,
-            "variableValue": 3
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "!Other1", "direction": 2, "pattern": 0, "characterIndex": 2 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
+          "through": true,
           "trigger": 0,
           "walkAnime": true
         },
@@ -9326,64 +9466,7 @@
             "switch2Valid": false,
             "variableId": 61,
             "variableValid": true,
-            "variableValue": 2
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "!Other1", "direction": 2, "pattern": 0, "characterIndex": 2 },
-          "list": [
-            { "code": 111, "indent": 0, "parameters": [8, 11] },
-            {
-              "code": 205,
-              "indent": 1,
-              "parameters": [
-                -1,
-                { "list": [{ "code": 45, "parameters": ["Move to:44,40"], "indent": null }, { "code": 19, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
-              ]
-            },
-            { "code": 505, "indent": 1, "parameters": [{ "code": 45, "parameters": ["Move to:44,40"], "indent": null }] },
-            { "code": 505, "indent": 1, "parameters": [{ "code": 19, "indent": null }] },
-            { "code": 122, "indent": 1, "parameters": [101, 101, 0, 4, "\"2-B\""] },
-            { "code": 122, "indent": 1, "parameters": [102, 102, 0, 4, "\"Explosão\""] },
-            { "code": 122, "indent": 1, "parameters": [103, 103, 0, 4, "\"Thorin planta uma dinamite e se afasta para explodir a avalanche.\".\""] },
-            { "code": 117, "indent": 1, "parameters": [16] },
-            { "code": 123, "indent": 1, "parameters": ["A", 0] },
-            { "code": 0, "indent": 1, "parameters": [] },
-            { "code": 411, "indent": 0, "parameters": [] },
-            { "code": 122, "indent": 1, "parameters": [101, 101, 0, 4, "\"2-C\""] },
-            { "code": 122, "indent": 1, "parameters": [102, 102, 0, 4, "\"Bloqueio de Passagem\""] },
-            { "code": 122, "indent": 1, "parameters": [103, 103, 0, 4, "\"Sem dinamites o jogador não é capaz de passar pela avalanche.\""] },
-            { "code": 117, "indent": 1, "parameters": [16] },
-            { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 1, "parameters": ["A avalanche bloqueou a passagem."] },
-            { "code": 0, "indent": 1, "parameters": [] },
-            { "code": 412, "indent": 0, "parameters": [] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
+            "variableValue": 1
           },
           "directionFix": false,
           "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
@@ -9394,14 +9477,18 @@
           "moveType": 0,
           "priorityType": 0,
           "stepAnime": false,
-          "through": false,
+          "through": true,
           "trigger": 0,
           "walkAnime": true
         }
       ],
       "x": 45,
-      "y": 38
+      "y": 35
     },
+    null,
+    null,
+    null,
+    null,
     {
       "id": 68,
       "name": "Filena Tóxica",
@@ -9461,7 +9548,36 @@
           "moveType": 0,
           "priorityType": 0,
           "stepAnime": false,
-          "through": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 61,
+            "variableValid": true,
+            "variableValue": 1
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": true,
           "trigger": 0,
           "walkAnime": true
         }
@@ -9881,7 +9997,7 @@
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
           "moveType": 0,
-          "priorityType": 1,
+          "priorityType": 0,
           "stepAnime": false,
           "through": false,
           "trigger": 0,
@@ -9906,6 +10022,39 @@
           "directionFix": false,
           "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 61,
+            "variableValid": true,
+            "variableValue": 1
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
+            { "code": 201, "indent": 0, "parameters": [0, 24, 16, 33, 2, 0] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
