@@ -2535,6 +2535,8 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario2", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
+            { "code": 355, "indent": 0, "parameters": ["SQSM.CompleteTaskForQuest(\"apaziguarDiscussao\", 1);"] },
+            { "code": 655, "indent": 0, "parameters": ["SQSM.ShowTaskForQuest(\"apaziguarDiscussao\", 2);"] },
             { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"2-A\""] },
             { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Nobres exigem ordem\""] },
             { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Thorin ouve nobres que defendem privilégios históricos.\""] },
@@ -2550,6 +2552,8 @@
             { "code": 122, "indent": 1, "parameters": [103, 103, 0, 4, "\"Thorin propõe dividir recursos e planos de defesa.\""] },
             { "code": 117, "indent": 1, "parameters": [16] },
             { "code": 122, "indent": 1, "parameters": [70, 70, 0, 0, 2] },
+            { "code": 355, "indent": 1, "parameters": ["SQSM.CompleteTaskForQuest(\"apaziguarDiscussao\", 2);"] },
+            { "code": 655, "indent": 1, "parameters": ["SQSM.ShowTaskForQuest(\"apaziguarDiscussao\", 3);"] },
             { "code": 0, "indent": 1, "parameters": [] },
             { "code": 402, "indent": 0, "parameters": [1, "Não"] },
             { "code": 101, "indent": 1, "parameters": ["", 0, 0, 2, "Comerciante"] },
