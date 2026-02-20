@@ -53,25 +53,24 @@ Quest: Encontrar Ferreiro Para Armaduras - V Sigmetal
 
 #### Beats por Cena
 
-##### Cena 1 - Lenda do Leviatã
+##### Cena 1 - O Ferreiro
 
 | Beat | Premissa Resumida | Tipo |
 | ---- | ---------------- | ---- |
-| **1-A - Indicação de Balastrus** | Balastrus descreve a lenda e os requisitos do ferreiro. | CS |
-| **1-B - Decisão de abordagem** | Thorin escolhe preparar presente, explicar o sigmetal ou mostrar que pode proteger a oficina. | CHOICE |
+| **1-A - Forja Ativa** | O ferreiro registra o uso do Sigmetal, o bônus adquirido e permite voltar depois. | CS |
+| **1-B - Escolha** | Thorin decide, ou não, reforçar armaduras. | CS |
+| **1-B-a - Escolha** | Thorin decide reforçar armaduras. | CHOICE |
+| **1-B-b - Escolha** | Thorin decide não reforçar armaduras. | CHOICE |
 
-##### Cena 2 - Ritual da Oficina
-
-| Beat | Premissa Resumida | Tipo |
-| ---- | ---------------- | ---- |
-| **2-A - Teste do minério** | O ferreiro verifica as propriedades do sigmetal com runas. | CS |
-| **2-B - Desafio mecânico** | Thorin ajuda a ajustar engrenagens ou trazer amostras adicionais. | CS |
-| **2-C - Forja da armadura** | O ferreiro trabalha; o jogador acompanha a sequência de ritmo leve. | JOG |
-
-##### Cena 3 - Entrega cerimonial
+##### Cena 2 - Forja
 
 | Beat | Premissa Resumida | Tipo |
 | ---- | ---------------- | ---- |
-| **3-A - Balastrus confirma** | Balastrus e o ferreiro validam o resultado enquanto os soldados observam. | CS |
-| **3-B - Flag ativada** | `v_reforco_sigmetal` soma +50 pontos e confirma a produção. | CS |
+| **2-A - Armaduras reforçadas** | O ferreiro reeforça as armaduras utilizando 5 sigmetals de Thorin. | CS |
+
+##### Cena 3 - Armaduras Reforçadas
+
+| Beat | Premissa Resumida | Tipo |
+| ---- | ---------------- | ---- |
+| **3-A - Entrega completa** | Ferreiro confirma que as armaduras reforçadas já estão prontas. | CS |
 ```

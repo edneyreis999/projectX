@@ -2564,6 +2564,11 @@
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
             { "code": 401, "indent": 0, "parameters": ["Resgate bem sucedido."] },
             { "code": 122, "indent": 0, "parameters": [85, 85, 1, 0, 1] },
+            { "code": 111, "indent": 0, "parameters": [1, 85, 0, 4, 0] },
+            { "code": 355, "indent": 1, "parameters": ["SQSM.CompleteTaskForQuest(\"resgatarCorvos, 2\");"] },
+            { "code": 655, "indent": 1, "parameters": ["SQSM.ShowTaskForQuest(\"resgatarCorvos, 3\");"] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 412, "indent": 0, "parameters": [] },
             { "code": 214, "indent": 0, "parameters": [] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
@@ -2578,8 +2583,8 @@
           "walkAnime": true
         }
       ],
-      "x": 11,
-      "y": 75
+      "x": 87,
+      "y": 46
     },
     {
       "id": 22,
@@ -2612,6 +2617,11 @@
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
             { "code": 401, "indent": 0, "parameters": ["Resgate bem sucedido."] },
             { "code": 122, "indent": 0, "parameters": [85, 85, 1, 0, 1] },
+            { "code": 111, "indent": 0, "parameters": [1, 85, 0, 4, 0] },
+            { "code": 355, "indent": 1, "parameters": ["SQSM.CompleteTaskForQuest(\"resgatarCorvos, 2\");"] },
+            { "code": 655, "indent": 1, "parameters": ["SQSM.ShowTaskForQuest(\"resgatarCorvos, 3\");"] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 412, "indent": 0, "parameters": [] },
             { "code": 214, "indent": 0, "parameters": [] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
@@ -2660,6 +2670,11 @@
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
             { "code": 401, "indent": 0, "parameters": ["Resgate bem sucedido."] },
             { "code": 122, "indent": 0, "parameters": [85, 85, 1, 0, 1] },
+            { "code": 111, "indent": 0, "parameters": [1, 85, 0, 4, 0] },
+            { "code": 355, "indent": 1, "parameters": ["SQSM.CompleteTaskForQuest(\"resgatarCorvos, 2\");"] },
+            { "code": 655, "indent": 1, "parameters": ["SQSM.ShowTaskForQuest(\"resgatarCorvos, 3\");"] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 412, "indent": 0, "parameters": [] },
             { "code": 214, "indent": 0, "parameters": [] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
@@ -2674,8 +2689,8 @@
           "walkAnime": true
         }
       ],
-      "x": 87,
-      "y": 79
+      "x": 88,
+      "y": 77
     },
     {
       "id": 24,
@@ -2708,6 +2723,11 @@
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
             { "code": 401, "indent": 0, "parameters": ["Resgate bem sucedido."] },
             { "code": 122, "indent": 0, "parameters": [85, 85, 1, 0, 1] },
+            { "code": 111, "indent": 0, "parameters": [1, 85, 0, 4, 0] },
+            { "code": 355, "indent": 1, "parameters": ["SQSM.CompleteTaskForQuest(\"resgatarCorvos, 2\");"] },
+            { "code": 655, "indent": 1, "parameters": ["SQSM.ShowTaskForQuest(\"resgatarCorvos, 3\");"] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 412, "indent": 0, "parameters": [] },
             { "code": 214, "indent": 0, "parameters": [] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
@@ -2722,8 +2742,8 @@
           "walkAnime": true
         }
       ],
-      "x": 87,
-      "y": 46
+      "x": 10,
+      "y": 74
     },
     {
       "id": 25,
