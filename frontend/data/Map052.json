@@ -166,39 +166,6 @@
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 71,
-            "variableValid": false,
-            "variableValue": 1
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Principal/$Filena", "direction": 2, "pattern": 1, "characterIndex": 0 },
-          "list": [
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Filena"] },
-            { "code": 401, "indent": 0, "parameters": ["Borin está ajudando na defesa!"] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
             "selfSwitchValid": false,
             "switch1Id": 1,
             "switch1Valid": false,
@@ -222,6 +189,8 @@
             { "code": 122, "indent": 0, "parameters": [64, 64, 1, 0, 30] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
             { "code": 401, "indent": 0, "parameters": ["Exército Civil +30 pontos!"] },
+            { "code": 355, "indent": 0, "parameters": ["SQSM.CompleteTaskForQuest(\"resgatarBorin\", 5);"] },
+            { "code": 655, "indent": 0, "parameters": ["SQSM.CompleteQuest(\"resgatarBorin\");"] },
             { "code": 122, "indent": 0, "parameters": [71, 71, 0, 0, 3] },
             { "code": 123, "indent": 0, "parameters": ["B", 0] },
             { "code": 0, "indent": 0, "parameters": [] }
