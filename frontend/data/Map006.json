@@ -618,6 +618,8 @@
             { "code": 223, "indent": 1, "parameters": [[0, 0, 0, 0], 30, true] },
             { "code": 314, "indent": 1, "parameters": [0, 0] },
             { "code": 121, "indent": 1, "parameters": [9, 9, 1] },
+            { "code": 355, "indent": 1, "parameters": ["SQSM.CompleteTaskForQuest(\"dormir\", 1);"] },
+            { "code": 655, "indent": 1, "parameters": ["SQSM.CompleteQuest(\"dormir\");"] },
             { "code": 123, "indent": 1, "parameters": ["A", 0] },
             { "code": 0, "indent": 1, "parameters": [] },
             { "code": 402, "indent": 0, "parameters": [1, "Ainda nÃƒÂ£o estou pronto"] },

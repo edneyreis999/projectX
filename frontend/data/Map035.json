@@ -2513,7 +2513,7 @@
             { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Resgate Bem Sucedido\""] },
             { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Thorin e seu grupo resgatam Kilin.\""] },
             { "code": 117, "indent": 0, "parameters": [16] },
-            { "code": 122, "indent": 0, "parameters": [73, 73, 0, 0, 3] },
+            { "code": 122, "indent": 0, "parameters": [73, 73, 0, 0, 4] },
             { "code": 355, "indent": 0, "parameters": ["SQSM.CompleteTaskForQuest(\"resgatarKilin\", 2);"] },
             { "code": 655, "indent": 0, "parameters": ["SQSM.CompleteQuest(\"resgatarKilin\");"] },
             { "code": 214, "indent": 0, "parameters": [] },

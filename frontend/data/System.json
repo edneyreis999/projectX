@@ -388,7 +388,7 @@
     "",
     "armadurasReforcadas",
     "armasReforcadas",
-    "",
+    "sigmetalColetado",
     "",
     "",
     "",
@@ -407,7 +407,7 @@
     "",
     ""
   ],
-  "versionId": 85763721,
+  "versionId": 39722390,
   "victoryMe": { "name": "Victory1", "pan": 0, "pitch": 100, "volume": 90 },
   "weaponTypes": ["", "Adaga", "Espada", "Malho", "Machado", "Chicote", "Cajado", "Arco", "Funda", "Arma de Fogo", "Garra", "Luva", "Lança", ""],
   "windowTone": [0, 0, 0, 0],
