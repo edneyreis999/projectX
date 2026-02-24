@@ -306,6 +306,35 @@
           "through": false,
           "trigger": 0,
           "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 35,
+            "variableValid": true,
+            "variableValue": 3
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "People3", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
         }
       ],
       "x": 10,
@@ -328,12 +357,12 @@
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
+            "variableId": 35,
+            "variableValid": true,
+            "variableValue": 3
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Principal/$Tordan", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Tordan", "direction": 6, "pattern": 0, "characterIndex": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
@@ -346,12 +375,12 @@
           "walkAnime": true
         }
       ],
-      "x": 9,
-      "y": 5
+      "x": 7,
+      "y": 8
     },
     {
       "id": 8,
-      "name": "Conselheiro 1",
+      "name": "Conselheira Faire Corvinus",
       "note": "",
       "pages": [
         {
@@ -366,12 +395,12 @@
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
+            "variableId": 35,
+            "variableValid": true,
+            "variableValue": 3
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "People3", "direction": 8, "pattern": 1, "characterIndex": 2 },
+          "image": { "tileId": 0, "characterName": "People3", "direction": 4, "pattern": 1, "characterIndex": 3 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
@@ -384,12 +413,12 @@
           "walkAnime": true
         }
       ],
-      "x": 9,
+      "x": 14,
       "y": 8
     },
     {
       "id": 9,
-      "name": "Conselheiro 2",
+      "name": "Conselheiro Lucius",
       "note": "",
       "pages": [
         {
@@ -404,12 +433,12 @@
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
+            "variableId": 35,
+            "variableValid": true,
+            "variableValue": 3
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "People3", "direction": 8, "pattern": 1, "characterIndex": 7 },
+          "image": { "tileId": 0, "characterName": "People3", "direction": 4, "pattern": 1, "characterIndex": 7 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
@@ -422,7 +451,7 @@
           "walkAnime": true
         }
       ],
-      "x": 10,
+      "x": 15,
       "y": 8
     },
     {
@@ -655,7 +684,7 @@
           "walkAnime": true
         }
       ],
-      "x": 4,
+      "x": 3,
       "y": 8
     },
     {
@@ -791,7 +820,7 @@
           "walkAnime": true
         }
       ],
-      "x": 5,
+      "x": 4,
       "y": 8
     },
     {
@@ -927,7 +956,7 @@
           "walkAnime": true
         }
       ],
-      "x": 6,
+      "x": 5,
       "y": 8
     },
     {
@@ -1347,50 +1376,12 @@
           "walkAnime": true
         }
       ],
-      "x": 2,
+      "x": 1,
       "y": 0
     },
     {
       "id": 16,
-      "name": "Conselheiro 3",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Actor3", "direction": 8, "pattern": 1, "characterIndex": 7 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 11,
-      "y": 8
-    },
-    {
-      "id": 17,
-      "name": "Filena e Mélios",
+      "name": "Conselheiro Tate",
       "note": "",
       "pages": [
         {
@@ -1407,27 +1398,69 @@
             "switch2Valid": false,
             "variableId": 35,
             "variableValid": true,
-            "variableValue": 4
+            "variableValue": 3
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Actor3", "direction": 4, "pattern": 1, "characterIndex": 7 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 16,
+      "y": 8
+    },
+    {
+      "id": 17,
+      "name": "Pós combate",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 35,
+            "variableValid": true,
+            "variableValue": 8
           },
           "directionFix": false,
           "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
           "list": [
-            { "code": 205, "indent": 0, "parameters": [20, { "list": [{ "code": 18, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 18, "indent": null }] },
-            { "code": 213, "indent": 0, "parameters": [20, 1, false] },
             {
               "code": 205,
               "indent": 0,
-              "parameters": [25, { "list": [{ "code": 45, "parameters": ["Move to: 10,10"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }]
+              "parameters": [
+                19,
+                { "list": [{ "code": 45, "parameters": ["Move to: 9,9"], "indent": null }, { "code": 18, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }
+              ]
             },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 10,10"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 9,9"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 18, "indent": null }] },
             {
               "code": 205,
               "indent": 0,
-              "parameters": [27, { "list": [{ "code": 45, "parameters": ["Move to: 10,11"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }]
+              "parameters": [
+                -1,
+                { "list": [{ "code": 45, "parameters": ["Move to: 10,11"], "indent": null }, { "code": 19, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
+              ]
             },
             { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 10,11"], "indent": null }] },
-            { "code": 230, "indent": 0, "parameters": [1] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 19, "indent": null }] },
             {
               "code": 357,
               "indent": 0,
@@ -1439,7 +1472,7 @@
                   "PictureID:eval": "1",
                   "PictureName:str": "People3_1",
                   "Origin:str": "Bust",
-                  "Position:num": "0",
+                  "Position:num": "1",
                   "StartOffsetX:eval": "-200",
                   "StartOffsetY:eval": "+0",
                   "EasingType:str": "OutSine",
@@ -1451,58 +1484,28 @@
             { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
             { "code": 657, "indent": 0, "parameters": ["Picture File = People3_1"] },
             { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 0"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 1"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
             { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
             { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Mas o que significa isso?"] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"5-A\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Família Forjaprata\""] },
             {
-              "code": 357,
+              "code": 122,
               "indent": 0,
               "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "3",
-                  "PictureName:str": "Actor3_7",
-                  "Origin:str": "Bust",
-                  "Position:num": "10",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto",
-                  "Duration:eval": "20"
-                }
+                103,
+                103,
+                0,
+                4,
+                "\"Dambur diz a Thorin que ele deixou seu imperador satisfeito. Que é bom saber que o legado dos Forjaprata está segura nas mãos de Thorin. Mas admite que também terá que puní-lo pela insubordinação junto de Filena.\""
               ]
             },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 3"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Actor3_7"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 10"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [45, 45, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 5, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Com licença, meu imperador. Eu não quis interromper. Tivemos"] },
-            { "code": 401, "indent": 0, "parameters": ["uma ocorrência na mina de Mélios e me mandaram vir diretamente até"] },
-            { "code": 401, "indent": 0, "parameters": ["o senhor."] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["O responsável pela expedição nos informou sobre"] },
-            { "code": 401, "indent": 0, "parameters": ["dois rebeldes, que além de se recusarem a fazer"] },
-            { "code": 401, "indent": 0, "parameters": ["o próprio serviço, ainda tentaram virar os"] },
-            { "code": 401, "indent": 0, "parameters": ["outros mineradores contra a coroa!"] },
-            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Desgraçados! Eu não perdoarei aqueles que se"] },
-            { "code": 401, "indent": 0, "parameters": ["negam a trabalhar pelo bem da coroa!"] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            { "code": 230, "indent": 0, "parameters": [20] },
             {
               "code": 357,
               "indent": 0,
@@ -1511,8 +1514,8 @@
                 "Basic_EnterBust",
                 "BASIC: Enter Bust",
                 {
-                  "PictureID:eval": "4",
-                  "PictureName:str": "Portraits/Principal/Filena",
+                  "PictureID:eval": "2",
+                  "PictureName:str": "Portraits/Principal/Balastrus",
                   "Origin:str": "Bust",
                   "Position:num": "7",
                   "StartOffsetX:eval": "-200",
@@ -1523,8 +1526,8 @@
                 }
               ]
             },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 4"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Filena"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Balastrus"] },
             { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = 7"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
@@ -1532,250 +1535,22 @@
             { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
             { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [46, 46, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Nós aceitamos este trabalho somente para não"] },
-            { "code": 401, "indent": 0, "parameters": ["morrermos de fome. As condições são precárias e"] },
-            { "code": 401, "indent": 0, "parameters": ["o pagamento nem um pouco justo. Já chega!"] },
-            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Isto não é negociável, fedelha de sangue ruim. Cumpra com "] },
-            { "code": 401, "indent": 0, "parameters": ["as suas funções ou aceite as consequências!"] },
-            { "code": 121, "indent": 0, "parameters": [45, 45, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Temo que a situação seja ainda mais preocupante, vossa majestade. "] },
-            { "code": 401, "indent": 0, "parameters": ["Nos foi relatado que os expedicionários se depararam com um grande"] },
-            { "code": 401, "indent": 0, "parameters": ["bloco de ferro, adornado com runas antigas e aparentemente"] },
-            { "code": 401, "indent": 0, "parameters": ["muito valioso."] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Porém, poucos estavam presentes quando o"] },
-            { "code": 401, "indent": 0, "parameters": ["encontraram. Ele está localizado em uma zona da"] },
-            { "code": 401, "indent": 0, "parameters": ["mina que até então era desconhecida."] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Apenas essa garota sabe como chegar lá, o resto"] },
-            { "code": 401, "indent": 0, "parameters": ["morreu em um deslizamento de pedras."] },
-            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Vocês se atreve a guardar segredos de mim?! Fale logo, ou "] },
-            { "code": 401, "indent": 0, "parameters": ["mandarei cortar sua língua!"] },
+            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"5-B\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Xeque-mate\""] },
             {
-              "code": 357,
+              "code": 122,
               "indent": 0,
               "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "2",
-                  "PictureName:str": "Portraits/Principal/Balastrus",
-                  "Origin:str": "Bust",
-                  "Position:num": "3",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
+                103,
+                103,
+                0,
+                4,
+                "\"Balastrus diz a Dambur que tem uma ideia sobre como todas as partes podem ficar satisfeitas. Ele sugere levar Thorin e Filena com ele para uma próxima expedição, mas dessa vez, como um tipo de serviço comunitário, onde não receberão nada em troca. Ele pede sutilmente que o imperador lhe ceda o controle de Mélios, mina que antes pertencia aos corvos, sobre a desculpa de que têm apresentado melhores resultados que eles a tempos (pode ser ainda mais acentuado se o jogador escolheu dar o sigmetal).\""
               ]
             },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Balastrus"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 3"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 6, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Se me permite, majestade, talvez essa não seja a melhor saída.  "] },
-            { "code": 401, "indent": 0, "parameters": ["Se cortarmos a língua dela, nunca descobriremos onde está o "] },
-            { "code": 401, "indent": 0, "parameters": ["tal objeto."] },
-            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["E o que você sujere, Balastrus?"] },
-            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 6, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Permita que eu a leve de volta até Mélios."] },
-            { "code": 401, "indent": 0, "parameters": ["Vou garantir que não apenas fale, mas"] },
-            { "code": 401, "indent": 0, "parameters": ["também que qualquer coisa dentro desse bloco de"] },
-            { "code": 401, "indent": 0, "parameters": ["ferro seja trazida diretamente para o senhor!"] },
-            { "code": 121, "indent": 0, "parameters": [46, 46, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 2, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Você não é tão esperto quanto parece, Senhor Balastrus! Eu "] },
-            { "code": 401, "indent": 0, "parameters": ["não vou falar!"] },
-            { "code": 101, "indent": 0, "parameters": ["", 2, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["E mesmo que encontrassem o bloco de ferro sem a minha ajuda, "] },
-            { "code": 401, "indent": 0, "parameters": ["também não conseguiriam quebrá-lo, nós tentamos tudo o que "] },
-            { "code": 401, "indent": 0, "parameters": ["podíamos, ele é indestrutível!"] },
-            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 6, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Viu só, majestade. Ela já está falando!"] },
-            { "code": 401, "indent": 0, "parameters": ["Indestrutível, hã?!"] },
-            { "code": 121, "indent": 0, "parameters": [46, 46, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 2, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Você me manipulou! Seu verme!"] },
-            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Por isso a coroa tem tido o prazer de financiar"] },
-            { "code": 401, "indent": 0, "parameters": ["suas expedições há tanto tempo, Balastrus! Você"] },
-            { "code": 401, "indent": 0, "parameters": ["continua sendo genial! Mas como pretende abrir"] },
-            { "code": 401, "indent": 0, "parameters": ["um bloco de ferro aparentemente indestrutível?"] },
-            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 6, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["O império dos anões nunca teria chegado tão"] },
-            { "code": 401, "indent": 0, "parameters": ["longe se deixássemos esse tipo de evento nos"] },
-            { "code": 401, "indent": 0, "parameters": ["parar. Cada nova descoberta nos torna mais"] },
-            { "code": 401, "indent": 0, "parameters": ["fortes, majestade."] },
-            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 6, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Desde que me tornou o pontífice da ciência e"] },
-            { "code": 401, "indent": 0, "parameters": ["tecnologia do império, desenvolvemos Picaretas"] },
-            { "code": 401, "indent": 0, "parameters": ["de Mitril, Pó Explosivo de Pedralúmen "] },
-            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 6, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["e as recém-construídas Brocas-titã, maquinário"] },
-            { "code": 401, "indent": 0, "parameters": ["pesado de perfuração."] },
-            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Excelente! Leve um decreto real e assuma aquela expedição."] },
-            { "code": 401, "indent": 0, "parameters": ["Mas quero que você cuide disso pessoalmente, nada "] },
-            { "code": 401, "indent": 0, "parameters": ["de enviar seus lacaios. Não pode haver erros!"] },
-            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 6, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["É claro, vossa eminencia."] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_ExitBusts",
-                "BASIC: Exit Bust(s)",
-                {
-                  "PictureID:arrayeval": "[\"1\",\"2\",\"3\",\"4\"]",
-                  "EndOffsetX:eval": "-200",
-                  "EndOffsetY:eval": "+0",
-                  "EasingType:str": "InSine",
-                  "FlipDirection:str": "None",
-                  "Duration:eval": "20",
-                  "AutoErase:eval": "true"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\",\"2\",\"3\",\"4\"]"] },
-            { "code": 657, "indent": 0, "parameters": ["End Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["End Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
-            { "code": 213, "indent": 0, "parameters": [16, 1, true] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "4",
-                  "PictureName:str": "Actor3_3",
-                  "Origin:str": "Bust",
-                  "Position:num": "10",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 4"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Actor3_3"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 10"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [46, 46, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 4, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Imperador... a mina de Mélios está sob jurisdição da minha"] },
-            { "code": 401, "indent": 0, "parameters": ["familia! Os Pedrachamas tem gerido essas expedições há anos"] },
-            { "code": 401, "indent": 0, "parameters": ["e nunca falhamos."] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "1",
-                  "PictureName:str": "People3_1",
-                  "Origin:str": "Bust",
-                  "Position:num": "0",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = People3_1"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 0"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Até agora. estou cansado de imconpetentes. Vocês não conseguiram"] },
-            { "code": 401, "indent": 0, "parameters": ["lidar com uma simples rebelião. Eu, o imperador, decreto que a"] },
-            { "code": 401, "indent": 0, "parameters": ["partir do presente momento, Mélios está sob a responsabilidade "] },
-            { "code": 401, "indent": 0, "parameters": ["de Balastro e seus anões."] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "2",
-                  "PictureName:str": "Portraits/Principal/Balastrus",
-                  "Origin:str": "Bust",
-                  "Position:num": "3",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Balastrus"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 3"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Não irei decepcioná-lo, meu rei!"] },
-            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 4, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Tordan, eu quero que você mobilize alguns homens da guarda"] },
-            { "code": 401, "indent": 0, "parameters": ["real para acompanhá-los até Mélios."] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            { "code": 230, "indent": 0, "parameters": [20] },
             {
               "code": 357,
               "indent": 0,
@@ -1787,7 +1562,7 @@
                   "PictureID:eval": "3",
                   "PictureName:str": "Portraits/Principal/Tordan",
                   "Origin:str": "Bust",
-                  "Position:num": "7",
+                  "Position:num": "3",
                   "StartOffsetX:eval": "-200",
                   "StartOffsetY:eval": "+0",
                   "EasingType:str": "OutSine",
@@ -1799,37 +1574,89 @@
             { "code": 657, "indent": 0, "parameters": ["Picture ID = 3"] },
             { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Tordan"] },
             { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 7"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 3"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
             { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
             { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [45, 45, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 4, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Creio não ser possível, senhor. Os únicos soldados disponíveis "] },
-            { "code": 401, "indent": 0, "parameters": ["são os da Guarda Primordial do imperador, e não podemos "] },
-            { "code": 401, "indent": 0, "parameters": ["abrir mão da sua segurança."] },
-            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 6, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Não se preocupe, senhor. Meu contingente"] },
-            { "code": 401, "indent": 0, "parameters": ["particular é mais do que capaz de lidar com a"] },
-            { "code": 401, "indent": 0, "parameters": ["responsabilidade dessa missão."] },
-            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 6, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["No entanto, eu gostaria de levar o jovem Thorin"] },
-            { "code": 401, "indent": 0, "parameters": ["conosco. Talvez ele nos traga sorte novamente"] },
-            { "code": 401, "indent": 0, "parameters": ["e encontremos mais Sigmetal."] },
-            { "code": 121, "indent": 0, "parameters": [45, 45, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 4, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Não acho que seja uma boa idéia, majesta..."] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"5-C\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Não toque no meu filho!\""] },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                103,
+                103,
+                0,
+                4,
+                "\"Tordan intervém, diz a Dambur que a mina de Mélios não é pacificada e que isso pode ser perigoso demais, além é claro da provavél rusga que surgirá entre a nobreza, já que a família Corvinus, que foi responsável pela mina de Mélios por anos, não aceitará fácil essa tomada de decisão.\""
+              ]
+            },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            { "code": 230, "indent": 0, "parameters": [15] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "4",
+                  "PictureName:str": "Actor2_6",
+                  "Origin:str": "Bust",
+                  "Position:num": "10",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 4"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Actor2_6"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 10"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [46, 46, 0] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"5-D\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Ataque dos Corvos\""] },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                103,
+                103,
+                0,
+                4,
+                "\"Faire Corvinus, representante da família no conselho, não aceita bem a ideia de que a mina seja entrega à Balastrus e seus anões. Ela ameaça retirar seu apoio ao imperador.\""
+              ]
+            },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            { "code": 230, "indent": 0, "parameters": [15] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Silêncio! Eu já me decidi. O pedido de Balastro será atendido. "] },
-            { "code": 401, "indent": 0, "parameters": ["Faça como quiser, velho amigo, mas você deve partir imediatamente!"] },
-            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 6, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Sim, majestade."] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"5-E\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Usurpador\""] },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                103,
+                103,
+                0,
+                4,
+                "\"Dambur decide apoiar Balastrus e vê nessa tomada de decisão a chance de reafirmar seu poder. Ele diz a Faire que não precisa do apoio dela, que quando assumiu como imperador também havia aqueles que eram contra ele, mas suas famílias desfaleceram e foram destituídas do poder. Muitas dessas famílias, inclusive, trabalham nas minas agora. Ele entrega o decreto real para Balastrus.\""
+              ]
+            },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            { "code": 230, "indent": 0, "parameters": [20] },
             {
               "code": 357,
               "indent": 0,
@@ -1855,12 +1682,89 @@
             { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
-            { "code": 201, "indent": 0, "parameters": [0, 17, 8, 10, 0, 0] },
-            { "code": 205, "indent": 0, "parameters": [-1, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
+            { "code": 205, "indent": 0, "parameters": [6, { "list": [{ "code": 18, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 18, "indent": null }] },
+            { "code": 205, "indent": 0, "parameters": [-1, { "list": [{ "code": 18, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 18, "indent": null }] },
+            { "code": 213, "indent": 0, "parameters": [8, 7, true] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusTargetEvent", "Camera: Focus Target Event", { "EventID:eval": "8", "Duration:num": "150", "EasingType:str": "InOutSine" }]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Event ID = 8"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 150"] },
+            { "code": 657, "indent": 0, "parameters": ["Easing Type = InOutSine"] },
+            { "code": 357, "indent": 0, "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusWait", "Camera: Wait for Focus", {}] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                8,
+                {
+                  "list": [
+                    { "code": 17, "indent": null },
+                    { "code": 45, "parameters": ["Move to: 10,21"], "indent": null },
+                    { "code": 37, "indent": null },
+                    { "code": 39, "indent": null },
+                    { "code": 0 }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 17, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 10,21"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 37, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 39, "indent": null }] },
+            { "code": 205, "indent": 0, "parameters": [9, { "list": [{ "code": 17, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 17, "indent": null }] },
+            { "code": 205, "indent": 0, "parameters": [16, { "list": [{ "code": 17, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 17, "indent": null }] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusTargetEvent", "Camera: Focus Target Event", { "EventID:eval": "6", "Duration:num": "150", "EasingType:str": "InOutSine" }]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Event ID = 6"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 150"] },
+            { "code": 657, "indent": 0, "parameters": ["Easing Type = InOutSine"] },
+            { "code": 357, "indent": 0, "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusWait", "Camera: Wait for Focus", {}] },
+            { "code": 357, "indent": 0, "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusPlayer", "Camera: Focus Player", { "Duration:num": "60", "EasingType:str": "InOutSine" }] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 60"] },
+            { "code": 657, "indent": 0, "parameters": ["Easing Type = InOutSine"] },
+            { "code": 230, "indent": 0, "parameters": [20] },
+            { "code": 221, "indent": 0, "parameters": [] },
+            { "code": 122, "indent": 0, "parameters": [35, 35, 0, 0, 9] },
+            { "code": 222, "indent": 0, "parameters": [] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [-1, { "list": [{ "code": 25, "indent": null }, { "code": 19, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 25, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 19, "indent": null }] },
+            { "code": 205, "indent": 0, "parameters": [6, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
-            { "code": 355, "indent": 0, "parameters": ["SQSM.CompleteTaskForQuest(\"vozConselho\", 2);"] },
-            { "code": 655, "indent": 0, "parameters": ["SQSM.ShowTaskForQuest(\"vozConselho\", 3); "] },
-            { "code": 122, "indent": 0, "parameters": [35, 35, 0, 0, 5] },
+            { "code": 205, "indent": 0, "parameters": [19, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
+            { "code": 205, "indent": 0, "parameters": [16, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
+            { "code": 205, "indent": 0, "parameters": [9, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
+            { "code": 129, "indent": 0, "parameters": [5, 0, false] },
+            { "code": 129, "indent": 0, "parameters": [6, 0, false] },
+            { "code": 129, "indent": 0, "parameters": [4, 0, false] },
+            { "code": 129, "indent": 0, "parameters": [8, 0, false] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Kilin, Mhordred, Filena e Balastrus se juntaram ao grupo do jogador."] },
+            { "code": 126, "indent": 0, "parameters": [1, 0, 0, 1] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Balastrus recebeu: Decreto real!"] },
+            { "code": 201, "indent": 0, "parameters": [0, 3, 15, 35, 0, 0] },
+            { "code": 123, "indent": 0, "parameters": ["A", 0] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -1872,9 +1776,38 @@
           "through": false,
           "trigger": 3,
           "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
         }
       ],
-      "x": 1,
+      "x": 2,
       "y": 0
     },
     {
@@ -1896,47 +1829,20 @@
             "switch2Valid": false,
             "variableId": 35,
             "variableValid": true,
-            "variableValue": 3
+            "variableValue": 5
           },
           "directionFix": false,
           "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
           "list": [
             {
-              "code": 205,
+              "code": 357,
               "indent": 0,
-              "parameters": [19, { "list": [{ "code": 45, "parameters": ["Move to: 10,10"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }]
+              "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusTargetEvent", "Camera: Focus Target Event", { "EventID:eval": "6", "Duration:num": "150", "EasingType:str": "InOutSine" }]
             },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 10,10"], "indent": null }] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [-1, { "list": [{ "code": 45, "parameters": ["Move to: 11,10"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 11,10"], "indent": null }] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [20, { "list": [{ "code": 45, "parameters": ["Move to: 9,10"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 9,10"], "indent": null }] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [22, { "list": [{ "code": 45, "parameters": ["Move to: 10,11"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 10,11"], "indent": null }] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [23, { "list": [{ "code": 45, "parameters": ["Move to: 9,11"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 9,11"], "indent": null }] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [24, { "list": [{ "code": 45, "parameters": ["Move to: 11,11"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 11,11"], "indent": null }] },
+            { "code": 657, "indent": 0, "parameters": ["Event ID = 6"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 150"] },
+            { "code": 657, "indent": 0, "parameters": ["Easing Type = InOutSine"] },
+            { "code": 357, "indent": 0, "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusWait", "Camera: Wait for Focus", {}] },
             {
               "code": 357,
               "indent": 0,
@@ -1948,7 +1854,7 @@
                   "PictureID:eval": "1",
                   "PictureName:str": "People3_1",
                   "Origin:str": "Bust",
-                  "Position:num": "0",
+                  "Position:num": "5",
                   "StartOffsetX:eval": "-200",
                   "StartOffsetY:eval": "+0",
                   "EasingType:str": "OutSine",
@@ -1960,15 +1866,43 @@
             { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
             { "code": 657, "indent": 0, "parameters": ["Picture File = People3_1"] },
             { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 0"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 5"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
             { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
             { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Eu já disse  que tenho tudo sobre controle!"] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"3-A\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Eu sou o REI!\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Dambur discute com o conselho e insiste ter tudo sobre controle.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\"]",
+                  "EndOffsetX:eval": "-200",
+                  "EndOffsetY:eval": "+0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\"]"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
+            { "code": 230, "indent": 0, "parameters": [20] },
             {
               "code": 357,
               "indent": 0,
@@ -1977,7 +1911,7 @@
                 "Basic_EnterBust",
                 "BASIC: Enter Bust",
                 {
-                  "PictureID:eval": "3",
+                  "PictureID:eval": "2",
                   "PictureName:str": "People1_5",
                   "Origin:str": "Bust",
                   "Position:num": "10",
@@ -1989,7 +1923,7 @@
                 }
               ]
             },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 3"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
             { "code": 657, "indent": 0, "parameters": ["Picture File = People1_5"] },
             { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = 10"] },
@@ -1998,11 +1932,12 @@
             { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
             { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [45, 45, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 5, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["O número de ataques está aumentando a cada dia,"] },
-            { "code": 401, "indent": 0, "parameters": ["majestade. Já não há mais possibilidade de acordo."] },
-            { "code": 401, "indent": 0, "parameters": ["Eles planejam destituí-lo do poder."] },
+            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"3-B\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Revolução\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Tate, do conselho, rebate as falas do imperador lembrando das revoluções que estão acontecendo em Gildrat.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            { "code": 230, "indent": 0, "parameters": [20] },
             {
               "code": 357,
               "indent": 0,
@@ -2011,10 +1946,10 @@
                 "Basic_EnterBust",
                 "BASIC: Enter Bust",
                 {
-                  "PictureID:eval": "2",
+                  "PictureID:eval": "3",
                   "PictureName:str": "Portraits/Principal/Tordan",
                   "Origin:str": "Bust",
-                  "Position:num": "3",
+                  "Position:num": "1",
                   "StartOffsetX:eval": "-200",
                   "StartOffsetY:eval": "+0",
                   "EasingType:str": "OutSine",
@@ -2023,20 +1958,20 @@
                 }
               ]
             },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 3"] },
             { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Tordan"] },
             { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 3"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 1"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
             { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
             { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Vocês ousam questionar as decisões do seu imperador?"] },
-            { "code": 401, "indent": 0, "parameters": ["Isto é vergonhoso, este conselho está fora de controle e eu,"] },
-            { "code": 401, "indent": 0, "parameters": ["como seu líder, peço perdão em nome de todos, majestade."] },
+            { "code": 121, "indent": 0, "parameters": [45, 45, 0] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"3-C\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Mão do Imperador\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Tordan se enfurece, como líder do conselho, já que os outros membros ousaram confrontar o imperador.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             {
               "code": 357,
               "indent": 0,
@@ -2067,76 +2002,15 @@
             { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [46, 46, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Nossa intenção não é desafiá-lo, imperador. Estamos querendo"] },
-            { "code": 401, "indent": 0, "parameters": ["apenas garantir que o senhor veja a situação como ela realmente"] },
-            { "code": 401, "indent": 0, "parameters": ["é, gravíssima! Não podemos tratar isso com levianidade!"] },
-            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Parece que meus convidados finalmente chegaram. Vejamos"] },
-            { "code": 401, "indent": 0, "parameters": ["o que o pontífice da ciência e tecnologia tem a dizer "] },
-            { "code": 401, "indent": 0, "parameters": ["sobre isso. Abram caminho!"] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"3-D\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Sem saída\""] },
             {
-              "code": 357,
+              "code": 122,
               "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_ExitBusts",
-                "BASIC: Exit Bust(s)",
-                {
-                  "PictureID:arrayeval": "[\"1\",\"2\",\"3\",\"4\"]",
-                  "EndOffsetX:eval": "200",
-                  "EndOffsetY:eval": "+0",
-                  "EasingType:str": "InSine",
-                  "FlipDirection:str": "None",
-                  "Duration:eval": "20",
-                  "AutoErase:eval": "true"
-                }
-              ]
+              "parameters": [103, 103, 0, 4, "\"Lucius intervém, não é o cenário ideal nem o movimento mais prudente, mas eles estão quase sem saída e Dambur precisa saber disso.\""]
             },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\",\"2\",\"3\",\"4\"]"] },
-            { "code": 657, "indent": 0, "parameters": ["End Offset X = 200"] },
-            { "code": 657, "indent": 0, "parameters": ["End Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                8,
-                { "list": [{ "code": 45, "parameters": ["Move to: 7,8"], "indent": null }, { "code": 18, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }
-              ]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 7,8"], "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 18, "indent": null }] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                9,
-                { "list": [{ "code": 45, "parameters": ["Move to: 7,9"], "indent": null }, { "code": 18, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }
-              ]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 7,9"], "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 18, "indent": null }] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                16,
-                { "list": [{ "code": 45, "parameters": ["Move to: 13,8"], "indent": null }, { "code": 17, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
-              ]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 13,8"], "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 17, "indent": null }] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [19, { "list": [{ "code": 45, "parameters": ["Move to: 10,8"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 10,8"], "indent": null }] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            { "code": 230, "indent": 0, "parameters": [20] },
             {
               "code": 357,
               "indent": 0,
@@ -2148,11 +2022,11 @@
                   "PictureID:eval": "1",
                   "PictureName:str": "People3_1",
                   "Origin:str": "Bust",
-                  "Position:num": "0",
+                  "Position:num": "3",
                   "StartOffsetX:eval": "-200",
                   "StartOffsetY:eval": "+0",
                   "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
+                  "HorzMirror:str": "Auto",
                   "Duration:eval": "20"
                 }
               ]
@@ -2160,150 +2034,17 @@
             { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
             { "code": 657, "indent": 0, "parameters": ["Picture File = People3_1"] },
             { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 0"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 5, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Tibério Balastro. É sempre bom te ver! Agora diga, meu "] },
-            { "code": 401, "indent": 0, "parameters": ["velho amigo, como a última expedição se saiu? Não aceito"] },
-            { "code": 401, "indent": 0, "parameters": ["menos do que notícias excelentes."] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "2",
-                  "PictureName:str": "Portraits/Principal/Balastrus",
-                  "Origin:str": "Bust",
-                  "Position:num": "10",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Balastrus"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 10"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 6, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["É ótimo ouvir isso, majestade, pois é exatamente o que "] },
-            { "code": 401, "indent": 0, "parameters": ["eu tenho para anunciar. Notícias maravilhosas, pela primeira"] },
-            { "code": 401, "indent": 0, "parameters": ["vez em muitos invernos, voltamos a encontrar Sigmetal!"] },
-            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 5, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Viram só? Eu disse que vocês estavam se preocupando atoa. "] },
-            { "code": 401, "indent": 0, "parameters": ["Ninguém pode desafiar a coroa, pois quem controla "] },
-            { "code": 401, "indent": 0, "parameters": ["os minérios, controla tudo!"] },
-            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 6, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Perfeitamente, majestade."] },
-            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Agora conte, onde foi que você encontrou o"] },
-            { "code": 401, "indent": 0, "parameters": ["Sigmetal?!"] },
-            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 6, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Na mina de Kravens, senhor. Tusk, meu braço direito e Thorin,"] },
-            { "code": 401, "indent": 0, "parameters": ["nosso mais novo minerador, sob o comando dele, conseguiram"] },
-            { "code": 401, "indent": 0, "parameters": ["extrair com sucesso o Sigmetal."] },
-            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["E quem seria esse Thorin?!"] },
-            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 6, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["O herdeiro da família Forjaprata, filho de Tordan, sua mão."] },
-            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Isso é impressionante, garoto! Venha até aqui."] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [-1, { "list": [{ "code": 45, "parameters": ["Move to: 11,8"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 11,8"], "indent": null }] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "3",
-                  "PictureName:str": "Portraits/Principal/Thorin Armadura Helmet",
-                  "Origin:str": "Bust",
-                  "Position:num": "7",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 3"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Thorin Armadura Helmet"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 7"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [45, 45, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 4, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["É uma honra, majestade."] },
-            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Tenho que reconhecer, os Forjaprata nunca decepcionam."] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "4",
-                  "PictureName:str": "Portraits/Principal/Tordan",
-                  "Origin:str": "Bust",
-                  "Position:num": "3",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 4"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Tordan"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = 3"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
             { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [46, 46, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Está tudo no sangue, imperador!"] },
+            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"3-E\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Gildrat não será desafiada!\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Dambur vocifera dizendo que Gildrat não será desafiada por alguns rebeldes que se cansaram de trabalhar.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             {
               "code": 357,
               "indent": 0,
@@ -2329,40 +2070,149 @@
             { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
+            { "code": 357, "indent": 0, "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusPlayer", "Camera: Focus Player", { "Duration:num": "120", "EasingType:str": "InOutSine" }] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 120"] },
+            { "code": 657, "indent": 0, "parameters": ["Easing Type = InOutSine"] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                19,
+                { "list": [{ "code": 45, "parameters": ["Move to: 10,7"], "indent": null }, { "code": 19, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }
+              ]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 10,7"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 19, "indent": null }] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                -1,
+                { "list": [{ "code": 45, "parameters": ["Move to: 9,8"], "indent": null }, { "code": 19, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }
+              ]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 9,8"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 19, "indent": null }] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [22, { "list": [{ "code": 45, "parameters": ["Move to: 10,9"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 10,9"], "indent": null }] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [23, { "list": [{ "code": 45, "parameters": ["Move to:11,9"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to:11,9"], "indent": null }] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "People3_1",
+                  "Origin:str": "Bust",
+                  "Position:num": "1",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = People3_1"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"3-F\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Convidados\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Dambur percebe a presença de Balastrus e dos outros.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            { "code": 230, "indent": 0, "parameters": [20] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "2",
+                  "PictureName:str": "Portraits/Principal/Balastrus",
+                  "Origin:str": "Bust",
+                  "Position:num": "9",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Balastrus"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 9"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"3-G\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Resultados/Sigmetal\""] },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [103, 103, 0, 4, "\"Balastrus conta sobre o resultado das expedições, podendo falar ou não do Sigmetal com base nas decisões que o jogador tomou.\""]
+            },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            { "code": 230, "indent": 0, "parameters": [20] },
+            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"3-H\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Salvo pelo gongo\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Dambur usa o relatório de êxito nas minas de Balastrus para reafirmar que tem tudo sobre controle.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\",\"2\"]",
+                  "EndOffsetX:eval": "-200",
+                  "EndOffsetY:eval": "+0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\",\"2\"]"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
             { "code": 221, "indent": 0, "parameters": [] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                22,
-                { "list": [{ "code": 45, "parameters": ["Move to: 8,12"], "indent": null }, { "code": 18, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }
-              ]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 8,12"], "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 18, "indent": null }] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                23,
-                { "list": [{ "code": 45, "parameters": ["Move to: 8,13"], "indent": null }, { "code": 18, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }
-              ]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 8,13"], "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 18, "indent": null }] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                24,
-                { "list": [{ "code": 45, "parameters": ["Move to: 12,12"], "indent": null }, { "code": 17, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
-              ]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 12,12"], "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 17, "indent": null }] },
-            { "code": 122, "indent": 0, "parameters": [35, 35, 0, 0, 4] },
-            { "code": 214, "indent": 0, "parameters": [] },
+            { "code": 122, "indent": 0, "parameters": [35, 35, 0, 0, 6] },
             { "code": 222, "indent": 0, "parameters": [] },
+            { "code": 123, "indent": 0, "parameters": ["A", 0] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -2373,6 +2223,525 @@
           "stepAnime": false,
           "through": false,
           "trigger": 3,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 35,
+            "variableValid": true,
+            "variableValue": 6
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusTargetEvent", "Camera: Focus Target Event", { "EventID:eval": "27", "Duration:num": "150", "EasingType:str": "InOutSine" }]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Event ID = 27"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 150"] },
+            { "code": 657, "indent": 0, "parameters": ["Easing Type = InOutSine"] },
+            { "code": 357, "indent": 0, "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusWait", "Camera: Wait for Focus", {}] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                25,
+                { "list": [{ "code": 45, "parameters": ["Move to: 10,11"], "indent": null }, { "code": 19, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }
+              ]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 10,11"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 19, "indent": null }] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                27,
+                { "list": [{ "code": 45, "parameters": ["Move to: 10,12"], "indent": null }, { "code": 19, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
+              ]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 10,12"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 19, "indent": null }] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "People3_7",
+                  "Origin:str": "Bust",
+                  "Position:num": "5",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = People3_7"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 5"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"4-A\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Dinamite não é um brinquedo de crianças\""] },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                103,
+                103,
+                0,
+                4,
+                "\"Um dos guardas de Kravens interrompe a reunião do conselho, dizendo que houve uma ocorrência nos arredores da Mina de Kravens. Filena foi pega com explosivos, que confessou ter roubado e causou um alvoroço entre os guardas.\""
+              ]
+            },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\"]",
+                  "EndOffsetX:eval": "-200",
+                  "EndOffsetY:eval": "+0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\"]"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
+            { "code": 357, "indent": 0, "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusPlayer", "Camera: Focus Player", { "Duration:num": "120", "EasingType:str": "InOutSine" }] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 120"] },
+            { "code": 657, "indent": 0, "parameters": ["Easing Type = InOutSine"] },
+            { "code": 205, "indent": 0, "parameters": [-1, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
+            { "code": 205, "indent": 0, "parameters": [19, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
+            { "code": 205, "indent": 0, "parameters": [22, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
+            { "code": 205, "indent": 0, "parameters": [23, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
+            { "code": 205, "indent": 0, "parameters": [7, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
+            { "code": 205, "indent": 0, "parameters": [8, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
+            { "code": 205, "indent": 0, "parameters": [16, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
+            { "code": 205, "indent": 0, "parameters": [9, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
+            { "code": 213, "indent": 0, "parameters": [-1, 1, true] },
+            { "code": 230, "indent": 0, "parameters": [15] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "People3_1",
+                  "Origin:str": "Bust",
+                  "Position:num": "1",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = People3_1"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"4-B\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Quem você pensa que é?!\""] },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [103, 103, 0, 4, "\"Dambur diz que se Filena roubou do império, então roubou diretamente dele, pois tudo no império o pertence, ele fica furioso.\""]
+            },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            { "code": 230, "indent": 0, "parameters": [20] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "2",
+                  "PictureName:str": "Portraits/Principal/Balastrus",
+                  "Origin:str": "Bust",
+                  "Position:num": "3",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Balastrus"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 3"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"4-C\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"A senhorita é uma espertinha!\""] },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                103,
+                103,
+                0,
+                4,
+                "\"Balastrus fica impressionado e questiona filena sobre onde encontrou a dinamite e como conseguiu passar pelos sistemas de segurança sofisticados dele.\""
+              ]
+            },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            { "code": 230, "indent": 0, "parameters": [20] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "3",
+                  "PictureName:str": "Portraits/Principal/Filena_briga",
+                  "Origin:str": "Bust",
+                  "Position:num": "7",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 3"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Filena_briga"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 7"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [45, 45, 0] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"4-D\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Porcos opressores!\""] },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                103,
+                103,
+                0,
+                4,
+                "\"Filena não responde a pergunta de Balastrus, mas chama todo conselho e o imperador de porcos opressores. Ela fala sobre a situação em que as castas mais pobres de anões se encontram e também sobre o deslizamento, que seus companheiros estão presos e ainda assim ninguém liga, pois parecem valer menos do que uma Pedra-lúmem para a nobreza.\""
+              ]
+            },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            { "code": 230, "indent": 0, "parameters": [20] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "4",
+                  "PictureName:str": "People3_7",
+                  "Origin:str": "Bust",
+                  "Position:num": "9",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 4"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = People3_7"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 9"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [46, 46, 0] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"4-E\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Eu vou silenciá-la!\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"O guarda diz que se Filena não se calar e desrespeitar o imperador e o conselho novamente, ele mesmo irá silênciá-la.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\",\"2\",\"3\",\"4\"]",
+                  "EndOffsetX:eval": "-200",
+                  "EndOffsetY:eval": "+0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\",\"2\",\"3\",\"4\"]"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
+            { "code": 230, "indent": 0, "parameters": [35] },
+            { "code": 213, "indent": 0, "parameters": [-1, 7, true] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Principal/Thorin Armadura Hemet_raiva",
+                  "Origin:str": "Bust",
+                  "Position:num": "5",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Thorin Armadura Hemet_ra…"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 5"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"4-F\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Thorin ao resgate!\""] },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                103,
+                103,
+                0,
+                4,
+                "\"Thorin não consegue mais se conter e desafia o guarda para uma batalha. Ele diz que não irá permitir que ele toque em Filena. Seu pai, Tordan, tenta impedir, mas Dambur acha que isso será um bom entretenimento.\""
+              ]
+            },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\"]",
+                  "EndOffsetX:eval": "-200",
+                  "EndOffsetY:eval": "+0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\"]"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                22,
+                { "list": [{ "code": 45, "parameters": ["Move to: 14,9"], "indent": null }, { "code": 17, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }
+              ]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 14,9"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 17, "indent": null }] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                23,
+                { "list": [{ "code": 45, "parameters": ["Move to: 7,9"], "indent": null }, { "code": 18, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }
+              ]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 7,9"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 18, "indent": null }] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                25,
+                { "list": [{ "code": 45, "parameters": ["Move to: 8,13"], "indent": null }, { "code": 18, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }
+              ]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 8,13"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 18, "indent": null }] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [6, { "list": [{ "code": 45, "parameters": ["Move to: 10,9"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 10,9"], "indent": null }] },
+            { "code": 213, "indent": 0, "parameters": [6, 1, true] },
+            { "code": 213, "indent": 0, "parameters": [7, 5, true] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                27,
+                { "list": [{ "code": 45, "parameters": ["Move to: 12,13"], "indent": null }, { "code": 17, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
+              ]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 12,13"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 17, "indent": null }] },
+            { "code": 221, "indent": 0, "parameters": [] },
+            { "code": 122, "indent": 0, "parameters": [35, 35, 0, 0, 7] },
+            { "code": 222, "indent": 0, "parameters": [] },
+            { "code": 123, "indent": 0, "parameters": ["B", 0] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 3,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "B",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
           "walkAnime": true
         },
         {
@@ -2427,7 +2796,7 @@
             "switch2Valid": false,
             "variableId": 35,
             "variableValid": true,
-            "variableValue": 2
+            "variableValue": 3
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Principal/$Balastrus", "direction": 8, "pattern": 1, "characterIndex": 0 },
@@ -2446,44 +2815,7 @@
       "x": 10,
       "y": 17
     },
-    {
-      "id": 20,
-      "name": "Tusk",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 35,
-            "variableValid": true,
-            "variableValue": 2
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Principal/$Tusk", "direction": 8, "pattern": 1, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 9,
-      "y": 17
-    },
+    null,
     {
       "id": 21,
       "name": "Teleporte (Distrito Residencial Nobre)",
@@ -2545,7 +2877,7 @@
             "switch2Valid": false,
             "variableId": 35,
             "variableValid": true,
-            "variableValue": 2
+            "variableValue": 3
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Principal/$Kilin", "direction": 8, "pattern": 1, "characterIndex": 0 },
@@ -2561,7 +2893,7 @@
           "walkAnime": true
         }
       ],
-      "x": 10,
+      "x": 11,
       "y": 18
     },
     {
@@ -2583,7 +2915,7 @@
             "switch2Valid": false,
             "variableId": 35,
             "variableValid": true,
-            "variableValue": 2
+            "variableValue": 3
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Principal/$Mhordred", "direction": 8, "pattern": 1, "characterIndex": 0 },
@@ -2602,44 +2934,7 @@
       "x": 9,
       "y": 18
     },
-    {
-      "id": 24,
-      "name": "Tarok",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 35,
-            "variableValid": true,
-            "variableValue": 2
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Principal/$Tharok", "direction": 8, "pattern": 1, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 11,
-      "y": 18
-    },
+    null,
     {
       "id": 25,
       "name": "Filena",
@@ -2659,7 +2954,7 @@
             "switch2Valid": false,
             "variableId": 35,
             "variableValid": true,
-            "variableValue": 4
+            "variableValue": 6
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Principal/$Filena", "direction": 8, "pattern": 1, "characterIndex": 0 },
@@ -2676,7 +2971,7 @@
         }
       ],
       "x": 10,
-      "y": 13
+      "y": 15
     },
     {
       "id": 26,
@@ -2739,7 +3034,7 @@
             "switch2Valid": false,
             "variableId": 35,
             "variableValid": true,
-            "variableValue": 4
+            "variableValue": 6
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Actor3", "direction": 8, "pattern": 1, "characterIndex": 6 },
@@ -2753,10 +3048,145 @@
           "through": false,
           "trigger": 0,
           "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 35,
+            "variableValid": true,
+            "variableValue": 7
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Actor3", "direction": 8, "pattern": 1, "characterIndex": 6 },
+          "list": [
+            { "code": 212, "indent": 0, "parameters": [0, 65, true] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "People3_7",
+                  "Origin:str": "Bust",
+                  "Position:num": "5",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = People3_7"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 5"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"5-A\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Eu vou acabar com você, garoto!\""] },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [103, 103, 0, 4, "\"O Guarda ativa suas habilidades, uma demonstração de seu poder a Thorin para abalar o jovem anão antes mesmo da luta começar.\""]
+            },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\"]",
+                  "EndOffsetX:eval": "-200",
+                  "EndOffsetY:eval": "+0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\"]"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
+            { "code": 301, "indent": 0, "parameters": [0, 19, false, true] },
+            { "code": 601, "indent": 0, "parameters": [] },
+            { "code": 230, "indent": 1, "parameters": [45] },
+            { "code": 221, "indent": 1, "parameters": [] },
+            { "code": 122, "indent": 1, "parameters": [35, 35, 0, 0, 8] },
+            { "code": 222, "indent": 1, "parameters": [] },
+            { "code": 123, "indent": 1, "parameters": ["A", 0] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 603, "indent": 0, "parameters": [] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 604, "indent": 0, "parameters": [] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Actor3", "direction": 8, "pattern": 0, "characterIndex": 6 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
         }
       ],
       "x": 10,
-      "y": 14
+      "y": 16
     },
     {
       "id": 28,
