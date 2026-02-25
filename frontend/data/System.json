@@ -40,11 +40,7 @@
   "boat": { "bgm": { "name": "Ship1", "pan": 0, "pitch": 100, "volume": 90 }, "characterIndex": 0, "characterName": "Vehicle", "startMapId": 0, "startX": 0, "startY": 0 },
   "currencyUnit": "Ludos",
   "defeatMe": { "name": "Defeat1", "pan": 0, "pitch": 100, "volume": 90 },
-<<<<<<< HEAD
-  "editMapId": 40,
-=======
   "editMapId": 17,
->>>>>>> 6338cfcd4011ac935469be44c223e5308c5030ac
   "elements": ["", "Físico", "Fogo", "Gelo", "Trovão", "Água", "Terra", "Vento", "Luz", "Trevas"],
   "equipTypes": ["", "Arma", "Escudo", "Cabeça", "Corpo", "Acessório"],
   "gameTitle": "Daratrine - A Origem",
@@ -92,15 +88,9 @@
     { "name": "Item3", "pan": 0, "pitch": 100, "volume": 90 },
     { "name": "Item3", "pan": 0, "pitch": 100, "volume": 90 }
   ],
-<<<<<<< HEAD
-  "startMapId": 7,
-  "startX": 12,
-  "startY": 25,
-=======
   "startMapId": 3,
   "startX": 16,
   "startY": 27,
->>>>>>> 6338cfcd4011ac935469be44c223e5308c5030ac
   "switches": [
     "",
     "Jogada segura",
@@ -340,7 +330,7 @@
     "hora_de_crescer_progress",
     "v_q_minerador_aprendiz_progress",
     "v_q_travessia_perigosa_progress",
-    "v_q_voz_conselho_progress",
+    "",
     "",
     "",
     "",
@@ -417,11 +407,7 @@
     "",
     ""
   ],
-<<<<<<< HEAD
-  "versionId": 43818988,
-=======
   "versionId": 39722390,
->>>>>>> 6338cfcd4011ac935469be44c223e5308c5030ac
   "victoryMe": { "name": "Victory1", "pan": 0, "pitch": 100, "volume": 90 },
   "weaponTypes": ["", "Adaga", "Espada", "Malho", "Machado", "Chicote", "Cajado", "Arco", "Funda", "Arma de Fogo", "Garra", "Luva", "Lança", ""],
   "windowTone": [0, 0, 0, 0],
