@@ -127,8 +127,6 @@
             { "code": 401, "indent": 1, "parameters": ["Filena entrou no grupo."] },
             { "code": 111, "indent": 1, "parameters": [8, 11] },
             { "code": 355, "indent": 2, "parameters": ["SQSM.AddQuest(\"resgatarBorin\");"] },
-            { "code": 655, "indent": 2, "parameters": ["SQSM.ShowTaskForQuest(\"resgatarBorin\", 1);"] },
-            { "code": 655, "indent": 2, "parameters": ["SQSM.CompleteTaskForQuest(\"resgatarBorin\", 1);"] },
             { "code": 655, "indent": 2, "parameters": ["SQSM.ShowTaskForQuest(\"resgatarBorin\", 2);"] },
             { "code": 655, "indent": 2, "parameters": ["SQSM.OpenQuestJournal()"] },
             { "code": 0, "indent": 2, "parameters": [] },
