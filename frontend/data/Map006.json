@@ -1909,14 +1909,13 @@
             "switch2Valid": false,
             "variableId": 29,
             "variableValid": true,
-            "variableValue": 0
+            "variableValue": 1
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Principal/$Melia", "direction": 4, "pattern": 1, "characterIndex": 0 },
           "list": [
-            { "code": 322, "indent": 0, "parameters": [3, "", 0, "Portraits menores/Principal2", 2, "Thorin"] },
-            { "code": 223, "indent": 0, "parameters": [[-68, -68, 0, 68], 1, false] },
             { "code": 241, "indent": 0, "parameters": [{ "name": "Theme3", "volume": 55, "pitch": 50, "pan": 0 }] },
+            { "code": 222, "indent": 0, "parameters": [] },
             { "code": 205, "indent": 0, "parameters": [12, { "list": [{ "code": 39, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }] },
             { "code": 505, "indent": 0, "parameters": [{ "code": 39, "indent": null }] },
             { "code": 357, "indent": 0, "parameters": ["PKD_AnimaX", "PlayAnimationAction", "Play Anima Action", { "actionName": "Sleeping", "eventId": "0", "isLoop": "true", "isWait": "false" }] },
@@ -1925,7 +1924,6 @@
             { "code": 657, "indent": 0, "parameters": ["Is Looping? = true"] },
             { "code": 657, "indent": 0, "parameters": ["Is Wait? = false"] },
             { "code": 230, "indent": 0, "parameters": [60] },
-            { "code": 222, "indent": 0, "parameters": [] },
             { "code": 230, "indent": 0, "parameters": [120] },
             {
               "code": 357,
@@ -1936,7 +1934,7 @@
                 "BASIC: Enter Bust",
                 {
                   "PictureID:eval": "1",
-                  "PictureName:str": "Portraits/Principal/MÃƒÂ©lia_desespero",
+                  "PictureName:str": "Portraits/Principal/Mélia_desespero",
                   "Origin:str": "Bust",
                   "Position:num": "5",
                   "StartOffsetX:eval": "-200",
@@ -1948,7 +1946,7 @@
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/MÃƒÂ©lia_desespero"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Mélia_desespero"] },
             { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = 5"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
@@ -2005,11 +2003,11 @@
             { "code": 242, "indent": 0, "parameters": [60] },
             { "code": 221, "indent": 0, "parameters": [] },
             { "code": 235, "indent": 0, "parameters": [1] },
-            { "code": 205, "indent": 0, "parameters": [12, { "list": [{ "code": 40, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 40, "indent": null }] },
             { "code": 223, "indent": 0, "parameters": [[0, 0, 0, 0], 1, false] },
             { "code": 241, "indent": 0, "parameters": [{ "name": "Town1", "volume": 50, "pitch": 100, "pan": 0 }] },
             { "code": 230, "indent": 0, "parameters": [120] },
+            { "code": 205, "indent": 0, "parameters": [12, { "list": [{ "code": 40, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 40, "indent": null }] },
             { "code": 222, "indent": 0, "parameters": [] },
             {
               "code": 205,
@@ -2027,7 +2025,7 @@
                 "BASIC: Enter Bust",
                 {
                   "PictureID:eval": "1",
-                  "PictureName:str": "Portraits/Principal/SÃƒÂ¡paro_pistola",
+                  "PictureName:str": "Portraits/Principal/Sáparo_pistola",
                   "Origin:str": "Bust",
                   "Position:num": "9",
                   "StartOffsetX:eval": "-200",
@@ -2039,7 +2037,7 @@
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/SÃƒÂ¡paro_pistola"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Sáparo_pistola"] },
             { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = 9"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
@@ -2061,7 +2059,7 @@
                 "BASIC: Enter Bust",
                 {
                   "PictureID:eval": "2",
-                  "PictureName:str": "Portraits/Principal/Thorin_confusÃƒÂ£o",
+                  "PictureName:str": "Portraits/Principal/Thorin_confusão",
                   "Origin:str": "Bust",
                   "Position:num": "1",
                   "StartOffsetX:eval": "-200",
@@ -2073,7 +2071,7 @@
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Thorin_confusÃƒÂ£o"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Thorin_confusão"] },
             { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = 1"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
@@ -2218,10 +2216,8 @@
             { "code": 655, "indent": 0, "parameters": ["SQSM.ShowTaskForQuest(\"aSemifinal\", 1);"] },
             { "code": 655, "indent": 0, "parameters": ["SQSM.SetActiveQuest(\"aSemifinal\", true);"] },
             { "code": 655, "indent": 0, "parameters": ["SQSM.OpenQuestJournal()"] },
+            { "code": 122, "indent": 0, "parameters": [29, 29, 0, 0, 2] },
             { "code": 123, "indent": 0, "parameters": ["A", 0] },
-            { "code": 122, "indent": 0, "parameters": [29, 29, 0, 0, 1] },
-            { "code": 357, "indent": 0, "parameters": ["VisuMZ_1_EventsMoveCore", "PlayerMovementChange", "Player Movement: Control", { "Enable:eval": "true" }] },
-            { "code": 657, "indent": 0, "parameters": ["Enable? = true"] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -2231,7 +2227,7 @@
           "priorityType": 1,
           "stepAnime": false,
           "through": true,
-          "trigger": 1,
+          "trigger": 3,
           "walkAnime": false
         },
         {
@@ -2298,7 +2294,7 @@
                 "BASIC: Enter Bust",
                 {
                   "PictureID:eval": "1",
-                  "PictureName:str": "Portraits/Principal/MÃƒÂ©lia_alerta",
+                  "PictureName:str": "Portraits/Principal/Mélia_alerta",
                   "Origin:str": "Bust",
                   "Position:num": "5",
                   "StartOffsetX:eval": "-200",
@@ -2310,7 +2306,7 @@
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/MÃƒÂ©lia_alerta"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Mélia_alerta"] },
             { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = 5"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
@@ -2648,7 +2644,7 @@
     },
     {
       "id": 12,
-      "name": "SÃ¡paro",
+      "name": "Sáparo",
       "note": "",
       "pages": [
         {
@@ -2665,7 +2661,7 @@
             "switch2Valid": false,
             "variableId": 29,
             "variableValid": true,
-            "variableValue": 1
+            "variableValue": 2
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 1 },
@@ -2680,7 +2676,7 @@
                 "BASIC: Enter Bust",
                 {
                   "PictureID:eval": "1",
-                  "PictureName:str": "Portraits/Principal/SÃ¡paro_provocaÃ§Ã£o",
+                  "PictureName:str": "Portraits/Principal/Sáparo_provocação",
                   "Origin:str": "Bust",
                   "Position:num": "5",
                   "StartOffsetX:eval": "-200",
@@ -2692,7 +2688,7 @@
               ]
             },
             { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/SÃ¡paro_provocaÃ§Ã£o"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Sáparo_provocação"] },
             { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
             { "code": 657, "indent": 0, "parameters": ["Screen Position = 5"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
