@@ -1,4 +1,4 @@
-# Narrative Structure Document (NSD) - Fluxo Visual de Cenas
+# Narrative Structure Document (NSD) - Fluxo Visual De Cenas
 
 ## Quest: A Voz do Conselho
 
@@ -9,39 +9,33 @@
 - Importancia na campanha: Main
 - Arco narrativo: Encontro com o Mentor / Travessia do Primeiro Limiar
 - Quest anterior: A Travessia Perigosa
-- Conflito central: Thorin, agora reconhecido por Balastrus, e puxado para o centro do jogo politico de Damburr enquanto tenta entender a ausencia de Filena, dividindo-se entre lealdade, ambicao e
-  necessidade.
-- Objetivo narrativo global: Recompensar o jogador pela expedicao anterior, introduzir Balastrus no conselho imperial, posicionar Filena no conflito social e abrir o deslocamento para Melios.
-- Premissa resumida: A quest abre na Casa dos Forjaprata (Mapa 6), com Thorin acordando atrasado, sendo provocado por Saparo e percebendo que Tordan ainda nao voltou para casa. Com o alerta interno
-  ligado, ele corre para a taverna para receber o pagamento, onde descobre que Filena ja recebeu e partiu para outra expedicao.
-- Resumo: Na Casa dos Forjaprata (Mapa 6), Thorin acorda atrasado. Saparo tira sarro da situacao e lembra que ele ja devia estar na taverna. Antes de sair, Thorin nota a ausencia de Tordan e se
-  pergunta o que esta acontecendo. Thorin corre ate a Taverna de Gildrat e chega por ultimo para acertar contas da expedicao. Sem intermedio de Brutus (antigo Tusk), Balastrus conduz a cena e informa
-  que Filena ja pegou a parte dela e partiu com outro grupo. Thorin reage com raiva, se pergunta por que ela saiu tao rapido e pensa que queria ter ido junto; em seguida, engole o impulso e conclui
-  que ela devia estar precisando do dinheiro. Guardas imperiais interrompem o acerto e convocam Balastrus para o conselho de Damburr, levando Thorin junto. No castelo, a crise por rebelioes e escassez
-  de recursos domina a pauta. Filena surge acusada de sediacao, e Balastrus usa o caos para assegurar a concessao de Melios com Thorin na expedicao. Depois da audiencia, Thorin recebe liberdade para
-  se preparar na cidade, reencontra o grupo na Estrada do Cao Luar e segue para Melios. Na chegada, os Corvos bloqueiam o avanco apos relatarem um bloco estranho na mina. O confronto estoura, os
-  Corvos recuam e a clareira fica liberada para o proximo arco.
+- Conflito central: Depois de Kravens, Thorin entra no circuito politico de Gildrat, tenta reagir a ausencia de Filena e e forçado a seguir Balastrus entre conselho, decreto imperial e novo choque com
+  os Corvos.
+- Objetivo narrativo global: Conectar a volta de Kravens ao conselho imperial, transformar o conflito com Filena em pauta de estado e abrir a frente de Melios com confronto direto contra os Corvos.
+- Premissa resumida: Thorin desperta na Casa dos Forjaprata e percebe a ausencia incomum de Tordan. Na taverna, Balastrus paga a expedicao, revela que Filena partiu para tentar um resgate e convoca
+  Thorin para a reuniao do conselho. No castelo, o debate sobre crise social escala com a chegada de Filena acusada de roubo de dinamites. A crise vira combate, gera sentenca politica e culmina no
+  decreto para Melios. O grupo se reorganiza, avanca pela rota de Ekios e encontra os Corvos na entrada de Melios, onde a disputa por autoridade explode em batalha.
+- Resumo: Em casa (Mapa 6), Thorin e puxado por pressagios e pela ausencia de Tordan. Na taverna (Mapa 12), Balastrus liquida o pagamento, corta qualquer desvio de rota e leva Thorin para o castelo
+  via Distrito Residencial (Mapa 7). Na Sala do Conselho (Mapa 11), Dambur tenta sustentar o controle do imperio diante de revoltas. Filena invade o debate como acusada por uso de explosivos e
+  denuncia opressao; Thorin reage, a tensao vira confronto e a disputa abre espaco para Balastrus garantir Melios. Apos a audiencia, o grupo marcha por Ekios (Mapa 3), cruza para a entrada de Melios e
+  encontra os Corvos (Mapa 40). O decreto real e apresentado, a negociacao falha e o combate sela o fim da quest, liberando a progressao do arco seguinte.
 
 - Locais principais
-
   - Casa dos Forjaprata (Mapa 6)
-  - Taverna de Gildrat
-  - Castelo de Damburr (sala do conselho)
-  - Centro urbano de Gildrat (mercado)
-  - Estrada do Cao Luar
-  - Mapamundi (travessia para Melios)
-  - Clareira de Melios
-
+  - Taverna de Gildrat (Mapa 12)
+  - Distrito Residencial Nobre / acesso ao castelo (Mapa 7)
+  - Sala do Conselho de Gildrat (Mapa 11)
+  - Rota de Ekios / transicao para Melios (Mapa 3)
+  - Entrada de Melios / Clareira de Melios (Mapa 40)
 - NPCs principais
   - Thorin
-  - Saparo
   - Balastrus
   - Filena
-  - Damburr
-  - General Tordan
-  - Guardas reais (Kilin, Mhordred)
-  - Conselheiros de Damburr
-  - Corvos (grupo anao antagonista em Melios)
+  - Dambur
+  - Tordan
+  - Kilin
+  - Mhordred
+  - Corvinus e guarda dos Corvos
 
 ---
 
@@ -49,128 +43,122 @@
 
 - [x] Concluido
 
-| Tipo                        | Descricao                                                                                                   |
-| --------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| Flags / decisoes anteriores | Jogador concluiu a quest "A Travessia Perigosa".                                                            |
-| Limitacoes ou bloqueios     | Progressao para Melios depende da audiencia no conselho e do reencontro com o grupo na Estrada do Cao Luar. |
+| Tipo                        | Descricao                                                                                                                 |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Flags / Decisoes anteriores | Jogador concluiu a quest "A Travessia Perigosa"                                                                           |
+| Limitacoes ou bloqueios     | Progressao de cena depende da variavel `v_q_voz_conselho_progress` (v35), com avancos entre os mapas 6, 12, 7, 11, 3 e 40 |
 
 ---
 
 ### 3 Fluxo Visual Resumido (Checkpoint 2)
 
+- [x] Concluido
+
 ```plaintext
 Quest: A Voz do Conselho
- +-- Cena 1: Atraso na Casa dos Forjaprata (Mapa 6)
- |      +-- Beat 1: Thorin acorda atrasado
- |      +-- Beat 2: Saparo zoa Thorin e pressiona ida para a taverna
- |      +-- Beat 3: Thorin percebe ausencia de Tordan e estranha a situacao
- |      +-- Beat 4: Thorin corre para a Taverna de Gildrat
- +-- Cena 2: Pagamento na taverna e ausencia de Filena
- |      +-- Beat 1: Thorin chega por ultimo ao ponto de pagamento
- |      +-- Beat 2: Balastrus conduz o acerto sem Brutus/Tusk
- |      +-- Beat 3: Balastrus informa que Filena ja recebeu e partiu
- |      +-- Beat 4: Thorin reage (raiva, desejo de ir junto, racionalizacao pela necessidade de dinheiro)
- |      +-- Beat 5: Guardas convocam Balastrus ao conselho imperial
- +-- Cena 3: Convocacao e deslocamento ao castelo
- |      +-- Beat 1: Thorin e puxado junto por ordem de Tordan
- |      +-- Beat 2: Grupo atravessa uma cidade em tensao
- +-- Cena 4: Conselho de Damburr
- |      +-- Beat 1: Debate sobre rebelioes e escassez
- |      +-- Beat 2: Filena e apresentada como acusada
- |      +-- Beat 3: Balastrus transforma crise em concessao para Melios
- +-- Cena 5: Janela de preparacao em Gildrat
- |      +-- Beat 1: Thorin e liberado para equipar-se e gastar Drakeis
- +-- Cena 6: Reencontro e partida
- |      +-- Beat 1: Grupo se recompone na Estrada do Cao Luar
- |      +-- Beat 2: Travessia no mapamundi ate Melios
- +-- Cena 7: Melios e confronto com os Corvos
-        +-- Beat 1: Corvos relatam bloqueio por bloco estranho
-        +-- Beat 2: Escalada para boss fight
-        +-- Beat 3: Vitoria e abertura da clareira para o proximo arco
+ +-- Cena 1: Casa dos Forjaprata (Mapa 6)
+ |      +-- Beat 1: Pressagio, ausencia de Tordan e partida urgente
+ +-- Cena 2: Taverna de Gildrat (Mapa 12)
+ |      +-- Beat 1: Pagamento, noticia de Filena e convocacao ao conselho
+ +-- Cena 3: Distrito Residencial / caminho ao castelo (Mapa 7)
+ |      +-- Beat 1: Thorin e pressionado a encarar o conselho
+ +-- Cena 4: Conselho imperial - crise politica (Mapa 11)
+ |      +-- Beat 1: Debate sobre revoltas e tentativa de Dambur de manter controle
+ +-- Cena 5: Conselho imperial - caso Filena e decisao (Mapa 11)
+ |      +-- Beat 1: Filena e acusada, tensao vira combate e Balastrus garante Melios
+ +-- Cena 6: Reagrupamento e marcha para Melios (Mapa 3)
+ |      +-- Beat 1: Grupo reorganiza rota e avanca para a entrada de Melios
+ +-- Cena 7: Entrada de Melios - confronto com os Corvos (Mapa 40)
+        +-- Beat 1: Decreto e contestado, negociacao falha e combate encerra a quest
 ```
 
 #### Tabela de Cenas
 
-| #   | Nome da Cena                                  | Premissa resumida (expandida)                                                                                                                                            |
-| --- | --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 1   | **Atraso na Casa dos Forjaprata (Mapa 6)**    | Thorin acorda tarde, e Saparo o zoa por perder a hora. A ausencia de Tordan cria um sinal de alerta antes da corrida ate a taverna.                                      |
-| 2   | **Pagamento na taverna e ausencia de Filena** | Thorin chega por ultimo para receber sua parte da expedicao. Balastrus informa que Filena ja recebeu e partiu para outra frente, detonando o conflito interno de Thorin. |
-| 3   | **Convocacao e deslocamento ao castelo**      | Guardas interrompem o acerto e levam Balastrus ao conselho; Thorin segue junto para testemunhar o desdobramento politico.                                                |
-| 4   | **Conselho de Damburr**                       | O imperio debate rebelioes e recursos. Filena vira alvo oficial e Balastrus negocia a exploracao de Melios em meio a crise.                                              |
-| 5   | **Janela de preparacao em Gildrat**           | Thorin recebe uma pausa de gameplay para compras e ajustes antes da nova expedicao.                                                                                      |
-| 6   | **Reencontro e partida**                      | O grupo fecha formacao na Estrada do Cao Luar e inicia a travessia para Melios.                                                                                          |
-| 7   | **Melios e confronto com os Corvos**          | A chegada expoe o impasse da mina, escalando para combate e encerrando a quest com a area liberada.                                                                      |
+| #   | Nome da Cena                  | Premissa resumida (expandida)                                                                                         |
+| --- | ----------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| 1   | **Pressagio em Casa**         | Thorin desperta inquieto, percebe que Tordan nao voltou e e empurrado para agir rapido.                               |
+| 2   | **Acerto na Taverna**         | Balastrus paga a equipe, informa que Filena partiu para um resgate e arrasta Thorin para o conselho.                  |
+| 3   | **Antes do Conselho**         | No trajeto ao castelo, Kilin e Mhordred testam a postura de Thorin diante da pressao politica.                        |
+| 4   | **Crise no Conselho**         | Dambur e os conselheiros discutem revoltas, escassez e perda de controle do imperio.                                  |
+| 5   | **Filena no Centro da Crise** | A acusacao contra Filena explode em conflito; Thorin se envolve e Balastrus converte o caos em concessao para Melios. |
+| 6   | **Marcha para Melios**        | Com a decisao tomada, o grupo se recompone em rota e parte para a frente de Melios.                                   |
+| 7   | **Covil de Corvos**           | Corvinus rejeita a tomada da mina; Balastrus exibe o decreto e o impasse termina em batalha.                          |
 
 #### Beats por Cena
 
-##### Cena 1 - Ninho Vazio - Casa dos Forjaprata (Mapa 6)
+##### Cena 1 - Pressagio em Casa (Mapa 6)
 
-| ID  | Titulo                        | Premissa Resumida                                                                                          | Tipo |
-| --- | ----------------------------- | ---------------------------------------------------------------------------------------------------------- | ---- |
-| 1-A | Camarão que dorme a onde leva | Thorin tem outro pesadelo com a mãe e acaba dormindo demais, fazendo Balastrus esperar por ele na taverna. | CS   |
-| 1-B | Isso não é problema meu       | O Sáparo provoca Thorin e ri quando o garoto tenta se justificar para ele.                                 | CS   |
-| 1-C | A Mão do Imperador            | Thorin percebe que Tordan ainda não voltou para casa e estranha o sumiço.                                  | CS   |
-| 1-D | RUN, Thorin! RUN!             | Thorin encerra a cena saindo com urgência para Gildrat em direção à Taverna da Pedra Vulcânica.            | JOG  |
+| ID  | Titulo                        | Premissa Resumida                                                        | Tipo |
+| --- | ----------------------------- | ------------------------------------------------------------------------ | ---- |
+| 1-A | Ausencia                      | Thorin percebe que Tordan nao voltou para casa e estranha a situacao.    | JOG  |
+| 1-B | Pressagio                     | O sonho com Melia reforca urgencia e risco iminente.                     | CS   |
+| 1-C | Inquietacao                   | Thorin internaliza o peso dos sinais e decide agir.                      | CS   |
+| 1-D | Camarao que dorme a onda leva | Saparo provoca Thorin pelo atraso e lembra do compromisso com Balastrus. | CS   |
+| 1-E | RUN, Thorin! RUN!             | Thorin se prepara e sai correndo para a taverna.                         | JOG  |
 
-##### Cena 2 - Pagamento na taverna e ausencia de Filena
+##### Cena 2 - Acerto na Taverna (Mapa 12)
 
-| ID  | Titulo                    | Premissa Resumida                                                                                                                                        | Tipo |
-| --- | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
-| 2-A | Thorin por ultimo         | Thorin entra na taverna depois dos demais e percebe que o acerto ja estava em andamento.                                                                 | CS   |
-| 2-B | Balastrus sem intermedio  | Sem Brutus/Tusk na cena, Balastrus centraliza a cobranca e o pagamento.                                                                                  | CS   |
-| 2-C | Noticia sobre Filena      | Balastrus diz que Filena ja pegou o pagamento dela e partiu em outra expedicao.                                                                          | CS   |
-| 2-D | Ruptura interna de Thorin | Thorin se pergunta por que ela saiu tao rapido, pensa que queria ir tambem, se enfurece e depois racionaliza que ela devia estar precisando do dinheiro. | CS   |
-| 2-E | Gancho para o conselho    | Guardas imperiais chegam e convocam Balastrus imediatamente.                                                                                             | CS   |
+| ID  | Titulo                   | Premissa Resumida                                                           | Tipo |
+| --- | ------------------------ | --------------------------------------------------------------------------- | ---- |
+| 2-A | Foi sem querer querendo  | Thorin chega atrasado e tenta justificar a demora.                          | CS   |
+| 2-B | Tartaruga paralitica     | Balastrus corta as desculpas e reafirma hierarquia.                         | CS   |
+| 2-C | Choque de realidade      | Thorin recebe valor abaixo do esperado e questiona o contexto social.       | CS   |
+| 2-D | Super-heroina barata     | Balastrus diz que Filena saiu para um resgate em Kravens usando explosivos. | CS   |
+| 2-E | O mundo e dos gados      | Thorin quer ir atras de Filena, mas e interrompido.                         | CS   |
+| 2-F | Adolescentes apaixonados | Balastrus obriga Thorin a acompanha-lo para o conselho.                     | CS   |
+| 2-G | E hora do show           | Kilin sinaliza que a reuniao do conselho sera tensa.                        | CS   |
 
-##### Cena 3 - Convocacao e deslocamento ao castelo
+##### Cena 3 - Antes do Conselho (Mapa 7)
 
-| ID  | Titulo             | Premissa Resumida                                                               | Tipo |
-| --- | ------------------ | ------------------------------------------------------------------------------- | ---- |
-| 3-A | Ordem de marcha    | Thorin e Balastrus sao levados ao castelo por ordem de Tordan.                  | CS   |
-| 3-B | Cidade sob pressao | O trajeto mostra protestos e instabilidade social no entorno do poder imperial. | CS   |
+| ID  | Titulo             | Premissa Resumida                                                        | Tipo |
+| --- | ------------------ | ------------------------------------------------------------------------ | ---- |
+| 3-A | Coragem            | Kilin pressiona Thorin a sustentar o nome Forjaprata diante do conselho. | CS   |
+| 3-B | Covardia           | Mhordred provoca Thorin e aumenta a pressao pessoal.                     | CS   |
+| 3-C | Piada              | Thorin responde que nao vai fugir das responsabilidades.                 | CS   |
+| 3-D | Entrada no castelo | Grupo cruza o acesso do castelo e inicia a audiencia.                    | JOG  |
 
-##### Cena 4 - Conselho de Damburr
+##### Cena 4 - Crise no Conselho (Mapa 11)
 
-| ID  | Titulo                        | Premissa Resumida                                                                                 | Tipo |
-| --- | ----------------------------- | ------------------------------------------------------------------------------------------------- | ---- |
-| 4-A | Crise imperial                | Damburr e conselheiros discutem rebelioes e falta de recursos para conter o caos.                 | CS   |
-| 4-B | Filena acusada                | Filena e exposta como catalisadora de agitacao politica.                                          | CS   |
-| 4-C | Vitoria politica de Balastrus | Balastrus usa os resultados de Kravens e garante o direito de minerar Melios com Thorin no grupo. | CS   |
+| ID  | Titulo                      | Premissa Resumida                                                     | Tipo |
+| --- | --------------------------- | --------------------------------------------------------------------- | ---- |
+| 4-A | Eu sou o REI!               | Dambur impõe autoridade e nega perda de controle.                     | CS   |
+| 4-B | Revolucao                   | Conselheiros confrontam o discurso com revoltas em Gildrat.           | CS   |
+| 4-C | Mao do Imperador            | Tordan endurece o tom para sustentar o poder imperial.                | CS   |
+| 4-D | Sem saida                   | O conselho expoe falta de alternativas politicas e materiais.         | CS   |
+| 4-E | Gildrat nao sera desafiada! | Dambur dobra a aposta contra os rebeldes.                             | CS   |
+| 4-F | Convidados                  | Dambur nota Balastrus e autoriza o relatorio da expedicao.            | CS   |
+| 4-G | Resultados/Sigmetal         | Balastrus apresenta resultados de Kravens e sua vantagem operacional. | CS   |
+| 4-H | Salvo pelo gongo            | O relatorio vira escudo politico para Dambur encerrar a pressao.      | CS   |
 
-##### Cena 5 - Janela de preparacao em Gildrat
+##### Cena 5 - Filena no Centro da Crise (Mapa 11)
 
-| ID  | Titulo               | Premissa Resumida                                                     | Tipo |
-| --- | -------------------- | --------------------------------------------------------------------- | ---- |
-| 5-A | Liberdade controlada | Thorin recebe tempo para circular no mercado e preparar o inventario. | JOG  |
+| ID  | Titulo                               | Premissa Resumida                                                               | Tipo |
+| --- | ------------------------------------ | ------------------------------------------------------------------------------- | ---- |
+| 5-A | Dinamite nao e brinquedo de criancas | Guardas interrompem a sessao e apresentam a ocorrencia com Filena e explosivos. | CS   |
+| 5-B | Quem voce pensa que e?!              | Dambur reage como ofensa direta ao imperio.                                     | CS   |
+| 5-C | A senhorita e uma espertinha!        | Balastrus interroga Filena sobre acesso a dinamites.                            | CS   |
+| 5-D | Porcos opressores!                   | Filena acusa o sistema de castas e denuncia abandono dos trabalhadores presos.  | CS   |
+| 5-E | Eu vou silencia-la!                  | Um guarda ameaca calar Filena a forca.                                          | CS   |
+| 5-F | Thorin ao resgate!                   | Thorin desafia o guarda para impedir agressao contra Filena.                    | CS   |
+| 5-G | Eu vou acabar com voce, garoto!      | O guarda impõe confronto e a disputa vira batalha.                              | JOG  |
+| 5-H | Xeque-mate politico                  | Apos o choque, Balastrus negocia a concessao de Melios com Thorin na expedicao. | CS   |
 
-##### Cena 6 - Reencontro e partida
+##### Cena 6 - Marcha para Melios (Mapa 3)
 
-| ID  | Titulo                | Premissa Resumida                                                        | Tipo |
-| --- | --------------------- | ------------------------------------------------------------------------ | ---- |
-| 6-A | Reagrupamento         | Thorin encontra Balastrus, Filena, Kilin e Mhordred no ponto de partida. | CS   |
-| 6-B | Travessia para Melios | O grupo inicia deslocamento no mapamundi ate a zona da mina.             | JOG  |
+| ID  | Titulo             | Premissa Resumida                                                      | Tipo |
+| --- | ------------------ | ---------------------------------------------------------------------- | ---- |
+| 6-A | Pe na estrada      | Balastrus apressa o grupo e antecipa resistencia dos Corvos em Melios. | CS   |
+| 6-B | Travessia de Ekios | O grupo segue pela rota de transicao ate a entrada de Melios.          | JOG  |
 
-##### Cena 7 - Melios e confronto com os Corvos
+##### Cena 7 - Covil de Corvos (Mapa 40)
 
-| ID  | Titulo                | Premissa Resumida                                                     | Tipo |
-| --- | --------------------- | --------------------------------------------------------------------- | ---- |
-| 7-A | Impasse da mina       | Corvos relatam o bloco estranho e recusam continuar a operacao.       | CS   |
-| 7-B | Escalada para combate | Balastrus pressiona retirada, os Corvos reagem e inicia a boss fight. | JOG  |
-| 7-C | Encerramento da quest | Corvos recuam e a clareira de Melios fica aberta para o proximo arco. | CS   |
-
-### 4 Espaco de Implementacao (Mapa 6)
-
-- Cena-alvo: Cena 1 (Casa dos Forjaprata / Mapa 6).
-- Referencia tecnica: replicar padrao de eventos do Mapa 24.
-- Diretriz de apresentacao: usar sistema de bustos e falas em formato NSD (blocos de cena -> beats -> falas).
-- Estado de implementacao: pendente (documentado para execucao na proxima etapa).
-
-## 5 Fluxo de Gameplay (resumo)
-
-Casa dos Forjaprata (Mapa 6): Thorin acorda atrasado -> Saparo zoa -> Thorin nota ausencia de Tordan -> Corrida para a taverna.
-
-Taverna de Gildrat: Thorin chega por ultimo -> Pagamento conduzido por Balastrus (sem Brutus/Tusk) -> Noticia de que Filena partiu -> Reacao interna de Thorin -> Convocacao imperial.
-
-Castelo de Damburr: Deslocamento com guardas -> Conselho politico -> Acusacao contra Filena -> Concessao de Melios para Balastrus.
-
-Transicao para campo: Janela de compras em Gildrat -> Reencontro na Estrada do Cao Luar -> Travessia para Melios -> Confronto com os Corvos -> Clareira liberada.
+| ID  | Titulo                          | Premissa Resumida                                                             | Tipo |
+| --- | ------------------------------- | ----------------------------------------------------------------------------- | ---- |
+| 7-A | Tempos sombrios                 | Corvinus contextualiza a crise interna dos Corvos em Melios.                  | CS   |
+| 7-B | O corvo de uma unica asa        | Maus pressagios reforcam o clima de confronto iminente.                       | CS   |
+| 7-C | Covil de corvos                 | Os Corvos identificam a chegada do grupo como invasao hostil.                 | CS   |
+| 7-D | Batalha iminente                | Corvinus cobra explicacoes por entrada sem permissao.                         | CS   |
+| 7-E | Decreto real                    | Balastrus apresenta o decreto imperial e reivindica controle da frente.       | CS   |
+| 7-F | Honra                           | A guarda dos Corvos recusa a legitimidade de Balastrus e chama para o embate. | CS   |
+| 7-G | Eu nao faria isso se fosse voce | Mhordred responde com intimidacao direta e arma o inicio da luta.             | JOG  |
+| 7-H | Clareira liberada               | A batalha termina, os Corvos recuam e a progressao da campanha e destravada.  | JOG  |

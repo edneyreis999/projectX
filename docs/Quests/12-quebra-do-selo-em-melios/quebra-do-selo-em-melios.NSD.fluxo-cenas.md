@@ -1,150 +1,109 @@
-﻿# 🎮 Narrative Structure Document (NSD) - Fluxo Visual De Cenas
+# Narrative Structure Document (NSD) - Fluxo Visual De Cenas
 
-## 📄 Quest: Quebra do Selo em Melios
+## Quest: Quebra do Selo em Melios
 
-### 1️⃣ Resumo Geral *(Checkpoint 0)*
+### 1 Resumo Geral (Checkpoint 0)
 
-- [x] **Concluído**
+- [x] Concluido
+- Nome da quest: Quebra do Selo em Melios
+- Importancia na campanha: Main
+- Arco narrativo: Provacao / Ponto de nao-retorno
+- Quest anterior: A Voz do Conselho
+- Conflito central: Balastrus prioriza produtividade e poder, enquanto os avisos sobre o selo apontam para um risco ancestral que o grupo nao compreende completamente.
+- Objetivo narrativo global: Romper o selo de Melios, introduzir os Ignotos como nova ameaca central e converter o objetivo da expedicao de extracao para sobrevivencia e retirada.
+- Premissa resumida: Depois do conflito com os Corvos, o grupo avanca para o interior de Melios. Balastrus coloca Thorin e Filena para forcar o bloco selado e usa dinamite para abrir a passagem. A equipe encontra uma area rica em minerios, mas o alivio dura pouco: sinais de anomalia e hostilidade aparecem, forcam combate e iniciam a retirada para fora da mina.
+- Resumo: A quest parte da entrada de Melios, logo apos a abertura de caminho politico conquistada no conselho. No interior (Mapa 2), Balastrus impoe ritmo de trabalho, desconsidera riscos e conduz o grupo ate o bloco de ferro do selo. Thorin e Filena sao forcados a agir diretamente na ruptura, enquanto Kilin e Mhordred observam a escalada da imprudencia. A abertura do caminho leva a um setor com minerios abundantes e confirma a ambicao de Balastrus, mas a situacao degrada rapidamente com a primeira aparicao dos Ignotos. O foco muda para fuga e reposicionamento, encerrando a quest com a saida da area e transicao para o retorno a Gildrat.
 
-- **Importância na campanha**: Main  
-- **Arco narrativo**: Provação (ponto de virada do Ato I)  
-- **Quest anterior**: A Voz do Conselho  
-- **Conflito central**: Ambição (Balastrus) vs. presságios ancestrais (Corvos e canções), culminando na ruptura do selo e na liberação dos Ignotos.  
-- **Objetivo narrativo global**:  
-  - Concretizar o ponto de não-retorno: o selo é destruído.  
-  - Revelar a ameaça real (Ignotos) e deslocar o foco de “mineração” para “sobrevivência”.  
-  - Gerar consequências: fuga, alerta em Gildrat e escalada do conflito macro.  
-- **Premissa resumida**: Após derrotar os Corvos na entrada de Melios, Balastrus ignora os alertas e ordena o uso de dinamite para romper um bloco de ferro rúnico — o selo. A explosão abre um corredor que leva a uma sala repleta de metais preciosos. Balastrus celebra e ordena a extração imediata, mas uma fumaça espessa toma o ambiente. Um minerador cai morto; Ignotos emergem da névoa. O grupo luta em retirada, enfrenta um mini-chefe que bloqueia a saída e, ao vencê-lo, corre rumo à entrada. Novos inimigos surgem; Kilin fica para segurar os Ignotos enquanto Thorin e Mhordred escapam por uma passagem lateral para avisar Gildrat. Filena tenta dissuadir Balastrus e fica ao lado de Thorin durante a retirada.
-
-- **Locais principais**:  
-  - Entrada da Mina de Melios (pós-boss Corvos)  
-  - Câmara do Selo (bloco de ferro rúnico)  
-  - Sala dos Metais (tesouro)  
-  - Corredor de fuga até a entrada  
-- **NPCs principais**:
-  - Thorin  
-  - Balastrus  
-  - Filena  
-  - Kilin, Mhordred  
-  - Anoes escavadores (extras)  
-  - Ignotos (mini-chefe e mobs)  
-  - Os Corvos (referencia contextual; nao participam desta quest)  
+- Locais principais
+  - Entrada de Melios / clareira de acesso (Mapa 40, transicao)
+  - Zona interna de Melios / area do selo (Mapa 2)
+  - Camara apos ruptura (Mapa 2)
+  - Rota de retirada para retorno a Gildrat (Mapa 2 -> Mapa 20)
+- NPCs principais
+  - Thorin
+  - Balastrus
+  - Filena
+  - Kilin
+  - Mhordred
+  - Ignotos (primeira aparicao)
 
 ---
 
-### 2️⃣ Pré-condições Narrativas *(Checkpoint 1)*
+### 2 Pre-condicoes Narrativas (Checkpoint 1)
 
-- [x] **Concluído**
+- [x] Concluido
 
-| Tipo | Descrição |
-|------|-----------|
-| **Flags / Decisões anteriores** | Corvos derrotados em “A Voz do Conselho”; clareira de Melios liberada. |
-| **Limitações ou bloqueios** | Acesso às áreas internas de Melios estava bloqueado pelo selo. |
-
----
-
-### 3️⃣ Fluxo Visual Resumido *(Checkpoint 2)*
-
-- [x] **Concluído**
-
-#### Fluxo corrido (do início ao fim da quest)
-
-##### Cena 1 – A Câmara do Selo
-
-| #  | Beat                         | Descrição                                                                                         | Controle |
-|---:|------------------------------|---------------------------------------------------------------------------------------------------|----------|
-| 1  | Chegada ao Selo              | O grupo entra na câmara e vê o bloco de ferro rúnico com símbolos estranhos.                     | 🎬       |
-| 2  | Pressagios                   | Kilin menciona as cancoes sobre Melios; Filena reforca o alerta e Balastrus desdenha.                                            | ??       |
-| 3  | Ordem de Balastrus           | Balastrus decide romper o bloco com dinamite.                                                     | 🎬       |
-
-##### Cena 2 – Preparativos Explosivos
-
-| #  | Beat                   | Descrição                                                                                                   | Controle |
-|---:|------------------------|-------------------------------------------------------------------------------------------------------------|----------|
-| 1  | Posicionar cargas      | Cutscene/mini‑jogo breve de posicionar cargas (opcional).                                                   | 🎮/🎬    |
-| 2  | Afastar a equipe       | Grupo recua; aviso de segurança ignorado por Balastrus, que fica orgulhoso ao lado do dispositivo.         | 🎬       |
-| 3  | Detonação              | Explosão abre corredor estreito; poeira densa; HUD: “Acesse a passagem recém-aberta”.                      | 🎬       |
-
-##### Cena 3 – A Sala dos Metais
-
-| #  | Beat                  | Descrição                                                                                                      | Controle |
-|---:|-----------------------|----------------------------------------------------------------------------------------------------------------|----------|
-| 1  | Descoberta            | Sala ampla repleta de metais preciosos; Balastrus vibra e manda iniciar extração “agora mesmo”.               | 🎬       |
-| 2  | Fumaça Espessa        | Neblina/fumaça começa a se acumular; Balastrus alega “reação química do dinamite com o ar” — “vai passar”.   | 🎬       |
-| 3  | Começar extração      | Jogador pode acionar 1–2 pontos de mineração enquanto a névoa aumenta (timer leve/pressão).                 | 🎮       |
-
-##### Cena 4 – O Primeiro Morto
-
-| #  | Beat                 | Descrição                                                                                          | Controle |
-|---:|----------------------|----------------------------------------------------------------------------------------------------|----------|
-| 1  | Grito                | Um escavador some na fumaça; grito seguido de silêncio.                                           | 🎬       |
-| 2  | Corpo no chão        | O corpo é visto parcialmente; queda de ferramentas ecoa; pânico se instala.                        | 🎬       |
-| 3  | HUD: “Fuja!”         | Objetivo muda para “Recuar ao corredor de acesso”.                                                | 🎬       |
-
-##### Cena 5 – Mini‑Chefe: Ignoto do Umbral
-
-| #  | Beat                        | Descrição                                                                                         | Controle |
-|---:|-----------------------------|---------------------------------------------------------------------------------------------------|----------|
-| 1  | Bloqueio no Corredor        | Um Ignoto salta à frente e bloqueia a passagem do grupo.                                         | 🎬       |
-| 2  | Batalha de Bloqueio         | Combate contra o Ignoto do Umbral; foco em controle de status/visão reduzida.                    | 🎮       |
-| 3  | Passagem Liberada           | Ao vencer, neblina recua um pouco; passagem é liberada.                                          | 🎬       |
-
-##### Cena 6 – Sacrifício Tático
-
-| #  | Beat                       | Descrição                                                                                                     | Controle |
-|---:|----------------------------|---------------------------------------------------------------------------------------------------------------|----------|
-| 1  | Novos Inimigos             | Dois Ignotos surgem por trás; ameaça de cercar o grupo.                                                       | 🎬       |
-| 2  | Decisão Relâmpago          | Kilin decide ficar para segurar os inimigos.                                                        | 🎬       |
-| 3  | Fuga Forcada               | Eles gritam para Thorin fugir com Mhordred por uma passagem lateral; Filena empurra os escavadores e segue na retirada.                                         | ??       |
-| 4  | Corrida para a Entrada     | Trecho de fuga jogável com obstáculos leves; UI indica saída.                                                | 🎮       |
-
-##### Cena 7 – Saída e Encerramento
-
-| #  | Beat                     | Descrição                                                                                         | Controle |
-|---:|--------------------------|---------------------------------------------------------------------------------------------------|----------|
-| 1  | Ar Frio na Entrada      | Thorin e Mhordred alcançam a entrada da mina.                                                     | 🎬       |
-| 2  | Objetivo Atualizado     | HUD: “Volte a Gildrat e alerte o Conselho”.                                                       | 🎬       |
-| 3  | Fim da Quest            | Tela/fade de encerramento; transição para o mapamúndi.                                            | 🎬       |
+| Tipo | Descricao |
+| --- | --- |
+| Flags / Decisoes anteriores | Corvos derrotados em "A Voz do Conselho" e passagem para Melios liberada |
+| Limitacoes ou bloqueios | Progressao depende de acesso ao interior de Melios e interacoes com gatilhos do selo na area interna |
 
 ---
 
-### 4️⃣ Pós-condições, Flags e Notas *(Checkpoint 3)*
+### 3 Fluxo Visual Resumido (Checkpoint 2)
 
-- [x] **Concluído**
+- [x] Concluido
 
-- **Flags ativadas**:  
-  - `SELO_MELIOS_QUEBRADO = true`  
-  - `IGNOTOS_LIBERTOS = true`  
-  - `ALERTA_GILDRAT_PENDENTE = true`  
-  - `KILIN_STATUS = [a definir]` (separa-se do grupo nesta cena)  
-- **Consequências narrativas**:  
-  - Escalada de encontros de Ignotos no mundo. `[a definir intensidade/zona]`  
-  - Próxima missão foca na volta a Gildrat e na audiência/alerta. `[a definir]`  
-- **Observações de implementação**:  
-  - Fumaça como “neblina” com leves penalidades de precisão/visão; reduzir brilho e alcance da luz.  
-  - Mini-chefe com mecânica de “bloqueio de passagem”; vitória libera transferência.  
-  - Evitar grind: extração na sala dos metais é cenográfica (1–2 pontos) para reforçar a tentação/ambição.  
-- **Consistência de lore**:  
-  - A decisão de Balastrus coaduna com a influência do Profeta sobre Damburr (ver: o-continente-de-ekios.md:84).  
-  - A manifestação onírica futura de Thorin deve obedecer às regras de “Reino da Mana” (ver: magia.md).
+```plaintext
+Quest: Quebra do Selo em Melios
+ +-- Cena 1: Entrada em Melios e imposicao de Balastrus
+ |      +-- Beat 1: Grupo confirma rota interna e recebe ordem para acelerar a operacao
+ +-- Cena 2: Camara do Selo
+ |      +-- Beat 1: Thorin e Filena sao forcados a trabalhar no bloco selado
+ +-- Cena 3: Ruptura e descoberta da camara de minerios
+ |      +-- Beat 1: Selo e vencido; Balastrus muda o foco para extracao total
+ +-- Cena 4: Primeira aparicao dos Ignotos
+ |      +-- Beat 1: A anomalia se manifesta e o grupo entra em estado de combate/retirada
+ +-- Cena 5: Fuga e transicao
+        +-- Beat 1: Sobreviventes recuam e iniciam retorno para avisar Gildrat
+```
 
----
+#### Tabela de Cenas
 
-### 5️⃣ Elenco e Recursos
+| # | Nome da Cena | Premissa resumida (expandida) |
+| --- | --- | --- |
+| 1 | **Marcha Forcada em Melios** | O grupo entra na zona interna sob comando de Balastrus, que reforca urgencia operacional e controle sobre Thorin e Filena. |
+| 2 | **Ordem de Quebra** | Diante do bloco selado, Balastrus remove restricoes de Filena e obriga os dois jovens a atuar diretamente na ruptura. |
+| 3 | **A Tentacao dos Minerios** | Com o bloqueio rompido, a camara rica em recursos parece validar a aposta de Balastrus, elevando a ambicao do grupo de extracao. |
+| 4 | **Ameaca Revelada** | A primeira aparicao dos Ignotos rompe o equilibrio da expedicao e transforma o ambiente em zona de alto risco. |
+| 5 | **Retirada para Gildrat** | Com a operacao comprometida, a prioridade vira escapar da area e iniciar o retorno para reportar a crise. |
 
-- **NPCs**: Thorin, Balastrus, Filena, Kilin, Mhordred, 2-4 escavadores, 1 Ignoto (mini-chefe), 2 Ignotos (adds).  
-- **Locais**: Entrada de Melios, Câmara do Selo, Sala dos Metais, Corredor de Fuga.  
-- **Itens/props**: cargas de dinamite, ferramentas de mineração, pilhas de minério, tochas/faróis.  
-- **Música/FX**: explosão abafada, zumbido/sussurros em névoa, batimentos/respiração ofegante na fuga.
+#### Beats por Cena
 
----
+##### Cena 1 - Marcha Forcada em Melios
 
-### 6️⃣ Objetivos/Jogabilidade (Resumo)
+| ID | Titulo | Premissa Resumida | Tipo |
+| --- | --- | --- | --- |
+| 1-A | O caminho estreito | Thorin confirma o ponto de operacao enquanto Balastrus conduz a equipe para dentro da area critica. | JOG |
+| 1-B | Pressao de comando | Balastrus acelera ordens e reduz espaco para contestacao do grupo. | CS |
 
-- Entrar na câmara do selo e investigar.  
-- Sobreviver à explosão e acessar a sala dos metais.  
-- Recuar sob fumaça e derrotar o Ignoto que bloqueia a passagem.  
-- Fugir com Mhordred pela passagem lateral e alcançar a entrada.  
-- Novo objetivo global: voltar a Gildrat e alertar o Conselho.
+##### Cena 2 - Ordem de Quebra
 
+| ID | Titulo | Premissa Resumida | Tipo |
+| --- | --- | --- | --- |
+| 2-A | Bloco de ferro | O grupo chega ao selo e reconhece o bloqueio como obstaculo central da expedicao. | CS |
+| 2-B | Filena sem algemas | Kilin remove as restricoes de Filena por ordem de Balastrus para iniciar o trabalho forcado. | CS |
+| 2-C | Picaretas de mithril | Thorin e Filena recebem ferramentas e sao obrigados a golpear o bloco repetidamente. | JOG |
 
+##### Cena 3 - A Tentacao dos Minerios
+
+| ID | Titulo | Premissa Resumida | Tipo |
+| --- | --- | --- | --- |
+| 3-A | Ruptura do selo | A barreira cede e abre acesso a uma nova camara interna. | CS |
+| 3-B | Minerio em abundancia | A descoberta de recursos em larga escala altera o objetivo imediato para extracao. | CS |
+| 3-C | Ambicao em alta | Balastrus celebra o resultado e tenta escalar a operacao rapidamente. | CS |
+
+##### Cena 4 - Ameaca Revelada
+
+| ID | Titulo | Premissa Resumida | Tipo |
+| --- | --- | --- | --- |
+| 4-A | Primeira aparicao dos Ignotos | A presenca hostil surge na camara e quebra a falsa sensacao de controle. | CS |
+| 4-B | Mudanca de prioridade | A equipe abandona a logica de mineracao e entra em modo de sobrevivencia. | JOG |
+| 4-C | Recuo tatico | Thorin, Filena, Kilin e Mhordred reorganizam a retirada sob pressao. | JOG |
+
+##### Cena 5 - Retirada para Gildrat
+
+| ID | Titulo | Premissa Resumida | Tipo |
+| --- | --- | --- | --- |
+| 5-A | Escapar de Melios | O grupo deixa a zona critica e consolida a fuga da area do selo. | JOG |
+| 5-B | Voltar e avisar | A quest encerra com transicao para o retorno a Gildrat e abertura do proximo arco. | CS |

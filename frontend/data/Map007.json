@@ -464,7 +464,7 @@
           "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
           "list": [
             { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
-            { "code": 201, "indent": 0, "parameters": [0, 11, 10, 20, 0, 0] },
+            { "code": 201, "indent": 0, "parameters": [0, 11, 10, 19, 0, 0] },
             { "code": 122, "indent": 0, "parameters": [35, 35, 0, 0, 5] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
