@@ -1,105 +1,124 @@
-﻿# 🎮 Narrative Structure Document (NSD) - Fluxo Visual De Cenas
+# Narrative Structure Document (NSD) - Fluxo Visual De Cenas
 
-## 📄 Quest: Travessia Tóxica
+## Quest: Travessia Toxica
 
-### 1️ Resumo Geral *(Checkpoint 0)*
+### 1 Resumo Geral (Checkpoint 0)
 
-- [x] **Concluído**  
-- **Nome da quest**: Travessia Tóxica  
-- **Importância na campanha**: Main  
-- **Arco narrativo**: Recusa do Chamado  
-- **Quest anterior**: Travessia Perigosa  
-- **Conflito central**: O grupo (Thorin, Kilin, Mhordred, Filena e Balastrus) encontra a mina abandonada, adaptada como esgoto de Gildrat, infestada por mutações venenosas. Não há outro caminho, pois todos os outros foram bloqueados pela recente avalanche. Só resta ao grupo avançar. [Ler mais sobre a mina em](../../GDD/2-world-building/locais/mina-esgoto/mina-do-esgoto.md) -
-- **Objetivo narrativo global**: Introduzir a primeira cena de retorno ao Coreto com Rheed e as crianças, criar atmosfera claustrofóbica, reforçar a ameaça das mutações e introduzir o Símbolo da Trégua como mecânica antes do retorno à Gildrat.
-- **Premissa resumida**: Thorin e seu grupo (Kilin, Mhordred, Filena e Balastrus) encontram a entrada de uma antiga mina/esgoto, enquanto fogem da tempestade de neve. Exploram dois níveis repletos de puzzles, armadilhas ambientais e criaturas mutantes, culminando no confronto com o chefe Pestesporo antes que possam deixar a Mina do Esgoto. [Ler mais sobre as criaturas da mina em](frontend/docs/GDD/4-personagens-inimigos-criaturas/mina-do-esgoto.md) -
-- **Resumo**: Após a sequência da nevasca, o grupo encontra a entrada de uma mina abandonada que servia como sistema de esgoto anão. O 1º nível introduz puzzles, sinalizações, a nova cena de Rheed e o Símbolo da Trégua. O 2º nível intensifica os combates e conduz à Câmara de Decantação, onde o chefe Pestesporo desperta. Filena segue ao lado de Thorin, cobra cautela e lembra que precisa voltar com o pagamento.
-- **Locais principais**:  
+- [x] Concluido
+- Nome da quest: Travessia Toxica
+- Importancia na campanha: Main
+- Arco narrativo: Recusa do Chamado
+- Quest anterior: Travessia Perigosa
+- Conflito central: O grupo encontra uma mina abandonada adaptada como esgoto de Gildrat, infestada por mutacoes venenosas, e precisa atravessa-la porque a avalanche bloqueou todas as rotas externas.
+- Objetivo narrativo global: Introduzir a primeira quebra de memoria com Rheed e as criancas, construir atmosfera claustrofobica, reforcar a ameaca das mutacoes e apresentar o Simbolo da Tregua como
+  mecanica antes do retorno a Gildrat.
+- Premissa resumida: Thorin e o grupo entram na Mina do Esgoto para escapar da nevasca. A primeira parte da mina e dividida em 3 andares com combates mais faceis e um puzzle de valvulas que exige
+  deixar um membro segurando uma valvula. A necessidade obriga o grupo a aceitar Balastrus como 5o membro. Depois, enfrentam o chefe Pestesporo, mas a saida para a superficie fica bloqueada.
+- Resumo: A nevasca obriga o grupo a usar a Mina do Esgoto. Na primeira parte, dividida em 3 andares, os combates sao mais leves e o fluxo foca em exploracao, puzzle de valvulas e registros. No
+  puzzle, um membro precisa segurar uma valvula para manter o fluxo e abrir a passagem, forcando o grupo a soltar Balastrus e usa-lo como 5o membro. A quebra de memoria leva ao Coreto com Rheed e as
+  criancas, onde Thorin encontra o Simbolo da Tregua. A segunda parte aprofunda o perigo com lodo toxico e escuridao. A travessia termina na Camara de Decantacao, onde o Pestesporo desperta e e
+  derrotado, mas a saida para a superficie fica bloqueada.
+
+- Locais principais
   - Entrada da Mina do Esgoto
-  - Coreto (dissipação da névoa das memórias e volta para a cena do Rheed)
-  - Anel de Manutenção (1º andar)
-  - Galerias de Drenagem (2º andar)
-**NPCs principais**:  
-  - Thorin  
-  - Kilin  
-  - Mhordred  
-  - Filena  
-  - Balastrus  
+  - Coreto (quebra de memoria com Rheed e as criancas)
+  - Anel de Manutencao (1F)
+  - Galerias de Drenagem (2F)
+  - Camara de Decantacao Anoxica
+- NPCs principais
+  - Thorin
+  - Kilin
+  - Mhordred
+  - Filena
+  - Balastrus
   - Rheed
-  - Crianças
-**Criaturas principais**:
+  - Criancas
+- Criaturas principais
   - Pestesporo (boss)
-  - Slimes tóxicos
+  - Slimes toxicos
   - Vermes do lodo
   - Cogumelos esporulantes
 
-### 2️ Pré-condições Narrativas (Checkpoint 1)
+---
 
-- [x] **Concluído**
+### 2 Pre-condicoes Narrativas (Checkpoint 1)
 
-| Tipo | Descrição |
-|------|-----------|
-| **Flags / Decisões anteriores** | Jogador concluiu a quest “Travessia Perigosa.” |
-| **Limitações ou bloqueios** | Caminho principal do Mapamúndi bloqueado por uma grande avalanche e deslizamento de rochas. Entrada da Mina do Esgoto desbloqueada. |
+- [x] Concluido
 
-### 3️ Fluxo Visual Resumido *(Checkpoint 2)*
+| Tipo                        | Descricao                                                                                                     |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| Flags / Decisoes anteriores | Jogador concluiu a quest "Travessia Perigosa"                                                                 |
+| Limitacoes ou bloqueios     | Caminho principal do Mapamundi bloqueado por avalanche e deslizamento; entrada da Mina do Esgoto desbloqueada |
 
-Quest: Travessia Tóxica - Mina do Esgoto
- ├── Cena 1: Entrada e Anel de Manutenção — Premissa: exploração inicial, puzzles, ambientação e avanço na narrativa
- │      ├── Beat 1: Descoberta da entrada sob neve (🎬)
- │      ├── Beat 2: Corredor circular e puzzles de válvulas (🎮)
- │      ├── Beat 3: Leitura de registros e runas (🎮)
- │      └── Beat 4: Primeira cena em que a névoa das lembranças é cortada e a cena volta ao Coreto com Rheed e as crianças(🎮)
-        └── Beat 5: Aquisição do item Símbolo da Trégua (🎮)
- ├── Cena 2: Galerias de Drenagem — Premissa: combate intensificado e riscos ambientais
- │      ├── Beat 1: Travessia por passadiços sobre lodo (🎮)
- │      ├── Beat 2: Encontros com mutações “Poison” (🎮)
- │      ├── Beat 3: "Apagar das Luzes" Apartir deste ponto todo o ambiente ficará escuro e para avançar será necessário uma lamparina ou algo do tipo. Visão através da lamparina apenas 3 tiles em todas as direções (🎮)
- │  
- └── Cena 3: Câmara de Decantação Anóxica — Premissa: confronto contra Pestesporo
-        ├── Beat 1: Descoberta da câmara e ambientação (🎬)
-        ├── Beat 2: Confronto contra Pestesporo (fases de combate) (🎮)
-        └── Beat 3: Volta para o World Map (🎬)
+---
 
-#### 4 Tabela de Cenas
+### 3 Fluxo Visual Resumido (Checkpoint 2)
 
-| # | Nome da Cena                | Premissa resumida (expandida)                                                                                                                                                              |
-| - | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 1 | **Entrada e Anel de Manutenção**     | Forçados a se abrigar da nevasca, o grupo entra em uma mina abandonada. O primeiro nível foca na exploração, resolução de puzzles com válvulas e descoberta de lore, culminando em uma quebra narrativa com Rheed que introduz o item “Símbolo da Trégua”. |
-| 2 | **Galerias de Drenagem**  | A descida para o segundo nível intensifica o perigo com combate contra novas mutações venenosas em passadiços precários. A tensão aumenta drasticamente quando as luzes se apagam, forçando a navegação em escuridão quase total com uma fonte de luz limitada. |
-| 3 | **Câmara de Decantação Anóxica**  | O grupo alcança a câmara final do complexo. Após uma cena que revela a ameaça central, eles enfrentam o chefe Pestesporo em uma batalha de múltiplas fases. A vitória garante a saída segura da mina.         |
+```plaintext
+Quest: Travessia Toxica
+ +-- Cena 1: Entrada e 3 Andares do Anel de Manutencao
+ |      +-- Beat 1: Entrada da mina sob neve e decisao de avancar
+ |      +-- Beat 2: Discussao inicial, corda em Balastrus e conversa Thorin/Filena
+ |      +-- Beat 3: Combates leves e exploracao nos 3 andares
+ |      +-- Beat 4: Puzzle de valvulas exige deixar um membro segurando a valvula
+ |      +-- Beat 5: Balastrus vira 5o membro por necessidade
+ |      +-- Beat 6: Leitura de registros e runas do esgoto
+ |      +-- Beat 7: Quebra de memoria com Rheed e criancas no Coreto
+ |      +-- Beat 8: Encontro do Simbolo da Tregua
+ |      +-- Beat 9: Explicacao da mecanica do Simbolo da Tregua
+ +-- Cena 2: Galerias de Drenagem
+ |      +-- Beat 1: Travessia por passadicos sobre lodo toxico
+ |      +-- Beat 2: Combates com mutacoes venenosas
+ |      +-- Beat 3: Apagar das luzes e avancar com lamparina
+ +-- Cena 3: Camara de Decantacao Anoxica
+        +-- Beat 1: Revelacao do ambiente e do Pestesporo
+        +-- Beat 2: Confronto contra o boss
+        +-- Beat 3: Saida para a superficie bloqueada
+```
+
+#### Tabela de Cenas
+
+| #   | Nome da Cena                                  | Premissa resumida (expandida)                                                                                                                                                                                                                                                                                                                 |
+| --- | --------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | **Entrada e 3 Andares do Anel de Manutencao** | Forcados a se abrigar da nevasca, o grupo entra na Mina do Esgoto. A primeira parte e dividida em 3 andares, com combates mais faceis, exploracao e puzzle de valvulas que exige deixar um membro segurando a valvula e aceitar Balastrus como 5o membro. O trecho culmina na quebra de memoria com Rheed e no encontro do Simbolo da Tregua. |
+| 2   | **Galerias de Drenagem**                      | A descida intensifica o perigo com passadicos sobre lodo toxico, mutacoes venenosas e escuridao total, exigindo uma fonte de luz limitada para avancar.                                                                                                                                                                                       |
+| 3   | **Camara de Decantacao Anoxica**              | O grupo chega a camara final e enfrenta o Pestesporo. A vitoria ocorre, mas a saida para a superficie esta bloqueada.                                                                                                                                                                                                                         |
 
 #### Beats por Cena
 
-##### Cena 1 – Entrada e Anel de Manutenção
+##### Cena 1 - Entrada e 3 Andares do Anel de Manutencao
 
-| #  | Beat                                             | Descrição / Decisões do Jogador                        | Controle |
-| ---|-------------------------------------------------|-------------------------------------------------------|----------|
-| 1  | Descoberta da entrada sob neve                                  | O grupo, fugindo da avalanche e da tempestade, encontra a entrada da antiga mina/esgoto, o unico caminho possivel; Filena se aproxima de Thorin e reforca que nao podem recuar.  | ??       |
-| 2  | Corredor circular e puzzles de válvulas                         | O jogador explora o anel de manutenção e deve resolver puzzles ambientais, manipulando válvulas para drenar lodo ou abrir passagens.               | 🎬       |
-| 3  | Leitura de registros e runas                             | Opcionalmente, o jogador pode encontrar e ler antigos registros anões, descobrindo mais sobre a história do local e a origem das criaturas.          | 🎬       |
-| 4  | Névoa das lembranças                                  | A primeira cena de quebra narrativa ocorre: a realidade da mina se dissipa e o jogador é transportado para o Coreto, com Rheed e as crianças. | 🎮       |
-| 5  | Aquisição do Símbolo da Trégua                            | Após a interação com Rheed, Thorin encontra o item "Símbolo da Trégua", que introduz uma nova mecânica de jogo. | 🎬       |
-| 6  | Funcionalidade do Símbolo da Trégua       | O item permite acumular e absorver as batalhas convencionais do mapa mundi para serem enfrentadas em um combate único posteriormente. | 🎮       |
+| ID  | Titulo                  | Premissa Resumida                                                                                                                                                                                                                                                                                                                        | Tipo |
+| --- | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
+| 1-A | Entrada soterrada       | O Jogador controla Thorin, que encontra a entrada da mina sob a neve e segue com o grupo por nao haver outra rota. Filena reforca que nao podem recuar.                                                                                                                                                                                  | JOG  |
+| 1-B | Discussao acalorada     | No inicio da cena, Kilin e Mhordred discutem com Balastrus, o amarram com uma corda e se recusam a solta-lo. Ao mesmo tempo, Thorin conversa com Filena sobre Gildrat e as castas mais pobres.                                                                                                                                           | CS   |
+| 1-C | Boas vindas tóxica      | O 1 andar da mina já oferece combate ao jogador, ainda que menos desafiador. Enquanto anda e verifica as máquinas o time entra em combate, com excessão de Balastrus.                                                                                                                                                                    | JOG  |
+| 1-D | Quebra-cabeças metálico | O Jogador controla Thorin, que resolve o puzzle de valvulas para drenar lodo e abrir passagens. Cada etapa exige deixar um membro segurando uma das valvulas espalhadas pelo mapa para manter o fluxo e finalizar o quebra-cabeca.                                                                                                       | JOG  |
+| 1-E | Inimigo do meu inimigo  | Sobra uma das válvulas que precisa ser pressionada ao mesmo tempo que as outras para que o quebra-cabeças funcione. Balastrus argumenta que o grupo não tem escolha. Por necessidade, eles o soltam.                                                                                                                                     | CS   |
+| 1-F | O 5 elemento            | Balastrus se torna o 5 membro jogavel, permitindo Thorin prossiga com a resolução do problema.                                                                                                                                                                                                                                           | CS   |
+| 1-G | Rebeldia                | Apos a tensao inicial, a passagem para o segundo andar se abre, Kilin chama Thorin para uma conversa longe dos outros e diz para ter cuidado com Balastrus. Menciona pela primeira vez as rebelioes em Gildrat e que grande parte do problema são contratantes mercenários e tiranos como ele. Filena fica desconfortavel com o assunto. | CS   |
+| 1-H | Quebra de memoria       | A realidade da mina se dissipa e a cena corta para o Coreto, com Rheed e as criancas. Ele fala para elas sobre o símbolo de Trégua e a aventura que Thorin e os outros estão prestes a enfrentar. O grupo avança para o 2 andar.                                                                                                         | CS   |
 
-##### Cena 2 – Galerias de Drenagem
+##### Cena 2 - Galerias de Drenagem
 
-| #  | Beat                                      | Controle  |                                                                           | Descrição/ decisões do jogador |
------------------------------------------------------------------------------------------------------------------------------------------------|----------|
-| 1  | Travessia por passadiços sobre lodo         | O jogador deve atravessar por passadiços estreitos e perigosos suspensos sobre poças de lodo tóxico. | 🎮       |
-| 2  | Encontros com mutações “Poison”     | Combates contra novos inimigos como Slimes Tóxicos e Vermes do Lodo, que aplicam o status de veneno e representam uma ameaça maior.| 🎮       |
-| 3  | Apagar das Luzes           | Em um ponto específico, as luzes do ambiente se apagam. O jogador precisa usar uma lamparina (ou item similar) para iluminar uma área restrita (3 tiles) ao seu redor para poder avançar. | 🎮       |
+| ID  | Titulo                  | Premissa Resumida                                                                                                                                                                                         | Tipo |
+| --- | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
+| 2-A | Nós não somos vampiros! | No 2 andar da mina as batalhas são mais acentuadas e, há um agravante. A visibilidade é muito baixa. O lugar é completamente escuro.                                                                      | JOG  |
+| 2-B | Balastrus ao resgate.   | Após a primeira batalha no 2 andar, Thorin reclama da situação e Balastrus surge com um apetrecho, um tipo novo de luminária cientificamente desenvolvida que é capaz de clarear um pouco ao redor deles. | CS   |
+| 2-C | Simbolo da Trégua       | O Jogador controla Thorin, que ganha o item Simbolo da Tregua após batalhar ao menos 5 vezes.                                                                                                             | JOG  |
+| 2-D | Passadicos sobre lodo   | O Jogador controla Thorin, que atravessa passadicos estreitos sobre lodo toxico, com visibilidade baixa e aparicao frequente de monstros.                                                                 | JOG  |
 
-##### Cena 3 –  Câmara de Decantação Anóxica
+##### Cena 3 - Camara de Decantacao Anoxica
 
-| #  | Beat                                          | Descrição                                                                                                            | Controle |
-| ---|-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------|----------|
-| 1  | Descoberta da câmara e ambientação             | O grupo entra na câmara final. Uma cutscene revela o ambiente e o chefe Pestesporo, adormecido no centro da área. | 🎬       |
-| 2  | Confronto contra Pestesporo                        | Pestesporo desperta. O jogador deve lutar contra o chefe em um combate com múltiplas fases e mecânicas específicas. | 🎬       |
-| 3  | Volta para o World Map                           | Após a derrota do chefe, uma passagem é liberada. Uma cutscene final mostra o grupo saindo da mina e retornando ao mapa do mundo, encerrando a quest. | 🎮       |
+| ID  | Titulo                  | Premissa Resumida                                                                                                                                                                                                                                                   | Tipo |
+| --- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
+| 3-A | Camara final            | A camara e revelada, a visibilidade e restaurada e uma saida se apresenta, porem, o Pestesporo, cogumelo mutante gigante, aparece adormecido no centro.                                                                                                             | CS   |
+| 3-B | O peixe morre pela boca | Balastrus e os guardas voltam a discutir, fazendo muito barulho e, com isso, despertando o Pestesporo.                                                                                                                                                              | JOG  |
+| 3-C | Liberdade!              | Com o Pestesporo derrotado a saída finalmente está ao alcance. O grupo deixa a Mina do Esgoto e volta para a superfície. Assim que saem, a passagem pela qual atravessaram é bloqueada por um novo deslizamente de pedras. Eles não podem entrar novamente na mina. | CS   |
 
 ## 5 Fluxo de Gameplay (resumo)
 
-Nível 1 (combate moderado): Entrada → corte para o Rheed → retorno ao jogo que leva à uma Câmara onde estará o Símbolo de Trégua → Leitura de sinalizações → Casa de Válvulas inativa → Descida ao Nível 2.
+Nivel 1-3 (combate leve): Entrada soterrada -> Discussao e corda em Balastrus -> Exploracao e combates leves -> Registros e sinalizacoes -> Casa de Valvulas (membro segurando valvula) -> Balastrus
+como 5o membro -> Quebra de memoria no Coreto -> Simbolo da Tregua -> Descida ao Nivel 4.
 
-Nível 2 (Combate massivo): Plataformas sobre lodo → Salas de gradeamento → Corredores de condensado → Câmara (boss) → saída interna.
-
+Nivel 4 (combate intenso): Passadicos sobre lodo -> Salas de gradeamento -> Corredores de condensado -> Camara do boss -> Saida para a superficie bloqueada.

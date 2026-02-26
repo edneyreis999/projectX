@@ -41,6 +41,7 @@ var $plugins =
 {"name":"Coreto_SQS_menu_patch","status":true,"description":"[Patch] Permite habilitar/desabilitar o menu de Quests do PKD_SimpleQuestSystem via Switch.","parameters":{"controlSwitchId":"50"}},
 {"name":"--------------------------","status":false,"description":"---------------------------------------------------------------------","parameters":{}},
 {"name":"Coreto_Core","status":true,"description":"Plugin Core da Coreto Studio - Funcionalidades compartilhadas","parameters":{"EnableDebugLogs":"true","LogSwitchId":"0"}},
+{"name":"Coreto_MapDarkness","status":true,"description":"[Coreto] Darkens map 25 and shows a small flashlight radius around the player.","parameters":{}},
 {"name":"Coreto_Quests","status":true,"description":"Add or remove key items or equipment from the inventory and trigger a specified common event.","parameters":{}},
 {"name":"Coreto_Quest_Mina_Kravens","status":true,"description":"Gerencia as mecânicas da Mina de Kravens, incluindo mineração e controle do estado do boss.","parameters":{"MinerioItemId":"9","PedraItemId":"51","BossStateVariableId":"25","NextFloorMapId":"48","TotalMinerioQuest":"10","TotalMinerioMina":"30","MineroKraven":"35","PilhasRestantesVariableId":"36"}},
 {"name":"Coreto_MissionSave","status":true,"description":"[v1.1] Slots de save fixos com nomes automáticos por missao/evento.","parameters":{"missionSlotBase":"21","missionSlotCount":"30","eventSlotBase":"51","eventSlotCount":"20","missionMappings":"[]","eventMappings":"[]","id":"","slot":"21","title":""}},

@@ -1,45 +1,92 @@
-# Resgatando Kilin
+﻿# Narrative Structure Document (NSD) - Resgatando Kilin
 
-## Identificação
+## Quest: Resgatando Kilin
 
-- **Tipo:** Reforço na Habilidade da Guarda de Ferro.
-- **Dificuldade:** Difícil.
-- **Localização:** Campo de Treinamento.
-- **Nome Artístico:** O Resgate do Soldado Kilin.
-- **Desbloqueia ao Iniciar:** Lado Leste da Mina de Mélios.
+### 1 Resumo Geral (Checkpoint 0)
 
-## Contexto Narrativo
+- [ ] Em andamento
+- Nome da quest: Resgatando Kilin
+- Importância na campanha: recupera um comandante caído, restaura a moral da Guarda e amarra as tensões de Mhordred/Balastrus
+- Arco narrativo: culpa e redenção de Balastrus → liderança de Kilin reforçada → reforço emocional entre veteranos
+- Objetivo narrativo global: colocar o jogador no papel de salvador, expor a culpa de Mhordred e ativar Kilin como mentor para as próximas fases.
+- Premissa resumida: Thorin lidera uma missão de resgate por meio da mina de Mélios para encontrar Kilin, confrontar o passado e trazer o veterano de volta antes da defesa decisiva.
 
-Quest crítica que aprofunda os arcos de Kilin, Mhordred e Balastrus. Kilin é um comandante veterano da Guarda de Ferro, mentor de muitos guardas e símbolo de resistência. Seu resgate não é apenas tático - é emocional. Mhordred sente culpa por ter deixado Kilin para trás durante a fuga da Cena 10e. Balastrus sente responsabilidade pelo desastre que causou ao quebrar o selo, mentir sobre Kilin tê-lo atacado e manipulado o conselho. Ele insiste em ir junto.
+- Locais principais
+  - Entrada da Mina de Mélios (lado leste)
+  - Galerias inundadas / passagens quebradas
+  - Câmara secreta com Kilin
+- NPCs principais
+  - Thorin
+  - Kilin
+  - Mhordred
+  - Balastrus
+  - Filena (voz encorajadora via rádio)
 
-## Gatilhos
+### 2 Pré-condições Narrativas (Checkpoint 1)
 
-- **NPC com a quest:** Mhordred.
-- **Requisitos:** Ter completado a quest: Treinando a Guarda de Ferro - Caçadores Caçados.
-- **Gatilho:** Falar com Mhordred no Campo de Treinamento.
-- **Condição para concluir:**
-  - Resgatar Kilin na área de Mélios.
-  - Falar com Mhordred após o resgate.
+| Tipo | Descrição |
+| --- | --- |
+| Flags / Decisões anteriores | Conclusão de  Treinando a Guarda de Ferro e escolha de defender Gildrat em vez de fugir com Tordan. |
+| Limitações ou bloqueios | Kilin está preso em um setor isolado da mina; o acesso depende das rotas exploradas pelo jogador e do uso das chaves de Mhordred. |
 
-## Estrutura Sistêmica
+### 3 Fluxo Visual Resumido (Checkpoint 2)
 
-- **Atores Envolvidos:**
-  - Kilin (NPC a ser resgatado)
-  - Thorin (protagonista)
-  - Mhordred (companheiro)
-  - Balastrus (menciona culpa em diálogo)
-  - Filena (apoio emocional)
-- **Variáveis / Flags Alteradas:**
-  - `v_forca_guarda`
+- [ ] Em andamento
 
-## Desfechos Possíveis
+`plaintext
+Quest: Resgatando Kilin
+ +-- Cena 1: Reunião no Campo - Plano com Balastrus e Mhordred.
+        +-- Beat 1: Conversa tensa sobre culpa e a necessidade de encontrar Kilin.
+ +-- Cena 2: Travessia da Mina - Obstáculos e escolhas de rota.
+ |      +-- Beat 1: Jogador decide entre usar os túneis superiores (seguro) ou inferiores (mais rápido).
+ +-- Cena 3: Câmara dos fragmentos - Emboscada e revelações.
+ |      +-- Beat 1: Filena relata sinais de Kilin e pede calma.
+        +-- Beat 2: Balastrus confrontado por um eco do passado.
+ +-- Cena 4: Resgate e retorno - Kilin é acordado e escolhe seguir Thorin.
+        +-- Beat 1: Kilin reconhece Thorin, agradece e dá instruções para o próximo passo.
+`
 
-- **Final A (Resgate Bem-sucedido):** Thorin encontra Kilin e o resgata — Kilin se junta ao grupo, emocionado.
+#### Tabela de Cenas
 
-## Condição de Falha
+| # | Nome da Cena | Premissa resumida (expandida) |
+| --- | --- | --- |
+| 1 | **Plano de Resgate** | Balastrus, Mhordred e Thorin discutem o caminho mais rápido para salvar Kilin enquanto o veterano permanece preso. |
+| 2 | **Travessia pelas Minas** | O jogador percorre túneis frágeis, enfrenta armadilhas quebradas e escolhe qual rota seguir. |
+| 3 | **Câmara do Reformatado** | O grupo encontra um ponto onde Kilin está protegido; uma ambush emocional obriga a confrontar Balastrus. |
+| 4 | **Retorno com o Mentor** | Kilin acorda, reforça o pacto com Thorin e promete ajudar na defesa da Guarda de Ferro. |
 
-- **Final B (Ignora):** Jogador ignora a quest, Kilin não é salvo.
+#### Beats por Cena
 
-## Recompensas
+##### Cena 1 - Plano de Resgate
 
-- **v_forca_guarda:** +30 pontos (do total de 100)
+| Beat | Premissa Resumida | Tipo |
+| ---- | ---------------- | ---- |
+| **1-A - Balanço da culpa** | Balastrus admite que sua mentira afastou Kilin e concorda em liderar o resgate. | CS |
+| **1-B - Mhordred se desculpa** | Mhordred lembra a importância de Kilin na Guarda e se oferece para abrir o caminho. | CS |
+| **1-C - Escolha de abordagem** | Jogador define o foco da missão: velocidade ou segurança. | CHOICE |
+
+##### Cena 2 - Travessia pelas Minas
+
+| Beat | Premissa Resumida | Tipo |
+| ---- | ---------------- | ---- |
+| **2-A - Túneis do leste** | Jogador escolhe um túnel inundado mais longo (mais seguro). | JOG |
+| **2-B - Túneis do oeste** | Jogador escolhe a rota curta, mas cheia de ruínas (risco alto). | JOG |
+| **2-C - Armadilha desativada** | Mhordred desativa uma armadilha com instruções do jogador. | CS |
+| **2-D - Mensagem de Filena** | Filena avisa que Kilin deixará um sinal ao se mover. | CS |
+
+##### Cena 3 - Câmara do Reformatado
+
+| Beat | Premissa Resumida | Tipo |
+| ---- | ---------------- | ---- |
+| **3-A - Sinais de Kilin** | Rastros de armadura indicam onde Kilin foi levado. | CS |
+| **3-B - Emboscada emocional** | Balastrus enfrenta um brilho dos Ignotos que acusam sua culpa. | CS |
+| **3-C - Diálogo com Kilin** | Acordar Kilin e ouvir sua versão dos fatos. | CS |
+| **3-D - Escolha de confiança** | Jogador escolhe confiar imediatamente em Kilin ou testá-lo. | CHOICE |
+
+##### Cena 4 - Retorno com o Mentor
+
+| Beat | Premissa Resumida | Tipo |
+| ---- | ---------------- | ---- |
+| **4-A - Reconhecimento final** | Kilin agradece e renova seu juramento à Guarda. | CS |
+| **4-B - Balastrus busca perdão** | Balastrus suplica por um novo começo. | CS |
+| **4-C - Preparação para a defesa** | Thorin e Kilin definem as próximas etapas da defesa de Gildrat. | CS |

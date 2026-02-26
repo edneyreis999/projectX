@@ -3154,9 +3154,9 @@
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 29,
+            "variableId": 61,
             "variableValid": true,
-            "variableValue": 5
+            "variableValue": 2
           },
           "directionFix": true,
           "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 2, "characterIndex": 7 },
@@ -3174,7 +3174,16 @@
           "through": false,
           "trigger": 1,
           "walkAnime": true
-        },
+        }
+      ],
+      "x": 11,
+      "y": 2
+    },
+    {
+      "id": 13,
+      "name": "Teleporte (Campo de Futebol Rúnico)",
+      "note": "",
+      "pages": [
         {
           "conditions": {
             "actorId": 1,
@@ -3183,32 +3192,35 @@
             "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
-            "switch1Id": 4,
+            "switch1Id": 23,
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 29,
+            "variableId": 61,
             "variableValid": true,
-            "variableValue": 8
+            "variableValue": 2
           },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 1, "characterIndex": 2 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "directionFix": true,
+          "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 2, "characterIndex": 7 },
+          "list": [
+            { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
+            { "code": 201, "indent": 0, "parameters": [0, 9, 6, 17, 0, 0] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
           "moveFrequency": 4,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 5,
+          "moveSpeed": 4,
           "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
+          "priorityType": 1,
+          "stepAnime": true,
           "through": false,
-          "trigger": 2,
+          "trigger": 1,
           "walkAnime": true
         }
       ],
-      "x": 11,
-      "y": 4
+      "x": 12,
+      "y": 2
     },
-    null,
     {
       "id": 14,
       "name": "Mhordred",
