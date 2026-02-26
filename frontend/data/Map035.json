@@ -1391,8 +1391,8 @@
             { "code": 505, "indent": 0, "parameters": [{ "code": 4, "indent": null }] },
             { "code": 101, "indent": 0, "parameters": ["Personagens Daratrine/Balastrus", 0, 0, 2, "Balastrus"] },
             { "code": 401, "indent": 0, "parameters": ["Parece que você conseguiu chegar na hora desta"] },
-            { "code": 401, "indent": 0, "parameters": ["vez, Tusk!"] },
-            { "code": 101, "indent": 0, "parameters": ["Personagens Daratrine/Tusk", 0, 0, 2, "Tusk"] },
+            { "code": 401, "indent": 0, "parameters": ["vez, Brutus!"] },
+            { "code": 101, "indent": 0, "parameters": ["Personagens Daratrine/Tusk", 0, 0, 2, "Brutus"] },
             { "code": 401, "indent": 0, "parameters": ["Eu troxe o que me pediu, Balastrus."] },
             { "code": 101, "indent": 0, "parameters": ["Personagens Daratrine/Balastrus", 0, 0, 2, "Balastrus"] },
             { "code": 401, "indent": 0, "parameters": ["Excelente. Agora, eu quero que fique aqui. Se "] },
@@ -1821,7 +1821,7 @@
     },
     {
       "id": 4,
-      "name": "Tusk",
+      "name": "Brutus",
       "note": "",
       "pages": [
         {
@@ -1841,7 +1841,7 @@
             "variableValue": 0
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "tusk", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Tusk", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
@@ -2960,6 +2960,154 @@
       ],
       "x": 48,
       "y": 89
+    },
+    {
+      "id": 26,
+      "name": "NSD Quebra do Selo",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 41,
+            "variableValid": true,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Actor3", "direction": 2, "pattern": 1, "characterIndex": 6 },
+          "list": [
+            { "code": 108, "indent": 0, "parameters": ["XA:Brutus"] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Principal/Tusk",
+                  "Origin:str": "Bust",
+                  "Position:num": "1",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"Brutus-Quebra-1\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Quebra do selo\""] },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [103, 103, 0, 4, "\"Brutus confirma a Balastrus que o selo em Melios foi rompido. As runas de contencao cederam e a energia antiga voltou a vazar pela mina.\""]
+            },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            { "code": 230, "indent": 0, "parameters": [2] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "2",
+                  "PictureName:str": "Portraits/Principal/Thorin Armadura Helmet",
+                  "Origin:str": "Bust",
+                  "Position:num": "9",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"Brutus-Quebra-2\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Resposta de Thorin\""] },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [103, 103, 0, 4, "\"Thorin percebe a gravidade da quebra do selo e decide agir imediatamente para conter os efeitos antes que Melios colapse.\""]
+            },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\",\"2\"]",
+                  "EndOffsetX:eval": "+200",
+                  "EndOffsetY:eval": "-0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 123, "indent": 0, "parameters": ["A", 0] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 49,
+      "y": 82
     }
   ]
 }
