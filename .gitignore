@@ -19,3 +19,4 @@ frontend/save/file3.rmmzsave
 /zik-prompts-oneshot
 planos
 .claude
+.claude/settings.local.json
