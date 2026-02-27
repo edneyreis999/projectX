@@ -1,100 +1,115 @@
-﻿# 🎮 Narrative Structure Document (NSD) - Fluxo Visual De Cenas
+﻿# Narrative Structure Document (NSD) - Fluxo Visual De Cenas
 
-## 📄 Quest: A Barganha do Sigmetal
+## Quest: Barganha Sigmetal
 
-### 1️ Resumo Geral *(Checkpoint 0)*
+### 1 Resumo Geral (Checkpoint 0)
 
-- [x] **Concluído**  
-- **Nome da quest**: A Barganha do Sigmetal
-- **Importância na campanha**: Main (tamanho reduzido)
-- **Arco narrativo**: Recusa do Chamado  
-- **Quest anterior**: Ameaça Lupina  
-- **Conflito central**: O grupo retorna à Gildrat e encontra Balastrus os esperando na Estrada do Cão Luar, ansioso por saber os resultados da última expedição e recolher os minérios. O jogador tem escolhas a fazer com grande impacto na narrativa. Thorin espera nunca mais ver Balastrus ou seus capatazes, nem ouvir falar das expedições, mas quando o pagamento não é realizado na data prometida, começa a desconfiar de que a situação está longe de acabar. Ele retorna para casa e dorme, sonhando com Mélia outra vez, que desta vez lhe mostra um símbolo estranho.
-- **Objetivo narrativo global**: Introduzir ramificações narrativas, o selo que prende os Ignotos e dar ao jogador a escolha do que fazer em relação aos minérios coletados.
-- **Premissa resumida**: Thorin se vê dividido, pois não sabe ao certo quais serão os impactos de suas escolhas a longo prazo. Balastrus está ansioso pelos resultados e acaba o precionando um pouco.  
-- **Resumo**: Após a sequência da nevasca e batalhas, o grupo está de volta à Gildrat. Eles prestam contas na Estrada do Cão Luar antes de receberem o pagamento enfim irem para casa. Balastrus resolve então adiar o pagamento para o dia seguinte. Filena pressiona por pagamento e troca farpas com Balastrus, enquanto Thorin tenta evitar o conflito.
-- **Locais principais**:  
-  - Estrada do Cão Luar
+- [x] Concluido
+- Nome da quest: Barganha Sigmetal
+- Importancia na campanha: Main
+- Arco narrativo: Recusa do Chamado
+- Quest anterior: Travessia Tóxica
+- Conflito central: Após sobreviverem à travessia por Ekios, o grupo chega junto na Estrada do Cão-luar. O deposito dos minerais no baú vira ponto de tensão porque o destino do Sigmetal ainda pode ser
+  decidido.
+- Objetivo narrativo global: Consolidar o retorno da expedição, formalizar a entrega dos Kravens, registrar a decisão do Sigmetal e encerrar o ciclo com o pagamento adiado para a manhã seguinte.
+- Premissa resumida: Thorin, Kilin, Mhordred, Filena e Balastrus chegam juntos ao ponto de reunião. Brutus já está lidando com os outros expedicionários que chegaram na frente. Balastrus assume
+  diretamente a cobranca da entrega referente a Thorin (jogador) e Filena, provoca o grupo e direciona o fluxo para a taverna no dia seguinte.
+- Resumo: O grupo chega unido a Estrada do Cão-luar e organiza a entrega dos minerais coletados. Os Kravens precisam ser depositados para liberar o avançar da cena. Em seguida, Thorin define o destino
+  do Sigmetal (entregar ou esconder/desconversar), o que altera a reação de Balastrus.
+
+- Locais principais
+
+  - Estrada do Cão-luar (Map 17)
+  - Ponto do baú de deposito da expedição
   - Distrito Comercial
   - Distrito Residencial
   - Casa dos Forjaprata
-**NPCs principais**:  
-  - Thorin  
-  - Kilin  
+
+- NPCs principais
+  - Thorin
+  - Kilin
   - Mhordred
   - Filena
   - Balastrus
-  - Expedicionários anãos
+  - Expedicionários anões
   - Sáparo
   - Mélia
-  - Tordan
+- Itens / recursos narrativos
+  - Kravens (lote da expedição)
+  - Sigmetal (item raro e decisão)
 
-### 2️ Pré-condições Narrativas (Checkpoint 1)
+---
 
-- [x] **Concluído**
+### 2 Pré-condições Narrativas (Checkpoint 1)
 
-| Tipo | Descrição |
-|------|-----------|
-| **Flags / Decisões anteriores** | Jogador concluiu a quest “Ameaça Lupina.” |
-| **Limitações ou bloqueios** |
+- [x] Concluido
 
-### 3️ Fluxo Visual Resumido *(Checkpoint 2)*
+| Tipo                                                                                 | Descricao                                                                                             |
+| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- |
+| Flags / Jogador concluiu a quest "Travessia Tóxica" e retornou com Balastrus no time |
+| Limitacoes ou bloqueios                                                              | Progressao depende de depositar os Kravens no baú; pagamento permanece bloqueado até a manhã seguinte |
 
-Quest: Barganha do Sigmetal -
- ├── Cena 1: Estrada do Cão Luar — Premissa: Conversa com Balastrus sobre a entrega dos minérios e multiplas escolhas
- │      ├── Beat 1: Chegada à Estrada do Cão Luar (🎬)
- │      ├── Beat 2: Conversa com Balastrus (🎮)
- │      ├── Beat 3: Escolhas sobre qual minério entregar (🎮)
- │
- ├── Cena 2: Volta Para Casa — Premissa: Thorin, após tomar suas deciões, retorna ao lar dos Forjaprata
- │      ├── Beat 1: Travessia pelo Distrito Comercial (🎮)
- │      ├── Beat 2: Travessia pelo Distrito Residencial (🎮)
- │      ├── Beat 3: Chegada ao lar dos Forjaprata (🎮)
- │  
- └── Cena 3: Conversa com Sáparo e noite de sono — Premissa: Thorin chega em casa, percebe que seu pai não retornou ao lar para dormir pela primeira vez na vida, conversa com o Sáparo de estimação e vai dormir
-        ├── Beat 1: Chegada (🎬)
-        ├── Beat 2: Conversa com o Sáparo e especulações (🎮)
-        └── Beat 3: Dormir (🎬)
-        └── Beat 3: Pesadelo com Mélia e fim da quest (🎬)
+---
 
-#### 4 Tabela de Cenas
+### 3 Fluxo Visual Resumido (Checkpoint 2)
 
-| #  | Beat                                          | Descrição                                                                                                            | Controle |
-| ---|-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------|----------|
-| 1  | Chegada na Estrada do Cão Luar                 | O grupo chega com o tempo limpo após a tempestade; Balastrus os aguarda ansioso.                                      | 🎬       |
-| 2  | Organização da entrega                          | Balastrus e os capatazes organizam o grupo em fila para entregar os minérios no baú central.                      | 🎬       |
-| 3  | Entrega dos minérios                            | Jogador entrega manualmente os minérios de Kravens (9 ou 10) no baú de Kravens; condição para avançar.                  | 🎮       |
-| 4  | Cenas condicionais após entrega dos Kravens   | Dependendo da posse e entrega do Sigmetal, ocorrem as seguintes situações:                                           | 🎬       |
-|     | — Se Balastrus já tem o Sigmetal (ou recebe neste momento) | Balastrus faz cena empolgada dizendo a Balastrus que ele encontrou o Sigmetal; Thorin reage, pois sabe que foi ele quem achou.|          |
-|     | — Se jogador entregou o Sigmetal no baú de Kravens ou diretamente para Balastrus | Balastrus analisa o Sigmetal, mantém silêncio, e o minério, “finge que nada aconteceu”, mantendo o mistério.           |          |
-|     | — Se jogador não entregou o Sigmetal          | Após entrega dos Kravens, Balastrus conversa com Thorin e comenta enigmaticamente:                | “Você está muito novo para carregar tanto peso nos bolsos... Mas tudo bem. Nem todo baú se abre no primeiro puxão.” |
-| 5  | Conversa final com Balastrus                    | Jogador pode dialogar com Balastrus, encerrando a cena; diálogos variam conforme as escolhas anteriores.             | 🎮       |
-| 6   | Volta para casa e conversa com Sáparo                    | Thorin conversa com seu Sáparo enquanto sente a ausência de Tordan, que pela primeira vez não retornou para dormir em casa.             | 🎮       |
-| 7  | Noite de sono e pesadelo                   | Thorin dorme e tem mais um pesadelo com sua mãe, Mélia.            | 🎮       |
+```plaintext
+Quest: Barganha Sigmetal
+ +-- Cena 1: Retorno e organização na Estrada do Cão-luar
+ |      +-- Beat 1: Chegada conjunta do grupo (Thorin, Kilin, Mhordred, Filena e Balastrus)
+ |      +-- Beat 2: Balastrus assume a cobranca e organiza o depósito
+ |      +-- Beat 3: Depósito obrigatório dos Kravens no baú da expedição
+ |      +-- Beat 4: Escolha sobre o destino do Sigmetal
+ |      +-- Beat 5: Reação de Balastrus (elogio, provocação ou suspeita)
+ |      +-- Beat 6: Pagamento adiado e ordem para encontro na taverna
+ +-- Cena 2: Dispersão e caminho para casa
+ |      +-- Beat 1: Grupo é dispensado; aliados se separam
+ |      +-- Beat 2: Thorin cruza os distritos de volta para casa
+ +-- Cena 3: Encerramento do dia
+        +-- Beat 1: Thorin nota a ausência de Tordan
+        +-- Beat 2: Conversa com Sáparo e inquietação
+        +-- Beat 3: Sono e gancho onirico com Mélia
+```
 
-##### Beats por cena
+#### Tabela de Cenas
 
-##### Cena 1 – Estrada do Cão Luar
+| #   | Nome da Cena                                     | Premissa resumida (expandida)                                                                                                                                            |
+| --- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1   | **Retorno e organizacao na Estrada do Cão-luar** | Com o grupo reunido após a travessia, Balastrus conduz a prestação de contas. O depósito dos Kravens no baú é obrigatório, e o jogador define como lidar com o Sigmetal. |
+| 2   | **Dispersao e caminho para casa**                | A reunião se encerra sem pagamento imediato. O grupo se desfaz e Thorin retorna sozinho pelos distritos de Gildrat.                                                      |
+| 3   | **Encerramento do dia**                          | Em casa, Thorin processa os eventos do retorno, interage com Sáparo e encerra a quest com o gancho narrativo do sonho.                                                   |
 
-| #  | Beat                                    | Descrição                                                                                                    | Controle |
-| ---|----------------------------------------|--------------------------------------------------------------------------------------------------------------|----------|
-| 1  | Chegada à Gildrat                      | Thorin retorna com Kilin, Mhordred, Filena, Balastrus e os outros expedicionários                       | 🎮       |
-| 2  | Dialogo com Balastrus               | Ansioso e sedento por otimas noticias, Balastrus preciona Thorin; Filena observa e cobra o pagamento.    | ??       |
-| 3  |Escolhas do Jogador| Thorin pode escolher entre entregar apenas os Kravens ou também o Sigmetal. As escolham terão impacto na narrativa.                | 🎮       |
-| 4  | Volta para casa                  | Balastrus dispensam os expedicionários, mas adiam o pagamento. Thorin fica confuso, pois esperava não ter mais que ver seus contratantes ou lidar com expedições novamente. Ele aceita o adiamento imposto, pois era a única coisa que poderia fazer, e finalmente retorna para casa.   | 🎬       |
+#### Beats por Cena
 
-##### Cena 2 – Volta para casa
+##### Cena 1 - Retorno e organização na Estrada do Cao-Luar
 
-| #  | Beat                                    | Descrição                                                                                                    | Controle |
-| ---|----------------------------------------|--------------------------------------------------------------------------------------------------------------|----------|
-| 1  | O caminho de volta                      | Thorin atravessa os distritos comerciais e residencial até chegar em casa.                       | 🎮       |
+| ID  | Titulo                       | Premissa Resumida                                                                                                                                       | Tipo |
+| --- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
+| 1-A | Chegada conjunta             | Thorin chega com Kilin, Mhordred, Filena e Balastrus. A cena reforca que todos atravessaram juntos e estão presentes no acerto final.                   | CS   |
+| 1-B | Cobranca direta de Balastrus | Sem intermedio de Brutus, Balastrus puxa a conversa, pressiona por resultados e direciona os expedicionários ao ponto de depósito.                      | CS   |
+| 1-C | Deposito dos Kravens no baú  | O jogador controla Thorin e deposita o lote de Kravens da expedição. Esse passo destrava a continuidade da cena.                                        | JOG  |
+| 1-D | Decisão do Sigmetal          | Thorin escolhe entre entregar o Sigmetal para Balastrus ou desconversar/guardar. A escolha altera falas e flags narrativas.                             | JOG  |
+| 1-E | Reação e provocação          | Balastrus reage ao resultado da entrega: pode exaltar Thorin, cutucar o grupo ou insinuar desconfianca sobre o Sigmetal ausente.                        | CS   |
+| 1-F | Pagamento adiado             | Mantendo a essencia antiga do evento do baú, Balastrus encerra o acerto e manda todos irem a Taverna da Pedra Vulcânica na manha seguinte para receber. | CS   |
+| 1-G | Caloteiro miserável!         | Filena se enfurece com Balastrus por não acertar as contas de imediado depois de ter cobrado tanto deles na mina.                                       | CS   |
 
-##### Cena 3 – Conversa com Sáparo e Noite de Sono
+##### Cena 2 - Dispersão e caminho para casa
 
-| #  | Beat                                    | Descrição                                                                                                    | Controle |
-| ---|----------------------------------------|--------------------------------------------------------------------------------------------------------------|----------|
-| 1  | Chegada ao lar                    | Thorin retorna e percebe que Tordan, pela primeira vez em sua vida, não retornou para dormir em casa.                       | 🎮       |
-| 2  | Dialogo com Balastrus               | Ansioso e sedento por otimas noticias, Balastrus preciona Thorin; Filena observa e cobra o pagamento.    | ??       |
-| 3  |Noite de Sono| Thorin quer sair para procurar por seu pai, mas é perigoso andar por aí de madrugada. Mesmo contrariado, só lhe resta dormir.                | 🎮       |
-| 4  | Pesadelo e fim da quest                  | Thorin tem mais um pesadelo com sua mãe, Mélia, e desta vez, ela lhe mostra um símbolo estranho. A quest tem fim quando ele acorda na manhã seguinte.   | 🎬       |
+| ID  | Titulo           | Premissa Resumida                                                                                      | Tipo |
+| --- | ---------------- | ------------------------------------------------------------------------------------------------------ | ---- |
+| 2-A | Grupo dispensado | Kilin, Mhordred e Filena se despedem; o grupo deixa de atuar em bloco após o fechamento da negociação. | CS   |
+| 2-B | Travessia urbana | O jogador controla Thorin no retorno pelo Distrito Comercial e Residencial até a casa dos Forjaprata.  | JOG  |
 
+##### Cena 3 - Encerramento do dia
+
+| ID  | Titulo                  | Premissa Resumida                                                                                                    | Tipo |
+| --- | ----------------------- | -------------------------------------------------------------------------------------------------------------------- | ---- |
+| 3-A | Casa silenciosa         | Thorin chega em casa e percebe um clima incomum, com ausencia de Tordan no fim do dia.                               | JOG  |
+| 3-B | Conversa com Sáparo     | Thorin verbaliza dúvidas e desconforto sobre os acontecimentos recentes enquanto tenta organizar os proximos passos. | JOG  |
+| 3-C | Sono e gancho narrativo | Thorin dorme e a cena fecha com o sonho envolvendo Mélia, abrindo o proximo movimento do arco.                       | CS   |
+
+## 5 Fluxo de Gameplay (resumo)
+
+Estrada do Cão-luar: Chegada conjunta -> Cobrança de Balastrus -> Depósito obrigatório dos Kravens no baú -> Escolha sobre Sigmetal -> Reação condicional -> Pagamento adiado para a taverna.
+
+Retorno noturno: Dispersão do grupo -> Caminho pelos distritos -> Casa dos Forjaprata -> Conversa com Sáparo -> Sono e sonho com Mélia.

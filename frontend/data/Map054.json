@@ -19,7 +19,7 @@
   "parallaxSy": 0,
   "scrollType": 0,
   "specifyBattleback": false,
-  "tilesetId": 11,
+  "tilesetId": 14,
   "width": 35,
   "data": [
     6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274, 6274,
@@ -264,7 +264,7 @@
             "switch2Valid": false,
             "variableId": 61,
             "variableValid": true,
-            "variableValue": 4
+            "variableValue": 3
           },
           "directionFix": false,
           "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },

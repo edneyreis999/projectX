@@ -515,7 +515,7 @@
     },
     {
       "id": 5,
-      "name": "EV005",
+      "name": "Teleporte (Mina de Esgoto 1F)",
       "note": "",
       "pages": [
         {
@@ -535,43 +535,25 @@
             "variableValue": 0
           },
           "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "Distrito Residncial Nobre/$Iluminacao",
-            "direction": 8,
-            "pattern": 0,
-            "characterIndex": 0
-          },
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
           "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
+            { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
+            { "code": 201, "indent": 0, "parameters": [0, 24, 28, 26, 0, 0] },
+            { "code": 0, "indent": 0, "parameters": [] }
           ],
-          "moveFrequency": 1,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 4,
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
           "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
+          "priorityType": 0,
+          "stepAnime": false,
           "through": false,
-          "trigger": 0,
-          "walkAnime": false
+          "trigger": 1,
+          "walkAnime": true
         }
       ],
-      "x": 6,
-      "y": 14
+      "x": 2,
+      "y": 0
     },
     {
       "id": 6,
@@ -1115,7 +1097,7 @@
     },
     {
       "id": 15,
-      "name": "EV015",
+      "name": "Teleporte (Mina de Esgoto 1F)",
       "note": "",
       "pages": [
         {
@@ -1135,47 +1117,29 @@
             "variableValue": 0
           },
           "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "Distrito Residncial Nobre/$Iluminacao",
-            "direction": 8,
-            "pattern": 0,
-            "characterIndex": 0
-          },
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
           "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
+            { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
+            { "code": 201, "indent": 0, "parameters": [0, 24, 28, 26, 0, 0] },
+            { "code": 0, "indent": 0, "parameters": [] }
           ],
-          "moveFrequency": 1,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 4,
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
           "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
+          "priorityType": 0,
+          "stepAnime": false,
           "through": false,
-          "trigger": 0,
-          "walkAnime": false
+          "trigger": 1,
+          "walkAnime": true
         }
       ],
-      "x": 4,
-      "y": 7
+      "x": 1,
+      "y": 0
     },
     {
       "id": 16,
-      "name": "EV016",
+      "name": "Teleporte (Mina de Esgoto 1F)",
       "note": "",
       "pages": [
         {
@@ -1195,43 +1159,25 @@
             "variableValue": 0
           },
           "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "Distrito Residncial Nobre/$Iluminacao",
-            "direction": 8,
-            "pattern": 0,
-            "characterIndex": 0
-          },
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
           "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
+            { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
+            { "code": 201, "indent": 0, "parameters": [0, 24, 28, 26, 0, 0] },
+            { "code": 0, "indent": 0, "parameters": [] }
           ],
-          "moveFrequency": 1,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 4,
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
           "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
+          "priorityType": 0,
+          "stepAnime": false,
           "through": false,
-          "trigger": 0,
-          "walkAnime": false
+          "trigger": 1,
+          "walkAnime": true
         }
       ],
-      "x": 9,
-      "y": 8
+      "x": 3,
+      "y": 0
     },
     {
       "id": 17,
@@ -1293,9 +1239,128 @@
       "x": 40,
       "y": 4
     },
+    null,
     {
-      "id": 18,
-      "name": "Livro de sistemas",
+      "id": 19,
+      "name": "Teleporte (Mina de Esgoto 3F)",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "!Door2", "direction": 4, "pattern": 0, "characterIndex": 5 },
+          "list": [
+            { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
+            { "code": 201, "indent": 0, "parameters": [0, 26, 14, 37, 0, 0] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        }
+      ],
+      "x": 42,
+      "y": 3
+    },
+    null,
+    {
+      "id": 21,
+      "name": "Bau Simbolo de Tregua",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "!Chest", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [
+            { "code": 250, "indent": 0, "parameters": [{ "name": "Open1", "volume": 90, "pitch": 100, "pan": 0 }] },
+            { "code": 126, "indent": 0, "parameters": [1, 0, 0, 1] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, "Sistema"] },
+            { "code": 401, "indent": 0, "parameters": ["Você obteve o item Símbolo de Trégua."] },
+            { "code": 123, "indent": 0, "parameters": ["A", 0] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 2,
+      "y": 9
+    },
+    null,
+    {
+      "id": 23,
+      "name": "EV018",
       "note": "",
       "pages": [
         {
@@ -1420,8 +1485,8 @@
       "y": 9
     },
     {
-      "id": 19,
-      "name": "Teleporte (Mina de Esgoto 3F)",
+      "id": 24,
+      "name": "Quebra de memoria",
       "note": "",
       "pages": [
         {
@@ -1432,45 +1497,31 @@
             "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
+            "switch1Id": 65,
+            "switch1Valid": true,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
+            "variableId": 40,
+            "variableValid": true,
+            "variableValue": 8
           },
           "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
+          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [
+            { "code": 230, "indent": 0, "parameters": [60] },
+            { "code": 221, "indent": 0, "parameters": [] },
+            { "code": 101, "indent": 0, "parameters": ["Personagens Daratrine/Reed", 0, 0, 2, "Sistema"] },
             {
-              "code": 250,
+              "code": 401,
               "indent": 0,
               "parameters": [
-                {
-                  "name": "Move1",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
+                "Thorin e seu grupo encaram batalha atrás de batalha, o que chateia as crianças que assistem a noite da história. Elas ficam furiosas com Rheed pois aquilo parece nunca ter fim, então ele lhes fala sobre o Símbolo de Trégua."
               ]
             },
-            {
-              "code": 201,
-              "indent": 0,
-              "parameters": [0, 26, 14, 37, 0, 0]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
+            { "code": 222, "indent": 0, "parameters": [] },
+            { "code": 355, "indent": 0, "parameters": ["setSelfSwitchValue($gameMap.mapId(), 21, 'A', true);"] },
+            { "code": 123, "indent": 0, "parameters": ["A", 0] },
+            { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
           "moveRoute": {
@@ -1489,541 +1540,17 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        }
-      ],
-      "x": 42,
-      "y": 3
-    },
-    {
-      "id": 20,
-      "name": "Filena",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "switch1Id": 1,
-            "selfSwitchValid": false,
-            "actorId": 1,
-            "switch1Valid": false,
-            "variableValue": 0,
-            "itemValid": false,
-            "itemId": 1,
-            "variableValid": false,
-            "switch2Valid": false,
-            "switch2Id": 1,
-            "selfSwitchCh": "A",
-            "variableId": 1,
-            "actorValid": false
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "pattern": 0,
-            "direction": 2,
-            "tileId": 0,
-            "characterName": "Principal/$Filena"
-          },
-          "list": [
-            {
-              "indent": 0,
-              "code": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
+          "trigger": 3,
           "walkAnime": true
         },
         {
           "conditions": {
-            "switch1Id": 1,
-            "selfSwitchValid": true,
-            "actorId": 1,
-            "switch1Valid": false,
-            "variableValue": 0,
-            "itemValid": false,
-            "itemId": 1,
-            "variableValid": false,
-            "switch2Valid": false,
-            "switch2Id": 1,
-            "selfSwitchCh": "A",
-            "variableId": 1,
-            "actorValid": false
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "pattern": 0,
-            "direction": 2,
-            "tileId": 0,
-            "characterName": "Principal/$Filena"
-          },
-          "list": [
-            {
-              "indent": 0,
-              "code": 121,
-              "parameters": [44, 44, 0]
-            },
-            {
-              "indent": 0,
-              "code": 213,
-              "parameters": [20, 1, true]
-            },
-            {
-              "indent": 0,
-              "code": 101,
-              "parameters": ["", 0, 0, 2]
-            },
-            {
-              "indent": 0,
-              "code": 401,
-              "parameters": ["Filena: Encontrei algo na mesa de cima, um livro sobre os sistemas da mina."]
-            },
-            {
-              "indent": 0,
-              "code": 401,
-              "parameters": ["Ele confirma que as valvulas precisam ficar pressionadas para liberar as passagens."]
-            },
-            {
-              "indent": 0,
-              "code": 121,
-              "parameters": [67, 67, 0]
-            },
-            {
-              "indent": 0,
-              "code": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 2,
-      "y": 1
-    },
-    {
-      "id": 21,
-      "name": "Filena - livro 2F",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "switch1Id": 1,
-            "selfSwitchValid": false,
-            "actorId": 1,
-            "switch1Valid": false,
-            "variableValue": 6,
-            "itemValid": false,
-            "itemId": 1,
-            "variableValid": true,
-            "switch2Valid": false,
-            "switch2Id": 1,
-            "selfSwitchCh": "A",
-            "variableId": 40,
-            "actorValid": false
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "pattern": 0,
-            "direction": 2,
-            "tileId": 0,
-            "characterName": ""
-          },
-          "list": [
-            {
-              "indent": 0,
-              "code": 205,
-              "parameters": [
-                20,
-                {
-                  "list": [
-                    {
-                      "code": 21,
-                      "parameters": []
-                    },
-                    {
-                      "code": 3,
-                      "parameters": []
-                    },
-                    {
-                      "code": 3,
-                      "parameters": []
-                    },
-                    {
-                      "code": 3,
-                      "parameters": []
-                    },
-                    {
-                      "code": 3,
-                      "parameters": []
-                    },
-                    {
-                      "code": 3,
-                      "parameters": []
-                    },
-                    {
-                      "code": 3,
-                      "parameters": []
-                    },
-                    {
-                      "code": 3,
-                      "parameters": []
-                    },
-                    {
-                      "code": 3,
-                      "parameters": []
-                    },
-                    {
-                      "code": 3,
-                      "parameters": []
-                    },
-                    {
-                      "code": 3,
-                      "parameters": []
-                    },
-                    {
-                      "code": 3,
-                      "parameters": []
-                    },
-                    {
-                      "code": 3,
-                      "parameters": []
-                    },
-                    {
-                      "code": 3,
-                      "parameters": []
-                    },
-                    {
-                      "code": 3,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "parameters": []
-                    },
-                    {
-                      "code": 22,
-                      "parameters": []
-                    },
-                    {
-                      "code": 0,
-                      "parameters": []
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": true,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "indent": 0,
-              "code": 213,
-              "parameters": [20, 1, true]
-            },
-            {
-              "indent": 0,
-              "code": 121,
-              "parameters": [68, 68, 0]
-            },
-            {
-              "indent": 0,
-              "code": 205,
-              "parameters": [
-                20,
-                {
-                  "list": [
-                    {
-                      "code": 21,
-                      "parameters": []
-                    },
-                    {
-                      "code": 3,
-                      "parameters": []
-                    },
-                    {
-                      "code": 3,
-                      "parameters": []
-                    },
-                    {
-                      "code": 3,
-                      "parameters": []
-                    },
-                    {
-                      "code": 3,
-                      "parameters": []
-                    },
-                    {
-                      "code": 3,
-                      "parameters": []
-                    },
-                    {
-                      "code": 3,
-                      "parameters": []
-                    },
-                    {
-                      "code": 3,
-                      "parameters": []
-                    },
-                    {
-                      "code": 3,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "parameters": []
-                    },
-                    {
-                      "code": 22,
-                      "parameters": []
-                    },
-                    {
-                      "code": 0,
-                      "parameters": []
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": true,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "indent": 0,
-              "code": 121,
-              "parameters": [66, 66, 0]
-            },
-            {
-              "indent": 0,
-              "code": 123,
-              "parameters": ["A", 0]
-            },
-            {
-              "indent": 0,
-              "code": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": true,
-          "trigger": 3,
-          "walkAnime": false
-        }
-      ],
-      "x": 3,
-      "y": 1
-    },
-    {
-      "id": 22,
-      "name": "Balão Filena",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "switch1Id": 66,
-            "selfSwitchValid": false,
-            "actorId": 1,
-            "switch1Valid": true,
-            "variableValue": 0,
-            "itemValid": false,
-            "itemId": 1,
-            "variableValid": false,
-            "switch2Valid": false,
-            "switch2Id": 67,
-            "selfSwitchCh": "A",
-            "variableId": 1,
-            "actorValid": false
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "pattern": 0,
-            "direction": 2,
-            "tileId": 0,
-            "characterName": ""
-          },
-          "list": [
-            {
-              "indent": 0,
-              "code": 213,
-              "parameters": [20, 1, true]
-            },
-            {
-              "indent": 0,
-              "code": 230,
-              "parameters": [60]
-            },
-            {
-              "indent": 0,
-              "code": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": true,
-          "trigger": 4,
-          "walkAnime": false
-        }
-      ],
-      "x": 4,
-      "y": 1
-    },
-    {
-      "id": 23,
-      "name": "EV018",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
             "actorId": 1,
             "actorValid": false,
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "A",
-            "selfSwitchValid": false,
+            "selfSwitchValid": true,
             "switch1Id": 1,
             "switch1Valid": false,
             "switch2Id": 1,
@@ -2033,43 +1560,21 @@
             "variableValue": 0
           },
           "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "Distrito Residncial Nobre/$Iluminacao",
-            "direction": 8,
-            "pattern": 0,
-            "characterIndex": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 1,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 4,
+          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
           "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
+          "priorityType": 0,
+          "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         }
       ],
-      "x": 44,
-      "y": 5
+      "x": 0,
+      "y": 4
     }
   ]
 }

@@ -1,46 +1,71 @@
-# Canção Ancestral
+# Narrative Structure Document (NSD) - Canção Ancestral
 
-## Identificação
+## Quest: Canção Ancestral
 
-- **Tipo:** Reforço dos Corvos.
-- **Dificuldade:** Mediana.
-- **Localização:** Sala do Conselho.
-- **Nome Artístico:** Canção Ancestral.
-- **Desbloqueia ao Iniciar:** N/A.
-  
-## Contexto Narrativo
+### 1 Resumo Geral (Checkpoint 0)
 
-Quest que aprofunda o relacionamento entre Thorin e Sáparo Boca-de-Corneta, sua criatura de estimação. Corvinus propõe usar uma "isca barulhenta" para atrair os Ignotos até as armadilhas. Além disso, diz a Thorin que pode ensinar ao Sáparo uma canção ancestral que, ao ser cantada, emite frequências sônicas que desorientam os Ignotos. Isso desbloqueia a habilidade "Canção do Desvanecer".
+- [ ] Em andamento
+- Nome da quest: Canção Ancestral
+- Importância na campanha: amplia a influência dos Corvos e entrega uma nova mecânica sonora contra os Ignotos.
+- Arco narrativo: reforça a parceria entre Thorin, Corvinus e Sáparo, equilibrando diplomacia e criatividade tática.
+- Objetivo narrativo global: dar ao jogador uma opção de disrupção sonora para conter as criaturas durante as próximas fases.
+- Premissa resumida: Corvinus e a Anciã revelam que a Canção Ancestral, cantada por Sáparo, emite frequências que distraem os Ignotos e liberam a habilidade `Canção do Desvanecer`.
 
-## Gatilhos
+- Locais principais
+  - Sala do Conselho (Mapa 011, evento 012) — palco da oferta, da recusa e da celebração do ritual sonoro.
+- NPCs principais
+  - Corvinus (porta-voz da facção)
+  - Anciã / Sáparo Boca-de-Corneta (mentor sonoro e criatura que aprende o canto)
+  - Thorin (protagonista que escolhe aceitar o treinamento)
 
-- **NPC com a quest:** Corvinus.
-- **Requisitos:** Ter completado a quest: Resgatar Corvos.
-- **Gatilho:** Falar com Corvinus na Sala do Conselho.
-- **Condição para concluir:**
-  - Falar com Sáparo na Sala do Conselho.
-  - Falar com Corvinus para confirmar a decisão sobre usar ou não Sáparo como isca.
+### 2 Pré-condições Narrativas (Checkpoint 1)
 
-## Estrutura Sistêmica
+| Tipo | Descrição |
+| --- | --- |
+| Flags / Decisões anteriores | A quest só aparece depois que a família Corvos já foi resgatada (`resgatarCorvos`) e `variableId 61` foi ajustada para 2, garantindo que o bloco de introdução seja exibido. |
+| Limitações ou bloqueios | A Anciã recita que a Canção exige o resgate completo para começar; sem aceitar essa exigência, o evento permanece em loop no bloco “Requisito” e a quest não ativa. |
 
-- **Atores Envolvidos:**
-  - Sáparo Boca-de-Corneta (criatura de estimação)
-  - Thorin (protagonista)
-  - Corvinus (NPC principal)
-- **Variáveis / Flags Alteradas:**
-  - `v_influencia_corvos`
-  
-## Desfechos Possíveis
+### 3 Fluxo Visual Resumido (Checkpoint 2)
 
-- **Final A (Aceita):** Thorin treina Sáparo para correr em rota específica, berrar nos momentos certos e servir de isca para atrair os Ignotos às armadilhas.
+- [ ] Em andamento
 
-## Condição de Falha
+```plaintext
+Quest: Canção Ancestral
+ +-- Cena 1: Sala do Conselho - Requisito ancestral
+ |      +-- Beat 1: A Anciã lembra que a família Corvos deve estar salva antes de cantar (variável 61).
+ +-- Cena 2: Sala do Conselho - Treinamento de Sáparo
+        +-- Beat 1: Corvinus e a Anciã oferecem a canção ancestral, explicando o uso como isca sonora.
+        +-- Beat 2: O jogador escolhe “Ouvir canção” (SQSM.AddQuest “ouvirCancao”, journal) ou “Agora não” (recusa com “Volte quando puder ouvir.”).
+        +-- Beat 3: Aceitar dispara `SQSM.CompleteTaskForQuest("ouvirCancao", 1)`, `SQSM.CompleteQuest("ouvirCancao")`, aparece “Corvos +35 pontos!” e finaliza com “A canção agora vive no coração de cada um.”
+```
 
-- **Final B (Recusa):** Thorin protege Sáparo e não o coloca em risco.
-- **Final C (Ignora):** Jogador ignora a quest.
+#### Tabela de Cenas
 
-## Recompensas
+| # | Nome da Cena | Premissa resumida (expandida) |
+| --- | --- | --- |
+| 1 | **Sala do Conselho — Requisito ancestral** | O evento verifica `variableId 61` e reforça que o resgate da família precisa estar finalizado antes de seguir com a canção. |
+| 2 | **Sala do Conselho — Treinamento de Sáparo** | Aceitar provoca a conclusão da quest `ouvirCancao`, aplica o bônus narrativo e ativa a habilidade, enquanto recusar repete o pedido. |
 
-- **v_influencia_corvos:** +35 pontos (do total de 100).
-- **Skill:** Canção do Desvanecer.
-- **Narrativa:** Cena de treinamento cômica com Sáparo aprendendo a "berrar e correr".
+#### Beats por Cena
+
+##### Cena 1 - Requisito
+
+| Beat | Premissa Resumida | Tipo |
+| ---- | ---------------- | ---- |
+| **1-A - Requisito** | A família Corvos deve ser salva antes de continuar. | CS |
+
+##### Cena 2 - Ouvindo a Canção
+
+| Beat | Premissa Resumida | Tipo |
+| ---- | ---------------- | ---- |
+| **2-A - A Canção Ancestral** | A Anciã diz que precisa cantar a canção ancestral. | CS |
+| **2-B - Escolha** | Thorin decide ouvir ou não a canção anestral. | CS |
+| **2-B-a - A Canção Ancestral** | Thorin decide ouvir a canção anestral. | CS |
+| **2-B-b - A Canção Ancestral** | Thorin decide não ouvir a canção anestral. | CS |
+| **2-C - Espírito Fortalecido** | O espírito de Thorin é fortalecido. | CS |
+
+##### Cena 3 - Alma Fortificada
+
+| Beat | Premissa Resumida | Tipo |
+| ---- | ---------------- | ---- |
+| **3-A - Inspirados** | A canção agora vive no coração de cada um. | CS |
