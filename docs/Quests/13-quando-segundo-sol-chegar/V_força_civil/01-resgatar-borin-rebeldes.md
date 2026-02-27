@@ -27,7 +27,7 @@
 | Tipo | Descrição |
 | --- | --- |
 | Flags / Decisões anteriores | Filena identificou Thorin como aliado confiável durante o arco da Revolução. |
-| Limitações ou bloqueios | Mina de Kravens está trancada até o início da quest; resgate depende de uma rota alternativa de infiltração. |
+| Limitações ou bloqueios | Mina de Kravens está trancada até o início da quest; resgate depende de uma rota alternativa de infiltração. Thorin deve possuir dinamite. |
 
 ### 3 Fluxo Visual Resumido (Checkpoint 2)
 
@@ -48,12 +48,13 @@ Quest: Resgatar Borin e Rebeldes em Kravens
 
 #### Tabela de Cenas
 
-| # | Nome da Cena | Premissa resumida (expandida) |
+| # | Nome da Cena | Premissa resumida (expandida) | Tipo |
 | --- | --- | --- |
-| 1 | **Pedido da Filena** | Filena explica a situação dos rebeldes e pede a Thorin que vá até Kravens. |
-| 2 | **Infiltração em Kravens** | Thorin sai da Casa, atravessa as ruas patrulhadas e chega à Mina de Kravens. |
-| 3 | **Libertação na Mina** | Thorin neutraliza guardas e enfrenta o dilema de quem salvar primeiro: Borin, os rebeldes, ou ambos. |
-| 4 | **Retorno e Repercussão** | Thorin volta com os salvos e Filena reage ao desfecho escolhido. |
+| 1 | **Pedido da Filena** | Filena explica a situação dos rebeldes e pede a Thorin que vá até Kravens. | CS |
+| 2 | **Infiltração em Kravens** | Thorin sai da Casa de Filena, atravessa as ruas patrulhadas e chega à Mina de Kravens. | JOG |
+| 3 | **Salvar Borin** | Thorin resgata Borin. | CS |
+| 3 | **Salvar Rebeldes** | Thorin resgata o grupo de rebeldes. | CS |
+| 4 | **Retorno e Repercussão** | Thorin volta com os salvos e Filena reage ao desfecho escolhido. | JOG |
 
 #### Beats por Cena
 
@@ -70,32 +71,15 @@ Quest: Resgatar Borin e Rebeldes em Kravens
 | Beat | Premissa Resumida | Tipo |
 | ---- | ---------------- | ---- |
 | **2-A - Travessia das ruas** | O jogador atravessa os becos de Kravens evitando patrulhas. | JOG |
-| **2-B - Entrada da mina** | Thorin encontra a entrada trancada e precisa forçar a passagem. | CS |
-| **2-C - Canais de ventilação** | Uma oportunidade de contornar guardas aparece após resolver quebra-cabeças simples. | JOG |
+| **2-B - Entrada da mina** | Thorin encontra a entrada trancada. | CS |
+| **2-C - Resgate de Borin** | Thorin acessa a mina utilizando o caminho do tericeiro andar. | JOG |
+| **2-D - Resgate de Borin** | Thorin encontra e resgata Borin.| CS |
+| **2-E - Resgate dos Rebeldes** | Thorin encontra e resgata o grupo de rebeldes. | CS |
 
-##### Cena 3 - Libertação na Mina
-
-| Beat | Premissa Resumida | Tipo |
-| ---- | ---------------- | ---- |
-| **3-A - Guardas da galeria** | Thorin enfrenta os guardas que protegem as celas. | JOG |
-| **3-B - Sala dos rebeldes** | Thorin libera o primeiro grupo de rebeldes e decide quantos pôr em segurança. | CHOICE |
-| **3-C - Cela de Borin** | O jogador escolhe libertar Borin imediatamente ou garantir mais rebeldes. | CHOICE |
-| **3-D - Ruptura ou cooperação** | Dependendo do resgate, Borin aceita trabalhar com Thorin ou recusa. | CS |
-
-##### Cena 4 - Retorno e Repercussão
+##### Cena 3 - Retorno e Repercussão
 
 | Beat | Premissa Resumida | Tipo |
 | ---- | ---------------- | ---- |
-| **4-A - Encontro com Filena** | Filena avalia quem foi salvo, comenta a coragem de Thorin e aponta consequências. | CS |
-| **4-B - Mira para a próxima etapa** | Filena menciona que a Força Civil será reforçada; Borin revela suas intenções. | CS |
-
-### 4 Desfechos Narrativos Pontuais
-
-- **Final A:** Borin e grupo de rebeldes libertados; reforça alianças e ganha confiança de Filena.
-- **Final B:** Apenas o grupo é salvo; Borin se sente traído, mas a Força Civil recebe novos membros e a narrativa reforça o custo pessoal.
-- **Final C:** Apenas Borin é resgatado; a tensão com Filena aumenta, mas a rivalidade entre Thorin e Borin rende material para cortes futuros.
-- **Final D:** O jogador ignora o pedido e a quest fica pendente; Filena se distancia, e a moralidade de Thorin é questionada.
-
-### 5 Gancho para o Próximo Capítulo
-
-- Filena observa o saldo da operação e coloca Thorin em contato com os comandantes de Kravens para preparar a ofensiva contra o segundo sol. Borin, salvo ou não, continua sendo catalisador das emoções e do comprometimento de Thorin.
+| **3-A - Volta para Gildrat** | Retorna para Gildrat para falar com Filena. | JOG |
+| **3-B - Encontro com Filena** | Filena avalia quem foi salvo, comenta a coragem de Thorin e aponta consequências. | CS |
+| **3-C - Mira para a próxima etapa** | Filena menciona que a Força Civil será reforçada; Borin revela suas intenções. | CS |

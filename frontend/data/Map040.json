@@ -232,6 +232,41 @@
           "through": false,
           "trigger": 1,
           "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 80,
+            "variableValid": true,
+            "variableValue": 1
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
+            { "code": 201, "indent": 0, "parameters": [0, 35, 48, 88, 0, 0] },
+            { "code": 355, "indent": 0, "parameters": ["SQSM.CompleteTaskForQuest(\"resgatarCorvos\", 1);"] },
+            { "code": 655, "indent": 0, "parameters": ["SQSM.ShowTaskForQuest(\"resgatarCorvos\", 2);"] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
         }
       ],
       "x": 15,
@@ -257,7 +292,7 @@
             "switch2Valid": false,
             "variableId": 35,
             "variableValid": true,
-            "variableValue": 8
+            "variableValue": 10
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "dwarves_walk", "direction": 8, "pattern": 0, "characterIndex": 0 },
@@ -286,7 +321,7 @@
             "switch2Valid": false,
             "variableId": 35,
             "variableValid": true,
-            "variableValue": 9
+            "variableValue": 11
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "", "direction": 8, "pattern": 0, "characterIndex": 0 },
@@ -324,7 +359,7 @@
             "switch2Valid": false,
             "variableId": 35,
             "variableValid": true,
-            "variableValue": 8
+            "variableValue": 10
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Actor3", "direction": 6, "pattern": 1, "characterIndex": 6 },
@@ -353,7 +388,7 @@
             "switch2Valid": false,
             "variableId": 35,
             "variableValid": true,
-            "variableValue": 9
+            "variableValue": 11
           },
           "directionFix": false,
           "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
@@ -429,7 +464,7 @@
             "switch2Valid": false,
             "variableId": 35,
             "variableValid": true,
-            "variableValue": 8
+            "variableValue": 10
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Actor3", "direction": 2, "pattern": 0, "characterIndex": 6 },
@@ -458,7 +493,7 @@
             "switch2Valid": false,
             "variableId": 35,
             "variableValid": true,
-            "variableValue": 9
+            "variableValue": 11
           },
           "directionFix": false,
           "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
@@ -496,7 +531,7 @@
             "switch2Valid": false,
             "variableId": 35,
             "variableValid": true,
-            "variableValue": 8
+            "variableValue": 10
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Actor3", "direction": 4, "pattern": 2, "characterIndex": 6 },
@@ -525,7 +560,7 @@
             "switch2Valid": false,
             "variableId": 35,
             "variableValid": true,
-            "variableValue": 9
+            "variableValue": 11
           },
           "directionFix": false,
           "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
@@ -563,7 +598,7 @@
             "switch2Valid": false,
             "variableId": 35,
             "variableValid": true,
-            "variableValue": 8
+            "variableValue": 10
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Actor3", "direction": 4, "pattern": 2, "characterIndex": 6 },
@@ -592,7 +627,7 @@
             "switch2Valid": false,
             "variableId": 35,
             "variableValid": true,
-            "variableValue": 9
+            "variableValue": 11
           },
           "directionFix": false,
           "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
@@ -608,8 +643,8 @@
           "walkAnime": true
         }
       ],
-      "x": 9,
-      "y": 10
+      "x": 16,
+      "y": 13
     },
     {
       "id": 10,
@@ -678,73 +713,7 @@
       "x": 13,
       "y": 17
     },
-    {
-      "id": 11,
-      "name": "Tusk Mélios",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 35,
-            "variableValid": true,
-            "variableValue": 8
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Principal/$Tusk", "direction": 8, "pattern": 1, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 35,
-            "variableValid": true,
-            "variableValue": 9
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Principal/$Tusk", "direction": 8, "pattern": 1, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 14,
-      "y": 17
-    },
+    null,
     {
       "id": 12,
       "name": "Filin",
@@ -831,7 +800,7 @@
             "switch2Valid": false,
             "variableId": 35,
             "variableValid": true,
-            "variableValue": 8
+            "variableValue": 10
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 0 },
@@ -849,7 +818,7 @@
                   "PictureID:eval": "1",
                   "PictureName:str": "Actor3_1",
                   "Origin:str": "Bust",
-                  "Position:num": "0",
+                  "Position:num": "1",
                   "StartOffsetX:eval": "-200",
                   "StartOffsetY:eval": "+0",
                   "EasingType:str": "OutSine",
@@ -861,16 +830,18 @@
             { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
             { "code": 657, "indent": 0, "parameters": ["Picture File = Actor3_1"] },
             { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 0"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 1"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
             { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
             { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["O desabamento aconteceu do nada. Não estávamos"] },
-            { "code": 401, "indent": 0, "parameters": ["preparados para isso!"] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"7-A\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Tempos sombrios\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Corvinus fala sobre os problemas que a família vêm enfrentando em em Mélios para um de seus lacaios.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            { "code": 230, "indent": 0, "parameters": [15] },
             {
               "code": 357,
               "indent": 0,
@@ -901,16 +872,29 @@
             { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 5, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Já recebemos notícias de Gildrat? A essa altura o imperador já deve "] },
-            { "code": 401, "indent": 0, "parameters": ["ter sido avisado sobre os traidores."] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"7-B\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"O corvo de uma única asa\""] },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                103,
+                103,
+                0,
+                4,
+                "\"Um dos capitães de Corvinus comenta que ainda não receberam notícias de Gildrat e, que isso confirma o mau-presságio. Ele conta que sonhou com um corvo de uma única asa na noite anterior, o que costuma ser um sinal de que coisas muito ruins estão para acontecer.\""
+              ]
+            },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Nada ainda! Nenhum dos nossos batedores voltou"] },
-            { "code": 401, "indent": 0, "parameters": ["e nenhuma coruja-pavão chegou."] },
-            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 6, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Olhe, senhor! Quem são aqueles?"] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"7-C\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Covil de corvos\""] },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [103, 103, 0, 4, "\"Corvinus percebe a chegada dos estrados, diz que eles não parecem amigáveis e que com certeza vão se arrepender de entrar num covil de corvos.\""]
+            },
+            { "code": 117, "indent": 0, "parameters": [16] },
             {
               "code": 357,
               "indent": 0,
@@ -936,25 +920,29 @@
             { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
-            { "code": 205, "indent": 0, "parameters": [4, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
-            { "code": 205, "indent": 0, "parameters": [8, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
-            { "code": 205, "indent": 0, "parameters": [9, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
-            { "code": 205, "indent": 0, "parameters": [5, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
             {
               "code": 205,
               "indent": 0,
               "parameters": [
                 4,
-                { "list": [{ "code": 1, "indent": null }, { "code": 1, "indent": null }, { "code": 1, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
+                { "list": [{ "code": 45, "parameters": ["Move to: 14,16"], "indent": null }, { "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }
               ]
             },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 14,16"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                9,
+                { "list": [{ "code": 45, "parameters": ["Move to: 15,16"], "indent": null }, { "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
+              ]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 15,16"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
+            { "code": 213, "indent": 0, "parameters": [4, 1, true] },
+            { "code": 213, "indent": 0, "parameters": [9, 5, true] },
+            { "code": 230, "indent": 0, "parameters": [15] },
             {
               "code": 357,
               "indent": 0,
@@ -966,7 +954,7 @@
                   "PictureID:eval": "1",
                   "PictureName:str": "Actor3_1",
                   "Origin:str": "Bust",
-                  "Position:num": "0",
+                  "Position:num": "1",
                   "StartOffsetX:eval": "-200",
                   "StartOffsetY:eval": "+0",
                   "EasingType:str": "OutSine",
@@ -978,16 +966,18 @@
             { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
             { "code": 657, "indent": 0, "parameters": ["Picture File = Actor3_1"] },
             { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 0"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 1"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
             { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
             { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
             { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Mas o que significa isso?! O que vocês estão "] },
-            { "code": 401, "indent": 0, "parameters": ["fazendo na minha mina?"] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"7-D\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Batalha imimente\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Corvinus questiona Balastrus e os outros por entraram na mina dele sem permissão.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            { "code": 230, "indent": 0, "parameters": [15] },
             {
               "code": 357,
               "indent": 0,
@@ -1018,47 +1008,11 @@
             { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [45, 45, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 6, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Eu sou Tibério Balastrus, pontífice da ciência e tecnologia do império "] },
-            { "code": 401, "indent": 0, "parameters": ["de Gildrat. Vim pessoalmente lhe informar que esta mina não pertence mais a "] },
-            { "code": 401, "indent": 0, "parameters": ["você.  "] },
-            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Você até que é engraçado, careca! Mas eu não confio num anão que nem ao menos "] },
-            { "code": 401, "indent": 0, "parameters": ["é capaz de cuidar do próprio cabelo."] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "4",
-                  "PictureName:str": "Portraits/Principal/Tusk",
-                  "Origin:str": "Bust",
-                  "Position:num": "7",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 4"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Tusk"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 7"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [46, 46, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["E nós não confiamos em um anão surdo e que não sabe quando perdeu!"] },
-            { "code": 401, "indent": 0, "parameters": ["Essa mina não é mais sua, Corvo!"] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"7-E\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Decreto real\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Balastrus apresenta a si mesmo e ao resto do grupo. Sem papas na língua, vai direto ao assunto e mostra o decreto real.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            { "code": 230, "indent": 0, "parameters": [15] },
             {
               "code": 357,
               "indent": 0,
@@ -1089,9 +1043,58 @@
             { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 5, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Parece que vocês estavam procurando problemas e acabaram de encontrar!"] },
-            { "code": 401, "indent": 0, "parameters": ["Um Corvo jamais foge da batalha!"] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"7-F\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Honra\""] },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [103, 103, 0, 4, "\"O comandante da guarda pessoal de Corvinus chama Balastrus de mentiroso e diz que ele não tem honra, que se ele queria uma briga, com certeza achou!\""]
+            },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "4",
+                  "PictureName:str": "Portraits/Principal/Mhordred_nada",
+                  "Origin:str": "Bust",
+                  "Position:num": "7",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 4"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Mhordred_nada"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 7"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [46, 46, 0] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"7-G\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Eu não faria isso se fosse você\""] },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                103,
+                103,
+                0,
+                4,
+                "\"Mhordred pergunta ao comandante se ele sabe quem ele e Kilin são. Termina a frase dizendo - Eu não faria isso se fosse você - e sacando sua arma para batalha.\""
+              ]
+            },
+            { "code": 117, "indent": 0, "parameters": [16] },
             {
               "code": 357,
               "indent": 0,
@@ -1117,96 +1120,53 @@
             { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
+            { "code": 230, "indent": 0, "parameters": [30] },
             {
               "code": 205,
               "indent": 0,
               "parameters": [
                 7,
-                {
-                  "list": [
-                    { "code": 2, "indent": null },
-                    { "code": 2, "indent": null },
-                    { "code": 1, "indent": null },
-                    { "code": 1, "indent": null },
-                    { "code": 1, "indent": null },
-                    { "code": 1, "indent": null },
-                    { "code": 0 }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
+                { "list": [{ "code": 45, "parameters": ["Move to: 13,16"], "indent": null }, { "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }
               ]
             },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 2, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 2, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 13,16"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
             {
               "code": 205,
               "indent": 0,
               "parameters": [
                 5,
-                {
-                  "list": [
-                    { "code": 2, "indent": null },
-                    { "code": 1, "indent": null },
-                    { "code": 1, "indent": null },
-                    { "code": 1, "indent": null },
-                    { "code": 1, "indent": null },
-                    { "code": 1, "indent": null },
-                    { "code": 0 }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
+                { "list": [{ "code": 45, "parameters": ["Move to: 12,16"], "indent": null }, { "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }
               ]
             },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 2, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                9,
-                {
-                  "list": [{ "code": 3, "indent": null }, { "code": 1, "indent": null }, { "code": 1, "indent": null }, { "code": 1, "indent": null }, { "code": 1, "indent": null }, { "code": 0 }],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 3, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 12,16"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
             {
               "code": 205,
               "indent": 0,
               "parameters": [
                 8,
-                { "list": [{ "code": 1, "indent": null }, { "code": 1, "indent": null }, { "code": 1, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
+                { "list": [{ "code": 45, "parameters": ["Move to: 16,16"], "indent": null }, { "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }
               ]
             },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 1, "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 16,16"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 16, "indent": null }] },
+            { "code": 213, "indent": 0, "parameters": [14, 6, true] },
+            { "code": 213, "indent": 0, "parameters": [15, 2, true] },
+            { "code": 213, "indent": 0, "parameters": [12, 8, true] },
+            { "code": 213, "indent": 0, "parameters": [7, 1, true] },
+            { "code": 213, "indent": 0, "parameters": [5, 1, true] },
+            { "code": 213, "indent": 0, "parameters": [8, 1, true] },
             { "code": 221, "indent": 0, "parameters": [] },
-            { "code": 101, "indent": 0, "parameters": ["Dwarves", 0, 0, 1, "Rheed"] },
-            { "code": 401, "indent": 0, "parameters": ["Uma grande batalha aconteceu, crianças! Corvinus e seus Corvos"] },
-            { "code": 401, "indent": 0, "parameters": ["foram derrotados facilmente por Kilin, Mhordred, Tharok, Thorin e Tusk"] },
-            { "code": 401, "indent": 0, "parameters": ["que lutaram lada a lado. Apenas Balastrus não sujou as mãos. As aves"] },
-            { "code": 401, "indent": 0, "parameters": ["negras juraram vingança!"] },
-            { "code": 122, "indent": 0, "parameters": [35, 35, 0, 0, 9] },
+            { "code": 101, "indent": 0, "parameters": ["Portraits menores/Coreto", 0, 0, 2, "Rheed"] },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\"E então os céus tremeram. Houve uma grande batalha, crianças. Confirmando os presságios que Thorin vinha recebendo da mãe e que o comandante de Corvinus sonhara na noite anterior. A luta terminou com a vitória da equipe de Balastrus. Thorin e Filena lutaram bem, mas Kilin e Mhordred eram inigualáveis! Os corvos se retiraram logo depois."
+              ]
+            },
+            { "code": 122, "indent": 0, "parameters": [35, 35, 0, 0, 11] },
             { "code": 222, "indent": 0, "parameters": [] },
             { "code": 123, "indent": 0, "parameters": ["A", 0] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -1388,72 +1348,6 @@
       "x": 15,
       "y": 18
     },
-    {
-      "id": 16,
-      "name": "Tharok Mélios",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 35,
-            "variableValid": true,
-            "variableValue": 8
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Principal/$Tharok", "direction": 8, "pattern": 1, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 4,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 35,
-            "variableValid": true,
-            "variableValue": 9
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Principal/$Tharok", "direction": 8, "pattern": 1, "characterIndex": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 4,
-          "walkAnime": true
-        }
-      ],
-      "x": 16,
-      "y": 18
-    }
+    null
   ]
 }

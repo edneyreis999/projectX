@@ -50,18 +50,18 @@ Quest: Treinando a Guarda de Ferro
 
 | # | Nome da Cena | Premissa resumida (expandida) |
 | --- | --- | --- |
-| 1 | **Chegada ao Campo** | Thorin e Mhordred avaliam o ânimo dos guardas e estabelecem os objetivos do dia. |
+| 1 | **Conversa com Mhordred** | Mhordred pede ajuda para treinar a guarda para a batalha. |
 | 2 | **Discurso e Demonstração de Tática** | Thorin reacende o espírito da Guarda com um discurso e Mhordred mostra como usar os dados de combate contra os Ignotos. |
 | 3 | **Treinamento no Campo** | Os guardas praticam formações de cerco, contramedidas e simulações de emboscadas com Thorin liderando. |
 | 4 | **Alojamento e Compromisso** | Soldados comemoram a virada moral, compartilham histórias e juram acompanhar Thorin. |
 
 #### Beats por Cena
 
-##### Cena 1 - Chegada ao Campo
+##### Cena 1 - Início da Conversa
 
 | Beat | Premissa Resumida | Tipo |
 | ---- | ---------------- | ---- |
-| **1-A - Observação das camadas** | Thorin caminha pelo Campo de Treinamento em ruínas e compreende a gravidade da derrota. | JOG |
+| **1-A - Ir até Mhordred** | Jogador caminha pelo Conselho até Mhordred para ouvir o que ele tem a dizer. | JOG |
 | **1-B - Conselho com Mhordred** | Mhordred pede ajuda formal e aponta recrutas específicos. | CS |
 
 ##### Cena 2 - Discurso e Demonstração de Tática
@@ -70,14 +70,16 @@ Quest: Treinando a Guarda de Ferro
 | ---- | ---------------- | ---- |
 | **2-A - Discurso motivacional** | Thorin inspira os guardas com memórias das vitórias passadas e a necessidade de proteger Gildrat. | CS |
 | **2-B - Demonstração anti-Ignoto** | Mhordred apresenta os equipamentos e provocações que farão a guarda reagir com precisão. | CS |
-| **2-C - Escolha de foco** | O jogador decide enfatizar disciplina de cerco ou mobilidade leve. | CHOICE |
-| **2-D - Aplicação imediata** | O grupo testa a escolha com um curto exercício. | JOG |
+| **2-C - Escolha de foco** | O jogador decide enfatizar disciplina de cerco ou mobilidade leve. | CS |
+| **2-C-a - Escolha de foco** | O jogador decide enfatizar disciplina de cerco ou mobilidade leve. | CS |
+| **2-C-b - Escolha de foco** | O jogador decide enfatizar disciplina de cerco ou mobilidade leve. | CS |
+| **2-D - Aplicação imediata** | O grupo testa a escolha com um curto exercício. | CS |
 
 ##### Cena 3 - Treinamento no Campo
 
 | Beat | Premissa Resumida | Tipo |
 | ---- | ---------------- | ---- |
-| **3-A - Treinamento de Campo** | Os recrutas praticam manobras em duplas sob supervisão de Thorin. | JOG |
+| **3-A - Treinamento de Campo** | Os recrutas praticam manobras em duplas sob supervisão de Thorin. | CS |
 
 ##### Cena 4 - Alojamento e Compromisso
 

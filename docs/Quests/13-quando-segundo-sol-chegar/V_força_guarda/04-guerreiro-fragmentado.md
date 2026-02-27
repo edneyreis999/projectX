@@ -1,45 +1,69 @@
-# Guerreiro Fragmentado
+# Narrative Structure Document (NSD) - Guerreiro Fragmentado
 
-## Identificação
+## Quest: Guerreiro Fragmentado - V Força Guarda
 
-- **Tipo:** Reforço na Habilidade da Guarda de Ferro.
-- **Dificuldade:** Fácil.
-- **Localização:** Campo de Treinamento.
-- **Nome Artístico:** O Guerreiro Fragmentado.
-- **Desbloqueia ao Iniciar:** N/A.
+### 1 Resumo Geral (Checkpoint 0)
 
-## Contexto Narrativo
+- [ ] Em andamento
+- Nome da quest: Guerreiro Fragmentado
+- Importancia na campanha: aprofunda a mitologia de Kilin e conecta Thorin às tradições mais duras da Guarda
+- Arco narrativo: respeito doloroso, legado quebrado e renovação de confiança
+- Objetivo narrativo global: fazer com que Thorin entenda a nova face de Kilin e reforce a unidade antes do confronto final
+- Premissa resumida: Kilin desafia Thorin a um duelo simbólico no Campo de Treinamento para provar que o legado da Guarda segue intacto.
 
-Thorin conversa com Kilin e percebe que ele já não é mais o mesmo. Sua respiração está sempre pesada e ele até mesmo fala diferente. Kilin diz que tem uma última coisa para ensiná-lo e desafia Thorin para um duelo amigável.
+- Locais principais
+  - Campo de Treinamento
+  - Arena interna
+- NPCs principais
+  - Thorin
+  - Kilin
 
-## Gatilhos
+### 2 Pré-condições Narrativas (Checkpoint 1)
 
-- **NPC com a quest:** Kilin.
-- **Requisitos:** Ter completado as quests:
-  - Resgatando Kilin - O Resgate do Soldado Kilin
-  - Boas-vindas à Guarda de Ferro - O Bebê Chorão Cresceu!
-- **Gatilho:** Falar com Kilin no Campo de Treinamento.
-- **Condição para concluir:**
-  - Lutar com Kilin no Campo de Treinamento.
-  - Falar com Kilin após a luta.
+| Tipo | Descrição |
+| --- | --- |
+| Flags / Decisões anteriores | Ter completado “Resgatando Kilin - O Resgate do Soldado Kilin” e “Boas-vindas à Guarda de Ferro”. |
+| Limitações ou bloqueios | Kilin ainda carrega cicatrizes da prisão; o duelo serve para ele ver se Thorin cresceu sob pressão. |
 
-## Estrutura Sistêmica
+### 3 Fluxo Visual Resumido (Checkpoint 2)
 
-- **Atores Envolvidos:**
-  - Kilin (Mentor)
-  - Thorin (protagonista)
-- **Variáveis / Flags Alteradas:**
-  - `v_forca_guarda`
+- [ ] Em andamento
 
-## Desfechos Possíveis
+```plaintext
+Quest: Guerreiro Fragmentado - V Força Guarda
+ +-- Cena 1: Campo de Treinamento - Kilin conversa sobre o peso do passado antes de iniciar o duelo.
+        +-- Beat 1: Kilin mostra a respiração pesada e exige respeito; Thorin responde com calma.
+ +-- Cena 2: Duelo Fragmentado
+        +-- Beat 1: Thorin escolhe sua postura (defensiva, ofensiva ou tática).
+        +-- Beat 2: Kilin usa sequências inspiradas em antigos líderes da Guarda.
+        +-- Beat 3: A dor aumenta e Thorin precisa persistir.
+ +-- Cena 3: Revelação e Reconhecimento
+ |      +-- Beat 1: Kilin reconhece que Thorin honrou o legado e descreve o compromisso da Guarda.
+ |      +-- Beat 2: Flag v_forca_guarda é ativada e os soldados celebram a união emocional.
+```
 
-- **Final A (Luta Bem-sucedida):** Thorin enfrenta Kilin.
+#### Tabela de Cenas
 
-## Condição de Falha
+| # | Nome da Cena | Premissa resumida (expandida) |
+| --- | --- | --- |
+| 1 | **Diálogo pesado** | Kilin revela que mudou e usa o duelo para testar o crescimento de Thorin. |
+| 2 | **Duelo simbólico** | Uma luta controlada revela foco, resistência e respeito. |
+| 3 | **Canto da Guarda** | Kilin compartilha sabedoria, agradece Thorin e ativa a flag para marcar o capítulo. |
 
-- **Final B (Ignora):** Jogador não aceita o duelo com Kilin.
+#### Beats por Cena
 
-## Recompensas
+##### Cena 1 - Diálogo pesado
 
-- **v_forca_guarda:** +15 pontos (do total de 100)
-- **Narrativa:** Toda Guarda de Ferro assiste ao duelo, apreensivos e ansiosos ao mesmo tempo. Cena emocional.
+| Beat | Premissa Resumida | Tipo |
+| ---- | ---------------- | ---- |
+| **1-A - Respiração fragmentada** | O guarda explica o peso do trauma e observa a resposta de Thorin. | CS |
+| **1-B - Escolha de reação** | Thorin decide reagir com frieza, ou empatia. | CS |
+| **1-B-a - Ajudar** | Thorin decide ajudar o guarda. | CHOICE |
+| **1-B-b - Agora não** | Thorin decide não ajudar no momento. | CHOICE |
+
+##### Cena 2 - Agradecimentnos
+
+| Beat | Premissa Resumida | Tipo |
+| ---- | ---------------- | ---- |
+| **2-A - Obrigado** | O guarda agradece Thorin pela ajuda. | CS |
+| **2-B - Paz** | A alma do guarda está em paz agora. | CS |
