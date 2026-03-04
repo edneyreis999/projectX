@@ -1,0 +1,66 @@
+{
+  "Layers": [
+    {
+      "Name": "Base",
+      "Category": "Body",
+      "Part": "BodyMasc",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Roupa",
+      "Category": "Clothing",
+      "Part": "Clothing10",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "Barba",
+      "Category": "Beard",
+      "Part": "Beard10",
+      "Offsets": {},
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "cabelo",
+      "Category": "Rear Hair",
+      "Part": "RearHair05",
+      "Offsets": {
+        "Walk": "0, 3"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "nariz",
+      "Category": "Nose",
+      "Part": "Nariz 3",
+      "Offsets": {
+        "Walk": "0, 3"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "capacete",
+      "Category": "Helmets",
+      "Part": "Helmet 12",
+      "Offsets": {
+        "Walk": "0, 0"
+      },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    }
+  ],
+  "BodyType": "SDwarfBody",
+  "BodyTypeVariation": ""
+}

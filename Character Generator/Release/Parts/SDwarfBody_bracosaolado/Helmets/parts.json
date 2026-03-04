@@ -68,6 +68,24 @@
     "BaseImages": {
       "Walk": "Parts/SDwarfBody/Helmets/Helmet10.png"
     }
+  },
+  {
+    "Name": "Helmet 11",
+    "BaseImages": {
+      "Walk": "Parts/SDwarfBody/Helmets/Helmet11.png"
+    }
+  },
+    {
+    "Name": "Helmet 12",
+    "BaseImages": {
+      "Walk": "Parts/SDwarfBody/Helmets/Helmet12.png"
+    }
+  },
+    {
+    "Name": "Helmet 13",
+    "BaseImages": {
+      "Walk": "Parts/SDwarfBody/Helmets/Helmet13.png"
+    }
   }
 ]
 }

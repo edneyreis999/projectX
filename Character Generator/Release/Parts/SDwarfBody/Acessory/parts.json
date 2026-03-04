@@ -12,6 +12,12 @@
         "Walk": "Parts/SDwarfBody/Acessory/tapaOlho.png",
         "Face": "Parts/SDwarfBody/Acessory/Portrait_tapaOlho.png"
       }
+    },
+    {
+      "Name": "Tiara Nobre",
+      "BaseImages": {
+        "Walk": "Parts/SDwarfBody/Acessory/tiaraNobre.png"
+      }
     }
   ]
 }
