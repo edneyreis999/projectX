@@ -2089,8 +2089,6 @@
       "x": 18,
       "y": 7
     },
-    null,
-    null,
     {
       "id": 11,
       "name": "Kilin Mélios",
@@ -5612,7 +5610,6 @@
       "x": 2,
       "y": 0
     },
-    null,
     {
       "id": 25,
       "name": "Quest_Testar_Armadilhas",
