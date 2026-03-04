@@ -9,23 +9,24 @@
 - Importancia na campanha: Main
 - Arco narrativo: Provacao / Ponto de nao-retorno
 - Quest anterior: A Voz do Conselho
-- Conflito central: Balastrus prioriza produtividade e poder, enquanto os avisos sobre o selo apontam para um risco ancestral que o grupo nao compreende completamente.
-- Objetivo narrativo global: Romper o selo de Melios, introduzir os Ignotos como nova ameaca central e converter o objetivo da expedicao de extracao para sobrevivencia e retirada.
-- Premissa resumida: Depois do conflito com os Corvos, o grupo avanca para o interior de Melios. Balastrus coloca Thorin e Filena para forcar o bloco selado e usa dinamite para abrir a passagem. A equipe encontra uma area rica em minerios, mas o alivio dura pouco: sinais de anomalia e hostilidade aparecem, forcam combate e iniciam a retirada para fora da mina.
-- Resumo: A quest parte da entrada de Melios, logo apos a abertura de caminho politico conquistada no conselho. No interior (Mapa 2), Balastrus impoe ritmo de trabalho, desconsidera riscos e conduz o grupo ate o bloco de ferro do selo. Thorin e Filena sao forcados a agir diretamente na ruptura, enquanto Kilin e Mhordred observam a escalada da imprudencia. A abertura do caminho leva a um setor com minerios abundantes e confirma a ambicao de Balastrus, mas a situacao degrada rapidamente com a primeira aparicao dos Ignotos. O foco muda para fuga e reposicionamento, encerrando a quest com a saida da area e transicao para o retorno a Gildrat.
+- Conflito central: Balastrus transforma a expedicao em trabalho forcado e ignora desgaste, fome e seguranca de Thorin e Filena.
+- Objetivo narrativo global: Escalar tensao entre lideranca autoritaria e grupo, conduzir para mineracao forcada e preparar a fase de demolicao do selo.
+- Premissa resumida: Dentro da Mina de Melios (Mapa 35), o grupo inicia sob coacao, responde a uma emergencia local, encontra uma passagem recem-descoberta, recebe ordem de mineracao forcada, sofre um quase-acidente e termina com a chegada de Brutus e dinamites para avancar.
+- Resumo: A quest ocorre no fluxo interno do Mapa 35. Balastrus endurece o comando, reforca que Thorin e Filena estao sob sua autoridade e impede descanso. A comitiva e redirecionada por Marvim para uma emergencia e alcanca uma area nao mapeada. Ali, Balastrus exige que Thorin e Filena encontrem picaretas e iniciem o trabalho. Depois de eventos de mineracao e risco de desabamento, o conflito verbal aumenta. O encerramento desta etapa acontece com a chegada de Brutus trazendo dinamites e equipamento pesado, abrindo a proxima fase da quebra do selo.
 
 - Locais principais
-  - Entrada de Melios / clareira de acesso (Mapa 40, transicao)
-  - Zona interna de Melios / area do selo (Mapa 2)
-  - Camara apos ruptura (Mapa 2)
-  - Rota de retirada para retorno a Gildrat (Mapa 2 -> Mapa 20)
+  - Mina de Melios (Mapa 35)
+  - Setor inicial da equipe (Mapa 35)
+  - Corredor da emergencia com Marvim (Mapa 35)
+  - Area recem-descoberta / frente de mineracao (Mapa 35)
 - NPCs principais
   - Thorin
   - Balastrus
   - Filena
+  - Marvim
+  - Brutus
   - Kilin
   - Mhordred
-  - Ignotos (primeira aparicao)
 
 ---
 
@@ -35,8 +36,8 @@
 
 | Tipo | Descricao |
 | --- | --- |
-| Flags / Decisoes anteriores | Corvos derrotados em "A Voz do Conselho" e passagem para Melios liberada |
-| Limitacoes ou bloqueios | Progressao depende de acesso ao interior de Melios e interacoes com gatilhos do selo na area interna |
+| Flags / Decisoes anteriores | Corvos derrotados em "A Voz do Conselho" e entrada em Melios liberada |
+| Limitacoes ou bloqueios | Progressao depende dos gatilhos internos do Mapa 35 e da variavel narrativa da quest (V[41]) |
 
 ---
 
@@ -45,65 +46,93 @@
 - [x] Concluido
 
 ```plaintext
-Quest: Quebra do Selo em Melios
- +-- Cena 1: Entrada em Melios e imposicao de Balastrus
- |      +-- Beat 1: Grupo confirma rota interna e recebe ordem para acelerar a operacao
- +-- Cena 2: Camara do Selo
- |      +-- Beat 1: Thorin e Filena sao forcados a trabalhar no bloco selado
- +-- Cena 3: Ruptura e descoberta da camara de minerios
- |      +-- Beat 1: Selo e vencido; Balastrus muda o foco para extracao total
- +-- Cena 4: Primeira aparicao dos Ignotos
- |      +-- Beat 1: A anomalia se manifesta e o grupo entra em estado de combate/retirada
- +-- Cena 5: Fuga e transicao
-        +-- Beat 1: Sobreviventes recuam e iniciam retorno para avisar Gildrat
+Quest: Quebra do Selo em Melios (Mapa 35)
+ +-- Cena 1: Coacao inicial em Melios
+ |      +-- Beats 1-A a 1-C: Balastrus nega descanso e reforca dominio sobre Thorin e Filena
+ +-- Cena 2: Emergencia da mina
+ |      +-- Beats 2-A a 2-B: Marvim chama o grupo e conduz para um novo ponto
+ +-- Cena 3: Passagem nao mapeada e ordem de trabalho
+ |      +-- Beats 3-A a 3-F: descoberta da area, disputa ideologica e missao de buscar picaretas
+ +-- Cena 4: Inicio da mineracao forcada
+ |      +-- Beat 4-A: Balastrus manda Thorin e Filena quebrar as pedras
+ +-- Cena 5: Quase acidente e escalada de conflito
+ |      +-- Beats 5-A a 5-E: confronto entre Thorin/Filena e Balastrus apos risco de morte
+ +-- Cena 6: Preparacao da demolicao
+        +-- Beats 6-A a 6-B: chegada de Brutus com dinamites e plano de Balastrus
 ```
 
 #### Tabela de Cenas
 
 | # | Nome da Cena | Premissa resumida (expandida) |
 | --- | --- | --- |
-| 1 | **Marcha Forcada em Melios** | O grupo entra na zona interna sob comando de Balastrus, que reforca urgencia operacional e controle sobre Thorin e Filena. |
-| 2 | **Ordem de Quebra** | Diante do bloco selado, Balastrus remove restricoes de Filena e obriga os dois jovens a atuar diretamente na ruptura. |
-| 3 | **A Tentacao dos Minerios** | Com o bloqueio rompido, a camara rica em recursos parece validar a aposta de Balastrus, elevando a ambicao do grupo de extracao. |
-| 4 | **Ameaca Revelada** | A primeira aparicao dos Ignotos rompe o equilibrio da expedicao e transforma o ambiente em zona de alto risco. |
-| 5 | **Retirada para Gildrat** | Com a operacao comprometida, a prioridade vira escapar da area e iniciar o retorno para reportar a crise. |
+| 1 | **Coacao Inicial** | Thorin tenta adiar o trabalho por exaustao, mas Balastrus bloqueia qualquer descanso e impõe autoridade total. |
+| 2 | **Chamado de Emergencia** | Marvim interrompe a tensao inicial com uma ocorrencia na mina e desloca o grupo para outro setor. |
+| 3 | **Passagem Nao Mapeada** | O grupo encontra uma area nova, Balastrus ve potencial de lucro e ordena que Thorin e Filena comecem o trabalho braçal. |
+| 4 | **Mineracao Forcada** | Com picareta em maos, Thorin e Filena recebem ordem direta para iniciar a quebra de rochas no caminho. |
+| 5 | **Escalada de Risco** | Apos quase morrerem durante a mineracao, Thorin e Filena confrontam Balastrus, que minimiza o perigo e dobra a provocacao. |
+| 6 | **Entrada do Demolidor** | Brutus chega com dinamites e maquinario pesado, consolidando a estrategia de Balastrus para romper a barreira. |
 
 #### Beats por Cena
 
-##### Cena 1 - Marcha Forcada em Melios
+##### Cena 1 - Coacao Inicial
 
 | ID | Titulo | Premissa Resumida | Tipo |
 | --- | --- | --- | --- |
-| 1-A | O caminho estreito | Thorin confirma o ponto de operacao enquanto Balastrus conduz a equipe para dentro da area critica. | JOG |
-| 1-B | Pressao de comando | Balastrus acelera ordens e reduz espaco para contestacao do grupo. | CS |
+| 1-A | Ceu estrelado | Thorin argumenta que ja e noite e que o grupo precisa descansar e comer. | CS |
+| 1-B | Voces sao minha propriedade | Balastrus afirma controle total sobre Thorin e Filena por ordem imperial. | CS |
+| 1-C | Uma vez tirano, sempre tirano | Filena reage com revolta e acusa Balastrus de tirania. | CS |
 
-##### Cena 2 - Ordem de Quebra
-
-| ID | Titulo | Premissa Resumida | Tipo |
-| --- | --- | --- | --- |
-| 2-A | Bloco de ferro | O grupo chega ao selo e reconhece o bloqueio como obstaculo central da expedicao. | CS |
-| 2-B | Filena sem algemas | Kilin remove as restricoes de Filena por ordem de Balastrus para iniciar o trabalho forcado. | CS |
-| 2-C | Picaretas de mithril | Thorin e Filena recebem ferramentas e sao obrigados a golpear o bloco repetidamente. | JOG |
-
-##### Cena 3 - A Tentacao dos Minerios
+##### Cena 2 - Chamado de Emergencia
 
 | ID | Titulo | Premissa Resumida | Tipo |
 | --- | --- | --- | --- |
-| 3-A | Ruptura do selo | A barreira cede e abre acesso a uma nova camara interna. | CS |
-| 3-B | Minerio em abundancia | A descoberta de recursos em larga escala altera o objetivo imediato para extracao. | CS |
-| 3-C | Ambicao em alta | Balastrus celebra o resultado e tenta escalar a operacao rapidamente. | CS |
+| 2-A | Soterrados | Marvim aborda Balastrus e pede ajuda para uma emergencia na mina. | CS |
+| 2-B | Sigam-me os bons! | Balastrus manda o grupo seguir Marvim imediatamente. | CS |
 
-##### Cena 4 - Ameaca Revelada
-
-| ID | Titulo | Premissa Resumida | Tipo |
-| --- | --- | --- | --- |
-| 4-A | Primeira aparicao dos Ignotos | A presenca hostil surge na camara e quebra a falsa sensacao de controle. | CS |
-| 4-B | Mudanca de prioridade | A equipe abandona a logica de mineracao e entra em modo de sobrevivencia. | JOG |
-| 4-C | Recuo tatico | Thorin, Filena, Kilin e Mhordred reorganizam a retirada sob pressao. | JOG |
-
-##### Cena 5 - Retirada para Gildrat
+##### Cena 3 - Passagem Nao Mapeada
 
 | ID | Titulo | Premissa Resumida | Tipo |
 | --- | --- | --- | --- |
-| 5-A | Escapar de Melios | O grupo deixa a zona critica e consolida a fuga da area do selo. | JOG |
-| 5-B | Voltar e avisar | A quest encerra com transicao para o retorno a Gildrat e abertura do proximo arco. | CS |
+| 3-A | Passagem secreta | Balastrus observa que a rota atual nao aparecia no mapa conhecido de Melios. | CS |
+| 3-B | Novo Mundo | Marvim explica deslizamentos e confirma que a passagem e recem-descoberta. | CS |
+| 3-C | Isso ai e meu! | Balastrus reivindica qualquer riqueza alem da passagem. | CS |
+| 3-D | Um ranguinho caia bem | Thorin insiste em pausa para recuperar energia antes de continuar. | CS |
+| 3-E | Isso nao te pertence mais! | Balastrus reforca trabalho sem recompensa previa e manda buscar picaretas. | CS |
+| 3-F | Porcos capitalistas! | Filena acusa Balastrus de explorar os outros por lucro. | CS |
+
+##### Cena 4 - Mineracao Forcada
+
+| ID | Titulo | Premissa Resumida | Tipo |
+| --- | --- | --- | --- |
+| 4-A | O trabalho dignifica a vida de um anao | Balastrus ordena o inicio da quebra de pedras por Thorin e Filena. | JOG |
+
+##### Cena 5 - Escalada de Risco
+
+| ID | Titulo | Premissa Resumida | Tipo |
+| --- | --- | --- | --- |
+| 5-A | Nos poderiamos ter morrido! | Filena confronta Balastrus apos o quase-acidente na mineracao. | CS |
+| 5-B | Ficamos pelo quase | Balastrus minimiza o risco e trata o ocorrido como normal na mina. | CS |
+| 5-C | Lavando as maos | Thorin responsabiliza Balastrus por qualquer dano ao grupo. | CS |
+| 5-E | Bebe chorao | Balastrus provoca Thorin e anuncia que ja tem plano melhor para avancar. | CS |
+
+##### Cena 6 - Entrada do Demolidor
+
+| ID | Titulo | Premissa Resumida | Tipo |
+| --- | --- | --- | --- |
+| 6-A | Demolidor! | Brutus chega com toda a dinamite solicitada e equipamento de perfuracao. | CS |
+| 6-B | O Estrategista Perfeito! | Balastrus se exalta e defende uso de forca para romper a barreira. | CS |
+
+---
+
+### 4 Mapeamento Tecnico (Mapa 35)
+
+- [x] Concluido
+
+| Evento (Map035) | Conteudo | Gatilho narrativo |
+| --- | --- | --- |
+| `E26 - NSD Quebra do Selo` | Beats `1-A..1-C` e `2-A..2-B` | Inicio da quest e progressao de `V[41]` para `1` e `2` |
+| `E32 - NSD Quebra do Selo 2` | Transicao para proxima etapa | Progressao de `V[41]` para `3` |
+| `E33 - Gatilho Thorin` | Beats `3-A..3-F` e ordem de buscar picareta | Progressao de `V[41]` para `4` |
+| `E83 - Picareta boa` | Beat `4-A` e inicio da mineracao | Progressao de `V[41]` para `5` e `6` |
+| `E92/E94 - Pedras mineradoras 2` | Execucao da mineracao com risco | Progressao de `V[41]` para `7` |
+| `E95 - NSD Quebra do Selo 3` | Beats `5-A..5-E` e `6-A..6-B` | Progressao de `V[41]` para `8` |
