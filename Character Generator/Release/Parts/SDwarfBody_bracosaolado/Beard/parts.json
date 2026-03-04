@@ -68,6 +68,18 @@
         "Face": "Parts/SDwarfBody/Beard/Portrait_FG_Beard_p08.png",
         "Walk": "Parts/SDwarfBody/Beard/Character_TV_Beard1_p08.png"
       }
+    },
+    {
+      "Name": "Beard09",
+      "BaseImages": {
+        "Walk": "Parts/SDwarfBody/Beard/Character_TV_Beard1_p09.png"
+      }
+    },
+    {
+      "Name": "Beard10",
+      "BaseImages": {
+        "Walk": "Parts/SDwarfBody/Beard/Character_TV_Beard1_p10.png"
+      }
     }
   ]
 }

@@ -68,6 +68,26 @@
         "Face": "Parts/SDwarfBody/Clothing/FG_Clothing1_p08.png",
         "Walk": "Parts/SDwarfBody/Clothing/TV_Clothing2_p08.png"
       }
+    },
+    {
+      "Name": "Clothing09",
+      "PreviewImage": "Parts/SDwarfBody/Clothing/FG_Clothing1_p09.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBody/Clothing/FG_Clothing1_p09.png",
+        "Walk": "Parts/SDwarfBody/Clothing/TV_Clothing2_p09.png"
+      }
+    },
+    {
+      "Name": "Clothing10",
+      "BaseImages": {
+        "Walk": "Parts/SDwarfBody/Clothing/TV_Clothing2_p10.png"
+      }
+    },
+    {
+      "Name": "Clothing11",
+      "BaseImages": {
+        "Walk": "Parts/SDwarfBody/Clothing/TV_Clothing2_p11.png"
+      }
     }
   ]
 }
