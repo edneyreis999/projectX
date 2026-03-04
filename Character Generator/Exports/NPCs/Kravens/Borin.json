@@ -25,11 +25,11 @@
     {
       "Name": "sobrancelha",
       "Category": "Eyebrows",
-      "Part": "Eyebrows 1",
+      "Part": "Eyebrows 5",
       "Offsets": {
         "Face": "0, -4",
         "Sv": "0, -4",
-        "Walk": "0, -3"
+        "Walk": "0, 3"
       },
       "Visible": true,
       "UseSkinToneColoring": true,
@@ -51,22 +51,13 @@
     {
       "Name": "nariz",
       "Category": "Nose",
-      "Part": "Nariz 3",
+      "Part": "Nariz 2",
       "Offsets": {
         "Face": "-6, 5",
         "Sv": "-6, 0",
-        "Walk": "0, 2"
+        "Walk": "0, -1"
       },
       "Visible": true,
-      "UseSkinToneColoring": true,
-      "LayerSettings": {}
-    },
-    {
-      "Name": "cabelo",
-      "Category": "Rear Hair",
-      "Part": "RearHair04",
-      "Offsets": {},
-      "Visible": false,
       "UseSkinToneColoring": true,
       "LayerSettings": {}
     },
@@ -112,12 +103,21 @@
     {
       "Name": "barba",
       "Category": "Beard",
-      "Part": "Beard08",
+      "Part": "Beard09",
       "Offsets": {
         "Face": "0, 3",
         "Sv": "0, 3",
         "Walk": "0, 0"
       },
+      "Visible": true,
+      "UseSkinToneColoring": true,
+      "LayerSettings": {}
+    },
+    {
+      "Name": "cabelo",
+      "Category": "Rear Hair",
+      "Part": "RearHair05",
+      "Offsets": {},
       "Visible": true,
       "UseSkinToneColoring": true,
       "LayerSettings": {}
