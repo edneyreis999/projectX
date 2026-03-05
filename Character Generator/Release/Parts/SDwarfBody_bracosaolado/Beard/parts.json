@@ -71,14 +71,18 @@
     },
     {
       "Name": "Beard09",
+      "PreviewImage": "Parts/SDwarfBody/Beard/icon_FG_Beard_p09.png",
       "BaseImages": {
+        "Face": "Parts/SDwarfBody/Beard/Portrait_FG_Beard_p09.png",
         "Walk": "Parts/SDwarfBody/Beard/Character_TV_Beard1_p09.png"
       }
     },
     {
       "Name": "Beard10",
+      "PreviewImage": "Parts/SDwarfBody/Beard/icon_FG_Beard_p10.png",
       "BaseImages": {
-        "Walk": "Parts/SDwarfBody/Beard/Character_TV_Beard1_p10.png"
+        "Walk": "Parts/SDwarfBody/Beard/Character_TV_Beard1_p10.png",
+        "Face": "Parts/SDwarfBody/Beard/Portrait_FG_Beard_p10.png"
       }
     }
   ]
