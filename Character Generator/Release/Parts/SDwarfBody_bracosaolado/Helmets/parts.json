@@ -59,14 +59,38 @@
   },
   {
     "Name": "Helmet 9",
+    "PreviewImage": "Parts/SDwarfBody/Helmets/FG_Helmet9.png",
     "BaseImages": {
-      "Walk": "Parts/SDwarfBody/Helmets/Helmet9.png"
+      "Walk": "Parts/SDwarfBody/Helmets/Helmet9.png",
+      "Face": "Parts/SDwarfBody/Helmets/Portrait_Helmet9.png"
     }
   },
   {
     "Name": "Helmet 10",
+    "PreviewImage": "Parts/SDwarfBody/Helmets/FG_Helmet10.png",
     "BaseImages": {
-      "Walk": "Parts/SDwarfBody/Helmets/Helmet10.png"
+      "Walk": "Parts/SDwarfBody/Helmets/Helmet10.png",
+      "Face": "Parts/SDwarfBody/Helmets/Portrait_Helmet10.png"
+    }
+  },
+  {
+    "Name": "Helmet 11",
+    "BaseImages": {
+      "Walk": "Parts/SDwarfBody/Helmets/Helmet11.png"
+    }
+  },
+    {
+    "Name": "Helmet 12",
+    "PreviewImage": "Parts/SDwarfBody/Helmets/FG_Helmet12.png",
+    "BaseImages": {
+      "Walk": "Parts/SDwarfBody/Helmets/Helmet12.png",
+      "Face": "Parts/SDwarfBody/Helmets/Portrait_Helmet12.png"
+    }
+  },
+    {
+    "Name": "Helmet 13",
+    "BaseImages": {
+      "Walk": "Parts/SDwarfBody/Helmets/Helmet13.png"
     }
   }
 ]

@@ -68,6 +68,36 @@
         "Face": "Parts/SDwarfBody_bracosaolado/Clothing/FG_Clothing1_p08.png",
         "Walk": "Parts/SDwarfBody_bracosaolado/Clothing/TV_Clothing2_p08.png"
       }
+    },
+    {
+      "Name": "Clothing09",
+      "PreviewImage": "Parts/SDwarfBody_bracosaolado/Clothing/FG_Clothing1_p09.png",
+      "BaseImages": {
+        "Face": "Parts/SDwarfBody_bracosaolado/Clothing/FG_Clothing1_p09.png",
+        "Walk": "Parts/SDwarfBody_bracosaolado/Clothing/TV_Clothing2_p09.png"
+      }
+    },
+    {
+      "Name": "Clothing10",
+      "PreviewImage": "Parts/SDwarfBody_bracosaolado/Clothing/FG_Clothing1_p10.png",
+      "BaseImages": {
+        "Walk": "Parts/SDwarfBody_bracosaolado/Clothing/TV_Clothing2_p10.png",
+        "Face": "Parts/SDwarfBody_bracosaolado/Clothing/FG_Clothing1_p10.png"
+      }
+    },{
+      "Name": "Clothing11",
+      "PreviewImage": "Parts/SDwarfBody_bracosaolado/Clothing/FG_Clothing1_p11.png",
+      "BaseImages": {
+        "Walk": "Parts/SDwarfBody_bracosaolado/Clothing/TV_Clothing2_p11.png",
+        "Face": "Parts/SDwarfBody_bracosaolado/Clothing/FG_Clothing1_p11.png"
+      }
+    },{
+      "Name": "Clothing12",
+      "PreviewImage": "Parts/SDwarfBody_bracosaolado/Clothing/FG_Clothing1_p12.png",
+      "BaseImages": {
+        "Walk": "Parts/SDwarfBody_bracosaolado/Clothing/TV_Clothing2_p12.png",
+        "Face": "Parts/SDwarfBody_bracosaolado/Clothing/FG_Clothing1_p12.png"
+      }
     }
   ]
 }
