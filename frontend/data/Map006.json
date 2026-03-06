@@ -1813,7 +1813,7 @@
     },
     {
       "id": 10,
-      "name": "TrofÃƒÂ©u 2",
+      "name": "Troféu 2",
       "note": "",
       "pages": [
         {
@@ -1952,11 +1952,7 @@
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
             { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"1-B\""] },
             { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Aviso Materno\""] },
-            {
-              "code": 122,
-              "indent": 0,
-              "parameters": [103, 103, 0, 4, "\"A mÃƒÂ£e de Thorin surge aflita dizendo Ã¢â‚¬Å“nÃƒÂ£o temos tempo!Ã¢â‚¬Â, instaurando a urgÃƒÂªncia que move a histÃƒÂ³ria.\""]
-            },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"A mãe de Thorin surge aflita dizendo 'não temos tempo!', instaurando a urgência que move a história.\""] },
             { "code": 117, "indent": 0, "parameters": [16] },
             {
               "code": 357,
@@ -2042,8 +2038,8 @@
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
             { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"2-B\""] },
-            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"SÃƒÂ¡paro ao lado\""] },
-            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"SÃƒÂ¡paro-boca-de-corneta, no quarto, berra que o jogo jÃƒÂ¡ comeÃƒÂ§ou Ã¢â€ â€™ urgÃƒÂªncia imediata.\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Sáparo ao Lado\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Sáparo-boca-de-corneta, no quarto, berra que o jogo já começou → urgência imediata.\""] },
             { "code": 117, "indent": 0, "parameters": [16] },
             {
               "code": 357,
@@ -2176,11 +2172,9 @@
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": ["SaudaÃƒÂ§ÃƒÂµes, aventureiro! Bem-vindo ao lar da famÃƒÂ­lia Forjaprata, uma das linhagens mais prestigiosas da cidade de Gildrat. Aqui estÃƒÂ¡ a sua nova missÃƒÂ£o!"]
-            },
+            { "code": 401, "indent": 0, "parameters": ["Saudações, aventureiro! Bem-vindo ao lar da família"] },
+            { "code": 401, "indent": 0, "parameters": ["Forjaprata, uma das linhagens mais prestigiosas da cidade"] },
+            { "code": 401, "indent": 0, "parameters": ["de Gildrat. Aqui está a sua nova missão!"] },
             {
               "code": 357,
               "indent": 0,
@@ -3349,7 +3343,7 @@
     },
     {
       "id": 18,
-      "name": "MÃƒÂ©lia",
+      "name": "Retrato da Mãe",
       "note": "",
       "pages": [
         {
