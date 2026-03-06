@@ -363,7 +363,7 @@
             { "code": 657, "indent": 0, "parameters": ["Header Text = "] },
             { "code": 657, "indent": 0, "parameters": ["Settings from = Plugin parameters"] },
             { "code": 102, "indent": 0, "parameters": [["retrucar1", "ficarCalado2"], 1, 0, 2, 0] },
-            { "code": 402, "indent": 0, "parameters": [0, "retrucar1"] },
+            { "code": 402, "indent": 0, "parameters": [0, "retrucar1"], "collapsed": true },
             {
               "code": 357,
               "indent": 1,
@@ -446,7 +446,7 @@
             { "code": 505, "indent": 1, "parameters": [{ "code": 39, "indent": null }] },
             { "code": 123, "indent": 1, "parameters": ["A", 0] },
             { "code": 0, "indent": 1, "parameters": [] },
-            { "code": 402, "indent": 0, "parameters": [1, "ficarCalado2"] },
+            { "code": 402, "indent": 0, "parameters": [1, "ficarCalado2"], "collapsed": true },
             { "code": 213, "indent": 1, "parameters": [-1, 8, true] },
             { "code": 230, "indent": 1, "parameters": [20] },
             {
@@ -534,6 +534,14 @@
             { "code": 404, "indent": 1, "parameters": [] },
             { "code": 0, "indent": 1, "parameters": [] },
             { "code": 404, "indent": 0, "parameters": [] },
+            { "code": 355, "indent": 0, "parameters": [""] },
+            { "code": 655, "indent": 0, "parameters": [""] },
+            { "code": 655, "indent": 0, "parameters": ["//completar task"] },
+            { "code": 655, "indent": 0, "parameters": ["SQSM.CompleteTaskForQuest(\"primeiroContrato\", 2);"] },
+            { "code": 655, "indent": 0, "parameters": [""] },
+            { "code": 655, "indent": 0, "parameters": ["//iniciar nova task"] },
+            { "code": 655, "indent": 0, "parameters": ["SQSM.ShowTaskForQuest(\"primeiroContrato\", 3);"] },
+            { "code": 655, "indent": 0, "parameters": ["SQSM.ShowDescriptionForQuest(\"primeiroContrato\", 3);"] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
