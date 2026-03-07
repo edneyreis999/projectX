@@ -1684,7 +1684,7 @@
             "variableValue": 2
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Principal/$Borin", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Kravens/$Borin", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
             {
               "code": 205,
