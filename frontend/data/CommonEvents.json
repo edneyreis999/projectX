@@ -11,7 +11,7 @@
       { "code": 657, "indent": 1, "parameters": ["Animation ID = Thorin_OldHelmet"] },
       { "code": 355, "indent": 1, "parameters": ["SQSM.CompleteTaskForQuest(\"aSemifinal\", 4);"] },
       { "code": 655, "indent": 1, "parameters": ["SQSM.ShowTaskForQuest(\"aSemifinal\", 5);"] },
-      { "code": 122, "indent": 1, "parameters": [29, 29, 0, 0, 5] },
+      { "code": 122, "indent": 1, "parameters": [29, 29, 0, 0, 4] },
       { "code": 121, "indent": 1, "parameters": [4, 4, 1] },
       { "code": 0, "indent": 1, "parameters": [] },
       { "code": 412, "indent": 0, "parameters": [] },
