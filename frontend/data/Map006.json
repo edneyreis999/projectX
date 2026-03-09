@@ -1006,70 +1006,41 @@
             { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Eu tentei confiar em vocÃƒÂª, Thorin. Tentei lhe dar espaÃƒÂ§o, mas vocÃƒÂª nunca muda."] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"3-B\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Ferida de Classe\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Tordan esbraveja que viu o filho “brincando de esporte de subúrbio” e diz que isso mancha o nome da família.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             {
               "code": 357,
               "indent": 0,
               "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "2",
-                  "PictureName:str": "Portraits/Principal/Thorin Helmet",
-                  "Origin:str": "Bust",
-                  "Position:num": "1",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
+                "PKD_VisualChoices_MZ",
+                "OpenVisualChoice",
+                "Visual Choices",
+                { "menuId": "dormirNaoDormir", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"-20\"}", "headerText": "", "source": "Plugin parameters" }
               ]
             },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Thorin Helmet"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 1"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Me dar espaÃƒÂ§o? VocÃƒÂª nunca respeita as minhas escolhas!"] },
-            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "VocÃƒÂª ousa me questionar depois do modo como vÃƒÂªm agindo?! Essa insistÃƒÂªncia em jogar sua vida no lixo acaba aqui. Como meu herdeiro, ÃƒÂ© o seu dever honrar o nosso legado e se preparar para liderar a famÃƒÂ­lia depois que eu morrer. E ÃƒÂ© exatamente o que vocÃƒÂª farÃƒÂ¡, por bem ou por mal!"
-              ]
-            },
-            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["O seu caminho nÃƒÂ£o ÃƒÂ© o ÃƒÂºnico caminho, meu pai."] },
-            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 1, 0, 2, ""] },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Errado, Thorin. Nessa cidade todas as decisÃƒÂµes sÃƒÂ£o minhas, eu sou a mÃƒÂ£o do imperador. Assegurei um emprego para vocÃƒÂª, um de verdade. Esteja na Taverna da Pedra VulcÃƒÂ¢nica amanhÃƒÂ£ assim que o sol surgir. Fale com o Senhor Balastrus e ele lhe darÃƒÂ¡ mais detalhes sobre a expediÃƒÂ§ÃƒÂ£o."
-              ]
-            },
-            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 1, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Eu nÃƒÂ£o vou. Obrigado, mas isso nÃƒÂ£o ÃƒÂ© o que eu escolhi para mim."] },
-            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 1, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["E o que vocÃƒÂª escolheu para vocÃƒÂª? Futebol RÃƒÂºnico? Isso ÃƒÂ© brincadeira de crianÃƒÂ§a, estÃƒÂ¡ na hora de crescer!"] },
-            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 1, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Eu sou bom no que faÃƒÂ§o e posso provar!"] },
+            { "code": 657, "indent": 0, "parameters": ["Group ID = dormirNaoDormir"] },
+            { "code": 657, "indent": 0, "parameters": ["Position type = 0"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = {\"x:int\":\"0\",\"y:int\":\"-20\"}"] },
+            { "code": 657, "indent": 0, "parameters": ["Header Text = "] },
+            { "code": 657, "indent": 0, "parameters": ["Settings from = Plugin parameters"] },
+            { "code": 102, "indent": 0, "parameters": [["Ser Respeitoso", "Ser Sarcástico", "Ser Rebelde"], 1, 0, 2, 0] },
+            { "code": 402, "indent": 0, "parameters": [0, "Ser Respeitoso"] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 402, "indent": 0, "parameters": [1, "Ser Sarcástico"] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 402, "indent": 0, "parameters": [2, "Ser Rebelde"] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 404, "indent": 0, "parameters": [] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"3-D\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Convergência – Defesa do Sonho\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"orin retruca que quer traçar o próprio caminho; menciona que o futebol rúnico também exige coragem.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"3-E\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Desdém de Tordan\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "“'Coragem? O Império precisa de generais, não de saltimbancos suburbanos!' — Tordan finaliza com a humilhação.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             {
               "code": 357,
               "indent": 0,
@@ -1163,7 +1134,7 @@
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
             { "code": 101, "indent": 0, "parameters": ["", 3, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["A minha paciÃƒÂªncia estÃƒÂ¡ se esgotando, Thorin!"] },
+            { "code": 401, "indent": 0, "parameters": ["A minha paciência está se esgotando, Thorin!"] },
             {
               "code": 357,
               "indent": 0,
@@ -1252,7 +1223,7 @@
             { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 1, "parameters": [43, 43, 0] },
             { "code": 101, "indent": 1, "parameters": ["Portraits menores/Principal2", 3, 0, 2, ""] },
-            { "code": 401, "indent": 1, "parameters": ["Ãƒâ€° alguma piada? O que te faz pensar que isso significa algo para mim?"] },
+            { "code": 401, "indent": 1, "parameters": ["É alguma piada? O que te faz pensar que isso significa algo para mim?"] },
             {
               "code": 357,
               "indent": 1,
@@ -1284,11 +1255,7 @@
             { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 1, "parameters": [44, 44, 0] },
             { "code": 101, "indent": 1, "parameters": ["", 1, 0, 2, ""] },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": ["Isso nÃƒÂ£o ÃƒÂ© diferente dos seus prÃƒÂªmios polÃƒÂ­ticos! VocÃƒÂª ganha a vida manipulando as pessoas, deveria ao menos me dar o benefÃƒÂ­cio da dÃƒÂºvida!"]
-            },
+            { "code": 401, "indent": 1, "parameters": ["Isso não é diferente dos seus prêmios políticos! VocÊ ganha a vida manipulando as pessoas, deveria ao menos me dar o benefício da dúvida!"] },
             {
               "code": 357,
               "indent": 1,
@@ -1324,19 +1291,19 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "A situaÃƒÂ§ÃƒÂ£o parece ser pior do que eu imaginava. Vamos descobrir se alguns meses de trabalho duro podem colocar algum juÃƒÂ­zo na sua cabeÃƒÂ§a. Encontre o senhor Balastrus e feche o contrato. Isso ÃƒÂ© uma ordem, Thorin!"
+                "A situação parece ser pior do que eu imaginava. Vamos descobrir se alguns meses de trabalho duro podem colocar algum juízo na sua cabeça. Encontre o senhor Balastrus e feche o contrato. Isso é uma ordem, Thorin!"
               ]
             },
             { "code": 121, "indent": 1, "parameters": [44, 44, 0] },
             { "code": 101, "indent": 1, "parameters": ["", 1, 0, 2, ""] },
-            { "code": 401, "indent": 1, "parameters": ["VocÃƒÂª nÃƒÂ£o pode me obrigar!"] },
+            { "code": 401, "indent": 1, "parameters": ["Você não pode me obrigar!"] },
             { "code": 121, "indent": 1, "parameters": [43, 43, 0] },
             { "code": 101, "indent": 1, "parameters": ["", 3, 0, 2, ""] },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "NÃƒÂ£o posso?! EntÃƒÂ£o nÃƒÂ³s veremos. O jantar foi servido no horÃƒÂ¡rio de sempre e retirado a pouco. Espero que tenha comido no campo, pois nÃƒÂ£o hÃƒÂ¡ privilÃƒÂ©gios nessa casa para aqueles que nÃƒÂ£o seguem as regras. VÃƒÂ¡ dormir."
+                "Não posso?! Então nós veremos. O jantar foi servido no horário de sempre e retirado a pouco. Espero que tenha comido no campo, pois não há privilégios nessa casa para aqueles que não seguem as regras. Vai dormir."
               ]
             },
             {
@@ -1428,7 +1395,7 @@
             { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 1, "parameters": [43, 43, 0] },
             { "code": 101, "indent": 1, "parameters": ["", 3, 0, 2, ""] },
-            { "code": 401, "indent": 1, "parameters": ["Ah, querida, que falta vocÃƒÂª me faz!"] },
+            { "code": 401, "indent": 1, "parameters": ["Ah, querida, que falta você me faz!"] },
             {
               "code": 357,
               "indent": 1,
@@ -1492,7 +1459,7 @@
             { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 1, "parameters": [43, 43, 0] },
             { "code": 101, "indent": 1, "parameters": ["", 3, 0, 2, ""] },
-            { "code": 401, "indent": 1, "parameters": ["VocÃƒÂª acha que a vida ÃƒÂ© alguma brincadeira, Thorin?! A sua mÃƒÂ£e teria vergonha de vocÃƒÂª!"] },
+            { "code": 401, "indent": 1, "parameters": ["Você acha que a vida é alguma brincadeira, Thorin?! A sua mãe teria vergonha de você!"] },
             {
               "code": 357,
               "indent": 1,
@@ -1611,7 +1578,7 @@
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
             { "code": 101, "indent": 0, "parameters": ["", 3, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["VÃƒÂ¡ dormir, Thorin!"] },
+            { "code": 401, "indent": 0, "parameters": ["Vai dormir, Thorin!"] },
             {
               "code": 357,
               "indent": 0,
@@ -1813,7 +1780,7 @@
     },
     {
       "id": 10,
-      "name": "TrofÃƒÂ©u 2",
+      "name": "Troféu 2",
       "note": "",
       "pages": [
         {
@@ -1952,11 +1919,7 @@
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
             { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"1-B\""] },
             { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Aviso Materno\""] },
-            {
-              "code": 122,
-              "indent": 0,
-              "parameters": [103, 103, 0, 4, "\"A mÃƒÂ£e de Thorin surge aflita dizendo Ã¢â‚¬Å“nÃƒÂ£o temos tempo!Ã¢â‚¬Â, instaurando a urgÃƒÂªncia que move a histÃƒÂ³ria.\""]
-            },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"A mãe de Thorin surge aflita dizendo 'não temos tempo!', instaurando a urgência que move a história.\""] },
             { "code": 117, "indent": 0, "parameters": [16] },
             {
               "code": 357,
@@ -2042,8 +2005,8 @@
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
             { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"2-B\""] },
-            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"SÃƒÂ¡paro ao lado\""] },
-            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"SÃƒÂ¡paro-boca-de-corneta, no quarto, berra que o jogo jÃƒÂ¡ comeÃƒÂ§ou Ã¢â€ â€™ urgÃƒÂªncia imediata.\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Sáparo ao Lado\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Sáparo-boca-de-corneta, no quarto, berra que o jogo já começou → urgência imediata.\""] },
             { "code": 117, "indent": 0, "parameters": [16] },
             {
               "code": 357,
@@ -2176,11 +2139,9 @@
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": ["SaudaÃƒÂ§ÃƒÂµes, aventureiro! Bem-vindo ao lar da famÃƒÂ­lia Forjaprata, uma das linhagens mais prestigiosas da cidade de Gildrat. Aqui estÃƒÂ¡ a sua nova missÃƒÂ£o!"]
-            },
+            { "code": 401, "indent": 0, "parameters": ["Saudações, aventureiro! Bem-vindo ao lar da família"] },
+            { "code": 401, "indent": 0, "parameters": ["Forjaprata, uma das linhagens mais prestigiosas da cidade"] },
+            { "code": 401, "indent": 0, "parameters": ["de Gildrat. Aqui está a sua nova missão!"] },
             {
               "code": 357,
               "indent": 0,
@@ -2311,7 +2272,7 @@
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Meu filho, estamos ficando sem tempo. Dambur... impeÃƒÂ§a-o!"] },
+            { "code": 401, "indent": 0, "parameters": ["Meu filho, estamos ficando sem tempo. Dambur... impeça-o!"] },
             {
               "code": 357,
               "indent": 0,
@@ -2377,7 +2338,7 @@
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Eu ainda nÃƒÂ£o entendo o que isso tudo significa... por que vocÃƒÂª foi embora, mamÃƒÂ£e?"] },
+            { "code": 401, "indent": 0, "parameters": ["Eu ainda não entendo o que isso tudo significa... por que você foi embora, mamãe?"] },
             { "code": 357, "indent": 0, "parameters": ["PKD_AnimaX", "StopAnimationAction", "Stop Anima Action", { "eventId": "0" }] },
             { "code": 657, "indent": 0, "parameters": ["Character ID = 0"] },
             {
@@ -2447,7 +2408,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Eu tive uma noite ruim... mas quer saber? Hoje ninguÃƒÂ©m vai estragar o meu dia, nem vocÃƒÂª nem o meu pai! Partiu treinar, a final do campeonato estÃƒÂ¡ chegando e eu nÃƒÂ£o tenho tempo para um trabalho idiota como uma expediÃƒÂ§ÃƒÂ£o. "
+                "Eu tive uma noite ruim... mas quer saber? Hoje ninguém vai estragar o meu dia, nem vocÃƒÂª nem o meu pai! Partiu treinar, a final do campeonato está chegando e eu não tenho tempo para um trabalho idiota como uma expedição."
               ]
             },
             {
@@ -2693,7 +2654,7 @@
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Passarinho que acorda cedo pega minhoca! Anda logo, Thorin, mete o pÃ©!"] },
+            { "code": 401, "indent": 0, "parameters": ["Passarinho que acorda cedo pega minhoca! Anda logo, Thorin, mete o pé!"] },
             {
               "code": 357,
               "indent": 0,
@@ -2782,7 +2743,7 @@
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Vai chorar?! TÃ´ quase com dÃ³ de vocÃª AAHAHHAHA!"] },
+            { "code": 401, "indent": 0, "parameters": ["Vai chorar?! Tô quase com dó de você AAHAHHAHA!"] },
             {
               "code": 357,
               "indent": 0,
@@ -2871,7 +2832,7 @@
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["TÃ´ com fome! Que horas sai o rango?!"] },
+            { "code": 401, "indent": 0, "parameters": ["Tô com fome! Que horas sai o rango?!"] },
             {
               "code": 357,
               "indent": 0,
@@ -3349,7 +3310,7 @@
     },
     {
       "id": 18,
-      "name": "MÃƒÂ©lia",
+      "name": "Retrato da Mãe",
       "note": "",
       "pages": [
         {
