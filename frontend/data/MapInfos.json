@@ -27,12 +27,12 @@
   { "id": 25, "expanded": false, "name": "Mina de Esgoto 2F", "order": 5, "parentId": 24, "scrollX": 759.6, "scrollY": 484.79999999999995, "quick": false },
   { "id": 26, "expanded": false, "name": "Mina de Esgoto 3F", "order": 6, "parentId": 24, "scrollX": 954.5454545454546, "scrollY": 968.1818181818182, "quick": false },
   { "id": 27, "expanded": true, "name": "Castelo de Gildrat (exterior)", "order": 27, "parentId": 43, "scrollX": 1081.3333333333333, "scrollY": 1360, "quick": false },
-  { "id": 28, "expanded": true, "name": "Area escondida", "order": 12, "parentId": 33, "scrollX": 777.7777777777778, "scrollY": 439.1111111111111, "quick": false },
+  { "id": 28, "expanded": true, "name": "Area escondida", "order": 12, "parentId": 33, "scrollX": 653.3333333333334, "scrollY": 595.3333333333334, "quick": false },
   { "id": 29, "expanded": false, "name": "Map029", "order": 35, "parentId": 43, "scrollX": 825.3333333333334, "scrollY": 464.6666666666667, "quick": false },
-  { "id": 30, "expanded": true, "name": "Entrada de Kravens 01", "order": 8, "parentId": 33, "scrollX": 974.4, "scrollY": 1189.8, "quick": false },
+  { "id": 30, "expanded": false, "name": "Entrada de Kravens 01", "order": 8, "parentId": 33, "scrollX": 974.6666666666666, "scrollY": 1190, "quick": false },
   { "id": 31, "expanded": true, "name": "Tenda do Thorin 01", "order": 9, "parentId": 30, "scrollX": 973.1999999999999, "scrollY": 562.1999999999999, "quick": false },
   { "id": 32, "expanded": true, "name": "Entrada de Kravens 02 - OLD", "order": 44, "parentId": 15, "scrollX": 954.5454545454546, "scrollY": 544.9090909090909, "quick": false },
-  { "id": 33, "expanded": true, "name": "Mina de Kravens 1F", "order": 7, "parentId": 3, "scrollX": 973.1999999999999, "scrollY": 1524.6, "quick": false },
+  { "id": 33, "expanded": true, "name": "Mina de Kravens 1F", "order": 7, "parentId": 3, "scrollX": 973.3333333333334, "scrollY": 1524.6666666666667, "quick": false },
   { "id": 34, "expanded": true, "name": "Entrada de Kravens 03 - OLD", "order": 45, "parentId": 15, "scrollX": 963.2727272727274, "scrollY": 639.8181818181819, "quick": false },
   { "id": 35, "expanded": true, "name": "Mina de Melios", "order": 14, "parentId": 3, "scrollX": 2700, "scrollY": 3153.6, "quick": true },
   { "id": 36, "expanded": false, "name": "Segundo Sol - Preparação", "order": 49, "parentId": 42, "scrollX": 954.5454545454546, "scrollY": 537.2727272727273, "quick": false },
@@ -55,5 +55,5 @@
   { "id": 53, "expanded": true, "name": "Externo - Boss Final", "order": 31, "parentId": 21, "scrollX": 954.5454545454546, "scrollY": 1622.7272727272727, "quick": false },
   { "id": 54, "expanded": true, "name": "Externo - Destruído", "order": 32, "parentId": 21, "scrollX": 1177.3333333333333, "scrollY": 802.6666666666666, "quick": false },
   { "id": 55, "expanded": true, "name": "Externo - Batalha com grupos", "order": 30, "parentId": 21, "scrollX": 895.1111111111111, "scrollY": 1520, "quick": false },
-  { "id": 56, "expanded": true, "name": "Clareira de Kravens - v2", "order": 13, "parentId": 33, "scrollX": 973.1999999999999, "scrollY": 562.1999999999999, "quick": false }
+  { "id": 56, "expanded": false, "name": "MAP056", "order": 13, "parentId": 33, "scrollX": 664, "scrollY": 1484.6666666666667, "quick": false }
 ]
