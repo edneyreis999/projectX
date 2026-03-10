@@ -6,7 +6,7 @@
   "bgm": { "name": "", "pan": 0, "pitch": 100, "volume": 90 },
   "bgs": { "name": "", "pan": 0, "pitch": 100, "volume": 90 },
   "disableDashing": false,
-  "displayName": "Mina de Kravens",
+  "displayName": "Mina de Melios",
   "encounterList": [],
   "encounterStep": 30,
   "height": 30,
@@ -148,7 +148,7 @@
           "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
           "list": [
             { "code": 250, "indent": 0, "parameters": [{ "name": "Move1", "volume": 90, "pitch": 100, "pan": 0 }] },
-            { "code": 201, "indent": 0, "parameters": [0, 57, 2, 17, 0, 0] },
+            { "code": 201, "indent": 0, "parameters": [0, 59, 2, 17, 0, 0] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
