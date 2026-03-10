@@ -2,7 +2,7 @@
   null,
   {
     "id": 1,
-    "expParams": [0, 50, 200, 0],
+    "expParams": [10, 50, 150, 1],
     "traits": [
       { "code": 23, "dataId": 0, "value": 1 },
       { "code": 22, "dataId": 0, "value": 1.05 },
@@ -63,7 +63,7 @@
   },
   {
     "id": 2,
-    "expParams": [0, 50, 200, 0],
+    "expParams": [10, 50, 150, 1],
     "traits": [
       { "code": 23, "dataId": 0, "value": 1 },
       { "code": 22, "dataId": 0, "value": 1 },
@@ -124,7 +124,7 @@
   },
   {
     "id": 3,
-    "expParams": [0, 50, 200, 0],
+    "expParams": [10, 50, 150, 1],
     "traits": [
       { "code": 23, "dataId": 0, "value": 1 },
       { "code": 22, "dataId": 0, "value": 1.1 },
@@ -185,7 +185,7 @@
   },
   {
     "id": 4,
-    "expParams": [0, 50, 200, 0],
+    "expParams": [10, 50, 150, 1],
     "traits": [
       { "code": 23, "dataId": 0, "value": 1 },
       { "code": 22, "dataId": 0, "value": 1.1 },
@@ -244,7 +244,7 @@
   },
   {
     "id": 5,
-    "expParams": [0, 50, 200, 0],
+    "expParams": [10, 50, 150, 1],
     "traits": [
       { "code": 23, "dataId": 0, "value": 1 },
       { "code": 22, "dataId": 0, "value": 0.95 },

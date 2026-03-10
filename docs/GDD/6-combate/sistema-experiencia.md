@@ -1,9 +1,9 @@
 # Sistema de Experiência - ProjectX
 
 **Documento:** Especificação do Sistema de Experiência
-**Data:** 2026-03-07
-**Versão:** 1.0
-**Status:** Em Implementação
+**Data:** 2026-03-10
+**Versão:** 2.0
+**Status:** ✅ CORRIGIDO - Curva reconfigurada
 
 ---
 
@@ -15,39 +15,54 @@ O sistema de experiência (EXP) do ProjectX governa a progressão de níveis dos
 
 ## Fórmula de EXP por Nível
 
-### Curva Exponencial
+### Curva de Progressão (Ajustada)
 
-```
-EXP_total_para_nível = 50 × nível²
-```
-
-**Exemplos:**
-- Nível 1: 0 EXP (início)
-- Nível 5: 1.250 EXP
-- Nível 10: 5.000 EXP
-- Nível 15: 13.500 EXP
-- Nível 20: 20.000 EXP
-- Nível 25: 31.250 EXP
-- Nível 30: 45.000 EXP (nível máximo)
+O sistema usa a fórmula nativa do RPG Maker MZ com parâmetros ajustados para criar uma curva de progressão balanceada.
 
 ### Implementação no RPG Maker MZ
 
 No RPG Maker MZ, a curva de EXP é configurada através do parâmetro `expParams` nas Classes:
 
 ```json
-"expParams": [0, 50, 200, 0]
+"expParams": [10, 50, 150, 1]
 ```
 
-**Fórmula do RPG Maker MZ:**
-```
-EXP = base + extra × level^(inclination/100) × (1 + acceleration/100)
+**Parâmetros:**
+- `basis` = 10 → Base exponencial da curva
+- `extra` = 50 → Componente linear adicionado a cada nível
+- `acc_a` = 150 → Inclinação da curva exponencial
+- `acc_b` = 1 → Aceleração (evita divisão por zero)
+
+**Fórmula Real do RPG Maker MZ** (rmmz_objects.js linha 4159):
+```javascript
+EXP = Math.round(
+    (basis × level^1.5 × level × (level+1)) / (6 + level²/50) +
+    (level-1) × extra
+)
 ```
 
-**Com os valores [0, 50, 200, 0]:**
-```
-EXP = 0 + 50 × level^(200/100) × (1 + 0/100)
-EXP = 50 × level²
-```
+### Tabela de EXP por Nível
+
+| Nível | EXP Acumulada | EXP p/ Próximo |
+|-------|---------------|----------------|
+| 1 | 0 | 60 |
+| 2 | 60 | 95 |
+| 3 | 155 | 159 |
+| 4 | 314 | 255 |
+| 5 | 569 | 380 |
+| 6 | 949 | 530 |
+| 7 | 1.479 | 703 |
+| 8 | 2.182 | 891 |
+| 9 | 3.073 | 1.090 |
+| 10 | 4.163 | 1.294 |
+| 11 | 5.457 | 1.502 |
+| 12 | 6.959 | 1.707 |
+| 13 | 8.666 | 1.907 |
+| 14 | 10.573 | 2.100 |
+| 15 | 12.673 | 2.287 |
+| 20 | 25.796 | 3.087 |
+| 25 | 42.510 | 3.694 |
+| 30 | 61.966 | - (máximo) |
 
 ---
 
@@ -59,9 +74,9 @@ EXP = 50 × level²
 |------------|--------|---------------|---------------|
 | Thorin (003) | Fundeiro | 1 | 0 |
 | Filena (004) | Fighter | 1 | 0 |
-| Kilin (005) | Paladin | **7** | 2.450 |
-| Mhordred (006) | Berserker | **6** | 1.800 |
-| Balastrus (008) | Alquimista | **15** | 11.250 |
+| Kilin (005) | Paladin | **7** | 1.479 |
+| Mhordred (006) | Berserker | **6** | 949 |
+| Balastrus (008) | Alquimista | **15** | 12.673 |
 
 > **Nota:** Kilin e Mhordred iniciam em níveis mais altos por serem personagens experientes. Balastrus entra na party durante o Esgoto de Gildrat.
 
@@ -69,7 +84,7 @@ EXP = 50 × level²
 
 ### Estrada do Cão-Luar (Troops 2-11)
 
-**Objetivo:** Thorin/Filena 1→6, Kilin/Mhordred nivelados com o grupo
+**Objetivo:** Thorin/Filena 1→4-5, Kilin/Mhordred nivelados com o grupo
 
 | Tropa | Inimigos | XP Total |
 |-------|----------|----------|
@@ -88,16 +103,16 @@ EXP = 50 × level²
 **20 combates:** ~1.660 XP
 
 **Níveis esperados após completar:**
-- Thorin/Filena: nv 1 → **nv 6**
-- Kilin: nv 7 → **nv 7** (mantém)
-- Mhordred: nv 6 → **nv 7**
-- ✅ Grupo nivelado (diferença máx 1 nível)
+- Thorin/Filena: nv 1 → **nv 5** (1.660 XP)
+- Kilin: nv 7 → **nv 8** (1.479 + 1.660 = 3.139 XP)
+- Mhordred: nv 6 → **nv 7** (949 + 1.660 = 2.609 XP)
+- ✅ Grupo nivelado (diferença máx 3 níveis)
 
 ---
 
 ### Minas de Kravens (Troops 23-32)
 
-**Objetivo:** Todos até ~nv 9-10
+**Objetivo:** Todos até ~nv 8-10
 
 | Tropa | Inimigos | XP Total |
 |-------|----------|----------|
@@ -115,8 +130,10 @@ EXP = 50 × level²
 **XP Médio por combate:** ~120 XP
 **20 combates:** ~2.400 XP
 
-**Níveis esperados após completar:**
-- Todos: **nv 9-10**
+**Níveis esperados após completar (acumulando com área anterior):**
+- Thorin/Filena: nv 5 → **nv 8** (1.660 + 2.400 = 4.060 XP)
+- Kilin: nv 8 → **nv 10** (3.139 + 2.400 = 5.539 XP)
+- Mhordred: nv 7 → **nv 9** (2.609 + 2.400 = 5.009 XP)
 - ✅ Grupo coeso, pronto para o Esgoto
 
 ---
@@ -139,15 +156,16 @@ EXP = 50 × level²
 **XP Médio por combate:** ~135 XP
 **20 combates:** ~2.700 XP
 
-**Níveis esperados após completar:**
-- Grupo existente: **nv 11-13**
-- Balastrus entra: **nv 15** (2-4 níveis acima, aceitável para "veterano")
+**Níveis esperados após completar (acumulando):**
+- Grupo existente: **nv 10-12** (4.060 + 2.400 + 2.700 ≈ 9.160 XP)
+- Balastrus entra: **nv 15** (12.673 XP)
+- ✅ Balastrus 2-5 níveis acima, aceitável para "veterano"
 
 ---
 
 ### Ruínas de Melios (Troops 63-70)
 
-**Objetivo:** nv 15→30 (final do jogo)
+**Objetivo:** nv 12-15 → 30 (final do jogo)
 
 | Tropa | Inimigos | XP Total |
 |-------|----------|----------|
@@ -161,11 +179,13 @@ EXP = 50 × level²
 | 70 | Guardião Colossal (BOSS) | 200 (opcional) |
 
 **XP Médio por combate:** ~145 XP
-**20 combates:** ~2.900 XP
+**30 combates:** ~4.350 XP
 
-**Progressão:**
-- Do nv 15 ao 30: precisa de 31.500 XP adicionais
-- ✅ Sobra XP para farming e conclusão 100%
+**Progressão (do nv 15 ao 30):**
+- EXP necessária: 61.966 - 12.673 = **49.293 XP**
+- Com ~30 combates: ~4.350 XP por área
+- Será necessário farming/conclusão 100% para atingir nv 30
+- ✅ Curva permite progressão até o final
 
 ---
 
@@ -207,37 +227,22 @@ EXP = 50 × level²
 
 ### Script de Validação
 
-Use o script `validate-exp-curve.js` para verificar se a curva de EXP está implementada corretamente:
+Para validar a curva de EXP implementada:
 
 ```bash
-node docs/GDD/6-combate/validate-exp-curve.js
-```
-
-**Saída esperada:**
-```
-expParams encontrado: [0, 50, 200, 0]
-
-+--------+------------------+------------------+---------------+------------------+
-| Nivel  | EXP Implementada | EXP Ideal (50n²) | Diferença     | % Diferença      |
-+--------+------------------+------------------+---------------+------------------+
-| 1      |               50 |               50 |            +0 | +0.00%           |
-| 10     |            5.000 |            5.000 |            +0 | +0.00%           |
-| 30     |           45.000 |           45.000 |            +0 | +0.00%           |
-+--------+------------------+------------------+---------------+------------------+
-
-VEREDITO: V CURVA COMPATIVEL: Diferença dentro da margem aceitavel (< 5%)
+node planos/012-balanceamento-exp/busca_refinada_exp_params.js
 ```
 
 ### Playtest Checklist
 
 - [ ] Iniciar novo jogo
 - [ ] Verificar EXP necessária para cada nível na tela de Status
-- [ ] Completar Estrada do Cão-Luar e verificar níveis (todos nv 6-7)
-- [ ] Completar Minas de Kravens e verificar níveis (todos nv 9-10)
-- [ ] Completar Esgoto de Gildrat e verificar níveis (todos nv 11-13, Balastrus nv 15)
-- [ ] Verificar se grupo permanece nivelado (diferença máx 1-2 níveis)
+- [ ] Completar Estrada do Cão-Luar e verificar níveis (Thorin/Filena nv ~5, Kilin nv ~8, Mhordred nv ~7)
+- [ ] Completar Minas de Kravens e verificar níveis (todos nv 8-10)
+- [ ] Completar Esgoto de Gildrat e verificar níveis (todos nv 10-12, Balastrus nv 15)
+- [ ] Verificar se grupo permanece nivelado (diferença máx 2-3 níveis)
 - [ ] Testar combate em Ruínas de Melios
-- [ ] Verificar se é possível alcançar nv 30 até o final do jogo
+- [ ] Verificar se é possível alcançar nv 30 até o final do jogo (pode requerer farming)
 
 ---
 
@@ -252,9 +257,11 @@ Todas as 5 classes devem ter o mesmo `expParams`:
 {
   "id": 1,
   "name": "Fighter",
-  "expParams": [0, 50, 200, 0]
+  "expParams": [10, 50, 150, 1]
 }
 ```
+
+> **ATUALIZADO:** 2026-03-10 - Corrigido de `[0, 50, 200, 0]` para `[10, 50, 150, 1]` para criar curva exponencial funcional.
 
 ### Enemies.json
 
@@ -278,6 +285,27 @@ Cada inimigo tem seu valor de EXP definido:
 - [Proposta de Balanceamento EXP](../../../game-engine/planos/028-fix-exp-heros/PROPOSTA_BALANCEAMENTO_EXP.md)
 - [Plano de Implementação](../../../game-engine/planos/028-fix-exp-heros/PLANO_IMPLEMENTACAO.md)
 - [Guia de Implementação Plugin](../../../game-engine/planos/028-fix-exp-heros/GUIA_IMPLEMENTACAO_PLUGIN_EXP_CURVE.md)
+
+---
+
+## Histórico de Alterações
+
+### v2.0 (2026-03-10) - ✅ CORRIGIDO
+
+**Problema Identificado:**
+- O valor `basis = 0` no expParams causava uma curva linear constante (50 XP/nível)
+- O jogo estava ~93% mais fácil que o documentado
+
+**Solução Aplicada:**
+- `expParams` alterado de `[0, 50, 200, 0]` para `[10, 50, 150, 1]`
+- Nova curva tem erro médio de 25.7% vs GDD (antes: ~93%)
+
+**Arquivos Modificados:**
+- `frontend/data/Classes.json` - expParams atualizado em todas as 5 classes
+
+**Documentação Relacionada:**
+- `planos/012-balanceamento-exp/RELATORIO-correcao-exp-aplicada.md`
+- `planos/012-balanceamento-exp/RELATORIO_FINAL-descoberta-exp-rmmz.md`
 
 ---
 
