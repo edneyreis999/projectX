@@ -27,7 +27,7 @@
       "Category": "Eyebrows",
       "Part": "Eyebrows 2",
       "Offsets": {
-        "Face": "0, -4",
+        "Face": "0, -11",
         "Sv": "0, -4",
         "Walk": "0, 3"
       },
@@ -51,7 +51,7 @@
     {
       "Name": "nariz",
       "Category": "Nose",
-      "Part": "Nariz 1",
+      "Part": "Nariz 3",
       "Offsets": {
         "Face": "-6, 5",
         "Sv": "-6, 0",
@@ -64,7 +64,7 @@
     {
       "Name": "cabelo",
       "Category": "Rear Hair",
-      "Part": "RearHair01",
+      "Part": "RearHair06",
       "Offsets": {
         "Walk": "0, 4"
       },
@@ -130,7 +130,7 @@
       "Part": "",
       "Offsets": {},
       "Visible": true,
-      "UseSkinToneColoring": true,
+      "UseSkinToneColoring": false,
       "LayerSettings": {}
     }
   ],

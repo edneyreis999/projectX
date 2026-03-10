@@ -14,7 +14,7 @@
       "Category": "Eyes",
       "Part": "Eye02",
       "Offsets": {
-        "Face": "-1, 7",
+        "Face": "-1, 4",
         "Sv": "-1, 7",
         "Walk": "0, 0"
       },
@@ -53,7 +53,7 @@
       "Category": "Nose",
       "Part": "Nariz 3",
       "Offsets": {
-        "Face": "-6, 5",
+        "Face": "-6, -3",
         "Sv": "-6, 0",
         "Walk": "0, 2"
       },
@@ -114,7 +114,7 @@
       "Category": "Beard",
       "Part": "Beard10",
       "Offsets": {
-        "Face": "0, 3",
+        "Face": "0, 15",
         "Sv": "0, 3",
         "Walk": "0, 0"
       },

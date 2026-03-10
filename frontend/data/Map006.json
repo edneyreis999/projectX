@@ -239,7 +239,7 @@
             "switch2Valid": false,
             "variableId": 27,
             "variableValid": true,
-            "variableValue": 4
+            "variableValue": 6
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 0 },
@@ -261,10 +261,15 @@
             { "code": 657, "indent": 0, "parameters": ["Settings from = Plugin parameters"] },
             { "code": 102, "indent": 0, "parameters": [["dormir1", "naoDormir2"], 1, 0, 0, 0] },
             { "code": 402, "indent": 0, "parameters": [0, "dormir1"] },
+            { "code": 122, "indent": 1, "parameters": [101, 101, 0, 4, "\"7-B\""] },
+            { "code": 122, "indent": 1, "parameters": [102, 102, 0, 4, "\"Pensamento Único\""] },
+            { "code": 122, "indent": 1, "parameters": [103, 103, 0, 4, "\"Ao interagir com a cama, surge um balão de pensamento: “Nem a pau que eu vou nessa taverna amanhã…\""] },
+            { "code": 117, "indent": 1, "parameters": [16] },
+            { "code": 355, "indent": 1, "parameters": ["SQSM.CompleteTaskForQuest(\"fimDeJogo\", 4);"] },
+            { "code": 655, "indent": 1, "parameters": ["SQSM.CompleteQuest();"] },
             { "code": 205, "indent": 1, "parameters": [-1, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
             { "code": 505, "indent": 1, "parameters": [{ "code": 16, "indent": null }] },
             { "code": 249, "indent": 1, "parameters": [{ "name": "Inn2", "volume": 90, "pitch": 100, "pan": 0 }] },
-            { "code": 221, "indent": 1, "parameters": [] },
             { "code": 357, "indent": 1, "parameters": ["PKD_AnimaX", "ChangePlayerAnimationSet", "Change Player Animation", { "animationSetName": "Thorin" }] },
             { "code": 657, "indent": 1, "parameters": ["Animation ID = Thorin"] },
             { "code": 357, "indent": 1, "parameters": ["PKD_AnimaX", "PlayAnimationAction", "Play Anima Action", { "actionName": "Sleeping", "eventId": "0", "isLoop": "true", "isWait": "false" }] },
@@ -273,11 +278,10 @@
             { "code": 657, "indent": 1, "parameters": ["Is Looping? = true"] },
             { "code": 657, "indent": 1, "parameters": ["Is Wait? = false"] },
             { "code": 213, "indent": 1, "parameters": [-1, 10, false] },
-            { "code": 222, "indent": 1, "parameters": [] },
+            { "code": 221, "indent": 1, "parameters": [] },
             { "code": 230, "indent": 1, "parameters": [300] },
             { "code": 314, "indent": 1, "parameters": [0, 0] },
-            { "code": 221, "indent": 1, "parameters": [] },
-            { "code": 122, "indent": 1, "parameters": [27, 27, 0, 0, 5] },
+            { "code": 122, "indent": 1, "parameters": [27, 27, 0, 0, 7] },
             { "code": 0, "indent": 1, "parameters": [] },
             { "code": 402, "indent": 0, "parameters": [1, "naoDormir2"] },
             { "code": 0, "indent": 1, "parameters": [] },
@@ -293,35 +297,6 @@
           "through": false,
           "trigger": 0,
           "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 9,
-            "switch1Valid": true,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": true,
-          "trigger": 0,
-          "walkAnime": false
         },
         {
           "conditions": {
@@ -942,620 +917,16 @@
             "switch2Valid": false,
             "variableId": 27,
             "variableValid": true,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 1, "characterIndex": 4 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": true,
-          "trigger": 0,
-          "walkAnime": false
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 27,
-            "variableValid": true,
             "variableValue": 1
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Principal/$Tordan", "direction": 2, "pattern": 1, "characterIndex": 0 },
-          "list": [
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "1",
-                  "PictureName:str": "Portraits/Principal/Tordan",
-                  "Origin:str": "Bust",
-                  "Position:num": "9",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Tordan"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 9"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Eu tentei confiar em vocÃƒÂª, Thorin. Tentei lhe dar espaÃƒÂ§o, mas vocÃƒÂª nunca muda."] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "2",
-                  "PictureName:str": "Portraits/Principal/Thorin Helmet",
-                  "Origin:str": "Bust",
-                  "Position:num": "1",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Thorin Helmet"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 1"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Me dar espaÃƒÂ§o? VocÃƒÂª nunca respeita as minhas escolhas!"] },
-            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "VocÃƒÂª ousa me questionar depois do modo como vÃƒÂªm agindo?! Essa insistÃƒÂªncia em jogar sua vida no lixo acaba aqui. Como meu herdeiro, ÃƒÂ© o seu dever honrar o nosso legado e se preparar para liderar a famÃƒÂ­lia depois que eu morrer. E ÃƒÂ© exatamente o que vocÃƒÂª farÃƒÂ¡, por bem ou por mal!"
-              ]
-            },
-            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["O seu caminho nÃƒÂ£o ÃƒÂ© o ÃƒÂºnico caminho, meu pai."] },
-            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 1, 0, 2, ""] },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Errado, Thorin. Nessa cidade todas as decisÃƒÂµes sÃƒÂ£o minhas, eu sou a mÃƒÂ£o do imperador. Assegurei um emprego para vocÃƒÂª, um de verdade. Esteja na Taverna da Pedra VulcÃƒÂ¢nica amanhÃƒÂ£ assim que o sol surgir. Fale com o Senhor Balastrus e ele lhe darÃƒÂ¡ mais detalhes sobre a expediÃƒÂ§ÃƒÂ£o."
-              ]
-            },
-            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 1, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Eu nÃƒÂ£o vou. Obrigado, mas isso nÃƒÂ£o ÃƒÂ© o que eu escolhi para mim."] },
-            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 1, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["E o que vocÃƒÂª escolheu para vocÃƒÂª? Futebol RÃƒÂºnico? Isso ÃƒÂ© brincadeira de crianÃƒÂ§a, estÃƒÂ¡ na hora de crescer!"] },
-            { "code": 121, "indent": 0, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 1, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Eu sou bom no que faÃƒÂ§o e posso provar!"] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_ExitBusts",
-                "BASIC: Exit Bust(s)",
-                {
-                  "PictureID:arrayeval": "[\"1\",\"2\"]",
-                  "EndOffsetX:eval": "+200",
-                  "EndOffsetY:eval": "-0",
-                  "EasingType:str": "OutSine",
-                  "FlipDirection:str": "None",
-                  "Duration:eval": "20",
-                  "AutoErase:eval": "true"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\",\"2\"]"] },
-            { "code": 657, "indent": 0, "parameters": ["End Offset X = +200"] },
-            { "code": 657, "indent": 0, "parameters": ["End Offset Y = -0"] },
-            { "code": 657, "indent": 0, "parameters": ["Exit Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
-            { "code": 355, "indent": 0, "parameters": ["SQSM.CompleteTaskForQuest(\"fimDeJogo\", 1);"] },
-            { "code": 655, "indent": 0, "parameters": ["SQSM.ShowTaskForQuest(\"fimDeJogo\", 2);"] },
-            { "code": 655, "indent": 0, "parameters": ["SQSM.ShowDescriptionForQuest(\"fimDeJogo\", 2);"] },
-            { "code": 121, "indent": 0, "parameters": [5, 5, 0] },
-            { "code": 123, "indent": 0, "parameters": ["A", 0] },
-            { "code": 122, "indent": 0, "parameters": [27, 27, 0, 0, 2] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 27,
-            "variableValid": true,
-            "variableValue": 2
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Principal/$Tordan", "direction": 2, "pattern": 1, "characterIndex": 0 },
-          "list": [
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "1",
-                  "PictureName:str": "Portraits/Principal/Tordan",
-                  "Origin:str": "Bust",
-                  "Position:num": "5",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Tordan"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 5"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 3, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["A minha paciÃƒÂªncia estÃƒÂ¡ se esgotando, Thorin!"] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_ExitBusts",
-                "BASIC: Exit Bust(s)",
-                {
-                  "PictureID:arrayeval": "[\"1\"]",
-                  "EndOffsetX:eval": "-200",
-                  "EndOffsetY:eval": "+0",
-                  "EasingType:str": "InSine",
-                  "FlipDirection:str": "None",
-                  "Duration:eval": "20",
-                  "AutoErase:eval": "true"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\"]"] },
-            { "code": 657, "indent": 0, "parameters": ["End Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["End Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 27,
-            "variableValid": true,
-            "variableValue": 3
-          },
-          "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Principal/$Tordan", "direction": 2, "pattern": 1, "characterIndex": 0 },
-          "list": [
-            { "code": 111, "indent": 0, "parameters": [1, 9, 0, 1, 0] },
-            {
-              "code": 357,
-              "indent": 1,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "1",
-                  "PictureName:str": "Portraits/Principal/Tordan_zangado",
-                  "Origin:str": "Bust",
-                  "Position:num": "9",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 1, "parameters": ["Picture ID = 1"] },
-            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Tordan_zangado"] },
-            { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 1, "parameters": ["Screen Position = 9"] },
-            { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 1, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 1, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 1, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 1, "parameters": ["Portraits menores/Principal2", 3, 0, 2, ""] },
-            { "code": 401, "indent": 1, "parameters": ["Ãƒâ€° alguma piada? O que te faz pensar que isso significa algo para mim?"] },
-            {
-              "code": 357,
-              "indent": 1,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "2",
-                  "PictureName:str": "Portraits/Principal/Thorin_capacete_bravo",
-                  "Origin:str": "Bust",
-                  "Position:num": "1",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "InSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 1, "parameters": ["Picture ID = 2"] },
-            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Thorin_capacete_bravo"] },
-            { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 1, "parameters": ["Screen Position = 1"] },
-            { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 1, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 1, "parameters": ["Entrance Easing = InSine"] },
-            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 1, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 1, "parameters": ["", 1, 0, 2, ""] },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": ["Isso nÃƒÂ£o ÃƒÂ© diferente dos seus prÃƒÂªmios polÃƒÂ­ticos! VocÃƒÂª ganha a vida manipulando as pessoas, deveria ao menos me dar o benefÃƒÂ­cio da dÃƒÂºvida!"]
-            },
-            {
-              "code": 357,
-              "indent": 1,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "1",
-                  "PictureName:str": "Portraits/Principal/Tordan",
-                  "Origin:str": "Bust",
-                  "Position:num": "9",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 1, "parameters": ["Picture ID = 1"] },
-            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Tordan"] },
-            { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 1, "parameters": ["Screen Position = 9"] },
-            { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 1, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 1, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 1, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 1, "parameters": ["", 3, 0, 2, ""] },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "A situaÃƒÂ§ÃƒÂ£o parece ser pior do que eu imaginava. Vamos descobrir se alguns meses de trabalho duro podem colocar algum juÃƒÂ­zo na sua cabeÃƒÂ§a. Encontre o senhor Balastrus e feche o contrato. Isso ÃƒÂ© uma ordem, Thorin!"
-              ]
-            },
-            { "code": 121, "indent": 1, "parameters": [44, 44, 0] },
-            { "code": 101, "indent": 1, "parameters": ["", 1, 0, 2, ""] },
-            { "code": 401, "indent": 1, "parameters": ["VocÃƒÂª nÃƒÂ£o pode me obrigar!"] },
-            { "code": 121, "indent": 1, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 1, "parameters": ["", 3, 0, 2, ""] },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "NÃƒÂ£o posso?! EntÃƒÂ£o nÃƒÂ³s veremos. O jantar foi servido no horÃƒÂ¡rio de sempre e retirado a pouco. Espero que tenha comido no campo, pois nÃƒÂ£o hÃƒÂ¡ privilÃƒÂ©gios nessa casa para aqueles que nÃƒÂ£o seguem as regras. VÃƒÂ¡ dormir."
-              ]
-            },
-            {
-              "code": 357,
-              "indent": 1,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_ExitBusts",
-                "BASIC: Exit Bust(s)",
-                {
-                  "PictureID:arrayeval": "[\"1\",\"2\"]",
-                  "EndOffsetX:eval": "+200",
-                  "EndOffsetY:eval": "-0",
-                  "EasingType:str": "InSine",
-                  "FlipDirection:str": "None",
-                  "Duration:eval": "20",
-                  "AutoErase:eval": "true"
-                }
-              ]
-            },
-            { "code": 657, "indent": 1, "parameters": ["Picture ID(s) = [\"1\",\"2\"]"] },
-            { "code": 657, "indent": 1, "parameters": ["End Offset X = +200"] },
-            { "code": 657, "indent": 1, "parameters": ["End Offset Y = -0"] },
-            { "code": 657, "indent": 1, "parameters": ["Exit Easing = InSine"] },
-            { "code": 657, "indent": 1, "parameters": ["Flip Direction = None"] },
-            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
-            { "code": 657, "indent": 1, "parameters": ["Auto-Erase? = true"] },
-            {
-              "code": 357,
-              "indent": 1,
-              "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusTargetEvent", "Camera: Focus Target Event", { "EventID:eval": "18", "Duration:num": "400", "EasingType:str": "InOutSine" }]
-            },
-            { "code": 657, "indent": 1, "parameters": ["Event ID = 18"] },
-            { "code": 657, "indent": 1, "parameters": ["Duration = 400"] },
-            { "code": 657, "indent": 1, "parameters": ["Easing Type = InOutSine"] },
-            { "code": 205, "indent": 1, "parameters": [-1, { "list": [{ "code": 16, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }] },
-            { "code": 505, "indent": 1, "parameters": [{ "code": 16, "indent": null }] },
-            {
-              "code": 205,
-              "indent": 1,
-              "parameters": [
-                8,
-                {
-                  "list": [{ "code": 31, "indent": null }, { "code": 45, "parameters": ["Move to: 4,15"], "indent": null }, { "code": 19, "indent": null }, { "code": 0 }],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            { "code": 505, "indent": 1, "parameters": [{ "code": 31, "indent": null }] },
-            { "code": 505, "indent": 1, "parameters": [{ "code": 45, "parameters": ["Move to: 4,15"], "indent": null }] },
-            { "code": 505, "indent": 1, "parameters": [{ "code": 19, "indent": null }] },
-            { "code": 121, "indent": 1, "parameters": [9, 9, 1] },
-            { "code": 121, "indent": 1, "parameters": [10, 10, 0] },
-            { "code": 123, "indent": 1, "parameters": ["B", 0] },
-            { "code": 355, "indent": 1, "parameters": ["SQSM.CompleteTaskForQuest(\"fimDeJogo\", 3);"] },
-            { "code": 655, "indent": 1, "parameters": ["SQSM.ShowTaskForQuest(\"fimDeJogo\", 4);"] },
-            { "code": 655, "indent": 1, "parameters": ["SQSM.ShowDescriptionForQuest(\"fimDeJogo\", 3);"] },
-            { "code": 357, "indent": 1, "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusWait", "Camera: Wait for Focus", {}] },
-            {
-              "code": 357,
-              "indent": 1,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "1",
-                  "PictureName:str": "Portraits/Principal/Tordan_triste",
-                  "Origin:str": "Bust",
-                  "Position:num": "5",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 1, "parameters": ["Picture ID = 1"] },
-            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Tordan_triste"] },
-            { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 1, "parameters": ["Screen Position = 5"] },
-            { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 1, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 1, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto"] },
-            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 1, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 1, "parameters": ["", 3, 0, 2, ""] },
-            { "code": 401, "indent": 1, "parameters": ["Ah, querida, que falta vocÃƒÂª me faz!"] },
-            {
-              "code": 357,
-              "indent": 1,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_ExitBusts",
-                "BASIC: Exit Bust(s)",
-                {
-                  "PictureID:arrayeval": "[\"1\"]",
-                  "EndOffsetX:eval": "-200",
-                  "EndOffsetY:eval": "+0",
-                  "EasingType:str": "InSine",
-                  "FlipDirection:str": "None",
-                  "Duration:eval": "20",
-                  "AutoErase:eval": "true"
-                }
-              ]
-            },
-            { "code": 657, "indent": 1, "parameters": ["Picture ID(s) = [\"1\"]"] },
-            { "code": 657, "indent": 1, "parameters": ["End Offset X = -200"] },
-            { "code": 657, "indent": 1, "parameters": ["End Offset Y = +0"] },
-            { "code": 657, "indent": 1, "parameters": ["Exit Easing = InSine"] },
-            { "code": 657, "indent": 1, "parameters": ["Flip Direction = None"] },
-            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
-            { "code": 657, "indent": 1, "parameters": ["Auto-Erase? = true"] },
-            { "code": 213, "indent": 1, "parameters": [8, 8, false] },
-            { "code": 357, "indent": 1, "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusPlayer", "Camera: Focus Player", { "Duration:num": "120", "EasingType:str": "InOutSine" }] },
-            { "code": 657, "indent": 1, "parameters": ["Duration = 120"] },
-            { "code": 657, "indent": 1, "parameters": ["Easing Type = InOutSine"] },
-            { "code": 122, "indent": 1, "parameters": [27, 27, 0, 0, 4] },
-            { "code": 0, "indent": 1, "parameters": [] },
-            { "code": 411, "indent": 0, "parameters": [] },
-            {
-              "code": 357,
-              "indent": 1,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "1",
-                  "PictureName:str": "Portraits/Principal/Tordan_zangado",
-                  "Origin:str": "Bust",
-                  "Position:num": "5",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 1, "parameters": ["Picture ID = 1"] },
-            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Tordan_zangado"] },
-            { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 1, "parameters": ["Screen Position = 5"] },
-            { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 1, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 1, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto"] },
-            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 1, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 1, "parameters": ["", 3, 0, 2, ""] },
-            { "code": 401, "indent": 1, "parameters": ["VocÃƒÂª acha que a vida ÃƒÂ© alguma brincadeira, Thorin?! A sua mÃƒÂ£e teria vergonha de vocÃƒÂª!"] },
-            {
-              "code": 357,
-              "indent": 1,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_ExitBusts",
-                "BASIC: Exit Bust(s)",
-                {
-                  "PictureID:arrayeval": "[\"1\"]",
-                  "EndOffsetX:eval": "-200",
-                  "EndOffsetY:eval": "+0",
-                  "EasingType:str": "InSine",
-                  "FlipDirection:str": "None",
-                  "Duration:eval": "20",
-                  "AutoErase:eval": "true"
-                }
-              ]
-            },
-            { "code": 657, "indent": 1, "parameters": ["Picture ID(s) = [\"1\"]"] },
-            { "code": 657, "indent": 1, "parameters": ["End Offset X = -200"] },
-            { "code": 657, "indent": 1, "parameters": ["End Offset Y = +0"] },
-            { "code": 657, "indent": 1, "parameters": ["Exit Easing = InSine"] },
-            { "code": 657, "indent": 1, "parameters": ["Flip Direction = None"] },
-            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
-            { "code": 657, "indent": 1, "parameters": ["Auto-Erase? = true"] },
-            { "code": 0, "indent": 1, "parameters": [] },
-            { "code": 412, "indent": 0, "parameters": [] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "B",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
           "moveType": 0,
-          "priorityType": 0,
+          "priorityType": 1,
           "stepAnime": false,
           "through": false,
           "trigger": 0,
@@ -1580,63 +951,7 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Principal/$Tordan", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_EnterBust",
-                "BASIC: Enter Bust",
-                {
-                  "PictureID:eval": "1",
-                  "PictureName:str": "Portraits/Principal/Tordan_zangado",
-                  "Origin:str": "Bust",
-                  "Position:num": "5",
-                  "StartOffsetX:eval": "-200",
-                  "StartOffsetY:eval": "+0",
-                  "EasingType:str": "OutSine",
-                  "HorzMirror:str": "Auto-Reverse",
-                  "Duration:eval": "20"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
-            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Tordan_zangado"] },
-            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
-            { "code": 657, "indent": 0, "parameters": ["Screen Position = 5"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
-            { "code": 101, "indent": 0, "parameters": ["", 3, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["VÃƒÂ¡ dormir, Thorin!"] },
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": [
-                "VisuMZ_2_VNPictureBusts",
-                "Basic_ExitBusts",
-                "BASIC: Exit Bust(s)",
-                {
-                  "PictureID:arrayeval": "[\"1\"]",
-                  "EndOffsetX:eval": "-200",
-                  "EndOffsetY:eval": "+0",
-                  "EasingType:str": "InSine",
-                  "FlipDirection:str": "None",
-                  "Duration:eval": "20",
-                  "AutoErase:eval": "true"
-                }
-              ]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\"]"] },
-            { "code": 657, "indent": 0, "parameters": ["End Offset X = -200"] },
-            { "code": 657, "indent": 0, "parameters": ["End Offset Y = +0"] },
-            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
-            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
-            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
+            { "code": 122, "indent": 0, "parameters": [27, 27, 0, 0, 5] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -1663,18 +978,21 @@
             "switch2Valid": false,
             "variableId": 27,
             "variableValid": true,
-            "variableValue": 5
+            "variableValue": 7
           },
           "directionFix": false,
-          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
-          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [27, 27, 0, 0, 5] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 0,
           "stepAnime": false,
-          "through": false,
+          "through": true,
           "trigger": 0,
           "walkAnime": true
         },
@@ -1770,8 +1088,8 @@
           "walkAnime": true
         }
       ],
-      "x": 12,
-      "y": 7
+      "x": 15,
+      "y": 8
     },
     {
       "id": 9,
@@ -1813,7 +1131,7 @@
     },
     {
       "id": 10,
-      "name": "TrofÃƒÂ©u 2",
+      "name": "Troféu de Thordan",
       "note": "",
       "pages": [
         {
@@ -1825,7 +1143,7 @@
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
             "switch1Id": 5,
-            "switch1Valid": true,
+            "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 27,
@@ -1835,11 +1153,8 @@
           "directionFix": false,
           "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
           "list": [
-            { "code": 357, "indent": 0, "parameters": ["Coreto_Quests", "addKeyItem", "Add Key Item", { "itemID": "3" }] },
-            { "code": 657, "indent": 0, "parameters": ["Item ID = 3"] },
-            { "code": 122, "indent": 0, "parameters": [9, 9, 1, 0, 1] },
-            { "code": 123, "indent": 0, "parameters": ["A", 0] },
             { "code": 122, "indent": 0, "parameters": [27, 27, 0, 0, 3] },
+            { "code": 123, "indent": 0, "parameters": ["A", 0] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -1952,11 +1267,7 @@
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
             { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"1-B\""] },
             { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Aviso Materno\""] },
-            {
-              "code": 122,
-              "indent": 0,
-              "parameters": [103, 103, 0, 4, "\"A mÃƒÂ£e de Thorin surge aflita dizendo Ã¢â‚¬Å“nÃƒÂ£o temos tempo!Ã¢â‚¬Â, instaurando a urgÃƒÂªncia que move a histÃƒÂ³ria.\""]
-            },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"A mãe de Thorin surge aflita dizendo “não temos tempo!”, instaurando a urgência que move a história.\""] },
             { "code": 117, "indent": 0, "parameters": [16] },
             {
               "code": 357,
@@ -2042,8 +1353,8 @@
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
             { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"2-B\""] },
-            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"SÃƒÂ¡paro ao lado\""] },
-            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"SÃƒÂ¡paro-boca-de-corneta, no quarto, berra que o jogo jÃƒÂ¡ comeÃƒÂ§ou Ã¢â€ â€™ urgÃƒÂªncia imediata.\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Sáparo ao Lado\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Sáparo-boca-de-corneta, no quarto, berra que o jogo já começou → urgência imediata.\""] },
             { "code": 117, "indent": 0, "parameters": [16] },
             {
               "code": 357,
@@ -2179,7 +1490,7 @@
             {
               "code": 401,
               "indent": 0,
-              "parameters": ["SaudaÃƒÂ§ÃƒÂµes, aventureiro! Bem-vindo ao lar da famÃƒÂ­lia Forjaprata, uma das linhagens mais prestigiosas da cidade de Gildrat. Aqui estÃƒÂ¡ a sua nova missÃƒÂ£o!"]
+              "parameters": ["Saudações, aventureiro! Bem-vindo ao lar da família Forjaprata, uma das linhagens mais prestigiosas da cidade de Gildrat. Aqui está a sua nova missão!"]
             },
             {
               "code": 357,
@@ -2268,7 +1579,7 @@
             "switch2Valid": false,
             "variableId": 27,
             "variableValid": true,
-            "variableValue": 5
+            "variableValue": 7
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Principal/$Melia", "direction": 4, "pattern": 1, "characterIndex": 0 },
@@ -2310,8 +1621,16 @@
             { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"1-A\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Bruma Onírica\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Música etérea, visual enevoado; mãe de Thorin aparece entre sombras, voz abafada\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"1-B\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Alerta Crítico\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Ela diz que o tempo deles está acabando e que ele precisa impedir Damburr, mas tudo é confuso.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Meu filho, estamos ficando sem tempo. Dambur... impeÃƒÂ§a-o!"] },
+            { "code": 401, "indent": 0, "parameters": ["Meu filho, estamos ficando sem tempo. Dambur... impeça-o!"] },
             {
               "code": 357,
               "indent": 0,
@@ -2377,7 +1696,7 @@
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Eu ainda nÃƒÂ£o entendo o que isso tudo significa... por que vocÃƒÂª foi embora, mamÃƒÂ£e?"] },
+            { "code": 401, "indent": 0, "parameters": ["Eu ainda não entendo o que isso tudo significa... por que você foi embora, mamãe?"] },
             { "code": 357, "indent": 0, "parameters": ["PKD_AnimaX", "StopAnimationAction", "Stop Anima Action", { "eventId": "0" }] },
             { "code": 657, "indent": 0, "parameters": ["Character ID = 0"] },
             {
@@ -2447,7 +1766,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Eu tive uma noite ruim... mas quer saber? Hoje ninguÃƒÂ©m vai estragar o meu dia, nem vocÃƒÂª nem o meu pai! Partiu treinar, a final do campeonato estÃƒÂ¡ chegando e eu nÃƒÂ£o tenho tempo para um trabalho idiota como uma expediÃƒÂ§ÃƒÂ£o. "
+                "Eu tive uma noite ruim... mas quer saber? Hoje ninguém vai estragar o meu dia, nem você nem o meu pai! Partiu treinar, a final do campeonato está chegando e eu não tenho tempo para um trabalho idiota como uma expredição.\""
               ]
             },
             {
@@ -2693,7 +2012,7 @@
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Passarinho que acorda cedo pega minhoca! Anda logo, Thorin, mete o pÃ©!"] },
+            { "code": 401, "indent": 0, "parameters": ["Passarinho que acorda cedo pega minhoca! Anda logo, Thorin, mete o pé!"] },
             {
               "code": 357,
               "indent": 0,
@@ -2782,7 +2101,98 @@
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Vai chorar?! TÃ´ quase com dÃ³ de vocÃª AAHAHHAHA!"] },
+            { "code": 401, "indent": 0, "parameters": ["Vai chorar?! Tô quase com dó de você AAHAHHAHA!"] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\"]",
+                  "EndOffsetX:eval": "-200",
+                  "EndOffsetY:eval": "+0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\"]"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 27,
+            "variableValid": true,
+            "variableValue": 1
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 1 },
+          "list": [
+            { "code": 108, "indent": 0, "parameters": ["XA:Saparo"] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Principal/Saparo",
+                  "Origin:str": "Bust",
+                  "Position:num": "5",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Saparo"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 5"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"4-B\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Sáparo no Puleiro\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Sáparo-boca-de-corneta, empoleirado ao lado da cama, provoca: 'Cadê seu uniforme de minerador, campeão'?\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
             {
               "code": 357,
               "indent": 0,
@@ -2871,7 +2281,7 @@
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["TÃ´ com fome! Que horas sai o rango?!"] },
+            { "code": 401, "indent": 0, "parameters": ["Tô com fome! Que horas sai o rango?!"] },
             {
               "code": 357,
               "indent": 0,
@@ -3349,7 +2759,7 @@
     },
     {
       "id": 18,
-      "name": "MÃƒÂ©lia",
+      "name": "Retrato da Mãe",
       "note": "",
       "pages": [
         {
@@ -3453,6 +2863,289 @@
         }
       ],
       "x": 0,
+      "y": 0
+    },
+    {
+      "id": 20,
+      "name": "EV020",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 27,
+            "variableValid": true,
+            "variableValue": 1
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 205, "indent": 0, "parameters": [8, { "list": [{ "code": 19, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 19, "indent": null }] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                -1,
+                { "list": [{ "code": 45, "parameters": ["Move to:13,7"], "indent": null }, { "code": 18, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }
+              ]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to:13,7"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 18, "indent": null }] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusTargetEvent", "Camera: Focus Target Event", { "EventID:eval": "8", "Duration:num": "60", "EasingType:str": "InOutSine" }]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Event ID = 8"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 60"] },
+            { "code": 657, "indent": 0, "parameters": ["Easing Type = InOutSine"] },
+            { "code": 357, "indent": 0, "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusWait", "Camera: Wait for Focus", {}] },
+            { "code": 357, "indent": 0, "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusPlayer", "Camera: Focus Player", { "Duration:num": "60", "EasingType:str": "InOutSine" }] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 60"] },
+            { "code": 657, "indent": 0, "parameters": ["Easing Type = InOutSine"] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"3-B\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Ferida de Classe\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Tordan esbraveja que viu o filho “brincando de esporte de subúrbio” e diz que isso mancha o nome da família.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            { "code": 102, "indent": 0, "parameters": [["Ser Respeitoso", "Ser Sarcástico", "Ser Rebelde"], 1, 0, 2, 0] },
+            { "code": 402, "indent": 0, "parameters": [0, "Ser Respeitoso"] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 402, "indent": 0, "parameters": [1, "Ser Sarcástico"] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 402, "indent": 0, "parameters": [2, "Ser Rebelde"] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 404, "indent": 0, "parameters": [] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"3-E\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Desdém de Tordan\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Coragem? O Império precisa de generais, não de saltimbancos suburbanos! — Tordan finaliza com a humilhação.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            { "code": 355, "indent": 0, "parameters": ["SQSM.CompleteTaskForQuest(\"fimDeJogo\", 1);"] },
+            { "code": 655, "indent": 0, "parameters": ["SQSM.ShowTaskForQuest(\"fimDeJogo\", 2);"] },
+            { "code": 655, "indent": 0, "parameters": ["SQSM.ShowDescriptionForQuest(\"fimDeJogo\", 2);"] },
+            { "code": 122, "indent": 0, "parameters": [27, 27, 0, 0, 2] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 3,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 27,
+            "variableValid": true,
+            "variableValue": 2
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 2,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 27,
+            "variableValid": true,
+            "variableValue": 3
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 357, "indent": 0, "parameters": ["Coreto_Quests", "addKeyItem", "Add Key Item", { "itemID": "2" }] },
+            { "code": 657, "indent": 0, "parameters": ["Item ID = 2"] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"4-E\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Reflexão Instantânea\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Thorin sussurra: “Se ele lembrar que também sonhou, talvez entenda…\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            { "code": 355, "indent": 0, "parameters": ["SQSM.CompleteTaskForQuest(\"fimDeJogo\", 2);"] },
+            { "code": 655, "indent": 0, "parameters": ["SQSM.ShowTaskForQuest(\"fimDeJogo\", 3);"] },
+            { "code": 655, "indent": 0, "parameters": ["SQSM.ShowDescriptionForQuest(\"fimDeJogo\", 3);"] },
+            { "code": 122, "indent": 0, "parameters": [27, 27, 0, 0, 4] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 3,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 27,
+            "variableValid": true,
+            "variableValue": 4
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 27,
+            "variableValid": true,
+            "variableValue": 5
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"5-A\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Entrega Solene\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Thorin estende ao pai o troféu juvenil marcado com Tordan.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"5-C\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Desprezo Público\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Tordan ergue o troféu, chama-o de “sucata brilhante” e o larga sobre a mesa com estardalhaço.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"5-D\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Humilhação\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Futebol de subúrbio nunca trouxe honra a ninguém — ele reafirma a vergonha familiar.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"6-A\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Levantada de Autoridade\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Tordan ergue-se da cadeira, impondo presença sobre Thorin.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"6-B\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Ordem Irrevogável\""] },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                103,
+                103,
+                0,
+                4,
+                "\"Thorin encara e solta: 'Não quero entrar para a Guarda.' O portrait de Tordan endurece e ele decreta: “Então você vai trabalhar como minerador. Amanhã ao amanhecer apresentar-se-á a Balastrus na taverna. Aprendiz de minerador. Ponto final.\""
+              ]
+            },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [8, { "list": [{ "code": 45, "parameters": ["Move to:4,14"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to:4,14"], "indent": null }] },
+            { "code": 355, "indent": 0, "parameters": ["SQSM.CompleteTaskForQuest(\"fimDeJogo\", 3);"] },
+            { "code": 655, "indent": 0, "parameters": ["SQSM.ShowTaskForQuest(\"fimDeJogo\", 4);"] },
+            { "code": 655, "indent": 0, "parameters": ["SQSM.ShowDescriptionForQuest(\"fimDeJogo\", 4);"] },
+            { "code": 122, "indent": 0, "parameters": [27, 27, 0, 0, 6] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 3,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 27,
+            "variableValid": true,
+            "variableValue": 6
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 2,
       "y": 0
     }
   ]
