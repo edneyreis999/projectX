@@ -79,10 +79,10 @@
   {
     "id": 5,
     "list": [
-      { "code": 315, "indent": 0, "parameters": [0, 0, 0, 0, 10000, true] },
+      { "code": 315, "indent": 0, "parameters": [0, 0, 0, 0, 30, true] },
       { "code": 0, "indent": 0, "parameters": [] }
     ],
-    "name": "Add Exp",
+    "name": "Add 30 Exp",
     "switchId": 1,
     "trigger": 0
   },
