@@ -1630,7 +1630,7 @@
             { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Ela diz que o tempo deles está acabando e que ele precisa impedir Damburr, mas tudo é confuso.\""] },
             { "code": 117, "indent": 0, "parameters": [16] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Meu filho, estamos ficando sem tempo. Dambur... impeÃƒÂ§a-o!"] },
+            { "code": 401, "indent": 0, "parameters": ["Meu filho, estamos ficando sem tempo. Dambur... impeça-o!"] },
             {
               "code": 357,
               "indent": 0,
@@ -2012,7 +2012,7 @@
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Passarinho que acorda cedo pega minhoca! Anda logo, Thorin, mete o pÃ©!"] },
+            { "code": 401, "indent": 0, "parameters": ["Passarinho que acorda cedo pega minhoca! Anda logo, Thorin, mete o pé!"] },
             {
               "code": 357,
               "indent": 0,
@@ -2101,7 +2101,7 @@
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["Vai chorar?! TÃ´ quase com dÃ³ de vocÃª AAHAHHAHA!"] },
+            { "code": 401, "indent": 0, "parameters": ["Vai chorar?! Tô quase com dó de você AAHAHHAHA!"] },
             {
               "code": 357,
               "indent": 0,
@@ -2281,7 +2281,7 @@
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 121, "indent": 0, "parameters": [43, 43, 0] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
-            { "code": 401, "indent": 0, "parameters": ["TÃ´ com fome! Que horas sai o rango?!"] },
+            { "code": 401, "indent": 0, "parameters": ["Tô com fome! Que horas sai o rango?!"] },
             {
               "code": 357,
               "indent": 0,
