@@ -16,7 +16,7 @@
   {
     "id": 2,
     "name": "Lobo Jovem",
-    "battlerName": "Lobo_Jovem",
+    "battlerName": "Coreto_Lobaris_B",
     "battlerHue": 0,
     "exp": 15,
     "gold": 5,
@@ -29,7 +29,7 @@
   {
     "id": 3,
     "name": "Goblin Saqueador",
-    "battlerName": "Goblin_Saqueador",
+    "battlerName": "Coreto_Lobaris_B",
     "battlerHue": 0,
     "exp": 25,
     "gold": 15,
@@ -42,7 +42,7 @@
   {
     "id": 4,
     "name": "Lobo de Gelo",
-    "battlerName": "Lobo_de_Gelo",
+    "battlerName": "Coreto_Lobaris_B",
     "battlerHue": 0,
     "exp": 30,
     "gold": 20,
@@ -55,7 +55,7 @@
   {
     "id": 5,
     "name": "Bandido Anão Renegado",
-    "battlerName": "Bandido_Anao_Renegado",
+    "battlerName": "Coreto_Lobaris_B",
     "battlerHue": 0,
     "exp": 35,
     "gold": 25,
@@ -68,7 +68,7 @@
   {
     "id": 6,
     "name": "Lobo Alpha de Gelo",
-    "battlerName": "Lobo_Alpha_de_Gelo",
+    "battlerName": "Coreto_Lobaris_B",
     "battlerHue": 0,
     "exp": 45,
     "gold": 25,
@@ -159,7 +159,7 @@
   {
     "id": 13,
     "name": "Morcego de Caverna",
-    "battlerName": "Petitdevil",
+    "battlerName": "Coreto_Lobaris_B",
     "battlerHue": 0,
     "exp": 25,
     "gold": 25,
@@ -172,7 +172,7 @@
   {
     "id": 14,
     "name": "Aranha Mineira",
-    "battlerName": "Coreto_Escorpião_Prata",
+    "battlerName": "Coreto_Lobaris_B",
     "battlerHue": 0,
     "exp": 35,
     "gold": 30,
@@ -185,7 +185,7 @@
   {
     "id": 15,
     "name": "Aranha Gigante",
-    "battlerName": "Coreto_Escorpião_Prata",
+    "battlerName": "Coreto_Lobaris_B",
     "battlerHue": 0,
     "exp": 50,
     "gold": 40,
@@ -198,7 +198,7 @@
   {
     "id": 16,
     "name": "Rato Gigante Mutante",
-    "battlerName": "Frilledlizard",
+    "battlerName": "Coreto_Lobaris_B",
     "battlerHue": 0,
     "exp": 50,
     "gold": 40,
@@ -302,7 +302,7 @@
   {
     "id": 24,
     "name": "Rato de Esgoto",
-    "battlerName": "Rato_de_Esgoto",
+    "battlerName": "Coreto_Lobaris_B",
     "battlerHue": 0,
     "exp": 40,
     "gold": 50,
@@ -315,7 +315,7 @@
   {
     "id": 25,
     "name": "Limo Ácido",
-    "battlerName": "Limo_Acido",
+    "battlerName": "Coreto_Lobaris_B",
     "battlerHue": 0,
     "exp": 55,
     "gold": 55,
@@ -328,7 +328,7 @@
   {
     "id": 26,
     "name": "Fungo Venenoso Gigante",
-    "battlerName": "Fungo_Venenoso_Gigante",
+    "battlerName": "Coreto_Lobaris_B",
     "battlerHue": 0,
     "exp": 75,
     "gold": 65,
@@ -341,7 +341,7 @@
   {
     "id": 27,
     "name": "Gosma Tóxica",
-    "battlerName": "Gosma_Toxica",
+    "battlerName": "Coreto_Lobaris_B",
     "battlerHue": 0,
     "exp": 75,
     "gold": 65,
@@ -445,7 +445,7 @@
   {
     "id": 35,
     "name": "Guardião Menor de Pedra",
-    "battlerName": "Guardiao_Menor_de_Pedra",
+    "battlerName": "Coreto_Lobaris_B",
     "battlerHue": 0,
     "exp": 60,
     "gold": 80,
@@ -458,7 +458,7 @@
   {
     "id": 36,
     "name": "Elemental de Terra",
-    "battlerName": "Elemental_de_Terra",
+    "battlerName": "Coreto_Lobaris_B",
     "battlerHue": 0,
     "exp": 80,
     "gold": 85,
@@ -471,7 +471,7 @@
   {
     "id": 37,
     "name": "Guardião Ancião",
-    "battlerName": "Guardiao_Anciao",
+    "battlerName": "Coreto_Lobaris_B",
     "battlerHue": 0,
     "exp": 180,
     "gold": 90,
@@ -484,7 +484,7 @@
   {
     "id": 38,
     "name": "Sombra Errante",
-    "battlerName": "Sombra_Errante",
+    "battlerName": "Coreto_Lobaris_B",
     "battlerHue": 0,
     "exp": 100,
     "gold": 95,
@@ -497,7 +497,7 @@
   {
     "id": 39,
     "name": "Corvos de Melios",
-    "battlerName": "Corvos_de_Melios",
+    "battlerName": "Coreto_Lobaris_B",
     "battlerHue": 0,
     "exp": 200,
     "gold": 100,
@@ -510,7 +510,7 @@
   {
     "id": 40,
     "name": "Guardião Colossal",
-    "battlerName": "Guardiao_Colossal",
+    "battlerName": "Coreto_Lobaris_B",
     "battlerHue": 0,
     "exp": 200,
     "gold": 100,
