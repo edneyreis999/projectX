@@ -824,7 +824,7 @@
             "variableValid": false,
             "variableValue": 0
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": { "tileId": 0, "characterName": "Estadio/Vestiario/!$Capacete", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
             {
@@ -894,7 +894,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         },
         {
           "conditions": {
@@ -912,7 +912,7 @@
             "variableValid": true,
             "variableValue": 3
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": { "tileId": 0, "characterName": "Estadio/Vestiario/!$Capacete", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
             {
@@ -1023,7 +1023,7 @@
             "variableValid": true,
             "variableValue": 4
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": { "tileId": 0, "characterName": "Estadio/Vestiario/!$Armadura", "direction": 2, "pattern": 1, "characterIndex": 0 },
           "list": [
             {
@@ -1093,7 +1093,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 1,
-          "walkAnime": true
+          "walkAnime": false
         }
       ],
       "x": 9,

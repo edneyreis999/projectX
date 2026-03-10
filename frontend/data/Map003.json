@@ -2443,7 +2443,7 @@
             "switch2Valid": false,
             "variableId": 40,
             "variableValid": true,
-            "variableValue": 0
+            "variableValue": 1
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Other1", "direction": 2, "pattern": 0, "characterIndex": 2 },
@@ -2596,7 +2596,7 @@
             "switch2Valid": false,
             "variableId": 40,
             "variableValid": true,
-            "variableValue": 0
+            "variableValue": 1
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Other1", "direction": 2, "pattern": 0, "characterIndex": 2 },
@@ -3225,7 +3225,7 @@
             "switch2Valid": false,
             "variableId": 40,
             "variableValid": true,
-            "variableValue": 0
+            "variableValue": 1
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Other1", "direction": 2, "pattern": 0, "characterIndex": 2 },
@@ -3420,7 +3420,7 @@
             "switch2Valid": false,
             "variableId": 40,
             "variableValid": true,
-            "variableValue": 0
+            "variableValue": 1
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Other1", "direction": 2, "pattern": 0, "characterIndex": 2 },
@@ -3573,7 +3573,7 @@
             "switch2Valid": false,
             "variableId": 40,
             "variableValid": true,
-            "variableValue": 0
+            "variableValue": 1
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Other1", "direction": 2, "pattern": 0, "characterIndex": 2 },
@@ -5346,7 +5346,7 @@
             "switch2Valid": false,
             "variableId": 40,
             "variableValid": true,
-            "variableValue": 0
+            "variableValue": 1
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Other1", "direction": 2, "pattern": 0, "characterIndex": 2 },
@@ -6430,7 +6430,7 @@
             "switch2Valid": false,
             "variableId": 40,
             "variableValid": true,
-            "variableValue": 0
+            "variableValue": 1
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Other1", "direction": 2, "pattern": 0, "characterIndex": 2 },
@@ -8566,7 +8566,7 @@
             "switch2Valid": false,
             "variableId": 40,
             "variableValid": true,
-            "variableValue": 0
+            "variableValue": 1
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "!Other1", "direction": 2, "pattern": 0, "characterIndex": 2 },
@@ -8796,7 +8796,7 @@
             "switch2Valid": false,
             "variableId": 40,
             "variableValid": true,
-            "variableValue": 0
+            "variableValue": 1
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Principal/$Balastrus", "direction": 2, "pattern": 1, "characterIndex": 0 },
@@ -8988,7 +8988,7 @@
             "switch2Valid": false,
             "variableId": 34,
             "variableValid": true,
-            "variableValue": 0
+            "variableValue": 1
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Principal/$Mhordred", "direction": 2, "pattern": 1, "characterIndex": 0 },
@@ -9498,7 +9498,7 @@
             "switch2Valid": false,
             "variableId": 40,
             "variableValid": true,
-            "variableValue": 0
+            "variableValue": 1
           },
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Principal/$Filena", "direction": 6, "pattern": 2, "characterIndex": 0 },

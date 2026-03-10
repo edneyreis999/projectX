@@ -1181,7 +1181,6 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Reed", "direction": 2, "pattern": 0, "characterIndex": 0 },
           "list": [
-            { "code": 230, "indent": 0, "parameters": [120] },
             {
               "code": 357,
               "indent": 0,
