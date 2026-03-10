@@ -949,7 +949,7 @@
             "variableValue": 4
           },
           "directionFix": false,
-          "image": { "tileId": 0, "characterName": "Principal/$Tordan", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "image": { "tileId": 0, "characterName": "Principal/$Tordan", "direction": 4, "pattern": 1, "characterIndex": 0 },
           "list": [
             { "code": 122, "indent": 0, "parameters": [27, 27, 0, 0, 5] },
             { "code": 0, "indent": 0, "parameters": [] }
@@ -1089,7 +1089,7 @@
         }
       ],
       "x": 15,
-      "y": 8
+      "y": 5
     },
     {
       "id": 9,
@@ -2980,8 +2980,6 @@
           "directionFix": false,
           "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
           "list": [
-            { "code": 205, "indent": 0, "parameters": [8, { "list": [{ "code": 19, "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }] },
-            { "code": 505, "indent": 0, "parameters": [{ "code": 19, "indent": null }] },
             {
               "code": 205,
               "indent": 0,
@@ -3008,12 +3006,27 @@
             { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Ferida de Classe\""] },
             { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Tordan esbraveja que viu o filho “brincando de esporte de subúrbio” e diz que isso mancha o nome da família.\""] },
             { "code": 117, "indent": 0, "parameters": [16] },
-            { "code": 102, "indent": 0, "parameters": [["Ser Respeitoso", "Ser Sarcástico", "Ser Rebelde"], 1, 0, 2, 0] },
-            { "code": 402, "indent": 0, "parameters": [0, "Ser Respeitoso"] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "PKD_VisualChoices_MZ",
+                "OpenVisualChoice",
+                "Visual Choices",
+                { "menuId": "tresEscolhas", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "", "source": "Plugin parameters" }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Group ID = tresEscolhas"] },
+            { "code": 657, "indent": 0, "parameters": ["Position type = 0"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = {\"x:int\":\"0\",\"y:int\":\"0\"}"] },
+            { "code": 657, "indent": 0, "parameters": ["Header Text = "] },
+            { "code": 657, "indent": 0, "parameters": ["Settings from = Plugin parameters"] },
+            { "code": 102, "indent": 0, "parameters": [["respeitoso", "sarcastico", "rebelde"], 1, 0, 2, 0] },
+            { "code": 402, "indent": 0, "parameters": [0, "respeitoso"] },
             { "code": 0, "indent": 1, "parameters": [] },
-            { "code": 402, "indent": 0, "parameters": [1, "Ser Sarcástico"] },
+            { "code": 402, "indent": 0, "parameters": [1, "sarcastico"] },
             { "code": 0, "indent": 1, "parameters": [] },
-            { "code": 402, "indent": 0, "parameters": [2, "Ser Rebelde"] },
+            { "code": 402, "indent": 0, "parameters": [2, "rebelde"] },
             { "code": 0, "indent": 1, "parameters": [] },
             { "code": 404, "indent": 0, "parameters": [] },
             { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"3-E\""] },
