@@ -9,7 +9,7 @@
  *   node simulacao-progressao.js --battles=30 --area=kravens
  *   node simulacao-progressao.js --battles=10 --troop=2
  *
- * @version 1.0.0
+ * @version 1.1.0
  * @date 2026-03-11
  */
 
@@ -31,49 +31,6 @@ const CHARACTERS = [
   { id: 6, name: 'Mhordred' }
 ];
 
-// Definição das áreas e suas tropas
-const AREAS = {
-  'cao-luar': [
-    { troopId: 2, name: 'Lobo Jovem x2', enemies: [{ id: 2, qty: 2 }], exp: 76 },
-    { troopId: 3, name: 'Lobo Jovem x3', enemies: [{ id: 2, qty: 3 }], exp: 114 },
-    { troopId: 4, name: 'Goblin Saqueador x2', enemies: [{ id: 3, qty: 2 }], exp: 126 },
-    { troopId: 5, name: 'Goblin Saqueador x3', enemies: [{ id: 3, qty: 3 }], exp: 189 },
-    { troopId: 6, name: 'Lobo de Gelo x3', enemies: [{ id: 4, qty: 3 }], exp: 225 },
-    { troopId: 7, name: 'Lobo de Gelo x4', enemies: [{ id: 4, qty: 4 }], exp: 300 },
-    { troopId: 8, name: 'Bandido Anão x3', enemies: [{ id: 5, qty: 3 }], exp: 264 },
-    { troopId: 10, name: 'Goblin x2 + Bandido x2', enemies: [{ id: 3, qty: 2 }, { id: 5, qty: 2 }], exp: 302 },
-    { troopId: 11, name: 'Lobo de Gelo x2 + Lobo Jovem x2', enemies: [{ id: 4, qty: 2 }, { id: 2, qty: 2 }], exp: 226 }
-  ],
-  'kravens': [
-    { troopId: 23, name: 'Morcego x3', enemies: [{ id: 13, qty: 3 }], exp: 189 },
-    { troopId: 24, name: 'Morcego x4', enemies: [{ id: 13, qty: 4 }], exp: 252 },
-    { troopId: 25, name: 'Morcego x5', enemies: [{ id: 13, qty: 5 }], exp: 315 },
-    { troopId: 26, name: 'Aranha Mineira x2', enemies: [{ id: 14, qty: 2 }], exp: 176 },
-    { troopId: 27, name: 'Aranha Mineira x3', enemies: [{ id: 14, qty: 3 }], exp: 264 },
-    { troopId: 28, name: 'Morcego x3 + Aranha x1', enemies: [{ id: 13, qty: 3 }, { id: 14, qty: 1 }], exp: 277 },
-    { troopId: 29, name: 'Aranha Gigante x2', enemies: [{ id: 15, qty: 2 }], exp: 250 },
-    { troopId: 30, name: 'Rato Gigante x4', enemies: [{ id: 16, qty: 4 }], exp: 500 },
-    { troopId: 31, name: 'Aranha Gigante x1 + Rato Gigante x3', enemies: [{ id: 15, qty: 1 }, { id: 16, qty: 3 }], exp: 500 },
-  ],
-  'esgoto': [
-    { troopId: 44, name: 'Rato de Esgoto x4', enemies: [{ id: 24, qty: 4 }], exp: 400 },
-    { troopId: 45, name: 'Rato de Esgoto x5', enemies: [{ id: 24, qty: 5 }], exp: 500 },
-    { troopId: 46, name: 'Limo Ácido x1', enemies: [{ id: 25, qty: 1 }], exp: 138 },
-    { troopId: 47, name: 'Limo Ácido x2', enemies: [{ id: 25, qty: 2 }], exp: 276 },
-    { troopId: 48, name: 'Rato x3 + Limo x1', enemies: [{ id: 24, qty: 3 }, { id: 25, qty: 1 }], exp: 438 },
-    { troopId: 49, name: 'Fungo Venenoso x2', enemies: [{ id: 26, qty: 2 }], exp: 376 },
-    { troopId: 50, name: 'Gosma Tóxica x1', enemies: [{ id: 27, qty: 1 }], exp: 188 },
-  ],
-  'melios': [
-    { troopId: 63, name: 'Guardião Menor x2', enemies: [{ id: 35, qty: 2 }], exp: 300 },
-    { troopId: 64, name: 'Guardião Menor x3', enemies: [{ id: 35, qty: 3 }], exp: 450 },
-    { troopId: 65, name: 'Elemental de Terra x1', enemies: [{ id: 36, qty: 1 }], exp: 200 },
-    { troopId: 66, name: 'Guardião Menor x1 + Elemental x1', enemies: [{ id: 35, qty: 1 }, { id: 36, qty: 1 }], exp: 350 },
-    { troopId: 67, name: 'Guardião Ancião (BOSS)', enemies: [{ id: 37, qty: 1 }], exp: 180 },
-    { troopId: 68, name: 'Sombra Errante x1', enemies: [{ id: 38, qty: 1 }], exp: 250 },
-  ]
-};
-
 // ============================================
 // CARREGAMENTO DE DADOS
 // ============================================
@@ -89,8 +46,9 @@ function loadGameData() {
   const actors = loadJson('Actors.json');
   const skills = loadJson('Skills.json');
   const enemies = loadJson('Enemies.json');
+  const troops = loadJson('Troops.json');
 
-  return { classes, actors, skills, enemies };
+  return { classes, actors, skills, enemies, troops };
 }
 
 // ============================================
@@ -139,6 +97,106 @@ function getLevelFromExp(currentExp, expParams, maxLevel = MAX_LEVEL) {
     }
   }
   return maxLevel;
+}
+
+// ============================================
+// FUNÇÕES DE MAPEAMENTO DE ÁREAS E TROPAS
+// ============================================
+
+/**
+ * Calcula a EXP total de uma tropa somando a EXP de cada inimigo.
+ *
+ * @param {Object} troop - Objeto da tropa do Troops.json
+ * @param {Array} enemies - Array de inimigos do Enemies.json
+ * @returns {number} EXP total da tropa
+ */
+function calculateTroopExp(troop, enemies) {
+  let totalExp = 0;
+
+  // Filtrar elementos null dos enemies
+  const validEnemies = enemies.filter(e => e !== null);
+
+  for (const member of troop.members) {
+    // Ignorar inimigos ocultos (hidden: true)
+    if (member.hidden) continue;
+
+    const enemy = validEnemies.find(e => e.id === member.enemyId);
+    if (enemy) {
+      totalExp += enemy.exp;
+    }
+  }
+
+  return totalExp;
+}
+
+/**
+ * Normaliza o nome da área para criar uma chave consistente.
+ * Mapeia nomes das áreas para chaves compatíveis com o script.
+ *
+ * @param {string} name - Nome do separador (ex: "=== ESTRADA DO CÃO-LUAR ===")
+ * @returns {string} Chave normalizada (ex: "cao-luar")
+ */
+function normalizeAreaName(name) {
+  const cleanName = name
+    .replace(/===/g, '')
+    .trim()
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '') // Remove acentos
+    .replace(/\s+/g, '-');
+
+  // Mapeamento manual para manter compatibilidade
+  const areaMap = {
+    'estrada-do-cao-luar': 'cao-luar',
+    'minas-de-kravens': 'kravens',
+    'esgoto-de-gildrat': 'esgoto',
+    'ruinas-de-melios': 'melios',
+    'regioes-pos-selo': 'pos-selo'
+  };
+
+  return areaMap[cleanName] || cleanName;
+}
+
+/**
+ * Mapeia as tropas por área usando os separadores do Troops.json.
+ *
+ * @param {Array} troops - Array de tropas do Troops.json
+ * @param {Array} enemies - Array de inimigos do Enemies.json
+ * @returns {Object} Objeto com áreas como chaves e tropas como valores
+ */
+function mapAreasBySeparators(troops, enemies) {
+  const areas = {};
+  let currentArea = null;
+  let currentAreaKey = null;
+
+  // Filtrar elementos null
+  const validTroops = troops.filter(t => t !== null);
+
+  for (const troop of validTroops) {
+    // Verificar se é um separador de área
+    if (troop.name && troop.name.includes('===')) {
+      currentArea = troop.name;
+      currentAreaKey = normalizeAreaName(troop.name);
+      areas[currentAreaKey] = [];
+      continue;
+    }
+
+    // Ignorar tropas sem membros ou com nome vazio
+    if (!troop.members || troop.members.length === 0) continue;
+    if (!troop.name || troop.name.trim() === '') continue;
+
+    // Se estamos dentro de uma área, adicionar a tropa
+    if (currentAreaKey) {
+      areas[currentAreaKey].push({
+        troopId: troop.id,
+        name: troop.name,
+        enemies: troop.members.map(m => ({ id: m.enemyId, qty: 1, hidden: m.hidden })),
+        exp: calculateTroopExp(troop, enemies)
+      });
+    }
+  }
+
+  return areas;
 }
 
 // ============================================
@@ -239,9 +297,20 @@ function initializeSimulations(gameData) {
 
 function runSimulation(numBattles, areaName, specificTroopId, gameData) {
   const simulations = initializeSimulations(gameData);
+
+  // Mapear áreas dinamicamente do Troops.json
+  const areas = mapAreasBySeparators(gameData.troops, gameData.enemies);
+
+  // Verificar se a área existe
+  if (!areas[areaName]) {
+    console.error(`Erro: Área "${areaName}" não encontrada`);
+    console.error(`Áreas disponíveis: ${Object.keys(areas).join(', ')}`);
+    process.exit(1);
+  }
+
   const troops = specificTroopId
-    ? AREAS[areaName].filter(t => t.troopId === specificTroopId)
-    : AREAS[areaName];
+    ? areas[areaName].filter(t => t.troopId === specificTroopId)
+    : areas[areaName];
 
   if (troops.length === 0) {
     console.error(`Erro: Nenhuma tropa encontrada para área="${areaName}" troop=${specificTroopId}`);
@@ -273,7 +342,7 @@ function runSimulation(numBattles, areaName, specificTroopId, gameData) {
     battleResults.push(battleResult);
   }
 
-  return { simulations, battleResults, troops };
+  return { simulations, battleResults, troops, areas };
 }
 
 // ============================================
@@ -400,12 +469,6 @@ function parseArgs() {
     process.exit(1);
   }
 
-  if (!AREAS[result.area]) {
-    console.error(`Erro: Área "${result.area}" não encontrada`);
-    console.error(`Áreas disponíveis: ${Object.keys(AREAS).join(', ')}`);
-    process.exit(1);
-  }
-
   return result;
 }
 
@@ -415,6 +478,19 @@ function parseArgs() {
 
 function main() {
   const args = parseArgs();
+
+  // Carregar dados do jogo primeiro para obter áreas disponíveis
+  const gameData = loadGameData();
+
+  // Mapear áreas para validação
+  const areas = mapAreasBySeparators(gameData.troops, gameData.enemies);
+
+  // Validar área
+  if (!areas[args.area]) {
+    console.error(`\nErro: Área "${args.area}" não encontrada`);
+    console.error(`Áreas disponíveis: ${Object.keys(areas).join(', ')}`);
+    process.exit(1);
+  }
 
   console.log('\n' + '='.repeat(80));
   console.log('SIMULAÇÃO DE PROGRESSÃO - PROJECTX');
@@ -428,11 +504,12 @@ function main() {
 
   // Carregar dados do jogo
   console.log('\nCarregando dados do jogo...');
-  const gameData = loadGameData();
   console.log('  ✓ Classes carregadas');
   console.log('  ✓ Actors carregados');
   console.log('  ✓ Skills carregadas');
   console.log('  ✓ Enemies carregados');
+  console.log('  ✓ Troops carregados');
+  console.log(`  ✓ ${Object.keys(areas).length} áreas mapeadas`);
 
   // Executar simulação
   console.log('\nExecutando simulação...');
@@ -457,5 +534,7 @@ module.exports = {
   expForLevel,
   getLevelFromExp,
   CharacterSimulation,
-  AREAS
+  calculateTroopExp,
+  mapAreasBySeparators,
+  normalizeAreaName
 };
