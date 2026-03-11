@@ -8,8 +8,10 @@
  *   node simulacao-progressao.js --battles=20
  *   node simulacao-progressao.js --battles=30 --area=kravens
  *   node simulacao-progressao.js --battles=10 --troop=2
+ *   node simulacao-progressao.js --battles=20 --area=cao-luar,kravens  # Múltiplas áreas
+ *   node simulacao-progressao.js --battles=20 --area=all                # Todas as áreas
  *
- * @version 1.1.0
+ * @version 2.0.0
  * @date 2026-03-11
  */
 
@@ -345,6 +347,65 @@ function runSimulation(numBattles, areaName, specificTroopId, gameData) {
   return { simulations, battleResults, troops, areas };
 }
 
+/**
+ * Executa uma simulação para uma área específica, reutilizando simulações existentes.
+ * As simulações devem ter sido criadas anteriormente e manterão seu estado.
+ *
+ * @param {Array} simulations - Array de CharacterSimulation existentes
+ * @param {number} numBattles - Número de batalhas para simular
+ * @param {string} areaName - Nome da área para simular
+ * @param {Object} gameData - Dados do jogo
+ * @param {number} battleOffset - Offset para numeração de batalhas (para progressão contínua)
+ * @returns {Object} Resultados da simulação desta área
+ */
+function runArea(simulations, numBattles, areaName, specificTroopId, gameData, battleOffset = 0) {
+  // Mapear áreas dinamicamente do Troops.json
+  const areas = mapAreasBySeparators(gameData.troops, gameData.enemies);
+
+  // Verificar se a área existe
+  if (!areas[areaName]) {
+    console.error(`Erro: Área "${areaName}" não encontrada`);
+    console.error(`Áreas disponíveis: ${Object.keys(areas).join(', ')}`);
+    process.exit(1);
+  }
+
+  const troops = specificTroopId
+    ? areas[areaName].filter(t => t.troopId === specificTroopId)
+    : areas[areaName];
+
+  if (troops.length === 0) {
+    console.error(`Erro: Nenhuma tropa encontrada para área="${areaName}" troop=${specificTroopId}`);
+    process.exit(1);
+  }
+
+  // Resultados da simulação para cada batalha
+  const battleResults = [];
+
+  for (let i = 0; i < numBattles; i++) {
+    const troopIndex = i % troops.length;
+    const troop = troops[troopIndex];
+    const battleNum = battleOffset + i + 1;  // Usa o offset para numeração contínua
+
+    const battleResult = {
+      battleNum,
+      troop: troop.name,
+      exp: troop.exp,
+      events: {}
+    };
+
+    // Adicionar EXP para cada personagem (as simulações mantêm estado)
+    for (const sim of simulations) {
+      sim.addExp(troop.exp);
+      const events = sim.getEvents(battleNum);
+      battleResult.events[sim.name] = events;
+    }
+
+    battleResults.push(battleResult);
+  }
+
+  return { battleResults, troops };
+}
+
 // ============================================
 // FUNÇÕES DE SAÍDA
 // ============================================
@@ -389,9 +450,13 @@ function buildBattleTable(battleResults, simulations, skills) {
   return table;
 }
 
-function printBattleTable(battleResults, simulations, skills) {
+function printBattleTable(battleResults, simulations, skills, areaName = null) {
   console.log('\n' + '='.repeat(80));
-  console.log('TABELA DE PROGRESSÃO POR BATALHA');
+  if (areaName) {
+    console.log(`TABELA DE PROGRESSÃO - ÁREA: ${areaName.toUpperCase()}`);
+  } else {
+    console.log('TABELA DE PROGRESSÃO POR BATALHA');
+  }
   console.log('='.repeat(80));
   console.log('Legenda: ↑N = Subiu para nível N | +Nome = Aprendeu habilidade');
   console.log('='.repeat(80));
@@ -449,7 +514,7 @@ function parseArgs() {
   const args = process.argv.slice(2);
   const result = {
     battles: null,
-    area: 'cao-luar',
+    areas: ['cao-luar'],  // Mudou de 'area' para 'areas' (array)
     troop: null
   };
 
@@ -457,7 +522,13 @@ function parseArgs() {
     if (arg.startsWith('--battles=')) {
       result.battles = parseInt(arg.split('=')[1], 10);
     } else if (arg.startsWith('--area=')) {
-      result.area = arg.split('=')[1];
+      const areaValue = arg.split('=')[1];
+      // Suporta --area=cao-luar,kravens ou --area=all
+      if (areaValue === 'all') {
+        result.areas = ['all'];  // Será resolvido depois após carregar os dados
+      } else {
+        result.areas = areaValue.split(',').map(a => a.trim());
+      }
     } else if (arg.startsWith('--troop=')) {
       result.troop = parseInt(arg.split('=')[1], 10);
     }
@@ -465,7 +536,13 @@ function parseArgs() {
 
   if (!result.battles || result.battles <= 0) {
     console.error('Erro: --battles=N é obrigatório e deve ser maior que 0');
-    console.error('Uso: node simulacao-progressao.js --battles=20 [--area=cao-luar] [--troop=2]');
+    console.error('Uso: node simulacao-progressao.js --battles=20 [--area=cao-luar] [--area=cao-luar,kravens] [--area=all] [--troop=2]');
+    process.exit(1);
+  }
+
+  // Validação: --troop só funciona com uma única área
+  if (result.troop && result.areas.length > 1) {
+    console.error('Erro: --troop só pode ser usado com uma única área');
     process.exit(1);
   }
 
@@ -485,18 +562,26 @@ function main() {
   // Mapear áreas para validação
   const areas = mapAreasBySeparators(gameData.troops, gameData.enemies);
 
-  // Validar área
-  if (!areas[args.area]) {
-    console.error(`\nErro: Área "${args.area}" não encontrada`);
-    console.error(`Áreas disponíveis: ${Object.keys(areas).join(', ')}`);
-    process.exit(1);
+  // Resolver --area=all
+  let areasToSimulate = args.areas;
+  if (areasToSimulate.includes('all')) {
+    areasToSimulate = Object.keys(areas);
+  }
+
+  // Validar áreas
+  for (const area of areasToSimulate) {
+    if (!areas[area]) {
+      console.error(`\nErro: Área "${area}" não encontrada`);
+      console.error(`Áreas disponíveis: ${Object.keys(areas).join(', ')}`);
+      process.exit(1);
+    }
   }
 
   console.log('\n' + '='.repeat(80));
   console.log('SIMULAÇÃO DE PROGRESSÃO - PROJECTX');
   console.log('='.repeat(80));
-  console.log(`Batalhas: ${args.battles}`);
-  console.log(`Área: ${args.area}`);
+  console.log(`Batalhas por área: ${args.battles}`);
+  console.log(`Áreas: ${areasToSimulate.join(', ')}`);
   if (args.troop) {
     console.log(`Tropa específica: ${args.troop}`);
   }
@@ -511,18 +596,64 @@ function main() {
   console.log('  ✓ Troops carregados');
   console.log(`  ✓ ${Object.keys(areas).length} áreas mapeadas`);
 
-  // Executar simulação
-  console.log('\nExecutando simulação...');
-  const { simulations, battleResults, troops } = runSimulation(
-    args.battles,
-    args.area,
-    args.troop,
-    gameData
-  );
+  // Criar simulações uma única vez (para manter progressão contínua)
+  console.log('\nInicializando personagens...');
+  const simulations = initializeSimulations(gameData);
+  console.log(`  ✓ ${simulations.length} personagens inicializados`);
 
-  // Imprimir resultados
-  printBattleTable(battleResults, simulations, gameData.skills);
-  printFinalReport(simulations, gameData.skills, battleResults, args.area);
+  // Resultados consolidados de todas as áreas
+  const allBattleResults = [];
+  let battleOffset = 0;
+
+  // Executar simulação para cada área
+  console.log('\nExecutando simulações...');
+
+  for (let i = 0; i < areasToSimulate.length; i++) {
+    const areaName = areasToSimulate[i];
+    const isLastArea = i === areasToSimulate.length - 1;
+    const isFirstArea = i === 0;
+
+    console.log(`\n  [${i + 1}/${areasToSimulate.length}] Simulando área: ${areaName}...`);
+
+    // Executar simulação desta área
+    const { battleResults } = runArea(
+      simulations,
+      args.battles,
+      areaName,
+      args.troop,
+      gameData,
+      battleOffset
+    );
+
+    // Adicionar resultados consolidados
+    allBattleResults.push(...battleResults);
+
+    // Imprimir tabela desta área (ou tabela consolidada se for a última)
+    if (areasToSimulate.length > 1) {
+      if (!isLastArea) {
+        // Imprimir tabela parcial desta área
+        printBattleTable(battleResults, simulations, gameData.skills, areaName);
+      } else {
+        // Última área: imprimir tabela consolidada de todas as áreas
+        console.log('\n' + '='.repeat(80));
+        console.log('TABELA CONSOLIDADA - PROGRESSÃO ACUMULADA DE TODAS AS ÁREAS');
+        console.log('='.repeat(80));
+        printBattleTable(battleResults, simulations, gameData.skills, areaName);
+      }
+    } else {
+      // Apenas uma área: imprimir tabela simples
+      printBattleTable(battleResults, simulations, gameData.skills, areaName);
+    }
+
+    // Atualizar offset para a próxima área
+    battleOffset += battleResults.length;
+  }
+
+  // Imprimir relatório final
+  const areaLabel = areasToSimulate.length > 1
+    ? areasToSimulate.join(' + ')
+    : areasToSimulate[0];
+  printFinalReport(simulations, gameData.skills, allBattleResults, areaLabel);
 }
 
 // Executar
