@@ -5189,6 +5189,165 @@
       "x": 8,
       "y": 9
     },
-    null
+    {
+      "id": 47,
+      "name": "Grupo de Rebeldes",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 71,
+            "variableValid": true,
+            "variableValue": 1
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Kravens/$Rebelde1", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"3-E\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Resgate dos Rebeldes\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Thorin encontra e resgata o grupo de rebeldes.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            { "code": 122, "indent": 0, "parameters": [72, 72, 1, 0, 1] },
+            { "code": 355, "indent": 0, "parameters": ["SQSM.CompleteTaskForQuest(\"resgatarBorin\", 4);"] },
+            { "code": 111, "indent": 0, "parameters": [1, 71, 0, 2, 0] },
+            { "code": 355, "indent": 1, "parameters": ["SQSM.ShowTaskForQuest(\"resgatarBorin\", 5);"] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 412, "indent": 0, "parameters": [] },
+            { "code": 123, "indent": 0, "parameters": ["A", 0] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 71,
+            "variableValid": false,
+            "variableValue": 1
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 39,
+      "y": 23
+    },
+    {
+      "id": 48,
+      "name": "Borin",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 71,
+            "variableValid": true,
+            "variableValue": 1
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Kravens/$Borin", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"2-C\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Resgate de Borin\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Thorin encontra e resgata Borin.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            { "code": 122, "indent": 0, "parameters": [71, 71, 1, 0, 1] },
+            { "code": 355, "indent": 0, "parameters": ["SQSM.CompleteTaskForQuest(\"resgatarBorin\", 3);"] },
+            { "code": 111, "indent": 0, "parameters": [1, 72, 0, 2, 0] },
+            { "code": 355, "indent": 1, "parameters": ["SQSM.ShowTaskForQuest(\"resgatarBorin\", 5);"] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 412, "indent": 0, "parameters": [] },
+            { "code": 123, "indent": 0, "parameters": ["A", 0] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 71,
+            "variableValid": false,
+            "variableValue": 1
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 1, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 36,
+      "y": 23
+    }
   ]
 }

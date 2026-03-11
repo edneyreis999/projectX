@@ -43,7 +43,7 @@
     "equips": [50, 0, 65, 0, 0],
     "faceIndex": 2,
     "faceName": "Portraits menores/Principal2",
-    "traits": [],
+    "traits": [{ "code": 52, "dataId": 1, "value": 1 }],
     "initialLevel": 1,
     "maxLevel": 30,
     "name": "Thorin",
