@@ -184,7 +184,7 @@
     "maxLevel": 30,
     "name": "Thorin Armadura",
     "nickname": "",
-    "note": "",
+    "note": "<ABS:0>\n<noTarget:1>\n<xAnima:Thorin>\n<xAnimaSet:Armor>\n<xAnimaSet:OldHelmet>",
     "profile": ""
   },
   {
