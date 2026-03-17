@@ -56,9 +56,12 @@
     "uuid": "^10.0.0"
   },
   "lint-staged": {
-    "frontend/js/plugins/**/*.{ts,js}": [
+    "frontend/js/plugins/**/!(*VisuMZ_*).{ts,js}": [
       "prettier --write",
       "eslint --fix --max-warnings=0"
+    ],
+    "frontend/js/plugins/**/*VisuMZ_*.js": [
+      "prettier --write"
     ],
     "frontend/typescript/**/*.{ts,js}": [
       "prettier --write",

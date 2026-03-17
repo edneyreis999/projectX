@@ -12,7 +12,7 @@
     "learnings": [
       { "level": 5, "note": "", "skillId": 236 },
       { "level": 10, "note": "", "skillId": 237 },
-      { "level": 20, "note": "", "skillId": 238 },
+      { "level": 19, "note": "", "skillId": 238 },
       { "level": 30, "note": "", "skillId": 239 }
     ],
     "name": "Fighter",
@@ -134,7 +134,7 @@
     "learnings": [
       { "level": 5, "note": "", "skillId": 244 },
       { "level": 10, "note": "", "skillId": 245 },
-      { "level": 20, "note": "", "skillId": 246 },
+      { "level": 17, "note": "", "skillId": 246 },
       { "level": 30, "note": "", "skillId": 247 }
     ],
     "name": "Paladin",
@@ -195,7 +195,7 @@
     "learnings": [
       { "level": 5, "note": "", "skillId": 248 },
       { "level": 10, "note": "", "skillId": 249 },
-      { "level": 20, "note": "", "skillId": 250 },
+      { "level": 14, "note": "", "skillId": 250 },
       { "level": 30, "note": "", "skillId": 251 }
     ],
     "name": "Berserker",
@@ -255,7 +255,7 @@
     ],
     "learnings": [
       { "level": 5, "note": "", "skillId": 252 },
-      { "level": 10, "note": "", "skillId": 253 },
+      { "level": 12, "note": "", "skillId": 253 },
       { "level": 20, "note": "", "skillId": 254 },
       { "level": 30, "note": "", "skillId": 255 }
     ],
