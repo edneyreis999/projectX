@@ -79,7 +79,7 @@
   {
     "id": 5,
     "list": [
-      { "code": 315, "indent": 0, "parameters": [0, 0, 0, 0, 76, true] },
+      { "code": 315, "indent": 0, "parameters": [0, 0, 0, 0, 9300, true] },
       { "code": 0, "indent": 0, "parameters": [] }
     ],
     "name": "Add 76 Exp",
@@ -408,5 +408,20 @@
     "name": "Esquecer_Skill_Corvos",
     "switchId": 1,
     "trigger": 0
-  }
+  },
+  {
+    "id": 21,
+    "list": [
+      { "code": 333, "indent": 0, "parameters": [-1, 1, 51] },
+      { "code": 333, "indent": 0, "parameters": [-1, 0, 13] },
+      { "code": 0, "indent": 0, "parameters": [] }
+    ],
+    "name": "Investida Devastadora",
+    "switchId": 1,
+    "trigger": 0
+  },
+  { "id": 22, "list": [{ "code": 0, "indent": 0, "parameters": [] }], "name": "", "switchId": 1, "trigger": 0 },
+  { "id": 23, "list": [{ "code": 0, "indent": 0, "parameters": [] }], "name": "", "switchId": 1, "trigger": 0 },
+  { "id": 24, "list": [{ "code": 0, "indent": 0, "parameters": [] }], "name": "", "switchId": 1, "trigger": 0 },
+  { "id": 25, "list": [{ "code": 0, "indent": 0, "parameters": [] }], "name": "", "switchId": 1, "trigger": 0 }
 ]

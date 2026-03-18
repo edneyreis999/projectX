@@ -627,10 +627,7 @@
             { "code": 505, "indent": 0, "parameters": [{ "code": 15, "parameters": [3] }] },
             { "code": 123, "indent": 0, "parameters": ["A", 0] },
             { "code": 126, "indent": 0, "parameters": [71, 0, 0, 20] },
-            { "code": 125, "indent": 0, "parameters": [0, 0, 500] },
-            { "code": 126, "indent": 0, "parameters": [3, 0, 0, 1] },
-            { "code": 126, "indent": 0, "parameters": [10, 0, 0, 1] },
-            { "code": 126, "indent": 0, "parameters": [9, 0, 0, 1] },
+            { "code": 126, "indent": 0, "parameters": [101, 0, 0, 1] },
             { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
             { "code": 401, "indent": 0, "parameters": ["Potion 76 (Exp) foi encontrado!"] },
             { "code": 0, "indent": 0, "parameters": [] }
