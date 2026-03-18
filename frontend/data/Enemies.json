@@ -213,13 +213,23 @@
     "name": "Cristaleão",
     "battlerName": "Coreto_Cristaleao",
     "battlerHue": 0,
-    "exp": 10,
-    "gold": 50,
-    "params": [375, 0, 45, 45, 45, 45, 45, 45],
-    "actions": [{ "skillId": 1, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 }],
-    "traits": [],
+    "exp": 2000,
+    "gold": 500,
+    "params": [7500, 400, 85, 60, 40, 50, 75, 110],
+    "actions": [
+      { "skillId": 11, "rating": 1, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
+      { "skillId": 13, "rating": 1, "conditionType": 4, "conditionParam1": 51, "conditionParam2": 0 },
+      { "skillId": 12, "rating": 3, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
+      { "skillId": 14, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
+      { "skillId": 15, "rating": 7, "conditionType": 1, "conditionParam1": 1, "conditionParam2": 0 },
+      { "skillId": 15, "rating": 3, "conditionType": 2, "conditionParam1": 0, "conditionParam2": 0.5 }
+    ],
+    "traits": [
+      { "code": 22, "dataId": 0, "value": 0.95 },
+      { "code": 22, "dataId": 1, "value": 0.05 }
+    ],
     "dropItems": [{ "dataId": 0, "kind": 0, "denominator": 1 }],
-    "note": ""
+    "note": "<BTB Initial BP: +1>\n<BTB Maximum BP: +2>\n<BTB Minimum BP: -2>\n<BTB BP Regen: +1>\n<BTB Maximum Actions: +1>\n<BTB Turn Order Icon: 98>\n<BTB Turn Order Face: Nature, 0>"
   },
   {
     "id": 18,

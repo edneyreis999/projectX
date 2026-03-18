@@ -4,7 +4,6 @@
     "id": 1,
     "expParams": [4, 50, 150, 1],
     "traits": [
-      { "code": 23, "dataId": 0, "value": 1 },
       { "code": 22, "dataId": 0, "value": 1.05 },
       { "code": 22, "dataId": 1, "value": 0.05 },
       { "code": 22, "dataId": 2, "value": 0.1 }
@@ -65,7 +64,6 @@
     "id": 2,
     "expParams": [2, 50, 150, 1],
     "traits": [
-      { "code": 23, "dataId": 0, "value": 1 },
       { "code": 22, "dataId": 0, "value": 1 },
       { "code": 22, "dataId": 1, "value": 0.05 },
       { "code": 22, "dataId": 2, "value": 0.04 }
@@ -126,7 +124,6 @@
     "id": 3,
     "expParams": [4, 50, 150, 1],
     "traits": [
-      { "code": 23, "dataId": 0, "value": 1 },
       { "code": 22, "dataId": 0, "value": 1.1 },
       { "code": 22, "dataId": 1, "value": 0.05 },
       { "code": 22, "dataId": 2, "value": 0.1 }
@@ -187,7 +184,6 @@
     "id": 4,
     "expParams": [4, 50, 150, 1],
     "traits": [
-      { "code": 23, "dataId": 0, "value": 1 },
       { "code": 22, "dataId": 0, "value": 1.1 },
       { "code": 22, "dataId": 1, "value": 0.05 },
       { "code": 22, "dataId": 2, "value": 0.12 }
@@ -246,7 +242,6 @@
     "id": 5,
     "expParams": [4, 50, 150, 1],
     "traits": [
-      { "code": 23, "dataId": 0, "value": 1 },
       { "code": 22, "dataId": 0, "value": 0.95 },
       { "code": 22, "dataId": 1, "value": 0.05 },
       { "code": 22, "dataId": 2, "value": 0.08 },
