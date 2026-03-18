@@ -1181,6 +1181,8 @@ Game_BattlerBase.prototype.canUse = function(item) {
 
 ### Template 1: Ataque Físico Básico
 
+**💡 Exemplo prático:** [Corte Rápido (Slash)](../designe-guides/designe-skills-example-guide.md#exemplo-1-corte-rápido-slash) - Um ataque básico confiável com custo zero.
+
 ```json
 {
   "id": 100,
@@ -1216,6 +1218,8 @@ Game_BattlerBase.prototype.canUse = function(item) {
 ```
 
 ### Template 2: Magia de Dano (HP Damage)
+
+**💡 Exemplo prático:** [Bola de Fogo (Fireball)](../designe-guides/designe-skills-example-guide.md#exemplo-5-bola-de-fogo-fireball) - Magia de dano básica com escalamento por nível.
 
 ```json
 {
@@ -1253,6 +1257,8 @@ Game_BattlerBase.prototype.canUse = function(item) {
 
 ### Template 3: Cura (HP Recover)
 
+**💡 Exemplo prático:** [Cura (Heal)](../designe-guides/designe-skills-example-guide.md#exemplo-6-cura-heal) - Skill de cura essencial para qualquer grupo.
+
 ```json
 {
   "id": 102,
@@ -1288,6 +1294,8 @@ Game_BattlerBase.prototype.canUse = function(item) {
 ```
 
 ### Template 4: Buff de Ataque
+
+**💡 Exemplo prático:** [Provocação (Taunt)](../designe-guides/designe-skills-example-guide.md#exemplo-8-provocação-taunt) - Buff de ataque em grupo com custo zero.
 
 ```json
 {
@@ -1327,6 +1335,8 @@ Game_BattlerBase.prototype.canUse = function(item) {
 
 ### Template 5: Skill com Chance de State
 
+**💡 Exemplo prático:** [Golpe Envenenado (Poison Strike)](../designe-guides/designe-skills-example-guide.md#exemplo-4-golpe-envenenado-poison-strike) - Ataque físico com chance de aplicar veneno.
+
 ```json
 {
   "id": 104,
@@ -1364,6 +1374,8 @@ Game_BattlerBase.prototype.canUse = function(item) {
 ```
 
 ### Template 6: Habilidade com Cast Time
+
+**💡 Exemplo prático:** [Golpe Carregado (Charged Strike)](../designe-guides/designe-skills-example-guide.md#exemplo-3-golpe-carregado-charged-strike) - Ataque poderoso com tempo de cast.
 
 ```json
 {
@@ -1472,6 +1484,10 @@ Game_BattlerBase.prototype.canUse = function(item) {
   "note": ""
 }
 ```
+
+---
+
+**💡 Dica:** Quer ver exemplos práticos de skills completas com descrições detalhadas de uso em jogo? Confira o [Guia de Design de Skills - Exemplos Práticos](../designe-guides/designe-skills-example-guide.md) para 20 exemplos implementados com explicações de quando e por que usar cada skill.
 
 ---
 
@@ -2353,6 +2369,8 @@ Muitos hooks que afetam skills estão nos **States**, não na skill em si. Veja 
 ---
 
 ### Exemplos Completos de Skills com JS Hooks
+
+**💡 Dica:** Para mais exemplos de skills usando JS Hooks, veja o [Guia de Design de Skills](../designe-guides/designe-skills-example-guide.md#skills-com-visustella-js-hooks).
 
 #### Exemplo 1: Skill com Dano Condicional
 

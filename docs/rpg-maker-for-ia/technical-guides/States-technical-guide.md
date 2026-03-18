@@ -1344,6 +1344,10 @@ $gameSwitches.setValue(5, false);
 
 ---
 
+**💡 Dica:** Quer ver exemplos práticos de states usados em conjunto com skills? Confira o [Guia de Design de Skills - Exemplos Práticos](../designe-guides/designe-skills-example-guide.md) para exemplos completos de states como Veneno Tóxico, Modo Berserk, Sobrecarga Mágica e mais.
+
+---
+
 ## TEMPLATES POR TIPO DE STATE
 
 ### Template 1: BUFF DE ATRIBUTO
@@ -2309,6 +2313,10 @@ Executa **depois** da fase de regeneração.
 | `<JS On Turn End>` | Battle Core | Fim do turno | user |
 | `<JS Pre-Regenerate>` | Battle Core | Antes da regeneração | user |
 | `<JS Post-Regenerate>` | Battle Core | Depois da regeneração | user |
+
+---
+
+**💡 Dica:** Quer ver exemplos práticos de skills e states usados em conjunto em combate? Confira o [Guia de Design de Skills - Exemplos Práticos](../designe-guides/designe-skills-example-guide.md) para 20 exemplos completos de skills com states correspondentes e explicações de uso estratégico.
 
 ---
 
