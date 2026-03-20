@@ -10,7 +10,8 @@
     "PreviewImage": "Parts/SDwarfBody/Body/icon_BodyMasc.png",
     "BaseImages": {
       "Face": "Parts/SDwarfBody/Body/Portrait_BodyMasc.png",
-      "Walk": "Parts/SDwarfBody/Body/Character_BodyMasc.png"
+      "Walk": "Parts/SDwarfBody/Body/Character_BodyMasc.png",
+      "Sv": "Parts/SDwarfBody/Body/Sv_BodyMasc.png"
     }
   }
 ]}
