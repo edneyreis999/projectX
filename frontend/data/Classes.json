@@ -6,7 +6,8 @@
     "traits": [
       { "code": 22, "dataId": 0, "value": 1.05 },
       { "code": 22, "dataId": 1, "value": 0.05 },
-      { "code": 22, "dataId": 2, "value": 0.1 }
+      { "code": 22, "dataId": 2, "value": 0.1 },
+      { "code": 51, "dataId": 11, "value": 1 }
     ],
     "learnings": [
       { "level": 5, "note": "", "skillId": 236 },
