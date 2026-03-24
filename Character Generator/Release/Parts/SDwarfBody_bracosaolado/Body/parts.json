@@ -10,7 +10,8 @@
     "PreviewImage": "Parts/SDwarfBody_bracosaolado/Body/icon_BodyMasc.png",
     "BaseImages": {
       "Face": "Parts/SDwarfBody_bracosaolado/Body/Portrait_BodyMasc.png",
-      "Walk": "Parts/SDwarfBody_bracosaolado/Body/Character_BodyMasc.png"
+      "Walk": "Parts/SDwarfBody_bracosaolado/Body/Character_BodyMasc.png",
+      "Sv": "Parts/SDwarfBody/Body/Sv_BodyMasc.png"
     }
   }
 ]}
