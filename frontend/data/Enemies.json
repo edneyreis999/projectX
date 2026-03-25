@@ -74,14 +74,15 @@
     "gold": 500,
     "params": [8500, 0, 150, 100, 0, 120, 80, 60],
     "actions": [
-      { "skillId": 21, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
-      { "skillId": 25, "rating": 8, "conditionType": 1, "conditionParam1": 2, "conditionParam2": 0 },
-      { "skillId": 26, "rating": 10, "conditionType": 2, "conditionParam1": 0, "conditionParam2": 3 },
-      { "skillId": 27, "rating": 10, "conditionType": 5, "conditionParam1": 0, "conditionParam2": 0.2 }
+      { "skillId": 1, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
+      { "skillId": 35, "rating": 1, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 }
     ],
-    "traits": [],
+    "traits": [
+      { "code": 22, "dataId": 0, "value": 0.95 },
+      { "code": 22, "dataId": 1, "value": 0.05 }
+    ],
     "dropItems": [{ "dataId": 0, "kind": 0, "denominator": 1 }],
-    "note": "<BTB Initial BP: 0>\n<BTB Maximum BP: +3>\n<BTB Minimum BP: -3>\n<BTB BP Regen: +1>\n<BTB Maximum Actions: +2>\n<BTB Turn Order Icon: 64>\n<BTB Turn Order Face: Monster, 3>\n<BTB Cannot Brave>\n<BTB Cannot Fusion>"
+    "note": ""
   },
   {
     "id": 7,
@@ -115,7 +116,7 @@
     ],
     "traits": [],
     "dropItems": [{ "dataId": 0, "kind": 0, "denominator": 1 }],
-    "note": "<BTB Initial BP: 0>\n<BTB Maximum BP: +1>\n<BTB Minimum BP: -1>\n<BTB BP Regen: +1>\n<BTB Maximum Actions: +0>\n<BTB Turn Order Icon: 69>\n<BTB Turn Order Face: Monster, 5>"
+    "note": "<BTB Initial BP: 0>\n<BTB Maximum BP: +1>\n<BTB Minimum BP: -1>\n<BTB BP Regen: +1>\n<BTB Maximum Actions: +0>\n<BTB Turn Order Icon: 69>\n<BTB Turn Order Face: Monster, 5>\n<CounterSkill:1>\n<CounterRate:40>\n<CounterHitType:1>\n<CounterDamageType:1,5>"
   },
   {
     "id": 9,

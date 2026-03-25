@@ -1381,7 +1381,11 @@
   {
     "id": 52,
     "name": "Lobo Alpha de Gelo, Lobo Farejador*3, Lobo Guerreiro*2",
-    "members": [{ "enemyId": 6, "x": 214, "y": 430, "hidden": false }],
+    "members": [
+      { "enemyId": 6, "x": 327, "y": 424, "hidden": false },
+      { "enemyId": 8, "x": 457, "y": 307, "hidden": false },
+      { "enemyId": 8, "x": 422, "y": 450, "hidden": false }
+    ],
     "pages": [
       {
         "conditions": {
