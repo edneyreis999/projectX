@@ -76,11 +76,11 @@
     "actions": [
       { "skillId": 1, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
       { "skillId": 30, "rating": 9, "conditionType": 4, "conditionParam1": 57, "conditionParam2": 0 },
-      { "skillId": 32, "rating": 9, "conditionType": 4, "conditionParam1": 57, "conditionParam2": 0 },
+      { "skillId": 31, "rating": 9, "conditionType": 4, "conditionParam1": 57, "conditionParam2": 0 },
       { "skillId": 20, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
       { "skillId": 21, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
       { "skillId": 22, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
-      { "skillId": 24, "rating": 9, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 }
+      { "skillId": 23, "rating": 9, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 }
     ],
     "traits": [
       { "code": 22, "dataId": 0, "value": 0.95 },
@@ -98,7 +98,7 @@
     "gold": 30,
     "params": [1200, 0, 90, 50, 0, 110, 80, 100],
     "actions": [
-      { "skillId": 23, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
+      { "skillId": 29, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
       { "skillId": 31, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 }
     ],
     "traits": [
