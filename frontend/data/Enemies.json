@@ -72,51 +72,62 @@
     "battlerHue": 0,
     "exp": 5000,
     "gold": 500,
-    "params": [8500, 0, 150, 100, 0, 120, 80, 60],
+    "params": [7500, 0, 85, 50, 0, 50, 80, 60],
     "actions": [
       { "skillId": 1, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
-      { "skillId": 35, "rating": 1, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 }
+      { "skillId": 30, "rating": 9, "conditionType": 4, "conditionParam1": 57, "conditionParam2": 0 },
+      { "skillId": 32, "rating": 9, "conditionType": 4, "conditionParam1": 57, "conditionParam2": 0 },
+      { "skillId": 20, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
+      { "skillId": 21, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
+      { "skillId": 22, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
+      { "skillId": 24, "rating": 9, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 }
     ],
     "traits": [
       { "code": 22, "dataId": 0, "value": 0.95 },
-      { "code": 22, "dataId": 1, "value": 0.05 }
+      { "code": 22, "dataId": 2, "value": 0.05 }
     ],
     "dropItems": [{ "dataId": 0, "kind": 0, "denominator": 1 }],
     "note": ""
   },
   {
     "id": 7,
-    "name": "Lobo Farejador",
+    "name": "Lobo Guerreiro",
     "battlerName": "Coreto_Lobaris_B",
     "battlerHue": 0,
     "exp": 150,
     "gold": 30,
     "params": [1200, 0, 90, 50, 0, 110, 80, 100],
     "actions": [
-      { "skillId": 29, "rating": 8, "conditionType": 1, "conditionParam1": 1, "conditionParam2": 0 },
-      { "skillId": 30, "rating": 10, "conditionType": 3, "conditionParam1": 58, "conditionParam2": 0 },
+      { "skillId": 23, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
       { "skillId": 31, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 }
     ],
-    "traits": [],
+    "traits": [
+      { "code": 22, "dataId": 0, "value": 0.95 },
+      { "code": 22, "dataId": 2, "value": 0.05 }
+    ],
     "dropItems": [{ "dataId": 0, "kind": 0, "denominator": 1 }],
-    "note": "<BTB Initial BP: 0>\n<BTB Maximum BP: +1>\n<BTB Minimum BP: -1>\n<BTB BP Regen: +1>\n<BTB Maximum Actions: +0>\n<BTB Turn Order Icon: 68>\n<BTB Turn Order Face: Monster, 5>"
+    "note": ""
   },
   {
     "id": 8,
-    "name": "Lobo Guerreiro",
-    "battlerName": "Coreto_Lobaris_B",
+    "actions": [{ "conditionParam1": 0, "conditionParam2": 0, "conditionType": 0, "rating": 5, "skillId": 1 }],
     "battlerHue": 0,
-    "exp": 200,
-    "gold": 40,
-    "params": [1800, 0, 75, 80, 0, 85, 80, 120],
-    "actions": [
-      { "skillId": 33, "rating": 7, "conditionType": 1, "conditionParam1": 1, "conditionParam2": 0 },
-      { "skillId": 34, "rating": 6, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
-      { "skillId": 1, "rating": 4, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 }
+    "battlerName": "",
+    "dropItems": [
+      { "dataId": 1, "denominator": 1, "kind": 0 },
+      { "dataId": 1, "denominator": 1, "kind": 0 },
+      { "dataId": 1, "denominator": 1, "kind": 0 }
     ],
-    "traits": [],
-    "dropItems": [{ "dataId": 0, "kind": 0, "denominator": 1 }],
-    "note": "<BTB Initial BP: 0>\n<BTB Maximum BP: +1>\n<BTB Minimum BP: -1>\n<BTB BP Regen: +1>\n<BTB Maximum Actions: +0>\n<BTB Turn Order Icon: 69>\n<BTB Turn Order Face: Monster, 5>\n<CounterSkill:1>\n<CounterRate:40>\n<CounterHitType:1>\n<CounterDamageType:1,5>"
+    "exp": 0,
+    "traits": [
+      { "code": 22, "dataId": 0, "value": 0.95 },
+      { "code": 22, "dataId": 1, "value": 0.05 },
+      { "code": 31, "dataId": 1, "value": 0 }
+    ],
+    "gold": 0,
+    "name": "",
+    "note": "",
+    "params": [100, 0, 10, 10, 10, 10, 10, 10]
   },
   {
     "id": 9,
@@ -232,7 +243,7 @@
     "params": [7500, 400, 85, 60, 40, 50, 75, 110],
     "actions": [
       { "skillId": 11, "rating": 1, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
-      { "skillId": 13, "rating": 1, "conditionType": 4, "conditionParam1": 51, "conditionParam2": 0 },
+      { "skillId": 13, "rating": 2, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
       { "skillId": 12, "rating": 3, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
       { "skillId": 14, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
       { "skillId": 15, "rating": 7, "conditionType": 1, "conditionParam1": 1, "conditionParam2": 0 },
@@ -538,7 +549,7 @@
     "battlerHue": 0,
     "exp": 200,
     "gold": 100,
-    "params": [675, 0, 75, 75, 75, 75, 75, 75],
+    "params": [2500, 0, 0, 75, 75, 75, 75, 75],
     "actions": [{ "skillId": 1, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 }],
     "traits": [],
     "dropItems": [{ "dataId": 0, "kind": 0, "denominator": 1 }],
@@ -1300,12 +1311,12 @@
   },
   {
     "id": 99,
-    "name": "",
-    "battlerName": "",
+    "name": "Boneco Treinamento Atk",
+    "battlerName": "Actor2_3",
     "battlerHue": 0,
     "exp": 0,
     "gold": 0,
-    "params": [1, 0, 0, 0, 0, 0, 0, 0],
+    "params": [999999, 0, 100, 0, 0, 0, 100, 0],
     "actions": [{ "skillId": 1, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 }],
     "traits": [],
     "dropItems": [{ "dataId": 0, "kind": 0, "denominator": 1 }],
@@ -1313,13 +1324,13 @@
   },
   {
     "id": 100,
-    "name": "",
-    "battlerName": "",
+    "name": "Boneco Treinamento Parado",
+    "battlerName": "Actor1_5",
     "battlerHue": 0,
     "exp": 0,
     "gold": 0,
-    "params": [1, 0, 0, 0, 0, 0, 0, 0],
-    "actions": [{ "skillId": 1, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 }],
+    "params": [999999, 0, 0, 0, 0, 0, 0, 0],
+    "actions": [{ "skillId": 101, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 }],
     "traits": [],
     "dropItems": [{ "dataId": 0, "kind": 0, "denominator": 1 }],
     "note": ""
