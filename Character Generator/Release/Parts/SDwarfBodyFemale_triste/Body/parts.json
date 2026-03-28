@@ -10,7 +10,8 @@
     "PreviewImage": "Parts/SDwarfBodyFemale_triste/Body/FG_Body_p01_c1_m001.png",
     "BaseImages": {
       "Face": "Parts/SDwarfBodyFemale_triste/Body/FG_Body_p01_c1_m001.png",
-      "Walk": "Parts/SDwarfBodyFemale_triste/Body/TV_Body_p01.png"
+      "Walk": "Parts/SDwarfBodyFemale_triste/Body/TV_Body_p01.png",
+      "Sv": "Parts/SDwarfBody/Body/Sv_BodyMasc.png"
     }
   }
 ]}
