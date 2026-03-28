@@ -59,7 +59,7 @@
   "optSideView": true,
   "optSlipDeath": false,
   "optTransparent": false,
-  "partyMembers": [3, 4],
+  "partyMembers": [3, 4, 5, 6],
   "ship": { "bgm": { "name": "Ship2", "pan": 0, "pitch": 100, "volume": 90 }, "characterIndex": 1, "characterName": "Vehicle", "startMapId": 0, "startX": 0, "startY": 0 },
   "skillTypes": ["", "Mágica", "Especial"],
   "sounds": [
@@ -89,8 +89,8 @@
     { "name": "Item3", "pan": 0, "pitch": 100, "volume": 90 }
   ],
   "startMapId": 34,
-  "startX": 3,
-  "startY": 25,
+  "startX": 11,
+  "startY": 22,
   "switches": [
     "",
     "Jogada segura",
@@ -407,7 +407,7 @@
     "",
     ""
   ],
-  "versionId": 42845201,
+  "versionId": 93304894,
   "victoryMe": { "name": "Victory1", "pan": 0, "pitch": 100, "volume": 90 },
   "weaponTypes": ["", "Adaga", "Espada", "Malho", "Machado", "Chicote", "Cajado", "Arco", "Funda", "Arma de Fogo", "Garra", "Luva", "Lança", ""],
   "windowTone": [0, 0, 0, 0],

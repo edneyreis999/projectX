@@ -494,7 +494,7 @@
     "iconIndex": 106,
     "name": "Luvas",
     "note": "",
-    "params": [0, 0, 5, 5, 0, 0, 0, 0],
+    "params": [0, 0, 0, 0, 0, 0, 0, 0],
     "price": 360,
     "wtypeId": 11
   },
@@ -796,12 +796,13 @@
   },
   {
     "id": 50,
-    "animationId": 1,
+    "animationId": 111,
     "description": "",
     "etypeId": 1,
     "traits": [
       { "code": 31, "dataId": 1, "value": 0 },
-      { "code": 22, "dataId": 0, "value": 0 }
+      { "code": 22, "dataId": 0, "value": 0 },
+      { "code": 54, "dataId": 2, "value": 1 }
     ],
     "iconIndex": 0,
     "name": "Funda Comum",

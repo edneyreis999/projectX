@@ -33,7 +33,7 @@
   { "id": 31, "expanded": true, "name": "Tenda do Thorin 01", "order": 9, "parentId": 30, "scrollX": 973.1999999999999, "scrollY": 562.1999999999999, "quick": false },
   { "id": 32, "expanded": true, "name": "Combate", "order": 54, "parentId": 15, "scrollX": 858, "scrollY": 540, "quick": false },
   { "id": 33, "expanded": true, "name": "Mina de Kravens 1F", "order": 7, "parentId": 3, "scrollX": 973.1999999999999, "scrollY": 1524.6, "quick": false },
-  { "id": 34, "expanded": false, "name": "Trecho 1 - ida a Kravens", "order": 55, "parentId": 32, "scrollX": 973.1999999999999, "scrollY": 868.8, "quick": false },
+  { "id": 34, "expanded": false, "name": "Trecho 1 - ida a Kravens", "order": 55, "parentId": 32, "scrollX": 780, "scrollY": 868.3636363636364, "quick": false },
   { "id": 35, "expanded": true, "name": "Mina de Melios", "order": 14, "parentId": 3, "scrollX": 2700, "scrollY": 3153.6, "quick": true },
   { "id": 36, "expanded": false, "name": "Segundo Sol - Preparação", "order": 46, "parentId": 42, "scrollX": 858, "scrollY": 540, "quick": false },
   { "id": 37, "expanded": false, "name": "Segundo Sol - Cutscene", "order": 47, "parentId": 42, "scrollX": 867.5999999999999, "scrollY": 1579.1999999999998, "quick": false },

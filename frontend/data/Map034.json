@@ -672,13 +672,12 @@
           "walkAnime": false
         }
       ],
-      "x": 6,
-      "y": 21
+      "x": 12,
+      "y": 23
     },
-    null,
     {
-      "id": 14,
-      "name": "Boss",
+      "id": 13,
+      "name": "Boss - Cristaleão",
       "note": "",
       "pages": [
         {
@@ -700,7 +699,70 @@
           "directionFix": true,
           "image": { "tileId": 0, "characterName": "Boss/$CoretoBoss1", "direction": 6, "pattern": 0, "characterIndex": 0 },
           "list": [
-            { "code": 301, "indent": 0, "parameters": [0, 32, false, false] },
+            { "code": 301, "indent": 0, "parameters": [0, 32, true, true] },
+            { "code": 601, "indent": 0, "parameters": [] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 602, "indent": 0, "parameters": [] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 603, "indent": 0, "parameters": [] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 604, "indent": 0, "parameters": [] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              { "code": 45, "parameters": ["Move To: 14, 8"], "indent": null },
+              { "code": 0, "parameters": [] }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 2,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 13,
+      "y": 21
+    },
+    {
+      "id": 14,
+      "name": "Boss - Lobo Alpha de Gelo",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 25,
+            "variableValid": false,
+            "variableValue": 2
+          },
+          "directionFix": true,
+          "image": { "tileId": 0, "characterName": "Boss/$CoretoBoss1", "direction": 4, "pattern": 0, "characterIndex": 0 },
+          "list": [
+            { "code": 301, "indent": 0, "parameters": [0, 52, true, true] },
+            { "code": 601, "indent": 0, "parameters": [] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 602, "indent": 0, "parameters": [] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 603, "indent": 0, "parameters": [] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 604, "indent": 0, "parameters": [] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
           "moveFrequency": 3,
@@ -725,7 +787,54 @@
       "x": 11,
       "y": 21
     },
-    null,
+    {
+      "id": 15,
+      "name": "EV015",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Actor3", "direction": 2, "pattern": 0, "characterIndex": 6 },
+          "list": [
+            { "code": 301, "indent": 0, "parameters": [0, 99, true, true] },
+            { "code": 601, "indent": 0, "parameters": [] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 602, "indent": 0, "parameters": [] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 603, "indent": 0, "parameters": [] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 604, "indent": 0, "parameters": [] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 8,
+      "y": 22
+    },
     null,
     null,
     null,

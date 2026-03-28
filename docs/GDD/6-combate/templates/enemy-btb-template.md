@@ -1,7 +1,7 @@
 # Template de Inimigo BTB - RPG Maker MZ
 ## Battle System - BTB VisuStella MZ
 
-**Versão do Template:** 1.0
+**Versão do Template:** 2.0
 **Compatível com:** VisuStella MZ - Battle System BTB
 **Status:** Pronto para Produção
 
@@ -265,7 +265,325 @@ ignora 50% da defesa.
 
 ---
 
-## 9. EXEMPLO COMPLETO DE INIMIGO
+## 9. CONFIGURAÇÃO DE ACTIONS DA IA
+
+A configuração de actions define como a IA do inimigo escolhe qual skill usar. Isso é feito na seção "Actions" do inimigo no database Enemies.
+
+### Estrutura de uma Action
+
+```json
+{
+  "skillId": 1,
+  "rating": 5,
+  "conditionType": 0,
+  "conditionParam1": 0,
+  "conditionParam2": 0
+}
+```
+
+| Campo | Descrição | Valores Possíveis |
+|-------|-----------|-------------------|
+| **skillId** | ID da skill a ser usada | Qualquer ID de skill válido |
+| **rating** | Peso de probabilidade (1-10) | Maior = mais chance de ser escolhida |
+| **conditionType** | Tipo de condição | Ver tabela abaixo |
+| **conditionParam1** | Parâmetro 1 da condição | Depende do conditionType |
+| **conditionParam2** | Parâmetro 2 da condição | Threshold ou valor limite |
+
+### Tipos de Condição (conditionType)
+
+| Type | Nome | Descrição | Param1 | Param2 |
+|------|------|-----------|--------|---------|
+| **0** | Always | Sempre disponível | - | - |
+| **1** | Turn | No turno X | Número do turno | - |
+| **2** | Variable | Quando variável X | ID da variável | Valor threshold (0.0-1.0 = %) |
+| **3** | State | Quando afetado por state | ID do state | - |
+| **4** | Party Level | Quando nível da party | Nível mínimo | - |
+| **5** | HP | Quando HP % | - | Threshold (0.0-1.0) |
+
+### Sistema de Rating
+
+O rating funciona como peso de probabilidade. Maior rating = maior chance da skill ser escolhida.
+
+| Rating | Probabilidade | Uso Recomendado |
+|--------|---------------|-----------------|
+| 1-2 | Muito Baixa | Skills de contingência, debuffs fracos |
+| 3-4 | Baixa | Skills secundárias, buffs situacionais |
+| 5-6 | Média | Skills padrão do rotation |
+| 7-8 | Alta | Skills principais do kit |
+| 9-10 | Muito Alta | Skills de abertura, ultimate |
+
+### Exemplos de Configuração
+
+```
+Action 1: Ataque padrão (sempre disponível, baixa prioridade)
+{
+  "skillId": 1,           // Attack
+  "rating": 3,            // Média prioridade
+  "conditionType": 0      // Always
+}
+
+Action 2: Buff de abertura (só no turno 1, máxima prioridade)
+{
+  "skillId": 15,          // Enfurecer
+  "rating": 10,           // Máxima prioridade
+  "conditionType": 1,     // Turn
+  "conditionParam1": 1    // Turno 1
+}
+
+Action 3: Ultimate quando HP baixo
+{
+  "skillId": 20,          // Investida Devastadora
+  "rating": 9,            // Muito alta prioridade
+  "conditionType": 2,     // Variable
+  "conditionParam1": 0,   // Variable 0 (HP do boss)
+  "conditionParam2": 0.5  // Quando HP ≤ 50%
+}
+
+Action 4: Counter-attack quando atordoado
+{
+  "skillId": 25,          // Atordoamento
+  "rating": 8,            // Alta prioridade
+  "conditionType": 3,     // State
+  "conditionParam1": 13   // State ID 13 (Atordoamento)
+}
+
+Action 5: AOE só em party level alto
+{
+  "skillId": 30,          // Sussurro Cristalino
+  "rating": 4,            // Baixa prioridade
+  "conditionType": 4,     // Party Level
+  "conditionParam1": 51   // Quando party level ≥ 51
+}
+```
+
+---
+
+## 10. CONDIÇÕES JAVASCRIPT EM SKILLS
+
+Skills podem ter condições customizadas via JavaScript, permitindo lógica complexa baseada em states, HP, BP, etc.
+
+### Notetag <JS Skill Enable>
+
+```
+<JS Skill Enable>
+  enabled = user.isStateAffected(7) && user.isStateAffected(51);
+</JS Skill Enable>
+```
+
+### Variáveis Disponíveis
+
+| Variável | Descrição |
+|----------|-----------|
+| `user` | O battler que está usando a skill (inimigo) |
+| `target` | O alvo da skill (pode ser array em AOE) |
+| `a` | Alias para `user` |
+| `b` | Alias para `target` |
+
+### Métodos Úteis
+
+```javascript
+// Verificar se afetado por state
+user.isStateAffected(stateId)
+
+// Verificar HP
+user.hp < user.mhp * 0.5  // HP < 50%
+user.hpRate() < 0.5       // Mesmo que acima
+
+// Verificar MP/TP
+user.mp > 100
+user.tp >= 50
+
+// Verificar BP (se plugin BTB ativo)
+user._bp >= 3
+
+// Verificar turnos de state
+user.stateTurns(stateId) >= 2
+
+// Verificar se está morto
+user.isDead()
+
+// Verificar se pode mover
+user.canMove()
+```
+
+### Exemplos Práticos
+
+```
+// Skill só disponível quando enfurecido E camuflado
+<JS Skill Enable>
+  enabled = user.isStateAffected(7) && user.isStateAffected(51);
+</JS Skill Enable>
+
+// Skill só quando HP ≤ 30% E tem BP suficiente
+<JS Skill Enable>
+  enabled = user.hpRate() <= 0.3 && user._bp >= 3;
+</JS Skill Enable>
+
+// Skill de desespero: só quando HP ≤ 10%
+<JS Skill Enable>
+  enabled = user.hpRate() <= 0.1;
+</JS Skill Enable>
+
+// Counter-skill: só quando atordoado
+<JS Skill Enable>
+  enabled = user.isStateAffected(13);
+</JS Skill Enable>
+```
+
+---
+
+## 11. COMMON EVENTS EM SKILLS
+
+Skills podem invocar Common Events via Effect Code 44, permitindo lógica complexa que não é possível apenas com efeitos padrão.
+
+### Effect Code 44 - Common Event
+
+```
+Effects array:
+  - Code: 44 (Common Event)
+    Data ID: 21 (ID do Common Event)
+    Value 1: 0
+    Value 2: 0
+```
+
+### Para Usar Common Events em Skills:
+
+1. **Crie o Common Event** no database (tab Common Events)
+2. **Adicione o Effect Code 44** na skill
+3. **Configure o Data ID** para o ID do Common Event
+
+### Padrões de Uso
+
+#### Padrão 1: Remover States (Vulnerabilidade)
+
+```
+Skill: "Investida Devastadora" (ID 14)
+Effects:
+  - Code: 44 (Common Event)
+    Data ID: 21
+
+Common Event 21: "Investida Devastadora"
+  1. Remove State 51 (Camuflagem) do usuário
+  2. Remove State 13 (Atordoamento) do usuário
+```
+
+**Resultado:** Boss perde evasão após usar a skill, ficando vulnerável.
+
+#### Padrão 2: Aplicar Múltiplos States
+
+```
+Skill: "Magma Aura" (ID 25)
+Effects:
+  - Code: 21 (Add State)
+    Data ID: 30 (Burn)
+  - Code: 44 (Common Event)
+    Data ID: 25
+
+Common Event 25: "Magma Aura Extra"
+  1. Apply State 31 (Defense Down) to all enemies
+  2. Apply State 32 (Magic Down) to all enemies
+```
+
+#### Padrão 3: Manipular Variáveis
+
+```
+Skill: "Berserk" (ID 30)
+Effects:
+  - Code: 44 (Common Event)
+    Data ID: 30
+
+Common Event 30: "Berserk Logic"
+  1. Set Variable [Boss Rage] += 1
+  2. If Variable [Boss Rage] >= 3:
+     - Apply State 99 (Enrage) to user
+     - Show Message: "BOSS ENTRA EM FÚRIA ABSOLUTA!"
+```
+
+### Comandos Úteis do Common Event
+
+| Comando | Code | Parâmetros | Uso |
+|---------|------|------------|-----|
+| **Remove State** | 333 | `[-1, slot, stateId]` | Remove state do usuário |
+| **Apply State** | 322 | `[-1, stateId]` | Aplica state no usuário |
+| **Set Variable** | 121 | `[variableId, value]` | Define variável |
+| **Show Message** | 101 | `-` | Exibe mensagem |
+| **Play SE** | 122 | `[filename]` | Toca som |
+
+### Parâmetros do Remove State (Code 333)
+
+```
+[-1, slot, stateId]
+```
+
+| Parâmetro | Descrição |
+|-----------|-----------|
+| **-1** | Target = usuário da skill |
+| **slot** | 0 ou 1 (não usado para enemies) |
+| **stateId** | ID do state a remover |
+
+---
+
+## 12. PADRÃO DE VULNERABILIDADE
+
+Um padrão comum em bosses BTB é criar janelas de vulnerabilidade usando a interação Skill → Common Event → State.
+
+### Fluxo Completo:
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│              CICLO DE VULNERABILIDADE                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  1. BOSS USA BUFF                                           │
+│     └─> Skill A aplica State X (Buff/Proteção)             │
+│                                                             │
+│  2. PERÍODO DE SEGURANÇA                                    │
+│     └─> State X ativo: boss tem vantagens                  │
+│                                                             │
+│  3. BOSS USA ULTIMATE                                       │
+│     └─> Skill B invoca Common Event Y                      │
+│                                                             │
+│  4. COMMON EVENT REMOVE STATE X                            │
+│     └─> Boss perde buff/proteção                           │
+│                                                             │
+│  5. JANELA DE VULNERABILIDADE ⚡                            │
+│     └─> Boss sem buff, recebe mais dano                    │
+│         JOGADOR DEVE ATACAR AGORA!                          │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Implementação Exemplo:
+
+```
+State 51: Camuflagem
+- Evasion: +70%
+- Priority: 90
+
+Skill 12: Camuflagem de Kraven
+- Effect: Apply State 51 (100%)
+- BP Cost: 1
+
+Skill 14: Investida Devastadora
+- Effect: Call Common Event 21
+- JS Enable: user.isStateAffected(7) && user.isStateAffected(51)
+- BP Cost: 1
+- Damage: (ATK * 4) + 200
+
+Common Event 21:
+- Remove State 51 (Camuflagem) do usuário
+- Remove State 13 (Atordoamento) do usuário
+
+Resultado:
+1. Boss usa Camuflagem → State 51 ativo (EVA +70%)
+2. Boss usa Investida Devastadora → Common Event 21 remove State 51
+3. Boss fica vulnerável (EVA 0%, State 7 ainda ativo com DEF -30%)
+4. Jogador deve atacar nesta janela!
+```
+
+---
+
+## 13. EXEMPLO COMPLETO DE INIMIGO
 
 ### Inimigo: "Lobo Alpha de Gelo" (Elite)
 
@@ -320,7 +638,7 @@ Note:
 
 ---
 
-## 10. REFERÊNCIA RÁPIDA DE NOTETAGS
+## 14. REFERÊNCIA RÁPIDA DE NOTETAGS
 
 ### Para Inimigos (Enemy Note):
 
@@ -388,7 +706,7 @@ Note:
 
 ---
 
-## 11. PADRÕES DE PRODUÇÃO
+## 15. PADRÕES DE PRODUÇÃO
 
 ### Regras Obrigatórias:
 
@@ -417,7 +735,7 @@ Note:
 
 ---
 
-## 12. CHECKLIST DE VALIDAÇÃO
+## 16. CHECKLIST DE VALIDAÇÃO
 
 Ao criar um inimigo BTB, verificar:
 
@@ -434,7 +752,7 @@ Ao criar um inimigo BTB, verificar:
 
 ---
 
-## 13. DICA DE BALANCEAMENTO
+## 17. DICA DE BALANCEAMENTO
 
 ### Custos de BP Recomendados por Tier:
 
@@ -463,6 +781,45 @@ Boss (Lobo Ancião):
 - Máximo ações: 6
 - BP Regen: +2
 ```
+
+---
+
+## 18. OBSERVAÇÕES SOBRE STATES
+
+### Campo message4
+
+O campo `message4` de um State é exibido quando o state é removido. Este campo pode conter:
+
+- **Mensagem de remoção:** "%1 recuperou-se!" ou "%1 não está mais cego!"
+- **Placeholder pendente:** Texto indicando funcionalidade não implementada
+
+**Exemplo de placeholder:**
+```
+message4: "Aqui precisa colocar o status de vulneravel"
+```
+
+Quando encontrar placeholders em states, isso indica:
+- Funcionalidade planejada mas não implementada
+- Necessidade de revisão por um designer
+
+### Priority de States
+
+O campo `priority` determina qual state é exibido primeiro quando múltiplos states estão ativos. Valores maiores = maior prioridade.
+
+```
+State 7: Fúria (Priority: 70)
+State 51: Camuflagem (Priority: 90)
+
+Resultado: Camuflagem será exibida primeiro (maior priority)
+```
+
+### autoRemovalTiming
+
+| Valor | Nome | Descrição |
+|-------|------|-----------|
+| 0 | Action End | Remove no final da ação do battler |
+| 1 | Turn End | Remove no final do turno do battler |
+| 2 | Damage | Remove ao receber dano |
 
 ---
 
