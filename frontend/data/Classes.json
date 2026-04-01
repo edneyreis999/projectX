@@ -187,7 +187,8 @@
     "traits": [
       { "code": 22, "dataId": 0, "value": 1.1 },
       { "code": 22, "dataId": 1, "value": 0.05 },
-      { "code": 22, "dataId": 2, "value": 0.12 }
+      { "code": 22, "dataId": 2, "value": 0.12 },
+      { "code": 51, "dataId": 13, "value": 1 }
     ],
     "learnings": [
       { "level": 5, "note": "", "skillId": 248 },

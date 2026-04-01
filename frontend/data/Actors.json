@@ -87,11 +87,11 @@
   },
   {
     "id": 6,
-    "battlerName": "MhordredWoHelmet",
+    "battlerName": "Mhordred",
     "characterIndex": 0,
     "characterName": "Principal/$Mhordred",
     "classId": 4,
-    "equips": [2, 35, 61, 16, 0],
+    "equips": [51, 35, 61, 16, 0],
     "faceIndex": 5,
     "faceName": "Portraits menores/Principal1",
     "traits": [],

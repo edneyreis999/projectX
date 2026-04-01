@@ -29,7 +29,7 @@
     { "type": 0, "weaponImageId": 10 },
     { "type": 0, "weaponImageId": 11 },
     { "type": 0, "weaponImageId": 12 },
-    { "type": 2, "weaponImageId": 0 }
+    { "type": 1, "weaponImageId": 0 }
   ],
   "battleBgm": { "name": "Battle1", "pan": 0, "pitch": 100, "volume": 90 },
   "battleback1Name": "Road1",
@@ -407,9 +407,9 @@
     "",
     ""
   ],
-  "versionId": 93304894,
+  "versionId": 77462825,
   "victoryMe": { "name": "Victory1", "pan": 0, "pitch": 100, "volume": 90 },
-  "weaponTypes": ["", "Adaga", "Espada", "Malho", "Machado", "Chicote", "Cajado", "Arco", "Funda", "Arma de Fogo", "Garra", "Luva", "Lança", ""],
+  "weaponTypes": ["", "Adaga", "Espada", "Malho", "Machado", "Chicote", "Cajado", "Arco", "Funda", "Arma de Fogo", "Garra", "Luva", "Lança", "Martelo"],
   "windowTone": [0, 0, 0, 0],
   "optSplashScreen": false,
   "optMessageSkip": true,

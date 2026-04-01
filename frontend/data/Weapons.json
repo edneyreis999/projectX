@@ -810,5 +810,21 @@
     "params": [0, 0, 0, 0, 0, 0, 0, 0],
     "price": 0,
     "wtypeId": 8
+  },
+  {
+    "id": 51,
+    "animationId": 1,
+    "description": "",
+    "etypeId": 1,
+    "traits": [
+      { "code": 31, "dataId": 1, "value": 0 },
+      { "code": 22, "dataId": 0, "value": 0 }
+    ],
+    "iconIndex": 0,
+    "name": "Martelo",
+    "note": "",
+    "params": [0, 0, 0, 0, 0, 0, 0, 0],
+    "price": 0,
+    "wtypeId": 13
   }
 ]
