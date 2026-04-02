@@ -411,8 +411,9 @@
     "gold": 0,
     "params": [500, 0, 20, 30, 40, 20, 80, 0],
     "actions": [
-      { "skillId": 38, "rating": 10, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
-      { "skillId": 42, "rating": 1, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 }
+      { "skillId": 40, "rating": 9, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
+      { "skillId": 38, "rating": 1, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
+      { "skillId": 39, "rating": 1, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 }
     ],
     "traits": [],
     "dropItems": [{ "dataId": 0, "kind": 0, "denominator": 1 }],
