@@ -396,7 +396,6 @@
     "params": [11000, 0, 85, 150, 80, 70, 80, 0],
     "actions": [
       { "skillId": 36, "rating": 9, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
-      { "skillId": 37, "rating": 6, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
       { "skillId": 1, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 }
     ],
     "traits": [],
