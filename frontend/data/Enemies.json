@@ -391,26 +391,33 @@
     "name": "Pestesporo",
     "battlerName": "Pestesporo",
     "battlerHue": 0,
-    "exp": 150,
-    "gold": 75,
-    "params": [525, 0, 60, 60, 60, 60, 60, 60],
-    "actions": [{ "skillId": 1, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 }],
+    "exp": 8000,
+    "gold": 1000,
+    "params": [11000, 0, 85, 150, 80, 70, 80, 0],
+    "actions": [
+      { "skillId": 36, "rating": 9, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
+      { "skillId": 37, "rating": 6, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
+      { "skillId": 1, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 }
+    ],
     "traits": [],
     "dropItems": [{ "dataId": 0, "kind": 0, "denominator": 1 }],
-    "note": ""
+    "note": "<JS Post-Start Battle>\nconsole.log('=== Pestesporo - Battle Start ===');\nconsole.log('Iniciando boss Pestesporo');\nthis._selfDestructionStacks = 0;\nthis._minionsCount = 0;\nthis._phase = 1;\nconsole.log('Variáveis iniciadas: _selfDestructionStacks=' + this._selfDestructionStacks + ', _minionsCount=' + this._minionsCount + ', _phase=' + this._phase);\n</JS Post-Start Battle>\n\n<JS Pre-Damage>\nconsole.log('=== Pestesporo - Pre-Damage ===');\nconsole.log('HP atual: ' + this.hp + '/' + this.mhp + ' (' + Math.floor(this.hpRate() * 100) + '%)');\nconsole.log('Fase atual: _phase=' + this._phase);\nvar oldPhase = this._phase;\nif (this.hpRate() < 0.4 && this._phase < 3) {\n  this._phase = 3;\n  console.log('>>> MUDANÇA DE FASE: ' + oldPhase + ' -> 3 (HP < 40%)');\n} else if (this.hpRate() < 0.7 && this._phase < 2) {\n  this._phase = 2;\n  console.log('>>> MUDANÇA DE FASE: ' + oldPhase + ' -> 2 (HP < 70%)');\n} else {\n  console.log('Sem mudança de fase');\n}\n</JS Pre-Damage>"
   },
   {
     "id": 29,
-    "name": "",
-    "battlerName": "",
+    "name": "Esporo de Pestesporo",
+    "battlerName": "Gnome",
     "battlerHue": 0,
     "exp": 0,
     "gold": 0,
-    "params": [1, 0, 0, 0, 0, 0, 0, 0],
-    "actions": [{ "skillId": 1, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 }],
+    "params": [500, 0, 20, 30, 40, 20, 80, 0],
+    "actions": [
+      { "skillId": 38, "rating": 10, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
+      { "skillId": 42, "rating": 1, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 }
+    ],
     "traits": [],
     "dropItems": [{ "dataId": 0, "kind": 0, "denominator": 1 }],
-    "note": ""
+    "note": "<JS Post-Start Battle>\nconsole.log('=== Esporo de Pestesporo - Battle Start ===');\nconsole.log('Minion Esporo iniciado, marcando _isMinionEsporo = true');\nthis._isMinionEsporo = true;\nthis._minionId = 'ESPORO_' + Math.floor(Math.random() * 10000);\nconsole.log('Minion ID criado:', this._minionId, '| Index na tropa:', this.index());\nconsole.log('isHidden():', this.isHidden(), 'isAlive():', this.isAlive());\n</JS Post-Start Battle>"
   },
   {
     "id": 30,
