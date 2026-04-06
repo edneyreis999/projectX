@@ -1544,7 +1544,7 @@
   },
   {
     "id": 61,
-    "autoRemovalTiming": 1,
+    "autoRemovalTiming": 2,
     "chanceByDamage": 100,
     "traits": [],
     "iconIndex": 1,
