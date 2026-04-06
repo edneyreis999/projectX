@@ -41,7 +41,7 @@
   "currencyUnit": "Ludos",
   "defeatMe": { "name": "Defeat1", "pan": 0, "pitch": 100, "volume": 90 },
   "editMapId": 34,
-  "elements": ["", "Físico", "Fogo", "Gelo", "Trovão", "Água", "Terra", "Vento", "Luz", "Trevas"],
+  "elements": ["", "Físico", "Fogo", "Gelo", "Trovão", "Água", "Terra", "Vento", "Luz", "Trevas", "Veneno"],
   "equipTypes": ["", "Arma", "Escudo", "Cabeça", "Corpo", "Acessório"],
   "gameTitle": "Daratrine - A Origem",
   "gameoverMe": { "name": "Gameover1", "pan": 0, "pitch": 100, "volume": 90 },
@@ -407,7 +407,7 @@
     "",
     ""
   ],
-  "versionId": 93304894,
+  "versionId": 36935774,
   "victoryMe": { "name": "Victory1", "pan": 0, "pitch": 100, "volume": 90 },
   "weaponTypes": ["", "Adaga", "Espada", "Malho", "Machado", "Chicote", "Cajado", "Arco", "Funda", "Arma de Fogo", "Garra", "Luva", "Lança", ""],
   "windowTone": [0, 0, 0, 0],
