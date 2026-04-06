@@ -84,7 +84,8 @@
     ],
     "traits": [
       { "code": 22, "dataId": 0, "value": 0.95 },
-      { "code": 22, "dataId": 2, "value": 0.05 }
+      { "code": 22, "dataId": 2, "value": 0.05 },
+      { "code": 22, "dataId": 1, "value": 0.05 }
     ],
     "dropItems": [{ "dataId": 0, "kind": 0, "denominator": 1 }],
     "note": ""
@@ -103,7 +104,8 @@
     ],
     "traits": [
       { "code": 22, "dataId": 0, "value": 0.95 },
-      { "code": 22, "dataId": 2, "value": 0.05 }
+      { "code": 22, "dataId": 2, "value": 0.05 },
+      { "code": 22, "dataId": 1, "value": 0.05 }
     ],
     "dropItems": [{ "dataId": 0, "kind": 0, "denominator": 1 }],
     "note": ""
@@ -394,13 +396,19 @@
     "exp": 8000,
     "gold": 1000,
     "params": [11000, 0, 85, 20, 80, 20, 800, 0],
-    "actions": [{ "skillId": 36, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 }],
+    "actions": [
+      { "skillId": 36, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
+      { "skillId": 1, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 }
+    ],
     "traits": [
       { "code": 63, "dataId": 1, "value": 1 },
-      { "code": 14, "dataId": 4, "value": 1 }
+      { "code": 14, "dataId": 4, "value": 1 },
+      { "code": 22, "dataId": 0, "value": 0.95 },
+      { "code": 22, "dataId": 2, "value": 0.05 },
+      { "code": 22, "dataId": 1, "value": 0.05 }
     ],
     "dropItems": [{ "dataId": 0, "kind": 0, "denominator": 1 }],
-    "note": "<JS Force Received Element 10 Rate: -1.0>\n\n<JS Post-Start Battle>\nconsole.log('=== Pestesporo - Battle Start ===');\nconsole.log('Iniciando boss Pestesporo');\nthis._selfDestructionStacks = 0;\nthis._minionsCount = 0;\nthis._phase = 1;\nconsole.log('Variáveis iniciadas: _selfDestructionStacks=' + this._selfDestructionStacks + ', _minionsCount=' + this._minionsCount + ', _phase=' + this._phase);\n  console.log('=== NOTETAG CHECK ===');\n  console.log('Enemy note:', this.enemy().note);\n  console.log('Has Force Element?', this.enemy().note.includes('Force Received Element'));\n  console.log('=== ELEMENT RATE FUNCTION CHECK ===');\n  const boss = $gameTroop.members().find(m => m.name() === 'Pestesporo');\n  if (boss) {\n    // Verifica se a função elementRate foi modificada\n    console.log('elementRate function:', boss.elementRate.toString());\n\n    // Tenta chamar diretamente\n    console.log('Direct call - elementRate(10):', boss.elementRate(10));\n    console.log('Direct call - elementRate(\"Veneno\"):', boss.elementRate(\"Veneno\"));\n  }\n  console.log('=== PLUGIN ORDER ===');\n  $plugins.forEach((p, i) => {\n    if (p.name.includes('VisuMZ')) {\n      console.log(i + ': ' + p.name + ' v' + p.version);\n    }\n  });\n</JS Post-Start Battle>\n\n<JS Pre-Damage as Target>\n  console.log('=== DEBUG BOSS ELEMENT RATE ===');\n  console.log('Target (this):', this);\n  console.log('User:', user.name());\n  console.log('Element ID:', user.currentAction().item().damage.elementId);\n  console.log('Element Rate:', this.elementRate(user.currentAction().item().damage.elementId));\n  console.log('Value (damage):', value);\n</JS Pre-Damage as Target>\n\n  <JS Post-Damage as Target>\n  console.log('=== PLUGIN CHECK ===');\n  console.log('VisuMZ loaded?', typeof VisuMZ !== 'undefined');\n  console.log('ElementStatusCore loaded?', typeof VisuMZ?.ElementStatusCore !== 'undefined');\n\n  const boss = $gameTroop.members().find(m => m.name() === 'Pestesporo');\n  if (boss) {\n    console.log('Boss encontrado:', boss.name());\n    console.log('HP:', boss.hp, '/', boss.mhp);\n    console.log('Element Rate (10 - Veneno):', boss.elementRate(10));\n\n    // Verifica se o boss tem traits de elemento\n    console.log('Traits:', boss.traits().filter(t => t.code === 14));\n  }\n  </JS Post-Damage as Target>"
+    "note": "<JS Force Received Element 10 Rate: -1.0>"
   },
   {
     "id": 29,
@@ -411,13 +419,17 @@
     "gold": 0,
     "params": [500, 0, 20, 30, 40, 20, 800, 0],
     "actions": [
-      { "skillId": 39, "rating": 1, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
+      { "skillId": 39, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
       { "skillId": 1, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
       { "skillId": 38, "rating": 1, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 }
     ],
-    "traits": [],
+    "traits": [
+      { "code": 22, "dataId": 0, "value": 0.95 },
+      { "code": 22, "dataId": 2, "value": 0.05 },
+      { "code": 22, "dataId": 1, "value": 0.05 }
+    ],
     "dropItems": [{ "dataId": 0, "kind": 0, "denominator": 1 }],
-    "note": "<JS Post-Start Battle>\nconsole.log('=== Esporo de Pestesporo - Battle Start ===');\nconsole.log('Minion Esporo iniciado, marcando _isMinionEsporo = true');\nthis._isMinionEsporo = true;\nthis._minionId = 'ESPORO_' + Math.floor(Math.random() * 10000);\nconsole.log('Minion ID criado:', this._minionId, '| Index na tropa:', this.index());\nconsole.log('isHidden():', this.isHidden(), 'isAlive():', this.isAlive());\n</JS Post-Start Battle>\n\n<JS Post-Damage as Target>\n    // Se o esporo morreu, esconde-o novamente para poder ser reinvocado\n    if (this.isDead() && this._isMinionEsporo) {\n        console.log('=== ESPORO MORREU ===');\n        console.log('Escondendo esporo novamente...');\n        this.hide();\n        console.log('isHidden após hide():', this.isHidden());\n    }\n</JS Post-Damage as Target>"
+    "note": "<JS Post-Start Battle>\n  this._isMinionEsporo = true;\n  this._minionId = 'ESPORO_' + Math.floor(Math.random() * 10000);\n</JS Post-Start Battle>"
   },
   {
     "id": 30,
