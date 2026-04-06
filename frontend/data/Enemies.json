@@ -84,7 +84,8 @@
     ],
     "traits": [
       { "code": 22, "dataId": 0, "value": 0.95 },
-      { "code": 22, "dataId": 2, "value": 0.05 }
+      { "code": 22, "dataId": 2, "value": 0.05 },
+      { "code": 22, "dataId": 1, "value": 0.05 }
     ],
     "dropItems": [{ "dataId": 0, "kind": 0, "denominator": 1 }],
     "note": ""
@@ -103,7 +104,8 @@
     ],
     "traits": [
       { "code": 22, "dataId": 0, "value": 0.95 },
-      { "code": 22, "dataId": 2, "value": 0.05 }
+      { "code": 22, "dataId": 2, "value": 0.05 },
+      { "code": 22, "dataId": 1, "value": 0.05 }
     ],
     "dropItems": [{ "dataId": 0, "kind": 0, "denominator": 1 }],
     "note": ""
@@ -391,26 +393,47 @@
     "name": "Pestesporo",
     "battlerName": "Pestesporo",
     "battlerHue": 0,
-    "exp": 150,
-    "gold": 75,
-    "params": [525, 0, 60, 60, 60, 60, 60, 60],
-    "actions": [{ "skillId": 1, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 }],
-    "traits": [],
+    "exp": 8000,
+    "gold": 1000,
+    "params": [1100, 0, 85, 20, 80, 20, 800, 0],
+    "actions": [
+      { "skillId": 40, "rating": 7, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
+      { "skillId": 36, "rating": 6, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
+      { "skillId": 37, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
+      { "skillId": 1, "rating": 3, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
+      { "skillId": 41, "rating": 9, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 }
+    ],
+    "traits": [
+      { "code": 63, "dataId": 1, "value": 1 },
+      { "code": 14, "dataId": 4, "value": 1 },
+      { "code": 22, "dataId": 0, "value": 0.95 },
+      { "code": 22, "dataId": 2, "value": 0.05 },
+      { "code": 22, "dataId": 1, "value": 0.05 },
+      { "code": 14, "dataId": 61, "value": 1 }
+    ],
     "dropItems": [{ "dataId": 0, "kind": 0, "denominator": 1 }],
-    "note": ""
+    "note": "<JS Force Received Element 10 Rate: -1.0>"
   },
   {
     "id": 29,
-    "name": "",
-    "battlerName": "",
+    "name": "Esporo de Pestesporo",
+    "battlerName": "Gnome",
     "battlerHue": 0,
     "exp": 0,
     "gold": 0,
-    "params": [1, 0, 0, 0, 0, 0, 0, 0],
-    "actions": [{ "skillId": 1, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 }],
-    "traits": [],
+    "params": [500, 0, 20, 30, 40, 20, 80, 0],
+    "actions": [
+      { "skillId": 39, "rating": 3, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
+      { "skillId": 1, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 },
+      { "skillId": 38, "rating": 1, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 }
+    ],
+    "traits": [
+      { "code": 22, "dataId": 0, "value": 0.95 },
+      { "code": 22, "dataId": 2, "value": 0.05 },
+      { "code": 22, "dataId": 1, "value": 0.05 }
+    ],
     "dropItems": [{ "dataId": 0, "kind": 0, "denominator": 1 }],
-    "note": ""
+    "note": "<JS Post-Start Battle>\n  this._isMinionEsporo = true;\n  this._minionId = 'ESPORO_' + Math.floor(Math.random() * 10000);\n</JS Post-Start Battle>"
   },
   {
     "id": 30,
