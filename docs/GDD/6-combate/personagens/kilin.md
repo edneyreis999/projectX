@@ -24,6 +24,18 @@ Anão veterano (50-60 anos), com maestria defensiva inigualável. Mentor de Thor
 | **AGI** | Baixo | Foco em posição firme |
 | **MAT** | Médio | Curas light |
 
+## Atributos Base de Combate
+
+| Atributo | Valor | Padrão | Nota |
+|----------|-------|--------|------|
+| **Taxa de Acerto (HIT)** | 100% | 100% | Padrão (suficiente para suporte) |
+| **Taxa de Evasão (EVA)** | 0% | 5% | -5% (não esquiva, absorve) |
+| **Taxa de Crítico (CRIT)** | 0% | 5% | -5% (não foca em dano) |
+| **Defesa (DEF)** | +10% | 0% | Tank puro |
+| **PV Máximo (HP)** | +10% | 0% | Durabilidade extra |
+
+**Sinergia:** EVA 0% e CRIT 0% reforçam identidade de tank puro que não esquiva e não causa dano crítico — foco total em proteção e suporte.
+
 ---
 
 ## Habilidades

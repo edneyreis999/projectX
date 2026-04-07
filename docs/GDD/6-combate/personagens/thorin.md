@@ -24,6 +24,17 @@ Jovem anão protagonista, ex-quarteback do time "Machados Enferrujados". Usa fun
 | **AGI** | Alto | Mobilidade para reposicionar |
 | **MAT** | Baixo | Sem uso de magia |
 
+## Atributos Base de Combate
+
+| Atributo | Valor | Padrão | Nota |
+|----------|-------|--------|------|
+| **Taxa de Acerto (HIT)** | 105% | 100% | +5% (enabler de precisão) |
+| **Taxa de Evasão (EVA)** | 5% | 5% | Padrão (sniper foca em posicionamento) |
+| **Taxa de Crítico (CRIT)** | 15% | 5% | +10% (tiros cirúrgicos devastadores) |
+| **Velocidade de Ataque** | -5 | 0% | Ataques lentos, mas poderosos |
+
+**Sinergia:** HIT alto (105%) compensa baixa precisão de Mhordred (90%) e Filena (90%) — é o pilar de precisão do time. CRIT alto + Vel Atq baixo = tiros lentos mas devastadores.
+
 ---
 
 ## Habilidades
