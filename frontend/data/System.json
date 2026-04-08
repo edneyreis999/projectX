@@ -89,8 +89,8 @@
     { "name": "Item3", "pan": 0, "pitch": 100, "volume": 90 }
   ],
   "startMapId": 34,
-  "startX": 11,
-  "startY": 22,
+  "startX": 14,
+  "startY": 23,
   "switches": [
     "",
     "Jogada segura",
