@@ -1499,53 +1499,6 @@
           },
           "directionFix": false,
           "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
-          "list": [
-            {
-              "code": 357,
-              "indent": 0,
-              "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusTargetEvent", "Camera: Focus Target Event", { "EventID:eval": "6", "Duration:num": "300", "EasingType:str": "InOutSine" }]
-            },
-            { "code": 657, "indent": 0, "parameters": ["Event ID = 6"] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 300"] },
-            { "code": 657, "indent": 0, "parameters": ["Easing Type = InOutSine"] },
-            { "code": 357, "indent": 0, "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusWait", "Camera: Wait for Focus", {}] },
-            { "code": 213, "indent": 0, "parameters": [8, 1, true] },
-            { "code": 213, "indent": 0, "parameters": [12, 4, true] },
-            { "code": 357, "indent": 0, "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusPlayer", "Camera: Focus Player", { "Duration:num": "300", "EasingType:str": "InOutSine" }] },
-            { "code": 657, "indent": 0, "parameters": ["Duration = 300"] },
-            { "code": 657, "indent": 0, "parameters": ["Easing Type = InOutSine"] },
-            { "code": 213, "indent": 0, "parameters": [-1, 7, true] },
-            { "code": 122, "indent": 0, "parameters": [30, 30, 0, 0, 25] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 3,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 30,
-            "variableValid": true,
-            "variableValue": 25
-          },
-          "directionFix": false,
-          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
           "list": [{ "code": 0, "indent": 0, "parameters": [] }],
           "moveFrequency": 3,
           "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
@@ -2058,6 +2011,82 @@
           "through": false,
           "trigger": 0,
           "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 34
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Principal/$Filena", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                8,
+                {
+                  "list": [{ "code": 29, "parameters": [2], "indent": null }, { "code": 45, "parameters": ["Move to: 44,29"], "indent": null }, { "code": 0 }],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 29, "parameters": [2], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 44,29"], "indent": null }] },
+            { "code": 123, "indent": 0, "parameters": ["A", 0] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 4,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": false,
+            "variableValue": 34
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
         }
       ],
       "x": 42,
@@ -2305,6 +2334,84 @@
           "through": false,
           "trigger": 0,
           "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 34
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Principal/$Borin", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                12,
+                {
+                  "list": [{ "code": 29, "parameters": [2], "indent": null }, { "code": 45, "parameters": ["Move to: 44,29"], "indent": null }, { "code": 0 }],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 29, "parameters": [2], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 44,29"], "indent": null }] },
+            { "code": 213, "indent": 0, "parameters": [12, 4, true] },
+            { "code": 122, "indent": 0, "parameters": [30, 30, 0, 0, 35] },
+            { "code": 123, "indent": 0, "parameters": ["A", 0] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 4,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
         }
       ],
       "x": 40,
@@ -2372,6 +2479,82 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 32
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario1", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                13,
+                {
+                  "list": [{ "code": 29, "parameters": [2], "indent": null }, { "code": 45, "parameters": ["Move to: 36,35"], "indent": null }, { "code": 0 }],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 29, "parameters": [2], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 36,35"], "indent": null }] },
+            { "code": 123, "indent": 0, "parameters": ["A", 0] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 4,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": false,
+            "variableValue": 32
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
           "stepAnime": false,
           "through": false,
           "trigger": 0,
@@ -2447,6 +2630,82 @@
           "through": false,
           "trigger": 0,
           "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 33
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario2", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                14,
+                {
+                  "list": [{ "code": 29, "parameters": [2], "indent": null }, { "code": 45, "parameters": ["Move to: 45,43"], "indent": null }, { "code": 0 }],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 29, "parameters": [2], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 45,43"], "indent": null }] },
+            { "code": 123, "indent": 0, "parameters": ["A", 0] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 4,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": false,
+            "variableValue": 32
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
         }
       ],
       "x": 41,
@@ -2514,6 +2773,82 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 33
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "Kravens/$Expedicionario3", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                15,
+                {
+                  "list": [{ "code": 29, "parameters": [2], "indent": null }, { "code": 45, "parameters": ["Move to: 46,35"], "indent": null }, { "code": 0 }],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 29, "parameters": [2], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 46,35"], "indent": null }] },
+            { "code": 123, "indent": 0, "parameters": ["A", 0] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 4,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": false,
+            "variableValue": 32
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
           "stepAnime": false,
           "through": false,
           "trigger": 0,
@@ -2588,6 +2923,38 @@
           "through": false,
           "trigger": 0,
           "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 31
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [30, 30, 0, 0, 32] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
         }
       ],
       "x": 36,
@@ -2657,6 +3024,38 @@
           "stepAnime": false,
           "through": false,
           "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 31
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [30, 30, 0, 0, 32] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
           "walkAnime": true
         }
       ],
@@ -2728,10 +3127,2307 @@
           "through": false,
           "trigger": 0,
           "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 31
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [30, 30, 0, 0, 32] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
         }
       ],
       "x": 36,
       "y": 44
-    }
+    },
+    {
+      "id": 19,
+      "name": "State Manager - Cena 8",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 24
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusTargetEvent", "Camera: Focus Target Event", { "EventID:eval": "6", "Duration:num": "300", "EasingType:str": "InOutSine" }]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Event ID = 6"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 300"] },
+            { "code": 657, "indent": 0, "parameters": ["Easing Type = InOutSine"] },
+            { "code": 357, "indent": 0, "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusWait", "Camera: Wait for Focus", {}] },
+            { "code": 213, "indent": 0, "parameters": [8, 1, true] },
+            { "code": 213, "indent": 0, "parameters": [12, 4, true] },
+            { "code": 357, "indent": 0, "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusPlayer", "Camera: Focus Player", { "Duration:num": "300", "EasingType:str": "InOutSine" }] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 300"] },
+            { "code": 657, "indent": 0, "parameters": ["Easing Type = InOutSine"] },
+            { "code": 213, "indent": 0, "parameters": [-1, 7, true] },
+            { "code": 122, "indent": 0, "parameters": [30, 30, 0, 0, 25] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 3,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 25
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [-1, { "list": [{ "code": 45, "parameters": ["Move to: 44,40"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": true }]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 44,40"], "indent": null }] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Kravens/Expedicionario1",
+                  "Origin:str": "Bust",
+                  "Position:num": "0",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Kravens/Expedicionario1"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 0"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"8-B\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Conversa sobre futebol\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Thorin chega devagar e percebe que o grupo está falando sobre futebol.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\"]",
+                  "EndOffsetX:eval": "+200",
+                  "EndOffsetY:eval": "-0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\"]"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset X = +200"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset Y = -0"] },
+            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "PKD_VisualChoices_MZ",
+                "OpenVisualChoice",
+                "Visual Choices",
+                { "menuId": "gabarChegarSilencio", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "", "source": "Plugin parameters" }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Group ID = gabarChegarSilencio"] },
+            { "code": 657, "indent": 0, "parameters": ["Position type = 0"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = {\"x:int\":\"0\",\"y:int\":\"0\"}"] },
+            { "code": 657, "indent": 0, "parameters": ["Header Text = "] },
+            { "code": 657, "indent": 0, "parameters": ["Settings from = Plugin parameters"] },
+            { "code": 102, "indent": 0, "parameters": [["gabar1", "chegarSilencio2"], 1, 0, 2, 0] },
+            { "code": 402, "indent": 0, "parameters": [0, "gabar1"] },
+            {
+              "code": 205,
+              "indent": 1,
+              "parameters": [
+                -1,
+                {
+                  "list": [{ "code": 45, "parameters": ["Move to: 44,38"], "indent": null }, { "code": 45, "parameters": ["Move to: 43,36"], "indent": null }, { "code": 0 }],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            { "code": 505, "indent": 1, "parameters": [{ "code": 45, "parameters": ["Move to: 44,38"], "indent": null }] },
+            { "code": 505, "indent": 1, "parameters": [{ "code": 45, "parameters": ["Move to: 43,36"], "indent": null }] },
+            {
+              "code": 357,
+              "indent": 1,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Principal/Thorin Armadura Hemet_feliz",
+                  "Origin:str": "Bust",
+                  "Position:num": "10",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 1, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Thorin Armadura Hemet_fe…"] },
+            { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 1, "parameters": ["Screen Position = 10"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 1, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
+            { "code": 122, "indent": 1, "parameters": [101, 101, 0, 4, "\"8-D.1\""] },
+            { "code": 122, "indent": 1, "parameters": [102, 102, 0, 4, "\"Escolha [Gabar-se]\""] },
+            { "code": 122, "indent": 1, "parameters": [103, 103, 0, 4, "\"Thorin chega se vangloriando.\""] },
+            { "code": 117, "indent": 1, "parameters": [16] },
+            {
+              "code": 357,
+              "indent": 1,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "2",
+                  "PictureName:str": "Portraits/Kravens/Expedicionario1",
+                  "Origin:str": "Bust",
+                  "Position:num": "0",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 1, "parameters": ["Picture ID = 2"] },
+            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Kravens/Expedicionario1"] },
+            { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 1, "parameters": ["Screen Position = 0"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 1, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
+            { "code": 122, "indent": 1, "parameters": [101, 101, 0, 4, "\"8-D.1\""] },
+            { "code": 122, "indent": 1, "parameters": [102, 102, 0, 4, "\"Escolha [Gabar-se]\""] },
+            { "code": 122, "indent": 1, "parameters": [103, 103, 0, 4, "\"Novato pergunta se é 'o jogador da realeza'.\""] },
+            { "code": 117, "indent": 1, "parameters": [16] },
+            {
+              "code": 357,
+              "indent": 1,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "3",
+                  "PictureName:str": "Portraits/Principal/Borin",
+                  "Origin:str": "Bust",
+                  "Position:num": "3",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 1, "parameters": ["Picture ID = 3"] },
+            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Borin"] },
+            { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 1, "parameters": ["Screen Position = 3"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 1, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
+            { "code": 122, "indent": 1, "parameters": [101, 101, 0, 4, "\"8-D.1\""] },
+            { "code": 122, "indent": 1, "parameters": [102, 102, 0, 4, "\"Escolha [Gabar-se]\""] },
+            { "code": 122, "indent": 1, "parameters": [103, 103, 0, 4, "\"Borin caçoa: 'armadura de vitrine não cava minérios'.\""] },
+            { "code": 117, "indent": 1, "parameters": [16] },
+            {
+              "code": 357,
+              "indent": 1,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\",\"2\",\"3\"]",
+                  "EndOffsetX:eval": "+200",
+                  "EndOffsetY:eval": "-0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 1, "parameters": ["Picture ID(s) = [\"1\",\"2\",\"3\"]"] },
+            { "code": 657, "indent": 1, "parameters": ["End Offset X = +200"] },
+            { "code": 657, "indent": 1, "parameters": ["End Offset Y = -0"] },
+            { "code": 657, "indent": 1, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 1, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 1, "parameters": ["Auto-Erase? = true"] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 402, "indent": 0, "parameters": [1, "chegarSilencio2"] },
+            {
+              "code": 205,
+              "indent": 1,
+              "parameters": [
+                -1,
+                {
+                  "list": [{ "code": 45, "parameters": ["Move to: 44,38"], "indent": null }, { "code": 45, "parameters": ["Move to: 43,36"], "indent": null }, { "code": 0 }],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            { "code": 505, "indent": 1, "parameters": [{ "code": 45, "parameters": ["Move to: 44,38"], "indent": null }] },
+            { "code": 505, "indent": 1, "parameters": [{ "code": 45, "parameters": ["Move to: 43,36"], "indent": null }] },
+            {
+              "code": 357,
+              "indent": 1,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Principal/Borin",
+                  "Origin:str": "Bust",
+                  "Position:num": "0",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 1, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Borin"] },
+            { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 1, "parameters": ["Screen Position = 0"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 1, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
+            { "code": 122, "indent": 1, "parameters": [101, 101, 0, 4, "\"8-D.2\""] },
+            { "code": 122, "indent": 1, "parameters": [102, 102, 0, 4, "\"Escolha [Aproximar-se em silêncio]\""] },
+            { "code": 122, "indent": 1, "parameters": [103, 103, 0, 4, "\"Borin caçoa: 'precisa de guarda-costas da realeza'.\""] },
+            { "code": 117, "indent": 1, "parameters": [16] },
+            {
+              "code": 357,
+              "indent": 1,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "2",
+                  "PictureName:str": "Portraits/Principal/Filena_nada",
+                  "Origin:str": "Bust",
+                  "Position:num": "10",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 1, "parameters": ["Picture ID = 2"] },
+            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Filena_nada"] },
+            { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 1, "parameters": ["Screen Position = 10"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 1, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
+            { "code": 122, "indent": 1, "parameters": [101, 101, 0, 4, "\"8-D.2\""] },
+            { "code": 122, "indent": 1, "parameters": [102, 102, 0, 4, "\"Escolha [Aproximar-se em silêncio]\""] },
+            { "code": 122, "indent": 1, "parameters": [103, 103, 0, 4, "\"Filena: 'É constrangedor'.\""] },
+            { "code": 117, "indent": 1, "parameters": [16] },
+            { "code": 122, "indent": 1, "parameters": [101, 101, 0, 4, "\"8-D.2\""] },
+            { "code": 122, "indent": 1, "parameters": [102, 102, 0, 4, "\"Escolha [Aproximar-se em silêncio]\""] },
+            { "code": 122, "indent": 1, "parameters": [103, 103, 0, 4, "\"Borin: 'Ele É um prisioneiro do papai'.\""] },
+            { "code": 117, "indent": 1, "parameters": [16] },
+            {
+              "code": 357,
+              "indent": 1,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\",\"2\"]",
+                  "EndOffsetX:eval": "+200",
+                  "EndOffsetY:eval": "-0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 1, "parameters": ["Picture ID(s) = [\"1\",\"2\"]"] },
+            { "code": 657, "indent": 1, "parameters": ["End Offset X = +200"] },
+            { "code": 657, "indent": 1, "parameters": ["End Offset Y = -0"] },
+            { "code": 657, "indent": 1, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 1, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 1, "parameters": ["Auto-Erase? = true"] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 404, "indent": 0, "parameters": [] },
+            { "code": 122, "indent": 0, "parameters": [30, 30, 0, 0, 26] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 3,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 26
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Kravens/Expedicionario1",
+                  "Origin:str": "Bust",
+                  "Position:num": "0",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Kravens/Expedicionario1"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 0"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"8-E\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Cheiro do assado\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Os novatos comentam sobre o cheiro do assado que vem da fogueira dos guardas\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "2",
+                  "PictureName:str": "Portraits/Principal/Thorin Armadura Hemet_feliz",
+                  "Origin:str": "Bust",
+                  "Position:num": "10",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Thorin Armadura Hemet_fe…"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 10"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"8-F\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Thorin se oferece\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Thorin diz que aqueles são os guardas que o escoltaram e que talvez consiga assado para todos\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\",\"2\"]",
+                  "EndOffsetX:eval": "+200",
+                  "EndOffsetY:eval": "-0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\",\"2\"]"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset X = +200"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset Y = -0"] },
+            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
+            { "code": 355, "indent": 0, "parameters": [""] },
+            { "code": 655, "indent": 0, "parameters": [""] },
+            { "code": 655, "indent": 0, "parameters": ["//completar task"] },
+            { "code": 655, "indent": 0, "parameters": ["SQSM.CompleteTaskForQuest(\"primeiroContrato\", 5);"] },
+            { "code": 655, "indent": 0, "parameters": [""] },
+            { "code": 655, "indent": 0, "parameters": ["//iniciar nova task"] },
+            { "code": 655, "indent": 0, "parameters": ["SQSM.ShowTaskForQuest(\"primeiroContrato\", 6);"] },
+            { "code": 655, "indent": 0, "parameters": ["SQSM.ShowDescriptionForQuest(\"primeiroContrato\", 6);"] },
+            { "code": 122, "indent": 0, "parameters": [100, 100, 0, 4, "\"primeiroContrato,6\""] },
+            { "code": 357, "indent": 0, "parameters": ["VisuMZ_1_SaveCore", "SaveDescription", "Save: Set Description", { "Text:str": "\\V[100]" }] },
+            { "code": 657, "indent": 0, "parameters": ["Text = \\V[100]"] },
+            { "code": 122, "indent": 0, "parameters": [30, 30, 0, 0, 27] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 3,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 27
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 1,
+      "y": 0
+    },
+    {
+      "id": 20,
+      "name": "State Manager - Cena 9",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 28
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Principal/Mhordred_sarcástico",
+                  "Origin:str": "Bust",
+                  "Position:num": "0",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Mhordred_sarcástico"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 0"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"9-B\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Ironia de Mhordred\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Mhordred vê Thorin e sorri: 'Olha só. Cansou dos seus amigos novos e veio jantar com a criadagem?'.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "2",
+                  "PictureName:str": "Portraits/Principal/Borin",
+                  "Origin:str": "Bust",
+                  "Position:num": "3",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID = 2"] },
+            { "code": 657, "indent": 0, "parameters": ["Picture File = Portraits/Principal/Borin"] },
+            { "code": 657, "indent": 0, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = 3"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 0, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 0, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"9-C\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Borin aparece\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Borin aproxima-se com sorriso trocista: O 'campeão' veio pedir esmola aos seus guarda-costas?\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"9-D\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Pergunta de Mhordred\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Mhordred pergunta: 'seus amigos não têm comida lá, não?'.\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            { "code": 122, "indent": 0, "parameters": [101, 101, 0, 4, "\"9-E\""] },
+            { "code": 122, "indent": 0, "parameters": [102, 102, 0, 4, "\"Resposta de Borin\""] },
+            { "code": 122, "indent": 0, "parameters": [103, 103, 0, 4, "\"Borin diz: 'temos sim e muita! A gente não precisa de comida da realeza'. Em seguida, vai embora\""] },
+            { "code": 117, "indent": 0, "parameters": [16] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\",\"2\"]",
+                  "EndOffsetX:eval": "+200",
+                  "EndOffsetY:eval": "-0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Picture ID(s) = [\"1\",\"2\"]"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset X = +200"] },
+            { "code": 657, "indent": 0, "parameters": ["End Offset Y = -0"] },
+            { "code": 657, "indent": 0, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
+            { "code": 122, "indent": 0, "parameters": [30, 30, 0, 0, 29] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 3,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 29
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "PKD_VisualChoices_MZ",
+                "OpenVisualChoice",
+                "Visual Choices",
+                { "menuId": "pedirAssado", "posType": "0", "screenXY": "{\"x:int\":\"0\",\"y:int\":\"0\"}", "headerText": "", "source": "Plugin parameters" }
+              ]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Group ID = pedirAssado"] },
+            { "code": 657, "indent": 0, "parameters": ["Position type = 0"] },
+            { "code": 657, "indent": 0, "parameters": ["Screen Position = {\"x:int\":\"0\",\"y:int\":\"0\"}"] },
+            { "code": 657, "indent": 0, "parameters": ["Header Text = "] },
+            { "code": 657, "indent": 0, "parameters": ["Settings from = Plugin parameters"] },
+            { "code": 102, "indent": 0, "parameters": [["pedidoRespeitoso", "apeloRomantico"], 1, 0, 2, 0] },
+            { "code": 402, "indent": 0, "parameters": [0, "pedidoRespeitoso"] },
+            {
+              "code": 357,
+              "indent": 1,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Principal/Kilin_feliz",
+                  "Origin:str": "Bust",
+                  "Position:num": "0",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 1, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Kilin_feliz"] },
+            { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 1, "parameters": ["Screen Position = 0"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 1, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
+            { "code": 122, "indent": 1, "parameters": [101, 101, 0, 4, "\"9-G.1\""] },
+            { "code": 122, "indent": 1, "parameters": [102, 102, 0, 4, "\"Escolha [Pedir com respeito]\""] },
+            { "code": 122, "indent": 1, "parameters": [103, 103, 0, 4, "\"Kilin corta um pedaço generoso: 'Fazer amigos, é? Talvez isto ajude'.\""] },
+            { "code": 117, "indent": 1, "parameters": [16] },
+            {
+              "code": 357,
+              "indent": 1,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\"]",
+                  "EndOffsetX:eval": "+200",
+                  "EndOffsetY:eval": "-0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 1, "parameters": ["Picture ID(s) = [\"1\"]"] },
+            { "code": 657, "indent": 1, "parameters": ["End Offset X = +200"] },
+            { "code": 657, "indent": 1, "parameters": ["End Offset Y = -0"] },
+            { "code": 657, "indent": 1, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 1, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 1, "parameters": ["Auto-Erase? = true"] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 402, "indent": 0, "parameters": [1, "apeloRomantico"] },
+            {
+              "code": 357,
+              "indent": 1,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "1",
+                  "PictureName:str": "Portraits/Principal/Kilin_feliz",
+                  "Origin:str": "Bust",
+                  "Position:num": "0",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 1, "parameters": ["Picture ID = 1"] },
+            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Kilin_feliz"] },
+            { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 1, "parameters": ["Screen Position = 0"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 1, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
+            {
+              "code": 357,
+              "indent": 1,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_EnterBust",
+                "BASIC: Enter Bust",
+                {
+                  "PictureID:eval": "2",
+                  "PictureName:str": "Portraits/Principal/Mhordred_feliz",
+                  "Origin:str": "Bust",
+                  "Position:num": "3",
+                  "StartOffsetX:eval": "-200",
+                  "StartOffsetY:eval": "+0",
+                  "EasingType:str": "OutSine",
+                  "HorzMirror:str": "Auto-Reverse",
+                  "Duration:eval": "20"
+                }
+              ]
+            },
+            { "code": 657, "indent": 1, "parameters": ["Picture ID = 2"] },
+            { "code": 657, "indent": 1, "parameters": ["Picture File = Portraits/Principal/Mhordred_feliz"] },
+            { "code": 657, "indent": 1, "parameters": ["Origin = Bust"] },
+            { "code": 657, "indent": 1, "parameters": ["Screen Position = 3"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset X = -200"] },
+            { "code": 657, "indent": 1, "parameters": ["Start Offset Y = +0"] },
+            { "code": 657, "indent": 1, "parameters": ["Entrance Easing = OutSine"] },
+            { "code": 657, "indent": 1, "parameters": ["Horizontal Mirror = Auto-Reverse"] },
+            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
+            { "code": 122, "indent": 1, "parameters": [101, 101, 0, 4, "\"9-G.2\""] },
+            { "code": 122, "indent": 1, "parameters": [102, 102, 0, 4, "\"Escolha [Apelo romântico]\""] },
+            { "code": 122, "indent": 1, "parameters": [103, 103, 0, 4, "\"Os guardas caem na gargalhada pela 'desgraça amorosa' e entregam a carne por pena\""] },
+            { "code": 117, "indent": 1, "parameters": [16] },
+            {
+              "code": 357,
+              "indent": 1,
+              "parameters": [
+                "VisuMZ_2_VNPictureBusts",
+                "Basic_ExitBusts",
+                "BASIC: Exit Bust(s)",
+                {
+                  "PictureID:arrayeval": "[\"1\",\"2\"]",
+                  "EndOffsetX:eval": "+200",
+                  "EndOffsetY:eval": "-0",
+                  "EasingType:str": "InSine",
+                  "FlipDirection:str": "None",
+                  "Duration:eval": "20",
+                  "AutoErase:eval": "true"
+                }
+              ]
+            },
+            { "code": 657, "indent": 1, "parameters": ["Picture ID(s) = [\"1\",\"2\"]"] },
+            { "code": 657, "indent": 1, "parameters": ["End Offset X = +200"] },
+            { "code": 657, "indent": 1, "parameters": ["End Offset Y = -0"] },
+            { "code": 657, "indent": 1, "parameters": ["Exit Easing = InSine"] },
+            { "code": 657, "indent": 1, "parameters": ["Flip Direction = None"] },
+            { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
+            { "code": 657, "indent": 1, "parameters": ["Auto-Erase? = true"] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 404, "indent": 0, "parameters": [] },
+            { "code": 126, "indent": 0, "parameters": [12, 0, 0, 1] },
+            { "code": 101, "indent": 0, "parameters": ["", 0, 0, 0, ""] },
+            { "code": 401, "indent": 0, "parameters": ["Você recebeu \\I[259] Assado Suculento!"] },
+            { "code": 122, "indent": 0, "parameters": [30, 30, 0, 0, 30] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 3,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 30
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 355, "indent": 0, "parameters": [""] },
+            { "code": 655, "indent": 0, "parameters": [""] },
+            { "code": 655, "indent": 0, "parameters": ["//completar task"] },
+            { "code": 655, "indent": 0, "parameters": ["SQSM.CompleteTaskForQuest(\"primeiroContrato\", 6);"] },
+            { "code": 655, "indent": 0, "parameters": [""] },
+            { "code": 655, "indent": 0, "parameters": ["//iniciar nova task"] },
+            { "code": 655, "indent": 0, "parameters": ["SQSM.ShowTaskForQuest(\"primeiroContrato\", 7);"] },
+            { "code": 655, "indent": 0, "parameters": ["SQSM.ShowDescriptionForQuest(\"primeiroContrato\", 7);"] },
+            { "code": 122, "indent": 0, "parameters": [100, 100, 0, 4, "\"primeiroContrato,7\""] },
+            { "code": 357, "indent": 0, "parameters": ["VisuMZ_1_SaveCore", "SaveDescription", "Save: Set Description", { "Text:str": "\\V[100]" }] },
+            { "code": 657, "indent": 0, "parameters": ["Text = \\V[100]"] },
+            { "code": 122, "indent": 0, "parameters": [30, 30, 0, 0, 31] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 3,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 31
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 2,
+      "y": 0
+    },
+    {
+      "id": 21,
+      "name": "triggerAssado",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 27
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [30, 30, 0, 0, 28] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 28
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 27,
+      "y": 45
+    },
+    {
+      "id": 22,
+      "name": "triggerAssado",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 27
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [30, 30, 0, 0, 28] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 28
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 26,
+      "y": 45
+    },
+    {
+      "id": 23,
+      "name": "triggerAssado",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 27
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [30, 30, 0, 0, 28] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 28
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 25,
+      "y": 45
+    },
+    {
+      "id": 24,
+      "name": "triggerAssado",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 27
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [30, 30, 0, 0, 28] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 28
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 24,
+      "y": 45
+    },
+    {
+      "id": 25,
+      "name": "triggerAssado",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 27
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [30, 30, 0, 0, 28] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 28
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 23,
+      "y": 45
+    },
+    {
+      "id": 26,
+      "name": "triggerAssado",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 27
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [30, 30, 0, 0, 28] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 28
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 23,
+      "y": 46
+    },
+    {
+      "id": 27,
+      "name": "triggerAssado",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 27
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [30, 30, 0, 0, 28] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 28
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 23,
+      "y": 47
+    },
+    {
+      "id": 28,
+      "name": "triggerAssado",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 27
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [30, 30, 0, 0, 28] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 28
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 23,
+      "y": 48
+    },
+    {
+      "id": 29,
+      "name": "triggerAssado",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 27
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [30, 30, 0, 0, 28] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 28
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 24,
+      "y": 48
+    },
+    {
+      "id": 30,
+      "name": "triggerAssado",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 27
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [30, 30, 0, 0, 28] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 28
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 25,
+      "y": 48
+    },
+    {
+      "id": 31,
+      "name": "triggerAssado",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 27
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [30, 30, 0, 0, 28] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 28
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 26,
+      "y": 48
+    },
+    {
+      "id": 32,
+      "name": "triggerAssado",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 27
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [30, 30, 0, 0, 28] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 28
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 27,
+      "y": 48
+    },
+    {
+      "id": 33,
+      "name": "triggerAssado",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 27
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [30, 30, 0, 0, 28] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 28
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 27,
+      "y": 46
+    },
+    {
+      "id": 34,
+      "name": "triggerAssado",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 27
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [30, 30, 0, 0, 28] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 28
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 27,
+      "y": 47
+    },
+    {
+      "id": 35,
+      "name": "State Manager - Cena 10",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 32
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 122, "indent": 0, "parameters": [30, 30, 0, 0, 33] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 3,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 33
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 213, "indent": 0, "parameters": [-1, 8, true] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [-1, { "list": [{ "code": 45, "parameters": ["Move to: 39,40"], "indent": null }, { "code": 0 }], "repeat": false, "skippable": false, "wait": false }]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 39,40"], "indent": null }] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusTargetEvent", "Camera: Focus Target Event", { "EventID:eval": "8", "Duration:num": "180", "EasingType:str": "InOutSine" }]
+            },
+            { "code": 657, "indent": 0, "parameters": ["Event ID = 8"] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 180"] },
+            { "code": 657, "indent": 0, "parameters": ["Easing Type = InOutSine"] },
+            { "code": 122, "indent": 0, "parameters": [30, 30, 0, 0, 34] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 3,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 34
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 3,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 35
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 357, "indent": 0, "parameters": ["VisuMZ_4_MapCameraZoom", "CameraFocusPlayer", "Camera: Focus Player", { "Duration:num": "180", "EasingType:str": "InOutSine" }] },
+            { "code": 657, "indent": 0, "parameters": ["Duration = 180"] },
+            { "code": 657, "indent": 0, "parameters": ["Easing Type = InOutSine"] },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                -1,
+                {
+                  "list": [{ "code": 45, "parameters": ["Move to: 37,43"], "indent": null }, { "code": 45, "parameters": ["Move to: 25,37"], "indent": null }, { "code": 0 }],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 37,43"], "indent": null }] },
+            { "code": 505, "indent": 0, "parameters": [{ "code": 45, "parameters": ["Move to: 25,37"], "indent": null }] },
+            { "code": 355, "indent": 0, "parameters": [""] },
+            { "code": 655, "indent": 0, "parameters": [""] },
+            { "code": 655, "indent": 0, "parameters": ["//completar task"] },
+            { "code": 655, "indent": 0, "parameters": ["SQSM.CompleteTaskForQuest(\"primeiroContrato\", 7);"] },
+            { "code": 655, "indent": 0, "parameters": [""] },
+            { "code": 655, "indent": 0, "parameters": ["//iniciar nova task"] },
+            { "code": 655, "indent": 0, "parameters": ["SQSM.ShowTaskForQuest(\"primeiroContrato\", 8);"] },
+            { "code": 655, "indent": 0, "parameters": ["SQSM.ShowDescriptionForQuest(\"primeiroContrato\", 8);"] },
+            { "code": 122, "indent": 0, "parameters": [100, 100, 0, 4, "\"primeiroContrato,8\""] },
+            { "code": 357, "indent": 0, "parameters": ["VisuMZ_1_SaveCore", "SaveDescription", "Save: Set Description", { "Text:str": "\\V[100]" }] },
+            { "code": 657, "indent": 0, "parameters": ["Text = \\V[100]"] },
+            { "code": 122, "indent": 0, "parameters": [30, 30, 0, 0, 36] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 3,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 36
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 230, "indent": 0, "parameters": [180] },
+            { "code": 221, "indent": 0, "parameters": [] },
+            { "code": 230, "indent": 0, "parameters": [240] },
+            { "code": 222, "indent": 0, "parameters": [] },
+            { "code": 122, "indent": 0, "parameters": [30, 30, 0, 0, 37] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 3,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 37
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 3,
+      "y": 0
+    },
+    {
+      "id": 36,
+      "name": "tendaThorin",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 30,
+            "variableValid": true,
+            "variableValue": 37
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 201, "indent": 0, "parameters": [0, 31, 8, 9, 0, 0] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        }
+      ],
+      "x": 25,
+      "y": 37
+    },
+    null,
+    null,
+    null
   ]
 }
