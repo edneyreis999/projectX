@@ -1,0 +1,58 @@
+# VisuStella MZ - Active Turn Battle (LLM Index)
+
+## Plugin Info
+- **Name**: VisuStella MZ Active Turn Battle
+- **Purpose**: Transforma RPG Maker MZ TPB em sistema Active Turn Battle completo
+- **Required**: VisuMZ_1_BattleCore
+- **Required Setting**: Database > System 1 > Time Progress (Active/Wait)
+
+## Core Concepts
+- ATB = Active Time Battle system com barras de tempo por battler
+- AGI = Agilidade determina velocidade de enchimento da barra
+- Casting = Habilidades com speed negativo (precisam carregar)
+- Charging = Estado de carregamento da barra
+- Interrupt = Cancelar ação em casting
+
+## Documentation Structure
+
+### Concepts (/conceitos/)
+- o-que-e-atb.md → Intro ATB vs TPB
+- mecanica-agilidade.md → Como AGI afeta speed
+- estados-combate.md → Estados: casting, charging, ready, stop
+
+### Configuration (/configuration/)
+- atb-gauge.md → Barras visuais sobre battlers (posição, cores, escala)
+- turn-order-display.md → Field gauge com todos os battlers
+- field-gauge.md → Gauge de campo com marcadores
+- timing-formulas.md → JS: Speed, Base Speed, Acceleration, Cast Time
+- interrupts.md → Configurar interrupções (animação, popup, flash)
+- sound-effects.md → Sons de ATB
+
+### Features (/features/)
+- skills-items.md → Notetags: <ATB Cast Gauge>, <ATB Interrupt>, <ATB After Gauge>
+- actors-enemies.md → Notetags: <ATB Battle Start Gauge>, <Hide ATB Gauge>
+- states.md → Notetags para modificar ATB via estados
+
+### Reference (/reference/)
+- troubleshooting.md → Problemas comuns
+- glossario.md → Termos técnicos
+- compatibilidade.md → Plugins VisuStella compatíveis
+
+## Key Parameters
+- Escape Fail Penalty: Penalidade ao falhar fuga
+- Stuns Reset Gauge?: Se atordoamentos resetam gauge
+- JS: Initial Gauge: Gauge inicial (%)
+- JS: Speed: Fórmula de velocidade (AGI)
+- JS: Cast Time: Tempo para skills com speed negativo
+
+## Key Notetags
+- `<ATB Cast Gauge: x%>`: Define gauge para casting
+- `<ATB Interrupt>`: Cancela ações em casting
+- `<ATB After Gauge: x%>`: Gauge após ação
+- `<Hide ATB Gauge>`: Oculta gauge de inimigo
+
+## Navigation Priority
+1. conceitos/o-que-e-atb.md (entender sistema)
+2. configuration/atb-gauge.md (configurar visual)
+3. features/skills-items.md (aplicar notetags)
+4. reference/glossario.md (consultar termos)

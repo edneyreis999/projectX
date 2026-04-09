@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akea Animated Battle System 2 - Skills Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #eee;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #e94560;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #a0a0a0;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .stat-box {
+            background: rgba(255,255,255,0.1);
+            padding: 15px 25px;
+            border-radius: 10px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .stat-box .number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #00d9ff;
+        }
+
+        .stat-box .label {
+            font-size: 0.9em;
+            color: #aaa;
+            margin-top: 5px;
+        }
+
+        .category {
+            background: rgba(255,255,255,0.05);
+            margin-bottom: 25px;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .category-header {
+            padding: 15px 20px;
+            font-size: 1.3em;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s;
+        }
+
+        .category-header:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .category-header .count {
+            background: rgba(233, 69, 96, 0.3);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .skill-card {
+            background: rgba(255,255,255,0.08);
+            border-radius: 10px;
+            padding: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border-color: rgba(0, 217, 255, 0.3);
+        }
+
+        .skill-name {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #00d9ff;
+            margin-bottom: 8px;
+        }
+
+        .skill-description {
+            font-size: 0.9em;
+            color: #ccc;
+            line-height: 1.4;
+        }
+
+        .skill-card.no-description {
+            opacity: 0.7;
+        }
+
+        /* Category colors */
+        .combat .category-header { background: linear-gradient(90deg, rgba(233,69,96,0.3), transparent); }
+        .enemy .category-header { background: linear-gradient(90deg, rgba(255,152,0,0.3), transparent); }
+        .magic .category-header { background: linear-gradient(90deg, rgba(156,39,176,0.3), transparent); }
+        .elemental .category-header { background: linear-gradient(90deg, rgba(0,188,212,0.3), transparent); }
+        .buffs .category-header { background: linear-gradient(90deg, rgba(76,175,80,0.3), transparent); }
+        .debuffs .category-header { background: linear-gradient(90deg, rgba(244,67,54,0.3), transparent); }
+        .status .category-header { background: linear-gradient(90deg, rgba(255,193,7,0.3), transparent); }
+        .class-specific .category-header { background: linear-gradient(90deg, rgba(103,58,183,0.3), transparent); }
+
+        @media (max-width: 768px) {
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⚔️ Akea Animated Battle System 2</h1>
+        <p class="subtitle">Complete Skills Dashboard</p>
+
+        <div class="stats">
+            <div class="stat-box">
+                <div class="number">169</div>
+                <div class="label">Total Skills</div>
+            </div>
+            <div class="stat-box">
+                <div class="number">9</div>
+                <div class="label">Categories</div>
+            </div>
+            <div class="stat-box">
+                <div class="number">8</div>
+                <div class="label">Elements</div>
+            </div>
+        </div>
+
+        <!-- Basic Combat Skills -->
+        <div class="category combat">
+            <div class="category-header">
+                <span>⚔️ Basic Combat Skills</span>
+                <span class="count">7</span>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card no-description">
+                    <div class="skill-name">Attack</div>
+                    <div class="skill-description">Basic attack action</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Guard</div>
+                    <div class="skill-description">Defensive stance to reduce damage</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Escape</div>
+                    <div class="skill-description">The user flees from battle</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Dual Attack</div>
+                    <div class="skill-description">Performs a series of attacks on an enemy</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Double Attack</div>
+                    <div class="skill-description">Performs a double attack on a random enemy</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Triple Attack</div>
+                    <div class="skill-description">Performs a triple attack on a random enemy</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Wait and See</div>
+                    <div class="skill-description">Waits to see what happens</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Enemy Skills -->
+        <div class="category enemy">
+            <div class="category-header">
+                <span>👾 Enemy Skills</span>
+                <span class="count">24</span>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-name">Blood Suck</div>
+                    <div class="skill-description">Absorbs HP from an enemy</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Meditate</div>
+                    <div class="skill-description">Restores the user's HP</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Tranquilizer</div>
+                    <div class="skill-description">Stabs an enemy with paralyzing needles</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Bodyslam</div>
+                    <div class="skill-description">Inflicts damage and causes an enemy to lose balance</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Shock</div>
+                    <div class="skill-description">Inflicts Thunder-type damage and Paralysis state</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Slime</div>
+                    <div class="skill-description">Covers an enemy in slime and lowers their Agility</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Venom</div>
+                    <div class="skill-description">Sprays an enemy with venom and inflicts Poison state</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Shout</div>
+                    <div class="skill-description">Rouses the user's fighting spirit and fortifies their abilities</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Bizarre Dance</div>
+                    <div class="skill-description">Absorbs MP from an enemy</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Petrify</div>
+                    <div class="skill-description">Glares at an enemy and paralyzes them</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Eye Poke</div>
+                    <div class="skill-description">Blinds an enemy</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Sandstorm</div>
+                    <div class="skill-description">Blinds all enemies</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Flash</div>
+                    <div class="skill-description">Blinds all enemies</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Toxic Fog</div>
+                    <div class="skill-description">Poisons all enemies</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Lullaby</div>
+                    <div class="skill-description">Puts all enemies to sleep</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Alluring Melody</div>
+                    <div class="skill-description">Charms all enemies</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Song of Silence</div>
+                    <div class="skill-description">Seals all enemies' magic</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Sonic Wave</div>
+                    <div class="skill-description">Confuses all enemies</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Stone Throw</div>
+                    <div class="skill-description">Inflicts Earth-type damage on all enemies</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Dust Devil</div>
+                    <div class="skill-description">Inflicts Wind-type damage on all enemies</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Fire Breath</div>
+                    <div class="skill-description">Inflicts Fire-type damage on all enemies</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Ice Breath</div>
+                    <div class="skill-description">Inflicts Ice-type damage on all enemies</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Earthquake</div>
+                    <div class="skill-description">Inflicts Earth-type damage on all enemies</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Tsunami</div>
+                    <div class="skill-description">Inflicts Water-type damage on all enemies</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Healing Magic -->
+        <div class="category magic">
+            <div class="category-header">
+                <span>💚 Healing Magic</span>
+                <span class="count">8</span>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-name">Heal I</div>
+                    <div class="skill-description">Restores an ally's HP</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Heal II</div>
+                    <div class="skill-description">Restores an ally's HP (stronger)</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Heal III</div>
+                    <div class="skill-description">Restores an ally's HP (strongest)</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Recover I</div>
+                    <div class="skill-description">Restores all allies' HP</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Recover II</div>
+                    <div class="skill-description">Restores all allies' HP (stronger)</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Recover III</div>
+                    <div class="skill-description">Restores all allies' HP (strongest)</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Raise I</div>
+                    <div class="skill-description">Raises an ally from the dead</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Raise II</div>
+                    <div class="skill-description">Raises an ally from the dead and greatly restores their HP</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Status Cure Magic -->
+        <div class="category status">
+            <div class="category-header">
+                <span>🔧 Status Cure Magic</span>
+                <span class="count">3</span>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-name">Cure I</div>
+                    <div class="skill-description">Cures an ally's Poison, Paralysis, or Sleep state</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Cure II</div>
+                    <div class="skill-description">Cures an ally's status ailments other than Dead</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Cure III</div>
+                    <div class="skill-description">Cures all allies' status ailments other than Dead</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Status Effect Magic -->
+        <div class="category status">
+            <div class="category-header">
+                <span>☠️ Status Effect Magic</span>
+                <span class="count">6</span>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-name">Poison</div>
+                    <div class="skill-description">Poisons all enemies</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Blind</div>
+                    <div class="skill-description">Blinds all enemies</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Confuse</div>
+                    <div class="skill-description">Confuses all enemies</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Silence</div>
+                    <div class="skill-description">Seals all enemies' magic</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Sleep</div>
+                    <div class="skill-description">Puts all enemies to sleep</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Paralyze</div>
+                    <div class="skill-description">Paralyzes all enemies</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Buff Magic -->
+        <div class="category buffs">
+            <div class="category-header">
+                <span>⬆️ Buff Magic</span>
+                <span class="count">18</span>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-name">Weapon Bless</div>
+                    <div class="skill-description">Increases an ally's Attack. Usable up to 2 times in a row</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Armor Bless</div>
+                    <div class="skill-description">Increases an ally's Defense. Usable up to 2 times in a row</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Spirit Bless</div>
+                    <div class="skill-description">Increases an ally's M.Attack. Usable up to 2 times in a row</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Divine Bless</div>
+                    <div class="skill-description">Increases an ally's M.Defense. Usable up to 2 times in a row</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Quicken Movement</div>
+                    <div class="skill-description">Increases an ally's Agility. Usable up to 2 times in a row</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Willpower</div>
+                    <div class="skill-description">Rouses the user's fighting spirit and increases Attack. Usable up to 2 times in a row</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Magic Barrier</div>
+                    <div class="skill-description">Increases all allies' Defense and M.Defense. Usable up to 2 times in a row</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Spell Enhancement</div>
+                    <div class="skill-description">Greatly increases the user's M.Attack for 5 turns</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Yell</div>
+                    <div class="skill-description">Rouses all allies' fighting spirit and increases Attack. Usable up to 2 times in a row</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Battle Cry</div>
+                    <div class="skill-description">Rouses all allies' fighting spirit and increases Attack. Usable up to 2 times in a row</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Fire Weapon</div>
+                    <div class="skill-description">Bestows Fire-type for 5 turns</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Ice Weapon</div>
+                    <div class="skill-description">Bestows Ice-type for 5 turns</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Thunder Weapon</div>
+                    <div class="skill-description">Bestows Thunder-type for 5 turns</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Magic Mirror</div>
+                    <div class="skill-description">Reflects M.Attack aimed at the user for 5 turns</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Warm-up</div>
+                    <div class="skill-description">Increases the user's Agility</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Watchful Eye</div>
+                    <div class="skill-description">Increases items and money gained from battle for a while</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Hide</div>
+                    <div class="skill-description">Makes the user harder to target</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Qigong</div>
+                    <div class="skill-description">Cures the user from being weakened</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Debuff Magic -->
+        <div class="category debuffs">
+            <div class="category-header">
+                <span>⬇️ Debuff Magic</span>
+                <span class="count">6</span>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-name">Weapon Curse</div>
+                    <div class="skill-description">Decreases all enemies' Attack. Usable up to 2 times in a row</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Armor Curse</div>
+                    <div class="skill-description">Decreases all enemies' Defense. Usable up to 2 times in a row</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Spirit Curse</div>
+                    <div class="skill-description">Decreases all enemies' M.Attack. Usable up to 2 times in a row</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Divine Curse</div>
+                    <div class="skill-description">Decreases all enemies' M.Defense. Usable up to 2 times in a row</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Slow Movement</div>
+                    <div class="skill-description">Decreases all enemies' Agility. Usable up to 2 times in a row</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Point Shot</div>
+                    <div class="skill-description">Decreases an enemy's Attack and Defense</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Drain Magic -->
+        <div class="category magic">
+            <div class="category-header">
+                <span>🩸 Drain Magic</span>
+                <span class="count">2</span>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-name">Life Drain</div>
+                    <div class="skill-description">Absorbs HP from an enemy</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Mana Drain</div>
+                    <div class="skill-description">Absorbs MP from an enemy</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fire Magic -->
+        <div class="category elemental">
+            <div class="category-header">
+                <span>🔥 Fire Magic</span>
+                <span class="count">6</span>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-name">Fire I</div>
+                    <div class="skill-description">Inflicts Fire-type damage on an enemy</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Fire II</div>
+                    <div class="skill-description">Inflicts Fire-type damage on an enemy (stronger)</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Fire III</div>
+                    <div class="skill-description">Inflicts Fire-type damage on an enemy (strongest)</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Flame I</div>
+                    <div class="skill-description">Inflicts Fire-type damage on all enemies</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Flame II</div>
+                    <div class="skill-description">Inflicts Fire-type damage on all enemies (stronger)</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Flame III</div>
+                    <div class="skill-description">Inflicts Fire-type damage on all enemies (strongest)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ice Magic -->
+        <div class="category elemental">
+            <div class="category-header">
+                <span>❄️ Ice Magic</span>
+                <span class="count">6</span>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-name">Ice I</div>
+                    <div class="skill-description">Inflicts Ice-type damage on an enemy</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Ice II</div>
+                    <div class="skill-description">Inflicts Ice-type damage on an enemy (stronger)</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Ice III</div>
+                    <div class="skill-description">Inflicts Ice-type damage on an enemy (strongest)</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Blizzard I</div>
+                    <div class="skill-description">Inflicts Ice-type damage on all enemies</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Blizzard II</div>
+                    <div class="skill-description">Inflicts Ice-type damage on all enemies (stronger)</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Blizzard III</div>
+                    <div class="skill-description">Inflicts Ice-type damage on all enemies (strongest)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Thunder Magic -->
+        <div class="category elemental">
+            <div class="category-header">
+                <span>⚡ Thunder Magic</span>
+                <span class="count">6</span>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-name">Thunder I</div>
+                    <div class="skill-description">Inflicts Thunder-type damage on an enemy</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Thunder II</div>
+                    <div class="skill-description">Inflicts Thunder-type damage on an enemy (stronger)</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Thunder III</div>
+                    <div class="skill-description">Inflicts Thunder-type damage on an enemy (strongest)</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Spark I</div>
+                    <div class="skill-description">Inflicts Thunder-type damage on all enemies</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Spark II</div>
+                    <div class="skill-description">Inflicts Thunder-type damage on all enemies (stronger)</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Spark III</div>
+                    <div class="skill-description">Inflicts Thunder-type damage on all enemies (strongest)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Water Magic -->
+        <div class="category elemental">
+            <div class="category-header">
+                <span>💧 Water Magic</span>
+                <span class="count">4</span>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-name">Water I</div>
+                    <div class="skill-description">Inflicts Water-type damage on an enemy</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Water II</div>
+                    <div class="skill-description">Inflicts Water-type damage on an enemy (stronger)</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Wave I</div>
+                    <div class="skill-description">Inflicts Water-type damage on all enemies</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Wave II</div>
+                    <div class="skill-description">Inflicts Water-type damage on all enemies (stronger)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Earth Magic -->
+        <div class="category elemental">
+            <div class="category-header">
+                <span>🪨 Earth Magic</span>
+                <span class="count">4</span>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-name">Stone I</div>
+                    <div class="skill-description">Inflicts Earth-type damage on an enemy</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Stone II</div>
+                    <div class="skill-description">Inflicts Earth-type damage on an enemy (stronger)</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Quake I</div>
+                    <div class="skill-description">Inflicts Earth-type damage on all enemies</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Quake II</div>
+                    <div class="skill-description">Inflicts Earth-type damage on all enemies (stronger)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wind Magic -->
+        <div class="category elemental">
+            <div class="category-header">
+                <span>🌪️ Wind Magic</span>
+                <span class="count">4</span>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-name">Wind I</div>
+                    <div class="skill-description">Inflicts Wind-type damage on an enemy</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Wind II</div>
+                    <div class="skill-description">Inflicts Wind-type damage on an enemy (stronger)</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Tornado I</div>
+                    <div class="skill-description">Inflicts Wind-type damage on all enemies</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Tornado II</div>
+                    <div class="skill-description">Inflicts Wind-type damage on all enemies (stronger)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Light Magic -->
+        <div class="category elemental">
+            <div class="category-header">
+                <span>✨ Light Magic</span>
+                <span class="count">4</span>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-name">Saint I</div>
+                    <div class="skill-description">Inflicts Light-type damage on an enemy</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Saint II</div>
+                    <div class="skill-description">Inflicts Light-type damage on an enemy (stronger)</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Starlight I</div>
+                    <div class="skill-description">Inflicts Light-type damage on all enemies</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Starlight II</div>
+                    <div class="skill-description">Inflicts Light-type damage on all enemies (stronger)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dark Magic -->
+        <div class="category elemental">
+            <div class="category-header">
+                <span>🌑 Dark Magic</span>
+                <span class="count">4</span>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-name">Shade I</div>
+                    <div class="skill-description">Inflicts Darkness-type damage on an enemy</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Shade II</div>
+                    <div class="skill-description">Inflicts Darkness-type damage on an enemy (stronger)</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Darkness I</div>
+                    <div class="skill-description">Inflicts Darkness-type damage on all enemies</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Darkness II</div>
+                    <div class="skill-description">Inflicts Darkness-type damage on all enemies (stronger)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pierce Magic -->
+        <div class="category elemental">
+            <div class="category-header">
+                <span>💥 Pierce Magic (Ignore Defense)</span>
+                <span class="count">4</span>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-name">Burst I</div>
+                    <div class="skill-description">Inflicts damage on an enemy regardless of Defense</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Burst II</div>
+                    <div class="skill-description">Inflicts damage on an enemy regardless of Defense (stronger)</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Nuke I</div>
+                    <div class="skill-description">Inflicts damage on all enemies regardless of Defense</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Nuke II</div>
+                    <div class="skill-description">Inflicts damage on all enemies regardless of Defense (stronger)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Swordsman Skills -->
+        <div class="category class-specific">
+            <div class="category-header">
+                <span>⚔️ Swordsman Skills</span>
+                <span class="count">8</span>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-name">Strong Attack</div>
+                    <div class="skill-description">Performs a powerful attack on an enemy</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Slash</div>
+                    <div class="skill-description">Attacks all enemies</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Dual Attack</div>
+                    <div class="skill-description">Performs an attack on an enemy twice</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Willpower</div>
+                    <div class="skill-description">Rouses the user's fighting spirit and increases Attack. Usable up to 2 times in a row</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">First Aid</div>
+                    <div class="skill-description">Restores an ally's HP</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Maiden's Stance</div>
+                    <div class="skill-description">Performs a super powerful attack on an enemy</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Spin Crash</div>
+                    <div class="skill-description">Performs a powerful attack on all enemies</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Priest & Sorcerer Skills -->
+        <div class="category class-specific">
+            <div class="category-header">
+                <span>📜 Priest & Sorcerer Skills</span>
+                <span class="count">9</span>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-name">Magic Barrier</div>
+                    <div class="skill-description">Increases all allies' Defense and M.Defense. Usable up to 2 times in a row</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Spell Enhancement</div>
+                    <div class="skill-description">Greatly increases the user's M.Attack for 5 turns</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Yell</div>
+                    <div class="skill-description">Rouses all allies' fighting spirit and increases Attack. Usable up to 2 times in a row</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Meteor</div>
+                    <div class="skill-description">Inflicts damage on all enemies regardless of Defense</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Fire Weapon</div>
+                    <div class="skill-description">Bestows Fire-type for 5 turns</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Ice Weapon</div>
+                    <div class="skill-description">Bestows Ice-type for 5 turns</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Thunder Weapon</div>
+                    <div class="skill-description">Bestows Thunder-type for 5 turns</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Magic Mirror</div>
+                    <div class="skill-description">Reflects M.Attack aimed at the user for 5 turns</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Knight Skills -->
+        <div class="category class-specific">
+            <div class="category-header">
+                <span>🛡️ Knight Skills</span>
+                <span class="count">8</span>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-name">Protect</div>
+                    <div class="skill-description">Automatically protects allies with low HP for 1 turn</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Falcon Thrust</div>
+                    <div class="skill-description">Performs an attack on an enemy faster than anyone else</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Double Thrust</div>
+                    <div class="skill-description">Performs an attack on an enemy twice</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Armor Piercer</div>
+                    <div class="skill-description">Inflicts damage on all enemies regardless of Defense</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Battle Cry</div>
+                    <div class="skill-description">Rouses all allies' fighting spirit and increases Attack. Usable up to 2 times in a row</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Windmill</div>
+                    <div class="skill-description">Attacks all enemies</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Clear Mind</div>
+                    <div class="skill-description">Slightly increases the user's TP</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Wild Thrust</div>
+                    <div class="skill-description">Randomly performs 4 attacks on 4 enemies</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bandit Skills -->
+        <div class="category class-specific">
+            <div class="category-header">
+                <span>🗡️ Bandit Skills</span>
+                <span class="count">6</span>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-name">Eye Poke</div>
+                    <div class="skill-description">Blinds an enemy</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Warm-up</div>
+                    <div class="skill-description">Increases the user's Agility</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Flare</div>
+                    <div class="skill-description">Blinds all enemies</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Watchful Eye</div>
+                    <div class="skill-description">Increases items and money gained from battle for a while</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Wind Call</div>
+                    <div class="skill-description">Inflicts Wind-type damage on all enemies</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Hide</div>
+                    <div class="skill-description">Makes the user harder to target</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Martial Artist Skills -->
+        <div class="category class-specific">
+            <div class="category-header">
+                <span>👊 Martial Artist Skills</span>
+                <span class="count">4</span>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-name">Sweep</div>
+                    <div class="skill-description">Inflicts damage and causes all enemies to lose balance</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Qigong</div>
+                    <div class="skill-description">Cures the user from being weakened</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Roundhouse Kick</div>
+                    <div class="skill-description">Inflicts huge damage on all enemies</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Tiger Dance</div>
+                    <div class="skill-description">Inflicts damage on an enemy regardless of Defense</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hunter Skills -->
+        <div class="category class-specific">
+            <div class="category-header">
+                <span>🏹 Hunter Skills</span>
+                <span class="count">4</span>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-name">Point Shot</div>
+                    <div class="skill-description">Decreases an enemy's Attack and Defense</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Stun Shot</div>
+                    <div class="skill-description">Shoots at the footing of all enemies and causes them to lose balance</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Team Shot</div>
+                    <div class="skill-description">Inflicts damage on an enemy 5 times</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Rain Shot</div>
+                    <div class="skill-description">Inflicts damage on all enemies 2 times</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Add collapsible functionality
+        document.querySelectorAll('.category-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const grid = header.nextElementSibling;
+                grid.style.display = grid.style.display === 'none' ? 'grid' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>

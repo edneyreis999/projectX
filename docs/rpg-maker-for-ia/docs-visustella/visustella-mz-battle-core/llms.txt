@@ -1,0 +1,85 @@
+# VisuStella MZ Battle Core - LLM Navigation Guide
+
+## Project Identity
+VisuStella MZ Battle Core v1.85 - Tier 1 battle system plugin for RPG Maker MZ
+
+## Purpose
+Complete battle engine overhaul providing Action Sequences, animated enemies, damage styles, custom targeting, and extensive JavaScript notetags for battle customization.
+
+## Quick Reference
+- **Plugin File**: VisuMZ_1_BattleCore.js
+- **Tier**: 1 (load after CoreEngine)
+- **Compatibility**: RPG Maker MZ only
+- **Size**: ~24,700 lines of documentation
+
+## Core Documentation Areas
+
+### 1. Getting Started (Lines 1-400)
+- Introduction & Feature List
+- Requirements & Tier System
+- Major Changes from default MZ
+
+**File**: `getting-started/introduction.md`
+
+### 2. Damage Styles (Lines 260-380)
+Pre-built damage calculation formulas (Standard, ArmorScaling, CT, D4, DQ, Lo, Pokemon, etc.)
+
+**File**: `reference/damage-styles.md`
+
+### 3. Notetags Reference (Lines 400-2400)
+JavaScript notetags for database entries:
+- HP Gauge, Animation, Battleback, Battle Command, Targeting, Damage, Critical, Life Steal, Action Sequence, Animated Sideview, Enemy, Battle Layout, Troop tags
+
+**File**: `reference/notetags.md`
+
+### 4. Action Sequences (Lines 2400-7600)
+Plugin command system for skill/item execution:
+- Action Sets, Angle, Animations, Battle Log, Camera, Cutins, Dragonbones, Elements, Grid, Horror, Impact, Inject, Mechanics, Motion, Movement, Projectiles, Skew, Target, Weapon, Zoom
+
+**File**: `action-sequences/overview.md`
+
+### 5. Plugin Parameters (Lines 6064-7620)
+Global plugin settings organized by category:
+- Auto Battle, Damage, Mechanics, Battle Layout, Battle Log, Battleback Scaling, Party Command, Actor Command, Status Window, Multi-Target, Damage Combo, Actor Battler, Enemy Battler, HP Gauge, Action Sequence
+
+**File**: `plugin-parameters/`
+
+## Key Concepts
+
+### Action Sequences
+Event-based system controlling execution flow within skills/items. Uses plugin commands with targeting, conditions, and timing control.
+
+### Damage Styles
+Alternative damage calculation formulas beyond MZ default. Each style has unique formula behavior, stat scaling, and damage scaling properties.
+
+### Animated Sideview Enemies
+Enemies can use actor-sideview sprites with weapons, motions, and full action sequence support via notetags.
+
+### Base Troops
+Event templates that apply to all troops. Modify via Plugin Parameters → Mechanics Settings → Base Troop ID's.
+
+### JavaScript Notetags
+Code snippets embedded in database entries using `<Custom:>` pattern. Evaluated during battle for dynamic effects.
+
+## Common Tasks
+
+**Add custom damage formula**: See Damage Styles reference
+**Create action sequence**: See Action Sequences overview
+**Make animated enemy**: See Animated Sideview Battler notetags
+**Change battle layout**: See Battle Layout Settings parameters
+**Custom targeting**: See Targeting-Related notetags
+**HP gauges on enemies**: See HP Gauge Settings and notetags
+**Modify critical hits**: See Critical-Related notetags and Damage Settings
+
+## Navigation Priority
+1. `index.md` - Full documentation map
+2. `reference/notetags.md` - All notetag categories
+3. `action-sequences/overview.md` - Action sequence system
+4. `plugin-parameters/` - Global settings reference
+5. `getting-started/introduction.md` - First-time setup
+
+## Related Plugins
+- VisuMZ_0_CoreEngine (Required)
+- VisuMZ_2_EnhancedTpSystem (TP integration)
+- Elements & Status Menu Core (Trait display)
+- Action Sequence Packs (Extended commands)

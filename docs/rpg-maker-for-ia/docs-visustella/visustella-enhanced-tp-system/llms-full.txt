@@ -1,0 +1,155 @@
+# VisuStella Enhanced TP System - Índice Expandido para IA
+
+## Sumário Executivo
+
+Plugin Tier 2 da VisuStella que transforma o limitado sistema TP do RPG Maker MZ em um sistema modular com "TP Modes" - conjuntos de regras que definem como cada personagem/inimigo gera, preserva e usa TP.
+
+## Estrutura da Documentação
+
+### 1. Conceitos (`/conceitos/`)
+
+**visao-geral.md**
+- Limitações do sistema TP nativo do RPG Maker MZ
+- Propósito: controle total de ganho de TP
+- Features principais: 30 modos predefinidos, troca dinâmica, forçar modos, gauge flash
+- Casos de uso: personagens com mecânicas de recurso diferentes
+
+**mudancas-core.md**
+- MaxTP Overwrite: novos modos alteram MaxTP dinamicamente
+- Preserve TP: determinado pelo TP Mode, não por trait
+- Initial TP: controle total de TP inicial, independente de Preserve TP
+- On Damage TP Gain: removido ganho padrão, controlado por TP Mode
+- Sprite_Gauge: layers separadas para gauge flash
+
+**tp-modes.md**
+- O que é: conjunto de regras que define comportamento de TP
+- Componentes: MaxTP, TCR Multiplier, Preserve, Gauge config, Fórmulas
+- 30 modos predefinidos como referência
+- Jogadores podem trocar modo em Scene_Skill (se habilitado)
+
+### 2. Notetags (`/notetags/`)
+
+**gerais.md** - Aplicam a Actors, Enemies, States
+- `<TP Mode: name>` - Define modo inicial
+- `<Starting TP Modes>` - Lista de modos disponíveis (Actor only)
+- `<Change Target TP Mode: name>` - Skill/Item muda modo do alvo
+- `<Change User TP Mode: name>` - Skill/Item muda modo do usuário
+- `<Force TP Mode: name>` - Trait impõe modo (Actor/Class/Weapon/Armor/Enemy/State)
+
+**atores.md** - Apenas para personagens
+- `<Learn TP Mode: name>` - Aprender modo ao aprender skill
+- `<Learn TP Modes>` - Lista de modos aprendidos
+- `<Unlock TP Mode: name>` - Desbloquear modo via skill/item
+- `<Unlock TP Modes>` - Lista de modos desbloqueados
+
+**referencia-rapida.md** - Tabela com todos notetags, escopo e descrição resumida
+
+### 3. Plugin Commands (`/comandos/`)
+
+**atores.md**
+- Actor: Change TP Mode - Alterar modo de personagens específicos
+- Actor: Unlock TP Mode - Desbloquear modos para uso
+- Actor: Unlock All TP Modes - Desbloquear todos os modos
+
+**inimigos.md**
+- Enemy: Change TP Mode - Alterar modo de inimigos
+
+**sistema.md**
+- System: Show/Hide TP Mode - Controlar visibilidade em Scene_Skill
+
+### 4. Parâmetros (`/parametros/`)
+
+**configuracao-geral.md**
+- Defaults: Default TP Mode, Global TP Modes (disponível para todos)
+- Scene_Skill: Show TP Mode?, Command name, Icon, Background Type
+
+**modos-tp.md** - Estrutura de um TP Mode
+- General: Name, Icon, Help, MaxTP Formula, TCR Multiplier, Preserve TP?
+- Gauge: Flash Gauge?, Required Rate, Flash Speed, Color Lightness
+- Custom Label: Substituir "TP" em gauges
+- Custom Colors: #rrggbb ou número do Window Skin
+
+**formulas-tp.md** - Todas as categorias de fórmulas (todas usam JavaScript)
+
+*Generic*
+- Initial TP: TP ao iniciar batalha
+- Critical Hit: Ao causar crítico
+- Evasion: Ao esquivar
+- Use Item: Ao usar item
+- Use Skill: Ao usar skill (não Attack/Guard)
+
+*During Regen*
+- TP Regen: Por turno durante regeneração
+- Critical HP: Com HP crítico (25%) durante regen
+- Full HP: Com HP cheio durante regen
+- Critical MP: Com MP crítico (25%) durante regen
+- Full MP: Com MP cheio durante regen
+- Only Member: Único sobrevivente durante regen
+
+*HP Damage*
+- Take HP Damage: Ao receber dano (variável `value`)
+- Deal HP Damage: Ao causar dano (variável `value`)
+- Ally HP Damage: Quando aliado recebe dano (variável `value`)
+
+*HP Heal*
+- Take HP Heal: Ao receber cura (variável `value`)
+- Deal HP Heal: Ao causar cura (variável `value`)
+- Ally HP Heal: Quando aliado recebe cura (variável `value`)
+
+*MP Damage/MP Heal*
+- Mesma estrutura que HP: Take/Deal/Ally
+
+*Buffs*
+- Deal Ally Buff: Ao buffar aliado via Item/Skill Effect
+- Deal Enemy Buff: Ao buffar inimigo via Item/Skill Effect
+- Gain Ally Buff: Ao receber buff de aliado
+- Gain Enemy Buff: Ao receber buff de inimigo
+
+*Debuffs*
+- Mesma estrutura que Buffs
+
+*States*
+- Deal Ally State: Ao aplicar state em aliado
+- Deal Enemy State: Ao aplicar state em inimigo
+- Gain Ally State: Ao receber state de aliado
+- Gain Enemy State: Ao receber state de inimigo
+
+*Death*
+- Ally Death: Quando aliado morre (qualquer killer)
+- Enemy Death: Quando inimigo morre (qualquer killer)
+
+*Battle*
+- Win Battle: Ao vencer batalha
+- Flee Battle: Ao fugir
+- Lose Battle: Ao perder
+
+### 5. Referência (`/`)
+
+**glossario.md**
+- TP Mode, TCR, Preserve TP, Gauge Flash, Initial TP
+
+**faq.md**
+- Perguntas comuns sobre setup e troubleshooting
+
+## Dependências e Integrações
+
+**Tier 2** - Coloque após plugins Tier 0 e 1
+- Obrigatório: VisuStella MZ Core Engine
+- Opcional: VisuStella MZ Skills & States Core (para gauge flash)
+
+## Localização de Informação Específica
+
+Para encontrar...
+- **Como criar um TP Mode**: `parametros/modos-tp.md`
+- **Todas as fórmulas de ganho**: `parametros/formulas-tp.md`
+- **Notetag para trocar modo**: `notetags/gerais.md` → `<Change Target TP Mode>`
+- **Forçar modo via trait**: `notetags/gerais.md` → `<Force TP Mode>`
+- **Aprender modo via skill**: `notetags/atores.md` → `<Learn TP Mode>`
+- **Comando de evento**: `comandos/atores.md` → Actor: Change TP Mode
+- **O que foi mudado do core**: `conceitos/mudancas-core.md`
+
+## Relações Entre Áreas
+
+- TP Modes (conceito) → definidos em Parâmetros → aplicados via Notetags → controlados via Commands
+- Preserve TP (mudança core) → configurado por TP Mode → sobrescreve trait nativo
+- Gauge Flash (feature visual) → configurado em TP Mode → requer Skills & States Core
