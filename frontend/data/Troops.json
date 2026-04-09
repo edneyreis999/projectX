@@ -1442,8 +1442,8 @@
   },
   {
     "id": 54,
-    "name": "",
-    "members": [],
+    "name": "teste",
+    "members": [{ "enemyId": 9, "x": 271, "y": 512, "hidden": false }],
     "pages": [
       {
         "conditions": {
