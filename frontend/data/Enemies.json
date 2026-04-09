@@ -88,7 +88,7 @@
       { "code": 22, "dataId": 1, "value": 0.05 }
     ],
     "dropItems": [{ "dataId": 0, "kind": 0, "denominator": 1 }],
-    "note": ""
+    "note": "<ATB Field Gauge Face: Bosses, 4>"
   },
   {
     "id": 7,
@@ -108,7 +108,7 @@
       { "code": 22, "dataId": 1, "value": 0.05 }
     ],
     "dropItems": [{ "dataId": 0, "kind": 0, "denominator": 1 }],
-    "note": ""
+    "note": "<ATB Field Gauge Face: Bosses, 3>"
   },
   {
     "id": 8,
@@ -133,16 +133,24 @@
   },
   {
     "id": 9,
-    "name": "",
-    "battlerName": "",
+    "actions": [{ "conditionParam1": 0, "conditionParam2": 0, "conditionType": 0, "rating": 5, "skillId": 1 }],
     "battlerHue": 0,
+    "battlerName": "",
+    "dropItems": [
+      { "dataId": 1, "denominator": 1, "kind": 0 },
+      { "dataId": 1, "denominator": 1, "kind": 0 },
+      { "dataId": 1, "denominator": 1, "kind": 0 }
+    ],
     "exp": 0,
+    "traits": [
+      { "code": 22, "dataId": 0, "value": 0.95 },
+      { "code": 22, "dataId": 1, "value": 0.05 },
+      { "code": 31, "dataId": 1, "value": 0 }
+    ],
     "gold": 0,
-    "params": [1, 0, 0, 0, 0, 0, 0, 0],
-    "actions": [{ "skillId": 1, "rating": 5, "conditionType": 0, "conditionParam1": 0, "conditionParam2": 0 }],
-    "traits": [],
-    "dropItems": [{ "dataId": 0, "kind": 0, "denominator": 1 }],
-    "note": ""
+    "name": "",
+    "note": "",
+    "params": [100, 0, 10, 10, 10, 10, 10, 10]
   },
   {
     "id": 10,
@@ -256,7 +264,7 @@
       { "code": 22, "dataId": 1, "value": 0.1 }
     ],
     "dropItems": [{ "dataId": 0, "kind": 0, "denominator": 1 }],
-    "note": "<BTB Initial BP: +1>\n<BTB Maximum BP: +3>\n<BTB Minimum BP: -3>\n<BTB BP Regen: +1>\n<BTB Maximum Actions: +3>\n<BTB Turn Order Icon: 98>\n<BTB Turn Order Face: Nature, 0>"
+    "note": "<BTB Initial BP: +1>\n<BTB Maximum BP: +3>\n<BTB Minimum BP: -3>\n<BTB BP Regen: +1>\n<BTB Maximum Actions: +3>\n<BTB Turn Order Icon: 98>\n<BTB Turn Order Face: Nature, 0>\n<ATB Field Gauge Face: Bosses, 2>"
   },
   {
     "id": 18,
@@ -412,7 +420,7 @@
       { "code": 14, "dataId": 61, "value": 1 }
     ],
     "dropItems": [{ "dataId": 0, "kind": 0, "denominator": 1 }],
-    "note": "<JS Force Received Element 10 Rate: -1.0>"
+    "note": "<JS Force Received Element 10 Rate: -1.0>\n<ATB Field Gauge Face: Bosses, 1>"
   },
   {
     "id": 29,
@@ -433,7 +441,7 @@
       { "code": 22, "dataId": 1, "value": 0.05 }
     ],
     "dropItems": [{ "dataId": 0, "kind": 0, "denominator": 1 }],
-    "note": "<JS Post-Start Battle>\n  this._isMinionEsporo = true;\n  this._minionId = 'ESPORO_' + Math.floor(Math.random() * 10000);\n</JS Post-Start Battle>"
+    "note": "<JS Post-Start Battle>\n  this._isMinionEsporo = true;\n  this._minionId = 'ESPORO_' + Math.floor(Math.random() * 10000);\n</JS Post-Start Battle>\n<ATB Field Gauge Face: Bosses, 0>"
   },
   {
     "id": 30,
