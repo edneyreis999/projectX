@@ -1,0 +1,37 @@
+# VisuStella Battle A.I.
+
+## Propósito
+Sistema de inteligência artificial avançada para combate em RPG Maker MZ, substituindo a IA primitiva padrão por um sistema mais inteligente com múltiplos estilos de comportamento.
+
+## Áreas Principais
+
+### Conceitos
+- A.I. Styles (Classic, Gambit, Casual, Random)
+- A.I. Levels (0-100)
+- Rating Variance
+- A.I. Conditions (ALL/ANY)
+- TGR Weight Influence
+
+### Implementação
+- Notetags para Classes, Enemies, Skills
+- Plugin Parameters para configuração global
+- Auto Battle A.I. para Actors
+
+### Características
+- 4 estilos diferentes de IA
+- Condições configuráveis para uso de skills
+- Sistema de seleção de alvos inteligente
+- Compatível com VisuMZ_1_BattleCore
+
+## Navegação Sugerida
+
+1. index.md - Visão geral completa
+2. conceitos/introducao.md - Entender o sistema
+3. conceitos/ai-styles.md - Conhecer os estilos
+4. notetags/ - Implementação prática
+5. referencia/ - Suporte e troubleshooting
+
+## Metadados
+- Versão: 1.29
+- Tier: 3
+- Requisito: VisuMZ_1_BattleCore

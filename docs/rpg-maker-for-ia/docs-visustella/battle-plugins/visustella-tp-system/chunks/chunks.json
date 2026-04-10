@@ -1,0 +1,160 @@
+{
+  "chunks": [
+    {
+      "id": "enhanced-tp-system-index",
+      "title": "Enhanced TP System - Índice Principal",
+      "path": "index.md",
+      "section": "root",
+      "breadcrumbs": ["Enhanced TP System"],
+      "summary": "Plugin VisuStella MZ Enhanced TP System v1.17 - Sistema expandido de TP com 30 modos predefinidos, fórmulas customizáveis e controle de gauge. Tier 2.",
+      "keywords": ["enhanced tp system", "visustella", "tp mode", "rpg maker mz", "plugin", "tier 2"],
+      "content": "Plugin: VisuStella MZ Enhanced TP System v1.17. Expande sistema de TP do RPG Maker MZ. Recursos: 30 TP Modes predefinidos, fórmulas customizáveis, gauge colors, unlock modes, Scene_Skill integration.",
+      "related_topics": ["visao-geral", "mudancas-core", "tp-modes", "tp-formulas"],
+      "source_ref": "TP-System.md lines 1-762"
+    },
+    {
+      "id": "visao-geral",
+      "title": "Visão Geral - Enhanced TP System",
+      "path": "conceitos/visao-geral.md",
+      "section": "conceitos",
+      "breadcrumbs": ["Enhanced TP System", "Conceitos", "Visão Geral"],
+      "summary": "O sistema de TP do RPG Maker MZ é limitado. Este plugin oferece controle total sobre ganho de TP, diferentes TP Modes, e seleção por jogadores. 30 modos predefinidos incluídos.",
+      "keywords": ["tp system", "limitações", "tp modes", "30 modos", "aprendizado", "desbloqueio", "gauge colors", "scene_skill"],
+      "content": "Problema: TP hardcoded no RPG Maker MZ. Solução: Controle total de ganho de TP, TP Modes customizáveis, seleção por players. Recursos: 30 modos predefinidos, unlock via skill/item, trait objects (states), gauge flashing, Scene_Skill integration.",
+      "related_topics": ["mudancas-core", "tp-modes", "tp-formulas", "notetags"],
+      "source_ref": "TP-System.md lines 1-25"
+    },
+    {
+      "id": "mudancas-core",
+      "title": "Mudanças no Core - Enhanced TP System",
+      "path": "conceitos/mudancas-core.md",
+      "section": "conceitos",
+      "breadcrumbs": ["Enhanced TP System", "Conceitos", "Mudanças no Core"],
+      "summary": "MaxTP Overwrite, Preserve TP alterado, Initial TP Gain reworkado, On Damage TP Gain sobrescrito, Sprite_Gauge modificado. Mudanças para dar controle ao dev.",
+      "keywords": ["maxtp", "preserve tp", "initial tp", "on damage", "sprite_gauge", "overwrite", "hardcoded"],
+      "content": "MaxTP: antes nada, agora customizável via TP Mode. Preserve TP: antes trait, agora propriedade do TP Mode. Initial TP: antes random, agora configurável. On Damage: sobrescrito para usar TP Mode. Sprite_Gauge: layers separados para flashing.",
+      "related_topics": ["visao-geral", "tp-modes", "tp-formulas"],
+      "source_ref": "TP-System.md lines 40-91"
+    },
+    {
+      "id": "notetags-gerais",
+      "title": "Notetags Gerais - Enhanced TP System",
+      "path": "notetags/gerais.md",
+      "section": "notetags",
+      "breadcrumbs": ["Enhanced TP System", "Notetags", "Gerais"],
+      "summary": "Notetags para Actor, Enemy, State, Skill, Item. TP Mode define modo inicial. Starting TP Modes lista disponíveis. Change Target/User TP Mode muda modo.",
+      "keywords": ["notetag", "tp mode", "starting tp modes", "change target", "change user", "actor", "enemy", "state", "skill", "item"],
+      "content": "<TP Mode: name> - Define modo inicial. <Starting TP Modes> - Lista de modes disponíveis (actor only). <Change Target TP Mode: name> - Muda modo do alvo via skill/item. <Change User TP Mode: name> - Muda modo do usuário via skill/item.",
+      "related_topics": ["notetags-atores", "comando-atores", "tp-modes"],
+      "source_ref": "TP-System.md lines 95-144"
+    },
+    {
+      "id": "notetags-atores",
+      "title": "Notetags para Atores - Enhanced TP System",
+      "path": "notetags/atores.md",
+      "section": "notetags",
+      "breadcrumbs": ["Enhanced TP System", "Notetags", "Atores"],
+      "summary": "Learn TP Mode aprende ao aprender skill. Unlock TP Mode desbloqueia via skill/item. Force TP Mode força modo específico via traits. Diferença Learn vs Unlock.",
+      "keywords": ["learn tp mode", "unlock tp mode", "force tp mode", "actor only", "skill", "item", "trait", "class", "weapon", "armor"],
+      "content": "<Learn TP Mode: name> - Aprende mode ao aprender skill. <Unlock TP Mode: name> - Desbloqueia via skill/item. <Force TP Mode: name> - Força mode via Actor/Class/Weapon/Armor/Enemy/State. Learn requer aprender skill; Unlock não requer. Force priority baseado em ordem de traits.",
+      "related_topics": ["notetags-gerais", "comando-atores", "tp-modes"],
+      "source_ref": "TP-System.md lines 147-216"
+    },
+    {
+      "id": "comando-atores",
+      "title": "Comandos de Plugin - Atores - Enhanced TP System",
+      "path": "comandos/atores.md",
+      "section": "comandos",
+      "breadcrumbs": ["Enhanced TP System", "Comandos", "Atores"],
+      "summary": "Actor: Change TP Mode altera mode. Actor: Unlock TP Mode desbloqueia modes específicos. Actor: Unlock All TP Modes desbloqueia todos. Equivalência com notetags.",
+      "keywords": ["plugin command", "actor", "change tp mode", "unlock tp mode", "unlock all", "dynamic"],
+      "content": "Change TP Mode: altera mode de actor(s). Unlock TP Mode: desbloqueia modes específicos. Unlock All TP Modes: desbloqueia todos (recompensa). Notetags são estáticas; Plugin Commands são dinâmicos.",
+      "related_topics": ["comando-inimigos", "comando-sistema", "notetags-atores"],
+      "source_ref": "TP-System.md lines 219-258"
+    },
+    {
+      "id": "comando-inimigos",
+      "title": "Comandos de Plugin - Inimigos - Enhanced TP System",
+      "path": "comandos/inimigos.md",
+      "section": "comandos",
+      "breadcrumbs": ["Enhanced TP System", "Comandos", "Inimigos"],
+      "summary": "Enemy: Change TP Mode altera mode de inimigo(s). Usa Enemy Index (não database ID). Index começa em 0. Múltiplos inimigos com vírgula ou intervalo.",
+      "keywords": ["plugin command", "enemy", "change tp mode", "enemy index", "battle index", "troop"],
+      "content": "Enemy: Change TP Mode - Altera mode de inimigo(s). Enemy Index ≠ Database ID. Index começa em 0. Sintaxe: 0, 1, 2 ou 0-2. Casos de uso: Boss fases, Enrage mechanics, Tactical shift.",
+      "related_topics": ["comando-atores", "tp-modes"],
+      "source_ref": "TP-System.md lines 261-274"
+    },
+    {
+      "id": "comando-sistema",
+      "title": "Comandos de Plugin - Sistema - Enhanced TP System",
+      "path": "comandos/sistema.md",
+      "section": "comandos",
+      "breadcrumbs": ["Enhanced TP System", "Comandos", "Sistema"],
+      "summary": "System: Show/Hide TP Mode mostra/esconde seleção no Scene_Skill. Sobrescreve parâmetro default. Use para tutorials, dungeons especiais, new game+.",
+      "keywords": ["plugin command", "system", "show", "hide", "scene_skill", "tutorial", "lock"],
+      "content": "System: Show/Hide TP Mode - Mostra/esconde seleção no Scene_Skill. Sobrescreve Plugin Parameter. Casos de uso: Tutorial completo, Magic Field dungeon, New Game+. Quando HIDE: option desaparece mas Plugin Commands ainda funcionam.",
+      "related_topics": ["configuracao-geral", "comando-atores"],
+      "source_ref": "TP-System.md lines 277-286"
+    },
+    {
+      "id": "configuracao-geral",
+      "title": "Parâmetros - Configuração Geral - Enhanced TP System",
+      "path": "parametros/configuracao-geral.md",
+      "section": "parametros",
+      "breadcrumbs": ["Enhanced TP System", "Parâmetros", "Configuração Geral"],
+      "summary": "Default TP Mode define mode padrão. Global TP Modes lista disponíveis para actors. Scene_Skill configura visual: Show TP Mode?, TP Mode Command, Icon, Background Type.",
+      "keywords": ["default tp mode", "global tp modes", "scene_skill", "background type", "icon", "command"],
+      "content": "Default TP Mode - mode padrão para actors/enemies sem notetag. Global TP Modes - modes disponíveis no Scene_Skill. Scene_Skill settings - Show TP Mode?, Command name (%1), Icon, Background Type (0: Window, 1: Dim, 2: Transparent).",
+      "related_topics": ["tp-modes", "tp-formulas", "comando-sistema"],
+      "source_ref": "TP-System.md lines 289-326"
+    },
+    {
+      "id": "tp-modes",
+      "title": "Parâmetros - Modos de TP - Enhanced TP System",
+      "path": "parametros/modos.md",
+      "section": "parametros",
+      "breadcrumbs": ["Enhanced TP System", "Parâmetros", "Modos de TP"],
+      "summary": "Estrutura de TP Mode: General (Name, Icon, Help, MaxTP Formula, TCR Multiplier, Preserve TP?), Gauge (Flash, Required Rate, Speed, Lightness, Custom Label/Color).",
+      "keywords": ["tp mode", "general", "gauge", "maxtp formula", "tcr multiplier", "preserve tp", "flash", "custom label", "custom color"],
+      "content": "TP Mode = conjunto de regras de ganho de TP. General: Name (referência), Icon, Help (%1 placeholder), MaxTP Formula, TCR Multiplier (multiplicativo), Preserve TP? (sobrescreve trait). Gauge: Flash Gauge?, Required Rate, Flash Speed, Color Lightness, Custom Label (só gauge), Custom Color 1/2 (só gauge).",
+      "related_topics": ["tp-formulas", "configuracao-geral", "mudancas-core"],
+      "source_ref": "TP-System.md lines 329-397"
+    },
+    {
+      "id": "tp-formulas",
+      "title": "Parâmetros - Fórmulas de TP - Enhanced TP System",
+      "path": "parametros/formulas.md",
+      "section": "parametros",
+      "breadcrumbs": ["Enhanced TP System", "Parâmetros", "Fórmulas de TP"],
+      "summary": "Fórmulas de ganho: Generic (Initial, Critical Hit, Evasion, Use Item/Skill), During Regen (TP Regen, Critical/Full HP/MP, Only Member), HP Damage/Heal, MP Damage/Heal, Buffs, Debuffs, States, Death, Battle.",
+      "keywords": ["formulas", "tp gain", "generic", "regen", "hp damage", "hp heal", "mp damage", "mp heal", "buffs", "debuffs", "states", "death", "battle", "value variable"],
+      "content": "Variáveis: user, value. Generic: Initial TP (início batalha), Critical Hit, Evasion, Use Item/Skill. During Regen: TP Regen (per turn), Critical/Full HP/MP, Only Member. HP Damage/Heal: Take/Deal/Ally. MP Damage/Heal: Take/Deal/Ally. Buffs/Debuffs: Deal/Gain Ally/Enemy. States: Deal/Gain Ally/Enemy. Death: Ally/Enemy. Battle: Win/Flee/Lose. v1.15+: validação de fórmulas (retorna 0 se erro).",
+      "related_topics": ["tp-modes", "mudancas-core", "faq-formulas"],
+      "source_ref": "TP-System.md lines 400-594"
+    },
+    {
+      "id": "glossario",
+      "title": "Glossário - Enhanced TP System",
+      "path": "referencia/glossario.md",
+      "section": "referencia",
+      "breadcrumbs": ["Enhanced TP System", "Referência", "Glossário"],
+      "summary": "Termos: TP, TP Mode, Preserve TP, MaxTP, TCR Multiplier, Gauge Flash, Initial TP, Trait Object, Global TP Modes, TCR, Scene_Skill, Battler, Regen, Tier 2.",
+      "keywords": ["glossário", "tp", "tp mode", "preserve tp", "maxtp", "tcr", "gauge flash", "trait object", "battler", "regen", "tier"],
+      "content": "TP - Tactic Points. TP Mode - conjunto de regras de ganho de TP. Preserve TP - persistência entre batalhas (determinado por TP Mode). MaxTP - valor máximo (customizável). TCR Multiplier - multiplica ganho (multiplicativo com trait). Gauge Flash - pisca ao atingir % (requis SkillsStatesCore). Initial TP - TP no início (customizável). Trait Object - States, Weapons, etc. Global TP Modes - modes disponíveis. TCR - TP Charge Rate trait. Scene_Skill - scene de skills. Battler - Actor ou Enemy. Regen - fase de recuperação. Tier 2 - ordem de plugin.",
+      "related_topics": ["faq", "visao-geral", "tp-modes"],
+      "source_ref": "TP-System.md concepts"
+    },
+    {
+      "id": "faq",
+      "title": "FAQ - Enhanced TP System",
+      "path": "referencia/faq.md",
+      "section": "referencia",
+      "breadcrumbs": ["Enhanced TP System", "Referência", "FAQ"],
+      "summary": "Como criar TP Mode, fazer TP persistir, mudar MaxTP, mudar mode em batalha, desbloquear modes, ajustar ganho de TP, gauge piscar, esconder seleção, enemies, troubleshooting.",
+      "keywords": ["faq", "como criar", "persistir", "maxtp", "mudar mode", "desbloquear", "ganho de tp", "gauge", "troubleshooting", "compatibilidade"],
+      "content": "Criar TP Mode: Plugin Parameters > TP Modes > Add. Persistir TP: Preserve TP? = true. MaxTP: MaxTP Formula (100, user.level * 10). Mudar mode: Plugin Command ou notetag. Desbloquear: Plugin Command ou notetag (Learn vs Unlock). Ganho mais rápido: TCR Multiplier (1.0 = normal, 2.0 = dobro). Fórmulas NaN: v1.15+ retorna 0 e mostra erro. Gauge piscar: Flash Gauge? = true, Required Rate, Flash Speed, Color Lightness. Custom Colors: Custom Color 1/2 (#rrggbb ou número). Esconder: Show TP Mode? = false ou Plugin Command. Enemies: usam TP Mode fixo (mudar via Plugin Command). Troubleshooting: checklist de problemas. Compatibilidade: ordem Tier 0, 1, 2, 3, 4, 5.",
+      "related_topics": ["glossario", "visao-geral", "tp-modes", "tp-formulas"],
+      "source_ref": "TP-System.md concepts and troubleshooting"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+# Battle Core VisuStella MZ - Guia Rápido para LLMs
+
+## Identidade
+- **Nome**: Battle Core (VisuStella MZ)
+- **Versão**: 1.85
+- **Tier**: 1
+- **Tipo**: Battle System Plugin
+- **Dependência**: VisuMZ_0_CoreEngine (Tier 0)
+
+## Propósito
+Plugin central de batalha para RPG Maker MZ. Revampa o engine de batalha com Action Sequences, Battle Layouts customizáveis e controle total sobre mecânicas de combate.
+
+## Áreas Principais
+
+### 1. Conceitos (docs/rpg-maker-for-ia/battle-core-visustella-mz/conceitos/)
+- `visao-geral.md` - Introdução, features principais
+- `major-changes.md` - Mudanças no código base do RPG Maker MZ
+- `base-troops.md` - Sistema de Base Troops para eventos compartilhados
+- `damage-styles.md` - Damage Styles explicação
+
+### 2. Notetags (docs/rpg-maker-for-ia/battle-core-visustella-mz/notetags/)
+14 categorias de notetags JavaScript:
+- `hp-gauge.md` - HP Gauges
+- `animacao.md` - Animações
+- `battleback.md` - Battlebacks
+- `battle-command.md` - Comandos de batalha
+- `targeting.md` - Sistema de alvos
+- `damage.md` - Dano e fórmulas
+- `critical.md` - Critical Hits
+- `life-steal.md` - Life Steal
+- `action-sequence.md` - Action Sequences customizadas
+- `animated-sideview-battler.md` - Sideview Battlers para inimigos
+- `enemy.md` - Notetags específicas para inimigos
+- `mechanics.md` - Mecânicas de batalha
+- `battle-layout.md` - Layout de batalha
+- `troop-tags.md` - Troop Size e Comment Tags
+
+### 3. Parâmetros (docs/rpg-maker-for-ia/battle-core-visustella-mz/parametros/)
+15 categorias de Plugin Parameters:
+- `auto-battle.md` - Auto Battle Settings
+- `damage.md` - Damage Settings (inclui Damage Styles)
+- `mechanics.md` - Mechanics Settings (Base Troops, Action Speed)
+- `battle-layout.md` - Battle Layout Settings
+- `battle-log.md` - Battle Log Settings
+- `battleback-scaling.md` - Battleback Scaling Settings
+- `party-command-window.md` - Party Command Window
+- `actor-command-window.md` - Actor Command Window
+- `in-battle-status-window.md` - Status Window Settings
+- `multi-target-windows.md` - Multi-Target Windows Settings
+- `damage-combo-window.md` - Damage Combo Window Settings
+- `actor-battler-settings.md` - Actor Battler Settings
+- `enemy-battler-settings.md` - Enemy Battler Settings
+- `hp-gauge.md` - HP Gauge Settings
+- `action-sequence.md` - Action Sequence Settings
+
+### 4. Action Sequences (docs/rpg-maker-for-ia/battle-core-visustella-mz/action-sequences/)
+25+ comandos de Action Sequence:
+- `action-sets.md` - Action Sets (grupos de comandos)
+- `animacoes.md` - Animações
+- `battle-log.md` - Battle Log
+- `camera.md` - Câmera
+- `cutins.md` - Cutins
+- `elements.md` - Elementos
+- `grid.md` - Grid
+- `horror-effects.md` - Horror Effects
+- `impact.md` - Impact
+- `inject.md` - Inject
+- `mechanics.md` - Mechanics
+- `motion.md` - Motion
+- `movement.md` - Movement
+- `opacity.md` - Opacity
+- `overlays.md` - Overlays
+- `pictures.md` - Pictures
+- `portraits.md` - Portraits
+- `shake.md` - Shake
+- `sound.md` - Sound
+- `state.md` - State
+- `targets.md` - Targets
+- `time.md` - Time
+- `toggle.md` - Toggle
+- `transform.md` - Transform
+- `user-interface.md` - User Interface
+- `visible.md` - Visibility
+- `wait.md` - Wait/Frames
+
+### 5. Referência (docs/rpg-maker-for-ia/battle-core-visustella-mz/referencia/)
+- `compatibilidade.md` - VisuStella MZ Compatibility
+- `termos-uso.md` - Terms of Use
+- `creditos.md` - Credits
+- `changelog.md` - Histórico de atualizações
+- `troubleshooting.md` - Troubleshooting
+- `glossario.md` - Glossário
+
+## Ordem Sugerida de Navegação
+
+Para configurar o Battle Core pela primeira vez:
+1. conceitos/visao-geral.md - Entender o propósito
+2. conceitos/major-changes.md - Entender mudanças no core
+3. parametros/mechanics.md - Configurar básico
+4. parametros/battle-layout.md - Configurar layout
+5. notetags/ - Aplicar notetags conforme necessário
+6. action-sequences/ - Criar action sequences
+
+Para resolver problemas:
+1. referencia/troubleshooting.md - Problemas comuns
+2. referencia/compatibilidade.md - Verificar compatibilidade
+3. parametros/ - Revisar configurações
+
+Para criar Action Sequences:
+1. action-sequences/action-sets.md - Entender Action Sets
+2. action-sequences/mechanics.md - Comandos básicos
+3. action-sequences/ - Comandos específicos por categoria
+
+## Palavras-Chave para Busca
+
+- Action Sequences, Action Sets
+- Battle Layout, Battle Log
+- Damage Styles, Damage Formula
+- Notetags, JavaScript Notetags
+- HP Gauge, Visual HP
+- Sideview Battler, Animated Enemies
+- Base Troops, Troop Events
+- Auto Battle, Battle AI
+- Critical Hit, Life Steal
+- Targeting, Scope
+- Battleback, Battle Camera
+
+## Informação Importante
+
+- **Tamanho do documento fonte**: 24.716 linhas (751KB)
+- **Total de arquivos gerados**: ~70 arquivos
+- **Estrutura otimizada para**: navegação hierárquica, recuperação semântica, leitura incremental
+
+## Notas de Implementação
+
+- Este plugin sobrescreve partes do código base do RPG Maker MZ
+- Action Sequences substituem o sistema padrão de sequências de ação
+- Random variance em Action Speed foi desabilitada por padrão
+- Suporte completo para Animated Sideview Battlers para inimigos
+- Damage Styles permitem simplificar fórmulas de dano
+- Plugin Parameters extensivos para customização completa

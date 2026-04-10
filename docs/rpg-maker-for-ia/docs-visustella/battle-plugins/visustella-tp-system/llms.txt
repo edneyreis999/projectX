@@ -1,0 +1,48 @@
+# Enhanced TP System - VisuStella MZ
+
+## Nome do Projeto
+VisuStella MZ Enhanced TP System
+
+## Propósito
+Plugin para RPG Maker MZ que expande o sistema de TP (Tactic Points), permitindo controle total sobre ganho de TP, modos customizáveis, e gestão avançada de gauge.
+
+## Principais Áreas
+
+### Conceitos
+- visao-geral.md - Introdução e recursos do sistema
+- mudancas-core.md - Alterações no funcionamento base do RPG Maker
+
+### Notetags
+- gerais.md - Notetags para todos os tipos de alvo
+- atores.md - Notetags exclusivas para actors
+- referencia-rapida.md - Lista compacta para consulta
+
+### Comandos de Plugin
+- atores.md - Comandos para gerenciar TP de actors
+- inimigos.md - Comandos para gerenciar TP de enemies
+- sistema.md - Comandos de sistema
+
+### Parâmetros
+- configuracao-geral.md - Configurações base
+- modos.md - Estrutura dos modos de TP
+- formulas.md - Todas as fórmulas de ganho de TP
+
+### Referência
+- glossario.md - Termos técnicos
+- faq.md - Perguntas frequentes
+
+## Ordem Sugerida de Navegação
+
+1. conceitos/visao-geral.md
+2. conceitos/mudancas-core.md
+3. parametros/modos.md
+4. parametros/formulas.md
+5. notetags/ (quando necessário)
+6. comandos/ (quando necessário)
+
+## Metadados
+
+- **Versão:** 1.17
+- **Tier:** 2
+- **Requisitos:** RPG Maker MZ
+- **Autor:** Team VisuStella

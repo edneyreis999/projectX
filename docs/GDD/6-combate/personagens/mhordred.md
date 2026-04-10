@@ -24,6 +24,17 @@ Anão veterano (45-55 anos), musculoso e explosivo. "Mau policial" da Guarda de 
 | **AGI** | Médio | Velocidade padrão |
 | **MAT** | Nulo | Sem uso de magia |
 
+## Atributos Base de Combate
+
+| Atributo | Valor | Padrão | Nota |
+|----------|-------|--------|------|
+| **Taxa de Acerto (HIT)** | 90% | 100% | -10% (risco de errar) |
+| **Taxa de Evasão (EVA)** | 5% | 5% | Padrão |
+| **Taxa de Crítico (CRIT)** | 5% | 5% | Padrão |
+| **Ataque (ATK)** | +10% | 0% | Alto dano, mas impreciso |
+
+**Sinergia:** HIT baixo (90%) + ATK alto (+10%) reforça mecânica de risco/recompensa — depende de Thorin para precisão, mas causa dano massivo quando acerta.
+
 ---
 
 ## Habilidades

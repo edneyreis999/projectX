@@ -1,0 +1,68 @@
+# DragonBones Union - LLMs Guide
+
+## Nome do Projeto
+DragonBones Union - Sistema de Animação Esquelética para RPG Maker MZ
+
+## Propósito
+Esta documentação cataloga o sistema DragonBones Union, um plugin que adiciona suporte para animações esqueletais no RPG Maker MZ, permitindo uso de armatures Dragonbones como battlers, pictures e map sprites.
+
+## Versão
+DragonBones: 5.7.002b
+Engine: RPG Maker MZ
+Plugin Tier: 2
+
+## Áreas Principais
+
+### 1. Conceitos (conceitos/)
+- visao-geral.md - O que é DragonBones, recursos, requisitos
+- armatures.md - Naming correto de armatures
+- comportamentos.md - Comportamentos das armatures
+- problemas-comuns.md - FPS desynchs, particles, unwanted frames
+- map-sprites.md - Limitações e comportamentos no mapa (vértices, clipping, animações direcionais)
+
+### 2. Configuração (configuracao/)
+- general-settings.md - Assets path, loaded animation, looping animations, file extensions
+- battler-settings.md - Default settings (offset, scale, size), idle bypass, motion mappings
+- map-sprite-settings.md - Default settings, flip settings, motion settings, walk timer
+- experimental-settings.md - Enemy stances (requer VisuMZ_1_BattleCore)
+
+### 3. Notetags (notetags/)
+- introduction.md - Introdução aos notetags, comment tags
+- battlers.md - Notetags para Actors/Enemies (Battler, Scale, Offset, Size, Time Scale, Motions, Settings container)
+- map-sprites.md - Notetags para Actors/Events (Sprite, Scale, Offset, Time Scale, Walk/Dash Rate, Size, Flip, Motions, Settings container)
+
+### 4. Plugin Commands (plugin-commands/)
+- introduction.md - Introdução aos plugin commands
+- comandos.md - Battler, Map Sprite (Actor/Event/Follower/Player), Picture commands
+
+### 5. Referência (referencia/)
+- compatibilidade.md - VisuMZ_3_StateTooltips hitbox behavior
+- terms-of-use.md - Termos de uso oficiais VisuStella
+
+## Ordem Sugerida de Navegação
+
+Para entender DragonBones Union:
+1. conceitos/visao-geral.md - Comece aqui
+2. conceitos/armatures.md - Entenda naming
+3. conceitos/comportamentos.md - Entenda comportamentos
+4. configuracao/general-settings.md - Configure o plugin
+5. configuracao/battler-settings.md - Para batalha
+6. configuracao/map-sprite-settings.md - Para mapa
+7. notetags/battlers.md - Configure battlers
+8. notetags/map-sprites.md - Configure map sprites
+9. plugin-commands/comandos.md - Controle dinâmico
+
+## Arquivos Mais Importantes
+
+- conceitos/visao-geral.md - Visão geral completa
+- conceitos/problemas-comuns.md - Troubleshooting
+- conceitos/map-sprites.md - Limitações importantes (99 vértices, clipping, motion priority)
+- notetags/battlers.md - Referência completa de notetags de battler
+- notetags/map-sprites.md - Referência completa de notetags de map sprite
+- plugin-commands/comandos.md - Referência completa de comandos
+
+## Links
+
+- index.md - Índice principal com navegação completa
+- llms-full.txt - Documento de navegação completo
+- chunks.json - Chunks semânticos para recuperação
