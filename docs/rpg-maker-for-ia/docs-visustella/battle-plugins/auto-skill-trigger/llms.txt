@@ -1,0 +1,33 @@
+Auto Skill Trigger - VisuStella MZ Plugin
+==========================================
+
+Propósito: Sistema de triggers automáticos para skills baseados em condições específicas durante combate
+
+Principais áreas:
+- Battle triggers (início, vitória, morte)
+- User actions (attack, guard, skill, item)
+- Target reactions (ally, enemy, friends, opponents)
+- Element and skill type reactions
+
+Arquivos importantes:
+- conceitos/introducao.md - Visão geral e features
+- conceitos/funcionamento.md - Limites e prevenção de runaway
+- notetags/triggers.md - 60 tipos de triggers disponíveis
+- notetags/condicoes.md - Notetags especiais e restrições
+- notetags/exemplos.md - Exemplos práticos de uso
+- referencia/compatibilidade.md - Incompatibilidades FTB/ETB/PTB
+- referencia/parametros.md - Configurações do plugin
+- referencia/requisitos.md - Pré-requisitos e tier
+
+Ordem sugerida de leitura:
+1. introducao.md → Entender o propósito e features
+2. funcionamento.md → Compreender limites e riscos
+3. triggers.md → Referência completa dos 60 tipos
+4. exemplos.md → Ver aplicações práticas
+
+Pontos críticos:
+- Incompatível com FTB, ETB e PTB battle systems
+- Requer VisuMZ_1_BattleCore
+- Tier 3 plugin
+- Risco de runaway se não limitado
+- 60 tipos diferentes de triggers
