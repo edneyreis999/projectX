@@ -14,13 +14,13 @@
     "picturesUpperLimit": 100
   },
   "airship": { "bgm": { "name": "Ship3", "pan": 0, "pitch": 100, "volume": 90 }, "characterIndex": 3, "characterName": "Vehicle", "startMapId": 0, "startX": 0, "startY": 0 },
-  "armorTypes": ["", "Armadura Comum", "Armadura Mágica", "Armadura Leve", "Armadura Pesada", "Escudo Pequeno", "Escudo Grande"],
+  "armorTypes": ["", "Vestimenta", "Armadura Mágica", "Armadura Leve", "Armadura Pesada", "Escudo Pequeno", "Escudo Grande", "Vestimenta"],
   "attackMotions": [
     { "type": 0, "weaponImageId": 0 },
     { "type": 1, "weaponImageId": 1 },
     { "type": 1, "weaponImageId": 2 },
     { "type": 1, "weaponImageId": 3 },
-    { "type": 1, "weaponImageId": 4 },
+    { "type": 1, "weaponImageId": 0 },
     { "type": 1, "weaponImageId": 5 },
     { "type": 1, "weaponImageId": 6 },
     { "type": 2, "weaponImageId": 7 },
@@ -29,7 +29,7 @@
     { "type": 0, "weaponImageId": 10 },
     { "type": 0, "weaponImageId": 11 },
     { "type": 0, "weaponImageId": 12 },
-    { "type": 2, "weaponImageId": 0 }
+    { "type": 1, "weaponImageId": 0 }
   ],
   "battleBgm": { "name": "Battle1", "pan": 0, "pitch": 100, "volume": 90 },
   "battleback1Name": "Road1",
@@ -41,7 +41,7 @@
   "currencyUnit": "Ludos",
   "defeatMe": { "name": "Defeat1", "pan": 0, "pitch": 100, "volume": 90 },
   "editMapId": 34,
-  "elements": ["", "Físico", "Fogo", "Gelo", "Trovão", "Água", "Terra", "Vento", "Luz", "Trevas", "Veneno"],
+  "elements": ["", "Físico", "Fogo", "Gelo", "Trovão", "Água", "Terra", "Vento", "Luz", "Trevas"],
   "equipTypes": ["", "Arma", "Escudo", "Cabeça", "Corpo", "Acessório"],
   "gameTitle": "Daratrine - A Origem",
   "gameoverMe": { "name": "Gameover1", "pan": 0, "pitch": 100, "volume": 90 },
@@ -89,8 +89,8 @@
     { "name": "Item3", "pan": 0, "pitch": 100, "volume": 90 }
   ],
   "startMapId": 34,
-  "startX": 11,
-  "startY": 22,
+  "startX": 14,
+  "startY": 23,
   "switches": [
     "",
     "Jogada segura",
@@ -407,9 +407,9 @@
     "",
     ""
   ],
-  "versionId": 36935774,
+  "versionId": 17320218,
   "victoryMe": { "name": "Victory1", "pan": 0, "pitch": 100, "volume": 90 },
-  "weaponTypes": ["", "Adaga", "Espada", "Malho", "Machado", "Chicote", "Cajado", "Arco", "Funda", "Arma de Fogo", "Garra", "Luva", "Lança", ""],
+  "weaponTypes": ["", "Adaga", "Espada", "Malho", "Machado", "Chicote", "Cajado", "Arco", "Funda", "Arma de Fogo", "Garra", "Luva", "Lança", "Martelo"],
   "windowTone": [0, 0, 0, 0],
   "optSplashScreen": false,
   "optMessageSkip": true,

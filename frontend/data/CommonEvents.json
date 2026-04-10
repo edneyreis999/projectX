@@ -420,7 +420,44 @@
     "switchId": 1,
     "trigger": 0
   },
-  { "id": 22, "list": [{ "code": 0, "indent": 0, "parameters": [] }], "name": "", "switchId": 1, "trigger": 0 },
+  {
+    "id": 22,
+    "list": [
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Projectile_Icon",
+          "PROJECTILE: Icon",
+          {
+            "Coordinates": "",
+            "Start:struct": "{\"Type:str\":\"point\",\"Targets:arraystr\":\"[\\\"user\\\"]\",\"TargetCenter:eval\":\"true\",\"TargetLocation:str\":\"back head\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"+0\",\"OffsetY:eval\":\"+0\"}",
+            "Goal:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"all targets\\\"]\",\"TargetCenter:eval\":\"false\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"+0\",\"OffsetY:eval\":\"+0\"}",
+            "Settings": "",
+            "Icon:eval": "118",
+            "Duration:eval": "20",
+            "WaitForProjectile:eval": "true",
+            "Extra:struct": ""
+          }
+        ]
+      },
+      { "code": 657, "indent": 0, "parameters": ["Coordinates = "] },
+      { "code": 657, "indent": 0, "parameters": ["Start Location = {\"Type:str\":\"point\",\"Targets:arraystr\":\"[\\…"] },
+      { "code": 657, "indent": 0, "parameters": ["Goal Location = {\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\…"] },
+      { "code": 657, "indent": 0, "parameters": ["Settings = "] },
+      { "code": 657, "indent": 0, "parameters": ["Icon Index = 118"] },
+      { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
+      { "code": 657, "indent": 0, "parameters": ["Wait For Projectile? = true"] },
+      { "code": 657, "indent": 0, "parameters": ["Extra Settings = "] },
+      { "code": 101, "indent": 0, "parameters": ["", 0, 0, 2, ""] },
+      { "code": 401, "indent": 0, "parameters": ["Projetil"] },
+      { "code": 0, "indent": 0, "parameters": [] }
+    ],
+    "name": "projetil",
+    "switchId": 1,
+    "trigger": 0
+  },
   { "id": 23, "list": [{ "code": 0, "indent": 0, "parameters": [] }], "name": "", "switchId": 1, "trigger": 0 },
   { "id": 24, "list": [{ "code": 0, "indent": 0, "parameters": [] }], "name": "", "switchId": 1, "trigger": 0 },
   { "id": 25, "list": [{ "code": 0, "indent": 0, "parameters": [] }], "name": "", "switchId": 1, "trigger": 0 },
