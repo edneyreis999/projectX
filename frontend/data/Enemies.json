@@ -420,7 +420,7 @@
       { "code": 14, "dataId": 61, "value": 1 }
     ],
     "dropItems": [{ "dataId": 0, "kind": 0, "denominator": 1 }],
-    "note": "<JS Force Received Element 10 Rate: -1.0>\n<ATB Field Gauge Face: Bosses, 1>"
+    "note": "<JS Force Received Element 10 Rate: -1.0>\n<ATB Field Gauge Face: Bosses, 1>\n<Sideview Battler: Pestesporo>"
   },
   {
     "id": 29,
