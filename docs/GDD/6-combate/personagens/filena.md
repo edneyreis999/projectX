@@ -26,6 +26,17 @@ Anã jovem, atlética e ex-Splinter do time "Machados Enferrujados" de futebol r
 | **AGI** | Muito Alto | Mobilidade excepcional |
 | **MAT** | Baixo | Sem uso de magia |
 
+## Atributos Base de Combate
+
+| Atributo | Valor | Padrão | Nota |
+|----------|-------|--------|------|
+| **Taxa de Acerto (HIT)** | 90% | 100% | -10% (depende de Thorin) |
+| **Taxa de Evasão (EVA)** | 10% | 5% | +5% (móvel mas não extremamente evasiva) |
+| **Taxa de Crítico (CRIT)** | 5% | 5% | Padrão |
+| **Ataque Adicional** | +1 | 0 | Ataca 2x por turno (multi-hit inato) |
+
+**Sinergia:** HIT baixo (90%) com multi-hits cria dependência de Thorin para precisão, mas ataque adicional garante pressão constante.
+
 ---
 
 ## Atributos Base de Combate
