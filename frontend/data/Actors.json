@@ -9,7 +9,13 @@
     "equips": [4, 0, 0, 3, 0],
     "faceIndex": 0,
     "faceName": "People1",
-    "traits": [{ "code": 43, "dataId": 35, "value": 1 }],
+    "traits": [
+      {
+        "code": 43,
+        "dataId": 35,
+        "value": 1
+      }
+    ],
     "initialLevel": 1,
     "maxLevel": 99,
     "name": "Jogador",
@@ -43,7 +49,13 @@
     "equips": [1, 0, 51, 7, 0],
     "faceIndex": 2,
     "faceName": "Portraits menores/Principal2",
-    "traits": [{ "code": 52, "dataId": 1, "value": 1 }],
+    "traits": [
+      {
+        "code": 52,
+        "dataId": 1,
+        "value": 1
+      }
+    ],
     "initialLevel": 18,
     "maxLevel": 30,
     "name": "Thorin",
@@ -65,7 +77,7 @@
     "maxLevel": 30,
     "name": "Filena",
     "nickname": "",
-    "note": "",
+    "note": "<TP Mode: Momentum>",
     "profile": ""
   },
   {
@@ -179,7 +191,13 @@
     "equips": [0, 0, 0, 7, 0],
     "faceIndex": 0,
     "faceName": "Portraits menores/Principal2",
-    "traits": [{ "code": 35, "dataId": 226, "value": 1 }],
+    "traits": [
+      {
+        "code": 35,
+        "dataId": 226,
+        "value": 1
+      }
+    ],
     "initialLevel": 1,
     "maxLevel": 30,
     "name": "Thorin Armadura",
@@ -197,9 +215,21 @@
     "faceIndex": 7,
     "faceName": "Evil",
     "traits": [
-      { "code": 22, "dataId": 0, "value": 0.95 },
-      { "code": 22, "dataId": 2, "value": 0.05 },
-      { "code": 22, "dataId": 1, "value": 0.05 }
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.95
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.05
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.05
+      }
     ],
     "initialLevel": 99,
     "maxLevel": 99,

@@ -3,9 +3,22 @@
   {
     "id": 1,
     "animationId": -1,
-    "damage": { "critical": true, "elementId": -1, "formula": "a.atk * 4 - b.def * 2", "type": 1, "variance": 20 },
+    "damage": {
+      "critical": true,
+      "elementId": -1,
+      "formula": "a.atk * 4 - b.def * 2",
+      "type": 1,
+      "variance": 20
+    },
     "description": "",
-    "effects": [{ "code": 21, "dataId": 0, "value1": 1, "value2": 0 }],
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 0,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 1,
     "iconIndex": 76,
     "message1": "%1 ataca!",
@@ -28,9 +41,22 @@
   {
     "id": 2,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
-    "effects": [{ "code": 21, "dataId": 2, "value1": 1, "value2": 0 }],
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 2,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
     "iconIndex": 81,
     "message1": "%1 defende.",
@@ -53,7 +79,13 @@
   {
     "id": 3,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "Espaço para inserir algo que você deseja exibir\n acima das habilidade ao abrir o menu.",
     "effects": [],
     "hitType": 0,
@@ -78,7 +110,13 @@
   {
     "id": 4,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -103,7 +141,13 @@
   {
     "id": 5,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -128,7 +172,13 @@
   {
     "id": 6,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -153,7 +203,13 @@
   {
     "id": 7,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -178,7 +234,13 @@
   {
     "id": 8,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -203,7 +265,13 @@
   {
     "id": 9,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -228,7 +296,13 @@
   {
     "id": 10,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -253,9 +327,22 @@
   {
     "id": 11,
     "animationId": 1,
-    "damage": { "critical": false, "elementId": 1, "formula": "a.atk * 1.5", "type": 1, "variance": 0 },
+    "damage": {
+      "critical": false,
+      "elementId": 1,
+      "formula": "a.atk * 1.5",
+      "type": 1,
+      "variance": 0
+    },
     "description": "Ataque físico com chance de sangramento.",
-    "effects": [{ "code": 21, "dataId": 31, "value1": 0.7, "value2": 0 }],
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 31,
+        "value1": 0.7,
+        "value2": 0
+      }
+    ],
     "hitType": 1,
     "iconIndex": 76,
     "message1": "",
@@ -278,9 +365,22 @@
   {
     "id": 12,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "O Cristaleão se funde com as paredes cristalinas.",
-    "effects": [{ "code": 21, "dataId": 51, "value1": 1, "value2": 0 }],
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 51,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
     "iconIndex": 98,
     "message1": "",
@@ -303,9 +403,22 @@
   {
     "id": 13,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "Sussurro místico que reduz a precisão da party.",
-    "effects": [{ "code": 21, "dataId": 5, "value1": 1, "value2": 0 }],
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 5,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
     "iconIndex": 99,
     "message1": "",
@@ -328,9 +441,22 @@
   {
     "id": 14,
     "animationId": 1,
-    "damage": { "critical": false, "elementId": 0, "formula": "(a.atk * 4) + 200", "type": 1, "variance": 0 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "(a.atk * 4) + 200",
+      "type": 1,
+      "variance": 0
+    },
     "description": "ATAQUE MORTAL. Consome todo BP acumulado.",
-    "effects": [{ "code": 44, "dataId": 21, "value1": 1, "value2": 0 }],
+    "effects": [
+      {
+        "code": 44,
+        "dataId": 21,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 1,
     "iconIndex": 97,
     "message1": "",
@@ -353,9 +479,22 @@
   {
     "id": 15,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
-    "effects": [{ "code": 21, "dataId": 7, "value1": 1, "value2": 0 }],
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 7,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
     "iconIndex": 64,
     "message1": "",
@@ -378,7 +517,13 @@
   {
     "id": 16,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -403,7 +548,13 @@
   {
     "id": 17,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -428,7 +579,13 @@
   {
     "id": 18,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -453,7 +610,13 @@
   {
     "id": 19,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -478,9 +641,22 @@
   {
     "id": 20,
     "animationId": 51,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "O Lobo Alpha incita a matilha, aumentando o ataque de todos em 20% por stack (máx 3 stacks).",
-    "effects": [{ "code": 31, "dataId": 2, "value1": 3, "value2": 0 }],
+    "effects": [
+      {
+        "code": 31,
+        "dataId": 2,
+        "value1": 3,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
     "iconIndex": 34,
     "message1": "O Lobo Alpha solta um rugido poderoso!",
@@ -503,9 +679,22 @@
   {
     "id": 21,
     "animationId": 52,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "Um aviso rápido e agudo que alerta a matilha de perigos iminentes, endurecendo as defesas de todos os lobos.",
-    "effects": [{ "code": 31, "dataId": 3, "value1": 3, "value2": 0 }],
+    "effects": [
+      {
+        "code": 31,
+        "dataId": 3,
+        "value1": 3,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
     "iconIndex": 35,
     "message1": "O Lobo Alpha late em alerta!",
@@ -528,9 +717,22 @@
   {
     "id": 22,
     "animationId": 53,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "O uivo do Alpha domina o campo de batalha, sincronizando os movimentos da matilha e aumentando a velocidade de todos.",
-    "effects": [{ "code": 31, "dataId": 6, "value1": 3, "value2": 0 }],
+    "effects": [
+      {
+        "code": 31,
+        "dataId": 6,
+        "value1": 3,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
     "iconIndex": 38,
     "message1": "O Lobo Alpha uiva, comandando a matilha!",
@@ -553,9 +755,22 @@
   {
     "id": 23,
     "animationId": 106,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
-    "effects": [{ "code": 21, "dataId": 57, "value1": 1, "value2": 0 }],
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 57,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 2,
     "iconIndex": 85,
     "message1": "",
@@ -578,7 +793,13 @@
   {
     "id": 24,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -603,7 +824,13 @@
   {
     "id": 25,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -628,7 +855,13 @@
   {
     "id": 26,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -653,7 +886,13 @@
   {
     "id": 27,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -678,7 +917,13 @@
   {
     "id": 28,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -703,7 +948,13 @@
   {
     "id": 29,
     "animationId": 17,
-    "damage": { "critical": true, "elementId": -1, "formula": "a.atk * 2 - b.def * 1.5", "type": 1, "variance": 0 },
+    "damage": {
+      "critical": true,
+      "elementId": -1,
+      "formula": "a.atk * 2 - b.def * 1.5",
+      "type": 1,
+      "variance": 0
+    },
     "description": "Golpe cirúrgico focado em pontos vulneráveis. \nAumenta crítica em 💥 15% e tem 30% de chance de Sangramento ",
     "effects": [],
     "hitType": 1,
@@ -728,7 +979,13 @@
   {
     "id": 30,
     "animationId": 17,
-    "damage": { "critical": true, "elementId": -1, "formula": "a.atk * 2 - b.def * 1.5", "type": 1, "variance": 0 },
+    "damage": {
+      "critical": true,
+      "elementId": -1,
+      "formula": "a.atk * 2 - b.def * 1.5",
+      "type": 1,
+      "variance": 0
+    },
     "description": "Versão aprimorada que atinge profundamente. Dano +🗡️ 10%, crítica +💥 25%, 🩸 50% de Sangramento.",
     "effects": [],
     "hitType": 1,
@@ -753,7 +1010,13 @@
   {
     "id": 31,
     "animationId": 17,
-    "damage": { "critical": true, "elementId": -1, "formula": "a.atk * 2 - b.def * 1.5", "type": 1, "variance": 0 },
+    "damage": {
+      "critical": true,
+      "elementId": -1,
+      "formula": "a.atk * 2 - b.def * 1.5",
+      "type": 1,
+      "variance": 0
+    },
     "description": "Três ataques consecutivos. Se alvo sangrando (🩸): +🗡️ 20% dano e 💥 40% crítica por hit.",
     "effects": [],
     "hitType": 1,
@@ -778,7 +1041,13 @@
   {
     "id": 32,
     "animationId": 17,
-    "damage": { "critical": true, "elementId": -1, "formula": "a.atk * 2 - b.def * 1.5", "type": 1, "variance": 0 },
+    "damage": {
+      "critical": true,
+      "elementId": -1,
+      "formula": "a.atk * 2 - b.def * 1.5",
+      "type": 1,
+      "variance": 0
+    },
     "description": "Quatro ataques em sucessão. Dano +🗡️ 10% base. Se alvo sangrando (🩸): +🗡️ 15% dano e 💥 50% crítica.",
     "effects": [],
     "hitType": 1,
@@ -803,7 +1072,13 @@
   {
     "id": 33,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -828,7 +1103,13 @@
   {
     "id": 34,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -853,7 +1134,13 @@
   {
     "id": 35,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -878,9 +1165,22 @@
   {
     "id": 36,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "Pestesporo emite esporos que geram mini-fungos suicidas. Pestesporo fica mais fraco enquanto os esporos existem.",
-    "effects": [{ "code": 32, "dataId": 3, "value1": 3, "value2": 0 }],
+    "effects": [
+      {
+        "code": 32,
+        "dataId": 3,
+        "value1": 3,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
     "iconIndex": 80,
     "message1": "",
@@ -903,9 +1203,22 @@
   {
     "id": 37,
     "animationId": 53,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "Pestesporo acelera seu metabolismo e dos seus esporos.",
-    "effects": [{ "code": 31, "dataId": 2, "value1": 3, "value2": 0 }],
+    "effects": [
+      {
+        "code": 31,
+        "dataId": 2,
+        "value1": 3,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
     "iconIndex": 34,
     "message1": "O metabolismo do Pestesporo acelera!",
@@ -928,9 +1241,22 @@
   {
     "id": 38,
     "animationId": 33,
-    "damage": { "critical": false, "elementId": 10, "formula": "a.atk * 8 - b.def * 2", "type": 1, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 10,
+      "formula": "a.atk * 8 - b.def * 2",
+      "type": 1,
+      "variance": 20
+    },
     "description": "O esporo explode causando dano ao party.",
-    "effects": [{ "code": 21, "dataId": 4, "value1": 0.3, "value2": 0 }],
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 4,
+        "value1": 0.3,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
     "iconIndex": 17,
     "message1": "",
@@ -953,9 +1279,22 @@
   {
     "id": 39,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
-    "effects": [{ "code": 21, "dataId": 61, "value1": 1, "value2": 0 }],
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 61,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
     "iconIndex": 17,
     "message1": "",
@@ -978,9 +1317,22 @@
   {
     "id": 40,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "Pestesporo detona esporos remotamente, curando-se a si mesmo.",
-    "effects": [{ "code": 21, "dataId": 61, "value1": 1, "value2": 0 }],
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 61,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
     "iconIndex": 17,
     "message1": "\"%1 emite uma pulsação maligna!\"",
@@ -1003,11 +1355,27 @@
   {
     "id": 41,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "Pestesporo detona esporos remotamente, curando-se a si mesmo.",
     "effects": [
-      { "code": 21, "dataId": 61, "value1": 1, "value2": 0 },
-      { "code": 32, "dataId": 6, "value1": 1, "value2": 0 }
+      {
+        "code": 21,
+        "dataId": 61,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 32,
+        "dataId": 6,
+        "value1": 1,
+        "value2": 0
+      }
     ],
     "hitType": 0,
     "iconIndex": 17,
@@ -1031,7 +1399,13 @@
   {
     "id": 42,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -1056,7 +1430,13 @@
   {
     "id": 43,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -1081,7 +1461,13 @@
   {
     "id": 44,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -1106,7 +1492,13 @@
   {
     "id": 45,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -1115,7 +1507,7 @@
     "message2": "",
     "messageType": 1,
     "mpCost": 0,
-    "name": "",
+    "name": "--- Filena ---",
     "note": "",
     "occasion": 0,
     "repeats": 1,
@@ -1131,23 +1523,29 @@
   {
     "id": 46,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 1,
+      "formula": "50",
+      "type": 1,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
-    "hitType": 0,
-    "iconIndex": 0,
+    "hitType": 1,
+    "iconIndex": 77,
     "message1": "",
     "message2": "",
     "messageType": 1,
     "mpCost": 0,
-    "name": "",
-    "note": "",
-    "occasion": 0,
+    "name": "Ripostar Counter",
+    "note": "<Gain TP: +5>",
+    "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
     "requiredWtypeId2": 0,
     "scope": 1,
-    "speed": 0,
+    "speed": 2000,
     "stypeId": 1,
     "successRate": 100,
     "tpCost": 0,
@@ -1156,249 +1554,343 @@
   {
     "id": 47,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
-    "description": "",
+    "damage": {
+      "critical": false,
+      "elementId": 1,
+      "formula": "100",
+      "type": 1,
+      "variance": 20
+    },
+    "description": "Golpe rapido e agil que gera Momentum.",
     "effects": [],
-    "hitType": 0,
-    "iconIndex": 0,
+    "hitType": 1,
+    "iconIndex": 82,
     "message1": "",
     "message2": "",
     "messageType": 1,
     "mpCost": 0,
-    "name": "",
+    "name": "Passo de Brisa",
     "note": "",
-    "occasion": 0,
+    "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
     "requiredWtypeId2": 0,
     "scope": 1,
-    "speed": 0,
-    "stypeId": 1,
+    "speed": 1000,
+    "stypeId": 2,
     "successRate": 100,
     "tpCost": 0,
-    "tpGain": 0
+    "tpGain": 5
   },
   {
     "id": 48,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
-    "description": "",
+    "damage": {
+      "critical": false,
+      "elementId": 1,
+      "formula": "90",
+      "type": 1,
+      "variance": 20
+    },
+    "description": "Impacto calculado que aplica Marcacao no alvo.",
     "effects": [],
-    "hitType": 0,
-    "iconIndex": 0,
+    "hitType": 1,
+    "iconIndex": 80,
     "message1": "",
     "message2": "",
     "messageType": 1,
     "mpCost": 0,
-    "name": "",
+    "name": "Golpe Marcador",
     "note": "",
-    "occasion": 0,
+    "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
     "requiredWtypeId2": 0,
     "scope": 1,
-    "speed": 0,
-    "stypeId": 1,
+    "speed": 500,
+    "stypeId": 2,
     "successRate": 100,
     "tpCost": 0,
-    "tpGain": 0
+    "tpGain": 5
   },
   {
     "id": 49,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
-    "description": "",
-    "effects": [],
-    "hitType": 0,
-    "iconIndex": 0,
+    "damage": {
+      "critical": false,
+      "elementId": 1,
+      "formula": "110",
+      "type": 1,
+      "variance": 20
+    },
+    "description": "Golpe baixo com chance de desestabilizar o oponente.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 68,
+        "value1": 0.4,
+        "value2": 0
+      }
+    ],
+    "hitType": 1,
+    "iconIndex": 82,
     "message1": "",
     "message2": "",
     "messageType": 1,
     "mpCost": 0,
-    "name": "",
+    "name": "Rasteira",
     "note": "",
-    "occasion": 0,
+    "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
     "requiredWtypeId2": 0,
     "scope": 1,
     "speed": 0,
-    "stypeId": 1,
+    "stypeId": 2,
     "successRate": 100,
-    "tpCost": 0,
+    "tpCost": 15,
     "tpGain": 0
   },
   {
     "id": 50,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
-    "description": "",
-    "effects": [],
-    "hitType": 0,
-    "iconIndex": 0,
+    "damage": {
+      "critical": false,
+      "elementId": 1,
+      "formula": "110",
+      "type": 1,
+      "variance": 20
+    },
+    "description": "Soco rapido na altura dos olhos, chance de cegueira.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 5,
+        "value1": 0.3,
+        "value2": 0
+      }
+    ],
+    "hitType": 1,
+    "iconIndex": 77,
     "message1": "",
     "message2": "",
     "messageType": 1,
     "mpCost": 0,
-    "name": "",
+    "name": "Punho Cegante",
     "note": "",
-    "occasion": 0,
+    "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
     "requiredWtypeId2": 0,
     "scope": 1,
     "speed": 0,
-    "stypeId": 1,
+    "stypeId": 2,
     "successRate": 100,
-    "tpCost": 0,
+    "tpCost": 15,
     "tpGain": 0
   },
   {
     "id": 51,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
-    "description": "",
+    "damage": {
+      "critical": false,
+      "elementId": 1,
+      "formula": "100",
+      "type": 1,
+      "variance": 20
+    },
+    "description": "Sequencia de dois golpes rapidos com as luvas.",
     "effects": [],
-    "hitType": 0,
-    "iconIndex": 0,
+    "hitType": 1,
+    "iconIndex": 88,
     "message1": "",
     "message2": "",
     "messageType": 1,
     "mpCost": 0,
-    "name": "",
-    "note": "",
-    "occasion": 0,
+    "name": "Combo Duplo",
+    "note": "<Repeat Targets: 2>\n<ATB After Gauge: -5%>",
+    "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
     "requiredWtypeId2": 0,
     "scope": 1,
     "speed": 0,
-    "stypeId": 1,
+    "stypeId": 2,
     "successRate": 100,
-    "tpCost": 0,
+    "tpCost": 25,
     "tpGain": 0
   },
   {
     "id": 52,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
-    "description": "",
-    "effects": [],
-    "hitType": 0,
-    "iconIndex": 0,
+    "damage": {
+      "critical": false,
+      "elementId": 1,
+      "formula": "100",
+      "type": 1,
+      "variance": 20
+    },
+    "description": "Impacto forte que pode atordoar o oponente.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 13,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 1,
+    "iconIndex": 73,
     "message1": "",
     "message2": "",
     "messageType": 1,
     "mpCost": 0,
-    "name": "",
+    "name": "Golpe Atordoante",
     "note": "",
-    "occasion": 0,
+    "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
     "requiredWtypeId2": 0,
     "scope": 1,
     "speed": 0,
-    "stypeId": 1,
+    "stypeId": 2,
     "successRate": 100,
-    "tpCost": 0,
+    "tpCost": 25,
     "tpGain": 0
   },
   {
     "id": 53,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
-    "description": "",
+    "damage": {
+      "critical": false,
+      "elementId": 1,
+      "formula": "150",
+      "type": 1,
+      "variance": 20
+    },
+    "description": "Soco poderoso que ignora parte da armadura inimiga.",
     "effects": [],
-    "hitType": 0,
+    "hitType": 1,
     "iconIndex": 0,
     "message1": "",
     "message2": "",
     "messageType": 1,
     "mpCost": 0,
-    "name": "",
-    "note": "",
+    "name": "Punho Devastador",
+    "note": "<Armor Pen: 25%>",
     "occasion": 0,
     "repeats": 1,
     "requiredWtypeId1": 0,
     "requiredWtypeId2": 0,
     "scope": 1,
-    "speed": 0,
-    "stypeId": 1,
+    "speed": -500,
+    "stypeId": 2,
     "successRate": 100,
-    "tpCost": 0,
+    "tpCost": 35,
     "tpGain": 0
   },
   {
     "id": 54,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
-    "description": "",
-    "effects": [],
-    "hitType": 0,
+    "damage": {
+      "critical": false,
+      "elementId": 1,
+      "formula": "180",
+      "type": 1,
+      "variance": 20
+    },
+    "description": "Filena se buffa com ATK mas sacrifica sua defesa.",
+    "effects": [
+      {
+        "code": 31,
+        "dataId": 2,
+        "value1": 3,
+        "value2": 0
+      },
+      {
+        "code": 32,
+        "dataId": 3,
+        "value1": 3,
+        "value2": 0
+      }
+    ],
+    "hitType": 1,
     "iconIndex": 0,
     "message1": "",
     "message2": "",
     "messageType": 1,
     "mpCost": 0,
-    "name": "",
-    "note": "",
+    "name": "Ira da Duelista",
+    "note": "<ATB After Gauge: -25%>",
     "occasion": 0,
     "repeats": 1,
     "requiredWtypeId1": 0,
     "requiredWtypeId2": 0,
     "scope": 1,
     "speed": 0,
-    "stypeId": 1,
+    "stypeId": 2,
     "successRate": 100,
-    "tpCost": 0,
+    "tpCost": 40,
     "tpGain": 0
   },
   {
     "id": 55,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
-    "description": "",
+    "damage": {
+      "critical": false,
+      "elementId": 1,
+      "formula": "140",
+      "type": 1,
+      "variance": 20
+    },
+    "description": "Filena entra em frenesi, desferindo 4 golpes em alvos aleatorios.",
     "effects": [],
-    "hitType": 0,
+    "hitType": 1,
     "iconIndex": 0,
     "message1": "",
     "message2": "",
     "messageType": 1,
     "mpCost": 0,
-    "name": "",
-    "note": "",
+    "name": "Danca dos Ventos",
+    "note": "<Repeat Targets: 4>\n<ATB Cannot Be Interrupted>\n<ATB After Gauge: -20%>",
     "occasion": 0,
     "repeats": 1,
     "requiredWtypeId1": 0,
     "requiredWtypeId2": 0,
     "scope": 1,
-    "speed": 0,
-    "stypeId": 1,
+    "speed": -500,
+    "stypeId": 2,
     "successRate": 100,
-    "tpCost": 0,
+    "tpCost": 45,
     "tpGain": 0
   },
   {
     "id": 56,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
-    "iconIndex": 0,
+    "iconIndex": 82,
     "message1": "",
     "message2": "",
     "messageType": 1,
     "mpCost": 0,
-    "name": "",
-    "note": "",
-    "occasion": 0,
+    "name": "Fluxo Continuo",
+    "note": "<JS On Use Action>\n// Aplica State \"Fluxo Continuo\" (ID 65) permanentemente\nuser.addState(65);\n</JS On Use Action>",
+    "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
     "requiredWtypeId2": 0,
-    "scope": 1,
+    "scope": 11,
     "speed": 0,
-    "stypeId": 1,
+    "stypeId": 2,
     "successRate": 100,
     "tpCost": 0,
     "tpGain": 0
@@ -1406,24 +1898,30 @@
   {
     "id": 57,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
-    "iconIndex": 0,
+    "iconIndex": 83,
     "message1": "",
     "message2": "",
     "messageType": 1,
     "mpCost": 0,
-    "name": "",
+    "name": "Ripostar",
     "note": "",
-    "occasion": 0,
+    "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
     "requiredWtypeId2": 0,
-    "scope": 1,
+    "scope": 11,
     "speed": 0,
-    "stypeId": 1,
+    "stypeId": 2,
     "successRate": 100,
     "tpCost": 0,
     "tpGain": 0
@@ -1431,7 +1929,13 @@
   {
     "id": 58,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -1456,7 +1960,13 @@
   {
     "id": 59,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -1481,7 +1991,13 @@
   {
     "id": 60,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -1506,7 +2022,13 @@
   {
     "id": 61,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -1531,7 +2053,13 @@
   {
     "id": 62,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -1556,7 +2084,13 @@
   {
     "id": 63,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -1581,7 +2115,13 @@
   {
     "id": 64,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -1606,7 +2146,13 @@
   {
     "id": 65,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -1631,7 +2177,13 @@
   {
     "id": 66,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -1656,7 +2208,13 @@
   {
     "id": 67,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -1681,7 +2239,13 @@
   {
     "id": 68,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -1706,7 +2270,13 @@
   {
     "id": 69,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -1731,7 +2301,13 @@
   {
     "id": 70,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -1756,7 +2332,13 @@
   {
     "id": 71,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -1781,7 +2363,13 @@
   {
     "id": 72,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -1806,7 +2394,13 @@
   {
     "id": 73,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -1831,7 +2425,13 @@
   {
     "id": 74,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -1856,7 +2456,13 @@
   {
     "id": 75,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -1881,7 +2487,13 @@
   {
     "id": 76,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -1906,7 +2518,13 @@
   {
     "id": 77,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -1931,7 +2549,13 @@
   {
     "id": 78,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -1956,7 +2580,13 @@
   {
     "id": 79,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -1981,7 +2611,13 @@
   {
     "id": 80,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2006,7 +2642,13 @@
   {
     "id": 81,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2031,7 +2673,13 @@
   {
     "id": 82,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2056,7 +2704,13 @@
   {
     "id": 83,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2081,7 +2735,13 @@
   {
     "id": 84,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2106,7 +2766,13 @@
   {
     "id": 85,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2131,7 +2797,13 @@
   {
     "id": 86,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2156,7 +2828,13 @@
   {
     "id": 87,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2181,7 +2859,13 @@
   {
     "id": 88,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2206,7 +2890,13 @@
   {
     "id": 89,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2231,7 +2921,13 @@
   {
     "id": 90,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2256,7 +2952,13 @@
   {
     "id": 91,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2281,7 +2983,13 @@
   {
     "id": 92,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2306,7 +3014,13 @@
   {
     "id": 93,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2331,7 +3045,13 @@
   {
     "id": 94,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2356,7 +3076,13 @@
   {
     "id": 95,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2381,7 +3107,13 @@
   {
     "id": 96,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2406,7 +3138,13 @@
   {
     "id": 97,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2431,7 +3169,13 @@
   {
     "id": 98,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2456,7 +3200,13 @@
   {
     "id": 99,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2481,7 +3231,13 @@
   {
     "id": 100,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2506,7 +3262,13 @@
   {
     "id": 101,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 8, "formula": "100000", "type": 3, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 8,
+      "formula": "100000",
+      "type": 3,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2531,7 +3293,13 @@
   {
     "id": 102,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2556,7 +3324,13 @@
   {
     "id": 103,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2581,7 +3355,13 @@
   {
     "id": 104,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2606,7 +3386,13 @@
   {
     "id": 105,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2631,7 +3417,13 @@
   {
     "id": 106,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2656,7 +3448,13 @@
   {
     "id": 107,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2681,7 +3479,13 @@
   {
     "id": 108,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2706,7 +3510,13 @@
   {
     "id": 109,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2731,7 +3541,13 @@
   {
     "id": 110,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2756,7 +3572,13 @@
   {
     "id": 111,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2781,7 +3603,13 @@
   {
     "id": 112,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2806,7 +3634,13 @@
   {
     "id": 113,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2831,7 +3665,13 @@
   {
     "id": 114,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2856,7 +3696,13 @@
   {
     "id": 115,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2881,7 +3727,13 @@
   {
     "id": 116,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2906,7 +3758,13 @@
   {
     "id": 117,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2931,7 +3789,13 @@
   {
     "id": 118,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2956,7 +3820,13 @@
   {
     "id": 119,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -2981,7 +3851,13 @@
   {
     "id": 120,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3006,7 +3882,13 @@
   {
     "id": 121,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3031,7 +3913,13 @@
   {
     "id": 122,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3056,7 +3944,13 @@
   {
     "id": 123,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3081,7 +3975,13 @@
   {
     "id": 124,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3106,7 +4006,13 @@
   {
     "id": 125,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3131,7 +4037,13 @@
   {
     "id": 126,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3156,7 +4068,13 @@
   {
     "id": 127,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3181,7 +4099,13 @@
   {
     "id": 128,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3206,7 +4130,13 @@
   {
     "id": 129,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3231,7 +4161,13 @@
   {
     "id": 130,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3256,7 +4192,13 @@
   {
     "id": 131,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3281,7 +4223,13 @@
   {
     "id": 132,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3306,7 +4254,13 @@
   {
     "id": 133,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3331,7 +4285,13 @@
   {
     "id": 134,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3356,7 +4316,13 @@
   {
     "id": 135,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3381,7 +4347,13 @@
   {
     "id": 136,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3406,7 +4378,13 @@
   {
     "id": 137,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3431,7 +4409,13 @@
   {
     "id": 138,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3456,7 +4440,13 @@
   {
     "id": 139,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3481,7 +4471,13 @@
   {
     "id": 140,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3506,7 +4502,13 @@
   {
     "id": 141,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3531,7 +4533,13 @@
   {
     "id": 142,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3556,7 +4564,13 @@
   {
     "id": 143,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3581,7 +4595,13 @@
   {
     "id": 144,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3606,7 +4626,13 @@
   {
     "id": 145,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3631,7 +4657,13 @@
   {
     "id": 146,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3656,7 +4688,13 @@
   {
     "id": 147,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3681,7 +4719,13 @@
   {
     "id": 148,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3706,7 +4750,13 @@
   {
     "id": 149,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3731,7 +4781,13 @@
   {
     "id": 150,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3756,7 +4812,13 @@
   {
     "id": 151,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3781,7 +4843,13 @@
   {
     "id": 152,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3806,7 +4874,13 @@
   {
     "id": 153,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3831,7 +4905,13 @@
   {
     "id": 154,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3856,7 +4936,13 @@
   {
     "id": 155,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3881,7 +4967,13 @@
   {
     "id": 156,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3906,7 +4998,13 @@
   {
     "id": 157,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3931,7 +5029,13 @@
   {
     "id": 158,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3956,7 +5060,13 @@
   {
     "id": 159,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -3981,7 +5091,13 @@
   {
     "id": 160,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4006,7 +5122,13 @@
   {
     "id": 161,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4031,7 +5153,13 @@
   {
     "id": 162,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4056,7 +5184,13 @@
   {
     "id": 163,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4081,7 +5215,13 @@
   {
     "id": 164,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4106,7 +5246,13 @@
   {
     "id": 165,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4131,7 +5277,13 @@
   {
     "id": 166,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4156,7 +5308,13 @@
   {
     "id": 167,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4181,7 +5339,13 @@
   {
     "id": 168,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4206,7 +5370,13 @@
   {
     "id": 169,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4231,7 +5401,13 @@
   {
     "id": 170,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4256,7 +5432,13 @@
   {
     "id": 171,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4281,7 +5463,13 @@
   {
     "id": 172,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4306,7 +5494,13 @@
   {
     "id": 173,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4331,7 +5525,13 @@
   {
     "id": 174,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4356,7 +5556,13 @@
   {
     "id": 175,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4381,7 +5587,13 @@
   {
     "id": 176,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4406,7 +5618,13 @@
   {
     "id": 177,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4431,7 +5649,13 @@
   {
     "id": 178,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4456,7 +5680,13 @@
   {
     "id": 179,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4481,7 +5711,13 @@
   {
     "id": 180,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4506,7 +5742,13 @@
   {
     "id": 181,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4531,7 +5773,13 @@
   {
     "id": 182,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4556,7 +5804,13 @@
   {
     "id": 183,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4581,7 +5835,13 @@
   {
     "id": 184,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4606,7 +5866,13 @@
   {
     "id": 185,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4631,7 +5897,13 @@
   {
     "id": 186,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4656,7 +5928,13 @@
   {
     "id": 187,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4681,7 +5959,13 @@
   {
     "id": 188,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4706,7 +5990,13 @@
   {
     "id": 189,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4731,7 +6021,13 @@
   {
     "id": 190,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4756,7 +6052,13 @@
   {
     "id": 191,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4781,7 +6083,13 @@
   {
     "id": 192,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4806,7 +6114,13 @@
   {
     "id": 193,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4831,7 +6145,13 @@
   {
     "id": 194,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4856,7 +6176,13 @@
   {
     "id": 195,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4881,7 +6207,13 @@
   {
     "id": 196,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4906,7 +6238,13 @@
   {
     "id": 197,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4931,7 +6269,13 @@
   {
     "id": 198,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4956,7 +6300,13 @@
   {
     "id": 199,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -4981,7 +6331,13 @@
   {
     "id": 200,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5006,7 +6362,13 @@
   {
     "id": 201,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5031,7 +6393,13 @@
   {
     "id": 202,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5056,7 +6424,13 @@
   {
     "id": 203,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5081,7 +6455,13 @@
   {
     "id": 204,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5106,7 +6486,13 @@
   {
     "id": 205,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5131,7 +6517,13 @@
   {
     "id": 206,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5156,7 +6548,13 @@
   {
     "id": 207,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5181,7 +6579,13 @@
   {
     "id": 208,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5206,7 +6610,13 @@
   {
     "id": 209,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5231,7 +6641,13 @@
   {
     "id": 210,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5256,7 +6672,13 @@
   {
     "id": 211,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5281,7 +6703,13 @@
   {
     "id": 212,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5306,7 +6734,13 @@
   {
     "id": 213,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5331,7 +6765,13 @@
   {
     "id": 214,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5356,7 +6796,13 @@
   {
     "id": 215,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5381,7 +6827,13 @@
   {
     "id": 216,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5406,7 +6858,13 @@
   {
     "id": 217,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5431,7 +6889,13 @@
   {
     "id": 218,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5456,7 +6920,13 @@
   {
     "id": 219,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5481,7 +6951,13 @@
   {
     "id": 220,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5506,7 +6982,13 @@
   {
     "id": 221,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5531,7 +7013,13 @@
   {
     "id": 222,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5556,7 +7044,13 @@
   {
     "id": 223,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5581,7 +7075,13 @@
   {
     "id": 224,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5606,7 +7106,13 @@
   {
     "id": 225,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5631,7 +7137,13 @@
   {
     "id": 226,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5656,7 +7168,13 @@
   {
     "id": 227,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5681,7 +7199,13 @@
   {
     "id": 228,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5706,7 +7230,13 @@
   {
     "id": 229,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5731,7 +7261,13 @@
   {
     "id": 230,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5756,7 +7292,13 @@
   {
     "id": 231,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5781,7 +7323,13 @@
   {
     "id": 232,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5806,7 +7354,13 @@
   {
     "id": 233,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5831,7 +7385,13 @@
   {
     "id": 234,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5856,7 +7416,13 @@
   {
     "id": 235,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "",
     "effects": [],
     "hitType": 0,
@@ -5881,7 +7447,13 @@
   {
     "id": 236,
     "animationId": 0,
-    "damage": { "critical": true, "elementId": 0, "formula": "a.atk * 4 - b.def * 1.5", "type": 1, "variance": 20 },
+    "damage": {
+      "critical": true,
+      "elementId": 0,
+      "formula": "a.atk * 4 - b.def * 1.5",
+      "type": 1,
+      "variance": 20
+    },
     "description": "Filena avança com um soco potente que quebra defesas mais fracas.",
     "effects": [],
     "hitType": 1,
@@ -5906,7 +7478,13 @@
   {
     "id": 237,
     "animationId": 0,
-    "damage": { "critical": true, "elementId": 0, "formula": "a.atk * 2 - b.def", "type": 1, "variance": 15 },
+    "damage": {
+      "critical": true,
+      "elementId": 0,
+      "formula": "a.atk * 2 - b.def",
+      "type": 1,
+      "variance": 15
+    },
     "description": "Uma sequência de três golpes rápidos.",
     "effects": [],
     "hitType": 1,
@@ -5931,9 +7509,22 @@
   {
     "id": 238,
     "animationId": 0,
-    "damage": { "critical": true, "elementId": 0, "formula": "a.atk * 5 - b.def * 2", "type": 1, "variance": 20 },
+    "damage": {
+      "critical": true,
+      "elementId": 0,
+      "formula": "a.atk * 5 - b.def * 2",
+      "type": 1,
+      "variance": 20
+    },
     "description": "Um gancho devastador que mira no equilíbrio do oponente.",
-    "effects": [{ "code": 21, "dataId": 13, "value1": 0.5, "value2": 0 }],
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 13,
+        "value1": 0.5,
+        "value2": 0
+      }
+    ],
     "hitType": 1,
     "iconIndex": 77,
     "message1": "%1 usa Quebra-Guarda!",
@@ -5956,7 +7547,13 @@
   {
     "id": 239,
     "animationId": 0,
-    "damage": { "critical": true, "elementId": 0, "formula": "a.atk * 10", "type": 1, "variance": 10 },
+    "damage": {
+      "critical": true,
+      "elementId": 0,
+      "formula": "a.atk * 10",
+      "type": 1,
+      "variance": 10
+    },
     "description": "Filena canaliza toda a sua força em um único ataque avassalador.",
     "effects": [],
     "hitType": 1,
@@ -5981,9 +7578,22 @@
   {
     "id": 240,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "a.mat * 2 - b.mdf", "type": 2, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "a.mat * 2 - b.mdf",
+      "type": 2,
+      "variance": 20
+    },
     "description": "Arremessa um frasco que explode em uma chuva ácida.",
-    "effects": [{ "code": 21, "dataId": 4, "value1": 0.6, "value2": 0 }],
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 4,
+        "value1": 0.6,
+        "value2": 0
+      }
+    ],
     "hitType": 1,
     "iconIndex": 66,
     "message1": "%1 usa Bomba Corrosiva!",
@@ -6006,11 +7616,27 @@
   {
     "id": 241,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "Injeta um composto químico em um aliado.",
     "effects": [
-      { "code": 31, "dataId": 2, "value1": 5, "value2": 0 },
-      { "code": 31, "dataId": 6, "value1": 5, "value2": 0 }
+      {
+        "code": 31,
+        "dataId": 2,
+        "value1": 5,
+        "value2": 0
+      },
+      {
+        "code": 31,
+        "dataId": 6,
+        "value1": 5,
+        "value2": 0
+      }
     ],
     "hitType": 0,
     "iconIndex": 81,
@@ -6034,11 +7660,27 @@
   {
     "id": 242,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "Ativa um dispositivo que projeta um campo de força temporário.",
     "effects": [
-      { "code": 31, "dataId": 3, "value1": 4, "value2": 0 },
-      { "code": 31, "dataId": 5, "value1": 4, "value2": 0 }
+      {
+        "code": 31,
+        "dataId": 3,
+        "value1": 4,
+        "value2": 0
+      },
+      {
+        "code": 31,
+        "dataId": 5,
+        "value1": 4,
+        "value2": 0
+      }
     ],
     "hitType": 0,
     "iconIndex": 82,
@@ -6062,12 +7704,33 @@
   {
     "id": 243,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "a.mat * 6 - b.mdf * 2", "type": 2, "variance": 15 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "a.mat * 6 - b.mdf * 2",
+      "type": 2,
+      "variance": 15
+    },
     "description": "Libera seu composto mais instável, causando dano massivo.",
     "effects": [
-      { "code": 21, "dataId": 4, "value1": 1, "value2": 0 },
-      { "code": 32, "dataId": 6, "value1": 4, "value2": 0 },
-      { "code": 32, "dataId": 3, "value1": 4, "value2": 0 }
+      {
+        "code": 21,
+        "dataId": 4,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 32,
+        "dataId": 6,
+        "value1": 4,
+        "value2": 0
+      },
+      {
+        "code": 32,
+        "dataId": 3,
+        "value1": 4,
+        "value2": 0
+      }
     ],
     "hitType": 1,
     "iconIndex": 67,
@@ -6091,9 +7754,22 @@
   {
     "id": 244,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "Kilin jura proteger um aliado, interceptando os próximos ataques.",
-    "effects": [{ "code": 21, "dataId": 41, "value1": 1, "value2": 0 }],
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 41,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
     "iconIndex": 79,
     "message1": "%1 usa Voto do Guardião em %2!",
@@ -6116,9 +7792,22 @@
   {
     "id": 245,
     "animationId": 0,
-    "damage": { "critical": true, "elementId": 0, "formula": "a.atk * 2 + a.def - b.def * 2", "type": 1, "variance": 20 },
+    "damage": {
+      "critical": true,
+      "elementId": 0,
+      "formula": "a.atk * 2 + a.def - b.def * 2",
+      "type": 1,
+      "variance": 20
+    },
     "description": "Kilin avança e golpeia com seu escudo.",
-    "effects": [{ "code": 21, "dataId": 13, "value1": 0.6, "value2": 0 }],
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 13,
+        "value1": 0.6,
+        "value2": 0
+      }
+    ],
     "hitType": 1,
     "iconIndex": 80,
     "message1": "%1 usa Impacto da Vanguarda!",
@@ -6141,11 +7830,27 @@
   {
     "id": 246,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "Canaliza energia sagrada para fortalecer as defesas de todo o grupo.",
     "effects": [
-      { "code": 31, "dataId": 3, "value1": 5, "value2": 0 },
-      { "code": 31, "dataId": 5, "value1": 5, "value2": 0 }
+      {
+        "code": 31,
+        "dataId": 3,
+        "value1": 5,
+        "value2": 0
+      },
+      {
+        "code": 31,
+        "dataId": 5,
+        "value1": 5,
+        "value2": 0
+      }
     ],
     "hitType": 0,
     "iconIndex": 82,
@@ -6169,9 +7874,22 @@
   {
     "id": 247,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "Kilin se torna a personificação da defesa.",
-    "effects": [{ "code": 21, "dataId": 3, "value1": 1, "value2": 0 }],
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 3,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
     "iconIndex": 83,
     "message1": "%1 usa Bastião Impenetrável!",
@@ -6194,7 +7912,13 @@
   {
     "id": 248,
     "animationId": 0,
-    "damage": { "critical": true, "elementId": 0, "formula": "a.atk * 5 - b.def * 2", "type": 1, "variance": 20 },
+    "damage": {
+      "critical": true,
+      "elementId": 0,
+      "formula": "a.atk * 5 - b.def * 2",
+      "type": 1,
+      "variance": 20
+    },
     "description": "Um ataque brutal que consome parte da vitalidade.",
     "effects": [],
     "hitType": 1,
@@ -6219,9 +7943,22 @@
   {
     "id": 249,
     "animationId": 0,
-    "damage": { "critical": false, "elementId": 0, "formula": "0", "type": 0, "variance": 20 },
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
     "description": "Mhordred sucumbe à sua raiva, aumentando drasticamente seu poder.",
-    "effects": [{ "code": 21, "dataId": 7, "value1": 1, "value2": 0 }],
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 7,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
     "iconIndex": 5,
     "message1": "%1 entra em Fúria Incontrolável!",
@@ -6244,7 +7981,13 @@
   {
     "id": 250,
     "animationId": 0,
-    "damage": { "critical": true, "elementId": 0, "formula": "a.atk * 3 - b.def", "type": 1, "variance": 20 },
+    "damage": {
+      "critical": true,
+      "elementId": 0,
+      "formula": "a.atk * 3 - b.def",
+      "type": 1,
+      "variance": 20
+    },
     "description": "Gira sua arma em um arco mortal.",
     "effects": [],
     "hitType": 1,
@@ -6269,7 +8012,13 @@
   {
     "id": 251,
     "animationId": 0,
-    "damage": { "critical": true, "elementId": 0, "formula": "a.atk * 8 * (1 + (a.mhp - a.hp) / a.mhp) - b.def * 2", "type": 1, "variance": 10 },
+    "damage": {
+      "critical": true,
+      "elementId": 0,
+      "formula": "a.atk * 8 * (1 + (a.mhp - a.hp) / a.mhp) - b.def * 2",
+      "type": 1,
+      "variance": 10
+    },
     "description": "Um golpe de execução desesperado.",
     "effects": [],
     "hitType": 1,
@@ -6294,7 +8043,13 @@
   {
     "id": 252,
     "animationId": 0,
-    "damage": { "critical": true, "elementId": 0, "formula": "a.atk * 3 - b.def * 2", "type": 1, "variance": 15 },
+    "damage": {
+      "critical": true,
+      "elementId": 0,
+      "formula": "a.atk * 3 - b.def * 2",
+      "type": 1,
+      "variance": 15
+    },
     "description": "Um arremesso cuidadosamente mirado com chance de crítico aumentada.",
     "effects": [],
     "hitType": 1,
@@ -6319,9 +8074,22 @@
   {
     "id": 253,
     "animationId": 0,
-    "damage": { "critical": true, "elementId": 0, "formula": "a.atk * 2.5 - b.def", "type": 1, "variance": 20 },
+    "damage": {
+      "critical": true,
+      "elementId": 0,
+      "formula": "a.atk * 2.5 - b.def",
+      "type": 1,
+      "variance": 20
+    },
     "description": "Thorin arremessa uma pedra especialmente preparada.",
-    "effects": [{ "code": 32, "dataId": 6, "value1": 2, "value2": 0 }],
+    "effects": [
+      {
+        "code": 32,
+        "dataId": 6,
+        "value1": 2,
+        "value2": 0
+      }
+    ],
     "hitType": 1,
     "iconIndex": 85,
     "message1": "%1 usa Arremesso Estilhaçado!",
@@ -6344,7 +8112,13 @@
   {
     "id": 254,
     "animationId": 0,
-    "damage": { "critical": true, "elementId": 0, "formula": "a.atk * 1.5 - b.def", "type": 1, "variance": 10 },
+    "damage": {
+      "critical": true,
+      "elementId": 0,
+      "formula": "a.atk * 1.5 - b.def",
+      "type": 1,
+      "variance": 10
+    },
     "description": "Gira sua funda com velocidade impressionante.",
     "effects": [],
     "hitType": 1,
@@ -6369,7 +8143,13 @@
   {
     "id": 255,
     "animationId": 0,
-    "damage": { "critical": true, "elementId": 0, "formula": "a.atk * 7 - b.def", "type": 1, "variance": 0 },
+    "damage": {
+      "critical": true,
+      "elementId": 0,
+      "formula": "a.atk * 7 - b.def",
+      "type": 1,
+      "variance": 0
+    },
     "description": "O arremesso definitivo de Thorin. Sempre acerta um ponto vital.",
     "effects": [],
     "hitType": 0,

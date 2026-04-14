@@ -4,21 +4,86 @@
     "id": 1,
     "expParams": [4, 50, 150, 1],
     "traits": [
-      { "code": 22, "dataId": 0, "value": 0.9 },
-      { "code": 22, "dataId": 1, "value": 0.1 },
-      { "code": 22, "dataId": 2, "value": 0.05 },
-      { "code": 34, "dataId": 0, "value": 1 },
-      { "code": 51, "dataId": 11, "value": 1 },
-      { "code": 41, "dataId": 2, "value": 1 }
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.9
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.1
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.05
+      },
+      {
+        "code": 51,
+        "dataId": 11,
+        "value": 1
+      },
+      {
+        "code": 41,
+        "dataId": 2,
+        "value": 1
+      }
     ],
     "learnings": [
-      { "level": 5, "note": "", "skillId": 236 },
-      { "level": 10, "note": "", "skillId": 237 },
-      { "level": 19, "note": "", "skillId": 238 },
-      { "level": 30, "note": "", "skillId": 239 }
+      {
+        "level": 1,
+        "skillId": 46,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 47,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 48,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 49,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 50,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 51,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 52,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 53,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 54,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 55,
+        "note": ""
+      }
     ],
     "name": "Fighter",
-    "note": "Filena - Classe especializada em punhos e combate ágil.",
+    "note": "",
     "params": [
       [
         1, 520, 590, 660, 730, 800, 870, 940, 1010, 1080, 1150, 1220, 1290, 1360, 1430, 1500, 1570, 1640, 1710, 1780, 1850, 1920, 1990, 2060, 2130, 2200, 2270, 2340, 2410, 2480, 2550, 2620, 2690,
@@ -67,16 +132,48 @@
     "id": 2,
     "expParams": [2, 50, 150, 1],
     "traits": [
-      { "code": 22, "dataId": 0, "value": 1 },
-      { "code": 22, "dataId": 1, "value": 0.05 },
-      { "code": 22, "dataId": 2, "value": 0.04 },
-      { "code": 41, "dataId": 2, "value": 1 }
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 1
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.05
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.04
+      },
+      {
+        "code": 41,
+        "dataId": 2,
+        "value": 1
+      }
     ],
     "learnings": [
-      { "level": 5, "note": "", "skillId": 240 },
-      { "level": 10, "note": "", "skillId": 241 },
-      { "level": 20, "note": "", "skillId": 242 },
-      { "level": 30, "note": "", "skillId": 243 }
+      {
+        "level": 5,
+        "note": "",
+        "skillId": 240
+      },
+      {
+        "level": 10,
+        "note": "",
+        "skillId": 241
+      },
+      {
+        "level": 20,
+        "note": "",
+        "skillId": 242
+      },
+      {
+        "level": 30,
+        "note": "",
+        "skillId": 243
+      }
     ],
     "name": "Alquimista",
     "note": "Balastrus - Classe especializada em suporte, bombas e tecnologia.",
@@ -128,18 +225,58 @@
     "id": 3,
     "expParams": [4, 50, 150, 1],
     "traits": [
-      { "code": 22, "dataId": 0, "value": 1 },
-      { "code": 22, "dataId": 1, "value": 0 },
-      { "code": 22, "dataId": 2, "value": 0 },
-      { "code": 21, "dataId": 3, "value": 0.1 },
-      { "code": 21, "dataId": 0, "value": 0.1 },
-      { "code": 41, "dataId": 2, "value": 1 }
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 1
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0
+      },
+      {
+        "code": 21,
+        "dataId": 3,
+        "value": 0.1
+      },
+      {
+        "code": 21,
+        "dataId": 0,
+        "value": 0.1
+      },
+      {
+        "code": 41,
+        "dataId": 2,
+        "value": 1
+      }
     ],
     "learnings": [
-      { "level": 5, "note": "", "skillId": 244 },
-      { "level": 10, "note": "", "skillId": 245 },
-      { "level": 17, "note": "", "skillId": 246 },
-      { "level": 30, "note": "", "skillId": 247 }
+      {
+        "level": 5,
+        "note": "",
+        "skillId": 244
+      },
+      {
+        "level": 10,
+        "note": "",
+        "skillId": 245
+      },
+      {
+        "level": 17,
+        "note": "",
+        "skillId": 246
+      },
+      {
+        "level": 30,
+        "note": "",
+        "skillId": 247
+      }
     ],
     "name": "Paladin",
     "note": "Kilin - Classe especializada em defesa e proteção do grupo.",
@@ -191,17 +328,53 @@
     "id": 4,
     "expParams": [4, 50, 150, 1],
     "traits": [
-      { "code": 22, "dataId": 0, "value": 0.9 },
-      { "code": 22, "dataId": 1, "value": 0.05 },
-      { "code": 22, "dataId": 2, "value": 0.05 },
-      { "code": 21, "dataId": 2, "value": 0.1 },
-      { "code": 41, "dataId": 2, "value": 1 }
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.9
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.05
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.05
+      },
+      {
+        "code": 21,
+        "dataId": 2,
+        "value": 0.1
+      },
+      {
+        "code": 41,
+        "dataId": 2,
+        "value": 1
+      }
     ],
     "learnings": [
-      { "level": 5, "note": "", "skillId": 248 },
-      { "level": 10, "note": "", "skillId": 249 },
-      { "level": 14, "note": "", "skillId": 250 },
-      { "level": 30, "note": "", "skillId": 251 }
+      {
+        "level": 5,
+        "note": "",
+        "skillId": 248
+      },
+      {
+        "level": 10,
+        "note": "",
+        "skillId": 249
+      },
+      {
+        "level": 14,
+        "note": "",
+        "skillId": 250
+      },
+      {
+        "level": 30,
+        "note": "",
+        "skillId": 251
+      }
     ],
     "name": "Berserker",
     "note": "Mhordred - Classe especializada em dano brutal ofensivo.",
@@ -251,19 +424,63 @@
     "id": 5,
     "expParams": [4, 50, 150, 1],
     "traits": [
-      { "code": 22, "dataId": 0, "value": 1.05 },
-      { "code": 22, "dataId": 1, "value": 0.05 },
-      { "code": 22, "dataId": 2, "value": 0.15 },
-      { "code": 33, "dataId": 0, "value": -5 },
-      { "code": 52, "dataId": 1, "value": 1 },
-      { "code": 51, "dataId": 8, "value": 1 },
-      { "code": 41, "dataId": 2, "value": 1 }
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 1.05
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.05
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.15
+      },
+      {
+        "code": 33,
+        "dataId": 0,
+        "value": -5
+      },
+      {
+        "code": 52,
+        "dataId": 1,
+        "value": 1
+      },
+      {
+        "code": 51,
+        "dataId": 8,
+        "value": 1
+      },
+      {
+        "code": 41,
+        "dataId": 2,
+        "value": 1
+      }
     ],
     "learnings": [
-      { "level": 5, "note": "", "skillId": 252 },
-      { "level": 12, "note": "", "skillId": 253 },
-      { "level": 20, "note": "", "skillId": 254 },
-      { "level": 30, "note": "", "skillId": 255 }
+      {
+        "level": 5,
+        "note": "",
+        "skillId": 252
+      },
+      {
+        "level": 12,
+        "note": "",
+        "skillId": 253
+      },
+      {
+        "level": 20,
+        "note": "",
+        "skillId": 254
+      },
+      {
+        "level": 30,
+        "note": "",
+        "skillId": 255
+      }
     ],
     "name": "Fundeiro",
     "note": "Thorin - Classe especializada em combate à distância com funda.",
@@ -312,13 +529,41 @@
     "id": 6,
     "expParams": [30, 20, 30, 30],
     "traits": [
-      { "code": 23, "dataId": 0, "value": 1 },
-      { "code": 22, "dataId": 0, "value": 0.95 },
-      { "code": 22, "dataId": 1, "value": 0.05 },
-      { "code": 22, "dataId": 2, "value": 0.04 },
-      { "code": 41, "dataId": 1, "value": 0 },
-      { "code": 51, "dataId": 1, "value": 0 },
-      { "code": 52, "dataId": 1, "value": 0 }
+      {
+        "code": 23,
+        "dataId": 0,
+        "value": 1
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.95
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.05
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.04
+      },
+      {
+        "code": 41,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 51,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 52,
+        "dataId": 1,
+        "value": 0
+      }
     ],
     "learnings": [],
     "name": "",
@@ -371,13 +616,41 @@
     "id": 7,
     "expParams": [30, 20, 30, 30],
     "traits": [
-      { "code": 23, "dataId": 0, "value": 1 },
-      { "code": 22, "dataId": 0, "value": 0.95 },
-      { "code": 22, "dataId": 1, "value": 0.05 },
-      { "code": 22, "dataId": 2, "value": 0.04 },
-      { "code": 41, "dataId": 1, "value": 0 },
-      { "code": 51, "dataId": 1, "value": 0 },
-      { "code": 52, "dataId": 1, "value": 0 }
+      {
+        "code": 23,
+        "dataId": 0,
+        "value": 1
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.95
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.05
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.04
+      },
+      {
+        "code": 41,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 51,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 52,
+        "dataId": 1,
+        "value": 0
+      }
     ],
     "learnings": [],
     "name": "",
@@ -430,13 +703,41 @@
     "id": 8,
     "expParams": [30, 20, 30, 30],
     "traits": [
-      { "code": 23, "dataId": 0, "value": 1 },
-      { "code": 22, "dataId": 0, "value": 0.95 },
-      { "code": 22, "dataId": 1, "value": 0.05 },
-      { "code": 22, "dataId": 2, "value": 0.04 },
-      { "code": 41, "dataId": 1, "value": 0 },
-      { "code": 51, "dataId": 1, "value": 0 },
-      { "code": 52, "dataId": 1, "value": 0 }
+      {
+        "code": 23,
+        "dataId": 0,
+        "value": 1
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.95
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.05
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.04
+      },
+      {
+        "code": 41,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 51,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 52,
+        "dataId": 1,
+        "value": 0
+      }
     ],
     "learnings": [],
     "name": "",
@@ -489,13 +790,41 @@
     "id": 9,
     "expParams": [30, 20, 30, 30],
     "traits": [
-      { "code": 23, "dataId": 0, "value": 1 },
-      { "code": 22, "dataId": 0, "value": 0.95 },
-      { "code": 22, "dataId": 1, "value": 0.05 },
-      { "code": 22, "dataId": 2, "value": 0.04 },
-      { "code": 41, "dataId": 1, "value": 0 },
-      { "code": 51, "dataId": 1, "value": 0 },
-      { "code": 52, "dataId": 1, "value": 0 }
+      {
+        "code": 23,
+        "dataId": 0,
+        "value": 1
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.95
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.05
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.04
+      },
+      {
+        "code": 41,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 51,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 52,
+        "dataId": 1,
+        "value": 0
+      }
     ],
     "learnings": [],
     "name": "",
@@ -548,20 +877,68 @@
     "id": 10,
     "expParams": [30, 20, 30, 30],
     "traits": [
-      { "code": 23, "dataId": 0, "value": 1 },
-      { "code": 22, "dataId": 0, "value": 0.95 },
-      { "code": 22, "dataId": 1, "value": 0.05 },
-      { "code": 22, "dataId": 2, "value": 0.05 },
-      { "code": 41, "dataId": 2, "value": 0 },
-      { "code": 41, "dataId": 1, "value": 0 },
-      { "code": 51, "dataId": 1, "value": 0 },
-      { "code": 52, "dataId": 1, "value": 0 }
+      {
+        "code": 23,
+        "dataId": 0,
+        "value": 1
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.95
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.05
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.05
+      },
+      {
+        "code": 41,
+        "dataId": 2,
+        "value": 0
+      },
+      {
+        "code": 41,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 51,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 52,
+        "dataId": 1,
+        "value": 0
+      }
     ],
     "learnings": [
-      { "level": 1, "skillId": 29, "note": "" },
-      { "level": 1, "skillId": 30, "note": "" },
-      { "level": 1, "skillId": 31, "note": "" },
-      { "level": 1, "skillId": 32, "note": "" }
+      {
+        "level": 1,
+        "skillId": 29,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 30,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 31,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 32,
+        "note": ""
+      }
     ],
     "name": "Teste",
     "note": "",
