@@ -3718,8 +3718,20 @@
     "members": [
       {
         "enemyId": 100,
-        "x": 178,
+        "x": 115,
         "y": 456,
+        "hidden": false
+      },
+      {
+        "enemyId": 100,
+        "x": 112,
+        "y": 233,
+        "hidden": false
+      },
+      {
+        "enemyId": 100,
+        "x": 253,
+        "y": 337,
         "hidden": false
       }
     ],

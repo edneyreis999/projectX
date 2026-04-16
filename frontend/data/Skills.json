@@ -1570,7 +1570,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Passo de Brisa",
-    "note": "",
+    "note": "  <JS Post-Start Action>\n  var thisSkillId = 47;\n  var embaloIds = [67, 69, 70];\n\n  console.log(\"=== EMBALO DEBUG ===\");\n  console.log(\"_embaloLastSkill anterior: \" + user._embaloLastSkill);\n  console.log(\"_embaloCount anterior: \" + user._embaloCount);\n\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n\n  console.log(\"_embaloCount novo: \" + user._embaloCount);\n\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    console.log(\"TP bonus: \" + tpFinal);\n    user.gainTp(tpFinal);\n  }\n\n  for (var i = 0; i < embaloIds.length; i++) {\n    user.removeState(embaloIds[i]);\n  }\n  user.addState(embaloIds[user._embaloCount - 1]);\n\n  console.log(\"State aplicado: \" + embaloIds[user._embaloCount - 1]);\n  console.log(\"=== FIM EMBALO DEBUG ===\");\n  </JS Post-Start Action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -1601,7 +1601,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Golpe Marcador",
-    "note": "",
+    "note": "<Apply State: 30% Marcacao>\n \n <JS Post-Start Action>\n  var thisSkillId = 48;\n  var embaloIds = [67, 69, 70];\n\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    user.gainTp(tpFinal);\n  }\n\n  for (var i = 0; i < embaloIds.length; i++) {\n    user.removeState(embaloIds[i]);\n  }\n  user.addState(embaloIds[user._embaloCount - 1]);\n  </JS Post-Start Action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -1624,14 +1624,7 @@
       "variance": 20
     },
     "description": "Golpe baixo com chance de desestabilizar o oponente.",
-    "effects": [
-      {
-        "code": 21,
-        "dataId": 68,
-        "value1": 0.4,
-        "value2": 0
-      }
-    ],
+    "effects": [],
     "hitType": 1,
     "iconIndex": 82,
     "message1": "",
@@ -1639,7 +1632,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Rasteira",
-    "note": "",
+    "note": "<Apply State: 40% Slow>  \n\n<JS Post-Start Action>\n  var thisSkillId = 49;\n  var embaloIds = [67, 69, 70];\n\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    user.gainTp(tpFinal);\n  }\n\n  for (var i = 0; i < embaloIds.length; i++) {\n    user.removeState(embaloIds[i]);\n  }\n  user.addState(embaloIds[user._embaloCount - 1]);\n  </JS Post-Start Action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -1662,14 +1655,7 @@
       "variance": 20
     },
     "description": "Soco rapido na altura dos olhos, chance de cegueira.",
-    "effects": [
-      {
-        "code": 21,
-        "dataId": 5,
-        "value1": 0.3,
-        "value2": 0
-      }
-    ],
+    "effects": [],
     "hitType": 1,
     "iconIndex": 77,
     "message1": "",
@@ -1677,7 +1663,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Punho Cegante",
-    "note": "",
+    "note": "<Apply State: 30% Cegueira>    \n<JS Post-Start Action>\n  var thisSkillId = 50;\n  var embaloIds = [67, 69, 70];\n\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    user.gainTp(tpFinal);\n  }\n\n  for (var i = 0; i < embaloIds.length; i++) {\n    user.removeState(embaloIds[i]);\n  }\n  user.addState(embaloIds[user._embaloCount - 1]);\n  </JS Post-Start Action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -1708,7 +1694,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Combo Duplo",
-    "note": "<Repeat Targets: 2>\n<ATB After Gauge: -5%>",
+    "note": "<Common Event Key: Combo Duplo>\n<ATB After Gauge: -5%>\n\n<JS Post-Start Action>\n  var thisSkillId = 51;\n  var embaloIds = [67, 69, 70];\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    user.gainTp(tpFinal);\n  }\n  for (var i = 0; i < embaloIds.length; i++) {\n    user.removeState(embaloIds[i]);\n  }\n  user.addState(embaloIds[user._embaloCount - 1]);\n</JS Post-Start Action>\n",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -1731,14 +1717,7 @@
       "variance": 20
     },
     "description": "Impacto forte que pode atordoar o oponente.",
-    "effects": [
-      {
-        "code": 21,
-        "dataId": 13,
-        "value1": 1,
-        "value2": 0
-      }
-    ],
+    "effects": [],
     "hitType": 1,
     "iconIndex": 73,
     "message1": "",
@@ -1746,7 +1725,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Golpe Atordoante",
-    "note": "",
+    "note": "<Apply State: 100% Atordoamento>  \n<JS Post-Start Action>\n  var thisSkillId = 52;\n  var embaloIds = [67, 69, 70];\n\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    user.gainTp(tpFinal);\n  }\n\n  for (var i = 0; i < embaloIds.length; i++) {\n    user.removeState(embaloIds[i]);\n  }\n  user.addState(embaloIds[user._embaloCount - 1]);\n  </JS Post-Start Action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -1777,7 +1756,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Punho Devastador",
-    "note": "<Armor Pen: 25%>",
+    "note": "<Armor Pen: 25%>\n\n<JS Post-Start Action>\n  var thisSkillId = 53;\n  var embaloIds = [67, 69, 70];\n\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    user.gainTp(tpFinal);\n  }\n\n  for (var i = 0; i < embaloIds.length; i++) {\n    user.removeState(embaloIds[i]);\n  }\n  user.addState(embaloIds[user._embaloCount - 1]);\n  </JS Post-Start Action>",
     "occasion": 0,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -1800,20 +1779,7 @@
       "variance": 20
     },
     "description": "Filena se buffa com ATK mas sacrifica sua defesa.",
-    "effects": [
-      {
-        "code": 31,
-        "dataId": 2,
-        "value1": 3,
-        "value2": 0
-      },
-      {
-        "code": 32,
-        "dataId": 3,
-        "value1": 3,
-        "value2": 0
-      }
-    ],
+    "effects": [],
     "hitType": 1,
     "iconIndex": 0,
     "message1": "",
@@ -1821,7 +1787,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Ira da Duelista",
-    "note": "<ATB After Gauge: -25%>",
+    "note": "<ATB After Gauge: -25%>\n\n<JS Post-Start Action>\n  // Self-buffs (ATK+50% e DEF-50%) aplicados no user via JS\n  // Nota: <Apply State> aplica no TARGET, nao no user. Para self-buffs, usar user.addState().\n  // Substitua XX pelo ID do state \"ATK +50%\" e YY pelo ID do state \"DEF -50%\" quando definidos\n  user.addBuff(2, 2);\n  user.addDebuff(3, 2);\n  // logica padrao de Embalo\n  var thisSkillId = 54;\n  var embaloIds = [67, 69, 70];\n\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    user.gainTp(tpFinal);\n  }\n\n  for (var i = 0; i < embaloIds.length; i++) {\n    user.removeState(embaloIds[i]);\n  }\n  user.addState(embaloIds[user._embaloCount - 1]);\n  </JS Post-Start Action>",
     "occasion": 0,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -1852,7 +1818,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Danca dos Ventos",
-    "note": "<Repeat Targets: 4>\n<ATB Cannot Be Interrupted>\n<ATB After Gauge: -20%>",
+    "note": "<ATB Cannot Be Interrupted>\n<ATB After Gauge: -20%>\n\n  <Direct>\n  # Hit 1 - no alvo original\n  ANIM: Attack Animation\n    Targets: Target\n    Wait For Animation?: true\n  MECH: Action Effect\n    Targets: Target\n\n  # Hit 2 - alvo aleatorio diferente\n  TARGET: Random Target\n    Force Random?: true\n  ANIM: Attack Animation\n    Targets: Current Target\n    Wait For Animation?: true\n  MECH: Action Effect\n    Targets: Current Target\n\n  # Hit 3 - alvo aleatorio diferente\n  TARGET: Random Target\n    Force Random?: true\n  ANIM: Attack Animation\n    Targets: Current Target\n    Wait For Animation?: true\n  MECH: Action Effect\n    Targets: Current Target\n\n  # Hit 4 - alvo aleatorio diferente\n  TARGET: Random Target\n    Force Random?: true\n  ANIM: Attack Animation\n    Targets: Current Target\n    Wait For Animation?: true\n  MECH: Action Effect\n    Targets: Current Target\n\n  MOVE: Home Reset\n    Targets: User\n    Wait For Movement?: true\n  </Direct>\n\n<JS Post-Start Action>\n  var thisSkillId = 55;\n  var embaloIds = [67, 69, 70];\n\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    user.gainTp(tpFinal);\n  }\n\n  for (var i = 0; i < embaloIds.length; i++) {\n    user.removeState(embaloIds[i]);\n  }\n  user.addState(embaloIds[user._embaloCount - 1]);\n  </JS Post-Start Action>",
     "occasion": 0,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -3574,30 +3540,37 @@
     "animationId": 0,
     "damage": {
       "critical": false,
-      "elementId": 0,
-      "formula": "0",
-      "type": 0,
+      "elementId": 1,
+      "formula": "120",
+      "type": 1,
       "variance": 20
     },
-    "description": "",
-    "effects": [],
-    "hitType": 0,
-    "iconIndex": 0,
+    "description": "Sequencia de dois golpes com knockback no segundo ataque.",
+    "effects": [
+      {
+        "code": 44,
+        "dataId": 106,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 1,
+    "iconIndex": 88,
     "message1": "",
     "message2": "",
     "messageType": 1,
     "mpCost": 0,
-    "name": "",
-    "note": "",
-    "occasion": 0,
+    "name": "Combo Duplo Knockback",
+    "note": "<Custom Action Sequence>\n<ATB After Gauge: -5%>\n",
+    "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
     "requiredWtypeId2": 0,
     "scope": 1,
     "speed": 0,
-    "stypeId": 1,
+    "stypeId": 2,
     "successRate": 100,
-    "tpCost": 0,
+    "tpCost": 30,
     "tpGain": 0
   },
   {
