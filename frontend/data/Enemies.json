@@ -939,13 +939,6 @@
         "conditionParam2": 0
       },
       {
-        "skillId": 1,
-        "rating": 3,
-        "conditionType": 0,
-        "conditionParam1": 0,
-        "conditionParam2": 0
-      },
-      {
         "skillId": 41,
         "rating": 9,
         "conditionType": 0,
@@ -1011,13 +1004,6 @@
         "conditionParam2": 0
       },
       {
-        "skillId": 1,
-        "rating": 5,
-        "conditionType": 0,
-        "conditionParam1": 0,
-        "conditionParam2": 0
-      },
-      {
         "skillId": 38,
         "rating": 1,
         "conditionType": 0,
@@ -1049,7 +1035,7 @@
         "denominator": 1
       }
     ],
-    "note": "<JS Post-Start Battle>\n  this._isMinionEsporo = true;\n  this._minionId = 'ESPORO_' + Math.floor(Math.random() * 10000);\n</JS Post-Start Battle>\n<ATB Field Gauge Face: Bosses, 0>"
+    "note": "<JS Post-Start Battle>\n  this._isMinionEsporo = true;\n  this._minionId = 'ESPORO_' + Math.floor(Math.random() * 10000);\n</JS Post-Start Battle>\n<ATB Field Gauge Face: Bosses, 0>\n<Sideview Battler: EsporoPestesporo>"
   },
   {
     "id": 30,
