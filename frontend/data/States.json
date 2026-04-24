@@ -4,7 +4,7 @@
     "id": 1,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
-    "iconIndex": 1,
+    "iconIndex": 17,
     "maxTurns": 1,
     "message1": "%1 foi derrubado!",
     "message2": "%1 foi morto!",
