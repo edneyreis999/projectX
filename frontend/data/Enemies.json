@@ -218,7 +218,7 @@
         "denominator": 1
       }
     ],
-    "note": "<ATB Field Gauge Face: Bosses, 4>"
+    "note": "<ATB Field Gauge Face: Bosses, 4>\n<Sideview Battler: LoboAlpha>"
   },
   {
     "id": 7,
@@ -268,7 +268,7 @@
         "denominator": 1
       }
     ],
-    "note": "<ATB Field Gauge Face: Bosses, 3>"
+    "note": "<ATB Field Gauge Face: Bosses, 3>\n<Sideview Battler: LoboGuerreiro>"
   },
   {
     "id": 8,
@@ -636,7 +636,7 @@
         "denominator": 1
       }
     ],
-    "note": "<BTB Initial BP: +1>\n<BTB Maximum BP: +3>\n<BTB Minimum BP: -3>\n<BTB BP Regen: +1>\n<BTB Maximum Actions: +3>\n<BTB Turn Order Icon: 98>\n<BTB Turn Order Face: Nature, 0>\n<ATB Field Gauge Face: Bosses, 2>"
+    "note": "<BTB Initial BP: +1>\n<BTB Maximum BP: +3>\n<BTB Minimum BP: -3>\n<BTB BP Regen: +1>\n<BTB Maximum Actions: +3>\n<BTB Turn Order Icon: 98>\n<BTB Turn Order Face: Nature, 0>\n<ATB Field Gauge Face: Bosses, 2>\n<Sideview Battler: Cristaleao>"
   },
   {
     "id": 18,
