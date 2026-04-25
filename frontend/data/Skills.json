@@ -6,7 +6,7 @@
     "damage": {
       "critical": true,
       "elementId": -1,
-      "formula": "a.atk * 4 - b.def * 2",
+      "formula": "0.5",
       "type": 1,
       "variance": 20
     },

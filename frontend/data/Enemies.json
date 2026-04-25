@@ -2903,8 +2903,8 @@
   {
     "id": 99,
     "name": "Boneco T Atk",
-    "battlerName": "Coreto_Cristaleao",
-    "battlerHue": 0,
+    "battlerName": "Esporo do Pestesporo",
+    "battlerHue": 185,
     "exp": 0,
     "gold": 0,
     "params": [999999, 0, 100, 0, 0, 0, 100, 0],
@@ -2917,7 +2917,23 @@
         "conditionParam2": 0
       }
     ],
-    "traits": [],
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.95
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.05
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.05
+      }
+    ],
     "dropItems": [
       {
         "dataId": 0,

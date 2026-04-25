@@ -3768,8 +3768,20 @@
     "members": [
       {
         "enemyId": 99,
-        "x": 199,
-        "y": 513,
+        "x": 88,
+        "y": 423,
+        "hidden": false
+      },
+      {
+        "enemyId": 99,
+        "x": 77,
+        "y": 156,
+        "hidden": false
+      },
+      {
+        "enemyId": 99,
+        "x": 211,
+        "y": 287,
         "hidden": false
       }
     ],
