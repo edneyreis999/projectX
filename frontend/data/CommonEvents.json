@@ -4808,7 +4808,7 @@
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "--- Killin ---",
     "switchId": 1,
     "trigger": 0
   },
@@ -4816,13 +4816,450 @@
     "id": 57,
     "list": [
       {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["============================DESCRIPTION============================"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Setup: Display action, immortal ON"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Jump to Ally: Killin jumps to ally"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Defend + Fortalecer: defend pose + animation 53 on ally"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Action Effect: apply Bodyguard state"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Finish: Home Reset = true (Killin returns to home)"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["===================================================================="]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Setup"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Displays action name"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Makes targets immortal"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Set_SetupAction",
+          "ACSET: Setup Action Set",
+          {
+            "DisplayAction:eval": "true",
+            "ApplyImmortal:eval": "true",
+            "ActionStart:eval": "false",
+            "WaitForMovement:eval": "false",
+            "CastAnimation:eval": "false",
+            "WaitForAnimation:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Display Action = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Immortal: On = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Battle Step = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Cast Animation = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Animation = false"]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Jump to Ally"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- User moves to front base of ally + 24px"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- User jumps 100px"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Wait until jump completes"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Movement_MoveToTarget",
+          "MOVE: Move To Target(s)",
+          {
+            "Targets1:arraystr": "[\"user\"]",
+            "Targets2:arraystr": "[\"current target\"]",
+            "TargetLocation:str": "front base",
+            "MeleeDistance:eval": "0",
+            "OffsetAdjust:str": "horz",
+            "OffsetX:eval": "24",
+            "OffsetY:eval": "0",
+            "Duration:eval": "12",
+            "FaceDirection:eval": "true",
+            "EasingType:str": "Linear",
+            "MotionType:str": "walk",
+            "WaitForMovement:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets (Moving) = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets (Destination) = [\"current target\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Target Location = front base"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Melee Distance = 0"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Offset Adjustment = horz"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Offset: X = 24"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Offset: Y = 0"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 12"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Face Destination? = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Movement Easing = Linear"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Movement Motion = walk"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement? = false"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Movement_Jump",
+          "MOVE: Jump",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "Height:eval": "100",
+            "Duration:eval": "12",
+            "WaitForJump:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Desired Height = 100"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 12"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Jump? = false"]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [12]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Defend + Fortalecer"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- User performs defend motion"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Play Fortalecer 3 animation on ally"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Motion_MotionType",
+          "MOTION: Motion Type",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "MotionType:str": "defend",
+            "ShowWeapon:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Motion Type = defend"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Show Weapon? = true"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Animation_ShowAnimation",
+          "ANIM: Show Animation",
+          {
+            "Targets:arraystr": "[\"current target\"]",
+            "AnimationID:num": 53,
+            "Mirror:eval": "false",
+            "WaitForAnimation:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"current target\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Animation ID = 53"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Mirror Animation = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Animation? = true"]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Action Effect"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Apply Bodyguard state to ally"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Mechanics_ActionEffect",
+          "MECH: Action Effect",
+          {
+            "Targets:arraystr": "[\"current target\"]"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"current target\"]"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Animation_ActionAnimation",
+          "ANIM: Action Animation",
+          {
+            "Targets:arraystr": "[\"current target\"]",
+            "Mirror:eval": "false",
+            "WaitForAnimation:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"current target\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Mirror Animation = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Animation? = false"]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [8]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Finish"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Immortal off, clear log, home reset ON"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Set_FinishAction",
+          "ACSET: Finish Action",
+          {
+            "ApplyImmortal:eval": "true",
+            "WaitForNewLine:eval": "true",
+            "WaitForEffect:eval": "true",
+            "ClearBattleLog:eval": "true",
+            "ActionEnd:eval": "true",
+            "WaitForMovement:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Immortal: Off = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For New Line = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Effects = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Clear Battle Log = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Home Reset = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement = true"]
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "",
-    "switchId": 1,
+    "name": "[Bodyguard]",
+    "switchId": 0,
     "trigger": 0
   },
   {

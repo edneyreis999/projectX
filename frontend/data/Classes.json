@@ -243,12 +243,12 @@
       {
         "code": 21,
         "dataId": 3,
-        "value": 0.1
+        "value": 1.1
       },
       {
         "code": 21,
         "dataId": 0,
-        "value": 0.1
+        "value": 1.1
       },
       {
         "code": 41,
@@ -258,24 +258,54 @@
     ],
     "learnings": [
       {
-        "level": 5,
-        "note": "",
-        "skillId": 244
+        "level": 1,
+        "skillId": 64,
+        "note": ""
       },
       {
-        "level": 10,
-        "note": "",
-        "skillId": 245
+        "level": 1,
+        "skillId": 65,
+        "note": ""
       },
       {
-        "level": 17,
-        "note": "",
-        "skillId": 246
+        "level": 1,
+        "skillId": 66,
+        "note": ""
       },
       {
-        "level": 30,
-        "note": "",
-        "skillId": 247
+        "level": 1,
+        "skillId": 67,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 68,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 69,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 70,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 71,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 72,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 73,
+        "note": ""
       }
     ],
     "name": "Paladin",
