@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Action Sequence: [High Jump]
+ID: 85
+Gerado automaticamente a partir de CommonEvents.json
+-->
+<ActionSequenceGuide>
+  <metadata>
+    <guideTitle>[High Jump]</guideTitle>
+    <skillId>85</skillId>
+    <skillName>[High Jump]</skillName>
+    <skillType>ActionSequence</skillType>
+    <generatedAt>2026-04-16T20:13:02.013Z</generatedAt>
+    <validated>true</validated>
+  </metadata>
+
+  <skillContext>
+    <damageFormula>v.skill.damageFormula</damageFormula>
+    <tpCost>v.skill.tpCost</tpCost>
+    <scope>v.skill.scope</scope>
+    <description>Action Sequence para [High Jump]</description>
+    <notetags>
+      <notetag>&lt;Custom Action Sequence&gt;</notetag>
+    </notetags>
+  </skillContext>
+
+  <sequenceStructure>
+    <hasSetup>true</hasSetup>
+    <numberOfHits>4</numberOfHits>
+    <targetType>single</targetType>
+    <hasFinish>true</hasFinish>
+  </sequenceStructure>
+  <setup>
+    <displayAction>true</displayAction>
+    <applyImmortal>true</applyImmortal>
+    <battleStep>false</battleStep>
+    <waitForMovement>false</waitForMovement>
+    <castAnimation>false</castAnimation>
+    <waitForAnimation>false</waitForAnimation>
+  </setup>
+  <hits>
+    <hit id="1">
+      <label>Crouch</label>
+      <description>User performs abnormal motion for crouching effect Wait until Crouch is complete</description>
+      <baseCommonEventId></baseCommonEventId>
+
+      <usesRandomTarget>false</usesRandomTarget>
+      <randomTargetLabel></randomTargetLabel>
+
+      <movement>
+        <moveToTarget>
+          <enabled>false</enabled>
+        </moveToTarget>
+        <jump>
+          <enabled>false</enabled>
+        </jump>
+        <spin>
+          <enabled>false</enabled>
+        </spin>
+        <moveDistance>
+          <enabled>false</enabled>
+        </moveDistance>
+      </movement>
+
+      <timing>
+        <type>waitForEvents</type>
+        <frames>12</frames>
+      </timing>
+
+      <actionEffect>
+        <hasMotionType>true</hasMotionType>
+        <motionType>abnormal</motionType>
+        <showWeapon>true</showWeapon>
+        <targets>["current target"]</targets>
+        <mirrorAnimation>false</mirrorAnimation>
+        <waitForAnimation>false</waitForAnimation>
+      </actionEffect>
+
+      <postHitMovement>
+        <enabled>false</enabled>
+      </postHitMovement>
+    </hit>
+    <hit id="2">
+      <label>High Jump</label>
+      <description>User floats to 500 px and performs evade motion Evasion1 SE plays for jump sound Wait until High Jump is complete + 15 frames</description>
+      <baseCommonEventId></baseCommonEventId>
+
+      <usesRandomTarget>false</usesRandomTarget>
+      <randomTargetLabel></randomTargetLabel>
+
+      <movement>
+        <moveToTarget>
+          <enabled>false</enabled>
+        </moveToTarget>
+        <jump>
+          <enabled>false</enabled>
+        </jump>
+        <spin>
+          <enabled>false</enabled>
+        </spin>
+        <moveDistance>
+          <enabled>false</enabled>
+        </moveDistance>
+      </movement>
+
+      <timing>
+        <type>waitForEvents</type>
+        <frames>27</frames>
+      </timing>
+
+      <actionEffect>
+        <hasMotionType>true</hasMotionType>
+        <motionType>evade</motionType>
+        <showWeapon>false</showWeapon>
+        <targets>["current target"]</targets>
+        <mirrorAnimation>false</mirrorAnimation>
+        <waitForAnimation>false</waitForAnimation>
+      </actionEffect>
+
+      <postHitMovement>
+        <enabled>false</enabled>
+      </postHitMovement>
+    </hit>
+    <hit id="3">
+      <label>Drop</label>
+      <description>User floats to 0 height Perform attack motion based on user&apos;s weapon (sword swing/thrust etc.) Wait until Drop is complete (minus 1 frame)</description>
+      <baseCommonEventId></baseCommonEventId>
+
+      <usesRandomTarget>false</usesRandomTarget>
+      <randomTargetLabel></randomTargetLabel>
+
+      <movement>
+        <moveToTarget>
+          <enabled>false</enabled>
+        </moveToTarget>
+        <jump>
+          <enabled>false</enabled>
+        </jump>
+        <spin>
+          <enabled>false</enabled>
+        </spin>
+        <moveDistance>
+          <enabled>false</enabled>
+        </moveDistance>
+      </movement>
+
+      <timing>
+        <type>waitForEvents</type>
+        <frames>11</frames>
+      </timing>
+
+      <actionEffect>
+        <hasMotionType>true</hasMotionType>
+        <motionType>attack</motionType>
+        <showWeapon>true</showWeapon>
+        <targets>["current target"]</targets>
+        <mirrorAnimation>false</mirrorAnimation>
+        <waitForAnimation>false</waitForAnimation>
+      </actionEffect>
+
+      <postHitMovement>
+        <enabled>false</enabled>
+      </postHitMovement>
+    </hit>
+    <hit id="4">
+      <label>Action Effect</label>
+      <description>Deal damage to target based on skill&apos;s damage formula and apply any  buffs or debuffs based on skill&apos;s effects Play animation on target based on skill&apos;s settings Wait 12 frames</description>
+      <baseCommonEventId></baseCommonEventId>
+
+      <usesRandomTarget>false</usesRandomTarget>
+      <randomTargetLabel></randomTargetLabel>
+
+      <movement>
+        <moveToTarget>
+          <enabled>false</enabled>
+        </moveToTarget>
+        <jump>
+          <enabled>false</enabled>
+        </jump>
+        <spin>
+          <enabled>false</enabled>
+        </spin>
+        <moveDistance>
+          <enabled>false</enabled>
+        </moveDistance>
+      </movement>
+
+      <timing>
+        <type>waitForEvents</type>
+        <frames>12</frames>
+      </timing>
+
+      <actionEffect>
+        <hasMotionType>false</hasMotionType>
+        <motionType>attack</motionType>
+        <showWeapon>true</showWeapon>
+        <targets>["current target"]</targets>
+        <mirrorAnimation>false</mirrorAnimation>
+        <waitForAnimation>false</waitForAnimation>
+      </actionEffect>
+
+      <postHitMovement>
+        <enabled>false</enabled>
+      </postHitMovement>
+    </hit>
+  </hits>
+  <finish>
+    <waitForNewLine>true</waitForNewLine>
+    <waitForEffects>true</waitForEffects>
+    <clearBattleLog>true</clearBattleLog>
+    <homeReset>true</homeReset>
+    <waitForMovement>true</waitForMovement>
+    <applyImmortal>true</applyImmortal>
+  </finish>
+  <references>
+    <baseCommonEvents>
+      <commonEvent id="85">[High Jump]</commonEvent>
+    </baseCommonEvents>
+    <documentationFiles>
+      <file>frontend/data/CommonEvents.json</file>
+    </documentationFiles>
+  </references>
+
+  <validation>
+    <allParametersValidated>true</allParametersValidated>
+    <validatedAgainst>
+      <commonEvent id="85" validated="true">[High Jump]</commonEvent>
+    </validatedAgainst>
+    <discrepanciesFound>
+    </discrepanciesFound>
+  </validation>
+
+  <filesAffected>
+    <file path="frontend/data/CommonEvents.json" action="reference">
+      <description>Common Event original usado como base</description>
+    </file>
+  </filesAffected>
+
+  <notes>
+    <note>XML gerado automaticamente a partir do Common Event ID 85</note>
+  </notes>
+</ActionSequenceGuide>

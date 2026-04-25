@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Action Sequence: [Increment Blade]
+ID: 147
+Gerado automaticamente a partir de CommonEvents.json
+-->
+<ActionSequenceGuide>
+  <metadata>
+    <guideTitle>[Increment Blade]</guideTitle>
+    <skillId>147</skillId>
+    <skillName>[Increment Blade]</skillName>
+    <skillType>ActionSequence</skillType>
+    <generatedAt>2026-04-16T20:13:02.021Z</generatedAt>
+    <validated>true</validated>
+  </metadata>
+
+  <skillContext>
+    <damageFormula>v.skill.damageFormula</damageFormula>
+    <tpCost>v.skill.tpCost</tpCost>
+    <scope>v.skill.scope</scope>
+    <description>Action Sequence para [Increment Blade]</description>
+    <notetags>
+      <notetag>&lt;Custom Action Sequence&gt;</notetag>
+    </notetags>
+  </skillContext>
+
+  <sequenceStructure>
+    <hasSetup>true</hasSetup>
+    <numberOfHits>1</numberOfHits>
+    <targetType>single</targetType>
+    <hasFinish>true</hasFinish>
+  </sequenceStructure>
+  <setup>
+    <displayAction>false</displayAction>
+    <applyImmortal>true</applyImmortal>
+    <battleStep>false</battleStep>
+    <waitForMovement>false</waitForMovement>
+    <castAnimation>false</castAnimation>
+    <waitForAnimation>false</waitForAnimation>
+  </setup>
+  <hits>
+    <hit id="1">
+      <label>Attack</label>
+      <description>User performs attack motion based on user&apos;s weapon (sword swing/thrust etc.) Deal damage to targets based on skill&apos;s damage formula and apply any buffs or debuffs  based on skill&apos;s effects (Shown both in Mech: Custom Damage Formula and in Skill) Play animation on targets based on skill&apos;s settings</description>
+      <baseCommonEventId></baseCommonEventId>
+
+      <usesRandomTarget>false</usesRandomTarget>
+      <randomTargetLabel></randomTargetLabel>
+
+      <movement>
+        <moveToTarget>
+          <enabled>false</enabled>
+        </moveToTarget>
+        <jump>
+          <enabled>false</enabled>
+        </jump>
+        <spin>
+          <enabled>false</enabled>
+        </spin>
+        <moveDistance>
+          <enabled>false</enabled>
+        </moveDistance>
+      </movement>
+
+      <timing>
+        <type>waitForEvents</type>
+        <frames>12</frames>
+      </timing>
+
+      <actionEffect>
+        <hasMotionType>true</hasMotionType>
+        <motionType>attack</motionType>
+        <showWeapon>true</showWeapon>
+        <targets>["all targets"]</targets>
+        <mirrorAnimation>false</mirrorAnimation>
+        <waitForAnimation>false</waitForAnimation>
+      </actionEffect>
+
+      <postHitMovement>
+        <enabled>false</enabled>
+      </postHitMovement>
+    </hit>
+  </hits>
+  <finish>
+    <waitForNewLine>true</waitForNewLine>
+    <waitForEffects>true</waitForEffects>
+    <clearBattleLog>true</clearBattleLog>
+    <homeReset>true</homeReset>
+    <waitForMovement>true</waitForMovement>
+    <applyImmortal>true</applyImmortal>
+  </finish>
+  <references>
+    <baseCommonEvents>
+      <commonEvent id="147">[Increment Blade]</commonEvent>
+    </baseCommonEvents>
+    <documentationFiles>
+      <file>frontend/data/CommonEvents.json</file>
+    </documentationFiles>
+  </references>
+
+  <validation>
+    <allParametersValidated>true</allParametersValidated>
+    <validatedAgainst>
+      <commonEvent id="147" validated="true">[Increment Blade]</commonEvent>
+    </validatedAgainst>
+    <discrepanciesFound>
+    </discrepanciesFound>
+  </validation>
+
+  <filesAffected>
+    <file path="frontend/data/CommonEvents.json" action="reference">
+      <description>Common Event original usado como base</description>
+    </file>
+  </filesAffected>
+
+  <notes>
+    <note>XML gerado automaticamente a partir do Common Event ID 147</note>
+  </notes>
+</ActionSequenceGuide>

@@ -1,18 +1,18 @@
 #!/usr/bin/env node
 /**
- * find_free_ids.js
+ * find_free_vars_and_switches.js
  *
  * Encontra IDs livres de variáveis e switches no projeto RPG Maker MZ.
  *
- * Uso: node scripts/find_free_ids.js [options]
+ * Uso: node scripts/find_free_vars_and_switches.js [options]
  * Opções:
  *   --min-count=<n>  Número mínimo de IDs contíguos necessários (padrão: 5)
  *   --type=<var|sw|all>  Tipo de ID para buscar (padrão: all)
  *   --start=<id>  ID inicial para busca (padrão: 1)
  *
  * Exemplo:
- *   node scripts/find_free_ids.js --min-count=10
- *   node scripts/find_free_ids.js --type=var --min-count=3
+ *   node scripts/find_free_vars_and_switches.js --min-count=10
+ *   node scripts/find_free_vars_and_switches.js --type=var --min-count=3
  */
 
 const fs = require('fs');
