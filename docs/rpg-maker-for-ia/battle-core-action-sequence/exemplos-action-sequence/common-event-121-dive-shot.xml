@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Action Sequence: [Dive Shot]
+ID: 121
+Gerado automaticamente a partir de CommonEvents.json
+-->
+<ActionSequenceGuide>
+  <metadata>
+    <guideTitle>[Dive Shot]</guideTitle>
+    <skillId>121</skillId>
+    <skillName>[Dive Shot]</skillName>
+    <skillType>ActionSequence</skillType>
+    <generatedAt>2026-04-16T20:13:02.018Z</generatedAt>
+    <validated>true</validated>
+  </metadata>
+
+  <skillContext>
+    <damageFormula>v.skill.damageFormula</damageFormula>
+    <tpCost>v.skill.tpCost</tpCost>
+    <scope>v.skill.scope</scope>
+    <description>Action Sequence para [Dive Shot]</description>
+    <notetags>
+      <notetag>&lt;Custom Action Sequence&gt;</notetag>
+    </notetags>
+  </skillContext>
+
+  <sequenceStructure>
+    <hasSetup>true</hasSetup>
+    <numberOfHits>3</numberOfHits>
+    <targetType>single</targetType>
+    <hasFinish>true</hasFinish>
+  </sequenceStructure>
+  <setup>
+    <displayAction>true</displayAction>
+    <applyImmortal>true</applyImmortal>
+    <battleStep>false</battleStep>
+    <waitForMovement>false</waitForMovement>
+    <castAnimation>false</castAnimation>
+    <waitForAnimation>false</waitForAnimation>
+  </setup>
+  <hits>
+    <hit id="1">
+      <label>Dive</label>
+      <description>User moves 700 px forward User jumps 200 px User spins 180 degrees User fades to 0 opacity Wind9 SE plays Wait 5 frames</description>
+      <baseCommonEventId></baseCommonEventId>
+
+      <usesRandomTarget>false</usesRandomTarget>
+      <randomTargetLabel></randomTargetLabel>
+
+      <movement>
+        <moveToTarget>
+          <enabled>false</enabled>
+        </moveToTarget>
+        <jump>
+          <enabled>true</enabled>
+          <targets>["user"]</targets>
+          <height>200</height>
+          <duration>44</duration>
+          <waitForJump>false</waitForJump>
+        </jump>
+        <spin>
+          <enabled>true</enabled>
+          <targets>["user"]</targets>
+          <angle>180</angle>
+          <duration>44</duration>
+          <easingType>Linear</easingType>
+          <revertAngle>false</revertAngle>
+          <waitForSpin>false</waitForSpin>
+        </spin>
+        <moveDistance>
+          <enabled>true</enabled>
+          <targets>["user"]</targets>
+          <distanceAdjust>horz</distanceAdjust>
+          <distanceX>700</distanceX>
+          <distanceY>0</distanceY>
+          <duration>44</duration>
+          <faceDestination>true</faceDestination>
+          <easingType>Linear</easingType>
+          <motionType>walk</motionType>
+          <waitForMovement>false</waitForMovement>
+        </moveDistance>
+      </movement>
+
+      <timing>
+        <type>waitForEvents</type>
+        <frames>5</frames>
+      </timing>
+
+      <actionEffect>
+        <hasMotionType>false</hasMotionType>
+        <motionType>attack</motionType>
+        <showWeapon>true</showWeapon>
+        <targets>["current target"]</targets>
+        <mirrorAnimation>false</mirrorAnimation>
+        <waitForAnimation>false</waitForAnimation>
+      </actionEffect>
+
+      <postHitMovement>
+        <enabled>false</enabled>
+      </postHitMovement>
+    </hit>
+    <hit id="2">
+      <label>Attack Motion</label>
+      <description>User performs attack motion based on weapon equipped Wait 17 frames</description>
+      <baseCommonEventId></baseCommonEventId>
+
+      <usesRandomTarget>false</usesRandomTarget>
+      <randomTargetLabel></randomTargetLabel>
+
+      <movement>
+        <moveToTarget>
+          <enabled>false</enabled>
+        </moveToTarget>
+        <jump>
+          <enabled>false</enabled>
+        </jump>
+        <spin>
+          <enabled>false</enabled>
+        </spin>
+        <moveDistance>
+          <enabled>false</enabled>
+        </moveDistance>
+      </movement>
+
+      <timing>
+        <type>waitForEvents</type>
+        <frames>17</frames>
+      </timing>
+
+      <actionEffect>
+        <hasMotionType>true</hasMotionType>
+        <motionType>attack</motionType>
+        <showWeapon>true</showWeapon>
+        <targets>["current target"]</targets>
+        <mirrorAnimation>false</mirrorAnimation>
+        <waitForAnimation>false</waitForAnimation>
+      </actionEffect>
+
+      <postHitMovement>
+        <enabled>false</enabled>
+      </postHitMovement>
+    </hit>
+    <hit id="3">
+      <label>Action Effect + Opacity</label>
+      <description>Deal damage to targets based on skill&apos;s damage formula and apply any buffs or debuffs  based on skill&apos;s effects Play animation on targets based on skill&apos;s settings User fades to 0 opacity (InQuart = quick fade at end) Wait for Dive to complete</description>
+      <baseCommonEventId></baseCommonEventId>
+
+      <usesRandomTarget>false</usesRandomTarget>
+      <randomTargetLabel></randomTargetLabel>
+
+      <movement>
+        <moveToTarget>
+          <enabled>false</enabled>
+        </moveToTarget>
+        <jump>
+          <enabled>false</enabled>
+        </jump>
+        <spin>
+          <enabled>false</enabled>
+        </spin>
+        <moveDistance>
+          <enabled>false</enabled>
+        </moveDistance>
+      </movement>
+
+      <timing>
+        <type>waitForEvents</type>
+        <frames>22</frames>
+      </timing>
+
+      <actionEffect>
+        <hasMotionType>false</hasMotionType>
+        <motionType>attack</motionType>
+        <showWeapon>true</showWeapon>
+        <targets>["all targets"]</targets>
+        <mirrorAnimation>false</mirrorAnimation>
+        <waitForAnimation>false</waitForAnimation>
+      </actionEffect>
+
+      <postHitMovement>
+        <enabled>false</enabled>
+      </postHitMovement>
+    </hit>
+  </hits>
+  <finish>
+    <waitForNewLine>false</waitForNewLine>
+    <waitForEffects>false</waitForEffects>
+    <clearBattleLog>false</clearBattleLog>
+    <homeReset>true</homeReset>
+    <waitForMovement>true</waitForMovement>
+    <applyImmortal>false</applyImmortal>
+  </finish>
+  <references>
+    <baseCommonEvents>
+      <commonEvent id="121">[Dive Shot]</commonEvent>
+    </baseCommonEvents>
+    <documentationFiles>
+      <file>frontend/data/CommonEvents.json</file>
+    </documentationFiles>
+  </references>
+
+  <validation>
+    <allParametersValidated>true</allParametersValidated>
+    <validatedAgainst>
+      <commonEvent id="121" validated="true">[Dive Shot]</commonEvent>
+    </validatedAgainst>
+    <discrepanciesFound>
+    </discrepanciesFound>
+  </validation>
+
+  <filesAffected>
+    <file path="frontend/data/CommonEvents.json" action="reference">
+      <description>Common Event original usado como base</description>
+    </file>
+  </filesAffected>
+
+  <notes>
+    <note>XML gerado automaticamente a partir do Common Event ID 121</note>
+  </notes>
+</ActionSequenceGuide>

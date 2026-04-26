@@ -142,7 +142,7 @@
     "battlerHue": 0,
     "exp": 5000,
     "gold": 500,
-    "params": [7500, 0, 85, 50, 0, 50, 80, 60],
+    "params": [25000, 0, 200, 100, 0, 80, 110, 80],
     "actions": [
       {
         "skillId": 1,
@@ -227,7 +227,7 @@
     "battlerHue": 0,
     "exp": 150,
     "gold": 30,
-    "params": [1200, 0, 90, 50, 0, 110, 80, 100],
+    "params": [3500, 0, 120, 60, 0, 40, 100, 70],
     "actions": [
       {
         "skillId": 29,
@@ -572,7 +572,7 @@
     "battlerHue": 0,
     "exp": 2000,
     "gold": 500,
-    "params": [7500, 400, 85, 60, 40, 50, 75, 110],
+    "params": [30000, 400, 180, 120, 60, 100, 85, 90],
     "actions": [
       {
         "skillId": 11,
@@ -636,7 +636,7 @@
         "denominator": 1
       }
     ],
-    "note": "<BTB Initial BP: +1>\n<BTB Maximum BP: +3>\n<BTB Minimum BP: -3>\n<BTB BP Regen: +1>\n<BTB Maximum Actions: +3>\n<BTB Turn Order Icon: 98>\n<BTB Turn Order Face: Nature, 0>\n<ATB Field Gauge Face: Bosses, 2>\n<Sideview Battler: Cristaleao>"
+    "note": "<ATB Field Gauge Face: Bosses, 2>\n<Sideview Battler: Cristaleao>"
   },
   {
     "id": 18,
@@ -915,7 +915,7 @@
     "battlerHue": 0,
     "exp": 8000,
     "gold": 1000,
-    "params": [1100, 0, 85, 20, 80, 20, 800, 0],
+    "params": [22000, 0, 220, 55, 130, 80, 125, 60],
     "actions": [
       {
         "skillId": 40,
@@ -994,7 +994,7 @@
     "battlerHue": 0,
     "exp": 0,
     "gold": 0,
-    "params": [500, 0, 20, 30, 40, 20, 80, 0],
+    "params": [2800, 0, 90, 40, 50, 50, 90, 40],
     "actions": [
       {
         "skillId": 39,
@@ -2903,21 +2903,37 @@
   {
     "id": 99,
     "name": "Boneco T Atk",
-    "battlerName": "Coreto_Cristaleao",
-    "battlerHue": 0,
+    "battlerName": "Esporo do Pestesporo",
+    "battlerHue": 185,
     "exp": 0,
     "gold": 0,
-    "params": [999999, 0, 100, 0, 0, 0, 100, 0],
+    "params": [999999, 0, 100, 0, 0, 0, 200, 0],
     "actions": [
       {
-        "skillId": 1,
+        "skillId": 256,
         "rating": 5,
         "conditionType": 0,
         "conditionParam1": 0,
         "conditionParam2": 0
       }
     ],
-    "traits": [],
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.95
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.05
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.05
+      }
+    ],
     "dropItems": [
       {
         "dataId": 0,

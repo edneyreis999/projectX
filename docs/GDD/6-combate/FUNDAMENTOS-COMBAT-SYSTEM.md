@@ -60,7 +60,7 @@ O combate deve sentir-se como **orquestração tática**: o jogador conduz quatr
 **Princípio:** O jogador deve poder prever o resultado de suas ações antes de executá-las.
 
 - Mesma skill na mesma situação → mesmo resultado (dentro de variância controlada)
-- Fórmulas de dano seguem lógicaMOBA: `(Flat + Stat × X) × Mitigação` → sempre calculável
+- Fórmulas de dano seguem lógica MOBA: `formula × ATK × (100 / (100 + DEF))` → sempre calculável
 - Cast times são fixos → o jogador sabe exatamente quando o personagem agirá
 - TP generation segue regras claras → o jogador planeja buildup
 
@@ -604,35 +604,35 @@ Personagens são **intencionalmente diferentes**, e isso cria situações onde:
 
 **TIER 0 — Geradores (Básico)**
 - Custo: +5 a +12 TP
-- Dano: Baixo (50 + a.atk × 1.0, 0% pen)
+- Dano: Baixo (a.atk × 1.0, 0% pen)
 - Função: Encher barra, pouco dano
 - Cast: Speed 0 ou +500/+1000 (rápido)
 - Exemplo: Passo de Brisa, Golpe de Escudo
 
 **TIER 1 — Spender Leve**
 - Custo: -8 a -15 TP
-- Dano: Moderado (120-150 + a.atk × 1.2, 0-15% pen)
+- Dano: Moderado (a.atk × 1.2, 0-15% pen)
 - Função: Dano consistente, upkeep
 - Cast: Speed 0 ou -250
 - Exemplo: Investida (Dash), Consumo de Foco I
 
 **TIER 2 — Spender Médio**
 - Custo: -18 a -30 TP
-- Dano: Forte (150-200 + a.atk × 1.5, 15-20% pen)
+- Dano: Forte (a.atk × 1.5, 15-20% pen)
 - Função: Dano principal, combate
 - Cast: Speed -500/-750
 - Exemplo: Estocada Relâmpago, Golpe de Oportunidade
 
 **TIER 3 — Spender Pesado**
 - Custo: -35 a -50 TP
-- Dano: Muito forte (300-400 + a.atk × 2.2, 30% pen)
+- Dano: Muito forte (a.atk × 2.2, 30% pen)
 - Função: Burst massivo, changer de rumo
 - Cast: Speed -1000/-1250
 - Exemplo: Extravasar, Consumo de Foco III
 
 **TIER 4 — Finisher/Ultimate**
 - Custo: -60 TP ou barra cheia
-- Dano: Devastador (600+ + a.atk × 3.5, 50% pen)
+- Dano: Devastador (a.atk × 3.5, 50% pen)
 - Função: Clímax, execução, ultimate de time
 - Cast: Speed -1500/-2000 (telegraph pesado)
 - Exemplo: Estouro de Momentum, Execução, Muralha Contra Impacto

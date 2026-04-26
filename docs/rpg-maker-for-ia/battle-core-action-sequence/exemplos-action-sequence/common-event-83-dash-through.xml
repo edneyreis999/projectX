@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Action Sequence: [Dash Through]
+ID: 83
+Gerado automaticamente a partir de CommonEvents.json
+-->
+<ActionSequenceGuide>
+  <metadata>
+    <guideTitle>[Dash Through]</guideTitle>
+    <skillId>83</skillId>
+    <skillName>[Dash Through]</skillName>
+    <skillType>ActionSequence</skillType>
+    <generatedAt>2026-04-16T20:13:02.013Z</generatedAt>
+    <validated>true</validated>
+  </metadata>
+
+  <skillContext>
+    <damageFormula>v.skill.damageFormula</damageFormula>
+    <tpCost>v.skill.tpCost</tpCost>
+    <scope>v.skill.scope</scope>
+    <description>Action Sequence para [Dash Through]</description>
+    <notetags>
+      <notetag>&lt;Custom Action Sequence&gt;</notetag>
+    </notetags>
+  </skillContext>
+
+  <sequenceStructure>
+    <hasSetup>true</hasSetup>
+    <numberOfHits>3</numberOfHits>
+    <targetType>single</targetType>
+    <hasFinish>true</hasFinish>
+  </sequenceStructure>
+  <setup>
+    <displayAction>true</displayAction>
+    <applyImmortal>true</applyImmortal>
+    <battleStep>false</battleStep>
+    <waitForMovement>false</waitForMovement>
+    <castAnimation>false</castAnimation>
+    <waitForAnimation>false</waitForAnimation>
+  </setup>
+  <hits>
+    <hit id="1">
+      <label>Jump to Target</label>
+      <description>User moves to the front base of the target - 48 px (melee distance) User jumps 100 px high Wait until Jump to Target is complete</description>
+      <baseCommonEventId></baseCommonEventId>
+
+      <usesRandomTarget>false</usesRandomTarget>
+      <randomTargetLabel></randomTargetLabel>
+
+      <movement>
+        <moveToTarget>
+          <enabled>true</enabled>
+          <targetsMoving>["user"]</targetsMoving>
+          <targetsDestination>["all targets"]</targetsDestination>
+          <targetLocation>front base</targetLocation>
+          <meleeDistance>48</meleeDistance>
+          <offsetAdjust>horz</offsetAdjust>
+          <offsetX>0</offsetX>
+          <offsetY>0</offsetY>
+          <duration>12</duration>
+          <faceDestination>true</faceDestination>
+          <easingType>Linear</easingType>
+          <motionType>walk</motionType>
+          <waitForMovement>false</waitForMovement>
+        </moveToTarget>
+        <jump>
+          <enabled>true</enabled>
+          <targets>["user"]</targets>
+          <height>100</height>
+          <duration>12</duration>
+          <waitForJump>false</waitForJump>
+        </jump>
+        <spin>
+          <enabled>false</enabled>
+        </spin>
+        <moveDistance>
+          <enabled>false</enabled>
+        </moveDistance>
+      </movement>
+
+      <timing>
+        <type>waitForEvents</type>
+        <frames>12</frames>
+      </timing>
+
+      <actionEffect>
+        <hasMotionType>false</hasMotionType>
+        <motionType>attack</motionType>
+        <showWeapon>true</showWeapon>
+        <targets>["current target"]</targets>
+        <mirrorAnimation>false</mirrorAnimation>
+        <waitForAnimation>false</waitForAnimation>
+      </actionEffect>
+
+      <postHitMovement>
+        <enabled>false</enabled>
+      </postHitMovement>
+    </hit>
+    <hit id="2">
+      <label>Dash Through</label>
+      <description>User moves to target&apos;s back base + 96 px User performs attack motion based on user&apos;s weapon (sword swing/thrust etc.) Wait until the Dash Through is halfway complete</description>
+      <baseCommonEventId></baseCommonEventId>
+
+      <usesRandomTarget>false</usesRandomTarget>
+      <randomTargetLabel></randomTargetLabel>
+
+      <movement>
+        <moveToTarget>
+          <enabled>true</enabled>
+          <targetsMoving>["user"]</targetsMoving>
+          <targetsDestination>["all targets"]</targetsDestination>
+          <targetLocation>back base</targetLocation>
+          <meleeDistance>48</meleeDistance>
+          <offsetAdjust>horz</offsetAdjust>
+          <offsetX>96</offsetX>
+          <offsetY>0</offsetY>
+          <duration>8</duration>
+          <faceDestination>true</faceDestination>
+          <easingType>Linear</easingType>
+          <motionType>attack</motionType>
+          <waitForMovement>false</waitForMovement>
+        </moveToTarget>
+        <jump>
+          <enabled>false</enabled>
+        </jump>
+        <spin>
+          <enabled>false</enabled>
+        </spin>
+        <moveDistance>
+          <enabled>false</enabled>
+        </moveDistance>
+      </movement>
+
+      <timing>
+        <type></type>
+        <frames>0</frames>
+      </timing>
+
+      <actionEffect>
+        <hasMotionType>true</hasMotionType>
+        <motionType>attack</motionType>
+        <showWeapon>true</showWeapon>
+        <targets>["current target"]</targets>
+        <mirrorAnimation>false</mirrorAnimation>
+        <waitForAnimation>false</waitForAnimation>
+      </actionEffect>
+
+      <postHitMovement>
+        <enabled>false</enabled>
+      </postHitMovement>
+    </hit>
+    <hit id="3">
+      <label>Action Effect</label>
+      <description>Deal damage to target based on skill&apos;s damage formula and apply any buffs or  debuffs based on skill&apos;s effects Play animation on target based on skill&apos;s settings Wait until Dash Through is complete</description>
+      <baseCommonEventId></baseCommonEventId>
+
+      <usesRandomTarget>false</usesRandomTarget>
+      <randomTargetLabel></randomTargetLabel>
+
+      <movement>
+        <moveToTarget>
+          <enabled>false</enabled>
+        </moveToTarget>
+        <jump>
+          <enabled>false</enabled>
+        </jump>
+        <spin>
+          <enabled>false</enabled>
+        </spin>
+        <moveDistance>
+          <enabled>false</enabled>
+        </moveDistance>
+      </movement>
+
+      <timing>
+        <type>waitForEvents</type>
+        <frames>6</frames>
+      </timing>
+
+      <actionEffect>
+        <hasMotionType>false</hasMotionType>
+        <motionType>attack</motionType>
+        <showWeapon>true</showWeapon>
+        <targets>["all targets"]</targets>
+        <mirrorAnimation>false</mirrorAnimation>
+        <waitForAnimation>false</waitForAnimation>
+      </actionEffect>
+
+      <postHitMovement>
+        <enabled>false</enabled>
+      </postHitMovement>
+    </hit>
+  </hits>
+  <finish>
+    <waitForNewLine>true</waitForNewLine>
+    <waitForEffects>true</waitForEffects>
+    <clearBattleLog>true</clearBattleLog>
+    <homeReset>true</homeReset>
+    <waitForMovement>true</waitForMovement>
+    <applyImmortal>true</applyImmortal>
+  </finish>
+  <references>
+    <baseCommonEvents>
+      <commonEvent id="83">[Dash Through]</commonEvent>
+    </baseCommonEvents>
+    <documentationFiles>
+      <file>frontend/data/CommonEvents.json</file>
+    </documentationFiles>
+  </references>
+
+  <validation>
+    <allParametersValidated>true</allParametersValidated>
+    <validatedAgainst>
+      <commonEvent id="83" validated="true">[Dash Through]</commonEvent>
+    </validatedAgainst>
+    <discrepanciesFound>
+    </discrepanciesFound>
+  </validation>
+
+  <filesAffected>
+    <file path="frontend/data/CommonEvents.json" action="reference">
+      <description>Common Event original usado como base</description>
+    </file>
+  </filesAffected>
+
+  <notes>
+    <note>XML gerado automaticamente a partir do Common Event ID 83</note>
+  </notes>
+</ActionSequenceGuide>
