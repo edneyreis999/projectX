@@ -330,7 +330,7 @@
     "damage": {
       "critical": false,
       "elementId": 1,
-      "formula": "a.atk * 1.5",
+      "formula": "1.10",
       "type": 1,
       "variance": 0
     },
@@ -444,7 +444,7 @@
     "damage": {
       "critical": false,
       "elementId": 0,
-      "formula": "(a.atk * 4) + 200",
+      "formula": "3.50",
       "type": 1,
       "variance": 0
     },
@@ -951,7 +951,7 @@
     "damage": {
       "critical": true,
       "elementId": -1,
-      "formula": "a.atk * 2 - b.def * 1.5",
+      "formula": "1.75",
       "type": 1,
       "variance": 0
     },
@@ -982,7 +982,7 @@
     "damage": {
       "critical": true,
       "elementId": -1,
-      "formula": "a.atk * 2 - b.def * 1.5",
+      "formula": "1.75",
       "type": 1,
       "variance": 0
     },
@@ -1013,7 +1013,7 @@
     "damage": {
       "critical": true,
       "elementId": -1,
-      "formula": "a.atk * 2 - b.def * 1.5",
+      "formula": "1.20",
       "type": 1,
       "variance": 0
     },
@@ -1244,7 +1244,7 @@
     "damage": {
       "critical": false,
       "elementId": 0,
-      "formula": "a.atk * 8 - b.def * 2",
+      "formula": "a.atk * 0.9",
       "type": 1,
       "variance": 20
     },
@@ -1526,7 +1526,7 @@
     "damage": {
       "critical": false,
       "elementId": 1,
-      "formula": "50",
+      "formula": "0.78",
       "type": 1,
       "variance": 20
     },
@@ -1557,7 +1557,7 @@
     "damage": {
       "critical": false,
       "elementId": 1,
-      "formula": "100",
+      "formula": "1.21",
       "type": 1,
       "variance": 20
     },
@@ -1588,7 +1588,7 @@
     "damage": {
       "critical": false,
       "elementId": 1,
-      "formula": "90",
+      "formula": "1.10",
       "type": 1,
       "variance": 20
     },
@@ -1619,7 +1619,7 @@
     "damage": {
       "critical": false,
       "elementId": 1,
-      "formula": "110",
+      "formula": "1.79",
       "type": 1,
       "variance": 20
     },
@@ -1650,7 +1650,7 @@
     "damage": {
       "critical": false,
       "elementId": 1,
-      "formula": "110",
+      "formula": "1.79",
       "type": 1,
       "variance": 20
     },
@@ -1681,7 +1681,7 @@
     "damage": {
       "critical": false,
       "elementId": 1,
-      "formula": "100",
+      "formula": "2.23",
       "type": 1,
       "variance": 20
     },
@@ -1712,7 +1712,7 @@
     "damage": {
       "critical": false,
       "elementId": 1,
-      "formula": "100",
+      "formula": "2.23",
       "type": 1,
       "variance": 20
     },
@@ -1743,7 +1743,7 @@
     "damage": {
       "critical": false,
       "elementId": 1,
-      "formula": "150",
+      "formula": "3.72",
       "type": 1,
       "variance": 20
     },
@@ -1774,7 +1774,7 @@
     "damage": {
       "critical": false,
       "elementId": 1,
-      "formula": "180",
+      "formula": "6.60",
       "type": 1,
       "variance": 20
     },
@@ -1805,7 +1805,7 @@
     "damage": {
       "critical": false,
       "elementId": 1,
-      "formula": "140",
+      "formula": "6.60",
       "type": 1,
       "variance": 20
     },
@@ -2084,7 +2084,7 @@
     "damage": {
       "critical": false,
       "elementId": 0,
-      "formula": "0",
+      "formula": "1.17",
       "type": 1,
       "variance": 20
     },
@@ -2097,7 +2097,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Represalia Counter",
-    "note": "<Gain TP: +5>\n\n<JS Damage Formula>\nvalue = user.def * 0.5;\n</JS Damage Formula>",
+    "note": "<Gain TP: +5>",
     "occasion": 0,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2115,7 +2115,7 @@
     "damage": {
       "critical": false,
       "elementId": 0,
-      "formula": "100",
+      "formula": "1.82",
       "type": 1,
       "variance": 20
     },
@@ -2146,7 +2146,7 @@
     "damage": {
       "critical": false,
       "elementId": 0,
-      "formula": "50",
+      "formula": "1.82",
       "type": 1,
       "variance": 20
     },
@@ -2184,7 +2184,7 @@
     "damage": {
       "critical": false,
       "elementId": 0,
-      "formula": "100",
+      "formula": "2.68",
       "type": 1,
       "variance": 20
     },
@@ -2215,7 +2215,7 @@
     "damage": {
       "critical": false,
       "elementId": 0,
-      "formula": "80",
+      "formula": "2.68",
       "type": 1,
       "variance": 20
     },
@@ -2246,7 +2246,7 @@
     "damage": {
       "critical": false,
       "elementId": 0,
-      "formula": "80",
+      "formula": "2.68",
       "type": 1,
       "variance": 20
     },
