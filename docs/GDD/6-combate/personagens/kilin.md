@@ -17,14 +17,14 @@ Comandante da Guarda de Ferro, mentor do Thorin e melhor amigo do Mhordred. Anao
 
 ## Estatisticas Base
 
-| Atributo | Nivel | Descricao |
-|----------|-------|-----------|
-| **HP** | Alto (+10%) | Durabilidade extra para tank |
-| **MP** | Medio | Recursos para curas light |
-| **ATK** | Medio | Dano consistente mas nao primario |
-| **DEF** | Alto (+10%) | Melhor defesa do time |
-| **AGI** | Baixo | Posicao firme, nao mobilidade |
-| **MAT** | Medio | Curas light com escala DEF |
+| Atributo | Nivel | nv30 | Descricao |
+|----------|-------|------|-----------|
+| **HP** | Alto (+10%) | — | Durabilidade extra para tank |
+| **MP** | Medio | — | Recursos para curas light |
+| **ATK** | Medio | 120 | Dano consistente mas nao primario |
+| **DEF** | Alto (+10%) | — | Melhor defesa do time |
+| **AGI** | Baixo | — | Posicao firme, nao mobilidade |
+| **MAT** | Medio | — | Curas light com escala DEF |
 
 ## Atributos Base de Combate
 
@@ -37,6 +37,22 @@ Comandante da Guarda de Ferro, mentor do Thorin e melhor amigo do Mhordred. Anao
 | **PV Maximo (HP)** | +10% | 0% | Durabilidade extra |
 
 **Sinergia:** EVA 0% e CRIT 0% reforçam a identidade de tank puro — Kilin nao esquiva, nao busca critico. Absorve dano e converte em GUARDA. DEF +10% e HP +10% maximizam a eficiencia do loop de protecao.
+
+---
+
+## Sistema de Dano MOBA (VisuStella Battle Core)
+
+O projeto usa o **Damage Style MOBA** do VisuStella Battle Core. O campo `formula` das skills recebe um **multiplicador float** direto. O plugin calcula automaticamente: `Dano = formula × ATK × (100 / (100 + DEF_alvo))`.
+
+**Regra crítica:** O campo `formula` é um multiplicador float, NÃO uma porcentagem inteira. Para detalhes completos, consulte `planos/021-balnceamento-status/filena/POSTMORTEM-FORMULAS-MOBA.md`.
+
+| Tier | Dano Esperado (vs DEF 120) | Multiplicador MOBA |
+|------|---------------------------|-------------------|
+| Counter (Represalia) | ~64 | `1.17` |
+| Gerador | ~99 | `1.82` |
+| Leve/Médio (CC) | ~146 | `2.68` |
+
+*Referência: ATK Kilin nv30 = 120 vs DEF 120 (Cristaleão).*
 
 ---
 
@@ -138,7 +154,7 @@ graph TD
 
 ## Kit de Skills
 
-Todas as skills sao projetadas para terem um score final no **Tier 1 (1-50)**. A diferenca entre "Leve", "Medio" e "Pesado" esta no **custo de GUARDA**, no **papel tatico** e nos **trade-offs** exigidos do jogador.
+Todas as skills sao projetadas para terem um score final no **Tier 1 (1-50)**. A diferenca entre "Leve", "Medio" e "Pesado" esta no **custo de GUARDA**, no **papel tatico** e nos **trade-offs** exigidos do jogador. Cada skill de dano lista sua **Formula MOBA** (multiplicador float para o campo `formula` do VisuStella).
 
 Leves focam em CC (Stun, Blind). Medios focam em protecao direta e utilidade (barreira, redirect, interrupt). Pesados focam em sustento (cura). A Ultimate e o botao de emergencia que consome quase toda a GUARDA.
 
@@ -153,8 +169,9 @@ Leves focam em CC (Stun, Blind). Medios focam em protecao direta e utilidade (ba
 #### **2. Represalia**
 - **Tipo:** Passiva
 - **Descricao:** Quando Kilin intercepta dano via Bodyguard (predicao correta), ele automaticamente contra-ataca o agressor com golpe de escudo. Dano escala com DEF. So ativa quando intercepta dano PARA UM ALIADO — nao ativa quando Kilin e atacado diretamente. Bodyguard no aliado "errado" = sem counter.
-- **Efeito:** Counter de 0.5x com multiplicador de DEF (dano = DEF x 0.5).
-- **Implementacao VisuStella:** `<Counter Control>` triggerado por interceptacao de dano via Bodyguard state. Dano via `<JS Damage Formula>` usando `user.def * 0.5`. Trigger condicional: so ativa quando o estado de Bodyguard redireciona dano (verifica se target original != Kilin).
+- **Efeito:** Counter com formula MOBA `1.17`. Dano = 1.17 × ATK × mit = ~64 mitigado (vs DEF 120).
+- **Nota de design:** Originalmente projetado como DEF-scaling (`user.def * 0.5`). O POSTMORTEM padronizou para ATK-scaling via MOBA (1.17 × 120 × 0.4545 ≈ 64 vs DEF × 0.5 = 70). Valores similares, implementacao consistente com o sistema.
+- **Implementacao VisuStella:** `<Counter Control>` triggerado por interceptacao de dano via Bodyguard state. Campo `formula`: `1.17`. Trigger condicional: so ativa quando o estado de Bodyguard redireciona dano (verifica se target original != Kilin). Skill ID 64.
 
 ---
 
@@ -178,6 +195,8 @@ Leves focam em CC (Stun, Blind). Medios focam em protecao direta e utilidade (ba
 
 - **Implementacao VisuStella:** `<Gain TP: +8>`, Speed +500 no parametro do skill.
 
+**Formula MOBA:** `1.82` — Dano = 1.82 × ATK × mit = ~99 mitigado (vs DEF 120). Skill ID 65.
+
 ---
 
 #### **4. Postura de Observacao**
@@ -198,6 +217,8 @@ Leves focam em CC (Stun, Blind). Medios focam em protecao direta e utilidade (ba
 - **Score Final: 8** — **Tier 1**
 
 - **Implementacao VisuStella:** `<Gain TP: +10>`, `<DEF Buff Turns: +3>`, `<Apply State: [postura state]>`. State com DEF Rate +15%.
+
+**Formula MOBA:** `1.82` — Dano = 1.82 × ATK × mit = ~99 mitigado (vs DEF 120). Skill ID 66.
 
 ---
 
@@ -222,6 +243,8 @@ Leves focam em CC (Stun, Blind). Medios focam em protecao direta e utilidade (ba
 
 - **Implementacao VisuStella:** `<TP Cost: 15>`, `<Apply State: [Stun]>`, `<State x Turns: 1>`, `<ATB After Gauge: +10%>`.
 
+**Formula MOBA:** `2.68` — Dano = 2.68 × ATK × mit = ~146 mitigado (vs DEF 120). Skill ID 67.
+
 ---
 
 #### **6. Clarao do Escudo**
@@ -242,6 +265,8 @@ Leves focam em CC (Stun, Blind). Medios focam em protecao direta e utilidade (ba
 - **Score Final: 9** — **Tier 1**
 
 - **Implementacao VisuStella:** `<TP Cost: 8>`, `<Apply State: [Cegueira]>`, `<State x Turns: 3>`, `<ATB After Gauge: +5%>`.
+
+**Formula MOBA:** `2.68` — Dano = 2.68 × ATK × mit = ~146 mitigado (vs DEF 120). Skill ID 68.
 
 ---
 
@@ -267,6 +292,8 @@ Leves focam em CC (Stun, Blind). Medios focam em protecao direta e utilidade (ba
 - **Implementacao VisuStella:** `<TP Cost: 15>`, `<ATB Interrupt>`, `<Gain TP: +5>` condicional via `<JS On Use Action>` verificando cast state do alvo, `<ATB After Gauge: +5%>`.
 
 **Nota:** Bonus condicional de +5 GUARDA quando interrompe com sucesso. Custo efetivo: -10 GUARDA na predicao correta.
+
+**Formula MOBA:** `2.68` — Dano = 2.68 × ATK × mit = ~146 mitigado (vs DEF 120). Skill ID 69.
 
 ---
 
@@ -329,6 +356,7 @@ Leves focam em CC (Stun, Blind). Medios focam em protecao direta e utilidade (ba
 - **Score Final: 13** — **Tier 1**
 
 - **Implementacao VisuStella:** `<TP Cost: 28>`, `<Target: 1 Ally>`, formula de cura via `<JS Damage Formula>` usando `150 + user.def * 2.0`, `<ATB After Gauge: -10%>`.
+- **Nota MOBA:** Esta formula de cura NAO passa pelo sistema MOBA (MOBA aplica apenas a dano). Como Certain Hit (hitType 0), a formula e avaliada diretamente: `150 + DEF × 2.0` = `150 + 280` = ~430 de cura com DEF ~140. Validar se Hit Type esta como Certain Hit (0) para evitar scaling indesejado.
 
 ---
 
@@ -360,19 +388,21 @@ Leves focam em CC (Stun, Blind). Medios focam em protecao direta e utilidade (ba
 
 ### Tabela Consolidada do Kit
 
-| # | Nome | Tipo | Papel | TP Cost | Dano | CC/Efeito | Speed | AG | Score | Tier |
-|---|------|------|-------|---------|------|-----------|-------|-----|-------|------|
-| 1 | Resistencia do Ferro | Passiva | DEF scaling | — | — | DEF +5%/10 GUARDA | — | — | — | — |
-| 2 | Represalia | Passiva | Counter | — | DEFx0.5 | Counter em intercept | — | — | — | — |
-| 3 | Golpe de Escudo | Gerador | Dano | 0 | 1.0x | +8 GUARDA | +500 | 0% | 13 | T1 |
-| 4 | Postura de Observacao | Gerador | Setup | 0 | 0.5x | DEF +15% 3t, +10 GUARDA | 0 | 0% | 8 | T1 |
-| 5 | Investida de Escudo | Leve | CC Stun | -15 | 1.0x | Stun 1t 100% | 0 | +10% | 47 | T1 |
-| 6 | Clarao do Escudo | Leve | CC Blind | -8 | 0.8x | Blind 3t 100% | 0 | +5% | 9 | T1 |
-| 7 | Golpe Desarmando | Medio | Interrupt | -15 | 0.8x | Interrupt condicional | 0 | +5% | 5 | T1 |
-| 8 | Muralha Pessoal | Medio | Barreira | -14 | — | Barreira 1 aliado | 0 | +5% | 24 | T1 |
-| 9 | Bodyguard | Medio | Redirect | -20 | — | Redirect 1 aliado, -25% | 0 | -10% | 9 | T1 |
-| 10 | Vigor do Guardiao | Pesado | Cura | -28 | — | Cura (150+DEFx2.0) | 0 | -10% | 13 | T1 |
-| 11 | Muralha Contra Impacto | Ultimate | Redirect All | -35 | — | Redirect TODOS, -50%, DEF+30% | -1000 | -20% | 11 | T1 |
+| # | Nome | Tipo | Papel | TP Cost | MOBA | Dano Mitigado | CC/Efeito | Speed | AG | Score | Tier |
+|---|------|------|-------|---------|------|---------------|-----------|-------|-----|-------|------|
+| 1 | Resistencia do Ferro | Passiva | DEF scaling | — | — | — | DEF +5%/10 GUARDA | — | — | — | — |
+| 2 | Represalia | Passiva | Counter | — | `1.17` | ~64 | Counter em intercept | — | — | — | — |
+| 3 | Golpe de Escudo | Gerador | Dano | 0 | `1.82` | ~99 | +8 GUARDA | +500 | 0% | 13 | T1 |
+| 4 | Postura de Observacao | Gerador | Setup | 0 | `1.82` | ~99 | DEF +15% 3t, +10 GUARDA | 0 | 0% | 8 | T1 |
+| 5 | Investida de Escudo | Leve | CC Stun | -15 | `2.68` | ~146 | Stun 1t 100% | 0 | +10% | 47 | T1 |
+| 6 | Clarao do Escudo | Leve | CC Blind | -8 | `2.68` | ~146 | Blind 3t 100% | 0 | +5% | 9 | T1 |
+| 7 | Golpe Desarmando | Medio | Interrupt | -15 | `2.68` | ~146 | Interrupt condicional | 0 | +5% | 5 | T1 |
+| 8 | Muralha Pessoal | Medio | Barreira | -14 | — | — | Barreira 1 aliado | 0 | +5% | 24 | T1 |
+| 9 | Bodyguard | Medio | Redirect | -20 | — | — | Redirect 1 aliado, -25% | 0 | -10% | 9 | T1 |
+| 10 | Vigor do Guardiao | Pesado | Cura | -28 | Cura | ~430 | Cura (150+DEFx2.0) | 0 | -10% | 13 | T1 |
+| 11 | Muralha Contra Impacto | Ultimate | Redirect All | -35 | — | — | Redirect TODOS, -50%, DEF+30% | -1000 | -20% | 11 | T1 |
+
+**Dano mitigado calculado com ATK 120 vs DEF 120 (Cristaleao). Cura do Vigor com DEF ~140.**
 
 ---
 

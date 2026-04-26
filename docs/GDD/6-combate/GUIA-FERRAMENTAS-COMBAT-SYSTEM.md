@@ -231,13 +231,15 @@ O Damage Style **MOBA** é configurado **globalmente** no plugin parameters. Iss
 **Style oficial do projeto: MOBA**
 
 ```
-(Dano Base + a.atk × X) × (100 / (100 + b.def))
+formula × ATK × (100 / (100 + DEF))
 ```
 
+Onde `formula` é o valor float do campo "Damage Formula" do RPG Maker.
+
 Esta fórmula:
-- Multiplica ATK por um fator (X)
-- Soma um dano base flat
-- Aplica mitigação percentual baseada em DEF do alvo
+- Multiplica o valor do campo formula pelo ATK (físico) ou MAT (mágico) do atacante
+- Aplica mitigação percentual baseada em DEF (físico) ou MDF (mágico) do alvo
+- **NÃO possui componente flat** — o campo formula é um multiplicador puro
 - Cria curva de dano que sempre reduz, mas nunca chega a 0
 
 **⚠️ IMPORTANTE - NÃO PREENCHA O CAMPO DE FÓRMULA:**
@@ -257,50 +259,53 @@ Para alterar o output de dano final, use estas tags nas notetags da skill:
 
 **No campo "Damage Formula" do RPG Maker:**
 
-- **Use um multiplicador simples**: `150` (para 1.5x), `250` (para 2.5x), etc.
+- **Use um multiplicador float**: `1.0` (para 1.0x), `1.8` (para 1.8x), `3.5` (para 3.5x), etc.
 - **Ou use uma fórmula customizada** para casos especiais (escala com Foco, condição, etc.)
+
+**⚠️ NÃO use inteiros como 100, 180, 350** — o plugin NÃO divide por 100. O valor do campo formula é multiplicado DIRETAMENTE pelo ATK. Usar `100` causa dano 100x maior que o pretendido (ver POSTMORTEM-FORMULAS-MOBA.md).
 
 **Exemplos práticos:**
 
 ```
 // Skill básica com multiplicador 1.0x
-Damage Formula: 100
+Damage Formula: 1.0
 
 // Spender com multiplicador 1.8x
-Damage Formula: 180
+Damage Formula: 1.8
 
 // Finisher com multiplicador 3.5x
-Damage Formula: 350
+Damage Formula: 3.5
 
 // Skill com fórmula customizada (raro, apenas para casos especiais)
-Damage Formula: 200 + user.tp * 5
+Damage Formula: 2.0 + user.tp * 0.05
 ```
 
 **Quando uma skill usa o padrão:**
 
 Skills básicas e de rotina usam apenas o multiplicador:
-- **Passo de Brisa (Filena)** — Multiplicador `100` (1.0x)
-- **Golpe Brutal (Mhordred)** — Multiplicador `100` (1.0x)
+- **Passo de Brisa (Filena)** — Multiplicador `1.0`
+- **Golpe Brutal (Mhordred)** — Multiplicador `1.0`
 
 **Quando foge do padrão:**
 
 Skills especiais podem ter fórmulas customizadas:
-- **Execução (Mhordred)** — Multiplicador `350` (3.5x) com `<Armor Pen: 50%>`
+- **Execução (Mhordred)** — Multiplicador `3.5` com `<Armor Pen: 50%>`
 - **Tiro Preciso (Thorin)** — Fórmula escala com Foco acumulado
 
 ### 5.2 Fórmulas de dano
 
-**Flat vs Multiplicador:**
+**Multiplicador float:**
 
-- **Flat** — Dano base que não escala: `50` ou `100`
-- **Multiplicador** — Escala com ATK: `a.atk × 1.0` ou `a.atk × 3.5`
+O campo "Damage Formula" recebe um **multiplicador float** que é multiplicado diretamente pelo ATK do atacante. **Não existe componente flat** na fórmula MOBA do VisuStella.
+
+- **Multiplicador** — Escala com ATK: `1.0` (= 1x ATK), `1.8` (= 1.8x ATK), `3.5` (= 3.5x ATK)
 
 **Relação com tier da skill:**
 
-- **Tier 0-1 (Básicas)** — Multiplicador 0.8-1.2, dano base 10-50
-- **Tier 2 (Intermediárias)** — Multiplicador 1.5-2.0, dano base 50-150
-- **Tier 3 (Spenders)** — Multiplicador 2.0-3.0, dano base 150-300
-- **Tier 4 (Finishers)** — Multiplicador 3.0+, dano base 300+
+- **Tier 0-1 (Básicas)** — Multiplicador 0.8-1.2
+- **Tier 2 (Intermediárias)** — Multiplicador 1.5-2.0
+- **Tier 3 (Spenders)** — Multiplicador 2.0-3.0
+- **Tier 4 (Finishers)** — Multiplicador 3.0+
 
 ### 5.3 Damage Cap e Soft Cap
 
@@ -382,7 +387,7 @@ Armor Penetration ignora uma **porcentagem da DEF do alvo** antes de aplicar a f
 
 **Fórmula com penetração:**
 ```
-Dano = (Dano Base + a.atk × X) × (100 / (100 + b.def × (1 - pen%)))
+Dano = formula × ATK × (100 / (100 + DEF × (1 - pen%)))
 ```
 
 **Tiers de penetração no projeto:**
@@ -2674,18 +2679,18 @@ Todas as tags mencionadas no documento existem e estão corretas conforme docume
 
 ### ✅ Fórmula de Dano MOBA: VALIDADA
 
-A representação da fórmula MOBA está correta em conceito:
+A representação da fórmula MOBA está correta:
 ```
-(Dano Base + a.atk × X) × (100 / (100 + b.def))
+formula × ATK × (100 / (100 + DEF))
 ```
 
-**Nota:** Esta é a representação conceitual de como o plugin calcula. Na prática, o usuário seleciona MOBA como Damage Style global e usa multiplicadores simples (100, 150, 250, etc.) no campo "Damage Formula".
+**Nota:** O campo formula recebe valores **float** (ex: `1.0`, `1.8`, `3.5`). NÃO usar inteiros — o plugin NÃO divide por 100. Ver POSTMORTEM-FORMULAS-MOBA.md para detalhes da investigação.
 
 ### ✅ Armor Penetração: APLICAÇÃO CORRETA
 
 A fórmula com penetração está correta:
 ```
-Dano = (Dano Base + a.atk × X) × (100 / (100 + b.def × (1 - pen%)))
+Dano = formula × ATK × (100 / (100 + DEF × (1 - pen%)))
 ```
 
 A documentação confirma que "Penetration: ignora armadura do alvo" e os tiers (0%, 15%, 30%, 50%) estão corretos.
