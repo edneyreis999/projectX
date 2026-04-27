@@ -386,24 +386,64 @@
     ],
     "learnings": [
       {
-        "level": 5,
-        "note": "",
-        "skillId": 248
+        "level": 1,
+        "skillId": 75,
+        "note": ""
       },
       {
-        "level": 10,
-        "note": "",
-        "skillId": 249
+        "level": 1,
+        "skillId": 76,
+        "note": ""
       },
       {
-        "level": 14,
-        "note": "",
-        "skillId": 250
+        "level": 1,
+        "skillId": 77,
+        "note": ""
       },
       {
-        "level": 30,
-        "note": "",
-        "skillId": 251
+        "level": 1,
+        "skillId": 78,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 79,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 80,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 81,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 82,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 83,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 84,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 85,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 86,
+        "note": ""
       }
     ],
     "name": "Berserker",
