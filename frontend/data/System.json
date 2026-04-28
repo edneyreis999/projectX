@@ -140,7 +140,7 @@
   "optSideView": true,
   "optSlipDeath": false,
   "optTransparent": false,
-  "partyMembers": [4],
+  "partyMembers": [3, 4, 5, 6],
   "ship": {
     "bgm": {
       "name": "Ship2",
@@ -645,7 +645,7 @@
     "",
     ""
   ],
-  "versionId": 66517772,
+  "versionId": 31495488,
   "victoryMe": {
     "name": "Victory1",
     "pan": 0,

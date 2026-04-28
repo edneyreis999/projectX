@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Action Sequence: [Teleport Attack All]
+ID: 91
+Gerado automaticamente a partir de CommonEvents.json
+-->
+<ActionSequenceGuide>
+  <metadata>
+    <guideTitle>[Teleport Attack All]</guideTitle>
+    <skillId>91</skillId>
+    <skillName>[Teleport Attack All]</skillName>
+    <skillType>ActionSequence</skillType>
+    <generatedAt>2026-04-16T20:13:02.015Z</generatedAt>
+    <validated>true</validated>
+  </metadata>
+
+  <skillContext>
+    <damageFormula>v.skill.damageFormula</damageFormula>
+    <tpCost>v.skill.tpCost</tpCost>
+    <scope>v.skill.scope</scope>
+    <description>Action Sequence para [Teleport Attack All]</description>
+    <notetags>
+      <notetag>&lt;Custom Action Sequence&gt;</notetag>
+    </notetags>
+  </skillContext>
+
+  <sequenceStructure>
+    <hasSetup>true</hasSetup>
+    <numberOfHits>4</numberOfHits>
+    <targetType>single</targetType>
+    <hasFinish>true</hasFinish>
+  </sequenceStructure>
+  <setup>
+    <displayAction>true</displayAction>
+    <applyImmortal>true</applyImmortal>
+    <battleStep>false</battleStep>
+    <waitForMovement>false</waitForMovement>
+    <castAnimation>false</castAnimation>
+    <waitForAnimation>false</waitForAnimation>
+  </setup>
+  <hits>
+    <hit id="1">
+      <label>Fade and Move</label>
+      <description>User moves forward 100 px User performs attack motion based on user&apos;s weapon (sword swing/thrust etc.) User fades out to 0 opacity Wait until Fade and Move is complete</description>
+      <baseCommonEventId></baseCommonEventId>
+
+      <usesRandomTarget>false</usesRandomTarget>
+      <randomTargetLabel></randomTargetLabel>
+
+      <movement>
+        <moveToTarget>
+          <enabled>false</enabled>
+        </moveToTarget>
+        <jump>
+          <enabled>false</enabled>
+        </jump>
+        <spin>
+          <enabled>false</enabled>
+        </spin>
+        <moveDistance>
+          <enabled>true</enabled>
+          <targets>["user"]</targets>
+          <distanceAdjust>horz</distanceAdjust>
+          <distanceX>100</distanceX>
+          <distanceY>0</distanceY>
+          <duration>12</duration>
+          <faceDestination>true</faceDestination>
+          <easingType>Linear</easingType>
+          <motionType>walk</motionType>
+          <waitForMovement>false</waitForMovement>
+        </moveDistance>
+      </movement>
+
+      <timing>
+        <type>waitForEvents</type>
+        <frames>12</frames>
+      </timing>
+
+      <actionEffect>
+        <hasMotionType>true</hasMotionType>
+        <motionType>attack</motionType>
+        <showWeapon>true</showWeapon>
+        <targets>["current target"]</targets>
+        <mirrorAnimation>false</mirrorAnimation>
+        <waitForAnimation>false</waitForAnimation>
+      </actionEffect>
+
+      <postHitMovement>
+        <enabled>false</enabled>
+      </postHitMovement>
+    </hit>
+    <hit id="2">
+      <label>Action Animation (No Effect)</label>
+      <description>Play animation on target based on skill&apos;s settings</description>
+      <baseCommonEventId></baseCommonEventId>
+
+      <usesRandomTarget>false</usesRandomTarget>
+      <randomTargetLabel></randomTargetLabel>
+
+      <movement>
+        <moveToTarget>
+          <enabled>false</enabled>
+        </moveToTarget>
+        <jump>
+          <enabled>false</enabled>
+        </jump>
+        <spin>
+          <enabled>false</enabled>
+        </spin>
+        <moveDistance>
+          <enabled>false</enabled>
+        </moveDistance>
+      </movement>
+
+      <timing>
+        <type></type>
+        <frames>0</frames>
+      </timing>
+
+      <actionEffect>
+        <hasMotionType>false</hasMotionType>
+        <motionType>attack</motionType>
+        <showWeapon>true</showWeapon>
+        <targets>["all targets"]</targets>
+        <mirrorAnimation>false</mirrorAnimation>
+        <waitForAnimation>false</waitForAnimation>
+      </actionEffect>
+
+      <postHitMovement>
+        <enabled>false</enabled>
+      </postHitMovement>
+    </hit>
+    <hit id="3">
+      <label>Fade In Attack</label>
+      <description>User moves forward 200 px User performs attack motion based on user&apos;s weapon (sword swing/thrust etc.) User fades out in to 255 opacity Wait until Fade In Attack is complete (minus 2 frames)</description>
+      <baseCommonEventId></baseCommonEventId>
+
+      <usesRandomTarget>false</usesRandomTarget>
+      <randomTargetLabel></randomTargetLabel>
+
+      <movement>
+        <moveToTarget>
+          <enabled>false</enabled>
+        </moveToTarget>
+        <jump>
+          <enabled>false</enabled>
+        </jump>
+        <spin>
+          <enabled>false</enabled>
+        </spin>
+        <moveDistance>
+          <enabled>true</enabled>
+          <targets>["user"]</targets>
+          <distanceAdjust>horz</distanceAdjust>
+          <distanceX>200</distanceX>
+          <distanceY>0</distanceY>
+          <duration>12</duration>
+          <faceDestination>true</faceDestination>
+          <easingType>Linear</easingType>
+          <motionType>walk</motionType>
+          <waitForMovement>false</waitForMovement>
+        </moveDistance>
+      </movement>
+
+      <timing>
+        <type>waitForEvents</type>
+        <frames>10</frames>
+      </timing>
+
+      <actionEffect>
+        <hasMotionType>true</hasMotionType>
+        <motionType>attack</motionType>
+        <showWeapon>true</showWeapon>
+        <targets>["current target"]</targets>
+        <mirrorAnimation>false</mirrorAnimation>
+        <waitForAnimation>false</waitForAnimation>
+      </actionEffect>
+
+      <postHitMovement>
+        <enabled>false</enabled>
+      </postHitMovement>
+    </hit>
+    <hit id="4">
+      <label>Action Effect (No Animation)</label>
+      <description>Deal damage to all targets based on skill&apos;s damage formula and apply any  buffs or debuffs based on skill&apos;s effects Wait until Fade In Attack is complete + 12 frames</description>
+      <baseCommonEventId></baseCommonEventId>
+
+      <usesRandomTarget>false</usesRandomTarget>
+      <randomTargetLabel></randomTargetLabel>
+
+      <movement>
+        <moveToTarget>
+          <enabled>false</enabled>
+        </moveToTarget>
+        <jump>
+          <enabled>false</enabled>
+        </jump>
+        <spin>
+          <enabled>false</enabled>
+        </spin>
+        <moveDistance>
+          <enabled>false</enabled>
+        </moveDistance>
+      </movement>
+
+      <timing>
+        <type>waitForEvents</type>
+        <frames>14</frames>
+      </timing>
+
+      <actionEffect>
+        <hasMotionType>false</hasMotionType>
+        <motionType>attack</motionType>
+        <showWeapon>true</showWeapon>
+        <targets>["current target"]</targets>
+        <mirrorAnimation>false</mirrorAnimation>
+        <waitForAnimation>false</waitForAnimation>
+      </actionEffect>
+
+      <postHitMovement>
+        <enabled>false</enabled>
+      </postHitMovement>
+    </hit>
+  </hits>
+  <finish>
+    <waitForNewLine>true</waitForNewLine>
+    <waitForEffects>true</waitForEffects>
+    <clearBattleLog>true</clearBattleLog>
+    <homeReset>true</homeReset>
+    <waitForMovement>true</waitForMovement>
+    <applyImmortal>true</applyImmortal>
+  </finish>
+  <references>
+    <baseCommonEvents>
+      <commonEvent id="91">[Teleport Attack All]</commonEvent>
+    </baseCommonEvents>
+    <documentationFiles>
+      <file>frontend/data/CommonEvents.json</file>
+    </documentationFiles>
+  </references>
+
+  <validation>
+    <allParametersValidated>true</allParametersValidated>
+    <validatedAgainst>
+      <commonEvent id="91" validated="true">[Teleport Attack All]</commonEvent>
+    </validatedAgainst>
+    <discrepanciesFound>
+    </discrepanciesFound>
+  </validation>
+
+  <filesAffected>
+    <file path="frontend/data/CommonEvents.json" action="reference">
+      <description>Common Event original usado como base</description>
+    </file>
+  </filesAffected>
+
+  <notes>
+    <note>XML gerado automaticamente a partir do Common Event ID 91</note>
+  </notes>
+</ActionSequenceGuide>

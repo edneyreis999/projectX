@@ -17,14 +17,14 @@ Anã jovem, atlética e ex-Splinter do time "Machados Enferrujados" de futebol r
 
 ## Estatísticas Base
 
-| Atributo | Nível | Descrição |
-|----------|-------|-----------|
-| **HP** | Alto | Resistência do trabalho nas minas |
-| **MP** | Médio | Recursos para habilidades |
-| **ATK** | Alto | Dano melee consistente |
-| **DEF** | Médio | Proteção leve, foco em esquiva |
-| **AGI** | Muito Alto | Mobilidade excepcional |
-| **MAT** | Baixo | Sem uso de magia |
+| Atributo | Nível | nv30 | Descrição |
+|----------|-------|------|-----------|
+| **HP** | Alto | 3,200 | Resistência do trabalho nas minas |
+| **MP** | Médio | — | Recursos para habilidades |
+| **ATK** | Alto | 180 | Dano melee consistente |
+| **DEF** | Médio | 85 | Proteção leve, foco em esquiva |
+| **AGI** | Muito Alto | 160 | Mobilidade excepcional |
+| **MAT** | Baixo | — | Sem uso de magia |
 
 ## Atributos Base de Combate
 
@@ -39,16 +39,22 @@ Anã jovem, atlética e ex-Splinter do time "Machados Enferrujados" de futebol r
 
 ---
 
-## Atributos Base de Combate
+## Sistema de Dano MOBA (VisuStella Battle Core)
 
-| Atributo | Valor | Padrão | Nota |
-|----------|-------|--------|------|
-| **Taxa de Acerto (HIT)** | 90% | 100% | -10% (depende de Thorin) |
-| **Taxa de Evasão (EVA)** | 10% | 5% | +5% (móvel mas não extremamente evasiva) |
-| **Taxa de Crítico (CRIT)** | 5% | 5% | Padrão |
-| **Ataque Adicional** | +1 | 0 | Ataca 2x por turno (multi-hit inato) |
+O projeto usa o **Damage Style MOBA** do VisuStella Battle Core. O campo `formula` das skills recebe um **multiplicador float** direto. O plugin calcula automaticamente: `Dano = formula × ATK × (100 / (100 + DEF_alvo))`.
 
-**Sinergia:** HIT baixo (90%) com multi-hits cria dependência de Thorin para precisão, mas ataque adicional garante pressão constante.
+**Regra crítica:** O campo `formula` é um multiplicador float, NÃO uma porcentagem inteira. `2.23` = multiplicador 2.23× do ATK bruto. Para detalhes completos, consulte `planos/021-balnceamento-status/filena/POSTMORTEM-FORMULAS-MOBA.md`.
+
+| Tier | Dano Esperado (vs DEF 120) | Multiplicador MOBA |
+|------|---------------------------|-------------------|
+| Counter (Ripostar) | ~64 | `0.78` |
+| T0 Gerador | ~90-99 | `1.10` ~ `1.21` |
+| T1 Leve | ~146 | `1.79` |
+| T2 Médio | ~183 | `2.23` |
+| T3 Pesado | ~304 | `3.72` |
+| T4 Finisher | ~540 | `6.60` |
+
+*Referência: ATK Filena nv30 = 180 vs DEF 120 (Cristaleão).*
 
 ---
 
@@ -195,7 +201,7 @@ rate = Math.min(momentumBonus, 0.30);
 
 Filena usa **luvas/gantes** como arma. Todos os nomes e descrições refletem golpes de impacto, punhos e combos manuais — sem referências a lâminas ou cortes.
 
-Todas as skills são projetadas para terem um score final no **Tier 1 (1-50)**. A diferença entre "Leve", "Médio" e "Pesado" não está no score, mas sim no **custo de Momentum**, no **papel tático** (dano vs. utilidade) e nos **trade-offs** exigidos do jogador.
+Todas as skills são projetadas para terem um score final no **Tier 1 (1-50)**. A diferença entre "Leve", "Médio" e "Pesado" não está no score, mas sim no **custo de Momentum**, no **papel tático** (dano vs. utilidade) e nos **trade-offs** exigidos do jogador. Cada skill de dano lista sua **Fórmula MOBA** (multiplicador float para o campo `formula` do VisuStella).
 
 Spender Leves focam em **CC (20-40% chance)**, enquanto Spender Pesados focam em **dano puro**. Isso garante que cada tipo de spender tenha um nicho tático claro.
 
@@ -209,8 +215,8 @@ Spender Leves focam em **CC (20-40% chance)**, enquanto Spender Pesados focam em
 #### **2. Ripostar**
 - **Tipo:** Passiva
 - **Descrição:** Ao evadir de um ataque, Filena executa um contra-ataque imediato no agressor com as luvas.
-- **Efeito:** Counter com dano de 0.5x + gera 5 TP. **Esta é a única fonte de TP por evasão.**
-- **Implementação:** Via `<Counter Control>` do VisuStella Battle Core, triggerado por evasão bem-sucedida.
+- **Efeito:** Counter com fórmula MOBA `0.78` + gera 5 TP. **Esta é a única fonte de TP por evasão.** Dano: 0.78 × ATK × mit = ~64 mitigado (vs DEF 120).
+- **Implementação:** Via `<Counter Control>` do VisuStella Battle Core, triggerado por evasão bem-sucedida. Campo `formula`: `0.78`. Skill ID 46.
 
 ### Geradores
 
@@ -232,6 +238,8 @@ Spender Leves focam em **CC (20-40% chance)**, enquanto Spender Pesados focam em
 
 **Embalo:** +4 TP por stack (máx 3 stacks). No Nv.3: +8 (base) + 12 (embalo) = +20 TP por uso.
 
+**Fórmula MOBA:** `1.21` — Dano = 1.21 × ATK × mit = ~99 mitigado (vs DEF 120). Skill ID 47.
+
 ---
 
 #### **4. Golpe Marcador**
@@ -252,6 +260,8 @@ Spender Leves focam em **CC (20-40% chance)**, enquanto Spender Pesados focam em
 - **Score Final: 19** — **Tier 1**
 
 **Embalo:** +4 TP por stack (máx 3 stacks). Setup para o time inteiro — mantê-lo via Embalo é taticamente forte.
+
+**Fórmula MOBA:** `1.10` — Dano = 1.10 × ATK × mit = ~90 mitigado (vs DEF 120). Skill ID 48.
 
 ---
 
@@ -275,6 +285,8 @@ Spender Leves focam em **CC (20-40% chance)**, enquanto Spender Pesados focam em
 
 **Embalo:** +4 TP por stack (máx 3 stacks). No Nv.3: gasta 15 TP mas recupera 12 TP via Embalo = **custo efetivo de 3 TP**. Spender de CC muito barato se mantido.
 
+**Fórmula MOBA:** `1.79` — Dano = 1.79 × ATK × mit = ~146 mitigado (vs DEF 120). Skill ID 49.
+
 ---
 
 #### **6. Punho Cegante**
@@ -294,6 +306,8 @@ Spender Leves focam em **CC (20-40% chance)**, enquanto Spender Pesados focam em
 - **Score Final: 12** — **Tier 1**
 
 **Embalo:** +4 TP por stack (máx 3 stacks). CC defensivo — reduz HIT do inimigo em -50%.
+
+**Fórmula MOBA:** `1.79` — Dano = 1.79 × ATK × mit = ~146 mitigado (vs DEF 120). Skill ID 50.
 
 ---
 
@@ -318,6 +332,8 @@ Spender Leves focam em **CC (20-40% chance)**, enquanto Spender Pesados focam em
 
 **Embalo:** +4 TP por stack (máx 3 stacks). No Nv.3: gasta 25 TP mas recupera 12 TP via Embalo = **custo efetivo de 13 TP**. Dano total 2.0x por custo reduzido.
 
+**Fórmula MOBA:** `2.23` — Dano = 2.23 × ATK × mit = ~183 mitigado POR HIT (vs DEF 120). Total 2 hits: ~366. Skill ID 51.
+
 ---
 
 #### **8. Golpe Atordoante**
@@ -337,6 +353,8 @@ Spender Leves focam em **CC (20-40% chance)**, enquanto Spender Pesados focam em
 - **Score Final: 32** — **Tier 1**
 
 **Embalo:** +4 TP por stack (máx 3 stacks). Stun é o hard CC mais forte do kit. Hard CC puro — o jogador escolhe entre dano (Combo Duplo) ou controle (Golpe Atordoante).
+
+**Fórmula MOBA:** `2.23` — Dano = 2.23 × ATK × mit = ~183 mitigado (vs DEF 120). Skill ID 52.
 
 ---
 
@@ -362,6 +380,8 @@ Spender Leves focam em **CC (20-40% chance)**, enquanto Spender Pesados focam em
 
 **Embalo:** +4 TP por stack (máx 3 stacks). No Nv.3: gasta 35 TP mas recupera 12 TP via Embalo = **custo efetivo de 23 TP**. O spender de dano mais eficiente se mantido com Embalo.
 
+**Fórmula MOBA:** `3.72` — Dano = 3.72 × ATK × mit = ~304 mitigado (vs DEF 120). Skill ID 53.
+
 ---
 
 #### **10. Ira da Duelista**
@@ -383,6 +403,8 @@ Spender Leves focam em **CC (20-40% chance)**, enquanto Spender Pesados focam em
 - **Score Final: 10** — **Tier 1**
 
 **Embalo:** +4 TP por stack (máx 3 stacks). Alto risco: DEF -50% + After Gauge -25% = vulnerabilidade severa. Melhor usada quando o inimigo está com CC (Stun do Golpe Atordoante).
+
+**Fórmula MOBA:** `6.60` — Dano = 6.60 × ATK × mit = ~540 mitigado (vs DEF 120). Skill ID 54.
 
 ---
 
@@ -413,25 +435,27 @@ Spender Leves focam em **CC (20-40% chance)**, enquanto Spender Pesados focam em
 
 **Nota:** Dança dos Ventos SEMPRE quebra o Embalo (é Ultimate — o jogador sacrifica a eficiência acumulada pelo burst). O jogador escolhe entre manter Embalo para rotação sustentada ou sacrificar tudo por este burst explosivo.
 
+**Fórmula MOBA:** `6.60` — Dano = 6.60 × ATK × mit = ~540 mitigado POR HIT (vs DEF 120). Total 4 hits aleatórios: ~2,160. Skill ID 55.
+
 ---
 
 ### Tabela Consolidada do Kit
 
-| # | Nome | Tipo | Papel | TP Cost | Dano | CC/Efeito | Speed | Embalo | Score | Tier |
-|---|------|------|-------|---------|------|-----------|-------|--------|-------|------|
+| # | Nome | Tipo | Papel | TP Cost | MOBA | Dano Mitigado | CC/Efeito | Speed | Score | Tier |
+|---|------|------|-------|---------|------|---------------|-----------|-------|-------|------|
 | 1 | Fluxo Contínuo | Passiva | After Gauge dinâmico | — | — | — | — | — | — | — |
-| 2 | Ripostar | Passiva | Counter ao evadir | — | 0.5x | +5 TP | — | — | — | — |
-| 3 | Passo de Brisa | Gerador | Dano + TP | 0 | 1.0x | — | +1000 | +4 TP/stack | 8 | T1 |
-| 4 | Golpe Marcador | Gerador | Setup + TP | 0 | 0.9x | Marcação 100% | +500 | +4 TP/stack | 19 | T1 |
-| 5 | Rasteira | Spender Leve | CC | -15 | 1.1x | Slow 40% | 0 | +4 TP/stack | 12 | T1 |
-| 6 | Punho Cegante | Spender Leve | CC | -15 | 1.1x | Cegueira 30% | 0 | +4 TP/stack | 12 | T1 |
-| 7 | Combo Duplo | Spender Médio | Dano | -25 | 1.0x (2 hits) | — | 0 (-5% AG) | +4 TP/stack | 1 | T1 |
-| 8 | Golpe Atordoante | Spender Médio | CC | -25 | 1.0x | Stun 100% | 0 | +4 TP/stack | 32 | T1 |
-| 9 | Punho Devastador | Spender Pesado | Dano Puro | -35 | 1.5x | Armor Pen 25% | -500 | +4 TP/stack | 27 | T1 |
-| 10 | Ira da Duelista | Spender Pesado | Risco/Recomp | -40 | 1.8x | Buff ATK +50%, Debuff DEF -50% | 0 (-25% AG) | +4 TP/stack | 10 | T1 |
-| 11 | Dança dos Ventos | Ultimate | Burst | -45 | 1.4x (4 hits) | Random Target | -500 (-20% AG) | Quebra | 6 | T1 |
+| 2 | Ripostar | Passiva | Counter ao evadir | — | `0.78` | ~64 | +5 TP | — | — | — |
+| 3 | Passo de Brisa | Gerador | Dano + TP | 0 | `1.21` | ~99 | — | +1000 | 8 | T1 |
+| 4 | Golpe Marcador | Gerador | Setup + TP | 0 | `1.10` | ~90 | Marcação 100% | +500 | 19 | T1 |
+| 5 | Rasteira | Spender Leve | CC | -15 | `1.79` | ~146 | Slow 40% | 0 | 12 | T1 |
+| 6 | Punho Cegante | Spender Leve | CC | -15 | `1.79` | ~146 | Cegueira 30% | 0 | 12 | T1 |
+| 7 | Combo Duplo | Spender Médio | Dano | -25 | `2.23` | ~183/hit (2) | — | -5% AG | 1 | T1 |
+| 8 | Golpe Atordoante | Spender Médio | CC | -25 | `2.23` | ~183 | Stun 100% | 0 | 32 | T1 |
+| 9 | Punho Devastador | Spender Pesado | Dano Puro | -35 | `3.72` | ~304 | Armor Pen 25% | -500 | 27 | T1 |
+| 10 | Ira da Duelista | Spender Pesado | Risco/Recomp | -40 | `6.60` | ~540 | ATK+50%, DEF-50% | -25% AG | 10 | T1 |
+| 11 | Dança dos Ventos | Ultimate | Burst | -45 | `6.60` | ~540/hit (4) | Random Target | -500, -20% AG | 6 | T1 |
 
-**AG = After Gauge**
+**AG = After Gauge. Dano mitigado calculado com ATK 180 vs DEF 120 (Cristaleão).**
 
 ---
 
