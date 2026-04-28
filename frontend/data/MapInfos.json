@@ -332,7 +332,7 @@
     "name": "Entrada de Kravens 03 - OLD",
     "order": 45,
     "parentId": 15,
-    "scrollX": 875,
+    "scrollX": 870.5,
     "scrollY": 860,
     "quick": false
   },
@@ -563,7 +563,7 @@
     "order": 50,
     "parentId": 36,
     "scrollX": 870.5,
-    "scrollY": 838,
+    "scrollY": 558,
     "quick": false
   }
 ]
