@@ -532,24 +532,64 @@
     ],
     "learnings": [
       {
-        "level": 5,
-        "note": "",
-        "skillId": 252
+        "level": 1,
+        "skillId": 88,
+        "note": ""
       },
       {
-        "level": 12,
-        "note": "",
-        "skillId": 253
+        "level": 1,
+        "skillId": 89,
+        "note": ""
       },
       {
-        "level": 20,
-        "note": "",
-        "skillId": 254
+        "level": 1,
+        "skillId": 90,
+        "note": ""
       },
       {
-        "level": 30,
-        "note": "",
-        "skillId": 255
+        "level": 1,
+        "skillId": 91,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 92,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 93,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 94,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 95,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 96,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 97,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 98,
+        "note": ""
+      },
+      {
+        "level": 1,
+        "skillId": 99,
+        "note": ""
       }
     ],
     "name": "Fundeiro",
