@@ -332,8 +332,8 @@
     "name": "Entrada de Kravens 03 - OLD",
     "order": 46,
     "parentId": 15,
-    "scrollX": 870.5,
-    "scrollY": 860,
+    "scrollX": 1166.6666666666667,
+    "scrollY": 701.3333333333334,
     "quick": false
   },
   {
@@ -352,8 +352,8 @@
     "name": "Segundo Sol - Preparação",
     "order": 50,
     "parentId": 42,
-    "scrollX": 875,
-    "scrollY": 494,
+    "scrollX": 1160.6666666666667,
+    "scrollY": 648,
     "quick": false
   },
   {
@@ -482,8 +482,8 @@
     "name": "Vila de Pescadores",
     "order": 55,
     "parentId": 15,
-    "scrollX": 875,
-    "scrollY": 652,
+    "scrollX": 1166.6666666666667,
+    "scrollY": 658.6666666666666,
     "quick": false
   },
   {
@@ -558,12 +558,12 @@
   },
   {
     "id": 57,
-    "expanded": false,
+    "expanded": true,
     "name": "Mapa Release",
-    "order": 50,
-    "parentId": 36,
-    "scrollX": 870.5,
-    "scrollY": 558,
+    "order": 37,
+    "parentId": 15,
+    "scrollX": 1177.3333333333333,
+    "scrollY": 1490.6666666666667,
     "quick": false
   }
 ]
