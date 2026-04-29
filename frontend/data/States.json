@@ -36,7 +36,7 @@
     "id": 2,
     "autoRemovalTiming": 2,
     "chanceByDamage": 100,
-    "iconIndex": 0,
+    "iconIndex": 55,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
@@ -67,7 +67,7 @@
     "id": 3,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
-    "iconIndex": 0,
+    "iconIndex": 63,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
@@ -98,7 +98,7 @@
     "id": 4,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
-    "iconIndex": 2,
+    "iconIndex": 17,
     "maxTurns": 1,
     "message1": "%1 foi envenenado!",
     "message2": "%1 está envenenado!",
@@ -130,7 +130,7 @@
     "id": 5,
     "autoRemovalTiming": 1,
     "chanceByDamage": 100,
-    "iconIndex": 3,
+    "iconIndex": 57,
     "maxTurns": 5,
     "message1": "%1 foi cegado!",
     "message2": "%1 está cego!",
@@ -162,7 +162,7 @@
     "id": 6,
     "autoRemovalTiming": 1,
     "chanceByDamage": 100,
-    "iconIndex": 4,
+    "iconIndex": 63,
     "maxTurns": 5,
     "message1": "%1 foi silenciado!",
     "message2": "%1 está silenciado!",
@@ -236,7 +236,7 @@
     "id": 8,
     "autoRemovalTiming": 1,
     "chanceByDamage": 50,
-    "iconIndex": 6,
+    "iconIndex": 22,
     "maxTurns": 4,
     "message1": "%1 está confuso!",
     "message2": "%1 está confuso!",
@@ -262,7 +262,7 @@
     "id": 9,
     "autoRemovalTiming": 1,
     "chanceByDamage": 50,
-    "iconIndex": 7,
+    "iconIndex": 23,
     "maxTurns": 4,
     "message1": "%1 foi seduzido!",
     "message2": "%1 foi seduzido!",
@@ -288,7 +288,7 @@
     "id": 10,
     "autoRemovalTiming": 1,
     "chanceByDamage": 100,
-    "iconIndex": 8,
+    "iconIndex": 63,
     "maxTurns": 5,
     "message1": "%1 adormeceu!",
     "message2": "%1 adormeceu!",
@@ -352,7 +352,7 @@
         "value": -1
       }
     ],
-    "iconIndex": 9,
+    "iconIndex": 63,
     "maxTurns": 3,
     "message1": "%1 está paralisado e não pode se mexer!",
     "message2": "%1 está paralisado!",
@@ -383,7 +383,7 @@
         "value": -1
       }
     ],
-    "iconIndex": 9,
+    "iconIndex": 22,
     "maxTurns": 2,
     "message1": "%1 foi atordoado!",
     "message2": "%1 está atordoado!",
@@ -439,7 +439,7 @@
         "value": 0.1
       }
     ],
-    "iconIndex": 72,
+    "iconIndex": 63,
     "maxTurns": 4,
     "message1": "",
     "message2": "",
@@ -470,7 +470,7 @@
         "value": 0.1
       }
     ],
-    "iconIndex": 72,
+    "iconIndex": 63,
     "maxTurns": 4,
     "message1": "",
     "message2": "",
@@ -501,7 +501,7 @@
         "value": 0.1
       }
     ],
-    "iconIndex": 72,
+    "iconIndex": 63,
     "maxTurns": 4,
     "message1": "",
     "message2": "",
@@ -532,7 +532,7 @@
         "value": 1
       }
     ],
-    "iconIndex": 70,
+    "iconIndex": 63,
     "maxTurns": 5,
     "message1": "",
     "message2": "",
@@ -563,7 +563,7 @@
         "value": 1
       }
     ],
-    "iconIndex": 81,
+    "iconIndex": 55,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
@@ -594,7 +594,7 @@
         "value": 9
       }
     ],
-    "iconIndex": 76,
+    "iconIndex": 21,
     "maxTurns": 5,
     "message1": "%1 tornou-se mais fácil de acertar!",
     "message2": "",
@@ -625,7 +625,7 @@
         "value": 0
       }
     ],
-    "iconIndex": 81,
+    "iconIndex": 63,
     "maxTurns": 5,
     "message1": "%1 se tornou mais difícil de acertar!",
     "message2": "",
@@ -656,7 +656,7 @@
         "value": 1
       }
     ],
-    "iconIndex": 77,
+    "iconIndex": 72,
     "maxTurns": 3,
     "message1": "",
     "message2": "",
@@ -727,7 +727,7 @@
         "value": 1
       }
     ],
-    "iconIndex": 70,
+    "iconIndex": 63,
     "maxTurns": 5,
     "message1": "",
     "message2": "",
@@ -758,7 +758,7 @@
         "value": 0.25
       }
     ],
-    "iconIndex": 70,
+    "iconIndex": 63,
     "maxTurns": 5,
     "message1": "",
     "message2": "",
@@ -799,7 +799,7 @@
         "value": 1.1
       }
     ],
-    "iconIndex": 64,
+    "iconIndex": 24,
     "maxTurns": 5,
     "message1": "%1 está envolto pelas chamas!",
     "message2": "%1 está envolto pelas chamas!",
@@ -840,7 +840,7 @@
         "value": 1.1
       }
     ],
-    "iconIndex": 65,
+    "iconIndex": 63,
     "maxTurns": 5,
     "message1": "%1 está envolto pelo gelo.",
     "message2": "%1 está envolto pelo gelo.",
@@ -881,7 +881,7 @@
         "value": 1.1
       }
     ],
-    "iconIndex": 66,
+    "iconIndex": 25,
     "maxTurns": 5,
     "message1": "%1 está envolto pela tempestade de trovão.",
     "message2": "%1 está envolto pela tempestade de trovão.",
@@ -937,7 +937,7 @@
         "value": 1
       }
     ],
-    "iconIndex": 72,
+    "iconIndex": 63,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
@@ -973,7 +973,7 @@
         "value": 1
       }
     ],
-    "iconIndex": 70,
+    "iconIndex": 63,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
@@ -1004,7 +1004,7 @@
         "value": -0.1
       }
     ],
-    "iconIndex": 10,
+    "iconIndex": 56,
     "maxTurns": 1,
     "message1": "%1 está sangrando!",
     "message2": "%1 está sangrando!",
@@ -1260,7 +1260,7 @@
         "value": 0
       }
     ],
-    "iconIndex": 76,
+    "iconIndex": 63,
     "maxTurns": 3,
     "message1": "%1 assume a guarda de %2!",
     "message2": "%1 está protegendo %2!",
@@ -1285,7 +1285,7 @@
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
     "traits": [],
-    "iconIndex": 0,
+    "iconIndex": 55,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
@@ -1516,7 +1516,7 @@
         "value": 0.7
       }
     ],
-    "iconIndex": 98,
+    "iconIndex": 26,
     "maxTurns": 5,
     "message1": "",
     "message2": "Cristaleão aumentou a evasão",
@@ -1647,7 +1647,7 @@
         "value": 1
       }
     ],
-    "iconIndex": 64,
+    "iconIndex": 72,
     "maxTurns": 3,
     "message1": "",
     "message2": "",
@@ -1693,7 +1693,7 @@
         "value": 1.25
       }
     ],
-    "iconIndex": 89,
+    "iconIndex": 16,
     "maxTurns": 1,
     "message1": "O Lobo Alpha ficou sozinho!",
     "message2": "A matilha foi exterminada, e agora ele luta com desespero!",
@@ -1718,7 +1718,7 @@
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
     "traits": [],
-    "iconIndex": 177,
+    "iconIndex": 6,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
@@ -1793,7 +1793,7 @@
     "autoRemovalTiming": 2,
     "chanceByDamage": 100,
     "traits": [],
-    "iconIndex": 1,
+    "iconIndex": 32,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
@@ -1893,7 +1893,7 @@
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
     "traits": [],
-    "iconIndex": 199,
+    "iconIndex": 78,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
@@ -1918,7 +1918,7 @@
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
     "traits": [],
-    "iconIndex": 106,
+    "iconIndex": 72,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
@@ -1943,7 +1943,7 @@
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
     "traits": [],
-    "iconIndex": 161,
+    "iconIndex": 68,
     "maxTurns": 2,
     "message1": "",
     "message2": "",
@@ -1974,7 +1974,7 @@
         "value": 0.7
       }
     ],
-    "iconIndex": 54,
+    "iconIndex": 63,
     "maxTurns": 3,
     "message1": "",
     "message2": "",
@@ -1999,7 +1999,7 @@
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
     "traits": [],
-    "iconIndex": 162,
+    "iconIndex": 68,
     "maxTurns": 2,
     "message1": "",
     "message2": "",
@@ -2024,7 +2024,7 @@
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
     "traits": [],
-    "iconIndex": 163,
+    "iconIndex": 68,
     "maxTurns": 2,
     "message1": "",
     "message2": "",
@@ -2049,7 +2049,7 @@
     "autoRemovalTiming": 2,
     "chanceByDamage": 100,
     "traits": [],
-    "iconIndex": 73,
+    "iconIndex": 63,
     "maxTurns": 4,
     "message1": "",
     "message2": "",
@@ -2205,7 +2205,7 @@
         "value": 1.05
       }
     ],
-    "iconIndex": 0,
+    "iconIndex": 55,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
@@ -2236,7 +2236,7 @@
         "value": 1.05
       }
     ],
-    "iconIndex": 0,
+    "iconIndex": 55,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
@@ -2267,7 +2267,7 @@
         "value": 1.05
       }
     ],
-    "iconIndex": 0,
+    "iconIndex": 55,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
@@ -2298,7 +2298,7 @@
         "value": 1.05
       }
     ],
-    "iconIndex": 0,
+    "iconIndex": 55,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
@@ -2329,7 +2329,7 @@
         "value": 1.05
       }
     ],
-    "iconIndex": 0,
+    "iconIndex": 55,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
@@ -2354,7 +2354,7 @@
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
     "traits": [],
-    "iconIndex": 0,
+    "iconIndex": 63,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
@@ -2379,7 +2379,7 @@
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
     "traits": [],
-    "iconIndex": 0,
+    "iconIndex": 1,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
@@ -2404,7 +2404,7 @@
     "autoRemovalTiming": 2,
     "chanceByDamage": 100,
     "traits": [],
-    "iconIndex": 0,
+    "iconIndex": 55,
     "maxTurns": 2,
     "message1": "",
     "message2": "",
@@ -2429,7 +2429,7 @@
     "autoRemovalTiming": 2,
     "chanceByDamage": 100,
     "traits": [],
-    "iconIndex": 0,
+    "iconIndex": 55,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
@@ -2460,7 +2460,7 @@
         "value": 1.3
       }
     ],
-    "iconIndex": 0,
+    "iconIndex": 55,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
@@ -2521,7 +2521,7 @@
         "value": 0.8
       }
     ],
-    "iconIndex": 0,
+    "iconIndex": 67,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
@@ -2546,7 +2546,7 @@
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
     "traits": [],
-    "iconIndex": 0,
+    "iconIndex": 78,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
@@ -2571,7 +2571,7 @@
     "autoRemovalTiming": 2,
     "chanceByDamage": 100,
     "traits": [],
-    "iconIndex": 0,
+    "iconIndex": 56,
     "maxTurns": 5,
     "message1": "",
     "message2": "",
@@ -2621,7 +2621,7 @@
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
     "traits": [],
-    "iconIndex": 0,
+    "iconIndex": 63,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
@@ -2646,7 +2646,7 @@
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
     "traits": [],
-    "iconIndex": 0,
+    "iconIndex": 63,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
@@ -2671,7 +2671,7 @@
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
     "traits": [],
-    "iconIndex": 0,
+    "iconIndex": 63,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
@@ -2696,7 +2696,7 @@
     "autoRemovalTiming": 2,
     "chanceByDamage": 100,
     "traits": [],
-    "iconIndex": 0,
+    "iconIndex": 20,
     "maxTurns": 3,
     "message1": "",
     "message2": "",
@@ -2721,7 +2721,7 @@
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
     "traits": [],
-    "iconIndex": 0,
+    "iconIndex": 63,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
