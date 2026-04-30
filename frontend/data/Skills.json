@@ -2986,7 +2986,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Tiro Perfurante",
-    "note": "<Armor Penetration: 15%>\n\n<JS Pre-Damage>\nif (target.isStateAffected(71)) {\n  value = Math.floor(value * 1.25);\n}\n</JS Pre-Damage>",
+    "note": "<Armor Penetration: 15%>\n\n<JS Pre-Damage>\nif (target.isStateAffected(71)) {\n  value = Math.floor(value * 1.25);\n}\n</JS Pre-Damage>\n\n<JS Critical Rate>\nconsole.log(`--- user ----`)\nconsole.log(user)\nconsole.log(`--- rate ----`)\nconsole.log(rate)\n</JS Critical Rate>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -3109,14 +3109,7 @@
       "variance": 20
     },
     "description": "Thorin entra em estado de concentracao absoluta — \nsuas skills ficam mais lentas mas muito mais precisas e devastadoras. ",
-    "effects": [
-      {
-        "code": 33,
-        "dataId": 6,
-        "value1": 1,
-        "value2": 3
-      }
-    ],
+    "effects": [],
     "hitType": 0,
     "iconIndex": 20,
     "message1": "",
@@ -3124,7 +3117,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Concentracao",
-    "note": "<JS On Use Action>\nuser.addState(95);\n</JS On Use Action>",
+    "note": "<Apply State: 100% Concentracao>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
