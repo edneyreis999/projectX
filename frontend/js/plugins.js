@@ -945,5 +945,11 @@ var $plugins =
         "status": true,
         "description": "Notetag para modificar a taxa de acerto (hit rate) de skills e items",
         "parameters": {}
+    },
+    {
+        "name": "Coreto_TpNotetags",
+        "status": true,
+        "description": "Notetags para modificar custo e ganho de TP em Skills e Items",
+        "parameters": {}
     }
 ];

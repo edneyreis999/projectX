@@ -25,7 +25,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Ataque",
-    "note": "",
+    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Gain TP: +5>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -35,7 +35,7 @@
     "stypeId": 0,
     "successRate": 100,
     "tpCost": 0,
-    "tpGain": 5,
+    "tpGain": 0,
     "messageType": 1
   },
   {
@@ -63,7 +63,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Defender",
-    "note": "A habilidade n.º 2 corresponde ao comando de Proteção.",
+    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Gain TP: +10>\n\nA habilidade n.º 2 corresponde ao comando de Proteção.",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -73,7 +73,7 @@
     "stypeId": 0,
     "successRate": 100,
     "tpCost": 0,
-    "tpGain": 10,
+    "tpGain": 0,
     "messageType": 1
   },
   {
@@ -350,7 +350,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Espinho Veloz",
-    "note": "",
+    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Gain TP: +10>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -360,7 +360,7 @@
     "stypeId": 0,
     "successRate": 100,
     "tpCost": 0,
-    "tpGain": 10
+    "tpGain": 0
   },
   {
     "id": 12,
@@ -388,7 +388,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Camuflagem de Kraven",
-    "note": "",
+    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Gain TP: +10>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -398,7 +398,7 @@
     "stypeId": 1,
     "successRate": 100,
     "tpCost": 0,
-    "tpGain": 10
+    "tpGain": 0
   },
   {
     "id": 13,
@@ -426,7 +426,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Sussurro Cristalino",
-    "note": "<JS Skill Enable>\n  enabled = user.isStateAffected(51)\n</JS Skill Enable>",
+    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Gain TP: +10>\n\n<JS Skill Enable>\n  enabled = user.isStateAffected(51)\n</JS Skill Enable>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -436,7 +436,7 @@
     "stypeId": 0,
     "successRate": 70,
     "tpCost": 0,
-    "tpGain": 10
+    "tpGain": 0
   },
   {
     "id": 14,
@@ -464,7 +464,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Investida Devastadora",
-    "note": "<JS Skill Enable>\n  enabled = user.isStateAffected(7) && user.isStateAffected(51);\n</JS Skill Enable>",
+    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Gain TP: +10>\n\n<JS Skill Enable>\n  enabled = user.isStateAffected(7) && user.isStateAffected(51);\n</JS Skill Enable>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -474,7 +474,7 @@
     "stypeId": 0,
     "successRate": 100,
     "tpCost": 0,
-    "tpGain": 10
+    "tpGain": 0
   },
   {
     "id": 15,
@@ -964,7 +964,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Corte Cirúrgico",
-    "note": "<Modify Critical Rate: +15%>\n<Apply State: 30% Sangramento>\n\n<All AI Conditions>\n  Target Not State 31\n</All AI Conditions>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 5>\n// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Gain TP: +5>\n\n<Modify Critical Rate: +15%>\n<Apply State: 30% Sangramento>\n\n<All AI Conditions>\n  Target Not State 31\n</All AI Conditions>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -973,8 +973,8 @@
     "speed": -10,
     "stypeId": 2,
     "successRate": 100,
-    "tpCost": 5,
-    "tpGain": 5
+    "tpCost": 0,
+    "tpGain": 0
   },
   {
     "id": 30,
@@ -995,7 +995,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Corte Cirúrgico II",
-    "note": "<Modify Critical Rate: +25%>\n<Damage Bonus: +10%>\n<Apply State: 50% Sangramento>\n\n<All AI Conditions>\n  Target Not State 31\n</All AI Conditions>",
+    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Gain TP: +5>\n\n<Modify Critical Rate: +25%>\n<Damage Bonus: +10%>\n<Apply State: 50% Sangramento>\n\n<All AI Conditions>\n  Target Not State 31\n</All AI Conditions>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -1005,7 +1005,7 @@
     "stypeId": 2,
     "successRate": 100,
     "tpCost": 0,
-    "tpGain": 5
+    "tpGain": 0
   },
   {
     "id": 31,
@@ -1539,7 +1539,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Ripostar Counter",
-    "note": "<Gain TP: +5>",
+    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Gain TP: +5>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -1570,7 +1570,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Passo de Brisa",
-    "note": "  <JS Post-Start Action>\n  var thisSkillId = 47;\n  var embaloIds = [67, 69, 70];\n\n  console.log(\"=== EMBALO DEBUG ===\");\n  console.log(\"_embaloLastSkill anterior: \" + user._embaloLastSkill);\n  console.log(\"_embaloCount anterior: \" + user._embaloCount);\n\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n\n  console.log(\"_embaloCount novo: \" + user._embaloCount);\n\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    console.log(\"TP bonus: \" + tpFinal);\n    user.gainTp(tpFinal);\n  }\n\n  for (var i = 0; i < embaloIds.length; i++) {\n    user.removeState(embaloIds[i]);\n  }\n  user.addState(embaloIds[user._embaloCount - 1]);\n\n  console.log(\"State aplicado: \" + embaloIds[user._embaloCount - 1]);\n  console.log(\"=== FIM EMBALO DEBUG ===\");\n  </JS Post-Start Action>",
+    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Gain TP: +5>\n\n  <JS Post-Start Action>\n  var thisSkillId = 47;\n  var embaloIds = [67, 69, 70];\n\n  console.log(\"=== EMBALO DEBUG ===\");\n  console.log(\"_embaloLastSkill anterior: \" + user._embaloLastSkill);\n  console.log(\"_embaloCount anterior: \" + user._embaloCount);\n\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n\n  console.log(\"_embaloCount novo: \" + user._embaloCount);\n\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    console.log(\"TP bonus: \" + tpFinal);\n    user.gainTp(tpFinal);\n  }\n\n  for (var i = 0; i < embaloIds.length; i++) {\n    user.removeState(embaloIds[i]);\n  }\n  user.addState(embaloIds[user._embaloCount - 1]);\n\n  console.log(\"State aplicado: \" + embaloIds[user._embaloCount - 1]);\n  console.log(\"=== FIM EMBALO DEBUG ===\");\n  </JS Post-Start Action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -1580,7 +1580,7 @@
     "stypeId": 2,
     "successRate": 100,
     "tpCost": 0,
-    "tpGain": 5
+    "tpGain": 0
   },
   {
     "id": 48,
@@ -1601,7 +1601,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Golpe Marcador",
-    "note": "<Apply State: 30% Marcacao>\n \n <JS Post-Start Action>\n  var thisSkillId = 48;\n  var embaloIds = [67, 69, 70];\n\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    user.gainTp(tpFinal);\n  }\n\n  for (var i = 0; i < embaloIds.length; i++) {\n    user.removeState(embaloIds[i]);\n  }\n  user.addState(embaloIds[user._embaloCount - 1]);\n  </JS Post-Start Action>",
+    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Gain TP: +5>\n\n<Apply State: 30% Marcacao>\n \n <JS Post-Start Action>\n  var thisSkillId = 48;\n  var embaloIds = [67, 69, 70];\n\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    user.gainTp(tpFinal);\n  }\n\n  for (var i = 0; i < embaloIds.length; i++) {\n    user.removeState(embaloIds[i]);\n  }\n  user.addState(embaloIds[user._embaloCount - 1]);\n  </JS Post-Start Action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -1611,7 +1611,7 @@
     "stypeId": 2,
     "successRate": 100,
     "tpCost": 0,
-    "tpGain": 5
+    "tpGain": 0
   },
   {
     "id": 49,
@@ -1632,7 +1632,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Rasteira",
-    "note": "<Apply State: 40% Slow>  \n\n<JS Post-Start Action>\n  var thisSkillId = 49;\n  var embaloIds = [67, 69, 70];\n\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    user.gainTp(tpFinal);\n  }\n\n  for (var i = 0; i < embaloIds.length; i++) {\n    user.removeState(embaloIds[i]);\n  }\n  user.addState(embaloIds[user._embaloCount - 1]);\n  </JS Post-Start Action>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 15>\n\n<Apply State: 40% Slow>  \n\n<JS Post-Start Action>\n  var thisSkillId = 49;\n  var embaloIds = [67, 69, 70];\n\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    user.gainTp(tpFinal);\n  }\n\n  for (var i = 0; i < embaloIds.length; i++) {\n    user.removeState(embaloIds[i]);\n  }\n  user.addState(embaloIds[user._embaloCount - 1]);\n  </JS Post-Start Action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -1641,7 +1641,7 @@
     "speed": 0,
     "stypeId": 2,
     "successRate": 100,
-    "tpCost": 15,
+    "tpCost": 0,
     "tpGain": 0
   },
   {
@@ -1663,7 +1663,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Punho Cegante",
-    "note": "<Apply State: 30% Cegueira>    \n<JS Post-Start Action>\n  var thisSkillId = 50;\n  var embaloIds = [67, 69, 70];\n\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    user.gainTp(tpFinal);\n  }\n\n  for (var i = 0; i < embaloIds.length; i++) {\n    user.removeState(embaloIds[i]);\n  }\n  user.addState(embaloIds[user._embaloCount - 1]);\n  </JS Post-Start Action>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 15>\n\n<Apply State: 30% Cegueira>    \n<JS Post-Start Action>\n  var thisSkillId = 50;\n  var embaloIds = [67, 69, 70];\n\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    user.gainTp(tpFinal);\n  }\n\n  for (var i = 0; i < embaloIds.length; i++) {\n    user.removeState(embaloIds[i]);\n  }\n  user.addState(embaloIds[user._embaloCount - 1]);\n  </JS Post-Start Action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -1672,7 +1672,7 @@
     "speed": 0,
     "stypeId": 2,
     "successRate": 100,
-    "tpCost": 15,
+    "tpCost": 0,
     "tpGain": 0
   },
   {
@@ -1694,7 +1694,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Combo Duplo",
-    "note": "<Common Event Key: Combo Duplo>\n\n<ATB After Gauge: -5%>\n\n<JS Post-Start Action>\n  var thisSkillId = 51;\n  var embaloIds = [67, 69, 70];\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    user.gainTp(tpFinal);\n  }\n  for (var i = 0; i < embaloIds.length; i++) {\n    user.removeState(embaloIds[i]);\n  }\n  user.addState(embaloIds[user._embaloCount - 1]);\n</JS Post-Start Action>\n",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 25>\n\n<Common Event Key: Combo Duplo>\n\n<ATB After Gauge: -5%>\n\n<JS Post-Start Action>\n  var thisSkillId = 51;\n  var embaloIds = [67, 69, 70];\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    user.gainTp(tpFinal);\n  }\n  for (var i = 0; i < embaloIds.length; i++) {\n    user.removeState(embaloIds[i]);\n  }\n  user.addState(embaloIds[user._embaloCount - 1]);\n</JS Post-Start Action>\n",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -1703,7 +1703,7 @@
     "speed": 0,
     "stypeId": 2,
     "successRate": 100,
-    "tpCost": 25,
+    "tpCost": 0,
     "tpGain": 0
   },
   {
@@ -1725,7 +1725,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Golpe Atordoante",
-    "note": "<Apply State: 100% Atordoamento>  \n<JS Post-Start Action>\n  var thisSkillId = 52;\n  var embaloIds = [67, 69, 70];\n\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    user.gainTp(tpFinal);\n  }\n\n  for (var i = 0; i < embaloIds.length; i++) {\n    user.removeState(embaloIds[i]);\n  }\n  user.addState(embaloIds[user._embaloCount - 1]);\n  </JS Post-Start Action>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 25>\n\n<Apply State: 100% Atordoamento>  \n<JS Post-Start Action>\n  var thisSkillId = 52;\n  var embaloIds = [67, 69, 70];\n\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    user.gainTp(tpFinal);\n  }\n\n  for (var i = 0; i < embaloIds.length; i++) {\n    user.removeState(embaloIds[i]);\n  }\n  user.addState(embaloIds[user._embaloCount - 1]);\n  </JS Post-Start Action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -1734,7 +1734,7 @@
     "speed": 0,
     "stypeId": 2,
     "successRate": 100,
-    "tpCost": 25,
+    "tpCost": 0,
     "tpGain": 0
   },
   {
@@ -1756,7 +1756,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Punho Devastador",
-    "note": "<Armor Pen: 25%>\n\n<JS Post-Start Action>\n  var thisSkillId = 53;\n  var embaloIds = [67, 69, 70];\n\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    user.gainTp(tpFinal);\n  }\n\n  for (var i = 0; i < embaloIds.length; i++) {\n    user.removeState(embaloIds[i]);\n  }\n  user.addState(embaloIds[user._embaloCount - 1]);\n  </JS Post-Start Action>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 35>\n\n<Armor Pen: 25%>\n\n<JS Post-Start Action>\n  var thisSkillId = 53;\n  var embaloIds = [67, 69, 70];\n\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    user.gainTp(tpFinal);\n  }\n\n  for (var i = 0; i < embaloIds.length; i++) {\n    user.removeState(embaloIds[i]);\n  }\n  user.addState(embaloIds[user._embaloCount - 1]);\n  </JS Post-Start Action>",
     "occasion": 0,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -1765,7 +1765,7 @@
     "speed": -500,
     "stypeId": 2,
     "successRate": 100,
-    "tpCost": 35,
+    "tpCost": 0,
     "tpGain": 0
   },
   {
@@ -1787,7 +1787,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Ira da Duelista",
-    "note": "<ATB After Gauge: -25%>\n\n<JS Post-Start Action>\n  // Self-buffs (ATK+50% e DEF-50%) aplicados no user via JS\n  // Nota: <Apply State> aplica no TARGET, nao no user. Para self-buffs, usar user.addState().\n  // Substitua XX pelo ID do state \"ATK +50%\" e YY pelo ID do state \"DEF -50%\" quando definidos\n  user.addBuff(2, 2);\n  user.addDebuff(3, 2);\n  // logica padrao de Embalo\n  var thisSkillId = 54;\n  var embaloIds = [67, 69, 70];\n\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    user.gainTp(tpFinal);\n  }\n\n  for (var i = 0; i < embaloIds.length; i++) {\n    user.removeState(embaloIds[i]);\n  }\n  user.addState(embaloIds[user._embaloCount - 1]);\n  </JS Post-Start Action>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 40>\n\n<ATB After Gauge: -25%>\n\n<JS Post-Start Action>\n  // Self-buffs (ATK+50% e DEF-50%) aplicados no user via JS\n  // Nota: <Apply State> aplica no TARGET, nao no user. Para self-buffs, usar user.addState().\n  // Substitua XX pelo ID do state \"ATK +50%\" e YY pelo ID do state \"DEF -50%\" quando definidos\n  user.addBuff(2, 2);\n  user.addDebuff(3, 2);\n  // logica padrao de Embalo\n  var thisSkillId = 54;\n  var embaloIds = [67, 69, 70];\n\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    user.gainTp(tpFinal);\n  }\n\n  for (var i = 0; i < embaloIds.length; i++) {\n    user.removeState(embaloIds[i]);\n  }\n  user.addState(embaloIds[user._embaloCount - 1]);\n  </JS Post-Start Action>",
     "occasion": 0,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -1796,7 +1796,7 @@
     "speed": 0,
     "stypeId": 2,
     "successRate": 100,
-    "tpCost": 40,
+    "tpCost": 0,
     "tpGain": 0
   },
   {
@@ -1818,7 +1818,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Danca dos Ventos",
-    "note": "<Common Event Key: Dança dos Ventos>\n<ATB Cannot Be Interrupted>\n<ATB After Gauge: -20%>\n\n<JS Post-Start Action>\n  var thisSkillId = 55;\n  var embaloIds = [67, 69, 70];\n\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    user.gainTp(tpFinal);\n  }\n\n  for (var i = 0; i < embaloIds.length; i++) {\n    user.removeState(embaloIds[i]);\n  }\n  user.addState(embaloIds[user._embaloCount - 1]);\n  </JS Post-Start Action>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 45>\n\n<Common Event Key: Dança dos Ventos>\n<ATB Cannot Be Interrupted>\n<ATB After Gauge: -20%>\n\n<JS Post-Start Action>\n  var thisSkillId = 55;\n  var embaloIds = [67, 69, 70];\n\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    user.gainTp(tpFinal);\n  }\n\n  for (var i = 0; i < embaloIds.length; i++) {\n    user.removeState(embaloIds[i]);\n  }\n  user.addState(embaloIds[user._embaloCount - 1]);\n  </JS Post-Start Action>",
     "occasion": 0,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -1827,7 +1827,7 @@
     "speed": 2000,
     "stypeId": 2,
     "successRate": 100,
-    "tpCost": 45,
+    "tpCost": 0,
     "tpGain": 0
   },
   {
@@ -2097,7 +2097,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Represalia Counter",
-    "note": "<Gain TP: +5>",
+    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Gain TP: +5>",
     "occasion": 0,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2128,7 +2128,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Golpe de Escudo",
-    "note": "<Gain TP: +8>",
+    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Gain TP: +8>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2166,7 +2166,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Postura de Observacao",
-    "note": "<Gain TP: +10>",
+    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Gain TP: +10>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2197,7 +2197,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Investida de Escudo",
-    "note": "<Apply State: 100% Atordoamento>\n\n<ATB After Gauge: +10%>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 15>\n\n<Apply State: 100% Atordoamento>\n\n<ATB After Gauge: +10%>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2206,7 +2206,7 @@
     "speed": 0,
     "stypeId": 2,
     "successRate": 100,
-    "tpCost": 15,
+    "tpCost": 0,
     "tpGain": 0
   },
   {
@@ -2228,7 +2228,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Clarao do Escudo",
-    "note": "<Apply State: 100% Cegueira>\n\n<ATB After Gauge: +5%>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 8>\n\n<Apply State: 100% Cegueira>\n\n<ATB After Gauge: +5%>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2237,7 +2237,7 @@
     "speed": 0,
     "stypeId": 2,
     "successRate": 100,
-    "tpCost": 8,
+    "tpCost": 0,
     "tpGain": 0
   },
   {
@@ -2259,7 +2259,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Golpe Desarmando",
-    "note": "<ATB After Gauge: +5%>\n\n<ATB Interrupt>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 15>\n\n<ATB After Gauge: +5%>\n\n<ATB Interrupt>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2268,7 +2268,7 @@
     "speed": 0,
     "stypeId": 2,
     "successRate": 100,
-    "tpCost": 15,
+    "tpCost": 0,
     "tpGain": 0
   },
   {
@@ -2290,7 +2290,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Muralha Pessoal",
-    "note": "<Apply State: 100% Muralha Pessoal>\n\n<ATB After Gauge: +5%>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 14>\n\n<Apply State: 100% Muralha Pessoal>\n\n<ATB After Gauge: +5%>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2299,7 +2299,7 @@
     "speed": 0,
     "stypeId": 2,
     "successRate": 100,
-    "tpCost": 14,
+    "tpCost": 0,
     "tpGain": 0
   },
   {
@@ -2352,7 +2352,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Vigor do Guardiao",
-    "note": "<ATB After Gauge: -10%>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 28>\n\n<ATB After Gauge: -10%>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2361,7 +2361,7 @@
     "speed": 0,
     "stypeId": 2,
     "successRate": 100,
-    "tpCost": 28,
+    "tpCost": 0,
     "tpGain": 0
   },
   {
@@ -2383,7 +2383,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Muralha Contra Impacto",
-    "note": "<Target: All Allies But User>\n\n<Apply State: 100% Muralha Contra Impacto (aliados)>\n\n<ATB After Gauge: -20%>\n\n<JS On Use Action>\nuser.addState(86);\n</JS On Use Action>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 35>\n\n<Target: All Allies But User>\n\n<Apply State: 100% Muralha Contra Impacto (aliados)>\n\n<ATB After Gauge: -20%>\n\n<JS On Use Action>\nuser.addState(86);\n</JS On Use Action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2392,7 +2392,7 @@
     "speed": -1000,
     "stypeId": 2,
     "successRate": 100,
-    "tpCost": 35,
+    "tpCost": 0,
     "tpGain": 0
   },
   {
@@ -2445,7 +2445,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Counter da Fluida",
-    "note": "<Gain TP: +5>",
+    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Gain TP: +5>",
     "occasion": 0,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2476,7 +2476,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Postura Agressiva",
-    "note": "<Apply State: 100% Postura Agressiva>\n\n<JS On Use Action>\nuser.removeState(89);\n</JS On Use Action>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 10>\n\n<Apply State: 100% Postura Agressiva>\n\n<JS On Use Action>\nuser.removeState(89);\n</JS On Use Action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2485,7 +2485,7 @@
     "speed": 0,
     "stypeId": 2,
     "successRate": 100,
-    "tpCost": 10,
+    "tpCost": 0,
     "tpGain": 0
   },
   {
@@ -2507,7 +2507,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Postura Fluida",
-    "note": "<Apply State: 100% Postura Fluida>\n\n<JS On Use Action>\nuser.removeState(88);\n</JS On Use Action>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 10>\n\n<Apply State: 100% Postura Fluida>\n\n<JS On Use Action>\nuser.removeState(88);\n</JS On Use Action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2516,7 +2516,7 @@
     "speed": 0,
     "stypeId": 2,
     "successRate": 100,
-    "tpCost": 10,
+    "tpCost": 0,
     "tpGain": 0
   },
   {
@@ -2538,7 +2538,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Sede de Sangue",
-    "note": "<Gain TP: +8>\n\n<Apply State: 100% Sede de Sangue>",
+    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Gain TP: +8>\n\n<Apply State: 100% Sede de Sangue>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2576,7 +2576,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Couraca de Batalha",
-    "note": "<Gain TP: +8>",
+    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Gain TP: +8>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2607,7 +2607,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Investida Brutal",
-    "note": "<Apply State: 100% Atordoamento>\n\n<JS ATB After Gauge>\nif (user.isStateAffected(88)) {\n  rate = -0.10;\n} else if (user.isStateAffected(89)) {\n  rate = 0.05;\n} else {\n  rate = 0;\n}\n</JS ATB After Gauge>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 15>\n\n<Apply State: 100% Atordoamento>\n\n<JS ATB After Gauge>\nif (user.isStateAffected(88)) {\n  rate = -0.10;\n} else if (user.isStateAffected(89)) {\n  rate = 0.05;\n} else {\n  rate = 0;\n}\n</JS ATB After Gauge>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2616,7 +2616,7 @@
     "speed": 0,
     "stypeId": 2,
     "successRate": 100,
-    "tpCost": 15,
+    "tpCost": 0,
     "tpGain": 0
   },
   {
@@ -2645,7 +2645,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Rachar Escamas",
-    "note": "<JS ATB After Gauge>\nif (user.isStateAffected(88)) {\n  rate = -0.10;\n} else if (user.isStateAffected(89)) {\n  rate = 0.05;\n} else {\n  rate = 0;\n}\n</JS ATB After Gauge>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 12>\n\n<JS ATB After Gauge>\nif (user.isStateAffected(88)) {\n  rate = -0.10;\n} else if (user.isStateAffected(89)) {\n  rate = 0.05;\n} else {\n  rate = 0;\n}\n</JS ATB After Gauge>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2654,7 +2654,7 @@
     "speed": 250,
     "stypeId": 2,
     "successRate": 100,
-    "tpCost": 12,
+    "tpCost": 0,
     "tpGain": 0
   },
   {
@@ -2676,7 +2676,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Redemoinho de Aco",
-    "note": "<JS ATB After Gauge>\nif (user.isStateAffected(88)) {\n  rate = -0.10;\n} else if (user.isStateAffected(89)) {\n  rate = 0.05;\n} else {\n  rate = 0;\n}\n</JS ATB After Gauge>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 25>\n\n<JS ATB After Gauge>\nif (user.isStateAffected(88)) {\n  rate = -0.10;\n} else if (user.isStateAffected(89)) {\n  rate = 0.05;\n} else {\n  rate = 0;\n}\n</JS ATB After Gauge>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2685,7 +2685,7 @@
     "speed": -500,
     "stypeId": 2,
     "successRate": 100,
-    "tpCost": 25,
+    "tpCost": 0,
     "tpGain": 0
   },
   {
@@ -2707,7 +2707,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Golpe Furioso",
-    "note": "<Repeat Hits: 3>\n\n<JS ATB After Gauge>\nif (user.isStateAffected(88)) {\n  rate = -0.10;\n} else if (user.isStateAffected(89)) {\n  rate = 0.05;\n} else {\n  rate = 0;\n}\n</JS ATB After Gauge>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 25>\n\n<Repeat Hits: 3>\n\n<JS ATB After Gauge>\nif (user.isStateAffected(88)) {\n  rate = -0.10;\n} else if (user.isStateAffected(89)) {\n  rate = 0.05;\n} else {\n  rate = 0;\n}\n</JS ATB After Gauge>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2716,7 +2716,7 @@
     "speed": -500,
     "stypeId": 2,
     "successRate": 100,
-    "tpCost": 25,
+    "tpCost": 0,
     "tpGain": 0
   },
   {
@@ -2738,7 +2738,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Porta da Morte",
-    "note": "<JS ATB After Gauge>\nif (user.isStateAffected(88)) {\n  rate = -0.15;\n} else if (user.isStateAffected(89)) {\n  rate = 0.05;\n} else {\n  rate = 0;\n}\n</JS ATB After Gauge>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 40>\n\n<JS ATB After Gauge>\nif (user.isStateAffected(88)) {\n  rate = -0.15;\n} else if (user.isStateAffected(89)) {\n  rate = 0.05;\n} else {\n  rate = 0;\n}\n</JS ATB After Gauge>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2747,7 +2747,7 @@
     "speed": -1000,
     "stypeId": 2,
     "successRate": 100,
-    "tpCost": 40,
+    "tpCost": 0,
     "tpGain": 0
   },
   {
@@ -2769,7 +2769,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Execucao",
-    "note": "<Armor Penetration: 25%>\n\n<HP Life Steal Physical Hit: +15%>\n\n<JS ATB After Gauge>\nif (user.isStateAffected(88)) {\n  rate = -0.15;\n} else if (user.isStateAffected(89)) {\n  rate = 0.05;\n} else {\n  rate = 0;\n}\n</JS ATB After Gauge>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 40>\n\n<Armor Penetration: 25%>\n\n<HP Life Steal Physical Hit: +15%>\n\n<JS ATB After Gauge>\nif (user.isStateAffected(88)) {\n  rate = -0.15;\n} else if (user.isStateAffected(89)) {\n  rate = 0.05;\n} else {\n  rate = 0;\n}\n</JS ATB After Gauge>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2778,7 +2778,7 @@
     "speed": -1000,
     "stypeId": 2,
     "successRate": 100,
-    "tpCost": 40,
+    "tpCost": 0,
     "tpGain": 0
   },
   {
@@ -2800,7 +2800,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Frenesi Destruidor",
-    "note": "<Repeat Hits: 5>\n\n<ATB Cannot Be Interrupted>\n\n<JS ATB After Gauge>\nif (user.isStateAffected(88)) {\n  rate = -0.15;\n} else if (user.isStateAffected(89)) {\n  rate = 0;\n} else {\n  rate = 0;\n}\n</JS ATB After Gauge>\n\n<JS Post-Start Action>\nuser._frenesiBaseTP = user.tp;\nuser.gainTp(-user.tp);\nuser.gainHp(-Math.floor(user.mhp * 0.03));\n</JS Post-Start Action>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 50>\n\n<Repeat Hits: 5>\n\n<ATB Cannot Be Interrupted>\n\n<JS ATB After Gauge>\nif (user.isStateAffected(88)) {\n  rate = -0.15;\n} else if (user.isStateAffected(89)) {\n  rate = 0;\n} else {\n  rate = 0;\n}\n</JS ATB After Gauge>\n\n<JS Post-Start Action>\nuser._frenesiBaseTP = user.tp;\nuser.gainTp(-user.tp);\nuser.gainHp(-Math.floor(user.mhp * 0.03));\n</JS Post-Start Action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2809,7 +2809,7 @@
     "speed": -1000,
     "stypeId": 2,
     "successRate": 100,
-    "tpCost": 50,
+    "tpCost": 0,
     "tpGain": 0
   },
   {
@@ -2862,7 +2862,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Olho do Cacador (Kill)",
-    "note": "<Auto Trigger: Death>\n<Gain TP: +8>",
+    "note": "<Auto Trigger: Death>\n// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Gain TP: +8>",
     "occasion": 0,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2893,7 +2893,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Olho do Cacador (Win)",
-    "note": "<Gain TP: +15>\n<Auto Trigger: Battle Win>\n",
+    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Gain TP: +15>\n<Auto Trigger: Battle Win>\n",
     "occasion": 0,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2924,7 +2924,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Tiro Rapido",
-    "note": "<Gain TP: +5>\n// [Coreto HitRate] - Tiro rapido sacrifica precisao por velocidade\n<Modify Hit Rate: -10%>",
+    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Gain TP: +5>\n// [Coreto HitRate] - Tiro rapido sacrifica precisao por velocidade\n<Modify Hit Rate: -10%>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2934,7 +2934,7 @@
     "stypeId": 2,
     "successRate": 20,
     "tpCost": 0,
-    "tpGain": 5
+    "tpGain": 0
   },
   {
     "id": 91,
@@ -2955,7 +2955,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Disparo Calibrado",
-    "note": "<Gain TP: +8>\n\n<Modify Critical Rate: +10%>\n\n<ATB Cast Gauge: 70%>",
+    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Gain TP: +8>\n\n<Modify Critical Rate: +10%>\n\n<ATB Cast Gauge: 70%>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2965,7 +2965,7 @@
     "stypeId": 2,
     "successRate": 100,
     "tpCost": 0,
-    "tpGain": 8
+    "tpGain": 0
   },
   {
     "id": 92,
@@ -2986,7 +2986,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Tiro Perfurante",
-    "note": "<Armor Penetration: 15%>\n\n<JS Pre-Damage>\nif (target.isStateAffected(71)) {\n  value = Math.floor(value * 1.25);\n}\n</JS Pre-Damage>\n\n<JS Critical Rate>\nconsole.log(`--- user ----`)\nconsole.log(user)\nconsole.log(`--- rate ----`)\nconsole.log(rate)\n</JS Critical Rate>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 12>\n\n<Armor Penetration: 15%>\n\n<JS Pre-Damage>\nif (target.isStateAffected(71)) {\n  value = Math.floor(value * 1.25);\n}\n</JS Pre-Damage>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2995,7 +2995,7 @@
     "speed": 0,
     "stypeId": 2,
     "successRate": 100,
-    "tpCost": 12,
+    "tpCost": 0,
     "tpGain": 0
   },
   {
@@ -3024,7 +3024,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Disparo Desestabilizante",
-    "note": "<JS Accuracy>\nrate -= 0.05;\n</JS Accuracy>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 10>\n\n<JS Accuracy>\nrate -= 0.05;\n</JS Accuracy>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -3033,7 +3033,7 @@
     "speed": 250,
     "stypeId": 2,
     "successRate": 100,
-    "tpCost": 10,
+    "tpCost": 0,
     "tpGain": 0
   },
   {
@@ -3055,7 +3055,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Chuva de Estilhacos",
-    "note": "<Repeat Hits: 4>\n\n<Armor Penetration: 5%>\n\n<ATB Cast Gauge: 50%>\n\n<Modify Critical Rate: +5%>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 20>\n\n<Repeat Hits: 4>\n\n<Armor Penetration: 5%>\n\n<ATB Cast Gauge: 50%>\n\n<Modify Critical Rate: +5%>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -3064,7 +3064,7 @@
     "speed": -500,
     "stypeId": 2,
     "successRate": 100,
-    "tpCost": 20,
+    "tpCost": 0,
     "tpGain": 0
   },
   {
@@ -3086,7 +3086,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Disparo Oportunista",
-    "note": "<Armor Penetration: 10%>\n\n<ATB Cast Gauge: 40%>\n\n<Modify Critical Rate: +10%>\n\n<JS Pre-Damage>\nif (target.isStateAffected(13)) {\n  value = Math.floor(value * 1.30);\n}\n</JS Pre-Damage>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 25>\n\n<Armor Penetration: 10%>\n\n<ATB Cast Gauge: 40%>\n\n<Modify Critical Rate: +10%>\n\n<JS Pre-Damage>\nif (target.isStateAffected(13)) {\n  value = Math.floor(value * 1.30);\n}\n</JS Pre-Damage>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -3095,7 +3095,7 @@
     "speed": -750,
     "stypeId": 2,
     "successRate": 100,
-    "tpCost": 25,
+    "tpCost": 0,
     "tpGain": 0
   },
   {
@@ -3117,7 +3117,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Concentracao",
-    "note": "<Apply State: 100% Concentracao>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 18>\n\n<Apply State: 100% Concentracao>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -3126,7 +3126,7 @@
     "speed": 0,
     "stypeId": 2,
     "successRate": 100,
-    "tpCost": 18,
+    "tpCost": 0,
     "tpGain": 0
   },
   {
@@ -3148,7 +3148,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Disparo Desesperado",
-    "note": "<Target: 5 Random Enemies>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 20>\n\n<Target: 5 Random Enemies>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -3157,7 +3157,7 @@
     "speed": -250,
     "stypeId": 2,
     "successRate": 100,
-    "tpCost": 20,
+    "tpCost": 0,
     "tpGain": 0
   },
   {
@@ -3179,7 +3179,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Disparo Cerneiro",
-    "note": "<Armor Penetration: 30%>\n\n<ATB Interrupt>\n\n<ATB Cast Gauge: 30%>\n\n<Modify Critical Rate: +15%>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 45>\n\n<Armor Penetration: 30%>\n\n<ATB Interrupt>\n\n<ATB Cast Gauge: 30%>\n\n<Modify Critical Rate: +15%>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -3188,7 +3188,7 @@
     "speed": -1250,
     "stypeId": 2,
     "successRate": 100,
-    "tpCost": 45,
+    "tpCost": 0,
     "tpGain": 0
   },
   {
@@ -3589,7 +3589,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Combo Duplo Knockback",
-    "note": "<Custom Action Sequence>\n<ATB After Gauge: -5%>\n",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 30>\n\n<Custom Action Sequence>\n<ATB After Gauge: -5%>\n",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -3598,7 +3598,7 @@
     "speed": 0,
     "stypeId": 2,
     "successRate": 100,
-    "tpCost": 30,
+    "tpCost": 0,
     "tpGain": 0
   },
   {
@@ -7563,7 +7563,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Demolidora",
-    "note": "Fighter - Filena Lv30",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 100>\n\nFighter - Filena Lv30",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -7572,7 +7572,7 @@
     "speed": 0,
     "stypeId": 1,
     "successRate": 100,
-    "tpCost": 100,
+    "tpCost": 0,
     "tpGain": 0,
     "messageType": 1
   },
@@ -7815,7 +7815,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Impacto da Vanguarda",
-    "note": "Paladin - Kilin Lv10",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 20>\n\nPaladin - Kilin Lv10",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -7824,7 +7824,7 @@
     "speed": 0,
     "stypeId": 1,
     "successRate": 100,
-    "tpCost": 20,
+    "tpCost": 0,
     "tpGain": 0,
     "messageType": 1
   },
@@ -7897,7 +7897,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Bastião Impenetrável",
-    "note": "Paladin - Kilin Lv30",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 75>\n\nPaladin - Kilin Lv30",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -7906,7 +7906,7 @@
     "speed": 0,
     "stypeId": 1,
     "successRate": 100,
-    "tpCost": 75,
+    "tpCost": 0,
     "tpGain": 0,
     "messageType": 1
   },
@@ -8028,7 +8028,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Aniquilação",
-    "note": "Berserker - Mhordred Lv30",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 80>\n\nBerserker - Mhordred Lv30",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -8037,7 +8037,7 @@
     "speed": 0,
     "stypeId": 1,
     "successRate": 100,
-    "tpCost": 80,
+    "tpCost": 0,
     "tpGain": 0,
     "messageType": 1
   },
@@ -8159,7 +8159,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Ponto Vital",
-    "note": "Fundeiro - Thorin Lv30\n<Force Critical>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 85>\n\nFundeiro - Thorin Lv30\n<Force Critical>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -8168,7 +8168,7 @@
     "speed": 0,
     "stypeId": 1,
     "successRate": 100,
-    "tpCost": 85,
+    "tpCost": 0,
     "tpGain": 0,
     "messageType": 1
   },
@@ -8198,7 +8198,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Ataque Treino",
-    "note": "<AI Target: First>",
+    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Gain TP: +5>\n\n<AI Target: First>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -8208,6 +8208,6 @@
     "stypeId": 0,
     "successRate": 100,
     "tpCost": 0,
-    "tpGain": 5
+    "tpGain": 0
   }
 ]
