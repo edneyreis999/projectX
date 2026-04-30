@@ -192,8 +192,8 @@
     "name": "Ex VNP Busts",
     "order": 47,
     "parentId": 15,
-    "scrollX": 902.2222222222222,
-    "scrollY": 1239.111111111111,
+    "scrollX": 893.4545454545455,
+    "scrollY": 1238.7272727272727,
     "quick": false
   },
   {
@@ -312,7 +312,7 @@
     "name": "Entrada de Kravens 02 - OLD",
     "order": 45,
     "parentId": 15,
-    "scrollX": 954.5454545454546,
+    "scrollX": 884.7272727272727,
     "scrollY": 544.9090909090909,
     "quick": false
   },
@@ -329,11 +329,11 @@
   {
     "id": 34,
     "expanded": true,
-    "name": "Entrada de Kravens 03 - OLD",
+    "name": "Test de Skills",
     "order": 46,
     "parentId": 15,
-    "scrollX": 1166.6666666666667,
-    "scrollY": 701.3333333333334,
+    "scrollX": 884.7272727272727,
+    "scrollY": 920.1818181818182,
     "quick": false
   },
   {
@@ -352,8 +352,8 @@
     "name": "Segundo Sol - Preparação",
     "order": 50,
     "parentId": 42,
-    "scrollX": 1160.6666666666667,
-    "scrollY": 648,
+    "scrollX": 884.7272727272727,
+    "scrollY": 519.8181818181819,
     "quick": false
   },
   {
@@ -362,8 +362,8 @@
     "name": "Segundo Sol - Cutscene",
     "order": 51,
     "parentId": 42,
-    "scrollX": 1160.6666666666667,
-    "scrollY": 1501.3333333333333,
+    "scrollX": 893.4545454545455,
+    "scrollY": 1501.6363636363637,
     "quick": false
   },
   {
@@ -408,12 +408,12 @@
   },
   {
     "id": 42,
-    "expanded": true,
+    "expanded": false,
     "name": "Fim de Jogo",
     "order": 49,
     "parentId": 15,
-    "scrollX": 1166.6666666666667,
-    "scrollY": 648,
+    "scrollX": 884.7272727272727,
+    "scrollY": 519.8181818181819,
     "quick": false
   },
   {
@@ -442,8 +442,8 @@
     "name": "Teste Khawe",
     "order": 54,
     "parentId": 15,
-    "scrollX": 954.5454545454546,
-    "scrollY": 537.2727272727273,
+    "scrollX": 884.7272727272727,
+    "scrollY": 511.0909090909091,
     "quick": false
   },
   {
@@ -478,22 +478,22 @@
   },
   {
     "id": 49,
-    "expanded": true,
+    "expanded": false,
     "name": "Vila de Pescadores",
     "order": 55,
     "parentId": 15,
-    "scrollX": 1166.6666666666667,
-    "scrollY": 658.6666666666666,
+    "scrollX": 884.7272727272727,
+    "scrollY": 658.3636363636364,
     "quick": false
   },
   {
     "id": 50,
-    "expanded": true,
+    "expanded": false,
     "name": "Templo Flutuante",
     "order": 56,
     "parentId": 49,
-    "scrollX": 1177.3333333333333,
-    "scrollY": 1028,
+    "scrollX": 893.4545454545455,
+    "scrollY": 1028.1818181818182,
     "quick": false
   },
   {
@@ -502,8 +502,8 @@
     "name": "Templo Submerso",
     "order": 57,
     "parentId": 50,
-    "scrollX": 875,
-    "scrollY": 494,
+    "scrollX": 884.7272727272727,
+    "scrollY": 519.8181818181819,
     "quick": false
   },
   {
@@ -562,8 +562,8 @@
     "name": "Mapa Release",
     "order": 37,
     "parentId": 15,
-    "scrollX": 1177.3333333333333,
-    "scrollY": 1490.6666666666667,
+    "scrollX": 1168.3636363636365,
+    "scrollY": 511.0909090909091,
     "quick": false
   }
 ]
