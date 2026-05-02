@@ -89,7 +89,7 @@
 (() => {
   const PLUGIN_NAME = 'Coreto_Killin';
 
-  const BG_DEBUG = true;
+  const BG_DEBUG = typeof Utils !== 'undefined' && Utils.isOptionValid && Utils.isOptionValid('test');
 
   const dbg = function (...args) {
     if (BG_DEBUG) console.log('[Killin]', ...args);
@@ -217,9 +217,10 @@
    * e limpa as referencias de protetor nos aliados
    */
   const cleanupBodyguardProtection = function (bodyguard) {
-    if (!$gameParty) return;
+    const partyMembers = $gameParty ? $gameParty.battleMembers() : [];
+    const troopMembers = $gameTroop ? $gameTroop.members() : [];
+    const members = partyMembers.concat(troopMembers);
 
-    const members = $gameParty.battleMembers();
     for (const member of members) {
       if (member._bodyguardProtector === bodyguard) {
         for (const stateId of BODYGUARD_STATE_IDS) {
@@ -334,9 +335,11 @@
     if (this._bodyguardReturnPending) {
       const bg = this._bodyguardReturnPending;
       bg._bodyguardReturnTriggered = true;
+      bg._bodyguardAnimPreStarted = false;
+      bg._bodyguardIntercept = false;
       this._bodyguardReturnPending = null;
       this._bodyguardAnimRedirect = null;
-      dbg('endAction: return triggered for', bg.name());
+      dbg('endAction: return triggered + flags cleared for', bg.name());
     }
   };
 
@@ -360,11 +363,10 @@
       // Seta flag de interceptacao para o contra-ataque (State 82 Represalia)
       bodyguard._bodyguardIntercept = true;
 
-      // Animacao ja foi iniciada em startAction. Limpa flag.
-      if (bodyguard._bodyguardAnimPreStarted) {
-        dbg('apply: animacao ja foi iniciada em startAction, pulando');
-        delete bodyguard._bodyguardAnimPreStarted;
-      } else {
+      // Animacao: iniciada em startAction (normal) ou aqui (fallback).
+      // Nao deleta _bodyguardAnimPreStarted aqui - multi-hit skills chamam
+      // apply N vezes e o flag precisa persistir ate endAction.
+      if (!bodyguard._bodyguardAnimPreStarted) {
         dbg('apply: iniciando animacao aqui (fallback)');
         startBodyguardInterceptAnimation(bodyguard, target);
       }
@@ -513,13 +515,15 @@
   };
 
   // =========================================================================
-  // Hooks - Game_Actor.prototype.refresh (Invalidacao de cache)
+  // Hooks - Game_BattlerBase.prototype.refresh (Invalidacao de cache)
+  //
+  // Hook em BattlerBase (nao Actor) para cobrir Enemies como bodyguards.
   // =========================================================================
 
-  const _Game_Actor_refresh = Game_Actor.prototype.refresh;
-  Game_Actor.prototype.refresh = function () {
+  const _Game_BattlerBase_refresh = Game_BattlerBase.prototype.refresh;
+  Game_BattlerBase.prototype.refresh = function () {
     this._bodyguardCache = undefined;
-    _Game_Actor_refresh.call(this);
+    _Game_BattlerBase_refresh.call(this);
   };
 
   // =========================================================================
