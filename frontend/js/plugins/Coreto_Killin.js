@@ -107,10 +107,10 @@
 
   // Bodyguard Intercept Animation Settings
   const BODYGUARD_ANIM = {
-    MOVE_DURATION: 18, // frames to move toward ally
-    JUMP_HEIGHT: 48, // pixels jump arc
+    MOVE_DURATION: 12, // frames to move toward ally (same as cast)
+    JUMP_HEIGHT: 100, // pixels jump arc (same as cast)
     RETURN_DURATION: 16, // frames to return home
-    OFFSET_X: -20, // offset from ally position
+    OFFSET_X: -44, // offset from ally position (same as cast)
     PRE_ACTION_WAIT: 25, // wait empilhado ANTES da action sequence do inimigo
   };
 
@@ -236,6 +236,7 @@
    * Inicia a animacao visual de interceptacao do bodyguard.
    * Move o sprite do bodyguard em direcao ao aliado com um pulo,
    * usando o sistema de offsets do Sprite_Battler (nao modifica _homeX/_homeY).
+   * Simultaneamente reseta o aliado para a posicao home para evitar sobreposicao.
    */
   const startBodyguardInterceptAnimation = function (bodyguard, target) {
     if (!$gameSystem.isSideView()) return;
@@ -246,13 +247,27 @@
     const tgtSprite = spriteset.findTargetSprite(target);
     if (!bgSprite || !tgtSprite) return;
 
-    const dx = tgtSprite._homeX + tgtSprite._offsetX + BODYGUARD_ANIM.OFFSET_X - bgSprite._homeX;
-    const dy = tgtSprite._homeY + tgtSprite._offsetY - bgSprite._homeY;
+    // Salvar offset atual do aliado (ex: passo a frente do ATB)
+    target._bodyguardSavedOffsetX = tgtSprite._offsetX;
+    target._bodyguardSavedOffsetY = tgtSprite._offsetY;
+
+    // Killin move para a posicao HOME do aliado (aliado sera resetado junto)
+    const dx = tgtSprite._homeX + BODYGUARD_ANIM.OFFSET_X - bgSprite._homeX;
+    const dy = tgtSprite._homeY - bgSprite._homeY;
 
     bgSprite.startMove(dx, dy, BODYGUARD_ANIM.MOVE_DURATION);
     bgSprite.startJump(BODYGUARD_ANIM.JUMP_HEIGHT, BODYGUARD_ANIM.MOVE_DURATION);
 
+    // Resetar aliado para home simultaneamente
+    tgtSprite.startMove(0, 0, BODYGUARD_ANIM.MOVE_DURATION);
+
     bodyguard._bodyguardAnimState = 'movingToAlly';
+    bodyguard._bodyguardProtectedAlly = target;
+
+    dbg('interceptAnim: aliado resetado para home', {
+      savedOffsetX: target._bodyguardSavedOffsetX,
+      savedOffsetY: target._bodyguardSavedOffsetY,
+    });
   };
 
   // =========================================================================
@@ -287,6 +302,10 @@
           // Armazena referencia para o hook de endAction triggerar retorno
           this._bodyguardReturnPending = bodyguard;
 
+          // Mapa de redirecionamento de animação (aliado → Killin)
+          this._bodyguardAnimRedirect = new Map();
+          this._bodyguardAnimRedirect.set(target, bodyguard);
+
           // Empilha wait ANTES dos comandos que startAction vai adicionar
           if (this._logWindow) {
             this._logWindow.push('waitCount', BODYGUARD_ANIM.PRE_ACTION_WAIT);
@@ -316,6 +335,7 @@
       const bg = this._bodyguardReturnPending;
       bg._bodyguardReturnTriggered = true;
       this._bodyguardReturnPending = null;
+      this._bodyguardAnimRedirect = null;
       dbg('endAction: return triggered for', bg.name());
     }
   };
@@ -434,6 +454,9 @@
     this._bodyguardAnimState = null;
     delete this._bodyguardReturnTriggered;
     delete this._bodyguardAnimPreStarted;
+    delete this._bodyguardSavedOffsetX;
+    delete this._bodyguardSavedOffsetY;
+    delete this._bodyguardProtectedAlly;
   };
 
   // =========================================================================
@@ -468,6 +491,21 @@
       case 'returningHome':
         if (!this.isMoving()) {
           battler._bodyguardAnimState = null;
+
+          // Restaurar posicao do aliado (passo a frente)
+          const ally = battler._bodyguardProtectedAlly;
+          if (ally && ally._bodyguardSavedOffsetX !== undefined) {
+            const ss = SceneManager._scene && SceneManager._scene._spriteset;
+            const aSprite = ss ? ss.findTargetSprite(ally) : null;
+            if (aSprite) {
+              aSprite.startMove(ally._bodyguardSavedOffsetX, ally._bodyguardSavedOffsetY, 8);
+              dbg('stateMachine: aliado restaurou passo a frente');
+            }
+            delete ally._bodyguardSavedOffsetX;
+            delete ally._bodyguardSavedOffsetY;
+          }
+          delete battler._bodyguardProtectedAlly;
+
           dbg('stateMachine: returningHome → idle');
         }
         break;
@@ -499,5 +537,25 @@
       scanBodyguardStates();
       _statesScanned = true;
     }
+  };
+
+  // =========================================================================
+  // Hooks - Game_Temp.prototype.requestAnimation (Redirect de animação)
+  //
+  // Gargalo universal: tanto RPG Maker padrão quanto VisuStella ActSeq
+  // passam por aqui. Durante interceptação bodyguard, redireciona o target
+  // da animação do aliado para o Killin (que já está na posição correta).
+  // =========================================================================
+
+  const _Game_Temp_requestAnimation = Game_Temp.prototype.requestAnimation;
+  Game_Temp.prototype.requestAnimation = function (targets, animationId, mirror) {
+    if (BattleManager._bodyguardAnimRedirect) {
+      const redirect = BattleManager._bodyguardAnimRedirect;
+      targets = targets.map(function (t) {
+        return redirect.get(t) || t;
+      });
+      dbg('requestAnimation: targets redirecionados');
+    }
+    _Game_Temp_requestAnimation.call(this, targets, animationId, mirror);
   };
 })();
