@@ -1,15 +1,45 @@
 {
   "version": 1,
   "skills": {
+    "beads": {
+      "source": "boshu2/agentops",
+      "sourceType": "github",
+      "skillPath": "skills/beads/SKILL.md",
+      "computedHash": "97b653a6c43a110dfca670a590e52801e8d3c94a7b19e84e50144d4d6b639306"
+    },
+    "council": {
+      "source": "boshu2/agentops",
+      "sourceType": "github",
+      "skillPath": "skills/council/SKILL.md",
+      "computedHash": "52d707c816af5c18c83ae95b0a01795c73edff2be73f2e5fb3bd44843cbc33c0"
+    },
     "find-skills": {
       "source": "vercel-labs/skills",
       "sourceType": "github",
       "computedHash": "9e1c8b3103f92fa8092568a44fe64858de7c5c9dc65ce4bea8f168080e889cfd"
     },
+    "post-mortem": {
+      "source": "boshu2/agentops",
+      "sourceType": "github",
+      "skillPath": "skills/post-mortem/SKILL.md",
+      "computedHash": "449d3a0e0dc389a55e75a91d7c59a33add741a83dd481f8ececb7b217442d0d5"
+    },
+    "shared": {
+      "source": "boshu2/agentops",
+      "sourceType": "github",
+      "skillPath": "skills/shared/SKILL.md",
+      "computedHash": "cbaf87e1e74906273989df8db327066b31c27039d3ce3b84b1245d0e0c569ea8"
+    },
     "skill-creator": {
       "source": "anthropics/skills",
       "sourceType": "github",
       "computedHash": "5ea13a6d9f0d4bb694405d79acd00cadec0d21bb138c4dd10fcf3c500cb835c2"
+    },
+    "standards": {
+      "source": "boshu2/agentops",
+      "sourceType": "github",
+      "skillPath": "skills/standards/SKILL.md",
+      "computedHash": "b162fe236b4310fc19e863a0c961ec0d8dac006e40239d36827816d54c0c4ba9"
     }
   }
 }

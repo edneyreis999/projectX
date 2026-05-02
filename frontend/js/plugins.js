@@ -951,5 +951,11 @@ var $plugins =
         "status": true,
         "description": "Notetags para modificar custo e ganho de TP em Skills e Items",
         "parameters": {}
+    },
+    {
+        "name": "Coreto_Killin",
+        "status": true,
+        "description": "Mecanicas customizadas do personagem Kilin (Bodyguard, etc.)",
+        "parameters": {}
     }
 ];

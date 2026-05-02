@@ -2389,7 +2389,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Bodyguard",
-    "note": "<JS Pre-Damage as Target>\nvar kilin = $gameParty.battleMembers().find(function(m) {\n  return m._actorId === 5;\n});\nif (kilin && kilin.isAlive()) {\n  kilin.gainHp(-value);\n  kilin.startDamagePopup();\n  kilin.gainTp(Math.floor(value / 20));\n  kilin._bodyguardIntercept = true;\n  value = 0;\n}\n</JS Pre-Damage as Target>",
+    "note": "Protegido por Kilin (Bodyguard). \nGerenciado por Coreto_Killin.js.",
     "overlay": 0,
     "priority": 50,
     "removeAtBattleEnd": true,
