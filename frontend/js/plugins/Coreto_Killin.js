@@ -62,13 +62,16 @@
  *   1. Kilin usa skill com <Bodyguard State: 83> em um aliado
  *   2. Aliado recebe State 83 e Kilin e registrado como protetor
  *   3. Inimigo ataca o aliado
- *   4. Plugin intercepta ANTES do calculo de dano
- *   5. Kilin se torna o alvo real (dano usa DEF/MDF do Kilin)
- *   6. States de CC (stun, etc.) sao aplicados no Kilin
- *   7. Apenas 1 popup de dano aparece (no Kilin)
- *   8. Kilin ganha TP = floor(dano / 20)
- *   9. Contra-ataque Represalia e ativado (se Kilin tiver State 82)
- *  10. No inicio do turno do Kilin, State 83 e removido do aliado
+ *   4. Plugin intercepta em startAction (ANTES da action sequence)
+ *   5. Kilin pula na frente do aliado (18 frames de animacao)
+ *   6. Log window espera (25 frames) - inimigo parado
+ *   7. Wait expira, inimigo inicia animacao de ataque
+ *   8. Dano e redirecionado para Kilin (apply hook)
+ *   9. Kilin permanece na posicao ate endAction (dinamico)
+ *  10. Kilin retorna a posicao original (16 frames)
+ *  11. Kilin ganha TP = floor(dano / 20)
+ *  12. Contra-ataque Represalia e ativado (se Kilin tiver State 82)
+ *  13. No inicio do turno do Kilin, State 83 e removido do aliado
  *
  * ============================================================================
  * Notas Importantes
@@ -86,6 +89,12 @@
 (() => {
   const PLUGIN_NAME = 'Coreto_Killin';
 
+  const BG_DEBUG = true;
+
+  const dbg = function (...args) {
+    if (BG_DEBUG) console.log('[Killin]', ...args);
+  };
+
   // =========================================================================
   // Registry - IDs dos states de bodyguard (preenchido no onLoad)
   //
@@ -95,6 +104,15 @@
   // =========================================================================
 
   const BODYGUARD_STATE_IDS = new Set();
+
+  // Bodyguard Intercept Animation Settings
+  const BODYGUARD_ANIM = {
+    MOVE_DURATION: 18, // frames to move toward ally
+    JUMP_HEIGHT: 48, // pixels jump arc
+    RETURN_DURATION: 16, // frames to return home
+    OFFSET_X: -20, // offset from ally position
+    PRE_ACTION_WAIT: 25, // wait empilhado ANTES da action sequence do inimigo
+  };
 
   const scanBodyguardStates = function () {
     if (!$dataSkills) return;
@@ -214,6 +232,94 @@
     }
   };
 
+  /**
+   * Inicia a animacao visual de interceptacao do bodyguard.
+   * Move o sprite do bodyguard em direcao ao aliado com um pulo,
+   * usando o sistema de offsets do Sprite_Battler (nao modifica _homeX/_homeY).
+   */
+  const startBodyguardInterceptAnimation = function (bodyguard, target) {
+    if (!$gameSystem.isSideView()) return;
+    const spriteset = SceneManager._scene && SceneManager._scene._spriteset;
+    if (!spriteset) return;
+
+    const bgSprite = spriteset.findTargetSprite(bodyguard);
+    const tgtSprite = spriteset.findTargetSprite(target);
+    if (!bgSprite || !tgtSprite) return;
+
+    const dx = tgtSprite._homeX + tgtSprite._offsetX + BODYGUARD_ANIM.OFFSET_X - bgSprite._homeX;
+    const dy = tgtSprite._homeY + tgtSprite._offsetY - bgSprite._homeY;
+
+    bgSprite.startMove(dx, dy, BODYGUARD_ANIM.MOVE_DURATION);
+    bgSprite.startJump(BODYGUARD_ANIM.JUMP_HEIGHT, BODYGUARD_ANIM.MOVE_DURATION);
+
+    bodyguard._bodyguardAnimState = 'movingToAlly';
+  };
+
+  // =========================================================================
+  // Hooks - BattleManager.startAction (Pre-move: Kilin pula ANTES do inimigo)
+  //
+  // Empilha waitCount no log window ANTES dos comandos visuais do inimigo.
+  // Isso faz o engine esperar enquanto o Kilin se move, criando a sequencia:
+  // Kilin pula → wait expira → inimigo anima/ataca → apply redirect → Kilin volta.
+  // =========================================================================
+
+  const _BattleManager_startAction = BattleManager.startAction;
+  BattleManager.startAction = function () {
+    const subject = this._subject;
+    const action = subject ? subject.currentAction() : null;
+
+    if (action && action.isForOpponent() && !action.isForAll()) {
+      ensureStatesScanned();
+      const targets = action.makeTargets();
+      for (const target of targets) {
+        const bodyguard = getBodyguardTarget(target, action);
+        if (bodyguard) {
+          dbg('startAction: intercept detectado!', {
+            bodyguard: bodyguard.name(),
+            target: target.name(),
+            wait: BODYGUARD_ANIM.PRE_ACTION_WAIT,
+          });
+
+          // Inicia animacao do Kilin ANTES da action sequence
+          startBodyguardInterceptAnimation(bodyguard, target);
+          bodyguard._bodyguardAnimPreStarted = true;
+
+          // Armazena referencia para o hook de endAction triggerar retorno
+          this._bodyguardReturnPending = bodyguard;
+
+          // Empilha wait ANTES dos comandos que startAction vai adicionar
+          if (this._logWindow) {
+            this._logWindow.push('waitCount', BODYGUARD_ANIM.PRE_ACTION_WAIT);
+            dbg('startAction: waitCount empilhado');
+          }
+          break;
+        }
+      }
+    }
+
+    _BattleManager_startAction.call(this);
+  };
+
+  // =========================================================================
+  // Hooks - BattleManager.endAction (Trigger retorno do bodyguard)
+  //
+  // Quando endAction e chamado, a action sequence visual do inimigo ja foi
+  // completamente processada pelo log window. E o momento seguro para
+  // triggerar o retorno do Killin a posicao original.
+  // =========================================================================
+
+  const _BattleManager_endAction = BattleManager.endAction;
+  BattleManager.endAction = function () {
+    _BattleManager_endAction.call(this);
+
+    if (this._bodyguardReturnPending) {
+      const bg = this._bodyguardReturnPending;
+      bg._bodyguardReturnTriggered = true;
+      this._bodyguardReturnPending = null;
+      dbg('endAction: return triggered for', bg.name());
+    }
+  };
+
   // =========================================================================
   // Hooks - Game_Action.prototype.apply (Redirecionamento principal)
   //
@@ -234,6 +340,15 @@
       // Seta flag de interceptacao para o contra-ataque (State 82 Represalia)
       bodyguard._bodyguardIntercept = true;
 
+      // Animacao ja foi iniciada em startAction. Limpa flag.
+      if (bodyguard._bodyguardAnimPreStarted) {
+        dbg('apply: animacao ja foi iniciada em startAction, pulando');
+        delete bodyguard._bodyguardAnimPreStarted;
+      } else {
+        dbg('apply: iniciando animacao aqui (fallback)');
+        startBodyguardInterceptAnimation(bodyguard, target);
+      }
+
       // Redireciona: bodyguard se torna o alvo REAL
       _Game_Action_apply.call(this, bodyguard);
 
@@ -251,6 +366,7 @@
         BattleManager._logWindow.addText(bodyguard.name() + ' pulou na frente de ' + target.name() + '!');
       }
 
+      dbg('apply: dano redirecionado', { bodyguard: bodyguard.name(), hpDamage: hpDamage });
       return; // Target original nunca e atingido
     }
 
@@ -315,6 +431,47 @@
     this._bodyguardProtector = null;
     this._bodyguardIntercept = false;
     this._bodyguardCache = undefined;
+    this._bodyguardAnimState = null;
+    delete this._bodyguardReturnTriggered;
+    delete this._bodyguardAnimPreStarted;
+  };
+
+  // =========================================================================
+  // Hooks - Sprite_Actor.prototype.updateMain (Animacao de interceptacao)
+  //
+  // State machine em 3 fases: movingToAlly → waitingForAttack → returningHome.
+  // Roda a cada frame enquanto _bodyguardAnimState estiver setado no battler.
+  // =========================================================================
+
+  const _Sprite_Actor_updateMain = Sprite_Actor.prototype.updateMain;
+  Sprite_Actor.prototype.updateMain = function () {
+    _Sprite_Actor_updateMain.call(this);
+
+    const battler = this._battler;
+    if (!battler || !battler._bodyguardAnimState) return;
+
+    switch (battler._bodyguardAnimState) {
+      case 'movingToAlly':
+        if (!this.isMoving()) {
+          battler._bodyguardAnimState = 'waitingForAttack';
+          dbg('stateMachine: movingToAlly → waitingForAttack');
+        }
+        break;
+      case 'waitingForAttack':
+        if (battler._bodyguardReturnTriggered) {
+          this.startMove(0, 0, BODYGUARD_ANIM.RETURN_DURATION);
+          battler._bodyguardAnimState = 'returningHome';
+          delete battler._bodyguardReturnTriggered;
+          dbg('stateMachine: waitingForAttack → returningHome (endAction triggered)');
+        }
+        break;
+      case 'returningHome':
+        if (!this.isMoving()) {
+          battler._bodyguardAnimState = null;
+          dbg('stateMachine: returningHome → idle');
+        }
+        break;
+    }
   };
 
   // =========================================================================
