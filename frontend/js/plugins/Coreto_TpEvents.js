@@ -157,6 +157,11 @@
     if (!wasDead && stateId === this.deathStateId() && this instanceof Game_Actor) {
       applyTpEventToParty('Ally Death');
     }
+
+    // Gain State: actor recebeu state que nao e death
+    if (this instanceof Game_Actor && stateId !== this.deathStateId()) {
+      applyTpEvent(this, 'Gain State');
+    }
   };
 
   // ---------------------------------------------------------------------------
@@ -192,5 +197,89 @@
   BattleManager.processDefeat = function () {
     _BattleManager_processDefeat.call(this);
     applyTpEventToParty('Lose Battle');
+  };
+
+  // ---------------------------------------------------------------------------
+  // Hook: Game_Action.prototype.apply
+  //
+  // Razao: Ponto onde evasion e determinada (result.evaded). Quando target
+  // esquivou, aplica TP gain de <TP On Evasion: +x>. Verificamos depois do
+  // original porque result.evaded so e setado dentro de apply().
+  // ---------------------------------------------------------------------------
+  const _Game_Action_apply = Game_Action.prototype.apply;
+  Game_Action.prototype.apply = function (target) {
+    _Game_Action_apply.call(this, target);
+
+    // Evasion: target esquivou do ataque
+    if (target.result().evaded && target instanceof Game_Actor) {
+      applyTpEvent(target, 'Evasion');
+    }
+  };
+
+  // ---------------------------------------------------------------------------
+  // Hook: Game_Action.prototype.executeDamage
+  //
+  // Razao: Ponto central onde dano e aplicado ao target. Hook unico para
+  // tres eventos:
+  // - Critical Hit: subject causou acerto critico (capturado antes do original
+  //   pois executeDamage reseta critical=false quando value=0)
+  // - Deal HP Damage: subject causou dano HP > 0 em alguem
+  // - Take HP Damage: target recebeu dano HP > 0
+  // Filtramos por isHpEffect() para nao triggerar em dano/cura de MP.
+  // ---------------------------------------------------------------------------
+  const _Game_Action_executeDamage = Game_Action.prototype.executeDamage;
+  Game_Action.prototype.executeDamage = function (target, value) {
+    const wasCritical = target.result().critical && this.isHpEffect() && value > 0;
+
+    _Game_Action_executeDamage.call(this, target, value);
+
+    if (this.isHpEffect() && value > 0) {
+      const subject = this.subject();
+
+      // Critical Hit: subject causou acerto critico
+      if (wasCritical && subject instanceof Game_Actor) {
+        applyTpEvent(subject, 'Critical Hit');
+      }
+
+      // Deal HP Damage: subject causou dano HP
+      if (subject instanceof Game_Actor) {
+        applyTpEvent(subject, 'Deal HP Damage');
+      }
+
+      // Take HP Damage: target recebeu dano HP
+      if (target instanceof Game_Actor) {
+        applyTpEvent(target, 'Take HP Damage');
+      }
+    }
+  };
+
+  // ---------------------------------------------------------------------------
+  // Hook: Game_Battler.prototype.addBuff
+  //
+  // Razao: Ponto onde buff e adicionado. Quando actor recebe buff,
+  // aplica TP gain de <TP On Gain Buff: +x>.
+  // ---------------------------------------------------------------------------
+  const _Game_Battler_addBuff = Game_Battler.prototype.addBuff;
+  Game_Battler.prototype.addBuff = function (paramId, turns) {
+    _Game_Battler_addBuff.call(this, paramId, turns);
+
+    if (this instanceof Game_Actor) {
+      applyTpEvent(this, 'Gain Buff');
+    }
+  };
+
+  // ---------------------------------------------------------------------------
+  // Hook: Game_Battler.prototype.addDebuff
+  //
+  // Razao: Ponto onde debuff e adicionado. Quando actor recebe debuff,
+  // aplica TP gain de <TP On Gain Debuff: +x>.
+  // ---------------------------------------------------------------------------
+  const _Game_Battler_addDebuff = Game_Battler.prototype.addDebuff;
+  Game_Battler.prototype.addDebuff = function (paramId, turns) {
+    _Game_Battler_addDebuff.call(this, paramId, turns);
+
+    if (this instanceof Game_Actor) {
+      applyTpEvent(this, 'Gain Debuff');
+    }
   };
 })();
