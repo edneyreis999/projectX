@@ -963,5 +963,13 @@ var $plugins =
         "status": true,
         "description": "Mecanicas customizadas do personagem Kilin (Bodyguard, etc.)",
         "parameters": {}
+    },
+    {
+        "name": "Coreto_TpEvents",
+        "status": true,
+        "description": "Notetags para ganho de TP baseado em eventos de batalha",
+        "parameters": {
+            "Debug Mode": "true"
+        }
     }
 ];

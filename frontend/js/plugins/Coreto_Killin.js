@@ -151,7 +151,7 @@
    * Verifica se o objeto tem a notetag <Bodyguard>
    * Usado em Actor, Class, Weapon, Armor, Enemy
    */
-  const parseBodyguardNotetag = (obj) => {
+  const parseBodyguardNotetag = obj => {
     if (!obj || !obj.note) return false;
     return /<Bodyguard>/i.test(obj.note);
   };
@@ -160,7 +160,7 @@
    * Extrai o stateId da notetag <Bodyguard State: stateId>
    * Usado em Skills. Valida contra $dataStates (disponivel em runtime).
    */
-  const parseBodyguardStateNotetag = (obj) => {
+  const parseBodyguardStateNotetag = obj => {
     if (!obj || !obj.note) return null;
     const match = BODYGUARD_NOTETAG_REGEX.exec(obj.note);
     if (match) {
@@ -182,14 +182,14 @@
    * Verifica se um battler e um bodyguard (tem <Bodyguard> em trait objects)
    * Usa cache invalidado no refresh
    */
-  const isBodyguard = (battler) => {
+  const isBodyguard = battler => {
     if (!battler) return false;
     if (battler._bodyguardCache !== undefined) return battler._bodyguardCache;
 
     ensureStatesScanned();
 
     const traitObjects = battler.traitObjects();
-    battler._bodyguardCache = traitObjects.some((obj) => parseBodyguardNotetag(obj));
+    battler._bodyguardCache = traitObjects.some(obj => parseBodyguardNotetag(obj));
     return battler._bodyguardCache;
   };
 
@@ -216,7 +216,7 @@
    * Remove todos os states de protecao bodyguard aplicados por um bodyguard
    * e limpa as referencias de protetor nos aliados
    */
-  const cleanupBodyguardProtection = (bodyguard) => {
+  const cleanupBodyguardProtection = bodyguard => {
     const partyMembers = $gameParty ? $gameParty.battleMembers() : [];
     const troopMembers = $gameTroop ? $gameTroop.members() : [];
     const members = partyMembers.concat(troopMembers);
@@ -236,7 +236,7 @@
   /**
    * Remove todas as propriedades bodyguard de um battler (cleanup de batalha)
    */
-  const resetBattlerBodyguardState = (battler) => {
+  const resetBattlerBodyguardState = battler => {
     delete battler._bodyguardProtector;
     delete battler._bodyguardIntercept;
     delete battler._bodyguardCache;
