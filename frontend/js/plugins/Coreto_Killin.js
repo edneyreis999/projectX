@@ -91,35 +91,43 @@
 
   const BG_DEBUG = typeof Utils !== 'undefined' && Utils.isOptionValid && Utils.isOptionValid('test');
 
-  const dbg = function (...args) {
+  const dbg = (...args) => {
     if (BG_DEBUG) console.log('[Killin]', ...args);
   };
 
   // =========================================================================
-  // Registry - IDs dos states de bodyguard (preenchido no onLoad)
-  //
-  // Preencido quando $dataSkills carrega. Nao valida contra $dataStates
-  // aqui porque $dataStates pode nao estar carregado ainda. A validacao
-  // acontece em parseBodyguardStateNotetag em tempo de uso.
+  // Constants
   // =========================================================================
+
+  const BODYGUARD_NOTETAG_REGEX = /<Bodyguard State:\s*(\d+)>/i;
 
   const BODYGUARD_STATE_IDS = new Set();
 
-  // Bodyguard Intercept Animation Settings
-  const BODYGUARD_ANIM = {
-    MOVE_DURATION: 12, // frames to move toward ally (same as cast)
-    JUMP_HEIGHT: 100, // pixels jump arc (same as cast)
-    RETURN_DURATION: 16, // frames to return home
-    OFFSET_X: -44, // offset from ally position (same as cast)
-    PRE_ACTION_WAIT: 25, // wait empilhado ANTES da action sequence do inimigo
+  // State machine states
+  const BG_ANIM_STATE = {
+    MOVING_TO_ALLY: 'movingToAlly',
+    WAITING_FOR_ATTACK: 'waitingForAttack',
+    RETURNING_HOME: 'returningHome',
   };
 
-  const scanBodyguardStates = function () {
+  // Bodyguard intercept animation settings
+  const BODYGUARD_ANIM = {
+    MOVE_DURATION: 12,
+    JUMP_HEIGHT: 100,
+    RETURN_DURATION: 16,
+    ALLY_RESTORE_DURATION: 8,
+    OFFSET_X: -44,
+    PRE_ACTION_WAIT: 25,
+  };
+
+  const BODYGUARD_MSG_CHANCE = 0.7;
+  const BODYGUARD_TP_DIVISOR = 20;
+
+  const scanBodyguardStates = () => {
     if (!$dataSkills) return;
-    const regex = /<Bodyguard State:\s*(\d+)>/i;
     for (const skill of $dataSkills) {
       if (!skill) continue;
-      const match = regex.exec(skill.note);
+      const match = BODYGUARD_NOTETAG_REGEX.exec(skill.note);
       if (match) {
         BODYGUARD_STATE_IDS.add(parseInt(match[1], 10));
       }
@@ -128,7 +136,7 @@
 
   let _statesScanned = false;
 
-  const ensureStatesScanned = function () {
+  const ensureStatesScanned = () => {
     if (!_statesScanned && $dataSkills) {
       scanBodyguardStates();
       _statesScanned = true;
@@ -143,7 +151,7 @@
    * Verifica se o objeto tem a notetag <Bodyguard>
    * Usado em Actor, Class, Weapon, Armor, Enemy
    */
-  const parseBodyguardNotetag = function (obj) {
+  const parseBodyguardNotetag = (obj) => {
     if (!obj || !obj.note) return false;
     return /<Bodyguard>/i.test(obj.note);
   };
@@ -152,10 +160,9 @@
    * Extrai o stateId da notetag <Bodyguard State: stateId>
    * Usado em Skills. Valida contra $dataStates (disponivel em runtime).
    */
-  const parseBodyguardStateNotetag = function (obj) {
+  const parseBodyguardStateNotetag = (obj) => {
     if (!obj || !obj.note) return null;
-    const regex = /<Bodyguard State:\s*(\d+)>/i;
-    const match = regex.exec(obj.note);
+    const match = BODYGUARD_NOTETAG_REGEX.exec(obj.note);
     if (match) {
       const stateId = parseInt(match[1], 10);
       if ($dataStates && $dataStates[stateId]) {
@@ -175,16 +182,14 @@
    * Verifica se um battler e um bodyguard (tem <Bodyguard> em trait objects)
    * Usa cache invalidado no refresh
    */
-  const isBodyguard = function (battler) {
+  const isBodyguard = (battler) => {
     if (!battler) return false;
     if (battler._bodyguardCache !== undefined) return battler._bodyguardCache;
 
     ensureStatesScanned();
 
     const traitObjects = battler.traitObjects();
-    battler._bodyguardCache = traitObjects.some(function (obj) {
-      return parseBodyguardNotetag(obj);
-    });
+    battler._bodyguardCache = traitObjects.some((obj) => parseBodyguardNotetag(obj));
     return battler._bodyguardCache;
   };
 
@@ -193,30 +198,25 @@
    * Guards: protetor vivo, e bodyguard, nao e o proprio target,
    * action e de oponente, action nao e AoE.
    */
-  const getBodyguardTarget = function (target, action) {
-    try {
-      if (!target || !target._bodyguardProtector) return null;
+  const getBodyguardTarget = (target, action) => {
+    if (!target || !target._bodyguardProtector) return null;
 
-      const protector = target._bodyguardProtector;
+    const protector = target._bodyguardProtector;
 
-      if (!protector.isAlive()) return null;
-      if (!isBodyguard(protector)) return null;
-      if (protector === target) return null;
-      if (!action.isForOpponent()) return null;
-      if (action.isForAll()) return null;
+    if (!protector.isAlive()) return null;
+    if (!isBodyguard(protector)) return null;
+    if (protector === target) return null;
+    if (!action.isForOpponent()) return null;
+    if (action.isForAll()) return null;
 
-      return protector;
-    } catch (e) {
-      console.warn(PLUGIN_NAME + ': Erro ao verificar bodyguard target:', e.message);
-      return null;
-    }
+    return protector;
   };
 
   /**
    * Remove todos os states de protecao bodyguard aplicados por um bodyguard
    * e limpa as referencias de protetor nos aliados
    */
-  const cleanupBodyguardProtection = function (bodyguard) {
+  const cleanupBodyguardProtection = (bodyguard) => {
     const partyMembers = $gameParty ? $gameParty.battleMembers() : [];
     const troopMembers = $gameTroop ? $gameTroop.members() : [];
     const members = partyMembers.concat(troopMembers);
@@ -228,9 +228,24 @@
             member.removeState(stateId);
           }
         }
-        member._bodyguardProtector = null;
+        delete member._bodyguardProtector;
       }
     }
+  };
+
+  /**
+   * Remove todas as propriedades bodyguard de um battler (cleanup de batalha)
+   */
+  const resetBattlerBodyguardState = (battler) => {
+    delete battler._bodyguardProtector;
+    delete battler._bodyguardIntercept;
+    delete battler._bodyguardCache;
+    delete battler._bodyguardAnimState;
+    delete battler._bodyguardReturnTriggered;
+    delete battler._bodyguardAnimPreStarted;
+    delete battler._bodyguardSavedOffsetX;
+    delete battler._bodyguardSavedOffsetY;
+    delete battler._bodyguardProtectedAlly;
   };
 
   /**
@@ -239,7 +254,7 @@
    * usando o sistema de offsets do Sprite_Battler (nao modifica _homeX/_homeY).
    * Simultaneamente reseta o aliado para a posicao home para evitar sobreposicao.
    */
-  const startBodyguardInterceptAnimation = function (bodyguard, target) {
+  const startBodyguardInterceptAnimation = (bodyguard, target) => {
     if (!$gameSystem.isSideView()) return;
     const spriteset = SceneManager._scene && SceneManager._scene._spriteset;
     if (!spriteset) return;
@@ -262,7 +277,7 @@
     // Resetar aliado para home simultaneamente
     tgtSprite.startMove(0, 0, BODYGUARD_ANIM.MOVE_DURATION);
 
-    bodyguard._bodyguardAnimState = 'movingToAlly';
+    bodyguard._bodyguardAnimState = BG_ANIM_STATE.MOVING_TO_ALLY;
     bodyguard._bodyguardProtectedAlly = target;
 
     dbg('interceptAnim: aliado resetado para home', {
@@ -380,11 +395,11 @@
       // TP gain baseado no dano recebido
       const hpDamage = bodyguard.result().hpDamage;
       if (hpDamage > 0) {
-        bodyguard.gainTp(Math.floor(hpDamage / 20));
+        bodyguard.gainTp(Math.floor(hpDamage / BODYGUARD_TP_DIVISOR));
       }
 
-      // Visual: 70% chance de mensagem "pular na frente"
-      if (Math.random() < 0.7 && target.isAlive()) {
+      // Visual: mensagem "pular na frente"
+      if (Math.random() < BODYGUARD_MSG_CHANCE && target.isAlive()) {
         BattleManager._logWindow.addText(bodyguard.name() + ' pulou na frente de ' + target.name() + '!');
       }
 
@@ -450,15 +465,7 @@
   Game_Battler.prototype.onBattleEnd = function () {
     _Game_Battler_onBattleEnd.call(this);
 
-    this._bodyguardProtector = null;
-    this._bodyguardIntercept = false;
-    this._bodyguardCache = undefined;
-    this._bodyguardAnimState = null;
-    delete this._bodyguardReturnTriggered;
-    delete this._bodyguardAnimPreStarted;
-    delete this._bodyguardSavedOffsetX;
-    delete this._bodyguardSavedOffsetY;
-    delete this._bodyguardProtectedAlly;
+    resetBattlerBodyguardState(this);
   };
 
   // =========================================================================
@@ -476,21 +483,21 @@
     if (!battler || !battler._bodyguardAnimState) return;
 
     switch (battler._bodyguardAnimState) {
-      case 'movingToAlly':
+      case BG_ANIM_STATE.MOVING_TO_ALLY:
         if (!this.isMoving()) {
-          battler._bodyguardAnimState = 'waitingForAttack';
+          battler._bodyguardAnimState = BG_ANIM_STATE.WAITING_FOR_ATTACK;
           dbg('stateMachine: movingToAlly → waitingForAttack');
         }
         break;
-      case 'waitingForAttack':
+      case BG_ANIM_STATE.WAITING_FOR_ATTACK:
         if (battler._bodyguardReturnTriggered) {
           this.startMove(0, 0, BODYGUARD_ANIM.RETURN_DURATION);
-          battler._bodyguardAnimState = 'returningHome';
+          battler._bodyguardAnimState = BG_ANIM_STATE.RETURNING_HOME;
           delete battler._bodyguardReturnTriggered;
           dbg('stateMachine: waitingForAttack → returningHome (endAction triggered)');
         }
         break;
-      case 'returningHome':
+      case BG_ANIM_STATE.RETURNING_HOME:
         if (!this.isMoving()) {
           battler._bodyguardAnimState = null;
 
@@ -500,7 +507,7 @@
             const ss = SceneManager._scene && SceneManager._scene._spriteset;
             const aSprite = ss ? ss.findTargetSprite(ally) : null;
             if (aSprite) {
-              aSprite.startMove(ally._bodyguardSavedOffsetX, ally._bodyguardSavedOffsetY, 8);
+              aSprite.startMove(ally._bodyguardSavedOffsetX, ally._bodyguardSavedOffsetY, BODYGUARD_ANIM.ALLY_RESTORE_DURATION);
               dbg('stateMachine: aliado restaurou passo a frente');
             }
             delete ally._bodyguardSavedOffsetX;
