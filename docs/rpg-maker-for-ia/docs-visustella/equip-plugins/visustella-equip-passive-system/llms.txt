@@ -1,0 +1,41 @@
+# Equip Passive System VisuStella MZ
+
+## Propósito
+Sistema de passivos equipáveis para RPG Maker MZ. Atores equipam states passivos com custo de capacidade, aprendendo via condições de gameplay ou Skill Learn System.
+
+## Principais Áreas
+
+### conceitos/
+- visao-geral.md - Funcionalidades, metadados, fluxo de aprendizado
+- states-como-base.md - Capacidade, branching, link com skills
+- unlock-conditions.md - 30+ tipos de condições de desbloqueio
+- skill-learn-integration.md - Compra com AP/SP/JP/CP/itens/gold
+
+### notetags/
+- referencia-rapida.md - Tabela completa de todas as notetags
+- setup.md - Configuração básica (State, Actor, Class, Skill)
+- unlock-conditions.md - Notetags de condições detalhadas
+- skill-learn-system.md - Notetags SLS (custos, show, require)
+- hiding.md - Controle de visibilidade
+- masking.md - Mascarar passivos não aprendidos
+
+### comandos/
+- actor.md - Learn/Forget/Add/Remove por actor
+- global.md - Operações globais em todos os atores
+- system.md - Show/Hide do menu Passives
+
+### parametros/
+- general-settings.md - Capacidade, auto-equip, popup
+- vocabulary-settings.md - Formatos de texto e condições
+- window-settings.md - Configuração visual
+
+### referencia/
+- compatibilidade.md - Dependências e interações
+- glossario.md - Termos e abreviações
+
+## Ordem de Navegação Sugerida
+1. conceitos/visao-geral.md
+2. conceitos/states-como-base.md
+3. notetags/referencia-rapida.md
+4. notetags/unlock-conditions.md
+5. comandos/actor.md
