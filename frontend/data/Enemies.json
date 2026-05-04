@@ -627,6 +627,11 @@
         "code": 22,
         "dataId": 1,
         "value": 0.1
+      },
+      {
+        "code": 14,
+        "dataId": 13,
+        "value": 1
       }
     ],
     "dropItems": [
