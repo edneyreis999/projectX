@@ -1,0 +1,241 @@
+{
+  "main": {
+    "id": "0068da001fa981be",
+    "type": "split",
+    "children": [
+      {
+        "id": "c5c94b1e540d7a63",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "95284bbab527f747",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Daratrine/03_Narrative/03.3_Quests/T_Quest.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "T_Quest"
+            }
+          },
+          {
+            "id": "fb8b41666eed810f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Anotações Gerais.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Anotações Gerais"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5c9e11b6a2d18d91",
+    "type": "split",
+    "children": [
+      {
+        "id": "4bc3152f1cdd0eee",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "922b4288972f942f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "60137a78668f3098",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "9159f2276e9b9bd7",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9c27163fe74ee3b0",
+    "type": "split",
+    "children": [
+      {
+        "id": "0ca69580288451de",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "190d2e3cd363a7f0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Links inversos"
+            }
+          },
+          {
+            "id": "a348c1054760dcf5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída"
+            }
+          },
+          {
+            "id": "a725b45a89ec0f94",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "2ef9e1e0f25f978f",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas as propriedades"
+            }
+          },
+          {
+            "id": "cb68626b2e54052c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Criar nova base": false,
+      "workspaces:Gerenciar leiautes da área de trabalho": false
+    }
+  },
+  "active": "fb8b41666eed810f",
+  "lastOpenFiles": [
+    "Daratrine/03_Narrative/03.3_Quests/T_Quest.md",
+    "Anotações Gerais.md",
+    "Daratrine/03_Narrative/03.2_Game_Timeline/T_Game_Timeline.md",
+    "Daratrine/03_Narrative/03.1_Macro_History/T_macro_history.md",
+    "Daratrine/02_Atlas_Folk/02.3_NPCs_e_Antagonistas/T_NPCs_e_Antagonistas.md",
+    "Daratrine/02_Atlas_Folk/02.2_Protagonistas/T_protagonistas.md",
+    "Daratrine/02_Atlas_Folk/02.1_Racas_e_Especies/T_racas_e_especies.md",
+    "Daratrine/01_Worldbuilding/01.5_Magia/T_magia.md",
+    "Daratrine/01_Worldbuilding/01.4_Tecnologia/T_tecnologia.md",
+    "Daratrine/01_Worldbuilding/01.3_Geografia/T_geografia.md",
+    "Daratrine/01_Worldbuilding/01.2_Engenharias_Sociopoliticas/01.2.3_Religiao/T_religiao.md",
+    "Daratrine/01_Worldbuilding/01.2_Engenharias_Sociopoliticas/01.2.2_Economia/T_economia.md",
+    "Daratrine/01_Worldbuilding/01.2_Engenharias_Sociopoliticas/01.2.1_Politica/T_Política.md",
+    "Daratrine/01_Worldbuilding/01.1_Leis/T_Leis.md",
+    "Daratrine/00_Foudation/00.3_Tone_Vibe/T_Tone_Vibe.md",
+    "Daratrine/00_Foudation/00.2_The_Thesis/T_Foundation_Details.md",
+    "Daratrine/00_Foudation/00.1_Core_Concept/T_Core _Concept.md",
+    "2026-05-05.md",
+    "Sem título.canvas",
+    "Daratrine/03_Narrative/03.2_Game_Timeline/T_Game-Timeline.md",
+    "Daratrine/03_Narrative/03.3_Beats",
+    "Daratrine/03_Narrative/03.1_Macro_History/T_Macro",
+    "Daratrine/99_Templates/T_Personagem.md",
+    "Daratrine/04_Mechanics/Sem título",
+    "Daratrine/04_Mechanics/04.1_Decision_Log",
+    "Daratrine/03_Narrative/03.3_Quests",
+    "Daratrine/03_Narrative/03.2_Game_Timeline",
+    "Daratrine/03_Narrative/03.1_Macro_History",
+    "Daratrine/01_Worldbuilding/01.5_Magia",
+    "Daratrine/01_Worldbuilding/01.2_Engenharias_Sociopoliticas/01.2.3_Religiao",
+    "Daratrine/01_Worldbuilding/01.2_Engenharias_Sociopoliticas/01.2.2_Economia",
+    "Daratrine/99_Templates/T_Sistema_Mecanica.md",
+    "Daratrine/99_Templates/T_Worldbuilding.md",
+    "Daratrine/99_Templates/T_Quest_Historia.md",
+    "Daratrine/99_Templates/T_Fundacao_GDD.md",
+    "Daratrine/99_Templates/Sem título.canvas",
+    "Bem-vindo.md",
+    "Sem título 1.canvas",
+    "crie um link.md"
+  ]
+}
