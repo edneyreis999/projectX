@@ -142,7 +142,7 @@
     "battlerHue": 0,
     "exp": 5000,
     "gold": 500,
-    "params": [25000, 0, 200, 100, 0, 80, 110, 80],
+    "params": [28000, 0, 200, 100, 0, 80, 110, 80],
     "actions": [
       {
         "skillId": 1,
@@ -572,7 +572,7 @@
     "battlerHue": 0,
     "exp": 2000,
     "gold": 500,
-    "params": [30000, 400, 180, 120, 60, 100, 85, 90],
+    "params": [30000, 400, 150, 200, 60, 100, 85, 90],
     "actions": [
       {
         "skillId": 11,
@@ -590,7 +590,7 @@
       },
       {
         "skillId": 12,
-        "rating": 3,
+        "rating": 2,
         "conditionType": 0,
         "conditionParam1": 0,
         "conditionParam2": 0
@@ -624,9 +624,9 @@
         "value": 0.95
       },
       {
-        "code": 22,
-        "dataId": 1,
-        "value": 0.1
+        "code": 14,
+        "dataId": 13,
+        "value": 1
       }
     ],
     "dropItems": [
@@ -994,7 +994,7 @@
     "battlerHue": 0,
     "exp": 0,
     "gold": 0,
-    "params": [2800, 0, 90, 40, 50, 50, 90, 40],
+    "params": [1200, 0, 90, 40, 50, 50, 90, 40],
     "actions": [
       {
         "skillId": 39,
