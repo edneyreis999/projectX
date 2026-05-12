@@ -9,47 +9,42 @@ tags:
 
 ## O Conflito Central: O Retorno da Rebellio
 
-O problema que move o mundo é o **Ciclo da Arrogância (Hubris)**. Não é um evento isolado, mas uma consequência sistêmica:
+O problema que move o mundo é **o desequilíbrio entre poder, identidade e ordem natural.** Não é um evento isolado, mas uma consequência sistêmica:
 
 1. **A Rebelião Ancestral:** Os Antigos (Ignotos) tornaram-se autossuficientes através da magia e alquimia, menosprezando a bênção de Vitasolis. Sua queda não foi um erro de julgamento divino, mas a resposta a uma insurreição consciente.
     
-2. **A Repetição Anã:** O Império de Gildrat, sob o comando de Damburr, repete o padrão. Ao ignorar os selos e os avisos da terra ("Pé Vermelho") em prol da extração mineral, os anões despertam a "Geada Negra" (Ignotos).
-    
-3. **O Conflito Autônomo:** Os Ignotos buscam vingança contra a luz e a superfície que os rejeitou, enquanto o Império Anão tenta manter seu sistema econômico de exploração, mesmo que isso signifique o colapso do equilíbrio da terra.
-    
+2. **A Exploração da Terra:** Antigamente, os anões viviam em harmonia com a terra. Dedicavam-se às plantações, ao cultivo e a uma produção sustentável, guiados pela sabedoria ancestral e pelo uso equilibrado da magia. Porém, a ambição cresceu. Aos poucos, passaram a explorar a terra de forma predatória, rompendo o equilíbrio natural. O solo tornou-se seco e infértil, até que uma grande geada assolou suas terras, forçando-os a abandonar os campos e migrar para as minas — dando início à era da exploração mineral.
+3. **Thorin** vive o mesmo conflito em escala íntima: o desequilíbrio entre sua essência e o papel imposto por seu pai.
+
+**A Repetição Anã (grande conflito do jogo)** O Império de Gildrat, sob o comando de Damburr, repete o padrão. Ao ignorar os selos, os avisos da terra e a sabedoria ancestral em prol da extração mineral, os anões despertam a =="Geada Negra" (Ignotos).==
+
+==Para mim, parece que o grande conflito que perpassa várias camadas é a questão do *desequilíbrio*==
+
 
 ## The Stakes (O que está em risco?)
 
 ### Macro (Mundo): A Corrupção de Ekios
 
-- **O que acontece:** Se nada for feito, os Ignotos (a Geada Negra) não apenas destruirão Gildrat, mas consumirão a vitalidade de Ekios, transformando a superfície em um reflexo do submundo tóxico e sem luz.
+- **O que acontece:** Se nada for feito (ou é inevitável?), os Ignotos (a Geada Negra) não apenas destruirão Gildrat, mas consumirão a vitalidade de Ekios, transformando a superfície em um reflexo do submundo tóxico e sem luz.
     
-- **Impacto Sistêmico:** A substituição do "Ouro Verde" (prosperidade agrícola) e da mineração pelo vazio absoluto da "Geada Negra".
-    
+- **Impacto Sistêmico:** A substituição da mineração pelo vazio absoluto da "Geada Negra".
 
 ### Micro (Pessoal): A Casca Onírica de Thorin
 
 - **O que acontece:** Thorin corre o risco de perder sua **Autonomia e Identidade**.
-    
 - **Perda Narrativa:** Se falhar em purificar sua conexão com a terra, Thorin será consumido pelo Profeta das Sombras, tornando-se a "Casca Onírica" — um hospedeiro eterno para a mesma força que ele tenta combater.
-    
 - **Perda Social:** O protagonista perde o vínculo com seu pai e seu lugar em Gildrat, sendo forçado a abraçar um "Dom Proibido" que o isola de sua cultura artesã tradicional.
-    
 
 ---
 
 ## Forças Antagônicas
 
 ### Antagonista Físico: O Profeta das Sombras
-
 - **Papel:** O mentor da vingança dos Ignotos que opera através do Reino da Mana.
-    
 - **Conexão:** Ele busca o momento em que o segundo sol (Vitasolis) surja para consumar a destruição de Gildrat diante dos olhos do deus.
     
 ### Antagonista Sistêmico: A "Mentalidade de Extração"
-
 - **Conceito:** A crença anã de que a terra é apenas um recurso a ser mandado e escavado, ignorando o ritmo da vida e das colheitas.
-    
 - **Manifestação:** O Conselho e Balastrus, que veem superstição onde há avisos (Fogos-fátuos e Gralha-azul), forçando o progresso técnico acima da segurança ancestral.
     
 ---
@@ -57,9 +52,7 @@ O problema que move o mundo é o **Ciclo da Arrogância (Hubris)**. Não é um e
 ## Conexões Narrativas & Sistêmicas
 
 ### Sistemas que geram este conflito:
-
 - **Conexão Pé Vermelho vs. Metal:** O conflito nasce do choque entre o sistema de **Mineração Intensiva** (controle/extração) e o **Vínculo Ancestral** (escuta/pertencimento).
-    
 - **O Ciclo Climático:** A transição da Geada (frio físico) para a Geada Negra (corrupção espiritual dos Ignotos).
     
 ### Personagens afetados:

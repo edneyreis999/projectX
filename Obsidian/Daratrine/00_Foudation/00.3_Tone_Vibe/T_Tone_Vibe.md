@@ -27,7 +27,6 @@ O jogo utiliza a linguagem como ferramenta de imersão e desenvolvimento de habi
 #  Elementos Culturais e Impacto Visual
 
 Esta seção justifica a estética do jogo como um veículo de **preservação do patrimônio histórico-cultural e ambiental**.
-
 #### 3.1. Estética de Bestiário e Códice
 O visual monocromático em **sépia** e o uso de **hachuras** referenciam manuscritos medievais e diários de exploradores. Esta escolha transforma a interface em um objeto de estudo histórico-visual, despertando o interesse do jogador por arquivos, bibliotecas e pela estética do livro como artefato cultural.
 #### 3.2. A Gralha-azul: "Semeadora de Memórias"

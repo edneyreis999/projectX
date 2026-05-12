@@ -11,8 +11,7 @@ tags:
 Raça: Anões
 ---
 ==nomes: As Velhas Canções (vamos chamar assim por enquanto), pés vermelhos, algo mais rural==
-# Dogma e Instituição: A Tradição dos Ancestrais
-
+# Dogma e Instituição: As Velhas Canções
 ## Visão Geral
 
 As Velhas Canções são uma tradição ancestral proibida que sobrevive fragmentada entre linhagens ocultas, andarilhos e antigos guardiões da terra.
