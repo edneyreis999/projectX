@@ -5414,7 +5414,7 @@
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "----- Thorin ------",
     "switchId": 1,
     "trigger": 0
   },
@@ -5435,12 +5435,395 @@
     "id": 71,
     "list": [
       {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["====================================Notes=========================================="]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["Requires Visustella's Action Sequence Projectiles plugin"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["https://visustellamz.itch.io/action-sequence-projectiles"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [""]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["For best results, try other animations:"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["e.g. https://manugamingcreations.itch.io/rpg-maker-mz-fireball-projectile"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["====================================DESCRIPTION=========================================="]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Setup: Standard attack setup"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Cast: User performs Cast motion"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Fire Projectile: Animation travels from user to target"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Action Effect (Flash): Apply damage, (de)buffs and play skill animation play on target"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Finish: Standard attack finish"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["========================================================================================="]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Setup"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Displays attack name"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Makes targets immortal so they don't die in the middle of multiple hit attacks"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- No battle step or cast animation"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Set_SetupAction",
+          "ACSET: Setup Action Set",
+          {
+            "DisplayAction:eval": "true",
+            "ApplyImmortal:eval": "true",
+            "ActionStart:eval": "false",
+            "WaitForMovement:eval": "false",
+            "CastAnimation:eval": "false",
+            "WaitForAnimation:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Display Action = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Immortal: On = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Battle Step = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Cast Animation = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Animation = false"]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [5]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Cast"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- User performs Spell motion"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Wait until Cast is complete minus 1 frame"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Motion_MotionType",
+          "MOTION: Motion Type",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "MotionType:str": "swing",
+            "ShowWeapon:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Motion Type = swing"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Show Weapon? = false"]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [11]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Fire Projectile"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Animation 107 travels from user to target"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Wait 18 frames"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Projectile_Picture",
+          "PROJECTILE: Picture",
+          {
+            "Coordinates": "",
+            "Start:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"user\\\"]\",\"TargetCenter:eval\":\"false\",\"TargetLocation:str\":\"front center\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"+0\",\"OffsetY:eval\":\"+0\"}",
+            "Goal:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"all targets\\\"]\",\"TargetCenter:eval\":\"false\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"+0\",\"OffsetY:eval\":\"+0\"}",
+            "Settings": "",
+            "Picture:str": "stone",
+            "Duration:eval": "15",
+            "WaitForProjectile:eval": "true",
+            "Extra:struct": "{\"AutoAngle:eval\":\"false\",\"AngleOffset:eval\":\"0\",\"Arc:eval\":\"5\",\"BlendMode:num\":\"0\",\"EasingType:str\":\"OutCirc\",\"Hue:eval\":\"0\",\"Scale:eval\":\"1.0\",\"Spin:eval\":\"+590\",\"Emulate\":\"\",\"EmulateActionEffect:eval\":\"false\",\"EmulateItemEffect:eval\":\"0\",\"EmulateSkillEffect:eval\":\"0\",\"OnceParallel:num\":\"0\"}"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Coordinates = "]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Start Location = {\"Type:str\":\"target\",\"Targets:arraystr\":\"[…"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Goal Location = {\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\…"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Settings = "]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Picture Filename = stone"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 15"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Projectile? = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Extra Settings = {\"AutoAngle:eval\":\"false\",\"AngleOffset:eva…"]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Action Effect"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Deal damage to targets based on skill's damage formula and apply any buffs or debuffs "]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["based on skill's effects"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Play animation on targets based on skill's settings"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Mechanics_ActionEffect",
+          "MECH: Action Effect",
+          {
+            "Targets:arraystr": "[\"all targets\"]"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"all targets\"]"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Animation_ActionAnimation",
+          "ANIM: Action Animation",
+          {
+            "Targets:arraystr": "[\"all targets\"]",
+            "Mirror:eval": "false",
+            "WaitForAnimation:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"all targets\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Mirror Animation = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Animation? = true"]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Finish"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Turns off immortal, clears battle log, and moves everyone back to home space"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Set_FinishAction",
+          "ACSET: Finish Action",
+          {
+            "ApplyImmortal:eval": "true",
+            "WaitForNewLine:eval": "true",
+            "WaitForEffect:eval": "true",
+            "ClearBattleLog:eval": "true",
+            "ActionEnd:eval": "true",
+            "WaitForMovement:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Immortal: Off = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For New Line = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Effects = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Clear Battle Log = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Home Reset = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement = true"]
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "[Tiro Rapido]",
     "switchId": 1,
     "trigger": 0
   },
@@ -5448,12 +5831,395 @@
     "id": 72,
     "list": [
       {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["====================================Notes=========================================="]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["Requires Visustella's Action Sequence Projectiles plugin"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["https://visustellamz.itch.io/action-sequence-projectiles"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [""]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["For best results, try other animations:"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["e.g. https://manugamingcreations.itch.io/rpg-maker-mz-fireball-projectile"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["====================================DESCRIPTION=========================================="]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Setup: Standard attack setup"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Cast: User performs Cast motion"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Fire Projectile: Animation travels from user to target"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Action Effect (Flash): Apply damage, (de)buffs and play skill animation play on target"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Finish: Standard attack finish"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["========================================================================================="]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Setup"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Displays attack name"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Makes targets immortal so they don't die in the middle of multiple hit attacks"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- No battle step or cast animation"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Set_SetupAction",
+          "ACSET: Setup Action Set",
+          {
+            "DisplayAction:eval": "true",
+            "ApplyImmortal:eval": "true",
+            "ActionStart:eval": "true",
+            "WaitForMovement:eval": "false",
+            "CastAnimation:eval": "false",
+            "WaitForAnimation:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Display Action = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Immortal: On = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Battle Step = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Cast Animation = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Animation = false"]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [5]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Cast"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- User performs Spell motion"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Wait until Cast is complete minus 1 frame"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Motion_MotionType",
+          "MOTION: Motion Type",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "MotionType:str": "swing",
+            "ShowWeapon:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Motion Type = swing"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Show Weapon? = false"]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [11]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Fire Projectile"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Animation 107 travels from user to target"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Wait 18 frames"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Projectile_Picture",
+          "PROJECTILE: Picture",
+          {
+            "Coordinates": "",
+            "Start:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"user\\\"]\",\"TargetCenter:eval\":\"false\",\"TargetLocation:str\":\"front center\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"+0\",\"OffsetY:eval\":\"+0\"}",
+            "Goal:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"all targets\\\"]\",\"TargetCenter:eval\":\"false\",\"TargetLocation:str\":\"middle center\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"+0\",\"OffsetY:eval\":\"+0\"}",
+            "Settings": "",
+            "Picture:str": "stone",
+            "Duration:eval": "15",
+            "WaitForProjectile:eval": "true",
+            "Extra:struct": "{\"AutoAngle:eval\":\"false\",\"AngleOffset:eval\":\"0\",\"Arc:eval\":\"5\",\"BlendMode:num\":\"0\",\"EasingType:str\":\"Linear\",\"Hue:eval\":\"0\",\"Scale:eval\":\"1.0\",\"Spin:eval\":\"+590\",\"Emulate\":\"\",\"EmulateActionEffect:eval\":\"false\",\"EmulateItemEffect:eval\":\"0\",\"EmulateSkillEffect:eval\":\"0\",\"OnceParallel:num\":\"0\"}"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Coordinates = "]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Start Location = {\"Type:str\":\"target\",\"Targets:arraystr\":\"[…"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Goal Location = {\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\…"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Settings = "]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Picture Filename = stone"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 15"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Projectile? = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Extra Settings = {\"AutoAngle:eval\":\"false\",\"AngleOffset:eva…"]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Action Effect"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Deal damage to targets based on skill's damage formula and apply any buffs or debuffs "]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["based on skill's effects"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Play animation on targets based on skill's settings"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Mechanics_ActionEffect",
+          "MECH: Action Effect",
+          {
+            "Targets:arraystr": "[\"all targets\"]"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"all targets\"]"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Animation_ActionAnimation",
+          "ANIM: Action Animation",
+          {
+            "Targets:arraystr": "[\"all targets\"]",
+            "Mirror:eval": "false",
+            "WaitForAnimation:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"all targets\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Mirror Animation = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Animation? = true"]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Finish"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Turns off immortal, clears battle log, and moves everyone back to home space"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Set_FinishAction",
+          "ACSET: Finish Action",
+          {
+            "ApplyImmortal:eval": "true",
+            "WaitForNewLine:eval": "true",
+            "WaitForEffect:eval": "true",
+            "ClearBattleLog:eval": "true",
+            "ActionEnd:eval": "true",
+            "WaitForMovement:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Immortal: Off = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For New Line = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Effects = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Clear Battle Log = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Home Reset = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement = true"]
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "[Disparo Calibrado]",
     "switchId": 1,
     "trigger": 0
   },
@@ -5461,12 +6227,459 @@
     "id": 73,
     "list": [
       {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["====================================Notes=========================================="]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["Requires Visustella's Action Sequence Projectiles plugin"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["https://visustellamz.itch.io/action-sequence-projectiles"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [""]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["For best results, try other animations:"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["e.g. https://manugamingcreations.itch.io/rpg-maker-mz-fireball-projectile"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["====================================DESCRIPTION=========================================="]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Setup: Standard attack setup"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Cast: User performs Cast motion"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Fire Projectile: Animation travels from user to target"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Action Effect (Flash): Apply damage, (de)buffs and play skill animation play on target"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Finish: Standard attack finish"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["========================================================================================="]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Setup"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Displays attack name"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Makes targets immortal so they don't die in the middle of multiple hit attacks"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- No battle step or cast animation"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Set_SetupAction",
+          "ACSET: Setup Action Set",
+          {
+            "DisplayAction:eval": "true",
+            "ApplyImmortal:eval": "true",
+            "ActionStart:eval": "true",
+            "WaitForMovement:eval": "false",
+            "CastAnimation:eval": "false",
+            "WaitForAnimation:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Display Action = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Immortal: On = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Battle Step = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Cast Animation = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Animation = false"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Impact_MotionTrailCreate",
+          "IMPACT: Motion Trail Create",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "delay:num": "5",
+            "duration:num": "30",
+            "hue:num": "0",
+            "opacityStart:num": "200",
+            "tone:eval": "[0, 0, 0, 0]"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Delay = 5"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 30"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Hue = 0"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Starting Opacity = 200"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Tone = [0, 0, 0, 0]"]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [5]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Cast"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- User performs Spell motion"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Wait until Cast is complete minus 1 frame"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Impact_MotionTrailRemove",
+          "IMPACT: Motion Trail Remove",
+          {
+            "Targets:arraystr": "[\"user\"]"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Motion_MotionType",
+          "MOTION: Motion Type",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "MotionType:str": "swing",
+            "ShowWeapon:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Motion Type = swing"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Show Weapon? = true"]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [11]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Fire Projectile"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Animation 107 travels from user to target"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Wait 18 frames"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Projectile_Picture",
+          "PROJECTILE: Picture",
+          {
+            "Coordinates": "",
+            "Start:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"user\\\"]\",\"TargetCenter:eval\":\"false\",\"TargetLocation:str\":\"front center\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"+0\",\"OffsetY:eval\":\"+0\"}",
+            "Goal:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"all targets\\\"]\",\"TargetCenter:eval\":\"false\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"+0\",\"OffsetY:eval\":\"+0\"}",
+            "Settings": "",
+            "Picture:str": "stone",
+            "Duration:eval": "5",
+            "WaitForProjectile:eval": "true",
+            "Extra:struct": "{\"AutoAngle:eval\":\"false\",\"AngleOffset:eval\":\"0\",\"Arc:eval\":\"0\",\"BlendMode:num\":\"0\",\"EasingType:str\":\"Linear\",\"Hue:eval\":\"0\",\"Scale:eval\":\"1.0\",\"Spin:eval\":\"+590\",\"Emulate\":\"\",\"EmulateActionEffect:eval\":\"false\",\"EmulateItemEffect:eval\":\"0\",\"EmulateSkillEffect:eval\":\"0\",\"OnceParallel:num\":\"\"}"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Coordinates = "]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Start Location = {\"Type:str\":\"target\",\"Targets:arraystr\":\"[…"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Goal Location = {\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\…"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Settings = "]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Picture Filename = stone"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 5"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Projectile? = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Extra Settings = {\"AutoAngle:eval\":\"false\",\"AngleOffset:eva…"]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Action Effect"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Deal damage to targets based on skill's damage formula and apply any buffs or debuffs "]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["based on skill's effects"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Play animation on targets based on skill's settings"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Mechanics_ActionEffect",
+          "MECH: Action Effect",
+          {
+            "Targets:arraystr": "[\"all targets\"]"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"all targets\"]"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Animation_ActionAnimation",
+          "ANIM: Action Animation",
+          {
+            "Targets:arraystr": "[\"all targets\"]",
+            "Mirror:eval": "false",
+            "WaitForAnimation:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"all targets\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Mirror Animation = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Animation? = true"]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Finish"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Turns off immortal, clears battle log, and moves everyone back to home space"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Set_FinishAction",
+          "ACSET: Finish Action",
+          {
+            "ApplyImmortal:eval": "true",
+            "WaitForNewLine:eval": "true",
+            "WaitForEffect:eval": "true",
+            "ClearBattleLog:eval": "true",
+            "ActionEnd:eval": "true",
+            "WaitForMovement:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Immortal: Off = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For New Line = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Effects = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Clear Battle Log = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Home Reset = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement = true"]
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "[Tiro Perfurante]",
     "switchId": 1,
     "trigger": 0
   },
@@ -5474,12 +6687,429 @@
     "id": 74,
     "list": [
       {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["====================================Notes=========================================="]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["Requires Visustella's Action Sequence Projectiles plugin"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["https://visustellamz.itch.io/action-sequence-projectiles"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [""]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["For best results, try other animations:"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["e.g. https://manugamingcreations.itch.io/rpg-maker-mz-fireball-projectile"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["====================================DESCRIPTION=========================================="]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Setup: Standard attack setup"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Cast: User performs Cast motion"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Fire Projectile: Animation travels from user to target"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Action Effect (Flash): Apply damage, (de)buffs and play skill animation play on target"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Finish: Standard attack finish"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["========================================================================================="]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Setup"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Displays attack name"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Makes targets immortal so they don't die in the middle of multiple hit attacks"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- No battle step or cast animation"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Set_SetupAction",
+          "ACSET: Setup Action Set",
+          {
+            "DisplayAction:eval": "true",
+            "ApplyImmortal:eval": "true",
+            "ActionStart:eval": "true",
+            "WaitForMovement:eval": "false",
+            "CastAnimation:eval": "false",
+            "WaitForAnimation:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Display Action = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Immortal: On = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Battle Step = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Cast Animation = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Animation = false"]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [5]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Cast"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- User performs Spell motion"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Wait until Cast is complete minus 1 frame"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Motion_MotionType",
+          "MOTION: Motion Type",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "MotionType:str": "swing",
+            "ShowWeapon:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Motion Type = swing"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Show Weapon? = true"]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [11]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Fire Projectile"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Animation 107 travels from user to target"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Wait 18 frames"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Projectile_Picture",
+          "PROJECTILE: Picture",
+          {
+            "Coordinates": "",
+            "Start:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"user\\\"]\",\"TargetCenter:eval\":\"false\",\"TargetLocation:str\":\"front center\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"+0\",\"OffsetY:eval\":\"+0\"}",
+            "Goal:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"all targets\\\"]\",\"TargetCenter:eval\":\"false\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"+0\",\"OffsetY:eval\":\"+0\"}",
+            "Settings": "",
+            "Picture:str": "stone",
+            "Duration:eval": "5",
+            "WaitForProjectile:eval": "true",
+            "Extra:struct": "{\"AutoAngle:eval\":\"false\",\"AngleOffset:eval\":\"0\",\"Arc:eval\":\"0\",\"BlendMode:num\":\"0\",\"EasingType:str\":\"Linear\",\"Hue:eval\":\"0\",\"Scale:eval\":\"1.0\",\"Spin:eval\":\"+590\",\"Emulate\":\"\",\"EmulateActionEffect:eval\":\"true\",\"EmulateItemEffect:eval\":\"0\",\"EmulateSkillEffect:eval\":\"0\",\"OnceParallel:num\":\"150\"}"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Coordinates = "]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Start Location = {\"Type:str\":\"target\",\"Targets:arraystr\":\"[…"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Goal Location = {\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\…"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Settings = "]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Picture Filename = stone"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 5"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Projectile? = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Extra Settings = {\"AutoAngle:eval\":\"false\",\"AngleOffset:eva…"]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Action Effect"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Deal damage to targets based on skill's damage formula and apply any buffs or debuffs "]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["based on skill's effects"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Play animation on targets based on skill's settings"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Impact_Negative",
+          "IMPACT: Negative Inversion",
+          {
+            "Enable:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Negative? = true"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Mechanics_ActionEffect",
+          "MECH: Action Effect",
+          {
+            "Targets:arraystr": "[\"all targets\"]"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"all targets\"]"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Animation_ActionAnimation",
+          "ANIM: Action Animation",
+          {
+            "Targets:arraystr": "[\"all targets\"]",
+            "Mirror:eval": "false",
+            "WaitForAnimation:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"all targets\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Mirror Animation = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Animation? = true"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Impact_Negative",
+          "IMPACT: Negative Inversion",
+          {
+            "Enable:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Negative? = false"]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Finish"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Turns off immortal, clears battle log, and moves everyone back to home space"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Set_FinishAction",
+          "ACSET: Finish Action",
+          {
+            "ApplyImmortal:eval": "true",
+            "WaitForNewLine:eval": "true",
+            "WaitForEffect:eval": "true",
+            "ClearBattleLog:eval": "true",
+            "ActionEnd:eval": "true",
+            "WaitForMovement:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Immortal: Off = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For New Line = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Effects = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Clear Battle Log = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Home Reset = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement = true"]
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "[Disparo Desestabilizante]",
     "switchId": 1,
     "trigger": 0
   },
@@ -5487,12 +7117,557 @@
     "id": 75,
     "list": [
       {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["====================================Notes=========================================="]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["Requires Visustella's Action Sequence Projectiles plugin"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["https://visustellamz.itch.io/action-sequence-projectiles"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [""]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["For best results, try other animations:"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["e.g. https://manugamingcreations.itch.io/rpg-maker-mz-fireball-projectile"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["====================================DESCRIPTION=========================================="]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Setup: Standard attack setup"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Cast: User performs Cast motion"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Fire Projectile: Animation travels from user to target"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Action Effect (Flash): Apply damage, (de)buffs and play skill animation play on target"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Finish: Standard attack finish"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["========================================================================================="]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Setup"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Displays attack name"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Makes targets immortal so they don't die in the middle of multiple hit attacks"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- No battle step or cast animation"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Set_SetupAction",
+          "ACSET: Setup Action Set",
+          {
+            "DisplayAction:eval": "true",
+            "ApplyImmortal:eval": "true",
+            "ActionStart:eval": "true",
+            "WaitForMovement:eval": "false",
+            "CastAnimation:eval": "false",
+            "WaitForAnimation:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Display Action = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Immortal: On = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Battle Step = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Cast Animation = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Animation = false"]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [5]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Cast"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- User performs Spell motion"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Wait until Cast is complete minus 1 frame"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Motion_MotionType",
+          "MOTION: Motion Type",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "MotionType:str": "swing",
+            "ShowWeapon:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Motion Type = swing"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Show Weapon? = false"]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [11]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Projectile_Picture",
+          "PROJECTILE: Picture",
+          {
+            "Coordinates": "",
+            "Start:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"user\\\"]\",\"TargetCenter:eval\":\"false\",\"TargetLocation:str\":\"front center\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"+0\",\"OffsetY:eval\":\"+0\"}",
+            "Goal:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"all targets\\\"]\",\"TargetCenter:eval\":\"false\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"+0\",\"OffsetY:eval\":\"+0\"}",
+            "Settings": "",
+            "Picture:str": "stone",
+            "Duration:eval": "5",
+            "WaitForProjectile:eval": "true",
+            "Extra:struct": "{\"AutoAngle:eval\":\"false\",\"AngleOffset:eval\":\"0\",\"Arc:eval\":\"0\",\"BlendMode:num\":\"0\",\"EasingType:str\":\"Linear\",\"Hue:eval\":\"0\",\"Scale:eval\":\"1.0\",\"Spin:eval\":\"+590\",\"Emulate\":\"\",\"EmulateActionEffect:eval\":\"true\",\"EmulateItemEffect:eval\":\"0\",\"EmulateSkillEffect:eval\":\"0\",\"OnceParallel:num\":\"\"}"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Coordinates = "]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Start Location = {\"Type:str\":\"target\",\"Targets:arraystr\":\"[…"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Goal Location = {\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\…"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Settings = "]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Picture Filename = stone"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 5"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Projectile? = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Extra Settings = {\"AutoAngle:eval\":\"false\",\"AngleOffset:eva…"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Projectile_Picture",
+          "PROJECTILE: Picture",
+          {
+            "Coordinates": "",
+            "Start:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"user\\\"]\",\"TargetCenter:eval\":\"false\",\"TargetLocation:str\":\"front center\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"+0\",\"OffsetY:eval\":\"+0\"}",
+            "Goal:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"all targets\\\"]\",\"TargetCenter:eval\":\"false\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"+0\",\"OffsetY:eval\":\"+0\"}",
+            "Settings": "",
+            "Picture:str": "stone",
+            "Duration:eval": "5",
+            "WaitForProjectile:eval": "true",
+            "Extra:struct": "{\"AutoAngle:eval\":\"false\",\"AngleOffset:eval\":\"0\",\"Arc:eval\":\"0\",\"BlendMode:num\":\"0\",\"EasingType:str\":\"Linear\",\"Hue:eval\":\"0\",\"Scale:eval\":\"1.0\",\"Spin:eval\":\"+590\",\"Emulate\":\"\",\"EmulateActionEffect:eval\":\"true\",\"EmulateItemEffect:eval\":\"0\",\"EmulateSkillEffect:eval\":\"0\",\"OnceParallel:num\":\"\"}"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Coordinates = "]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Start Location = {\"Type:str\":\"target\",\"Targets:arraystr\":\"[…"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Goal Location = {\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\…"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Settings = "]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Picture Filename = stone"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 5"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Projectile? = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Extra Settings = {\"AutoAngle:eval\":\"false\",\"AngleOffset:eva…"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Projectile_Picture",
+          "PROJECTILE: Picture",
+          {
+            "Coordinates": "",
+            "Start:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"user\\\"]\",\"TargetCenter:eval\":\"false\",\"TargetLocation:str\":\"front center\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"+0\",\"OffsetY:eval\":\"+0\"}",
+            "Goal:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"all targets\\\"]\",\"TargetCenter:eval\":\"false\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"+0\",\"OffsetY:eval\":\"+0\"}",
+            "Settings": "",
+            "Picture:str": "stone",
+            "Duration:eval": "5",
+            "WaitForProjectile:eval": "true",
+            "Extra:struct": "{\"AutoAngle:eval\":\"false\",\"AngleOffset:eval\":\"0\",\"Arc:eval\":\"0\",\"BlendMode:num\":\"0\",\"EasingType:str\":\"Linear\",\"Hue:eval\":\"0\",\"Scale:eval\":\"1.0\",\"Spin:eval\":\"+590\",\"Emulate\":\"\",\"EmulateActionEffect:eval\":\"true\",\"EmulateItemEffect:eval\":\"0\",\"EmulateSkillEffect:eval\":\"0\",\"OnceParallel:num\":\"\"}"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Coordinates = "]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Start Location = {\"Type:str\":\"target\",\"Targets:arraystr\":\"[…"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Goal Location = {\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\…"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Settings = "]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Picture Filename = stone"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 5"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Projectile? = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Extra Settings = {\"AutoAngle:eval\":\"false\",\"AngleOffset:eva…"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Projectile_Picture",
+          "PROJECTILE: Picture",
+          {
+            "Coordinates": "",
+            "Start:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"user\\\"]\",\"TargetCenter:eval\":\"false\",\"TargetLocation:str\":\"front center\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"+0\",\"OffsetY:eval\":\"+0\"}",
+            "Goal:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"all targets\\\"]\",\"TargetCenter:eval\":\"false\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"+0\",\"OffsetY:eval\":\"+0\"}",
+            "Settings": "",
+            "Picture:str": "stone",
+            "Duration:eval": "5",
+            "WaitForProjectile:eval": "true",
+            "Extra:struct": "{\"AutoAngle:eval\":\"false\",\"AngleOffset:eval\":\"0\",\"Arc:eval\":\"0\",\"BlendMode:num\":\"0\",\"EasingType:str\":\"Linear\",\"Hue:eval\":\"0\",\"Scale:eval\":\"1.0\",\"Spin:eval\":\"+590\",\"Emulate\":\"\",\"EmulateActionEffect:eval\":\"true\",\"EmulateItemEffect:eval\":\"0\",\"EmulateSkillEffect:eval\":\"0\",\"OnceParallel:num\":\"\"}"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Coordinates = "]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Start Location = {\"Type:str\":\"target\",\"Targets:arraystr\":\"[…"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Goal Location = {\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\…"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Settings = "]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Picture Filename = stone"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 5"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Projectile? = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Extra Settings = {\"AutoAngle:eval\":\"false\",\"AngleOffset:eva…"]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Action Effect"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Deal damage to targets based on skill's damage formula and apply any buffs or debuffs "]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["based on skill's effects"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Play animation on targets based on skill's settings"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Mechanics_ActionEffect",
+          "MECH: Action Effect",
+          {
+            "Targets:arraystr": "[\"current target\"]"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"current target\"]"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Animation_ActionAnimation",
+          "ANIM: Action Animation",
+          {
+            "Targets:arraystr": "[\"current target\"]",
+            "Mirror:eval": "false",
+            "WaitForAnimation:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"current target\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Mirror Animation = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Animation? = true"]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Finish"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Turns off immortal, clears battle log, and moves everyone back to home space"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Set_FinishAction",
+          "ACSET: Finish Action",
+          {
+            "ApplyImmortal:eval": "true",
+            "WaitForNewLine:eval": "true",
+            "WaitForEffect:eval": "true",
+            "ClearBattleLog:eval": "true",
+            "ActionEnd:eval": "true",
+            "WaitForMovement:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Immortal: Off = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For New Line = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Effects = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Clear Battle Log = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Home Reset = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement = true"]
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "[Chuva de Estilhacos]",
     "switchId": 1,
     "trigger": 0
   },
@@ -5500,12 +7675,924 @@
     "id": 76,
     "list": [
       {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["====================================Notes=========================================="]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- For best results, user should have gun, bow, or other ranged weapon equipped"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["====================================DESCRIPTION=========================================="]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Setup: Standard attack setup"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Dive Setup:Move to target's front base minus 300 px"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Dive: Dive over target"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Attack Motion: Attack motion based on equipped weapon"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Action Effect + Opacity: Apply damage, (de)buffs and play skill animation play on target"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["and fade to 0 opacity"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Finish Setup: Move to target's front base, minus 600 px"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Finish + Full Reset: Standard attack finish, + reset opacity/angle"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["========================================================================================="]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Setup"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Displays attack name"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Makes targets immortal so they don't die in the middle of multiple hit attacks"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- No battle step or cast animation"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Set_SetupAction",
+          "ACSET: Setup Action Set",
+          {
+            "DisplayAction:eval": "true",
+            "ApplyImmortal:eval": "true",
+            "ActionStart:eval": "false",
+            "WaitForMovement:eval": "false",
+            "CastAnimation:eval": "false",
+            "WaitForAnimation:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Display Action = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Immortal: On = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Battle Step = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Cast Animation = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Animation = false"]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Dive Setup"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- User moves to target's front base, minus 300 px"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Wait until Dive Setup is complete"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Movement_MoveToTarget",
+          "MOVE: Move To Target(s)",
+          {
+            "Targets1:arraystr": "[\"user\"]",
+            "Targets2:arraystr": "[\"all targets\"]",
+            "TargetLocation:str": "front base",
+            "MeleeDistance:eval": "0",
+            "OffsetAdjust:str": "horz",
+            "OffsetX:eval": "-300",
+            "OffsetY:eval": "0",
+            "Duration:eval": "6",
+            "FaceDirection:eval": "false",
+            "EasingType:str": "Linear",
+            "MotionType:str": "walk",
+            "WaitForMovement:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets (Moving) = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets (Destination) = [\"all targets\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Target Location = front base"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Melee Distance = 0"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Offset Adjustment = horz"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Offset: X = -300"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Offset: Y = 0"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 6"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Face Destination? = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Movement Easing = Linear"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Movement Motion = walk"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement? = false"]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [12]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Dive"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- User moves 700 px forward"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- User jumps 200 px"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- User spins 180 degrees"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- User fades to 0 opacity"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Wind9 SE plays"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Wait 5 frames"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Movement_MoveBy",
+          "MOVE: Move Distance",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "DistanceAdjust:str": "horz",
+            "DistanceX:eval": "700",
+            "DistanceY:eval": "0",
+            "Duration:eval": "44",
+            "FaceDirection:eval": "true",
+            "EasingType:str": "Linear",
+            "MotionType:str": "walk",
+            "WaitForMovement:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Distance Adjustment = horz"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Distance: X = 700"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Distance: Y = 0"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 44"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Face Destination? = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Movement Easing = Linear"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Movement Motion = walk"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement? = false"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Movement_Jump",
+          "MOVE: Jump",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "Height:eval": "200",
+            "Duration:eval": "44",
+            "WaitForJump:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Desired Height = 200"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 44"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Jump? = false"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Movement_Spin",
+          "MOVE: Spin/Rotate",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "Angle:eval": "180",
+            "Duration:eval": "44",
+            "EasingType:str": "Linear",
+            "RevertAngle:eval": "false",
+            "WaitForSpin:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Angle = 180"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 44"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Spin Easing = Linear"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Revert Angle on Finish = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Spin? = false"]
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "Wind9",
+            "volume": 90,
+            "pitch": 80,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [5]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Attack Motion"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- User performs attack motion based on weapon equipped"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Wait 17 frames"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Motion_MotionType",
+          "MOTION: Motion Type",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "MotionType:str": "swing",
+            "ShowWeapon:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Motion Type = swing"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Show Weapon? = false"]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [17]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Projectile_Picture",
+          "PROJECTILE: Picture",
+          {
+            "Coordinates": "",
+            "Start:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"user\\\"]\",\"TargetCenter:eval\":\"false\",\"TargetLocation:str\":\"front center\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"+0\",\"OffsetY:eval\":\"+0\"}",
+            "Goal:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"all targets\\\"]\",\"TargetCenter:eval\":\"false\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"+0\",\"OffsetY:eval\":\"+0\"}",
+            "Settings": "",
+            "Picture:str": "stone",
+            "Duration:eval": "5",
+            "WaitForProjectile:eval": "true",
+            "Extra:struct": "{\"AutoAngle:eval\":\"false\",\"AngleOffset:eval\":\"0\",\"Arc:eval\":\"0\",\"BlendMode:num\":\"0\",\"EasingType:str\":\"Linear\",\"Hue:eval\":\"0\",\"Scale:eval\":\"1.0\",\"Spin:eval\":\"+590\",\"Emulate\":\"\",\"EmulateActionEffect:eval\":\"false\",\"EmulateItemEffect:eval\":\"0\",\"EmulateSkillEffect:eval\":\"0\",\"OnceParallel:num\":\"\"}"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Coordinates = "]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Start Location = {\"Type:str\":\"target\",\"Targets:arraystr\":\"[…"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Goal Location = {\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\…"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Settings = "]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Picture Filename = stone"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 5"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Projectile? = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Extra Settings = {\"AutoAngle:eval\":\"false\",\"AngleOffset:eva…"]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Action Effect + Opacity"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Deal damage to targets based on skill's damage formula and apply any buffs or debuffs "]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["based on skill's effects"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Play animation on targets based on skill's settings"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- User fades to 0 opacity (InQuart = quick fade at end)"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Wait for Dive to complete"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Mechanics_ActionEffect",
+          "MECH: Action Effect",
+          {
+            "Targets:arraystr": "[\"all targets\"]"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"all targets\"]"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Animation_ActionAnimation",
+          "ANIM: Action Animation",
+          {
+            "Targets:arraystr": "[\"all targets\"]",
+            "Mirror:eval": "false",
+            "WaitForAnimation:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"all targets\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Mirror Animation = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Animation? = false"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Movement_Opacity",
+          "MOVE: Opacity",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "Opacity:eval": "0",
+            "Duration:eval": "22",
+            "EasingType:str": "InQuart",
+            "WaitForOpacity:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Desired Opacity = 0"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 22"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Opacity Easing = InQuart"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Opacity? = false"]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [22]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Finish Setup"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- User moves to target's front base, minus 600 px"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Wait for Finish Setup to complete"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Movement_MoveToTarget",
+          "MOVE: Move To Target(s)",
+          {
+            "Targets1:arraystr": "[\"user\"]",
+            "Targets2:arraystr": "[\"all targets\"]",
+            "TargetLocation:str": "front base",
+            "MeleeDistance:eval": "0",
+            "OffsetAdjust:str": "horz",
+            "OffsetX:eval": "-600",
+            "OffsetY:eval": "0",
+            "Duration:eval": "1",
+            "FaceDirection:eval": "false",
+            "EasingType:str": "Linear",
+            "MotionType:str": "walk",
+            "WaitForMovement:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets (Moving) = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets (Destination) = [\"all targets\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Target Location = front base"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Melee Distance = 0"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Offset Adjustment = horz"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Offset: X = -600"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Offset: Y = 0"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 1"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Face Destination? = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Movement Easing = Linear"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Movement Motion = walk"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement? = false"]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Finish + Full Reset"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- User opacity increases to 255"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- User angle resets"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Turns off immortal, clears battle log, and moves everyone back to home space"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Movement_Opacity",
+          "MOVE: Opacity",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "Opacity:eval": "255",
+            "Duration:eval": "1",
+            "EasingType:str": "Linear",
+            "WaitForOpacity:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Desired Opacity = 255"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 1"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Opacity Easing = Linear"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Opacity? = false"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Movement_Spin",
+          "MOVE: Spin/Rotate",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "Angle:eval": "0",
+            "Duration:eval": "1",
+            "EasingType:str": "Linear",
+            "RevertAngle:eval": "true",
+            "WaitForSpin:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Angle = 0"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 1"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Spin Easing = Linear"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Revert Angle on Finish = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Spin? = false"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Set_FinishAction",
+          "ACSET: Finish Action",
+          {
+            "ApplyImmortal:eval": "true",
+            "WaitForNewLine:eval": "true",
+            "WaitForEffect:eval": "true",
+            "ClearBattleLog:eval": "true",
+            "ActionEnd:eval": "true",
+            "WaitForMovement:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Immortal: Off = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For New Line = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Effects = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Clear Battle Log = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Home Reset = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement = true"]
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "[Disparo Oportunista]",
     "switchId": 1,
     "trigger": 0
   },
@@ -5513,12 +8600,733 @@
     "id": 77,
     "list": [
       {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["====================================Notes=========================================="]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- For best results, user should have gun, bow, or other ranged weapon equipped"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["====================================DESCRIPTION=========================================="]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Setup: Standard attack setup"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Flip: User flips up and back"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Attack: User performs weapon's associated motion"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Action Effect: Apply damage, (de)buffs and play skill animation play on target"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Fall: User falls back to home position"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Motion Reset: User goes back to idle motion"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Finish: Standard attack finish"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["========================================================================================="]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Setup"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Displays attack name"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Makes targets immortal so they don't die in the middle of multiple hit attacks"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- No battle step or cast animation"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Set_SetupAction",
+          "ACSET: Setup Action Set",
+          {
+            "DisplayAction:eval": "true",
+            "ApplyImmortal:eval": "true",
+            "ActionStart:eval": "false",
+            "WaitForMovement:eval": "false",
+            "CastAnimation:eval": "false",
+            "WaitForAnimation:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Display Action = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Immortal: On = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Battle Step = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Cast Animation = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Animation = false"]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Flip"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- User moves backward 35 px and up 100 px"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- User rotates 720 degrees"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Wait until Flip is complete minus 1 frame"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Movement_Spin",
+          "MOVE: Spin/Rotate",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "Angle:eval": "-720",
+            "Duration:eval": "20",
+            "EasingType:str": "Linear",
+            "RevertAngle:eval": "true",
+            "WaitForSpin:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Angle = -720"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 20"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Spin Easing = Linear"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Revert Angle on Finish = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Spin? = false"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Movement_MoveBy",
+          "MOVE: Move Distance",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "DistanceAdjust:str": "horz",
+            "DistanceX:eval": "-35",
+            "DistanceY:eval": "0",
+            "Duration:eval": "20",
+            "FaceDirection:eval": "false",
+            "EasingType:str": "OutSine",
+            "MotionType:str": "evade",
+            "WaitForMovement:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Distance Adjustment = horz"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Distance: X = -35"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Distance: Y = 0"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 20"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Face Destination? = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Movement Easing = OutSine"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Movement Motion = evade"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement? = false"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Movement_Float",
+          "MOVE: Float",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "Height:eval": "100",
+            "Duration:eval": "20",
+            "EasingType:str": "OutSine",
+            "WaitForFloat:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Desired Height = 100"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 20"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Float Easing = OutSine"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Float? = false"]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [11]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Motion "]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Perform attack motion based on equipped weapon"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Motion_MotionType",
+          "MOTION: Motion Type",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "MotionType:str": "swing",
+            "ShowWeapon:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Motion Type = swing"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Show Weapon? = false"]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [11]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Projectile_Picture",
+          "PROJECTILE: Picture",
+          {
+            "Coordinates": "",
+            "Start:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"user\\\"]\",\"TargetCenter:eval\":\"false\",\"TargetLocation:str\":\"front center\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"+0\",\"OffsetY:eval\":\"+0\"}",
+            "Goal:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"all targets\\\"]\",\"TargetCenter:eval\":\"false\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"+0\",\"OffsetY:eval\":\"+0\"}",
+            "Settings": "",
+            "Picture:str": "stone",
+            "Duration:eval": "5",
+            "WaitForProjectile:eval": "true",
+            "Extra:struct": "{\"AutoAngle:eval\":\"false\",\"AngleOffset:eval\":\"0\",\"Arc:eval\":\"0\",\"BlendMode:num\":\"0\",\"EasingType:str\":\"Linear\",\"Hue:eval\":\"0\",\"Scale:eval\":\"1.0\",\"Spin:eval\":\"+590\",\"Emulate\":\"\",\"EmulateActionEffect:eval\":\"false\",\"EmulateItemEffect:eval\":\"0\",\"EmulateSkillEffect:eval\":\"0\",\"OnceParallel:num\":\"\"}"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Coordinates = "]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Start Location = {\"Type:str\":\"target\",\"Targets:arraystr\":\"[…"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Goal Location = {\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\…"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Settings = "]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Picture Filename = stone"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 5"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Projectile? = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Extra Settings = {\"AutoAngle:eval\":\"false\",\"AngleOffset:eva…"]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Action Effect"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Deal damage to targets based on skill's damage formula and apply any buffs or debuffs "]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["based on skill's effects"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Play animation on targets based on skill's settings"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Wait for 6 frames"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Animation_ActionAnimation",
+          "ANIM: Action Animation",
+          {
+            "Targets:arraystr": "[\"all targets\"]",
+            "Mirror:eval": "false",
+            "WaitForAnimation:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"all targets\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Mirror Animation = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Animation? = false"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Mechanics_ActionEffect",
+          "MECH: Action Effect",
+          {
+            "Targets:arraystr": "[\"all targets\"]"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"all targets\"]"]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [6]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Fall"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- User moves backwards 35 px and down 100 px"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- User freezes in evade motion"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Movement_MoveBy",
+          "MOVE: Move Distance",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "DistanceAdjust:str": "horz",
+            "DistanceX:eval": "-35",
+            "DistanceY:eval": "0",
+            "Duration:eval": "12",
+            "FaceDirection:eval": "false",
+            "EasingType:str": "InSine",
+            "MotionType:str": "spell",
+            "WaitForMovement:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Distance Adjustment = horz"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Distance: X = -35"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Distance: Y = 0"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 12"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Face Destination? = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Movement Easing = InSine"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Movement Motion = spell"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement? = false"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Movement_Float",
+          "MOVE: Float",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "Height:eval": "0",
+            "Duration:eval": "12",
+            "EasingType:str": "InSine",
+            "WaitForFloat:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Desired Height = 0"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 12"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Float Easing = InSine"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Float? = false"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Motion_FreezeMotionFrame",
+          "MOTION: Freeze Motion Frame",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "MotionType:str": "evade",
+            "Frame:num": "2",
+            "ShowWeapon:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Motion Type = evade"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Frame Index = 2"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Show Weapon? = false"]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [12]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Motion_MotionType",
+          "MOTION: Motion Type",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "MotionType:str": "walk",
+            "ShowWeapon:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Motion Type = walk"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Show Weapon? = true"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Turns off immortal, clears battle log, and moves everyone back to home space"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Set_FinishAction",
+          "ACSET: Finish Action",
+          {
+            "ApplyImmortal:eval": "true",
+            "WaitForNewLine:eval": "true",
+            "WaitForEffect:eval": "true",
+            "ClearBattleLog:eval": "true",
+            "ActionEnd:eval": "true",
+            "WaitForMovement:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Immortal: Off = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For New Line = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Effects = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Clear Battle Log = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Home Reset = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement = true"]
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "[Disparo Desesperado]",
     "switchId": 1,
     "trigger": 0
   },
@@ -5526,12 +9334,811 @@
     "id": 78,
     "list": [
       {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["====================================Notes=========================================="]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- For best results, user should have gun, bow, or other ranged weapon equipped"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["====================================DESCRIPTION=========================================="]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Setup: Standard attack setup"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Flip: User flips up and back"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Attack: User performs weapon's associated motion"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Action Effect: Apply damage, (de)buffs and play skill animation play on target"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Fall: User falls back to home position"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Motion Reset: User goes back to idle motion"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Finish: Standard attack finish"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["========================================================================================="]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Setup"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Displays attack name"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Makes targets immortal so they don't die in the middle of multiple hit attacks"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- No battle step or cast animation"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Set_SetupAction",
+          "ACSET: Setup Action Set",
+          {
+            "DisplayAction:eval": "true",
+            "ApplyImmortal:eval": "true",
+            "ActionStart:eval": "false",
+            "WaitForMovement:eval": "false",
+            "CastAnimation:eval": "false",
+            "WaitForAnimation:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Display Action = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Immortal: On = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Battle Step = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Cast Animation = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Animation = false"]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Flip"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- User moves backward 35 px and up 100 px"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- User rotates 720 degrees"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Wait until Flip is complete minus 1 frame"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Movement_Spin",
+          "MOVE: Spin/Rotate",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "Angle:eval": "-720",
+            "Duration:eval": "20",
+            "EasingType:str": "Linear",
+            "RevertAngle:eval": "true",
+            "WaitForSpin:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Angle = -720"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 20"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Spin Easing = Linear"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Revert Angle on Finish = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Spin? = false"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Movement_MoveBy",
+          "MOVE: Move Distance",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "DistanceAdjust:str": "horz",
+            "DistanceX:eval": "-35",
+            "DistanceY:eval": "0",
+            "Duration:eval": "20",
+            "FaceDirection:eval": "false",
+            "EasingType:str": "OutSine",
+            "MotionType:str": "evade",
+            "WaitForMovement:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Distance Adjustment = horz"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Distance: X = -35"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Distance: Y = 0"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 20"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Face Destination? = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Movement Easing = OutSine"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Movement Motion = evade"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement? = false"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Movement_Float",
+          "MOVE: Float",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "Height:eval": "100",
+            "Duration:eval": "20",
+            "EasingType:str": "OutSine",
+            "WaitForFloat:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Desired Height = 100"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 20"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Float Easing = OutSine"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Float? = true"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Motion_FreezeMotionFrame",
+          "MOTION: Freeze Motion Frame",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "MotionType:str": "evade",
+            "Frame:num": "2",
+            "ShowWeapon:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Motion Type = evade"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Frame Index = 2"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Show Weapon? = false"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Impact_ShockwaveEachTargets",
+          "IMPACT: Shockwave from Each Target(s)",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "TargetLocation:str": "middle head",
+            "OffsetX:eval": "0",
+            "OffsetY:eval": "0",
+            "Amp:eval": "30",
+            "Wave:eval": "160",
+            "Duration:eval": "60"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Target Location = middle head"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Offset X = 0"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Offset Y = 0"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Amplitude = 30"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wavelength = 160"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 60"]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [60]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Motion "]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Perform attack motion based on equipped weapon"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Motion_MotionType",
+          "MOTION: Motion Type",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "MotionType:str": "swing",
+            "ShowWeapon:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Motion Type = swing"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Show Weapon? = false"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Projectile_Picture",
+          "PROJECTILE: Picture",
+          {
+            "Coordinates": "",
+            "Start:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"user\\\"]\",\"TargetCenter:eval\":\"false\",\"TargetLocation:str\":\"front center\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"+0\",\"OffsetY:eval\":\"+0\"}",
+            "Goal:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"all targets\\\"]\",\"TargetCenter:eval\":\"false\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"+0\",\"OffsetY:eval\":\"+0\"}",
+            "Settings": "",
+            "Picture:str": "stone",
+            "Duration:eval": "5",
+            "WaitForProjectile:eval": "true",
+            "Extra:struct": "{\"AutoAngle:eval\":\"false\",\"AngleOffset:eval\":\"0\",\"Arc:eval\":\"0\",\"BlendMode:num\":\"0\",\"EasingType:str\":\"Linear\",\"Hue:eval\":\"0\",\"Scale:eval\":\"1.0\",\"Spin:eval\":\"+590\",\"Emulate\":\"\",\"EmulateActionEffect:eval\":\"false\",\"EmulateItemEffect:eval\":\"0\",\"EmulateSkillEffect:eval\":\"0\",\"OnceParallel:num\":\"\"}"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Coordinates = "]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Start Location = {\"Type:str\":\"target\",\"Targets:arraystr\":\"[…"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Goal Location = {\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\…"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Settings = "]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Picture Filename = stone"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 5"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Projectile? = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Extra Settings = {\"AutoAngle:eval\":\"false\",\"AngleOffset:eva…"]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Action Effect"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Deal damage to targets based on skill's damage formula and apply any buffs or debuffs "]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["based on skill's effects"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Play animation on targets based on skill's settings"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Wait for 6 frames"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Animation_ActionAnimation",
+          "ANIM: Action Animation",
+          {
+            "Targets:arraystr": "[\"all targets\"]",
+            "Mirror:eval": "false",
+            "WaitForAnimation:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"all targets\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Mirror Animation = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Animation? = false"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Mechanics_ActionEffect",
+          "MECH: Action Effect",
+          {
+            "Targets:arraystr": "[\"all targets\"]"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"all targets\"]"]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [6]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Fall"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- User moves backwards 35 px and down 100 px"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- User freezes in evade motion"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Movement_MoveBy",
+          "MOVE: Move Distance",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "DistanceAdjust:str": "horz",
+            "DistanceX:eval": "-35",
+            "DistanceY:eval": "0",
+            "Duration:eval": "12",
+            "FaceDirection:eval": "false",
+            "EasingType:str": "InSine",
+            "MotionType:str": "spell",
+            "WaitForMovement:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Distance Adjustment = horz"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Distance: X = -35"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Distance: Y = 0"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 12"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Face Destination? = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Movement Easing = InSine"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Movement Motion = spell"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement? = false"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Movement_Float",
+          "MOVE: Float",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "Height:eval": "0",
+            "Duration:eval": "12",
+            "EasingType:str": "InSine",
+            "WaitForFloat:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Desired Height = 0"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 12"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Float Easing = InSine"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Float? = false"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Motion_FreezeMotionFrame",
+          "MOTION: Freeze Motion Frame",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "MotionType:str": "evade",
+            "Frame:num": "2",
+            "ShowWeapon:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Motion Type = evade"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Frame Index = 2"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Show Weapon? = false"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Motion_MotionType",
+          "MOTION: Motion Type",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "MotionType:str": "walk",
+            "ShowWeapon:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Motion Type = walk"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Show Weapon? = true"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Turns off immortal, clears battle log, and moves everyone back to home space"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Set_FinishAction",
+          "ACSET: Finish Action",
+          {
+            "ApplyImmortal:eval": "true",
+            "WaitForNewLine:eval": "true",
+            "WaitForEffect:eval": "true",
+            "ClearBattleLog:eval": "true",
+            "ActionEnd:eval": "true",
+            "WaitForMovement:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Immortal: Off = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For New Line = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Effects = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Clear Battle Log = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Home Reset = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement = true"]
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "[Disparo Certeiro]",
     "switchId": 1,
     "trigger": 0
   },
@@ -5539,12 +10146,483 @@
     "id": 79,
     "list": [
       {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["====================================Notes=========================================="]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["Requires Visustella's Action Sequence Projectiles plugin"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["https://visustellamz.itch.io/action-sequence-projectiles"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [""]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["For best results, try other animations:"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["e.g. https://manugamingcreations.itch.io/rpg-maker-mz-fireball-projectile"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["====================================DESCRIPTION=========================================="]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Setup: Standard attack setup"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Cast: User performs Cast motion"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Fire Projectile: Animation travels from user to target"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Action Effect (Flash): Apply damage, (de)buffs and play skill animation play on target"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Finish: Standard attack finish"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["========================================================================================="]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Setup"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Displays attack name"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Makes targets immortal so they don't die in the middle of multiple hit attacks"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- No battle step or cast animation"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Set_SetupAction",
+          "ACSET: Setup Action Set",
+          {
+            "DisplayAction:eval": "true",
+            "ApplyImmortal:eval": "true",
+            "ActionStart:eval": "true",
+            "WaitForMovement:eval": "false",
+            "CastAnimation:eval": "false",
+            "WaitForAnimation:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Display Action = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Immortal: On = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Battle Step = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Cast Animation = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Animation = false"]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [5]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Cast"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- User performs Spell motion"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Wait until Cast is complete minus 1 frame"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Motion_FreezeMotionFrame",
+          "MOTION: Freeze Motion Frame",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "MotionType:str": "wait",
+            "Frame:num": "2",
+            "ShowWeapon:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Motion Type = wait"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Frame Index = 2"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Show Weapon? = false"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Impact_ShockwaveEachTargets",
+          "IMPACT: Shockwave from Each Target(s)",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "TargetLocation:str": "middle head",
+            "OffsetX:eval": "0",
+            "OffsetY:eval": "0",
+            "Amp:eval": "30",
+            "Wave:eval": "160",
+            "Duration:eval": "60"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Target Location = middle head"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Offset X = 0"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Offset Y = 0"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Amplitude = 30"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wavelength = 160"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 60"]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [60]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Fire Projectile"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Animation 107 travels from user to target"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Wait 18 frames"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Motion_MotionType",
+          "MOTION: Motion Type",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "MotionType:str": "swing",
+            "ShowWeapon:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Motion Type = swing"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Show Weapon? = true"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Projectile_Picture",
+          "PROJECTILE: Picture",
+          {
+            "Coordinates": "",
+            "Start:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"user\\\"]\",\"TargetCenter:eval\":\"false\",\"TargetLocation:str\":\"front center\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"+0\",\"OffsetY:eval\":\"+0\"}",
+            "Goal:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"all targets\\\"]\",\"TargetCenter:eval\":\"false\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"+0\",\"OffsetY:eval\":\"+0\"}",
+            "Settings": "",
+            "Picture:str": "stone",
+            "Duration:eval": "5",
+            "WaitForProjectile:eval": "true",
+            "Extra:struct": "{\"AutoAngle:eval\":\"false\",\"AngleOffset:eval\":\"0\",\"Arc:eval\":\"0\",\"BlendMode:num\":\"0\",\"EasingType:str\":\"Linear\",\"Hue:eval\":\"0\",\"Scale:eval\":\"1.0\",\"Spin:eval\":\"+590\",\"Emulate\":\"\",\"EmulateActionEffect:eval\":\"false\",\"EmulateItemEffect:eval\":\"0\",\"EmulateSkillEffect:eval\":\"0\",\"OnceParallel:num\":\"\"}"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Coordinates = "]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Start Location = {\"Type:str\":\"target\",\"Targets:arraystr\":\"[…"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Goal Location = {\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\…"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Settings = "]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Picture Filename = stone"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 5"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Projectile? = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Extra Settings = {\"AutoAngle:eval\":\"false\",\"AngleOffset:eva…"]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Action Effect"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Deal damage to targets based on skill's damage formula and apply any buffs or debuffs "]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["based on skill's effects"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Play animation on targets based on skill's settings"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Mechanics_ActionEffect",
+          "MECH: Action Effect",
+          {
+            "Targets:arraystr": "[\"all targets\"]"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"all targets\"]"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Animation_ActionAnimation",
+          "ANIM: Action Animation",
+          {
+            "Targets:arraystr": "[\"all targets\"]",
+            "Mirror:eval": "false",
+            "WaitForAnimation:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"all targets\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Mirror Animation = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Animation? = true"]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Finish"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Turns off immortal, clears battle log, and moves everyone back to home space"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Set_FinishAction",
+          "ACSET: Finish Action",
+          {
+            "ApplyImmortal:eval": "true",
+            "WaitForNewLine:eval": "true",
+            "WaitForEffect:eval": "true",
+            "ClearBattleLog:eval": "true",
+            "ActionEnd:eval": "true",
+            "WaitForMovement:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Immortal: Off = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For New Line = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Effects = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Clear Battle Log = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Home Reset = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement = true"]
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "[Tiro de Ace]",
     "switchId": 1,
     "trigger": 0
   },
@@ -26087,6 +31165,65 @@
         "code": 657,
         "indent": 0,
         "parameters": ["Show Weapon? = false"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Projectile_Picture",
+          "PROJECTILE: Picture",
+          {
+            "Coordinates": "",
+            "Start:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"user\\\"]\",\"TargetCenter:eval\":\"false\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"+0\",\"OffsetY:eval\":\"+0\"}",
+            "Goal:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"all targets\\\"]\",\"TargetCenter:eval\":\"false\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"+0\",\"OffsetY:eval\":\"+0\"}",
+            "Settings": "",
+            "Picture:str": "stone",
+            "Duration:eval": "20",
+            "WaitForProjectile:eval": "true",
+            "Extra:struct": "{\"AutoAngle:eval\":\"true\",\"AngleOffset:eval\":\"+0\",\"Arc:eval\":\"0\",\"BlendMode:num\":\"0\",\"EasingType:str\":\"Linear\",\"Hue:eval\":\"0\",\"Scale:eval\":\"1.0\",\"Spin:eval\":\"+0.0\"}"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Coordinates = "]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Start Location = {\"Type:str\":\"target\",\"Targets:arraystr\":\"[…"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Goal Location = {\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\…"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Settings = "]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Picture Filename = stone"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 20"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Projectile? = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Extra Settings = {\"AutoAngle:eval\":\"true\",\"AngleOffset:eval…"]
       },
       {
         "code": 357,
