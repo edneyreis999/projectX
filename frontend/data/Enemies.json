@@ -944,6 +944,13 @@
         "conditionType": 0,
         "conditionParam1": 0,
         "conditionParam2": 0
+      },
+      {
+        "skillId": 42,
+        "rating": 3,
+        "conditionType": 0,
+        "conditionParam1": 0,
+        "conditionParam2": 0
       }
     ],
     "traits": [
