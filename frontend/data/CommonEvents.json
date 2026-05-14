@@ -38283,13 +38283,13 @@
           "PROJECTILE: Picture",
           {
             "Coordinates": "",
-            "Start:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"user\\\"]\",\"TargetCenter:eval\":\"false\",\"TargetLocation:str\":\"front head\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"-20\",\"OffsetY:eval\":\"-200\"}",
+            "Start:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"user\\\"]\",\"TargetCenter:eval\":\"false\",\"TargetLocation:str\":\"front head\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"100\",\"OffsetY:eval\":\"-200\"}",
             "Goal:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"all targets\\\"]\",\"TargetCenter:eval\":\"false\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"+0\",\"OffsetY:eval\":\"+0\"}",
             "Settings": "",
-            "Picture:str": "stone",
+            "Picture:str": "espinho",
             "Duration:eval": "45",
             "WaitForProjectile:eval": "true",
-            "Extra:struct": "{\"AutoAngle:eval\":\"true\",\"AngleOffset:eval\":\"0\",\"Arc:eval\":\"100\",\"BlendMode:num\":\"0\",\"EasingType:str\":\"Linear\",\"Hue:eval\":\"0\",\"Scale:eval\":\"1.0\",\"Spin:eval\":\"0\",\"Emulate\":\"\",\"EmulateActionEffect:eval\":\"false\",\"EmulateItemEffect:eval\":\"0\",\"EmulateSkillEffect:eval\":\"0\",\"OnceParallel:num\":\"0\"}"
+            "Extra:struct": "{\"AutoAngle:eval\":\"true\",\"AngleOffset:eval\":\"-55\",\"Arc:eval\":\"100\",\"BlendMode:num\":\"0\",\"EasingType:str\":\"Linear\",\"Hue:eval\":\"0\",\"Scale:eval\":\"1.5\",\"Spin:eval\":\"0\",\"Emulate\":\"\",\"EmulateActionEffect:eval\":\"false\",\"EmulateItemEffect:eval\":\"0\",\"EmulateSkillEffect:eval\":\"0\",\"OnceParallel:num\":\"0\"}"
           }
         ]
       },
@@ -38316,7 +38316,7 @@
       {
         "code": 657,
         "indent": 0,
-        "parameters": ["Picture Filename = stone"]
+        "parameters": ["Picture Filename = espinho"]
       },
       {
         "code": 657,
@@ -38760,10 +38760,10 @@
             "Start:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"user\\\"]\",\"TargetCenter:eval\":\"false\",\"TargetLocation:str\":\"front head\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"-20\",\"OffsetY:eval\":\"-200\"}",
             "Goal:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"all targets\\\"]\",\"TargetCenter:eval\":\"false\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"+0\",\"OffsetY:eval\":\"+0\"}",
             "Settings": "",
-            "Picture:str": "stone",
+            "Picture:str": "espinho",
             "Duration:eval": "10",
             "WaitForProjectile:eval": "true",
-            "Extra:struct": "{\"AutoAngle:eval\":\"true\",\"AngleOffset:eval\":\"0\",\"Arc:eval\":\"0\",\"BlendMode:num\":\"0\",\"EasingType:str\":\"Linear\",\"Hue:eval\":\"0\",\"Scale:eval\":\"1.0\",\"Spin:eval\":\"0\",\"Emulate\":\"\",\"EmulateActionEffect:eval\":\"false\",\"EmulateItemEffect:eval\":\"0\",\"EmulateSkillEffect:eval\":\"0\",\"OnceParallel:num\":\"0\"}"
+            "Extra:struct": "{\"AutoAngle:eval\":\"true\",\"AngleOffset:eval\":\"-55\",\"Arc:eval\":\"0\",\"BlendMode:num\":\"0\",\"EasingType:str\":\"Linear\",\"Hue:eval\":\"0\",\"Scale:eval\":\"1.5\",\"Spin:eval\":\"0\",\"Emulate\":\"\",\"EmulateActionEffect:eval\":\"false\",\"EmulateItemEffect:eval\":\"0\",\"EmulateSkillEffect:eval\":\"0\",\"OnceParallel:num\":\"0\"}"
           }
         ]
       },
@@ -38790,7 +38790,7 @@
       {
         "code": 657,
         "indent": 0,
-        "parameters": ["Picture Filename = stone"]
+        "parameters": ["Picture Filename = espinho"]
       },
       {
         "code": 657,
