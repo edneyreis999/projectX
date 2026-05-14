@@ -663,6 +663,11 @@
               "parameters": [110, 110, 1, 0, 1]
             },
             {
+              "code": 355,
+              "indent": 1,
+              "parameters": ["$gameParty.members().forEach(m => m.recoverAll())"]
+            },
+            {
               "code": 214,
               "indent": 1,
               "parameters": []
@@ -768,6 +773,11 @@
               "parameters": [110, 110, 1, 0, 1]
             },
             {
+              "code": 355,
+              "indent": 1,
+              "parameters": ["$gameParty.members().forEach(m => m.recoverAll())"]
+            },
+            {
               "code": 214,
               "indent": 1,
               "parameters": []
@@ -871,6 +881,11 @@
               "code": 122,
               "indent": 1,
               "parameters": [110, 110, 1, 0, 1]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": ["$gameParty.members().forEach(m => m.recoverAll())"]
             },
             {
               "code": 214,
