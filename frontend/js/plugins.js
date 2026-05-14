@@ -971,5 +971,11 @@ var $plugins =
         "parameters": {
             "Debug Mode": "true"
         }
+    },
+    {
+        "name": "Coreto_HideMpGauge",
+        "status": true,
+        "description": "Remove completamente a barra de MP do jogo",
+        "parameters": {}
     }
 ];
