@@ -38066,6 +38066,1422 @@
         "parameters": []
       }
     ],
+    "name": "--- Pestesporo ---",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 151,
+    "list": [
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["====================================Notes=========================================="]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["Requires Visustella's Action Sequence Projectiles plugin"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["https://visustellamz.itch.io/action-sequence-projectiles"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [""]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["For best results, try other animations:"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["e.g. https://manugamingcreations.itch.io/rpg-maker-mz-fireball-projectile"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["====================================DESCRIPTION=========================================="]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Setup: Standard attack setup"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Cast: User performs Cast motion"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Fire Projectile: Animation travels from user to target"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Action Effect (Flash): Apply damage, (de)buffs and play skill animation play on target"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Finish: Standard attack finish"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["========================================================================================="]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Setup"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Displays attack name"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Makes targets immortal so they don't die in the middle of multiple hit attacks"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- No battle step or cast animation"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Set_SetupAction",
+          "ACSET: Setup Action Set",
+          {
+            "DisplayAction:eval": "true",
+            "ApplyImmortal:eval": "true",
+            "ActionStart:eval": "false",
+            "WaitForMovement:eval": "false",
+            "CastAnimation:eval": "false",
+            "WaitForAnimation:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Display Action = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Immortal: On = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Battle Step = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Cast Animation = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Animation = false"]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [5]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Cast"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- User performs Spell motion"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Wait until Cast is complete minus 1 frame"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Motion_MotionType",
+          "MOTION: Motion Type",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "MotionType:str": "attack",
+            "ShowWeapon:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Motion Type = attack"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Show Weapon? = false"]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [11]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Fire Projectile"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Animation 107 travels from user to target"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Wait 18 frames"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Projectile_Picture",
+          "PROJECTILE: Picture",
+          {
+            "Coordinates": "",
+            "Start:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"user\\\"]\",\"TargetCenter:eval\":\"false\",\"TargetLocation:str\":\"front head\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"100\",\"OffsetY:eval\":\"-200\"}",
+            "Goal:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"all targets\\\"]\",\"TargetCenter:eval\":\"false\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"+0\",\"OffsetY:eval\":\"+0\"}",
+            "Settings": "",
+            "Picture:str": "espinho",
+            "Duration:eval": "45",
+            "WaitForProjectile:eval": "true",
+            "Extra:struct": "{\"AutoAngle:eval\":\"true\",\"AngleOffset:eval\":\"-55\",\"Arc:eval\":\"100\",\"BlendMode:num\":\"0\",\"EasingType:str\":\"Linear\",\"Hue:eval\":\"0\",\"Scale:eval\":\"1.5\",\"Spin:eval\":\"0\",\"Emulate\":\"\",\"EmulateActionEffect:eval\":\"false\",\"EmulateItemEffect:eval\":\"0\",\"EmulateSkillEffect:eval\":\"0\",\"OnceParallel:num\":\"0\"}"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Coordinates = "]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Start Location = {\"Type:str\":\"target\",\"Targets:arraystr\":\"[…"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Goal Location = {\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\…"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Settings = "]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Picture Filename = espinho"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 45"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Projectile? = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Extra Settings = {\"AutoAngle:eval\":\"true\",\"AngleOffset:eval…"]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Action Effect"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Deal damage to targets based on skill's damage formula and apply any buffs or debuffs "]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["based on skill's effects"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Play animation on targets based on skill's settings"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Mechanics_ActionEffect",
+          "MECH: Action Effect",
+          {
+            "Targets:arraystr": "[\"all targets\"]"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"all targets\"]"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Animation_ActionAnimation",
+          "ANIM: Action Animation",
+          {
+            "Targets:arraystr": "[\"all targets\"]",
+            "Mirror:eval": "false",
+            "WaitForAnimation:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"all targets\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Mirror Animation = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Animation? = true"]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Finish"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Turns off immortal, clears battle log, and moves everyone back to home space"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Set_FinishAction",
+          "ACSET: Finish Action",
+          {
+            "ApplyImmortal:eval": "true",
+            "WaitForNewLine:eval": "true",
+            "WaitForEffect:eval": "true",
+            "ClearBattleLog:eval": "true",
+            "ActionEnd:eval": "true",
+            "WaitForMovement:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Immortal: Off = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For New Line = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Effects = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Clear Battle Log = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Home Reset = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement = true"]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "[Espinho]",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 152,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 153,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 154,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 155,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 156,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 157,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "--- Cristaleao ---",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 158,
+    "list": [
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["====================================Notes=========================================="]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["Requires Visustella's Action Sequence Projectiles plugin"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["https://visustellamz.itch.io/action-sequence-projectiles"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [""]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["For best results, try other animations:"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["e.g. https://manugamingcreations.itch.io/rpg-maker-mz-fireball-projectile"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["====================================DESCRIPTION=========================================="]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Setup: Standard attack setup"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Cast: User performs Cast motion"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Fire Projectile: Animation travels from user to target"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Action Effect (Flash): Apply damage, (de)buffs and play skill animation play on target"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Finish: Standard attack finish"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["========================================================================================="]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Setup"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Displays attack name"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Makes targets immortal so they don't die in the middle of multiple hit attacks"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- No battle step or cast animation"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Set_SetupAction",
+          "ACSET: Setup Action Set",
+          {
+            "DisplayAction:eval": "true",
+            "ApplyImmortal:eval": "true",
+            "ActionStart:eval": "false",
+            "WaitForMovement:eval": "false",
+            "CastAnimation:eval": "false",
+            "WaitForAnimation:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Display Action = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Immortal: On = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Battle Step = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Cast Animation = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Animation = false"]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [5]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Cast"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- User performs Spell motion"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Wait until Cast is complete minus 1 frame"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Motion_MotionType",
+          "MOTION: Motion Type",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "MotionType:str": "attack",
+            "ShowWeapon:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Motion Type = attack"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Show Weapon? = false"]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [11]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Fire Projectile"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Animation 107 travels from user to target"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Wait 18 frames"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Projectile_Picture",
+          "PROJECTILE: Picture",
+          {
+            "Coordinates": "",
+            "Start:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"user\\\"]\",\"TargetCenter:eval\":\"false\",\"TargetLocation:str\":\"front head\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"-20\",\"OffsetY:eval\":\"-200\"}",
+            "Goal:struct": "{\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\\"all targets\\\"]\",\"TargetCenter:eval\":\"false\",\"PointX:eval\":\"Graphics.width / 2\",\"PointY:eval\":\"Graphics.height / 2\",\"OffsetX:eval\":\"+0\",\"OffsetY:eval\":\"+0\"}",
+            "Settings": "",
+            "Picture:str": "espinho",
+            "Duration:eval": "10",
+            "WaitForProjectile:eval": "true",
+            "Extra:struct": "{\"AutoAngle:eval\":\"true\",\"AngleOffset:eval\":\"-55\",\"Arc:eval\":\"0\",\"BlendMode:num\":\"0\",\"EasingType:str\":\"Linear\",\"Hue:eval\":\"0\",\"Scale:eval\":\"1.5\",\"Spin:eval\":\"0\",\"Emulate\":\"\",\"EmulateActionEffect:eval\":\"false\",\"EmulateItemEffect:eval\":\"0\",\"EmulateSkillEffect:eval\":\"0\",\"OnceParallel:num\":\"0\"}"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Coordinates = "]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Start Location = {\"Type:str\":\"target\",\"Targets:arraystr\":\"[…"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Goal Location = {\"Type:str\":\"target\",\"Targets:arraystr\":\"[\\…"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Settings = "]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Picture Filename = espinho"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 10"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Projectile? = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Extra Settings = {\"AutoAngle:eval\":\"true\",\"AngleOffset:eval…"]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Action Effect"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Deal damage to targets based on skill's damage formula and apply any buffs or debuffs "]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["based on skill's effects"]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": ["- Play animation on targets based on skill's settings"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Mechanics_ActionEffect",
+          "MECH: Action Effect",
+          {
+            "Targets:arraystr": "[\"all targets\"]"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"all targets\"]"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Animation_ActionAnimation",
+          "ANIM: Action Animation",
+          {
+            "Targets:arraystr": "[\"all targets\"]",
+            "Mirror:eval": "false",
+            "WaitForAnimation:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"all targets\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Mirror Animation = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Animation? = true"]
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": ["Finish"]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": ["- Turns off immortal, clears battle log, and moves everyone back to home space"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Set_FinishAction",
+          "ACSET: Finish Action",
+          {
+            "ApplyImmortal:eval": "true",
+            "WaitForNewLine:eval": "true",
+            "WaitForEffect:eval": "true",
+            "ClearBattleLog:eval": "true",
+            "ActionEnd:eval": "true",
+            "WaitForMovement:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Immortal: Off = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For New Line = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Effects = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Clear Battle Log = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Home Reset = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement = true"]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "[Espinho Veloz]",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 159,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 160,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 161,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 162,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 163,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 164,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 165,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 166,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 167,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 168,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 169,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 170,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 171,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 172,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 173,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 174,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 175,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 176,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 177,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 178,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 179,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 180,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 181,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 182,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 183,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 184,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 185,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 186,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 187,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 188,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 189,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 190,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 191,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 192,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 193,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 194,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 195,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 196,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 197,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 198,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 199,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 200,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
     "name": "",
     "switchId": 1,
     "trigger": 0
