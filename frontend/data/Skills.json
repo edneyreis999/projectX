@@ -2452,7 +2452,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Contra-ataque",
-    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Gain TP: +5>\n<Auto Trigger: Physical Target>\n<Auto Trigger: Magical Target>\n<Hide in Battle>",
+    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Gain TP: +5>\n<Auto Trigger: Physical Target>\n<Auto Trigger: Magical Target>\n<Hide in Battle>\n\n<JS Targets>\nconsole.log(user)\nconsole.log(`---------`)\nconsole.log(user._lastAttacker)\nif (user._lastAttacker && user._lastAttacker.isAlive()) {\n  targets = [user._lastAttacker];\n} else {\n  targets = user.opponentsUnit().aliveMembers();\n}\n</JS Targets>",
     "occasion": 0,
     "repeats": 1,
     "requiredWtypeId1": 0,

@@ -897,5 +897,11 @@ var $plugins =
         "parameters": {
             "Debug Mode": "true"
         }
+    },
+    {
+        "name": "Coreto_CounterTarget",
+        "status": true,
+        "description": "Armazena o ultimo atacante de cada battler para uso em counter-ataques",
+        "parameters": {}
     }
 ];
