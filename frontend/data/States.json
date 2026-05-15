@@ -2545,7 +2545,13 @@
     "id": 89,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
-    "traits": [],
+    "traits": [
+      {
+        "code": 43,
+        "dataId": 75,
+        "value": 1
+      }
+    ],
     "iconIndex": 78,
     "maxTurns": 1,
     "message1": "",
@@ -2556,7 +2562,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Postura Fluida",
-    "note": "<Counter Rate: 100%>\n\n<Counter Skill: 75>",
+    "note": "",
     "overlay": 0,
     "priority": 50,
     "removeAtBattleEnd": true,
