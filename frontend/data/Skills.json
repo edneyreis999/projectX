@@ -2451,7 +2451,7 @@
     "message2": "",
     "messageType": 1,
     "mpCost": 0,
-    "name": "Counter da Fluida",
+    "name": "Contra-ataque",
     "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Gain TP: +5>\n<Auto Trigger: Physical Target>\n<Auto Trigger: Magical Target>\n<Hide in Battle>",
     "occasion": 0,
     "repeats": 1,
