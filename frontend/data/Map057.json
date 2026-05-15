@@ -387,7 +387,7 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "Kravens/$Borin",
+            "characterName": "Principal/$Tordan",
             "direction": 4,
             "pattern": 1,
             "characterIndex": 0
@@ -396,7 +396,7 @@
             {
               "code": 101,
               "indent": 0,
-              "parameters": ["", 0, 0, 2, ""]
+              "parameters": ["Portraits menores/Principal2", 3, 0, 2, "Minerador"]
             },
             {
               "code": 401,
@@ -467,7 +467,7 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "Kravens/$Borin",
+            "characterName": "Principal/$Tordan",
             "direction": 4,
             "pattern": 1,
             "characterIndex": 0
@@ -476,12 +476,17 @@
             {
               "code": 101,
               "indent": 0,
-              "parameters": ["", 0, 0, 2, ""]
+              "parameters": ["Portraits menores/Principal2", 3, 0, 2, "Minerador"]
             },
             {
               "code": 401,
               "indent": 0,
-              "parameters": ["Preciso que você acabe com todos os monstros, ok?"]
+              "parameters": ["Preciso que você acabe com todos"]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": ["os monstros, ok?"]
             },
             {
               "code": 0,
@@ -532,7 +537,7 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "Kravens/$Borin",
+            "characterName": "Principal/$Tordan",
             "direction": 4,
             "pattern": 1,
             "characterIndex": 0
@@ -541,7 +546,7 @@
             {
               "code": 101,
               "indent": 0,
-              "parameters": ["", 0, 0, 2, ""]
+              "parameters": ["Portraits menores/Principal2", 3, 0, 2, "Minerador"]
             },
             {
               "code": 401,
@@ -663,11 +668,6 @@
               "parameters": [110, 110, 1, 0, 1]
             },
             {
-              "code": 355,
-              "indent": 1,
-              "parameters": ["$gameParty.members().forEach(m => m.recoverAll())"]
-            },
-            {
               "code": 214,
               "indent": 1,
               "parameters": []
@@ -688,6 +688,31 @@
               "parameters": []
             },
             {
+              "code": 101,
+              "indent": 1,
+              "parameters": ["Portraits menores/Principal2", 3, 0, 2, "Minerador"]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": ["Bom, não foi dessa vez..."]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": ["Portraits menores/Principal2", 3, 0, 2, "Minerador"]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": ["Mas você sabe o que fazer agora, não é?"]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": ["Tente mais uma vez."]
+            },
+            {
               "code": 0,
               "indent": 1,
               "parameters": []
@@ -696,6 +721,11 @@
               "code": 604,
               "indent": 0,
               "parameters": []
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": ["$gameParty.members().forEach(m => m.recoverAll())"]
             },
             {
               "code": 0,
@@ -773,11 +803,6 @@
               "parameters": [110, 110, 1, 0, 1]
             },
             {
-              "code": 355,
-              "indent": 1,
-              "parameters": ["$gameParty.members().forEach(m => m.recoverAll())"]
-            },
-            {
               "code": 214,
               "indent": 1,
               "parameters": []
@@ -798,6 +823,31 @@
               "parameters": []
             },
             {
+              "code": 101,
+              "indent": 1,
+              "parameters": ["Portraits menores/Principal2", 3, 0, 2, "Minerador"]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": ["Bom, não foi dessa vez..."]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": ["Portraits menores/Principal2", 3, 0, 2, "Minerador"]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": ["Mas você sabe o que fazer agora, não é?"]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": ["Tente mais uma vez."]
+            },
+            {
               "code": 0,
               "indent": 1,
               "parameters": []
@@ -806,6 +856,11 @@
               "code": 604,
               "indent": 0,
               "parameters": []
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": ["$gameParty.members().forEach(m => m.recoverAll())"]
             },
             {
               "code": 0,
@@ -883,11 +938,6 @@
               "parameters": [110, 110, 1, 0, 1]
             },
             {
-              "code": 355,
-              "indent": 1,
-              "parameters": ["$gameParty.members().forEach(m => m.recoverAll())"]
-            },
-            {
               "code": 214,
               "indent": 1,
               "parameters": []
@@ -908,6 +958,31 @@
               "parameters": []
             },
             {
+              "code": 101,
+              "indent": 1,
+              "parameters": ["Portraits menores/Principal2", 3, 0, 2, "Minerador"]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": ["Bom, não foi dessa vez..."]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": ["Portraits menores/Principal2", 3, 0, 2, "Minerador"]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": ["Mas você sabe o que fazer agora, não é?"]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": ["Tente mais uma vez."]
+            },
+            {
               "code": 0,
               "indent": 1,
               "parameters": []
@@ -916,6 +991,11 @@
               "code": 604,
               "indent": 0,
               "parameters": []
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": ["$gameParty.members().forEach(m => m.recoverAll())"]
             },
             {
               "code": 0,
@@ -947,235 +1027,7 @@
       "x": 32,
       "y": 32
     },
-    {
-      "id": 5,
-      "name": "Tesouro (Potion (Exp))",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": true,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "!Chest",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Chest1",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                0,
-                {
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true,
-                  "list": [
-                    {
-                      "code": 36
-                    },
-                    {
-                      "code": 17
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [3]
-                    },
-                    {
-                      "code": 18
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [3]
-                    },
-                    {
-                      "code": 0
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 36
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 17
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [3]
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 18
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [3]
-                }
-              ]
-            },
-            {
-              "code": 123,
-              "indent": 0,
-              "parameters": ["A", 0]
-            },
-            {
-              "code": 126,
-              "indent": 0,
-              "parameters": [71, 0, 0, 20]
-            },
-            {
-              "code": 126,
-              "indent": 0,
-              "parameters": [101, 0, 0, 3]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": ["", 0, 0, 2, ""]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": ["Potion 76 (Exp) foi encontrado!"]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": true,
-          "image": {
-            "tileId": 0,
-            "characterName": "!Chest",
-            "direction": 6,
-            "pattern": 0,
-            "characterIndex": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 16,
-      "y": 9
-    },
+    null,
     null,
     null,
     null,
