@@ -31,12 +31,13 @@ A ideia central é:  *“Um indivíduo pode enriquecer; uma linhagem leva sécul
 ---
 ## Estrutura de Castas (Hierarquia)
 
-| Casta     | Nome                          | Função Primária              | Fonte de Poder           |
-| :-------- | :---------------------------- | :--------------------------- | :----------------------- |
-| Alta      | Grandes Casas                 | Governança e Memória         | Linhagem e História      |
-| Média     | Casas Mercantis e Mineradoras | Economia e Engenharia        | Capital e Tecnologia     |
-| Base      | Mãos de Pedra                 | Sustento e Defesa            | Trabalho e Massa Crítica |
-| Excluídos | Sem Voz                       | Marginalizados e Dissidentes | —                        |
+
+| Casta     | Nome                                         | Função Primária              | Fonte de Poder           |
+| :-------- | :------------------------------------------- | :--------------------------- | :----------------------- |
+| Alta      | Grandes Casas (nobreza)                      | Governança e Memória         | Linhagem e História      |
+| Média     | Casas Mercantis e Mineradoras                | Economia e Engenharia        | Capital e Tecnologia     |
+| Base      | Mãos de Pedra (trabalhadores e comerciantes) | Sustento e Defesa            | Trabalho e Massa Crítica |
+| Excluídos | Sem Voz (desprivilegiados)                   | Marginalizados e Dissidentes | —                        |
 
 ---
 ## As Camadas Sociais

@@ -9,7 +9,7 @@ tags:
 
 ## O Conflito Central: O Retorno da Rebellio
 
-O problema que move o mundo é **o desequilíbrio entre poder, identidade e ordem natural.** Não é um evento isolado, mas uma consequência sistêmica:
+O problema que move o mundo é **o desequilíbrio entre poder, identidade e ordem natural. Não é um evento isolado, mas uma consequência sistêmica:
 
 1. **A Rebelião Ancestral:** Os Antigos (Ignotos) tornaram-se autossuficientes através da magia e alquimia, menosprezando a bênção de Vitasolis. Sua queda não foi um erro de julgamento divino, mas a resposta a uma insurreição consciente.
     
@@ -25,7 +25,7 @@ O problema que move o mundo é **o desequilíbrio entre poder, identidade e orde
 
 ### Macro (Mundo): A Corrupção de Ekios
 
-- **O que acontece:** Se nada for feito (ou é inevitável?), os Ignotos (a Geada Negra) não apenas destruirão Gildrat, mas consumirão a vitalidade de Ekios, transformando a superfície em um reflexo do submundo tóxico e sem luz.
+- **O que acontece:** Se nada for feito ==(ou é inevitável?)==, os Ignotos (a Geada Negra) não apenas destruirão Gildrat, mas consumirão a vitalidade de Ekios, transformando a superfície em um reflexo do submundo tóxico e sem luz.
     
 - **Impacto Sistêmico:** A substituição da mineração pelo vazio absoluto da "Geada Negra".
 
