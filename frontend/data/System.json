@@ -116,7 +116,7 @@
     "pitch": 100,
     "volume": 90
   },
-  "editMapId": 34,
+  "editMapId": 57,
   "elements": ["", "Físico", "Fogo", "Gelo", "Trovão", "Água", "Terra", "Vento", "Luz", "Trevas"],
   "equipTypes": ["", "Arma", "Escudo", "Cabeça", "Corpo", "Acessório"],
   "gameTitle": "Daratrine - A Origem",
@@ -643,9 +643,9 @@
     "",
     "",
     "",
-    ""
+    "Inimigos derrotados(release)"
   ],
-  "versionId": 31495488,
+  "versionId": 12401309,
   "victoryMe": {
     "name": "Victory1",
     "pan": 0,
