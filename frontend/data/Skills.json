@@ -657,7 +657,7 @@
         "value2": 0
       }
     ],
-    "hitType": 0,
+    "hitType": 1,
     "iconIndex": 2,
     "message1": "O Lobo Alpha solta um rugido poderoso!",
     "message2": "",
@@ -695,7 +695,7 @@
         "value2": 0
       }
     ],
-    "hitType": 0,
+    "hitType": 1,
     "iconIndex": 3,
     "message1": "O Lobo Alpha late em alerta!",
     "message2": "",
@@ -733,7 +733,7 @@
         "value2": 0
       }
     ],
-    "hitType": 0,
+    "hitType": 1,
     "iconIndex": 18,
     "message1": "O Lobo Alpha uiva, comandando a matilha!",
     "message2": "",
@@ -1181,7 +1181,7 @@
         "value2": 0
       }
     ],
-    "hitType": 0,
+    "hitType": 2,
     "iconIndex": 8,
     "message1": "",
     "message2": "",
@@ -1233,7 +1233,7 @@
     "requiredWtypeId2": 0,
     "scope": 8,
     "speed": 0,
-    "stypeId": 1,
+    "stypeId": 2,
     "successRate": 100,
     "tpCost": 0,
     "tpGain": 0
@@ -1257,7 +1257,7 @@
         "value2": 0
       }
     ],
-    "hitType": 0,
+    "hitType": 2,
     "iconIndex": 9,
     "message1": "",
     "message2": "",
@@ -1271,7 +1271,7 @@
     "requiredWtypeId2": 0,
     "scope": 14,
     "speed": 0,
-    "stypeId": 1,
+    "stypeId": 2,
     "successRate": 100,
     "tpCost": 0,
     "tpGain": 0
@@ -1295,7 +1295,7 @@
         "value2": 0
       }
     ],
-    "hitType": 0,
+    "hitType": 2,
     "iconIndex": 11,
     "message1": "",
     "message2": "",
@@ -1333,7 +1333,7 @@
         "value2": 0
       }
     ],
-    "hitType": 0,
+    "hitType": 2,
     "iconIndex": 8,
     "message1": "\"%1 emite uma pulsação maligna!\"",
     "message2": "",
@@ -1377,7 +1377,7 @@
         "value2": 0
       }
     ],
-    "hitType": 0,
+    "hitType": 2,
     "iconIndex": 10,
     "message1": "\"%1 emite uma pulsação maligna!\"",
     "message2": "",
