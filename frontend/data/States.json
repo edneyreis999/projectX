@@ -2507,7 +2507,7 @@
   },
   {
     "id": 88,
-    "autoRemovalTiming": 0,
+    "autoRemovalTiming": 1,
     "chanceByDamage": 100,
     "traits": [
       {
@@ -2522,13 +2522,13 @@
       }
     ],
     "iconIndex": 67,
-    "maxTurns": 1,
+    "maxTurns": 3,
     "message1": "",
     "message2": "",
     "message3": "",
     "message4": "",
     "messageType": 1,
-    "minTurns": 1,
+    "minTurns": 3,
     "motion": 0,
     "name": "Postura Agressiva",
     "note": "<Always Hit>\n\n<JS HP Slip Damage>\ndamage = Math.floor(target.mhp * 0.03);\n</JS HP Slip Damage>",
@@ -2543,20 +2543,26 @@
   },
   {
     "id": 89,
-    "autoRemovalTiming": 0,
+    "autoRemovalTiming": 2,
     "chanceByDamage": 100,
-    "traits": [],
+    "traits": [
+      {
+        "code": 43,
+        "dataId": 75,
+        "value": 1
+      }
+    ],
     "iconIndex": 78,
-    "maxTurns": 1,
+    "maxTurns": 3,
     "message1": "",
     "message2": "",
     "message3": "",
     "message4": "",
     "messageType": 1,
-    "minTurns": 1,
+    "minTurns": 3,
     "motion": 0,
     "name": "Postura Fluida",
-    "note": "<Counter Rate: 100%>\n\n<Counter Skill: 75>",
+    "note": "",
     "overlay": 0,
     "priority": 50,
     "removeAtBattleEnd": true,

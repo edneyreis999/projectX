@@ -383,25 +383,6 @@ var $plugins =
         }
     },
     {
-        "name": "VisuMZ_2_BattleSystemBTB",
-        "status": false,
-        "description": "[RPG Maker MZ] [Tier 2] [Version 1.19] [BattleSystemBTB]",
-        "parameters": {
-            "BreakHead": "----------------------------------",
-            "BattleSystemBTB": "Plugin Parameters",
-            "ATTENTION": "READ THE HELP FILE",
-            "BreakSettings": "----------------------------------",
-            "General:struct": "{\"BravePoints\":\"\",\"BravePointsFull:str\":\"Brave Points\",\"BravePointsAbbr:str\":\"BP\",\"BravePointsIcon:num\":\"73\",\"BravePointCostFmt:str\":\"\\\\FS[22]\\\\C[4]%1\\\\C[6]%2\\\\C[0]\",\"DisplayedCosts\":\"\",\"CostPosition:eval\":\"false\",\"ShowCostForAttack:eval\":\"true\",\"ShowCostForGuard:eval\":\"true\",\"ReduceShownBPCost:num\":\"0\",\"Show_0_BP_Cost:eval\":\"true\",\"Show_1_BP_Cost:eval\":\"true\"}",
-            "Mechanics:struct": "{\"ActionSpeed\":\"\",\"AllowRandomSpeed:eval\":\"false\",\"CalcActionSpeedJS:func\":\"\\\"// Declare Constants\\\\nconst agi = this.subject().agi;\\\\n\\\\n// Create Speed\\\\nlet speed = agi;\\\\nif (this.allowRandomSpeed()) {\\\\n    speed += Math.randomInt(Math.floor(5 + agi / 4));\\\\n}\\\\nif (this.item()) {\\\\n    speed += this.item().speed;\\\\n}\\\\nif (this.isAttack()) {\\\\n    speed += this.subject().attackSpeed();\\\\n}\\\\n\\\\n// Return Speed\\\\nreturn speed;\\\"\",\"ActionMax\":\"\",\"MaxActionsDefault:num\":\"4\",\"MaxActionsHardCap:num\":\"9\",\"BravePoints\":\"\",\"BravePointsLimits\":\"\",\"MaxBravePointsDefault:num\":\"3\",\"MinBravePointsDefault:num\":\"-4\",\"MaxBravePointsHardCap:num\":\"9\",\"MinBravePointsHardCap:num\":\"-9\",\"BravePointsCosts\":\"\",\"BravePointSkillCost:num\":\"1\",\"BravePointItemCost:num\":\"1\",\"BravePointPredictedCost:num\":\"1\",\"BravePointsStartBattle\":\"\",\"BravePointStartNeutral:num\":\"0\",\"BravePointStartFavor:num\":\"2\",\"BravePointsRegen\":\"\",\"BravePointRegenBase:num\":\"1\",\"BravePointsRegenAlive:eval\":\"true\",\"ActionFusions\":\"\",\"ActorActionFusions:eval\":\"true\",\"EnemyActionFusions:eval\":\"true\"}",
-            "BraveAnimation:struct": "{\"OnBrave\":\"\",\"BraveAnimationID:num\":\"12\",\"BraveMirror:eval\":\"false\",\"BraveMute:eval\":\"false\",\"CancelBrave\":\"\",\"CancelAnimationID:num\":\"62\",\"CancelMirror:eval\":\"false\",\"CancelMute:eval\":\"false\",\"EnemyBrave\":\"\",\"ShowEnemyBrave:eval\":\"true\",\"WaitFrames:num\":\"20\"}",
-            "TurnOrder:struct": "{\"General\":\"\",\"DisplayPosition:str\":\"top\",\"DisplayOffsetX:num\":\"0\",\"DisplayOffsetY:num\":\"0\",\"CenterHorz:eval\":\"true\",\"RepositionTopForHelp:eval\":\"true\",\"RepositionLogWindow:eval\":\"true\",\"OrderDirection:eval\":\"true\",\"SubjectDistance:num\":\"8\",\"ScreenBuffer:num\":\"20\",\"Reposition\":\"\",\"RepositionTopHelpX:num\":\"0\",\"RepositionTopHelpY:num\":\"96\",\"Slots\":\"\",\"MaxHorzSprites:num\":\"16\",\"MaxVertSprites:num\":\"10\",\"SpriteLength:num\":\"72\",\"SpriteThin:num\":\"36\",\"UpdateFrames:num\":\"24\",\"Border\":\"\",\"ShowMarkerBorder:eval\":\"true\",\"BorderActor\":\"\",\"ActorBorderColor:str\":\"4\",\"ActorSystemBorder:str\":\"\",\"BorderEnemy\":\"\",\"EnemyBorderColor:str\":\"2\",\"EnemySystemBorder:str\":\"\",\"BorderThickness:num\":\"2\",\"Sprite\":\"\",\"ActorSprite\":\"\",\"ActorBattlerType:str\":\"face\",\"ActorBattlerIcon:num\":\"84\",\"EnemySprite\":\"\",\"EnemyBattlerType:str\":\"enemy\",\"EnemyBattlerFaceName:str\":\"Monster\",\"EnemyBattlerFaceIndex:num\":\"1\",\"EnemyBattlerIcon:num\":\"298\",\"EnemyBattlerMatchHue:eval\":\"true\",\"Letter\":\"\",\"EnemyBattlerDrawLetter:eval\":\"true\",\"EnemyBattlerFontFace:str\":\"\",\"EnemyBattlerFontSize:num\":\"16\",\"Background\":\"\",\"ShowMarkerBg:eval\":\"true\",\"BackgroundActor\":\"\",\"ActorBgColor1:str\":\"19\",\"ActorBgColor2:str\":\"9\",\"ActorSystemBg:str\":\"\",\"BackgroundEnemy\":\"\",\"EnemyBgColor1:str\":\"19\",\"EnemyBgColor2:str\":\"18\",\"EnemySystemBg:str\":\"\"}",
-            "Window:struct": "{\"Window_ActorCommand\":\"\",\"CommandName:str\":\"Brave\",\"ShowCommand:eval\":\"true\",\"BraveShortcuts:eval\":\"true\",\"DrawActionCountersJS:func\":\"\\\"// Declare Constants\\\\nconst sprite = arguments[0];\\\\nconst parentWindow = arguments[1];\\\\nconst actor = arguments[2];\\\\n\\\\n// Set Location\\\\nsprite.x = Math.round(parentWindow.width / 2);\\\\nsprite.y = 0;\\\\nsprite.anchor.x = 0.5\\\\nsprite.anchor.y = 0.5\\\\n\\\\n// Create Text\\\\nconst textSlot = TextManager.btbActionSlot;\\\\nconst textCurrent = TextManager.btbActionCurrent;\\\\nlet text = textSlot.repeat(actor.numActions());\\\\nconst index = actor._actionInputIndex;\\\\ntext = text.substring(0, index) + textCurrent + text.substring(index + 1);\\\\n\\\\n// Create and Draw Bitmap\\\\nconst bitmap = new Bitmap(parentWindow.width, parentWindow.lineHeight());\\\\nbitmap.fontSize = 36;\\\\nbitmap.drawText(text, 0, 0, bitmap.width, bitmap.height, 'center');\\\\nsprite.bitmap = bitmap;\\\"\",\"ActionSlot:str\":\"○\",\"ActionCurrent:str\":\"◉\",\"Window_BattleStatus\":\"\",\"StatusDisplayFmt:str\":\"\\\\FS[16]\\\\C[6]%2\\\\C[0] \\\\FS[22]%1\",\"StatusPredictFmt:str\":\"\\\\FS[16]\\\\C[6]%2\\\\C[0] \\\\FS[22]%1\\\\FS[16] → \\\\FS[22]%4\",\"TextColors\":\"\",\"NeutralColor:num\":\"0\",\"PositiveColor:num\":\"4\",\"NegativeColor:num\":\"2\",\"Styles\":\"\",\"DefaultStyle\":\"\",\"default_display:eval\":\"true\",\"default_align:str\":\"right\",\"default_offsetX:num\":\"16\",\"default_offsetY:num\":\"0\",\"ListStyle\":\"\",\"list_display:eval\":\"true\",\"list_align:str\":\"left\",\"list_offsetX:num\":\"-8\",\"list_offsetY:num\":\"0\",\"XPStyle\":\"\",\"xp_display:eval\":\"true\",\"xp_align:str\":\"right\",\"xp_offsetX:num\":\"16\",\"xp_offsetY:num\":\"0\",\"PortraitStyle\":\"\",\"portrait_display:eval\":\"true\",\"portrait_align:str\":\"right\",\"portrait_offsetX:num\":\"-8\",\"portrait_offsetY:num\":\"56\",\"BorderStyle\":\"\",\"border_display:eval\":\"true\",\"border_align:str\":\"right\",\"border_offsetX:num\":\"16\",\"border_offsetY:num\":\"0\"}",
-            "BreakEnd1": "----------------------------------",
-            "End Of": "Plugin Parameters",
-            "BreakEnd2": "----------------------------------"
-        }
-    },
-    {
         "name": "VisuMZ_2_VNPictureBusts",
         "status": true,
         "description": "[RPG Maker MZ] [Tier 2] [Version 1.03] [VNPictureBusts]",
@@ -655,12 +636,6 @@ var $plugins =
         }
     },
     {
-        "name": "VisuMZ_4_SkillShop_update_coreto",
-        "status": false,
-        "description": "",
-        "parameters": {}
-    },
-    {
         "name": "VisuMZ_4_AttachedPictures",
         "status": true,
         "description": "[RPG Maker MZ] [Tier 4] [Version 1.05] [AttachedPictures]",
@@ -863,12 +838,6 @@ var $plugins =
         }
     },
     {
-        "name": "Coreto_MapDarkness",
-        "status": false,
-        "description": "[Coreto] Darkens map 25 and shows a small flashlight radius around the player.",
-        "parameters": {}
-    },
-    {
         "name": "Coreto_Quests",
         "status": true,
         "description": "Add or remove key items or equipment from the inventory and trigger a specified common event.",
@@ -889,49 +858,6 @@ var $plugins =
             "TotalMinerioMina": "30",
             "MineroKraven": "35",
             "PilhasRestantesVariableId": "36"
-        }
-    },
-    {
-        "name": "Coreto_MissionSave",
-        "status": false,
-        "description": "[v1.1] Slots de save fixos com nomes automáticos por missao/evento.",
-        "parameters": {
-            "missionSlotBase": "21",
-            "missionSlotCount": "30",
-            "eventSlotBase": "51",
-            "eventSlotCount": "20",
-            "missionMappings": "[]",
-            "eventMappings": "[]",
-            "id": "",
-            "slot": "21",
-            "title": ""
-        }
-    },
-    {
-        "name": "PKD_SimpleFishing",
-        "status": false,
-        "description": "[RPG Maker MZ] PKD Simple Fishing",
-        "parameters": {}
-    },
-    {
-        "name": "NRP_CounterSkill",
-        "status": false,
-        "description": "v1.052 Create counter skill.",
-        "parameters": {
-            "TargetDamageType": "1,5",
-            "TargetHitType": "1",
-            "TargetSkillType": "0,2",
-            "CounterEvadeCondition": "0",
-            "CounterItem": "false",
-            "ComboJudgeType": "0",
-            "NoMpTpCost": "true",
-            "IgnoreSkillConditions": "false",
-            "AbortTargetDeath": "true",
-            "CounterFriendSkill": "false",
-            "CoverDefaultCounter": "false",
-            "DefaultCounterGroup": "",
-            "DefaultCounterGroupNG": "",
-            "SupportOver100": "false"
         }
     },
     {
@@ -973,9 +899,9 @@ var $plugins =
         }
     },
     {
-        "name": "Coreto_HideMpGauge",
+        "name": "Coreto_CounterTarget",
         "status": true,
-        "description": "Remove completamente a barra de MP do jogo",
+        "description": "Armazena o ultimo atacante de cada battler para uso em counter-ataques",
         "parameters": {}
     }
 ];
