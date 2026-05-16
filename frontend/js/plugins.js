@@ -903,5 +903,17 @@ var $plugins =
         "status": true,
         "description": "Armazena o ultimo atacante de cada battler para uso em counter-ataques",
         "parameters": {}
+    },
+    {
+        "name": "Coreto_CastTimeTags",
+        "status": true,
+        "description": "Notetag para cast time em segundos (<Cast Time: xs>)",
+        "parameters": {}
+    },
+    {
+        "name": "Coreto_HideMpGauge",
+        "status": true,
+        "description": "Remove completamente a barra de MP do jogo",
+        "parameters": {}
     }
 ];
