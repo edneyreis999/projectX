@@ -1673,24 +1673,19 @@
     "chanceByDamage": 100,
     "traits": [
       {
-        "code": 35,
-        "dataId": 25,
-        "value": 1
-      },
-      {
         "code": 21,
         "dataId": 2,
-        "value": 1.25
+        "value": 1.4
       },
       {
         "code": 21,
         "dataId": 3,
-        "value": 1.25
+        "value": 1.4
       },
       {
         "code": 21,
         "dataId": 6,
-        "value": 1.25
+        "value": 1.4
       }
     ],
     "iconIndex": 16,
