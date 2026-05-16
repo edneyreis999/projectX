@@ -31,27 +31,25 @@
  */
 
 (() => {
-  "use strict";
+  'use strict';
 
-  const pluginName = "Coreto_HideMpGauge";
+  const pluginName = 'Coreto_HideMpGauge';
 
   // --- placeGauge: hook na classe base para cobrir todas as janelas ---
 
-  const _Window_StatusBase_placeGauge =
-    Window_StatusBase.prototype.placeGauge;
+  const _Window_StatusBase_placeGauge = Window_StatusBase.prototype.placeGauge;
   Window_StatusBase.prototype.placeGauge = function (actor, type, x, y) {
-    if (type === "mp") return;
+    if (type === 'mp') return;
     _Window_StatusBase_placeGauge.call(this, actor, type, x, y);
   };
 
   // --- placeBasicGauges: reescreve sem MP, TP sobe para ocupar o espaco ---
 
-  const _Window_StatusBase_placeBasicGauges =
-    Window_StatusBase.prototype.placeBasicGauges;
+  const _Window_StatusBase_placeBasicGauges = Window_StatusBase.prototype.placeBasicGauges;
   Window_StatusBase.prototype.placeBasicGauges = function (actor, x, y) {
-    this.placeGauge(actor, "hp", x, y);
+    this.placeGauge(actor, 'hp', x, y);
     if ($dataSystem.optDisplayTp) {
-      this.placeGauge(actor, "tp", x, y + this.gaugeLineHeight());
+      this.placeGauge(actor, 'tp', x, y + this.gaugeLineHeight());
     }
   };
 
