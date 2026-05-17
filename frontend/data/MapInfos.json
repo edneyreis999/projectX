@@ -289,8 +289,8 @@
     "name": "Test de Skills",
     "order": 39,
     "parentId": 15,
-    "scrollX": 788.7272727272727,
-    "scrollY": 920.7272727272727,
+    "scrollX": 884.7272727272727,
+    "scrollY": 920.1818181818182,
     "quick": false
   },
   {
@@ -465,8 +465,8 @@
     "name": "Mapa Release",
     "order": 37,
     "parentId": 15,
-    "scrollX": 1168.3636363636365,
-    "scrollY": 511.6363636363637,
+    "scrollX": 1321.0909090909092,
+    "scrollY": 512.7272727272727,
     "quick": false
   }
 ]

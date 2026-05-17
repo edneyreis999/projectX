@@ -683,11 +683,6 @@
               "parameters": []
             },
             {
-              "code": 353,
-              "indent": 1,
-              "parameters": []
-            },
-            {
               "code": 101,
               "indent": 1,
               "parameters": ["Portraits menores/Principal2", 3, 0, 2, "Minerador"]
@@ -818,11 +813,6 @@
               "parameters": []
             },
             {
-              "code": 353,
-              "indent": 1,
-              "parameters": []
-            },
-            {
               "code": 101,
               "indent": 1,
               "parameters": ["Portraits menores/Principal2", 3, 0, 2, "Minerador"]
@@ -950,11 +940,6 @@
             {
               "code": 603,
               "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 353,
-              "indent": 1,
               "parameters": []
             },
             {
