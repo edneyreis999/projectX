@@ -459,7 +459,7 @@
     "speed": 0,
     "stypeId": 2,
     "successRate": 100,
-    "tpCost": 0,
+    "tpCost": 40,
     "tpGain": 0
   },
   {
