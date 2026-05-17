@@ -142,7 +142,7 @@
     "battlerHue": 0,
     "exp": 5000,
     "gold": 500,
-    "params": [28000, 0, 200, 100, 0, 80, 110, 80],
+    "params": [28000, 0, 400, 200, 0, 80, 220, 160],
     "actions": [
       {
         "skillId": 30,
@@ -221,6 +221,16 @@
         "code": 63,
         "dataId": 1,
         "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 4,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 13,
+        "value": 1
       }
     ],
     "dropItems": [
@@ -230,7 +240,7 @@
         "denominator": 1
       }
     ],
-    "note": "<ATB Field Gauge Face: Bosses, 4>\n<Sideview Battler: LoboAlpha>"
+    "note": "<ATB Field Gauge Face: Bosses, 4>\n<Sideview Battler: LoboAlpha>\n<TP Mode: Boss>"
   },
   {
     "id": 7,
@@ -239,7 +249,7 @@
     "battlerHue": 0,
     "exp": 150,
     "gold": 30,
-    "params": [3500, 0, 120, 60, 0, 40, 100, 70],
+    "params": [3500, 0, 240, 120, 0, 40, 200, 140],
     "actions": [
       {
         "skillId": 29,
@@ -250,6 +260,13 @@
       },
       {
         "skillId": 31,
+        "rating": 5,
+        "conditionType": 0,
+        "conditionParam1": 0,
+        "conditionParam2": 0
+      },
+      {
+        "skillId": 1,
         "rating": 5,
         "conditionType": 0,
         "conditionParam1": 0,
@@ -584,49 +601,49 @@
     "battlerHue": 0,
     "exp": 2000,
     "gold": 500,
-    "params": [30000, 400, 150, 200, 60, 100, 85, 90],
+    "params": [30000, 400, 280, 300, 60, 100, 220, 160],
     "actions": [
       {
+        "skillId": 15,
+        "rating": 7,
+        "conditionType": 0,
+        "conditionParam1": 0,
+        "conditionParam2": 0
+      },
+      {
         "skillId": 11,
-        "rating": 1,
-        "conditionType": 0,
-        "conditionParam1": 0,
-        "conditionParam2": 0
-      },
-      {
-        "skillId": 13,
-        "rating": 2,
-        "conditionType": 0,
-        "conditionParam1": 0,
-        "conditionParam2": 0
-      },
-      {
-        "skillId": 12,
-        "rating": 2,
-        "conditionType": 0,
-        "conditionParam1": 0,
-        "conditionParam2": 0
-      },
-      {
-        "skillId": 14,
         "rating": 5,
         "conditionType": 0,
         "conditionParam1": 0,
         "conditionParam2": 0
       },
       {
-        "skillId": 15,
-        "rating": 7,
-        "conditionType": 1,
-        "conditionParam1": 1,
+        "skillId": 12,
+        "rating": 5,
+        "conditionType": 0,
+        "conditionParam1": 0,
         "conditionParam2": 0
       },
       {
-        "skillId": 15,
-        "rating": 3,
-        "conditionType": 2,
+        "skillId": 14,
+        "rating": 9,
+        "conditionType": 0,
         "conditionParam1": 0,
-        "conditionParam2": 0.5
+        "conditionParam2": 0
+      },
+      {
+        "skillId": 13,
+        "rating": 5,
+        "conditionType": 0,
+        "conditionParam1": 0,
+        "conditionParam2": 0
+      },
+      {
+        "skillId": 1,
+        "rating": 5,
+        "conditionType": 0,
+        "conditionParam1": 0,
+        "conditionParam2": 0
       }
     ],
     "traits": [
@@ -634,6 +651,16 @@
         "code": 22,
         "dataId": 0,
         "value": 0.95
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.05
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.05
       },
       {
         "code": 14,
@@ -653,7 +680,7 @@
         "denominator": 1
       }
     ],
-    "note": "<ATB Field Gauge Face: Bosses, 2>\n<Sideview Battler: Cristaleao>"
+    "note": "<ATB Field Gauge Face: Bosses, 2>\n<Sideview Battler: Cristaleao>\n<TP Mode: Boss>\n<AI Style: Gambit>\n<AI Level: 100>\n<AI Rating Variance: 0>"
   },
   {
     "id": 18,
@@ -982,6 +1009,11 @@
         "value": 1
       },
       {
+        "code": 14,
+        "dataId": 4,
+        "value": 1
+      },
+      {
         "code": 22,
         "dataId": 0,
         "value": 0.95
@@ -1005,6 +1037,11 @@
         "code": 63,
         "dataId": 1,
         "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 13,
+        "value": 1
       }
     ],
     "dropItems": [
@@ -1014,7 +1051,7 @@
         "denominator": 1
       }
     ],
-    "note": "<JS Force Received Element 10 Rate: -1.0>\n<ATB Field Gauge Face: Bosses, 1>\n<Sideview Battler: Pestesporo>"
+    "note": "<JS Force Received Element 10 Rate: -1.0>\n<ATB Field Gauge Face: Bosses, 1>\n<Sideview Battler: Pestesporo>\n<TP Mode: Boss>"
   },
   {
     "id": 29,
