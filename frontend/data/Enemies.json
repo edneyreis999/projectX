@@ -145,22 +145,15 @@
     "params": [28000, 0, 200, 100, 0, 80, 110, 80],
     "actions": [
       {
-        "skillId": 1,
-        "rating": 5,
-        "conditionType": 0,
-        "conditionParam1": 0,
-        "conditionParam2": 0
-      },
-      {
         "skillId": 30,
-        "rating": 9,
+        "rating": 8,
         "conditionType": 4,
         "conditionParam1": 57,
         "conditionParam2": 0
       },
       {
-        "skillId": 31,
-        "rating": 9,
+        "skillId": 32,
+        "rating": 8,
         "conditionType": 4,
         "conditionParam1": 57,
         "conditionParam2": 0
@@ -192,6 +185,20 @@
         "conditionType": 0,
         "conditionParam1": 0,
         "conditionParam2": 0
+      },
+      {
+        "skillId": 14,
+        "rating": 8,
+        "conditionType": 0,
+        "conditionParam1": 0,
+        "conditionParam2": 0
+      },
+      {
+        "skillId": 31,
+        "rating": 5,
+        "conditionType": 0,
+        "conditionParam1": 0,
+        "conditionParam2": 0
       }
     ],
     "traits": [
@@ -209,6 +216,11 @@
         "code": 22,
         "dataId": 1,
         "value": 0.05
+      },
+      {
+        "code": 63,
+        "dataId": 1,
+        "value": 1
       }
     ],
     "dropItems": [
@@ -627,6 +639,11 @@
         "code": 14,
         "dataId": 13,
         "value": 1
+      },
+      {
+        "code": 63,
+        "dataId": 1,
+        "value": 1
       }
     ],
     "dropItems": [
@@ -982,6 +999,11 @@
       {
         "code": 14,
         "dataId": 61,
+        "value": 1
+      },
+      {
+        "code": 63,
+        "dataId": 1,
         "value": 1
       }
     ],
