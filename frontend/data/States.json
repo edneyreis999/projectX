@@ -121,7 +121,7 @@
       {
         "code": 22,
         "dataId": 7,
-        "value": -0.1
+        "value": -0.05
       }
     ],
     "messageType": 1
@@ -1001,7 +1001,7 @@
       {
         "code": 22,
         "dataId": 7,
-        "value": -0.07
+        "value": -0.05
       }
     ],
     "iconIndex": 56,

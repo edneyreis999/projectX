@@ -2199,8 +2199,8 @@
       },
       {
         "enemyId": 28,
-        "x": 163,
-        "y": 397,
+        "x": 153,
+        "y": 423,
         "hidden": false
       }
     ],
@@ -2233,15 +2233,8 @@
   },
   {
     "id": 54,
-    "name": "teste",
-    "members": [
-      {
-        "enemyId": 9,
-        "x": 271,
-        "y": 512,
-        "hidden": false
-      }
-    ],
+    "members": [],
+    "name": "",
     "pages": [
       {
         "conditions": {

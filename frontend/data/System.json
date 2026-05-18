@@ -117,7 +117,7 @@
     "volume": 90
   },
   "editMapId": 57,
-  "elements": ["", "Físico", "Fogo", "Gelo", "Trovão", "Água", "Terra", "Vento", "Luz", "Trevas"],
+  "elements": ["", "Físico", "Fogo", "Gelo", "Trovão", "Água", "Terra", "Vento", "Luz", "Trevas", "Veneno"],
   "equipTypes": ["", "Arma", "Escudo", "Cabeça", "Corpo", "Acessório"],
   "gameTitle": "Daratrine - A Origem",
   "gameoverMe": {
@@ -301,9 +301,9 @@
       "volume": 90
     }
   ],
-  "startMapId": 34,
-  "startX": 14,
-  "startY": 23,
+  "startMapId": 57,
+  "startX": 20,
+  "startY": 7,
   "switches": [
     "",
     "Jogada segura",
@@ -645,7 +645,7 @@
     "",
     "Inimigos derrotados(release)"
   ],
-  "versionId": 12401309,
+  "versionId": 71062321,
   "victoryMe": {
     "name": "Victory1",
     "pan": 0,
