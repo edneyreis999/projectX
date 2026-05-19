@@ -336,7 +336,7 @@
         "value2": 0
       }
     ],
-    "hitType": 1,
+    "hitType": 2,
     "iconIndex": 4,
     "message1": "",
     "message2": "",
@@ -374,7 +374,7 @@
         "value2": 0
       }
     ],
-    "hitType": 0,
+    "hitType": 2,
     "iconIndex": 26,
     "message1": "",
     "message2": "",
@@ -412,7 +412,7 @@
         "value2": 0
       }
     ],
-    "hitType": 1,
+    "hitType": 2,
     "iconIndex": 27,
     "message1": "",
     "message2": "",
@@ -443,14 +443,14 @@
     },
     "description": "ATAQUE MORTAL. Consome todo BP acumulado.",
     "effects": [],
-    "hitType": 1,
+    "hitType": 2,
     "iconIndex": 28,
     "message1": "",
     "message2": "",
     "messageType": 1,
     "mpCost": 0,
     "name": "Investida Devastadora",
-    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Spend TP: 55>\n// [Coreto_CastTimeTags] - Cast time original: speed -300\n<Cast Time: 8s>\n<ATB Interrupt>\n\n<All AI Conditions>\n User Has State 7\n</All AI Conditions>",
+    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Spend TP: 0>\n// [Coreto_CastTimeTags] - Cast time original: speed -300\n<Cast Time: 8s>\n<ATB Interrupt>\n<Common Event Key: Investida Devastadora>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -459,7 +459,7 @@
     "speed": 0,
     "stypeId": 2,
     "successRate": 100,
-    "tpCost": 40,
+    "tpCost": 0,
     "tpGain": 0
   },
   {
@@ -481,7 +481,7 @@
         "value2": 0
       }
     ],
-    "hitType": 0,
+    "hitType": 2,
     "iconIndex": 5,
     "message1": "",
     "message2": "",
@@ -643,7 +643,7 @@
         "value2": 0
       }
     ],
-    "hitType": 1,
+    "hitType": 2,
     "iconIndex": 2,
     "message1": "O Lobo Alpha solta um rugido poderoso!",
     "message2": "",
@@ -681,7 +681,7 @@
         "value2": 0
       }
     ],
-    "hitType": 1,
+    "hitType": 2,
     "iconIndex": 3,
     "message1": "O Lobo Alpha late em alerta!",
     "message2": "",
@@ -719,7 +719,7 @@
         "value2": 0
       }
     ],
-    "hitType": 1,
+    "hitType": 2,
     "iconIndex": 18,
     "message1": "O Lobo Alpha uiva, comandando a matilha!",
     "message2": "",
@@ -943,7 +943,7 @@
     },
     "description": "Golpe cirúrgico focado em pontos vulneráveis. \nAumenta crítica em 💥 15% e tem 30% de chance de Sangramento ",
     "effects": [],
-    "hitType": 1,
+    "hitType": 2,
     "iconIndex": 6,
     "message1": "%1 usa %2! Buscando por feridas abertas",
     "message2": "ele desfere um golpe certeiro que escancara a dor!",
@@ -974,7 +974,7 @@
     },
     "description": "Versão aprimorada que atinge profundamente. Dano +🗡️ 10%, crítica +💥 25%, 🩸 50% de Sangramento.",
     "effects": [],
-    "hitType": 1,
+    "hitType": 2,
     "iconIndex": 6,
     "message1": "%1 usa %2",
     "message2": "e corta fundo até romper vasos vitais!",
@@ -1005,7 +1005,7 @@
     },
     "description": "Três ataques consecutivos. Se alvo sangrando (🩸): +🗡️ 20% dano e 💥 40% crítica por hit.",
     "effects": [],
-    "hitType": 1,
+    "hitType": 2,
     "iconIndex": 7,
     "message1": "%1 usa %2! três vezes",
     "message2": "cada golpe puxa mais sangue, cada corte é um tormento!",
@@ -1036,7 +1036,7 @@
     },
     "description": "Quatro ataques em sucessão. Dano +🗡️ 10% base. Se alvo sangrando (🩸): +🗡️ 15% dano e 💥 50% crítica.",
     "effects": [],
-    "hitType": 1,
+    "hitType": 2,
     "iconIndex": 7,
     "message1": "%1 usa %2! Quatro vezes!",
     "message2": "cada golpe aumenta a hemorragia e esgota as forças restantes do alvo",
@@ -1198,7 +1198,7 @@
         "value2": 0
       }
     ],
-    "hitType": 0,
+    "hitType": 2,
     "iconIndex": 33,
     "message1": "O metabolismo do Pestesporo acelera!",
     "message2": "",
@@ -1236,7 +1236,7 @@
         "value2": 0
       }
     ],
-    "hitType": 1,
+    "hitType": 2,
     "iconIndex": 9,
     "message1": "",
     "message2": "",
@@ -1267,7 +1267,7 @@
     },
     "description": "",
     "effects": [],
-    "hitType": 0,
+    "hitType": 2,
     "iconIndex": 63,
     "message1": "",
     "message2": "",
@@ -1380,7 +1380,7 @@
     },
     "description": "",
     "effects": [],
-    "hitType": 1,
+    "hitType": 2,
     "iconIndex": 0,
     "message1": "%1 ataca!",
     "message2": "",
