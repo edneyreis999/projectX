@@ -443,7 +443,7 @@
     },
     "description": "ATAQUE MORTAL. Consome todo BP acumulado.",
     "effects": [],
-    "hitType": 2,
+    "hitType": 1,
     "iconIndex": 28,
     "message1": "",
     "message2": "",
