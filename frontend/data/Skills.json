@@ -336,7 +336,7 @@
         "value2": 0
       }
     ],
-    "hitType": 2,
+    "hitType": 1,
     "iconIndex": 4,
     "message1": "",
     "message2": "",
@@ -374,14 +374,14 @@
         "value2": 0
       }
     ],
-    "hitType": 2,
+    "hitType": 1,
     "iconIndex": 26,
     "message1": "",
     "message2": "",
     "messageType": 1,
     "mpCost": 0,
     "name": "Camuflagem de Kraven",
-    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Gain TP: +10>\n\n<All AI Conditions>\n User Not State 51\n</All AI Conditions>\n<Any AI Conditions>\n User HP% <= 0.60\n User HP% <= 0.80\n 50% Chance\n</Any AI Conditions>",
+    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Gain TP: +10>\n\n<Common Event Key: Camuflagem>\n\n<All AI Conditions>\n User Not State 51\n</All AI Conditions>\n<Any AI Conditions>\n User HP% <= 0.60\n User HP% <= 0.80\n 50% Chance\n</Any AI Conditions>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -412,7 +412,7 @@
         "value2": 0
       }
     ],
-    "hitType": 2,
+    "hitType": 1,
     "iconIndex": 27,
     "message1": "",
     "message2": "",
@@ -450,7 +450,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Investida Devastadora",
-    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Spend TP: 0>\n// [Coreto_CastTimeTags] - Cast time original: speed -300\n<Cast Time: 8s>\n<ATB Interrupt>\n<Common Event Key: Investida Devastadora>",
+    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Spend TP: 55>\n// [Coreto_CastTimeTags] - Cast time original: speed -300\n<Cast Time: 8s>\n<ATB Interrupt>\n<Common Event Key: Investida Devastadora>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -481,7 +481,7 @@
         "value2": 0
       }
     ],
-    "hitType": 2,
+    "hitType": 1,
     "iconIndex": 5,
     "message1": "",
     "message2": "",
@@ -502,34 +502,34 @@
   },
   {
     "id": 16,
-    "animationId": 0,
+    "animationId": -1,
     "damage": {
-      "critical": false,
-      "elementId": 0,
-      "formula": "0",
-      "type": 0,
+      "critical": true,
+      "elementId": -1,
+      "formula": "0.5",
+      "type": 1,
       "variance": 20
     },
     "description": "",
     "effects": [],
-    "hitType": 0,
+    "hitType": 1,
     "iconIndex": 0,
-    "message1": "",
+    "message1": "%1 ataca!",
     "message2": "",
-    "messageType": 1,
     "mpCost": 0,
-    "name": "",
-    "note": "",
-    "occasion": 0,
+    "name": "Patada",
+    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Gain TP: +5>\n\n<Common Event Key: Patada>",
+    "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
     "requiredWtypeId2": 0,
     "scope": 1,
     "speed": 0,
-    "stypeId": 1,
+    "stypeId": 0,
     "successRate": 100,
     "tpCost": 0,
-    "tpGain": 0
+    "tpGain": 0,
+    "messageType": 1
   },
   {
     "id": 17,
@@ -643,7 +643,7 @@
         "value2": 0
       }
     ],
-    "hitType": 2,
+    "hitType": 1,
     "iconIndex": 2,
     "message1": "O Lobo Alpha solta um rugido poderoso!",
     "message2": "",
@@ -681,7 +681,7 @@
         "value2": 0
       }
     ],
-    "hitType": 2,
+    "hitType": 1,
     "iconIndex": 3,
     "message1": "O Lobo Alpha late em alerta!",
     "message2": "",
@@ -719,7 +719,7 @@
         "value2": 0
       }
     ],
-    "hitType": 2,
+    "hitType": 1,
     "iconIndex": 18,
     "message1": "O Lobo Alpha uiva, comandando a matilha!",
     "message2": "",
@@ -757,7 +757,7 @@
         "value2": 0
       }
     ],
-    "hitType": 2,
+    "hitType": 1,
     "iconIndex": 16,
     "message1": "",
     "message2": "",
@@ -943,7 +943,7 @@
     },
     "description": "Golpe cirúrgico focado em pontos vulneráveis. \nAumenta crítica em 💥 15% e tem 30% de chance de Sangramento ",
     "effects": [],
-    "hitType": 2,
+    "hitType": 1,
     "iconIndex": 6,
     "message1": "%1 usa %2! Buscando por feridas abertas",
     "message2": "ele desfere um golpe certeiro que escancara a dor!",
@@ -974,7 +974,7 @@
     },
     "description": "Versão aprimorada que atinge profundamente. Dano +🗡️ 10%, crítica +💥 25%, 🩸 50% de Sangramento.",
     "effects": [],
-    "hitType": 2,
+    "hitType": 1,
     "iconIndex": 6,
     "message1": "%1 usa %2",
     "message2": "e corta fundo até romper vasos vitais!",
@@ -1005,7 +1005,7 @@
     },
     "description": "Três ataques consecutivos. Se alvo sangrando (🩸): +🗡️ 20% dano e 💥 40% crítica por hit.",
     "effects": [],
-    "hitType": 2,
+    "hitType": 1,
     "iconIndex": 7,
     "message1": "%1 usa %2! três vezes",
     "message2": "cada golpe puxa mais sangue, cada corte é um tormento!",
@@ -1036,7 +1036,7 @@
     },
     "description": "Quatro ataques em sucessão. Dano +🗡️ 10% base. Se alvo sangrando (🩸): +🗡️ 15% dano e 💥 50% crítica.",
     "effects": [],
-    "hitType": 2,
+    "hitType": 1,
     "iconIndex": 7,
     "message1": "%1 usa %2! Quatro vezes!",
     "message2": "cada golpe aumenta a hemorragia e esgota as forças restantes do alvo",
@@ -1380,7 +1380,7 @@
     },
     "description": "",
     "effects": [],
-    "hitType": 2,
+    "hitType": 1,
     "iconIndex": 0,
     "message1": "%1 ataca!",
     "message2": "",

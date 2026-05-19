@@ -39586,12 +39586,217 @@
     "id": 160,
     "list": [
       {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Set_SetupAction",
+          "ACSET: Setup Action Set",
+          {
+            "DisplayAction:eval": "true",
+            "ApplyImmortal:eval": "true",
+            "ActionStart:eval": "true",
+            "WaitForMovement:eval": "false",
+            "CastAnimation:eval": "false",
+            "WaitForAnimation:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Display Action = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Immortal: On = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Battle Step = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Cast Animation = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Animation = false"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Motion_MotionType",
+          "MOTION: Motion Type",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "MotionType:str": "skill",
+            "ShowWeapon:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Motion Type = skill"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Show Weapon? = false"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Movement_Opacity",
+          "MOVE: Opacity",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "Opacity:eval": "155",
+            "Duration:eval": "50",
+            "EasingType:str": "Linear",
+            "WaitForOpacity:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Desired Opacity = 155"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 50"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Opacity Easing = Linear"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Opacity? = true"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Movement_Opacity",
+          "MOVE: Opacity",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "Opacity:eval": "255",
+            "Duration:eval": "10",
+            "EasingType:str": "Linear",
+            "WaitForOpacity:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Desired Opacity = 255"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 10"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Opacity Easing = Linear"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Opacity? = true"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Set_FinishAction",
+          "ACSET: Finish Action",
+          {
+            "ApplyImmortal:eval": "true",
+            "WaitForNewLine:eval": "true",
+            "WaitForEffect:eval": "true",
+            "ClearBattleLog:eval": "true",
+            "ActionEnd:eval": "true",
+            "WaitForMovement:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Immortal: Off = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For New Line = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Effects = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Clear Battle Log = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Home Reset = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement = true"]
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "[Camuflagem]",
     "switchId": 1,
     "trigger": 0
   },
@@ -39599,12 +39804,299 @@
     "id": 161,
     "list": [
       {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Set_SetupAction",
+          "ACSET: Setup Action Set",
+          {
+            "DisplayAction:eval": "true",
+            "ApplyImmortal:eval": "true",
+            "ActionStart:eval": "true",
+            "WaitForMovement:eval": "false",
+            "CastAnimation:eval": "false",
+            "WaitForAnimation:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Display Action = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Immortal: On = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Battle Step = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Cast Animation = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Animation = false"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Movement_Jump",
+          "MOVE: Jump",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "Height:eval": "100",
+            "Duration:eval": "30",
+            "WaitForJump:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Desired Height = 100"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 30"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Jump? = false"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Movement_MoveToTarget",
+          "MOVE: Move To Target(s)",
+          {
+            "Targets1:arraystr": "[\"user\"]",
+            "Targets2:arraystr": "[\"current target\"]",
+            "TargetLocation:str": "front base",
+            "MeleeDistance:eval": "34",
+            "OffsetAdjust:str": "horz",
+            "OffsetX:eval": "0",
+            "OffsetY:eval": "0",
+            "Duration:eval": "30",
+            "FaceDirection:eval": "true",
+            "EasingType:str": "Linear",
+            "MotionType:str": "escape",
+            "WaitForMovement:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets (Moving) = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets (Destination) = [\"current target\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Target Location = front base"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Melee Distance = 34"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Offset Adjustment = horz"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Offset: X = 0"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Offset: Y = 0"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Duration = 30"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Face Destination? = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Movement Easing = Linear"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Movement Motion = escape"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement? = true"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Motion_MotionType",
+          "MOTION: Motion Type",
+          {
+            "Targets:arraystr": "[\"user\"]",
+            "MotionType:str": "swing",
+            "ShowWeapon:eval": "false"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"user\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Motion Type = swing"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Show Weapon? = false"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Mechanics_ActionEffect",
+          "MECH: Action Effect",
+          {
+            "Targets:arraystr": "[\"current target\"]"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"current target\"]"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Animation_ActionAnimation",
+          "ANIM: Action Animation",
+          {
+            "Targets:arraystr": "[\"current target\"]",
+            "Mirror:eval": "false",
+            "WaitForAnimation:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Targets = [\"current target\"]"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Mirror Animation = false"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Animation? = true"]
+      },
+      {
+        "code": 357,
+        "indent": 0,
+        "parameters": [
+          "VisuMZ_1_BattleCore",
+          "ActSeq_Set_FinishAction",
+          "ACSET: Finish Action",
+          {
+            "ApplyImmortal:eval": "true",
+            "WaitForNewLine:eval": "true",
+            "WaitForEffect:eval": "true",
+            "ClearBattleLog:eval": "true",
+            "ActionEnd:eval": "true",
+            "WaitForMovement:eval": "true"
+          }
+        ]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Immortal: Off = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For New Line = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Effects = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Clear Battle Log = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Home Reset = true"]
+      },
+      {
+        "code": 657,
+        "indent": 0,
+        "parameters": ["Wait For Movement = true"]
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "[Patada]",
     "switchId": 1,
     "trigger": 0
   },
