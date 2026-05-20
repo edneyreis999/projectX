@@ -142,7 +142,7 @@
     "battlerHue": 0,
     "exp": 5000,
     "gold": 500,
-    "params": [28000, 0, 400, 200, 0, 80, 220, 160],
+    "params": [28000, 0, 320, 180, 0, 80, 220, 120],
     "actions": [
       {
         "skillId": 30,
@@ -187,7 +187,7 @@
         "conditionParam2": 0
       },
       {
-        "skillId": 14,
+        "skillId": 24,
         "rating": 8,
         "conditionType": 0,
         "conditionParam1": 0,
@@ -249,7 +249,7 @@
     "battlerHue": 0,
     "exp": 150,
     "gold": 30,
-    "params": [3500, 0, 240, 120, 0, 40, 200, 140],
+    "params": [3500, 0, 180, 100, 0, 40, 120, 90],
     "actions": [
       {
         "skillId": 29,
