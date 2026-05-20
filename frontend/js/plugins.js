@@ -416,6 +416,21 @@ var $plugins =
         "parameters": {}
     },
     {
+        "name": "VisuMZ_3_ActSeqCamera",
+        "status": true,
+        "description": "[RPG Maker MZ] [Tier 3] [Version 1.15] [ActSeqCamera]",
+        "parameters": {
+            "BreakHead": "----------------------------------",
+            "ActSeqCamera": "Plugin Parameters",
+            "ATTENTION": "READ THE HELP FILE",
+            "BreakSettings": "----------------------------------",
+            "Options:struct": "{\"AddOption:eval\":\"true\",\"AdjustRect:eval\":\"true\",\"OptionsName:str\":\"Battle Camera\"}",
+            "BreakEnd1": "----------------------------------",
+            "End Of": "Plugin Parameters",
+            "BreakEnd2": "----------------------------------"
+        }
+    },
+    {
         "name": "VisuMZ_3_ActSeqProjectiles",
         "status": true,
         "description": "[RPG Maker MZ] [Tier 3] [Version 1.09] [ActSeqProjectiles]",
