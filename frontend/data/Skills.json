@@ -1533,7 +1533,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "Golpe rapido e agil que gera Momentum.",
+    "description": "Alvo unico — 1.88x ATK. Gera Momentum",
     "effects": [],
     "hitType": 1,
     "iconIndex": 74,
@@ -1564,7 +1564,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "Impacto calculado que aplica Marcacao no alvo.",
+    "description": "Alvo unico — 1.88x ATK. Marca o alvo (30%). Gera Momentum",
     "effects": [],
     "hitType": 1,
     "iconIndex": 73,
@@ -1595,7 +1595,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "Golpe baixo com chance de desestabilizar o oponente.",
+    "description": "Alvo unico — cast 1s. 5.63x ATK, lentidao (40%)",
     "effects": [],
     "hitType": 1,
     "iconIndex": 75,
@@ -1626,7 +1626,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "Soco rapido na altura dos olhos, chance de cegueira.",
+    "description": "Alvo unico — cast 1s. 5.63x ATK, cega o alvo (30%)",
     "effects": [],
     "hitType": 1,
     "iconIndex": 70,
@@ -1657,7 +1657,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "Sequencia de dois golpes rapidos com as luvas.",
+    "description": "Alvo unico — cast 1s. 9.39x ATK (2 hits)",
     "effects": [],
     "hitType": 1,
     "iconIndex": 77,
@@ -1666,7 +1666,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Combo Duplo",
-    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 25>\n// [Coreto_CastTimeTags] - Cast time padrão 1s\n<Cast Time: 1s>\n<Common Event Key: Combo Duplo>\n<ATB After Gauge: -5%>\n<JS Post-Start Action>\n  var thisSkillId = 51;\n  var embaloIds = [67, 69, 70];\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    user.gainTp(tpFinal);\n  }\n  for (var i = 0; i < embaloIds.length; i++) {\n    user.removeState(embaloIds[i]);\n  }\n  user.addState(embaloIds[user._embaloCount - 1]);\n</JS Post-Start Action>\n",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 25>\n// [Coreto_CastTimeTags] - Cast time padrão 1s\n<Cast Time: 1s>\n<Common Event Key: Combo Duplo>\n<JS Post-Start Action>\n  var thisSkillId = 51;\n  var embaloIds = [67, 69, 70];\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    user.gainTp(tpFinal);\n  }\n  for (var i = 0; i < embaloIds.length; i++) {\n    user.removeState(embaloIds[i]);\n  }\n  user.addState(embaloIds[user._embaloCount - 1]);\n</JS Post-Start Action>\n",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -1688,7 +1688,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "Impacto forte que pode atordoar o oponente.",
+    "description": "Alvo unico — cast 1s. 9.39x ATK, atordoa o alvo",
     "effects": [],
     "hitType": 1,
     "iconIndex": 76,
@@ -1719,7 +1719,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "Soco poderoso que ignora parte da armadura inimiga.",
+    "description": "Alvo unico — cast 3s. 13.14x ATK com 25% pen",
     "effects": [],
     "hitType": 1,
     "iconIndex": 69,
@@ -1750,7 +1750,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "Filena se buffa com ATK mas sacrifica sua defesa.",
+    "description": "Alvo unico — cast 4.8s. 15.02x ATK. Buff ATK e debuff DEF por 2 turnos",
     "effects": [],
     "hitType": 1,
     "iconIndex": 5,
@@ -1759,7 +1759,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Ira da Duelista",
-    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 40>\n// [Coreto_CastTimeTags] - Cast time original: speed -250\n<Cast Time: 4.8s>\n<ATB After Gauge: -25%>\n<JS Post-Start Action>\n  // Self-buffs (ATK+50% e DEF-50%) aplicados no user via JS\n  // Nota: <Apply State> aplica no TARGET, nao no user. Para self-buffs, usar user.addState().\n  // Substitua XX pelo ID do state \"ATK +50%\" e YY pelo ID do state \"DEF -50%\" quando definidos\n  user.addBuff(2, 2);\n  user.addDebuff(3, 2);\n  // logica padrao de Embalo\n  var thisSkillId = 54;\n  var embaloIds = [67, 69, 70];\n\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    user.gainTp(tpFinal);\n  }\n\n  for (var i = 0; i < embaloIds.length; i++) {\n    user.removeState(embaloIds[i]);\n  }\n  user.addState(embaloIds[user._embaloCount - 1]);\n  </JS Post-Start Action>\n\n",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 40>\n// [Coreto_CastTimeTags] - Cast time original: speed -250\n<Cast Time: 4.8s>\n<JS Post-Start Action>\n  // Self-buffs (ATK+50% e DEF-50%) aplicados no user via JS\n  // Nota: <Apply State> aplica no TARGET, nao no user. Para self-buffs, usar user.addState().\n  // Substitua XX pelo ID do state \"ATK +50%\" e YY pelo ID do state \"DEF -50%\" quando definidos\n  user.addBuff(2, 2);\n  user.addDebuff(3, 2);\n  // logica padrao de Embalo\n  var thisSkillId = 54;\n  var embaloIds = [67, 69, 70];\n\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    user.gainTp(tpFinal);\n  }\n\n  for (var i = 0; i < embaloIds.length; i++) {\n    user.removeState(embaloIds[i]);\n  }\n  user.addState(embaloIds[user._embaloCount - 1]);\n  </JS Post-Start Action>\n\n",
     "occasion": 0,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -1781,7 +1781,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "Filena entra em frenesi, desferindo 4 golpes em alvos aleatorios.",
+    "description": "Alvos aleatorios — cast 6.8s. 16.9x ATK (4 hits). Nao interrompivel",
     "effects": [],
     "hitType": 1,
     "iconIndex": 71,
@@ -1790,7 +1790,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Danca dos Ventos",
-    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 45>\n// [Coreto_CastTimeTags] - Cast time original: speed -500\n<Cast Time: 6.8s>\n<Common Event Key: Dança dos Ventos>\n<ATB Cannot Be Interrupted>\n<ATB After Gauge: -20%>\n<JS Post-Start Action>\n  var thisSkillId = 55;\n  var embaloIds = [67, 69, 70];\n\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    user.gainTp(tpFinal);\n  }\n\n  for (var i = 0; i < embaloIds.length; i++) {\n    user.removeState(embaloIds[i]);\n  }\n  user.addState(embaloIds[user._embaloCount - 1]);\n  </JS Post-Start Action>\n\n",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 45>\n// [Coreto_CastTimeTags] - Cast time original: speed -500\n<Cast Time: 6.8s>\n<Common Event Key: Dança dos Ventos>\n<ATB Cannot Be Interrupted>\n<JS Post-Start Action>\n  var thisSkillId = 55;\n  var embaloIds = [67, 69, 70];\n\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    user.gainTp(tpFinal);\n  }\n\n  for (var i = 0; i < embaloIds.length; i++) {\n    user.removeState(embaloIds[i]);\n  }\n  user.addState(embaloIds[user._embaloCount - 1]);\n  </JS Post-Start Action>\n\n",
     "occasion": 0,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2029,7 +2029,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "Golpe basico com escudo que gera GUARDA.",
+    "description": "Alvo unico — 3x ATK. Gera Guarda",
     "effects": [],
     "hitType": 1,
     "iconIndex": 55,
@@ -2091,7 +2091,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "Golpe basico com escudo que gera GUARDA.",
+    "description": "Alvo unico — 3x ATK. Gera Guarda",
     "effects": [],
     "hitType": 1,
     "iconIndex": 1,
@@ -2122,7 +2122,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "Postura defensiva que aumenta DEF e gera GUARDA.",
+    "description": "Alvo unico — cast 1s. 3.76x ATK, DEF+. Gera Guarda",
     "effects": [
       {
         "code": 32,
@@ -2160,7 +2160,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "Investida com escudo que atordoa o alvo.",
+    "description": "Alvo unico — cast 1s. 5.63x ATK, atordoa o alvo",
     "effects": [],
     "hitType": 1,
     "iconIndex": 1,
@@ -2169,7 +2169,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Investida de Escudo",
-    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 15>\n// [Coreto_CastTimeTags] - Cast time padrão 1s\n<Cast Time: 1s>\n<Apply State: 100% Atordoamento>\n<ATB After Gauge: +10%>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 15>\n// [Coreto_CastTimeTags] - Cast time padrão 1s\n<Cast Time: 1s>\n<Apply State: 100% Atordoamento>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2191,7 +2191,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "Clarao do escudo que cega o alvo.",
+    "description": "Alvo unico — cast 1s. 3x ATK, cega o alvo",
     "effects": [],
     "hitType": 1,
     "iconIndex": 1,
@@ -2200,7 +2200,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Clarao do Escudo",
-    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 8>\n// [Coreto_CastTimeTags] - Cast time padrão 1s\n<Cast Time: 1s>\n<Apply State: 100% Cegueira>\n<ATB After Gauge: +5%>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 8>\n// [Coreto_CastTimeTags] - Cast time padrão 1s\n<Cast Time: 1s>\n<Apply State: 100% Cegueira>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2222,7 +2222,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "Golpe que interrompe o alvo se estiver conjurando.",
+    "description": "Alvo unico — cast 1s. 5.63x ATK",
     "effects": [],
     "hitType": 1,
     "iconIndex": 63,
@@ -2231,7 +2231,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Golpe Desarmando",
-    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 15>\n// [Coreto_CastTimeTags] - Cast time padrão 1s\n<Cast Time: 1s>\n<ATB After Gauge: +5%>\n<ATB Interrupt>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 15>\n// [Coreto_CastTimeTags] - Cast time padrão 1s\n<Cast Time: 1s>\n<ATB Interrupt>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2253,7 +2253,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Cria uma barreira que absorve o proximo ataque de um aliado.",
+    "description": "Barreira no aliado que absorve o proximo ataque. Cast 1s",
     "effects": [],
     "hitType": 0,
     "iconIndex": 63,
@@ -2262,7 +2262,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Muralha Pessoal",
-    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 14>\n// [Coreto_CastTimeTags] - Cast time padrão 1s\n<Cast Time: 1s>\n<Apply State: 100% Muralha Pessoal>\n<ATB After Gauge: +5%>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 14>\n// [Coreto_CastTimeTags] - Cast time padrão 1s\n<Cast Time: 1s>\n<Apply State: 100% Muralha Pessoal>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2284,7 +2284,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Kilin intercepta os ataques direcionados a um aliado.",
+    "description": "Intercepta ataques direcionados ao aliado",
     "effects": [],
     "hitType": 0,
     "iconIndex": 55,
@@ -2293,7 +2293,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Bodyguard",
-    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 5>\n<Custom Action Sequence>\n<Common Event Key: Bodyguard>\n<Apply State: 100% Bodyguard>\n<Bodyguard State: 83>\n<ATB After Gauge: -10%>\n<Cannot Target User>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 5>\n<Custom Action Sequence>\n<Common Event Key: Bodyguard>\n<Apply State: 100% Bodyguard>\n<Bodyguard State: 83>\n<Cannot Target User>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2315,7 +2315,7 @@
       "type": 3,
       "variance": 0
     },
-    "description": "Cura pesada baseada na defesa do Kilin.",
+    "description": "Cura aliado — baseada em DEF. Cast 1s",
     "effects": [],
     "hitType": 0,
     "iconIndex": 63,
@@ -2324,7 +2324,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Vigor do Guardiao",
-    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 28>\n// [Coreto_CastTimeTags] - Cast time padrão 1s\n<Cast Time: 1s>\n<ATB After Gauge: -10%>",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 28>\n// [Coreto_CastTimeTags] - Cast time padrão 1s\n<Cast Time: 1s>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2346,7 +2346,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Kilin se torna a muralha definitiva, protegendo todos os aliados.",
+    "description": "Protege todos os aliados absorvendo 50% do dano. Cast 5s",
     "effects": [],
     "hitType": 0,
     "iconIndex": 63,
@@ -2355,7 +2355,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Muralha Contra Impacto",
-    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 35>\n// [Coreto_CastTimeTags] - Cast time original: speed -500\n<Cast Time: 5s>\n<Target: All Allies But User>\n<Apply State: 100% Muralha Contra Impacto (aliados)>\n<ATB After Gauge: -20%>\n<JS On Use Action>\nuser.addState(86);\n</JS On Use Action>\n",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 35>\n// [Coreto_CastTimeTags] - Cast time original: speed -500\n<Cast Time: 5s>\n<Target: All Allies But User>\n<Apply State: 100% Muralha Contra Impacto (aliados)>\n<JS On Use Action>\nuser.addState(86);\n</JS On Use Action>\n",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2408,7 +2408,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "Contra-ataque automatico ativado pela Postura Fluida. Gera Furia.",
+    "description": "Contra-ataca automaticamente ao ser atacado. Gera Furia",
     "effects": [],
     "hitType": 1,
     "iconIndex": 72,
@@ -2439,7 +2439,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Postura ofensiva: ATK+30%, DEF-20%, ataques nao erram. Perde HP por turno.",
+    "description": "Postura ofensiva: ATK+30%, DEF-20%, ataques nao erram. Perde HP por turno",
     "effects": [],
     "hitType": 0,
     "iconIndex": 67,
@@ -2470,7 +2470,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Postura defensiva: contra-ataca automaticamente qualquer ataque recebido.",
+    "description": "Postura defensiva: contra-ataca automaticamente ao ser atacado",
     "effects": [],
     "hitType": 0,
     "iconIndex": 78,
@@ -2501,7 +2501,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Sede de sangue que concede roubo de vida em ataques fisicos por 5 turnos.",
+    "description": "Life steal em ataques fisicos por 5 turnos. Gera Furia",
     "effects": [],
     "hitType": 0,
     "iconIndex": 56,
@@ -2532,7 +2532,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Couraca que aumenta a DEF por 5 turnos. Gera Furia.",
+    "description": "Aumenta DEF por 5 turnos. Gera Furia",
     "effects": [
       {
         "code": 31,
@@ -2570,7 +2570,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "Investida furiosa que causa dano e atordoa o alvo.",
+    "description": "Alvo unico — cast 1s. 5.63x ATK, atordoa o alvo",
     "effects": [],
     "hitType": 1,
     "iconIndex": 69,
@@ -2601,7 +2601,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "Golpe rapido que reduz a DEF do alvo. Sinergiza com Execucao.",
+    "description": "Alvo unico — 4.51x ATK. Reduz DEF do alvo por 1 turno",
     "effects": [
       {
         "code": 33,
@@ -2639,7 +2639,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "Redemoinho de aco que atinge todos os inimigos.",
+    "description": "Todos inimigos — cast 4.8s. 9.39x ATK",
     "effects": [],
     "hitType": 1,
     "iconIndex": 63,
@@ -2670,7 +2670,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "Tres golpes furiosos consecutivos em um unico alvo.",
+    "description": "Alvo unico — cast 4.8s. 9.39x ATK (3 hits)",
     "effects": [],
     "hitType": 1,
     "iconIndex": 5,
@@ -2701,7 +2701,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "Poderosa investida em area. Quanto menor o HP, maior o dano.",
+    "description": "Todos inimigos — cast 5s. 15x ATK. Dano escala com HP baixo",
     "effects": [],
     "hitType": 1,
     "iconIndex": 32,
@@ -2732,7 +2732,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "Execucao precisa que ignora armadura e causa mais dano em alvos vulneraveis.",
+    "description": "Alvo unico — cast 5s. 12x ATK com 25% pen e 15% life steal",
     "effects": [],
     "hitType": 1,
     "iconIndex": 65,
@@ -2763,7 +2763,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "Frenesi total: 5 golpes em alvos aleatorios, escala com Furia acumulada.",
+    "description": "5 alvos aleatorios — cast 5s. 12x ATK, nao interrompivel. Consome toda Furia e 3% HP",
     "effects": [],
     "hitType": 1,
     "iconIndex": 5,
@@ -2856,7 +2856,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "Disparo rapido com a funda — impreciso mas util para manter o ritmo de Foco. A velocidade vem com o custo da precisao.",
+    "description": "Alvo unico — 1.88x ATK. Gera Foco",
     "effects": [],
     "hitType": 1,
     "iconIndex": 66,
@@ -2887,7 +2887,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "Disparo rapido com a funda — impreciso mas util para manter o ritmo de Foco. A velocidade vem com o custo da precisao.",
+    "description": "Alvo unico — 1.88x ATK. Gera Foco",
     "effects": [],
     "hitType": 1,
     "iconIndex": 0,
@@ -2918,7 +2918,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "Thorin calibra a mira antes de disparar — mais lento mas mais preciso e recompensador. A paciencia gera mais Foco e chance de critico.",
+    "description": "Alvo unico — cast 3.4s. 3x ATK com crit +10%. Gera Foco",
     "effects": [],
     "hitType": 1,
     "iconIndex": 0,
@@ -2927,7 +2927,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Disparo Calibrado",
-    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Gain TP: +8>\n// [Coreto_CastTimeTags] - Cast time original: speed -125\n<Cast Time: 3.4s>\n<Common Event Key: Disparo Calibrado>\n<Modify Critical Rate: +10%>\n<ATB Cast Gauge: 70%>\n\n",
+    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Gain TP: +8>\n// [Coreto_CastTimeTags] - Cast time original: speed -125\n<Cast Time: 3.4s>\n<Common Event Key: Disparo Calibrado>\n<Modify Critical Rate: +10%>\n\n",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2949,7 +2949,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "Um disparo focado que aproveita o Foco acumulado para perfurar armadura. Significativamente mais forte contra alvos marcados pela Filena.",
+    "description": "Alvo unico — cast 4s. 3.39x ATK com 15% pen. +25% dano vs marcados",
     "effects": [],
     "hitType": 1,
     "iconIndex": 4,
@@ -2980,7 +2980,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "Projetil que atinge ponto vulneravel do inimigo, desestabilizando-o e reduzindo sua velocidade de acao.",
+    "description": "Alvo unico — 3.76x ATK. Reduz AGI do alvo",
     "effects": [
       {
         "code": 33,
@@ -3018,7 +3018,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "Thorin dispara uma rajada de projeteis fragmentados que atingem o alvo multiplas vezes. Cada hit beneficia do Armor Pen do Olho de Falcao.",
+    "description": "Alvo unico — cast 4s. 2.82x ATK com 5% pen, crit +5%",
     "effects": [],
     "hitType": 1,
     "iconIndex": 4,
@@ -3049,7 +3049,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "Thorin aproveita uma abertura no alvo para um disparo devastador. Significativamente mais forte contra alvos atordoados — a mecanica central de capitalizar em CC.",
+    "description": "Alvo unico — cast 4s. 4.33x ATK com 10% pen, crit +10%. +30% dano vs atordoados",
     "effects": [],
     "hitType": 1,
     "iconIndex": 0,
@@ -3080,7 +3080,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Thorin entra em estado de concentracao absoluta — \nsuas skills ficam mais lentas mas muito mais precisas e devastadoras. ",
+    "description": "Concentracao absoluta: crit +20% em todas as skills",
     "effects": [],
     "hitType": 0,
     "iconIndex": 20,
@@ -3111,7 +3111,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "Em desespero, Thorin dispara 5 projeteis em inimigos aleatorios — caotico, arriscado, mas devastador se os projeteis convergirem no mesmo alvo.",
+    "description": "5 alvos aleatorios — cast 3.4s. 7.51x ATK",
     "effects": [],
     "hitType": 1,
     "iconIndex": 63,
@@ -3142,7 +3142,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "O tiro mais poderoso do arsenal de Thorin — projetil pesado que ignora grande parte da armadura. Lento, telegrafado, interrompivel. Precisa de protecao do Kilin para castar em seguranca.",
+    "description": "Alvo unico — cast 5s. 8x ATK com 30% pen, crit +15%. Interrompe conjuracao",
     "effects": [],
     "hitType": 1,
     "iconIndex": 0,
@@ -3173,7 +3173,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "Thorin investe TODO o seu Foco em um unico tiro devastador.",
+    "description": "Alvo unico — cast 7.4s. 8.5x ATK com 50% pen, crit +20%. Imbloqueavel",
     "effects": [],
     "hitType": 1,
     "iconIndex": 0,
@@ -3182,7 +3182,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Tiro de Ace",
-    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 60>\n// [Coreto_CastTimeTags] - Cast time original: speed -600\n<Cast Time: 7.4s>\n<Common Event Key: Tiro de Ace>\n<Armor Penetration: 50%>\n<Unblockable>\n// [VisuStella ATB] - Se alvo esta castando, barra de cast vai pra 25%\n<ATB Cast Gauge: 25%>\n<Modify Critical Rate: +20%>\n",
+    "note": "// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 60>\n// [Coreto_CastTimeTags] - Cast time original: speed -600\n<Cast Time: 7.4s>\n<Common Event Key: Tiro de Ace>\n<Armor Penetration: 50%>\n<Unblockable>\n<Modify Critical Rate: +20%>\n",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
