@@ -39879,7 +39879,7 @@
           "MOTION: Motion Type",
           {
             "Targets:arraystr": "[\"user\"]",
-            "MotionType:str": "wait",
+            "MotionType:str": "missile",
             "ShowWeapon:eval": "false"
           }
         ]
@@ -39892,7 +39892,7 @@
       {
         "code": 657,
         "indent": 0,
-        "parameters": ["Motion Type = wait"]
+        "parameters": ["Motion Type = missile"]
       },
       {
         "code": 657,
