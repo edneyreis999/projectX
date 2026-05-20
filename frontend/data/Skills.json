@@ -395,7 +395,7 @@
   },
   {
     "id": 13,
-    "animationId": 94,
+    "animationId": 0,
     "damage": {
       "critical": false,
       "elementId": 1,
@@ -419,7 +419,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Levantar Poeira",
-    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Spend TP: 10>\n// [Coreto_CastTimeTags] - Cast time padrão 1s\n<Cast Time: 1s>\n\n<Any AI Conditions>\n $gameParty.aliveMembers().filter(m => !m.isStateAffected(5)).length >= Math.ceil($gameParty.aliveMembers().length * 0.6) === true\n</Any AI Conditions>",
+    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Spend TP: 10>\n// [Coreto_CastTimeTags] - Cast time padrão 1s\n<Cast Time: 1s>\n<Common Event Key: Levantar Poeira>\n\n<Any AI Conditions>\n $gameParty.aliveMembers().filter(m => !m.isStateAffected(5)).length >= Math.ceil($gameParty.aliveMembers().length * 0.6) === true\n</Any AI Conditions>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -488,7 +488,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Enfurecer",
-    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Gain TP: +15>\n\n<All AI Conditions>\n User Not State 7\n</All AI Conditions>\n<Any AI Conditions>\n user tp >= 40\n User HP% <= 0.50\n</Any AI Conditions>",
+    "note": "// [Coreto TpNotetags] - Ganho de TP ao usar a skill\n<Gain TP: +15>\n<Common Event Key: Enfurecer>\n\n<All AI Conditions>\n User Not State 7\n</All AI Conditions>\n\n<Any AI Conditions>\n user tp >= 40\n User HP% <= 0.50\n</Any AI Conditions>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
