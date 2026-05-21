@@ -13,8 +13,8 @@ O tooltip de state aparece ao passar o mouse sobre o icone de state na HUD de ba
 
 ## Arquivos
 
-- **States.json**: `/Users/edney/projects/coreto/projectX/frontend/data/States.json`
-- **Analise do plugin**: `/Users/edney/projects/coreto/projectX/planos/027-state-tooltip-skill/analise-plugin.md`
+- **States.json**: `projectX/frontend/data/States.json`
+- **Analise do plugin**: `projectX/docs/rpg-maker-for-ia/docs-visustella/battle-plugins/visustella-state-tooltip/analise-plugin.md`
 
 ## Formato Obrigatorio
 
@@ -35,8 +35,6 @@ O tooltip e injetado no campo `note` do state via notetag:
 </State Tooltip Description>
 ```
 
-Buffs/debuffs nativos do RPG Maker (param rate +/-) NAO precisam de tooltip — o plugin trata automaticamente com formato proprio mostrando icone, nome e porcentagem.
-
 States de sistema, placeholders e separadores devem receber `<Exclude From Tooltips>`.
 
 ## O que INCLUIR
@@ -56,7 +54,6 @@ States de sistema, placeholders e separadores devem receber `<Exclude From Toolt
 - Icon — ja visivel no tooltip
 - Detalhes de implementacao JS ou codigo
 - Narrativa ou lore
-- Valores que o plugin de buffs/debuffs ja mostra automaticamente
 
 ---
 
@@ -206,6 +203,5 @@ Se o usuario pedir para processar multiplos states, iterar sobre cada um individ
 Se estiver criando um state novo, gerar o tooltip como parte do processo, apos definir todos os campos mecanicos (traits, notetags, restriction, autoRemovalTiming).
 
 ### States que NAO precisam de tooltip
-- Buffs/debuffs nativos do RPG Maker (sem notetags customizadas, apenas param rate changes)
 - States de sistema com `<Exclude From Tooltips>`
 - Placeholders e separadores
