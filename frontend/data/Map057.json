@@ -643,7 +643,7 @@
             "variableValid": false,
             "variableValue": 0
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": {
             "tileId": 0,
             "characterName": "Boss/$CoretoBoss1",
@@ -655,7 +655,7 @@
             {
               "code": 301,
               "indent": 0,
-              "parameters": [0, 32, false, true]
+              "parameters": [0, 32, true, true]
             },
             {
               "code": 601,
@@ -670,6 +670,16 @@
             {
               "code": 214,
               "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 602,
+              "indent": 0,
               "parameters": []
             },
             {
@@ -773,7 +783,7 @@
             "variableValid": false,
             "variableValue": 0
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": {
             "tileId": 0,
             "characterName": "Boss/$CoretoBoss1",
@@ -785,7 +795,7 @@
             {
               "code": 301,
               "indent": 0,
-              "parameters": [0, 52, false, true]
+              "parameters": [0, 52, true, true]
             },
             {
               "code": 601,
@@ -800,6 +810,16 @@
             {
               "code": 214,
               "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 602,
+              "indent": 0,
               "parameters": []
             },
             {
@@ -903,7 +923,7 @@
             "variableValid": false,
             "variableValue": 0
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": {
             "tileId": 0,
             "characterName": "Boss/$CoretoBoss1",
@@ -915,7 +935,7 @@
             {
               "code": 301,
               "indent": 0,
-              "parameters": [0, 53, false, true]
+              "parameters": [0, 53, true, true]
             },
             {
               "code": 601,
@@ -930,6 +950,16 @@
             {
               "code": 214,
               "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 602,
+              "indent": 0,
               "parameters": []
             },
             {

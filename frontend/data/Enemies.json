@@ -680,7 +680,7 @@
         "denominator": 1
       }
     ],
-    "note": "<ATB Field Gauge Face: Bosses, 2>\n\n// [Battle Core Notetags - Animated Sideview Battler]\n<Sideview Battler: Cristaleao>\n<Sideview Idle Motion: wait>\n\n<TP Mode: Boss>\n<AI Style: Gambit>\n<AI Level: 100>\n<AI Rating Variance: 0>"
+    "note": "<ATB Field Gauge Face: Bosses, 2>\n\n// [Battle Core Notetags - Animated Sideview Battler]\n<Sideview Battler: Cristaleao>\n<Sideview Idle Motion: wait>\n<Fúria Sideview Idle Motion: chant>\n\n<TP Mode: Boss>\n<AI Style: Gambit>\n<AI Level: 100>\n<AI Rating Variance: 0>"
   },
   {
     "id": 18,
