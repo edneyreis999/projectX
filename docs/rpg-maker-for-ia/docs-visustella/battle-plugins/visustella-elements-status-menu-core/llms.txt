@@ -1,0 +1,27 @@
+# VisuStella Elements & Status Menu Core
+
+Plugin Tier 1 para RPG Maker MZ. Controle de dano elemental, Trait Sets e Status Menu.
+
+## Areas Principais
+
+- conceitos/ - Visao geral, calculo elemental, multi-elemento, trait sets
+- notetags/ - Elementos, JS elementos, trait sets, biografia, referencia rapida
+- comandos/ - Plugin commands ator/inimigo, script calls
+- parametros/ - Element rulings, status menu, categorias, trait sets
+- referencia/ - Formulas, glossario
+
+## Ordem de Navegacao
+
+1. conceitos/visao-geral.md
+2. conceitos/calculo-dano-elemental.md
+3. conceitos/multi-elemento.md
+4. conceitos/trait-sets.md
+5. notetags/referencia-rapida.md
+6. Demais arquivos por necessidade
+
+## Conceitos-Chave
+
+- **Trait Sets**: 10 tipos (Element, SubElement, Gender, Race, Nature, Alignment, Blessing, Curse, Zodiac, Variant)
+- **Formula Dano**: (base + plus) * rate + flat
+- **Multi-Element Rules**: Maximum, Minimum, Multiply, Additive, Average
+- **Element Operations**: Absorb, Reflect, Pierce, Force
