@@ -1964,7 +1964,7 @@
     "chanceByDamage": 100,
     "traits": [
       {
-        "code": 12,
+        "code": 21,
         "dataId": 6,
         "value": 0.7
       }
@@ -1979,7 +1979,7 @@
     "minTurns": 3,
     "motion": 0,
     "name": "Slow",
-    "note": "<Exclude From Tooltips>",
+    "note": "<State Tooltip Description>\n AGI-30%\n</State Tooltip Description>",
     "overlay": 0,
     "priority": 50,
     "removeAtBattleEnd": true,
@@ -2557,7 +2557,7 @@
     "minTurns": 3,
     "motion": 0,
     "name": "Postura Fluida",
-    "note": "<Exclude From Tooltips>",
+    "note": "<State Tooltip Description>\n Contra-ataca automaticamente ao receber ataque\n</State Tooltip Description>",
     "overlay": 0,
     "priority": 50,
     "removeAtBattleEnd": true,
