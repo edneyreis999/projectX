@@ -1,0 +1,26 @@
+# Asset Whitelist - Arquivos que NUNCA serao removidos
+# Um pattern por linha. # = comentario. * = wildcard.
+
+# Assets do sistema RPG Maker (sempre necessarios)
+img/system/*
+
+# Diretorios gerenciados por plugins (nao e possivel determinar uso sem executar)
+img/charactersAA/*
+img/pSimpleFishing/*
+img/pSQSystem/*
+
+# Effects - carregados em runtime pelo Effekseer (Texture/Model sao dependencias dos .efkefc)
+effects/*
+
+# Fonts
+fonts/*
+
+# Characters - subpastas usadas dinamicamente pelo jogo (nao rastreavel via JSON)
+img/characters/Boss/*
+img/characters/CasaForjaprata/*
+img/characters/Conselho/*
+img/characters/Distrito Residencial Nobre/*
+img/characters/Estadio/*
+img/characters/Kravens/*
+img/characters/Mina de Melios/*
+img/characters/Principal/*

@@ -1,0 +1,2546 @@
+{
+  "timestamp": "2026-05-22T23:38:27.839Z",
+  "deletedFiles": [
+    {
+      "path": "img/characters/!$Barraca.png",
+      "size": 133683,
+      "hash": "ed3e82e9c1632ea6"
+    },
+    {
+      "path": "img/characters/!$Estatua.png",
+      "size": 158766,
+      "hash": "5983e3a9a0242327"
+    },
+    {
+      "path": "img/characters/!$Gate1.png",
+      "size": 117881,
+      "hash": "233ca3f76f0c6416"
+    },
+    {
+      "path": "img/characters/!$Gate2.png",
+      "size": 80694,
+      "hash": "43a2a7fc5f258d74"
+    },
+    {
+      "path": "img/characters/!$Kraven.png",
+      "size": 7520,
+      "hash": "0d2f3f1418586367"
+    },
+    {
+      "path": "img/characters/!$MesaMarmore.png",
+      "size": 12134,
+      "hash": "cb5c463176936500"
+    },
+    {
+      "path": "img/characters/!$SF_Gate1.png",
+      "size": 43558,
+      "hash": "f9eb99d8baacd226"
+    },
+    {
+      "path": "img/characters/!$SF_Gate2.png",
+      "size": 38646,
+      "hash": "00eebf666e77a02f"
+    },
+    {
+      "path": "img/characters/!$SF_Gate3.png",
+      "size": 31488,
+      "hash": "ede50e3b2fd1165a"
+    },
+    {
+      "path": "img/characters/!$Tenda.png",
+      "size": 143979,
+      "hash": "07dc1cbe400ab2e8"
+    },
+    {
+      "path": "img/characters/!Chest.png",
+      "size": 22691,
+      "hash": "2b1ee69f93ed737f"
+    },
+    {
+      "path": "img/characters/!Crystal.png",
+      "size": 94602,
+      "hash": "deb95acb134e15f8"
+    },
+    {
+      "path": "img/characters/!Door1.png",
+      "size": 119516,
+      "hash": "e2b25993a32ebc34"
+    },
+    {
+      "path": "img/characters/!Door2.png",
+      "size": 75537,
+      "hash": "51eb07aac420a094"
+    },
+    {
+      "path": "img/characters/!DoorCoreto.png",
+      "size": 37291,
+      "hash": "92682e54beda084b"
+    },
+    {
+      "path": "img/characters/!Flame.png",
+      "size": 49046,
+      "hash": "36b3f169fc05367f"
+    },
+    {
+      "path": "img/characters/!Other1.png",
+      "size": 49745,
+      "hash": "41644ad32acc76f1"
+    },
+    {
+      "path": "img/characters/!Other2.png",
+      "size": 129975,
+      "hash": "23a212f36af52ed8"
+    },
+    {
+      "path": "img/characters/!SF_Chest.png",
+      "size": 20963,
+      "hash": "77491ed5a72b3109"
+    },
+    {
+      "path": "img/characters/!SF_Door1.png",
+      "size": 53288,
+      "hash": "79565aeed6e5735d"
+    },
+    {
+      "path": "img/characters/!SF_Door2.png",
+      "size": 44295,
+      "hash": "23679e6f3d95d0bd"
+    },
+    {
+      "path": "img/characters/!SF_Switch1.png",
+      "size": 10810,
+      "hash": "d5c7feed0efb953d"
+    },
+    {
+      "path": "img/characters/!Switch1.png",
+      "size": 14625,
+      "hash": "2a8a6508a5fb42dc"
+    },
+    {
+      "path": "img/characters/!Switch2.png",
+      "size": 17847,
+      "hash": "4bac09ce70667d55"
+    },
+    {
+      "path": "img/characters/!Weapon.png",
+      "size": 45153,
+      "hash": "d24e7abc10e2c215"
+    },
+    {
+      "path": "img/characters/$Balastrus.png",
+      "size": 48592,
+      "hash": "d1ce152d86e0ee35"
+    },
+    {
+      "path": "img/characters/$BigMonster1-inv.png",
+      "size": 77460,
+      "hash": "5d7b4ed91b488419"
+    },
+    {
+      "path": "img/characters/$BigMonster1.png",
+      "size": 25283,
+      "hash": "01a3403b5844e692"
+    },
+    {
+      "path": "img/characters/$BigMonster2.png",
+      "size": 42073,
+      "hash": "651ccf13d95dcc6d"
+    },
+    {
+      "path": "img/characters/$Filena.png",
+      "size": 46817,
+      "hash": "6102161a94d73fca"
+    },
+    {
+      "path": "img/characters/$ThorinMining.png",
+      "size": 108412,
+      "hash": "a5076fe5addde232"
+    },
+    {
+      "path": "img/characters/Actor1.png",
+      "size": 124833,
+      "hash": "484defc0c54b23af"
+    },
+    {
+      "path": "img/characters/Actor2.png",
+      "size": 42986,
+      "hash": "65e7e146945a8654"
+    },
+    {
+      "path": "img/characters/Boss/$CoretoBoss1.png",
+      "size": 78577,
+      "hash": "5496d9de2ed5a0b2"
+    },
+    {
+      "path": "img/characters/Boss/Mhordred.png",
+      "size": 75249,
+      "hash": "1ca027e4e920b5d2"
+    },
+    {
+      "path": "img/characters/CasaForjaprata/!$cobertorCama.png",
+      "size": 11480,
+      "hash": "4dcb41ee9fb8e838"
+    },
+    {
+      "path": "img/characters/CasaForjaprata/$Iluminacao.png",
+      "size": 33002,
+      "hash": "26da8a82ba5911f7"
+    },
+    {
+      "path": "img/characters/Conselho/$Conselheiro1.png",
+      "size": 49604,
+      "hash": "295cec1e3230c052"
+    },
+    {
+      "path": "img/characters/Conselho/$Conselheiro2.png",
+      "size": 50440,
+      "hash": "1f8e0c9310f283e4"
+    },
+    {
+      "path": "img/characters/Conselho/$Conselheiro3.png",
+      "size": 52852,
+      "hash": "ec2297f7065ae03d"
+    },
+    {
+      "path": "img/characters/Conselho/$Conselheiro4.png",
+      "size": 51184,
+      "hash": "d672b7068056dd8d"
+    },
+    {
+      "path": "img/characters/Conselho/$Dambur.png",
+      "size": 57052,
+      "hash": "478a9e5d4c1d5d4b"
+    },
+    {
+      "path": "img/characters/Damage1.png",
+      "size": 58084,
+      "hash": "7ee9846b666f938a"
+    },
+    {
+      "path": "img/characters/Damage2.png",
+      "size": 138247,
+      "hash": "ac1f56f259e130e9"
+    },
+    {
+      "path": "img/characters/Damage3.png",
+      "size": 27833,
+      "hash": "068994d74d4c251a"
+    },
+    {
+      "path": "img/characters/Damage_ex1.png",
+      "size": 19941,
+      "hash": "7bd65a797c8b28b1"
+    },
+    {
+      "path": "img/characters/Distrito Residncial Nobre/$Espelho.png",
+      "size": 57183,
+      "hash": "97d1a30b0b1a217a"
+    },
+    {
+      "path": "img/characters/Distrito Residncial Nobre/$EspelhoSemReflexo.png",
+      "size": 33902,
+      "hash": "37b0098ba020e30a"
+    },
+    {
+      "path": "img/characters/Distrito Residncial Nobre/$Fonte.png",
+      "size": 518156,
+      "hash": "a7dd5282b6ec6fd4"
+    },
+    {
+      "path": "img/characters/Distrito Residncial Nobre/$Goteira.png",
+      "size": 12099,
+      "hash": "27e1c090c2f456fc"
+    },
+    {
+      "path": "img/characters/Distrito Residncial Nobre/$Iluminacao.png",
+      "size": 61215,
+      "hash": "bc3216b7aa54fbd8"
+    },
+    {
+      "path": "img/characters/Distrito Residncial Nobre/$Mural.png",
+      "size": 33849,
+      "hash": "4e0f82b4f6549d16"
+    },
+    {
+      "path": "img/characters/Estadio/$Adversario1.png",
+      "size": 49794,
+      "hash": "ca7c06b90fcfcfa8"
+    },
+    {
+      "path": "img/characters/Estadio/$Adversario2.png",
+      "size": 47640,
+      "hash": "900fdedc15765eeb"
+    },
+    {
+      "path": "img/characters/Estadio/$Adversario3.png",
+      "size": 57107,
+      "hash": "c675d968711785c0"
+    },
+    {
+      "path": "img/characters/Estadio/$Adversario4.png",
+      "size": 49815,
+      "hash": "d237f156f1e24145"
+    },
+    {
+      "path": "img/characters/Estadio/$Companheiro1.png",
+      "size": 48041,
+      "hash": "20dee58a66771831"
+    },
+    {
+      "path": "img/characters/Estadio/$Companheiro2.png",
+      "size": 51974,
+      "hash": "40a7c7b1b02c50d7"
+    },
+    {
+      "path": "img/characters/Estadio/$Torcedor1.png",
+      "size": 47782,
+      "hash": "03f99040141433b6"
+    },
+    {
+      "path": "img/characters/Estadio/$Torcedor2.png",
+      "size": 53018,
+      "hash": "ad141e154ee23f61"
+    },
+    {
+      "path": "img/characters/Estadio/$Torcedor3.png",
+      "size": 46520,
+      "hash": "596f701617e5c4d9"
+    },
+    {
+      "path": "img/characters/Estadio/Vestiario/!$Armadura.png",
+      "size": 9789,
+      "hash": "b8a427458a86e7dc"
+    },
+    {
+      "path": "img/characters/Estadio/Vestiario/!$Capacete.png",
+      "size": 12092,
+      "hash": "ee61827d47b4e599"
+    },
+    {
+      "path": "img/characters/Estadio/Vestiario/$Menina1.png",
+      "size": 52345,
+      "hash": "ef264f0cb22c8894"
+    },
+    {
+      "path": "img/characters/Estadio/Vestiario/$Menina2.png",
+      "size": 53378,
+      "hash": "a536667bce3271d1"
+    },
+    {
+      "path": "img/characters/Estadio/Vestiario/$Menina3.png",
+      "size": 52081,
+      "hash": "bb45a155b8ef2adc"
+    },
+    {
+      "path": "img/characters/Estadio/Vestiario/$Menina4.png",
+      "size": 52280,
+      "hash": "65f67fd39fd2b2b6"
+    },
+    {
+      "path": "img/characters/Evil.png",
+      "size": 117558,
+      "hash": "ffa7edc41ddf8b40"
+    },
+    {
+      "path": "img/characters/Filin-fell.png",
+      "size": 5519,
+      "hash": "6525f6de6f38babf"
+    },
+    {
+      "path": "img/characters/Filin.png",
+      "size": 15559,
+      "hash": "dee821c4220172a5"
+    },
+    {
+      "path": "img/characters/Kravens/!$Caldeirao.png",
+      "size": 39351,
+      "hash": "1e2c03e1ddb18634"
+    },
+    {
+      "path": "img/characters/Kravens/!$PassagemBloqueada.png",
+      "size": 74731,
+      "hash": "3080a6f04b0b44d2"
+    },
+    {
+      "path": "img/characters/Kravens/!$buraco.png",
+      "size": 10303,
+      "hash": "930973349bc3a520"
+    },
+    {
+      "path": "img/characters/Kravens/!$cobertorCama.png",
+      "size": 15574,
+      "hash": "202d57e0e6aadccb"
+    },
+    {
+      "path": "img/characters/Kravens/$Borin.png",
+      "size": 51726,
+      "hash": "81bd4034fb3ef64a"
+    },
+    {
+      "path": "img/characters/Kravens/$Expedicionario1.png",
+      "size": 46761,
+      "hash": "4dbce8fce8dd4cde"
+    },
+    {
+      "path": "img/characters/Kravens/$Expedicionario2.png",
+      "size": 47556,
+      "hash": "46e6f327b0f19d93"
+    },
+    {
+      "path": "img/characters/Kravens/$Expedicionario3.png",
+      "size": 46010,
+      "hash": "9ab4b82910137723"
+    },
+    {
+      "path": "img/characters/Kravens/$Expedicionario4.png",
+      "size": 54566,
+      "hash": "22ddb3f09b22d6fc"
+    },
+    {
+      "path": "img/characters/Kravens/$Expedicionario5.png",
+      "size": 49033,
+      "hash": "90996442cc17da50"
+    },
+    {
+      "path": "img/characters/Kravens/$GuardaKravens.png",
+      "size": 51521,
+      "hash": "cbd5457309695156"
+    },
+    {
+      "path": "img/characters/Kravens/$Minerador1Andar1.png",
+      "size": 50763,
+      "hash": "be258e608e1a9671"
+    },
+    {
+      "path": "img/characters/Kravens/$Minerador1Andar2.png",
+      "size": 48153,
+      "hash": "8df9c954b928239b"
+    },
+    {
+      "path": "img/characters/Kravens/$Minerador2Andar1.png",
+      "size": 48373,
+      "hash": "62333abf8ff65115"
+    },
+    {
+      "path": "img/characters/Kravens/$Minerador2Andar2.png",
+      "size": 56152,
+      "hash": "a29c089d4d823351"
+    },
+    {
+      "path": "img/characters/Kravens/$Minerador3Andar2.png",
+      "size": 51152,
+      "hash": "29bf9dfd7de3fe71"
+    },
+    {
+      "path": "img/characters/Kravens/$Minerador4Andar2.png",
+      "size": 51410,
+      "hash": "a47f76c04cb20f3f"
+    },
+    {
+      "path": "img/characters/Kravens/$Rebelde1.png",
+      "size": 50244,
+      "hash": "e62aef96f68a34fd"
+    },
+    {
+      "path": "img/characters/Kravens/$Rebelde2.png",
+      "size": 49282,
+      "hash": "c0cfb28540885832"
+    },
+    {
+      "path": "img/characters/Kravens/$Rebelde3.png",
+      "size": 50925,
+      "hash": "fe1ce98f9bb0dab3"
+    },
+    {
+      "path": "img/characters/Kravens/$Rebelde4.png",
+      "size": 55561,
+      "hash": "a1983bbbba9383ef"
+    },
+    {
+      "path": "img/characters/Mina de Melios/!$Pedras.png",
+      "size": 99263,
+      "hash": "8b7f20aaf63fad73"
+    },
+    {
+      "path": "img/characters/Monster.png",
+      "size": 50137,
+      "hash": "9e4fbd1d40b8477a"
+    },
+    {
+      "path": "img/characters/Nature.png",
+      "size": 35668,
+      "hash": "2fe7fddbc2775dd0"
+    },
+    {
+      "path": "img/characters/People2.png",
+      "size": 36102,
+      "hash": "158c9ee1975ddd27"
+    },
+    {
+      "path": "img/characters/People3.png",
+      "size": 113810,
+      "hash": "85e315451e7da175"
+    },
+    {
+      "path": "img/characters/People4.png",
+      "size": 107644,
+      "hash": "8c91329306e17943"
+    },
+    {
+      "path": "img/characters/People_ex1.png",
+      "size": 46482,
+      "hash": "263a1272af6cf758"
+    },
+    {
+      "path": "img/characters/Principal/$Borin.png",
+      "size": 48765,
+      "hash": "90f13448dd807f34"
+    },
+    {
+      "path": "img/characters/Principal/$DonoDaLojaDeRoupa.png",
+      "size": 52411,
+      "hash": "d189c18f4b1f6a6b"
+    },
+    {
+      "path": "img/characters/Principal/$Melia.png",
+      "size": 48940,
+      "hash": "73c12fc0a649988b"
+    },
+    {
+      "path": "img/characters/Principal/$MãeThorin.png",
+      "size": 48250,
+      "hash": "96fa658f0fb22dd9"
+    },
+    {
+      "path": "img/characters/Principal/$Taverneiro.png",
+      "size": 44581,
+      "hash": "8ef1df94e1b8c6ae"
+    },
+    {
+      "path": "img/characters/Principal/$Tharok.png",
+      "size": 47874,
+      "hash": "e6847c12f576d69a"
+    },
+    {
+      "path": "img/characters/Principal/$ThorinArmorHelmet.png",
+      "size": 75730,
+      "hash": "aa7a9a8253eb80cb"
+    },
+    {
+      "path": "img/characters/Principal/$ThorinHelmet.png",
+      "size": 71022,
+      "hash": "767ea9872d7b53f6"
+    },
+    {
+      "path": "img/characters/Principal/$Tordan.png",
+      "size": 48765,
+      "hash": "90f13448dd807f34"
+    },
+    {
+      "path": "img/characters/Principal/$Treinador.png",
+      "size": 46608,
+      "hash": "3f6036f0cbeae198"
+    },
+    {
+      "path": "img/characters/Principal/$Tusk.png",
+      "size": 57400,
+      "hash": "4f19633c2e39772b"
+    },
+    {
+      "path": "img/characters/Principal/Filena.png",
+      "size": 46817,
+      "hash": "6102161a94d73fca"
+    },
+    {
+      "path": "img/characters/Reed.png",
+      "size": 15428,
+      "hash": "58dbc9ad2bca9bfc"
+    },
+    {
+      "path": "img/characters/SF_Actor1.png",
+      "size": 36887,
+      "hash": "b9266f8c0b74c7f2"
+    },
+    {
+      "path": "img/characters/SF_Actor2.png",
+      "size": 35755,
+      "hash": "a189da3512e883e2"
+    },
+    {
+      "path": "img/characters/SF_Actor3.png",
+      "size": 35695,
+      "hash": "3304461998299373"
+    },
+    {
+      "path": "img/characters/SF_Damage1.png",
+      "size": 48755,
+      "hash": "fd305f1492bb2218"
+    },
+    {
+      "path": "img/characters/SF_Damage2.png",
+      "size": 32741,
+      "hash": "2360a2579c239fe8"
+    },
+    {
+      "path": "img/characters/SF_Monster.png",
+      "size": 35243,
+      "hash": "f327da83d4c65a4d"
+    },
+    {
+      "path": "img/characters/SF_People1.png",
+      "size": 32874,
+      "hash": "0dff10bf9746a668"
+    },
+    {
+      "path": "img/characters/SF_People2.png",
+      "size": 29074,
+      "hash": "e349de7fa9ed030d"
+    },
+    {
+      "path": "img/characters/SF_People3.png",
+      "size": 30033,
+      "hash": "9f8809a6315b94e5"
+    },
+    {
+      "path": "img/characters/SF_Vehicle.png",
+      "size": 19367,
+      "hash": "9a5db151e121c828"
+    },
+    {
+      "path": "img/characters/Soldiers.png",
+      "size": 18062,
+      "hash": "d8a348551a7a32be"
+    },
+    {
+      "path": "img/characters/Soldiers_down.png",
+      "size": 16879,
+      "hash": "98556907f61bf72a"
+    },
+    {
+      "path": "img/characters/Thorin_Fut.png",
+      "size": 76332,
+      "hash": "393d226dab8ec95a"
+    },
+    {
+      "path": "img/characters/daratrine.png",
+      "size": 222067,
+      "hash": "f6d406230a6f2b5e"
+    },
+    {
+      "path": "img/characters/dwarf1.png",
+      "size": 48970,
+      "hash": "8cecc779ff7d171c"
+    },
+    {
+      "path": "img/characters/dwarf1_emote.png",
+      "size": 46435,
+      "hash": "c609ad3f085849a6"
+    },
+    {
+      "path": "img/characters/dwarf2.png",
+      "size": 55929,
+      "hash": "193ea364a0c3faae"
+    },
+    {
+      "path": "img/characters/dwarf2_emote.png",
+      "size": 55128,
+      "hash": "6fd3338e5712b307"
+    },
+    {
+      "path": "img/characters/dwarves_dmg.png",
+      "size": 11387,
+      "hash": "859ae6430aaeb0c0"
+    },
+    {
+      "path": "img/characters/dwarves_walk.png",
+      "size": 29295,
+      "hash": "fb6b4505f8f8b7c3"
+    },
+    {
+      "path": "img/characters/elf1.png",
+      "size": 44491,
+      "hash": "cfbd351c5c18c069"
+    },
+    {
+      "path": "img/characters/elf1_emote.png",
+      "size": 39443,
+      "hash": "b56959d9eee78318"
+    },
+    {
+      "path": "img/characters/elf2.png",
+      "size": 45051,
+      "hash": "5e66df77902d6ac4"
+    },
+    {
+      "path": "img/characters/elf2_emote.png",
+      "size": 39874,
+      "hash": "b7b15dd936d6ed70"
+    },
+    {
+      "path": "img/characters/elf_dmg.png",
+      "size": 6926,
+      "hash": "ca3215ff31f216bb"
+    },
+    {
+      "path": "img/characters/elf_walk.png",
+      "size": 16766,
+      "hash": "fa685863d2c58d5e"
+    },
+    {
+      "path": "img/characters/elves_dmg.png",
+      "size": 13045,
+      "hash": "9ab1ce214bdf7029"
+    },
+    {
+      "path": "img/characters/elves_walk.png",
+      "size": 35026,
+      "hash": "75b7899c3fc31d11"
+    },
+    {
+      "path": "img/characters/kilin.png",
+      "size": 17884,
+      "hash": "3abb60179d4beab9"
+    },
+    {
+      "path": "img/characters/mhordred.png",
+      "size": 18062,
+      "hash": "d8a348551a7a32be"
+    },
+    {
+      "path": "img/characters/newThorin_fut.png",
+      "size": 69601,
+      "hash": "db3927d7d2a185c0"
+    },
+    {
+      "path": "img/characters/tharok.png",
+      "size": 17509,
+      "hash": "d2f3d793a8ec6982"
+    },
+    {
+      "path": "img/characters/tusk.png",
+      "size": 16445,
+      "hash": "bb87e65de64a83dd"
+    },
+    {
+      "path": "img/faces/Bosses.png",
+      "size": 245805,
+      "hash": "3d2ce474f8afde3d"
+    },
+    {
+      "path": "img/faces/Portraits menores/Coreto.png",
+      "size": 129359,
+      "hash": "c2b66f38f77f6d6b"
+    },
+    {
+      "path": "img/faces/Portraits menores/GuardaExpedicionarios.png",
+      "size": 246171,
+      "hash": "11c8a5cedcd0a775"
+    },
+    {
+      "path": "img/faces/Portraits menores/JogadoresFutebol.png",
+      "size": 249069,
+      "hash": "24afd83764e2b389"
+    },
+    {
+      "path": "img/faces/Portraits menores/Mineradores.png",
+      "size": 238400,
+      "hash": "f716f32c8d81749f"
+    },
+    {
+      "path": "img/faces/Portraits menores/TorcedoresVestiario.png",
+      "size": 261149,
+      "hash": "d6297b1615739ab9"
+    },
+    {
+      "path": "img/parallaxes/Thorin Armadura Hemet_raiva.png",
+      "size": 272567,
+      "hash": "97abcca85bb7a1fb"
+    },
+    {
+      "path": "img/sv_actors/Cristaleao.png",
+      "size": 6507984,
+      "hash": "cb797ff7fa419963"
+    },
+    {
+      "path": "img/sv_actors/EsporoPestesporo.png",
+      "size": 368087,
+      "hash": "f3ea67ba349a7cf6"
+    },
+    {
+      "path": "img/sv_actors/LoboAlpha.png",
+      "size": 6546211,
+      "hash": "9b07bbd87942c70c"
+    },
+    {
+      "path": "img/sv_actors/LoboGuerreiro.png",
+      "size": 1368422,
+      "hash": "a6dec4087107365a"
+    },
+    {
+      "path": "img/sv_actors/Pestesporo.png",
+      "size": 4872651,
+      "hash": "c43df1cd965585e1"
+    },
+    {
+      "path": "img/sv_actors/Tharok.png",
+      "size": 555441,
+      "hash": "e383878f121f3376"
+    },
+    {
+      "path": "img/tilesets/Dungeon_A1.txt",
+      "size": 570,
+      "hash": "b4f7949db4e88e98"
+    },
+    {
+      "path": "img/tilesets/Dungeon_A1_MV_placement.png",
+      "size": 130088,
+      "hash": "54230ab2af660cad"
+    },
+    {
+      "path": "img/tilesets/Dungeon_A2.txt",
+      "size": 1215,
+      "hash": "d4bcc6855e1c4730"
+    },
+    {
+      "path": "img/tilesets/Dungeon_A2_MV_placement.png",
+      "size": 139438,
+      "hash": "fedc9b507c85dc7d"
+    },
+    {
+      "path": "img/tilesets/Dungeon_A4.txt",
+      "size": 1821,
+      "hash": "f67b127efaeefbfe"
+    },
+    {
+      "path": "img/tilesets/Dungeon_A4_MV_placement.png",
+      "size": 183788,
+      "hash": "f9b8fbee50820fe5"
+    },
+    {
+      "path": "img/tilesets/Dungeon_A5.txt",
+      "size": 6116,
+      "hash": "b2ca1a2295d81b96"
+    },
+    {
+      "path": "img/tilesets/Dungeon_A5_MV_placement.png",
+      "size": 115945,
+      "hash": "15e37da722d3b095"
+    },
+    {
+      "path": "img/tilesets/Dungeon_B.txt",
+      "size": 8601,
+      "hash": "8a6a02f06cbfc33d"
+    },
+    {
+      "path": "img/tilesets/Dungeon_B_MV_placement.png",
+      "size": 190078,
+      "hash": "d4c07506220a41d6"
+    },
+    {
+      "path": "img/tilesets/Dungeon_C.txt",
+      "size": 8845,
+      "hash": "084258fcdc3ffde6"
+    },
+    {
+      "path": "img/tilesets/Dungeon_C_MV_placement.png",
+      "size": 165401,
+      "hash": "8e39fd6c837f2824"
+    },
+    {
+      "path": "img/tilesets/Inside_A1.txt",
+      "size": 650,
+      "hash": "fa6081f3f812f613"
+    },
+    {
+      "path": "img/tilesets/Inside_A1_MV_placement.png",
+      "size": 137149,
+      "hash": "c4db7467d6c30e33"
+    },
+    {
+      "path": "img/tilesets/Inside_A2.txt",
+      "size": 1707,
+      "hash": "f36b52aa85f2c3f1"
+    },
+    {
+      "path": "img/tilesets/Inside_A2_MV_placement.png",
+      "size": 140926,
+      "hash": "8f7b284b80d3c1f8"
+    },
+    {
+      "path": "img/tilesets/Inside_A4.txt",
+      "size": 1819,
+      "hash": "185efd65a5a6b4ff"
+    },
+    {
+      "path": "img/tilesets/Inside_A4_MV_placement.png",
+      "size": 178969,
+      "hash": "053ad8434f5c5764"
+    },
+    {
+      "path": "img/tilesets/Inside_A5.txt",
+      "size": 6069,
+      "hash": "35d8115bc26adac8"
+    },
+    {
+      "path": "img/tilesets/Inside_A5_MV_placement.png",
+      "size": 119030,
+      "hash": "50d0a7ed25684c53"
+    },
+    {
+      "path": "img/tilesets/Inside_B.txt",
+      "size": 7173,
+      "hash": "b3ecd59486291248"
+    },
+    {
+      "path": "img/tilesets/Inside_B_MV_placement.png",
+      "size": 152384,
+      "hash": "62e0eb1f0f149eaa"
+    },
+    {
+      "path": "img/tilesets/Inside_C.txt",
+      "size": 8384,
+      "hash": "9e8b175747dfd002"
+    },
+    {
+      "path": "img/tilesets/Inside_C_MV_placement.png",
+      "size": 144389,
+      "hash": "f5a6479de6098036"
+    },
+    {
+      "path": "img/tilesets/Outside_A1.txt",
+      "size": 444,
+      "hash": "92704de0d1bb57c3"
+    },
+    {
+      "path": "img/tilesets/Outside_A1_MV_placement.png",
+      "size": 148683,
+      "hash": "9b4df245b8c4da5a"
+    },
+    {
+      "path": "img/tilesets/Outside_A2.txt",
+      "size": 799,
+      "hash": "08eceacae3569b61"
+    },
+    {
+      "path": "img/tilesets/Outside_A2_MV_placement.png",
+      "size": 163029,
+      "hash": "581481b0dda31bb7"
+    },
+    {
+      "path": "img/tilesets/Outside_A3.txt",
+      "size": 1315,
+      "hash": "fe0cf12e9e54ec60"
+    },
+    {
+      "path": "img/tilesets/Outside_A3_MV_placement.png",
+      "size": 82031,
+      "hash": "d17808cea5c6a7a6"
+    },
+    {
+      "path": "img/tilesets/Outside_A4.txt",
+      "size": 1681,
+      "hash": "cb24905d23806493"
+    },
+    {
+      "path": "img/tilesets/Outside_A4_MV_placement.png",
+      "size": 189576,
+      "hash": "59ad42f12991f18e"
+    },
+    {
+      "path": "img/tilesets/Outside_A5.txt",
+      "size": 4817,
+      "hash": "9b827607c4206431"
+    },
+    {
+      "path": "img/tilesets/Outside_A5_MV_placement.png",
+      "size": 105937,
+      "hash": "d13b28a65f2bba13"
+    },
+    {
+      "path": "img/tilesets/Outside_B.txt",
+      "size": 7219,
+      "hash": "ff4b3f2e4e909adf"
+    },
+    {
+      "path": "img/tilesets/Outside_B_MV_placement.png",
+      "size": 161398,
+      "hash": "b2aeb2b1006324dc"
+    },
+    {
+      "path": "img/tilesets/Outside_C.txt",
+      "size": 10091,
+      "hash": "f2a6f593fcb3b20a"
+    },
+    {
+      "path": "img/tilesets/Outside_C_MV_placement.png",
+      "size": 222456,
+      "hash": "6289aea86e3bed07"
+    },
+    {
+      "path": "img/tilesets/Passabilidade 2.png",
+      "size": 4077,
+      "hash": "55b2b10e74593c38"
+    },
+    {
+      "path": "img/tilesets/SF_Inside_A4.txt",
+      "size": 2089,
+      "hash": "8bbec69b16666a8c"
+    },
+    {
+      "path": "img/tilesets/SF_Inside_A4_MV_placement.png",
+      "size": 267993,
+      "hash": "54743988405b732c"
+    },
+    {
+      "path": "img/tilesets/SF_Inside_B.txt",
+      "size": 9540,
+      "hash": "c90c84bacc6b7813"
+    },
+    {
+      "path": "img/tilesets/SF_Inside_B_MV_placement.png",
+      "size": 150131,
+      "hash": "756043e4935899f6"
+    },
+    {
+      "path": "img/tilesets/SF_Inside_C.txt",
+      "size": 6812,
+      "hash": "cf1bbbeab887b1b0"
+    },
+    {
+      "path": "img/tilesets/SF_Inside_C_MV_placement.png",
+      "size": 176555,
+      "hash": "b6945abb528823be"
+    },
+    {
+      "path": "img/tilesets/SF_Outside_A3.txt",
+      "size": 1403,
+      "hash": "b523380147c61180"
+    },
+    {
+      "path": "img/tilesets/SF_Outside_A3_MV_placement.png",
+      "size": 132995,
+      "hash": "365a7a339bf3ac50"
+    },
+    {
+      "path": "img/tilesets/SF_Outside_A4.txt",
+      "size": 2060,
+      "hash": "1d268beb1e2c8da5"
+    },
+    {
+      "path": "img/tilesets/SF_Outside_A4_MV_placement.png",
+      "size": 253095,
+      "hash": "625b9114842476cb"
+    },
+    {
+      "path": "img/tilesets/SF_Outside_A5.txt",
+      "size": 6097,
+      "hash": "a114e51930c8abbe"
+    },
+    {
+      "path": "img/tilesets/SF_Outside_A5_MV_placement.png",
+      "size": 119223,
+      "hash": "bc15a9949d8d4a9e"
+    },
+    {
+      "path": "img/tilesets/SF_Outside_B.txt",
+      "size": 8202,
+      "hash": "7dd667722a8b61b1"
+    },
+    {
+      "path": "img/tilesets/SF_Outside_B_MV_placement.png",
+      "size": 193109,
+      "hash": "4380fdcfaa51c1c9"
+    },
+    {
+      "path": "img/tilesets/SF_Outside_C.txt",
+      "size": 6551,
+      "hash": "4cc240952ea880c7"
+    },
+    {
+      "path": "img/tilesets/SF_Outside_C_MV_placement.png",
+      "size": 243272,
+      "hash": "b08090d5acf271d7"
+    },
+    {
+      "path": "img/tilesets/Water+.png",
+      "size": 8580,
+      "hash": "5f8db9cc81c123e3"
+    },
+    {
+      "path": "img/tilesets/World_A1.txt",
+      "size": 342,
+      "hash": "880cdde43d940d4c"
+    },
+    {
+      "path": "img/tilesets/World_A1_MV_placement.png",
+      "size": 137470,
+      "hash": "78763b6f96738f75"
+    },
+    {
+      "path": "img/tilesets/World_A2.txt",
+      "size": 867,
+      "hash": "f8a5efd950e3a122"
+    },
+    {
+      "path": "img/tilesets/World_A2_MV_placement.png",
+      "size": 133193,
+      "hash": "6f94b2e6efdaede7"
+    },
+    {
+      "path": "img/tilesets/World_B.txt",
+      "size": 7323,
+      "hash": "d55dc7f7c536423f"
+    },
+    {
+      "path": "img/tilesets/World_B_MV_placement.png",
+      "size": 229094,
+      "hash": "d92b1569dec93a31"
+    },
+    {
+      "path": "img/tilesets/World_C.txt",
+      "size": 5643,
+      "hash": "a87eb47e28c6cefc"
+    },
+    {
+      "path": "img/tilesets/World_C_MV_placement.png",
+      "size": 223944,
+      "hash": "747df80c8842900b"
+    },
+    {
+      "path": "audio/bgm/Battle2.ogg",
+      "size": 602545,
+      "hash": "a6beaecc82ed6324"
+    },
+    {
+      "path": "audio/bgm/Battle3.ogg",
+      "size": 745670,
+      "hash": "c7c5fceb57acb301"
+    },
+    {
+      "path": "audio/bgm/Battle4.ogg",
+      "size": 855090,
+      "hash": "29293512b46d8f68"
+    },
+    {
+      "path": "audio/bgm/Battle5.ogg",
+      "size": 730545,
+      "hash": "da2bf1b3a9b5af3f"
+    },
+    {
+      "path": "audio/bgm/Battle6.ogg",
+      "size": 713193,
+      "hash": "5dd3385cc7ba5734"
+    },
+    {
+      "path": "audio/bgm/Battle7.ogg",
+      "size": 514071,
+      "hash": "c92f07756901013f"
+    },
+    {
+      "path": "audio/bgm/Battle8.ogg",
+      "size": 837776,
+      "hash": "d0d3aec240b0600b"
+    },
+    {
+      "path": "audio/bgm/Castle1.ogg",
+      "size": 571674,
+      "hash": "0ac1fae431d4f25c"
+    },
+    {
+      "path": "audio/bgm/Castle2.ogg",
+      "size": 605224,
+      "hash": "6f26b7d9df24a3ae"
+    },
+    {
+      "path": "audio/bgm/Castle3.ogg",
+      "size": 648496,
+      "hash": "3170fd5c2912e549"
+    },
+    {
+      "path": "audio/bgm/Dungeon1.ogg",
+      "size": 651159,
+      "hash": "511815a48da2c094"
+    },
+    {
+      "path": "audio/bgm/Dungeon2.ogg",
+      "size": 763399,
+      "hash": "f750c3f6203f51ad"
+    },
+    {
+      "path": "audio/bgm/Dungeon3.ogg",
+      "size": 652443,
+      "hash": "77a48292c783ab1d"
+    },
+    {
+      "path": "audio/bgm/Dungeon4.ogg",
+      "size": 478767,
+      "hash": "32497370fe1408bf"
+    },
+    {
+      "path": "audio/bgm/Dungeon5.ogg",
+      "size": 588443,
+      "hash": "b28f62863e8671dd"
+    },
+    {
+      "path": "audio/bgm/Dungeon6.ogg",
+      "size": 666236,
+      "hash": "9016e43e0348c875"
+    },
+    {
+      "path": "audio/bgm/Dungeon7.ogg",
+      "size": 840273,
+      "hash": "d71cb66efc458a65"
+    },
+    {
+      "path": "audio/bgm/Field1.ogg",
+      "size": 536863,
+      "hash": "944eac95ad737264"
+    },
+    {
+      "path": "audio/bgm/Field2.ogg",
+      "size": 504718,
+      "hash": "f1cff4a1bf233d54"
+    },
+    {
+      "path": "audio/bgm/Field3.ogg",
+      "size": 742559,
+      "hash": "6fccc369f5e2b94d"
+    },
+    {
+      "path": "audio/bgm/Field4.ogg",
+      "size": 540866,
+      "hash": "5c1153cf0f69c915"
+    },
+    {
+      "path": "audio/bgm/RPGM-FantasyResource01.ogg",
+      "size": 6941651,
+      "hash": "f7fd73f9fbabf606"
+    },
+    {
+      "path": "audio/bgm/RPGM-FantasyResource02.ogg",
+      "size": 6946139,
+      "hash": "65c1912f073c2273"
+    },
+    {
+      "path": "audio/bgm/Scene1.ogg",
+      "size": 680383,
+      "hash": "5eaebd6af75ef478"
+    },
+    {
+      "path": "audio/bgm/Scene2.ogg",
+      "size": 613766,
+      "hash": "7e4482be450073bb"
+    },
+    {
+      "path": "audio/bgm/Scene3.ogg",
+      "size": 480436,
+      "hash": "69e95e707857e8d6"
+    },
+    {
+      "path": "audio/bgm/Scene4.ogg",
+      "size": 627166,
+      "hash": "8e1f445bef80d4a6"
+    },
+    {
+      "path": "audio/bgm/Scene5.ogg",
+      "size": 557041,
+      "hash": "b73768a1db62a242"
+    },
+    {
+      "path": "audio/bgm/Scene6.ogg",
+      "size": 516579,
+      "hash": "57310f634ea659fc"
+    },
+    {
+      "path": "audio/bgm/Scene7.ogg",
+      "size": 546751,
+      "hash": "b8949b214b141ed8"
+    },
+    {
+      "path": "audio/bgm/Scene8.ogg",
+      "size": 588581,
+      "hash": "8c772251ae00ba32"
+    },
+    {
+      "path": "audio/bgm/Scene9.ogg",
+      "size": 616157,
+      "hash": "90a61fe0d379ee1f"
+    },
+    {
+      "path": "audio/bgm/Theme1.ogg",
+      "size": 631433,
+      "hash": "1cd004229ab936a3"
+    },
+    {
+      "path": "audio/bgm/Theme2.ogg",
+      "size": 621417,
+      "hash": "0304164655859f0c"
+    },
+    {
+      "path": "audio/bgm/Theme3.ogg",
+      "size": 573516,
+      "hash": "17af2a18125b439c"
+    },
+    {
+      "path": "audio/bgm/Theme6.ogg",
+      "size": 485241,
+      "hash": "46400a3bd9fd07e6"
+    },
+    {
+      "path": "audio/bgm/Town2.ogg",
+      "size": 617353,
+      "hash": "38a3f180296e5635"
+    },
+    {
+      "path": "audio/bgm/Town3.ogg",
+      "size": 574158,
+      "hash": "88fe79aecf9ce2e0"
+    },
+    {
+      "path": "audio/bgm/Town4.ogg",
+      "size": 609514,
+      "hash": "8b51bf4e2e1114b2"
+    },
+    {
+      "path": "audio/bgm/Town5.ogg",
+      "size": 636514,
+      "hash": "feae0aa46a223c79"
+    },
+    {
+      "path": "audio/bgm/Town6.ogg",
+      "size": 542584,
+      "hash": "a80b04851edade59"
+    },
+    {
+      "path": "audio/bgm/Town7.ogg",
+      "size": 733225,
+      "hash": "017c541846de9f31"
+    },
+    {
+      "path": "audio/bgm/Town8.ogg",
+      "size": 615216,
+      "hash": "d8462facf6f12248"
+    },
+    {
+      "path": "audio/bgs/City.ogg",
+      "size": 352754,
+      "hash": "ea5c0c7022e6f013"
+    },
+    {
+      "path": "audio/bgs/Clock.ogg",
+      "size": 5109,
+      "hash": "134d51856a465f6b"
+    },
+    {
+      "path": "audio/bgs/Darkness.ogg",
+      "size": 43571,
+      "hash": "9b244ebfae503abe"
+    },
+    {
+      "path": "audio/bgs/Drips.ogg",
+      "size": 65293,
+      "hash": "741e7cf3efa3d8dc"
+    },
+    {
+      "path": "audio/bgs/Fire1.ogg",
+      "size": 159612,
+      "hash": "b601c06f4d0c0e61"
+    },
+    {
+      "path": "audio/bgs/Fire2.ogg",
+      "size": 129204,
+      "hash": "bd99e03e3de2dc49"
+    },
+    {
+      "path": "audio/bgs/Fire3.ogg",
+      "size": 86125,
+      "hash": "c7f080d1fa4e417a"
+    },
+    {
+      "path": "audio/bgs/Night.ogg",
+      "size": 882460,
+      "hash": "cbb9eb6e013fe600"
+    },
+    {
+      "path": "audio/bgs/People1.ogg",
+      "size": 180345,
+      "hash": "35b9347b627be0c5"
+    },
+    {
+      "path": "audio/bgs/People2.ogg",
+      "size": 177624,
+      "hash": "c53700eb437ec6d0"
+    },
+    {
+      "path": "audio/bgs/Quake1.ogg",
+      "size": 19224,
+      "hash": "b2a6e1a434db6c7e"
+    },
+    {
+      "path": "audio/bgs/Quake2.ogg",
+      "size": 9403,
+      "hash": "97090ca316f7c5b6"
+    },
+    {
+      "path": "audio/bgs/Rain1.ogg",
+      "size": 15898,
+      "hash": "4595fcf8f6a6ec5c"
+    },
+    {
+      "path": "audio/bgs/Rain2.ogg",
+      "size": 94799,
+      "hash": "ff87223fdf8ab1ef"
+    },
+    {
+      "path": "audio/bgs/Rain3.ogg",
+      "size": 93944,
+      "hash": "6e933511bb521343"
+    },
+    {
+      "path": "audio/bgs/Rain4.ogg",
+      "size": 152738,
+      "hash": "44208f54b60327dd"
+    },
+    {
+      "path": "audio/bgs/River.ogg",
+      "size": 61110,
+      "hash": "0f569320b45e0e54"
+    },
+    {
+      "path": "audio/bgs/Sea.ogg",
+      "size": 33116,
+      "hash": "94e72c763fa04683"
+    },
+    {
+      "path": "audio/bgs/Storm1.ogg",
+      "size": 18605,
+      "hash": "851bb62237f9bb81"
+    },
+    {
+      "path": "audio/bgs/Storm2.ogg",
+      "size": 566611,
+      "hash": "19ba86df365acd75"
+    },
+    {
+      "path": "audio/bgs/Waterfall1.ogg",
+      "size": 77882,
+      "hash": "5156db7abe5e7212"
+    },
+    {
+      "path": "audio/bgs/Waterfall2.ogg",
+      "size": 75224,
+      "hash": "5ad1c43468095516"
+    },
+    {
+      "path": "audio/bgs/Wave1.ogg",
+      "size": 64963,
+      "hash": "7f6c411dad82c383"
+    },
+    {
+      "path": "audio/bgs/Wave2.ogg",
+      "size": 160389,
+      "hash": "1cbbd0528809286e"
+    },
+    {
+      "path": "audio/bgs/Wind1.ogg",
+      "size": 41308,
+      "hash": "f0e97f46a459c28f"
+    },
+    {
+      "path": "audio/bgs/Wind2.ogg",
+      "size": 145902,
+      "hash": "5a76236a300a8851"
+    },
+    {
+      "path": "audio/bgs/Wind3.ogg",
+      "size": 128309,
+      "hash": "c2c8e229292a76b2"
+    },
+    {
+      "path": "audio/bgs/Wind4.ogg",
+      "size": 145179,
+      "hash": "7b4e00532e92c066"
+    },
+    {
+      "path": "audio/bgs/Wind5.ogg",
+      "size": 149129,
+      "hash": "1a12e6e1f229a5e2"
+    },
+    {
+      "path": "audio/me/Curse1.ogg",
+      "size": 31082,
+      "hash": "f8e9845f3a694f77"
+    },
+    {
+      "path": "audio/me/Curse2.ogg",
+      "size": 44138,
+      "hash": "ba7180eb318b0ec2"
+    },
+    {
+      "path": "audio/me/Defeat2.ogg",
+      "size": 52031,
+      "hash": "2e41159675369c25"
+    },
+    {
+      "path": "audio/me/Fanfare1.ogg",
+      "size": 97257,
+      "hash": "c877b1487d9d95df"
+    },
+    {
+      "path": "audio/me/Fanfare2.ogg",
+      "size": 94297,
+      "hash": "6c68154bb7b70580"
+    },
+    {
+      "path": "audio/me/Fanfare3.ogg",
+      "size": 79614,
+      "hash": "fb18254375fbeee6"
+    },
+    {
+      "path": "audio/me/Gag.ogg",
+      "size": 44572,
+      "hash": "2423a299614daa84"
+    },
+    {
+      "path": "audio/me/Gameover2.ogg",
+      "size": 107995,
+      "hash": "0a587589c4ba57d1"
+    },
+    {
+      "path": "audio/me/Inn1.ogg",
+      "size": 59039,
+      "hash": "2e8b60fb4882b9db"
+    },
+    {
+      "path": "audio/me/Like.ogg",
+      "size": 42084,
+      "hash": "a6f5d53a81b2dc43"
+    },
+    {
+      "path": "audio/me/Musical1.ogg",
+      "size": 66176,
+      "hash": "476894c40794f54e"
+    },
+    {
+      "path": "audio/me/Musical2.ogg",
+      "size": 56177,
+      "hash": "ef6246c5cb80272e"
+    },
+    {
+      "path": "audio/me/Musical3.ogg",
+      "size": 34313,
+      "hash": "7dc69fba3aa2a446"
+    },
+    {
+      "path": "audio/me/Organ.ogg",
+      "size": 55726,
+      "hash": "6ab041b4be2638db"
+    },
+    {
+      "path": "audio/me/Refresh.ogg",
+      "size": 27540,
+      "hash": "d9b9a6b82299527d"
+    },
+    {
+      "path": "audio/me/Shock2.ogg",
+      "size": 23461,
+      "hash": "219b7e4c1e4cc39b"
+    },
+    {
+      "path": "audio/me/Shock3.ogg",
+      "size": 24103,
+      "hash": "13daee2ad4c71000"
+    },
+    {
+      "path": "audio/me/Victory2.ogg",
+      "size": 50000,
+      "hash": "29485fd3e2461289"
+    },
+    {
+      "path": "audio/me/Victory3.ogg",
+      "size": 66487,
+      "hash": "abc46412aee67dfe"
+    },
+    {
+      "path": "audio/se/Absorb1.ogg",
+      "size": 11124,
+      "hash": "e8fed4e8aea4e077"
+    },
+    {
+      "path": "audio/se/Applause1.ogg",
+      "size": 30114,
+      "hash": "d65708af431d95b3"
+    },
+    {
+      "path": "audio/se/Applause2.ogg",
+      "size": 28118,
+      "hash": "c9f874720abe65c6"
+    },
+    {
+      "path": "audio/se/Attack1.ogg",
+      "size": 6164,
+      "hash": "4681ba3f73aa2266"
+    },
+    {
+      "path": "audio/se/Autodoor.ogg",
+      "size": 13173,
+      "hash": "da8886a65e37fbde"
+    },
+    {
+      "path": "audio/se/Barrier.ogg",
+      "size": 11793,
+      "hash": "5f915111be338541"
+    },
+    {
+      "path": "audio/se/Battle2.ogg",
+      "size": 10320,
+      "hash": "3fb745f1edf7e641"
+    },
+    {
+      "path": "audio/se/Battle4.ogg",
+      "size": 20179,
+      "hash": "6eee754d9e98dd6c"
+    },
+    {
+      "path": "audio/se/Battle5.ogg",
+      "size": 20997,
+      "hash": "c541dd3ab1d96805"
+    },
+    {
+      "path": "audio/se/Battle6.ogg",
+      "size": 21312,
+      "hash": "e4221b36ffee0bf6"
+    },
+    {
+      "path": "audio/se/Bell1.ogg",
+      "size": 13244,
+      "hash": "5e5936f6b24517fe"
+    },
+    {
+      "path": "audio/se/Bell2.ogg",
+      "size": 7961,
+      "hash": "cf4ab4ea2e715b6d"
+    },
+    {
+      "path": "audio/se/Bell3.ogg",
+      "size": 6903,
+      "hash": "49a5a4223ca8d0c3"
+    },
+    {
+      "path": "audio/se/Bite.ogg",
+      "size": 7748,
+      "hash": "f9507ac4dc84f39e"
+    },
+    {
+      "path": "audio/se/Blow10.ogg",
+      "size": 8733,
+      "hash": "3fb889d5e7752611"
+    },
+    {
+      "path": "audio/se/Blow4.ogg",
+      "size": 7536,
+      "hash": "594afda1e8321fe0"
+    },
+    {
+      "path": "audio/se/Blow5.ogg",
+      "size": 5447,
+      "hash": "1810f057536aa9d1"
+    },
+    {
+      "path": "audio/se/Blow6.ogg",
+      "size": 6667,
+      "hash": "f5ae718267da7901"
+    },
+    {
+      "path": "audio/se/Blow7.ogg",
+      "size": 7555,
+      "hash": "f1e46243000483ba"
+    },
+    {
+      "path": "audio/se/Blow8.ogg",
+      "size": 6119,
+      "hash": "4b0b153288d0c958"
+    },
+    {
+      "path": "audio/se/Blow9.ogg",
+      "size": 9642,
+      "hash": "cf00f7a0a9481b58"
+    },
+    {
+      "path": "audio/se/Book1.ogg",
+      "size": 7027,
+      "hash": "5428cee5c3ff0653"
+    },
+    {
+      "path": "audio/se/Book2.ogg",
+      "size": 8814,
+      "hash": "f32a69a893e5a18d"
+    },
+    {
+      "path": "audio/se/Bow1.ogg",
+      "size": 6234,
+      "hash": "8cf3cf5ee5ee7a2b"
+    },
+    {
+      "path": "audio/se/Bow2.ogg",
+      "size": 7408,
+      "hash": "6ec4a744bcaaf827"
+    },
+    {
+      "path": "audio/se/Bow3.ogg",
+      "size": 7545,
+      "hash": "ccd67cd15cc4cc21"
+    },
+    {
+      "path": "audio/se/Bow4.ogg",
+      "size": 12794,
+      "hash": "5e44558319995412"
+    },
+    {
+      "path": "audio/se/Bow5.ogg",
+      "size": 11466,
+      "hash": "6b228777f813c092"
+    },
+    {
+      "path": "audio/se/Breath.ogg",
+      "size": 13732,
+      "hash": "8573ee6551b44547"
+    },
+    {
+      "path": "audio/se/Buzzer2.ogg",
+      "size": 6896,
+      "hash": "ecc53c2521d4b567"
+    },
+    {
+      "path": "audio/se/Buzzer3.ogg",
+      "size": 7919,
+      "hash": "a6418753d48e7d2e"
+    },
+    {
+      "path": "audio/se/Cancel1.ogg",
+      "size": 5132,
+      "hash": "074c29017ce71e37"
+    },
+    {
+      "path": "audio/se/Cancel3.ogg",
+      "size": 7156,
+      "hash": "e4abc04477c7c0cf"
+    },
+    {
+      "path": "audio/se/Cat.ogg",
+      "size": 8345,
+      "hash": "d7ce4dd85c6e1da3"
+    },
+    {
+      "path": "audio/se/Chain.ogg",
+      "size": 17974,
+      "hash": "d90aeac3acfca105"
+    },
+    {
+      "path": "audio/se/Chest2.ogg",
+      "size": 9923,
+      "hash": "57821e6e732a1fdf"
+    },
+    {
+      "path": "audio/se/Chicken.ogg",
+      "size": 10162,
+      "hash": "32d4207edbcb2602"
+    },
+    {
+      "path": "audio/se/Chime1.ogg",
+      "size": 6048,
+      "hash": "9645ae7202964f8d"
+    },
+    {
+      "path": "audio/se/Chime2.ogg",
+      "size": 8107,
+      "hash": "cd2c6dccee8d85cd"
+    },
+    {
+      "path": "audio/se/Close1.ogg",
+      "size": 7980,
+      "hash": "7f61a54c09f7671d"
+    },
+    {
+      "path": "audio/se/Close2.ogg",
+      "size": 7741,
+      "hash": "1ef9868869f2f71f"
+    },
+    {
+      "path": "audio/se/Close3.ogg",
+      "size": 8339,
+      "hash": "2ca3fb95bb4e9c6a"
+    },
+    {
+      "path": "audio/se/Coin.ogg",
+      "size": 5611,
+      "hash": "e824e315d65c1cb8"
+    },
+    {
+      "path": "audio/se/Computer.ogg",
+      "size": 11691,
+      "hash": "224107b3611bb47f"
+    },
+    {
+      "path": "audio/se/Confuse.ogg",
+      "size": 11668,
+      "hash": "0656a662431069de"
+    },
+    {
+      "path": "audio/se/Cow.ogg",
+      "size": 12282,
+      "hash": "ef54f04165e1d30c"
+    },
+    {
+      "path": "audio/se/Crow.ogg",
+      "size": 8652,
+      "hash": "edd71f26ff8ecc4e"
+    },
+    {
+      "path": "audio/se/Cry1.ogg",
+      "size": 6311,
+      "hash": "d5cb7e1cd3600774"
+    },
+    {
+      "path": "audio/se/Cry2.ogg",
+      "size": 13503,
+      "hash": "30fbd4c82f261639"
+    },
+    {
+      "path": "audio/se/Cursor1.ogg",
+      "size": 3965,
+      "hash": "1a4b8bcfd1207874"
+    },
+    {
+      "path": "audio/se/Cursor2.ogg",
+      "size": 4648,
+      "hash": "ae21d47441d1624a"
+    },
+    {
+      "path": "audio/se/Cursor4.ogg",
+      "size": 5679,
+      "hash": "aa22533cfd00bf0e"
+    },
+    {
+      "path": "audio/se/Damage1.ogg",
+      "size": 6058,
+      "hash": "689a2f28daf0894f"
+    },
+    {
+      "path": "audio/se/Darkness6.ogg",
+      "size": 6188,
+      "hash": "aadfecf43c275b94"
+    },
+    {
+      "path": "audio/se/Decision1.ogg",
+      "size": 9932,
+      "hash": "a96951a37ed30410"
+    },
+    {
+      "path": "audio/se/Decision3.ogg",
+      "size": 8220,
+      "hash": "44ee39b39cfff0a9"
+    },
+    {
+      "path": "audio/se/Decision4.ogg",
+      "size": 5913,
+      "hash": "1be8952860aa00aa"
+    },
+    {
+      "path": "audio/se/Decision5.ogg",
+      "size": 10521,
+      "hash": "37a8746b17f3d076"
+    },
+    {
+      "path": "audio/se/Devil1.ogg",
+      "size": 22893,
+      "hash": "555af16133f722cc"
+    },
+    {
+      "path": "audio/se/Devil2.ogg",
+      "size": 19231,
+      "hash": "8dad0e91a50fe402"
+    },
+    {
+      "path": "audio/se/Devil3.ogg",
+      "size": 22909,
+      "hash": "2400c14aa080a8e1"
+    },
+    {
+      "path": "audio/se/Disappointment.ogg",
+      "size": 13712,
+      "hash": "cf912e37e0754843"
+    },
+    {
+      "path": "audio/se/Dog.ogg",
+      "size": 5515,
+      "hash": "d0ae8aa182b35517"
+    },
+    {
+      "path": "audio/se/Door3.ogg",
+      "size": 9872,
+      "hash": "842890738a31fc34"
+    },
+    {
+      "path": "audio/se/Door4.ogg",
+      "size": 23324,
+      "hash": "995106f39773f22a"
+    },
+    {
+      "path": "audio/se/Door5.ogg",
+      "size": 14194,
+      "hash": "bcfd69ce49e0d1f7"
+    },
+    {
+      "path": "audio/se/Door6.ogg",
+      "size": 8983,
+      "hash": "16d5f0cc4a58f123"
+    },
+    {
+      "path": "audio/se/Door7.ogg",
+      "size": 14776,
+      "hash": "87a95c374ed70f92"
+    },
+    {
+      "path": "audio/se/Door8.ogg",
+      "size": 10841,
+      "hash": "880a6a64ed4ebea8"
+    },
+    {
+      "path": "audio/se/Down1.ogg",
+      "size": 10294,
+      "hash": "d6154069c9e66249"
+    },
+    {
+      "path": "audio/se/Down3.ogg",
+      "size": 14743,
+      "hash": "afb4fe4d5f4f99b8"
+    },
+    {
+      "path": "audio/se/Down4.ogg",
+      "size": 16706,
+      "hash": "f961137377490f5c"
+    },
+    {
+      "path": "audio/se/Down5.ogg",
+      "size": 18302,
+      "hash": "0d7b872867b0abb3"
+    },
+    {
+      "path": "audio/se/Down6.ogg",
+      "size": 17779,
+      "hash": "5af9989568532d1f"
+    },
+    {
+      "path": "audio/se/Down7.ogg",
+      "size": 24296,
+      "hash": "a8525531701b4a30"
+    },
+    {
+      "path": "audio/se/Electrocardiogram.ogg",
+      "size": 7047,
+      "hash": "642f5d82430917c2"
+    },
+    {
+      "path": "audio/se/Equip2.ogg",
+      "size": 7799,
+      "hash": "699768c36aeb02ba"
+    },
+    {
+      "path": "audio/se/Equip3.ogg",
+      "size": 8462,
+      "hash": "c46a843670dbf0e7"
+    },
+    {
+      "path": "audio/se/Fall.ogg",
+      "size": 8350,
+      "hash": "f1fec95236bebc1a"
+    },
+    {
+      "path": "audio/se/Fire4.ogg",
+      "size": 9710,
+      "hash": "804735c5a10c26fd"
+    },
+    {
+      "path": "audio/se/Fire5.ogg",
+      "size": 11087,
+      "hash": "eb7e5b2e80ba188e"
+    },
+    {
+      "path": "audio/se/Flash3.ogg",
+      "size": 18019,
+      "hash": "58531ebb60739eda"
+    },
+    {
+      "path": "audio/se/Fog1.ogg",
+      "size": 7064,
+      "hash": "57d806a44ad17808"
+    },
+    {
+      "path": "audio/se/Fog2.ogg",
+      "size": 9962,
+      "hash": "4accf1d13d83036c"
+    },
+    {
+      "path": "audio/se/Frog.ogg",
+      "size": 9887,
+      "hash": "e0ad3675b54ff334"
+    },
+    {
+      "path": "audio/se/Gate2.ogg",
+      "size": 12811,
+      "hash": "f10c267572e4c8f9"
+    },
+    {
+      "path": "audio/se/Growl.ogg",
+      "size": 36208,
+      "hash": "02325c0df84dd913"
+    },
+    {
+      "path": "audio/se/Hammer.ogg",
+      "size": 6526,
+      "hash": "15b0da8a97cb1caa"
+    },
+    {
+      "path": "audio/se/Heal2.ogg",
+      "size": 7916,
+      "hash": "b8f807f10dbde4cf"
+    },
+    {
+      "path": "audio/se/Heal4.ogg",
+      "size": 10840,
+      "hash": "472a7a1af5fdddb7"
+    },
+    {
+      "path": "audio/se/Heal5.ogg",
+      "size": 8924,
+      "hash": "5f0f1b82b73f4036"
+    },
+    {
+      "path": "audio/se/Heal6.ogg",
+      "size": 7633,
+      "hash": "d12a8413e5e097a7"
+    },
+    {
+      "path": "audio/se/Heal7.ogg",
+      "size": 17583,
+      "hash": "d7cb177965ef9e79"
+    },
+    {
+      "path": "audio/se/Horn.ogg",
+      "size": 18878,
+      "hash": "afff7aa310a2cf6e"
+    },
+    {
+      "path": "audio/se/Horse.ogg",
+      "size": 10273,
+      "hash": "42c74d8bfff05243"
+    },
+    {
+      "path": "audio/se/Ice2.ogg",
+      "size": 8597,
+      "hash": "c53500bf7247aa55"
+    },
+    {
+      "path": "audio/se/Ice6.ogg",
+      "size": 12964,
+      "hash": "54c5a81f6dc32161"
+    },
+    {
+      "path": "audio/se/Ice7.ogg",
+      "size": 6508,
+      "hash": "43f795d5e92594ae"
+    },
+    {
+      "path": "audio/se/Ice8.ogg",
+      "size": 14095,
+      "hash": "cd6fffe6f818402c"
+    },
+    {
+      "path": "audio/se/Ice9.ogg",
+      "size": 23497,
+      "hash": "755f225365d2e980"
+    },
+    {
+      "path": "audio/se/Item1.ogg",
+      "size": 6015,
+      "hash": "c34544ee031a79f4"
+    },
+    {
+      "path": "audio/se/Item2.ogg",
+      "size": 8833,
+      "hash": "dfa7a964a0fdd7fa"
+    },
+    {
+      "path": "audio/se/Jump1.ogg",
+      "size": 4797,
+      "hash": "c29d9ee125e74f5b"
+    },
+    {
+      "path": "audio/se/Jump2.ogg",
+      "size": 5301,
+      "hash": "f763363864c6f4c7"
+    },
+    {
+      "path": "audio/se/Key.ogg",
+      "size": 5054,
+      "hash": "5f85e47b0e90cd37"
+    },
+    {
+      "path": "audio/se/Knock.ogg",
+      "size": 4387,
+      "hash": "585b19731f2885ec"
+    },
+    {
+      "path": "audio/se/Laser2.ogg",
+      "size": 34755,
+      "hash": "3b44ec64a81c59b1"
+    },
+    {
+      "path": "audio/se/Laugh.ogg",
+      "size": 22054,
+      "hash": "9016fe8277a0fe44"
+    },
+    {
+      "path": "audio/se/Launch.ogg",
+      "size": 26388,
+      "hash": "2959599bb638f1d9"
+    },
+    {
+      "path": "audio/se/Leakage.ogg",
+      "size": 14299,
+      "hash": "4b893f31cda0b93d"
+    },
+    {
+      "path": "audio/se/Liquid.ogg",
+      "size": 36914,
+      "hash": "1ea215c77b491f41"
+    },
+    {
+      "path": "audio/se/Load1.ogg",
+      "size": 14076,
+      "hash": "bcabf7e23d8e457b"
+    },
+    {
+      "path": "audio/se/Machine.ogg",
+      "size": 24084,
+      "hash": "b78d2d77ced4527d"
+    },
+    {
+      "path": "audio/se/Magic11.ogg",
+      "size": 29763,
+      "hash": "0ab6a201a465f58c"
+    },
+    {
+      "path": "audio/se/Magic6.ogg",
+      "size": 13365,
+      "hash": "f29e34c4df23dead"
+    },
+    {
+      "path": "audio/se/Magic7.ogg",
+      "size": 26201,
+      "hash": "dfa4fe910da2c53b"
+    },
+    {
+      "path": "audio/se/Magic8.ogg",
+      "size": 21221,
+      "hash": "af8115031f288563"
+    },
+    {
+      "path": "audio/se/Magic9.ogg",
+      "size": 19878,
+      "hash": "d7bf0fa54021ca67"
+    },
+    {
+      "path": "audio/se/Monster10.ogg",
+      "size": 16438,
+      "hash": "c2a87359e5b65cfa"
+    },
+    {
+      "path": "audio/se/Monster2.ogg",
+      "size": 11287,
+      "hash": "6b2c45e3545dbb97"
+    },
+    {
+      "path": "audio/se/Monster3.ogg",
+      "size": 11738,
+      "hash": "e3054d2566ee4fa6"
+    },
+    {
+      "path": "audio/se/Monster4.ogg",
+      "size": 12357,
+      "hash": "3ffe8706a1c9a787"
+    },
+    {
+      "path": "audio/se/Monster5.ogg",
+      "size": 16737,
+      "hash": "983b7e4e9046ef76"
+    },
+    {
+      "path": "audio/se/Monster6.ogg",
+      "size": 13614,
+      "hash": "44389f45628cec56"
+    },
+    {
+      "path": "audio/se/Monster7.ogg",
+      "size": 15375,
+      "hash": "d11615ab45ee6a9e"
+    },
+    {
+      "path": "audio/se/Monster8.ogg",
+      "size": 26715,
+      "hash": "6d81ae7046f2c3d9"
+    },
+    {
+      "path": "audio/se/Monster9.ogg",
+      "size": 12960,
+      "hash": "1997b7ba4d1374e7"
+    },
+    {
+      "path": "audio/se/Move10.ogg",
+      "size": 11083,
+      "hash": "857013b9e406ed29"
+    },
+    {
+      "path": "audio/se/Move2.ogg",
+      "size": 10719,
+      "hash": "89451fbf38dd019f"
+    },
+    {
+      "path": "audio/se/Move3.ogg",
+      "size": 9441,
+      "hash": "fc24599d9dd736f1"
+    },
+    {
+      "path": "audio/se/Move4.ogg",
+      "size": 10908,
+      "hash": "f9a80bee3c6ca3c7"
+    },
+    {
+      "path": "audio/se/Move5.ogg",
+      "size": 27397,
+      "hash": "4677bf7f3b349984"
+    },
+    {
+      "path": "audio/se/Move6.ogg",
+      "size": 18238,
+      "hash": "1b4ea47658031e39"
+    },
+    {
+      "path": "audio/se/Move7.ogg",
+      "size": 19290,
+      "hash": "4ed53313f50b93b6"
+    },
+    {
+      "path": "audio/se/Move8.ogg",
+      "size": 20529,
+      "hash": "ad5ede580039398a"
+    },
+    {
+      "path": "audio/se/Move9.ogg",
+      "size": 20156,
+      "hash": "0d4a769766d99ac4"
+    },
+    {
+      "path": "audio/se/Neon.ogg",
+      "size": 12765,
+      "hash": "7f2e3b662f1a5e80"
+    },
+    {
+      "path": "audio/se/Noise.ogg",
+      "size": 14604,
+      "hash": "45da21f9be4e6409"
+    },
+    {
+      "path": "audio/se/Open3.ogg",
+      "size": 7690,
+      "hash": "12a8999119802225"
+    },
+    {
+      "path": "audio/se/Open4.ogg",
+      "size": 6733,
+      "hash": "389f6df3e221e32f"
+    },
+    {
+      "path": "audio/se/Open5.ogg",
+      "size": 8687,
+      "hash": "3602352db5e1b298"
+    },
+    {
+      "path": "audio/se/Open6.ogg",
+      "size": 10155,
+      "hash": "0b78560291860593"
+    },
+    {
+      "path": "audio/se/Open7.ogg",
+      "size": 8724,
+      "hash": "c7054888bb37347a"
+    },
+    {
+      "path": "audio/se/Open8.ogg",
+      "size": 16556,
+      "hash": "39105b37c480516c"
+    },
+    {
+      "path": "audio/se/Open9.ogg",
+      "size": 12713,
+      "hash": "e8f8cf55a0cd12ee"
+    },
+    {
+      "path": "audio/se/Parry.ogg",
+      "size": 6384,
+      "hash": "464e5944f348239e"
+    },
+    {
+      "path": "audio/se/Particles2.ogg",
+      "size": 18571,
+      "hash": "7fdaf0b35be9b5f0"
+    },
+    {
+      "path": "audio/se/Particles3.ogg",
+      "size": 28623,
+      "hash": "cef459ece4274c4b"
+    },
+    {
+      "path": "audio/se/Pollen.ogg",
+      "size": 14364,
+      "hash": "17f4764bb87a112a"
+    },
+    {
+      "path": "audio/se/Push.ogg",
+      "size": 7668,
+      "hash": "e77eb3963e78ecb9"
+    },
+    {
+      "path": "audio/se/Raise1.ogg",
+      "size": 8579,
+      "hash": "ebf77a1e72aac7be"
+    },
+    {
+      "path": "audio/se/Raise3.ogg",
+      "size": 10314,
+      "hash": "99557ac4f6ffb65f"
+    },
+    {
+      "path": "audio/se/Resonance.ogg",
+      "size": 15794,
+      "hash": "1bf318cb09f46a42"
+    },
+    {
+      "path": "audio/se/Saint1.ogg",
+      "size": 10457,
+      "hash": "dc5725c5ccdd4f4a"
+    },
+    {
+      "path": "audio/se/Saint3.ogg",
+      "size": 6861,
+      "hash": "389cea376b00f6cf"
+    },
+    {
+      "path": "audio/se/Saint5.ogg",
+      "size": 7253,
+      "hash": "dbd216d05a54c0a9"
+    },
+    {
+      "path": "audio/se/Saint6.ogg",
+      "size": 11347,
+      "hash": "15c3f6a3de7a4f1c"
+    },
+    {
+      "path": "audio/se/Saint7.ogg",
+      "size": 12873,
+      "hash": "7f99c9b9cb57fb15"
+    },
+    {
+      "path": "audio/se/Saint8.ogg",
+      "size": 11051,
+      "hash": "3bb85f1700f45458"
+    },
+    {
+      "path": "audio/se/Saint9.ogg",
+      "size": 7517,
+      "hash": "30f22c13f29afc8b"
+    },
+    {
+      "path": "audio/se/Sheep.ogg",
+      "size": 8535,
+      "hash": "31b6569f6bdc193c"
+    },
+    {
+      "path": "audio/se/Shop2.ogg",
+      "size": 6321,
+      "hash": "91cb217e9a4f0c21"
+    },
+    {
+      "path": "audio/se/Shot1.ogg",
+      "size": 8050,
+      "hash": "e11f4a2805d35856"
+    },
+    {
+      "path": "audio/se/Shot2.ogg",
+      "size": 5670,
+      "hash": "4a14b78180a0af3a"
+    },
+    {
+      "path": "audio/se/Shot3.ogg",
+      "size": 8340,
+      "hash": "af024452b9a09683"
+    },
+    {
+      "path": "audio/se/Siren.ogg",
+      "size": 15601,
+      "hash": "2b791f2e003d024b"
+    },
+    {
+      "path": "audio/se/Slash10.ogg",
+      "size": 11088,
+      "hash": "8e9c1fce1ab21718"
+    },
+    {
+      "path": "audio/se/Slash6.ogg",
+      "size": 6164,
+      "hash": "5dbfcfa36bf78c5c"
+    },
+    {
+      "path": "audio/se/Slash7.ogg",
+      "size": 5417,
+      "hash": "31c4b34fcaba3c8f"
+    },
+    {
+      "path": "audio/se/Slash9.ogg",
+      "size": 5906,
+      "hash": "30adb172696d4fcb"
+    },
+    {
+      "path": "audio/se/Sound1.ogg",
+      "size": 6185,
+      "hash": "4b365a4a6651061e"
+    },
+    {
+      "path": "audio/se/Splash.ogg",
+      "size": 11674,
+      "hash": "8f25a861142c2b91"
+    },
+    {
+      "path": "audio/se/Summon.ogg",
+      "size": 19602,
+      "hash": "f4951233ce61f514"
+    },
+    {
+      "path": "audio/se/Switch1.ogg",
+      "size": 4729,
+      "hash": "2e1c74b3bc0e1746"
+    },
+    {
+      "path": "audio/se/Switch2.ogg",
+      "size": 5554,
+      "hash": "63705febbe276208"
+    },
+    {
+      "path": "audio/se/Switch3.ogg",
+      "size": 5839,
+      "hash": "b5f00c84e2d79281"
+    },
+    {
+      "path": "audio/se/Sword3.ogg",
+      "size": 7051,
+      "hash": "0cfec5b5ded3c1a7"
+    },
+    {
+      "path": "audio/se/Sword6.ogg",
+      "size": 9559,
+      "hash": "0e9e19001ee14501"
+    },
+    {
+      "path": "audio/se/Sword7.ogg",
+      "size": 9254,
+      "hash": "5a5e91b82234983c"
+    },
+    {
+      "path": "audio/se/Thunder11.ogg",
+      "size": 18703,
+      "hash": "58f914882ea68dad"
+    },
+    {
+      "path": "audio/se/Thunder12.ogg",
+      "size": 13697,
+      "hash": "d58b5cb0df2ec8ec"
+    },
+    {
+      "path": "audio/se/Thunder13.ogg",
+      "size": 19709,
+      "hash": "9397f8bfb255135f"
+    },
+    {
+      "path": "audio/se/Thunder14.ogg",
+      "size": 19520,
+      "hash": "130674ed53e74762"
+    },
+    {
+      "path": "audio/se/Thunder7.ogg",
+      "size": 9876,
+      "hash": "47c51d8483659999"
+    },
+    {
+      "path": "audio/se/Transceiver.ogg",
+      "size": 9632,
+      "hash": "f610d3db020082ed"
+    },
+    {
+      "path": "audio/se/Up2.ogg",
+      "size": 14290,
+      "hash": "fe02d838d0a0ef1f"
+    },
+    {
+      "path": "audio/se/Up5.ogg",
+      "size": 24940,
+      "hash": "3f083f712231fe06"
+    },
+    {
+      "path": "audio/se/Up6.ogg",
+      "size": 23331,
+      "hash": "f924266100505dff"
+    },
+    {
+      "path": "audio/se/Up7.ogg",
+      "size": 22545,
+      "hash": "1b4dd839bab096d6"
+    },
+    {
+      "path": "audio/se/Up8.ogg",
+      "size": 24533,
+      "hash": "9b3b05bb520cc2da"
+    },
+    {
+      "path": "audio/se/Water3.ogg",
+      "size": 8864,
+      "hash": "2248915fb7a9dd30"
+    },
+    {
+      "path": "audio/se/Wind10.ogg",
+      "size": 16688,
+      "hash": "991e8d06f03ec6c2"
+    },
+    {
+      "path": "audio/se/Wind11.ogg",
+      "size": 21082,
+      "hash": "ce5fc75b137f16dc"
+    },
+    {
+      "path": "audio/se/Wind8.ogg",
+      "size": 12699,
+      "hash": "14665b2db81245d1"
+    },
+    {
+      "path": "audio/se/Wolf.ogg",
+      "size": 12271,
+      "hash": "8c3144d36f46ed7d"
+    },
+    {
+      "path": "movies/Cutscene 1.webm",
+      "size": 6441189,
+      "hash": "e8444b9cbcddda95"
+    }
+  ],
+  "backupDir": "/Users/edney/projects/coreto/projectX/.unused_assets_backup"
+}
