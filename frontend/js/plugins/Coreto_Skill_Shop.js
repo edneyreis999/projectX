@@ -3,31 +3,27 @@
 //= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~=
 /*:
  * @target MZ
- * @plugindesc Esconde skills nao-aprendiveis no VisuStella Skill Shop
+ * @plugindesc Esconde skills nao-aprendiveis e adiciona refund no VisuStella Skill Shop
  * @author Coreto
  * @orderAfter VisuMZ_4_SkillShop
  *
  * @help
  * ============================================================================
- * Coreto Skill Shop - Hide Not Learnable
+ * Coreto Skill Shop - Hide Not Learnable + Refund
  * ============================================================================
  *
+ * PARTE 1 - ESCONDER SKILLS NAO-APRENDIVEIS
  * Sobrescreve o comportamento padrao do VisuStella Skill Shop para ESCONDER
  * skills que o ator selecionado nao pode aprender (classe errada ou sem acesso
  * ao Skill Type), ao inves de exibi-las com mensagens de erro.
  *
- * ---
- *
  * NOTETAG (coloque no campo Note das Skills):
- *
  *   <Skill Shop Hide Not Learnable>
  *
- * Quando esta tag esta presente na skill:
- *   - Se o ator nao tem acesso ao SType da skill → skill ESCONDIDA da lista
- *   - Se o ator nao tem a classe requerida → skill ESCONDIDA da lista
- *
- * Skills SEM esta tag mantem o comportamento padrao do VisuStella
- * (exibem "Not For %1" ou "No %1 Access").
+ * PARTE 2 - REFUND DE SKILLS
+ * Skills ja aprendidas mostram "Reembolsar: Xg" em vez de "Learned".
+ * Ao selecionar uma skill aprendida, abre popup de confirmacao.
+ * Se confirmado: ouro devolvido (valor integral), skill removida do ator.
  *
  * ---
  *
@@ -47,6 +43,10 @@
 
   if (typeof Imported === "undefined") window.Imported = {};
   Imported[PLUGIN_NAME] = true;
+
+  // ============================================================================
+  // PARTE 1 - Esconder skills nao-aprendiveis
+  // ============================================================================
 
   const _DataManager_onLoad = DataManager.onLoad;
   DataManager.onLoad = function (object) {
@@ -117,4 +117,65 @@
       ? this._visibleData[index]
       : null;
   };
+
+  // ============================================================================
+  // PARTE 2 - Refund de Skills
+  // ============================================================================
+
+  // Skills ja aprendidas ficam selecionaveis (para refund)
+  const _Window_SkillShopSkillList_isEnabled =
+    Window_SkillShopSkillList.prototype.isEnabled;
+  Window_SkillShopSkillList.prototype.isEnabled = function (skill) {
+    if (!skill) return false;
+    if (this._actor && this._actor.isLearnedSkill(skill.id)) return true;
+    return _Window_SkillShopSkillList_isEnabled.call(this, skill);
+  };
+
+  // Mostra "Reembolsar: Xg" em vez de "Learned"
+  const _Window_SkillShopSkillList_drawCannotLearnReason =
+    Window_SkillShopSkillList.prototype.drawCannotLearnReason;
+  Window_SkillShopSkillList.prototype.drawCannotLearnReason = function (
+    skill,
+    x,
+    y,
+    width
+  ) {
+    if (this._actor && this._actor.isLearnedSkill(skill.id)) {
+      const cost = DataManager.skillShopCost(skill);
+      const text = `\\c[2]Reembolsar: ${cost}g\\c[0]`;
+      const tw = this.textSizeEx(text).width;
+      this.drawTextEx(text, x + width - tw, y, width);
+      return;
+    }
+    _Window_SkillShopSkillList_drawCannotLearnReason.call(
+      this,
+      skill,
+      x,
+      y,
+      width
+    );
+  };
+
+  // ----------------------------------------------------------------------------
+  // Scene_SkillShop - Refund direto (sem popup)
+  // ----------------------------------------------------------------------------
+
+  if (typeof Scene_SkillShop !== "undefined") {
+    const _Scene_SkillShop_onSkillListOk =
+      Scene_SkillShop.prototype.onSkillListOk;
+    Scene_SkillShop.prototype.onSkillListOk = function () {
+      const actor = this._actorListWindow.actor();
+      const skill = this._skillListWindow.item();
+      if (actor && skill && actor.isLearnedSkill(skill.id)) {
+        const cost = DataManager.skillShopCost(skill);
+        $gameParty.gainGold(cost);
+        actor.forgetSkill(skill.id);
+        this._skillListWindow.refresh();
+        this._goldWindow.refresh();
+        this._skillListWindow.activate();
+      } else {
+        _Scene_SkillShop_onSkillListOk.call(this);
+      }
+    };
+  }
 })();
