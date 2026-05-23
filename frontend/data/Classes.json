@@ -40,58 +40,7 @@
         "value": 1
       }
     ],
-    "learnings": [
-      {
-        "level": 1,
-        "skillId": 46,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 47,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 48,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 49,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 50,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 51,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 52,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 53,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 54,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 55,
-        "note": ""
-      }
-    ],
+    "learnings": [],
     "name": "Pugilista",
     "note": "",
     "params": [
@@ -271,58 +220,7 @@
         "value": 1
       }
     ],
-    "learnings": [
-      {
-        "level": 1,
-        "skillId": 64,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 65,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 66,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 67,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 68,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 69,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 70,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 71,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 72,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 73,
-        "note": ""
-      }
-    ],
+    "learnings": [],
     "name": "Paladin",
     "note": "Kilin - Classe especializada em defesa e proteção do grupo.",
     "params": [
@@ -414,63 +312,7 @@
         "value": 1
       }
     ],
-    "learnings": [
-      {
-        "level": 1,
-        "skillId": 76,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 77,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 78,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 79,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 80,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 81,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 82,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 83,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 84,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 85,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 86,
-        "note": ""
-      }
-    ],
+    "learnings": [],
     "name": "Berserker",
     "note": "Mhordred - Classe especializada em dano brutal ofensivo.",
     "params": [
@@ -562,58 +404,7 @@
         "value": 1
       }
     ],
-    "learnings": [
-      {
-        "level": 1,
-        "skillId": 90,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 91,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 92,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 93,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 94,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 95,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 96,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 97,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 98,
-        "note": ""
-      },
-      {
-        "level": 1,
-        "skillId": 99,
-        "note": ""
-      }
-    ],
+    "learnings": [],
     "name": "Fundeiro",
     "note": "Thorin - Classe especializada em combate à distância com funda.\n// [Skills & States Core] - Passive states de ganho de TP\n<Passive State: 97>\n<Passive State: 98>",
     "params": [
