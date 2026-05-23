@@ -1,0 +1,68 @@
+# Asset Whitelist - Arquivos que NUNCA serao removidos
+# Um pattern por linha. # = comentario. * = wildcard.
+
+# Assets do sistema RPG Maker (sempre necessarios)
+img/system/*
+
+# Diretorios gerenciados por plugins (nao e possivel determinar uso sem executar)
+img/charactersAA/*
+img/pSimpleFishing/*
+img/pSQSystem/*
+
+# Effects - carregados em runtime pelo Effekseer (Texture/Model sao dependencias dos .efkefc)
+effects/*
+
+# Fonts
+fonts/*
+
+# Characters - subpastas usadas dinamicamente pelo jogo (nao rastreavel via JSON)
+img/characters/Boss/*
+img/characters/CasaForjaprata/*
+img/characters/Conselho/*
+img/characters/Distrito Residencial Nobre/*
+img/characters/Estadio/*
+img/characters/Kravens/*
+img/characters/Mina de Melios/*
+img/characters/Principal/*
+
+# Faces - carregado dinamicamente
+img/faces/Bosses.png
+
+# Characters - restaurados manualmente (necessarios em runtime)
+img/characters/!$Barraca.png
+img/characters/!$Estatua.png
+img/characters/!$Gate1.png
+img/characters/!$Kraven.png
+img/characters/!$Tenda.png
+img/characters/!Chest.png
+img/characters/!Door2.png
+img/characters/!DoorCoreto.png
+img/characters/!Flame.png
+img/characters/!Other2.png
+img/characters/Actor1.png
+img/characters/Monster.png
+img/characters/Nature.png
+img/characters/People2.png
+img/characters/People_ex1.png
+img/characters/Reed.png
+img/characters/SF_Actor2.png
+img/characters/SF_People1.png
+img/characters/SF_People2.png
+img/characters/elf1.png
+img/characters/Distrito Residncial Nobre/$Espelho.png
+img/characters/Distrito Residncial Nobre/$EspelhoSemReflexo.png
+img/characters/Distrito Residncial Nobre/$Fonte.png
+img/characters/Distrito Residncial Nobre/$Goteira.png
+img/characters/Distrito Residncial Nobre/$Iluminacao.png
+img/characters/Distrito Residncial Nobre/$Mural.png
+
+# SV Actors - restaurados manualmente
+img/sv_actors/Cristaleao.png
+img/sv_actors/EsporoPestesporo.png
+img/sv_actors/LoboAlpha.png
+img/sv_actors/LoboGuerreiro.png
+img/sv_actors/Pestesporo.png
+
+# BGM - restaurados manualmente
+audio/bgm/Theme1.ogg
+audio/bgm/Theme3.ogg
