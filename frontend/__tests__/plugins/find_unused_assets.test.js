@@ -58,6 +58,8 @@ const GOLDEN_SET = [
   'img/characters/Kravens/!$buraco.png',
   'img/characters/Mina de Melios/!$Pedras.png',
   'img/characters/Principal/$Thorin.png',
+  // Faces whitelist
+  'img/faces/Bosses.png',
 ];
 
 describe('find_unused_assets.js', () => {

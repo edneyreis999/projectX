@@ -24,3 +24,6 @@ img/characters/Estadio/*
 img/characters/Kravens/*
 img/characters/Mina de Melios/*
 img/characters/Principal/*
+
+# Faces - carregado dinamicamente
+img/faces/Bosses.png
