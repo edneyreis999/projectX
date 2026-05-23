@@ -559,7 +559,7 @@ var $plugins =
     },
     {
         "name": "VisuMZ_4_SkillShop",
-        "status": false,
+        "status": true,
         "description": "[RPG Maker MZ] [Tier 4] [Version 1.04] [SkillShop]",
         "parameters": {
             "BreakHead": "----------------------------------",
@@ -929,6 +929,12 @@ var $plugins =
         "name": "Coreto_HideMpGauge",
         "status": true,
         "description": "Remove completamente a barra de MP do jogo",
+        "parameters": {}
+    },
+    {
+        "name": "Coreto_Skill_Shop",
+        "status": true,
+        "description": "Esconde skills nao-aprendiveis no VisuStella Skill Shop",
         "parameters": {}
     }
 ];
