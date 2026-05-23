@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-05-22T23:38:27.839Z",
+  "timestamp": "2026-05-23T00:11:19.828Z",
   "deletedFiles": [
     {
       "path": "img/characters/!$Barraca.png",
@@ -167,51 +167,6 @@
       "hash": "65e7e146945a8654"
     },
     {
-      "path": "img/characters/Boss/$CoretoBoss1.png",
-      "size": 78577,
-      "hash": "5496d9de2ed5a0b2"
-    },
-    {
-      "path": "img/characters/Boss/Mhordred.png",
-      "size": 75249,
-      "hash": "1ca027e4e920b5d2"
-    },
-    {
-      "path": "img/characters/CasaForjaprata/!$cobertorCama.png",
-      "size": 11480,
-      "hash": "4dcb41ee9fb8e838"
-    },
-    {
-      "path": "img/characters/CasaForjaprata/$Iluminacao.png",
-      "size": 33002,
-      "hash": "26da8a82ba5911f7"
-    },
-    {
-      "path": "img/characters/Conselho/$Conselheiro1.png",
-      "size": 49604,
-      "hash": "295cec1e3230c052"
-    },
-    {
-      "path": "img/characters/Conselho/$Conselheiro2.png",
-      "size": 50440,
-      "hash": "1f8e0c9310f283e4"
-    },
-    {
-      "path": "img/characters/Conselho/$Conselheiro3.png",
-      "size": 52852,
-      "hash": "ec2297f7065ae03d"
-    },
-    {
-      "path": "img/characters/Conselho/$Conselheiro4.png",
-      "size": 51184,
-      "hash": "d672b7068056dd8d"
-    },
-    {
-      "path": "img/characters/Conselho/$Dambur.png",
-      "size": 57052,
-      "hash": "478a9e5d4c1d5d4b"
-    },
-    {
       "path": "img/characters/Damage1.png",
       "size": 58084,
       "hash": "7ee9846b666f938a"
@@ -262,81 +217,6 @@
       "hash": "4e0f82b4f6549d16"
     },
     {
-      "path": "img/characters/Estadio/$Adversario1.png",
-      "size": 49794,
-      "hash": "ca7c06b90fcfcfa8"
-    },
-    {
-      "path": "img/characters/Estadio/$Adversario2.png",
-      "size": 47640,
-      "hash": "900fdedc15765eeb"
-    },
-    {
-      "path": "img/characters/Estadio/$Adversario3.png",
-      "size": 57107,
-      "hash": "c675d968711785c0"
-    },
-    {
-      "path": "img/characters/Estadio/$Adversario4.png",
-      "size": 49815,
-      "hash": "d237f156f1e24145"
-    },
-    {
-      "path": "img/characters/Estadio/$Companheiro1.png",
-      "size": 48041,
-      "hash": "20dee58a66771831"
-    },
-    {
-      "path": "img/characters/Estadio/$Companheiro2.png",
-      "size": 51974,
-      "hash": "40a7c7b1b02c50d7"
-    },
-    {
-      "path": "img/characters/Estadio/$Torcedor1.png",
-      "size": 47782,
-      "hash": "03f99040141433b6"
-    },
-    {
-      "path": "img/characters/Estadio/$Torcedor2.png",
-      "size": 53018,
-      "hash": "ad141e154ee23f61"
-    },
-    {
-      "path": "img/characters/Estadio/$Torcedor3.png",
-      "size": 46520,
-      "hash": "596f701617e5c4d9"
-    },
-    {
-      "path": "img/characters/Estadio/Vestiario/!$Armadura.png",
-      "size": 9789,
-      "hash": "b8a427458a86e7dc"
-    },
-    {
-      "path": "img/characters/Estadio/Vestiario/!$Capacete.png",
-      "size": 12092,
-      "hash": "ee61827d47b4e599"
-    },
-    {
-      "path": "img/characters/Estadio/Vestiario/$Menina1.png",
-      "size": 52345,
-      "hash": "ef264f0cb22c8894"
-    },
-    {
-      "path": "img/characters/Estadio/Vestiario/$Menina2.png",
-      "size": 53378,
-      "hash": "a536667bce3271d1"
-    },
-    {
-      "path": "img/characters/Estadio/Vestiario/$Menina3.png",
-      "size": 52081,
-      "hash": "bb45a155b8ef2adc"
-    },
-    {
-      "path": "img/characters/Estadio/Vestiario/$Menina4.png",
-      "size": 52280,
-      "hash": "65f67fd39fd2b2b6"
-    },
-    {
       "path": "img/characters/Evil.png",
       "size": 117558,
       "hash": "ffa7edc41ddf8b40"
@@ -350,116 +230,6 @@
       "path": "img/characters/Filin.png",
       "size": 15559,
       "hash": "dee821c4220172a5"
-    },
-    {
-      "path": "img/characters/Kravens/!$Caldeirao.png",
-      "size": 39351,
-      "hash": "1e2c03e1ddb18634"
-    },
-    {
-      "path": "img/characters/Kravens/!$PassagemBloqueada.png",
-      "size": 74731,
-      "hash": "3080a6f04b0b44d2"
-    },
-    {
-      "path": "img/characters/Kravens/!$buraco.png",
-      "size": 10303,
-      "hash": "930973349bc3a520"
-    },
-    {
-      "path": "img/characters/Kravens/!$cobertorCama.png",
-      "size": 15574,
-      "hash": "202d57e0e6aadccb"
-    },
-    {
-      "path": "img/characters/Kravens/$Borin.png",
-      "size": 51726,
-      "hash": "81bd4034fb3ef64a"
-    },
-    {
-      "path": "img/characters/Kravens/$Expedicionario1.png",
-      "size": 46761,
-      "hash": "4dbce8fce8dd4cde"
-    },
-    {
-      "path": "img/characters/Kravens/$Expedicionario2.png",
-      "size": 47556,
-      "hash": "46e6f327b0f19d93"
-    },
-    {
-      "path": "img/characters/Kravens/$Expedicionario3.png",
-      "size": 46010,
-      "hash": "9ab4b82910137723"
-    },
-    {
-      "path": "img/characters/Kravens/$Expedicionario4.png",
-      "size": 54566,
-      "hash": "22ddb3f09b22d6fc"
-    },
-    {
-      "path": "img/characters/Kravens/$Expedicionario5.png",
-      "size": 49033,
-      "hash": "90996442cc17da50"
-    },
-    {
-      "path": "img/characters/Kravens/$GuardaKravens.png",
-      "size": 51521,
-      "hash": "cbd5457309695156"
-    },
-    {
-      "path": "img/characters/Kravens/$Minerador1Andar1.png",
-      "size": 50763,
-      "hash": "be258e608e1a9671"
-    },
-    {
-      "path": "img/characters/Kravens/$Minerador1Andar2.png",
-      "size": 48153,
-      "hash": "8df9c954b928239b"
-    },
-    {
-      "path": "img/characters/Kravens/$Minerador2Andar1.png",
-      "size": 48373,
-      "hash": "62333abf8ff65115"
-    },
-    {
-      "path": "img/characters/Kravens/$Minerador2Andar2.png",
-      "size": 56152,
-      "hash": "a29c089d4d823351"
-    },
-    {
-      "path": "img/characters/Kravens/$Minerador3Andar2.png",
-      "size": 51152,
-      "hash": "29bf9dfd7de3fe71"
-    },
-    {
-      "path": "img/characters/Kravens/$Minerador4Andar2.png",
-      "size": 51410,
-      "hash": "a47f76c04cb20f3f"
-    },
-    {
-      "path": "img/characters/Kravens/$Rebelde1.png",
-      "size": 50244,
-      "hash": "e62aef96f68a34fd"
-    },
-    {
-      "path": "img/characters/Kravens/$Rebelde2.png",
-      "size": 49282,
-      "hash": "c0cfb28540885832"
-    },
-    {
-      "path": "img/characters/Kravens/$Rebelde3.png",
-      "size": 50925,
-      "hash": "fe1ce98f9bb0dab3"
-    },
-    {
-      "path": "img/characters/Kravens/$Rebelde4.png",
-      "size": 55561,
-      "hash": "a1983bbbba9383ef"
-    },
-    {
-      "path": "img/characters/Mina de Melios/!$Pedras.png",
-      "size": 99263,
-      "hash": "8b7f20aaf63fad73"
     },
     {
       "path": "img/characters/Monster.png",
@@ -490,66 +260,6 @@
       "path": "img/characters/People_ex1.png",
       "size": 46482,
       "hash": "263a1272af6cf758"
-    },
-    {
-      "path": "img/characters/Principal/$Borin.png",
-      "size": 48765,
-      "hash": "90f13448dd807f34"
-    },
-    {
-      "path": "img/characters/Principal/$DonoDaLojaDeRoupa.png",
-      "size": 52411,
-      "hash": "d189c18f4b1f6a6b"
-    },
-    {
-      "path": "img/characters/Principal/$Melia.png",
-      "size": 48940,
-      "hash": "73c12fc0a649988b"
-    },
-    {
-      "path": "img/characters/Principal/$MãeThorin.png",
-      "size": 48250,
-      "hash": "96fa658f0fb22dd9"
-    },
-    {
-      "path": "img/characters/Principal/$Taverneiro.png",
-      "size": 44581,
-      "hash": "8ef1df94e1b8c6ae"
-    },
-    {
-      "path": "img/characters/Principal/$Tharok.png",
-      "size": 47874,
-      "hash": "e6847c12f576d69a"
-    },
-    {
-      "path": "img/characters/Principal/$ThorinArmorHelmet.png",
-      "size": 75730,
-      "hash": "aa7a9a8253eb80cb"
-    },
-    {
-      "path": "img/characters/Principal/$ThorinHelmet.png",
-      "size": 71022,
-      "hash": "767ea9872d7b53f6"
-    },
-    {
-      "path": "img/characters/Principal/$Tordan.png",
-      "size": 48765,
-      "hash": "90f13448dd807f34"
-    },
-    {
-      "path": "img/characters/Principal/$Treinador.png",
-      "size": 46608,
-      "hash": "3f6036f0cbeae198"
-    },
-    {
-      "path": "img/characters/Principal/$Tusk.png",
-      "size": 57400,
-      "hash": "4f19633c2e39772b"
-    },
-    {
-      "path": "img/characters/Principal/Filena.png",
-      "size": 46817,
-      "hash": "6102161a94d73fca"
     },
     {
       "path": "img/characters/Reed.png",
@@ -720,11 +430,6 @@
       "path": "img/characters/tusk.png",
       "size": 16445,
       "hash": "bb87e65de64a83dd"
-    },
-    {
-      "path": "img/faces/Bosses.png",
-      "size": 245805,
-      "hash": "3d2ce474f8afde3d"
     },
     {
       "path": "img/faces/Portraits menores/Coreto.png",

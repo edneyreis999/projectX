@@ -60,6 +60,17 @@ const GOLDEN_SET = [
   'img/characters/Principal/$Thorin.png',
   // Faces whitelist
   'img/faces/Bosses.png',
+  // Characters restored manually (runtime needed)
+  'img/characters/!$Barraca.png',
+  'img/characters/!Chest.png',
+  'img/characters/Actor1.png',
+  'img/characters/Monster.png',
+  'img/characters/SF_Actor2.png',
+  // SV Actors restored manually
+  'img/sv_actors/Cristaleao.png',
+  'img/sv_actors/LoboAlpha.png',
+  // BGM restored manually
+  'audio/bgm/Theme1.ogg',
 ];
 
 describe('find_unused_assets.js', () => {
