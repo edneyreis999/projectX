@@ -414,6 +414,36 @@
               "parameters": ["garanto."]
             },
             {
+              "code": 101,
+              "indent": 0,
+              "parameters": ["Portraits menores/Principal2", 3, 0, 2, "Minerador"]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": ["Vou te adiantar 5,000 Ludos para você comprar"]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": ["Suas habilidades"]
+            },
+            {
+              "code": 125,
+              "indent": 0,
+              "parameters": [0, 0, 5000]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": ["", 0, 0, 2, ""]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": ["5000 \\G foram encontrados!"]
+            },
+            {
               "code": 122,
               "indent": 0,
               "parameters": [110, 110, 0, 0, 1]
