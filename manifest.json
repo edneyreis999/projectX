@@ -1,30 +1,10 @@
 {
-  "timestamp": "2026-05-23T00:11:19.828Z",
+  "timestamp": "2026-05-23T01:14:59.069Z",
   "deletedFiles": [
-    {
-      "path": "img/characters/!$Barraca.png",
-      "size": 133683,
-      "hash": "ed3e82e9c1632ea6"
-    },
-    {
-      "path": "img/characters/!$Estatua.png",
-      "size": 158766,
-      "hash": "5983e3a9a0242327"
-    },
-    {
-      "path": "img/characters/!$Gate1.png",
-      "size": 117881,
-      "hash": "233ca3f76f0c6416"
-    },
     {
       "path": "img/characters/!$Gate2.png",
       "size": 80694,
       "hash": "43a2a7fc5f258d74"
-    },
-    {
-      "path": "img/characters/!$Kraven.png",
-      "size": 7520,
-      "hash": "0d2f3f1418586367"
     },
     {
       "path": "img/characters/!$MesaMarmore.png",
@@ -47,16 +27,6 @@
       "hash": "ede50e3b2fd1165a"
     },
     {
-      "path": "img/characters/!$Tenda.png",
-      "size": 143979,
-      "hash": "07dc1cbe400ab2e8"
-    },
-    {
-      "path": "img/characters/!Chest.png",
-      "size": 22691,
-      "hash": "2b1ee69f93ed737f"
-    },
-    {
       "path": "img/characters/!Crystal.png",
       "size": 94602,
       "hash": "deb95acb134e15f8"
@@ -67,29 +37,9 @@
       "hash": "e2b25993a32ebc34"
     },
     {
-      "path": "img/characters/!Door2.png",
-      "size": 75537,
-      "hash": "51eb07aac420a094"
-    },
-    {
-      "path": "img/characters/!DoorCoreto.png",
-      "size": 37291,
-      "hash": "92682e54beda084b"
-    },
-    {
-      "path": "img/characters/!Flame.png",
-      "size": 49046,
-      "hash": "36b3f169fc05367f"
-    },
-    {
       "path": "img/characters/!Other1.png",
       "size": 49745,
       "hash": "41644ad32acc76f1"
-    },
-    {
-      "path": "img/characters/!Other2.png",
-      "size": 129975,
-      "hash": "23a212f36af52ed8"
     },
     {
       "path": "img/characters/!SF_Chest.png",
@@ -157,11 +107,6 @@
       "hash": "a5076fe5addde232"
     },
     {
-      "path": "img/characters/Actor1.png",
-      "size": 124833,
-      "hash": "484defc0c54b23af"
-    },
-    {
       "path": "img/characters/Actor2.png",
       "size": 42986,
       "hash": "65e7e146945a8654"
@@ -187,36 +132,6 @@
       "hash": "7bd65a797c8b28b1"
     },
     {
-      "path": "img/characters/Distrito Residncial Nobre/$Espelho.png",
-      "size": 57183,
-      "hash": "97d1a30b0b1a217a"
-    },
-    {
-      "path": "img/characters/Distrito Residncial Nobre/$EspelhoSemReflexo.png",
-      "size": 33902,
-      "hash": "37b0098ba020e30a"
-    },
-    {
-      "path": "img/characters/Distrito Residncial Nobre/$Fonte.png",
-      "size": 518156,
-      "hash": "a7dd5282b6ec6fd4"
-    },
-    {
-      "path": "img/characters/Distrito Residncial Nobre/$Goteira.png",
-      "size": 12099,
-      "hash": "27e1c090c2f456fc"
-    },
-    {
-      "path": "img/characters/Distrito Residncial Nobre/$Iluminacao.png",
-      "size": 61215,
-      "hash": "bc3216b7aa54fbd8"
-    },
-    {
-      "path": "img/characters/Distrito Residncial Nobre/$Mural.png",
-      "size": 33849,
-      "hash": "4e0f82b4f6549d16"
-    },
-    {
       "path": "img/characters/Evil.png",
       "size": 117558,
       "hash": "ffa7edc41ddf8b40"
@@ -232,21 +147,6 @@
       "hash": "dee821c4220172a5"
     },
     {
-      "path": "img/characters/Monster.png",
-      "size": 50137,
-      "hash": "9e4fbd1d40b8477a"
-    },
-    {
-      "path": "img/characters/Nature.png",
-      "size": 35668,
-      "hash": "2fe7fddbc2775dd0"
-    },
-    {
-      "path": "img/characters/People2.png",
-      "size": 36102,
-      "hash": "158c9ee1975ddd27"
-    },
-    {
       "path": "img/characters/People3.png",
       "size": 113810,
       "hash": "85e315451e7da175"
@@ -257,24 +157,9 @@
       "hash": "8c91329306e17943"
     },
     {
-      "path": "img/characters/People_ex1.png",
-      "size": 46482,
-      "hash": "263a1272af6cf758"
-    },
-    {
-      "path": "img/characters/Reed.png",
-      "size": 15428,
-      "hash": "58dbc9ad2bca9bfc"
-    },
-    {
       "path": "img/characters/SF_Actor1.png",
       "size": 36887,
       "hash": "b9266f8c0b74c7f2"
-    },
-    {
-      "path": "img/characters/SF_Actor2.png",
-      "size": 35755,
-      "hash": "a189da3512e883e2"
     },
     {
       "path": "img/characters/SF_Actor3.png",
@@ -295,16 +180,6 @@
       "path": "img/characters/SF_Monster.png",
       "size": 35243,
       "hash": "f327da83d4c65a4d"
-    },
-    {
-      "path": "img/characters/SF_People1.png",
-      "size": 32874,
-      "hash": "0dff10bf9746a668"
-    },
-    {
-      "path": "img/characters/SF_People2.png",
-      "size": 29074,
-      "hash": "e349de7fa9ed030d"
     },
     {
       "path": "img/characters/SF_People3.png",
@@ -365,11 +240,6 @@
       "path": "img/characters/dwarves_walk.png",
       "size": 29295,
       "hash": "fb6b4505f8f8b7c3"
-    },
-    {
-      "path": "img/characters/elf1.png",
-      "size": 44491,
-      "hash": "cfbd351c5c18c069"
     },
     {
       "path": "img/characters/elf1_emote.png",
@@ -460,31 +330,6 @@
       "path": "img/parallaxes/Thorin Armadura Hemet_raiva.png",
       "size": 272567,
       "hash": "97abcca85bb7a1fb"
-    },
-    {
-      "path": "img/sv_actors/Cristaleao.png",
-      "size": 6507984,
-      "hash": "cb797ff7fa419963"
-    },
-    {
-      "path": "img/sv_actors/EsporoPestesporo.png",
-      "size": 368087,
-      "hash": "f3ea67ba349a7cf6"
-    },
-    {
-      "path": "img/sv_actors/LoboAlpha.png",
-      "size": 6546211,
-      "hash": "9b07bbd87942c70c"
-    },
-    {
-      "path": "img/sv_actors/LoboGuerreiro.png",
-      "size": 1368422,
-      "hash": "a6dec4087107365a"
-    },
-    {
-      "path": "img/sv_actors/Pestesporo.png",
-      "size": 4872651,
-      "hash": "c43df1cd965585e1"
     },
     {
       "path": "img/sv_actors/Tharok.png",
@@ -972,19 +817,9 @@
       "hash": "90a61fe0d379ee1f"
     },
     {
-      "path": "audio/bgm/Theme1.ogg",
-      "size": 631433,
-      "hash": "1cd004229ab936a3"
-    },
-    {
       "path": "audio/bgm/Theme2.ogg",
       "size": 621417,
       "hash": "0304164655859f0c"
-    },
-    {
-      "path": "audio/bgm/Theme3.ogg",
-      "size": 573516,
-      "hash": "17af2a18125b439c"
     },
     {
       "path": "audio/bgm/Theme6.ogg",
