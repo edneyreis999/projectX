@@ -112,28 +112,7 @@
         "value": 1
       }
     ],
-    "learnings": [
-      {
-        "level": 5,
-        "note": "",
-        "skillId": 240
-      },
-      {
-        "level": 10,
-        "note": "",
-        "skillId": 241
-      },
-      {
-        "level": 20,
-        "note": "",
-        "skillId": 242
-      },
-      {
-        "level": 30,
-        "note": "",
-        "skillId": 243
-      }
-    ],
+    "learnings": [],
     "name": "Alquimista",
     "note": "Balastrus - Classe especializada em suporte, bombas e tecnologia.",
     "params": [
@@ -406,7 +385,7 @@
     ],
     "learnings": [],
     "name": "Fundeiro",
-    "note": "Thorin - Classe especializada em combate à distância com funda.\n// [Skills & States Core] - Passive states de ganho de TP\n<Passive State: 97>\n<Passive State: 98>",
+    "note": "Thorin - Classe especializada em combate à distância com funda.\n// [Skills & States Core] - Passive states de ganho de TP\n",
     "params": [
       [
         1, 600, 696, 792, 888, 984, 1080, 1176, 1272, 1368, 1464, 1560, 1655, 1751, 1847, 1943, 2039, 2135, 2231, 2327, 2423, 2519, 2615, 2710, 2806, 2902, 2998, 3094, 3190, 3286, 3382, 3478, 3574,
