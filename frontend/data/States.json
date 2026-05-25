@@ -1898,7 +1898,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Fluxo Continuo",
-    "note": "<State Tooltip Description>\n Momentum acelera ATB: +2% por 10 Momentum (max +30%)\n</State Tooltip Description>\n<JS ATB After Gauge>\n// Momentum acelera After Gauge: cada 10 TP = +2% de bonus\nvar momentumBonus = Math.floor(user.tp / 10) * 0.02;\nrate = Math.min(momentumBonus, 0.30);\n</JS ATB After Gauge>",
+    "note": "<State Tooltip Description>\n Momentum acumulado aumenta a velocidade de Soco.\n</State Tooltip Description>",
     "overlay": 0,
     "priority": 50,
     "removeAtBattleEnd": false,
