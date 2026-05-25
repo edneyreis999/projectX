@@ -77,7 +77,7 @@
     "maxLevel": 30,
     "name": "Filena",
     "nickname": "",
-    "note": "<TP Mode: Momentum>\n  <JS Pre-Start Action>\n  var embaloSkillIds = [47, 48, 49, 50, 51, 52, 53, 54];\n  var embaloIds = [67, 69, 70];\n  var _embAct = BattleManager._action;\n  var _embSkillId = _embAct ? (_embAct.item() ? _embAct.item().id : 0) : 0;\n  console.log(\"[EMBALO PRE] Actor - Skill: \" + _embSkillId);\n  if (embaloSkillIds.indexOf(_embSkillId) === -1) {\n    for (var i = 0; i < embaloIds.length; i++) {\n      user.removeState(embaloIds[i]);\n    }\n    user._embaloLastSkill = 0;\n    user._embaloCount = 0;\n    console.log(\"[EMBALO PRE] Resetado\");\n  } else {\n    for (var i = 0; i < embaloIds.length; i++) {\n      user.removeState(embaloIds[i]);\n    }\n    console.log(\"[EMBALO PRE] Embalo skill - tracking preservado\");\n  }\n  </JS Pre-Start Action>",
+    "note": "<TP Mode: Momentum>\n  <JS Pre-Start Action>\n  var embaloSkillIds = [47, 48, 49, 50, 51, 52, 53, 54];\n  var _embAct = BattleManager._action;\n  var _embSkillId = _embAct ? (_embAct.item() ? _embAct.item().id : 0) : 0;\n\n  if (embaloSkillIds.indexOf(_embSkillId) === -1) {\n    user._embaloLastSkill = 0;\n    user._embaloCount = 0;\n    user.refresh();\n  }\n  </JS Pre-Start Action>",
     "profile": ""
   },
   {
