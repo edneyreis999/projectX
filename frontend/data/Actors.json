@@ -60,7 +60,7 @@
     "maxLevel": 30,
     "name": "Thorin",
     "nickname": "",
-    "note": "<xAnima:Thorin>\n<xAnimaSet:Armor>\n<xAnimaSet:OldHelmet>\n<TP Mode: FOCO>\n<Preserve TP>\n<Passive State: 92>\n<Passive State: 93>\n<Passive State: 94>\n<JS Post-Start Turn>\nif (user.isStateAffected(96) && user._aceTpSpent > 0) {\n  var penalty = Math.floor(user._aceTpSpent / 2);\n  user.gainTp(-penalty);\n  console.log(\"[ACE INTERRUPT] Penalidade: -\" + penalty + \" TP\");\n  user._aceTpSpent = 0;\n  user.removeState(96);\n}\n</JS Post-Start Turn>",
+    "note": "<xAnima:Thorin>\n<xAnimaSet:Armor>\n<xAnimaSet:OldHelmet>\n<TP Mode: FOCO>\n<Preserve TP>\n<JS Post-Start Turn>\nif (user.isStateAffected(96) && user._aceTpSpent > 0) {\n  var penalty = Math.floor(user._aceTpSpent / 2);\n  user.gainTp(-penalty);\n  console.log(\"[ACE INTERRUPT] Penalidade: -\" + penalty + \" TP\");\n  user._aceTpSpent = 0;\n  user.removeState(96);\n}\n</JS Post-Start Turn>",
     "profile": ""
   },
   {
@@ -94,7 +94,7 @@
     "maxLevel": 30,
     "name": "Kilin",
     "nickname": "",
-    "note": "<TP Mode: GUARDA>\n<Passive State: 77>\n<Passive State: 78>\n<Passive State: 79>\n<Passive State: 80>\n<Passive State: 81>\n\n<Bodyguard>",
+    "note": "<TP Mode: GUARDA>\n<Bodyguard>",
     "profile": ""
   },
   {
