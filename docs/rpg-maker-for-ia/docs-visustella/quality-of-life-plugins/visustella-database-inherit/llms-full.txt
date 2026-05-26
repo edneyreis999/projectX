@@ -1,0 +1,92 @@
+VisuStella Database Inherit - Documentacao Completa para LLMs
+
+Sumario:
+Este documento cobre o plugin VisuStella Database Inherit para RPG Maker MZ (Tier 4).
+O plugin permite heranca de propriedades entre objetos do banco de dados via notetags,
+incluindo notetags, propriedades basicas, formulas de dano, parametros, action patterns,
+traits e effects. Possui 64 notetags em 8 categorias para controle granular.
+
+Documentos e Areas:
+
+1. conceitos/visao-geral.md
+   - Introducao ao plugin e suas funcionalidades
+   - Mecanismo de heranca em 7 etapas detalhadas
+   - Como notetags, propriedades, formulas, parametros, action patterns, traits e effects sao herdados
+   - Aviso sobre tempo de carregamento adicional
+
+2. conceitos/ordem-heranca.md
+   - Regra critica: herde sempre de IDs menores
+   - Exemplo pratico com Items (IDs 5, 10, 20)
+   - Explicacao de por que a ordem importa
+   - O que acontece ao herdar de IDs maiores
+
+3. notetags/tudo.md
+   - Everything-Related Notetags (heranca completa)
+   - 5 variantes: From id/name, First, Last, Previous, Next
+   - Aplica-se a: Actor, Class, Skill, Item, Weapon, Armor, Enemy, State, Tileset
+
+4. notetags/notetags.md
+   - Notetag Inheritance-Related Notetags (heranca de notetags apenas)
+   - 5 variantes: From id/name, First, Last, Previous, Next
+   - Aplica-se a: Actor, Class, Skill, Item, Weapon, Armor, Enemy, State, Tileset
+
+5. notetags/propriedades.md
+   - Basic Property Inheritance-Related Notetags
+   - 5 variantes: From id/name, First, Last, Previous, Next
+   - Aplica-se a: Actor, Class, Skill, Item, Weapon, Armor, Enemy, State, Tileset
+   - Com multiplos parents, overwrite vem do ultimo parent listado
+
+6. notetags/damage-formula.md
+   - Damage Formula Inheritance-Related Notetags
+   - 5 variantes: From id/name, First, Last, Previous, Next
+   - Aplica-se apenas a: Skill, Item
+
+7. notetags/parametros.md
+   - Parameters Inheritance-Related Notetags
+   - 5 variantes: From id/name, First, Last, Previous, Next
+   - Aplica-se apenas a: Weapon, Armor, Enemy
+
+8. notetags/enemy-actions.md
+   - Enemy Action Patterns-Related Notetags
+   - 5 variantes: From id/name, First, Last, Previous, Next
+   - Aplica-se apenas a: Enemy
+
+9. notetags/traits.md
+   - Trait Inheritance-Related Notetags
+   - 5 variantes: From id/name, First, Last, Previous, Next
+   - Aplica-se a: Actor, Class, Weapon, Armor, Enemy, State
+
+10. notetags/effects.md
+    - Effects Inheritance-Related Notetags
+    - 5 variantes: From id/name, First, Last, Previous, Next
+    - Aplica-se a: Skill, Item
+
+11. notetags/referencia-rapida.md
+    - Tabela resumo com todas as 64 notetags
+    - Mapeamento de quais objetos usam cada tipo de heranca
+
+12. configuration/parametros-plugin.md
+    - Inheritance Settings do plugin
+    - Notetags: Inherit Meta Flags
+    - Properties: JS Overwritten / JS Extended
+    - Damage Formulas: Damage Format (%1 parent, %2 child)
+    - Parameters Formulas: Parameter Format (%1 parent, %2 child)
+
+13. referencia/troubleshooting.md
+    - Problemas comuns e solucoes
+
+14. referencia/glossario.md
+    - Termos tecnicos do plugin
+
+Relacao entre Areas:
+- conceitos/ fornece a base teorica (ler primeiro)
+- notetags/ e a referencia pratica de uso (consultar conforme necessario)
+- configuration/ define o comportamento global (ajustar uma vez)
+- referencia/ material complementar
+
+Fluxo tipico de uso:
+1. Entender mecanismo em conceitos/visao-geral.md
+2. Verificar regra de ordem em conceitos/ordem-heranca.md
+3. Consultar referencia-rapida.md para identificar notetag correta
+4. Ler detalhes da notetag especifica em notetags/
+5. Ajustar parametros globais em configuration/ se necessario
