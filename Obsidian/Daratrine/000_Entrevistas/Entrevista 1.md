@@ -160,8 +160,14 @@ Nesse contexto:
 
 
 **Arco 1: quem é thorin e os personagens**
+- ATÉ A VOLTA DE KRAVENS
 **Arco 2: como é a quebra do selo (conflito político de gildrat)**
+- CHEGADA EM GILDRAT, COM A CIDADE JÁ CHEIA DE MOTINS
+- DABURR "COMPRA OS REBELDES" E PRECISA DE MAIS $
+- REUNIÃO DO CONSELHO: ENVIA A GALERA PARA MELIOS
 **Arco 3: como lidam com magia (consequência)**
+- VOLTA DE MELIOS
+- DEPOIS DA QUEBRA DO SELO/IGNOTOS 
 
 ---
 
@@ -351,3 +357,21 @@ timeline historia do jogo v5
 O jogo parece convergir para:
 
 > Um mundo inevitavelmente em colapso, onde o verdadeiro papel do jogador não é salvar o destino — mas decidir o que ainda vale a pena preservar.
+
+
+
+Anotações Gerais
+
+*(Tusk não existe mais)*
+*Vitasolis é um deus na mitologia dos Ignotos - representado pelo Sol*
+*O universo tem Dois Sois: Vitasolis e um menor* 
+
+O Profeta das Sombras
+
+- **Conexão:** Ele busca o momento da *quebra do selo* para sua libertação e vingança sobre Ekios e Vitasolis. 
+		*- como ele influencia a quebra do selo? nos sonhos?*
+		*- entra nos solnhos de Dambur, outros membros, Balastrus principalmente* (ganancioso, quebra o selo, se arrepende mais pra frente)
+	- *Flashbacks, cenas explicativas, sonhos (a mãe de Thorin poderia "puxar Thorin" do sonho dele para o sonho de outras pessoas, par amostrarmos o profeta influenciando a ganacia dos anões) 
+
+
+DIVISÕES

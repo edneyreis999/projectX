@@ -129,7 +129,6 @@ Após o novo selo:
 
 Com o selo restaurado:
 - o exército de Daratrine continuou combatendo os Ignotos restantes.
-d
 Ao longo do tempo:
 - os Ignotos foram eliminados;
 - o continente começou a se reconstruir.

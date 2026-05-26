@@ -15,7 +15,7 @@ Raça: Anões
 
 ## Visão Geral
 
-O Ancestralismo Imperial é a tradição oficial de Gildrat e a principal ferramenta ideológica do Império Anão. A crença sustenta que os anões sobreviveram graças à disciplina, à mineração e à capacidade de dominar a pedra quando a terra falhou durante a Grande Geada.
+O Ancestralismo Imperial é a tradição oficial de Gildrat e a principal ferramenta ideológica do Império Anão. A crença sustenta que os anões sobreviveram graças à disciplina, à mineração e à capacidade de dominar a pedra quando a terra falhou durante a Geada.
 
 A memória ancestral é venerada não como espiritualidade viva, mas como legado histórico e símbolo de permanência imperial.
 
@@ -24,7 +24,7 @@ A memória ancestral é venerada não como espiritualidade viva, mas como legado
 
 Os anões acreditam que toda grande obra deixa marcas eternas no mundo. Fortalezas, minas, muralhas e monumentos são vistos como formas de imortalidade.
 
-A terra já foi considerada viva pelos antigos povos anões, mas após a [[Grande Geada]] essa visão passou a ser tratada como ingenuidade perigosa. O Império ensina que depender da terra trouxe fome e colapso, enquanto a pedra e o minério garantiram sobrevivência.
+A terra já foi considerada viva pelos antigos povos anões, mas após a Geada]] essa visão passou a ser tratada como ingenuidade perigosa. O Império ensina que depender da terra trouxe fome e colapso, enquanto a pedra e o minério garantiram sobrevivência.
 
 Os ancestrais dignos são aqueles que:
 - expandiram o Império

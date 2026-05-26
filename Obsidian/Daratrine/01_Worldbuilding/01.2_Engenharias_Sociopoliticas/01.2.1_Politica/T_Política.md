@@ -10,6 +10,10 @@ tags: [worldbuilding/politica]
 ## Visao Geral
 Descricao do sistema de governo e como o poder é exercido sobre a populacao.
 
+==IMPORTANTE: PORQUE O THORIN VAI PRO CONSELHO, PQ VÃO PRA MELIOS, JUSTIFICAR ==
+- CONFLITOS POLÍTICOS
+- PQ THORIN E FILENA ESTÃO NA EXPEDIÇÃO DA QUEBRA DO SELO? PQ VAO PRA MELIOS?
+- PQ ESTÃO NO CONSELHO?
 ## Instituicoes e Orgaos de Poder
 * **Instituicao A:** Funcao e influencia.
 * **Instituicao B:** Funcao e influencia.

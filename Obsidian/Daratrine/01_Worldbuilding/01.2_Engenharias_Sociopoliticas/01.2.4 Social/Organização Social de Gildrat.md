@@ -31,13 +31,12 @@ A ideia central é:  *“Um indivíduo pode enriquecer; uma linhagem leva sécul
 ---
 ## Estrutura de Castas (Hierarquia)
 
-
-| Casta     | Nome                                         | Função Primária              | Fonte de Poder           |
-| :-------- | :------------------------------------------- | :--------------------------- | :----------------------- |
-| Alta      | Grandes Casas (nobreza)                      | Governança e Memória         | Linhagem e História      |
-| Média     | Casas Mercantis e Mineradoras                | Economia e Engenharia        | Capital e Tecnologia     |
-| Base      | Mãos de Pedra (trabalhadores e comerciantes) | Sustento e Defesa            | Trabalho e Massa Crítica |
-| Excluídos | Sem Voz (desprivilegiados)                   | Marginalizados e Dissidentes | —                        |
+| Casta     | Nome                                                 | Função Primária                  | Fonte de Poder           |
+| :-------- | :--------------------------------------------------- | :------------------------------- | :----------------------- |
+| Alta      | Grandes Casas (nobreza)                              | Governança, Exército e Conselho  | Linhagem e História      |
+| Média     | Casas Mercantis e Mineradoras (Chefes de expedições) | Economia, Engenharia e Mineração | Capital e Tecnologia     |
+| Base      | Mãos de Pedra (trabalhadores e comerciantes)         | Sustento e Defesa                | Trabalho e Massa Crítica |
+| Excluídos | Sem Voz (desprivilegiados)                           | Marginalizados e Dissidentes     | —                        |
 
 ---
 ## As Camadas Sociais
@@ -45,17 +44,16 @@ A ideia central é:  *“Um indivíduo pode enriquecer; uma linhagem leva sécul
 ### Grandes Casas
 As linhagens que possuem o "Sangue da Memória". Controlam a **Guarda de Ferro** e o **Conselho**.
 - **Foco:** Preservação do status quo e controle do Muro das Memórias.
-- **Conflito:** Temem que a industrialização rúnica torne a linhagem obsoleta frente ao ouro (CHAT: não gosto, tem que ter mais a ver com manutenção, expansão e ascensão).
+
 ### Casas Mercantis e Mineradoras
-O motor econômico. Possuem o ouro, mas não o nome.
+O motor econômico. Possuem o Drakeis, mas não o nome.
 - **Foco:** Expansão industrial e compra de títulos/reconhecimento.
-- **Conflito:** Financiam o Futebol Rúnico para ganhar popularidade contra a nobreza.
+- **Conflito:** Financiam o Futebol Rúnico para ganhar popularidade na base, contra a nobreza.
 ### Trabalhadores Comuns (Mãos de Pedra)
 A espinha dorsal de Gildrat. Mineradores e artesãos.
 - **Foco:** Sobrevivência e o dever coletivo.
 - **Cultura:** Onde as **Velhas Canções** e o **Futebol Rúnico** sobrevivem como resistência silenciosa.
 ### Sem Voz
-  
 Categoria informal usada para designar:  
 - criminosos exilados; usuários de magia proibida; seguidores das Velhas Canções; dissidentes políticos; linhagens desonradas.  
 Os Sem Voz não possuem reconhecimento social nem direito à memória oficial.
@@ -63,9 +61,8 @@ Os Sem Voz não possuem reconhecimento social nem direito à memória oficial.
 ---
 ## O Futebol Rúnico: O Sistema de Escape
 O esporte não é apenas entretenimento; é um **sistema emergente de controle e resistência**.
-
 * **Visão Imperial:** "Pão e Circo". Uma válvula de escape para evitar revoltas nas minas.
-* **Visão Popular:** Conexão com a **Terra Vermelha** e as tradições pré-Geada.
+* **Visão Popular:** Conexão com as Velhas Canções 
 * **Implicação Narrativa:** O campo de futebol é o único lugar onde um "Mão de Pedra" pode derrubar um "Nobre" sem ser executado por traição.
 
 ---
@@ -74,22 +71,15 @@ O esporte não é apenas entretenimento; é um **sistema emergente de controle e
 #### Linhagem vs. Riqueza
 O choque entre o **Poder Tradicional** (hereditário) e o **Poder Emergente** (meritocracia financeira). 
 #### Império vs. Velhas Canções
-A transição da espiritualidade orgânica (Terra) para a pragmática imperial (Extração).
-- Nota: *As Velhas Canções são a "magia proibida" que o Futebol preserva através do ritmo e dos cantos da torcida.*
+A transição da espiritualidade tradicional (Terra) para a pragmática imperial (Extração).
 #### Memória Oficial vs. Memória Viva  
-O Império controla:  
+*O Império controla:*  
 - monumentos, registros históricos, genealogias, feitos reconhecidos  
-As Velhas Canções preservam:  
+*As Velhas Canções preservam:*  
 - histórias orais, sonhos, símbolos antigos, memórias não registradas
 ---
 ## Conexão com Protagonista: Thorin
-- **Origem:** Casa de Ferro (Militar).
-- **Divergência:** Thorin é o "curto-circuito" no sistema. Ele possui a linhagem da elite, mas sua identificação é com a base.
-- **Mecânica Narrativa:** O uso dos **Poderes Oníricos** de Thorin deve ser visualmente contrastante com a rigidez geométrica da arquitetura de Gildrat.
----
+- **Origem:** Grandes Casas (o pai é general do exército)
+- **Divergência:** Thorin é o "curto-circuito" no sistema. Ele possui a linhagem da elite, mas sua identificação é com os trabalhadores.
 
-## 🔗 Links Relacionados
-- [[Cidades de Gildrat]]
-- [[O Muro das Memórias]]
-- [[Mecânicas de Futebol Rúnico]]
-- [[As Velhas Canções]]
+---

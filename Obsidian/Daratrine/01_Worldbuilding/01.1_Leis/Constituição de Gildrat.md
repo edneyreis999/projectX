@@ -1,18 +1,18 @@
 ## Princípios Fundamentais
 São as verdades que sustentam o reino/sociedade. 
-- ==O que o Estado mais teme?== 
-- ==O que o Estado mais valoriza? EXPANSÃO, PODER,== 
-- ==O poder vem do sangue, da religião, da força militar ou da magia?==
-- ==O povo acredita que o sistema é justo?==
-- ==Existe ideia de “cidadão” ou apenas “servo/súdito”?==
-- ==A lei protege o povo ou protege a ordem?==
-- ==O reino existe para expandir, sobreviver ou controlar?==
+- ==O que o Estado mais teme?==  PERDER NOVAMENTE A TERRA NATAL (HOJE, GILDRAT NAS MONTANHAS); LUTAM PARA NÃO PERDER DE NOVO; EVITAR MAIS UMA "GEADA"
+- ==O que o Estado mais valoriza? EXPANSÃO, PODER,== A "CASA"/TERRITÓRIO
+- ==O poder vem do sangue, da religião, da força militar ou da magia?== DA LINHAGEM, SANGUE, FAMÍLIA
+- ==O povo acredita que o sistema é justo?== OS DE CASTAS ALTAS SIM, CASTAS MAIS BAIXAS DIVIDIDA ENTRE SIM (80%) E NÃO (20%, REBELDES) #SOCIAL
+		- Tem anões que vivem fora de gildrat (vistos como inferiores, "selvagens", ladrões) - são inimigos 
+		- Só de estar em gildrat já se veem como superiores
+- ==Existe ideia de “cidadão” ou apenas “servo/súdito”?== Cidadãos 
+- ==A lei protege o povo ou protege a **ordem**?== A EXPANSÃO, e ordem 
+- ==O reino existe para expandir, sobreviver ou controlar?== EXPANDIR E CONTROLAR
 
 ### I. Fundamentos do Estado
 #### Religião
-- A terra não deve ser venerada acima do Império.
-- Cultos ancestrais são tratados como superstição perigosa.
-- ==Teremos uma religião? ou podemos pensar numa tradição mais laica e pragmática? eu li que se tem essa tradição de valorizar, reverenciar e lembrar de grandes anões da história e tudo mais, podíamos ir para esse lado==
+** docs religião
 #### Legitimidade
 - O Imperador governa para garantir a sobrevivência dos anões.
 - Ordem e produção estão acima da vontade individual.
@@ -26,13 +26,15 @@ São as verdades que sustentam o reino/sociedade.
 - O Imperador pode declarar exploração obrigatória de territórios.
 #### Conselho
 - O Conselho administra recursos, minas e expedições.
-- Nobres, militares e mineradores influentes possuem assento ==(o pai de thorin é do conselho? ou só militar? se ele é do conselho, há essa pressão de thorin seguir essa carreira política né?)==.
+- **Composição:** Nobres (donos de comércio) e o General da Guarda de Ferro 
 #### Forças Armadas
-- A Guarda de Ferro garante a ordem interna.
+- A Guarda de Ferro é a elite dos militares
+- Garantem a ordem interna.
 - Todo cidadão deve servir ao império quando convocado.
 #### Justiça
 - Crimes contra o império são tratados como traição.
 - O uso ilegal de magia ameaça a estabilidade do reino.
+- Rebeldia contra o império é tratada como crime.
 ---
 ### III. Ordem Social
 #### Castas
@@ -44,6 +46,8 @@ São as verdades que sustentam o reino/sociedade.
 #### Deveres
 - Todo anão deve contribuir para a sobrevivência de Gildrat.
 - Negar trabalho ou convocação é considerado crime.
+		- nota: thorin meio que estava negando trabalho, mas por ser filho do general nãoe estava sendo punido
+		- conflito pai e filho
 ---
 ### IV. Controle Econômico
 #### Minas
@@ -55,15 +59,28 @@ São as verdades que sustentam o reino/sociedade.
 #### Impostos
 - Recursos extraídos sustentam a Guarda e o Conselho.
 #### Comércio
-- Artefatos e minérios raros são controlados pelo Estado.
+- Principalmente minérios e bens duráveis (instrumentos, objetivos, artefatos, feitos de pedra)
+- Minérios raros são controlados pelo Estado.
+#### Drakel
+==- não usam escambo mais; primeira raça que usa/inventou a moeda
+- anões usam Drakeis; na praça de troca as coisas são trocadas em Drakel
+- outras raças precisam de Drakel para comprar; mas essa moeda não é do continente/outras raças/sociedades
+#### Alimentação
+==da onde vem um alimento? eles trocam? o que comem? da onde conseguem?
+só troca traz ideia frágil para o império==
+==- não tem definido o que eles comem
+- comem pedra?
 ---
 ### V. Controle da Magia
 #### Magia
-- Magia não autorizada é proibida.
-- Poderes ligados à terra são considerados instáveis e perigosos.
-#### Artefatos
+- Magia é proibida.
+- Poderes ligados a antigas tradições são considerados instáveis e perigosos.
+#### Artefatos Mágicos
 - Relíquias antigas pertencem ao império.
-- Objetos rúnicos devem ser catalogados.
+- frutos de trocas com elfos; artefato mágico
+- ficam com os nobres ==(para meu favor, desde que não me desfavoreça)==
 #### Punições
 - Traição, sabotagem e heresia ameaçam Gildrat.
 - Crimes de magia podem levar ao exílio ou execução.
+
+
