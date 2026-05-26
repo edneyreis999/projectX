@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Anotações Gerais.md",
+                "file": "Daratrine/00_Foudation/História Inteira de Daratrine.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Anotações Gerais"
+              "title": "História Inteira de Daratrine"
             }
           }
         ],
@@ -93,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "9c27163fe74ee3b0",
@@ -196,46 +196,53 @@
       "workspaces:Gerenciar leiautes da área de trabalho": false
     }
   },
-  "active": "fb8b41666eed810f",
+  "active": "922b4288972f942f",
   "lastOpenFiles": [
-    "Daratrine/03_Narrative/03.3_Quests/T_Quest.md",
-    "Anotações Gerais.md",
-    "Daratrine/03_Narrative/03.2_Game_Timeline/T_Game_Timeline.md",
-    "Daratrine/03_Narrative/03.1_Macro_History/T_macro_history.md",
-    "Daratrine/02_Atlas_Folk/02.3_NPCs_e_Antagonistas/T_NPCs_e_Antagonistas.md",
-    "Daratrine/02_Atlas_Folk/02.2_Protagonistas/T_protagonistas.md",
-    "Daratrine/02_Atlas_Folk/02.1_Racas_e_Especies/T_racas_e_especies.md",
-    "Daratrine/01_Worldbuilding/01.5_Magia/T_magia.md",
-    "Daratrine/01_Worldbuilding/01.4_Tecnologia/T_tecnologia.md",
-    "Daratrine/01_Worldbuilding/01.3_Geografia/T_geografia.md",
-    "Daratrine/01_Worldbuilding/01.2_Engenharias_Sociopoliticas/01.2.3_Religiao/T_religiao.md",
-    "Daratrine/01_Worldbuilding/01.2_Engenharias_Sociopoliticas/01.2.2_Economia/T_economia.md",
-    "Daratrine/01_Worldbuilding/01.2_Engenharias_Sociopoliticas/01.2.1_Politica/T_Política.md",
-    "Daratrine/01_Worldbuilding/01.1_Leis/T_Leis.md",
+    "Daratrine/000_Entrevistas/Entrevista 1.md",
+    "Daratrine/00_Foudation/História Inteira de Daratrine.md",
     "Daratrine/00_Foudation/00.3_Tone_Vibe/T_Tone_Vibe.md",
+    "Daratrine/00_Foudation/00.1_Core_Concept/Core _Concept.md",
+    "Daratrine/03_Narrative/03.0_Modelos de timeline.md",
+    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/T_Geografia_e_Arquitetura.md",
+    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/T_geografia.md",
+    "{{title}}.md",
+    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.7_Outros.md",
+    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.6_Mina_de_Esgoto.md",
+    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.5_Castelo_de_Damburr_Sala_do_Conselho.md",
+    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.4_Casa_da_família_Forjaprata.md",
+    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.3_Distrito_Residencial.md",
+    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.2_Gildrat.md",
+    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Continente_Ekios.md",
+    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/Sem título",
+    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.2_Locais",
+    "Daratrine/01_Worldbuilding/01.2_Engenharias_Sociopoliticas/01.2.2_Economia/T_economia.md",
+    "Daratrine/01_Worldbuilding/01.2_Engenharias_Sociopoliticas/01.2.4 Social/Organização Social de Gildrat.md",
     "Daratrine/00_Foudation/00.2_The_Thesis/T_Foundation_Details.md",
-    "Daratrine/00_Foudation/00.1_Core_Concept/T_Core _Concept.md",
-    "2026-05-05.md",
+    "Daratrine/00_Foudation/00.1_Core_Concept/Síntese Visual dos Temas.md",
+    "Daratrine/00_Foudation/00.1_Core_Concept/Dúvidas.md",
+    "Daratrine/01_Worldbuilding/01.2_Engenharias_Sociopoliticas/01.2.3_Religiao/Cultos Ignotos.md",
+    "Daratrine/01_Worldbuilding/01.1_Leis/T_Leis (se formos especificar leis; verificar se é necessário).md",
+    "Daratrine/01_Worldbuilding/01.2_Engenharias_Sociopoliticas/01.2.3_Religiao/Ancestralismo Imperial.md",
+    "Daratrine/01_Worldbuilding/01.1_Leis/Constituição de Gildrat.md",
+    "Daratrine/01_Worldbuilding/01.2_Engenharias_Sociopoliticas/01.2.3_Religiao/As Velhas Canções.md",
+    "Pasted image 20260511160543.png",
+    "Anotações Gerais.md",
+    "Pasted image 20260511160455.png",
+    "Pasted image 20260511160513.png",
+    "Pasted image 20260511160601.png",
+    "Pasted image 20260511160412.png",
+    "Pasted image 20260511160435.png",
+    "Pasted image 20260511160348.png",
+    "Daratrine/000_Entrevistas",
+    "Daratrine/01_Worldbuilding/01.2_Engenharias_Sociopoliticas/01.2.4 Social",
     "Sem título.canvas",
-    "Daratrine/03_Narrative/03.2_Game_Timeline/T_Game-Timeline.md",
     "Daratrine/03_Narrative/03.3_Beats",
     "Daratrine/03_Narrative/03.1_Macro_History/T_Macro",
-    "Daratrine/99_Templates/T_Personagem.md",
     "Daratrine/04_Mechanics/Sem título",
     "Daratrine/04_Mechanics/04.1_Decision_Log",
     "Daratrine/03_Narrative/03.3_Quests",
     "Daratrine/03_Narrative/03.2_Game_Timeline",
-    "Daratrine/03_Narrative/03.1_Macro_History",
-    "Daratrine/01_Worldbuilding/01.5_Magia",
-    "Daratrine/01_Worldbuilding/01.2_Engenharias_Sociopoliticas/01.2.3_Religiao",
-    "Daratrine/01_Worldbuilding/01.2_Engenharias_Sociopoliticas/01.2.2_Economia",
-    "Daratrine/99_Templates/T_Sistema_Mecanica.md",
-    "Daratrine/99_Templates/T_Worldbuilding.md",
-    "Daratrine/99_Templates/T_Quest_Historia.md",
-    "Daratrine/99_Templates/T_Fundacao_GDD.md",
     "Daratrine/99_Templates/Sem título.canvas",
-    "Bem-vindo.md",
-    "Sem título 1.canvas",
-    "crie um link.md"
+    "Sem título 1.canvas"
   ]
 }
