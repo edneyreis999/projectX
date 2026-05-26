@@ -2175,32 +2175,32 @@
     "members": [
       {
         "enemyId": 29,
-        "x": 484,
-        "y": 307,
+        "x": 460,
+        "y": 298,
         "hidden": true
       },
       {
         "enemyId": 29,
-        "x": 404,
-        "y": 238,
+        "x": 412,
+        "y": 243,
         "hidden": true
       },
       {
         "enemyId": 29,
-        "x": 496,
-        "y": 370,
+        "x": 460,
+        "y": 372,
         "hidden": true
       },
       {
         "enemyId": 29,
-        "x": 446,
-        "y": 423,
+        "x": 401,
+        "y": 431,
         "hidden": true
       },
       {
         "enemyId": 28,
-        "x": 137,
-        "y": 500,
+        "x": 153,
+        "y": 423,
         "hidden": false
       }
     ],
@@ -2233,15 +2233,8 @@
   },
   {
     "id": 54,
-    "name": "teste",
-    "members": [
-      {
-        "enemyId": 9,
-        "x": 271,
-        "y": 512,
-        "hidden": false
-      }
-    ],
+    "members": [],
+    "name": "",
     "pages": [
       {
         "conditions": {

@@ -1,0 +1,78 @@
+VISUSTELLA SKILL LEARN SYSTEM - GUIA COMPLETO PARA LLMs
+=======================================================
+
+SUMARIO
+-------
+Este documento descreve o plugin VisuStella Skill Learn System (Tier 2) para RPG Maker MZ.
+Permite atores aprenderem skills via menu dedicado, gastando recursos como AP, SP, Gold, Items, Weapons e Armors.
+
+CONCEITOS (conceitos/)
+----------------------
+visao-geral.md: Introducao ao plugin, recursos principais, requisitos, integracoes, fluxo de aprendizado
+ability-points.md: Mecanica completa de AP - aquisicao, modificadores (Plus/Rate/Flat), formula, drawing
+skill-points.md: Mecanica completa de SP - identico ao AP porem recurso separado
+aprendizado-de-skills.md: Pipeline de aprendizado - Show Conditions → Require Conditions → Custos → Confirmacao/Animacao
+
+NOTETAGS (notetags/)
+--------------------
+ability-points.md: AP inicial, ganho em batalha, recompensa de inimigos, modificadores Plus/Rate/Flat
+skill-points.md: SP inicial, ganho em batalha, recompensa de inimigos, modificadores Plus/Rate/Flat
+habilidades-aprendiveis.md: Como definir skills aprendiveis nas Classes (<Learn Skill: id>)
+custos-de-aprendizado.md: Custos fixos (AP/SP/Gold/CP/JP/Items), custo composto, custos dinamicos JS
+condicoes-de-exibicao.md: Show Conditions - level, skills, switches, JS dinamico
+condicoes-de-requisito.md: Require Conditions - level, skills, switches, JS dinamico
+animacao.md: Animacoes ao aprender, fade speed, imagem custom, JS On Learn Skill
+referencia-rapida.md: Tabela completa de todas as notetags por destinatario (Actor/Class/Skill/Item/Enemy)
+
+COMANDOS (comandos/)
+--------------------
+ability-points.md: AP Gain (afetado por rates), AP Add (direto), AP Lose, AP Set
+skill-points.md: SP Gain (afetado por rates), SP Add (direto), SP Lose, SP Set
+sistema.md: Show/Hide Skill Learn no menu de Skills
+
+PARAMETROS (parametros/)
+-------------------------
+config-geral.md: Displayed Costs, Separate Skill Type, Hide Learned, Vocabulary (Requirements e Costs)
+animacao-e-som.md: Animacoes on/off, Default Animations, Scale, Fade Speed, Sound Effect
+janelas.md: Detail Window (requisitos e custos detalhados) e Confirm Window
+ability-points.md: Shared AP, Maximum, Visual, Vocabulary, Gain settings, Victory, Drawing API
+skill-points.md: Shared SP, Maximum, Visual, Vocabulary, Gain settings, Victory, Drawing API
+
+REFERENCIA (referencia/)
+-------------------------
+extra-features.md: Battle Test (skills auto-disponiveis), Victory Aftermath (exibicao de AP/SP)
+compatibilidade.md: Requisitos RPG MZ, Tier 2, integracao ClassChangeSystem e VictoryAftermath
+glossario.md: Termos (AP, SP, CP, JP, Show Condition, Require Condition, etc.)
+api-javascript.md: Funcoes de drawing (drawAbilityPoints, drawSkillPoints) e variaveis em JS notetags
+
+RELACOES ENTRE AREAS
+---------------------
+- conceitos/ define a teoria → notetags/ implementa via database → comandos/ manipula em runtime
+- parametros/ configura o comportamento → referencia/ documenta integracoes e API
+- Show Conditions (notetags/condicoes-de-exibicao.md) controlam VISIBILIDADE
+- Require Conditions (notetags/condicoes-de-requisito.md) controlam HABILITACAO
+- Ambas podem coexistir na mesma skill
+
+FORMULA DE GANHO
+-----------------
+AP/SP Final = (1 + Plus) * Rate + Flat
+- Plus: aditivo entre si (notetags em Actor/Class/Weapon/Armor/State)
+- Rate: multiplicativo entre si
+- Flat: aditivo entre si
+- Modificadores NAO se aplicam a Add/Lose/Set (apenas a Gain)
+
+DIFERENCA GAIN vs ADD
+----------------------
+- Gain: adiciona AP/SP, AFETADO por modificadores
+- Add: adiciona AP/SP, NAO afetado por modificadores
+- Lose: remove AP/SP, NAO afetado
+- Set: define valor exato, NAO afetado
+
+JS NOTETAGS - VARIAVEIS COMUNS
+-------------------------------
+- user: Game_Actor (ator aprendendo)
+- skill: Object (skill sendo aprendida)
+- cost: number (retorno para custos)
+- visible: boolean (retorno para show)
+- enabled: boolean (retorno para require)
+- text: string (retorno para textos customizados)
