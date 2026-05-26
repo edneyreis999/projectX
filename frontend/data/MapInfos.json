@@ -3,11 +3,12 @@
   {
     "id": 1,
     "expanded": false,
-    "name": "SQS_Test",
-    "order": 40,
+    "name": "BLANK",
+    "order": 46,
     "parentId": 15,
-    "scrollX": 770.6666666666666,
-    "scrollY": 423.55555555555554
+    "scrollX": 0,
+    "scrollY": 0,
+    "quick": false
   },
   {
     "id": 2,
@@ -21,31 +22,23 @@
   },
   {
     "id": 3,
-    "expanded": true,
+    "expanded": false,
     "name": "Ekios",
     "order": 3,
     "parentId": 0,
-    "scrollX": 2883.6,
-    "scrollY": 1786.8,
+    "scrollX": 2883.2727272727275,
+    "scrollY": 1786.909090909091,
     "quick": false
   },
-  {
-    "id": 4,
-    "expanded": true,
-    "name": "SQS_Test_JS",
-    "order": 39,
-    "parentId": 15,
-    "scrollX": 1166.6666666666667,
-    "scrollY": 658.6666666666666
-  },
+  null,
   {
     "id": 5,
-    "expanded": true,
+    "expanded": false,
     "name": "Coreto",
     "order": 1,
     "parentId": 0,
-    "scrollX": 1177.2,
-    "scrollY": 1071.6,
+    "scrollX": 780,
+    "scrollY": 801.8181818181819,
     "quick": false
   },
   {
@@ -143,20 +136,11 @@
     "name": "Demos",
     "order": 36,
     "parentId": 0,
-    "scrollX": 954.5454545454546,
-    "scrollY": 537.2727272727273,
+    "scrollX": 780,
+    "scrollY": 485.4545454545455,
     "quick": false
   },
-  {
-    "id": 16,
-    "expanded": true,
-    "name": "dungeon",
-    "order": 42,
-    "parentId": 15,
-    "scrollX": 1222.6666666666667,
-    "scrollY": 1309.3333333333333,
-    "quick": false
-  },
+  null,
   {
     "id": 17,
     "expanded": true,
@@ -167,16 +151,7 @@
     "scrollY": 571.8,
     "quick": false
   },
-  {
-    "id": 18,
-    "expanded": true,
-    "name": "Teste Tenda",
-    "order": 44,
-    "parentId": 15,
-    "scrollX": 954.5454545454546,
-    "scrollY": 537.2727272727273,
-    "quick": false
-  },
+  null,
   {
     "id": 19,
     "expanded": true,
@@ -190,10 +165,10 @@
     "id": 20,
     "expanded": true,
     "name": "Ex VNP Busts",
-    "order": 47,
+    "order": 40,
     "parentId": 15,
     "scrollX": 893.4545454545455,
-    "scrollY": 1238.7272727272727,
+    "scrollY": 1239.2727272727273,
     "quick": false
   },
   {
@@ -206,16 +181,7 @@
     "scrollY": 1380.8571428571427,
     "quick": false
   },
-  {
-    "id": 22,
-    "expanded": false,
-    "name": "MAP022",
-    "order": 41,
-    "parentId": 1,
-    "scrollX": 0,
-    "scrollY": 0,
-    "quick": false
-  },
+  null,
   {
     "id": 23,
     "expanded": false,
@@ -306,16 +272,7 @@
     "scrollY": 562.1999999999999,
     "quick": false
   },
-  {
-    "id": 32,
-    "expanded": true,
-    "name": "Entrada de Kravens 02 - OLD",
-    "order": 45,
-    "parentId": 15,
-    "scrollX": 884.7272727272727,
-    "scrollY": 544.9090909090909,
-    "quick": false
-  },
+  null,
   {
     "id": 33,
     "expanded": true,
@@ -330,10 +287,10 @@
     "id": 34,
     "expanded": true,
     "name": "Test de Skills",
-    "order": 46,
+    "order": 39,
     "parentId": 15,
-    "scrollX": 780,
-    "scrollY": 920.7272727272727,
+    "scrollX": 884.7272727272727,
+    "scrollY": 920.1818181818182,
     "quick": false
   },
   {
@@ -350,7 +307,7 @@
     "id": 36,
     "expanded": true,
     "name": "Segundo Sol - Preparação",
-    "order": 50,
+    "order": 42,
     "parentId": 42,
     "scrollX": 884.7272727272727,
     "scrollY": 519.8181818181819,
@@ -360,7 +317,7 @@
     "id": 37,
     "expanded": false,
     "name": "Segundo Sol - Cutscene",
-    "order": 51,
+    "order": 43,
     "parentId": 42,
     "scrollX": 893.4545454545455,
     "scrollY": 1501.6363636363637,
@@ -370,22 +327,13 @@
     "id": 38,
     "expanded": false,
     "name": "Segundo Sol - Fase 2",
-    "order": 52,
+    "order": 44,
     "parentId": 42,
     "scrollX": 954.5454545454546,
     "scrollY": 537.2727272727273,
     "quick": false
   },
-  {
-    "id": 39,
-    "expanded": true,
-    "name": "Entrada de Kravens 04 - OLD",
-    "order": 38,
-    "parentId": 15,
-    "scrollX": 1166.6666666666667,
-    "scrollY": 781.3333333333334,
-    "quick": false
-  },
+  null,
   {
     "id": 40,
     "expanded": true,
@@ -400,7 +348,7 @@
     "id": 41,
     "expanded": false,
     "name": "Segundo Sol - Boss Final",
-    "order": 53,
+    "order": 45,
     "parentId": 42,
     "scrollX": 0,
     "scrollY": 0,
@@ -410,10 +358,10 @@
     "id": 42,
     "expanded": false,
     "name": "Fim de Jogo",
-    "order": 49,
+    "order": 41,
     "parentId": 15,
-    "scrollX": 884.7272727272727,
-    "scrollY": 519.8181818181819,
+    "scrollX": 780,
+    "scrollY": 494.1818181818182,
     "quick": false
   },
   {
@@ -426,34 +374,16 @@
     "scrollY": 765.4285714285713,
     "quick": false
   },
-  {
-    "id": 44,
-    "expanded": false,
-    "name": "Cutscene IA",
-    "order": 48,
-    "parentId": 15,
-    "scrollX": 1166.6666666666667,
-    "scrollY": 648,
-    "quick": false
-  },
-  {
-    "id": 45,
-    "expanded": false,
-    "name": "Teste Khawe",
-    "order": 54,
-    "parentId": 15,
-    "scrollX": 884.7272727272727,
-    "scrollY": 511.0909090909091,
-    "quick": false
-  },
+  null,
+  null,
   {
     "id": 46,
     "expanded": true,
     "name": "Item Shop Tests",
-    "order": 43,
+    "order": 38,
     "parentId": 15,
-    "scrollX": 1166.6666666666667,
-    "scrollY": 648,
+    "scrollX": 780,
+    "scrollY": 485.4545454545455,
     "quick": false
   },
   {
@@ -476,36 +406,9 @@
     "scrollY": 672.8888888888889,
     "quick": false
   },
-  {
-    "id": 49,
-    "expanded": false,
-    "name": "Vila de Pescadores",
-    "order": 55,
-    "parentId": 15,
-    "scrollX": 884.7272727272727,
-    "scrollY": 658.3636363636364,
-    "quick": false
-  },
-  {
-    "id": 50,
-    "expanded": false,
-    "name": "Templo Flutuante",
-    "order": 56,
-    "parentId": 49,
-    "scrollX": 893.4545454545455,
-    "scrollY": 1028.1818181818182,
-    "quick": false
-  },
-  {
-    "id": 51,
-    "expanded": false,
-    "name": "Templo Submerso",
-    "order": 57,
-    "parentId": 50,
-    "scrollX": 884.7272727272727,
-    "scrollY": 519.8181818181819,
-    "quick": false
-  },
+  null,
+  null,
+  null,
   {
     "id": 52,
     "expanded": false,
@@ -562,8 +465,8 @@
     "name": "Mapa Release",
     "order": 37,
     "parentId": 15,
-    "scrollX": 1168.3636363636365,
-    "scrollY": 511.0909090909091,
+    "scrollX": 1321.0909090909092,
+    "scrollY": 512.7272727272727,
     "quick": false
   }
 ]

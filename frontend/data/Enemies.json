@@ -142,25 +142,18 @@
     "battlerHue": 0,
     "exp": 5000,
     "gold": 500,
-    "params": [28000, 0, 200, 100, 0, 80, 110, 80],
+    "params": [28000, 0, 320, 180, 0, 80, 220, 120],
     "actions": [
       {
-        "skillId": 1,
-        "rating": 5,
-        "conditionType": 0,
-        "conditionParam1": 0,
-        "conditionParam2": 0
-      },
-      {
         "skillId": 30,
-        "rating": 9,
+        "rating": 8,
         "conditionType": 4,
         "conditionParam1": 57,
         "conditionParam2": 0
       },
       {
-        "skillId": 31,
-        "rating": 9,
+        "skillId": 32,
+        "rating": 8,
         "conditionType": 4,
         "conditionParam1": 57,
         "conditionParam2": 0
@@ -192,46 +185,10 @@
         "conditionType": 0,
         "conditionParam1": 0,
         "conditionParam2": 0
-      }
-    ],
-    "traits": [
-      {
-        "code": 22,
-        "dataId": 0,
-        "value": 0.95
       },
       {
-        "code": 22,
-        "dataId": 2,
-        "value": 0.05
-      },
-      {
-        "code": 22,
-        "dataId": 1,
-        "value": 0.05
-      }
-    ],
-    "dropItems": [
-      {
-        "dataId": 0,
-        "kind": 0,
-        "denominator": 1
-      }
-    ],
-    "note": "<ATB Field Gauge Face: Bosses, 4>\n<Sideview Battler: LoboAlpha>"
-  },
-  {
-    "id": 7,
-    "name": "Lobo Guerreiro",
-    "battlerName": "Coreto_Lobaris_B",
-    "battlerHue": 0,
-    "exp": 150,
-    "gold": 30,
-    "params": [3500, 0, 120, 60, 0, 40, 100, 70],
-    "actions": [
-      {
-        "skillId": 29,
-        "rating": 5,
+        "skillId": 24,
+        "rating": 8,
         "conditionType": 0,
         "conditionParam1": 0,
         "conditionParam2": 0
@@ -259,6 +216,21 @@
         "code": 22,
         "dataId": 1,
         "value": 0.05
+      },
+      {
+        "code": 63,
+        "dataId": 1,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 4,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 13,
+        "value": 1
       }
     ],
     "dropItems": [
@@ -268,7 +240,64 @@
         "denominator": 1
       }
     ],
-    "note": "<ATB Field Gauge Face: Bosses, 3>\n<Sideview Battler: LoboGuerreiro>"
+    "note": "<ATB Field Gauge Face: Bosses, 4>\n\n<TP Mode: Boss>\n\n// [Battle Core Notetags - Animated Sideview Battler]\n<Sideview Battler: LoboAlpha>\n<Sideview Idle Motion: wait>"
+  },
+  {
+    "id": 7,
+    "name": "Lobo Guerreiro",
+    "battlerName": "Coreto_Lobaris_B",
+    "battlerHue": 0,
+    "exp": 150,
+    "gold": 30,
+    "params": [3500, 0, 180, 100, 0, 40, 120, 90],
+    "actions": [
+      {
+        "skillId": 29,
+        "rating": 5,
+        "conditionType": 0,
+        "conditionParam1": 0,
+        "conditionParam2": 0
+      },
+      {
+        "skillId": 31,
+        "rating": 5,
+        "conditionType": 0,
+        "conditionParam1": 0,
+        "conditionParam2": 0
+      },
+      {
+        "skillId": 1,
+        "rating": 5,
+        "conditionType": 0,
+        "conditionParam1": 0,
+        "conditionParam2": 0
+      }
+    ],
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.95
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.05
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.05
+      }
+    ],
+    "dropItems": [
+      {
+        "dataId": 0,
+        "kind": 0,
+        "denominator": 1
+      }
+    ],
+    "note": "<ATB Field Gauge Face: Bosses, 3>\n\n// [Battle Core Notetags - Animated Sideview Battler]\n<Sideview Battler: LoboGuerreiro>\n<Sideview Idle Motion: wait>"
   },
   {
     "id": 8,
@@ -572,49 +601,49 @@
     "battlerHue": 0,
     "exp": 2000,
     "gold": 500,
-    "params": [30000, 400, 150, 200, 60, 100, 85, 90],
+    "params": [30000, 400, 280, 300, 60, 100, 220, 160],
     "actions": [
       {
+        "skillId": 15,
+        "rating": 7,
+        "conditionType": 0,
+        "conditionParam1": 0,
+        "conditionParam2": 0
+      },
+      {
         "skillId": 11,
-        "rating": 1,
-        "conditionType": 0,
-        "conditionParam1": 0,
-        "conditionParam2": 0
-      },
-      {
-        "skillId": 13,
-        "rating": 2,
-        "conditionType": 0,
-        "conditionParam1": 0,
-        "conditionParam2": 0
-      },
-      {
-        "skillId": 12,
-        "rating": 2,
-        "conditionType": 0,
-        "conditionParam1": 0,
-        "conditionParam2": 0
-      },
-      {
-        "skillId": 14,
         "rating": 5,
         "conditionType": 0,
         "conditionParam1": 0,
         "conditionParam2": 0
       },
       {
-        "skillId": 15,
-        "rating": 7,
-        "conditionType": 1,
-        "conditionParam1": 1,
+        "skillId": 12,
+        "rating": 5,
+        "conditionType": 0,
+        "conditionParam1": 0,
         "conditionParam2": 0
       },
       {
-        "skillId": 15,
-        "rating": 3,
-        "conditionType": 2,
+        "skillId": 14,
+        "rating": 9,
+        "conditionType": 0,
         "conditionParam1": 0,
-        "conditionParam2": 0.5
+        "conditionParam2": 0
+      },
+      {
+        "skillId": 13,
+        "rating": 5,
+        "conditionType": 0,
+        "conditionParam1": 0,
+        "conditionParam2": 0
+      },
+      {
+        "skillId": 16,
+        "rating": 5,
+        "conditionType": 0,
+        "conditionParam1": 0,
+        "conditionParam2": 0
       }
     ],
     "traits": [
@@ -624,8 +653,23 @@
         "value": 0.95
       },
       {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.05
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.05
+      },
+      {
         "code": 14,
         "dataId": 13,
+        "value": 1
+      },
+      {
+        "code": 63,
+        "dataId": 1,
         "value": 1
       }
     ],
@@ -636,7 +680,7 @@
         "denominator": 1
       }
     ],
-    "note": "<ATB Field Gauge Face: Bosses, 2>\n<Sideview Battler: Cristaleao>"
+    "note": "<ATB Field Gauge Face: Bosses, 2>\n\n// [Battle Core Notetags - Animated Sideview Battler]\n<Sideview Battler: Cristaleao>\n<Sideview Idle Motion: wait>\n<Fúria Sideview Idle Motion: chant>\n\n<TP Mode: Boss>\n<AI Style: Gambit>\n<AI Level: 100>\n<AI Rating Variance: 0>"
   },
   {
     "id": 18,
@@ -925,13 +969,6 @@
         "conditionParam2": 0
       },
       {
-        "skillId": 36,
-        "rating": 6,
-        "conditionType": 0,
-        "conditionParam1": 0,
-        "conditionParam2": 0
-      },
-      {
         "skillId": 37,
         "rating": 5,
         "conditionType": 0,
@@ -941,6 +978,20 @@
       {
         "skillId": 41,
         "rating": 9,
+        "conditionType": 0,
+        "conditionParam1": 0,
+        "conditionParam2": 0
+      },
+      {
+        "skillId": 42,
+        "rating": 3,
+        "conditionType": 0,
+        "conditionParam1": 0,
+        "conditionParam2": 0
+      },
+      {
+        "skillId": 43,
+        "rating": 1,
         "conditionType": 0,
         "conditionParam1": 0,
         "conditionParam2": 0
@@ -976,6 +1027,16 @@
         "code": 14,
         "dataId": 61,
         "value": 1
+      },
+      {
+        "code": 63,
+        "dataId": 1,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 13,
+        "value": 1
       }
     ],
     "dropItems": [
@@ -985,7 +1046,7 @@
         "denominator": 1
       }
     ],
-    "note": "<JS Force Received Element 10 Rate: -1.0>\n<ATB Field Gauge Face: Bosses, 1>\n<Sideview Battler: Pestesporo>"
+    "note": "<JS Force Received Element 10 Rate: -1.0>\n<ATB Field Gauge Face: Bosses, 1>\n<TP Mode: Boss>\n\n// [Battle Core Notetags - Animated Sideview Battler]\n<Sideview Idle Motion: wait>\n<Sideview Battler: Pestesporo>"
   },
   {
     "id": 29,
@@ -994,18 +1055,25 @@
     "battlerHue": 0,
     "exp": 0,
     "gold": 0,
-    "params": [1200, 0, 90, 40, 50, 50, 90, 40],
+    "params": [1200, 0, 220, 90, 50, 50, 90, 40],
     "actions": [
       {
-        "skillId": 39,
-        "rating": 3,
+        "skillId": 38,
+        "rating": 1,
         "conditionType": 0,
         "conditionParam1": 0,
         "conditionParam2": 0
       },
       {
-        "skillId": 38,
-        "rating": 1,
+        "skillId": 1,
+        "rating": 5,
+        "conditionType": 0,
+        "conditionParam1": 0,
+        "conditionParam2": 0
+      },
+      {
+        "skillId": 39,
+        "rating": 5,
         "conditionType": 0,
         "conditionParam1": 0,
         "conditionParam2": 0
@@ -1026,6 +1094,11 @@
         "code": 22,
         "dataId": 1,
         "value": 0.05
+      },
+      {
+        "code": 14,
+        "dataId": 4,
+        "value": 1
       }
     ],
     "dropItems": [
@@ -1035,7 +1108,7 @@
         "denominator": 1
       }
     ],
-    "note": "<JS Post-Start Battle>\n  this._isMinionEsporo = true;\n  this._minionId = 'ESPORO_' + Math.floor(Math.random() * 10000);\n</JS Post-Start Battle>\n<ATB Field Gauge Face: Bosses, 0>\n<Sideview Battler: EsporoPestesporo>"
+    "note": "// [Battle Core Notetags - Animated Sideview Battler]\n<Sideview Battler: EsporoPestesporo>\n<Sideview Idle Motion: wait>\n\n<JS Force Received Element 10 Rate: -1.0>\n\n<JS Post-Start Battle>\n  this._isMinionEsporo = true;\n  this._minionId = 'ESPORO_' + Math.floor(Math.random() * 10000);\n</JS Post-Start Battle>\n<ATB Field Gauge Face: Bosses, 0>"
   },
   {
     "id": 30,
