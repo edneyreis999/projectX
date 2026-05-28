@@ -3,13 +3,13 @@
 //= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~=
 /*:
  * @target MZ
- * @plugindesc Esconde skills nao-aprendiveis e adiciona refund no VisuStella Skill Shop
+ * @plugindesc Esconde skills nao-aprendiveis, refund e chain display no VisuStella Skill Shop
  * @author Coreto
  * @orderAfter VisuMZ_4_SkillShop
  *
  * @help
  * ============================================================================
- * Coreto Skill Shop - Hide Not Learnable + Refund
+ * Coreto Skill Shop - Hide Not Learnable + Refund + Chain Display
  * ============================================================================
  *
  * PARTE 1 - ESCONDER SKILLS NAO-APRENDIVEIS
@@ -22,8 +22,37 @@
  *
  * PARTE 2 - REFUND DE SKILLS
  * Skills ja aprendidas mostram "Reembolsar: Xg" em vez de "Learned".
- * Ao selecionar uma skill aprendida, abre popup de confirmacao.
- * Se confirmado: ouro devolvido (valor integral), skill removida do ator.
+ * Ao selecionar uma skill aprendida: ouro devolvido, skill removida do ator.
+ * Para chains: reembolsa apenas o nivel selecionado (volta 1 nivel).
+ *
+ * PARTE 3 - CHAIN DE SKILLS PASSIVAS
+ * Suporta cadeias de skills passivas (ex: Vitalidade+ Nv.1-9).
+ * Cada nivel e uma skill real no database com prereq chain nativa do VisuStella.
+ * Mostra apenas o nivel atual (refund) e o proximo nivel (compra).
+ * Niveis intermediarios sao ocultados automaticamente.
+ *
+ * NOTETAGS (Skills):
+ *   <Passive Chain Group: groupName>  - identifica a cadeia
+ *   <Passive Chain Level: N>          - nivel desta skill na cadeia
+ *
+ * EXEMPLO (Skills.json):
+ *   Skill 111: <Passive Chain Group: Vitalidade+> <Passive Chain Level: 1>
+ *   Skill 112: <Passive Chain Group: Vitalidade+> <Passive Chain Level: 2>
+ *              <Skill Shop Require Learned Skill: 111>
+ *   ...
+ *   Skill 119: <Passive Chain Group: Vitalidade+> <Passive Chain Level: 9>
+ *              <Skill Shop Require Learned Skill: 118>
+ *
+ * DISPLAY NO SHOP:
+ *   - Nada aprendido: mostra Nv.1 com custo
+ *   - Nivel 3 aprendido: mostra Nv.4 (compra) e Nv.3 (refund)
+ *   - Nivel max: mostra Nv.MAX (Max.) com refund
+ *   - Niveis intermediarios: OCULTOS
+ *
+ * STATE JS FORMULA:
+ *   No State, usar `this` (nao `user`) nas notetags <JS MaxHP Flat: ...>.
+ *   O eval roda dentro de arrow function que herda `this` do Game_BattlerBase.
+ *   Formula deve ser SINGLE LINE (regex do VisuStella nao cruza newlines).
  *
  * ---
  *
@@ -40,12 +69,26 @@
 (() => {
   const PLUGIN_NAME = "Coreto_Skill_Shop";
   const NOTETAG_REGEX = /<Skill Shop Hide Not Learnable>/i;
+  const CHAIN_NOTETAGS = {
+    chainGroup: /<Passive Chain Group:\s*(.+?)>/i,
+    chainLevel: /<Passive Chain Level:\s*(\d+)>/i,
+  };
+
+  function parseNotetagStr(note, regex) {
+    const match = note.match(regex);
+    return match ? match[1].trim() : null;
+  }
+
+  function parseNotetagInt(note, regex) {
+    const match = note.match(regex);
+    return match ? parseInt(match[1], 10) : null;
+  }
 
   if (typeof Imported === "undefined") window.Imported = {};
   Imported[PLUGIN_NAME] = true;
 
   // ============================================================================
-  // PARTE 1 - Esconder skills nao-aprendiveis
+  // PARTE 1 - Parse de notetags (DataManager.onLoad)
   // ============================================================================
 
   const _DataManager_onLoad = DataManager.onLoad;
@@ -54,16 +97,52 @@
     if (object === $dataSkills) {
       for (const skill of $dataSkills) {
         if (!skill) continue;
-        skill._coretoHideNotLearnable = NOTETAG_REGEX.test(skill.note || "");
+        const note = skill.note || "";
+        skill._coretoHideNotLearnable = NOTETAG_REGEX.test(note);
+        skill._passiveChainGroup = parseNotetagStr(note, CHAIN_NOTETAGS.chainGroup);
+        skill._passiveChainLevel = parseNotetagInt(note, CHAIN_NOTETAGS.chainLevel);
       }
     }
   };
+
+  // ============================================================================
+  // PARTE 3 - Chain Helpers
+  // ============================================================================
+
+  DataManager.isChainSkill = function (skill) {
+    return !!(skill && skill._passiveChainGroup);
+  };
+
+  DataManager.highestChainLevelLearned = function (actor, groupName) {
+    let highest = 0;
+    for (const skill of $dataSkills) {
+      if (!skill) continue;
+      if (skill._passiveChainGroup === groupName && actor.isLearnedSkill(skill.id)) {
+        if (skill._passiveChainLevel > highest) highest = skill._passiveChainLevel;
+      }
+    }
+    return highest;
+  };
+
+  DataManager.maxChainLevel = function (groupName) {
+    let max = 0;
+    for (const skill of $dataSkills) {
+      if (!skill) continue;
+      if (skill._passiveChainGroup === groupName && skill._passiveChainLevel > max) {
+        max = skill._passiveChainLevel;
+      }
+    }
+    return max;
+  };
+
+  // ============================================================================
+  // PARTE 1 + 3 - Filtro de visibilidade (class/stype + chain)
+  // ============================================================================
 
   const _Window_SkillShopSkillList_setActor =
     Window_SkillShopSkillList.prototype.setActor;
   Window_SkillShopSkillList.prototype.setActor = function (actor) {
     _Window_SkillShopSkillList_setActor.call(this, actor);
-    this._rebuildVisibleData();
     this.refresh();
     this.smoothScrollTo(0, 0);
     this.select(0);
@@ -73,10 +152,16 @@
     Window_SkillShopSkillList.prototype.setList;
   Window_SkillShopSkillList.prototype.setList = function (data) {
     _Window_SkillShopSkillList_setList.call(this, data);
-    this._rebuildVisibleData();
     this.refresh();
     this.smoothScrollTo(0, 0);
     this.select(0);
+  };
+
+  const _Window_SkillShopSkillList_refresh =
+    Window_SkillShopSkillList.prototype.refresh;
+  Window_SkillShopSkillList.prototype.refresh = function () {
+    this._rebuildVisibleData();
+    _Window_SkillShopSkillList_refresh.call(this);
   };
 
   Window_SkillShopSkillList.prototype._rebuildVisibleData = function () {
@@ -88,23 +173,40 @@
     const actor = this._actor;
     const actorClassId = actor.currentClass().id;
 
-    this._visibleData = this._data.filter((skill) => {
+    // Pass 1: Hide Not Learnable (class/stype filter)
+    const classFiltered = this._data.filter((skill) => {
       if (!skill) return false;
       if (!skill._coretoHideNotLearnable) return true;
 
       const stypeId = skill.stypeId;
-      if (stypeId > 0 && !actor.addedSkillTypes().includes(stypeId)) {
-        return false;
-      }
+      if (stypeId > 0 && !actor.addedSkillTypes().includes(stypeId)) return false;
 
       const classReqs = DataManager.skillShopClassRequirements
         ? DataManager.skillShopClassRequirements(skill)
         : [];
-      if (classReqs.length > 0 && !classReqs.includes(actorClassId)) {
-        return false;
-      }
+      if (classReqs.length > 0 && !classReqs.includes(actorClassId)) return false;
 
       return true;
+    });
+
+    // Pass 2: Chain filtering — only show highest learned + next level
+    const chainHighest = {};
+    for (const skill of classFiltered) {
+      if (skill._passiveChainGroup && !(skill._passiveChainGroup in chainHighest)) {
+        chainHighest[skill._passiveChainGroup] =
+          DataManager.highestChainLevelLearned(actor, skill._passiveChainGroup);
+      }
+    }
+
+    this._visibleData = classFiltered.filter((skill) => {
+      if (!skill._passiveChainGroup) return true;
+
+      const group = skill._passiveChainGroup;
+      const level = skill._passiveChainLevel;
+      const hll = chainHighest[group];
+
+      if (hll === 0) return level === 1;
+      return level === hll || level === hll + 1;
     });
   };
 
@@ -119,10 +221,41 @@
   };
 
   // ============================================================================
+  // PARTE 3 - Display: nome com nivel + sufixo Max
+  // ============================================================================
+
+  const _Window_SkillShopSkillList_drawItemName =
+    Window_SkillShopSkillList.prototype.drawItemName;
+  Window_SkillShopSkillList.prototype.drawItemName = function (skill, x, y, width) {
+    if (!skill || !DataManager.isChainSkill(skill) || !this._actor) {
+      _Window_SkillShopSkillList_drawItemName.call(this, skill, x, y, width);
+      return;
+    }
+
+    const hll = DataManager.highestChainLevelLearned(this._actor, skill._passiveChainGroup);
+    const maxLvl = DataManager.maxChainLevel(skill._passiveChainGroup);
+    const level = skill._passiveChainLevel;
+    const isMax = level === maxLvl && level === hll;
+
+    const iconY = y + (this.lineHeight() - ImageManager.iconHeight) / 2;
+    const textMargin = ImageManager.iconWidth + 4;
+    const itemWidth = Math.max(0, width - textMargin);
+    this.resetTextColor();
+    this.drawIcon(skill.iconIndex, x, iconY);
+
+    let name = skill.name;
+    if (isMax) {
+      name += ` Nv. ${level} (Máx.)`;
+    } else {
+      name += ` Nv. ${level}`;
+    }
+    this.drawText(name, x + textMargin, y, itemWidth);
+  };
+
+  // ============================================================================
   // PARTE 2 - Refund de Skills
   // ============================================================================
 
-  // Skills ja aprendidas ficam selecionaveis (para refund)
   const _Window_SkillShopSkillList_isEnabled =
     Window_SkillShopSkillList.prototype.isEnabled;
   Window_SkillShopSkillList.prototype.isEnabled = function (skill) {
@@ -131,7 +264,6 @@
     return _Window_SkillShopSkillList_isEnabled.call(this, skill);
   };
 
-  // Mostra "Reembolsar: Xg" em vez de "Learned"
   const _Window_SkillShopSkillList_drawCannotLearnReason =
     Window_SkillShopSkillList.prototype.drawCannotLearnReason;
   Window_SkillShopSkillList.prototype.drawCannotLearnReason = function (
