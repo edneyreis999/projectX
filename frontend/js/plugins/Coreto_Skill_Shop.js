@@ -46,8 +46,13 @@
  * DISPLAY NO SHOP:
  *   - Nada aprendido: mostra Nv.1 com custo
  *   - Nivel 3 aprendido: mostra Nv.4 (compra) e Nv.3 (refund)
- *   - Nivel max: mostra Nv.MAX (Máx.) com refund
+ *   - Nivel max: mostra Nv.MAX (Max.) com refund
  *   - Niveis intermediarios: OCULTOS
+ *
+ * STATE JS FORMULA:
+ *   No State, usar `this` (nao `user`) nas notetags <JS MaxHP Flat: ...>.
+ *   O eval roda dentro de arrow function que herda `this` do Game_BattlerBase.
+ *   Formula deve ser SINGLE LINE (regex do VisuStella nao cruza newlines).
  *
  * ---
  *
@@ -90,23 +95,12 @@
   DataManager.onLoad = function (object) {
     _DataManager_onLoad.call(this, object);
     if (object === $dataSkills) {
-      const chainCount = { total: 0, groups: {} };
       for (const skill of $dataSkills) {
         if (!skill) continue;
         const note = skill.note || "";
         skill._coretoHideNotLearnable = NOTETAG_REGEX.test(note);
         skill._passiveChainGroup = parseNotetagStr(note, CHAIN_NOTETAGS.chainGroup);
         skill._passiveChainLevel = parseNotetagInt(note, CHAIN_NOTETAGS.chainLevel);
-        if (skill._passiveChainGroup) {
-          chainCount.total++;
-          const g = skill._passiveChainGroup;
-          if (!chainCount.groups[g]) chainCount.groups[g] = [];
-          chainCount.groups[g].push(`id=${skill.id} nv=${skill._passiveChainLevel}`);
-        }
-      }
-      console.log(`[${PLUGIN_NAME}] onLoad $dataSkills: ${chainCount.total} chain skills parsed`);
-      for (const [group, entries] of Object.entries(chainCount.groups)) {
-        console.log(`[${PLUGIN_NAME}]   Chain "${group}": ${entries.join(", ")}`);
       }
     }
   };
@@ -148,7 +142,6 @@
   const _Window_SkillShopSkillList_setActor =
     Window_SkillShopSkillList.prototype.setActor;
   Window_SkillShopSkillList.prototype.setActor = function (actor) {
-    console.log(`[${PLUGIN_NAME}] setActor: ${actor ? actor.name() : "null"}`);
     _Window_SkillShopSkillList_setActor.call(this, actor);
     this.refresh();
     this.smoothScrollTo(0, 0);
@@ -158,15 +151,12 @@
   const _Window_SkillShopSkillList_setList =
     Window_SkillShopSkillList.prototype.setList;
   Window_SkillShopSkillList.prototype.setList = function (data) {
-    console.log(`[${PLUGIN_NAME}] setList: ${data ? data.length : 0} skills`);
     _Window_SkillShopSkillList_setList.call(this, data);
     this.refresh();
     this.smoothScrollTo(0, 0);
     this.select(0);
   };
 
-  // refresh() chama _rebuildVisibleData antes de redesenhar.
-  // Isso garante que a lista filtrada é reconstruída após compras do VisuStella.
   const _Window_SkillShopSkillList_refresh =
     Window_SkillShopSkillList.prototype.refresh;
   Window_SkillShopSkillList.prototype.refresh = function () {
@@ -177,7 +167,6 @@
   Window_SkillShopSkillList.prototype._rebuildVisibleData = function () {
     if (!this._data || !this._actor) {
       this._visibleData = this._data || [];
-      console.log(`[${PLUGIN_NAME}] _rebuildVisibleData: no actor/data, showing ${this._visibleData.length} items`);
       return;
     }
 
@@ -209,7 +198,6 @@
       }
     }
 
-    const debugHidden = [];
     this._visibleData = classFiltered.filter((skill) => {
       if (!skill._passiveChainGroup) return true;
 
@@ -217,24 +205,9 @@
       const level = skill._passiveChainLevel;
       const hll = chainHighest[group];
 
-      if (hll === 0) {
-        const visible = level === 1;
-        if (!visible) debugHidden.push(`${skill.name} Nv.${level} (hll=0, not level 1)`);
-        return visible;
-      }
-      const visible = level === hll || level === hll + 1;
-      if (!visible) debugHidden.push(`${skill.name} Nv.${level} (hll=${hll})`);
-      return visible;
+      if (hll === 0) return level === 1;
+      return level === hll || level === hll + 1;
     });
-
-    console.log(`[${PLUGIN_NAME}] _rebuildVisibleData for ${actor.name()}: ${this._data.length} raw → ${classFiltered.length} classFiltered → ${this._visibleData.length} visible`);
-    if (Object.keys(chainHighest).length > 0) {
-      console.log(`[${PLUGIN_NAME}]   Chain highest: ${JSON.stringify(chainHighest)}`);
-    }
-    if (debugHidden.length > 0) {
-      console.log(`[${PLUGIN_NAME}]   Hidden by chain: ${debugHidden.join(", ")}`);
-    }
-    console.log(`[${PLUGIN_NAME}]   Visible: ${this._visibleData.map(s => `${s.name}#${s.id}`).join(", ")}`);
   };
 
   Window_SkillShopSkillList.prototype.maxItems = function () {
@@ -287,11 +260,7 @@
     Window_SkillShopSkillList.prototype.isEnabled;
   Window_SkillShopSkillList.prototype.isEnabled = function (skill) {
     if (!skill) return false;
-    if (this._actor && this._actor.isLearnedSkill(skill.id)) {
-      const chainInfo = DataManager.isChainSkill(skill) ? ` [chain nv.${skill._passiveChainLevel}]` : "";
-      console.log(`[${PLUGIN_NAME}] isEnabled: ${skill.name}#${skill.id}${chainInfo} = true (learned, refund)`);
-      return true;
-    }
+    if (this._actor && this._actor.isLearnedSkill(skill.id)) return true;
     return _Window_SkillShopSkillList_isEnabled.call(this, skill);
   };
 
@@ -331,20 +300,14 @@
       const skill = this._skillListWindow.item();
       if (actor && skill && actor.isLearnedSkill(skill.id)) {
         const cost = DataManager.skillShopCost(skill);
-        const chainInfo = DataManager.isChainSkill(skill) ? ` [chain nv.${skill._passiveChainLevel}]` : "";
-        console.log(`[${PLUGIN_NAME}] REFUND: ${actor.name()} → forget ${skill.name}#${skill.id}${chainInfo}, return ${cost}g`);
         $gameParty.gainGold(cost);
         actor.forgetSkill(skill.id);
         this._skillListWindow.refresh();
         this._goldWindow.refresh();
         this._skillListWindow.activate();
       } else {
-        const chainInfo = skill && DataManager.isChainSkill(skill) ? ` [chain nv.${skill._passiveChainLevel}]` : "";
-        console.log(`[${PLUGIN_NAME}] BUY: ${actor ? actor.name() : "?"} → learn ${skill ? skill.name : "null"}#${skill ? skill.id : "?"}${chainInfo} (delegating to VisuStella)`);
         _Scene_SkillShop_onSkillListOk.call(this);
       }
     };
   }
-
-  console.log(`[${PLUGIN_NAME}] Plugin inicializado com sucesso (chain model).`);
 })();
