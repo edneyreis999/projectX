@@ -2958,7 +2958,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Vitalidade+",
-    "note": "// [VisuMZ_0_CoreEngine] - Bonus flat de +500 MHP.\n<MaxHP Flat: +500>\n",
+    "note": "// [VisuMZ_0_CoreEngine] - Bonus flat dinamico de MHP por chain de passive skills.\n<JS MHP Flat:\nvar lvl = 0;\nfor (var i = 111; i <= 119; i++) {\n  if (user.isLearnedSkill(i)) lvl++;\n}\nlvl * 500\n>\n",
     "overlay": 0,
     "priority": 50,
     "removeAtBattleEnd": false,
