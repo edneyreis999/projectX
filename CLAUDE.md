@@ -43,3 +43,8 @@ Configuracoes que afetam todo o sistema de combate e devem ser consideradas em d
 
 - Sempre dar prefencia por notetags VisuStella ou Coreto.
 - Procurar em `docs/rpg-maker-for-ia` se já existe algum plugin VisuStella que resolve o problema.
+
+# Regras universais
+
+- Ao concluir uma task, exiba no terminal um guia breve de QA manual, com no máximo 500 tokens, explicando como testar a atualização. Só faça o commit após o usuário testar e aprovar.
+- Sempre que for adicionar novos objetos nos JSONS de frontend/data, confirmar com usuario os ids que vão ser ocupados.
