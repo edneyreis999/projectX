@@ -1647,7 +1647,7 @@
         "value": 1
       }
     ],
-    "iconIndex": 72,
+    "iconIndex": 16,
     "maxTurns": 3,
     "message1": "",
     "message2": "",
@@ -2598,7 +2598,7 @@
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
     "traits": [],
-    "iconIndex": 83,
+    "iconIndex": 102,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
