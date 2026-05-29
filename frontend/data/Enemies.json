@@ -3009,6 +3009,13 @@
     "params": [999999, 0, 100, 0, 0, 0, 200, 0],
     "actions": [
       {
+        "skillId": 255,
+        "rating": 5,
+        "conditionType": 0,
+        "conditionParam1": 0,
+        "conditionParam2": 0
+      },
+      {
         "skillId": 256,
         "rating": 5,
         "conditionType": 0,
