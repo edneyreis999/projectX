@@ -1,21 +1,36 @@
-## Princípios Fundamentais
-São as verdades que sustentam o reino/sociedade. 
-- ==O que o Estado mais teme?==  PERDER NOVAMENTE A TERRA NATAL (HOJE, GILDRAT NAS MONTANHAS); LUTAM PARA NÃO PERDER DE NOVO; EVITAR MAIS UMA "GEADA"
-- ==O que o Estado mais valoriza? EXPANSÃO, PODER,== A "CASA"/TERRITÓRIO
-- ==O poder vem do sangue, da religião, da força militar ou da magia?== DA LINHAGEM, SANGUE, FAMÍLIA
-- ==O povo acredita que o sistema é justo?== OS DE CASTAS ALTAS SIM, CASTAS MAIS BAIXAS DIVIDIDA ENTRE SIM (80%) E NÃO (20%, REBELDES) #SOCIAL
-		- Tem anões que vivem fora de gildrat (vistos como inferiores, "selvagens", ladrões) - são inimigos 
-		- Só de estar em gildrat já se veem como superiores
-- ==Existe ideia de “cidadão” ou apenas “servo/súdito”?== Cidadãos 
-- ==A lei protege o povo ou protege a **ordem**?== A EXPANSÃO, e ordem 
-- ==O reino existe para expandir, sobreviver ou controlar?== EXPANDIR E CONTROLAR
-
+---
+status: Pronto para aprovação
+genero: Wordbuilding
+tags:
+  - foundation/concept
+  - worldbuilding
+  - gildrat
+  - leis
+  - constituição
+tipo: Constituição Imperial
+governo: Monarquia Imperial
+religiao: "[[Ancestralismo Imperial]]"
+moeda: "[[Drakel]]"
+estruturas:
+  - "[[Sistema de Castas]]"
+  - "[[Conselho Imperial]]"
+militar:
+  - "[[Guarda de Ferro]]"
+---
+---
 ### I. Fundamentos do Estado
 #### Religião
-** docs religião
+[[Ancestralismo Imperial]]
+O império faz uso da religião para: 
+- justificar mineração expansiva;
+- incentivar militarização;
+- manter estabilidade social;
+- controlar a memória histórica oficial;
+- legitimar [[Sistema de Castas]];
 #### Legitimidade
 - O Imperador governa para garantir a sobrevivência dos anões.
-- Ordem e produção estão acima da vontade individual.
+- Ordem e produção estão acima da vontade individual.o
+
 #### Objetivo Nacional
 - Expandir a mineração e manter Gildrat em expansão.
 - Impedir qualquer ameaça ao império e à estabilidade das minas.
@@ -62,14 +77,10 @@ São as verdades que sustentam o reino/sociedade.
 - Principalmente minérios e bens duráveis (instrumentos, objetivos, artefatos, feitos de pedra)
 - Minérios raros são controlados pelo Estado.
 #### Drakel
-==- não usam escambo mais; primeira raça que usa/inventou a moeda
-- anões usam Drakeis; na praça de troca as coisas são trocadas em Drakel
-- outras raças precisam de Drakel para comprar; mas essa moeda não é do continente/outras raças/sociedades
-#### Alimentação
-==da onde vem um alimento? eles trocam? o que comem? da onde conseguem?
-só troca traz ideia frágil para o império==
-==- não tem definido o que eles comem
-- comem pedra?
+- O Drakel é a moeda oficial do império.
+- Utilizada no comércio interno e externo.
+- Empregada no controle e recolhimento de impostos imperiais.
+- O sistema monetário substituiu o antigo escambo nas praças de troca.
 ---
 ### V. Controle da Magia
 #### Magia
@@ -78,9 +89,33 @@ só troca traz ideia frágil para o império==
 #### Artefatos Mágicos
 - Relíquias antigas pertencem ao império.
 - frutos de trocas com elfos; artefato mágico
-- ficam com os nobres ==(para meu favor, desde que não me desfavoreça)==
+- ficam com os nobres =
 #### Punições
 - Traição, sabotagem e heresia ameaçam Gildrat.
 - Crimes de magia podem levar ao exílio ou execução.
+
+---
+## Princípios Gerais
+São as verdades que sustentam o reino, a sociedade e a constituição de Gildrat.
+##### Estado
+- O maior medo do Estado é perder novamente a terra natal, hoje localizada nas montanhas de Gildrat.
+- O império vive sob o temor de uma nova Geada.
+- O Estado valoriza principalmente expansão, poder e a preservação do território.
+- O reino existe para expandir e controlar.
+##### Poder
+- O poder é legitimado pela linhagem, sangue e família.
+- A hereditariedade sustenta a autoridade política e social do império.
+##### Sociedade
+- As castas altas acreditam que o sistema é justo.
+- As castas mais baixas são divididas entre apoiadores do império e grupos rebeldes.
+	- Aproximadamente 20% das castas inferiores rejeitam o sistema vigente.
+- A existência dentro de Gildrat é associada à superioridade cultural e social.
+- Existe a ideia de cidadania, embora direitos e deveres variem conforme posição social.
+- Anões que vivem fora de Gildrat são vistos como inferiores, selvagens, ladrões ou inimigos.
+##### Lei
+- A lei existe para proteger a expansão e a ordem do império.
+- A estabilidade do reino possui prioridade sobre interesses individuais.
+
+
 
 

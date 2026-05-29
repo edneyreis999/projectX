@@ -2,6 +2,7 @@
 estetica:
 humor:
 tags:
+  - Artstyle
 ---
 # Tone & Vibe: Direção Criativa
 
@@ -27,7 +28,7 @@ O jogo utiliza a linguagem como ferramenta de imersão e desenvolvimento de habi
 1. **Contraste:** Gildrat é movida pelo choque entre forças opostas: terra e metal, magia e tecnologia, tradição e expansão. O Futebol Rúnico representa liberdade e pertencimento popular em oposição à rigidez industrial de Gildrat.
 2. **Peso:** O mundo anão é marcado pelo peso do trabalho, das linhagens e das expectativas sociais. Cada escolha carrega consequências emocionais dentro de um destino que parece inevitável.
 3. **Memória:** A memória existe nos monumentos, nas tradições orais, nos sonhos e na própria terra. Contar histórias é uma forma de preservar identidade diante do esquecimento.
-4. **Ruptura:** ==O jogo retrata um mundo onde antigas relações com a terra foram substituídas por mineração, controle e expansão. ==A quebra do selo simboliza o retorno violento de tudo aquilo que foi reprimido.
+4. **Ruptura:** O jogo retrata um mundo onde antigas relações com a terra foram substituídas por mineração, controle e expansão. A quebra do selo simboliza o retorno violento de tudo aquilo que foi reprimido.
 5. **Inevitabilidade:** O jogador não impede o colapso do mundo, apenas decide como os personagens irão enfrentá-lo. O foco da narrativa está naquilo que ainda vale a pena preservar quando o fim já começou.
     
 ---
@@ -38,7 +39,6 @@ Esta seção justifica a estética do jogo como um veículo de **preservação d
 O visual monocromático em **sépia** e o uso de **hachuras** referenciam manuscritos medievais e diários de exploradores. Esta escolha transforma a interface em um objeto de estudo histórico-visual, despertando o interesse do jogador por arquivos, bibliotecas e pela estética do livro como artefato cultural.
 #### 3.2. A Gralha-azul: "Semeadora de Memórias"
 - **Símbolo Narrativo:** Atua como guia espiritual e mensageira entre o mundo físico e o Reino da Mana. 
-		*- a mãe remeter a uma gralha-azul; usar uma roupa que remeta, usar a gralha para ajudar; algo assim*
 - **Valor Cultural:** Utiliza o papel ecológico real da ave (semeadora de araucárias) como metáfora para a **continuidade cultural/de memória**. Ao associar seu canto à memória ancestral e à fauna nativa, o jogo promove o folclore regional e a conscientização ambiental através da fantasia
 
 #### 3.3. Bio-indicadores e Alertas Ambientais 
@@ -49,9 +49,6 @@ Atuam como sinalizadores de desequilíbrio ecológico próximo ao selo ancestral
 - *podem defender o Thorin do Profeta*
 - *tipo "espíritos bons" do mundo da mana que tentam proteger o thorin*
 *IDEIA 2: corvos podem ser gralhas*
-
-**Questão do sonho:**
-**verificar a cor e tom (se igual, ou diferente)**
 
 ---
 ## 3. Artstyle — ilustrações 

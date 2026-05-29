@@ -24,13 +24,12 @@ A memória ancestral é venerada não como espiritualidade viva, mas como legado
 
 Os anões acreditam que toda grande obra deixa marcas eternas no mundo. Fortalezas, minas, muralhas e monumentos são vistos como formas de imortalidade.
 
-A terra já foi considerada viva pelos antigos povos anões, mas após a Geada]] essa visão passou a ser tratada como ingenuidade perigosa. O Império ensina que depender da terra trouxe fome e colapso, enquanto a pedra e o minério garantiram sobrevivência.
+A terra já foi considerada viva pelos antigos povos anões, mas após a Geada essa visão passou a ser tratada como ingenuidade perigosa. O Império ensina que depender da terra trouxe fome e colapso, enquanto a pedra e o minério garantiram sobrevivência.
 
 Os ancestrais dignos são aqueles que:
-- expandiram o Império
-- enriqueceram suas casas
-- protegeram Gildrat
-- construíram obras permanentes
+- expandiram o Império;
+- protegeram Gildrat;
+- construíram obras permanentes;
 
 ---
 ## Estrutura Social e Institucional
@@ -38,7 +37,7 @@ Os ancestrais dignos são aqueles que:
 Não existem sacerdotes formais. A preservação da tradição é mantida por:
 - famílias nobres
 - conselheiros
-- oficiais militares
+- oficiais militares da Guarda de Ferro
 - guardiões do Muro das Memórias
 
 O Muro das Memórias funciona como centro cívico e simbólico da sociedade anã, registrando feitos considerados dignos de permanência histórica.
@@ -62,16 +61,15 @@ O Muro das Memórias funciona como centro cívico e simbólico da sociedade anã
 ---
 ## Heresias e Medos
 
-Os chamados “xamãs” foram perseguidos ao longo da história anã. Acredita-se que indivíduos capazes de ouvir mortos ou atravessar o Reino da Mana trazem corrupção e desordem.
+Os chamados “manipuladores de magia” foram perseguidos ao longo da história anã. Acredita-se que indivíduos capazes de ouvir mortos ou atravessar o Reino da Mana trazem corrupção e desordem.
 O Império considera perigosas:
-
 - práticas xamânicas
 - comunicação com mortos
 - acesso ao Reino da Mana
 - cultos ligados à terra viva
 - tradições pré-Geada
 
-Os antigos “escutadores da terra” passaram a ser tratados como ameaça política e espiritual após a Grande Geada.
+Os  “manipuladores de magia” passaram a ser tratados como ameaça política e espiritual após a Geada.
 
 ---
 ## Relações com o Estado
@@ -92,6 +90,5 @@ O Conselho e Damburr utilizam a tradição para:
 			- registros no Muro das Memórias
 			- serviços prestados ao Império
 			A hierarquia social é tratada como continuidade natural da história anã.  Ascender socialmente sem um legado ancestral reconhecido é visto com desconfiança, mesmo entre famílias economicamente poderosas. Dessa forma, o sistema de castas é sustentado não apenas por controle político e econômico, mas também por um discurso de dever histórico, honra familiar e permanência da memória.
-			
-		- A ideia central é: “um indivíduo pode enriquecer; uma linhagem leva séculos para provar seu valor.”
+		
 

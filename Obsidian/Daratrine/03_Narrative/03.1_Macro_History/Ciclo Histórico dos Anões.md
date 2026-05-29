@@ -52,8 +52,7 @@ Doutrina oficial do Império Anão. A crença sustenta que os anões sobrevivera
 - à capacidade de resistir quando a terra falhou durante a Grande.
 - Anões devem ser duros como a rocha;
 
-Segundo essa visão, a superfície é símbolo de fragilidade, enquanto as montanhas representam força, permanência e poder. Os antigos sacerdotes das Velhas Canções passaram a ser tratados como hereges, nostálgicos ou traidores do progresso imperial. ==(podemos dizer que o medo da magia vem daí: Velhas Canções usavam magia e, ao proibir essa religião, a magia foi proibida também; o império pode dizer que quem causou a Grande Geada foram os manipuladores de Mana)==
-
+Segundo essa visão, a superfície é símbolo de fragilidade, enquanto as montanhas representam força, permanência e poder. Os antigos sacerdotes das Velhas Canções passaram a ser tratados como hereges, nostálgicos ou traidores do progresso imperial. 
 
 **Notas:** (arrumar e revisar)
 
@@ -69,9 +68,8 @@ Caça as bruxas - bem mais recente, porque Thordan e Mélia estão vivos
 	- pode ser de família real, mas não o herdeiro legítimo; 
 		- filho do irmão mais novo, não do mais velho (ele pode matar o legítimo na confusão do evento catalisador)
 
-da pra fazer uma linha do tempo aqui
-
-
+- TORDAN ERA AMIGO DE AMBUR E O AJUDOU A  CHEGAR AO TRONO; POR ISSO É NOMEADO GENERAL
+- DAMBUR NÃO É LEGÍTIMO IMPERADOR 
 Trazer para Gildrat NPCs divididos em 2:
 		trazer a visão, filosofia, visões desse contraste
 	

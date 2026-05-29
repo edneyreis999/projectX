@@ -12,9 +12,9 @@ tags:
 O problema que move o mundo é **o desequilíbrio entre poder, identidade e ordem natural. Não é um evento isolado, mas uma consequência sistêmica:
 
 1. **A Rebelião Ancestral:** Os Antigos (Ignotos) tornaram-se autossuficientes, menosprezando a bênção de Vitasolis. Sua queda foi a  resposta de um deus furioso, mas também a consequência de ganância e desequilíbrio.
-==2. **A Exploração da Terra:** Antigamente, os anões viviam em harmonia com a terra. Dedicavam-se às plantações, ao cultivo e a uma produção sustentável, guiados pela sabedoria ancestral e pelo uso equilibrado da magia. Porém, a ambição cresceu. Aos poucos, passaram a explorar a terra de forma predatória, rompendo o equilíbrio natural. O solo tornou-se seco e infértil, até que uma grande geada assolou suas terras, forçando-os a abandonar os campos e migrar para as montanhas e para as minas — dando início à era da exploração mineral.==
-2. **Thorin** vive o mesmo conflito em escala íntima: o desequilíbrio entre sua essência e o papel imposto por seu pai. Enquanto o Império espera que ele continue o legado militar de Tordan, sua conexão com o Reino da Mana o aproxima justamente daquilo que sua cultura aprendeu a temer.
-3. **A Repetição Anã (grande conflito do jogo)** O Império de Gildrat, sob o comando de Damburr, repete o padrão. Ao ignorar os selos, os avisos e a sabedoria ancestral em prol da extração mineral, os anões despertam a "Grande Guerra" (Ignotos).
+2. **A Exploração da Terra:** Antigamente, os anões viviam em harmonia com a terra. Dedicavam-se às plantações, ao cultivo e a uma produção sustentável, guiados pela sabedoria ancestral. Porém, a ambição cresceu. Aos poucos, passaram a explorar a terra de forma predatória, rompendo o equilíbrio natural. O solo tornou-se seco e infértil, até que uma grande geada assolou suas terras, forçando-os a abandonar os campos e migrar para as montanhas e para as minas — dando início à era da exploração mineral.
+3. **Thorin** vive o mesmo conflito em escala íntima: o desequilíbrio entre sua essência e o papel imposto por seu pai. Enquanto o Império espera que ele continue o legado militar de Tordan, sua conexão com o Reino da Mana o aproxima justamente daquilo que sua cultura aprendeu a temer.
+4. **A Repetição Anã (grande conflito do jogo)** O Império de Gildrat, sob o comando de Damburr, repete o padrão. Ao ignorar os selos, os avisos e a sabedoria ancestral em prol da extração mineral, os anões despertam a "Grande Guerra" (Ignotos).
 
 
 ## The Stakes (O que está em risco?)
@@ -68,7 +68,7 @@ O foco da narrativa não está em “salvar o mundo”, mas em como os personage
 
 ## Conexões Narrativas & Sistêmicas
 
-### Sistemas que geram este conflito ==(estou escrevendo essas parte ainda)==:
+### Sistemas que geram este conflito:
 - social
 - econômico
 - religioso (dogmático?)

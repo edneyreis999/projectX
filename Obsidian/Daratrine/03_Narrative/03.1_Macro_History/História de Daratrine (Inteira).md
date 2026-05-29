@@ -119,7 +119,7 @@ Consequências:
 - isolou os Ignotos já presentes na superfície;
 - bloqueou o acesso ao Sigmetal.
 
-	==- Sigmetal era um recurso fundamental durante a guerra: relacionado aos Ignotos; utilizado contra criaturas do mundo inferior; extremamente raro. Eram o "suplemento dos Ignotos"; ==
+	Sigmetal era um recurso fundamental durante a guerra: relacionado aos Ignotos; utilizado contra criaturas do mundo inferior; extremamente raro. 
 
 Após o novo selo:
 - o acesso ao minério foi bloqueado;
@@ -155,5 +155,3 @@ Cada raça assumiu funções específicas dentro da nova sociedade.
 
 Na época de Rheed:
 - a moeda utilizada era o Drakeis.
-
-> Verificar consistência com Edney.
