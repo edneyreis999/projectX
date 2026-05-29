@@ -1,5 +1,5 @@
 ---
-status: Pronto para aprovação
+status: 🟢 Aprovado
 genero: Foundation
 tags:
   - foundation/concept

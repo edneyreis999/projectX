@@ -1,8 +1,9 @@
 ---
-estetica:
-humor:
+estetica: 🟢 Aprovado
+genero: Foundation
 tags:
   - Artstyle
+  - estilonarrativo
 ---
 # Tone & Vibe: Direção Criativa
 

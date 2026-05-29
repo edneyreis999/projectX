@@ -1,6 +1,9 @@
 ---
-tipo_panteao:
+status: 🟢 Aprovado
+genero: Wordbuilding
+tipo:
   - Ancestralismo
+  - Principal
 influencia_social:
   - Dominante
   - Oficial

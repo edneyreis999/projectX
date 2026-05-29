@@ -1,4 +1,6 @@
 ---
+status: 🟢 Aprovado
+genero: Wordbuilding
 tipo_organizacao: Sistema de Castas
 influencia_social: Dominante / Rígida
 base_ideologica: Ancestralismo Imperial
@@ -34,7 +36,7 @@ A ideia central é:  *“Um indivíduo pode enriquecer; uma linhagem leva sécul
 | Casta     | Nome                                         | Função Primária                                               | Fonte de Poder           |
 | :-------- | :------------------------------------------- | :------------------------------------------------------------ | :----------------------- |
 | Alta      | Grandes Casas (nobres)                       | Governança, controle do Exército (Guarda de Ferro) e Conselho | Linhagem e História      |
-| Média     | Casas Expedicionárias (Chefes de expedições) | Economia, Engenharia e Mineração                              | Capital e Tecnologia     |
+| Média     | Casas Mineradoras  (Chefes de expedições)    | Economia, Engenharia e Mineração                              | Capital e Tecnologia     |
 | Base      | Mãos de Pedra (trabalhadores e comerciantes) | Sustento e Defesa e patentes mais baixas do exército          | Trabalho e Massa Crítica |
 | Excluídos | Sem Voz (desprivilegiados)                   | Marginalizados e Dissidentes e não trabalhadores              | —                        |
 
@@ -44,7 +46,7 @@ A ideia central é:  *“Um indivíduo pode enriquecer; uma linhagem leva sécul
 ### Grandes Casas (Nobres)
 As linhagens que possuem o "Sangue da Memória". Controlam a **Guarda de Ferro** e o **Conselho**.
 - **Foco:** Preservação do status quo e controle do Muro das Memórias.
-### Casas Expedicionárias (Média)
+### Casas Mineradoras (Média)
 O motor econômico. Possuem o Drakeis, mas não o nome.
 - **Foco:** Expansão industrial e compra de títulos/reconhecimento.
 - **Conflito:** Têm dinheiro e influência, mas não tem reconhecimento e acesso ao Conselho.

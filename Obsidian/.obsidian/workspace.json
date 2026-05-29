@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CENTRAL DE PRODUÇÃO.md",
+                "file": "Daratrine/01_Worldbuilding/01.2.1_Politica/T_Política.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CENTRAL DE PRODUÇÃO"
+              "title": "T_Política"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "0bb609aeede63ae5",
@@ -95,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CENTRAL DE PRODUÇÃO.md",
+                "file": "Daratrine/01_Worldbuilding/01.2.1_Politica/T_Política.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Links inversos para CENTRAL DE PRODUÇÃO"
+              "title": "Links inversos para T_Política"
             }
           },
           {
@@ -114,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CENTRAL DE PRODUÇÃO.md",
+                "file": "Daratrine/01_Worldbuilding/01.2.1_Politica/T_Política.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Links de saída para CENTRAL DE PRODUÇÃO"
+              "title": "Links de saída para T_Política"
             }
           },
           {
@@ -157,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CENTRAL DE PRODUÇÃO.md",
+                "file": "Daratrine/01_Worldbuilding/01.2.1_Politica/T_Política.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de CENTRAL DE PRODUÇÃO"
+              "title": "Sumário de T_Política"
             }
           }
         ]
@@ -187,27 +186,28 @@
   },
   "active": "915e5ee93bd05837",
   "lastOpenFiles": [
-    "Sem título.md",
+    "Daratrine/01_Worldbuilding/01.2.4 Social/Organização Social de Gildrat.md",
+    "Daratrine/01_Worldbuilding/01.2.1_Politica/T_Política.md",
     "CENTRAL DE PRODUÇÃO.md",
-    "Daratrine/01_Worldbuilding/01.4_Tecnologia/T_tecnologia.md",
+    "Daratrine/01_Worldbuilding/01.2.3_Religiao/Ancestralismo Imperial.md",
+    "Daratrine/01_Worldbuilding/01.2.3_Religiao/As Velhas Canções.md",
+    "Daratrine/01_Worldbuilding/01.2.3_Religiao/Cultos Ignotos.md",
+    "Daratrine/01_Worldbuilding/01.2.2_Economia/Economia_em_Gildrat.md",
+    "Daratrine/01_Worldbuilding/01.1_Leis/Constituição de Gildrat.md",
+    "Daratrine/00_Foundation/00.3_Tone_Vibe/T_Tone_Vibe.md",
     "Daratrine/00_Foundation/00.1_Core_Concept/1.Core _Concept.md",
-    "Daratrine/01_Worldbuilding/01.2_Engenharias_Sociopoliticas/01.2.2_Economia/Economia_em_Gildrat.md",
+    "Daratrine/00_Foundation/00.2_Fundation_details/T_Foundation_Details.md",
+    "Daratrine/00_Foundation/00.1_Core_Concept/DARATRINE — CORE CONCEPT (VERSÃO COMERCIAL).md",
+    "Daratrine/03_Narrative/03.1_Macro_History/Ciclo Histórico dos Anões.md",
+    "Sem título.canvas",
+    "Sem título.md",
+    "Daratrine/01_Worldbuilding/01.4_Tecnologia/T_tecnologia.md",
     "Anotações Gerais.md",
     "Daratrine/0100_Imagens/Pasted image 20260511160348 1.png",
-    "Daratrine/01_Worldbuilding/01.2_Engenharias_Sociopoliticas/01.2.1_Politica/T_Política.md",
-    "Daratrine/01_Worldbuilding/01.2_Engenharias_Sociopoliticas/01.2.3_Religiao/Cultos Ignotos.md",
-    "Daratrine/01_Worldbuilding/01.2_Engenharias_Sociopoliticas/01.2.3_Religiao/As Velhas Canções.md",
-    "Daratrine/01_Worldbuilding/01.2_Engenharias_Sociopoliticas/01.2.3_Religiao/Ancestralismo Imperial.md",
-    "Daratrine/01_Worldbuilding/01.2_Engenharias_Sociopoliticas/01.2.4 Social/Organização Social de Gildrat.md",
-    "Daratrine/03_Narrative/03.1_Macro_History/Ciclo Histórico dos Anões.md",
     "Daratrine/03_Narrative/03.1_Macro_History/História de Daratrine (Inteira).md",
-    "Daratrine/01_Worldbuilding/01.1_Leis/Constituição de Gildrat.md",
     "Drakel.md",
-    "Daratrine/00_Foundation/00.3_Tone_Vibe/T_Tone_Vibe.md",
-    "Daratrine/00_Foundation/00.2_Fundation_details/T_Foundation_Details.md",
     "Daratrine/000_Entrevistas/Gralha-azul.md",
     "Daratrine/000_Entrevistas/Entrevista 1.md",
-    "Daratrine/00_Foundation/00.1_Core_Concept/DARATRINE — CORE CONCEPT (VERSÃO COMERCIAL).md",
     "Daratrine/01_Worldbuilding/01.1_Leis/T_Leis (se formos especificar leis; verificar se é necessário).md"
   ]
 }

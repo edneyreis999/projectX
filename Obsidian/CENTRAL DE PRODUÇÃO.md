@@ -1,13 +1,13 @@
 #### **Revisar docs**
-- [ ] Menu de todos
-- [ ] Atualizar os menus com status (aprovado/pronto aguardando aprovação)
-- [ ] Adicionar data em que o doc foi aprovado e "fechado
+- [x] Menu de todos
+- [x] Atualizar os menus com status (aprovado/pronto aguardando aprovação)
+- [x] Adicionar data em que o doc foi aprovado e "fechado
 - [ ] *Economia*
 	- [ ] encaixar ludus no local correto
 	- [ ] aspecto cultural de drakel e sigmetal
 	- [ ] alimentação
 - [ ] *Política*
-	- [ ] fazer menu
+	- [x] fazer menu
 	- [ ] revisar e sintetizar
 
 #### **Fazer docs:**
@@ -22,30 +22,36 @@
 
 # **Progresso Geral dos Documentos**
 
-| **Documento**           | **Status**            |
-| ----------------------- | --------------------- |
-| **FOUNDATION**          |                       |
-| Core Concepts           | 🟢 Aprovado           |
-| Foundation Details      | 🟢 Aprovado           |
-| Tom & Vibe              | 🟢 Aprovado           |
-| **WORLDBUILDING**       |                       |
-| Leis                    | 🟢 Aprovado           |
-| Política                | 🟠 Em desenvolvimento |
-| Economia                | 🟡 Em revisão         |
-| Religião                | 🟢 Aprovado           |
-| Social                  | 🟢 Aprovado           |
-| Geografia/Arquitetura   | ⚪ Não iniciado        |
-| Tecnologia              | ⚪ Não iniciado        |
-| Magia                   | ⚪ Não iniciado        |
-| **ATLAS FOLK**          |                       |
-| Raças e Espácies        | ⚪ Não iniciado        |
-| Protagonistas           | ⚪ Não iniciado        |
-| Personagens Importantes | ⚪ Não iniciado        |
-| NPCs e Antagonistas     | ⚪ Não iniciado        |
-| **NARRATIVA**           | ⚪ Não iniciado        |
-| Game Timeline           | ⚪ Não iniciado        |
-| Quests                  | ⚪ Não iniciado        |
-| **MECÂNICA**            |                       |
-| Descisões               | ⚪ Não iniciado        |
+| **Documento**           | **Status**               |
+| ----------------------- | ------------------------ |
+| **FOUNDATION**          |                          |
+| Core Concepts           | 🟢 Aprovado              |
+| Foundation Details      | 🟢 Aprovado              |
+| Tom & Vibe              | 🟢 Aprovado              |
+| **WORLDBUILDING**       |                          |
+| Leis                    | 🟢 Aprovado              |
+| Política                | 🔵 Pronto para aprovação |
+| Economia                | 🟡 Em revisão            |
+| Religião                | 🟢 Aprovado              |
+| Social                  | 🟢 Aprovado              |
+| Geografia/Arquitetura   | 🟠 Em desenvolvimento    |
+| Tecnologia              | 🟠 Em desenvolvimento    |
+| Magia                   | ⚪ Não iniciado           |
+| **ATLAS FOLK**          |                          |
+| Raças e Espácies        | ⚪ Não iniciado           |
+| Protagonistas           | ⚪ Não iniciado           |
+| Personagens Importantes | ⚪ Não iniciado           |
+| NPCs e Antagonistas     | ⚪ Não iniciado           |
+| **NARRATIVA**           | ⚪ Não iniciado           |
+| Game Timeline           | ⚪ Não iniciado           |
+| Quests                  | ⚪ Não iniciado           |
+| **MECÂNICA**            |                          |
+| Mecânica de Descisões   | ⚪ Não iniciado           |
 
 ---
+🟢 Aprovado 
+🔵 Pronto para aprovação
+🟠 Em desenvolvimento
+🟡 Em revisão   
+⚪ Não iniciado
+| 

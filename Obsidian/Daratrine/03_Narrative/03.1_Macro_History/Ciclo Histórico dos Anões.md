@@ -54,32 +54,3 @@ Doutrina oficial do Império Anão. A crença sustenta que os anões sobrevivera
 
 Segundo essa visão, a superfície é símbolo de fragilidade, enquanto as montanhas representam força, permanência e poder. Os antigos sacerdotes das Velhas Canções passaram a ser tratados como hereges, nostálgicos ou traidores do progresso imperial. 
 
-**Notas:** (arrumar e revisar)
-
-Caça as bruxas - bem mais recente, porque Thordan e Mélia estão vivos
-"dez anos atrás da história do jogo"
-- pode ter sido o Dambur ou não
-	- pode ser que ele tenha sido a frente da batalha contra as bruxas, ajudando no golpe;
-	- traz um discurso imperador e se torna a "cara" das caças às bruxas 
-	- add: algum evento que, envolvendo magia, morrem anões e alguém importante
-	- discurso de que o retorno da magia estava corrompendo o império; medo ao retorno da pré-geada e medo de perder a casa dos anões; 
-	- discurso: foi por causa da magia que a geada aconteceu e acabou com a sociedade
-	- meio que justifica o golpe de estado de Damburr
-	- pode ser de família real, mas não o herdeiro legítimo; 
-		- filho do irmão mais novo, não do mais velho (ele pode matar o legítimo na confusão do evento catalisador)
-
-- TORDAN ERA AMIGO DE AMBUR E O AJUDOU A  CHEGAR AO TRONO; POR ISSO É NOMEADO GENERAL
-- DAMBUR NÃO É LEGÍTIMO IMPERADOR 
-Trazer para Gildrat NPCs divididos em 2:
-		trazer a visão, filosofia, visões desse contraste
-	
-- conservadores: apoiam império, ancestralismo imperial 
-	- a favor da caça as bruxas
-- "blas": apoiam as Velhas Cansões
-	- contra a caça as bruxas
-	- contra magia 
-	- exemplo: rebeldes, pai de Filena, Filena
-
-- Para implementar: trazer aspectos de eventos mais recentes, como a caça as bruxas, e algum evento pontual 
-	- evento pontual: em uma sessão de magia, um espírito atravessa a mana e mata anões e um príncipe/princesa 
-	- catalisa o medo e ódio à magia, dá popularidade ao Damburr

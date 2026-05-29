@@ -8,95 +8,366 @@ tags: [worldbuilding/politica, gdd/gildrat]
 # Estrutura Política: Império de Gildrat
 
 ## Visão Geral
-Gildrat é um império anão hereditário, governado por linhagem de sangue. O imperador concentra a autoridade simbólica e legal, enquanto o filho mais velho da linha imperial é reconhecido como sucessor natural. A ascensão de Damburr, porém, é politicamente controversa: ele pertence à família real, mas não necessariamente à linha sucessória legítima. A hipótese política mais forte é que Damburr seja filho do irmão mais novo da linhagem principal e tenha usado uma crise mágica recente para justificar sua tomada de poder.
 
-Na prática, o poder é exercido por uma combinação instável entre trono, Conselho, nobreza mineradora, comando militar e agentes econômicos capazes de financiar expedições. A autoridade atual de Damburr nasce tanto do sangue real quanto da imagem pública que construiu durante a Caça às Bruxas: ele se tornou o rosto da reação imperial contra a magia e apresentou sua ascensão como defesa da casa dos anões contra o retorno do caos pré-Geada.
+| Aspecto | Síntese |
+| --- | --- |
+| **Forma de governo** | Império anão hereditário, sustentado por linhagem, tradição militar e Conselho nobiliárquico. |
+| **Liderança atual** | Damburr, imperador de legitimidade controversa. |
+| **Base ideológica** | Ancestralismo Imperial, sistema de castas e memória oficial controlada pelo Estado. |
+| **Motor econômico** | Mineração, metalurgia, engenharia, contratos imperiais e uso do Drakel como moeda formal. |
+| **Tensão central** | Linhagem e tradição contra eficiência, riqueza nova e pressão social das castas baixas. |
+| **Crise atual** | Escassez, revoltas, disputa por minas, medo da magia e tentativa de explorar Melios. |
+| **Ruptura narrativa** | O decreto de exploração de Melios transforma uma crise política em catástrofe histórica. |
 
-O império vive um momento de desgaste. Revoltas, escassez, disputas por minas e perda de legitimidade tornam o governo mais autoritário. A corte tenta preservar a imagem de ordem, mas depende cada vez mais de decretos emergenciais, coerção militar e concessões políticas a figuras úteis como Balastrus. Essa fragilidade permite que interesses privados sejam tratados como necessidade de Estado.
+Gildrat funciona como uma monarquia imperial de sangue, mas o poder real é negociado entre trono, Conselho, Guarda de Ferro, Grandes Casas, Casas Mineradoras e agentes econômicos capazes de financiar expedições.
 
-Politicamente, a exploração de Melios representa o ponto de ruptura: uma decisão tomada para reafirmar controle imperial, conter rebeldes e obter recursos termina rompendo limites ancestrais e abrindo caminho para a queda de Gildrat.
+Damburr governa por uma combinação de direito familiar, propaganda antimagia e medo público. Sua ascensão é politicamente suspeita: ele pertence à família imperial, mas não é necessariamente o herdeiro mais legítimo. A hipótese mais forte é que tenha usado uma crise mágica recente para tomar ou consolidar o trono.
+
+O império tenta preservar a aparência de ordem, mas depende cada vez mais de decretos emergenciais, coerção militar, contratos abusivos e concessões a figuras úteis como Balastrus. Essa fragilidade permite que interesses privados sejam tratados como necessidade de Estado.
+
+## Fundamentos do Estado
+
+| Fundamento | Função política | Como aparece no jogo |
+| --- | --- | --- |
+| **Sobrevivência imperial** | Justifica centralização, militarização e sacrifício individual. | NPCs conservadores repetem que ordem e produção valem mais que vontade pessoal. |
+| **Linhagem** | Define legitimidade social, acesso ao Conselho e autoridade pública. | Thorin é levado ao Conselho porque seu sangue Forjaprata dá peso político à expedição. |
+| **Trabalho obrigatório** | Transforma produção em dever cívico. | Negar trabalho ou convocação pode ser tratado como crime, embora nobres recebam tolerância maior. |
+| **Mineração estatal** | Dá ao Conselho e ao imperador controle sobre minas, descobertas e concessões. | Melios pode ser tomada por decreto mesmo contra a oposição dos Corvos. |
+| **Memória oficial** | Controla genealogias, feitos reconhecidos e o Muro das Memórias. | Grandes Casas defendem que só linhagens antigas podem decidir o futuro de Gildrat. |
+| **Antimagia** | Converte medo espiritual em aparato legal, militar e religioso. | O dom de Thorin vira ameaça política, não apenas mistério pessoal. |
+| **Cidadania desigual** | Garante proteção imperial, mas distribui direitos conforme casta e utilidade. | Anões fora de Gildrat podem ser vistos como inferiores, selvagens, ladrões ou inimigos. |
+
+### Constituição Imperial
+
+**Religião oficial:** Ancestralismo Imperial.
+
+**Objetivo nacional:** expandir a mineração, preservar Gildrat e impedir ameaças à estabilidade das minas.
+
+**Princípios legais:**
+- o imperador possui autoridade máxima;
+- o Conselho administra recursos, minas e expedições;
+- toda mineração pertence ao império;
+- descobertas minerais devem ser reportadas ao Conselho;
+- todo cidadão pode ser convocado a servir;
+- direitos variam conforme casta, serviço prestado e utilidade ao Estado;
+- rebeldia, sabotagem, heresia e magia ilegal podem ser tratados como traição.
+
+**Efeito narrativo:** a lei de Gildrat não é neutra. Ela existe para proteger expansão, ordem e hierarquia. Isso permite que Filena seja tratada como criminosa, que trabalhadores sejam coagidos por contrato e que Balastrus receba Melios como concessão oficial.
+
+## Estrutura de Poder
+
+| Instituição | Função | Fonte de poder | Fragilidade |
+| --- | --- | --- | --- |
+| **Trono Imperial** | Emite decretos, legitima expedições, define punições e transforma crises em decisões de Estado. | Sangue imperial, tradição e controle simbólico da sobrevivência anã. | A sucessão de Damburr é controversa e depende da versão oficial da Caça às Bruxas. |
+| **Conselho Imperial** | Debate mineração, segurança, acusações políticas, concessões e crises sociais. | Grandes Casas, nobres, burocratas e presença militar. | Pode ser pressionado por medo, escassez, suborno, prestígio ou resultados econômicos. |
+| **Guarda de Ferro** | Braço militar de elite; protege Gildrat, reprime ameaças e sustenta decretos. | Disciplina, honra militar, monopólio da força e prestígio histórico. | Soldados lidam com consequências práticas de decisões tomadas por corte e empresários. |
+| **Mão de Ferro do Imperador** | Cargo político-militar que executa a vontade imperial e coordena respostas críticas. | Confiança do trono e autoridade sobre a Guarda. | Tordan entra em conflito quando o pragmatismo de Balastrus ameaça Thorin, Kilin e Gildrat. |
+| **Grandes Casas** | Governança, controle do Conselho, memória oficial e postos de comando. | Linhagem, feitos ancestrais, registros no Muro das Memórias. | Podem parecer ineficientes diante de crise econômica e inovação tecnológica. |
+| **Casas Mineradoras** | Economia, engenharia, mineração, contratos e financiamento de expedições. | Drakeis, tecnologia, explosivos, logística e produtividade. | Riqueza não garante legitimidade plena sem ancestralidade reconhecida. |
+| **Aparato Antimagia** | Leis, tribunais, guardas e costumes contra práticas espirituais proibidas. | Trauma da Caça às Bruxas e dogma do Ancestralismo Imperial. | Pode ruir se a verdade sobre Damburr, Mélia ou o dom de Thorin vier à tona. |
+
+## Sistema de Castas
+
+A sociedade de Gildrat é rigidamente organizada por linhagem, reputação histórica e serviço ao império. Riqueza ajuda, mas não substitui memória ancestral.
+
+| Casta | Nome | Função primária | Fonte de poder | Pressão política |
+| --- | --- | --- | --- | --- |
+| **Alta** | Grandes Casas | Governança, Conselho, Guarda de Ferro e memória oficial. | Linhagem e história. | Manter privilégios e bloquear ascensão de riqueza nova. |
+| **Média** | Casas Mineradoras | Mineração, engenharia, tecnologia e expedições. | Capital, contratos e resultados. | Comprar reconhecimento e acesso político. |
+| **Base** | Mãos de Pedra | Trabalho, comércio, mineração, produção e patentes baixas. | Massa crítica e mão de obra. | Sobreviver, receber pagamento e evitar abandono. |
+| **Excluídos** | Sem Voz | Dissidentes, desonrados, acusados de magia, criminosos e marginais. | Nenhuma fonte reconhecida. | São usados como ameaça exemplar pelo Estado. |
+
+### Regra Cultural
+
+> Um indivíduo pode enriquecer; uma linhagem leva séculos para provar seu valor.
+
+Essa regra explica por que Balastrus, mesmo rico e genial, continua buscando validação nobre. Também explica por que Thorin, mesmo irresponsável no início, recebe proteção que Filena, Borin e outros trabalhadores jamais receberiam.
+
+### Controle Social: Futebol Rúnico
+
+| Perspectiva | Leitura política |
+| --- | --- |
+| **Império** | Usa o esporte como válvula de escape: uma forma de manter trabalhadores ocupados, orgulhosos e menos inclinados à revolta aberta. |
+| **Povo** | Enxerga pertencimento, liberdade e conexão com tradições populares que sobrevivem fora da memória oficial. |
+| **Conflito de classe** | É um dos poucos lugares onde um Mão de Pedra pode derrotar um nobre sem ser punido por traição. |
+| **Função narrativa** | Liga Thorin, Filena, Borin e Tordan ao mesmo campo simbólico: jogo, honra, classe, memória de Mélia e controle familiar. |
 
 ## História Política Recente
-Dez anos antes da história do jogo, Gildrat viveu uma crise conhecida como **Caça às Bruxas**. Diferente de perseguições ancestrais mais antigas, esta onda é recente o bastante para ainda marcar Tordan, Mélia e a geração adulta da campanha. Ela consolidou leis duras contra magia, fortaleceu o Ancestralismo Imperial, empurrou dissidentes para a categoria dos Sem Voz e criou o ambiente político que permitiu a ascensão de Damburr.
 
-O evento catalisador é lembrado como o **Incidente da Sessão de Mana**: durante uma sessão ritualística envolvendo magia, um espírito atravessa a Barreira pela mana e mata diversos anões, incluindo alguém importante da família real, como um príncipe ou princesa. A tragédia gera pânico coletivo e permite que Damburr construa um discurso simples e poderoso: a magia estaria corrompendo o império, repetindo os erros da sociedade pré-Geada e ameaçando destruir novamente o lar dos anões.
+### Caça às Bruxas
 
-Damburr lidera, ou ao menos reivindica ter liderado, a resposta militar e política ao incidente. Ao se tornar a face pública da Caça às Bruxas, ganha popularidade, neutraliza rivais e justifica um golpe de Estado ou uma sucessão forçada. Uma possibilidade forte é que o herdeiro legítimo morra no caos do incidente, ou seja eliminado por Damburr enquanto a comoção pública encobre a disputa. Esse ponto permanece aberto para refinamento, mas a função narrativa é clara: a legitimidade de Damburr nasce de medo, luto público e propaganda antimagia.
+**Quando:** cerca de dez anos antes da história do jogo.
 
-Tordan é amigo de Damburr nesse período e o apoia durante sua ascensão. Como recompensa e por mérito militar real, torna-se general e se aproxima da função de Mão do Imperador. Essa origem explica sua lealdade inicial ao regime, sua crença em ordem e pragmatismo, e o peso emocional de perceber tarde demais que ajudou a sustentar um poder corrompido.
+**Função política:** consolidar leis antimagia, fortalecer o Ancestralismo Imperial, perseguir dissidentes e permitir a ascensão de Damburr.
+
+**Evento catalisador:** o Incidente da Sessão de Mana. Durante uma sessão ritualística envolvendo magia, um espírito atravessa a Barreira pela mana e mata diversos anões, incluindo uma figura importante da família real.
+
+**Versão oficial:** a magia quase destruiu Gildrat novamente, repetindo os erros da sociedade pré-Geada.
+
+**Leitura política:** Damburr se tornou o rosto da reação imperial, ganhou popularidade, neutralizou rivais e justificou uma sucessão forçada ou golpe de Estado.
+
+**Ferida aberta:** é possível que o herdeiro legítimo tenha morrido no caos do incidente ou sido eliminado enquanto a comoção pública encobria a disputa.
+
+### Tordan e a Ascensão de Damburr
+
+**Relação inicial:** Tordan apoia Damburr durante a crise e ascende como general, fundador/líder da Guarda de Ferro e Mão de Ferro do Imperador.
+
+**Função narrativa:** sua lealdade ao regime nasce de ordem, medo de colapso e pragmatismo. Mais tarde, ele percebe que ajudou a sustentar um poder corrompido.
+
+**Conflito interno:** Tordan acredita que Gildrat cai se agir devagar demais. Por isso se alia a Balastrus, mesmo sabendo que seus métodos são cruéis.
 
 ## Linha do Tempo Política
-* **Antes da Caça às Bruxas:** Gildrat já teme magia por memória cultural da pré-Geada, mas ainda existem práticas ocultas, linhagens perseguidas e debates sobre como lidar com dons espirituais.
-* **10 anos antes do jogo:** O Incidente da Sessão de Mana mata anões e uma figura importante da família real. A tragédia catalisa pânico contra magia.
-* **Ascensão de Damburr:** Damburr lidera o discurso de defesa imperial, associa magia a corrupção e usa a crise para tomar ou consolidar o trono, apesar de não ser o herdeiro direto mais legítimo.
-* **Caça às Bruxas:** O império persegue usuários de magia, famílias suspeitas e tradições espirituais ambíguas, incluindo círculos associados às Velhas Canções. O Ancestralismo Imperial se fortalece como doutrina oficial.
-* **Promoção de Tordan:** Tordan apoia Damburr na crise e ascende como general, tornando-se um dos pilares militares do novo regime.
-* **Presente do jogo:** A política antimagia ainda estrutura leis, medo público e decisões do Conselho. O dom de Thorin é perigoso não só espiritualmente, mas politicamente.
 
-## Instituições e Órgãos de Poder
-* **Trono Imperial:** Centro formal do poder. O imperador emite decretos, legitima expedições, define punições e transforma crises locais em decisões de Estado. Sua autoridade depende da tradição de sangue, mas também da capacidade de demonstrar força diante do Conselho e da população.
-* **Conselho Imperial:** Assembleia de nobres, conselheiros e representantes das grandes famílias. Debate crises, mineração, segurança, acusações políticas e concessões estratégicas. Funciona como arena de disputa entre tradição, sobrevivência econômica e ambição pessoal.
-* **Guarda de Ferro:** Braço militar de elite do império, composto por generais, oficiais e soldados de prestígio. Atua como força de proteção, coerção e resposta a crises. Sua influência política vem do controle da violência legítima e da proximidade com o trono.
-* **Mão do Imperador:** Função política-militar associada à execução direta da vontade imperial. Tordan ocupa esse papel como general leal, sustentando a ordem mesmo quando discorda dos métodos de outros atores.
-* **Casas Nobres Mineradoras:** Famílias tradicionais que reivindicam autoridade por sangue, história e controle de territórios minerais. Sua legitimidade vem dos costumes ancestrais, mas sua eficiência é questionada em tempos de crise.
-* **Concessões de Exploração:** Instrumento político usado pelo império para entregar minas, rotas e frentes de trabalho a indivíduos ou grupos específicos. Em tese, são decisões administrativas; na prática, tornam-se moeda de troca para comprar lealdade e resultados.
-* **Aparato Antimagia:** Conjunto de leis, guardas, tribunais e costumes criados ou fortalecidos após a Caça às Bruxas. Serve para identificar, punir e eliminar práticas mágicas consideradas ameaça ao império.
+| Período | Evento | Consequência política |
+| --- | --- | --- |
+| **Pré-Geada / Era do Ouro Verde** | Anões vivem ligados à terra, agricultura, ervas, ciclos naturais e Velhas Canções. | A terra é vista como viva; memória e natureza têm valor espiritual. |
+| **Depois da Geada** | Gildrat se refugia na mineração, metalurgia e engenharia. | A pedra substitui a terra como símbolo de sobrevivência; nasce a base do Ancestralismo Imperial. |
+| **Antes da Caça às Bruxas** | Magia já é temida, mas ainda existem linhagens ocultas, práticas espirituais e tradições ambíguas. | O Estado possui medo cultural, mas ainda não controla tudo com força total. |
+| **10 anos antes do jogo** | Incidente da Sessão de Mana mata anões e figura da família real. | Pânico coletivo permite leis antimagia e propaganda imperial. |
+| **Ascensão de Damburr** | Damburr lidera ou reivindica a resposta à crise. | Trono é consolidado sobre medo, luto público e narrativa de salvação. |
+| **Caça às Bruxas** | Usuários de magia, famílias suspeitas e Velhas Canções são perseguidos. | Sem Voz aumentam; Ancestralismo Imperial vira doutrina ainda mais forte. |
+| **Promoção de Tordan** | Tordan apoia o novo regime e assume papel militar central. | Guarda de Ferro se torna pilar do poder imperial. |
+| **Crise de Kravens** | Balastrus pressiona trabalhadores, busca Sigmetal e força retorno perigoso. | Eficiência privada começa a pesar mais que segurança pública. |
+| **A Voz do Conselho** | Filena é acusada, revoltas entram em pauta e Balastrus conquista Melios por decreto. | Conflito social vira caso de Estado; Thorin entra no jogo político. |
+| **Quebra do Selo em Melios** | Decreto imperial, ambição tecnológica e desprezo pelos Corvos rompem limites ancestrais. | A política de Gildrat libera os Ignotos e inicia a queda do império. |
+
+## Blocos de Poder
+
+### Bloco Imperial Conservador
+
+| Elemento | Descrição |
+| --- | --- |
+| **Representantes** | Damburr, nobres leais, burocratas, conselheiros tradicionais, guardas fiéis. |
+| **Função** | Preservar ordem, linhagem, castas e autoridade central. |
+| **História** | Ganha força com a Caça às Bruxas e com o medo de uma nova Geada. |
+| **Vocabulário** | Dever, pureza da casa anã, estabilidade, contaminação, sacrifício necessário. |
+| **Relação com magia** | Repressão direta; magia é instabilidade, heresia e ameaça ao Estado. |
+| **Fraqueza** | Depende de manter a versão oficial da ascensão de Damburr e de esconder contradições do regime. |
+
+### Bloco Pragmático-Tecnocrático
+
+| Elemento | Descrição |
+| --- | --- |
+| **Representantes** | Balastrus, Tordan em sua fase mais pragmática, capatazes, engenheiros, Casas Mineradoras ambiciosas. |
+| **Função** | Forçar Gildrat a produzir mais, explorar melhor e abandonar a lentidão da velha nobreza. |
+| **História** | Cresce quando escassez, revoltas e falhas de famílias tradicionais abrem espaço para “resultados”. |
+| **Vocabulário** | Eficiência, contrato, custo, lucro, sobrevivência, competência, futuro. |
+| **Relação com linhagem** | Usa a linhagem quando convém, mas quer provar que riqueza e tecnologia também devem governar. |
+| **Fraqueza** | Confunde capacidade técnica com direito moral; Melios prova o limite dessa lógica. |
+
+### Bloco Popular e Rebelde
+
+| Elemento | Descrição |
+| --- | --- |
+| **Representantes** | Filena, Fileus, Borin, trabalhadores, rebeldes, parte dos Mãos de Pedra. |
+| **Função** | Denunciar exploração, fome, contratos abusivos e abandono das castas baixas. |
+| **História** | Cresce com pagamentos retidos, trabalho forçado, prisões, escassez e desastre em minas. |
+| **Vocabulário** | Dignidade, fome, família, abuso, trabalho, justiça, abandono. |
+| **Relação com magia** | Não é necessariamente pró-magia; tende a rejeitar perseguição política e punição cega. |
+| **Fraqueza** | Pode ser criminalizado como sedição antes de conseguir virar força organizada. |
+
+### Bloco Ancestral Dissidente
+
+| Elemento | Descrição |
+| --- | --- |
+| **Representantes** | Corvinus, Corvos, Guardadores das Velhas Canções, Borin/Filena como simpatizantes, anciãos e círculos orais. |
+| **Função** | Preservar memória viva, limites da terra e alertas ancestrais ignorados pelo Estado. |
+| **História** | Sobrevive fragmentado após perseguições imperiais e apagamento da tradição pré-Geada. |
+| **Vocabulário** | Terra viva, canções esquecidas, memória, pacto, aviso, selo, profanação. |
+| **Relação com magia** | Temem magia dominadora, mas aceitam rito, escuta, sonho e limite como práticas de responsabilidade. |
+| **Fraqueza** | É tratado como superstição, atraso ou ameaça por conservadores e tecnocratas. |
 
 ## Facções e Grupos de Pressão
-* **Família Imperial:** Defende a continuidade da linhagem, a centralização do poder e a aparência de invulnerabilidade do império. Nos bastidores, carrega a ferida sucessória que Damburr tenta transformar em assunto encerrado.
-* **Nobreza do Conselho:** Busca preservar privilégios históricos, influência nas decisões e controle sobre minas estratégicas. Divide-se entre tradicionalistas e pragmáticos.
-* **Guarda de Ferro:** Prioriza disciplina, defesa de Gildrat e honra militar. Pode servir ao trono, mas também funciona como consciência tática quando a política ignora riscos reais.
-* **Balastrus e o bloco tecnocrático:** Representam riqueza nova, engenharia, explosivos, mineração agressiva e pragmatismo sem reverência à tradição. Querem provar que competência e resultado valem mais que sangue.
-* **Corvos de Melios:** Grupo tradicional ligado à proteção de Melios e aos limites ancestrais da mineração. Rejeitam a tomada da mina por decreto e veem a invasão imperial como profanação política e espiritual.
-* **Mineradores e trabalhadores pobres:** Base explorada do império. Sofrem com contratos abusivos, trabalho forçado, baixos pagamentos e riscos nas minas. São o terreno social das revoltas.
-* **Rebeldes e civis mobilizados:** População organizada contra abusos imperiais, especialmente após prisões, escassez, abandono de trabalhadores e perseguição a tradições populares. Filena se conecta diretamente a essa pressão social.
-* **Conservadores imperiais:** NPCs e grupos que apoiam Damburr, a ordem centralizada e o Ancestralismo Imperial. Defendem a Caça às Bruxas como medida dura, mas necessária, para impedir que a magia destrua Gildrat como teria destruído a sociedade pré-Geada.
-* **Guardadores das Velhas Canções:** NPCs e grupos ligados às Velhas Canções, à memória ancestral e à crítica ao império. São contra a Caça às Bruxas por rejeitarem a perseguição política, mas não são necessariamente pró-magia: veem a magia como perigosa, sagrada ou instável demais para ser usada sem escuta, rito e limite. Filena, Borin e parte dos rebeldes orbitam esse campo. Nomes provisórios de rua: **Blás** ou **Pés Vermelhos**.
 
-## Contraste Ideológico para NPCs de Gildrat
-Para povoar Gildrat, os NPCs podem ser divididos em dois campos principais. A divisão não precisa ser partidária formal; funciona melhor como visão de mundo, vocabulário e reação emocional aos eventos.
+| Grupo | Função | Interesse atual | Conflito principal |
+| --- | --- | --- | --- |
+| **Família Imperial** | Sustentar o trono, a sucessão e a imagem de invulnerabilidade. | Manter Damburr como símbolo de estabilidade. | Verdade sucessória e ligação entre Caça às Bruxas e golpe. |
+| **Nobreza do Conselho** | Controlar leis, concessões, memória oficial e acesso político. | Preservar privilégios das Grandes Casas. | Pressão de Balastrus e crise das minas. |
+| **Guarda de Ferro** | Proteger Gildrat e executar decisões imperiais. | Manter ordem enquanto a cidade entra em colapso. | Lealdade ao trono versus dever real de proteger o povo. |
+| **Tordan e aliados militares** | Resolver crises com disciplina, força e pragmatismo. | Garantir Melios e preparar Thorin para o mundo cruel. | A aliança com Balastrus ameaça Kilin, Thorin e sua própria honra. |
+| **Balastrus e Casas Mineradoras** | Expandir mineração, tecnologia, explosivos e reconhecimento por mérito. | Tomar Melios e provar que competência vale mais que sangue. | Falta de legitimidade nobre e desprezo pelos Corvos. |
+| **Corvos de Melios** | Guardar Melios, o selo e limites ancestrais da mineração. | Impedir que Balastrus rompa a mina selada. | Decreto imperial contra autoridade tradicional. |
+| **Mineradores e Mãos de Pedra** | Produzir riqueza real do império. | Receber pagamento, sobreviver e não serem abandonados. | Contratos abusivos, risco nas minas e invisibilidade política. |
+| **Rebeldes e civis mobilizados** | Organizar resistência contra abuso imperial. | Defender famílias, trabalhadores e presos políticos. | Criminalização por sedição, roubo de dinamite e revolta. |
+| **Sem Voz** | Categoria de exclusão social e política. | Sobreviver fora da memória oficial. | São usados como ameaça e destino exemplar. |
+| **Guardadores das Velhas Canções** | Preservar tradição oral, terra viva, sonhos e ritos antigos. | Defender limite, escuta e memória contra exploração cega. | Perseguição antimagia e apagamento cultural. |
 
-| Campo | Visão central | Relação com magia | Relação com Damburr | Exemplos |
-| --- | --- | --- | --- | --- |
-| **Conservadores imperiais** | Ordem, linhagem, obediência e sobrevivência da casa anã acima de liberdades individuais. | São contra magia e apoiam punição estatal. Acreditam que a Caça às Bruxas salvou Gildrat de repetir a pré-Geada. | Apoiam o imperador como símbolo de estabilidade, mesmo quando reconhecem sua dureza. | Nobres, burocratas, guardas leais, comerciantes beneficiados pelo regime. |
-| **Blás / Velhas Canções** | Memória ancestral, comunidade, escuta da terra e desconfiança da corte. | Também temem a magia descontrolada, mas rejeitam caça política. Defendem limite, rito e responsabilidade, não perseguição cega. | Veem Damburr como oportunista que usou o medo para tomar poder. | Rebeldes, Borin, Filena, trabalhadores, Corvos e simpatizantes das Velhas Canções. |
+## Ideologia para NPCs de Gildrat
 
-Em diálogo, conservadores tendem a falar de dever, contaminação, pureza da casa anã, estabilidade e sacrifício necessário. Blás ou Pés Vermelhos tendem a falar de memória, abuso, canções esquecidas, trabalhadores abandonados, terra viva e alertas ignorados. Esse contraste deve aparecer em falas de rua, discussões no Conselho, rumores de taverna e reações à revelação do dom de Thorin.
+Para povoar Gildrat, a divisão mais útil não precisa ser partidária. Ela funciona como visão de mundo, vocabulário e reação emocional.
 
-## Tensões e Disputas Ativas
-* **Sangue versus competência:** A nobreza defende autoridade hereditária; Balastrus usa tecnologia e resultados para forçar entrada em espaços antes reservados aos nobres.
-* **Ordem imperial versus revolta social:** O Conselho tenta tratar protestos como ameaça à autoridade, enquanto trabalhadores e rebeldes denunciam exploração, abandono e desigualdade.
-* **Ancestralismo Imperial versus Velhas Canções:** Os conservadores usam os ancestrais como argumento de obediência ao trono; os guardadores das Velhas Canções usam os ancestrais como memória crítica, aviso e limite contra a arrogância imperial.
-* **Antimagia legal versus cautela ritual:** Ambos os campos temem a magia, mas por razões diferentes. O império transforma medo em perseguição e controle; os opositores defendem cautela, escuta ancestral e responsabilidade espiritual.
-* **Tradição ancestral versus mineração expansionista:** Melios é vista por grupos tradicionais como território sagrado ou perigoso demais para exploração agressiva. O império a enxerga como solução material para sua crise.
-* **Guarda versus política de corte:** Soldados como Tordan, Kilin e Mhordred lidam com as consequências práticas de decisões tomadas por ambição, medo ou cálculo político.
-* **Balastrus versus Corvos:** A disputa por Melios opõe decreto imperial e eficiência tecnológica contra legitimidade ancestral e direito tradicional de guarda da mina.
-* **Thorin entre linhagem e consciência pública:** Por ser Forjaprata e filho de Tordan, Thorin é puxado para o centro político. Ao mesmo tempo, sua relação com Filena e os trabalhadores o aproxima das críticas ao sistema.
-* **Dom de Thorin versus memória da Caça às Bruxas:** O poder espiritual de Thorin ameaça reabrir uma ferida recente. Caso seu dom seja revelado, ele não será visto apenas como indivíduo perigoso, mas como prova viva de que a crise que levou Damburr ao poder nunca terminou.
-* **Damburr versus a verdade sucessória:** A estabilidade imperial depende de manter a versão oficial do Incidente da Sessão de Mana. Qualquer prova de que Damburr manipulou a morte do herdeiro legítimo ameaça desmontar o mito político que sustenta seu governo.
+| Campo | Visão central | Relação com magia | Relação com Damburr | Exemplos | Uso em NPCs |
+| --- | --- | --- | --- | --- | --- |
+| **Conservadores imperiais** | Ordem, linhagem, obediência e sobrevivência da casa anã acima de liberdades individuais. | São contra magia e apoiam punição estatal. | Apoiam o imperador como símbolo de estabilidade, mesmo reconhecendo dureza. | Nobres, burocratas, guardas leais, comerciantes beneficiados. | Aproximadamente 80% da fala pública pode tender a esse campo. |
+| **Velhas Canções / Blás / Pés Vermelhos** | Memória ancestral, comunidade, escuta da terra e desconfiança da corte. | Também temem magia descontrolada, mas rejeitam caça política. | Veem Damburr como oportunista que usou medo para tomar poder. | Rebeldes, Borin, Filena, Corvos, trabalhadores e simpatizantes. | Aproximadamente 20% da população/castas baixas pode rejeitar o sistema abertamente. |
 
-## Notas de Encaixe Narrativo
-* **Por que Thorin vai ao Conselho:** Balastrus o leva porque Thorin é herdeiro de uma família militar importante e filho da Mão do Imperador. Sua presença dá peso de linhagem à expedição de Kravens e impede que o relatório de Balastrus pareça apenas ambição privada. Para Thorin, a cena o força a sair do conflito doméstico e entrar no campo político real.
-* **Por que Filena aparece no Conselho:** Filena chega como acusada por roubo ou uso irregular de dinamites em uma tentativa de resgate. Isso transforma sua causa social em caso de Estado: ela deixa de ser apenas rebelde indignada e passa a expor, diante da elite, a exploração dos trabalhadores.
-* **Por que vão para Melios:** O Conselho está sem alternativas diante de revoltas, escassez e perda de controle. Balastrus usa os resultados de Kravens e o caos causado pelo caso de Filena para negociar uma concessão sobre Melios. O decreto imperial converte a expedição em missão oficial.
-* **Por que Thorin e Filena estão na quebra do selo:** Thorin é usado como legitimador nobre da operação e como garantia política para Balastrus. Filena é incorporada como punição, contenção e mão de obra forçada após desafiar o império. Dramaticamente, os dois precisam estar lá porque representam os polos que Melios destrói: linhagem imperial e revolta popular testemunham juntas a consequência da ambição política.
-* **Função política da quebra do selo:** A quebra não é acidente isolado; é consequência direta de um sistema que confunde autoridade com direito absoluto de exploração. O desastre nasce quando decreto, lucro e medo de perder poder passam por cima de advertências ancestrais.
-* **Por que o passado antimagia importa para Thorin:** A Caça às Bruxas dá risco político ao dom herdado de Mélia. Thorin não carrega apenas um poder raro; carrega uma ameaça direta ao mito fundador do governo de Damburr.
-* **Paralelo entre Caça às Bruxas e Melios:** Nos dois eventos, o império transforma medo coletivo em autorização para agir sem limites. Primeiro, o medo da magia justifica perseguição e golpe; depois, o medo da escassez justifica violar Melios.
+### Falas e Reações
+
+**Conservadores imperiais falam sobre:**
+- dever;
+- contaminação;
+- pureza da casa anã;
+- estabilidade;
+- sacrifício necessário;
+- orgulho da mineração;
+- medo da pré-Geada.
+
+**Velhas Canções e dissidentes falam sobre:**
+- memória;
+- abuso;
+- canções esquecidas;
+- trabalhadores abandonados;
+- terra viva;
+- sinais ignorados;
+- limites que não deveriam ser rompidos.
+
+## Tensões Ativas
+
+| Tensão | Pergunta dramática | Personagens ligados |
+| --- | --- | --- |
+| **Sangue versus competência** | Quem tem direito de governar: quem herdou o nome ou quem entrega resultado? | Thorin, Balastrus, Tordan, Corvinus. |
+| **Ordem imperial versus revolta social** | Segurança justifica fome, exploração e prisão de dissidentes? | Damburr, Filena, Borin, Fileus, Conselho. |
+| **Ancestralismo Imperial versus Velhas Canções** | Os ancestrais são monumento de obediência ou memória viva de alerta? | Damburr, Corvos, Guardadores, Filena. |
+| **Antimagia legal versus cautela ritual** | Todo dom espiritual é ameaça, ou o perigo está no uso sem limite? | Thorin, Mélia, Damburr, Guardadores. |
+| **Mineração expansionista versus limite ancestral** | O império pode explorar qualquer lugar se estiver em crise? | Balastrus, Corvinus, Conselho, Tordan. |
+| **Guarda versus política de corte** | Soldados devem obedecer decisões que sabem ser taticamente erradas? | Tordan, Kilin, Mhordred, Guarda de Ferro. |
+| **Decreto imperial versus legitimidade local** | Um papel do trono vale mais que gerações protegendo Melios? | Damburr, Balastrus, Corvos. |
+| **Thorin entre elite e povo** | Thorin será herdeiro da ordem ou ponte com os trabalhadores? | Thorin, Filena, Tordan, Borin. |
+| **Dom de Thorin versus mito da Caça às Bruxas** | Se Thorin tem poder espiritual, o regime mentiu sobre o perigo da magia? | Thorin, Mélia, Damburr, Tordan. |
+| **Damburr versus verdade sucessória** | O império continua de pé se a origem do trono for exposta? | Damburr, família imperial, Conselho. |
+
+## Política e Economia
+
+### Base Econômica Atual
+
+Após a Geada, Gildrat abandona a centralidade agrícola e passa a depender de:
+- mineração;
+- metalurgia;
+- produção de bens duráveis;
+- engenharia;
+- tecnologia aplicada a minas e defesa;
+- expedições financiadas por contratos.
+
+### Recursos de Interesse Político
+
+| Recurso | Função | Relevância política |
+| --- | --- | --- |
+| **Drakel** | Moeda oficial do império. | Formaliza contratos, impostos, comércio e controle burocrático. |
+| **Kraven** | Minério principal da economia atual. | Sustenta forjas, armas, máquinas, Guarda de Ferro e prestígio de expedições. |
+| **Sigmetal** | Minério raro, associado a estruturas profundas e Melios. | Pode enfraquecer Ignotos; sua escassez torna descoberta e posse politicamente explosivas. |
+| **Melios** | Mina selada, perigosa e ancestral. | É ao mesmo tempo solução material, território sagrado e ponto de ruptura do império. |
+
+### Efeito na Política
+
+Gildrat trata mineração como sobrevivência nacional. Isso permite que:
+- contratos privados recebam força de lei;
+- trabalhadores sejam coagidos por pagamento e dever cívico;
+- descobertas raras sejam apropriadas pelo Estado;
+- Casas Mineradoras comprem influência;
+- o Conselho use escassez para aceitar propostas perigosas.
+
+## Política e Religião
+
+### Ancestralismo Imperial
+
+**Função:** religião oficial e ferramenta ideológica do Estado.
+
+**Crença central:** os anões sobrevivem através daquilo que constroem e deixam para trás.
+
+**Como sustenta o governo:**
+- justifica mineração expansiva;
+- incentiva militarização;
+- legitima castas;
+- preserva o Muro das Memórias;
+- define quais ancestrais são dignos;
+- transforma tradição em obediência ao trono.
+
+**Instituições associadas:** famílias nobres, conselheiros, Guarda de Ferro e guardiões do Muro das Memórias. Não há sacerdócio formal forte; a religião é cívica e estatal.
+
+### As Velhas Canções
+
+**Função:** tradição ancestral proibida e memória crítica.
+
+**Crença central:** a terra fala aos que ainda sabem ouvir.
+
+**Como ameaça o governo:**
+- afirma que a terra é viva e guarda memória;
+- critica mineração excessiva;
+- preserva histórias fora do Muro das Memórias;
+- valoriza sonhos, ecos, ritos e transmissão oral;
+- mantém símbolos rurais e folclóricos, como a gralha-azul, fora da leitura cética do Estado;
+- vê a Geada como ruptura causada por ganância e abandono dos antigos pactos.
+
+**Posição sobre magia:** não é uma defesa de magia livre. As Velhas Canções temem o uso dominador e destrutivo, mas diferenciam escuta ritual de exploração cega.
+
+## Encaixe Narrativo
+
+| Situação | Função política | Resultado dramático |
+| --- | --- | --- |
+| **Thorin forçado a trabalhar com Balastrus** | Mostra como Tordan usa família, dever e casta para disciplinar o filho. | Thorin sai do conflito doméstico e entra na economia imperial. |
+| **Kravens e Sigmetal** | Expõe contratos, exploração, competição por minério e fome de reconhecimento de Balastrus. | Thorin vê a diferença entre privilégio nobre e trabalho real. |
+| **Travessia Perigosa** | Mostra Balastrus colocando prazo, lucro e Conselho acima da segurança. | A lógica tecnocrática começa a gerar custos humanos. |
+| **Filena no Conselho** | Transforma revolta social em julgamento público. | A causa dos trabalhadores deixa de ser rumor e vira ameaça de Estado. |
+| **Balastrus pedindo Thorin para Melios** | Usa a linhagem Forjaprata para legitimar uma concessão sem sangue nobre próprio. | Thorin vira selo político da operação. |
+| **Decreto sobre Melios** | O Estado converte interesse privado em missão imperial. | Corvos perdem autoridade local diante da máquina imperial. |
+| **Quebra do selo** | Decreto, lucro e medo de escassez passam por cima de avisos ancestrais. | A queda de Gildrat nasce de uma decisão política, não de acidente isolado. |
+| **Dom de Thorin revelado** | Reabre a ferida da Caça às Bruxas e ameaça a narrativa de Damburr. | Thorin se torna prova viva de que o mito fundador do regime é incompleto ou falso. |
+
+### Por que Thorin vai ao Conselho
+
+**Função:** dar peso de linhagem à expedição de Balastrus e impedir que a proposta pareça só ambição privada.
+
+**Motivo político:** Thorin é Forjaprata e filho da Mão de Ferro do Imperador. Sua presença suaviza a falta de nobreza de Balastrus.
+
+**Efeito no arco:** Thorin deixa de ser apenas filho rebelde e passa a testemunhar como o poder realmente opera.
+
+### Por que Filena aparece no Conselho
+
+**Função:** colocar a crise social diante da elite.
+
+**Motivo político:** Filena chega como acusada por roubo/uso irregular de dinamites, sedição ou tentativa de resgate.
+
+**Efeito no arco:** sua causa deixa de ser discurso de rua e vira caso de Estado. Thorin precisa encarar que a lei protege uns e esmaga outros.
+
+### Por que Melios é aprovada
+
+**Função:** oferecer ao Conselho uma resposta rápida para escassez, revoltas e perda de controle.
+
+**Motivo político:** Balastrus usa resultados em Kravens, crise social e fracasso dos Corvos para exigir concessão.
+
+**Efeito no arco:** Damburr transforma a exploração de Melios em decreto imperial, selando a catástrofe.
+
+## Personagens como Vetores Políticos
+
+| Personagem | Vetor político | Função no GDD |
+| --- | --- | --- |
+| **Damburr** | Autoridade central, medo da magia e sucessão controversa. | Mostra como um regime nasce de trauma público e propaganda. |
+| **Tordan** | Ordem militar, pragmatismo e culpa tardia. | Liga o trono à Guarda e o drama familiar à política imperial. |
+| **Balastrus** | Riqueza nova, eficiência, tecnologia e ambição de status. | Pressiona a velha nobreza e prova o risco da competência sem limite moral. |
+| **Thorin** | Linhagem nobre atravessada por empatia popular e dom proibido. | Pode se tornar ponte entre Guarda, povo, Corvos e memória espiritual. |
+| **Filena** | Voz dos trabalhadores, rebeldes e dignidade civil. | Concretiza o custo humano das decisões do Conselho. |
+| **Borin** | Mão de Pedra invisível, rivalidade e ressentimento de classe. | Mostra como o sistema descarta trabalhadores até que virem reféns da crise. |
+| **Corvinus** | Tradição independente, Corvos e defesa de Melios. | Serve como aviso ignorado e, depois, aliado ancestral contra os Ignotos. |
+| **Mélia** | Linhagem espiritual perseguida e memória da magia proibida. | Conecta Caça às Bruxas, dom de Thorin e possível mentira fundadora do regime. |
 
 ## Pontos em Aberto para Canon
-* Definir se Damburr foi o autor direto do golpe ou se apenas foi beneficiado pela crise sucessória.
-* Definir quem morre no Incidente da Sessão de Mana: príncipe legítimo, princesa, conselheiro real ou outra figura de alto valor simbólico.
-* Definir se Damburr mata o herdeiro legítimo durante a confusão ou se apenas manipula politicamente a morte.
-* Definir o papel exato de Mélia na Caça às Bruxas: sobrevivente, fugitiva, suspeita protegida por Tordan ou descendente de linhagem perseguida.
-* Definir o nome interno do grupo ligado às Velhas Canções, caso “Guardadores das Velhas Canções”, “Blás” e “Pés Vermelhos” sejam apenas rótulos de trabalho.
+
+- Definir se Damburr foi autor direto do golpe ou beneficiário oportunista da crise sucessória.
+- Definir quem morre no Incidente da Sessão de Mana: príncipe legítimo, princesa herdeira, conselheiro real ou outra figura simbólica.
+- Definir se Damburr elimina o herdeiro legítimo durante a confusão ou apenas manipula a morte.
+- Definir o papel exato de Mélia na Caça às Bruxas: sobrevivente, fugitiva, suspeita protegida por Tordan ou descendente de linhagem perseguida.
+- Definir o nome canon do grupo ligado às Velhas Canções: Guardadores das Velhas Canções, Blás, Pés Vermelhos ou outro.
+- Padronizar a grafia do imperador entre **Damburr** e **Dambur** nos documentos.
+- Padronizar o cargo de Tordan entre **Mão do Imperador** e **Mão de Ferro do Imperador**.
+- Definir se Berthrain será canon como representante político dos Corvos no Conselho.
 
 ---
 ## Conexões
+
 * **Leis Relacionadas:** Constituição de Gildrat
-* **Locais Chave:** Gildrat; Castelo de Damburr - Sala do Conselho
-* **Personagens Chave:** Thorin, Filena, Tordan, Damburr, Balastrus, Corvinus
-* **Economia Associada:** Economia de Gildrat
-* **Sociedade Associada:** Organização Social de Gildrat
+* **Locais Chave:** Gildrat; Castelo de Damburr - Sala do Conselho; Muro das Memórias; Melios; Kravens
+* **Personagens Chave:** Thorin, Filena, Tordan, Damburr, Balastrus, Corvinus, Borin, Mélia, Kilin, Mhordred
+* **Economia Associada:** Economia de Gildrat; Drakel; Kraven; Sigmetal
+* **Sociedade Associada:** Organização Social de Gildrat; Grandes Casas; Casas Mineradoras; Mãos de Pedra; Sem Voz
 * **Religião Associada:** Ancestralismo Imperial; As Velhas Canções
-* **Quests Relacionadas:** A Voz do Conselho; Quebra do Selo em Melios; Quando o Segundo Sol Chegar
+* **Quests Relacionadas:** Fim de Jogo; Primeiro Contrato; Minerador Aprendiz; A Voz do Conselho; Quebra do Selo em Melios; Quando o Segundo Sol Chegar

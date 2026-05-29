@@ -1,9 +1,17 @@
 ---
-moeda: 
-recurso_principal: 
-nivel_escassez: [Baixo, Medio, Alto]
-fluxo_comercial: [Importador, Exportador, Autossuficiente]
-tags: [worldbuilding/economia]
+status: 🟡 Em revisão
+genero: Wordbuilding
+moeda: "[[Drakel]]"
+nivel_escassez:
+  - Baixo
+  - Medio
+  - Alto
+fluxo_comercial:
+  - Importador
+  - Exportador
+  - Autossuficiente
+tags:
+  - worldbuilding/economia
 ---
 # Sistema Econômico: Gildrat
 
@@ -90,7 +98,7 @@ Narrativamente, Thorin encontra fragmentos desse minério durante a história, f
 A distribuição de recursos em Gildrat acompanha a rígida estrutura social anã.
 - **Grandes Casas** controlam política, expedições, contratos e riquezas;
 		- coletam impostos de mineração e comércio;
-- **Casas expedicionárias** concentram riqueza econômica e inovação;
+- **Casas Mineradoras** concentram riqueza econômica e inovação;
 - Trabalhadores sustentam minas, forjas, comércio e circulação urbana.
 
 Mesmo entre os anões, riqueza não garante prestígio absoluto. Linhagem, memória ancestral e reconhecimento histórico continuam tendo mais valor do que riqueza isolada.

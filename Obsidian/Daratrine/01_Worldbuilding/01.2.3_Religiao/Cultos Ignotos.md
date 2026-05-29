@@ -1,5 +1,7 @@
 ---
-tipo_panteao:
+status: 🟢 Aprovado
+genero: Wordbuilding
+tipo:
   - Dualista
   - Messiânica
 influencia_social:

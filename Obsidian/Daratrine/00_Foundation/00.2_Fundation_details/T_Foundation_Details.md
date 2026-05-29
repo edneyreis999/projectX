@@ -1,9 +1,10 @@
 ---
-conflito_tipo:
-  - Escrevendo
-stakes_nivel: Crítico/Pessoal
+status: 🟢 Aprovado
+genero: foundation
 tags:
   - foundation/details
+  - conflitos
+  - antagonistas
 ---
 # Details: Conflito & Stakes
 

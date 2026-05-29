@@ -1,6 +1,9 @@
 ---
-tipo_panteao:
+status: 🟢 Aprovado
+genero: Wordbuilding
+tipo:
   - Ancestral
+  - Secundaria
 influencia_social:
   - Peiriférico
   - Proibido
