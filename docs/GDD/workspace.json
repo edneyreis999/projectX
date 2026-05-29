@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daratrine/01_Worldbuilding/01.2_Engenharias_Sociopoliticas/01.2.1_Politica/T_Política.md",
+                "file": "Daratrine/00_Foundation/00.2_The_Thesis/T_Foundation_Details.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "T_Política"
+              "title": "T_Foundation_Details"
             }
           }
         ]
@@ -183,24 +183,12 @@
   },
   "active": "eed62bb5a30693b3",
   "lastOpenFiles": [
-    "Daratrine/01_Worldbuilding/01.2_Engenharias_Sociopoliticas/01.2.2_Economia/Economia_em_Gildrat.md",
-    "Daratrine/03_Narrative/03.1_Macro_History/Ciclo Histórico dos Anões.md",
-    "Daratrine/01_Worldbuilding/01.2_Engenharias_Sociopoliticas/01.2.3_Religiao/Cultos Ignotos.md",
-    "Daratrine/01_Worldbuilding/01.2_Engenharias_Sociopoliticas/01.2.3_Religiao/As Velhas Canções.md",
-    "Daratrine/01_Worldbuilding/01.2_Engenharias_Sociopoliticas/01.2.3_Religiao/Ancestralismo Imperial.md",
-    "Daratrine/01_Worldbuilding/01.2_Engenharias_Sociopoliticas/01.2.1_Politica/T_Política.md",
-    "Daratrine/01_Worldbuilding/01.1_Leis/T_Leis (se formos especificar leis; verificar se é necessário).md",
-    "Daratrine/01_Worldbuilding/01.1_Leis/Constituição de Gildrat.md",
+    "Daratrine/00_Foundation/00.1_Core_Concept/DARATRINE — CORE CONCEPT (VERSÃO COMERCIAL).md",
     "Daratrine/00_Foundation/00.1_Core_Concept/1.Core _Concept.md",
     "Daratrine/000_Entrevistas/Entrevista 1.md",
     "Daratrine/000_Entrevistas/Dúvidas Quests.md",
-    "Daratrine/01_Worldbuilding/01.2_Engenharias_Sociopoliticas/01.2.4 Social/Organização Social de Gildrat.md",
-    "Daratrine/03_Narrative/03.2_Game_Timeline/T_Game_Timeline.md",
-    "Daratrine/00_Foundation/00.2_The_Thesis/T_Foundation_Details.md",
     "Daratrine/03_Narrative/03.1_Macro_History/T_macro_history.md",
-    "Daratrine/00_Foundation/História de Daratrine (Inteira).md",
-    "Daratrine/03_Narrative/03.0_Modelos de timeline.md",
-    "Daratrine/00_Foundation/00.1_Core_Concept/DARATRINE — CORE CONCEPT (VERSÃO COMERCIAL).md",
+    "Daratrine/01_Worldbuilding/01.2_Engenharias_Sociopoliticas/01.2.4 Social/Organização Social de Gildrat.md",
     "Daratrine/03_Narrative/03.3_Quests/Quests_Sem_revisão/13-quando-segundo-sol-chegar/V_sigmetal/03-encontrar-ferreiro-armas.md",
     "Daratrine/03_Narrative/03.3_Quests/Quests_Sem_revisão/13-quando-segundo-sol-chegar/V_sigmetal/02-encontrar-ferreiro-armaduras.md",
     "Daratrine/03_Narrative/03.3_Quests/Quests_Sem_revisão/13-quando-segundo-sol-chegar/V_sigmetal/01-minerar-sigmetal.md",
@@ -209,6 +197,18 @@
     "Daratrine/03_Narrative/03.3_Quests/Quests_Sem_revisão/13-quando-segundo-sol-chegar/V_influência_corvos/01-resgatar-corvos-familia-principal.md",
     "Daratrine/03_Narrative/03.3_Quests/Quests_Sem_revisão/13-quando-segundo-sol-chegar/V_força_guarda/05-novo-lord-anão.md",
     "Daratrine/03_Narrative/03.3_Quests/Quests_Sem_revisão/13-quando-segundo-sol-chegar/V_força_guarda/04-guerreiro-fragmentado.md",
+    "Daratrine/03_Narrative/03.3_Quests/Quests_Sem_revisão/13-quando-segundo-sol-chegar/V_força_guarda/03-boas-vindas-guarda-de-ferro.md",
+    "Daratrine/03_Narrative/03.3_Quests/Quests_Sem_revisão/13-quando-segundo-sol-chegar/V_força_guarda/02-resgatando-Kilin.md",
+    "Daratrine/03_Narrative/03.3_Quests/Quests_Sem_revisão/13-quando-segundo-sol-chegar/V_força_guarda/01-treinando-guarda-ferro.md",
+    "Daratrine/03_Narrative/03.3_Quests/Quests_Sem_revisão/13-quando-segundo-sol-chegar/V_força_civil/05-treinar-civis.md",
+    "Daratrine/03_Narrative/03.3_Quests/Quests_Sem_revisão/13-quando-segundo-sol-chegar/V_força_civil/04-recrutar-civis.md",
+    "Daratrine/03_Narrative/03.3_Quests/Quests_Sem_revisão/13-quando-segundo-sol-chegar/V_força_civil/03-treinar-time-rúnico.md",
+    "Daratrine/03_Narrative/03.3_Quests/Quests_Sem_revisão/13-quando-segundo-sol-chegar/V_força_civil/02-treinar-rebeldes.md",
+    "Daratrine/03_Narrative/03.3_Quests/Quests_Sem_revisão/13-quando-segundo-sol-chegar/V_força_civil/01-resgatar-borin-rebeldes.md",
+    "Daratrine/03_Narrative/03.3_Quests/Quests_Sem_revisão/13-quando-segundo-sol-chegar/v_armadilhas/03-apaziguar-discussões.md",
+    "Daratrine/03_Narrative/03.3_Quests/Quests_Sem_revisão/13-quando-segundo-sol-chegar/v_armadilhas/02-testar-armadilhas.md",
+    "Daratrine/03_Narrative/03.3_Quests/Quests_Sem_revisão/13-quando-segundo-sol-chegar/v_armadilhas/01-testar-dinamite.md",
+    "Daratrine/03_Narrative/03.3_Quests/Quests_Sem_revisão/9-ameaça-lupina/ameaça-lupina.NDS.fluxo.md",
     "Daratrine/03_Narrative/03.3_Quests/Quests_Sem_revisão/6-minerador-aprendiz/minerador-aprendiz-v2.NSD.fluxo-cenas.xml",
     "Daratrine/03_Narrative/03.3_Quests/Quests_Sem_revisão/5-primeiro-contrato/primeiro-contrato-v2.NSD.fluxo-cenas.xml",
     "Daratrine/03_Narrative/03.3_Quests/Quests_Sem_revisão/13-quando-segundo-sol-chegar/V_sigmetal",
