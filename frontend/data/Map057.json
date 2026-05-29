@@ -718,6 +718,16 @@
               "parameters": []
             },
             {
+              "code": 101,
+              "indent": 1,
+              "parameters": ["Portraits menores/Principal2", 3, 0, 2, "Minerador"]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": ["Parabéns! Você venceu!"]
+            },
+            {
               "code": 0,
               "indent": 1,
               "parameters": []
