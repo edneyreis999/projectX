@@ -2488,7 +2488,7 @@
   },
   {
     "id": 88,
-    "autoRemovalTiming": 1,
+    "autoRemovalTiming": 2,
     "chanceByDamage": 100,
     "traits": [
       {
@@ -2500,19 +2500,24 @@
         "code": 21,
         "dataId": 3,
         "value": 0.8
+      },
+      {
+        "code": 34,
+        "dataId": 0,
+        "value": 1
       }
     ],
     "iconIndex": 67,
-    "maxTurns": 3,
+    "maxTurns": 4,
     "message1": "",
     "message2": "",
     "message3": "",
     "message4": "",
     "messageType": 1,
-    "minTurns": 3,
+    "minTurns": 4,
     "motion": 0,
     "name": "Postura Agressiva",
-    "note": "<State Tooltip Description>\n ATK+30%, DEF-20%. Nao erra. Perde 3% PV/turno\n</State Tooltip Description>\n<Always Hit>\n\n<JS HP Slip Damage>\ndamage = Math.floor(target.mhp * 0.03);\n</JS HP Slip Damage>",
+    "note": "<State Tooltip Description>\n ATK+30%, DEF-20%. Ataque extra por turno.\n</State Tooltip Description>",
     "overlay": 0,
     "priority": 50,
     "removeAtBattleEnd": true,
