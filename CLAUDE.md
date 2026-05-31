@@ -49,3 +49,4 @@ Configuracoes que afetam todo o sistema de combate e devem ser consideradas em d
 - Ao concluir uma task, exiba no terminal um guia breve de QA manual, com no máximo 500 tokens, explicando como testar a atualização. Só faça o commit após o usuário testar e aprovar.
 - Quando uma tarefa for concluída com sucesso ou o usuário confirmar que uma implementação funcionou, ofereça enviar um dashboard com os aprendizados da sessão para que ele escolha quais virarão post-mortem. Para os itens escolhidos, use sequential thinking e /post-mortem para criar os post-mortems.
 - Sempre que for adicionar novos objetos nos JSONS de frontend/data, confirmar com usuario os ids que vão ser ocupados.
+- SEMPRE invocar a skill `git-commit-helper` antes de criar qualquer commit. Nunca commitar direto.
