@@ -936,5 +936,14 @@ var $plugins =
         "status": true,
         "description": "Esconde skills nao-aprendiveis no VisuStella Skill Shop",
         "parameters": {}
+    },
+    {
+        "name": "Coreto_Auto_Triggers",
+        "status": true,
+        "description": "Triggers de Miss para o sistema de combate (expande VisuStella Auto Skill Triggers)",
+        "parameters": {
+            "MaxTriggersPerTurn": "2",
+            "DebugLogs": "true"
+        }
     }
 ];
