@@ -21,7 +21,7 @@
  * @type boolean
  * @on Sim
  * @off Nao
- * @default true
+ * @default false
  * @desc Exibe logs de debug no console (NW.js) quando miss/evade e detectado.
  *
  * @help
@@ -284,6 +284,10 @@
     const result = target.result();
     if (!result.used) return;
     if (!result.missed && !result.evaded) return;
+
+    const item = this.item();
+    if (item.scope !== 1) return;
+    if (item.repeats > 1) return;
 
     dispatchMissTriggers(this.subject(), target);
   };

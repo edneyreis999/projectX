@@ -3120,7 +3120,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Disparo Desesperado",
-    "note": "<Skill Shop Hide Not Learnable>\n<Skill Shop Cost: 550>\n<Skill Shop Require Class: 5>\n// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 20>\n// [Coreto_CastTimeTags] - Cast time original: speed -125\n<Cast Time: 3.4s>\n<Common Event Key: Disparo Desesperado>\n<Target: 5 Random Enemies>\n",
+    "note": "<Skill Shop Hide Not Learnable>\n<Skill Shop Cost: 550>\n<Skill Shop Require Class: 5>\n// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 20>\n<Modify Hit Rate: -50%>\n// [Coreto_CastTimeTags] - Cast time original: speed -125\n<Cast Time: 3.4s>\n<Common Event Key: Disparo Desesperado>\n<Target: 5 Random Enemies>\n",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -3297,7 +3297,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Habilidade Passiva. +10 Foco ao errar um ataque",
+    "description": "Habilidade Passiva. Gera +10 de Foco ao errar ataques de alvo unico.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 102,
