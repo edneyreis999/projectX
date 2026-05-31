@@ -39,8 +39,11 @@
  *
  * <Coreto Trigger: CONDITION>
  * <Coreto Trigger X%: CONDITION>
+ * <Coreto Silent Trigger: CONDITION>
+ * <Coreto Silent Trigger X%: CONDITION>
  *
  * - X% = chance do trigger disparar (padrao 100%)
+ * - "Silent" = aplica efeitos diretamente (ex: Gain TP) sem forceAction
  * - CONDITION = uma das condicoes abaixo
  *
  * Condicoes disponiveis:
@@ -74,6 +77,8 @@
  * <Coreto Trigger 50%: Miss User>
  * <Coreto Trigger: Miss Target>
  * <Coreto Trigger 75%: Miss Target>
+ * <Coreto Silent Trigger: Miss User>
+ * <Coreto Silent Trigger 50%: Miss Target>
  *
  * ============================================================================
  */
@@ -97,20 +102,21 @@
   const parseTriggerNotetags = function () {
     if (!_triggerCache || Object.keys(_triggerCache).length > 0) return;
 
-    const regex = /<Coreto Trigger(?:\s+(\d+)%?)?:\s*(.+?)>/gi;
+    const regex = /<Coreto (Silent )?Trigger(?:\s+(\d+)%?)?:\s*(.+?)>/gi;
 
     for (const skill of $dataSkills) {
       if (!skill || !skill.note) continue;
 
       let match;
       while ((match = regex.exec(skill.note)) !== null) {
-        const chance = match[1] ? parseInt(match[1]) : 100;
-        const condition = match[2].trim().toUpperCase();
+        const silent = !!match[1];
+        const chance = match[2] ? parseInt(match[2]) : 100;
+        const condition = match[3].trim().toUpperCase();
 
         if (!_triggerCache[skill.id]) {
           _triggerCache[skill.id] = [];
         }
-        _triggerCache[skill.id].push({ condition: condition, chance: chance });
+        _triggerCache[skill.id].push({ condition: condition, chance: chance, silent: silent });
       }
     }
 
@@ -150,7 +156,7 @@
 
       for (const trigger of triggers) {
         if (trigger.condition === condition) {
-          results.push({ skillId: skillId, chance: trigger.chance });
+          results.push({ skillId: skillId, chance: trigger.chance, silent: trigger.silent });
         }
       }
     }
@@ -165,7 +171,34 @@
     return true;
   };
 
-  const forceTriggerSkill = function (battler, skillId) {
+  const silentTriggerSkill = function (battler, skillId) {
+    const skill = $dataSkills[skillId];
+    if (!skill) return false;
+
+    battler._coretoTriggersThisTurn =
+      (battler._coretoTriggersThisTurn || 0) + 1;
+
+    const gainTpMatch = skill.note.match(/<Gain TP:\s*([+\-]?\d+)>/i);
+    if (gainTpMatch) {
+      const tpAmount = parseInt(gainTpMatch[1], 10);
+      battler.gainTp(tpAmount);
+    }
+
+    log(
+      "  SILENT TRIGGERED:",
+      battler.name(),
+      "->",
+      skill.name,
+      "(turno:",
+      battler._coretoTriggersThisTurn,
+      "/" + maxTriggersPerTurn + ")"
+    );
+    return true;
+  };
+
+  const forceTriggerSkill = function (battler, skillId, silent) {
+    if (silent) return silentTriggerSkill(battler, skillId);
+
     const skill = $dataSkills[skillId];
     if (!skill) return false;
     if (!battler.canUse(skill)) {
@@ -198,7 +231,7 @@
       const roll = Math.random() * 100;
       if (roll >= trigger.chance) continue;
 
-      forceTriggerSkill(battler, trigger.skillId);
+      forceTriggerSkill(battler, trigger.skillId, trigger.silent);
     }
   };
 
