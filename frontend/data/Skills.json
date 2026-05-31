@@ -3111,7 +3111,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "5 alvos aleatorios — cast 3.4s. 7.51x ATK",
+    "description": "5 alvos aleatorios — cast 3.4s. 7.51x ATK com precisao -50%",
     "effects": [],
     "hitType": 1,
     "iconIndex": 4,
