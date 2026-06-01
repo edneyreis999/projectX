@@ -2,18 +2,21 @@
 - [x] Menu de todos
 - [x] Atualizar os menus com status (aprovado/pronto aguardando aprovação)
 - [x] Adicionar data em que o doc foi aprovado e "fechado
+- [x] *Política*
+	- [x] fazer menu
+	- [x] revisar e sintetizar
+- [ ] *Religião*
+	- [ ] Fazer o conto da arara azul
 - [ ] *Economia*
 	- [ ] encaixar ludus no local correto
 	- [ ] aspecto cultural de drakel e sigmetal
 	- [ ] alimentação
-- [ ] *Política*
-	- [x] fazer menu
-	- [ ] revisar e sintetizar
-
 #### **Fazer docs:**
-- [ ] Geo/Arq
-- [ ] Tecnologia
+- [x] Tecnologia
+- [x] Magia
 - [ ] Quest na Twine
+- [ ] Geo/Arq
+- [ ] LER O NOTION PARA BATER INFOS
 
 #### **Outros:**
 - [ ] Jogar releese e anotar dificuldades
@@ -35,8 +38,8 @@
 | Religião                | 🟢 Aprovado              |
 | Social                  | 🟢 Aprovado              |
 | Geografia/Arquitetura   | 🟠 Em desenvolvimento    |
-| Tecnologia              | 🟠 Em desenvolvimento    |
-| Magia                   | ⚪ Não iniciado           |
+| Tecnologia              | 🔵 Pronto para aprovação |
+| Magia                   | 🔵 Pronto para aprovação |
 | **ATLAS FOLK**          |                          |
 | Raças e Espácies        | ⚪ Não iniciado           |
 | Protagonistas           | ⚪ Não iniciado           |
