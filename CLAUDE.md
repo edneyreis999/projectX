@@ -44,11 +44,9 @@ Configuracoes que afetam todo o sistema de combate e devem ser consideradas em d
 - Sempre dar prefencia por notetags VisuStella ou Coreto.
 - Procurar em `docs/rpg-maker-for-ia` se já existe algum plugin VisuStella que resolve o problema.
 
-# Uso correto do Beads
-
-- Sempre que criar uma issue no beads, a última task deve ser criar um /post-mortem com os aprendizados da sessão.
-
 # Regras universais
 
 - Ao concluir uma task, exiba no terminal um guia breve de QA manual, com no máximo 500 tokens, explicando como testar a atualização. Só faça o commit após o usuário testar e aprovar.
+- Quando uma tarefa for concluída com sucesso ou o usuário confirmar que uma implementação funcionou, ofereça enviar um dashboard com os aprendizados da sessão para que ele escolha quais virarão post-mortem. Para os itens escolhidos, use sequential thinking e /post-mortem para criar os post-mortems.
 - Sempre que for adicionar novos objetos nos JSONS de frontend/data, confirmar com usuario os ids que vão ser ocupados.
+- SEMPRE invocar a skill `git-commit-helper` antes de criar qualquer commit. Nunca commitar direto.

@@ -3,7 +3,7 @@
 //= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~= =~=
 /*:
  * @target MZ
- * @plugindesc Mecanicas customizadas do personagem Kilin (Bodyguard, etc.)
+ * @plugindesc Mecanicas customizadas do personagem Kilin (Bodyguard, Block, etc.)
  * @author Coreto
  * @orderAfter VisuMZ_0_CoreEngine
  * @orderAfter VisuMZ_1_BattleCore
@@ -74,6 +74,37 @@
  *  13. No inicio do turno do Kilin, State 83 e removido do aliado
  *
  * ============================================================================
+ * Block System
+ * ============================================================================
+ *
+ * Sistema de bloqueio generico. States com notetags de Block reduzem o dano
+ * recebido com chance configuravel, tocando SE e animacao visual.
+ *
+ * Roda ANTES do PreDamageAsTargetJS do VisuStella, garantindo prioridade.
+ *
+ * ---
+ *
+ * <Block: X%>
+ *
+ * - Usado em: State
+ * - Chance estatica de bloquear. Ex: <Block: 100%> = sempre bloqueia
+ *
+ * ---
+ *
+ * <JS Block: expr>
+ *
+ * - Usado em: State
+ * - JS inline para chance dinamica (0.0 a 1.0)
+ * - Contexto: user = target, value = dano, attacker = atacante
+ * - Ex: <JS Block: Math.min(1, user.tp / 50)>
+ *
+ * ---
+ *
+ * Constantes internas:
+ *   BLOCK_DAMAGE_REDUCTION = 0.5 (50% reducao)
+ *   BLOCK_ANIMATION_ID = 40
+ *
+ * ============================================================================
  * Notas Importantes
  * ============================================================================
  *
@@ -122,6 +153,12 @@
 
   const BODYGUARD_MSG_CHANCE = 0.7;
   const BODYGUARD_TP_DIVISOR = 20;
+
+  // Block system
+  const BLOCK_REGEX = /<Block:\s*(\d+)%?>/i;
+  const BLOCK_JS_REGEX = /<JS Block:\s*(.+?)>/i;
+  const BLOCK_DAMAGE_REDUCTION = 0.5;
+  const BLOCK_ANIMATION_ID = 40;
 
   const scanBodyguardStates = () => {
     if (!$dataSkills) return;
@@ -172,6 +209,36 @@
       return null;
     }
     return null;
+  };
+
+  /**
+   * Retorna a chance de bloqueio (0.0-1.0) de um battler.
+   * Percorre states ativos procurando <Block: X%> ou <JS Block: expr>.
+   * Primeiro match encontrado e retornado (prioridade por ordem de states).
+   */
+  const getBlockChance = (target, value, attacker) => {
+    const states = target.states();
+    for (const state of states) {
+      if (!state || !state.note) continue;
+
+      const staticMatch = BLOCK_REGEX.exec(state.note);
+      if (staticMatch) {
+        return Math.min(1, Math.max(0, parseInt(staticMatch[1], 10) / 100));
+      }
+
+      const jsMatch = BLOCK_JS_REGEX.exec(state.note);
+      if (jsMatch) {
+        try {
+          const fn = new Function('user', 'value', 'attacker', 'return ' + jsMatch[1]);
+          const result = fn(target, value, attacker);
+          return Math.min(1, Math.max(0, Number(result) || 0));
+        } catch (e) {
+          console.warn(PLUGIN_NAME + ': <JS Block> eval error:', e.message);
+          return 0;
+        }
+      }
+    }
+    return 0;
   };
 
   // =========================================================================
@@ -568,5 +635,53 @@
       dbg('requestAnimation: targets redirecionados');
     }
     _Game_Temp_requestAnimation.call(this, targets, animationId, mirror);
+  };
+
+  // =========================================================================
+  // Hooks - Game_Action.prototype.executeDamage (Block System)
+  //
+  // Intercepta ANTES do original (que dispara PreDamageAsTargetJS do VisuStella).
+  // Se o target tem state com <Block> e o RNG passou, reduz o dano e dispara
+  // SE + animacao visual. O valor modificado segue para o executeDamage
+  // original e dai para os hooks do VisuStella.
+  // =========================================================================
+
+  const _Game_Action_executeDamage = Game_Action.prototype.executeDamage;
+  Game_Action.prototype.executeDamage = function (target, value) {
+    if (value > 0 && this.isHpEffect()) {
+      const blockChance = getBlockChance(target, value, this.subject());
+      if (blockChance > 0 && Math.random() < blockChance) {
+        value = Math.floor(value * BLOCK_DAMAGE_REDUCTION);
+        target._blockTriggered = true;
+        $gameTemp.requestAnimation([target], BLOCK_ANIMATION_ID);
+        dbg('block: dano reduzido', {
+          target: target.name(),
+          chance: blockChance,
+          reduction: BLOCK_DAMAGE_REDUCTION,
+          newValue: value,
+        });
+      }
+    }
+    _Game_Action_executeDamage.call(this, target, value);
+  };
+
+  // =========================================================================
+  // Hooks - Game_Battler.prototype.performDamage (Block motion guard)
+  //
+  // Quando _blockTriggered esta setado, substitui o motion de damage por
+  // guard e pula o flinch. Assim o battler "absorve" o golpe ao inves de
+  // "tomar" o golpe visualmente.
+  // =========================================================================
+
+  const _Game_Battler_performDamage = Game_Battler.prototype.performDamage;
+  Game_Battler.prototype.performDamage = function () {
+    if (this._blockTriggered) {
+      delete this._blockTriggered;
+      if (this.isActor()) this.requestMotion('guard');
+      this.requestMotionRefresh();
+      dbg('block: performDamage → motion guard (sem flinch)');
+      return;
+    }
+    _Game_Battler_performDamage.call(this);
   };
 })();
