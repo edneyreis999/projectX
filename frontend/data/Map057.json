@@ -713,11 +713,6 @@
               "parameters": ["3000 \\G foram encontrados!"]
             },
             {
-              "code": 214,
-              "indent": 1,
-              "parameters": []
-            },
-            {
               "code": 101,
               "indent": 1,
               "parameters": ["Portraits menores/Principal2", 3, 0, 2, "Minerador"]
@@ -726,6 +721,11 @@
               "code": 401,
               "indent": 1,
               "parameters": ["Parabéns! Você venceu!"]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": ["Pode Lutar contra outro boss, se quiser"]
             },
             {
               "code": 0,
@@ -883,9 +883,19 @@
               "parameters": ["3000 \\G foram encontrados!"]
             },
             {
-              "code": 214,
+              "code": 101,
               "indent": 1,
-              "parameters": []
+              "parameters": ["Portraits menores/Principal2", 3, 0, 2, "Minerador"]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": ["Parabéns! Você venceu!"]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": ["Pode Lutar contra outro boss, se quiser"]
             },
             {
               "code": 0,
@@ -921,6 +931,11 @@
               "code": 401,
               "indent": 1,
               "parameters": ["Tente aprender algo novo."]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": ["Talvez você deva pensar em quem matar primeiro."]
             },
             {
               "code": 125,
@@ -1043,9 +1058,19 @@
               "parameters": ["3000 \\G foram encontrados!"]
             },
             {
-              "code": 214,
+              "code": 101,
               "indent": 1,
-              "parameters": []
+              "parameters": ["Portraits menores/Principal2", 3, 0, 2, "Minerador"]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": ["Parabéns! Você venceu!"]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": ["Pode Lutar contra outro boss, se quiser"]
             },
             {
               "code": 0,
@@ -1080,7 +1105,12 @@
             {
               "code": 401,
               "indent": 1,
-              "parameters": ["Tente aprender algo novo."]
+              "parameters": ["Talvez uma build nova? Skills de Crowd Control"]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": ["quando bem aplicadas, é melhor que muito DPS."]
             },
             {
               "code": 125,
@@ -1195,7 +1225,7 @@
                 "SceneOpenSkillShop",
                 "Scene: Open Skill Shop",
                 {
-                  "SkillIDs:arraynum": "[\"90\",\"91\",\"92\",\"93\",\"94\",\"95\",\"96\",\"97\",\"98\",\"99\",\"46\",\"47\",\"48\",\"49\",\"50\",\"51\",\"52\",\"53\",\"54\",\"55\",\"57\",\"60\",\"65\",\"66\",\"67\",\"68\",\"69\",\"70\",\"71\",\"72\",\"73\",\"76\",\"77\",\"78\",\"79\",\"80\",\"81\",\"82\",\"83\",\"84\",\"85\",\"86\",\"100\",\"64\",\"101\",\"102\",\"111\",\"104\",\"61\",\"62\",\"103\",\"47\"]",
+                  "SkillIDs:arraynum": "[\"90\",\"91\",\"92\",\"93\",\"94\",\"95\",\"96\",\"97\",\"98\",\"99\",\"46\",\"47\",\"48\",\"49\",\"50\",\"51\",\"52\",\"53\",\"54\",\"55\",\"57\",\"60\",\"66\",\"67\",\"68\",\"69\",\"70\",\"71\",\"72\",\"73\",\"76\",\"77\",\"78\",\"79\",\"80\",\"81\",\"82\",\"83\",\"84\",\"85\",\"86\",\"100\",\"64\",\"101\",\"102\",\"111\",\"104\",\"61\",\"62\",\"103\",\"47\"]",
                   "DiscountRate:eval": "0.00"
                 }
               ]

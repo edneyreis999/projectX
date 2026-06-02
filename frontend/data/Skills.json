@@ -1790,7 +1790,7 @@
     "messageType": 1,
     "mpCost": 0,
     "name": "Danca dos Ventos",
-    "note": "<Skill Shop Hide Not Learnable>\n<Skill Shop Cost: 1200>\n<Skill Shop Require Class: 1>\n// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 45>\n// [Coreto_CastTimeTags] - Cast time original: speed -500\n<Cast Time: 6.8s>\n<Common Event Key: Dança dos Ventos>\n<ATB Cannot Be Interrupted>\n<JS Post-Start Action>\n  var thisSkillId = 55;\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    user.gainTp(tpFinal);\n  }\n  user.refresh();\n  </JS Post-Start Action>\n\n",
+    "note": "<Skill Shop Hide Not Learnable>\n<Skill Shop Cost: 1200>\n<Skill Shop Require Class: 1>\n// [Coreto TpNotetags] - Custo de TP da skill\n<Spend TP: 45>\n// [Coreto_CastTimeTags] - Cast time original: speed -500\n<Cast Time: 6.8s>\n<Common Event Key: Dança dos Ventos>\n<ATB Cannot Be Interrupted>\n<ATB Interrupt>\n<JS Post-Start Action>\n  var thisSkillId = 55;\n  if (user._embaloLastSkill === thisSkillId) {\n    user._embaloCount = Math.min((user._embaloCount || 0) + 1, 3);\n  } else {\n    user._embaloCount = 1;\n  }\n  user._embaloLastSkill = thisSkillId;\n\n  var tpBonus = (user._embaloCount - 1) * 4;\n  if (tpBonus > 0) {\n    var tpFinal = Math.round(tpBonus * user.tcr);\n    user.gainTp(tpFinal);\n  }\n  user.refresh();\n  </JS Post-Start Action>\n\n",
     "occasion": 0,
     "repeats": 1,
     "requiredWtypeId1": 0,
