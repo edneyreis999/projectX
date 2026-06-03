@@ -2430,8 +2430,8 @@
     "overlay": 0,
     "priority": 50,
     "removeAtBattleEnd": true,
-    "removeByDamage": false,
-    "removeByRestriction": false,
+    "removeByDamage": true,
+    "removeByRestriction": true,
     "removeByWalking": false,
     "restriction": 0,
     "stepsToRemove": 100
