@@ -401,17 +401,17 @@
             {
               "code": 401,
               "indent": 0,
-              "parameters": ["Precisamos que você elimine os monstros dessa mina, só assim"]
+              "parameters": ["Finalmente alguém disposto a ajudar! Nossa mina foi invadida"]
             },
             {
               "code": 401,
               "indent": 0,
-              "parameters": ["vamos poder minerá-las. O pagamento é ótimo, isso eu"]
+              "parameters": ["por 3 criaturas devastadoras. Precisamos que você as elimine"]
             },
             {
               "code": 401,
               "indent": 0,
-              "parameters": ["garanto."]
+              "parameters": ["para que nossos mineiros possam voltar ao trabalho."]
             },
             {
               "code": 101,
@@ -421,12 +421,17 @@
             {
               "code": 401,
               "indent": 0,
-              "parameters": ["Vou te adiantar 5,000 Ludos para você comprar"]
+              "parameters": ["Vou te adiantar 5.000 Ludos. Procure o Mestre de Habilidades"]
             },
             {
               "code": 401,
               "indent": 0,
-              "parameters": ["Suas habilidades"]
+              "parameters": ["ali perto — ele pode ensinar técnicas novas para seus"]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": ["guerreiros. Vai precisar delas!"]
             },
             {
               "code": 125,
@@ -511,12 +516,152 @@
             {
               "code": 401,
               "indent": 0,
-              "parameters": ["Preciso que você acabe com todos"]
+              "parameters": ["Já eliminou uma das criaturas! Faltam mais 2."]
             },
             {
               "code": 401,
               "indent": 0,
-              "parameters": ["os monstros, ok?"]
+              "parameters": ["Continue assim, a mina precisa de você!"]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 25,
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 100,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 110,
+            "variableValid": true,
+            "variableValue": 2
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Principal/$Tordan",
+            "direction": 4,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": ["Portraits menores/Principal2", 3, 0, 2, "Minerador"]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": ["Duas criaturas a menos! Só falta uma."]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": ["Você está quase terminando, não desista agora!"]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 25,
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 100,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 110,
+            "variableValid": true,
+            "variableValue": 3
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Principal/$Tordan",
+            "direction": 4,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": ["Portraits menores/Principal2", 3, 0, 2, "Minerador"]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": ["Você eliminou todas as criaturas da mina!"]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": ["Incrível! Venha falar comigo para receber seu pagamento."]
             },
             {
               "code": 0,
@@ -581,7 +726,17 @@
             {
               "code": 401,
               "indent": 0,
-              "parameters": ["Muito bem! Aqui está seu pagamento como prometido..."]
+              "parameters": ["Você limpou toda a mina! Aqui está seu pagamento"]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": ["completo, como prometido."]
+            },
+            {
+              "code": 125,
+              "indent": 0,
+              "parameters": [0, 0, 50000]
             },
             {
               "code": 101,
@@ -591,12 +746,22 @@
             {
               "code": 401,
               "indent": 0,
-              "parameters": ["Você ganhou 1000 \\G."]
+              "parameters": ["50000 \\G foram encontrados!"]
             },
             {
-              "code": 125,
+              "code": 101,
               "indent": 0,
-              "parameters": [0, 0, 1000]
+              "parameters": ["Portraits menores/Principal2", 3, 0, 2, "Minerador"]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": ["Nossos mineiros já podem voltar ao trabalho."]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": ["Muito obrigado por tudo!"]
             },
             {
               "code": 221,
@@ -606,7 +771,7 @@
             {
               "code": 101,
               "indent": 0,
-              "parameters": ["", 0, 2, 1, ""]
+              "parameters": ["", 0, 0, 2, ""]
             },
             {
               "code": 401,
@@ -713,19 +878,79 @@
               "parameters": ["3000 \\G foram encontrados!"]
             },
             {
-              "code": 101,
+              "code": 111,
               "indent": 1,
+              "parameters": [1, 110, 0, 2, 0]
+            },
+            {
+              "code": 101,
+              "indent": 2,
               "parameters": ["Portraits menores/Principal2", 3, 0, 2, "Minerador"]
             },
             {
               "code": 401,
-              "indent": 1,
-              "parameters": ["Parabéns! Você venceu!"]
+              "indent": 2,
+              "parameters": ["Criatura eliminada! Faltam mais 2."]
             },
             {
               "code": 401,
+              "indent": 2,
+              "parameters": ["Continue assim!"]
+            },
+            {
+              "code": 411,
               "indent": 1,
-              "parameters": ["Pode Lutar contra outro boss, se quiser"]
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [1, 110, 0, 3, 0]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": ["Portraits menores/Principal2", 3, 0, 2, "Minerador"]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": ["Mais uma eliminada! Falta apenas 1 criatura."]
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": ["Portraits menores/Principal2", 3, 0, 2, "Minerador"]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": ["Todas as criaturas foram eliminadas!"]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": ["Volte ao Chefe Minerador para receber"]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": ["sua recompensa!"]
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
             },
             {
               "code": 0,
@@ -760,7 +985,17 @@
             {
               "code": 401,
               "indent": 1,
-              "parameters": ["Tente aprender algo novo."]
+              "parameters": ["O Cristaleão é resistente demais para o seu time"]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": ["no momento. Que tal visitar o Mestre de Habilidades?"]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": ["Novas técnicas podem fazer a diferença."]
             },
             {
               "code": 125,
@@ -883,19 +1118,79 @@
               "parameters": ["3000 \\G foram encontrados!"]
             },
             {
-              "code": 101,
+              "code": 111,
               "indent": 1,
+              "parameters": [1, 110, 0, 2, 0]
+            },
+            {
+              "code": 101,
+              "indent": 2,
               "parameters": ["Portraits menores/Principal2", 3, 0, 2, "Minerador"]
             },
             {
               "code": 401,
-              "indent": 1,
-              "parameters": ["Parabéns! Você venceu!"]
+              "indent": 2,
+              "parameters": ["Criatura eliminada! Faltam mais 2."]
             },
             {
               "code": 401,
+              "indent": 2,
+              "parameters": ["Continue assim!"]
+            },
+            {
+              "code": 411,
               "indent": 1,
-              "parameters": ["Pode Lutar contra outro boss, se quiser"]
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [1, 110, 0, 3, 0]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": ["Portraits menores/Principal2", 3, 0, 2, "Minerador"]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": ["Mais uma eliminada! Falta apenas 1 criatura."]
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": ["Portraits menores/Principal2", 3, 0, 2, "Minerador"]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": ["Todas as criaturas foram eliminadas!"]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": ["Volte ao Chefe Minerador para receber"]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": ["sua recompensa!"]
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
             },
             {
               "code": 0,
@@ -930,12 +1225,17 @@
             {
               "code": 401,
               "indent": 1,
-              "parameters": ["Tente aprender algo novo."]
+              "parameters": ["O Lobo Alpha é rápido e letal. Tente focar em"]
             },
             {
               "code": 401,
               "indent": 1,
-              "parameters": ["Talvez você deva pensar em quem matar primeiro."]
+              "parameters": ["eliminar os aliados dele primeiro — prioridade"]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": ["de alvo é tudo nessa luta."]
             },
             {
               "code": 125,
@@ -1058,19 +1358,79 @@
               "parameters": ["3000 \\G foram encontrados!"]
             },
             {
-              "code": 101,
+              "code": 111,
               "indent": 1,
+              "parameters": [1, 110, 0, 2, 0]
+            },
+            {
+              "code": 101,
+              "indent": 2,
               "parameters": ["Portraits menores/Principal2", 3, 0, 2, "Minerador"]
             },
             {
               "code": 401,
-              "indent": 1,
-              "parameters": ["Parabéns! Você venceu!"]
+              "indent": 2,
+              "parameters": ["Criatura eliminada! Faltam mais 2."]
             },
             {
               "code": 401,
+              "indent": 2,
+              "parameters": ["Continue assim!"]
+            },
+            {
+              "code": 411,
               "indent": 1,
-              "parameters": ["Pode Lutar contra outro boss, se quiser"]
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [1, 110, 0, 3, 0]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": ["Portraits menores/Principal2", 3, 0, 2, "Minerador"]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": ["Mais uma eliminada! Falta apenas 1 criatura."]
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": ["Portraits menores/Principal2", 3, 0, 2, "Minerador"]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": ["Todas as criaturas foram eliminadas!"]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": ["Volte ao Chefe Minerador para receber"]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": ["sua recompensa!"]
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
             },
             {
               "code": 0,
@@ -1105,12 +1465,17 @@
             {
               "code": 401,
               "indent": 1,
-              "parameters": ["Talvez uma build nova? Skills de Crowd Control"]
+              "parameters": ["O Pestesporo espalha esporos por todo o time."]
             },
             {
               "code": 401,
               "indent": 1,
-              "parameters": ["quando bem aplicadas, é melhor que muito DPS."]
+              "parameters": ["Skills de Crowd Control, quando bem aplicadas,"]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": ["são mais eficazes que muito DPS puro."]
             },
             {
               "code": 125,
