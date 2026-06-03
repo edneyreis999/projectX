@@ -1516,7 +1516,7 @@
     "repeats": 1,
     "requiredWtypeId1": 0,
     "requiredWtypeId2": 0,
-    "scope": 0,
+    "scope": 11,
     "speed": 0,
     "stypeId": 2,
     "successRate": 100,
