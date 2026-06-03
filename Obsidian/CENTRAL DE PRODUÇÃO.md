@@ -21,8 +21,16 @@
 #### **Outros:**
 - [ ] Jogar releese e anotar dificuldades
 - [ ] Pesquisar mais sobre a história do Paraná e norte do Paraná
+- [ ] Adicionar Versionamento (bunpar: subir versão)
+	- [ ] versão
+	- [ ] autor
+	- [ ] data
 
 
+- [ ] 1.0.0
+- [ ] alteração crítica (2.0.0)
+- [ ] alteração média (1.1.0; 1.2.0) 
+- [ ] alteração mínima (1.0.1; 1.0.2; 1.0.3)
 # **Progresso Geral dos Documentos**
 
 | **Documento**           | **Status**               |
@@ -33,13 +41,13 @@
 | Tom & Vibe              | 🟢 Aprovado              |
 | **WORLDBUILDING**       |                          |
 | Leis                    | 🟢 Aprovado              |
-| Política                | 🔵 Pronto para aprovação |
+| **Política**            | 🟠 Em desenvolvimento    |
 | Economia                | 🟡 Em revisão            |
 | Religião                | 🟢 Aprovado              |
 | Social                  | 🟢 Aprovado              |
 | Geografia/Arquitetura   | 🟠 Em desenvolvimento    |
 | Tecnologia              | 🔵 Pronto para aprovação |
-| Magia                   | 🔵 Pronto para aprovação |
+| **Magia**               | 🟠 Em desenvolvimento    |
 | **ATLAS FOLK**          |                          |
 | Raças e Espácies        | ⚪ Não iniciado           |
 | Protagonistas           | ⚪ Não iniciado           |

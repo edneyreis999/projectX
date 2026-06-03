@@ -3,6 +3,10 @@
 - já tem docs dos locais? posso reaproveitar?
 - fazer destalhes: gildrat
 
+- mapas estão prontos
+	- aproveitar o que tem, revisar e adicionar o que achar necessário (ver se precisa add algo cultural)
+	- ver mapas prontos (essa é a "verdade") e comparar
+
 
 
 

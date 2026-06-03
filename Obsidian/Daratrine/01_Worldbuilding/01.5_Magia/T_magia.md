@@ -7,6 +7,9 @@ tags: [worldbuilding/magia]
 ---
 # Magia em Ekios — v3
 
+Atual: sim
+Repassar juntos
+
 Sumário
 
 - Resumo de 1 Minuto
