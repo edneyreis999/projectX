@@ -240,7 +240,7 @@
         "denominator": 1
       }
     ],
-    "note": "<ATB Field Gauge Face: Bosses, 4>\n\n<TP Mode: Boss>\n\n// [Battle Core Notetags - Animated Sideview Battler]\n<Sideview Battler: LoboAlpha>\n<Sideview Idle Motion: wait>"
+    "note": "<ATB Field Gauge Face: Bosses, 4>\n\n// [Battle Core Notetags - Animated Sideview Battler]\n<Sideview Battler: LoboAlpha>\n<Sideview Idle Motion: wait>"
   },
   {
     "id": 7,
@@ -680,7 +680,7 @@
         "denominator": 1
       }
     ],
-    "note": "<ATB Field Gauge Face: Bosses, 2>\n\n// [Battle Core Notetags - Animated Sideview Battler]\n<Sideview Battler: Cristaleao>\n<Sideview Idle Motion: wait>\n<Fúria Sideview Idle Motion: chant>\n\n<TP Mode: Boss>\n<AI Style: Gambit>\n<AI Level: 100>\n<AI Rating Variance: 0>"
+    "note": "<ATB Field Gauge Face: Bosses, 2>\n\n// [Battle Core Notetags - Animated Sideview Battler]\n<Sideview Battler: Cristaleao>\n<Sideview Idle Motion: wait>\n<Fúria Sideview Idle Motion: chant>\n\n<AI Style: Gambit>\n<AI Level: 100>\n<AI Rating Variance: 0>"
   },
   {
     "id": 18,
@@ -1046,7 +1046,7 @@
         "denominator": 1
       }
     ],
-    "note": "<JS Force Received Element 10 Rate: -1.0>\n<ATB Field Gauge Face: Bosses, 1>\n<TP Mode: Boss>\n\n// [Battle Core Notetags - Animated Sideview Battler]\n<Sideview Idle Motion: wait>\n<Sideview Battler: Pestesporo>"
+    "note": "<JS Force Received Element 10 Rate: -1.0>\n<ATB Field Gauge Face: Bosses, 1>\n\n// [Battle Core Notetags - Animated Sideview Battler]\n<Sideview Idle Motion: wait>\n<Sideview Battler: Pestesporo>"
   },
   {
     "id": 29,
@@ -3009,8 +3009,15 @@
     "params": [999999, 0, 100, 0, 0, 0, 200, 0],
     "actions": [
       {
-        "skillId": 256,
+        "skillId": 255,
         "rating": 5,
+        "conditionType": 0,
+        "conditionParam1": 0,
+        "conditionParam2": 0
+      },
+      {
+        "skillId": 256,
+        "rating": 1,
         "conditionType": 0,
         "conditionParam1": 0,
         "conditionParam2": 0
