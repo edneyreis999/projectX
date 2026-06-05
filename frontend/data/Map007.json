@@ -1385,6 +1385,9 @@
             { "code": 655, "indent": 0, "parameters": ["SQSM.ShowDescriptionForQuest(\"fimDeJogo\", 1);"] },
             { "code": 655, "indent": 0, "parameters": ["SQSM.ShowTaskForQuest(\"fimDeJogo\", 1);"] },
             { "code": 655, "indent": 0, "parameters": ["SQSM.SetActiveQuest(\"fimDeJogo\", true);"] },
+            { "code": 122, "indent": 0, "parameters": [100, 100, 0, 4, "\"fimDeJogo\""] },
+            { "code": 357, "indent": 0, "parameters": ["VisuMZ_1_SaveCore", "SaveDescription", "Save: Set Description", { "Text:str": "\\V[100]" }] },
+            { "code": 657, "indent": 0, "parameters": ["Text = \\V[100]"] },
             { "code": 121, "indent": 0, "parameters": [41, 41, 0] },
             { "code": 230, "indent": 0, "parameters": [60] },
             {

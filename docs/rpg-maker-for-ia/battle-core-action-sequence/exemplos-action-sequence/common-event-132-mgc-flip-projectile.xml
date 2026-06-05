@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Action Sequence: [MGC Flip Projectile]
+ID: 132
+Gerado automaticamente a partir de CommonEvents.json
+-->
+<ActionSequenceGuide>
+  <metadata>
+    <guideTitle>[MGC Flip Projectile]</guideTitle>
+    <skillId>132</skillId>
+    <skillName>[MGC Flip Projectile]</skillName>
+    <skillType>ActionSequence</skillType>
+    <generatedAt>2026-04-16T20:13:02.019Z</generatedAt>
+    <validated>true</validated>
+  </metadata>
+
+  <skillContext>
+    <damageFormula>v.skill.damageFormula</damageFormula>
+    <tpCost>v.skill.tpCost</tpCost>
+    <scope>v.skill.scope</scope>
+    <description>Action Sequence para [MGC Flip Projectile]</description>
+    <notetags>
+      <notetag>&lt;Custom Action Sequence&gt;</notetag>
+    </notetags>
+  </skillContext>
+
+  <sequenceStructure>
+    <hasSetup>false</hasSetup>
+    <numberOfHits>0</numberOfHits>
+    <targetType>single</targetType>
+    <hasFinish>false</hasFinish>
+  </sequenceStructure>
+  <hits>
+  </hits>
+  <references>
+    <baseCommonEvents>
+      <commonEvent id="132">[MGC Flip Projectile]</commonEvent>
+    </baseCommonEvents>
+    <documentationFiles>
+      <file>frontend/data/CommonEvents.json</file>
+    </documentationFiles>
+  </references>
+
+  <validation>
+    <allParametersValidated>true</allParametersValidated>
+    <validatedAgainst>
+      <commonEvent id="132" validated="true">[MGC Flip Projectile]</commonEvent>
+    </validatedAgainst>
+    <discrepanciesFound>
+    </discrepanciesFound>
+  </validation>
+
+  <filesAffected>
+    <file path="frontend/data/CommonEvents.json" action="reference">
+      <description>Common Event original usado como base</description>
+    </file>
+  </filesAffected>
+
+  <notes>
+    <note>XML gerado automaticamente a partir do Common Event ID 132</note>
+  </notes>
+</ActionSequenceGuide>

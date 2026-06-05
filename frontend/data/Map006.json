@@ -2212,6 +2212,9 @@
             { "code": 655, "indent": 0, "parameters": ["SQSM.SetActiveQuest(\"aSemifinal\", true);"] },
             { "code": 655, "indent": 0, "parameters": ["SQSM.OpenQuestJournal()"] },
             { "code": 122, "indent": 0, "parameters": [29, 29, 0, 0, 2] },
+            { "code": 122, "indent": 0, "parameters": [100, 100, 0, 4, "\"aSemifinal\""] },
+            { "code": 357, "indent": 0, "parameters": ["VisuMZ_1_SaveCore", "SaveDescription", "Save: Set Description", { "Text:str": "\\V[100]" }] },
+            { "code": 657, "indent": 0, "parameters": ["Text = \\V[100]"] },
             { "code": 123, "indent": 0, "parameters": ["A", 0] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
@@ -2504,6 +2507,9 @@
             { "code": 655, "indent": 0, "parameters": ["SQSM.ShowTaskForQuest(\"horaDeCrescer\", 1);"] },
             { "code": 655, "indent": 0, "parameters": ["SQSM.SetActiveQuest(\"horaDeCrescer\", true);"] },
             { "code": 122, "indent": 0, "parameters": [32, 32, 0, 0, 1] },
+            { "code": 122, "indent": 0, "parameters": [100, 100, 0, 4, "\"horaDeCrescer\""] },
+            { "code": 357, "indent": 0, "parameters": ["VisuMZ_1_SaveCore", "SaveDescription", "Save: Set Description", { "Text:str": "\\V[100]" }] },
+            { "code": 657, "indent": 0, "parameters": ["Text = \\V[100]"] },
             { "code": 123, "indent": 0, "parameters": ["B", 0] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],

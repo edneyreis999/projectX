@@ -1263,6 +1263,9 @@
             { "code": 655, "indent": 0, "parameters": ["//iniciar nova task"] },
             { "code": 655, "indent": 0, "parameters": ["SQSM.ShowTaskForQuest(\"primeiroContrato\", 1);"] },
             { "code": 655, "indent": 0, "parameters": ["SQSM.ShowDescriptionForQuest(\"primeiroContrato\", 1);"] },
+            { "code": 122, "indent": 0, "parameters": [100, 100, 0, 4, "\"primeiroContrato\""] },
+            { "code": 357, "indent": 0, "parameters": ["VisuMZ_1_SaveCore", "SaveDescription", "Save: Set Description", { "Text:str": "\\V[100]" }] },
+            { "code": 657, "indent": 0, "parameters": ["Text = \\V[100]"] },
             { "code": 222, "indent": 0, "parameters": [] },
             { "code": 123, "indent": 0, "parameters": ["A", 0] },
             { "code": 0, "indent": 0, "parameters": [] }

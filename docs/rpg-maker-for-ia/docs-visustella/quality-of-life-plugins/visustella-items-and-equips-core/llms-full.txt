@@ -1,0 +1,122 @@
+SUMARIO: Items & Equips Core VisuStella MZ
+===========================================
+
+Plugin Tier 1 para RPG Maker MZ que melhora as cenas de Item, Equip e Shop.
+16 plugins de extensao dependem deste plugin.
+
+DESCRICAO DOS DOCUMENTOS
+=========================
+
+conceitos/visao-geral.md
+  Dados do plugin (tier, requisitos, tipo), proposito, funcionalidades principais
+  e lista completa dos 16 plugins de extensao.
+
+conceitos/equipment-type-handling.md
+  Mudanca fundamental no sistema de equipamentos: slots por classe (nao universal),
+  tipos com mesmo nome = mesmo tipo, comportamento atualizado do Change Equip.
+
+conceitos/shop-status-window.md
+  Transformacao do Status Window da Shop Scene: dados exibidos para skills/itens/
+  weapons/armors, tres estilos de exibicao (Compare, Classic, Double).
+
+conceitos/modern-controls.md
+  Compatibilidade com Core Engine Modern Controls: mudancas nos controles das
+  cenas Item, Equip e Shop quando habilitado.
+
+notetags/gerais.md
+  Notetags gerais: Max, Color, Category/Categories, Conserve, ID Sort Priority.
+  Aplicam-se a Items, Weapons e Armors.
+
+notetags/item-accessibility.md
+  Controle de quando itens podem ser usados via switches (Enable/Disable Switches
+  com variantes All/Any) e JavaScript (JS Item Enable).
+
+notetags/equipment.md
+  Notetags de equipamento: Equip Slots (class), parametros base, copy/type limits,
+  artifacts (Party/Troop), class-restricted, equip requirements (param, skill, switch),
+  Added ETypes, cursed equipment e purify transform.
+
+notetags/status-window.md
+  Customizacao do Status Window: Status Info (override), Custom Status Info (adicionar),
+  Status Style (Compare/Classic/Double), Custom Status Parameters,
+  Shop Picture (imagem, camada, dimensoes, alinhamento, posicao, offset, opacidade).
+
+notetags/shop-menu.md
+  Controle da Shop Menu: Price override, Can/Cannot Sell, Sell Price,
+  Show/Hide Shop Switches, Cannot Sell Switches, Buy/Sell Turn On/Off Switches.
+
+notetags/javascript-notetags.md
+  Notetags JavaScript avancadas: JS Parameters (equipment), JS Item Enable,
+  JS Buy Price, JS Sell Price. Aviso sobre loop infinito com parametros totais.
+
+comandos/actor-commands.md
+  Comandos de plugin para atores: Change Equip Slots (forca slots, persiste),
+  Reset Equip Slots (volta ao base da classe).
+
+comandos/purify-commands.md
+  Comandos de purificacao: Purify Target Actor(s), Purify Whole Party.
+  Nao pode ser usado em batalha. Comportamento com/sem Purify Transform.
+
+comandos/shop-commands.md
+  Shop: Advanced - alternativa ao Shop Processing do editor com ID ranges,
+  blacklist/whitelist por categorias. Nao permite precos especificos por evento.
+
+parametros/item-menu.md
+  Configuracoes do Item Menu: layout, colunas, quantidade maxima, status window,
+  button assist.
+
+parametros/item-categories.md
+  Configuracao de categorias: tipos (AllItems, WType, Category, etc.),
+  icon, visibility switch, sort, style (Text/Icon/Auto), vocabulary.
+
+parametros/new-labels.md
+  Marcador NEW! para itens recentes: icon, texto, cor, fonte, fade, offset.
+
+parametros/equip-menu.md
+  Configuracoes do Equip Menu: layout, command window (Equip/Optimize/Clear),
+  remove equip, rulings (adjust HP/MP, non-removable/non-optimized types).
+
+parametros/shop-menu.md
+  Configuracoes do Shop Menu: layout, switches (buy/sell), command window,
+  prices (sell rate, JS buy/sell), button assist.
+
+parametros/shop-status-window.md
+  Configuracoes do Shop Status Window: data style (Compare/Classic/Double),
+  equipment data, item data, vocabulary. Nota sobre Battle Core damage labels.
+
+referencia/compatibilidade.md
+  Compatibilidade com Battle Core (damage multiplier vocabulary),
+  Weapon Swap System (1 weapon slot max, no cursed weapons),
+  Core Engine (modern controls, X/S params, cursed popup).
+
+referencia/extensao-plugins.md
+  Lista dos 16 plugins de extensao organizados por categoria:
+  Battle Systems (4), Equipment Systems (3), Item Systems (4), Shop Systems (5).
+
+referencia/glossario.md
+  Termos do plugin (EType, Artifact, Cursed, etc.), abreviacoes de parametros
+  base (MaxHP-LUK), X-Parameters (HIT-TRG), S-Parameters (TGR-EXR).
+
+RELACAO ENTRE AREAS
+====================
+
+conceitos/ ← Base teorica do que o plugin muda
+    ↓
+notetags/ ← Como customizar via notetags (usa conceitos como contexto)
+    ↓
+comandos/ ← Acoes executaveis via eventos (usa notetags)
+    ↓
+parametros/ ← Configuracao fina de cada cena (referencia notetags)
+    ↓
+referencia/ ← Informacoes transversais (compatibilidade, termos)
+
+ORDEM DE LEITURA RECOMENDADA
+==============================
+
+1. conceitos/visao-geral.md
+2. conceitos/equipment-type-handling.md
+3. notetags/equipment.md
+4. notetags/status-window.md
+5. notetags/shop-menu.md
+6. parametros/ (conforme necessidade especifica)
+7. referencia/glossario.md (consulta rapida)

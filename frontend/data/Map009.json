@@ -1245,9 +1245,9 @@
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 78,
+            "variableId": 61,
             "variableValid": true,
-            "variableValue": 0
+            "variableValue": 1
           },
           "directionFix": false,
           "image": { "characterIndex": 4, "characterName": "People2", "direction": 2, "pattern": 0, "tileId": 0 },
@@ -1649,7 +1649,7 @@
     null,
     null,
     {
-      "id": 16,
+      "id": 21,
       "name": "Teleporte (Campo de Futebol Rúnico)",
       "note": "",
       "pages": [
@@ -1720,7 +1720,7 @@
       "y": 17
     },
     {
-      "id": 17,
+      "id": 22,
       "name": "Teleporte (Campo de Futebol Rúnico)",
       "note": "",
       "pages": [

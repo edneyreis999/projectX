@@ -1,216 +1,52 @@
-# CLAUDE.md
+# Sobre o Projeto
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Daratrine - A Origem e um RPG em desenvolvimento no RPG Maker MZ com combate turn-based tatico (ATB). O projeto usa plugins do VisuStella (Battle Core, ATB, Skills & States Core, TP System, State Tooltips) como base do combate, TypeScript com Clean Architecture para logica de negocio, e plugins customizados em JS. Sistema de combate estruturado em 3 eixos: Efeito (Battle Core), Tempo (ATB) e Recurso (TP System). Quatro personagens jogaveis (Filena, Kilin, Mhordred, Thorin) com identidades mecanicas distintas e sinergias de time.
 
-## Project Overview
+# Estrutura de Pastas
 
-This is an RPG Maker MZ project called "Daratrine - A Origem" with a custom plugin system and clean architecture implementation. The project combines traditional RPG Maker functionality with modern JavaScript development practices, including TypeScript support, testing, and clean code principles.
+## projectX/scripts
 
-## Development Commands
+Scripts auxiliares para analise de mapa, conversao de common events para XML, busca de variaveis/switches livres e deteccao de assets nao utilizados. Detalhes em `scripts/CLAUDE.md` (futuro).
 
-### Essential Commands
+## projectX/Obsidian
 
-```bash
-# Run tests
-npm test
+Base de conhecimento narrativa e worldbuilding do universo de Daratrine. Contem anotacoes gerais, lore e imagens de referencia. Detalhes em `Obsidian/CLAUDE.md` (futuro).
 
-# Lint JavaScript/TypeScript files
-npm run lint
-npm run lint:check  # Check without fixing
+## projectX/frontend
 
-# Format code
-npm run format          # Format plugins JS/TS files
-npm run format:json     # Format JSON data files
+Codigo-fonte do jogo em RPG Maker MZ. TypeScript (Clean Architecture: domain, application, dto, adapters, infrastructure), plugins JS compilados, testes Jest, dados JSON do jogo e assets. Detalhes em `frontend/CLAUDE.md` (futuro).
 
-# Debug the game in NW.js
-npm run debug
+## projectX/docs
 
-# Git workflow with conventional commits
-npm run commit
-```
+Documentacao de design: GDD com diretrizes de combate, balanceamento e design de skills; definicoes de quests; e documentacao de integracao RPG Maker MZ para IAs. Detalhes em `docs/CLAUDE.md` (futuro).
 
-### Testing
+# Configuracoes Globais dos Plugins VisuStella
 
-- Tests are located in `frontend/__tests__/`
-- Uses Jest with SWC for fast TypeScript compilation
-- Coverage reports generated in `../coverage/`
-- Run single test: `npm test -- --testNamePattern="test name"`
+Configuracoes que afetam todo o sistema de combate e devem ser consideradas em decisoes de design:
 
-## Architecture
+- **Damage Style: MOBA** (BattleCore) - Formula: `formula * ATK * (100 / (100 + DEF))`. O campo "formula" do RPG Maker funciona como multiplicador
+- **Critical Base Multiplier: 2.0** (BattleCore) - Modificavel via notetags `<MODIFY CRITICAL MULTIPLIER>`, `<ALWAYS CRITICAL>`
+- **Guard: 50% reducao** (BattleCore) - Bypassavel com notetag `<UNBLOCKABLE>`
+- **Buff/Debuff: max 2 stacks, 25% por stack** (SkillsStatesCore) - Cada stack de buff/debuff altera o parametro em 25%
+- **ATB Speed: `sqrt(agi) + 1`** (BattleSystemATB) - Determina velocidade de enchimento do gauge
+- **Cast Time: `sqrt(|speed|) / speed`** (BattleSystemATB) - Skills com speed negativo tem cast time proporcional
+- **Stuns resetam o gauge ATB** (BattleSystemATB)
+- **TP Modes por personagem** (EnhancedTpSystem): Momentum (Filena), Guarda (Kilin), Furia (Mhordred), Foco (Thorin), Boss (inimigos). Cada modo define MaxTP, TCR, Preserve ON/OFF, Regen e formulas de geracao
 
-### Directory Structure
+# Documentacao de Referencia
 
-```
-frontend/
-├── typescript/          # TypeScript source code (Clean Architecture)
-│   ├── domain/         # Domain Layer - Business logic
-│   │   └── MinaKravensDomain.ts    # Mining quest business logic
-│   ├── application/    # Application Layer - Use cases
-│   │   └── MineracaoUseCase.ts     # Mining use cases
-│   ├── dto/            # Data Transfer Objects
-│   │   ├── MineracaoRequestDTO.ts  # Mining request interface
-│   │   └── MineracaoResponseDTO.ts # Mining response interface
-│   ├── adapters/       # Adapter Layer - External interfaces
-│   ├── infrastructure/ # Infrastructure Layer - External services
-│   ├── libs/           # Shared libraries
-│   ├── plugins/        # TypeScript plugins
-│   └── types/          # Manual type definitions
-├── js/                 # Compiled JavaScript output
-│   ├── domain/         # Generated .js and .d.ts files
-│   ├── application/    # Generated .js and .d.ts files
-│   ├── dto/            # Generated .js and .d.ts files
-│   ├── adapters/       # Adapter implementations
-│   ├── plugins/        # RPG Maker MZ plugins (JS only)
-│   │   └── Coreto_*.js # Battle delay system plugins
-│   └── libs/           # Third-party libraries
-├── __tests__/          # Test files
-│   ├── typescript/     # TypeScript layer tests
-│   │   ├── domain/     # Domain layer tests
-│   │   ├── application/ # Application layer tests
-│   │   └── dto/        # DTO tests
-│   └── plugins/        # Plugin tests (JS)
-├── data/               # RPG Maker game data (JSON files)
-├── save/               # Game save files
-└── package.json        # Game runtime configuration
-```
+- `docs/GDD/6-combate/FUNDAMENTOS-COMBAT-SYSTEM.md` - Principios do sistema de combate: filosofia, identidade dos personagens, loop central, balanceamento macro e design de inimigos
+- `docs/GDD/6-combate/DIRETRIZES-DESIGN-COMBAT-SYSTEM.md` - Diretrizes praticas para criacao e balanceamento de skills, kits de personagem e sinergias
+- `docs/GDD/6-combate/CLASSIFICACAO-MODIFICADORES.md` - Sistema de score numerico para classificacao e balanceamento de modificadores de skills nos 3 eixos do combate
 
-### Plugin System Architecture
+# Alteração na pasta `frontend/data`
 
-#### Clean Architecture Implementation
+- Sempre dar prefencia por notetags VisuStella ou Coreto.
+- Procurar em `docs/rpg-maker-for-ia` se já existe algum plugin VisuStella que resolve o problema.
 
-The codebase follows Clean Architecture principles:
+# Regras universais
 
-- **Domain Layer**: Pure business logic (`frontend/typescript/domain/`)
-- **Application Layer**: Use cases and orchestration (`frontend/typescript/application/`)
-- **DTO Layer**: Data transfer objects and interfaces (`frontend/typescript/dto/`)
-- **Adapter Layer**: External service interfaces (`frontend/typescript/adapters/`)
-- **Infrastructure Layer**: External service implementations (`frontend/typescript/infrastructure/`)
-- **Plugins**: RPG Maker specific implementations (`frontend/js/plugins/`)
-
-#### RPG Maker MZ Plugin Structure
-
-Plugins follow standard RPG Maker MZ conventions:
-
-- Plugin header with `@target MZ` and parameters
-- Immediate function execution `(() => { ... })()`
-- Parameter parsing: `PluginManager.parameters(pluginName)`
-- Module exports for browser/Node.js compatibility
-
-#### Battle Delay System
-
-Multi-module plugin system with shared state:
-
-- `Coreto_Battle_Delay.js` - Core system and parameters
-- `Coreto_Battle_Delay_State.js` - Shared state management  
-- `Coreto_Battle_Delay_Accumulate.js` - Battle accumulation logic
-- `Coreto_Battle_Delay_Execute.js` - Battle execution logic
-
-### Data Management
-
-- Game data stored in `frontend/data/` as JSON files
-- Character Generator exports in `Character Generator/Exports/`
-- Localization support in `frontend/localization/`
-
-## Code Quality
-
-### Linting & Formatting
-
-- ESLint with TypeScript support configured in `.eslintrc.cjs`
-- Prettier formatting with `.prettierrc`
-- Husky pre-commit hooks ensure code quality
-- Lint-staged runs on modified files only
-
-### Commitizen Integration
-
-- Uses conventional commits with `@commitlint/cz-commitlint`
-- Configuration in `commitlint.config.ts`
-- Run `npm run commit` for guided commit creation
-
-### TypeScript Configuration
-
-- **Source Directory**: `frontend/typescript/` (TypeScript source files)
-- **Output Directory**: `frontend/js/` (Compiled JavaScript and declaration files)
-- **Target**: ES2020 with ESNext modules for modern compatibility
-- **Incremental compilation**: Enabled with `.tsbuildinfo` caching
-- **Build command**: `npm run build:types`
-- **Watch mode**: `npm run watch:types`
-
-#### Import Aliases
-
-Path aliases are configured for clean imports:
-
-- `@domain/*` → `frontend/typescript/domain/*`
-- `@application/*` → `frontend/typescript/application/*`
-- `@dto/*` → `frontend/typescript/dto/*`
-- `@libs/*` → `frontend/typescript/libs/*`
-- `@adapters/*` → `frontend/typescript/adapters/*`
-- `@infra/*` → `frontend/typescript/infrastructure/*`
-- `@plugins/*` → `frontend/typescript/plugins/*`
-
-#### Build Output
-
-- TypeScript files in `frontend/typescript/` compile to JavaScript in `frontend/js/`
-- Declaration files (`.d.ts`) are generated alongside JavaScript files
-- Runtime loads only from `frontend/js/` - never directly from `frontend/typescript/`
-
-## Testing Strategy
-
-### Test Location Patterns
-
-Jest is configured to find tests in:
-
-- `frontend/__tests__/**/*.[jt]s?(x)`
-- `frontend/**/?(*.)+(spec|test).[tj]s?(x)`
-
-### TypeScript Layer Testing
-
-Clean Architecture layers are tested separately from RPG Maker runtime:
-
-- **Domain tests**: `frontend/__tests__/typescript/domain/` - Pure business logic tests
-- **Application tests**: `frontend/__tests__/typescript/application/` - Use case and orchestration tests
-- **DTO tests**: `frontend/__tests__/typescript/dto/` - Data contract validation tests
-- Tests import directly from TypeScript source using aliases (`@domain/*`, `@application/*`, etc.)
-- Mock adapters for external dependencies
-- Coverage includes both TypeScript source and generated JavaScript
-
-## Development Workflow
-
-### Plugin Development
-
-1. Create new plugin in `frontend/js/plugins/`
-2. Follow RPG Maker MZ plugin header format
-3. Use TypeScript-compatible syntax
-4. Add unit tests for business logic
-5. Run `npm run lint` and `npm run format` before committing
-
-### Quest/Domain Development  
-
-1. Implement business logic in `frontend/js/domain/`
-2. Write comprehensive tests in `frontend/__tests__/`
-3. Document complex business rules in code comments
-
-### Game Data Modifications
-
-- JSON files in `frontend/data/` are auto-formatted with Prettier
-- System.json in root directory also formatted
-- Use RPG Maker MZ editor for major structural changes
-
-## Important Notes
-
-### RPG Maker MZ Compatibility
-
-- Plugins must be compatible with NW.js runtime
-- Global variables available: `PluginManager`, `$dataSystem`, etc.
-- Use browser/Node.js compatible module exports
-
-### Clean Architecture Principles
-
-- Domain layer has no external dependencies
-- Adapters handle framework-specific code
-- Business logic is testable in isolation
-
-### Development Tools
-
-- NW.js for game runtime and debugging
-- Docker support available (`.docker/`, `Dockerfile`)
-- VS Code configuration in `.vscode/`
+- Ao concluir uma task, exiba no terminal um guia breve de QA manual, com no máximo 500 tokens, explicando como testar a atualização. Só faça o commit após o usuário testar e aprovar.
+- Quando uma tarefa for concluída com sucesso ou o usuário confirmar que uma implementação funcionou, ofereça enviar um dashboard com os aprendizados da sessão para que ele escolha quais virarão post-mortem. Para os itens escolhidos, use sequential thinking e /post-mortem para criar os post-mortems.
+- Sempre que for adicionar novos objetos nos JSONS de frontend/data, confirmar com usuario os ids que vão ser ocupados.
+- SEMPRE invocar a skill `git-commit-helper` antes de criar qualquer commit. Nunca commitar direto.

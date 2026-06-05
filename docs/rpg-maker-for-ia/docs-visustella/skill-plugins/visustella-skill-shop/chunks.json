@@ -1,0 +1,86 @@
+[
+  {
+    "id": "skill-shop-visao-geral",
+    "title": "Visão Geral do Skill Shop",
+    "path": "conceitos/visao-geral.md",
+    "section": "conceitos",
+    "breadcrumbs": ["VisuStella Skill Shop", "Conceitos", "Visão Geral"],
+    "summary": "Introdução ao plugin VisuStella Skill Shop. Features: loja de skills, custo customizado, requisitos de classe/nível/skill/switch, shops diferentes por evento, desconto, moeda extendida. Tier 4, requer RPG Maker MZ.",
+    "keywords": ["skill shop", "loja de habilidades", "tier 4", "features", "requisitos", "compatibilidade", "Visual Gold Display"],
+    "content": "Plugin de loja de habilidades para RPG Maker MZ. Jogadores compram skills com gold para ensinar ao party. Suporta requisitos de classe, nível, skills prévias, switches, desconto por evento e moeda extendida via MoreCurrencies. Tier 4.",
+    "related_topics": ["skill-shop-notetags", "skill-shop-commands", "skill-shop-config"],
+    "source_ref": "planos/029-skill-shop/doc.md#L1-L39"
+  },
+  {
+    "id": "skill-shop-notetags-custo",
+    "title": "Notetags de Custo",
+    "path": "notetags/skill-shop-notetags.md",
+    "section": "notetags",
+    "breadcrumbs": ["VisuStella Skill Shop", "Notetags", "Custo"],
+    "summary": "Notetags para definir custo de skills na loja: <Skill Shop Cost: x> para gold, <Item/Weapon/Armor/Variable id Learn Cost: x> para moeda extendida (requer MoreCurrencies).",
+    "keywords": ["cost", "custo", "gold", "moeda extendida", "MoreCurrencies", "item cost", "weapon cost", "armor cost", "variable cost"],
+    "content": "<Skill Shop Cost: x> define custo em gold. <Item/Weapon/Armor/Variable id Learn Cost: x> permite custo alternativo com itens/armas/armaduras/variáveis. Requer Imported.VisuMZ_2_MoreCurrencies. Múltiplas notetags permitem custos combinados. Sem notetag, usa Default Skill Cost dos parâmetros.",
+    "related_topics": ["skill-shop-config", "skill-shop-commands"],
+    "source_ref": "planos/029-skill-shop/doc.md#L54-L93"
+  },
+  {
+    "id": "skill-shop-notetags-requisitos",
+    "title": "Notetags de Requisitos",
+    "path": "notetags/skill-shop-notetags.md",
+    "section": "notetags",
+    "breadcrumbs": ["VisuStella Skill Shop", "Notetags", "Requisitos"],
+    "summary": "Notetags para requisitos de aprendizado: classe (<Skill Shop Require Class>), nível (<Skill Shop Require Level>), skill prévia (<Skill Shop Require Learned Skill>), switch (<Skill Shop Require Switch>). Todas usam AND lógico.",
+    "keywords": ["require", "requisito", "classe", "nível", "level", "learned skill", "switch", "requisitos"],
+    "content": "<Skill Shop Require Class: id/name> — requer classe específica. <Skill Shop Require Level: x> — requer nível mínimo. <Skill Shop Require Learned Skill: id/name> — requer que TODAS as skills listadas estejam aprendidas (AND). <Skill Shop Require Switch: x> — requer que TODAS as switches estejam ON (AND). Variantes singular/plural disponíveis.",
+    "related_topics": ["skill-shop-notetags-custo"],
+    "source_ref": "planos/029-skill-shop/doc.md#L95-L136"
+  },
+  {
+    "id": "skill-shop-commands",
+    "title": "Plugin Commands",
+    "path": "comandos/plugin-commands.md",
+    "section": "comandos",
+    "breadcrumbs": ["VisuStella Skill Shop", "Comandos", "Scene"],
+    "summary": "Comando Scene: Open Skill Shop — abre a loja com Skill IDs selecionados e Discount Rate configurável (suporta JavaScript). Não pode ser usado em batalha.",
+    "keywords": ["plugin command", "open skill shop", "discount rate", "skill ids", "scene"],
+    "content": "Scene: Open Skill Shop — abre a cena de loja. Parâmetros: Skill ID(s) para skills à venda, Discount Rate (código JS, ex: 0.5 para 50% desconto). Apenas no mapa, não em batalha. Acessível via Event Command > Plugin Command.",
+    "related_topics": ["skill-shop-notetags-custo", "skill-shop-config"],
+    "source_ref": "planos/029-skill-shop/doc.md#L139-L168"
+  },
+  {
+    "id": "skill-shop-config",
+    "title": "Configuração Geral",
+    "path": "parametros/configuracao-geral.md",
+    "section": "parametros",
+    "breadcrumbs": ["VisuStella Skill Shop", "Parâmetros", "Configuração Geral"],
+    "summary": "Default Skill Cost (valor padrão quando notetag ausente) e Background Settings (Snapshot Opacity, Background 1 inferior, Background 2 superior).",
+    "keywords": ["default skill cost", "background", "snapshot opacity", "configuração", "parâmetros"],
+    "content": "Default Skill Cost: custo em gold para skills sem <Skill Shop Cost: x>. Background Settings: Snapshot Opacity (opacidade do snapshot), Background 1 (imagem inferior, vazio = sem imagem), Background 2 (imagem superior, vazio = sem imagem).",
+    "related_topics": ["skill-shop-vocabulario", "skill-shop-janelas"],
+    "source_ref": "planos/029-skill-shop/doc.md#L170-L206"
+  },
+  {
+    "id": "skill-shop-vocabulario",
+    "title": "Vocabulário",
+    "path": "parametros/vocabulario.md",
+    "section": "parametros",
+    "breadcrumbs": ["VisuStella Skill Shop", "Parâmetros", "Vocabulário"],
+    "summary": "Textos customizáveis da UI: Command Window (Learn/Exit), Actor List Window (help description com placeholders), Skill List Window (status de requisitos e bloqueios).",
+    "keywords": ["vocabulário", "texto", "UI", "learn text", "exit text", "already learned", "level requirement", "placeholders"],
+    "content": "Command Window: Learn Text/Icon/Help, Exit Text/Icon/Help. Actor List: Help Description com %1=Nome, %2=Nível, %3=Classe, %4=Skill Types; Skill Type Joiner. Skill List: Already Learned, No SType Access (%1=Skill Type Name), Wrong Class (%1=Classe atual), For Class (%1=Classe requerida), Level Requirement (%1=Nível), Learned Skill (%1=Nome, %2=Ícone).",
+    "related_topics": ["skill-shop-janelas", "skill-shop-config"],
+    "source_ref": "planos/029-skill-shop/doc.md#L210-L265"
+  },
+  {
+    "id": "skill-shop-janelas",
+    "title": "Configuração de Janelas",
+    "path": "parametros/janelas.md",
+    "section": "parametros",
+    "breadcrumbs": ["VisuStella Skill Shop", "Parâmetros", "Janelas"],
+    "summary": "5 janelas configuráveis: Help, Gold, Command, Actor List, Skill List. Cada uma com Background Type e JS: X, Y, W, H. Actor List inclui Draw Face/Name/Class.",
+    "keywords": ["janelas", "windows", "background type", "dimensões", "JS X Y W H", "actor list", "face", "command"],
+    "content": "Help Window: Background Type. Gold Window: Background Type + JS:X,Y,W,H. Command Window: Background Type + Style + JS:X,Y,W,H. Actor List Window: Background Type + Draw Face/Name/Class + JS:X,Y,W,H (class omitido se resolução pequena). Skill List Window: Background Type + JS:X,Y,W,H.",
+    "related_topics": ["skill-shop-vocabulario", "skill-shop-config"],
+    "source_ref": "planos/029-skill-shop/doc.md#L269-L322"
+  }
+]

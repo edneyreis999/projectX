@@ -1,0 +1,100 @@
+{
+  "chunks": [
+    {
+      "id": "visustella-life-state-effects-intro",
+      "title": "Introdução ao Life State Effects",
+      "path": "conceitos/introducao.md",
+      "section": "conceitos",
+      "breadcrumbs": ["conceitos", "introducao"],
+      "summary": "Visão geral do plugin Life State Effects para RPG Maker MZ, seus efeitos disponíveis (Auto Life, Curse, Doom, Fragile, Guts, Undead, Death Transformations), requisitos e configuração.",
+      "keywords": ["plugin", "rpg maker mz", "visustella", "life state effects", "tier 3", "battle core", "skills states core"],
+      "content": "Plugin que implementa efeitos mecânicos de estado de vida comuns em JRPGs. Efeitos: Auto Life (revive), Curse (bloqueia recuperação), Doom (morte ao expirar), Fragile (morte instantânea), Guts (sobrevive com 1 HP), Undead (inverte cura/dano), Death Transformations (inimigos se transformam). Requer VisuMZ_1_BattleCore e VisuMZ_1_SkillsStatesCore.",
+      "related_topics": ["conceitos-funcionamento", "notetags-state-only", "notetags-trait-objects"],
+      "source_ref": "docs/rpg-maker-for-ia/docs-visustella/life-state-effects.md"
+    },
+    {
+      "id": "visustella-life-state-effects-funcionamento",
+      "title": "Como Funcionam os Efeitos",
+      "path": "conceitos/funcionamento.md",
+      "section": "conceitos",
+      "breadcrumbs": ["conceitos", "funcionamento"],
+      "summary": "Detalhamento da mecânica de cada efeito: Auto Life revive com %HP, Curse bloqueia recovery, Doom mata ao expirar, Fragile causa morte instantânea, Guts reduz dano fatal a 1 HP, Undead inverte cura/morte, Death Transformations faz inimigos renascerem.",
+      "keywords": ["mecanica", "efeitos", "auto life", "curse", "doom", "fragile", "guts", "undead", "transformations", "integrações"],
+      "content": "Explicação detalhada de como cada efeito funciona, incluindo interações entre efeitos. Auto Life revive com %HP e remove todos os estados Auto Life. Curse bloqueia recuperação de HP/MP/TP. Doom mata quando estado expira naturalmente. Fragile causa morte instantânea com qualquer dano direto. Guts deixa battler com 1 HP (exceto se já tiver 1 HP). Undead inverte cura em dano e morte em cura. Death Transformations faz inimigos se transformarem com sistema de pesos.",
+      "related_topics": ["conceitos-introducao", "notetags-state-only", "notetags-trait-objects", "notetags-enemy-only"],
+      "source_ref": "docs/rpg-maker-for-ia/docs-visustella/life-state-effects.md"
+    },
+    {
+      "id": "visustella-life-state-effects-state-only",
+      "title": "Notetags State-Only Effects",
+      "path": "notetags/state-only.md",
+      "section": "notetags",
+      "breadcrumbs": ["notetags", "state-only"],
+      "summary": "Documentação de notetags exclusivas para States: Auto Life (revive com x%), Doom (mata ao expirar), Extinct (bloqueia revive). Inclui sintaxe, parâmetros, exemplos e notas importantes.",
+      "keywords": ["notetags", "state", "auto life", "doom", "extinct", "sintaxe", "parametros"],
+      "content": "Notetags para States apenas: <Auto Life: x%> revive battler com x% HP ao morrer, removendo todos os estados Auto Life. <Doom> mata battler quando estado expira naturalmente (não por remoção manual). <Extinct> impede reviver enquanto ativo, suprime Auto Life mas não Death Transformations. Comparativo dos efeitos incluído.",
+      "related_topics": ["conceitos-funcionamento", "notetags-trait-objects", "parametros-configuracoes"],
+      "source_ref": "docs/rpg-maker-for-ia/docs-visustella/life-state-effects.md"
+    },
+    {
+      "id": "visustella-life-state-effects-trait-objects",
+      "title": "Notetags Trait-Object Effects",
+      "path": "notetags/trait-objects.md",
+      "section": "notetags",
+      "breadcrumbs": ["notetags", "trait-objects"],
+      "summary": "Documentação de notetags para traits (Actor, Class, Skill, Weapon, Armor, Enemy, State): Curse HP/MP/TP, Fragile, Guts, Undead, Allow Undead Regen. Sintaxe, exemplos e casos de uso.",
+      "keywords": ["notetags", "trait", "actor", "class", "skill", "weapon", "armor", "enemy", "curse", "fragile", "guts", "undead"],
+      "content": "Notetags para trait objects: <Curse HP/MP/TP> bloqueia recuperação do recurso. <Fragile> causa morte instantânea com dano direto. <Guts> reduz dano fatal para 1 HP (exceto se já tiver 1 HP). <Undead> inverte cura em dano, morte em cura, e drain. <Allow Undead Regen> permite regeneração curar Undead em vez de causar dano. Comparativo de efeitos incluído.",
+      "related_topics": ["conceitos-funcionamento", "notetags-state-only", "notetags-enemy-only"],
+      "source_ref": "docs/rpg-maker-for-ia/docs-visustella/life-state-effects.md"
+    },
+    {
+      "id": "visustella-life-state-effects-enemy-only",
+      "title": "Notetags Enemy-Only Effects",
+      "path": "notetags/enemy-only.md",
+      "section": "notetags",
+      "breadcrumbs": ["notetags", "enemy-only"],
+      "summary": "Documentação de notetags exclusivas para Enemies: Death Transform (transforma ao morrer com sistema de pesos), Transform Animation (animação na transformação). Sintaxe, exemplos práticos e interações.",
+      "keywords": ["notetags", "enemy", "death transform", "transform animation", "pesos", "probabilidade", "core engine"],
+      "content": "Notetags para Enemies apenas: <Death Transform> com lista de inimigos e pesos opcionais (ex: Slime: 75, Goblin: 25). Transformação ocorre na morte com HP/MP completos. <Transform Animation: x> toca animação ID x no ALVO da transformação, requer Core Engine. Exemplos práticos de boss com 2 formas, inimigo aleatório, e egg division.",
+      "related_topics": ["conceitos-funcionamento", "notetags-trait-objects", "parametros-configuracoes"],
+      "source_ref": "docs/rpg-maker-for-ia/docs-visustella/life-state-effects.md"
+    },
+    {
+      "id": "visustella-life-state-effects-parametros",
+      "title": "Configurações de Efeitos",
+      "path": "parametros/configuracoes.md",
+      "section": "parametros",
+      "breadcrumbs": ["parametros", "configuracoes"],
+      "summary": "Configuração visual dos efeitos: Animation (ID, mirror, mute - requer Core Engine) e Popups (text, color, flash color, flash duration). Inclui exemplos práticos, cores comuns e dicas de balanceamento.",
+      "keywords": ["parametros", "animation", "popup", "text color", "flash color", "core engine", "configuração visual"],
+      "content": "Configurações para cada efeito: Animation (ID, Mirror, Mute - requer Core Engine) e Popup (Text, Text Color em #rrggbb ou número, Flash Color em [r,g,b,a], Flash Duration em frames). Exemplos para Auto-Life, Curse, Doom, Fragile, Guts, Undead, Transform. Tabela de cores hex e Window Skin colors. Dicas de performance e clarity.",
+      "related_topics": ["referencia-glossario", "referencia-troubleshooting", "notetags-state-only"],
+      "source_ref": "docs/rpg-maker-for-ia/docs-visustella/life-state-effects.md"
+    },
+    {
+      "id": "visustella-life-state-effects-glossario",
+      "title": "Glossário de Termos",
+      "path": "referencia/glossario.md",
+      "section": "referencia",
+      "breadcrumbs": ["referencia", "glossario"],
+      "summary": "Definições de termos gerais (battler, state, trait object, notetag, tier) e específicos do plugin (Auto Life, Curse, Doom, etc.), termo técnicos, acrônimos e comparativo rápido de efeitos.",
+      "keywords": ["glossario", "termos", "definições", "battler", "state", "trait", "hp", "mp", "tp", "acrônimos"],
+      "content": "Glossário completo: Battler (actor/enemy), State (condição temporária), Trait Object (objeto com traits), Notetag (comando especial), Tier (ordem de plugins). Termos específicos: Auto Life, Curse, Doom, Extinct, Fragile, Guts, Undead, Death Transform. Termos técnicos: Direct Action, Instant Death, Drain, Elemental Absorb. Acrônimos: HP, MP, TP, MZ, VisuMZ. Tabela comparativa de efeitos.",
+      "related_topics": ["conceitos-introducao", "conceitos-funcionamento", "referencia-troubleshooting"],
+      "source_ref": "docs/rpg-maker-for-ia/docs-visustella/life-state-effects.md"
+    },
+    {
+      "id": "visustella-life-state-effects-troubleshooting",
+      "title": "Troubleshooting e Solução de Problemas",
+      "path": "referencia/troubleshooting.md",
+      "section": "referencia",
+      "breadcrumbs": ["referencia", "troubleshooting"],
+      "summary": "Solução de problemas comuns: Auto Life não funciona, Doom não mata, Undead não inverte cura, Fragile não funciona, Guts não ativa, Death Transform não ocorre, Animação não toca, Popup não aparece. Inclui debugging tips, conflitos conhecidos e checklist.",
+      "keywords": ["troubleshooting", "problemas", "solução", "debug", "conflitos", "performance", "checklist"],
+      "content": "Soluções para problemas: Auto Life não funciona (ver state ativo, porcentagem, plugin ordem), Doom não mata (confirma expiração natural, conflitos, immortal), Undead não inverte (check aplicação, Allow Undead Regen, ordem de traits), Fragile não funciona (tipo de dano, direct action), Guts não ativa (HP atual, tipo de dano), Death Transform não ocorre (nome exato, notetag location, weights), Animação não toca (Core Engine, Animation ID, location), Popup não aparece (Text, Text Color, Flash Color). Debugging tips com JavaScript. Conflitos conhecidos. Checklist de verificação.",
+      "related_topics": ["referencia-glossario", "parametros-configuracoes", "notetags-state-only"],
+      "source_ref": "docs/rpg-maker-for-ia/docs-visustella/life-state-effects.md"
+    }
+  ]
+}

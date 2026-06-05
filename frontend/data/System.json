@@ -1,10 +1,10 @@
 {
   "advanced": {
     "gameId": 25769331,
-    "screenWidth": 816,
-    "screenHeight": 624,
-    "uiAreaWidth": 816,
-    "uiAreaHeight": 624,
+    "screenWidth": 1280,
+    "screenHeight": 720,
+    "uiAreaWidth": 1280,
+    "uiAreaHeight": 720,
     "numberFontFilename": "mplus-2p-bold-sub.woff",
     "fallbackFonts": "Verdana, sans-serif",
     "fontSize": 26,
@@ -13,44 +13,125 @@
     "windowOpacity": 192,
     "picturesUpperLimit": 100
   },
-  "airship": { "bgm": { "name": "Ship3", "pan": 0, "pitch": 100, "volume": 90 }, "characterIndex": 3, "characterName": "Vehicle", "startMapId": 0, "startX": 0, "startY": 0 },
-  "armorTypes": ["", "Armadura Comum", "Armadura Mágica", "Armadura Leve", "Armadura Pesada", "Escudo Pequeno", "Escudo Grande"],
+  "airship": {
+    "bgm": {
+      "name": "Ship3",
+      "pan": 0,
+      "pitch": 100,
+      "volume": 90
+    },
+    "characterIndex": 3,
+    "characterName": "Vehicle",
+    "startMapId": 0,
+    "startX": 0,
+    "startY": 0
+  },
+  "armorTypes": ["", "Vestimenta", "Armadura Mágica", "Armadura Leve", "Armadura Pesada", "Escudo Pequeno", "Escudo Grande", "Vestimenta"],
   "attackMotions": [
-    { "type": 0, "weaponImageId": 0 },
-    { "type": 1, "weaponImageId": 1 },
-    { "type": 1, "weaponImageId": 2 },
-    { "type": 1, "weaponImageId": 3 },
-    { "type": 1, "weaponImageId": 4 },
-    { "type": 1, "weaponImageId": 5 },
-    { "type": 1, "weaponImageId": 6 },
-    { "type": 2, "weaponImageId": 7 },
-    { "type": 2, "weaponImageId": 0 },
-    { "type": 2, "weaponImageId": 9 },
-    { "type": 0, "weaponImageId": 10 },
-    { "type": 0, "weaponImageId": 11 },
-    { "type": 0, "weaponImageId": 12 },
-    { "type": 2, "weaponImageId": 0 }
+    {
+      "type": 0,
+      "weaponImageId": 0
+    },
+    {
+      "type": 1,
+      "weaponImageId": 1
+    },
+    {
+      "type": 1,
+      "weaponImageId": 2
+    },
+    {
+      "type": 1,
+      "weaponImageId": 3
+    },
+    {
+      "type": 1,
+      "weaponImageId": 0
+    },
+    {
+      "type": 1,
+      "weaponImageId": 5
+    },
+    {
+      "type": 1,
+      "weaponImageId": 6
+    },
+    {
+      "type": 2,
+      "weaponImageId": 7
+    },
+    {
+      "type": 2,
+      "weaponImageId": 5
+    },
+    {
+      "type": 2,
+      "weaponImageId": 9
+    },
+    {
+      "type": 0,
+      "weaponImageId": 10
+    },
+    {
+      "type": 0,
+      "weaponImageId": 11
+    },
+    {
+      "type": 0,
+      "weaponImageId": 12
+    },
+    {
+      "type": 1,
+      "weaponImageId": 0
+    }
   ],
-  "battleBgm": { "name": "Battle1", "pan": 0, "pitch": 100, "volume": 90 },
+  "battleBgm": {
+    "name": "Battle1",
+    "pan": 0,
+    "pitch": 100,
+    "volume": 90
+  },
   "battleback1Name": "Road1",
   "battleback2Name": "Town4",
   "battlerHue": 0,
   "battlerName": "Hi_monster",
   "battleSystem": 1,
-  "boat": { "bgm": { "name": "Ship1", "pan": 0, "pitch": 100, "volume": 90 }, "characterIndex": 0, "characterName": "Vehicle", "startMapId": 0, "startX": 0, "startY": 0 },
+  "boat": {
+    "bgm": {
+      "name": "Ship1",
+      "pan": 0,
+      "pitch": 100,
+      "volume": 90
+    },
+    "characterIndex": 0,
+    "characterName": "Vehicle",
+    "startMapId": 0,
+    "startX": 0,
+    "startY": 0
+  },
   "currencyUnit": "Ludos",
-  "defeatMe": { "name": "Defeat1", "pan": 0, "pitch": 100, "volume": 90 },
-  "editMapId": 56,
-  "elements": ["", "Físico", "Fogo", "Gelo", "Trovão", "Água", "Terra", "Vento", "Luz", "Trevas"],
+  "defeatMe": {
+    "name": "Defeat1",
+    "pan": 0,
+    "pitch": 100,
+    "volume": 90
+  },
+  "editMapId": 57,
+  "elements": ["", "Físico", "Fogo", "Gelo", "Trovão", "Água", "Terra", "Vento", "Luz", "Trevas", "Veneno"],
   "equipTypes": ["", "Arma", "Escudo", "Cabeça", "Corpo", "Acessório"],
   "gameTitle": "Daratrine - A Origem",
-  "gameoverMe": { "name": "Gameover1", "pan": 0, "pitch": 100, "volume": 90 },
+  "gameoverMe": {
+    "name": "Gameover1",
+    "pan": 0,
+    "pitch": 100,
+    "volume": 90
+  },
   "itemCategories": [false, false, false, true],
   "locale": "pt_BR",
   "magicSkills": [1],
   "menuCommands": [true, true, true, false, false, true],
   "optAutosave": true,
-  "optDisplayTp": false,
+  "optDisplayTp": true,
   "optDrawTitle": true,
   "optExtraExp": false,
   "optFloorDeath": false,
@@ -59,38 +140,170 @@
   "optSideView": true,
   "optSlipDeath": false,
   "optTransparent": false,
-  "partyMembers": [3],
-  "ship": { "bgm": { "name": "Ship2", "pan": 0, "pitch": 100, "volume": 90 }, "characterIndex": 1, "characterName": "Vehicle", "startMapId": 0, "startX": 0, "startY": 0 },
+  "partyMembers": [3, 4, 5, 6],
+  "ship": {
+    "bgm": {
+      "name": "Ship2",
+      "pan": 0,
+      "pitch": 100,
+      "volume": 90
+    },
+    "characterIndex": 1,
+    "characterName": "Vehicle",
+    "startMapId": 0,
+    "startX": 0,
+    "startY": 0
+  },
   "skillTypes": ["", "Mágica", "Especial"],
   "sounds": [
-    { "name": "Cursor3", "pan": 0, "pitch": 100, "volume": 90 },
-    { "name": "Decision2", "pan": 0, "pitch": 100, "volume": 90 },
-    { "name": "Cancel2", "pan": 0, "pitch": 100, "volume": 90 },
-    { "name": "Buzzer1", "pan": 0, "pitch": 100, "volume": 90 },
-    { "name": "Equip1", "pan": 0, "pitch": 100, "volume": 90 },
-    { "name": "Save2", "pan": 0, "pitch": 100, "volume": 90 },
-    { "name": "Load2", "pan": 0, "pitch": 100, "volume": 90 },
-    { "name": "Battle1", "pan": 0, "pitch": 100, "volume": 90 },
-    { "name": "Run", "pan": 0, "pitch": 100, "volume": 90 },
-    { "name": "Attack3", "pan": 0, "pitch": 100, "volume": 90 },
-    { "name": "Damage4", "pan": 0, "pitch": 100, "volume": 90 },
-    { "name": "Collapse1", "pan": 0, "pitch": 100, "volume": 90 },
-    { "name": "Collapse2", "pan": 0, "pitch": 100, "volume": 90 },
-    { "name": "Collapse3", "pan": 0, "pitch": 100, "volume": 90 },
-    { "name": "Damage5", "pan": 0, "pitch": 100, "volume": 90 },
-    { "name": "Collapse4", "pan": 0, "pitch": 100, "volume": 90 },
-    { "name": "Recovery", "pan": 0, "pitch": 100, "volume": 90 },
-    { "name": "Miss", "pan": 0, "pitch": 100, "volume": 90 },
-    { "name": "Evasion1", "pan": 0, "pitch": 100, "volume": 90 },
-    { "name": "Evasion2", "pan": 0, "pitch": 100, "volume": 90 },
-    { "name": "Reflection", "pan": 0, "pitch": 100, "volume": 90 },
-    { "name": "Shop1", "pan": 0, "pitch": 100, "volume": 90 },
-    { "name": "Item3", "pan": 0, "pitch": 100, "volume": 90 },
-    { "name": "Item3", "pan": 0, "pitch": 100, "volume": 90 }
+    {
+      "name": "Cursor3",
+      "pan": 0,
+      "pitch": 100,
+      "volume": 90
+    },
+    {
+      "name": "Decision2",
+      "pan": 0,
+      "pitch": 100,
+      "volume": 90
+    },
+    {
+      "name": "Cancel2",
+      "pan": 0,
+      "pitch": 100,
+      "volume": 90
+    },
+    {
+      "name": "Buzzer1",
+      "pan": 0,
+      "pitch": 100,
+      "volume": 90
+    },
+    {
+      "name": "Equip1",
+      "pan": 0,
+      "pitch": 100,
+      "volume": 90
+    },
+    {
+      "name": "Save2",
+      "pan": 0,
+      "pitch": 100,
+      "volume": 90
+    },
+    {
+      "name": "Load2",
+      "pan": 0,
+      "pitch": 100,
+      "volume": 90
+    },
+    {
+      "name": "Battle1",
+      "pan": 0,
+      "pitch": 100,
+      "volume": 90
+    },
+    {
+      "name": "Run",
+      "pan": 0,
+      "pitch": 100,
+      "volume": 90
+    },
+    {
+      "name": "Attack3",
+      "pan": 0,
+      "pitch": 100,
+      "volume": 90
+    },
+    {
+      "name": "Damage4",
+      "pan": 0,
+      "pitch": 100,
+      "volume": 90
+    },
+    {
+      "name": "Collapse1",
+      "pan": 0,
+      "pitch": 100,
+      "volume": 90
+    },
+    {
+      "name": "Collapse2",
+      "pan": 0,
+      "pitch": 100,
+      "volume": 90
+    },
+    {
+      "name": "Collapse3",
+      "pan": 0,
+      "pitch": 100,
+      "volume": 90
+    },
+    {
+      "name": "Damage5",
+      "pan": 0,
+      "pitch": 100,
+      "volume": 90
+    },
+    {
+      "name": "Collapse4",
+      "pan": 0,
+      "pitch": 100,
+      "volume": 90
+    },
+    {
+      "name": "Recovery",
+      "pan": 0,
+      "pitch": 100,
+      "volume": 90
+    },
+    {
+      "name": "Miss",
+      "pan": 0,
+      "pitch": 100,
+      "volume": 90
+    },
+    {
+      "name": "Evasion1",
+      "pan": 0,
+      "pitch": 100,
+      "volume": 90
+    },
+    {
+      "name": "Evasion2",
+      "pan": 0,
+      "pitch": 100,
+      "volume": 90
+    },
+    {
+      "name": "Reflection",
+      "pan": 0,
+      "pitch": 100,
+      "volume": 90
+    },
+    {
+      "name": "Shop1",
+      "pan": 0,
+      "pitch": 100,
+      "volume": 90
+    },
+    {
+      "name": "Item3",
+      "pan": 0,
+      "pitch": 100,
+      "volume": 90
+    },
+    {
+      "name": "Item3",
+      "pan": 0,
+      "pitch": 100,
+      "volume": 90
+    }
   ],
-  "startMapId": 5,
-  "startX": 1,
-  "startY": 23,
+  "startMapId": 57,
+  "startX": 20,
+  "startY": 7,
   "switches": [
     "",
     "Jogada segura",
@@ -284,16 +497,41 @@
     }
   },
   "testBattlers": [
-    { "actorId": 3, "level": 1, "equips": [0, 0, 65, 0, 0] },
-    { "actorId": 5, "level": 1, "equips": [7, 0, 0, 20, 0] },
-    { "actorId": 6, "level": 1, "equips": [7, 0, 65, 21, 0] },
-    { "actorId": 7, "level": 1, "equips": [7, 0, 0, 20, 0] }
+    {
+      "actorId": 3,
+      "level": 1,
+      "equips": [0, 0, 65, 0, 0]
+    },
+    {
+      "actorId": 5,
+      "level": 1,
+      "equips": [7, 0, 0, 20, 0]
+    },
+    {
+      "actorId": 6,
+      "level": 1,
+      "equips": [7, 0, 65, 21, 0]
+    },
+    {
+      "actorId": 7,
+      "level": 1,
+      "equips": [7, 0, 0, 20, 0]
+    }
   ],
   "testTroopId": 29,
   "title1Name": "menu-bg",
   "title2Name": "",
-  "titleBgm": { "name": "Theme4", "pan": 0, "pitch": 100, "volume": 90 },
-  "titleCommandWindow": { "background": 0, "offsetX": 0, "offsetY": 0 },
+  "titleBgm": {
+    "name": "Theme4",
+    "pan": 0,
+    "pitch": 100,
+    "volume": 90
+  },
+  "titleCommandWindow": {
+    "background": 0,
+    "offsetX": 0,
+    "offsetY": 0
+  },
   "variables": [
     "",
     "selectedItem",
@@ -399,22 +637,31 @@
     "beat",
     "nome",
     "descricao",
+    "contador_kravens",
     "",
     "",
     "",
     "",
     "",
-    "",
-    ""
+    "Inimigos derrotados(release)"
   ],
-  "versionId": 69119393,
-  "victoryMe": { "name": "Victory1", "pan": 0, "pitch": 100, "volume": 90 },
-  "weaponTypes": ["", "Adaga", "Espada", "Malho", "Machado", "Chicote", "Cajado", "Arco", "Funda", "Arma de Fogo", "Garra", "Luva", "Lança", ""],
+  "versionId": 85799063,
+  "victoryMe": {
+    "name": "Victory1",
+    "pan": 0,
+    "pitch": 100,
+    "volume": 90
+  },
+  "weaponTypes": ["", "Adaga", "Espada", "Malho", "Machado", "Chicote", "Cajado", "Arco", "Funda", "Arma de Fogo", "Garra", "Luva", "Lança", "Martelo"],
   "windowTone": [0, 0, 0, 0],
   "optSplashScreen": false,
   "optMessageSkip": true,
   "tileSize": 48,
-  "editor": { "messageWidth1": 60, "messageWidth2": 47, "jsonFormatLevel": 1 },
+  "editor": {
+    "messageWidth1": 60,
+    "messageWidth2": 47,
+    "jsonFormatLevel": 2
+  },
   "faceSize": 144,
   "iconSize": 32
 }
