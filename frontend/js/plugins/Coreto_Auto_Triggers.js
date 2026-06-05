@@ -84,13 +84,13 @@
  */
 
 (() => {
-  const pluginName = "Coreto_Auto_Triggers";
+  const pluginName = 'Coreto_Auto_Triggers';
   const params = PluginManager.parameters(pluginName);
-  const maxTriggersPerTurn = Number(params["MaxTriggersPerTurn"]) || 5;
-  const debugLogs = params["DebugLogs"] === "true";
+  const maxTriggersPerTurn = Number(params['MaxTriggersPerTurn']) || 5;
+  const debugLogs = params['DebugLogs'] === 'true';
 
   const log = function (...args) {
-    if (debugLogs) console.log("[Coreto Triggers]", ...args);
+    if (debugLogs) console.log('[Coreto Triggers]', ...args);
   };
 
   // -------------------------------------------------------------------------
@@ -121,7 +121,7 @@
     }
 
     if (Object.keys(_triggerCache).length > 0) {
-      log("Parser: carregado");
+      log('Parser: carregado');
     }
   };
 
@@ -150,7 +150,7 @@
     const allSkills = battler.skills ? battler.skills() : [];
 
     for (const skill of allSkills) {
-      const skillId = typeof skill === "object" ? skill.id : skill;
+      const skillId = typeof skill === 'object' ? skill.id : skill;
       const triggers = _triggerCache[skillId];
       if (!triggers) continue;
 
@@ -175,8 +175,7 @@
     const skill = $dataSkills[skillId];
     if (!skill) return false;
 
-    battler._coretoTriggersThisTurn =
-      (battler._coretoTriggersThisTurn || 0) + 1;
+    battler._coretoTriggersThisTurn = (battler._coretoTriggersThisTurn || 0) + 1;
 
     const gainTpMatch = skill.note.match(/<Gain TP:\s*([+\-]?\d+)>/i);
     if (gainTpMatch) {
@@ -184,15 +183,7 @@
       battler.gainTp(tpAmount);
     }
 
-    log(
-      "  SILENT TRIGGERED:",
-      battler.name(),
-      "->",
-      skill.name,
-      "(turno:",
-      battler._coretoTriggersThisTurn,
-      "/" + maxTriggersPerTurn + ")"
-    );
+    log('  SILENT TRIGGERED:', battler.name(), '->', skill.name, '(turno:', battler._coretoTriggersThisTurn, '/' + maxTriggersPerTurn + ')');
     return true;
   };
 
@@ -202,24 +193,15 @@
     const skill = $dataSkills[skillId];
     if (!skill) return false;
     if (!battler.canUse(skill)) {
-      log("  BLOCKED: battler nao pode usar skill", skillId);
+      log('  BLOCKED: battler nao pode usar skill', skillId);
       return false;
     }
 
-    battler._coretoTriggersThisTurn =
-      (battler._coretoTriggersThisTurn || 0) + 1;
+    battler._coretoTriggersThisTurn = (battler._coretoTriggersThisTurn || 0) + 1;
     battler.forceAction(skillId, -1);
     BattleManager.forceAction(battler);
 
-    log(
-      "  TRIGGERED:",
-      battler.name(),
-      "->",
-      skill.name,
-      "(turno:",
-      battler._coretoTriggersThisTurn,
-      "/" + maxTriggersPerTurn + ")"
-    );
+    log('  TRIGGERED:', battler.name(), '->', skill.name, '(turno:', battler._coretoTriggersThisTurn, '/' + maxTriggersPerTurn + ')');
     return true;
   };
 
@@ -240,32 +222,32 @@
   // -------------------------------------------------------------------------
   const dispatchMissTriggers = function (subject, target) {
     // MISS USER - o attacker que errou
-    processTriggersForCondition(subject, "MISS USER");
+    processTriggersForCondition(subject, 'MISS USER');
 
     // MISS TARGET - o target que esquivou
-    processTriggersForCondition(target, "MISS TARGET");
+    processTriggersForCondition(target, 'MISS TARGET');
 
     // MISS ALLY / MISS ENEMY - target em relacao ao subject
     if (target.isActor() === subject.isActor()) {
-      processTriggersForCondition(target, "MISS ALLY");
+      processTriggersForCondition(target, 'MISS ALLY');
     } else {
-      processTriggersForCondition(target, "MISS ENEMY");
+      processTriggersForCondition(target, 'MISS ENEMY');
     }
 
     // MISS FRIENDS - time aliado do subject (todos)
     const friends = subject.friendsUnit().aliveMembers();
     for (const friend of friends) {
-      processTriggersForCondition(friend, "MISS FRIENDS");
+      processTriggersForCondition(friend, 'MISS FRIENDS');
       // MISS FRIENDS ONLY - time aliado exceto o proprio subject
       if (friend !== subject) {
-        processTriggersForCondition(friend, "MISS FRIENDS ONLY");
+        processTriggersForCondition(friend, 'MISS FRIENDS ONLY');
       }
     }
 
     // MISS OPPONENTS - time oposto ao subject
     const opponents = subject.opponentsUnit().aliveMembers();
     for (const opponent of opponents) {
-      processTriggersForCondition(opponent, "MISS OPPONENTS");
+      processTriggersForCondition(opponent, 'MISS OPPONENTS');
     }
   };
 
