@@ -954,13 +954,7 @@ var $plugins =
             "maxIcons": "4",
             "animationWait": "10",
             "throttleFrames": "15",
-            "enableBorder": "true",
-            "borderThickness": "2",
-            "borderRadius": "2",
-            "buffBorderColor": "#4488cc",
-            "debuffBorderColor": "#884444",
-            "positiveStateBorderColor": "#4488cc",
-            "negativeStateBorderColor": "#884444"
+            "BorderSettings:struct": "{\"EnableBorder:eval\":\"true\",\"BorderThickness:num\":\"2\",\"BorderRadius:num\":\"2\",\"BuffBorderColor:str\":\"#4488cc\",\"DebuffBorderColor:str\":\"#884444\",\"PositiveStateBorderColor:str\":\"#4488cc\",\"NegativeStateBorderColor:str\":\"#884444\"}"
         }
     }
 ];

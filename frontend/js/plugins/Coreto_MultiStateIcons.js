@@ -33,51 +33,11 @@
  * @default 15
  * @desc Frames entre checagens de mudanca de states.
  *
- * @param enableBorder
- * @text Enable Border
- * @type boolean
- * @default true
- * @desc Ativa bordas coloridas ao redor dos icones.
- *
- * @param borderThickness
- * @text Border Thickness
- * @type number
- * @min 1
- * @max 6
- * @default 2
- * @desc Espessura da borda em pixels.
- *
- * @param borderRadius
- * @text Border Radius
- * @type number
- * @min 0
- * @max 8
- * @default 2
- * @desc Raio dos cantos arredondados da borda.
- *
- * @param buffBorderColor
- * @text Buff Border Color
- * @type string
- * @default #44cc44
- * @desc Cor da borda para BUFFs.
- *
- * @param debuffBorderColor
- * @text Debuff Border Color
- * @type string
- * @default #cc4444
- * @desc Cor da borda para DEBUFFs.
- *
- * @param positiveStateBorderColor
- * @text Positive State Border Color
- * @type string
- * @default #4488cc
- * @desc Cor da borda para states positivos.
- *
- * @param negativeStateBorderColor
- * @text Negative State Border Color
- * @type string
- * @default #884444
- * @desc Cor da borda para states negativos.
+ * @param BorderSettings:struct
+ * @text Border Settings
+ * @type struct<BorderSettings>
+ * @desc Bordas coloridas ao redor dos icones por categoria.
+ * @default {"EnableBorder:eval":"true","BorderThickness:num":"2","BorderRadius:num":"2","BuffBorderColor:str":"#44cc44","DebuffBorderColor:str":"#cc4444","PositiveStateBorderColor:str":"#4488cc","NegativeStateBorderColor:str":"#884444"}
  *
  * @help
  * ----------------------------------------------------------------------------
@@ -120,14 +80,15 @@
     const ANIMATION_WAIT = Number(P["animationWait"] || 40);
     const THROTTLE_FRAMES = Number(P["throttleFrames"] || 15);
 
-    const ENABLE_BORDER = String(P["enableBorder"] || "true") === "true";
-    const BORDER_THICKNESS = Number(P["borderThickness"] || 2);
-    const BORDER_RADIUS = Number(P["borderRadius"] || 2);
+    const BS = JSON.parse(P["BorderSettings:struct"] || "{}");
+    const ENABLE_BORDER = String(BS["EnableBorder:eval"] || "true") === "true";
+    const BORDER_THICKNESS = Number(BS["BorderThickness:num"] || 2);
+    const BORDER_RADIUS = Number(BS["BorderRadius:num"] || 2);
     const BORDER_COLORS = {
-        BUFF: parseInt(String(P["buffBorderColor"] || "#44cc44").replace("#", ""), 16),
-        DEBUFF: parseInt(String(P["debuffBorderColor"] || "#cc4444").replace("#", ""), 16),
-        POSITIVE_STATE: parseInt(String(P["positiveStateBorderColor"] || "#4488cc").replace("#", ""), 16),
-        NEGATIVE_STATE: parseInt(String(P["negativeStateBorderColor"] || "#884444").replace("#", ""), 16),
+        BUFF: parseInt(String(BS["BuffBorderColor:str"] || "#44cc44").replace("#", ""), 16),
+        DEBUFF: parseInt(String(BS["DebuffBorderColor:str"] || "#cc4444").replace("#", ""), 16),
+        POSITIVE_STATE: parseInt(String(BS["PositiveStateBorderColor:str"] || "#4488cc").replace("#", ""), 16),
+        NEGATIVE_STATE: parseInt(String(BS["NegativeStateBorderColor:str"] || "#884444").replace("#", ""), 16),
     };
 
     // -------------------------------------------------------------------------
@@ -370,3 +331,52 @@
         this.opacity = this._iconIndex > 0 ? 255 : 0;
     };
 })();
+
+/*~struct~BorderSettings:
+ *
+ * @param EnableBorder:eval
+ * @text Enable Border
+ * @type boolean
+ * @default true
+ * @desc Ativa bordas coloridas ao redor dos icones.
+ *
+ * @param BorderThickness:num
+ * @text Border Thickness
+ * @type number
+ * @min 1
+ * @max 6
+ * @default 2
+ * @desc Espessura da borda em pixels.
+ *
+ * @param BorderRadius:num
+ * @text Border Radius
+ * @type number
+ * @min 0
+ * @max 8
+ * @default 2
+ * @desc Raio dos cantos arredondados da borda.
+ *
+ * @param BuffBorderColor:str
+ * @text Buff Border Color
+ * @type string
+ * @default #44cc44
+ * @desc Cor da borda para BUFFs.
+ *
+ * @param DebuffBorderColor:str
+ * @text Debuff Border Color
+ * @type string
+ * @default #cc4444
+ * @desc Cor da borda para DEBUFFs.
+ *
+ * @param PositiveStateBorderColor:str
+ * @text Positive State Border Color
+ * @type string
+ * @default #4488cc
+ * @desc Cor da borda para states positivos.
+ *
+ * @param NegativeStateBorderColor:str
+ * @text Negative State Border Color
+ * @type string
+ * @default #884444
+ * @desc Cor da borda para states negativos.
+ */
