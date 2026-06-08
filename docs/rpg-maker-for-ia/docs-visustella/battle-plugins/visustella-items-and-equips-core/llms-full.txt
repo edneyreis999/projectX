@@ -1,0 +1,76 @@
+Items & Equips Core VisuStella MZ - Guia Completo para LLMs
+============================================================
+
+PLUGIN: Items & Equips Core VisuStella MZ
+TIPO: Core / Quality-of-Life
+TIER: 1 (colocar abaixo de plugins de tier menor)
+REQUER: RPG Maker MZ
+
+SUMARIO
+-------
+Este plugin melhora as cenas de Item, Equipamento e Shop do RPG Maker MZ.
+Features: categorias customizaveis, parametros alem dos limites do editor,
+requisitos de equipamento, itens amaldicoados, precos dinamicos, visibilidade
+condicional no shop, marcador NEW!, Shop Status Window detalhado.
+
+ESTRUTURA DA DOCUMENTACAO
+--------------------------
+
+conceitos/
+  visao-geral.md          - Introducao, features, requisitos, tier
+  equipment-type-handling.md - Mecanica de slots por classe, Change Equip
+  shop-status-window.md   - Shop Status Window melhorado, Modern Controls
+
+notetags/
+  gerais.md               - Max, Color, Category, Conserve, ID Sort Priority
+  item-accessibility.md   - Enable/Disable Switch, JS Item Enable
+  equipment.md            - Equip Slots, params, Copy Limit, Type Limit,
+                            Artifacts, Class Only, Requirements, Added EType,
+                            Cursed, Purify Transform, JS Parameters
+  status-window.md        - Status Info, Custom Status Info, Status Style,
+                            Custom Status Parameters, Shop Picture (completo)
+  shop-menu.md            - Price, Can/Cannot Sell, Sell Price, Show/Hide
+                            Shop Switch, Cannot Sell Switch, Buy/Sell Switches,
+                            JS Buy/Sell Price
+  referencia-rapida.md    - Tabela consolidada de TODAS as notetags
+
+comandos/
+  actor.md                - Change Equip Slots, Reset Equip Slots
+  purify.md               - Purify Target Actor(s), Purify Whole Party
+  shop.md                 - Shop: Advanced (ranges de IDs, blacklist/whitelist)
+
+parametros/
+  item-menu.md            - General Window, List Window, Item Quantity,
+                            Shop Status Window, Button Assist
+  item-categories.md      - Category List (types, icons, switches), Style
+  new-labels.md           - NEW! Labels (icon, text, fade, offset)
+  equip-menu.md           - General, Command Window, Remove Equip, Rulings,
+                            Button Assist
+  shop-menu.md            - General, Switches, Command Window, Prices,
+                            Button Assist
+  shop-status-window.md   - General, Equipment Data (Compare/Classic/Double),
+                            Item Data, Vocabulary
+
+referencia/
+  compatibilidade.md      - Battle Core (damage vocab), Weapon Swap System
+  extension-plugins.md    - 15 plugins de extensao (battle systems, equipment,
+                            shop)
+
+RELACAO ENTRE AREAS
+--------------------
+- conceitos/ e notetags/ estao ligados: cada mecanica tem notetags correspondentes
+- notetags/equipment.md <-> comandos/actor.md e comandos/purify.md
+- notetags/shop-menu.md <-> comandos/shop.md e parametros/shop-menu.md
+- notetags/status-window.md <-> parametros/shop-status-window.md
+- notetags/gerais.md (Category) <-> parametros/item-categories.md
+- referencia/compatibilidade.md afeta uso de notetags/equipment.md (Cursed)
+
+ORDEM DE LEITURA RECOMENDADA
+------------------------------
+1. conceitos/visao-geral.md (entender o plugin)
+2. conceitos/equipment-type-handling.md (mecanica central)
+3. notetags/referencia-rapida.md (referencia de todas as notetags)
+4. notetags/ conforme necessidade por topico
+5. comandos/ para acoes via eventos
+6. parametros/ para configuracao de UI
+7. referencia/ para compatibilidade

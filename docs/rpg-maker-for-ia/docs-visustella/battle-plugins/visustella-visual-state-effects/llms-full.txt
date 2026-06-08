@@ -1,0 +1,67 @@
+VISUAL STATE EFFECTS — VISUSTELLA MZ
+Documento completo otimizado para LLMs
+
+=== SUMÁRIO ===
+
+1. Visão Geral (conceitos/visao-geral.md)
+   - Plugin Tier 3 para efeitos visuais de states/buffs/debuffs
+   - Depende de Core Engine, Battle Core, Skills and States Core
+
+2. Mudanças Core (conceitos/mudancas-core.md)
+   - Sobrescreve State Motion Index e State Overlay Index
+   - Agora exibe motion/overlay do state de maior prioridade corretamente
+
+3. Notetags — States (notetags/states.md)
+   - Popup: <Hide State Popup>, <State Popup> (cor, flash, duração)
+   - Animações: <Add Animation: x>, <Erase Animation: x>, <Repeat Animation: x>, <Repeat Animation Cycle: x>
+   - Overlay: <Custom Overlay: filename> (768x96, 8 frames)
+   - Motion: <State Motion: TYPE>, <State Motion Lock>
+   - Efeitos: <State Tone: r,g,b,gray>, <Visual Opacity: x>, <Visual Rainbow: +x>
+
+4. Notetags — Hover (notetags/hover.md)
+   - <Visual Hover Effect> com Base, Speed, Rate, Death
+   - Usável em Actor, Class, Weapon, Armor, Enemy, State
+
+5. Notetags — Breathing (notetags/breathing.md)
+   - <Visual Breathing Effect> com Speed X/Y, Rate X/Y, HP Link
+   - EXPERIMENTAL — glitches esperados
+   - <No Breathing> para remover
+
+6. Referência Rápida (notetags/referencia-rapida.md)
+   - Cheat sheet de todas as notetags com descrição em uma linha
+
+7. Parâmetros — General (parametros/geral.md)
+   - Toggle de State Overlay e State Icons para actors e enemies
+
+8. Parâmetros — Buff/Debuff (parametros/buffs-debuffs.md)
+   - Popups: formato buff/debuff, cor, flash
+   - Animações: mirror, mute, por parâmetro (MaxHP..LUK)
+
+9. Parâmetros — State Settings (parametros/states-config.md)
+   - Popups: add/erase format, duplicates, battle end
+   - Animações: add/erase mirror/mute, repeating cycle time
+
+10. Parâmetros — Response Popup (parametros/response-popup.md)
+    - Counter, Reflect, Substitute popups (text, icon, color, flash)
+
+11. Glossário (referencia/glossario.md)
+    - Termos técnicos do plugin
+
+12. Performance (referencia/performance.md)
+    - Warnings sobre repeat animations e breathing
+    - Cache com Passive State Conditions
+    - Acúmulo de Visual Opacity com Action Sequences
+
+=== RELAÇÃO ENTRE ÁREAS ===
+
+- Notetags definem O QUÊ acontece visualmente por state
+- Plugin Parameters definem defaults globais (O QUÊ se não houver notetag)
+- Mudanças Core explicam POR QUE o engine se comporta diferente
+- Performance explica LIMITAÇÕES e CUIDADOS
+
+=== FORMATOS COMUNS ===
+
+Cor de texto: #rrggbb ou número (Window Skin)
+Cor de flash: [r, g, b, a] (0-255)
+Duração: em frames (60fps)
+Opacidade: 0-255 ou 0%-100%

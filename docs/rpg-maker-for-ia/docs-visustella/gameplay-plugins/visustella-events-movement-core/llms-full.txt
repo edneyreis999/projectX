@@ -1,0 +1,106 @@
+VisuStella Events & Movement Core - Guia Completo para LLMs
+=============================================================
+
+SUMARIO
+-------
+Este documento descreve a estrutura e conteudo da documentacao catalogada do
+plugin VisuStella Events & Movement Core para RPG Maker MZ (Tier 1).
+
+O plugin expande eventos com novas funcionalidades, movimento 8-directional,
+sprites VS8, switches/variables avancadas, pathfinding, hitbox customizavel,
+sincronizacao de movimento, labels/icones sobre eventos, e sistema de spawn/morph.
+
+RELACAO ENTRE AREAS
+-------------------
+
+1. CONCEITOS (conceitos/)
+   - visao-geral.md: Funcionalidades completas do plugin, plugins de extensao,
+     requisitos. Ponto de entrada para entender o escopo do plugin.
+   - switches-variables.md: 4 tipos de switches/variables avancadas:
+     * <JS> - Executa codigo JavaScript dinamicamente
+     * <Self> - Escopo por evento (Self Switches/Variables ilimitados)
+     * <Map> - Escopo por mapa (Map Switches/Variables)
+     * ((Nome)) - Referencia por string (v1.62+)
+     Tags sao mutuamente exclusivas. Inclui todas as script calls.
+   - sprites-vs8.md: Tags de filename ($, !, !$, [VS8]), layout completo do
+     sprite sheet VS8 (16 blocos de 3 frames), 6 sets de emotes (18 poses),
+     weighted random movement.
+
+2. NOTETAGS (notetags/)
+   - mapas.md: Notetags para mapas - diagonal movement toggle, region control
+     (Allow/Forbid/Dock por tipo), map load common events, save event locations,
+     hide/show player/followers, JavaScript on map load/exit.
+   - eventos.md: Notetags para eventos (maior arquivo de referencia) - activation
+     por regiao/area geometrica/click, movement control (always update, move-only
+     regions, move synch com 8 tipos e delay/opacity), encounter control
+     (half/none areas com script calls, auto-erase), visual (icon, label com
+     range/offset/hue, mirror, scale, shadow, Z-axis custom), hitbox/position
+     (extensao em 4 direcoes, location offset, tile expand), pictures em eventos
+     (filename, type, max size, scale, offset, wait frames), event templates
+     (copy event), e miscellaneous (save location, reset self data, playtest-only,
+     random move weight, step patterns).
+   - paginas.md: Custom page conditions via comment tags - <Page Conditions>
+     com <Conditions Met>, exemplos praticos, comparacao notetag vs comment tag.
+
+3. COMANDOS (comandos/) - Plugin Commands organizados por categoria:
+   - auto-movement.md: Auto Movement Events (toggle)
+   - call-event.md: Call Event Remote Read (executar pagina remota)
+   - dash.md: Dash Enable Toggle
+   - event-icon.md: Event/Player Icon Change (Temporary/Forced), Delete, Restore
+   - event-label.md: Event Label Refresh, Visible
+   - event-location.md: Event Location (Save/Delete/Create), Spawn Event
+     (Spawn At X,Y / Region / Terrain Tag, Despawn por ID/X,Y/Region/Terrain/
+     Everything), Morph Event (Change/Remove)
+   - event-popup.md: Event Popup (Player/Follower/Event/Target Tile) com
+     configuracoes completas de fade, offset, scale, angle, arc. Requer MessageCore.
+   - event-timer.md: Event Timer (7 comandos), Follower Control (4 comandos),
+     Global Switch/Variable (3 comandos), Self Data/Switch/Variable (4 comandos)
+
+4. PARAMETROS (parametros/) - Plugin Parameters organizados por categoria:
+   - configuracao-geral.md: Event Template Settings (preloaded maps, templates
+     list com JS hooks Pre/Post para Copy/Morph/Spawn)
+   - labels-icones.md: Event Label Settings (sprite-based, font, offset, range),
+     Event Icon Settings (buffer, blend mode)
+   - movement.md: 8-Dir Movement (strict collision, slower diagonals),
+     Automatic Movement, Bitmap, Dash (modifier, tilt em radianos), Event Movement
+     (random weight, shift Y), Pathfinding, Shadows (Z layer, filename),
+     Turn in Place, Vehicle Speeds, VS8 Settings (balloon, icons)
+   - regioes-terrain.md: Region Rulings (Allow/Forbid/Dock por tipo),
+     Common Event on OK Button (regions 1-255, target tile), Common Event on Touch,
+     Terrain Tag Settings (rope)
+
+5. REFERENCIA (referencia/)
+   - glossario.md: Definicoes de todos os termos do plugin (Self Switch, VS8,
+     Spawn, Morph, Move Synch, Activation Region, etc.)
+   - script-calls.md: Todas as script calls (Self/Map Switch/Variable get/set,
+     Reference Switch/Variable, Encounter checks) e Move Route Custom Commands
+     completos (~40 comandos: Animation, Balloon, Fade, Jump, Move/Crash Move,
+     Opacity, Pattern, Pose, Step Toward/Away, Turn To/Away, Teleport, Self Switch/
+     Variable). Inclui uso de variaveis ($gameVariables.value(x), \V[x], \SelfVar[x]).
+   - troubleshooting.md: 12 problemas comuns e solucoes (shadows, VS8, self
+     switches, spawn, popup, pathfinding, move synch, regions, page conditions,
+     mobile, diagonal, tags exclusivas)
+
+ORDEM DE LEITURA RECOMENDADA
+-----------------------------
+1. conceitos/visao-geral.md (entender escopo)
+2. conceitos/switches-variables.md (sistema de dados)
+3. conceitos/sprites-vs8.md (sistema visual)
+4. notetags/mapas.md (configuracao por mapa)
+5. notetags/eventos.md (referencia principal de notetags)
+6. notetags/paginas.md (condicoes customizadas)
+7. comandos/ (consulta por necessidade)
+8. parametros/ (consulta por necessidade)
+9. referencia/script-calls.md (script calls e move route)
+10. referencia/troubleshooting.md (resolucao de problemas)
+
+NOTAS IMPORTANTES
+-----------------
+- Plugin Tier 1: colocar ABAIXO de plugins de tier 0
+- Requer RPG Maker MZ exclusivamente
+- Event Popup requer VisuMZ_1_MessageCore
+- Shadows NAO aparecem em sprites com prefixo "!"
+- Tags <JS>, <Self>, <Map>, <Global> sao mutuamente exclusivas
+- Pathfinding usa algoritmo padrao do MZ (nao e otimo)
+- Move Route Custom Commands nao aparecem no Preview do editor
+- Comandos de spawn sao temporarios por padrao (usar Preserve Spawn)

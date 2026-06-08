@@ -1,0 +1,95 @@
+VISUAL NOVEL PICTURE BUSTS - VISUSTELLA MZ
+===========================================
+
+SUMÁRIO
+-------
+Plugin para usar Pictures como busts no estilo Visual Novels no RPG Maker MZ.
+Tier 2. Requer: Core Engine VisuStella MZ.
+
+FUNCIONALIDADES
+---------------
+- Enter/Exit de busts com posicionamento simplificado (0-10)
+- Troca de gráfico sem alterar propriedades
+- Espelhamento horizontal (Mirror, Auto, Auto-Reverse, Toggle)
+- Fade in/out com controle de opacidade (0-255)
+- Battle Animations sobre busts
+- Movimentação por coordenadas ou posições predeterminadas
+- Escala (ampliar/reduzir)
+- Animações contínuas: Breathing, Fidgeting, Swaying
+- Alteração de tom/tint com presets (Normal, Dark, Sepia, Sunset, Night)
+
+CONCEITOS CHAVE
+---------------
+1. Busts são Pictures - Podem ser controlados por comandos de evento vanilla
+2. Picture IDs determinam layer - Menor = atrás, Maior = frente
+3. Âncora padrão: Center Bottom (X=0.5, Y=1.0)
+4. 11 Positions (0-10) com buffer de 200px das bordas
+
+DOCUMENTAÇÃO POR ÁREA
+---------------------
+
+conceitos/visao-geral.md
+  Propósito do plugin, lista de funcionalidades, requisitos e tier.
+
+conceitos/como-funciona-busts.md
+  Conceitos fundamentais: busts como pictures, IDs e layers,
+  âncora/origem especializada, sistema de posicionamento predeterminado.
+
+comandos/basicos.md
+  BASIC: Enter Bust - Entra bust com fade in e offset
+  BASIC: Exit Bust(s) - Sai bust(s) com fade out, auto-erase opcional
+  BASIC: Graphic Change - Troca gráfico sem alterar outras props
+  BASIC: Mirror Bust(s) - Espelhamento horizontal (5 opções)
+  BASIC: Origin Change Bust(s) - Troca origem (Upper Left/Center/Bust)
+  BASIC: Play Animation on Bust(s) - Battle Animation sobre o bust
+
+comandos/fade.md
+  FADE: Fade In Bust(s) - Opacidade para 255
+  FADE: Fade Out Bust(s) - Opacidade para 0, auto-erase opcional
+  FADE: Opacity By X - Ajuste relativo de opacidade
+  FADE: Opacity To X - Opacidade para valor específico (0-255)
+
+comandos/movimento.md
+  MOVE: Move By Coordinates - Movimento relativo por pixels
+  MOVE: Move By Position - Movimento relativo por positions (0-10)
+  MOVE: Move To Coordinates - Movimento para coordenadas exatas
+  MOVE: Move To Position - Movimento para position específica (0-10)
+  MOVE: Reset To Position - Reset para position atual
+
+comandos/escala.md
+  SCALE: Scale By - Escala aditiva (100=100%=1.0)
+  SCALE: Scale To - Escala para valor específico
+  SCALE: Scale Reset - Reset para padrão dos Plugin Parameters
+
+comandos/animacoes.md
+  BREATHING: Start/Stop - Efeito de respiração (Speed + Rate)
+  FIDGETING: Start/Stop - Efeito de inquietação (Speed + Distance)
+  SWAYING: Start/Stop - Efeito de balanço angular (Angle Speed + Angle Sway)
+
+comandos/tone-tint.md
+  TONE: Bright - Ilumina (config Plugin Parameters)
+  TONE: Dim - Escurece (config Plugin Parameters)
+  TONE: Normal - Remove tom
+  TONE: Preset - Presets: Normal, Dark, Sepia, Sunset, Night
+  TONE: Target - Tom customizado [R, G, B, Gray]
+
+parametros/configuracao-geral.md
+  Anchor Settings - Anchor X (0.0-1.0), Anchor Y (0.0-1.0)
+  Scale Settings - Scale X/Y (100=100%), Mirror Horizontally
+  Screen Positioning - JS: Position X/Y (código para calcular coordenadas)
+  Tone - Bright Tone, Dim Tone [R, G, B, Gray]
+
+referencia/glossario.md
+  Glossário de termos do plugin
+  Relação entre comandos do plugin e comandos vanilla do RPG Maker MZ
+  Compatibilidade e tier
+
+RELAÇÃO ENTRE ÁREAS
+-------------------
+conceitos/ → Define fundamentos (Pictures, IDs, Positions)
+  ↓
+comandos/ → Usa conceitos para operar busts (6 categorias)
+  ↓
+parametros/ → Configura valores padrão usados pelos comandos
+  ↓
+referencia/ → Mapeamento entre plugin e vanilla RPG Maker MZ

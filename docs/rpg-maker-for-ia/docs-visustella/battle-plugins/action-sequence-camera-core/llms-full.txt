@@ -1,0 +1,64 @@
+Action Sequence Camera Core - VisuStella MZ
+============================================
+
+SUMARIO
+-------
+Plugin Tier 3 que adiciona Action Sequences de camera para o Battle Core.
+Requer Core Engine + Battle Core. Permite controle total de camera em batalha:
+posicionamento, zoom, angulo (tilt), skew e clamping.
+
+DESCRICAO DOS DOCUMENTOS
+-------------------------
+
+conceitos/visao-geral.md
+  Introducao ao plugin, lista completa de features e requisitos.
+  Usado para entender o escopo do que o plugin oferece.
+
+conceitos/mudancas-core.md
+  Mudancas no engine: rewrite do Spriteset_Battle.updatePosition,
+  reset automatico de camera durante input phase.
+
+conceitos/opcoes-jogador.md
+  Como o jogador pode desabilitar efeitos de camera (motion sickness).
+  Configuracao da opcao no menu.
+
+action-sequences/angle.md
+  Comandos ANGLE: Change Angle, Reset Angle, Wait For Angle.
+  Controlam o tilt/angulo da camera.
+
+action-sequences/camera-control.md
+  Comandos CAMERA: Clamp ON/OFF, Focus Point, Focus Target(s),
+  Offset, Reset, Wait For Camera. Controle principal de posicionamento.
+
+action-sequences/skew.md
+  Comandos SKEW: Change Skew, Reset Skew, Wait For Skew.
+  Controlam a deformacao/distorcao da camera.
+
+action-sequences/zoom.md
+  Comandos ZOOM: Change Scale, Reset Zoom, Wait For Zoom.
+  Controlam o nivel de zoom da camera.
+
+parametros/options-menu.md
+  Parametros do plugin relacionados ao menu de opcoes:
+  Add Option, Adjust Window Height, Options Name.
+
+referencia/referencia-rapida.md
+  Tabela com todos os 15 comandos Action Sequence do plugin,
+  parametros e duracao.
+
+referencia/glossario.md
+  Definicoes de termos: camera clamp, easing, focus, offset, skew, zoom.
+
+referencia/compatibilidade.md
+  Tier 3, requisitos (Core Engine + Battle Core), conflitos conhecidos,
+  ordem no Plugin Manager.
+
+RELACAO ENTRE AREAS
+-------------------
+- conceitos/ -> Explica COMO o plugin funciona
+- action-sequences/ -> Referencia do QUE cada comando faz
+- parametros/ -> Como CONFIGURAR o plugin
+- referencia/ -> Consulta rapida e compatibilidade
+
+Todos os comandos de action-sequences sao acessados via Battle Core,
+nao diretamente por este plugin.
