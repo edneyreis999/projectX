@@ -39,6 +39,12 @@
  * @desc Bordas coloridas ao redor dos icones por categoria.
  * @default {"EnableBorder:eval":"true","BorderThickness:num":"2","BorderRadius:num":"2","BuffBorderColor:str":"#44cc44","DebuffBorderColor:str":"#cc4444","PositiveStateBorderColor:str":"#4488cc","NegativeStateBorderColor:str":"#884444"}
  *
+ * @param TurnCounterSettings:struct
+ * @text Turn Counter Settings
+ * @type struct<TurnCounterSettings>
+ * @desc Contagem de turnos exibida no canto dos icones.
+ * @default {"EnableTurnCounter:eval":"true","TurnCounterFontSize:num":"13","TurnCounterTextColor:str":"#ffffff","TurnCounterOutlineColor:str":"rgba(0, 0, 0, 0.8)","TurnCounterOutlineWidth:num":"2","TurnCounterOffsetX:num":"-2","TurnCounterOffsetY:num":"2","ShowActionBased:eval":"true"}
+ *
  * @help
  * ----------------------------------------------------------------------------
  * **Coreto MultiStateIcons**
@@ -69,6 +75,14 @@
  *   - NEGATIVE_STATE: vermelho escuro (#884444)
  *
  *   Configuravel via parametros do plugin (EnableBorder, cores, espessura).
+ *
+ * Turn Counter:
+ *
+ *   Exibe a contagem de turnos restantes no canto superior direito de cada icone.
+ *   - States permanentes (autoRemovalTiming=0) nao exibem contador.
+ *   - States baseados em acao (autoRemovalTiming=1) podem ser configurados.
+ *   - Buffs/Debuffs com turnos tambem exibem contador.
+ *   - Fonte, cor, contorno e posicao sao configuraveis.
  */
 
 (() => {
@@ -91,6 +105,16 @@
         NEGATIVE_STATE: parseInt(String(BS["NegativeStateBorderColor:str"] || "#884444").replace("#", ""), 16),
     };
 
+    const TC = JSON.parse(P["TurnCounterSettings:struct"] || "{}");
+    const ENABLE_TURN_COUNTER = String(TC["EnableTurnCounter:eval"] || "true") === "true";
+    const TC_FONT_SIZE = Number(TC["TurnCounterFontSize:num"] || 13);
+    const TC_TEXT_COLOR = String(TC["TurnCounterTextColor:str"] || "#ffffff");
+    const TC_OUTLINE_COLOR = String(TC["TurnCounterOutlineColor:str"] || "rgba(0, 0, 0, 0.8)");
+    const TC_OUTLINE_WIDTH = Number(TC["TurnCounterOutlineWidth:num"] || 2);
+    const TC_OFFSET_X = Number(TC["TurnCounterOffsetX:num"] || -2);
+    const TC_OFFSET_Y = Number(TC["TurnCounterOffsetY:num"] || 2);
+    const TC_SHOW_ACTION_BASED = String(TC["ShowActionBased:eval"] || "true") === "true";
+
     // -------------------------------------------------------------------------
     // MSI Members
     // -------------------------------------------------------------------------
@@ -104,6 +128,8 @@
         this._msiPoolReady = false;
         this._msiBorders = [];
         this._msiBorderCategories = [];
+        this._msiTurnSprites = [];
+        this._msiLastTurns = [];
     };
 
     // -------------------------------------------------------------------------
@@ -129,10 +155,42 @@
             this.addChild(border);
             this._msiBorders.push(border);
             this._msiBorderCategories.push(null);
+
+            const tcBmp = new Bitmap(20, 16);
+            const tcSprite = new Sprite(tcBmp);
+            tcSprite.visible = false;
+            tcSprite.anchor.x = 1;
+            tcSprite.anchor.y = 0;
+            this.addChild(tcSprite);
+            this._msiTurnSprites.push(tcSprite);
+            this._msiLastTurns.push(null);
         }
 
         this._msiPoolReady = true;
         return true;
+    };
+
+    // -------------------------------------------------------------------------
+    // Is Excluded
+    // -------------------------------------------------------------------------
+
+    // -------------------------------------------------------------------------
+    // Get Turn Count
+    // -------------------------------------------------------------------------
+    Sprite_StateIcon.prototype._msiGetTurnCount = function (entry) {
+        const battler = this._battler;
+        if (!battler) return null;
+        if (entry.kind === "state") {
+            if (entry.state.autoRemovalTiming === 0) return null;
+            if (entry.state.autoRemovalTiming === 1 && !TC_SHOW_ACTION_BASED) return null;
+            const turns = battler._stateTurns[entry.state.id];
+            return turns > 0 ? turns : null;
+        }
+        if (entry.kind === "buff" || entry.kind === "debuff") {
+            const turns = battler._buffTurns[entry.paramId];
+            return turns > 0 ? turns : null;
+        }
+        return null;
     };
 
     // -------------------------------------------------------------------------
@@ -218,6 +276,7 @@
             this._msiPage = 0;
             this._msiPageTimer = 0;
             this._msiLastEntries = null;
+            this._msiLastTurns = new Array(MAX_ICONS).fill(null);
         }
     };
 
@@ -242,8 +301,11 @@
     Sprite_StateIcon.prototype._msiUpdateIcons = function () {
         const entries = this._msiCollectEntries();
 
-        // Cache check - skip if unchanged
-        const key = entries.map((e) => e.iconIndex).join(",");
+        // Cache check - skip if unchanged (includes turn counts)
+        const key = entries.map((e) => {
+            const t = this._msiGetTurnCount(e);
+            return e.iconIndex + (t !== null ? ":" + t : "");
+        }).join(",");
         if (key === this._msiLastEntries && entries.length > 0) {
             this._msiUpdatePagination();
             return;
@@ -317,10 +379,38 @@
                 } else {
                     border.visible = false;
                 }
+
+                if (ENABLE_TURN_COUNTER) {
+                    const tcSprite = this._msiTurnSprites[i];
+                    const turns = this._msiGetTurnCount(entry);
+                    if (turns !== null) {
+                        const turnKey = String(turns);
+                        if (turnKey !== this._msiLastTurns[i]) {
+                            this._msiLastTurns[i] = turnKey;
+                            const bmp = tcSprite.bitmap;
+                            bmp.clear();
+                            bmp.fontSize = TC_FONT_SIZE;
+                            bmp.textColor = TC_TEXT_COLOR;
+                            bmp.outlineColor = TC_OUTLINE_COLOR;
+                            bmp.outlineWidth = TC_OUTLINE_WIDTH;
+                            bmp.drawText(turnKey, 0, 0, 20, 16, "right");
+                        }
+                        tcSprite.x = child.x + pw / 2 + TC_OFFSET_X;
+                        tcSprite.y = -ph / 2 + TC_OFFSET_Y;
+                        tcSprite.visible = true;
+                    } else {
+                        tcSprite.visible = false;
+                        this._msiLastTurns[i] = null;
+                    }
+                } else {
+                    this._msiTurnSprites[i].visible = false;
+                }
             } else {
                 child.visible = false;
                 border.visible = false;
+                this._msiTurnSprites[i].visible = false;
                 this._msiBorderCategories[i] = null;
+                this._msiLastTurns[i] = null;
             }
         }
 
@@ -379,4 +469,63 @@
  * @type string
  * @default #884444
  * @desc Cor da borda para states negativos.
+ */
+
+/*~struct~TurnCounterSettings:
+ *
+ * @param EnableTurnCounter:eval
+ * @text Enable Turn Counter
+ * @type boolean
+ * @default true
+ * @desc Ativa contagem de turnos no canto dos icones.
+ *
+ * @param TurnCounterFontSize:num
+ * @text Font Size
+ * @type number
+ * @min 8
+ * @max 20
+ * @default 13
+ * @desc Tamanho da fonte do contador de turnos.
+ *
+ * @param TurnCounterTextColor:str
+ * @text Text Color
+ * @type string
+ * @default #ffffff
+ * @desc Cor do texto do contador.
+ *
+ * @param TurnCounterOutlineColor:str
+ * @text Outline Color
+ * @type string
+ * @default rgba(0, 0, 0, 0.8)
+ * @desc Cor do contorno do texto.
+ *
+ * @param TurnCounterOutlineWidth:num
+ * @text Outline Width
+ * @type number
+ * @min 0
+ * @max 4
+ * @default 2
+ * @desc Espessura do contorno do texto.
+ *
+ * @param TurnCounterOffsetX:num
+ * @text Offset X
+ * @type number
+ * @min -16
+ * @max 16
+ * @default -2
+ * @desc Deslocamento horizontal a partir do canto superior direito.
+ *
+ * @param TurnCounterOffsetY:num
+ * @text Offset Y
+ * @type number
+ * @min -16
+ * @max 16
+ * @default 2
+ * @desc Deslocamento vertical a partir do canto superior direito.
+ *
+ * @param ShowActionBased:eval
+ * @text Show Action-Based
+ * @type boolean
+ * @default true
+ * @desc Exibir contador para states baseados em acao (autoRemovalTiming=1).
  */
