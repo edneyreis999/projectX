@@ -954,7 +954,13 @@ var $plugins =
             "maxIcons": "4",
             "animationWait": "10",
             "throttleFrames": "15",
-            "debugLogs": "true"
+            "enableBorder": "true",
+            "borderThickness": "2",
+            "borderRadius": "2",
+            "buffBorderColor": "#4488cc",
+            "debuffBorderColor": "#884444",
+            "positiveStateBorderColor": "#4488cc",
+            "negativeStateBorderColor": "#884444"
         }
     }
 ];

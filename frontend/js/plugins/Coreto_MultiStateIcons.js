@@ -33,6 +33,52 @@
  * @default 15
  * @desc Frames entre checagens de mudanca de states.
  *
+ * @param enableBorder
+ * @text Enable Border
+ * @type boolean
+ * @default true
+ * @desc Ativa bordas coloridas ao redor dos icones.
+ *
+ * @param borderThickness
+ * @text Border Thickness
+ * @type number
+ * @min 1
+ * @max 6
+ * @default 2
+ * @desc Espessura da borda em pixels.
+ *
+ * @param borderRadius
+ * @text Border Radius
+ * @type number
+ * @min 0
+ * @max 8
+ * @default 2
+ * @desc Raio dos cantos arredondados da borda.
+ *
+ * @param buffBorderColor
+ * @text Buff Border Color
+ * @type string
+ * @default #44cc44
+ * @desc Cor da borda para BUFFs.
+ *
+ * @param debuffBorderColor
+ * @text Debuff Border Color
+ * @type string
+ * @default #cc4444
+ * @desc Cor da borda para DEBUFFs.
+ *
+ * @param positiveStateBorderColor
+ * @text Positive State Border Color
+ * @type string
+ * @default #4488cc
+ * @desc Cor da borda para states positivos.
+ *
+ * @param negativeStateBorderColor
+ * @text Negative State Border Color
+ * @type string
+ * @default #884444
+ * @desc Cor da borda para states negativos.
+ *
  * @help
  * ----------------------------------------------------------------------------
  * **Coreto MultiStateIcons**
@@ -53,6 +99,16 @@
  *   - Usada em: States
  *   - Marca o state como positivo para classificacao visual.
  *   - States sem esta tag sao classificados como NEGATIVE_STATE por padrao.
+ *
+ * Borders:
+ *
+ *   Bordas coloridas sao desenhadas ao redor de cada icone baseado na categoria:
+ *   - BUFF: verde (#44cc44)
+ *   - DEBUFF: vermelho (#cc4444)
+ *   - POSITIVE_STATE: azul (#4488cc)
+ *   - NEGATIVE_STATE: vermelho escuro (#884444)
+ *
+ *   Configuravel via parametros do plugin (EnableBorder, cores, espessura).
  */
 
 (() => {
@@ -63,6 +119,16 @@
     const MAX_ICONS = Number(P["maxIcons"] || 4);
     const ANIMATION_WAIT = Number(P["animationWait"] || 40);
     const THROTTLE_FRAMES = Number(P["throttleFrames"] || 15);
+
+    const ENABLE_BORDER = String(P["enableBorder"] || "true") === "true";
+    const BORDER_THICKNESS = Number(P["borderThickness"] || 2);
+    const BORDER_RADIUS = Number(P["borderRadius"] || 2);
+    const BORDER_COLORS = {
+        BUFF: parseInt(String(P["buffBorderColor"] || "#44cc44").replace("#", ""), 16),
+        DEBUFF: parseInt(String(P["debuffBorderColor"] || "#cc4444").replace("#", ""), 16),
+        POSITIVE_STATE: parseInt(String(P["positiveStateBorderColor"] || "#4488cc").replace("#", ""), 16),
+        NEGATIVE_STATE: parseInt(String(P["negativeStateBorderColor"] || "#884444").replace("#", ""), 16),
+    };
 
     // -------------------------------------------------------------------------
     // MSI Members
@@ -75,6 +141,8 @@
         this._msiPage = 0;
         this._msiPageTimer = 0;
         this._msiPoolReady = false;
+        this._msiBorders = [];
+        this._msiBorderCategories = [];
     };
 
     // -------------------------------------------------------------------------
@@ -94,6 +162,12 @@
             child.visible = false;
             this.addChild(child);
             this._msiChildren.push(child);
+
+            const border = new PIXI.Graphics();
+            border.visible = false;
+            this.addChild(border);
+            this._msiBorders.push(border);
+            this._msiBorderCategories.push(null);
         }
 
         this._msiPoolReady = true;
@@ -215,6 +289,7 @@
         }
         this._msiLastEntries = key;
         this._msiEntries = entries;
+        this._msiBorderCategories = new Array(MAX_ICONS).fill(null);
 
         // Reset page if entries shrunk
         const totalPages = Math.ceil(entries.length / MAX_ICONS) || 1;
@@ -257,6 +332,8 @@
 
         for (let i = 0; i < this._msiChildren.length; i++) {
             const child = this._msiChildren[i];
+            const border = this._msiBorders[i];
+
             if (i < pageEntries.length) {
                 const entry = pageEntries[i];
                 const sx = (entry.iconIndex % 16) * pw;
@@ -264,8 +341,25 @@
                 child.setFrame(sx, sy, pw, ph);
                 child.x = i * (pw + 2);
                 child.visible = true;
+
+                if (ENABLE_BORDER) {
+                    border.x = child.x;
+                    const cat = entry.category;
+                    if (cat !== this._msiBorderCategories[i]) {
+                        this._msiBorderCategories[i] = cat;
+                        const color = BORDER_COLORS[cat] || BORDER_COLORS.NEGATIVE_STATE;
+                        border.clear();
+                        border.lineStyle(BORDER_THICKNESS, color, 1);
+                        border.drawRoundedRect(-pw / 2, -ph / 2, pw, ph, BORDER_RADIUS);
+                    }
+                    border.visible = true;
+                } else {
+                    border.visible = false;
+                }
             } else {
                 child.visible = false;
+                border.visible = false;
+                this._msiBorderCategories[i] = null;
             }
         }
 
