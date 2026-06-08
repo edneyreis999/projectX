@@ -83,21 +83,22 @@
     // -------------------------------------------------------------------------
     Sprite_StateIcon.prototype._msiEnsurePool = function () {
         if (this._msiPoolReady) return true;
-        if (!this.bitmap || !this.bitmap.isReady()) return false;
+        // VisuStella CoreEngine replaces bitmap with 32x32 blit target.
+        // Load the real IconSet for children.
+        const iconSet = ImageManager.loadSystem("IconSet");
+        if (!iconSet.isReady()) return false;
 
         for (let i = 0; i < MAX_ICONS; i++) {
-            const child = new Sprite(this.bitmap);
+            const child = new Sprite(iconSet);
             child.anchor.x = 0.5;
             child.anchor.y = 0.5;
-            child.scale.x = 1.0;
-            child.scale.y = 1.0;
             child.visible = false;
             this.addChild(child);
             this._msiChildren.push(child);
         }
 
         this._msiPoolReady = true;
-        log("pool created:", MAX_ICONS, "children");
+        log("pool created:", MAX_ICONS, "children, iconSet:", iconSet.width, "x", iconSet.height);
         return true;
     };
 
@@ -145,8 +146,6 @@
     Sprite_StateIcon.prototype.initialize = function () {
         _msi_Sprite_StateIcon_initialize.call(this);
         this._msiInitMembers();
-        // Hide self sprite - only children render
-        this.setFrame(0, 0, 0, 0);
         log("initialize");
     };
 

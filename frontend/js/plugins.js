@@ -952,7 +952,7 @@ var $plugins =
         "description": "Exibe multiplos state icons simultaneamente acima dos battlers",
         "parameters": {
             "maxIcons": "4",
-            "animationWait": "40",
+            "animationWait": "10",
             "throttleFrames": "15",
             "debugLogs": "true"
         }
