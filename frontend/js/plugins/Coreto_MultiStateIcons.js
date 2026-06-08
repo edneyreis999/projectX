@@ -48,6 +48,11 @@
  *   - Usada em: States
  *   - Exclui o state dos icones multiplos, mesmo tendo iconIndex.
  *   - States com <Exclude From Tooltips> tambem sao excluidos automaticamente.
+ *
+ *   <Positive State>
+ *   - Usada em: States
+ *   - Marca o state como positivo para classificacao visual.
+ *   - States sem esta tag sao classificados como NEGATIVE_STATE por padrao.
  */
 
 (() => {
@@ -105,6 +110,19 @@
     };
 
     // -------------------------------------------------------------------------
+    // Classify Entry
+    // -------------------------------------------------------------------------
+    Sprite_StateIcon.prototype._msiClassifyEntry = function (entry) {
+        if (entry.kind === "buff") return "BUFF";
+        if (entry.kind === "debuff") return "DEBUFF";
+        if (entry.kind === "state") {
+            if (entry.state.meta["Positive State"]) return "POSITIVE_STATE";
+            return "NEGATIVE_STATE";
+        }
+        return "NEGATIVE_STATE";
+    };
+
+    // -------------------------------------------------------------------------
     // Collect Entries
     // -------------------------------------------------------------------------
     Sprite_StateIcon.prototype._msiCollectEntries = function () {
@@ -117,11 +135,13 @@
         const states = battler.states();
         for (const state of states) {
             if (state.iconIndex > 0 && !this._msiIsExcluded(state)) {
-                entries.push({
+                const entry = {
                     iconIndex: state.iconIndex,
                     kind: "state",
                     state: state,
-                });
+                };
+                entry.category = this._msiClassifyEntry(entry);
+                entries.push(entry);
             }
         }
 
@@ -129,11 +149,13 @@
         for (let i = 0; i < battler._buffs.length; i++) {
             const level = battler._buffs[i];
             if (level !== 0) {
-                entries.push({
+                const entry = {
                     iconIndex: battler.buffIconIndex(level, i),
                     kind: level > 0 ? "buff" : "debuff",
                     paramId: i,
-                });
+                };
+                entry.category = this._msiClassifyEntry(entry);
+                entries.push(entry);
             }
         }
 
