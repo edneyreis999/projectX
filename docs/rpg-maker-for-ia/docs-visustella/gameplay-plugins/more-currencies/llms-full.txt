@@ -1,0 +1,56 @@
+More Currencies — VisuStella MZ Plugin
+=======================================
+
+SUMÁRIO
+-------
+Plugin Tier 2 que expande o sistema de shop do RPG Maker MZ com suporte a múltiplas moedas.
+Itens podem ser comprados/vendidos usando items, weapons, armors, variáveis ou gold em qualquer combinação.
+Sistema de Proxy permite vender o mesmo item com diferentes moedas em shops diferentes.
+
+REQUISITOS
+----------
+- RPG Maker MZ
+- Core Engine VisuStella MZ (acima deste plugin)
+- Items and Equips Core VisuStella MZ (acima deste plugin, versão mais recente para Proxy)
+- Tier 2: abaixo de plugins tier 0 e 1
+
+DOCUMENTAÇÃO POR ÁREA
+---------------------
+
+1. CONCEITOS (conceitos/)
+   - visao-geral.md: Funcionalidades, requisitos, mudanças no engine (Window_ShopNumber reformulada, Proxy Items)
+   - proxy-system.md: Conceito de proxy, o que é copiado, restrições, exemplo prático
+
+2. NOTETAGS (notetags/)
+   - cost-notetags.md: Notetags de custo para Item, Weapon, Armor, Variable com variantes Buy/Sell/Ambos
+   - proxy-notetags.md: Notetag <Proxy: id/name> para criar itens proxy
+   - referencia-rapida.md: Tabela compacta de todas as notetags
+
+3. CONFIGURAÇÃO (configuracao/)
+   - parametros-gerais.md: Automatic Sell Rate, vocabulário (Owned, Shift, Net)
+   - listing-settings.md: Listing Order, Show Sell Window, font size, padding, text formats (%1-%4)
+
+4. REFERÊNCIA (referencia/)
+   - vocabulario.md: Termos da interface e placeholders
+   - requisitos.md: Plugins necessários, tier, posicionamento no Plugin Manager
+
+NOTETAGS DISPONÍVEIS
+--------------------
+Cost (Item/Weapon/Armor/Variable):
+  - <Type id Buy Cost: x>    — Custo de compra por ID
+  - <Type name Buy Cost: x>  — Custo de compra por nome
+  - <Type id Sell Cost: x>   — Retorno de venda por ID
+  - <Type name Sell Cost: x> — Retorno de venda por nome
+  - <Type id Cost: x>        — Ambos (com sell rate automático)
+  - <Type name Cost: x>      — Ambos (com sell rate automático)
+
+Proxy:
+  - <Proxy: id>   — Proxy por ID (mesmo tipo obrigatório)
+  - <Proxy: name> — Proxy por nome (mesmo tipo obrigatório)
+
+RELAÇÃO ENTRE ÁREAS
+-------------------
+conceitos/visao-geral → notetags/referencia-rapida (notetags overview)
+conceitos/proxy-system → notetags/proxy-notetags (detalhes da notetag)
+notetags/cost-notetags → configuracao/parametros-gerais (sell rate automático)
+configuracao/listing-settings -> referencia/vocabulario (placeholders)

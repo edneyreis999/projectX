@@ -1,0 +1,110 @@
+[
+  {
+    "id": "more-currencies-visao-geral",
+    "title": "Visão Geral do More Currencies",
+    "path": "conceitos/visao-geral.md",
+    "section": "conceitos",
+    "breadcrumbs": ["More Currencies", "Conceitos", "Visão Geral"],
+    "summary": "Plugin VisuStella MZ Tier 2 que expande shops com múltiplas moedas. Permite compra/venda com items, weapons, armors, variáveis e gold. Reformula Window_ShopNumber.",
+    "keywords": ["more currencies", "shop", "moeda", "multi-currency", "tier 2", "visustella"],
+    "content": "Plugin que expande a cena de shop permitindo criar itens comprados/vendidos usando items, weapons, armors, variáveis ou gold em qualquer combinação. Gold deixa de ser a única moeda. Reformula Window_ShopNumber para mostrar detalhes da transação.",
+    "related_topics": ["proxy-system", "cost-notetags", "parametros-gerais"],
+    "source_ref": "More_Currencies.md"
+  },
+  {
+    "id": "more-currencies-proxy-system",
+    "title": "Sistema de Proxy",
+    "path": "conceitos/proxy-system.md",
+    "section": "conceitos",
+    "breadcrumbs": ["More Currencies", "Conceitos", "Sistema de Proxy"],
+    "summary": "Proxy Items são substitutos temporários que permitem vender o mesmo item com diferentes moedas em shops diferentes. Copiam nome, ícone, descrição e status do original.",
+    "keywords": ["proxy", "proxy item", "substituto", "multi-shop", "items and equips core"],
+    "content": "Proxy Items permitem que o mesmo item seja vendido em shops diferentes com diferentes moedas. O proxy assume nome/ícone/descrição/status do original. Não pode ser adquirido por eventos, drops ou equip. Requer Items and Equips Core atualizado.",
+    "related_topics": ["visao-geral", "proxy-notetags"],
+    "source_ref": "More_Currencies.md"
+  },
+  {
+    "id": "more-currencies-cost-notetags",
+    "title": "Cost-Related Notetags",
+    "path": "notetags/cost-notetags.md",
+    "section": "notetags",
+    "breadcrumbs": ["More Currencies", "Notetags", "Cost Notetags"],
+    "summary": "Notetags de custo para compra/venda em shops. Suporta Item, Weapon, Armor e Variable com variantes Buy, Sell e ambas (com sell rate automático).",
+    "keywords": ["cost notetag", "buy cost", "sell cost", "item cost", "weapon cost", "armor cost", "variable cost"],
+    "content": "Notetags de custo: <Item/Weapon/Armor/Variable id/name Buy/Sell Cost: x>. Variante sem Buy/Sell aplica sell rate automático. Múltiplas cópias criam custos compostos. Incompatível usar variante 'ambos' com Buy/Sell do mesmo tipo.",
+    "related_topics": ["proxy-notetags", "referencia-rapida", "parametros-gerais"],
+    "source_ref": "More_Currencies.md"
+  },
+  {
+    "id": "more-currencies-proxy-notetags",
+    "title": "Proxy Notetags",
+    "path": "notetags/proxy-notetags.md",
+    "section": "notetags",
+    "breadcrumbs": ["More Currencies", "Notetags", "Proxy Notetags"],
+    "summary": "Notetag <Proxy: id> ou <Proxy: name> para transformar itens em proxies. Proxy referencia item do mesmo tipo. Requer Items and Equips Core atualizado.",
+    "keywords": ["proxy notetag", "proxy id", "proxy name", "item proxy"],
+    "content": "Notetag <Proxy: id/name> transforma item em proxy. Proxy copia nome/ícone/descrição/status do original. Quando comprado, entrega o item original. Não pode ser adquirido por eventos/drops/equip. Mesmo tipo obrigatório (item→item, weapon→weapon, armor→armor).",
+    "related_topics": ["proxy-system", "cost-notetags"],
+    "source_ref": "More_Currencies.md"
+  },
+  {
+    "id": "more-currencies-referencia-rapida",
+    "title": "Referência Rápida de Notetags",
+    "path": "notetags/referencia-rapida.md",
+    "section": "notetags",
+    "breadcrumbs": ["More Currencies", "Notetags", "Referência Rápida"],
+    "summary": "Tabela compacta com todas as notetags do More Currencies: Cost (Item/Weapon/Armor/Variable × Buy/Sell/Ambos) e Proxy.",
+    "keywords": ["referencia rapida", "tabela notetags", "todas notetags", "cheat sheet"],
+    "content": "Tabela com todas as notetags: <Type id/name Buy/Sell/Cost: x> para Item/Weapon/Armor/Variable. Proxy: <Proxy: id/name>. Regras: múltiplas cópias = custos compostos, variante 'ambos' incompatível com Buy/Sell, sell rate automático na venda.",
+    "related_topics": ["cost-notetags", "proxy-notetags"],
+    "source_ref": "More_Currencies.md"
+  },
+  {
+    "id": "more-currencies-parametros-gerais",
+    "title": "Parâmetros Gerais",
+    "path": "configuracao/parametros-gerais.md",
+    "section": "configuracao",
+    "breadcrumbs": ["More Currencies", "Configuração", "Parâmetros Gerais"],
+    "summary": "Plugin Parameters: Automatic Sell Rate e vocabulário da interface (Owned, Shift, Net).",
+    "keywords": ["sell rate", "automatic sell rate", "owned", "shift", "net", "vocabulary", "parametros"],
+    "content": "General Settings: Automatic Sell Rate (taxa de venda para notetag 'Cost' sem prefixo). Vocabulary: Owned (possuído), Shift (mudança), Net (resultado líquido) — textos exibidos na Window_ShopNumber.",
+    "related_topics": ["cost-notetags", "listing-settings", "vocabulario"],
+    "source_ref": "More_Currencies.md"
+  },
+  {
+    "id": "more-currencies-listing-settings",
+    "title": "Listing Settings",
+    "path": "configuracao/listing-settings.md",
+    "section": "configuracao",
+    "breadcrumbs": ["More Currencies", "Configuração", "Listing Settings"],
+    "summary": "Configuração de listagem: ordem, show sell window, font size, padding e formatos de texto com placeholders %1-%4.",
+    "keywords": ["listing order", "sell window", "font size", "padding", "text format", "item format", "weapon format", "armor format", "variable format"],
+    "content": "Listing: Listing Order (ordem dos componentes), Show Sell Window, List Font Size, List Padding. Text Format: Item/Weapon/Armor/Variable Format com placeholders %1=Cost, %2=Owned, %3=Icon, %4=Name.",
+    "related_topics": ["parametros-gerais", "vocabulario"],
+    "source_ref": "More_Currencies.md"
+  },
+  {
+    "id": "more-currencies-vocabulario",
+    "title": "Vocabulário",
+    "path": "referencia/vocabulario.md",
+    "section": "referencia",
+    "breadcrumbs": ["More Currencies", "Referência", "Vocabulário"],
+    "summary": "Termos da interface (Owned, Shift, Net) e placeholders de formato (%1 Cost, %2 Owned, %3 Icon, %4 Name).",
+    "keywords": ["vocabulario", "owned", "shift", "net", "placeholders", "formato texto"],
+    "content": "Termos: Owned (quantidade possuída), Shift (mudança de valor), Net (resultado líquido). Placeholders: %1=Custo, %2=Possuído, %3=Ícone, %4=Nome. Cada tipo de recurso tem formato próprio.",
+    "related_topics": ["parametros-gerais", "listing-settings"],
+    "source_ref": "More_Currencies.md"
+  },
+  {
+    "id": "more-currencies-requisitos",
+    "title": "Requisitos e Compatibilidade",
+    "path": "referencia/requisitos.md",
+    "section": "referencia",
+    "breadcrumbs": ["More Currencies", "Referência", "Requisitos"],
+    "summary": "Requisitos: RPG Maker MZ, Core Engine, Items and Equips Core. Tier 2. Mudanças hard-coded em Window_ShopNumber e sistema de Proxy.",
+    "keywords": ["requisitos", "core engine", "items and equips core", "tier 2", "compatibilidade", "plugin manager"],
+    "content": "Requer RPG Maker MZ + Core Engine + Items and Equips Core (acima no Plugin Manager). Tier 2. Mudanças: Window_ShopNumber reformulada, sistema de Proxy com bloqueio de aquisição não-shop.",
+    "related_topics": ["visao-geral", "proxy-system"],
+    "source_ref": "More_Currencies.md"
+  }
+]

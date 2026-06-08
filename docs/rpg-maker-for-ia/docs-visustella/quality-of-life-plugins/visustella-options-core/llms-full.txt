@@ -1,0 +1,98 @@
+VisuStella Options Core (VisuMZ_1_OptionsCore) - Documentacao Catalogada
+
+SUMARIO
+=======
+Plugin Tier 1 para RPG Maker MZ que reformula o menu de opcoes com categorias customizaveis,
+integracao automatica com plugins VisuStella e opcoes de playtest para debug.
+
+SECOES
+======
+
+CONCEITOS
+---------
+
+1. visao-geral.md
+   - Dados do plugin (Tier 1, RPG Maker MZ)
+   - Funcionalidades: menu reformulado, categorias customizaveis, opcoes nativas, integracao VisuStella, playtest
+   - Mudancas majoritarias: Scene reformulada, extra features com outros plugins
+   - Tabela de dependencias opcionais com 20+ plugins VisuStella e quais opcoes cada um habilita
+
+2. categorias-opcoes.md
+   - 4 categorias padrao: General, Audio, UI, Playtest
+   - Sub-grupos de cada categoria com lista de opcoes
+   - Como customizar categorias via Plugin Parameters (Name, Icon, JS: Show/Hide, Options List)
+
+3. rebind-teclado-gamepad.md
+   - Requer CoreEngine
+   - Limitacoes do teclado: teclas permitidas (1-0, A-Z, simbolos especificos)
+   - Limitacoes do gamepad: so D-Pad bloqueado, nao pode remover individual, tem reset
+   - Problema WASD retroativo e solucoes
+
+CONFIGURATION
+-------------
+
+4. parametros-gerais.md
+   - Options Settings: Category Window Style, Text Align, Background Type
+   - Options Window: Background Type
+   - Button Assist Window: Switch Category, Background Type
+   - Sound: Cursor/OK/Cancel/Buzzer Sounds (listas, primeiro = padrao)
+   - Text: Font Options (lista, primeiro = padrao)
+
+5. parametros-categorias.md
+   - Estrutura de categoria: Name, Icon, JS: Show/Hide, Options List
+   - Estrutura de opcao listada:
+     * Basic: Symbol, Icon, STR: Text, JS: Text
+     * Accessibility: JS: Show/Hide, JS: Enable, JS: Ext
+     * Functions: JS: Draw Option, JS: Process OK, JS: Cursor Right/Left
+     * Data: JS: Default Value, JS: Save Option, JS: Load Option
+   - Diagrama de fluxo: Load -> Show/Hide -> Enable -> Draw -> Input -> Save
+
+6. master-volume-shortcut.md
+   - Atalho: Ctrl+PageUp/PageDn (0-100)
+   - Parametros: Enabled, Change Value, Volume Up/Down SFX
+   - Rebind Parameters: General, Vocabulary (Button Vocab, Formats, Assist, Help), Window Settings
+
+REFERENCE
+---------
+
+7. opcoes-general.md
+   - Exploration: Always Dash, Autosave, Show Date & Time, Show Quest Tracker, Quest Tracker Position, Random Encounters, Show Tutorials
+   - Battle: Show Battle Animations (OFF/SOME/ON), Battle Animation Speed (x1-x4), Battle Camera, Command Remember, Active Battle Style (Wait/Active), Active Battle Speed (1-5), Auto Battle Start, Auto Battle Style
+   - Screen: Display FPS, Limit FPS, Full Screen, Stretch Screen, Special Effects, Dust Clouds, Footprint Marks, Smooth Scroll, Blinking/Pulsing Lights, Weather Density
+   - Controls: Rebind Keyboard, Rebind Gamepad
+
+8. opcoes-audio.md
+   - Volume: Master, BGM, BGS, ME, SE (todos 0-100%, incrementos de 10%), Voice Volume/Language (requer VoiceActControl), Advanced Sound Options (requer plugin Tome571)
+   - Sound Effects: Battle Voices, Footstep Sounds, Letter Sounds, Cursor/Confirm/Cancel/Buzzer SFX
+
+9. opcoes-ui.md
+   - Windows: Window Tone Red/Green/Blue
+   - Text: Text Language (requer MessageCore), Text Font, Text Speed (1-11, 11=instant)
+   - Touch Input: Touch UI, Button Position, Hover Select
+   - Menu Arrangement: Menu Style (Recommended/Custom), Help/Input Window Position
+   - Battle UI: Show Provoke Origin, Show Aggro Gauge, Show HP Gauges, Show ATB Gauges
+
+10. opcoes-playtest.md
+    - Master toggle: Playtest Effects
+    - Exploration: Map Update Speed, Random Encounters
+    - Battle: God Mode, Resist Negative Effects (requer SkillsStatesCore), Instant K.O., Skill Costs, Consume Items
+    - Rewards: EXP/Gold/Drop Multiplier (x2 a x1024)
+    - Spawners: Spawn Items/Weapons/Armors (loja gratis)
+    - Debug: Debug Menu
+
+11. troubleshooting.md
+    - WASD retroativo: sintoma, causa, 2 solucoes
+    - Novas opcoes nao aparecem: causa em Plugin Parameters
+    - Opcoes customizadas: debug de JS fields
+    - Integracao com outros plugins: dependencias e ordem
+    - Ordem dos plugins: Tier 1 entre Tier 0 e Tier 2+
+
+12. glossario.md
+    - 20 termos tecnicos do plugin com definicoes
+
+RELACOES ENTRE AREAS
+====================
+- conceitos/visao-geral.md -> lista todas as dependencias que aparecem nos arquivos reference/
+- conceitos/categorias-opcoes.md -> resume a estrutura detalhada em configuration/parametros-categorias.md
+- reference/opcoes-*.md -> referenciam plugins especificos listados em conceitos/visao-geral.md
+- configuration/parametros-categorias.md -> define a estrutura usada em todas as opcoes dos arquivos reference/
