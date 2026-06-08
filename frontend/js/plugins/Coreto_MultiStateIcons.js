@@ -33,14 +33,6 @@
  * @default 15
  * @desc Frames entre checagens de mudanca de states.
  *
- * @param debugLogs
- * @text Debug Logs
- * @type boolean
- * @on Sim
- * @off Nao
- * @default false
- * @desc Exibir logs de debug no console.
- *
  * @help
  * ----------------------------------------------------------------------------
  * **Coreto MultiStateIcons**
@@ -49,6 +41,13 @@
  * simultaneamente, com paginacao automatica.
  *
  * Deve estar APOS todos os plugins VisuStella no Plugin Manager.
+ *
+ * Notetags:
+ *
+ *   <MultiStateIcons Exclude>
+ *   - Usada em: States
+ *   - Exclui o state dos icones multiplos, mesmo tendo iconIndex.
+ *   - States com <Exclude From Tooltips> tambem sao excluidos automaticamente.
  */
 
 (() => {
@@ -59,11 +58,6 @@
     const MAX_ICONS = Number(P["maxIcons"] || 4);
     const ANIMATION_WAIT = Number(P["animationWait"] || 40);
     const THROTTLE_FRAMES = Number(P["throttleFrames"] || 15);
-    const DEBUG = P["debugLogs"] === "true" || P["debugLogs"] === true;
-
-    function log(...args) {
-        if (DEBUG) console.log(`[MSI]`, ...args);
-    }
 
     // -------------------------------------------------------------------------
     // MSI Members
@@ -98,8 +92,16 @@
         }
 
         this._msiPoolReady = true;
-        log("pool created:", MAX_ICONS, "children, iconSet:", iconSet.width, "x", iconSet.height);
         return true;
+    };
+
+    // -------------------------------------------------------------------------
+    // Is Excluded
+    // -------------------------------------------------------------------------
+    Sprite_StateIcon.prototype._msiIsExcluded = function (state) {
+        if (state.meta["Exclude From Tooltips"]) return true;
+        if (state.meta["MultiStateIcons Exclude"]) return true;
+        return false;
     };
 
     // -------------------------------------------------------------------------
@@ -114,7 +116,7 @@
         // States
         const states = battler.states();
         for (const state of states) {
-            if (state.iconIndex > 0) {
+            if (state.iconIndex > 0 && !this._msiIsExcluded(state)) {
                 entries.push({
                     iconIndex: state.iconIndex,
                     kind: "state",
@@ -146,7 +148,6 @@
     Sprite_StateIcon.prototype.initialize = function () {
         _msi_Sprite_StateIcon_initialize.call(this);
         this._msiInitMembers();
-        log("initialize");
     };
 
     // -------------------------------------------------------------------------
@@ -160,7 +161,6 @@
             this._msiPage = 0;
             this._msiPageTimer = 0;
             this._msiLastEntries = null;
-            log("setup:", battler ? battler.name() : "null");
         }
     };
 
@@ -253,6 +253,4 @@
         // Opacity control (VisuStella BattleCore behavior)
         this.opacity = this._iconIndex > 0 ? 255 : 0;
     };
-
-    log("plugin loaded — maxIcons:", MAX_ICONS);
 })();
