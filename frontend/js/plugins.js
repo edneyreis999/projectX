@@ -945,5 +945,16 @@ var $plugins =
             "MaxTriggersPerTurn": "2",
             "DebugLogs": "true"
         }
+    },
+    {
+        "name": "Coreto_MultiStateIcons",
+        "status": true,
+        "description": "Exibe multiplos state icons simultaneamente acima dos battlers",
+        "parameters": {
+            "maxIcons": "4",
+            "animationWait": "40",
+            "throttleFrames": "15",
+            "debugLogs": "true"
+        }
     }
 ];
