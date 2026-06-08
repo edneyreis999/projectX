@@ -1,0 +1,88 @@
+VisuStella Save Core — Sumário para LLMs
+==========================================
+
+DOCUMENTAÇÃO CATALOGADA DO PLUGIN SAVE CORE (VISUSTELLA MZ) PARA RPG MAKER MZ.
+
+TIPO: core | TIER: 1 | AUTOR: VisuStella | PLATAFORMA: RPG Maker MZ
+
+==========================================
+CONCEITOS
+==========================================
+
+visao-geral.md
+Visão geral do plugin. Funcionalidades: tipos de save (Standard, Slot-Locked, Single),
+autosave em 3 estágios (Request, Execute, Force), Global Switches/Variables, Save Confirm
+Window, 4 estilos visuais de menu (List, Vertical, Box, Large), descrição e imagem por
+save file, actor graphics (face, sprite, SV battler). JavaScript hooks para save/load success/failure.
+
+global-switches-variables.md
+Switches e variáveis globais que persistem em todos os saves e new games. Declaração via
+tag <Global> no nome do switch/variable. Tags são mutuamente exclusivas (<Global>, <JS>, <Self>).
+
+save-styles.md
+Quatro estilos visuais: List (horizontal), Vertical (colunas), Box (grade), Large (tela cheia).
+Cada estilo configurável via Rows, Columns, JS: Draw Contents, JS: Draw File Data.
+Configurações gerais: Latest Text, Latest Color, Sprite Width, SV Battler Width.
+
+==========================================
+CONFIGURAÇÃO
+==========================================
+
+general-save-settings.md
+Save Style (Standard/Slot-Locked/Single), Max Save Files, Autosave Counts, Local Mode
+(arquivos vs forage keys), Filename Format, Extension Format, Forage Key Format.
+JS hooks: On Save/Load Success/Failure. Tier 1 — abaixo de tier 0.
+
+autosave-settings.md
+Requer Database > System 1 > Enable Autosave. Tipos: Autosave File, Current File, ambos.
+Requests: after Battle, on Transfer, on Menu Open/Exit. Três estágios de força.
+JS hooks: On Success/Failure.
+
+confirm-window-settings.md
+Save Confirm Window (popup de sucesso/falha ao salvar/carregar) e Autosave Confirm Window
+(popup de notificação de autosave). Parâmetros: Enable, Duration, Position (9 posições),
+vocabulário customizável. Autosave Options: adiciona opção ao menu Options.
+
+actor-graphic-settings.md
+Gráfico dos atores no menu: None, Face, Map Sprite, Sideview Battler. Nota sobre saves
+antigos precisarem re-salvar para SV Battler.
+
+style-settings.md
+Configurações detalhadas por estilo: Rows, Columns, JS: Draw Contents, JS: Draw File Data.
+Gerais: Latest Text, Latest Color, Sprite/SV Battler Width, JS: Save Display Info.
+
+==========================================
+COMANDOS
+==========================================
+
+autosave-commands.md
+Enable/Disable (sessão local), Stage 1 Request (respeita tudo), Stage 2 Execute (ignora
+Enable/Disable, respeita Options), Stage 3 Force (ignora tudo exceto Database).
+
+save-commands.md
+Current Slot (salva no slot atual, fora de batalha e no mapa), Set Description (texto com
+text codes, \V/\N/\P são save-local), Set Picture (imagem customizada no save).
+
+==========================================
+REFERÊNCIA
+==========================================
+
+glossario.md
+Termos: Save Style, Save Menu Style, Autosave File, Current File, Forage Key, Global
+Switch/Variable, Slot-Locked, Stages 1/2/3, Text Codes, Tier 1. Tags: <Global>, <JS>, <Self>.
+
+troubleshooting.md
+Problemas: autosave não funciona, "NEW!" não aparece em autosave (intencional), SV Battler
+em saves antigos, Global Switch não persiste, Confirm Window não aparece, Text Codes,
+Plugin Commands não aparecem. Soluções passo a passo.
+
+==========================================
+RELACIONAMENTOS
+==========================================
+
+visao-geral → links para todos os conceitos e comandos
+autosave-settings → referencia autosave-commands e confirm-window
+autosave-commands → referencia save-commands, autosave-settings, confirm-window
+save-commands → referencia autosave-commands, general-save-settings, style-settings
+glossario → referencia troubleshooting e visao-geral
+troubleshooting → referencia glossario, general-save-settings, autosave-settings

@@ -1,0 +1,71 @@
+VISUSTELLA DEBUGGER — GUIA COMPLETO PARA LLMs
+==============================================
+
+SUMÁRIO
+-------
+Este documento descreve o plugin VisuStella Debugger para RPG Maker MZ,
+uma ferramenta de debug avançada que substitui o menu F9 padrão.
+
+DESCRIÇÃO DOS DOCUMENTOS
+------------------------
+
+conceitos/visao-geral.md
+  Visão geral do plugin: funcionalidades, mudanças em relação ao padrão,
+  relação com outros plugins. Ponto de partida para entender o escopo.
+
+features/switches-variables.md
+  Manipulação de switches ON/OFF e variables com color coding e
+  digitação direta de valores. Disponível de qualquer scene.
+
+features/common-events.md
+  Execução de Common Events via debug menu. Apenas Map Scene.
+
+features/teleport.md
+  Teletransporte para qualquer mapa com seleção por nome ou Map ID.
+  Apenas Map Scene.
+
+features/quick-commands.md
+  Comandos JavaScript customizáveis via Plugin Parameters. Varia por scene.
+  Cada comando tem Name, Icon, Help, Visibility JS e Action JS.
+
+features/battle-testing.md
+  Iniciar batalhas com qualquer Troop e modificadores de iniciativa
+  (Preemptive, Surprise Attack, Neither). Apenas Map Scene.
+
+features/items-weapons-armors.md
+  Ajuste de quantidades de items, weapons, armors e gold.
+  Filtro automático de items unnamed. Qualquer scene.
+
+features/map-events.md
+  Controle de Self Switches A/B/C/D e erase events. Apenas Map Scene.
+  Não controla self switches/variables de outros plugins.
+
+features/buffs-states.md
+  Aplicar/remover buffs, debuffs e states. Modificar turnos e stacks.
+  Integração com Skills & States Core para custom values numéricos.
+  Qualquer scene; durante batalha, funciona em inimigos também.
+
+configuration/plugin-parameters.md
+  Configuração de Quick Commands: Name, Icon, Help, Close on Select,
+  JS Visibility, JS Action. Contexto JS com $gameParty, $gameActors, etc.
+
+reference/requisitos.md
+  Requisitos (RPG Maker MZ), Tier 4, ordem no Plugin Manager,
+  compatibilidade com Skills & States Core.
+
+reference/glossario.md
+  Termos técnicos usados na documentação do debugger.
+
+RELAÇÃO ENTRE ÁREAS
+-------------------
+
+O plugin é organizado em 9 funcionalidades independentes, todas acessadas
+pelo Debug Menu (F9). Três funcionalidades são "scene-agnostic" (switches,
+variables, items/weapons/armors, buffs/states). Quatro são map-only
+(common events, teleport, battle, map events). Quick commands variam por scene.
+
+A única configuração significativa é a lista de Quick Commands, que permite
+adicionar comandos JS customizados para automação de testes.
+
+A principal integração com outros plugins é com o Skills & States Core,
+que expande a funcionalidade de Buffs & States para incluir custom values.

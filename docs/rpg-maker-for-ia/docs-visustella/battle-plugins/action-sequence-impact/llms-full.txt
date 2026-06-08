@@ -1,0 +1,76 @@
+Action Sequence Impact - VisuStella MZ
+========================================
+
+SUMÁRIO
+--------
+Plugin Tier 3 que adiciona efeitos visuais de impacto em batalha usando Pixi JS Filters.
+Fornece 11 efeitos visuais, Action Sequences IMPACT e INJECT, e configurações automáticas para eventos de combate.
+
+REQUISITOS
+----------
+- Pixi JS Filters (Tier 0, download separado)
+- Core Engine VisuStella MZ
+- Battle Core VisuStella MZ
+- RPG Maker MZ (não funciona em MV ou anterior)
+- Action Sequences são acessadas pelo Battle Core, não por este plugin
+
+EFEITOS VISUAIS (11)
+--------------------
+1. Bizarro Inversion - Troca azul/vermelho no battlefield. Action Sequence: toggle.
+2. Color Break - Chromatic aberration em críticos. Automático + Action Sequence. Params: Intensity, Duration, Easing.
+3. Desaturation - Preto e branco. Action Sequence: toggle. (Manu Gaming)
+4. Motion Blur - Desfoque em dodges. Automático + Action Sequence (screen/target). Params: Angle, Intensity (0-1), Duration, Easing.
+5. Negative Inversion - Inversão de hue. Action Sequence: toggle. (Manu Gaming)
+6. Oversaturation - Saturação extrema. Action Sequence: toggle.
+7. Shockwave - Ondas de choque em guard. Automático + Action Sequence (point/each target/center). Params: Amplitude, Wavelength, Duration.
+8. Motion Trail - Rastro de movimento. Action Sequence only (create/remove). Params: Delay, Duration, Hue, Opacity, Tone.
+9. Time Scale - Câmera lenta/rápida. Action Sequence. Params: Scale (1.00=normal). (Manu Gaming)
+10. Time Stop - Pausa temporal. Action Sequence. Params: Milliseconds. (Manu Gaming)
+11. Zoom Blur - Desfoque radial. Action Sequence only (point/target center). Params: Zoom Strength (0-1), Visible Radius, Duration, Easing.
+
+ACTION SEQUENCES - IMPACT (16 comandos)
+----------------------------------------
+- IMPACT: Bizarro Inversion (Bizarro?)
+- IMPACT: Color Break (Intensity, Duration, Easing Type)
+- IMPACT: Desaturation (Desaturate?)
+- IMPACT: Motion Blur Screen (Angle, Intensity Rate, Duration, Easing Type)
+- IMPACT: Motion Blur Target(s) (Targets, Angle, Intensity Rate, Duration, Easing Type)
+- IMPACT: Motion Trail Create (Targets, Delay, Duration, Hue, Starting Opacity, Tone [R,G,B,Gray])
+- IMPACT: Motion Trail Remove (Targets)
+- IMPACT: Negative Inversion (Negative?)
+- IMPACT: Oversaturation (Oversaturate?)
+- IMPACT: Shockwave at Point (Point X, Point Y [suporta JS], Amplitude, Wavelength, Duration)
+- IMPACT: Shockwave from Each Target(s) (Targets, Target Location, Offset X/Y, Amplitude, Wavelength, Duration)
+- IMPACT: Shockwave from Target(s) Center (Targets, Target Location, Offset X/Y, Amplitude, Wavelength, Duration)
+- IMPACT: Time Scale (Scale: 1.00=normal)
+- IMPACT: Time Stop (Milliseconds: 1000=1s)
+- IMPACT: Zoom Blur at Point (Point X/Y, Zoom Strength 0-1, Visible Radius, Duration, Easing Type)
+- IMPACT: Zoom Blur at Target(s) Center (Targets, Target Location, Offset X/Y, Zoom Strength 0-1, Visible Radius, Duration, Easing Type)
+
+ACTION SEQUENCES - INJECT (4 comandos)
+---------------------------------------
+- INJECT: Animation Begin (Targets, Filename [/img/sv_actors/], Horizontal/Vertical Cells, Frame Delay, Smooth Bitmap?, Offset X/Y)
+- INJECT: Animation End (Targets)
+- INJECT: Animation Pause/Resume (Targets, Pause?)
+- INJECT: Wait For Injected Animation (sem parâmetros)
+
+PARÂMETROS DO PLUGIN
+---------------------
+1. Critical Color Break Settings: Enable/Disable, Intensity, Duration, Easing Type
+2. Dodge Motion Blur Settings: Enable/Disable, Intensity Rate (0-1), Duration, Easing Type
+3. Guard Shockwave Settings: Enable/Disable, Amplitude, Wavelength, Duration
+
+NOTAS
+-----
+- Efeitos aplicados ao battlefield afetam sprites mas não UI/pictures externos
+- Battle animations podem ou não ser afetadas (configurável)
+- Time Scale afeta apenas batalha, para durante input phase e mensagens
+- INJECT Animation Begin esconde o sprite original do battler enquanto animação roda
+- Spritesheets para INJECT ficam em /img/sv_actors/
+
+RELACIONAMENTO ENTRE ÁREAS
+--------------------------
+conceitos/ -> Explica cada efeito e quando ativa
+action-sequences/ -> Referência de todos os comandos disponíveis
+parametros/ -> Configuração dos efeitos automáticos
+referencia/ -> Requisitos, glossário
