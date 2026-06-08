@@ -945,5 +945,17 @@ var $plugins =
             "MaxTriggersPerTurn": "2",
             "DebugLogs": "true"
         }
+    },
+    {
+        "name": "Coreto_MultiStateIcons",
+        "status": true,
+        "description": "Exibe multiplos state icons simultaneamente acima dos battlers",
+        "parameters": {
+            "maxIcons": "4",
+            "animationWait": "10",
+            "throttleFrames": "15",
+            "BorderSettings:struct": "{\"EnableBorder:eval\":\"true\",\"BorderThickness:num\":\"2\",\"BorderRadius:num\":\"2\",\"BuffBorderColor:str\":\"#4488cc\",\"DebuffBorderColor:str\":\"#884444\",\"PositiveStateBorderColor:str\":\"#4488cc\",\"NegativeStateBorderColor:str\":\"#884444\"}",
+            "TurnCounterSettings:struct": "{\"EnableTurnCounter:eval\":\"true\",\"TurnCounterFontSize:num\":\"15\",\"TurnCounterTextColor:str\":\"#ffffff\",\"TurnCounterOutlineColor:str\":\"rgba(0, 0, 0, 0.6)\",\"TurnCounterOutlineWidth:num\":\"2\",\"TurnCounterOffsetX:num\":\"-2\",\"TurnCounterOffsetY:num\":\"1\",\"ShowActionBased:eval\":\"true\"}"
+        }
     }
 ];
