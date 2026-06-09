@@ -1,5 +1,5 @@
 ---
-status: 🔵 Pronto para aprovação
+status: 🟢 Aprovado
 genero: Wordbuilding
 era_tecnologica:
   - Ex: Medieval
@@ -12,6 +12,8 @@ acessibilidade:
 tags:
   - worldbuilding/tecnologia
 era tecnológica: industrial anã, mecânica, subterrânea
+Versão: 1.0.0
+Autor/Data: Poliana/Maio 2026
 ---
 ## Visão Geral
 
@@ -53,7 +55,7 @@ O Império usa tecnologia para:
 **Tom geral:** a tecnologia anã deve parecer antiga o bastante para carregar tradição, mas avançada o bastante para sustentar um império subterrâneo.
 
 ---
-## ==AQUI== Princípios de Escrita
+## Princípios de Escrita
 
 Use estes princípios sempre que uma cena envolver tecnologia anã:
 - **Tudo nasce da pedra:** máquinas, portões, oficinas e casas parecem integrados à montanha.
@@ -71,16 +73,16 @@ Use estes princípios sempre que uma cena envolver tecnologia anã:
 ---
 ## Domínios Tecnológicos
 
-| Domínio                     | Uso principal                                           | Itens e sistemas                                                     | Função narrativa                                  |
-| :-------------------------- | :------------------------------------------------------ | :------------------------------------------------------------------- | :------------------------------------------------ |
-| **Mineração**               | Extrair recursos e sustentar o império.                 | Picaretas, cotas, baús, contratos, perfuração, maquinário pesado.    | Mostra dependência econômica e exploração social. |
-| **Metalurgia e Forja**      | Produzir armas, armaduras, ferramentas e bens duráveis. | Fornalhas, moldes, aço, Kraven, Sigmetal, runas de proteção.         | Define prestígio anão e poder militar.            |
-| **Arquitetura Subterrânea** | Habitar, defender e organizar Gildrat.                  | Túneis, salões, abóbadas, muralhas, portões, gargalos.               | Faz a cidade parecer uma fortaleza viva.          |
-| **Ventilação**              | Manter ar respirável sem abrir a montanha.              | Lareiras, forjas, chaminés, pressão negativa, entradas protegidas.   | Revela engenharia cotidiana invisível.            |
-| **Água e Esgoto**           | Abastecer, drenar e ocultar resíduos urbanos.           | Cisternas, canais, válvulas, comportas, decantação, minas adaptadas. | Dá textura urbana e cria espaços de exploração.   |
-| **Iluminação**              | Tornar túneis habitáveis e marcar status social.        | Tochas, braseiros, lampiões.                                         | Diferencia nobreza, povo e ruínas.                |
-| **Defesa Militar**          | Controlar invasões, revoltas e gargalos.                | Armas, armaduras, portões, armadilhas, dinamite.                     | Liga tecnologia a autoritarismo e sobrevivência.  |
-| **Alquimia Aplicada**       | Criar soluções experimentais.                           | Bombas, dinamites, pólvora e explosivos.                             | Marca Balastrus como exceção tecnológica.         |
+| Domínio                                                                                             | Uso principal                                              | Itens e sistemas                                                                                                            | Função narrativa                                  |
+| :-------------------------------------------------------------------------------------------------- | :--------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------ |
+| **Mineração**                                                                                       | Extrair recursos e sustentar o império.                    | Picaretas, baús, contratos, perfuração, maquinário pesado.                                                                  | Mostra dependência econômica e exploração social. |
+| **Metalurgia e Forja**                                                                              | Produzir armas, armaduras, ferramentas e bens duráveis.    | Fornalhas, moldes, aço, Kraven, Sigmetal.                                                                                   | Define prestígio anão e poder militar.            |
+| **Arquitetura Subterrânea**                                                                         | Habitar, defender e organizar Gildrat.                     | Túneis, salões, abóbadas, muralhas, portões, gargalos.                                                                      | Faz a cidade parecer uma fortaleza viva.          |
+| **Ventilação/Aquecimento**                                                                          | Manter ar respirável e o aquecimento sem abrir a montanha. | Lareiras, forjas, chaminés, pressão negativa, tochas. tubulações de ar e calor.<br><br>Fornalhas tem função de aquecimento. | Revela engenharia cotidiana invisível.            |
+| **Água e Esgoto**<br><br>- uso de dutos de calor para derreter a neve e transformar em água potável | Abastecer, drenar e ocultar resíduos urbanos.              | Cisternas, canais, válvulas, comportas, decantação, minas adaptadas, dutos de calor, [[Mina de Esgoto]].                    | Dá textura urbana e cria espaços de exploração.   |
+| **Iluminação**                                                                                      | Tornar túneis habitáveis e marcar status social.           | Tochas, lampiões, claraboia de iluminação natural                                                                           | Diferencia nobreza e nobreza.                     |
+| **Defesa Militar**                                                                                  | Controlar invasões, revoltas e gargalos.                   | Armas, armaduras, portões, armadilhas, dinamite.                                                                            | Liga tecnologia a autoritarismo e sobrevivência.  |
+| **Alquimia Aplicada**                                                                               | Criar soluções experimentais.                              | Bombas, dinamites, pólvora e explosivos.                                                                                    | Marca [[Balastrus]] como exceção tecnológica.     |
 
 ---
 ## Materiais e Recursos
@@ -89,7 +91,7 @@ Use estes princípios sempre que uma cena envolver tecnologia anã:
 
 | Material           | Uso                                                     | Leitura visual                                   |
 | :----------------- | :------------------------------------------------------ | :----------------------------------------------- |
-| **Pedra cinzenta** | Estrutura urbana, pisos, paredes, salões e canais.      | Permanência, peso, império escavado na montanha. |
+| **Pedra**          | Estrutura urbana, pisos, paredes, salões e canais.      | Permanência, peso, império escavado na montanha. |
 | **Ferro**          | Portões, correntes, pregos, placas, armas e mecanismos. | Controle, defesa e funcionalidade dura.          |
 | **Aço**            | Armas, armaduras, ferramentas finas e partes móveis.    | Técnica refinada e elite militar.                |
 | **Latão e bronze** | Tubulações, válvulas, placas e detalhes técnicos.       | Registro, manutenção e burocracia.               |
@@ -106,7 +108,7 @@ São tecnologias que podem aparecer no cotidiano do jogador, de NPCs e de mapas 
 | **Picaretas e kits de mineração** | Minas, contratos, expedições.        | Ferramentas gastas, cabos reforçados, metal marcado por uso. |
 | **Carrinhos, cordas e ganchos**   | Galerias, esgoto, manutenção.        | Infraestrutura manual, pesada e confiável.                   |
 | **Lareiras e forjas**             | Casas, oficinas, salões e postos.    | Fonte de calor, fumaça e circulação de ar.                   |
-| **Chaminés e dutos**              | Gildrat subterrânea.                 | Rede oculta que faz a cidade respirar.                       |
+| **Chaminés e dutos**              | Gildrat subterrânea.                 | Rede oculta que faz a cidade respirar e se manter aquecida.  |
 | **Lampiões e braseiros**          | Túneis, minas antigas, áreas comuns. | Luz quente, baixa, com sombras duras.                        |
 | **Tubulações e válvulas**         | Esgoto, cisternas, oficinas.         | Metal rebiteado, placas de aviso e manutenção constante.     |
 | **Placas de bronze**              | Postos, oficinas, minas e rotas.     | Registro de turno, regras, alertas e autoridade imperial.    |
@@ -124,7 +126,6 @@ São tecnologias que podem aparecer no cotidiano do jogador, de NPCs e de mapas 
 ## Relação com Magia
 
 Gildrat teme magia porque a associa a instabilidade, corrupção, heresia e perda de controle político.
-
 Por isso, a tecnologia anã funciona como substituição cultural da magia:
 - máquinas no lugar de feitiços;
 - ventilação no lugar de encantamento;
@@ -136,47 +137,17 @@ Por isso, a tecnologia anã funciona como substituição cultural da magia:
 | :-------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Cultura dominante** | Magia é temida, regulada e associada a instabilidade.                                                                                                               |
 | **Solução anã**       | Construir mecanismos físicos para substituir dependência mágica.                                                                                                    |
-| **Exceções nobres**   | Artefatos raros podem existir em salões, cofres e espaços de elite. A princípio o único artefatomágico usado é para ilumiinação de casas nobres e salões imperiais. |
+| **Exceções nobres**   | Artefatos raros podem existir em salões, cofres e espaços de elite. A princípio o único artefato mágico usado é para iluminação de casas nobres e salões imperiais. |
 | **Conflito final**    | Tecnologia anã tem força, mas encontra limite diante da magia ignota.                                                                                               |
 
 ---
-### Futuro Tecnológico de Gildrat _(não presente no período atual do jogo)_
-
-> [!nota]  
-> As tecnologias abaixo representam possibilidades futuras do desenvolvimento anão. Elas não existem durante os eventos atuais do jogo, mas surgem como desdobramentos naturais da industrialização, da metalurgia avançada e das pesquisas conduzidas por inventores como Balastrus.
-
-Ao longo dos séculos, a engenharia anã tende a abandonar a dependência exclusiva da força de trabalho manual e avançar para formas cada vez mais complexas de automação mecânica.
-
-| Tecnologia futura               | Possível evolução                                                                                                  |
-| ------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| **Máquinas de mineração**       | Perfuradoras, escavadeiras e equipamentos movidos a vapor ou combustão substituem parte do trabalho dos mineiros.  |
-| **Autômatos de trabalho**       | Golems mecânicos e máquinas humanoides utilizados para escavação, transporte e manutenção de túneis perigosos.     |
-| **Motores a vapor**             | Sistemas de propulsão capazes de movimentar elevadores, plataformas, bombas hidráulicas e veículos pesados.        |
-| **Veículos terrestres**         | Carruagens motorizadas, motociclos de madeira e metal e transportes industriais para longas galerias subterrâneas. |
-| **Aeronaves experimentais**     | Balões de observação e dirigíveis rudimentares utilizados para reconhecimento e transporte.                        |
-| **Metalurgia avançada**         | Novas ligas derivadas do Kraven e do Sigmetal permitem máquinas mais resistentes e armamentos mais sofisticados.   |
-| **Infraestrutura automatizada** | Portões, guindastes, sistemas de ventilação e redes de transporte operados por mecanismos centrais.                |
-
-##### Tendência Cultural
-Mesmo quando alcançar níveis tecnológicos mais avançados, Gildrat continuará seguindo os mesmos princípios fundamentais:
-- tecnologia como instrumento de sobrevivência;
-- máquinas construídas para trabalhar a pedra e o metal;
-- preferência por soluções mecânicas em vez de mágicas;
-- valorização da durabilidade acima da elegância;
-- expansão do poder imperial através da engenharia.
-##### Referência Visual
-Visualmente, essa evolução não se aproxima de uma tecnologia limpa ou refinada. O futuro anão continua marcado por **vapor, carvão, engrenagens, rebites, chaminés, metal escurecido e máquinas monumentais integradas à própria montanha**.
-
-> O futuro de Gildrat não é um mundo de magia avançada, mas de montanhas transformadas em máquinas. A mesma engenharia que hoje sustenta minas, forjas e muralhas poderá um dia mover cidades inteiras.
-
-
+### 
 ---
 ## Conexões
 
 - **Economia:** [[Economia_em_Gildrat]]
 - **Organização Social:** [[Organização Social de Gildrat]]
-- **Ancestralismo Imperial:** [[Ancestralismo Imperial]]
-- **Velhas Canções:** [[As Velhas Canções]]
+- **Ancestralismo Imperial:** [[01.6.1_Ancestralismo Imperial]]
+- **Velhas Canções:** [[01.6.2_As Velhas Canções]]
 - **Gildrat:** [[01.3.2_Gildrat]]
-- **Mina do Esgoto:** [[01.3.6_Mina_de_Esgoto]]
 - **Balastrus:** [[Balastrus]]

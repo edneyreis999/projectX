@@ -12,6 +12,8 @@ fluxo_comercial:
   - Autossuficiente
 tags:
   - worldbuilding/economia
+Versão: 1.0.0
+Autor/Data: Poliana/Maio 2026
 ---
 # Sistema Econômico: Gildrat
 
@@ -44,22 +46,14 @@ A exploração mineral tornou-se símbolo de progresso e orgulho imperial. Exped
 
 **Utilização:** contratos, comércio interno, tavernas, oficinas e serviços urbanos.
 
-> *Nota: Embora atualmente tenha pouca função mecânica dentro do jogo, Drakeis reforça a cultura burocrática, comercial e industrial dos anões.*
+
+> [!note]  
+> Embora atualmente tenha pouca função mecânica dentro do jogo, Drakeis reforça a cultura burocrática, comercial e industrial dos anões.
+> > **Ludus** 
+> > Não integra a economia de Daratrine e não circula entre os habitantes do mundo. Sua existência está restrita à Coreto e aos sistemas metanarrativos do jogo. É uma metamoeda da Coreto; ver documento em [[Ludus]].
 
 ---
-### Ludus (não está na história de Gildrat; pensar onde colocar)
-==(não está na história de Gildrat; pensar onde colocar)==
-**Função:** moeda narrativa associada a Rheed e à estrutura metanarrativa do jogo.
 
-**Uso Narrativo:**
-- controle de progressão;
-- acesso a habilidades;
-- desbloqueio de skills;
-- avanço da narrativa.
-
-Ludus representa a forma como Rheed conduz a experiência do jogador, quase como um mestre narrando uma campanha de RPG. Através dele, Rheed controla ritmo, acesso e progressão dentro da história contada.
-
----
 ## Recursos Críticos e Disputados
 
 ### Kraven

@@ -10,6 +10,8 @@ tags:
   - worldbuilding/politica
   - gdd/gildrat
   - política
+Versão: 1.0.0
+Autor/Data: Poliana/Maio 2026
 ---
 orientações chat: **revisar. tem muito texto**; o objetivo do gdd é descrever mas facilitar visualização e sintetização
 

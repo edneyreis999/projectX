@@ -11,6 +11,8 @@ tags:
   - gildrat/politica
   - anões
   - castas
+Versão: 1.0.0
+Autor/Data: Poliana/Maio 2026
 ---
 ## Visão Geral
 
@@ -54,7 +56,7 @@ O motor econômico. Possuem o Drakeis, mas não o nome.
 ### Trabalhadores Comuns (Mãos de Pedra)
 A espinha dorsal de Gildrat. Mineradores e artesãos.
 - **Foco:** Sobrevivência e o dever coletivo.
-- **Cultura:** Onde as [[As Velhas Canções]]** e o **Futebol Rúnico** sobrevivem como resistência silenciosa.
+- **Cultura:** Onde as [[01.6.2_As Velhas Canções]]** e o **Futebol Rúnico** sobrevivem como resistência silenciosa.
 ### Excluídos
 Categoria informal usada para designar:  
 - criminosos exilados; usuários de magia proibida; seguidores das Velhas Canções; dissidentes políticos; linhagens desonradas.  

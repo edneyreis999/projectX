@@ -4,6 +4,8 @@ genero: Foundation
 tags:
   - Artstyle
   - estilonarrativo
+Versão: 1.0.0
+Autor/Data: Poliana/Maio 2026
 ---
 # Tone & Vibe: Direção Criativa
 

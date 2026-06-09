@@ -1,9 +1,22 @@
 ---
-origem_mana: [Ex: Elemental, Divina, Ancestral]
-custo_uso: [Ex: Sanidade, Vitalidade, Itens]
-raridade: [Inexistente, Secreta, Onipresente]
-limite_conhecido: 
-tags: [worldbuilding/magia]
+status: 🔵 Pronto para aprovação
+origem_mana:
+  - Ex: Elemental
+  - Divina
+  - Ancestral
+custo_uso:
+  - Ex: Sanidade
+  - Vitalidade
+  - Itens
+raridade:
+  - Inexistente
+  - Secreta
+  - Onipresente
+limite_conhecido:
+tags:
+  - worldbuilding/magia
+Versão: 1.0.0
+Autor/Data: Poliana/Maio 2026
 ---
 # Magia em Ekios — v3
 
@@ -440,9 +453,9 @@ Templates de conjuração
 ## Conexões
 
 - **Core Concept:** [[1.Core _Concept]]
-- **Conflito e Stakes:** [[T_Foundation_Details]]
-- **Ancestralismo Imperial:** [[Ancestralismo Imperial]]
-- **Velhas Canções:** [[As Velhas Canções]]
+- **Conflito e Stakes:** [[Foundation_Details]]
+- **Ancestralismo Imperial:** [[01.6.1_Ancestralismo Imperial]]
+- **Velhas Canções:** [[01.6.2_As Velhas Canções]]
 - **Tecnologia Anã:** [[tecnologia anã]]
 - **Constituição de Gildrat:** [[Constituição de Gildrat]]
 - **Ignotos:** [[raca-ignotos]]

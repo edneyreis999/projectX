@@ -5,6 +5,8 @@ tags:
   - foundation/concept
   - comercial
   - marketing
+Versão: 1.0.0
+Autor/Data: Poliana/Maio 2026
 ---
 ## Visão Geral
 

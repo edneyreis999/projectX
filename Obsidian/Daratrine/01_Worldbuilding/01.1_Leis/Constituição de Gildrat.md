@@ -9,18 +9,20 @@ tags:
   - constituição
 tipo: Constituição Imperial
 governo: Monarquia Imperial
-religiao: "[[Ancestralismo Imperial]]"
+religiao: "[[01.6.1_Ancestralismo Imperial]]"
 moeda: "[[Drakel]]"
 estruturas:
   - "[[Sistema de Castas]]"
   - "[[Conselho Imperial]]"
 militar:
   - "[[Guarda de Ferro]]"
+Versão: 1.0.0
+Autor/Data: Poliana/Maio 2026
 ---
 ---
 ### I. Fundamentos do Estado
 #### Religião
-[[Ancestralismo Imperial]]
+[[01.6.1_Ancestralismo Imperial]]
 O império faz uso da religião para: 
 - justificar mineração expansiva;
 - incentivar militarização;

@@ -5,6 +5,8 @@ tags:
   - foundation/details
   - conflitos
   - antagonistas
+Versão: 1.0.0
+Autor/Data: Poliana/Maio 2026
 ---
 # Details: Conflito & Stakes
 
