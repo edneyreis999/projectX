@@ -537,6 +537,24 @@ var $plugins =
         }
     },
     {
+        "name": "VisuMZ_3_VisualStateEffect",
+        "status": true,
+        "description": "[RPG Maker MZ] [Tier 3] [Version 1.24] [VisualStateEffects]",
+        "parameters": {
+            "BreakHead": "----------------------------------",
+            "VisualStateEffects": "Plugin Parameters",
+            "ATTENTION": "READ THE HELP FILE",
+            "BreakSettings": "----------------------------------",
+            "General:struct": "{\"Actors\":\"\",\"ActorOverlay:eval\":\"true\",\"ActorStateIcon:eval\":\"true\",\"Enemies\":\"\",\"EnemyOverlay:eval\":\"true\",\"EnemyStateIcon:eval\":\"true\"}",
+            "BuffDebuff:struct": "{\"ShowPopups:eval\":\"true\",\"BuffPopupFmt:str\":\"%1▲\",\"BuffTextColor:str\":\"24\",\"BuffFlashColor:eval\":\"[0, 255, 0, 160]\",\"BuffFlashDuration:num\":\"60\",\"DebuffPopupFmt:str\":\"%1▼\",\"DebuffTextColor:str\":\"27\",\"DebuffFlashColor:eval\":\"[255, 0, 0, 160]\",\"DebuffFlashDuration:num\":\"60\",\"ShowAnimations:eval\":\"true\",\"AnimationMirror:eval\":\"false\",\"AnimationMute:eval\":\"false\",\"BuffAnimations\":\"\",\"Buff0Animation:num\":\"52\",\"Buff1Animation:num\":\"52\",\"Buff2Animation:num\":\"52\",\"Buff3Animation:num\":\"53\",\"Buff4Animation:num\":\"53\",\"Buff5Animation:num\":\"53\",\"Buff6Animation:num\":\"40\",\"Buff7Animation:num\":\"45\",\"DebuffAnimations\":\"\",\"Debuff0Animation:num\":\"54\",\"Debuff1Animation:num\":\"54\",\"Debuff2Animation:num\":\"54\",\"Debuff3Animation:num\":\"56\",\"Debuff4Animation:num\":\"56\",\"Debuff5Animation:num\":\"56\",\"Debuff6Animation:num\":\"57\",\"Debuff7Animation:num\":\"55\"}",
+            "State:struct": "{\"ShowPopups:eval\":\"true\",\"AllowDupes:eval\":\"false\",\"BattleEndPopup:eval\":\"true\",\"AddPopupFmt:str\":\"+ %1\",\"ErasePopupFmt:str\":\"- %1\",\"TextColor:str\":\"0\",\"MatchTurnCountColor:eval\":\"true\",\"FlashColor:eval\":\"[0, 0, 0, 0]\",\"FlashDuration:num\":\"60\",\"StateAnimations\":\"\",\"AddEraseAnimations\":\"\",\"AnimationMirror:eval\":\"false\",\"AnimationMute:eval\":\"false\",\"RepeatingAnimations\":\"\",\"CycleTime:num\":\"300\",\"RepeatMirror:eval\":\"false\",\"RepeatMute:eval\":\"true\"}",
+            "CounterPopup:struct": "{\"Counter\":\"\",\"CounterPopupText:str\":\"COUNTER!\",\"CounterIcon:num\":\"0\",\"CounterTextColor:str\":\"0\",\"CounterFlashColor:eval\":\"[255, 255, 255, 160]\",\"CounterFlashDuration:num\":\"60\",\"Reflect\":\"\",\"ReflectPopupText:str\":\"REFLECT!\",\"ReflectIcon:num\":\"0\",\"ReflectTextColor:str\":\"0\",\"ReflectFlashColor:eval\":\"[255, 255, 255, 160]\",\"ReflectFlashDuration:num\":\"60\",\"Sub\":\"\",\"SubPopupText:str\":\"COVER!\",\"SubIcon:num\":\"0\",\"SubTextColor:str\":\"0\",\"SubFlashColor:eval\":\"[255, 255, 255, 160]\",\"SubFlashDuration:num\":\"60\"}",
+            "BreakEnd1": "----------------------------------",
+            "End Of": "Plugin Parameters",
+            "BreakEnd2": "----------------------------------"
+        }
+    },
+    {
         "name": "--------------------------",
         "status": false,
         "description": "---------------------------------------------------------------------",
