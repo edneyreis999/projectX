@@ -539,8 +539,15 @@
   },
   {
     "id": 12,
-    "name": "",
-    "members": [],
+    "name": "Mico-leão Nevado",
+    "members": [
+      {
+        "enemyId": 8,
+        "x": 261,
+        "y": 597,
+        "hidden": false
+      }
+    ],
     "pages": [
       {
         "conditions": {
@@ -570,8 +577,15 @@
   },
   {
     "id": 13,
-    "name": "",
-    "members": [],
+    "name": "Capidentes de Sabre",
+    "members": [
+      {
+        "enemyId": 9,
+        "x": 238,
+        "y": 648,
+        "hidden": false
+      }
+    ],
     "pages": [
       {
         "conditions": {
@@ -601,8 +615,15 @@
   },
   {
     "id": 14,
-    "name": "",
-    "members": [],
+    "name": "Quero-neve",
+    "members": [
+      {
+        "enemyId": 10,
+        "x": 322,
+        "y": 634,
+        "hidden": false
+      }
+    ],
     "pages": [
       {
         "conditions": {
@@ -632,8 +653,15 @@
   },
   {
     "id": 15,
-    "name": "",
-    "members": [],
+    "name": "Tartaruga-pinguim",
+    "members": [
+      {
+        "enemyId": 11,
+        "x": 307,
+        "y": 615,
+        "hidden": false
+      }
+    ],
     "pages": [
       {
         "conditions": {
@@ -880,24 +908,24 @@
   },
   {
     "id": 23,
-    "name": "Morcego de Caverna x3",
+    "name": "Morcego Ciclope*3",
     "members": [
       {
-        "enemyId": 13,
-        "x": 227,
-        "y": 436,
+        "enemyId": 21,
+        "x": 298,
+        "y": 596,
         "hidden": false
       },
       {
-        "enemyId": 13,
-        "x": 354,
-        "y": 436,
+        "enemyId": 21,
+        "x": 244,
+        "y": 787,
         "hidden": false
       },
       {
-        "enemyId": 13,
-        "x": 481,
-        "y": 436,
+        "enemyId": 21,
+        "x": 373,
+        "y": 447,
         "hidden": false
       }
     ],
@@ -930,33 +958,15 @@
   },
   {
     "id": 24,
-    "name": "Morcego de Caverna x4",
     "members": [
       {
-        "enemyId": 13,
-        "x": 227,
-        "y": 436,
-        "hidden": false
-      },
-      {
-        "enemyId": 13,
-        "x": 354,
-        "y": 436,
-        "hidden": false
-      },
-      {
-        "enemyId": 13,
-        "x": 481,
-        "y": 436,
-        "hidden": false
-      },
-      {
-        "enemyId": 13,
-        "x": 608,
-        "y": 436,
+        "enemyId": 22,
+        "x": 294,
+        "y": 602,
         "hidden": false
       }
     ],
+    "name": "Tamanduurso",
     "pages": [
       {
         "conditions": {
@@ -986,39 +996,15 @@
   },
   {
     "id": 25,
-    "name": "Morcego de Caverna x5",
     "members": [
       {
-        "enemyId": 13,
-        "x": 227,
-        "y": 436,
-        "hidden": false
-      },
-      {
-        "enemyId": 13,
-        "x": 354,
-        "y": 436,
-        "hidden": false
-      },
-      {
-        "enemyId": 13,
-        "x": 481,
-        "y": 436,
-        "hidden": false
-      },
-      {
-        "enemyId": 13,
-        "x": 608,
-        "y": 436,
-        "hidden": false
-      },
-      {
-        "enemyId": 13,
-        "x": 735,
-        "y": 436,
+        "enemyId": 19,
+        "x": 289,
+        "y": 653,
         "hidden": false
       }
     ],
+    "name": "Cangurubu",
     "pages": [
       {
         "conditions": {
@@ -1048,21 +1034,21 @@
   },
   {
     "id": 26,
-    "name": "Aranha Mineira x2",
     "members": [
       {
-        "enemyId": 14,
-        "x": 227,
-        "y": 436,
+        "enemyId": 18,
+        "x": 303,
+        "y": 480,
         "hidden": false
       },
       {
-        "enemyId": 14,
-        "x": 354,
-        "y": 436,
+        "enemyId": 18,
+        "x": 265,
+        "y": 707,
         "hidden": false
       }
     ],
+    "name": "Asapiranha*2",
     "pages": [
       {
         "conditions": {
@@ -1092,27 +1078,21 @@
   },
   {
     "id": 27,
-    "name": "Aranha Mineira x3",
     "members": [
       {
-        "enemyId": 14,
-        "x": 227,
-        "y": 436,
+        "enemyId": 20,
+        "x": 261,
+        "y": 714,
         "hidden": false
       },
       {
-        "enemyId": 14,
-        "x": 354,
-        "y": 436,
-        "hidden": false
-      },
-      {
-        "enemyId": 14,
-        "x": 481,
-        "y": 436,
+        "enemyId": 20,
+        "x": 345,
+        "y": 475,
         "hidden": false
       }
     ],
+    "name": "Caveranha*2",
     "pages": [
       {
         "conditions": {
@@ -1733,30 +1713,24 @@
   },
   {
     "id": 44,
-    "name": "Rato de Esgoto x4",
+    "name": "Fogolume*3",
     "members": [
       {
-        "enemyId": 24,
-        "x": 227,
-        "y": 436,
+        "enemyId": 30,
+        "x": 218,
+        "y": 918,
         "hidden": false
       },
       {
-        "enemyId": 24,
-        "x": 354,
-        "y": 436,
+        "enemyId": 30,
+        "x": 226,
+        "y": 652,
         "hidden": false
       },
       {
-        "enemyId": 24,
-        "x": 481,
-        "y": 436,
-        "hidden": false
-      },
-      {
-        "enemyId": 24,
-        "x": 608,
-        "y": 436,
+        "enemyId": 30,
+        "x": 405,
+        "y": 507,
         "hidden": false
       }
     ],
@@ -1789,36 +1763,12 @@
   },
   {
     "id": 45,
-    "name": "Rato de Esgoto x5",
+    "name": "Jacaré-dragão",
     "members": [
       {
-        "enemyId": 24,
-        "x": 227,
-        "y": 436,
-        "hidden": false
-      },
-      {
-        "enemyId": 24,
-        "x": 354,
-        "y": 436,
-        "hidden": false
-      },
-      {
-        "enemyId": 24,
-        "x": 481,
-        "y": 436,
-        "hidden": false
-      },
-      {
-        "enemyId": 24,
-        "x": 608,
-        "y": 436,
-        "hidden": false
-      },
-      {
-        "enemyId": 24,
-        "x": 735,
-        "y": 436,
+        "enemyId": 31,
+        "x": 303,
+        "y": 583,
         "hidden": false
       }
     ],
@@ -1851,12 +1801,12 @@
   },
   {
     "id": 46,
-    "name": "Limo Ácido x1",
+    "name": "Planta Carnívora",
     "members": [
       {
-        "enemyId": 25,
-        "x": 227,
-        "y": 436,
+        "enemyId": 32,
+        "x": 284,
+        "y": 616,
         "hidden": false
       }
     ],
@@ -1889,18 +1839,18 @@
   },
   {
     "id": 47,
-    "name": "Limo Ácido x2",
+    "name": "Verminhoca*2",
     "members": [
       {
-        "enemyId": 25,
-        "x": 227,
-        "y": 436,
+        "enemyId": 33,
+        "x": 269,
+        "y": 784,
         "hidden": false
       },
       {
-        "enemyId": 25,
-        "x": 354,
-        "y": 436,
+        "enemyId": 33,
+        "x": 355,
+        "y": 503,
         "hidden": false
       }
     ],
@@ -1933,30 +1883,12 @@
   },
   {
     "id": 48,
-    "name": "Rato de Esgoto x3 + Limo Ácido x1",
+    "name": "Ratouro",
     "members": [
       {
-        "enemyId": 24,
-        "x": 227,
-        "y": 436,
-        "hidden": false
-      },
-      {
-        "enemyId": 24,
-        "x": 354,
-        "y": 436,
-        "hidden": false
-      },
-      {
-        "enemyId": 24,
-        "x": 481,
-        "y": 436,
-        "hidden": false
-      },
-      {
-        "enemyId": 25,
-        "x": 608,
-        "y": 436,
+        "enemyId": 34,
+        "x": 209,
+        "y": 629,
         "hidden": false
       }
     ],
@@ -3057,8 +2989,15 @@
   },
   {
     "id": 78,
-    "members": [],
-    "name": "",
+    "members": [
+      {
+        "enemyId": 48,
+        "x": 275,
+        "y": 625,
+        "hidden": false
+      }
+    ],
+    "name": "Capa-bode Dentes de Sabre",
     "pages": [
       {
         "conditions": {
@@ -3088,8 +3027,15 @@
   },
   {
     "id": 79,
-    "members": [],
-    "name": "",
+    "members": [
+      {
+        "enemyId": 49,
+        "x": 265,
+        "y": 634,
+        "hidden": false
+      }
+    ],
+    "name": "Tatutaruga",
     "pages": [
       {
         "conditions": {
