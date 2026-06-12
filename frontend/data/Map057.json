@@ -764,19 +764,346 @@
               "parameters": ["Muito obrigado por tudo!"]
             },
             {
-              "code": 221,
+              "code": 241,
               "indent": 0,
-              "parameters": []
+              "parameters": [
+                {
+                  "name": "Town1",
+                  "volume": 100,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
             },
             {
-              "code": 101,
+              "code": 223,
               "indent": 0,
-              "parameters": ["", 0, 0, 2, ""]
+              "parameters": [[-255, -255, -255, 0], 120, true]
             },
             {
-              "code": 401,
+              "code": 105,
               "indent": 0,
-              "parameters": ["                     Tela de Créditos"]
+              "parameters": [2, false]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["<center>\\FS[40]\\C[6]Produtor Executivo"]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["\\FS[30]\\C[0]Edney A. Reis Filho "]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": [""]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": [""]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["\\FS[40]\\C[6]Produtor"]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["\\FS[30]\\C[0]Edney A. Reis Filho"]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": [""]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": [""]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["\\FS[40]\\C[6]Diretor"]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["\\FS[30]\\C[0]Edney A. Reis Filho"]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": [""]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": [""]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["\\FS[40]\\C[6]UI/UX"]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["\\FS[30]\\C[0]Pati"]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": [""]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": [""]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["\\FS[40]\\C[6]Programador"]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["\\FS[30]\\C[0]Edney A. Reis Filho"]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": [""]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": [""]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["\\FS[40]\\C[6]Diretor Visual"]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["\\FS[30]\\C[0]Lucas C. Heinen"]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": [""]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": [""]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["\\FS[40]\\C[6]Design Narrativo"]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["\\FS[30]\\C[0]Poliana"]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["Edney A. Reis Filho"]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": [""]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": [""]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["\\FS[40]\\C[6]Designer de Personagem"]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["\\FS[30]\\C[0]Edney A. Reis Filho"]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": [""]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": [""]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["\\FS[40]\\C[6]Designer de Mapa"]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["\\FS[30]\\C[0]Edney A. Reis Filho"]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": [""]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": [""]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["\\FS[40]\\C[6]Compositor Musical"]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["\\FS[30]\\C[0]Edney A. Reis Filho"]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": [""]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": [""]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["\\FS[40]\\C[6]Programador de Som"]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["\\FS[30]\\C[0]Edney A. Reis Filho"]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": [""]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": [""]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["\\FS[40]\\C[6]Suporte Técnico"]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["\\FS[30]\\C[0]Edney A. Reis Filho"]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": [""]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": [""]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["\\FS[40]\\C[6]Gestão de Progresso"]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["\\FS[30]\\C[0]Edney A. Reis Filho"]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": [""]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["\\FS[40]\\C[6]Marketing"]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["\\FS[30]\\C[0]Edney A. Reis Filho"]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["Pati"]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["Lucas C. Heinen"]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["Poliana"]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": [""]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": [""]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["\\FS[40]\\C[6]Agradecimentos Especiais"]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["\\FS[30]\\C[0]"]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": [""]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": [""]
+            },
+            {
+              "code": 405,
+              "indent": 0,
+              "parameters": ["\\FS[50]\\C[6]FIM</center>"]
             },
             {
               "code": 354,
