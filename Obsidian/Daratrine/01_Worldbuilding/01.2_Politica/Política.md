@@ -119,7 +119,6 @@ Em diálogo, **Conservadores Imperiais** tendem a falar de dever, contaminação
 
 * **Ancestralismo Imperial versus Velhas Canções:** Os conservadores usam os ancestrais como argumento de obediência ao trono; os guardadores das Velhas Canções usam os ancestrais como memória crítica, aviso e limite contra a arrogância imperial.
 
-* **Antimagia legal versus cautela ritual:** Ambos os campos temem a magia, mas por razões diferentes. O império transforma medo em perseguição e controle; os opositores defendem cautela, escuta ancestral e responsabilidade espiritual.
 
 * **Tradição ancestral versus mineração expansionista:** Melios é vista por grupos tradicionais como território sagrado ou perigoso demais para exploração agressiva. O império a enxerga como solução material para sua crise.
 

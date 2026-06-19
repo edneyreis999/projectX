@@ -21,7 +21,6 @@ Autor/Data: Poliana/Maio 2026
 # Magia em Ekios — v3
 
 Atual: sim
-Repassar juntos
 
 Sumário
 
@@ -51,7 +50,7 @@ Sumário
 ---
 ## Resumo de 1 Minuto
 
-Mana é a energia extraída de um plano paralelo (o Reino da Mana) para alimentar toda magia. Conjurar é pronunciar sequências rúnicas (selos verbais) que descrevem uma intenção. A Barreira entre os mundos é mais fina em certos locais, aumentando o poder e o risco de possessão espiritual. Afinidade facilita certos elementos; maestria reduz custo e falhas. As cinco elementos da natureza (fogo, vento, raio, terra, água) podem ser combinados. Pedras de Runas Mágicas amplificam e estabilizam conjurações, mas podem ser corrompidas. O uso da magia é regulado por instituições como Cetra e varia culturalmente, sendo temido em Gildrat e sistematizado em Arcaror.
+Mana é a energia extraída de um plano paralelo (o Reino da Mana) para alimentar toda magia. Conjurar é pronunciar sequências rúnicas (selos verbais) que descrevem uma intenção. A Barreira entre os mundos é mais fina em certos locais, aumentando o poder e o risco de possessão espiritual. Afinidade facilita certos elementos; maestria reduz custo e falhas. Os cinco elementos da natureza (fogo, vento, raio, terra, água) podem ser combinados. Pedras de Runas Mágicas amplificam e estabilizam conjurações, mas podem ser corrompidas. O uso da magia é regulado por instituições como Cetra e varia culturalmente, sendo temido em Gildrat e sistematizado em Arcaror.
 
 ---
 
@@ -60,9 +59,13 @@ Mana é a energia extraída de um plano paralelo (o Reino da Mana) para alimenta
 - **Mana:** fonte universal de energia mágica, presente em toda vida, extraída do Reino da Mana.
 - **Conjurador:** qualquer indivíduo com capacidade de canalização e treino. A capacidade de usar magia é inata, tende a ser hereditária, mas pode emergir espontaneamente em qualquer linhagem sem histórico familiar. 
 		A treinabilidade, no entanto, difere da aptidão bruta, e instituições como a de Cetra existem para testar, educar e guiar novos conjuradores.
-- **Risco vital:** ao esgotar mana, o corpo passa a consumir energia vital para sustentar a magia — extremamente perigoso.
+- **Risco vital:** ao esgotar mana, o corpo passa a consumir energia vital para sustentar a magia — extremamente perigoso ==(isso tem impacto na mecânica)==.
 - **Selos Mágicos (tatuagens rituais)**: catalisadores que estabilizam a passagem de mana; concedidos conforme maturidade e rito.
+	- juntam energia e deixam "mais fácil" de manipular
+	SELO:
+	- selo no jogo: artefato criado para fechar os ignoto no subsolo; algo único, ainda não entendido muito bem por elfos, anões etc; é tipo os selos mágicos, mas diferente
 - **Pedras de Runas Mágicas:** artefatos que amplificam/estabilizam/armazenam mana e focam elementos específicos.
+	==- são criadas só a partir da criação de Daratrine; no momento atual ainda não existem==
 
 ---
 
@@ -82,20 +85,32 @@ Uma barreira invisível, mas palpável, separa o plano físico do Reino da Mana.
 - **Zonas Finas:** Em locais de grande comoção emocional, morte em massa, ou uso massivo de magia (como antigos campos de batalha, cavernas saturadas de minerais mágicos, locais de rituais ou grandes tragédias), a Barreira torna-se perigosamente fina.
 - **Efeitos de Zonas Finas:** Nestas áreas, os efeitos do Reino da Mana transbordam para a realidade. Sonhos tornam-se extremamente vívidos e por vezes proféticos, aparições fantasmagóricas são comuns, e o risco de possessão por espíritos errantes aumenta drasticamente.
 - **Sinalizações Diegéticas:** A proximidade de uma zona fina é frequentemente marcada por sinais sutis: calafrios inexplicáveis, ecos de vozes em locais silenciosos, sussurros ao vento e, em casos raros, o surgimento espontâneo de padrões rúnicos em superfícies naturais.
+		- em melios há fantasmas, espectros, bichos nesse estilo, para trazer essa representação visual da zona fina;
+		- eles estão inclusive defendendo os selos (espíritos defensores do selo)
 
 ---
 
 ### Sonhos Lúcidos e Sintonias
 
-Sonhos lúcidos são um canal legítimo para comunicação e visões, especialmente quando há uma "sintonia" ou ressonância entre os indivíduos. O trio de Thorin, Elmartin e Mélia, por exemplo, opera em uma frequência compartilhada que, embora não intencional, gera um "ruído" protetor, dificultando intrusões mentais externas, como as do Profeta.
+Sonhos lúcidos são um canal legítimo para comunicação e visões, especialmente quando há uma "sintonia" ou ressonância entre os indivíduos. O trio de Thorin, Elmartin e Mélia, por exemplo, operam em uma frequência compartilhada que, embora não intencional, gera um "ruído" protetor, dificultando intrusões mentais externas, como as do Profeta.
+
+==- PENSAR:==
+- ligar o thorin ao profeta: justificar ele ser o importante pra salvar o universo
+		- possessão: ligação mental tipo potter/voldemort
+		- pq o thorin antes disso td? 
+		- pq um anão? são os mais próximos; é o povo que o profeta das sombras ter o contato; mas e o thorin? esta na profecia? díade entre a mãe/thorin como parte da profecia, como chave para defender o mundo
+		- LIGAÇÃO ENTRE OS TRÊS
+		- ISSO NÃO VAI APARECER NO JOGO ATUAL 
+		- THORIN EM MELIOS: POR BALASTRUS, PARA EVITAR QUE THORDAN SABOTE A EXPEDIÇÃO; AMULETO DA SORTE DE BALASTRUS 
 
 - **Riscos:** A exposição prolongada a zonas de Barreira fina aumenta o ruído mental e a suscetibilidade a influências externas, tornando os sonhos um campo de batalha espiritual.
 - ***Ver também:*** *GDD.Narrative-geral.md, seções "Desenvolvimento dos Personagens — Thorin" e "A Percepção do Mundo Espiritual...".*
 
+
 ---
 ## Sintaxe Rúnica (Selos Verbais)
 
-Conjurar é compor uma frase rúnica. Cada “sílaba rúnica” tem uma função semântica.
+Conjurar é compor uma frase rúnica. Cada “sílaba rúnica” tem uma função semântica. ==(NOTA: AINDA NÃO APARECE NO JOGO)==
 
 **Categorias de sílabas rúnicas**
 
@@ -131,8 +146,7 @@ Conjurar é compor uma frase rúnica. Cada “sílaba rúnica” tem uma funçã
 - Terra: barreiras, contenção, armações; pesado e estável; dificultado sobre superfícies instáveis.
 - Água: controle de fluidos, pressão, gelo (via combinação); favorecida por umidade; reduzida em desertos.
 
-Vantagem situacional (exemplos)
-
+**Vantagem situacional (exemplos)**
 - Água ganha eficiência em cavernas úmidas; raio ganha com metais próximos; fogo perde potência sob chuva intensa.
 
 ---
@@ -190,21 +204,20 @@ Combinar elementos gera efeitos compostos; requer controle e timing precisos.
 - Cura: “cura tecido 1 toque breve” (permitido); “regeneração instantânea de membro” (não permitido)
 - Sábias: “canalização limitada por condição” (permitido); “posse total permanente” (não permitido)
 
----
+==ATÉ AQUI==
 
+---
 ## Proibições e Tabus
 
 ### Magia Sanguínea (Proibida)
-
 A Magia Sanguínea é uma categoria de conjuração universalmente proibida e temida. Ela opera sob princípios que violam o fluxo natural da mana, utilizando sacrifícios, catalisadores orgânicos (sangue, órgãos) para gerar um poder bruto, instável e imensamente destrutivo.
 
 - **Fonte do Profeta:** Acredita-se que a fonte de poder do "Profeta das Sombras" esteja enraizada em rituais de magia sanguínea, embora os detalhes sejam desconhecidos.
 - **Tribos Dissidentes:** Pequenas células e tribos de elfos dissidentes, exilados de Arcaror e de Cetra, ainda preservam e praticam esses rituais em segredo, tornando-se focos de perigo e corrupção.
 
 ---
-
 ## Técnicas Corporais
-
+TP - MECÂNICA - VER DEPOIS (NÃO É MAGIA)
 - Reforço muscular: aumento moderado de força e estabilidade articular.
 - Aceleração: ganhos breves de velocidade e reflexo.
 - Amortecimento: redução de impacto/queda.
@@ -217,26 +230,27 @@ Custos e riscos
 
 ---
 
-## Técnicas de Cura
+## Técnicas de Cura (Magia de Cura e possibilidades)
 
+**Função:** delimitar possibilidades e limites de cura da magia.
 - Escopo: ferimentos leves a moderados, estabilização de hemorragias, redução de infecções iniciais.
-- Limites: não regenera membros instantaneamente; tecidos complexos exigem tempo/doses.
+- Limites: não regenera membros instantaneamente; tecidos complexos exigem tempo/doses. Não ressuscita.
 - Custo: cresce com severidade, área e duração; curas em si mesmo costumam ser mais eficientes por ancoragem direta.
 
 ---
 
 ## Técnicas Sábias (Entidades Vinculadas)
 
-- Pacto: acordo com entidade sábia que empresta poder específico mediante condições (juramento, oferenda, tempo de serviço, tabu).
-- Canalização vs. Invocação:
+- **Pacto**: acordo com entidade sábia que empresta poder específico mediante condições (juramento, oferenda, tempo de serviço, tabu).
+- **Canalização vs. Invocação:**
   - Canalização: emprestar atributo/elemento sem manifestação física; custo recorrente moderado.
-  - Invocação: manifestação parcial/efêmera; custo elevado e limite estrito de permanência.
-- Riscos: quebra de pacto acarreta perda temporária de afinidade, backlash de mana ou veto a certas técnicas.
+  - Invocação: manifestação parcial/efêmera; custo elevado e limite estrito de permanência. Poucos tem habilidade para invocar. Depende da relação/afinidade do espírito com o invocador.
+		- Riscos: quebra de pacto acarreta perda temporária de afinidade, backlash de mana ou veto a certas técnicas.
 
 ---
 
 ## Pedras de Runas Mágicas
-
+==(ainda não aparece no jogo) tirar.==
 Tipos
 - Amplificação: multiplica potência (típico 2–5×; raras podem chegar a 10× sob risco extremo).
 - Estabilização: reduz taxa de falha, suaviza picos de custo.
@@ -256,6 +270,7 @@ Sintonização
 - **Sintomas de Contaminação:** Uma pedra contaminada emite um zumbido dissonante, um "calor frio" ao toque e pode induzir vertigem sombria no usuário.
 
 ### Ressonância Corrompida e Profundina
+- era o sigmetal (ver o que da pra aproveitar)
 
 A "Profundina" é o nome dado aos tônicos e poções criados pelos Ignotos a partir de minerais raros encontrados em grande profundidade.
 
@@ -277,7 +292,7 @@ Exemplos práticos
 
 ## Custos, Esgotamento e Riscos
 
-Modelo de custo narrativo
+Modelo de custo narrativo:
 - custo_base(elemento) × magnitude × duração × complexidade_da_sequência ÷ maestria × modificadores_do_ambiente
 
 Gatilhos de exaustão
@@ -291,15 +306,21 @@ Consequências graduais
 
 A conexão com o Reino da Mana é uma via de mão dupla. Falhas na disciplina, exaustão extrema ou a permanência em zonas de Barreira fina abrem brechas para que entidades do outro plano exerçam sua influência.
 
-- **Possessão:** Em Ekios, não existem "abominações" como uma categoria física. O que ocorre são possessões, que podem ser temporárias ou, em casos raros, contínuas. Uma entidade espiritual se acopla ao conjurador, tentando assumir o controle.
+- **Possessão:** Podem ser temporárias ou, em casos raros, contínuas. Uma entidade espiritual se acopla ao conjurador, tentando assumir o controle.
 - **Sinais de Posse:** Mudanças sutis no timbre da voz, lapsos de memória, o surgimento de padrões rúnicos involuntários na pele, e uma hipersensibilidade dolorosa a zonas de Barreira fina.
-- **Contramedidas:** Os elfos desenvolveram rituais de exorcismo para expulsar entidades invasoras. Protocolos de isolamento são a primeira medida em Cetra. A prevenção, através da disciplina mental e do respeito aos limites da mana, é a principal defesa.
+- **Contramedidas:** Os elfos desenvolveram rituais de exorcismo para expulsar entidades invasoras. Protocolos de isolamento são a primeira medida em Cetra. A prevenção, através da disciplina mental (saber controlar de mana) e do respeito aos limites da mana, é a principal defesa.
 
 ### Sanções e Ritos Históricos
 
-- **Ritual de Serenidade/Severança:** Um ritual historicamente praticado em Gildrat, conduzido por elfos contratados, que "desliga" a ressonância de um indivíduo com o Reino da Mana. O resultado é um embotamento da capacidade mágica, a perda de sonhos lúcidos e da telepatia, e um forte estigma social. A prática foi abolida em Arcaror, gerando tensão étnica com os reinos humanos que ainda a empregavam como punição.
+- **Ritual de Serenidade/Severança:** Um ritual historicamente praticado em Gildrat, conduzido por ==estudantes/estudios/magos/ e de Cetra, ==que "desliga" a ressonância de um indivíduo com o Reino da Mana. O resultado é um embotamento da capacidade mágica, a perda de sonhos lúcidos e da telepatia, e um forte estigma social. 
+	- 
+	- A prática foi abolida em Arcaror, gerando tensão étnica com os reinos anões que ainda a empregavam como punição.
 
-Salvaguardas
+==- os elfos consideram fazer esse ritual am thorin, la em arcaror (pela conexão)==
+==um dos porquês os elfos não gostam dos anões==
+- links no doc que fala da caça as bruxas/religião/império
+
+**Salvaguardas**
 - Interromper mantra ao primeiro sinal de dessintonia.
 - Preferir mantras longos em operações críticas.
 - Usar Pedras de Estabilização ao combinar elementos.
@@ -307,6 +328,7 @@ Salvaguardas
 ---
 
 ## Progressão (Ênfase Élfica)
+==(tirar)==
 - Ranks (somente elfos): maturidade no uso da mana. Indicadores: comprimento mínimo de sequência estável, capacidade de combinar elementos sem Pedra, autonomia energética, uso de selos mágicos (tatuagens) mais complexos.
 - Progressão dual:
   - Capacidade: quantidade de mana e magnitude sustentável.
@@ -316,7 +338,7 @@ Salvaguardas
 
 ## Exemplos de Conjuração (5 casos)
 Formato: Intenção → Sequência rúnica → Elemento(s) → Custo narrativo → Risco → Resultado
-
+==(tirar)==
 1) Projétil elemental simples
 
 - Intenção: acertar um alvo a 15 m.
@@ -365,7 +387,7 @@ Formato: Intenção → Sequência rúnica → Elemento(s) → Custo narrativo �
 ---
 
 ## História e Sociedade
-
+==(tirar)==
 - **Popularização e Risco:** Durante `A primeira Grande Guerra`, elfos e anões difundiram as Pedras de Runas Mágicas, permitindo que pessoas com baixa afinidade conjurassem efeitos básicos. Essa popularização, no entanto, aumentou o risco de acidentes e o surgimento de um mercado negro de reagentes e pedras contaminadas.
 - **Mercado:** Poções de cura leves são comuns. Pedras autênticas são raras, caras e controladas por instituições como Cetra. Um mercado paralelo de "Profundina" e artefatos corrompidos existe nas sombras, especialmente em Daratrine e Nova Gildrat (Pós fim do jogo Daratrine a Origem).
 - **Normas e Ética:** Rituais élficos regem a concessão de selos mágicos (tatuagens). A ética élfica, centrada na harmonia e no controle, é a base para os rituais públicos e a regulação do uso de magia em Arcaror.
@@ -373,9 +395,8 @@ Formato: Intenção → Sequência rúnica → Elemento(s) → Custo narrativo �
 ---
 
 ## Instituições e Controle
-
+==(deixar, só não aparece muito no jogo atual)==
 ### Cetra
-
 Cetra não é apenas uma torre, mas a principal instituição de formação, regulação e estudo da magia em Ekios.
 
 - **Admissão:** A admissão em Cetra ocorre através de testes de afinidade e potencial, abertos a todas as raças.
@@ -388,7 +409,7 @@ Cetra não é apenas uma torre, mas a principal instituição de formação, reg
 
 A percepção e o uso da magia variam drasticamente entre as culturas e regiões de Ekios.
 
-- **Anões (Gildrat):** Veem a magia com pragmatismo e profundo temor. O medo da possessão espiritual levou à criação de leis anti-magia e a uma dependência histórica de elfos para a execução de rituais de severança, vistos como uma medida de segurança necessária. Ser um mago em Gildrat é viver sob constante suspeita.
+- **Anões (Gildrat):** Veem a magia com pragmatismo e profundo temor. O medo da possessão espiritual levou à criação de leis anti-magia e a uma dependência histórica de ==elfos para a execução de rituais de severança==, vistos como uma medida de segurança necessária. Ser um mago em Gildrat é viver sob constante suspeita.
 - **Elfos (Arcaror):** Possuem uma cultura mágica integrada e hierárquica. A magia é vista como uma arte a ser dominada com disciplina. Eles aboliram o ritual de severança, considerando-o uma mutilação, e em seu lugar, praticam rituais de exorcismo e serenidade para lidar com os perigos espirituais.
 - **Cetra:** Funciona como um território neutro e um centro de excelência. Um mago em Cetra é um estudioso ou um guardião, treinado para entender e mitigar os riscos da magia, agindo como um poder regulador entre as nações.
 
@@ -405,9 +426,9 @@ A percepção e o uso da magia variam drasticamente entre as culturas e regiões
 - **Ritual de Serenidade/Severança:** Antigo ritual que remove a conexão de um indivíduo com o Reino da Mana.
 - **Profundina:** Substância alquímica viciante que amplifica a magia ao custo de corrupção física e espiritual.
 - **Contaminação Rúnica:** A corrupção de uma Pedra de Runa ou de um conjurador por energias perigosas.
-- Mana: energia que alimenta magia.
-- Selo verbal rúnico: palavra/sílaba que define parte da conjuração.
-- Sequência rúnica: frase que combina selos segundo uma ordem.
+- **Mana:** energia que alimenta magia.
+- **Selo verbal rúnico:** palavra/sílaba que define parte da conjuração.
+- **Sequência rúnica:** frase que combina selos segundo uma ordem.
 - Afinidade: facilidade natural com um elemento.
 - Maestria: proficiência adquirida pelo treinamento.
 - Sintonização: alinhamento entre usuário e Pedra.
@@ -419,6 +440,7 @@ A percepção e o uso da magia variam drasticamente entre as culturas e regiões
 
 ## Anexos
 
+(tirar)
 Mini-lista de sílabas rúnicas (exemplos)
 
 - elemento: fogo, vento, raio, terra, água
@@ -442,7 +464,7 @@ Templates de conjuração
 - Este documento é a v3, incorporando a metafísica do Reino da Mana e as regras sociais/de risco, conforme o plano de alteração.
 
 ### Pontos de Coerência
-
+==(tirar)==
 - O documento original é forte em sistema, mas precisa evitar excesso de termos técnicos quando usado em cena.
 - A magia de Thorin deve ser diferente da magia escolar/élfica para preservar sua identidade narrativa.
 - A cultura anã precisa continuar temendo magia, mesmo depois de Thorin provar valor.
@@ -450,12 +472,3 @@ Templates de conjuração
 - O Reino da Mana deve servir ao tema de memória, identidade e inevitabilidade.
 
 ---
-## Conexões
-
-- **Core Concept:** [[1.Core _Concept]]
-- **Conflito e Stakes:** [[Foundation_Details]]
-- **Ancestralismo Imperial:** [[01.6.1_Ancestralismo Imperial]]
-- **Velhas Canções:** [[01.6.2_As Velhas Canções]]
-- **Tecnologia Anã:** [[tecnologia anã]]
-- **Constituição de Gildrat:** [[Constituição de Gildrat]]
-- **Ignotos:** [[raca-ignotos]]

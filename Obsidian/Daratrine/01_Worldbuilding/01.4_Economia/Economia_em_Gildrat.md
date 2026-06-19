@@ -34,8 +34,27 @@ A economia de Gildrat passou a ser sustentada por:
 - produção de bens duráveis;
 - desenvolvimento tecnológico;
 - engenharia; 
+- comércio;
 
 A exploração mineral tornou-se símbolo de progresso e orgulho imperial. Expedições mineradoras movimentam a economia, fortalecem a Guarda de Ferro e impulsionam o crescimento militar de Gildrat.
+
+---
+## Sustento e Produção Alimentar
+
+A sobrevivência de Gildrat depende de um complexo sistema de produção alimentar adaptado à vida subterrânea. Após a Grande Geada, a agricultura tradicional deixou de ser a principal fonte de sustento da população, sendo substituída por métodos de cultivo desenvolvidos para o interior das montanhas.
+
+A produção de alimentos baseia-se principalmente em:
+
+- - **fungos, cogumelos, musgos frios e líquens cultivados** em câmaras subterrâneas aquecidas pelo calor das forjas e das chaminés;
+- **queijo, leite, carne curada e gordura de cabras de montanha**, criadas em encostas frias e recolhidas para cavernas no inverno;
+	- capa-bode-dente de sabre
+- **raízes, ervas resistentes e brotos cultivados em hortas de chaminé**, usando luz solar canalizada por espelhos/cristais, como já existe no Distrito Nobre;
+- **alimentos preservados**: defumados, salgados, fermentados, secos e guardados em celeiros de gelo dentro da montanha;
+- **produtos importados como luxo**, não como base: frutas, grãos raros, especiarias, bebidas, ervas élficas, pinhão/café simbólico da antiga Era do Ouro Verde.
+
+Embora Gildrat mantenha rotas comerciais com outros povos, os alimentos importados possuem papel secundário na sobrevivência da população. Frutas, grãos raros, especiarias e bebidas estrangeiras são consumidos principalmente como artigos de luxo e símbolos de status social.
+
+A autossuficiência alimentar tornou-se uma das prioridades do Império após a Grande Geada. Dessa forma, mineração, metalurgia e engenharia não sustentam apenas a economia: elas mantêm a infraestrutura necessária para a produção de alimento, o armazenamento de recursos e a sobrevivência da população subterrânea.
 
 ---
 ## Moeda e Valor de Troca
@@ -98,4 +117,3 @@ A distribuição de recursos em Gildrat acompanha a rígida estrutura social an�
 Mesmo entre os anões, riqueza não garante prestígio absoluto. Linhagem, memória ancestral e reconhecimento histórico continuam tendo mais valor do que riqueza isolada.
 
 ---
-## Conexões

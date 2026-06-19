@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "915e5ee93bd05837",
+            "id": "a12892d0c641d136",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Geral/CENTRAL DE PRODUÇÃO.md",
+                "file": "Geral/Game Jam/Diálogos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CENTRAL DE PRODUÇÃO"
+              "title": "Diálogos"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 277,
+    "collapsed": true
   },
   "right": {
     "id": "0bb609aeede63ae5",
@@ -184,39 +185,46 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "915e5ee93bd05837",
+  "active": "a12892d0c641d136",
   "lastOpenFiles": [
-    "Geral/Versionamento.md",
+    "Pasted image 20260618112344.png",
+    "Untitled-2026-06-17-0820.png",
+    "Geral/Game Jam/Estrutura Base das Cenas VN2 e VN3.md",
+    "Geral/Game Jam/Estrutura Geral da Narrativa.md",
+    "Geral/Game Jam/Diálogos.md",
+    "Geral/Game Jam/Game Jam.md",
+    "Geral/Game Jam",
+    "{5C16012D-17FF-4B45-B29E-9D5173376014}.png",
     "Geral/CENTRAL DE PRODUÇÃO.md",
-    "Geral",
-    "Daratrine/01_Worldbuilding/01.4_Economia/Alimentação.md",
-    "Daratrine/04_Mechanics/Ludus.md",
-    "Daratrine/01_Worldbuilding/01.4_Economia/Economia_em_Gildrat.md",
-    "Daratrine/01_Worldbuilding/01.6_Religiao/01.6.2.1_Conto - A Gralha-azul, Semeadora de Memórias.md",
-    "Daratrine/01_Worldbuilding/01.2_Politica/Política.md",
-    "Daratrine/01_Worldbuilding/01.7_Tecnologia/Futuro Tecnológico de Gildrat (não presente no período atual do jogo).md",
-    "Daratrine/01_Worldbuilding/01.7_Tecnologia/Tecnologia.md",
+    "Externalizar_documento/Roteiro.md",
     "Daratrine/01_Worldbuilding/01.8_Magia/Magia.md",
-    "Daratrine/01_Worldbuilding/01.6_Religiao/01.6.3_Cultos Ignotos.md",
-    "Daratrine/01_Worldbuilding/01.6_Religiao/01.6.2_As Velhas Canções.md",
-    "Daratrine/01_Worldbuilding/01.6_Religiao/01.6.1_Ancestralismo Imperial.md",
-    "Daratrine/01_Worldbuilding/01.5_Social/Organização Social de Gildrat.md",
-    "Daratrine/01_Worldbuilding/01.1_Leis/Constituição de Gildrat.md",
-    "Daratrine/00_Foundation/00.2_Fundation_details/Foundation_Details.md",
-    "Daratrine/00_Foundation/00.3_Tone_Vibe/Tone_Vibe.md",
-    "Daratrine/00_Foundation/00.1_Core_Concept/DARATRINE — CORE CONCEPT (VERSÃO COMERCIAL).md",
-    "Daratrine/00_Foundation/00.1_Core_Concept/1.Core _Concept.md",
-    "Daratrine/000_Entrevistas/Dúvidas Quests.md",
-    "Daratrine/000_Entrevistas/Gralha-azul.md",
-    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/Geografia_e_Arquitetura.md",
+    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat/01.3.2_Locais/01.3.7_Outros.md",
     "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/Pesquisa.md",
-    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.2_Gildrat.md",
-    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Continente_Ekios.md",
-    "Geral/Softwares_relevantes.md",
+    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat/01.3.2_Locais/01.3.6_Mina_de_Esgoto.md",
+    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat/01.3.2_Locais/01.3.5_Castelo_de_Damburr_Sala_do_Conselho.md",
+    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat/01.3.2_Locais/01.3.4_Casa_da_família_Forjaprata.md",
+    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat/01.3.2_Locais/01.3.3_Distrito_Residencial.md",
+    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat/Gildrat falta.md",
+    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/Índice_Geral_Geografia_Arquitetura.md",
+    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Ekios/Geografia_e_arquitetura_continente_ekios.md",
+    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Ekios/Continente_Ekios.md",
+    "Daratrine/01_Worldbuilding/01.7_Tecnologia/Futuro Tecnológico de Gildrat (não presente no período atual do jogo).md",
+    "Daratrine/01_Worldbuilding/01.4_Economia/Alimentação.md",
+    "Daratrine/01_Worldbuilding/01.4_Economia/Economia_em_Gildrat.md",
+    "Externalizar_documento",
+    "Daratrine/00_Foundation/00.1_Core_Concept/1.Core _Concept.md",
+    "Daratrine/04_Mechanics/Ludus.md",
+    "Daratrine/01_Worldbuilding/01.6_Religiao/01.6.2.1_Conto - A Gralha-azul, Semeadora de Memórias.md",
+    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat/01.3.2_Gildrat.md",
+    "Daratrine/0100_Imagens/{B08D7607-75D5-4964-A7A5-9CC4C6C2A897}.png",
+    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Ekios",
+    "Daratrine/01_Worldbuilding/01.2_Politica/Política.md",
+    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat",
+    "Geral",
     "Daratrine/0100_Imagens/Pasted image 20260605100737.png",
     "Daratrine/0100_Imagens/Pasted image 20260605100810.png",
     "Sem título.canvas",
-    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.03_Locais",
+    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat/01.3.2_Locais",
     "Daratrine/0100_Imagens/Pasted image 20260511160348 1.png"
   ]
 }

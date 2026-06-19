@@ -1,8 +1,7 @@
 #### **Daily**
 - [ ] Ver magia
-- [ ] Ver Conto da Gralha Azul
-- [ ] Ver/validar alimentação/economia
-- [ ] Ver Ludus/mecânica (compensa agora ou mais pra frente?)
+- [ ] Ver política
+- [ ] Ver Geo/arq (Ekios e Gildrat)
 
 #### **Revisar docs**
 - [ ] *Economia*
@@ -11,7 +10,11 @@
 #### **Fazer docs:**
 - [ ] Quest na Twine
 - [ ] Geo/Arq
-- [ ] LER O NOTION PARA BATER INFOS
+	- [x] Ekios 
+	- [x] Adicionar ekios-ecossistema-inimigos?
+	- [x] Gildrat
+	- [ ] Locais
+- [x] LER O NOTION PARA BATER INFOS
 
 #### **Outros:**
 - [ ] Jogar releese e anotar dificuldades
@@ -19,33 +22,33 @@
 
 # **Progresso Geral dos Documentos**
 
-| **Documento**           | **Status**                         |
-| ----------------------- | ---------------------------------- |
-| **FOUNDATION**          |                                    |
-| Core Concepts           | 🟢 Aprovado                        |
-| Foundation Details      | 🟢 Aprovado                        |
-| Tom & Vibe              | 🟢 Aprovado                        |
-| **WORLDBUILDING**       |                                    |
-| Leis                    | 🟢 Aprovado                        |
-| Política                | 🟠 Em desenvolvimento (quase)      |
-| Economia                | 🟡 Em revisão                      |
-| Religião                | 🟢 Aprovado                        |
-| Conto da Gralha Azul    | 🔵 Pronto para aprovação           |
-| Social                  | 🟢 Aprovado                        |
-| Geografia/Arquitetura   | 🟠 Em desenvolvimento              |
-| Tecnologia              | 🟢 Aprovado                        |
-| Magia                   | 🔵 Pronto para aprovação           |
-| **ATLAS FOLK**          |                                    |
-| Raças e Espécies        | ⚪ Não iniciado                     |
-| Protagonistas           | ⚪ Não iniciado                     |
-| Personagens Importantes | ⚪ Não iniciado                     |
-| NPCs e Antagonistas     | ⚪ Não iniciado                     |
-| **NARRATIVA**           | ⚪ Não iniciado                     |
-| Game Timeline           | ⚪ Não iniciado                     |
-| Quests                  | ⚪ Não iniciado                     |
-| **MECÂNICA**            |                                    |
-| Mecânica de Descisões   | ⚪ Não iniciado                     |
-| Ludus                   | 🔵 Pronto para aprovação (dúvidas) |
+| **Documento**           | **Status**                                 |
+| ----------------------- | ------------------------------------------ |
+| **FOUNDATION**          |                                            |
+| Core Concepts           | 🟢 Aprovado                                |
+| Foundation Details      | 🟢 Aprovado                                |
+| Tom & Vibe              | 🟢 Aprovado                                |
+| **WORLDBUILDING**       |                                            |
+| Leis                    | 🟢 Aprovado                                |
+| Política                | 🔵 Pronto para aprovação                   |
+| Economia                | 🟡 Em revisão                              |
+| Religião                | 🟢 Aprovado                                |
+| Conto da Gralha Azul    | 🟢 Aprovado                                |
+| Social                  | 🟢 Aprovado                                |
+| Geografia/Arquitetura   | 🟠 Em desenvolvimento                      |
+| Tecnologia              | 🟢 Aprovado                                |
+| Magia                   | 🟢 Aprovado                                |
+| **ATLAS FOLK**          |                                            |
+| Raças e Espécies        | ⚪ Não iniciado                             |
+| Protagonistas           | ⚪ Não iniciado                             |
+| Personagens Importantes | ⚪ Não iniciado                             |
+| NPCs e Antagonistas     | ⚪ Não iniciado                             |
+| **NARRATIVA**           | ⚪ Não iniciado                             |
+| Game Timeline           | ⚪ Não iniciado                             |
+| Quests                  | ⚪ Não iniciado                             |
+| **MECÂNICA**            |                                            |
+| Mecânica de Descisões   | ⚪ Não iniciado                             |
+| Ludus                   | 🔵 Pronto para aprovação (mais pra frente) |
 
 ---
 🟢 Aprovado 
