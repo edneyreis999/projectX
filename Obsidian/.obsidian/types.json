@@ -4,6 +4,8 @@
     "cssclasses": "multitext",
     "tags": "tags",
     "ato": "number",
-    "conflito_tipo": "multitext"
+    "conflito_tipo": "text",
+    "lideranca": "text",
+    "filiacao_principal": "text"
   }
 }

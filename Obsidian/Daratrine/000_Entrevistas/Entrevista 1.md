@@ -160,8 +160,14 @@ Nesse contexto:
 
 
 **Arco 1: quem é thorin e os personagens**
+- ATÉ A VOLTA DE KRAVENS
 **Arco 2: como é a quebra do selo (conflito político de gildrat)**
+- CHEGADA EM GILDRAT, COM A CIDADE JÁ CHEIA DE MOTINS
+- DABURR "COMPRA OS REBELDES" E PRECISA DE MAIS $
+- REUNIÃO DO CONSELHO: ENVIA A GALERA PARA MELIOS
 **Arco 3: como lidam com magia (consequência)**
+- VOLTA DE MELIOS
+- DEPOIS DA QUEBRA DO SELO/IGNOTOS 
 
 ---
 
@@ -306,6 +312,13 @@ Também existirão: NPC de recuperação de status.
 - moeda dos anões;
 - mais representativa do mundo.
 Status: cortada do escopo por enquanto.
+
+moeda oficial do império
+usava para comércio interno e externo
+controle de importos também
+==- não usam escambo mais; primeira raça que usa/inventou a moeda
+- anões usam Drakeis; na praça de troca as coisas são trocadas em Drakel
+- outras raças precisam de Drakel para comprar; mas essa moeda não é do continente/outras raças/sociedades
 #### Kraven
 - minério.
     
@@ -345,9 +358,47 @@ anões
 timeline historia do jogo v5
 ---
 
+#### Alimentação
+==da onde vem um alimento? eles trocam? o que comem? da onde conseguem?
+só troca traz ideia frágil para o império==
+==- não tem definido o que eles comem
+- comem pedra?
 
 ## Estrutura Emocional
 
 O jogo parece convergir para:
 
 > Um mundo inevitavelmente em colapso, onde o verdadeiro papel do jogador não é salvar o destino — mas decidir o que ainda vale a pena preservar.
+
+
+
+Anotações Gerais
+
+*(Tusk não existe mais)*
+*Vitasolis é um deus na mitologia dos Ignotos - representado pelo Sol*
+*O universo tem Dois Sois: Vitasolis e um menor* 
+
+
+O Profeta das Sombras
+
+- **Conexão:** Ele busca o momento da *quebra do selo* para sua libertação e vingança sobre Ekios e Vitasolis. 
+		*- como ele influencia a quebra do selo? nos sonhos?*
+		*- entra nos solnhos de Dambur, outros membros, Balastrus principalmente* (ganancioso, quebra o selo, se arrepende mais pra frente)
+	- *Flashbacks, cenas explicativas, sonhos (a mãe de Thorin poderia "puxar Thorin" do sonho dele para o sonho de outras pessoas, par amostrarmos o profeta influenciando a ganacia dos anões) 
+
+
+**==ORGANIZAÇÃO IGNOTOS:==**
+- **alquimia e magia**
+- **organização social:**
+		- grupo que comanda (hierarquia estilo pirâmide; profeta das sombras é o "CEO", topo da pirâmide) e grupo que executa (povo)
+- desenvolveram drogas para aumentar a produtividade (tipo adrenalina, transforma o ignoto em um super-ignoto) 
+	- droga feita de alquimia e pelo grupo que controla
+	- o povo é viciado e comandado pelo "grupo que comanda"
+	- grupo que comanda usa, mas pouco e com controle e posse
+- precisam ir para superfície pois lá tem recurso em abundância, e onde eles estão o recurso está escasso; esses recursos são usadas para produção de substância/droga  
+		- recursos para alquimia: coisas vivas (de ervas à sangue de anões, elfos etc)
+	
+==ver doc dos ignotos (em raças e notion)
+
+
+DIVISÕES

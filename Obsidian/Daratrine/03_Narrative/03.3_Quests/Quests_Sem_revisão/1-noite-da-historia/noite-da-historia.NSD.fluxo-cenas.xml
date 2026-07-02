@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  🎮 Narrative Structure Document (NSD) - Noite da História
+
+  Quest de abertura do jogo Daratrine - A Origem
+  O jogador controla uma criança orc que chega atrasada para a Noite da História,
+  onde Theodore Rheed narrará a história principal do jogo.
+
+  Histórico de Versões:
+  - v1.0: Documento inicial criado a partir de entrevista interativa
+    * Data: 2026-02-16
+    * Autor: Edney
+-->
+<nsd:document xmlns:nsd="https://coreto.projectX/nsd/schema/v1"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="https://coreto.projectX/nsd/schema/v1 nsd-schema.xsd">
+
+  <!-- ========================================
+       1️⃣ RESUMO GERAL (Checkpoint 0)
+       ======================================== -->
+  <nsd:checkpoint id="0" title="Resumo Geral" status="completed">
+    <nsd:metadata>
+      <nsd:questName>noite-da-historia</nsd:questName>
+      <nsd:campaignImportance>Main + Tutorial</nsd:campaignImportance>
+      <nsd:controlVariable>
+        <nsd:id>026</nsd:id>
+        <nsd:name>v_qNoite_progress</nsd:name>
+      </nsd:controlVariable>
+      <nsd:narrativeArc>Mundo Comum</nsd:narrativeArc>
+      <nsd:previousQuest>Nenhuma</nsd:previousQuest>
+      <nsd:version>1.0</nsd:version>
+      <nsd:lastUpdated>2026-02-16</nsd:lastUpdated>
+      <nsd:author>Edney</nsd:author>
+    </nsd:metadata>
+
+    <!-- ========================================
+         INPUT_NEEDS - Decisões resolvidas
+         ======================================== -->
+    <nsd:inputNeeds>
+      <nsd:need id="NEED_001"
+                kind="narrative"
+                priority="non_blocker"
+                status="answered">
+        <nsd:question>Qual é o nome padrão que Rheed sugere ao jogador?</nsd:question>
+        <nsd:options>
+          <nsd:option id="A">Dulgarin</nsd:option>
+        </nsd:options>
+        <nsd:defaultAssumption option_id="A">Dulgarin</nsd:defaultAssumption>
+        <nsd:impact>
+          <nsd:if option_id="A">Nome padrão do jogador será Dulgarin</nsd:if>
+        </nsd:impact>
+        <nsd:neededBy>before_implementation</nsd:neededBy>
+        <nsd:owner>user</nsd:owner>
+        <nsd:trace>
+          <nsd:checkpointRef>2</nsd:checkpointRef>
+          <nsd:sceneRef>3</nsd:sceneRef>
+          <nsd:beatRef>D</nsd:beatRef>
+        </nsd:trace>
+      </nsd:need>
+
+      <nsd:need id="NEED_002"
+                kind="technical"
+                priority="non_blocker"
+                status="answered">
+        <nsd:question>Onde exatamente cada criança deve ficar posicionada após o 5º passo?</nsd:question>
+        <nsd:options>
+          <nsd:option id="A">No centro da praça</nsd:option>
+        </nsd:options>
+        <nsd:defaultAssumption option_id="A">No centro da praça</nsd:defaultAssumption>
+        <nsd:impact>
+          <nsd:if option_id="A">Crianças se posicionam no centro da praça após o 5º passo do jogador</nsd:if>
+        </nsd:impact>
+        <nsd:neededBy>before_implementation</nsd:neededBy>
+        <nsd:owner>designer</nsd:owner>
+        <nsd:trace>
+          <nsd:checkpointRef>2</nsd:checkpointRef>
+          <nsd:sceneRef>1</nsd:sceneRef>
+          <nsd:beatRef>E</nsd:beatRef>
+        </nsd:trace>
+      </nsd:need>
+
+      <nsd:need id="NEED_003"
+                kind="gameplay"
+                priority="non_blocker"
+                status="answered">
+        <nsd:question>Qual é o texto exato da task no log de quests?</nsd:question>
+        <nsd:options>
+          <nsd:option id="A">"Encontre um lugar para sentar próximo às crianças"</nsd:option>
+        </nsd:options>
+        <nsd:defaultAssumption option_id="A">"Encontre um lugar para sentar próximo às crianças"</nsd:defaultAssumption>
+        <nsd:impact>
+          <nsd:if option_id="A">Task aparece com este texto exato no log de quests</nsd:if>
+        </nsd:impact>
+        <nsd:neededBy>before_implementation</nsd:neededBy>
+        <nsd:owner>designer</nsd:owner>
+        <nsd:trace>
+          <nsd:checkpointRef>2</nsd:checkpointRef>
+          <nsd:sceneRef>2</nsd:sceneRef>
+          <nsd:beatRef>D</nsd:beatRef>
+        </nsd:trace>
+      </nsd:need>
+    </nsd:inputNeeds>
+
+    <nsd:narrativeCore>
+      <nsd:centralConflict>
+        <nsd:description>O jogador (criança orc) está atrasado para a Noite da História, onde Theodore Rheed está começando a contar a história principal do jogo no Coreto da Cidade de Daratrine.</nsd:description>
+        <nsd:protagonistVs>Criança Orc vs. Tempo (atrasada para o evento)</nsd:protagonistVs>
+      </nsd:centralConflict>
+
+      <nsd:narrativeObjective>
+        <nsd:global>Conhecer a atmosfera do jogo e estabelecer que toda a história do jogo será contada por Theodore Rheed na Noite da História. Esta é uma quest de abertura com estrutura meta-narrativa (frame story).</nsd:global>
+        <nsd:emotionalTarget>Curiosidade, imersão no mundo, senso de urgência inicial (atraso)</nsd:emotionalTarget>
+      </nsd:narrativeObjective>
+
+      <nsd:premise>
+        <nsd:brief>O jogador controla uma criança orc que chega atrasada à Noite da História no Coreto, onde Rheed narrará a história principal. Crianças eufóricas correm pelo mapa. O jogador deve falar com Darla (Elfa assistente de Rheed), que o direciona ao seu lugar. Rheed desce, brinca com o atraso, pergunta o nome (com sugestão editável), volta ao Coreto e inicia a narrativa. Uma cutscene transporta o jogador para Gildrat, onde passa a controlar Thorin, um jovem anão dormindo.</nsd:brief>
+        <nsd:full>O jogador sob o controle de uma criança orc chega atrasada na noite da história, onde Rheed está contando a história principal da noite no Coreto da Cidade de Daratrine. As crianças estão eufóricas correndo aleatoriamente pelo mapa esperando a história começar. O jogador deve ir em direção a uma Elfa chamada Darla, que ajuda Rheed a organizar as crianças. Ao conversar com ela, a Elfa diz ao jogador que ele deve ir no seu lugar que a história já iria começar. Ao chegar no seu lugar, Rheed desce do Coreto e vai em direção ao jogador, brinca com o fato dele ter chego atrasado e pergunta seu nome. O jogo dá uma sugestão de nome, mas o jogador pode alterar se ele quiser. Depois de fornecer o nome, Rheed volta até o Coreto e começa a história. Inicia-se um vídeo de cutscene que transporta o jogador para Gildrat onde ele controla Thorin, um jovem anão que está dormindo.</nsd:full>
+      </nsd:premise>
+    </nsd:narrativeCore>
+
+    <nsd:locations>
+      <nsd:location id="LOC_001">
+        <nsd:name>Coreto - Praça Central de Daratrine</nsd:name>
+        <nsd:mapId>005</nsd:mapId>
+        <nsd:description>Local principal onde Theodore Rheed conta histórias para as crianças da cidade. Praça central ao ar livre.</nsd:description>
+      </nsd:location>
+    </nsd:locations>
+
+    <nsd:characters>
+      <nsd:character id="CHAR_001" role="protagonist">
+        <nsd:name>Criança Orc</nsd:name>
+        <nsd:roleInQuest>Personagem controlável pelo jogador. Representa a audiência infantil que ouvirá a história de Rheed.</nsd:roleInQuest>
+        <nsd:importance>Principal</nsd:importance>
+      </nsd:character>
+
+      <nsd:character id="CHAR_002" role="mentor">
+        <nsd:name>Theodore Rheed</nsd:name>
+        <nsd:roleInQuest>Narrador da história principal do jogo. Personagem carismático que conta histórias para as crianças no Coreto.</nsd:roleInQuest>
+        <nsd:importance>Principal</nsd:importance>
+      </nsd:character>
+
+      <nsd:character id="CHAR_003" role="npc">
+        <nsd:name>Darla</nsd:name>
+        <nsd:roleInQuest>Elfa assistente de Rheed. Ajuda a organizar as crianças e direciona o jogador ao seu lugar.</nsd:roleInQuest>
+        <nsd:importance>Principal</nsd:importance>
+      </nsd:character>
+
+      <nsd:character id="CHAR_004" role="npc">
+        <nsd:name>Crianças (Plano de Fundo)</nsd:name>
+        <nsd:roleInQuest>Crianças eufóricas correndo pelo mapa, não-interativas, apenas para ambientação.</nsd:roleInQuest>
+        <nsd:importance>Secundário</nsd:importance>
+      </nsd:character>
+    </nsd:characters>
+
+    <nsd:mechanics>
+      <nsd:mechanic id="MECH_001">
+        <nsd:name>Movimento básico</nsd:name>
+        <nsd:type>Tutorial</nsd:type>
+        <nsd:description>Jogador pode se movimentar livremente pelo mapa. Primeira interação com os controles do jogo.</nsd:description>
+      </nsd:mechanic>
+
+      <nsd:mechanic id="MECH_002">
+        <nsd:name>Interação com NPCs</nsd:name>
+        <nsd:type>Tutorial</nsd:type>
+        <nsd:description>Conversar com Darla para progredir na quest. Primeira interação de diálogo.</nsd:description>
+      </nsd:mechanic>
+
+      <nsd:mechanic id="MECH_003">
+        <nsd:name>Definição de nome do personagem</nsd:name>
+        <nsd:type>Novo</nsd:type>
+        <nsd:description>Rheed pergunta o nome do jogador, que pode aceitar a sugestão "Dulgarin" ou digitar um nome próprio.</nsd:description>
+      </nsd:mechanic>
+
+      <nsd:mechanic id="MECH_004">
+        <nsd:name>Log de Quests</nsd:name>
+        <nsd:type>Tutorial</nsd:type>
+        <nsd:description>Sistema de quests é apresentado com a task "Encontre um lugar para sentar próximo às crianças".</nsd:description>
+      </nsd:mechanic>
+
+      <nsd:mechanic id="MECH_005">
+        <nsd:name>Restrição de Menu</nsd:name>
+        <nsd:type>Tutorial</nsd:type>
+        <nsd:description>Menu é bloqueado durante esta quest. Jogador só pode se movimentar e falar com NPCs.</nsd:description>
+      </nsd:mechanic>
+    </nsd:mechanics>
+  </nsd:checkpoint>
+
+  <!-- ========================================
+       2️⃣ PRÉ-CONDICOES NARRATIVAS (Checkpoint 1)
+       ======================================== -->
+  <nsd:checkpoint id="1" title="Pré-condições Narrativas" status="completed">
+    <nsd:prerequisites>
+      <nsd:flagsAndDecisions>
+        <nsd:flag id="FLAG_001">
+          <nsd:description>Nenhuma - Esta é a primeira quest do jogo (abertura)</nsd:description>
+          <nsd:source>N/A</nsd:source>
+          <nsd:required>false</nsd:required>
+        </nsd:flag>
+      </nsd:flagsAndDecisions>
+
+      <nsd:protagonistState>
+        <nsd:emotional>Apressado/Ansioso</nsd:emotional>
+        <nsd:physical>Normal</nsd:physical>
+        <nsd:mental>Preocupado com o atraso, focado em chegar a tempo</nsd:mental>
+      </nsd:protagonistState>
+
+      <nsd:limitations>
+        <nsd:blockage id="BLOCK_001">
+          <nsd:type>Menu</nsd:type>
+          <nsd:description>Menu bloqueado durante esta quest</nsd:description>
+          <nsd:duration>Temporário - Durante toda a quest</nsd:duration>
+        </nsd:blockage>
+      </nsd:limitations>
+    </nsd:prerequisites>
+  </nsd:checkpoint>
+
+  <!-- ========================================
+       3️⃣ FLUXO VISUAL DE CENAS (Checkpoint 2)
+       ======================================== -->
+  <nsd:checkpoint id="2" title="Fluxo Visual de Cenas" status="completed">
+
+    <!-- Tabela de Cenas - Visão geral -->
+    <nsd:scenesOverview>
+      <nsd:scene id="1">
+        <nsd:name>Introdução ao Cenário</nsd:name>
+        <nsd:chronology>Jogador aparece no canto inferior da tela → Câmera faz pan até Darla → Jogador ganha controle de movimento → Crianças se movem aleatoriamente até o 5º passo → Crianças vão para suas posições</nsd:chronology>
+        <nsd:premise>Introdução ao cenário e estabelecimento do objetivo de falar com Darla</nsd:premise>
+      </nsd:scene>
+
+      <nsd:scene id="2">
+        <nsd:name>Darla Direciona o Jogador</nsd:name>
+        <nsd:chronology>Jogador vai até Darla e inicia diálogo → Câmera faz pan para o lugar do jogador → Brilho aparece no chão → Log de quests abre com task</nsd:chronology>
+        <nsd:premise>Darla direciona o jogador ao seu lugar para ouvir Rheed</nsd:premise>
+      </nsd:scene>
+
+      <nsd:scene id="3">
+        <nsd:name>Rheed Interage com o Jogador</nsd:name>
+        <nsd:chronology>Jogador vai até a marcação → Rheed fala "Olha quem chegou atrasado" → Rheed anda até o jogador → Rheed pergunta o nome → Jogador escolhe o nome → Rheed saúda e volta ao centro → Rheed se vira para as crianças → Rheed introduz Daratrine → Rheed toma a poção → Rheed assopra fumaça → Inicia-se o vídeo de Ekios</nsd:chronology>
+        <nsd:premise>Rheed interage com o jogador e conhece seu nome</nsd:premise>
+      </nsd:scene>
+
+      <nsd:scene id="4">
+        <nsd:name>Transição Meta-narrativa</nsd:name>
+        <nsd:chronology>Vídeo mostra mapa de Ekios → Câmera percorre o mapa → Zoom em Gildrat → Transição para cutscene de jogo → Thorin aparece dormindo na cama</nsd:chronology>
+        <nsd:premise>Transição meta-narrativa para a história principal</nsd:premise>
+      </nsd:scene>
+    </nsd:scenesOverview>
+
+    <!-- Árvore de Cenas (formato ASCII) -->
+    <nsd:sceneTree format="ascii">
+      <nsd:text>
+        <![CDATA[
+        Quest: Noite da História
+         ├── Cena 1: Introdução ao Cenário
+         │      ├── Beat A: Spawn do jogador
+         │      ├── Beat B: Pan da câmera até Darla
+         │      ├── Beat C: Liberação de movimento
+         │      ├── Beat D: Crianças se movendo aleatoriamente
+         │      └── Beat E: Crianças vão para suas posições
+         ├── Cena 2: Darla Direciona o Jogador
+         │      ├── Beat A: Falar com a elfa
+         │      ├── Beat B: Pan da câmera para o lugar
+         │      ├── Beat C: Brilho no chão
+         │      └── Beat D: Abrir log de quests
+         ├── Cena 3: Rheed Interage com o Jogador
+         │      ├── Beat A: Jogador vai até a marcação
+         │      ├── Beat B: Rheed fala "Olha quem chegou atrasado"
+         │      ├── Beat C: Rheed anda até o jogador
+         │      ├── Beat D: Rheed pergunta o nome
+         │      ├── Beat E: Jogador escolhe o nome
+         │      ├── Beat F: Rheed saúda e volta ao centro
+         │      ├── Beat G: Rheed se vira para as crianças
+         │      ├── Beat H: Rheed introduz Daratrine
+         │      ├── Beat I: Rheed toma a poção
+         │      ├── Beat J: Rheed assopra fumaça
+         │      └── Beat K: Inicia-se o vídeo de Ekios
+         └── Cena 4: Transição Meta-narrativa
+                └── Beat A: Thorin dormindo (cutscene jogo)
+        ]]>
+      </nsd:text>
+    </nsd:sceneTree>
+
+    <!-- Detalhamento por Cena com Beats -->
+    <nsd:scenesDetailed>
+      <nsd:scene id="1">
+        <nsd:name>Introdução ao Cenário</nsd:name>
+        <nsd:mapId>005</nsd:mapId>
+
+        <nsd:beats>
+          <nsd:beat id="A">
+            <nsd:title>Spawn do Jogador</nsd:title>
+            <nsd:premise>Jogador aparece no canto inferior da tela</nsd:premise>
+            <nsd:type>🎬 Cutscene</nsd:type>
+            <nsd:details>
+              <nsd:cameraMovement>Spawn no canto inferior inferior esquerdo</nsd:cameraMovement>
+            </nsd:details>
+          </nsd:beat>
+
+          <nsd:beat id="B">
+            <nsd:title>Pan da Câmera</nsd:title>
+            <nsd:premise>Câmera faz um pan até a elfa Darla</nsd:premise>
+            <nsd:type>🎬 Cutscene</nsd:type>
+            <nsd:details>
+              <nsd:cameraMovement>Pan suave até localizar Darla</nsd:cameraMovement>
+            </nsd:details>
+          </nsd:beat>
+
+          <nsd:beat id="C">
+            <nsd:title>Liberação de Movimento</nsd:title>
+            <nsd:premise>Jogador ganha controle de movimento</nsd:premise>
+            <nsd:type>🎮 Gameplay</nsd:type>
+            <nsd:details>
+              <nsd:triggerConditions>Após pan da câmera completar</nsd:triggerConditions>
+            </nsd:details>
+          </nsd:beat>
+
+          <nsd:beat id="D">
+            <nsd:title>Crianças se Movendo Aleatoriamente</nsd:title>
+            <nsd:premise>Crianças de fundo se mexem aleatoriamente até o 5º passo do jogador</nsd:premise>
+            <nsd:type>🎮 Gameplay</nsd:type>
+            <nsd:details>
+              <nsd:triggerConditions>Contador de passos do jogador (máximo 5)</nsd:triggerConditions>
+            </nsd:details>
+          </nsd:beat>
+
+          <nsd:beat id="E">
+            <nsd:title>Crianças se Posicionam</nsd:title>
+            <nsd:premise>Após o 5º passo, as crianças vão cada uma para sua posição no centro da praça</nsd:premise>
+            <nsd:type>🎬 Cutscene</nsd:type>
+            <nsd:details>
+              <nsd:triggerConditions>Após 5º passo do jogador</nsd:triggerConditions>
+              <nsd:cameraMovement>Crianças andam até suas posições no centro da praça</nsd:cameraMovement>
+            </nsd:details>
+          </nsd:beat>
+        </nsd:beats>
+      </nsd:scene>
+
+      <nsd:scene id="2">
+        <nsd:name>Darla Direciona o Jogador</nsd:name>
+        <nsd:mapId>005</nsd:mapId>
+
+        <nsd:beats>
+          <nsd:beat id="A">
+            <nsd:title>Falar com a Elfa</nsd:title>
+            <nsd:premise>Jogador inicia diálogo com Darla</nsd:premise>
+            <nsd:type>🎮 Gameplay</nsd:type>
+            <nsd:details>
+              <nsd:triggerConditions>Proximidade com Darla + interação</nsd:triggerConditions>
+              <nsd:dialogueRefs>Diálogo inicial de Darla</nsd:dialogueRefs>
+            </nsd:details>
+          </nsd:beat>
+
+          <nsd:beat id="B">
+            <nsd:title>Pan da Câmera</nsd:title>
+            <nsd:premise>Câmera faz pan para o lugar que o jogador deve ir</nsd:premise>
+            <nsd:type>🎬 Cutscene</nsd:type>
+            <nsd:details>
+              <nsd:cameraMovement>Pan para indicar localização</nsd:cameraMovement>
+              <nsd:triggerConditions>Ao final do diálogo com Darla</nsd:triggerConditions>
+            </nsd:details>
+          </nsd:beat>
+
+          <nsd:beat id="C">
+            <nsd:title>Brilho no Chão</nsd:title>
+            <nsd:premise>Aparece brilho/marcador no chão indicando onde o jogador deve ir</nsd:premise>
+            <nsd:type>🎬 Cutscene</nsd:type>
+            <nsd:details>
+              <nsd:triggerConditions>Após pan da câmera</nsd:triggerConditions>
+            </nsd:details>
+          </nsd:beat>
+
+          <nsd:beat id="D">
+            <nsd:title>Abrir Log de Quests</nsd:title>
+            <nsd:premise>Abre o log de quests mostrando a task de "Encontre um lugar para sentar próximo às crianças"</nsd:premise>
+            <nsd:type>🎮 Gameplay</nsd:type>
+            <nsd:details>
+              <nsd:triggerConditions>Após brilho aparecer no chão</nsd:triggerConditions>
+            </nsd:details>
+          </nsd:beat>
+        </nsd:beats>
+      </nsd:scene>
+
+      <nsd:scene id="3">
+        <nsd:name>Rheed Interage com o Jogador</nsd:name>
+        <nsd:mapId>005</nsd:mapId>
+
+        <nsd:beats>
+          <nsd:beat id="A">
+            <nsd:title>Jogador vai até a Marcação</nsd:title>
+            <nsd:premise>Jogador se move até o brilho/marcador no chão</nsd:premise>
+            <nsd:type>🎮 Gameplay</nsd:type>
+            <nsd:details>
+              <nsd:triggerConditions>Proximidade com o brilho no chão</nsd:triggerConditions>
+            </nsd:details>
+          </nsd:beat>
+
+          <nsd:beat id="B">
+            <nsd:title>Rheed Fala</nsd:title>
+            <nsd:premise>Rheed comenta o atraso do jogador: "Olha quem chegou atrasado"</nsd:premise>
+            <nsd:type>🎬 Cutscene</nsd:type>
+            <nsd:details>
+              <nsd:triggerConditions>Jogador chega na marcação</nsd:triggerConditions>
+              <nsd:dialogueRefs>Rheed: "Olha quem chegou atrasado"</nsd:dialogueRefs>
+            </nsd:details>
+          </nsd:beat>
+
+          <nsd:beat id="C">
+            <nsd:title>Rheed Anda Até o Jogador</nsd:title>
+            <nsd:premise>Rheed se aproxima do jogador</nsd:premise>
+            <nsd:type>🎬 Cutscene</nsd:type>
+            <nsd:details>
+              <nsd:cameraMovement>Rheed desce do Coreto e anda até o jogador</nsd:cameraMovement>
+            </nsd:details>
+          </nsd:beat>
+
+          <nsd:beat id="D">
+            <nsd:title>Rheed Pergunta o Nome</nsd:title>
+            <nsd:premise>Rheed solicita o nome do jogador, com sugestão pré-definida "Dulgarin"</nsd:premise>
+            <nsd:type>🎮 Gameplay</nsd:type>
+            <nsd:details>
+              <nsd:dialogueRefs>Rheed pergunta o nome do jogador</nsd:dialogueRefs>
+            </nsd:details>
+          </nsd:beat>
+
+          <nsd:beat id="E">
+            <nsd:title>Jogador Escolhe o Nome</nsd:title>
+            <nsd:premise>Jogador aceita sugestão "Dulgarin" ou digita nome próprio em menu</nsd:premise>
+            <nsd:type>🎮 Gameplay</nsd:type>
+            <nsd:details>
+              <nsd:dialogueRefs>Menu de input de nome com sugestão "Dulgarin"</nsd:dialogueRefs>
+            </nsd:details>
+          </nsd:beat>
+
+          <nsd:beat id="F">
+            <nsd:title>Rheed Volta ao Centro</nsd:title>
+            <nsd:premise>Rheed se despede brevemente e retorna ao centro do Coreto</nsd:premise>
+            <nsd:type>🎬 Cutscene</nsd:type>
+            <nsd:details>
+              <nsd:cameraMovement>Rheed volta ao centro do Coreto</nsd:cameraMovement>
+              <nsd:dialogueRefs>Rheed se despede usando o nome escolhido</nsd:dialogueRefs>
+            </nsd:details>
+          </nsd:beat>
+
+          <nsd:beat id="G">
+            <nsd:title>Rheed se Vira para as Crianças</nsd:title>
+            <nsd:premise>Rheed se volta para o público infantil</nsd:premise>
+            <nsd:type>🎬 Cutscene</nsd:type>
+            <nsd:details>
+              <nsd:cameraMovement>Rheed se posiciona voltado para as crianças</nsd:cameraMovement>
+            </nsd:details>
+          </nsd:beat>
+
+          <nsd:beat id="H">
+            <nsd:title>Rheed Introduz Daratrine</nsd:title>
+            <nsd:premise>Rheed começa a contar a história, introduzindo o início de Daratrine e atiçando a curiosidade</nsd:premise>
+            <nsd:type>🎬 Cutscene</nsd:type>
+            <nsd:details>
+              <nsd:dialogueRefs>Rheed narra a introdução de Daratrine</nsd:dialogueRefs>
+              <nsd:music>BGM narrativo/místico</nsd:music>
+            </nsd:details>
+          </nsd:beat>
+
+          <nsd:beat id="I">
+            <nsd:title>Rheed Toma a Poção</nsd:title>
+            <nsd:premise>Rheed consome uma poção mágica</nsd:premise>
+            <nsd:type>🎬 Cutscene</nsd:type>
+            <nsd:details>
+              <nsd:soundEffects>Som de poção mágica</nsd:soundEffects>
+            </nsd:details>
+          </nsd:beat>
+
+          <nsd:beat id="J">
+            <nsd:title>Rheed Assopra Fumaça</nsd:title>
+            <nsd:premise>Rheed assopra uma nuvem de fumaça sobre a praça</nsd:premise>
+            <nsd:type>🎬 Cutscene</nsd:type>
+            <nsd:details>
+              <nsd:soundEffects>Som de fumaça mágica</nsd:soundEffects>
+              <nsd:cameraMovement>Fumaça se espalha pela praça</nsd:cameraMovement>
+            </nsd:details>
+          </nsd:beat>
+
+          <nsd:beat id="K">
+            <nsd:title>Início do Vídeo de Ekios</nsd:title>
+            <nsd:premise>Inicia-se o vídeo mostrando o mapa de Ekios, câmera percorre e dá zoom em Gildrat</nsd:premise>
+            <nsd:type>🎬 Cutscene (Vídeo)</nsd:type>
+            <nsd:details>
+              <nsd:music>BGM épico/transicional</nsd:music>
+              <nsd:cameraMovement>Câmera voa sobre o mapa de Ekios e dá zoom em Gildrat</nsd:cameraMovement>
+            </nsd:details>
+          </nsd:beat>
+        </nsd:beats>
+
+        <!-- Decisões do Jogador nesta cena -->
+        <nsd:playerDecisions>
+          <nsd:decision id="DEC_001">
+            <nsd:prompt>Rheed pergunta: "E qual é o seu nome, pequeno?"</nsd:prompt>
+            <nsd:options>
+              <nsd:option id="A">
+                <nsd:text>Aceitar "Dulgarin"</nsd:text>
+                <nsd:consequence>Nome do personagem definido como "Dulgarin"</nsd:consequence>
+                <nsd:longTermEffect>Rheed usará este nome durante a narrativa</nsd:longTermEffect>
+              </nsd:option>
+              <nsd:option id="B">
+                <nsd:text>Digitar nome próprio</nsd:text>
+                <nsd:consequence>Abre menu de input para jogador digitar nome</nsd:consequence>
+                <nsd:longTermEffect>Rheed usará o nome digitado durante a narrativa</nsd:longTermEffect>
+              </nsd:option>
+            </nsd:options>
+          </nsd:decision>
+        </nsd:playerDecisions>
+      </nsd:scene>
+
+      <nsd:scene id="4">
+        <nsd:name>Transição Meta-narrativa</nsd:name>
+        <nsd:mapId>005 → Cutscene</nsd:mapId>
+
+        <nsd:beats>
+          <nsd:beat id="A">
+            <nsd:title>Thorin Dormindo</nsd:title>
+            <nsd:premise>Após o vídeo, transita para cutscene de jogo mostrando Thorin dormindo na cama dele</nsd:premise>
+            <nsd:type>🎬 Cutscene</nsd:type>
+            <nsd:details>
+              <nsd:music>BGM calmo/doméstico (Gildrat theme)</nsd:music>
+              <nsd:cameraMovement>Câmera foca em Thorin dormindo na cama</nsd:cameraMovement>
+              <nsd:triggerConditions>Finalização do vídeo de Ekios</nsd:triggerConditions>
+            </nsd:details>
+          </nsd:beat>
+        </nsd:beats>
+      </nsd:scene>
+    </nsd:scenesDetailed>
+  </nsd:checkpoint>
+
+  <!-- ========================================
+       4️⃣ REFERÊNCIAS E RECURSOS (Opcional)
+       ======================================== -->
+  <nsd:checkpoint id="3" title="Referências e Recursos" status="completed">
+    <nsd:references>
+      <nsd:dialogueFiles>
+        <nsd:file>frontend/data/CommonEvents.json (Diálogos de Darla e Rheed)</nsd:file>
+      </nsd:dialogueFiles>
+      <nsd:conceptArt>
+        <nsd:asset>Character Generator/Exports/ (Personagens: Criança Orc, Theodore Rheed, Darla)</nsd:asset>
+      </nsd:conceptArt>
+      <nsd:relatedDocs>
+        <nsd:doc>CLAUDE.md (Arquitetura do projeto)</nsd:doc>
+      </nsd:relatedDocs>
+    </nsd:references>
+
+    <nsd:notes>
+      <nsd:note category="technical">
+        <nsd:content>Menu deve permanecer bloqueado durante toda a quest. Jogador só pode se movimentar e falar com NPCs.</nsd:content>
+        <nsd:priority>Alta</nsd:priority>
+      </nsd:note>
+      <nsd:note category="narrative">
+        <nsd:content>Esta quest estabelece a estrutura meta-narrativa do jogo: toda a história é narrada por Theodore Rheed na Noite da História.</nsd:content>
+        <nsd:priority>Alta</nsd:priority>
+      </nsd:note>
+      <nsd:note category="technical">
+        <nsd:content>Vídeo de Ekios deve mostrar o mapa completo com câmera percorrendo e dando zoom em Gildrat para transição suave.</nsd:content>
+        <nsd:priority>Média</nsd:priority>
+      </nsd:note>
+    </nsd:notes>
+  </nsd:checkpoint>
+
+  <!-- ========================================
+       METADADOS DE CONTROLE
+       ======================================== -->
+  <nsd:controlMetadata>
+    <nsd:totalScenes>4</nsd:totalScenes>
+    <nsd:totalBeats>21</nsd:totalBeats>
+    <nsd:estimatedPlaytime>3-10 min</nsd:estimatedPlaytime>
+    <nsd:complexityLevel>Baixa</nsd:complexityLevel>
+    <nsd:dependencies>
+      <nsd:dependency type="none">Nenhuma - Quest de abertura do jogo</nsd:dependency>
+    </nsd:dependencies>
+    <nsd:outputs>
+      <nsd:output type="flag">
+        <nsd:name>Nome do jogador definido</nsd:name>
+        <nsd:value>Nome escolhido ("Dulgarin" ou customizado)</nsd:value>
+      </nsd:output>
+      <nsd:output type="flag">
+        <nsd:name>Quest Noite da História concluída</nsd:name>
+        <nsd:value>[026]v_qNoite_progress = completed</nsd:value>
+      </nsd:output>
+      <nsd:output type="quest">
+        <nsd:name>Desbloqueio da próxima quest</nsd:name>
+        <nsd:value>Próxima quest da campanha principal</nsd:value>
+      </nsd:output>
+    </nsd:outputs>
+  </nsd:controlMetadata>
+
+</nsd:document>

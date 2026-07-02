@@ -1,0 +1,138 @@
+---
+status: 🟡 Em revisão
+genero: Wordbuilding
+moeda: "[[Drakel]]"
+nivel_escassez:
+  - Baixo
+  - Medio
+  - Alto
+fluxo_comercial:
+  - Importador
+  - Exportador
+  - Autossuficiente
+tags:
+  - worldbuilding/economia
+Versão: 1.0.0
+Autor/Data: Poliana/Maio 2026
+---
+# Sistema Econômico: Gildrat
+
+## Base Econômica Pré-Geada
+
+Muito antes das minas e fortalezas subterrâneas, os anões viviam na superfície em uma sociedade profundamente ligada à terra. Sua economia era **agrícola**, sustentada por **grandes plantações**, **cultivo de ervas, produção artesanal e comércio.**
+
+A prosperidade desse período ficou conhecida como a **Era do Ouro Verde**. Além da produção agrícola, os anões desenvolviam tecnologias voltadas para irrigação, colheita e armazenamento, utilizando engenharia e trabalho coletivo como pilares da sociedade.
+
+---
+## Base Econômica Atual
+
+Após a Grande Geada, os anões abandonaram grande parte da vida agrícola e passaram a depender das minas como principal fonte de sobrevivência, expansão e poder político.
+
+A economia de Gildrat passou a ser sustentada por:
+- mineração;
+- metalurgia;
+- produção de bens duráveis;
+- desenvolvimento tecnológico;
+- engenharia; 
+- comércio;
+
+A exploração mineral tornou-se símbolo de progresso e orgulho imperial. Expedições mineradoras movimentam a economia, fortalecem a Guarda de Ferro e impulsionam o crescimento militar de Gildrat.
+
+---
+## Sustento e Produção Alimentar
+
+A sobrevivência de Gildrat depende de um complexo sistema de produção alimentar adaptado à vida subterrânea. Após a Grande Geada, a agricultura tradicional deixou de ser a principal fonte de sustento da população, sendo substituída por métodos de cultivo desenvolvidos para o interior das montanhas.
+
+A produção de alimentos baseia-se principalmente em:
+
+- - **fungos, cogumelos, musgos frios e líquens cultivados** em câmaras subterrâneas aquecidas pelo calor das forjas e das chaminés;
+- **queijo, leite, carne curada e gordura de cabras de montanha**, criadas em encostas frias e recolhidas para cavernas no inverno;
+	- capa-bode-dente de sabre
+- **raízes, ervas resistentes e brotos cultivados em hortas de chaminé**, usando luz solar canalizada por espelhos/cristais, como já existe no Distrito Nobre;
+- **alimentos preservados**: defumados, salgados, fermentados, secos e guardados em celeiros de gelo dentro da montanha;
+- **produtos importados como luxo**, não como base: frutas, grãos raros, especiarias, bebidas, ervas élficas, pinhão/café simbólico da antiga Era do Ouro Verde.
+
+Embora Gildrat mantenha rotas comerciais com outros povos, os alimentos importados possuem papel secundário na sobrevivência da população. Frutas, grãos raros, especiarias e bebidas estrangeiras são consumidos principalmente como artigos de luxo e símbolos de status social.
+
+A autossuficiência alimentar tornou-se uma das prioridades do Império após a Grande Geada. Dessa forma, mineração, metalurgia e engenharia não sustentam apenas a economia: elas mantêm a infraestrutura necessária para a produção de alimento, o armazenamento de recursos e a sobrevivência da população subterrânea.
+
+---
+## Moeda e Valor de Troca
+
+### Drakel (drakeis no plural)
+
+**Função:** moeda oficial do Império anão e representa a economia formal de Gildrat.
+
+**Utilização:** contratos, comércio interno, tavernas, oficinas e serviços urbanos.
+
+
+> [!note]  
+> Embora atualmente tenha pouca função mecânica dentro do jogo, Drakeis reforça a cultura burocrática, comercial e industrial dos anões.
+> > **Ludus** 
+> > Não integra a economia de Daratrine e não circula entre os habitantes do mundo. Sua existência está restrita à Coreto e aos sistemas metanarrativos do jogo. É uma metamoeda da Coreto; ver documento em [[Ludus]].
+
+---
+
+## Recursos Críticos e Disputados
+
+### Kraven
+**Função:** principal minério explorado por Gildrat na atualidade.
+**Utilização:** forjas, armamentos, máquinas; estruturas militares do Império; além do valor comercial.
+
+**Função simbólica e histórica:** As minas de Kraven representam o avanço industrial anão e sua dependência crescente da exploração subterrânea.
+- existem outras minas, na narrativa atual é a que mais aparece *(problema: se houver outras, teria que ter no worldmap; ver isso; talvez deixar subentendido)*
+==- *Kraven, Melios (ainda não explorada), do Esgoto (desativada)*==
+==*minas pacificadas (tem "bichos" mas controláveis; tem donos) VS minas selvagens (não exploradas, pode ter qualquer coisa, perigo, etc.)*   ver notion==
+- ==trazer aspectos culturais; ==
+- ==nomes das minas com referências culturais==
+---
+### Sigmetal (Ouro verde?)
+
+**Função:** recurso mineral raro
+
+**Histórico:** Durante séculos, o Sigmetal foi explorado intensivamente pelos anões, tornando-se extremamente escasso ao longo do tempo.
+
+**Escassez:** A maior parte da população acredita que o minério esteja praticamente extinto. No entanto, fragmentos de Sigmetal ainda aparecem em regiões profundas ligadas às antigas estruturas subterrâneas (Melios).
+
+Narrativamente, Thorin encontra fragmentos desse minério durante a história, fazendo com que o recurso se torne gradualmente importante para os acontecimentos futuros do jogo.
+
+> *O jogador inicialmente não sabe disso, mas o Sigmetal possui propriedades capazes de enfraquecer os Ignotos. 
+
+==Tem Sigmetal em Melios, porque ela não foi explorada ainda; tem perto do selo, para "bloquear" o poder dos Ignotos; selo pode ter sido feito de sigmetal==
+==- porque é a fraqueza deles? subentendido; *canções falavam que sigmetal era o ponto fraco dos Ignotos;*
+==- *ver se o nome "Sigmetal" já foi usado, se tem significado*==
+==- trazer aqui um aspecto cultural==
+
+
+ **Profundina** - era o sigmetal (ver o que da pra aproveitar)
+
+A "Profundina" é o nome dado aos tônicos e poções criados pelos Ignotos a partir de minerais raros encontrados em grande profundidade.
+
+- **Efeitos:** A Profundina oferece um aumento imediato e massivo na potência e estabilidade mágica, mas a um custo terrível. Causa dependência química e espiritual, aumenta a agressividade e, com o uso crônico, leva a mutações físicas e infertilidade mágica.
+- **Ciclo de Risco:** O uso de Profundina contamina não apenas o usuário, mas também as Pedras de Runas que ele utiliza. Zonas de Barreira fina amplificam exponencialmente os efeitos colaterais da substância.
+
+Ciclo de risco
+1) Consome mana do usuário
+2) Ao zerar, puxa da reserva da Pedra
+3) Ao zerar a Pedra, passa a drenar energia vital → risco de morte
+4) O uso de Pedras Contaminadas ou Profundina acelera a drenagem e corrompe a própria mana do usuário, aumentando o risco de possessão.
+
+Exemplos práticos
+- Usuário sem afinidade: com Pedra de Estabilização + Foco elemental consegue “fogo flecha 1” estável; sem a Pedra, falharia.
+- Usuário experiente: com Pedra de Amplificação em 8×, executa “raio lâmina 3”, mas entra em pré-colapso por drenagem acelerada (suspende antes de falha crítica).
+- Falha evitável: tentativa de combinar Água+Vento com Pedra mal sintonizada gera “gelo” fragmentado; ao perceber zumbido e calor, o conjurador interrompe, evitando queimadura rúnica.
+
+---
+
+## Desigualdade e Estratificação
+
+**Conexão:** [[Organização Social de Gildrat]]
+A distribuição de recursos em Gildrat acompanha a rígida estrutura social anã.
+- **Grandes Casas** controlam política, expedições, contratos e riquezas;
+		- coletam impostos de mineração e comércio;
+- **Casas Mineradoras** concentram riqueza econômica e inovação;
+- Trabalhadores sustentam minas, forjas, comércio e circulação urbana.
+
+Mesmo entre os anões, riqueza não garante prestígio absoluto. Linhagem, memória ancestral e reconhecimento histórico continuam tendo mais valor do que riqueza isolada.
+
+---
