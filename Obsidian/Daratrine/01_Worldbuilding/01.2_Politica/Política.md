@@ -13,10 +13,6 @@ tags:
 Versão: 1.0.0
 Autor/Data: Poliana/Maio 2026
 ---
-orientações chat: **revisar. tem muito texto**; o objetivo do gdd é descrever mas facilitar visualização e sintetização
-
-
-
 ## Visão Geral
 
 **Governo:** Gildrat é um império anão hereditário, governado por linhagem de sangue. O imperador concentra a autoridade simbólica e legal, enquanto o filho mais velho da linha imperial é reconhecido como sucessor natural. 
@@ -89,7 +85,6 @@ Tordan é amigo de Damburr nesse período e o apoia durante sua ascensão. Como 
 ---
 ## Facções e Grupos de Pressão
 
-
 * **Casas Mineradoras e Balastrus:** Representam riqueza nova, engenharia, explosivos, mineração agressiva e pragmatismo sem reverência à tradição. Querem provar que competência e resultado valem mais que sangue.
 
 * **Corvos de Melios:** Grupo tradicional ligado à proteção de Melios e aos limites ancestrais da mineração. Rejeitam a tomada da mina por decreto e veem a invasão imperial como profanação política e espiritual.
@@ -101,11 +96,10 @@ Tordan é amigo de Damburr nesse período e o apoia durante sua ascensão. Como 
 
 ## Contraste Ideológico para anões de Gildrat
 
-
 | Campo                                                                                                                         | Visão central                                                                            | Relação com magia                                                                                                               | Relação com Damburr                                                                  | Exemplos                                                                                                 |
 | ----------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- |
 | **Conservadores imperiais**<br><br>Compostos por nobres, casas mineradoras (média), e parte dos mãos de pedra (trabalhadores) | Ordem, linhagem, obediência e sobrevivência da casa anã acima de liberdades individuais. | São contra magia e apoiam punição estatal. Acreditam que a Caça às Bruxas salvou Gildrat de repetir a pré-Geada.                | Apoiam o imperador como símbolo de estabilidade, mesmo quando reconhecem sua dureza. | Nobres, burocratas, guardas leais, comerciantes beneficiados pelo regime.<br><br>- 80% da população      |
-| **Rebeldes (Guardadores das Velhas Canções):** <br><br>Compostos por mão de pedra (trabalhadores)                             | Memória ancestral, comunidade, escuta da terra e desconfiança da corte.                  | Também temem a magia descontrolada, mas rejeitam caça política. Defendem limite, rito e responsabilidade, não perseguição cega. | Veem Damburr como oportunista que usou o medo para tomar poder.                      | Rebeldes, Borin, Filena, trabalhadores, Corvos e simpatizantes das Velhas Canções.<br>- 20% da população |
+| **Rebeldes (Guardadores das Velhas Canções):** <br><br>Compostos por mãos de pedra (trabalhadores)                            | Memória ancestral, comunidade, escuta da terra e desconfiança da corte.                  | Também temem a magia descontrolada, mas rejeitam caça política. Defendem limite, rito e responsabilidade, não perseguição cega. | Veem Damburr como oportunista que usou o medo para tomar poder.                      | Rebeldes, Borin, Filena, trabalhadores, Corvos e simpatizantes das Velhas Canções.<br>- 20% da população |
 
 
 Em diálogo, **Conservadores Imperiais** tendem a falar de dever, contaminação, pureza da casa anã, estabilidade e sacrifício necessário. **Guardadores das Velhas Canções** tendem a falar de memória, abuso, canções esquecidas, trabalhadores abandonados, terra viva e alertas ignorados. Esse contraste deve aparecer em falas de rua, discussões no Conselho, rumores de taverna e reações à revelação do dom de Thorin.
@@ -118,7 +112,6 @@ Em diálogo, **Conservadores Imperiais** tendem a falar de dever, contaminação
 * **Ordem imperial versus revolta social:** O Conselho tenta tratar protestos como ameaça à autoridade, enquanto trabalhadores e rebeldes denunciam exploração, abandono e desigualdade.
 
 * **Ancestralismo Imperial versus Velhas Canções:** Os conservadores usam os ancestrais como argumento de obediência ao trono; os guardadores das Velhas Canções usam os ancestrais como memória crítica, aviso e limite contra a arrogância imperial.
-
 
 * **Tradição ancestral versus mineração expansionista:** Melios é vista por grupos tradicionais como território sagrado ou perigoso demais para exploração agressiva. O império a enxerga como solução material para sua crise.
 

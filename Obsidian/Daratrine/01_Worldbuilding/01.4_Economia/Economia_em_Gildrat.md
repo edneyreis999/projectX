@@ -103,6 +103,25 @@ Narrativamente, Thorin encontra fragmentos desse minério durante a história, f
 ==- *ver se o nome "Sigmetal" já foi usado, se tem significado*==
 ==- trazer aqui um aspecto cultural==
 
+
+ **Profundina** - era o sigmetal (ver o que da pra aproveitar)
+
+A "Profundina" é o nome dado aos tônicos e poções criados pelos Ignotos a partir de minerais raros encontrados em grande profundidade.
+
+- **Efeitos:** A Profundina oferece um aumento imediato e massivo na potência e estabilidade mágica, mas a um custo terrível. Causa dependência química e espiritual, aumenta a agressividade e, com o uso crônico, leva a mutações físicas e infertilidade mágica.
+- **Ciclo de Risco:** O uso de Profundina contamina não apenas o usuário, mas também as Pedras de Runas que ele utiliza. Zonas de Barreira fina amplificam exponencialmente os efeitos colaterais da substância.
+
+Ciclo de risco
+1) Consome mana do usuário
+2) Ao zerar, puxa da reserva da Pedra
+3) Ao zerar a Pedra, passa a drenar energia vital → risco de morte
+4) O uso de Pedras Contaminadas ou Profundina acelera a drenagem e corrompe a própria mana do usuário, aumentando o risco de possessão.
+
+Exemplos práticos
+- Usuário sem afinidade: com Pedra de Estabilização + Foco elemental consegue “fogo flecha 1” estável; sem a Pedra, falharia.
+- Usuário experiente: com Pedra de Amplificação em 8×, executa “raio lâmina 3”, mas entra em pré-colapso por drenagem acelerada (suspende antes de falha crítica).
+- Falha evitável: tentativa de combinar Água+Vento com Pedra mal sintonizada gera “gelo” fragmentado; ao perceber zumbido e calor, o conjurador interrompe, evitando queimadura rúnica.
+
 ---
 
 ## Desigualdade e Estratificação

@@ -109,7 +109,6 @@ Relaxa. Eu sei o que estou fazendo. 
 # VN2 — QUARTO DO JOHNNY
 DIAGRAMA EXCALIDRAW
 # VN3 — BEIRA DA ESTRADA
-DIAGRAMA EXCALIDRAW
 # VN4 — A Sabotagem
 
 **[Fim de tarde. Beira da estrada.]**

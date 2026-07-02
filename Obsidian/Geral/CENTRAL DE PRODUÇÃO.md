@@ -1,24 +1,17 @@
 #### **Daily**
-- [ ] Ver magia
+- [x] Ver magia
 - [ ] Ver política
-- [ ] Ver Geo/arq (Ekios e Gildrat)
+- [ ] Ver Gildrat e Geral
+- [ ] Ver Ekios
 
 #### **Revisar docs**
 - [ ] *Economia*
 	- [ ] aspecto cultural de drakel e sigmetal
-
+- [x] *Magia*
+	- [x] retirar as partes que não serão usadas ()
 #### **Fazer docs:**
-- [ ] Quest na Twine
 - [ ] Geo/Arq
-	- [x] Ekios 
-	- [x] Adicionar ekios-ecossistema-inimigos?
-	- [x] Gildrat
-	- [ ] Locais
-- [x] LER O NOTION PARA BATER INFOS
 
-#### **Outros:**
-- [ ] Jogar releese e anotar dificuldades
-- [ ] Pesquisar mais sobre a história do Paraná e norte do Paraná
 
 # **Progresso Geral dos Documentos**
 
@@ -43,7 +36,7 @@
 | Protagonistas           | ⚪ Não iniciado                             |
 | Personagens Importantes | ⚪ Não iniciado                             |
 | NPCs e Antagonistas     | ⚪ Não iniciado                             |
-| **NARRATIVA**           | ⚪ Não iniciado                             |
+| **NARRATIVA**           |                                            |
 | Game Timeline           | ⚪ Não iniciado                             |
 | Quests                  | ⚪ Não iniciado                             |
 | **MECÂNICA**            |                                            |

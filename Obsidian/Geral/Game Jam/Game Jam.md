@@ -1,4 +1,24 @@
 
+
+
+jogador: vai pro colégio no último ano, e vai sendo desenvolvida a história a partir disso
+- jogador sem nome; desenvolver o jogador junto
+- o jogador ganha "popularidade" com o jonny correndo
+- não ter nome o jogador
+
+
+
+jogador vai na ultima corrida atrás do jonny pq fica sabendo que ele vai pegar a curva do diabo; 
+- a curva que ninguém conseguiu fazer
+- no fim: pq morreram todos
+- rejogabilidade
+- nunca mais fizeram os rachas onde tem a curva do diabo
+- tem oponente e o jonny sugere ir pra la, pra se mostrar o fodao
+
+
+
+
+
 - corridas: dicas visuais, auditivas, etc
 - nos diálogos: 
 diálogo: choice/o que fala
