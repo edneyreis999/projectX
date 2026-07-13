@@ -1,16 +1,15 @@
 #### **Daily**
-- [x] Ver magia
-- [ ] Ver política
-- [ ] Ver Gildrat e Geral
-- [ ] Ver Ekios
+- [x] Ver Ekios
+- [x] Ver Gildrat
+- [ ] Ver Futebol Rúnico
+
+- [x] Revisar Ekios
+- [ ] Revisar: política
+
 
 #### **Revisar docs**
-- [ ] *Economia*
-	- [ ] aspecto cultural de drakel e sigmetal
-- [x] *Magia*
-	- [x] retirar as partes que não serão usadas ()
-#### **Fazer docs:**
-- [ ] Geo/Arq
+- [x] *Economia*
+- [ ] *Política*
 
 
 # **Progresso Geral dos Documentos**
@@ -23,12 +22,12 @@
 | Tom & Vibe              | 🟢 Aprovado                                |
 | **WORLDBUILDING**       |                                            |
 | Leis                    | 🟢 Aprovado                                |
-| Política                | 🔵 Pronto para aprovação                   |
-| Economia                | 🟡 Em revisão                              |
+| Política                | 🟡 Em revisão                              |
+| Economia                | 🟢 Aprovado                                |
 | Religião                | 🟢 Aprovado                                |
 | Conto da Gralha Azul    | 🟢 Aprovado                                |
 | Social                  | 🟢 Aprovado                                |
-| Geografia/Arquitetura   | 🟠 Em desenvolvimento                      |
+| Geografia/Arquitetura   | 🟢 Aprovado                                |
 | Tecnologia              | 🟢 Aprovado                                |
 | Magia                   | 🟢 Aprovado                                |
 | **ATLAS FOLK**          |                                            |

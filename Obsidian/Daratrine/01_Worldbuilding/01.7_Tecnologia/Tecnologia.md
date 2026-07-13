@@ -149,5 +149,5 @@ Por isso, a tecnologia anã funciona como substituição cultural da magia:
 - **Organização Social:** [[Organização Social de Gildrat]]
 - **Ancestralismo Imperial:** [[01.6.1_Ancestralismo Imperial]]
 - **Velhas Canções:** [[01.6.2_As Velhas Canções]]
-- **Gildrat:** [[01.3.2_Gildrat]]
+- **Gildrat:** [[Gildrat]]
 - **Balastrus:** [[Balastrus]]
