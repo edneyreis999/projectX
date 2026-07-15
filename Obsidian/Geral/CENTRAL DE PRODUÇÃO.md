@@ -36,6 +36,7 @@
 | Personagens Importantes | ⚪ Não iniciado                             |
 | NPCs e Antagonistas     | ⚪ Não iniciado                             |
 | **NARRATIVA**           |                                            |
+| Macro                   | ⚪ Não iniciado                             |
 | Game Timeline           | ⚪ Não iniciado                             |
 | Quests                  | ⚪ Não iniciado                             |
 | **MECÂNICA**            |                                            |

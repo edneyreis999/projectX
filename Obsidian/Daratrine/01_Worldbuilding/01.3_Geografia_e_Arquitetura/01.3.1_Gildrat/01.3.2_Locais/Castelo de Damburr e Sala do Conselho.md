@@ -1,5 +1,5 @@
 ---
-status: Pronto para aprovação
+status: 🔵 Pronto para aprovação
 genero: Worldbuilding
 tipo_local: Cidade
 tags:
@@ -8,7 +8,7 @@ tags:
   - arquitetura
   - gildrat
 versao: 1.0.0
-autor_data: "Poliana/Junho2026"
+autor_data: Poliana/Junho2026
 ---
 
 # Castelo de Damburr (Sala do Conselho)

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daratrine/01_Worldbuilding/01.5_Social/Futebol Rúnico.md",
+                "file": "Geral/CENTRAL DE PRODUÇÃO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Futebol Rúnico"
+              "title": "CENTRAL DE PRODUÇÃO"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 348
+    "width": 200
   },
   "right": {
     "id": "0bb609aeede63ae5",
@@ -186,25 +186,32 @@
   },
   "active": "b77faf82a27827d4",
   "lastOpenFiles": [
-    "Daratrine/01_Worldbuilding/01.5_Social/Organização Social de Gildrat.md",
-    "Daratrine/01_Worldbuilding/01.6_Religiao/01.6.2.1_Conto - A Gralha-azul, Semeadora de Memórias.md",
-    "Daratrine/01_Worldbuilding/01.6_Religiao/01.6.2_As Velhas Canções.md",
-    "Daratrine/01_Worldbuilding/01.6_Religiao/01.6.1_Ancestralismo Imperial.md",
-    "Daratrine/01_Worldbuilding/01.4_Economia/Economia_em_Gildrat.md",
-    "Daratrine/01_Worldbuilding/01.2_Politica/Política.md",
-    "Daratrine/01_Worldbuilding/01.5_Social/Futebol Rúnico.md",
-    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat/01.3.2_Minas/Minas Abandonadas.md",
+    "Daratrine/03_Narrative/03.1_Macro_History/T_macro_history.md",
+    "Daratrine/03_Narrative/03.1_Macro_History/História_Inteira_de_Daratrine.md",
     "Geral/CENTRAL DE PRODUÇÃO.md",
+    "Geral/Softwares_relevantes.md",
+    "Geral/Versionamento.md",
+    "Daratrine/03_Narrative/03.0_Modelos de timeline.md",
+    "Daratrine/02_Atlas_Folk/02.1_Racas_e_Especies/T_racas_e_especies.md",
+    "Daratrine/01_Worldbuilding/01.5_Social/Futebol Rúnico.md",
+    "Daratrine/01_Worldbuilding/01.5_Social/Organização Social de Gildrat.md",
+    "Daratrine/03_Narrative/03.2_Game_Timeline/T_Game_Timeline.md",
+    "Daratrine/03_Narrative/03.1_Macro_History/Ciclo Histórico dos Anões.md",
+    "Daratrine/03_Narrative/03.1_Macro_History/História de Daratrine (Inteira).md",
+    "Daratrine/01_Worldbuilding/01.7_Tecnologia/Futuro Tecnológico de Gildrat (não presente no período atual do jogo).md",
+    "Daratrine/01_Worldbuilding/01.7_Tecnologia/Tecnologia.md",
+    "Daratrine/01_Worldbuilding/01.8_Magia/Magia.md",
+    "Daratrine/02_Atlas_Folk/02.2_Protagonistas/T_protagonistas.md",
+    "Daratrine/01_Worldbuilding/01.6_Religiao/01.6.2_As Velhas Canções.md",
+    "Daratrine/01_Worldbuilding/01.6_Religiao/01.6.2.1_Conto - A Gralha-azul, Semeadora de Memórias.md",
+    "Daratrine/01_Worldbuilding/01.4_Economia/Economia_em_Gildrat.md",
+    "Daratrine/00_Foundation/00.1_Core_Concept/Core _Concept.md",
+    "Daratrine/00_Foundation/00.1_Core_Concept/Core _Concept_Comercial.md",
+    "Daratrine/00_Foundation/00.2_Fundation_details/Foundation_Details.md",
+    "Daratrine/00_Foundation/00.3_Tone_Vibe/Tone_Vibe.md",
+    "Daratrine/01_Worldbuilding/01.6_Religiao/01.6.1_Ancestralismo Imperial.md",
     "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat/Gildrat.md",
-    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Ekios/Continente_Ekios_Geral.md",
-    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Ekios/1. Índice Geral Geografia Arquitetura.md",
-    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat/01.3.2_Locais/Castelo de Damburr e Sala do Conselho.md",
-    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat/01.3.2_Locais/Casa da família Forjaprata.md",
-    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat/01.3.2_Minas/1. Minas Geral.md",
-    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat/01.3.2_Minas/Mina do Esgoto.md",
-    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat/01.3.2_Minas/Mina de Melios.md",
-    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat/01.3.2_Minas/Mina de Kravens.md",
-    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat/01.3.2_Locais/Distrito Residencial.md",
+    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat/01.3.2_Minas/Minas Abandonadas.md",
     "Daratrine/0100_Imagens/Pasted image 20260511160348 2.png",
     "Daratrine/0100_Imagens/Pasted image 20260511160435.png",
     "Daratrine/0100_Imagens/Pasted image 20260511160435 1.png",
@@ -215,13 +222,6 @@
     "Daratrine/0100_Imagens/Pasted image 20260511160543.png",
     "Daratrine/0100_Imagens/Pasted image 20260511160543 1.png",
     "Daratrine/0100_Imagens/Pasted image 20260511160543 2.png",
-    "Daratrine/0100_Imagens/Anotações Gerais.md",
-    "Daratrine/01_Worldbuilding/01.1_Leis/Constituição de Gildrat.md",
-    "Externalizar_documento/Roteiro.md",
-    "Geral/Versionamento.md",
-    "Geral/Softwares_relevantes.md",
-    "Daratrine/01_Worldbuilding/01.2_Engenharias_Sociopoliticas/01.2.4 Social/Organização Social de Gildrat.md",
-    "Daratrine/01_Worldbuilding/01.2_Engenharias_Sociopoliticas/01.2.3_Religiao/Ancestralismo Imperial.md",
     "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat/01.3.2_Minas",
     "Externalizar_documento",
     "Daratrine/00_Foundation/00.3_Tone_Vibe",

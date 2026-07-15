@@ -1,13 +1,16 @@
 ---
 status: 🟢 Aprovado
-genero: Foundation
+genero: Foudation
+função: "Define a visão criativa e narrativa central de Daratrine: A Origem, estabelecendo os pilares, temas, premissa e direção geral que orientam o desenvolvimento do jogo."
 tags:
-  - foundation/concept
-  - visãogeral
+  - foundation
   - logline
+  - premissa
   - temas/pilares
-Versão: 1.0.0
-Autor/Data: Poliana/Maio 2026
+  - coreconcept
+versao: 1.0.0
+autor: Poliana
+data: 2026-05
 ---
 # Core Concept: Daratrine A Origem (!)
 
@@ -89,5 +92,3 @@ As decisões do jogador impactam:
 | **Tradição Oral e Memória**       | A história é narrada por Rheed muitos anos depois dos acontecimentos. Daratrine trata memória, mito e verdade como partes inseparáveis da narrativa, reforçando a ideia de que toda história muda quando é contada novamente.                                                                                                                                                                                                        | Guiar a estrutura narrativa, a metanarrativa e o tom oral dos diálogos e narrações.                                                                                       |
 | **Cultura e Territorialidade**    | A fantasia do jogo transforma símbolos do Norte do Paraná em linguagem estética e narrativa. Terra vermelha, geada, gralha-azul, mineração, pinhão, ciclo do café, oralidade regional aparecem reinterpretados dentro da fantasia.                                                                                                                                                                                                   | Guiar direção artística, ambientação, simbologia e identidade cultural do projeto.                                                                                        |
 | **Esperança Melancólica**         | O colapso é inevitável, mas isso não torna as escolhas inúteis. O valor da história está no que ainda pode ser preservado: vínculos, memórias, afetos e pequenas resistências humanas diante do fim.                                                                                                                                                                                                                                 | Guiar o tom emocional do jogo, encerramentos e sensação final da narrativa.                                                                                               |
-
-

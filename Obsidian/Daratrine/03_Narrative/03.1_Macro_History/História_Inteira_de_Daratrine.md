@@ -1,4 +1,24 @@
+---
+status: 🟢 Aprovado
+genero: Worldbuilding
+funcao: Descrever a linha do tempo completa da história de Gildrat
+tags:
+  - linhadotempo
+  - gildrat
+  - daratrine
+  - coreconcept
+versao: 1.0.0
+autor: Poliana
+data: 2026-05
+---
 
+
+> [!ABSTRACT] Escopo desta documentação e do jogo
+> Este documento descreve a linha do tempo completa da história de **Gildrat**, desde sua ascensão até a fundação de **Daratrine** e o fim da Primeira Grande Guerra contra os Ignotos.
+>
+> **Entretanto, o jogo _Daratrine: A Origem_ não retrata toda essa cronologia.** A narrativa jogável abrange apenas os acontecimentos que antecedem e culminam na **quebra do selo ancestral**, na **libertação dos Ignotos** e no **início da guerra**. Os eventos posteriores — a fundação de Daratrine, a reconstrução do selo, o surgimento da nova capital e o desfecho do conflito — fazem parte do cânone do universo, mas **não são apresentados diretamente no jogo**.
+>
+> A presença de **Daratrine** no jogo ocorre apenas por meio da **metanarrativa**: no futuro, o narrador **Rheed** conta essa história para um grupo de crianças na cidade de Daratrine. Assim, o jogador conhece a cidade apenas como cenário do presente da narrativa, enquanto a aventura principal se passa muitos anos antes, durante os eventos finais de Gildrat.
 # Gildrat
 
 ## Fundação e Ascensão
@@ -119,7 +139,7 @@ Consequências:
 - isolou os Ignotos já presentes na superfície;
 - bloqueou o acesso ao Sigmetal.
 
-	Sigmetal era um recurso fundamental durante a guerra: relacionado aos Ignotos; utilizado contra criaturas do mundo inferior; extremamente raro. 
+	Sigmetal era um recurso fundamental durante a guerra: relacionado aos Ignotos; utilizado contra criaturas do mundo inferior; extremamente raro. Eram o "suplemento dos Ignotos"; 
 
 Após o novo selo:
 - o acesso ao minério foi bloqueado;
@@ -129,6 +149,7 @@ Após o novo selo:
 
 Com o selo restaurado:
 - o exército de Daratrine continuou combatendo os Ignotos restantes.
+
 Ao longo do tempo:
 - os Ignotos foram eliminados;
 - o continente começou a se reconstruir.
@@ -146,12 +167,3 @@ A cidade passou a representar:
 - cooperação política.
 
 Cada raça assumiu funções específicas dentro da nova sociedade.
-
----
-
-# Economia
-
-## Moeda da Era de Rheed
-
-Na época de Rheed:
-- a moeda utilizada era o Drakeis.

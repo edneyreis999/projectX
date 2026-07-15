@@ -1,5 +1,5 @@
 ---
-status: Pronto para aprovação
+status: 🔵 Pronto para aprovação
 genero: Worldbuilding
 tipo_local: Mina
 tags:

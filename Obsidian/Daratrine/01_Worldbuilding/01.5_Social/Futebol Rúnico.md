@@ -1,9 +1,16 @@
+---
+status: Aprovado
+genero: Wordbuilding
+funcao: Consolidar as informações sobre o Futebol Rúnico
+tags:
+  - worldbuilding
+  - futebolrunico
+versao: 1.0.0
+autor: Poliana
+data: 2026-05
+---
+
 ## Objetivo
-
-
-
-==**NOTA PARA POLI: RETIRAR DESCRIÇÕES QUE TEM THORIN, FILENA, PERSONAGENS**
-==- **MANTER APENAS A CONSTRUÇÃO DO UNIVERSO**
 
 Este documento consolida as informações sobre o Futebol Rúnico espalhadas pelo GDD. A função dele é servir como referência central para narrativa, worldbuilding, gameplay, personagens e implementação.
 
@@ -20,22 +27,23 @@ O Futebol Rúnico é o esporte coletivo mais popular de Gildrat e um dos princip
 - Cada equipe possui **7 jogadores em campo**.
 - Há jogadores reservas e comissão técnica.
 
-**Posições**
-==Goleiro: Defende o gol e inicia a construção das jogadas.
-Zagueiros (2): Protegem a defesa e recuperam a posse da bola.
-Meio-campista: Organiza as jogadas ofensivas e distribui passes.
-Laterais (2): Responsáveis pela movimentação pelas laterais do campo e pela criação de oportunidades de ataque.
-Atacante: Principal responsável pelos disparos ao gol utilizando a funda.==
+**Objetivo**
+As equipes disputam a posse de duas bolas simultaneamente:
+- **Bola de Investida:** utilizada para avançar pelo campo e cruzar a Linha Rúnica, marcando a pontuação principal (semelhante a um touchdown).
+- **Bola de Funda:** uma esfera menor utilizada para disparos de longa distância com uma funda, permitindo marcar uma pontuação secundária em um alvo elevado.
+Essa dinâmica obriga as equipes a decidir constantemente entre proteger a bola principal ou criar oportunidades para os arremessadores.
 
-- alterar para futebol americano 
+**Sistema de Pontuação**
+- **Investida:** ocorre quando a Bola de Investida ultrapassa a Linha Rúnica adversária carregada por um jogador. Representa a principal forma de marcar pontos.
+- **Disparo Rúnico:** ocorre quando a Bola de Funda atravessa o alvo elevado após ser lançada com a funda. Vale menos pontos, mas pode ser executado à distância e mudar o rumo da partida.
 
-==- quadribol (ponto normal - tipo touchdown e ponto "especial")
-==- duas bolas - uma maior (pra ponto na linha estilo touchdown) e uma menor (para ser lançada com a funda para fazer gol em um gol menor)==
-==- funda usada para jogar a bola menor e fazer o gol  - função do thorin ==
-==- splinter: corre, recebe a bola e faz o ponto/touchdown====
-==Pendência: tem nomes específicos das posições no futebol?  vi ex-Splinter/recebedora (filena) ==
-- é um esporte mais violento
-
+| **Posição**         | **Função**                                                                                                                                                                                  |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Guardião**        | Última linha de defesa. Protege a Linha Rúnica e o alvo elevado. Coordena a defesa e organiza o posicionamento da equipe.                                                                   |
+| **Bastiões (2)**    | Especialistas em contato físico. Bloqueiam adversários, abrem espaço para os corredores e defendem os carregadores da bola. São os jogadores mais fortes da equipe.                         |
+| **Corredor**        | Principal responsável por transportar a Bola de Investida. Precisa de velocidade, resistência e capacidade de romper a marcação para alcançar a Linha Rúnica.                               |
+| **Recebedores (2)** | Movimentam-se constantemente pelo campo para receber passes. Criam opções ofensivas e auxiliam tanto na progressão territorial quanto na proteção do Corredor.                              |
+| **Fundeiro**        | Especialista no uso da funda. Utiliza a Bola de Funda para realizar disparos contra o alvo elevado, marcando a pontuação secundária. Exige precisão, leitura de jogo e bom posicionamento.  |
 **Equipamentos**
 Cada jogador utiliza: 
 - bola rúnica grande;
@@ -62,12 +70,11 @@ Futebol Rúnico é o esporte popular mais importante de Gildrat. Ele mistura com
 
 No GDD, ele cumpre quatro funções principais:
 
-| Eixo              | Função                                                                                                                                                                                                                                                                                                                    |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| A. Cultura        | Expressa pertencimento popular, liberdade e memória viva dentro de uma sociedade rígida.                                                                                                                                                                                                                                  |
-| B. Política       | Funciona como válvula de escape social, usado pelo poder como "pão e circo", mas vivido pelo povo como resistência.<br>*- Nota: Embora o Império apresente o Futebol Rúnico como símbolo de prosperidade e união entre as castas, diferentes grupos utilizam sua estrutura para ampliar sua influência dentro do Estado.* |
-| ==C. Personagem== | ==Define o sonho inicial de Thorin, a relação com Filena e Borin, e a ferida familiar com Tordan.==                                                                                                                                                                                                                       |
-| D. Gameplay       | Serve como **tutorial** inicial e origem de habilidades de combate. Ensina mecânicas de batalha, equipar item, etc.                                                                                                                                                                                                       |
+| Eixo        | Função                                                                                                                                                                                                                                                                                                                    |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| A. Cultura  | Expressa pertencimento popular, liberdade e memória viva dentro de uma sociedade rígida.                                                                                                                                                                                                                                  |
+| B. Política | Funciona como válvula de escape social, usado pelo poder como "pão e circo", mas vivido pelo povo como resistência.<br>*- Nota: Embora o Império apresente o Futebol Rúnico como símbolo de prosperidade e união entre as castas, diferentes grupos utilizam sua estrutura para ampliar sua influência dentro do Estado.* |
+| C. Gameplay | Serve como **tutorial** inicial e origem de habilidades de combate. Ensina mecânicas de batalha, equipar item, etc.                                                                                                                                                                                                       |
 Além de seu papel cultural, o Futebol Rúnico tornou-se uma importante instituição social de Gildrat. Sua enorme popularidade fez com que o esporte ultrapassasse o entretenimento, tornando-se um espaço de disputa por prestígio, influência econômica e representação política.
 
 ---
@@ -131,8 +138,10 @@ Para as Casas Mineradoras, o patrocínio esportivo representa uma das poucas for
 
 Assim, diferentes grupos disputam o controle do Futebol Rúnico não apenas pelo prestígio esportivo, mas também pela capacidade de influenciar decisões políticas e conquistar apoio popular.
 
-==**aposta? **==
-- nobres podem falir tb por isso
+###### **Apostas e Prestígio**
+O Futebol Rúnico movimenta um vasto sistema de apostas populares, no qual torcedores apostam no resultado das partidas, no desempenho de jogadores e em feitos específicos durante os jogos. O volume de recursos envolvidos faz com que vitórias e derrotas tenham impacto econômico significativo, atraindo comerciantes, casas de apostas e investidores.
+
+Muitas Casas Nobres e famílias tradicionais também investem pesadamente em equipes, atletas e apostas esportivas. Para algumas delas, o sucesso nos campeonatos representa uma oportunidade de recuperar prestígio e estabilidade financeira; para outras, campanhas mal sucedidas ou apostas equivocadas podem agravar crises econômicas, levando antigas linhagens nobres ao endividamento ou à perda de influência política.
 
 ### Relação com as Castas
 Cada camada social enxerga o Futebol Rúnico de maneira diferente
@@ -146,53 +155,18 @@ Cada camada social enxerga o Futebol Rúnico de maneira diferente
 Ver mais sobre a organização social em: [[Organização Social de Gildrat]]
 
 ---
-## C. Personagens
+## C. Gameplay
 
-==#### Personagens Ligados ao Futebol Rúnico==
-TIRAR E COLOCAR NA DESCRIÇÃO DOS PERSONAGENS
-- TOPICO PARA FALAR DO FUTEBOL PARA THORIN, FILENA, BORIN, ETC
+### Semifinal (Tutorial)
 
-| Personagem       | Relação com o Futebol Rúnico                                                                            | Função de design                                                          |
-| ---------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| Thorin           | Jogador dos Machados Enferrujados; usa a funda do futebol como arma; busca reconhecimento pelo esporte. | Protagonista dividido entre autonomia, família, dever e magia.            |
-| Filena           | Jogadora do time; ex-Splinter/recebedora; mobilidade do combate vem da experiência no esporte.          | Ponte entre futebol, resistência civil e relacionamento com Thorin.       |
-| Borin            | Rival esportivo de Thorin; quer ser reconhecido como o melhor jogador do time.                          | Termômetro da casta simples e rivalidade social.                          |
-| Tordan           | Rejeita o futebol de Thorin, mas tem passado ligado ao esporte e troféus antigos.                       | Ferida familiar; aceita ou respeita o futebol ao fim do arco.             |
-| Dragobur         | Treinador dos Machados Enferrujados; cobra disciplina e equipamento.                                    | Mentor esportivo inicial e ponte para o tutorial.                         |
-| Kilin e Mhordred | Interrompem a comemoração da semifinal e escoltam Thorin.                                               | Representam a invasão do dever militar no espaço de liberdade do futebol. |
+A semifinal é a primeira sequência jogável com Thorin e funciona como o tutorial do jogo, introduzindo gradualmente os principais comandos e sistemas.
 
-#### Locais e Objetos Ligados ao Futebol Rúnico
-==GUARDAR E TIRAR==
-
-| Local                             | Uso                                                                                        |
-| --------------------------------- | ------------------------------------------------------------------------------------------ |
-| Estádio dos Machados Enferrujados | Palco da semifinal, treinamento e ==reconciliação com Tordan.==                            |
-| Campo de Futebol Rúnico           | Mapa de tutorial e espaço de jogada decisiva.                                              |
-| Vestiário                         | Busca do capacete, gag leve, possível sala de treino com Tordan.                           |
-| Casa Forja-Prata                  | Mostra o conflito entre orgulho militar e futebol.                                         |
-| Despensa da Casa Forja-Prata      | Memorial esportivo com troféus, baú da funda, lembranças e objeto de confronto com Tordan. |
-| Troféu antigo de Tordan           | Objeto emocional usado por Thorin para tentar recuperar a memória do pai.                  |
-| Funda de Thorin (?)               | Ferramenta esportiva que vira arma de combate.                                             |
-| Capacete antigo de Dragobur       | Item da semifinal; reforça regra, história do time e tutorial de equipamento.              |
-| Bolas, bandeiras e troféus        | Props para mostrar que o futebol pertence ao cotidiano da cidade.                          |
-
----
-## D. Gameplay
-
-==ISSO AQUI É MECANICA: CITAR QUE É TUTORIAL BREVEMENTE E SÓ==
-#### Semifinal como Tutorial
-
-A Semifinal e a primeira quest jogável com Thorin e tem importância de tutorial.
-
-Fluxo funcional:
-
-| **Etapa**               | **Função**                                               |
-| ----------------------- | -------------------------------------------------------- |
-| Pesadelo e despertar    | Apresenta mãe, presságio e urgência.                     |
-| Pegar a funda           | Introduz item/arma simbólica de Thorin.                  |
-| Corrida até o estádio   | Ensina movimentação e direcionamento de objetivo.        |
-| Bronca de Dragobur      | Mostra regra do esporte e falha de disciplina de Thorin. |
-| Buscar capacete         | Ensina exploração/interação/equipamento.                 |
-| Intervenção dos guardas | Troca triunfo por tensão e puxa a próxima quest.         |
-
+|**Etapa**|**Mecânica apresentada**|
+|---|---|
+|Pesadelo e despertar|Introdução narrativa e contextualização do objetivo.|
+|Pegar a funda|Coleta do primeiro equipamento.|
+|Corrida até o estádio|Movimentação e navegação até um objetivo.|
+|Bronca de Dragobur|Introdução ao contexto do Futebol Rúnico e às regras básicas.|
+|Buscar o capacete|Exploração, interação com objetos e equipar itens.|
+|Intervenção dos guardas|Encerramento do tutorial e transição para a próxima quest.|
 	
