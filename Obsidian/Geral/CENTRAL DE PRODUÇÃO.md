@@ -1,15 +1,34 @@
 #### **Daily**
 - [x] Ver Ekios
 - [x] Ver Gildrat
-- [ ] Ver Futebol Rúnico
+- [x] Ver Futebol Rúnico
 
 - [x] Revisar Ekios
 - [ ] Revisar: política
 
 
-#### **Revisar docs**
-- [x] *Economia*
-- [ ] *Política*
+#### **Fazer docs**
+Atlas Folk
+- [ ] Raças e Espécies 
+		- anões
+		- ignotos
+		**- goblins, trolls, elfos? não**
+- [ ] Protagonistas 
+		- thorin
+		- filena
+		- borin (time rival (montar um))
+		- balastrus 
+		- thordan
+		- corvinus
+		- killin - será mulher
+		- mohrdred
+		- profeta das sombras
+	
+	- descrição geral
+	- descrição nas quests/atos
+	- arco/jornada do herói dos personagens 
+
+- [ ] NPCs e Antagonistas/ mais geral nas minas
 
 
 # **Progresso Geral dos Documentos**

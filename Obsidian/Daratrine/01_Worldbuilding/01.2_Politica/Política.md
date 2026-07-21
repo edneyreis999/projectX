@@ -134,6 +134,10 @@ Em diálogos, **Conservadores Imperiais** tendem a falar de dever, contaminaçã
 * **Futebol Rúnico como disputa política:** O Futebol Rúnico tornou-se um campo simbólico da disputa pelo apoio popular. Enquanto o Império utiliza campeonatos, festivais e equipes patrocinadas para reforçar a legitimidade do regime, trabalhadores, torcidas e simpatizantes das Velhas Canções transformam o esporte em espaço de memória coletiva, organização social e resistência cultural. O controle dos clubes e de seus patrocinadores tornou-se uma extensão da disputa por influência dentro do próprio Estado.
 
 
+
+
+
+
 ## Notas de Encaixe Narrativo
 
 
@@ -147,6 +151,12 @@ Em diálogos, **Conservadores Imperiais** tendem a falar de dever, contaminaçã
 
 
 
+- alguém que a filena "meio que gosta" pede voluntários e ela se voluntaria
+	- da a entender que ela quer ir pq tem esse crush
+	- depois vemos que o interesse era ela boicotar a expedição (tem que pensar no boicote depois)
+	- parece estar sendo manipulada, mas estava manipulando por interesses próprios
+	- arquétipo da viuva negra: viuva negra e loki
+
 **Fluxo lógico das intenções e decisões:**
 
 1. Balastros quer proteção militar para a exploração da Mina de Melios.
@@ -154,6 +164,8 @@ Em diálogos, **Conservadores Imperiais** tendem a falar de dever, contaminaçã
     
 2. O Conselho discute a composição da expedição.
     * Como o Futebol Rúnico está financiando parte do projeto, seu representante (cadeira representativa do futebol rúnico) exige que haja um atleta na missão, tanto para representar a modalidade quanto para mostrar apoio público ao empreendimento.
+    * Balastrus pede pessoas 
+    * Futebol Rúnico fornecerá pessoal para essa expedição que será uma revolução ==(não só a filena, umas 5 pessoas, junto com um bonitão)==
     
 3. Balastros finge ser contra.
     * Ele comenta algo como:
@@ -181,6 +193,15 @@ Em diálogos, **Conservadores Imperiais** tendem a falar de dever, contaminaçã
     * Apenas explorando como cada pessoa provavelmente reagiria.
 
 
+- Cena do Bar: 
+	- thorin faz corpo mole
+	- balastrus: "vai ser uma pena pq eu acho que a filena vai precisar de alguem pra proteger ela"
+	- borin "ah pode deixar que eu faço isso"
+	- thorin assume a expedição 
+	
+		- usa de chantagem
+		- fala pro thordan que o thorin é o amuleto: thordan nega
+
 ## Fluxo narrativo da cena
 
 Após a reunião do Conselho, Balastrus procura Thorin e comenta, de forma aparentemente casual, que a expedição a Melios ainda aceita voluntários. Diante da recusa de Thorin, ele apenas revela que Filena foi escolhida para representar o Futebol Rúnico na missão e vai embora, sem fazer qualquer convite direto. 
@@ -206,7 +227,8 @@ Balastros se despede e vai embora.
 ##### 2ª Cena — Coreto
 
 Uma das crianças interrompe a história: "Espera... por que a Filena iria para Melios?"
-Reed sorri: "Essa história começou um pouco antes... vamos voltar!"
+Reed sorri: "Essa história começou um pouco antes... vamos voltar! 
+==Para vocês entenderem isso, precisamos primeiro ver...."==
 
 ##### 3ª Cena — Flashback do Conselho
 
@@ -219,7 +241,9 @@ Outro conselheiro rebate: "Ainda assim, essa é uma exigência dos financiadores
 Balastros pensa por um instante: "Então enviem Filena. Ela é uma das atletas mais respeitadas do Império, conhece a região e tem experiência em missões fora das cidades. Se alguém deve representar o Futebol Rúnico, ela é a escolha mais adequada."
 O Conselho aprova a indicação.
 
-##### 4ª Cena  — Coreto
+##### 4ª Cena  — Na Coreto 
+**(o próprio Reed aparece colorido na cena do conselho explicando a cena)**
+- pop up: rheed e as crianças conforme forem falando
 
 Uma das crianças conclui: "Então o Balastros nem queria levar a Filena... Só aceitou porque fazia sentido."
 
@@ -239,28 +263,19 @@ As crianças respondem em coro: "O pai dele."
 
 Reed assente: "Thordan. E, se Thordan permitisse que o filho fosse..."
 
-Outra criança completa: "...mandaria a Guarda de Ferro junto, como fez em Kravens"
+Outra criança esperta completa: "...mandaria a Guarda de Ferro junto, como fez em Kravens!"
 
 Reed sorri: Foi nesse momento que percebi que talvez ninguém naquela reunião tivesse tomado uma única decisão por acaso. Vamos ver o que aconteceu na casa de Thorin nesse mesmo dia" 
 
-##### 5ª Cena — Casa de Thorin
+##### 5ª Cena — Ida para Melios
 
-Thorin entra no escritório de Thordan logo após a visita de Balastrus. O pai ainda analisa documentos da expedição.
+- trocar essa cena por: 
+- na saída de Gildrat, indo para melios, a guarda ferro chega atrasada para acompanhar Thorin
+- dão o documento que o thordan mandou eles irem
+- balastrus faz uma cara de capetinha kkkk
 
-Thorin: "Quero integrar a expedição a Melios."
 
-Thordan ergue os olhos, surpreso: "Você? Achei que já tivesse escolhido passar o resto da vida correndo atrás de uma bola."
 
-Thorin: "Foi o senhor quem sempre disse que eu precisava fazer mais pelo Império do que jogar Futebol Rúnico. "
-"Melios é a maior expedição da nossa geração. Se nossa família acredita que essa exploração é importante, eu também deveria estar lá."
-"Não quero ir porque fui obrigado. Quero ir porque acredito que é minha responsabilidade."
 
-Thordan observa o filho por alguns instantes: Você sabe o que dizem sobre Melios? Não é uma excursão. Se houver problemas, não poderei protegê-lo."
-
-Thorin: "Então me deixe provar que consigo cuidar de mim."
-
-Thordan:  "Você queria uma oportunidade para mostrar que pode servir ao Império. Pois bem... terá essa oportunidade. Mas você não irá sozinho. Vou convocar a Guarda de Ferro. Quero Kilin e Mordhread na escolta. Prepararemos a partida imediatamente."
-
-Thorin agradece e deixa a sala.
-
+- descrever o recurso de o rheed aparecer com pop up nas cenas para expicar
 
