@@ -54,11 +54,21 @@ Cada jogador utiliza:
 - funda esportiva;
 
 **Equipes Conhecidas**
-- Machados Enferrujados: equipe pela qual jogam Thorin, Filena e Borin.
-		- Treinador: Dragobur.
-		- Representa as castas trabalhadoras de Gildrat.
-		- Disputa o principal campeonato local.
+- **Machados Enferrujados**: equipe pela qual jogam Thorin e Filena.
+    - Treinador: Dragobur.
+    - Representa as castas trabalhadoras de Gildrat e os bairros operários da cidade.
+    - Conhecida pela garra, espírito coletivo e improviso em campo, compensando a falta de recursos com trabalho em equipe.
+    - Disputa o principal campeonato local e mantém uma rivalidade histórica com os Martelos de Bronze.
+
+- **Martelos de Bronze**: principal rival dos Machados Enferrujados e uma das equipes mais tradicionais de Gildrat.
+    - Representa excelência técnica, disciplina tática e alto investimento de patrocinadores ligados às Casas Mineradoras.
+    - Frequentemente disputa os títulos mais importantes do Futebol Rúnico.
+    - Seu elenco reúne alguns dos atletas mais famosos da modalidade.
+    - É a equipe em que joga Borin e **[Nome do atleta]** (considerado um dos maiores talentos de sua geração e por quem Filena demonstra ter uma queda); 
+    - Mantém uma rivalidade histórica com os Machados Enferrujados, protagonizando os jogos mais aguardados da temporada.
+
 - Existem outras equipes, mas ainda sem nome ou identificação; caso haja necessidade serão criadas posteriormente.
+
 
 **Competições**
 Atualmente existe pelo menos um campeonato importante em Gildrat
