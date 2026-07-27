@@ -1,3 +1,28 @@
+---
+status: 🟢 Aprovado
+genero: Quest
+tags:
+  - quest/main
+  - gildrat
+  - melios
+  - conselho
+tipo:
+  - Main Quest
+  - Narrativa
+arco:
+  - Melios
+  - Encontro com o Mentor
+prioridade:
+  - Crítica
+  - Revisada
+quest_anterior: A Travessia Perigosa
+quest_proxima: ""
+local_principal:
+  - Gildrat
+  - Melios
+versao: 2.0.0
+autor_data: Poliana / Maio 2026
+---
 # Narrative Structure Document (NSD) - Fluxo Visual De Cenas
 
 ## Quest: A Voz do Conselho
