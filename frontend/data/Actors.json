@@ -1,241 +1,313 @@
 [
-  null,
-  {
-    "id": 1,
-    "battlerName": "Actor1_1",
-    "characterIndex": 0,
-    "characterName": "People1",
-    "classId": 1,
-    "equips": [4, 0, 0, 3, 0],
-    "faceIndex": 0,
-    "faceName": "People1",
-    "traits": [
-      {
-        "code": 43,
-        "dataId": 35,
-        "value": 1
-      }
-    ],
-    "initialLevel": 1,
-    "maxLevel": 99,
-    "name": "Jogador",
-    "nickname": "",
-    "note": "",
-    "profile": ""
-  },
-  {
-    "id": 2,
-    "battlerName": "",
-    "characterIndex": 0,
-    "characterName": "",
-    "classId": 1,
-    "equips": [0, 0, 0, 0, 0],
-    "faceIndex": 0,
-    "faceName": "",
-    "traits": [],
-    "initialLevel": 1,
-    "maxLevel": 99,
-    "name": "",
-    "nickname": "",
-    "note": "",
-    "profile": ""
-  },
-  {
-    "id": 3,
-    "battlerName": "Thorin",
-    "characterIndex": 0,
-    "characterName": "Principal/$Thorin",
-    "classId": 5,
-    "equips": [1, 0, 51, 7, 0],
-    "faceIndex": 2,
-    "faceName": "Portraits menores/Principal2",
-    "traits": [
-      {
-        "code": 52,
-        "dataId": 1,
-        "value": 1
-      }
-    ],
-    "initialLevel": 30,
-    "maxLevel": 30,
-    "name": "Thorin",
-    "nickname": "",
-    "note": "<xAnima:Thorin>\n<xAnimaSet:Armor>\n<xAnimaSet:OldHelmet>\n<TP Mode: FOCO>\n<Preserve TP>\n<JS Post-Start Turn>\nif (user.isStateAffected(96) && user._aceTpSpent > 0) {\n  var penalty = Math.floor(user._aceTpSpent / 2);\n  user.gainTp(-penalty);\n  console.log(\"[ACE INTERRUPT] Penalidade: -\" + penalty + \" TP\");\n  user._aceTpSpent = 0;\n  user.removeState(96);\n}\n</JS Post-Start Turn>",
-    "profile": ""
-  },
-  {
-    "id": 4,
-    "battlerName": "Filena",
-    "characterIndex": 0,
-    "characterName": "Principal/$Filena",
-    "classId": 1,
-    "equips": [4, 0, 51, 2, 0],
-    "faceIndex": 2,
-    "faceName": "Portraits menores/Principal1",
-    "traits": [],
-    "initialLevel": 30,
-    "maxLevel": 30,
-    "name": "Filena",
-    "nickname": "",
-    "note": "<TP Mode: Momentum>\n  <JS Pre-Start Action>\n  var embaloSkillIds = [47, 48, 49, 50, 51, 52, 53, 54];\n  var _embAct = BattleManager._action;\n  var _embSkillId = _embAct ? (_embAct.item() ? _embAct.item().id : 0) : 0;\n\n  if (embaloSkillIds.indexOf(_embSkillId) === -1) {\n    user._embaloLastSkill = 0;\n    user._embaloCount = 0;\n    user.refresh();\n  }\n  </JS Pre-Start Action>",
-    "profile": ""
-  },
-  {
-    "id": 5,
-    "battlerName": "kilin",
-    "characterIndex": 0,
-    "characterName": "Principal/$Kilin",
-    "classId": 3,
-    "equips": [3, 27, 46, 6, 76],
-    "faceIndex": 3,
-    "faceName": "Portraits menores/Principal1",
-    "traits": [],
-    "initialLevel": 30,
-    "maxLevel": 30,
-    "name": "Kilin",
-    "nickname": "",
-    "note": "<TP Mode: GUARDA>\n<Bodyguard>",
-    "profile": ""
-  },
-  {
-    "id": 6,
-    "battlerName": "Mhordred",
-    "characterIndex": 0,
-    "characterName": "Principal/$Mhordred",
-    "classId": 4,
-    "equips": [2, 0, 46, 6, 0],
-    "faceIndex": 5,
-    "faceName": "Portraits menores/Principal1",
-    "traits": [],
-    "initialLevel": 30,
-    "maxLevel": 30,
-    "name": "Mhordred",
-    "nickname": "",
-    "note": "<TP Mode: FURIA>",
-    "profile": ""
-  },
-  {
-    "id": 7,
-    "battlerName": "",
-    "characterIndex": 0,
-    "characterName": "",
-    "classId": 1,
-    "equips": [0, 0, 0, 0, 0],
-    "faceIndex": 0,
-    "faceName": "",
-    "traits": [],
-    "initialLevel": 1,
-    "maxLevel": 99,
-    "name": "",
-    "nickname": "",
-    "note": "",
-    "profile": ""
-  },
-  {
-    "id": 8,
-    "battlerName": "Balastrus",
-    "characterIndex": 6,
-    "characterName": "Principal/$Balastrus",
-    "classId": 2,
-    "equips": [7, 0, 0, 20, 0],
-    "faceIndex": 0,
-    "faceName": "Portraits menores/Principal1",
-    "traits": [],
-    "initialLevel": 15,
-    "maxLevel": 30,
-    "name": "Balastrus",
-    "nickname": "",
-    "note": "",
-    "profile": ""
-  },
-  {
-    "id": 9,
-    "battlerName": "",
-    "characterIndex": 0,
-    "characterName": "",
-    "classId": 1,
-    "equips": [0, 0, 0, 0, 0],
-    "faceIndex": 0,
-    "faceName": "",
-    "traits": [],
-    "initialLevel": 1,
-    "maxLevel": 99,
-    "name": "",
-    "nickname": "",
-    "note": "",
-    "profile": ""
-  },
-  {
-    "id": 10,
-    "battlerName": "",
-    "characterIndex": 0,
-    "characterName": "Thorin-elmo",
-    "classId": 5,
-    "equips": [0, 0, 51, 0, 0],
-    "faceIndex": 1,
-    "faceName": "Portraits menores/Principal2",
-    "traits": [],
-    "initialLevel": 1,
-    "maxLevel": 30,
-    "name": "Thorin Elmo",
-    "nickname": "",
-    "note": "",
-    "profile": ""
-  },
-  {
-    "id": 11,
-    "battlerName": "Thorin",
-    "characterIndex": 0,
-    "characterName": "thorin",
-    "classId": 5,
-    "equips": [0, 0, 0, 7, 0],
-    "faceIndex": 0,
-    "faceName": "Portraits menores/Principal2",
-    "traits": [
-      {
-        "code": 35,
-        "dataId": 226,
-        "value": 1
-      }
-    ],
-    "initialLevel": 1,
-    "maxLevel": 30,
-    "name": "Thorin Armadura",
-    "nickname": "",
-    "note": "<ABS:0>\n<noTarget:1>\n<xAnima:Thorin>\n<xAnimaSet:Armor>\n<xAnimaSet:OldHelmet>",
-    "profile": ""
-  },
-  {
-    "id": 12,
-    "battlerName": "Actor3_5",
-    "characterIndex": 4,
-    "characterName": "Actor3",
-    "classId": 10,
-    "equips": [0, 0, 0, 0, 0],
-    "faceIndex": 7,
-    "faceName": "Evil",
-    "traits": [
-      {
-        "code": 22,
-        "dataId": 0,
-        "value": 0.95
-      },
-      {
-        "code": 22,
-        "dataId": 2,
-        "value": 0.05
-      },
-      {
-        "code": 22,
-        "dataId": 1,
-        "value": 0.05
-      }
-    ],
-    "initialLevel": 99,
-    "maxLevel": 99,
-    "name": "Teste",
-    "nickname": "",
-    "note": "",
-    "profile": ""
-  }
+    null,
+    {
+        "id": 1,
+        "battlerName": "Actor1_1",
+        "characterIndex": 0,
+        "characterName": "People1",
+        "classId": 1,
+        "equips": [
+            4,
+            0,
+            0,
+            3,
+            0
+        ],
+        "faceIndex": 0,
+        "faceName": "People1",
+        "traits": [
+            {
+                "code": 43,
+                "dataId": 35,
+                "value": 1
+            }
+        ],
+        "initialLevel": 1,
+        "maxLevel": 99,
+        "name": "Jogador",
+        "nickname": "",
+        "note": "",
+        "profile": ""
+    },
+    {
+        "id": 2,
+        "battlerName": "",
+        "characterIndex": 0,
+        "characterName": "",
+        "classId": 1,
+        "equips": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "faceIndex": 0,
+        "faceName": "",
+        "traits": [],
+        "initialLevel": 1,
+        "maxLevel": 99,
+        "name": "",
+        "nickname": "",
+        "note": "",
+        "profile": ""
+    },
+    {
+        "id": 3,
+        "battlerName": "Thorin",
+        "characterIndex": 0,
+        "characterName": "Principal/$Thorin",
+        "classId": 5,
+        "equips": [
+            1,
+            0,
+            51,
+            7,
+            0
+        ],
+        "faceIndex": 2,
+        "faceName": "Portraits menores/Principal2",
+        "traits": [
+            {
+                "code": 52,
+                "dataId": 1,
+                "value": 1
+            }
+        ],
+        "initialLevel": 30,
+        "maxLevel": 30,
+        "name": "Thorin",
+        "nickname": "",
+        "note": "<xAnima:Thorin>\n<xAnimaSet:Armor>\n<xAnimaSet:OldHelmet>\n<TP Mode: FOCO>\n<Preserve TP>\n<JS Post-Start Turn>\nif (user.isStateAffected(96) && user._aceTpSpent > 0) {\n  var penalty = Math.floor(user._aceTpSpent / 2);\n  user.gainTp(-penalty);\n  console.log(\"[ACE INTERRUPT] Penalidade: -\" + penalty + \" TP\");\n  user._aceTpSpent = 0;\n  user.removeState(96);\n}\n</JS Post-Start Turn>",
+        "profile": ""
+    },
+    {
+        "id": 4,
+        "battlerName": "Filena",
+        "characterIndex": 0,
+        "characterName": "Principal/$Filena",
+        "classId": 1,
+        "equips": [
+            4,
+            0,
+            51,
+            2,
+            0
+        ],
+        "faceIndex": 2,
+        "faceName": "Portraits menores/Principal1",
+        "traits": [],
+        "initialLevel": 30,
+        "maxLevel": 30,
+        "name": "Filena",
+        "nickname": "",
+        "note": "<TP Mode: Momentum>\n  <JS Pre-Start Action>\n  var embaloSkillIds = [47, 48, 49, 50, 51, 52, 53, 54];\n  var _embAct = BattleManager._action;\n  var _embSkillId = _embAct ? (_embAct.item() ? _embAct.item().id : 0) : 0;\n\n  if (embaloSkillIds.indexOf(_embSkillId) === -1) {\n    user._embaloLastSkill = 0;\n    user._embaloCount = 0;\n    user.refresh();\n  }\n  </JS Pre-Start Action>",
+        "profile": ""
+    },
+    {
+        "id": 5,
+        "battlerName": "kilin",
+        "characterIndex": 0,
+        "characterName": "Principal/$Kilin",
+        "classId": 3,
+        "equips": [
+            3,
+            27,
+            46,
+            6,
+            76
+        ],
+        "faceIndex": 3,
+        "faceName": "Portraits menores/Principal1",
+        "traits": [],
+        "initialLevel": 30,
+        "maxLevel": 30,
+        "name": "Kilin",
+        "nickname": "",
+        "note": "<TP Mode: GUARDA>\n<Bodyguard>",
+        "profile": ""
+    },
+    {
+        "id": 6,
+        "battlerName": "Mhordred",
+        "characterIndex": 0,
+        "characterName": "Principal/$Mhordred",
+        "classId": 4,
+        "equips": [
+            2,
+            0,
+            46,
+            6,
+            0
+        ],
+        "faceIndex": 5,
+        "faceName": "Portraits menores/Principal1",
+        "traits": [],
+        "initialLevel": 30,
+        "maxLevel": 30,
+        "name": "Mhordred",
+        "nickname": "",
+        "note": "<TP Mode: FURIA>",
+        "profile": ""
+    },
+    {
+        "id": 7,
+        "battlerName": "",
+        "characterIndex": 0,
+        "characterName": "",
+        "classId": 1,
+        "equips": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "faceIndex": 0,
+        "faceName": "",
+        "traits": [],
+        "initialLevel": 1,
+        "maxLevel": 99,
+        "name": "",
+        "nickname": "",
+        "note": "",
+        "profile": ""
+    },
+    {
+        "id": 8,
+        "battlerName": "Balastrus",
+        "characterIndex": 6,
+        "characterName": "Principal/$Balastrus",
+        "classId": 2,
+        "equips": [
+            7,
+            0,
+            0,
+            20,
+            0
+        ],
+        "faceIndex": 0,
+        "faceName": "Portraits menores/Principal1",
+        "traits": [],
+        "initialLevel": 15,
+        "maxLevel": 30,
+        "name": "Balastrus",
+        "nickname": "",
+        "note": "",
+        "profile": ""
+    },
+    {
+        "id": 9,
+        "battlerName": "",
+        "characterIndex": 0,
+        "characterName": "",
+        "classId": 1,
+        "equips": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "faceIndex": 0,
+        "faceName": "",
+        "traits": [],
+        "initialLevel": 1,
+        "maxLevel": 99,
+        "name": "",
+        "nickname": "",
+        "note": "",
+        "profile": ""
+    },
+    {
+        "id": 10,
+        "battlerName": "",
+        "characterIndex": 0,
+        "characterName": "Thorin-elmo",
+        "classId": 5,
+        "equips": [
+            0,
+            0,
+            51,
+            0,
+            0
+        ],
+        "faceIndex": 1,
+        "faceName": "Portraits menores/Principal2",
+        "traits": [],
+        "initialLevel": 1,
+        "maxLevel": 30,
+        "name": "Thorin Elmo",
+        "nickname": "",
+        "note": "",
+        "profile": ""
+    },
+    {
+        "id": 11,
+        "battlerName": "Thorin",
+        "characterIndex": 0,
+        "characterName": "thorin",
+        "classId": 5,
+        "equips": [
+            0,
+            0,
+            0,
+            7,
+            0
+        ],
+        "faceIndex": 0,
+        "faceName": "Portraits menores/Principal2",
+        "traits": [
+            {
+                "code": 35,
+                "dataId": 226,
+                "value": 1
+            }
+        ],
+        "initialLevel": 1,
+        "maxLevel": 30,
+        "name": "Thorin Armadura",
+        "nickname": "",
+        "note": "<ABS:0>\n<noTarget:1>\n<xAnima:Thorin>\n<xAnimaSet:Armor>\n<xAnimaSet:OldHelmet>",
+        "profile": ""
+    },
+    {
+        "id": 12,
+        "battlerName": "Actor3_5",
+        "characterIndex": 4,
+        "characterName": "Actor3",
+        "classId": 10,
+        "equips": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "faceIndex": 7,
+        "faceName": "Evil",
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0.95
+            },
+            {
+                "code": 22,
+                "dataId": 2,
+                "value": 0.05
+            },
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.05
+            }
+        ],
+        "initialLevel": 99,
+        "maxLevel": 99,
+        "name": "Teste",
+        "nickname": "",
+        "note": "",
+        "profile": ""
+    }
 ]
