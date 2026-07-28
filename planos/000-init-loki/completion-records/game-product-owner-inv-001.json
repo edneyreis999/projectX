@@ -1,0 +1,1 @@
+{"run_id":"loki-init-20260727-001","agent_run_id":"game-product-owner-inv-001","handoff_id":"game-product-owner-handoff-001","agent":"game-product-owner","terminal_status":"complete","packet_ref":"game-product-owner-001@1","files_written":[],"validations":["6/6 coverage terminal","read-only boundary"],"gates":[],"next_destination":"loki-init packet intake"}

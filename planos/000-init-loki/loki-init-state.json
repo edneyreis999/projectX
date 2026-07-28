@@ -1,0 +1,68 @@
+{
+  "loki_init_state": {
+    "schema_version": "2",
+    "run_id": "loki-init-20260727-001",
+    "consumer_project_root": "/Users/edney/projects/coreto/projectX",
+    "docs_root": "docs",
+    "plan_root": "planos/000-init-loki",
+    "mode": "full-init",
+    "current_phase": "completed",
+    "status": "completed",
+    "created_or_audited_paths": ["planos/000-init-loki/**"],
+    "discovery": {
+      "files_scanned": ["AGENTS.md supplied in session", "package.json", "docs/**", "frontend/**", "Obsidian/**", "scripts/**"],
+      "files_deep_read": ["package.json", "frontend/package.json", "frontend/data/System.json", "frontend/data/CommonEvents.json", "frontend/data/MapInfos.json", "frontend/js/plugins.js"],
+      "ignored_patterns": [".git/**", "node_modules/**", "coverage/**", "dist/**", "temp/**", "binary asset contents", "vendor plugin source"],
+      "project_areas": ["frontend", "docs", "Obsidian", "scripts"],
+      "detected_project_types": ["game-dev"],
+      "selected_project_type": "game-dev",
+      "detected_engines": ["RPG Maker MZ", "NW.js", "TypeScript/Jest"],
+      "git_available": true,
+      "common_inventory_packet_refs": ["packets/common-inventory-v1.json#321d81284b7686d08b35905834df14dd8414da4c1aa2e3f87965a096cd41e2f6"],
+      "technology_context_packet_refs": ["packets/technology-context-v1.json#b01711100045838667003a38cac7b53eaaa55de526849a204be6066b41ac3641"],
+      "selection_packet_refs": ["packets/investigator-selection-v1.json#919016f992bc7cb69fa4314c8e82c26500496615ae057950fbbb83c515c51a47"]
+    },
+    "capability_and_catalog": {
+      "capability_preflight": "Codex collaboration adapter supports 4 concurrent slots including orchestrator; named custom agents are available",
+      "discovery_method": "local read-only inventory plus package manifest",
+      "catalog_source": ["/Users/edney/projects/coreto/loki-framework/manifest.yaml"],
+      "supported_project_types": ["game-dev", "software-development"],
+      "agent_project_tag_policy": {"base_tag": "core", "selection_rule": "core + selected_project_type"},
+      "compatible_tools_found": ["catalogador", "15 init investigators", "jq", "node", "RPG Maker plugin envelope validator"],
+      "available": ["catalogador", "runtime-qa", "technical-implementer", "game-product-owner", "game-business-analyst", "game-designer", "narrative-designer", "ux-ui-designer", "gameplay-engineer", "narrative-qa", "level-designer", "balance-economy-designer", "scene-presentation-designer", "audio-designer", "quest-content-designer", "technical-artist"],
+      "required": ["all 15 init investigators", "catalogador"],
+      "selected": ["all 15 init investigators", "catalogador serial writer"],
+      "blocked": [],
+      "skipped": ["support-only agents"]
+    },
+    "investigator_registry": {
+      "runtime-qa":{"status":"complete","completion_record_refs":["completion-records/runtime-qa-inv-001.json"]},"technical-implementer":{"status":"complete","completion_record_refs":["completion-records/technical-implementer-inv-001.json"]},"game-product-owner":{"status":"complete","completion_record_refs":["completion-records/game-product-owner-inv-001.json"]},"game-business-analyst":{"status":"complete","completion_record_refs":["completion-records/game-business-analyst-inv-001.json"]},"game-designer":{"status":"complete","completion_record_refs":["completion-records/game-designer-inv-001.json"]},"narrative-designer":{"status":"complete","completion_record_refs":["completion-records/narrative-designer-inv-001.json"]},"ux-ui-designer":{"status":"complete","completion_record_refs":["completion-records/ux-ui-designer-inv-001.json"]},"gameplay-engineer":{"status":"complete","completion_record_refs":["completion-records/gameplay-engineer-inv-001.json"]},"narrative-qa":{"status":"complete","completion_record_refs":["completion-records/narrative-qa-inv-001.json"]},"level-designer":{"status":"complete","completion_record_refs":["completion-records/level-designer-inv-001.json"]},"balance-economy-designer":{"status":"complete","completion_record_refs":["completion-records/balance-economy-designer-inv-001.json"]},"scene-presentation-designer":{"status":"complete","completion_record_refs":["completion-records/scene-presentation-designer-inv-001.json"]},"audio-designer":{"status":"complete","completion_record_refs":["completion-records/audio-designer-inv-001.json"]},"quest-content-designer":{"status":"complete","completion_record_refs":["completion-records/quest-content-designer-inv-001.json"]},"technical-artist":{"status":"complete","completion_record_refs":["completion-records/technical-artist-inv-001.json"]}
+    },
+    "packet_registry": {
+      "common-inventory-001": {"revision": 1, "hash": "321d81284b7686d08b35905834df14dd8414da4c1aa2e3f87965a096cd41e2f6", "investigator": "loki-init-orchestrator", "path": "packets/common-inventory-v1.json", "acceptance_status": "accepted", "materialization_status": "materialized", "continuation_status": "complete", "materialization_refs": ["bootstrap-001"]},
+      "technology-context-001": {"revision": 1, "hash": "b01711100045838667003a38cac7b53eaaa55de526849a204be6066b41ac3641", "investigator": "loki-init-orchestrator", "path": "packets/technology-context-v1.json", "acceptance_status": "accepted", "materialization_status": "materialized", "continuation_status": "complete", "materialization_refs": ["bootstrap-001"]},
+      "investigator-selection-001": {"revision": 1, "hash": "919016f992bc7cb69fa4314c8e82c26500496615ae057950fbbb83c515c51a47", "investigator": "loki-init-orchestrator", "path": "packets/investigator-selection-v1.json", "acceptance_status": "accepted", "materialization_status": "materialized", "continuation_status": "complete", "materialization_refs": ["bootstrap-001"]},
+      "runtime-qa-001": {"revision":1,"hash":"f01896c7bebda1157e47c8bebe4c03ec2981f93989f97bf2427b291d2f23c6ab","investigator":"runtime-qa","path":"packets/runtime-qa-v1.json","acceptance_status":"accepted","materialization_status":"materialized","continuation_status":"complete","batch_id":"publication-batch-001"},
+      "technical-implementer-001": {"revision":1,"hash":"920bbb0464aec8981cabbfcf42d53ad29cdb73a030d100c1a3bc0249e58d462e","investigator":"technical-implementer","path":"packets/technical-implementer-v1.json","acceptance_status":"accepted","materialization_status":"materialized","continuation_status":"complete","batch_id":"publication-batch-001"},
+      "game-product-owner-001": {"revision":1,"hash":"2fbcabc8300b102e2dd976f8b2270037d85cf4b27a8c3fe4b15dd142fba69be6","investigator":"game-product-owner","path":"packets/game-product-owner-v1.json","acceptance_status":"accepted","materialization_status":"materialized","continuation_status":"complete","batch_id":"publication-batch-001"}
+    },
+    "domain_packet_registry_ref":"packet-registry-final.json#15/15-materialized",
+    "acceptance_registry_refs":["acceptance/wave-02.json","acceptance/wave-03.json","acceptance/wave-04.json","acceptance/wave-05.json"],
+    "coverage_matrix": {"plan_ref":"coverage-plan.md#a41f834124428845ddfb21fdb04825e188426e7231bbb0034b789349807cf928","status_ref":"coverage-status.json","terminal_domains":15,"pending_domains":0},
+    "bootstrap": {"operation_id": "bootstrap-001", "idempotency_key": "loki-init-20260727-001:bootstrap-001", "status": "committed", "packet_refs": ["common-inventory-001", "technology-context-001", "investigator-selection-001"], "selected_domain_roots": ["15 selected investigator roots"], "materialization_refs": ["docs-tree#92a8ff1844af94b0dc3828c4fea06344c96936923640924c1d64adf5fa6dc954"]},
+    "publication_batches": {"publication-batch-001":{"idempotency_key":"loki-init-20260727-001:publication-batch-001","hash":"6e1bbd1dfae15fe1a5941d33ace7f41cbd97061a626d859f89ae7bd31472d081","path":"operations/publication-batch-001.json","packet_refs":"packet-registry-final.json","previous_checkpoint_ref":"bootstrap-001#committed","before_state_hash":"92a8ff1844af94b0dc3828c4fea06344c96936923640924c1d64adf5fa6dc954","status":"committed","targets":["docs/domains/**","docs/index.xml"],"materialization_refs":["docs-tree#4c62fdda00730de087ab7975343faeb99e05851e79b318b2986c468b8367edf7"]}},
+    "final_reconciliation": {"operation_id":"final-reconciliation-001","idempotency_key":"loki-init-20260727-001:final-reconciliation-001","ledger_hash":"c0e37afa9ad79702a7026149183c89775fc764a79738613d76f6bfcc094622fe","status":"committed","materialization_refs":["docs-tree#74dac405682b97d056b7f2646de282f18119356bf93ea71b22ba57e7c94f086d"],"blockers":[]},
+    "catalogador_single_writer": {"active_run_id":"","active_mode":"","active_status":"none","last_terminal_run_id":"catalogador-reconciliation-001"},
+    "completion_records": ["completion-records/*.json (18 validated records)"],
+    "session_evidence": [{"status":"pointer-only","count":18,"ref":"completion-records/*.json"}],
+    "conflicts": ["plugins.js contains duplicate active entries for PKD_SimpleQuestSystem and Coreto_TpEvents; runtime impact not validated"],
+    "open_questions": [],
+    "validators_run": ["roots-resolve-within-project:passed", "symlink-boundary:passed", "JSON-parse:passed", "plugins-envelope:passed", "plugins-config-extraction:passed", "bootstrap-XML-parse:passed", "bootstrap-index-records:passed", "bootstrap-links:passed", "bootstrap-README-contract:passed", "bootstrap-write-boundary:passed", "package-contract-suite:passed"],
+    "gates": [{"gate":"approval","status":"granted","scope":"docs/** and plan root only"},{"gate":"human-documentation-clarity-navigability","status":"passed","evidence":"approvals/human-validation-20260728.json"},{"gate":"runtime/perceptible-validation","status":"not-applicable-to-init-completion","scope":"downstream claims remain unvalidated"}],
+    "blocked_by": [],
+    "completed_steps": ["input-normalization","capability-preflight","catalog-preflight","common-discovery","technology-classification","packet-acceptance","coverage-planning","bootstrap-committed","15-investigators-terminal","publication-batch-committed","final-reconciliation-committed","terminal-static-validators-passed"],
+    "next_recommended_command": "loki-commit",
+    "next_action": "commit approved consumer documentation",
+    "resume_condition": "none; loki-init terminal"
+  }
+}

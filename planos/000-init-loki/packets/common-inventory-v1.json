@@ -1,0 +1,30 @@
+{
+  "schema": "loki_init_research_packet",
+  "schema_version": "1",
+  "run_id": "loki-init-20260727-001",
+  "packet_id": "common-inventory-001",
+  "revision": 1,
+  "sequence": 1,
+  "kind": "common",
+  "investigator": "loki-init-orchestrator",
+  "invocation_id": "common-discovery-001",
+  "sources_attempted": [
+    {"ref": "project-root", "locator": ".", "outcome": "read"},
+    {"ref": "root-guidance", "locator": "AGENTS.md supplied in session", "outcome": "read"},
+    {"ref": "root-package", "locator": "package.json", "outcome": "read"},
+    {"ref": "consumer-docs", "locator": "docs/**", "outcome": "mapped"},
+    {"ref": "rpg-project", "locator": "frontend/**", "outcome": "mapped"},
+    {"ref": "knowledge-base", "locator": "Obsidian/**", "outcome": "mapped"},
+    {"ref": "helper-scripts", "locator": "scripts/**", "outcome": "mapped-only; not executed"}
+  ],
+  "findings": [
+    {"id": "common.project-identity", "type": "fact", "statement": "Daratrine - A Origem is a Portuguese RPG project.", "source_refs": ["root-guidance", "frontend/data/System.json"], "confidence": "high"},
+    {"id": "common.areas", "type": "fact", "statement": "Primary areas are frontend runtime, docs design/reference material, Obsidian narrative knowledge, helper scripts, generated coverage/dist, and temporary artifacts.", "source_refs": ["project-root"], "confidence": "high"},
+    {"id": "common.docs-existing", "type": "fact", "statement": "Existing docs include GDD, quest documents, and RPG Maker/VisuStella references; docs/index.xml is absent at cold start.", "source_refs": ["consumer-docs"], "confidence": "high"},
+    {"id": "common.build", "type": "fact", "statement": "Root package scripts expose Jest, ESLint, Prettier, TypeScript build/watch, and NW.js debug workflows.", "source_refs": ["root-package"], "confidence": "high"},
+    {"id": "common.boundaries", "type": "fact", "statement": "Runtime and generated surfaces are outside loki-init write authority; consumer docs merge must preserve existing content.", "source_refs": ["root-guidance", "project-root"], "confidence": "high"}
+  ],
+  "coverage_delta": [],
+  "publication_intent": "Bootstrap project inventory and initial navigation without overwriting existing docs.",
+  "continuation": {"status": "complete", "cursor": "common-discovery-complete"}
+}

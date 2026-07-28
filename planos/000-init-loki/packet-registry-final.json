@@ -1,0 +1,22 @@
+{
+  "run_id":"loki-init-20260727-001",
+  "batch_id":"publication-batch-001",
+  "batch_status":"committed",
+  "packets":{
+    "runtime-qa-001":{"hash":"f01896c7bebda1157e47c8bebe4c03ec2981f93989f97bf2427b291d2f23c6ab","acceptance":"accepted","materialization":"materialized","ref":"docs/domains/runtime-qa/README.md#3387dc4d386ea6c3280cfa333cfc6a43ada9c979d19a0d39214b0f2c2a831ace"},
+    "technical-implementer-001":{"hash":"920bbb0464aec8981cabbfcf42d53ad29cdb73a030d100c1a3bc0249e58d462e","acceptance":"accepted","materialization":"materialized","ref":"docs/domains/technical-implementer/README.md#93a097a404243797b5ac2449d25b48d6428df8110dfaaf269d8185b9cf648049"},
+    "game-product-owner-001":{"hash":"2fbcabc8300b102e2dd976f8b2270037d85cf4b27a8c3fe4b15dd142fba69be6","acceptance":"accepted","materialization":"materialized","ref":"docs/domains/game-product-owner/README.md#e3d835e1b0a72520fb8f565f2caf3e84a4aca308e778275b8fcea179e83d7472"},
+    "game-business-analyst-001":{"hash":"c4cd63bceb4e15d1689869ec1f90467865247ee128adbaa52c3619d873d4d837","acceptance":"accepted","materialization":"materialized","ref":"docs/domains/game-business-analyst/README.md#6e616163361bd34b2505a5f505d13c1591c4066b036065480de795afb1075f16"},
+    "game-designer-001":{"hash":"31d6baffc86e34e90000f68449db092ea18d82f8f620f32be70ad0376a9558be","acceptance":"accepted","materialization":"materialized","ref":"docs/domains/game-designer/README.md#6430f8ceb2860c45993cc9d6fbd145265e6121bb3a12cd437df3aaa4853eed0f"},
+    "narrative-designer-001":{"hash":"33b29e7a9ce9b86518b82787bbc55aad471c39abf91504cb6d26f34e6911ddb0","acceptance":"accepted","materialization":"materialized","ref":"docs/domains/narrative-designer/README.md#8ccd0632505bbe7bc0d7b425af6304a2ca53d8b128e0762e764f6ddb44dcd688"},
+    "ux-ui-designer-001":{"hash":"009430d193631ec1d66f2321937209b07344ad741aea4dcbcbd9e9d32d693dff","acceptance":"accepted","materialization":"materialized","ref":"docs/domains/ux-ui-designer/README.md#d26269a4b94d251aa3fc38e11e24ff245540f0ca67a926888cfe9ac057bcd7a3"},
+    "gameplay-engineer-001":{"hash":"32f53f62eaaf62696ea1e3f4f64cd211bff3657464fe176d3c2e1417927631c3","acceptance":"accepted","materialization":"materialized","ref":"docs/domains/gameplay-engineer/README.md#9f64597566f17114ff8aafded1220298482fa308d50b5baebcc3626fb96ac073"},
+    "narrative-qa-001":{"hash":"bf5c061b05cf8b70b4280bf866db6427f7250f7db0ad12e3ba325d895f611d2b","acceptance":"accepted","materialization":"materialized","ref":"docs/domains/narrative-qa/README.md#c1932159b281b9452f8201e961a58968b42f5cf76a423904aa509a5e5809c288"},
+    "level-designer-001":{"hash":"17f4f619b585215957c06c592499caae4afe251f30e4b9a410e2902c115ee50e","acceptance":"accepted","materialization":"materialized","ref":"docs/domains/level-designer/README.md#c8c5db9d35c174f38a33c14d405adfd2fe156e3fc5a5f8b84c038b4c06da508e"},
+    "balance-economy-designer-001":{"hash":"9497312b1bdc22b2d9117a47aaa8d77769f1bd7116201e92874e5d1770904c58","acceptance":"accepted","materialization":"materialized","ref":"docs/domains/balance-economy-designer/README.md#50084dac03e44e6a87bbe0598e3bd85931de8358950b9236ef3876f0be5fa50d"},
+    "scene-presentation-designer-001":{"hash":"ee0179de3c40f673a1c1650e950faf931e4668ffd3fae273999f523c2188c82c","acceptance":"accepted","materialization":"materialized","ref":"docs/domains/scene-presentation-designer/README.md#75e644dae297f7dd7523ca23527691b15587970569e55023d53308268dc7adad"},
+    "audio-designer-001":{"hash":"66881696635cfd460fbfd867822e50b45ad3f0dcace446d7abc65fba15a68c8e","acceptance":"accepted","materialization":"materialized","ref":"docs/domains/audio-designer/README.md#782a2f672ce224cbcc268db83897f01cf2d0891f289386353fbf7f0ca24621ba"},
+    "quest-content-designer-001":{"hash":"7cbd7491ca6bb7361b2dc5cecfd43df443da93116e20f62a9f991a1e542e9568","acceptance":"accepted","materialization":"materialized","ref":"docs/domains/quest-content-designer/README.md#437446ef875d0ef5bb99e0dfa62710492c9a394d774407b8c1e841798d14b42a"},
+    "technical-artist-001":{"hash":"911a8939b5c894d9299ba6c2789db570a0f23483ca4d7a9d67be94e5e5734dc6","acceptance":"accepted","materialization":"materialized","ref":"docs/domains/technical-artist/README.md#ea72c99942be612fb7df08b4d10ee1c34269031108d6d2a3f41df63dc59be19f"}
+  }
+}
