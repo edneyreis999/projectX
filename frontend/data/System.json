@@ -125,7 +125,7 @@
         "pitch": 100,
         "volume": 90
     },
-    "editMapId": 46,
+    "editMapId": 5,
     "elements": [
         "",
         "Físico",
@@ -352,9 +352,9 @@
             "volume": 90
         }
     ],
-    "startMapId": 57,
-    "startX": 20,
-    "startY": 7,
+    "startMapId": 5,
+    "startX": 15,
+    "startY": 15,
     "switches": [
         "",
         "Jogada segura",
@@ -742,7 +742,7 @@
         "",
         "Inimigos derrotados(release)"
     ],
-    "versionId": 48649618,
+    "versionId": 38993257,
     "victoryMe": {
         "name": "Victory1",
         "pan": 0,
