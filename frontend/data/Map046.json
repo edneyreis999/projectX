@@ -1437,11 +1437,11 @@
                                     "PictureID:eval": "1",
                                     "PictureName:str": "Portraits/Principal/Reed final",
                                     "Origin:str": "Bust",
-                                    "Position:num": "5",
+                                    "Position:num": "9",
                                     "StartOffsetX:eval": "-200",
                                     "StartOffsetY:eval": "+0",
                                     "EasingType:str": "OutSine",
-                                    "HorzMirror:str": "Auto-Reverse",
+                                    "HorzMirror:str": "Auto",
                                     "Duration:eval": "20"
                                 }
                             ]
@@ -1471,44 +1471,6 @@
                             "indent": 0,
                             "parameters": [
                                 "Ora, ora... vejam só quem chegou atrasado! Venha, pequeno — uma boa história não começa sem o último ouvinte."
-                            ]
-                        },
-                        {
-                            "code": 357,
-                            "indent": 0,
-                            "parameters": [
-                                "VisuMZ_2_VNPictureBusts",
-                                "Basic_ExitBusts",
-                                "BASIC: Exit Bust(s)",
-                                {
-                                    "PictureID:arrayeval": "[\"1\"]",
-                                    "EndOffsetX:eval": "-200",
-                                    "EndOffsetY:eval": "+0",
-                                    "EasingType:str": "InSine",
-                                    "FlipDirection:str": "None",
-                                    "Duration:eval": "20",
-                                    "AutoErase:eval": "true"
-                                }
-                            ]
-                        },
-                        {
-                            "code": 357,
-                            "indent": 0,
-                            "parameters": [
-                                "VisuMZ_2_VNPictureBusts",
-                                "Basic_EnterBust",
-                                "BASIC: Enter Bust",
-                                {
-                                    "PictureID:eval": "1",
-                                    "PictureName:str": "Portraits/Principal/Reed final",
-                                    "Origin:str": "Bust",
-                                    "Position:num": "5",
-                                    "StartOffsetX:eval": "-200",
-                                    "StartOffsetY:eval": "+0",
-                                    "EasingType:str": "OutSine",
-                                    "HorzMirror:str": "Auto-Reverse",
-                                    "Duration:eval": "20"
-                                }
                             ]
                         },
                         {
@@ -1556,17 +1518,46 @@
                             "indent": 0,
                             "parameters": [
                                 "VisuMZ_2_VNPictureBusts",
-                                "Basic_ExitBusts",
-                                "BASIC: Exit Bust(s)",
+                                "Basic_EnterBust",
+                                "BASIC: Enter Bust",
                                 {
-                                    "PictureID:arrayeval": "[\"1\"]",
-                                    "EndOffsetX:eval": "-200",
-                                    "EndOffsetY:eval": "+0",
-                                    "EasingType:str": "InSine",
-                                    "FlipDirection:str": "None",
-                                    "Duration:eval": "20",
-                                    "AutoErase:eval": "true"
+                                    "PictureID:eval": "2",
+                                    "PictureName:str": "Portraits/Principal/CriancaOrc_",
+                                    "Origin:str": "Bust",
+                                    "Position:num": "1",
+                                    "StartOffsetX:eval": "-200",
+                                    "StartOffsetY:eval": "+0",
+                                    "EasingType:str": "OutSine",
+                                    "HorzMirror:str": "Auto",
+                                    "Duration:eval": "20"
                                 }
+                            ]
+                        },
+                        {
+                            "code": 121,
+                            "indent": 0,
+                            "parameters": [
+                                44,
+                                44,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "",
+                                0,
+                                0,
+                                2,
+                                ""
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "Dulgarin...?"
                             ]
                         },
                         {
@@ -1620,26 +1611,6 @@
                             "indent": 1,
                             "parameters": [
                                 "VisuMZ_2_VNPictureBusts",
-                                "Basic_EnterBust",
-                                "BASIC: Enter Bust",
-                                {
-                                    "PictureID:eval": "1",
-                                    "PictureName:str": "Portraits/Principal/Reed final",
-                                    "Origin:str": "Bust",
-                                    "Position:num": "9",
-                                    "StartOffsetX:eval": "-200",
-                                    "StartOffsetY:eval": "+0",
-                                    "EasingType:str": "OutSine",
-                                    "HorzMirror:str": "Auto-Reverse",
-                                    "Duration:eval": "20"
-                                }
-                            ]
-                        },
-                        {
-                            "code": 357,
-                            "indent": 1,
-                            "parameters": [
-                                "VisuMZ_2_VNPictureBusts",
                                 "Basic_GraphicChange",
                                 "BASIC: Graphic Change",
                                 {
@@ -1673,26 +1644,6 @@
                             "indent": 1,
                             "parameters": [
                                 "A-ha! Eu sabia! Ainda há boas histórias guardadas nesta cabeça velha — e alguns nomes também."
-                            ]
-                        },
-                        {
-                            "code": 357,
-                            "indent": 1,
-                            "parameters": [
-                                "VisuMZ_2_VNPictureBusts",
-                                "Basic_EnterBust",
-                                "BASIC: Enter Bust",
-                                {
-                                    "PictureID:eval": "2",
-                                    "PictureName:str": "Portraits/Principal/CriancaOrc_",
-                                    "Origin:str": "Bust",
-                                    "Position:num": "1",
-                                    "StartOffsetX:eval": "-200",
-                                    "StartOffsetY:eval": "+0",
-                                    "EasingType:str": "OutSine",
-                                    "HorzMirror:str": "Auto-Reverse",
-                                    "Duration:eval": "20"
-                                }
                             ]
                         },
                         {
@@ -1794,14 +1745,6 @@
                             ]
                         },
                         {
-                            "code": 402,
-                            "indent": 0,
-                            "parameters": [
-                                1,
-                                "qualSeuNome2"
-                            ]
-                        },
-                        {
                             "code": 357,
                             "indent": 1,
                             "parameters": [
@@ -1809,16 +1752,24 @@
                                 "Basic_EnterBust",
                                 "BASIC: Enter Bust",
                                 {
-                                    "PictureID:eval": "2",
-                                    "PictureName:str": "Portraits/Principal/CriancaOrc_",
+                                    "PictureID:eval": "1",
+                                    "PictureName:str": "Portraits/Principal/Reed final",
                                     "Origin:str": "Bust",
-                                    "Position:num": "5",
+                                    "Position:num": "9",
                                     "StartOffsetX:eval": "-200",
                                     "StartOffsetY:eval": "+0",
                                     "EasingType:str": "OutSine",
-                                    "HorzMirror:str": "Auto-Reverse",
+                                    "HorzMirror:str": "Auto",
                                     "Duration:eval": "20"
                                 }
+                            ]
+                        },
+                        {
+                            "code": 402,
+                            "indent": 0,
+                            "parameters": [
+                                1,
+                                "qualSeuNome2"
                             ]
                         },
                         {
@@ -1879,18 +1830,11 @@
                             "indent": 1,
                             "parameters": [
                                 "VisuMZ_2_VNPictureBusts",
-                                "Basic_EnterBust",
-                                "BASIC: Enter Bust",
+                                "Basic_GraphicChange",
+                                "BASIC: Graphic Change",
                                 {
                                     "PictureID:eval": "1",
-                                    "PictureName:str": "Portraits/Principal/Reed final",
-                                    "Origin:str": "Bust",
-                                    "Position:num": "5",
-                                    "StartOffsetX:eval": "-200",
-                                    "StartOffsetY:eval": "+0",
-                                    "EasingType:str": "OutSine",
-                                    "HorzMirror:str": "Auto-Reverse",
-                                    "Duration:eval": "20"
+                                    "PictureName:str": "Portraits/Principal/Reed final"
                                 }
                             ]
                         },
@@ -1922,47 +1866,9 @@
                             ]
                         },
                         {
-                            "code": 357,
-                            "indent": 1,
-                            "parameters": [
-                                "VisuMZ_2_VNPictureBusts",
-                                "Basic_ExitBusts",
-                                "BASIC: Exit Bust(s)",
-                                {
-                                    "PictureID:arrayeval": "[\"1\"]",
-                                    "EndOffsetX:eval": "-200",
-                                    "EndOffsetY:eval": "+0",
-                                    "EasingType:str": "InSine",
-                                    "FlipDirection:str": "None",
-                                    "Duration:eval": "20",
-                                    "AutoErase:eval": "true"
-                                }
-                            ]
-                        },
-                        {
                             "code": 404,
                             "indent": 0,
                             "parameters": []
-                        },
-                        {
-                            "code": 357,
-                            "indent": 0,
-                            "parameters": [
-                                "VisuMZ_2_VNPictureBusts",
-                                "Basic_EnterBust",
-                                "BASIC: Enter Bust",
-                                {
-                                    "PictureID:eval": "1",
-                                    "PictureName:str": "Portraits/Principal/Reed final",
-                                    "Origin:str": "Bust",
-                                    "Position:num": "5",
-                                    "StartOffsetX:eval": "-200",
-                                    "StartOffsetY:eval": "+0",
-                                    "EasingType:str": "OutSine",
-                                    "HorzMirror:str": "Auto-Reverse",
-                                    "Duration:eval": "20"
-                                }
-                            ]
                         },
                         {
                             "code": 357,

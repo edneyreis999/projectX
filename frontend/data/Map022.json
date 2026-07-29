@@ -6373,7 +6373,14 @@
                             ]
                         },
                         {
-                            "code": 357,
+                            "code": 355,
+                            "indent": 0,
+                            "parameters": [
+                                "(() => {\n  if (!$gameMap || !$gameSelfSwitches) return;\n\n  const mapId = $gameMap.mapId();\n  $gameSelfSwitches.setValue([mapId, 31, \"A\"], true);\n  $gameMap.eraseEvent(31);\n\n  const scene = SceneManager && SceneManager._scene;\n  const spriteset = scene && scene._spriteset;\n  const target = $gameMap.event(30);\n  if (\n    !spriteset ||\n    !target ||\n    !Array.isArray(spriteset._balloonSprites) ||\n    typeof spriteset.removeBalloon !== \"function\"\n  ) return;\n\n  spriteset._balloonSprites.slice().forEach((sprite) => {\n    if (sprite && sprite.targetObject === target) {\n      spriteset.removeBalloon(sprite);\n    }\n  });\n})();"
+                            ]
+                        },
+                        {
+            "code": 357,
                             "indent": 0,
                             "parameters": [
                                 "VisuMZ_2_VNPictureBusts",
@@ -6680,15 +6687,15 @@
                         "actorValid": false,
                         "itemId": 1,
                         "itemValid": false,
-                        "selfSwitchCh": "B",
-                        "selfSwitchValid": false,
+                        "selfSwitchCh": "A",
+                        "selfSwitchValid": true,
                         "switch1Id": 1,
                         "switch1Valid": false,
                         "switch2Id": 1,
                         "switch2Valid": false,
-                        "variableId": 26,
-                        "variableValid": true,
-                        "variableValue": 1
+                        "variableId": 1,
+                        "variableValid": false,
+                        "variableValue": 0
                     },
                     "directionFix": false,
                     "image": {
