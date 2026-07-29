@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<execution_knowledge_entry schema_version="1">
+  <identity>
+    <capture_id>capture-pov-narrative-v1</capture_id>
+    <calling_workflow>loki-agentic-development</calling_workflow>
+    <run_id>agentic-004-ambientacao-vn-v1</run_id>
+    <run_directory>E:\Projetos\projectX\planos\004-ambientacao-VN</run_directory>
+    <phase>analysis-pov</phase>
+    <agent_run_id>agent-run-pov-narrative-v1</agent_run_id>
+    <handoff_id>handoff-pov-narrative-v1</handoff_id>
+    <source_agent>narrative-designer</source_agent>
+  </identity>
+  <lineage>
+    <target_entry>execution-knowledge/entries/capture-pov-narrative-v1.xml</target_entry>
+    <source_refs>
+      <source_ref type="evidence-manifest" authorization="run-contained">evidence/pov-narrative.xml</source_ref>
+      <source_ref type="task-state" authorization="run-contained">agent-runs/fase1/agent-run-pov-narrative-v1.xml</source_ref>
+      <source_ref type="completion-record" authorization="run-contained">analise/agentes/narrative-designer.xml</source_ref>
+    </source_refs>
+  </lineage>
+  <materiality>
+    <material>true</material>
+    <reason>The completed narrative POV materially informs downstream analysis through comprehensive branch coverage, concrete reversible proposals, explicit gates, and residual validation risks.</reason>
+  </materiality>
+  <capture>
+    <state>captured</state>
+    <reason>Material provider-neutral execution knowledge was derived from the authorized persisted sources.</reason>
+    <minimum_next_path>Review and deduplicate only through loki-continuous-improvement.</minimum_next_path>
+  </capture>
+  <knowledge>
+    <claims>
+      <claim type="fact" confidence="high">
+        <statement>The proposal-only narrative pass covered all 11 current message blocks, both name branches, their reconvergence, and the final transition using 11 uniquely located beats and 11 concrete dialogue proposals.</statement>
+        <evidence_ref>analise/agentes/narrative-designer.xml#dialogue_proposals</evidence_ref>
+      </claim>
+      <claim type="fact" confidence="high">
+        <statement>Deterministic checks passed for XML parsing, beat and proposal counts, unique runtime locators, branch coverage, required proposal fields, macro preservation, and absence of runtime or asset changes.</statement>
+        <evidence_ref>analise/agentes/narrative-designer.xml#validators</evidence_ref>
+      </claim>
+      <claim type="decision" confidence="high">
+        <statement>The POV preserved Reed versus Rheed, Confirmar name semantics, switches 43 and 44, historical staging, and narrative acceptance as unresolved gates instead of reconciling them through inference.</statement>
+        <evidence_ref>analise/agentes/narrative-designer.xml#human_gates</evidence_ref>
+      </claim>
+      <claim type="friction" confidence="high">
+        <statement>Static proposal validation cannot establish dialogue acceptance, character voice, reading pace, humor, branch coherence, or perceptible runtime behavior.</statement>
+        <evidence_ref>evidence/pov-narrative.xml#completion_record/residual_risks</evidence_ref>
+      </claim>
+      <claim type="inference" confidence="medium">
+        <statement>A reusable narrative POV can remain decision-useful without silently resolving canon or runtime conflicts when every proposal is tied to a runtime locator and material uncertainty is carried forward as an explicit gate.</statement>
+        <evidence_ref>analise/agentes/narrative-designer.xml#cross_review_handoff</evidence_ref>
+      </claim>
+    </claims>
+    <attempts>
+      <attempt>
+        <action>Perform a proposal-only narrative analysis of every current message block and both name branches.</action>
+        <outcome>The handoff completed with full structural coverage, reversible dialogue proposals, explicit human gates, and no production or asset changes.</outcome>
+        <evidence_ref>evidence/pov-narrative.xml#completion_record</evidence_ref>
+      </attempt>
+    </attempts>
+    <resolution status="partial" confidence="high">
+      <statement>The narrative pass produced analysis sufficient for cross-review while intentionally leaving canon, technical semantics, staging, and perceptible quality unresolved.</statement>
+    </resolution>
+    <cause status="known" confidence="high">
+      <statement>The residual uncertainty is inherent to proposal-only static analysis and to five material decisions reserved for human, technical, cross-review, or runtime validation.</statement>
+    </cause>
+    <gaps>
+      <gap>Cross-review remains pending for lore, branch consequences, plural address, pacing balance, and preservation of gates.</gap>
+      <gap>Human validation remains pending for dialogue acceptance, tone, humor, character voice, and reading pace.</gap>
+      <gap>No runtime execution or perceptible-behavior validation was performed.</gap>
+    </gaps>
+    <minimum_next_path>Run the declared cross-review while keeping the five gates open, then obtain the appropriate human and runtime validation before implementation.</minimum_next_path>
+    <reuse_guidance>For comparable branching dialogue analysis, cover every runtime message and branch with unique locators, preserve macros and behavior, attach a concrete reversible proposal to each beat, and carry unresolved canon or technical conflicts as explicit gates.</reuse_guidance>
+    <avoid_next_time>Do not convert historical staging, inferred speakers, canon spelling, branch semantics, or static editorial quality into approved runtime facts without their designated review gates.</avoid_next_time>
+  </knowledge>
+  <security>
+    <sanitized>true</sanitized>
+    <raw_payload_included>false</raw_payload_included>
+    <private_reasoning_included>false</private_reasoning_included>
+    <personal_data_included>false</personal_data_included>
+    <secrets_included>false</secrets_included>
+    <evidence_snapshots_copied>false</evidence_snapshots_copied>
+  </security>
+  <promotion>
+    <owner>loki-continuous-improvement</owner>
+    <status>unreviewed</status>
+  </promotion>
+</execution_knowledge_entry>

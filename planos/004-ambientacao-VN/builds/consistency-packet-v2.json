@@ -1,0 +1,33 @@
+{
+  "schema_version": 2,
+  "run_id": "loki-run-v2:b625625fc3f771ba1ccf751c357ec0395a82e2997bd04a06a97ce5b1867033a1",
+  "execution_id": "loki-execution-v2:f767776e80492869e3f1e145cf82bf53276a71d7dde3f90818e344aa33410d9a",
+  "status": "pending-human-validation",
+  "audit_configuration": {
+    "schema_version": 1,
+    "frequency": "phase",
+    "source": "default",
+    "policy_digest": "sha256:e3aeea217ca7881865de40d29e0e28e95bc32f4255e2488597801a8909e3bd78"
+  },
+  "state_digest": "sha256:003cc4678172af2be9f402be2dd0edbb4eefa456a067f70927d6094d91799248",
+  "tasks_md_digest": "sha256:d35b031fdcf5bb0fc3e33c896a72337b3410bf4e954fd3ece47fca89ece15d31",
+  "result_ref": "planos/004-ambientacao-VN/builds/implement-feature-result-v3.json",
+  "result_digest": "sha256:8565bc96d2c4959d72d7e123cd59ec46dffad0311f9191c98ff90298c0c804b8",
+  "dashboard_ref": "planos/004-ambientacao-VN/builds/implementation-dashboard-v3.md",
+  "dashboard_digest": "sha256:8cca97b7976cf5f2696d9610c5ddbeb86f12d2ab35a81b7cbd5f9f4ce9d62b01",
+  "metrics_ref": "planos/004-ambientacao-VN/builds/metrics/execution-metrics.json",
+  "metrics_digest": "sha256:b0ca90624b546ed0999d9684e1f51bca9675e34c59213558c01ac10206bee700",
+  "audit_checkpoint_refs": [
+    "planos/004-ambientacao-VN/builds/audits/phase/boundary-4d327cb7baf73d6b3cc8f72d624de5df/checkpoint-v1-0.yaml"
+  ],
+  "audit_checkpoint_digests": [
+    "sha256:d4a3b1615e930af351182e2f44e65d69bf413f645728f5bb35fe874a66e50a03"
+  ],
+  "terminal_evidence_refs": [
+    "planos/004-ambientacao-VN/builds/fase1/terminal-evidence-v1.json"
+  ],
+  "terminal_evidence_digests": [
+    "sha256:7a2421a65d3510d8a5e3626e1b66daea6b97b6348d227c451c09f57494a9734c"
+  ],
+  "validator_digest": "sha256:65b3b1bf54ca43ec801aa1539cede091e144190fe11fc0c488406fb94911d7ef"
+}

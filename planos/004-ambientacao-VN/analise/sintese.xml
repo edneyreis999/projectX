@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agentic_synthesis schema_version="1">
+  <synthesis>
+    <run_id>agentic-004-ambientacao-vn-v1</run_id>
+    <analysis_id>analysis-ambientacao-vn-map046-v1</analysis_id>
+    <status>completed-pending-human-validation</status>
+    <author>orchestrator</author>
+  </synthesis>
+  <summary>A cena tem uma boa estrutura de moldura narrativa — acolhimento, erro cômico de nome, bifurcação, reconvergência e promessa épica — mas a apresentação atual é visualmente mínima e a exposição final carece de cadência. A recomendação é enriquecer as onze falas, usar três variantes expressivas, um único background noturno neutro e um Cut-In de Thorin em B10; fumaça, vídeo, áudio novo e efeitos ornamentais ficam fora da primeira entrega.</summary>
+
+  <facts>
+    <fact id="F01"><statement>Map046 contém um único evento, uma página, onze blocos de mensagem e os ramos Confirmar e Corrigir.</statement><source>analise/context/inventory.xml; frontend/data/Map046.json:event 1/page 1</source></fact>
+    <fact id="F02"><statement>O ramo Corrigir executa Name Input para Actor 1 e usa a macro \N[1]; Confirmar não altera explicitamente o nome.</statement><source>frontend/data/Map046.json:list[14..38]; analise/agentes/runtime-qa-review.xml:RQF-01</source></fact>
+    <fact id="F03"><statement>Switches 43 e 44 são ativados oito vezes e sua semântica não foi demonstrada.</statement><source>frontend/data/Map046.json:list[3,8,16,20,23,29,35,41]</source></fact>
+    <fact id="F04"><statement>Os busts atuais Reed final e CriancaOrc_ existem, medem 408x560 RGBA e usam picture IDs 1 e 2.</statement><source>analise/context/inventory.xml; analise/agentes/technical-artist.xml</source></fact>
+    <fact id="F05"><statement>InnButton_00 mede 392x104 e InnButton_01 mede 388x101; ambos serão reutilizados.</statement><source>metadata local verificada; analise/agentes/runtime-qa-review.xml:RQF-05</source></fact>
+    <fact id="F06"><statement>O mapa não usa tiles visuais, parallax, BGM, BGS ou background de picture; a rota visual de menor conflito é um parallax opaco 1280x720.</statement><source>analise/context/inventory.xml; analise/agentes/technical-artist-review.xml</source></fact>
+    <fact id="F07"><statement>Guards noite-da-historia/CENA_PRINCIPAL e estado 10 precedem a cena; COMPLETE_VN, FinishVisualNovel e Exit Event Processing encerram a cena.</statement><source>frontend/data/Map046.json:list[0..1,51..53]</source></fact>
+  </facts>
+
+  <scene_verdict>
+    <strengths>
+      <item>Microescolha identitária diegética e legível.</item>
+      <item>Boa rampa de escala Daratrine → Gildrat → Thorin.</item>
+      <item>Poção funciona verbalmente como limiar para a história principal.</item>
+    </strengths>
+    <weaknesses>
+      <item>Voz do contador oscila entre coloquial genérico e exposição enciclopédica.</item>
+      <item>O bloco final concentra lore sem causalidade ou pausas suficientes.</item>
+      <item>A apresentação atual não possui background, variações expressivas, foco visual ou pico dramático.</item>
+      <item>Confirmar encena Dulgarin como nome verdadeiro sem evidência de mudança de estado.</item>
+    </weaknesses>
+    <tone>Calor de praça e humor gentil no início; encanto oral e solenidade crescente após a reconvergência; maravilhamento contido na transição.</tone>
+  </scene_verdict>
+
+  <recommended_dialogue source="analise/agentes/narrative-designer.xml:dialogue_proposals">
+    <line id="D01" locator="Map046:list[5]">Ora, ora... vejam só quem chegou atrasado! Venha, pequeno — uma boa história não começa sem o último ouvinte.</line>
+    <line id="D02" locator="Map046:list[10]">Hum... esse rosto não me é estranho. Deixe este velho testar a memória: Dulgarin, não é?</line>
+    <line id="D03" locator="Map046:list[18]">A-ha! Eu sabia! Ainda há boas histórias guardadas nesta cabeça velha — e alguns nomes também.</line>
+    <line id="D04" locator="Map046:list[22]">Como você sabia o meu nome?!</line>
+    <line id="D05" locator="Map046:list[25]">Sou contador de histórias, pequeno! Conheço as histórias de Daratrine... e os nomes de quem vem escutá-las.</line>
+    <line id="D06" locator="Map046:list[31]">Quase acertou, miseravi! Errou só a pronúncia, todas as letras... e a pessoa. Eu não sou Dulgarin. Meu nome é...</line>
+    <line id="D07" locator="Map046:list[37]">Agora sim, é um prazer conhecer você, \N[1]! Acomode-se — a nossa verdadeira história está só começando...</line>
+    <line id="D08" locator="Map046:list[43]">Ah, Daratrine... Como eu amo esta cidade! Difícil imaginar que ela já foi apenas um refúgio para soldados feridos. Por muito pouco, seu nome não desapareceu do mapa.</line>
+    <line id="D09" locator="Map046:list[45]">Mas, para entender como Daratrine chegou até aqui, precisamos voltar a Gildrat, o Império dos Anões.</line>
+    <line id="D10" locator="Map046:list[47]">E é em Gildrat que a nossa história encontra Thorin — um anão tão cabeça-dura que discutiria até com uma montanha!</line>
+    <line id="D11" locator="Map046:list[49]">Agora, fechem os olhos... Respirem fundo. Deixem que o encanto desta antiga poção nos transporte até Gildrat, quando tudo começou.</line>
+  </recommended_dialogue>
+
+  <presentation_contract>
+    <background verdict="recommended-base">Um parallax opaco 1280x720, noite comunitária neutra em Daratrine, composição acolhedora e pouco específica: arquitetura e silhuetas sem landmarks canônicos não confirmados; luz quente concentrada ao centro; bordas mais escuras; área inferior de 220px sem informação crítica; elementos essenciais dentro de margens de 64px.</background>
+    <busts>Preservar IDs 1 e 2, âncora 0.5/1.0, escala 100% e baseline de 408x560. Trocas de expressão não podem produzir salto de cabeça, pivot ou contato inferior.</busts>
+    <expressions>
+      <expression character="contador" beats="B02">Pensativo: esforço de memória, sobrancelha elevada, meio-sorriso investigativo.</expression>
+      <expression character="contador" beats="B08-B11">Solene: sorriso suavizado, olhar afetuoso e reverente.</expression>
+      <expression character="crianca" beats="B04">Surpresa: olhos mais abertos e boca entreaberta, sem medo.</expression>
+    </expressions>
+    <motion>Usar 20 frames como duração de enter/exit e 8–12 frames para mudança de foco; não somar waits obrigatórios à leitura controlada pelo jogador.</motion>
+    <cut_in verdict="positive-conditional" beat="B10">Um único Cut-In de Thorin como pico dramático. Retrato/pose firme em formas abstratas de Gildrat, sem texto, montanha literal, batalha, brasões, spoiler ou evento não confirmado. Slot transitório candidato ID 10 somente após inventário de ownership; reveal 24–30f, exit 18–24f, erase depois de B10 e antes de B11.</cut_in>
+    <excluded>Não solicitar fumaça, vídeo, fade dedicado, áudio novo, nova arte de choices, novo sprite ou animação frame a frame nesta entrega.</excluded>
+  </presentation_contract>
+
+  <preliminary_asset_manifest status="approved-for-asset-intake">
+    <asset id="A01" disposition="reuse"><type>bust</type><purpose>contador neutro</purpose><name>Portraits/Principal/Reed final.png</name><directory>frontend/img/pictures/Portraits/Principal</directory><dependencies>não renomear</dependencies></asset>
+    <asset id="A02" disposition="reuse"><type>bust</type><purpose>criança neutra</purpose><name>Portraits/Principal/CriancaOrc_.png</name><directory>frontend/img/pictures/Portraits/Principal</directory><dependencies>não renomear</dependencies></asset>
+    <asset id="A03" disposition="reuse"><type>choice-ui</type><purpose>normal e hover de qualSeuNome</purpose><name>Choices/InnButton_01.png; Choices/InnButton_00.png</name><directory>frontend/img/pictures/Choices</directory><dependencies>reusar papéis configurados</dependencies></asset>
+    <asset id="A04" disposition="new-required-after-approval"><type>vn-background</type><purpose>background único da cena</purpose><name>VN046_NoiteHistoria_BG.png</name><directory>frontend/img/parallaxes</directory><dependencies>aprovação do briefing; 1280x720 opaco</dependencies></asset>
+    <asset id="A05" disposition="new-required-after-approval"><type>bust-expression</type><purpose>contador pensativo em B02</purpose><name>Rheed_VN046_Pensativo.png</name><directory>frontend/img/pictures/Portraits/Principal</directory><dependencies>grafia Rheed aprovada; 408x560 RGBA</dependencies></asset>
+    <asset id="A06" disposition="new-required-after-approval"><type>bust-expression</type><purpose>contador solene em B08-B11</purpose><name>Rheed_VN046_Solene.png</name><directory>frontend/img/pictures/Portraits/Principal</directory><dependencies>grafia Rheed aprovada; 408x560 RGBA</dependencies></asset>
+    <asset id="A07" disposition="new-required-after-approval"><type>bust-expression</type><purpose>criança surpresa em B04</purpose><name>CriancaOrc_VN046_Surpresa.png</name><directory>frontend/img/pictures/Portraits/Principal</directory><dependencies>408x560 RGBA</dependencies></asset>
+    <asset id="A08" disposition="new-optional-after-approval"><type>visual-cut-in</type><purpose>pico dramático em B10</purpose><name>VN046_ThorinIntroducao_CutIn.png</name><directory>frontend/img/pictures/CutIns</directory><dependencies>referência canônica de Thorin; briefing e slot aprovados; 1280x720</dependencies></asset>
+  </preliminary_asset_manifest>
+
+  <resolved_gates>
+    <decision_gate id="DG-SWITCHES"><category>safe-default</category><status>resolved-for-analysis</status><resolution>Preservar todas as oito ativações de 43/44, shapes e ordem; só mudar após diagnóstico separado e evidência nos dois ramos.</resolution></decision_gate>
+    <decision_gate id="DG-VFX"><category>scope</category><status>resolved-for-base-proposal</status><resolution>Excluir fumaça, vídeo, áudio e ID 4 da primeira entrega.</resolution></decision_gate>
+    <decision_gate id="DG-BACKGROUND"><category>technical-route</category><status>resolved-for-proposal</status><resolution>Usar parallax opaco 1280x720 como rota recomendada, sujeito ao asset gate e ao Playtest.</resolution></decision_gate>
+    <decision_gate id="DG-CHOICE-METADATA"><category>source-conflict</category><status>resolved</status><resolution>InnButton_00=392x104; InnButton_01=388x101.</resolution></decision_gate>
+  </resolved_gates>
+
+  <open_blockers>
+    <blocker id="DG-NAMING"><status>resolved</status><description>Usuário aprovou Rheed como grafia canônica para texto futuro e novos assets; o arquivo legado Reed final permanece sem renomear.</description></blocker>
+    <blocker id="DG-CONFIRM-NAME"><status>resolved</status><description>Usuário aprovou que Confirmar estabeleça Dulgarin em Actor 1 dentro de qualSeuNome1 antes de B03-B05; mecanismo documentado e persistência serão validados na implementação.</description></blocker>
+    <blocker id="DG-CREATIVE-PACK"><status>resolved</status><description>Usuário aprovou as 11 falas, três expressões, background neutro, Cut-In B10 e ausência de fumaça/vídeo/áudio novo.</description></blocker>
+    <blocker id="DG-ASSETS"><status>awaiting-assets</status><description>Manifesto final deve ser entregue; aguardar o usuário adicionar os cinco assets e verificar nomes/presença antes de qualquer implementação.</description></blocker>
+    <blocker id="DG-RUNTIME"><status>human-validation-later</status><description>Playtestar os nove cenários definidos por runtime-qa; nenhuma afirmação perceptível é válida antes disso.</description></blocker>
+  </open_blockers>
+
+  <validation_contract>
+    <static source="analise/agentes/runtime-qa.xml">Doze validators cobrem baseline/diff, branches, nome, switches, guards/transição, assets, pictures/cleanup, background, caller chain, budget e escopo.</static>
+    <human source="analise/agentes/runtime-qa.xml">Nove cenários cobrem Confirmar, Corrigir, save/load, switches, composição, Cut-In, velocidades de texto, reachability/guards e cold/warm performance.</human>
+    <claim_boundary>Todos os resultados perceptíveis e de runtime permanecem pending-human-validation.</claim_boundary>
+  </validation_contract>
+
+  <post_mvp_wave_checkpoint>
+    <experience_juice_needed>false</experience_juice_needed>
+    <decision>Não abrir novas ondas de análise antes das decisões humanas; os POVs e reviews cobrem narrativa, apresentação, arte técnica e runtime QA.</decision>
+    <stop_criterion>Retomar somente após resposta ao próximo gate material.</stop_criterion>
+    <additional_waves/>
+  </post_mvp_wave_checkpoint>
+  <plan_handoff>
+    <ready_for_plan>false</ready_for_plan>
+    <recommended_plan_scope>Somente após as decisões humanas e o gate dos assets; futuro target de produção exclusivo frontend/data/Map046.json.</recommended_plan_scope>
+    <required_validators><validator>Asset manifest freeze and local presence check</validator><validator>RPG Maker MZ data JSON structural validation</validator><validator>Human Playtest matrix RQ-P01–RQ-P09</validator></required_validators>
+  </plan_handoff>
+  <freshness_signature><input_path>planos/004-ambientacao-VN/demanda-improved.md</input_path><upstream_output>analise/context/inventory.xml; analise/agentes/*.xml</upstream_output><decision_gate_id>DG-ASSETS</decision_gate_id></freshness_signature>
+</agentic_synthesis>

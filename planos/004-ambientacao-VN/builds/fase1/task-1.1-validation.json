@@ -1,0 +1,390 @@
+{
+  "schema_version": 1,
+  "task_id": "task-1.1",
+  "validator": "planos/004-ambientacao-VN/builds/fase1/validate-map046.mjs",
+  "generated_at": "2026-07-29T04:25:24.194Z",
+  "status": "passed",
+  "classification": "structural_validation",
+  "checks": [
+    {
+      "id": "RQ-S01-baseline-hash",
+      "status": "passed",
+      "evidence": "baseline-working-tree-style=73e00628022b18375aec7af714181dd3171fdfc8f9ec911cfcc76188f47eb5d2; git-blob=77ffe795f0f3918c9af2ffbfe8685bdf4192a3163d760114bec0aa701bd918ae"
+    },
+    {
+      "id": "RQ-S01-parse-style",
+      "status": "passed",
+      "evidence": "JSON parseável; CRLF, 4 espaços e ausência de newline final preservados"
+    },
+    {
+      "id": "RQ-S01-restricted-diff",
+      "status": "passed",
+      "evidence": "paths=[\"events[1].pages[0].list\",\"parallaxName\"]"
+    },
+    {
+      "id": "RQ-S01-baseline-equivalence",
+      "status": "passed",
+      "evidence": "Removendo adições autorizadas e revertendo falas, a command list coincide integralmente com o baseline"
+    },
+    {
+      "id": "RQ-S02-choice-counts",
+      "status": "passed",
+      "evidence": "102=1, 402=2, 403=0, 404=1"
+    },
+    {
+      "id": "RQ-S02-choice-indents",
+      "status": "passed",
+      "evidence": "[{\"code\":102,\"indent\":0,\"parameters\":[[\"qualSeuNome1\",\"qualSeuNome2\"],1,0,2,0]},{\"code\":402,\"indent\":0,\"parameters\":[0,\"qualSeuNome1\"]},{\"code\":402,\"indent\":0,\"parameters\":[1,\"qualSeuNome2\"]},{\"code\":404,\"indent\":0,\"parameters\":[]}]"
+    },
+    {
+      "id": "RQ-S02-branch-indent-ladder",
+      "status": "passed",
+      "evidence": "confirm=15, correct=32, end=44, reconvergence=49"
+    },
+    {
+      "id": "RQ-S03-set-dulgarin",
+      "status": "passed",
+      "evidence": "index=16, confirm=15, B03=21"
+    },
+    {
+      "id": "RQ-S04-name-input",
+      "status": "passed",
+      "evidence": "Name Input index=38, B07=42"
+    },
+    {
+      "id": "RQ-S05-switches",
+      "status": "passed",
+      "evidence": "[[43,43,0],[43,43,0],[43,43,0],[44,44,0],[43,43,0],[44,44,0],[43,43,0],[43,43,0]]"
+    },
+    {
+      "id": "RQ-S06-guards",
+      "status": "passed",
+      "evidence": "Os dois guards iniciais coincidem com o baseline"
+    },
+    {
+      "id": "RQ-S06-handoff",
+      "status": "passed",
+      "evidence": "COMPLETE_VN=61, FinishVisualNovel=62, code115=[63]"
+    },
+    {
+      "id": "RQ-S07-assets",
+      "status": "passed",
+      "evidence": "[{\"path\":\"frontend/img/parallaxes/VN046_NoiteHistoria_BG.png\",\"role\":\"background\",\"case_ok\":true,\"dimensions\":\"1280x720\",\"color_type\":6,\"alpha_min\":255,\"alpha_max\":255,\"non_empty\":true,\"sha256\":\"84000d78f079d6c49214108b76d99d5fc7b27d551a10330bc51f30d321b81fd7\",\"status\":\"passed\"},{\"path\":\"frontend/img/pictures/Portraits/Principal/Rheed_VN046_Pensativo.png\",\"role\":\"bust\",\"case_ok\":true,\"dimensions\":\"408x560\",\"color_type\":6,\"alpha_min\":0,\"alpha_max\":255,\"non_empty\":true,\"sha256\":\"f5a7184a34f1c52c81ac5b3148d93159137b6fad85302ca4935ba6003f427fe2\",\"status\":\"passed\"},{\"path\":\"frontend/img/pictures/Portraits/Principal/Rheed_VN046_Solene.png\",\"role\":\"bust\",\"case_ok\":true,\"dimensions\":\"408x560\",\"color_type\":6,\"alpha_min\":0,\"alpha_max\":255,\"non_empty\":true,\"sha256\":\"f64442b436065c1ee04bacaf754a7b1c47d5889bf9ac6f0eebe45be632b3681b\",\"status\":\"passed\"},{\"path\":\"frontend/img/pictures/Portraits/Principal/CriancaOrc_VN046_Surpresa.png\",\"role\":\"bust\",\"case_ok\":true,\"dimensions\":\"408x560\",\"color_type\":6,\"alpha_min\":0,\"alpha_max\":255,\"non_empty\":true,\"sha256\":\"3321d31400de7a3b2e5bfacb7e436b440c6eb0188b0f453a0353eda97f3b91f0\",\"status\":\"passed\"},{\"path\":\"frontend/img/pictures/CutIns/VN046_ThorinIntroducao_CutIn.png\",\"role\":\"cutin\",\"case_ok\":true,\"dimensions\":\"1280x720\",\"color_type\":6,\"alpha_min\":255,\"alpha_max\":255,\"non_empty\":true,\"sha256\":\"dc92ea18d27d78f25293e24d7ffc4d61e4e88d448d4c71dfe0122ed3c525c316\",\"status\":\"passed\"},{\"path\":\"frontend/img/pictures/Portraits/Principal/Reed final.png\",\"role\":\"bust\",\"case_ok\":true,\"dimensions\":\"408x560\",\"color_type\":6,\"alpha_min\":0,\"alpha_max\":255,\"non_empty\":true,\"sha256\":\"ef2845c560e42eaa3c15827c110286ee714232f64cf2e713c9644071be207e18\",\"status\":\"passed\"},{\"path\":\"frontend/img/pictures/Portraits/Principal/CriancaOrc_.png\",\"role\":\"bust\",\"case_ok\":true,\"dimensions\":\"408x560\",\"color_type\":6,\"alpha_min\":0,\"alpha_max\":255,\"non_empty\":true,\"sha256\":\"2a553659f82f1e5c0ce36c6b98f777163fcacfa08feb65899c456c3d7cba1126\",\"status\":\"passed\"},{\"path\":\"frontend/img/pictures/Choices/InnButton_01.png\",\"role\":\"choice\",\"case_ok\":true,\"dimensions\":\"388x101\",\"color_type\":6,\"alpha_min\":0,\"alpha_max\":255,\"non_empty\":true,\"sha256\":\"704c503888e7ebd94081d4465eb23e6d1254ad481f81c85b0656e060dea220bf\",\"status\":\"passed\"},{\"path\":\"frontend/img/pictures/Choices/InnButton_00.png\",\"role\":\"choice\",\"case_ok\":true,\"dimensions\":\"392x104\",\"color_type\":6,\"alpha_min\":0,\"alpha_max\":255,\"non_empty\":true,\"sha256\":\"d1551b2e42329d9ab9381d66470b1ebbf526b4ef01906bd569a365a00620edb0\",\"status\":\"passed\"}]"
+    },
+    {
+      "id": "RQ-S08-graphic-changes",
+      "status": "passed",
+      "evidence": "[{\"index\":8,\"id\":1,\"name\":\"Portraits/Principal/Rheed_VN046_Pensativo\",\"indent\":0},{\"index\":18,\"id\":1,\"name\":\"Portraits/Principal/Reed final\",\"indent\":1},{\"index\":23,\"id\":2,\"name\":\"Portraits/Principal/CriancaOrc_VN046_Surpresa\",\"indent\":1},{\"index\":27,\"id\":2,\"name\":\"Portraits/Principal/CriancaOrc_\",\"indent\":1},{\"index\":46,\"id\":1,\"name\":\"Portraits/Principal/Rheed_VN046_Solene\",\"indent\":0}]"
+    },
+    {
+      "id": "RQ-S08-cutin-lifecycle",
+      "status": "passed",
+      "evidence": "[{\"index\":52,\"command\":{\"code\":231,\"indent\":0,\"parameters\":[10,\"CutIns/VN046_ThorinIntroducao_CutIn\",1,0,640,360,100,100,0,0]}},{\"index\":53,\"command\":{\"code\":232,\"indent\":0,\"parameters\":[10,0,1,0,640,360,100,100,255,0,28,false,2]}},{\"index\":56,\"command\":{\"code\":232,\"indent\":0,\"parameters\":[10,0,1,0,640,360,100,100,0,0,20,true,1]}},{\"index\":57,\"command\":{\"code\":235,\"indent\":0,\"parameters\":[10]}}]"
+    },
+    {
+      "id": "RQ-S08-picture-ids",
+      "status": "passed",
+      "evidence": "vanilla picture IDs=[10,10,10,10]; bust IDs 1/2 preservados pelo baseline-equivalence"
+    },
+    {
+      "id": "RQ-S09-parallax",
+      "status": "passed",
+      "evidence": "parallax=VN046_NoiteHistoria_BG; loops=false/false; scroll=0/0"
+    },
+    {
+      "id": "RQ-S10-caller-chain",
+      "status": "passed",
+      "evidence": "{\"code\":357,\"indent\":0,\"parameters\":[\"Coreto_QuestVN\",\"EnterVisualNovel\",\"EnterVisualNovel\",{\"questKey\":\"noite-da-historia\",\"entryKey\":\"CENA_PRINCIPAL\"}]}"
+    },
+    {
+      "id": "RQ-S10-switch-callers",
+      "status": "passed",
+      "evidence": "CE7=Fala-ID1/43; CE8=Fala-ID2/44"
+    },
+    {
+      "id": "RQ-S11-estimates",
+      "status": "passed",
+      "evidence": "Estimativas RGBA teóricas: 5.564 MiB sem Cut-In; 9.080 MiB com Cut-In; não são medição runtime"
+    },
+    {
+      "id": "RQ-S12-exclusions",
+      "status": "passed",
+      "evidence": "forbiddenCodes=[], forbiddenPayload=false, picture4=false"
+    },
+    {
+      "id": "dialogues-exact",
+      "status": "passed",
+      "evidence": "11 falas aprovadas, em ordem exata"
+    }
+  ],
+  "errors": [],
+  "evidence": {
+    "map_sha256": "861f6c6fe4c5953f37fed169814650d1bcc5a8e6ea2f4e82b446ab645c37b892",
+    "baseline_sha256": "73e00628022b18375aec7af714181dd3171fdfc8f9ec911cfcc76188f47eb5d2",
+    "baseline_git_blob_sha256": "77ffe795f0f3918c9af2ffbfe8685bdf4192a3163d760114bec0aa701bd918ae",
+    "diff_paths": [
+      "events[1].pages[0].list",
+      "parallaxName"
+    ],
+    "assets": [
+      {
+        "path": "frontend/img/parallaxes/VN046_NoiteHistoria_BG.png",
+        "role": "background",
+        "case_ok": true,
+        "dimensions": "1280x720",
+        "color_type": 6,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "non_empty": true,
+        "sha256": "84000d78f079d6c49214108b76d99d5fc7b27d551a10330bc51f30d321b81fd7",
+        "status": "passed"
+      },
+      {
+        "path": "frontend/img/pictures/Portraits/Principal/Rheed_VN046_Pensativo.png",
+        "role": "bust",
+        "case_ok": true,
+        "dimensions": "408x560",
+        "color_type": 6,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "non_empty": true,
+        "sha256": "f5a7184a34f1c52c81ac5b3148d93159137b6fad85302ca4935ba6003f427fe2",
+        "status": "passed"
+      },
+      {
+        "path": "frontend/img/pictures/Portraits/Principal/Rheed_VN046_Solene.png",
+        "role": "bust",
+        "case_ok": true,
+        "dimensions": "408x560",
+        "color_type": 6,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "non_empty": true,
+        "sha256": "f64442b436065c1ee04bacaf754a7b1c47d5889bf9ac6f0eebe45be632b3681b",
+        "status": "passed"
+      },
+      {
+        "path": "frontend/img/pictures/Portraits/Principal/CriancaOrc_VN046_Surpresa.png",
+        "role": "bust",
+        "case_ok": true,
+        "dimensions": "408x560",
+        "color_type": 6,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "non_empty": true,
+        "sha256": "3321d31400de7a3b2e5bfacb7e436b440c6eb0188b0f453a0353eda97f3b91f0",
+        "status": "passed"
+      },
+      {
+        "path": "frontend/img/pictures/CutIns/VN046_ThorinIntroducao_CutIn.png",
+        "role": "cutin",
+        "case_ok": true,
+        "dimensions": "1280x720",
+        "color_type": 6,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "non_empty": true,
+        "sha256": "dc92ea18d27d78f25293e24d7ffc4d61e4e88d448d4c71dfe0122ed3c525c316",
+        "status": "passed"
+      },
+      {
+        "path": "frontend/img/pictures/Portraits/Principal/Reed final.png",
+        "role": "bust",
+        "case_ok": true,
+        "dimensions": "408x560",
+        "color_type": 6,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "non_empty": true,
+        "sha256": "ef2845c560e42eaa3c15827c110286ee714232f64cf2e713c9644071be207e18",
+        "status": "passed"
+      },
+      {
+        "path": "frontend/img/pictures/Portraits/Principal/CriancaOrc_.png",
+        "role": "bust",
+        "case_ok": true,
+        "dimensions": "408x560",
+        "color_type": 6,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "non_empty": true,
+        "sha256": "2a553659f82f1e5c0ce36c6b98f777163fcacfa08feb65899c456c3d7cba1126",
+        "status": "passed"
+      },
+      {
+        "path": "frontend/img/pictures/Choices/InnButton_01.png",
+        "role": "choice",
+        "case_ok": true,
+        "dimensions": "388x101",
+        "color_type": 6,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "non_empty": true,
+        "sha256": "704c503888e7ebd94081d4465eb23e6d1254ad481f81c85b0656e060dea220bf",
+        "status": "passed"
+      },
+      {
+        "path": "frontend/img/pictures/Choices/InnButton_00.png",
+        "role": "choice",
+        "case_ok": true,
+        "dimensions": "392x104",
+        "color_type": 6,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "non_empty": true,
+        "sha256": "d1551b2e42329d9ab9381d66470b1ebbf526b4ef01906bd569a365a00620edb0",
+        "status": "passed"
+      }
+    ],
+    "branch_commands": [
+      {
+        "code": 102,
+        "indent": 0,
+        "parameters": [
+          [
+            "qualSeuNome1",
+            "qualSeuNome2"
+          ],
+          1,
+          0,
+          2,
+          0
+        ]
+      },
+      {
+        "code": 402,
+        "indent": 0,
+        "parameters": [
+          0,
+          "qualSeuNome1"
+        ]
+      },
+      {
+        "code": 402,
+        "indent": 0,
+        "parameters": [
+          1,
+          "qualSeuNome2"
+        ]
+      },
+      {
+        "code": 404,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "graphic_changes": [
+      {
+        "index": 8,
+        "id": 1,
+        "name": "Portraits/Principal/Rheed_VN046_Pensativo",
+        "indent": 0
+      },
+      {
+        "index": 18,
+        "id": 1,
+        "name": "Portraits/Principal/Reed final",
+        "indent": 1
+      },
+      {
+        "index": 23,
+        "id": 2,
+        "name": "Portraits/Principal/CriancaOrc_VN046_Surpresa",
+        "indent": 1
+      },
+      {
+        "index": 27,
+        "id": 2,
+        "name": "Portraits/Principal/CriancaOrc_",
+        "indent": 1
+      },
+      {
+        "index": 46,
+        "id": 1,
+        "name": "Portraits/Principal/Rheed_VN046_Solene",
+        "indent": 0
+      }
+    ],
+    "cutin_commands": [
+      {
+        "index": 52,
+        "code": 231,
+        "indent": 0,
+        "parameters": [
+          10,
+          "CutIns/VN046_ThorinIntroducao_CutIn",
+          1,
+          0,
+          640,
+          360,
+          100,
+          100,
+          0,
+          0
+        ]
+      },
+      {
+        "index": 53,
+        "code": 232,
+        "indent": 0,
+        "parameters": [
+          10,
+          0,
+          1,
+          0,
+          640,
+          360,
+          100,
+          100,
+          255,
+          0,
+          28,
+          false,
+          2
+        ]
+      },
+      {
+        "index": 56,
+        "code": 232,
+        "indent": 0,
+        "parameters": [
+          10,
+          0,
+          1,
+          0,
+          640,
+          360,
+          100,
+          100,
+          0,
+          0,
+          20,
+          true,
+          1
+        ]
+      },
+      {
+        "index": 57,
+        "code": 235,
+        "indent": 0,
+        "parameters": [
+          10
+        ]
+      }
+    ],
+    "runtime_status": "pending-human-validation",
+    "human_gate": "RQ-P01-RQ-P09"
+  },
+  "runtime_validation": "pending-human-validation",
+  "human_gate": [
+    "RQ-P01",
+    "RQ-P02",
+    "RQ-P03",
+    "RQ-P04",
+    "RQ-P05",
+    "RQ-P06",
+    "RQ-P07",
+    "RQ-P08",
+    "RQ-P09"
+  ]
+}

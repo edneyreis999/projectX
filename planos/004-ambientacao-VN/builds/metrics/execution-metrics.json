@@ -1,0 +1,263 @@
+{
+  "schema_version": 1,
+  "metrics_id": "execution-metrics-v1:b424db589854731e158e7150607771127d6a517e17a929b53ed1b2b6868efdb8",
+  "run_id": "loki-run-v2:b625625fc3f771ba1ccf751c357ec0395a82e2997bd04a06a97ce5b1867033a1",
+  "execution_id": "loki-execution-v2:f767776e80492869e3f1e145cf82bf53276a71d7dde3f90818e344aa33410d9a",
+  "generated_at_utc": "2026-07-29T04:28:44.991Z",
+  "status": "partial",
+  "degradation_reason": "Uso exato e durações monotônicas não estão disponíveis; contagens funcionais e resultados dos validators foram reconciliados.",
+  "clock_provenance": {
+    "wall_clock": "partial",
+    "monotonic_clock": "unavailable",
+    "reason": "Somente timestamps de arquivos estão disponíveis; não há relógio monotônico persistido por span."
+  },
+  "spans": [
+    {
+      "span_id": "execution-span-v1:e17ea1341a629f9b40c3d748e83be37a7fc72cc7868f6b1da24826559d57272a",
+      "kind": "run",
+      "parent_span_id": null,
+      "owner": "orchestrator",
+      "status": "partial",
+      "started_at_utc": "2026-07-29T04:00:22.752Z",
+      "ended_at_utc": "2026-07-29T04:28:44.992Z",
+      "monotonic_duration_ms": null,
+      "clock_provenance": "partial",
+      "clock_degradation_reason": "Início e término observados sem relógio monotônico persistido.",
+      "iteration": 0,
+      "replay": false,
+      "replay_cause": null,
+      "cause_span_id": null,
+      "correlation_refs": [
+        "planos/004-ambientacao-VN/tasks.md",
+        "planos/004-ambientacao-VN/task-1.1.md"
+      ],
+      "duplicates_child_usage": false,
+      "usage": {
+        "status": "unavailable",
+        "exact": null,
+        "estimate": null,
+        "unavailable_reason": "Codex não expôs contador verificado e run-scoped."
+      },
+      "validator_observation": null
+    },
+    {
+      "span_id": "execution-span-v1:92a392c58fbc9c732fb4a9f3983d893b96fed91c5e2df70493213731be2c5e5d",
+      "kind": "handoff",
+      "parent_span_id": "execution-span-v1:e17ea1341a629f9b40c3d748e83be37a7fc72cc7868f6b1da24826559d57272a",
+      "owner": "technical-implementer",
+      "status": "completed",
+      "started_at_utc": null,
+      "ended_at_utc": null,
+      "monotonic_duration_ms": null,
+      "clock_provenance": "unavailable",
+      "clock_degradation_reason": "O adapter não publicou timestamps monotônicos verificáveis para este span.",
+      "iteration": 0,
+      "replay": false,
+      "replay_cause": null,
+      "cause_span_id": null,
+      "correlation_refs": [
+        "planos/004-ambientacao-VN/task-1.1.md",
+        "planos/004-ambientacao-VN/builds/fase1/task-1.1-completion.json"
+      ],
+      "duplicates_child_usage": false,
+      "usage": {
+        "status": "unavailable",
+        "exact": null,
+        "estimate": null,
+        "unavailable_reason": "Codex não expôs contador verificado e run-scoped."
+      },
+      "validator_observation": null
+    },
+    {
+      "span_id": "execution-span-v1:46dde3f91ef5a11623b5ea5220643871acd4096d17a0645db3e4a9d2c4f77e7d",
+      "kind": "validator",
+      "parent_span_id": "execution-span-v1:e17ea1341a629f9b40c3d748e83be37a7fc72cc7868f6b1da24826559d57272a",
+      "owner": "technical-implementer",
+      "status": "completed",
+      "started_at_utc": null,
+      "ended_at_utc": null,
+      "monotonic_duration_ms": null,
+      "clock_provenance": "unavailable",
+      "clock_degradation_reason": "O adapter não publicou timestamps monotônicos verificáveis para este span.",
+      "iteration": 0,
+      "replay": false,
+      "replay_cause": null,
+      "cause_span_id": null,
+      "correlation_refs": [
+        "planos/004-ambientacao-VN/builds/fase1/validate-map046.mjs",
+        "planos/004-ambientacao-VN/builds/fase1/task-1.1-validation.json"
+      ],
+      "duplicates_child_usage": false,
+      "usage": {
+        "status": "unavailable",
+        "exact": null,
+        "estimate": null,
+        "unavailable_reason": "Codex não expôs contador verificado e run-scoped."
+      },
+      "validator_observation": {
+        "command": "node planos/004-ambientacao-VN/builds/fase1/validate-map046.mjs",
+        "validator_version": "sha256:850b33f13936c56c1bbb4538761f4d3cc23804c7495a35cd849278ba2244c2af",
+        "input_digest": "sha256:861f6c6fe4c5953f37fed169814650d1bcc5a8e6ea2f4e82b446ab645c37b892",
+        "policy_digest": "sha256:e3aeea217ca7881865de40d29e0e28e95bc32f4255e2488597801a8909e3bd78",
+        "execution_mode": "executed",
+        "replay_cause": null,
+        "would_reuse": false
+      }
+    },
+    {
+      "span_id": "execution-span-v1:6e6e23052abb408ff4af4e29191bdc7732d4bcccb4c58acf199b4eb7262d8b03",
+      "kind": "audit",
+      "parent_span_id": "execution-span-v1:e17ea1341a629f9b40c3d748e83be37a7fc72cc7868f6b1da24826559d57272a",
+      "owner": "map046-phase-auditor",
+      "status": "completed",
+      "started_at_utc": null,
+      "ended_at_utc": null,
+      "monotonic_duration_ms": null,
+      "clock_provenance": "unavailable",
+      "clock_degradation_reason": "O adapter não publicou timestamps monotônicos verificáveis para este span.",
+      "iteration": 0,
+      "replay": false,
+      "replay_cause": null,
+      "cause_span_id": null,
+      "correlation_refs": [
+        "planos/004-ambientacao-VN/tasks.md#fase-1-implementacao-e-validacao-estatica",
+        "planos/004-ambientacao-VN/builds/audits/phase/boundary-4d327cb7baf73d6b3cc8f72d624de5df/checkpoint-v1-0.yaml",
+        "execution-audit-v1:4c64e5870f213fea063d6505502071397eaa5b0469f31853a1aa6cebaa29948e",
+        "sha256:e3aeea217ca7881865de40d29e0e28e95bc32f4255e2488597801a8909e3bd78",
+        "sha256:4b2b81fa8f96379db0c920bd1f927987f137655eaacfc94f98e66ad8429055c9",
+        "planos/004-ambientacao-VN/builds/audits/phase/boundary-4d327cb7baf73d6b3cc8f72d624de5df/auditor-report-v1.json"
+      ],
+      "duplicates_child_usage": false,
+      "usage": {
+        "status": "unavailable",
+        "exact": null,
+        "estimate": null,
+        "unavailable_reason": "Codex não expôs contador verificado e run-scoped."
+      },
+      "validator_observation": null
+    },
+    {
+      "span_id": "execution-span-v1:b38ba7efcd8db1e40578c0f15f34dd20b5e8cf6ab36a930780fe803d49f546a6",
+      "kind": "validator",
+      "parent_span_id": "execution-span-v1:e17ea1341a629f9b40c3d748e83be37a7fc72cc7868f6b1da24826559d57272a",
+      "owner": "orchestrator",
+      "status": "completed",
+      "started_at_utc": null,
+      "ended_at_utc": null,
+      "monotonic_duration_ms": null,
+      "clock_provenance": "unavailable",
+      "clock_degradation_reason": "O adapter não publicou timestamps monotônicos verificáveis para este span.",
+      "iteration": 0,
+      "replay": false,
+      "replay_cause": null,
+      "cause_span_id": null,
+      "correlation_refs": [
+        "planos/004-ambientacao-VN/builds/fase1/validate-map046.mjs",
+        "planos/004-ambientacao-VN/builds/fase1/task-1.1-validation.json",
+        "planos/004-ambientacao-VN/builds/audits/phase/boundary-4d327cb7baf73d6b3cc8f72d624de5df/checkpoint-v1-0.yaml"
+      ],
+      "duplicates_child_usage": false,
+      "usage": {
+        "status": "unavailable",
+        "exact": null,
+        "estimate": null,
+        "unavailable_reason": "Codex não expôs contador verificado e run-scoped."
+      },
+      "validator_observation": {
+        "command": "node planos/004-ambientacao-VN/builds/fase1/validate-map046.mjs",
+        "validator_version": "sha256:850b33f13936c56c1bbb4538761f4d3cc23804c7495a35cd849278ba2244c2af",
+        "input_digest": "sha256:861f6c6fe4c5953f37fed169814650d1bcc5a8e6ea2f4e82b446ab645c37b892",
+        "policy_digest": "sha256:e3aeea217ca7881865de40d29e0e28e95bc32f4255e2488597801a8909e3bd78",
+        "execution_mode": "executed",
+        "replay_cause": "final-applicable-validator-after-independent-audit",
+        "would_reuse": false
+      }
+    },
+    {
+      "span_id": "execution-span-v1:9e7342afa95a5e6c33de4d811264f9f4c093582370a013ec2ef4b41978b9dd88",
+      "kind": "gate",
+      "parent_span_id": "execution-span-v1:e17ea1341a629f9b40c3d748e83be37a7fc72cc7868f6b1da24826559d57272a",
+      "owner": "orchestrator",
+      "status": "blocked",
+      "started_at_utc": null,
+      "ended_at_utc": null,
+      "monotonic_duration_ms": null,
+      "clock_provenance": "unavailable",
+      "clock_degradation_reason": "O adapter não publicou timestamps monotônicos verificáveis para este span.",
+      "iteration": 0,
+      "replay": false,
+      "replay_cause": null,
+      "cause_span_id": null,
+      "correlation_refs": [
+        "planos/004-ambientacao-VN/builds/fase1/terminal-evidence-v1.json",
+        "RQ-P01-RQ-P09"
+      ],
+      "duplicates_child_usage": false,
+      "usage": {
+        "status": "unavailable",
+        "exact": null,
+        "estimate": null,
+        "unavailable_reason": "Codex não expôs contador verificado e run-scoped."
+      },
+      "validator_observation": null
+    }
+  ],
+  "aggregates": {
+    "exact_usage": {
+      "input_tokens": null,
+      "cached_input_tokens": null,
+      "output_tokens": null,
+      "reasoning_output_tokens": null,
+      "total_tokens": null
+    },
+    "estimated_usage": {
+      "estimated_tokens": null,
+      "lower_bound_tokens": null,
+      "upper_bound_tokens": null,
+      "observable_payload_bytes": null,
+      "confidence": "unavailable"
+    },
+    "non_agent_observations": [],
+    "counts": {
+      "agents": 2,
+      "handoffs": 2,
+      "validators_executed": 3,
+      "validators_referenced": 1,
+      "validators_repeated": 2,
+      "retries": 1,
+      "replays": 0,
+      "gates": 1,
+      "reconciliations": 1
+    },
+    "durations": {
+      "elapsed_ms": null,
+      "active_ms": null,
+      "critical_path_ms": null
+    },
+    "critical_path_span_ids": [],
+    "unavailable_reasons": [
+      {
+        "field": "durations.elapsed_ms",
+        "reason": "Não há relógio monotônico persistido."
+      },
+      {
+        "field": "durations.active_ms",
+        "reason": "Não há duração monotônica por span."
+      },
+      {
+        "field": "durations.critical_path_ms",
+        "reason": "Nenhuma cadeia root-to-leaf possui duração monotônica integral."
+      },
+      {
+        "field": "exact_usage",
+        "reason": "O adapter não publicou contadores run-scoped verificados."
+      },
+      {
+        "field": "estimated_usage",
+        "reason": "Nenhuma estimativa de tokens foi publicada."
+      }
+    ]
+  },
+  "telemetry_changed_functional_status": false,
+  "metrics_digest": "sha256:b424db589854731e158e7150607771127d6a517e17a929b53ed1b2b6868efdb8"
+}

@@ -6,10 +6,62 @@ const fail = message => { throw new Error(message); };
 const hasCommand = (list, plugin, name) => list.some(item =>
     item.code === 357 && item.parameters[0] === plugin && item.parameters[1] === name
 );
+const sameParameters = (actual, expected) =>
+    JSON.stringify(actual) === JSON.stringify(expected);
+
+function isStartTransition(item) {
+    return item.code === 357 &&
+        item.parameters?.[0] === "Coreto_QuestCore" &&
+        item.parameters?.[1] === "QuestTransition" &&
+        item.parameters?.[3]?.questKey === "noite-da-historia" &&
+        item.parameters?.[3]?.transitionId === "START";
+}
+
+function disablesPlayerMovement(item) {
+    if (item.code !== 357 ||
+            item.parameters?.[0] !== "VisuMZ_1_EventsMoveCore" ||
+            item.parameters?.[1] !== "PlayerMovementChange") {
+        return false;
+    }
+    const enabled = item.parameters?.[3]?.["Enable:eval"];
+    return enabled === false || enabled === "false";
+}
+
+export function validateMap022EntryCorrection(map022) {
+    const startEvent = map022.events[30];
+    const startList = startEvent?.pages?.[0]?.list;
+    if (!Array.isArray(startList)) fail("Map022 E30 START event mapping is invalid");
+
+    const startIndexes = startList
+        .map((item, index) => isStartTransition(item) ? index : -1)
+        .filter(index => index >= 0);
+    if (startIndexes.length !== 1) {
+        fail(`Map022 E30 must contain exactly one noite-da-historia START transition; found ${startIndexes.length}`);
+    }
+
+    const startIndex = startIndexes[0];
+    const guard = startList[startIndex - 1];
+    const transition = startList[startIndex];
+    const branchEnd = startList[startIndex + 1];
+    if (!(guard?.code === 111 && guard.indent === 0 &&
+            sameParameters(guard.parameters, [1, 106, 0, 0, 0]) &&
+            transition.indent === 1 &&
+            branchEnd?.code === 412 && branchEnd.indent === 0)) {
+        fail("Map022 E30 START must be the sole child of an exact V106 == 0 conditional branch");
+    }
+
+    const entryList = map022.events[18]?.pages?.[0]?.list;
+    if (!Array.isArray(entryList)) fail("Map022 E18 EX/VN entry mapping is invalid");
+    if (entryList.some(disablesPlayerMovement)) {
+        fail("Map022 E18 must not disable movement outside Coreto_Cutscene ownership");
+    }
+}
 
 const map022 = load("frontend/data/Map022.json");
 const map045 = load("frontend/data/Map045.json");
 const map046 = load("frontend/data/Map046.json");
+
+validateMap022EntryCorrection(map022);
 
 if (map022.note !== "<CoretoMapType:EX>" || map045.note !== "<CoretoMapType:EX>" || map046.note !== "<CoretoMapType:VN>") {
     fail("EX/VN map tags are not exact");

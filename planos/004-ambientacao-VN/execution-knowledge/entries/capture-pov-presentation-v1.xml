@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<execution_knowledge_entry schema_version="1">
+  <identity>
+    <capture_id>capture-pov-presentation-v1</capture_id>
+    <calling_workflow>loki-agentic-development</calling_workflow>
+    <run_id>agentic-004-ambientacao-vn-v1</run_id>
+    <run_directory>E:\Projetos\projectX\planos\004-ambientacao-VN</run_directory>
+    <phase>analysis-pov</phase>
+    <agent_run_id>agent-run-pov-presentation-v1</agent_run_id>
+    <handoff_id>handoff-pov-presentation-v1</handoff_id>
+    <source_agent>scene-presentation-designer</source_agent>
+  </identity>
+  <lineage>
+    <target_entry>execution-knowledge/entries/capture-pov-presentation-v1.xml</target_entry>
+    <source_refs>
+      <source_ref type="evidence-manifest" authorization="run-contained">evidence/pov-presentation.xml</source_ref>
+      <source_ref type="task-state" authorization="run-contained">agent-runs/fase1/agent-run-pov-presentation-v1.xml</source_ref>
+      <source_ref type="completion-record" authorization="run-contained">analise/agentes/scene-presentation-designer.xml</source_ref>
+    </source_refs>
+  </lineage>
+  <materiality>
+    <material>true</material>
+    <reason>The completed presentation POV materially informs downstream analysis through complete beat staging, explicit picture lifecycle constraints, conditional creative options, and runtime validation gates.</reason>
+  </materiality>
+  <capture>
+    <state>captured</state>
+    <reason>Material provider-neutral execution knowledge was derived from the authorized persisted sources.</reason>
+    <minimum_next_path>Review and deduplicate only through loki-continuous-improvement.</minimum_next_path>
+  </capture>
+  <knowledge>
+    <claims>
+      <claim type="fact" confidence="high">
+        <statement>The proposal-only presentation pass covered all 11 message beats, both branches, Name Input, reconvergence, Cut-In, background, assets, picture IDs, layers, and cleanup without changing runtime or assets.</statement>
+        <evidence_ref>analise/agentes/scene-presentation-designer.xml#completion_record</evidence_ref>
+      </claim>
+      <claim type="fact" confidence="high">
+        <statement>Deterministic checks passed for XML parsing, unique beat locators, branch coverage, fields per beat, picture lifecycle rules, conditional visual briefings, preliminary asset classification, and preserved gates.</statement>
+        <evidence_ref>analise/agentes/scene-presentation-designer.xml#validators</evidence_ref>
+      </claim>
+      <claim type="decision" confidence="high">
+        <statement>Existing bust picture IDs 1 and 2 were preserved; IDs 3 and 4 were reserved only provisionally, while the Cut-In and background remained conditional on approval and technical review.</statement>
+        <evidence_ref>evidence/pov-presentation.xml#completion_record/decisions</evidence_ref>
+      </claim>
+      <claim type="friction" confidence="high">
+        <statement>Composition, timing, input behavior, focus, draw order, performance, transitions, and picture cleanup cannot be established by static presentation analysis and remain human or runtime pending.</statement>
+        <evidence_ref>evidence/pov-presentation.xml#completion_record/residual_risks</evidence_ref>
+      </claim>
+      <claim type="inference" confidence="medium">
+        <statement>A presentation proposal remains reversible and reviewable when each beat declares its character, picture identity, expression, movement, timing, focus, layer, and cleanup while creative additions are explicitly conditional.</statement>
+        <evidence_ref>analise/agentes/scene-presentation-designer.xml#validators</evidence_ref>
+      </claim>
+    </claims>
+    <attempts>
+      <attempt>
+        <action>Produce proposal-only staging and presentation specifications for every current message beat and branch.</action>
+        <outcome>The handoff completed with full structural coverage, explicit cleanup rules, conditional visual options, a preliminary asset manifest, and no production changes.</outcome>
+        <evidence_ref>evidence/pov-presentation.xml#completion_record</evidence_ref>
+      </attempt>
+    </attempts>
+    <resolution status="partial" confidence="high">
+      <statement>The pass resolved a cross-review-ready presentation specification while leaving exact assets, creative approvals, runtime payloads, and perceptible behavior open.</statement>
+    </resolution>
+    <cause status="known" confidence="high">
+      <statement>The remaining uncertainty follows from the proposal-only boundary and from presentation properties that require technical inspection, human approval, or Playtest across both branches.</statement>
+    </cause>
+    <gaps>
+      <gap>Cross-review remains pending against narrative, choice UX, technical-art constraints, and runtime boundaries.</gap>
+      <gap>Technical review remains pending for background surface, draw order, provisional IDs 3 and 4, commands, and cleanup behavior.</gap>
+      <gap>Human Playtest of both branches remains pending for pacing, legibility, input, focus, layering, performance, transitions, and residual pictures.</gap>
+    </gaps>
+    <minimum_next_path>Run the declared cross-review, resolve the material creative and technical gates, freeze approved asset paths, and Playtest both branches before implementation acceptance.</minimum_next_path>
+    <reuse_guidance>For comparable visual-novel presentation passes, specify every beat with a complete picture lifecycle, preserve current IDs, reserve new IDs provisionally, distinguish existing from conditional assets, and keep cleanup and perceptible validation explicit.</reuse_guidance>
+    <avoid_next_time>Do not turn conditional backgrounds, Cut-Ins, effects, asset names, draw order, timing, or picture IDs into implementation facts before their human, technical, and runtime gates.</avoid_next_time>
+  </knowledge>
+  <security>
+    <sanitized>true</sanitized>
+    <raw_payload_included>false</raw_payload_included>
+    <private_reasoning_included>false</private_reasoning_included>
+    <personal_data_included>false</personal_data_included>
+    <secrets_included>false</secrets_included>
+    <evidence_snapshots_copied>false</evidence_snapshots_copied>
+  </security>
+  <promotion>
+    <owner>loki-continuous-improvement</owner>
+    <status>unreviewed</status>
+  </promotion>
+</execution_knowledge_entry>

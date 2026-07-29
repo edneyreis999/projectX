@@ -4846,25 +4846,6 @@
                             ]
                         },
                         {
-                            "code": 357,
-                            "indent": 0,
-                            "parameters": [
-                                "VisuMZ_1_EventsMoveCore",
-                                "PlayerMovementChange",
-                                "Player Movement: Control",
-                                {
-                                    "Enable:eval": "false"
-                                }
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Enable? = false"
-                            ]
-                        },
-                        {
                             "code": 205,
                             "indent": 0,
                             "parameters": [
@@ -6570,8 +6551,19 @@
                             ]
                         },
                         {
-                            "code": 357,
+                            "code": 111,
                             "indent": 0,
+                            "parameters": [
+                                1,
+                                106,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 357,
+                            "indent": 1,
                             "parameters": [
                                 "Coreto_QuestCore",
                                 "QuestTransition",
@@ -6581,6 +6573,11 @@
                                     "transitionId": "START"
                                 }
                             ]
+                        },
+                        {
+                            "code": 412,
+                            "indent": 0,
+                            "parameters": []
                         },
                         {
                             "code": 0,

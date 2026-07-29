@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<execution_knowledge_entry schema_version="1">
+  <identity>
+    <capture_id>capture-decision-creative-pack-v1</capture_id>
+    <calling_workflow>loki-agentic-development</calling_workflow>
+    <run_id>agentic-004-ambientacao-vn-v1</run_id>
+    <run_directory>E:\Projetos\projectX\planos\004-ambientacao-VN</run_directory>
+    <phase>decision-preflight</phase>
+    <agent_run_id>agent-run-decision-creative-pack-v1</agent_run_id>
+    <handoff_id>handoff-decision-creative-pack-v1</handoff_id>
+    <source_agent>game-business-analyst</source_agent>
+  </identity>
+  <lineage>
+    <target_entry>execution-knowledge/entries/capture-decision-creative-pack-v1.xml</target_entry>
+    <source_refs>
+      <source_ref type="evidence-manifest" authorization="run-contained">evidence/decision-creative-pack.xml</source_ref>
+      <source_ref type="task-state" authorization="run-contained">agent-runs/fase2/agent-run-decision-creative-pack-v1.xml</source_ref>
+      <source_ref type="completion-record" authorization="run-contained">analise/technical-analysis.md</source_ref>
+    </source_refs>
+  </lineage>
+  <materiality>
+    <material>true</material>
+    <reason>The approved creative package resolves the final design decision, freezes the asset-intake scope and exclusions, and advances the workflow to a blocking local asset-verification gate without authorizing implementation.</reason>
+  </materiality>
+  <capture>
+    <state>captured</state>
+    <reason>Material provider-neutral execution knowledge was derived from the authorized persisted decision sources.</reason>
+    <minimum_next_path>Review and deduplicate only through loki-continuous-improvement.</minimum_next_path>
+  </capture>
+  <knowledge>
+    <claims>
+      <claim type="decision" confidence="high">
+        <statement>The approved creative package contains all 11 dialogue proposals, three expression variants, one neutral nighttime parallax, and one Thorin Cut-In at B10.</statement>
+        <evidence_ref>evidence/decision-creative-pack.xml#completion_record/decisions</evidence_ref>
+      </claim>
+      <claim type="decision" confidence="high">
+        <statement>Smoke, video, dedicated fade, new audio, new choice art, and frame-by-frame animation remain excluded from the approved package.</statement>
+        <evidence_ref>analise/technical-analysis.md#fora-de-escopo</evidence_ref>
+      </claim>
+      <claim type="fact" confidence="high">
+        <statement>The analysis status advanced to approved-for-asset-intake, not approved-for-implementation.</statement>
+        <evidence_ref>evidence/decision-creative-pack.xml#integrity</evidence_ref>
+      </claim>
+      <claim type="friction" confidence="high">
+        <statement>Five approved assets are not locally available, so DG-ASSETS and local RQ-S07 verification block every implementation handoff.</statement>
+        <evidence_ref>evidence/decision-creative-pack.xml#completion_record/residual_risks</evidence_ref>
+      </claim>
+      <claim type="fact" confidence="high">
+        <statement>No design question remains must-ask-now; DG-ASSETS is an availability and verification gate, while DG-RUNTIME remains inactive until implementation.</statement>
+        <evidence_ref>analise/technical-analysis.md#decision-preflight</evidence_ref>
+      </claim>
+      <claim type="inference" confidence="medium">
+        <statement>Separating creative approval from asset availability prevents a complete design decision from being mistaken for permission to reference files that have not passed local intake.</statement>
+        <evidence_ref>analise/technical-analysis.md#fronteira-de-implementacao</evidence_ref>
+      </claim>
+    </claims>
+    <attempts>
+      <attempt>
+        <action>Project the full creative-package approval into the technical analysis and advance the workflow to asset intake.</action>
+        <outcome>Decision markers, frozen paths, exclusions, coverage IDs, and the DG-ASSETS boundary validated successfully; no runtime or asset changed.</outcome>
+        <evidence_ref>agent-runs/fase2/agent-run-decision-creative-pack-v1.xml#validators</evidence_ref>
+      </attempt>
+    </attempts>
+    <resolution status="resolved" confidence="high">
+      <statement>DG-CREATIVE-PACK is resolved with the full package approved for asset intake and the excluded visual and audio additions kept out of scope.</statement>
+    </resolution>
+    <cause status="known" confidence="high">
+      <statement>The remaining implementation block is caused by missing local asset availability and required intake verification, not by an unresolved creative decision.</statement>
+    </cause>
+    <gaps>
+      <gap>Five approved assets must be supplied at their frozen paths.</gap>
+      <gap>Local RQ-S07 must verify presence, exact case, dimensions, format, alpha contract, and checksums before implementation handoff.</gap>
+      <gap>Runtime mechanism selection, implementation, and RQ-P01 through RQ-P09 remain later work.</gap>
+    </gaps>
+    <minimum_next_path>Wait for user asset delivery, verify every approved file locally with RQ-S07, and do not prepare implementation unless the complete asset intake passes.</minimum_next_path>
+    <reuse_guidance>After creative approval, freeze the exact included and excluded package, change state only to asset-intake readiness, enumerate missing files, and make local asset verification a separate blocking gate before implementation.</reuse_guidance>
+    <avoid_next_time>Do not equate creative approval with production authorization, request excluded effects, reference absent assets, or activate runtime validation before assets pass intake and implementation exists.</avoid_next_time>
+  </knowledge>
+  <security>
+    <sanitized>true</sanitized>
+    <raw_payload_included>false</raw_payload_included>
+    <private_reasoning_included>false</private_reasoning_included>
+    <personal_data_included>false</personal_data_included>
+    <secrets_included>false</secrets_included>
+    <evidence_snapshots_copied>false</evidence_snapshots_copied>
+  </security>
+  <promotion>
+    <owner>loki-continuous-improvement</owner>
+    <status>unreviewed</status>
+  </promotion>
+</execution_knowledge_entry>
