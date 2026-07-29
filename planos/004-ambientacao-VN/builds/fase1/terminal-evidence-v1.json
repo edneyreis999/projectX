@@ -2,7 +2,7 @@
   "schema_version": 1,
   "run_id": "loki-run-v2:b625625fc3f771ba1ccf751c357ec0395a82e2997bd04a06a97ce5b1867033a1",
   "execution_id": "loki-execution-v2:f767776e80492869e3f1e145cf82bf53276a71d7dde3f90818e344aa33410d9a",
-  "status": "pending-human-validation",
+  "status": "completed",
   "acceptance_criteria": [
     {
       "id": "AC-004-MAP046-01",
@@ -20,8 +20,11 @@
     "audit_checkpoint_ref": "planos/004-ambientacao-VN/builds/audits/phase/boundary-4d327cb7baf73d6b3cc8f72d624de5df/checkpoint-v1-0.yaml"
   },
   "human_gate": {
-    "status": "pending",
-    "scenario_refs": ["RQ-P01", "RQ-P02", "RQ-P03", "RQ-P04", "RQ-P05", "RQ-P06", "RQ-P07", "RQ-P08", "RQ-P09"]
+    "status": "passed",
+    "scenario_refs": ["RQ-P01", "RQ-P02", "RQ-P03", "RQ-P04", "RQ-P05", "RQ-P06", "RQ-P07", "RQ-P08", "RQ-P09"],
+    "evidence_ref": "planos/004-ambientacao-VN/interaction/fase1/task-1.1/human-validation-v1.json",
+    "evidence_kind": "explicit-user-confirmation",
+    "observation_limit": "A confirmação foi global; nenhum detalhe por cenário foi fornecido e nenhum foi inferido."
   },
   "manual_steps": [
     {
@@ -73,5 +76,5 @@
       "automation_limitation": "Persistência, reentrada e integração perceptível exigem Playtest."
     }
   ],
-  "next_action": "Executar e registrar RQ-P01-RQ-P09 no Playtest humano."
+  "next_action": "Nenhuma ação obrigatória; Plano 004 concluído."
 }

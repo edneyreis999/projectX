@@ -3,7 +3,7 @@ title: "task-1.1 — Implementar e validar a VN do Map046"
 type: loki-task
 doc_id: "plan-004-task-1-1-map046-vn"
 version: "1.0.0"
-status: pending-human-validation
+status: completed
 phase: fase1
 task_id: task-1.1
 last_updated: "2026-07-29"
@@ -117,6 +117,7 @@ task_validation:
     - planos/004-ambientacao-VN/builds/fase1/task-1.1-completion.json
     - planos/004-ambientacao-VN/builds/fase1/task-1.1-validation.json
     - planos/004-ambientacao-VN/builds/audits/phase/boundary-4d327cb7baf73d6b3cc8f72d624de5df/checkpoint-v1-0.yaml
+    - planos/004-ambientacao-VN/interaction/fase1/task-1.1/human-validation-v1.json
   status: passed
 ```
 
@@ -132,8 +133,8 @@ Validator retorna exit 0 e um relatório persistido cobrindo branches/indents, D
 
 ## Human Loop
 
-- Gate: human-validation
-- Required decision: none; executar RQ-P01–RQ-P09 depois da automação.
+- Gate: human-validation — passed
+- Evidence: `planos/004-ambientacao-VN/interaction/fase1/task-1.1/human-validation-v1.json`
 
 ## Definition Of Done
 
@@ -162,10 +163,11 @@ loki_task_state:
   validation_cycle_refs:
     - planos/004-ambientacao-VN/builds/fase1/task-1.1-validation.json
     - planos/004-ambientacao-VN/builds/audits/phase/boundary-4d327cb7baf73d6b3cc8f72d624de5df/checkpoint-v1-0.yaml
+    - planos/004-ambientacao-VN/interaction/fase1/task-1.1/human-validation-v1.json
   retry_refs: []
   learned_ref: null
   blockers: []
-  limitations: ["runtime e percepção dependem de RQ-P01–RQ-P09"]
-  next_action: "Executar o Playtest humano RQ-P01-RQ-P09 em 1280x720."
+  limitations: []
+  next_action: "Nenhuma ação obrigatória; task concluída."
   blocked_by: []
 ```

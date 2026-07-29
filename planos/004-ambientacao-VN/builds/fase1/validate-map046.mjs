@@ -160,17 +160,16 @@ function collectDiffPaths(a, b, prefix = "") {
     return [prefix];
 }
 
-function stripAuthorizedChanges(currentList, baselineList) {
+function stripAuthorizedChanges(currentList) {
     const additions = currentList.filter(command => {
         if (command.code === 320 && deepEqual(command.parameters, [1, "Dulgarin"])) return false;
         if (command.code === 357 && command.parameters[0] === "VisuMZ_2_VNPictureBusts" && command.parameters[1] === "Basic_GraphicChange") return false;
         if ([231, 232, 235].includes(command.code) && command.parameters[0] === 10) return false;
         return true;
     }).map(command => structuredClone(command));
-    const baselineMessages = baselineList.filter(command => command.code === 401).map(command => command.parameters[0]);
     let messageIndex = 0;
     for (const command of additions) {
-        if (command.code === 401) command.parameters[0] = baselineMessages[messageIndex++];
+        if (command.code === 401) command.parameters[0] = ORIGINAL_DIALOGUES[messageIndex++];
     }
     return additions;
 }
@@ -183,22 +182,24 @@ function validate() {
     const currentBuffer = fs.readFileSync(MAP_PATH);
     const currentText = currentBuffer.toString("utf8");
     const current = JSON.parse(currentText);
-    let baselineBuffer;
+    let headBuffer;
     try {
-        baselineBuffer = execFileSync("git", ["show", `HEAD:${MAP_REL}`], { cwd: ROOT, windowsHide: true });
+        headBuffer = execFileSync("git", ["show", `HEAD:${MAP_REL}`], { cwd: ROOT, windowsHide: true });
     } catch (error) {
-        throw new Error(`Não foi possível obter baseline via git show: ${error.message}`);
+        throw new Error(`Não foi possível obter o blob corrente via git show: ${error.message}`);
     }
-    const baseline = JSON.parse(baselineBuffer.toString("utf8"));
+    const list = current.events[1].pages[0].list;
+    const baseline = structuredClone(current);
+    baseline.parallaxName = "";
+    baseline.events[1].pages[0].list = stripAuthorizedChanges(list);
     const canonicalBaselineBuffer = Buffer.from(JSON.stringify(baseline, null, 4).replace(/\n/g, "\r\n"), "utf8");
-    check("RQ-S01-baseline-hash", sha256(canonicalBaselineBuffer) === BASELINE_SHA256, `baseline-working-tree-style=${sha256(canonicalBaselineBuffer)}; git-blob=${sha256(baselineBuffer)}`);
+    check("RQ-S01-baseline-hash", sha256(canonicalBaselineBuffer) === BASELINE_SHA256, `reconstructed-baseline=${sha256(canonicalBaselineBuffer)}; current-head-blob=${sha256(headBuffer)}`);
     check("RQ-S01-parse-style", currentText === JSON.stringify(current, null, 4).replace(/\n/g, "\r\n"), "JSON parseável; CRLF, 4 espaços e ausência de newline final preservados");
     const diffPaths = collectDiffPaths(baseline, current);
     check("RQ-S01-restricted-diff", deepEqual(diffPaths.sort(), ["events[1].pages[0].list", "parallaxName"].sort()), `paths=${JSON.stringify(diffPaths)}`);
 
-    const list = current.events[1].pages[0].list;
     const baselineList = baseline.events[1].pages[0].list;
-    check("RQ-S01-baseline-equivalence", deepEqual(stripAuthorizedChanges(list, baselineList), baselineList), "Removendo adições autorizadas e revertendo falas, a command list coincide integralmente com o baseline");
+    check("RQ-S01-baseline-equivalence", baselineList.length === 55 && deepEqual(baselineList.filter(command => command.code === 401).map(command => command.parameters[0]), ORIGINAL_DIALOGUES), "Removendo adições autorizadas e revertendo falas, a command list reconstrói integralmente o baseline original");
 
     check("RQ-S02-choice-counts", list.filter(c => c.code === 102).length === 1 && list.filter(c => c.code === 402).length === 2 && list.filter(c => c.code === 403).length === 0 && list.filter(c => c.code === 404).length === 1, "102=1, 402=2, 403=0, 404=1");
     const branchCommands = list.filter(c => [102, 402, 403, 404].includes(c.code)).map(c => ({ code: c.code, indent: c.indent, parameters: c.parameters }));
@@ -302,7 +303,7 @@ function validate() {
     return {
         map_sha256: sha256(currentBuffer),
         baseline_sha256: sha256(canonicalBaselineBuffer),
-        baseline_git_blob_sha256: sha256(baselineBuffer),
+        current_head_blob_sha256: sha256(headBuffer),
         diff_paths: diffPaths,
         assets: assetEvidence,
         branch_commands: branchCommands,

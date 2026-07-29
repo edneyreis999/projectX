@@ -29,7 +29,8 @@ const exactPairs = [
   [packet.dashboard_ref, packet.dashboard_digest],
   [packet.metrics_ref, packet.metrics_digest],
   [packet.audit_checkpoint_refs[0], packet.audit_checkpoint_digests[0]],
-  [packet.terminal_evidence_refs[0], packet.terminal_evidence_digests[0]]
+  [packet.terminal_evidence_refs[0], packet.terminal_evidence_digests[0]],
+  [packet.terminal_evidence_refs[1], packet.terminal_evidence_digests[1]]
 ];
 for (const [ref, digest] of exactPairs) {
   if (digest !== `sha256:${sha(fs.readFileSync(ref))}`) throw new Error(`digest exato divergente: ${ref}`);
@@ -37,8 +38,8 @@ for (const [ref, digest] of exactPairs) {
 
 const tasks = fs.readFileSync("planos/004-ambientacao-VN/tasks.md", "utf8");
 if (!tasks.includes(`state_digest: ${result.state_digest}`)) throw new Error("state_digest não projetado em tasks.md");
-if (!tasks.includes("status: pending-human-validation")) throw new Error("status terminal ausente em tasks.md");
-if (result.status !== packet.status || result.status !== "pending-human-validation") throw new Error("status terminal divergente");
+if (!tasks.includes("status: completed")) throw new Error("status terminal ausente em tasks.md");
+if (result.status !== packet.status || result.status !== "completed") throw new Error("status terminal divergente");
 if (metrics.status !== "partial" || result.execution_metrics_status !== metrics.status) throw new Error("projeção de métricas divergente");
 
 console.log(JSON.stringify({

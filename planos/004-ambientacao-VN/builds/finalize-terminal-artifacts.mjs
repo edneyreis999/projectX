@@ -11,13 +11,14 @@ const validationRef = "planos/004-ambientacao-VN/builds/fase1/task-1.1-validatio
 const completionRef = "planos/004-ambientacao-VN/builds/fase1/task-1.1-completion.json";
 const auditorReportRef = "planos/004-ambientacao-VN/builds/audits/phase/boundary-4d327cb7baf73d6b3cc8f72d624de5df/auditor-report-v1.json";
 const terminalRef = "planos/004-ambientacao-VN/builds/fase1/terminal-evidence-v1.json";
+const humanValidationRef = "planos/004-ambientacao-VN/interaction/fase1/task-1.1/human-validation-v1.json";
 const metricsRef = "planos/004-ambientacao-VN/builds/metrics/execution-metrics.json";
 const resultRef = "planos/004-ambientacao-VN/builds/implement-feature-result-v3.json";
 const dashboardRef = "planos/004-ambientacao-VN/builds/implementation-dashboard-v3.md";
 const consistencyRef = "planos/004-ambientacao-VN/builds/consistency-packet-v2.json";
-const metricsDigest = "sha256:b424db589854731e158e7150607771127d6a517e17a929b53ed1b2b6868efdb8";
+const metricsDigest = "sha256:8b6c3d4a38c10445382513c242dde0d91729f91c2850e55337365f47820e59f8";
 const metricsDegradation = "Uso exato e durações monotônicas não estão disponíveis; contagens funcionais e resultados dos validators foram reconciliados.";
-const nextAction = "Executar e registrar o Playtest humano RQ-P01-RQ-P09 em 1280x720.";
+const nextAction = "Nenhuma ação obrigatória; Plano 004 concluído.";
 const auditConfiguration = {
   schema_version: 1,
   frequency: "phase",
@@ -54,13 +55,13 @@ const stateWithoutDigest = {
   command_identity_digest: "sha256:b625625fc3f771ba1ccf751c357ec0395a82e2997bd04a06a97ce5b1867033a1",
   execution_input_digest: "sha256:fe9deb9d4b8c722274c6caca0db0d8bc500a4426c34a36dad63c57afed00ed24",
   audit_configuration: auditConfiguration,
-  status: "pending-human-validation",
+  status: "completed",
   task_refs: ["planos/004-ambientacao-VN/task-1.1.md"],
   audit_checkpoint_refs: [checkpointRef],
   result_ref: resultRef,
   dashboard_ref: dashboardRef,
   consistency_packet_ref: consistencyRef,
-  terminal_evidence_refs: [terminalRef],
+  terminal_evidence_refs: [terminalRef, humanValidationRef],
   execution_metrics_ref: metricsRef,
   execution_metrics_digest: metricsDigest,
   execution_metrics_status: "partial",
@@ -83,17 +84,17 @@ const resultWithoutDigest = {
   schema_version: 3,
   run_id: runId,
   execution_id: executionId,
-  status: "pending-human-validation",
+  status: "completed",
   state_digest: stateDigest,
   audit_configuration: auditConfiguration,
   audit_checkpoint_refs: [checkpointRef],
   task_results: [{
     task_ref: "planos/004-ambientacao-VN/task-1.1.md",
     status: "passed",
-    evidence_refs: [completionRef, validationRef, checkpointRef]
+    evidence_refs: [completionRef, validationRef, checkpointRef, humanValidationRef]
   }],
   final_validator_refs: [validationRef, auditorReportRef],
-  terminal_evidence_refs: [terminalRef],
+  terminal_evidence_refs: [terminalRef, humanValidationRef],
   execution_metrics_ref: metricsRef,
   execution_metrics_digest: metricsDigest,
   execution_metrics_status: "partial",
@@ -106,7 +107,7 @@ writeJson(resultRef, result);
 const dashboard = `---
 title: "Plano 004 — Resultado da implementação da VN do Map046"
 type: loki-implementation-dashboard
-status: pending-human-validation
+status: completed
 last_updated: "2026-07-29"
 ---
 
@@ -114,10 +115,11 @@ last_updated: "2026-07-29"
 
 ## Resultado
 
-- Status funcional: \`pending-human-validation\`
+- Status funcional: \`completed\`
 - Task \`task-1.1\`: \`passed\`
 - Validação automática: 22/22 checks, sem erros
 - Auditoria independente da fase: \`approved\`
+- Playtest humano RQ-P01–RQ-P09: \`passed\`
 - Map046 SHA-256: \`861f6c6fe4c5953f37fed169814650d1bcc5a8e6ea2f4e82b446ab645c37b892\`
 
 ## Entrega
@@ -134,11 +136,12 @@ last_updated: "2026-07-29"
 - Primary validation: \`${validationRef}\`
 - Auditoria: \`${checkpointRef}\`
 - Evidência terminal: \`${terminalRef}\`
+- Confirmação do Playtest: \`${humanValidationRef}\`
 - Métricas: \`${metricsRef}\` (\`partial\` apenas por telemetria indisponível)
 
 ## Gate humano
 
-RQ-P01–RQ-P09 continuam pendentes. O Playtest em 1280x720 deve cobrir ambos os ramos, Name Input, Cut-In, save/load, reentrada cold/warm, switches de foco e retorno ao Map022. Os passos completos estão em \`${terminalRef}\`.
+RQ-P01–RQ-P09 foram validados por confirmação explícita do usuário. A confirmação foi global; nenhum detalhe por cenário foi fornecido ou inferido. Evidência: \`${humanValidationRef}\`.
 
 ## Próxima ação
 
@@ -154,7 +157,7 @@ const consistency = {
   schema_version: 2,
   run_id: runId,
   execution_id: executionId,
-  status: "pending-human-validation",
+  status: "completed",
   audit_configuration: auditConfiguration,
   state_digest: stateDigest,
   tasks_md_digest: `sha256:${shaBytes(tasksBytes)}`,
@@ -166,8 +169,8 @@ const consistency = {
   metrics_digest: fileDigest(metricsRef),
   audit_checkpoint_refs: [checkpointRef],
   audit_checkpoint_digests: [fileDigest(checkpointRef)],
-  terminal_evidence_refs: [terminalRef],
-  terminal_evidence_digests: [fileDigest(terminalRef)],
+  terminal_evidence_refs: [terminalRef, humanValidationRef],
+  terminal_evidence_digests: [fileDigest(terminalRef), fileDigest(humanValidationRef)],
   validator_digest: `sha256:${shaCanonical(validatorMap)}`
 };
 writeJson(consistencyRef, consistency);

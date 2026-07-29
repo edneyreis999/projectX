@@ -3,7 +3,7 @@ title: "Implementação da ambientação VN do Map046"
 type: loki-action-plan
 doc_id: "plan-004-ambientacao-vn-implementation-v1"
 version: "1.0.0"
-status: pending-human-validation
+status: completed
 created: "2026-07-29"
 last_updated: "2026-07-29"
 scope: "Implementação e validação estática da VN do Map046 após o asset gate"
@@ -21,7 +21,7 @@ replaced_by: null
 
 ## Overview
 
-Implementar o pacote criativo aprovado depois da validação local dos cinco assets. A execução altera somente `frontend/data/Map046.json`: parallax, 11 falas, três expressões, definição de Dulgarin no ramo Confirmar e Cut-In transitório de Thorin em B10. A validação automática cobre estrutura, branches, comandos, assets, cleanup e caller chain; comportamento perceptível permanece sujeito ao Playtest RQ-P01–RQ-P09.
+Implementar o pacote criativo aprovado depois da validação local dos cinco assets. A execução altera somente `frontend/data/Map046.json`: parallax, 11 falas, três expressões, definição de Dulgarin no ramo Confirmar e Cut-In transitório de Thorin em B10. A validação automática cobriu estrutura, branches, comandos, assets, cleanup e caller chain; o Playtest RQ-P01–RQ-P09 foi validado pelo usuário.
 
 ## Execution Identity And Input
 
@@ -132,7 +132,7 @@ downstream_execution_profile:
 
 ## Human Loops
 
-- Após a validação automática e auditoria: executar RQ-P01–RQ-P09 em Playtest 1280×720.
+- RQ-P01–RQ-P09: Playtest validado; evidência em `interaction/fase1/task-1.1/human-validation-v1.json`.
 
 ## Target Decision Ledger
 
@@ -164,7 +164,7 @@ loki_run_state:
     frequency: phase
     source: default
     policy_digest: sha256:e3aeea217ca7881865de40d29e0e28e95bc32f4255e2488597801a8909e3bd78
-  status: pending-human-validation
+  status: completed
   task_refs: [planos/004-ambientacao-VN/task-1.1.md]
   audit_checkpoint_refs:
     - planos/004-ambientacao-VN/builds/audits/phase/boundary-4d327cb7baf73d6b3cc8f72d624de5df/checkpoint-v1-0.yaml
@@ -173,10 +173,11 @@ loki_run_state:
   consistency_packet_ref: planos/004-ambientacao-VN/builds/consistency-packet-v2.json
   terminal_evidence_refs:
     - planos/004-ambientacao-VN/builds/fase1/terminal-evidence-v1.json
+    - planos/004-ambientacao-VN/interaction/fase1/task-1.1/human-validation-v1.json
   execution_metrics_ref: planos/004-ambientacao-VN/builds/metrics/execution-metrics.json
-  execution_metrics_digest: sha256:b424db589854731e158e7150607771127d6a517e17a929b53ed1b2b6868efdb8
+  execution_metrics_digest: sha256:8b6c3d4a38c10445382513c242dde0d91729f91c2850e55337365f47820e59f8
   execution_metrics_status: partial
   execution_metrics_degradation_reason: "Uso exato e durações monotônicas não estão disponíveis; contagens funcionais e resultados dos validators foram reconciliados."
-  next_action: "Executar e registrar o Playtest humano RQ-P01-RQ-P09 em 1280x720."
-  state_digest: sha256:003cc4678172af2be9f402be2dd0edbb4eefa456a067f70927d6094d91799248
+  next_action: "Nenhuma ação obrigatória; Plano 004 concluído."
+  state_digest: sha256:84c873cc19f4711590cf5ad671cfbddb43a3299316d4a729f16c072123c05879
 ```

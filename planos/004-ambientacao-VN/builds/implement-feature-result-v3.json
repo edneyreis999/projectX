@@ -2,8 +2,8 @@
   "schema_version": 3,
   "run_id": "loki-run-v2:b625625fc3f771ba1ccf751c357ec0395a82e2997bd04a06a97ce5b1867033a1",
   "execution_id": "loki-execution-v2:f767776e80492869e3f1e145cf82bf53276a71d7dde3f90818e344aa33410d9a",
-  "status": "pending-human-validation",
-  "state_digest": "sha256:003cc4678172af2be9f402be2dd0edbb4eefa456a067f70927d6094d91799248",
+  "status": "completed",
+  "state_digest": "sha256:84c873cc19f4711590cf5ad671cfbddb43a3299316d4a729f16c072123c05879",
   "audit_configuration": {
     "schema_version": 1,
     "frequency": "phase",
@@ -20,7 +20,8 @@
       "evidence_refs": [
         "planos/004-ambientacao-VN/builds/fase1/task-1.1-completion.json",
         "planos/004-ambientacao-VN/builds/fase1/task-1.1-validation.json",
-        "planos/004-ambientacao-VN/builds/audits/phase/boundary-4d327cb7baf73d6b3cc8f72d624de5df/checkpoint-v1-0.yaml"
+        "planos/004-ambientacao-VN/builds/audits/phase/boundary-4d327cb7baf73d6b3cc8f72d624de5df/checkpoint-v1-0.yaml",
+        "planos/004-ambientacao-VN/interaction/fase1/task-1.1/human-validation-v1.json"
       ]
     }
   ],
@@ -29,12 +30,13 @@
     "planos/004-ambientacao-VN/builds/audits/phase/boundary-4d327cb7baf73d6b3cc8f72d624de5df/auditor-report-v1.json"
   ],
   "terminal_evidence_refs": [
-    "planos/004-ambientacao-VN/builds/fase1/terminal-evidence-v1.json"
+    "planos/004-ambientacao-VN/builds/fase1/terminal-evidence-v1.json",
+    "planos/004-ambientacao-VN/interaction/fase1/task-1.1/human-validation-v1.json"
   ],
   "execution_metrics_ref": "planos/004-ambientacao-VN/builds/metrics/execution-metrics.json",
-  "execution_metrics_digest": "sha256:b424db589854731e158e7150607771127d6a517e17a929b53ed1b2b6868efdb8",
+  "execution_metrics_digest": "sha256:8b6c3d4a38c10445382513c242dde0d91729f91c2850e55337365f47820e59f8",
   "execution_metrics_status": "partial",
   "execution_metrics_degradation_reason": "Uso exato e durações monotônicas não estão disponíveis; contagens funcionais e resultados dos validators foram reconciliados.",
-  "next_action": "Executar e registrar o Playtest humano RQ-P01-RQ-P09 em 1280x720.",
-  "result_digest": "sha256:67b051b01e8650a89dfb0299a7e1f4e1e5da32fce1d09524df7c8fbbda5d486f"
+  "next_action": "Nenhuma ação obrigatória; Plano 004 concluído.",
+  "result_digest": "sha256:f3054fe26635e758dc04bdf703c60b5c9f40cfe1b874e6aeed2a56a74e3c9dcb"
 }

@@ -2,21 +2,21 @@
   "schema_version": 2,
   "run_id": "loki-run-v2:b625625fc3f771ba1ccf751c357ec0395a82e2997bd04a06a97ce5b1867033a1",
   "execution_id": "loki-execution-v2:f767776e80492869e3f1e145cf82bf53276a71d7dde3f90818e344aa33410d9a",
-  "status": "pending-human-validation",
+  "status": "completed",
   "audit_configuration": {
     "schema_version": 1,
     "frequency": "phase",
     "source": "default",
     "policy_digest": "sha256:e3aeea217ca7881865de40d29e0e28e95bc32f4255e2488597801a8909e3bd78"
   },
-  "state_digest": "sha256:003cc4678172af2be9f402be2dd0edbb4eefa456a067f70927d6094d91799248",
-  "tasks_md_digest": "sha256:d35b031fdcf5bb0fc3e33c896a72337b3410bf4e954fd3ece47fca89ece15d31",
+  "state_digest": "sha256:84c873cc19f4711590cf5ad671cfbddb43a3299316d4a729f16c072123c05879",
+  "tasks_md_digest": "sha256:7f05bb87beb0c591a133e6a83b88f88c18315f302b0215f8e77d9eecf64f2030",
   "result_ref": "planos/004-ambientacao-VN/builds/implement-feature-result-v3.json",
-  "result_digest": "sha256:8565bc96d2c4959d72d7e123cd59ec46dffad0311f9191c98ff90298c0c804b8",
+  "result_digest": "sha256:9f21a5618a6678bc6838f20d455f120d9752b8a7ab1e14dc0c1c5c6c3e80b926",
   "dashboard_ref": "planos/004-ambientacao-VN/builds/implementation-dashboard-v3.md",
-  "dashboard_digest": "sha256:8cca97b7976cf5f2696d9610c5ddbeb86f12d2ab35a81b7cbd5f9f4ce9d62b01",
+  "dashboard_digest": "sha256:b603ed87848e08a4e9c61f0c7e719d9e0045ff79175520ea11755ecd42830def",
   "metrics_ref": "planos/004-ambientacao-VN/builds/metrics/execution-metrics.json",
-  "metrics_digest": "sha256:b0ca90624b546ed0999d9684e1f51bca9675e34c59213558c01ac10206bee700",
+  "metrics_digest": "sha256:6c3a269c691bb1913bdfb0e8cd397b070453eb14a04c8fb018fb1230e9887b64",
   "audit_checkpoint_refs": [
     "planos/004-ambientacao-VN/builds/audits/phase/boundary-4d327cb7baf73d6b3cc8f72d624de5df/checkpoint-v1-0.yaml"
   ],
@@ -24,10 +24,12 @@
     "sha256:d4a3b1615e930af351182e2f44e65d69bf413f645728f5bb35fe874a66e50a03"
   ],
   "terminal_evidence_refs": [
-    "planos/004-ambientacao-VN/builds/fase1/terminal-evidence-v1.json"
+    "planos/004-ambientacao-VN/builds/fase1/terminal-evidence-v1.json",
+    "planos/004-ambientacao-VN/interaction/fase1/task-1.1/human-validation-v1.json"
   ],
   "terminal_evidence_digests": [
-    "sha256:7a2421a65d3510d8a5e3626e1b66daea6b97b6348d227c451c09f57494a9734c"
+    "sha256:2ab3d4f42f522218cc40e53db966ff742d513cbe6b6ce17194d2bf660fa27519",
+    "sha256:117db38630fe55930a8b429fb54c57cde38d6dbc618f39b96d67e930f4c47d58"
   ],
-  "validator_digest": "sha256:65b3b1bf54ca43ec801aa1539cede091e144190fe11fc0c488406fb94911d7ef"
+  "validator_digest": "sha256:33793812790324ced088d9529a318d62574966f82edb5ef6d0ef13fed1c3f53a"
 }

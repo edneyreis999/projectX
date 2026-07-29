@@ -56,7 +56,7 @@ const children = [
   span("handoff", "technical-implementer", ["planos/004-ambientacao-VN/task-1.1.md", "planos/004-ambientacao-VN/builds/fase1/task-1.1-completion.json"]),
   span("validator", "technical-implementer", ["planos/004-ambientacao-VN/builds/fase1/validate-map046.mjs", "planos/004-ambientacao-VN/builds/fase1/task-1.1-validation.json"], "completed", {
     command: "node planos/004-ambientacao-VN/builds/fase1/validate-map046.mjs",
-    validator_version: "sha256:850b33f13936c56c1bbb4538761f4d3cc23804c7495a35cd849278ba2244c2af",
+    validator_version: "sha256:4feb1d73025429bc2b0faaa7de799ae046ae63ed64639b02a4d45ebc09bc96d8",
     input_digest: "sha256:861f6c6fe4c5953f37fed169814650d1bcc5a8e6ea2f4e82b446ab645c37b892",
     policy_digest: "sha256:e3aeea217ca7881865de40d29e0e28e95bc32f4255e2488597801a8909e3bd78",
     execution_mode: "executed",
@@ -66,14 +66,14 @@ const children = [
   span("audit", "map046-phase-auditor", ["planos/004-ambientacao-VN/tasks.md#fase-1-implementacao-e-validacao-estatica", checkpoint, auditId, "sha256:e3aeea217ca7881865de40d29e0e28e95bc32f4255e2488597801a8909e3bd78", "sha256:4b2b81fa8f96379db0c920bd1f927987f137655eaacfc94f98e66ad8429055c9", "planos/004-ambientacao-VN/builds/audits/phase/boundary-4d327cb7baf73d6b3cc8f72d624de5df/auditor-report-v1.json"]),
   span("validator", "orchestrator", ["planos/004-ambientacao-VN/builds/fase1/validate-map046.mjs", "planos/004-ambientacao-VN/builds/fase1/task-1.1-validation.json", checkpoint], "completed", {
     command: "node planos/004-ambientacao-VN/builds/fase1/validate-map046.mjs",
-    validator_version: "sha256:850b33f13936c56c1bbb4538761f4d3cc23804c7495a35cd849278ba2244c2af",
+    validator_version: "sha256:4feb1d73025429bc2b0faaa7de799ae046ae63ed64639b02a4d45ebc09bc96d8",
     input_digest: "sha256:861f6c6fe4c5953f37fed169814650d1bcc5a8e6ea2f4e82b446ab645c37b892",
     policy_digest: "sha256:e3aeea217ca7881865de40d29e0e28e95bc32f4255e2488597801a8909e3bd78",
     execution_mode: "executed",
     replay_cause: "final-applicable-validator-after-independent-audit",
     would_reuse: false
   }),
-  span("gate", "orchestrator", ["planos/004-ambientacao-VN/builds/fase1/terminal-evidence-v1.json", "RQ-P01-RQ-P09"], "blocked")
+  span("gate", "orchestrator", ["planos/004-ambientacao-VN/builds/fase1/terminal-evidence-v1.json", "planos/004-ambientacao-VN/interaction/fase1/task-1.1/human-validation-v1.json", "RQ-P01-RQ-P09"], "completed")
 ];
 for (const child of children) child.parent_span_id = rootSpanId;
 
@@ -95,7 +95,7 @@ const base = {
       kind: "run",
       parent_span_id: null,
       owner: "orchestrator",
-      status: "partial",
+      status: "completed",
       started_at_utc: "2026-07-29T04:00:22.752Z",
       ended_at_utc: new Date().toISOString(),
       monotonic_duration_ms: null,
@@ -121,7 +121,7 @@ const base = {
     exact_usage: { input_tokens: null, cached_input_tokens: null, output_tokens: null, reasoning_output_tokens: null, total_tokens: null },
     estimated_usage: { estimated_tokens: null, lower_bound_tokens: null, upper_bound_tokens: null, observable_payload_bytes: null, confidence: "unavailable" },
     non_agent_observations: [],
-    counts: { agents: 2, handoffs: 2, validators_executed: 3, validators_referenced: 1, validators_repeated: 2, retries: 1, replays: 0, gates: 1, reconciliations: 1 },
+    counts: { agents: 2, handoffs: 2, validators_executed: 6, validators_referenced: 1, validators_repeated: 5, retries: 2, replays: 0, gates: 1, reconciliations: 3 },
     durations: { elapsed_ms: null, active_ms: null, critical_path_ms: null },
     critical_path_span_ids: [],
     unavailable_reasons: [

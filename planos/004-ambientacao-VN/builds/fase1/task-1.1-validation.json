@@ -2,14 +2,14 @@
   "schema_version": 1,
   "task_id": "task-1.1",
   "validator": "planos/004-ambientacao-VN/builds/fase1/validate-map046.mjs",
-  "generated_at": "2026-07-29T04:25:24.194Z",
+  "generated_at": "2026-07-29T04:46:00.954Z",
   "status": "passed",
   "classification": "structural_validation",
   "checks": [
     {
       "id": "RQ-S01-baseline-hash",
       "status": "passed",
-      "evidence": "baseline-working-tree-style=73e00628022b18375aec7af714181dd3171fdfc8f9ec911cfcc76188f47eb5d2; git-blob=77ffe795f0f3918c9af2ffbfe8685bdf4192a3163d760114bec0aa701bd918ae"
+      "evidence": "reconstructed-baseline=73e00628022b18375aec7af714181dd3171fdfc8f9ec911cfcc76188f47eb5d2; current-head-blob=7a7f13a779557c00bf21b349b09c28800f6dd198a5c79c5a786c7f8ab750189e"
     },
     {
       "id": "RQ-S01-parse-style",
@@ -24,7 +24,7 @@
     {
       "id": "RQ-S01-baseline-equivalence",
       "status": "passed",
-      "evidence": "Removendo adições autorizadas e revertendo falas, a command list coincide integralmente com o baseline"
+      "evidence": "Removendo adições autorizadas e revertendo falas, a command list reconstrói integralmente o baseline original"
     },
     {
       "id": "RQ-S02-choice-counts",
@@ -121,7 +121,7 @@
   "evidence": {
     "map_sha256": "861f6c6fe4c5953f37fed169814650d1bcc5a8e6ea2f4e82b446ab645c37b892",
     "baseline_sha256": "73e00628022b18375aec7af714181dd3171fdfc8f9ec911cfcc76188f47eb5d2",
-    "baseline_git_blob_sha256": "77ffe795f0f3918c9af2ffbfe8685bdf4192a3163d760114bec0aa701bd918ae",
+    "current_head_blob_sha256": "7a7f13a779557c00bf21b349b09c28800f6dd198a5c79c5a786c7f8ab750189e",
     "diff_paths": [
       "events[1].pages[0].list",
       "parallaxName"
