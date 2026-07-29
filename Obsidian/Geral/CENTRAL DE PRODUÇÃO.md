@@ -1,28 +1,3 @@
-#### **Daily**
-
-
-**Daily:**
-Atlas Folk
-- [ ] **Anões**
-- [ ] **Ignotos**
-	
-- [ ] Protagonistas 
-		**- thorin** 
-		**- tordan**
-		**- filena**
-		- **dambur**
-		**- balastrus**
-		- **borin**
-		- **corvinus**
-		**- killin**
-		**- mordred
-		- mélia
-		-  Rheed
-		- profeta das sombras
-
-
-
-	
 
 # **Progresso Geral dos Documentos**
 
@@ -43,11 +18,9 @@ Atlas Folk
 | Tecnologia            | 🟢 Aprovado                                |
 | Magia                 | 🟢 Aprovado                                |
 | **ATLAS FOLK**        |                                            |
-| Raças e Espécies      | 🔵 Pronto para aprovação                   |
+| Raças e Espécies      | 🟢 Aprovado                                |
 | Protagonistas         | 🟠 Em desenvolvimento                      |
 | **NARRATIVA**         |                                            |
-| Macro                 | ⚪ Não iniciado                             |
-| Game Timeline         | ⚪ Não iniciado                             |
 | Quests                | ⚪ Não iniciado                             |
 | **MECÂNICA**          |                                            |
 | Mecânica de Descisões | ⚪ Não iniciado                             |
@@ -59,4 +32,3 @@ Atlas Folk
 🟠 Em desenvolvimento
 🟡 Em revisão   
 ⚪ Não iniciado
-| 

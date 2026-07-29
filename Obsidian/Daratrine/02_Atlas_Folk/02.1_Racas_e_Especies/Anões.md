@@ -1,5 +1,5 @@
 ---
-status: 🔵 Pronto para aprovação
+status: 🟢 Aprovado
 genero: Atlas Folk
 Raça/espécie: Anões
 tags:
@@ -21,7 +21,7 @@ data: Julho/2026
 | -------------------- | ----------------------------------------------------------------------------------------------- |
 | **Silhueta**         | Baixos, robustos, musculosos, centro de gravidade firme.                                        |
 | **Textura visual**   | Barbas e cabelos trançados, adornos metálicos, couro gasto, pedra, ferro, bronze, fuligem.      |
-| **Valor central**    | Permanecer através daquilo que constroem e deixam para trás.                                    |
+| **Valor central**    | Permanecer através daquilo que constroem.                                                       |
 | **Virtude cultural** | Engenharia, disciplina, trabalho coletivo, memória de linhagem, coragem física.                 |
 | **Sombra cultural**  | Castas rígidas, ambição mineral, medo da magia, controle da memória oficial.                    |
 | **Contradição**      | Um povo que honra os ancestrais, mas apagou parte da própria ancestralidade.                    |
@@ -36,17 +36,19 @@ A expectativa de vida média é de **80 anos**.
 
 ### Leitura Visual
 
-| Grupo | Aparência sugerida |
-| --- | --- |
-| **Nobreza e Grandes Casas** | Pedra polida, metais bem tratados, brasões, madeira escura, adornos de linhagem, iluminação rara. |
-| **Casas Mineradoras** | Ferramentas melhores, equipamentos técnicos, couro reforçado, placas de bronze, marcas de oficina. |
-| **Trabalhadores e comerciantes** | Roupa funcional, fuligem, metal gasto, mãos marcadas, botas pesadas, poucos adornos herdados. |
-| **Excluídos e dissidentes** | Peças remendadas, símbolos ocultos, objetos antigos, sinais discretos das Velhas Canções. |
+| Grupo                            | Aparência sugerida                                                                                 |
+| -------------------------------- | -------------------------------------------------------------------------------------------------- |
+| **Nobreza e Grandes Casas**      | Pedra polida, metais bem tratados, brasões, madeira escura, adornos de linhagem, iluminação rara.  |
+| **Casas Mineradoras**            | Ferramentas melhores, equipamentos técnicos, couro reforçado, placas de bronze, marcas de oficina. |
+| **Trabalhadores e comerciantes** | Roupa funcional, fuligem, metal gasto, mãos marcadas, botas pesadas, poucos adornos herdados.      |
+| **Excluídos e dissidentes**      | Peças remendadas, símbolos ocultos, objetos antigos, sinais discretos das Velhas Canções.          |
 
 > [!design] Regra de arte
 > O anão deve parecer feito para durar: mesmo quando pobre, cansado ou ferido, sua leitura visual precisa carregar peso, ferramenta, história e contato constante com matéria bruta.
 
 ## Origem e História
+
+Para mais detalhes ver [[Ciclo Histórico dos Anões]]
 
 **A Era do Ouro Verde**
 Antes das minas e fortalezas subterrâneas, os anões viviam na superfície em uma sociedade agrícola, ligada à terra, ao cultivo de ervas, às plantações e ao comércio. Essa fase ficou marcada como a **Era do Ouro Verde**.
@@ -68,27 +70,27 @@ Expulsos da superfície agrícola, os anões se reinventaram como povo subterrâ
 | Terra viva                   | Pedra dominada                    |
 | Tradição oral                | Memória oficial                   |
 | [[01.6.2_As Velhas Canções]] | [[01.6.1_Ancestralismo Imperial]] |
-Essa transformação deu origem ao poder de [[Gildrat]]: cidade-império talhada dentro da cordilheira, símbolo de engenharia mineral, disciplina militar e expansão econômica.
+Essa transformação deu origem ao poder de [[Gildrat]]: cidade-império talhada dentro da cordilheira, símbolo de engenharia mineral, disciplina militar e expansão econômica. **No mento do jogo, os anões já habitam Gildrat há cerca de 500 anos.** 
 
 ---
 ## Biologia e Habilidades
 
-Os anões não são definidos por uma habilidade mágica inata. Sua diferença principal está na combinação entre corpo resistente, cultura técnica e adaptação histórica a ambientes frios, rochosos e subterrâneos.
+Os anões não são definidos por uma habilidade mágica. Sua diferença principal está na combinação entre corpo resistente, cultura técnica e adaptação histórica a ambientes frios, rochosos e subterrâneos.
 
-| Traço | Uso narrativo e de gameplay |
-| --- | --- |
-| **Corpo compacto e forte** | Bons trabalhadores de mina, guerreiros de linha de frente, especialistas em carga, impacto e resistência. |
-| **Resistência ao frio e à fadiga** | Crível em rotas de cordilheira, nevascas, minas longas e jornadas sob baixa luz. |
-| **Cultura de ofício** | Justifica fabricação, reparo, mineração, armadilhas, armas, armaduras e infraestrutura pesada. |
-| **Memória material** | Objetos, troféus, armas, ferramentas e monumentos carregam peso emocional e social. |
-| **Baixa tolerância cultural à magia** | Conflito direto com personagens capazes de acessar o Reino da Mana, especialmente Thorin. |
+| Traço                                 | Uso narrativo e de gameplay                                                                               |
+| ------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| **Corpo compacto e forte**            | Bons trabalhadores de mina, guerreiros de linha de frente, especialistas em carga, impacto e resistência. |
+| **Resistência ao frio e à fadiga**    | Existem em cordilheiras, nevascas, minas longas e jornadas sob baixa luz.                                 |
+| **Cultura de ofício**                 | Justifica fabricação, reparo, mineração, armadilhas, armas, armaduras e infraestrutura pesada.            |
+| **Memória material**                  | Objetos, troféus, armas, ferramentas e monumentos carregam peso emocional e social.                       |
+| **Baixa tolerância cultural à magia** | Conflito direto com personagens capazes de acessar o Reino da Mana, especialmente Mélia e Thorin.         |
 
 ### Vulnerabilidades
 
 - Dependência econômica e alimentar de sistemas subterrâneos complexos.
 - Resistência institucional a soluções mágicas ou espirituais.
 - Rigidez social que dificulta resposta rápida a crises.
-- Tendência a confundir sobrevivência com expansão.
+- Tendência a confundir sobrevivência com expansão (ganância).
 - Medo de perder novamente a terra natal, usado pelo Estado para justificar controle.
 
 ---
@@ -97,6 +99,8 @@ Os anões não são definidos por uma habilidade mágica inata. Sua diferença p
 A cultura anã dominante no jogo é a de **Gildrat**, embora existam anões fora da cidade-império. A própria Gildrat trata esses anões externos como inferiores, selvagens, criminosos ou inimigos, o que diz mais sobre o império do que sobre a espécie como um todo.
 
 ### Castas de Gildrat
+
+Para mais detalhes, ver [[Organização Social de Gildrat]]
 
 | Casta                 | Função                                                           | Leitura social                             |
 | --------------------- | ---------------------------------------------------------------- | ------------------------------------------ |
@@ -119,7 +123,7 @@ O Ancestralismo Imperial é a doutrina oficial de Gildrat. Ele ensina que os an�
 
 Seus valores se organizam em três ideias:
 **Poder:** Força, vigor, capacidade de trabalhar, lutar e suportar.  
-**Criação:** Inovação, imaginação técnica, máquinas, forjas, estruturas.
+**Criação:** Inovação, imaginação técnica, máquinas, forjas, estruturas, engenharia.
 **Riqueza:** Minério, prosperidade concreta, glória familiar e imperial.
 
 O Muro das Memórias funciona como centro cívico e espiritual: registra feitos considerados dignos de permanecer. Como o Estado controla esse registro, controla também quem será lembrado.
@@ -138,10 +142,11 @@ Para essa tradição, os principais tabus são:
 
 Ver mais em [[01.6.2_As Velhas Canções]].
 ### Magia
+Ver mais em [[Magia]].
 
 Gildrat teme magia por associá-la a possessão, corrupção e instabilidade política. Práticas xamânicas, comunicação com mortos, acesso ao Reino da Mana e tradições pré-Geada são tratadas como ameaça espiritual e crime de Estado.
 
-Ver mais em [[Magia]].
+Há cerca de dez anos, Gildrat foi marcada pela Caça às Bruxas, uma perseguição sistemática contra usuários de magia desencadeada após o Incidente da Sessão de Mana. A tragédia fortaleceu o Ancestralismo Imperial, consolidou leis antimagia e criou o clima de medo e instabilidade. Ver mais em [[Política]].
 
 ---
 ## Tecnologia e Cotidiano
@@ -151,7 +156,7 @@ A tecnologia anã é pesada, visível e funcional. Ela nasce da tentativa de sob
 | Domínio            | Expressão anã                                                               |
 | ------------------ | --------------------------------------------------------------------------- |
 | **Mineração**      | Picaretas, carrinhos, contratos, frentes de escavação, cotas e exploração.  |
-| **Forja**          | Armas, armaduras, ferramentas, metalurgia, orgulho familiar.                |
+| **Forja**          | Armas, armaduras, ferramentas, metalurgia.                                  |
 | **Engenharia**     | Cidades escavadas, salões, túneis, muralhas, gargalos defensivos.           |
 | **Infraestrutura** | Chaminés, ventilação, aquecimento, cisternas, drenagem, válvulas.           |
 | **Guerra**         | Guarda de Ferro, armadilhas, portões, dinamite experimental, defesa urbana. |
@@ -163,17 +168,17 @@ A tecnologia anã é pesada, visível e funcional. Ela nasce da tentativa de sob
 ---
 ## O Papel no Conflito Central
 
-Os anões repetem, em escala histórica, o erro dos Antigos: buscam autossuficiência, poder e controle até romperem um limite que deveriam respeitar.
+Os anões repetem, em escala histórica, o erro dos Antigos ([[Ignotos]]): buscam autossuficiência, poder e controle até romperem um limite que deveriam respeitar. 
 
 No presente da campanha, a crise econômica, a instabilidade política e a ambição mineral levam Gildrat a pressionar pela exploração de Melios. A ruptura do selo liberta os Ignotos e inicia a tragédia central do jogo.
 
 Os anões, portanto, ocupam três lugares ao mesmo tempo:
 
-| Lugar dramático | Função |
-| --- | --- |
+| Lugar dramático             | Função                                                  |
+| --------------------------- | ------------------------------------------------------- |
 | **Protagonistas culturais** | O jogador vive o mundo a partir de Thorin e de Gildrat. |
-| **Vítimas da guerra** | Gildrat será marcada, invadida e futuramente arruinada. |
-| **Agentes da ruptura** | A queda nasce da própria ambição imperial anã. |
+| **Vítimas da guerra**       | Gildrat será marcada, invadida e futuramente arruinada. |
+| **Agentes da ruptura**      | A queda nasce da própria ambição imperial anã.          |
 
 ## Diretrizes de Escrita
 
@@ -189,6 +194,6 @@ Os anões, portanto, ocupam três lugares ao mesmo tempo:
 | Grupo                        | Relação                                                                                                              |
 | ---------------------------- | -------------------------------------------------------------------------------------------------------------------- |
 | **Ignotos**                  | Inimigos libertados pela ruptura do selo; também espelho sombrio da ambição anã.                                     |
-| **Anões de fora de Gildrat** | Vistos pelo Império como inferiores ou perigosos; ponto a desenvolver fora do recorte atual.                         |
-| **Elfos**                    | Relação marcada por tensão mágica e futura aliança contra os Ignotos.                                                |
+| **Anões de fora de Gildrat** | Vistos pelo Império como inferiores ou perigosos.                                                                    |
+| **Elfos**                    | Relação marcada por tensão mágica.                                                                                   |
 | **Filhos da Rocha/Rebeldes** | Parte interna do povo anão que resiste à exploração imperial e preserva memórias proibidas. Ver mais em [[Política]] |

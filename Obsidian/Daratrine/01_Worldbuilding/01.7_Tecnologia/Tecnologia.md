@@ -76,7 +76,7 @@ Use estes princípios sempre que uma cena envolver tecnologia anã:
 | Domínio                                                                                             | Uso principal                                              | Itens e sistemas                                                                                                            | Função narrativa                                  |
 | :-------------------------------------------------------------------------------------------------- | :--------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------ |
 | **Mineração**                                                                                       | Extrair recursos e sustentar o império.                    | Picaretas, baús, contratos, perfuração, maquinário pesado.                                                                  | Mostra dependência econômica e exploração social. |
-| **Metalurgia e Forja**                                                                              | Produzir armas, armaduras, ferramentas e bens duráveis.    | Fornalhas, moldes, aço, Kraven, Sigmetal.                                                                                   | Define prestígio anão e poder militar.            |
+| **Metalurgia e Forja**                                                                              | Produzir armas, armaduras, ferramentas e bens duráveis.    | Fornalhas, moldes, aço, Kraven, Profundina.                                                                                 | Define prestígio anão e poder militar.            |
 | **Arquitetura Subterrânea**                                                                         | Habitar, defender e organizar Gildrat.                     | Túneis, salões, abóbadas, muralhas, portões, gargalos.                                                                      | Faz a cidade parecer uma fortaleza viva.          |
 | **Ventilação/Aquecimento**                                                                          | Manter ar respirável e o aquecimento sem abrir a montanha. | Lareiras, forjas, chaminés, pressão negativa, tochas. tubulações de ar e calor.<br><br>Fornalhas tem função de aquecimento. | Revela engenharia cotidiana invisível.            |
 | **Água e Esgoto**<br><br>- uso de dutos de calor para derreter a neve e transformar em água potável | Abastecer, drenar e ocultar resíduos urbanos.              | Cisternas, canais, válvulas, comportas, decantação, minas adaptadas, dutos de calor, [[Mina de Esgoto]].                    | Dá textura urbana e cria espaços de exploração.   |
@@ -120,7 +120,7 @@ São tecnologias que podem aparecer no cotidiano do jogador, de NPCs e de mapas 
 | Tecnologia             | Status                 | Risco                                                              |
 | :--------------------- | :--------------------- | :----------------------------------------------------------------- |
 | **Dinamite e pólvora** | Experimental/restrita. | Romper barreiras que não deveriam ser tocadas.                     |
-| **Sigmetal**           | Raro/estratégico.      | Disputa militar, ocultação, controle estatal e uso contra Ignotos. |
+| **Profundina**         | Raro/estratégico.      | Disputa militar, ocultação, controle estatal e uso contra Ignotos. |
 
 ---
 ## Relação com Magia

@@ -1,5 +1,5 @@
 ---
-status: 🔵 Pronto para aprovação
+status: 🟢 Aprovado
 genero: Atlas Folk
 Raça/espécie: Ignotos
 tags:
@@ -18,24 +18,25 @@ data: Julho/2026
 
 ## Identidade em Uma Tela
 
-| Eixo                   | Síntese                                                                                                                         |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| **Silhueta**           | Humanoides deformados, sombras densas, corpos alongados ou hipertrofiados, variações entre ==lacaios, gigantes e comandantes.== |
-| **Textura visual**     | Névoa escura, pele sem luz, fissuras sombrias, brilho alquímico, runas corrompidas, sombra, movimento dissonante.               |
-| **Valor central**      | Retornar à superfície e fazer o mundo lembrar o sofrimento dos esquecidos.                                                      |
-| **Virtude distorcida** | Sobrevivência extrema, adaptação, alquimia, fé coletiva, memória do exílio.                                                     |
-| **Sombra cultural**    | Vingança absoluta, fanatismo, dependência alquímica, controle social e apagamento da individualidade.                           |
-| **Contradição**        | Dizem buscar justiça, mas reproduzem a mesma lógica de dominação que os condenou.                                               |
-| **Papel no jogo**      | A ameaça libertada pela quebra do selo; força física, mágica e simbólica que revela o custo da ambição de Gildrat.              |
+| Eixo                   | Síntese                                                                                                            |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| **Silhueta**           | Humanoides brancos, sem cabelo ou pelos.  A depender do uso de substâncias alquímicas, podem ter deformidades.     |
+| **Textura visual**     | Névoa escura, pele sem luz, fissuras sombrias, runas corrompidas, sombra, movimento dissonante.                    |
+| **Valor central**      | Retornar à superfície e fazer o mundo lembrar o sofrimento dos esquecidos.                                         |
+| **Virtude distorcida** | Sobrevivência extrema, adaptação, alquimia, fé coletiva, memória do exílio.                                        |
+| **Sombra cultural**    | Vingança absoluta, fanatismo, dependência alquímica, controle social e apagamento da individualidade.              |
+| **Contradição**        | Dizem buscar justiça, mas reproduzem a mesma lógica de dominação que os condenou.                                  |
+| **Papel no jogo**      | A ameaça libertada pela quebra do selo; força física, mágica e simbólica que revela o custo da ambição de Gildrat. |
+
 
 ---
 ## Nota de Verdade Histórica
 
 A origem dos Ignotos deve ser lida em duas camadas:
 
-| Camada | Uso |
-| --- | --- |
-| **Versão dos Cultos Ignotos** | Os Ignotos descendem dos Antigos, primeira grande raça do mundo, injustamente condenada por Vitasolis. |
+| Camada                          | Uso                                                                                                                                                          |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Versão dos Cultos Ignotos**   | Os Ignotos descendem dos Antigos, primeira grande raça do mundo, injustamente condenada por Vitasolis.                                                       |
 | **Verdade histórica em aberto** | Não está confirmado se os Antigos foram realmente os primeiros seres inteligentes, nem se todos os detalhes da condenação aconteceram como os cultos narram. |
 
 > [!important] Diretriz
@@ -48,7 +49,7 @@ Em tempos antigos, uma raça humanoide conhecida como **os Antigos** teria habit
 
 Com o passar dos séculos, os Antigos se tornaram autossuficientes e passaram a desprezar a bênção de **Vitasolis**, o deus-sol. Como punição, Vitasolis teria aproximado sua luz de Galru, provocando um verão devastador: chuvas cessaram, ventos pararam e a superfície quase se tornou inabitável.
 
-Os Antigos fugiram para cavernas e túneis subterrâneos. Então, segundo a tradição ignota, um servo celeste criou um selo mágico que os aprisionou no subsolo.
+Os Antigos fugiram para cavernas e túneis subterrâneos. Então, segundo a tradição ignota, foi criado um selo mágico que os aprisionou no subsolo.
 
 ### Transformação no Subsolo
 
@@ -56,11 +57,11 @@ Isolados da superfície, os Antigos precisaram abandonar o mundo que conheciam. 
 
 Sua sobrevivência dependeu de três adaptações:
 
-| Adaptação             | Consequência                                                                            |
-| --------------------- | --------------------------------------------------------------------------------------- |
-| **Cultivo sem sol**   | Plantas subterrâneas, fungos, raízes e organismos de baixa luz.                         |
-| **Alquimia corporal** | Poções e substâncias para substituir funções associadas ao sol e ampliar produtividade. |
-| **Magia das sombras** | Relação mais profunda com escuridão, Mana, rituais e transformação física.              |
+| Adaptação             | Consequência                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Cultivo sem sol**   | Plantas subterrâneas, fungos, raízes e organismos de baixa luz.                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Alquimia corporal** | Poções e substâncias para substituir funções associadas ao sol, além de ampliar força e produtividade.                                                                                                                                                                                                                                                                                                                                                                                                                |
+| **Magia Sanguínea**   | Relação mais profunda com escuridão, Mana, rituais e transformação física. Manipulam Magia Sanguínea (universalmente proibida e temida). Ela opera sob princípios que violam o fluxo natural da mana, utilizando sacrifícios, catalisadores orgânicos (sangue, órgãos) para gerar um poder bruto, instável e imensamente destrutivo.<br><br>- **Fonte do Profeta:** Acredita-se que a fonte de poder do "Profeta das Sombras" esteja enraizada em rituais de magia sanguínea, embora os detalhes sejam desconhecidos. |
 O isolamento, a escassez e a dependência de substâncias alquímicas causaram efeitos colaterais: agitação, fúria, instabilidade, mutações e divisões internas. Com as gerações, seus corpos se adaptaram às trevas até se tornarem quase irreconhecíveis.
 
 ---
@@ -70,13 +71,12 @@ Os Ignotos devem parecer antigos e errados ao mesmo tempo: não mortos-vivos com
 
 ### Leitura Visual
 
-| Tipo                     | Diretriz                                                                                                               |
-| ------------------------ | ---------------------------------------------------------------------------------------------------------------------- |
-| ==**Lacaios Ignotos**==  | Corpos escuros, movimentos bruscos, olhos ou fissuras com brilho fraco, aparência de povo convertido em tropa.         |
-| ==**Ignotos Gigantes**== | Massa física, deformação extrema, ameaça de cerco, silhueta capaz de dominar portas e muralhas.                        |
-| **Comandantes**          | Mais controle, mais intenção, sinais de hierarquia, magia de campo, postura ritualística ou militar.                   |
-| **Círculos Superiores**  | Alquimistas, oráculos e líderes com marcas de substâncias, símbolos de culto e domínio ritual.                         |
-| **Profeta das Sombras**  | Figura messiânica e externa à leitura comum; deve parecer mais entidade espiritual do que membro ordinário da espécie. |
+| Tipo                    | Diretriz                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Lacaios Ignotos**     | A maioria faz uso constante das substâncias alquímicas. Apresentam corpos brancos, movimentos bruscos, deformidades progressivas e traços cada vez mais distintos entre si — não existe um padrão de mutação. Quanto maior o consumo, maior a força e a deformação física. Devem transmitir a sensação de uma massa de corpos alterados, capaz de cercar corredores, dominar portas e avançar como uma horda.<br>Aqueles que não utilizam substâncias alquímicas costumam ocupar as camadas mais pobres e marginalizadas da sociedade, sendo fisicamente mais fracos. |
+| **Círculos Superiores** | Alquimistas, oráculos, comandantes e líderes religiosos. Não utilizam as substâncias que transformam os lacaios; apenas as produzem e refinam, por isso preservam sua aparência sem deformidades. Vestem símbolos de culto, autoridade e domínio ritual.                                                                                                                                                                                                                                                                                                              |
+| **Profeta das Sombras** | Figura messiânica que transcende a aparência comum dos Ignotos. Deve transmitir uma presença quase espiritual, enigmática e solene. Não apresenta deformidades ou características bestiais, diferenciando-se claramente dos demais membros da espécie.                                                                                                                                                                                                                                                                                                                |
+
 
 > [!visual] Entrada em cena
 > Ignotos aparecem primeiro como sombras na névoa. A revelação física deve vir depois do medo.
@@ -86,25 +86,22 @@ Os Ignotos devem parecer antigos e errados ao mesmo tempo: não mortos-vivos com
 
 Os Ignotos combinam adaptação biológica, alquimia e magia. Sua condição atual não é puramente natural: ela foi moldada por gerações de isolamento, substâncias, rituais e exposição ao mundo inferior.
 
-| Traço                     | Uso narrativo e de gameplay                                                           |
-| ------------------------- | ------------------------------------------------------------------------------------- |
-| **Adaptação à escuridão** | Movimentação em túneis, emboscadas, ataques em baixa visibilidade, presença em névoa. |
-| **Corpos mutáveis**       | ==Justifica variações entre lacaios, gigantes, super-Ignotos e comandantes.==         |
-| **Alquimia interna**      | Substâncias podem ampliar força, produtividade, agressividade ou resistência.         |
-| **Magia sombria / Mana**  | Campos de força, possessão indireta, pressão mental, efeitos contra defesas físicas.  |
-| **Fúria induzida**        | Inimigos agressivos, difíceis de intimidar, com risco de perder controle.             |
+| Traço                     | Uso narrativo e de gameplay                                                                                                            |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| **Adaptação à escuridão** | Movimentação em túneis, emboscadas, ataques em baixa visibilidade e facilidade para atuar em ambientes com névoa.                      |
+| **Corpos mutados**        | O uso contínuo de substâncias alquímicas provoca hipertrofia, deformidades e outras mutações físicas, além de gerar forte dependência. |
+| **Alquimia interna**      | Substâncias podem ampliar força, produtividade, agressividade e resistência temporariamente.                                           |
+| **Magia sanguínea**       | Campos de força, possessão indireta, pressão mental e efeitos que ignoram parte das defesas físicas convencionais.                     |
+| **Fúria induzida**        | Inimigos tornam-se extremamente agressivos, resistentes à intimidação e sujeitos a perder o controle em combate.                       |
 
 ### Vulnerabilidades
 
-- **Sigmetal:** já aparece na campanha como recurso capaz de enfraquecer Ignotos e virar reforço estratégico contra eles.
-- **Dependência alquímica:** a sociedade ignota depende de substâncias, recursos vivos e controle dos Círculos Superiores.
-- **Instabilidade emocional e corporal:** fúria, mutação e fanatismo aumentam força, mas reduzem flexibilidade.
-- **Selo de Melios:** enquanto íntegro, impede sua passagem plena para a superfície.
+| Vulnerabilidade            | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Profundina**             | Minério raro ao qual os Ignotos desenvolveram uma sensibilidade extrema. Acredita-se que essa vulnerabilidade tenha surgido como consequência da corrupção que originou a espécie ou como uma maldição imposta por Vitasolis. A simples proximidade da Profundina enfraquece seus corpos e reduz sua capacidade de regeneração, enquanto a exposição prolongada pode incapacitar ou até matar indivíduos mais suscetíveis. O **Selo de Melios** é forjado com esse minério, razão pela qual impede a passagem dos Ignotos para a superfície. Armas e artefatos contendo Profundina são especialmente eficazes contra eles. |
+| **Dependência alquímica**  | A sobrevivência da sociedade ignota depende das substâncias alquímicas controladas pelos Círculos Superiores. A interrupção do fornecimento reduz sua capacidade física e ameaça a estabilidade social.                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Instabilidade corporal** | As mutações e o uso contínuo das substâncias ampliam força e resistência, mas tornam muitos Ignotos menos adaptáveis, mais impulsivos e vulneráveis à perda de controle.                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
-
-==sigmetal: fraqueza dos Ignotos; 
-> recurso fundamental ligado a eles. 
-> Sigmetal é um minério crítico do mundo inferior, perigoso para os Ignotos quando usado pela superfície, mas também cobiçado por estar ligado à sua sobrevivência, alquimia ou guerra.==
 
 ---
 ## Sociedade e Cultura
@@ -132,6 +129,41 @@ Funções possíveis:
 - sustentar rituais de guerra.
 
 Os Círculos Superiores usam essas substâncias com controle; o povo comum tende a ser mais dependente delas.
+
+
+### Alquimia como Instrumento de Controle
+
+As substâncias alquímicas são o principal recurso que sustenta a sociedade dos Ignotos. Elas tornaram possível a vida no subterrâneo, mas também criaram uma relação de dependência que sustenta a estrutura política do povo.
+
+##### Funções da Alquimia
+
+| Função                     | Efeito                                                                                                   |
+| -------------------------- | -------------------------------------------------------------------------------------------------------- |
+| **Sobrevivência**          | Compensa parcialmente os efeitos da ausência de luz solar e permite a adaptação ao ambiente subterrâneo. |
+| **Produtividade**          | Mantém trabalhadores e soldados ativos por longos períodos em condições extremas.                        |
+| **Aprimoramento físico**   | Aumenta força, resistência, agressividade e acelera adaptações biológicas.                               |
+| **Transformação corporal** | O uso contínuo provoca mutações, hipertrofias e deformidades progressivas.                               |
+| **Dependência**            | Gera dependência química, tornando o consumo cada vez mais necessário.                                   |
+| **Controle Social**        |  A alquimia é o principal mecanismo de poder dos Círculos Superiores.                                    |
+##### Controle Social
+
+Os Círculos Superiores não dependem das substâncias e, por isso, preservam sua aparência e lucidez, governando aqueles que se submetem aos efeitos mais intensos.
+
+- Controlam a produção das substâncias.
+- Regulam sua distribuição.
+- Determinam quem recebe maiores ou menores quantidades.
+- Mantêm a população dependente para preservar sua autoridade política e militar.
+
+A sociedade ignota apresenta diferentes níveis de consumo e dependência. Alguns grupos fazem pouco ou nenhum uso das substâncias, preservando sua aparência original, mas tornando-se fisicamente mais frágeis e ocupando posições marginalizadas. Essa dinâmica cria uma estrutura social complexa, na qual o acesso à alquimia determina não apenas a força de um indivíduo, mas também seu lugar na sociedade.
+
+---
+
+### Consequências Narrativas
+
+- A sobrevivência dos Ignotos depende diretamente da alquimia.
+- O acesso às substâncias determina poder, produtividade e posição social.
+- A dependência química impede revoltas prolongadas contra os Círculos Superiores.
+- Quanto maior o consumo, maior o poder físico — e maior o custo biológico.
 
 ---
 ## Religião e Cosmologia
@@ -171,13 +203,12 @@ Isso cria uma motivação dupla:
 ## O Papel no Conflito Central
 
 Os Ignotos são o retorno violento de tudo que foi selado, esquecido e tratado como problema resolvido.
-
 No arco de Gildrat, eles funcionam como:
 
 | Função                | Descrição                                                                                                              |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | **Ameaça física**     | Exército, comandantes e guerra aberta.                                                                                 |
-| **Ameaça espiritual** | Profeta, Mana, possessão, sonhos e Barreira fina.                                                                      |
+| **Ameaça espiritual** | Profeta, Mana, possessão de Thorin, sonhos e Barreira fina.                                                            |
 | **Ameaça histórica**  | Prova de que selos, tabus e canções antigas tinham motivo.                                                             |
 | **Espelho temático**  | Assim como os anões, os Ignotos também foram moldados por autossuficiência, ganância, colapso e sobrevivência extrema. |
 
@@ -190,7 +221,7 @@ A liberação dos Ignotos não é só um ataque externo. É a consequência de u
 - Mostrar que a violência ignota nasce de trauma, mas foi convertida em doutrina de aniquilação.
 - Diferenciar Ignotos dos espíritos de Melios: espíritos são espíritos; Ignotos são o povo aprisionado.
 - Em cenas iniciais, usar mais presença do que explicação: névoa, sussurro, sombra, morte súbita, falha da luz.
-- Em cenas de guerra, mostrar hierarquia:==lacaios pressionam, gigantes quebram linhas, comandantes tomam decisões.==
+- Em cenas de guerra, mostrar hierarquia:lacaios pressionam, comandantes tomam decisões.
 - A fala ignota deve soar antiga, ressentida e messiânica, evitando vilania casual.
 
 ## Relações
@@ -198,7 +229,7 @@ A liberação dos Ignotos não é só um ataque externo. É a consequência de u
 | Grupo                   | Relação                                                                                                                     |
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | **Anões de Gildrat**    | Alvo imediato após a ruptura do selo; vistos como ocupantes ilegítimos da superfície e repetição da arrogância dos Antigos. |
-| **Vitasolis**           | Figura central de ódio religioso; símbolo da condenação e da opressão solar.                                                |
+| **Vitasolis**           | Figura central de ódio religioso; símbolo da condenação e da opressão.                                                      |
 | **Profeta das Sombras** | Libertador venerado e eixo de controle espiritual.                                                                          |
 | **Superfície de Ekios** | Mundo roubado, fonte de recursos e palco prometido da vingança.                                                             |
 | **Reino da Mana**       | Via de influência, sonhos, possessão e manifestação espiritual.                                                             |

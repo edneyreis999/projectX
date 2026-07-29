@@ -47,14 +47,14 @@ Mélia mostra que a política antimágica de Gildrat não é abstrata: ela atrav
 
 ## Participação na História
 
-| Momento                     | Papel do personagem                                                                                        | Evolução                                                                                    |
-| --------------------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| Antes da campanha           | Vive com [[Tordan]] e [[Thorin]], possui relação afetiva com futebol rúnico e  magia.                      | Torna-se centro oculto da família Forja-Prata.                                              |
-| Caça às Bruxas              | É dada como morta durante perseguição antimágica.                                                          | Sua ausência quebra [[Tordan]] e marca a infância/juventude de [[Thorin]].                  |
-| Sonhos iniciais             | Aparece para [[Thorin]] em sonhos, avisos e presságios.                                                    | Deixa de ser apenas memória e passa a orientar o arco espiritual.                           |
-| Kravens / Barganha Sigmetal | Surge como gancho onírico após o retorno de [[Thorin]] à casa silenciosa.                                  | Reforça que a crise mineradora é parte de algo maior.                                       |
-| A Voz do Conselho           | O desaparecimento dela é mencionado como referência de ausência incomum de [[Tordan]] e presságio.         | Sua ausência continua estruturando o clima familiar.                                        |
-| Troféu Quebrado             | É lembrada por [[Tordan]] como alguém que amava ver [[Thorin]] jogar; a funda traz seda azul ligada a ela. | Sua memória permite reconciliação ou respeito entre pai e filho.                            |
+| Momento                       | Papel do personagem                                                                                        | Evolução                                                                   |
+| ----------------------------- | ---------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| Antes da campanha             | Vive com [[Tordan]] e [[Thorin]], possui relação afetiva com futebol rúnico e  magia.                      | Torna-se centro oculto da família Forja-Prata.                             |
+| Caça às Bruxas                | É dada como morta durante perseguição antimágica.                                                          | Sua ausência quebra [[Tordan]] e marca a infância/juventude de [[Thorin]]. |
+| Sonhos iniciais               | Aparece para [[Thorin]] em sonhos, avisos e presságios.                                                    | Deixa de ser apenas memória e passa a orientar o arco espiritual.          |
+| Kravens / Barganha Profundina | Surge como gancho onírico após o retorno de [[Thorin]] à casa silenciosa.                                  | Reforça que a crise mineradora é parte de algo maior.                      |
+| A Voz do Conselho             | O desaparecimento dela é mencionado como referência de ausência incomum de [[Tordan]] e presságio.         | Sua ausência continua estruturando o clima familiar.                       |
+| Troféu Quebrado               | É lembrada por [[Tordan]] como alguém que amava ver [[Thorin]] jogar; a funda traz seda azul ligada a ela. | Sua memória permite reconciliação ou respeito entre pai e filho.           |
 
 
 ---

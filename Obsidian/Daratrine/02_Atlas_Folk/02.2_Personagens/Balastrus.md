@@ -48,7 +48,7 @@ No Ato III, sua função muda: ele é tecnicamente necessário para defender Gil
 | Momento            | Papel do personagem                                                                        | Evolução                                                                             |
 | ------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
 | Contratos iniciais | Recebe [[Thorin]] por imposição de [[Tordan]] e opera como patrono/carrasco de expedições. | Aparece como autoridade técnica abusiva.                                             |
-| Kravens            | Explora trabalho, recursos e riscos em busca de Sigmetal e lucro/avanço.                   | Consolida antagonismo com [[Filena]] e desconfiança do grupo.                        |
+| Kravens            | Explora trabalho, recursos e riscos em busca de Profundina e lucro/avanço.                 | Consolida antagonismo com [[Filena]] e desconfiança do grupo.                        |
 | Travessia          | Forçado a cooperar com o grupo em ambientes perigosos.                                     | Sua utilidade prática começa a conviver com repulsa moral.                           |
 | Conselho           | Manipula interesses do Conselho e do futebol rúnico para viabilizar Melios.                | Passa de carrasco local a agente político.                                           |
 | Melios             | Desconsidera avisos dos Corvos, força avanço e rompe/ajuda a romper o selo.                | Sua ambição desencadeia crise histórica.                                             |

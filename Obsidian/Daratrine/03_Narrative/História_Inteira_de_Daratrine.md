@@ -137,9 +137,9 @@ Após a recriação do selo, os Orcs levaram o artefato; restauraram e protegera
 Consequências:
 - impediu a chegada de novos Ignotos;
 - isolou os Ignotos já presentes na superfície;
-- bloqueou o acesso ao Sigmetal.
+- bloqueou o acesso à profundina.
 
-	Sigmetal era um recurso fundamental durante a guerra: relacionado aos Ignotos; utilizado contra criaturas do mundo inferior; extremamente raro. Eram o "suplemento dos Ignotos"; 
+	Profundina era um recurso fundamental durante a guerra: relacionado aos Ignotos; utilizado contra criaturas do mundo inferior; extremamente raro. Eram o "suplemento dos Ignotos"; 
 
 Após o novo selo:
 - o acesso ao minério foi bloqueado;

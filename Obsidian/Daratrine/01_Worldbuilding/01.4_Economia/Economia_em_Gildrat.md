@@ -82,18 +82,22 @@ A autossuficiência alimentar tornou-se uma das prioridades do Império após a 
 **Função simbólica e histórica:** As minas de Kraven representam o avanço industrial anão e sua dependência crescente da exploração subterrânea.
 
 ---
-### Sigmetal (Ouro verde?)
+### Profundina
 
-**Função:** recurso mineral raro
+> [!NOTE] Padronização de nomenclatura
+> Em versões anteriores deste GDD, este minério era denominado **Sigmetal**. A nomenclatura oficial do projeto passa a ser **Profundina**. Sempre que o termo **Sigmetal** aparecer em documentos antigos, ele deve ser interpretado como **Profundina** e atualizado quando possível.
 
-**Histórico:** Durante séculos, o Sigmetal foi explorado intensivamente pelos anões, tornando-se extremamente escasso ao longo do tempo.
+**Função:** Recurso mineral raro.
 
-**Escassez:** A maior parte da população acredita que o minério esteja praticamente extinto. No entanto, fragmentos de Sigmetal ainda aparecem em regiões profundas ligadas às antigas estruturas subterrâneas (Melios).
+**Histórico:** Durante séculos, a profundina foi amplamente explorada pelos anões devido às suas propriedades únicas, tornando-se um dos minérios mais valiosos do império. A exploração intensa fez com que suas reservas se tornassem extremamente escassas.
 
-Narrativamente, Thorin encontra fragmentos desse minério durante a história, fazendo com que o recurso se torne gradualmente importante para os acontecimentos futuros do jogo.
+**Escassez:** A maior parte da população acredita que o minério esteja praticamente extinto. No entanto, fragmentos ainda podem ser encontrados nas profundezas de Melios e em antigas estruturas subterrâneas abandonadas.
 
-> *O jogador inicialmente não sabe disso, mas o Sigmetal possui propriedades capazes de enfraquecer os Ignotos. 
+**Propriedades:** A profundina emite uma ressonância natural incompatível com os Ignotos. Sua simples proximidade enfraquece essas criaturas, reduzindo sua resistência e dificultando a ação da magia sanguínea e das alterações alquímicas que sustentam seus corpos. O **Selo de Melios** é forjado com profundina, razão pela qual impede a passagem dos Ignotos para a superfície.
 
+**Importância Narrativa:** Inicialmente tratada apenas como um minério raro, a profundina ganha importância conforme Thorin encontra fragmentos durante sua jornada. Aos poucos, o recurso revela seu verdadeiro valor estratégico, tornando-se uma das principais vantagens da superfície contra os Ignotos.
+
+> **Segredo narrativo:** No início da campanha, o jogador desconhece que a profundina é a principal vulnerabilidade dos Ignotos. Essa descoberta ocorre gradualmente ao longo da história.
 
 ---
 
