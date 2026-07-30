@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "run_id": "loki-run-v2:b625625fc3f771ba1ccf751c357ec0395a82e2997bd04a06a97ce5b1867033a1",
+  "execution_id": "loki-execution-v2:f767776e80492869e3f1e145cf82bf53276a71d7dde3f90818e344aa33410d9a",
+  "task_ref": "planos/004-ambientacao-VN/task-1.1.md",
+  "gate": "human-validation",
+  "environment": "Playtest do projeto RPG Maker MZ",
+  "scenario_refs": [
+    "RQ-P01",
+    "RQ-P02",
+    "RQ-P03",
+    "RQ-P04",
+    "RQ-P05",
+    "RQ-P06",
+    "RQ-P07",
+    "RQ-P08",
+    "RQ-P09"
+  ],
+  "result": "passed",
+  "evidence_kind": "explicit-user-confirmation",
+  "statement": "O usuário confirmou explicitamente que o Playtest foi validado.",
+  "reported_observations": [],
+  "observation_limit": "A confirmação foi global; nenhum detalhe por cenário foi fornecido e nenhum foi inferido.",
+  "recorded_at": "2026-07-29",
+  "next_action": "none"
+}

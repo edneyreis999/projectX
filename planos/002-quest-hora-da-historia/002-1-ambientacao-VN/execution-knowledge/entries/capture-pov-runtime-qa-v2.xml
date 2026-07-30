@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<execution_knowledge_entry schema_version="1">
+  <identity>
+    <capture_id>capture-pov-runtime-qa-v2</capture_id>
+    <calling_workflow>loki-agentic-development</calling_workflow>
+    <run_id>agentic-004-ambientacao-vn-v1</run_id>
+    <run_directory>E:\Projetos\projectX\planos\004-ambientacao-VN</run_directory>
+    <phase>cross-review</phase>
+    <agent_run_id>agent-run-pov-runtime-qa-v1</agent_run_id>
+    <handoff_id>handoff-pov-runtime-qa-v1</handoff_id>
+    <source_agent>runtime-qa</source_agent>
+  </identity>
+  <lineage>
+    <target_entry>execution-knowledge/entries/capture-pov-runtime-qa-v2.xml</target_entry>
+    <supersedes relationship="run-local-evidence-only" predecessor_modified="false">execution-knowledge/entries/capture-pov-runtime-qa-v1.xml</supersedes>
+    <source_refs>
+      <source_ref type="evidence-manifest" authorization="run-contained">evidence/pov-runtime-qa.xml</source_ref>
+      <source_ref type="task-state" authorization="run-contained">agent-runs/fase1/agent-run-pov-runtime-qa-v1.xml</source_ref>
+      <source_ref type="completion-record" authorization="run-contained">analise/agentes/runtime-qa.xml</source_ref>
+    </source_refs>
+  </lineage>
+  <materiality>
+    <material>true</material>
+    <reason>The completed runtime-QA handoff materially informs downstream analysis through a blocking static contract, a route-complete human Playtest matrix, preserved runtime claim boundaries, and corrected consistent source lineage.</reason>
+  </materiality>
+  <capture>
+    <state>captured</state>
+    <reason>Material provider-neutral execution knowledge was derived from the authorized corrected-lineage sources.</reason>
+    <minimum_next_path>Review and deduplicate only through loki-continuous-improvement.</minimum_next_path>
+  </capture>
+  <knowledge>
+    <claims>
+      <claim type="fact" confidence="high">
+        <statement>The evidence manifest, task-state, and completion payload consistently identify run agentic-004-ambientacao-vn-v1, agent run agent-run-pov-runtime-qa-v1, and handoff handoff-pov-runtime-qa-v1.</statement>
+        <evidence_ref>evidence/pov-runtime-qa.xml#identity</evidence_ref>
+      </claim>
+      <claim type="fact" confidence="high">
+        <statement>The runtime-QA pass produced 12 static validators and 9 human Playtest scenarios covering branches, name state, switches, assets, pictures, cleanup, quest flow, reachability, timing, and performance without asserting runtime success.</statement>
+        <evidence_ref>analise/agentes/runtime-qa.xml#static_validation_plan</evidence_ref>
+      </claim>
+      <claim type="decision" confidence="high">
+        <statement>Runtime and perceptible claims remain pending until human Playtest evidence exists.</statement>
+        <evidence_ref>evidence/pov-runtime-qa.xml#completion_record/decisions</evidence_ref>
+      </claim>
+      <claim type="fact" confidence="high">
+        <statement>The QA contract requires separate evidence for Confirmar and Corrigir, including name behavior and persistence, switches 43 and 44, input, picture lifecycle, quest transition, and cold-versus-warm performance.</statement>
+        <evidence_ref>analise/agentes/runtime-qa.xml#human_playtest_matrix</evidence_ref>
+      </claim>
+      <claim type="inference" confidence="medium">
+        <statement>A reusable runtime-QA handoff should pair structural validators with route-specific perceptible evidence and keep each runtime claim pending until its named scenario is executed.</statement>
+        <evidence_ref>analise/agentes/runtime-qa.xml#static_validation_plan</evidence_ref>
+      </claim>
+    </claims>
+    <attempts>
+      <attempt>
+        <action>Define proposal-only structural QA, cross-review findings, and a human Playtest matrix for both VN routes and their integrations.</action>
+        <outcome>The handoff completed with structural validation passing and nine post-implementation Playtest scenarios still required.</outcome>
+        <evidence_ref>agent-runs/fase1/agent-run-pov-runtime-qa-v1.xml#validators</evidence_ref>
+      </attempt>
+    </attempts>
+    <resolution status="partial" confidence="high">
+      <statement>The pass established an analysis-authoring-ready QA contract with consistent source lineage while intentionally leaving all perceptible and runtime behavior unvalidated.</statement>
+    </resolution>
+    <cause status="known" confidence="high">
+      <statement>The residual uncertainty follows from the proposal-only execution boundary, absence of game execution, open human decisions, and missing post-implementation evidence.</statement>
+    </cause>
+    <gaps>
+      <gap>The effect of Confirmar on Actor 1 and the semantics of switches 43 and 44 remain blocking decisions.</gap>
+      <gap>Reachability, persistence, timing, composition, performance, branch behavior, and cleanup have not been validated at runtime.</gap>
+    </gaps>
+    <minimum_next_path>Resolve blocking decisions, implement only after approval, then execute and attach separate evidence for Playtest scenarios RQ-P01 through RQ-P09.</minimum_next_path>
+    <reuse_guidance>For comparable runtime-QA work, verify identity consistency across persisted artifacts, define deterministic before-and-after validators separately from human scenarios, require evidence per branch and state transition, include cold and warm runs, and label every unexecuted perceptible claim as pending.</reuse_guidance>
+    <avoid_next_time>Do not infer reachability from guards, persistence from a name command, switch semantics from placement, cleanup from file presence, or performance from decoded-memory estimates; verify lineage IDs before persisting completion artifacts.</avoid_next_time>
+  </knowledge>
+  <security>
+    <sanitized>true</sanitized>
+    <raw_payload_included>false</raw_payload_included>
+    <private_reasoning_included>false</private_reasoning_included>
+    <personal_data_included>false</personal_data_included>
+    <secrets_included>false</secrets_included>
+    <evidence_snapshots_copied>false</evidence_snapshots_copied>
+  </security>
+  <promotion>
+    <owner>loki-continuous-improvement</owner>
+    <status>unreviewed</status>
+  </promotion>
+</execution_knowledge_entry>

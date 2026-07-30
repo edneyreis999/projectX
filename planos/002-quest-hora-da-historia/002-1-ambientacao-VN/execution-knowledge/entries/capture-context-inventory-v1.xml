@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<execution_knowledge_entry schema_version="1">
+  <identity>
+    <capture_id>capture-context-inventory-v1</capture_id>
+    <calling_workflow>loki-agentic-development</calling_workflow>
+    <run_id>agentic-004-ambientacao-vn-v1</run_id>
+    <run_directory>E:\Projetos\projectX\planos\004-ambientacao-VN</run_directory>
+    <phase>context-inventory</phase>
+    <agent_run_id>agent-run-context-inventory-v1</agent_run_id>
+    <handoff_id>handoff-context-inventory-v1</handoff_id>
+  </identity>
+  <lineage>
+    <target_entry>execution-knowledge/entries/capture-context-inventory-v1.xml</target_entry>
+    <source_refs>
+      <source_ref type="completion-record" authorization="run-contained">agent-runs/fase0/agent-run-context-inventory-v1.xml</source_ref>
+      <source_ref type="evidence-manifest" authorization="run-contained">evidence/context-inventory.xml</source_ref>
+    </source_refs>
+  </lineage>
+  <materiality>
+    <material>true</material>
+    <reason>The persisted completion records a substantial focused multi-source inventory, structured plugin and asset validation, an execution decision about source authority, and residual runtime gaps.</reason>
+  </materiality>
+  <capture>
+    <state>captured</state>
+    <reason>Material provider-neutral knowledge was derived from the authorized persisted sources.</reason>
+    <minimum_next_path>Review and deduplicate only through loki-continuous-improvement.</minimum_next_path>
+  </capture>
+  <knowledge>
+    <claims>
+      <claim type="fact" confidence="high">
+        <statement>The context handoff completed a focused read-only inventory spanning the demand, RPG Maker runtime data, plugin configuration, engine commands, routed documentation, quest notes, and asset metadata.</statement>
+        <evidence_ref>evidence/context-inventory.xml#completion_record</evidence_ref>
+      </claim>
+      <claim type="fact" confidence="high">
+        <statement>The inventory validations included structured parsing, plugin envelope and VM extraction, command inventory, and checks of asset existence and dimensions.</statement>
+        <evidence_ref>evidence/context-inventory.xml#completion_record/validations</evidence_ref>
+      </claim>
+      <claim type="decision" confidence="high">
+        <statement>Observed runtime facts take precedence over unreviewed historical notes, while conflicts remain explicit gates.</statement>
+        <evidence_ref>evidence/context-inventory.xml#completion_record/decisions</evidence_ref>
+      </claim>
+      <claim type="friction" confidence="medium">
+        <statement>The inventory alone does not validate perceptible runtime behavior; that behavior remains pending.</statement>
+        <evidence_ref>evidence/context-inventory.xml#completion_record/residual_risks</evidence_ref>
+      </claim>
+      <claim type="inference" confidence="medium">
+        <statement>A reusable context-inventory pass benefits from combining authoritative runtime inspection with narrowly routed documentation, while preserving unresolved conflicts as gates.</statement>
+        <evidence_ref>evidence/context-inventory.xml#completion_record</evidence_ref>
+      </claim>
+    </claims>
+    <attempts>
+      <attempt>
+        <action>Perform a focused multi-source inventory before the first POV wave.</action>
+        <outcome>The handoff completed with a scene baseline, ownership boundaries, branches, assets, conflicts, and human gates; no production files were changed.</outcome>
+        <evidence_ref>agent-runs/fase0/agent-run-context-inventory-v1.xml#completion</evidence_ref>
+      </attempt>
+    </attempts>
+    <resolution status="partial" confidence="medium">
+      <statement>The inventory resolved the context baseline sufficiently for POV wave 1, but perceptible behavior still requires runtime validation.</statement>
+    </resolution>
+    <cause status="known" confidence="medium">
+      <statement>The remaining uncertainty follows from the handoff being read-only and from observable behavior not yet being exercised at runtime.</statement>
+    </cause>
+    <gaps>
+      <gap>Perceptible behavior remains runtime-pending.</gap>
+      <gap>Evidence completeness is partial for tool I/O and unavailable for transcript and run-scoped token usage.</gap>
+    </gaps>
+    <minimum_next_path>Use the persisted inventory as bounded context for POV wave 1, then validate any perceptible behavior in the appropriate runtime gate.</minimum_next_path>
+    <reuse_guidance>For comparable RPG Maker context passes, inspect runtime data and plugin configuration alongside narrowly routed documentation, validate structured plugin and asset facts, and keep source conflicts explicit.</reuse_guidance>
+    <avoid_next_time>Do not treat unreviewed historical notes as stronger evidence than current runtime facts, and do not infer perceptible runtime behavior from a read-only inventory.</avoid_next_time>
+  </knowledge>
+  <security>
+    <sanitized>true</sanitized>
+    <raw_payload_included>false</raw_payload_included>
+    <private_reasoning_included>false</private_reasoning_included>
+    <personal_data_included>false</personal_data_included>
+    <secrets_included>false</secrets_included>
+    <evidence_snapshots_copied>false</evidence_snapshots_copied>
+  </security>
+  <promotion>
+    <owner>loki-continuous-improvement</owner>
+    <status>unreviewed</status>
+  </promotion>
+</execution_knowledge_entry>

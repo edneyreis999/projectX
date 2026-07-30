@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agentic_agent_pov schema_version="1">
+  <identity>
+    <agent>scene-presentation-designer</agent>
+    <mode>proposal-only</mode>
+    <run_id>agentic-004-ambientacao-vn-v1</run_id>
+    <handoff_id>handoff-pov-presentation-v1</handoff_id>
+    <agent_run_id>agent-run-pov-presentation-v1</agent_run_id>
+    <owner>scene-presentation-designer</owner>
+    <status>completed</status>
+  </identity>
+
+  <scope>
+    <objective>Propor staging, expressões, movimentos, animações, Visual Cut-In, background, composição, timing e cleanup para a VN do mapa 046, cobrindo as onze mensagens e os dois ramos sem criar assets nem alterar runtime.</objective>
+    <target>planos/004-ambientacao-VN/analise/agentes/scene-presentation-designer.xml</target>
+    <write_mode>task_scoped_writer</write_mode>
+    <allowed_writes>
+      <path>planos/004-ambientacao-VN/analise/agentes/scene-presentation-designer.xml</path>
+    </allowed_writes>
+    <scoped_write_domains>
+      <domain>scene-scripts</domain>
+      <domain>beat-timing</domain>
+      <domain>presentation-cues</domain>
+      <domain>cutscene-blocking</domain>
+    </scoped_write_domains>
+    <runtime_changed>false</runtime_changed>
+    <assets_created>false</assets_created>
+    <assets_edited>false</assets_edited>
+  </scope>
+
+  <domain_context_preflight schema_version="1">
+    <agent>scene-presentation-designer</agent>
+    <task_id>handoff-pov-presentation-v1</task_id>
+    <required>true</required>
+    <domain_docs_root>docs/domains/scene-presentation-designer</domain_docs_root>
+    <task_topics>
+      <topic>VN-staging</topic>
+      <topic>bust-expression-and-blocking</topic>
+      <topic>picture-layering-and-cleanup</topic>
+      <topic>Visual-Cut-In</topic>
+      <topic>background-composition</topic>
+      <topic>beat-timing</topic>
+    </task_topics>
+    <task_domain_ids>
+      <domain_id>map-046</domain_id>
+      <domain_id>event-1-page-1</domain_id>
+      <domain_id>message-B01-B11</domain_id>
+      <domain_id>choice-qualSeuNome</domain_id>
+      <domain_id>bust-picture-1</domain_id>
+      <domain_id>bust-picture-2</domain_id>
+    </task_domain_ids>
+    <relevant_surfaces>
+      <surface>frontend/data/Map046.json:event 1/page 1</surface>
+      <surface>VisuMZ_2_VNPictureBusts enter/exit, graphic, movement and cleanup flow</surface>
+      <surface>PKD visual choice qualSeuNome1/qualSeuNome2</surface>
+      <surface>1280x720 VN composition and 816px four-line message window</surface>
+    </relevant_surfaces>
+    <selection_basis>
+      <basis>O envelope exige preflight pessoal do domínio antes da escrita proposal-only.</basis>
+      <basis>O README é a rota mínima e cobre staging, busts, backgrounds, timing, IDs 1-4 e o gate de Playtest.</basis>
+      <basis>Map046.json e inventory.xml fornecem a baseline corrente suficiente para uma proposta reversível.</basis>
+    </selection_basis>
+    <read_attempt>
+      <readme_path>docs/domains/scene-presentation-designer/README.md</readme_path>
+      <status>read</status>
+      <reason>README lido antes de qualquer outro documento do domínio.</reason>
+    </read_attempt>
+    <docs_considered>
+      <doc>
+        <path>docs/domains/scene-presentation-designer/README.md</path>
+        <routed_by>README</routed_by>
+        <selected>true</selected>
+        <reason>Cobre exatamente staging, busts, backgrounds/CGs, timing/cues e riscos de validação perceptível.</reason>
+      </doc>
+    </docs_considered>
+    <docs_read>
+      <doc>
+        <path>docs/domains/scene-presentation-designer/README.md</path>
+        <relevance>Inventário durável mínimo para padrões de bust, IDs, transições, background e gates.</relevance>
+        <matched_topics>VN-staging; bust-expression-and-blocking; picture-layering-and-cleanup; background-composition; beat-timing</matched_topics>
+        <matched_domain_ids>bust-picture-1; bust-picture-2</matched_domain_ids>
+        <matched_surfaces>VisuStella VN Picture Busts; pictures; transitions</matched_surfaces>
+        <freshness_status>current</freshness_status>
+        <freshness_evidence>Os defaults 0.5/1.0, 100%, 20 frames e AutoErase, os IDs de bust mais usados e a ausência de validação perceptível são corroborados pelo inventory.xml e pela baseline Map046 de hash 73e00628022b18375aec7af714181dd3171fdfc8f9ec911cfcc76188f47eb5d2.</freshness_evidence>
+      </doc>
+    </docs_read>
+    <relevant_facts>
+      <fact source_kind="durable-doc" source_locator="docs/domains/scene-presentation-designer/README.md">Bustos usam âncora 0.5/1.0, escala 100%, normalmente 20 frames e IDs sobretudo 1-4; percepção visual e cleanup continuam sem Playtest.</fact>
+      <fact source_kind="current-source" source_locator="frontend/data/Map046.json:event 1/page 1">A cena atual usa picture ID 1 para Reed final e ID 2 para CriancaOrc_, ambos 408x560, com enter/exit de 20 frames e AutoErase.</fact>
+      <fact source_kind="current-source" source_locator="planos/004-ambientacao-VN/analise/context/inventory.xml">A tela é 1280x720; não há background, parallax, áudio direto, fumaça, fade, vídeo ou animação atual.</fact>
+      <fact source_kind="current-source" source_locator="frontend/data/Map046.json:event 1/page 1">Existem onze mensagens, Confirmar com três mensagens, Corrigir com duas mensagens e Name Input, e quatro mensagens compartilhadas após a reconvergência.</fact>
+      <fact source_kind="current-source" source_locator="visual-inspection:frontend/img/pictures/Portraits/Principal/Reed final.png">O bust existente do contador possui sorriso aberto, postura frontal expansiva e mãos na cintura; funciona para acolhimento e orgulho, mas não comunica contemplação ou solenidade.</fact>
+      <fact source_kind="current-source" source_locator="visual-inspection:frontend/img/pictures/Portraits/Principal/CriancaOrc_.png">O bust existente da criança tem sorriso discreto, postura frontal relaxada e leitura de confiança/ironia; não comunica surpresa aberta.</fact>
+    </relevant_facts>
+    <conflicts_with_task_context>
+      <conflict>
+        <durable_locator>Contexto narrativo durável registra Rheed.</durable_locator>
+        <current_locator>frontend/data/Map046.json e asset atual registram Reed final.</current_locator>
+        <resolution>current-source-prevails</resolution>
+        <gap_recorded>A grafia atual só descreve a baseline; nomes novos de assets do contador permanecem neutros até o gate Reed/Rheed.</gap_recorded>
+      </conflict>
+      <conflict>
+        <durable_locator>Intenção histórica exploratória menciona poção, fumaça, vídeo e fade.</durable_locator>
+        <current_locator>frontend/data/Map046.json e inventory.xml não materializam esses elementos.</current_locator>
+        <resolution>current-source-prevails</resolution>
+        <gap_recorded>Fumaça e fade aparecem somente como opção condicionada; vídeo não é proposto.</gap_recorded>
+      </conflict>
+    </conflicts_with_task_context>
+    <freshness>
+      <status>uncertain</status>
+      <evidence>A baseline Map046 foi confirmada pelo hash do inventory.xml, mas localização exata, composição, timing, draw order perceptível e cleanup real não possuem Playtest.</evidence>
+    </freshness>
+    <missing_context>
+      <item material="false" substitute_locator="frontend/data/Map046.json e opções condicionais deste POV">A fonte não identifica praça, interior, fogueira, lanterna ou outro local físico exato; o background evita afirmar esses elementos.</item>
+      <item material="false" substitute_locator="layer plan lógico e gate técnico">Não há convenção validada para backgrounds/CGs nem confirmação de draw order entre pictures e a UI de escolhas.</item>
+      <item material="false" substitute_locator="visual-inspection dos busts existentes">Não existem variações expressivas verificadas para os dois busts usados nesta cena.</item>
+    </missing_context>
+    <cross_domain_lookup>
+      <required>false</required>
+      <destination>none</destination>
+      <requested_domain>none</requested_domain>
+      <requested_topics_or_ids />
+      <reason>As lacunas podem permanecer como gates e opções condicionais sem impedir uma proposta visual reversível.</reason>
+    </cross_domain_lookup>
+    <result>ready-with-gaps</result>
+    <result_reason>O contexto durável mínimo e a baseline corrente cobrem todos os requisitos materiais da proposta; localização, layering perceptível e timing permanecem explicitamente pendentes.</result_reason>
+    <minimum_next_input>none</minimum_next_input>
+    <durable_doc_gap_handoff>
+      <required>true</required>
+      <destination>cross-review</destination>
+      <gap_summary>
+        <gap>Resolver Reed/Rheed antes de fixar nomes finais de variantes do contador.</gap>
+        <gap>Não promover poção/fumaça/vídeo/fade histórico a runtime sem decisão humana.</gap>
+        <gap>Confirmar a solução técnica de background e draw order sem editar documentação neste POV.</gap>
+      </gap_summary>
+    </durable_doc_gap_handoff>
+  </domain_context_preflight>
+
+  <source_authority>
+    <source rank="1" class="current-runtime" locator="frontend/data/Map046.json:event 1/page 1">Autoridade sobre mensagens, branches, picture IDs, posições, comandos e cleanup atualmente materializados.</source>
+    <source rank="2" class="current-inventory" locator="planos/004-ambientacao-VN/analise/context/inventory.xml">Autoridade derivada sobre contagens, tela, plugins, dimensões, conflitos e gates.</source>
+    <source rank="3" class="validated-demand" locator="planos/004-ambientacao-VN/demanda-improved.md">Autoridade sobre escopo, ordem de fases, manifesto, restrições e critérios de aceite.</source>
+    <source rank="4" class="durable-domain" locator="docs/domains/scene-presentation-designer/README.md">Autoridade sobre padrões estáticos e limites de validação do domínio.</source>
+    <source rank="5" class="direct-visual-observation" locator="frontend/img/pictures/Portraits/Principal/Reed final.png; frontend/img/pictures/Portraits/Principal/CriancaOrc_.png">Autoridade sobre silhueta, expressão e leitura visual dos dois busts existentes.</source>
+  </source_authority>
+
+  <technical_presentation_route>
+    <project>RPG Maker MZ</project>
+    <active_surface>VisuMZ_2_VNPictureBusts em map event; PKD_VisualChoices_MZ na escolha; Coreto na entrada e saída da VN.</active_surface>
+    <guidance_used>rpg-maker-mz-visustella-plugin-index; rpg-maker-mz-visustella-events-presentation; rpg-maker-mz-visustella-plugin-commands</guidance_used>
+    <result>Somente semântica e checklist foram usados; nenhum payload, comando ou parâmetro novo foi inventado.</result>
+    <future_write_gates>Qualquer edição futura de Map046.json requer rpg-maker-mz-data-json; qualquer mudança de plugin/parâmetro requer rpg-maker-mz-plugin-workflow; comportamento perceptível exige Playtest.</future_write_gates>
+  </technical_presentation_route>
+
+  <visual_inspection>
+    <asset id="EXIST-BUST-01" path="frontend/img/pictures/Portraits/Principal/Reed final.png" dimensions="408x560" alpha="true">
+      <observed>Homem anão idoso, cabelo e barba brancos, tapa-olho, colete vermelho e camisa amarela; sorriso aberto, postura frontal, peito aberto e mãos na cintura.</observed>
+      <best_reads>acolhimento caloroso; orgulho brincalhão; contador performático; punch cômico</best_reads>
+      <weak_reads>suspeita concentrada; memória distante; luto histórico; encantamento ritual silencioso</weak_reads>
+    </asset>
+    <asset id="EXIST-BUST-02" path="frontend/img/pictures/Portraits/Principal/CriancaOrc_.png" dimensions="408x560" alpha="true">
+      <observed>Criança orc de pele verde, cabelos escuros, olhos âmbar, vestes simples; sorriso discreto, braços relaxados e postura frontal estável.</observed>
+      <best_reads>confiança; ironia leve; réplica espirituosa; escuta curiosa</best_reads>
+      <weak_reads>surpresa intensa; indignação aberta; vulnerabilidade ou medo</weak_reads>
+    </asset>
+    <fit_rule>Novas variantes devem conservar canvas 408x560, transparência, escala corporal, recorte inferior e âncora visual para permitir troca sem salto.</fit_rule>
+  </visual_inspection>
+
+  <presentation_assessment>
+    <dramatic_curve>acolhimento leve → erro de nome → bifurcação cômica → reconvergência afetiva → escala histórica → revelação de Thorin → limiar ritual</dramatic_curve>
+    <strengths>
+      <item>Os busts existentes têm silhuetas claras e paletas contrastantes, adequadas a composição de dois personagens.</item>
+      <item>A baseline já reserva ID 1 ao contador e ID 2 à criança e usa 20 frames de forma consistente.</item>
+      <item>A revelação verbal de Thorin cria um ponto natural para um único pico visual.</item>
+    </strengths>
+    <problems>
+      <item>O contador entra e sai entre as duas primeiras mensagens, quebrando continuidade sem mudança de espaço ou tempo.</item>
+      <item>Uma única expressão alegre do contador atravessa acolhimento, lembrança histórica e ritual, achatando a mudança de tom.</item>
+      <item>A criança não possui expressão visual de surpresa no ramo Confirmar.</item>
+      <item>Sem background, a tela não estabelece noite, Daratrine, roda de ouvintes ou limiar entre presente e história.</item>
+      <item>A cena não possui um pico visual para separar exposição de lugar da apresentação de Thorin.</item>
+    </problems>
+    <priority_order>
+      <priority rank="1">Estabilizar continuidade e foco dos busts, removendo reentradas não motivadas.</priority>
+      <priority rank="2">Adicionar variantes mínimas para pensamento, solenidade e surpresa.</priority>
+      <priority rank="3">Estabelecer background noturno neutro com safe areas para busts e mensagem.</priority>
+      <priority rank="4">Usar um único Visual Cut-In na introdução de Thorin.</priority>
+      <priority rank="5">Adicionar fumaça de poção somente se o gate histórico/visual for aprovado.</priority>
+    </priority_order>
+  </presentation_assessment>
+
+  <layer_and_picture_plan status="proposal-pending-technical-review-and-playtest">
+    <layer id="L0" order="bottom" picture_id="unassigned">
+      <content>Background VN046-BG-01.</content>
+      <rule>Preferir superfície de background/parallax ou container abaixo das pictures; não atribuir Show Picture acima de IDs 1-2 sem confirmar draw order, pois poderia cobrir os busts.</rule>
+    </layer>
+    <layer id="L1" order="characters" picture_id="1">
+      <content>Contador de histórias; mantém o ID atual em todos os beats.</content>
+      <rule>Âncora 0.5/1.0, 100%, canvas 408x560; nunca reutilizar antes de AutoErase/erase confirmado.</rule>
+    </layer>
+    <layer id="L2" order="characters-front-or-peer" picture_id="2">
+      <content>Criança orc; mantém o ID atual em ambos os ramos.</content>
+      <rule>Mesmo anchor/canvas; em duo, foco vem de tone/opacity ou composição, não de trocar o ID.</rule>
+    </layer>
+    <layer id="L3" order="temporary-cut-in-above-busts" picture_id="3" provisional="true">
+      <content>Visual Cut-In VN046-CUT-01.</content>
+      <rule>Usar somente em B10, abaixo da message UI e nunca durante a choice UI; erase/AutoErase obrigatório antes de B11.</rule>
+    </layer>
+    <layer id="L4" order="temporary-transition-mask" picture_id="4" provisional="true">
+      <content>VFX de fumaça VN046-VFX-01, apenas se aprovado.</content>
+      <rule>Entrar após confirmação de B11, encobrir cleanup de IDs 1-3 e ser apagado pela/antes da transição COMPLETE_VN; não persistir na cena seguinte.</rule>
+    </layer>
+    <layer id="L5" order="top-ui" picture_id="engine-or-plugin-owned">
+      <content>Message window, Name Input e Visual Choice.</content>
+      <rule>Não disputar IDs; legibilidade, draw order e input permanecem pendentes de Playtest.</rule>
+    </layer>
+    <choice_assets_observation>InnButton_01 normal usa pergaminho marrom/claro 392x104; InnButton_00 hover usa borda amarela 388x101. Nenhuma mudança de asset de escolha é proposta.</choice_assets_observation>
+  </layer_and_picture_plan>
+
+  <beat_staging message_blocks_covered="11" total_message_blocks="11" branches_covered="Confirmar,Corrigir" timing_validation="runtime-pending">
+    <beat id="B01" locator="frontend/data/Map046.json:event[1]/pages[0]/list[5]" branch="shared-arrival">
+      <character>contador de histórias; grafia Reed/Rheed pendente</character>
+      <bust picture_id="1" position="5" asset_ref="EXIST-BUST-01" expression="acolhedor-expansivo" />
+      <entry_exit_movement>Enter pelo deslocamento horizontal já usado na baseline, 20f OutSine; manter no palco ao fim, sem exit/re-enter entre B01 e B02.</entry_exit_movement>
+      <timing>20f de entrada + 6-10f de assentamento antes do texto; avanço da mensagem continua sob controle do jogador.</timing>
+      <focus>Contador em intensidade plena; background 10-15% menos contrastado na faixa central.</focus>
+      <layer>L1; UI em L5.</layer>
+      <cleanup>keep picture ID 1 para B02; nenhum novo picture temporário.</cleanup>
+    </beat>
+    <beat id="B02" locator="frontend/data/Map046.json:event[1]/pages[0]/list[10]" branch="shared-name-error">
+      <character>contador de histórias</character>
+      <bust picture_id="1" position="5" asset_ref="VN046-POR-01" expression="pensativo-com-meio-sorriso" />
+      <entry_exit_movement>Sem nova entrada; graphic swap/crossfade discreto e, opcionalmente, microinclinação horizontal máxima de 8-12px para marcar o esforço de memória.</entry_exit_movement>
+      <timing>8-12f para troca de foco/expressão; pausa respiratória proposta de 10-15f antes de abrir a escolha.</timing>
+      <focus>Olhar e contraste no rosto do contador; depois reduzir levemente sua intensidade para entregar foco à escolha.</focus>
+      <layer>L1 durante a fala; choice UI em L5.</layer>
+      <cleanup>Manter ID 1 até a seleção; após input, exit 20f com AutoErase antes de entrar no ramo escolhido.</cleanup>
+    </beat>
+    <choice_gateway id="qualSeuNome" after="B02">
+      <presentation>Preservar a UI e os assets existentes; manter o fundo e o contador como contexto, sem Cut-In, fumaça ou movimento concorrente.</presentation>
+      <timing>Sem autoplay; input do jogador é o beat. Playtest deve verificar se o bust não compete ou colide com os botões.</timing>
+      <cleanup>Choice UI encerra pelo fluxo do plugin; confirmar que ID 1 foi apagado antes do primeiro enter de branch.</cleanup>
+    </choice_gateway>
+    <beat id="B03" locator="frontend/data/Map046.json:event[1]/pages[0]/list[18]" branch="Confirmar:qualSeuNome1">
+      <character>contador de histórias</character>
+      <bust picture_id="1" position="9" asset_ref="EXIST-BUST-01" expression="triunfante-orgulhoso" />
+      <entry_exit_movement>Enter lateral 20f para posição 9; um pequeno settle de 6-8f reforça o punch sem loop ornamental.</entry_exit_movement>
+      <timing>20f + 6-8f; leitura sob input.</timing>
+      <focus>Contador sozinho em foco pleno; reservar posição 1 para a criança em B04.</focus>
+      <layer>L1.</layer>
+      <cleanup>keep ID 1 para B04-B05.</cleanup>
+    </beat>
+    <beat id="B04" locator="frontend/data/Map046.json:event[1]/pages[0]/list[22]" branch="Confirmar:qualSeuNome1">
+      <character>criança orc, com contador ainda presente</character>
+      <bust picture_id="2" position="1" asset_ref="VN046-POR-03" expression="surpresa-aberta" />
+      <entry_exit_movement>Enter da criança em 20f para posição 1; contador permanece em posição 9, sem reentrada.</entry_exit_movement>
+      <timing>20f de entrada + 4-6f antes da reação curta.</timing>
+      <focus>Criança em pleno contraste; contador 15-20% menos intenso, ainda legível como causa da reação.</focus>
+      <layer>ID 2 em L2; ID 1 em L1; UI em L5.</layer>
+      <cleanup>keep IDs 1-2 para B05.</cleanup>
+    </beat>
+    <beat id="B05" locator="frontend/data/Map046.json:event[1]/pages[0]/list[25]" branch="Confirmar:qualSeuNome1">
+      <character>contador de histórias, com criança ouvindo</character>
+      <bust picture_id="1" position="9" asset_ref="EXIST-BUST-01" expression="contador-vaidoso" />
+      <entry_exit_movement>Sem reposicionar; inverter o foco em 8-12f. Ao fim, saída simétrica: contador para a direita e criança para a esquerda, 20f cada.</entry_exit_movement>
+      <timing>8-12f de focus shift; após input, 20f de saída conjunta.</timing>
+      <focus>Contador pleno; criança retorna ao asset EXIST-BUST-02 ou tom de curiosidade discreta, 15-20% menos intenso.</focus>
+      <layer>ID 1 L1; ID 2 L2.</layer>
+      <cleanup>AutoErase obrigatório para IDs 1 e 2 antes da reconvergência.</cleanup>
+    </beat>
+    <beat id="B06" locator="frontend/data/Map046.json:event[1]/pages[0]/list[31]" branch="Corrigir:qualSeuNome2">
+      <character>criança orc</character>
+      <bust picture_id="2" position="5" asset_ref="EXIST-BUST-02" expression="ironia-confiante" />
+      <entry_exit_movement>Enter lateral 20f para o centro; um único recoil/nudge curto de 8-12f pode pontuar “todas as letras e a pessoa”, sem repetição.</entry_exit_movement>
+      <timing>20f + 4-6f; nudge de 8-12f sincronizado ao punch apenas se o texto permitir; saída 20f antes do Name Input.</timing>
+      <focus>Criança solo; background sem animação concorrente.</focus>
+      <layer>L2; Name Input depois em L5.</layer>
+      <cleanup>Exit lateral 20f e AutoErase de ID 2 antes de abrir Name Input; nenhum bust sob a UI de nome.</cleanup>
+    </beat>
+    <name_input_gateway after="B06" branch="Corrigir:qualSeuNome2">
+      <presentation>Palco visual limpo, background estável e sem Cut-In/VFX; o nome é o único foco.</presentation>
+      <timing>Inteiramente controlado pelo jogador.</timing>
+      <cleanup>Confirmar ausência dos IDs 1-4 antes do Name Input; após confirmação, entrar em B07.</cleanup>
+    </name_input_gateway>
+    <beat id="B07" locator="frontend/data/Map046.json:event[1]/pages[0]/list[37]" branch="Corrigir:qualSeuNome2">
+      <character>contador de histórias</character>
+      <bust picture_id="1" position="5" asset_ref="EXIST-BUST-01" expression="acolhedor" />
+      <entry_exit_movement>Enter central 20f após fechar Name Input; nenhuma animação adicional.</entry_exit_movement>
+      <timing>20f + 6-10f; após input, exit 20f para criar o mesmo respiro de reconvergência do ramo Confirmar.</timing>
+      <focus>Contador em calor pleno; nome digitado permanece foco verbal, não visualmente ornamentado.</focus>
+      <layer>L1.</layer>
+      <cleanup>AutoErase ID 1 antes da entrada compartilhada de B08; preserva reconvergência determinística entre branches.</cleanup>
+    </beat>
+    <beat id="B08" locator="frontend/data/Map046.json:event[1]/pages[0]/list[43]" branch="shared-reconvergence">
+      <character>contador de histórias dirigindo-se à roda</character>
+      <bust picture_id="1" position="5" asset_ref="VN046-POR-02" expression="afetuoso-solene" />
+      <entry_exit_movement>Enter central 20f; depois manter estável, sem bobbing ou loop.</entry_exit_movement>
+      <timing>20f + 8-12f de silêncio visual antes da primeira frase histórica.</timing>
+      <focus>Contador pleno; background ganha levemente presença de noite/cidade, sem trocar imagem.</focus>
+      <layer>L1 sobre L0.</layer>
+      <cleanup>keep ID 1 até B11.</cleanup>
+    </beat>
+    <beat id="B09" locator="frontend/data/Map046.json:event[1]/pages[0]/list[45]" branch="shared-Gildrat">
+      <character>contador de histórias</character>
+      <bust picture_id="1" position="5" asset_ref="VN046-POR-02" expression="solene-orientador" />
+      <entry_exit_movement>Sem enter/exit; somente uma transição de foco de 10-15f que reduz a luminosidade periférica do background, sem zoom de bust.</entry_exit_movement>
+      <timing>10-15f de mudança tonal; leitura sob input.</timing>
+      <focus>Rosto do contador e palavra Gildrat; não ilustrar fatos adicionais neste beat.</focus>
+      <layer>L1; L0 estável.</layer>
+      <cleanup>keep ID 1; nenhuma picture temporária.</cleanup>
+    </beat>
+    <beat id="B10" locator="frontend/data/Map046.json:event[1]/pages[0]/list[47]" branch="shared-Thorin">
+      <character>contador de histórias apresenta Thorin; Thorin aparece apenas no Cut-In aprovado</character>
+      <bust picture_id="1" position="5" asset_ref="VN046-POR-02" expression="expectativa-solene" />
+      <entry_exit_movement>Após o avanço de B09, reduzir o contador e revelar o Cut-In ID 3 em 24-30f; segurar durante a mensagem; remover em 18-24f.</entry_exit_movement>
+      <timing>24-30f de reveal + leitura sob input + 18-24f de saída; evitar flash, shake ou múltiplas entradas.</timing>
+      <focus>Cut-In de Thorin é o único pico visual; contador e background ficam subordinados.</focus>
+      <layer>ID 3 em L3 sobre IDs 1-2 e abaixo da UI.</layer>
+      <cleanup>Erase/AutoErase de ID 3 confirmado antes de B11; ID 1 permanece para retomar o ritual.</cleanup>
+    </beat>
+    <beat id="B11" locator="frontend/data/Map046.json:event[1]/pages[0]/list[49]" branch="shared-potion-transition">
+      <character>contador de histórias dirigindo-se à roda</character>
+      <bust picture_id="1" position="5" asset_ref="VN046-POR-02" expression="encantatório-sereno" />
+      <entry_exit_movement>Retomar foco do contador em 8-12f após o Cut-In; depois do input, exit 20f. Se aprovado, fumaça ID 4 cresce suavemente por 45-60f para mascarar a passagem.</entry_exit_movement>
+      <timing>8-12f de retorno + leitura sob input; saída 20f; VFX condicional 45-60f antes/através do início da transição.</timing>
+      <focus>Primeiro rosto/voz do contador; após confirmação, foco migra para o limiar visual, nunca para ornamento contínuo.</focus>
+      <layer>ID 1 L1; ID 4 L4 somente após input; UI L5.</layer>
+      <cleanup>AutoErase ID 1; IDs 2-3 já ausentes; ID 4 deve ser apagado pela/antes de COMPLETE_VN e FinishVisualNovel. A próxima cena deve iniciar sem pictures residuais.</cleanup>
+    </beat>
+  </beat_staging>
+
+  <motion_and_animation_proposals payload_status="not-specified">
+    <animation id="AN-01" beats="B01-B02" target="picture ID 1" duration="8-12f" priority="core">
+      <motion>Manter o contador no palco e trocar expressão/foco sem nova entrada.</motion>
+      <narrative_function>Transformar continuidade física em esforço de memória; remove movimento redundante.</narrative_function>
+      <constraint>Sem loop; deslocamento opcional máximo 8-12px; Playtest obrigatório.</constraint>
+    </animation>
+    <animation id="AN-02" beats="B04-B05" target="picture IDs 1-2" duration="8-12f" priority="core">
+      <motion>Focus shift por tone/opacity entre criança e contador, sem trocar posições.</motion>
+      <narrative_function>Clarificar turn-taking em composição de dois personagens.</narrative_function>
+      <constraint>Não apagar completamente o interlocutor; validar contraste e leitura.</constraint>
+    </animation>
+    <animation id="AN-03" beats="B06" target="picture ID 2" duration="8-12f" priority="optional">
+      <motion>Um único recoil/nudge discreto no punch da correção.</motion>
+      <narrative_function>Pontuar a réplica cômica sem adicionar fala ou VFX.</narrative_function>
+      <constraint>Cancelar se parecer agressivo, infantilizado ou dessincronizado com text speed.</constraint>
+    </animation>
+    <animation id="AN-04" beats="B10" target="picture ID 3" duration="24-30f reveal; 18-24f exit" priority="core-if-cut-in-approved">
+      <motion>Reveal único do Cut-In por wipe/fade direcional simples.</motion>
+      <narrative_function>Converter exposição sobre Gildrat em primeiro gancho visual de protagonista.</narrative_function>
+      <constraint>Sem shake, flash ou segundo Cut-In; timing depende do avanço do jogador.</constraint>
+    </animation>
+    <animation id="AN-05" beats="B11" target="picture ID 4" duration="45-60f" priority="conditional">
+      <motion>Fumaça/névoa cresce suavemente e cobre a saída dos busts.</motion>
+      <narrative_function>Materializar o limiar da poção e esconder cleanup antes de COMPLETE_VN.</narrative_function>
+      <constraint>Somente após gate da poção/fumaça; sem payload até confirmar mecanismo e asset.</constraint>
+    </animation>
+  </motion_and_animation_proposals>
+
+  <visual_cut_in verdict="positive-conditional" beat="B10" trigger="apresentação verbal de Thorin">
+    <dramatic_job>Marcar a passagem do prólogo expositivo para a história centrada em personagem, oferecendo uma imagem memorável exatamente quando Thorin é nomeado.</dramatic_job>
+    <why_here>B08 ancora Daratrine, B09 abre Gildrat e B10 finalmente oferece um protagonista; usar o Cut-In antes diluiria a progressão, e usá-lo em B11 competiria com a transição da poção.</why_here>
+    <composition>
+      <canvas>1280x720, sem texto embutido; conteúdo essencial concentrado nos 480px superiores e centro lateral, preservando uma faixa inferior de baixa informação para a message window.</canvas>
+      <subject>Thorin em meia figura ou três quartos, atitude firme/cabeça-dura e direção do olhar para dentro do quadro; aparência deve seguir uma referência canônica aprovada, não este briefing sozinho.</subject>
+      <background>Indício abstrato de Gildrat em profundidade, sem monumentos, bandeiras, eventos ou tecnologia não confirmados. Pedra, montanha ou calor de forja são opções de art direction, não fatos aprovados.</background>
+      <framing>Silhueta de Thorin domina aproximadamente 55-65% da área útil; forte separação de valor contra o fundo; bordas com vignette discreta para não colidir com UI.</framing>
+      <palette>Contraste quente/frio moderado, compatível com a noite da moldura, sujeito a art direction e referência de personagem.</palette>
+      <avoid>texto; brasões não aprovados; ação de batalha; spoilers; multidão; excesso de partículas; pose cômica que transforme “cabeça-dura” em caricatura.</avoid>
+    </composition>
+    <runtime_candidate>Picture ID 3, layer L3, reveal 24-30f, hold controlado pelo leitor, exit 18-24f e erase antes de B11; trata-se de reserva preliminar, não payload implementável.</runtime_candidate>
+    <gate>Exige aprovação do uso do Cut-In, seleção de referência canônica de Thorin, asset no nome exato e Playtest de legibilidade/timing.</gate>
+  </visual_cut_in>
+
+  <background_briefing verdict="required-with-location-gate">
+    <source_grounding>
+      <fact locator="frontend/data/MapInfos.json/inventory.xml">O mapa é NV_Noite_da_Historia.</fact>
+      <fact locator="frontend/data/Map046.json:B01,B08-B11">O contador fala a uma pequena coletividade, ama Daratrine e conduz a audiência para uma história por meio de uma poção.</fact>
+      <fact locator="inventory.xml">O runtime atual não possui background nem parallax; tileset ID 1 é World Map e não prova o local diegético da conversa.</fact>
+    </source_grounding>
+    <recommended_option id="BG-A" confidence="medium">
+      <name>Noite de histórias em Daratrine, local público neutro</name>
+      <description>Exterior noturno ou espaço semiaberto não identificável, com sugestões genéricas de Daratrine em profundidade, pequeno núcleo de luz quente e área central limpa para o contador. A presença coletiva deve ser sugerida apenas por bancos, mantas ou silhuetas baixas e não por personagens novos em destaque.</description>
+      <condition>Usar somente se o usuário confirmar que a cena ocorre ao ar livre/em espaço público. Fogueira, braseiro ou lanternas são alternativas criativas; nenhuma delas é confirmada pelas fontes.</condition>
+    </recommended_option>
+    <fallback_option id="BG-B" confidence="high-for-canon-safety">
+      <name>Palco noturno neutro da moldura narrativa</name>
+      <description>Fundo escuro azul-violeta com arquitetura de Daratrine apenas em silhueta desfocada, luz quente difusa sem fonte visível e chão/parede sem localização específica. Mantém noite e cidade sem inventar praça, taverna, fogueira ou interior.</description>
+      <condition>Preferir se a localização exata continuar indefinida no gate humano.</condition>
+    </fallback_option>
+    <composition>
+      <canvas>1280x720, PNG opaco.</canvas>
+      <safe_areas>Manter os 220-250px inferiores com pouco detalhe/contraste para a message window; evitar rostos e pontos luminosos atrás das posições 1, 5 e 9 dos busts 408x560.</safe_areas>
+      <depth>Primeiro plano discreto; plano médio aberto para busts; fundo com formas grandes e poucos detalhes.</depth>
+      <lighting>Noite legível, uma fonte quente principal condicionada e preenchimento frio suave; rostos dos busts não devem parecer iluminados por direção incompatível.</lighting>
+      <atmosphere>Íntima, acolhedora e levemente ritualística; a solenidade cresce pelo staging, não por trocar o background.</atmosphere>
+      <mandatory>Leitura noturna; conexão visual genérica com Daratrine; espaço negativo para busts; compatibilidade com UI clara/pergaminho.</mandatory>
+      <avoid>Gildrat como local presente; arquitetura canônica inventada; batalha; céu diurno; excesso de espectadores; texto/símbolos; detalhes críticos sob a UI; potion/smoke permanentes no fundo.</avoid>
+    </composition>
+    <implementation_boundary>O asset não recebe picture ID neste POV. A superfície abaixo de IDs 1-2 deve ser escolhida por revisão técnica porque uma picture comum pode cobrir os busts dependendo do draw order.</implementation_boundary>
+  </background_briefing>
+
+  <preliminary_asset_manifest status="proposal-not-request-final">
+    <asset id="EXIST-BUST-01" status="exists-reuse" type="bust">
+      <candidate_name>Portraits/Principal/Reed final.png</candidate_name>
+      <dimensions>408x560 RGBA</dimensions>
+      <purpose>B01, B03, B05, B06-listener-state and B07 where broad smile/expansive posture fits.</purpose>
+      <layer_dependency>Picture ID 1, L1, anchor 0.5/1.0, 100%.</layer_dependency>
+      <gate>Não renomear; Reed/Rheed continua aberto para assets futuros.</gate>
+    </asset>
+    <asset id="EXIST-BUST-02" status="exists-reuse" type="bust">
+      <candidate_name>Portraits/Principal/CriancaOrc_.png</candidate_name>
+      <dimensions>408x560 RGBA</dimensions>
+      <purpose>B05 como ouvinte e B06 como ironia/confiança.</purpose>
+      <layer_dependency>Picture ID 2, L2, anchor 0.5/1.0, 100%.</layer_dependency>
+      <gate>Nome atual preservado.</gate>
+    </asset>
+    <asset id="VN046-POR-01" status="new-core-after-approval" type="bust-expression">
+      <candidate_name>Portraits/Principal/ContadorHistoria_Pensativo.png</candidate_name>
+      <dimensions>408x560 RGBA, mesmo recorte e baseline do bust existente</dimensions>
+      <purpose>B02; memória em esforço com sobrancelha elevada, boca fechada em meio-sorriso e olhar mais investigativo.</purpose>
+      <layer_dependency>Picture ID 1; graphic swap sem salto.</layer_dependency>
+      <dependencies>EXIST-BUST-01 como base visual; aprovação artística; gate Reed/Rheed antes de decidir se o prefixo será substituído por nome próprio.</dependencies>
+    </asset>
+    <asset id="VN046-POR-02" status="new-core-after-approval" type="bust-expression">
+      <candidate_name>Portraits/Principal/ContadorHistoria_Solene.png</candidate_name>
+      <dimensions>408x560 RGBA, mesmo recorte e baseline do bust existente</dimensions>
+      <purpose>B08-B11; sorriso suavizado, testa relaxada e olhar afetuoso/solene, sem mudar figurino ou pose corporal de modo brusco.</purpose>
+      <layer_dependency>Picture ID 1; deve suportar B10 sob Cut-In e B11 no retorno.</layer_dependency>
+      <dependencies>EXIST-BUST-01; aprovação artística; gate Reed/Rheed.</dependencies>
+    </asset>
+    <asset id="VN046-POR-03" status="new-core-after-approval" type="bust-expression">
+      <candidate_name>Portraits/Principal/CriancaOrc_Surpresa.png</candidate_name>
+      <dimensions>408x560 RGBA, mesmo recorte e baseline do bust existente</dimensions>
+      <purpose>B04; olhos mais abertos, boca entreaberta e leve elevação de ombros, surpresa genuína sem medo.</purpose>
+      <layer_dependency>Picture ID 2, posição 1.</layer_dependency>
+      <dependencies>EXIST-BUST-02 como base visual; aprovação artística.</dependencies>
+    </asset>
+    <asset id="VN046-BG-01" status="new-core-after-location-gate" type="VN-background">
+      <candidate_name>VN046/BG_NoiteDaHistoria.png</candidate_name>
+      <dimensions>1280x720 PNG opaco</dimensions>
+      <purpose>Estabelecer noite, Daratrine e intimidade coletiva em todos os beats sem troca de fundo.</purpose>
+      <layer_dependency>L0 abaixo de picture IDs 1-4; mecanismo runtime ainda não escolhido.</layer_dependency>
+      <dependencies>Escolha humana BG-A ou BG-B; confirmação de diretório; revisão técnica de draw order; Playtest de contraste/UI.</dependencies>
+    </asset>
+    <asset id="VN046-CUT-01" status="new-core-if-cut-in-approved" type="Visual-Cut-In">
+      <candidate_name>VN046/CUTIN_Thorin_Introducao.png</candidate_name>
+      <dimensions>1280x720 PNG, sem texto, safe area inferior para message window</dimensions>
+      <purpose>B10; primeiro gancho visual de Thorin e pico dramático único da VN.</purpose>
+      <layer_dependency>Picture ID 3 provisório, L3, abaixo da UI; erase antes de B11.</layer_dependency>
+      <dependencies>Referência canônica de Thorin escolhida; briefing aprovado; confirmação de diretório/nome; revisão técnica e Playtest.</dependencies>
+    </asset>
+    <asset id="VN046-VFX-01" status="new-conditional-not-requested-until-gate" type="transition-overlay">
+      <candidate_name>VN046/VFX_PocaoFumaca.png</candidate_name>
+      <dimensions>1280x720 RGBA, bordas suaves, centro com variação de transparência</dimensions>
+      <purpose>B11; mascarar cleanup e materializar passagem pela poção.</purpose>
+      <layer_dependency>Picture ID 4 provisório, L4, acima de busts e Cut-In, abaixo da UI; erase garantido na transição.</layer_dependency>
+      <dependencies>Gate explícito de poção/fumaça; mecanismo de animação definido por agente técnico; Playtest de performance/legibilidade.</dependencies>
+    </asset>
+    <not_requested>
+      <item>Nenhuma nova arte de choice; os assets InnButton_00/01 existentes são preservados.</item>
+      <item>Nenhum vídeo, animação frame-a-frame, novo sprite de mapa, áudio, ícone ou text overlay.</item>
+      <item>Nenhuma expressão adicional além das três variantes que cobrem lacunas observáveis.</item>
+    </not_requested>
+    <naming_rule>Os nomes são candidatos preliminares e não autorizam criação. Depois dos gates, o manifesto final deve congelar diretório, extensão e grafia antes de o usuário adicionar assets.</naming_rule>
+  </preliminary_asset_manifest>
+
+  <cleanup_contract>
+    <rule picture_id="1">Contador: manter somente quando o beat seguinte é contínuo; AutoErase em fim de branch e antes de COMPLETE_VN.</rule>
+    <rule picture_id="2">Criança: AutoErase no fim de B05 ou antes do Name Input em B06; nunca persistir na reconvergência.</rule>
+    <rule picture_id="3">Cut-In: uso exclusivo em B10 e erase confirmado antes de B11.</rule>
+    <rule picture_id="4">Fumaça: uso condicional após B11 e erase pela/antes da transição; nunca chegar ao mapa/cena seguinte.</rule>
+    <rule picture_id="all">Não reutilizar ID antes do erase; preservar QuestTransition COMPLETE_VN, FinishVisualNovel e code 115 após cleanup.</rule>
+    <validation>Playtest deve percorrer Confirmar e Corrigir, incluindo Name Input, e observar tela imediatamente antes/depois da transição.</validation>
+  </cleanup_contract>
+
+  <human_gates>
+    <gate id="G01" status="open" material="true">Resolver Reed versus Rheed antes de fixar nomes finais de variantes do contador.</gate>
+    <gate id="G02" status="open" material="true">Definir o efeito desejado de Confirmar sobre o nome de Actor 1; staging não resolve essa consequência.</gate>
+    <gate id="G03" status="open" material="true">Aprovar a proposta de staging, as três variantes expressivas e o manifesto preliminar antes de solicitar assets.</gate>
+    <gate id="G04" status="open" material="true">Escolher BG-A ou BG-B e confirmar local/fonte de luz; não assumir praça, fogueira, taverna ou interior.</gate>
+    <gate id="G05" status="open" material="true">Aprovar o Visual Cut-In e selecionar referência canônica de Thorin.</gate>
+    <gate id="G06" status="open" material="true">Aprovar ou rejeitar poção/fumaça; VN046-VFX-01 não deve ser solicitado antes disso.</gate>
+    <gate id="G07" status="open" material="true">Congelar nomes/diretórios e confirmar a existência de todos os assets aprovados antes de qualquer implementação.</gate>
+    <gate id="G08" status="open" material="true">Revisão técnica deve confirmar superfície de background, draw order, IDs 3-4, comandos e cleanup sem inventar payload.</gate>
+    <gate id="G09" status="open" material="true">Playtest humano dos dois ramos deve validar pacing, legibilidade, input, foco, layering, transições, performance e ausência de pictures residuais.</gate>
+  </human_gates>
+
+  <risks>
+    <risk id="R01" severity="high">Usar background como picture comum com ID superior a 1-2 pode cobrir os busts; a superfície de L0 permanece decisão técnica.</risk>
+    <risk id="R02" severity="high">Fixar Reed ou Rheed no nome de novos assets antes do gate cria dívida de nomenclatura e referências quebráveis.</risk>
+    <risk id="R03" severity="high">O ramo Confirmar pode encenar um “acerto” sem que Actor 1 receba Dulgarin; apresentação não deve mascarar a inconsistência.</risk>
+    <risk id="R04" severity="medium">Cut-In, fumaça e focus shifts podem competir com text speed variável e input; durações são propostas, não valores validados.</risk>
+    <risk id="R05" severity="medium">BG-A pode inventar praça/fogueira; BG-B reduz esse risco até a localização ser confirmada.</risk>
+    <risk id="R06" severity="medium">Picture IDs 3-4 podem conflitar com comportamento não inventariado do plugin/UI; reservar só após revisão técnica.</risk>
+    <risk id="R07" severity="medium">Aumentar duração dos turns de branch pode criar assimetria; a pausa de reconvergência igual para ambos precisa de Playtest.</risk>
+    <risk id="R08" severity="low">Excesso de emoção facial pode romper a unidade entre variantes; manter recorte, anatomia, paleta e intensidade coerentes.</risk>
+  </risks>
+
+  <validators>
+    <validator id="V01" type="deterministic" status="passed">XML parseável com raiz agentic_agent_pov schema_version 1.</validator>
+    <validator id="V02" type="deterministic" status="passed">Onze beats B01-B11 possuem locator, branch, personagem, bust/ID, expressão, movimento, timing, foco, layer e cleanup.</validator>
+    <validator id="V03" type="deterministic" status="passed">Confirmar/qualSeuNome1 cobre B03-B05; Corrigir/qualSeuNome2 cobre B06-B07 e Name Input; reconvergência cobre B08-B11.</validator>
+    <validator id="V04" type="deterministic" status="passed">Picture IDs 1-2 são preservados; IDs 3-4 são marcados provisórios; regras de cleanup existem para 1-4.</validator>
+    <validator id="V05" type="deterministic" status="passed">Há veredito positivo-condicional de Cut-In com beat, função, composição, timing, layer, cleanup e briefing.</validator>
+    <validator id="V06" type="deterministic" status="passed">Background possui grounding, duas opções condicionais, composição 1280x720, safe areas, elementos obrigatórios, itens a evitar e boundary técnico.</validator>
+    <validator id="V07" type="deterministic" status="passed">Manifesto diferencia assets existentes, novos core e VFX condicional; nenhum asset foi criado ou editado.</validator>
+    <validator id="V08" type="review" status="pending-cross-review">Cross-review deve testar coerência com texto/narrativa, UX da escolha, arte técnica e fronteiras de runtime.</validator>
+    <validator id="V09" type="human-gate" status="runtime-pending">Pacing, composição, draw order, timing, input, foco, performance, cleanup e transição exigem Playtest humano dos dois ramos.</validator>
+  </validators>
+
+  <cross_review_handoff>
+    <destination>cross-review</destination>
+    <review_focus>
+      <item>Confirmar que B01-B02 sem reentrada melhora continuidade sem quebrar a abertura do Visual Choice.</item>
+      <item>Revisar os focus shifts e a simetria das saídas em B03-B07 contra UX, text speed e Name Input.</item>
+      <item>Validar que o Cut-In em B10 é o único pico visual e não adiciona lore visual indevido a Thorin/Gildrat.</item>
+      <item>Escolher BG-A ou BG-B somente com decisão humana de local e luz.</item>
+      <item>Preservar gates Reed/Rheed, efeito de Confirmar, names/assets exatos e Playtest.</item>
+      <item>Encaminhar draw order, superfície de background, IDs 3-4 e payloads a agente técnico; este POV não os implementa.</item>
+    </review_focus>
+    <expected_output>Críticas rastreáveis por beat/layer/asset, confirmação dos gates e ajustes antes de fechar o manifesto de solicitação.</expected_output>
+  </cross_review_handoff>
+
+  <terminal_status>completed</terminal_status>
+  <completion_record>
+    <result>completed-proposal-only</result>
+    <files_read>
+      <file>planos/004-ambientacao-VN/demanda-improved.md</file>
+      <file>planos/004-ambientacao-VN/analise/context/inventory.xml</file>
+      <file>frontend/data/Map046.json:event 1/page 1</file>
+      <file>docs/domains/scene-presentation-designer/README.md</file>
+      <file>frontend/img/pictures/Portraits/Principal/Reed final.png</file>
+      <file>frontend/img/pictures/Portraits/Principal/CriancaOrc_.png</file>
+      <file>frontend/img/pictures/Choices/InnButton_00.png</file>
+      <file>frontend/img/pictures/Choices/InnButton_01.png</file>
+      <file>E:/Projetos/loki-framework/skills/lf-domain-context-preflight/SKILL.md</file>
+      <file>E:/Projetos/loki-framework/skills/lf-domain-context-preflight/references/preflight-contract.md</file>
+    </files_read>
+    <files_written>
+      <file>planos/004-ambientacao-VN/analise/agentes/scene-presentation-designer.xml</file>
+    </files_written>
+    <coverage>11/11 mensagens; Confirmar e Corrigir; Name Input; reconvergência; Cut-In; background; assets; IDs/layers/cleanup.</coverage>
+    <validations>XML parse; contagens; locators; branches; campos por beat; layers; cleanup; manifesto; gates; runtime-pending.</validations>
+    <limitations>Sem implementação, criação/edição de asset, definição de payload, decisão Reed/Rheed, decisão do efeito de Confirmar, aprovação artística ou validação perceptível.</limitations>
+    <next_destination>cross-review</next_destination>
+    <execution_evidence>orchestrator-owned</execution_evidence>
+  </completion_record>
+</agentic_agent_pov>

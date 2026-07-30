@@ -1,0 +1,11 @@
+- Vamos melhorar a VN do mapa 046.
+- Primeiro você vai analisar a cena, as falas e os personagens e me retornar algumas sugestões para incrementarmos:
+    - As falas podem ser mais ricas e interessantes?
+    - Expressões de busto que podemos adicionar para os personagens, de acordo com as falas.
+    - Animações que podem ser adicionadas.
+    - Algum VisualCuttin ficaria legal nesta VN? Em qual momento? Qual imagem seria?
+    - Como seria a descrição de um backgorund da VN, tendo em vista o cenário em que está acontecendo o diálogo entre os personagens.
+- Após a análise você vai me passar suas impressões e então você irá me solicitar os assets necessários.
+- Defina nome para os assets.
+- Eu irei então adiciona-los ao projeto com os nomes escolhidos.
+- Somente após isso você irá então implementar as mudanças.

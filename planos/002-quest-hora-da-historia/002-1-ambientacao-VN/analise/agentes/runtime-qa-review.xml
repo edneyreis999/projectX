@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agentic_agent_review schema_version="1">
+  <review>
+    <run_id>agentic-004-ambientacao-vn-v1</run_id>
+    <handoff_id>handoff-pov-runtime-qa-v1</handoff_id>
+    <agent_run_id>agent-run-pov-runtime-qa-v1</agent_run_id>
+    <review_id>runtime-qa-cross-review-v1</review_id>
+    <reviewer_agent>runtime-qa</reviewer_agent>
+    <reviewed_agent>narrative-designer; scene-presentation-designer; technical-artist; runtime-qa</reviewed_agent>
+    <status>completed</status>
+  </review>
+  <review_scope>Cross-review proposal-only da proposta combinada para contradições, claims não testáveis e gates ausentes. Sem execução do jogo, assets, dados ou runtime.</review_scope>
+
+  <agreements>
+    <agreement id="A01">Os POVs cobrem B01-B11, Confirmar, Corrigir, Name Input e reconvergência com locators compatíveis.</agreement>
+    <agreement id="A02">IDs 1/2 e AutoErase atuais devem ser preservados; background neutro e um único Cut-In B10 são propostas condicionais, não claims runtime.</agreement>
+    <agreement id="A03">Reed/Rheed, efeito de Confirmar, switches 43/44, manifesto final e Playtest permanecem abertos.</agreement>
+    <agreement id="A04">Fumaça, vídeo, fade, áudio novo e nova choice art ficam fora do pacote base.</agreement>
+    <agreement id="A05">A revisão técnica confirma parallax abaixo dos busts 1/2, ID 10 apenas provisório, nenhum ID 3/4 reservado e cleanup do Cut-In entre B10 e B11.</agreement>
+  </agreements>
+
+  <findings>
+    <finding id="RQF-01" severity="critical" category="state-versus-dialogue"><description>B03-B05 e staging de surpresa tratam Dulgarin como nome verdadeiro, mas qualSeuNome1 não possui mutação explícita de Actor 1.</description><locators><locator>inventory.xml:/execution_context_inventory/material_conflicts/conflict[@id='C03']</locator><locator>narrative-designer.xml:/agentic_agent_pov/dialogue_proposals/dialogue[@id='D03' or @id='D04' or @id='D05']</locator><locator>frontend/data/Map046.json:/events/1/pages/0/list[14..26]</locator></locators><recommendation>Bloquear texto/staging final até decisão binária preserve-name versus set-Dulgarin; validar estado e persistência nos dois casos.</recommendation><gate>RQ-G02 e Playtest RQ-P01/RQ-P03.</gate></finding>
+    <finding id="RQF-02" severity="high" category="unknown-switch-semantics"><description>Switches 43/44 aparecem oito vezes, mas os POVs de apresentação e arte não explicam seu efeito; qualquer reordenação visual pode mudar a associação fala/falante.</description><locators><locator>frontend/data/Map046.json:/events/1/pages/0/list[3,8,16,20,23,29,35,41]</locator><locator>narrative-designer-review.xml:/agentic_agent_review/findings/finding[@id='F01']</locator></locators><recommendation>Preservar shapes e ordem por default; exigir diagnóstico independente e trace por beat antes de mudança.</recommendation><gate>RQ-G03; RQ-S05; RQ-P04.</gate></finding>
+    <finding id="RQF-03" severity="high" category="picture-contract-contradiction"><description>Apresentação propõe IDs 3/4, arte técnica propõe 10 e TA-V05 exige cleanup do Cut-In antes de code 404 embora B10 ocorra depois de code 404. As três cross-reviews convergem na correção.</description><locators><locator>scene-presentation-designer.xml:/agentic_agent_pov/layer_and_picture_plan/layer[@id='L3' or @id='L4']</locator><locator>technical-artist.xml:/agentic_agent_pov/asset_contract/layer_and_picture_id_contract</locator><locator>technical-artist.xml:/agentic_agent_pov/validation_matrix/validator[@id='TA-V05']</locator><locator>technical-artist-review.xml:/agentic_agent_review/findings/finding[@id='TA-CR-F04']</locator><locator>frontend/data/Map046.json:/events/1/pages/0/list[39,47,49,51]</locator></locators><recommendation>Usar ID 10 apenas como candidato após ownership inventory; não reservar 3/4; validar erase depois de B10 e antes de B11, além da ausência antes do handoff final.</recommendation><gate>RQ-G05; RQ-S08; RQ-P06.</gate></finding>
+    <finding id="RQF-04" severity="high" category="untestable-payload"><description>Graphic swap/crossfade, focus por tone/opacity, parallax preload e Cut-In reveal têm intenção e timing, mas nenhum mecanismo/payload confirmado; não são implementação pronta nem estaticamente validáveis.</description><locators><locator>scene-presentation-designer.xml:/agentic_agent_pov/beat_staging</locator><locator>scene-presentation-designer.xml:/agentic_agent_pov/motion_and_animation_proposals</locator><locator>technical-artist.xml:/agentic_agent_pov/asset_contract/memory_preload_and_lifetime</locator></locators><recommendation>Na síntese, rotular como comportamento-alvo. A task de implementação deve escolher mecanismo documentado, gerar validator estrutural próprio e manter Playtest de timing/carga.</recommendation><gate>mecanismo técnico aprovado; RQ-P05/RQ-P07/RQ-P09.</gate></finding>
+    <finding id="RQF-05" severity="medium" category="source-conflict-resolved"><description>Inventory e apresentação inverteram as dimensões de InnButton_00/01; metadata local confirma 00=392x104 e 01=388x101, alinhada ao POV técnico.</description><locators><locator>inventory.xml:/execution_context_inventory/presentation_baseline/choice_assets</locator><locator>technical-artist.xml:/agentic_agent_pov/asset_contract/baseline/choice_system</locator><locator>frontend/img/pictures/Choices/InnButton_00.png</locator><locator>frontend/img/pictures/Choices/InnButton_01.png</locator></locators><recommendation>Corrigir a síntese, não os upstreams; preservar os roles configurados e validar input/hitbox no jogo.</recommendation><gate>RQ-S07 e RQ-P01/P02.</gate></finding>
+    <finding id="RQF-06" severity="high" category="missing-persistence-gate"><description>Os reviews existentes pedem Playtest de Name Input, mas não exigem explicitamente save/load do nome em ambos os ramos.</description><locators><locator>scene-presentation-designer-review.xml:/agentic_agent_review/validator_notes/validator_note[@id='V04']</locator><locator>technical-artist.xml:/agentic_agent_pov/validation_matrix/validator[@id='TA-G03']</locator></locators><recommendation>Adicionar saves isolados para Confirmar/Corrigir e verificar nome antes/depois de load e após COMPLETE_VN.</recommendation><gate>RQ-P03.</gate></finding>
+    <finding id="RQF-07" severity="high" category="missing-reachability-proof"><description>A presença dos asserts e do handoff não prova que o caller real alcança CENA_PRINCIPAL uma vez nem que a rota inválida falha corretamente.</description><locators><locator>frontend/data/Map046.json:/events/1/pages/0/list[0,1,51,52,53]</locator><locator>inventory.xml:/execution_context_inventory/static_risks</locator></locators><recommendation>Inventariar caller chain estaticamente e Playtestar combinações válidas/inválidas de sessão e quest state.</recommendation><gate>RQ-S10 e RQ-P08.</gate></finding>
+    <finding id="RQF-08" severity="medium" category="performance-claim-boundary"><description>Estimativas 5.564/9.080 MiB não medem cache residency, pico real, decode hitch ou frame pacing.</description><locators><locator>technical-artist.xml:/agentic_agent_pov/asset_contract/memory_preload_and_lifetime/decoded_rgba_estimates</locator></locators><recommendation>Manter como budget teórico e exigir cold/warm profiling; observação qualitativa deve ser rotulada como tal.</recommendation><gate>RQ-S11 e RQ-P09.</gate></finding>
+    <finding id="RQF-09" severity="medium" category="background-runtime-claim"><description>Tiles vazios justificam considerar parallax, mas não provam origin, fill, z-order, lifetime ou ausência de leak após a transição.</description><locators><locator>technical-artist.xml:/agentic_agent_pov/asset_contract/requirements/asset_type[@id='vn-background']</locator><locator>scene-presentation-designer-review.xml:/agentic_agent_review/resolved_recommendation/background</locator></locators><recommendation>Separar config estática de composição/lifetime perceptíveis e exigir evidência em ambas as rotas.</recommendation><gate>RQ-S09 e RQ-P05.</gate></finding>
+  </findings>
+
+  <validator_notes>
+    <validator_note id="RV01" severity="blocking-before-implementation">RQ-S01 a RQ-S12 são planos; nenhum está marcado passed para a implementação futura.</validator_note>
+    <validator_note id="RV02" severity="blocking-before-runtime-claim">RQ-P01 a RQ-P09 precisam de evidência humana separada por rota; inspeção estática não substitui Playtest.</validator_note>
+    <validator_note id="RV03" severity="blocking-before-asset-request">Manifesto deve congelar grafia, paths, dimensões e assets opcionais; Cut-In e VFX não podem ser assumidos.</validator_note>
+    <validator_note id="RV04" severity="runtime-pending">Choice/input, switches, name persistence, layering, cleanup, reachability e performance permanecem não validados.</validator_note>
+  </validator_notes>
+
+  <gates>
+    <gate id="RV-G01" status="open">Decisão humana Reed/Rheed e manifesto final.</gate>
+    <gate id="RV-G02" status="open">Decisão humana sobre nome no ramo Confirmar.</gate>
+    <gate id="RV-G03" status="open">Diagnóstico técnico dos switches 43/44.</gate>
+    <gate id="RV-G04" status="open">Contrato técnico de background/pictures/cleanup e mecanismo de animação.</gate>
+    <gate id="RV-G05" status="open">Aprovação e intake dos assets exatos.</gate>
+    <gate id="RV-G06" status="pending-human-validation">Playtest RQ-P01 a RQ-P09, com save/load, reachability e profiling.</gate>
+  </gates>
+
+  <synthesis_recommendations>
+    <recommendation priority="1">Preservar switches 43/44, guards, branches, Name Input, transição e término como invariantes até decisões explícitas.</recommendation>
+    <recommendation priority="2">Resolver Confirmar e Reed/Rheed antes de aprovar falas B03-B05 ou solicitar assets.</recommendation>
+    <recommendation priority="3">Adotar background parallax e Cut-In ID 10 apenas como candidatos; congelar mecanismo/ownership na task de implementação.</recommendation>
+    <recommendation priority="4">Excluir VFX do baseline e separar validadores estáticos de Playtest humano.</recommendation>
+    <recommendation priority="5">Não declarar conclusão sem evidência de ambas as rotas, persistência do nome, switches, reachability, cleanup e desempenho.</recommendation>
+  </synthesis_recommendations>
+
+  <freshness_signature><input_path>demanda-improved.md; inventory.xml; narrative-designer.xml; scene-presentation-designer.xml; technical-artist.xml; narrative-designer-review.xml; scene-presentation-designer-review.xml; technical-artist-review.xml; runtime-qa.xml</input_path><upstream_output>Os três POVs, as três cross-reviews concluídas, a demanda, o inventário e a proposta runtime-qa foram lidos; nenhum contém evidência de execução do jogo.</upstream_output></freshness_signature>
+
+  <completion_record terminal="true">
+    <result>completed-cross-review</result>
+    <affected_files><file>planos/004-ambientacao-VN/analise/agentes/runtime-qa-review.xml</file></affected_files>
+    <validators>XML parse; findings com locator/severity/recommendation/gate; gates e runtime boundary.</validators>
+    <human_validation>pending</human_validation>
+    <next_destination>synthesis</next_destination>
+    <execution_evidence>orchestrator-owned; runtime unavailable</execution_evidence>
+  </completion_record>
+</agentic_agent_review>

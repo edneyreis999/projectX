@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agentic_agent_pov schema_version="1">
+  <identity>
+    <agent>narrative-designer</agent>
+    <mode>proposal-only</mode>
+    <run_id>agentic-004-ambientacao-vn-v1</run_id>
+    <handoff_id>handoff-pov-narrative-v1</handoff_id>
+    <agent_run_id>agent-run-pov-narrative-v1</agent_run_id>
+    <owner>narrative-designer</owner>
+    <status>completed</status>
+  </identity>
+
+  <scope>
+    <objective>Produzir o POV narrativo da VN principal do mapa 046, enriquecendo falas, ritmo, humor e caracterização sem implementar nem decidir conflitos de cânone ou comportamento.</objective>
+    <target>planos/004-ambientacao-VN/analise/agentes/narrative-designer.xml</target>
+    <write_mode>task_scoped_writer</write_mode>
+    <allowed_writes>
+      <path>planos/004-ambientacao-VN/analise/agentes/narrative-designer.xml</path>
+    </allowed_writes>
+    <scoped_write_domains>
+      <domain>narrative-content</domain>
+      <domain>character-dialogue</domain>
+      <domain>lore-docs</domain>
+    </scoped_write_domains>
+    <runtime_changed>false</runtime_changed>
+    <assets_created>false</assets_created>
+  </scope>
+
+  <domain_context_preflight schema_version="1">
+    <agent>narrative-designer</agent>
+    <task_id>handoff-pov-narrative-v1</task_id>
+    <required>true</required>
+    <domain_docs_root>docs/domains/narrative-designer</domain_docs_root>
+    <task_topics>
+      <topic>oral-storyteller-voice</topic>
+      <topic>opening-frame-story</topic>
+      <topic>Daratrine-Gildrat-continuity</topic>
+      <topic>Thorin-introduction</topic>
+      <topic>branching-name-choice</topic>
+    </task_topics>
+    <task_domain_ids>
+      <domain_id>map-046</domain_id>
+      <domain_id>event-1-page-1</domain_id>
+      <domain_id>quest-noite-da-historia</domain_id>
+      <domain_id>choice-qualSeuNome</domain_id>
+      <domain_id>character-Thorin</domain_id>
+      <domain_id>place-Daratrine</domain_id>
+      <domain_id>place-Gildrat</domain_id>
+    </task_domain_ids>
+    <relevant_surfaces>
+      <surface>frontend/data/Map046.json:event 1/page 1</surface>
+      <surface>11 message blocks and choice branches qualSeuNome1/qualSeuNome2</surface>
+      <surface>narrative dialogue, continuity and frame-story transition</surface>
+    </relevant_surfaces>
+    <selection_basis>
+      <basis>O objetivo exige voz oral, coerência de lore, arco de abertura e tratamento dos personagens.</basis>
+      <basis>O README do domínio é a rota mínima e declara cobertura materializada para personagens, premissa/cânone, lugares/lore e arcos/diálogos.</basis>
+      <basis>As fontes atuais fornecidas no envelope cobrem o runtime e os conflitos sem exigir leitura adicional no domínio.</basis>
+    </selection_basis>
+    <read_attempt>
+      <readme_path>docs/domains/narrative-designer/README.md</readme_path>
+      <status>read</status>
+      <reason>README lido antes de qualquer outro documento do domínio, conforme o preflight obrigatório.</reason>
+    </read_attempt>
+    <docs_considered>
+      <doc>
+        <path>docs/domains/narrative-designer/README.md</path>
+        <routed_by>README</routed_by>
+        <selected>true</selected>
+        <reason>Cobre exatamente voz de Rheed, Thorin, Daratrine, Gildrat, arco de abertura e risco de validar tom/pacing sem gate humano.</reason>
+      </doc>
+    </docs_considered>
+    <docs_read>
+      <doc>
+        <path>docs/domains/narrative-designer/README.md</path>
+        <relevance>Fonte durável mínima para cânone, voz e continuidade desta cena.</relevance>
+        <matched_topics>oral-storyteller-voice; opening-frame-story; Daratrine-Gildrat-continuity; Thorin-introduction</matched_topics>
+        <matched_domain_ids>character-Thorin; place-Daratrine; place-Gildrat</matched_domain_ids>
+        <matched_surfaces>narrative dialogue and frame-story transition</matched_surfaces>
+        <freshness_status>uncertain</freshness_status>
+        <freshness_evidence>O documento é durável e atual para intenção/cânone, mas registra Rheed enquanto o runtime atual e o asset registram Reed; a identidade ortográfica permanece em gate.</freshness_evidence>
+      </doc>
+    </docs_read>
+    <relevant_facts>
+      <fact source_kind="durable-doc" source_locator="docs/domains/narrative-designer/README.md">Rheed possui voz oral de contador de histórias; texto de mapa não valida tom ou pacing.</fact>
+      <fact source_kind="durable-doc" source_locator="docs/domains/narrative-designer/README.md">A abertura enquadra Gildrat antes de Daratrine; Daratrine se liga a refúgio e queda, e Thorin é protagonista.</fact>
+      <fact source_kind="current-source" source_locator="frontend/data/Map046.json:event 1/page 1">O runtime contém 11 mensagens, ramos Confirmar e Corrigir, switches 43/44, grafia Reed no asset e reconvergência antes da exposição de Daratrine.</fact>
+      <fact source_kind="current-source" source_locator="planos/004-ambientacao-VN/analise/context/inventory.xml">O ramo Corrigir executa Name Input para Actor 1; o ramo Confirmar não contém mudança explícita de nome.</fact>
+      <fact source_kind="current-source" source_locator="planos/004-ambientacao-VN/analise/context/inventory.xml">O evento atual não contém background, fumaça, vídeo, fade, animação ou cue de áudio.</fact>
+    </relevant_facts>
+    <conflicts_with_task_context>
+      <conflict>
+        <durable_locator>docs/domains/narrative-designer/README.md: grafia Rheed</durable_locator>
+        <current_locator>frontend/data/Map046.json:list[2] e demais EnterBust: asset Portraits/Principal/Reed final</current_locator>
+        <resolution>current-source-prevails</resolution>
+        <gap_recorded>O runtime prevalece apenas para descrever a grafia atualmente armazenada; não resolve a identidade canônica Reed/Rheed, que permanece gate humano.</gap_recorded>
+      </conflict>
+      <conflict>
+        <durable_locator>Obsidian/.../entrevista-relatorio.md: orientação histórica para não usar switches 43/44</durable_locator>
+        <current_locator>frontend/data/Map046.json:list[3,8,16,20,23,29,35,41]</current_locator>
+        <resolution>current-source-prevails</resolution>
+        <gap_recorded>Os oito usos atuais são preservados como fato; remoção, significado ou substituição não é decisão narrativa e exige gate técnico/humano.</gap_recorded>
+      </conflict>
+      <conflict>
+        <durable_locator>Obsidian/.../noite-da-historia.NSD.fluxo-cenas.md: Confirmar define Dulgarin</durable_locator>
+        <current_locator>frontend/data/Map046.json:list[14..26]: ramo Confirmar sem operação de nome</current_locator>
+        <resolution>current-source-prevails</resolution>
+        <gap_recorded>O runtime prevalece para o comportamento atual; a consequência desejada de Confirmar permanece gate humano.</gap_recorded>
+      </conflict>
+      <conflict>
+        <durable_locator>Obsidian/.../noite-da-historia.NSD.fluxo-cenas.md e entrevista-relatorio.md: poção, fumaça, vídeo e fade</durable_locator>
+        <current_locator>frontend/data/Map046.json:event 1/page 1 e inventory.xml: staging ausente</current_locator>
+        <resolution>current-source-prevails</resolution>
+        <gap_recorded>O staging histórico é hipótese de apresentação, não fato do runtime nem autorização de implementação.</gap_recorded>
+      </conflict>
+    </conflicts_with_task_context>
+    <freshness>
+      <status>uncertain</status>
+      <evidence>Map046.json possui baseline sha256 73e00628022b18375aec7af714181dd3171fdfc8f9ec911cfcc76188f47eb5d2 no inventory.xml; o README é atual para intenção, porém existem conflitos explícitos entre cânone, runtime e material histórico não revisado.</evidence>
+    </freshness>
+    <missing_context>
+      <item material="false" substitute_locator="frontend/data/Map046.json e docs/domains/narrative-designer/README.md">Identidade final Reed/Rheed não decidida; o POV usa “contador de histórias” quando a grafia não é necessária.</item>
+      <item material="false" substitute_locator="frontend/data/Map046.json:list[14..38]">Consequência desejada de Confirmar não decidida; o POV preserva o ramo e não afirma mudança de nome em runtime.</item>
+      <item material="false" substitute_locator="frontend/data/Map046.json:event 1/page 1">Staging histórico não está no runtime; o POV o mantém como hipótese condicionada, sem implementação.</item>
+    </missing_context>
+    <cross_domain_lookup>
+      <required>false</required>
+      <destination>none</destination>
+      <requested_domain>none</requested_domain>
+      <requested_topics_or_ids />
+      <reason>As lacunas são gates humanos ou técnicas e não impedem a proposta narrativa neutra.</reason>
+    </cross_domain_lookup>
+    <result>ready-with-gaps</result>
+    <result_reason>O README e as fontes atuais cobrem todos os requisitos materiais para uma proposta reversível; conflitos não bloqueantes estão preservados e nenhuma decisão foi tomada silenciosamente.</result_reason>
+    <minimum_next_input>none</minimum_next_input>
+    <durable_doc_gap_handoff>
+      <required>true</required>
+      <destination>cross-review</destination>
+      <gap_summary>
+        <gap>Reconciliar apenas após decisão humana a grafia Reed/Rheed entre cânone, runtime e nomes futuros de assets.</gap>
+        <gap>Não promover material de Quests_Sem_revisão a fato atual sem validação explícita.</gap>
+      </gap_summary>
+    </durable_doc_gap_handoff>
+  </domain_context_preflight>
+
+  <source_authority>
+    <source rank="1" class="current-runtime" locator="frontend/data/Map046.json:event 1/page 1">Autoridade sobre comandos, falas, ramos e comportamento atualmente materializado.</source>
+    <source rank="2" class="current-durable" locator="docs/domains/narrative-designer/README.md">Autoridade sobre intenção/cânone, voz e continuidade; não substitui observação do runtime.</source>
+    <source rank="3" class="validated-demand" locator="planos/004-ambientacao-VN/demanda-improved.md">Autoridade sobre escopo, gates, critérios e caráter proposal-only desta fase.</source>
+    <source rank="4" class="current-inventory" locator="planos/004-ambientacao-VN/analise/context/inventory.xml">Autoridade derivada sobre estrutura e conflitos da baseline inventariada.</source>
+    <source rank="5" class="historical-exploratory-unreviewed" locator="Obsidian/Daratrine/03_Narrative/03.3_Quests/Quests_Sem_revisão/1-noite-da-historia/">Serve somente como intenção histórica e hipótese de staging; não substitui fatos atuais.</source>
+  </source_authority>
+
+  <scene_assessment>
+    <function>A cena apresenta a moldura meta-narrativa, acolhe o jogador como ouvinte, oferece uma microescolha identitária e converte humor íntimo em promessa épica sobre Gildrat e Thorin.</function>
+    <strengths>
+      <item>O erro de nome produz interação imediata e diferencia os ramos sem interromper a função tutorial.</item>
+      <item>A sequência Daratrine → Gildrat → Thorin cria uma boa rampa de escala: cidade presente, passado necessário, protagonista da história.</item>
+      <item>A poção funciona como objeto verbal de transição entre praça e narrativa principal.</item>
+    </strengths>
+    <weaknesses>
+      <item>A voz atual alterna entre fala coloquial genérica e exposição enciclopédica; falta cadência própria de contador oral.</item>
+      <item>A reconvergência despeja três informações de lore em sequência, com pouca causalidade explícita entre Daratrine e Gildrat.</item>
+      <item>O ramo Confirmar afirma reconhecimento, mas o runtime não evidencia que Actor 1 recebe Dulgarin; diálogo e consequência podem divergir.</item>
+      <item>A última fala usa singular após o narrador passar a falar com “vocês”, enfraquecendo a passagem do encontro individual ao ritual coletivo.</item>
+    </weaknesses>
+    <tone_target>Calor de praça e humor gentil no início; encanto oral e crescente solenidade após a reconvergência; uma última nota de maravilhamento antes da transição.</tone_target>
+    <pacing_target>Frases curtas no acolhimento e na troca cômica; pausa clara na escolha; períodos progressivamente mais imagéticos no bloco de lore; fechamento conciso e ritualístico.</pacing_target>
+  </scene_assessment>
+
+  <narrative_curve>
+    <stage id="curve-01" name="chegada" covered_by="B01">
+      <dramatic_job>Transformar o atraso em acolhimento e estabelecer que o contador domina a roda sem humilhar a criança.</dramatic_job>
+      <energy>leve, pública e convidativa</energy>
+      <transition>A interpelação pessoal abre espaço para o teste de memória.</transition>
+    </stage>
+    <stage id="curve-02" name="erro-de-nome" covered_by="B02">
+      <dramatic_job>Converter reconhecimento em brincadeira e oferecer a bifurcação como gesto diegético, não como menu isolado.</dramatic_job>
+      <energy>curiosidade cômica</energy>
+      <transition>A pergunta “Dulgarin, não é?” entrega agência ao jogador.</transition>
+    </stage>
+    <stage id="curve-03" name="bifurcacao-confirmar" covered_by="B03 B04 B05">
+      <dramatic_job>Recompensar a confirmação com orgulho performático, surpresa infantil e reafirmação do ofício de contador.</dramatic_job>
+      <energy>triunfo brincalhão</energy>
+      <constraint>Não afirmar que Actor 1 foi renomeado sem decisão humana sobre a consequência de Confirmar.</constraint>
+    </stage>
+    <stage id="curve-04" name="bifurcacao-corrigir" covered_by="B06 B07">
+      <dramatic_job>Dar personalidade à criança, acomodar o Name Input e fazer o contador aceitar o nome sem perder o ritmo.</dramatic_job>
+      <energy>réplica afiada seguida de acolhimento</energy>
+      <constraint>Preservar a macro \\N[1] na saudação pós-input.</constraint>
+    </stage>
+    <stage id="curve-05" name="reconvergencia" covered_by="B08">
+      <dramatic_job>Ampliar o foco da criança para a roda inteira e fixar Daratrine como âncora afetiva.</dramatic_job>
+      <energy>calor que se torna reverência</energy>
+      <transition>A pergunta implícita “como chegamos até aqui?” prepara Gildrat.</transition>
+    </stage>
+    <stage id="curve-06" name="Daratrine" covered_by="B08">
+      <dramatic_job>Resumir refúgio e quase apagamento sem inventar causas ou datas.</dramatic_job>
+      <energy>memória histórica</energy>
+      <constraint>Preservar apenas os fatos já presentes nas fontes atuais.</constraint>
+    </stage>
+    <stage id="curve-07" name="Gildrat" covered_by="B09">
+      <dramatic_job>Explicitar que Gildrat é o passado necessário para compreender Daratrine.</dramatic_job>
+      <energy>promessa de revelação</energy>
+      <transition>Do lugar histórico para a pessoa que carregará a história.</transition>
+    </stage>
+    <stage id="curve-08" name="Thorin" covered_by="B10">
+      <dramatic_job>Apresentar o protagonista com uma imagem verbal memorável de teimosia, sem antecipar eventos.</dramatic_job>
+      <energy>gancho cômico-heroico</energy>
+    </stage>
+    <stage id="curve-09" name="pocao-transicao" covered_by="B11">
+      <dramatic_job>Transformar a poção em convite ritual e fechar a moldura no plural, preparando a passagem para Gildrat.</dramatic_job>
+      <energy>encantamento e suspensão</energy>
+      <constraint>Fumaça, vídeo e fade permanecem staging histórico condicionado, não comportamento presumido.</constraint>
+    </stage>
+  </narrative_curve>
+
+  <beat_analysis message_blocks_covered="11" total_message_blocks="11" branches_covered="Confirmar,Corrigir">
+    <beat id="B01" locator="frontend/data/Map046.json:event[1]/pages[0]/list[5]" branch="shared-arrival">
+      <function>Acolher o jogador atrasado e estabelecer a autoridade cordial do contador diante da roda.</function>
+      <probable_speaker confidence="high">Contador de histórias associado ao busto Portraits/Principal/Reed final; grafia canônica pendente.</probable_speaker>
+      <voice>Oral, calorosa, levemente teatral.</voice>
+      <intention>Chamar a criança para dentro do ritual sem puni-la pelo atraso.</intention>
+      <subtext>O contador percebe tudo e sabe transformar uma interrupção em parte do espetáculo.</subtext>
+      <rhythm>Boa abertura curta, mas a reticência atual esvazia o punch em vez de criar uma pausa funcional.</rhythm>
+      <continuity>Prepara naturalmente a observação do rosto e a pergunta sobre o nome.</continuity>
+      <lore_risk>baixo; não exige dado novo de mundo ou identidade.</lore_risk>
+    </beat>
+    <beat id="B02" locator="frontend/data/Map046.json:event[1]/pages[0]/list[10]" branch="shared-name-error">
+      <function>Apresentar Dulgarin como palpite e disparar a escolha Confirmar/Corrigir.</function>
+      <probable_speaker confidence="high">Contador de histórias associado ao busto Reed final.</probable_speaker>
+      <voice>Observadora e performática, com falsa segurança divertida.</voice>
+      <intention>Testar a própria memória e provocar resposta da criança.</intention>
+      <subtext>O contador prefere arriscar um nome em público a admitir de imediato que não lembra.</subtext>
+      <rhythm>Precisa de uma pequena preparação antes de “Dulgarin” para que o erro pareça escolha cômica, não exposição funcional.</rhythm>
+      <continuity>É o pivô diegético exato da escolha qualSeuNome.</continuity>
+      <lore_risk>médio; Dulgarin pode ou não ser o nome efetivo de Actor 1 no ramo Confirmar.</lore_risk>
+    </beat>
+    <beat id="B03" locator="frontend/data/Map046.json:event[1]/pages[0]/list[18]" branch="Confirmar:qualSeuNome1">
+      <function>Recompensar Confirmar com um triunfo cômico do contador.</function>
+      <probable_speaker confidence="high">Contador de histórias.</probable_speaker>
+      <voice>Vaidosa, afetuosa e autoconsciente.</voice>
+      <intention>Celebrar o acerto e conquistar a plateia.</intention>
+      <subtext>Ele teme que a idade lhe roube nomes, mas converte essa insegurança em show.</subtext>
+      <rhythm>O duplo “Aha/Eu sabia” funciona; a proposta reduz redundância e acrescenta uma imagem ligada ao ofício.</rhythm>
+      <continuity>Deve deixar espaço para a reação surpresa da criança no bloco seguinte.</continuity>
+      <lore_risk>médio; a fala só é plenamente coerente se Confirmar significar que Dulgarin é de fato o nome aceito.</lore_risk>
+    </beat>
+    <beat id="B04" locator="frontend/data/Map046.json:event[1]/pages[0]/list[22]" branch="Confirmar:qualSeuNome1">
+      <function>Dar voz à criança e confirmar o efeito emocional do acerto.</function>
+      <probable_speaker confidence="high">Criança associada ao busto Portraits/Principal/CriancaOrc_.</probable_speaker>
+      <voice>Direta, espontânea e admirada.</voice>
+      <intention>Pedir explicação e devolver a cena ao contador.</intention>
+      <subtext>A criança passa da cautela ao fascínio.</subtext>
+      <rhythm>A brevidade é uma virtude; enriquecer aqui diluiria a reação.</rhythm>
+      <continuity>Entrega a deixa perfeita para o contador explicar ou brincar com seu ofício.</continuity>
+      <lore_risk>médio; pressupõe que o nome citado é realmente o da criança no ramo Confirmar.</lore_risk>
+    </beat>
+    <beat id="B05" locator="frontend/data/Map046.json:event[1]/pages[0]/list[25]" branch="Confirmar:qualSeuNome1">
+      <function>Fechar o ramo Confirmar caracterizando o contador antes da reconvergência.</function>
+      <probable_speaker confidence="high">Contador de histórias.</probable_speaker>
+      <voice>Orgulhosa e fabulatória, sem soar onisciente.</voice>
+      <intention>Justificar o acerto e reforçar seu vínculo com Daratrine.</intention>
+      <subtext>Ele trata conhecer ouvintes como parte do mesmo ofício de conhecer histórias.</subtext>
+      <rhythm>A frase atual é expositiva e termina com dois pontos de exclamação; a proposta usa paralelismo curto.</rhythm>
+      <continuity>O vínculo com Daratrine antecipa a reconvergência temática sem repetir o bloco B08.</continuity>
+      <lore_risk>baixo na proposta; evita ampliar literalmente a alegação de conhecer todos os habitantes.</lore_risk>
+    </beat>
+    <beat id="B06" locator="frontend/data/Map046.json:event[1]/pages[0]/list[31]" branch="Corrigir:qualSeuNome2">
+      <function>Recompensar Corrigir com humor e abrir o Name Input.</function>
+      <probable_speaker confidence="high">Criança associada ao busto CriancaOrc_.</probable_speaker>
+      <voice>Atrevida, rápida e coloquial.</voice>
+      <intention>Corrigir o adulto sem hostilidade e afirmar a própria identidade.</intention>
+      <subtext>A criança não se intimida com a posição pública do contador.</subtext>
+      <rhythm>A enumeração é o melhor punch do ramo; pode ser aparada para culminar em “Meu nome é...”.</rhythm>
+      <continuity>A suspensão final justifica imediatamente o comando Name Input em list[33].</continuity>
+      <lore_risk>médio; “miseravi” é uma marca forte de registro e precisa de aceite humano para confirmar a voz da criança.</lore_risk>
+    </beat>
+    <beat id="B07" locator="frontend/data/Map046.json:event[1]/pages[0]/list[37]" branch="Corrigir:qualSeuNome2">
+      <function>Reconhecer o nome digitado e devolver o fluxo à história.</function>
+      <probable_speaker confidence="high">Contador de histórias.</probable_speaker>
+      <voice>Receptiva, sem ressentimento por ter errado.</voice>
+      <intention>Validar a correção e convidar a criança a se acomodar.</intention>
+      <subtext>Para ele, a relação com o ouvinte importa mais que acertar de primeira.</subtext>
+      <rhythm>A proposta troca a transição burocrática “voltando” por um impulso positivo rumo ao começo da história.</rhythm>
+      <continuity>Deve preservar literalmente a macro \\N[1] e reconvergir antes de B08.</continuity>
+      <lore_risk>baixo; depende apenas do Name Input já existente no ramo Corrigir.</lore_risk>
+    </beat>
+    <beat id="B08" locator="frontend/data/Map046.json:event[1]/pages[0]/list[43]" branch="shared-reconvergence">
+      <function>Mudar da conversa individual para a roda, fixar Daratrine como âncora afetiva e abrir a memória histórica.</function>
+      <probable_speaker confidence="high">Contador de histórias dirigindo-se ao público coletivo.</probable_speaker>
+      <voice>Afetuosa, reverente e ainda acessível a crianças.</voice>
+      <intention>Fazer a cidade presente parecer resultado improvável de sobrevivência.</intention>
+      <subtext>O conforto atual repousa sobre uma história de ferida e resistência.</subtext>
+      <rhythm>A versão atual concentra exclamação, pergunta e duas informações; a proposta organiza afeto → contraste → quase apagamento.</rhythm>
+      <continuity>Precisa terminar abrindo a pergunta causal que B09 responde com Gildrat.</continuity>
+      <lore_risk>médio; “refúgio para soldados feridos” e “quase apagada do mapa” são preservados, mas causas, datas e agentes não podem ser inventados.</lore_risk>
+    </beat>
+    <beat id="B09" locator="frontend/data/Map046.json:event[1]/pages[0]/list[45]" branch="shared-Gildrat">
+      <function>Apresentar Gildrat como passado necessário para entender Daratrine.</function>
+      <probable_speaker confidence="high">Contador de histórias.</probable_speaker>
+      <voice>Clara e solene, com cadência de abertura de lenda.</voice>
+      <intention>Orientar a audiência no tempo e no espaço sem despejar detalhes.</intention>
+      <subtext>A história de Daratrine começa antes de Daratrine.</subtext>
+      <rhythm>A causalidade proposta elimina o salto brusco de “antes de qualquer coisa”.</rhythm>
+      <continuity>Alinha-se ao contexto durável que enquadra Gildrat antes de Daratrine.</continuity>
+      <lore_risk>baixo; mantém a denominação “Império dos Anões” sem acrescentar estado político, data ou destino.</lore_risk>
+    </beat>
+    <beat id="B10" locator="frontend/data/Map046.json:event[1]/pages[0]/list[47]" branch="shared-Thorin">
+      <function>Converter a exposição de lugar em gancho de personagem.</function>
+      <probable_speaker confidence="high">Contador de histórias.</probable_speaker>
+      <voice>Brincalhona e cúmplice, apresentando um herói imperfeito.</voice>
+      <intention>Fazer Thorin ser lembrado imediatamente por sua teimosia.</intention>
+      <subtext>A cabeça-dura que parece defeito será motor da narrativa.</subtext>
+      <rhythm>Uma comparação breve oferece punch antes da desaceleração ritual de B11.</rhythm>
+      <continuity>Preserva Thorin como protagonista e não antecipa herança, catástrofe ou destino.</continuity>
+      <lore_risk>baixo; a comparação com a montanha é figura de linguagem, não fato biográfico.</lore_risk>
+    </beat>
+    <beat id="B11" locator="frontend/data/Map046.json:event[1]/pages[0]/list[49]" branch="shared-potion-transition">
+      <function>Fechar a fala do contador e lançar a audiência para a história principal.</function>
+      <probable_speaker confidence="high">Contador de histórias dirigindo-se à roda.</probable_speaker>
+      <voice>Ritualística, macia e encantatória.</voice>
+      <intention>Sincronizar a atenção coletiva e transformar a poção em limiar narrativo.</intention>
+      <subtext>A história não será apenas ouvida; será experimentada.</subtext>
+      <rhythm>Imperativos no plural e uma pausa respiratória corrigem a oscilação atual entre “vocês” e “feche”.</rhythm>
+      <continuity>Precede o ExitBust e a transição COMPLETE_VN; qualquer fumaça, vídeo ou fade é staging ainda não materializado.</continuity>
+      <lore_risk>baixo no texto proposto; médio se a implementação futura transformar intenção histórica em efeito sem aprovação.</lore_risk>
+    </beat>
+  </beat_analysis>
+
+  <dialogue_proposals proposal_count="11" coverage="all-runtime-message-blocks">
+    <dialogue id="D01" beat_ref="B01" locator="frontend/data/Map046.json:event[1]/pages[0]/list[5]" branch="shared-arrival">
+      <original><![CDATA[Olha só quem chegou atrasado! A gente estava te esperando...]]></original>
+      <verdict>ajustar</verdict>
+      <proposal><![CDATA[Ora, ora... vejam só quem chegou atrasado! Venha, pequeno — uma boa história não começa sem o último ouvinte.]]></proposal>
+      <justification>Preserva atraso e acolhimento, dá presença de palco ao contador e torna o jogador necessário à roda sem acrescentar lore.</justification>
+    </dialogue>
+    <dialogue id="D02" beat_ref="B02" locator="frontend/data/Map046.json:event[1]/pages[0]/list[10]" branch="shared-name-error">
+      <original><![CDATA[Humm... acho que já vi você antes! Seu nome é Dulgarin, certo?]]></original>
+      <verdict>ajustar</verdict>
+      <proposal><![CDATA[Hum... esse rosto não me é estranho. Deixe este velho testar a memória: Dulgarin, não é?]]></proposal>
+      <justification>Transforma a pergunta funcional em pequeno número performático e prepara melhor a escolha; “este velho” já é caracterização presente no ramo Confirmar.</justification>
+    </dialogue>
+    <dialogue id="D03" beat_ref="B03" locator="frontend/data/Map046.json:event[1]/pages[0]/list[18]" branch="Confirmar:qualSeuNome1">
+      <original><![CDATA[Aha! Eu sabia! Parece que a memória deste velho anão ainda funciona bem!]]></original>
+      <verdict>ajustar</verdict>
+      <proposal><![CDATA[A-ha! Eu sabia! Ainda há boas histórias guardadas nesta cabeça velha — e alguns nomes também.]]></proposal>
+      <justification>Conserva a vaidade cômica e a idade, mas liga a memória ao ofício de contador e reduz a exposição literal.</justification>
+    </dialogue>
+    <dialogue id="D04" beat_ref="B04" locator="frontend/data/Map046.json:event[1]/pages[0]/list[22]" branch="Confirmar:qualSeuNome1">
+      <original><![CDATA[Como você sabia o meu nome?!]]></original>
+      <verdict>manter</verdict>
+      <proposal><![CDATA[Como você sabia o meu nome?!]]></proposal>
+      <justification>A reação curta oferece o contraste certo com a fala expansiva do contador; qualquer enriquecimento atrasaria o punch. A coerência factual depende do gate sobre Confirmar.</justification>
+    </dialogue>
+    <dialogue id="D05" beat_ref="B05" locator="frontend/data/Map046.json:event[1]/pages[0]/list[25]" branch="Confirmar:qualSeuNome1">
+      <original><![CDATA[Sou um contador de histórias! Conheço bem os habitantes de toda Daratrine!!]]></original>
+      <verdict>substituir</verdict>
+      <proposal><![CDATA[Sou contador de histórias, pequeno! Conheço as histórias de Daratrine... e os nomes de quem vem escutá-las.]]></proposal>
+      <justification>Preserva ofício e vínculo local, evita a alegação quase onisciente de conhecer todos os habitantes e antecipa Daratrine sem consumir a exposição posterior.</justification>
+    </dialogue>
+    <dialogue id="D06" beat_ref="B06" locator="frontend/data/Map046.json:event[1]/pages[0]/list[31]" branch="Corrigir:qualSeuNome2">
+      <original><![CDATA[Você quase acertou, miseravi! Eu disse quase. Só errou a pronúncia, todas as letras e a pessoa. Não sou Dulgarin, meu nome é...]]></original>
+      <verdict>ajustar</verdict>
+      <proposal><![CDATA[Quase acertou, miseravi! Errou só a pronúncia, todas as letras... e a pessoa. Eu não sou Dulgarin. Meu nome é...]]></proposal>
+      <justification>Mantém o melhor punch cômico e a marca coloquial, remove repetição e cria uma suspensão mais limpa para o Name Input.</justification>
+    </dialogue>
+    <dialogue id="D07" beat_ref="B07" locator="frontend/data/Map046.json:event[1]/pages[0]/list[37]" branch="Corrigir:qualSeuNome2" macro_preserved="\\N[1]">
+      <original><![CDATA[É um prazer te conhecer, \\N[1]! Agora, voltando à nossa história...]]></original>
+      <verdict>ajustar</verdict>
+      <proposal><![CDATA[Agora sim, é um prazer conhecer você, \\N[1]! Acomode-se — a nossa verdadeira história está só começando...]]></proposal>
+      <justification>Preserva a macro de nome, acolhe a correção sem constrangimento e produz impulso para a reconvergência em vez de uma transição burocrática.</justification>
+    </dialogue>
+    <dialogue id="D08" beat_ref="B08" locator="frontend/data/Map046.json:event[1]/pages[0]/list[43]" branch="shared-reconvergence">
+      <original><![CDATA[Ah, Daratrine! Como eu amo essa cidade! Vocês sabiam que este lugar já foi nada mais do que um refúgio para soldados feridos? Por pouco, não fomos riscados do mapa!]]></original>
+      <verdict>substituir</verdict>
+      <proposal><![CDATA[Ah, Daratrine... Como eu amo esta cidade! Difícil imaginar que ela já foi apenas um refúgio para soldados feridos. Por muito pouco, seu nome não desapareceu do mapa.]]></proposal>
+      <justification>Organiza a exposição em três movimentos, preserva refúgio e quase apagamento e evita inventar causas; a imagem do nome desaparecendo combina com a voz oral.</justification>
+    </dialogue>
+    <dialogue id="D09" beat_ref="B09" locator="frontend/data/Map046.json:event[1]/pages[0]/list[45]" branch="shared-Gildrat">
+      <original><![CDATA[Antes de qualquer coisa, preciso contar a história de Gildrat, o Império dos Anões!]]></original>
+      <verdict>ajustar</verdict>
+      <proposal><![CDATA[Mas, para entender como Daratrine chegou até aqui, precisamos voltar a Gildrat, o Império dos Anões.]]></proposal>
+      <justification>Explicita a relação causal entre os dois lugares, segue a ordem durável Gildrat antes de Daratrine e conserva a denominação existente sem lore novo.</justification>
+    </dialogue>
+    <dialogue id="D10" beat_ref="B10" locator="frontend/data/Map046.json:event[1]/pages[0]/list[47]" branch="shared-Thorin">
+      <original><![CDATA[Essa história começa com um anão cabeça dura, chamado Thorin!]]></original>
+      <verdict>ajustar</verdict>
+      <proposal><![CDATA[E é em Gildrat que a nossa história encontra Thorin — um anão tão cabeça-dura que discutiria até com uma montanha!]]></proposal>
+      <justification>Apresenta protagonista e traço central com uma imagem infantil memorável; a montanha é comparação cômica, não acontecimento canônico.</justification>
+    </dialogue>
+    <dialogue id="D11" beat_ref="B11" locator="frontend/data/Map046.json:event[1]/pages[0]/list[49]" branch="shared-potion-transition">
+      <original><![CDATA[Vamos, feche os olhos! E deixe essa antiga poção te transportar para a história.]]></original>
+      <verdict>ajustar</verdict>
+      <proposal><![CDATA[Agora, fechem os olhos... Respirem fundo. Deixem que o encanto desta antiga poção nos transporte até Gildrat, quando tudo começou.]]></proposal>
+      <justification>Corrige o foco para a audiência plural, dá cadência ritual à transição e nomeia o destino já estabelecido sem presumir fumaça, vídeo ou fade.</justification>
+    </dialogue>
+  </dialogue_proposals>
+
+  <classified_context>
+    <facts>
+      <item locator="frontend/data/Map046.json:event 1/page 1">Há exatamente 11 blocos de mensagem; Confirmar possui três mensagens, Corrigir possui duas mensagens e Name Input, e ambos reconvergem antes de quatro mensagens finais.</item>
+      <item locator="frontend/data/Map046.json:list[3,8,16,20,23,29,35,41]">Switch 43 é ativado seis vezes e switch 44 duas vezes no evento atual.</item>
+      <item locator="frontend/data/Map046.json:list[14..38]">Confirmar não altera explicitamente Actor 1; Corrigir executa Name Input de Actor 1 com oito caracteres.</item>
+      <item locator="frontend/data/Map046.json:list[51..53]">Após as mensagens, o runtime executa COMPLETE_VN, FinishVisualNovel e Exit Event Processing.</item>
+      <item locator="docs/domains/narrative-designer/README.md">Rheed tem voz oral; Gildrat antecede Daratrine; Thorin é protagonista; tom, pacing e reachability exigem validação humana.</item>
+    </facts>
+    <inferences>
+      <item confidence="high">O busto Reed final representa o contador e CriancaOrc_ representa o ouvinte, pela alternância busto/fala; os comandos não nomeiam o falante.</item>
+      <item confidence="high">B08 muda o destinatário para a audiência coletiva por usar “vocês”; por isso B11 ganha consistência no plural.</item>
+      <item confidence="medium">A melhor reconvergência é afetiva e causal: Daratrine como presente amado, Gildrat como passado necessário, Thorin como gancho humano.</item>
+    </inferences>
+    <hypotheses>
+      <item>O contador funciona melhor com humor de palco e exagero autoconsciente, não com onisciência literal.</item>
+      <item>“miseravi” pode ser uma assinatura eficaz da criança se o registro coloquial for aprovado para sua voz.</item>
+      <item>A poção pode sustentar verbalmente a transição mesmo sem fumaça/vídeo/fade; qualquer staging adicional deve ser decidido fora deste POV.</item>
+    </hypotheses>
+    <human_decisions>
+      <decision gate_ref="G01">Escolher a grafia e identidade pública Reed ou Rheed antes de nomear novos assets ou alterar texto que mostre o nome.</decision>
+      <decision gate_ref="G02">Definir a consequência de Confirmar: aceitar Dulgarin deve ou não definir/preservar o nome de Actor 1?</decision>
+      <decision gate_ref="G03">Definir se switches 43/44 permanecem, são substituídos ou pertencem a um fluxo obsoleto; decisão técnica fora deste POV.</decision>
+      <decision gate_ref="G04">Aprovar ou rejeitar o staging histórico de poção, fumaça, vídeo e fade; nada disso foi presumido como runtime atual.</decision>
+      <decision gate_ref="G05">Validar tom, voz da criança, humor, ritmo de leitura e propostas finais antes de qualquer implementação.</decision>
+    </human_decisions>
+  </classified_context>
+
+  <risks>
+    <risk id="R01" severity="high">Resolver Reed/Rheed implicitamente em texto ou asset criaria divergência entre cânone durável e runtime atual.</risk>
+    <risk id="R02" severity="high">Manter as falas de acerto sem definir a consequência de Confirmar pode fazer a criança afirmar um nome que Actor 1 não possui.</risk>
+    <risk id="R03" severity="high">Aplicar a orientação histórica de remover switches 43/44 sem diagnóstico técnico pode quebrar apresentação ou integração atual.</risk>
+    <risk id="R04" severity="medium">Promover fumaça, vídeo e fade de documentos não revisados a staging obrigatório mudaria o comportamento atual sem aprovação.</risk>
+    <risk id="R05" severity="medium">Aumentar a ornamentação de todas as falas pode alongar a abertura e reduzir clareza para o público infantil.</risk>
+    <risk id="R06" severity="medium">“miseravi” e a resposta atrevida podem destoar da voz canônica da criança, ainda não validada por fonte durável específica.</risk>
+    <risk id="R07" severity="low">A metáfora da montanha pode ser lida literalmente se acompanhada por imagem ou staging inadequado; deve permanecer figura verbal.</risk>
+  </risks>
+
+  <validators>
+    <validator id="V01" type="deterministic" status="passed">XML parseável com raiz agentic_agent_pov schema_version 1.</validator>
+    <validator id="V02" type="deterministic" status="passed">11 beats B01–B11 e 11 propostas D01–D11, cada um com locator único de mensagem.</validator>
+    <validator id="V03" type="deterministic" status="passed">Ramos Confirmar/qualSeuNome1 e Corrigir/qualSeuNome2 cobertos, além da reconvergência compartilhada.</validator>
+    <validator id="V04" type="deterministic" status="passed">Toda proposta contém original, veredito manter/ajustar/substituir, proposta concreta e justificativa.</validator>
+    <validator id="V05" type="deterministic" status="passed">Macro \\N[1] preservada em D07; nenhum guard, switch, comando, runtime ou asset foi alterado.</validator>
+    <validator id="V06" type="review" status="pending-cross-review">Cross-review deve confirmar que nenhuma proposta introduz lore, identidade ou consequência de branch silenciosa.</validator>
+    <validator id="V07" type="human-gate" status="pending">Leitura, pacing, humor, voz e aceitação narrativa exigem validação humana; inspeção estática não os valida.</validator>
+  </validators>
+
+  <human_gates>
+    <gate id="G01" status="open" material="true">Reed versus Rheed.</gate>
+    <gate id="G02" status="open" material="true">Consequência de Confirmar para o nome de Actor 1 e coerência das falas B03–B05.</gate>
+    <gate id="G03" status="open" material="true">Semântica e destino dos switches 43/44.</gate>
+    <gate id="G04" status="open" material="true">Adoção ou rejeição do staging histórico de poção/fumaça/vídeo/fade.</gate>
+    <gate id="G05" status="open" material="true">Aceite humano das propostas de texto, tom, humor, caracterização e ritmo.</gate>
+  </human_gates>
+
+  <cross_review_handoff>
+    <destination>cross-review</destination>
+    <review_focus>
+      <item>Testar a coerência de D03–D05 contra ambas as decisões possíveis para Confirmar.</item>
+      <item>Verificar se D08–D10 preservam estritamente Daratrine, Gildrat e Thorin sem antecipação indevida de lore.</item>
+      <item>Validar a leitura plural de B08/B11 e o equilíbrio de duração entre Confirmar e Corrigir.</item>
+      <item>Manter Reed/Rheed, switches 43/44 e staging histórico como gates; não reconciliá-los por inferência.</item>
+      <item>Separar revisão editorial de qualquer recomendação técnica ou de assets, pois este POV é proposal-only.</item>
+    </review_focus>
+    <expected_output>Críticas rastreáveis por beat/proposta, conflitos ou ajustes recomendados e confirmação de que os gates continuam abertos.</expected_output>
+  </cross_review_handoff>
+
+  <terminal_status>completed</terminal_status>
+  <completion_record>
+    <result>completed-proposal-only</result>
+    <files_read>
+      <file>planos/004-ambientacao-VN/demanda-improved.md</file>
+      <file>planos/004-ambientacao-VN/analise/context/inventory.xml</file>
+      <file>frontend/data/Map046.json:event 1/page 1</file>
+      <file>docs/domains/narrative-designer/README.md</file>
+      <file>Obsidian/Daratrine/03_Narrative/03.3_Quests/Quests_Sem_revisão/1-noite-da-historia/noite-da-historia.NSD.fluxo-cenas.md</file>
+      <file>Obsidian/Daratrine/03_Narrative/03.3_Quests/Quests_Sem_revisão/1-noite-da-historia/entrevista-relatorio.md</file>
+      <file>E:/Projetos/loki-framework/skills/lf-domain-context-preflight/SKILL.md</file>
+      <file>E:/Projetos/loki-framework/skills/lf-domain-context-preflight/references/preflight-contract.md</file>
+    </files_read>
+    <files_written>
+      <file>planos/004-ambientacao-VN/analise/agentes/narrative-designer.xml</file>
+    </files_written>
+    <coverage>11/11 mensagens; Confirmar coberto; Corrigir coberto; reconvergência e transição final analisadas.</coverage>
+    <validations>XML parse; contagens de beats e propostas; locators; campos obrigatórios; cobertura de branches; preservação da macro e dos gates.</validations>
+    <limitations>Sem execução de runtime, criação de assets, confirmação de falantes, validação perceptível, decisão de cânone ou alteração técnica.</limitations>
+    <next_destination>cross-review</next_destination>
+    <execution_evidence>orchestrator-owned</execution_evidence>
+  </completion_record>
+</agentic_agent_pov>

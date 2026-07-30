@@ -1,0 +1,43 @@
+domain_context_preflight:
+  schema_version: "1"
+  agent: technical-implementer
+  task_id: task-1.1
+  required: true
+  domain_docs_root: docs/loki-init/technical-implementer
+  task_topics: [event-commands, map046, visual-novel-presentation]
+  task_domain_ids: [event-1-page-1, map-046, quest-noite-da-historia]
+  relevant_surfaces: [frontend/data/Map046.json]
+  selection_basis: ["Target e contratos definidos pelo plano e pela análise corrente."]
+  read_attempt:
+    readme_path: docs/loki-init/technical-implementer/README.md
+    status: root-absent
+    reason: "A raiz durável do domínio não existe."
+  docs_considered: []
+  docs_read: []
+  relevant_facts:
+    - fact: "Fontes correntes cobrem engine, plugins, assets, caller, branches e validators."
+      source_locator: planos/004-ambientacao-VN/tasks.md#sources
+      source_kind: current-source
+  conflicts_with_task_context: []
+  freshness:
+    status: absent
+    evidence: ["Test-Path docs/loki-init/technical-implementer = false em 2026-07-29"]
+  missing_context:
+    - item: "Documentação durável própria do technical-implementer ausente."
+      material: false
+      substitute_locator: planos/004-ambientacao-VN/tasks.md#sources
+      impact: "Nenhum; fontes correntes e contracts especializados cobrem a escrita."
+  cross_domain_lookup:
+    required: false
+    destination: none
+    requested_domain: none
+    requested_topics_or_ids: []
+    reason: "Sem necessidade material."
+  result: ready-with-gaps
+  result_reason: "Gap durável não material com substitutos correntes rastreáveis."
+  minimum_next_input: none
+  durable_doc_gap_handoff:
+    required: false
+    destination: none
+    gap_summary: []
+

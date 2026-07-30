@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<execution_knowledge_entry schema_version="1">
+  <identity>
+    <capture_id>capture-decision-confirm-name-v1</capture_id>
+    <calling_workflow>loki-agentic-development</calling_workflow>
+    <run_id>agentic-004-ambientacao-vn-v1</run_id>
+    <run_directory>E:\Projetos\projectX\planos\004-ambientacao-VN</run_directory>
+    <phase>decision-preflight</phase>
+    <agent_run_id>agent-run-decision-confirm-name-v1</agent_run_id>
+    <handoff_id>handoff-decision-confirm-name-v1</handoff_id>
+    <source_agent>game-business-analyst</source_agent>
+  </identity>
+  <lineage>
+    <target_entry>execution-knowledge/entries/capture-decision-confirm-name-v1.xml</target_entry>
+    <source_refs>
+      <source_ref type="evidence-manifest" authorization="run-contained">evidence/decision-confirm-name.xml</source_ref>
+      <source_ref type="task-state" authorization="run-contained">agent-runs/fase2/agent-run-decision-confirm-name-v1.xml</source_ref>
+      <source_ref type="completion-record" authorization="run-contained">analise/technical-analysis.md</source_ref>
+    </source_refs>
+  </lineage>
+  <materiality>
+    <material>true</material>
+    <reason>The approved Confirmar decision resolves a blocking state contract, fixes its branch placement and validation obligations, and advances the single-question decision sequence without inventing implementation details.</reason>
+  </materiality>
+  <capture>
+    <state>captured</state>
+    <reason>Material provider-neutral execution knowledge was derived from the authorized persisted decision sources.</reason>
+    <minimum_next_path>Review and deduplicate only through loki-continuous-improvement.</minimum_next_path>
+  </capture>
+  <knowledge>
+    <claims>
+      <claim type="decision" confidence="high">
+        <statement>The Confirmar branch must establish Actor 1 as Dulgarin inside qualSeuNome1 before dialogue beats B03 through B05.</statement>
+        <evidence_ref>evidence/decision-confirm-name.xml#completion_record/decisions</evidence_ref>
+      </claim>
+      <claim type="decision" confidence="high">
+        <statement>The Corrigir branch retains its Name Input contract and must remain isolated from the Confirmar state mutation.</statement>
+        <evidence_ref>analise/technical-analysis.md#invariantes-de-dados-estado</evidence_ref>
+      </claim>
+      <claim type="fact" confidence="high">
+        <statement>No command or plugin payload was selected by the decision projection; implementation must use a future documented and approved RPG Maker MZ mechanism.</statement>
+        <evidence_ref>evidence/decision-confirm-name.xml#completion_record</evidence_ref>
+      </claim>
+      <claim type="fact" confidence="high">
+        <statement>The future implementation must validate Dulgarin through save and load and prove that Confirmar and Corrigir do not contaminate one another.</statement>
+        <evidence_ref>analise/technical-analysis.md#invariantes-de-dados-estado</evidence_ref>
+      </claim>
+      <claim type="fact" confidence="high">
+        <statement>DG-CREATIVE-PACK is now the sole must-ask-now gate.</statement>
+        <evidence_ref>agent-runs/fase2/agent-run-decision-confirm-name-v1.xml#gates</evidence_ref>
+      </claim>
+      <claim type="inference" confidence="medium">
+        <statement>A state decision remains implementation-safe when it fixes the required outcome, branch, ordering, isolation, and validation evidence while deliberately deferring the concrete engine mechanism to documented implementation context.</statement>
+        <evidence_ref>analise/technical-analysis.md#decision-preflight</evidence_ref>
+      </claim>
+    </claims>
+    <attempts>
+      <attempt>
+        <action>Project the approved Dulgarin outcome into the technical analysis and advance the one-question preflight without selecting a runtime payload.</action>
+        <outcome>The decision contract, branch placement, save/load requirements, branch isolation, coverage IDs, and Markdown structure validated successfully; no runtime or asset changed.</outcome>
+        <evidence_ref>evidence/decision-confirm-name.xml#completion_record</evidence_ref>
+      </attempt>
+    </attempts>
+    <resolution status="resolved" confidence="high">
+      <statement>DG-CONFIRM-NAME is resolved: Confirmar establishes Dulgarin on Actor 1 within qualSeuNome1 before B03 through B05.</statement>
+    </resolution>
+    <cause status="known" confidence="high">
+      <statement>The prior mismatch between Confirmar dialogue and Actor 1 state was resolved by an explicit human outcome decision, with implementation mechanism intentionally deferred.</statement>
+    </cause>
+    <gaps>
+      <gap>The exact documented RPG Maker MZ mechanism for setting Dulgarin remains intentionally unresolved until implementation planning.</gap>
+      <gap>DG-CREATIVE-PACK remains unresolved and blocks manifest closure and asset request.</gap>
+      <gap>Asset intake, implementation, save/load proof, branch-isolation proof, and perceptible runtime validation remain pending.</gap>
+    </gaps>
+    <minimum_next_path>Run the next human decision preflight and ask only DG-CREATIVE-PACK without reopening DG-NAMING or DG-CONFIRM-NAME.</minimum_next_path>
+    <reuse_guidance>When approving a branch-state outcome, record the exact branch and ordering, preserve sibling-branch behavior, defer engine payload selection to documented implementation context, and require persistence plus branch-isolation evidence.</reuse_guidance>
+    <avoid_next_time>Do not infer a command from dialogue, place the mutation outside the approved branch, open Name Input in Confirmar, contaminate Corrigir, or claim persistence before save/load validation.</avoid_next_time>
+  </knowledge>
+  <security>
+    <sanitized>true</sanitized>
+    <raw_payload_included>false</raw_payload_included>
+    <private_reasoning_included>false</private_reasoning_included>
+    <personal_data_included>false</personal_data_included>
+    <secrets_included>false</secrets_included>
+    <evidence_snapshots_copied>false</evidence_snapshots_copied>
+  </security>
+  <promotion>
+    <owner>loki-continuous-improvement</owner>
+    <status>unreviewed</status>
+  </promotion>
+</execution_knowledge_entry>

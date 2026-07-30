@@ -125,7 +125,7 @@
         "pitch": 100,
         "volume": 90
     },
-    "editMapId": 18,
+    "editMapId": 22,
     "elements": [
         "",
         "Físico",
@@ -352,9 +352,9 @@
             "volume": 90
         }
     ],
-    "startMapId": 57,
-    "startX": 20,
-    "startY": 7,
+    "startMapId": 22,
+    "startX": 14,
+    "startY": 21,
     "switches": [
         "",
         "Jogada segura",
@@ -736,13 +736,13 @@
         "descricao",
         "contador_kravens",
         "",
-        "",
+        "v_qNoiteDaHistoria_stage",
         "",
         "",
         "",
         "Inimigos derrotados(release)"
     ],
-    "versionId": 58872376,
+    "versionId": 89344918,
     "victoryMe": {
         "name": "Victory1",
         "pan": 0,

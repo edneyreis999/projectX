@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<execution_knowledge_entry schema_version="1">
+  <identity>
+    <capture_id>capture-asset-manifest-v1</capture_id>
+    <calling_workflow>loki-agentic-development</calling_workflow>
+    <run_id>agentic-004-ambientacao-vn-v1</run_id>
+    <run_directory>E:\Projetos\projectX\planos\004-ambientacao-VN</run_directory>
+    <phase>asset-manifest</phase>
+    <agent_run_id>agent-run-asset-manifest-v1</agent_run_id>
+    <handoff_id>handoff-asset-manifest-v1</handoff_id>
+    <source_agent>technical-artist</source_agent>
+  </identity>
+  <lineage>
+    <target_entry>execution-knowledge/entries/capture-asset-manifest-v1.xml</target_entry>
+    <source_refs>
+      <source_ref type="evidence-manifest" authorization="run-contained">evidence/asset-manifest.xml</source_ref>
+      <source_ref type="task-state" authorization="run-contained">agent-runs/fase2/agent-run-asset-manifest-v1.xml</source_ref>
+      <source_ref type="completion-record" authorization="run-contained">analise/asset-manifest.md</source_ref>
+    </source_refs>
+  </lineage>
+  <materiality>
+    <material>true</material>
+    <reason>The frozen asset-intake manifest materially constrains downstream work through exact paths, reuse boundaries, export contracts, exclusions, validation evidence, and an awaiting-assets gate.</reason>
+  </materiality>
+  <capture>
+    <state>captured</state>
+    <reason>Material provider-neutral execution knowledge was derived from the authorized persisted manifest sources.</reason>
+    <minimum_next_path>Review and deduplicate only through loki-continuous-improvement.</minimum_next_path>
+  </capture>
+  <knowledge>
+    <claims>
+      <claim type="fact" confidence="high">
+        <statement>The final intake contract contains five unique frozen new-asset paths and four existing reuse paths with dimensions, pivots, safe areas, dependencies, validators, and exclusions.</statement>
+        <evidence_ref>evidence/asset-manifest.xml#integrity</evidence_ref>
+      </claim>
+      <claim type="decision" confidence="high">
+        <statement>Only the five frozen new assets listed as NEW-BG-01, NEW-POR-01, NEW-POR-02, NEW-POR-03, and NEW-CUT-01 are requested.</statement>
+        <evidence_ref>evidence/asset-manifest.xml#completion_record/decisions</evidence_ref>
+      </claim>
+      <claim type="fact" confidence="high">
+        <statement>The existing storyteller bust, child bust, and two visual-choice images are mandatory reuse assets and must not be renamed or edited during intake.</statement>
+        <evidence_ref>analise/asset-manifest.md#assets-existentes-reuso-obrigatorio</evidence_ref>
+      </claim>
+      <claim type="friction" confidence="high">
+        <statement>All five requested new files remain absent, so the manifest status is awaiting-assets and implementation is blocked.</statement>
+        <evidence_ref>agent-runs/fase2/agent-run-asset-manifest-v1.xml#gates</evidence_ref>
+      </claim>
+      <claim type="fact" confidence="high">
+        <statement>The 11.694 MiB simultaneous RGBA figure is a static theoretical budget and does not establish texture residency, cache duplication, transition overlap, frame pacing, or performance.</statement>
+        <evidence_ref>analise/asset-manifest.md#gate-de-presenca-e-proximo-estado</evidence_ref>
+      </claim>
+      <claim type="inference" confidence="medium">
+        <statement>A final intake manifest becomes safely actionable when every new asset has one exact path and export contract, every reuse asset has a preservation rule, and state advancement requires all local checks to pass together.</statement>
+        <evidence_ref>analise/asset-manifest.md#checklist-do-usuario</evidence_ref>
+      </claim>
+    </claims>
+    <attempts>
+      <attempt>
+        <action>Freeze the approved asset-intake contract with exact paths, technical requirements, reusable assets, exclusions, and presence validators.</action>
+        <outcome>The manifest validated five unique exact paths, complete required fields, reuse separation, exclusions, and a user checklist; no asset or runtime file changed.</outcome>
+        <evidence_ref>evidence/asset-manifest.xml#completion_record</evidence_ref>
+      </attempt>
+    </attempts>
+    <resolution status="partial" confidence="high">
+      <statement>The asset contract is final and frozen, but intake cannot pass until all five new assets are supplied and verified locally.</statement>
+    </resolution>
+    <cause status="known" confidence="high">
+      <statement>The active block is the expected absence of the five approved new files, not an unresolved manifest or creative decision.</statement>
+    </cause>
+    <gaps>
+      <gap>Five new assets must be delivered at their exact frozen paths.</gap>
+      <gap>Each file requires path, case, PNG decode, dimensions, applicable alpha, and checksum validation; bust variants additionally need overlay checks and the Cut-In needs human briefing review.</gap>
+      <gap>Profiling and perceptible Playtest remain pending after implementation.</gap>
+    </gaps>
+    <minimum_next_path>Wait for user delivery of all five files, execute the complete local intake contract, and advance from awaiting-assets only if every required check passes.</minimum_next_path>
+    <reuse_guidance>For comparable asset intake, separate reuse from new files, freeze exact case-sensitive paths, specify dimensions and registration, bind each item to a presence validator, record exclusions, and treat the whole intake as one blocking gate.</reuse_guidance>
+    <avoid_next_time>Do not create assets in the intake workflow, accept partial availability, rename reuse files, substitute near-match filenames, interpret theoretical memory as measured performance, or begin runtime edits before complete intake validation.</avoid_next_time>
+  </knowledge>
+  <security>
+    <sanitized>true</sanitized>
+    <raw_payload_included>false</raw_payload_included>
+    <private_reasoning_included>false</private_reasoning_included>
+    <personal_data_included>false</personal_data_included>
+    <secrets_included>false</secrets_included>
+    <evidence_snapshots_copied>false</evidence_snapshots_copied>
+  </security>
+  <promotion>
+    <owner>loki-continuous-improvement</owner>
+    <status>unreviewed</status>
+  </promotion>
+</execution_knowledge_entry>

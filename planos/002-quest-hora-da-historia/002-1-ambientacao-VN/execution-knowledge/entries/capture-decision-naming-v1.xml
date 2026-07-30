@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<execution_knowledge_entry schema_version="1">
+  <identity>
+    <capture_id>capture-decision-naming-v1</capture_id>
+    <calling_workflow>loki-agentic-development</calling_workflow>
+    <run_id>agentic-004-ambientacao-vn-v1</run_id>
+    <run_directory>E:\Projetos\projectX\planos\004-ambientacao-VN</run_directory>
+    <phase>decision-preflight</phase>
+    <agent_run_id>agent-run-decision-naming-v1</agent_run_id>
+    <handoff_id>handoff-decision-naming-v1</handoff_id>
+    <source_agent>game-business-analyst</source_agent>
+  </identity>
+  <lineage>
+    <target_entry>execution-knowledge/entries/capture-decision-naming-v1.xml</target_entry>
+    <source_refs>
+      <source_ref type="evidence-manifest" authorization="run-contained">evidence/decision-naming.xml</source_ref>
+      <source_ref type="task-state" authorization="run-contained">agent-runs/fase2/agent-run-decision-naming-v1.xml</source_ref>
+      <source_ref type="completion-record" authorization="run-contained">analise/technical-analysis.md</source_ref>
+    </source_refs>
+  </lineage>
+  <materiality>
+    <material>true</material>
+    <reason>The approved naming decision resolves a blocking identity gate, freezes two new filenames, preserves a legacy runtime reference, and advances the single-question decision sequence.</reason>
+  </materiality>
+  <capture>
+    <state>captured</state>
+    <reason>Material provider-neutral execution knowledge was derived from the authorized persisted decision sources.</reason>
+    <minimum_next_path>Review and deduplicate only through loki-continuous-improvement.</minimum_next_path>
+  </capture>
+  <knowledge>
+    <claims>
+      <claim type="decision" confidence="high">
+        <statement>Rheed is the approved canonical spelling for future text and new assets.</statement>
+        <evidence_ref>evidence/decision-naming.xml#completion_record/decisions</evidence_ref>
+      </claim>
+      <claim type="decision" confidence="high">
+        <statement>The legacy file frontend/img/pictures/Portraits/Principal/Reed final.png remains unchanged and must not be renamed as part of this decision projection.</statement>
+        <evidence_ref>analise/technical-analysis.md#decision-preflight</evidence_ref>
+      </claim>
+      <claim type="fact" confidence="high">
+        <statement>The approved decision freezes the new storyteller filenames as Rheed_VN046_Pensativo.png and Rheed_VN046_Solene.png.</statement>
+        <evidence_ref>evidence/decision-naming.xml#integrity</evidence_ref>
+      </claim>
+      <claim type="fact" confidence="high">
+        <statement>DG-CONFIRM-NAME is now the sole must-ask-now gate and asks whether Confirmar establishes Dulgarin on Actor 1 or preserves the current name.</statement>
+        <evidence_ref>analise/technical-analysis.md#decision-preflight</evidence_ref>
+      </claim>
+      <claim type="inference" confidence="medium">
+        <statement>Projecting a human naming decision into all relevant analysis sections before advancing the next gate reduces filename drift while preserving existing runtime references.</statement>
+        <evidence_ref>agent-runs/fase2/agent-run-decision-naming-v1.xml#validators</evidence_ref>
+      </claim>
+    </claims>
+    <attempts>
+      <attempt>
+        <action>Project the approved Rheed naming decision into the authorized technical analysis and advance the one-question preflight.</action>
+        <outcome>Decision markers, frozen filenames, legacy preservation, coverage IDs, and Markdown structure validated successfully; no runtime or asset changed.</outcome>
+        <evidence_ref>evidence/decision-naming.xml#completion_record</evidence_ref>
+      </attempt>
+    </attempts>
+    <resolution status="resolved" confidence="high">
+      <statement>DG-NAMING is resolved as Rheed for new uses while the existing Reed final.png runtime asset is preserved unchanged.</statement>
+    </resolution>
+    <cause status="known" confidence="high">
+      <statement>The naming conflict was resolved by an explicit human decision projected into the run analysis.</statement>
+    </cause>
+    <gaps>
+      <gap>DG-CONFIRM-NAME remains unresolved and blocks final text and staging coherence for the Confirmar branch.</gap>
+      <gap>Creative-package approval, asset intake, implementation, and runtime validation remain later gates.</gap>
+    </gaps>
+    <minimum_next_path>Run the next human decision preflight and ask only DG-CONFIRM-NAME without reopening DG-NAMING.</minimum_next_path>
+    <reuse_guidance>When a human resolves a naming conflict, project the decision consistently into canonical spelling, new filenames, legacy-preservation rules, risk checks, resume state, and the next single active gate.</reuse_guidance>
+    <avoid_next_time>Do not rename legacy assets automatically, introduce the rejected spelling into new filenames, reopen a resolved decision without new authority, or advance implementation before subsequent gates pass.</avoid_next_time>
+  </knowledge>
+  <security>
+    <sanitized>true</sanitized>
+    <raw_payload_included>false</raw_payload_included>
+    <private_reasoning_included>false</private_reasoning_included>
+    <personal_data_included>false</personal_data_included>
+    <secrets_included>false</secrets_included>
+    <evidence_snapshots_copied>false</evidence_snapshots_copied>
+  </security>
+  <promotion>
+    <owner>loki-continuous-improvement</owner>
+    <status>unreviewed</status>
+  </promotion>
+</execution_knowledge_entry>

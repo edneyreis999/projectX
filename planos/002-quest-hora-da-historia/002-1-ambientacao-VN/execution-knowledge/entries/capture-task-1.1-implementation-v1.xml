@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<execution_knowledge_entry schema_version="1">
+  <identity>
+    <capture_id>capture-task-1.1-implementation-v1</capture_id>
+    <calling_workflow>loki-implement-feature</calling_workflow>
+    <run_id>loki-run-v2:b625625fc3f771ba1ccf751c357ec0395a82e2997bd04a06a97ce5b1867033a1</run_id>
+    <run_directory>E:/Projetos/projectX/planos/004-ambientacao-VN</run_directory>
+    <phase>fase1</phase>
+    <task_id>task-1.1</task_id>
+    <agent_run_id>technical-implementer</agent_run_id>
+    <handoff_id>task-1.1-implementation</handoff_id>
+  </identity>
+  <lineage>
+    <target_entry>execution-knowledge/entries/capture-task-1.1-implementation-v1.xml</target_entry>
+    <source_refs>
+      <source_ref type="completion-record" authorization="run-contained">builds/fase1/task-1.1-completion.json</source_ref>
+      <source_ref type="validator-record" authorization="run-contained">builds/fase1/task-1.1-validation.json</source_ref>
+      <source_ref type="build-report" authorization="run-contained">builds/audits/phase/boundary-4d327cb7baf73d6b3cc8f72d624de5df/auditor-report-v1.json</source_ref>
+      <source_ref type="task-state" authorization="run-contained">builds/audits/phase/boundary-4d327cb7baf73d6b3cc8f72d624de5df/checkpoint-v1-0.yaml</source_ref>
+      <source_ref type="build-report" authorization="run-contained">builds/metrics/execution-metrics.json</source_ref>
+    </source_refs>
+  </lineage>
+  <materiality>
+    <material>true</material>
+    <reason>A execução registrou atrito verificável de ambiente, replay autorizado e mutabilidade dos relatórios regenerados, com implicação direta na interpretação dos hashes de validação.</reason>
+  </materiality>
+  <capture>
+    <state>captured</state>
+    <reason>Conhecimento operacional material foi derivado exclusivamente das fontes persistidas autorizadas e validado antes da publicação.</reason>
+    <minimum_next_path>Revisar e deduplicar somente por meio de loki-continuous-improvement.</minimum_next_path>
+  </capture>
+  <knowledge>
+    <claims>
+      <claim type="error" confidence="high">
+        <statement>A primeira tentativa do writer recebeu EPERM ao criar o scratch atômico.</statement>
+        <evidence_ref>builds/fase1/task-1.1-completion.json#attempts</evidence_ref>
+      </claim>
+      <claim type="fact" confidence="high">
+        <statement>A reexecução autorizada fora do sandbox concluiu a escrita, produzindo o Map046 com SHA-256 861f6c6fe4c5953f37fed169814650d1bcc5a8e6ea2f4e82b446ab645c37b892.</statement>
+        <evidence_ref>builds/fase1/task-1.1-completion.json#attempts</evidence_ref>
+      </claim>
+      <claim type="friction" confidence="high">
+        <statement>O validador regenerativo sobrescreve os registros de conclusão e validação com um novo generated_at, alterando os hashes desses relatórios a cada replay.</statement>
+        <evidence_ref>builds/audits/phase/boundary-4d327cb7baf73d6b3cc8f72d624de5df/auditor-report-v1.json#observations</evidence_ref>
+      </claim>
+      <claim type="fact" confidence="high">
+        <statement>Após o replay do validador, o hash do Map046 permaneceu estável, os 22 checks foram aprovados e a lista de erros permaneceu vazia.</statement>
+        <evidence_ref>builds/audits/phase/boundary-4d327cb7baf73d6b3cc8f72d624de5df/auditor-report-v1.json#evidence_consistency</evidence_ref>
+      </claim>
+      <claim type="inference" confidence="high">
+        <statement>Nesta execução, a mudança de hash dos relatórios regenerados não indica mudança funcional quando o hash do artefato alvo permanece estável e o resultado semântico do validador continua 22/22 sem erros.</statement>
+        <evidence_ref>builds/audits/phase/boundary-4d327cb7baf73d6b3cc8f72d624de5df/auditor-report-v1.json#evidence_consistency</evidence_ref>
+      </claim>
+    </claims>
+    <attempts>
+      <attempt>
+        <action>Executar o writer protegido pelo hash de baseline dentro do ambiente sandboxed.</action>
+        <outcome>A operação falhou com EPERM durante a criação do scratch atômico.</outcome>
+        <evidence_ref>builds/fase1/task-1.1-completion.json#attempts</evidence_ref>
+      </attempt>
+      <attempt>
+        <action>Reexecutar o writer com autorização delimitada fora do sandbox.</action>
+        <outcome>A escrita foi concluída e o Map046 obteve o hash esperado.</outcome>
+        <evidence_ref>builds/fase1/task-1.1-completion.json#attempts</evidence_ref>
+      </attempt>
+      <attempt>
+        <action>Reproduzir independentemente o validador após a implementação.</action>
+        <outcome>Os relatórios receberam novos timestamps e hashes, enquanto o Map046 permaneceu estável e os 22 checks voltaram a passar sem erros.</outcome>
+        <evidence_ref>builds/audits/phase/boundary-4d327cb7baf73d6b3cc8f72d624de5df/auditor-report-v1.json#checks_reproduced</evidence_ref>
+      </attempt>
+    </attempts>
+    <resolution status="resolved" confidence="high">
+      <statement>O bloqueio de escrita foi superado por replay autorizado e delimitado; a reconciliação final ancorou a validade funcional no hash estável do Map046 e no resultado semântico reproduzido de 22/22, registrando separadamente os hashes pós-replay dos relatórios.</statement>
+      <evidence_ref>builds/audits/phase/boundary-4d327cb7baf73d6b3cc8f72d624de5df/checkpoint-v1-0.yaml</evidence_ref>
+    </resolution>
+    <cause status="unknown" confidence="unknown">
+      <statement>A causa interna do EPERM não foi determinada pelas evidências; para os hashes dos relatórios, a alteração observada decorre da regeneração do campo generated_at pelo validador.</statement>
+      <evidence_ref>builds/fase1/task-1.1-completion.json#attempts</evidence_ref>
+    </cause>
+    <gaps>
+      <gap>A causa interna da negação EPERM permanece desconhecida.</gap>
+      <gap>Os cenários perceptíveis RQ-P01 a RQ-P09 continuam pendentes de Playtest humano e não são cobertos pela validação estática.</gap>
+    </gaps>
+    <minimum_next_path>Em replays futuros, comparar primeiro o hash do artefato alvo e o conteúdo semântico dos checks; registrar os hashes pós-replay dos relatórios regenerados sem classificá-los isoladamente como mudança funcional.</minimum_next_path>
+    <reuse_guidance>Quando uma escrita atômica delimitada falhar com EPERM, preservar a tentativa, usar apenas o replay autorizado aplicável e confirmar o mesmo hash alvo. Quando o validador regenerar relatórios com timestamp, separar a identidade funcional do artefato e dos checks da identidade temporal dos relatórios.</reuse_guidance>
+    <avoid_next_time>Não interpretar automaticamente a mudança de hash de um relatório regenerativo como alteração funcional e não reutilizar hashes pré-replay desses relatórios em um checkpoint posterior ao replay.</avoid_next_time>
+  </knowledge>
+  <security>
+    <sanitized>true</sanitized>
+    <raw_payload_included>false</raw_payload_included>
+    <private_reasoning_included>false</private_reasoning_included>
+    <personal_data_included>false</personal_data_included>
+    <secrets_included>false</secrets_included>
+    <evidence_snapshots_copied>false</evidence_snapshots_copied>
+  </security>
+  <promotion>
+    <owner>loki-continuous-improvement</owner>
+    <status>unreviewed</status>
+  </promotion>
+</execution_knowledge_entry>

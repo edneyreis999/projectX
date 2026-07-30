@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agentic_agent_review schema_version="1">
+  <review>
+    <run_id>agentic-004-ambientacao-vn-v1</run_id>
+    <analysis_id>004-ambientacao-VN</analysis_id>
+    <reviewer_agent>technical-artist</reviewer_agent>
+    <reviewed_agents>narrative-designer; scene-presentation-designer; technical-artist</reviewed_agents>
+    <handoff_id>handoff-cross-review-technical-art-v1</handoff_id>
+    <agent_run_id>agent-run-cross-review-technical-art-v1</agent_run_id>
+    <mode>cross-review-proposal-only</mode>
+    <status>completed</status>
+  </review>
+
+  <review_scope>Revisão técnica restrita à viabilidade do manifesto, dimensões e memória estimada, nomes e diretórios, layers, Picture IDs, cleanup e dependências da VN do Map046. Nenhum POV upstream, asset, runtime, dado ou documento foi alterado.</review_scope>
+
+  <domain_context_preflight schema_version="1">
+    <agent>technical-artist</agent>
+    <task_id>handoff-cross-review-technical-art-v1</task_id>
+    <required>true</required>
+    <domain_docs_root>docs/domains/technical-artist</domain_docs_root>
+    <task_topics>
+      <topic>manifest-feasibility</topic>
+      <topic>asset-dimensions-and-memory</topic>
+      <topic>asset-naming-and-directories</topic>
+      <topic>picture-layers-ids-cleanup</topic>
+      <topic>asset-dependencies-and-gates</topic>
+    </task_topics>
+    <task_domain_ids>
+      <domain_id>map-046</domain_id>
+      <domain_id>event-1-page-1</domain_id>
+      <domain_id>picture-1</domain_id>
+      <domain_id>picture-2</domain_id>
+      <domain_id>picture-10-provisional</domain_id>
+      <domain_id>choice-qualSeuNome</domain_id>
+    </task_domain_ids>
+    <relevant_surfaces>
+      <surface>narrative-designer.xml narrative gates and B10-B11 intent</surface>
+      <surface>scene-presentation-designer.xml staging and preliminary asset manifest</surface>
+      <surface>narrative-designer-review.xml cross-domain conflicts</surface>
+      <surface>scene-presentation-designer-review.xml resolved technical recommendation</surface>
+      <surface>technical-artist.xml asset contract and preliminary manifest</surface>
+    </relevant_surfaces>
+    <selection_basis>
+      <basis>The domain README is the minimum durable source for static memory/reference limits and mandatory Playtest/profiling boundaries.</basis>
+      <basis>The four caller-named current artifacts are the closed review set; the technical-art POV supplies the contract being reviewed.</basis>
+    </selection_basis>
+    <read_attempt>
+      <readme_path>docs/domains/technical-artist/README.md</readme_path>
+      <status>read</status>
+      <reason>README read first before the cross-review artifacts.</reason>
+    </read_attempt>
+    <docs_considered>
+      <doc path="docs/domains/technical-artist/README.md" routed_by="README" selected="true">Matches visual assets, memory/performance and asset-runtime references.</doc>
+    </docs_considered>
+    <docs_read>
+      <doc path="docs/domains/technical-artist/README.md" freshness_status="uncertain">
+        <relevance>Static metadata and references do not validate residency, rendering, frame pacing or visual quality.</relevance>
+        <matched_topics>asset-dimensions-and-memory; asset-dependencies-and-gates</matched_topics>
+        <matched_domain_ids>map-046</matched_domain_ids>
+        <matched_surfaces>PNG assets, preload and runtime validation</matched_surfaces>
+        <freshness_evidence>The cross-review artifacts are current for this run; the durable document remains a general inventory.</freshness_evidence>
+      </doc>
+    </docs_read>
+    <relevant_facts>
+      <fact source_kind="durable-doc" source_locator="docs/domains/technical-artist/README.md">Texture dimensions and static references are not measured simultaneous residency or frame pacing.</fact>
+      <fact source_kind="current-source" source_locator="technical-artist.xml:/agentic_agent_pov/asset_contract">The proposed runtime contract uses 408x560 RGBA bust variants, a 1280x720 opaque background, IDs 1-2 for busts and a provisional transient Cut-In slot.</fact>
+      <fact source_kind="current-source" source_locator="scene-presentation-designer-review.xml:/agentic_agent_review/resolved_recommendation">The presentation review converges on parallax background, ID 10 provisional for the Cut-In and no initial smoke VFX.</fact>
+    </relevant_facts>
+    <conflicts_with_task_context/>
+    <freshness status="uncertain">Runtime ownership, cache residency, visual fit and cleanup remain unvalidated.</freshness>
+    <missing_context>
+      <item material="false" substitute_locator="implementation-time ownership inventory and Playtest">Numeric ownership of plugin-managed choice UI is not proven; semantic transient slots can be reviewed without freezing a conflicting ID.</item>
+    </missing_context>
+    <cross_domain_lookup required="false">
+      <destination>none</destination>
+      <requested_domain>none</requested_domain>
+      <requested_topics_or_ids/>
+      <reason>The provided POVs and completed reviews are sufficient; remaining items are explicit human/runtime gates.</reason>
+    </cross_domain_lookup>
+    <result>ready-with-gaps</result>
+    <result_reason>The closed artifact set supports a technical cross-review while ID ownership, measured memory and perceptible behavior remain pending.</result_reason>
+    <minimum_next_input>none</minimum_next_input>
+    <durable_doc_gap_handoff required="false">
+      <destination>none</destination>
+      <gap_summary/>
+    </durable_doc_gap_handoff>
+  </domain_context_preflight>
+
+  <findings count="6">
+    <finding id="TA-CR-F01" severity="high" class="manifest-scope" status="resolve-before-asset-request">
+      <locators>
+        <locator>scene-presentation-designer.xml:/agentic_agent_pov/preliminary_asset_manifest</locator>
+        <locator>technical-artist.xml:/agentic_agent_pov/preliminary_manifest</locator>
+        <locator>scene-presentation-designer-review.xml:/agentic_agent_review/material_conflicts/conflict[@id='C02']</locator>
+      </locators>
+      <description>The viable first manifest is reuse-first: two current neutral busts and current choice art, three approved 408x560 expression variants, one 1280x720 background, and one conditional Cut-In. Smoke/VFX is not yet justified and should not reserve an asset or ID.</description>
+      <recommendation>Freeze one core manifest with expression assets VN046-POR-01..03 and background VN046-BG-01; retain VN046-CUT-01 only if approved; exclude VN046-VFX-01 from this delivery.</recommendation>
+      <gate>Human approval of the three expressions, background direction and Cut-In verdict before any asset request.</gate>
+    </finding>
+
+    <finding id="TA-CR-F02" severity="medium" class="dimensions-memory" status="static-estimate-only">
+      <locators>
+        <locator>technical-artist.xml:/agentic_agent_pov/asset_contract/memory_preload_and_lifetime</locator>
+        <locator>scene-presentation-designer.xml:/agentic_agent_pov/preliminary_asset_manifest</locator>
+        <locator>scene-presentation-designer-review.xml:/agentic_agent_review/validator_notes/validator_note[@id='V06']</locator>
+      </locators>
+      <description>The contracts agree on 408x560 RGBA expression canvases and 1280x720 background/Cut-In exports. Estimated decoded scene textures are approximately 5.564 MiB without the Cut-In and 9.080 MiB with one Cut-In, excluding engine/UI textures, cache retention and swap overlap.</description>
+      <recommendation>Preload only the final scene set, replace rather than stack expression textures, retain at most one Cut-In, and recompute the final simultaneous set after the manifest freezes.</recommendation>
+      <gate>Asset-intake dimension/alpha checks plus Playtest/profiling on target hardware before memory, load hitch or frame pacing is declared valid.</gate>
+    </finding>
+
+    <finding id="TA-CR-F03" severity="high" class="naming-directories" status="freeze-after-human-gates">
+      <locators>
+        <locator>scene-presentation-designer.xml:/agentic_agent_pov/preliminary_asset_manifest/asset[@id='VN046-POR-01' or @id='VN046-POR-02' or @id='VN046-BG-01' or @id='VN046-CUT-01']</locator>
+        <locator>technical-artist.xml:/agentic_agent_pov/asset_contract/requirements</locator>
+        <locator>narrative-designer-review.xml:/agentic_agent_review/findings/finding[@id='F03']</locator>
+        <locator>scene-presentation-designer-review.xml:/agentic_agent_review/material_conflicts/conflict[@id='C03' or @id='C04']</locator>
+      </locators>
+      <description>ContadorHistoria_* versus Reed/Rheed_VN046_* and VN046/* versus parallaxes/CutIns are incompatible request contracts; issuing both would create duplicates or broken references.</description>
+      <recommendation>Preserve existing Reed final.png and CriancaOrc_.png. After the Reed/Rheed gate, select exactly one storyteller family; use Portraits/Principal for variants, frontend/img/parallaxes/VN046_NoiteHistoria_BG.png for the background, and frontend/img/pictures/CutIns/VN046_ThorinIntroducao_CutIn.png only if approved.</recommendation>
+      <gate>Resolve Reed/Rheed, confirm directories and freeze one exact-case filename per approved asset before user delivery.</gate>
+    </finding>
+
+    <finding id="TA-CR-F04" severity="high" class="layers-ids-cleanup" status="correct-before-implementation-plan">
+      <locators>
+        <locator>scene-presentation-designer.xml:/agentic_agent_pov/layer_and_picture_plan</locator>
+        <locator>technical-artist.xml:/agentic_agent_pov/asset_contract/layer_and_picture_id_contract</locator>
+        <locator>technical-artist.xml:/agentic_agent_pov/validation_matrix/validator[@id='TA-V05']</locator>
+        <locator>scene-presentation-designer-review.xml:/agentic_agent_review/material_conflicts/conflict[@id='C01']</locator>
+      </locators>
+      <description>The consistent stack is parallax background below bust IDs 1-2, plugin-managed UI without an assigned ID, and a provisional transient Cut-In at ID 10. The technical POV's TA-V05 incorrectly requests Cut-In absence before code 404 even though B10 occurs after that reconvergence.</description>
+      <recommendation>Do not reserve IDs 3-4. Inventory picture ownership before freezing ID 10; enter the Cut-In only at B10, erase it after B10 and before B11, then assert absence again before COMPLETE_VN and FinishVisualNovel.</recommendation>
+      <gate>Implementation-time picture ownership review, structured cleanup validator and Playtest of z-order/residual pictures in both branches.</gate>
+    </finding>
+
+    <finding id="TA-CR-F05" severity="medium" class="choice-assets" status="reuse-with-runtime-boundary">
+      <locators>
+        <locator>technical-artist.xml:/agentic_agent_pov/asset_contract/baseline/choice_system</locator>
+        <locator>narrative-designer-review.xml:/agentic_agent_review/findings/finding[@id='F04']</locator>
+        <locator>scene-presentation-designer-review.xml:/agentic_agent_review/resolved_recommendation/choice</locator>
+      </locators>
+      <description>The completed reviews reconcile the reusable choice files as InnButton_01 normal at 388x101 and InnButton_00 hover at 392x104. No new choice art is needed, but plugin-managed draw order, hit area and cleanup are not established by PNG metadata.</description>
+      <recommendation>Carry only exact paths and resolved dimensions into the final manifest; assign no Picture ID and make no visual-state change in this phase.</recommendation>
+      <gate>Playtest normal, hover, input, branch selection and cleanup at 1280x720.</gate>
+    </finding>
+
+    <finding id="TA-CR-F06" severity="high" class="dependency-gates" status="must-carry-to-synthesis">
+      <locators>
+        <locator>narrative-designer.xml:/agentic_agent_pov/human_gates/gate[@id='G01' or @id='G02' or @id='G03' or @id='G04']</locator>
+        <locator>narrative-designer-review.xml:/agentic_agent_review/findings/finding[@id='F01' or @id='F05' or @id='F10']</locator>
+        <locator>scene-presentation-designer-review.xml:/agentic_agent_review/gates</locator>
+      </locators>
+      <description>Asset and staging feasibility depends on unresolved Reed/Rheed naming, Confirmar semantics, switches 43/44, canonical Thorin reference and potion/smoke approval. Visual implementation cannot safely absorb or conceal those decisions.</description>
+      <recommendation>Preserve all switch 43/44 operations by default; keep the Cut-In and expression staging conditional; keep literal mountain imagery and smoke outside approved art until their respective gates close.</recommendation>
+      <gate>Human decisions on identity, branch consequence, Thorin art direction and staging, followed by technical diagnosis of switches 43/44 before implementation changes.</gate>
+    </finding>
+  </findings>
+
+  <completion_record terminal="true">
+    <result>completed-cross-review</result>
+    <affected_files>
+      <file>planos/004-ambientacao-VN/analise/agentes/technical-artist-review.xml</file>
+    </affected_files>
+    <validators>XML parse; agentic_agent_review schema v1; six findings; locators, severity, recommendation and gate present in every finding; no upstream or runtime write.</validators>
+    <human_validation>runtime-pending</human_validation>
+    <next_destination>synthesis</next_destination>
+    <execution_evidence>orchestrator-owned</execution_evidence>
+  </completion_record>
+</agentic_agent_review>
