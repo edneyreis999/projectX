@@ -1441,9 +1441,72 @@
                                     "StartOffsetX:eval": "-200",
                                     "StartOffsetY:eval": "+0",
                                     "EasingType:str": "OutSine",
-                                    "HorzMirror:str": "Auto",
+                                    "HorzMirror:str": "Auto-Reverse",
                                     "Duration:eval": "20"
                                 }
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Picture ID = 1"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Picture File = Portraits/Principal/Reed final"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Origin = Bust"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Screen Position = 9"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Start Offset X = -200"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Start Offset Y = +0"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Entrance Easing = OutSine"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Horizontal Mirror = Auto-Reverse"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Duration = 20"
                             ]
                         },
                         {
@@ -1727,44 +1790,6 @@
                             ]
                         },
                         {
-                            "code": 357,
-                            "indent": 1,
-                            "parameters": [
-                                "VisuMZ_2_VNPictureBusts",
-                                "Basic_ExitBusts",
-                                "BASIC: Exit Bust(s)",
-                                {
-                                    "PictureID:arrayeval": "[\"1\",\"2\"]",
-                                    "EndOffsetX:eval": "+200",
-                                    "EndOffsetY:eval": "-0",
-                                    "EasingType:str": "InSine",
-                                    "FlipDirection:str": "None",
-                                    "Duration:eval": "20",
-                                    "AutoErase:eval": "true"
-                                }
-                            ]
-                        },
-                        {
-                            "code": 357,
-                            "indent": 1,
-                            "parameters": [
-                                "VisuMZ_2_VNPictureBusts",
-                                "Basic_EnterBust",
-                                "BASIC: Enter Bust",
-                                {
-                                    "PictureID:eval": "1",
-                                    "PictureName:str": "Portraits/Principal/Reed final",
-                                    "Origin:str": "Bust",
-                                    "Position:num": "9",
-                                    "StartOffsetX:eval": "-200",
-                                    "StartOffsetY:eval": "+0",
-                                    "EasingType:str": "OutSine",
-                                    "HorzMirror:str": "Auto",
-                                    "Duration:eval": "20"
-                                }
-                            ]
-                        },
-                        {
                             "code": 402,
                             "indent": 0,
                             "parameters": [
@@ -1800,24 +1825,6 @@
                             ]
                         },
                         {
-                            "code": 357,
-                            "indent": 1,
-                            "parameters": [
-                                "VisuMZ_2_VNPictureBusts",
-                                "Basic_ExitBusts",
-                                "BASIC: Exit Bust(s)",
-                                {
-                                    "PictureID:arrayeval": "[\"2\"]",
-                                    "EndOffsetX:eval": "-200",
-                                    "EndOffsetY:eval": "+0",
-                                    "EasingType:str": "InSine",
-                                    "FlipDirection:str": "None",
-                                    "Duration:eval": "20",
-                                    "AutoErase:eval": "true"
-                                }
-                            ]
-                        },
-                        {
                             "code": 303,
                             "indent": 1,
                             "parameters": [
@@ -1836,6 +1843,20 @@
                                     "PictureID:eval": "1",
                                     "PictureName:str": "Portraits/Principal/Reed final"
                                 }
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 1,
+                            "parameters": [
+                                "Picture ID = 1"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 1,
+                            "parameters": [
+                                "Picture File = Portraits/Principal/Reed final"
                             ]
                         },
                         {
@@ -1881,6 +1902,20 @@
                                     "PictureID:eval": "1",
                                     "PictureName:str": "Portraits/Principal/Rheed_VN046_Solene"
                                 }
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Picture ID = 1"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Picture File = Portraits/Principal/Rheed_VN046_Solene"
                             ]
                         },
                         {
@@ -2033,7 +2068,7 @@
                                 "Basic_ExitBusts",
                                 "BASIC: Exit Bust(s)",
                                 {
-                                    "PictureID:arrayeval": "[\"1\"]",
+                                    "PictureID:arrayeval": "[\"1\",\"2\"]",
                                     "EndOffsetX:eval": "-200",
                                     "EndOffsetY:eval": "+0",
                                     "EasingType:str": "InSine",
@@ -2041,6 +2076,55 @@
                                     "Duration:eval": "20",
                                     "AutoErase:eval": "true"
                                 }
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Picture ID(s) = [\"1\",\"2\"]"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "End Offset X = -200"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "End Offset Y = +0"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Exit Easing = InSine"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Flip Direction = None"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Duration = 20"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Auto-Erase? = true"
                             ]
                         },
                         {
