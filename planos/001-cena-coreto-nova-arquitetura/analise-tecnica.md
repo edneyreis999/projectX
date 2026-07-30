@@ -3,9 +3,9 @@ title: "Cena Coreto: arquitetura EX/VN com quest canônica"
 type: loki-technical-analysis
 doc_id: "coreto-cena-ex-vn-technical-analysis"
 version: "1.0.0"
-status: draft
+status: completed
 created: "2026-07-28"
-last_updated: "2026-07-28"
+last_updated: "2026-07-30"
 scope: "Recomendação baseada em evidências para reestruturar a cena Coreto entre Map022, Map046 e Map045"
 not_scope: "Escritas de produção, aprovação implícita de ativação de plugins ou compatibilidade com saves legados"
 authority: "Decisões humanas registradas na demanda, política do projeto, contrato de análise técnica e evidências citadas"
@@ -203,7 +203,7 @@ A preflight já fechou `questKey = noite-da-historia`, estado inicial `0` e graf
 
 ```yaml
 loki_technical_analysis_state:
-  status: "ready-for-implementation"
+  status: "completed"
   sources_read:
     - "planos/001-cena-coreto-nova-arquitetura/demanda-improved.md"
     - "frontend/data/Map022.json"
@@ -245,7 +245,7 @@ loki_technical_analysis_state:
     reason: "No available Write Agent is authorized for a transient consumer-plan technical-analysis Markdown; technical-implementer is proposal-only/runtime scoped."
     validators: "template fields, local-path checks and static evidence checks"
   recommended_next_command: "loki-implement-feature"
-  next_action: "Run unified implementation with this analysis and demand; begin by inventorying calls, IDs and the equivalence matrix."
+  next_action: "No functional implementation work remains; see builds/administrative-reconciliation-v1.yaml for the manual terminal reconciliation."
   blocked_by:
-    - "none; runtime/editor gates remain future validation"
+    - "none"
 ```
