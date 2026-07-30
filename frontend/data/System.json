@@ -125,7 +125,7 @@
         "pitch": 100,
         "volume": 90
     },
-    "editMapId": 46,
+    "editMapId": 22,
     "elements": [
         "",
         "Físico",
@@ -742,7 +742,7 @@
         "",
         "Inimigos derrotados(release)"
     ],
-    "versionId": 85240249,
+    "versionId": 89344918,
     "victoryMe": {
         "name": "Victory1",
         "pan": 0,

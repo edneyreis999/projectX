@@ -1,0 +1,2 @@
+- após conversar com as crianças, elas deveriam se reposicionar para o centro, para Rheed contar sua história. Percebi que é por causa da variavel errada na segunda página do evento de todas as crianças. Atualize a segunda que aconteça com a variavel 106 e estado 10.
+- Após fazer isso, as crianças vão se reposicionar de forma abrupta. Quero que, ao invés de usar o comando definir posição, use o "Definir movimento (Move to)" sem Wait.
