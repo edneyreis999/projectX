@@ -1,0 +1,14 @@
+{
+  "acceptance_criterion_refs": ["AC-MAP045-01", "AC-MAP045-02", "AC-MAP045-03", "AC-MAP045-04"],
+  "evidence_refs": [
+    "planos/003-falas-casa-forjaprata/builds/fase1/map045-validation-report.json",
+    "planos/003-falas-casa-forjaprata/builds/fase1/map045-preview.json",
+    "planos/003-falas-casa-forjaprata/builds/fase1/validation-cycles/cycle-1/severity-finding-v2.json",
+    "planos/003-falas-casa-forjaprata/builds/fase1/validation-cycles/cycle-1/failed-validation-report-sha256-9e52adaca905664890e916fc398ae150510bd37dc9d1ccb15caccf14bd229195.json"
+  ],
+  "identity": "validator:node-map045-static-v2",
+  "result": "passed",
+  "schema_version": 1,
+  "task_ref": "planos/003-falas-casa-forjaprata/task-1.1.md",
+  "validator_id": "validator-record-v1:map045-static-reconciled"
+}

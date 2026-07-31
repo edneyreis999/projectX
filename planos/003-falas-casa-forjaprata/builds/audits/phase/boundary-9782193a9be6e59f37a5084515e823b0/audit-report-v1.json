@@ -1,0 +1,254 @@
+{
+  "schema_version": 1,
+  "audit_scope": {
+    "run_id": "loki-run-v2:53cbcab6fb34b0b3f2f6028078604aff6ca97ccac235396ffe68862650552ee5",
+    "execution_id": "loki-execution-v2:4cd49b778f2fa77710ecb40d158cb698ccac35a8e076dccbb6f891adc2647c83",
+    "frequency": "phase",
+    "boundary_type": "phase",
+    "boundary_ref": "phase:fase1",
+    "policy_digest": "sha256:e3aeea217ca7881865de40d29e0e28e95bc32f4255e2488597801a8909e3bd78",
+    "mode": "complete-static-boundary-audit",
+    "runtime_validation_performed": false
+  },
+  "auditor_identity": "auditor:phase-map045-v1",
+  "auditor_lineage": {
+    "agent_name": "phase-auditor",
+    "runtime_task_ref": "/root/map045_phase_audit",
+    "preflight_ref": "planos/003-falas-casa-forjaprata/preflights/run-17d91eab7bf669664b09e697206afed0/phase-auditor/preflight-v1.md"
+  },
+  "independence": {
+    "result": "passed",
+    "writer_identities": [
+      "agent:technical-implementer-map045"
+    ],
+    "primary_validator_identities": [
+      "validator:node-map045-static-v1"
+    ],
+    "final_validator_identities": [
+      "validator:orchestrator-final-map045"
+    ],
+    "evidence": "The auditor identity and runtime task lineage differ from the covered Writer and both validator identities; no covered production or validation artifact was written by this auditor."
+  },
+  "membership_refs": [
+    "planos/003-falas-casa-forjaprata/task-1.1.md"
+  ],
+  "covered_handoff_refs": [
+    "planos/003-falas-casa-forjaprata/builds/fase1/writer-handoff-v1.json"
+  ],
+  "covered_target_digests": [
+    "frontend/data/Map045.json=sha256:5030496827aafc9e79fdbf99b21bea933fdbf2d2ee38863051f60f98bd2382f6",
+    "planos/003-falas-casa-forjaprata/builds/fase1/map045-repair-manifest.json=sha256:649154a936e10ab057292640b41fdbf9db0852e5ce7fa32549d15f350793c986",
+    "planos/003-falas-casa-forjaprata/builds/fase1/map045-preview.json=sha256:d28abf7b2ebdab132339eb053d40b5281959ad29bc3514018d781253ce5bcb6c",
+    "planos/003-falas-casa-forjaprata/builds/fase1/map045-validation-report.json=sha256:45c74cd867089680067dcf96885da4505dbef8bb77f4955d5b152fb762e1e255",
+    "planos/003-falas-casa-forjaprata/builds/fase1/repair-map045-encoding.mjs=sha256:f6d6bcb6be66e6be7d1c1c8db65a539a971eee5de95084f374aed67415fc45f3",
+    "planos/003-falas-casa-forjaprata/builds/fase1/validate-map045-encoding.mjs=sha256:4b9d6c92d4940f1fc4773ab14e90e421d0cb2df6c79b5c9b5a45c928e63adedb"
+  ],
+  "primary_validation_refs": [
+    "planos/003-falas-casa-forjaprata/builds/fase1/validator-record-v1.json"
+  ],
+  "final_validator_refs": [
+    "planos/003-falas-casa-forjaprata/builds/fase1/final-validator-record-v1.json"
+  ],
+  "checks": [
+    {
+      "id": "AUD-MAP045-01",
+      "subject": "six-covered-target-digests",
+      "evidence": {
+        "expected_map045_sha256": "5030496827aafc9e79fdbf99b21bea933fdbf2d2ee38863051f60f98bd2382f6",
+        "observed_map045_sha256": "68c77591e43a96f1d60630ac1c7250f45238bb43a24654f79997a75fcd1c16f3",
+        "matching_other_target_digests": 5,
+        "total_target_digests": 6
+      },
+      "result": "failed"
+    },
+    {
+      "id": "AUD-MAP045-02",
+      "subject": "AC-MAP045-01-exactly-30-frozen-repairs",
+      "evidence": {
+        "manifest_entries": 30,
+        "unique_ids": 30,
+        "unique_paths": 30,
+        "current_values_equal_frozen_expected": 30,
+        "independent_cp1252_recoveries_equal_expected": 30,
+        "recovery_pass_distribution": {
+          "one_pass": 3,
+          "two_passes": 27
+        }
+      },
+      "result": "passed"
+    },
+    {
+      "id": "AUD-MAP045-03",
+      "subject": "AC-MAP045-02-nonallowlisted-equality-and-concurrent-addition-preservation",
+      "evidence": {
+        "handoff_validated_pages": 50,
+        "observed_pages": 49,
+        "handoff_validated_branch_commands": 19,
+        "observed_branch_commands": 22,
+        "observed_post-validation_branch": "E007/P01 contains a structurally paired 111/411/412 trio",
+        "observed_git_numstat": "139 additions, 31 deletions for frontend/data/Map045.json",
+        "concurrent_event_20_present": true,
+        "complete_validated_concurrent_state_preserved": false
+      },
+      "result": "failed"
+    },
+    {
+      "id": "AUD-MAP045-04",
+      "subject": "rebased-baseline-byte-reconstruction",
+      "evidence": {
+        "expected_rebased_baseline_sha256": "0255cfc0e26f6b39c988683ca9cc1b1ada4b71e85a59365e93dfea3628811c2e",
+        "observed_reconstruction_from_current_bytes_sha256": "fe1857ba845c998882860c724ff43881f603a2612cc8f965c6df7c4717a572b2",
+        "current_to-reconstructed_leaf_diff_count": 30,
+        "current_to-reconstructed_paths_equal_manifest": true
+      },
+      "result": "failed"
+    },
+    {
+      "id": "AUD-MAP045-05",
+      "subject": "AC-MAP045-03-utf8-json-and-clean-target-values",
+      "evidence": {
+        "utf8_json_parse": "passed",
+        "target_values_without_u_fffd": 30,
+        "target_values_equal_frozen_expected": 30,
+        "command_locators_and_codes_valid": 30
+      },
+      "result": "passed"
+    },
+    {
+      "id": "AUD-MAP045-06",
+      "subject": "structure-counts-branches-plugin-payload-counts-and-callers",
+      "evidence": {
+        "events": {
+          "expected": 20,
+          "observed": 20
+        },
+        "pages": {
+          "expected": 50,
+          "observed": 49
+        },
+        "commands": {
+          "101": 26,
+          "401": 26,
+          "102": 4,
+          "402": 8,
+          "404": 4,
+          "357": 64,
+          "657": 402
+        },
+        "show_text_orphan_401": 0,
+        "show_text_empty_101": 0,
+        "branch_indent_structure_current": "passed",
+        "common_event_16_callers": 10,
+        "overall_expected_structure": "failed because page count and branch fingerprint differ from the full retest"
+      },
+      "result": "failed"
+    },
+    {
+      "id": "AUD-MAP045-07",
+      "subject": "AC-MAP045-04-out-of-scope-guard",
+      "evidence": {
+        "map006_expected_sha256": "2db7a21b646dd6a89daae8d1aa9c78852f00f8504a2424ef2656854a45551679",
+        "map006_observed_sha256": "2db7a21b646dd6a89daae8d1aa9c78852f00f8504a2424ef2656854a45551679",
+        "production_target_ledger": [
+          "frontend/data/Map045.json"
+        ]
+      },
+      "result": "passed"
+    },
+    {
+      "id": "AUD-MAP045-08",
+      "subject": "validator-defect-cycle-and-full-retest",
+      "evidence": {
+        "classification": "validator-defect",
+        "severity": null,
+        "retry_debit": false,
+        "full_retest_recorded_checks": 144,
+        "full_retest_recorded_status": "passed-static-runtime-pending",
+        "full_retest_fresh_for_current_map": false,
+        "recorded_retested_map_sha256": "5030496827aafc9e79fdbf99b21bea933fdbf2d2ee38863051f60f98bd2382f6",
+        "current_map_sha256": "68c77591e43a96f1d60630ac1c7250f45238bb43a24654f79997a75fcd1c16f3"
+      },
+      "result": "failed"
+    },
+    {
+      "id": "AUD-MAP045-09",
+      "subject": "failure-evidence-addressability",
+      "evidence": {
+        "severity_finding_failure_evidence_digest": "sha256:9e52adaca905664890e916fc398ae150510bd37dc9d1ccb15caccf14bd229195",
+        "current_failure_evidence_locator_digest": "sha256:45c74cd867089680067dcf96885da4505dbef8bb77f4955d5b152fb762e1e255",
+        "severity_finding_preserved": true,
+        "exact_original_failure_report_resolves_at_declared_locator": false
+      },
+      "result": "failed"
+    },
+    {
+      "id": "AUD-MAP045-10",
+      "subject": "scratch-cleanup-and-diff-check",
+      "evidence": {
+        "relevant_tmp_scratch_or_bak_files_found": 0,
+        "git_diff_check_exit_code": 0,
+        "git_diff_check_note": "Only line-ending advisories were emitted; the check itself passed."
+      },
+      "result": "passed"
+    },
+    {
+      "id": "AUD-MAP045-11",
+      "subject": "human-playtest-gate",
+      "evidence": {
+        "playtest_ref": "planos/003-falas-casa-forjaprata/interaction/fase1/playtest-map045.md",
+        "status": "pending",
+        "runtime_validated": false
+      },
+      "result": "pending-human-validation"
+    }
+  ],
+  "findings": [
+    {
+      "id": "FINDING-MAP045-PHASE-001",
+      "affected_refs": [
+        "planos/003-falas-casa-forjaprata/task-1.1.md#AC-MAP045-02",
+        "planos/003-falas-casa-forjaprata/builds/fase1/writer-handoff-v1.json",
+        "planos/003-falas-casa-forjaprata/builds/fase1/validator-record-v1.json",
+        "planos/003-falas-casa-forjaprata/builds/fase1/final-validator-record-v1.json"
+      ],
+      "observed": "Map045 changed after the covered handoff and full retest. Its current digest is outside coverage, its page count is 49 instead of 50, and its branch fingerprint gained an E007/P01 111/411/412 trio.",
+      "impact": "The six-target coverage is stale, AC-MAP045-02 is not satisfied for the covered bytes, and the primary/final validation records cannot approve the current Map045."
+    },
+    {
+      "id": "FINDING-MAP045-PHASE-002",
+      "affected_refs": [
+        "planos/003-falas-casa-forjaprata/builds/fase1/validation-cycles/cycle-1/severity-finding-v1.json",
+        "planos/003-falas-casa-forjaprata/builds/fase1/map045-validation-report.json"
+      ],
+      "observed": "The severity finding names a failed report digest that no longer resolves at its declared locator because the full-retest report occupies that path.",
+      "impact": "The validator-defect classification remains inspectable in the severity finding, but the exact original failure report cannot be independently re-read from the declared evidence locator."
+    }
+  ],
+  "corrections_required": [
+    "Reconcile the latest concurrent Map045 state without discarding user work, restoring or explicitly accounting for the missing validated page and the new E007/P01 conditional branch.",
+    "Rebase the manifest and preview only if the reconciled current state is intentionally accepted, then regenerate all six target digests from stable bytes.",
+    "Rerun the complete deterministic primary validation and the applicable final validator against the reconciled Map045; do not reuse the stale 144-check pass.",
+    "Persist the original failure evidence at an immutable digest-addressable locator, or replace the stale failure_evidence_ref with a new immutable cycle record that preserves the exact failed evidence bytes.",
+    "Refresh the boundary-auditor preflight for the new coverage and replay the complete phase:fase1 audit with all six targets and all four ACs; do not audit only the correction delta."
+  ],
+  "residual_risks": [
+    "Runtime presentation remains pending the prescribed human Playtest; this is acceptable only after automatic validation and the replayed phase audit pass.",
+    "Map006 remains intentionally divergent and can reintroduce the mojibake through a future manual copy unless handled by a separate demand.",
+    "The exact provenance of the post-handoff Map045 edits is not established by persisted audit evidence, so the correction must preserve the latest user state and fail closed on further drift."
+  ],
+  "status": "finding",
+  "next_action": "Invalidate the stale phase coverage, reconcile Map045 under the authorized Writer, execute a complete primary and final retest, refresh coverage/preflight, and replay the entire phase:fase1 boundary audit. Keep Playtest pending until that static replay passes.",
+  "completion_summary": {
+    "result": "finding",
+    "static_checks_approved": false,
+    "covered_targets_matching": "5/6",
+    "acceptance_criteria": {
+      "AC-MAP045-01": "passed-on-current-bytes",
+      "AC-MAP045-02": "failed-on-current-bytes",
+      "AC-MAP045-03": "passed-on-current-bytes",
+      "AC-MAP045-04": "passed-with-map006-guard-evidence"
+    },
+    "human_validation": "pending",
+    "boundary_approved": false
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "agent_run_id": "agent-run-v1:3537bbb4e7dbba94a12dda6d82f572ad395b6aa794171ff959aa040ba9de2f47",
+  "evidence_refs": [
+    "planos/003-falas-casa-forjaprata/builds/fase1/writer-completion-v3.json",
+    "planos/003-falas-casa-forjaprata/builds/fase1/map045-validation-report.json",
+    "planos/003-falas-casa-forjaprata/builds/fase1/writer-completion-v2.json",
+    "planos/003-falas-casa-forjaprata/builds/fase1/writer-handoff-v2.json"
+  ],
+  "handoff_id": "handoff-v1:7cbe8159f8591e10c0612a3fd94735489921c057158911e175574e4457a95c47",
+  "human_gate": {
+    "final_persistence_owner": "orchestrator",
+    "playtest": "confirmed"
+  },
+  "latest_editor_state_preserved": true,
+  "predecessor_completion_ref": "planos/003-falas-casa-forjaprata/builds/fase1/writer-completion-v2.json",
+  "predecessor_handoff_ref": "planos/003-falas-casa-forjaprata/builds/fase1/writer-handoff-v2.json",
+  "production_write": false,
+  "schema_version": 1,
+  "target_digests": [
+    {"digest": "sha256:d8776988caa9641889a3b26256e777a855280d994ef9343d30be124b148bbdd4", "path": "frontend/data/Map045.json"},
+    {"digest": "sha256:6e27efa4bebf9367f0ec51b6bff8c3080d03f5f3e3087b7330a56b325a40028e", "path": "planos/003-falas-casa-forjaprata/builds/fase1/map045-repair-manifest.json"},
+    {"digest": "sha256:b068c8fe4ea06919937bba3af85c1c0f63ec93d885df73764dbe9106df743f6e", "path": "planos/003-falas-casa-forjaprata/builds/fase1/map045-preview.json"},
+    {"digest": "sha256:d39a35cbf489d8cd9356c74205b96df9756f26730e0913709422c3b7d4d08858", "path": "planos/003-falas-casa-forjaprata/builds/fase1/map045-validation-report.json"},
+    {"digest": "sha256:e4d45847315513026ef756b34c5ef39f3ead6db28ad63476f9c4bb05a711100c", "path": "planos/003-falas-casa-forjaprata/builds/fase1/repair-map045-encoding.mjs"},
+    {"digest": "sha256:3a1021b555e03895e0c8f95cf3e60c7c1023a968ef4deef35f6dfeeb83a5b118", "path": "planos/003-falas-casa-forjaprata/builds/fase1/validate-map045-encoding.mjs"}
+  ],
+  "task_ref": "planos/003-falas-casa-forjaprata/task-1.1.md",
+  "writer_identity": "agent:technical-implementer-map045"
+}

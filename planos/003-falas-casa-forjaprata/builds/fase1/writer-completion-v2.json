@@ -1,0 +1,32 @@
+{
+  "agent_run_id": "agent-run-v1:80ef592177bbf604c1530d3e32b4b0a330d8827d48444f87b60d731a67f7e3a6",
+  "attempts": [
+    "The phase audit detected post-handoff Map045 drift and invalidated the first coverage set.",
+    "The current user state was accepted as authoritative; Map045 required no further write.",
+    "Manifest, preview, validation report and validators were reconciled and the complete validation route was replayed."
+  ],
+  "decisions": [
+    "Keep the concurrently removed empty page removed.",
+    "Preserve event 20 and the E7/P1 conditional branch.",
+    "Retain exactly the 30 frozen repaired values and rebase only validation artifacts."
+  ],
+  "handoff_id": "handoff-v1:bde81054b8bf64cb4077999efb40af7f81b33d1a4582f91a83638ad27da75dbc",
+  "known_errors": [],
+  "next_destination": "orchestrator",
+  "predecessor_completion_ref": "planos/003-falas-casa-forjaprata/builds/fase1/writer-completion-v1.json",
+  "residual_risks": [
+    "Runtime presentation remains pending human Playtest.",
+    "Map006 remains divergent and needs a separate demand if synchronization is desired."
+  ],
+  "schema_version": 1,
+  "status": "pending-human-validation",
+  "summary": "Current Map045 user state was preserved without a production rewrite; all 30 allowlisted repairs remain correct and 146 deterministic checks passed after full reconciliation.",
+  "task_ref": "planos/003-falas-casa-forjaprata/task-1.1.md",
+  "validations": [
+    "Writer precheck passed with mapWriteRequired false",
+    "Primary and final validators passed 146 of 146 checks",
+    "Map045 SHA-256 68c77591e43a96f1d60630ac1c7250f45238bb43a24654f79997a75fcd1c16f3",
+    "Map006 SHA-256 unchanged 2db7a21b646dd6a89daae8d1aa9c78852f00f8504a2424ef2656854a45551679",
+    "node --check and git diff --check passed"
+  ]
+}

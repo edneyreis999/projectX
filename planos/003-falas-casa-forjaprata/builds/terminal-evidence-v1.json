@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "run_id": "loki-run-v2:53cbcab6fb34b0b3f2f6028078604aff6ca97ccac235396ffe68862650552ee5",
+  "execution_id": "loki-execution-v2:4cd49b778f2fa77710ecb40d158cb698ccac35a8e076dccbb6f891adc2647c83",
+  "status": "completed",
+  "task_statuses": [
+    {
+      "task_ref": "planos/003-falas-casa-forjaprata/task-1.1.md",
+      "status": "passed"
+    }
+  ],
+  "acceptance_criterion_refs": [
+    "planos/003-falas-casa-forjaprata/task-1.1.md#AC-MAP045-01",
+    "planos/003-falas-casa-forjaprata/task-1.1.md#AC-MAP045-02",
+    "planos/003-falas-casa-forjaprata/task-1.1.md#AC-MAP045-03",
+    "planos/003-falas-casa-forjaprata/task-1.1.md#AC-MAP045-04"
+  ],
+  "validator_refs": [
+    "planos/003-falas-casa-forjaprata/builds/fase1/validator-record-v3.json",
+    "planos/003-falas-casa-forjaprata/builds/fase1/final-validator-record-v3.json"
+  ],
+  "gate_refs": [
+    "planos/003-falas-casa-forjaprata/builds/fase1/playtest-gate-v1.json"
+  ],
+  "audit_checkpoint_refs": [
+    "planos/003-falas-casa-forjaprata/builds/audits/phase/boundary-9782193a9be6e59f37a5084515e823b0/checkpoint-v1-2.json"
+  ],
+  "evidence_refs": [
+    "planos/003-falas-casa-forjaprata/builds/fase1/map045-validation-report.json",
+    "planos/003-falas-casa-forjaprata/builds/audits/phase/boundary-9782193a9be6e59f37a5084515e823b0/audit-report-v2.json",
+    "planos/003-falas-casa-forjaprata/interaction/fase1/playtest-map045.md",
+    "planos/003-falas-casa-forjaprata/builds/audits/phase/boundary-9782193a9be6e59f37a5084515e823b0/audit-report-v3.json",
+    "planos/003-falas-casa-forjaprata/interaction/fase1/playtest-result-v1.json"
+  ]
+}
