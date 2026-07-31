@@ -1,0 +1,280 @@
+{
+  "schema_version": 1,
+  "audit_scope": {
+    "run_id": "loki-run-v2:53cbcab6fb34b0b3f2f6028078604aff6ca97ccac235396ffe68862650552ee5",
+    "execution_id": "loki-execution-v2:4cd49b778f2fa77710ecb40d158cb698ccac35a8e076dccbb6f891adc2647c83",
+    "frequency": "phase",
+    "boundary_type": "phase",
+    "boundary_ref": "phase:fase1",
+    "policy_digest": "sha256:e3aeea217ca7881865de40d29e0e28e95bc32f4255e2488597801a8909e3bd78",
+    "mode": "complete-static-boundary-replay",
+    "replay": true,
+    "iteration": 2,
+    "invalidated_predecessor_checkpoint_ref": "planos/003-falas-casa-forjaprata/builds/audits/phase/boundary-9782193a9be6e59f37a5084515e823b0/checkpoint-v1-1.json",
+    "invalidated_predecessor_checkpoint_digest": "sha256:c6885a35877779ff4860ceffaff4168619da6c6ab84056b0c63bfe0287e91386",
+    "predecessor_audit_report_ref": "planos/003-falas-casa-forjaprata/builds/audits/phase/boundary-9782193a9be6e59f37a5084515e823b0/audit-report-v2.json",
+    "replay_cause": "The post-Playtest Map045 editor state changed from sha256:68c77591e43a96f1d60630ac1c7250f45238bb43a24654f79997a75fcd1c16f3 to sha256:d8776988caa9641889a3b26256e777a855280d994ef9343d30be124b148bbdd4 after checkpoint-v1-1 publication, invalidating its overlapping six-target coverage and requiring a complete same-boundary replay.",
+    "runtime_validation_performed": false,
+    "human_gate_certified_by_auditor": false
+  },
+  "auditor_identity": "auditor:phase-map045-v1",
+  "auditor_lineage": {
+    "agent_name": "phase-auditor",
+    "runtime_task_ref": "/root/map045_phase_audit",
+    "preflight_ref": "planos/003-falas-casa-forjaprata/preflights/run-17d91eab7bf669664b09e697206afed0/phase-auditor/preflight-v4.md",
+    "preflight_record_digest": "sha256:0d540f58ae1e8f5a7e187bab3708d722453ca930c7a1e06476bec816d1d5de6c"
+  },
+  "independence": {
+    "result": "passed",
+    "writer_identities": [
+      "agent:technical-implementer-map045"
+    ],
+    "writer_agent_run_ids": [
+      "agent-run-v1:3537bbb4e7dbba94a12dda6d82f572ad395b6aa794171ff959aa040ba9de2f47"
+    ],
+    "writer_handoff_ids": [
+      "handoff-v1:7cbe8159f8591e10c0612a3fd94735489921c057158911e175574e4457a95c47"
+    ],
+    "primary_validator_identities": [
+      "validator:node-map045-static-v3"
+    ],
+    "final_validator_identities": [
+      "validator:orchestrator-final-map045-v3"
+    ],
+    "evidence": "The auditor identity and /root/map045_phase_audit runtime lineage differ from the covered Writer identity, Writer agent-run and handoff lineages, primary validator, and final validator. This auditor wrote no production target, handoff, validation record, manifest, preview, script, or validation report."
+  },
+  "membership_refs": [
+    "planos/003-falas-casa-forjaprata/task-1.1.md"
+  ],
+  "covered_handoff_refs": [
+    "planos/003-falas-casa-forjaprata/builds/fase1/writer-handoff-v3.json"
+  ],
+  "covered_target_digests": [
+    "frontend/data/Map045.json=sha256:d8776988caa9641889a3b26256e777a855280d994ef9343d30be124b148bbdd4",
+    "planos/003-falas-casa-forjaprata/builds/fase1/map045-repair-manifest.json=sha256:6e27efa4bebf9367f0ec51b6bff8c3080d03f5f3e3087b7330a56b325a40028e",
+    "planos/003-falas-casa-forjaprata/builds/fase1/map045-preview.json=sha256:b068c8fe4ea06919937bba3af85c1c0f63ec93d885df73764dbe9106df743f6e",
+    "planos/003-falas-casa-forjaprata/builds/fase1/map045-validation-report.json=sha256:d39a35cbf489d8cd9356c74205b96df9756f26730e0913709422c3b7d4d08858",
+    "planos/003-falas-casa-forjaprata/builds/fase1/repair-map045-encoding.mjs=sha256:e4d45847315513026ef756b34c5ef39f3ead6db28ad63476f9c4bb05a711100c",
+    "planos/003-falas-casa-forjaprata/builds/fase1/validate-map045-encoding.mjs=sha256:3a1021b555e03895e0c8f95cf3e60c7c1023a968ef4deef35f6dfeeb83a5b118"
+  ],
+  "coverage_digest": "sha256:8573abd824edb0df9b142819b3c5f6bdd20d406839717a9ce0d69ce8653c6b66",
+  "primary_validation_refs": [
+    "planos/003-falas-casa-forjaprata/builds/fase1/validator-record-v3.json"
+  ],
+  "final_validator_refs": [
+    "planos/003-falas-casa-forjaprata/builds/fase1/final-validator-record-v3.json"
+  ],
+  "checks": [
+    {
+      "id": "AUD-MAP045-R3-01",
+      "subject": "replay-preflight-path-safety-source-integrity-and-independence",
+      "evidence": {
+        "preflight_schema_version": 1,
+        "preflight_version": 4,
+        "publication_status": "preflight_refreshed",
+        "record_digest_declared": "sha256:0d540f58ae1e8f5a7e187bab3708d722453ca930c7a1e06476bec816d1d5de6c",
+        "record_digest_observed": "sha256:0d540f58ae1e8f5a7e187bab3708d722453ca930c7a1e06476bec816d1d5de6c",
+        "coverage_digest_declared": "sha256:2a58958eb5cb9cc5ce57e22dd48086e32b2860f0928a36d52451f14d253f7f72",
+        "coverage_digest_observed": "sha256:2a58958eb5cb9cc5ce57e22dd48086e32b2860f0928a36d52451f14d253f7f72",
+        "run_path_expected": "run-17d91eab7bf669664b09e697206afed0",
+        "run_path_observed": "run-17d91eab7bf669664b09e697206afed0",
+        "path_containment_and_normalization": "passed",
+        "symlink_ancestors_found": 0,
+        "source_identity_digests_matching": 6,
+        "source_identity_digests_total": 6,
+        "independent_identity_and_lineage": "passed"
+      },
+      "result": "passed"
+    },
+    {
+      "id": "AUD-MAP045-R3-02",
+      "subject": "invalidated-predecessor-and-complete-replay",
+      "evidence": {
+        "predecessor_checkpoint_iteration": 1,
+        "replay_iteration": 2,
+        "predecessor_map045_digest": "sha256:68c77591e43a96f1d60630ac1c7250f45238bb43a24654f79997a75fcd1c16f3",
+        "current_map045_digest": "sha256:d8776988caa9641889a3b26256e777a855280d994ef9343d30be124b148bbdd4",
+        "overlapping_checkpoint_invalidated": true,
+        "full_membership_replayed": true,
+        "unaffected_member_results_reused_in_place_of_replay": false
+      },
+      "result": "passed"
+    },
+    {
+      "id": "AUD-MAP045-R3-03",
+      "subject": "canonical-coverage-and-six-current-target-digests",
+      "evidence": {
+        "membership_count": 1,
+        "handoff_count": 1,
+        "target_digest_count": 6,
+        "target_digests_matching_immediately_before_publication": 6,
+        "primary_validation_count": 1,
+        "final_validation_count": 1,
+        "coverage_digest_declared": "sha256:8573abd824edb0df9b142819b3c5f6bdd20d406839717a9ce0d69ce8653c6b66",
+        "coverage_digest_observed": "sha256:8573abd824edb0df9b142819b3c5f6bdd20d406839717a9ce0d69ce8653c6b66",
+        "task_target_order_equals_handoff_target_order": true
+      },
+      "result": "passed"
+    },
+    {
+      "id": "AUD-MAP045-R3-04",
+      "subject": "AC-MAP045-01-exactly-30-frozen-repairs",
+      "evidence": {
+        "manifest_entries": 30,
+        "unique_ids": 30,
+        "unique_paths": 30,
+        "current_values_equal_frozen_expected": 30,
+        "independent_cp1252_recoveries_equal_expected": 30,
+        "command_locators_and_codes_valid": 30,
+        "recovery_pass_distribution": {
+          "one_pass": 3,
+          "two_passes": 27
+        }
+      },
+      "result": "passed"
+    },
+    {
+      "id": "AUD-MAP045-R3-05",
+      "subject": "AC-MAP045-02-exact-byte-reconstruction-and-nonallowlisted-equality",
+      "evidence": {
+        "reconstructed_baseline_sha256": "542bfe177324ba62a4527c35699f556fa52f61077ef8fbade7543e55c20635dd",
+        "expected_baseline_sha256": "542bfe177324ba62a4527c35699f556fa52f61077ef8fbade7543e55c20635dd",
+        "deterministic_forward_repair_sha256": "d8776988caa9641889a3b26256e777a855280d994ef9343d30be124b148bbdd4",
+        "current_map045_sha256": "d8776988caa9641889a3b26256e777a855280d994ef9343d30be124b148bbdd4",
+        "deterministic_forward_bytes_equal_current": true,
+        "exact_leaf_diff_count": 30,
+        "leaf_diff_paths_equal_allowlist": true,
+        "masked_deep_equality": true,
+        "branch_plugin_common_event_and_narrative_assignment_payloads_preserved": true
+      },
+      "result": "passed"
+    },
+    {
+      "id": "AUD-MAP045-R3-06",
+      "subject": "AC-MAP045-03-strict-utf8-json-and-clean-target-values",
+      "evidence": {
+        "strict_utf8_target_files": 6,
+        "utf8_bom_target_files": 0,
+        "json_target_files_parsed": 4,
+        "target_values_without_u_fffd_or_residual_mojibake": 30,
+        "target_values_equal_frozen_expected": 30,
+        "preview_change_count": 30,
+        "preview_values_equal_manifest": true
+      },
+      "result": "passed"
+    },
+    {
+      "id": "AUD-MAP045-R3-07",
+      "subject": "AC-MAP045-04-map006-and-production-scope-guard",
+      "evidence": {
+        "map006_expected_sha256": "2db7a21b646dd6a89daae8d1aa9c78852f00f8504a2424ef2656854a45551679",
+        "map006_observed_sha256": "2db7a21b646dd6a89daae8d1aa9c78852f00f8504a2424ef2656854a45551679",
+        "production_target_ledger": [
+          "frontend/data/Map045.json"
+        ],
+        "writer_handoff_production_write_during_reconciliation": false
+      },
+      "result": "passed"
+    },
+    {
+      "id": "AUD-MAP045-R3-08",
+      "subject": "map-structure-message-and-branch-invariants",
+      "evidence": {
+        "events": 20,
+        "pages": 49,
+        "branch_commands": 22,
+        "guarded_command_counts": {
+          "101": 26,
+          "102": 4,
+          "357": 64,
+          "401": 26,
+          "402": 8,
+          "404": 4,
+          "657": 402
+        },
+        "show_text_orphan_401": 0,
+        "show_text_empty_101": 0,
+        "branch_indent_errors": 0,
+        "common_event_16_callers": 10,
+        "event_20_preserved": true,
+        "event_20_pages": 1,
+        "e7_p1_conditional_111_411_412_preserved": true,
+        "latest_post_playtest_editor_state_preserved": true
+      },
+      "result": "passed"
+    },
+    {
+      "id": "AUD-MAP045-R3-09",
+      "subject": "primary-and-final-complete-static-retest",
+      "evidence": {
+        "primary_validator_identity": "validator:node-map045-static-v3",
+        "primary_validator_result": "passed",
+        "final_validator_identity": "validator:orchestrator-final-map045-v3",
+        "final_validator_result": "passed",
+        "acceptance_criteria_covered": 4,
+        "reported_checks": 146,
+        "reported_failed_checks": 0,
+        "report_status": "passed-static-runtime-pending",
+        "report_sha256": "d39a35cbf489d8cd9356c74205b96df9756f26730e0913709422c3b7d4d08858",
+        "independent_report_hash_correlation": true,
+        "read_only_final_validator_reexecution": "passed-final-static-runtime-pending",
+        "read_only_final_validator_checks": 146
+      },
+      "result": "passed"
+    },
+    {
+      "id": "AUD-MAP045-R3-10",
+      "subject": "script-syntax-read-only-repair-check-scratch-cleanup-and-git-diff-check",
+      "evidence": {
+        "repair_script_node_check": "passed",
+        "validator_script_node_check": "passed",
+        "repair_check_status": "already-repaired",
+        "repair_check_map_write_required": false,
+        "repair_check_reconstructed_baseline_sha256": "542bfe177324ba62a4527c35699f556fa52f61077ef8fbade7543e55c20635dd",
+        "repair_check_planned_sha256": "d8776988caa9641889a3b26256e777a855280d994ef9343d30be124b148bbdd4",
+        "relevant_tmp_scratch_bak_orig_or_tilde_files_found": 0,
+        "git_diff_check_exit_code": 0,
+        "git_diff_check_note": "Only line-ending advisories were emitted; the check itself passed."
+      },
+      "result": "passed"
+    },
+    {
+      "id": "AUD-MAP045-R3-11",
+      "subject": "human-confirmation-evidence-boundary",
+      "evidence": {
+        "writer_handoff_ref": "planos/003-falas-casa-forjaprata/builds/fase1/writer-handoff-v3.json",
+        "writer_handoff_playtest_value": "confirmed",
+        "writer_handoff_final_persistence_owner": "orchestrator",
+        "static_auditor_observed_confirmation": true,
+        "static_auditor_performed_runtime_validation": false,
+        "static_auditor_certified_human_gate": false,
+        "playtest_checklist_ref": "planos/003-falas-casa-forjaprata/interaction/fase1/playtest-map045.md",
+        "playtest_checklist_persistence_status": "pending"
+      },
+      "result": "passed-as-observed-evidence-only"
+    }
+  ],
+  "findings": [],
+  "corrections_required": [],
+  "residual_risks": [
+    "Human Playtest confirmation is present in writer-handoff-v3.json, but final interaction/gate persistence remains orchestrator-owned and was neither performed nor certified by this static auditor.",
+    "Map006 remains intentionally divergent and can reintroduce mojibake through a future manual copy unless handled by a separate demand."
+  ],
+  "status": "approved",
+  "next_action": "Publish the iteration-2 active replay checkpoint for phase:fase1 and let the orchestrator reconcile the already-observed human confirmation into its owned gate and terminal artifacts without treating this static audit as runtime certification.",
+  "completion_summary": {
+    "result": "approved-static-human-confirmation-observed-not-certified",
+    "static_checks_approved": true,
+    "covered_targets_matching": "6/6",
+    "acceptance_criteria": {
+      "AC-MAP045-01": "passed",
+      "AC-MAP045-02": "passed",
+      "AC-MAP045-03": "passed",
+      "AC-MAP045-04": "passed"
+    },
+    "deterministic_checks": "146/146 passed",
+    "human_confirmation_observed_in_handoff": true,
+    "human_gate_certified_by_auditor": false,
+    "boundary_approved": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "agent_run_id": "agent-run-v1:3537bbb4e7dbba94a12dda6d82f572ad395b6aa794171ff959aa040ba9de2f47",
+  "attempts": [
+    "Human Playtest was confirmed against the latest editor state already present in Map045.",
+    "The post-Playtest bytes were accepted as authoritative and preserved without a production write.",
+    "The six current target digests were recomputed and reconciled with the immutable validation state."
+  ],
+  "decisions": [
+    "Preserve the latest editor state at Map045 SHA-256 d8776988caa9641889a3b26256e777a855280d994ef9343d30be124b148bbdd4.",
+    "Perform no production write during this post-Playtest reconciliation.",
+    "Record the confirmed human Playtest while leaving final gate persistence and terminal status transition to the orchestrator."
+  ],
+  "handoff_id": "handoff-v1:7cbe8159f8591e10c0612a3fd94735489921c057158911e175574e4457a95c47",
+  "human_gate": {
+    "final_persistence_owner": "orchestrator",
+    "playtest": "confirmed"
+  },
+  "known_errors": [],
+  "latest_editor_state_preserved": true,
+  "next_destination": "orchestrator",
+  "predecessor_completion_ref": "planos/003-falas-casa-forjaprata/builds/fase1/writer-completion-v2.json",
+  "predecessor_handoff_ref": "planos/003-falas-casa-forjaprata/builds/fase1/writer-handoff-v2.json",
+  "production_write": false,
+  "residual_risks": [
+    "Final human-gate persistence and any terminal task status transition remain orchestrator-owned.",
+    "The immutable validation report still records runtime validation as pending; this v3 completion records the later confirmed Playtest without rewriting historical evidence.",
+    "Map006 remains divergent and needs a separate demand if synchronization is desired."
+  ],
+  "schema_version": 1,
+  "status": "human-validation-confirmed-awaiting-orchestrator-persistence",
+  "summary": "The latest post-Playtest Map045 editor state was preserved without a production write; all 30 frozen expected values and 146 deterministic checks remain passed, and human Playtest was confirmed for orchestrator-owned final gate persistence.",
+  "task_ref": "planos/003-falas-casa-forjaprata/task-1.1.md",
+  "validations": [
+    "30 of 30 frozen expected values passed",
+    "146 of 146 deterministic checks passed",
+    "Map045 SHA-256 d8776988caa9641889a3b26256e777a855280d994ef9343d30be124b148bbdd4",
+    "Reconstructed baseline SHA-256 542bfe177324ba62a4527c35699f556fa52f61077ef8fbade7543e55c20635dd",
+    "Map006 SHA-256 unchanged 2db7a21b646dd6a89daae8d1aa9c78852f00f8504a2424ef2656854a45551679",
+    "Current six target digests matched their recomputed SHA-256 values",
+    "writer-completion-v3.json and writer-handoff-v3.json parsed as JSON"
+  ]
+}

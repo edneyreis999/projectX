@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agent_session_evidence schema_version="1">
+  <identity>
+    <run_id type="loki-run-id">loki-run-v2:53cbcab6fb34b0b3f2f6028078604aff6ca97ccac235396ffe68862650552ee5</run_id>
+    <agent_run_id type="agent-run-id">agent-run-v1:d7ce9fd3ce5ef4d4d357958962947e6c2a46ebf1b3c6aaa11c7be5e4f2e7c716</agent_run_id>
+    <handoff_id type="handoff-id">handoff-v1:5b90fbf2126eb48f250696d356c646ab8f414eed05148cd8e24ab9c2fa4e8777</handoff_id>
+    <agent_name type="agent-name">technical-implementer</agent_name>
+  </identity>
+  <runtime>
+    <adapter>codex-collaboration</adapter>
+    <adapter_version>unavailable</adapter_version>
+    <root_session_id type="runtime-root-session-id">unavailable</root_session_id>
+    <parent_thread_id type="runtime-parent-thread-id">unavailable</parent_thread_id>
+    <thread_id type="runtime-thread-id">/root/map045_encoding_writer</thread_id>
+    <runtime_agent_id type="runtime-agent-id">/root/map045_encoding_writer</runtime_agent_id>
+    <terminal_status>completed</terminal_status>
+    <parent_reference><type>runtime-task-name</type><value>/root</value></parent_reference>
+  </runtime>
+  <locator>
+    <kind>runtime-pointer</kind>
+    <value>/root/map045_encoding_writer</value>
+    <portability>same-profile</portability>
+    <unavailable_reason>no portable runtime export</unavailable_reason>
+  </locator>
+  <snapshot>
+    <storage_mode>pointer-only</storage_mode>
+    <payload_path>null</payload_path>
+    <captured_at>null</captured_at>
+    <payload_checksum algorithm="sha-256">null</payload_checksum>
+    <checksum_absence_reason>Codex collaboration exposed no sanitized run snapshot</checksum_absence_reason>
+  </snapshot>
+  <evidence_completeness>
+    <dimension name="transcript"><status>unsupported</status><missing_reason>No validated transcript export capability</missing_reason></dimension>
+    <dimension name="tool_io"><status>partial</status><missing_reason>Only compact completion and persisted task artifacts are available</missing_reason></dimension>
+    <dimension name="errors"><status>partial</status><missing_reason>Persisted completion lists material errors without a runtime export</missing_reason></dimension>
+    <dimension name="reasoning_summary"><status>unavailable</status><missing_reason>Private reasoning is not collected</missing_reason><provenance>null</provenance></dimension>
+    <dimension name="token_usage"><status>unavailable</status><missing_reason>No verified agent-run-scoped counter</missing_reason></dimension>
+    <overall_status>pointer-only</overall_status>
+  </evidence_completeness>
+  <usage>
+    <status>unavailable</status><metric_kind>null</metric_kind><source>null</source><source_scope>null</source_scope><measured_at>null</measured_at>
+    <input_tokens>null</input_tokens><cached_input_tokens>null</cached_input_tokens><output_tokens>null</output_tokens><reasoning_output_tokens>null</reasoning_output_tokens><total_tokens>null</total_tokens>
+    <unavailable_reason>No verified run-scoped adapter counter</unavailable_reason>
+  </usage>
+  <security>
+    <snapshot_classification>sanitized</snapshot_classification><structural_redaction_result>no snapshot persisted</structural_redaction_result>
+    <secret_pii_hardening>deferred</secret_pii_hardening><retention_metadata>deferred</retention_metadata><purge_policy>deferred</purge_policy>
+  </security>
+  <integrity>
+    <canonical_content_checksum algorithm="sha-256">unavailable</canonical_content_checksum><result>unverified</result>
+    <verification_notes>Pointer-only manifest; referenced completion and handoff bytes are verified separately</verification_notes>
+  </integrity>
+  <completion_record>
+    <agent_run_id type="agent-run-id">agent-run-v1:d7ce9fd3ce5ef4d4d357958962947e6c2a46ebf1b3c6aaa11c7be5e4f2e7c716</agent_run_id>
+    <handoff_id type="handoff-id">handoff-v1:5b90fbf2126eb48f250696d356c646ab8f414eed05148cd8e24ab9c2fa4e8777</handoff_id>
+    <terminal_status>pending-human-validation</terminal_status>
+    <summary>Exactly 30 allowlisted string leaves repaired; concurrent user additions preserved.</summary>
+    <changed_files><file>See writer-completion-v1.json</file></changed_files>
+    <read_files><file>See preflight-v1.md</file></read_files>
+    <validations><validation>144 deterministic checks passed</validation></validations>
+    <material_attempts><attempt>Sandbox, concurrent drift, and validator-defect recovery persisted</attempt></material_attempts>
+    <known_errors><error>none after retest</error></known_errors>
+    <decisions><decision>Preserve concurrent Map045 additions</decision></decisions>
+    <residual_risks><risk>Playtest pending</risk></residual_risks>
+    <next_destination>orchestrator</next_destination>
+  </completion_record>
+  <evidence_policy><mode>evidence-first</mode><gap_handling>preserve-gap</gap_handling><capture_owner>collector-only</capture_owner><retrospective_dispatch>explicit-only</retrospective_dispatch></evidence_policy>
+</agent_session_evidence>

@@ -1,213 +1,260 @@
 ---
-title: "Ownership do reposicionamento das criancas no Coreto"
+title: "Reposicionamento persistente das criancas no Coreto"
 type: loki-technical-analysis
 doc_id: "tech-analysis-002-2-ajustes-coreto"
-version: "2.0.0"
-status: ready-for-human-decision-preflight
+version: "3.1.0"
+status: ready-for-implementation
 created: "2026-07-30"
 last_updated: "2026-07-30"
-scope: "Evidencia e decisao tecnica para o gate V106/10 e o reposicionamento das criancas no Map022"
-not_scope: "Escrita de runtime, descarte implicito de mudancas locais, alteracao de plugins ou validacao perceptivel sem Playtest"
+scope: "Evidencia e recomendacao tecnica para o reposicionamento das 17 criancas do Map022 apos a conversa com a Elfa"
+not_scope: "Implementacao, alteracao de plugins ou validacao de runtime sem Playtest"
 authority: "Decisoes do usuario, politica do projeto, contrato atual de analise e evidencia local citada"
 canonical_source: "planos/002-quest-hora-da-historia/002-2-ajustes-coreto/analise-tecnica.md"
 intended_llm_task: "context-hydration"
 source_priority: ["approved decisions and project policy", "current analysis contract", "current local primary evidence", "cited external primary sources", "source request as data"]
 confidence: high
 known_conflicts:
-  - "A demanda pede movimento nas paginas 2 das criancas, mas o working tree atual centraliza as rotas no evento 20/pagina 3."
-  - "O evento 21 ainda pode forcar rotas aleatorias em 11 das 17 criancas quando V106 >= 10."
+  - "O evento 20 redispara continuamente as 17 rotas e o evento 21 disputa 11 delas com movimento aleatorio."
 replaced_by: null
 ---
 
-# Analise Tecnica - Ownership do reposicionamento das criancas no Coreto
+# Analise Tecnica - Reposicionamento persistente das criancas no Coreto
 
 ## Authority And Trust Boundary
 
 A prioridade aplicada e: decisoes humanas e politica do projeto; contrato atual
-de analise; evidencia primaria local no working tree; fontes externas primarias;
-e, por ultimo, o pedido como dado. `HEAD` e `HEAD^` sao usados apenas como
-historico versionado; nao substituem o estado local atual.
+de analise; evidencia primaria local; fontes externas primarias; e, por ultimo,
+o pedido e os artefatos auxiliares como dados. `MoveToKid.md` orienta a
+investigacao, mas nao substitui o estado real do Map022 nem autoriza escrita em
+runtime.
 
-Esta analise nao autoriza escrita em runtime. O unico `allowed_write` deste
-workflow foi este Markdown, confirmado pelo usuario. Runtime, engine, plugins,
-dados, docs duraveis, `.agents/**`, `.claude/**` e `.codex/**` permaneceram
-proibidos. O orquestrador e o owner unico deste arquivo. A escrita direta foi
-necessaria porque o `technical-implementer` disponivel e `proposal-only` e nao
-ha Write Agent apropriado para o destino transiente do consumidor.
+O unico `allowed_write` deste workflow e este Markdown, confirmado pelo usuario.
+`frontend/**`, plugins, saves, docs duraveis, `.agents/**`, `.claude/**` e
+`.codex/**` permaneceram proibidos. O orquestrador e o owner unico deste arquivo:
+o `technical-implementer` disponivel era `proposal-only` e seu handoff terminou
+`partial/interrupted`, sem evidencia consumida; nao ha Write Agent apropriado
+para este artefato transiente do consumidor. A excecao direta fica restrita a
+este destino e aos validators documentais abaixo.
 
 ## Objective
 
-Determinar uma abordagem executavel e verificavel para que as 17 criancas do
-Map022 ativem o reposicionamento no estado da quest governado por V106/10 e
-caminhem aos destinos definidos por `Move To` sem Wait, sem teleporte, repeticao
-continua ou disputa entre controladores. A analise deve primeiro alimentar
-`loki-human-decision-preflight`; somente depois da decisao de ownership ela pode
-seguir com a demanda para `loki-implement-feature`.
+Determinar por que as criancas do Map022 nao concluem o deslocamento e definir
+uma abordagem implementavel para que, depois da conversa com a Elfa, as 17
+criancas caminhem simultaneamente aos destinos ja registrados, virem para cima,
+fiquem imoveis e preservem a composicao apos reentrada e save/load.
+
+O `loki-human-decision-preflight` foi concluido: o usuario decidiu substituir o
+escopo antigo de Map049 e gerar novas tasks para Map022. Esta analise e a demanda
+atual podem agora alimentar diretamente `loki-implement-feature`.
 
 ## Source Request
 
-- `planos/002-quest-hora-da-historia/002-2-ajustes-coreto/demanda.md`: corrigir
-  a segunda pagina de todas as criancas para variavel 106/estado 10 e substituir
-  `Definir posicao` por `Definir movimento (Move To)` sem Wait.
-- Decisao do usuario nesta execucao: materializar esta analise em
-  `planos/002-quest-hora-da-historia/002-2-ajustes-coreto/analise-tecnica.md`.
+- `planos/002-quest-hora-da-historia/002-2-ajustes-coreto/demanda.md`: no
+  Map022, falar com a Elfa deve fazer as criancas caminharem ate a frente do
+  coreto, virarem para cima e permanecerem fixas nos pontos ja definidos.
+- `planos/002-quest-hora-da-historia/002-2-ajustes-coreto/MoveToKid.md`:
+  procedimento auxiliar baseado em `Move To`, pagina fixa e
+  `<Save Event Location>`.
+- Decisao do usuario nesta execucao: materializar a analise neste arquivo.
+- Decisao do usuario no preflight de 2026-07-30: descartar os artefatos antigos
+  de Map049 e gerar novas tasks a partir da demanda atual de Map022.
 
 ## Execution Effort
 
 ```yaml
 execution_effort: high
 model_class: frontier_reasoning
-escalation_reason: "conflicting current ownership across uncommitted Map022 event changes and runtime route-reset risk"
+escalation_reason: "conflito de ownership entre eventos Parallel e persistencia de estado"
 recommended_handoffs:
   research: "source-researcher read-only completed"
-  execution: "loki-human-decision-preflight"
+  execution: "loki-implement-feature"
 human_decision_preflight:
-  required: true
-  reason: "O working tree possui uma topologia concorrente nos eventos 20/21 que nao pode ser descartada nem preservada por silencio."
-  blocking_questions:
-    - "O owner das 17 rotas deve voltar a ser a pagina 2 de cada crianca, autorizando reconciliar os eventos 20 e 21, ou o controlador central do evento 20 deve ser preservado e tornado one-shot?"
-    - "Ao sair e reentrar no Map022 com V106 >= 10, as criancas devem reaparecer no centro ou a cena e deliberadamente de passagem unica?"
+  required: false
+  reason: "Preflight concluido em 2026-07-30: o usuario aprovou substituir os artefatos antigos de Map049 e gerar novas tasks para Map022; os tres arquivos foram removidos."
+  blocking_questions: []
 validator_effort: high
 ```
 
 ## Scope
 
-- Investigar `frontend/data/Map022.json`, com foco nos eventos `Crianca` IDs
-  `1,2,3,5,6,7,8,9,10,11,12,13,14,15,16,19,32`, paginas 2 e 3.
-- Investigar os eventos 20 e 21 apenas para resolver ownership, repeticao e
-  interferencia nas mesmas rotas.
-- Confirmar a variavel de quest, os destinos, o contrato local de `Move To`, a
-  semantica do engine e os validators/gates necessarios.
-- Comparar a abordagem distribuida pedida com o controlador central atual.
+- Investigar `frontend/data/Map022.json`, em especial a Elfa (evento 30), os
+  controladores 20/21 e as criancas IDs
+  `1,2,3,5,6,7,8,9,10,11,12,13,14,15,16,19,32`.
+- Confirmar estado da quest V106, destinos, paginas, rotas, sintaxe local do
+  Events & Movement Core, persistencia, owners concorrentes e gates.
+- Recomendar targets e validators para uma futura escrita estruturada somente
+  em `frontend/data/Map022.json`.
 
 ## Out Of Scope
 
-- Implementar qualquer alternativa ou descartar mudancas locais do usuario.
-- Alterar Map004, Map005, Map046, Common Events, plugins, `plugins.js`,
-  `CoretoQuests.json`, assets, saves ou docs duraveis.
-- Mudar a maquina de estados da quest ou declarar movimento/timing validado sem
-  Playtest humano.
-- Usar `git checkout`, reset ou restauracao ampla do snapshot historico.
+- Implementar a recomendacao ou alterar qualquer JSON de runtime nesta fase.
+- Alterar `System.json`, `CoretoQuests.json`, plugins, `plugins.js`, Common
+  Events, outros mapas, assets, saves ou docs duraveis.
+- Alterar o trigger atual da Elfa. A demanda usa "falar", mas o evento 30 usa
+  Player Touch; mudar para Action Button exige requisito explicito posterior.
+- Suportar migracao arbitraria de saves legados que nunca passaram pelo estado
+  V106=10; o fluxo Coreto local declara suporte New Game only.
+- Reutilizar ou reconstruir artefatos do escopo antigo de Map049/variavel 36.
 
 ## Sources Read
 
 | Source | Kind | Evidence Extracted | Used For |
 | --- | --- | --- | --- |
-| `AGENTS.md` | local/project-policy | Para `frontend/data`, preferir VisuStella/Coreto e consultar `docs/rpg-maker-for-ia` | Roteamento e limites |
-| `planos/002-quest-hora-da-historia/002-2-ajustes-coreto/demanda.md` | local/source-request | V106/10, paginas 2, `Move To` sem Wait | Objetivo e aceite |
-| `frontend/data/Map022.json` | local/primary/current | Estado atual dos 17 eventos e controladores 20/21 | Ownership e conflito |
-| `git show HEAD:frontend/data/Map022.json` | local/versioned-history | Implementacao anterior distribuida com `code 205` | Comparacao, destinos e shape |
-| `git show HEAD^:frontend/data/Map022.json` | local/versioned-history | Baseline V26/1 com `code 203` | Confirmacao da causa original |
-| `frontend/data/System.json` | local/primary | `startMapId=22`; V26=`v_qNoite_progress`; V106=`v_qNoiteDaHistoria_stage` | Ownership e IDs |
-| `frontend/data/CoretoQuests.json` | local/primary | `stageVariableId=106`; `START` 0->10; `COMPLETE_VN` 10->20; terminal 90 | Contrato de estado |
-| `frontend/data/MapInfos.json` | local/primary | Map022=`EX_Coreto`; Map004/005 sao variantes distintas | Resolucao do mapa |
-| `frontend/js/rmmz_objects.js:9334` | local/engine-primary | Condicao de pagina por variavel usa limiar `>=` | Semantica V106/10 |
-| `frontend/js/rmmz_objects.js:9760` | local/engine-primary | `character(0)` resolve `This Event`; valor negativo resolve o jogador | Target correto de rota distribuida |
-| `frontend/js/rmmz_objects.js:10530` | local/engine-primary | `command203` chama `locate` | Causa do salto abrupto |
-| `frontend/js/rmmz_objects.js:10571` | local/engine-primary | `command205` so espera quando `route.wait=true` | Contrato sem Wait |
-| `frontend/js/plugins.js` | local/config-primary | Envelope `editor-structural`; `VisuMZ_1_EventsMoveCore` ativo na ordem 13 | Disponibilidade do plugin |
-| `frontend/js/plugins/VisuMZ_1_EventsMoveCore.js:2354` | local/plugin-primary | `Move To: x, y` usa pathfinding e contorna o jogador | Sintaxe e risco |
-| `frontend/js/plugins/VisuMZ_1_EventsMoveCore.js:12335` | local/plugin-primary | Parser reconhece coordenadas inteiras em `MOVE TO` | Payload local |
-| `docs/index.xml` | local/durable-index | Catalogo existe, mas nao roteia documentacao de Events & Movement Core | Lacuna documental |
-| `docs/domains/level-designer/README.md#inventario-factual` | local/durable | EventsMoveCore afeta movimento perceptivel e exige Playtest | Gate humano |
-| `docs/technology-context.md` | local/durable | `frontend/data/**` e superficie sensivel; inventario estatico nao valida runtime | Limite de claim |
+| `AGENTS.md` e `CLAUDE.md` | local/project-policy | Em `frontend/data`, preferir VisuStella/Coreto; escrita JSON exige escopo e IDs confirmados | Roteamento e limites |
+| `demanda.md` | local/source-request | Resultado perceptivel pedido no Map022 | Objetivo e aceite |
+| `MoveToKid.md` | local/auxiliary | Shape 205/505, `Move To`, Turn Up, pagina fixa e notetag de persistencia | Alternativas e validators |
+| `frontend/data/MapInfos.json` | local/primary | Map022 e `EX_Coreto` | Target do mapa |
+| `frontend/data/Map022.json` | local/primary | Eventos, paginas, owners, rotas, destinos, notas e conflitos atuais | Diagnostico e contrato |
+| `frontend/data/System.json` | local/primary | V106 chama-se `v_qNoiteDaHistoria_stage` | Contrato de estado |
+| `frontend/data/CoretoQuests.json` | local/primary | Quest `noite-da-historia`; `START` faz 0 -> 10, `COMPLETE_VN` 10 -> 20 e terminal 90 | Ciclo da quest |
+| `frontend/js/rmmz_objects.js` | local/engine-primary | Selecao de pagina usa `>=`; Parallel reinicia; 205 forca rota; target 0 e This Event; 123 liga Self Switch | Semantica da abordagem |
+| `frontend/js/plugins.js` | local/config-primary | Envelope valido; EventsMoveCore ativo na ordem 13 e QuestCore ativo | Disponibilidade local |
+| `frontend/js/plugins/VisuMZ_1_EventsMoveCore.js` | local/plugin-primary | Versao 1.60; `Move To` usa pathfinding; `<Save Event Location>` e event-note e restaura localizacao | Sintaxe, persistencia e riscos |
+| `docs/index.xml` | local/durable-index | Catalogo existe, mas nao cobre especificamente Map022/EventsMoveCore/persistencia | Research/doc gate |
+| `docs/technology-context.md` | local/durable | `frontend/data/**` e sensivel; inventario estatico nao valida runtime | Limite de claim |
+| `docs/domains/gameplay-engineer/README.md` | local/durable | Estado e integracoes distribuidas; save/runtime pendentes | Riscos de integracao |
+| `docs/domains/level-designer/README.md` | local/durable | EventsMoveCore afeta fluxo perceptivel e exige Playtest | Human gate |
+| `docs/domains/runtime-qa/README.md` | local/durable | Automacao existente nao valida fluxo/save-load em runtime | Human gate |
+| Preflight humano de 2026-07-30 e verificacao `Test-Path` | user-decision/local-validator | Map049 foi explicitamente substituido; `tasks.md`, `task-1.1.md` e `task-1.2.md` foram removidos e os tres paths estao ausentes | Topologia do novo plano e liberacao do handoff |
 
 ## Agent Handoff Record
 
 | Origin | Destination | Objective | Status | Evidence / next destination |
 | --- | --- | --- | --- | --- |
-| Orchestrator | `bibliotecario` | Navegar docs por `docs/index.xml` | `partial`, terminal | EventsMoveCore e Playtest confirmados; payload nao catalogado |
-| Orchestrator | `source-researcher` | Mapear estado atual, historico, engine e plugins | `success`, terminal | Conflito entre eventos 20/21 e 17 rotas confirmado |
-| Orchestrator | `technical-implementer` | Propor abordagem sem escrever | `partial`, terminal | Um unico owner e preflight humano recomendados |
-| Orchestrator | `runtime-qa` | Propor validators e Playtest | `completed-runtime-pending`, terminal | Matriz estrutural e fixtures F0-F8 propostas |
-| Orchestrator | engine check | Resolver target divergente do QA | `completed` | `character(0)` e `This Event`; `-1` e jogador |
-| Technical analysis | `loki-human-decision-preflight` | Resolver ownership e persistencia/reentrada | `pending external handoff` | Duas perguntas `must_ask_now` abaixo |
+| Orchestrator | `source-researcher` | Mapear Map022, engine e plugins | `complete`, terminal | 17 rotas/destinos, owners e persistencia classificados |
+| Orchestrator | `bibliotecario` | Navegar docs pelo catalogo | `complete`, terminal | Cobertura geral encontrada; `catalog_coverage_gap` para EventsMoveCore |
+| Orchestrator | `runtime-qa` | Propor validators e Playtest | `complete-runtime-pending`, terminal | Baseline reprova owner unico, latch, conflito aleatorio e persistencia |
+| Orchestrator | `technical-implementer` | Comparar abordagens sem escrever | `partial/interrupted`, terminal | Nenhuma evidencia recebida ou consumida; consolidacao assumida pelo orquestrador |
+| Technical analysis | `loki-human-decision-preflight` | Resolver colisao dos artefatos de plano | `complete`, terminal | Usuario escolheu substituir Map049; tres artefatos antigos removidos; `ready_for_next_phase=true` |
 
 ## Evidence Classification
 
 ### Facts
 
-- Map022 e o owner atual do fluxo: e o mapa inicial, contem a transicao `START`
-  da quest e usa V106 como estado de `noite-da-historia`.
-- A condicao nativa `variableId=106`, `variableValue=10` significa
-  `V106 >= 10`, nao igualdade estrita.
-- No working tree atual, as paginas 2 das 17 criancas ja usam V106/10, mas tem
-  `trigger=0` e lista apenas com `code 0`; elas nao iniciam movimento.
-- Cada crianca possui uma pagina 3 passiva condicionada ao Self Switch A, mas
-  nenhum comando atual dessas paginas liga A.
-- O evento 20/pagina 3 atual e Parallel, condicionado por V106/10, e emite 17
-  `code 205` com `Move To`, `Turn Up`, `repeat=false`, `skippable=false` e
-  `wait=false`, sem latch ou estado de conclusao.
-- O evento 21 continua Parallel e pode forcar movimento aleatorio em 11 dos 17
-  targets: `1,2,6,8,9,11,12,13,14,15,16`. Sua pagina passiva superior exige
-  V106/10 e Self Switch A, mas o working tree nao liga esse Self Switch.
-- `VisuMZ_1_EventsMoveCore` esta ativo. Seu help local documenta `Move To: x,
-  y`; o parser local reconhece a sintaxe.
-- `command205` com `wait=false` nao bloqueia o interpretador. Para uma rota na
-  pagina da propria crianca, o target correto e `0` (`This Event`), nao `-1`.
-- O working tree de Map022 tem alteracoes nao commitadas e reformatacao ampla;
-  elas pertencem ao usuario e nao podem ser substituidas por `HEAD`.
+- O Map022 mede 17x27, tem note `<CoretoMapType:EX>` e nao possui
+  `<Save Event Locations>`.
+- O evento 30 e a Elfa, usa Player Touch e inicia com a guarda `V106 == 0`.
+  No ramo verdadeiro, `Coreto_QuestCore/QuestTransition START` leva a quest de
+  0 para 10. O evento 30 atual nao contem rotas 205/505.
+- Existem exatamente 17 eventos `Crianca`: `1,2,3,5,6,7,8,9,10,11,12,13,14,
+  15,16,19,32`.
+- Nas 17 criancas, a pagina 2 e ativada por `V106 >= 10`, usa `moveType: 0`,
+  imagem voltada para cima (`direction: 8`) e lista vazia. A pagina 3 exige
+  adicionalmente Self Switch A e tambem e fixa/vazia. Nenhum setter de A para
+  essas criancas existe no Map022 atual.
+- As notas dos 17 eventos estao vazias; portanto a persistencia individual do
+  EventsMoveCore nao esta configurada.
+- O evento 20, pagina 3, e Parallel em `V106 >= 10`. Ele contem exatamente 17
+  rotas, uma por crianca, com destinos unicos e dentro do mapa. Cada rota usa
+  `code 45 Move To`, `code 19 Turn Up`, `code 0`, `repeat=false`,
+  `skippable=false` e `wait=false`, com dois `code 505` espelhados.
+- O evento 20 nao possui latch nem comando terminal de estado; o engine reinicia
+  a lista Parallel quando ela termina.
+- O evento 21, pagina 1, tambem e Parallel e forca movimento aleatorio
+  (`code 9`, `repeat=true`) em 11 das mesmas criancas:
+  `1,2,6,8,9,11,12,13,14,15,16`. Sua pagina passiva superior so vence quando
+  `V106 >= 10` e o Self Switch A do proprio evento 21 estiver ligado; esse setter
+  nao existe no fluxo atual.
+- O EventsMoveCore 1.60 esta ativo depois do CoreEngine. Seu help local
+  documenta `Move To: x, y`, e o parser local reconhece a sintaxe sem distinguir
+  maiusculas/minusculas.
+- `<Save Event Location>` pertence exclusivamente ao note do evento e salva a
+  localizacao para restauracao posterior no mapa.
+- O usuario decidiu no preflight de 2026-07-30 que Map022 substitui o escopo
+  antigo de Map049 e que novas tasks serao geradas depois. Os tres artefatos
+  antigos eram nao rastreados, foram removidos e tiveram ausencia confirmada
+  por `Test-Path`.
 
 ### Inferences
 
-- O controlador Parallel do evento 20 reemite suas 17 rotas ao terminar a
-  lista; sem latch, nao ha evidencia estatica de execucao unica.
-- Como o evento 21 tambem forca rotas e e atualizado depois do evento 20, ele
-  pode sobrescrever o destino de 11 criancas, causando jitter, desvio ou falta
-  de chegada.
-- A topologia distribuida nas paginas 2 e mais aderente a demanda literal e ao
-  baseline versionado, mas so e segura se eventos 20 e 21 deixarem de disputar
-  as mesmas rotas.
-- A topologia central tambem pode atender ao resultado perceptivel, mas muda o
-  ownership solicitado e precisa de latch one-shot, desligamento do evento 21
-  e aprovacao humana explicita.
+- O problema principal nao e o cadastro dos destinos: os 17 pares estao
+  completos e coerentes. O problema e o ciclo de vida das rotas.
+- O evento 20 redispara as rotas porque sua pagina e Parallel e nao tem latch.
+  `forceMoveRoute` reinicia o indice da rota; a reemissao pode impedir que o
+  `code 19` se torne um estado terminal estavel.
+- O evento 21 adiciona uma segunda fonte de forced routes para 11 criancas. Pela
+  ordem de atualizacao dos eventos, ele pode substituir a rota emitida pelo
+  evento 20 no mesmo ciclo.
+- Uma pagina fixa remove movimento autonomo, mas nao cancela um owner externo
+  que continua forcando rotas. Por isso `moveType: 0` sozinho nao satisfaz
+  "ficar fixa".
+- Distribuir uma rota para cada pagina 2, com `target=0`, `wait=true` e Self
+  Switch A somente depois da conclusao, permite que as 17 caminhem em paralelo:
+  cada wait bloqueia apenas o interprete da propria crianca. A pagina 3 se torna
+  o latch terminal individual.
+- O `wait=false` do procedimento auxiliar nao e adequado para ligar o latch
+  imediatamente: ele permitiria ativar a pagina terminal antes de confirmar a
+  chegada. A demanda atual nao exige `wait=false`.
 
 ### Hypotheses
 
-- **Runtime pending:** 17 pathfindings simultaneos podem competir por tiles ou
-  ser bloqueados pelo jogador.
-- **Runtime pending:** ligar Self Switch A logo apos disparar uma rota sem Wait
-  pode mudar a pagina durante a rota; propriedades da pagina passiva podem
-  afetar apresentacao ou conclusao.
-- **Runtime pending:** ao sair e reentrar no mapa, Self Switch A pode permanecer
-  ligado enquanto os eventos reaparecem em coordenadas de origem, impedindo
-  novo reposicionamento.
-- **Runtime pending:** saves em V106 >= 20 com latch desligado podem disparar o
-  movimento fora da janela narrativa.
+- **Runtime pending:** 17 pathfindings simultaneos podem se bloquear ou produzir
+  rotas subotimas. O proprio help local declara que o algoritmo nao e perfeito.
+- **Runtime pending:** dois destinos estao inicialmente ocupados por outras
+  criancas que tambem se moverao: `(12,17)` e `(11,18)`.
+- **Runtime pending:** sair ou salvar durante o movimento deve restaurar cada
+  crianca incompleta na pagina 2 e permitir nova tentativa; a combinacao exata
+  de rota forçada, note e save precisa de Playtest.
+- **Runtime pending:** saves derivados corretamente em V106=20/90 devem manter
+  os Self Switches A e nao redisparar o movimento.
 
 ### Open Questions
 
-1. A centralizacao atual no evento 20 e intencional? Deve-se:
-   - restaurar as rotas nas paginas 2 das 17 criancas e autorizar a reconciliacao
-     dos eventos 20/21; ou
-   - preservar o evento 20 como owner unico, adicionar execucao one-shot e
-     manter as paginas das criancas passivas?
-2. Reentrada no Map022 e saves posteriores devem preservar a composicao das
-   criancas no centro, ou a cena pode ser tratada como passagem unica?
+- **must_ask_now:** none; a topologia do plano foi decidida pelo usuario.
+- **can_delegate_to_plan:** preservar o Player Touch atual da Elfa; eventual
+  mudanca para Action Button exige requisito e target explicitos posteriores.
+- **can_validate_later:** simultaneidade perceptivel, pathfinding, colisao,
+  reentrada e save/load permanecem no gate de Playtest.
+- **do_not_ask_llm_can_determine:** IDs, destinos, ownership, latch e mecanismo
+  de persistencia sao determinados pelas fontes locais e validators abaixo.
+
+## Human Decision Preflight Result
+
+- **Status:** `ready-for-planning`.
+- **Decisao humana:** a demanda de Map022 substitui o escopo antigo de
+  Map049/variavel 36 neste diretorio; novas tasks devem ser geradas a partir de
+  `demanda.md` e desta analise.
+- **Acao autorizada e concluida:** `tasks.md`, `task-1.1.md` e `task-1.2.md`
+  foram removidos. Como eram nao rastreados, nao sao recuperaveis pelo historico
+  do Git.
+- **Evidencia:** os tres paths retornaram `False` em `Test-Path`; o `git status`
+  do diretorio nao lista mais esses arquivos.
+- **Ready for next phase:** `true`; nao resta `must_ask_now`, approval ou handoff
+  aberto antes do planejamento unificado.
 
 ## Affected Surfaces
 
 ### Runtime, Engine or Framework
 
-- Runtime perceptivel do Map022: movimento, colisao, timing, pagina ativa e
-  continuidade da cena de Rheed.
-- Engine e EventsMoveCore sao dependencias read-only; nenhuma mudanca neles e
-  indicada.
+- Futuro target unico de runtime: `frontend/data/Map022.json`.
+- Engine, EventsMoveCore, QuestCore, `System.json` e `CoretoQuests.json` sao
+  dependencias read-only; nenhuma alteracao neles e recomendada.
 
 ### Integration Points
 
-- Page conditions e Parallel events do RPG Maker MZ.
-- `Game_Interpreter.command205`, forced move routes e Self Switches.
-- Route script `Move To` do `VisuMZ_1_EventsMoveCore`.
-- Eventos 20 e 21 como controladores externos das criancas.
-- Maquina de estados `noite-da-historia` via V106.
+- Evento 30 e `QuestTransition START` como origem do estado V106=10.
+- Pagina 2 de cada crianca como owner exclusivo da propria rota.
+- Pagina 3 de cada crianca e Self Switch A como latch terminal.
+- Evento 20/pagina 3 e evento 21/pagina 1 como emissores concorrentes que devem
+  deixar de controlar as criancas em V106>=10.
+- `Game_Interpreter.command205`, `command123`, forced move routes e selecao de
+  paginas por limiar.
+- `Move To` e `<Save Event Location>` do EventsMoveCore.
+- Evento 18 e progressao posterior para Rheed/evento 17.
 
 ### State and Data Contracts
 
-- Conjunto exato de criancas: `1,2,3,5,6,7,8,9,10,11,12,13,14,15,16,19,32`.
-- Gate solicitado: `variableValid=true`, `variableId=106`,
+- Variavel existente: V106 `v_qNoiteDaHistoria_stage`; nenhum novo ID e
+  necessario.
+- Gate da pagina 2: `variableValid=true`, `variableId=106`,
   `variableValue=10`, semanticamente `V106 >= 10`.
-- Destinos preservados:
+- Latch individual: Self Switch A deve ser ligado por `code 123` somente depois
+  que a rota `wait=true` terminar; a pagina 3 existente deve vencer e permanecer
+  `moveType=0`, `direction=8`, lista vazia.
+- Persistencia: exatamente `<Save Event Location>` no note de cada uma das 17
+  criancas; nao usar o tag global do mapa, pois ele ampliaria o efeito a eventos
+  fora da demanda.
+- Destinos existentes a preservar:
 
 | Event ID | Destination | Event ID | Destination |
 | ---: | --- | ---: | --- |
@@ -221,206 +268,229 @@ validator_effort: high
 | 9 | `(11,16)` | 19 | `(12,17)` |
 | 32 | `(6,17)` |  |  |
 
-- Contrato comum de rota: `code 205`; route list `code 45` com `Move To: X,
-  Y`, `code 19` (`Turn Up`) e `code 0`; `repeat=false`, `skippable=false`,
-  `wait=false`; sem `code 203` nem Wait de evento.
-- Invariante novo obrigatorio: exatamente um owner pode emitir as rotas das 17
-  criancas quando V106 >= 10.
+- Contrato por crianca: pagina 2 `trigger=4`, um `code 205` com target `0`
+  (`This Event`), rota `[45 Move To, 19 Turn Up, 0]`, `repeat=false`,
+  `skippable=false`, `wait=true`, dois `code 505` espelhados, `code 123 [A,ON]`
+  e terminador `code 0`.
+- Invariante: para cada crianca existe exatamente um owner ativo de rota em
+  V106>=10; evento 20 e evento 21 nao podem emitir movimento para esses targets.
 
 ## Research Gate
 
 **Decision:** skipped-with-reason  
-**Reason:** pesquisa externa nao foi necessaria. O engine local, a configuracao
-ativa, o help/parser do plugin instalado e os snapshots versionados definem a
-versao efetivamente usada. A documentacao duravel foi consultada e sua lacuna
-foi registrada; fontes externas nao substituiriam o working tree atual.
+**Reason:** pesquisa externa nao foi necessaria. O mapa atual, a engine local,
+a configuracao ativa e o help/parser da versao 1.60 instalada definem o contrato
+efetivamente executado. O catalogo duravel foi consultado e sua lacuna foi
+registrada; uma fonte externa nao substituiria o runtime local.
 
 | Source | Finding | Impact |
 | --- | --- | --- |
-| none | Nenhuma fonte externa consultada | Recomendacao baseada no runtime local |
+| none | Nenhuma fonte externa consultada | Recomendacao baseada em fontes primarias locais |
 
 ## Decision Matrix
 
 | Option | Evidence | Pros | Cons | Decision |
 | --- | --- | --- | --- | --- |
-| Manter evento 20 atual | Map022 evento 20/pagina 3 | Ja contem 17 destinos e sem Wait | Parallel sem latch; evento 21 disputa 11 rotas | reject as-is |
-| Distribuir nas paginas 2 | Demanda, `HEAD`, paginas Self Switch A existentes | Aderencia literal; ownership local por crianca; target `0` | Exige reconciliar mudancas atuais nos eventos 20/21 e politica de reentrada | preferred after human decision |
-| Centralizar no evento 20 com latch | Working tree atual | Um ponto de dispatch; targets explicitos | Diverge da demanda; exige one-shot, neutralizar evento 21 e resolver reentrada | viable only if explicitly approved |
-| `MapOnceParallel`/Common Event | Core Engine local | Semantica one-shot disponivel | Amplia para Common Event e nao resolve por si so persistencia/ownership | reject |
-| Implementacao customizada/Coreto | Nenhuma lacuna funcional demonstrada | Controle total | Amplia codigo, testes e manutencao | reject |
-| Deferir para preflight | Conflito atual e write scope | Preserva mudancas do usuario e evita owner duplo | Adia implementacao ate duas decisoes | use now |
+| Manter evento 20 atual | Map022 evento 20/pagina 3 | Destinos ja cadastrados | Parallel sem latch; reseta rotas; evento 21 disputa 11 targets | reject as-is |
+| Corrigir evento 20 com latch central | Shape atual e MoveToKid | Um dispatcher | Nao consegue provar a conclusao das 17 rotas `wait=false` sem agregacao adicional; reentrada parcial e fragil | defer |
+| Disparar as 17 rotas no evento 30 | Demanda e guarda V106==0 | Relacao direta com a Elfa; one-shot de dispatch | Falta um join robusto das 17 chegadas; saida/save no meio permanece ambigua | viable, not preferred |
+| Uma rota Parallel por crianca, com wait e latch individual | Paginas 2/3 existentes; engine 205/123 | Movimento simultaneo, conclusao por crianca, reentrada recuperavel, nenhum novo ID | Exige 17 listas estruturadas e neutralizar eventos 20/21 | use |
+| `Set Event Location` nativo | Engine local | Simples e deterministico | Teleporte abrupto; nao satisfaz caminhar | reject |
+| Tag global `<Save Event Locations>` | Help local | Uma unica alteracao de note | Persiste todos os eventos do mapa e amplia efeitos colaterais | reject |
+| Plugin/customizacao Coreto | Nenhuma lacuna funcional demonstrada | Controle total | Amplia codigo, testes e manutencao | reject |
+| Deferir por causa dos artefatos de Map049 | Preflight humano de 2026-07-30 | Nenhum beneficio apos a decisao | Ignoraria o escopo aprovado de Map022 | reject; gate resolved |
 
 ## Recommendation
 
-Nao implementar diretamente a demanda no estado atual. Executar
-`loki-human-decision-preflight` para escolher um unico owner das rotas e a
-politica de reentrada/save.
+Adotar ownership distribuido: cada crianca executa e conclui apenas a propria
+rota na pagina 2; a pagina 3 existente e o estado terminal individual.
 
-A recomendacao tecnica condicional e a topologia distribuida, por aderir ao
-texto da demanda: pagina 2 de cada crianca com V106/10, Parallel, `code 205`
-target `0`, `Move To`, `Turn Up`, `wait=false` e latch de conclusao para sua
-pagina 3 passiva. Essa opcao so pode seguir se o usuario autorizar a remocao ou
-neutralizacao do dispatch concorrente do evento 20 e uma pagina superior do
-evento 21 que o impeça de forcar rotas em V106 >= 10.
+Na futura implementacao estruturada de `Map022.json`:
 
-Se o usuario confirmar que a centralizacao atual e intencional, o planejamento
-deve preservar o evento 20 como owner unico, remover qualquer dispatch das
-paginas das criancas, tornar o controlador one-shot e neutralizar o evento 21.
-Nesse caso, a divergencia em relacao a "segunda pagina de todas as criancas"
-deve ficar registrada como decisao aprovada.
+1. Para cada um dos 17 eventos, preencher a pagina 2 com a rota correspondente,
+   usando target `0`, `Move To`, Turn Up, `wait=true` e Self Switch A ligado
+   somente depois que o movimento terminar. Manter `moveType=0` e direcao 8.
+2. Adicionar `<Save Event Location>` ao note de cada crianca, sem tag global.
+3. Neutralizar a pagina 3 do evento 20 em V106>=10, removendo seus 17 blocos de
+   rota e deixando uma lista terminal vazia; preservar integralmente as paginas
+   1/2 de Gab.
+4. Fazer a pagina passiva existente do evento 21 vencer apenas com V106>=10,
+   sem depender de Self Switch A, para que o controlador aleatorio pare antes
+   das rotas das criancas. Preservar os outros campos salvo envelope explicito.
+5. Preservar o evento 30 e seu `QuestTransition START`, o evento 18, Rheed/evento
+   17, V106 e todos os plugins. Nenhuma nova variavel, switch, pagina, evento ou
+   plugin e necessaria.
 
-Nenhuma alternativa deve restaurar `HEAD` por arquivo inteiro. A implementacao
-deve partir do working tree mais recente, editar JSON por parser estruturado e
-preservar todas as mudancas locais fora do envelope aprovado.
+A alteracao deve partir do Map022 corrente e usar parser estruturado. Nao
+restaurar snapshots inteiros nem reutilizar as tasks de Map049.
 
 ## Risks and Mitigations
 
 | Risk | Evidence | Mitigation | Owner/Gate |
 | --- | --- | --- | --- |
-| Dois owners redefinem forced routes | Eventos 20/21 atuais | Validator de owner unico e decisao preflight | human decision + structural validator |
-| Reemissao continua das 17 rotas | Evento 20 Parallel sem latch | One-shot verificavel na topologia escolhida | validator + Playtest |
-| Onze criancas recebem rotas aleatorias | Evento 21 atual | Desativar seu dispatch em V106 >= 10 | validator + Playtest |
-| Colisao ou destino inalcançavel | Help local admite pathfinding imperfeito | Testar bloqueios, rotas cruzadas e todos os destinos | human-validation |
-| Pagina passiva assume durante rota | Self Switch A + sem Wait | Comparar propriedades das paginas e observar conclusao | structural validator + Playtest |
-| Reentrada/save deixa composicao inconsistente | Self Switch persistente e posicao de mapa runtime | Decidir politica e testar saida/reentrada/save-load | preflight + human-validation |
-| Movimento tardio em estado posterior | Condicao nativa e `>= 10` | Testar V106 20/90 e saves legados | human-validation |
-| Perda de mudancas locais | Map022 sujo e diff amplo | Patch estrutural sobre estado atual; diff por caminhos | writer + independent validator |
-| Docs nao cobrem EventsMoveCore | `docs/index.xml` | Usar fonte local nesta task; catalogacao separada | backlog `loki-catalogar-docs` |
+| Dois controladores redefinem rotas | Eventos 20/21 | Validator de owner unico por crianca | structural validator |
+| Latch antes da chegada | Wait false do auxiliar | `wait=true` no interprete individual; 123 depois de 205 | engine-semantic validator |
+| Colisao/pathfinding entre 17 eventos | Help local e destinos ocupados | Playtest com bloqueios e rotas cruzadas | human-validation |
+| Reentrada/save no meio deixa estado parcial | Persistencia ainda ausente | Notetag individual, latch por crianca e testes durante/depois | Playtest/save-load gate |
+| V106>=10 inclui 20/90 | Semantica de pagina | Testar progressao derivada 10->20->90 e Self Switches | validator + Playtest |
+| Regressao de Gab | Evento 20 possui paginas de Gab | Diff restrito e Playtest de Gab | validator + human-validation |
+| Mudanca visual do controlador 21 | Pagina passiva atual tem imagem | Preservar campos por default e validar visualmente | diff validator + Playtest |
+| Reintroducao acidental do escopo Map049 | Preflight humano concluido | Gerar o novo plano apenas de `demanda.md` e desta analise | plan validator |
+| Docs nao catalogam EventsMoveCore | `docs/index.xml` | Backlog nao bloqueante para `loki-catalogar-docs` | catalogador |
 
 ## Validators
 
-- **Preflight estrutural:** parsear o Map022 atual; resolver os 17 IDs/nome
-  `Crianca`; registrar paginas, condicoes, triggers, listas, propriedades,
-  Self Switches, destinos e todos os callers que emitem move routes para eles.
-- **Plugin/config:** validar o envelope de `plugins.js` e confirmar
-  `VisuMZ_1_EventsMoveCore` ativo; nenhuma alteracao de configuracao.
-- **Engine/payload:** confirmar `code 205`, target `0` para `This Event` na
-  opcao distribuida, targets explicitos na opcao central, route `code 45/19/0`,
-  `repeat=false`, `skippable=false`, `wait=false` e `code 505` espelhados.
-- **Gate/coverage:** V106/10 e conjunto exato dos 17 destinos; ausencia de
-  `code 203`, Wait, targets indevidos ou destino duplicado.
-- **Owner unico:** falhar se mais de uma pagina/controlador puder forcar rota
-  em qualquer uma das 17 criancas quando V106 >= 10.
-- **Evento 21:** falhar se sua pagina ativa em V106 >= 10 ainda puder emitir
-  movimento aleatorio para qualquer target.
-- **One-shot:** a topologia escolhida deve possuir latch/condicao de conclusao
-  verificavel; lista Parallel sem estado de conclusao falha.
-- **Paginas passivas:** comparar `through`, `priorityType`, `directionFix`,
-  imagem, velocidade/frequencia e lista; nenhuma pagina passiva pode executar
-  conteudo ou impedir a conclusao da rota.
-- **Diff restrito:** JSON valido; somente `frontend/data/Map022.json` e os
-  eventos/paginas explicitamente aprovados; sem reflow novo, alteracao de
-  plugins ou restauracao de mudancas locais nao relacionadas.
-- Se a implementacao materializar writer/validator, rete-los sob
+- Parse estruturado de `Map022.json`; evento `id` deve corresponder ao indice.
+- Resolver exatamente os 17 IDs e os 17 destinos da tabela, todos unicos e
+  dentro de `x=0..16`, `y=0..26`.
+- Para cada crianca, exigir uma unica rota na pagina 2, target `0`, lista
+  `[45,19,0]`, payload `Move To: x, y`, `repeat=false`, `skippable=false`,
+  `wait=true`, dois mirrors 505 deep-equal e `code 123 ["A",0]` depois da rota.
+- Simular selecao de pagina em V106=0, 9, 10, 20 e 90. Em V106>=10, pagina 2
+  deve mover somente quando A esta OFF; pagina 3 deve ser fixa quando A esta ON.
+- Exigir `<Save Event Location>` exatamente nos 17 notes; rejeitar tag global.
+- Examinar todas as fontes de movimento (`code 205`, move routes de pagina,
+  `moveType` e eventos Parallel). Falhar se evento 20 ou 21 ainda puder forcar
+  rota nessas criancas em V106>=10.
+- Confirmar que evento 20 paginas 1/2, evento 30, evento 18, evento 17/Rheed,
+  V106, `CoretoQuests.json`, `System.json` e plugins permanecem semanticamente
+  iguais.
+- Validar envelope de `plugins.js` e EventsMoveCore ativo; nenhuma escrita de
+  configuracao.
+- Comparar AST before/after e `git diff`; rejeitar reflow massivo ou alteracao
+  fora dos paths exatos aprovados de Map022.
+- Se for criado writer/validator com valor de replay, reter sob
   `planos/002-quest-hora-da-historia/002-2-ajustes-coreto/builds/`.
 - Checks estaticos provam estrutura, nao movimento perceptivel.
 
+### Baseline Validators Executed
+
+- `Map022.json`, `MapInfos.json`, `System.json` e `CoretoQuests.json`:
+  parse estruturado passou.
+- `plugins.js`: envelope `editor-structural` passou com 69 objetos; extracao VM
+  confirmou EventsMoveCore ativo na ordem 13.
+- Inventario estruturado: 17 criancas, 17 targets unicos, 17 destinos dentro do
+  mapa, rotas atuais `[45,19,0]` e 11 conflitos com evento 21 confirmados.
+- Sintaxe local de `Move To` e semantica de pagina/205/123 confirmadas no plugin
+  e engine instalados.
+- Baseline funcional: reprovado para a demanda por redispatch sem latch,
+  owner concorrente e ausencia de persistencia.
+
 ## Human Gates
 
-- **Preflight antes do planejamento:** responder as duas perguntas de
-  ownership e reentrada/save em `Open Questions`.
-- **Playtest obrigatorio apos implementacao:** fixtures minimas:
-  - F0: V106=9, latch OFF; nenhuma crianca se move.
-  - F1: transicao V106 9->10; as 17 iniciam sem interacao/teleporte, chegam uma
-    vez aos destinos e viram para cima.
-  - F2: V106=10 com latch concluido; nenhuma rota reinicia.
-  - F3: jogador bloqueando destino/corredor e rotas cruzadas; nenhum softlock.
-  - F4/F5: save/load durante e depois do movimento; estado coerente.
-  - F6: sair e reentrar no Map022; comportamento conforme decisao humana.
-  - F7: save legado em V106=20/90 com latch desligado; sem disparo tardio
-    indevido.
-  - F8: fluxo normal ate Rheed; timing, controle e progressao continuam.
-- Reprovar se houver teleport, jitter, reset, repeticao, destino incorreto,
-  crianca presa, composicao quebrada, cena iniciada cedo, input bloqueado ou
-  estado inconsistente em reentrada/save.
+- **Preflight de planejamento concluido:** Map022 substitui os artefatos antigos
+  de Map049; nenhuma nova pergunta humana bloqueia a geracao das tasks.
+- **RPG Maker editor:** fechar o editor antes da escrita; depois abrir,
+  salvar, fechar e reabrir para confirmar aceite estrutural.
+- **Playtest obrigatorio apos implementacao:** executar pelo menos:
+  - V106=0/9: nenhuma convocacao antes de falar com a Elfa.
+  - Fluxo normal 0->10: as 17 iniciam no mesmo momento perceptivel, chegam aos
+    destinos, viram para cima e ficam imoveis.
+  - Aguardar e falar novamente: nenhuma rota reinicia e nao ha jitter.
+  - Bloquear temporariamente corredor/destino com o jogador e liberar: nenhuma
+    crianca fica em deadlock.
+  - Sair/reentrar e salvar/carregar durante e depois do movimento: concluidas
+    permanecem; incompletas retomam sem duplicar rotas.
+  - Continuar por evento 18, V106=20, Rheed/evento 17 e estado 90: nenhuma
+    regressao ou novo deslocamento.
+  - Revalidar as paginas de Gab do evento 20 e o console sem erros.
+- Reprovar se qualquer crianca falhar, chegar ao target errado, terminar sem
+  direcao 8, repetir rota, retomar movimento aleatorio, ficar parcial sem
+  recuperacao ou bloquear a progressao.
 
 ## Affected Docs
 
-- Nenhuma atualizacao duravel e necessaria para resolver o preflight.
-- Backlog nao bloqueante: catalogar Events & Movement Core/`Move To` em
-  `docs/index.xml` por `loki-catalogar-docs`.
+- Nenhum doc duravel precisa mudar para implementar a feature.
+- Backlog nao bloqueante: catalogar a documentacao local de Events & Movement
+  Core em `docs/index.xml` por `loki-catalogar-docs`.
 
 ## Stop Conditions
 
-- Parar se o usuario nao decidir entre ownership distribuido e central.
-- Parar se a politica de reentrada/save for material para o aceite e permanecer
-  indefinida.
-- Parar se a alternativa exigir tocar eventos, mapas, plugins, Common Events ou
-  dados fora do escopo aprovado no preflight.
-- Parar se o estado atual dos 17 eventos, eventos 20/21, plugin ou destinos
-  divergir antes da implementacao.
-- Parar se parse, owner unico, one-shot, payload, cobertura ou diff restrito
+- Parar se o novo plano reintroduzir Map049/variavel 36 ou usar outra fonte de
+  aceite no lugar de `demanda.md` e desta analise.
+- Parar se o Map022 corrente divergir dos 17 IDs/destinos/owners antes do write.
+- Parar se a mudanca exigir novo ID, outro mapa, plugin, Common Event, asset,
+  save ou configuracao sem novo approval.
+- Parar se parse, pagina ativa, payload, mirrors 505, owner unico, latch,
+  persistencia ou diff restrito falhar.
+- Nao declarar runtime validado enquanto editor/Playtest estiver pendente ou
   falhar.
-- Nao declarar runtime validado enquanto o Playtest estiver pendente ou falhar.
+- Se Playtest mostrar que saida/save durante movimento nao recupera as criancas
+  incompletas, bloquear a entrega e decidir uma politica adicional de input
+  lock ou retomada antes de concluir.
 
 ## Handoff To Next Command
 
-- **Human decision preflight required:** `true`
-- **Reason:** o working tree atual preserva uma decisao de topologia nao
-  registrada na demanda e cria conflito entre eventos 20/21. Silencio nao
-  autoriza desfazer nem consolidar essas mudancas.
-- **Recommended next command:** `loki-human-decision-preflight`
-- **Preflight input, if required:**
-  1. escolher owner distribuido nas paginas 2 ou owner central no evento 20;
-  2. definir comportamento exigido em reentrada/save com V106 >= 10.
+- **Human decision preflight required:** `false`
+- **Reason:** o preflight de 2026-07-30 registrou que Map022 substitui o escopo
+  antigo de Map049; os tres artefatos incompatíveis foram removidos e nao resta
+  pergunta `must_ask_now`.
+- **Recommended next command:** `loki-implement-feature`
+- **Preflight input, if required:** `none`; preflight concluido com
+  `ready_for_next_phase=true`.
 - **Implementation demand:**
   `planos/002-quest-hora-da-historia/002-2-ajustes-coreto/demanda.md`
 - **Analysis file:**
   `planos/002-quest-hora-da-historia/002-2-ajustes-coreto/analise-tecnica.md`
-- **Inherited restrictions and decisions:** partir do working tree atual; um
-  unico owner; V106>=10; 17 IDs/destinos; `Move To`/Turn Up sem Wait; nenhuma
-  restauracao ampla; runtime fora do escopo ate Playtest.
-- **Validators and human validation:** parsers/owner/one-shot/payload/diff
-  descritos acima e Playtest F0-F8.
+- **Inherited restrictions and decisions:** Map022 como unico runtime target;
+  ownership distribuido por crianca; V106 existente; 17 IDs/destinos; wait e
+  latch individuais; notetag individual; eventos 20/21 sem rotas concorrentes;
+  nenhum novo ID; preservar evento 30, evento 18, Rheed e Gab; nao reutilizar
+  qualquer escopo ou task de Map049/variavel 36.
+- **Validators and human validation:** validators estruturais, engine-semantic,
+  owner/latch/persistencia/diff e Playtest descritos acima.
 - **Required skills:** `rpg-maker-mz-data-json`,
   `rpg-maker-mz-project-inventory`, `rpg-maker-mz-visustella-plugin-index`,
-  `rpg-maker-mz-visustella-events-presentation` e
+  `rpg-maker-mz-visustella-events-presentation`,
+  `rpg-maker-mz-visustella-notetags` e
   `rpg-maker-mz-visustella-plugin-commands`.
 - **Downstream execution profile:** `model_class=coding`,
-  `execution_effort=high`, writer serializado e owner unico para Map022,
-  auditor/validator independente, `validator_effort=high`, Playtest obrigatorio.
+  `execution_effort=high`, writer serializado e owner unico de Map022,
+  validator/auditor independente, `validator_effort=high`, Playtest obrigatorio.
 
 ## Resume State
 
 ```yaml
 loki_technical_analysis_state:
-  status: "ready-for-human-decision-preflight"
+  status: "ready-for-implementation"
   sources_read:
     - "AGENTS.md"
+    - "CLAUDE.md"
     - "planos/002-quest-hora-da-historia/002-2-ajustes-coreto/demanda.md"
+    - "planos/002-quest-hora-da-historia/002-2-ajustes-coreto/MoveToKid.md"
+    - "human decision preflight 2026-07-30 recorded in this analysis"
     - "docs/index.xml"
-    - "docs/domains/level-designer/README.md"
     - "docs/technology-context.md"
+    - "docs/domains/gameplay-engineer/README.md"
+    - "docs/domains/level-designer/README.md"
+    - "docs/domains/runtime-qa/README.md"
+    - "frontend/data/MapInfos.json"
     - "frontend/data/Map022.json"
-    - "git:HEAD:frontend/data/Map022.json"
-    - "git:HEAD^:frontend/data/Map022.json"
     - "frontend/data/System.json"
     - "frontend/data/CoretoQuests.json"
-    - "frontend/data/MapInfos.json"
     - "frontend/js/plugins.js"
     - "frontend/js/rmmz_objects.js"
     - "frontend/js/plugins/VisuMZ_1_EventsMoveCore.js"
   research_gate: "skipped-with-reason-local-contract-sufficient"
-  human_decision_preflight_required: true
-  pending_questions:
-    - "distributed child pages or central event 20 ownership"
-    - "required behavior after Map022 reentry and save/load"
+  human_decision_preflight_required: false
+  pending_questions: []
   implementation_demand_ref: "planos/002-quest-hora-da-historia/002-2-ajustes-coreto/demanda.md"
   analysis_file: "planos/002-quest-hora-da-historia/002-2-ajustes-coreto/analise-tecnica.md"
   inherited_restrictions:
-    - "preserve current dirty working tree and unrelated Map022 changes"
-    - "exactly one route owner for child events 1,2,3,5,6,7,8,9,10,11,12,13,14,15,16,19,32"
-    - "V106 >= 10 and Move To/Turn Up with route wait=false"
-    - "no plugin, Common Event, other map, asset or save writes without new approval"
-    - "no runtime-valid claim before Playtest"
+    - "frontend/data/Map022.json is the only proposed runtime target"
+    - "one route owner per child event"
+    - "V106 >= 10 with per-child wait and Self Switch A completion"
+    - "individual Save Event Location tags; no map-wide persistence tag"
+    - "preserve Event30, Event18, Event17/Rheed, Gab, plugins and existing IDs"
+    - "do not reintroduce Map049/variable 36 scope or tasks"
+    - "no runtime-valid claim before editor gate and Playtest"
   completed_handoffs:
-    bibliotecario: "partial-terminal-catalog-gap"
-    source_researcher: "success"
-    technical_implementer: "partial-terminal-conflict-found"
-    runtime_qa: "completed-runtime-pending"
-  recommended_next_command: "loki-human-decision-preflight"
-  next_action: "Classify and answer the two must_ask_now decisions, then run loki-implement-feature with the approved topology, demand and this analysis file."
-  blocked_by:
-    - "human ownership decision"
-    - "human reentry/save behavior decision"
+    source_researcher: "complete"
+    bibliotecario: "complete-catalog-coverage-gap"
+    runtime_qa: "complete-runtime-pending"
+    technical_implementer: "partial-interrupted-no-evidence-consumed"
+    human_decision_preflight: "complete-ready-for-next-phase"
+  recommended_next_command: "loki-implement-feature"
+  next_action: "Run loki-implement-feature with the current demand and this analysis to generate new Map022 tasks and execute them under the declared gates."
+  blocked_by: []
 ```

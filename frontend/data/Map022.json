@@ -2792,7 +2792,7 @@
         {
             "id": 1,
             "name": "Crianca",
-            "note": "",
+            "note": "<Save Event Location>",
             "pages": [
                 {
                     "conditions": {
@@ -2871,6 +2871,42 @@
                     },
                     "list": [
                         {
+                            "code": 205,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 45,
+                                            "parameters": [
+                                                "Move To: 4, 15"
+                                            ]
+                                        },
+                                        {
+                                            "code": 19,
+                                            "parameters": []
+                                        },
+                                        {
+                                            "code": 0,
+                                            "parameters": []
+                                        }
+                                    ],
+                                    "repeat": false,
+                                    "skippable": false,
+                                    "wait": true
+                                }
+                            ]
+                        },
+                        {
+                            "code": 123,
+                            "indent": 0,
+                            "parameters": [
+                                "A",
+                                0
+                            ]
+                        },
+                        {
                             "code": 0,
                             "indent": 0,
                             "parameters": []
@@ -2890,10 +2926,10 @@
                     },
                     "moveSpeed": 3,
                     "moveType": 0,
-                    "priorityType": 1,
+                    "priorityType": 0,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 0,
+                    "trigger": 4,
                     "walkAnime": true
                 },
                 {
@@ -2954,7 +2990,7 @@
         {
             "id": 2,
             "name": "Crianca",
-            "note": "",
+            "note": "<Save Event Location>",
             "pages": [
                 {
                     "conditions": {
@@ -3033,6 +3069,42 @@
                     },
                     "list": [
                         {
+                            "code": 205,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 45,
+                                            "parameters": [
+                                                "Move To: 7, 16"
+                                            ]
+                                        },
+                                        {
+                                            "code": 19,
+                                            "parameters": []
+                                        },
+                                        {
+                                            "code": 0,
+                                            "parameters": []
+                                        }
+                                    ],
+                                    "repeat": false,
+                                    "skippable": false,
+                                    "wait": true
+                                }
+                            ]
+                        },
+                        {
+                            "code": 123,
+                            "indent": 0,
+                            "parameters": [
+                                "A",
+                                0
+                            ]
+                        },
+                        {
                             "code": 0,
                             "indent": 0,
                             "parameters": []
@@ -3052,10 +3124,10 @@
                     },
                     "moveSpeed": 3,
                     "moveType": 0,
-                    "priorityType": 1,
+                    "priorityType": 0,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 0,
+                    "trigger": 4,
                     "walkAnime": true
                 },
                 {
@@ -3116,7 +3188,7 @@
         {
             "id": 3,
             "name": "Crianca",
-            "note": "",
+            "note": "<Save Event Location>",
             "pages": [
                 {
                     "conditions": {
@@ -3195,6 +3267,42 @@
                     },
                     "list": [
                         {
+                            "code": 205,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 45,
+                                            "parameters": [
+                                                "Move To: 8, 17"
+                                            ]
+                                        },
+                                        {
+                                            "code": 19,
+                                            "parameters": []
+                                        },
+                                        {
+                                            "code": 0,
+                                            "parameters": []
+                                        }
+                                    ],
+                                    "repeat": false,
+                                    "skippable": false,
+                                    "wait": true
+                                }
+                            ]
+                        },
+                        {
+                            "code": 123,
+                            "indent": 0,
+                            "parameters": [
+                                "A",
+                                0
+                            ]
+                        },
+                        {
                             "code": 0,
                             "indent": 0,
                             "parameters": []
@@ -3214,10 +3322,10 @@
                     },
                     "moveSpeed": 3,
                     "moveType": 0,
-                    "priorityType": 1,
+                    "priorityType": 0,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 0,
+                    "trigger": 4,
                     "walkAnime": true
                 },
                 {
@@ -3279,7 +3387,7 @@
         {
             "id": 5,
             "name": "Crianca",
-            "note": "",
+            "note": "<Save Event Location>",
             "pages": [
                 {
                     "conditions": {
@@ -3358,6 +3466,42 @@
                     },
                     "list": [
                         {
+                            "code": 205,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 45,
+                                            "parameters": [
+                                                "Move To: 5, 16"
+                                            ]
+                                        },
+                                        {
+                                            "code": 19,
+                                            "parameters": []
+                                        },
+                                        {
+                                            "code": 0,
+                                            "parameters": []
+                                        }
+                                    ],
+                                    "repeat": false,
+                                    "skippable": false,
+                                    "wait": true
+                                }
+                            ]
+                        },
+                        {
+                            "code": 123,
+                            "indent": 0,
+                            "parameters": [
+                                "A",
+                                0
+                            ]
+                        },
+                        {
                             "code": 0,
                             "indent": 0,
                             "parameters": []
@@ -3377,10 +3521,10 @@
                     },
                     "moveSpeed": 3,
                     "moveType": 0,
-                    "priorityType": 1,
+                    "priorityType": 0,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 0,
+                    "trigger": 4,
                     "walkAnime": true
                 },
                 {
@@ -3441,7 +3585,7 @@
         {
             "id": 6,
             "name": "Crianca",
-            "note": "",
+            "note": "<Save Event Location>",
             "pages": [
                 {
                     "conditions": {
@@ -3520,6 +3664,42 @@
                     },
                     "list": [
                         {
+                            "code": 205,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 45,
+                                            "parameters": [
+                                                "Move To: 7, 18"
+                                            ]
+                                        },
+                                        {
+                                            "code": 19,
+                                            "parameters": []
+                                        },
+                                        {
+                                            "code": 0,
+                                            "parameters": []
+                                        }
+                                    ],
+                                    "repeat": false,
+                                    "skippable": false,
+                                    "wait": true
+                                }
+                            ]
+                        },
+                        {
+                            "code": 123,
+                            "indent": 0,
+                            "parameters": [
+                                "A",
+                                0
+                            ]
+                        },
+                        {
                             "code": 0,
                             "indent": 0,
                             "parameters": []
@@ -3539,10 +3719,10 @@
                     },
                     "moveSpeed": 3,
                     "moveType": 0,
-                    "priorityType": 1,
+                    "priorityType": 0,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 0,
+                    "trigger": 4,
                     "walkAnime": true
                 },
                 {
@@ -3603,7 +3783,7 @@
         {
             "id": 7,
             "name": "Crianca",
-            "note": "",
+            "note": "<Save Event Location>",
             "pages": [
                 {
                     "conditions": {
@@ -3682,6 +3862,42 @@
                     },
                     "list": [
                         {
+                            "code": 205,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 45,
+                                            "parameters": [
+                                                "Move To: 10, 15"
+                                            ]
+                                        },
+                                        {
+                                            "code": 19,
+                                            "parameters": []
+                                        },
+                                        {
+                                            "code": 0,
+                                            "parameters": []
+                                        }
+                                    ],
+                                    "repeat": false,
+                                    "skippable": false,
+                                    "wait": true
+                                }
+                            ]
+                        },
+                        {
+                            "code": 123,
+                            "indent": 0,
+                            "parameters": [
+                                "A",
+                                0
+                            ]
+                        },
+                        {
                             "code": 0,
                             "indent": 0,
                             "parameters": []
@@ -3701,10 +3917,10 @@
                     },
                     "moveSpeed": 3,
                     "moveType": 0,
-                    "priorityType": 1,
+                    "priorityType": 0,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 0,
+                    "trigger": 4,
                     "walkAnime": true
                 },
                 {
@@ -3765,7 +3981,7 @@
         {
             "id": 8,
             "name": "Crianca",
-            "note": "",
+            "note": "<Save Event Location>",
             "pages": [
                 {
                     "conditions": {
@@ -3844,6 +4060,42 @@
                     },
                     "list": [
                         {
+                            "code": 205,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 45,
+                                            "parameters": [
+                                                "Move To: 5, 18"
+                                            ]
+                                        },
+                                        {
+                                            "code": 19,
+                                            "parameters": []
+                                        },
+                                        {
+                                            "code": 0,
+                                            "parameters": []
+                                        }
+                                    ],
+                                    "repeat": false,
+                                    "skippable": false,
+                                    "wait": true
+                                }
+                            ]
+                        },
+                        {
+                            "code": 123,
+                            "indent": 0,
+                            "parameters": [
+                                "A",
+                                0
+                            ]
+                        },
+                        {
                             "code": 0,
                             "indent": 0,
                             "parameters": []
@@ -3863,10 +4115,10 @@
                     },
                     "moveSpeed": 3,
                     "moveType": 0,
-                    "priorityType": 1,
+                    "priorityType": 0,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 0,
+                    "trigger": 4,
                     "walkAnime": true
                 },
                 {
@@ -3927,7 +4179,7 @@
         {
             "id": 9,
             "name": "Crianca",
-            "note": "",
+            "note": "<Save Event Location>",
             "pages": [
                 {
                     "conditions": {
@@ -4006,6 +4258,42 @@
                     },
                     "list": [
                         {
+                            "code": 205,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 45,
+                                            "parameters": [
+                                                "Move To: 11, 16"
+                                            ]
+                                        },
+                                        {
+                                            "code": 19,
+                                            "parameters": []
+                                        },
+                                        {
+                                            "code": 0,
+                                            "parameters": []
+                                        }
+                                    ],
+                                    "repeat": false,
+                                    "skippable": false,
+                                    "wait": true
+                                }
+                            ]
+                        },
+                        {
+                            "code": 123,
+                            "indent": 0,
+                            "parameters": [
+                                "A",
+                                0
+                            ]
+                        },
+                        {
                             "code": 0,
                             "indent": 0,
                             "parameters": []
@@ -4025,10 +4313,10 @@
                     },
                     "moveSpeed": 3,
                     "moveType": 0,
-                    "priorityType": 1,
+                    "priorityType": 0,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 0,
+                    "trigger": 4,
                     "walkAnime": true
                 },
                 {
@@ -4089,7 +4377,7 @@
         {
             "id": 10,
             "name": "Crianca",
-            "note": "",
+            "note": "<Save Event Location>",
             "pages": [
                 {
                     "conditions": {
@@ -4168,6 +4456,42 @@
                     },
                     "list": [
                         {
+                            "code": 205,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 45,
+                                            "parameters": [
+                                                "Move To: 9, 18"
+                                            ]
+                                        },
+                                        {
+                                            "code": 19,
+                                            "parameters": []
+                                        },
+                                        {
+                                            "code": 0,
+                                            "parameters": []
+                                        }
+                                    ],
+                                    "repeat": false,
+                                    "skippable": false,
+                                    "wait": true
+                                }
+                            ]
+                        },
+                        {
+                            "code": 123,
+                            "indent": 0,
+                            "parameters": [
+                                "A",
+                                0
+                            ]
+                        },
+                        {
                             "code": 0,
                             "indent": 0,
                             "parameters": []
@@ -4187,10 +4511,10 @@
                     },
                     "moveSpeed": 3,
                     "moveType": 0,
-                    "priorityType": 1,
+                    "priorityType": 0,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 0,
+                    "trigger": 4,
                     "walkAnime": true
                 },
                 {
@@ -4251,7 +4575,7 @@
         {
             "id": 11,
             "name": "Crianca",
-            "note": "",
+            "note": "<Save Event Location>",
             "pages": [
                 {
                     "conditions": {
@@ -4330,6 +4654,42 @@
                     },
                     "list": [
                         {
+                            "code": 205,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 45,
+                                            "parameters": [
+                                                "Move To: 9, 16"
+                                            ]
+                                        },
+                                        {
+                                            "code": 19,
+                                            "parameters": []
+                                        },
+                                        {
+                                            "code": 0,
+                                            "parameters": []
+                                        }
+                                    ],
+                                    "repeat": false,
+                                    "skippable": false,
+                                    "wait": true
+                                }
+                            ]
+                        },
+                        {
+                            "code": 123,
+                            "indent": 0,
+                            "parameters": [
+                                "A",
+                                0
+                            ]
+                        },
+                        {
                             "code": 0,
                             "indent": 0,
                             "parameters": []
@@ -4349,10 +4709,10 @@
                     },
                     "moveSpeed": 3,
                     "moveType": 0,
-                    "priorityType": 1,
+                    "priorityType": 0,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 0,
+                    "trigger": 4,
                     "walkAnime": true
                 },
                 {
@@ -4413,7 +4773,7 @@
         {
             "id": 12,
             "name": "Crianca",
-            "note": "",
+            "note": "<Save Event Location>",
             "pages": [
                 {
                     "conditions": {
@@ -4492,6 +4852,42 @@
                     },
                     "list": [
                         {
+                            "code": 205,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 45,
+                                            "parameters": [
+                                                "Move To: 11, 18"
+                                            ]
+                                        },
+                                        {
+                                            "code": 19,
+                                            "parameters": []
+                                        },
+                                        {
+                                            "code": 0,
+                                            "parameters": []
+                                        }
+                                    ],
+                                    "repeat": false,
+                                    "skippable": false,
+                                    "wait": true
+                                }
+                            ]
+                        },
+                        {
+                            "code": 123,
+                            "indent": 0,
+                            "parameters": [
+                                "A",
+                                0
+                            ]
+                        },
+                        {
                             "code": 0,
                             "indent": 0,
                             "parameters": []
@@ -4511,10 +4907,10 @@
                     },
                     "moveSpeed": 3,
                     "moveType": 0,
-                    "priorityType": 1,
+                    "priorityType": 0,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 0,
+                    "trigger": 4,
                     "walkAnime": true
                 },
                 {
@@ -4575,7 +4971,7 @@
         {
             "id": 13,
             "name": "Crianca",
-            "note": "",
+            "note": "<Save Event Location>",
             "pages": [
                 {
                     "conditions": {
@@ -4654,6 +5050,42 @@
                     },
                     "list": [
                         {
+                            "code": 205,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 45,
+                                            "parameters": [
+                                                "Move To: 4, 17"
+                                            ]
+                                        },
+                                        {
+                                            "code": 19,
+                                            "parameters": []
+                                        },
+                                        {
+                                            "code": 0,
+                                            "parameters": []
+                                        }
+                                    ],
+                                    "repeat": false,
+                                    "skippable": false,
+                                    "wait": true
+                                }
+                            ]
+                        },
+                        {
+                            "code": 123,
+                            "indent": 0,
+                            "parameters": [
+                                "A",
+                                0
+                            ]
+                        },
+                        {
                             "code": 0,
                             "indent": 0,
                             "parameters": []
@@ -4673,10 +5105,10 @@
                     },
                     "moveSpeed": 3,
                     "moveType": 0,
-                    "priorityType": 1,
+                    "priorityType": 0,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 0,
+                    "trigger": 4,
                     "walkAnime": true
                 },
                 {
@@ -4737,7 +5169,7 @@
         {
             "id": 14,
             "name": "Crianca",
-            "note": "",
+            "note": "<Save Event Location>",
             "pages": [
                 {
                     "conditions": {
@@ -4816,6 +5248,42 @@
                     },
                     "list": [
                         {
+                            "code": 205,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 45,
+                                            "parameters": [
+                                                "Move To: 8, 15"
+                                            ]
+                                        },
+                                        {
+                                            "code": 19,
+                                            "parameters": []
+                                        },
+                                        {
+                                            "code": 0,
+                                            "parameters": []
+                                        }
+                                    ],
+                                    "repeat": false,
+                                    "skippable": false,
+                                    "wait": true
+                                }
+                            ]
+                        },
+                        {
+                            "code": 123,
+                            "indent": 0,
+                            "parameters": [
+                                "A",
+                                0
+                            ]
+                        },
+                        {
                             "code": 0,
                             "indent": 0,
                             "parameters": []
@@ -4835,10 +5303,10 @@
                     },
                     "moveSpeed": 3,
                     "moveType": 0,
-                    "priorityType": 1,
+                    "priorityType": 0,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 0,
+                    "trigger": 4,
                     "walkAnime": true
                 },
                 {
@@ -4899,7 +5367,7 @@
         {
             "id": 15,
             "name": "Crianca",
-            "note": "",
+            "note": "<Save Event Location>",
             "pages": [
                 {
                     "conditions": {
@@ -4978,6 +5446,42 @@
                     },
                     "list": [
                         {
+                            "code": 205,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 45,
+                                            "parameters": [
+                                                "Move To: 10, 17"
+                                            ]
+                                        },
+                                        {
+                                            "code": 19,
+                                            "parameters": []
+                                        },
+                                        {
+                                            "code": 0,
+                                            "parameters": []
+                                        }
+                                    ],
+                                    "repeat": false,
+                                    "skippable": false,
+                                    "wait": true
+                                }
+                            ]
+                        },
+                        {
+                            "code": 123,
+                            "indent": 0,
+                            "parameters": [
+                                "A",
+                                0
+                            ]
+                        },
+                        {
                             "code": 0,
                             "indent": 0,
                             "parameters": []
@@ -4997,10 +5501,10 @@
                     },
                     "moveSpeed": 3,
                     "moveType": 0,
-                    "priorityType": 1,
+                    "priorityType": 0,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 0,
+                    "trigger": 4,
                     "walkAnime": true
                 },
                 {
@@ -5061,7 +5565,7 @@
         {
             "id": 16,
             "name": "Crianca",
-            "note": "",
+            "note": "<Save Event Location>",
             "pages": [
                 {
                     "conditions": {
@@ -5140,6 +5644,42 @@
                     },
                     "list": [
                         {
+                            "code": 205,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 45,
+                                            "parameters": [
+                                                "Move To: 6, 15"
+                                            ]
+                                        },
+                                        {
+                                            "code": 19,
+                                            "parameters": []
+                                        },
+                                        {
+                                            "code": 0,
+                                            "parameters": []
+                                        }
+                                    ],
+                                    "repeat": false,
+                                    "skippable": false,
+                                    "wait": true
+                                }
+                            ]
+                        },
+                        {
+                            "code": 123,
+                            "indent": 0,
+                            "parameters": [
+                                "A",
+                                0
+                            ]
+                        },
+                        {
                             "code": 0,
                             "indent": 0,
                             "parameters": []
@@ -5159,10 +5699,10 @@
                     },
                     "moveSpeed": 3,
                     "moveType": 0,
-                    "priorityType": 1,
+                    "priorityType": 0,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 0,
+                    "trigger": 4,
                     "walkAnime": true
                 },
                 {
@@ -5234,7 +5774,7 @@
                         "selfSwitchCh": "A",
                         "selfSwitchValid": false,
                         "switch1Id": 82,
-                        "switch1Valid": true,
+                        "switch1Valid": false,
                         "switch2Id": 1,
                         "switch2Valid": false,
                         "variableId": 106,
@@ -5686,7 +6226,7 @@
         {
             "id": 19,
             "name": "Crianca",
-            "note": "",
+            "note": "<Save Event Location>",
             "pages": [
                 {
                     "conditions": {
@@ -5765,6 +6305,42 @@
                     },
                     "list": [
                         {
+                            "code": 205,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 45,
+                                            "parameters": [
+                                                "Move To: 12, 17"
+                                            ]
+                                        },
+                                        {
+                                            "code": 19,
+                                            "parameters": []
+                                        },
+                                        {
+                                            "code": 0,
+                                            "parameters": []
+                                        }
+                                    ],
+                                    "repeat": false,
+                                    "skippable": false,
+                                    "wait": true
+                                }
+                            ]
+                        },
+                        {
+                            "code": 123,
+                            "indent": 0,
+                            "parameters": [
+                                "A",
+                                0
+                            ]
+                        },
+                        {
                             "code": 0,
                             "indent": 0,
                             "parameters": []
@@ -5784,10 +6360,10 @@
                     },
                     "moveSpeed": 3,
                     "moveType": 0,
-                    "priorityType": 1,
+                    "priorityType": 0,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 0,
+                    "trigger": 4,
                     "walkAnime": true
                 },
                 {
@@ -5892,7 +6468,7 @@
                                 {
                                     "Text:json": "\"Até o coreto e volta. Valendo!\"",
                                     "ForceGab:eval": "false",
-                                    "Override:struct": "{\"EventID:num\":\"3\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                                    "Override:struct": "{\"DimColor\":\"\",\"DimColor1:str\":\"\",\"DimColor2:str\":\"\",\"Fade\":\"\",\"FadeRate:num\":\"16\",\"FadeDirection:str\":\"Up\",\"Font\":\"\",\"FontName:str\":\"\",\"FontSize:num\":\"\",\"Position\":\"\",\"YLocation:num\":\"10\",\"ActorID:num\":\"0\",\"PartyIndex:num\":\"-1\",\"EnemyIndex:num\":\"-1\",\"EventID:num\":\"3\",\"OnDisplay\":\"\",\"BypassAntiRepeat:eval\":\"false\",\"SoundFilename:str\":\"\",\"SoundVolume:num\":\"90\",\"SoundPitch:num\":\"100\",\"SoundPan:num\":\"0\",\"OnDisplayJS:func\":\"\",\"OnFinish\":\"\",\"GabSwitch:num\":\"\",\"OnFinishJS:func\":\"\",\"Waiting\":\"\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\",\"__collapsed\":[\"ActorID:num\"]}"
                                 }
                             ]
                         },
@@ -5914,7 +6490,7 @@
                             "code": 657,
                             "indent": 0,
                             "parameters": [
-                                "Optional Settings = {\"EventID:num\":\"3\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                                "Optional Settings = {\"DimColor\":\"\",\"DimColor1:str\":\"\",\"DimC…"
                             ]
                         },
                         {
@@ -6489,941 +7065,6 @@
                     },
                     "list": [
                         {
-                            "code": 205,
-                            "indent": 0,
-                            "parameters": [
-                                1,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 45,
-                                            "indent": null,
-                                            "parameters": [
-                                                "Move To: 4, 15"
-                                            ]
-                                        },
-                                        {
-                                            "code": 19,
-                                            "indent": null,
-                                            "parameters": []
-                                        },
-                                        {
-                                            "code": 0,
-                                            "indent": null,
-                                            "parameters": []
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": false
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 45,
-                                    "indent": null,
-                                    "parameters": [
-                                        "Move To: 4, 15"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 19,
-                                    "indent": null,
-                                    "parameters": []
-                                }
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 0,
-                            "parameters": [
-                                7,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 45,
-                                            "indent": null,
-                                            "parameters": [
-                                                "Move To: 10, 15"
-                                            ]
-                                        },
-                                        {
-                                            "code": 19,
-                                            "indent": null,
-                                            "parameters": []
-                                        },
-                                        {
-                                            "code": 0,
-                                            "indent": null,
-                                            "parameters": []
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": false
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 45,
-                                    "indent": null,
-                                    "parameters": [
-                                        "Move To: 10, 15"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 19,
-                                    "indent": null,
-                                    "parameters": []
-                                }
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 0,
-                            "parameters": [
-                                14,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 45,
-                                            "indent": null,
-                                            "parameters": [
-                                                "Move To: 8, 15"
-                                            ]
-                                        },
-                                        {
-                                            "code": 19,
-                                            "indent": null,
-                                            "parameters": []
-                                        },
-                                        {
-                                            "code": 0,
-                                            "indent": null,
-                                            "parameters": []
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": false
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 45,
-                                    "indent": null,
-                                    "parameters": [
-                                        "Move To: 8, 15"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 19,
-                                    "indent": null,
-                                    "parameters": []
-                                }
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 0,
-                            "parameters": [
-                                16,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 45,
-                                            "indent": null,
-                                            "parameters": [
-                                                "Move To: 6, 15"
-                                            ]
-                                        },
-                                        {
-                                            "code": 19,
-                                            "indent": null,
-                                            "parameters": []
-                                        },
-                                        {
-                                            "code": 0,
-                                            "indent": null,
-                                            "parameters": []
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": false
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 45,
-                                    "indent": null,
-                                    "parameters": [
-                                        "Move To: 6, 15"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 19,
-                                    "indent": null,
-                                    "parameters": []
-                                }
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 0,
-                            "parameters": [
-                                2,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 45,
-                                            "indent": null,
-                                            "parameters": [
-                                                "Move To: 7, 16"
-                                            ]
-                                        },
-                                        {
-                                            "code": 19,
-                                            "indent": null,
-                                            "parameters": []
-                                        },
-                                        {
-                                            "code": 0,
-                                            "indent": null,
-                                            "parameters": []
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": false
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 45,
-                                    "indent": null,
-                                    "parameters": [
-                                        "Move To: 7, 16"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 19,
-                                    "indent": null,
-                                    "parameters": []
-                                }
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 0,
-                            "parameters": [
-                                5,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 45,
-                                            "indent": null,
-                                            "parameters": [
-                                                "Move To: 5, 16"
-                                            ]
-                                        },
-                                        {
-                                            "code": 19,
-                                            "indent": null,
-                                            "parameters": []
-                                        },
-                                        {
-                                            "code": 0,
-                                            "indent": null,
-                                            "parameters": []
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": false
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 45,
-                                    "indent": null,
-                                    "parameters": [
-                                        "Move To: 5, 16"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 19,
-                                    "indent": null,
-                                    "parameters": []
-                                }
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 0,
-                            "parameters": [
-                                9,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 45,
-                                            "indent": null,
-                                            "parameters": [
-                                                "Move To: 11, 16"
-                                            ]
-                                        },
-                                        {
-                                            "code": 19,
-                                            "indent": null,
-                                            "parameters": []
-                                        },
-                                        {
-                                            "code": 0,
-                                            "indent": null,
-                                            "parameters": []
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": false
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 45,
-                                    "indent": null,
-                                    "parameters": [
-                                        "Move To: 11, 16"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 19,
-                                    "indent": null,
-                                    "parameters": []
-                                }
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 0,
-                            "parameters": [
-                                11,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 45,
-                                            "indent": null,
-                                            "parameters": [
-                                                "Move To: 9, 16"
-                                            ]
-                                        },
-                                        {
-                                            "code": 19,
-                                            "indent": null,
-                                            "parameters": []
-                                        },
-                                        {
-                                            "code": 0,
-                                            "indent": null,
-                                            "parameters": []
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": false
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 45,
-                                    "indent": null,
-                                    "parameters": [
-                                        "Move To: 9, 16"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 19,
-                                    "indent": null,
-                                    "parameters": []
-                                }
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 0,
-                            "parameters": [
-                                3,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 45,
-                                            "indent": null,
-                                            "parameters": [
-                                                "Move To: 8, 17"
-                                            ]
-                                        },
-                                        {
-                                            "code": 19,
-                                            "indent": null,
-                                            "parameters": []
-                                        },
-                                        {
-                                            "code": 0,
-                                            "indent": null,
-                                            "parameters": []
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": false
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 45,
-                                    "indent": null,
-                                    "parameters": [
-                                        "Move To: 8, 17"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 19,
-                                    "indent": null,
-                                    "parameters": []
-                                }
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 0,
-                            "parameters": [
-                                13,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 45,
-                                            "indent": null,
-                                            "parameters": [
-                                                "Move To: 4, 17"
-                                            ]
-                                        },
-                                        {
-                                            "code": 19,
-                                            "indent": null,
-                                            "parameters": []
-                                        },
-                                        {
-                                            "code": 0,
-                                            "indent": null,
-                                            "parameters": []
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": false
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 45,
-                                    "indent": null,
-                                    "parameters": [
-                                        "Move To: 4, 17"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 19,
-                                    "indent": null,
-                                    "parameters": []
-                                }
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 0,
-                            "parameters": [
-                                15,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 45,
-                                            "indent": null,
-                                            "parameters": [
-                                                "Move To: 10, 17"
-                                            ]
-                                        },
-                                        {
-                                            "code": 19,
-                                            "indent": null,
-                                            "parameters": []
-                                        },
-                                        {
-                                            "code": 0,
-                                            "indent": null,
-                                            "parameters": []
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": false
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 45,
-                                    "indent": null,
-                                    "parameters": [
-                                        "Move To: 10, 17"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 19,
-                                    "indent": null,
-                                    "parameters": []
-                                }
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 0,
-                            "parameters": [
-                                19,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 45,
-                                            "indent": null,
-                                            "parameters": [
-                                                "Move To: 12, 17"
-                                            ]
-                                        },
-                                        {
-                                            "code": 19,
-                                            "indent": null,
-                                            "parameters": []
-                                        },
-                                        {
-                                            "code": 0,
-                                            "indent": null,
-                                            "parameters": []
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": false
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 45,
-                                    "indent": null,
-                                    "parameters": [
-                                        "Move To: 12, 17"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 19,
-                                    "indent": null,
-                                    "parameters": []
-                                }
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 0,
-                            "parameters": [
-                                32,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 45,
-                                            "indent": null,
-                                            "parameters": [
-                                                "Move To: 6, 17"
-                                            ]
-                                        },
-                                        {
-                                            "code": 19,
-                                            "indent": null,
-                                            "parameters": []
-                                        },
-                                        {
-                                            "code": 0,
-                                            "indent": null,
-                                            "parameters": []
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": false
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 45,
-                                    "indent": null,
-                                    "parameters": [
-                                        "Move To: 6, 17"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 19,
-                                    "indent": null,
-                                    "parameters": []
-                                }
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 0,
-                            "parameters": [
-                                6,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 45,
-                                            "indent": null,
-                                            "parameters": [
-                                                "Move To: 7, 18"
-                                            ]
-                                        },
-                                        {
-                                            "code": 19,
-                                            "indent": null,
-                                            "parameters": []
-                                        },
-                                        {
-                                            "code": 0,
-                                            "indent": null,
-                                            "parameters": []
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": false
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 45,
-                                    "indent": null,
-                                    "parameters": [
-                                        "Move To: 7, 18"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 19,
-                                    "indent": null,
-                                    "parameters": []
-                                }
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 0,
-                            "parameters": [
-                                8,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 45,
-                                            "indent": null,
-                                            "parameters": [
-                                                "Move To: 5, 18"
-                                            ]
-                                        },
-                                        {
-                                            "code": 19,
-                                            "indent": null,
-                                            "parameters": []
-                                        },
-                                        {
-                                            "code": 0,
-                                            "indent": null,
-                                            "parameters": []
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": false
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 45,
-                                    "indent": null,
-                                    "parameters": [
-                                        "Move To: 5, 18"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 19,
-                                    "indent": null,
-                                    "parameters": []
-                                }
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 0,
-                            "parameters": [
-                                10,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 45,
-                                            "indent": null,
-                                            "parameters": [
-                                                "Move To: 9, 18"
-                                            ]
-                                        },
-                                        {
-                                            "code": 19,
-                                            "indent": null,
-                                            "parameters": []
-                                        },
-                                        {
-                                            "code": 0,
-                                            "indent": null,
-                                            "parameters": []
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": false
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 45,
-                                    "indent": null,
-                                    "parameters": [
-                                        "Move To: 9, 18"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 19,
-                                    "indent": null,
-                                    "parameters": []
-                                }
-                            ]
-                        },
-                        {
-                            "code": 205,
-                            "indent": 0,
-                            "parameters": [
-                                12,
-                                {
-                                    "list": [
-                                        {
-                                            "code": 45,
-                                            "indent": null,
-                                            "parameters": [
-                                                "Move To: 11, 18"
-                                            ]
-                                        },
-                                        {
-                                            "code": 19,
-                                            "indent": null,
-                                            "parameters": []
-                                        },
-                                        {
-                                            "code": 0,
-                                            "indent": null,
-                                            "parameters": []
-                                        }
-                                    ],
-                                    "repeat": false,
-                                    "skippable": false,
-                                    "wait": false
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 45,
-                                    "indent": null,
-                                    "parameters": [
-                                        "Move To: 11, 18"
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "code": 505,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "code": 19,
-                                    "indent": null,
-                                    "parameters": []
-                                }
-                            ]
-                        },
-                        {
                             "code": 0,
                             "indent": 0,
                             "parameters": []
@@ -7857,7 +7498,7 @@
                         "itemId": 1,
                         "itemValid": false,
                         "selfSwitchCh": "A",
-                        "selfSwitchValid": true,
+                        "selfSwitchValid": false,
                         "switch1Id": 1,
                         "switch1Valid": false,
                         "switch2Id": 1,
@@ -9332,7 +8973,7 @@
         {
             "id": 32,
             "name": "Crianca",
-            "note": "",
+            "note": "<Save Event Location>",
             "pages": [
                 {
                     "conditions": {
@@ -9411,6 +9052,42 @@
                     },
                     "list": [
                         {
+                            "code": 205,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 45,
+                                            "parameters": [
+                                                "Move To: 6, 17"
+                                            ]
+                                        },
+                                        {
+                                            "code": 19,
+                                            "parameters": []
+                                        },
+                                        {
+                                            "code": 0,
+                                            "parameters": []
+                                        }
+                                    ],
+                                    "repeat": false,
+                                    "skippable": false,
+                                    "wait": true
+                                }
+                            ]
+                        },
+                        {
+                            "code": 123,
+                            "indent": 0,
+                            "parameters": [
+                                "A",
+                                0
+                            ]
+                        },
+                        {
                             "code": 0,
                             "indent": 0,
                             "parameters": []
@@ -9430,10 +9107,10 @@
                     },
                     "moveSpeed": 3,
                     "moveType": 0,
-                    "priorityType": 1,
+                    "priorityType": 0,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 0,
+                    "trigger": 4,
                     "walkAnime": true
                 },
                 {

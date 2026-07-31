@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "gate_id": "gate-v1:map045-human-playtest",
+  "task_ref": "planos/003-falas-casa-forjaprata/task-1.1.md",
+  "status": "passed",
+  "evidence_refs": [
+    "planos/003-falas-casa-forjaprata/interaction/fase1/playtest-result-v1.json",
+    "planos/003-falas-casa-forjaprata/interaction/fase1/playtest-map045.md"
+  ]
+}

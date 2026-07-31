@@ -626,6 +626,23 @@ var $plugins =
         "parameters": {}
     },
     {
+        "name": "VisuMZ_4_GabWindow",
+        "status": true,
+        "description": "[RPG Maker MZ] [Tier 4] [Version 1.05] [GabWindow]",
+        "parameters": {
+            "BreakHead": "----------------------------------",
+            "GabWindow": "Plugin Parameters",
+            "ATTENTION": "READ THE HELP FILE",
+            "BreakSettings": "----------------------------------",
+            "General:struct": "{\"General\":\"\",\"AntiRepeat:eval\":\"true\",\"CenterGraphics:eval\":\"false\",\"Fade\":\"\",\"FadeRate:num\":\"8\",\"FadeDirection:str\":\"Up\",\"Font\":\"\",\"GabFontName:str\":\"\",\"GabFontSize:num\":\"20\",\"Sprites\":\"\",\"Character\":\"\",\"CharacterXPos:num\":\"36\",\"CharacterYPos:num\":\"108\",\"SVActor\":\"\",\"SvActorXPos:num\":\"44\",\"SvActorYPos:num\":\"68\",\"Waiting\":\"\",\"BaseWaitTime:num\":\"120\",\"TimePerCharacter:num\":\"4\",\"JavaScript\":\"\",\"OnDisplayJS:func\":\"\\\"// Declare Constants\\\\nconst gabWindow = this;\\\\nconst lastGab = arguments[0];\\\\n\\\\n// Perform Actions\\\\n\\\"\",\"OnFinishJS:func\":\"\\\"// Declare Constants\\\\nconst gabWindow = this;\\\\nconst lastGab = arguments[0];\\\\n\\\\n// Perform Actions\\\\n\\\"\",\"__collapsed\":[\"SVActor\"]}",
+            "Map:struct": "{\"MapYLocation:num\":\"72\",\"MapDimColor1:str\":\"rgba(0, 0, 0, 0.6)\",\"MapDimColor2:str\":\"rgba(250, 250, 250, 1)\"}",
+            "Battle:struct": "{\"BattleYLocation:num\":\"108\",\"BattleDimColor1:str\":\"rgba(0, 0, 0, 0.6)\",\"BattleDimColor2:str\":\"rgba(0, 0, 0, 0)\"}",
+            "BreakEnd1": "----------------------------------",
+            "End Of": "Plugin Parameters",
+            "BreakEnd2": "----------------------------------"
+        }
+    },
+    {
         "name": "VisuMZ_4_Debugger",
         "status": true,
         "description": "[RPG Maker MZ] [Tier 4] [Version 1.02] [Debugger]",
@@ -779,23 +796,6 @@ var $plugins =
             "Element25:struct": "{\"General\":\"\",\"enabled:eval\":\"true\",\"Image\":\"\",\"filename:str\":\"RESIST\",\"AnimationID:num\":\"0\",\"AniMirror:eval\":\"false\",\"AniMute:eval\":\"false\",\"Render\":\"\",\"text:str\":\"RESIST!\",\"bitmapWidth:num\":\"600\",\"bitmapHeight:num\":\"200\",\"fontFace:str\":\"Impact\",\"fontSize:num\":\"46\",\"fontBold:eval\":\"true\",\"fontItalic:eval\":\"false\",\"textColor:str\":\"#82ca9c\",\"outlineSize:num\":\"5\",\"outlineColor:str\":\"rgba(0, 0, 0, 1.0)\",\"Offset\":\"\",\"offsetX:num\":\"0\",\"offsetXvariance:num\":\"0\",\"offsetY:num\":\"0\",\"offsetYvariance:num\":\"0\",\"Scale\":\"\",\"scaleDuration:num\":\"20\",\"startScaleX:num\":\"2.0\",\"startScaleY:num\":\"2.0\",\"targetScaleX:num\":\"1.0\",\"targetScaleY:num\":\"1.0\",\"Acceleration\":\"\",\"startSpeedX:num\":\"0\",\"startSpeedY:num\":\"0\",\"deltaSpeedX:num\":\"-0.05\",\"deltaSpeedY:num\":\"0\",\"Fading\":\"\",\"opaqueDuration:num\":\"40\",\"fadeDuration:num\":\"20\"}",
             "Element0:struct": "{\"General\":\"\",\"enabled:eval\":\"true\",\"Image\":\"\",\"filename:str\":\"IMMUNE\",\"AnimationID:num\":\"0\",\"AniMirror:eval\":\"false\",\"AniMute:eval\":\"false\",\"Render\":\"\",\"text:str\":\"IMMUNE!\",\"bitmapWidth:num\":\"600\",\"bitmapHeight:num\":\"200\",\"fontFace:str\":\"Impact\",\"fontSize:num\":\"48\",\"fontBold:eval\":\"true\",\"fontItalic:eval\":\"false\",\"textColor:str\":\"#6dcff6\",\"outlineSize:num\":\"5\",\"outlineColor:str\":\"rgba(0, 0, 0, 1.0)\",\"Offset\":\"\",\"offsetX:num\":\"0\",\"offsetXvariance:num\":\"0\",\"offsetY:num\":\"0\",\"offsetYvariance:num\":\"0\",\"Scale\":\"\",\"scaleDuration:num\":\"20\",\"startScaleX:num\":\"2.0\",\"startScaleY:num\":\"2.0\",\"targetScaleX:num\":\"1.0\",\"targetScaleY:num\":\"1.0\",\"Acceleration\":\"\",\"startSpeedX:num\":\"0\",\"startSpeedY:num\":\"0\",\"deltaSpeedX:num\":\"-0.05\",\"deltaSpeedY:num\":\"0\",\"Fading\":\"\",\"opaqueDuration:num\":\"40\",\"fadeDuration:num\":\"20\"}",
             "ElementNegative:struct": "{\"General\":\"\",\"enabled:eval\":\"true\",\"Image\":\"\",\"filename:str\":\"ABSORB\",\"AnimationID:num\":\"0\",\"AniMirror:eval\":\"false\",\"AniMute:eval\":\"false\",\"Render\":\"\",\"text:str\":\"ABSORB!\",\"bitmapWidth:num\":\"600\",\"bitmapHeight:num\":\"200\",\"fontFace:str\":\"Impact\",\"fontSize:num\":\"48\",\"fontBold:eval\":\"true\",\"fontItalic:eval\":\"false\",\"textColor:str\":\"#bd8cbf\",\"outlineSize:num\":\"5\",\"outlineColor:str\":\"rgba(0, 0, 0, 1.0)\",\"Offset\":\"\",\"offsetX:num\":\"0\",\"offsetXvariance:num\":\"0\",\"offsetY:num\":\"0\",\"offsetYvariance:num\":\"0\",\"Scale\":\"\",\"scaleDuration:num\":\"20\",\"startScaleX:num\":\"2.0\",\"startScaleY:num\":\"2.0\",\"targetScaleX:num\":\"1.0\",\"targetScaleY:num\":\"1.0\",\"Acceleration\":\"\",\"startSpeedX:num\":\"0\",\"startSpeedY:num\":\"0\",\"deltaSpeedX:num\":\"-0.05\",\"deltaSpeedY:num\":\"0\",\"Fading\":\"\",\"opaqueDuration:num\":\"40\",\"fadeDuration:num\":\"20\"}",
-            "BreakEnd1": "----------------------------------",
-            "End Of": "Plugin Parameters",
-            "BreakEnd2": "----------------------------------"
-        }
-    },
-    {
-        "name": "VisuMZ_4_GabWindow",
-        "status": true,
-        "description": "[RPG Maker MZ] [Tier 4] [Version 1.05] [GabWindow]",
-        "parameters": {
-            "BreakHead": "----------------------------------",
-            "GabWindow": "Plugin Parameters",
-            "ATTENTION": "READ THE HELP FILE",
-            "BreakSettings": "----------------------------------",
-            "General:struct": "{\"General\":\"\",\"AntiRepeat:eval\":\"true\",\"CenterGraphics:eval\":\"false\",\"Fade\":\"\",\"FadeRate:num\":\"30\",\"FadeDirection:str\":\"Up\",\"Font\":\"\",\"GabFontName:str\":\"\",\"GabFontSize:num\":\"20\",\"Sprites\":\"\",\"Character\":\"\",\"CharacterXPos:num\":\"36\",\"CharacterYPos:num\":\"100\",\"SVActor\":\"\",\"SvActorXPos:num\":\"44\",\"SvActorYPos:num\":\"68\",\"Waiting\":\"\",\"BaseWaitTime:num\":\"120\",\"TimePerCharacter:num\":\"4\",\"JavaScript\":\"\",\"OnDisplayJS:func\":\"\\\"// Declare Constants\\\\nconst gabWindow = this;\\\\nconst lastGab = arguments[0];\\\\n\\\\n// Perform Actions\\\\n\\\"\",\"OnFinishJS:func\":\"\\\"// Declare Constants\\\\nconst gabWindow = this;\\\\nconst lastGab = arguments[0];\\\\n\\\\n// Perform Actions\\\\n\\\"\",\"__collapsed\":[\"SVActor\"]}",
-            "Map:struct": "{\"MapYLocation:num\":\"72\",\"MapDimColor1:str\":\"rgba(0, 0, 0, 0.6)\",\"MapDimColor2:str\":\"rgba(0, 0, 0, 0)\"}",
-            "Battle:struct": "{\"BattleYLocation:num\":\"108\",\"BattleDimColor1:str\":\"rgba(0, 0, 0, 0.6)\",\"BattleDimColor2:str\":\"rgba(0, 0, 0, 0)\"}",
             "BreakEnd1": "----------------------------------",
             "End Of": "Plugin Parameters",
             "BreakEnd2": "----------------------------------"

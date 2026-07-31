@@ -1,0 +1,877 @@
+{
+  "schemaVersion": 1,
+  "taskId": "task-1.1",
+  "status": "passed-static-runtime-pending",
+  "targetFile": "frontend/data/Map045.json",
+  "baselineSha256": "542bfe177324ba62a4527c35699f556fa52f61077ef8fbade7543e55c20635dd",
+  "repairedSha256": "d8776988caa9641889a3b26256e777a855280d994ef9343d30be124b148bbdd4",
+  "manifestSha256": "6e27efa4bebf9367f0ec51b6bff8c3080d03f5f3e3087b7330a56b325a40028e",
+  "previewSha256": "b068c8fe4ea06919937bba3af85c1c0f63ec93d885df73764dbe9106df743f6e",
+  "exactLeafChanges": 30,
+  "checks": [
+    {
+      "name": "manifest-identity",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "manifest-repaired-state-hash",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "manifest-exactly-30-unique",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "frozen-recovery:E005-P04-L002-parameters-4",
+      "passed": true,
+      "details": {
+        "passes": 2
+      }
+    },
+    {
+      "name": "frozen-recovery:E008-P02-L012-parameters-0",
+      "passed": true,
+      "details": {
+        "passes": 2
+      }
+    },
+    {
+      "name": "frozen-recovery:E008-P02-L025-parameters-0",
+      "passed": true,
+      "details": {
+        "passes": 2
+      }
+    },
+    {
+      "name": "frozen-recovery:E008-P02-L028-parameters-0",
+      "passed": true,
+      "details": {
+        "passes": 2
+      }
+    },
+    {
+      "name": "frozen-recovery:E008-P02-L031-parameters-0",
+      "passed": true,
+      "details": {
+        "passes": 2
+      }
+    },
+    {
+      "name": "frozen-recovery:E008-P02-L034-parameters-0",
+      "passed": true,
+      "details": {
+        "passes": 2
+      }
+    },
+    {
+      "name": "frozen-recovery:E008-P02-L037-parameters-0",
+      "passed": true,
+      "details": {
+        "passes": 2
+      }
+    },
+    {
+      "name": "frozen-recovery:E008-P02-L040-parameters-0",
+      "passed": true,
+      "details": {
+        "passes": 2
+      }
+    },
+    {
+      "name": "frozen-recovery:E008-P02-L043-parameters-0",
+      "passed": true,
+      "details": {
+        "passes": 2
+      }
+    },
+    {
+      "name": "frozen-recovery:E008-P03-L012-parameters-0",
+      "passed": true,
+      "details": {
+        "passes": 2
+      }
+    },
+    {
+      "name": "frozen-recovery:E008-P04-L013-parameters-0",
+      "passed": true,
+      "details": {
+        "passes": 2
+      }
+    },
+    {
+      "name": "frozen-recovery:E008-P04-L026-parameters-0",
+      "passed": true,
+      "details": {
+        "passes": 2
+      }
+    },
+    {
+      "name": "frozen-recovery:E008-P04-L039-parameters-0",
+      "passed": true,
+      "details": {
+        "passes": 2
+      }
+    },
+    {
+      "name": "frozen-recovery:E008-P04-L042-parameters-0",
+      "passed": true,
+      "details": {
+        "passes": 2
+      }
+    },
+    {
+      "name": "frozen-recovery:E008-P04-L045-parameters-0",
+      "passed": true,
+      "details": {
+        "passes": 2
+      }
+    },
+    {
+      "name": "frozen-recovery:E008-P04-L083-parameters-0",
+      "passed": true,
+      "details": {
+        "passes": 2
+      }
+    },
+    {
+      "name": "frozen-recovery:E008-P04-L111-parameters-0",
+      "passed": true,
+      "details": {
+        "passes": 2
+      }
+    },
+    {
+      "name": "frozen-recovery:E008-P06-L012-parameters-0",
+      "passed": true,
+      "details": {
+        "passes": 2
+      }
+    },
+    {
+      "name": "frozen-recovery:E011-P01-L024-parameters-4",
+      "passed": true,
+      "details": {
+        "passes": 2
+      }
+    },
+    {
+      "name": "frozen-recovery:E011-P01-L070-parameters-4",
+      "passed": true,
+      "details": {
+        "passes": 2
+      }
+    },
+    {
+      "name": "frozen-recovery:E011-P01-L071-parameters-4",
+      "passed": true,
+      "details": {
+        "passes": 2
+      }
+    },
+    {
+      "name": "frozen-recovery:E011-P01-L118-parameters-0",
+      "passed": true,
+      "details": {
+        "passes": 2
+      }
+    },
+    {
+      "name": "frozen-recovery:E011-P03-L019-parameters-0",
+      "passed": true,
+      "details": {
+        "passes": 2
+      }
+    },
+    {
+      "name": "frozen-recovery:E011-P03-L049-parameters-0",
+      "passed": true,
+      "details": {
+        "passes": 2
+      }
+    },
+    {
+      "name": "frozen-recovery:E011-P03-L077-parameters-0",
+      "passed": true,
+      "details": {
+        "passes": 2
+      }
+    },
+    {
+      "name": "frozen-recovery:E012-P01-L013-parameters-0",
+      "passed": true,
+      "details": {
+        "passes": 1
+      }
+    },
+    {
+      "name": "frozen-recovery:E012-P02-L013-parameters-0",
+      "passed": true,
+      "details": {
+        "passes": 1
+      }
+    },
+    {
+      "name": "frozen-recovery:E012-P03-L013-parameters-0",
+      "passed": true,
+      "details": {
+        "passes": 1
+      }
+    },
+    {
+      "name": "frozen-recovery:E010-name",
+      "passed": true,
+      "details": {
+        "passes": 2
+      }
+    },
+    {
+      "name": "frozen-recovery:E018-name",
+      "passed": true,
+      "details": {
+        "passes": 2
+      }
+    },
+    {
+      "name": "repaired-state-hash",
+      "passed": true,
+      "details": {
+        "expected": "d8776988caa9641889a3b26256e777a855280d994ef9343d30be124b148bbdd4",
+        "actual": "d8776988caa9641889a3b26256e777a855280d994ef9343d30be124b148bbdd4"
+      }
+    },
+    {
+      "name": "reconstructed-baseline-hash",
+      "passed": true,
+      "details": {
+        "expected": "542bfe177324ba62a4527c35699f556fa52f61077ef8fbade7543e55c20635dd",
+        "actual": "542bfe177324ba62a4527c35699f556fa52f61077ef8fbade7543e55c20635dd"
+      }
+    },
+    {
+      "name": "byte-restricted-repair",
+      "passed": true,
+      "details": {
+        "expectedSha256": "d8776988caa9641889a3b26256e777a855280d994ef9343d30be124b148bbdd4",
+        "actualSha256": "d8776988caa9641889a3b26256e777a855280d994ef9343d30be124b148bbdd4"
+      }
+    },
+    {
+      "name": "exactly-30-allowlisted-leaf-diffs",
+      "passed": true,
+      "details": {
+        "actualCount": 30
+      }
+    },
+    {
+      "name": "masked-deep-equality",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "expected-value:E005-P04-L002-parameters-4",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "unicode-clean:E005-P04-L002-parameters-4",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "command-code-preserved:E005-P04-L002-parameters-4",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "expected-value:E008-P02-L012-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "unicode-clean:E008-P02-L012-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "command-code-preserved:E008-P02-L012-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "expected-value:E008-P02-L025-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "unicode-clean:E008-P02-L025-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "command-code-preserved:E008-P02-L025-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "expected-value:E008-P02-L028-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "unicode-clean:E008-P02-L028-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "command-code-preserved:E008-P02-L028-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "expected-value:E008-P02-L031-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "unicode-clean:E008-P02-L031-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "command-code-preserved:E008-P02-L031-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "expected-value:E008-P02-L034-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "unicode-clean:E008-P02-L034-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "command-code-preserved:E008-P02-L034-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "expected-value:E008-P02-L037-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "unicode-clean:E008-P02-L037-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "command-code-preserved:E008-P02-L037-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "expected-value:E008-P02-L040-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "unicode-clean:E008-P02-L040-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "command-code-preserved:E008-P02-L040-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "expected-value:E008-P02-L043-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "unicode-clean:E008-P02-L043-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "command-code-preserved:E008-P02-L043-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "expected-value:E008-P03-L012-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "unicode-clean:E008-P03-L012-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "command-code-preserved:E008-P03-L012-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "expected-value:E008-P04-L013-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "unicode-clean:E008-P04-L013-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "command-code-preserved:E008-P04-L013-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "expected-value:E008-P04-L026-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "unicode-clean:E008-P04-L026-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "command-code-preserved:E008-P04-L026-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "expected-value:E008-P04-L039-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "unicode-clean:E008-P04-L039-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "command-code-preserved:E008-P04-L039-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "expected-value:E008-P04-L042-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "unicode-clean:E008-P04-L042-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "command-code-preserved:E008-P04-L042-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "expected-value:E008-P04-L045-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "unicode-clean:E008-P04-L045-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "command-code-preserved:E008-P04-L045-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "expected-value:E008-P04-L083-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "unicode-clean:E008-P04-L083-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "command-code-preserved:E008-P04-L083-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "expected-value:E008-P04-L111-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "unicode-clean:E008-P04-L111-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "command-code-preserved:E008-P04-L111-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "expected-value:E008-P06-L012-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "unicode-clean:E008-P06-L012-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "command-code-preserved:E008-P06-L012-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "expected-value:E011-P01-L024-parameters-4",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "unicode-clean:E011-P01-L024-parameters-4",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "command-code-preserved:E011-P01-L024-parameters-4",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "expected-value:E011-P01-L070-parameters-4",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "unicode-clean:E011-P01-L070-parameters-4",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "command-code-preserved:E011-P01-L070-parameters-4",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "expected-value:E011-P01-L071-parameters-4",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "unicode-clean:E011-P01-L071-parameters-4",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "command-code-preserved:E011-P01-L071-parameters-4",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "expected-value:E011-P01-L118-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "unicode-clean:E011-P01-L118-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "command-code-preserved:E011-P01-L118-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "expected-value:E011-P03-L019-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "unicode-clean:E011-P03-L019-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "command-code-preserved:E011-P03-L019-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "expected-value:E011-P03-L049-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "unicode-clean:E011-P03-L049-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "command-code-preserved:E011-P03-L049-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "expected-value:E011-P03-L077-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "unicode-clean:E011-P03-L077-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "command-code-preserved:E011-P03-L077-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "expected-value:E012-P01-L013-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "unicode-clean:E012-P01-L013-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "command-code-preserved:E012-P01-L013-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "expected-value:E012-P02-L013-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "unicode-clean:E012-P02-L013-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "command-code-preserved:E012-P02-L013-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "expected-value:E012-P03-L013-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "unicode-clean:E012-P03-L013-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "command-code-preserved:E012-P03-L013-parameters-0",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "expected-value:E010-name",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "unicode-clean:E010-name",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "expected-value:E018-name",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "unicode-clean:E018-name",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "event-count",
+      "passed": true,
+      "details": {
+        "expected": 20,
+        "actual": 20
+      }
+    },
+    {
+      "name": "page-count",
+      "passed": true,
+      "details": {
+        "expected": 49,
+        "actual": 49
+      }
+    },
+    {
+      "name": "command-count:101",
+      "passed": true,
+      "details": {
+        "expected": 26,
+        "actual": 26
+      }
+    },
+    {
+      "name": "command-count:102",
+      "passed": true,
+      "details": {
+        "expected": 4,
+        "actual": 4
+      }
+    },
+    {
+      "name": "command-count:357",
+      "passed": true,
+      "details": {
+        "expected": 64,
+        "actual": 64
+      }
+    },
+    {
+      "name": "command-count:401",
+      "passed": true,
+      "details": {
+        "expected": 26,
+        "actual": 26
+      }
+    },
+    {
+      "name": "command-count:402",
+      "passed": true,
+      "details": {
+        "expected": 8,
+        "actual": 8
+      }
+    },
+    {
+      "name": "command-count:404",
+      "passed": true,
+      "details": {
+        "expected": 4,
+        "actual": 4
+      }
+    },
+    {
+      "name": "command-count:657",
+      "passed": true,
+      "details": {
+        "expected": 402,
+        "actual": 402
+      }
+    },
+    {
+      "name": "show-text-pairing",
+      "passed": true,
+      "details": {
+        "orphan401": 0,
+        "empty101": 0
+      }
+    },
+    {
+      "name": "branch-indent-structure",
+      "passed": true,
+      "details": {
+        "branchCommands": 22
+      }
+    },
+    {
+      "name": "common-event-16-caller-count",
+      "passed": true,
+      "details": {
+        "expected": 10,
+        "actual": 10
+      }
+    },
+    {
+      "name": "branch-payloads-preserved",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "plugin-payloads-preserved",
+      "passed": true,
+      "details": {
+        "code357": 64,
+        "code657": 402
+      }
+    },
+    {
+      "name": "common-event-callers-preserved",
+      "passed": true,
+      "details": {
+        "total": 10,
+        "commonEvent16": 10
+      }
+    },
+    {
+      "name": "narrative-variable-assignment-order-locators-codes-indents-ids-operations-and-nonallowlisted-parameters-preserved",
+      "passed": true,
+      "details": {
+        "assignments": 30,
+        "authorizedOperandsMasked": 4,
+        "operandValuesValidatedSeparatelyBy": [
+          "expected-value checks",
+          "exact 30-path diff",
+          "byte-restricted repair"
+        ]
+      }
+    },
+    {
+      "name": "preview-identity",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "preview-hashes",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "preview-values",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "guard-hash:frontend/data/Map006.json",
+      "passed": true,
+      "details": {
+        "expected": "2db7a21b646dd6a89daae8d1aa9c78852f00f8504a2424ef2656854a45551679",
+        "actual": "2db7a21b646dd6a89daae8d1aa9c78852f00f8504a2424ef2656854a45551679"
+      }
+    }
+  ],
+  "validationCycleRefs": [
+    "planos/003-falas-casa-forjaprata/builds/fase1/validation-cycles/cycle-1/severity-finding-v1.json"
+  ],
+  "auditFindingRefs": [
+    "planos/003-falas-casa-forjaprata/builds/audits/phase/boundary-9782193a9be6e59f37a5084515e823b0/audit-report-v1.json"
+  ],
+  "preflightRef": "planos/003-falas-casa-forjaprata/preflights/run-17d91eab7bf669664b09e697206afed0/technical-implementer/preflight-v2.md",
+  "externalChecksRequired": [
+    "git diff --check"
+  ],
+  "humanGate": "Playtest pending; runtime not validated"
+}

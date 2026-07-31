@@ -1,0 +1,22 @@
+{
+  "evidence_refs": [
+    "planos/003-falas-casa-forjaprata/builds/fase1/writer-completion-v2.json",
+    "planos/003-falas-casa-forjaprata/builds/fase1/agent-session-evidence-v2.xml",
+    "planos/003-falas-casa-forjaprata/builds/fase1/map045-validation-report.json",
+    "planos/003-falas-casa-forjaprata/builds/fase1/validation-cycles/cycle-1/severity-finding-v2.json",
+    "planos/003-falas-casa-forjaprata/builds/fase1/validation-cycles/cycle-1/failed-validation-report-sha256-9e52adaca905664890e916fc398ae150510bd37dc9d1ccb15caccf14bd229195.json",
+    "planos/003-falas-casa-forjaprata/builds/audits/phase/boundary-9782193a9be6e59f37a5084515e823b0/audit-report-v1.json"
+  ],
+  "handoff_id": "handoff-v1:bde81054b8bf64cb4077999efb40af7f81b33d1a4582f91a83638ad27da75dbc",
+  "schema_version": 1,
+  "target_digests": [
+    {"digest": "sha256:68c77591e43a96f1d60630ac1c7250f45238bb43a24654f79997a75fcd1c16f3", "path": "frontend/data/Map045.json"},
+    {"digest": "sha256:eadf6620e3078ef260af57e8f7808416727ac2aed24367fb1bd008499f4b96fa", "path": "planos/003-falas-casa-forjaprata/builds/fase1/map045-repair-manifest.json"},
+    {"digest": "sha256:c558add433ba4dc5bf7f3b2783e29528522581da7c1a80f32620617409648c56", "path": "planos/003-falas-casa-forjaprata/builds/fase1/map045-preview.json"},
+    {"digest": "sha256:3fc54fd6ca4f2abadc99370914a829a941166bd4a42d39060e3430170b06a242", "path": "planos/003-falas-casa-forjaprata/builds/fase1/map045-validation-report.json"},
+    {"digest": "sha256:e4d45847315513026ef756b34c5ef39f3ead6db28ad63476f9c4bb05a711100c", "path": "planos/003-falas-casa-forjaprata/builds/fase1/repair-map045-encoding.mjs"},
+    {"digest": "sha256:3a1021b555e03895e0c8f95cf3e60c7c1023a968ef4deef35f6dfeeb83a5b118", "path": "planos/003-falas-casa-forjaprata/builds/fase1/validate-map045-encoding.mjs"}
+  ],
+  "task_ref": "planos/003-falas-casa-forjaprata/task-1.1.md",
+  "writer_identity": "agent:technical-implementer-map045"
+}

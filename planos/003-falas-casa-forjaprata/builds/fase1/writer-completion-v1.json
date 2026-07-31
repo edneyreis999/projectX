@@ -1,0 +1,29 @@
+{
+  "agent_run_id": "agent-run-v1:d7ce9fd3ce5ef4d4d357958962947e6c2a46ebf1b3c6aaa11c7be5e4f2e7c716",
+  "attempts": [
+    "Atomic scratch was denied in the default sandbox before save; no partial write occurred.",
+    "Concurrent Map045 additions were detected and preserved by rebasing the manifest.",
+    "The first post-save failure was independently classified as validator-defect with no retry debit; the full retest passed."
+  ],
+  "decisions": [
+    "Preserve the concurrent page and event 20 additions.",
+    "Mask only the four authorized command122 text operands in the assignment-structure comparison."
+  ],
+  "handoff_id": "handoff-v1:5b90fbf2126eb48f250696d356c646ab8f414eed05148cd8e24ab9c2fa4e8777",
+  "known_errors": [],
+  "next_destination": "orchestrator",
+  "residual_risks": [
+    "Runtime presentation remains pending human Playtest.",
+    "Map006 remains divergent and needs a separate follow-up if synchronization is desired."
+  ],
+  "schema_version": 1,
+  "status": "pending-human-validation",
+  "summary": "Exactly 30 allowlisted Map045 string leaves were repaired; concurrent user additions and Map006 were preserved.",
+  "task_ref": "planos/003-falas-casa-forjaprata/task-1.1.md",
+  "validations": [
+    "144 of 144 deterministic checks passed",
+    "Map045 SHA-256 5030496827aafc9e79fdbf99b21bea933fdbf2d2ee38863051f60f98bd2382f6",
+    "Map006 SHA-256 unchanged 2db7a21b646dd6a89daae8d1aa9c78852f00f8504a2424ef2656854a45551679",
+    "git diff --check passed with CRLF advisory only"
+  ]
+}
