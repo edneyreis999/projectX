@@ -305,7 +305,7 @@ Cada inimigo tem seu valor de EXP definido (aumentado 2.5x):
 
 **Arquivos Modificados:**
 - `frontend/data/Classes.json` - expParams [4,50,150,1] para todas as classes
-- `docs/GDD/6-combate/simulacao-20-batalhas-lobo.test.js` - atualizado com nova curva
+- `frontend/__tests__/progressao/simulacao-20-batalhas-lobo.test.js` - atualizado com nova curva
 
 ### v3.0 (2026-03-11) - ✅ REBALANCEADO
 

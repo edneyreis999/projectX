@@ -10,7 +10,7 @@
  * )
  *
  * Referência:
- * - docs/GDD/6-combate/sistema-experiencia.md
+ * - docs/GDD/06_Combat/sistema-experiencia.md
  * 
   Para executar o teste:
   npm test -- frontend/__tests__/progressao/simulacao-20-batalhas-lobo.test.js

@@ -162,26 +162,124 @@
       <keywords><keyword>GDD visão geral história jogabilidade arte som tecnologia</keyword></keywords>
       <sections><section anchor="1-visão-geral-do-projeto" tokens="1200" purpose="Apresenta a visão geral e direciona para as áreas principais do GDD." /></sections>
     </document>
-    <document id="combat-fundamentals" path="docs/GDD/6-combate/FUNDAMENTOS-COMBAT-SYSTEM.md" type="game-design-rule" priority="high">
+    <document id="history-overview" path="docs/GDD/05_History/historia-de-daratrine.md" type="narrative-reference" priority="high">
+      <summary>História principal de Daratrine e os acontecimentos que formam o contexto da jornada.</summary>
+      <use_when>Use para recuperar o panorama do enredo, os eventos centrais e a progressão histórica do mundo.</use_when>
+      <not_covered>Não substitui a timeline detalhada, a jornada do jogador ou a especificação da missão final.</not_covered>
+      <keywords><keyword>história Daratrine enredo contexto jornada mundo</keyword></keywords>
+      <sections><section anchor="história-principal" tokens="1200" purpose="Apresenta os acontecimentos e conflitos que estruturam a narrativa principal." /></sections>
+    </document>
+    <document id="history-player-journey" path="docs/GDD/05_History/historia-jornada-do-jogador.md" type="narrative-structure" priority="high">
+      <summary>Jornada do jogador, organização da campanha e evolução da experiência narrativa.</summary>
+      <use_when>Use ao localizar a ordem da jornada, seus momentos de progressão e a relação entre história e experiência do jogador.</use_when>
+      <not_covered>Não resolve conflitos de cânone nem certifica a alcançabilidade das rotas no runtime.</not_covered>
+      <keywords><keyword>jornada jogador campanha progressão atos narrativa</keyword></keywords>
+      <sections><section anchor="jornada-do-jogador" tokens="1000" purpose="Organiza a experiência do jogador ao longo da campanha." /></sections>
+    </document>
+    <document id="history-timeline" path="docs/GDD/05_History/timeline-historia-jogo-v5.md" type="narrative-timeline" priority="high">
+      <summary>Timeline v5 dos acontecimentos históricos e narrativos do jogo.</summary>
+      <use_when>Use para verificar ordem temporal, marcos da história e relações entre passado, presente e desfecho.</use_when>
+      <not_covered>Não substitui decisões humanas pendentes sobre versões conflitantes do final.</not_covered>
+      <keywords><keyword>timeline história v5 cronologia eventos passado presente final</keyword></keywords>
+      <sections><section anchor="linha-do-tempo" tokens="1100" purpose="Relaciona os marcos temporais que organizam a narrativa." /></sections>
+    </document>
+    <document id="history-final-mission" path="docs/GDD/05_History/ultima-missao-do-jogo.md" type="narrative-specification" priority="high">
+      <summary>Especificação da última missão, suas cenas, escolhas e possibilidades de encerramento.</summary>
+      <use_when>Use ao consultar o desenho do final da campanha e os beats da missão derradeira.</use_when>
+      <not_covered>Não comprova que todas as rotas do final estejam acessíveis no runtime.</not_covered>
+      <keywords><keyword>última missão final escolhas cenas encerramento</keyword></keywords>
+      <sections><section anchor="última-missão" tokens="1000" purpose="Descreve a estrutura narrativa e as decisões do encerramento do jogo." /></sections>
+    </document>
+    <document id="combat-fundamentals" path="docs/GDD/06_Combat/FUNDAMENTOS-COMBAT-SYSTEM.md" type="game-design-rule" priority="high">
       <summary>Fundamentos e filosofia do sistema de combate de Daratrine.</summary>
       <use_when>Use antes de desenhar, revisar ou balancear combate, personagens, inimigos ou sinergias.</use_when>
       <not_covered>Não é prova automática do estado implementado no runtime.</not_covered>
       <keywords><keyword>combate fundamentos filosofia personagens inimigos sinergias</keyword></keywords>
       <sections><section anchor="1-objetivo-do-combat-system" tokens="5200" purpose="Define objetivos, sensação e entregas esperadas do sistema de combate." /></sections>
     </document>
-    <document id="combat-design-guidelines" path="docs/GDD/6-combate/DIRETRIZES-DESIGN-COMBAT-SYSTEM.md" type="game-design-guideline" priority="high">
+    <document id="combat-design-guidelines" path="docs/GDD/06_Combat/DIRETRIZES-DESIGN-COMBAT-SYSTEM.md" type="game-design-guideline" priority="high">
       <summary>Diretrizes práticas existentes para skills, kits, sinergias e balanceamento de combate.</summary>
       <use_when>Use ao criar ou revisar skills, kits de personagem e sinergias de equipe.</use_when>
       <not_covered>Não valida dados atuais nem comportamento em playtest.</not_covered>
       <keywords><keyword>combate diretrizes skills kits sinergias balanceamento</keyword></keywords>
       <sections><section anchor="1-diretrizes-para-criação-de-skills" tokens="6200" purpose="Orienta a criação e classificação tática de skills." /></sections>
     </document>
-    <document id="combat-modifier-classification" path="docs/GDD/6-combate/CLASSIFICACAO-MODIFICADORES.md" type="balance-system" priority="high">
+    <document id="combat-modifier-classification" path="docs/GDD/06_Combat/CLASSIFICACAO-MODIFICADORES.md" type="balance-system" priority="high">
       <summary>Sistema existente de classificação e score numérico de modificadores de skills.</summary>
       <use_when>Use para comparar peso e classificação de modificadores nos eixos do combate.</use_when>
       <not_covered>Não substitui tuning, dados implementados ou validação de combate em execução.</not_covered>
       <keywords><keyword>combate score modificadores efeito tempo recurso balanceamento</keyword></keywords>
       <sections><section anchor="3-modelo-de-score" tokens="4800" purpose="Explica o modelo numérico usado para classificar modificadores." /></sections>
+    </document>
+    <document id="combat-tools-guide" path="docs/GDD/06_Combat/GUIA-FERRAMENTAS-COMBAT-SYSTEM.md" type="game-design-reference" priority="medium">
+      <summary>Guia de ferramentas e referências usadas para trabalhar no sistema de combate.</summary>
+      <use_when>Use ao localizar procedimentos, ferramentas e referências auxiliares de criação e revisão do combate.</use_when>
+      <not_covered>Não substitui os fundamentos, as diretrizes ou a validação do comportamento implementado.</not_covered>
+      <keywords><keyword>combate ferramentas referência procedimentos</keyword></keywords>
+      <sections><section anchor="guia-de-ferramentas" tokens="800" purpose="Apresenta recursos auxiliares para análise e desenvolvimento do combate." /></sections>
+    </document>
+    <document id="combat-experience-system" path="docs/GDD/06_Combat/sistema-experiencia.md" type="progression-system" priority="high">
+      <summary>Sistema de experiência e progressão associado ao combate.</summary>
+      <use_when>Use ao investigar EXP, evolução de personagens e relação entre batalhas e progressão.</use_when>
+      <not_covered>Não resolve divergências entre intenção de design, dados implementados e comportamento em runtime.</not_covered>
+      <keywords><keyword>experiência EXP progressão níveis combate</keyword></keywords>
+      <sections><section anchor="sistema-de-experiência" tokens="900" purpose="Define a lógica documentada de experiência e crescimento." /></sections>
+    </document>
+    <document id="combat-enemy-cristaleao" path="docs/GDD/06_Combat/inimigos/cristaleao-enemy-btb.md" type="enemy-design" priority="medium">
+      <summary>Ficha de design do Cristaleão como inimigo de combate.</summary>
+      <use_when>Use ao consultar o papel, comportamento e parâmetros projetados do Cristaleão.</use_when>
+      <not_covered>Não certifica balanceamento ou comportamento final no runtime.</not_covered>
+      <keywords><keyword>Cristaleão inimigo combate BTB</keyword></keywords>
+      <sections><section anchor="ficha-do-inimigo" tokens="500" purpose="Descreve o inimigo e sua função no combate." /></sections>
+    </document>
+    <document id="combat-character-index" path="docs/GDD/06_Combat/personagens/index.md" type="character-design-index" priority="medium">
+      <summary>Índice das fichas de personagens usadas para organizar o design de combate.</summary>
+      <use_when>Use para navegar rapidamente entre as fichas de combate dos personagens.</use_when>
+      <not_covered>Não substitui as fichas individuais nem os fundamentos gerais do sistema.</not_covered>
+      <keywords><keyword>personagens índice combate fichas</keyword></keywords>
+      <sections><section anchor="índice-de-personagens" tokens="300" purpose="Aponta para as fichas individuais de personagens." /></sections>
+    </document>
+    <document id="combat-character-balastrus" path="docs/GDD/06_Combat/personagens/balastrus.md" type="character-design" priority="medium">
+      <summary>Ficha de combate de Balastrus.</summary>
+      <use_when>Use ao consultar a identidade e o kit de combate de Balastrus.</use_when>
+      <not_covered>Não certifica implementação ou balanceamento em runtime.</not_covered>
+      <keywords><keyword>Balastrus personagem combate skills</keyword></keywords>
+      <sections><section anchor="kit-de-balastrus" tokens="500" purpose="Descreve o papel e as habilidades de Balastrus." /></sections>
+    </document>
+    <document id="combat-character-filena" path="docs/GDD/06_Combat/personagens/filena.md" type="character-design" priority="high">
+      <summary>Ficha de combate de Filena.</summary>
+      <use_when>Use ao consultar a identidade, recursos e kit de combate de Filena.</use_when>
+      <not_covered>Não certifica implementação ou balanceamento em runtime.</not_covered>
+      <keywords><keyword>Filena personagem combate skills Momentum</keyword></keywords>
+      <sections><section anchor="kit-de-filena" tokens="700" purpose="Descreve o papel tático e as habilidades de Filena." /></sections>
+    </document>
+    <document id="combat-character-kilin" path="docs/GDD/06_Combat/personagens/kilin.md" type="character-design" priority="high">
+      <summary>Ficha de combate de Kilin.</summary>
+      <use_when>Use ao consultar a identidade, recursos e kit de combate de Kilin.</use_when>
+      <not_covered>Não certifica implementação ou balanceamento em runtime.</not_covered>
+      <keywords><keyword>Kilin personagem combate skills Guarda</keyword></keywords>
+      <sections><section anchor="kit-de-kilin" tokens="700" purpose="Descreve o papel tático e as habilidades de Kilin." /></sections>
+    </document>
+    <document id="combat-character-mhordred" path="docs/GDD/06_Combat/personagens/mhordred.md" type="character-design" priority="high">
+      <summary>Ficha de combate de Mhordred.</summary>
+      <use_when>Use ao consultar a identidade, recursos e kit de combate de Mhordred.</use_when>
+      <not_covered>Não certifica implementação ou balanceamento em runtime.</not_covered>
+      <keywords><keyword>Mhordred personagem combate skills Fúria</keyword></keywords>
+      <sections><section anchor="kit-de-mhordred" tokens="700" purpose="Descreve o papel tático e as habilidades de Mhordred." /></sections>
+    </document>
+    <document id="combat-character-thorin" path="docs/GDD/06_Combat/personagens/thorin.md" type="character-design" priority="high">
+      <summary>Ficha de combate de Thorin.</summary>
+      <use_when>Use ao consultar a identidade, recursos e kit de combate de Thorin.</use_when>
+      <not_covered>Não certifica implementação ou balanceamento em runtime.</not_covered>
+      <keywords><keyword>Thorin personagem combate skills Foco</keyword></keywords>
+      <sections><section anchor="kit-de-thorin" tokens="700" purpose="Descreve o papel tático e as habilidades de Thorin." /></sections>
+    </document>
+    <document id="combat-enemy-template" path="docs/GDD/06_Combat/templates/enemy-btb-template.md" type="design-template" priority="low">
+      <summary>Template para criação de fichas de inimigos do combate.</summary>
+      <use_when>Use ao iniciar a documentação de um novo inimigo baseado no formato BTB.</use_when>
+      <not_covered>Não define sozinho o balanceamento nem substitui a revisão de design.</not_covered>
+      <keywords><keyword>template inimigo BTB ficha combate</keyword></keywords>
+      <sections><section anchor="modelo-de-inimigo" tokens="300" purpose="Fornece a estrutura reutilizável para registrar um inimigo." /></sections>
     </document>
     <document id="quest-system-index" path="docs/Quests/13-quando-segundo-sol-chegar/00-indice-quests.md" type="quest-index" priority="medium">
       <summary>Índice existente das quests do sistema de narrativa sistêmica da fase Quando o Segundo Sol Chegar.</summary>

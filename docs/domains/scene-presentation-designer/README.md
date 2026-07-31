@@ -107,7 +107,7 @@ eventos.
 ## Fontes e rastreabilidade
 
 - `p`: packets aceitos e `docs/index.xml`
-- `n`: `docs/Quests/{1,5,6,11,13}/**;GDD/3-historia/**`
+- `n`: `docs/Quests/{1,5,6,11,13}/**;GDD/05_History/**`
 - `e`: `frontend/data/{System,MapInfos,CommonEvents,Troops,Map*.json}`; parse
 - `g`: `frontend/js/plugins.js`; estrutura/configuração extraída
 - `a`: `frontend/{img,audio,movies}`; metadados
