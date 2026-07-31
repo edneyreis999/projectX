@@ -31,6 +31,9 @@ As notas a seguir fornecem contexto sobre decisões de design que afetam a exper
 
 ## Timeline da História Principal
 
+[[03_Narrative/Modelos de timeline#Dispositivo Narrativo|Modelo de timeline e dispositivo narrativo]]
+[[03_Narrative/12_A_Voz-do-Conselho.NSD.fluxo-cenas.revisado|Detalhamento de cenas de A Voz do Conselho]]
+
 ### 1 - A Noite da História: O Convite ao Conto
 
 **Cena 1a – Chegada à Praça em Festa**  

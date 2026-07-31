@@ -2,13 +2,13 @@
 
 Esse documento trás em detalhes como vai funcionar a dinamica das ultimas missões do jogo após o retorno da cena [Cena 11](timeline-historia-jogo-v5.md#11---gildrat-em-alarme-escolhas-e-consequências). Respeitando uma experiência profunda em [narrativa sistemica](../../../../zord/pesquisas/narrativa-sistemica.md), worldbuilding sistêmico e estrutura convergente (final definido).
 
-## Preparativos em [Gildrat](../2-world-building/racas/anoes/gildrat-v2.md)
+## Preparativos em [Gildrat](../01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat/Gildrat.md)
 
-Após retornar de Melios, Thorin traz a notícia de que os [Ignotos](../2-world-building/racas/raca-ignotos.md) estão prestes a atacar Gildrat e comunica seu pai, Thordan.
+Após retornar de Melios, Thorin traz a notícia de que os [Ignotos](../02_Atlas_Folk/02.1_Racas_e_Especies/Ignotos.md) estão prestes a atacar Gildrat e comunica seu pai, Thordan.
 A fase de preparação tem início quando a missão “Quando o Segundo Sol Chegar” é ativada.
 
 A partir desse momento, o jogador deve organizar as defesas da cidade utilizando os recursos reunidos durante o jogo.
-A fase se encerra quando o jogador dorme ([Casa da Família Forja Prata](../2-world-building/locais/casa-da-família-forjaprata.md)), acionando a cutscene do segundo sol surgindo no céu.
+A fase se encerra quando o jogador dorme ([Casa da Família Forja Prata](../01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat/01.3.2_Locais/Casa%20da%20família%20Forjaprata.md)), acionando a cutscene do segundo sol surgindo no céu.
 
 ### Gameplay
 
@@ -129,7 +129,7 @@ O que o Rheed pode falar aqui para dar inicio a cena de gameplay? O que ele fala
   - **Exército dos Rebeldes (direita)** — Borin lidera os rebeldes (se resgatado).  
   - **Exército dos Corvos (esqurda)** — líder dos Corvos (se recrutado)
   - **Grupo de Thorin (logo atrás).**
-- Diálogo entre o **[General Ignoto](../2-world-building/racas/raca-ignotos.md)** e **Thordan**.  
+- Diálogo entre o **[General Ignoto](../02_Atlas_Folk/02.1_Racas_e_Especies/Ignotos.md)** e **Thordan**.
 - Após o diálogo, um video do confronto: ambos os exércitos se enfrentando, seguido de um clarão.
 - Gameplay: o jogador deve derrotar **os Ignotos gigantes e seus lacaios** e, ao final, o **General Ignoto**.
 
@@ -143,7 +143,7 @@ Variações já definidas:
 
 - Para cada uma das batalhas o jogador ganha uma habilidade de "invocar exercito" que da dano em area em todos os inimigos.
 - Os exercitos são:
-- [Exército dos Guardas de Ferro](../2-world-building/racas/anoes/gildrat-v2.md#força-militar) (v_preparo_militar, v_resgate_melios)
+- [Exército dos Guardas de Ferro](../01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat/Gildrat.md#distritos-e-hierarquia-social) (v_preparo_militar, v_resgate_melios)
   - Exército dos Rebeldes (v_resgate_kravens, v_treinamento_rebeldes, v_resgate_borin)
   - Exército dos Corvos (v_influencia_corvos)
 
@@ -173,11 +173,11 @@ Pode ter alguma variação onde é o próprio Thorin que destroi a frente de Gil
 
 #### Introdução da Fase 3 se na Noite da História com Rheed
 
-Rheed narra o funcionamento do [Reino da Mana](../2-world-building/magia.md#reino-da-mana-sonhos--espíritos) e da [Barreira](../2-world-building/magia.md#barreira-entre-mundos), em tom de história de terror.
+Rheed narra o funcionamento do [Reino da Mana](../01_Worldbuilding/01.8_Magia/Magia.md#reino-da-mana) e da [Barreira](../01_Worldbuilding/01.8_Magia/Magia.md#barreira-entre-mundos), em tom de história de terror.
 
 #### Gameplay Fase 3
 
-- Cena retorna ao [**Distrito Comercial Externo**](../2-world-building/racas/anoes/gildrat-v2.md#distritos).  No formato topdown com diálogos.
+- Cena retorna ao [**Distrito Comercial Externo**](../01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat/Gildrat.md#distritos-e-hierarquia-social).  No formato topdown com diálogos.
 - Luta por turno contra o ultimo boss.
 
 #### Desfecho da fase
@@ -185,7 +185,7 @@ Rheed narra o funcionamento do [Reino da Mana](../2-world-building/magia.md#rein
 Thorin desmaia depois de usar seu poder onírico.
 Devido a guerra e a destruição, a Barreira está muito fina no Distrito Comercial Externo. O Profeta das sombras aproveita esse momento para possuir Thorin.
 
-Thorin se transforma no ultimo boss. Thorin possuido pelo poder do [Profeta das Sombras](../2-world-building/magia.md#proibições-e-tabus) Começa a batalha final.
+Thorin se transforma no ultimo boss. Thorin possuido pelo poder do [Profeta das Sombras](../01_Worldbuilding/01.8_Magia/Magia.md#magias-proibidas) Começa a batalha final.
 
 Atraído pela mana, o **Profeta das Sombras** possui parcialmente Thorin, criando uma **Casca onírica** — um chefe colossal de vidro-sombra com Thorin adormecido em seu centro. O objetivo da luta é purificar Thorin sem matá-lo.
 

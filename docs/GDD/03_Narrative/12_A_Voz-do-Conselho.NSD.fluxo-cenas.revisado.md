@@ -27,6 +27,9 @@ autor_data: Poliana / Maio 2026
 
 ## Quest: A Voz do Conselho
 
+[[01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat/01.3.2_Minas/Mina de Melios|Referência de Melios]]
+[[01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat/01.3.2_Minas/Mina de Kravens|Referência de Kravens]]
+
 - Nome da quest: A Voz do Conselho
 - Importância na campanha: Main
 - Arco narrativo: Encontro com o Mentor / Travessia do Primeiro Limiar

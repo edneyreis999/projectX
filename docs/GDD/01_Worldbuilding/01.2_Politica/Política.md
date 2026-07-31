@@ -13,7 +13,7 @@ tags:
 Versão: 1.0.0
 Autor/Data: Poliana/Maio 2026
 ---
-## Visão Geral
+# Visão Geral
 
 **Governo:** Gildrat é um império anão hereditário, governado por linhagem de sangue. O imperador concentra a autoridade simbólica e legal, enquanto o filho mais velho da linha imperial é reconhecido como sucessor natural. 
 
@@ -133,5 +133,5 @@ Em diálogos, **Conservadores Imperiais** tendem a falar de dever, contaminaçã
 
 * **Futebol Rúnico como disputa política:** O Futebol Rúnico tornou-se um campo simbólico da disputa pelo apoio popular. Enquanto o Império utiliza campeonatos, festivais e equipes patrocinadas para reforçar a legitimidade do regime, trabalhadores, torcidas e simpatizantes das Velhas Canções transformam o esporte em espaço de memória coletiva, organização social e resistência cultural. O controle dos clubes e de seus patrocinadores tornou-se uma extensão da disputa por influência dentro do próprio Estado.
 
-
-
+[[03_Narrative/História_Inteira_de_Daratrine#Damburr|História política de Damburr]]
+[[03_Narrative/12_A_Voz-do-Conselho.NSD.fluxo-cenas.revisado|Fluxo narrativo do Conselho]]

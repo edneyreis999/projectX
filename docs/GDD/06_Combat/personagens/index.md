@@ -6,13 +6,15 @@ Documentação dos personagens jogáveis com foco em mecânicas de batalha.
 
 ## Lista de Personagens
 
+[[06_Combat/FUNDAMENTOS-COMBAT-SYSTEM#3.1 Identidade Forte por Personagem|Fundamentos: identidade forte por personagem]]
+
 | Personagem | Classe | Papel | Arquivo |
 |------------|--------|-------|---------|
-| **Filena** | Fighter (Punhos) | Melee Mobile / Burst | [filena.md](filena.md) |
-| **Balastrus** | Alquimista | Suporte / Área | [balastrus.md](balastrus.md) |
-| **Kilin** | Paladin | Tank / Proteção | [kilin.md](kilin.md) |
-| **Mhordred** | Berserker | DPS Brutal | [mhordred.md](mhordred.md) |
-| **Thorin** | Fundeiro | Ranged / Precisão | [thorin.md](thorin.md) |
+| **Filena** | Fighter (Punhos) | Melee Mobile / Burst | [[filena\|filena.md]] |
+| **Balastrus** | Alquimista | Suporte / Área | [[balastrus\|balastrus.md]] |
+| **Kilin** | Paladin | Tank / Proteção | [[kilin\|kilin.md]] |
+| **Mhordred** | Berserker | DPS Brutal | [[mhordred\|mhordred.md]] |
+| **Thorin** | Fundeiro | Ranged / Precisão | [[thorin\|thorin.md]] |
 
 ---
 

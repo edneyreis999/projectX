@@ -456,3 +456,5 @@ Leves focam em CC (Stun, Blind). Medios focam em protecao direta e utilidade (ba
 - [x] **Max 8 positivos:** Max 4 por skill
 - [x] **Anti-distorcoes:** Nenhuma violada
 - [x] **Sinergias saudaveis:** Todas abaixo de 25% de dependencia (teste: remover Kilin nao causa >50% de perda em nenhum personagem)
+
+[[02_Atlas_Folk/02.2_Personagens/Killin|Perfil narrativo de Kilin]]

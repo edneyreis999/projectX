@@ -1,4 +1,6 @@
 ---
+
+[[06_Combat/personagens/filena|Ficha de combate de Filena]]
 status: 🔵 Pronto para aprovação
 genero: Atlas Folk
 tags:
@@ -116,4 +118,3 @@ Seu clímax documentado está na preparação e defesa da última batalha, quand
 | Ato III | Organizar civis e rebeldes para defender Gildrat. | Transformar população vulnerável em força coordenada. | Consolida-se como liderança civil e apoio essencial a [[Thorin]]. |
 
 ---
-

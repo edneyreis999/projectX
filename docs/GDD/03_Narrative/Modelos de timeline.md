@@ -63,7 +63,9 @@ Esse formato permite inserir contexto histórico, emocional ou político sem int
 
 ## Recompensa
 
-A recompensa por explorar side quests e easter eggs é o [[LUDUS]].
+[[04_Mechanics/Ludus|Mecânica de Ludus]]
+
+A recompensa por explorar side quests e easter eggs é o [[04_Mechanics/Ludus|LUDUS]].
 
 ## Referência
 

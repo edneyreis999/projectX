@@ -1,4 +1,6 @@
 ---
+
+[[06_Combat/personagens/mhordred|Ficha de combate de Mhordred]]
 status: 🔵 Pronto para aprovação
 genero: Atlas Folk
 tags:

@@ -47,7 +47,10 @@ Kravens fica na serra ao norte de Gildrat e é acessada pela **Estrada do Cão-L
 
 ## Conexões
 
-- [Gildrat](../gildrat.md), por rota externa.
+- [Gildrat](../Gildrat.md), por rota externa.
 - Estrada do Cão-Luar.
 - [Mina de Melios](Mina%20de%20Melios.md), como próxima etapa mais sagrada e perigosa.
 - [Mina do Esgoto](Mina%20do%20Esgoto.md), como rota alternativa quando o retorno é bloqueado.
+
+[[06_Combat/inimigos/cristaleao-enemy-btb|Cristaleão]]
+[[06_Combat/sistema-experiencia#Minas de Kravens|Progressão de EXP em Kravens]]

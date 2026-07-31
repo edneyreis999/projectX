@@ -1,4 +1,4 @@
-## Da Abundância à Corrupção — _A Geada
+# Da Abundância à Corrupção — _A Geada
 
 O ciclo histórico de Gildrat funciona como uma alegoria fantástica inspirada na história econômica e social do Norte do Paraná, especialmente o impacto da cafeicultura e da Geada Negra de 1975. A narrativa transforma eventos históricos reais em mito, preservando a memória regional através de uma estética épica e melancólica.
 
@@ -53,4 +53,3 @@ Doutrina oficial do Império Anão. A crença sustenta que os anões sobrevivera
 - Anões devem ser duros como a rocha;
 
 Segundo essa visão, a superfície é símbolo de fragilidade, enquanto as montanhas representam força, permanência e poder. Os antigos sacerdotes das Velhas Canções passaram a ser tratados como hereges, nostálgicos ou traidores do progresso imperial. 
-

@@ -1,3 +1,5 @@
+# Ludus
+
 **Categoria:** Recurso de progressão metanarrativo.
 
 **Função:** Moeda utilizada na Coreto para aquisição de habilidades, desbloqueios e avanços de progressão do jogador.
@@ -21,23 +23,26 @@ Embora seja apresentado como uma moeda, Ludus opera como uma representação mec
 
 ---
 ## O que está faltando documentar
+
+[[03_Narrative/Modelos de timeline#Recompensa|Modelo de recompensas narrativas]]
+[[02_Atlas_Folk/02.2_Personagens/Rheed#Papel Narrativo|Papel narrativo de Rheed]]
 #revisar
-##### Aquisição: Como o jogador obtém Ludus?
+### Aquisição: Como o jogador obtém Ludus?
 - completando quests?
 - concluindo capítulos?
 - encontrando segredos?
 - realizando escolhas específicas?
 - derrotando chefes?
-##### Perda: O jogador gasta Ludus permanentemente?
+### Perda: O jogador gasta Ludus permanentemente?
 - existe respec?
 - reembolso?
 - gasto único?
-##### Escala: Qual a ordem de grandeza?
+### Escala: Qual a ordem de grandeza?
 - jogador termina o jogo com 100 Ludus?
 - 1.000?
 - 10.000?
 
-##### Relação com Rheed
+### Relação com Rheed
 - Rheed concede Ludus?
 - Rheed recolhe Ludus?
 - Rheed apenas administra a loja?

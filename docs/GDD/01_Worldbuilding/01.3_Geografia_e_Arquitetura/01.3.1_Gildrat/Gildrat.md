@@ -143,13 +143,13 @@ Gildrat transforma memória, status e linhagem em arquitetura:
 
 ## Locais em Gildrat 
 
-- [[Distrito Residencial Nobre]]
-- [[Casa da Família Forja-Prata]]
-- [[Castelo de Damburr - Sala do Conselho]]
-- [[Mina do Esgoto]]
-- [[Mina de Kravens]]
-- [[Mina de Melios]]
-- [[Minas Abandonadas]]
+- [[01.3.2_Locais/Distrito Residencial|Distrito Residencial Nobre]]
+- [[01.3.2_Locais/Casa da família Forjaprata|Casa da Família Forja-Prata]]
+- [[01.3.2_Locais/Castelo de Damburr e Sala do Conselho|Castelo de Damburr - Sala do Conselho]]
+- [[01.3.2_Minas/Mina do Esgoto|Mina do Esgoto]]
+- [[01.3.2_Minas/Mina de Kravens|Mina de Kravens]]
+- [[01.3.2_Minas/Mina de Melios|Mina de Melios]]
+- [[01.3.2_Minas/Minas Abandonadas|Minas Abandonadas]]
 
 ## Regras de Ambientação para Mapas
 

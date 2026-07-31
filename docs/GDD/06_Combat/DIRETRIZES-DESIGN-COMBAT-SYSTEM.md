@@ -715,3 +715,6 @@ Para toda skill nova, verificar:
 ---
 
 **Fim do Documento de Diretrizes de Design do Combat System**
+
+[[CLASSIFICACAO-MODIFICADORES#3. Modelo de Score|Modelo de score de modificadores]]
+[[FUNDAMENTOS-COMBAT-SYSTEM|Fundamentos do sistema de combate]]

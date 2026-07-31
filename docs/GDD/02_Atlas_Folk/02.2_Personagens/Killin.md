@@ -107,3 +107,5 @@ Seu clímax ocorre em Melios, quando protege o grupo, sobrevive à quebra do sel
 | Ato I   | Escoltar [[Thorin]] e impor disciplina de campo.                              | Rebeldia de [[Thorin]] e impaciência de [[Mhordred]]. |
 | Ato II  | Proteger o grupo e conter imprudência em Melios.                              | Ambição de [[Balastrus]] contra prudência militar.    |
 | Ato III | Tornar-se objetivo de resgate opcional ou permanecer como ausência narrativa. | Recuperação, liderança e consequência do desastre.    |
+
+[[06_Combat/personagens/kilin|Ficha de combate de Kilin]]

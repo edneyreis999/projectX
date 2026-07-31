@@ -102,3 +102,5 @@ Anão veterano (45-55 anos), musculoso e explosivo. "Mau policial" da Guarda de 
 1. **Início:** Golpe Brutal + Fúria Berserker
 2. **Mid:** Redemoinho de Aço + Execução
 3. **Late:** Colisão Devastadora (ultimate)
+
+[[02_Atlas_Folk/02.2_Personagens/Mhordred|Perfil narrativo de Mhordred]]

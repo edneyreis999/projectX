@@ -937,3 +937,7 @@ Cada categoria de inimigo existe para testar aspectos diferentes do combat syste
 ---
 
 **Fim do Documento de Fundamentos do Combat System**
+
+[[DIRETRIZES-DESIGN-COMBAT-SYSTEM|Diretrizes de design do combate]]
+[[CLASSIFICACAO-MODIFICADORES|Classificação de modificadores e score]]
+[[personagens/index|Índice de personagens de combate]]

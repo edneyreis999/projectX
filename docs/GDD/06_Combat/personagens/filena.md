@@ -479,3 +479,5 @@ Spender Leves focam em **CC (20-40% chance)**, enquanto Spender Pesados focam em
 - [x] **Kit de 11 skills:** Todas com score no Tier 1 (1-50).
 - [x] **Ultimate Omnislash implementada:** Dança dos Ventos — 4 hits aleatórios, 5.6x dano total, Cannot Be Interrupted.
 - [x] **Ripostar (counter ao evadir) implementada:** Passiva que contra-ataca ao evadir, gerando 5 TP — única fonte de TP por evasão.
+
+[[02_Atlas_Folk/02.2_Personagens/Filena|Perfil narrativo de Filena]]

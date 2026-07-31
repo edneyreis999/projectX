@@ -54,7 +54,11 @@ A pesquisa cita um minério único chamado **Meliosite**, surgido do contato com
 
 ## Conexões
 
-- [Gildrat](../gildrat.md), por mandato, política e ambição imperial.
+- [Gildrat](../Gildrat.md), por mandato, política e ambição imperial.
 - [Mina de Kravens](Mina%20de%20Kravens.md), como etapa anterior de mineração.
 - Câmara do Selo.
 - Acampamento dos Corvos de Melios.
+
+[[01_Worldbuilding/01.8_Magia/Magia#Reino da Mana|Reino da Mana]]
+[[02_Atlas_Folk/02.1_Racas_e_Especies/Ignotos|Ignotos]]
+[[01_Worldbuilding/01.6_Religiao/01.6.3_Cultos Ignotos|Cultos Ignotos]]

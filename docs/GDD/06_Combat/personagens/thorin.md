@@ -514,3 +514,5 @@ Spenders Leves focam em sinergia de time (marca, CC). Spenders Medios focam em b
 - [x] **Nenhuma skill redundante:** Todas funcoes distintas
 - [x] **Nenhum kit sem centro:** Fantasia clara
 - [x] **Nenhum balanceamento homogeneo:** Diversidade de speed (+500 a -2000), TP (+5 a todo), armor pen (0-50%)
+
+[[02_Atlas_Folk/02.2_Personagens/Thorin|Perfil narrativo de Thorin]]

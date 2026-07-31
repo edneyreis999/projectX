@@ -136,4 +136,5 @@ Ao final, Thorin torna-se um protetor mais consciente de Gildrat. Ele aprende qu
 | Preparação para a Guerra           | Pode reconciliar-se parcialmente com [[Thordan]], organizar forças civis, militares e mineradoras.                                                       | Assume agência pública e começa a agir como liderança.                                                 |
 | Defesa de Gildrat                  | Manifesta poder onírico em escala pública, enfrenta a possessão parcial pela Casca Onírica e torna-se peça central contra os [[Ignotos]].                | Consolida sua transformação em protetor, mas sua relação com magia passa a ameaçar sua posição social. |
 
+[[06_Combat/personagens/thorin|Ficha de combate de Thorin]]
 

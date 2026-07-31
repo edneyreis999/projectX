@@ -893,3 +893,6 @@ VALIDACAO:
 ---
 
 **Fim do Documento de Classificacao e Score de Modificadores**
+
+[[DIRETRIZES-DESIGN-COMBAT-SYSTEM#4.6 Checklist de Aprovação — Skill|Checklist qualitativo de aprovação de skill]]
+[[FUNDAMENTOS-COMBAT-SYSTEM#8. Fundamentos de Balanceamento|Fundamentos de balanceamento]]
