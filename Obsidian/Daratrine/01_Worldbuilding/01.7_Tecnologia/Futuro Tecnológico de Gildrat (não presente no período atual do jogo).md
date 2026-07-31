@@ -13,7 +13,7 @@ Ao longo dos séculos, a engenharia anã tende a abandonar a dependência exclus
 | **Motores a vapor**             | Sistemas de propulsão capazes de movimentar elevadores, plataformas, bombas hidráulicas e veículos pesados.        |
 | **Veículos terrestres**         | Carruagens motorizadas, motociclos de madeira e metal e transportes industriais para longas galerias subterrâneas. |
 | **Aeronaves experimentais**     | Balões de observação e dirigíveis rudimentares utilizados para reconhecimento e transporte.                        |
-| **Metalurgia avançada**         | Novas ligas derivadas do Kraven e do Sigmetal permitem máquinas mais resistentes e armamentos mais sofisticados.   |
+| **Metalurgia avançada**         | Novas ligas derivadas do Kraven e da profundina permitem máquinas mais resistentes e armamentos mais sofisticados. |
 | **Infraestrutura automatizada** | Portões, guindastes, sistemas de ventilação e redes de transporte operados por mecanismos centrais.                |
 
 ##### Tendência Cultural

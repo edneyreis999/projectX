@@ -322,17 +322,17 @@ controle de importos também
 #### Kraven
 - minério.
     
-#### Sigmetal
+#### Profundina
 
 - Fraqueza dos Ignotos;    
 - recurso raro/extinto.
 Possíveis formas: cristal; minério; semente; outro material narrativo.
 
 Contexto Histórico
-- Os anões mineraram muito Sigmetal no passado.
+- Os anões mineraram muito Profundina no passado.
 - Hoje é considerado extinto.
     
-**Thorin encontra Sigmetal.**
+**Thorin encontra Profundina.**
 Pode: reportar; guardar; entregar para alguém.
 Ainda não existem consequências específicas, mas a ideia é que:
 - tenha função importante na história; 

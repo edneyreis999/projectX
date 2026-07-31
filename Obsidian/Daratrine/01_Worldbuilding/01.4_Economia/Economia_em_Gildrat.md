@@ -1,5 +1,5 @@
 ---
-status: 🟡 Em revisão
+status: 🟢 Aprovado
 genero: Wordbuilding
 moeda: "[[Drakel]]"
 nivel_escassez:
@@ -80,47 +80,24 @@ A autossuficiência alimentar tornou-se uma das prioridades do Império após a 
 **Utilização:** forjas, armamentos, máquinas; estruturas militares do Império; além do valor comercial.
 
 **Função simbólica e histórica:** As minas de Kraven representam o avanço industrial anão e sua dependência crescente da exploração subterrânea.
-- existem outras minas, na narrativa atual é a que mais aparece *(problema: se houver outras, teria que ter no worldmap; ver isso; talvez deixar subentendido)*
-==- *Kraven, Melios (ainda não explorada), do Esgoto (desativada)*==
-==*minas pacificadas (tem "bichos" mas controláveis; tem donos) VS minas selvagens (não exploradas, pode ter qualquer coisa, perigo, etc.)*   ver notion==
-- ==trazer aspectos culturais; ==
-- ==nomes das minas com referências culturais==
+
 ---
-### Sigmetal (Ouro verde?)
+### Profundina
 
-**Função:** recurso mineral raro
+> [!NOTE] Padronização de nomenclatura
+> Em versões anteriores deste GDD, este minério era denominado **Sigmetal**. A nomenclatura oficial do projeto passa a ser **Profundina**. Sempre que o termo **Sigmetal** aparecer em documentos antigos, ele deve ser interpretado como **Profundina** e atualizado quando possível.
 
-**Histórico:** Durante séculos, o Sigmetal foi explorado intensivamente pelos anões, tornando-se extremamente escasso ao longo do tempo.
+**Função:** Recurso mineral raro.
 
-**Escassez:** A maior parte da população acredita que o minério esteja praticamente extinto. No entanto, fragmentos de Sigmetal ainda aparecem em regiões profundas ligadas às antigas estruturas subterrâneas (Melios).
+**Histórico:** Durante séculos, a profundina foi amplamente explorada pelos anões devido às suas propriedades únicas, tornando-se um dos minérios mais valiosos do império. A exploração intensa fez com que suas reservas se tornassem extremamente escassas.
 
-Narrativamente, Thorin encontra fragmentos desse minério durante a história, fazendo com que o recurso se torne gradualmente importante para os acontecimentos futuros do jogo.
+**Escassez:** A maior parte da população acredita que o minério esteja praticamente extinto. No entanto, fragmentos ainda podem ser encontrados nas profundezas de Melios e em antigas estruturas subterrâneas abandonadas.
 
-> *O jogador inicialmente não sabe disso, mas o Sigmetal possui propriedades capazes de enfraquecer os Ignotos. 
+**Propriedades:** A profundina emite uma ressonância natural incompatível com os Ignotos. Sua simples proximidade enfraquece essas criaturas, reduzindo sua resistência e dificultando a ação da magia sanguínea e das alterações alquímicas que sustentam seus corpos. O **Selo de Melios** é forjado com profundina, razão pela qual impede a passagem dos Ignotos para a superfície.
 
-==Tem Sigmetal em Melios, porque ela não foi explorada ainda; tem perto do selo, para "bloquear" o poder dos Ignotos; selo pode ter sido feito de sigmetal==
-==- porque é a fraqueza deles? subentendido; *canções falavam que sigmetal era o ponto fraco dos Ignotos;*
-==- *ver se o nome "Sigmetal" já foi usado, se tem significado*==
-==- trazer aqui um aspecto cultural==
+**Importância Narrativa:** Inicialmente tratada apenas como um minério raro, a profundina ganha importância conforme Thorin encontra fragmentos durante sua jornada. Aos poucos, o recurso revela seu verdadeiro valor estratégico, tornando-se uma das principais vantagens da superfície contra os Ignotos.
 
-
- **Profundina** - era o sigmetal (ver o que da pra aproveitar)
-
-A "Profundina" é o nome dado aos tônicos e poções criados pelos Ignotos a partir de minerais raros encontrados em grande profundidade.
-
-- **Efeitos:** A Profundina oferece um aumento imediato e massivo na potência e estabilidade mágica, mas a um custo terrível. Causa dependência química e espiritual, aumenta a agressividade e, com o uso crônico, leva a mutações físicas e infertilidade mágica.
-- **Ciclo de Risco:** O uso de Profundina contamina não apenas o usuário, mas também as Pedras de Runas que ele utiliza. Zonas de Barreira fina amplificam exponencialmente os efeitos colaterais da substância.
-
-Ciclo de risco
-1) Consome mana do usuário
-2) Ao zerar, puxa da reserva da Pedra
-3) Ao zerar a Pedra, passa a drenar energia vital → risco de morte
-4) O uso de Pedras Contaminadas ou Profundina acelera a drenagem e corrompe a própria mana do usuário, aumentando o risco de possessão.
-
-Exemplos práticos
-- Usuário sem afinidade: com Pedra de Estabilização + Foco elemental consegue “fogo flecha 1” estável; sem a Pedra, falharia.
-- Usuário experiente: com Pedra de Amplificação em 8×, executa “raio lâmina 3”, mas entra em pré-colapso por drenagem acelerada (suspende antes de falha crítica).
-- Falha evitável: tentativa de combinar Água+Vento com Pedra mal sintonizada gera “gelo” fragmentado; ao perceber zumbido e calor, o conjurador interrompe, evitando queimadura rúnica.
+> **Segredo narrativo:** No início da campanha, o jogador desconhece que a profundina é a principal vulnerabilidade dos Ignotos. Essa descoberta ocorre gradualmente ao longo da história.
 
 ---
 
