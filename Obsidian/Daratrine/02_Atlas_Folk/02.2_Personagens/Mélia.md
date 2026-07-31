@@ -1,5 +1,5 @@
 ---
-status: Em Desenvolvimento
+status: 🔵 Pronto para aprovação
 genero: Atlas Folk
 tags:
   - atlasfolk
@@ -25,8 +25,6 @@ Sua função narrativa é conectar família, magia proibida, memória materna e 
 [[Mélia]] é mãe de [[Thorin]] e esposa de [[Tordan]]. Sua aparência física completa ainda não está definida. O detalhe visual mais recorrente é a seda azul-claro associada ao seu vestido favorito, usada no berço da funda entregue a [[Thorin]] na quest do Troféu Quebrado.
 
 Sua idade é de aproximadamente 45 anos. Ela tem associação à manipulação de mana/magia, sonhos lúcidos e uma frequência espiritual compartilhada com [[Thorin]] e Elmartin. Amava ver [[Thorin]] jogar futebol rúnico, valorizava liberdade e aparece nos sonhos como figura de alerta, orientação e melancolia. 
-
-==Sua profissão, posição social anterior e origem familiar?==
 
 Ela foge de Gildrat durante a Caça às Bruxas e é dada como morta, mas não está definido se fugiu para sobreviver, proteger [[Thorin]], preservar sua magia ou buscar ajuda. Seu conflito externo envolve o regime antimágico de [[Dambur]], o medo anão da magia, a relação com [[Tordan]], o destino de [[Thorin]] e a ameaça do [[Profeta das Sombras]].
 
@@ -61,7 +59,7 @@ Mélia mostra que a política antimágica de Gildrat não é abstrata: ela atrav
 
 ## Arco do Personagem
 
-==temos? eu entendo que ela não se desenvolve pq não participa das história; ==
+Melia não possui um arco tradicional de desenvolvimento neste jogo, porque não participa presencialmente da maior parte dos acontecimentos. O desenvolvimento dela acontece principalmente por meio dos sonhos e das conexões breves que consegue estabelecer com Thorin. Ao longo da história, ela tenta diversas vezes alertá-lo, mas dispõe de pouco tempo e de uma conexão limitada para transmitir suas mensagens. 
 
 ---
 
@@ -94,5 +92,7 @@ Mélia mostra que a política antimágica de Gildrat não é abstrata: ela atrav
 | Ato I          | Manifestar-se como sonho, memória e ferida familiar.             | [[Thorin]] não entende completamente sua herança; [[Tordan]] transforma luto em controle. | Estabelece mistério espiritual e conflito doméstico.             |
 | Ato II         | Avisar e ampliar a leitura da crise.                             | A política de [[Dambur]] e a exploração de Melios avançam apesar dos presságios.          | Sua função onírica reforça que Melios são parte de ameaça maior. |
 | Ato III        | Dar sentido emocional ao dom e à reconciliação familiar.         | Magia de [[Thorin]] torna-se pública e politicamente perigosa.                            | Sua memória ajuda pai e filho.                                   |
+
+**Sugestão para Ato III:** Podemos fortalecer essa participação colocando Melia em Mélios no confronto contra o Profeta das Sombras. Ela poderia ajudar Thorin por meio da fina camada que separa o mundo físico do Reino da Mana, talvez manifestando-se temporariamente através dele. Uma alternativa seria ela  abrir uma passagem, protegê-lo ou permitir que ele enxergue algo necessário para derrotar o Profeta.
 
 ---

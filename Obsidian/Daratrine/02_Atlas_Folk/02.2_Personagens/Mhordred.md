@@ -1,10 +1,9 @@
 ---
-status: Em Desenvolvimento
+status: 🔵 Pronto para aprovação
 genero: Atlas Folk
 tags:
   - atlasfolk
   - personagem
-  - protagonista
   - Mordred
 versao: 1.0.0
 autor: Poliana

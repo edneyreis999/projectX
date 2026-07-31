@@ -1,10 +1,10 @@
 ---
-status: Em Desenvolvimento
+status: 🔵 Pronto para aprovação
 genero: Atlas Folk
 tags:
   - atlasfolk
   - personagem
-  - balastrus
+  - profetadassombras
 versao: 1.0.0
 autor: Poliana
 data: Julho 2026
@@ -25,7 +25,7 @@ No fim, sua ameaça não é encerrada completamente, pois o pós-crédito sugere
 
 O [[Profeta das Sombras]] é descrito mais como liderança espiritual do que como personagem cotidiano. As fontes o apresentam como soberano ou profeta dos [[Ignotos]], voz de vingança e força messiânica associada à Mana, sonhos, possessão, corrupção e libertação do povo selado.
 
-==Sua aparência definitiva não está documentada (ele chega a aparecer?).== Há indicações de manifestação por sombras, presença onírica, possessão parcial de [[Thorin]] e uma silhueta verdadeira em pós-crédito. A forma chamada Casca Onírica aparece como manifestação final ligada ao protagonista, mas não deve ser confundida automaticamente com a forma real do Profeta.
+É como os ignotos: um humanóide branco, sem cabelo ou pelos. Há indicações de manifestação por sombras, presença onírica, possessão parcial de [[Thorin]] e uma silhueta verdadeira em pós-crédito. A forma chamada Casca Onírica aparece como manifestação final ligada ao protagonista, mas não deve ser confundida automaticamente com a forma real do Profeta.
 
 Sua função  é liderar, inspirar e canalizar a vingança dos [[Ignotos]], buscando romper o selo, libertar seu povo e fazer a superfície experimentar o mesmo sofrimento do exílio.
 

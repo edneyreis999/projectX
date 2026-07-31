@@ -1,10 +1,9 @@
 ---
-status: Em Desenvolvimento
+status: 🔵 Pronto para aprovação
 genero: Atlas Folk
 tags:
   - atlasfolk
   - personagem
-  - protagonista
   - borin
 versao: 1.0.0
 autor: Poliana
@@ -15,7 +14,8 @@ data: Julho 2026
 ## Resumo
 
  [[Borin]] é o rival esportivo e social de [[Thorin]], ligado ao futebol rúnico, às castas trabalhadoras e ao círculo afetivo de [[Filena]]. 
- Borin é um fantasma que apenas [[Thorin]] consegue ver. 
+ Borin é um fantasma que apenas [[Thorin]] consegue ver, embora nem ele nem [[Thorin]] saibam disso no início.
+ A descoberta de sua morte e da natureza fantasmagórica de sua presença acontece durante a missão em Kravens.
  
 Ele funciona como provocador, espelho de privilégio e presença assombrada ligada à culpa, ciúme, memória e percepção espiritual do protagonista.
 Suas aparições devem ser lidas como experiências filtradas pelo ponto de vista de [[Thorin]], não como participação objetiva reconhecida pelos demais personagens.
@@ -27,7 +27,7 @@ Sua função narrativa é transformar rivalidade pessoal em assombração íntim
 
 [[Borin]] é documentado como jovem anão da mesma faixa dramática de [[Thorin]] e [[Filena]]. Ele tem cabelos curtos e escuros, olhos diretos e desconfiados, corpo baixo, robusto e físico de minerador. Sua aparência combina uniforme simples de futebol rúnico e equipamento de mineração marcado pelo uso.
 
-Sua presença física deve ser entendida como a forma pela qual [[Thorin]] percebe o fantasma de Borin. Para os demais personagens, Borin não é percebido diretamente como pessoa presente em cena. A origem de sua morte, o momento exato em que se torna fantasma e se ele sabe ou não que morreu ainda não estão definidos.
+Sua presença física deve ser entendida como a forma pela qual [[Thorin]] percebe o fantasma de Borin. Para os demais personagens, Borin não é percebido diretamente como pessoa presente em cena. Nem Borin nem [[Thorin]] sabem inicialmente que Borin está morto; ambos tratam a presença dele como parte concreta do conflito até a missão de Kravens revelar sua condição fantasmagórica.
 
 Sua função é rival esportivo de [[Thorin]], trabalhador/minerador por necessidade, jogador de futebol rúnico e representante das camadas simples de Gildrat, agora operando como presença espiritual. Thorin entende que ele joga para os Martelos de Bronze, equipe rival dos Machados Enferrujados. 
 
@@ -43,6 +43,8 @@ Sua motivação é provar valor em uma cidade que favorece quem nasceu no topo. 
 
 Como fantasma, Borin transforma essa crítica social em assombração pessoal. Ele não é apenas rival do mundo comum: é uma presença que acompanha [[Thorin]] quando culpa, ciúme, ressentimento de classe ou medo de covardia precisam ganhar voz.
 
+Na versão atual da história, Borin não vai para Melios nem é resgatado junto aos rebeldes de lá. Essas referências pertencem a uma versão antiga do roteiro. A missão diretamente relacionada a ele acontece em Kravens; depois da descoberta, Borin permanece ao lado de [[Thorin]] até o final do jogo.
+
 ---
 
 ## Participação na História
@@ -51,35 +53,33 @@ Como fantasma, Borin transforma essa crítica social em assombração pessoal. E
 | ----------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
 | Futebol rúnico    | Rival de [[Thorin]], atleta dos Martelos de Bronze..                                   | Introduz competição, ciúme e tensão de classe na memória/percepção de [[Thorin]].                                    |
 | Primeiro Contrato | Aparece para provocar [[Thorin]] em torno de [[Filena]] e da expedição.                | Passa de rival esportivo a presença que empurra o protagonista para decisões emocionais.                             |
-| Kravens           | Confronta [[Thorin]] com trabalho, mérito e o rótulo de "filhinho de papai".           | Torna espiritual e psicológica a disputa entre mérito do trabalho e privilégio nobre.                                |
-| A Voz do Conselho | Provoca [[Thorin]] sobre [[Filena]], Melios e outro atleta.                            | Age como antagonista íntimo, quase lembrança viva/alucinação narrativa, agora confirmada como presença fantasmática. |
-| Força Civil       | ==Fontes antigas preveem resgate de Borin junto de rebeldes.==                         | ==Esse material conflita com a definição atual e precisa de revisão de roteiro.==                                    |
-| Defesa final      | Aparições podem funcionar como cobrança emocional ou memória assombrada de [[Thorin]]. | Sua influência é subjetiva/espiritual, não liderança física confirmada.                                              |
-| Pós-créditos      | Batalha ao lado de [[Thorin]] e [[Filena]].                                            | Deve ser revisto como memória, imagem simbólica, visão de [[Thorin]] ou material desatualizado.                      |
+| Kravens           | É o centro da missão relacionada a ele e confronta [[Thorin]] com trabalho, mérito e o rótulo de "filhinho de papai". | A missão revela a [[Thorin]] e ao próprio Borin que Borin está morto e que sua presença é fantasmagórica. |
+| A Voz do Conselho | Pode provocar [[Thorin]] sobre [[Filena]], as decisões do grupo e o medo de covardia. | Age como antagonista íntimo e presença fantasmática já reconhecida, sem equivaler a resgate físico em Melios. |
+| Defesa final      | Permanece ao lado de [[Thorin]] e participa de alguma forma da defesa de Gildrat. | A interferência exata e eventual participação direta em batalha ainda precisam ser definidas. |
+| Pós-créditos      | Pode aparecer ao lado de [[Thorin]] e [[Filena]] como visão ou resolução espiritual. | Não deve ser tratado como retorno físico; precisa permanecer coerente com sua condição de fantasma. |
 
 ---
 
 ## Arco do Personagem
 
 ### Estado Inicial
-[[Borin]] começa, para [[Thorin]], como rival barulhento, trabalhador e jogador que enxerga o protagonista como nobre protegidoÉ uma presença fantasmática percebida apenas por [[Thorin]].
+[[Borin]] começa, para [[Thorin]], como rival barulhento, trabalhador e jogador que enxerga o protagonista como nobre protegido. É uma presença fantasmática percebida apenas por [[Thorin]], sem que nenhum dos dois compreenda isso no início.
 
 ### Catalisador
 O catalisador da função de Borin é a pressão emocional de [[Thorin]] diante de [[Filena]], das expedições e da tensão de classe. 
 
 ### Desenvolvimento
-No início, Borin provoca [[Thorin]] e alimenta ciúmes em torno de [[Filena]]. Em Kravens, sua aparição expõe ressentimento social, mérito do trabalho e a culpa do protagonista diante das castas simples.
+No início, Borin provoca [[Thorin]] e alimenta ciúmes em torno de [[Filena]]. Em Kravens, sua aparição expõe ressentimento social, mérito do trabalho e a culpa do protagonista diante das castas simples, culminando na descoberta de que Borin já está morto.
 
-Como apenas [[Thorin]] o vê, seu desenvolvimento deve acompanhar o estado mental, espiritual e moral do protagonista. Quanto mais a história avança para Melios e para o uso de poderes oníricos, mais Borin pode funcionar como prova de que [[Thorin]] percebe mortos, memórias ou espíritos antes de compreender plenamente seu dom.
+Como apenas [[Thorin]] o vê, seu desenvolvimento deve acompanhar o estado mental, espiritual e moral do protagonista. Depois de Kravens, Borin funciona como prova de que [[Thorin]] percebe mortos, memórias ou espíritos antes de compreender plenamente seu dom.
 
 ### Clímax
-Sua aparição em  nas Quest 12 (A Voz do Conselho), onde atua como voz antagonista íntima que empurra [[Thorin]] para Melios.
+O clímax de sua função ocorre na missão de Kravens, quando a rivalidade deixa de ser apenas social e emocional e se revela também espiritual: Borin está morto, sua presença é fantasmagórica, e nem ele nem [[Thorin]] compreendiam isso até então.
 
 ### Estado Final
+Borin permanece ao lado de [[Thorin]] até o final do jogo. Como fantasma, ele não depende de resgate físico em Melios; sua resolução deve passar por aceitação, vínculo espiritual ou permanência consciente como assombração aliada.
 
-==O estado final de [[Borin]] ainda não está definido. Como fantasma, ele não deve depender de resgate físico, mas de resolução espiritual, aceitação de [[Thorin]] ou permanência como assombração não resolvida.
-
-==Não está documentado se Borin aprende, muda ou sequer sabe que morreu. O que muda com sua presença é [[Thorin]]: o protagonista passa a lidar com rivalidade, culpa, memória e percepção dos mortos de forma cada vez mais direta.==
+Sua participação na defesa de Gildrat está prevista de alguma forma, mas ainda precisa ser definida em detalhe: falta decidir como ele interfere nos acontecimentos e se terá participação direta nas batalhas.
 
 ---
 
@@ -87,7 +87,7 @@ Sua aparição em  nas Quest 12 (A Voz do Conselho), onde atua como voz antagoni
 
 | Personagem  | Relação Inicial                                                       | Evolução                                                                                 | Estado Final                                                          |
 | ----------- | --------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| [[Thorin]]  | Rival esportivo, social e afetivo; vê Thorin como protegido da elite. | Borin aparece apenas para Thorin, provocando ciúme, culpa, raiva e percepção espiritual. | Relação final depende de Thorin reconhecer ou resolver a assombração. |
+| [[Thorin]]  | Rival esportivo, social e afetivo; vê Thorin como protegido da elite. | Borin aparece apenas para Thorin, provocando ciúme, culpa, raiva e percepção espiritual. | Depois da descoberta em Kravens, permanece ao lado de Thorin até o final do jogo. |
 
 
 ---
@@ -106,10 +106,10 @@ Sua aparição em  nas Quest 12 (A Voz do Conselho), onde atua como voz antagoni
 
 ## Participação por Ato
 
-| Ato     | Objetivo                                                                            | Principal Conflito                                                     |
-| ------- | ----------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| Ato I   | Provocar [[Thorin]] e expor seu privilégio por meio da rivalidade esportiva/social. | Ciúme, classe e percepção espiritual ainda não compreendida.           |
-| Ato II  | Pressionar [[Thorin]] em momentos de escolha emocional, especialmente Melios.       | O protagonista não sabe se enfrenta rival, memória, culpa ou espírito. |
-| Ato III | ==Cobrar resolução emocional/espiritual. ??==                                       | ==Aceitar a morte, culpa ou significado da assombração. ??==           |
+| Ato     | Objetivo                                                                             | Principal Conflito                                                                    |
+| ------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------- |
+| Ato I   | Provocar [[Thorin]] e expor seu privilégio por meio da rivalidade esportiva/social.  | Ciúme, classe e percepção espiritual ainda não compreendida.                          |
+| Ato II  | Conduzir a missão de Kravens e revelar a condição fantasmagórica de Borin.           | O protagonista descobre que enfrenta rival, memória, culpa e espírito ao mesmo tempo. |
+| Ato III | Acompanhar [[Thorin]] até o final e participar de alguma forma da defesa de Gildrat. | Definir como sua presença espiritual interfere nos acontecimentos e nas batalhas.     |
 
 ---

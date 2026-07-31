@@ -1,5 +1,5 @@
 ---
-status: Em Desenvolvimento
+status: 🔵 Pronto para aprovação
 genero: Atlas Folk
 tags:
   - atlasfolk

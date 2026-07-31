@@ -1,5 +1,5 @@
 ---
-status: Em Desenvolvimento
+status: 🔵 Pronto para aprovação
 genero: Atlas Folk
 tags:
   - atlasfolk
@@ -24,7 +24,7 @@ O personagem representa a tensão entre identidade própria e legado, especialme
 
 Thorin é como filho de [[Thordan]] Forja-Prata, jovem anão de origem nobre e herdeiro direto de um legado militar que ele rejeita no início da história. Thorin joga futebol rúnico como arremessador/fundeiro dos Machados Enferrujados, usando a funda tanto como símbolo esportivo quanto como base de sua identidade mecânica em combate.
 
-Sua idade ==X anos,== ainda em transição entre adolescência tardia e vida adulta. 
+Sua idade é de 16 anos, ainda em transição entre adolescência e vida adulta. 
 
 **Personalidade**
 Começa impulsivo, orgulhoso, competitivo e ressentido com a autoridade paterna. Também demonstra coragem, empatia crescente e desejo de provar valor fora da sombra de Thordan. Seus defeitos iniciais estão ligados à imaturidade, reatividade e dificuldade de compreender o peso político de seu nome.
