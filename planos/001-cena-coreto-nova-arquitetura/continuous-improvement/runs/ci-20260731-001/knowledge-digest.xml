@@ -1,0 +1,33 @@
+<knowledge_digest reconciler="orchestrator-global" schema_version="1">
+  <digestion_batches>
+    <batch batch_id="batch-core-context">
+      <file_ref path="analise-tecnica.md"></file_ref>
+      <file_ref path="interaction/inputs/execution-input-v2.yaml"></file_ref>
+    </batch>
+    <batch batch_id="batch-core-demand">
+      <file_ref path="demanda-improved.md"></file_ref>
+    </batch>
+    <batch batch_id="batch-evidence">
+      <file_ref path="builds/administrative-consistency-v1.yaml"></file_ref>
+      <file_ref path="builds/administrative-dashboard-v1.md"></file_ref>
+      <file_ref path="builds/administrative-reconciliation-v1.yaml"></file_ref>
+      <file_ref path="builds/administrative-terminal-evidence-v1.json"></file_ref>
+      <file_ref path="preflights/run-fb7402a92794e1dda86d91bc46489cb6/technical-implementer/preflight-v1.md"></file_ref>
+    </batch>
+    <batch batch_id="batch-tasks">
+      <file_ref path="task-1.1.md"></file_ref>
+      <file_ref path="task-2.1.md"></file_ref>
+      <file_ref path="tasks.md"></file_ref>
+    </batch>
+  </digestion_batches>
+  <claims>
+    <claim claim_id="claim-quest-authority-and-projection" reconciliation="confirmed"></claim>
+    <claim claim_id="claim-v106-state-contract" reconciliation="confirmed"></claim>
+    <claim claim_id="claim-ex-vn-cutscene-route" reconciliation="confirmed"></claim>
+    <claim claim_id="claim-plugin-activation-order" reconciliation="confirmed"></claim>
+    <claim claim_id="claim-human-runtime-validation" reconciliation="unvalidated"></claim>
+    <claim claim_id="claim-legacy-run-identity" reconciliation="confirmed"></claim>
+  </claims>
+  <implementation_deltas></implementation_deltas>
+  <material_findings></material_findings>
+</knowledge_digest>

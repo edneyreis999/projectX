@@ -1,0 +1,10 @@
+<plan_knowledge_coverage deletion_readiness_claimed="false" lifecycle_validated="false" plan_knowledge_independence="false" schema_version="1" terminal_status="completed-with-blockers">
+  <source_coverage accounted="true" integrity="pass" ledger_files="15" manifest_files="15" material_unread="4"></source_coverage>
+  <knowledge_coverage claims="6" covered_findings="0" deltas="0" disposed_deltas="0" material_findings="0" reconciled_claims="6"></knowledge_coverage>
+  <candidate_coverage applied_or_noop="0" blocked="0" material_candidates="0"></candidate_coverage>
+  <recoverability></recoverability>
+  <durable_dependency plan_refs="0" run_namespace_refs="0"></durable_dependency>
+  <blockers>
+    <blocker material="true" reason="four-source-files-blocked-before-model-exposure-unknown-schema"></blocker>
+  </blockers>
+</plan_knowledge_coverage>

@@ -1,0 +1,17 @@
+<file_processing_ledger schema_version="1">
+  <file_result batch_id="batch-core" disposition="digested" path="analise-tecnica.md" result_ref="digest-core"></file_result>
+  <file_result batch_id="batch-evidence" disposition="digested" path="builds/administrative-consistency-v1.yaml" result_ref="digest-evidence"></file_result>
+  <file_result batch_id="batch-evidence" disposition="digested" path="builds/administrative-dashboard-v1.md" result_ref="digest-evidence"></file_result>
+  <file_result batch_id="batch-evidence" disposition="digested" path="builds/administrative-reconciliation-v1.yaml" result_ref="digest-evidence"></file_result>
+  <file_result batch_id="batch-evidence" disposition="digested" path="builds/administrative-terminal-evidence-v1.json" result_ref="digest-evidence"></file_result>
+  <file_result batch_id="batch-mjs" disposition="digested" path="builds/fase1/validate-architecture.mjs" result_ref="digest-mjs"></file_result>
+  <file_result batch_id="batch-mjs" disposition="digested" path="builds/fase2/apply-migration.mjs" result_ref="digest-mjs"></file_result>
+  <file_result batch_id="batch-mjs" disposition="digested" path="builds/fase2/fix-ev030-reentry.mjs" result_ref="digest-mjs"></file_result>
+  <file_result batch_id="batch-mjs" disposition="digested" path="builds/fase2/validate-route.mjs" result_ref="digest-mjs"></file_result>
+  <file_result batch_id="batch-core" disposition="digested" path="demanda-improved.md" result_ref="digest-core"></file_result>
+  <file_result batch_id="batch-core" disposition="digested" path="interaction/inputs/execution-input-v2.yaml" result_ref="digest-core"></file_result>
+  <file_result batch_id="batch-evidence" disposition="digested" path="preflights/run-fb7402a92794e1dda86d91bc46489cb6/technical-implementer/preflight-v1.md" result_ref="digest-evidence"></file_result>
+  <file_result batch_id="batch-evidence" disposition="digested" path="task-1.1.md" result_ref="digest-evidence"></file_result>
+  <file_result batch_id="batch-evidence" disposition="digested" path="task-2.1.md" result_ref="digest-evidence"></file_result>
+  <file_result batch_id="batch-evidence" disposition="digested" path="tasks.md" result_ref="digest-evidence"></file_result>
+</file_processing_ledger>
