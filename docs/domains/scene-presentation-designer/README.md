@@ -30,6 +30,46 @@ Classificação: **inventário de cenas/assets/calls; Playtest humano pendente**
   e 120f (22). Mapas chamam 28 BGM, três BGS, 22 ME e 153 SE; alguns arquivos
   estão ausentes. Fontes: `e`, `g`, `a`.
 
+## Lifecycle EX/VN/Cutscene da Noite da História
+
+O fluxo separa responsabilidades entre mapas: Map022 e Map045 são contextos
+EX, enquanto Map046 é o contexto VN. Staging físico, composição da party e a
+transferência terminal permanecem em EX; diálogo, escolhas, entrada de nome e
+transições da quest executam em VN.
+
+Cada sessão deve parear `EnterVisualNovel` com `FinishVisualNovel`, e cada lock
+de `Cutscene` deve parear `begin` com `finish`. O EV030 pode executar a
+transição `START` somente quando `V106 == 0`, evitando reinício em reentrada.
+O fluxo termina no Map045, coordenadas `(2, 4)`.
+
+Use este lifecycle ao editar mapas ou eventos desse fluxo, sessão VN, locks de
+cutscene, transferências e continuidade entre os contextos físico e VN.
+
+## Composição e cleanup de Pictures em Map046
+
+Na composição da cena, Rheed ocupa a Picture 1 à direita e a criança ocupa a
+Picture 2 à esquerda. Mudanças de expressão usam `GraphicChange` sobre a
+presença já estabelecida; não repetem a entrada do bust. As ramificações de
+diálogo devem reconvergir no fluxo comum para que a continuação não dependa da
+escolha anterior.
+
+A Cut-In usa a Picture 10 como camada transitória. Ela deve ser apagada antes
+de B11, impedindo que a imagem atravesse o próximo beat ou permaneça visível
+depois da cena. Esse cleanup é específico da Picture 10 e não autoriza apagar
+ou reposicionar outras Pictures ativas.
+
+## Teardown de efeitos transitórios em Map022
+
+Interromper ou apagar o evento controlador impede apenas novos ticks. Um efeito
+transitório já criado continua ativo até receber cleanup seletivo por alvo ou
+owner; portanto, o teardown do controlador não substitui a remoção explícita do
+efeito em andamento.
+
+Nesse mapa, o Event31 é o controlador e o balão pertence ao Event30. O encerramento
+deve parar/apagar o Event31 e remover seletivamente do Event30 o balão criado por
+esse fluxo, preservando efeitos não relacionados do mesmo alvo e de outros
+eventos.
+
 ## Coverage materializado
 
 | Requisito | Profundidade | Estado | Evidência |

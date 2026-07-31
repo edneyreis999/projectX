@@ -30,6 +30,17 @@ Evidência aceita: packet `ux-ui-designer-001` revisão 1. Classificação:
   input, wrap e velocidade de texto existem. Localização está desligada e
   rótulos PT/EN se misturam. Fontes: `s`, `g`, `a`.
 
+## Contrato da escolha qualSeuNome
+
+No fluxo `qualSeuNome`, **Confirmar** define o nome do Actor 1 como `Dulgarin`.
+**Corrigir** preserva e reabre a entrada de nome com limite máximo de oito
+caracteres, permitindo que o jogador revise o valor antes de confirmar.
+
+Ao manter esse fluxo, preserve as ramificações, seus efeitos existentes e o
+comportamento de Cancel. Alterar o rótulo, a ordem visual ou a apresentação não
+deve fazer uma opção executar os efeitos da outra nem transformar Cancel em
+confirmação implícita.
+
 ## Coverage materializado
 
 | Requisito | Profundidade | Estado | Limite |

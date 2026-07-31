@@ -1,0 +1,77 @@
+{
+  "domain_context_preflight": {
+    "agent": "technical-implementer",
+    "conflicts_with_task_context": [],
+    "cross_domain_lookup": {
+      "destination": "none",
+      "reason": "none",
+      "requested_domain": "none",
+      "requested_topics_or_ids": [],
+      "required": false
+    },
+    "docs_considered": [
+      {
+        "path": "docs/domains/technical-implementer/README.md",
+        "reason": "README is the narrow domain route for technical implementation",
+        "routed_by": "exact-surface",
+        "selected": true
+      }
+    ],
+    "docs_read": [
+      {
+        "freshness_evidence": ["current Map045 and analysis are direct task sources"],
+        "freshness_status": "uncertain",
+        "matched_domain_ids": ["map:45"],
+        "matched_surfaces": ["frontend/data/Map045.json"],
+        "matched_topics": ["encoding-repair"],
+        "path": "docs/domains/technical-implementer/README.md",
+        "relevance": "Defines static-only technical inventory and Playtest boundary"
+      }
+    ],
+    "domain_docs_root": "docs/domains/technical-implementer",
+    "durable_doc_gap_handoff": {
+      "destination": "none",
+      "gap_summary": [],
+      "required": false
+    },
+    "freshness": {
+      "evidence": ["task analysis and Map045 baseline are current sources"],
+      "status": "uncertain"
+    },
+    "minimum_next_input": "none",
+    "missing_context": [
+      {
+        "impact": "No static impact; runtime remains covered by final Playtest",
+        "item": "Runtime presentation is not certified by durable domain inventory",
+        "material": false,
+        "substitute_locator": "planos/003-falas-casa-forjaprata/analise-tecnica.md#Human-Gates"
+      }
+    ],
+    "read_attempt": {
+      "readme_path": "docs/domains/technical-implementer/README.md",
+      "reason": "README exists and was the first domain document read",
+      "status": "read"
+    },
+    "relevant_facts": [
+      {
+        "fact": "Static checks do not replace runtime Playtest",
+        "source_kind": "durable-doc",
+        "source_locator": "docs/domains/technical-implementer/README.md"
+      },
+      {
+        "fact": "Map045 is the only authorized production target",
+        "source_kind": "current-source",
+        "source_locator": "planos/003-falas-casa-forjaprata/analise-tecnica.md"
+      }
+    ],
+    "relevant_surfaces": ["frontend/data/Map045.json", "builds/fase1"],
+    "required": true,
+    "result": "ready-with-gaps",
+    "result_reason": "Current task sources are sufficient; only human runtime validation remains open.",
+    "schema_version": "1",
+    "selection_basis": ["exact target surface", "encoding repair topic", "technical writer role"],
+    "task_domain_ids": ["map:45"],
+    "task_id": "task-1.1",
+    "task_topics": ["encoding-repair", "rpg-maker-mz-map-dialogue"]
+  }
+}

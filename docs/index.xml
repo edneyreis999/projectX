@@ -4,7 +4,7 @@
     <scope>project-docs</scope>
     <summary>Catálogo navegável da documentação duradoura de Daratrine - A Origem.</summary>
     <owner>catalogador</owner>
-    <updated_at>2026-07-28</updated_at>
+    <updated_at>2026-07-31</updated_at>
   </metadata>
   <documents>
     <document id="project-inventory" path="docs/project-inventory.md" type="project-context" priority="high">
@@ -29,11 +29,14 @@
     </document>
 
     <document id="domain-runtime-qa" path="docs/domains/runtime-qa/README.md" type="domain-inventory" priority="high">
-      <summary>Inventário estático de superfícies perceptíveis, automação, integrações, save/load e gates de Runtime QA.</summary>
-      <use_when>Use ao localizar riscos e limites de QA runtime ou planejar Playtest de comportamento perceptível.</use_when>
-      <not_covered>Não certifica execução, percepção, áudio, visual, input, quests ou restauração de saves.</not_covered>
-      <keywords><keyword>runtime QA playtest input áudio visual save load</keyword></keywords>
-      <sections><section anchor="inventário-factual" tokens="310" purpose="Resume superfícies, integrações, automação e gates encontrados estaticamente." /></sections>
+      <summary>Inventário de Runtime QA e escada obrigatória entre checks estáticos, round-trip no editor e Playtest completo.</summary>
+      <use_when>Use ao localizar riscos de QA runtime, planejar validação de eventos ou distinguir evidência estática, do editor e de New Game.</use_when>
+      <not_covered>Não certifica execução ou comportamento perceptível sem completar editor e Playtest, incluindo rota, reentrada, locks e save/load.</not_covered>
+      <keywords><keyword>runtime QA checks estáticos editor round-trip New Game playtest reentrada locks save load comportamento perceptível</keyword></keywords>
+      <sections>
+        <section anchor="inventário-factual" tokens="310" purpose="Resume superfícies, integrações, automação e gates encontrados estaticamente." />
+        <section anchor="escada-de-validação-em-três-camadas" tokens="190" purpose="Define a ordem obrigatória entre checks determinísticos, round-trip no editor e Playtest completo desde New Game." />
+      </sections>
     </document>
     <document id="domain-technical-implementer" path="docs/domains/technical-implementer/README.md" type="domain-inventory" priority="high">
       <summary>Inventário da arquitetura híbrida, boot, plugins, módulos, scripts e superfícies de build/teste.</summary>
@@ -64,18 +67,24 @@
       <sections><section anchor="inventário-factual" tokens="390" purpose="Resume loop, regras, feedback, tuning, conflito de EXP e risco de plugin duplicado." /></sections>
     </document>
     <document id="domain-narrative-designer" path="docs/domains/narrative-designer/README.md" type="domain-inventory" priority="high">
-      <summary>Inventário de personagens, premissa, cânone, lugares, lore, arcos, vozes, rotas e finais.</summary>
-      <use_when>Use ao localizar o escopo da investigação narrativa e suas fontes comuns preservadas.</use_when>
+      <summary>Inventário de personagens, premissa, cânone, lugares, lore, arcos, vozes, rotas e finais, incluindo a grafia canônica de Rheed.</summary>
+      <use_when>Use ao localizar o escopo da investigação narrativa, confirmar o nome de Rheed ou interpretar a metáfora de Thorin.</use_when>
       <not_covered>Não resolve divergências entre finais antigos e intenção de 2026 nem comprova reachability, tom ou pacing.</not_covered>
-      <keywords><keyword>narrativa personagens cânone lore arcos diálogos rotas finais</keyword></keywords>
-      <sections><section anchor="inventário-factual" tokens="420" purpose="Sintetiza cânone, personagens, lugares, vozes, rotas e conflitos preservados." /></sections>
+      <keywords><keyword>narrativa personagens cânone Rheed Reed final.png Thorin montanha metáfora lore arcos diálogos rotas finais</keyword></keywords>
+      <sections>
+        <section anchor="inventário-factual" tokens="420" purpose="Sintetiza cânone, personagens, lugares, vozes, rotas e conflitos preservados." />
+        <section anchor="cânone-de-rheed-e-metáfora-de-thorin" tokens="110" purpose="Define Rheed como grafia canônica, preserva o filename legado e limita a montanha de Thorin ao sentido metafórico." />
+      </sections>
     </document>
     <document id="domain-ux-ui-designer" path="docs/domains/ux-ui-designer/README.md" type="domain-inventory" priority="medium">
-      <summary>Inventário estático de fluxos UX, HUD, diálogos, feedback, save/load e recursos de acessibilidade.</summary>
-      <use_when>Use ao investigar superfícies e estados de interface ou planejar validação humana de UX.</use_when>
+      <summary>Inventário estático de fluxos UX, HUD, diálogos, feedback, save/load, acessibilidade e escolha de nome.</summary>
+      <use_when>Use ao investigar superfícies e estados de interface, o fluxo qualSeuNome ou planejar validação humana de UX.</use_when>
       <not_covered>Não certifica acessibilidade, legibilidade, contraste, input, timing, percepção ou restauração de saves.</not_covered>
-      <keywords><keyword>UX UI HUD menus diálogos feedback save acessibilidade</keyword></keywords>
-      <sections><section anchor="inventário-factual" tokens="330" purpose="Resume fluxos, contagens de diálogo, HUD, save e recursos de acessibilidade." /></sections>
+      <keywords><keyword>UX UI HUD menus diálogos feedback save acessibilidade qualSeuNome Confirmar Corrigir Dulgarin Name Input Cancel</keyword></keywords>
+      <sections>
+        <section anchor="inventário-factual" tokens="330" purpose="Resume fluxos, contagens de diálogo, HUD, save e recursos de acessibilidade." />
+        <section anchor="contrato-da-escolha-qualseunome" tokens="110" purpose="Preserva os efeitos de Confirmar, Corrigir, Name Input e Cancel no fluxo qualSeuNome." />
+      </sections>
     </document>
     <document id="domain-gameplay-engineer" path="docs/domains/gameplay-engineer/README.md" type="domain-inventory" priority="high">
       <summary>Inventário de mecânicas, estado, Common Events, callers, plugins, integrações e persistência.</summary>
@@ -106,11 +115,16 @@
       <sections><section anchor="inventário-factual" tokens="400" purpose="Expõe valores, conflitos de progressão/TCR, recompensas, shop e sources/sinks." /></sections>
     </document>
     <document id="domain-scene-presentation-designer" path="docs/domains/scene-presentation-designer/README.md" type="domain-inventory" priority="medium">
-      <summary>Inventário de staging, câmera, transições, busts, backgrounds, vídeo, timing e cues de cenas.</summary>
-      <use_when>Use ao investigar a apresentação atual de cenas e seus requisitos de validação perceptível.</use_when>
-      <not_covered>Não certifica composição, pacing, sincronização, mix, cleanup, timing ou câmera em execução.</not_covered>
-      <keywords><keyword>cenas staging câmera transições sprites backgrounds timing cues</keyword></keywords>
-      <sections><section anchor="inventário-factual" tokens="390" purpose="Resume chamadas de staging/câmera, busts, backgrounds, waits e cues." /></sections>
+      <summary>Inventário de apresentação, lifecycle EX/VN/Cutscene, composição de Map046 e teardown de efeitos em Map022.</summary>
+      <use_when>Use ao investigar cenas ou alterar eventos, Pictures, busts, Cut-In, efeitos transitórios, sessão VN, locks, transferências e continuidade da Noite da História.</use_when>
+      <not_covered>Não certifica composição, pacing ou execução; a rota e o pareamento de sessão/locks ainda exigem Playtest.</not_covered>
+      <keywords><keyword>cenas staging EX VN Cutscene Map022 Event31 Event30 balão teardown efeitos transitórios Map046 Rheed criança GraphicChange Picture 1 Picture 2 Picture 10 Cut-In B11 Map045 EnterVisualNovel FinishVisualNovel EV030 V106</keyword></keywords>
+      <sections>
+        <section anchor="inventário-factual" tokens="390" purpose="Resume chamadas de staging/câmera, busts, backgrounds, waits e cues." />
+        <section anchor="lifecycle-exvncutscene-da-noite-da-história" tokens="200" purpose="Define as fronteiras EX/VN, pares de sessão e locks, guarda de START e transferência terminal." />
+        <section anchor="composição-e-cleanup-de-pictures-em-map046" tokens="160" purpose="Define posições de Rheed/criança, GraphicChange sem reentrada, reconvergência e cleanup da Picture 10 antes de B11." />
+        <section anchor="teardown-de-efeitos-transitórios-em-map022" tokens="130" purpose="Distingue teardown do Event31 do cleanup seletivo do balão no Event30." />
+      </sections>
     </document>
     <document id="domain-audio-designer" path="docs/domains/audio-designer/README.md" type="domain-inventory" priority="medium">
       <summary>Inventário de música, ambience, SFX, assets, referências, triggers, cues e configuração de volumes.</summary>
@@ -120,18 +134,24 @@
       <sections><section anchor="inventário-factual" tokens="390" purpose="Materializa assets, calls, referências ausentes, volumes e gaps de cues." /></sections>
     </document>
     <document id="domain-quest-content-designer" path="docs/domains/quest-content-designer/README.md" type="domain-inventory" priority="high">
-      <summary>Inventário de quests, objetivos, NPCs, journal, recompensas, flags, owners e pré/pós-condições.</summary>
-      <use_when>Use ao investigar a estrutura factual das quests e diferenciar documentação, dados e runtime.</use_when>
-      <not_covered>Não reescreve quests nem valida reachability, sucesso, falha, retry ou persistência em Playtest.</not_covered>
-      <keywords><keyword>quests objetivos NPCs etapas recompensas flags condições</keyword></keywords>
-      <sections><section anchor="inventário-factual" tokens="380" purpose="Resume estrutura, journal, flags, recompensas, owners e condições." /></sections>
+      <summary>Inventário de quests e contrato canônico da Noite da História em Coreto_QuestCore, V106 e projeção PKD/SQSM.</summary>
+      <use_when>Use ao investigar quests ou alterar registro, transições, journal, variável de estágio e ordem de plugins da Noite da História.</use_when>
+      <not_covered>Não valida reachability ou persistência em Playtest; PKD/SQSM é projeção idempotente, não autoridade do progresso.</not_covered>
+      <keywords><keyword>quest Noite da História Coreto_QuestCore V106 v_qNoiteDaHistoria_stage START COMPLETE_VN ARRIVE_MAP045 PKD SQSM assistirNoiteHistoria</keyword></keywords>
+      <sections>
+        <section anchor="inventário-factual" tokens="380" purpose="Resume estrutura, journal, flags, recompensas, owners e condições." />
+        <section anchor="contrato-canônico-noite-da-história" tokens="260" purpose="Define autoridade, estados, transições, projeção no journal e ordem de plugins da Noite da História." />
+      </sections>
     </document>
     <document id="domain-technical-artist" path="docs/domains/technical-artist/README.md" type="domain-inventory" priority="medium">
-      <summary>Inventário de formatos visuais, animações, tilesets, referências ausentes e riscos de memória/performance.</summary>
-      <use_when>Use ao investigar a fronteira entre assets visuais e runtime ou planejar validação técnica de arte.</use_when>
+      <summary>Inventário de formatos visuais, animações, tilesets, referências, riscos de performance e contrato de intake de assets.</summary>
+      <use_when>Use ao investigar a fronteira asset-runtime, integrar um asset visual ou planejar validação técnica de arte.</use_when>
       <not_covered>Não mede residência, cache, frame pacing ou rendering e não certifica qualidade visual/performance.</not_covered>
-      <keywords><keyword>arte técnica assets formatos animações efeitos atlases performance</keyword></keywords>
-      <sections><section anchor="inventário-factual" tokens="390" purpose="Resume formatos, animações, tilesets, referências quebradas e estimativas não-runtime." /></sections>
+      <keywords><keyword>arte técnica assets intake path case dimensões alpha pivot safe area dependências checksum validação estética formatos animações efeitos atlases performance</keyword></keywords>
+      <sections>
+        <section anchor="inventário-factual" tokens="390" purpose="Resume formatos, animações, tilesets, referências quebradas e estimativas não-runtime." />
+        <section anchor="contrato-de-intake-de-assets-visuais" tokens="130" purpose="Define metadados e checks técnicos de intake separados da validação estética." />
+      </sections>
     </document>
 
     <document id="gdd-overview" path="docs/GDD/GDD.geral.md" type="game-design-document" priority="high">

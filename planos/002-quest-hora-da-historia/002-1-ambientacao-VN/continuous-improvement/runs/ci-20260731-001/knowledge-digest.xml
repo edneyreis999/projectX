@@ -1,0 +1,119 @@
+<knowledge_digest reconciler="orchestrator-global" schema_version="1">
+  <digestion_batches>
+    <batch batch_id="ci3-batch-1">
+      <file_ref path="agent-runs/fase0/agent-run-context-inventory-v1.xml"></file_ref>
+      <file_ref path="agent-runs/fase1/agent-run-pov-narrative-v1.xml"></file_ref>
+      <file_ref path="agent-runs/fase1/agent-run-pov-presentation-v1.xml"></file_ref>
+      <file_ref path="agent-runs/fase1/agent-run-pov-runtime-qa-v1.xml"></file_ref>
+      <file_ref path="agent-runs/fase1/agent-run-pov-technical-art-v1.xml"></file_ref>
+      <file_ref path="agent-runs/fase2/agent-run-analysis-writer-v1.xml"></file_ref>
+      <file_ref path="agent-runs/fase2/agent-run-asset-manifest-v1.xml"></file_ref>
+      <file_ref path="agent-runs/fase2/agent-run-decision-confirm-name-v1.xml"></file_ref>
+      <file_ref path="agent-runs/fase2/agent-run-decision-creative-pack-v1.xml"></file_ref>
+      <file_ref path="agent-runs/fase2/agent-run-decision-naming-v1.xml"></file_ref>
+      <file_ref path="agentic-run-digest.xml"></file_ref>
+      <file_ref path="agentic-run-manifest.xml"></file_ref>
+      <file_ref path="analise/agentes/narrative-designer-review.xml"></file_ref>
+      <file_ref path="analise/agentes/narrative-designer.xml"></file_ref>
+      <file_ref path="analise/agentes/runtime-qa-review.xml"></file_ref>
+      <file_ref path="analise/agentes/runtime-qa.xml"></file_ref>
+      <file_ref path="analise/agentes/scene-presentation-designer-review.xml"></file_ref>
+      <file_ref path="analise/agentes/scene-presentation-designer.xml"></file_ref>
+      <file_ref path="analise/agentes/technical-artist-review.xml"></file_ref>
+      <file_ref path="analise/agentes/technical-artist.xml"></file_ref>
+      <file_ref path="analise/asset-manifest.md"></file_ref>
+      <file_ref path="analise/context/inventory.xml"></file_ref>
+      <file_ref path="analise/manifest.xml"></file_ref>
+      <file_ref path="analise/sintese.xml"></file_ref>
+      <file_ref path="analise/technical-analysis-sub-demanda1.md"></file_ref>
+      <file_ref path="analise/technical-analysis.md"></file_ref>
+    </batch>
+    <batch batch_id="ci3-batch-2">
+      <file_ref path="backlog.md"></file_ref>
+      <file_ref path="builds/audits/phase/boundary-4d327cb7baf73d6b3cc8f72d624de5df/auditor-report-v1.json"></file_ref>
+      <file_ref path="builds/audits/phase/boundary-4d327cb7baf73d6b3cc8f72d624de5df/checkpoint-v1-0.yaml"></file_ref>
+      <file_ref path="builds/consistency-packet-v2.json"></file_ref>
+      <file_ref path="builds/fase1/implement-map046.mjs"></file_ref>
+      <file_ref path="builds/fase1/task-1.1-completion.json"></file_ref>
+      <file_ref path="builds/fase1/task-1.1-validation.json"></file_ref>
+      <file_ref path="builds/fase1/terminal-evidence-v1.json"></file_ref>
+      <file_ref path="builds/fase1/validate-map046.mjs"></file_ref>
+      <file_ref path="builds/fase2/static-validation-v1.md"></file_ref>
+      <file_ref path="builds/fase2/validate-vn-ambientacao.mjs"></file_ref>
+      <file_ref path="builds/finalize-metrics.mjs"></file_ref>
+      <file_ref path="builds/finalize-terminal-artifacts.mjs"></file_ref>
+      <file_ref path="builds/generate-initial-metrics.mjs"></file_ref>
+      <file_ref path="builds/implement-feature-result-v3.json"></file_ref>
+      <file_ref path="builds/implementation-dashboard-v3.md"></file_ref>
+      <file_ref path="builds/metrics/execution-metrics.json"></file_ref>
+      <file_ref path="builds/validate-terminal-artifacts.mjs"></file_ref>
+      <file_ref path="demanda-improved.md"></file_ref>
+      <file_ref path="demanda.md"></file_ref>
+      <file_ref path="evidence/analysis-writer.xml"></file_ref>
+      <file_ref path="evidence/asset-manifest.xml"></file_ref>
+      <file_ref path="evidence/context-inventory.xml"></file_ref>
+      <file_ref path="evidence/decision-confirm-name.xml"></file_ref>
+      <file_ref path="evidence/decision-creative-pack.xml"></file_ref>
+      <file_ref path="evidence/decision-naming.xml"></file_ref>
+    </batch>
+    <batch batch_id="ci3-batch-3">
+      <file_ref path="evidence/pov-narrative.xml"></file_ref>
+      <file_ref path="evidence/pov-presentation.xml"></file_ref>
+      <file_ref path="evidence/pov-runtime-qa.xml"></file_ref>
+      <file_ref path="evidence/pov-technical-art.xml"></file_ref>
+      <file_ref path="execution-knowledge/entries/capture-analysis-writer-v1.xml"></file_ref>
+      <file_ref path="execution-knowledge/entries/capture-asset-manifest-v1.xml"></file_ref>
+      <file_ref path="execution-knowledge/entries/capture-context-inventory-v1.xml"></file_ref>
+      <file_ref path="execution-knowledge/entries/capture-decision-confirm-name-v1.xml"></file_ref>
+      <file_ref path="execution-knowledge/entries/capture-decision-creative-pack-v1.xml"></file_ref>
+      <file_ref path="execution-knowledge/entries/capture-decision-naming-v1.xml"></file_ref>
+      <file_ref path="execution-knowledge/entries/capture-pov-narrative-v1.xml"></file_ref>
+      <file_ref path="execution-knowledge/entries/capture-pov-presentation-v1.xml"></file_ref>
+      <file_ref path="execution-knowledge/entries/capture-pov-runtime-qa-v1.xml"></file_ref>
+      <file_ref path="execution-knowledge/entries/capture-pov-runtime-qa-v2.xml"></file_ref>
+      <file_ref path="execution-knowledge/entries/capture-pov-technical-art-v1.xml"></file_ref>
+      <file_ref path="execution-knowledge/entries/capture-task-1.1-implementation-v1.xml"></file_ref>
+      <file_ref path="interaction/fase1/task-1.1/human-validation-v1.json"></file_ref>
+      <file_ref path="preflights/run-73b3d740b838fa669b29aac69582aecf/map046-phase-auditor/preflight-v1.md"></file_ref>
+      <file_ref path="preflights/run-73b3d740b838fa669b29aac69582aecf/technical-implementer/domain-context-v1.yaml"></file_ref>
+      <file_ref path="preflights/run-73b3d740b838fa669b29aac69582aecf/technical-implementer/preflight-v1.md"></file_ref>
+      <file_ref path="retrospetivas/fase1/retrospectiva-fase1-ambientacao-vn-map046.md"></file_ref>
+      <file_ref path="sub-demanda1-improved.md"></file_ref>
+      <file_ref path="sub-demanda1.md"></file_ref>
+      <file_ref path="task-1.1.md"></file_ref>
+      <file_ref path="task-2.1.md"></file_ref>
+      <file_ref path="tasks.md"></file_ref>
+    </batch>
+  </digestion_batches>
+  <claims>
+    <claim claim_id="claim-map046-presentation" reconciliation="confirmed"></claim>
+    <claim claim_id="claim-map046-dialogue" reconciliation="confirmed"></claim>
+    <claim claim_id="claim-map046-choice" reconciliation="confirmed"></claim>
+    <claim claim_id="claim-vn-assets" reconciliation="confirmed"></claim>
+    <claim claim_id="claim-map022-cleanup" reconciliation="confirmed"></claim>
+    <claim claim_id="claim-fase1-human-validation" reconciliation="confirmed"></claim>
+    <claim claim_id="claim-fase2-static-validation" reconciliation="confirmed"></claim>
+    <claim claim_id="claim-fase2-playtest-complete" reconciliation="contradicted"></claim>
+    <claim claim_id="claim-historical-locators-current" reconciliation="contradicted"></claim>
+  </claims>
+  <implementation_deltas>
+    <implementation_delta claim_id="claim-map046-presentation" delta_id="delta-map046-presentation" target="frontend/data/Map046.json"></implementation_delta>
+    <implementation_delta claim_id="claim-map046-dialogue" delta_id="delta-map046-dialogue" target="frontend/data/Map046.json"></implementation_delta>
+    <implementation_delta claim_id="claim-map046-choice" delta_id="delta-map046-choice" target="frontend/data/Map046.json"></implementation_delta>
+    <implementation_delta claim_id="claim-vn-assets" delta_id="delta-vn-assets" target="frontend/img/pictures-and-parallaxes"></implementation_delta>
+    <implementation_delta claim_id="claim-map022-cleanup" delta_id="delta-map022-cleanup" target="frontend/data/Map022.json"></implementation_delta>
+  </implementation_deltas>
+  <material_findings>
+    <material_finding finding_id="finding-map046-composition" scope="consumer" type="runtime-contract"></material_finding>
+    <material_finding finding_id="finding-rheed-canon" scope="consumer" type="content-or-canon"></material_finding>
+    <material_finding finding_id="finding-choice-name" scope="consumer" type="state-or-data-contract"></material_finding>
+    <material_finding finding_id="finding-asset-intake" scope="consumer" type="validation-pattern"></material_finding>
+    <material_finding finding_id="finding-transient-cleanup" scope="consumer" type="runtime-contract"></material_finding>
+    <material_finding finding_id="finding-validation-ladder" scope="consumer" type="validation-pattern"></material_finding>
+    <material_finding finding_id="finding-catalog-routing" scope="consumer" type="convention"></material_finding>
+    <material_finding finding_id="finding-plan-relocation" scope="package" type="prevention"></material_finding>
+    <material_finding finding_id="finding-validator-replay" scope="package" type="prevention"></material_finding>
+    <material_finding finding_id="finding-telemetry-separation" scope="package" type="validation-pattern"></material_finding>
+    <material_finding finding_id="finding-safe-data-writer" scope="package" type="validation-pattern"></material_finding>
+  </material_findings>
+</knowledge_digest>

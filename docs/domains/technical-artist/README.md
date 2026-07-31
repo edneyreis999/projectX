@@ -32,6 +32,20 @@ Evidência aceita: packet `technical-artist-001` revisão 1. Classificação:
   cada). Preload do Core lista apenas Balloon/IconSet; PKD_AnimaX aguarda sheets;
   WebP/preload alternativo estão off. Fontes: `d`, `g`, `a`.
 
+## Contrato de intake de assets visuais
+
+Antes de integrar um asset, registre e valide tecnicamente:
+
+- caminho de destino e capitalização exata do nome;
+- dimensões em pixels e canal alpha esperado;
+- pivot/âncora e safe area para o enquadramento de uso;
+- dependências e referências que carregam ou exibem o arquivo;
+- checksum do arquivo aceito, para distinguir revisões sem depender só do nome.
+
+Esses checks verificam identidade e compatibilidade técnica. A validação
+estética — composição, legibilidade, consistência visual, qualidade e adequação
+à cena — é uma revisão separada e não pode ser inferida do checklist técnico.
+
 ## Coverage materializado
 
 | Requisito | Profundidade | Estado | Evidência |

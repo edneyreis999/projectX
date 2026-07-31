@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "task_ref": "planos/003-falas-casa-forjaprata/task-1.1.md",
+  "validator_ref": "planos/003-falas-casa-forjaprata/builds/fase1/validate-map045-encoding.mjs",
+  "failure_evidence_ref": "planos/003-falas-casa-forjaprata/builds/fase1/map045-validation-report.json",
+  "failure_evidence_digest": "sha256:9e52adaca905664890e916fc398ae150510bd37dc9d1ccb15caccf14bd229195",
+  "map_digest": "sha256:5030496827aafc9e79fdbf99b21bea933fdbf2d2ee38863051f60f98bd2382f6",
+  "acceptance_criterion_refs": [
+    "AC-MAP045-01",
+    "AC-MAP045-02"
+  ],
+  "classification": "validator-defect",
+  "severity": null,
+  "attribution": {
+    "owner_surface": "planos/003-falas-casa-forjaprata/builds/fase1/validate-map045-encoding.mjs",
+    "finding": "The persisted deterministic failure attributes an acceptance failure to four authorized code 122 parameter[4] text repairs, not to an out-of-allowlist Map045 change.",
+    "current_validator_state": "The validator bytes currently on disk postdate the failure report and mask all 30 allowlisted leaves before comparing complete code 122 commands. That current comparison evaluates equal and is tautological for the four authorized operands; it must not be claimed as independent evidence for those operand values."
+  },
+  "correction_scope_allowed": [
+    "planos/003-falas-casa-forjaprata/builds/fase1/validate-map045-encoding.mjs"
+  ],
+  "retry_debit": false,
+  "observed_facts": [
+    "The failure report records failed-static-validation only at narrative-variable-assignment-order-preserved after manifest identity, all 30 frozen recoveries, reconstructed baseline hash, byte-restricted repair, exactly 30 allowlisted leaf diffs, masked deep equality, all expected-value and Unicode checks, structure, branches, plugin payloads and Common Event callers passed.",
+    "The current Map045 SHA-256 is 5030496827aafc9e79fdbf99b21bea933fdbf2d2ee38863051f60f98bd2382f6.",
+    "Independent reconstruction from the manifest found exactly 30 leaf diffs and the diff paths exactly match the 30-entry allowlist.",
+    "Four allowlisted leaves are code 122 parameters[4]: E005-P04-L002, E011-P01-L024, E011-P01-L070 and E011-P01-L071.",
+    "RPG Maker MZ Game_Interpreter.command122 reads params[4] as the operand value for constant and script operands, so these four text changes are part of the authorized command payload.",
+    "After the current validator masks the allowlisted paths in both reconstructed baseline and persisted map, its complete-command comparison covers 30 narrative assignments, evaluates equal, and cannot independently distinguish the four authorized operand values.",
+    "The runtime-qa durable context root docs/loki-init/runtime-qa is absent; the exact task, immutable failure report, manifest, validator, current map and engine source provide a sufficient current substitute, so domain preflight is ready-with-gaps."
+  ],
+  "residual_risk": [
+    "The failure report does not bind the exact validator bytes that produced it; the validator currently on disk has SHA-256 319cd29099272613e1b94ee4971bfaea1a567cf2c2bc4abb7f97e262446b543e and a later modification time than the report.",
+    "The complete-command comparison is redundant after allowlist masking and does not add independent assurance for the four code 122 operands; operand assurance must come from the frozen expected-value checks and exact 30-path diff checks.",
+    "Runtime behavior and Playtest remain unvalidated and outside this finding."
+  ],
+  "result": "classified-validator-defect",
+  "next_action": "Route the validator-only correction through its authorized Writer, retain or add a non-tautological assertion only if distinct coverage is required, then rerun the deterministic validator without consuming a correction retry; Playtest remains a separate human gate.",
+  "failure_signature": "sha256:077a640448d74e80454e26cffcdb81e6c525fcac8c3fa40c8b7138f7e84ce71e"
+}

@@ -39,15 +39,28 @@ export function validateMap022EntryCorrection(map022) {
         fail(`Map022 E30 must contain exactly one noite-da-historia START transition; found ${startIndexes.length}`);
     }
 
+    const guardIndexes = startList
+        .map((item, index) => item.code === 111 && item.indent === 0 &&
+            sameParameters(item.parameters, [1, 106, 0, 0, 0]) ? index : -1)
+        .filter(index => index >= 0);
+    if (guardIndexes.length !== 1) {
+        fail(`Map022 E30 must contain exactly one V106 == 0 guard; found ${guardIndexes.length}`);
+    }
+
     const startIndex = startIndexes[0];
-    const guard = startList[startIndex - 1];
-    const transition = startList[startIndex];
-    const branchEnd = startList[startIndex + 1];
-    if (!(guard?.code === 111 && guard.indent === 0 &&
-            sameParameters(guard.parameters, [1, 106, 0, 0, 0]) &&
-            transition.indent === 1 &&
-            branchEnd?.code === 412 && branchEnd.indent === 0)) {
-        fail("Map022 E30 START must be the sole child of an exact V106 == 0 conditional branch");
+    const guardIndex = guardIndexes[0];
+    const branchEndIndex = startList.findIndex((item, index) =>
+        index > guardIndex && item.code === 412 && item.indent === 0
+    );
+    const elseIndex = startList.findIndex((item, index) =>
+        index > guardIndex && index < branchEndIndex && item.code === 411 && item.indent === 0
+    );
+    const trueBranchEndIndex = elseIndex >= 0 ? elseIndex : branchEndIndex;
+
+    if (!(branchEndIndex > guardIndex &&
+            startIndex > guardIndex && startIndex < trueBranchEndIndex &&
+            startList[startIndex].indent === 1)) {
+        fail("Map022 E30 START must be inside the true branch of the exact V106 == 0 guard");
     }
 
     const entryList = map022.events[18]?.pages?.[0]?.list;
@@ -95,16 +108,37 @@ if (!hasCommand(vnList, "Coreto_QuestCore", "QuestTransition") || !hasCommand(vn
 }
 const enters = vnList.filter(item => item.code === 357 && item.parameters[1] === "Basic_EnterBust").length;
 const exits = vnList.filter(item => item.code === 357 && item.parameters[1] === "Basic_ExitBusts").length;
-if (enters < 6 || exits < 5 || !vnList.some(item => item.code === 102) || !vnList.some(item => item.code === 303)) {
+if (enters < 1 || exits < 1 || !vnList.some(item => item.code === 102) || !vnList.some(item => item.code === 303)) {
     fail("VN presentation, choices, Name Input, or cleanup is incomplete");
 }
 
-const outro = map022.events[17].pages[0].list;
-const transitionIndex = outro.findIndex(item => item.code === 357 && item.parameters[0] === "Coreto_QuestCore" && item.parameters[1] === "QuestTransition");
+const outroPages = map022.events[17].pages
+    .map((page, pageIndex) => ({ pageIndex, list: page.list }))
+    .filter(({ list }) => list.some(item =>
+        item.code === 357 &&
+        item.parameters?.[0] === "Coreto_QuestCore" &&
+        item.parameters?.[1] === "QuestTransition" &&
+        item.parameters?.[3]?.questKey === "noite-da-historia" &&
+        item.parameters?.[3]?.transitionId === "ARRIVE_MAP045"
+    ));
+if (outroPages.length !== 1) {
+    fail(`Map022 E17 must contain exactly one ARRIVE_MAP045 page; found ${outroPages.length}`);
+}
+
+const outro = outroPages[0].list;
+const beginIndex = outro.findIndex(item => item.code === 357 && item.parameters[0] === "Coreto_Cutscene" && item.parameters[1] === "BeginCutscene");
+const transitionIndex = outro.findIndex(item =>
+    item.code === 357 &&
+    item.parameters?.[0] === "Coreto_QuestCore" &&
+    item.parameters?.[1] === "QuestTransition" &&
+    item.parameters?.[3]?.questKey === "noite-da-historia" &&
+    item.parameters?.[3]?.transitionId === "ARRIVE_MAP045"
+);
 const finishIndex = outro.findIndex(item => item.code === 357 && item.parameters[0] === "Coreto_Cutscene" && item.parameters[1] === "FinishCutscene");
 const transferIndex = outro.findIndex(item => item.code === 201 && item.parameters[1] === 45 && item.parameters[2] === 2 && item.parameters[3] === 4);
-if (!(transitionIndex >= 0 && transitionIndex < finishIndex && finishIndex < transferIndex && outro.filter(item => item.code === 201).length === 1)) {
-    fail("Map022 E17 terminal order must be transition -> finish -> one Map045 transfer");
+if (!(beginIndex >= 0 && beginIndex < transitionIndex && transitionIndex < finishIndex &&
+        finishIndex < transferIndex && outro.filter(item => item.code === 201).length === 1)) {
+    fail("Map022 E17 terminal page must pair cutscene and order transition -> finish -> one Map045 transfer");
 }
 
 const arrival = map045.events[11].pages[0];

@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "evidence_id": "administrative-terminal-evidence-001-coreto-ex-vn-2026-07-30",
+  "created_at_utc": "2026-07-30T19:34:56Z",
+  "scope": "Manual terminal reconciliation for planos/001-cena-coreto-nova-arquitetura",
+  "status": "passed-with-administrative-limitation",
+  "source_run_id": "loki-run-v2:86550d0a2c2b24415570cf9599eeed021f6cd88b7a3fd0e51a014839fb5274f1",
+  "source_execution_id": "loki-execution-v2:d00981de73a3d0fbd4fa7be081b5e8ae6e7292ef6de06afe9214b7f39bbdbe2c",
+  "acceptance_criteria": [
+    {"id": "task-1.1-ac-1", "result": "passed", "evidence": "architecture validator: SQSM backend, idempotent projection and no VisuMZ_2_QuestSystem dependency"},
+    {"id": "task-1.1-ac-2", "result": "passed", "evidence": "registry V106, states 0/10/20/90 and ordered active plugins"},
+    {"id": "task-2.1-ac-1", "result": "passed", "evidence": "route validator: Coreto commands, no direct EX/VN transfer and no direct V106 event writes"},
+    {"id": "task-2.1-ac-2", "result": "passed", "evidence": "route validator: assertions, FinishVisualNovel, paired cutscene and Map045 (2,4) terminal route"}
+  ],
+  "validators": [
+    {"command": "node planos/001-cena-coreto-nova-arquitetura/builds/fase1/validate-architecture.mjs", "result": "passed", "artifact_sha256": "14ea5f90dc5d4f27b8e7b9e932140147a8d36bace364e84221475927bc2d3ef1"},
+    {"command": "node planos/001-cena-coreto-nova-arquitetura/builds/fase2/validate-route.mjs", "result": "passed", "artifact_sha256": "64e514b35ad2956b369b530293eb52264a4fa8caf09775b9f2f851bfcbc36be5"},
+    {"command": "node --check for validate-route.mjs and the three Coreto plugins", "result": "passed"},
+    {"command": "JSON parse for CoretoQuests, System and Maps 022/045/046", "result": "passed"},
+    {"command": "negative fixture: V105 guard", "result": "passed-by-rejection"},
+    {"command": "negative fixture: START moved to the else branch", "result": "passed-by-rejection"},
+    {"command": "git diff --check", "result": "passed"}
+  ],
+  "runtime_target_digests": {
+    "frontend/js/plugins/Coreto_QuestCore.js": "84a3c9ef5360aa25984b65b61fc9f57f17809977838cd2fa586be521f5e38d85",
+    "frontend/js/plugins.js": "ed2666273c40e8d1e24984bb25ea4bf8784320d757b82d3a026fc2af7144c6ea",
+    "frontend/data/CoretoQuests.json": "b4227a1c038893a02dcb6827b9a0c45813c8c66fa32d6f69e349fccfd19d72a7",
+    "frontend/data/System.json": "f021a077607c82417e29f3139c478d0d24e511babc9020dec0053a94f5d937b9",
+    "frontend/data/Map022.json": "1ffe71ca9158ecbdaac13418650e5af2c006ae56f146ce64db7f44e8c2ce1856",
+    "frontend/data/Map045.json": "07bab84eb61d52a35d43693a5fdfb1c2a576599f7a375e7f8833eadb90108f57",
+    "frontend/data/Map046.json": "ff209bd9abe46d373c3d9a40e31a9cecd8a6561ee2c7b3c49c41c7b23c88ed8f"
+  },
+  "human_validation": {
+    "result": "passed",
+    "confirmation": "User reconfirmed Plugin Manager open/save/reopen and the complete New Game Playtest matrix on 2026-07-30.",
+    "persisted_corroboration": "retrospetivas/fase2/retrospectiva-fase2-cena-coreto-nova-arquitetura.md"
+  },
+  "limitations": [
+    "The original Loki run uses a non-canonical audit-policy digest and cannot be represented as a contract-valid current v3 resume.",
+    "No execution metrics were published; this manual reconciliation does not fabricate telemetry."
+  ]
+}

@@ -1,2 +1,3 @@
-- após conversar com as crianças, elas deveriam se reposicionar para o centro, para Rheed contar sua história. Percebi que é por causa da variavel errada na segunda página do evento de todas as crianças. Atualize a segunda que aconteça com a variavel 106 e estado 10.
-- Após fazer isso, as crianças vão se reposicionar de forma abrupta. Quero que, ao invés de usar o comando definir posição, use o "Definir movimento (Move to)" sem Wait.
+- No mapa 022 Quero que, ao falar com a elfa, as crianças caminhem até a frente do coreto e se virem para cima.
+- Após esse movimento ela deve ficar fixa na posição.
+- Os pontos em elas ficarão ja estao definidos no evento, mas por algum motivo eu não consegui fazer funcionar.
