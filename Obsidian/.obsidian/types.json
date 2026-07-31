@@ -6,6 +6,7 @@
     "ato": "number",
     "conflito_tipo": "text",
     "lideranca": "text",
-    "filiacao_principal": "text"
+    "filiacao_principal": "text",
+    "Personagem": "text"
   }
 }

@@ -1,14 +1,34 @@
 {
   "main": {
-    "id": "1e35d5d901f8d462",
+    "id": "383e8701b9ef2be3",
     "type": "split",
     "children": [
       {
-        "id": "7f3980e4634cbe2d",
+        "id": "4d2529de918cbe0b",
         "type": "tabs",
         "children": [
           {
-            "id": "a12892d0c641d136",
+            "id": "33d510dcc47b68a7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Daratrine/02_Atlas_Folk/02.2_Personagens/Killin.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Killin"
+            }
+          }
+        ]
+      },
+      {
+        "id": "08d1a37b6513cc43",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "94379b5b9edf4f49",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -27,15 +47,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "3ac938f8c8ed5009",
+    "id": "d4e70db2b0abcfb8",
     "type": "split",
     "children": [
       {
-        "id": "e50bd52e2ebc5716",
+        "id": "aa993b951f166b08",
         "type": "tabs",
         "children": [
           {
-            "id": "c37488d8897048c9",
+            "id": "be5ce5c4e8445005",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,12 +68,12 @@
             }
           },
           {
-            "id": "6190a4d149847ce2",
+            "id": "395b661b248f2668",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "bruxas",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +85,7 @@
             }
           },
           {
-            "id": "3fe82be16da35e78",
+            "id": "f845e60c909c0fb9",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -78,23 +98,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 277
+    "width": 300
   },
   "right": {
-    "id": "0bb609aeede63ae5",
+    "id": "087691988d72e072",
     "type": "split",
     "children": [
       {
-        "id": "e243f8ba924a0f2d",
+        "id": "0ed58468579988ef",
         "type": "tabs",
         "children": [
           {
-            "id": "ab93ad84024d450e",
+            "id": "24518493ce99a2b0",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daratrine/01_Worldbuilding/01.2.1_Politica/T_Política.md",
+                "file": "Daratrine/03_Narrative/03.1_Macro_History/a-voz-do-conselho.NSD.fluxo-cenas.revisado.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,25 +124,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Links inversos para T_Política"
+              "title": "Links inversos para a-voz-do-conselho.NSD.fluxo-cenas.revisado"
             }
           },
           {
-            "id": "548d87b747de478c",
+            "id": "ce5cd123a976e6b2",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daratrine/01_Worldbuilding/01.2.1_Politica/T_Política.md",
+                "file": "Daratrine/03_Narrative/03.1_Macro_History/a-voz-do-conselho.NSD.fluxo-cenas.revisado.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Links de saída para T_Política"
+              "title": "Links de saída para a-voz-do-conselho.NSD.fluxo-cenas.revisado"
             }
           },
           {
-            "id": "92a61f13c7854c08",
+            "id": "7e9261006114b929",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -137,7 +157,7 @@
             }
           },
           {
-            "id": "9d74bc2164f27ab3",
+            "id": "7162ba2954adce5e",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -151,18 +171,18 @@
             }
           },
           {
-            "id": "d778d390a9e8b217",
+            "id": "c7ac368922d35bce",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daratrine/01_Worldbuilding/01.2.1_Politica/T_Política.md",
+                "file": "Daratrine/03_Narrative/03.1_Macro_History/a-voz-do-conselho.NSD.fluxo-cenas.revisado.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de T_Política"
+              "title": "Sumário de a-voz-do-conselho.NSD.fluxo-cenas.revisado"
             }
           }
         ]
@@ -184,48 +204,33 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "a12892d0c641d136",
+  "active": "94379b5b9edf4f49",
   "lastOpenFiles": [
-    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat/01.3.2_Locais/01.3.4_Casa_da_família_Forjaprata.md",
-    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat/01.3.2_Locais/01.3.7_Outros.md",
-    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat/01.3.2_Locais/01.3.6_Mina_de_Esgoto.md",
-    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat/01.3.2_Locais/01.3.5_Castelo_de_Damburr_Sala_do_Conselho.md",
-    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat/01.3.2_Locais/01.3.3_Distrito_Residencial.md",
-    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/Índice_Geral_Geografia_Arquitetura.md",
-    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat/01.3.2_Gildrat.md",
-    "Geral/CENTRAL DE PRODUÇÃO.md",
-    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Ekios/Geografia_e_arquitetura_continente_Ekios.md",
-    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Ekios/Continente_Ekios.md",
-    "Daratrine/01_Worldbuilding/01.8_Magia/Magia.md",
-    "Daratrine/01_Worldbuilding/01.2_Politica/Política.md",
+    "Daratrine/03_Narrative/Softwares_relevantes.md",
+    "Daratrine/03_Narrative/História_Inteira_de_Daratrine.md",
+    "Daratrine/03_Narrative/Modelos de timeline.md",
+    "Daratrine/04_Mechanics/Ludus.md",
+    "Daratrine/02_Atlas_Folk/02.2_Personagens/Thorin.md",
+    "Dúvidas.md",
+    "Daratrine/02_Atlas_Folk/02.2_Personagens/Killin.md",
+    "Daratrine/02_Atlas_Folk/02.2_Personagens/Dambur.md",
+    "Daratrine/02_Atlas_Folk/02.2_Personagens/Borin.md",
+    "Daratrine/02_Atlas_Folk/02.2_Personagens/Mélia.md",
+    "Daratrine/02_Atlas_Folk/02.2_Personagens/Balastrus.md",
+    "Daratrine/02_Atlas_Folk/02.2_Personagens/Corvinus.md",
+    "Daratrine/02_Atlas_Folk/02.2_Personagens/Filena.md",
+    "Daratrine/02_Atlas_Folk/02.2_Personagens/Mhordred.md",
+    "Daratrine/02_Atlas_Folk/02.2_Personagens/Profeta das Sombras.md",
+    "Daratrine/02_Atlas_Folk/02.2_Personagens/Rheed.md",
+    "Daratrine/02_Atlas_Folk/02.2_Personagens/Tordan.md",
     "Daratrine/01_Worldbuilding/01.4_Economia/Economia_em_Gildrat.md",
-    "Geral/Game Jam/Game Jam.md",
-    "Geral/Game Jam/Estrutura Geral da Narrativa.md",
-    "Geral/Game Jam/Estrutura Base das Cenas VN2 e VN3.md",
-    "Geral/Game Jam/Diálogos.md",
-    "Daratrine/02_Atlas_Folk/02.2_Protagonistas/T_protagonistas.md",
-    "Geral/ByeByeJonny/Próximos passos.md",
-    "Geral/Softwares_relevantes.md",
-    "Geral/ByeByeJonny",
-    "Pasted image 20260618112344.png",
-    "Untitled-2026-06-17-0820.png",
-    "Geral/Game Jam",
-    "{5C16012D-17FF-4B45-B29E-9D5173376014}.png",
-    "Externalizar_documento/Roteiro.md",
-    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/Pesquisa.md",
-    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat/Gildrat falta.md",
+    "Daratrine/02_Atlas_Folk/02.1_Racas_e_Especies/Anões.md",
+    "Daratrine/02_Atlas_Folk/02.1_Racas_e_Especies/Ignotos.md",
+    "Daratrine/01_Worldbuilding/01.7_Tecnologia/Tecnologia.md",
     "Daratrine/01_Worldbuilding/01.7_Tecnologia/Futuro Tecnológico de Gildrat (não presente no período atual do jogo).md",
-    "Daratrine/01_Worldbuilding/01.4_Economia/Alimentação.md",
-    "Externalizar_documento",
-    "Daratrine/00_Foundation/00.1_Core_Concept/1.Core _Concept.md",
-    "Daratrine/0100_Imagens/{B08D7607-75D5-4964-A7A5-9CC4C6C2A897}.png",
-    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Ekios",
-    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat",
-    "Geral",
-    "Daratrine/0100_Imagens/Pasted image 20260605100737.png",
-    "Daratrine/0100_Imagens/Pasted image 20260605100810.png",
-    "Sem título.canvas",
-    "Daratrine/01_Worldbuilding/01.3_Geografia_e_Arquitetura/01.3.1_Gildrat/01.3.2_Locais",
-    "Daratrine/0100_Imagens/Pasted image 20260511160348 1.png"
+    "Daratrine/000_Entrevistas/Entrevista 1.md",
+    "Daratrine/000_Entrevistas/Dúvidas Quests.md",
+    "Daratrine/00_Foundation/00.1_Core_Concept/Core _Concept.md",
+    "Daratrine/03_Narrative/12_A_Voz-do-Conselho.NSD.fluxo-cenas.revisado.md"
   ]
 }
