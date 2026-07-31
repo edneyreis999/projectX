@@ -174,7 +174,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -190,7 +191,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "63e34d02d7a41ec0",
+  "active": "3f289813f9dfdf8e",
   "lastOpenFiles": [
     "docs/GDD/01_Worldbuilding/GUIA-VISUAL-WORLDBUILDING.excalidraw",
     "Sem título 1.canvas",
