@@ -67,18 +67,24 @@
       <sections><section anchor="inventário-factual" tokens="390" purpose="Resume loop, regras, feedback, tuning, conflito de EXP e risco de plugin duplicado." /></sections>
     </document>
     <document id="domain-narrative-designer" path="docs/domains/narrative-designer/README.md" type="domain-inventory" priority="high">
-      <summary>Inventário de personagens, premissa, cânone, lugares, lore, arcos, vozes, rotas e finais.</summary>
-      <use_when>Use ao localizar o escopo da investigação narrativa e suas fontes comuns preservadas.</use_when>
+      <summary>Inventário de personagens, premissa, cânone, lugares, lore, arcos, vozes, rotas e finais, incluindo a grafia canônica de Rheed.</summary>
+      <use_when>Use ao localizar o escopo da investigação narrativa, confirmar o nome de Rheed ou interpretar a metáfora de Thorin.</use_when>
       <not_covered>Não resolve divergências entre finais antigos e intenção de 2026 nem comprova reachability, tom ou pacing.</not_covered>
-      <keywords><keyword>narrativa personagens cânone lore arcos diálogos rotas finais</keyword></keywords>
-      <sections><section anchor="inventário-factual" tokens="420" purpose="Sintetiza cânone, personagens, lugares, vozes, rotas e conflitos preservados." /></sections>
+      <keywords><keyword>narrativa personagens cânone Rheed Reed final.png Thorin montanha metáfora lore arcos diálogos rotas finais</keyword></keywords>
+      <sections>
+        <section anchor="inventário-factual" tokens="420" purpose="Sintetiza cânone, personagens, lugares, vozes, rotas e conflitos preservados." />
+        <section anchor="cânone-de-rheed-e-metáfora-de-thorin" tokens="110" purpose="Define Rheed como grafia canônica, preserva o filename legado e limita a montanha de Thorin ao sentido metafórico." />
+      </sections>
     </document>
     <document id="domain-ux-ui-designer" path="docs/domains/ux-ui-designer/README.md" type="domain-inventory" priority="medium">
-      <summary>Inventário estático de fluxos UX, HUD, diálogos, feedback, save/load e recursos de acessibilidade.</summary>
-      <use_when>Use ao investigar superfícies e estados de interface ou planejar validação humana de UX.</use_when>
+      <summary>Inventário estático de fluxos UX, HUD, diálogos, feedback, save/load, acessibilidade e escolha de nome.</summary>
+      <use_when>Use ao investigar superfícies e estados de interface, o fluxo qualSeuNome ou planejar validação humana de UX.</use_when>
       <not_covered>Não certifica acessibilidade, legibilidade, contraste, input, timing, percepção ou restauração de saves.</not_covered>
-      <keywords><keyword>UX UI HUD menus diálogos feedback save acessibilidade</keyword></keywords>
-      <sections><section anchor="inventário-factual" tokens="330" purpose="Resume fluxos, contagens de diálogo, HUD, save e recursos de acessibilidade." /></sections>
+      <keywords><keyword>UX UI HUD menus diálogos feedback save acessibilidade qualSeuNome Confirmar Corrigir Dulgarin Name Input Cancel</keyword></keywords>
+      <sections>
+        <section anchor="inventário-factual" tokens="330" purpose="Resume fluxos, contagens de diálogo, HUD, save e recursos de acessibilidade." />
+        <section anchor="contrato-da-escolha-qualseunome" tokens="110" purpose="Preserva os efeitos de Confirmar, Corrigir, Name Input e Cancel no fluxo qualSeuNome." />
+      </sections>
     </document>
     <document id="domain-gameplay-engineer" path="docs/domains/gameplay-engineer/README.md" type="domain-inventory" priority="high">
       <summary>Inventário de mecânicas, estado, Common Events, callers, plugins, integrações e persistência.</summary>
@@ -109,13 +115,15 @@
       <sections><section anchor="inventário-factual" tokens="400" purpose="Expõe valores, conflitos de progressão/TCR, recompensas, shop e sources/sinks." /></sections>
     </document>
     <document id="domain-scene-presentation-designer" path="docs/domains/scene-presentation-designer/README.md" type="domain-inventory" priority="medium">
-      <summary>Inventário de apresentação e lifecycle EX/VN/Cutscene da Noite da História entre Map022, Map046 e Map045.</summary>
-      <use_when>Use ao investigar cenas ou alterar eventos, sessão VN, locks, transferências e continuidade da Noite da História.</use_when>
+      <summary>Inventário de apresentação, lifecycle EX/VN/Cutscene, composição de Map046 e teardown de efeitos em Map022.</summary>
+      <use_when>Use ao investigar cenas ou alterar eventos, Pictures, busts, Cut-In, efeitos transitórios, sessão VN, locks, transferências e continuidade da Noite da História.</use_when>
       <not_covered>Não certifica composição, pacing ou execução; a rota e o pareamento de sessão/locks ainda exigem Playtest.</not_covered>
-      <keywords><keyword>cenas staging EX VN Cutscene Map022 Map046 Map045 EnterVisualNovel FinishVisualNovel EV030 V106</keyword></keywords>
+      <keywords><keyword>cenas staging EX VN Cutscene Map022 Event31 Event30 balão teardown efeitos transitórios Map046 Rheed criança GraphicChange Picture 1 Picture 2 Picture 10 Cut-In B11 Map045 EnterVisualNovel FinishVisualNovel EV030 V106</keyword></keywords>
       <sections>
         <section anchor="inventário-factual" tokens="390" purpose="Resume chamadas de staging/câmera, busts, backgrounds, waits e cues." />
         <section anchor="lifecycle-exvncutscene-da-noite-da-história" tokens="200" purpose="Define as fronteiras EX/VN, pares de sessão e locks, guarda de START e transferência terminal." />
+        <section anchor="composição-e-cleanup-de-pictures-em-map046" tokens="160" purpose="Define posições de Rheed/criança, GraphicChange sem reentrada, reconvergência e cleanup da Picture 10 antes de B11." />
+        <section anchor="teardown-de-efeitos-transitórios-em-map022" tokens="130" purpose="Distingue teardown do Event31 do cleanup seletivo do balão no Event30." />
       </sections>
     </document>
     <document id="domain-audio-designer" path="docs/domains/audio-designer/README.md" type="domain-inventory" priority="medium">
@@ -136,11 +144,14 @@
       </sections>
     </document>
     <document id="domain-technical-artist" path="docs/domains/technical-artist/README.md" type="domain-inventory" priority="medium">
-      <summary>Inventário de formatos visuais, animações, tilesets, referências ausentes e riscos de memória/performance.</summary>
-      <use_when>Use ao investigar a fronteira entre assets visuais e runtime ou planejar validação técnica de arte.</use_when>
+      <summary>Inventário de formatos visuais, animações, tilesets, referências, riscos de performance e contrato de intake de assets.</summary>
+      <use_when>Use ao investigar a fronteira asset-runtime, integrar um asset visual ou planejar validação técnica de arte.</use_when>
       <not_covered>Não mede residência, cache, frame pacing ou rendering e não certifica qualidade visual/performance.</not_covered>
-      <keywords><keyword>arte técnica assets formatos animações efeitos atlases performance</keyword></keywords>
-      <sections><section anchor="inventário-factual" tokens="390" purpose="Resume formatos, animações, tilesets, referências quebradas e estimativas não-runtime." /></sections>
+      <keywords><keyword>arte técnica assets intake path case dimensões alpha pivot safe area dependências checksum validação estética formatos animações efeitos atlases performance</keyword></keywords>
+      <sections>
+        <section anchor="inventário-factual" tokens="390" purpose="Resume formatos, animações, tilesets, referências quebradas e estimativas não-runtime." />
+        <section anchor="contrato-de-intake-de-assets-visuais" tokens="130" purpose="Define metadados e checks técnicos de intake separados da validação estética." />
+      </sections>
     </document>
 
     <document id="gdd-overview" path="docs/GDD/GDD.geral.md" type="game-design-document" priority="high">

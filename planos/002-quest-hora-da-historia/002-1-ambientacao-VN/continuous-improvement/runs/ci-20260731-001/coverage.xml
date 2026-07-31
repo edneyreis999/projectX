@@ -1,0 +1,36 @@
+<plan_knowledge_coverage deletion_readiness_claimed="false" lifecycle_validated="false" plan_knowledge_independence="false" schema_version="1" terminal_status="completed-with-blockers">
+  <source_coverage accounted="true" integrity="pass" ledger_files="79" manifest_files="79" material_unread="0"></source_coverage>
+  <knowledge_coverage claims="9" covered_findings="11" deltas="5" disposed_deltas="5" material_findings="11" reconciled_claims="9"></knowledge_coverage>
+  <candidate_coverage applied_or_noop="9" blocked="2" material_candidates="11"></candidate_coverage>
+  <recoverability>
+    <question entrypoint="docs/index.xml" librarian="bibliotecario" question_id="recovery-consumer-vn-contracts" result="pass">
+      <candidate_ref id="ci3-map046-composition"></candidate_ref>
+      <candidate_ref id="ci3-rheed-canon"></candidate_ref>
+      <candidate_ref id="ci3-choice-name-contract"></candidate_ref>
+      <candidate_ref id="ci3-asset-intake-contract"></candidate_ref>
+      <candidate_ref id="ci3-transient-effect-cleanup"></candidate_ref>
+      <candidate_ref id="ci3-validation-ladder"></candidate_ref>
+      <candidate_ref id="ci3-catalog-routing"></candidate_ref>
+      <expected_claim>Recuperar composição Map046 com Pictures 1/2, GraphicChange, reconvergência e cleanup da Picture 10 antes de B11.</expected_claim>
+      <expected_claim>Recuperar cânone Rheed, filename legado Reed final.png e limite metafórico de Thorin.</expected_claim>
+      <expected_claim>Recuperar Confirmar=Dulgarin, Corrigir=Name Input até oito caracteres e Cancel preservado.</expected_claim>
+      <expected_claim>Recuperar intake técnico de assets separado da validação estética.</expected_claim>
+      <expected_claim>Recuperar teardown Event31/Event30 com cleanup seletivo do efeito transitório.</expected_claim>
+      <expected_claim>Recuperar escada de checks estáticos, editor round-trip e Playtest desde New Game.</expected_claim>
+    </question>
+    <question entrypoint="manifest.yaml" librarian="framework-knowledge-librarian" question_id="recovery-package-current-contracts-and-gaps" result="pass">
+      <candidate_ref id="ci3-plan-relocation-lineage"></candidate_ref>
+      <candidate_ref id="ci3-validator-replay-stability"></candidate_ref>
+      <candidate_ref id="ci3-telemetry-separation"></candidate_ref>
+      <candidate_ref id="ci3-safe-rpg-data-writer"></candidate_ref>
+      <expected_claim>Recuperar que plan_directory é identity-bearing, divergência bloqueia e não há protocolo in-place de relocation lineage.</expected_claim>
+      <expected_claim>Recuperar checkpoints imutáveis/replay iterativo e a ausência de política explícita para validator artifacts com generated_at volátil.</expected_claim>
+      <expected_claim>Recuperar que telemetria degradada não altera status funcional.</expected_claim>
+      <expected_claim>Recuperar baseline hash, parse estruturado, menor substituição e restricted diff para dados RPG Maker.</expected_claim>
+    </question>
+  </recoverability>
+  <durable_dependency plan_refs="0" run_namespace_refs="0"></durable_dependency>
+  <blockers>
+    <blocker material="true" reason="package-promotion-envelope-rejected-by-user"></blocker>
+  </blockers>
+</plan_knowledge_coverage>

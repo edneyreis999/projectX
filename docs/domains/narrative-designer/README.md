@@ -35,6 +35,17 @@ Evidência aceita: packet `narrative-designer-001` revisão 1. Classificação:
   Obsidian mistura intenção aprovada, duplicatas/templates e material de Game
   Jam não relacionado. Fontes: `p`, `g`, `q`, `o`, `x`.
 
+## Cânone de Rheed e metáfora de Thorin
+
+`Rheed` é a grafia canônica do personagem em textos e assets novos. O arquivo
+legado `Reed final.png` mantém nome e caminho inalterados enquanto continuar
+sendo referenciado; a diferença de grafia é uma compatibilidade técnica, não
+uma variante narrativa do nome.
+
+A associação verbal entre Thorin e uma montanha é uma metáfora de presença,
+força ou firmeza. Ela não estabelece que Thorin seja literalmente uma montanha
+nem adiciona esse vínculo ao lore do mundo.
+
 ## Coverage materializado
 
 | Requisito | Profundidade | Estado | Evidência |
