@@ -3,10 +3,10 @@ title: "task-2.1 - Migração EX/VN da Noite da História"
 type: loki-task
 doc_id: "001-cena-coreto-task-2.1"
 version: "1.0.0"
-status: pending
+status: completed
 phase: fase2
 task_id: task-2.1
-last_updated: "2026-07-28"
+last_updated: "2026-07-30"
 scope: "Migrar a cena Map022 → Map046/VN → Map022 → Map045 sem writes diretos de estágio."
 ---
 
@@ -60,8 +60,9 @@ task_validation:
   primary_route:
     type: deterministic
     validator_ref: planos/001-cena-coreto-nova-arquitetura/builds/fase2/validate-route.mjs
-  evidence_refs: []
-  status: pending
+  evidence_refs:
+    - planos/001-cena-coreto-nova-arquitetura/builds/administrative-terminal-evidence-v1.json
+  status: passed
 ```
 
 ## Validators
@@ -78,22 +79,25 @@ task_validation:
 ```yaml
 loki_task_state:
   schema_version: 1
-  status: pending
+  status: completed
   task_ref: planos/001-cena-coreto-nova-arquitetura/task-2.1.md
   plan_state_ref: planos/001-cena-coreto-nova-arquitetura/tasks.md#loki_run_state
   target_decision_refs: [frontend/data/Map022.json, frontend/data/Map045.json, frontend/data/Map046.json]
-  files_expected: []
+  files_expected: [frontend/data/Map022.json, frontend/data/Map045.json, frontend/data/Map046.json]
   write_owner: technical-implementer
   target_files: [frontend/data/Map022.json, frontend/data/Map045.json, frontend/data/Map046.json]
   orchestrator_exception_reason: ""
   validation_owner: runtime-qa
   task_validation_ref: planos/001-cena-coreto-nova-arquitetura/task-2.1.md#task_validation
-  completion_evidence_refs: []
-  validation_cycle_refs: []
+  completion_evidence_refs:
+    - planos/001-cena-coreto-nova-arquitetura/builds/administrative-terminal-evidence-v1.json
+    - retrospetivas/fase2/retrospectiva-fase2-cena-coreto-nova-arquitetura.md
+  validation_cycle_refs:
+    - planos/001-cena-coreto-nova-arquitetura/builds/administrative-terminal-evidence-v1.json
   retry_refs: []
   learned_ref: null
   blockers: []
-  limitations: []
-  next_action: "Dispatch after task-1.1 validates."
-  blocked_by: [task-1.1]
+  limitations: ["Completion was reconciled manually because the legacy run identity is non-canonical under the current Loki contract."]
+  next_action: "none"
+  blocked_by: []
 ```

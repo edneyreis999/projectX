@@ -32,6 +32,29 @@ Classificação: **conteúdo e estado estáticos; Playtest pendente**.
   pós-condições. Falha e auto-complete estão off; retry/fail têm cobertura
   escassa. Fontes: `q`, `d`, `p`.
 
+## Contrato canônico: Noite da História
+
+`Coreto_QuestCore` é a autoridade canônica da quest
+`noite-da-historia`. Seu estado durável usa a variável
+`V106 v_qNoiteDaHistoria_stage`:
+
+| Estado | Significado |
+| --- | --- |
+| `0` | Quest não iniciada |
+| `10` | Personagens sentados; entrada na VN |
+| `20` | VN concluída; retomada do encerramento físico |
+| `90` | Chegada ao Map045 concluída |
+
+As transições canônicas são `START` (`0` → `10`), `COMPLETE_VN` (`10` →
+`20`) e `ARRIVE_MAP045` (`20` → `90`). A quest PKD/SQSM
+`assistirNoiteHistoria` é somente uma projeção idempotente desse estado no
+journal; não é autoridade de progresso.
+
+A ordem de plugins que preserva o contrato é `PKD` → `QuestCore` → `QuestVN`
+→ `Cutscene`. Use este contrato ao alterar o registro da quest, suas
+transições, a projeção no journal, a variável de estágio ou essa ordem de
+plugins.
+
 ## Coverage materializado
 
 | Requisito | Profundidade | Estado | Evidência |

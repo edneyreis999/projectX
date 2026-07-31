@@ -3,10 +3,10 @@ title: "task-1.1 - Adaptador PKD e registro canônico"
 type: loki-task
 doc_id: "001-cena-coreto-task-1.1"
 version: "1.0.0"
-status: pending
+status: completed
 phase: fase1
 task_id: task-1.1
-last_updated: "2026-07-28"
+last_updated: "2026-07-30"
 scope: "Adaptar QuestCore ao PKD e declarar a máquina de estados noite-da-historia."
 ---
 
@@ -74,8 +74,9 @@ task_validation:
   primary_route:
     type: deterministic
     validator_ref: planos/001-cena-coreto-nova-arquitetura/builds/fase1/validate-architecture.mjs
-  evidence_refs: []
-  status: pending
+  evidence_refs:
+    - planos/001-cena-coreto-nova-arquitetura/builds/administrative-terminal-evidence-v1.json
+  status: passed
 ```
 
 ## Validators
@@ -93,22 +94,25 @@ task_validation:
 ```yaml
 loki_task_state:
   schema_version: 1
-  status: pending
+  status: completed
   task_ref: planos/001-cena-coreto-nova-arquitetura/task-1.1.md
   plan_state_ref: planos/001-cena-coreto-nova-arquitetura/tasks.md#loki_run_state
   target_decision_refs: [frontend/js/plugins/Coreto_QuestCore.js, frontend/js/plugins.js, frontend/data/CoretoQuests.json, frontend/data/System.json]
-  files_expected: []
+  files_expected: [frontend/js/plugins/Coreto_QuestCore.js, frontend/js/plugins.js, frontend/data/CoretoQuests.json, frontend/data/System.json]
   write_owner: technical-implementer
   target_files: [frontend/js/plugins/Coreto_QuestCore.js, frontend/js/plugins.js, frontend/data/CoretoQuests.json, frontend/data/System.json]
   orchestrator_exception_reason: ""
   validation_owner: runtime-qa
   task_validation_ref: planos/001-cena-coreto-nova-arquitetura/task-1.1.md#task_validation
-  completion_evidence_refs: []
-  validation_cycle_refs: []
+  completion_evidence_refs:
+    - planos/001-cena-coreto-nova-arquitetura/builds/administrative-terminal-evidence-v1.json
+    - retrospetivas/fase2/retrospectiva-fase2-cena-coreto-nova-arquitetura.md
+  validation_cycle_refs:
+    - planos/001-cena-coreto-nova-arquitetura/builds/administrative-terminal-evidence-v1.json
   retry_refs: []
   learned_ref: null
   blockers: []
-  limitations: []
-  next_action: "Dispatch preflighted technical-implementer."
+  limitations: ["Completion was reconciled manually because the legacy run identity is non-canonical under the current Loki contract."]
+  next_action: "none"
   blocked_by: []
 ```

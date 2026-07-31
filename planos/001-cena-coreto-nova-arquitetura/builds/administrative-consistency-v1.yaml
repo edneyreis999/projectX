@@ -1,0 +1,34 @@
+administrative_consistency:
+  schema_version: 1
+  status: passed
+  checked_at_utc: "2026-07-30T19:34:56Z"
+  scope: "Manual administrative reconciliation; not a Loki consistency packet v2"
+  plan_status: completed-with-limitations
+  task_statuses:
+    task-1.1: completed
+    task-2.1: completed
+  artifact_digests:
+    planos/001-cena-coreto-nova-arquitetura/tasks.md: sha256:411c57be8d7dab0c1a01cb25f6bd40f265a486fb567bc789722c0476f6af1618
+    planos/001-cena-coreto-nova-arquitetura/task-1.1.md: sha256:478422e800965d0e450367bc30de67da9c476bc981c21ca0ad088af9f3c1254a
+    planos/001-cena-coreto-nova-arquitetura/task-2.1.md: sha256:a8b278561f264d21028aa30f8e218923783b09fdff1e36255b3dba3cb2105c59
+    planos/001-cena-coreto-nova-arquitetura/analise-tecnica.md: sha256:ef4b78b32f480bf1e87320226837253e24b2dcadab9968fc59484c60d2fad6fb
+    planos/001-cena-coreto-nova-arquitetura/builds/administrative-terminal-evidence-v1.json: sha256:691e637ae3ccc8d20b91e04b26b096262a5436a49163e915d2ba261f32aa7b7f
+    planos/001-cena-coreto-nova-arquitetura/builds/administrative-reconciliation-v1.yaml: sha256:3df40532312bf5b0e4483fbe4bfe7ad8f2adb780a23fc83f5346197e49f79b33
+    planos/001-cena-coreto-nova-arquitetura/builds/administrative-dashboard-v1.md: sha256:cdc946392fd7fe11fa1bf84587a0a4480bfda814d21e1b547305433fddc5088a
+  validator_digests:
+    planos/001-cena-coreto-nova-arquitetura/builds/fase1/validate-architecture.mjs: sha256:14ea5f90dc5d4f27b8e7b9e932140147a8d36bace364e84221475927bc2d3ef1
+    planos/001-cena-coreto-nova-arquitetura/builds/fase2/validate-route.mjs: sha256:64e514b35ad2956b369b530293eb52264a4fa8caf09775b9f2f851bfcbc36be5
+  validator_results:
+    phase1: passed
+    phase2: passed
+    negative_guard_fixture: passed-by-rejection
+    negative_else_branch_fixture: passed-by-rejection
+    syntax: passed
+    json_parse: passed
+    git_diff_check: passed
+  human_gates:
+    plugin_manager: passed-user-confirmed
+    new_game_playtest_matrix: passed-user-confirmed
+  legacy_contract_validation:
+    status: intentionally-not-applicable
+    reason: "The historical run identity is non-canonical and was preserved rather than rewritten as a current Loki v3 run."

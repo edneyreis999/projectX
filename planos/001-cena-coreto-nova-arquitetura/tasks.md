@@ -3,9 +3,9 @@ title: "Reestruturação EX/VN — Noite da História"
 type: loki-action-plan
 doc_id: "001-cena-coreto-nova-arquitetura"
 version: "1.0.0"
-status: running
+status: completed-with-limitations
 created: "2026-07-28"
-last_updated: "2026-07-28"
+last_updated: "2026-07-30"
 scope: "DAG e decisões de alvo para a migração Map022 → Map046/VN → Map045."
 ---
 
@@ -58,7 +58,7 @@ execution_id: loki-execution-v2:d00981de73a3d0fbd4fa7be081b5e8ae6e7292ef6de06afe
 
 | Task | Title | Dependencies | Write Owner | Validators | Status |
 | --- | --- | --- | --- | --- | --- |
-| task-1.1 | Adaptador PKD e registro canônico | none | technical-implementer | node/JSON/plugin scan | pending |
+| task-1.1 | Adaptador PKD e registro canônico | none | technical-implementer | node/JSON/plugin scan | completed |
 
 ### Fase 2 - EX/VN event route
 
@@ -67,7 +67,7 @@ execution_id: loki-execution-v2:d00981de73a3d0fbd4fa7be081b5e8ae6e7292ef6de06afe
 
 | Task | Title | Dependencies | Write Owner | Validators | Status |
 | --- | --- | --- | --- | --- | --- |
-| task-2.1 | Migração EX/VN da Noite da História | task-1.1 | technical-implementer | JSON/route scan | pending |
+| task-2.1 | Migração EX/VN da Noite da História | task-1.1 | technical-implementer | JSON/route scan | completed |
 
 ## Execution Order
 
@@ -99,20 +99,31 @@ loki_run_state:
   schema_version: 3
   run_id: loki-run-v2:86550d0a2c2b24415570cf9599eeed021f6cd88b7a3fd0e51a014839fb5274f1
   execution_id: loki-execution-v2:d00981de73a3d0fbd4fa7be081b5e8ae6e7292ef6de06afe9214b7f39bbdbe2c
-  command_identity_digest: sha256:pending-reconciliation
-  execution_input_digest: sha256:pending-reconciliation
+  command_identity_digest: unavailable:legacy-noncanonical-run
+  execution_input_digest: unavailable:legacy-noncanonical-run
   audit_configuration: {schema_version: 1, frequency: phase, source: default, policy_digest: sha256:9d771e1bd366103323316f2db51069775cc17e17859fed9c2ac0167a7b02440e}
-  status: running
+  status: completed-with-limitations
   task_refs: [planos/001-cena-coreto-nova-arquitetura/task-1.1.md, planos/001-cena-coreto-nova-arquitetura/task-2.1.md]
   audit_checkpoint_refs: []
-  result_ref: planos/001-cena-coreto-nova-arquitetura/builds/result-v3.yaml
-  dashboard_ref: planos/001-cena-coreto-nova-arquitetura/builds/dashboard-v3.md
-  consistency_packet_ref: planos/001-cena-coreto-nova-arquitetura/builds/consistency-v2.yaml
-  terminal_evidence_refs: []
+  result_ref: planos/001-cena-coreto-nova-arquitetura/builds/administrative-reconciliation-v1.yaml
+  dashboard_ref: planos/001-cena-coreto-nova-arquitetura/builds/administrative-dashboard-v1.md
+  consistency_packet_ref: planos/001-cena-coreto-nova-arquitetura/builds/administrative-consistency-v1.yaml
+  terminal_evidence_refs:
+    - planos/001-cena-coreto-nova-arquitetura/builds/administrative-terminal-evidence-v1.json
+    - retrospetivas/fase2/retrospectiva-fase2-cena-coreto-nova-arquitetura.md
   execution_metrics_ref: null
   execution_metrics_digest: null
   execution_metrics_status: unavailable
-  execution_metrics_degradation_reason: "publication failure: metrics have not been published yet"
-  next_action: "Create writer preflight and dispatch task-1.1."
-  state_digest: sha256:pending-reconciliation
+  execution_metrics_degradation_reason: "Legacy run never published canonical metrics; manual reconciliation does not fabricate telemetry."
+  next_action: "none; functional scope and manual administrative reconciliation are complete"
+  state_digest: unavailable:manual-administrative-reconciliation
 ```
+
+## Administrative Reconciliation
+
+The feature and both tasks are complete. This status was reconciled manually on
+2026-07-30 after both deterministic validators passed and the user reconfirmed
+the Plugin Manager and New Game Playtest gates. The original Loki run identity
+remains non-canonical under the current contract, so this plan is intentionally
+`completed-with-limitations` rather than represented as a contract-valid v3
+resume. See `builds/administrative-reconciliation-v1.yaml`.

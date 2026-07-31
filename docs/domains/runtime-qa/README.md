@@ -33,6 +33,21 @@ implementar correções.
 - **Risco — gates:** permanecem pendentes os gates de runtime, fluxo e
   save/load de quests e Playtest de EXP. Fonte: `d`.
 
+## Escada de validação em três camadas
+
+Valide mudanças de eventos e fluxos nesta ordem, sem pular camadas:
+
+1. Execute checks determinísticos e estáticos sobre dados, referências,
+   estrutura, comandos e invariantes conhecidos.
+2. Abra o projeto no editor do RPG Maker MZ, salve e reabra para verificar o
+   round-trip dos dados editados.
+3. Execute um Playtest completo a partir de **New Game**, percorrendo a rota e
+   observando reentrada, locks, save/load e comportamento perceptível.
+
+Checks estáticos nunca substituem o round-trip do editor nem a validação em
+runtime. Da mesma forma, o editor não comprova a execução completa da rota. Só
+o conjunto das três camadas sustenta uma afirmação sobre o fluxo em jogo.
+
 ## Coverage materializado
 
 | Requisito | Profundidade | Estado | Limite observado |

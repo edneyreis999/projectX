@@ -1,0 +1,27 @@
+administrative_reconciliation:
+  schema_version: 1
+  status: completed-with-limitations
+  reconciled_at_utc: "2026-07-30T19:34:56Z"
+  plan_ref: planos/001-cena-coreto-nova-arquitetura/tasks.md
+  task_results:
+    - {task_ref: planos/001-cena-coreto-nova-arquitetura/task-1.1.md, status: completed}
+    - {task_ref: planos/001-cena-coreto-nova-arquitetura/task-2.1.md, status: completed}
+  terminal_evidence_ref: planos/001-cena-coreto-nova-arquitetura/builds/administrative-terminal-evidence-v1.json
+  retrospective_ref: retrospetivas/fase2/retrospectiva-fase2-cena-coreto-nova-arquitetura.md
+  validator_results:
+    phase1: passed
+    phase2: passed
+    negative_fixtures: passed-by-rejection
+    syntax_and_json: passed
+  human_gates:
+    plugin_manager: passed-user-confirmed
+    new_game_playtest_matrix: passed-user-confirmed
+  legacy_identity:
+    status: non-canonical
+    observed_policy_digest: sha256:9d771e1bd366103323316f2db51069775cc17e17859fed9c2ac0167a7b02440e
+    current_canonical_policy_digest: sha256:e3aeea217ca7881865de40d29e0e28e95bc32f4255e2488597801a8909e3bd78
+    consequence: "The historical run is not a valid current Loki resume and was not rewritten as one."
+  metrics:
+    status: unavailable
+    reason: "Legacy run did not publish canonical metrics; none were fabricated."
+  next_action: none
