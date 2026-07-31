@@ -1,0 +1,38 @@
+execution_audit_checkpoint:
+  schema_version: 1
+  audit_id: "execution-audit-v1:4c64e5870f213fea063d6505502071397eaa5b0469f31853a1aa6cebaa29948e"
+  run_id: "loki-run-v2:b625625fc3f771ba1ccf751c357ec0395a82e2997bd04a06a97ce5b1867033a1"
+  execution_id: "loki-execution-v2:f767776e80492869e3f1e145cf82bf53276a71d7dde3f90818e344aa33410d9a"
+  policy_digest: "sha256:e3aeea217ca7881865de40d29e0e28e95bc32f4255e2488597801a8909e3bd78"
+  frequency: "phase"
+  boundary_type: "phase"
+  boundary_ref: "planos/004-ambientacao-VN/tasks.md#fase-1-implementacao-e-validacao-estatica"
+  iteration: 0
+  predecessor_audit_ref: null
+  replay: false
+  replay_cause: null
+  membership_refs:
+    - "planos/004-ambientacao-VN/task-1.1.md"
+  coverage_digest: "sha256:4b2b81fa8f96379db0c920bd1f927987f137655eaacfc94f98e66ad8429055c9"
+  covered_handoff_refs:
+    - "planos/004-ambientacao-VN/builds/fase1/task-1.1-completion.json"
+  covered_target_digests:
+    - "frontend/data/Map046.json@sha256:861f6c6fe4c5953f37fed169814650d1bcc5a8e6ea2f4e82b446ab645c37b892"
+  primary_validation_refs:
+    - "planos/004-ambientacao-VN/builds/fase1/task-1.1-validation.json"
+  final_validator_refs:
+    - "planos/004-ambientacao-VN/builds/fase1/task-1.1-validation.json"
+  auditor_identity: "map046-phase-auditor"
+  writer_identities:
+    - "technical-implementer"
+  auditor_run_refs:
+    - "planos/004-ambientacao-VN/preflights/run-73b3d740b838fa669b29aac69582aecf/map046-phase-auditor/preflight-v1.md"
+    - "planos/004-ambientacao-VN/builds/audits/phase/boundary-4d327cb7baf73d6b3cc8f72d624de5df/auditor-report-v1.json"
+  finding_refs: []
+  correction_refs: []
+  evidence_refs:
+    - "planos/004-ambientacao-VN/builds/fase1/task-1.1-completion.json"
+    - "planos/004-ambientacao-VN/builds/fase1/task-1.1-validation.json"
+    - "planos/004-ambientacao-VN/builds/audits/phase/boundary-4d327cb7baf73d6b3cc8f72d624de5df/auditor-report-v1.json"
+  status: "approved"
+  next_action: "Executar o Playtest humano RQ-P01-RQ-P09 em 1280x720."

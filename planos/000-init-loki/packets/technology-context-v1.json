@@ -1,0 +1,32 @@
+{
+  "schema": "loki_init_research_packet",
+  "schema_version": "1",
+  "run_id": "loki-init-20260727-001",
+  "packet_id": "technology-context-001",
+  "revision": 1,
+  "sequence": 2,
+  "kind": "technology",
+  "investigator": "loki-init-orchestrator",
+  "invocation_id": "technology-discovery-001",
+  "sources_attempted": [
+    {"ref": "rmmz-signature", "locator": "frontend/game.rmmzproject, frontend/index.html, frontend/data/{System,CommonEvents,MapInfos}.json, frontend/js/plugins.js, frontend/js/rmmz_*.js", "outcome": "read/parse-valid"},
+    {"ref": "plugins-envelope", "locator": "frontend/js/plugins.js", "outcome": "editor-structural; config-extracted"},
+    {"ref": "typescript", "locator": "package.json, tsconfig*.json, frontend/typescript/**, frontend/__tests__/**", "outcome": "mapped"},
+    {"ref": "local-guidance", "locator": "AGENTS.md supplied in session", "outcome": "read"}
+  ],
+  "findings": [
+    {"id": "tech.engine", "type": "fact", "statement": "frontend is an RPG Maker MZ project with local engine source and standard database/event surfaces.", "source_refs": ["rmmz-signature"], "confidence": "high"},
+    {"id": "tech.project-type", "type": "inference", "statement": "The supported project type is game-dev.", "source_refs": ["rmmz-signature", "local-guidance"], "confidence": "high"},
+    {"id": "tech.plugins", "type": "fact", "statement": "plugins.js contains 63 entries, 46 active; active families include VisuStella Core/Battle/ATB/TP/Message/Save and project-specific Coreto plugins.", "source_refs": ["plugins-envelope"], "confidence": "high"},
+    {"id": "tech.data-scale", "type": "fact", "statement": "Static structured inventory found 48 maps, 200 Common Events, 8 parallel Common Events, 102 switch slots and 110 variable slots.", "source_refs": ["rmmz-signature"], "confidence": "high"},
+    {"id": "tech.typescript", "type": "fact", "statement": "TypeScript, Jest and a small domain/application/dto layout coexist with RPG Maker plugins and data.", "source_refs": ["typescript"], "confidence": "high"},
+    {"id": "tech.validation-limit", "type": "risk", "statement": "Static inventory cannot validate gameplay, timing, audio, visuals, input, integration, or save/load restoration; Playtest/human validation remains pending.", "source_refs": ["rmmz-signature", "plugins-envelope"], "confidence": "high"}
+  ],
+  "technology_skills": ["rpg-maker-mz-project-inventory", "rpg-maker-mz-visustella-plugin-index"],
+  "sensitive_surfaces": ["frontend/data/**", "frontend/js/**", "frontend/audio/**", "frontend/img/**", "frontend/effects/**", "frontend/save/**", "frontend/typescript/**"],
+  "validators": ["JSON parse", "plugins.js envelope", "structured plugin extraction", "docs index/link validation", "write-boundary audit"],
+  "gates": ["human-validation for runtime/perceptible behavior"],
+  "coverage_delta": [],
+  "publication_intent": "Publish factual technology context and validation boundaries.",
+  "continuation": {"status": "complete", "cursor": "technology-discovery-complete"}
+}

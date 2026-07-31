@@ -1,0 +1,31 @@
+{
+  "schema":"loki_init_publication_batch",
+  "schema_version":"1",
+  "run_id":"loki-init-20260727-001",
+  "batch_id":"publication-batch-001",
+  "calling_workflow":"loki-init",
+  "write_mode":"init-publication-batch",
+  "idempotency_key":"loki-init-20260727-001:publication-batch-001",
+  "batch_hash":"6e1bbd1dfae15fe1a5941d33ace7f41cbd97061a626d859f89ae7bd31472d081",
+  "lifecycle":"committed",
+  "previous_checkpoint_ref":"operations/bootstrap-001.json#committed",
+  "before_state_hash":"92a8ff1844af94b0dc3828c4fea06344c96936923640924c1d64adf5fa6dc954",
+  "packet_refs":[
+    "runtime-qa-001@1#f01896c7bebda1157e47c8bebe4c03ec2981f93989f97bf2427b291d2f23c6ab","technical-implementer-001@1#920bbb0464aec8981cabbfcf42d53ad29cdb73a030d100c1a3bc0249e58d462e","game-product-owner-001@1#2fbcabc8300b102e2dd976f8b2270037d85cf4b27a8c3fe4b15dd142fba69be6","game-business-analyst-001@1#c4cd63bceb4e15d1689869ec1f90467865247ee128adbaa52c3619d873d4d837","game-designer-001@1#31d6baffc86e34e90000f68449db092ea18d82f8f620f32be70ad0376a9558be","narrative-designer-001@1#33b29e7a9ce9b86518b82787bbc55aad471c39abf91504cb6d26f34e6911ddb0","ux-ui-designer-001@1#009430d193631ec1d66f2321937209b07344ad741aea4dcbcbd9e9d32d693dff","gameplay-engineer-001@1#32f53f62eaaf62696ea1e3f4f64cd211bff3657464fe176d3c2e1417927631c3","narrative-qa-001@1#bf5c061b05cf8b70b4280bf866db6427f7250f7db0ad12e3ba325d895f611d2b","level-designer-001@1#17f4f619b585215957c06c592499caae4afe251f30e4b9a410e2902c115ee50e","balance-economy-designer-001@1#9497312b1bdc22b2d9117a47aaa8d77769f1bd7116201e92874e5d1770904c58","scene-presentation-designer-001@1#ee0179de3c40f673a1c1650e950faf931e4668ffd3fae273999f523c2188c82c","audio-designer-001@1#66881696635cfd460fbfd867822e50b45ad3f0dcace446d7abc65fba15a68c8e","quest-content-designer-001@1#7cbd7491ca6bb7361b2dc5cecfd43df443da93116e20f62a9f991a1e542e9568","technical-artist-001@1#911a8939b5c894d9299ba6c2789db570a0f23483ca4d7a9d67be94e5e5734dc6"
+  ],
+  "packet_paths":"planos/000-init-loki/packets/*-v1.json; domain packets only; verify hashes above",
+  "acceptance_registry_refs":["loki-init-state.json (wave 1)","acceptance/wave-02.json","acceptance/wave-03.json","acceptance/wave-04.json","acceptance/wave-05.json"],
+  "expected_coverage":"all 15 domains terminal at required depth; preserve human/runtime gates",
+  "targets":["docs/domains/*/README.md","docs/domains/*/*.md","docs/index.xml"],
+  "allowed_writes":["docs/**"],
+  "forbidden_writes":["planos/000-init-loki/**","frontend/**","Obsidian/**","scripts/**",".agents/**",".codex/**",".claude/**","AGENTS.md","CLAUDE.md","all other paths"],
+  "approval":"granted",
+  "exclusive_write_owner":"catalogador",
+  "validators":["packet hashes","facts/source traceability","coverage disposition","README reconciliation","XML parse","links resolve","write boundary"],
+  "success_destination":"loki-init final reconciliation planning",
+  "failure_destination":"loki-init blocker intake",
+  "catalogador_run_id":"catalogador-publication-001",
+  "after_state_hash":"4c62fdda00730de087ab7975343faeb99e05851e79b318b2986c468b8367edf7",
+  "materialization_registry_ref":"packet-registry-final.json",
+  "lifecycle_evidence":["dispatched checkpoint","write-applied completion","deterministic validators passed","committed ledger checkpoint"]
+}

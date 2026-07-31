@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agentic_agent_pov schema_version="1">
+  <identity>
+    <agent>technical-artist</agent>
+    <mode>proposal-only</mode>
+    <run_id>agentic-004-ambientacao-vn-v1</run_id>
+    <handoff_id>handoff-pov-technical-art-v1</handoff_id>
+    <agent_run_id>agent-run-pov-technical-art-v1</agent_run_id>
+    <task_id>map046-vn-technical-art-pov-v1</task_id>
+    <status>completed</status>
+    <confidence>medium</confidence>
+    <write_scope>
+      <allowed_write>planos/004-ambientacao-VN/analise/agentes/technical-artist.xml</allowed_write>
+      <affected_files>
+        <file>planos/004-ambientacao-VN/analise/agentes/technical-artist.xml</file>
+      </affected_files>
+      <asset_writes>none</asset_writes>
+      <runtime_writes>none</runtime_writes>
+    </write_scope>
+  </identity>
+
+  <domain_context_preflight schema_version="1">
+    <agent>technical-artist</agent>
+    <task_id>map046-vn-technical-art-pov-v1</task_id>
+    <required>true</required>
+    <domain_docs_root>docs/domains/technical-artist</domain_docs_root>
+    <task_topics>
+      <topic>vn-busts-and-expression-variants</topic>
+      <topic>vn-background</topic>
+      <topic>optional-visual-cut-in</topic>
+      <topic>picture-layering-and-cleanup</topic>
+      <topic>texture-memory-and-preload</topic>
+    </task_topics>
+    <task_domain_ids>
+      <domain_id>map:46</domain_id>
+      <domain_id>event:1</domain_id>
+      <domain_id>page:1</domain_id>
+      <domain_id>picture:1</domain_id>
+      <domain_id>picture:2</domain_id>
+      <domain_id>choice:qualSeuNome</domain_id>
+    </task_domain_ids>
+    <relevant_surfaces>
+      <surface>frontend/data/Map046.json event 1 page 1</surface>
+      <surface>frontend/img/pictures/Portraits/Principal</surface>
+      <surface>frontend/img/pictures/Choices</surface>
+      <surface>frontend/img/tilesets</surface>
+      <surface>frontend/img/parallaxes</surface>
+    </relevant_surfaces>
+    <selection_basis>
+      <basis>README-first routing required by lf-domain-context-preflight.</basis>
+      <basis>Exact match to technical-artist visual assets, memory/performance and asset-runtime references.</basis>
+      <basis>Current task evidence substitutes for scene-specific facts absent from the durable domain README.</basis>
+    </selection_basis>
+    <read_attempt>
+      <readme_path>docs/domains/technical-artist/README.md</readme_path>
+      <status>read</status>
+      <reason>Domain root exists; README was read before current project sources.</reason>
+    </read_attempt>
+    <docs_considered>
+      <document path="docs/domains/technical-artist/README.md" routed_by="README" selected="true">The README itself contains the smallest durable technical-art inventory relevant to assets, references and memory risk.</document>
+    </docs_considered>
+    <docs_read>
+      <document path="docs/domains/technical-artist/README.md" freshness_status="uncertain">
+        <relevance>Provides durable static inventory limits, missing-reference risks, memory cautions and the Playtest/profiling boundary.</relevance>
+        <matched_topics>visual-assets-formats; memory-performance; asset-runtime-references</matched_topics>
+        <matched_surfaces>frontend img roots and RPG Maker MZ asset references</matched_surfaces>
+        <freshness_evidence>No revision marker ties the general counts to the current Map046 baseline; scene-specific current sources were inspected separately.</freshness_evidence>
+      </document>
+    </docs_read>
+    <relevant_facts>
+      <fact source_kind="durable-doc" source_locator="docs/domains/technical-artist/README.md">Static asset existence, dimensions and reference counts do not validate rendering, texture residency, frame pacing or visual quality.</fact>
+      <fact source_kind="current-source" source_locator="planos/004-ambientacao-VN/analise/context/inventory.xml">Map046 uses two existing 408x560 busts, picture IDs 1 and 2, anchor 0.5/1.0, 100 percent scale, 20-frame transitions and AutoErase on exits.</fact>
+      <fact source_kind="current-source" source_locator="frontend/data/Map046.json event 1 page 1">The current event has no background, parallax, Cut-In, direct animation or direct audio cue.</fact>
+      <fact source_kind="current-source" source_locator="frontend/data/Map046.json data array">All six Map046 tile-data planes contain zero nonzero tile IDs.</fact>
+    </relevant_facts>
+    <conflicts_with_task_context/>
+    <freshness>
+      <status>uncertain</status>
+      <evidence>Current Map046 hash 73E00628022B18375AEC7AF714181DD3171FDFC8F9EC911CFCC76188F47EB5D2 is authoritative for this POV; the durable README remains general rather than scene-specific.</evidence>
+    </freshness>
+    <missing_context>
+      <item material="false" substitute_locator="planos/004-ambientacao-VN/analise/context/inventory.xml and current asset metadata">
+        <name>No durable scene-specific VN Picture Busts, Visual Choices or background naming policy.</name>
+        <impact>Candidate names and the background integration route remain provisional, but the technical contract can proceed safely.</impact>
+      </item>
+      <item material="false" substitute_locator="human naming gate before asset request">
+        <name>Reed versus Rheed canonical filename token is unresolved.</name>
+        <impact>Existing files must not be renamed and new character-specific candidate names must remain mutually exclusive examples.</impact>
+      </item>
+    </missing_context>
+    <cross_domain_lookup required="false">
+      <destination>none</destination>
+      <requested_domain>none</requested_domain>
+      <requested_topics_or_ids/>
+      <reason>Final emotions, beats and Cut-In dramatic value are intentionally reserved for synthesis rather than treated as missing technical-art context.</reason>
+    </cross_domain_lookup>
+    <result>ready-with-gaps</result>
+    <result_reason>Current structured sources cover every material technical-art requirement; scene-specific durable policy and final naming are non-material gaps protected by explicit human gates.</result_reason>
+    <minimum_next_input>none</minimum_next_input>
+    <durable_doc_gap_handoff required="false">
+      <destination>none</destination>
+      <gap_summary>No documentation write or self-fix is authorized by this task.</gap_summary>
+    </durable_doc_gap_handoff>
+  </domain_context_preflight>
+
+  <asset_contract>
+    <baseline classification="static-only">
+      <project screen_width="1280" screen_height="720" ui_width="1280" ui_height="720" locale="pt_BR"/>
+      <map id="46" width_tiles="17" height_tiles="13" tile_width_px="48" tile_height_px="48" parallax_name="" tileset_id="1">
+        <tile_layers nonzero_tiles="0">All six tile-data planes are empty; World Map tileset slots are configured but not drawn on this map.</tile_layers>
+      </map>
+      <bust_system plugin="VisuMZ_2_VNPictureBusts" active_order="24" anchor_x="0.5" anchor_y="1.0" scale_x_percent="100" scale_y_percent="100" transition_frames="20">
+        <bust picture_id="1" asset="Portraits/Principal/Reed final" width="408" height="560" format="PNG RGBA" exists="true"/>
+        <bust picture_id="2" asset="Portraits/Principal/CriancaOrc_" width="408" height="560" format="PNG RGBA" exists="true"/>
+      </bust_system>
+      <choice_system plugin="PKD_VisualChoices_MZ" menu_id="qualSeuNome">
+        <asset state="normal" path="Choices/InnButton_01" width="388" height="101" format="PNG RGBA" exists="true"/>
+        <asset state="hover" path="Choices/InnButton_00" width="392" height="104" format="PNG RGBA" exists="true"/>
+        <inventory_note>InnButton_02 and InnButton_03 also exist, but their role in this choice is not established by the provided focused inventory.</inventory_note>
+      </choice_system>
+      <background exists="false" parallax_exists="false"/>
+    </baseline>
+
+    <visual_inspection scope="only-two-current-busts">
+      <facts>
+        <fact id="F-VIS-01" source="visual inspection and PNG alpha scan">Reed final.png is a full-body, front-facing three-quarter illustration with hands at the waist, a broad silhouette, warm red/yellow clothing and a smiling mouth; its nonzero-alpha bounds are x=23..384 and y=71..559.</fact>
+        <fact id="F-VIS-02" source="visual inspection and PNG alpha scan">CriancaOrc_.png is a full-body frontal illustration with arms lowered, a narrower silhouette, green skin, brown/cream clothing and a small closed-mouth smile; its nonzero-alpha bounds are x=82..354 and y=94..559.</fact>
+        <fact id="F-VIS-03" source="PNG metadata">Both images are 408x560 Format32bppArgb PNGs, contain transparent, partially transparent and opaque pixels, and reach the bottom row y=559.</fact>
+        <fact id="F-VIS-04" source="visual inspection">The visible Reed eye line is higher on the shared canvas than the child-orc eye line; the two characters are not normalized to a common facial height.</fact>
+      </facts>
+      <inferences>
+        <inference id="I-VIS-01">Expression variants should preserve each character's own head position, silhouette, costume, crop, alpha edge and bottom contact rather than vertically normalizing faces across characters.</inference>
+        <inference id="I-VIS-02">Reed's broad arm silhouette is more likely to collide with dense background detail near the side slots; the child-orc asset leaves substantially more transparent lateral space.</inference>
+        <inference id="I-VIS-03">Both illustrations read as softly lit character art without a strong scene-specific cast; background lighting should remain compatible with warm neutral character highlights unless synthesis explicitly requests relighting.</inference>
+        <inference id="I-VIS-04">The exact shared key-light direction cannot be validated from the isolated busts and must be checked in the composed 1280x720 scene.</inference>
+      </inferences>
+    </visual_inspection>
+
+    <requirements>
+      <asset_type id="expression-variant">
+        <format>PNG with straight alpha; RGBA export; no baked background, glow or shadow outside the character silhouette.</format>
+        <dimensions>Exact runtime canvas 408x560 px for one-to-one swapping with the current busts.</dimensions>
+        <pivot anchor_x="0.5" anchor_y="1.0" pixel_x="204" pixel_y="560">Preserve bottom-center registration and the source character's head, shoulders, feet/crop and alpha bounds within a tolerance approved by overlay comparison.</pivot>
+        <safe_area>Keep all opaque and antialiased pixels inside x=0..407 and y=0..559; do not clip hair, ears, hands or costume. Preserve the current lower contact at y=559.</safe_area>
+        <directory>frontend/img/pictures/Portraits/Principal</directory>
+        <naming status="provisional">
+          <candidate gate="if-Reed-selected">Reed_VN046_&lt;expression&gt;.png</candidate>
+          <candidate gate="if-Rheed-selected">Rheed_VN046_&lt;expression&gt;.png</candidate>
+          <candidate character="child-orc">CriancaOrc_VN046_&lt;expression&gt;.png</candidate>
+          <rule>These are examples only. Do not rename Reed final.png or CriancaOrc_.png; choose exactly one Reed/Rheed token at the human naming gate.</rule>
+        </naming>
+      </asset_type>
+
+      <asset_type id="vn-background" preferred_runtime_role="map-parallax">
+        <format>PNG, visually opaque over the full canvas; alpha should be absent or uniformly 255 to avoid unintended reveal of the empty map.</format>
+        <dimensions>Exact 1280x720 px runtime export; source art may be larger, but final delivery must be 16:9 at the project resolution.</dimensions>
+        <pivot anchor_x="0" anchor_y="0">Full-screen top-left registration; no runtime scaling is preferred.</pivot>
+        <safe_area>
+          <region name="message-window-reserve">Keep critical faces, text-like marks and story clues outside the lower 180 px unless the final message-window measurement proves a smaller occupied region.</region>
+          <region name="bust-slots">Reduce high-frequency contrast behind the left and right bust silhouettes; preserve the clearest environmental read in the central and upper field.</region>
+          <region name="edge-tolerance">Keep essential composition at least 64 px from each screen edge to tolerate window/display differences.</region>
+        </safe_area>
+        <directory status="candidate-existing-empty">frontend/img/parallaxes</directory>
+        <naming status="provisional">VN046_NoiteHistoria_BG.png</naming>
+        <integration_rationale>Map046 currently has no parallax and all tile layers are empty. A parallax keeps the background below picture IDs 1 and 2 and avoids renumbering the established bust commands.</integration_rationale>
+        <runtime_risk>Static evidence cannot prove non-loop parallax origin, fill, camera behavior or message/bust readability at 1280x720; Playtest is mandatory.</runtime_risk>
+      </asset_type>
+
+      <asset_type id="visual-cut-in" optional="true">
+        <format>PNG RGBA when the illustration needs transparency; otherwise opaque PNG. Do not bake choice labels or dialogue text into the art.</format>
+        <dimensions>Preferred exact 1280x720 for full-screen presentation. A smaller partial-frame delivery is acceptable only with an approved pixel-perfect placement contract and no upscaling.</dimensions>
+        <pivot anchor_x="0.5" anchor_y="0.5" pixel_x="640" pixel_y="360">Center registration for a dedicated Cut-In picture layer.</pivot>
+        <safe_area>Keep the focal action inside x=96..1184 and y=48..520; reserve the lower 200 px if dialogue remains visible during the Cut-In.</safe_area>
+        <directory status="provisional-not-inventoried">frontend/img/pictures/CutIns</directory>
+        <naming status="provisional">VN046_&lt;approved-beat&gt;_CutIn.png</naming>
+        <decision_boundary>The dramatic beat, content and necessity remain synthesis-owned. No Cut-In asset should be requested unless cross-review approves it.</decision_boundary>
+      </asset_type>
+    </requirements>
+
+    <layer_and_picture_id_contract>
+      <layer order="0" owner="RPG Maker map parallax" picture_id="none">Preferred VN background; persistent only for Map046.</layer>
+      <layer order="10" owner="VisuMZ_2_VNPictureBusts" picture_id="1">Current Reed/Rheed slot; retain current ID unless implementation adopts a separately approved picture-layer background.</layer>
+      <layer order="11" owner="VisuMZ_2_VNPictureBusts" picture_id="2">Current child-orc slot; retain current ID.</layer>
+      <layer order="20" owner="optional Cut-In" picture_id="10">Reserved candidate above busts. Display one Cut-In at a time; erase it before restoring dialogue focus.</layer>
+      <layer order="30" owner="PKD_VisualChoices_MZ" picture_id="plugin-managed-unconfirmed">Do not reserve or reuse a numeric ID without implementation inventory of the plugin's runtime ownership.</layer>
+      <collision_rule>Picture IDs 1, 2 and provisional 10 must not overlap any implementation-time picture reservation. If background is implemented as a picture instead of a parallax, renumbering and full Enter/Exit/cleanup rewiring require a separate approved decision and validator.</collision_rule>
+      <cleanup>
+        <rule target="bust-1">Preserve explicit Exit Bust with AutoErase=true before branch transitions and final quest transition.</rule>
+        <rule target="bust-2">Preserve explicit Exit Bust with AutoErase=true on every branch in which picture 2 is entered.</rule>
+        <rule target="cut-in-10">Use explicit erase/exit after the approved beat and verify ID 10 is absent before code 404 reconvergence, COMPLETE_VN and FinishVisualNovel.</rule>
+        <rule target="background-parallax">No picture erase is needed; verify Map046-only lifetime and no parallax leak after transfer/scene completion.</rule>
+        <rule target="choice-ui">Treat cleanup as runtime-pending until both choice branches are Playtested; do not infer it from asset presence.</rule>
+      </cleanup>
+    </layer_and_picture_id_contract>
+
+    <memory_preload_and_lifetime>
+      <decoded_rgba_estimates>
+        <item asset="one 408x560 bust">913920 bytes; approximately 0.872 MiB.</item>
+        <item asset="two current busts">1827840 bytes; approximately 1.743 MiB.</item>
+        <item asset="1280x720 background">3686400 bytes; approximately 3.516 MiB.</item>
+        <item asset="choice normal plus hover">319824 bytes; approximately 0.305 MiB.</item>
+        <item asset="1280x720 Cut-In">3686400 bytes; approximately 3.516 MiB.</item>
+        <item asset="baseline scene set without Cut-In">Approximately 5.564 MiB decoded RGBA, excluding engine/UI textures and cache duplication.</item>
+        <item asset="baseline scene set with one Cut-In">Approximately 9.080 MiB decoded RGBA, excluding engine/UI textures and cache duplication.</item>
+      </decoded_rgba_estimates>
+      <preload_policy>
+        <mandatory>Warm the approved background, Reed final, the choice normal/hover images and the child-orc neutral before their first perceptible display.</mandatory>
+        <conditional>Warm only expression variants selected by synthesis; do not globally preload all Portraits/Principal files.</conditional>
+        <optional>Warm a Cut-In only when approved and shortly before its beat or at scene entry if profiling proves the memory overlap acceptable.</optional>
+        <implementation_boundary>The durable inventory reports no dedicated scene preload list for these assets. Gameplay/runtime implementation must select an existing documented VisuStella/Coreto or ImageManager-compatible mechanism; this POV does not prescribe or add runtime code.</implementation_boundary>
+      </preload_policy>
+      <lifetime_policy>Reuse picture slots per character, replace rather than stack expressions, erase transient Cut-Ins promptly, and do not retain unapproved variants. Profile cache residency and transition overlap on target hardware before declaring memory or frame pacing valid.</lifetime_policy>
+    </memory_preload_and_lifetime>
+
+    <naming_and_convention_inventory>
+      <fact>Portraits/Principal contains 72 PNG files across twelve observed dimension groups; only five are 408x560. Fifty-three filenames contain underscores, nine contain spaces, and one contains the token final.</fact>
+      <fact>The only Reed/Rheed match is the existing Reed final.png; the only focused child-orc match is CriancaOrc_.png.</fact>
+      <fact>The parallaxes directory contains no PNG files, so it supplies no established local naming convention for this background.</fact>
+      <fact>The inspected choice assets use the InnButton_00..03 numeric naming family, while only InnButton_00 and InnButton_01 are confirmed for qualSeuNome.</fact>
+      <decision>Preserve all existing filenames. New names stay provisional until the Reed/Rheed gate and final manifest approval; examples in this POV are not asset requests.</decision>
+    </naming_and_convention_inventory>
+  </asset_contract>
+
+  <preliminary_manifest status="proposal-only" reuse_first="true">
+    <manifest_item id="TA-M001" priority="mandatory" disposition="reuse">
+      <type>bust-neutral</type>
+      <character_or_scene>Reed/Rheed storyteller slot</character_or_scene>
+      <runtime_name>Portraits/Principal/Reed final</runtime_name>
+      <directory>frontend/img/pictures/Portraits/Principal</directory>
+      <dependencies>Reed/Rheed naming decision is not required to reuse this exact existing file; picture ID 1; VisuMZ_2_VNPictureBusts.</dependencies>
+      <notes>Do not rename. Existing visual is a cheerful neutral/storyteller baseline.</notes>
+    </manifest_item>
+    <manifest_item id="TA-M002" priority="mandatory" disposition="reuse">
+      <type>bust-neutral</type>
+      <character_or_scene>child-orc/player slot</character_or_scene>
+      <runtime_name>Portraits/Principal/CriancaOrc_</runtime_name>
+      <directory>frontend/img/pictures/Portraits/Principal</directory>
+      <dependencies>Picture ID 2; VisuMZ_2_VNPictureBusts.</dependencies>
+      <notes>Do not rename. Existing visual is the neutral baseline.</notes>
+    </manifest_item>
+    <manifest_item id="TA-M003" priority="mandatory" disposition="reuse">
+      <type>choice-ui-states</type>
+      <character_or_scene>qualSeuNome visual choice</character_or_scene>
+      <runtime_name>Choices/InnButton_01; Choices/InnButton_00</runtime_name>
+      <directory>frontend/img/pictures/Choices</directory>
+      <dependencies>PKD_VisualChoices_MZ active patch and menu ID qualSeuNome.</dependencies>
+      <notes>Reuse confirmed normal and hover states. Do not assign a role to InnButton_02/03 without further evidence.</notes>
+    </manifest_item>
+    <manifest_item id="TA-M004" priority="mandatory-after-approval" disposition="new">
+      <type>vn-background</type>
+      <character_or_scene>Map046 Noite da Historia</character_or_scene>
+      <provisional_name>VN046_NoiteHistoria_BG.png</provisional_name>
+      <directory>frontend/img/parallaxes</directory>
+      <dependencies>Approved scene briefing; human asset gate; parallax fill and readability Playtest.</dependencies>
+      <notes>1280x720 opaque PNG. This is a candidate name, not a final request.</notes>
+    </manifest_item>
+    <manifest_item id="TA-M005" priority="conditional-required" disposition="new-if-synthesis-selects">
+      <type>expression-variant-set</type>
+      <character_or_scene>Reed/Rheed</character_or_scene>
+      <provisional_name>Reed_VN046_&lt;expression&gt;.png OR Rheed_VN046_&lt;expression&gt;.png</provisional_name>
+      <directory>frontend/img/pictures/Portraits/Principal</directory>
+      <dependencies>Final emotion/beat matrix from synthesis; Reed/Rheed human gate; exact asset approval and availability.</dependencies>
+      <notes>408x560 RGBA. Count and emotion tokens intentionally unresolved; use exactly one naming branch.</notes>
+    </manifest_item>
+    <manifest_item id="TA-M006" priority="conditional-required" disposition="new-if-synthesis-selects">
+      <type>expression-variant-set</type>
+      <character_or_scene>child-orc/player</character_or_scene>
+      <provisional_name>CriancaOrc_VN046_&lt;expression&gt;.png</provisional_name>
+      <directory>frontend/img/pictures/Portraits/Principal</directory>
+      <dependencies>Final emotion/beat matrix from synthesis; exact asset approval and availability.</dependencies>
+      <notes>408x560 RGBA. Count and emotion tokens intentionally unresolved.</notes>
+    </manifest_item>
+    <manifest_item id="TA-M007" priority="optional" disposition="new-only-if-approved">
+      <type>visual-cut-in</type>
+      <character_or_scene>single synthesis-selected dramatic beat</character_or_scene>
+      <provisional_name>VN046_&lt;approved-beat&gt;_CutIn.png</provisional_name>
+      <directory>frontend/img/pictures/CutIns</directory>
+      <dependencies>Positive synthesis verdict; approved beat and briefing; directory and naming confirmation; picture ID 10 reservation; human asset gate.</dependencies>
+      <notes>No Cut-In is requested by this preliminary manifest.</notes>
+    </manifest_item>
+    <excluded_from_preliminary_request>
+      <item>New choice UI art: current normal/hover assets are reusable.</item>
+      <item>New VFX or animation textures: no asset need is proven before synthesis selects a concrete effect.</item>
+      <item>Alternate tilesets: Map046 tile layers are empty and a background should not be solved by populating tiles.</item>
+    </excluded_from_preliminary_request>
+  </preliminary_manifest>
+
+  <validation_matrix>
+    <validator id="TA-V01" class="deterministic-static" phase="current-pov">
+      <claim>POV artifact integrity</claim>
+      <method>Parse technical-artist.xml as XML; assert root agentic_agent_pov schema_version=1 and required sections domain_context_preflight, asset_contract, preliminary_manifest and validation_matrix.</method>
+      <status>required</status>
+    </validator>
+    <validator id="TA-V02" class="deterministic-static" phase="before-asset-request">
+      <claim>Manifest uniqueness and provisional-name safety</claim>
+      <method>Assert manifest IDs are unique; every new name is marked provisional; no existing asset is renamed; exactly one Reed/Rheed naming branch is selected after the gate.</method>
+      <status>pending</status>
+    </validator>
+    <validator id="TA-V03" class="deterministic-static" phase="asset-intake">
+      <claim>Expression export contract</claim>
+      <method>For each approved bust variant, assert PNG decode, 408x560 dimensions, RGBA alpha presence, nonempty content, bottom-center registration and overlay tolerance against the corresponding current neutral.</method>
+      <status>pending-assets</status>
+    </validator>
+    <validator id="TA-V04" class="deterministic-static" phase="asset-intake">
+      <claim>Background export contract</claim>
+      <method>Assert approved background path and exact case, PNG decode, 1280x720 dimensions and fully opaque pixels; assert Map046 remains free of unintended tile content.</method>
+      <status>pending-assets</status>
+    </validator>
+    <validator id="TA-V05" class="deterministic-static" phase="implementation">
+      <claim>Picture IDs, ordering and cleanup</claim>
+      <method>Structured-parse Map046 event 1 page 1; enumerate Enter/Exit/Erase commands and branches; assert no collision for IDs 1, 2 and optional 10; assert picture 2 cleanup in every entered branch and optional Cut-In cleanup before code 404, COMPLETE_VN and FinishVisualNovel.</method>
+      <status>pending-implementation</status>
+    </validator>
+    <validator id="TA-V06" class="deterministic-static" phase="implementation">
+      <claim>Reference and data integrity</claim>
+      <method>Parse Map046.json, verify every referenced image exists with exact case and confirm choice codes 102/402/402/404 and indent structure remain intact.</method>
+      <status>pending-implementation</status>
+    </validator>
+    <validator id="TA-V07" class="static-estimate" phase="before-playtest">
+      <claim>Texture budget awareness</claim>
+      <method>Recompute decoded RGBA estimates for the final mandatory scene set and record expected simultaneous textures, preload set and transient overlap; do not treat this estimate as measured residency.</method>
+      <status>pending-final-manifest</status>
+    </validator>
+    <validator id="TA-G01" class="human-decision" phase="cross-review">
+      <claim>Presentation and naming approval</claim>
+      <method>Approve background direction, final expression/beat matrix, Cut-In verdict and exactly one Reed/Rheed naming token before a final asset request.</method>
+      <status>required</status>
+    </validator>
+    <validator id="TA-G02" class="human-asset-gate" phase="before-implementation">
+      <claim>Exact asset availability</claim>
+      <method>User confirms delivery; executor verifies every approved path, exact filename, dimensions, alpha contract and checksum before Map046 is edited.</method>
+      <status>required</status>
+    </validator>
+    <validator id="TA-G03" class="human-playtest" phase="after-implementation">
+      <claim>Perceptible visual result and runtime cleanup</claim>
+      <method>At 1280x720, traverse Confirmar and Corrigir; inspect background fill, bust crop/eyelines, expression swaps, choice readability, optional Cut-In timing, load hitching, final cleanup, COMPLETE_VN and transition away from Map046.</method>
+      <status>runtime-pending</status>
+    </validator>
+    <static_vs_runtime>
+      <static_confirmed>XML/JSON parseability of inspected sources; project resolution; map/event IDs; empty tile planes; current asset existence, dimensions, alpha metadata; current plugin command payloads; current picture IDs and AutoErase flags.</static_confirmed>
+      <runtime_pending>Visual composition, parallax origin/fill, z-order, message and choice readability, plugin-managed choice cleanup, expression transition feel, Cut-In timing, texture-cache residency, decode hitching, memory peak, frame pacing and branch reachability.</runtime_pending>
+    </static_vs_runtime>
+  </validation_matrix>
+
+  <risks>
+    <risk id="TA-R01" severity="high">Resolving Reed/Rheed implicitly would create divergent asset names or broken references. Mitigation: preserve existing Reed final.png and require one explicit naming gate for new files.</risk>
+    <risk id="TA-R02" severity="high">A picture-based background would sit above current bust ID 1 unless IDs are migrated. Mitigation: prefer the empty-map parallax route or approve and validate a complete picture-ID migration.</risk>
+    <risk id="TA-R03" severity="medium">Expression art made on a different canvas or registration point will visibly jump despite valid PNGs. Mitigation: exact 408x560 export and overlay validator per character.</risk>
+    <risk id="TA-R04" severity="medium">Global preloading of many portrait variants can inflate cache residency. Mitigation: preload only the final scene set and profile real residency on target hardware.</risk>
+    <risk id="TA-R05" severity="medium">A 1280x720 Cut-In and background can overlap in memory during transitions. Mitigation: one Cut-In at a time, prompt cleanup and measured Playtest/profiling.</risk>
+    <risk id="TA-R06" severity="medium">Static empty tiles do not prove parallax framing or background readability. Mitigation: validate both branches and the transition at project resolution.</risk>
+    <risk id="TA-R07" severity="medium">The choice plugin owns visual state and cleanup beyond the image files. Mitigation: do not infer runtime behavior from InnButton presence; Playtest normal, hover, confirm, cancel/default and both branches.</risk>
+  </risks>
+
+  <completion_record terminal="true">
+    <result>Technical-art POV completed in proposal-only mode; no asset, runtime, data, plugin or documentation file was created or edited.</result>
+    <files>
+      <file>planos/004-ambientacao-VN/analise/agentes/technical-artist.xml</file>
+    </files>
+    <validators>
+      <validator>XML parseability and required-section validation.</validator>
+      <validator>Facts and inferences separated.</validator>
+      <validator>Provisional naming, layers, picture IDs, cleanup, preload and static/runtime boundaries specified.</validator>
+    </validators>
+    <gates>
+      <gate>Cross-review must decide final emotions/beats, Cut-In value and Reed/Rheed naming.</gate>
+      <gate>User asset availability confirmation before implementation.</gate>
+      <gate>Human Playtest and profiling before visual, memory, cleanup or runtime claims are valid.</gate>
+    </gates>
+    <execution_evidence>orchestrator-owned</execution_evidence>
+    <next_destination>cross-review</next_destination>
+  </completion_record>
+</agentic_agent_pov>

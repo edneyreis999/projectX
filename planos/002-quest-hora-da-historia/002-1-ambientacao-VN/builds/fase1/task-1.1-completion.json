@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "task_id": "task-1.1",
+  "result": "implemented-static-validation-passed",
+  "generated_at": "2026-07-29T04:46:00.954Z",
+  "changed_files": [
+    "frontend/data/Map046.json",
+    "planos/004-ambientacao-VN/builds/fase1/implement-map046.mjs",
+    "planos/004-ambientacao-VN/builds/fase1/validate-map046.mjs",
+    "planos/004-ambientacao-VN/builds/fase1/task-1.1-completion.json",
+    "planos/004-ambientacao-VN/builds/fase1/task-1.1-validation.json"
+  ],
+  "read_files": [
+    "planos/004-ambientacao-VN/tasks.md",
+    "planos/004-ambientacao-VN/task-1.1.md",
+    "planos/004-ambientacao-VN/preflights/run-73b3d740b838fa669b29aac69582aecf/technical-implementer/preflight-v1.md",
+    "planos/004-ambientacao-VN/analise/technical-analysis.md",
+    "planos/004-ambientacao-VN/analise/asset-manifest.md",
+    "docs/rpg-maker-for-ia/docs-visustella/narrative-plugins/visustella-visual-novel-picture-busts/comandos/basicos.md",
+    "frontend/js/plugins/VisuMZ_2_VNPictureBusts.js",
+    "frontend/js/rmmz_objects.js",
+    "frontend/data/CommonEvents.json",
+    "frontend/data/Map022.json"
+  ],
+  "validators": [
+    {
+      "name": "parse-json",
+      "status": "passed"
+    },
+    {
+      "name": "restricted-diff",
+      "status": "passed"
+    },
+    {
+      "name": "RQ-S01-RQ-S12-applicable",
+      "status": "passed",
+      "evidence_ref": "task-1.1-validation.json"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "stage": "writer",
+      "status": "sandbox-retry",
+      "error": "EPERM ao criar scratch atômico; reexecução autorizada fora do sandbox."
+    },
+    {
+      "attempt": 2,
+      "stage": "writer",
+      "status": "passed",
+      "result_sha256": "861f6c6fe4c5953f37fed169814650d1bcc5a8e6ea2f4e82b446ab645c37b892"
+    },
+    {
+      "attempt": 3,
+      "stage": "validator",
+      "status": "corrected-false-negatives",
+      "corrections": [
+        "normalização LF/CRLF do baseline Git",
+        "granularidade do diff em arrays",
+        "subpasta Choices dos botões"
+      ]
+    },
+    {
+      "attempt": 4,
+      "stage": "validator",
+      "command": "node planos/004-ambientacao-VN/builds/fase1/validate-map046.mjs",
+      "status": "passed"
+    }
+  ],
+  "errors": [],
+  "decisions": [
+    "Writer one-shot protegido pelo hash baseline 73e006... e estilo CRLF/4 espaços.",
+    "Basic_GraphicChange materializa B02, B03, B04, B05 e B08-B11 sem trocar IDs 1/2.",
+    "Picture 10 usa Show Picture opacidade 0, reveal 28f, fade out bloqueante 20f e Erase antes de B11.",
+    "code 320 [1,\"Dulgarin\"] fica no ramo qualSeuNome1 antes de B03."
+  ],
+  "risks": [
+    "Visuais, timing, leitura, input, z-order e persistência continuam pendentes de RQ-P01-RQ-P09.",
+    "Estimativas RGBA são teóricas, não medição de memória/performance."
+  ],
+  "gates": [
+    {
+      "name": "human-validation",
+      "status": "pending",
+      "scenarios": "RQ-P01-RQ-P09"
+    }
+  ],
+  "next_destination": "orchestrator-independent-phase-audit",
+  "execution_evidence": "orchestrator-owned"
+}

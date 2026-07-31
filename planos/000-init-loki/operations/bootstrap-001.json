@@ -1,0 +1,37 @@
+{
+  "schema": "loki_init_publication_batch",
+  "schema_version": "1",
+  "run_id": "loki-init-20260727-001",
+  "operation": "bootstrap",
+  "operation_id": "bootstrap-001",
+  "calling_workflow": "loki-init",
+  "write_mode": "init-bootstrap-cataloger",
+  "idempotency_key": "loki-init-20260727-001:bootstrap-001",
+  "lifecycle": "committed",
+  "packet_refs": [
+    {"packet_id": "common-inventory-001", "revision": 1, "hash": "321d81284b7686d08b35905834df14dd8414da4c1aa2e3f87965a096cd41e2f6", "path": "planos/000-init-loki/packets/common-inventory-v1.json"},
+    {"packet_id": "technology-context-001", "revision": 1, "hash": "b01711100045838667003a38cac7b53eaaa55de526849a204be6066b41ac3641", "path": "planos/000-init-loki/packets/technology-context-v1.json"},
+    {"packet_id": "investigator-selection-001", "revision": 1, "hash": "919016f992bc7cb69fa4314c8e82c26500496615ae057950fbbb83c515c51a47", "path": "planos/000-init-loki/packets/investigator-selection-v1.json"}
+  ],
+  "coverage_plan_ref": {"path": "planos/000-init-loki/coverage-plan.md", "hash": "a41f834124428845ddfb21fdb04825e188426e7231bbb0034b789349807cf928"},
+  "before_state_hash": "0376ff5f1d9cfe0d30d89bcb1fab1121dab754cf237621912788e86f9ca9f3d5",
+  "docs_snapshot": "existing docs tree; merge only; docs/index.xml absent",
+  "selected_domain_roots": ["runtime-qa", "technical-implementer", "game-product-owner", "game-business-analyst", "game-designer", "narrative-designer", "ux-ui-designer", "gameplay-engineer", "narrative-qa", "level-designer", "balance-economy-designer", "scene-presentation-designer", "audio-designer", "quest-content-designer", "technical-artist"],
+  "targets": ["docs/project-inventory.md", "docs/technology-context.md", "docs/domains/*/README.md", "docs/index.xml"],
+  "allowed_writes": ["docs/**"],
+  "forbidden_writes": ["planos/000-init-loki/**", "frontend/**", "Obsidian/**", "scripts/**", ".agents/**", ".codex/**", ".claude/**", "AGENTS.md", "CLAUDE.md"],
+  "approval": "granted by loki-init normalized default scope",
+  "exclusive_write_owner": "catalogador",
+  "validators": ["merge-preservation", "README-substantial", "XML-parse", "links-resolve", "write-boundary"],
+  "success_destination": "loki-init investigator fan-out",
+  "failure_destination": "loki-init blocker intake",
+  "catalogador_run_id": "catalogador-bootstrap-001",
+  "after_state_hash": "92a8ff1844af94b0dc3828c4fea06344c96936923640924c1d64adf5fa6dc954",
+  "materialization_refs": [
+    "docs/project-inventory.md#329d1f20a4ef7092108332475ca888da63f858b9bffcc35aee3cf0e3641a67d9",
+    "docs/technology-context.md#cb67f420f0e3d9ca1bea0d7428d6255b9227b0382b666e3b322d9ed9fdf80c67",
+    "docs/index.xml#e42af62ca6f89e70cd2f4746b5871afc2b3d976a6ad1cc1fffc8e070c7dbf02d",
+    "docs/domains/*/README.md (15 roots)"
+  ],
+  "lifecycle_evidence": ["dispatched checkpoint persisted", "write-applied return received", "deterministic validators passed", "ledger commit persisted"]
+}

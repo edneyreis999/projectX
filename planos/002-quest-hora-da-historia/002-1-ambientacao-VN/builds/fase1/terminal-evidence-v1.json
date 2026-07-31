@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "run_id": "loki-run-v2:b625625fc3f771ba1ccf751c357ec0395a82e2997bd04a06a97ce5b1867033a1",
+  "execution_id": "loki-execution-v2:f767776e80492869e3f1e145cf82bf53276a71d7dde3f90818e344aa33410d9a",
+  "status": "completed",
+  "acceptance_criteria": [
+    {
+      "id": "AC-004-MAP046-01",
+      "status": "passed",
+      "evidence_ref": "planos/004-ambientacao-VN/builds/fase1/task-1.1-validation.json"
+    }
+  ],
+  "automatic_validation": {
+    "status": "passed",
+    "checks": 22,
+    "errors": [],
+    "map_sha256": "861f6c6fe4c5953f37fed169814650d1bcc5a8e6ea2f4e82b446ab645c37b892",
+    "validator_ref": "planos/004-ambientacao-VN/builds/fase1/validate-map046.mjs",
+    "validation_ref": "planos/004-ambientacao-VN/builds/fase1/task-1.1-validation.json",
+    "audit_checkpoint_ref": "planos/004-ambientacao-VN/builds/audits/phase/boundary-4d327cb7baf73d6b3cc8f72d624de5df/checkpoint-v1-0.yaml"
+  },
+  "human_gate": {
+    "status": "passed",
+    "scenario_refs": ["RQ-P01", "RQ-P02", "RQ-P03", "RQ-P04", "RQ-P05", "RQ-P06", "RQ-P07", "RQ-P08", "RQ-P09"],
+    "evidence_ref": "planos/004-ambientacao-VN/interaction/fase1/task-1.1/human-validation-v1.json",
+    "evidence_kind": "explicit-user-confirmation",
+    "observation_limit": "A confirmação foi global; nenhum detalhe por cenário foi fornecido e nenhum foi inferido."
+  },
+  "manual_steps": [
+    {
+      "evidence_or_acceptance_criterion_ref": "RQ-P01,RQ-P02,RQ-P03",
+      "environment": "RPG Maker MZ/NW.js, resolução 1280x720",
+      "prerequisites": ["Iniciar por Map022 evento 18", "Quest noite-da-historia em estado que permita CENA_PRINCIPAL"],
+      "initial_state": "Actor 1 com nome diferente de Dulgarin e nenhum Picture 10 residual",
+      "action": "Entrar na VN, avançar até a escolha e testar o ramo Confirmar.",
+      "expected_observable_result": "Background, bustos e falas aparecem corretamente; Actor 1 vira Dulgarin antes de B03 e a cena reconverge.",
+      "success_signals": ["Sem imagem ausente", "Expressões mudam nos beats previstos", "Nome Dulgarin visível no ramo"],
+      "failure_signals": ["Tela preta", "Busto incorreto", "Nome antigo depois de Confirmar", "Branch travado"],
+      "cleanup_or_restore": "Recarregar o save inicial antes do próximo ramo.",
+      "automation_limitation": "Leitura visual, timing e input não são demonstráveis pelo validator estático."
+    },
+    {
+      "evidence_or_acceptance_criterion_ref": "RQ-P04,RQ-P05",
+      "environment": "RPG Maker MZ/NW.js, resolução 1280x720",
+      "prerequisites": ["Mesmo save inicial do primeiro teste"],
+      "initial_state": "Actor 1 com nome conhecido e diferente do nome que será digitado",
+      "action": "Repetir a cena, escolher Corrigir, digitar um nome de até 8 caracteres e avançar até B08.",
+      "expected_observable_result": "Name Input aceita o nome, B07 usa o valor digitado e o fluxo reconverge sem alterar os switches esperados.",
+      "success_signals": ["Nome digitado aparece em B07", "Cena chega ao trecho compartilhado"],
+      "failure_signals": ["Dulgarin forçado no ramo Corrigir", "Nome não aparece", "Cena não reconverge"],
+      "cleanup_or_restore": "Recarregar o save inicial.",
+      "automation_limitation": "O comportamento interativo do Name Input exige execução humana."
+    },
+    {
+      "evidence_or_acceptance_criterion_ref": "RQ-P06,RQ-P07",
+      "environment": "RPG Maker MZ/NW.js, resolução 1280x720",
+      "prerequisites": ["Cena no trecho B08-B11"],
+      "initial_state": "Nenhuma picture externa ocupando o ID 10",
+      "action": "Observar B08-B11, especialmente a entrada e saída do Cut-In de Thorin em B10.",
+      "expected_observable_result": "Rheed usa expressão solene; Cut-In revela em 28 frames, sai em 20 frames e desaparece antes de B11.",
+      "success_signals": ["Cut-In centralizado e legível", "Sem Picture 10 após B10", "B11 sem sobreposição"],
+      "failure_signals": ["Cut-In ausente ou distorcido", "Z-order incorreto", "Imagem residual em B11"],
+      "cleanup_or_restore": "Concluir ou abandonar a cena e confirmar ausência de Picture 10 residual.",
+      "automation_limitation": "Timing percebido, composição e z-order dependem do runtime."
+    },
+    {
+      "evidence_or_acceptance_criterion_ref": "RQ-P08,RQ-P09",
+      "environment": "RPG Maker MZ/NW.js, resolução 1280x720",
+      "prerequisites": ["Um teste em cold load e outro em warm/reentry", "Save após escolher cada ramo"],
+      "initial_state": "Quest e switches em estados controlados",
+      "action": "Testar save/load, reentrada, conclusão da VN e retorno ao caller para ambos os ramos.",
+      "expected_observable_result": "Nome persiste como esperado, switches 43/44 continuam focando os bustos e FinishVisualNovel retorna sem resíduos ou softlock.",
+      "success_signals": ["Retorno correto ao Map022", "Sem resíduos visuais", "Sem softlock", "Comportamento consistente em cold/warm"],
+      "failure_signals": ["Nome perdido", "Foco incorreto", "Cena reinicia indevidamente", "Softlock ou picture residual"],
+      "cleanup_or_restore": "Restaurar o save-base após registrar o resultado.",
+      "automation_limitation": "Persistência, reentrada e integração perceptível exigem Playtest."
+    }
+  ],
+  "next_action": "Nenhuma ação obrigatória; Plano 004 concluído."
+}

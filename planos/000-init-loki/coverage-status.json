@@ -1,0 +1,12 @@
+{
+  "run_id": "loki-init-20260727-001",
+  "evidence_rule": "Only accepted packet refs contribute coverage.",
+  "domains": {
+    "runtime-qa": {"packet":"runtime-qa-001@1#f01896c7bebda1157e47c8bebe4c03ec2981f93989f97bf2427b291d2f23c6ab","states":{"perceivable-surfaces":"covered","executable-flows":"covered","input-audio-visual":"covered","save-load":"covered","integrations":"covered","validation-state":"covered","documented-human-gates":"mapped"}},
+    "technical-implementer": {"packet":"technical-implementer-001@1#920bbb0464aec8981cabbfcf42d53ad29cdb73a030d100c1a3bc0249e58d462e","states":{"architecture":"covered","entry-points":"covered","modules-scripts":"mapped","configuration-dependencies":"covered","build-test-surfaces":"covered","source-map":"mapped"}},
+    "game-product-owner": {"packet":"game-product-owner-001@1#2fbcabc8300b102e2dd976f8b2270037d85cf4b27a8c3fe4b15dd142fba69be6","states":{"product-promise":"covered","current-scope":"covered","documented-priorities":"covered","personas-audience":"covered","milestones":"not_found","roadmap-brief-sources":"mapped"}}
+  },
+  "accepted_wave_refs": ["loki-init-state.json#wave-01","acceptance/wave-02.json","acceptance/wave-03.json","acceptance/wave-04.json","acceptance/wave-05.json"],
+  "terminal_domains": 15,
+  "pending_domains": []
+}

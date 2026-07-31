@@ -1,0 +1,1 @@
+{"run_id":"loki-init-20260727-001","agent_run_id":"narrative-designer-inv-001","handoff_id":"narrative-designer-handoff-001","agent":"narrative-designer","terminal_status":"complete","packet_ref":"narrative-designer-001@1","files_written":[],"gates":["route reachability/tone Playtest pending"],"next_destination":"loki-init packet intake"}

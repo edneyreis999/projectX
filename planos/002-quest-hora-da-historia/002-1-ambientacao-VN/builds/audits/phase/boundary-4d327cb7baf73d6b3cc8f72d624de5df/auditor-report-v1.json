@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "audit_id": "execution-audit-v1:4c64e5870f213fea063d6505502071397eaa5b0469f31853a1aa6cebaa29948e",
+  "auditor": "map046-phase-auditor",
+  "role": "independent-phase-auditor",
+  "generated_at": "2026-07-29T04:24:15.5618676Z",
+  "status": "approved",
+  "boundary": {
+    "phase": "fase1",
+    "task_ids": [
+      "task-1.1"
+    ],
+    "boundary_coverage_digest": "sha256:4b2b81fa8f96379db0c920bd1f927987f137655eaacfc94f98e66ad8429055c9",
+    "session_preflight_coverage_digest": "sha256:fde16cd1391fc4d4e877045543547c14eb1f1ccc5d332f08aff559b8526cbace",
+    "digest_interpretation": "Os digests representam coberturas diferentes e não conflitam."
+  },
+  "checks_reproduced": [
+    {
+      "command": "node planos/004-ambientacao-VN/builds/fase1/validate-map046.mjs",
+      "exit_code": 0,
+      "status": "passed",
+      "checks_passed": 22,
+      "errors": []
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0,
+      "status": "passed",
+      "errors": [],
+      "notes": [
+        "Foram emitidos somente avisos de futura normalização LF/CRLF em arquivos alheios; nenhum erro de whitespace foi reportado."
+      ]
+    }
+  ],
+  "evidence_consistency": {
+    "status": "passed-with-observation",
+    "map_sha256": "sha256:861f6c6fe4c5953f37fed169814650d1bcc5a8e6ea2f4e82b446ab645c37b892",
+    "validator_sha256": "sha256:850b33f13936c56c1bbb4538761f4d3cc23804c7495a35cd849278ba2244c2af",
+    "completion_sha256_after_replay": "sha256:21dfb47af03a2b082ae43fe557199e48c1bf24e3a9dec2e6d3655ba9644ef501",
+    "validation_sha256_after_replay": "sha256:d1f4885a6dad53db6cd00c829a9c9f9355256e600769b8594e5531a962d78b6e",
+    "preflight_expected_completion_sha256": "sha256:e86b80bf0c368a6ecfd24125908717ee9fc57c5679f0b5af6ccab260dc160cde",
+    "preflight_expected_validation_sha256": "sha256:3316c9138205c0494d9076b0116569cc7cb9addcfe63088a6a7f9b3aaabf349e",
+    "semantic_consistency": [
+      "O hash do Map046 coincide entre preflight, validação e inspeção independente.",
+      "O relatório regenerado permanece passed, com 22 checks e errors vazio.",
+      "O diff do Map046 está limitado a events[1].pages[0].list e parallaxName.",
+      "Escolha, ramos, nome Dulgarin, Name Input, switches 43/44, guards, handoff, assets, busts, Cut-In, parallax, caller chain, exclusões e 11 falas são cobertos por asserções concretas."
+    ]
+  },
+  "findings": [],
+  "observations": [
+    {
+      "severity": "warning",
+      "code": "validator-regenerates-writer-evidence",
+      "blocking": false,
+      "detail": "A reexecução obrigatória do validador sobrescreve task-1.1-validation.json e task-1.1-completion.json com novo generated_at. Por isso, seus hashes atuais diferem dos hashes congelados no preflight, embora o conteúdo semântico e o resultado permaneçam consistentes. O checkpoint deve referenciar os hashes pós-replay registrados neste parecer."
+    }
+  ],
+  "approval_basis": [
+    "Validador independente reproduzido com 22/22 checks aprovados.",
+    "Map046 mantém o hash esperado e apenas as superfícies autorizadas diferem do baseline Git.",
+    "Inspeção do script confirmou que os checks exercitam as invariantes declaradas em vez de apenas confiar no relatório anterior.",
+    "git diff --check concluiu sem erros."
+  ],
+  "runtime_validation": {
+    "status": "pending-human-validation",
+    "required_scenarios": [
+      "RQ-P01",
+      "RQ-P02",
+      "RQ-P03",
+      "RQ-P04",
+      "RQ-P05",
+      "RQ-P06",
+      "RQ-P07",
+      "RQ-P08",
+      "RQ-P09"
+    ],
+    "statement": "O parecer aprova somente a implementação e a validação estática; RQ-P01–RQ-P09 continuam pendentes de Playtest humano."
+  },
+  "production_files_modified_by_auditor": [],
+  "next_action": "Registrar checkpoint aprovado com os hashes pós-replay e encaminhar RQ-P01–RQ-P09 ao Playtest humano."
+}

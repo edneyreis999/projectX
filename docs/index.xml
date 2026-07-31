@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documentation-catalog version="1.0">
+  <metadata>
+    <scope>project-docs</scope>
+    <summary>Catálogo navegável da documentação duradoura de Daratrine - A Origem.</summary>
+    <owner>catalogador</owner>
+    <updated_at>2026-07-28</updated_at>
+  </metadata>
+  <documents>
+    <document id="project-inventory" path="docs/project-inventory.md" type="project-context" priority="high">
+      <summary>Inventário reconciliado das áreas, documentação, workflows e rotas para os 15 domínios.</summary>
+      <use_when>Use para orientação geral, fronteiras do init, conjuntos documentais e navegação por domínio.</use_when>
+      <not_covered>Não resolve conflitos e gates pendentes nem valida comportamento de runtime.</not_covered>
+      <keywords><keyword>inventário projeto estrutura áreas documentação build</keyword></keywords>
+      <sections>
+        <section anchor="identidade-e-áreas-principais" tokens="260" purpose="Identifica o projeto, suas áreas principais e as fronteiras de escrita do inventário." />
+        <section anchor="inventários-de-domínio" tokens="420" purpose="Navega para os 15 inventários aceitos e preserva suas pendências." />
+      </sections>
+    </document>
+    <document id="technology-context" path="docs/technology-context.md" type="technology-context" priority="high">
+      <summary>Contexto estático reconciliado de RPG Maker MZ, plugins, TypeScript, Jest, dados e domínios técnicos.</summary>
+      <use_when>Use antes de investigar engine, plugins, dados, arquitetura híbrida ou navegar para um domínio dependente de Playtest.</use_when>
+      <not_covered>Não certifica gameplay, timing, áudio, visual, input, integrações ou restauração de save/load.</not_covered>
+      <keywords><keyword>RPG Maker MZ VisuStella TypeScript Jest plugins runtime</keyword></keywords>
+      <sections>
+        <section anchor="engine-e-estrutura-técnica-observadas" tokens="300" purpose="Resume a engine e a estrutura técnica observadas estaticamente." />
+        <section anchor="navegação-por-domínio" tokens="360" purpose="Navega para os 15 inventários e seus gates técnicos pendentes." />
+      </sections>
+    </document>
+
+    <document id="domain-runtime-qa" path="docs/domains/runtime-qa/README.md" type="domain-inventory" priority="high">
+      <summary>Inventário estático de superfícies perceptíveis, automação, integrações, save/load e gates de Runtime QA.</summary>
+      <use_when>Use ao localizar riscos e limites de QA runtime ou planejar Playtest de comportamento perceptível.</use_when>
+      <not_covered>Não certifica execução, percepção, áudio, visual, input, quests ou restauração de saves.</not_covered>
+      <keywords><keyword>runtime QA playtest input áudio visual save load</keyword></keywords>
+      <sections><section anchor="inventário-factual" tokens="310" purpose="Resume superfícies, integrações, automação e gates encontrados estaticamente." /></sections>
+    </document>
+    <document id="domain-technical-implementer" path="docs/domains/technical-implementer/README.md" type="domain-inventory" priority="high">
+      <summary>Inventário da arquitetura híbrida, boot, plugins, módulos, scripts e superfícies de build/teste.</summary>
+      <use_when>Use antes de alterar estrutura técnica, boot, plugins, ferramentas ou configuração de validação.</use_when>
+      <not_covered>Não comprova build, testes, Playtest ou compatibilidade entre as versões 1.10.0 e 1.8.1.</not_covered>
+      <keywords><keyword>arquitetura entry points módulos dependências build testes</keyword></keywords>
+      <sections><section anchor="inventário-factual" tokens="390" purpose="Descreve arquitetura, boot, drift de plugins, toolchain e scripts." /></sections>
+    </document>
+    <document id="domain-game-product-owner" path="docs/domains/game-product-owner/README.md" type="domain-inventory" priority="medium">
+      <summary>Inventário documental da promessa, escopo, prioridades, público e ausência de milestones do produto.</summary>
+      <use_when>Use ao localizar decisões e fontes atuais de produto antes de priorizar ou alterar escopo.</use_when>
+      <not_covered>Não define novas prioridades, personas ou roadmap e não comprova escopo em runtime.</not_covered>
+      <keywords><keyword>produto promessa escopo prioridades público milestones roadmap</keyword></keywords>
+      <sections><section anchor="inventário-factual" tokens="270" purpose="Resume promessa, escopo, prioridades, público e o gap de roadmap/milestones." /></sections>
+    </document>
+    <document id="domain-game-business-analyst" path="docs/domains/game-business-analyst/README.md" type="domain-inventory" priority="medium">
+      <summary>Inventário de objetivos, público, requisitos, critérios de aceite, restrições e fontes de decisão.</summary>
+      <use_when>Use ao rastrear requisitos existentes e suas fontes de decisão.</use_when>
+      <not_covered>Não cria requisitos, roadmap ou aceite de release e não valida critérios perceptíveis sem Playtest.</not_covered>
+      <keywords><keyword>objetivos requisitos critérios aceite restrições decisões</keyword></keywords>
+      <sections><section anchor="inventário-factual" tokens="360" purpose="Materializa objetivos, requisitos, critérios, restrições e gaps de decisão." /></sections>
+    </document>
+    <document id="domain-game-designer" path="docs/domains/game-designer/README.md" type="domain-inventory" priority="high">
+      <summary>Inventário do core loop, regras configuradas, feedback, progressão, tuning e conflitos de design.</summary>
+      <use_when>Use para orientar investigação do design atual e separar intenção documentada de comportamento observado.</use_when>
+      <not_covered>Não propõe regras, resolve o conflito de EXP, rebalanceia ou valida feel, pacing e clareza em Playtest.</not_covered>
+      <keywords><keyword>game design core loop mecânicas feedback progressão tuning</keyword></keywords>
+      <sections><section anchor="inventário-factual" tokens="390" purpose="Resume loop, regras, feedback, tuning, conflito de EXP e risco de plugin duplicado." /></sections>
+    </document>
+    <document id="domain-narrative-designer" path="docs/domains/narrative-designer/README.md" type="domain-inventory" priority="high">
+      <summary>Inventário de personagens, premissa, cânone, lugares, lore, arcos, vozes, rotas e finais.</summary>
+      <use_when>Use ao localizar o escopo da investigação narrativa e suas fontes comuns preservadas.</use_when>
+      <not_covered>Não resolve divergências entre finais antigos e intenção de 2026 nem comprova reachability, tom ou pacing.</not_covered>
+      <keywords><keyword>narrativa personagens cânone lore arcos diálogos rotas finais</keyword></keywords>
+      <sections><section anchor="inventário-factual" tokens="420" purpose="Sintetiza cânone, personagens, lugares, vozes, rotas e conflitos preservados." /></sections>
+    </document>
+    <document id="domain-ux-ui-designer" path="docs/domains/ux-ui-designer/README.md" type="domain-inventory" priority="medium">
+      <summary>Inventário estático de fluxos UX, HUD, diálogos, feedback, save/load e recursos de acessibilidade.</summary>
+      <use_when>Use ao investigar superfícies e estados de interface ou planejar validação humana de UX.</use_when>
+      <not_covered>Não certifica acessibilidade, legibilidade, contraste, input, timing, percepção ou restauração de saves.</not_covered>
+      <keywords><keyword>UX UI HUD menus diálogos feedback save acessibilidade</keyword></keywords>
+      <sections><section anchor="inventário-factual" tokens="330" purpose="Resume fluxos, contagens de diálogo, HUD, save e recursos de acessibilidade." /></sections>
+    </document>
+    <document id="domain-gameplay-engineer" path="docs/domains/gameplay-engineer/README.md" type="domain-inventory" priority="high">
+      <summary>Inventário de mecânicas, estado, Common Events, callers, plugins, integrações e persistência.</summary>
+      <use_when>Use ao rastrear superfícies de implementação de gameplay e seus chamadores.</use_when>
+      <not_covered>Não confirma execução, ordem efetiva, comportamento de eventos ou restauração de saves em Playtest.</not_covered>
+      <keywords><keyword>gameplay implementação estado eventos integrações save load</keyword></keywords>
+      <sections><section anchor="inventário-factual" tokens="400" purpose="Descreve mecânicas, estado, callers, integrações e riscos de save/runtime." /></sections>
+    </document>
+    <document id="domain-narrative-qa" path="docs/domains/narrative-qa/README.md" type="domain-inventory" priority="medium">
+      <summary>Inventário de continuidade, flags, rotas, regressões, conflitos de cânone e riscos de reachability.</summary>
+      <use_when>Use ao planejar QA narrativo ou localizar condições e evidências de rotas.</use_when>
+      <not_covered>Não resolve cânone/final nem valida reachability, flags ou cadeias narrativas em runtime.</not_covered>
+      <keywords><keyword>QA narrativo continuidade flags rotas regressão alcançabilidade</keyword></keywords>
+      <sections><section anchor="inventário-factual" tokens="350" purpose="Materializa conflitos, flags, rotas, gaps de alcance e drift documental/runtime." /></sections>
+    </document>
+    <document id="domain-level-designer" path="docs/domains/level-designer/README.md" type="domain-inventory" priority="medium">
+      <summary>Inventário estático de áreas, grafo de navegação, gates, encounters, pacing e pontos de interesse.</summary>
+      <use_when>Use ao investigar a estrutura espacial e distinguir layout documentado de navegação observada.</use_when>
+      <not_covered>Não prova reachability, pacing percebido, legibilidade ou ausência de softlock em Playtest.</not_covered>
+      <keywords><keyword>level design mapas navegação gating encounters ritmo espacial</keyword></keywords>
+      <sections><section anchor="inventário-factual" tokens="360" purpose="Resume topologia, transfers inválidos, encounters, pacing e POIs." /></sections>
+    </document>
+    <document id="domain-balance-economy-designer" path="docs/domains/balance-economy-designer/README.md" type="domain-inventory" priority="high">
+      <summary>Inventário numérico de progressão, atributos, TP, recompensas, custos, lojas, recursos e circulação.</summary>
+      <use_when>Use ao investigar valores e fluxos econômicos atuais antes de propor tuning.</use_when>
+      <not_covered>Não resolve drift entre dados e GDD, define fórmulas, retuna valores ou valida a economia em Playtest.</not_covered>
+      <keywords><keyword>balanceamento economia progressão atributos recompensas custos lojas</keyword></keywords>
+      <sections><section anchor="inventário-factual" tokens="400" purpose="Expõe valores, conflitos de progressão/TCR, recompensas, shop e sources/sinks." /></sections>
+    </document>
+    <document id="domain-scene-presentation-designer" path="docs/domains/scene-presentation-designer/README.md" type="domain-inventory" priority="medium">
+      <summary>Inventário de staging, câmera, transições, busts, backgrounds, vídeo, timing e cues de cenas.</summary>
+      <use_when>Use ao investigar a apresentação atual de cenas e seus requisitos de validação perceptível.</use_when>
+      <not_covered>Não certifica composição, pacing, sincronização, mix, cleanup, timing ou câmera em execução.</not_covered>
+      <keywords><keyword>cenas staging câmera transições sprites backgrounds timing cues</keyword></keywords>
+      <sections><section anchor="inventário-factual" tokens="390" purpose="Resume chamadas de staging/câmera, busts, backgrounds, waits e cues." /></sections>
+    </document>
+    <document id="domain-audio-designer" path="docs/domains/audio-designer/README.md" type="domain-inventory" priority="medium">
+      <summary>Inventário de música, ambience, SFX, assets, referências, triggers, cues e configuração de volumes.</summary>
+      <use_when>Use ao investigar áudio existente, seus usos e os gates de escuta ou playtest.</use_when>
+      <not_covered>Não valida playback, loops, mix, clipping, transições, qualidade perceptível ou coerência auditiva.</not_covered>
+      <keywords><keyword>áudio música ambience SFX assets gatilhos cues configuração</keyword></keywords>
+      <sections><section anchor="inventário-factual" tokens="390" purpose="Materializa assets, calls, referências ausentes, volumes e gaps de cues." /></sections>
+    </document>
+    <document id="domain-quest-content-designer" path="docs/domains/quest-content-designer/README.md" type="domain-inventory" priority="high">
+      <summary>Inventário de quests, objetivos, NPCs, journal, recompensas, flags, owners e pré/pós-condições.</summary>
+      <use_when>Use ao investigar a estrutura factual das quests e diferenciar documentação, dados e runtime.</use_when>
+      <not_covered>Não reescreve quests nem valida reachability, sucesso, falha, retry ou persistência em Playtest.</not_covered>
+      <keywords><keyword>quests objetivos NPCs etapas recompensas flags condições</keyword></keywords>
+      <sections><section anchor="inventário-factual" tokens="380" purpose="Resume estrutura, journal, flags, recompensas, owners e condições." /></sections>
+    </document>
+    <document id="domain-technical-artist" path="docs/domains/technical-artist/README.md" type="domain-inventory" priority="medium">
+      <summary>Inventário de formatos visuais, animações, tilesets, referências ausentes e riscos de memória/performance.</summary>
+      <use_when>Use ao investigar a fronteira entre assets visuais e runtime ou planejar validação técnica de arte.</use_when>
+      <not_covered>Não mede residência, cache, frame pacing ou rendering e não certifica qualidade visual/performance.</not_covered>
+      <keywords><keyword>arte técnica assets formatos animações efeitos atlases performance</keyword></keywords>
+      <sections><section anchor="inventário-factual" tokens="390" purpose="Resume formatos, animações, tilesets, referências quebradas e estimativas não-runtime." /></sections>
+    </document>
+
+    <document id="gdd-overview" path="docs/GDD/GDD.geral.md" type="game-design-document" priority="high">
+      <summary>Visão geral existente do projeto, história, jogabilidade, arte, som, tecnologia e planejamento.</summary>
+      <use_when>Use como ponto de entrada amplo para o GDD antes de consultar documentos especializados.</use_when>
+      <not_covered>Não substitui os documentos especializados de combate, narrativa, quests ou implementação.</not_covered>
+      <keywords><keyword>GDD visão geral história jogabilidade arte som tecnologia</keyword></keywords>
+      <sections><section anchor="1-visão-geral-do-projeto" tokens="1200" purpose="Apresenta a visão geral e direciona para as áreas principais do GDD." /></sections>
+    </document>
+    <document id="combat-fundamentals" path="docs/GDD/6-combate/FUNDAMENTOS-COMBAT-SYSTEM.md" type="game-design-rule" priority="high">
+      <summary>Fundamentos e filosofia do sistema de combate de Daratrine.</summary>
+      <use_when>Use antes de desenhar, revisar ou balancear combate, personagens, inimigos ou sinergias.</use_when>
+      <not_covered>Não é prova automática do estado implementado no runtime.</not_covered>
+      <keywords><keyword>combate fundamentos filosofia personagens inimigos sinergias</keyword></keywords>
+      <sections><section anchor="1-objetivo-do-combat-system" tokens="5200" purpose="Define objetivos, sensação e entregas esperadas do sistema de combate." /></sections>
+    </document>
+    <document id="combat-design-guidelines" path="docs/GDD/6-combate/DIRETRIZES-DESIGN-COMBAT-SYSTEM.md" type="game-design-guideline" priority="high">
+      <summary>Diretrizes práticas existentes para skills, kits, sinergias e balanceamento de combate.</summary>
+      <use_when>Use ao criar ou revisar skills, kits de personagem e sinergias de equipe.</use_when>
+      <not_covered>Não valida dados atuais nem comportamento em playtest.</not_covered>
+      <keywords><keyword>combate diretrizes skills kits sinergias balanceamento</keyword></keywords>
+      <sections><section anchor="1-diretrizes-para-criação-de-skills" tokens="6200" purpose="Orienta a criação e classificação tática de skills." /></sections>
+    </document>
+    <document id="combat-modifier-classification" path="docs/GDD/6-combate/CLASSIFICACAO-MODIFICADORES.md" type="balance-system" priority="high">
+      <summary>Sistema existente de classificação e score numérico de modificadores de skills.</summary>
+      <use_when>Use para comparar peso e classificação de modificadores nos eixos do combate.</use_when>
+      <not_covered>Não substitui tuning, dados implementados ou validação de combate em execução.</not_covered>
+      <keywords><keyword>combate score modificadores efeito tempo recurso balanceamento</keyword></keywords>
+      <sections><section anchor="3-modelo-de-score" tokens="4800" purpose="Explica o modelo numérico usado para classificar modificadores." /></sections>
+    </document>
+    <document id="quest-system-index" path="docs/Quests/13-quando-segundo-sol-chegar/00-indice-quests.md" type="quest-index" priority="medium">
+      <summary>Índice existente das quests do sistema de narrativa sistêmica da fase Quando o Segundo Sol Chegar.</summary>
+      <use_when>Use para navegar pelas cadeias de quests, suas categorias e variáveis de progresso documentadas.</use_when>
+      <not_covered>Não representa todas as quests do projeto nem prova reachability em runtime.</not_covered>
+      <keywords><keyword>quests índice narrativa sistêmica guarda civis corvos sigmetal</keyword></keywords>
+      <sections><section anchor="resumo-do-sistema" tokens="1500" purpose="Resume a organização das quests e aponta suas categorias documentadas." /></sections>
+    </document>
+    <document id="rpg-maker-action-sequence-examples" path="docs/rpg-maker-for-ia/battle-core-action-sequence/skills-documentacao.md" type="engine-reference" priority="medium">
+      <summary>Exemplos existentes de Action Sequences de skills em linguagem natural e técnica.</summary>
+      <use_when>Use ao localizar exemplos de apresentação e comandos de skills para Battle Core Action Sequences.</use_when>
+      <not_covered>Não documenta toda a configuração de plugins nem certifica compatibilidade com o runtime atual.</not_covered>
+      <keywords><keyword>RPG Maker VisuStella Battle Core Action Sequence skills</keyword></keywords>
+      <sections><section anchor="frontal-flip-bounce" tokens="3200" purpose="Demonstra a descrição natural e técnica de uma Action Sequence." /></sections>
+    </document>
+    <document id="visustella-core-engine-index" path="docs/rpg-maker-for-ia/docs-visustella/visustella-core-engine/index.md" type="engine-reference-index" priority="medium">
+      <summary>Mapa existente da documentação local do VisuStella Core Engine MZ.</summary>
+      <use_when>Use para navegar por conceitos, parâmetros, notetags, comandos e referências do Core Engine.</use_when>
+      <not_covered>Não descreve todos os plugins VisuStella nem confirma a configuração ativa do projeto.</not_covered>
+      <keywords><keyword>VisuStella Core Engine parâmetros notetags comandos referência</keyword></keywords>
+      <sections><section anchor="mapa-da-documentacao" tokens="500" purpose="Direciona para as categorias da documentação local do Core Engine." /></sections>
+    </document>
+  </documents>
+</documentation-catalog>

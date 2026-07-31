@@ -1,0 +1,74 @@
+{
+    "schemaVersion": 1,
+    "quests": {
+        "noite-da-historia": {
+            "stageVariableId": 106,
+            "initialState": 0,
+            "terminalStates": [
+                90
+            ],
+            "pkd": {
+                "questId": "assistirNoiteHistoria",
+                "objectives": [
+                    {
+                        "id": 1,
+                        "knownFrom": 10,
+                        "completedAt": 10
+                    },
+                    {
+                        "id": 2,
+                        "knownFrom": 10,
+                        "completedAt": 20
+                    }
+                ]
+            },
+            "transitions": {
+                "START": {
+                    "from": [
+                        0
+                    ],
+                    "to": 10,
+                    "requirements": [],
+                    "effects": []
+                },
+                "COMPLETE_VN": {
+                    "from": [
+                        10
+                    ],
+                    "to": 20,
+                    "requirements": [],
+                    "effects": []
+                },
+                "ARRIVE_MAP045": {
+                    "from": [
+                        20
+                    ],
+                    "to": 90,
+                    "requirements": [],
+                    "effects": [],
+                    "terminal": true
+                }
+            },
+            "extensions": {
+                "questVN": {
+                    "mapId": 46,
+                    "spawn": {
+                        "x": 8,
+                        "y": 6,
+                        "direction": 2,
+                        "fadeType": 0,
+                        "audioPolicy": "restore-origin"
+                    },
+                    "entries": {
+                        "CENA_PRINCIPAL": {
+                            "eventId": 1,
+                            "allowedStates": [
+                                10
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

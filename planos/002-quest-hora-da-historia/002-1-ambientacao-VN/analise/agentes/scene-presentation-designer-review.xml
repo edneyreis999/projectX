@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agentic_agent_review schema_version="1">
+  <review>
+    <run_id>agentic-004-ambientacao-vn-v1</run_id>
+    <analysis_id>004-ambientacao-VN-cross-review-scene-presentation-v1</analysis_id>
+    <reviewer_agent>scene-presentation-designer</reviewer_agent>
+    <reviewed_agent>narrative-designer; technical-artist; scene-presentation-designer</reviewed_agent>
+    <status>completed</status>
+  </review>
+
+  <review_scope>Cross-review proposal-only de compatibilidade entre arco/falas, staging/timing, expressões, contrato técnico de assets, picture IDs, layers, cleanup, background e Visual Cut-In da VN do mapa 046. Nenhum asset, runtime ou POV upstream foi alterado.</review_scope>
+
+  <domain_context_preflight schema_version="1">
+    <agent>scene-presentation-designer</agent>
+    <task_id>004-ambientacao-VN-cross-review-scene-presentation-v1</task_id>
+    <required>true</required>
+    <domain_docs_root>docs/domains/scene-presentation-designer</domain_docs_root>
+    <task_topics>
+      <topic>cross-review-staging-and-timing</topic>
+      <topic>bust-expression-compatibility</topic>
+      <topic>picture-layering-and-cleanup</topic>
+      <topic>background-and-Cut-In-contract</topic>
+    </task_topics>
+    <task_domain_ids>
+      <domain_id>map-046</domain_id>
+      <domain_id>event-1-page-1</domain_id>
+      <domain_id>beats-B01-B11</domain_id>
+      <domain_id>choice-qualSeuNome</domain_id>
+      <domain_id>picture-1</domain_id>
+      <domain_id>picture-2</domain_id>
+    </task_domain_ids>
+    <relevant_surfaces>
+      <surface>narrative-designer POV dialogue and narrative curve</surface>
+      <surface>technical-artist asset, layer, memory and validator contracts</surface>
+      <surface>scene-presentation-designer beat staging and preliminary manifest</surface>
+      <surface>inventory Map046 baseline, branches, plugins and human gates</surface>
+    </relevant_surfaces>
+    <selection_basis>
+      <basis>O novo target exige revisão de um conjunto fechado de três POVs e um inventário.</basis>
+      <basis>O README do domínio continua sendo a leitura durável mínima para timing, busts, backgrounds, IDs e Playtest.</basis>
+      <basis>Os POVs correntes são a autoridade sobre suas propostas e permitem classificar acordos e conflitos sem ampliar fontes.</basis>
+    </selection_basis>
+    <read_attempt>
+      <readme_path>docs/domains/scene-presentation-designer/README.md</readme_path>
+      <status>read</status>
+      <reason>README lido antes dos POVs e do inventário do cross-review.</reason>
+    </read_attempt>
+    <docs_considered>
+      <doc>
+        <path>docs/domains/scene-presentation-designer/README.md</path>
+        <routed_by>README</routed_by>
+        <selected>true</selected>
+        <reason>Cobre exatamente pacing, busts, picture IDs, backgrounds/CGs, timing e boundary de validação perceptível.</reason>
+      </doc>
+    </docs_considered>
+    <docs_read>
+      <doc>
+        <path>docs/domains/scene-presentation-designer/README.md</path>
+        <relevance>Contexto durável mínimo para julgar o contrato visual e manter Playtest como gate.</relevance>
+        <matched_topics>cross-review-staging-and-timing; bust-expression-compatibility; picture-layering-and-cleanup; background-and-Cut-In-contract</matched_topics>
+        <matched_domain_ids>picture-1; picture-2</matched_domain_ids>
+        <matched_surfaces>VN Picture Busts; backgrounds/CGs; transitions; cleanup</matched_surfaces>
+        <freshness_status>current</freshness_status>
+        <freshness_evidence>Defaults de bust e risco de validação estática são corroborados pelo inventory.xml e pelos três POVs.</freshness_evidence>
+      </doc>
+    </docs_read>
+    <relevant_facts>
+      <fact source_kind="durable-doc" source_locator="docs/domains/scene-presentation-designer/README.md">Picture IDs 1-4 são comuns no inventário global; composição, pacing, layering e cleanup continuam sem validação humana.</fact>
+      <fact source_kind="current-source" source_locator="planos/004-ambientacao-VN/analise/context/inventory.xml/presentation_baseline">Map046 usa bust ID 1 e ID 2, 408x560, âncora 0.5/1.0, escala 100%, 20 frames e AutoErase.</fact>
+      <fact source_kind="current-source" source_locator="technical-artist.xml/asset_contract/baseline/map/tile_layers">As seis camadas de tiles do Map046 estão vazias; parallax é uma rota de background abaixo dos busts sem renumerar IDs 1-2.</fact>
+      <fact source_kind="current-source" source_locator="narrative-designer.xml/narrative_curve">B10 é o gancho de Thorin e B11 é o limiar da poção; fumaça/fade não são presumidos.</fact>
+    </relevant_facts>
+    <conflicts_with_task_context>
+      <conflict>
+        <durable_locator>scene-presentation-designer README: IDs 1-4 concentram busts no projeto.</durable_locator>
+        <current_locator>scene-presentation-designer.xml reserva ID 3/4; technical-artist.xml reserva ID 10 para Cut-In.</current_locator>
+        <resolution>current-source-prevails</resolution>
+        <gap_recorded>Adotar ID 10 como candidato mais seguro e remover reserva antecipada de ID 4; confirmação final depende de inventário de implementação.</gap_recorded>
+      </conflict>
+    </conflicts_with_task_context>
+    <freshness>
+      <status>uncertain</status>
+      <evidence>Os quatro artefatos são correntes para esta rodada, mas nenhum comprova z-order, timing, input, cache ou cleanup em runtime.</evidence>
+    </freshness>
+    <missing_context>
+      <item material="false" substitute_locator="technical-artist.xml/layer_and_picture_id_contract">Ownership numérico da UI PKD continua não confirmado; a recomendação não atribui IDs à choice UI.</item>
+      <item material="false" substitute_locator="human gates and Playtest">Local exato do background, Reed/Rheed, efeito de Confirmar e percepção de timing continuam abertos.</item>
+    </missing_context>
+    <cross_domain_lookup>
+      <required>false</required>
+      <destination>none</destination>
+      <requested_domain>none</requested_domain>
+      <requested_topics_or_ids />
+      <reason>Os próprios POVs fornecidos cobrem narrativa e arte técnica para esta revisão; lacunas restantes são gates, não novas leituras.</reason>
+    </cross_domain_lookup>
+    <result>ready-with-gaps</result>
+    <result_reason>Há evidência suficiente para resolver conflitos de proposta sem implementar; runtime e decisões humanas permanecem explicitamente pendentes.</result_reason>
+    <minimum_next_input>none</minimum_next_input>
+    <durable_doc_gap_handoff>
+      <required>false</required>
+      <destination>none</destination>
+      <gap_summary />
+    </durable_doc_gap_handoff>
+  </domain_context_preflight>
+
+  <agreements>
+    <agreement id="A01">A curva acolhimento → erro de nome → bifurcação cômica → Daratrine → Gildrat → Thorin → poção é idêntica entre o POV narrativo e o staging B01-B11.</agreement>
+    <agreement id="A02">B04 necessita leitura de surpresa da criança; B06 funciona com o bust atual de ironia/confiança; B02 e B08-B11 justificam variantes pensativa e solene do contador.</agreement>
+    <agreement id="A03">Picture IDs 1 e 2, canvas 408x560, âncora 0.5/1.0, escala 100% e troca sem salto devem ser preservados.</agreement>
+    <agreement id="A04">Um único Cut-In em B10 é compatível com o gancho narrativo de Thorin e com o contrato técnico de apenas um transient Cut-In por vez.</agreement>
+    <agreement id="A05">O background deve ser 1280x720, pouco contrastado sob busts/UI, sem texto ou lore visual inventado, e ficar abaixo das pictures.</agreement>
+    <agreement id="A06">Fumaça, vídeo e fade não são baseline; qualquer VFX de poção permanece condicionado e fora da solicitação inicial.</agreement>
+    <agreement id="A07">Reed/Rheed, consequência de Confirmar, nomes exatos, entrega dos assets e Playtest dos dois ramos permanecem gates materiais.</agreement>
+  </agreements>
+
+  <material_conflicts>
+    <conflict id="C01" severity="high" category="picture-id-layering">
+      <description>O POV de apresentação reserva ID 3 para o Cut-In, enquanto o contrato de arte técnica reserva ID 10 e seu validator pede cleanup antes do code 404, embora B10 ocorra depois da reconvergência.</description>
+      <locators>
+        <locator>scene-presentation-designer.xml/layer_and_picture_plan/layer[@id='L3']</locator>
+        <locator>technical-artist.xml/asset_contract/layer_and_picture_id_contract/layer[@picture_id='10']</locator>
+        <locator>technical-artist.xml/validation_matrix/validator[@id='TA-V05']</locator>
+        <locator>scene-presentation-designer.xml/beat_staging/beat[@id='B10']</locator>
+        <locator>docs/domains/scene-presentation-designer/README.md#risco-busts</locator>
+      </locators>
+      <recommended_resolution>Adotar picture ID 10, retirar ID 3 e corrigir o cleanup: erase depois de B10 e antes de B11, com nova asserção antes de COMPLETE_VN/FinishVisualNovel; não exigir ausência antes do code 404.</recommended_resolution>
+      <gate_required>Revisão técnica de picture ownership e Playtest de z-order.</gate_required>
+    </conflict>
+
+    <conflict id="C02" severity="high" category="conditional-vfx-id">
+      <description>O POV de apresentação reserva ID 4 e inclui VN046-VFX-01, enquanto a arte técnica exclui novos VFX por falta de necessidade provada e recomenda não ocupar IDs comuns de bust antecipadamente.</description>
+      <locators>
+        <locator>scene-presentation-designer.xml/layer_and_picture_plan/layer[@id='L4']</locator>
+        <locator>scene-presentation-designer.xml/preliminary_asset_manifest/asset[@id='VN046-VFX-01']</locator>
+        <locator>technical-artist.xml/preliminary_manifest/excluded_from_preliminary_request</locator>
+        <locator>narrative-designer.xml/narrative_curve/stage[@id='curve-09']/constraint</locator>
+      </locators>
+      <recommended_resolution>Remover VFX de fumaça e ID 4 da solicitação/contrato inicial. Manter apenas uma opção futura sem nome/ID congelado; reabrir depois de gate humano e inventário técnico se o efeito for aprovado.</recommended_resolution>
+      <gate_required>Aprovação explícita de poção/fumaça, novo manifesto de asset e reserva técnica de ID.</gate_required>
+    </conflict>
+
+    <conflict id="C03" severity="high" category="background-integration-and-path">
+      <description>O POV de apresentação mantém a superfície L0 não atribuída e propõe caminho VN046/BG_NoiteDaHistoria.png, enquanto a arte técnica prova tiles vazios e recomenda parallax opaco em frontend/img/parallaxes.</description>
+      <locators>
+        <locator>scene-presentation-designer.xml/background_briefing/implementation_boundary</locator>
+        <locator>scene-presentation-designer.xml/preliminary_asset_manifest/asset[@id='VN046-BG-01']</locator>
+        <locator>technical-artist.xml/asset_contract/requirements/asset_type[@id='vn-background']</locator>
+        <locator>technical-artist.xml/asset_contract/baseline/map/tile_layers</locator>
+      </locators>
+      <recommended_resolution>Consolidar o background como parallax 1280x720 opaco, candidato frontend/img/parallaxes/VN046_NoiteHistoria_BG.png. Não usar Show Picture nem renumerar IDs 1-2.</recommended_resolution>
+      <gate_required>Confirmação de diretório/nome, asset intake e Playtest de origem, fill e lifetime do parallax.</gate_required>
+    </conflict>
+
+    <conflict id="C04" severity="medium" category="asset-naming">
+      <description>Os nomes neutros ContadorHistoria_* do POV de apresentação evitam Reed/Rheed, mas divergem da convenção técnica proposta Reed_VN046_* ou Rheed_VN046_* e da ordem personagem-cena-expressão.</description>
+      <locators>
+        <locator>scene-presentation-designer.xml/preliminary_asset_manifest/asset[@id='VN046-POR-01' or @id='VN046-POR-02']</locator>
+        <locator>technical-artist.xml/asset_contract/requirements/asset_type[@id='expression-variant']/naming</locator>
+      </locators>
+      <recommended_resolution>Depois do gate Reed/Rheed, usar exatamente uma família: Reed_VN046_Pensativo/Solene.png ou Rheed_VN046_Pensativo/Solene.png; para a criança, CriancaOrc_VN046_Surpresa.png. Não renomear os dois busts existentes.</recommended_resolution>
+      <gate_required>Decisão Reed/Rheed e freeze do manifesto antes da entrega de assets.</gate_required>
+    </conflict>
+
+    <conflict id="C05" severity="medium" category="timing-and-reader-control">
+      <description>O POV de apresentação soma pausas fixas de 4-15f após várias entradas, enquanto o POV narrativo amplia B01, B02 e B08-B11 e o projeto permite text speed variável; waits acumulados podem tornar a abertura lenta.</description>
+      <locators>
+        <locator>scene-presentation-designer.xml/beat_staging/beat/timing</locator>
+        <locator>narrative-designer.xml/dialogue_proposals/dialogue[@id='D01' or @id='D02' or @id='D08' or @id='D09' or @id='D10' or @id='D11']</locator>
+        <locator>inventory.xml/presentation_baseline/message_window</locator>
+      </locators>
+      <recommended_resolution>Tratar 20f de enter/exit e 8-12f de focus shift como durações de animação, não como waits adicionais obrigatórios. Preservar avanço do jogador; inserir pausa fixa apenas quando mascara cleanup ou evita UI abrir sobre movimento.</recommended_resolution>
+      <gate_required>Playtest com pelo menos text speed lenta e rápida nos dois ramos.</gate_required>
+    </conflict>
+
+    <conflict id="C06" severity="medium" category="cut-in-lore-read">
+      <description>O briefing do Cut-In admite montanha como opção visual, mas o POV narrativo declara que Thorin “discutiria com uma montanha” é metáfora, não fato biográfico.</description>
+      <locators>
+        <locator>scene-presentation-designer.xml/visual_cut_in/composition/background</locator>
+        <locator>narrative-designer.xml/dialogue_proposals/dialogue[@id='D10']/justification</locator>
+        <locator>narrative-designer.xml/risks/risk[@id='R07']</locator>
+      </locators>
+      <recommended_resolution>Excluir montanha literal do briefing visual salvo evidência canônica independente. Usar Thorin em pose firme contra formas abstratas de Gildrat, sem representar discussão, batalha ou evento não confirmado.</recommended_resolution>
+      <gate_required>Seleção humana de referência canônica de Thorin e aprovação do briefing.</gate_required>
+    </conflict>
+
+  </material_conflicts>
+
+  <resolved_recommendation status="proposal-for-synthesis">
+    <background>
+      <runtime_role>map parallax</runtime_role>
+      <candidate_path>frontend/img/parallaxes/VN046_NoiteHistoria_BG.png</candidate_path>
+      <contract>1280x720 opaco, top-left, sem scaling; BG-B neutro por default; faixa inferior conservadora de 220px sem informação crítica e conteúdo essencial dentro das margens de 64px.</contract>
+    </background>
+    <busts>
+      <picture_id_1>Contador; bust existente mais variantes Pensativo e Solene após Reed/Rheed.</picture_id_1>
+      <picture_id_2>Criança; bust existente mais variante Surpresa.</picture_id_2>
+      <contract>408x560 RGBA, pivot 204/560, mesma silhueta/head placement/alpha edge e bottom contact por personagem.</contract>
+    </busts>
+    <cut_in>
+      <verdict>positive-conditional</verdict>
+      <beat>B10, apresentação de Thorin.</beat>
+      <picture_id>10 provisional</picture_id>
+      <candidate_path>frontend/img/pictures/CutIns/VN046_ThorinIntroducao_CutIn.png</candidate_path>
+      <contract>1280x720; foco x=96..1184/y=48..520; UI inferior reservada; sem texto, montanha literal, batalha, spoilers ou lore visual não aprovado.</contract>
+      <cleanup>Erase após B10 e antes de B11; validar novamente ausência antes de COMPLETE_VN e FinishVisualNovel.</cleanup>
+    </cut_in>
+    <vfx>Não solicitar fumaça nesta fase; nenhum ID reservado. Reabrir somente após gate específico.</vfx>
+    <timing>20f permanece baseline para enter/exit; 8-12f para focus shifts e 24-30f/18-24f para reveal/exit do Cut-In são faixas de animação, não waits cumulativos. Avanço continua reader-controlled.</timing>
+    <choice>Reusar InnButton_01 normal 388x101 e InnButton_00 hover 392x104; nenhuma mudança visual antes de Playtest da UI plugin-managed.</choice>
+  </resolved_recommendation>
+
+  <validator_notes>
+    <validator_note id="V01" severity="blocking-before-implementation">Parsear Map046 final e provar ausência de colisão para IDs 1, 2 e 10; não reservar ID 4.</validator_note>
+    <validator_note id="V02" severity="blocking-before-asset-request">Freeze do manifesto deve selecionar Reed ou Rheed e produzir nomes únicos; existing Reed final.png e CriancaOrc_.png não são renomeados.</validator_note>
+    <validator_note id="V03" severity="blocking-at-asset-intake">Validar bust variants 408x560 RGBA por overlay/pivot/bottom contact; background 1280x720 opaco; Cut-In 1280x720 no safe area.</validator_note>
+    <validator_note id="V04" severity="blocking-before-runtime-claim">Playtest 1280x720 de Confirmar e Corrigir, incluindo Name Input, normal/hover/input da choice, B10 Cut-In, B11, COMPLETE_VN e tela seguinte sem picture residual.</validator_note>
+    <validator_note id="V05" severity="runtime-pending">Testar text speed lenta e rápida; validar que focus shifts e transições não impõem espera redundante nem exibem asset load hitch.</validator_note>
+    <validator_note id="V06" severity="runtime-pending">Medir parallax origin/fill/lifetime, contraste com busts/UI, cache overlap aproximado de 9.080 MiB e frame pacing.</validator_note>
+  </validator_notes>
+
+  <gates>
+    <gate id="G01" status="open">Resolver Reed/Rheed e congelar nomes finais.</gate>
+    <gate id="G02" status="open">Definir efeito de Confirmar sobre o nome do Actor 1.</gate>
+    <gate id="G03" status="open">Aprovar BG-B ou confirmar localização/luz para BG-A.</gate>
+    <gate id="G04" status="open">Aprovar Cut-In B10 e referência canônica de Thorin.</gate>
+    <gate id="G05" status="open">Confirmar que fumaça fica fora desta entrega ou aprovar uma fase futura separada.</gate>
+    <gate id="G06" status="open">Aprovar manifesto final e adicionar assets nos paths exatos.</gate>
+    <gate id="G07" status="open">Revisão técnica de parallax, picture ID 10, choice ownership e cleanup.</gate>
+    <gate id="G08" status="runtime-pending">Playtest humano dos dois ramos e profiling antes de validar timing, composição, z-order, input, cache e cleanup.</gate>
+  </gates>
+
+  <freshness_signature>
+    <input_path>planos/004-ambientacao-VN/analise/agentes/narrative-designer.xml; planos/004-ambientacao-VN/analise/agentes/technical-artist.xml; planos/004-ambientacao-VN/analise/agentes/scene-presentation-designer.xml; planos/004-ambientacao-VN/analise/context/inventory.xml</input_path>
+    <upstream_output>Todos os três POVs estavam completed/proposal-only; inventory baseline Map046 sha256 73e00628022b18375aec7af714181dd3171fdfc8f9ec911cfcc76188f47eb5d2.</upstream_output>
+  </freshness_signature>
+
+  <completion_record terminal="true">
+    <result>completed-cross-review</result>
+    <affected_files>
+      <file>planos/004-ambientacao-VN/analise/agentes/scene-presentation-designer-review.xml</file>
+    </affected_files>
+    <validators>XML parse; template root/schema; source locators; severity/recommendation/gate on every conflict; consolidated IDs/layers/cleanup/background/Cut-In contract.</validators>
+    <human_validation>runtime-pending</human_validation>
+    <next_destination>synthesis</next_destination>
+    <execution_evidence>orchestrator-owned</execution_evidence>
+  </completion_record>
+</agentic_agent_review>

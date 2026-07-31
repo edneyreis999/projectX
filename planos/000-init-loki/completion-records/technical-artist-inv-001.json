@@ -1,0 +1,1 @@
+{"run_id":"loki-init-20260727-001","agent_run_id":"technical-artist-inv-001","handoff_id":"technical-artist-handoff-001","agent":"technical-artist","terminal_status":"complete","packet_ref":"technical-artist-001@1","files_written":[],"gates":["Playtest/profiling pending"],"next_destination":"loki-init packet intake"}

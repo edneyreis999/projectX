@@ -1,0 +1,22 @@
+execution_input:
+  schema_version: 2
+  command_identity:
+    schema_version: 2
+    command: loki-implement-feature
+    demand_digest: sha256:4021aead0f44973dcc2e04c34e7f90948d3aaed5c1212af29925a2ca20ff1f7c
+    analysis_digest: sha256:16eb10a1a3215352c848e1f0c8a113bfafeb3cb24f342d892c58c78d8efcfe5c
+    plan_directory: planos/001-cena-coreto-nova-arquitetura
+    retry_limit: 3
+    audit_configuration:
+      schema_version: 1
+      frequency: phase
+      source: default
+      policy_digest: sha256:9d771e1bd366103323316f2db51069775cc17e17859fed9c2ac0167a7b02440e
+  run_id: loki-run-v2:86550d0a2c2b24415570cf9599eeed021f6cd88b7a3fd0e51a014839fb5274f1
+  execution_id: loki-execution-v2:d00981de73a3d0fbd4fa7be081b5e8ae6e7292ef6de06afe9214b7f39bbdbe2c
+  demand_ref: planos/001-cena-coreto-nova-arquitetura/demanda-improved.md
+  analysis_ref: planos/001-cena-coreto-nova-arquitetura/analise-tecnica.md
+  state_ref: planos/001-cena-coreto-nova-arquitetura/tasks.md
+  result_ref: planos/001-cena-coreto-nova-arquitetura/builds/result-v3.yaml
+  dashboard_ref: planos/001-cena-coreto-nova-arquitetura/builds/dashboard-v3.md
+  consistency_packet_ref: planos/001-cena-coreto-nova-arquitetura/builds/consistency-v2.yaml

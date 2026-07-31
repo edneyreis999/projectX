@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agentic_agent_pov schema_version="1">
+  <identity>
+    <run_id>agentic-004-ambientacao-vn-v1</run_id>
+    <handoff_id>handoff-pov-runtime-qa-v1</handoff_id>
+    <agent_run_id>agent-run-pov-runtime-qa-v1</agent_run_id>
+    <agent>runtime-qa</agent>
+    <mode>proposal-only</mode>
+    <status>completed</status>
+  </identity>
+
+  <scope>Plano de QA estrutural e perceptível da proposta combinada para a VN do Map046, evento 1, página 1. Nenhum jogo foi executado e nenhum comportamento runtime foi validado.</scope>
+
+  <domain_context_preflight schema_version="1">
+    <agent>runtime-qa</agent>
+    <task_id>004-ambientacao-VN-runtime-qa-v1</task_id>
+    <required>true</required>
+    <domain_docs_root>docs/loki-init/runtime-qa</domain_docs_root>
+    <task_topics><topic>branch-runtime-qa</topic><topic>name-persistence</topic><topic>switches-43-44</topic><topic>pictures-layers-cleanup</topic><topic>quest-reachability</topic><topic>performance</topic></task_topics>
+    <task_domain_ids><domain_id>map-046</domain_id><domain_id>event-1-page-1</domain_id><domain_id>qualSeuNome</domain_id><domain_id>actor-1</domain_id><domain_id>switch-43</domain_id><domain_id>switch-44</domain_id></task_domain_ids>
+    <relevant_surfaces><surface>frontend/data/Map046.json event 1 page 1</surface><surface>VisuMZ_2_VNPictureBusts</surface><surface>PKD_VisualChoices_MZ</surface><surface>Coreto_QuestCore and Coreto_QuestVN</surface><surface>save/load and Actor 1 name</surface></relevant_surfaces>
+    <selection_basis><basis>O target exige QA dos dois ramos, estado persistido, switches, apresentação, reachability e performance.</basis><basis>A demanda, o inventário corrente e os três POVs substituem o contexto durável ausente sem autorizar runtime.</basis></selection_basis>
+    <read_attempt><readme_path>docs/loki-init/runtime-qa/README.md</readme_path><status>root-absent</status><reason>O diretório durável declarado para runtime-qa não existe no consumer.</reason></read_attempt>
+    <docs_considered />
+    <docs_read />
+    <relevant_facts>
+      <fact source_kind="current-source" source_locator="planos/004-ambientacao-VN/analise/context/inventory.xml:/execution_context_inventory/scene_structure">Map046 contém 11 mensagens, choice qualSeuNome com Confirmar/Corrigir e reconvergência compartilhada.</fact>
+      <fact source_kind="current-source" source_locator="frontend/data/Map046.json:/events/1/pages/0/list">A baseline possui guards nos índices 0-1, choices 13-39, Name Input de Actor 1 em 33, reconvergência 40-50 e handoff COMPLETE_VN/FinishVisualNovel/code 115 em 51-53.</fact>
+      <fact source_kind="current-source" source_locator="frontend/data/Map046.json:/events/1/pages/0/list[3,8,16,20,23,29,35,41]">Switch 43 é ligado seis vezes e switch 44 duas vezes, sempre por comandos unit-switch code 121.</fact>
+      <fact source_kind="current-source" source_locator="frontend/img/pictures/Choices/InnButton_00.png; frontend/img/pictures/Choices/InnButton_01.png">Metadata local atual: InnButton_00 é 392x104 e InnButton_01 é 388x101.</fact>
+    </relevant_facts>
+    <conflicts_with_task_context>
+      <conflict><durable_locator>none; domain root absent</durable_locator><current_locator>demanda-improved.md; inventory.xml; Map046.json; POV/review XMLs</current_locator><resolution>current-source-prevails</resolution><gap_recorded>Contexto durável de runtime-qa ausente; fontes correntes permitem produzir somente proposta e gates.</gap_recorded></conflict>
+      <conflict><durable_locator>planos/004-ambientacao-VN/analise/context/inventory.xml:/execution_context_inventory/presentation_baseline/choice_assets</durable_locator><current_locator>frontend/img/pictures/Choices/InnButton_00.png; frontend/img/pictures/Choices/InnButton_01.png</current_locator><resolution>current-source-prevails</resolution><gap_recorded>As dimensões no inventory.xml estão invertidas; revalidar no validator de asset intake.</gap_recorded></conflict>
+    </conflicts_with_task_context>
+    <freshness><status>uncertain</status><evidence>Baseline Map046 tem hash registrado, mas propostas concorrentes e nenhum Playtest impedem inferência runtime.</evidence></freshness>
+    <missing_context><item material="false" substitute_locator="current task sources">Contexto durável de runtime-qa ausente; não bloqueia uma proposta read-only.</item><item material="true" substitute_locator="none">Semântica dos switches 43/44 não foi diagnosticada; qualquer alteração neles permanece bloqueada.</item><item material="true" substitute_locator="human decision gate">Efeito de Confirmar sobre o nome de Actor 1 ainda não foi decidido.</item></missing_context>
+    <cross_domain_lookup><required>false</required><destination>none</destination><requested_domain>none</requested_domain><requested_topics_or_ids /><reason>Os POVs e reviews fornecidos são substitutos suficientes para definir QA; lacunas materiais são gates, não autorização para nova leitura ou escrita.</reason></cross_domain_lookup>
+    <result>ready-with-gaps</result><result_reason>É seguro produzir checklist proposal-only; implementação e claims runtime permanecem bloqueados pelos gaps materiais e pelo Playtest.</result_reason><minimum_next_input>none</minimum_next_input>
+    <durable_doc_gap_handoff><required>false</required><destination>none</destination><gap_summary><gap>docs/loki-init/runtime-qa ausente.</gap></gap_summary></durable_doc_gap_handoff>
+  </domain_context_preflight>
+
+  <runtime_qa_review>
+    <summary>A proposta é estruturalmente auditável, mas não está runtime-validada. O status recomendado é pending-human-validation; Confirmar, switches 43/44, ownership de pictures, assets e Playtest são gates materiais.</summary>
+    <affected_surfaces><surface>choice e branches</surface><surface>Name Input e persistência</surface><surface>switches 43/44</surface><surface>bustos, background e Cut-In</surface><surface>quest guards e transição</surface><surface>reachability, input e performance</surface></affected_surfaces>
+    <persona>game-dev</persona>
+    <recommended_status>pending-human-validation</recommended_status>
+    <human_question>Após implementação autorizada, o QA humano consegue anexar evidência separada de Confirmar e Corrigir, incluindo nome antes/depois/save-load, estados 43/44, choice/input, pictures/cleanup, quest transition e performance em cold/warm run?</human_question>
+  </runtime_qa_review>
+
+  <static_validation_plan classification="structural-validation-only">
+    <validator id="RQ-S01" severity="blocking" phase="before-and-after-implementation"><claim>Identidade e integridade do alvo</claim><method>Parsear frontend/data/Map046.json; localizar exclusivamente event 1/page 1; comparar SHA-256 inicial com inventory.xml e, após escrita, registrar novo hash e diff restrito ao objeto autorizado.</method><evidence>parse result, hashes e diff estruturado sem reflow ou IDs não autorizados</evidence></validator>
+    <validator id="RQ-S02" severity="blocking" phase="after-implementation"><claim>Estrutura completa de choices</claim><method>Enumerar code 102/402/403/404 e indents; exigir qualSeuNome1 e qualSeuNome2 uma vez cada, bodies em indent maior, code 404 correto e reconvergência compartilhada somente depois do fechamento.</method><evidence>path table Confirmar/Corrigir com primeiro e último comando de cada branch e ladder de indent</evidence></validator>
+    <validator id="RQ-S03" severity="blocking" phase="before-implementation"><claim>Contrato de nome de Confirmar decidido</claim><method>Exigir decisão explícita entre preservar o nome atual ou estabelecer Dulgarin. Se estabelecer, validar uma mutação de Actor 1 por mecanismo documentado e sua posição dentro de qualSeuNome1; se preservar, revisar B03-B05 para não afirmar estado falso.</method><evidence>decision ID, comando/mecanismo confirmado ou texto reconciliado; nenhuma inferência a partir da fala</evidence></validator>
+    <validator id="RQ-S04" severity="blocking" phase="after-implementation"><claim>Corrigir mantém Name Input e uso do nome</claim><method>Exigir code 303 parameters [1,8] dentro de qualSeuNome2 e uma mensagem posterior no mesmo branch com macro \\N[1]; proibir Name Input no ramo Confirmar salvo nova decisão humana.</method><evidence>locators estruturados do code 303, macro e branch</evidence></validator>
+    <validator id="RQ-S05" severity="blocking" phase="before-and-after-implementation"><claim>Switches 43/44 preservados até diagnóstico</claim><method>Na ausência de semântica aprovada, comparar a sequência baseline exata: 43 em list[3,8,16,23,35,41] e 44 em list[20,29], todos code 121 unit-switch [id,id,0], associados aos mesmos blocos/branches. Qualquer remoção, reorder ou mudança de operação falha.</method><evidence>lista before/after por index lógico, branch, message locator e command shape; diagnóstico separado se houver mudança aprovada</evidence></validator>
+    <validator id="RQ-S06" severity="blocking" phase="after-implementation"><claim>Guards, transição e término da quest preservados</claim><method>AssertVisualNovelSession(noite-da-historia,CENA_PRINCIPAL) e AssertQuestState(noite-da-historia,10) permanecem antes da apresentação; QuestTransition(noite-da-historia,COMPLETE_VN), FinishVisualNovel e code 115 permanecem uma vez, nesta ordem, após cleanup.</method><evidence>plugin owner/command/args e ordem dos locators</evidence></validator>
+    <validator id="RQ-S07" severity="blocking" phase="asset-intake"><claim>Referências de asset exatas</claim><method>Para cada asset aprovado, validar path/case, extensão, decode e unicidade; busts 408x560 RGBA com overlay/pivot; background 1280x720 opaco; Cut-In 1280x720 conforme safe area. Confirmar InnButton_00=392x104 e InnButton_01=388x101 sem trocar seus papéis configurados.</method><evidence>manifesto congelado, metadata, checksums e overlay report</evidence></validator>
+    <validator id="RQ-S08" severity="blocking" phase="after-implementation"><claim>Pictures, layers e cleanup por caminho</claim><method>Enumerar Enter/Exit/Erase de cada path. Preservar IDs 1 e 2; usar o slot transitório de Cut-In somente após ownership confirmado (candidato atual 10, nunca 3/4 por suposição); exigir picture 2 apagada em todos os paths em que entra e Cut-In apagado depois de B10, antes de B11 e novamente ausente antes de COMPLETE_VN/FinishVisualNovel.</method><evidence>state trace por branch e beat; ausência de colisão e de ID 4 reservado</evidence></validator>
+    <validator id="RQ-S09" severity="high" phase="after-implementation"><claim>Background não encobre bust/UI nem vaza</claim><method>Se parallax for aprovado, validar Map046 parallaxName, ausência de tile mutation não planejada e nenhum Show Picture de background. Se outra superfície for escolhida, exigir decisão de layer/IDs e novo validator específico; lifetime perceptível continua runtime-pending.</method><evidence>Map046 fields, picture inventory e decisão técnica</evidence></validator>
+    <validator id="RQ-S10" severity="high" phase="after-implementation"><claim>Reachability estática e caller chain</claim><method>Inventariar callers/rotas que iniciam CENA_PRINCIPAL e confirmar que IDs/keys permanecem referenciados. Não concluir reachability apenas porque os guards existem no evento alvo.</method><evidence>caller locators e route table; Playtest ainda obrigatório</evidence></validator>
+    <validator id="RQ-S11" severity="medium" phase="before-playtest"><claim>Budget e preload são hipóteses mensuráveis</claim><method>Recalcular o conjunto simultâneo final e registrar estratégia de preload realmente escolhida. Tratar 5.564 MiB/9.080 MiB como estimativas RGBA, nunca como residência ou ausência de hitch.</method><evidence>asset set final, estimativa reproduzível e plano de profiling</evidence></validator>
+    <validator id="RQ-S12" severity="blocking" phase="after-implementation"><claim>Sem escopo visual implícito</claim><method>Falhar se fumaça, vídeo, fade, novo áudio, nova choice art ou picture ID 4 aparecer sem decisão humana e manifesto próprios.</method><evidence>structured diff e asset-reference inventory</evidence></validator>
+  </static_validation_plan>
+
+  <human_playtest_matrix status="required-not-run" resolution="1280x720">
+    <scenario id="RQ-P01" route="Confirmar" precondition="sessão noite-da-historia/CENA_PRINCIPAL válida; quest state 10; Actor 1 com nome de controle conhecido"><checks>reachability pelo caller real; B01-B02; choice normal/hover; teclado/gamepad/mouse conforme suporte; branch qualSeuNome1; ausência de Name Input; efeito aprovado sobre nome; B03-B05; reconvergência B08-B11; COMPLETE_VN; FinishVisualNovel; cena seguinte</checks><evidence>vídeo ou capturas com nome antes/depois, input usado, checkpoints e resultado da quest</evidence></scenario>
+    <scenario id="RQ-P02" route="Corrigir" precondition="mesma baseline de P01 em save isolado"><checks>branch qualSeuNome2; B06; Name Input Actor 1; inserir nome distintivo com até 8 caracteres; B07 renderiza exatamente o nome; reconvergência; COMPLETE_VN; cena seguinte</checks><evidence>capturas antes do input, B07 e após transição; nome digitado registrado</evidence></scenario>
+    <scenario id="RQ-P03" route="Confirmar+Corrigir" precondition="saves isolados por rota"><checks>salvar e recarregar depois da escolha e depois da transição; confirmar a política aprovada de nome em Confirmar e persistência do nome digitado em Corrigir; verificar que rotas não contaminam uma à outra</checks><evidence>save slot/test ID, nome antes/depois de load e ponto exato do save</evidence></scenario>
+    <scenario id="RQ-P04" route="both" precondition="telemetria/debugger sem alterar produção"><checks>observar switches 43/44 antes e após cada fala associada; correlacionar estado e efeito perceptível; verificar ausência de trigger duplicado e paridade entre branches</checks><evidence>trace timestamped por beat B01-B08 e captura do efeito; resultado pode ser inconclusivo, nunca inferido</evidence></scenario>
+    <scenario id="RQ-P05" route="both" precondition="background e bust variants aprovados/instalados"><checks>background fill/origin/lifetime; contraste; message readability; bust IDs 1/2; crop, eye line, swap sem salto; focus shifts; Name Input e choice acima dos visuais; nenhum residual após reconvergência/transição</checks><evidence>capturas em B02, B04/B06, B08, B11 e cena seguinte para cada rota</evidence></scenario>
+    <scenario id="RQ-P06" route="both" precondition="Cut-In aprovado e instalado; caso contrário registrar N/A"><checks>Cut-In aparece somente em B10, abaixo da UI, sem literalizar lore, sem colisão; desaparece antes de B11 e permanece ausente após COMPLETE_VN</checks><evidence>capturas B09/B10/B11 e pós-transição, mais ID observado</evidence></scenario>
+    <scenario id="RQ-P07" route="both" precondition="text speed lenta e rápida"><checks>reader control; nenhum wait redundante; choice/Name Input não abrem durante movimento; timing dos enters/exits/focus/Cut-In; paridade aceitável entre rotas</checks><evidence>tempos aproximados por checkpoint e vídeo nas duas velocidades</evidence></scenario>
+    <scenario id="RQ-P08" route="guards-and-reachability" precondition="saves de teste com sessão/quest válidas e inválidas"><checks>rota válida alcança exatamente o evento; estado/sessão inválidos não avançam silenciosamente; evento não duplica; saída chega ao destino correto e estado terminal esperado</checks><evidence>matriz de precondições, ponto de entrada, resultado/erro observável e estado final</evidence></scenario>
+    <scenario id="RQ-P09" route="both-cold-and-warm" precondition="profiling disponível no alvo de teste"><checks>cold load e warm replay; hitch no primeiro background/bust/Cut-In; frame pacing em transitions; pico/overlap de textura quando mensurável; ausência de degradação na segunda rota</checks><evidence>ferramenta/métrica usada, timestamps/frame-time ou observação rotulada como qualitativa</evidence></scenario>
+  </human_playtest_matrix>
+
+  <risks>
+    <risk id="RQ-R01" severity="critical">A fala/staging de Confirmar pode afirmar Dulgarin sem estado correspondente.</risk>
+    <risk id="RQ-R02" severity="high">Mover ou remover switches 43/44 sem diagnóstico pode quebrar comportamento invisível ao diff textual.</risk>
+    <risk id="RQ-R03" severity="high">Picture IDs 3/4/10 e ownership da UI não convergem; colisão e resíduos são possíveis.</risk>
+    <risk id="RQ-R04" severity="high">Guards presentes não provam reachability nem término correto da quest.</risk>
+    <risk id="RQ-R05" severity="medium">Parallax, Cut-In e preload têm claims de fill/lifetime/performance não demonstráveis estaticamente.</risk>
+  </risks>
+
+  <gates>
+    <gate id="RQ-G01" status="open" severity="blocking">Decidir Reed/Rheed e congelar manifesto.</gate>
+    <gate id="RQ-G02" status="open" severity="blocking">Decidir o efeito de Confirmar sobre Actor 1.</gate>
+    <gate id="RQ-G03" status="open" severity="blocking">Diagnosticar switches 43/44 antes de alterá-los; preservá-los por default.</gate>
+    <gate id="RQ-G04" status="open" severity="blocking">Aprovar background, Cut-In opcional e exclusão/inclusão separada de VFX.</gate>
+    <gate id="RQ-G05" status="open" severity="blocking">Confirmar ownership de picture IDs e cleanup, então congelar paths/assets exatos.</gate>
+    <gate id="RQ-G06" status="pending-human-validation" severity="blocking">Executar e assinar RQ-P01 a RQ-P09 após implementação.</gate>
+  </gates>
+
+  <completion_record terminal="true">
+    <result>completed-proposal-only</result>
+    <files><file>planos/004-ambientacao-VN/analise/agentes/runtime-qa.xml</file></files>
+    <validators><validator>XML parse</validator><validator>static validator matrix completeness</validator><validator>human Playtest route and surface coverage</validator></validators>
+    <gates><gate>human-validation pending</gate><gate>approval pending</gate></gates>
+    <next_destination>cross-review-and-synthesis</next_destination>
+    <execution_evidence>orchestrator-owned; runtime unavailable</execution_evidence>
+  </completion_record>
+</agentic_agent_pov>

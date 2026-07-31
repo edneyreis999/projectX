@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agentic_agent_review schema_version="1">
+  <review>
+    <run_id>agentic-004-ambientacao-vn-v1</run_id>
+    <analysis_id>004-ambientacao-VN</analysis_id>
+    <reviewer_agent>narrative-designer</reviewer_agent>
+    <reviewed_agent>scene-presentation-designer + technical-artist</reviewed_agent>
+    <handoff_id>handoff-cross-review-narrative-v1</handoff_id>
+    <agent_run_id>agent-run-cross-review-narrative-v1</agent_run_id>
+    <mode>cross-review-proposal-only</mode>
+    <status>completed</status>
+  </review>
+
+  <review_scope>Revisar a compatibilidade dos POVs de apresentação e arte técnica com a voz oral do contador, os beats B01-B11, os ramos Confirmar/Corrigir, a continuidade Daratrine-Gildrat-Thorin, os limites de lore e os gates Reed/Rheed, consequência de Confirmar, switches 43/44 e staging histórico. Nenhum runtime, asset, POV upstream ou documento foi alterado.</review_scope>
+
+  <domain_context_preflight schema_version="1">
+    <agent>narrative-designer</agent>
+    <task_id>handoff-cross-review-narrative-v1</task_id>
+    <required>true</required>
+    <domain_docs_root>docs/domains/narrative-designer</domain_docs_root>
+    <task_topics>
+      <topic>cross-review-VN-staging</topic>
+      <topic>oral-storyteller-voice</topic>
+      <topic>branching-name-choice</topic>
+      <topic>Daratrine-Gildrat-Thorin-continuity</topic>
+      <topic>visual-lore-boundary</topic>
+    </task_topics>
+    <task_domain_ids>
+      <domain_id>map-046</domain_id>
+      <domain_id>event-1-page-1</domain_id>
+      <domain_id>beats-B01-B11</domain_id>
+      <domain_id>choice-qualSeuNome</domain_id>
+      <domain_id>character-Thorin</domain_id>
+    </task_domain_ids>
+    <relevant_surfaces>
+      <surface>scene-presentation-designer POV: beat staging, background, Cut-In, expressions, layers and cleanup</surface>
+      <surface>technical-artist POV: asset contracts, picture IDs, naming, memory and validation</surface>
+      <surface>narrative-designer POV: dialogue, curve, voice, lore and gates</surface>
+      <surface>inventory.xml: current runtime baseline and material conflicts</surface>
+    </relevant_surfaces>
+    <selection_basis>
+      <basis>O README do domínio é a menor fonte durável para voz oral, Thorin, ordem Gildrat-Daratrine e limites de validação de tom/pacing.</basis>
+      <basis>Os três POVs e o inventário são as fontes correntes exatas nomeadas no envelope de cross-review.</basis>
+      <basis>Nenhum documento adicional é necessário para classificar compatibilidade, conflitos e gates sem implementar.</basis>
+    </selection_basis>
+    <read_attempt>
+      <readme_path>docs/domains/narrative-designer/README.md</readme_path>
+      <status>read</status>
+      <reason>README lido primeiro para preservar cânone, voz e fronteira de validação antes da comparação dos POVs.</reason>
+    </read_attempt>
+    <docs_considered>
+      <doc>
+        <path>docs/domains/narrative-designer/README.md</path>
+        <routed_by>README</routed_by>
+        <selected>true</selected>
+        <reason>Cobre exatamente Rheed oral, Thorin protagonista, Gildrat anterior a Daratrine e Playtest pendente.</reason>
+      </doc>
+    </docs_considered>
+    <docs_read>
+      <doc>
+        <path>docs/domains/narrative-designer/README.md</path>
+        <relevance>Baseline durável mínima para julgar voz, continuidade e risco de lore visual.</relevance>
+        <matched_topics>oral-storyteller-voice; Daratrine-Gildrat-Thorin-continuity; visual-lore-boundary</matched_topics>
+        <matched_domain_ids>character-Thorin; place-Daratrine; place-Gildrat</matched_domain_ids>
+        <matched_surfaces>dialogue, staging and Cut-In content</matched_surfaces>
+        <freshness_status>uncertain</freshness_status>
+        <freshness_evidence>O README é atual para intenção/cânone, mas a grafia Rheed diverge do runtime Reed e tom/pacing continuam sem Playtest.</freshness_evidence>
+      </doc>
+    </docs_read>
+    <relevant_facts>
+      <fact source_kind="durable-doc" source_locator="docs/domains/narrative-designer/README.md">Rheed possui voz oral; Thorin é protagonista; Gildrat é enquadrada antes de Daratrine; mapa não valida tom ou pacing.</fact>
+      <fact source_kind="current-source" source_locator="planos/004-ambientacao-VN/analise/context/inventory.xml">A baseline possui 11 mensagens, dois ramos, IDs de bust 1-2, oito ativações dos switches 43/44 e nenhum background, fumaça, vídeo, fade ou animação.</fact>
+      <fact source_kind="current-source" source_locator="planos/004-ambientacao-VN/analise/agentes/narrative-designer.xml">A curva aprovada como proposta é acolhimento → erro de nome → bifurcação → Daratrine → Gildrat → Thorin → poção/transição.</fact>
+      <fact source_kind="current-source" source_locator="planos/004-ambientacao-VN/analise/agentes/scene-presentation-designer.xml">O POV visual cobre B01-B11, propõe três variantes expressivas, background condicionado, Cut-In condicional em B10 e fumaça condicionada em B11.</fact>
+      <fact source_kind="current-source" source_locator="planos/004-ambientacao-VN/analise/agentes/technical-artist.xml">O POV técnico preserva busts 408x560, prefere background por parallax e mantém nomes, IDs transitórios e Cut-In como provisórios.</fact>
+    </relevant_facts>
+    <conflicts_with_task_context>
+      <conflict>
+        <durable_locator>docs/domains/narrative-designer/README.md: Rheed</durable_locator>
+        <current_locator>inventory.xml e POVs: asset/runtime Reed final</current_locator>
+        <resolution>current-source-prevails</resolution>
+        <gap_recorded>Reed descreve somente a baseline atual; a grafia canônica e os nomes futuros permanecem gate humano.</gap_recorded>
+      </conflict>
+      <conflict>
+        <durable_locator>Intenção histórica de poção/fumaça/vídeo/fade referenciada pelos POVs</durable_locator>
+        <current_locator>inventory.xml: nenhum desses elementos está materializado no runtime</current_locator>
+        <resolution>current-source-prevails</resolution>
+        <gap_recorded>Staging histórico permanece opção condicionada e não pode ser promovido por síntese automática.</gap_recorded>
+      </conflict>
+    </conflicts_with_task_context>
+    <freshness>
+      <status>uncertain</status>
+      <evidence>Todos os quatro inputs correntes foram lidos com hashes registrados; identidade, consequência de branch, switches e staging continuam deliberadamente abertos.</evidence>
+    </freshness>
+    <missing_context>
+      <item material="false" substitute_locator="inventory.xml e gates dos POVs">Sem decisão Reed/Rheed; aliases sem nome próprio permitem revisar a proposta.</item>
+      <item material="false" substitute_locator="narrative-designer.xml:G02 e scene-presentation-designer.xml:G02">Sem decisão sobre Confirmar; a revisão classifica compatibilidade condicional.</item>
+      <item material="false" substitute_locator="inventory.xml:C02 e narrative-designer.xml:G03">Sem semântica validada dos switches 43/44; a revisão proíbe removê-los ou deslocá-los sem gate técnico.</item>
+    </missing_context>
+    <cross_domain_lookup>
+      <required>false</required>
+      <destination>none</destination>
+      <requested_domain>none</requested_domain>
+      <requested_topics_or_ids />
+      <reason>Os POVs especializados fornecidos bastam para o cross-review; decisões técnicas e humanas permanecem gates de síntese/implementação.</reason>
+    </cross_domain_lookup>
+    <result>ready-with-gaps</result>
+    <result_reason>A revisão pode classificar compatibilidades e conflitos sem resolver os quatro gates materiais nem ampliar fontes.</result_reason>
+    <minimum_next_input>none</minimum_next_input>
+    <durable_doc_gap_handoff>
+      <required>false</required>
+      <destination>none</destination>
+      <gap_summary>
+        <gap>Nenhuma correção documental foi autorizada; conflitos seguem para síntese e decisão humana.</gap>
+      </gap_summary>
+    </durable_doc_gap_handoff>
+  </domain_context_preflight>
+
+  <agreements>
+    <agreement id="A01" locators="narrative-designer.xml:narrative_curve; scene-presentation-designer.xml:presentation_assessment">Os POVs compartilham a mesma curva: calor e humor na chegada, bifurcação cômica, reconvergência afetiva, escala histórica, Thorin como gancho e poção como limiar.</agreement>
+    <agreement id="A02" locators="narrative-designer.xml:beat_analysis[B01-B11]; scene-presentation-designer.xml:beat_staging[B01-B11]">Os onze beats usam os mesmos locators e ramos; não há omissão de Confirmar, Corrigir, Name Input ou reconvergência.</agreement>
+    <agreement id="A03" locators="narrative-designer.xml:B01-B03; scene-presentation-designer.xml:B01-B03">Acolhimento expansivo em B01, esforço de memória em B02 e orgulho performático em B03 são compatíveis com a voz oral proposta.</agreement>
+    <agreement id="A04" locators="narrative-designer.xml:B04-B07; scene-presentation-designer.xml:B04-B07">Surpresa breve em Confirmar e ironia/confiança em Corrigir sustentam as vozes dos ramos; o Name Input permanece o único foco interativo em seu gateway.</agreement>
+    <agreement id="A05" locators="narrative-designer.xml:B08-B11; scene-presentation-designer.xml:B08-B11">A variante solene do contador e a progressão visual contida apoiam a passagem Daratrine → Gildrat → Thorin → ritual sem exigir novas falas.</agreement>
+    <agreement id="A06" locators="scene-presentation-designer.xml:preliminary_asset_manifest; technical-artist.xml:asset_contract">Reuso dos busts atuais, variantes 408x560 registradas por personagem, background 1280x720 e ausência de nova arte de escolha são tecnicamente compatíveis.</agreement>
+    <agreement id="A07" locators="scene-presentation-designer.xml:visual_cut_in; technical-artist.xml:visual-cut-in">Um único Cut-In em B10 é compatível como opção, desde que permaneça condicional, use referência canônica e seja apagado antes de B11.</agreement>
+    <agreement id="A08" locators="scene-presentation-designer.xml:background_briefing[BG-B]; technical-artist.xml:vn-background">O fundo noturno neutro é a opção mais segura para lore enquanto a localização e a fonte de luz não forem confirmadas.</agreement>
+    <agreement id="A09" locators="todos os POVs:human_gates/validation_matrix">Playtest humano dos dois ramos continua obrigatório para pacing, legibilidade, input, layering, cleanup e transição.</agreement>
+  </agreements>
+
+  <findings>
+    <finding id="F01" severity="high" class="gate-omission" status="must-carry-to-synthesis">
+      <locators>
+        <source>inventory.xml:/execution_context_inventory/material_conflicts/conflict[@id='C02']</source>
+        <source>narrative-designer.xml:/agentic_agent_pov/human_gates/gate[@id='G03']</source>
+        <target>scene-presentation-designer.xml:/agentic_agent_pov/beat_staging</target>
+        <target>technical-artist.xml:/agentic_agent_pov/validation_matrix</target>
+      </locators>
+      <description>Os POVs visual e técnico reorganizam entradas, saídas, swaps e cleanup, mas não carregam explicitamente o gate dos switches 43/44, ativados oito vezes junto às mensagens. A revisão não pode assumir que são ornamentais ou obsoletos.</description>
+      <impact>Uma implementação baseada apenas nesses POVs poderia remover, deslocar ou deixar incoerente uma sinalização cuja semântica ainda não foi diagnosticada.</impact>
+      <recommendation>Adicionar à síntese um gate técnico bloqueante: preservar todas as ativações 43/44 por default; qualquer remoção ou reposicionamento exige diagnóstico de semântica e validação de ambos os ramos.</recommendation>
+    </finding>
+
+    <finding id="F02" severity="high" class="technical-contract-conflict" status="resolve-before-final-manifest">
+      <locators>
+        <source>scene-presentation-designer.xml:/agentic_agent_pov/layer_and_picture_plan/layer[@id='L3' or @id='L4']</source>
+        <source>technical-artist.xml:/agentic_agent_pov/asset_contract/layer_and_picture_id_contract</source>
+      </locators>
+      <description>O POV visual reserva provisoriamente ID 3 ao Cut-In e ID 4 à fumaça; o POV técnico reserva ID 10 ao Cut-In e não reconhece necessidade comprovada de VFX. Ambos admitem que a UI de escolhas pode possuir ownership não inventariado.</description>
+      <impact>Escolher um ID por síntese sem inventário runtime pode causar colisão, cleanup incompleto ou picture residual sobre a reconvergência/transição.</impact>
+      <recommendation>Na síntese, referir-se apenas a “slot transitório de Cut-In” e “slot transitório de VFX”. Congelar IDs somente após inventário de ownership do plugin; exigir erase antes de B11/COMPLETE_VN.</recommendation>
+    </finding>
+
+    <finding id="F03" severity="high" class="asset-contract-conflict" status="resolve-after-human-gates">
+      <locators>
+        <source>scene-presentation-designer.xml:/agentic_agent_pov/preliminary_asset_manifest</source>
+        <source>technical-artist.xml:/agentic_agent_pov/preliminary_manifest</source>
+      </locators>
+      <description>Os candidatos divergem em token de personagem, diretório e padrão: ContadorHistoria_* versus Reed/Rheed_VN046_*, pictures/VN046 versus parallaxes/CutIns e nomes distintos de background/Cut-In.</description>
+      <impact>Solicitar assets antes de reconciliar o contrato produziria arquivos duplicados, nomes instáveis ou referências quebradas.</impact>
+      <recommendation>Tratar IDs semânticos VN046-POR/BG/CUT/VFX como aliases de análise. Após gates Reed/Rheed, localização, Cut-In e staging, emitir um único manifesto final que congele caminho, nome, extensão e função.</recommendation>
+    </finding>
+
+    <finding id="F04" severity="medium" class="source-metadata-conflict" status="verify-before-manifest">
+      <locators>
+        <source>inventory.xml:/execution_context_inventory/presentation_baseline/choice_assets</source>
+        <source>scene-presentation-designer.xml:/agentic_agent_pov/layer_and_picture_plan/choice_assets_observation</source>
+        <source>technical-artist.xml:/agentic_agent_pov/asset_contract/baseline/choice_system</source>
+      </locators>
+      <description>Inventário e POV visual registram InnButton_01 como 392x104 e InnButton_00 como 388x101; o POV técnico associa 388x101 a InnButton_01 e 392x104 a InnButton_00.</description>
+      <impact>A divergência não muda as escolhas nem pede arte nova, mas enfraquece qualquer contrato de layout, hitbox ou validação dimensional baseado nesses números.</impact>
+      <recommendation>Reverificar os dois PNGs por metadata antes da síntese final. Até lá, preservar apenas os paths e a decisão de reuso, sem publicar dimensões como fato reconciliado.</recommendation>
+    </finding>
+
+    <finding id="F05" severity="high" class="lore-visualization-boundary" status="conditional-approval-only">
+      <locators>
+        <source>narrative-designer.xml:/agentic_agent_pov/dialogue_proposals/dialogue[@id='D10']</source>
+        <source>narrative-designer.xml:/agentic_agent_pov/risks/risk[@id='R07']</source>
+        <target>scene-presentation-designer.xml:/agentic_agent_pov/visual_cut_in</target>
+      </locators>
+      <description>A fala compara a teimosia de Thorin a discutir com uma montanha. O briefing do Cut-In aceita pedra/montanha como opção abstrata; uma composição literal poderia converter a metáfora em evento canônico ou caricatura.</description>
+      <impact>O primeiro retrato de Thorin ganharia lore visual não aprovado e poderia deslocar o tom de “gancho cômico-heroico” para gag ou cena histórica falsa.</impact>
+      <recommendation>Se o Cut-In for aprovado, mostrar Thorin em retrato/atitude canônica, sem interação literal com montanha e sem brasões, arquitetura ou ação não confirmados. Manter a montanha apenas como linguagem verbal ou textura abstrata não narrativa.</recommendation>
+    </finding>
+
+    <finding id="F10" severity="high" class="branch-consequence-gate" status="open-human-gate">
+      <locators>
+        <source>inventory.xml:/execution_context_inventory/material_conflicts/conflict[@id='C03']</source>
+        <source>narrative-designer.xml:/agentic_agent_pov/dialogue_proposals/dialogue[@id='D03' or @id='D04' or @id='D05']</source>
+        <target>scene-presentation-designer.xml:/agentic_agent_pov/beat_staging/beat[@id='B03' or @id='B04' or @id='B05']</target>
+      </locators>
+      <description>Staging triunfante e surpresa reforçam que Dulgarin é o nome real, enquanto o ramo Confirmar atual não altera explicitamente Actor 1.</description>
+      <impact>Apresentação mais forte tornaria a possível inconsistência de estado ainda mais perceptível.</impact>
+      <recommendation>Não aprovar definitivamente D03-D05, a expressão surpresa ou a performance de “acerto” antes de decidir a consequência de Confirmar. O staging não pode compensar a ausência de efeito no estado.</recommendation>
+    </finding>
+
+  </findings>
+
+  <material_conflicts>
+    <conflict id="MC01">
+      <description>Switches 43/44 são fatos atuais e gate narrativo/técnico, mas não foram carregados explicitamente pelos POVs visual e técnico.</description>
+      <recommended_resolution>Preservar comandos e ordem por default; diagnosticar antes de qualquer alteração de mensagem, bust, expressão ou cleanup.</recommended_resolution>
+      <gate_required>true</gate_required>
+    </conflict>
+    <conflict id="MC02">
+      <description>IDs provisórios 3/4 versus 10 e ownership desconhecido da UI impedem contrato final de layers.</description>
+      <recommended_resolution>Usar aliases semânticos até inventário runtime e congelar um único plano de IDs antes da implementação.</recommended_resolution>
+      <gate_required>true</gate_required>
+    </conflict>
+    <conflict id="MC03">
+      <description>Nomes e diretórios de background, Cut-In e variantes divergem entre os POVs.</description>
+      <recommended_resolution>Emitir um único manifesto após Reed/Rheed, localização, Cut-In e staging serem decididos.</recommended_resolution>
+      <gate_required>true</gate_required>
+    </conflict>
+    <conflict id="MC04">
+      <description>Confirmar encena Dulgarin como nome real sem operação explícita de nome no runtime atual.</description>
+      <recommended_resolution>Decisão humana sobre o estado de Actor 1 antes de aprovar texto/staging do ramo.</recommended_resolution>
+      <gate_required>true</gate_required>
+    </conflict>
+    <conflict id="MC05">
+      <description>Fumaça/vídeo/fade existem somente como intenção histórica; apenas fumaça foi proposta visualmente.</description>
+      <recommended_resolution>Manter fora do manifesto base e exigir aprovação explícita para qualquer item condicional.</recommended_resolution>
+      <gate_required>true</gate_required>
+    </conflict>
+  </material_conflicts>
+
+  <gates_preserved>
+    <gate id="G-REED-RHEED" status="open">Não decidir grafia, identidade pública ou token de filename.</gate>
+    <gate id="G-CONFIRMAR" status="open">Não decidir se Confirmar define, preserva ou apenas reconhece Dulgarin.</gate>
+    <gate id="G-SWITCHES-43-44" status="open">Não remover, reposicionar ou reinterpretar switches sem diagnóstico técnico.</gate>
+    <gate id="G-STAGING-HISTORICO" status="open">Não promover poção/fumaça/vídeo/fade histórico a runtime; a poção verbal atual não autoriza VFX.</gate>
+    <gate id="G-TOM-PACING" status="open">Validação humana de voz, humor, leitura e pacing dos dois ramos.</gate>
+    <gate id="G-ASSETS" status="open">Congelar nomes, paths, formatos, IDs e confirmar arquivos antes de qualquer implementação.</gate>
+  </gates_preserved>
+
+  <validator_notes>
+    <validator_note id="VN01" status="passed">Os três POVs e o inventário são XML parseáveis e pertencem ao run agentic-004-ambientacao-vn-v1.</validator_note>
+    <validator_note id="VN02" status="passed">B01-B11 e Confirmar/Corrigir são compatíveis por ID e locator entre narrativa e apresentação.</validator_note>
+    <validator_note id="VN03" status="passed-with-findings">Contratos visuais são narrativamente compatíveis quando Cut-In, localização e VFX permanecem condicionais.</validator_note>
+    <validator_note id="VN04" status="failed-needs-resolution">Não existe contrato final convergente de IDs, nomes ou diretórios entre apresentação e arte técnica.</validator_note>
+    <validator_note id="VN05" status="failed-needs-resolution">Dimensões de InnButton_00/01 divergem entre inventory.xml e technical-artist.xml.</validator_note>
+    <validator_note id="VN06" status="open-gate">Switches 43/44, Reed/Rheed, Confirmar e staging histórico permanecem abertos e foram explicitamente preservados.</validator_note>
+    <validator_note id="VN07" status="runtime-pending">Pacing, foco, parallax, draw order, Cut-In, input, performance e cleanup exigem Playtest dos dois ramos.</validator_note>
+  </validator_notes>
+
+  <synthesis_recommendations>
+    <recommendation priority="1">Adotar como núcleo a curva narrativa e a matriz de expressões B01-B11, com background neutro e sem VFX.</recommendation>
+    <recommendation priority="2">Levar para decisão humana Reed/Rheed e consequência de Confirmar antes de fechar falas B03-B05 ou nomes de assets.</recommendation>
+    <recommendation priority="3">Preservar switches 43/44 e exigir diagnóstico antes de qualquer reestruturação de comandos.</recommendation>
+    <recommendation priority="4">Tratar parallax como candidato técnico preferencial para o background, sujeito a fill/origin/readability e localização.</recommendation>
+    <recommendation priority="5">Manter Cut-In de Thorin como opção separada; se aprovado, proibir literalização da montanha e lore visual não confirmado.</recommendation>
+    <recommendation priority="6">Manter fumaça fora do pacote base; habilitar somente por gate específico.</recommendation>
+    <recommendation priority="7">Congelar um único contrato de paths, nomes, IDs e cleanup somente após os gates e o inventário técnico.</recommendation>
+  </synthesis_recommendations>
+
+  <freshness_signature>
+    <input_path>planos/004-ambientacao-VN/analise/agentes/scene-presentation-designer.xml; planos/004-ambientacao-VN/analise/agentes/technical-artist.xml; planos/004-ambientacao-VN/analise/agentes/narrative-designer.xml; planos/004-ambientacao-VN/analise/context/inventory.xml</input_path>
+    <upstream_output>sha256 scene-presentation-designer=cf043fb566a041a4142eee2155358f2f09b39ea1332df7864354e4b501bf5e23; technical-artist=d5f0f43f97ce7c73d91e90c953391f6b5de803d2b9f6c698849616b499884f44; narrative-designer=e630b78745dd9fd4a898becb3b906d9bbac0ed17e225d2e310ae8ccd160fe66d; inventory=182351f9ba42868c9e7b687b54b3ec34b3c9b3e63b874f0b889e0c0cf18c5d49</upstream_output>
+  </freshness_signature>
+
+  <completion_record terminal="true">
+    <result>Cross-review narrativo concluído; compatibilidades, conflitos, gates e recomendações registrados sem alterar upstreams, runtime ou assets.</result>
+    <files_read>
+      <file>docs/domains/narrative-designer/README.md</file>
+      <file>planos/004-ambientacao-VN/analise/agentes/narrative-designer.xml</file>
+      <file>planos/004-ambientacao-VN/analise/agentes/scene-presentation-designer.xml</file>
+      <file>planos/004-ambientacao-VN/analise/agentes/technical-artist.xml</file>
+      <file>planos/004-ambientacao-VN/analise/context/inventory.xml</file>
+      <file>E:/Projetos/loki-framework/skills/lf-template-library/SKILL.md</file>
+      <file>E:/Projetos/loki-framework/skills/lf-template-library/references/templates/agentic-agent-review-template.xml</file>
+      <file>E:/Projetos/loki-framework/skills/lf-domain-context-preflight/SKILL.md</file>
+      <file>E:/Projetos/loki-framework/skills/lf-domain-context-preflight/references/preflight-contract.md</file>
+    </files_read>
+    <files_written>
+      <file>planos/004-ambientacao-VN/analise/agentes/narrative-designer-review.xml</file>
+    </files_written>
+    <coverage>Três POVs/inventário cruzados; B01-B11; Confirmar; Corrigir; Name Input; background; Cut-In; VFX; expressões; layers; naming; cleanup e gates.</coverage>
+    <limitations>Sem runtime, assets, decisão humana, diagnóstico dos switches, reconciliação de filenames/IDs ou validação perceptível.</limitations>
+    <next_destination>synthesis</next_destination>
+    <execution_evidence>orchestrator-owned</execution_evidence>
+  </completion_record>
+</agentic_agent_review>

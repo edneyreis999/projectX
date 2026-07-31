@@ -1,0 +1,15 @@
+{
+  "run_id": "loki-init-20260727-001",
+  "calling_workflow": "loki-init",
+  "common_packet_refs": ["common-inventory-001", "technology-context-001"],
+  "coverage_plan_ref": "coverage-plan.md#a41f834124428845ddfb21fdb04825e188426e7231bbb0034b789349807cf928",
+  "allowed_writes": [],
+  "forbidden_writes": ["docs/**", "planos/000-init-loki/**", "frontend/**", "Obsidian/**", "scripts/**", ".agents/**", ".codex/**", ".claude/**", "AGENTS.md", "CLAUDE.md", "all paths"],
+  "success_destination": "loki-init packet intake",
+  "failure_destination": "loki-init blocker intake",
+  "handoffs": [
+    {"handoff_id":"runtime-qa-handoff-001","investigator":"runtime-qa","invocation_id":"runtime-qa-inv-001","status":"complete","pending_requirement_ids":[],"continuation_cursor":"runtime-qa-complete","completion_record_ref":"completion-records/runtime-qa-inv-001.json"},
+    {"handoff_id":"technical-implementer-handoff-001","investigator":"technical-implementer","invocation_id":"technical-implementer-inv-001","status":"complete","pending_requirement_ids":[],"continuation_cursor":"technical-implementer-001:r1:complete","completion_record_ref":"completion-records/technical-implementer-inv-001.json"},
+    {"handoff_id":"game-product-owner-handoff-001","investigator":"game-product-owner","invocation_id":"game-product-owner-inv-001","status":"complete","pending_requirement_ids":[],"continuation_cursor":"game-product-owner-product-inventory-complete","completion_record_ref":"completion-records/game-product-owner-inv-001.json"}
+  ]
+}

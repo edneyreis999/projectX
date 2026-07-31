@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agentic_run_manifest schema_version="4">
+  <run>
+    <run_id>agentic-004-ambientacao-vn-v1</run_id>
+    <command>loki-agentic-development</command>
+    <status>pending-human-validation</status>
+    <current_phase>decision-preflight</current_phase>
+    <created_at>2026-07-28T23:26:46Z</created_at>
+    <updated_at>2026-07-29T01:34:21Z</updated_at>
+  </run>
+  <demand>
+    <source>planos/004-ambientacao-VN/demanda-improved.md</source>
+    <summary>Analisar e enriquecer a VN principal do mapa 046, especificar assets e parar no gate humano antes da implementação.</summary>
+    <scope>Run agentic de análise; futuro target de produção exclusivo frontend/data/Map046.json após o gate dos assets.</scope>
+  </demand>
+  <execution_envelope>
+    <run_directory>planos/004-ambientacao-VN</run_directory>
+    <analysis_file>planos/004-ambientacao-VN/analise/technical-analysis.md</analysis_file>
+    <plan_directory reserved="true" create_exclusive="true">planos/004-ambientacao-VN/implementation</plan_directory>
+    <allowed_scope>
+      <path mode="write-run-state">planos/004-ambientacao-VN/**</path>
+      <path mode="future-runtime-write-after-asset-gate">frontend/data/Map046.json</path>
+      <path mode="read-only">frontend/data/MapInfos.json</path>
+      <path mode="read-only">frontend/data/Tilesets.json</path>
+      <path mode="read-only">frontend/js/plugins.js</path>
+      <path mode="read-only">frontend/img/pictures/**</path>
+      <path mode="read-only">frontend/img/tilesets/**</path>
+      <path mode="read-only">frontend/img/parallaxes/**</path>
+      <path mode="read-only">docs/**</path>
+      <path mode="read-only">Obsidian/**</path>
+    </allowed_scope>
+    <forbidden_writes>
+      <path>frontend/** except frontend/data/Map046.json after the asset gate</path>
+      <path>frontend/img/**</path>
+      <path>docs/**</path>
+      <path>Obsidian/**</path>
+      <path>.agents/**</path>
+      <path>.codex/**</path>
+      <path>.claude/**</path>
+    </forbidden_writes>
+  </execution_envelope>
+  <freshness_signature>
+    <input_path>planos/004-ambientacao-VN/demanda-improved.md</input_path>
+    <input_mtime>2026-07-28T22:52:18Z</input_mtime>
+    <input_hash>sha256:7c3dd11403111b6fde2b079e9ba8e2ea41a38c3e5004a2ba2dce7bfa4c3f284a</input_hash>
+    <decision_gate_id>gate-input-scope-v1</decision_gate_id>
+  </freshness_signature>
+  <selected_agents>
+    <selected_agent name="execution-context-reader">
+      <selection_reason>Mapear fontes locais, ownership RPG Maker MZ, documentação catalogada, plugins, assets e limites runtime antes dos POVs.</selection_reason>
+      <capability_tags><tag>local-context</tag><tag>rpg-maker-mz-inventory</tag></capability_tags>
+      <phase_roles><role>context-preflight</role></phase_roles>
+      <agentic_modes><mode>read-only</mode></agentic_modes>
+      <write_class>none</write_class><parallel_safe>true</parallel_safe>
+      <risk_tags><tag>multi-source</tag><tag>runtime-boundary</tag></risk_tags>
+    </selected_agent>
+    <selected_agent name="narrative-designer">
+      <selection_reason>Avaliar falas, vozes, humor, exposição, caracterização e coerência de lore sem implementar.</selection_reason>
+      <capability_tags><tag>dialogue</tag><tag>narrative</tag></capability_tags>
+      <phase_roles><role>pov-analysis</role></phase_roles>
+      <agentic_modes><mode>proposal</mode></agentic_modes>
+      <write_class>run-artifact-only</write_class><parallel_safe>true</parallel_safe>
+      <risk_tags><tag>characterization</tag><tag>lore</tag></risk_tags>
+    </selected_agent>
+    <selected_agent name="scene-presentation-designer">
+      <selection_reason>Propor staging, expressões, animações, Visual Cut-In, background e timing da VN.</selection_reason>
+      <capability_tags><tag>scene-presentation</tag><tag>visual-novel</tag></capability_tags>
+      <phase_roles><role>pov-analysis</role></phase_roles>
+      <agentic_modes><mode>proposal</mode></agentic_modes>
+      <write_class>run-artifact-only</write_class><parallel_safe>true</parallel_safe>
+      <risk_tags><tag>visual-readability</tag><tag>timing</tag></risk_tags>
+    </selected_agent>
+    <selected_agent name="technical-artist">
+      <selection_reason>Definir viabilidade, especificações, nomes, dimensões, layering e riscos dos assets sem criá-los.</selection_reason>
+      <capability_tags><tag>technical-art</tag><tag>assets</tag></capability_tags>
+      <phase_roles><role>pov-analysis</role></phase_roles>
+      <agentic_modes><mode>proposal</mode></agentic_modes>
+      <write_class>run-artifact-only</write_class><parallel_safe>true</parallel_safe>
+      <risk_tags><tag>asset-contract</tag><tag>memory</tag></risk_tags>
+    </selected_agent>
+    <selected_agent name="runtime-qa">
+      <selection_reason>Definir checklist, evidências e gate humano para comportamento perceptível, ramos e integrações da VN.</selection_reason>
+      <capability_tags><tag>runtime-qa</tag><tag>human-validation</tag></capability_tags>
+      <phase_roles><role>cross-review-validator</role></phase_roles>
+      <agentic_modes><mode>proposal</mode></agentic_modes>
+      <write_class>run-artifact-only</write_class><parallel_safe>false</parallel_safe>
+      <risk_tags><tag>runtime-pending</tag><tag>branch-coverage</tag></risk_tags>
+    </selected_agent>
+    <selected_agent name="game-business-analyst">
+      <selection_reason>Consolidar a síntese validada em análise Markdown rastreável, testável e pronta para decision preflight.</selection_reason>
+      <capability_tags><tag>requirements</tag><tag>analysis-authoring</tag></capability_tags>
+      <phase_roles><role>scoped-analysis-writer</role></phase_roles>
+      <agentic_modes><mode>scoped-write</mode></agentic_modes>
+      <write_class>single-run-artifact</write_class><parallel_safe>false</parallel_safe>
+      <risk_tags><tag>semantic-coverage</tag><tag>handoff-integrity</tag></risk_tags>
+    </selected_agent>
+  </selected_agents>
+  <handoffs>
+    <handoff><handoff_id>handoff-context-inventory-v1</handoff_id><evidence_id>evidence-context-inventory-v1</evidence_id><evidence_manifest_path>evidence/context-inventory.xml</evidence_manifest_path><agent_run_id>agent-run-context-inventory-v1</agent_run_id><agent_name>execution-context-reader</agent_name><phase>context-inventory</phase><owner>execution-context-reader</owner><parallel_group_id>context-wave</parallel_group_id><target_files/><status>completed</status></handoff>
+    <handoff><handoff_id>handoff-pov-narrative-v1</handoff_id><evidence_id>evidence-pov-narrative-v1</evidence_id><evidence_manifest_path>evidence/pov-narrative.xml</evidence_manifest_path><agent_run_id>agent-run-pov-narrative-v1</agent_run_id><agent_name>narrative-designer</agent_name><phase>analysis-pov</phase><owner>narrative-designer</owner><parallel_group_id>pov-wave-1</parallel_group_id><depends_on_handoff_id>handoff-context-inventory-v1</depends_on_handoff_id><target_files><target_file>analise/agentes/narrative-designer.xml</target_file></target_files><status>completed</status></handoff>
+    <handoff><handoff_id>handoff-pov-presentation-v1</handoff_id><evidence_id>evidence-pov-presentation-v1</evidence_id><evidence_manifest_path>evidence/pov-presentation.xml</evidence_manifest_path><agent_run_id>agent-run-pov-presentation-v1</agent_run_id><agent_name>scene-presentation-designer</agent_name><phase>analysis-pov</phase><owner>scene-presentation-designer</owner><parallel_group_id>pov-wave-1</parallel_group_id><depends_on_handoff_id>handoff-context-inventory-v1</depends_on_handoff_id><target_files><target_file>analise/agentes/scene-presentation-designer.xml</target_file></target_files><status>completed</status></handoff>
+    <handoff><handoff_id>handoff-pov-technical-art-v1</handoff_id><evidence_id>evidence-pov-technical-art-v1</evidence_id><evidence_manifest_path>evidence/pov-technical-art.xml</evidence_manifest_path><agent_run_id>agent-run-pov-technical-art-v1</agent_run_id><agent_name>technical-artist</agent_name><phase>analysis-pov</phase><owner>technical-artist</owner><parallel_group_id>pov-wave-1</parallel_group_id><depends_on_handoff_id>handoff-context-inventory-v1</depends_on_handoff_id><target_files><target_file>analise/agentes/technical-artist.xml</target_file></target_files><status>completed</status></handoff>
+    <handoff><handoff_id>handoff-pov-runtime-qa-v1</handoff_id><evidence_id>evidence-pov-runtime-qa-v1</evidence_id><evidence_manifest_path>evidence/pov-runtime-qa.xml</evidence_manifest_path><agent_run_id>agent-run-pov-runtime-qa-v1</agent_run_id><agent_name>runtime-qa</agent_name><phase>cross-review</phase><owner>runtime-qa</owner><parallel_group_id>serialized-review</parallel_group_id><depends_on_handoff_id>handoff-pov-presentation-v1</depends_on_handoff_id><target_files><target_file>analise/agentes/runtime-qa.xml</target_file><target_file>analise/agentes/runtime-qa-review.xml</target_file></target_files><status>completed</status></handoff>
+    <handoff><handoff_id>handoff-analysis-writer-v1</handoff_id><evidence_id>evidence-analysis-writer-v1</evidence_id><evidence_manifest_path>evidence/analysis-writer.xml</evidence_manifest_path><agent_run_id>agent-run-analysis-writer-v1</agent_run_id><agent_name>game-business-analyst</agent_name><phase>analysis-authoring</phase><owner>game-business-analyst</owner><parallel_group_id>serialized-write</parallel_group_id><depends_on_handoff_id>handoff-pov-runtime-qa-v1</depends_on_handoff_id><target_files><target_file>analise/technical-analysis.md</target_file></target_files><status>completed</status></handoff>
+    <handoff><handoff_id>handoff-decision-naming-v1</handoff_id><evidence_id>evidence-decision-naming-v1</evidence_id><evidence_manifest_path>evidence/decision-naming.xml</evidence_manifest_path><agent_run_id>agent-run-decision-naming-v1</agent_run_id><agent_name>game-business-analyst</agent_name><phase>decision-preflight</phase><owner>game-business-analyst</owner><parallel_group_id>serialized-decision-naming</parallel_group_id><depends_on_handoff_id>handoff-analysis-writer-v1</depends_on_handoff_id><target_files><target_file>analise/technical-analysis.md</target_file></target_files><status>completed</status></handoff>
+    <handoff><handoff_id>handoff-decision-confirm-name-v1</handoff_id><evidence_id>evidence-decision-confirm-name-v1</evidence_id><evidence_manifest_path>evidence/decision-confirm-name.xml</evidence_manifest_path><agent_run_id>agent-run-decision-confirm-name-v1</agent_run_id><agent_name>game-business-analyst</agent_name><phase>decision-preflight</phase><owner>game-business-analyst</owner><parallel_group_id>serialized-decision-confirm-name</parallel_group_id><depends_on_handoff_id>handoff-decision-naming-v1</depends_on_handoff_id><target_files><target_file>analise/technical-analysis.md</target_file></target_files><status>completed</status></handoff>
+    <handoff><handoff_id>handoff-decision-creative-pack-v1</handoff_id><evidence_id>evidence-decision-creative-pack-v1</evidence_id><evidence_manifest_path>evidence/decision-creative-pack.xml</evidence_manifest_path><agent_run_id>agent-run-decision-creative-pack-v1</agent_run_id><agent_name>game-business-analyst</agent_name><phase>decision-preflight</phase><owner>game-business-analyst</owner><parallel_group_id>serialized-decision-creative-pack</parallel_group_id><depends_on_handoff_id>handoff-decision-confirm-name-v1</depends_on_handoff_id><target_files><target_file>analise/technical-analysis.md</target_file></target_files><status>completed</status></handoff>
+    <handoff><handoff_id>handoff-asset-manifest-v1</handoff_id><evidence_id>evidence-asset-manifest-v1</evidence_id><evidence_manifest_path>evidence/asset-manifest.xml</evidence_manifest_path><agent_run_id>agent-run-asset-manifest-v1</agent_run_id><agent_name>technical-artist</agent_name><phase>asset-manifest</phase><owner>technical-artist</owner><parallel_group_id>asset-manifest-freeze</parallel_group_id><depends_on_handoff_id>handoff-decision-creative-pack-v1</depends_on_handoff_id><target_files><target_file>analise/asset-manifest.md</target_file></target_files><status>completed</status></handoff>
+  </handoffs>
+  <evidence_policy><mode>evidence-first</mode><gap_handling>preserve-gap</gap_handling><capture_owner>orchestrator</capture_owner><retrospective_dispatch>explicit-only</retrospective_dispatch></evidence_policy>
+  <execution_knowledge_policy><mode>persist-first-nonblocking-enrichment</mode><promotion_owner>loki-continuous-improvement</promotion_owner><final_checkpoint_wait>false</final_checkpoint_wait></execution_knowledge_policy>
+  <execution_knowledge_captures>
+    <capture><capture_id>capture-context-inventory-v1</capture_id><agent_run_id>agent-run-context-inventory-v1</agent_run_id><handoff_id>handoff-context-inventory-v1</handoff_id><material>true</material><target_entry>execution-knowledge/entries/capture-context-inventory-v1.xml</target_entry><state>captured</state><reason></reason><minimum_next_path></minimum_next_path></capture>
+    <capture><capture_id>capture-pov-narrative-v1</capture_id><agent_run_id>agent-run-pov-narrative-v1</agent_run_id><handoff_id>handoff-pov-narrative-v1</handoff_id><material>true</material><target_entry>execution-knowledge/entries/capture-pov-narrative-v1.xml</target_entry><state>captured</state><reason></reason><minimum_next_path></minimum_next_path></capture>
+    <capture><capture_id>capture-pov-presentation-v1</capture_id><agent_run_id>agent-run-pov-presentation-v1</agent_run_id><handoff_id>handoff-pov-presentation-v1</handoff_id><material>true</material><target_entry>execution-knowledge/entries/capture-pov-presentation-v1.xml</target_entry><state>captured</state><reason></reason><minimum_next_path></minimum_next_path></capture>
+    <capture><capture_id>capture-pov-technical-art-v1</capture_id><agent_run_id>agent-run-pov-technical-art-v1</agent_run_id><handoff_id>handoff-pov-technical-art-v1</handoff_id><material>true</material><target_entry>execution-knowledge/entries/capture-pov-technical-art-v1.xml</target_entry><state>captured</state><reason></reason><minimum_next_path></minimum_next_path></capture>
+    <capture><capture_id>capture-pov-runtime-qa-v2</capture_id><agent_run_id>agent-run-pov-runtime-qa-v1</agent_run_id><handoff_id>handoff-pov-runtime-qa-v1</handoff_id><material>true</material><target_entry>execution-knowledge/entries/capture-pov-runtime-qa-v2.xml</target_entry><state>captured</state><reason>Corrected-lineage capture supersedes immutable v1 as run-local evidence.</reason><minimum_next_path></minimum_next_path></capture>
+    <capture><capture_id>capture-analysis-writer-v1</capture_id><agent_run_id>agent-run-analysis-writer-v1</agent_run_id><handoff_id>handoff-analysis-writer-v1</handoff_id><material>true</material><target_entry>execution-knowledge/entries/capture-analysis-writer-v1.xml</target_entry><state>captured</state><reason></reason><minimum_next_path></minimum_next_path></capture>
+    <capture><capture_id>capture-decision-naming-v1</capture_id><agent_run_id>agent-run-decision-naming-v1</agent_run_id><handoff_id>handoff-decision-naming-v1</handoff_id><material>true</material><target_entry>execution-knowledge/entries/capture-decision-naming-v1.xml</target_entry><state>captured</state><reason></reason><minimum_next_path></minimum_next_path></capture>
+    <capture><capture_id>capture-decision-confirm-name-v1</capture_id><agent_run_id>agent-run-decision-confirm-name-v1</agent_run_id><handoff_id>handoff-decision-confirm-name-v1</handoff_id><material>true</material><target_entry>execution-knowledge/entries/capture-decision-confirm-name-v1.xml</target_entry><state>captured</state><reason></reason><minimum_next_path></minimum_next_path></capture>
+    <capture><capture_id>capture-decision-creative-pack-v1</capture_id><agent_run_id>agent-run-decision-creative-pack-v1</agent_run_id><handoff_id>handoff-decision-creative-pack-v1</handoff_id><material>true</material><target_entry>execution-knowledge/entries/capture-decision-creative-pack-v1.xml</target_entry><state>captured</state><reason></reason><minimum_next_path></minimum_next_path></capture>
+    <capture><capture_id>capture-asset-manifest-v1</capture_id><agent_run_id>agent-run-asset-manifest-v1</agent_run_id><handoff_id>handoff-asset-manifest-v1</handoff_id><material>true</material><target_entry>execution-knowledge/entries/capture-asset-manifest-v1.xml</target_entry><state>captured</state><reason></reason><minimum_next_path></minimum_next_path></capture>
+  </execution_knowledge_captures>
+  <write_test_review schema_version="1">
+    <request><requested_frequency>task</requested_frequency><provenance>default</provenance></request>
+    <implementation_handoff schema_version="1"><handoff_id>implementation-handoff-v1:18224a3f4b7b3ec0736a3222d29cb61724b1a9e444d766a8a6aa5d0c99dd3117</handoff_id><command>loki-implement-feature</command><demand_ref>planos/004-ambientacao-VN/demanda-improved.md</demand_ref><demand_digest>sha256:7c3dd11403111b6fde2b079e9ba8e2ea41a38c3e5004a2ba2dce7bfa4c3f284a</demand_digest><analysis_file>planos/004-ambientacao-VN/analise/technical-analysis.md</analysis_file><analysis_digest>sha256:106b65946e91f58886e6163e6757c6000035b5798660b601c911d1a4b95152f0</analysis_digest><plan_directory>planos/004-ambientacao-VN/implementation</plan_directory><status>scheduled</status><execution_state_ref>null</execution_state_ref><execution_state_digest>null</execution_state_digest><result_ref>null</result_ref><dashboard_ref>null</dashboard_ref><next_action>All creative decisions resolved; blocked at exact asset availability and local RQ-S07 verification. Do not dispatch.</next_action></implementation_handoff>
+    <reconciled_policy><policy_ref>planos/004-ambientacao-VN/demanda-improved.md#validators</policy_ref><policy_digest>sha256:56a4bbcbc685dbbae216eb396a11e7b10557961e46c4cbe762983828c0cb7497</policy_digest><effective_frequency>task</effective_frequency><terminal_scope>plano</terminal_scope><selected_agent_name></selected_agent_name><selection_reason>No material production write exists before the asset gate; loki-implement-feature owns any future write review selection.</selection_reason></reconciled_policy>
+    <checkpoints><checkpoint checkpoint_id="review-checkpoint-v1:1321c4266f89c905308317117ad901fe2c11c0ad473ecf2c0e10d4c28de56c0c"><execution_id>agentic-analysis-intake-v1</execution_id><policy_digest>sha256:56a4bbcbc685dbbae216eb396a11e7b10557961e46c4cbe762983828c0cb7497</policy_digest><boundary_type>task</boundary_type><boundary_ref>analysis-intake</boundary_ref><coverage_digest>sha256:6645d85ff6b27597dde577c9668ec7c95eb26cefa78fdcfe74cd076fe5051a6e</coverage_digest><coverage_manifest schema_version="1"><handoffs/><reviewer><name></name><contract_version>not-applicable</contract_version><selection_configuration_digest>sha256:5c33e7fae20dc12716cb364ac069752682c152c4701bc12b0f56615da1503014</selection_configuration_digest></reviewer></coverage_manifest><covered_write_handoff_ids/><status>skipped-no-material-write</status><review_handoff_id></review_handoff_id><review_agent_run_id></review_agent_run_id><review_agent_raw_status></review_agent_raw_status><evidence_ref></evidence_ref><risk_refs/><backlog_refs/><execution_status_effect>none</execution_status_effect><reason>No material production write exists before the asset gate.</reason></checkpoint></checkpoints>
+    <risks/><state_errors/><next_action>Dispatch the context-inventory handoff; replace the explicit empty-content analysis digest only after the Markdown is materialized and validated.</next_action>
+  </write_test_review>
+  <decision_gates>
+    <decision_gate id="gate-input-scope-v1"><category>input</category><status>resolved</status><question>Approve run directory and allowed scope.</question><resolution>User approved the proposed configuration.</resolution><affected_outputs><output>all run artifacts</output></affected_outputs></decision_gate>
+    <decision_gate id="gate-assets-v1"><category>validate_later</category><status>awaiting-assets</status><question>Are all requested assets present under the exact approved names?</question><resolution>Creative package approved; freeze and deliver the final asset-intake manifest, then wait for user-provided files and local verification.</resolution><affected_outputs><output>implementation handoff</output></affected_outputs></decision_gate>
+    <decision_gate id="gate-runtime-v1"><category>human_validation</category><status>pending</status><question>Has a human Playtest validated both branches and perceptible presentation?</question><resolution>Required only after implementation.</resolution><affected_outputs><output>runtime completion claim</output></affected_outputs></decision_gate>
+    <decision_gate id="DG-NAMING"><category>human_decision</category><status>resolved</status><question>Qual grafia canônica deve ser usada para o contador: Rheed ou Reed?</question><resolution>User approved Rheed for future text and assets; preserve legacy Reed final.png without rename.</resolution><affected_outputs><output>final asset manifest and future text</output></affected_outputs></decision_gate>
+    <decision_gate id="DG-CONFIRM-NAME"><category>human_decision</category><status>resolved</status><question>Confirmar deve estabelecer Dulgarin como nome de Actor 1?</question><resolution>User approved setting Actor 1 to Dulgarin inside qualSeuNome1 before B03-B05; future implementation must use a documented mechanism and validate persistence.</resolution><affected_outputs><output>Confirmar branch</output></affected_outputs></decision_gate>
+    <decision_gate id="DG-CREATIVE-PACK"><category>human_decision</category><status>resolved</status><question>Aprovar o pacote base de falas, três expressões, parallax e Cut-In B10 sem fumaça?</question><resolution>User approved the full package: 11 revised lines, three expressions, neutral night parallax, Thorin Cut-In at B10, no smoke/video/new audio.</resolution><affected_outputs><output>final asset manifest</output></affected_outputs></decision_gate>
+  </decision_gates>
+  <validators><validator name="validate-agentic-run-state"><command>py E:/Projetos/loki-framework/scripts/validate-agentic-run-state.py planos/004-ambientacao-VN</command><status>passed-at-asset-gate</status></validator><validator name="mechanical-artifact-check"><command>Parse all run XMLs; verify analysis digest; verify Map046 baseline; check temp files</command><status>passed</status></validator></validators>
+  <next_action>Deliver the frozen asset-intake manifest and wait for the user to add the exact files; do not dispatch implementation.</next_action>
+</agentic_run_manifest>

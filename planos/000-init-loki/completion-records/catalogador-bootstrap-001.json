@@ -1,0 +1,17 @@
+{
+  "run_id": "loki-init-20260727-001",
+  "agent_run_id": "catalogador-bootstrap-001",
+  "handoff_id": "catalogador-bootstrap-handoff-001",
+  "agent": "catalogador",
+  "calling_workflow": "loki-init",
+  "write_mode": "init-bootstrap-cataloger",
+  "terminal_status": "complete",
+  "summary": "Bootstrap effects applied and deterministically validated; human clarity/navigability review remains an explicit later gate.",
+  "files_returned": ["docs/project-inventory.md", "docs/technology-context.md", "docs/index.xml", "docs/domains/*/README.md"],
+  "materialization_refs": ["docs-tree#92a8ff1844af94b0dc3828c4fea06344c96936923640924c1d64adf5fa6dc954"],
+  "validations": ["XML parse passed", "24 index records passed", "links passed", "README substantial contract passed", "write boundary passed", "package contract suite passed"],
+  "gates": ["human clarity/navigability review pending; no runtime/perceptible claim made"],
+  "known_errors": [],
+  "risks": ["bootstrap does not advance domain coverage"],
+  "next_destination": "loki-init investigator fan-out"
+}
