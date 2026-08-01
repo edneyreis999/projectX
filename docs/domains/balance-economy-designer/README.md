@@ -49,7 +49,7 @@ Classificação: **valores atuais e drift; sem nova fórmula ou retuning**.
 
 - `a`: packets aceitos das waves 02–03
 - `i`: `docs/index.xml`
-- `g`: `docs/GDD/6-combate/{FUNDAMENTOS,DIRETRIZES,CLASSIFICACAO,sistema-experiencia}*`
+- `g`: `docs/GDD/06_Combat/{FUNDAMENTOS,DIRETRIZES,CLASSIFICACAO,sistema-experiencia}*`
 - `q`: `docs/Quests/13-quando-segundo-sol-chegar/00-indice-quests.md`
 - `d`: `frontend/data/*.json`
 - `p`: `frontend/js/plugins.js;plugins/Coreto_Skill_Shop.js`

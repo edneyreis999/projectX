@@ -45,7 +45,7 @@ Evidência aceita: packet `game-business-analyst-001` revisão 1. Classificaçã
 
 - `i`: `docs/index.xml`
 - `g`: `docs/GDD/GDD.geral.md`
-- `c`: `docs/GDD/6-combate/{FUNDAMENTOS,DIRETRIZES,CLASSIFICACAO}*`
+- `c`: `docs/GDD/06_Combat/{FUNDAMENTOS,DIRETRIZES,CLASSIFICACAO}*`
 - `q`: `docs/Quests/13-*/00-indice*`
 - `p`: packets comuns, de tecnologia e de produto aceitos
 - `a`: `AGENTS.md` da sessão

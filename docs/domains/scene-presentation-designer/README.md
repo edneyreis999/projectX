@@ -30,6 +30,29 @@ Classificação: **inventário de cenas/assets/calls; Playtest humano pendente**
   e 120f (22). Mapas chamam 28 BGM, três BGS, 22 ME e 153 SE; alguns arquivos
   estão ausentes. Fontes: `e`, `g`, `a`.
 
+## Contrato de movimento de eventos em cutscenes
+
+Toda cutscene que mova eventos para posições específicas deve declarar, ou
+permitir inferir com proveniência e confiança registradas: participantes,
+destino, direção final, controlador responsável pelo movimento, semântica de
+espera/conclusão, política de colisão e passabilidade, estado terminal,
+persistência ou comportamento na reentrada e cleanup. Detalhes ausentes no
+plano não bloqueiam o planejamento: a inferência deve ser conservadora,
+registrar confiança e aviso, e concentrar a validação manual no ponto incerto.
+Quando uma cutscene for inferida, `loki-tech-analysis` pode fazer uma pergunta
+humana opcional para reduzir a incerteza.
+
+A validação determinística deve conferir identidade e página dos eventos; alvo,
+ordem e espera das move routes; validade e limites de coordenadas literais;
+conflitos de destino; direção solicitada e direção terminal efetiva após refresh
+de página; mutações terminais e precedência de páginas; controladores
+concorrentes; preservação das integrações existentes; e fixtures negativas. Ela
+pode ser complementada por observação assistida em runtime da posição, direção,
+página e conclusão das rotas, de stalls com timeout e de repetição limpa. Esses
+checks podem estabelecer `ready-for-manual-qa`, mas não aprovam a percepção da
+cena: a aprovação final da cutscene pertence exclusivamente ao
+`loki-manual-qa`.
+
 ## Lifecycle EX/VN/Cutscene da Noite da História
 
 O fluxo separa responsabilidades entre mapas: Map022 e Map045 são contextos
@@ -84,7 +107,7 @@ eventos.
 ## Fontes e rastreabilidade
 
 - `p`: packets aceitos e `docs/index.xml`
-- `n`: `docs/Quests/{1,5,6,11,13}/**;GDD/3-historia/**`
+- `n`: `docs/Quests/{1,5,6,11,13}/**;GDD/05_History/**`
 - `e`: `frontend/data/{System,MapInfos,CommonEvents,Troops,Map*.json}`; parse
 - `g`: `frontend/js/plugins.js`; estrutura/configuração extraída
 - `a`: `frontend/{img,audio,movies}`; metadados

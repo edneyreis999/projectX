@@ -35,9 +35,9 @@ Configuracoes que afetam todo o sistema de combate e devem ser consideradas em d
 
 # Documentacao de Referencia
 
-- `docs/GDD/6-combate/FUNDAMENTOS-COMBAT-SYSTEM.md` - Principios do sistema de combate: filosofia, identidade dos personagens, loop central, balanceamento macro e design de inimigos
-- `docs/GDD/6-combate/DIRETRIZES-DESIGN-COMBAT-SYSTEM.md` - Diretrizes praticas para criacao e balanceamento de skills, kits de personagem e sinergias
-- `docs/GDD/6-combate/CLASSIFICACAO-MODIFICADORES.md` - Sistema de score numerico para classificacao e balanceamento de modificadores de skills nos 3 eixos do combate
+- `docs/GDD/06_Combat/FUNDAMENTOS-COMBAT-SYSTEM.md` - Principios do sistema de combate: filosofia, identidade dos personagens, loop central, balanceamento macro e design de inimigos
+- `docs/GDD/06_Combat/DIRETRIZES-DESIGN-COMBAT-SYSTEM.md` - Diretrizes praticas para criacao e balanceamento de skills, kits de personagem e sinergias
+- `docs/GDD/06_Combat/CLASSIFICACAO-MODIFICADORES.md` - Sistema de score numerico para classificacao e balanceamento de modificadores de skills nos 3 eixos do combate
 
 # Alteração na pasta `frontend/data`
 

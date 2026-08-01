@@ -12,15 +12,15 @@ Game Design Document com diretrizes de narrativa, mundo, combate, personagens e 
   - `/docs/GDD/2-world-building/continentes/`
   - `/docs/GDD/2-world-building/locais/`
   - `/docs/GDD/2-world-building/racas/`
-- `/docs/GDD/3-historia/` — Historia principal, jornada do jogador e timeline
+- `/docs/GDD/05_History/` — Historia principal, jornada do jogador e timeline
 - `/docs/GDD/4-personagens-inimigos-criaturas/` — Fichas de personagens e inimigos
   - `/docs/GDD/4-personagens-inimigos-criaturas/Personagens/`
   - `/docs/GDD/4-personagens-inimigos-criaturas/inimigos/`
 - `/docs/GDD/5-arte/` — Documento de artstyle e diretrizes visuais
-- `/docs/GDD/6-combate/` — Fundamentos, diretrizes e balanceamento do sistema de combate
-  - `/docs/GDD/6-combate/inimigos/`
-  - `/docs/GDD/6-combate/personagens/`
-  - `/docs/GDD/6-combate/templates/`
+- `/docs/GDD/06_Combat/` — Fundamentos, diretrizes e balanceamento do sistema de combate
+  - `/docs/GDD/06_Combat/inimigos/`
+  - `/docs/GDD/06_Combat/personagens/`
+  - `/docs/GDD/06_Combat/templates/`
 - `/docs/GDD/templates/` — Templates reutilizaveis para GDD
   - `/docs/GDD/templates/cidades/`
 
@@ -62,6 +62,6 @@ Documentacao tecnica de plugins VisuStella e RPG Maker MZ, organizada para consu
 
 - `docs/GDD/GDD.geral.md` — Visao geral do GDD (premissa, enredo, mecanicas, personagens principais)
 - `docs/GDD/GDD.Narrative-geral.md` — Visao geral da narrativa (estrutura temporal, personagens, espiritualidade, contexto politico)
-- `docs/GDD/6-combate/FUNDAMENTOS-COMBAT-SYSTEM.md` — Fundamentos do sistema de combate
-- `docs/GDD/6-combate/DIRETRIZES-DESIGN-COMBAT-SYSTEM.md` — Diretrizes de design do combate
-- `docs/GDD/6-combate/CLASSIFICACAO-MODIFICADORES.md` — Classificacao de modificadores de combate
+- `docs/GDD/06_Combat/FUNDAMENTOS-COMBAT-SYSTEM.md` — Fundamentos do sistema de combate
+- `docs/GDD/06_Combat/DIRETRIZES-DESIGN-COMBAT-SYSTEM.md` — Diretrizes de design do combate
+- `docs/GDD/06_Combat/CLASSIFICACAO-MODIFICADORES.md` — Classificacao de modificadores de combate

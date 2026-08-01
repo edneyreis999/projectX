@@ -42,8 +42,8 @@ Evidência aceita: packet `game-product-owner-001` revisão 1. Classificação:
 
 - `g`: `GDD/GDD.geral.md`
 - `n`: `GDD/1-fundacao-narrativa/*.md`
-- `j`: `GDD/3-historia/historia-jornada*.md`
-- `c`: `GDD/6-combate/{FUNDAMENTOS,DIRETRIZES}*.md`
+- `j`: `GDD/05_History/historia-jornada*.md`
+- `c`: `GDD/06_Combat/{FUNDAMENTOS,DIRETRIZES}*.md`
 - `q`: `Quests/13-*/00-indice-quests.md`
 - `x`: `search:GDD,Quests,Obsidian,README,AGENTS`
 

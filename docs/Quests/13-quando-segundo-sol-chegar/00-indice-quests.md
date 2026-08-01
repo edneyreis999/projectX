@@ -390,5 +390,5 @@ function calcularDano(id_var_forca) {
 
 - [Sistema Simplificado v2.0](../sistema-simplificado-narrativa-sistemica.md)
 - [NPCs Mapa Teste](../npcs-mapa-teste.md)
-- [Timeline História v5](../../../docs/GDD/3-historia/timeline-historia-jogo-v5.md)
-- [Última Missão do Jogo](../../../docs/GDD/3-historia/ultima-missao-do-jogo.md)
+- [Timeline História v5](../../../docs/GDD/05_History/timeline-historia-jogo-v5.md)
+- [Última Missão do Jogo](../../../docs/GDD/05_History/ultima-missao-do-jogo.md)

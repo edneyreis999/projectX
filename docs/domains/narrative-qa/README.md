@@ -44,7 +44,7 @@ Evidência aceita: packet `narrative-qa-001` revisão 1. Classificação:
 ## Fontes e rastreabilidade
 
 - `n`: packet narrativo aceito e `acceptance/wave-02.json`
-- `h`: `docs/GDD/3-historia/{timeline*,historia-jornada*,ultima-missao*}.md`
+- `h`: `docs/GDD/05_History/{timeline*,historia-jornada*,ultima-missao*}.md`
 - `q`: `docs/Quests/13-quando-segundo-sol-chegar/00-indice-quests.md`
 - `s`: `frontend/data/System.json`
 - `e`: `frontend/data/{CommonEvents,MapInfos,Map021,036-038,041-042,053-055,057}.json`
