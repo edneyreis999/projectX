@@ -69,6 +69,75 @@
                     }
                 }
             }
+        },
+        "tutorial-funda-forjaprata": {
+            "stageVariableId": 111,
+            "initialState": 0,
+            "terminalStates": [
+                90
+            ],
+            "pkd": {
+                "questId": "tutorialFundaForjaprata",
+                "objectives": [
+                    {
+                        "id": 1,
+                        "knownFrom": 10,
+                        "completedAt": 20
+                    },
+                    {
+                        "id": 2,
+                        "knownFrom": 20,
+                        "completedAt": 90
+                    }
+                ]
+            },
+            "transitions": {
+                "INTRODUCE_JOURNAL": {
+                    "from": [
+                        0
+                    ],
+                    "to": 10,
+                    "requirements": [],
+                    "effects": []
+                },
+                "FOUND_SLING": {
+                    "from": [
+                        10
+                    ],
+                    "to": 20,
+                    "requirements": [],
+                    "effects": []
+                },
+                "LEAVE_EQUIPPED": {
+                    "from": [
+                        20
+                    ],
+                    "to": 90,
+                    "requirements": [],
+                    "effects": [],
+                    "terminal": true
+                }
+            },
+            "extensions": {
+                "questVN": {
+                    "mapId": 49,
+                    "spawn": {
+                        "x": 8,
+                        "y": 6,
+                        "direction": 2,
+                        "fadeType": 0,
+                        "audioPolicy": "restore-origin"
+                    },
+                    "entries": {
+                        "ABERTURA_FORJAPRATA": {
+                            "eventId": 1,
+                            "allowedStates": [
+                                0
+                            ]
+                        }
+                    }
+                }
+            }
         }
     }
 }

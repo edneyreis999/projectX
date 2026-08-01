@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "runId": "loki-run-v2:487ad0333da0041da77affbf548ca6969f27d17638df3d56285e3b7cb6770320",
+  "executionId": "loki-execution-v2:f7d7aebacc69cd9a9a2555f2e8df8e194ede9ccef24744f3373249ed602dda",
+  "taskId": "task-1.1",
+  "writer": "/root/config_writer",
+  "writeMode": "task_scoped_writer",
+  "status": "completed",
+  "result": "Foundation IDs, Coreto/PKD quest definitions and the S50 journal gate were implemented within the exact production allowlist.",
+  "changedProductionFiles": [
+    {
+      "path": "frontend/data/System.json",
+      "sha256": "aded5f66838d27f377d6a3166d93f6ffa4897016ce56f4e0d5a759b72c6fa8de",
+      "change": "Appended only variables[111] as v_qTutorialFundaForjaprata_stage; preserved current editor fields and prior variables."
+    },
+    {
+      "path": "frontend/data/MapInfos.json",
+      "sha256": "2fa31b83585cfe4fcd14c7b71855f87658ab447c91e4db6cf2807d4b52a8012e",
+      "change": "Replaced only MapInfos[49] null with NV_Casa_Forjaprata, parent 18 and order 55; preserved every existing entry."
+    },
+    {
+      "path": "frontend/data/CoretoQuests.json",
+      "sha256": "e304442ec68310c4d8ebd378f859c33f28d910f5bf521058e9792351c8751445",
+      "change": "Added tutorial-funda-forjaprata as a sibling registry quest with V111, states 0/10/20/90, approved transitions, two objectives and Map49/E1 entry at state 0."
+    },
+    {
+      "path": "frontend/js/plugins.js",
+      "sha256": "b6b5484503e3d5a480b3795da9085c1eb74d25b0b03d38ec89515a9334163255",
+      "change": "Appended exactly one tutorialFundaForjaprata definition to the nested PKD quest parameter; preserved all 31 prior quests and plugin order."
+    },
+    {
+      "path": "frontend/js/plugins/Coreto_SQS_menu_patch.js",
+      "sha256": "4860821e1ee5ef804f7aa92440f021a17f2c1aa2906cb848b4602c8692b0cad2",
+      "change": "Resolved the real Plugin Manager name and gated menu plus SQSM.OpenQuestJournal; S50 ON delegates to the original PKD opener."
+    }
+  ],
+  "taskLocalArtifacts": [
+    {
+      "path": "planos/004-casa-forjaprata arquitetura/builds/fase1/validate-foundation.cjs",
+      "sha256": "3dfeaafece348080fcfe9676fa6d4bea235e1ef54f55acc2893203abfc1a6e8f"
+    },
+    {
+      "path": "planos/004-casa-forjaprata arquitetura/builds/fase1/foundation-validation-v1.json",
+      "sha256": "9cbad5fcc5cdf5f58f535ecf49376a70fd8425d707f3a01c10bc07b13bfa81bd"
+    },
+    {
+      "path": "planos/004-casa-forjaprata arquitetura/preflights/run-487ad0333da0041da77affbf548ca6969f27d17638df3d56285e3b7cb6770320/config_writer/preflight-v1.md",
+      "sha256": "3cc9a333231c3ff35bc437b4da2406a2fc40e41e09c842189be96c8af19ceeb4"
+    }
+  ],
+  "validators": [
+    {
+      "name": "foundation-validator",
+      "status": "passed",
+      "evidenceRef": "planos/004-casa-forjaprata arquitetura/builds/fase1/foundation-validation-v1.json",
+      "checksPassed": 33
+    },
+    {
+      "name": "node-check-helper-plugin",
+      "status": "passed"
+    },
+    {
+      "name": "plugins-js-editor-envelope",
+      "status": "passed",
+      "result": "69 plugin objects; order digest preserved"
+    },
+    {
+      "name": "git-diff-check",
+      "status": "passed"
+    }
+  ],
+  "acceptanceCriteria": {
+    "AC-F1-IDS": "passed",
+    "AC-F1-REGISTRY": "passed",
+    "AC-F1-PKD": "passed",
+    "AC-F1-GATE": "passed"
+  },
+  "preservation": {
+    "aSemifinalSha256": "c484992aa3f2c12bff61262f4e68a376c04811aead881e1450390c1d1a0040b1",
+    "existingPkdQuestsSha256": "f6b954b36201ca056916c3f946d1fbbf1b41e3c8533ce90a48fa329610fa6065",
+    "pluginOrderSha256": "9990eda1222579ab1531e3757672f248073cbe81cb7973da40db4bd0bacd59a7",
+    "userOverlap": "Current System editMapId/versionId and MapInfos scroll-coordinate changes remain preserved."
+  },
+  "classification": "structural_validation",
+  "limitations": [
+    "RPG Maker MZ Plugin Manager open/save/reopen was not performed by this writer.",
+    "The VM fixture validates journal gate logic, but perceptible input/menu behavior and New Game runtime remain pending the feature-level human Playtest.",
+    "The durable docs/loki-init/technical-implementer context root is absent; current task and runtime sources substituted safely."
+  ],
+  "humanGates": [],
+  "nextDestination": "phase:fase1 independent audit"
+}

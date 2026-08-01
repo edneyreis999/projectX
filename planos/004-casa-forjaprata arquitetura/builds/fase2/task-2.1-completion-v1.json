@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "runId": "loki-run-v2:487ad0333da0041da77affbf548ca6969f27d17638df3d56285e3b7cb6770320",
+  "executionId": "loki-execution-v2:f7d7aebacc69cd9a9a2555f2e8df8e194ede9ccef24744f3373249ed602dda",
+  "taskId": "task-2.1",
+  "writer": "/root/gameplay_writer",
+  "writeMode": "task_scoped_writer",
+  "status": "completed",
+  "result": "Map049 VN, E11 EX/VN lifecycle, state-gated door/chest onboarding and the delayed S50 journal introduction were implemented inside the exact task allowlist.",
+  "changedProductionFiles": [
+    {
+      "path": "frontend/data/Map049.json",
+      "sha256": "59b5fa1ec2202c18eccd1a20509ba93c84aea37f4cc1f905f7ade24ee7e8e287",
+      "change": "Created one VN map from Map046's tile/passability skeleton only; E1 Action Button asserts session/state, contains the 97 frozen presentation commands, cleans pictures, finishes through Coreto_QuestVN and has no direct transfer."
+    },
+    {
+      "path": "frontend/data/Map045.json",
+      "sha256": "8c366472d4e05629f9d6a3663d8ae74972bcbbe1bae9020931fc75dd4cd66bc3",
+      "change": "Changed only E7, E11 and E20 semantically: state routes 0/10/20/90, native Actor3/Weapon1 equipment gate, local Change Weapons removal, transient D return page, preserved aSemifinal setup without its old OpenJournal, and one-shot state-gated chest."
+    },
+    {
+      "path": "frontend/data/Map022.json",
+      "sha256": "0d9d58e46b993679e3d6bf6a2494f8b29c37d670228eecca66f36ddaa02354e4",
+      "change": "Removed only E30/P1 command121 [50,50,0]; all adjacent commands and other units remain semantically identical to the baseline."
+    }
+  ],
+  "taskLocalArtifacts": [
+    {
+      "path": "planos/004-casa-forjaprata arquitetura/preflights/run-487ad0333da0041da77affbf548ca6969f27d17638df3d56285e3b7cb6770320/gameplay_writer/preflight-v1.md",
+      "sha256": "8a916d0c79dc63669b758b018f0d30e00eefd78db7a6487f51948e96e9c217a2"
+    },
+    {
+      "path": "planos/004-casa-forjaprata arquitetura/builds/fase2/e11-migration-manifest-v1.json",
+      "sha256": "b0c842ad859c1d18ca3938e0ec83eeccc20caa4e19b9823a0ff23a3c53ad4a61"
+    },
+    {
+      "path": "planos/004-casa-forjaprata arquitetura/builds/fase2/validate-feature.cjs",
+      "sha256": "77abb20b5cdf0e582e0984b9f1bf0ac50d3d57ac8a37e3dd2e192d5835e3b2f6"
+    },
+    {
+      "path": "planos/004-casa-forjaprata arquitetura/builds/fase2/feature-validation-v1.json",
+      "sha256": "9b9f0470865fd8fbb8a8c71ad66773af822cadecbaa61400e125978a48abb6f7"
+    }
+  ],
+  "validators": [
+    {
+      "name": "feature-validator",
+      "status": "passed",
+      "evidenceRef": "planos/004-casa-forjaprata arquitetura/builds/fase2/feature-validation-v1.json",
+      "checksPassed": 29,
+      "checksFailed": 0
+    },
+    {
+      "name": "node-json-parse",
+      "status": "passed",
+      "targets": ["Map022.json", "Map045.json", "Map049.json"]
+    },
+    {
+      "name": "git-diff-check",
+      "status": "passed",
+      "targets": ["frontend/data/Map022.json", "frontend/data/Map045.json"]
+    }
+  ],
+  "acceptanceCriteria": {
+    "AC-F2-VN": "passed-static",
+    "AC-F2-FLOW": "passed-static",
+    "AC-F2-JOURNAL": "passed-static",
+    "AC-F2-REGRESSION": "passed-static"
+  },
+  "preservation": {
+    "manifestCoverage": "138/138 unique original E11/P1 commands classified; 97 migrated verbatim, 11 EX-prelude, 22 EX-post, 7 lifecycle replacements, 1 approved removal.",
+    "map045SemanticAllowlist": ["E7", "E11", "E20"],
+    "map022SemanticAllowlist": ["E30/P1 command121 [50,50,0]"],
+    "legacyFlow": "aSemifinal AddQuest/description/task/active, V29, V100, SaveDescription and Self Switch A remain in EX post-return; Self Switch B page remains byte-semantic baseline.",
+    "untrackedSave": {
+      "path": "frontend/save/V[100] - file0.rmmzsave",
+      "sha256": "6c9c16480cbba7c581f269a4220fe626fae60ea11b79221aa7e13e88c3d43716",
+      "lastWriteTimeUtc": "2026-07-31T17:38:44.6533964Z",
+      "status": "untouched"
+    }
+  },
+  "diffSummary": {
+    "frontend/data/Map022.json": {"insertions": 0, "deletions": 9},
+    "frontend/data/Map045.json": {"insertions": 866, "deletions": 1285},
+    "frontend/data/Map049.json": {"status": "new"}
+  },
+  "classification": "structural_validation",
+  "limitations": [
+    "RPG Maker MZ editor open/save/reopen was not performed by this writer.",
+    "Visual composition, chest position/passability, timing, input, audio, reachability, journal UI and save/load restoration remain pending the required New Game Playtest.",
+    "The durable docs/loki-init/gameplay-engineer context root is absent; approved task and current runtime sources substituted safely."
+  ],
+  "humanGates": [
+    {"name": "RPG Maker MZ editor round-trip", "status": "pending-human-validation"},
+    {"name": "New Game Playtest", "status": "pending-human-validation"}
+  ],
+  "nextDestination": "phase:fase2 independent audit"
+}

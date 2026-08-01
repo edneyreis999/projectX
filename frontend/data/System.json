@@ -125,7 +125,7 @@
         "pitch": 100,
         "volume": 90
     },
-    "editMapId": 22,
+    "editMapId": 45,
     "elements": [
         "",
         "Físico",
@@ -740,9 +740,10 @@
         "",
         "",
         "",
-        "Inimigos derrotados(release)"
+        "Inimigos derrotados(release)",
+        "v_qTutorialFundaForjaprata_stage"
     ],
-    "versionId": 89344918,
+    "versionId": 74251931,
     "victoryMe": {
         "name": "Victory1",
         "pan": 0,

@@ -1,0 +1,51 @@
+{
+  "implement_feature_execution_result": {
+    "schema_version": 3,
+    "run_id": "loki-run-v2:487ad0333da0041da77affbf548ca6969f27d17638df3d56285e3b7cb6770320",
+    "execution_id": "loki-execution-v2:f7d7aebacc69cd9a9a2555f2e8df8e194ede9ccef24744f3373249ed602dda",
+    "status": "pending-human-validation",
+    "state_digest": "sha256:e6e2a9aed34765ab891d57ea22e9f02cf717cf6d95b44acc567c08a40beb0f20",
+    "audit_configuration": {
+      "schema_version": 1,
+      "frequency": "phase",
+      "source": "default",
+      "policy_digest": "sha256:e3aeea217ca7881865de40d29e0e28e95bc32f4255e2488597801a8909e3bd78"
+    },
+    "audit_checkpoint_refs": [
+      "planos/004-casa-forjaprata arquitetura/builds/fase1/phase-audit-v1.json",
+      "planos/004-casa-forjaprata arquitetura/builds/fase2/phase-audit-v1.json"
+    ],
+    "task_results": [
+      {
+        "task_ref": "planos/004-casa-forjaprata arquitetura/task-1.1.md",
+        "status": "passed",
+        "evidence_refs": [
+          "planos/004-casa-forjaprata arquitetura/builds/fase1/foundation-validation-v1.json",
+          "planos/004-casa-forjaprata arquitetura/builds/fase1/task-1.1-completion-v1.json",
+          "planos/004-casa-forjaprata arquitetura/builds/fase1/phase-audit-v1.json"
+        ]
+      },
+      {
+        "task_ref": "planos/004-casa-forjaprata arquitetura/task-2.1.md",
+        "status": "passed",
+        "evidence_refs": [
+          "planos/004-casa-forjaprata arquitetura/builds/fase2/e11-migration-manifest-v1.json",
+          "planos/004-casa-forjaprata arquitetura/builds/fase2/feature-validation-v1.json",
+          "planos/004-casa-forjaprata arquitetura/builds/fase2/task-2.1-completion-v1.json",
+          "planos/004-casa-forjaprata arquitetura/builds/fase2/phase-audit-v1.json"
+        ]
+      }
+    ],
+    "final_validator_refs": [
+      "planos/004-casa-forjaprata arquitetura/builds/fase1/validate-foundation.cjs",
+      "planos/004-casa-forjaprata arquitetura/builds/fase2/validate-feature.cjs"
+    ],
+    "terminal_evidence_refs": [],
+    "execution_metrics_ref": "planos/004-casa-forjaprata arquitetura/builds/metrics/execution-metrics.json",
+    "execution_metrics_digest": "sha256:161f28d43a635e22db02dc00eb9e24ab765c47a827d9de428bccd4923aefbf85",
+    "execution_metrics_status": "partial",
+    "execution_metrics_degradation_reason": "Provider token telemetry and cross-agent monotonic durations are unavailable.",
+    "next_action": "Execute the RPG Maker MZ editor round-trip and New Game Playtest in interaction/fase2/playtest-new-game.md, then persist the human-validation result.",
+    "result_digest": "sha256:de557561ad607934741ae38424e0d9164f6d43317d39ae6889c6fd19fee84303"
+  }
+}

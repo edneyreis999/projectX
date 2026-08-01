@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "auditId": "phase-audit-v1:b1517673f3aa5e3d60086b4ed25c4f525d37b1334009fc9d297d2ddacb791893",
+  "runId": "loki-run-v2:487ad0333da0041da77affbf548ca6969f27d17638df3d56285e3b7cb6770320",
+  "executionId": "loki-execution-v2:f7d7aebacc69cd9a9a2555f2e8df8e194ede9ccef24744f3373249ed602dda",
+  "auditor": "/root/qa_proposal",
+  "role": "independent-phase-auditor",
+  "boundary": {
+    "type": "phase",
+    "phase": "fase1",
+    "taskIds": [
+      "task-1.1"
+    ],
+    "productionTargets": [
+      "frontend/data/System.json",
+      "frontend/data/MapInfos.json",
+      "frontend/data/CoretoQuests.json",
+      "frontend/js/plugins.js",
+      "frontend/js/plugins/Coreto_SQS_menu_patch.js"
+    ],
+    "coverageDigest": "sha256:b1517673f3aa5e3d60086b4ed25c4f525d37b1334009fc9d297d2ddacb791893"
+  },
+  "status": "approved",
+  "preflight": {
+    "status": "ready-with-gaps",
+    "ref": "planos/004-casa-forjaprata arquitetura/preflights/run-487ad0333da0041da77affbf548ca6969f27d17638df3d56285e3b7cb6770320/qa_proposal/preflight-v1.md",
+    "sha256": "5d1473d5c740217c6d3950466f9c709c3dcbddacb521e8cb017170d7be865bc7",
+    "gap": "docs/loki-init/runtime-qa is absent; current task, evidence and production bytes were sufficient substitutes."
+  },
+  "sourceDigests": {
+    "tasks": "04f79f6dcf0470c918c14bc1677f2c2b601dfd0dc32d25309cab48d3e55cda42",
+    "task1_1": "27e3c96ffed31ef4d4168160082a2065828b336034d8d292a358e2bb445ab2d3",
+    "writerPreflight": "3cc9a333231c3ff35bc437b4da2406a2fc40e41e09c842189be96c8af19ceeb4",
+    "foundationValidator": "3dfeaafece348080fcfe9676fa6d4bea235e1ef54f55acc2893203abfc1a6e8f",
+    "foundationReport": "9cbad5fcc5cdf5f58f535ecf49376a70fd8425d707f3a01c10bc07b13bfa81bd",
+    "writerCompletion": "4ef0e5b5491ea357bbd1200d1aea4738c73fee345a1724ab6abd29a942acbb13"
+  },
+  "productionEvidence": [
+    {
+      "path": "frontend/data/System.json",
+      "sha256": "aded5f66838d27f377d6a3166d93f6ffa4897016ce56f4e0d5a759b72c6fa8de",
+      "completionDigestMatched": true,
+      "scopeCheck": "Only variables[111] was added relative to the current semantic baseline; editMapId=45 and versionId=28815212 remain preserved."
+    },
+    {
+      "path": "frontend/data/MapInfos.json",
+      "sha256": "2fa31b83585cfe4fcd14c7b71855f87658ab447c91e4db6cf2807d4b52a8012e",
+      "completionDigestMatched": true,
+      "scopeCheck": "MapInfos[49] was allocated once; pre-existing user scroll coordinates for maps 22, 32 and 44 remain preserved."
+    },
+    {
+      "path": "frontend/data/CoretoQuests.json",
+      "sha256": "e304442ec68310c4d8ebd378f859c33f28d910f5bf521058e9792351c8751445",
+      "completionDigestMatched": true,
+      "scopeCheck": "One sibling tutorial quest was added; the existing noite-da-historia definition remains preserved."
+    },
+    {
+      "path": "frontend/js/plugins.js",
+      "sha256": "b6b5484503e3d5a480b3795da9085c1eb74d25b0b03d38ec89515a9334163255",
+      "completionDigestMatched": true,
+      "scopeCheck": "Exactly one PKD tutorial quest was added; 69 plugin objects, names, order, status and all prior PKD quests remain preserved."
+    },
+    {
+      "path": "frontend/js/plugins/Coreto_SQS_menu_patch.js",
+      "sha256": "4860821e1ee5ef804f7aa92440f021a17f2c1aa2906cb848b4602c8692b0cad2",
+      "completionDigestMatched": true,
+      "scopeCheck": "The helper now resolves its real plugin name and gates both menu injection and SQSM.OpenQuestJournal through S50."
+    }
+  ],
+  "checksReproduced": [
+    {
+      "name": "foundation-validator",
+      "command": "node '..\\planos\\004-casa-forjaprata arquitetura\\builds\\fase1\\validate-foundation.cjs'",
+      "workingDirectory": "frontend",
+      "exitCode": 0,
+      "status": "passed",
+      "checksPassed": 33,
+      "checksFailed": 0
+    },
+    {
+      "name": "helper-plugin-syntax",
+      "command": "node --check frontend/js/plugins/Coreto_SQS_menu_patch.js",
+      "exitCode": 0,
+      "status": "passed"
+    },
+    {
+      "name": "plugins-js-editor-envelope",
+      "command": "py -3 validate_plugins_js_envelope.py frontend/js/plugins.js",
+      "exitCode": 0,
+      "status": "passed",
+      "result": "editor-structural: valid; plugin_objects=69"
+    },
+    {
+      "name": "target-diff-check",
+      "command": "git diff --check -- <five phase1 production targets>",
+      "exitCode": 0,
+      "status": "passed",
+      "note": "Only LF/CRLF future-normalization warnings were emitted."
+    },
+    {
+      "name": "forbidden-tracked-diff",
+      "command": "git diff --quiet -- frontend/data/Map045.json frontend/data/Map022.json",
+      "exitCode": 0,
+      "status": "passed"
+    }
+  ],
+  "acceptanceCriteria": {
+    "AC-F1-IDS": "passed",
+    "AC-F1-REGISTRY": "passed",
+    "AC-F1-PKD": "passed",
+    "AC-F1-GATE": "passed"
+  },
+  "behavioralStaticEvidence": {
+    "s50Off": {
+      "directOpenRejected": true,
+      "originalOpenCalls": 0,
+      "menuCommandPresent": false
+    },
+    "s50On": {
+      "originalOpenDelegated": true,
+      "originalOpenCalls": 1,
+      "existingMenuCommandPreservedOnce": true,
+      "menuCommandInjectedWhenPkdMenuDisabled": true
+    },
+    "registry": {
+      "questKey": "tutorial-funda-forjaprata",
+      "stageVariableId": 111,
+      "states": [
+        0,
+        10,
+        20,
+        90
+      ],
+      "transitions": [
+        "INTRODUCE_JOURNAL",
+        "FOUND_SLING",
+        "LEAVE_EQUIPPED"
+      ],
+      "vnCrossReference": {
+        "mapId": 49,
+        "eventId": 1,
+        "entryKey": "ABERTURA_FORJAPRATA",
+        "allowedStates": [
+          0
+        ]
+      }
+    },
+    "pkd": {
+      "pluginCount": 69,
+      "pluginOrderSha256": "9990eda1222579ab1531e3757672f248073cbe81cb7973da40db4bd0bacd59a7",
+      "questCount": 32,
+      "tutorialCount": 1,
+      "priorQuestSetSha256": "f6b954b36201ca056916c3f946d1fbbf1b41e3c8533ce90a48fa329610fa6065",
+      "aSemifinalSha256": "c484992aa3f2c12bff61262f4e68a376c04811aead881e1450390c1d1a0040b1"
+    }
+  },
+  "evidenceConsistency": {
+    "status": "passed",
+    "writerProductionDigestsMatched": 5,
+    "writerProductionDigestsExpected": 5,
+    "validatorDigestMatched": true,
+    "foundationReportDigestMatched": true,
+    "writerPreflightDigestMatched": true,
+    "reportedCheckCountMatchedReplay": true,
+    "reportedAcceptanceMatchedReplay": true,
+    "registryWithoutTutorialSha256": "915ca90bd12d92233bc469417e8dc0c0892026c5eac8dc6e8bcc855ce63a105c",
+    "existingRegistryQuestSha256": "03a6aeca092b52ff18f2a7fd23502dc15c69cfd19f9da3109470f8d562b7cd4d"
+  },
+  "forbiddenSurfaceEvidence": {
+    "frontend/data/Map045.json": {
+      "status": "unchanged-from-prephase-inventory",
+      "sha256": "4cb35cafc322fa8495d00cd53519c1807bf40f9bb17f1cfcf0d623ec2e22d436"
+    },
+    "frontend/data/Map022.json": {
+      "status": "unchanged-from-prephase-inventory",
+      "sha256": "bc9cc6dbf4d2fc934397a277e45515ac20a415580eb9018dd039dab4c6bb00dd"
+    },
+    "frontend/data/Map049.json": {
+      "status": "absent-as-required-for-fase1"
+    },
+    "frontend/save/V[100] - file0.rmmzsave": {
+      "status": "untracked-and-predates-writer-preflight",
+      "sha256": "6c9c16480cbba7c581f269a4220fe626fae60ea11b79221aa7e13e88c3d43716",
+      "lastWriteTimeUtc": "2026-07-31T17:38:44.6533964Z"
+    }
+  },
+  "findings": [],
+  "observations": [
+    {
+      "severity": "info",
+      "blocking": false,
+      "code": "map49-data-deferred-to-fase2",
+      "detail": "MapInfos and registry now reference Map49, while frontend/data/Map049.json remains intentionally absent and forbidden in fase1. Task-2.1 owns materializing the map before runtime validation."
+    },
+    {
+      "severity": "info",
+      "blocking": false,
+      "code": "managed-plan-state-not-yet-checkpointed",
+      "detail": "tasks.md and task-1.1.md still show pending state. Updating orchestrator-owned resume/task state is outside this auditor's two-file write scope and should occur after this approved checkpoint is consumed."
+    },
+    {
+      "severity": "info",
+      "blocking": false,
+      "code": "durable-runtime-qa-context-absent",
+      "detail": "The declared docs/loki-init/runtime-qa root is absent; current sources were sufficient for this audit."
+    }
+  ],
+  "approvalBasis": [
+    "The independent replay passed all 33 deterministic foundation checks with no failed check.",
+    "S50 OFF rejected direct opening and removed the menu command; S50 ON delegated to the original PKD opener and preserved/injected exactly one menu command.",
+    "Registry, PKD, Map49/V111 cross-references, aSemifinal preservation and the 69-plugin order were reproduced from current bytes.",
+    "All five production hashes and all referenced Writer evidence digests match the persisted completion record.",
+    "User overlap in System.json, MapInfos.json and prior PKD/plugin configuration remains preserved.",
+    "Map045, Map022, Map049 and the untracked save show no phase-1 write."
+  ],
+  "classification": "structural_validation",
+  "runtimeValidation": {
+    "status": "pending-human-validation",
+    "statement": "This checkpoint approves only the fase1 static boundary. Plugin Manager round-trip, perceptible S50 input/menu behavior and New Game Playtest remain pending."
+  },
+  "managedArtifactsWrittenByAuditor": [
+    "planos/004-casa-forjaprata arquitetura/preflights/run-487ad0333da0041da77affbf548ca6969f27d17638df3d56285e3b7cb6770320/qa_proposal/preflight-v1.md",
+    "planos/004-casa-forjaprata arquitetura/builds/fase1/phase-audit-v1.json"
+  ],
+  "productionFilesModifiedByAuditor": [],
+  "nextAction": "Consume this approved phase:fase1 checkpoint, update orchestrator-owned state and dispatch task-2.1 under its exact scoped-writer envelope."
+}

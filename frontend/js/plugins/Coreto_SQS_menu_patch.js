@@ -1,46 +1,54 @@
 /*:
- * @plugindesc [Patch] Permite habilitar/desabilitar o menu de Quests do PKD_SimpleQuestSystem via Switch.
- * @author Gemini (Baseado no código de Pheonix KageDesu)
+ * @plugindesc [Patch] Governa o menu e a abertura direta do journal PKD por Switch.
+ * @author Coreto
  * @target MZ
+ * @orderAfter PKD_SimpleQuestSystem
  * @help
- * Coloque este plugin ABAIXO do PKD_SimpleQuestSystem na lista de plugins.
- *
- * 1. No plugin PKD_SimpleQuestSystem, configure "Command in menu?" para "No".
- * 2. Configure o parâmetro "Control Switch" neste plugin com o ID da Switch
- * que você quer usar para controlar o menu.
- * 3. Durante o jogo, ligue essa Switch para mostrar o menu e desligue para esconder.
+ * Coloque este plugin abaixo do PKD_SimpleQuestSystem.
+ * Com a Control Switch desligada, o comando do menu, o atalho J e chamadas
+ * diretas a SQSM.OpenQuestJournal permanecem bloqueados. Quando ligada, a
+ * abertura delega integralmente para o comportamento original do PKD.
  *
  * @param controlSwitchId
  * @text Control Switch
- * @desc A Switch que irá controlar se o menu de Quests aparece.
+ * @desc Switch que habilita o menu e a abertura do journal.
  * @type switch
  * @default 50
  */
 (() => {
-  // --- Início da Configuração do Plugin ---
-  const pluginName = 'PKD_SQS_MenuPatch';
-  const parameters = PluginManager.parameters(pluginName);
-  // Lê o ID da Switch a partir dos parâmetros do plugin que você configurou no editor.
-  const QUEST_MENU_SWITCH_ID = Number(parameters['controlSwitchId'] || 50);
-  // --- Fim da Configuração do Plugin ---
+  "use strict";
 
-  // Armazena a função original do plugin para não a perdermos.
-  const _PKD_SQS_Window_MenuCommand_addOriginalCommands = Window_MenuCommand.prototype.addOriginalCommands;
+  const PLUGIN_NAME = "Coreto_SQS_menu_patch";
+  const parameters = PluginManager.parameters(PLUGIN_NAME);
+  const QUEST_MENU_SWITCH_ID = Number(parameters.controlSwitchId || 50);
 
-  // Sobrescreve a função do plugin com a nossa nova lógica.
+  const isJournalEnabled = () => Boolean(
+    globalThis.$gameSwitches && $gameSwitches.value(QUEST_MENU_SWITCH_ID)
+  );
+
+  const sqsm = globalThis.SQSM;
+  if (!sqsm || typeof sqsm.OpenQuestJournal !== "function") {
+    throw new Error(`[${PLUGIN_NAME}] PKD_SimpleQuestSystem must load first.`);
+  }
+
+  const openQuestJournal = sqsm.OpenQuestJournal;
+  sqsm.OpenQuestJournal = function (...args) {
+    if (!isJournalEnabled()) return false;
+    return openQuestJournal.apply(this, args);
+  };
+
+  const addOriginalCommands = Window_MenuCommand.prototype.addOriginalCommands;
   Window_MenuCommand.prototype.addOriginalCommands = function () {
-    // Primeiro, executa a lógica original do plugin.
-    _PKD_SQS_Window_MenuCommand_addOriginalCommands.call(this);
+    addOriginalCommands.call(this);
 
-    // Agora, nossa lógica customizada:
-    // Verifica se o comando já existe na lista (para evitar duplicatas).
-    const commandExists = this._list.some(command => command.symbol === 'sqsJournal');
+    const commandIndex = this._list.findIndex(command => command.symbol === "sqsJournal");
+    if (!isJournalEnabled()) {
+      if (commandIndex >= 0) this._list.splice(commandIndex, 1);
+      return;
+    }
 
-    // Se o comando NÃO existe E o nosso Switch (configurado no parâmetro) está LIGADO...
-    if (!commandExists && $gameSwitches.value(QUEST_MENU_SWITCH_ID)) {
-      // ...então adicionamos o comando manualmente.
-      const commandText = PKD_SQS.PP.menuCommandText();
-      this.addCommand(commandText, 'sqsJournal', true);
+    if (commandIndex < 0) {
+      this.addCommand(PKD_SQS.PP.menuCommandText(), "sqsJournal", true);
     }
   };
 })();
