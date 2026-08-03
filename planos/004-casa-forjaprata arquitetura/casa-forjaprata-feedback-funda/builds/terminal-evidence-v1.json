@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "run_id": "loki-run-v2:31a737d65818670493f908bc1c02fee632db92f1c5a7da1797070f66f740cdc1",
+  "execution_id": "loki-execution-v2:8080a0bab8fd06c0312af234f47e731f4c2fb9f613f6b539c9bed9337aaec433",
+  "status": "completed-with-limitations",
+  "generated_at_utc": "2026-08-03T19:41:41.4642216Z",
+  "structural_validation": {
+    "status": "passed",
+    "checks_passed": 46,
+    "checks_total": 46,
+    "validator_ref": "planos/005-casa-forjaprata-feedback-funda/builds/fase1/validate-feedback.cjs",
+    "phase_audit_ref": "planos/005-casa-forjaprata-feedback-funda/builds/audits/phase/boundary-178b159e77a61f1a7dd862c0c7ebb5e2/checkpoint-v1-1.yaml",
+    "phase_audit_status": "approved-replay"
+  },
+  "implemented_outcomes": [
+    "aSemifinal is the only visible quest and has the sling pickup as task 1.",
+    "The chest is always visible and has no interaction before the first exit attempt.",
+    "The first exit attempt reveals the task and opens the journal once.",
+    "Picking up the sling completes task 1 and reveals task 2.",
+    "Leaving at V111=20 does not require equipping the sling."
+  ],
+  "human_validation": {
+    "status": "passed",
+    "guide_ref": "planos/005-casa-forjaprata-feedback-funda/interaction/fase1/playtest-new-game.md",
+    "guide_digest": "sha256:9bab83a79eecf9b20da403223867761822870b54a236fd89b940d0ae4e3846e6",
+    "confirmed_at_utc": "2026-08-03T19:41:41.4642216Z",
+    "confirmation": "The user reported that the playtest worked correctly; the full guide scope was accepted as passed.",
+    "required_gates": [
+      "RPG Maker MZ and Plugin Manager editor round-trip",
+      "New Game Playtest with reentry and save/load"
+    ],
+    "failures_reported": []
+  },
+  "reconciliation": {
+    "status": "passed",
+    "predecessor_audit_ref": "planos/005-casa-forjaprata-feedback-funda/builds/audits/phase/boundary-178b159e77a61f1a7dd862c0c7ebb5e2/checkpoint-v1-0.yaml",
+    "active_audit_ref": "planos/005-casa-forjaprata-feedback-funda/builds/audits/phase/boundary-178b159e77a61f1a7dd862c0c7ebb5e2/checkpoint-v1-1.yaml",
+    "sequence": [
+      "The editor round-trip changed plugins.js and preserved task 2 pointer Map045/E7.",
+      "The prior validator expectation failed because it omitted that semantically correct pointer.",
+      "The persisted expectation was reconciled and the full validator passed 46/46.",
+      "The independent phase auditor approved the complete replay."
+    ],
+    "validator_digest": "sha256:b89cde4e01facfc7235fbe594a468c6084014e5bca24bccfac899400e76d208b",
+    "plugins_digest": "sha256:e42837f18b356f25710a162a7bea943cc7bae6b0d0c6caaccfc22f5be7790461"
+  },
+  "limitations": [
+    "Compatibility with pre-existing saves is out of scope.",
+    "Inherited aSemifinal pointer Map010/E9 remains null and was not created by this change."
+  ]
+}

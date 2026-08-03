@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "run_id": "loki-run-v2:31a737d65818670493f908bc1c02fee632db92f1c5a7da1797070f66f740cdc1",
+  "execution_id": "loki-execution-v2:8080a0bab8fd06c0312af234f47e731f4c2fb9f613f6b539c9bed9337aaec433",
+  "task_id": "task-1.1",
+  "validator": "casa-forjaprata-feedback-v1",
+  "mode": "task1",
+  "status": "passed",
+  "checks_passed": 19,
+  "checks_total": 19,
+  "acceptance_criteria": {
+    "AC-Q-REGISTRY": "passed",
+    "AC-Q-PKD": "passed",
+    "AC-Q-CALLERS": "passed"
+  },
+  "supporting_validators": {
+    "json_parse": "passed",
+    "plugins_js_envelope": "passed",
+    "git_diff_check": "passed",
+    "preserved_hashes": "passed"
+  },
+  "completion_ref": "planos/005-casa-forjaprata-feedback-funda/builds/fase1/task-1.1-completion-v1.json",
+  "classification": "structural_validation",
+  "human_validation": "passed-feature-gate",
+  "human_validation_ref": "planos/005-casa-forjaprata-feedback-funda/interaction/fase1/playtest-new-game.md"
+}

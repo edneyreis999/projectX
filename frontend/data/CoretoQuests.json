@@ -77,17 +77,12 @@
                 90
             ],
             "pkd": {
-                "questId": "tutorialFundaForjaprata",
+                "questId": "aSemifinal",
                 "objectives": [
                     {
                         "id": 1,
                         "knownFrom": 10,
                         "completedAt": 20
-                    },
-                    {
-                        "id": 2,
-                        "knownFrom": 20,
-                        "completedAt": 90
                     }
                 ]
             },
@@ -107,15 +102,6 @@
                     "to": 20,
                     "requirements": [],
                     "effects": []
-                },
-                "LEAVE_EQUIPPED": {
-                    "from": [
-                        20
-                    ],
-                    "to": 90,
-                    "requirements": [],
-                    "effects": [],
-                    "terminal": true
                 }
             },
             "extensions": {

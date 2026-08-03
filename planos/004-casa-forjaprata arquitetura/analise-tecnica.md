@@ -1,494 +1,393 @@
 ---
-title: "Casa Forjaprata: arquitetura EX/VN, Funda e introducao do journal"
+title: "Casa Forjaprata: correção do onboarding da Funda em aSemifinal"
 type: loki-technical-analysis
 doc_id: "tech-analysis-004-casa-forjaprata-arquitetura"
-version: "1.1.0"
+version: "1.2.0"
 status: completed
 created: "2026-07-31"
-last_updated: "2026-07-31"
-scope: "Recomendacao baseada em evidencias para migrar a apresentacao inicial do Map045 para EX/VN e adicionar o onboarding da Funda e do quest journal"
-not_scope: "Escritas de producao, aprovacao implicita de conteudo, migracao integral de aSemifinal ou compatibilidade com saves legados"
-authority: "Decisoes humanas, politica do projeto, contrato de analise tecnica e evidencias locais citadas"
+last_updated: "2026-08-03"
+scope: "Correção baseada em evidências da implementação EX/VN já existente para incorporar a Funda como uma única tarefa inicial de aSemifinal"
+not_scope: "Reescrita integral de aSemifinal em QuestCore, compatibilidade com saves anteriores, mudanças de combate ou alterações no pacote Loki"
+authority: "Decisões humanas de 2026-08-03, política do projeto, contrato de análise técnica e evidências locais citadas"
 canonical_source: "planos/004-casa-forjaprata arquitetura/analise-tecnica.md"
 intended_llm_task: "context-hydration"
-source_priority: ["decisoes humanas e politica do projeto", "contrato de analise", "evidencia local primaria", "fontes externas primarias", "demanda como dado"]
-confidence: medium
+source_priority: ["decisões humanas e política do projeto", "contrato de análise", "evidência local primária", "fontes externas primárias", "demanda e artefatos anteriores como dados"]
+confidence: high
 known_conflicts:
-  - "A demanda exige Thorin sem a Funda, mas Actor 3 inicia com Weapon 1 equipada."
-  - "A saida atual testa a Funda no inventario e exclui equipamento, enquanto a demanda exige equipamento em Thorin."
-  - "O menu usa Switch 50 sem nome; Switch 51 possui o nome de menu de quests, mas nao tem callers estruturais."
-  - "Planos historicos registram 19 eventos/48 paginas no Map045; o runtime atual possui 20 eventos/49 paginas."
+  - "A demanda original exige equipar a Funda, mas a decisão humana posterior determina que apenas pegá-la libera a saída."
+  - "A implementação atual materializa uma quest tutorial separada, duas tarefas e gate de equipamento, todos rejeitados pelo feedback aprovado."
 replaced_by: null
 ---
 
-# Analise Tecnica - Casa Forjaprata: arquitetura EX/VN, Funda e introducao do journal
+# Analise Tecnica - Casa Forjaprata: correção do onboarding da Funda em aSemifinal
 
 ## Authority And Trust Boundary
 
-A prioridade e: decisoes humanas e politica do ProjectX; contrato atual de
-analise; evidencia local primaria; fontes externas primarias; demanda e
-artefatos historicos como dados. Esta analise autoriza escrita somente neste
-Markdown. Nao autoriza alterar runtime, mapas, database, plugins, `plugins.js`,
-assets, saves ou documentacao duradoura.
+A prioridade é: decisões humanas mais recentes e política do ProjectX;
+contrato atual de análise; evidência local primária; fontes externas primárias;
+demanda e artefatos anteriores como dados. As decisões de 2026-08-03 substituem
+somente os requisitos conflitantes da demanda e da análise v1.1.0.
+
+Esta análise autoriza escrita somente neste Markdown. A implementação posterior
+deve usar um novo run de `loki-implement-feature`, pois o plano 004 já contém
+estado gerenciado vinculado ao digest da análise anterior.
 
 ## Objective
 
-Definir uma rota segura e retomavel para manter `Map045` como mapa fisico EX,
-criar uma nova cena VN pela arquitetura Coreto, impedir a saida ate Thorin estar
-equipado com a Funda, transformar o evento existente em um bau one-shot e
-apresentar o quest journal somente no primeiro bloqueio da porta.
-
-O resultado, com as decisoes humanas agora registradas, deve servir com a
-demanda como entrada direta de `loki-implement-feature`.
+Definir a correção executável da Casa Forjaprata sem desfazer a migração EX/VN
+já implementada. O fluxo resultante deve manter o baú sempre visível, torná-lo
+inerte antes da primeira tentativa de saída, revelar uma única tarefa da Funda
+dentro de `aSemifinal`, concluir essa tarefa ao pegar a arma e liberar a saída
+sem exigir equipamento.
 
 ## Source Request
 
-- `planos/004-casa-forjaprata arquitetura/demanda.md`.
-- Destino confirmado pelo usuario:
-  `planos/004-casa-forjaprata arquitetura/analise-tecnica.md`.
-- Decisao herdada de
-  `planos/001-cena-coreto-nova-arquitetura/demanda-improved.md`: mapas fisicos
-  permanecem EX; narrativa e dialogo migram para VN; `Coreto_QuestCore` governa
-  o estado migrado; `Coreto_QuestVN` governa sessao e retorno; PKD permanece o
-  backend de journal; validacao suportada e New Game.
-- Preflight humana concluida em 2026-07-31 e persistida nesta versao da analise:
-  quest tutorial Coreto separada; nova VN limitada a E11/P1; Funda inacessivel
-  antes da primeira tentativa de saida; contrato de objetivos e feedback do
-  journal aprovado.
+- `planos/004-casa-forjaprata arquitetura/demanda.md` como demanda original.
+- Feedback humano aprovado em 2026-08-03:
+  - não criar missão separada para a Funda;
+  - usar a quest existente `aSemifinal`;
+  - criar somente uma tarefa, concluída ao pegar a Funda no baú;
+  - Thorin não precisa equipar a Funda para sair;
+  - o baú aparece desde o início;
+  - antes da primeira tentativa de saída, interagir com o baú não produz nada;
+  - a Funda não pode ser obtida antes dessa primeira tentativa.
+- Autorização humana de 2026-08-03 para atualizar esta análise e implementar a
+  correção.
 
 ## Execution Effort
 
 ```yaml
 execution_effort: high
 model_class: frontier_reasoning
-escalation_reason: "architecture and conflicting local evidence"
+escalation_reason: "quest index remapping across serialized RPG Maker data and correction of an already implemented flow"
 recommended_handoffs:
-  research: "source-researcher completed read-only; bibliotecario completed catalog navigation"
+  research: "source-researcher completed read-only inventory"
   execution: "loki-implement-feature"
 human_decision_preflight:
   required: false
-  reason: "A preflight de 2026-07-31 resolveu arquitetura, fronteira da VN, ordem porta/bau e contrato perceptivel do tutorial."
+  reason: "Quest de destino, momento de revelação, conclusão, comportamento do baú e condição de saída foram decididos pelo usuário."
   blocking_questions: []
 validator_effort: high
 ```
 
 ## Scope
 
-- Analisar `Map045` como EX e propor uma nova VN, sem escolher silenciosamente
-  um ID de mapa.
-- Analisar E7 `Sair da Casa`, E11 `Pesadelo`, E20 e o estado do journal.
-- Definir contrato de quest tutorial, equipamento, bau, primeira tentativa,
-  reentrada, save/load e integracao Coreto/PKD.
-- Mapear impactos necessarios em `Map022`, `MapInfos`, `System`, registry,
-  configuracao PKD e dados do ator, sem executar mudancas.
-- Prescrever validators estaticos, round-trip no editor e Playtest New Game.
+- Corrigir a projeção PKD de `aSemifinal`, inserindo a tarefa da Funda na
+  posição inicial e reconciliando todos os callers e pointers indexados.
+- Corrigir `Map045` E7, E11/P8 e E20, preservando as demais unidades.
+- Manter V111 como autoridade persistida do microfluxo da Funda e da sessão VN.
+- Manter Map045 EX, Map049 VN e o lifecycle `EnterVisualNovel`/asserts/finish.
+- Remover a quest PKD visível `tutorialFundaForjaprata` e o objetivo de equipar.
+- Prescrever parse, diff restrito, checks de comandos, Plugin Manager/editor e
+  Playtest New Game.
 
 ## Out Of Scope
 
-- Implementar ou editar `frontend/**`.
-- Migrar integralmente `aSemifinal`, V29 e seus callers em
-  `CommonEvents`/Maps006/007/009/010/014/044/045.
-- Alterar Map006, roteiro posterior, combate, balanceamento ou assets sem task
-  e approval especificos.
-- Escolher texto narrativo final, arte final do bau ou layout visual sem a
-  decisao humana indicada.
-- Prometer compatibilidade com saves legados; o runtime Coreto observado usa
-  politica New Game only.
+- Migrar toda `aSemifinal` e V29 para QuestCore.
+- Alterar Map046, combate, balanceamento, armas, atores ou conteúdo narrativo
+  não relacionado.
+- Compatibilidade com saves criados pela implementação anterior; a política
+  continua New Game only.
+- Declarar comportamento visual, interação, journal, reentrada ou save/load
+  validados sem Playtest humano.
+- Reescrever trabalho local não relacionado, inclusive o save não rastreado e
+  alterações do editor em outros JSONs.
 
 ## Sources Read
 
 | Source | Kind | Evidence Extracted | Used For |
 | --- | --- | --- | --- |
-| `AGENTS.md` | project-policy | Em `frontend/data`, preferir Coreto/VisuStella e consultar referencias locais antes de criar solucao custom. | Limites e roteamento. |
-| `planos/004-casa-forjaprata arquitetura/demanda.md` | user-demand | Novo mapa VN, Funda em bau, saida apenas equipada e journal apos primeira tentativa. | Requisitos. |
-| Preflight humana de 2026-07-31, persistida nesta analise | user-decision | Quest separada; VN limitada a E11/P1; bau inacessivel antes da primeira saida; contrato do journal aprovado. | Escopo, sequencia e aceite. |
-| `planos/001-cena-coreto-nova-arquitetura/{demanda-improved.md,analise-tecnica.md}` | recorded-decision/history | Contrato EX/VN/Coreto, PKD como projecao e politica New Game only. | Arquitetura herdada. |
-| `planos/003-falas-casa-forjaprata/analise-tecnica.md` | history | Inventario anterior do Map045, hoje defasado pela existencia de E20. | Drift e riscos. |
-| `docs/index.xml` | durable-catalog | Catalogo valido, atualizado em 2026-07-31, sem contrato especifico para a nova Casa Forjaprata. | Navegacao documental. |
-| `docs/domains/{scene-presentation-designer,quest-content-designer,gameplay-engineer,level-designer,technical-implementer,ux-ui-designer,runtime-qa}/README.md` | durable-interpretive | Map045 e EX; VN requer lifecycle pareado; journal e projecao; topologia estatica nao prova reachability; validacao em tres camadas. | Contratos, riscos e gates. |
-| `frontend/data/Map022.json` | local-primary | O fluxo Coreto termina em Map045; E30 liga S50 antes da casa; E17 ainda escreve V29=1. | Origem do estado e journal antecipado. |
-| `frontend/data/Map045.json` | local-primary | EX 22x18, 20 eventos/49 paginas; E7, E11 e E20 concentram a feature. | Estado atual e alvos. |
-| `frontend/data/Map046.json` | local-primary | VN existente da Noite da Historia com asserts, transicao e finish. | Padrao local comprovado. |
-| `frontend/data/{System,MapInfos,Actors,Weapons,Items,CommonEvents,CoretoQuests}.json` | local-primary | IDs, nomes, callers, registry e conflitos de estado/equipamento. | Contratos de dados. |
-| `frontend/js/plugins.js` | generated-config | PKD e plugins Coreto ativos; configuracao de journal, quest `aSemifinal` e slots de plugin. | Integracao e drift. |
-| `frontend/js/plugins/{Coreto_QuestCore,Coreto_QuestVN,Coreto_Cutscene,Coreto_Quests,Coreto_SQS_menu_patch}.js` | local-primary | APIs, schema, lifecycle, grant de armas e gate do menu. | Alternativas e validators. |
-| `frontend/js/rmmz_objects.js` | local-engine | Semantica de Conditional Branch Weapon e Actor/Weapon. | Rejeicao do gate atual. |
-| Skills Loki/RPG Maker/VisuStella citadas no resume state | technical-contract | Parsing estruturado, payloads, plugin workflow, gates de editor e Playtest. | Procedimento downstream. |
+| `AGENTS.md` | project-policy | Em `frontend/data`, preferir Coreto/VisuStella e aplicar o workflow estruturado de RPG Maker MZ. | Limites e procedimento. |
+| `planos/004-casa-forjaprata arquitetura/demanda.md` | user-demand | Demanda original da VN, Funda, porta e journal. | Contexto; requisitos conflitantes foram substituídos pelas decisões mais recentes. |
+| Decisões humanas de 2026-08-03 persistidas nesta análise | user-decision | Uma tarefa em `aSemifinal`, conclusão no baú, saída sem equipar e baú visível porém inerte inicialmente. | Autoridade funcional. |
+| `planos/004-casa-forjaprata arquitetura/{tasks.md,task-1.1.md,task-2.1.md,builds/**}` | prior-run | O run anterior validou estaticamente o contrato antigo e permanece pendente de Playtest. | Baseline e motivo para novo run. |
+| `frontend/data/CoretoQuests.json` | local-primary | `tutorial-funda-forjaprata` usa V111, PKD separado, objetivos localizar/equipar e estados 0/10/20/90. | Estado atual e correção do registry. |
+| `frontend/js/plugins.js` | generated-config | `aSemifinal` tem sete tarefas; `tutorialFundaForjaprata` tem duas; pointers de `aSemifinal` usam índices 1–7. | Remoção da quest separada, inserção e remapeamento. |
+| `frontend/js/plugins/Coreto_QuestCore.js` | local-primary | `sync()` adiciona a quest, revela/completa objetivos e completa toda a quest quando o estado é terminal. | Limite de autoridade e prevenção de conclusão antecipada. |
+| `frontend/data/Map045.json` | local-primary | E7 exige equipamento; E20 não possui página visível no estado 0; E11/P8 revela antecipadamente a tarefa antiga de `aSemifinal`. | Correção da porta, baú e timing. |
+| `frontend/data/Map049.json` e `Coreto_QuestVN.js` | local-primary | A sessão VN usa o questKey interno, asserts e finish pareados. | Preservação do lifecycle. |
+| `frontend/data/CommonEvents.json` e Maps006/007/010/014/044 | local-primary | Callers numerados completam/revelam tarefas 1–7 de `aSemifinal`. | Remapeamento completo. |
+| `frontend/data/System.json`, `Map022.json`, `Actors.json`, `Weapons.json` | local-primary | V111 existe; Map022 já não habilita S50 cedo; Thorin inicia com Weapon 1 e E11 remove a arma incluindo equipamento. | Persistência, journal e precondição New Game. |
+| `frontend/js/rmmz_objects.js` | local-engine | Semântica de branches, switches, variáveis, self-switches, transfer e Change Weapons. | Validators de comandos. |
+| Handoffs `source-researcher`, `technical-implementer` e `runtime-qa` de 2026-08-03 | proposal/evidence | Inventário de callers, alternativas de estado e matriz de Playtest. | Síntese, riscos e gates. |
 
 ## Evidence Classification
 
 ### Facts
 
-- `Map022` e `Map045` possuem `<CoretoMapType:EX>`; `Map046` possui
-  `<CoretoMapType:VN>` e ja pertence a `noite-da-historia`.
-- O padrao local de VN em `Map046#events[1].pages[0]` inicia com
-  `AssertVisualNovelSession`/`AssertQuestState` e termina com
-  `QuestTransition`/`FinishVisualNovel`.
-- `Map045` e parse-valid, mede 22x18 e possui 20 eventos/49 paginas. E7 e
-  `Sair da Casa`, E11 e `Pesadelo`, E10 e `Trofeu 2` e E20 ainda e `EV020`.
-- `Map045#events[11].pages[0]` e autorun, condicionado a V106 >= 90, e possui
-  138 comandos. Nos comandos finais ele adiciona/ativa `aSemifinal`, mostra a
-  descricao/tarefa 1, chama `SQSM.OpenQuestJournal()`, escreve V29=2, ajusta a
-  descricao de save e liga Self Switch A.
-- PKD esta ativo na ordem 47; o menu nativo esta desabilitado, a tecla direta
-  do journal e `J`, a task list esta ativa e `aSemifinal` nao possui objetivo
-  sobre localizar ou equipar a Funda.
-- `Coreto_SQS_menu_patch` esta ativo e consulta S50. `Map022` E30 liga S50 antes
-  de chegar a casa. S50 nao tem nome; S51 chama-se `Habilitar Menu de Quests`,
-  mas nao possui callers estruturais localizados.
-- Weapon 1 e `Funda`. Actor 3 e Thorin e inicia com `equips[0] = 1`; portanto
-  New Game contradiz a premissa de Thorin sem a Funda.
-- `Map045#events[7].pages[0].list[0]` usa Conditional Branch
-  `[9,1,false]`. O engine local resolve isso como arma 1 presente no inventario
-  da party, excluindo equipamentos. O ramo verdadeiro transfere para Map007;
-  o `else` esta vazio.
-- O teste correto e nativo para a demanda existe como Conditional Branch
-  `Actor 3 / Weapon 1`, cuja semantica local chama `actor.hasWeapon(...)`.
-- `Map045#events[20]`, em (19,14), chama
-  `Coreto_Quests/addWeapon weaponID=1`; nao possui grafico, condicao ou
-  self-switch. O plugin somente concede a arma e nao impede repeticao.
-- E10 `Trofeu 2` fica em (15,14). A proximidade de E20 nao prova que (19,14) e
-  a dispensa ou a posicao final correta do bau.
-- `CoretoQuests.json` registra somente `noite-da-historia`; `aSemifinal`
-  permanece governada por V29 e chamadas SQSM distribuidas por varios mapas.
-- O schema atual de QuestCore aceita requirements/effects de `item`; nao possui
-  requisito declarativo para arma equipada por ator.
-- MapInfos 49, 50 e 51 estao livres, mas `Map058.json` existe sem entrada em
-  MapInfos. A escolha de ID exige reconciliacao estruturada e round-trip no
-  editor, nao apenas escolher o primeiro numero aparente.
-- `plugins.js` atual possui 69 entradas, 52 ativas e uma unica entrada PKD;
-  QuestCore/QuestVN/Cutscene estao ativos nas ordens 55/56/57. Isso supera o
-  estado historico registrado no plano 001.
-- A decisao humana de 2026-07-31 aprovou uma quest tutorial Coreto separada de
-  `aSemifinal` e limitou a nova VN a apresentacao atual de E11/P1.
-- A mesma preflight determinou que Thorin nao pode obter a Funda antes da
-  primeira tentativa de saida. Essa tentativa bloqueia a transferencia,
-  apresenta o journal uma unica vez e somente entao libera o acesso ao bau.
-- O contrato perceptivel aprovado e: primeiro objetivo encontrar a Funda; ao
-  abrir o bau, objetivo passa a equipa-la em Thorin; a saida conclui a quest;
-  repeticoes mostram somente um lembrete.
+- A implementação atual contém uma missão PKD separada chamada
+  `tutorialFundaForjaprata`, com duas tarefas: localizar e equipar.
+- V111 é a autoridade persistida do onboarding atual. E11 remove Weapon 1 de
+  Thorin/inventário antes de entregar controle ao jogador.
+- E7 atualmente liga S50 e abre o journal na primeira tentativa, mas depois
+  exige Actor 3 equipado com Weapon 1 para transferir.
+- E20 atualmente só possui páginas elegíveis em V111 >= 10; por isso o baú é
+  invisível antes da primeira tentativa.
+- `aSemifinal` possui sete tarefas, numeradas publicamente de 1 a 7. Seus
+  callers estão em `CommonEvents`, Maps006/007/010/014/044/045 e seus pointers
+  estão serializados em `plugins.js`.
+- O PKD considera a primeira tarefa visível por padrão quando uma quest é
+  adicionada. Assim, a tarefa da Funda precisa ocupar o índice 1 para ser a
+  única primeira tarefa coerente com o onboarding aprovado.
+- `Coreto_QuestCore.sync()` chama `CompleteQuest` quando o estado da definição é
+  terminal. Reapontar o estado terminal 20 para `aSemifinal` completaria a
+  missão inteira cedo demais.
+- Map049 e a migração EX/VN estão estruturalmente presentes e não precisam ser
+  redesenhadas para corrigir a estrutura visível da quest.
+- O worktree contém alterações do usuário/editor e um save não rastreado; todo
+  writer deve preservar bytes/unidades fora da allowlist.
 
 ### Inferences
 
-- Converter o proprio Map045 em VN violaria o contrato duradouro e o fluxo
-  existente. O desenho coerente e manter Map045 EX e criar outro mapa VN.
-- O patch local apenas no E7 nao satisfaz a solicitacao de nova arquitetura:
-  manteria journal, cena, gate e persistencia dispersos em eventos legados.
-- Migrar `aSemifinal` inteira para QuestCore e tecnicamente canônico, mas o
-  ownership de V29 e das sete tarefas atravessa varios mapas e Common Events;
-  isso amplia muito a demanda que pede manter o fluxo atual.
-- A alternativa de menor blast radius e uma quest tutorial Coreto separada,
-  com estado e mapa VN proprios. `aSemifinal` e seus callers continuam legados
-  e fora da autoridade dessa quest; nenhuma mesma transicao pode ser escrita
-  pelos dois backends.
-- Para garantir que o journal seja apresentado na primeira tentativa, o fluxo
-  precisa persistir um estado one-shot antes de abrir a UI. So testar posse ou
-  equipamento nao distingue primeira tentativa de repeticoes.
-- Como o bau deve permanecer inacessivel antes da primeira tentativa, o fluxo
-  pode garantir um primeiro bloqueio deterministico sem ignorar o requisito de
-  equipamento nas tentativas posteriores.
-- Remover a Funda globalmente de Actors.json tem maior blast radius que retirar
-  a arma ao inicializar esta rota do Map045; a opcao local e preferivel se a
-  politica New Game e o inventario de rotas confirmarem que nao ha efeito
-  anterior a preservar.
+- V111 deve continuar como autoridade exclusiva do microfluxo 0/10/20. V29
+  continua autoridade legada do arco maior de `aSemifinal`.
+- A definição Coreto interna pode continuar usando o questKey técnico
+  `tutorial-funda-forjaprata`, mas deve projetar `pkd.questId: aSemifinal` e
+  somente o novo objetivo 1. O nome interno não cria outra missão visível.
+- `terminalStates: [90]` pode ser preservado como sentinela não alcançada por
+  este microfluxo. Remover `LEAVE_EQUIPPED` e não transicionar para 90 evita que
+  QuestCore complete toda `aSemifinal`.
+- Inserir a tarefa na posição 1 desloca os sete objetivos existentes para 2–8.
+  Atualizar somente o texto PKD sem remapear callers e pointers quebraria a
+  progressão posterior.
+- E11/P8 não deve adicionar/ativar/revelar `aSemifinal`; a primeira tentativa de
+  saída torna-se o único momento de criação/projeção visível da quest.
+- No pickup, `FOUND_SLING` conclui a nova tarefa 1 e o próprio evento mostra a
+  tarefa 2, preservando o padrão SQSM legado para o restante do arco.
 
 ### Hypotheses
 
-- **Nao confirmada:** E20 em (19,14) e a posicao correta da dispensa. Requer
-  inspecao visual no editor e decisao humana de layout.
-- **A validar antes da escrita:** retirar a Funda no inicio de E11 nao quebra
-  estado anterior ou fixtures de QA. O baseline New Game a equipa, mas o efeito
-  perceptivel da remocao local depende do Playtest da rota completa.
-- **A validar antes da escrita:** a quest tutorial separada pode ser cadastrada
-  no PKD sem reflow perigoso de `plugins.js` e sem conflito visual com
-  `aSemifinal`.
+- **Runtime-pending:** uma página-base de baú com lista vazia e `directionFix`
+  evita qualquer feedback perceptível antes da saída. Exige Playtest.
+- **Runtime-pending:** a renumeração dos pointers preserva navegação e tracker
+  depois da inserção. Exige inspeção no journal e continuidade do arco.
 
 ### Open Questions
 
-- None. As decisoes humanas materiais desta analise foram resolvidas na
-  preflight de 2026-07-31. Detalhes tecnicos restantes pertencem ao plano ou
-  aos gates de editor e Playtest.
+- None. Detalhes perceptíveis restantes são gates de editor/Playtest, não
+  decisões funcionais abertas.
 
 ## Affected Surfaces
 
 ### Runtime, Engine or Framework
 
-- Provaveis alvos da opcao recomendada:
-  `frontend/data/Map045.json`, `Map022.json`, `MapInfos.json`,
-  `System.json`, `CoretoQuests.json`, um novo `MapXXX.json` e
-  `frontend/js/plugins.js` para a nova definicao PKD.
-- Superficies de validacao: `Actors.json#3`, `Weapons.json#1`,
-  `CommonEvents.json`, `Map006.json`, plugins Coreto e engine local.
-- `Actors.json` e `Weapons.json` permanecem preservados na opcao recomendada;
-  qualquer remocao global da Funda exige decisao de alvo separada.
-- Nenhum impacto no pacote Loki, `manifest.yaml`, commands, agents, templates,
-  scripts ou skills.
+- Produção provável:
+  `frontend/data/CoretoQuests.json`, `Map045.json`, `CommonEvents.json`,
+  `Map006.json`, `Map007.json`, `Map010.json`, `Map014.json`, `Map044.json` e
+  `frontend/js/plugins.js`.
+- Validação/preservação: `Map049.json`, `Map022.json`, `System.json`,
+  `MapInfos.json`, `Coreto_QuestCore.js`, `Coreto_QuestVN.js`,
+  `Coreto_SQS_menu_patch.js`, `Actors.json` e `Weapons.json`.
+- Nenhum impacto esperado no pacote Loki, manifests, skills ou commands.
 
 ### Integration Points
 
-- `Coreto_QuestCore`: definicao, estado e transicoes da quest tutorial.
-- `Coreto_QuestVN`: `EnterVisualNovel`, `AssertVisualNovelSession` e
-  `FinishVisualNovel`.
-- `Coreto_Cutscene`: somente para staging fisico EX, com begin/finish pareados
-  e sem sobrepor uma sessao VN.
-- `Coreto_Quests/addWeapon`: concessao da Weapon 1 no bau.
-- PKD/SQSM: quest tutorial, abertura do journal e preservacao separada de
-  `aSemifinal`.
-- RPG Maker MZ: Actor/Weapon Conditional Branch, self-switch do bau, page
-  conditions, transfers e persistencia de variaveis/switches.
-- VisuStella VN Picture Busts, Message/Gab/Save Core: payloads de apresentacao
-  e comportamento perceptivel, sempre com Playtest pendente.
+- QuestCore: V111, `INTRODUCE_JOURNAL`, `FOUND_SLING` e projeção do objetivo 1.
+- QuestVN: questKey técnico existente e Map049/entry
+  `ABERTURA_FORJAPRATA` preservados.
+- PKD/SQSM: uma única quest visível `aSemifinal`, oito tarefas, pointers
+  remapeados e continuidade legada por V29.
+- RPG Maker MZ: páginas do baú, Change Weapons, Control Switches/Variables,
+  Self Switch e Transfer Player.
 
 ### State and Data Contracts
 
-Contrato aprovado na preflight:
+| V111 | Significado | Baú | Quest/journal | Saída |
+| ---: | --- | --- | --- | --- |
+| 0 | primeira tentativa ainda não ocorreu | visível, fechado e inerte | `aSemifinal` não projetada; S50 OFF | bloqueada; tentativa executa 0→10 |
+| 10 | onboarding apresentado | visível e interativo | tarefa 1 “Pegue a Funda no baú” visível; journal já apresentado uma vez | bloqueada |
+| 20 | Funda concedida | aberto e one-shot | tarefa 1 concluída; tarefa 2 “Corra até o estádio...” visível | permitida sem consultar equipamento |
+| 90 | sentinela terminal legada não alcançada por este microfluxo | n/a | não deve completar `aSemifinal` | n/a |
 
-| Estado | Significado | Projecao/efeito esperado |
-| ---: | --- | --- |
-| 0 | onboarding ainda nao apresentado | VN inicial pode executar; quest tutorial nao aparece no journal |
-| 10 | primeira tentativa registrada | habilitar S50, projetar tutorial e abrir journal exatamente uma vez |
-| 20 | Funda obtida no bau | completar objetivo de localizar; mostrar objetivo de equipar |
-| 90 | Thorin equipado e saida confirmada | completar tutorial e permitir a transferencia |
-
-- Os valores sao uma proposta sem ID de variavel; o ID deve ser localizado por
-  inventario global e nomeado em `System.json` antes da escrita.
-- `questKey`, PKD `questId`, `entryKey`, mapId, spawn e eventId permanecem
-  pendentes de alocacao tecnica; nenhum identificador definitivo e inventado
-  aqui.
-- E7 deve diferenciar o primeiro bloqueio das repeticoes e testar especificamente
-  Actor 3 equipado com Weapon 1.
-- E20 deve conceder uma unica Funda e persistir aberto por self-switch/estado,
-  sem depender da quantidade no inventario, pois a arma pode estar equipada.
-- A pagina VN deve ser Action Button, iniciar por asserts de sessao/estado,
-  limpar pictures/busts e chamar `FinishVisualNovel` em toda saida valida.
+- E20 deve possuir, nesta ordem, página-base incondicional inerte, página
+  interativa para V111 >= 10 e página aberta por Self Switch A.
+- A concessão de Weapon 1 ocorre uma vez; a transição 10→20 e o Self Switch A
+  persistem o milestone.
+- `aSemifinal` passa a ter oito tarefas. A nova tarefa é 1 e as antigas 1–7
+  tornam-se 2–8.
+- Remapeamento obrigatório dos calls `ShowTaskForQuest` e
+  `CompleteTaskForQuest`: Map006 1→2; Map014 1→2, 2→3, 3→4, 5→6, 6→7;
+  Map010 3→4 e 4→5; CommonEvents 4→5 e 5→6; Map007/Map044 7→8.
+- Todos os `sqsPointers:structA` de `aSemifinal` com índices 1–7 devem receber
+  +1. A nova tarefa 1 recebe pointer único para Map045/E20.
 
 ## Research Gate
 
 **Decision:** not-needed
-**Reason:** a decisao depende de estado local do projeto, engine, plugins
-instalados, dados e contratos Coreto ja materializados. Nenhuma versao externa,
-API atual, licenca ou compatibilidade upstream e necessaria para escolher a
-proxima acao.
+**Reason:** a decisão depende do estado local do projeto, do engine e dos
+plugins já instalados. Nenhuma versão externa, licença ou compatibilidade
+upstream é necessária.
 
 | Source | Finding | Impact |
 | --- | --- | --- |
-| none | Pesquisa externa nao executada. | Evidencia local permanece fonte de verdade. |
+| none | Pesquisa externa não executada. | Evidência local permanece fonte de verdade. |
 
 ## Decision Matrix
 
 | Option | Evidence | Pros | Cons | Decision |
 | --- | --- | --- | --- | --- |
-| Patch local/nativo em E7/E11/E20 | Actor/Weapon branch existe; eventos atuais ja concentram o sintoma | Menor diff imediato | Nao cria VN Coreto coerente; mantem estado e journal dispersos | reject |
-| Migracao integral de `aSemifinal` para QuestCore | V29 e sete tasks possuem muitos readers/writers/callers | Autoridade unica para todo o arco | Blast radius alto; exige migrar varios mapas/CEs e remapear estados/objetivos | defer para demanda propria |
-| Quest tutorial Coreto separada + novo VN | QuestCore/QuestVN ativos; `aSemifinal` pode permanecer fora da nova autoridade; preflight aprovada | Preserva fluxo posterior e isola onboarding, idempotencia e journal | Exige nova definicao PKD, estado, texto e validacao de UX/layout | **use** |
-| Estender QuestCore para requisito declarativo de arma equipada | Schema atual aceita somente item | Centraliza tambem o requisito de equipamento | Altera plugin e contrato generico sem necessidade aprovada | defer; usar branch nativo Actor/Weapon |
-| Deferir/bloquear | Decisoes materiais resolvidas na preflight | Nenhum beneficio atual | Adia sem necessidade o fluxo aprovado | reject |
+| Manter a missão tutorial separada | Implementação atual | Menor diff | Contradiz diretamente a decisão humana | reject |
+| Anexar a tarefa como índice 8 | Callers atuais permaneceriam estáveis | Evita renumeração | PKD revela a tarefa 1 antiga por padrão; ordem narrativa incorreta | reject |
+| Inserir a tarefa como índice 1 e remapear callers/pointers | Semântica PKD e inventário completo | Fluxo correto e uma única quest visível | Maior diff de dados, exige validator forte | **use** |
+| Migrar toda `aSemifinal` para QuestCore | V29/callers distribuídos | Autoridade única futura | Blast radius desnecessário para esta correção | defer |
+| Alterar `Coreto_QuestCore.js` com flag de não completar terminal | Comportamento terminal atual | Permitiria terminal 20 formal | Muda contrato genérico sem necessidade; risco de regressão | reject |
+| Deferir/bloquear | Decisões resolvidas | Nenhum risco imediato | Mantém comportamento rejeitado | reject |
 
 ## Recommendation
 
-Executar `loki-implement-feature` com a demanda e esta analise. A opcao aprovada
-e uma quest tutorial Coreto separada, mantendo `aSemifinal`, V29 e seus callers
-fora da migracao integral.
+Executar um novo `loki-implement-feature` em
+`planos/005-casa-forjaprata-feedback-funda`, usando a demanda original e esta
+análise atualizada.
 
 O plano deve:
 
-1. Produzir uma matriz de equivalencia de E11/P1 separando staging fisico EX de
-   dialogo, busts, mensagens e apresentacao VN.
-2. Alocar por inventario um ID de variavel e um slot de mapa; criar a definicao
-   tutorial no PKD/QuestCore e a extensao QuestVN sem reutilizar Map046.
-3. Manter Map045 EX. E11 executa o prelude fisico, entra pela API
-   `EnterVisualNovel`, retoma/limpa no EX e nao abre o journal antecipadamente.
-4. Manter a Funda inacessivel antes da primeira tentativa. Em E7, persistir o
-   bloqueio antes de habilitar S50, projetar o objetivo de encontrar a Funda e
-   abrir o journal uma unica vez. Tentativas seguintes exibem apenas o lembrete
-   aprovado.
-5. Transformar E20 em bau visual one-shot, com grant da Weapon 1 e estado de
-   aberto persistente, acessivel somente depois do primeiro bloqueio. Ao abrir,
-   atualizar o objetivo para equipar a Funda em Thorin.
-6. Na tentativa posterior, permitir transferencia somente quando Actor 3 tiver
-   Weapon 1 equipada. Posse no inventario ou equipamento em outro ator nao
-   satisfazem a condicao.
-7. Completar o tutorial de forma idempotente na saida aprovada e preservar o
-   inicio e os callers posteriores de `aSemifinal` sem representar a mesma
-   transicao em QuestCore e SQSM ao mesmo tempo.
+1. Remover a definição PKD `tutorialFundaForjaprata`.
+2. Inserir “Pegue a Funda no baú” como tarefa 1 de `aSemifinal`; deslocar as
+   sete tarefas existentes e todos os callers/pointers para 2–8.
+3. Reapontar a definição Coreto interna de V111 para `pkd.questId:
+   aSemifinal`, com somente objetivo 1 conhecido em 10 e concluído em 20;
+   remover objetivo de equipar e transição `LEAVE_EQUIPPED`; manter 90 sem
+   transição para não completar o arco inteiro.
+4. Em E11/P8, preservar V29, descrição de save e self-switches, mas remover a
+   projeção antecipada de `aSemifinal`.
+5. Em E7, no estado 0, executar 0→10, ligar S50, ativar a quest e abrir o
+   journal uma vez; no estado 10, apenas lembrar de pegar a Funda; no estado
+   20, transferir diretamente para Map007.
+6. Em E20, manter o baú fechado sempre visível e inerte no estado 0; habilitar
+   interação em 10; conceder uma Funda, executar 10→20, mostrar a tarefa 2 e
+   persistir o baú aberto; nenhuma mensagem deve pedir equipamento.
+7. Preservar Map049 e o lifecycle EX/VN semanticamente, bem como Map022 e o
+   gate S50 já corrigido.
 
 ## Risks and Mitigations
 
 | Risk | Evidence | Mitigation | Owner/Gate |
 | --- | --- | --- | --- |
-| Thorin ja inicia equipado e ignora todo o onboarding | `Actors.json#3` | Planejar a correcao de menor blast radius que garanta ausencia da Funda antes da primeira tentativa; validar New Game | gameplay engineer + Playtest |
-| Porta aceita estado errado | E7 usa `[9,1,false]` | Actor 3/Weapon 1 branch e validator de parametros/indent | technical-implementer |
-| Bau duplica Fundas | E20 nao possui self-switch/receipt | Grant one-shot, pagina aberta persistente e teste de spam/reentrada/load | gameplay engineer + QA |
-| Journal aparece antes por outra superficie | S50 em Map022, tecla J, task list e OpenJournal em E11 | Inventariar e definir separadamente menu, modal, notificacao e tracker; garantir um unico momento de introducao | UX gate |
-| Dupla autoridade com `aSemifinal` | chamadas SQSM e V29 estao distribuidas | Quest tutorial usa chave/estado distintos; nao migrar a mesma transicao parcialmente | architecture validator |
-| VN deixa locks/pictures/audio | contrato QuestVN e comandos VisuStella | Asserts, finish/cleanup em todas as folhas, restore checks e Playtest | runtime-qa |
-| ID de mapa incorreto | 49-51 livres, Map058 orfao | Reconciliar MapInfos/arquivos, alocar serialmente e round-trip no editor | data writer + editor gate |
-| Layout do bau nao corresponde a dispensa | apenas proximidade E10/E20 e estatica | Confirmacao visual humana antes da escrita | level-design/human gate |
-| Save legado falha | plugins declaram New Game only | Preservar politica e testar New Game; qualquer migracao de save vira demanda propria | human decision |
-| Reflow de `plugins.js` | nova quest PKD vive em parametro gerado | Envelope, extracao estruturada, Plugin Manager e diff restrito | plugin workflow |
+| Índices posteriores quebram | Callers/pointers 1–7 distribuídos | Inventário before/after, +1 total e validator de cobertura | data writer + deterministic validator |
+| Quest inteira completa ao pegar a Funda | `sync()` completa PKD em estado terminal | Estado 20 não terminal; remover transição de saída | architecture validator |
+| Baú invisível ou ativo cedo | Páginas atuais começam em V111>=10 | Página-base incondicional vazia antes das páginas condicionais | editor + Playtest |
+| Grant duplicado | Evento interativo e reentrada | Estado 10 exato, self-switch aberto e simulação de spam/load | gameplay writer + Playtest |
+| Tarefa/journal aparece cedo | AddQuest/Active atual em E11 | Remover projeção de E11; primeira saída é o único writer de introdução | static search + Playtest |
+| Saída ainda consulta equipamento | Branch atual Actor/Weapon | Remover branch e validar transferência por V111=20 | command/indent validator |
+| Dupla missão residual | Quest PKD e scripts atuais | Busca global por questId, textos e transition removidos | config validator |
+| Reflow ou perda de edits do usuário | JSON serializado e worktree sujo | Writer estruturado, preconditions/hash e diff restrito por unidade | serialized writer |
+| Saves antigos inconsistentes | Índices PKD persistidos | Política New Game only; não prometer migração | human decision |
 
 ## Validators
 
-Validators ja executados nesta analise:
-
-- Parse JSON de `System`, `MapInfos`, `Map022`, `Map045`, `Map046`,
-  `CommonEvents`, `CoretoQuests`, `Weapons`, `Items` e `Actors`: passou.
-- Envelope de `plugins.js`: `editor-structural: valid; plugin_objects=69`.
-- Extracao estruturada de plugins depois do envelope: passou; PKD unico e
-  QuestCore/QuestVN/Cutscene ativos.
-- `node --check` nos cinco plugins Coreto inspecionados: passou conforme o
-  completion record do source-researcher.
-
-Validators downstream obrigatorios:
-
-- Parse e diff restrito de todo JSON alterado; sem reflow massivo.
-- Registry: questKey/questId/estados/transicoes/objetivos unicos e fechados;
-  cross-reference mapId/spawn/entryKey/eventId/allowedStates.
-- MapInfos/file consistency, bounds, passabilidade e um unico evento VN
-  elegivel; nenhum acesso direto ao mapa VN.
-- Comandos 111/121/122/123/201/357/657: codigo, parametros, ordem e indent;
-  nenhuma transfer no ramo bloqueado.
-- E7: uma unica introducao do journal; repeticoes sem duplicacao; transfer
-  somente para Actor 3 com Weapon 1 equipada.
-- E20: inacessivel antes do primeiro bloqueio; depois dele, uma unica concessao,
-  self-switch/pagina aberta e persistencia apos reentrada/save-load.
-- E11 e novo VN: matriz antes/depois; zero conteudo migrado duplicado; asserts
-  no inicio; `FinishVisualNovel` e cleanup em toda saida.
-- Busca global por writers de S50, grants de Weapon 1, OpenQuestJournal,
-  `aSemifinal` e estado tutorial; classificar qualquer caller residual.
-- `plugins.js`: envelope, configuracao extraida, quest PKD unica, ordem
-  preservada e diff de parametros; `node -c` para qualquer plugin editado.
-- `git diff --check` e diff limitado aos targets aprovados.
+- Parse JSON após cada write e diff restrito aos alvos/unidades aprovados.
+- Envelope `plugins.js`, extração estruturada, ordem de plugins preservada e
+  Plugin Manager round-trip.
+- Config PKD: uma `aSemifinal`, oito tarefas; antigas 1–7 preservadas como 2–8;
+  nenhuma `tutorialFundaForjaprata`; pointers antigos +1 e novo pointer 1 único.
+- Registry: V111, transições 0→10/10→20, objetivo 1 e nenhuma conclusão
+  terminal de `aSemifinal` no estado 20.
+- Cobertura global de todos os `ShowTaskForQuest`/`CompleteTaskForQuest` de
+  `aSemifinal`; descrições e V29 preservados.
+- E7: branch/indent, zero transfer em 0/10, uma transfer em 20, nenhuma branch
+  Actor/Weapon e nenhuma referência a `LEAVE_EQUIPPED`.
+- E20: três páginas na ordem base/interativa/aberta, base sem comandos
+  observáveis, exatamente um grant e um avanço 10→20.
+- Preservação semântica/hash manifest de Map049 e das unidades EX/VN de E11 que
+  não pertencem ao onboarding.
+- Busca global por texto de equipar, quest separada, writers S50, grants de
+  Weapon 1 e questKey técnico.
+- `git diff --check` e auditoria independente na fronteira material.
 
 ## Human Gates
 
-- **Interview/preflight:** concluida em 2026-07-31; nenhuma decisao
-  `must_ask_now` permanece aberta.
-- **Editor round-trip:** abrir Map045 e o novo VN, conferir coordenadas,
-  passabilidade, trigger/prioridade, paginas e plugin commands; salvar, fechar e
-  reabrir. Repetir no Plugin Manager se `plugins.js` mudar.
-- **Playtest New Game:** executar, no minimo:
-  - cena EX -> VN -> retorno EX e restauracao de posicao/direcao/menu/save,
-    followers, audio, tint, zoom e pictures;
-  - primeira tentativa sem Funda, repeticoes e abertura unica do journal;
-  - bau inacessivel antes da primeira tentativa; liberado depois dela; spam,
-    reentrada e load sem nova concessao;
-  - Funda no inventario sem equipar; equipada em Thorin; equipada em outro
-    ator; copia extra no inventario;
-  - segunda tentativa, transferencia unica para Map007 e ausencia de softlock;
-  - saves antes da porta, depois do tutorial, depois do bau e depois de equipar;
-  - regressao de Map006 e inicio/continuidade de `aSemifinal`.
-- Comportamento visivel permanece `runtime-pending` ate esses gates.
+- **Decisões funcionais:** concluídas e aprovadas em 2026-08-03.
+- **Editor/Plugin Manager:** abrir, salvar, fechar e reabrir Map045/Map049 e o
+  Plugin Manager; validar gráficos, prioridade, trigger, directionFix e páginas.
+- **Playtest New Game:** validar VN uma vez; baú visível e totalmente inerte
+  antes da porta; primeira tentativa revela tarefa 1 e journal uma vez;
+  repetição não duplica feedback; pickup concede uma Funda, conclui tarefa 1 e
+  mostra tarefa 2; saída funciona sem equipar; spam/reentrada/save-load não
+  duplicam; arco completo de `aSemifinal` mantém a ordem 2–8.
+- O comportamento perceptível permanece `runtime-pending` até esses gates.
 
 ## Affected Docs
 
-- Este artefato transiente:
-  `planos/004-casa-forjaprata arquitetura/analise-tecnica.md`.
-- Apos implementacao aprovada e validada, a documentacao duradoura deve receber
-  contrato da Casa Forjaprata: papel EX/VN, quest tutorial, gate da Funda,
-  primeiro contato com journal e state table. `docs/index.xml` deve ser
-  atualizado somente pelo workflow de catalogacao apropriado.
-- Nenhuma documentacao duradoura e alterada nesta analise.
+- Este artefato transiente é atualizado nesta análise.
+- O plano 004 permanece como evidência histórica do contrato substituído e não
+  deve ser reescrito como se pertencesse ao novo run.
+- Documentação duradoura da Casa Forjaprata poderá ser catalogada somente após
+  Playtest aprovado, em workflow próprio.
 
 ## Stop Conditions
 
-- Parar se o plano contradisser qualquer decisao aprovada na preflight de
-  2026-07-31.
-- Parar se a alocacao de mapa/variavel colidir com dados atuais ou se o editor
-  nao aceitar o novo slot.
-- Parar se nao for possivel separar E11/P1 sem perder staging, mensagem, audio,
-  save description, self-switch ou cleanup.
-- Parar se o fluxo exigir dupla escrita da mesma transicao por QuestCore e
-  SQSM/V29.
-- Parar se o primeiro bloqueio puder transferir, se tentativas repetidas
-  reabrirem o tutorial, se o bau estiver acessivel antes desse bloqueio ou se
-  puder conceder mais de uma Funda.
-- Parar se qualquer pagina VN nao iniciar com asserts, tiver saida sem finish
-  ou deixar sessao/lock/picture ativo.
-- Parar se parse, schema, cross-reference, branch/indent, envelope, editor
-  round-trip ou Playtest falhar.
-- Suporte a saves legados permanece bloqueado sem nova decisao humana.
+- Parar se qualquer missão PKD separada, tarefa de equipar ou gate de
+  equipamento permanecer ativo.
+- Parar se o inventário/remapeamento de callers e pointers não for completo.
+- Parar se o baú não estiver visível no estado 0 ou produzir qualquer efeito
+  perceptível antes da primeira saída.
+- Parar se a Funda puder ser concedida antes de 10 ou mais de uma vez.
+- Parar se o estado 20 completar toda `aSemifinal`.
+- Parar se Map049/lifecycle VN sofrer alteração não manifestada.
+- Parar em parse, envelope, branch/indent, diff, editor ou Playtest falho.
 
 ## Handoff To Next Command
 
 - **Human decision preflight required:** `false`
-- **Reason:** arquitetura, fronteira da VN, sequencia porta/bau e contrato de
-  onboarding foram aprovados e estao persistidos nesta analise.
+- **Reason:** todas as decisões materiais da correção foram aprovadas.
 - **Recommended next command:** `loki-implement-feature`
 - **Preflight input, if required:** none.
 - **Implementation demand:**
   `planos/004-casa-forjaprata arquitetura/demanda.md`
 - **Analysis file:**
   `planos/004-casa-forjaprata arquitetura/analise-tecnica.md`
-- **Inherited restrictions and decisions:** Map045 permanece EX; Map046 nao
-  pode ser reutilizado; somente E11/P1 migra para a nova VN; PKD permanece
-  backend; a quest tutorial e separada de `aSemifinal` e nao pode escrever a
-  mesma transicao; a Funda permanece inacessivel antes do primeiro bloqueio; o
-  journal abre uma vez com objetivo de encontrar, depois equipar, e a saida
-  conclui a quest; New Game e a politica atual; Map006 e callers posteriores
-  permanecem fora de escopo salvo nova aprovacao.
-- **Validators and human validation:** validators e gates das secoes acima,
-  com editor round-trip e Playtest New Game obrigatorios.
+- **Plan directory:** `planos/005-casa-forjaprata-feedback-funda`
+- **Inherited restrictions and decisions:** Map045 permanece EX; Map049
+  permanece VN; somente o onboarding é corrigido; V111 governa 0/10/20; uma
+  tarefa inicial em `aSemifinal`; baú sempre visível e inerte antes da saída;
+  pickup conclui a tarefa; saída não exige equipamento; New Game only; edits do
+  usuário e save não rastreado devem ser preservados.
+- **Validators and human validation:** validators e gates das seções acima.
 - **Required skills:** `loki-implement-feature`,
-  `rpg-maker-mz-project-inventory`,
-  `rpg-maker-mz-data-json`, `rpg-maker-mz-plugin-workflow`,
-  `rpg-maker-mz-visustella-events-presentation` e
-  `rpg-maker-mz-visustella-plugin-commands`.
+  `rpg-maker-mz-project-inventory`, `rpg-maker-mz-data-json` e
+  `rpg-maker-mz-plugin-workflow`.
 - **Downstream execution profile:** `model_class: frontier_reasoning`,
-  `execution_effort: high`, inventario read-only antes de writes, writer unico
-  serializado para dados compartilhados e `validator_effort: high`.
+  `execution_effort: high`, writers serializados por arquivos, auditor
+  independente e `validator_effort: high`.
 
 ## Resume State
 
 ```yaml
 loki_technical_analysis_state:
   status: "completed"
-  source_request: "planos/004-casa-forjaprata arquitetura/demanda.md"
+  source_request: "planos/004-casa-forjaprata arquitetura/demanda.md plus approved feedback of 2026-08-03"
   analysis_file: "planos/004-casa-forjaprata arquitetura/analise-tecnica.md"
   research_gate: "not-needed"
   completed_steps:
-    - "input and destination validated"
-    - "catalog-guided durable-doc navigation"
-    - "focused RPG Maker MZ ownership inventory"
-    - "structured JSON/plugins.js/plugin/engine checks"
-    - "architecture and runtime-QA proposal synthesis"
-    - "human decision preflight completed and persisted"
+    - "feedback interview completed"
+    - "current implementation and quest caller inventory"
+    - "technical and runtime-QA proposal synthesis"
+    - "decision matrix and executable correction handoff"
   completed_handoffs:
-    - "root -> bibliotecario -> completed_with_documentation_gaps"
-    - "root -> source-researcher -> complete-static"
-    - "root -> runtime-qa -> pending-human-validation proposal complete"
-    - "root -> technical-implementer -> proposal-ready; former human-decision block resolved on 2026-07-31"
-  evidence_status:
-    static_structure: "validated for inspected sources"
-    editor_round_trip: "pending downstream"
-    runtime: "pending human Playtest"
+    - "root -> source-researcher -> complete read-only inventory"
+    - "root -> technical-implementer -> proposal-ready"
+    - "root -> runtime-qa -> proposal-complete; human validation pending"
   human_decision_preflight_required: false
   pending_questions: []
   approved_decisions:
-    - "use a separate Coreto tutorial quest and preserve aSemifinal outside its authority"
-    - "migrate only the current Map045 E11/P1 presentation to the new VN"
-    - "keep the sling inaccessible until the first blocked exit attempt"
-    - "open the journal once with find-sling, then equip-sling, and complete-on-exit feedback"
-  recommended_option: "approved separate Coreto tutorial quest plus new VN"
-  rejected_options:
-    - "Map045-only local patch"
-  deferred_options:
-    - "full aSemifinal migration"
-    - "QuestCore schema extension for equipped weapon requirement"
+    - "use exactly one new initial task inside aSemifinal"
+    - "complete the task when the sling is taken from the chest"
+    - "do not require equipping the sling to leave"
+    - "keep the chest always visible and inert before the first exit attempt"
+    - "keep the sling unobtainable before that first attempt"
+  recommended_option: "insert task 1 and remap all existing aSemifinal callers and pointers"
   implementation_demand_ref: "planos/004-casa-forjaprata arquitetura/demanda.md"
+  recommended_plan_directory: "planos/005-casa-forjaprata-feedback-funda"
   inherited_restrictions:
-    - "analysis Markdown is the only write in this workflow"
-    - "no runtime, engine, plugin, data, asset, save or durable-doc writes"
-    - "preserve Map045 as EX and do not reuse Map046"
-    - "preserve unrelated user work and untracked save"
+    - "analysis Markdown is the only production-independent write in this workflow"
+    - "preserve unrelated worktree edits and untracked save"
     - "New Game only unless separately approved"
   direct_write_exception:
     target: "planos/004-casa-forjaprata arquitetura/analise-tecnica.md"
     owner: "/root"
-    reason: "No appropriate consumer technical-analysis Write Agent was available; domain agents were read-only/proposal-only."
+    reason: "No appropriate consumer technical-analysis Write Agent is available; specialist agents were read-only/proposal-only."
     validators: ["template headings", "source path checks", "git diff --check", "artifact self-containment"]
-    future_write_agent_opportunity: "A dedicated consumer analysis writer could own transient plan Markdown in future workflows."
   recommended_next_command: "loki-implement-feature"
-  next_action: "generate and execute the unified implementation plan from the demand and this analysis"
+  next_action: "start a new run in planos/005-casa-forjaprata-feedback-funda"
   blocked_by: []
 ```

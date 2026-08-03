@@ -1,0 +1,52 @@
+schema_version: 1
+checkpoint_version: "1.0"
+run_id: "loki-run-v2:31a737d65818670493f908bc1c02fee632db92f1c5a7da1797070f66f740cdc1"
+execution_id: "loki-execution-v2:8080a0bab8fd06c0312af234f47e731f4c2fb9f613f6b539c9bed9337aaec433"
+boundary:
+  type: phase
+  ref: fase1
+  path_id: "boundary-178b159e77a61f1a7dd862c0c7ebb5e2"
+audit_policy_digest: "sha256:e3aeea217ca7881865de40d29e0e28e95bc32f4255e2488597801a8909e3bd78"
+auditor:
+  identity: "/root/feedback_auditor"
+  role: runtime-qa
+  independence: "distinct from both scoped writers and primary validators"
+  preflight_ref: "planos/005-casa-forjaprata-feedback-funda/preflights/run-33d92ef68ba6458d8df61b9745ba49dc/feedback-auditor/preflight-v1.md"
+  preflight_digest: "sha256:5ce0e7ba3dcee7edf9b6da9406aef17651f416df58c2cb765a3b20ad10b389b5"
+status: approved-static
+created_at_utc: "2026-08-03T18:53:04.2201785Z"
+coverage:
+  task_refs:
+    - "planos/005-casa-forjaprata-feedback-funda/task-1.1.md"
+    - "planos/005-casa-forjaprata-feedback-funda/task-1.2.md"
+  completion_refs:
+    - "planos/005-casa-forjaprata-feedback-funda/builds/fase1/task-1.1-completion-v1.json"
+    - "planos/005-casa-forjaprata-feedback-funda/builds/fase1/task-1.2-completion-v1.json"
+  validation_refs:
+    - "planos/005-casa-forjaprata-feedback-funda/builds/fase1/task-1.1-validation-v1.json"
+    - "planos/005-casa-forjaprata-feedback-funda/builds/fase1/task-1.2-validation-v1.json"
+  validator_ref: "planos/005-casa-forjaprata-feedback-funda/builds/fase1/validate-feedback.cjs"
+  validator_digest: "sha256:fec000ea7713a16944049d89067f0becf1605f953b675274fb8987bf7f2edbd7"
+checks:
+  json_parse: passed
+  plugins_js_envelope: passed
+  validate_feedback_all: "passed 46/46"
+  caller_pointer_remap: passed
+  map045_event_semantics: passed-static
+  equipment_gate_absent: passed
+  quest_not_prematurely_completed: passed-static
+  production_write_boundary: passed
+  preservation: passed
+blocking_findings: []
+nonblocking_limitations:
+  - "Inherited pointer now task6 -> Map010/E9 targets a null slot; baseline already had task5 -> the same null slot, and task6 also points to valid Map014/E2."
+  - "The validator has no task2-only mode; all mode covered and passed the task-1.2 checks."
+  - "Static evidence cannot establish perceptible editor/runtime behavior."
+human_gates:
+  - "RPG Maker MZ / Plugin Manager open-save-close-reopen"
+  - "New Game Playtest including chest inertia, one-shot pickup, unequipped exit, reentry and save/load"
+recommended_terminal_status: pending-human-validation
+production_target_hashes:
+  "frontend/data/CoretoQuests.json": "sha256:438f0f5888e589e6797c9234ffc111502686993b56915ce1d1c868e8e19bf5c6"
+  "frontend/js/plugins.js": "sha256:323568e8efb841946bea0ebc599152f0304d95187dc59e05da47d5c9c7fc869e"
+  "frontend/data/Map045.json": "sha256:a1ede4c393474a64232afb2867f02970c4f7c8a12775790c7f4fd7a1ba199ac7"

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "run_id": "loki-run-v2:31a737d65818670493f908bc1c02fee632db92f1c5a7da1797070f66f740cdc1",
+  "execution_id": "loki-execution-v2:8080a0bab8fd06c0312af234f47e731f4c2fb9f613f6b539c9bed9337aaec433",
+  "git_revision": "77ac89f8ce2e02d9593a15c3051e35f383457239",
+  "captured_at_utc": "2026-08-03T18:15:43.912Z",
+  "target_hashes": {
+    "frontend/data/CoretoQuests.json": "sha256:5fc97fe41ff733d9dbe6b5241402bd57b2412106f8d0d38b8457f2ba2315e594",
+    "frontend/js/plugins.js": "sha256:b6b5484503e3d5a480b3795da9085c1eb74d25b0b03d38ec89515a9334163255",
+    "frontend/data/CommonEvents.json": "sha256:3a0f70aea63965f92dabb80560f6bcdf53816a52e7cb6fdab122ebf8c77de536",
+    "frontend/data/Map006.json": "sha256:2db7a21b646dd6a89daae8d1aa9c78852f00f8504a2424ef2656854a45551679",
+    "frontend/data/Map007.json": "sha256:fd891dedc1aa89ec8642ed5c40a26d074eeb11af9104b5ed96587fa9785e5258",
+    "frontend/data/Map010.json": "sha256:a31a3c58b3f3a3590e2b92e438de60a80e6d6419033b463d21bd8b27120acab0",
+    "frontend/data/Map014.json": "sha256:30565aa905bcea64401d52ac854beeb807c420ac3938759fe558cdb54afa1e77",
+    "frontend/data/Map044.json": "sha256:5225f4ede46364a5cd28fde8d0dc385e59ccda4ea89539d34e64e695656c06da",
+    "frontend/data/Map045.json": "sha256:563834d618ca44a4fb79db45c875e9cc0401e141740a97cbe81270242951d354"
+  },
+  "preserved_hashes": {
+    "frontend/data/Map049.json": "sha256:a3630d512c42953b705cfc2fb1623aa57bdc4641c075cc5431bd3feb9dd837d0",
+    "frontend/data/Map022.json": "sha256:0d9d58e46b993679e3d6bf6a2494f8b29c37d670228eecca66f36ddaa02354e4",
+    "frontend/js/plugins/Coreto_QuestCore.js": "sha256:0486ad79c58b2da8dde70d18db0f369f52ed3df137f5b53c6a5af27a34da6c86",
+    "frontend/js/plugins/Coreto_QuestVN.js": "sha256:d716e6c4f9334eef1456bf2c5f1f149021d63da3100390dd0215053046838e30",
+    "frontend/js/plugins/Coreto_SQS_menu_patch.js": "sha256:52c2f82bbfb093b2a6f7247093c8bc4bf9577b582ef141ab7564e8f56d5fbe66"
+  }
+}

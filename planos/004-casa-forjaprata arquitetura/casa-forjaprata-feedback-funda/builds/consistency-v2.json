@@ -1,0 +1,32 @@
+{
+  "schema_version": 2,
+  "run_id": "loki-run-v2:31a737d65818670493f908bc1c02fee632db92f1c5a7da1797070f66f740cdc1",
+  "execution_id": "loki-execution-v2:8080a0bab8fd06c0312af234f47e731f4c2fb9f613f6b539c9bed9337aaec433",
+  "status": "consistent",
+  "functional_status": "completed-with-limitations",
+  "checks": {
+    "run_identity_matches": true,
+    "execution_identity_matches": true,
+    "task_states_match_result": true,
+    "audit_checkpoint_approved_replay": true,
+    "terminal_evidence_matches_result": true,
+    "metrics_reference_matches": true,
+    "dashboard_matches_result": true,
+    "human_gate_passed": true
+  },
+  "state_digest": "sha256:c7b26335394ca0bbf47580123970ebefdb883087575fd45c572341c8910f3c53",
+  "result_digest": "sha256:df43026a6ddf8f40dbe13a0e4761926b6a89cad21a92ea59dcdf60bd6aca1bed",
+  "metrics_digest": "sha256:0a8b364cde74059f5ff3508508eeafe5234588e90fcd6dd99a0b88b07da93d57",
+  "artifact_file_hashes": {
+    "planos/005-casa-forjaprata-feedback-funda/tasks.md": "sha256:3f27a1521e64bd9fc626abcddebf1bdea6230291551e8450f9b171ab7fc24f01",
+    "planos/005-casa-forjaprata-feedback-funda/builds/result-v3.json": "sha256:53023d578c2e2ca5535b7ca93c14afcde1615812642743ecb7625de09bb73c2e",
+    "planos/005-casa-forjaprata-feedback-funda/builds/dashboard-v3.md": "sha256:829110b59298dfc80baa62aea3b3b9936b90180f5f87f7b8bf63d82f9dea5913",
+    "planos/005-casa-forjaprata-feedback-funda/builds/terminal-evidence-v1.json": "sha256:1e54b591c59b9a6eacec9d95f33258ae53e29a36d280d00a26b1da10e736b3c1",
+    "planos/005-casa-forjaprata-feedback-funda/builds/audits/phase/boundary-178b159e77a61f1a7dd862c0c7ebb5e2/checkpoint-v1-1.yaml": "sha256:bf1106dc4aacfc92696c0b3d1fe0aecb45852a48083c4d63920d0a6afb66a8a1",
+    "planos/005-casa-forjaprata-feedback-funda/builds/metrics/execution-metrics.json": "sha256:2df56ebd60843b5cef74765de6b480519951547401fdc1f85c138bff6de401a7",
+    "planos/005-casa-forjaprata-feedback-funda/interaction/fase1/playtest-new-game.md": "sha256:9bab83a79eecf9b20da403223867761822870b54a236fd89b940d0ae4e3846e6"
+  },
+  "remaining_gate": "none",
+  "generated_at_utc": "2026-08-03T19:41:41.4642216Z",
+  "consistency_digest": "sha256:65c47e1c3b5a6edbc9fd496c178ed608a92d5faaed915c8a221f8f760c0d4111"
+}

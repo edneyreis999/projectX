@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "metrics_id": "execution-metrics-v1:0a8b364cde74059f5ff3508508eeafe5234588e90fcd6dd99a0b88b07da93d57",
+  "run_id": "loki-run-v2:31a737d65818670493f908bc1c02fee632db92f1c5a7da1797070f66f740cdc1",
+  "execution_id": "loki-execution-v2:8080a0bab8fd06c0312af234f47e731f4c2fb9f613f6b539c9bed9337aaec433",
+  "generated_at_utc": "2026-08-03T19:41:41.4642216Z",
+  "status": "partial",
+  "degradation_reason": "Provider run-scoped token telemetry and monotonic cross-agent timing are unavailable.",
+  "clock_provenance": {
+    "wall_clock": "observed",
+    "monotonic_clock": "unavailable",
+    "reason": "Only wall-clock timestamps are observable in this adapter."
+  },
+  "spans": [
+    {
+      "span_id": "execution-span-v1:aaccec9e63e315893d6a95f904f2d71f3931f1fa82b14cf46ed9ef1ad786da5d",
+      "kind": "run",
+      "parent_span_id": null,
+      "owner": "orchestrator",
+      "status": "completed",
+      "started_at_utc": "2026-08-03T18:15:43.912Z",
+      "ended_at_utc": "2026-08-03T19:41:41.4642216Z",
+      "monotonic_duration_ms": null,
+      "clock_provenance": "partial",
+      "clock_degradation_reason": "Monotonic duration is unavailable across orchestration turns.",
+      "iteration": 0,
+      "replay": false,
+      "replay_cause": null,
+      "cause_span_id": null,
+      "correlation_refs": [
+        "loki-run-v2:31a737d65818670493f908bc1c02fee632db92f1c5a7da1797070f66f740cdc1",
+        "loki-execution-v2:8080a0bab8fd06c0312af234f47e731f4c2fb9f613f6b539c9bed9337aaec433"
+      ],
+      "duplicates_child_usage": false,
+      "usage": {
+        "status": "unavailable",
+        "exact": null,
+        "estimate": null,
+        "unavailable_reason": "No verified run-scoped adapter token counter is exposed."
+      },
+      "validator_observation": null
+    }
+  ],
+  "aggregates": {
+    "exact_usage": {
+      "input_tokens": null,
+      "cached_input_tokens": null,
+      "output_tokens": null,
+      "reasoning_output_tokens": null,
+      "total_tokens": null
+    },
+    "estimated_usage": {
+      "estimated_tokens": null,
+      "lower_bound_tokens": null,
+      "upper_bound_tokens": null,
+      "observable_payload_bytes": null,
+      "confidence": "unavailable"
+    },
+    "non_agent_observations": [],
+    "counts": {
+      "agents": 3,
+      "handoffs": 4,
+      "validators_executed": 9,
+      "validators_referenced": 6,
+      "validators_repeated": 4,
+      "retries": 0,
+      "replays": 1,
+      "gates": 2,
+      "reconciliations": 2
+    },
+    "durations": {
+      "elapsed_ms": null,
+      "active_ms": null,
+      "critical_path_ms": null
+    },
+    "critical_path_span_ids": [],
+    "unavailable_reasons": [
+      {
+        "field": "exact_usage",
+        "reason": "No verified run-scoped adapter token counter is exposed."
+      },
+      {
+        "field": "estimated_usage",
+        "reason": "Observable payload byte capture is incomplete."
+      },
+      {
+        "field": "durations",
+        "reason": "Monotonic cross-agent timing is unavailable."
+      }
+    ]
+  },
+  "telemetry_changed_functional_status": false,
+  "metrics_digest": "sha256:0a8b364cde74059f5ff3508508eeafe5234588e90fcd6dd99a0b88b07da93d57"
+}
