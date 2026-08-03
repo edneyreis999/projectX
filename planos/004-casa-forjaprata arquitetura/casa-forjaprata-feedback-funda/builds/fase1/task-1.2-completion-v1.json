@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "run_id": "loki-run-v2:31a737d65818670493f908bc1c02fee632db92f1c5a7da1797070f66f740cdc1",
+  "execution_id": "loki-execution-v2:8080a0bab8fd06c0312af234f47e731f4c2fb9f613f6b539c9bed9337aaec433",
+  "task_id": "task-1.2",
+  "writer": "/root/map_flow_writer",
+  "write_mode": "task_scoped_writer",
+  "status": "completed",
+  "changed_files": [
+    "frontend/data/Map045.json"
+  ],
+  "completion_record_file": "planos/005-casa-forjaprata-feedback-funda/builds/fase1/task-1.2-completion-v1.json",
+  "authorized_surfaces": [
+    "Map045 E7 page index 0",
+    "Map045 E11 page index 7",
+    "Map045 E20"
+  ],
+  "before_hashes": {
+    "frontend/data/Map045.json": "sha256:563834d618ca44a4fb79db45c875e9cc0401e141740a97cbe81270242951d354"
+  },
+  "after_hashes": {
+    "frontend/data/Map045.json": "sha256:a1ede4c393474a64232afb2867f02970c4f7c8a12775790c7f4fd7a1ba199ac7"
+  },
+  "domain_context_preflight": {
+    "status": "ready-with-gaps",
+    "current_source_refs": [
+      "planos/005-casa-forjaprata-feedback-funda/preflights/run-33d92ef68ba6458d8df61b9745ba49dc/map-flow-writer/preflight-v2.md",
+      "planos/005-casa-forjaprata-feedback-funda/task-1.2.md",
+      "planos/005-casa-forjaprata-feedback-funda/tasks.md",
+      "planos/004-casa-forjaprata arquitetura/analise-tecnica.md",
+      "frontend/data/Map045.json",
+      "frontend/js/rmmz_objects.js"
+    ],
+    "gap_handoff": "docs/loki-init/gameplay-engineer is absent; current task, analysis, baseline, engine and runtime sources were sufficient for safe execution."
+  },
+  "validators": [
+    {
+      "name": "source-and-target-preconditions",
+      "status": "passed",
+      "details": "Analysis, tasks, task-1.2, baseline and Map045 matched every SHA-256 declared by preflight-v2 immediately before the write; task-1.1 completion and validation records were present and passed."
+    },
+    {
+      "name": "json-parse",
+      "status": "passed",
+      "files_checked": 1
+    },
+    {
+      "name": "engine-command-semantics",
+      "status": "passed",
+      "details": "Confirmed command111 equality and branch semantics, command115 termination, command121 unit switch, command123 self-switch and command201 direct transfer in frontend/js/rmmz_objects.js."
+    },
+    {
+      "name": "plugin-command-payloads",
+      "status": "passed",
+      "details": "Coreto_QuestCore QuestTransition and Coreto_Quests addWeapon are active and their current project registrations accept the persisted payload keys."
+    },
+    {
+      "name": "validate-feedback-task2-mode",
+      "status": "unsupported",
+      "details": "validate-feedback.cjs currently accepts only task1 or all and rejected task2 as an unknown mode; the all mode below executed all task-1.2 checks."
+    },
+    {
+      "name": "validate-feedback-all",
+      "status": "passed",
+      "checks_passed": 46,
+      "checks_total": 46
+    },
+    {
+      "name": "task-1.2-semantic-and-indent",
+      "status": "passed",
+      "details": "Verified E7 0/10/20 branch order and child indents, explicit exits, sole transfer parameters, absence of Actor/Weapon and state90 branches; E20 exact state10 branch containment, grant-transition-message-task-self-switch order, and inert base/open pages."
+    },
+    {
+      "name": "git-diff-check-map045",
+      "status": "passed"
+    },
+    {
+      "name": "serialization-style",
+      "status": "passed",
+      "details": "The original no-trailing-newline style was restored after the scoped write; semantic content is unchanged."
+    },
+    {
+      "name": "preservation-hashes",
+      "status": "passed",
+      "details": "Semantic hashes match the pre-write snapshot for the complete map outside E7/E11/E20, E7 outside page index0, E11 pages0-6, E11 page7 after filtering only the four authorized removals, and the E20 envelope. Baseline byte hashes also remain unchanged for Map049, Map022, Coreto_QuestCore.js, Coreto_QuestVN.js and Coreto_SQS_menu_patch.js."
+    }
+  ],
+  "preservation_hashes": {
+    "map045_outside_authorized_events": "sha256:2cf41c2f4a30d0fd92e59cf5064680e4c4ba1f886510bc3563aa174e1bbbccac",
+    "map045_e7_outside_page_index0": "sha256:c5e3df5b9586c9555b3da35777675e0c4e885fbfa54d6fc7709ab1b478eb412c",
+    "map045_e11_pages0_6_and_envelope": "sha256:7c599a7fa2dedbd0bd086403340a383bdf4fa8a77deb85e23531b0802e865e22",
+    "map045_e11_page7_after_authorized_filter": "sha256:41758b8265c4a67be24fd5d4663213bf1f9290ba295a0ecca21345004000e966",
+    "map045_e20_envelope": "sha256:7d267b253038713421fa42ea8241d7c8b117b4805912baf22ff8ce5d8b3a28e8",
+    "frontend/data/Map049.json": "sha256:a3630d512c42953b705cfc2fb1623aa57bdc4641c075cc5431bd3feb9dd837d0",
+    "frontend/data/Map022.json": "sha256:0d9d58e46b993679e3d6bf6a2494f8b29c37d670228eecca66f36ddaa02354e4",
+    "frontend/js/plugins/Coreto_QuestCore.js": "sha256:0486ad79c58b2da8dde70d18db0f369f52ed3df137f5b53c6a5af27a34da6c86",
+    "frontend/js/plugins/Coreto_QuestVN.js": "sha256:d716e6c4f9334eef1456bf2c5f1f149021d63da3100390dd0215053046838e30",
+    "frontend/js/plugins/Coreto_SQS_menu_patch.js": "sha256:52c2f82bbfb093b2a6f7247093c8bc4bf9577b582ef141ab7564e8f56d5fbe66"
+  },
+  "acceptance_criteria": {
+    "AC-FLOW-PORTA": "passed-static",
+    "AC-FLOW-BAU": "passed-static",
+    "AC-FLOW-REGRESSION": "passed-static"
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "corrected-before-validation",
+      "details": "Restricted diff review found the new base-page block attached to a structurally similar earlier event; it was removed and reinserted under stable identity Map045 E20 before acceptance validation."
+    },
+    {
+      "attempt": 2,
+      "status": "completed",
+      "details": "All authorized units and preservation boundaries passed deterministic validation."
+    }
+  ],
+  "errors": [],
+  "risks": [
+    "RPG Maker editor round-trip and New Game Playtest remain pending; perceptible chest inertia, page selection, journal timing, reentry and save/load are not runtime-validated.",
+    "The validator has no dedicated task2 mode; all mode passed every task-1.2 and cross-task check."
+  ],
+  "classification": "structural_validation",
+  "runtime_status": "runtime_pending",
+  "human_gates": [
+    "RPG Maker editor open-save-reopen for Map045.",
+    "New Game Playtest covering first exit, repeated state10 exit, one-shot chest pickup, unequipped exit, reentry and save/load."
+  ],
+  "next_destination": "/root"
+}

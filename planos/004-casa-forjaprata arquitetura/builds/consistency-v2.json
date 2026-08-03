@@ -1,0 +1,33 @@
+{
+  "implement_feature_consistency_packet": {
+    "schema_version": 2,
+    "run_id": "loki-run-v2:487ad0333da0041da77affbf548ca6969f27d17638df3d56285e3b7cb6770320",
+    "execution_id": "loki-execution-v2:f7d7aebacc69cd9a9a2555f2e8df8e194ede9ccef24744f3373249ed602dda",
+    "status": "pending-human-validation",
+    "audit_configuration": {
+      "schema_version": 1,
+      "frequency": "phase",
+      "source": "default",
+      "policy_digest": "sha256:e3aeea217ca7881865de40d29e0e28e95bc32f4255e2488597801a8909e3bd78"
+    },
+    "state_digest": "sha256:e6e2a9aed34765ab891d57ea22e9f02cf717cf6d95b44acc567c08a40beb0f20",
+    "tasks_md_digest": "sha256:e649364eaf95799c0d24156076b0497b3962ec683b5755879ef0abcff3af3841",
+    "result_ref": "planos/004-casa-forjaprata arquitetura/builds/result-v3.json",
+    "result_digest": "sha256:5461f5cbcd4ef56879b1f4f84add53a41af5f12372f49cfd156aed6e0fc42f3f",
+    "dashboard_ref": "planos/004-casa-forjaprata arquitetura/builds/dashboard-v3.md",
+    "dashboard_digest": "sha256:78e2086c0d223c67143cb70a0535bcb81e73dee4238e2f4a9bc03a41652c1bb3",
+    "metrics_ref": "planos/004-casa-forjaprata arquitetura/builds/metrics/execution-metrics.json",
+    "metrics_digest": "sha256:42c03e9a7c011d55aa78a94abcf54d9fcdabd12316727306fd9cd362b772e91d",
+    "audit_checkpoint_refs": [
+      "planos/004-casa-forjaprata arquitetura/builds/fase1/phase-audit-v1.json",
+      "planos/004-casa-forjaprata arquitetura/builds/fase2/phase-audit-v1.json"
+    ],
+    "audit_checkpoint_digests": [
+      "sha256:500bcdddb6f2064132480ae320c3d42879545101efd817a1c689ed6fb5004401",
+      "sha256:20a6de219c75ccca72bcbc3474f9fb8f9a024247e4634ce82379b95e0f51d86e"
+    ],
+    "terminal_evidence_refs": [],
+    "terminal_evidence_digests": [],
+    "validator_digest": "sha256:ba391f3cdd3f2f8817c56403319ff80bda023ec207f554cb7d6358ec14306810"
+  }
+}

@@ -214,8 +214,8 @@
         "name": "EX_Coreto",
         "order": 48,
         "parentId": 16,
-        "scrollX": 777.7777777777778,
-        "scrollY": 670.2222222222222,
+        "scrollX": 784.8888888888889,
+        "scrollY": 599.1111111111111,
         "quick": false
     },
     {
@@ -314,8 +314,8 @@
         "name": "Ekios",
         "order": 49,
         "parentId": 16,
-        "scrollX": 1946.3999999999999,
-        "scrollY": 1124.3999999999999,
+        "scrollX": 777.7777777777778,
+        "scrollY": 439.1111111111111,
         "quick": false
     },
     {
@@ -434,8 +434,8 @@
         "name": "EX_Distrito Residencial Nobre",
         "parentId": 39,
         "order": 51,
-        "scrollX": 1735.1999999999998,
-        "scrollY": 1164
+        "scrollX": 1735.111111111111,
+        "scrollY": 1164.4444444444443
     },
     {
         "id": 45,
@@ -444,7 +444,7 @@
         "order": 52,
         "parentId": 44,
         "scrollX": 777.7777777777778,
-        "scrollY": 439.1111111111111,
+        "scrollY": 432,
         "quick": false
     },
     {
@@ -477,7 +477,16 @@
         "scrollY": 672.8888888888889,
         "quick": false
     },
-    null,
+    {
+        "id": 49,
+        "expanded": false,
+        "name": "NV_Casa_Forjaprata",
+        "order": 55,
+        "parentId": 18,
+        "scrollX": 777.7777777777778,
+        "scrollY": 439.1111111111111,
+        "quick": false
+    },
     null,
     null,
     {

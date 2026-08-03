@@ -1,0 +1,49 @@
+schema_version: 1
+audit_id: "execution-audit-v1:68e43bf2f1fad0446f19ae59df1dbf94fdbb0396c1f16471ab6351c35fa1a0ea"
+run_id: "loki-run-v2:31a737d65818670493f908bc1c02fee632db92f1c5a7da1797070f66f740cdc1"
+execution_id: "loki-execution-v2:8080a0bab8fd06c0312af234f47e731f4c2fb9f613f6b539c9bed9337aaec433"
+policy_digest: "sha256:e3aeea217ca7881865de40d29e0e28e95bc32f4255e2488597801a8909e3bd78"
+frequency: "phase"
+boundary_type: "phase"
+boundary_ref: "fase1"
+iteration: 1
+predecessor_audit_ref: "planos/005-casa-forjaprata-feedback-funda/builds/audits/phase/boundary-178b159e77a61f1a7dd862c0c7ebb5e2/checkpoint-v1-0.yaml"
+replay: true
+replay_cause: "The RPG Maker editor round-trip changed plugins.js and preserved the semantically correct task 2 pointer to Map045/E7; the stale validator expectation was reconciled and the complete boundary was replayed."
+membership_refs:
+  - "planos/005-casa-forjaprata-feedback-funda/task-1.1.md"
+  - "planos/005-casa-forjaprata-feedback-funda/task-1.2.md"
+coverage_digest: "sha256:0a45508dd84bdc8a4a6d5d9d55bf43f0acfb015a2db2f41df783b51ad5568dc4"
+covered_handoff_refs:
+  - "planos/005-casa-forjaprata-feedback-funda/builds/fase1/task-1.1-completion-v1.json"
+  - "planos/005-casa-forjaprata-feedback-funda/builds/fase1/task-1.2-completion-v1.json"
+covered_target_digests:
+  - "frontend/data/CoretoQuests.json=sha256:438f0f5888e589e6797c9234ffc111502686993b56915ce1d1c868e8e19bf5c6"
+  - "frontend/js/plugins.js=sha256:e42837f18b356f25710a162a7bea943cc7bae6b0d0c6caaccfc22f5be7790461"
+  - "frontend/data/CommonEvents.json=sha256:381bf1f08e0a2fbba97aef3bf3ffc93162639569d7eccbf05c0c286121914ef1"
+  - "frontend/data/Map006.json=sha256:a1d0c507fd3323e4ad777ae6f4fff5470a9ee80e275d8351959f3c7b1d591e1e"
+  - "frontend/data/Map007.json=sha256:7e483cc4f46a364a6c95de12c9ab686c800d7b55e50e16e05ab738d53535168c"
+  - "frontend/data/Map010.json=sha256:37e1bef13ce5f930011fffaad504dbeaeb69e5e1845b70e1aa512cf03053004c"
+  - "frontend/data/Map014.json=sha256:5abb8ef86e180f3f98e6aa94a3d72d64214532d705ae14d2a39c6ed8aed7ba47"
+  - "frontend/data/Map044.json=sha256:094f80e3ea34e390be0cdb058d0af916686f097bd489547f69e98915d75b824b"
+  - "frontend/data/Map045.json=sha256:a1ede4c393474a64232afb2867f02970c4f7c8a12775790c7f4fd7a1ba199ac7"
+primary_validation_refs:
+  - "planos/005-casa-forjaprata-feedback-funda/builds/fase1/task-1.1-validation-v1.json"
+  - "planos/005-casa-forjaprata-feedback-funda/builds/fase1/task-1.2-validation-v1.json"
+final_validator_refs:
+  - "planos/005-casa-forjaprata-feedback-funda/builds/fase1/validate-feedback.cjs"
+auditor_identity: "/root/feedback_auditor"
+writer_identities:
+  - "/root/quest_config_writer"
+  - "/root/map_flow_writer"
+auditor_run_refs:
+  - "planos/005-casa-forjaprata-feedback-funda/preflights/run-33d92ef68ba6458d8df61b9745ba49dc/feedback-auditor/preflight-v1.md"
+finding_refs: []
+correction_refs:
+  - "planos/005-casa-forjaprata-feedback-funda/builds/fase1/validate-feedback.cjs"
+evidence_refs:
+  - "planos/005-casa-forjaprata-feedback-funda/preflights/run-33d92ef68ba6458d8df61b9745ba49dc/feedback-auditor/preflight-v1.md"
+  - "planos/005-casa-forjaprata-feedback-funda/builds/terminal-evidence-v1.json"
+  - "planos/005-casa-forjaprata-feedback-funda/interaction/fase1/playtest-new-game.md"
+status: "approved"
+next_action: "Reconcile terminal artifacts and close the feature as completed-with-limitations."

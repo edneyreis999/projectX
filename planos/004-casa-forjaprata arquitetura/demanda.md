@@ -1,0 +1,9 @@
+- Preciso atualizar o mapa 045 para a nova arquiteturao da Coreto.
+- Criar o mapa VN.
+- O fluxo atual permanece mas adicionaremos algo.
+    - Thorin só poderá sair de casa quando estiver equipado com sua funda.
+    - a funda estará em um Baú na dispensa, onde ficam os troféus.
+- Quero mudar também o momento em que o journal aparece na tela.
+    - Atualmente ele aparece logo depois da cena inicial, mas quero que ele só apareça após uma primeira tentativa sair de casa.
+    - Este vai ser o momento em que vamos apresentar o quest journal e como o jogador passa compreender os feedbacks visuais das missões.
+    - A o teleporte estará bloqueado, pois Thorin estará sem sua funda e precisará dela.

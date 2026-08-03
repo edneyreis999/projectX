@@ -198,8 +198,8 @@
           "directionFix": false,
           "image": { "tileId": 0, "characterName": "Principal/$Treinador", "direction": 8, "pattern": 1, "characterIndex": 0 },
           "list": [
-            { "code": 355, "indent": 0, "parameters": ["SQSM.CompleteTaskForQuest(\"aSemifinal\", 2);"] },
-            { "code": 655, "indent": 0, "parameters": ["SQSM.ShowTaskForQuest(\"aSemifinal\", 3);"] },
+            { "code": 355, "indent": 0, "parameters": ["SQSM.CompleteTaskForQuest(\"aSemifinal\", 3);"] },
+            { "code": 655, "indent": 0, "parameters": ["SQSM.ShowTaskForQuest(\"aSemifinal\", 4);"] },
             {
               "code": 357,
               "indent": 0,
@@ -275,7 +275,7 @@
             { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
-            { "code": 355, "indent": 0, "parameters": ["SQSM.ShowTaskForQuest(\"aSemifinal\", 3);"] },
+            { "code": 355, "indent": 0, "parameters": ["SQSM.ShowTaskForQuest(\"aSemifinal\", 4);"] },
             { "code": 122, "indent": 0, "parameters": [29, 29, 0, 0, 3] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
@@ -496,8 +496,8 @@
             { "code": 657, "indent": 1, "parameters": ["Flip Direction = None"] },
             { "code": 657, "indent": 1, "parameters": ["Duration = 20"] },
             { "code": 657, "indent": 1, "parameters": ["Auto-Erase? = true"] },
-            { "code": 355, "indent": 1, "parameters": ["SQSM.CompleteTaskForQuest(\"aSemifinal\", 5);"] },
-            { "code": 655, "indent": 1, "parameters": ["SQSM.ShowTaskForQuest(\"aSemifinal\", 6);"] },
+            { "code": 355, "indent": 1, "parameters": ["SQSM.CompleteTaskForQuest(\"aSemifinal\", 6);"] },
+            { "code": 655, "indent": 1, "parameters": ["SQSM.ShowTaskForQuest(\"aSemifinal\", 7);"] },
             { "code": 122, "indent": 1, "parameters": [29, 29, 0, 0, 5] },
             { "code": 123, "indent": 1, "parameters": ["A", 0] },
             { "code": 0, "indent": 1, "parameters": [] },
@@ -3262,8 +3262,8 @@
           "directionFix": false,
           "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
           "list": [
-            { "code": 355, "indent": 0, "parameters": ["SQSM.CompleteTaskForQuest(\"aSemifinal\", 1);"] },
-            { "code": 655, "indent": 0, "parameters": ["SQSM.ShowTaskForQuest(\"aSemifinal\", 2);"] },
+            { "code": 355, "indent": 0, "parameters": ["SQSM.CompleteTaskForQuest(\"aSemifinal\", 2);"] },
+            { "code": 655, "indent": 0, "parameters": ["SQSM.ShowTaskForQuest(\"aSemifinal\", 3);"] },
             { "code": 655, "indent": 0, "parameters": ["SQSM.ShowDescriptionForQuest(\"aSemifinal\", 2);"] },
             { "code": 122, "indent": 0, "parameters": [29, 29, 0, 0, 2] },
             { "code": 123, "indent": 0, "parameters": ["A", 0] },

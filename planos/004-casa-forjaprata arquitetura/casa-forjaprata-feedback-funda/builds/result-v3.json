@@ -1,0 +1,63 @@
+{
+  "schema_version": 3,
+  "run_id": "loki-run-v2:31a737d65818670493f908bc1c02fee632db92f1c5a7da1797070f66f740cdc1",
+  "execution_id": "loki-execution-v2:8080a0bab8fd06c0312af234f47e731f4c2fb9f613f6b539c9bed9337aaec433",
+  "command": "loki-implement-feature",
+  "status": "completed-with-limitations",
+  "summary": "The approved sling feedback was implemented as task 1 of aSemifinal. Static validation, independent phase audit, editor round-trip and New Game Playtest passed.",
+  "tasks": {
+    "total": 2,
+    "completed": 2,
+    "failed": 0,
+    "blocked": 0
+  },
+  "acceptance": {
+    "required_criteria": 6,
+    "passed": 6,
+    "human_gate_status": "passed"
+  },
+  "validation": {
+    "primary_status": "passed",
+    "primary_checks": "46/46",
+    "audit_status": "approved-replay",
+    "audit_ref": "planos/005-casa-forjaprata-feedback-funda/builds/audits/phase/boundary-178b159e77a61f1a7dd862c0c7ebb5e2/checkpoint-v1-1.yaml",
+    "terminal_evidence_ref": "planos/005-casa-forjaprata-feedback-funda/builds/terminal-evidence-v1.json"
+  },
+  "changed_production_files": [
+    "frontend/data/CoretoQuests.json",
+    "frontend/js/plugins.js",
+    "frontend/data/CommonEvents.json",
+    "frontend/data/Map006.json",
+    "frontend/data/Map007.json",
+    "frontend/data/Map010.json",
+    "frontend/data/Map014.json",
+    "frontend/data/Map044.json",
+    "frontend/data/Map045.json"
+  ],
+  "production_target_hashes": {
+    "frontend/data/CoretoQuests.json": "sha256:438f0f5888e589e6797c9234ffc111502686993b56915ce1d1c868e8e19bf5c6",
+    "frontend/js/plugins.js": "sha256:e42837f18b356f25710a162a7bea943cc7bae6b0d0c6caaccfc22f5be7790461",
+    "frontend/data/CommonEvents.json": "sha256:381bf1f08e0a2fbba97aef3bf3ffc93162639569d7eccbf05c0c286121914ef1",
+    "frontend/data/Map006.json": "sha256:a1d0c507fd3323e4ad777ae6f4fff5470a9ee80e275d8351959f3c7b1d591e1e",
+    "frontend/data/Map007.json": "sha256:7e483cc4f46a364a6c95de12c9ab686c800d7b55e50e16e05ab738d53535168c",
+    "frontend/data/Map010.json": "sha256:37e1bef13ce5f930011fffaad504dbeaeb69e5e1845b70e1aa512cf03053004c",
+    "frontend/data/Map014.json": "sha256:5abb8ef86e180f3f98e6aa94a3d72d64214532d705ae14d2a39c6ed8aed7ba47",
+    "frontend/data/Map044.json": "sha256:094f80e3ea34e390be0cdb058d0af916686f097bd489547f69e98915d75b824b",
+    "frontend/data/Map045.json": "sha256:a1ede4c393474a64232afb2867f02970c4f7c8a12775790c7f4fd7a1ba199ac7"
+  },
+  "preserved_user_state": [
+    "frontend/data/System.json versionId edit",
+    "frontend/data/MapInfos.json scrollY edit",
+    "frontend/save/V[100] - file0.rmmzsave",
+    "unrelated worktree EOL state"
+  ],
+  "limitations": [
+    "Pre-existing saves are out of scope.",
+    "Inherited aSemifinal pointer Map010/E9 remains null; the remap preserved it and did not create it."
+  ],
+  "next_action": "Feature complete; optionally address the inherited Map010/E9 null pointer in a separate scope.",
+  "metrics_ref": "planos/005-casa-forjaprata-feedback-funda/builds/metrics/execution-metrics.json",
+  "metrics_digest": "sha256:0a8b364cde74059f5ff3508508eeafe5234588e90fcd6dd99a0b88b07da93d57",
+  "generated_at_utc": "2026-08-03T19:41:41.4642216Z",
+  "result_digest": "sha256:df43026a6ddf8f40dbe13a0e4761926b6a89cad21a92ea59dcdf60bd6aca1bed"
+}

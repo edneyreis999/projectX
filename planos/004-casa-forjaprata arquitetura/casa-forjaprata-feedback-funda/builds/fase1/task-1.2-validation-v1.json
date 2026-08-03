@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "run_id": "loki-run-v2:31a737d65818670493f908bc1c02fee632db92f1c5a7da1797070f66f740cdc1",
+  "execution_id": "loki-execution-v2:8080a0bab8fd06c0312af234f47e731f4c2fb9f613f6b539c9bed9337aaec433",
+  "task_id": "task-1.2",
+  "validator": "casa-forjaprata-feedback-v1",
+  "mode": "all",
+  "status": "passed",
+  "checks_passed": 46,
+  "checks_total": 46,
+  "acceptance_criteria": {
+    "AC-FLOW-PORTA": "passed",
+    "AC-FLOW-BAU": "passed",
+    "AC-FLOW-REGRESSION": "passed"
+  },
+  "supporting_validators": {
+    "json_parse": "passed",
+    "event_branch_and_indent": "passed",
+    "restricted_diff": "passed",
+    "preserved_hashes": "passed",
+    "serialization_style": "passed"
+  },
+  "target_after_hash": "sha256:a1ede4c393474a64232afb2867f02970c4f7c8a12775790c7f4fd7a1ba199ac7",
+  "completion_ref": "planos/005-casa-forjaprata-feedback-funda/builds/fase1/task-1.2-completion-v1.json",
+  "classification": "structural_validation",
+  "human_validation": "passed",
+  "human_validation_ref": "planos/005-casa-forjaprata-feedback-funda/interaction/fase1/playtest-new-game.md"
+}

@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 1,
+  "auditId": "phase-audit-v1:ae751a19d81498f70858fde8ce6c6c28f023ae90fd8ed27df7e170b2fd298401",
+  "runId": "loki-run-v2:487ad0333da0041da77affbf548ca6969f27d17638df3d56285e3b7cb6770320",
+  "executionId": "loki-execution-v2:f7d7aebacc69cd9a9a2555f2e8df8e194ede9ccef24744f3373249ed602dda",
+  "auditor": "/root/qa_proposal",
+  "role": "independent-phase-auditor",
+  "boundary": {
+    "type": "phase",
+    "phase": "fase2",
+    "taskIds": [
+      "task-2.1"
+    ],
+    "productionTargets": [
+      "frontend/data/Map049.json",
+      "frontend/data/Map045.json",
+      "frontend/data/Map022.json"
+    ],
+    "managedAuditTargets": [
+      "planos/004-casa-forjaprata arquitetura/preflights/run-487ad0333da0041da77affbf548ca6969f27d17638df3d56285e3b7cb6770320/qa_proposal/preflight-v2.md",
+      "planos/004-casa-forjaprata arquitetura/builds/fase2/phase-audit-v1.json"
+    ],
+    "coverageDigest": "sha256:ae751a19d81498f70858fde8ce6c6c28f023ae90fd8ed27df7e170b2fd298401"
+  },
+  "status": "approved",
+  "classification": "structural_validation",
+  "preflight": {
+    "status": "ready-with-gaps",
+    "ref": "planos/004-casa-forjaprata arquitetura/preflights/run-487ad0333da0041da77affbf548ca6969f27d17638df3d56285e3b7cb6770320/qa_proposal/preflight-v2.md",
+    "sha256": "38e3780d5b13a24713951f80cf46436098e664beb76608f3123c298172fee365",
+    "gap": "docs/loki-init/runtime-qa is absent; approved task/evidence, current production bytes and local engine source were sufficient substitutes."
+  },
+  "sourceDigests": {
+    "tasks": "d8cf3d4d3ffa9d056aa796b56bac233e873ab45eb21830f7d0a1b997f0788653",
+    "task2_1": "a628cd6e0b5e0bf0be481efabf154451c05ed45bc0cb3a489a14f6337730b226",
+    "approvedFase1Checkpoint": "500bcdddb6f2064132480ae320c3d42879545101efd817a1c689ed6fb5004401",
+    "writerPreflight": "8a916d0c79dc63669b758b018f0d30e00eefd78db7a6487f51948e96e9c217a2",
+    "migrationManifest": "b0c842ad859c1d18ca3938e0ec83eeccc20caa4e19b9823a0ff23a3c53ad4a61",
+    "featureValidator": "77abb20b5cdf0e582e0984b9f1bf0ac50d3d57ac8a37e3dd2e192d5835e3b2f6",
+    "featureReport": "9b9f0470865fd8fbb8a8c71ad66773af822cadecbaa61400e125978a48abb6f7",
+    "writerCompletion": "2958f63b36b71e5275d5ecd7c8931e89606e2e6d539e37d29766c053169442f4",
+    "rpgMakerEngineObjects": "e48350a2163acc449ca29e39d5ed65c294fbc6b6eca4b42eec57fd623086ef39"
+  },
+  "productionEvidence": [
+    {
+      "path": "frontend/data/Map049.json",
+      "sha256": "59b5fa1ec2202c18eccd1a20509ba93c84aea37f4cc1f905f7ade24ee7e8e287",
+      "completionDigestMatched": true,
+      "scopeCheck": "New 17x13 VN map uses Map046 tile/passability skeleton without its parallax/content; E1 is Action Button, asserts session then state, migrates the frozen 97 presentation commands, cleans pictures, calls FinishVisualNovel and contains no Transfer Player."
+    },
+    {
+      "path": "frontend/data/Map045.json",
+      "sha256": "8c366472d4e05629f9d6a3663d8ae74972bcbbe1bae9020931fc75dd4cd66bc3",
+      "completionDigestMatched": true,
+      "scopeCheck": "Only E7, E11 and E20 differ semantically from the baseline; all map-level fields and non-target pages are preserved."
+    },
+    {
+      "path": "frontend/data/Map022.json",
+      "sha256": "0d9d58e46b993679e3d6bf6a2494f8b29c37d670228eecca66f36ddaa02354e4",
+      "completionDigestMatched": true,
+      "scopeCheck": "Only E30/P1 command121 [50,50,0] was removed; adjacent commands and all other units remain semantically equal to the baseline."
+    }
+  ],
+  "checksReproduced": [
+    {
+      "name": "feature-validator-independent-replay",
+      "command": "node planos/004-casa-forjaprata arquitetura/builds/fase2/validate-feature.cjs",
+      "workingDirectory": "project root",
+      "exitCode": 0,
+      "status": "passed",
+      "checksPassed": 29,
+      "checksFailed": 0
+    },
+    {
+      "name": "node-and-powershell-json-parse",
+      "status": "passed",
+      "targets": [
+        "Map022.json",
+        "Map045.json",
+        "Map046.json",
+        "Map049.json",
+        "System.json",
+        "MapInfos.json",
+        "Actors.json",
+        "Weapons.json",
+        "CoretoQuests.json",
+        "e11-migration-manifest-v1.json"
+      ]
+    },
+    {
+      "name": "target-diff-check",
+      "command": "git diff --check -- frontend/data/Map022.json frontend/data/Map045.json frontend/data/Map049.json",
+      "exitCode": 0,
+      "status": "passed",
+      "note": "Only an informational future LF-to-CRLF warning for Map045 was emitted. Map049 is untracked and was covered by parse/hash/semantic checks."
+    },
+    {
+      "name": "independent-event-order-and-route-inspection",
+      "status": "passed",
+      "detail": "Parsed event commands directly from current Map045 and confirmed state branches, critical ordering, one-shot ownership and fail-closed paths independently of the persisted report."
+    },
+    {
+      "name": "native-change-weapons-contract",
+      "status": "passed",
+      "source": "frontend/js/rmmz_objects.js:10380",
+      "detail": "Engine command127 passes params[4] to gainItem as includeEquip; E11 uses [1,1,0,1,true], which removes one Weapon 1 including equipped inventory before VN control."
+    },
+    {
+      "name": "foundation-and-save-preservation",
+      "status": "passed",
+      "detail": "All approved fase1 foundation hashes, Map046/Actors/Weapons baselines and the pre-existing untracked save hash/timestamp remain unchanged."
+    }
+  ],
+  "migrationEvidence": {
+    "sourceCommands": 138,
+    "uniqueFrozenIndices": 138,
+    "dispositions": {
+      "ex-prelude": 11,
+      "vn": 97,
+      "replaced": 7,
+      "ex-post": 22,
+      "removed-approved": 1
+    },
+    "sourceCodesMatchedBaseline": true,
+    "onlyApprovedRemoval": {
+      "index": 131,
+      "code": 655,
+      "meaning": "legacy OpenQuestJournal"
+    },
+    "legacyPostReturnPreserved": "aSemifinal AddQuest/description/task/active, V29, V100, SaveDescription and Self Switch A remain; original Self Switch B ownership remains preserved."
+  },
+  "behavioralStaticEvidence": {
+    "map049Entry": {
+      "assertOrder": [
+        "AssertVisualNovelSession",
+        "AssertQuestState"
+      ],
+      "expectedState": 0,
+      "directTransferCount": 0,
+      "cleanupTail": [
+        "ErasePicture:1",
+        "ErasePicture:2",
+        "FinishVisualNovel",
+        "ExitEvent",
+        "End"
+      ]
+    },
+    "e11Lifecycle": {
+      "preludeFirstCommand": "ChangeWeapons:[1,1,0,1,true]",
+      "transientSelfSwitch": "D",
+      "returnPageTrigger": "autorun",
+      "completionOrder": [
+        "legacy post-return setup",
+        "SelfSwitch A ON",
+        "SelfSwitch D OFF"
+      ]
+    },
+    "e7Door": {
+      "state0Order": [
+        "INTRODUCE_JOURNAL",
+        "S50 ON",
+        "SetActiveQuest:tutorialFundaForjaprata",
+        "OpenQuestJournal once",
+        "ExitEvent"
+      ],
+      "state10": "find reminder; no transfer or transition",
+      "state20Unequipped": "equip reminder; no transfer or transition",
+      "state20EquippedOrder": [
+        "Actor3 Weapon1 equipment branch [4,3,4,1]",
+        "LEAVE_EQUIPPED",
+        "Transfer Player"
+      ],
+      "state90": "Transfer Player without quest transition",
+      "unexpectedState": "fail closed with no side effect"
+    },
+    "e20Chest": {
+      "beforeState10": "no eligible page",
+      "state10Order": [
+        "exact state guard",
+        "chest presentation",
+        "FOUND_SLING 10-to-20 transition",
+        "add Weapon1 once",
+        "message",
+        "SelfSwitch A ON"
+      ],
+      "openState": "State20 plus SelfSwitch A; inert open page",
+      "unexpectedOrClosedFallback": "fail closed"
+    },
+    "routeSimulation": {
+      "fixturesPassed": 6,
+      "fixturesFailed": 0,
+      "statesCovered": [
+        0,
+        10,
+        20,
+        90,
+        15
+      ]
+    }
+  },
+  "preservationEvidence": {
+    "foundation": {
+      "frontend/data/System.json": "aded5f66838d27f377d6a3166d93f6ffa4897016ce56f4e0d5a759b72c6fa8de",
+      "frontend/data/MapInfos.json": "2fa31b83585cfe4fcd14c7b71855f87658ab447c91e4db6cf2807d4b52a8012e",
+      "frontend/data/CoretoQuests.json": "e304442ec68310c4d8ebd378f859c33f28d910f5bf521058e9792351c8751445",
+      "frontend/js/plugins.js": "b6b5484503e3d5a480b3795da9085c1eb74d25b0b03d38ec89515a9334163255",
+      "frontend/js/plugins/Coreto_SQS_menu_patch.js": "4860821e1ee5ef804f7aa92440f021a17f2c1aa2906cb848b4602c8692b0cad2"
+    },
+    "readOnlyRuntime": {
+      "frontend/data/Map046.json": "5e2c31166ce75a3b12527532a115631d8c17cef18f54da9c16ec9c2d4a52c6f5",
+      "frontend/data/Actors.json": "c719c60f855dd841c4df9c859d616dac0894d460f3fc76fff5e4acda6faea0d7",
+      "frontend/data/Weapons.json": "e59a3eb2fc55812a45e813794c5ac992d53692f5508060a34a58c86cedd90cb6"
+    },
+    "untrackedSave": {
+      "path": "frontend/save/V[100] - file0.rmmzsave",
+      "sha256": "6c9c16480cbba7c581f269a4220fe626fae60ea11b79221aa7e13e88c3d43716",
+      "lastWriteTimeUtc": "2026-07-31T17:38:44.6533964Z",
+      "status": "untouched-and-predates-fase2"
+    }
+  },
+  "evidenceConsistency": {
+    "status": "passed",
+    "writerProductionDigestsMatched": 3,
+    "writerProductionDigestsExpected": 3,
+    "taskLocalArtifactDigestsMatched": 4,
+    "taskLocalArtifactDigestsExpected": 4,
+    "reportedCheckCountMatchedReplay": true,
+    "reportedAcceptanceMatchedReplay": true,
+    "manifestCoverageMatchedReplay": true,
+    "completionSaveEvidenceMatchedCurrentBytes": true
+  },
+  "acceptanceCriteria": {
+    "AC-F2-VN": "passed-static",
+    "AC-F2-FLOW": "passed-static",
+    "AC-F2-JOURNAL": "passed-static",
+    "AC-F2-REGRESSION": "passed-static"
+  },
+  "findings": [],
+  "observations": [
+    {
+      "severity": "info",
+      "blocking": false,
+      "code": "durable-runtime-qa-context-absent",
+      "detail": "The declared docs/loki-init/runtime-qa root is absent; current approved sources were sufficient for this audit."
+    },
+    {
+      "severity": "info",
+      "blocking": false,
+      "code": "line-ending-warning",
+      "detail": "git diff --check passed but Git warned that Map045 LF may be normalized to CRLF by a future Git write. No semantic or structural failure was observed."
+    },
+    {
+      "severity": "info",
+      "blocking": false,
+      "code": "human-runtime-gates-pending",
+      "detail": "Static approval does not establish editor serialization safety or perceptible runtime behavior."
+    }
+  ],
+  "approvalBasis": [
+    "The independent validator replay passed all 29 deterministic feature checks with zero failures.",
+    "Current production hashes match the writer completion, the frozen 138-command manifest reconciles exactly, and only the approved legacy journal command is removed.",
+    "Independent parsing confirmed VN assert/cleanup shape, state-gated door/chest routes, critical transition/transfer ordering, one-shot grant ownership and fail-closed unexpected states.",
+    "Map045 changes are restricted to E7/E11/E20, Map022 has only the approved early S50 removal, and Map049 contains no direct transfer.",
+    "All fase1 foundation hashes, Map046/Actors/Weapons baselines and the pre-existing save hash/timestamp remain preserved."
+  ],
+  "runtimeValidation": {
+    "status": "pending-human-validation",
+    "editorRoundTrip": "pending-human-validation",
+    "newGamePlaytest": "pending-human-validation",
+    "requiredHumanChecks": [
+      "Open/save/reopen the project in RPG Maker MZ and confirm Map022, Map045 and Map049 retain their events, page conditions, plugin-command payloads and map metadata.",
+      "From New Game, verify E11 removes the sling including equipped inventory, enters/exits VN once, restores control/audio/pictures and completes legacy post-return state without an autorun loop.",
+      "Verify the first door attempt introduces and opens the tutorial journal once; later state10/state20 reminders, equipped exit, state90 exit and unexpected-state fail-closed behavior are perceptible as specified.",
+      "Verify chest reachability/passability, one grant only, closed-to-open persistence, journal UI state, timing, input, audio and save/load restoration."
+    ],
+    "humanQuestion": "Você confirma, com evidência do editor round-trip e de um New Game Playtest, que os fluxos perceptíveis acima passaram sem regressões?"
+  },
+  "managedArtifactsWrittenByAuditor": [
+    "planos/004-casa-forjaprata arquitetura/preflights/run-487ad0333da0041da77affbf548ca6969f27d17638df3d56285e3b7cb6770320/qa_proposal/preflight-v2.md",
+    "planos/004-casa-forjaprata arquitetura/builds/fase2/phase-audit-v1.json"
+  ],
+  "productionFilesModifiedByAuditor": [],
+  "nextAction": "Consume this approved phase:fase2 static checkpoint, update orchestrator-owned state, then execute the pending RPG Maker MZ editor round-trip and New Game Playtest human gates before claiming runtime validation."
+}

@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "runId": "loki-run-v2:487ad0333da0041da77affbf548ca6969f27d17638df3d56285e3b7cb6770320",
+  "executionId": "loki-execution-v2:f7d7aebacc69cd9a9a2555f2e8df8e194ede9ccef24744f3373249ed602dda",
+  "taskId": "task-1.1",
+  "validator": {
+    "ref": "planos/004-casa-forjaprata arquitetura/builds/fase1/validate-foundation.cjs",
+    "sha256": "3dfeaafece348080fcfe9676fa6d4bea235e1ef54f55acc2893203abfc1a6e8f",
+    "command": "node '..\\planos\\004-casa-forjaprata arquitetura\\builds\\fase1\\validate-foundation.cjs'",
+    "workingDirectory": "frontend"
+  },
+  "status": "passed",
+  "startedAt": "2026-08-01T03:39:43.899Z",
+  "completedAt": "2026-08-01T03:39:43.954Z",
+  "acceptanceCriteria": {
+    "AC-F1-IDS": "passed",
+    "AC-F1-REGISTRY": "passed",
+    "AC-F1-PKD": "passed",
+    "AC-F1-GATE": "passed"
+  },
+  "checks": [
+    "system-variable-length",
+    "system-variable-111",
+    "system-user-editor-fields",
+    "system-preserved-semantic-hash",
+    "mapinfos-49",
+    "mapinfos-user-scroll-fields",
+    "mapinfos-preserved-semantic-hash",
+    "registry-top-level",
+    "registry-existing-quest-preserved",
+    "registry-tutorial-identity",
+    "registry-objectives",
+    "registry-transitions",
+    "registry-state-set",
+    "registry-vn-extension",
+    "plugins-envelope-boundaries",
+    "plugins-envelope-prefix",
+    "plugins-envelope-suffix",
+    "plugin-count",
+    "plugin-order-preserved",
+    "plugin-load-order",
+    "patch-plugin-config",
+    "pkd-tutorial-unique",
+    "pkd-tutorial-shape",
+    "pkd-tutorial-objectives",
+    "pkd-existing-quests-preserved",
+    "pkd-aSemifinal-preserved",
+    "plugins-preserved-semantic-hash",
+    "gate-real-plugin-name",
+    "gate-direct-off",
+    "gate-menu-off",
+    "gate-direct-on-delegates",
+    "gate-menu-on-preserves-original",
+    "gate-menu-on-injects-when-pkd-menu-disabled"
+  ],
+  "preservationEvidence": {
+    "systemWithoutV111": "197c32e2455da1fa373b855af9c31189a9f282e1b7124f8bdbcc03abcbd75026",
+    "mapInfosWithoutMap49": "66bcaaee9337daeb7de4a0e8421c0c94afbd415dd6c0b4d791d332fc6a319b2d",
+    "existingCoretoRegistry": "915ca90bd12d92233bc469417e8dc0c0892026c5eac8dc6e8bcc855ce63a105c",
+    "existingPkdQuests": "f6b954b36201ca056916c3f946d1fbbf1b41e3c8533ce90a48fa329610fa6065",
+    "aSemifinal": "c484992aa3f2c12bff61262f4e68a376c04811aead881e1450390c1d1a0040b1",
+    "pluginsWithoutTutorial": "9ce2bff1d9f6440ed89e486f7371930ec43365cd6f6d09708823e8b1d79b34a3",
+    "pluginOrder": "9990eda1222579ab1531e3757672f248073cbe81cb7973da40db4bd0bacd59a7"
+  },
+  "additionalValidators": [
+    {
+      "command": "node --check frontend/js/plugins/Coreto_SQS_menu_patch.js",
+      "status": "passed"
+    },
+    {
+      "command": "py -3 validate_plugins_js_envelope.py frontend/js/plugins.js",
+      "status": "passed",
+      "result": "editor-structural: valid; plugin_objects=69"
+    },
+    {
+      "command": "git diff --check -- <task-1.1 production targets>",
+      "status": "passed"
+    }
+  ],
+  "classification": "structural_validation",
+  "limitations": [
+    "The VM gate fixture proves OFF rejection and ON delegation without launching RPG Maker MZ.",
+    "Plugin Manager open/save/reopen and New Game Playtest remain pending at the feature-level human-validation gate."
+  ]
+}
