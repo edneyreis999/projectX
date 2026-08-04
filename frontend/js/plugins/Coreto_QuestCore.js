@@ -127,30 +127,32 @@
         return value;
     }
 
-    function itemById(itemId, context) {
-        const item = globalThis.$dataItems && $dataItems[itemId];
-        if (!item || !item.name) fail("QUEST_ITEM_INVALID", Object.assign({ itemId }, context));
-        return item;
+    function databaseObject(type, id, context) {
+        const databases = { item: globalThis.$dataItems, weapon: globalThis.$dataWeapons, armor: globalThis.$dataArmors };
+        const value = databases[type] && databases[type][id];
+        if (!value || !value.name) fail("QUEST_DATABASE_OBJECT_INVALID", Object.assign({ type, id }, context));
+        return value;
     }
 
     function validateItemRequirement(requirement, context) {
         assertObject(requirement, "SCHEMA_REQUIREMENT_INVALID", context);
-        assertKnownKeys(requirement, ["type", "itemId", "minimum"], context);
-        if (requirement.type !== "item") fail("SCHEMA_REQUIREMENT_TYPE", Object.assign({ type: requirement.type }, context));
-        integer(requirement.itemId, "itemId", 1, context);
-        integer(requirement.minimum, "minimum", 1, context);
-        itemById(requirement.itemId, context);
+        assertKnownKeys(requirement, ["type", "id", "minimum", "actorId"], context);
+        if (!["item", "weapon", "armor", "equippedArmor"].includes(requirement.type)) fail("SCHEMA_REQUIREMENT_TYPE", Object.assign({ type: requirement.type }, context));
+        integer(requirement.id, "id", 1, context);
+        integer(requirement.minimum === undefined ? 1 : requirement.minimum, "minimum", 1, context);
+        if (requirement.type === "equippedArmor") integer(requirement.actorId, "actorId", 1, context);
+        databaseObject(requirement.type === "equippedArmor" ? "armor" : requirement.type, requirement.id, context);
     }
 
     function validateItemEffect(effect, context) {
         assertObject(effect, "SCHEMA_EFFECT_INVALID", context);
-        assertKnownKeys(effect, ["type", "itemId", "delta"], context);
-        if (effect.type !== "item") fail("SCHEMA_EFFECT_TYPE", Object.assign({ type: effect.type }, context));
-        integer(effect.itemId, "itemId", 1, context);
+        assertKnownKeys(effect, ["type", "id", "delta"], context);
+        if (!["item", "weapon", "armor"].includes(effect.type)) fail("SCHEMA_EFFECT_TYPE", Object.assign({ type: effect.type }, context));
+        integer(effect.id, "id", 1, context);
         if (!Number.isInteger(effect.delta) || effect.delta === 0) {
             fail("SCHEMA_EFFECT_DELTA", Object.assign({ delta: effect.delta }, context));
         }
-        itemById(effect.itemId, context);
+        databaseObject(effect.type, effect.id, context);
     }
 
     const extensionValidators = new Map();
@@ -174,7 +176,7 @@
         integerArray(definition.terminalStates, "terminalStates", false, context);
 
         const pkd = assertObject(definition.pkd, "SCHEMA_PKD_INVALID", context);
-        assertKnownKeys(pkd, ["questId", "objectives"], context);
+        assertKnownKeys(pkd, ["questId", "objectives", "activeFrom", "descriptions"], context);
         if (typeof pkd.questId !== "string" || !pkd.questId.trim()) {
             fail("SCHEMA_PKD_QUEST_ID", context);
         }
@@ -192,6 +194,19 @@
                 fail("SCHEMA_OBJECTIVE_ORDER", Object.assign({ objective }, context));
             }
             objectiveIds.add(objective.id);
+        }
+        if (pkd.activeFrom !== undefined) integer(pkd.activeFrom, "activeFrom", 0, context);
+        if (pkd.descriptions !== undefined) {
+            if (!Array.isArray(pkd.descriptions)) fail("SCHEMA_DESCRIPTIONS_INVALID", context);
+            const descriptionIds = new Set();
+            for (const description of pkd.descriptions) {
+                assertObject(description, "SCHEMA_DESCRIPTION_INVALID", context);
+                assertKnownKeys(description, ["id", "from"], context);
+                integer(description.id, "description.id", 1, context);
+                integer(description.from, "description.from", 0, context);
+                if (descriptionIds.has(description.id)) fail("SCHEMA_DESCRIPTION_DUPLICATE", context);
+                descriptionIds.add(description.id);
+            }
         }
 
         const transitions = assertObject(definition.transitions, "SCHEMA_TRANSITIONS_INVALID", context);
@@ -216,7 +231,7 @@
             requirements.forEach(requirement => validateItemRequirement(requirement, transitionContext));
             effects.forEach(effect => validateItemEffect(effect, transitionContext));
             for (const effect of effects.filter(effect => effect.delta < 0)) {
-                const requirement = requirements.find(candidate => candidate.itemId === effect.itemId);
+                const requirement = requirements.find(candidate => candidate.type === effect.type && candidate.id === effect.id);
                 if (!requirement || requirement.minimum < Math.abs(effect.delta)) {
                     fail("SCHEMA_NEGATIVE_EFFECT_UNGUARDED", Object.assign({ effect }, transitionContext));
                 }
@@ -224,9 +239,7 @@
             if (effects.length > 0 && transition.receiptPolicy !== "once") {
                 fail("SCHEMA_RECEIPT_REQUIRED", transitionContext);
             }
-            if (effects.length === 0 && transition.receiptPolicy !== undefined) {
-                fail("SCHEMA_RECEIPT_WITHOUT_EFFECT", transitionContext);
-            }
+            if (transition.receiptPolicy !== undefined && transition.receiptPolicy !== "once") fail("SCHEMA_RECEIPT_POLICY", transitionContext);
             if (transition.terminal !== undefined && typeof transition.terminal !== "boolean") {
                 fail("SCHEMA_TERMINAL_FLAG", transitionContext);
             }
@@ -317,7 +330,7 @@
         const required = [
             "quests", "isQuestVisible", "isQuestComplete", "isQuestTaskVisible",
             "isQuestTaskComplete", "AddQuest", "ShowTaskForQuest",
-            "CompleteTaskForQuest", "CompleteQuest"
+            "CompleteTaskForQuest", "CompleteQuest", "SetActiveQuest", "ShowDescriptionForQuest"
         ];
         if (!api || required.some(method => typeof api[method] !== "function")) {
             fail("PKD_BACKEND_UNAVAILABLE", { questKey, required });
@@ -339,6 +352,10 @@
         const api = validateBackend(questKey, quest);
         const questId = quest.pkd.questId;
         if (!api.isQuestVisible(questId)) api.AddQuest(questId);
+        if (quest.pkd.activeFrom !== undefined && current >= quest.pkd.activeFrom) api.SetActiveQuest(questId, true);
+        for (const description of quest.pkd.descriptions || []) {
+            if (current >= description.from) api.ShowDescriptionForQuest(questId, description.id);
+        }
         for (const objective of quest.pkd.objectives) {
             if (current < objective.knownFrom) continue;
             if (!api.isQuestTaskVisible(questId, objective.id)) {
@@ -354,10 +371,13 @@
 
     function validateRequirements(questKey, transitionId, requirements) {
         for (const requirement of requirements) {
-            const item = itemById(requirement.itemId, { questKey, transitionId });
-            if ($gameParty.numItems(item) < requirement.minimum) {
+            const item = databaseObject(requirement.type === "equippedArmor" ? "armor" : requirement.type, requirement.id, { questKey, transitionId });
+            if (requirement.type === "equippedArmor") {
+                const actor = $gameActors.actor(requirement.actorId);
+                if (!actor || !actor.isEquipped(item)) fail("QUEST_REQUIREMENT_UNMET", { questKey, transitionId, requirement });
+            } else if ($gameParty.numItems(item) < (requirement.minimum || 1)) {
                 fail("QUEST_REQUIREMENT_UNMET", {
-                    questKey, transitionId, itemId: requirement.itemId, minimum: requirement.minimum
+                    questKey, transitionId, id: requirement.id, minimum: requirement.minimum
                 });
             }
         }
@@ -383,30 +403,31 @@
         const effects = transitionDefinition.effects || [];
         validateBackend(questKey, quest);
         validateRequirements(questKey, transitionId, requirements);
-        effects.forEach(effect => itemById(effect.itemId, { questKey, transitionId }));
+        effects.forEach(effect => databaseObject(effect.type, effect.id, { questKey, transitionId }));
 
         if (transitionDefinition.receiptPolicy === "once") {
             store.receipts[receiptKey] = {
                 status: "pending",
                 from: current,
                 to: transitionDefinition.to,
-                effects: effects.map(effect => ({ type: effect.type, itemId: effect.itemId, delta: effect.delta }))
+                effects: effects.map(effect => ({ type: effect.type, id: effect.id, delta: effect.delta })),
+                projectionDirty: false
             };
         }
 
         const applied = [];
         try {
             for (const effect of effects) {
-                const item = itemById(effect.itemId, { questKey, transitionId });
+                const item = databaseObject(effect.type, effect.id, { questKey, transitionId });
                 $gameParty.gainItem(item, effect.delta, false);
                 applied.push(effect);
             }
             $gameVariables.setValue(quest.stageVariableId, transitionDefinition.to);
-            sync(questKey);
+            try { sync(questKey); } catch (error) { store.receipts[receiptKey].projectionDirty = true; throw error; }
             if (store.receipts[receiptKey]) store.receipts[receiptKey].status = "committed";
         } catch (error) {
             for (const effect of applied.slice().reverse()) {
-                $gameParty.gainItem($dataItems[effect.itemId], -effect.delta, false);
+                $gameParty.gainItem(databaseObject(effect.type, effect.id, { questKey, transitionId }), -effect.delta, false);
             }
             $gameVariables.setValue(quest.stageVariableId, current);
             if (store.receipts[receiptKey]) {
