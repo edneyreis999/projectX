@@ -20,7 +20,7 @@
     "encounterList": [],
     "encounterStep": 30,
     "height": 50,
-    "note": "",
+    "note": "<CoretoMapType:EX>",
     "parallaxLoopX": false,
     "parallaxLoopY": false,
     "parallaxName": "",
@@ -22398,17 +22398,6 @@
                             ]
                         },
                         {
-                            "code": 122,
-                            "indent": 0,
-                            "parameters": [
-                                27,
-                                27,
-                                0,
-                                0,
-                                1
-                            ]
-                        },
-                        {
                             "code": 123,
                             "indent": 0,
                             "parameters": [
@@ -23280,10 +23269,16 @@
                             ]
                         },
                         {
-                            "code": 655,
+                            "code": 357,
                             "indent": 0,
                             "parameters": [
-                                "SQSM.AddQuest(\"fimDeJogo\");"
+                                "Coreto_QuestCore",
+                                "QuestTransition",
+                                "QuestTransition",
+                                {
+                                    "questKey": "fim-de-jogo",
+                                    "transitionId": "START"
+                                }
                             ]
                         },
                         {
@@ -23291,13 +23286,6 @@
                             "indent": 0,
                             "parameters": [
                                 "SQSM.ShowDescriptionForQuest(\"fimDeJogo\", 1);"
-                            ]
-                        },
-                        {
-                            "code": 655,
-                            "indent": 0,
-                            "parameters": [
-                                "SQSM.ShowTaskForQuest(\"fimDeJogo\", 1);"
                             ]
                         },
                         {
@@ -23537,17 +23525,6 @@
                                 38,
                                 38,
                                 0
-                            ]
-                        },
-                        {
-                            "code": 122,
-                            "indent": 0,
-                            "parameters": [
-                                27,
-                                27,
-                                0,
-                                0,
-                                1
                             ]
                         },
                         {
@@ -23967,7 +23944,7 @@
                             "indent": 0,
                             "parameters": [
                                 0,
-                                6,
+                                45,
                                 12,
                                 15,
                                 0,
@@ -24259,7 +24236,7 @@
                             "indent": 0,
                             "parameters": [
                                 0,
-                                6,
+                                45,
                                 19,
                                 9,
                                 4,

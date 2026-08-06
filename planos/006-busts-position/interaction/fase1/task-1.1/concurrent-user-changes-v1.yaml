@@ -1,0 +1,23 @@
+concurrent_user_changes:
+  schema_version: 1
+  run_id: "loki-run-v2:6572a8ac60d0d33347cab60118c6f6beca5d0e32443250314b0797acfd21f4a4"
+  execution_id: "loki-execution-v2:961d50011999322d0e323dfb5889f3848fae8a22222ae568a345ff969dde910f"
+  task_ref: "planos/006-busts-position/task-1.1.md"
+  target_ref: "frontend/data/Map049.json"
+  prior_audited_target_digest: "sha256:563fb83fb89db5fe2939077f82f00f2e6115a02a449f84e317422f9e83212764"
+  current_target_digest: "sha256:252965e40909d8c61adbecacee62264a92e3049e9347c07934c7be02f2754ffa"
+  provenance: "manual-user-improvements"
+  human_confirmation: "O usuario confirmou que as mudancas concorrentes foram melhorias feitas manualmente."
+  observed_changes:
+    - "SF_Monster_3 show position changed to x=736, y=936 and its first move x changed to 736."
+    - "An additional code 221 Fadeout Screen command exists before final picture cleanup; total code 221 count is two."
+    - "Map parallaxName is VN045_CasaForjaprta_BG."
+    - "RPG Maker serialization now uses UTF-8 without BOM, LF line endings, no trailing newline and normalized event.name indentation."
+  ownership:
+    attributed_to_feature_task: false
+    owner: "user"
+  preservation_decision: "Preserve every listed manual improvement and revalidate the bust feature against the current target without reverting or attributing those changes to the task."
+  validator_effect: "Refresh exact current outside-list and non-bust baselines while keeping all bust lifecycle and facing assertions independent."
+  audit_effect: "The prior active checkpoint is invalidated by current target bytes and requires a complete same-boundary replay."
+  recorded_at: "2026-08-05"
+  status: "preserve-and-revalidate"

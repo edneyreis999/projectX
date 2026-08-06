@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "audit_id": "execution-audit-v1:e50ece585e21bb9e2b00eab096970260bf302b12b3e0c85d2525df03cc959db2",
+  "auditor_identity": "map049-facing-phase-auditor",
+  "agent_run_id": "agent-run-v1:abda11c6526e680f63688994a3298537675e88cc1d3c7a4d1ba63fcedffcb11d",
+  "handoff_id": "handoff-v1:a5a91ae95445443f39c276cd668f43319f16f045195d215ae59db42fff5f30d8",
+  "audit_report_ref": "planos/006-busts-position/builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/auditor-report-replay-v1.yaml",
+  "audit_report_digest": "sha256:5a6c27aaca113d82730976eb462123211dd9f11b9215714f290e2f5b72297f44",
+  "audit_status": "approved",
+  "coverage_digest": "sha256:7ef258bbb57dc282acf688a9b42fc9db11dff889ca2992df61213b94bcb4fd0c",
+  "iteration": 1,
+  "replay": true,
+  "target_digest": "sha256:563fb83fb89db5fe2939077f82f00f2e6115a02a449f84e317422f9e83212764",
+  "finding_refs": [],
+  "correction_refs": [
+    "planos/006-busts-position/interaction/fase1/task-1.1/human-validation-feedback-v1.yaml",
+    "planos/006-busts-position/interaction/fase1/task-1.1/facing-correction-completion-record.yaml",
+    "planos/006-busts-position/interaction/fase1/task-1.1/facing-correction-evidence/evidence-manifest.xml"
+  ],
+  "human_gate": "New post-correction Map049 Playtest pending",
+  "capture_policy": "sanitized observable audit facts only; private reasoning and complete transcript excluded"
+}

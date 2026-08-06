@@ -331,6 +331,27 @@ var $plugins =
         "parameters": {}
     },
     {
+        "name": "VisuMZ_2_ExtMessageFunc",
+        "status": true,
+        "description": "[RPG Maker MZ] [Tier 2] [Version 1.22] [ExtMessageFunc]",
+        "parameters": {
+            "BreakHead": "----------------------------------",
+            "ExtMessageFunc": "Plugin Parameters",
+            "ATTENTION": "READ THE HELP FILE",
+            "BreakSettings": "----------------------------------",
+            "Auto:struct": "{\"WaitPerChar:num\":\"6\",\"MinimumWait:num\":\"300\"}",
+            "FastFwd:struct": "{\"Enable:eval\":\"true\",\"Speed:num\":\"8\",\"SceneChangeReset:eval\":\"true\"}",
+            "MsgButtonConsole:struct": "{\"General\":\"\",\"ShowDefault:eval\":\"true\",\"Position:str\":\"bottom\",\"Appearance\":\"\",\"WindowSkin:str\":\"Window\",\"FontFace:str\":\"Arial\",\"FontSize:num\":\"18\",\"TextColors\":\"\",\"NormalColor:str\":\"0\",\"ToggledColor:str\":\"24\",\"DisabledColor:str\":\"7\",\"Visuals\":\"\",\"ButtonWidth:num\":\"86\",\"ButtonHeight:num\":\"36\",\"ButtonBuffer:num\":\"6\"}",
+            "Buttons:struct": "{\"General\":\"\",\"List:arraystr\":\"[\\\"auto\\\",\\\"fastFwd\\\",\\\"log\\\",\\\"hide\\\",\\\"save\\\",\\\"load\\\",\\\"options\\\",\\\"gameEnd\\\"]\",\"AutoKey:str\":\"none\",\"Shortcuts\":\"\",\"SaveKey:str\":\"none\",\"LoadKey:str\":\"none\",\"OptionsKey:str\":\"none\",\"GameEndKey:str\":\"none\",\"Vocab\":\"\",\"Auto:str\":\"AUTO\",\"FastFwd:str\":\"FAST\",\"Save:str\":\"SAVE\",\"Load:str\":\"LOAD\",\"Options:str\":\"CONFIG\",\"GameEnd:str\":\"TITLE\"}",
+            "MsgCursor:struct": "{\"General\":\"\",\"Enable:eval\":\"true\",\"GraphicType:str\":\"icon\",\"Icon\":\"\",\"IconIndex:str\":\"188\",\"FlipMultiplier:str\":\"0.125\",\"Image\":\"\",\"Filename:str\":\"\",\"Rows:num\":\"1\",\"Cols:num\":\"1\",\"FrameDelay:num\":\"4\",\"Appearance\":\"\",\"AnchorX:num\":\"0.5\",\"AnchorY:num\":\"1\",\"OffsetX:num\":\"+0\",\"OffsetY:num\":\"-4\"}",
+            "MsgTail:struct": "{\"AutoPosition\":\"\",\"autoPositionTail:eval\":\"true\",\"autoPositionLeft:eval\":\"true\",\"autoPositionOffsetX:num\":\"+0\",\"autoPositionOffsetY:num\":\"+0\",\"TailDir\":\"\",\"BottomLeft\":\"\",\"bottomLeftFilename:str\":\"\",\"bottomLeftAnchorX:num\":\"0.5\",\"bottomLeftAnchorY:num\":\"0.0\",\"bottomLeftOffsetX:num\":\"+0\",\"bottomLeftOffsetY:num\":\"+0\",\"BottomRight\":\"\",\"bottomRightFilename:str\":\"\",\"bottomRightAnchorX:num\":\"0.5\",\"bottomRightAnchorY:num\":\"0.0\",\"bottomRightOffsetX:num\":\"+0\",\"bottomRightOffsetY:num\":\"+0\",\"UpperLeft\":\"\",\"upperLeftFilename:str\":\"\",\"upperLeftAnchorX:num\":\"0.5\",\"upperLeftAnchorY:num\":\"1.0\",\"upperLeftOffsetX:num\":\"+0\",\"upperLeftOffsetY:num\":\"+0\",\"UpperRight\":\"\",\"upperRightFilename:str\":\"\",\"upperRightAnchorX:num\":\"0.5\",\"upperRightAnchorY:num\":\"1.0\",\"upperRightOffsetX:num\":\"+0\",\"upperRightOffsetY:num\":\"+0\"}",
+            "ScrollWheel:struct": "{\"Enable:eval\":\"true\",\"ScrollDownNext:eval\":\"true\",\"ScrollUpMsgLog:eval\":\"true\"}",
+            "BreakEnd1": "----------------------------------",
+            "End Of": "Plugin Parameters",
+            "BreakEnd2": "----------------------------------"
+        }
+    },
+    {
         "name": "VisuMZ_2_BattleSystemATB",
         "status": true,
         "description": "[RPG Maker MZ] [Tier 2] [Version 1.37] [BattleSystemATB]",
@@ -1024,6 +1045,14 @@ var $plugins =
         "parameters": {
             "MaxTriggersPerTurn": "2",
             "DebugLogs": "true"
+        }
+    },
+    {
+        "name": "Coreto_GabWindowDefaults",
+        "status": true,
+        "description": "Ajustes visuais e de ancoragem padrão para VisuMZ Gab Window.",
+        "parameters": {
+            "MapTargetGap": "8"
         }
     }
 ];

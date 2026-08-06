@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agent_session_evidence schema_version="1">
+  <identity>
+    <run_id type="loki-run-id">loki-run-v2:6572a8ac60d0d33347cab60118c6f6beca5d0e32443250314b0797acfd21f4a4</run_id>
+    <agent_run_id type="agent-run-id">agent-run-v1:abda11c6526e680f63688994a3298537675e88cc1d3c7a4d1ba63fcedffcb11d</agent_run_id>
+    <handoff_id type="handoff-id">handoff-v1:a5a91ae95445443f39c276cd668f43319f16f045195d215ae59db42fff5f30d8</handoff_id>
+    <agent_name type="agent-name">map049-facing-phase-auditor</agent_name>
+  </identity>
+  <runtime>
+    <adapter>Codex</adapter><adapter_version>unavailable:version-not-exposed</adapter_version>
+    <root_session_id type="runtime-root-session-id">codex-session:current-root-thread</root_session_id>
+    <parent_thread_id type="runtime-parent-thread-id">codex-thread:/root</parent_thread_id>
+    <thread_id type="runtime-thread-id">codex-thread:/root/map049_facing_phase_auditor</thread_id>
+    <runtime_agent_id type="runtime-agent-id">codex-agent:/root/map049_facing_phase_auditor</runtime_agent_id>
+    <terminal_status>approved-static-runtime-pending</terminal_status>
+    <parent_reference><type/><value/></parent_reference>
+  </runtime>
+  <locator><kind>runtime-pointer</kind><value>/root/map049_facing_phase_auditor</value><portability>same-profile</portability><unavailable_reason/></locator>
+  <snapshot>
+    <storage_mode>pointer-plus-sanitized-snapshot</storage_mode>
+    <payload_path>sanitized-snapshot.json</payload_path>
+    <captured_at>2026-08-05T03:21:21.760Z</captured_at>
+    <payload_checksum algorithm="sha-256">eb414fee96bd7e7081da5e9d57ec01c5e00dcfc9c97436b00b341ec7cc7f17e3</payload_checksum>
+    <checksum_absence_reason/>
+  </snapshot>
+  <evidence_completeness>
+    <dimension name="transcript"><status>unsupported</status><missing_reason>No sanitized run-scoped transcript export capability was enabled.</missing_reason></dimension>
+    <dimension name="tool_io"><status>partial</status><missing_reason>The audit report and snapshot preserve observable checks, but not complete tool I/O.</missing_reason></dimension>
+    <dimension name="errors"><status>partial</status><missing_reason>The approved report contains no finding, but no complete runtime error export is available.</missing_reason></dimension>
+    <dimension name="reasoning_summary"><status>unavailable</status><missing_reason>No runtime-declared sanitized reasoning summary was exposed; private reasoning is not collected.</missing_reason><provenance/></dimension>
+    <dimension name="token_usage"><status>unavailable</status><missing_reason>No verified agent-run token counter was exposed by the active Codex adapter.</missing_reason></dimension>
+    <overall_status>unsupported</overall_status>
+  </evidence_completeness>
+  <usage><status>unavailable</status><metric_kind/><source/><source_scope/><measured_at/><input_tokens/><cached_input_tokens/><output_tokens/><reasoning_output_tokens/><total_tokens/><unavailable_reason>No verified agent-run token counter was exposed by the active Codex adapter.</unavailable_reason></usage>
+  <security><snapshot_classification>sanitized</snapshot_classification><structural_redaction_result>sensitive structural fields removed</structural_redaction_result><secret_pii_hardening>deferred</secret_pii_hardening><retention_metadata>deferred</retention_metadata><purge_policy>deferred</purge_policy></security>
+  <integrity>
+    <canonical_content_checksum algorithm="sha-256">524f283468780ef6dbde014d0a67878a300506daef3f86432524c1862e157f18</canonical_content_checksum>
+    <result>verified</result><verification_notes>Snapshot canonical JSON checksum, raw payload checksum and report SHA-256 were recomputed after publication.</verification_notes>
+  </integrity>
+  <completion_record>
+    <agent_run_id type="agent-run-id">agent-run-v1:abda11c6526e680f63688994a3298537675e88cc1d3c7a4d1ba63fcedffcb11d</agent_run_id>
+    <handoff_id type="handoff-id">handoff-v1:a5a91ae95445443f39c276cd668f43319f16f045195d215ae59db42fff5f30d8</handoff_id>
+    <terminal_status>approved-static-runtime-pending</terminal_status>
+    <summary>Complete iteration-1 phase replay independently approved both Writer lineages, corrected target, six ACs, current validators and mirror semantics.</summary>
+    <changed_files><file>planos/006-busts-position/builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/auditor-report-replay-v1.yaml</file></changed_files>
+    <read_files><file>planos/006-busts-position/task-1.1.md</file><file>frontend/data/Map049.json</file><file>frontend/js/plugins.js</file><file>frontend/js/plugins/VisuMZ_2_VNPictureBusts.js</file></read_files>
+    <validations><validation>All preflight sources, full coverage, target structure, lifecycle, assets, plugin mirror semantics, validator non-tautology, lineages and human gate passed independent static checks.</validation></validations>
+    <material_attempts><attempt>One complete audit replay at iteration 1.</attempt></material_attempts>
+    <known_errors/>
+    <decisions><decision>Approve the static phase boundary and invalidate iteration 0 only as current approval.</decision></decisions>
+    <residual_risks><risk>Rendered facing and presentation remain pending post-correction human Playtest.</risk></residual_risks>
+    <next_destination>/root orchestrator for checkpoint-v1-1, reconciliation and human Playtest handoff</next_destination>
+  </completion_record>
+  <evidence_policy><mode>evidence-first</mode><gap_handling>preserve-gap</gap_handling><capture_owner>collector-only</capture_owner><retrospective_dispatch>explicit-only</retrospective_dispatch></evidence_policy>
+</agent_session_evidence>

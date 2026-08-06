@@ -1,0 +1,27 @@
+validation_finding:
+  schema_version: 1
+  finding_id: "validation-finding-v1:08372a57cf062a15c83c1e58feabd6fa2f79b0311f8d0fc3553450a86853c75d"
+  cycle_id: "validation-cycle-v1:29c71e1d0ba7563137a4e15d9f9286051bbeb40aa63d92017ff0504b5c5685c3"
+  task_ref: "planos/006-busts-position/task-1.1.md"
+  validator_ref: "planos/006-busts-position/builds/fase1/validate-map049-busts.mjs"
+  route: "deterministic"
+  acceptance_criterion_refs:
+    - "AC-MAP049-1"
+    - "AC-MAP049-2"
+    - "AC-MAP049-3"
+    - "AC-MAP049-4"
+    - "AC-MAP049-5"
+    - "AC-MAP049-6"
+  result: "passed"
+  classification: null
+  severity: null
+  observed: "O validator deterministico aprovou o lifecycle completo e confirmou que Melia usa Auto-Reverse em Position 9, produzindo mirror efetivo com o InvertedScale local, no target 563fb83f."
+  expected: "Todos os seis criterios automaticos da task reaberta devem passar com evidencia persistida depois da correcao de facing."
+  evidence_refs:
+    - "planos/006-busts-position/builds/fase1/map049-facing-correction-validation-primary.json"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/human-validation-feedback-v1.yaml"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/facing-correction-completion-record.yaml"
+  failure_signature: null
+  allowed_correction_scope: []
+  retry_consumed: false
+  status: "passed"

@@ -1,0 +1,26 @@
+validation_finding:
+  schema_version: 1
+  finding_id: "validation-finding-v1:7b3bc3280defb57bc080c60aa2f404a2ea2be33e4e6d53e8851ddb74bdc90238"
+  cycle_id: "validation-cycle-v1:24c9164a717c69e00c0f209bea7f77a54252011a73718f1d0ed835db6dd174b5"
+  task_ref: "planos/006-busts-position/task-1.1.md"
+  validator_ref: "planos/006-busts-position/builds/fase1/validate-map049-busts.mjs"
+  route: "deterministic"
+  acceptance_criterion_refs:
+    - "AC-MAP049-1"
+    - "AC-MAP049-2"
+    - "AC-MAP049-3"
+    - "AC-MAP049-4"
+    - "AC-MAP049-5"
+  result: "passed"
+  classification: null
+  severity: null
+  observed: "O validator deterministico aprovou estrutura, lifecycle, payloads, assets, preservacao semantica fora da lista e diff restrito no hash de target b238e0a8."
+  expected: "Todos os cinco criterios automaticos da task devem passar com evidencia persistida."
+  evidence_refs:
+    - "planos/006-busts-position/builds/fase1/map049-structural-validation-primary.json"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/completion-record.yaml"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/evidence/evidence-manifest.xml"
+  failure_signature: null
+  allowed_correction_scope: []
+  retry_consumed: false
+  status: "passed"

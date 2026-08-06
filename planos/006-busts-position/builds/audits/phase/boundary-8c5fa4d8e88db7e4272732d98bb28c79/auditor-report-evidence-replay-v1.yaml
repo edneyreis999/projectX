@@ -1,0 +1,155 @@
+execution_audit_report:
+  schema_version: "1"
+  audit_id: "execution-audit-v1:5d110520c15246e3a7bbb2d3c6dcd4b32165f3e0f933e7d4da4286d41e813b04"
+  run_id: "loki-run-v2:6572a8ac60d0d33347cab60118c6f6beca5d0e32443250314b0797acfd21f4a4"
+  execution_id: "loki-execution-v2:961d50011999322d0e323dfb5889f3848fae8a22222ae568a345ff969dde910f"
+  auditor_identity: "map049-evidence-replay-phase-auditor"
+  agent_run_id: "agent-run-v1:db75a595a0149aff319b1048c425f41d7165ed067b17335dc7d86bcfbb85d745"
+  handoff_id: "handoff-v1:d6c8be2bad1cc506259af25b8697d10b81fdb198e3222bab6c7bb36acbc842c0"
+  identity_derivation:
+    canonicalization: "canonical UTF-8 JSON, lexicographically sorted object keys, preserved array order, no insignificant whitespace or trailing newline"
+    agent_run_fields: ["schema_version", "run_id", "execution_id", "audit_id", "agent_identity", "iteration", "coverage_digest", "preflight_ref"]
+    handoff_fields: ["schema_version", "agent_run_id", "audit_id", "report_ref", "status", "target_digest", "coverage_digest"]
+  boundary_type: "phase"
+  boundary_ref: "planos/006-busts-position/interaction/fase1"
+  iteration: 3
+  replay: true
+  predecessor_audit_ref: "planos/006-busts-position/builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/checkpoint-v1-2.yaml"
+  replay_cause: "Iteration 2 found a canonical checksum mismatch in the old correction-Writer manifest; the collector published immutable replacement facing-correction-evidence-v2 without modifying Map049, requiring complete phase-boundary replay."
+  policy_digest: "sha256:e3aeea217ca7881865de40d29e0e28e95bc32f4255e2488597801a8909e3bd78"
+  coverage_digest: "sha256:8072969fdf7c13459baa4a71fcac6ee8db2aa87bba729db656c3a37e949b080a"
+  membership_refs:
+    - "planos/006-busts-position/task-1.1.md"
+  covered_handoff_refs:
+    - "planos/006-busts-position/interaction/fase1/task-1.1/completion-record.yaml"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/evidence/evidence-manifest.xml"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/facing-correction-completion-record.yaml"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/facing-correction-evidence-v2/evidence-manifest.xml"
+  covered_target_digests:
+    - "frontend/data/Map049.json=sha256:252965e40909d8c61adbecacee62264a92e3049e9347c07934c7be02f2754ffa"
+  primary_validation_refs:
+    - "planos/006-busts-position/builds/fase1/map049-user-baseline-validation-primary.json"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/validation-cycles/cycle-3-finding.yaml"
+  final_validator_refs:
+    - "planos/006-busts-position/builds/fase1/map049-user-baseline-validation-final.json"
+  writer_identities:
+    - identity: "map049-writer"
+      agent_run_id: "agent-run-v1:060c4a9d8560638b38a93c3cd79eae47ce98796e4f59ad2fc2026d883c2f3fc7"
+      handoff_id: "handoff-v1:838dee15b8feb087cab347e3febb6b1604beb1e243b749784f35792da20eea6d"
+    - identity: "map049-facing-writer"
+      agent_run_id: "agent-run-v1:77494706e8dc804a7bd470bc2c7772931dd1300c9a52eb713cefea0cf3df90f3"
+      handoff_id: "handoff-v1:228efa5f0affe2cff567eb9ea803150ae6ed736537851be6aa1d20a58d859a99"
+  independence_check:
+    auditor_differs_from_all_writers: true
+    agent_run_id_differs_from_all_writers: true
+    handoff_id_differs_from_all_writers: true
+    auditor_differs_from_prior_auditors: true
+    auditor_differs_from_primary_validator: true
+    auditor_differs_from_collector_orchestrator: true
+    prior_auditor_identities: ["map049-phase-auditor", "map049-facing-phase-auditor", "map049-user-baseline-phase-auditor"]
+    primary_validation_owner: "deterministic:validate-map049-busts"
+    collector_orchestrator_identity: "/root"
+    independent_static_scan_performed: true
+  acceptance_criteria:
+    - id: "AC-MAP049-1"
+      result: "passed"
+      evidence: "The sole production target remains Map049 Event 1/Page 1. Current user-owned monster, Fadeout Screen, parallax and serialization improvements are preserved as baseline and are not attributed to either Writer."
+    - id: "AC-MAP049-2"
+      result: "passed"
+      evidence: "Melia, Saparo and Rheed use Picture 1/Position 9; Thorin uses Picture 2/Position 1 and is active at both CE16 calls and the final dialogue."
+    - id: "AC-MAP049-3"
+      result: "passed"
+      evidence: "Pictures 1/2 exit before SF_Monster_3, no bust is active at monster show, and both pictures are clear before FinishVisualNovel."
+    - id: "AC-MAP049-4"
+      result: "passed"
+      evidence: "Thorin_bobo is applied exactly once by Basic_GraphicChange to active Picture 2 and never enters through Basic_EnterBust."
+    - id: "AC-MAP049-5"
+      result: "passed"
+      evidence: "Every introduced non-empty PictureName resolves an exact-case PNG and the final NPC uses Portraits/Principal/Reed final; SF_Monster_3 also resolves exactly."
+    - id: "AC-MAP049-6"
+      result: "passed"
+      evidence: "The unique Melia entry is Position 9/Auto-Reverse with matching code 657 continuation. Active InvertedScale positions are 0-5, so local Auto-Reverse semantics produce effective horizontal mirror true."
+  checks:
+    - id: "preflight-source-integrity"
+      result: "passed"
+      evidence: "All 13 frozen preflight source SHA-256 values matched immediately before report publication; Map049 remained sha256:252965e40909d8c61adbecacee62264a92e3049e9347c07934c7be02f2754ffa."
+    - id: "coverage-and-audit-identity"
+      result: "passed"
+      evidence: "Canonical recomputation over the complete five-key iteration-3 coverage produced sha256:8072969fdf7c13459baa4a71fcac6ee8db2aa87bba729db656c3a37e949b080a; audit identity recomputed exactly to execution-audit-v1:5d110520c15246e3a7bbb2d3c6dcd4b32165f3e0f933e7d4da4286d41e813b04."
+    - id: "complete-boundary-replay"
+      result: "passed"
+      evidence: "This review replays task-1.1, both Writer completion/evidence lineages, current target, primary validation plus cycle 3, final validation, all six ACs, manual-user attribution and persisted human Playtest. No prior approval was reused."
+    - id: "writer-lineage-and-snapshot-integrity"
+      result: "passed"
+      evidence: "validate-session-evidence.py exited 0 independently for original Writer manifest and replacement facing-correction-evidence-v2. Their completion identities correlate to agent-run 060c4a9d.../handoff 838dee15... and agent-run 77494706.../handoff 228efa5f...; exact snapshot hashes equal 5a81e346...67d8 and 872f8ded...dad5."
+    - id: "predecessor-finding-closure"
+      result: "passed"
+      evidence: "The old facing-correction-evidence manifest still fails the canonical validator with 'canonical content checksum mismatch' and is preserved only through checkpoint-v1-2 and its finding report. It is absent from iteration-3 covered_handoff_refs; the immutable v2 replacement is the active correction-Writer evidence."
+    - id: "target-format-and-user-baseline"
+      result: "passed"
+      evidence: "Current JSON parses as Map049 Event 1 with one page and 106 commands; bytes are UTF-8 without BOM, LF-only and without trailing newline. parallaxName, SF_Monster_3 show/move payloads and Fadeout Screen indices 42/100 match the confirmed manual baseline."
+    - id: "bust-lifecycle-and-vn-boundaries"
+      result: "passed"
+      evidence: "Independent command inspection confirms five entries, three exits and one GraphicChange; Melia+Thorin and Saparo+Thorin are active at the two CE16 calls, no bust is active at SF_Monster_3, Rheed+Thorin_bobo are active for the final beat, and cleanup precedes FinishVisualNovel."
+    - id: "engine-plugin-assets"
+      result: "passed"
+      evidence: "VisuMZ_2_VNPictureBusts is active at order 24 with InvertedScale [0,1,2,3,4,5]; local plugin and rmmz_objects.js sources support Auto-Reverse and code 357/221 dispatch semantics. Exact-case bust and monster assets exist."
+    - id: "primary-final-and-human-validation"
+      result: "passed"
+      evidence: "Primary and final validator v1.2.0 evidence target the current digest, pass AC-MAP049-1 through AC-MAP049-6 and differ only by timestamp. Cycle 3 is passed. Persisted human evidence correlates the same digest and records explicit Playtest confirmation that Melia faces Thorin."
+    - id: "validator-non-tautology"
+      result: "passed"
+      evidence: "Validator syntax passes and its source checks fixed outside-list and non-bust canonical hashes, exact manual baselines/provenance, payload counts/order/editor continuations, simulated picture state, exact assets, plugin activation/config/source, engine semantics and restricted Git diff; it cannot pass merely by rediscovering Writer-produced mirror values."
+    - id: "write-and-attribution-boundary"
+      result: "passed"
+      evidence: "Feature attribution remains limited to the original bust lifecycle and authorized Melia facing correction. Manual monster, fade, parallax and serialization changes remain user-owned. This Auditor wrote only the authorized iteration-3 report."
+  findings: []
+  finding_refs: []
+  correction_refs:
+    - "planos/006-busts-position/builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/auditor-report-user-baseline-v1.yaml#findings"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/facing-correction-evidence-v2/evidence-manifest.xml"
+  evidence_refs:
+    - "planos/006-busts-position/preflights/run-ced6dab3cfa7bd32c45fd584261bff3a/map049-evidence-replay-phase-auditor/preflight-v1.md"
+    - "planos/006-busts-position/tasks.md"
+    - "planos/006-busts-position/task-1.1.md"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/completion-record.yaml"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/evidence/evidence-manifest.xml"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/evidence/sanitized-snapshot.json"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/facing-correction-completion-record.yaml"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/facing-correction-evidence-v2/evidence-manifest.xml"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/facing-correction-evidence-v2/sanitized-snapshot.json"
+    - "planos/006-busts-position/builds/fase1/map049-user-baseline-validation-primary.json"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/validation-cycles/cycle-3-finding.yaml"
+    - "planos/006-busts-position/builds/fase1/map049-user-baseline-validation-final.json"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/post-correction-human-validation-v1.yaml"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/concurrent-user-changes-v1.yaml"
+    - "planos/006-busts-position/builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/checkpoint-v1-2.yaml"
+    - "planos/006-busts-position/builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/auditor-report-user-baseline-v1.yaml"
+    - "planos/006-busts-position/builds/fase1/validate-map049-busts.mjs"
+    - "frontend/data/Map049.json"
+    - "frontend/js/plugins.js"
+    - "frontend/js/plugins/VisuMZ_2_VNPictureBusts.js"
+    - "frontend/js/rmmz_objects.js"
+    - "frontend/img/pictures/Portraits/Principal"
+    - "frontend/img/pictures/SF_Monster_3.png"
+  human_validation:
+    status: "passed-with-persisted-human-evidence"
+    evidence_ref: "planos/006-busts-position/interaction/fase1/task-1.1/post-correction-human-validation-v1.yaml"
+    scope: "The user explicitly confirmed in RPG Maker MZ Playtest that Melia faces Thorin on the current target digest; this Auditor did not re-perform Playtest."
+  domain_context_preflight:
+    status: "ready-with-gaps"
+    durable_context_refs: []
+    current_source_refs:
+      - "planos/006-busts-position/preflights/run-ced6dab3cfa7bd32c45fd584261bff3a/map049-evidence-replay-phase-auditor/preflight-v1.md"
+      - "planos/006-busts-position/task-1.1.md"
+      - "frontend/data/Map049.json"
+      - "frontend/js/rmmz_objects.js"
+      - "frontend/js/plugins/VisuMZ_2_VNPictureBusts.js"
+    gap: "docs/loki-init/runtime-qa is absent; current hash-verified task, target, engine, plugin, validator, lineage and human evidence are a trustworthy substitute, so the gap is non-material."
+  status: "approved"
+  limitations:
+    - "This Auditor relied on the persisted explicit Playtest record and did not personally re-perform runtime observation."
+    - "The immutable primary/final validator evidence was reviewed without rerunning the validator into a new output path because this Auditor's sole write authorization is this report; independent read-only inspection covered its material assertions."
+    - "Both valid Writer manifests explicitly degrade transcript/tool-I/O and exact-token dimensions; those declared telemetry gaps do not weaken the independently established functional boundary."
+    - "The old invalid correction manifest remains immutable historical evidence of the predecessor finding and is not active iteration-3 coverage."
+  next_action: "Orchestrator may publish iteration-3 checkpoint status approved with predecessor checkpoint-v1-2, replay true, this exact complete coverage and replacement correction evidence, then project the phase boundary resolved without modifying Map049."

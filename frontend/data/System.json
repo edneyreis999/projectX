@@ -183,10 +183,7 @@
     "optSlipDeath": false,
     "optTransparent": false,
     "partyMembers": [
-        3,
-        4,
-        5,
-        6
+        1
     ],
     "ship": {
         "bgm": {
@@ -743,7 +740,7 @@
         "Inimigos derrotados(release)",
         "v_qTutorialFundaForjaprata_stage"
     ],
-    "versionId": 60363897,
+    "versionId": 80301350,
     "victoryMe": {
         "name": "Victory1",
         "pan": 0,

@@ -1,0 +1,64 @@
+{
+  "schema_version": 3,
+  "run_id": "loki-run-v2:6572a8ac60d0d33347cab60118c6f6beca5d0e32443250314b0797acfd21f4a4",
+  "execution_id": "loki-execution-v2:961d50011999322d0e323dfb5889f3848fae8a22222ae568a345ff969dde910f",
+  "status": "completed",
+  "state_digest": "sha256:30ba551423b0af025688bae0f7598915def45ca696626ef622ffeafc93ebe4e9",
+  "audit_configuration": {
+    "schema_version": 1,
+    "frequency": "phase",
+    "source": "default",
+    "policy_digest": "sha256:e3aeea217ca7881865de40d29e0e28e95bc32f4255e2488597801a8909e3bd78"
+  },
+  "audit_checkpoint_refs": [
+    "planos/006-busts-position/builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/checkpoint-v1-3.yaml"
+  ],
+  "task_results": [
+    {
+      "task_ref": "planos/006-busts-position/task-1.1.md",
+      "status": "passed",
+      "evidence_refs": [
+        "planos/006-busts-position/builds/fase1/map049-user-baseline-validation-primary.json",
+        "planos/006-busts-position/interaction/fase1/task-1.1/validation-cycles/cycle-3-finding.yaml",
+        "planos/006-busts-position/interaction/fase1/task-1.1/post-correction-human-validation-v1.yaml",
+        "planos/006-busts-position/interaction/fase1/task-1.1/concurrent-user-changes-v1.yaml"
+      ]
+    }
+  ],
+  "final_validator_refs": [
+    "planos/006-busts-position/builds/fase1/map049-user-baseline-validation-final.json"
+  ],
+  "terminal_evidence_refs": [
+    "planos/006-busts-position/interaction/fase1/task-1.1/completion-record.yaml",
+    "planos/006-busts-position/interaction/fase1/task-1.1/evidence/evidence-manifest.xml",
+    "planos/006-busts-position/builds/fase1/map049-structural-validation-primary.json",
+    "planos/006-busts-position/interaction/fase1/task-1.1/validation-cycles/cycle-1-finding.yaml",
+    "planos/006-busts-position/builds/fase1/map049-structural-validation-final.json",
+    "planos/006-busts-position/builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/auditor-report-v1.yaml",
+    "planos/006-busts-position/builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/evidence/evidence-manifest.xml",
+    "planos/006-busts-position/interaction/fase1/task-1.1/human-validation-feedback-v1.yaml",
+    "planos/006-busts-position/interaction/fase1/task-1.1/facing-correction-completion-record.yaml",
+    "planos/006-busts-position/interaction/fase1/task-1.1/facing-correction-evidence/evidence-manifest.xml",
+    "planos/006-busts-position/builds/fase1/map049-facing-correction-validation-primary.json",
+    "planos/006-busts-position/interaction/fase1/task-1.1/validation-cycles/cycle-2-finding.yaml",
+    "planos/006-busts-position/builds/fase1/map049-facing-correction-validation-final.json",
+    "planos/006-busts-position/builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/auditor-report-replay-v1.yaml",
+    "planos/006-busts-position/builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/replay-evidence/evidence-manifest.xml",
+    "planos/006-busts-position/interaction/fase1/task-1.1/post-correction-human-validation-v1.yaml",
+    "planos/006-busts-position/interaction/fase1/task-1.1/concurrent-user-changes-v1.yaml",
+    "planos/006-busts-position/interaction/fase1/task-1.1/facing-correction-evidence-v2/evidence-manifest.xml",
+    "planos/006-busts-position/builds/fase1/map049-user-baseline-validation-primary.json",
+    "planos/006-busts-position/interaction/fase1/task-1.1/validation-cycles/cycle-3-finding.yaml",
+    "planos/006-busts-position/builds/fase1/map049-user-baseline-validation-final.json",
+    "planos/006-busts-position/builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/auditor-report-user-baseline-v1.yaml",
+    "planos/006-busts-position/builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/user-baseline-evidence/evidence-manifest.xml",
+    "planos/006-busts-position/builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/auditor-report-evidence-replay-v1.yaml",
+    "planos/006-busts-position/builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/evidence-replay-evidence/evidence-manifest.xml"
+  ],
+  "execution_metrics_ref": "planos/006-busts-position/builds/metrics/execution-metrics.json",
+  "execution_metrics_digest": "sha256:f07870f613f4cb81979fcb867e9fa2461d8c0c807e906d83c3f07f1e7506d4bb",
+  "execution_metrics_status": "partial",
+  "execution_metrics_degradation_reason": "Run-scoped clocks and exact token counters are unavailable; estimates cover only persisted sanitized observable snapshots.",
+  "next_action": "No further implementation action; feature, user-owned improvements, automatic validation, audit replay and human Playtest are complete.",
+  "result_digest": "sha256:4b4bc70307973cf5f2c6ac77c62ab48c19c758ea37b731639281a47acefd38c8"
+}

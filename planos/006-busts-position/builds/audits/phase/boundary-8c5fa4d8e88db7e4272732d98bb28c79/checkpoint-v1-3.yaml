@@ -1,0 +1,47 @@
+execution_audit_checkpoint:
+  schema_version: 1
+  audit_id: "execution-audit-v1:5d110520c15246e3a7bbb2d3c6dcd4b32165f3e0f933e7d4da4286d41e813b04"
+  run_id: "loki-run-v2:6572a8ac60d0d33347cab60118c6f6beca5d0e32443250314b0797acfd21f4a4"
+  execution_id: "loki-execution-v2:961d50011999322d0e323dfb5889f3848fae8a22222ae568a345ff969dde910f"
+  policy_digest: "sha256:e3aeea217ca7881865de40d29e0e28e95bc32f4255e2488597801a8909e3bd78"
+  frequency: "phase"
+  boundary_type: "phase"
+  boundary_ref: "planos/006-busts-position/interaction/fase1"
+  iteration: 3
+  predecessor_audit_ref: "planos/006-busts-position/builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/checkpoint-v1-2.yaml"
+  replay: true
+  replay_cause: "The iteration-2 audit found a canonical checksum mismatch in the old correction-Writer manifest; the collector published an immutable valid replacement without modifying Map049."
+  membership_refs:
+    - "planos/006-busts-position/task-1.1.md"
+  coverage_digest: "sha256:8072969fdf7c13459baa4a71fcac6ee8db2aa87bba729db656c3a37e949b080a"
+  covered_handoff_refs:
+    - "planos/006-busts-position/interaction/fase1/task-1.1/completion-record.yaml"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/evidence/evidence-manifest.xml"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/facing-correction-completion-record.yaml"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/facing-correction-evidence-v2/evidence-manifest.xml"
+  covered_target_digests:
+    - "frontend/data/Map049.json=sha256:252965e40909d8c61adbecacee62264a92e3049e9347c07934c7be02f2754ffa"
+  primary_validation_refs:
+    - "planos/006-busts-position/builds/fase1/map049-user-baseline-validation-primary.json"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/validation-cycles/cycle-3-finding.yaml"
+  final_validator_refs:
+    - "planos/006-busts-position/builds/fase1/map049-user-baseline-validation-final.json"
+  auditor_identity: "map049-evidence-replay-phase-auditor"
+  writer_identities:
+    - "map049-writer"
+    - "map049-facing-writer"
+  auditor_run_refs:
+    - "planos/006-busts-position/preflights/run-ced6dab3cfa7bd32c45fd584261bff3a/map049-evidence-replay-phase-auditor/preflight-v1.md"
+    - "planos/006-busts-position/builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/evidence-replay-evidence/evidence-manifest.xml"
+  finding_refs:
+    - "planos/006-busts-position/builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/auditor-report-user-baseline-v1.yaml#findings"
+  correction_refs:
+    - "planos/006-busts-position/interaction/fase1/task-1.1/facing-correction-evidence-v2/evidence-manifest.xml"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/post-correction-human-validation-v1.yaml"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/concurrent-user-changes-v1.yaml"
+  evidence_refs:
+    - "planos/006-busts-position/builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/auditor-report-evidence-replay-v1.yaml"
+    - "planos/006-busts-position/builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/evidence-replay-evidence/evidence-manifest.xml"
+    - "planos/006-busts-position/builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/evidence-replay-evidence/sanitized-snapshot.json"
+  status: "approved"
+  next_action: "Proceed to terminal reconciliation; all automatic, audit and persisted human validation gates are satisfied."

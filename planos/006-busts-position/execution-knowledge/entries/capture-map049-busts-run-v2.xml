@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<execution_knowledge_entry schema_version="1">
+  <identity>
+    <capture_id>capture-map049-busts-run-v2</capture_id>
+    <calling_workflow>loki-implement-feature</calling_workflow>
+    <run_id>loki-run-v2:6572a8ac60d0d33347cab60118c6f6beca5d0e32443250314b0797acfd21f4a4</run_id>
+    <run_directory>E:/Projetos/projectX/planos/006-busts-position</run_directory>
+    <phase>fase1</phase>
+    <task_id>task-1.1</task_id>
+    <agent_run_id>agent-run-v1:060c4a9d8560638b38a93c3cd79eae47ce98796e4f59ad2fc2026d883c2f3fc7</agent_run_id>
+    <handoff_id>handoff-v1:838dee15b8feb087cab347e3febb6b1604beb1e243b749784f35792da20eea6d</handoff_id>
+  </identity>
+  <lineage>
+    <target_entry>execution-knowledge/entries/capture-map049-busts-run-v2.xml</target_entry>
+    <source_refs>
+      <source_ref type="completion-record" authorization="run-contained">interaction/fase1/task-1.1/completion-record.yaml</source_ref>
+      <source_ref type="evidence-manifest" authorization="run-contained">interaction/fase1/task-1.1/evidence/evidence-manifest.xml</source_ref>
+      <source_ref type="build-report" authorization="run-contained">builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/auditor-report-v1.yaml</source_ref>
+      <source_ref type="validator-record" authorization="run-contained">builds/fase1/map049-structural-validation-final.json</source_ref>
+    </source_refs>
+  </lineage>
+  <materiality>
+    <material>true</material>
+    <reason>A execução registrou ausência de raízes duráveis de contexto, uma mutação delimitada reutilizável com precondições e replay terminal, além de validação determinística e auditoria independente.</reason>
+  </materiality>
+  <capture>
+    <state>captured</state>
+    <reason>Conhecimento operacional material foi derivado somente das quatro fontes persistidas autorizadas e validado antes da publicação.</reason>
+    <minimum_next_path>Executar o Playtest humano pendente e encaminhar eventual revisão ou promoção somente ao loki-continuous-improvement.</minimum_next_path>
+  </capture>
+  <knowledge>
+    <claims>
+      <claim type="friction" confidence="high">
+        <statement>A preflight de contexto registrou ausência da raiz durável docs/loki-init/technical-implementer e prosseguiu em ready-with-gaps usando as fontes atuais da tarefa, preflight e runtime.</statement>
+        <evidence_ref>interaction/fase1/task-1.1/completion-record.yaml#material_attempts</evidence_ref>
+      </claim>
+      <claim type="friction" confidence="high">
+        <statement>A auditoria registrou ausência da raiz durável docs/loki-init/runtime-qa e considerou as fontes atuais da tarefa, preflight, engine, plugin, alvo e evidências um substituto seguro com gaps.</statement>
+        <evidence_ref>builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/auditor-report-v1.yaml#limitations</evidence_ref>
+      </claim>
+      <claim type="fact" confidence="high">
+        <statement>O mutator delimitado aplicou a alteração de 104 para 105 comandos após verificar hash, caminho e estilo; preservou UTF-8 sem BOM, CRLF, newline final e conteúdo fora da lista alvo.</statement>
+        <evidence_ref>interaction/fase1/task-1.1/completion-record.yaml#validations</evidence_ref>
+      </claim>
+      <claim type="fact" confidence="high">
+        <statement>O replay terminal do mutator reconheceu o estado já concluído e manteve inalterado o hash do Map049.</statement>
+        <evidence_ref>interaction/fase1/task-1.1/completion-record.yaml#validations</evidence_ref>
+      </claim>
+      <claim type="fact" confidence="high">
+        <statement>O validador final aprovou todos os cinco critérios de aceitação e a auditoria independente aprovou hashes, semântica, estilo textual, lifecycle, assets, integração do plugin e limite de escrita.</statement>
+        <evidence_ref>builds/fase1/map049-structural-validation-final.json#acceptance_criteria</evidence_ref>
+      </claim>
+      <claim type="inference" confidence="medium">
+        <statement>Para mutações exatas em JSON serializado do RPG Maker, restringir o mutator ao hash inicial aprovado ou ao hash terminal exato, preservar o estilo textual observado e exigir replay sem mudança forma um guardrail reutilizável contra drift e reexecução destrutiva.</statement>
+        <evidence_ref>interaction/fase1/task-1.1/completion-record.yaml#decisions</evidence_ref>
+      </claim>
+    </claims>
+    <attempts>
+      <attempt>
+        <action>Executar preflight de contexto com as raízes duráveis disponíveis.</action>
+        <outcome>O preflight terminou ready-with-gaps; a ausência de technical-implementer foi registrada e as fontes atuais foram consideradas suficientes para a escrita delimitada.</outcome>
+        <evidence_ref>interaction/fase1/task-1.1/completion-record.yaml#material_attempts</evidence_ref>
+      </attempt>
+      <attempt>
+        <action>Aplicar uma mutação estruturada somente à lista de comandos autorizada, protegida por hash e precondições de caminho e estilo.</action>
+        <outcome>A primeira escrita material produziu 105 comandos e preservou encoding, terminações de linha, newline final e conteúdo fora do alvo.</outcome>
+        <evidence_ref>interaction/fase1/task-1.1/completion-record.yaml#validations</evidence_ref>
+      </attempt>
+      <attempt>
+        <action>Reexecutar o mutator sobre o estado terminal e submeter o resultado a validação determinística e auditoria independente.</action>
+        <outcome>O replay não alterou o hash; o validador final e a auditoria independente aprovaram a implementação estática.</outcome>
+        <evidence_ref>builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/auditor-report-v1.yaml#checks</evidence_ref>
+      </attempt>
+    </attempts>
+    <resolution status="partial" confidence="high">
+      <statement>A implementação estática foi concluída e aprovada por validação determinística e auditoria independente, mas a validação perceptível em runtime permanece pendente.</statement>
+      <evidence_ref>builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/auditor-report-v1.yaml#status</evidence_ref>
+    </resolution>
+    <cause status="unknown" confidence="high">
+      <statement>As fontes confirmam que as raízes duráveis technical-implementer e runtime-qa estavam ausentes, mas não determinam por que estavam ausentes.</statement>
+      <evidence_ref>builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/auditor-report-v1.yaml#limitations</evidence_ref>
+    </cause>
+    <gaps>
+      <gap>Composição visual, espelhamento, layering, timing, legibilidade, transições e cleanup perceptível permanecem pendentes do Playtest humano.</gap>
+      <gap>As fontes persistidas não estabelecem a causa da ausência das raízes duráveis de contexto.</gap>
+      <gap>A alegada indisponibilidade de tooling YAML não consta nos quatro refs autorizados e, portanto, não foi capturada como conhecimento.</gap>
+    </gaps>
+    <reuse_guidance>Em mutações delimitadas de dados serializados, verificar o hash e o estilo imediatamente antes da escrita, aceitar somente o baseline aprovado ou o estado terminal exato, preservar bytes não alvo e exigir replay sem alteração antes da validação independente.</reuse_guidance>
+    <avoid_next_time>Não reserializar o arquivo inteiro quando a unidade autorizada pode ser substituída exatamente; não aceitar um hash inesperado; não inferir disponibilidade de contexto ou tooling sem suporte nos registros persistidos; e não converter aprovação estática em alegação de validação perceptível.</avoid_next_time>
+  </knowledge>
+  <security>
+    <sanitized>true</sanitized>
+    <raw_payload_included>false</raw_payload_included>
+    <private_reasoning_included>false</private_reasoning_included>
+    <personal_data_included>false</personal_data_included>
+    <secrets_included>false</secrets_included>
+    <evidence_snapshots_copied>false</evidence_snapshots_copied>
+  </security>
+  <promotion>
+    <owner>loki-continuous-improvement</owner>
+    <status>unreviewed</status>
+  </promotion>
+</execution_knowledge_entry>

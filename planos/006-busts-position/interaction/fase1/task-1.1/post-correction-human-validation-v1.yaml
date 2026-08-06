@@ -1,0 +1,21 @@
+human_validation_result:
+  schema_version: 1
+  run_id: "loki-run-v2:6572a8ac60d0d33347cab60118c6f6beca5d0e32443250314b0797acfd21f4a4"
+  execution_id: "loki-execution-v2:961d50011999322d0e323dfb5889f3848fae8a22222ae568a345ff969dde910f"
+  task_ref: "planos/006-busts-position/task-1.1.md"
+  gate: "post-correction Map049 Playtest"
+  environment: "RPG Maker MZ Playtest do projeto frontend"
+  target_ref: "frontend/data/Map049.json"
+  observed_target_digest: "sha256:252965e40909d8c61adbecacee62264a92e3049e9347c07934c7be02f2754ffa"
+  result: "passed"
+  expected: "Melia aparece no lado direito olhando para Thorin, que esta a esquerda."
+  observed: "O usuario confirmou depois do Playtest que Melia esta olhando para Thorin."
+  success_signals:
+    - "Facing de Melia orientado para Thorin."
+    - "A correcao Auto-Reverse produziu o resultado visual esperado."
+  evidence_basis:
+    - "Human observation of the rendered Map049 scene."
+    - "Explicit user confirmation: esta correto; agora Melia esta olhando para Thorin."
+  runtime_classification: "playtest_validated"
+  recorded_at: "2026-08-05"
+  status: "passed"
