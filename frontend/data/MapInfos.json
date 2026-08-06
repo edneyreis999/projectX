@@ -47,7 +47,7 @@
         "order": 1,
         "parentId": 0,
         "scrollX": 777.7777777777778,
-        "scrollY": 776.8888888888889,
+        "scrollY": 439.1111111111111,
         "quick": false
     },
     {
@@ -214,7 +214,7 @@
         "name": "EX_Coreto",
         "order": 48,
         "parentId": 16,
-        "scrollX": 784.8888888888889,
+        "scrollX": 777.7777777777778,
         "scrollY": 656,
         "quick": false
     },
@@ -385,7 +385,7 @@
         "order": 50,
         "parentId": 32,
         "scrollX": 777.7777777777778,
-        "scrollY": 439.1111111111111,
+        "scrollY": 432,
         "quick": false
     },
     {

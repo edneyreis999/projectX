@@ -13,6 +13,7 @@
  * Mapas devem usar <CoretoMapType:EX> ou <CoretoMapType:VN>. Eventos de cena
  * VN devem ser Action Button: o roteador inicia exatamente um evento após a
  * transferência. A primeira operação da página deve validar sessão e estado.
+ * O fluxo bloqueia autosave, mas preserva o menu e o save manual.
  *
  * @command EnterVisualNovel
  * @text Entrar na Visual Novel
@@ -270,7 +271,7 @@
         const owner = { module: PLUGIN_NAME, questKey, entryKey, originMapId: origin.mapId, originEventId: origin.eventId };
         const token = FlowCoordinator.acquire("questVN", owner, {
             blockMovement: true,
-            blockMenu: true,
+            blockMenu: false,
             blockAutosave: true
         });
         ensureStore().session = {
@@ -288,8 +289,6 @@
         };
         $gamePlayer.setTransparent(true);
         $gamePlayer.followers().hide();
-        $gameSystem.disableMenu();
-        $gameSystem.disableSave();
         $gamePlayer.reserveTransfer(destination.mapId, destination.x, destination.y, destination.direction, destination.fadeType);
         return ensureStore().session;
     }
@@ -411,6 +410,20 @@
         finish,
         assertSession,
         inspect
+    };
+
+    const _Scene_Map_isMenuEnabled = Scene_Map.prototype.isMenuEnabled;
+    Scene_Map.prototype.isMenuEnabled = function() {
+        const currentSession = globalThis.$gameSystem ? session() : null;
+        const flow = FlowCoordinator.current();
+        const activeVisualNovel = currentSession &&
+            currentSession.phase === PHASES.ACTIVE &&
+            flow &&
+            flow.kind === "questVN" &&
+            flow.token === currentSession.token &&
+            flow.policy.blockMenu === false;
+        if (activeVisualNovel) return $gameSystem.isMenuEnabled();
+        return _Scene_Map_isMenuEnabled.call(this);
     };
 
     PluginManager.registerCommand(PLUGIN_NAME, "EnterVisualNovel", function(args) {
