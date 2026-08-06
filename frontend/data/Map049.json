@@ -1351,7 +1351,7 @@
         null,
         {
             "id": 1,
-        "name": "VN - Casa Forjaprata: pesadelo e despertar",
+            "name": "VN - Casa Forjaprata: pesadelo e despertar",
             "note": "",
             "x": 8,
             "y": 6,
@@ -1427,320 +1427,14 @@
                             ]
                         },
                         {
-                            "code": 357,
-                            "indent": 0,
-                            "parameters": [
-                                "VisuMZ_2_VNPictureBusts",
-                                "Basic_EnterBust",
-                                "BASIC: Enter Bust",
-                                {
-                                    "PictureID:eval": "1",
-                                    "PictureName:str": "Portraits/Principal/Mélia_desespero",
-                                    "Origin:str": "Bust",
-                                    "Position:num": "5",
-                                    "StartOffsetX:eval": "-200",
-                                    "StartOffsetY:eval": "+0",
-                                    "EasingType:str": "OutSine",
-                                    "HorzMirror:str": "Auto",
-                                    "Duration:eval": "20"
-                                }
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Picture ID = 1"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Picture File = Portraits/Principal/Mélia_desespero"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Origin = Bust"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Screen Position = 5"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Start Offset X = -200"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Start Offset Y = +0"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Entrance Easing = OutSine"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Horizontal Mirror = Auto"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Duration = 20"
-                            ]
-                        },
-                        {
-                            "code": 121,
-                            "indent": 0,
-                            "parameters": [
-                                43,
-                                43,
-                                0
-                            ]
-                        },
-                        {
                             "code": 122,
                             "indent": 0,
                             "parameters": [
-                                101,
-                                101,
+                                106,
+                                106,
                                 0,
-                                4,
-                                "\"1-B\""
-                            ]
-                        },
-                        {
-                            "code": 122,
-                            "indent": 0,
-                            "parameters": [
-                                102,
-                                102,
                                 0,
-                                4,
-                                "\"Aviso Materno\""
-                            ]
-                        },
-                        {
-                            "code": 122,
-                            "indent": 0,
-                            "parameters": [
-                                103,
-                                103,
-                                0,
-                                4,
-                                "\"A mãe de Thorin surge aflita dizendo “não temos tempo!”, instaurando a urgência que move a história.\""
-                            ]
-                        },
-                        {
-                            "code": 117,
-                            "indent": 0,
-                            "parameters": [
-                                16
-                            ]
-                        },
-                        {
-                            "code": 357,
-                            "indent": 0,
-                            "parameters": [
-                                "VisuMZ_2_VNPictureBusts",
-                                "Basic_ExitBusts",
-                                "BASIC: Exit Bust(s)",
-                                {
-                                    "PictureID:arrayeval": "[\"1\"]",
-                                    "EndOffsetX:eval": "-200",
-                                    "EndOffsetY:eval": "+0",
-                                    "EasingType:str": "InSine",
-                                    "FlipDirection:str": "None",
-                                    "Duration:eval": "20",
-                                    "AutoErase:eval": "true"
-                                }
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Picture ID(s) = [\"1\"]"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "End Offset X = -200"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "End Offset Y = +0"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Exit Easing = InSine"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Flip Direction = None"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Duration = 20"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Auto-Erase? = true"
-                            ]
-                        },
-                        {
-                            "code": 231,
-                            "indent": 0,
-                            "parameters": [
-                                1,
-                                "SF_Monster_3",
-                                1,
-                                0,
-                                480,
-                                912,
-                                220,
-                                220,
-                                255,
-                                0
-                            ]
-                        },
-                        {
-                            "code": 249,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "name": "Horror",
-                                    "volume": 85,
-                                    "pitch": 100,
-                                    "pan": 0
-                                }
-                            ]
-                        },
-                        {
-                            "code": 232,
-                            "indent": 0,
-                            "parameters": [
-                                1,
-                                0,
-                                1,
-                                0,
-                                464,
-                                328,
-                                220,
-                                220,
-                                255,
-                                0,
-                                30,
-                                true,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 230,
-                            "indent": 0,
-                            "parameters": [
-                                60
-                            ]
-                        },
-                        {
-                            "code": 249,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "name": "Mystery",
-                                    "volume": 90,
-                                    "pitch": 100,
-                                    "pan": 0
-                                }
-                            ]
-                        },
-                        {
-                            "code": 232,
-                            "indent": 0,
-                            "parameters": [
-                                1,
-                                0,
-                                1,
-                                0,
-                                1968,
-                                872,
-                                2000,
-                                2000,
-                                255,
-                                0,
-                                30,
-                                false,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 242,
-                            "indent": 0,
-                            "parameters": [
-                                60
-                            ]
-                        },
-                        {
-                            "code": 221,
-                            "indent": 0,
-                            "parameters": []
-                        },
-                        {
-                            "code": 235,
-                            "indent": 0,
-                            "parameters": [
-                                1
-                            ]
-                        },
-                        {
-                            "code": 223,
-                            "indent": 0,
-                            "parameters": [
-                                [
-                                    0,
-                                    0,
-                                    0,
-                                    0
-                                ],
-                                1,
-                                false
+                                100
                             ]
                         },
                         {
@@ -1752,7 +1446,7 @@
                                 "BASIC: Enter Bust",
                                 {
                                     "PictureID:eval": "1",
-                                    "PictureName:str": "Portraits/Principal/Sáparo_pistola",
+                                    "PictureName:str": "Portraits/Principal/Mélia_desespero",
                                     "Origin:str": "Bust",
                                     "Position:num": "9",
                                     "StartOffsetX:eval": "-200",
@@ -1774,7 +1468,7 @@
                             "code": 657,
                             "indent": 0,
                             "parameters": [
-                                "Picture File = Portraits/Principal/Sáparo_pistola"
+                                "Picture File = Portraits/Principal/Mélia_desespero"
                             ]
                         },
                         {
@@ -1843,7 +1537,7 @@
                                 101,
                                 0,
                                 4,
-                                "\"2-B\""
+                                "\"1-B\""
                             ]
                         },
                         {
@@ -1854,7 +1548,7 @@
                                 102,
                                 0,
                                 4,
-                                "\"Sáparo ao lado\""
+                                "\"Aviso Materno\""
                             ]
                         },
                         {
@@ -1865,14 +1559,7 @@
                                 103,
                                 0,
                                 4,
-                                "\"Sáparo-boca-de-corneta, no quarto, berra que o jogo já começou → urgência imediata.\""
-                            ]
-                        },
-                        {
-                            "code": 117,
-                            "indent": 0,
-                            "parameters": [
-                                16
+                                "\"A mãe de Thorin surge aflita dizendo “não temos tempo!”, instaurando a urgência que move a história.\""
                             ]
                         },
                         {
@@ -1959,6 +1646,179 @@
                             ]
                         },
                         {
+                            "code": 117,
+                            "indent": 0,
+                            "parameters": [
+                                16
+                            ]
+                        },
+                        {
+                            "code": 357,
+                            "indent": 0,
+                            "parameters": [
+                                "VisuMZ_2_VNPictureBusts",
+                                "Basic_ExitBusts",
+                                "BASIC: Exit Bust(s)",
+                                {
+                                    "PictureID:arrayeval": "[\"1\",\"2\"]",
+                                    "EndOffsetX:eval": "-200",
+                                    "EndOffsetY:eval": "+0",
+                                    "EasingType:str": "InSine",
+                                    "FlipDirection:str": "None",
+                                    "Duration:eval": "20",
+                                    "AutoErase:eval": "true"
+                                }
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Picture ID(s) = [\"1\",\"2\"]"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "End Offset X = -200"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "End Offset Y = +0"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Exit Easing = InSine"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Flip Direction = None"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Duration = 20"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Auto-Erase? = true"
+                            ]
+                        },
+                        {
+                            "code": 231,
+                            "indent": 0,
+                            "parameters": [
+                                1,
+                                "SF_Monster_3",
+                                1,
+                                0,
+                                736,
+                                936,
+                                220,
+                                220,
+                                255,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 249,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "name": "Horror",
+                                    "volume": 85,
+                                    "pitch": 100,
+                                    "pan": 0
+                                }
+                            ]
+                        },
+                        {
+                            "code": 232,
+                            "indent": 0,
+                            "parameters": [
+                                1,
+                                0,
+                                1,
+                                0,
+                                736,
+                                328,
+                                220,
+                                220,
+                                255,
+                                0,
+                                30,
+                                true,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 230,
+                            "indent": 0,
+                            "parameters": [
+                                60
+                            ]
+                        },
+                        {
+                            "code": 249,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "name": "Mystery",
+                                    "volume": 90,
+                                    "pitch": 100,
+                                    "pan": 0
+                                }
+                            ]
+                        },
+                        {
+                            "code": 232,
+                            "indent": 0,
+                            "parameters": [
+                                1,
+                                0,
+                                1,
+                                0,
+                                1968,
+                                872,
+                                2000,
+                                2000,
+                                255,
+                                0,
+                                30,
+                                true,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 242,
+                            "indent": 0,
+                            "parameters": [
+                                60
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 0,
+                            "parameters": [
+                                1
+                            ]
+                        },
+                        {
                             "code": 357,
                             "indent": 0,
                             "parameters": [
@@ -1967,7 +1827,7 @@
                                 "BASIC: Enter Bust",
                                 {
                                     "PictureID:eval": "2",
-                                    "PictureName:str": "Portraits/Principal/Thorin_bobo",
+                                    "PictureName:str": "Portraits/Principal/Thorin_confusão",
                                     "Origin:str": "Bust",
                                     "Position:num": "1",
                                     "StartOffsetX:eval": "-200",
@@ -1989,7 +1849,7 @@
                             "code": 657,
                             "indent": 0,
                             "parameters": [
-                                "Picture File = Portraits/Principal/Thorin_bobo"
+                                "Picture File = Portraits/Principal/Thorin_confusão"
                             ]
                         },
                         {
@@ -2117,9 +1977,9 @@
                                 "BASIC: Enter Bust",
                                 {
                                     "PictureID:eval": "1",
-                                    "PictureName:str": "",
+                                    "PictureName:str": "Portraits/Principal/Reed final",
                                     "Origin:str": "Bust",
-                                    "Position:num": "5",
+                                    "Position:num": "9",
                                     "StartOffsetX:eval": "-200",
                                     "StartOffsetY:eval": "+0",
                                     "EasingType:str": "OutSine",
@@ -2139,7 +1999,7 @@
                             "code": 657,
                             "indent": 0,
                             "parameters": [
-                                "Picture File = "
+                                "Picture File = Portraits/Principal/Reed final"
                             ]
                         },
                         {
@@ -2153,7 +2013,7 @@
                             "code": 657,
                             "indent": 0,
                             "parameters": [
-                                "Screen Position = 5"
+                                "Screen Position = 9"
                             ]
                         },
                         {
@@ -2226,6 +2086,341 @@
                                 "Basic_ExitBusts",
                                 "BASIC: Exit Bust(s)",
                                 {
+                                    "PictureID:arrayeval": "[\"1\",\"2\"]",
+                                    "EndOffsetX:eval": "-200",
+                                    "EndOffsetY:eval": "+0",
+                                    "EasingType:str": "InSine",
+                                    "FlipDirection:str": "None",
+                                    "Duration:eval": "20",
+                                    "AutoErase:eval": "true"
+                                }
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Picture ID(s) = [\"1\",\"2\"]"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "End Offset X = -200"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "End Offset Y = +0"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Exit Easing = InSine"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Flip Direction = None"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Duration = 20"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Auto-Erase? = true"
+                            ]
+                        },
+                        {
+                            "code": 221,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 235,
+                            "indent": 0,
+                            "parameters": [
+                                1
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 0,
+                            "parameters": [
+                                2
+                            ]
+                        },
+                        {
+                            "code": 355,
+                            "indent": 0,
+                            "parameters": [
+                                "const s = globalThis.Coreto.QuestVN.assertSession(\"tutorial-funda-forjaprata\", \"ABERTURA_FORJAPRATA\");"
+                            ]
+                        },
+                        {
+                            "code": 655,
+                            "indent": 0,
+                            "parameters": [
+                                "if (s.origin.mapId !== 45 || s.origin.eventId !== 11) throw new Error(\"Coreto QuestVN: unexpected origin for Map045 E11\");"
+                            ]
+                        },
+                        {
+                            "code": 655,
+                            "indent": 0,
+                            "parameters": [
+                                "$gameSelfSwitches.setValue([s.origin.mapId, s.origin.eventId, \"D\"], true);"
+                            ]
+                        },
+                        {
+                            "code": 357,
+                            "indent": 0,
+                            "parameters": [
+                                "Coreto_QuestVN",
+                                "FinishVisualNovel",
+                                "FinishVisualNovel",
+                                {}
+                            ]
+                        },
+                        {
+                            "code": 115,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 0,
+                            "indent": 0,
+                            "parameters": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "VN - Casa Forjaprata: segundo pesadelo e despertar",
+            "note": "",
+            "x": 9,
+            "y": 6,
+            "pages": [
+                {
+                    "conditions": {
+                        "actorId": 1,
+                        "actorValid": false,
+                        "itemId": 1,
+                        "itemValid": false,
+                        "selfSwitchCh": "A",
+                        "selfSwitchValid": false,
+                        "switch1Id": 1,
+                        "switch1Valid": false,
+                        "switch2Id": 1,
+                        "switch2Valid": false,
+                        "variableId": 1,
+                        "variableValid": false,
+                        "variableValue": 0
+                    },
+                    "image": {
+                        "tileId": 0,
+                        "characterName": "",
+                        "direction": 2,
+                        "pattern": 0,
+                        "characterIndex": 0
+                    },
+                    "moveType": 0,
+                    "moveRoute": {
+                        "list": [
+                            {
+                                "code": 0,
+                                "parameters": []
+                            }
+                        ],
+                        "repeat": true,
+                        "skippable": false,
+                        "wait": false
+                    },
+                    "moveSpeed": 3,
+                    "moveFrequency": 3,
+                    "walkAnime": true,
+                    "stepAnime": false,
+                    "directionFix": false,
+                    "through": true,
+                    "priorityType": 0,
+                    "trigger": 0,
+                    "list": [
+                        {
+                            "code": 357,
+                            "indent": 0,
+                            "parameters": [
+                                "Coreto_QuestVN",
+                                "AssertVisualNovelSession",
+                                "AssertVisualNovelSession",
+                                {
+                                    "questKey": "fim-de-jogo",
+                                    "entryKey": "PESADELO_DAMBUR"
+                                }
+                            ]
+                        },
+                        {
+                            "code": 357,
+                            "indent": 0,
+                            "parameters": [
+                                "Coreto_QuestCore",
+                                "AssertQuestState",
+                                "AssertQuestState",
+                                {
+                                    "questKey": "fim-de-jogo",
+                                    "expectedState": "5"
+                                }
+                            ]
+                        },
+                        {
+                            "code": 357,
+                            "indent": 0,
+                            "parameters": [
+                                "VisuMZ_2_VNPictureBusts",
+                                "Basic_EnterBust",
+                                "BASIC: Enter Bust",
+                                {
+                                    "PictureID:eval": "1",
+                                    "PictureName:str": "Portraits/Principal/Mélia_alerta",
+                                    "Origin:str": "Bust",
+                                    "Position:num": "5",
+                                    "StartOffsetX:eval": "-200",
+                                    "StartOffsetY:eval": "+0",
+                                    "EasingType:str": "OutSine",
+                                    "HorzMirror:str": "Auto",
+                                    "Duration:eval": "20"
+                                }
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Picture ID = 1"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Picture File = Portraits/Principal/Mélia_alerta"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Origin = Bust"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Screen Position = 5"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Start Offset X = -200"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Start Offset Y = +0"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Entrance Easing = OutSine"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Horizontal Mirror = Auto"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Duration = 20"
+                            ]
+                        },
+                        {
+                            "code": 121,
+                            "indent": 0,
+                            "parameters": [
+                                43,
+                                43,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 357,
+                            "indent": 0,
+                            "parameters": [
+                                "VisuMZ_4_GabWindow",
+                                "GabTextOnly",
+                                "Gab: Text Only",
+                                {
+                                    "Text:json": "\"Meu filho, estamos ficando sem tempo. Dambur... impeça-o!\"",
+                                    "ForceGab:eval": "false",
+                                    "Override:struct": "{\"EventID:num\":\"2\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                                }
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Text = Meu filho, estamos ficando sem tempo. Dambur... impeça-o!"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Force Gab? = false"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Optional Settings = {\"EventID:num\":\"2\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                            ]
+                        },
+                        {
+                            "code": 357,
+                            "indent": 0,
+                            "parameters": [
+                                "VisuMZ_2_VNPictureBusts",
+                                "Basic_ExitBusts",
+                                "BASIC: Exit Bust(s)",
+                                {
                                     "PictureID:arrayeval": "[\"1\"]",
                                     "EndOffsetX:eval": "-200",
                                     "EndOffsetY:eval": "+0",
@@ -2286,17 +2481,500 @@
                             ]
                         },
                         {
-                            "code": 235,
+                            "code": 357,
                             "indent": 0,
                             "parameters": [
-                                1
+                                "VisuMZ_2_VNPictureBusts",
+                                "Basic_EnterBust",
+                                "BASIC: Enter Bust",
+                                {
+                                    "PictureID:eval": "1",
+                                    "PictureName:str": "Portraits/Principal/Thorin_assustado",
+                                    "Origin:str": "Bust",
+                                    "Position:num": "1",
+                                    "StartOffsetX:eval": "-200",
+                                    "StartOffsetY:eval": "+0",
+                                    "EasingType:str": "OutSine",
+                                    "HorzMirror:str": "Auto-Reverse",
+                                    "Duration:eval": "20"
+                                }
                             ]
                         },
                         {
-                            "code": 235,
+                            "code": 657,
                             "indent": 0,
                             "parameters": [
-                                2
+                                "Picture ID = 1"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Picture File = Portraits/Principal/Thorin_assustado"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Origin = Bust"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Screen Position = 1"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Start Offset X = -200"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Start Offset Y = +0"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Entrance Easing = OutSine"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Horizontal Mirror = Auto-Reverse"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Duration = 20"
+                            ]
+                        },
+                        {
+                            "code": 121,
+                            "indent": 0,
+                            "parameters": [
+                                43,
+                                43,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 357,
+                            "indent": 0,
+                            "parameters": [
+                                "VisuMZ_4_GabWindow",
+                                "GabTextOnly",
+                                "Gab: Text Only",
+                                {
+                                    "Text:json": "\"Eu ainda não entendo o que isso tudo significa... por que você foi embora, mamãe?\"",
+                                    "ForceGab:eval": "false",
+                                    "Override:struct": "{\"EventID:num\":\"2\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                                }
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Text = Eu ainda não entendo o que isso tudo significa... por que você foi embora, mamãe?"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Force Gab? = false"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Optional Settings = {\"EventID:num\":\"2\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                            ]
+                        },
+                        {
+                            "code": 357,
+                            "indent": 0,
+                            "parameters": [
+                                "VisuMZ_2_VNPictureBusts",
+                                "Basic_EnterBust",
+                                "BASIC: Enter Bust",
+                                {
+                                    "PictureID:eval": "2",
+                                    "PictureName:str": "Portraits/Principal/Saparo",
+                                    "Origin:str": "Bust",
+                                    "Position:num": "9",
+                                    "StartOffsetX:eval": "-200",
+                                    "StartOffsetY:eval": "+0",
+                                    "EasingType:str": "OutSine",
+                                    "HorzMirror:str": "Auto-Reverse",
+                                    "Duration:eval": "20"
+                                }
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Picture ID = 2"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Picture File = Portraits/Principal/Saparo"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Origin = Bust"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Screen Position = 9"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Start Offset X = -200"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Start Offset Y = +0"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Entrance Easing = OutSine"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Horizontal Mirror = Auto-Reverse"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Duration = 20"
+                            ]
+                        },
+                        {
+                            "code": 121,
+                            "indent": 0,
+                            "parameters": [
+                                44,
+                                44,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 357,
+                            "indent": 0,
+                            "parameters": [
+                                "VisuMZ_4_GabWindow",
+                                "GabTextOnly",
+                                "Gab: Text Only",
+                                {
+                                    "Text:json": "\"Dormiu com as mulas-tatu?! Acordou com o coice! HAHA!\"",
+                                    "ForceGab:eval": "false",
+                                    "Override:struct": "{\"EventID:num\":\"2\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                                }
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Text = Dormiu com as mulas-tatu?! Acordou com o coice! HAHA!"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Force Gab? = false"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Optional Settings = {\"EventID:num\":\"2\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                            ]
+                        },
+                        {
+                            "code": 357,
+                            "indent": 0,
+                            "parameters": [
+                                "VisuMZ_2_VNPictureBusts",
+                                "Basic_EnterBust",
+                                "BASIC: Enter Bust",
+                                {
+                                    "PictureID:eval": "1",
+                                    "PictureName:str": "Portraits/Principal/Thorin",
+                                    "Origin:str": "Bust",
+                                    "Position:num": "1",
+                                    "StartOffsetX:eval": "-200",
+                                    "StartOffsetY:eval": "+0",
+                                    "EasingType:str": "OutSine",
+                                    "HorzMirror:str": "Auto-Reverse",
+                                    "Duration:eval": "20"
+                                }
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Picture ID = 1"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Picture File = Portraits/Principal/Thorin"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Origin = Bust"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Screen Position = 1"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Start Offset X = -200"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Start Offset Y = +0"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Entrance Easing = OutSine"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Horizontal Mirror = Auto-Reverse"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Duration = 20"
+                            ]
+                        },
+                        {
+                            "code": 121,
+                            "indent": 0,
+                            "parameters": [
+                                43,
+                                43,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 357,
+                            "indent": 0,
+                            "parameters": [
+                                "VisuMZ_4_GabWindow",
+                                "GabTextOnly",
+                                "Gab: Text Only",
+                                {
+                                    "Text:json": "\"Eu tive uma noite ruim... mas quer saber? Hoje ninguém vai estragar o meu dia, nem você nem o meu pai! Partiu treinar, a final do campeonato está chegando e eu não tenho tempo para um trabalho idiota como uma expedição. \"",
+                                    "ForceGab:eval": "false",
+                                    "Override:struct": "{\"EventID:num\":\"2\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                                }
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Text = Eu tive uma noite ruim... mas quer saber? Hoje ninguém vai estragar o meu dia, nem você nem o meu pai! Partiu treinar, a final do campeonato está chegando e eu não tenho tempo para um trabalho idiota como uma expedição. "
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Force Gab? = false"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Optional Settings = {\"EventID:num\":\"2\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                            ]
+                        },
+                        {
+                            "code": 357,
+                            "indent": 0,
+                            "parameters": [
+                                "VisuMZ_4_GabWindow",
+                                "WaitForGab",
+                                "System: Wait For Gab Completion",
+                                {}
+                            ]
+                        },
+                        {
+                            "code": 357,
+                            "indent": 0,
+                            "parameters": [
+                                "VisuMZ_2_VNPictureBusts",
+                                "Basic_ExitBusts",
+                                "BASIC: Exit Bust(s)",
+                                {
+                                    "PictureID:arrayeval": "[\"1\",\"2\"]",
+                                    "EndOffsetX:eval": "+200",
+                                    "EndOffsetY:eval": "-0",
+                                    "EasingType:str": "InSine",
+                                    "FlipDirection:str": "None",
+                                    "Duration:eval": "20",
+                                    "AutoErase:eval": "true"
+                                }
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Picture ID(s) = [\"1\",\"2\"]"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "End Offset X = +200"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "End Offset Y = -0"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Exit Easing = InSine"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Flip Direction = None"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Duration = 20"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 0,
+                            "parameters": [
+                                "Auto-Erase? = true"
+                            ]
+                        },
+                        {
+                            "code": 221,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 357,
+                            "indent": 0,
+                            "parameters": [
+                                "Coreto_QuestCore",
+                                "QuestTransition",
+                                "QuestTransition",
+                                {
+                                    "questKey": "fim-de-jogo",
+                                    "transitionId": "COMPLETE_VN"
+                                }
+                            ]
+                        },
+                        {
+                            "code": 355,
+                            "indent": 0,
+                            "parameters": [
+                                "const s = globalThis.Coreto.QuestVN.assertSession(\"fim-de-jogo\", \"PESADELO_DAMBUR\");"
+                            ]
+                        },
+                        {
+                            "code": 655,
+                            "indent": 0,
+                            "parameters": [
+                                "if (s.origin.mapId !== 45 || s.origin.eventId !== 11) throw new Error(\"Coreto QuestVN: unexpected origin for Map045 E11\");"
+                            ]
+                        },
+                        {
+                            "code": 655,
+                            "indent": 0,
+                            "parameters": [
+                                "$gameSelfSwitches.setValue([s.origin.mapId, s.origin.eventId, \"C\"], true);"
                             ]
                         },
                         {
@@ -2328,7 +3006,7 @@
     "note": "<CoretoMapType:VN>",
     "parallaxLoopX": false,
     "parallaxLoopY": false,
-    "parallaxName": "",
+    "parallaxName": "VN045_CasaForjaprta_BG",
     "parallaxShow": true,
     "parallaxSx": 0,
     "parallaxSy": 0,

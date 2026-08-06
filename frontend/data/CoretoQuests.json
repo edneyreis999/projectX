@@ -124,6 +124,205 @@
                     }
                 }
             }
+        },
+        "fim-de-jogo": {
+            "stageVariableId": 27,
+            "initialState": 0,
+            "terminalStates": [
+                90
+            ],
+            "pkd": {
+                "questId": "fimDeJogo",
+                "objectives": [
+                    {
+                        "id": 1,
+                        "knownFrom": 1,
+                        "completedAt": 2
+                    },
+                    {
+                        "id": 2,
+                        "knownFrom": 2,
+                        "completedAt": 3
+                    },
+                    {
+                        "id": 3,
+                        "knownFrom": 3,
+                        "completedAt": 4
+                    },
+                    {
+                        "id": 4,
+                        "knownFrom": 4,
+                        "completedAt": 90
+                    }
+                ]
+            },
+            "transitions": {
+                "START": {
+                    "from": [
+                        0
+                    ],
+                    "to": 1,
+                    "requirements": [],
+                    "effects": []
+                },
+                "CONFRONT_TORDAN": {
+                    "from": [
+                        1
+                    ],
+                    "to": 2,
+                    "requirements": [],
+                    "effects": []
+                },
+                "COLLECT_TROPHY": {
+                    "from": [
+                        2
+                    ],
+                    "to": 3,
+                    "requirements": [],
+                    "effects": []
+                },
+                "FACE_TORDAN_DECISION": {
+                    "from": [
+                        3
+                    ],
+                    "to": 4,
+                    "requirements": [],
+                    "effects": []
+                },
+                "GO_TO_SLEEP": {
+                    "from": [
+                        4
+                    ],
+                    "to": 5,
+                    "requirements": [],
+                    "effects": []
+                },
+                "COMPLETE_VN": {
+                    "from": [
+                        5
+                    ],
+                    "to": 6,
+                    "requirements": [],
+                    "effects": []
+                },
+                "WAKE_AFTER_NIGHTMARE": {
+                    "from": [
+                        6
+                    ],
+                    "to": 90,
+                    "requirements": [],
+                    "effects": [],
+                    "terminal": true
+                }
+            },
+            "extensions": {
+                "questVN": {
+                    "mapId": 49,
+                    "spawn": {
+                        "x": 8,
+                        "y": 6,
+                        "direction": 2,
+                        "fadeType": 0,
+                        "audioPolicy": "restore-origin"
+                    },
+                    "entries": {
+                        "PESADELO_DAMBUR": {
+                            "eventId": 2,
+                            "allowedStates": [
+                                5
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "hora-de-crescer": {
+            "stageVariableId": 32,
+            "initialState": 0,
+            "terminalStates": [
+                6
+            ],
+            "pkd": {
+                "questId": "horaDeCrescer",
+                "objectives": [
+                    {
+                        "id": 1,
+                        "knownFrom": 1,
+                        "completedAt": 2
+                    },
+                    {
+                        "id": 2,
+                        "knownFrom": 2,
+                        "completedAt": 3
+                    },
+                    {
+                        "id": 3,
+                        "knownFrom": 3,
+                        "completedAt": 4
+                    },
+                    {
+                        "id": 4,
+                        "knownFrom": 4,
+                        "completedAt": 5
+                    },
+                    {
+                        "id": 5,
+                        "knownFrom": 5,
+                        "completedAt": 6
+                    }
+                ]
+            },
+            "transitions": {
+                "START": {
+                    "from": [
+                        0
+                    ],
+                    "to": 1,
+                    "requirements": [],
+                    "effects": []
+                },
+                "MEET_GUARDS": {
+                    "from": [
+                        1
+                    ],
+                    "to": 2,
+                    "requirements": [],
+                    "effects": []
+                },
+                "CHOOSE_ARMOR_STOP": {
+                    "from": [
+                        2
+                    ],
+                    "to": 3,
+                    "requirements": [],
+                    "effects": []
+                },
+                "RECEIVE_ARMOR": {
+                    "from": [
+                        3
+                    ],
+                    "to": 4,
+                    "requirements": [],
+                    "effects": []
+                },
+                "EQUIP_ARMOR": {
+                    "from": [
+                        4
+                    ],
+                    "to": 5,
+                    "requirements": [],
+                    "effects": []
+                },
+                "FIND_BALASTRUS": {
+                    "from": [
+                        5
+                    ],
+                    "to": 6,
+                    "requirements": [],
+                    "effects": [],
+                    "terminal": true
+                }
+            }
         }
     }
 }

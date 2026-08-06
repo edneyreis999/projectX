@@ -1,0 +1,27 @@
+validation_finding:
+  schema_version: 1
+  finding_id: "validation-finding-v1:e5d122505b9ab2363550688a19ff3a1b7d40fb06f4cd33df234e1813afdc8a4b"
+  cycle_id: "validation-cycle-v1:b4b703379d8b08f1d6bb6f5fc4fa6ac1a70e7f139ffa2c919e2029835ab61d44"
+  task_ref: "planos/006-busts-position/task-1.1.md"
+  validator_ref: "planos/006-busts-position/builds/fase1/validate-map049-busts.mjs"
+  route: "deterministic"
+  acceptance_criterion_refs:
+    - "AC-MAP049-1"
+    - "AC-MAP049-2"
+    - "AC-MAP049-3"
+    - "AC-MAP049-4"
+    - "AC-MAP049-5"
+    - "AC-MAP049-6"
+  result: "passed"
+  classification: null
+  severity: null
+  observed: "O validator v1.2.0 aprovou os seis ACs no hash atual 252965e4, preservando e separando as melhorias manuais user-owned de monstro, Fadeout Screen, parallax e serializacao."
+  expected: "A feature de bustos deve permanecer valida no target atual sem reverter nem atribuir as melhorias manuais do usuario."
+  evidence_refs:
+    - "planos/006-busts-position/builds/fase1/map049-user-baseline-validation-primary.json"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/post-correction-human-validation-v1.yaml"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/concurrent-user-changes-v1.yaml"
+  failure_signature: null
+  allowed_correction_scope: []
+  retry_consumed: false
+  status: "passed"

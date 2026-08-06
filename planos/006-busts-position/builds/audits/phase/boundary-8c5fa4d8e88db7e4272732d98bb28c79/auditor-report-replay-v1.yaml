@@ -1,0 +1,129 @@
+execution_audit_report:
+  schema_version: "1"
+  audit_id: "execution-audit-v1:e50ece585e21bb9e2b00eab096970260bf302b12b3e0c85d2525df03cc959db2"
+  run_id: "loki-run-v2:6572a8ac60d0d33347cab60118c6f6beca5d0e32443250314b0797acfd21f4a4"
+  execution_id: "loki-execution-v2:961d50011999322d0e323dfb5889f3848fae8a22222ae568a345ff969dde910f"
+  auditor_identity: "map049-facing-phase-auditor"
+  agent_run_id: "agent-run-v1:abda11c6526e680f63688994a3298537675e88cc1d3c7a4d1ba63fcedffcb11d"
+  handoff_id: "handoff-v1:a5a91ae95445443f39c276cd668f43319f16f045195d215ae59db42fff5f30d8"
+  identity_derivation:
+    canonicalization: "canonical UTF-8 JSON, lexicographically sorted object keys, preserved array order, no insignificant whitespace or trailing newline"
+    agent_run_fields: ["schema_version", "run_id", "execution_id", "audit_id", "agent_identity", "iteration", "coverage_digest", "preflight_ref"]
+    handoff_fields: ["schema_version", "agent_run_id", "audit_id", "report_ref", "status", "target_digest", "coverage_digest"]
+  boundary_type: "phase"
+  boundary_ref: "planos/006-busts-position/interaction/fase1"
+  iteration: 1
+  replay: true
+  predecessor_audit_ref: "planos/006-busts-position/builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/checkpoint-v1-0.yaml"
+  replay_cause: "The authorized post-Playtest correction changed the unique Melia Basic_EnterBust mirror payload and its code 657 continuation from Auto to Auto-Reverse, changing Map049 from sha256:b238e0a86cf12926a265b82b234f47bd3fa41983a4c745c849690ec6bc0bcfc3 to sha256:563fb83fb89db5fe2939077f82f00f2e6115a02a449f84e317422f9e83212764."
+  policy_digest: "sha256:e3aeea217ca7881865de40d29e0e28e95bc32f4255e2488597801a8909e3bd78"
+  coverage_digest: "sha256:7ef258bbb57dc282acf688a9b42fc9db11dff889ca2992df61213b94bcb4fd0c"
+  membership_refs:
+    - "planos/006-busts-position/task-1.1.md"
+  covered_handoff_refs:
+    - "planos/006-busts-position/interaction/fase1/task-1.1/completion-record.yaml"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/evidence/evidence-manifest.xml"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/facing-correction-completion-record.yaml"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/facing-correction-evidence/evidence-manifest.xml"
+  covered_target_digests:
+    - "frontend/data/Map049.json=sha256:563fb83fb89db5fe2939077f82f00f2e6115a02a449f84e317422f9e83212764"
+  primary_validation_refs:
+    - "planos/006-busts-position/builds/fase1/map049-facing-correction-validation-primary.json"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/validation-cycles/cycle-2-finding.yaml"
+  final_validator_refs:
+    - "planos/006-busts-position/builds/fase1/map049-facing-correction-validation-final.json"
+  writer_identities:
+    - identity: "map049-writer"
+      agent_run_id: "agent-run-v1:060c4a9d8560638b38a93c3cd79eae47ce98796e4f59ad2fc2026d883c2f3fc7"
+      handoff_id: "handoff-v1:838dee15b8feb087cab347e3febb6b1604beb1e243b749784f35792da20eea6d"
+    - identity: "map049-facing-writer"
+      agent_run_id: "agent-run-v1:77494706e8dc804a7bd470bc2c7772931dd1300c9a52eb713cefea0cf3df90f3"
+      handoff_id: "handoff-v1:228efa5f0affe2cff567eb9ea803150ae6ed736537851be6aa1d20a58d859a99"
+  independence_check:
+    auditor_differs_from_all_writers: true
+    agent_run_id_differs_from_all_writers: true
+    handoff_id_differs_from_all_writers: true
+    auditor_differs_from_primary_validator: true
+    primary_validation_owner: "deterministic:validate-map049-busts"
+    independent_static_scan_performed: true
+  checks:
+    - id: "preflight-source-integrity"
+      result: "passed"
+      evidence: "All 13 declared preflight source SHA-256 values matched before reading and again immediately before report publication; no source drift occurred."
+    - id: "coverage-and-audit-identity"
+      result: "passed"
+      evidence: "Canonical recomputation over the complete five-key coverage produced sha256:7ef258bbb57dc282acf688a9b42fc9db11dff889ca2992df61213b94bcb4fd0c; iteration-1 audit identity recomputed to execution-audit-v1:e50ece585e21bb9e2b00eab096970260bf302b12b3e0c85d2525df03cc959db2 and the boundary path recomputed to boundary-8c5fa4d8e88db7e4272732d98bb28c79."
+    - id: "complete-replay-lifecycle"
+      result: "passed"
+      evidence: "The replay covers task-1.1, both Writer completion/evidence lineages, the corrected target, current primary validation plus cycle 2, current final validation, all six ACs and the human feedback. Checkpoint-v1-0 is retained only as the invalidated predecessor because it covers obsolete target digest b238e0a8; none of its prior approval was reused."
+    - id: "writer-lineage-integrity"
+      result: "passed"
+      evidence: "Original Writer manifest resolves map049-writer agent-run 060c4a9d... and handoff 838dee15...; correction manifest resolves map049-facing-writer agent-run 77494706... and handoff 228efa5f.... Both sanitized snapshot byte hashes equal their declared payload checksums (5a81e346... and d40d85b1...), and completion hashes/target lineage correlate."
+    - id: "target-hash-structure-and-restricted-diff"
+      result: "passed"
+      evidence: "Current Map049 SHA-256 is 563fb83f...12764; JSON parses as Map 49 Event 1 with one page and 105 commands. Independent comparison with Git HEAD proves every semantic field outside Event 1/Page 1 list equal and all 30 non-bust commands exactly equal in order and parameters. UTF-8 without BOM, CRLF-only, trailing CRLF and the pre-existing outside-list text style are preserved; git diff --check passes and numstat is 107 additions/94 deletions for the sole production target."
+    - id: "authorized-facing-correction"
+      result: "passed"
+      evidence: "Reconstructing the pre-correction bytes by reverting only list[2].parameters[3].HorzMirror:str and list[10].parameters[0] yields exact SHA-256 b238e0a8...bcfc3. The current values are Auto-Reverse and Horizontal Mirror = Auto-Reverse; no other current-versus-pre-correction semantic delta exists."
+    - id: "bust-lifecycle-and-vn-boundaries"
+      result: "passed"
+      evidence: "Independent state simulation observes Melia+Thorin at CE16 index 26, no active bust at SF_Monster_3 index 35, Saparo+Thorin at CE16 index 69, Rheed+Thorin_bobo at final text index 91, and no active bust at FinishVisualNovel index 102. There are five entries, three exits, one GraphicChange and synchronized code 657 editor continuations."
+    - id: "plugin-mirror-semantics"
+      result: "passed"
+      evidence: "The generated plugins.js envelope is editor-structural with 70 entries; structured VM extraction places active VisuMZ_2_VNPictureBusts at order 24 and gives InvertedScale [0,1,2,3,4,5]. The local plugin header declares Auto-Reverse, while HorzMirrorCheck returns InvertedScale membership for AUTO and its negation for the Auto-Reverse branch. Therefore Position 9 with Auto-Reverse resolves to effective horizontal mirror true. Local rmmz_objects.js command357 independently confirms params[1]/params[3] dispatch through PluginManager.callCommand."
+    - id: "assets"
+      result: "passed"
+      evidence: "Exact-case PNG resolution succeeds for Melia_desespero, Thorin_confusao, Saparo_pistola, Thorin_bobo, Reed final and SF_Monster_3 using the exact Unicode names parsed from Map049; every introduced PictureName is non-empty. Asset presence is static evidence only."
+    - id: "acceptance-primary-final"
+      result: "passed"
+      evidence: "AC-MAP049-1 through AC-MAP049-6 are required and independently demonstrated by structure, baseline comparison, lifecycle simulation, asset resolution and plugin/engine semantics. Primary and final evidence both target 563fb83f...12764, report all six ACs passed, and differ only in execution timestamp. Cycle 2 is a valid immutable pass with null classification/severity, no correction scope and retry_consumed false."
+    - id: "validator-non-tautology"
+      result: "passed"
+      evidence: "Validator v1.1.0 parses the target, enforces independent outside-list/non-bust canonical baselines, exact payload counts/order/continuations, active-picture lifecycle, exact asset paths, generated plugins.js envelope/config, local plugin and engine semantics, and restricted Git diff. It does not pass merely by rediscovering the corrected mirror value. Node syntax check also passed; immutable primary/final results prevent an auditor-side rerun without unauthorized evidence writes."
+    - id: "write-boundary"
+      result: "passed"
+      evidence: "The only production target attributed by both handoffs is frontend/data/Map049.json. The original and correction mutator/completion artifacts are within their respective scoped envelopes. This Auditor changed no production, task, state, checkpoint, metric, evidence manifest, result, dashboard or consistency artifact."
+    - id: "human-gate-preserved"
+      result: "passed"
+      evidence: "The failed prior Playtest authorized only the Melia mirror correction and explicitly requires a new post-correction Playtest. Task, both Writer lineages, primary/final evidence and this audit keep rendered facing, composition, layering, timing, entry motion, readability and cleanup pending; no static result is promoted to human validation."
+  finding_refs: []
+  correction_refs:
+    - "planos/006-busts-position/interaction/fase1/task-1.1/human-validation-feedback-v1.yaml"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/facing-correction-completion-record.yaml"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/facing-correction-evidence/evidence-manifest.xml"
+  evidence_refs:
+    - "planos/006-busts-position/preflights/run-ced6dab3cfa7bd32c45fd584261bff3a/map049-facing-phase-auditor/preflight-v1.md"
+    - "planos/006-busts-position/tasks.md"
+    - "planos/006-busts-position/task-1.1.md"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/completion-record.yaml"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/evidence/evidence-manifest.xml"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/evidence/sanitized-snapshot.json"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/facing-correction-completion-record.yaml"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/facing-correction-evidence/evidence-manifest.xml"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/facing-correction-evidence/sanitized-snapshot.json"
+    - "planos/006-busts-position/builds/fase1/map049-facing-correction-validation-primary.json"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/validation-cycles/cycle-2-finding.yaml"
+    - "planos/006-busts-position/builds/fase1/map049-facing-correction-validation-final.json"
+    - "planos/006-busts-position/interaction/fase1/task-1.1/human-validation-feedback-v1.yaml"
+    - "planos/006-busts-position/builds/fase1/validate-map049-busts.mjs"
+    - "frontend/data/Map049.json"
+    - "frontend/js/plugins.js"
+    - "frontend/js/plugins/VisuMZ_2_VNPictureBusts.js"
+    - "frontend/js/rmmz_objects.js"
+    - "frontend/img/pictures/Portraits/Principal"
+  domain_context_preflight:
+    status: "ready-with-gaps"
+    durable_context_refs: []
+    current_source_refs:
+      - "planos/006-busts-position/preflights/run-ced6dab3cfa7bd32c45fd584261bff3a/map049-facing-phase-auditor/preflight-v1.md"
+      - "planos/006-busts-position/task-1.1.md"
+      - "frontend/data/Map049.json"
+    gap: "docs/loki-init/runtime-qa is absent; current hash-verified task, target, engine, plugin, validator and evidence sources are a trustworthy substitute, so the gap is non-material."
+  status: "approved"
+  limitations:
+    - "This is static approval of the complete corrected phase boundary; it does not validate rendered facing, composition, mirroring, layering, timing, entry/exit motion, readability or cleanup."
+    - "The immutable primary and final validator evidence was reviewed but not rerun by this Auditor because the validator requires publication of a new evidence file outside this Auditor's sole allowed write. Independent read-only checks covered its material assertions."
+    - "The shared worktree contains unrelated user changes; their provenance is outside this boundary and they were neither modified nor attributed here."
+    - "Both Writer evidence manifests explicitly lack a complete transcript/tool-I/O export and exact token usage; their available typed lineages, completion records and sanitized snapshot integrity are sufficient for this boundary."
+    - "tasks.md still projects checkpoint-v1-0 during this in-progress replay. That predecessor is invalidated by the corrected target digest and must not remain the active checkpoint after the orchestrator publishes iteration 1."
+  next_action: "Orchestrator must publish checkpoint-v1-1 with this full replay coverage, predecessor checkpoint-v1-0, replay true and the authorized facing-correction cause; then replace the active state projection with iteration 1 and request the new post-correction human Playtest. Runtime status must remain pending-human-validation until explicit Playtest evidence confirms Melia faces Thorin without presentation regression."

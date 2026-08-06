@@ -1,0 +1,233 @@
+{
+  "schema_version": 1,
+  "validator": "validate-map049-busts.mjs",
+  "validator_version": "1.0.0",
+  "route": "deterministic",
+  "task_ref": "planos/006-busts-position/task-1.1.md",
+  "target_ref": "frontend/data/Map049.json",
+  "target_digest": "sha256:b238e0a86cf12926a265b82b234f47bd3fa41983a4c745c849690ec6bc0bcfc3",
+  "generated_at_utc": "2026-08-04T23:55:38.866Z",
+  "result": "passed",
+  "acceptance_criteria": [
+    {
+      "id": "AC-MAP049-1",
+      "status": "passed"
+    },
+    {
+      "id": "AC-MAP049-2",
+      "status": "passed"
+    },
+    {
+      "id": "AC-MAP049-3",
+      "status": "passed"
+    },
+    {
+      "id": "AC-MAP049-4",
+      "status": "passed"
+    },
+    {
+      "id": "AC-MAP049-5",
+      "status": "passed"
+    }
+  ],
+  "checks": [
+    {
+      "id": "json-encoding-style",
+      "status": "passed",
+      "observed": "UTF-8 sem BOM, CRLF exclusivo e trailing newline"
+    },
+    {
+      "id": "outside-list-text-style",
+      "status": "passed",
+      "observed": "anomalia de indentacao preexistente do event.name foi preservada"
+    },
+    {
+      "id": "map-target",
+      "status": "passed",
+      "observed": "Map049 Event 1 possui exatamente uma pagina"
+    },
+    {
+      "id": "command-count",
+      "status": "passed",
+      "observed": "command count=105, esperado=105"
+    },
+    {
+      "id": "outside-list-semantic-hash",
+      "status": "passed",
+      "observed": "sha256:f0e5966aef00d860bdc27947847f4584c4804ac4c768f97e17394a77ebdab8c4"
+    },
+    {
+      "id": "non-bust-semantic-hash",
+      "status": "passed",
+      "observed": "sha256:10a5f854ad896ac070fd6c61a8bc32938bf258484c21dd870474791440db7377"
+    },
+    {
+      "id": "bust-block-count",
+      "status": "passed",
+      "observed": "bust blocks=9, esperado=9"
+    },
+    {
+      "id": "enter-count",
+      "status": "passed",
+      "observed": "enter count=5, esperado=5"
+    },
+    {
+      "id": "exit-count",
+      "status": "passed",
+      "observed": "exit count=3, esperado=3"
+    },
+    {
+      "id": "graphic-change-count",
+      "status": "passed",
+      "observed": "graphic count=1, esperado=1"
+    },
+    {
+      "id": "enter-editor-lines-2",
+      "status": "passed",
+      "observed": "[\"Picture ID = 1\",\"Picture File = Portraits/Principal/Mélia_desespero\",\"Origin = Bust\",\"Screen Position = 9\",\"Start Offset X = -200\",\"Start Offset Y = +0\",\"Entrance Easing = OutSine\",\"Horizontal Mirror = Auto\",\"Duration = 20\"]"
+    },
+    {
+      "id": "enter-editor-lines-16",
+      "status": "passed",
+      "observed": "[\"Picture ID = 2\",\"Picture File = Portraits/Principal/Thorin_confusão\",\"Origin = Bust\",\"Screen Position = 1\",\"Start Offset X = -200\",\"Start Offset Y = +0\",\"Entrance Easing = OutSine\",\"Horizontal Mirror = Auto-Reverse\",\"Duration = 20\"]"
+    },
+    {
+      "id": "enter-editor-lines-45",
+      "status": "passed",
+      "observed": "[\"Picture ID = 1\",\"Picture File = Portraits/Principal/Sáparo_pistola\",\"Origin = Bust\",\"Screen Position = 9\",\"Start Offset X = -200\",\"Start Offset Y = +0\",\"Entrance Easing = OutSine\",\"Horizontal Mirror = Auto-Reverse\",\"Duration = 20\"]"
+    },
+    {
+      "id": "enter-editor-lines-59",
+      "status": "passed",
+      "observed": "[\"Picture ID = 2\",\"Picture File = Portraits/Principal/Thorin_confusão\",\"Origin = Bust\",\"Screen Position = 1\",\"Start Offset X = -200\",\"Start Offset Y = +0\",\"Entrance Easing = OutSine\",\"Horizontal Mirror = Auto-Reverse\",\"Duration = 20\"]"
+    },
+    {
+      "id": "enter-editor-lines-79",
+      "status": "passed",
+      "observed": "[\"Picture ID = 1\",\"Picture File = Portraits/Principal/Reed final\",\"Origin = Bust\",\"Screen Position = 9\",\"Start Offset X = -200\",\"Start Offset Y = +0\",\"Entrance Easing = OutSine\",\"Horizontal Mirror = Auto-Reverse\",\"Duration = 20\"]"
+    },
+    {
+      "id": "exit-editor-lines-27",
+      "status": "passed",
+      "observed": "[\"Picture ID(s) = [\\\"1\\\",\\\"2\\\"]\",\"End Offset X = -200\",\"End Offset Y = +0\",\"Exit Easing = InSine\",\"Flip Direction = None\",\"Duration = 20\",\"Auto-Erase? = true\"]"
+    },
+    {
+      "id": "exit-editor-lines-71",
+      "status": "passed",
+      "observed": "[\"Picture ID(s) = [\\\"1\\\"]\",\"End Offset X = +200\",\"End Offset Y = -0\",\"Exit Easing = InSine\",\"Flip Direction = None\",\"Duration = 20\",\"Auto-Erase? = true\"]"
+    },
+    {
+      "id": "exit-editor-lines-92",
+      "status": "passed",
+      "observed": "[\"Picture ID(s) = [\\\"1\\\",\\\"2\\\"]\",\"End Offset X = -200\",\"End Offset Y = +0\",\"Exit Easing = InSine\",\"Flip Direction = None\",\"Duration = 20\",\"Auto-Erase? = true\"]"
+    },
+    {
+      "id": "graphic-editor-lines",
+      "status": "passed",
+      "observed": "GraphicChange continuation count=0"
+    },
+    {
+      "id": "entry-payloads",
+      "status": "passed",
+      "observed": "[[\"1\",\"Portraits/Principal/Mélia_desespero\",\"9\"],[\"1\",\"Portraits/Principal/Reed final\",\"9\"],[\"1\",\"Portraits/Principal/Sáparo_pistola\",\"9\"],[\"2\",\"Portraits/Principal/Thorin_confusão\",\"1\"],[\"2\",\"Portraits/Principal/Thorin_confusão\",\"1\"]]"
+    },
+    {
+      "id": "thorin-graphic-change",
+      "status": "passed",
+      "observed": "{\"PictureID:eval\":\"2\",\"PictureName:str\":\"Portraits/Principal/Thorin_bobo\"}"
+    },
+    {
+      "id": "no-thorin-bobo-reentry",
+      "status": "passed",
+      "observed": "Thorin_bobo nao usa Basic_EnterBust"
+    },
+    {
+      "id": "exit-payload-order",
+      "status": "passed",
+      "observed": "[\"[\\\"1\\\",\\\"2\\\"]\",\"[\\\"1\\\"]\",\"[\\\"1\\\",\\\"2\\\"]\"]"
+    },
+    {
+      "id": "ce16-count",
+      "status": "passed",
+      "observed": "CE16 count=2"
+    },
+    {
+      "id": "lifecycle-order",
+      "status": "passed",
+      "observed": "{\"melia\":2,\"thorin\":[16,59],\"ce16\":[26,69],\"exits\":[27,71,92],\"monsterShow\":35,\"monsterErase\":43,\"saparo\":45,\"graphic\":70,\"rheed\":79,\"finalText\":91,\"finish\":102}"
+    },
+    {
+      "id": "graphic-active-70",
+      "status": "passed",
+      "observed": "Picture 2 ativo antes de GraphicChange"
+    },
+    {
+      "id": "ce16-active-busts",
+      "status": "passed",
+      "observed": "[{\"1\":\"Portraits/Principal/Mélia_desespero\",\"2\":\"Portraits/Principal/Thorin_confusão\"},{\"1\":\"Portraits/Principal/Sáparo_pistola\",\"2\":\"Portraits/Principal/Thorin_confusão\"}]"
+    },
+    {
+      "id": "monster-bust-cleanup",
+      "status": "passed",
+      "observed": "{}"
+    },
+    {
+      "id": "final-active-busts",
+      "status": "passed",
+      "observed": "{\"1\":\"Portraits/Principal/Reed final\",\"2\":\"Portraits/Principal/Thorin_bobo\"}"
+    },
+    {
+      "id": "finish-bust-cleanup",
+      "status": "passed",
+      "observed": "{}"
+    },
+    {
+      "id": "picture-names-non-empty",
+      "status": "passed",
+      "observed": "[\"Portraits/Principal/Mélia_desespero\",\"Portraits/Principal/Thorin_confusão\",\"Portraits/Principal/Sáparo_pistola\",\"Portraits/Principal/Thorin_confusão\",\"Portraits/Principal/Thorin_bobo\",\"Portraits/Principal/Reed final\"]"
+    },
+    {
+      "id": "bust-assets-exist",
+      "status": "passed",
+      "observed": "[{\"asset\":\"Portraits/Principal/Mélia_desespero\",\"exists_exact_png\":true},{\"asset\":\"Portraits/Principal/Thorin_confusão\",\"exists_exact_png\":true},{\"asset\":\"Portraits/Principal/Sáparo_pistola\",\"exists_exact_png\":true},{\"asset\":\"Portraits/Principal/Thorin_bobo\",\"exists_exact_png\":true},{\"asset\":\"Portraits/Principal/Reed final\",\"exists_exact_png\":true}]"
+    },
+    {
+      "id": "monster-asset-exists",
+      "status": "passed",
+      "observed": "frontend/img/pictures/SF_Monster_3.png"
+    },
+    {
+      "id": "vn-boundaries",
+      "status": "passed",
+      "observed": "{\"assertCount\":1,\"finishCount\":1,\"finish\":102}"
+    },
+    {
+      "id": "plugins-envelope",
+      "status": "passed",
+      "observed": "editor-structural: valid; plugin_objects=69"
+    },
+    {
+      "id": "plugin-active",
+      "status": "passed",
+      "observed": "{\"order\":24,\"status\":true}"
+    },
+    {
+      "id": "command357-engine-semantics",
+      "status": "passed",
+      "observed": "command357 encaminha params[1] e params[3] ao PluginManager"
+    },
+    {
+      "id": "git-diff-check",
+      "status": "passed",
+      "observed": "clean"
+    },
+    {
+      "id": "restricted-diff-size",
+      "status": "passed",
+      "observed": "{\"additions\":105,\"deletions\":92,\"file\":\"frontend/data/Map049.json\"}"
+    }
+  ],
+  "limitations": [
+    "Runtime visual composition, mirroring, layering, timing and readability remain pending human Playtest."
+  ]
+}

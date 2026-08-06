@@ -1,0 +1,21 @@
+human_validation_feedback:
+  schema_version: 1
+  run_id: "loki-run-v2:6572a8ac60d0d33347cab60118c6f6beca5d0e32443250314b0797acfd21f4a4"
+  execution_id: "loki-execution-v2:961d50011999322d0e323dfb5889f3848fae8a22222ae568a345ff969dde910f"
+  task_ref: "planos/006-busts-position/task-1.1.md"
+  surface: "frontend/data/Map049.json Event 1 Page 1, entrada Basic_EnterBust de Melia"
+  validation_result: "failed"
+  observed: "No Playtest, a mae de Thorin apareceu virada para o lado oposto ao interlocutor."
+  expected: "Melia permanece no lado direito e olha para Thorin, que esta a esquerda da tela."
+  evidence_basis:
+    - "Human observation of the rendered Map049 scene."
+    - "Human confirmation that Melia must face Thorin on the left."
+  authorized_correction_scope:
+    - "Alterar HorzMirror:str de Auto para Auto-Reverse somente na entrada de Portraits/Principal/Melia_desespero."
+    - "Atualizar a continuacao code 657 correspondente para Horizontal Mirror = Auto-Reverse."
+    - "Atualizar mutator, validator e artefatos gerenciados do run para preservar e comprovar a decisao."
+  forbidden_scope:
+    - "Outros bustos, posicoes, assets, offsets, easing, duracao, plugins, parametros ou eventos."
+  post_correction_gate: "Novo Playtest humano deve confirmar que Melia olha para Thorin sem regressao de composicao, entrada ou cleanup."
+  recorded_at: "2026-08-04"
+  status: "correction-authorized"

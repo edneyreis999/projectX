@@ -4,7 +4,7 @@
     <scope>project-docs</scope>
     <summary>Catálogo navegável da documentação duradoura de Daratrine - A Origem.</summary>
     <owner>catalogador</owner>
-    <updated_at>2026-07-31</updated_at>
+    <updated_at>2026-08-04</updated_at>
   </metadata>
   <documents>
     <document id="project-inventory" path="docs/project-inventory.md" type="project-context" priority="high">
@@ -25,6 +25,32 @@
       <sections>
         <section anchor="engine-e-estrutura-técnica-observadas" tokens="300" purpose="Resume a engine e a estrutura técnica observadas estaticamente." />
         <section anchor="navegação-por-domínio" tokens="360" purpose="Navega para os 15 inventários e seus gates técnicos pendentes." />
+      </sections>
+    </document>
+    <document id="architecture-exploration-dialogue-gabwindow" path="docs/architecture/exploration-dialogue-gabwindow.md" type="architecture-rule" priority="high">
+      <summary>Diretriz para falas de exploração com o VisuMZ_4_GabWindow: interações substituem a fila no ponto de entrada e podem ser repetidas; automáticos não preemptam; Gabs ancorados respeitam a altura do sprite, gap e estilo branco sem borda.</summary>
+      <use_when>Use ao criar, revisar ou validar falas de NPCs, interações ActionButton/PlayerTouch ou disparos Autorun/Parallel em mapas de exploração, inclusive EX_Coreto e Casa da Família Forjaprata.</use_when>
+      <not_covered>Não autoriza mudanças em batalhas, menus, conteúdo narrativo, engine, plugin de terceiros, parâmetros globais ou estilo de janelas fora de Window_Gab.</not_covered>
+      <keywords>
+        <keyword>arquitetura</keyword>
+        <keyword>diálogos de exploração</keyword>
+        <keyword>Gab Window</keyword>
+        <keyword>VisuMZ</keyword>
+        <keyword>prioridade de interação</keyword>
+        <keyword>Anti-Repeat</keyword>
+        <keyword>ActionButton</keyword>
+        <keyword>PlayerTouch</keyword>
+        <keyword>Autorun</keyword>
+        <keyword>Parallel</keyword>
+        <keyword>posição por sprite</keyword>
+        <keyword>EX_Coreto</keyword>
+        <keyword>Forjaprata</keyword>
+      </keywords>
+      <sections>
+        <section anchor="regra" tokens="110" purpose="Define quando usar Gab Window, texto sem rosto/nome e continuação imediata do evento." />
+        <section anchor="prioridade-e-repetição-em-interações" tokens="150" purpose="Define preempção apenas no início de cada interação ou ramo, bypass de Anti-Repeat e preservação das sequências internas; separa automáticos não forçados." />
+        <section anchor="posição-e-estilo-padrão" tokens="130" purpose="Define o posicionamento acima da altura real do sprite com gap configurável e o estilo branco sem outline isolado em Window_Gab." />
+        <section anchor="implementação-e-validação" tokens="160" purpose="Lista os limites de edição, validações estruturais, round-trip e cenários obrigatórios de Playtest." />
       </sections>
     </document>
 

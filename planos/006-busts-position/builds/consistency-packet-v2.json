@@ -1,0 +1,83 @@
+{
+  "implement_feature_consistency_packet": {
+    "schema_version": 2,
+    "run_id": "loki-run-v2:6572a8ac60d0d33347cab60118c6f6beca5d0e32443250314b0797acfd21f4a4",
+    "execution_id": "loki-execution-v2:961d50011999322d0e323dfb5889f3848fae8a22222ae568a345ff969dde910f",
+    "status": "completed",
+    "audit_configuration": {
+      "schema_version": 1,
+      "frequency": "phase",
+      "source": "default",
+      "policy_digest": "sha256:e3aeea217ca7881865de40d29e0e28e95bc32f4255e2488597801a8909e3bd78"
+    },
+    "state_digest": "sha256:30ba551423b0af025688bae0f7598915def45ca696626ef622ffeafc93ebe4e9",
+    "tasks_md_digest": "sha256:d9b72786919e97e9c4f7532dd1fd254d304a6d4cc905fbde2c718acd276c1c4e",
+    "result_ref": "planos/006-busts-position/builds/implement-feature-result-v3.json",
+    "result_digest": "sha256:2eefb59d9cf15cdea9a9a23228b9dafdcab0384f45cbab9ac9634c2a2b3cd4bf",
+    "dashboard_ref": "planos/006-busts-position/builds/feature-dashboard-v3.md",
+    "dashboard_digest": "sha256:73aea2df86000aa545f34d98c3759984db4a346d22a71e27100d189a75e9f844",
+    "metrics_ref": "planos/006-busts-position/builds/metrics/execution-metrics.json",
+    "metrics_digest": "sha256:750fa36355ae63412d1be4c97aaf77dae38dfdc8dac7d9e7415634ee4446f6ab",
+    "audit_checkpoint_refs": [
+      "planos/006-busts-position/builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/checkpoint-v1-3.yaml"
+    ],
+    "audit_checkpoint_digests": [
+      "sha256:bba04c6e91fc96f9ed639818d9a7c679255593ebd8ce1baceb5da12a10aa9dcc"
+    ],
+    "terminal_evidence_refs": [
+      "planos/006-busts-position/interaction/fase1/task-1.1/completion-record.yaml",
+      "planos/006-busts-position/interaction/fase1/task-1.1/evidence/evidence-manifest.xml",
+      "planos/006-busts-position/builds/fase1/map049-structural-validation-primary.json",
+      "planos/006-busts-position/interaction/fase1/task-1.1/validation-cycles/cycle-1-finding.yaml",
+      "planos/006-busts-position/builds/fase1/map049-structural-validation-final.json",
+      "planos/006-busts-position/builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/auditor-report-v1.yaml",
+      "planos/006-busts-position/builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/evidence/evidence-manifest.xml",
+      "planos/006-busts-position/interaction/fase1/task-1.1/human-validation-feedback-v1.yaml",
+      "planos/006-busts-position/interaction/fase1/task-1.1/facing-correction-completion-record.yaml",
+      "planos/006-busts-position/interaction/fase1/task-1.1/facing-correction-evidence/evidence-manifest.xml",
+      "planos/006-busts-position/builds/fase1/map049-facing-correction-validation-primary.json",
+      "planos/006-busts-position/interaction/fase1/task-1.1/validation-cycles/cycle-2-finding.yaml",
+      "planos/006-busts-position/builds/fase1/map049-facing-correction-validation-final.json",
+      "planos/006-busts-position/builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/auditor-report-replay-v1.yaml",
+      "planos/006-busts-position/builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/replay-evidence/evidence-manifest.xml",
+      "planos/006-busts-position/interaction/fase1/task-1.1/post-correction-human-validation-v1.yaml",
+      "planos/006-busts-position/interaction/fase1/task-1.1/concurrent-user-changes-v1.yaml",
+      "planos/006-busts-position/interaction/fase1/task-1.1/facing-correction-evidence-v2/evidence-manifest.xml",
+      "planos/006-busts-position/builds/fase1/map049-user-baseline-validation-primary.json",
+      "planos/006-busts-position/interaction/fase1/task-1.1/validation-cycles/cycle-3-finding.yaml",
+      "planos/006-busts-position/builds/fase1/map049-user-baseline-validation-final.json",
+      "planos/006-busts-position/builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/auditor-report-user-baseline-v1.yaml",
+      "planos/006-busts-position/builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/user-baseline-evidence/evidence-manifest.xml",
+      "planos/006-busts-position/builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/auditor-report-evidence-replay-v1.yaml",
+      "planos/006-busts-position/builds/audits/phase/boundary-8c5fa4d8e88db7e4272732d98bb28c79/evidence-replay-evidence/evidence-manifest.xml"
+    ],
+    "terminal_evidence_digests": [
+      "sha256:c3ced95ecc759c6378e0b4bcd7c7b31ebdf200c0cd4712ddab97f8a0dd9160e7",
+      "sha256:fbfdacf2ae949cb5f6396a7094f76a3eaa41c76e1816dbbf24b6e789e51f861f",
+      "sha256:8e46b58349864c8eb7ca70d6d5be40d04d37f0a4919eff27b19dd13152a1439c",
+      "sha256:499aa3bb0ac5ab6a1d7c52e7f6352d4c9a222cd573a9c35c707e379153f49d1b",
+      "sha256:b34dadc186380dd7db9e7d2e4916975fb7568c2aeedb9e7600a85fde9786d355",
+      "sha256:56b252ec93ff1ca4be8918836b7907fcc6b5782c7d19b95fecadf7a7b040e47f",
+      "sha256:71415728417f1945fe98273057e3b7119f7cac8e6e16fa72b0059003d3c347b6",
+      "sha256:d27e3bffe129f08437459195ca136ec4c88160fddc5e7e06c93e32d8d92817cb",
+      "sha256:f37c5efa3440882bcff8c869e87b7691bc90003a1e7bb29f455a10b98babc9c4",
+      "sha256:f8deb127e6cbecf22cf47db3b1355ac2afc03d64f379f94923ca8f1009a446f8",
+      "sha256:7ae48f632ac4219670de4ed5c47dc0a6ff0a417e612ba54f4e4cab103d81d13d",
+      "sha256:e209a15cd09140b8259883c09d010f30048644314501e61ea752237c84f31a06",
+      "sha256:4ac2bfe633ab01c83dccbca59523a28a0a5d0fe783b2d57481b580f0da74dce9",
+      "sha256:5a6c27aaca113d82730976eb462123211dd9f11b9215714f290e2f5b72297f44",
+      "sha256:807cf2bfacf10d3c54463ceaa0a93ceffb10305d6b6b18e8dee3ab81fb5c3ba5",
+      "sha256:d8ab1e682cacb74ba1c14926b08a8c8d2a9aec50e7af4fed5d73277ff7725423",
+      "sha256:b2573814955e279b547fed93caede4a66126ceae66b4061a740ee702ebb9ecf5",
+      "sha256:8c3f7fbb9dea2f814fb4722611d118c38a0dc515fcca5e74cac97cbf47837419",
+      "sha256:72fccc58edbbb0fe468994af18d00cf95fc68cfbbd7d0b14fee78cf8476f0d9a",
+      "sha256:28bc5b084f3b79388ff6d85a09662e3774859db43b4aae4985f7ed2537f99c36",
+      "sha256:1430c0a77fe74dafaf583bde69af35a630fab95ffadefaab6467ecbd1d97ceb5",
+      "sha256:7b7261d184c8997e5f48a05186c3b0b2d279c7bc6d9df2bb4812cc8dea3fa144",
+      "sha256:2a4e7165683a9dbb5b89749b08e4a1d57c4a28a5d46741e99503e18ae5dd2ba7",
+      "sha256:4b3dcb25fa23fc6dd981bfabab057424db4807e97fb5ea4816232238cb736b7a",
+      "sha256:04d0ac47581b67db5eeaff63fc9c6f5c9cc6caf2f4c388a4e696b8674d8e761e"
+    ],
+    "validator_digest": "sha256:4c228dbb05c5eec28bdec9a949f01147fba229b4c004a3e622b4f7b26898db25"
+  }
+}
