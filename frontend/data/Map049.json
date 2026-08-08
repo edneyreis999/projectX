@@ -1519,36 +1519,57 @@
                             ]
                         },
                         {
-                            "code": 122,
+                            "code": 101,
                             "indent": 0,
                             "parameters": [
-                                101,
-                                101,
+                                "",
                                 0,
-                                4,
-                                "\"1-B\""
+                                0,
+                                2,
+                                ""
                             ]
                         },
                         {
-                            "code": 122,
+                            "code": 401,
                             "indent": 0,
                             "parameters": [
-                                102,
-                                102,
-                                0,
-                                4,
-                                "\"Aviso Materno\""
+                                "Meu filho... Thorin... "
                             ]
                         },
                         {
-                            "code": 122,
+                            "code": 101,
                             "indent": 0,
                             "parameters": [
-                                103,
-                                103,
+                                "",
                                 0,
-                                4,
-                                "\"A mãe de Thorin surge aflita dizendo “não temos tempo!”, instaurando a urgência que move a história.\""
+                                0,
+                                2,
+                                ""
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "Você precisa..."
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "",
+                                0,
+                                0,
+                                2,
+                                ""
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "Rápido..."
                             ]
                         },
                         {
@@ -1635,10 +1656,48 @@
                             ]
                         },
                         {
-                            "code": 117,
+                            "code": 121,
                             "indent": 0,
                             "parameters": [
-                                16
+                                44,
+                                44,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "",
+                                0,
+                                0,
+                                2,
+                                ""
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "Mãe??? É você?"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "",
+                                0,
+                                0,
+                                2,
+                                ""
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "Mas como?"
                             ]
                         },
                         {

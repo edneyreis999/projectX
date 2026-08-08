@@ -5084,6 +5084,18 @@
                             ]
                         },
                         {
+                            "code": 250,
+                            "indent": 1,
+                            "parameters": [
+                                {
+                                    "name": "Miss",
+                                    "volume": 90,
+                                    "pitch": 100,
+                                    "pan": 0
+                                }
+                            ]
+                        },
+                        {
                             "code": 213,
                             "indent": 1,
                             "parameters": [
@@ -5190,6 +5202,18 @@
                             ]
                         },
                         {
+                            "code": 250,
+                            "indent": 2,
+                            "parameters": [
+                                {
+                                    "name": "Miss",
+                                    "volume": 90,
+                                    "pitch": 100,
+                                    "pan": 0
+                                }
+                            ]
+                        },
+                        {
                             "code": 213,
                             "indent": 2,
                             "parameters": [
@@ -5291,8 +5315,18 @@
                             ]
                         },
                         {
-                            "code": 201,
+                            "code": 111,
                             "indent": 3,
+                            "parameters": [
+                                4,
+                                3,
+                                4,
+                                1
+                            ]
+                        },
+                        {
+                            "code": 201,
+                            "indent": 4,
                             "parameters": [
                                 0,
                                 7,
@@ -5304,6 +5338,66 @@
                         },
                         {
                             "code": 115,
+                            "indent": 4,
+                            "parameters": []
+                        },
+                        {
+                            "code": 0,
+                            "indent": 4,
+                            "parameters": []
+                        },
+                        {
+                            "code": 411,
+                            "indent": 3,
+                            "parameters": []
+                        },
+                        {
+                            "code": 357,
+                            "indent": 4,
+                            "parameters": [
+                                "VisuMZ_4_GabWindow",
+                                "GabTextOnly",
+                                "Gab: Text Only",
+                                {
+                                    "Text:json": "\"Preciso equipar minha Funda antes de sair.\"",
+                                    "ForceGab:eval": "true",
+                                    "Override:struct": "{\"DimColor\":\"\",\"DimColor1:str\":\"\",\"DimColor2:str\":\"\",\"Fade\":\"\",\"FadeRate:num\":\"\",\"FadeDirection:str\":\"\",\"Font\":\"\",\"FontName:str\":\"\",\"FontSize:num\":\"\",\"Position\":\"\",\"YLocation:num\":\"\",\"ActorID:num\":\"1\",\"PartyIndex:num\":\"\",\"EnemyIndex:num\":\"\",\"EventID:num\":\"\",\"OnDisplay\":\"\",\"BypassAntiRepeat:eval\":\"true\",\"SoundFilename:str\":\"\",\"SoundVolume:num\":\"90\",\"SoundPitch:num\":\"100\",\"SoundPan:num\":\"0\",\"OnDisplayJS:func\":\"\",\"OnFinish\":\"\",\"GabSwitch:num\":\"\",\"OnFinishJS:func\":\"\",\"Waiting\":\"\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                                }
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 4,
+                            "parameters": [
+                                "Text = \"Preciso equipar minha Funda antes de sair.\""
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 4,
+                            "parameters": [
+                                "Force Gab? = true"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 4,
+                            "parameters": [
+                                "Optional Settings = {\"DimColor\":\"\",\"DimColor1:str\":\"\",\"DimC…"
+                            ]
+                        },
+                        {
+                            "code": 115,
+                            "indent": 4,
+                            "parameters": []
+                        },
+                        {
+                            "code": 0,
+                            "indent": 4,
+                            "parameters": []
+                        },
+                        {
+                            "code": 412,
                             "indent": 3,
                             "parameters": []
                         },
@@ -9095,11 +9189,11 @@
                     },
                     "directionFix": false,
                     "image": {
-                        "characterIndex": 0,
-                        "characterName": "",
-                        "direction": 2,
-                        "pattern": 0,
-                        "tileId": 0
+                        "tileId": 0,
+                        "characterName": "Principal/$Melia",
+                        "direction": 4,
+                        "pattern": 1,
+                        "characterIndex": 0
                     },
                     "list": [
                         {
@@ -9122,7 +9216,7 @@
                     },
                     "moveSpeed": 3,
                     "moveType": 0,
-                    "priorityType": 0,
+                    "priorityType": 1,
                     "stepAnime": false,
                     "through": true,
                     "trigger": 0,
@@ -9174,18 +9268,6 @@
                                 "BeginCutscene",
                                 "BeginCutscene",
                                 {}
-                            ]
-                        },
-                        {
-                            "code": 241,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "name": "Town1",
-                                    "volume": 50,
-                                    "pitch": 100,
-                                    "pan": 0
-                                }
                             ]
                         },
                         {
@@ -9547,6 +9629,18 @@
                             ]
                         },
                         {
+                            "code": 250,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "name": "Miss",
+                                    "volume": 90,
+                                    "pitch": 100,
+                                    "pan": 0
+                                }
+                            ]
+                        },
+                        {
                             "code": 213,
                             "indent": 0,
                             "parameters": [
@@ -9618,7 +9712,7 @@
                                 {
                                     "Text:json": "\"O jogo já começou, seu babão.\\nÉ melhor correr!\"",
                                     "ForceGab:eval": "true",
-                                    "Override:struct": "{\"DimColor\":\"\",\"DimColor1:str\":\"\",\"DimColor2:str\":\"\",\"Fade\":\"\",\"FadeRate:num\":\"0\",\"FadeDirection:str\":\"Up\",\"Font\":\"\",\"FontName:str\":\"\",\"FontSize:num\":\"\",\"Position\":\"\",\"YLocation:num\":\"\",\"ActorID:num\":\"0\",\"PartyIndex:num\":\"\",\"EnemyIndex:num\":\"\",\"EventID:num\":\"12\",\"OnDisplay\":\"\",\"BypassAntiRepeat:eval\":\"true\",\"SoundFilename:str\":\"\",\"SoundVolume:num\":\"90\",\"SoundPitch:num\":\"100\",\"SoundPan:num\":\"0\",\"OnDisplayJS:func\":\"\",\"OnFinish\":\"\",\"GabSwitch:num\":\"\",\"OnFinishJS:func\":\"\",\"Waiting\":\"\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                                    "Override:struct": "{\"DimColor\":\"\",\"DimColor1:str\":\"\",\"DimColor2:str\":\"\",\"Fade\":\"\",\"FadeRate:num\":\"0\",\"FadeDirection:str\":\"Up\",\"Font\":\"\",\"FontName:str\":\"\",\"FontSize:num\":\"\",\"Position\":\"\",\"YLocation:num\":\"\",\"ActorID:num\":\"0\",\"PartyIndex:num\":\"-1\",\"EnemyIndex:num\":\"-1\",\"EventID:num\":\"12\",\"OnDisplay\":\"\",\"BypassAntiRepeat:eval\":\"true\",\"SoundFilename:str\":\"\",\"SoundVolume:num\":\"90\",\"SoundPitch:num\":\"100\",\"SoundPan:num\":\"0\",\"OnDisplayJS:func\":\"\",\"OnFinish\":\"\",\"GabSwitch:num\":\"\",\"OnFinishJS:func\":\"\",\"Waiting\":\"\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
                                 }
                             ]
                         },
@@ -9759,7 +9853,7 @@
                             "code": 123,
                             "indent": 0,
                             "parameters": [
-                                "A",
+                                "B",
                                 0
                             ]
                         },
@@ -9788,6 +9882,57 @@
                     "through": true,
                     "trigger": 3,
                     "walkAnime": false
+                },
+                {
+                    "conditions": {
+                        "actorId": 1,
+                        "actorValid": false,
+                        "itemId": 1,
+                        "itemValid": false,
+                        "selfSwitchCh": "B",
+                        "selfSwitchValid": true,
+                        "switch1Id": 1,
+                        "switch1Valid": false,
+                        "switch2Id": 1,
+                        "switch2Valid": false,
+                        "variableId": 1,
+                        "variableValid": false,
+                        "variableValue": 0
+                    },
+                    "directionFix": false,
+                    "image": {
+                        "characterIndex": 0,
+                        "characterName": "",
+                        "direction": 2,
+                        "pattern": 0,
+                        "tileId": 0
+                    },
+                    "list": [
+                        {
+                            "code": 0,
+                            "indent": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "moveFrequency": 3,
+                    "moveRoute": {
+                        "list": [
+                            {
+                                "code": 0,
+                                "parameters": []
+                            }
+                        ],
+                        "repeat": true,
+                        "skippable": false,
+                        "wait": false
+                    },
+                    "moveSpeed": 3,
+                    "moveType": 0,
+                    "priorityType": 0,
+                    "stepAnime": false,
+                    "through": true,
+                    "trigger": 0,
+                    "walkAnime": true
                 },
                 {
                     "conditions": {
@@ -10483,98 +10628,6 @@
                             "code": 357,
                             "indent": 0,
                             "parameters": [
-                                "VisuMZ_2_VNPictureBusts",
-                                "Basic_EnterBust",
-                                "BASIC: Enter Bust",
-                                {
-                                    "PictureID:eval": "1",
-                                    "PictureName:str": "Portraits/Principal/Sáparo_provocação",
-                                    "Origin:str": "Bust",
-                                    "Position:num": "5",
-                                    "StartOffsetX:eval": "-200",
-                                    "StartOffsetY:eval": "+0",
-                                    "EasingType:str": "OutSine",
-                                    "HorzMirror:str": "Auto",
-                                    "Duration:eval": "20"
-                                }
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Picture ID = 1"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Picture File = Portraits/Principal/Sáparo_provocação"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Origin = Bust"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Screen Position = 5"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Start Offset X = -200"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Start Offset Y = +0"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Entrance Easing = OutSine"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Horizontal Mirror = Auto"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Duration = 20"
-                            ]
-                        },
-                        {
-                            "code": 121,
-                            "indent": 0,
-                            "parameters": [
-                                43,
-                                43,
-                                0
-                            ]
-                        },
-                        {
-                            "code": 357,
-                            "indent": 0,
-                            "parameters": [
                                 "VisuMZ_4_GabWindow",
                                 "GabTextOnly",
                                 "Gab: Text Only",
@@ -10604,73 +10657,6 @@
                             "indent": 0,
                             "parameters": [
                                 "Optional Settings = {\"EventID:num\":\"12\",\"WaitTime:num\":\"72\"…"
-                            ]
-                        },
-                        {
-                            "code": 357,
-                            "indent": 0,
-                            "parameters": [
-                                "VisuMZ_2_VNPictureBusts",
-                                "Basic_ExitBusts",
-                                "BASIC: Exit Bust(s)",
-                                {
-                                    "PictureID:arrayeval": "[\"1\"]",
-                                    "EndOffsetX:eval": "-200",
-                                    "EndOffsetY:eval": "+0",
-                                    "EasingType:str": "InSine",
-                                    "FlipDirection:str": "None",
-                                    "Duration:eval": "20",
-                                    "AutoErase:eval": "true"
-                                }
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Picture ID(s) = [\"1\"]"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "End Offset X = -200"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "End Offset Y = +0"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Exit Easing = InSine"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Flip Direction = None"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Duration = 20"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Auto-Erase? = true"
                             ]
                         },
                         {
@@ -13607,9 +13593,281 @@
                     },
                     "list": [
                         {
+                            "code": 355,
+                            "indent": 0,
+                            "parameters": [
+                                "$gameMap.events().filter(event => event.eventId() === 36 || event.event().name === \"Crianca\").forEach(event => event.setOpacity(0));"
+                            ]
+                        },
+                        {
+                            "code": 241,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "name": "Town1",
+                                    "volume": 50,
+                                    "pitch": 100,
+                                    "pan": 0
+                                }
+                            ]
+                        },
+                        {
                             "code": 222,
                             "indent": 0,
                             "parameters": []
+                        },
+                        {
+                            "code": 212,
+                            "indent": 0,
+                            "parameters": [
+                                33,
+                                35,
+                                false
+                            ]
+                        },
+                        {
+                            "code": 230,
+                            "indent": 0,
+                            "parameters": [
+                                60
+                            ]
+                        },
+                        {
+                            "code": 205,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 45,
+                                            "parameters": [
+                                                "$gameMap.events().filter(event => event.eventId() === 36 || event.event().name === \"Crianca\").forEach(event => event.setOpacity(50));"
+                                            ],
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 15,
+                                            "parameters": [
+                                                2
+                                            ],
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 45,
+                                            "parameters": [
+                                                "$gameMap.events().filter(event => event.eventId() === 36 || event.event().name === \"Crianca\").forEach(event => event.setOpacity(100));"
+                                            ],
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 15,
+                                            "parameters": [
+                                                2
+                                            ],
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 45,
+                                            "parameters": [
+                                                "$gameMap.events().filter(event => event.eventId() === 36 || event.event().name === \"Crianca\").forEach(event => event.setOpacity(140));"
+                                            ],
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 15,
+                                            "parameters": [
+                                                2
+                                            ],
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 45,
+                                            "parameters": [
+                                                "$gameMap.events().filter(event => event.eventId() === 36 || event.event().name === \"Crianca\").forEach(event => event.setOpacity(180));"
+                                            ],
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 15,
+                                            "parameters": [
+                                                2
+                                            ],
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 45,
+                                            "parameters": [
+                                                "$gameMap.events().filter(event => event.eventId() === 36 || event.event().name === \"Crianca\").forEach(event => event.setOpacity(220));"
+                                            ],
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 15,
+                                            "parameters": [
+                                                2
+                                            ],
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 45,
+                                            "parameters": [
+                                                "$gameMap.events().filter(event => event.eventId() === 36 || event.event().name === \"Crianca\").forEach(event => event.setOpacity(255));"
+                                            ],
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 0
+                                        }
+                                    ],
+                                    "repeat": false,
+                                    "skippable": false,
+                                    "wait": true
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 45,
+                                    "parameters": [
+                                        "$gameMap.events().filter(event => event.eventId() === 36 || event.event().name === \"Crianca\").forEach(event => event.setOpacity(50));"
+                                    ],
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 15,
+                                    "parameters": [
+                                        2
+                                    ],
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 45,
+                                    "parameters": [
+                                        "$gameMap.events().filter(event => event.eventId() === 36 || event.event().name === \"Crianca\").forEach(event => event.setOpacity(100));"
+                                    ],
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 15,
+                                    "parameters": [
+                                        2
+                                    ],
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 45,
+                                    "parameters": [
+                                        "$gameMap.events().filter(event => event.eventId() === 36 || event.event().name === \"Crianca\").forEach(event => event.setOpacity(140));"
+                                    ],
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 15,
+                                    "parameters": [
+                                        2
+                                    ],
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 45,
+                                    "parameters": [
+                                        "$gameMap.events().filter(event => event.eventId() === 36 || event.event().name === \"Crianca\").forEach(event => event.setOpacity(180));"
+                                    ],
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 15,
+                                    "parameters": [
+                                        2
+                                    ],
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 45,
+                                    "parameters": [
+                                        "$gameMap.events().filter(event => event.eventId() === 36 || event.event().name === \"Crianca\").forEach(event => event.setOpacity(220));"
+                                    ],
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 15,
+                                    "parameters": [
+                                        2
+                                    ],
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 45,
+                                    "parameters": [
+                                        "$gameMap.events().filter(event => event.eventId() === 36 || event.event().name === \"Crianca\").forEach(event => event.setOpacity(255));"
+                                    ],
+                                    "indent": null
+                                }
+                            ]
                         },
                         {
                             "code": 357,
@@ -13647,10 +13905,13 @@
                             ]
                         },
                         {
-                            "code": 230,
+                            "code": 357,
                             "indent": 0,
                             "parameters": [
-                                120
+                                "VisuMZ_4_GabWindow",
+                                "WaitForGab",
+                                "System: Wait For Gab Completion",
+                                {}
                             ]
                         },
                         {
@@ -13705,13 +13966,6 @@
                             ]
                         },
                         {
-                            "code": 230,
-                            "indent": 0,
-                            "parameters": [
-                                60
-                            ]
-                        },
-                        {
                             "code": 357,
                             "indent": 0,
                             "parameters": [
@@ -13747,10 +14001,13 @@
                             ]
                         },
                         {
-                            "code": 230,
+                            "code": 357,
                             "indent": 0,
                             "parameters": [
-                                60
+                                "VisuMZ_4_GabWindow",
+                                "WaitForGab",
+                                "System: Wait For Gab Completion",
+                                {}
                             ]
                         },
                         {
@@ -13874,6 +14131,388 @@
                         "characterIndex": 0
                     },
                     "list": [
+                        {
+                            "code": 111,
+                            "indent": 0,
+                            "parameters": [
+                                12,
+                                "$gameMap.event(36).opacity() === 255"
+                            ]
+                        },
+                        {
+                            "code": 212,
+                            "indent": 1,
+                            "parameters": [
+                                33,
+                                35,
+                                false
+                            ]
+                        },
+                        {
+                            "code": 230,
+                            "indent": 1,
+                            "parameters": [
+                                60
+                            ]
+                        },
+                        {
+                            "code": 205,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                {
+                                    "list": [
+                                        {
+                                            "code": 45,
+                                            "parameters": [
+                                                "$gameMap.events().filter(event => event.eventId() === 36 || event.event().name === \"Crianca\").forEach(event => event.setOpacity(220));"
+                                            ],
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 15,
+                                            "parameters": [
+                                                2
+                                            ],
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 45,
+                                            "parameters": [
+                                                "$gameMap.events().filter(event => event.eventId() === 36 || event.event().name === \"Crianca\").forEach(event => event.setOpacity(180));"
+                                            ],
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 15,
+                                            "parameters": [
+                                                2
+                                            ],
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 45,
+                                            "parameters": [
+                                                "$gameMap.events().filter(event => event.eventId() === 36 || event.event().name === \"Crianca\").forEach(event => event.setOpacity(140));"
+                                            ],
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 15,
+                                            "parameters": [
+                                                2
+                                            ],
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 45,
+                                            "parameters": [
+                                                "$gameMap.events().filter(event => event.eventId() === 36 || event.event().name === \"Crianca\").forEach(event => event.setOpacity(100));"
+                                            ],
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 15,
+                                            "parameters": [
+                                                2
+                                            ],
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 45,
+                                            "parameters": [
+                                                "$gameMap.events().filter(event => event.eventId() === 36 || event.event().name === \"Crianca\").forEach(event => event.setOpacity(50));"
+                                            ],
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 15,
+                                            "parameters": [
+                                                2
+                                            ],
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 45,
+                                            "parameters": [
+                                                "$gameMap.events().filter(event => event.eventId() === 36 || event.event().name === \"Crianca\").forEach(event => event.setOpacity(0));"
+                                            ],
+                                            "indent": null
+                                        },
+                                        {
+                                            "code": 0
+                                        }
+                                    ],
+                                    "repeat": false,
+                                    "skippable": false,
+                                    "wait": true
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 45,
+                                    "parameters": [
+                                        "$gameMap.events().filter(event => event.eventId() === 36 || event.event().name === \"Crianca\").forEach(event => event.setOpacity(220));"
+                                    ],
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 15,
+                                    "parameters": [
+                                        2
+                                    ],
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 45,
+                                    "parameters": [
+                                        "$gameMap.events().filter(event => event.eventId() === 36 || event.event().name === \"Crianca\").forEach(event => event.setOpacity(180));"
+                                    ],
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 15,
+                                    "parameters": [
+                                        2
+                                    ],
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 45,
+                                    "parameters": [
+                                        "$gameMap.events().filter(event => event.eventId() === 36 || event.event().name === \"Crianca\").forEach(event => event.setOpacity(140));"
+                                    ],
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 15,
+                                    "parameters": [
+                                        2
+                                    ],
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 45,
+                                    "parameters": [
+                                        "$gameMap.events().filter(event => event.eventId() === 36 || event.event().name === \"Crianca\").forEach(event => event.setOpacity(100));"
+                                    ],
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 15,
+                                    "parameters": [
+                                        2
+                                    ],
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 45,
+                                    "parameters": [
+                                        "$gameMap.events().filter(event => event.eventId() === 36 || event.event().name === \"Crianca\").forEach(event => event.setOpacity(50));"
+                                    ],
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 15,
+                                    "parameters": [
+                                        2
+                                    ],
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 505,
+                            "indent": 0,
+                            "parameters": [
+                                {
+                                    "code": 45,
+                                    "parameters": [
+                                        "$gameMap.events().filter(event => event.eventId() === 36 || event.event().name === \"Crianca\").forEach(event => event.setOpacity(0));"
+                                    ],
+                                    "indent": null
+                                }
+                            ]
+                        },
+                        {
+                            "code": 412,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 122,
+                            "indent": 0,
+                            "parameters": [
+                                106,
+                                106,
+                                0,
+                                0,
+                                100
+                            ]
+                        },
+                        {
+                            "code": 355,
+                            "indent": 0,
+                            "parameters": [
+                                "const saparo = $gameMap.event(12);"
+                            ]
+                        },
+                        {
+                            "code": 655,
+                            "indent": 0,
+                            "parameters": [
+                                ""
+                            ]
+                        },
+                        {
+                            "code": 655,
+                            "indent": 0,
+                            "parameters": [
+                                "if (saparo) {"
+                            ]
+                        },
+                        {
+                            "code": 655,
+                            "indent": 0,
+                            "parameters": [
+                                "  // Aplica imediatamente a troca para a página condicionada a 100."
+                            ]
+                        },
+                        {
+                            "code": 655,
+                            "indent": 0,
+                            "parameters": [
+                                "  saparo.refresh();"
+                            ]
+                        },
+                        {
+                            "code": 655,
+                            "indent": 0,
+                            "parameters": [
+                                ""
+                            ]
+                        },
+                        {
+                            "code": 655,
+                            "indent": 0,
+                            "parameters": [
+                                "  // Reconstrói o AnimaX caso o bug o tenha desativado."
+                            ]
+                        },
+                        {
+                            "code": 655,
+                            "indent": 0,
+                            "parameters": [
+                                "  if (!saparo.isAnimX()) {"
+                            ]
+                        },
+                        {
+                            "code": 655,
+                            "indent": 0,
+                            "parameters": [
+                                "    const profile = saparo.getCurrentAnimaXProfile();"
+                            ]
+                        },
+                        {
+                            "code": 655,
+                            "indent": 0,
+                            "parameters": [
+                                ""
+                            ]
+                        },
+                        {
+                            "code": 655,
+                            "indent": 0,
+                            "parameters": [
+                                "    if (profile) {"
+                            ]
+                        },
+                        {
+                            "code": 655,
+                            "indent": 0,
+                            "parameters": [
+                                "      saparo.createNewAnimaXForCharacter(profile);"
+                            ]
+                        },
+                        {
+                            "code": 655,
+                            "indent": 0,
+                            "parameters": [
+                                "    }"
+                            ]
+                        },
+                        {
+                            "code": 655,
+                            "indent": 0,
+                            "parameters": [
+                                "  }"
+                            ]
+                        },
+                        {
+                            "code": 655,
+                            "indent": 0,
+                            "parameters": [
+                                "}"
+                            ]
+                        },
                         {
                             "code": 0,
                             "indent": 0,
