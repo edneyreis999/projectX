@@ -2,7 +2,7 @@
     null,
     {
         "id": 1,
-        "battlerName": "Actor1_1",
+        "battlerName": "Thorin",
         "characterIndex": 0,
         "characterName": "People1",
         "classId": 1,
@@ -59,10 +59,10 @@
         "characterName": "Principal/$Thorin",
         "classId": 5,
         "equips": [
-            1,
             0,
-            51,
-            7,
+            0,
+            0,
+            0,
             0
         ],
         "faceIndex": 2,

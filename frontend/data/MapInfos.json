@@ -6,8 +6,8 @@
         "name": "BLANK",
         "order": 45,
         "parentId": 15,
-        "scrollX": 0,
-        "scrollY": 0,
+        "scrollX": 777.7777777777778,
+        "scrollY": 432,
         "quick": false
     },
     {
@@ -22,7 +22,7 @@
     },
     {
         "id": 3,
-        "expanded": false,
+        "expanded": true,
         "name": "Ekios",
         "order": 3,
         "parentId": 0,
@@ -36,18 +36,18 @@
         "name": "Coreto Release",
         "order": 46,
         "parentId": 15,
-        "scrollX": 963.2727272727274,
-        "scrollY": 757.0909090909091,
+        "scrollX": 784.8888888888889,
+        "scrollY": 616.8888888888889,
         "quick": false
     },
     {
         "id": 5,
-        "expanded": false,
+        "expanded": true,
         "name": "Coreto",
         "order": 1,
         "parentId": 0,
         "scrollX": 777.7777777777778,
-        "scrollY": 776.8888888888889,
+        "scrollY": 439.1111111111111,
         "quick": false
     },
     {
@@ -66,8 +66,8 @@
         "name": "Distrito Residencial Nobre",
         "parentId": 43,
         "order": 18,
-        "scrollX": 1965.6,
-        "scrollY": 1162.8
+        "scrollX": 1966,
+        "scrollY": 1162
     },
     {
         "id": 8,
@@ -95,8 +95,8 @@
         "name": "Vestiário",
         "order": 22,
         "parentId": 14,
-        "scrollX": 701.5,
-        "scrollY": 537.5,
+        "scrollX": 777.7777777777778,
+        "scrollY": 520,
         "quick": false
     },
     {
@@ -131,12 +131,12 @@
     },
     {
         "id": 14,
-        "expanded": false,
+        "expanded": true,
         "name": "Estádio",
         "order": 20,
         "parentId": 43,
-        "scrollX": 840.8571428571428,
-        "scrollY": 765.4285714285713,
+        "scrollX": 777.7777777777778,
+        "scrollY": 432,
         "quick": false
     },
     {
@@ -146,7 +146,7 @@
         "order": 36,
         "parentId": 0,
         "scrollX": 777.7777777777778,
-        "scrollY": 432,
+        "scrollY": 439.1111111111111,
         "quick": false
     },
     {
@@ -156,7 +156,7 @@
         "order": 47,
         "parentId": 0,
         "scrollX": 777.7777777777778,
-        "scrollY": 432,
+        "scrollY": 439.1111111111111,
         "quick": false
     },
     {
@@ -194,8 +194,8 @@
         "name": "Ex VNP Busts",
         "order": 39,
         "parentId": 15,
-        "scrollX": 893.4545454545455,
-        "scrollY": 1239.2727272727273,
+        "scrollX": 893.3333333333334,
+        "scrollY": 1239.111111111111,
         "quick": false
     },
     {
@@ -214,8 +214,8 @@
         "name": "EX_Coreto",
         "order": 48,
         "parentId": 16,
-        "scrollX": 784.8888888888889,
-        "scrollY": 656,
+        "scrollX": 777.7777777777778,
+        "scrollY": 670.2222222222222,
         "quick": false
     },
     {
@@ -234,8 +234,8 @@
         "name": "Mina de Esgoto 1F",
         "order": 4,
         "parentId": 3,
-        "scrollX": 1177.2,
-        "scrollY": 1071.6,
+        "scrollX": 1142.2222222222222,
+        "scrollY": 1072,
         "quick": false
     },
     {
@@ -324,8 +324,8 @@
         "name": "Mina de Kravens 1F",
         "order": 7,
         "parentId": 3,
-        "scrollX": 1946.3999999999999,
-        "scrollY": 1124.3999999999999,
+        "scrollX": 1946.6666666666667,
+        "scrollY": 1124.4444444444443,
         "quick": false
     },
     {
@@ -334,8 +334,8 @@
         "name": "Test de Skills",
         "order": 38,
         "parentId": 15,
-        "scrollX": 780,
-        "scrollY": 849.8181818181819,
+        "scrollX": 784.8888888888889,
+        "scrollY": 849.7777777777778,
         "quick": false
     },
     {
@@ -385,7 +385,7 @@
         "order": 50,
         "parentId": 32,
         "scrollX": 777.7777777777778,
-        "scrollY": 439.1111111111111,
+        "scrollY": 432,
         "quick": false
     },
     {
@@ -414,8 +414,8 @@
         "name": "Fim de Jogo",
         "order": 40,
         "parentId": 15,
-        "scrollX": 780,
-        "scrollY": 494.1818181818182,
+        "scrollX": 777.7777777777778,
+        "scrollY": 432,
         "quick": false
     },
     {
@@ -434,8 +434,8 @@
         "name": "EX_Distrito Residencial Nobre",
         "parentId": 39,
         "order": 51,
-        "scrollX": 1735.111111111111,
-        "scrollY": 1164.4444444444443
+        "scrollX": 832,
+        "scrollY": 1158.2222222222222
     },
     {
         "id": 45,
@@ -545,8 +545,8 @@
         "name": "Mapa Release",
         "order": 37,
         "parentId": 15,
-        "scrollX": 1611.2727272727273,
-        "scrollY": 660.5454545454546,
+        "scrollX": 1611.5555555555557,
+        "scrollY": 660.4444444444445,
         "quick": false
     }
 ]
