@@ -1427,96 +1427,25 @@
                             ]
                         },
                         {
-                            "code": 357,
+                            "code": 231,
                             "indent": 0,
                             "parameters": [
-                                "VisuMZ_2_VNPictureBusts",
-                                "Basic_EnterBust",
-                                "BASIC: Enter Bust",
-                                {
-                                    "PictureID:eval": "1",
-                                    "PictureName:str": "Portraits/Principal/Mélia_desespero",
-                                    "Origin:str": "Bust",
-                                    "Position:num": "9",
-                                    "StartOffsetX:eval": "-200",
-                                    "StartOffsetY:eval": "+0",
-                                    "EasingType:str": "OutSine",
-                                    "HorzMirror:str": "Auto-Reverse",
-                                    "Duration:eval": "20"
-                                }
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Picture ID = 1"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Picture File = Portraits/Principal/Mélia_desespero"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Origin = Bust"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Screen Position = 9"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Start Offset X = -200"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Start Offset Y = +0"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Entrance Easing = OutSine"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Horizontal Mirror = Auto-Reverse"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Duration = 20"
-                            ]
-                        },
-                        {
-                            "code": 121,
-                            "indent": 0,
-                            "parameters": [
-                                43,
-                                43,
+                                1,
+                                "Pesadelo1_1",
+                                0,
+                                0,
+                                0,
+                                0,
+                                100,
+                                100,
+                                255,
                                 0
                             ]
+                        },
+                        {
+                            "code": 222,
+                            "indent": 0,
+                            "parameters": []
                         },
                         {
                             "code": 101,
@@ -1537,6 +1466,32 @@
                             ]
                         },
                         {
+                            "code": 221,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 231,
+                            "indent": 0,
+                            "parameters": [
+                                1,
+                                "Pesadelo1_2",
+                                0,
+                                0,
+                                0,
+                                0,
+                                100,
+                                100,
+                                255,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 222,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
                             "code": 101,
                             "indent": 0,
                             "parameters": [
@@ -1553,6 +1508,32 @@
                             "parameters": [
                                 "Você precisa..."
                             ]
+                        },
+                        {
+                            "code": 221,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 231,
+                            "indent": 0,
+                            "parameters": [
+                                1,
+                                "Pesadelo1_3",
+                                0,
+                                0,
+                                0,
+                                0,
+                                100,
+                                100,
+                                255,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 222,
+                            "indent": 0,
+                            "parameters": []
                         },
                         {
                             "code": 101,
@@ -1573,447 +1554,47 @@
                             ]
                         },
                         {
-                            "code": 357,
+                            "code": 221,
                             "indent": 0,
-                            "parameters": [
-                                "VisuMZ_2_VNPictureBusts",
-                                "Basic_EnterBust",
-                                "BASIC: Enter Bust",
-                                {
-                                    "PictureID:eval": "2",
-                                    "PictureName:str": "Portraits/Principal/Thorin_confusão",
-                                    "Origin:str": "Bust",
-                                    "Position:num": "1",
-                                    "StartOffsetX:eval": "-200",
-                                    "StartOffsetY:eval": "+0",
-                                    "EasingType:str": "OutSine",
-                                    "HorzMirror:str": "Auto-Reverse",
-                                    "Duration:eval": "20"
-                                }
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Picture ID = 2"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Picture File = Portraits/Principal/Thorin_confusão"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Origin = Bust"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Screen Position = 1"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Start Offset X = -200"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Start Offset Y = +0"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Entrance Easing = OutSine"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Horizontal Mirror = Auto-Reverse"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Duration = 20"
-                            ]
-                        },
-                        {
-                            "code": 121,
-                            "indent": 0,
-                            "parameters": [
-                                44,
-                                44,
-                                0
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 0,
-                            "parameters": [
-                                "",
-                                0,
-                                0,
-                                2,
-                                ""
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "Mãe??? É você?"
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 0,
-                            "parameters": [
-                                "",
-                                0,
-                                0,
-                                2,
-                                ""
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "Mas como?"
-                            ]
-                        },
-                        {
-                            "code": 357,
-                            "indent": 0,
-                            "parameters": [
-                                "VisuMZ_2_VNPictureBusts",
-                                "Basic_ExitBusts",
-                                "BASIC: Exit Bust(s)",
-                                {
-                                    "PictureID:arrayeval": "[\"1\",\"2\"]",
-                                    "EndOffsetX:eval": "-200",
-                                    "EndOffsetY:eval": "+0",
-                                    "EasingType:str": "InSine",
-                                    "FlipDirection:str": "None",
-                                    "Duration:eval": "20",
-                                    "AutoErase:eval": "true"
-                                }
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Picture ID(s) = [\"1\",\"2\"]"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "End Offset X = -200"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "End Offset Y = +0"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Exit Easing = InSine"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Flip Direction = None"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Duration = 20"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Auto-Erase? = true"
-                            ]
+                            "parameters": []
                         },
                         {
                             "code": 231,
                             "indent": 0,
                             "parameters": [
                                 1,
-                                "SF_Monster_3",
-                                1,
+                                "Pesadelo1_4",
                                 0,
-                                736,
-                                936,
-                                220,
-                                220,
+                                0,
+                                0,
+                                0,
+                                100,
+                                100,
                                 255,
                                 0
                             ]
                         },
                         {
-                            "code": 249,
+                            "code": 222,
                             "indent": 0,
-                            "parameters": [
-                                {
-                                    "name": "Horror",
-                                    "volume": 85,
-                                    "pitch": 100,
-                                    "pan": 0
-                                }
-                            ]
+                            "parameters": []
                         },
                         {
-                            "code": 232,
+                            "code": 101,
                             "indent": 0,
                             "parameters": [
-                                1,
+                                "",
                                 0,
-                                1,
                                 0,
-                                736,
-                                328,
-                                220,
-                                220,
-                                255,
-                                0,
-                                30,
-                                true,
-                                2
+                                2,
+                                ""
                             ]
                         },
                         {
-                            "code": 230,
+                            "code": 401,
                             "indent": 0,
                             "parameters": [
-                                60
-                            ]
-                        },
-                        {
-                            "code": 249,
-                            "indent": 0,
-                            "parameters": [
-                                {
-                                    "name": "Mystery",
-                                    "volume": 90,
-                                    "pitch": 100,
-                                    "pan": 0
-                                }
-                            ]
-                        },
-                        {
-                            "code": 232,
-                            "indent": 0,
-                            "parameters": [
-                                1,
-                                0,
-                                1,
-                                0,
-                                1968,
-                                872,
-                                2000,
-                                2000,
-                                255,
-                                0,
-                                30,
-                                true,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 242,
-                            "indent": 0,
-                            "parameters": [
-                                60
-                            ]
-                        },
-                        {
-                            "code": 235,
-                            "indent": 0,
-                            "parameters": [
-                                1
-                            ]
-                        },
-                        {
-                            "code": 357,
-                            "indent": 0,
-                            "parameters": [
-                                "VisuMZ_2_VNPictureBusts",
-                                "Basic_EnterBust",
-                                "BASIC: Enter Bust",
-                                {
-                                    "PictureID:eval": "2",
-                                    "PictureName:str": "Portraits/Principal/Thorin_confusão",
-                                    "Origin:str": "Bust",
-                                    "Position:num": "1",
-                                    "StartOffsetX:eval": "-200",
-                                    "StartOffsetY:eval": "+0",
-                                    "EasingType:str": "OutSine",
-                                    "HorzMirror:str": "Auto-Reverse",
-                                    "Duration:eval": "20"
-                                }
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Picture ID = 2"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Picture File = Portraits/Principal/Thorin_confusão"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Origin = Bust"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Screen Position = 1"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Start Offset X = -200"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Start Offset Y = +0"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Entrance Easing = OutSine"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Horizontal Mirror = Auto-Reverse"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Duration = 20"
-                            ]
-                        },
-                        {
-                            "code": 357,
-                            "indent": 0,
-                            "parameters": [
-                                "VisuMZ_2_VNPictureBusts",
-                                "Basic_ExitBusts",
-                                "BASIC: Exit Bust(s)",
-                                {
-                                    "PictureID:arrayeval": "[\"1\",\"2\"]",
-                                    "EndOffsetX:eval": "+200",
-                                    "EndOffsetY:eval": "-0",
-                                    "EasingType:str": "InSine",
-                                    "FlipDirection:str": "None",
-                                    "Duration:eval": "20",
-                                    "AutoErase:eval": "true"
-                                }
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Picture ID(s) = [\"1\",\"2\"]"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "End Offset X = +200"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "End Offset Y = -0"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Exit Easing = InSine"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Flip Direction = None"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Duration = 20"
-                            ]
-                        },
-                        {
-                            "code": 657,
-                            "indent": 0,
-                            "parameters": [
-                                "Auto-Erase? = true"
+                                "O QUÊ!?"
                             ]
                         },
                         {
@@ -2026,13 +1607,6 @@
                             "indent": 0,
                             "parameters": [
                                 1
-                            ]
-                        },
-                        {
-                            "code": 235,
-                            "indent": 0,
-                            "parameters": [
-                                2
                             ]
                         },
                         {

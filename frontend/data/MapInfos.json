@@ -22,7 +22,7 @@
     },
     {
         "id": 3,
-        "expanded": false,
+        "expanded": true,
         "name": "Ekios",
         "order": 3,
         "parentId": 0,
@@ -42,7 +42,7 @@
     },
     {
         "id": 5,
-        "expanded": false,
+        "expanded": true,
         "name": "Coreto",
         "order": 1,
         "parentId": 0,
@@ -66,8 +66,8 @@
         "name": "Distrito Residencial Nobre",
         "parentId": 43,
         "order": 18,
-        "scrollX": 1965.6,
-        "scrollY": 1162.8
+        "scrollX": 1966,
+        "scrollY": 1162
     },
     {
         "id": 8,
@@ -95,8 +95,8 @@
         "name": "Vestiário",
         "order": 22,
         "parentId": 14,
-        "scrollX": 701.5,
-        "scrollY": 537.5,
+        "scrollX": 777.7777777777778,
+        "scrollY": 520,
         "quick": false
     },
     {
@@ -131,17 +131,17 @@
     },
     {
         "id": 14,
-        "expanded": false,
+        "expanded": true,
         "name": "Estádio",
         "order": 20,
         "parentId": 43,
-        "scrollX": 840.8571428571428,
-        "scrollY": 765.4285714285713,
+        "scrollX": 777.7777777777778,
+        "scrollY": 432,
         "quick": false
     },
     {
         "id": 15,
-        "expanded": true,
+        "expanded": false,
         "name": "Demos",
         "order": 36,
         "parentId": 0,
@@ -234,8 +234,8 @@
         "name": "Mina de Esgoto 1F",
         "order": 4,
         "parentId": 3,
-        "scrollX": 1177.2,
-        "scrollY": 1071.6,
+        "scrollX": 1142.2222222222222,
+        "scrollY": 1072,
         "quick": false
     },
     {
@@ -324,8 +324,8 @@
         "name": "Mina de Kravens 1F",
         "order": 7,
         "parentId": 3,
-        "scrollX": 1946.3999999999999,
-        "scrollY": 1124.3999999999999,
+        "scrollX": 1946.6666666666667,
+        "scrollY": 1124.4444444444443,
         "quick": false
     },
     {
@@ -434,8 +434,8 @@
         "name": "EX_Distrito Residencial Nobre",
         "parentId": 39,
         "order": 51,
-        "scrollX": 1735.111111111111,
-        "scrollY": 1164.4444444444443
+        "scrollX": 832,
+        "scrollY": 1158.2222222222222
     },
     {
         "id": 45,
@@ -444,7 +444,7 @@
         "order": 52,
         "parentId": 44,
         "scrollX": 777.7777777777778,
-        "scrollY": 439.1111111111111,
+        "scrollY": 432,
         "quick": false
     },
     {
