@@ -1,0 +1,15 @@
+[capabilities]
+
+[extension]
+  description = "A portable team of specialist agents for end-to-end game development."
+  min_compozy_version = "0.3.0-beta.17"
+  name = "game-development-cycle"
+  version = "0.1.0"
+
+[permissions]
+
+[resources]
+  agents = ["agents"]
+
+[subprocess]
+  command = ""
