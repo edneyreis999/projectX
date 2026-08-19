@@ -1,0 +1,15 @@
+{
+    "schema_version": 1,
+    "expected_error": "v106_noncanonical_state",
+    "page": {
+        "conditions": {
+            "variableValid": true,
+            "variableId": 106,
+            "variableValue": 91
+        },
+        "list": [
+            { "code": 122, "indent": 0, "parameters": [106, 106, 0, 0, 91] },
+            { "code": 0, "indent": 0, "parameters": [] }
+        ]
+    }
+}

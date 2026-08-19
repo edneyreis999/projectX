@@ -1,5 +1,5 @@
 ---
-status: pending
+status: completed
 title: "Task 1: Repair canonical state and EX/VN lifecycle"
 type: bugfix
 complexity: critical

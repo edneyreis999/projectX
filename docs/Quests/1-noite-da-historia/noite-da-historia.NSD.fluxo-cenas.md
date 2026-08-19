@@ -4,25 +4,30 @@
 
 ### 1️⃣ Resumo Geral _(Checkpoint 0)_
 
-\[x] **Concluído**
+- [x] **Concluído**
 
 - **Nome da quest**: Noite da História
 - **Importância na campanha**: Main + Tutorial
-- **Variável de controle**: [026]v_qNoite_progress
+- **Controle principal**: [106] `v_qNoiteDaHistoria_stage`
+- **Estados implementados**: `0` (antes da convocação) → `10` (ir ao lugar) → `20` (VN concluída) → `90` (chegada à Casa Forjaprata; terminal)
+- **Controle legado ainda consultado na abertura do mapa**: [026] `v_qNoite_progress`
 - **Arco narrativo**: Mundo Comum
 - **Quest anterior**: Nenhuma (primeira quest do jogo)
-- **Conflito central**: O jogador (criança orc) está atrasado para a Noite da História, onde Theodore Rheed está começando a contar a história principal do jogo no Coreto da Cidade de Daratrine.
-- **Objetivo narrativo global**: Conhecer a atmosfera do jogo e estabelecer que toda a história do jogo será contada por Theodore Rheed na Noite da História. Esta é uma quest de abertura com estrutura meta-narrativa (frame story).
-- **Premissa resumida**: O jogador controla uma criança orc que chega atrasada à Noite da História no Coreto, onde Rheed narrará a história principal. Crianças eufóricas correm pelo mapa. O jogador deve falar com Darla (Elfa assistente de Rheed), que o direciona ao seu lugar. Rheed desce, brinca com o atraso, pergunta o nome (com sugestão editável), volta ao Coreto e inicia a narrativa. Uma cutscene transporta o jogador para Gildrat, onde passa a controlar Thorin, um jovem anão dormindo.
-- **Resumo**: O jogador sob o controle de uma criança orc chega atrasada na noite da história, onde Rheed está contando a história principal da noite no Coreto da Cidade de Daratrine. As crianças estão eufóricas correndo aleatoriamente pelo mapa esperando a história começar. O jogador deve ir em direção a uma Elfa chamada Darla, que ajuda Rheed a organizar as crianças. Ao conversar com ela, a Elfa diz ao jogador que ele deve ir no seu lugar que a história já iria começar. Ao chegar no seu lugar, Rheed desce do Coreto e vai em direção ao jogador, brinca com o fato dele ter chego atrasado e pergunta seu nome. O jogo dá uma sugestão de nome, mas o jogador pode alterar se ele quiser. Depois de fornecer o nome, Rheed volta até o Coreto e começa a história. Inicia-se um vídeo de cutscene que transporta o jogador para Gildrat onde ele controla Thorin, um jovem anão que está dormindo.
+- **Conflito central**: A criança orc chega quando a Noite da História está prestes a começar e precisa ocupar seu lugar antes que Theodore Rheed inicie o relato que conduz à história de Thorin.
+- **Objetivo narrativo global**: Apresentar a atmosfera de Daratrine e estabelecer Theodore Rheed como narrador da história principal, usando a Noite da História como moldura meta-narrativa.
+- **Premissa resumida**: No Coreto de Daratrine, a criança orc encontra outras crianças brincando e conversando enquanto aguardam Rheed. Após receber a convocação para ocupar seu lugar, entra numa sequência em visual novel, escolhe seu nome e ouve Rheed introduzir Daratrine, Gildrat e Thorin. A narrativa então troca o personagem controlado para Thorin e segue para a Casa da Família Forjaprata.
 - **Locais principais**:
-  - [005] Coreto - Praça Central de Daratrine
 
-- **NPCs principais**:
-  - Criança Orc (protagonista controlável)
+  - [022] `EX_Coreto`
+  - [046] `VN_Noite_da_Historia`
+  - [045] `EX_Casa da Família Forjaprata` (destino da transição)
+
+- **Personagens principais**:
+
+  - Criança orc (protagonista controlável e personagem nomeável)
   - Theodore Rheed (narrador)
-  - Darla (Elfa assistente de Rheed)
-  - Crianças (plano de fundo - não-interativas)
+  - Crianças reunidas no Coreto
+  - Thorin (apresentado por Rheed e assumido como personagem controlável ao final)
 
 ---
 
@@ -30,11 +35,11 @@
 
 - [x] **Concluído**
 
-| Tipo                                 | Descrição                                    |
-| ------------------------------------ | -------------------------------------------- |
-| **Flags / Decisões anteriores**      | Nenhuma - Primeira quest do jogo (abertura)  |
-| **Estado emocional do protagonista** | Apressado/Ansioso (correndo, preocupado com o atraso) |
-| **Limitações ou bloqueios**          | Menu bloqueado, jogador só pode se movimentar e falar com NPCs |
+| Tipo | Descrição |
+| --- | --- |
+| **Flags / decisões anteriores** | Nenhuma — abertura do jogo. A quest começa no estado `0`. |
+| **Estado emocional do protagonista** | Apressado, chegando quando a história está prestes a começar. |
+| **Interação disponível** | Fora das cutscenes, o jogador pode se mover pelo Coreto até acionar a convocação e alcançar seu lugar. Durante os trechos dirigidos, o controle é assumido pela cutscene. |
 
 ---
 
@@ -44,65 +49,67 @@
 
 ### Tabela de Cenas
 
-| #   | Nome da Cena                    | Cronologia (ordem dos eventos)                                                                                                                                                                                                                     | Premissa                                                                                         |
-| --- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| 1   | Introdução ao Cenário           | Spawn do jogador → Pan da câmera até Darla → Liberação de movimento → Crianças se movendo aleatoriamente até o 5º passo → Crianças vão para suas posições                                                                                           | Introdução ao cenário e estabelecimento do objetivo de falar com Darla                            |
-| 2   | Darla Direciona o Jogador       | Jogador vai até Darla e inicia diálogo → Câmera faz pan para o lugar do jogador → Brilho aparece no chão → Log de quests abre com task                                                                                                              | Darla direciona o jogador ao seu lugar para ouvir Rheed                                           |
-| 3   | Rheed Interage com o Jogador    | Jogador vai até a marcação → Rheed fala "Olha quem chegou atrasado" → Rheed anda até o jogador → Rheed pergunta o nome → Jogador escolhe o nome → Rheed volta ao centro → Rheed se vira para as crianças → Rheed introduz Daratrine → Rheed toma a poção → Rheed assopra fumaça → Inicia-se o vídeo de Ekios | Rheed interage com o jogador e conhece seu nome                                                  |
-| 4   | Transição Meta-narrativa        | Vídeo mostra mapa de Ekios → Câmera percorre o mapa → Zoom em Gildrat → Transição para cutscene de jogo → Thorin aparece dormindo na cama                                                                                                             | Transição meta-narrativa para a história principal                                               |
+| # | Nome da Cena | Cronologia (ordem dos eventos) | Premissa |
+| --- | --- | --- | --- |
+| 1 | Coreto em expectativa | Entrada no mapa → câmera apresenta o lugar reservado → câmera retorna ao jogador → crianças brincam e conversam pelo espaço | Apresentar o Coreto como um lugar vivo, com as crianças aguardando o início da história. |
+| 2 | Convocação para a história | Jogador alcança a área de convocação → Gab orienta a ir ao lugar → câmera destaca a posição → quest avança para `10` → crianças se reúnem | Transformar a ambientação livre em um objetivo claro: ocupar o lugar antes do início. |
+| 3 | Rheed inicia o relato | Jogador chega à posição → Rheed se aproxima → transição para a VN → escolha do nome → apresentação de Daratrine, Gildrat e Thorin → menção à poção antiga | Vincular a criança ao narrador e abrir a história principal por meio da moldura meta-narrativa. |
+| 4 | Passagem para Thorin | Retorno ao Coreto → efeito de materialização → troca do grupo para Thorin → reprodução de `Cutscene 2` → conclusão da quest → transferência para a Casa Forjaprata | Encerrar a abertura e entregar o controle narrativo à história de Thorin. |
 
 ### Beats por Cena
 
-#### Cena 1 – Introdução ao Cenário
-Mapa: [005] Coreto
+#### Cena 1 – Coreto em expectativa
 
-| ID      | Titulo                          | Premissa Resumida                                                                                                                                            | Tipo |
-| ------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---- |
-| **1-A** | **Spawn do Jogador**            | Jogador aparece no canto inferior da tela                                                                                                                    | 🎬   |
-| **1-B** | **Pan da Câmera**               | Câmera faz um pan até a elfa Darla                                                                                                                           | 🎬   |
-| **1-C** | **Liberação de Movimento**      | Jogador ganha controle de movimento                                                                                                                          | 🎮   |
-| **1-D** | **Crianças se Movendo**         | Crianças de fundo se mexem aleatoriamente até o 5º passo do jogador                                                                                          | 🎮   |
-| **1-E** | **Crianças se Posicionam**      | Após o 5º passo, as crianças vão cada uma para sua posição no centro da praça                                                                                | 🎬   |
+Mapa: [022] `EX_Coreto`
 
-#### Cena 2 – Darla Direciona o Jogador
-Mapa: [005] Coreto
+| ID | Título | Premissa resumida | Tipo |
+| --- | --- | --- | --- |
+| **1-A** | **Entrada no Coreto** | A criança orc começa no Coreto enquanto `Theme1` estabelece a ambientação da abertura. | 🎬 |
+| **1-B** | **Apresentação do lugar** | A câmera focaliza a posição reservada para a criança e retorna ao jogador após uma breve sinalização sonora. | 🎬 |
+| **1-C** | **Coreto vivo** | Dezessete crianças participam de brincadeiras de pega-pega, roda e conversas sentadas. | 🎮 |
+| **1-D** | **Conversas ambientes** | Gabs espaciais e não forçadas reforçam a expectativa pela história enquanto a quest ainda está no estado `0`. | 🎮 |
 
-| ID      | Titulo                    | Premissa Resumida                                                                                      | Tipo |
-| ------- | ------------------------- | ------------------------------------------------------------------------------------------------------ | ---- |
-| **2-A** | **Falar com a Elfa**      | Jogador inicia diálogo com Darla                                                                       | 🎮   |
-| **2-B** | **Pan da Câmera**         | Câmera faz pan para o lugar que o jogador deve ir                                                      | 🎬   |
-| **2-C** | **Brilho no Chão**        | Aparece brilho/marcador no chão indicando onde o jogador deve ir                                       | 🎬   |
-| **2-D** | **Abrir Log de Quests**   | Abre o log de quests mostrando a task de "Encontre um lugar para sentar próximo às crianças"            | 🎮   |
+#### Cena 2 – Convocação para a história
 
-#### Cena 3 – Rheed Interage com o Jogador
-Mapa: [005] Coreto
+Mapa: [022] `EX_Coreto`
 
-| ID       | Titulo                          | Premissa Resumida                                                                                                                                                                                              | Tipo |
-| -------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
-| **3-A**  | **Jogador vai até a Marcação**  | Jogador se move até o brilho/marcador no chão                                                                                                                                                                 | 🎮   |
-| **3-B**  | **Rheed Fala**                  | Rheed comenta o atraso do jogador: "Olha quem chegou atrasado"                                                                                                                                                | 🎬   |
-| **3-C**  | **Rheed Anda Até o Jogador**    | Rheed se aproxima do jogador                                                                                                                                                                                  | 🎬   |
-| **3-D**  | **Rheed Pergunta o Nome**       | Rheed solicita o nome do jogador, com sugestão pré-definida "Dulgarin"                                                                                                                                        | 🎮   |
-| **3-E**  | **Jogador Escolhe o Nome**      | Jogador aceita sugestão "Dulgarin" ou digita nome próprio em menu                                                                                                                                             | 🎮   |
-| **3-F**  | **Rheed Volta ao Centro**       | Rheed se despede brevemente e retorna ao centro do Coreto                                                                                                                                                     | 🎬   |
-| **3-G**  | **Rheed se Vira para as Crianças** | Rheed se volta para o público infantil                                                                                                                                                                      | 🎬   |
-| **3-H**  | **Rheed Introduz Daratrine**    | Rheed começa a contar a história, introduzindo o início de Daratrine e atiçando a curiosidade                                                                                                                 | 🎬   |
-| **3-I**  | **Rheed Toma a Poção**          | Rheed consome uma poção mágica                                                                                                                                                                                | 🎬   |
-| **3-J**  | **Rheed Assopra Fumaça**        | Rheed assopra uma nuvem de fumaça sobre a praça                                                                                                                                                               | 🎬   |
-| **3-K**  | **Início do Vídeo de Ekios**    | Inicia-se o vídeo mostrando o mapa de Ekios, câmera percorre e dá zoom em Gildrat                                                                                                                             | 🎬   |
+| ID | Título | Premissa resumida | Tipo |
+| --- | --- | --- | --- |
+| **2-A** | **Chamado para o lugar** | Ao alcançar a área de convocação, o jogador recebe a Gab: “Rápido! A história já vai começar... vá para o seu lugar!”. | 🎮 |
+| **2-B** | **Indicação visual** | A câmera focaliza a posição de destino e depois retorna ao jogador. | 🎬 |
+| **2-C** | **Início formal da quest** | A descrição de save passa a identificar `assistirNoiteHistoria` e a transição `START` leva a quest de `0` para `10`. | 🎬 |
+| **2-D** | **Reunião das crianças** | As crianças encerram as atividades paralelas e seguem para suas posições de reunião. | 🎬 |
 
-**Decisões do Jogador na Cena 3:**
+#### Cena 3 – Rheed inicia o relato
 
-| ID        | Decisão                                      | Opções                                                                                                                                                                                                                           |
-| --------- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **DEC_001** | Rheed pergunta: "E qual é o seu nome, pequeno?" | **A)** Aceitar "Dulgarin" → Nome do personagem definido como "Dulgarin"<br>**B)** Digitar nome próprio → Abre menu de input para jogador digitar nome                                                                          |
+Mapas: [022] `EX_Coreto` → [046] `VN_Noite_da_Historia`
 
-#### Cena 4 – Transição Meta-narrativa
-Mapa: [005] → Cutscene
+| ID | Título | Premissa resumida | Tipo |
+| --- | --- | --- | --- |
+| **3-A** | **Chegada ao lugar** | Ao tocar a posição indicada no estado `10`, a criança se vira para cima e inicia a cutscene. | 🎮 |
+| **3-B** | **Aproximação de Rheed** | Rheed caminha até `(12,13)`, volta-se para as crianças e a tela escurece para entrar na VN. | 🎬 |
+| **3-C** | **O último ouvinte** | Rheed brinca com o atraso da criança e sugere o nome “Dulgarin”. | 🎬 |
+| **3-D** | **Escolha do nome** | O jogador aceita “Dulgarin” ou abre a entrada de nome, limitada a oito caracteres. | 🎮 |
+| **3-E** | **Introdução da história** | Rheed apresenta Daratrine como refúgio de soldados feridos, conduz o relato a Gildrat e apresenta Thorin com um cut-in. | 🎬 |
+| **3-F** | **Poção antiga** | Rheed pede que as crianças fechem os olhos e narra que uma poção antiga as transportará para Gildrat. A transição `COMPLETE_VN` leva a quest de `10` para `20`. | 🎬 |
 
-| ID      | Titulo                | Premissa Resumida                                                                                                                           | Tipo |
-| ------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
-| **4-A** | **Thorin Dormindo**   | Após o vídeo, transita para cutscene de jogo mostrando Thorin dormindo na cama dele                                                          | 🎬   |
+**Decisão do jogador na Cena 3:**
+
+| ID | Decisão | Opções |
+| --- | --- | --- |
+| **DEC_001** | Definir o nome da criança | **A)** Aceitar “Dulgarin” → ator 1 recebe esse nome.<br>**B)** Rejeitar a sugestão → abrir a entrada de nome para até oito caracteres. |
+
+#### Cena 4 – Passagem para Thorin
+
+Mapas: [022] `EX_Coreto` → [045] `EX_Casa da Família Forjaprata`
+
+| ID | Título | Premissa resumida | Tipo |
+| --- | --- | --- | --- |
+| **4-A** | **Retorno à moldura** | Ao terminar a VN, o jogo retorna ao Coreto no estado `20`; Rheed reaparece e se desloca para sua posição. | 🎬 |
+| **4-B** | **Materialização** | Uma única Animação 35 é aguardada no ponto da Noite da História antes do fade. | 🎬 |
+| **4-C** | **Troca de protagonista** | A criança orc sai do grupo e Thorin entra como personagem controlável. | 🎬 |
+| **4-D** | **Cutscene de passagem** | O jogo reproduz o vídeo `Cutscene 2` e define [029] `v_qSemifinal_progress` como `1`. | 🎬 |
+| **4-E** | **Chegada à Casa Forjaprata** | `ARRIVE_MAP045` conclui “Noite da História” no estado terminal `90` e transfere Thorin para [045], em `(2,4)`. | 🎬 |
 
 ---
 
@@ -110,29 +117,30 @@ Mapa: [005] → Cutscene
 
 - [x] **Concluído**
 
-### Notas Técnicas
+### Notas de implementação
 
-| Categoria   | Conteúdo                                                                                                                                                                           | Prioridade |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| **Technical** | Menu deve permanecer bloqueado durante toda a quest. Jogador só pode se movimentar e falar com NPCs.                                                                             | Alta       |
-| **Narrative** | Esta quest estabelece a estrutura meta-narrativa do jogo: toda a história é narrada por Theodore Rheed na Noite da História.                                                      | Alta       |
-| **Technical** | Vídeo de Ekios deve mostrar o mapa completo com câmera percorrendo e dando zoom em Gildrat para transição suave.                                                                  | Média      |
+| Categoria | Conteúdo | Prioridade |
+| --- | --- | --- |
+| **Narrativa** | A quest estabelece a estrutura meta-narrativa: Rheed conta às crianças a história que o jogador passa a vivenciar como Thorin. | Alta |
+| **Estado** | A máquina de estados canônica usa [106] `v_qNoiteDaHistoria_stage`; [026] permanece apenas em condições legadas da abertura do Coreto. | Alta |
+| **Apresentação** | O Coreto usa câmera de mapa, rotas estruturadas, Gabs ambientes e uma VN dedicada em [046]. | Alta |
+| **Transição** | O vídeo chamado `Cutscene 2` conecta a VN à transferência para a Casa Forjaprata; seu conteúdo visual não é especificado neste documento além do que o evento executa. | Média |
 
 ### Metadados de Controle
 
-| Propriedade           | Valor                             |
-| --------------------- | --------------------------------- |
-| **Total de Cenas**    | 4                                 |
-| **Total de Beats**    | 21                                |
-| **Tempo Estimado**    | 3-10 min                          |
-| **Complexidade**      | Baixa                             |
-| **Dependências**      | Nenhuma - Quest de abertura       |
-| **Outputs**           | - Nome do jogador definido<br>- Quest Noite da História concluída ([026]v_qNoite_progress = completed)<br>- Desbloqueio da próxima quest |
+| Propriedade | Valor |
+| --- | --- |
+| **Total de cenas** | 4 |
+| **Total de beats** | 19 |
+| **Dependências** | `Coreto_QuestCore`, `Coreto_QuestVN`, `Coreto_Cutscene` e comandos VisuStella de câmera, Gab, busts e escolhas visuais |
+| **Outputs** | Nome do ator 1 definido; Thorin adicionado ao grupo; [029] `v_qSemifinal_progress = 1`; quest no estado terminal `90`; chegada ao mapa [045] |
+| **Fonte da verdade desta revisão** | Implementação atual de `Map022.json`, `Map046.json`, `Map045.json` e `CoretoQuests.json` |
 
 ---
 
 ## Histórico de Versões
 
-| Versão | Data       | Autor  | Mudanças                           |
-| ------ | ---------- | ------ | ---------------------------------- |
-| 1.0    | 2026-02-16 | Edney  | Documento inicial criado via entrevista interativa |
+| Versão | Data | Autor | Mudanças |
+| --- | --- | --- | --- |
+| 1.0 | 2026-02-16 | Edney | Documento inicial criado via entrevista interativa. |
+| 1.1 | 2026-08-19 | Codex | Fluxo reconciliado com a implementação atual da quest, da VN e da transição para a Casa Forjaprata. |

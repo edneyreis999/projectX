@@ -1627,18 +1627,7 @@
                             "code": 655,
                             "indent": 0,
                             "parameters": [
-                                "$gameSelfSwitches.setValue([s.origin.mapId, s.origin.eventId, \"D\"], true);"
-                            ]
-                        },
-                        {
-                            "code": 122,
-                            "indent": 0,
-                            "parameters": [
-                                106,
-                                106,
-                                0,
-                                0,
-                                91
+                                "for (const eventId of [21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39]) $gameSelfSwitches.setValue([45, eventId, \"A\"], true);"
                             ]
                         },
                         {

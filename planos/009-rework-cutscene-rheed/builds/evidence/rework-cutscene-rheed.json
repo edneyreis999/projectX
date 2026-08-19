@@ -1,0 +1,46 @@
+{
+  "plan": "planos/009-rework-cutscene-rheed/rework-cutscene-rheed.md",
+  "implemented_variant": "Variante B com ajustes posteriores: Rheed anda antes da apresentação, quatro crianças reagem e Rheed encerra a cena",
+  "target": {
+    "file": "frontend/data/Map045.json",
+    "event_id": 36,
+    "pages": [
+      "A",
+      "B"
+    ]
+  },
+  "validation": {
+    "classification": "structural_validation",
+    "validator_checks": 14,
+    "validator_failures": 0,
+    "json_parse": "pass",
+    "writer_replay": "no_op",
+    "plugins_js_envelope": "editor-structural",
+    "gab_plugin_syntax": "pass",
+    "runtime": "runtime_pending",
+    "runtime_pending": [
+      "timing",
+      "visual_readability",
+      "pacing"
+    ]
+  },
+  "restricted_write": {
+    "map_sha256_before": "9c8f1efb7c602d0d4da92454e7170affff4bc52a5a00742ecfce8966d0e7e10e",
+    "map_sha256_after": "57b3dd8cb51fd6cabc1ebef485f798ba0e1fe7c0de12abe3fae8263c2373778f",
+    "outside_event36_sha256_before": "0f6a5a2e5b22b5994ad82b64c059a2aeafe3ff5bce98792b0f910762d4a18d6f",
+    "outside_event36_sha256_after": "0f6a5a2e5b22b5994ad82b64c059a2aeafe3ff5bce98792b0f910762d4a18d6f",
+    "protected_events_sha256_before": "592eb6d58cdf5a8a5d0ea3127e3845815ce32b50ea96b581961c22ada640f705",
+    "protected_events_sha256_after": "592eb6d58cdf5a8a5d0ea3127e3845815ce32b50ea96b581961c22ada640f705",
+    "event36_sha256_after": "70596bd7ea94b660a72014f2dba009af3fd5e13ce97e1de09642f22661a9e637",
+    "cleanup_fingerprint": "712752480dd5edecce36f81714d96071afeeca56630777e4db20fb23aedb5f51"
+  },
+  "human_gates": [
+    "nova duração nominal após a ampliação deliberada da cena",
+    "compreensão da casa e do encantamento com som e em mute",
+    "apresentação com flash reduzido",
+    "texto localizado maior",
+    "ordem causal em FPS baixo",
+    "sobreposição perceptiva de Town1",
+    "save/load e reentrada sem personagens residuais"
+  ]
+}

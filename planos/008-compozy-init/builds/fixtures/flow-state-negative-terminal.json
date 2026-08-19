@@ -1,0 +1,24 @@
+{
+    "schema_version": 1,
+    "expected_error": "terminal_page_precedence_invalid",
+    "canonical_state": 20,
+    "pages": [
+        {
+            "conditions": {
+                "variableValid": true,
+                "variableId": 106,
+                "variableValue": 10,
+                "selfSwitchValid": false
+            },
+            "trigger": 1,
+            "list": [
+                {
+                    "code": 357,
+                    "indent": 0,
+                    "parameters": ["Coreto_QuestVN", "EnterVisualNovel", "EnterVisualNovel", { "questKey": "noite-da-historia", "entryKey": "CENA_PRINCIPAL" }]
+                },
+                { "code": 0, "indent": 0, "parameters": [] }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,546 @@
+{
+    "schema_version": 1,
+    "validator": "validate-ex-vn-regression",
+    "result": "passed",
+    "classification": "human_playtest_pending",
+    "test_ids": [
+        "E2E-001",
+        "E2E-002",
+        "E2E-003",
+        "E2E-004",
+        "E2E-005",
+        "E2E-006",
+        "E2E-007"
+    ],
+    "targets": [
+        "frontend/data/Map022.json",
+        "frontend/data/Map045.json",
+        "frontend/data/Map046.json",
+        "frontend/data/Map049.json",
+        "frontend/data/CoretoQuests.json",
+        "frontend/data/MapInfos.json",
+        "planos/008-compozy-init/builds/evidence/flow-state.json",
+        "planos/008-compozy-init/builds/evidence/map022-experience.json",
+        "planos/008-compozy-init/builds/evidence/map045-experience.json",
+        "planos/008-compozy-init/builds/evidence/human-playtest-template.md",
+        "planos/008-compozy-init/builds/validate-ex-vn-regression.mjs"
+    ],
+    "target_hashes": {
+        "frontend/data/Map022.json": "6b8088b2afde13e4357a32a5b0fb4566cbc0919c8e0b68f25514bc9d859e34fb",
+        "frontend/data/Map045.json": "18ebfc2f86a603fe363568a077be9cf8d5044290f45ed757fda19b7707177e85",
+        "frontend/data/Map046.json": "b5afb84e5ee8735d1eb3767e5f5cde8064c7e26a0e849160fd0b39cbd80ef35f",
+        "frontend/data/Map049.json": "33f44fa75740c87b91339c679e3fa5b02bbb44cce2a125f785ad28ae4c0ac238",
+        "frontend/data/CoretoQuests.json": "d19bc2c83e0c61d4d12dfd94d242628d1d62bf9d38ed56c3709f03b47e2de678",
+        "frontend/data/MapInfos.json": "5d69b1eb32b00b55f1f5f4587578d04460690a748f57acd7bcbf5c1f438d68d1",
+        "planos/008-compozy-init/builds/evidence/flow-state.json": "920e748fcdb2288718a738bcd02b423a28a244094542d6ccd1ae4d8e3be74f78",
+        "planos/008-compozy-init/builds/evidence/map022-experience.json": "dcd3ef98a421245156f2296d7de9f0ada204408126d2fe468816151bcf0c6aa2",
+        "planos/008-compozy-init/builds/evidence/map045-experience.json": "0815e9b58026f1066f8250fb4e6e66ef94e1fe82a67df2926cd8386678c3801d",
+        "planos/008-compozy-init/builds/evidence/human-playtest-template.md": "ded8e62826a9e31b1397c8d403c1c988166e482836bfefe962a0841aba1b6e4b",
+        "planos/008-compozy-init/builds/validate-ex-vn-regression.mjs": "8c49383b365c3c837e50b7035982dfdfbf5919a010daf872051a56373a3b2260"
+    },
+    "lower_evidence": [
+        {
+            "task": "task_01",
+            "evidence": "planos/008-compozy-init/builds/evidence/flow-state.json",
+            "evidence_hash": "920e748fcdb2288718a738bcd02b423a28a244094542d6ccd1ae4d8e3be74f78",
+            "target_hashes_verified": 10
+        },
+        {
+            "task": "task_02",
+            "evidence": "planos/008-compozy-init/builds/evidence/map022-experience.json",
+            "evidence_hash": "dcd3ef98a421245156f2296d7de9f0ada204408126d2fe468816151bcf0c6aa2",
+            "target_hashes_verified": 4
+        },
+        {
+            "task": "task_03",
+            "evidence": "planos/008-compozy-init/builds/evidence/map045-experience.json",
+            "evidence_hash": "0815e9b58026f1066f8250fb4e6e66ef94e1fe82a67df2926cd8386678c3801d",
+            "target_hashes_verified": 9
+        }
+    ],
+    "checks": [
+        {
+            "test_id": "E2E-001",
+            "owning_task": "task_04",
+            "result": "passed",
+            "evidence_class": "automated_structural",
+            "target_hashes": {
+                "frontend/data/Map022.json": "6b8088b2afde13e4357a32a5b0fb4566cbc0919c8e0b68f25514bc9d859e34fb",
+                "frontend/data/Map045.json": "18ebfc2f86a603fe363568a077be9cf8d5044290f45ed757fda19b7707177e85",
+                "frontend/data/Map046.json": "b5afb84e5ee8735d1eb3767e5f5cde8064c7e26a0e849160fd0b39cbd80ef35f",
+                "frontend/data/Map049.json": "33f44fa75740c87b91339c679e3fa5b02bbb44cce2a125f785ad28ae4c0ac238",
+                "frontend/data/CoretoQuests.json": "d19bc2c83e0c61d4d12dfd94d242628d1d62bf9d38ed56c3709f03b47e2de678",
+                "frontend/data/MapInfos.json": "5d69b1eb32b00b55f1f5f4587578d04460690a748f57acd7bcbf5c1f438d68d1"
+            },
+            "finding": {
+                "status": "verified",
+                "summary": "The complete structural New Game-equivalent chain has one owner per transition and VN return; runtime control recovery remains a human gate."
+            },
+            "details": {
+                "state_path": [
+                    "New Game/Map022",
+                    "Map046",
+                    "Map022",
+                    "Map045",
+                    "Map049",
+                    "Map045",
+                    "sling loop",
+                    "Map044"
+                ],
+                "cardinality": {
+                    "map022_enter_vn": 1,
+                    "map046_complete": 1,
+                    "map046_finish": 1,
+                    "map022_arrive_045": 1,
+                    "map045_enter_vn": 1,
+                    "map049_finish": 1
+                }
+            }
+        },
+        {
+            "test_id": "E2E-002",
+            "owning_task": "task_04",
+            "result": "passed",
+            "evidence_class": "automated_state_fixture",
+            "target_hashes": {
+                "planos/008-compozy-init/builds/fixtures/flow-state-positive.json": "0cc3aa1d75a8f867ca34d71b01a0e82fab9f0b8b7509b51edacd8c2d5db95bf3",
+                "frontend/data/Map022.json": "6b8088b2afde13e4357a32a5b0fb4566cbc0919c8e0b68f25514bc9d859e34fb",
+                "frontend/data/Map045.json": "18ebfc2f86a603fe363568a077be9cf8d5044290f45ed757fda19b7707177e85",
+                "frontend/data/Map046.json": "b5afb84e5ee8735d1eb3767e5f5cde8064c7e26a0e849160fd0b39cbd80ef35f",
+                "frontend/data/Map049.json": "33f44fa75740c87b91339c679e3fa5b02bbb44cce2a125f785ad28ae4c0ac238"
+            },
+            "finding": {
+                "status": "verified",
+                "summary": "Pre-entry, active VN, returning, post-return, and post-acquisition state fixtures converge structurally; real save serialization remains unexecuted."
+            },
+            "details": {
+                "phases": [
+                    "pre-entry",
+                    "active-vn",
+                    "returning-forjaprata",
+                    "post-return"
+                ],
+                "session_phases": [
+                    "active",
+                    "returning"
+                ],
+                "forjaprata_round_trip": "save-load-post-acquire"
+            }
+        },
+        {
+            "test_id": "E2E-003",
+            "owning_task": "task_04",
+            "result": "passed",
+            "evidence_class": "automated_structural",
+            "target_hashes": {
+                "frontend/data/Map022.json": "6b8088b2afde13e4357a32a5b0fb4566cbc0919c8e0b68f25514bc9d859e34fb",
+                "frontend/data/Map045.json": "18ebfc2f86a603fe363568a077be9cf8d5044290f45ed757fda19b7707177e85",
+                "frontend/data/Map046.json": "b5afb84e5ee8735d1eb3767e5f5cde8064c7e26a0e849160fd0b39cbd80ef35f"
+            },
+            "finding": {
+                "status": "verified",
+                "summary": "Repeated-entry targets expose one transition/reward owner and stable structural terminal pages; repeated runtime interaction remains a human gate."
+            },
+            "details": {
+                "one_shot_cardinality": {
+                    "complete_vn": 1,
+                    "arrive_map045": 1,
+                    "sling_grant": 1,
+                    "found_sling": 1
+                },
+                "terminal_pages": [
+                    "Map022:E18:P2",
+                    "Map045:E20:P3"
+                ]
+            }
+        },
+        {
+            "test_id": "E2E-004",
+            "owning_task": "task_04",
+            "result": "passed",
+            "evidence_class": "human_gate_contract",
+            "target_hashes": {
+                "planos/008-compozy-init/builds/evidence/human-playtest-template.md": "ded8e62826a9e31b1397c8d403c1c988166e482836bfefe962a0841aba1b6e4b",
+                "frontend/data/Map022.json": "6b8088b2afde13e4357a32a5b0fb4566cbc0919c8e0b68f25514bc9d859e34fb"
+            },
+            "finding": {
+                "status": "pending_human_execution",
+                "summary": "The neutral Coreto contract is complete and truthful; no perceptual or runtime approval is claimed."
+            },
+            "details": {
+                "gate_status": "not_executed",
+                "scenarios": [
+                    "PT-M022-01",
+                    "PT-M022-02",
+                    "PT-M022-03",
+                    "PT-M022-04",
+                    "PT-M022-05",
+                    "PT-M022-06"
+                ],
+                "observations_before_evaluation": true
+            }
+        },
+        {
+            "test_id": "E2E-005",
+            "owning_task": "task_04",
+            "result": "passed",
+            "evidence_class": "human_gate_contract",
+            "target_hashes": {
+                "planos/008-compozy-init/builds/evidence/human-playtest-template.md": "ded8e62826a9e31b1397c8d403c1c988166e482836bfefe962a0841aba1b6e4b",
+                "frontend/data/Map045.json": "18ebfc2f86a603fe363568a077be9cf8d5044290f45ed757fda19b7707177e85",
+                "frontend/data/Map049.json": "33f44fa75740c87b91339c679e3fa5b02bbb44cce2a125f785ad28ae4c0ac238"
+            },
+            "finding": {
+                "status": "pending_human_execution",
+                "summary": "The neutral Forjaprata contract covers comprehension, sling timing, repetition, and protected content without fabricating results."
+            },
+            "details": {
+                "gate_status": "not_executed",
+                "scenarios": [
+                    "FJ-01",
+                    "FJ-02",
+                    "FJ-03",
+                    "FJ-04"
+                ],
+                "observations_before_evaluation": true
+            }
+        },
+        {
+            "test_id": "E2E-006",
+            "owning_task": "task_04",
+            "result": "passed",
+            "evidence_class": "human_gate_contract",
+            "target_hashes": {
+                "planos/008-compozy-init/builds/evidence/human-playtest-template.md": "ded8e62826a9e31b1397c8d403c1c988166e482836bfefe962a0841aba1b6e4b",
+                "frontend/data/Map045.json": "18ebfc2f86a603fe363568a077be9cf8d5044290f45ed757fda19b7707177e85",
+                "frontend/data/Map049.json": "33f44fa75740c87b91339c679e3fa5b02bbb44cce2a125f785ad28ae4c0ac238",
+                "frontend/js/plugins/Coreto_QuestVN.js": "defca246bd70fc72ea62fa85378bd026a46c664bbf23431dd3324d3e7a62d234"
+            },
+            "finding": {
+                "status": "pending_human_execution",
+                "summary": "Audio restoration, mix, signal hierarchy, and muted-audio redundancy remain explicitly unexecuted."
+            },
+            "details": {
+                "gate_status": "not_executed",
+                "scenarios": [
+                    "AU-01",
+                    "AU-02"
+                ],
+                "accessibility": "required direction repeated with BGM/SE muted"
+            }
+        },
+        {
+            "test_id": "E2E-007",
+            "owning_task": "task_04",
+            "result": "passed",
+            "evidence_class": "editor_and_evidence_contract",
+            "target_hashes": {
+                "planos/008-compozy-init/builds/evidence/human-playtest-template.md": "ded8e62826a9e31b1397c8d403c1c988166e482836bfefe962a0841aba1b6e4b",
+                "frontend/data/Map022.json": "6b8088b2afde13e4357a32a5b0fb4566cbc0919c8e0b68f25514bc9d859e34fb",
+                "frontend/data/Map045.json": "18ebfc2f86a603fe363568a077be9cf8d5044290f45ed757fda19b7707177e85",
+                "frontend/data/Map046.json": "b5afb84e5ee8735d1eb3767e5f5cde8064c7e26a0e849160fd0b39cbd80ef35f",
+                "frontend/data/Map049.json": "33f44fa75740c87b91339c679e3fa5b02bbb44cce2a125f785ad28ae4c0ac238",
+                "frontend/data/CoretoQuests.json": "d19bc2c83e0c61d4d12dfd94d242628d1d62bf9d38ed56c3709f03b47e2de678",
+                "frontend/data/MapInfos.json": "5d69b1eb32b00b55f1f5f4587578d04460690a748f57acd7bcbf5c1f438d68d1",
+                "planos/008-compozy-init/builds/evidence/flow-state.json": "920e748fcdb2288718a738bcd02b423a28a244094542d6ccd1ae4d8e3be74f78",
+                "planos/008-compozy-init/builds/evidence/map022-experience.json": "dcd3ef98a421245156f2296d7de9f0ada204408126d2fe468816151bcf0c6aa2",
+                "planos/008-compozy-init/builds/evidence/map045-experience.json": "0815e9b58026f1066f8250fb4e6e66ef94e1fe82a67df2926cd8386678c3801d"
+            },
+            "finding": {
+                "status": "pending_editor_execution",
+                "summary": "All automated evidence is current and uniquely mapped; RPG Maker editor open/save/reopen remains truthfully not_executed."
+            },
+            "details": {
+                "editor_status": "not_executed",
+                "lower_validator_replay": [
+                    {
+                        "task": "task_01",
+                        "validator": "validate-flow-state",
+                        "command": "node planos/008-compozy-init/builds/validate-flow-state.mjs --output planos/008-compozy-init/builds/evidence/flow-state.json",
+                        "result": "passed",
+                        "output": "PASS validate-flow-state (UT-001..UT-002..UT-003..UT-004, IT-001..IT-002..IT-003) runtime_pending"
+                    },
+                    {
+                        "task": "task_02",
+                        "validator": "validate-map022-experience",
+                        "command": "node planos/008-compozy-init/builds/validate-map022-experience.mjs --output planos/008-compozy-init/builds/evidence/map022-experience.json",
+                        "result": "passed",
+                        "output": "PASS validate-map022-experience (UT-005..UT-007, IT-004..IT-005) runtime_pending"
+                    },
+                    {
+                        "task": "task_03",
+                        "validator": "validate-map045-experience",
+                        "command": "node planos/008-compozy-init/builds/validate-map045-experience.mjs --output planos/008-compozy-init/builds/evidence/map045-experience.json",
+                        "result": "passed",
+                        "output": "PASS validate-map045-experience (UT-008, UT-009, UT-010, IT-006, IT-007) runtime_pending"
+                    }
+                ],
+                "traceability": {
+                    "UT-001": {
+                        "owning_task": "task_01",
+                        "evidence": "planos/008-compozy-init/builds/evidence/flow-state.json",
+                        "evidence_class": "automated_structural"
+                    },
+                    "UT-002": {
+                        "owning_task": "task_01",
+                        "evidence": "planos/008-compozy-init/builds/evidence/flow-state.json",
+                        "evidence_class": "automated_structural"
+                    },
+                    "UT-003": {
+                        "owning_task": "task_01",
+                        "evidence": "planos/008-compozy-init/builds/evidence/flow-state.json",
+                        "evidence_class": "automated_structural"
+                    },
+                    "UT-004": {
+                        "owning_task": "task_01",
+                        "evidence": "planos/008-compozy-init/builds/evidence/flow-state.json",
+                        "evidence_class": "automated_structural"
+                    },
+                    "IT-001": {
+                        "owning_task": "task_01",
+                        "evidence": "planos/008-compozy-init/builds/evidence/flow-state.json",
+                        "evidence_class": "automated_structural"
+                    },
+                    "IT-002": {
+                        "owning_task": "task_01",
+                        "evidence": "planos/008-compozy-init/builds/evidence/flow-state.json",
+                        "evidence_class": "automated_structural"
+                    },
+                    "IT-003": {
+                        "owning_task": "task_01",
+                        "evidence": "planos/008-compozy-init/builds/evidence/flow-state.json",
+                        "evidence_class": "automated_structural"
+                    },
+                    "UT-005": {
+                        "owning_task": "task_02",
+                        "evidence": "planos/008-compozy-init/builds/evidence/map022-experience.json",
+                        "evidence_class": "automated_structural"
+                    },
+                    "UT-006": {
+                        "owning_task": "task_02",
+                        "evidence": "planos/008-compozy-init/builds/evidence/map022-experience.json",
+                        "evidence_class": "automated_structural"
+                    },
+                    "UT-007": {
+                        "owning_task": "task_02",
+                        "evidence": "planos/008-compozy-init/builds/evidence/map022-experience.json",
+                        "evidence_class": "automated_structural"
+                    },
+                    "IT-004": {
+                        "owning_task": "task_02",
+                        "evidence": "planos/008-compozy-init/builds/evidence/map022-experience.json",
+                        "evidence_class": "automated_structural"
+                    },
+                    "IT-005": {
+                        "owning_task": "task_02",
+                        "evidence": "planos/008-compozy-init/builds/evidence/map022-experience.json",
+                        "evidence_class": "automated_structural"
+                    },
+                    "UT-008": {
+                        "owning_task": "task_03",
+                        "evidence": "planos/008-compozy-init/builds/evidence/map045-experience.json",
+                        "evidence_class": "automated_structural"
+                    },
+                    "UT-009": {
+                        "owning_task": "task_03",
+                        "evidence": "planos/008-compozy-init/builds/evidence/map045-experience.json",
+                        "evidence_class": "automated_structural"
+                    },
+                    "UT-010": {
+                        "owning_task": "task_03",
+                        "evidence": "planos/008-compozy-init/builds/evidence/map045-experience.json",
+                        "evidence_class": "automated_structural"
+                    },
+                    "IT-006": {
+                        "owning_task": "task_03",
+                        "evidence": "planos/008-compozy-init/builds/evidence/map045-experience.json",
+                        "evidence_class": "automated_structural"
+                    },
+                    "IT-007": {
+                        "owning_task": "task_03",
+                        "evidence": "planos/008-compozy-init/builds/evidence/map045-experience.json",
+                        "evidence_class": "automated_structural"
+                    },
+                    "E2E-001": {
+                        "owning_task": "task_04",
+                        "evidence": "planos/008-compozy-init/builds/evidence/ex-vn-regression.json",
+                        "evidence_class": "automated_structural"
+                    },
+                    "E2E-002": {
+                        "owning_task": "task_04",
+                        "evidence": "planos/008-compozy-init/builds/evidence/ex-vn-regression.json",
+                        "evidence_class": "automated_structural"
+                    },
+                    "E2E-003": {
+                        "owning_task": "task_04",
+                        "evidence": "planos/008-compozy-init/builds/evidence/ex-vn-regression.json",
+                        "evidence_class": "automated_structural"
+                    },
+                    "E2E-004": {
+                        "owning_task": "task_04",
+                        "evidence": "planos/008-compozy-init/builds/evidence/ex-vn-regression.json",
+                        "evidence_class": "human_gate_contract"
+                    },
+                    "E2E-005": {
+                        "owning_task": "task_04",
+                        "evidence": "planos/008-compozy-init/builds/evidence/ex-vn-regression.json",
+                        "evidence_class": "human_gate_contract"
+                    },
+                    "E2E-006": {
+                        "owning_task": "task_04",
+                        "evidence": "planos/008-compozy-init/builds/evidence/ex-vn-regression.json",
+                        "evidence_class": "human_gate_contract"
+                    },
+                    "E2E-007": {
+                        "owning_task": "task_04",
+                        "evidence": "planos/008-compozy-init/builds/evidence/ex-vn-regression.json",
+                        "evidence_class": "human_gate_contract"
+                    }
+                }
+            }
+        }
+    ],
+    "traceability": {
+        "UT-001": {
+            "owning_task": "task_01",
+            "evidence": "planos/008-compozy-init/builds/evidence/flow-state.json",
+            "evidence_class": "automated_structural"
+        },
+        "UT-002": {
+            "owning_task": "task_01",
+            "evidence": "planos/008-compozy-init/builds/evidence/flow-state.json",
+            "evidence_class": "automated_structural"
+        },
+        "UT-003": {
+            "owning_task": "task_01",
+            "evidence": "planos/008-compozy-init/builds/evidence/flow-state.json",
+            "evidence_class": "automated_structural"
+        },
+        "UT-004": {
+            "owning_task": "task_01",
+            "evidence": "planos/008-compozy-init/builds/evidence/flow-state.json",
+            "evidence_class": "automated_structural"
+        },
+        "IT-001": {
+            "owning_task": "task_01",
+            "evidence": "planos/008-compozy-init/builds/evidence/flow-state.json",
+            "evidence_class": "automated_structural"
+        },
+        "IT-002": {
+            "owning_task": "task_01",
+            "evidence": "planos/008-compozy-init/builds/evidence/flow-state.json",
+            "evidence_class": "automated_structural"
+        },
+        "IT-003": {
+            "owning_task": "task_01",
+            "evidence": "planos/008-compozy-init/builds/evidence/flow-state.json",
+            "evidence_class": "automated_structural"
+        },
+        "UT-005": {
+            "owning_task": "task_02",
+            "evidence": "planos/008-compozy-init/builds/evidence/map022-experience.json",
+            "evidence_class": "automated_structural"
+        },
+        "UT-006": {
+            "owning_task": "task_02",
+            "evidence": "planos/008-compozy-init/builds/evidence/map022-experience.json",
+            "evidence_class": "automated_structural"
+        },
+        "UT-007": {
+            "owning_task": "task_02",
+            "evidence": "planos/008-compozy-init/builds/evidence/map022-experience.json",
+            "evidence_class": "automated_structural"
+        },
+        "IT-004": {
+            "owning_task": "task_02",
+            "evidence": "planos/008-compozy-init/builds/evidence/map022-experience.json",
+            "evidence_class": "automated_structural"
+        },
+        "IT-005": {
+            "owning_task": "task_02",
+            "evidence": "planos/008-compozy-init/builds/evidence/map022-experience.json",
+            "evidence_class": "automated_structural"
+        },
+        "UT-008": {
+            "owning_task": "task_03",
+            "evidence": "planos/008-compozy-init/builds/evidence/map045-experience.json",
+            "evidence_class": "automated_structural"
+        },
+        "UT-009": {
+            "owning_task": "task_03",
+            "evidence": "planos/008-compozy-init/builds/evidence/map045-experience.json",
+            "evidence_class": "automated_structural"
+        },
+        "UT-010": {
+            "owning_task": "task_03",
+            "evidence": "planos/008-compozy-init/builds/evidence/map045-experience.json",
+            "evidence_class": "automated_structural"
+        },
+        "IT-006": {
+            "owning_task": "task_03",
+            "evidence": "planos/008-compozy-init/builds/evidence/map045-experience.json",
+            "evidence_class": "automated_structural"
+        },
+        "IT-007": {
+            "owning_task": "task_03",
+            "evidence": "planos/008-compozy-init/builds/evidence/map045-experience.json",
+            "evidence_class": "automated_structural"
+        },
+        "E2E-001": {
+            "owning_task": "task_04",
+            "evidence": "planos/008-compozy-init/builds/evidence/ex-vn-regression.json",
+            "evidence_class": "automated_structural"
+        },
+        "E2E-002": {
+            "owning_task": "task_04",
+            "evidence": "planos/008-compozy-init/builds/evidence/ex-vn-regression.json",
+            "evidence_class": "automated_structural"
+        },
+        "E2E-003": {
+            "owning_task": "task_04",
+            "evidence": "planos/008-compozy-init/builds/evidence/ex-vn-regression.json",
+            "evidence_class": "automated_structural"
+        },
+        "E2E-004": {
+            "owning_task": "task_04",
+            "evidence": "planos/008-compozy-init/builds/evidence/ex-vn-regression.json",
+            "evidence_class": "human_gate_contract"
+        },
+        "E2E-005": {
+            "owning_task": "task_04",
+            "evidence": "planos/008-compozy-init/builds/evidence/ex-vn-regression.json",
+            "evidence_class": "human_gate_contract"
+        },
+        "E2E-006": {
+            "owning_task": "task_04",
+            "evidence": "planos/008-compozy-init/builds/evidence/ex-vn-regression.json",
+            "evidence_class": "human_gate_contract"
+        },
+        "E2E-007": {
+            "owning_task": "task_04",
+            "evidence": "planos/008-compozy-init/builds/evidence/ex-vn-regression.json",
+            "evidence_class": "human_gate_contract"
+        }
+    },
+    "editor_round_trip": {
+        "status": "not_executed",
+        "record": "planos/008-compozy-init/builds/evidence/human-playtest-template.md",
+        "limitation": "No connected RPG Maker MZ editor/desktop client was available to this spawned QA shell session."
+    },
+    "human_gates": {
+        "overall_status": "not_executed",
+        "record": "planos/008-compozy-init/builds/evidence/human-playtest-template.md",
+        "coreto": "not_executed",
+        "forjaprata": "not_executed",
+        "audio_accessibility": "not_executed",
+        "limitation": "No connected game runtime/human participants were available; runtime, timing, perception, and audiovisual judgment were not executed."
+    },
+    "residual_risks": [
+        "RPG Maker MZ editor serialization/open-save-reopen compatibility is unverified.",
+        "Real save/load reconstruction, control recovery, collision/passability, and repeated Autorun behavior are structurally covered but not runtime-observed.",
+        "Coreto activity recognition, Gab readability/priority, and five-of-six seat discovery within 90 seconds await human evidence.",
+        "Forjaprata next-action comprehension and five-of-six sling acquisition within three minutes await human evidence.",
+        "Theme5 transition quality, BGM/BGS restoration, signal hierarchy, and muted-audio accessibility await human judgment.",
+        "Sparse child ambience remains an approved bounded follow-up because no cooldown/concurrency owner was introduced."
+    ]
+}
