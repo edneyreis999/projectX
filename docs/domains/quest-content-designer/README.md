@@ -41,14 +41,22 @@ Classificação: **conteúdo e estado estáticos; Playtest pendente**.
 | Estado | Significado |
 | --- | --- |
 | `0` | Quest não iniciada |
-| `10` | Personagens sentados; entrada na VN |
+| `10` | Convocação concluída; objetivo de alcançar o lugar ativo |
+| `15` | Lugar alcançado; sessão da VN ativa |
 | `20` | VN concluída; retomada do encerramento físico |
 | `90` | Chegada ao Map045 concluída |
 
-As transições canônicas são `START` (`0` → `10`), `COMPLETE_VN` (`10` →
-`20`) e `ARRIVE_MAP045` (`20` → `90`). A quest PKD/SQSM
+As transições canônicas são `START` (`0` → `10`), `REACH_SEAT` (`10` →
+`15`), `COMPLETE_VN` (`15` → `20`) e `ARRIVE_MAP045` (`20` → `90`). A quest PKD/SQSM
 `assistirNoiteHistoria` é somente uma projeção idempotente desse estado no
 journal; não é autoridade de progresso.
+
+O tutorial da funda usa a mesma base com escopo local: [111]
+`v_qTutorialFundaForjaprata_stage` progride por `INTRODUCE_JOURNAL` (`0` →
+`10`), `FOUND_SLING` (`10` → `20`) e `LEAVE_EQUIPPED` (`20` → `90`). Como
+ele é uma submáquina de `aSemifinal`, seu terminal não conclui a quest maior.
+No registry, `completeQuestAtTerminal: false` explicita essa fronteira e
+`completedAt: null` explicita objetivos cuja conclusão pertence a outro fluxo.
 
 A ordem de plugins que preserva o contrato é `PKD` → `QuestCore` → `QuestVN`
 → `Cutscene`. Use este contrato ao alterar o registro da quest, suas

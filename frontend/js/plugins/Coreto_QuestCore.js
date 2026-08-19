@@ -1,8 +1,8 @@
 /*:
  * @target MZ
- * @plugindesc [v1.0.0] Núcleo data-driven de quests Coreto.
+ * @plugindesc [v1.1.0] Núcleo data-driven de quests Coreto.
  * @author Coreto
- * @version 1.0.0
+ * @version 1.1.0
  *
  * @help
  * Carrega data/CoretoQuests.json, mantém a variável declarada por quest como
@@ -13,6 +13,13 @@
  *
  * Para cadastrar outra quest, configure primeiro seu texto e objetivos no
  * PKD e adicione uma definição ao registry. Não edite este plugin.
+ *
+ * Projeção PKD:
+ * - completedAt numérico conclui o objetivo ao alcançar o estado.
+ * - completedAt null deixa a conclusão sob responsabilidade de um fluxo
+ *   externo, mas mantém a visibilidade controlada pelo registry.
+ * - completeQuestAtTerminal false permite que uma submáquina termine sem
+ *   concluir a quest PKD maior. O default permanece true.
  *
  * @command QuestTransition
  * @text Executar transição de quest
@@ -174,9 +181,14 @@
         integerArray(definition.terminalStates, "terminalStates", false, context);
 
         const pkd = assertObject(definition.pkd, "SCHEMA_PKD_INVALID", context);
-        assertKnownKeys(pkd, ["questId", "objectives"], context);
+        assertKnownKeys(pkd, ["questId", "objectives", "completeQuestAtTerminal"], context);
         if (typeof pkd.questId !== "string" || !pkd.questId.trim()) {
             fail("SCHEMA_PKD_QUEST_ID", context);
+        }
+        if (pkd.completeQuestAtTerminal !== undefined && typeof pkd.completeQuestAtTerminal !== "boolean") {
+            fail("SCHEMA_PKD_TERMINAL_POLICY", Object.assign({
+                completeQuestAtTerminal: pkd.completeQuestAtTerminal
+            }, context));
         }
         if (!Array.isArray(pkd.objectives) || pkd.objectives.length === 0) {
             fail("SCHEMA_OBJECTIVES_INVALID", context);
@@ -187,8 +199,11 @@
             assertKnownKeys(objective, ["id", "knownFrom", "completedAt"], context);
             integer(objective.id, "objective.id", 1, context);
             integer(objective.knownFrom, "objective.knownFrom", 0, context);
-            integer(objective.completedAt, "objective.completedAt", 0, context);
-            if (objective.completedAt < objective.knownFrom || objectiveIds.has(objective.id)) {
+            if (objective.completedAt !== null) {
+                integer(objective.completedAt, "objective.completedAt", 0, context);
+            }
+            if ((objective.completedAt !== null && objective.completedAt < objective.knownFrom) ||
+                    objectiveIds.has(objective.id)) {
                 fail("SCHEMA_OBJECTIVE_ORDER", Object.assign({ objective }, context));
             }
             objectiveIds.add(objective.id);
@@ -239,7 +254,8 @@
             if (!states.has(terminalState)) fail("SCHEMA_UNKNOWN_TERMINAL_STATE", Object.assign({ terminalState }, context));
         }
         for (const objective of pkd.objectives) {
-            if (!states.has(objective.knownFrom) || !states.has(objective.completedAt)) {
+            if (!states.has(objective.knownFrom) ||
+                    (objective.completedAt !== null && !states.has(objective.completedAt))) {
                 fail("SCHEMA_OBJECTIVE_STATE_UNKNOWN", Object.assign({ objective }, context));
             }
         }
@@ -344,11 +360,14 @@
             if (!api.isQuestTaskVisible(questId, objective.id)) {
                 api.ShowTaskForQuest(questId, objective.id);
             }
-            if (current >= objective.completedAt && !api.isQuestTaskComplete(questId, objective.id)) {
+            if (objective.completedAt !== null && current >= objective.completedAt &&
+                    !api.isQuestTaskComplete(questId, objective.id)) {
                 api.CompleteTaskForQuest(questId, objective.id);
             }
         }
-        if (terminal && !api.isQuestComplete(questId)) api.CompleteQuest(questId);
+        if (terminal && quest.pkd.completeQuestAtTerminal !== false && !api.isQuestComplete(questId)) {
+            api.CompleteQuest(questId);
+        }
         return { questKey, state: current, terminal, projected: true };
     }
 
@@ -541,7 +560,7 @@
     };
 
     Coreto.QuestCore = {
-        version: "1.0.0",
+        version: "1.1.0",
         CoretoQuestError,
         definition,
         state,

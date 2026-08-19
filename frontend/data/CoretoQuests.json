@@ -13,11 +13,11 @@
                     {
                         "id": 1,
                         "knownFrom": 10,
-                        "completedAt": 10
+                        "completedAt": 15
                     },
                     {
                         "id": 2,
-                        "knownFrom": 10,
+                        "knownFrom": 15,
                         "completedAt": 20
                     }
                 ]
@@ -31,9 +31,17 @@
                     "requirements": [],
                     "effects": []
                 },
-                "COMPLETE_VN": {
+                "REACH_SEAT": {
                     "from": [
                         10
+                    ],
+                    "to": 15,
+                    "requirements": [],
+                    "effects": []
+                },
+                "COMPLETE_VN": {
+                    "from": [
+                        15
                     ],
                     "to": 20,
                     "requirements": [],
@@ -63,7 +71,8 @@
                         "CENA_PRINCIPAL": {
                             "eventId": 1,
                             "allowedStates": [
-                                10
+                                10,
+                                15
                             ]
                         }
                     }
@@ -83,8 +92,14 @@
                         "id": 1,
                         "knownFrom": 10,
                         "completedAt": 20
+                    },
+                    {
+                        "id": 2,
+                        "knownFrom": 20,
+                        "completedAt": null
                     }
-                ]
+                ],
+                "completeQuestAtTerminal": false
             },
             "transitions": {
                 "INTRODUCE_JOURNAL": {
@@ -102,6 +117,15 @@
                     "to": 20,
                     "requirements": [],
                     "effects": []
+                },
+                "LEAVE_EQUIPPED": {
+                    "from": [
+                        20
+                    ],
+                    "to": 90,
+                    "requirements": [],
+                    "effects": [],
+                    "terminal": true
                 }
             },
             "extensions": {

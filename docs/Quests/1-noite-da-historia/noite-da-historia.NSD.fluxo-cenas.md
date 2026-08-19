@@ -9,7 +9,7 @@
 - **Nome da quest**: Noite da História
 - **Importância na campanha**: Main + Tutorial
 - **Controle principal**: [106] `v_qNoiteDaHistoria_stage`
-- **Estados implementados**: `0` (antes da convocação) → `10` (ir ao lugar) → `20` (VN concluída) → `90` (chegada à Casa Forjaprata; terminal)
+- **Estados implementados**: `0` (antes da convocação) → `10` (ir ao lugar) → `15` (lugar alcançado; VN ativa) → `20` (VN concluída) → `90` (chegada à Casa Forjaprata; terminal)
 - **Controle legado ainda consultado na abertura do mapa**: [026] `v_qNoite_progress`
 - **Arco narrativo**: Mundo Comum
 - **Quest anterior**: Nenhuma (primeira quest do jogo)
@@ -86,12 +86,12 @@ Mapas: [022] `EX_Coreto` → [046] `VN_Noite_da_Historia`
 
 | ID | Título | Premissa resumida | Tipo |
 | --- | --- | --- | --- |
-| **3-A** | **Chegada ao lugar** | Ao tocar a posição indicada no estado `10`, a criança se vira para cima e inicia a cutscene. | 🎮 |
+| **3-A** | **Chegada ao lugar** | Ao tocar a posição indicada no estado `10`, a criança se vira para cima, entra na VN e a transição `REACH_SEAT` registra o estado `15` antes do primeiro diálogo. | 🎮 |
 | **3-B** | **Aproximação de Rheed** | Rheed caminha até `(12,13)`, volta-se para as crianças e a tela escurece para entrar na VN. | 🎬 |
 | **3-C** | **O último ouvinte** | Rheed brinca com o atraso da criança e sugere o nome “Dulgarin”. | 🎬 |
 | **3-D** | **Escolha do nome** | O jogador aceita “Dulgarin” ou abre a entrada de nome, limitada a oito caracteres. | 🎮 |
 | **3-E** | **Introdução da história** | Rheed apresenta Daratrine como refúgio de soldados feridos, conduz o relato a Gildrat e apresenta Thorin com um cut-in. | 🎬 |
-| **3-F** | **Poção antiga** | Rheed pede que as crianças fechem os olhos e narra que uma poção antiga as transportará para Gildrat. A transição `COMPLETE_VN` leva a quest de `10` para `20`. | 🎬 |
+| **3-F** | **Poção antiga** | Rheed pede que as crianças fechem os olhos e narra que uma poção antiga as transportará para Gildrat. A transição `COMPLETE_VN` leva a quest de `15` para `20`. | 🎬 |
 
 **Decisão do jogador na Cena 3:**
 
@@ -123,6 +123,7 @@ Mapas: [022] `EX_Coreto` → [045] `EX_Casa da Família Forjaprata`
 | --- | --- | --- |
 | **Narrativa** | A quest estabelece a estrutura meta-narrativa: Rheed conta às crianças a história que o jogador passa a vivenciar como Thorin. | Alta |
 | **Estado** | A máquina de estados canônica usa [106] `v_qNoiteDaHistoria_stage`; [026] permanece apenas em condições legadas da abertura do Coreto. | Alta |
+| **Journal** | O objetivo “Encontre um lugar” fica visível em `10` e só é concluído em `15`; “Diga seu nome” passa a ficar visível em `15` e é concluído em `20`. | Alta |
 | **Apresentação** | O Coreto usa câmera de mapa, rotas estruturadas, Gabs ambientes e uma VN dedicada em [046]. | Alta |
 | **Transição** | O vídeo chamado `Cutscene 2` conecta a VN à transferência para a Casa Forjaprata; seu conteúdo visual não é especificado neste documento além do que o evento executa. | Média |
 
@@ -144,3 +145,4 @@ Mapas: [022] `EX_Coreto` → [045] `EX_Casa da Família Forjaprata`
 | --- | --- | --- | --- |
 | 1.0 | 2026-02-16 | Edney | Documento inicial criado via entrevista interativa. |
 | 1.1 | 2026-08-19 | Codex | Fluxo reconciliado com a implementação atual da quest, da VN e da transição para a Casa Forjaprata. |
+| 1.2 | 2026-08-19 | Codex | Marco `REACH_SEAT` e projeção do journal alinhados à chegada real ao lugar. |

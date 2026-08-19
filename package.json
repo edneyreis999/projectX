@@ -4,6 +4,7 @@
   "description": "My first project with RPG Maker MZ",
   "scripts": {
     "test": "jest",
+    "test:quest-state-machines": "jest frontend/__tests__/quests/quest-state-machines-ex-vn.test.js frontend/__tests__/plugins/Coreto_QuestCore.test.js --runInBand",
     "lint": "eslint \"frontend/js/plugins/**/*.{ts,js}\" \"frontend/typescript/**/*.{ts,js}\" --fix",
     "lint:check": "eslint \"frontend/js/plugins/**/*.{ts,js}\" \"frontend/typescript/**/*.{ts,js}\" --max-warnings=0",
     "format": "prettier --write \"frontend/js/plugins/**/*.{ts,js}\" \"frontend/typescript/**/*.{ts,js}\"",
