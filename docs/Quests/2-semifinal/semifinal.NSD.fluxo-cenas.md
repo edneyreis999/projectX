@@ -1,6 +1,6 @@
 # 🎮 Narrative Structure Document (NSD) - Fluxo Visual De Cenas
 
-## 📄 Quest: A semi final
+## 📄 Quest: A Semifinal
 
 ### 1️⃣ Resumo Geral _(Checkpoint 0)_
 
@@ -8,9 +8,10 @@
 
 - **Nome da quest**: A Semifinal
 - **Importância na campanha**: Main + Tutorial
-- **Variável de controle**: 0029 v_qSemifinal_progress
+- **Variável de controle geral**: [029] `v_qSemifinal_progress`
+- **Controle local da Casa Forjaprata**: [111] `v_qTutorialFundaForjaprata_stage` (`0` → `10` → `20`)
 - **Arco narrativo**: Ato I — Mundo Comum
-- **Quest anterior**: Nenhuma (primeira quest do jogo)
+- **Quest anterior**: Noite da História
 - **Conflito central**: A liberdade e paixão por futebol rúnico de Thorin entram em choque com a autoridade e o controle impostos por seu pai, o General Tordan.
 - **Objetivo narrativo global**: Apresentar Thorin, destacando seu traço de irresponsabilidade, sua paixão e excelência no futebol rúnico, e instaurar o conflito entre a independência do protagonista
   e a autoridade de seu pai, o poderoso General Tordan.
@@ -20,7 +21,7 @@
   seu time, sua celebração é interrompida por guardas reais enviados pelo pai, o General Tordan, destacando o conflito entre sua liberdade e a autoridade do pai.
 - **Locais principais**:
 
-  - Casa da Família Forja Prata,
+  - Casa da Família Forjaprata,
   - Distrito Residencial,
   - Distrito comercial de Gildrat,
   - Campo de futebol rúnico
@@ -28,7 +29,9 @@
 
 - **NPCs principais**:
   - Thorin
-  - Mãe do Thorin, Sáparo-boca-de-corneta
+  - Mélia (mãe de Thorin)
+  - Sáparo-boca-de-corneta
+  - Theodore Rheed e as crianças da Noite da História (na apresentação da Casa Forjaprata)
   - Dragobur
   - Filena
   - Tordan
@@ -47,7 +50,7 @@
 
 | Tipo                                 | Descrição                                                                           |
 | ------------------------------------ | ----------------------------------------------------------------------------------- |
-| **Flags / Decisões anteriores**      | Jogador deve ter escolhido o nome da criança ouvindo a históriaNenhuma              |
+| **Flags / Decisões anteriores**      | “Noite da História” deve ter chegado ao estado terminal `90`; o nome da criança já foi definido na VN. |
 | **Estado emocional do protagonista** | Apressado e ansioso, recém-desperto de um pesadelo                                  |
 | **Limitações ou bloqueios**          | No Distrito Comercial, acesso ao caminho do Castelo e ao World Map estão bloqueados |
 
@@ -61,8 +64,8 @@
 
 | #   | Nome da Cena          | Cronologia (ordem dos eventos)                                                                  | Premissa                                                                                                                 |
 | --- | --------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| 1   | Pesadelo Premonitório | Música calma → Aviso da mãe → Jump-scare → Thorin acorda                                        | No sonho, a mãe de Thorin o alerta sobre uma ameaça iminente antes de uma criatura irromper nas sombras e pular na tela. |
-| 2   | Alvorada Atrasada     | Quarto de Thorin → Sáparo avisa → Pegar a funda → Porta da casa → Entrada do Distrito Comercial | Thorin acorda atrasado e, sob o grito do sáparo, precisa correr para o estádio.                                          |
+| 1   | Pesadelo e Casa Forjaprata | Thorin adormecido → quatro quadros do pesadelo → retorno ao quarto → Rheed e as crianças materializam → apresentação da casa → reações infantis → grupo desaparece | Conectar a moldura narrativa da Noite da História ao primeiro cenário da vida de Thorin. |
+| 2   | Alvorada Atrasada     | Thorin desperta → Sáparo avisa → tentativa de sair introduz o diário → pegar e equipar a funda → saída para o Distrito Residencial | Thorin acorda atrasado e precisa recuperar a funda antes de deixar a Casa Forjaprata. |
 | 3   | Corrida pelas Ruas    | Distrito Comercial → Bloqueio ao Castelo → Desviar de pedestres → Portão do estádio             | O jogador guia Thorin pelos bairros de Gildrat até chegar ao portão do estádio.                                          |
 | 4   | Bronca no Gramado     | Portão do estádio → Treinador Dragobur aponta falta do capacete                                 | Dragobur dá uma bronca sobre o atraso e barra a entrada de Thorin ao notar que ele esqueceu o capacete.                  |
 | 5   | Capacete Perdido      | Tentativa vestiário feminino (gag) → Vestiário masculino → Encontra e equipa capacete           | Entre gag no vestiário feminino e armários bagunçados, Thorin encontra e equipa o capacete antigo do treinador.          |
@@ -73,25 +76,39 @@
 
 ### Beats por Cena
 
-#### Cena 1 – Pesadelo Premonitório
+#### Cena 1 – Pesadelo e Casa Forjaprata
 
-| ID      | Titulo                      | Premissa Resumida                                                                                    | Tipo |
-| ------- | --------------------------- | ---------------------------------------------------------------------------------------------------- | ---- |
-| **1-A** | **Calma Ilusória**          | Música suave e ambiente sereno no sonho oferecem um contraste calmo que antecede a tensão.           | 🎬   |
-| **1-B** | **Aviso Materno**           | A mãe de Thorin surge aflita dizendo “não temos tempo!”, instaurando a urgência que move a história. | 🎬   |
-| **1-C** | **Tensão Crescente**        | Sons distorcem e sombras se movem; o clima fica opressivo e prenuncia o susto.                       | 🎬   |
-| **1-D** | **Jump-Scare**              | Criatura irrompe das trevas e “pula na tela”, atingindo o ápice de medo do sonho.                    | 🎬   |
-| **1-E** | **Despertar Sobressaltado** | Corte abrupto: Thorin acorda suando na cama, ligando sonho e realidade.                              | 🎬   |
+Mapas: [045] `EX_Casa da Família Forjaprata` → [049] `VN_Casa_Forjaprata` → [045] `EX_Casa da Família Forjaprata`
+
+> **Status:** este recorte está implementado. A descrição abaixo registra o comportamento atual dos eventos.
+
+| ID | Título | Premissa resumida | Tipo |
+| --- | --- | --- | --- |
+| **1-A** | **Thorin adormecido** | Na Casa Forjaprata, Thorin permanece com a animação de sono enquanto música, vento e efeito mágico preparam a passagem para a VN. | 🎬 |
+| **1-B** | **Quatro quadros do pesadelo** | A VN exibe `Pesadelo1_1` a `Pesadelo1_4`, com fades entre os quadros e as falas “Meu filho... Thorin...”, “Você precisa...”, “Rápido...” e “O QUÊ!?”. | 🎬 |
+| **1-C** | **Retorno à casa** | A VN termina e ativa Rheed e dezoito crianças na origem [045], mantendo Thorin no quarto como cenário da história contada. | 🎬 |
+| **1-D** | **Materialização do grupo** | Rheed e as crianças surgem gradualmente após uma única Animação 35. | 🎬 |
+| **1-E** | **Rheed toma posição** | Rheed anda para a esquerda, para cima e novamente para a esquerda, termina em `(9,5)`, vira-se para baixo e só então fala. | 🎬 |
+| **1-F** | **Apresentação da Casa Forjaprata** | Rheed diz: “Então, crianças, esta é a Casa da Família Forjaprata!”. A Gab é não forçada e sua conclusão é aguardada. | 🎬 |
+| **1-G** | **Reações das crianças** | E35 e E39 giram rapidamente; E33 olha para cima, salta e diz “Parece de verdade...”; E29 diz “Uau!” e gira mais devagar, com pausas. Todas terminam voltadas para cima. | 🎬 |
+| **1-H** | **Retorno à história** | Depois de todas as reações, Rheed diz: “HAHAHAHA! agora vamos voltar para história”. A conclusão da Gab é aguardada antes do fade. | 🎬 |
+| **1-I** | **Desaparecimento e limpeza** | Rheed e as crianças perdem opacidade e são retirados da cena; o cleanup também prepara Mélia e Sáparo para o despertar, sem repetir a animação de materialização. | 🎬 |
 
 #### Cena 2 – Alvorada Atrasada
 
-| ID      | Titulo                          | Premissa Resumida                                                                                                                                                                              | Tipo |
-| ------- | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
-| **2-A** | **Acordar Sobressaltado**       | Thorin desperta ofegante, ligando o pesadelo ao mundo real.                                                                                                                                    | 🎬   |
-| **2-B** | **Sáparo ao Lado**              | Sáparo-boca-de-corneta, no quarto, berra que o jogo já começou → urgência imediata.                                                                                                            | 🎬   |
-| **2-C** | **Pegar a Funda**               | Thorin agarra sua _funda_ sobre a cômoda; breve prompt de interação.                                                                                                                           | 🎮   |
-| **2-D** | **Destino: Distrito Comercial** | Thorin cruza a porta de casa; ainda no **mapa do Distrito Residencial**, a câmera foca a passagem que leva ao Distrito Comercial e o HUD exibe “Siga para o centro da cidade!”.                | 🎮   |
-| **2-E** | **Destino: Estádio**            | Ao entrar no **mapa do Distrito Comercial**, a câmera destaca o portão do estádio ao fundo e o HUD troca para “Corra para o estádio!”. Controle é entregue ao jogador para atravessar as ruas. | 🎮   |
+Mapa: [045] `EX_Casa da Família Forjaprata`
+
+> **Status:** o despertar, o tutorial da funda e a saída da casa estão implementados. Esta revisão não altera a especificação das cenas posteriores.
+
+| ID | Título | Premissa resumida | Tipo |
+| --- | --- | --- | --- |
+| **2-A** | **Despertar** | Após a saída de Rheed e das crianças, a apresentação retorna ao quarto, a animação de sono termina e Thorin recupera o controle da cena. | 🎬 |
+| **2-B** | **Aviso de Sáparo** | Sáparo diz: “O jogo já começou, seu babão. É melhor correr!”. Em interações seguintes, reforça a pressa com uma Gab própria. | 🎬 |
+| **2-C** | **Semifinal em andamento** | [029] `v_qSemifinal_progress` passa a `2` e a descrição de save é atualizada para `aSemifinal`. | 🎬 |
+| **2-D** | **Tentativa de sair** | Se Thorin tentar sair com o tutorial no estado `0`, percebe que esqueceu a funda; a transição `INTRODUCE_JOURNAL` leva o estado a `10`, ativa a quest e abre o diário. | 🎮 |
+| **2-E** | **Encontrar a funda** | No estado `10`, o jogador abre o baú em `(19,14)`, recebe a arma Funda, revela o comando de equipamentos e avança por `FOUND_SLING` para o estado `20`. | 🎮 |
+| **2-F** | **Equipar antes de sair** | A porta impede a saída enquanto a Funda não estiver equipada por Thorin e apresenta uma Gab explicando o requisito. | 🎮 |
+| **2-G** | **Saída da Casa Forjaprata** | Com a Funda equipada, Thorin atravessa a porta e é transferido para [044] `EX_Distrito Residencial Nobre`, em `(5,22)`. | 🎮 |
 
 #### Cena 3 – Corrida pelas Ruas
 
