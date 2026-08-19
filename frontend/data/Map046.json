@@ -1435,6 +1435,19 @@
                             "code": 357,
                             "indent": 0,
                             "parameters": [
+                                "Coreto_QuestCore",
+                                "QuestTransition",
+                                "QuestTransition",
+                                {
+                                    "questKey": "noite-da-historia",
+                                    "transitionId": "REACH_SEAT"
+                                }
+                            ]
+                        },
+                        {
+                            "code": 357,
+                            "indent": 0,
+                            "parameters": [
                                 "VisuMZ_2_VNPictureBusts",
                                 "Basic_EnterBust",
                                 "BASIC: Enter Bust",

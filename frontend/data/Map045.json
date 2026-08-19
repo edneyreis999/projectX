@@ -5325,6 +5325,19 @@
                             ]
                         },
                         {
+                            "code": 357,
+                            "indent": 4,
+                            "parameters": [
+                                "Coreto_QuestCore",
+                                "QuestTransition",
+                                "QuestTransition",
+                                {
+                                    "questKey": "tutorial-funda-forjaprata",
+                                    "transitionId": "LEAVE_EQUIPPED"
+                                }
+                            ]
+                        },
+                        {
                             "code": 201,
                             "indent": 4,
                             "parameters": [
@@ -5418,6 +5431,144 @@
                         },
                         {
                             "code": 412,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 0,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 412,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 0,
+                            "indent": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "moveFrequency": 4,
+                    "moveRoute": {
+                        "list": [
+                            {
+                                "code": 0,
+                                "parameters": []
+                            }
+                        ],
+                        "repeat": true,
+                        "skippable": false,
+                        "wait": false
+                    },
+                    "moveSpeed": 4,
+                    "moveType": 0,
+                    "priorityType": 0,
+                    "stepAnime": true,
+                    "through": false,
+                    "trigger": 1,
+                    "walkAnime": true
+                },
+                {
+                    "conditions": {
+                        "actorId": 1,
+                        "actorValid": false,
+                        "itemId": 1,
+                        "itemValid": false,
+                        "selfSwitchCh": "A",
+                        "selfSwitchValid": false,
+                        "switch1Id": 1,
+                        "switch1Valid": false,
+                        "switch2Id": 1,
+                        "switch2Valid": false,
+                        "variableId": 111,
+                        "variableValid": true,
+                        "variableValue": 90
+                    },
+                    "directionFix": true,
+                    "image": {
+                        "tileId": 0,
+                        "characterName": "",
+                        "direction": 2,
+                        "pattern": 2,
+                        "characterIndex": 7
+                    },
+                    "list": [
+                        {
+                            "code": 111,
+                            "indent": 0,
+                            "parameters": [
+                                4,
+                                3,
+                                4,
+                                1
+                            ]
+                        },
+                        {
+                            "code": 201,
+                            "indent": 1,
+                            "parameters": [
+                                0,
+                                44,
+                                5,
+                                22,
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 115,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 0,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 411,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 357,
+                            "indent": 1,
+                            "parameters": [
+                                "VisuMZ_4_GabWindow",
+                                "GabTextOnly",
+                                "Gab: Text Only",
+                                {
+                                    "Text:json": "\"Preciso equipar minha Funda antes de sair.\"",
+                                    "ForceGab:eval": "true",
+                                    "Override:struct": "{\"DimColor\":\"\",\"DimColor1:str\":\"\",\"DimColor2:str\":\"\",\"Fade\":\"\",\"FadeRate:num\":\"\",\"FadeDirection:str\":\"\",\"Font\":\"\",\"FontName:str\":\"\",\"FontSize:num\":\"\",\"Position\":\"\",\"YLocation:num\":\"\",\"ActorID:num\":\"1\",\"PartyIndex:num\":\"\",\"EnemyIndex:num\":\"\",\"EventID:num\":\"\",\"OnDisplay\":\"\",\"BypassAntiRepeat:eval\":\"true\",\"SoundFilename:str\":\"\",\"SoundVolume:num\":\"90\",\"SoundPitch:num\":\"100\",\"SoundPan:num\":\"0\",\"OnDisplayJS:func\":\"\",\"OnFinish\":\"\",\"GabSwitch:num\":\"\",\"OnFinishJS:func\":\"\",\"Waiting\":\"\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                                }
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 1,
+                            "parameters": [
+                                "Text = \"Preciso equipar minha Funda antes de sair.\""
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 1,
+                            "parameters": [
+                                "Force Gab? = true"
+                            ]
+                        },
+                        {
+                            "code": 657,
+                            "indent": 1,
+                            "parameters": [
+                                "Optional Settings = {\"DimColor\":\"\",\"DimColor1:str\":\"\",\"DimC…"
+                            ]
+                        },
+                        {
+                            "code": 115,
                             "indent": 1,
                             "parameters": []
                         },
@@ -12570,13 +12721,6 @@
                             "indent": 1,
                             "parameters": [
                                 "Weapon ID = 1"
-                            ]
-                        },
-                        {
-                            "code": 355,
-                            "indent": 1,
-                            "parameters": [
-                                "SQSM.ShowTaskForQuest(\"aSemifinal\", 2);"
                             ]
                         },
                         {

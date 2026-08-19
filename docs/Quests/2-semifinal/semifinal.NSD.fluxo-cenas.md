@@ -9,7 +9,7 @@
 - **Nome da quest**: A Semifinal
 - **Importância na campanha**: Main + Tutorial
 - **Variável de controle geral**: [029] `v_qSemifinal_progress`
-- **Controle local da Casa Forjaprata**: [111] `v_qTutorialFundaForjaprata_stage` (`0` → `10` → `20`)
+- **Controle local da Casa Forjaprata**: [111] `v_qTutorialFundaForjaprata_stage` (`0` → `10` → `20` → `90`, terminal local)
 - **Arco narrativo**: Ato I — Mundo Comum
 - **Quest anterior**: Noite da História
 - **Conflito central**: A liberdade e paixão por futebol rúnico de Thorin entram em choque com a autoridade e o controle impostos por seu pai, o General Tordan.
@@ -108,7 +108,14 @@ Mapa: [045] `EX_Casa da Família Forjaprata`
 | **2-D** | **Tentativa de sair** | Se Thorin tentar sair com o tutorial no estado `0`, percebe que esqueceu a funda; a transição `INTRODUCE_JOURNAL` leva o estado a `10`, ativa a quest e abre o diário. | 🎮 |
 | **2-E** | **Encontrar a funda** | No estado `10`, o jogador abre o baú em `(19,14)`, recebe a arma Funda, revela o comando de equipamentos e avança por `FOUND_SLING` para o estado `20`. | 🎮 |
 | **2-F** | **Equipar antes de sair** | A porta impede a saída enquanto a Funda não estiver equipada por Thorin e apresenta uma Gab explicando o requisito. | 🎮 |
-| **2-G** | **Saída da Casa Forjaprata** | Com a Funda equipada, Thorin atravessa a porta e é transferido para [044] `EX_Distrito Residencial Nobre`, em `(5,22)`. | 🎮 |
+| **2-G** | **Saída da Casa Forjaprata** | Com a Funda equipada, `LEAVE_EQUIPPED` encerra o tutorial local em `90` e Thorin é transferido para [044] `EX_Distrito Residencial Nobre`, em `(5,22)`. Uma página de recuperação repete a validação do equipamento caso a transferência seja interrompida. | 🎮 |
+
+> O registry controla a visibilidade dos objetivos 1 e 2 de `aSemifinal`. O
+> objetivo 2 (“Corra até o estádio...”) fica visível em `20`, mas sua conclusão
+> permanece externa a esta submáquina porque ocorre no fluxo geral da quest,
+> fora da Casa Forjaprata. Por isso `completedAt` é `null` e
+> `completeQuestAtTerminal` é `false`: o terminal `90` encerra apenas o tutorial
+> local, não a quest `aSemifinal` inteira.
 
 #### Cena 3 – Corrida pelas Ruas
 

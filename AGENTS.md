@@ -43,3 +43,7 @@ Configuracoes que afetam todo o sistema de combate e devem ser consideradas em d
 
 - Sempre dar prefencia por notetags VisuStella ou Coreto.
 - Procurar em `docs/rpg-maker-for-ia` se já existe algum plugin VisuStella que resolve o problema.
+
+# Arquitetura e Convenções
+
+- Quando a tarefa tangenciar arquitetura ou padrões do projeto, consultar os documentos relevantes em `docs/architecture/` e `docs/project-conventions/`.
