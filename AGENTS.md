@@ -47,3 +47,11 @@ Configuracoes que afetam todo o sistema de combate e devem ser consideradas em d
 # Arquitetura e Convenções
 
 - Quando a tarefa tangenciar arquitetura ou padrões do projeto, consultar os documentos relevantes em `docs/architecture/` e `docs/project-conventions/`.
+
+# Mensagens de Commit e Pull Request
+
+- Ao preparar uma mensagem de commit, seguir `.gitmessage`, mesmo quando o commit for criado com `-m` ou por uma ferramenta que não abra o template automaticamente.
+- Ao preparar um pull request, seguir `.github/pull_request_template.md` e priorizar o resultado observável do ponto de vista do jogador.
+- Explicar a experiência antes e depois, por que a mudança importa, como foi validada e quais capturas podem demonstrá-la em um devlog.
+- Se uma alteração não tiver impacto direto para o jogador, declarar isso e explicar o que ela viabiliza. Nunca inventar um benefício para preencher o template.
+- Não afirmar que houve playtest, teste, captura ou validação sem evidência de que a atividade foi realmente executada.
