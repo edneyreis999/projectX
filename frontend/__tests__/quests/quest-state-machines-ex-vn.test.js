@@ -98,7 +98,7 @@ describe('Reference quest state machines — Exploration and Visual Novel', () =
   const registry = readJson('data/CoretoQuests.json');
   const system = readJson('data/System.json');
   const mapInfos = readJson('data/MapInfos.json');
-  const maps = Object.fromEntries([22, 32, 39, 44, 45, 46, 49].map(id => [id, map(id)]));
+  const maps = Object.fromEntries([22, 32, 39, 44, 45, 46, 49, 61, 62, 63, 64].map(id => [id, map(id)]));
 
   test('keeps the authorized map boundary explicit and complete', () => {
     const descendantsOf = rootId => {
@@ -115,12 +115,20 @@ describe('Reference quest state machines — Exploration and Visual Novel', () =
       return result.sort((a, b) => a - b);
     };
 
-    expect(descendantsOf(16)).toEqual([22, 32, 39, 44, 45]);
+    expect(descendantsOf(16)).toEqual([22, 32, 39, 44, 45, 61, 62, 63, 64]);
     expect(descendantsOf(18)).toEqual([46, 49]);
     expect(mapInfos[16].name).toBe('Exploration');
     expect(mapInfos[18].name).toBe('Visual Novel');
+    expect(mapInfos[61]).toMatchObject({ name: 'EX_Distrito_Comercial', parentId: 39 });
+    expect(mapInfos[62]).toMatchObject({ name: 'EX_Estadio', parentId: 39 });
+    expect(mapInfos[63]).toMatchObject({ name: 'EX_Vestiario', parentId: 62 });
+    expect(mapInfos[64]).toMatchObject({ name: 'EX_Campo_de_Futebol_Runico', parentId: 62 });
     expect(maps[22].note).toBe('<CoretoMapType:EX>');
     expect(maps[45].note).toBe('<CoretoMapType:EX>');
+    expect(maps[61].note).toBe('<CoretoMapType:EX>');
+    expect(maps[62].note).toBe('<CoretoMapType:EX>');
+    expect(maps[63].note).toBe('<CoretoMapType:EX>');
+    expect(maps[64].note).toBe('<CoretoMapType:EX>');
     expect(maps[46].note).toBe('<CoretoMapType:VN>');
     expect(maps[49].note).toBe('<CoretoMapType:VN>');
   });
