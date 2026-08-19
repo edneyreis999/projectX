@@ -1,0 +1,252 @@
+{
+    "schema_version": 1,
+    "validator": "validate-map045-experience",
+    "result": "passed",
+    "classification": "runtime_pending",
+    "test_ids": [
+        "UT-008",
+        "UT-009",
+        "UT-010",
+        "IT-006",
+        "IT-007"
+    ],
+    "targets": [
+        "frontend/data/Map045.json",
+        "frontend/data/Map049.json",
+        "frontend/data/CoretoQuests.json",
+        "frontend/data/System.json",
+        "frontend/data/Weapons.json",
+        "frontend/data/Actors.json",
+        "frontend/js/plugins/Coreto_QuestVN.js",
+        "frontend/js/plugins/Coreto_Quests.js",
+        "planos/008-compozy-init/builds/audio-design-decision.md"
+    ],
+    "target_hashes": {
+        "frontend/data/Map045.json": "18ebfc2f86a603fe363568a077be9cf8d5044290f45ed757fda19b7707177e85",
+        "frontend/data/Map049.json": "33f44fa75740c87b91339c679e3fa5b02bbb44cce2a125f785ad28ae4c0ac238",
+        "frontend/data/CoretoQuests.json": "d19bc2c83e0c61d4d12dfd94d242628d1d62bf9d38ed56c3709f03b47e2de678",
+        "frontend/data/System.json": "8972d6434469d67079443b3767beb3243faa3a8713df1139cb9304a1dfa278b3",
+        "frontend/data/Weapons.json": "e59a3eb2fc55812a45e813794c5ac992d53692f5508060a34a58c86cedd90cb6",
+        "frontend/data/Actors.json": "2e9c63ae634f9eaae13afac11f03d68f7ba52355c9802b3b415c679c9a8684c6",
+        "frontend/js/plugins/Coreto_QuestVN.js": "defca246bd70fc72ea62fa85378bd026a46c664bbf23431dd3324d3e7a62d234",
+        "frontend/js/plugins/Coreto_Quests.js": "52b3371049b25557c7030b58aa775da794f0d0ee68b64e13c48d2a63caea68e4",
+        "planos/008-compozy-init/builds/audio-design-decision.md": "916209b898a7dba65105df3ee0e1893c7ee1339f96e3f6345ab87c91bdb72ad9"
+    },
+    "checks": [
+        {
+            "test_id": "UT-008",
+            "result": "passed",
+            "details": {
+                "state": {
+                    "variable_id": 111,
+                    "states": [
+                        0,
+                        10,
+                        20
+                    ],
+                    "transitions": [
+                        "INTRODUCE_JOURNAL",
+                        "FOUND_SLING"
+                    ],
+                    "weapon_id": 1,
+                    "actor_id": 3
+                },
+                "sling": {
+                    "chain": [
+                        "opening-return",
+                        "INTRODUCE_JOURNAL",
+                        "addWeapon:1",
+                        "FOUND_SLING",
+                        "equip:actor3/weapon1",
+                        "Map044:5,22"
+                    ],
+                    "cardinality": {
+                        "sling_grant": 1,
+                        "found_sling": 1,
+                        "journal_introduction": 1
+                    },
+                    "terminal": "Map045:E20:P3 self-switch A"
+                },
+                "negative_fixture": {
+                    "fixture": "duplicate-sling-grant",
+                    "expected_error": "sling_flow_invalid",
+                    "result": "passed"
+                }
+            }
+        },
+        {
+            "test_id": "UT-009",
+            "result": "passed",
+            "details": {
+                "protected_fingerprints": {
+                    "Map045:E8": {
+                        "baseline": "0bf7b43335ad3083bbf556a9eac0adc7b6799a4032f5c150ce1045ea63adf060",
+                        "final": "0bf7b43335ad3083bbf556a9eac0adc7b6799a4032f5c150ce1045ea63adf060"
+                    },
+                    "Map045:E10": {
+                        "baseline": "e9526a85e4c552a37480efbf2deedbeadf5b4ac65938f01d8161aabb129e141d",
+                        "final": "e9526a85e4c552a37480efbf2deedbeadf5b4ac65938f01d8161aabb129e141d"
+                    },
+                    "Map045:E11:P5-P6": {
+                        "baseline": "5176cb9da058dc94efb3d41093b1b5d33c27bd3155b856620519e0a89c0f7d51",
+                        "final": "5176cb9da058dc94efb3d41093b1b5d33c27bd3155b856620519e0a89c0f7d51"
+                    },
+                    "Map045:E12:P3-P8": {
+                        "baseline": "fc675e77ee308062d18ae009d892431b67236cd52b53666c4c00a740b67c4e0d",
+                        "final": "fc675e77ee308062d18ae009d892431b67236cd52b53666c4c00a740b67c4e0d"
+                    },
+                    "Map049:E2": {
+                        "baseline": "f8e6934e54b1a182f4c050a627b18e24f94c208d2cdba6754a260567b7e342f1",
+                        "final": "f8e6934e54b1a182f4c050a627b18e24f94c208d2cdba6754a260567b7e342f1"
+                    },
+                    "Map045:unrelated-events": {
+                        "baseline": "44e84bed3ccb550d85539ab032e8cc14f92c9be79986650a3c3040a166165a50",
+                        "final": "44e84bed3ccb550d85539ab032e8cc14f92c9be79986650a3c3040a166165a50"
+                    }
+                },
+                "negative_fixture": {
+                    "fixture": "future-content-drift",
+                    "expected_error": "future_quest_scope_violation",
+                    "result": "passed"
+                }
+            }
+        },
+        {
+            "test_id": "UT-010",
+            "result": "passed",
+            "details": {
+                "audio": {
+                    "replacement": {
+                        "invalid": "Dungeon5",
+                        "selected": "Theme5",
+                        "asset": "frontend/audio/bgm/Theme5.ogg",
+                        "exact_case": true
+                    },
+                    "restoration_owner": "Coreto_QuestVN/restore-origin",
+                    "ambience": "bounded_follow_up_no_runtime_owner",
+                    "muted_direction": [
+                        "exit Gabs",
+                        "QuestCore journal projection",
+                        "equipment condition"
+                    ]
+                },
+                "gabs": {
+                    "automatic_policy": "false/false",
+                    "automatic_gabs": [
+                        {
+                            "owner": "Map045:E11:P3",
+                            "text": "O jogo já começou, seu babão.\nÉ melhor correr!"
+                        },
+                        {
+                            "owner": "Map045:E36:P1",
+                            "text": "<center>Então, crianças,\nesta é a Casa da Família Forjaprata!</center>"
+                        }
+                    ],
+                    "wait_for_gab": 0,
+                    "e36_optional_gabs": 1
+                },
+                "restricted_diff": {
+                    "inherited_task02_map022": "6b8088b2afde13e4357a32a5b0fb4566cbc0919c8e0b68f25514bc9d859e34fb",
+                    "current_map045": "18ebfc2f86a603fe363568a077be9cf8d5044290f45ed757fda19b7707177e85",
+                    "changed_production_files": [
+                        "frontend/data/Map022.json",
+                        "frontend/data/Map045.json",
+                        "frontend/data/Map049.json",
+                        "frontend/data/MapInfos.json"
+                    ]
+                },
+                "negative_fixture": {
+                    "fixture": "missing-audio-reference",
+                    "expected_error": "audio_reference_missing",
+                    "result": "passed"
+                }
+            }
+        },
+        {
+            "test_id": "IT-006",
+            "result": "passed",
+            "details": {
+                "fixtures": [
+                    {
+                        "name": "opening",
+                        "state": 0,
+                        "action": "exit",
+                        "expected": 10,
+                        "result": "passed"
+                    },
+                    {
+                        "name": "journal-repeat",
+                        "state": 10,
+                        "action": "exit",
+                        "expected": 10,
+                        "result": "passed"
+                    },
+                    {
+                        "name": "acquire",
+                        "state": 10,
+                        "action": "chest",
+                        "expected": 20,
+                        "result": "passed"
+                    },
+                    {
+                        "name": "chest-repeat",
+                        "state": 20,
+                        "action": "chest",
+                        "expected": 20,
+                        "result": "passed"
+                    },
+                    {
+                        "name": "unequipped",
+                        "state": 20,
+                        "action": "exit",
+                        "equipped": false,
+                        "expected": 20,
+                        "result": "passed"
+                    },
+                    {
+                        "name": "equipped",
+                        "state": 20,
+                        "action": "exit",
+                        "equipped": true,
+                        "expected": "Map044",
+                        "result": "passed"
+                    },
+                    {
+                        "name": "save-load-post-acquire",
+                        "state": 20,
+                        "chestSelfA": true,
+                        "action": "reload",
+                        "expected": 20,
+                        "result": "passed"
+                    }
+                ],
+                "runtime": "pending"
+            }
+        },
+        {
+            "test_id": "IT-007",
+            "result": "passed",
+            "details": {
+                "restoration_owner": "Coreto_QuestVN/restore-origin",
+                "signal_hierarchy": "audio-design-decision.md",
+                "essential_direction_without_audio": [
+                    "exit Gabs",
+                    "QuestCore journal projection",
+                    "equipment condition"
+                ]
+            }
+        }
+    ],
+    "human_gates": {
+        "status": "not_executed",
+        "scenarios": [
+            "FJ-01",
+            "FJ-02",
+            "FJ-03",
+            "FJ-04",
+            "AU-01",
+            "AU-02"
+        ],
+        "record": "planos/008-compozy-init/builds/evidence/map045-playtest-scenarios.md"
+    }
+}

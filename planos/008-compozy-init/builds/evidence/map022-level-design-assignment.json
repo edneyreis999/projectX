@@ -1,0 +1,93 @@
+{
+    "schema_version": 1,
+    "decision_pass": "bounded-level-design-assignment",
+    "map_id": 22,
+    "map_role": "present-day narrative-frame hub",
+    "status": "approved_for_static_implementation",
+    "human_playtest_status": "pending",
+    "uncertainty": "Static composition and route intent do not prove activity recognition, pacing, collision recovery, or seat discovery in runtime.",
+    "route_contract": {
+        "activity": {
+            "repeat": true,
+            "skippable": true,
+            "wait": false,
+            "recovery": "Every activity route begins at or revisits its declared anchor."
+        },
+        "gathering": {
+            "repeat": false,
+            "skippable": true,
+            "wait": true,
+            "terminal_facing": "up",
+            "recovery": "The terminal page repeats a skippable Move To destination route after displacement."
+        }
+    },
+    "activities": {
+        "tag": [
+            { "event_id": 1, "role": "chaser", "anchor": [2, 14], "route": [[2, 14], [5, 14], [5, 20], [2, 20]], "move_speed": 5, "move_frequency": 5 },
+            { "event_id": 5, "role": "runner-west", "anchor": [3, 15], "route": [[3, 15], [3, 19], [5, 19], [5, 15]], "move_speed": 4, "move_frequency": 5 },
+            { "event_id": 6, "role": "runner-south", "anchor": [2, 18], "route": [[2, 18], [4, 20], [5, 17], [3, 14]], "move_speed": 4, "move_frequency": 5 },
+            { "event_id": 13, "role": "runner-inner", "anchor": [4, 17], "route": [[4, 17], [2, 15], [2, 20], [5, 18]], "move_speed": 4, "move_frequency": 5 }
+        ],
+        "ring_play": [
+            { "event_id": 8, "role": "ring-northwest", "anchor": [7, 20], "route": [[7, 20], [8, 19], [9, 20], [9, 22], [7, 22]], "move_speed": 3, "move_frequency": 4 },
+            { "event_id": 9, "role": "ring-north", "anchor": [8, 19], "route": [[8, 19], [9, 20], [9, 22], [7, 22], [7, 20]], "move_speed": 3, "move_frequency": 4 },
+            { "event_id": 10, "role": "ring-northeast", "anchor": [9, 20], "route": [[9, 20], [9, 22], [7, 22], [7, 20], [8, 19]], "move_speed": 3, "move_frequency": 4 },
+            { "event_id": 16, "role": "ring-southeast", "anchor": [9, 22], "route": [[9, 22], [7, 22], [7, 20], [8, 19], [9, 20]], "move_speed": 3, "move_frequency": 4 },
+            { "event_id": 32, "role": "ring-southwest", "anchor": [7, 22], "route": [[7, 22], [7, 20], [8, 19], [9, 20], [9, 22]], "move_speed": 3, "move_frequency": 4 }
+        ],
+        "seated_conversation": [
+            { "event_id": 2, "role": "east-pair-a", "anchor": [12, 20], "facing": "down", "move_speed": 3, "move_frequency": 3 },
+            { "event_id": 3, "role": "east-pair-b", "anchor": [12, 21], "facing": "up", "move_speed": 3, "move_frequency": 3 },
+            { "event_id": 7, "role": "northeast-pair-a", "anchor": [13, 18], "facing": "down", "move_speed": 3, "move_frequency": 3 },
+            { "event_id": 11, "role": "northeast-pair-b", "anchor": [13, 19], "facing": "up", "move_speed": 3, "move_frequency": 3 },
+            { "event_id": 12, "role": "southwest-pair-a", "anchor": [5, 23], "facing": "right", "move_speed": 3, "move_frequency": 3 },
+            { "event_id": 14, "role": "southwest-pair-b", "anchor": [6, 23], "facing": "left", "move_speed": 3, "move_frequency": 3 },
+            { "event_id": 15, "role": "southeast-pair-a", "anchor": [10, 24], "facing": "right", "move_speed": 3, "move_frequency": 3 },
+            { "event_id": 19, "role": "southeast-pair-b", "anchor": [11, 24], "facing": "left", "move_speed": 3, "move_frequency": 3 }
+        ]
+    },
+    "gathering": [
+        { "event_id": 1, "destination": [4, 15] },
+        { "event_id": 2, "destination": [7, 16] },
+        { "event_id": 3, "destination": [8, 17] },
+        { "event_id": 5, "destination": [5, 16] },
+        { "event_id": 6, "destination": [7, 18] },
+        { "event_id": 7, "destination": [10, 15] },
+        { "event_id": 8, "destination": [5, 18] },
+        { "event_id": 9, "destination": [11, 16] },
+        { "event_id": 10, "destination": [9, 18] },
+        { "event_id": 11, "destination": [9, 16] },
+        { "event_id": 12, "destination": [11, 18] },
+        { "event_id": 13, "destination": [4, 17] },
+        { "event_id": 14, "destination": [8, 15] },
+        { "event_id": 15, "destination": [10, 17] },
+        { "event_id": 16, "destination": [6, 15] },
+        { "event_id": 19, "destination": [12, 17] },
+        { "event_id": 32, "destination": [6, 17] }
+    ],
+    "intentionally_unchanged_children": [],
+    "critical_route": {
+        "player_start": [14, 21],
+        "protected_corridor": [[14, 20], [14, 19], [14, 18], [14, 17], [14, 16], [14, 15], [14, 14], [14, 13], [13, 14], [12, 14], [11, 14], [10, 14], [9, 14], [8, 14], [13, 15], [8, 13]],
+        "targets": [
+            { "name": "Darla", "event_id": 30, "position": [14, 12], "approaches": [[13, 12], [14, 13]] },
+            { "name": "E18", "event_id": 18, "position": [12, 15], "approaches": [[12, 15], [12, 14], [13, 15], [11, 15]] },
+            { "name": "E17", "event_id": 17, "position": [8, 12], "approaches": [[8, 13], [9, 12], [7, 12]] },
+            { "name": "VN seat", "event_id": 18, "position": [12, 15], "approaches": [[12, 15], [12, 14], [13, 15], [11, 15]] }
+        ]
+    },
+    "automatic_gabs": [
+        { "source_text": "Até o coreto e volta. Valendo!", "event_id": 1, "activity": "tag", "text": "Você não me pega!" },
+        { "source_text": "Vai demorar muito?", "event_id": 5, "activity": "tag", "text": "Vale contornar o poste!" },
+        { "source_text": "Que história o Rheed vai contar?", "event_id": 13, "activity": "tag", "text": "Corre pela borda!" },
+        { "source_text": "Guarda um lugar pra mim?", "event_id": 8, "activity": "ring_play", "text": "Todo mundo no mesmo passo!" },
+        { "source_text": "Não pisa na linha!", "event_id": 9, "activity": "ring_play", "text": "Agora gira para o outro lado!" },
+        { "source_text": "É uma história de muito tempo atrás?", "event_id": 10, "activity": "ring_play", "text": "Sem soltar a roda!" },
+        { "source_text": "O coreto fica bonito assim.", "event_id": 16, "activity": "ring_play", "text": "Um, dois... troca o passo!" },
+        { "source_text": "Acho que já vai começar.", "event_id": 32, "activity": "ring_play", "text": "A roda está quase certinha!" },
+        { "source_text": "Será que isso aconteceu mesmo?", "event_id": 2, "activity": "seated_conversation", "text": "Será que a história aconteceu mesmo?" },
+        { "source_text": "Eu quero sentar lá na frente!", "event_id": 3, "activity": "seated_conversation", "text": "Eu gosto de ouvir daqui." },
+        { "source_text": "Eu vou tentar não interromper.", "event_id": 7, "activity": "seated_conversation", "text": "Promete não contar o final?" },
+        { "source_text": "Tem lugar pra todo mundo?", "event_id": 11, "activity": "seated_conversation", "text": "Depois a gente troca de lugar." }
+    ]
+}

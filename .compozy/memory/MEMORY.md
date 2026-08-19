@@ -1,0 +1,10 @@
+- [cena do Nevoeiro reação da criança](project_cena_do_nevoeiro.md) - Sequência 1256: “Uma criança não diz que aquilo parece real — ela tenta confirmar com o corpo”.
+- [timing de apresentação taxa de referência](project_timing_de_apresenta_o.md) - Sequências 1238–1246 registram explicitamente as equivalências 60 frames = 1 s e 120 frames = 2 s.
+- [MVP da cena com Gab escopo de personagens](project_mvp_da_cena_com_gab.md) - Sequência 268: o assistente afirma explicitamente que “nenhuma segunda Gab entra no MVP”.
+- [Gab concorrência entre reação e período de permanência](project_gab.md) - Sequência 267: o assistente identifica o conflito entre a regra de Gab não bloqueante e a hierarquia ideal e define a coexistência como rota de resolução.
+- [cena discutida com duas Gabs critério de medição de duração](project_cena_discutida_com_duas_gabs.md) - Sequência 1055: o assistente relata que a discussão convergiu explicitamente nessa distinção de timing.
+- [cena de revelação de Rheed e das crianças timing de aparição gradual](project_cena_de_revela_o_de_rheed_e_das_crian_as.md) - Sequências 815–817: tabela de apresentação associa o momento “Revelação” à aparição gradual de Rheed e das crianças durante 24–36 frames.
+- [cena discutida na game-dev progressão emocional](project_cena_discutida_na_game_dev.md) - Sequência 809: o assistente relata esse consenso do brainstorm na game-dev.
+- [Evento 033 direção de feedback audiovisual](project_evento_033.md) - Sequências 744–746: o assistente identifica o Evento 033 como “Nevoeiro” de tela inteira com flash prolongado e dois efeitos sonoros, definindo-o como materialização coletiva sem duplicar flash ou SE do Evento 007.
+- [Página B — feedback audiovisual fallback_para_semantica_sonora_incorreta](project_p_gina_b_feedback_audiovisual.md) - Sequências 182–183 registram este critério adicional confirmado no Network.
+- [Página B critérios de progressão e feedback audiovisual](project_p_gina_b.md) - Sequências 110–111 registram esses critérios consolidados de design de áudio e progressão.

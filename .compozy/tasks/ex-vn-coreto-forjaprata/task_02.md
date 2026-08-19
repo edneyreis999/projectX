@@ -1,5 +1,5 @@
 ---
-status: pending
+status: completed
 title: "Task 2: Build readable and traversable Coreto activities"
 type: game-content
 complexity: high

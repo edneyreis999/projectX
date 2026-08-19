@@ -1,0 +1,351 @@
+{
+    "schema_version": 1,
+    "validator": "validate-map022-experience",
+    "result": "passed",
+    "classification": "runtime_pending",
+    "human_playtest_status": "human_playtest_pending",
+    "test_ids": [
+        "UT-005",
+        "UT-006",
+        "UT-007",
+        "IT-004",
+        "IT-005"
+    ],
+    "targets": [
+        "frontend/data/Map022.json",
+        "planos/008-compozy-init/builds/evidence/map022-level-design-assignment.json"
+    ],
+    "target_hashes": {
+        "frontend/data/Map022.json": "6b8088b2afde13e4357a32a5b0fb4566cbc0919c8e0b68f25514bc9d859e34fb",
+        "planos/008-compozy-init/builds/evidence/map022-level-design-assignment.json": "091097ac0147d2923a13883ad53655983b0dffa1791f7863b3ae921b9b7b168c",
+        "planos/008-compozy-init/builds/update-map022-experience.mjs": "9aaff4bfa1bd1c55cea6230d2b1a1cfa38b7adb74451edade241d3199c66e7dd",
+        "planos/008-compozy-init/builds/validate-map022-experience.mjs": "66b81dc0d5610abd4ed925d1061b123c71a77dc2bc5a0a3b096847626c2e8ff8"
+    },
+    "checks": [
+        {
+            "test_id": "UT-005",
+            "result": "passed",
+            "details": {
+                "activities": {
+                    "tag": 4,
+                    "ring_play": 5,
+                    "seated_conversation": 8
+                },
+                "roles": [
+                    {
+                        "event_id": 1,
+                        "activity": "tag",
+                        "role": "chaser",
+                        "anchor": [
+                            2,
+                            14
+                        ],
+                        "gathering": [
+                            4,
+                            15
+                        ]
+                    },
+                    {
+                        "event_id": 5,
+                        "activity": "tag",
+                        "role": "runner-west",
+                        "anchor": [
+                            3,
+                            15
+                        ],
+                        "gathering": [
+                            5,
+                            16
+                        ]
+                    },
+                    {
+                        "event_id": 6,
+                        "activity": "tag",
+                        "role": "runner-south",
+                        "anchor": [
+                            2,
+                            18
+                        ],
+                        "gathering": [
+                            7,
+                            18
+                        ]
+                    },
+                    {
+                        "event_id": 13,
+                        "activity": "tag",
+                        "role": "runner-inner",
+                        "anchor": [
+                            4,
+                            17
+                        ],
+                        "gathering": [
+                            4,
+                            17
+                        ]
+                    },
+                    {
+                        "event_id": 8,
+                        "activity": "ring_play",
+                        "role": "ring-northwest",
+                        "anchor": [
+                            7,
+                            20
+                        ],
+                        "gathering": [
+                            5,
+                            18
+                        ]
+                    },
+                    {
+                        "event_id": 9,
+                        "activity": "ring_play",
+                        "role": "ring-north",
+                        "anchor": [
+                            8,
+                            19
+                        ],
+                        "gathering": [
+                            11,
+                            16
+                        ]
+                    },
+                    {
+                        "event_id": 10,
+                        "activity": "ring_play",
+                        "role": "ring-northeast",
+                        "anchor": [
+                            9,
+                            20
+                        ],
+                        "gathering": [
+                            9,
+                            18
+                        ]
+                    },
+                    {
+                        "event_id": 16,
+                        "activity": "ring_play",
+                        "role": "ring-southeast",
+                        "anchor": [
+                            9,
+                            22
+                        ],
+                        "gathering": [
+                            6,
+                            15
+                        ]
+                    },
+                    {
+                        "event_id": 32,
+                        "activity": "ring_play",
+                        "role": "ring-southwest",
+                        "anchor": [
+                            7,
+                            22
+                        ],
+                        "gathering": [
+                            6,
+                            17
+                        ]
+                    },
+                    {
+                        "event_id": 2,
+                        "activity": "seated_conversation",
+                        "role": "east-pair-a",
+                        "anchor": [
+                            12,
+                            20
+                        ],
+                        "gathering": [
+                            7,
+                            16
+                        ]
+                    },
+                    {
+                        "event_id": 3,
+                        "activity": "seated_conversation",
+                        "role": "east-pair-b",
+                        "anchor": [
+                            12,
+                            21
+                        ],
+                        "gathering": [
+                            8,
+                            17
+                        ]
+                    },
+                    {
+                        "event_id": 7,
+                        "activity": "seated_conversation",
+                        "role": "northeast-pair-a",
+                        "anchor": [
+                            13,
+                            18
+                        ],
+                        "gathering": [
+                            10,
+                            15
+                        ]
+                    },
+                    {
+                        "event_id": 11,
+                        "activity": "seated_conversation",
+                        "role": "northeast-pair-b",
+                        "anchor": [
+                            13,
+                            19
+                        ],
+                        "gathering": [
+                            9,
+                            16
+                        ]
+                    },
+                    {
+                        "event_id": 12,
+                        "activity": "seated_conversation",
+                        "role": "southwest-pair-a",
+                        "anchor": [
+                            5,
+                            23
+                        ],
+                        "gathering": [
+                            11,
+                            18
+                        ]
+                    },
+                    {
+                        "event_id": 14,
+                        "activity": "seated_conversation",
+                        "role": "southwest-pair-b",
+                        "anchor": [
+                            6,
+                            23
+                        ],
+                        "gathering": [
+                            8,
+                            15
+                        ]
+                    },
+                    {
+                        "event_id": 15,
+                        "activity": "seated_conversation",
+                        "role": "southeast-pair-a",
+                        "anchor": [
+                            10,
+                            24
+                        ],
+                        "gathering": [
+                            10,
+                            17
+                        ]
+                    },
+                    {
+                        "event_id": 19,
+                        "activity": "seated_conversation",
+                        "role": "southeast-pair-b",
+                        "anchor": [
+                            11,
+                            24
+                        ],
+                        "gathering": [
+                            12,
+                            17
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "test_id": "UT-006",
+            "result": "passed",
+            "details": {
+                "automatic": 12,
+                "deliberate_interaction": 2,
+                "wait_for_gab": 0,
+                "spacing_frames": 240
+            }
+        },
+        {
+            "test_id": "UT-007",
+            "result": "passed",
+            "details": {
+                "coordinates": {
+                    "changed_coordinates": 75,
+                    "unique_anchors": 17,
+                    "unique_gathering_destinations": 17
+                },
+                "negative_fixtures": [
+                    "route_coordinate_out_of_bounds",
+                    "critical_corridor_blocked",
+                    "gab_payload_mismatch"
+                ],
+                "boundaries": {
+                    "map022_hash": "6b8088b2afde13e4357a32a5b0fb4566cbc0919c8e0b68f25514bc9d859e34fb",
+                    "task01_event_hashes": {
+                        "17": "13ee82cbe7e8bcb0df972feb07f2b8cc6e8eb09a70b6c9c784d7914c8d7dfc2c",
+                        "18": "d6b2f021393158cbc7a5fb49ec1ec6266aa7872e86343a5f2dcd2fd4373848d3"
+                    },
+                    "inherited_task01_files_unchanged": [
+                        "frontend/data/Map045.json",
+                        "frontend/data/Map049.json",
+                        "frontend/data/MapInfos.json"
+                    ],
+                    "changed_frontend_files": [
+                        "frontend/data/Map022.json",
+                        "frontend/data/Map045.json",
+                        "frontend/data/Map049.json",
+                        "frontend/data/MapInfos.json"
+                    ]
+                }
+            }
+        },
+        {
+            "test_id": "IT-004",
+            "result": "passed",
+            "details": {
+                "player_start": [
+                    14,
+                    21
+                ],
+                "representative_snapshots": {
+                    "before_gathering": {
+                        "Darla": true,
+                        "E18": true,
+                        "E17": true,
+                        "VN seat": true
+                    },
+                    "during_gathering": {
+                        "Darla": true,
+                        "E18": true,
+                        "E17": true,
+                        "VN seat": true
+                    },
+                    "after_gathering": {
+                        "Darla": true,
+                        "E18": true,
+                        "E17": true,
+                        "VN seat": true
+                    }
+                },
+                "recovery_routes": 17
+            }
+        },
+        {
+            "test_id": "IT-005",
+            "result": "passed",
+            "details": {
+                "automatic_chatter": "parallel, queued, anti-repeat enabled, spatial event anchors",
+                "deliberate_interaction": "E30 clears/replaces the queue and preserves the QuestTransition",
+                "optionality": "E20 contains no quest state mutation, transfer, or blocking WaitForGab"
+            }
+        }
+    ],
+    "residual_human_gates": [
+        "recognition of tag, ring play, and seated conversation",
+        "runtime collision recovery and gathering pacing",
+        "Darla/E18/E17/VN-seat reachability in Playtest",
+        "Gab anchoring, readability, repetition, and interaction priority",
+        "five-of-six seat discovery within 90 seconds without a runtime timer"
+    ]
+}

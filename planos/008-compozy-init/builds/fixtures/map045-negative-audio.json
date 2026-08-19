@@ -1,0 +1,9 @@
+{
+    "schema_version": 1,
+    "fixture": "missing-audio-reference",
+    "mutation": {
+        "target": "Map045:E12:P6",
+        "bgm_name": "Dungeon5"
+    },
+    "expected_error": "audio_reference_missing"
+}

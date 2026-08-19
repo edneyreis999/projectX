@@ -1,0 +1,9 @@
+{
+    "schema_version": 1,
+    "fixture": "future-content-drift",
+    "mutation": {
+        "target": "Map049:E2",
+        "append_command_code": 230
+    },
+    "expected_error": "future_quest_scope_violation"
+}

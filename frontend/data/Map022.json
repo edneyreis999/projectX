@@ -2829,20 +2829,68 @@
                     "moveRoute": {
                         "list": [
                             {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 2, 14"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    4
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 5, 14"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    4
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 5, 20"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    4
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 2, 20"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    4
+                                ]
+                            },
+                            {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
                     "moveSpeed": 5,
-                    "moveType": 1,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 3,
+                    "trigger": 0,
                     "walkAnime": true
                 },
                 {
@@ -2893,7 +2941,7 @@
                                         }
                                     ],
                                     "repeat": false,
-                                    "skippable": false,
+                                    "skippable": true,
                                     "wait": true
                                 }
                             ]
@@ -2967,16 +3015,32 @@
                     "moveRoute": {
                         "list": [
                             {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 4, 15"
+                                ]
+                            },
+                            {
+                                "code": 19,
+                                "parameters": []
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    180
+                                ]
+                            },
+                            {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
                     "moveSpeed": 3,
-                    "moveType": 0,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
@@ -2984,8 +3048,8 @@
                     "walkAnime": true
                 }
             ],
-            "x": 3,
-            "y": 19
+            "x": 2,
+            "y": 14
         },
         {
             "id": 2,
@@ -3012,7 +3076,7 @@
                     "image": {
                         "tileId": 0,
                         "characterName": "SF_People1",
-                        "direction": 4,
+                        "direction": 2,
                         "pattern": 0,
                         "characterIndex": 0
                     },
@@ -3023,24 +3087,40 @@
                             "parameters": []
                         }
                     ],
-                    "moveFrequency": 5,
+                    "moveFrequency": 3,
                     "moveRoute": {
                         "list": [
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 12, 20"
+                                ]
+                            },
+                            {
+                                "code": 16,
+                                "parameters": []
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    180
+                                ]
+                            },
                             {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
-                    "moveSpeed": 4,
-                    "moveType": 1,
+                    "moveSpeed": 3,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 3,
+                    "trigger": 0,
                     "walkAnime": true
                 },
                 {
@@ -3091,7 +3171,7 @@
                                         }
                                     ],
                                     "repeat": false,
-                                    "skippable": false,
+                                    "skippable": true,
                                     "wait": true
                                 }
                             ]
@@ -3165,16 +3245,32 @@
                     "moveRoute": {
                         "list": [
                             {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 7, 16"
+                                ]
+                            },
+                            {
+                                "code": 19,
+                                "parameters": []
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    180
+                                ]
+                            },
+                            {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
                     "moveSpeed": 3,
-                    "moveType": 0,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
@@ -3182,8 +3278,8 @@
                     "walkAnime": true
                 }
             ],
-            "x": 9,
-            "y": 19
+            "x": 12,
+            "y": 20
         },
         {
             "id": 3,
@@ -3210,7 +3306,7 @@
                     "image": {
                         "tileId": 0,
                         "characterName": "SF_Actor2",
-                        "direction": 6,
+                        "direction": 8,
                         "pattern": 0,
                         "characterIndex": 4
                     },
@@ -3221,24 +3317,40 @@
                             "parameters": []
                         }
                     ],
-                    "moveFrequency": 5,
+                    "moveFrequency": 3,
                     "moveRoute": {
                         "list": [
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 12, 21"
+                                ]
+                            },
+                            {
+                                "code": 19,
+                                "parameters": []
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    180
+                                ]
+                            },
                             {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
-                    "moveSpeed": 4,
-                    "moveType": 1,
+                    "moveSpeed": 3,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 3,
+                    "trigger": 0,
                     "walkAnime": true
                 },
                 {
@@ -3289,7 +3401,7 @@
                                         }
                                     ],
                                     "repeat": false,
-                                    "skippable": false,
+                                    "skippable": true,
                                     "wait": true
                                 }
                             ]
@@ -3363,16 +3475,32 @@
                     "moveRoute": {
                         "list": [
                             {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 8, 17"
+                                ]
+                            },
+                            {
+                                "code": 19,
+                                "parameters": []
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    180
+                                ]
+                            },
+                            {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
                     "moveSpeed": 3,
-                    "moveType": 0,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
@@ -3380,8 +3508,8 @@
                     "walkAnime": true
                 }
             ],
-            "x": 6,
-            "y": 14
+            "x": 12,
+            "y": 21
         },
         {
             "id": 4,
@@ -3483,20 +3611,68 @@
                     "moveRoute": {
                         "list": [
                             {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 3, 15"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    4
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 3, 19"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    4
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 5, 19"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    4
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 5, 15"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    4
+                                ]
+                            },
+                            {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
-                    "moveSpeed": 5,
-                    "moveType": 1,
+                    "moveSpeed": 4,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 3,
+                    "trigger": 0,
                     "walkAnime": true
                 },
                 {
@@ -3547,7 +3723,7 @@
                                         }
                                     ],
                                     "repeat": false,
-                                    "skippable": false,
+                                    "skippable": true,
                                     "wait": true
                                 }
                             ]
@@ -3621,16 +3797,32 @@
                     "moveRoute": {
                         "list": [
                             {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 5, 16"
+                                ]
+                            },
+                            {
+                                "code": 19,
+                                "parameters": []
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    180
+                                ]
+                            },
+                            {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
                     "moveSpeed": 3,
-                    "moveType": 0,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
@@ -3639,7 +3831,7 @@
                 }
             ],
             "x": 3,
-            "y": 17
+            "y": 15
         },
         {
             "id": 6,
@@ -3681,20 +3873,68 @@
                     "moveRoute": {
                         "list": [
                             {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 2, 18"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    4
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 4, 20"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    4
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 5, 17"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    4
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 3, 14"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    4
+                                ]
+                            },
+                            {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
                     "moveSpeed": 4,
-                    "moveType": 1,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 3,
+                    "trigger": 0,
                     "walkAnime": true
                 },
                 {
@@ -3745,7 +3985,7 @@
                                         }
                                     ],
                                     "repeat": false,
-                                    "skippable": false,
+                                    "skippable": true,
                                     "wait": true
                                 }
                             ]
@@ -3819,16 +4059,32 @@
                     "moveRoute": {
                         "list": [
                             {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 7, 18"
+                                ]
+                            },
+                            {
+                                "code": 19,
+                                "parameters": []
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    180
+                                ]
+                            },
+                            {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
                     "moveSpeed": 3,
-                    "moveType": 0,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
@@ -3836,8 +4092,8 @@
                     "walkAnime": true
                 }
             ],
-            "x": 3,
-            "y": 15
+            "x": 2,
+            "y": 18
         },
         {
             "id": 7,
@@ -3864,7 +4120,7 @@
                     "image": {
                         "tileId": 0,
                         "characterName": "People1",
-                        "direction": 6,
+                        "direction": 2,
                         "pattern": 0,
                         "characterIndex": 2
                     },
@@ -3875,24 +4131,40 @@
                             "parameters": []
                         }
                     ],
-                    "moveFrequency": 5,
+                    "moveFrequency": 3,
                     "moveRoute": {
                         "list": [
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 13, 18"
+                                ]
+                            },
+                            {
+                                "code": 16,
+                                "parameters": []
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    180
+                                ]
+                            },
                             {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
-                    "moveSpeed": 4,
-                    "moveType": 1,
+                    "moveSpeed": 3,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 3,
+                    "trigger": 0,
                     "walkAnime": true
                 },
                 {
@@ -3943,7 +4215,7 @@
                                         }
                                     ],
                                     "repeat": false,
-                                    "skippable": false,
+                                    "skippable": true,
                                     "wait": true
                                 }
                             ]
@@ -4017,16 +4289,32 @@
                     "moveRoute": {
                         "list": [
                             {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 10, 15"
+                                ]
+                            },
+                            {
+                                "code": 19,
+                                "parameters": []
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    180
+                                ]
+                            },
+                            {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
                     "moveSpeed": 3,
-                    "moveType": 0,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
@@ -4034,8 +4322,8 @@
                     "walkAnime": true
                 }
             ],
-            "x": 9,
-            "y": 15
+            "x": 13,
+            "y": 18
         },
         {
             "id": 8,
@@ -4073,24 +4361,84 @@
                             "parameters": []
                         }
                     ],
-                    "moveFrequency": 5,
+                    "moveFrequency": 4,
                     "moveRoute": {
                         "list": [
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 7, 20"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    18
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 8, 19"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    18
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 9, 20"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    18
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 9, 22"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    18
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 7, 22"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    18
+                                ]
+                            },
                             {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
-                    "moveSpeed": 4,
-                    "moveType": 1,
+                    "moveSpeed": 3,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 3,
+                    "trigger": 0,
                     "walkAnime": true
                 },
                 {
@@ -4141,7 +4489,7 @@
                                         }
                                     ],
                                     "repeat": false,
-                                    "skippable": false,
+                                    "skippable": true,
                                     "wait": true
                                 }
                             ]
@@ -4215,16 +4563,32 @@
                     "moveRoute": {
                         "list": [
                             {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 5, 18"
+                                ]
+                            },
+                            {
+                                "code": 19,
+                                "parameters": []
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    180
+                                ]
+                            },
+                            {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
                     "moveSpeed": 3,
-                    "moveType": 0,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
@@ -4232,8 +4596,8 @@
                     "walkAnime": true
                 }
             ],
-            "x": 5,
-            "y": 19
+            "x": 7,
+            "y": 20
         },
         {
             "id": 9,
@@ -4271,24 +4635,84 @@
                             "parameters": []
                         }
                     ],
-                    "moveFrequency": 5,
+                    "moveFrequency": 4,
                     "moveRoute": {
                         "list": [
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 8, 19"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    18
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 9, 20"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    18
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 9, 22"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    18
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 7, 22"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    18
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 7, 20"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    18
+                                ]
+                            },
                             {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
-                    "moveSpeed": 4,
-                    "moveType": 1,
+                    "moveSpeed": 3,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 3,
+                    "trigger": 0,
                     "walkAnime": true
                 },
                 {
@@ -4339,7 +4763,7 @@
                                         }
                                     ],
                                     "repeat": false,
-                                    "skippable": false,
+                                    "skippable": true,
                                     "wait": true
                                 }
                             ]
@@ -4413,16 +4837,32 @@
                     "moveRoute": {
                         "list": [
                             {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 11, 16"
+                                ]
+                            },
+                            {
+                                "code": 19,
+                                "parameters": []
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    180
+                                ]
+                            },
+                            {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
                     "moveSpeed": 3,
-                    "moveType": 0,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
@@ -4430,8 +4870,8 @@
                     "walkAnime": true
                 }
             ],
-            "x": 9,
-            "y": 17
+            "x": 8,
+            "y": 19
         },
         {
             "id": 10,
@@ -4469,24 +4909,84 @@
                             "parameters": []
                         }
                     ],
-                    "moveFrequency": 5,
+                    "moveFrequency": 4,
                     "moveRoute": {
                         "list": [
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 9, 20"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    18
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 9, 22"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    18
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 7, 22"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    18
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 7, 20"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    18
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 8, 19"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    18
+                                ]
+                            },
                             {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
-                    "moveSpeed": 4,
-                    "moveType": 1,
+                    "moveSpeed": 3,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 3,
+                    "trigger": 0,
                     "walkAnime": true
                 },
                 {
@@ -4537,7 +5037,7 @@
                                         }
                                     ],
                                     "repeat": false,
-                                    "skippable": false,
+                                    "skippable": true,
                                     "wait": true
                                 }
                             ]
@@ -4611,16 +5111,32 @@
                     "moveRoute": {
                         "list": [
                             {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 9, 18"
+                                ]
+                            },
+                            {
+                                "code": 19,
+                                "parameters": []
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    180
+                                ]
+                            },
+                            {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
                     "moveSpeed": 3,
-                    "moveType": 0,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
@@ -4628,8 +5144,8 @@
                     "walkAnime": true
                 }
             ],
-            "x": 7,
-            "y": 17
+            "x": 9,
+            "y": 20
         },
         {
             "id": 11,
@@ -4667,24 +5183,40 @@
                             "parameters": []
                         }
                     ],
-                    "moveFrequency": 5,
+                    "moveFrequency": 3,
                     "moveRoute": {
                         "list": [
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 13, 19"
+                                ]
+                            },
+                            {
+                                "code": 19,
+                                "parameters": []
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    180
+                                ]
+                            },
                             {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
-                    "moveSpeed": 4,
-                    "moveType": 1,
+                    "moveSpeed": 3,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 3,
+                    "trigger": 0,
                     "walkAnime": true
                 },
                 {
@@ -4735,7 +5267,7 @@
                                         }
                                     ],
                                     "repeat": false,
-                                    "skippable": false,
+                                    "skippable": true,
                                     "wait": true
                                 }
                             ]
@@ -4809,16 +5341,32 @@
                     "moveRoute": {
                         "list": [
                             {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 9, 16"
+                                ]
+                            },
+                            {
+                                "code": 19,
+                                "parameters": []
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    180
+                                ]
+                            },
+                            {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
                     "moveSpeed": 3,
-                    "moveType": 0,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
@@ -4826,8 +5374,8 @@
                     "walkAnime": true
                 }
             ],
-            "x": 12,
-            "y": 17
+            "x": 13,
+            "y": 19
         },
         {
             "id": 12,
@@ -4854,7 +5402,7 @@
                     "image": {
                         "tileId": 0,
                         "characterName": "SF_Actor2",
-                        "direction": 8,
+                        "direction": 6,
                         "pattern": 0,
                         "characterIndex": 1
                     },
@@ -4865,24 +5413,40 @@
                             "parameters": []
                         }
                     ],
-                    "moveFrequency": 5,
+                    "moveFrequency": 3,
                     "moveRoute": {
                         "list": [
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 5, 23"
+                                ]
+                            },
+                            {
+                                "code": 18,
+                                "parameters": []
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    180
+                                ]
+                            },
                             {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
-                    "moveSpeed": 4,
-                    "moveType": 1,
+                    "moveSpeed": 3,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 3,
+                    "trigger": 0,
                     "walkAnime": true
                 },
                 {
@@ -4933,7 +5497,7 @@
                                         }
                                     ],
                                     "repeat": false,
-                                    "skippable": false,
+                                    "skippable": true,
                                     "wait": true
                                 }
                             ]
@@ -5007,16 +5571,32 @@
                     "moveRoute": {
                         "list": [
                             {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 11, 18"
+                                ]
+                            },
+                            {
+                                "code": 19,
+                                "parameters": []
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    180
+                                ]
+                            },
+                            {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
                     "moveSpeed": 3,
-                    "moveType": 0,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
@@ -5024,8 +5604,8 @@
                     "walkAnime": true
                 }
             ],
-            "x": 10,
-            "y": 16
+            "x": 5,
+            "y": 23
         },
         {
             "id": 13,
@@ -5067,20 +5647,68 @@
                     "moveRoute": {
                         "list": [
                             {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 4, 17"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    4
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 2, 15"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    4
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 2, 20"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    4
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 5, 18"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    4
+                                ]
+                            },
+                            {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
-                    "moveSpeed": 5,
-                    "moveType": 1,
+                    "moveSpeed": 4,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 3,
+                    "trigger": 0,
                     "walkAnime": true
                 },
                 {
@@ -5131,7 +5759,7 @@
                                         }
                                     ],
                                     "repeat": false,
-                                    "skippable": false,
+                                    "skippable": true,
                                     "wait": true
                                 }
                             ]
@@ -5205,16 +5833,32 @@
                     "moveRoute": {
                         "list": [
                             {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 4, 17"
+                                ]
+                            },
+                            {
+                                "code": 19,
+                                "parameters": []
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    180
+                                ]
+                            },
+                            {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
                     "moveSpeed": 3,
-                    "moveType": 0,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
@@ -5222,8 +5866,8 @@
                     "walkAnime": true
                 }
             ],
-            "x": 6,
-            "y": 16
+            "x": 4,
+            "y": 17
         },
         {
             "id": 14,
@@ -5250,7 +5894,7 @@
                     "image": {
                         "tileId": 0,
                         "characterName": "SF_People2",
-                        "direction": 2,
+                        "direction": 4,
                         "pattern": 2,
                         "characterIndex": 3
                     },
@@ -5261,24 +5905,40 @@
                             "parameters": []
                         }
                     ],
-                    "moveFrequency": 5,
+                    "moveFrequency": 3,
                     "moveRoute": {
                         "list": [
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 6, 23"
+                                ]
+                            },
+                            {
+                                "code": 17,
+                                "parameters": []
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    180
+                                ]
+                            },
                             {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
-                    "moveSpeed": 4,
-                    "moveType": 1,
+                    "moveSpeed": 3,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 3,
+                    "trigger": 0,
                     "walkAnime": true
                 },
                 {
@@ -5329,7 +5989,7 @@
                                         }
                                     ],
                                     "repeat": false,
-                                    "skippable": false,
+                                    "skippable": true,
                                     "wait": true
                                 }
                             ]
@@ -5403,16 +6063,32 @@
                     "moveRoute": {
                         "list": [
                             {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 8, 15"
+                                ]
+                            },
+                            {
+                                "code": 19,
+                                "parameters": []
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    180
+                                ]
+                            },
+                            {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
                     "moveSpeed": 3,
-                    "moveType": 0,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
@@ -5420,8 +6096,8 @@
                     "walkAnime": true
                 }
             ],
-            "x": 11,
-            "y": 21
+            "x": 6,
+            "y": 23
         },
         {
             "id": 15,
@@ -5448,7 +6124,7 @@
                     "image": {
                         "tileId": 0,
                         "characterName": "People_ex1",
-                        "direction": 2,
+                        "direction": 6,
                         "pattern": 2,
                         "characterIndex": 1
                     },
@@ -5459,24 +6135,40 @@
                             "parameters": []
                         }
                     ],
-                    "moveFrequency": 5,
+                    "moveFrequency": 3,
                     "moveRoute": {
                         "list": [
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 10, 24"
+                                ]
+                            },
+                            {
+                                "code": 18,
+                                "parameters": []
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    180
+                                ]
+                            },
                             {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
-                    "moveSpeed": 4,
-                    "moveType": 1,
+                    "moveSpeed": 3,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 3,
+                    "trigger": 0,
                     "walkAnime": true
                 },
                 {
@@ -5527,7 +6219,7 @@
                                         }
                                     ],
                                     "repeat": false,
-                                    "skippable": false,
+                                    "skippable": true,
                                     "wait": true
                                 }
                             ]
@@ -5601,16 +6293,32 @@
                     "moveRoute": {
                         "list": [
                             {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 10, 17"
+                                ]
+                            },
+                            {
+                                "code": 19,
+                                "parameters": []
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    180
+                                ]
+                            },
+                            {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
                     "moveSpeed": 3,
-                    "moveType": 0,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
@@ -5618,8 +6326,8 @@
                     "walkAnime": true
                 }
             ],
-            "x": 11,
-            "y": 18
+            "x": 10,
+            "y": 24
         },
         {
             "id": 16,
@@ -5657,24 +6365,84 @@
                             "parameters": []
                         }
                     ],
-                    "moveFrequency": 5,
+                    "moveFrequency": 4,
                     "moveRoute": {
                         "list": [
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 9, 22"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    18
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 7, 22"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    18
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 7, 20"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    18
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 8, 19"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    18
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 9, 20"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    18
+                                ]
+                            },
                             {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
-                    "moveSpeed": 4,
-                    "moveType": 1,
+                    "moveSpeed": 3,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 3,
+                    "trigger": 0,
                     "walkAnime": true
                 },
                 {
@@ -5725,7 +6493,7 @@
                                         }
                                     ],
                                     "repeat": false,
-                                    "skippable": false,
+                                    "skippable": true,
                                     "wait": true
                                 }
                             ]
@@ -5799,16 +6567,32 @@
                     "moveRoute": {
                         "list": [
                             {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 6, 15"
+                                ]
+                            },
+                            {
+                                "code": 19,
+                                "parameters": []
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    180
+                                ]
+                            },
+                            {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
                     "moveSpeed": 3,
-                    "moveType": 0,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
@@ -5816,8 +6600,8 @@
                     "walkAnime": true
                 }
             ],
-            "x": 7,
-            "y": 20
+            "x": 9,
+            "y": 22
         },
         {
             "id": 17,
@@ -6100,6 +6884,61 @@
                     "through": false,
                     "trigger": 3,
                     "walkAnime": true
+                },
+                {
+                    "conditions": {
+                        "actorId": 1,
+                        "actorValid": false,
+                        "itemId": 1,
+                        "itemValid": false,
+                        "selfSwitchCh": "A",
+                        "selfSwitchValid": false,
+                        "switch1Id": 1,
+                        "switch1Valid": false,
+                        "switch2Id": 1,
+                        "switch2Valid": false,
+                        "variableId": 106,
+                        "variableValid": true,
+                        "variableValue": 90
+                    },
+                    "directionFix": false,
+                    "image": {
+                        "tileId": 0,
+                        "characterName": "Reed",
+                        "direction": 2,
+                        "pattern": 0,
+                        "characterIndex": 0
+                    },
+                    "list": [
+                        {
+                            "code": 0,
+                            "indent": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "moveFrequency": 3,
+                    "moveRoute": {
+                        "list": [
+                            {
+                                "code": 33,
+                                "indent": null
+                            },
+                            {
+                                "code": 0,
+                                "parameters": []
+                            }
+                        ],
+                        "repeat": true,
+                        "skippable": false,
+                        "wait": false
+                    },
+                    "moveSpeed": 3,
+                    "moveType": 0,
+                    "priorityType": 1,
+                    "stepAnime": false,
+                    "through": false,
+                    "trigger": 0,
+                    "walkAnime": true
                 }
             ],
             "x": 8,
@@ -6298,6 +7137,57 @@
                     "through": false,
                     "trigger": 1,
                     "walkAnime": true
+                },
+                {
+                    "conditions": {
+                        "actorId": 1,
+                        "actorValid": false,
+                        "itemId": 1,
+                        "itemValid": false,
+                        "selfSwitchCh": "A",
+                        "selfSwitchValid": false,
+                        "switch1Id": 49,
+                        "switch1Valid": false,
+                        "switch2Id": 1,
+                        "switch2Valid": false,
+                        "variableId": 106,
+                        "variableValid": true,
+                        "variableValue": 20
+                    },
+                    "directionFix": true,
+                    "image": {
+                        "tileId": 0,
+                        "characterName": "!Flame",
+                        "direction": 2,
+                        "pattern": 1,
+                        "characterIndex": 7
+                    },
+                    "list": [
+                        {
+                            "code": 0,
+                            "indent": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "moveFrequency": 3,
+                    "moveRoute": {
+                        "list": [
+                            {
+                                "code": 0,
+                                "parameters": []
+                            }
+                        ],
+                        "repeat": true,
+                        "skippable": false,
+                        "wait": false
+                    },
+                    "moveSpeed": 3,
+                    "moveType": 0,
+                    "priorityType": 0,
+                    "stepAnime": true,
+                    "through": false,
+                    "trigger": 0,
+                    "walkAnime": true
                 }
             ],
             "x": 12,
@@ -6339,24 +7229,40 @@
                             "parameters": []
                         }
                     ],
-                    "moveFrequency": 5,
+                    "moveFrequency": 3,
                     "moveRoute": {
                         "list": [
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 11, 24"
+                                ]
+                            },
+                            {
+                                "code": 17,
+                                "parameters": []
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    180
+                                ]
+                            },
                             {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
-                    "moveSpeed": 4,
-                    "moveType": 1,
+                    "moveSpeed": 3,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 3,
+                    "trigger": 0,
                     "walkAnime": true
                 },
                 {
@@ -6407,7 +7313,7 @@
                                         }
                                     ],
                                     "repeat": false,
-                                    "skippable": false,
+                                    "skippable": true,
                                     "wait": true
                                 }
                             ]
@@ -6481,16 +7387,32 @@
                     "moveRoute": {
                         "list": [
                             {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 12, 17"
+                                ]
+                            },
+                            {
+                                "code": 19,
+                                "parameters": []
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    180
+                                ]
+                            },
+                            {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
                     "moveSpeed": 3,
-                    "moveType": 0,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
@@ -6498,8 +7420,8 @@
                     "walkAnime": true
                 }
             ],
-            "x": 12,
-            "y": 20
+            "x": 11,
+            "y": 24
         },
         {
             "id": 20,
@@ -6535,7 +7457,7 @@
                             "code": 230,
                             "indent": 0,
                             "parameters": [
-                                60
+                                240
                             ]
                         },
                         {
@@ -6546,9 +7468,9 @@
                                 "GabTextOnly",
                                 "Gab: Text Only",
                                 {
-                                    "Text:json": "\"Até o coreto e volta. Valendo!\"",
+                                    "Text:json": "\"Você não me pega!\"",
                                     "ForceGab:eval": "false",
-                                    "Override:struct": "{\"DimColor\":\"\",\"DimColor1:str\":\"\",\"DimColor2:str\":\"\",\"Fade\":\"\",\"FadeRate:num\":\"16\",\"FadeDirection:str\":\"Up\",\"Font\":\"\",\"FontName:str\":\"\",\"FontSize:num\":\"\",\"Position\":\"\",\"YLocation:num\":\"10\",\"ActorID:num\":\"0\",\"PartyIndex:num\":\"-1\",\"EnemyIndex:num\":\"-1\",\"EventID:num\":\"3\",\"OnDisplay\":\"\",\"BypassAntiRepeat:eval\":\"false\",\"SoundFilename:str\":\"\",\"SoundVolume:num\":\"90\",\"SoundPitch:num\":\"100\",\"SoundPan:num\":\"0\",\"OnDisplayJS:func\":\"\",\"OnFinish\":\"\",\"GabSwitch:num\":\"\",\"OnFinishJS:func\":\"\",\"Waiting\":\"\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\",\"__collapsed\":[\"ActorID:num\"]}"
+                                    "Override:struct": "{\"EventID:num\":\"1\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\",\"BypassAntiRepeat:eval\":\"false\"}"
                                 }
                             ]
                         },
@@ -6556,7 +7478,7 @@
                             "code": 657,
                             "indent": 0,
                             "parameters": [
-                                "Text = \"Até o coreto e volta. Valendo!\""
+                                "Text = \"Você não me pega!\""
                             ]
                         },
                         {
@@ -6570,14 +7492,14 @@
                             "code": 657,
                             "indent": 0,
                             "parameters": [
-                                "Optional Settings = {\"DimColor\":\"\",\"DimColor1:str\":\"\",\"DimC…"
+                                "Optional Settings = {\"EventID:num\":\"1\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\",\"BypassAntiRepeat:eval\":\"false\"}"
                             ]
                         },
                         {
                             "code": 230,
                             "indent": 0,
                             "parameters": [
-                                60
+                                240
                             ]
                         },
                         {
@@ -6588,9 +7510,9 @@
                                 "GabTextOnly",
                                 "Gab: Text Only",
                                 {
-                                    "Text:json": "\"Vai demorar muito?\"",
+                                    "Text:json": "\"Vale contornar o poste!\"",
                                     "ForceGab:eval": "false",
-                                    "Override:struct": "{\"EventID:num\":\"7\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                                    "Override:struct": "{\"EventID:num\":\"5\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\",\"BypassAntiRepeat:eval\":\"false\"}"
                                 }
                             ]
                         },
@@ -6598,7 +7520,7 @@
                             "code": 657,
                             "indent": 0,
                             "parameters": [
-                                "Text = \"Vai demorar muito?\""
+                                "Text = \"Vale contornar o poste!\""
                             ]
                         },
                         {
@@ -6612,14 +7534,14 @@
                             "code": 657,
                             "indent": 0,
                             "parameters": [
-                                "Optional Settings = {\"EventID:num\":\"7\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                                "Optional Settings = {\"EventID:num\":\"5\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\",\"BypassAntiRepeat:eval\":\"false\"}"
                             ]
                         },
                         {
                             "code": 230,
                             "indent": 0,
                             "parameters": [
-                                60
+                                240
                             ]
                         },
                         {
@@ -6630,9 +7552,9 @@
                                 "GabTextOnly",
                                 "Gab: Text Only",
                                 {
-                                    "Text:json": "\"Que história o Rheed vai contar?\"",
+                                    "Text:json": "\"Corre pela borda!\"",
                                     "ForceGab:eval": "false",
-                                    "Override:struct": "{\"EventID:num\":\"10\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                                    "Override:struct": "{\"EventID:num\":\"13\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\",\"BypassAntiRepeat:eval\":\"false\"}"
                                 }
                             ]
                         },
@@ -6640,7 +7562,7 @@
                             "code": 657,
                             "indent": 0,
                             "parameters": [
-                                "Text = \"Que história o Rheed vai contar?\""
+                                "Text = \"Corre pela borda!\""
                             ]
                         },
                         {
@@ -6654,14 +7576,14 @@
                             "code": 657,
                             "indent": 0,
                             "parameters": [
-                                "Optional Settings = {\"EventID:num\":\"10\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                                "Optional Settings = {\"EventID:num\":\"13\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\",\"BypassAntiRepeat:eval\":\"false\"}"
                             ]
                         },
                         {
                             "code": 230,
                             "indent": 0,
                             "parameters": [
-                                60
+                                240
                             ]
                         },
                         {
@@ -6672,9 +7594,9 @@
                                 "GabTextOnly",
                                 "Gab: Text Only",
                                 {
-                                    "Text:json": "\"Guarda um lugar pra mim?\"",
+                                    "Text:json": "\"Todo mundo no mesmo passo!\"",
                                     "ForceGab:eval": "false",
-                                    "Override:struct": "{\"EventID:num\":\"12\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                                    "Override:struct": "{\"EventID:num\":\"8\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\",\"BypassAntiRepeat:eval\":\"false\"}"
                                 }
                             ]
                         },
@@ -6682,7 +7604,7 @@
                             "code": 657,
                             "indent": 0,
                             "parameters": [
-                                "Text = \"Guarda um lugar pra mim?\""
+                                "Text = \"Todo mundo no mesmo passo!\""
                             ]
                         },
                         {
@@ -6696,14 +7618,14 @@
                             "code": 657,
                             "indent": 0,
                             "parameters": [
-                                "Optional Settings = {\"EventID:num\":\"12\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                                "Optional Settings = {\"EventID:num\":\"8\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\",\"BypassAntiRepeat:eval\":\"false\"}"
                             ]
                         },
                         {
                             "code": 230,
                             "indent": 0,
                             "parameters": [
-                                60
+                                240
                             ]
                         },
                         {
@@ -6714,9 +7636,9 @@
                                 "GabTextOnly",
                                 "Gab: Text Only",
                                 {
-                                    "Text:json": "\"Não pisa na linha!\"",
+                                    "Text:json": "\"Agora gira para o outro lado!\"",
                                     "ForceGab:eval": "false",
-                                    "Override:struct": "{\"EventID:num\":\"13\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                                    "Override:struct": "{\"EventID:num\":\"9\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\",\"BypassAntiRepeat:eval\":\"false\"}"
                                 }
                             ]
                         },
@@ -6724,7 +7646,7 @@
                             "code": 657,
                             "indent": 0,
                             "parameters": [
-                                "Text = \"Não pisa na linha!\""
+                                "Text = \"Agora gira para o outro lado!\""
                             ]
                         },
                         {
@@ -6738,14 +7660,14 @@
                             "code": 657,
                             "indent": 0,
                             "parameters": [
-                                "Optional Settings = {\"EventID:num\":\"13\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                                "Optional Settings = {\"EventID:num\":\"9\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\",\"BypassAntiRepeat:eval\":\"false\"}"
                             ]
                         },
                         {
                             "code": 230,
                             "indent": 0,
                             "parameters": [
-                                60
+                                240
                             ]
                         },
                         {
@@ -6756,9 +7678,9 @@
                                 "GabTextOnly",
                                 "Gab: Text Only",
                                 {
-                                    "Text:json": "\"É uma história de muito tempo atrás?\"",
+                                    "Text:json": "\"Sem soltar a roda!\"",
                                     "ForceGab:eval": "false",
-                                    "Override:struct": "{\"EventID:num\":\"16\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                                    "Override:struct": "{\"EventID:num\":\"10\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\",\"BypassAntiRepeat:eval\":\"false\"}"
                                 }
                             ]
                         },
@@ -6766,7 +7688,7 @@
                             "code": 657,
                             "indent": 0,
                             "parameters": [
-                                "Text = \"É uma história de muito tempo atrás?\""
+                                "Text = \"Sem soltar a roda!\""
                             ]
                         },
                         {
@@ -6780,14 +7702,14 @@
                             "code": 657,
                             "indent": 0,
                             "parameters": [
-                                "Optional Settings = {\"EventID:num\":\"16\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                                "Optional Settings = {\"EventID:num\":\"10\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\",\"BypassAntiRepeat:eval\":\"false\"}"
                             ]
                         },
                         {
                             "code": 230,
                             "indent": 0,
                             "parameters": [
-                                60
+                                240
                             ]
                         },
                         {
@@ -6798,9 +7720,9 @@
                                 "GabTextOnly",
                                 "Gab: Text Only",
                                 {
-                                    "Text:json": "\"O coreto fica bonito assim.\"",
+                                    "Text:json": "\"Um, dois... troca o passo!\"",
                                     "ForceGab:eval": "false",
-                                    "Override:struct": "{\"EventID:num\":\"32\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                                    "Override:struct": "{\"EventID:num\":\"16\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\",\"BypassAntiRepeat:eval\":\"false\"}"
                                 }
                             ]
                         },
@@ -6808,7 +7730,7 @@
                             "code": 657,
                             "indent": 0,
                             "parameters": [
-                                "Text = \"O coreto fica bonito assim.\""
+                                "Text = \"Um, dois... troca o passo!\""
                             ]
                         },
                         {
@@ -6822,14 +7744,14 @@
                             "code": 657,
                             "indent": 0,
                             "parameters": [
-                                "Optional Settings = {\"EventID:num\":\"32\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                                "Optional Settings = {\"EventID:num\":\"16\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\",\"BypassAntiRepeat:eval\":\"false\"}"
                             ]
                         },
                         {
                             "code": 230,
                             "indent": 0,
                             "parameters": [
-                                60
+                                240
                             ]
                         },
                         {
@@ -6840,9 +7762,9 @@
                                 "GabTextOnly",
                                 "Gab: Text Only",
                                 {
-                                    "Text:json": "\"Acho que já vai começar.\"",
+                                    "Text:json": "\"A roda está quase certinha!\"",
                                     "ForceGab:eval": "false",
-                                    "Override:struct": "{\"EventID:num\":\"3\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                                    "Override:struct": "{\"EventID:num\":\"32\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\",\"BypassAntiRepeat:eval\":\"false\"}"
                                 }
                             ]
                         },
@@ -6850,7 +7772,7 @@
                             "code": 657,
                             "indent": 0,
                             "parameters": [
-                                "Text = \"Acho que já vai começar.\""
+                                "Text = \"A roda está quase certinha!\""
                             ]
                         },
                         {
@@ -6864,14 +7786,14 @@
                             "code": 657,
                             "indent": 0,
                             "parameters": [
-                                "Optional Settings = {\"EventID:num\":\"3\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                                "Optional Settings = {\"EventID:num\":\"32\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\",\"BypassAntiRepeat:eval\":\"false\"}"
                             ]
                         },
                         {
                             "code": 230,
                             "indent": 0,
                             "parameters": [
-                                60
+                                240
                             ]
                         },
                         {
@@ -6882,9 +7804,9 @@
                                 "GabTextOnly",
                                 "Gab: Text Only",
                                 {
-                                    "Text:json": "\"Será que isso aconteceu mesmo?\"",
+                                    "Text:json": "\"Será que a história aconteceu mesmo?\"",
                                     "ForceGab:eval": "false",
-                                    "Override:struct": "{\"EventID:num\":\"7\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                                    "Override:struct": "{\"EventID:num\":\"2\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\",\"BypassAntiRepeat:eval\":\"false\"}"
                                 }
                             ]
                         },
@@ -6892,7 +7814,7 @@
                             "code": 657,
                             "indent": 0,
                             "parameters": [
-                                "Text = \"Será que isso aconteceu mesmo?\""
+                                "Text = \"Será que a história aconteceu mesmo?\""
                             ]
                         },
                         {
@@ -6906,14 +7828,14 @@
                             "code": 657,
                             "indent": 0,
                             "parameters": [
-                                "Optional Settings = {\"EventID:num\":\"7\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                                "Optional Settings = {\"EventID:num\":\"2\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\",\"BypassAntiRepeat:eval\":\"false\"}"
                             ]
                         },
                         {
                             "code": 230,
                             "indent": 0,
                             "parameters": [
-                                60
+                                240
                             ]
                         },
                         {
@@ -6924,9 +7846,9 @@
                                 "GabTextOnly",
                                 "Gab: Text Only",
                                 {
-                                    "Text:json": "\"Eu quero sentar lá na frente!\"",
+                                    "Text:json": "\"Eu gosto de ouvir daqui.\"",
                                     "ForceGab:eval": "false",
-                                    "Override:struct": "{\"EventID:num\":\"10\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                                    "Override:struct": "{\"EventID:num\":\"3\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\",\"BypassAntiRepeat:eval\":\"false\"}"
                                 }
                             ]
                         },
@@ -6934,7 +7856,7 @@
                             "code": 657,
                             "indent": 0,
                             "parameters": [
-                                "Text = \"Eu quero sentar lá na frente!\""
+                                "Text = \"Eu gosto de ouvir daqui.\""
                             ]
                         },
                         {
@@ -6948,14 +7870,14 @@
                             "code": 657,
                             "indent": 0,
                             "parameters": [
-                                "Optional Settings = {\"EventID:num\":\"10\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                                "Optional Settings = {\"EventID:num\":\"3\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\",\"BypassAntiRepeat:eval\":\"false\"}"
                             ]
                         },
                         {
                             "code": 230,
                             "indent": 0,
                             "parameters": [
-                                60
+                                240
                             ]
                         },
                         {
@@ -6966,9 +7888,9 @@
                                 "GabTextOnly",
                                 "Gab: Text Only",
                                 {
-                                    "Text:json": "\"Eu vou tentar não interromper.\"",
+                                    "Text:json": "\"Promete não contar o final?\"",
                                     "ForceGab:eval": "false",
-                                    "Override:struct": "{\"EventID:num\":\"12\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                                    "Override:struct": "{\"EventID:num\":\"7\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\",\"BypassAntiRepeat:eval\":\"false\"}"
                                 }
                             ]
                         },
@@ -6976,7 +7898,7 @@
                             "code": 657,
                             "indent": 0,
                             "parameters": [
-                                "Text = \"Eu vou tentar não interromper.\""
+                                "Text = \"Promete não contar o final?\""
                             ]
                         },
                         {
@@ -6990,14 +7912,14 @@
                             "code": 657,
                             "indent": 0,
                             "parameters": [
-                                "Optional Settings = {\"EventID:num\":\"12\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                                "Optional Settings = {\"EventID:num\":\"7\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\",\"BypassAntiRepeat:eval\":\"false\"}"
                             ]
                         },
                         {
                             "code": 230,
                             "indent": 0,
                             "parameters": [
-                                60
+                                240
                             ]
                         },
                         {
@@ -7008,9 +7930,9 @@
                                 "GabTextOnly",
                                 "Gab: Text Only",
                                 {
-                                    "Text:json": "\"Tem lugar pra todo mundo?\"",
+                                    "Text:json": "\"Depois a gente troca de lugar.\"",
                                     "ForceGab:eval": "false",
-                                    "Override:struct": "{\"EventID:num\":\"13\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                                    "Override:struct": "{\"EventID:num\":\"11\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\",\"BypassAntiRepeat:eval\":\"false\"}"
                                 }
                             ]
                         },
@@ -7018,7 +7940,7 @@
                             "code": 657,
                             "indent": 0,
                             "parameters": [
-                                "Text = \"Tem lugar pra todo mundo?\""
+                                "Text = \"Depois a gente troca de lugar.\""
                             ]
                         },
                         {
@@ -7032,14 +7954,14 @@
                             "code": 657,
                             "indent": 0,
                             "parameters": [
-                                "Optional Settings = {\"EventID:num\":\"13\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                                "Optional Settings = {\"EventID:num\":\"11\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\",\"BypassAntiRepeat:eval\":\"false\"}"
                             ]
                         },
                         {
                             "code": 230,
                             "indent": 0,
                             "parameters": [
-                                60
+                                240
                             ]
                         },
                         {
@@ -8815,24 +9737,84 @@
                             "parameters": []
                         }
                     ],
-                    "moveFrequency": 5,
+                    "moveFrequency": 4,
                     "moveRoute": {
                         "list": [
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 7, 22"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    18
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 7, 20"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    18
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 8, 19"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    18
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 9, 20"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    18
+                                ]
+                            },
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 9, 22"
+                                ]
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    18
+                                ]
+                            },
                             {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
-                    "moveSpeed": 4,
-                    "moveType": 1,
+                    "moveSpeed": 3,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
-                    "trigger": 3,
+                    "trigger": 0,
                     "walkAnime": true
                 },
                 {
@@ -8883,7 +9865,7 @@
                                         }
                                     ],
                                     "repeat": false,
-                                    "skippable": false,
+                                    "skippable": true,
                                     "wait": true
                                 }
                             ]
@@ -8957,16 +9939,32 @@
                     "moveRoute": {
                         "list": [
                             {
+                                "code": 45,
+                                "parameters": [
+                                    "Move To: 6, 17"
+                                ]
+                            },
+                            {
+                                "code": 19,
+                                "parameters": []
+                            },
+                            {
+                                "code": 15,
+                                "parameters": [
+                                    180
+                                ]
+                            },
+                            {
                                 "code": 0,
                                 "parameters": []
                             }
                         ],
                         "repeat": true,
-                        "skippable": false,
+                        "skippable": true,
                         "wait": false
                     },
                     "moveSpeed": 3,
-                    "moveType": 0,
+                    "moveType": 3,
                     "priorityType": 1,
                     "stepAnime": false,
                     "through": false,
@@ -8974,8 +9972,8 @@
                     "walkAnime": true
                 }
             ],
-            "x": 8,
-            "y": 21
+            "x": 7,
+            "y": 22
         },
         {
             "id": 33,

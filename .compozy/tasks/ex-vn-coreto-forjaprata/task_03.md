@@ -1,5 +1,5 @@
 ---
-status: pending
+status: completed
 title: "Task 3: Focus the Forjaprata preparation loop and audio"
 type: game-content
 complexity: high

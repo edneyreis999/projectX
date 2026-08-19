@@ -1,0 +1,10 @@
+{
+    "schema_version": 1,
+    "fixture": "duplicate-sling-grant",
+    "mutation": {
+        "event_id": 20,
+        "duplicate_plugin_command": "Coreto_Quests/addWeapon",
+        "weapon_id": 1
+    },
+    "expected_error": "sling_flow_invalid"
+}

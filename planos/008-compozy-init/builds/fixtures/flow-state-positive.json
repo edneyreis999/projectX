@@ -1,0 +1,62 @@
+{
+    "schema_version": 1,
+    "cases": [
+        {
+            "id": "pre-entry",
+            "map_id": 22,
+            "canonical_state": 10,
+            "session": null,
+            "expected": {
+                "event_id": 18,
+                "page_number": 1,
+                "trigger": 1
+            }
+        },
+        {
+            "id": "active-vn",
+            "map_id": 46,
+            "canonical_state": 10,
+            "session": {
+                "phase": "active",
+                "quest_key": "noite-da-historia",
+                "entry_key": "CENA_PRINCIPAL",
+                "destination_map_id": 46
+            },
+            "expected": {
+                "event_id": 1,
+                "page_number": 1,
+                "trigger": 0
+            }
+        },
+        {
+            "id": "returning-forjaprata",
+            "map_id": 45,
+            "canonical_state": 90,
+            "session": {
+                "phase": "returning",
+                "quest_key": "tutorial-funda-forjaprata",
+                "entry_key": "ABERTURA_FORJAPRATA",
+                "return_map_id": 45
+            },
+            "self_switches": ["11:A", "36:A"],
+            "expected": {
+                "event_id": 36,
+                "page_number": 1,
+                "trigger": 3
+            }
+        },
+        {
+            "id": "post-return",
+            "map_id": 45,
+            "canonical_state": 90,
+            "session": null,
+            "self_switches": ["11:A", "11:D", "11:B", "12:B", "36:A", "36:B", "36:C", "21:A", "21:B"],
+            "expected_pages": [
+                { "event_id": 11, "page_number": 4, "trigger": 0 },
+                { "event_id": 12, "page_number": 2, "trigger": 1 },
+                { "event_id": 21, "page_number": 2, "trigger": 0 },
+                { "event_id": 36, "page_number": 3, "trigger": 0 }
+            ]
+        }
+    ]
+}
