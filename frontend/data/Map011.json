@@ -3226,7 +3226,7 @@
             { "code": 657, "indent": 0, "parameters": ["Flip Direction = None"] },
             { "code": 657, "indent": 0, "parameters": ["Duration = 20"] },
             { "code": 657, "indent": 0, "parameters": ["Auto-Erase? = true"] },
-            { "code": 301, "indent": 0, "parameters": [0, 19, false, true] },
+            { "code": 301, "indent": 0, "parameters": [0, 20, false, true] },
             { "code": 601, "indent": 0, "parameters": [] },
             { "code": 230, "indent": 1, "parameters": [45] },
             { "code": 221, "indent": 1, "parameters": [] },

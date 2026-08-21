@@ -25,7 +25,7 @@ Sua função narrativa é mostrar que a crise dos [[Ignotos]] não nasce apenas 
 
 Sua personalidade é ambiciosa, autoritária, pragmática, centralizadora, política, medrosa diante de ameaças à própria posição e voltada à autopreservação. Ele usa subornos, concessões, repressão e propaganda para manter estabilidade. Suas virtudes documentadas são capacidade política e leitura de crise; seus defeitos são autoritarismo, oportunismo, repressão à magia, exploração econômica e desprezo por sinais espirituais ou tradicionais.
 
-Suas motivações são manter o poder, legitimar sua ascensão, preservar a ordem imperial, superar escassez de recursos e controlar narrativas perigosas. O conflito externo envolve revoltas, crise econômica, [[Tordan]], Conselho, [[Balastrus]], [[Corvinus]], magia, [[Mélia]], [[Thorin]] e o retorno dos [[Ignotos]].
+Suas motivações são manter o poder, legitimar sua ascensão, preservar a ordem imperial, superar escassez de recursos e controlar narrativas perigosas. O conflito externo envolve revoltas, crise econômica, [[Tordan|Thordan]], Conselho, [[Balastrus]], [[Corvinus]], magia, [[Mélia]], [[Thorin]] e o retorno dos [[Ignotos]].
 
 ---
 
@@ -77,7 +77,7 @@ Ele perde a aparência de controle absoluto e vê seu regime confrontado por for
 | Personagem              | Relação Inicial                                                     | Evolução                                                              |
 | ----------------------- | ------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | [[Thorin]]              | Jovem nobre distante, filho de seu general.                         | Torna-se ameaça simbólica quando manifesta poder espiritual proibido. |
-| [[Tordan]]              | Amigo/aliado político, recompensado com posição militar.            | A crise tensiona lealdade imperial e dever com família/cidade.        |
+| [[Tordan|Thordan]]              | Amigo/aliado político, recompensado com posição militar.            | A crise tensiona lealdade imperial e dever com família/cidade.        |
 | [[Balastrus]]           | Técnico/inventor útil ao projeto minerador.                         | Seus interesses convergem em Melios.                                  |
 | [[Filena]]              | Súdita pobre afetada pela exploração.                               | Seu regime é a força estrutural contra a qual ela se organiza.        |
 | [[Corvinus]]            | Líder tradicionalista/minerador fora do controle pleno imperial.    | Os [[Corvos]] contestam autorização imperial sobre Melios.            |
@@ -100,7 +100,7 @@ Ele perde a aparência de controle absoluto e vê seu regime confrontado por for
 
 | Ato     | Objetivo                                                                                         | Principal Conflito                                                                 | Resultado                                                                   |
 | ------- | ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| Ato I   | Manter ordem e exploração econômica por estruturas imperiais.                                    | Pressões sociais, medo de magia e distância entre elite e povo.                    | Surge como poder distante que molda as ações de [[Tordan]] e [[Balastrus]]. |
+| Ato I   | Manter ordem e exploração econômica por estruturas imperiais.                                    | Pressões sociais, medo de magia e distância entre elite e povo.                    | Surge como poder distante que molda as ações de [[Tordan|Thordan]] e [[Balastrus]]. |
 | Ato II  | Viabilizar Melios e recuperar força econômica/política.                                          | Avisos dos [[Corvos]], prudência militar e risco espiritual ignorado.              | A política imperial contribui para a liberação dos [[Ignotos]].             |
 | Ato III | Preservar autoridade durante colapso e controlar o dano político da magia pública de [[Thorin]]. | Defesa real da cidade versus manutenção de controle político, rumores e suspeitas. | Legitimidade fica abalada.                                                  |
 

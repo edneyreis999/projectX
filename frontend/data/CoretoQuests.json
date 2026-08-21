@@ -79,76 +79,6 @@
                 }
             }
         },
-        "tutorial-funda-forjaprata": {
-            "stageVariableId": 111,
-            "initialState": 0,
-            "terminalStates": [
-                90
-            ],
-            "pkd": {
-                "questId": "aSemifinal",
-                "objectives": [
-                    {
-                        "id": 1,
-                        "knownFrom": 10,
-                        "completedAt": 20
-                    },
-                    {
-                        "id": 2,
-                        "knownFrom": 20,
-                        "completedAt": null
-                    }
-                ],
-                "completeQuestAtTerminal": false
-            },
-            "transitions": {
-                "INTRODUCE_JOURNAL": {
-                    "from": [
-                        0
-                    ],
-                    "to": 10,
-                    "requirements": [],
-                    "effects": []
-                },
-                "FOUND_SLING": {
-                    "from": [
-                        10
-                    ],
-                    "to": 20,
-                    "requirements": [],
-                    "effects": []
-                },
-                "LEAVE_EQUIPPED": {
-                    "from": [
-                        20
-                    ],
-                    "to": 90,
-                    "requirements": [],
-                    "effects": [],
-                    "terminal": true
-                }
-            },
-            "extensions": {
-                "questVN": {
-                    "mapId": 49,
-                    "spawn": {
-                        "x": 8,
-                        "y": 6,
-                        "direction": 2,
-                        "fadeType": 0,
-                        "audioPolicy": "restore-origin"
-                    },
-                    "entries": {
-                        "ABERTURA_FORJAPRATA": {
-                            "eventId": 1,
-                            "allowedStates": [
-                                0
-                            ]
-                        }
-                    }
-                }
-            }
-        },
         "fim-de-jogo": {
             "stageVariableId": 27,
             "initialState": 0,
@@ -345,6 +275,218 @@
                     "requirements": [],
                     "effects": [],
                     "terminal": true
+                }
+            }
+        },
+        "a-semifinal": {
+            "stageVariableId": 29,
+            "initialState": 0,
+            "terminalStates": [
+                900
+            ],
+            "pkd": {
+                "questId": "aSemifinal",
+                "objectives": [
+                    {
+                        "id": 1,
+                        "knownFrom": 20,
+                        "completedAt": 30
+                    },
+                    {
+                        "id": 2,
+                        "knownFrom": 30,
+                        "completedAt": 50
+                    },
+                    {
+                        "id": 3,
+                        "knownFrom": 50,
+                        "completedAt": 60
+                    },
+                    {
+                        "id": 4,
+                        "knownFrom": 60,
+                        "completedAt": 70
+                    },
+                    {
+                        "id": 5,
+                        "knownFrom": 70,
+                        "completedAt": 80
+                    },
+                    {
+                        "id": 6,
+                        "knownFrom": 80,
+                        "completedAt": 90
+                    },
+                    {
+                        "id": 7,
+                        "knownFrom": 90,
+                        "completedAt": 110
+                    },
+                    {
+                        "id": 8,
+                        "knownFrom": 120,
+                        "completedAt": 900
+                    }
+                ],
+                "completeQuestAtTerminal": true
+            },
+            "transitions": {
+                "START_STORY": {
+                    "from": [
+                        0
+                    ],
+                    "to": 10,
+                    "requirements": [],
+                    "effects": []
+                },
+                "INTRODUCE_JOURNAL": {
+                    "from": [
+                        10
+                    ],
+                    "to": 20,
+                    "requirements": [],
+                    "effects": []
+                },
+                "FOUND_SLING": {
+                    "from": [
+                        20
+                    ],
+                    "to": 30,
+                    "requirements": [],
+                    "effects": []
+                },
+                "LEAVE_EQUIPPED": {
+                    "from": [
+                        30
+                    ],
+                    "to": 40,
+                    "requirements": [],
+                    "effects": []
+                },
+                "ARRIVE_STADIUM": {
+                    "from": [
+                        40
+                    ],
+                    "to": 50,
+                    "requirements": [],
+                    "effects": []
+                },
+                "REQUIRE_HELMET": {
+                    "from": [
+                        50
+                    ],
+                    "to": 60,
+                    "requirements": [],
+                    "effects": []
+                },
+                "TAKE_HELMET": {
+                    "from": [
+                        60
+                    ],
+                    "to": 70,
+                    "requirements": [],
+                    "effects": []
+                },
+                "EQUIP_HELMET": {
+                    "from": [
+                        70
+                    ],
+                    "to": 80,
+                    "requirements": [],
+                    "effects": []
+                },
+                "AUTHORIZE_FIELD": {
+                    "from": [
+                        80
+                    ],
+                    "to": 90,
+                    "requirements": [],
+                    "effects": []
+                },
+                "ENTER_FIELD": {
+                    "from": [
+                        90
+                    ],
+                    "to": 100,
+                    "requirements": [],
+                    "effects": []
+                },
+                "ESTABLISH_VICTORY": {
+                    "from": [
+                        100
+                    ],
+                    "to": 110,
+                    "requirements": [],
+                    "effects": []
+                },
+                "COMMIT_ESCORT": {
+                    "from": [
+                        110
+                    ],
+                    "to": 120,
+                    "requirements": [],
+                    "effects": []
+                },
+                "ARRIVE_HOME": {
+                    "from": [
+                        120
+                    ],
+                    "to": 900,
+                    "requirements": [],
+                    "effects": [],
+                    "terminal": true
+                }
+            },
+            "extensions": {
+                "questVN": {
+                    "mapId": 49,
+                    "spawn": {
+                        "x": 8,
+                        "y": 6,
+                        "direction": 2,
+                        "fadeType": 0,
+                        "audioPolicy": "restore-origin"
+                    },
+                    "entries": {
+                        "ABERTURA_FORJAPRATA": {
+                            "eventId": 1,
+                            "allowedStates": [
+                                10
+                            ]
+                        },
+                        "SEMIFINAL_DRAGOBUR_ARRIVAL": {
+                            "mapId": 65,
+                            "eventId": 1,
+                            "allowedStates": [
+                                50
+                            ],
+                            "resumeLabel": "SEMIFINAL_AFTER_ARRIVAL_VN"
+                        },
+                        "SEMIFINAL_DRAGOBUR_AUTHORIZATION": {
+                            "mapId": 65,
+                            "eventId": 2,
+                            "allowedStates": [
+                                80
+                            ],
+                            "resumeLabel": "SEMIFINAL_AFTER_AUTHORIZATION_VN"
+                        },
+                        "SEMIFINAL_CELEBRATION": {
+                            "mapId": 65,
+                            "eventId": 3,
+                            "allowedStates": [
+                                110
+                            ],
+                            "resumeLabel": "SEMIFINAL_AFTER_CELEBRATION_VN"
+                        },
+                        "SEMIFINAL_GUARD_INTERVENTION": {
+                            "mapId": 65,
+                            "eventId": 4,
+                            "allowedStates": [
+                                110
+                            ],
+                            "resumeLabel": "SEMIFINAL_AFTER_GUARD_VN"
+                        }
+                    }
                 }
             }
         }

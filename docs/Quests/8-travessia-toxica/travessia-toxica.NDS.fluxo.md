@@ -12,7 +12,7 @@
 - Conflito central: Um deslizamento bloqueia a rota de retorno e obriga o grupo a atravessar a Mina de Esgoto, onde tensoes internas, ambiente toxico e um boss adormecido transformam a retirada em sobrevivencia.
 - Objetivo narrativo global: Converter o retorno de Kravens em uma travessia de alto risco, aprofundar conflitos entre Balastrus e os guardas, e encerrar com combate-chave antes da volta para a superficie.
 - Premissa resumida: A avalanche corta a passagem no Mapa 3 e o grupo e forcado a buscar rota alternativa pela Mina de Esgoto (Mapa 24). Dentro da mina, pistas e documentos guiam a progressao enquanto a equipe discute estrategia e convivencia. No Mapa 25, a travessia acelera e uma quebra de memoria com Rheed reforca o tema do Simbolo de Tregua. No Mapa 26, ao avistar a saida, o grupo cruza uma camara com boss adormecido; o plano de evitar confronto falha e o combate encerra a quest.
-- Resumo: Na Estrada do Cao Luar (Mapa 3), o grupo descobre que o caminho foi interditado por deslizamento. Sem rota externa segura, Thorin segue para a Mina de Esgoto (Mapa 24), onde a exploracao combina leitura de registros, orientacoes taticas e desgaste entre os membros. O avancar para o 2F (Mapa 25) mantem a pressao e inclui uma quebra de memoria narrada por Rheed sobre o Simbolo de Tregua. A descida final ao 3F (Mapa 26) parece abrir a fuga, mas um boss adormecido ocupa o unico caminho. A tensao entre Balastrus, Kilin e Mhordred escala ate o confronto, e a vitoria libera o retorno para a superficie.
+- Resumo: Na Estrada do Cao Luar (Mapa 3), o grupo descobre que o caminho foi interditado por deslizamento. Sem rota externa segura, Thorin segue para a Mina de Esgoto (Mapa 24), onde a exploracao combina leitura de registros, orientacoes taticas e desgaste entre os membros. O avancar para o 2F (Mapa 25) mantem a pressao e inclui uma quebra de memoria narrada por Rheed sobre o Simbolo de Tregua. A descida final ao 3F (Mapa 26) parece abrir a fuga, mas um boss adormecido ocupa o unico caminho. A tensao entre Balastrus, Killin e Mhordred escala ate o confronto, e a vitoria libera o retorno para a superficie.
 
 - Locais principais
   - Estrada do Cao Luar (Mapa 3)
@@ -23,7 +23,7 @@
   - Thorin
   - Filena
   - Balastrus
-  - Kilin
+  - Killin
   - Mhordred
   - Rheed (quebra de memoria)
 - Ameacas principais
@@ -78,7 +78,7 @@ Quest: Travessia Toxica
 | 1-A | Avalanche | O grupo fica preso apos um deslizamento de pedras e perde a rota principal. | CS |
 | 1-B | The other way | Thorin e equipe concluem que precisam abrir um caminho alternativo. | CS |
 | 1-C/A | Mercenario | Mhordred culpa Balastrus por manter a expedicao em condicoes extremas. | CS |
-| 1-C/B | Consequencias | Kilin reforca que Balastrus respondera pelo risco assumido. | CS |
+| 1-C/B | Consequencias | Killin reforca que Balastrus respondera pelo risco assumido. | CS |
 | 1-D | Voce sabe com quem esta falando? | Balastrus rebate os guardas e insiste em sua autoridade. | CS |
 | 1-E | Nao adianta chorar sobre o leite derramado | O grupo aceita a passagem pela montanha e parte para a Mina de Esgoto. | JOG |
 
@@ -89,7 +89,7 @@ Quest: Travessia Toxica
 | 1-F | E melhor nos separar e procurar por pistas! | A equipe entra no 1F e inicia varredura por informacoes da estrutura. | JOG |
 | 1-G | Livro antigo | Thorin encontra um registro tecnico que sugere rotas e mecanismos da mina. | JOG |
 | 1-H | Livro dos Mineradores Ferrosos | Filena interpreta o livro e direciona os proximos passos do grupo. | CS |
-| 1-I/A | A boa estrategia e sempre o melhor ataque | Kilin exige coordenacao e eficiencia para atravessar o setor. | CS |
+| 1-I/A | A boa estrategia e sempre o melhor ataque | Killin exige coordenacao e eficiencia para atravessar o setor. | CS |
 | 1-I/B | Orgulho de guerreiro | Mhordred rejeita planejamento excessivo e prefere confronto direto. | CS |
 | 1-I/C | Mesmo barco | Filena impoe cooperacao para manter o grupo vivo. | CS |
 | 1-I/D | Cade o Balastrus? | Thorin nota o sumico de Balastrus durante a progressao. | CS |
@@ -114,5 +114,5 @@ Quest: Travessia Toxica
 | 3-E | Terra a vista, marujos! | Thorin identifica a saida e acelera a tentativa de fuga. | CS |
 | 3-F | Alivio | Filena reage ao vislumbre de escapatoria. | CS |
 | 3-G | Sem paciencia | Balastrus volta a provocar o grupo na reta final. | CS |
-| 3-H | Criancas briguentas | Kilin encerra a discussao, mas a tensao desperta o confronto final. | JOG |
+| 3-H | Criancas briguentas | Killin encerra a discussao, mas a tensao desperta o confronto final. | JOG |
 | 3-I | Saida liberada | Vitoria no combate e retorno para a superficie encerram a quest. | JOG |

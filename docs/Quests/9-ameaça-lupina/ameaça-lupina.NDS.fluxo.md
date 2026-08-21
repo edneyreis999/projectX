@@ -11,14 +11,14 @@
 - **Quest anterior**: Travessia Tóxica  
 - **Conflito central**: O grupo enfim consegue escapar da Mina do Esgoto, que estava infestada por mutações venenosas. Mas o alívio dura pouco, pois o grupo é cercado por uma alcatéia de 4 Lobos do Gelo. Um deles é colossal. A batalha é a única opção.
 - **Objetivo narrativo global**: A introdução dos lobos como novos bosses se dá para acentuar a atmosfera claustrofóbica e perigosa, antes do grupo retornar à Gildrat.
-- **Premissa resumida**: Thorin e seu grupo (Kilin, Mhordred, Filena e Balastrus) lutam contra os lobos.  
+- **Premissa resumida**: Thorin e seu grupo (Killin, Mhordred, Filena e Balastrus) lutam contra os lobos.
 - **Resumo**: Após passarem pela Mina do Esgoto, o grupo se depara com uma emboscada em grande escala. Uma alcatéia de 4 lobos cerca o grupo. A batalha é a única opção. Filena assume a linha de frente ao lado de Thorin e puxa o grupo para nao recuar.
 - **Locais principais**:  
   - World Map
   - Estrada do Cão Luar (encerramento da quest)
 **NPCs principais**:  
   - Thorin  
-  - Kilin  
+  - Killin
   - Mhordred  
   - Filena  
   - Balastrus
@@ -66,4 +66,3 @@ Quest: Ameaça Lupina -
 | 1  | Retorno a Superfície                    | O grupo sai da Mina do Esgoto e se depara com uma alcatéia de Lobos de Gelo.                       | 🎮       |
 | 2  | Batalha Feroz               | O grupo luta contra os lobos e vence; Filena cobre a frente e protege Thorin quando o alpha avanca.   | ??       |
 | 3  | Gildrat à vista!                 | O caminho está livre novamente e o grupo finalmente chega à Estrada do Cão Luar e a quest se encerra.
-

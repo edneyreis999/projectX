@@ -98,7 +98,7 @@ describe('Reference quest state machines — Exploration and Visual Novel', () =
   const registry = readJson('data/CoretoQuests.json');
   const system = readJson('data/System.json');
   const mapInfos = readJson('data/MapInfos.json');
-  const maps = Object.fromEntries([22, 32, 39, 44, 45, 46, 49, 61, 62, 63, 64].map(id => [id, map(id)]));
+  const maps = Object.fromEntries([22, 32, 39, 44, 45, 46, 49, 61, 62, 63, 64, 65].map(id => [id, map(id)]));
 
   test('keeps the authorized map boundary explicit and complete', () => {
     const descendantsOf = rootId => {
@@ -116,7 +116,7 @@ describe('Reference quest state machines — Exploration and Visual Novel', () =
     };
 
     expect(descendantsOf(16)).toEqual([22, 32, 39, 44, 45, 61, 62, 63, 64]);
-    expect(descendantsOf(18)).toEqual([46, 49]);
+    expect(descendantsOf(18)).toEqual([46, 49, 65]);
     expect(mapInfos[16].name).toBe('Exploration');
     expect(mapInfos[18].name).toBe('Visual Novel');
     expect(mapInfos[61]).toMatchObject({ name: 'EX_Distrito_Comercial', parentId: 39 });
@@ -131,13 +131,16 @@ describe('Reference quest state machines — Exploration and Visual Novel', () =
     expect(maps[64].note).toBe('<CoretoMapType:EX>');
     expect(maps[46].note).toBe('<CoretoMapType:VN>');
     expect(maps[49].note).toBe('<CoretoMapType:VN>');
+    expect(mapInfos[65]).toMatchObject({ name: 'VN_Semifinal', parentId: 18 });
+    expect(maps[65].note).toBe('<CoretoMapType:VN>');
   });
 
-  test('keeps both canonical graphs reachable with named, sparse milestones', () => {
+  test('keeps the opening and semifinal canonical graphs reachable with named, sparse milestones', () => {
     const night = registry.quests['noite-da-historia'];
-    const sling = registry.quests['tutorial-funda-forjaprata'];
+    const semifinal = registry.quests['a-semifinal'];
 
     expect(system.variables[106]).toBe('v_qNoiteDaHistoria_stage');
+    expect(system.variables[29]).toBe('v_qSemifinal_progress');
     expect(system.variables[111]).toBe('v_qTutorialFundaForjaprata_stage');
     expect([...validateGraph(night)].sort((a, b) => a - b)).toEqual([0, 10, 15, 20, 90]);
     expect(night.transitions).toMatchObject({
@@ -151,16 +154,12 @@ describe('Reference quest state machines — Exploration and Visual Novel', () =
       { id: 2, knownFrom: 15, completedAt: 20 },
     ]);
 
-    expect([...validateGraph(sling)].sort((a, b) => a - b)).toEqual([0, 10, 20, 90]);
-    expect(sling.transitions.LEAVE_EQUIPPED).toEqual({
-      from: [20],
-      to: 90,
-      requirements: [],
-      effects: [],
-      terminal: true,
-    });
-    expect(sling.pkd.completeQuestAtTerminal).toBe(false);
-    expect(sling.pkd.objectives[1]).toEqual({ id: 2, knownFrom: 20, completedAt: null });
+    expect([...validateGraph(semifinal)].sort((a, b) => a - b)).toEqual([0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 900]);
+    expect(semifinal.transitions.LEAVE_EQUIPPED).toMatchObject({ from: [30], to: 40 });
+    expect(semifinal.transitions.ARRIVE_HOME).toMatchObject({ from: [120], to: 900, terminal: true });
+    expect(semifinal.pkd.completeQuestAtTerminal).toBe(true);
+    expect(semifinal.pkd.objectives).toHaveLength(8);
+    expect(registry.quests['tutorial-funda-forjaprata']).toBeUndefined();
   });
 
   test('rejects an in-memory graph whose new milestone becomes unreachable', () => {
@@ -210,23 +209,23 @@ describe('Reference quest state machines — Exploration and Visual Novel', () =
 
   test('Map045 projects the stadium task through the registry and closes the sling microflow', () => {
     const chest = event(maps[45], 20, 'Bau - Funda');
-    const chestPage = variablePage(chest, 111, 10);
-    const foundSling = commandIndex(chestPage, command => isPluginCommand(command, 'Coreto_QuestCore', 'QuestTransition', { questKey: 'tutorial-funda-forjaprata', transitionId: 'FOUND_SLING' }));
+    const chestPage = variablePage(chest, 29, 20);
+    const foundSling = commandIndex(chestPage, command => isPluginCommand(command, 'Coreto_QuestCore', 'QuestTransition', { questKey: 'a-semifinal', transitionId: 'FOUND_SLING' }));
     const localTerminal = commandIndex(chestPage, command => command.code === 123 && command.parameters?.[0] === 'A' && command.parameters?.[1] === 0);
     expect(foundSling).toBeGreaterThanOrEqual(0);
     expect(foundSling).toBeLessThan(localTerminal);
     expect(JSON.stringify(chestPage.list)).not.toContain('SQSM.ShowTaskForQuest');
 
     const door = event(maps[45], 7, 'Sair da Casa');
-    const state20Page = selectedPage(door, { 111: 20, 34: 0, 35: 0 }).page;
-    const leave = commandIndex(state20Page, command => isPluginCommand(command, 'Coreto_QuestCore', 'QuestTransition', { questKey: 'tutorial-funda-forjaprata', transitionId: 'LEAVE_EQUIPPED' }));
-    const transfer = commandIndex(state20Page, command => command.code === 201 && JSON.stringify(command.parameters) === JSON.stringify([0, 44, 5, 22, 0, 0]));
-    expect(state20Page.list[leave].indent).toBe(4);
+    const state30Page = selectedPage(door, { 29: 30, 34: 0, 35: 0 }).page;
+    const leave = commandIndex(state30Page, command => isPluginCommand(command, 'Coreto_QuestCore', 'QuestTransition', { questKey: 'a-semifinal', transitionId: 'LEAVE_EQUIPPED' }));
+    const transfer = commandIndex(state30Page, command => command.code === 201 && JSON.stringify(command.parameters) === JSON.stringify([0, 44, 5, 22, 0, 0]));
+    expect(state30Page.list[leave].indent).toBe(4);
     expect(leave).toBeLessThan(transfer);
-    expect(state20Page.list[transfer + 1]).toMatchObject({ code: 115, indent: 4 });
+    expect(state30Page.list[transfer + 1]).toMatchObject({ code: 115, indent: 4 });
 
-    const recovery = variablePage(door, 111, 90);
-    expect(selectedPage(door, { 111: 90, 34: 0, 35: 0 }).page).toBe(recovery);
+    const recovery = variablePage(door, 29, 40);
+    expect(selectedPage(door, { 29: 40, 34: 0, 35: 0 }).page).toBe(recovery);
     expect(recovery.list[0]).toMatchObject({ code: 111, indent: 0, parameters: [4, 3, 4, 1] });
     expect(recovery.list).toEqual(
       expect.arrayContaining([
@@ -235,37 +234,36 @@ describe('Reference quest state machines — Exploration and Visual Novel', () =
         expect.objectContaining({ code: 412, indent: 0 }),
       ]),
     );
-    expect(selectedPage(door, { 111: 90, 34: 12, 35: 0 }).index).toBe(2);
+    expect(selectedPage(door, { 29: 40, 34: 12, 35: 0 }).index).toBe(2);
   });
 
   test('semantic page discovery survives unrelated page reindexing', () => {
     const door = structuredClone(event(maps[45], 7));
     door.pages.unshift(structuredClone(door.pages[0]));
-    expect(variablePage(door, 111, 90).conditions.variableValue).toBe(90);
+    expect(variablePage(door, 29, 40).conditions.variableValue).toBe(40);
   });
 
   test('Map049 retains the paired VN session and exact opening state', () => {
     const page = event(maps[49], 1, 'VN - Casa Forjaprata: pesadelo e despertar').pages[0];
-    expect(
-      page.list.filter(command => isPluginCommand(command, 'Coreto_QuestVN', 'AssertVisualNovelSession', { questKey: 'tutorial-funda-forjaprata', entryKey: 'ABERTURA_FORJAPRATA' })),
-    ).toHaveLength(1);
-    expect(page.list.filter(command => isPluginCommand(command, 'Coreto_QuestCore', 'AssertQuestState', { questKey: 'tutorial-funda-forjaprata', expectedState: '0' }))).toHaveLength(1);
+    expect(page.list.filter(command => isPluginCommand(command, 'Coreto_QuestVN', 'AssertVisualNovelSession', { questKey: 'a-semifinal', entryKey: 'ABERTURA_FORJAPRATA' }))).toHaveLength(1);
+    expect(page.list.filter(command => isPluginCommand(command, 'Coreto_QuestCore', 'AssertQuestState', { questKey: 'a-semifinal', expectedState: '10' }))).toHaveLength(1);
     expect(page.list.filter(command => isPluginCommand(command, 'Coreto_QuestVN', 'FinishVisualNovel'))).toHaveLength(1);
   });
 
   test('authorized maps do not write canonical quest variables directly', () => {
-    for (const mapData of Object.values(maps)) {
+    for (const [mapId, mapData] of Object.entries(maps)) {
       for (const mapEvent of mapData.events.filter(Boolean)) {
         for (const page of mapEvent.pages) {
           for (const command of page.list) {
             if (command.code === 122) {
               const [startId, endId] = command.parameters;
-              expect(startId <= 106 && endId >= 106).toBe(false);
-              expect(startId <= 111 && endId >= 111).toBe(false);
+              const protectedVariables = ['22', '45', '49'].includes(mapId) ? [29, 106, 111] : [106, 111];
+              for (const id of protectedVariables) expect(startId <= id && endId >= id).toBe(false);
             }
             if (command.code === 355 || command.code === 655) {
               const script = String(command.parameters?.[0] ?? '');
-              expect(script).not.toMatch(/setValue\s*\(\s*(106|111)\b/);
+              const protectedPattern = ['22', '45', '49'].includes(mapId) ? /setValue\s*\(\s*(29|106|111)\b/ : /setValue\s*\(\s*(106|111)\b/;
+              expect(script).not.toMatch(protectedPattern);
             }
           }
         }

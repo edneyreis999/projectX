@@ -219,10 +219,11 @@ function generateTroop(definition, nameMapping) {
  *
  * @param {Array} definitions - Array of troop definitions
  * @param {Map<string, number>} nameMapping - Enemy name to ID mapping
+ * @param {Array} existingTroops - Existing database used to preserve unowned physical records
  * @returns {Array} Array of generated troops (with null at index 0)
  */
-function generateAllTroops(definitions, nameMapping) {
-  const troops = [null]; // RPG Maker MZ index 0 placeholder
+function generateAllTroops(definitions, nameMapping, existingTroops = []) {
+  const preserveExisting = Array.isArray(existingTroops) && existingTroops.length > 0;
 
   // Regional configuration
   const regions = [
@@ -264,8 +265,11 @@ function generateAllTroops(definitions, nameMapping) {
     },
   ];
 
-  // Build troops array up to ID 70
-  const troopsById = new Array(71).fill(null);
+  // Build the managed range while retaining every unowned live record.
+  const troopsById = preserveExisting
+    ? structuredClone(existingTroops)
+    : new Array(71).fill(null);
+  if (troopsById.length < 71) troopsById.length = 71;
   troopsById[0] = null; // RPG Maker MZ placeholder
 
   // Process each region
@@ -284,8 +288,9 @@ function generateAllTroops(definitions, nameMapping) {
       troopsById[remappedId] = troop;
     });
 
-    // Add empty slots (if this region has them)
-    if (region.emptySlotCount > 0) {
+    // Empty slots are scaffolding for a fresh database. Production regeneration
+    // must not erase records placed in those slots by another owner.
+    if (!preserveExisting && region.emptySlotCount > 0) {
       for (let i = 0; i < region.emptySlotCount; i++) {
         const emptySlotId = region.emptySlotStart + i;
         troopsById[emptySlotId] = createEmptySlotEntry(emptySlotId);
@@ -293,8 +298,21 @@ function generateAllTroops(definitions, nameMapping) {
     }
   }
 
-  // Filter out any remaining nulls and return
-  return troopsById.filter((troop, index) => index === 0 || troop !== null);
+  // Explicit physical definitions bypass logical regional remapping. During
+  // pre-allocation the referenced Enemy may not exist yet; the current record
+  // is preserved until that Enemy is materialized.
+  for (const definition of definitions.physical ?? []) {
+    if (!definition.members.every(member => nameMapping.has(member.enemyName))) continue;
+    const troop = generateTroop(definition, nameMapping);
+    troop.id = definition.physicalId;
+    troopsById[definition.physicalId] = troop;
+  }
+
+  // Fresh fixture generation retains the legacy compact behavior. Production
+  // keeps exact indices and records above the historical managed range.
+  return preserveExisting
+    ? troopsById
+    : troopsById.filter((troop, index) => index === 0 || troop !== null);
 }
 
 // ==========================================
@@ -403,9 +421,10 @@ function main() {
     }
     console.log('✓ All enemy names validated');
 
-    // Step 5: Generate troops
+    // Step 5: Generate troops without truncating unowned live records
     console.log('Generating troop objects...');
-    const troops = generateAllTroops(definitions, nameMapping);
+    const existingTroops = readJsonFile(PATHS.output);
+    const troops = generateAllTroops(definitions, nameMapping, existingTroops);
     console.log(`✓ Generated ${troops.length - 1} troops`);
 
     // Step 6: Write output

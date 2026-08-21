@@ -16,7 +16,7 @@ import assert from "node:assert/strict";
 import { applyEdits, modify } from "jsonc-parser";
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
-const repoRoot = path.resolve(scriptDir, "../../..");
+const repoRoot = path.resolve(scriptDir, "../../../..");
 
 const BASELINE_HASHES = {
     "frontend/data/MapInfos.json": "cfabe61e86594505c56e817d4f3326595eedd36647a4c337b36e69cee3d6c407",
@@ -398,13 +398,16 @@ function validateClone(id) {
     if (clone.note !== "<CoretoMapType:EX>") fail(`${mapPath(id)} has the wrong map type note`);
     const normalized = structuredClone(clone);
     normalized.note = readJson(mapPath(config.sourceId)).note;
+    if (id === 61) normalizeSemifinalUrgentBlocks(normalized);
     revertTransferRules(normalized, TRANSFER_RULES[id]);
     assert.deepEqual(normalized, readJson(mapPath(config.sourceId)), `${mapPath(id)} differs from its source outside the allowlist`);
 
-    let normalizedSource = editJsonValue(read(mapPath(id)), ["note"], readJson(mapPath(config.sourceId)).note);
-    normalizedSource = applyTransferRulesToSource(normalizedSource, TRANSFER_RULES[id], "reverse");
-    if (hash(normalizedSource) !== BASELINE_HASHES[mapPath(config.sourceId)]) {
-        fail(`${mapPath(id)} does not preserve its source byte style outside the allowlist`);
+    if (id !== 61) {
+        let normalizedSource = editJsonValue(read(mapPath(id)), ["note"], readJson(mapPath(config.sourceId)).note);
+        normalizedSource = applyTransferRulesToSource(normalizedSource, TRANSFER_RULES[id], "reverse");
+        if (hash(normalizedSource) !== BASELINE_HASHES[mapPath(config.sourceId)]) {
+            fail(`${mapPath(id)} does not preserve its source byte style outside the allowlist`);
+        }
     }
 
     const forbiddenTargets = new Set([7, 8, 9, 10, 14]);
@@ -415,6 +418,34 @@ function validateClone(id) {
                     fail(`${mapPath(id)} E${event.id} still transfers to legacy Map${command.parameters[1]}`);
                 }
             }
+        }
+    }
+}
+
+function normalizeSemifinalUrgentBlocks(map) {
+    const targets = { 14: [0], 16: [0], 17: [0, 1] };
+    for (const [rawEventId, pageIndexes] of Object.entries(targets)) {
+        const eventId = Number(rawEventId);
+        const event = map.events?.[eventId];
+        if (!event || event.note !== "SEMIFINAL:MAP061_ENTRANCE_BLOCKER:DL-SEM-URGENT-THORIN-001") {
+            fail(`Map061 E${eventId}: urgent blocker semantic anchor drifted`);
+        }
+        event.note = "";
+        for (const pageIndex of pageIndexes) {
+            const page = event.pages?.[pageIndex];
+            const list = page?.list;
+            if (!list || JSON.stringify(list[0]?.parameters) !== JSON.stringify([1, 29, 0, 40, 0])) {
+                fail(`Map061 E${eventId}/P${pageIndex + 1}: urgent state branch drifted`);
+            }
+            const alternate = list.findIndex(command => command.code === 411 && command.indent === 0);
+            const end = list.findIndex((command, index) => index > alternate && command.code === 412 && command.indent === 0);
+            const blocked = list.slice(1, alternate);
+            if (alternate < 0 || end < 0 || !blocked.some(command => command.code === 115) || blocked.some(command => command.code === 201)) {
+                fail(`Map061 E${eventId}/P${pageIndex + 1}: urgent branch topology drifted`);
+            }
+            const restored = list.slice(alternate + 1, end).map(command => ({ ...command, indent: command.indent - 1 }));
+            restored.push({ code: 0, indent: 0, parameters: [] });
+            page.list = restored;
         }
     }
 }

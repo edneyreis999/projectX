@@ -12,7 +12,7 @@
 * **Conflito central**: Thorin deseja seguir seu sonho de se tornar jogador de futebol rúnico, mas seu pai o força a abandonar tudo e obedecer ao Império.
 * **Objetivo narrativo global**: Apresentar ao jogador o novo destino imposto a Thorin — tornar-se um minerador contra sua vontade — e introduzir mecânicas de equipamento e compra por meio da visita à loja de armaduras.
 * **Premissa resumida**: Após sonhar novamente com sua mãe, Thorin tenta fugir de seu destino e ir treinar com Filena, mas é interceptado por guardas enviados por seu pai. Escoltado contra sua vontade, ele é levado até uma alfaiataria para receber uma armadura e depois até a taverna onde encontrará Balastrus.
-* **Resumo**: Durante a madrugada, Thorin tem um novo sonho com sua mãe, que o alerta de que o tempo deles está acabando e que ele precisa impedir o Imperador Damburr. Ao acordar, ele decide ir ao campo de futebol, ignorando a ordem do pai. Mas logo ao sair de casa, dois guardas o interceptam. Tordan já havia previsto sua rebeldia e ordenado que ele fosse escoltado diretamente até Balastrus. Durante o caminho, Thorin tenta convencê-los a deixá-lo ir ao estádio, mas é ignorado. No meio da rota, o guarda Mhordred sugere que Thorin não pode se apresentar a Balastrus vestindo roupa de futebol, e o outro guarda concorda em parar numa alfaiataria. A cena é cômica e termina com o jogador equipando manualmente a armadura. Em seguida, Thorin é levado à taverna, onde conversa com o taverneiro e descobre onde Balastrus está. A missão termina neste ponto, prestes a iniciar o próximo encontro.
+* **Resumo**: Durante a madrugada, Thorin tem um novo sonho com sua mãe, que o alerta de que o tempo deles está acabando e que ele precisa impedir o Imperador Damburr. Ao acordar, ele decide ir ao campo de futebol, ignorando a ordem do pai. Mas logo ao sair de casa, dois guardas o interceptam. Thordan já havia previsto sua rebeldia e ordenado que ele fosse escoltado diretamente até Balastrus. Durante o caminho, Thorin tenta convencê-los a deixá-lo ir ao estádio, mas é ignorado. No meio da rota, o guarda Mhordred sugere que Thorin não pode se apresentar a Balastrus vestindo roupa de futebol, e o outro guarda concorda em parar numa alfaiataria. A cena é cômica e termina com o jogador equipando manualmente a armadura. Em seguida, Thorin é levado à taverna, onde conversa com o taverneiro e descobre onde Balastrus está. A missão termina neste ponto, prestes a iniciar o próximo encontro.
 * **Locais principais:**
 
   * Casa da família Forja Prata
@@ -25,7 +25,7 @@
   * Thorin
   * Mãe de Thorin (em sonho)
   * Mhordred (guarda imperial)
-  * Kilin (chefe da guarda)
+  * Killin (chefe da guarda)
   - Taverneiro
   - Dono da loja de armaduras
 
@@ -51,7 +51,7 @@
 | # | Nome da Cena            | Cronologia (ordem dos eventos)                                                                           | Premissa                                                                                                                |
 | - | ----------------------- | -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | 1 | Recado no Sonho         | Cena onírica com a mãe → fala sobre Damburr → Thorin acorda                                              | A mãe de Thorin aparece em sonho avisando que o tempo deles está acabando e que ele precisa impedir Damburr.            |
-| 2 | Tentativa de Fuga       | Thorin se veste → tenta sair → interceptado por guardas → começa escolta                                 | Thorin decide ir ao estádio, mas ao sair de casa é interceptado pelos guardas enviados por Tordan.                      |
+| 2 | Tentativa de Fuga       | Thorin se veste → tenta sair → interceptado por guardas → começa escolta                                 | Thorin decide ir ao estádio, mas ao sair de casa é interceptado pelos guardas enviados por Thordan.                      |
 | 3 | Rua sob Vigilância      | Jogador escolta Thorin pelo Distrito Residencial até o Comercial → tentativa de convencimento falha      | Thorin tenta argumentar com os guardas enquanto é forçado a caminhar pelo distrito, mas é ignorado.                     |
 | 4 | Discussão sobre a Roupa | Entrada no Distrito Comercial → Mhordred levanta a questão da roupa → decidem parar numa loja de armaduras | Os guardas discutem se Thorin pode mesmo se apresentar a Balastrus com roupa de futebol e decidem comprar uma armadura. |
 | 5 | Loja de Armaduras       | Cena cômica na loja → tutorial de compra e equipamento → jogador equipa Thorin                           | Thorin entra na loja de armaduras, onde o jogador aprende a comprar e equipar itens pela primeira vez.                  |
@@ -74,7 +74,7 @@
 | ---- | ----------------- | ---------------------------------------------------------------------------------- |
 | 2-A  | Plano Matinal     | Thorin comenta consigo mesmo que irá treinar com Filena no estádio.                |
 | 2-B  | Interceptação     | Ao sair de casa, Thorin é surpreendido por dois guardas na porta.                  |
-| 2-C  | Ordem Irrevogável | Kilin informa que Thorin será escoltado até Balastrus, por ordem direta de Tordan. |
+| 2-C  | Ordem Irrevogável | Killin informa que Thorin será escoltado até Balastrus, por ordem direta de Thordan. |
 
 ##### Cena 3 – Rua sob Vigilância
 
@@ -90,17 +90,17 @@
 | **4-A** | **Insistência de Thorin** | Ao entrar no Distrito Comercial, Thorin tenta convencer os guardas: “Já tô de uniforme, a Filena deve estar me esperando!” |
 | **4-B** | **Risos e Desdém**        | Os guardas riem da tentativa e zombam da Filena e do uniforme de futebol.                                                  |
 | **4-C** | **Sugestão de Mhordred**    | Mhordred pondera se é mesmo apropriado levar Thorin até Balastrus vestido assim.                                             |
-| **4-D** | **Decisão Unânime**       | Após breve discussão entre os guardas, Kilin conclui: “Vamos passar na loja de armaduras. Não dá pra apresentar assim.”    |
+| **4-D** | **Decisão Unânime**       | Após breve discussão entre os guardas, Killin conclui: “Vamos passar na loja de armaduras. Não dá pra apresentar assim.”    |
 
 ##### Cena 5 –  Loja de Armaduras
 
 | Beat    | Rótulo curto                   | O que acontece / Por que importa                                                                                          |
 | ------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| **5-A** | **“Compra uma decente”**       | Ao entrarem na loja, Kilin ordena que Thorin vá até o dono da loja e compre uma armadura apropriada.                      |
+| **5-A** | **“Compra uma decente”**       | Ao entrarem na loja, Killin ordena que Thorin vá até o dono da loja e compre uma armadura apropriada.                      |
 | **5-B** | **Sem Drakkeis**               | Ao acessar o menu, jogador percebe que não tem dinheiro suficiente. Cena é interrompida por cutscene automática.          |
 | **5-C** | **Cutscene: Barrado na Loja**  | Dono da loja pede o pagamento. Guardas reagem: “Você sabe quem é o pai dele?” → dono responde com sarcasmo.               |
-| **5-D** | **Discussão de Bolsos Vazios** | Mhordred joga a responsabilidade em Kilin, que está sem dinheiro. Mhordred é acusado de estar “cheio da grana”. |
-| **5-E** | **Pressão de Missão**          | Kilin lembra: “Se não levarmos ele logo, Balastrus parte. E Tordan não vai gostar de saber por quê.”                     |
+| **5-D** | **Discussão de Bolsos Vazios** | Mhordred joga a responsabilidade em Killin, que está sem dinheiro. Mhordred é acusado de estar “cheio da grana”. |
+| **5-E** | **Pressão de Missão**          | Killin lembra: “Se não levarmos ele logo, Balastrus parte. E Thordan não vai gostar de saber por quê.”                     |
 | **5-F** | **Mhordred Paga**              | Encurralado, Mhordred entrega os 20.000 Drakkeis a Thorin. Jogador recupera controle para comprar a armadura.             |
 | **5-G** | **Tutorial de Equipamento**    | Jogador compra e equipa a armadura manualmente. Interface do inventário é apresentada pela primeira vez.                  |
 
@@ -126,10 +126,10 @@ Quest: Hora de Crescer
  │      ├── Beat 1: Bruma Onírica — Música etérea, visual enevoado; mãe de Thorin aparece entre sombras, voz abafada.
  │      ├── Beat 2: Alerta Críptico — Ela diz que o tempo deles está acabando e que ele precisa impedir Damburr, mas tudo é confuso.
  │      └── Beat 3: Despertar Tenso — Tela escurece lentamente; Thorin acorda de pé em seu quarto com balão de pensamento tenso.
- ├── Cena 2: Tentativa de Fuga — Premissa: Thorin decide ir ao estádio, mas ao sair de casa é interceptado pelos guardas enviados por Tordan.
+ ├── Cena 2: Tentativa de Fuga — Premissa: Thorin decide ir ao estádio, mas ao sair de casa é interceptado pelos guardas enviados por Thordan.
  │      ├── Beat 1: Determinação Matinal — Thorin fala: “Filena deve estar me esperando... vou direto pro campo.”
  │      ├── Beat 2: Interceptado no Portão — Jogador tenta sair de casa, mas guardas o aguardam do lado de fora.
- │      └── Beat 3: Contraordem de Tordan — Kilin anuncia que Thorin será escoltado até Balastrus por ordem do pai.
+ │      └── Beat 3: Contraordem de Thordan — Killin anuncia que Thorin será escoltado até Balastrus por ordem do pai.
  ├── Cena 3: Rua sob Vigilância — Premissa: Thorin tenta argumentar com os guardas enquanto é forçado a caminhar pelo distrito, mas é ignorado.
  │      ├── Beat 1: Caminhada Tensa — Jogador guia Thorin escoltado por dois guardas pelo Distrito Residencial.
  │      └── Beat 2: Mudança de Mapa — Grupo atravessa o mapa e entra no Distrito Comercial.
@@ -139,10 +139,10 @@ Quest: Hora de Crescer
  │      ├── Beat 3: Sugestão de Mhordred — Mhordred levanta a questão da roupa de futebol ser inadequada.
  │      └── Beat 4: Decisão Unânime — Guardas decidem parar na loja de armaduras antes de seguir para a taverna.
  ├── Cena 5: Loja de Armaduras — Premissa: Thorin entra na loja de armaduras, onde o jogador aprende a comprar e equipar itens pela primeira vez.
- │      ├── Beat 1: “Compra uma decente” — Kilin ordena que Thorin compre uma armadura apropriada.
+ │      ├── Beat 1: “Compra uma decente” — Killin ordena que Thorin compre uma armadura apropriada.
  │      ├── Beat 2: Sem Drakkeis — Jogador tenta comprar, mas está sem dinheiro. Cutscene é acionada.
  │      ├── Beat 3: Cutscene: Barrado na Loja — Dono exige pagamento; guardas tentam argumentar com sarcasmo do vendedor.
- │      ├── Beat 4: Discussão de Bolsos Vazios — Mhordred joga a conta pra Kilin, que está sem dinheiro.
+ │      ├── Beat 4: Discussão de Bolsos Vazios — Mhordred joga a conta pra Killin, que está sem dinheiro.
  │      ├── Beat 5: Pressão de Missão — Guardas pressionam: missão precisa ser cumprida logo.
  │      ├── Beat 6: Mhordred Paga — Mhordred entrega os Drakkeis a contragosto. Jogador retoma controle.
  │      └── Beat 7: Tutorial de Equipamento — Jogador compra e equipa a armadura manualmente.

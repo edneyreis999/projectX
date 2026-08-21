@@ -9,17 +9,17 @@
 * **Importância na campanha**: Main
 * **Arco narrativo**: Recusa do Chamado
 * **Quest anterior**: A Semifinal
-* **Conflito central**: Thorin tenta afirmar seu valor no Futebol Rúnico enquanto o pai, General Tordan, impõe um trabalho “de verdade” e mantém controle absoluto sobre sua vida.
-* **Objetivo narrativo global**: Provar talento e autonomia de Thorin versus a autoridade de Tordan.
-* **Premissa resumida**: Após a semifinal, Thorin é escoltado para casa, discute com Tordan, exibe o troféu, é ridicularizado e termina forçado a encontrar Balastrus para uma expedição às minas de Kravens.
-* **Resumo**: Thorin é escoltado por dois guardas imperiais até o Distrito Residencial e o jogador retoma o controle apenas para atravessar a rua até a Casa Forja Prata 🎮. Assim que entra, uma cutscene assume 🎬: Tordan já o aguarda na cozinha. O diálogo oferece três tons possíveis (respeitoso, sarcástico ou rebelde), mas sempre converge quando Thorin pega o troféu da semifinal na sala de troféus e o exibe ao pai. Tordan ri, rotula o prêmio de “sucata brilhante” e decreta que futebol rúnico não é futuro; impõe, então, que ao amanhecer Thorin se apresente a Balastrus na taverna para partir numa expedição às minas de Kravens. No corredor, Sáparo-boca-de-corneta aparece apenas para zombar — “Olha o campeão voltando no cabresto!” — acentuando a humilhação. Sem alternativas imediatas, Thorin sobe ao quarto 🎮; a missão encerra com ele deitado, dividido entre obedecer ou lutar pelos próprios sonhos, indo na manhã seguinte treinar com Filena a jogada especial que estavam bolando.
+* **Conflito central**: Thorin tenta afirmar seu valor no Futebol Rúnico enquanto o pai, General Thordan, impõe um trabalho “de verdade” e mantém controle absoluto sobre sua vida.
+* **Objetivo narrativo global**: Provar talento e autonomia de Thorin versus a autoridade de Thordan.
+* **Premissa resumida**: Após a semifinal, Thorin é escoltado para casa, discute com Thordan, exibe o troféu, é ridicularizado e termina forçado a encontrar Balastrus para uma expedição às minas de Kravens.
+* **Resumo**: Thorin é escoltado por dois guardas imperiais até o Distrito Residencial e o jogador retoma o controle apenas para atravessar a rua até a Casa Forja Prata 🎮. Assim que entra, uma cutscene assume 🎬: Thordan já o aguarda na cozinha. O diálogo oferece três tons possíveis (respeitoso, sarcástico ou rebelde), mas sempre converge quando Thorin pega o troféu da semifinal na sala de troféus e o exibe ao pai. Thordan ri, rotula o prêmio de “sucata brilhante” e decreta que futebol rúnico não é futuro; impõe, então, que ao amanhecer Thorin se apresente a Balastrus na taverna para partir numa expedição às minas de Kravens. No corredor, Sáparo-boca-de-corneta aparece apenas para zombar — “Olha o campeão voltando no cabresto!” — acentuando a humilhação. Sem alternativas imediatas, Thorin sobe ao quarto 🎮; a missão encerra com ele deitado, dividido entre obedecer ou lutar pelos próprios sonhos, indo na manhã seguinte treinar com Filena a jogada especial que estavam bolando.
 * **Locais principais**:
 
   * Distrito Residencial
   * Casa da Família Forja Prata (entrada, cozinha/sala de jantar, corredor, quarto de Thorin)
 * **NPCs principais**:
 
-  * General Tordan
+  * General Thordan
   * Guardas Imperiais
   * Sáparo-boca-de-corneta
 
@@ -54,21 +54,21 @@ Quest: Fim de Jogo
  │      ├── Beat 3: Fechadura Ecoa (🎬)
  │      ├── Beat 4: Olhar para a Cozinha (🎬)
  │      └── Beat 5: Transição de Controle (🎬)
- ├── Cena 3: Choque na Cozinha — Discussão com Tordan.
+ ├── Cena 3: Choque na Cozinha — Discussão com Thordan.
  │      ├── Beat 1: Entrada na Cozinha (🎬)
  │      ├── Beat 2: Ferida de Classe (🎬)
  │      ├── Beat 3: Ramificação de Diálogo (🎬)
  │      ├── Beat 4: Convergência – Defesa do Sonho (🎬)
- │      ├── Beat 5: Desdém de Tordan (🎬)
+ │      ├── Beat 5: Desdém de Thordan (🎬)
  │      └── Beat 6: Objetivo Atualizado (🎮)
- ├── Cena 4: Busca do Troféu — Thorin procura troféu antigo de Tordan.
+ ├── Cena 4: Busca do Troféu — Thorin procura troféu antigo de Thordan.
  │      ├── Beat 1: De Volta ao Corredor (🎮)
  │      ├── Beat 2: Sáparo no Puleiro (🎬)
  │      ├── Beat 3: Busca na Cômoda (🎮)
  │      ├── Beat 4: Troféu do Passado (🎮)
  │      ├── Beat 5: Reflexão Instantânea (🎬)
  │      └── Beat 6: Volta à Cozinha (🎮)
- ├── Cena 5: Troféu Desprezado — Tordan ridiculariza troféu.
+ ├── Cena 5: Troféu Desprezado — Thordan ridiculariza troféu.
  │      ├── Beat 1: Entrega Solene (🎬)
  │      ├── Beat 2: Retrato Revelador (🎬)
  │      ├── Beat 3: Desprezo Público (🎬)
@@ -91,12 +91,12 @@ Quest: Fim de Jogo
 
 | # | Nome da Cena           | Cronologia (ordem dos eventos)                                                              | Premissa                                                                                |
 | - | ---------------------- | ------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| 1 | Chegada sob Vigilância | Guarda acompanha Thorin → Comandante justifica ordens → Jogador atravessa rua até porta     | Guardas deixam Thorin em casa e comentam as ordens de Tordan.                           |
-| 2 | Porta do Destino       | Interagir com porta → Hall escuro → Porta fecha → Tordan revelado                           | Thorin entra na Casa Forja Prata, isolando-se do mundo externo.                         |
-| 3 | Choque na Cozinha      | Tordan condena futebol → Diálogo ramificado → Defesa do sonho → Desdém do pai               | Thorin confronta o pai sobre o sonho de jogar futebol rúnico e o preconceito de classe. |
-| 4 | Busca do Troféu        | Objetivo “lembrar Tordan” → Sáparo zomba → Thorin encontra troféu juvenil do pai → Reflexão | Thorin busca um troféu antigo para lembrar Tordan de seus próprios sonhos.              |
-| 5 | Troféu Desprezado      | Entrega do troféu → Retrato reflete nostalgia → Desprezo público → Humilhação               | Tordan despreza seu próprio troféu e o sonho de Thorin, aprofundando o conflito.        |
-| 6 | Sentença às Minas      | Recusa à Guarda → Tordan impõe trabalho → Saída brusca → Porta trancada → Corredor livre    | Thorin declara que não quer entrar para a Guarda; Tordan responde que ele “vai trabalhar como minerador”, selando a ordem sob Balastrus. |
+| 1 | Chegada sob Vigilância | Guarda acompanha Thorin → Comandante justifica ordens → Jogador atravessa rua até porta     | Guardas deixam Thorin em casa e comentam as ordens de Thordan.                           |
+| 2 | Porta do Destino       | Interagir com porta → Hall escuro → Porta fecha → Thordan revelado                           | Thorin entra na Casa Forja Prata, isolando-se do mundo externo.                         |
+| 3 | Choque na Cozinha      | Thordan condena futebol → Diálogo ramificado → Defesa do sonho → Desdém do pai               | Thorin confronta o pai sobre o sonho de jogar futebol rúnico e o preconceito de classe. |
+| 4 | Busca do Troféu        | Objetivo “lembrar Thordan” → Sáparo zomba → Thorin encontra troféu juvenil do pai → Reflexão | Thorin busca um troféu antigo para lembrar Thordan de seus próprios sonhos.              |
+| 5 | Troféu Desprezado      | Entrega do troféu → Retrato reflete nostalgia → Desprezo público → Humilhação               | Thordan despreza seu próprio troféu e o sonho de Thorin, aprofundando o conflito.        |
+| 6 | Sentença às Minas      | Recusa à Guarda → Thordan impõe trabalho → Saída brusca → Porta trancada → Corredor livre    | Thorin declara que não quer entrar para a Guarda; Thordan responde que ele “vai trabalhar como minerador”, selando a ordem sob Balastrus. |
 | 7 | Silêncio no Quarto     | Thorin entra no quarto → Pensamento único → Dorme                                           | Thorin pondera seus sonhos antes de adormecer, encerrando a missão.                     |
 
 #### Beats por Cena
@@ -106,7 +106,7 @@ Quest: Fim de Jogo
 | ID | Nome do Beat              | Premissa Resumida                                                                                                                              | Tipo |
 | - | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
 | **1-A** | **Escolta a Pé**          | Guardas imperiais conduzem Thorin a pé até o Distrito Residencial e o largam diante de casa.                                                   | 🎬   |
-| **1-B** | **“Ordens do Pai”**       | Comandante pede desculpas e lembra que só cumpre as ordens de Tordan.                                                                          | 🎬   |
+| **1-B** | **“Ordens do Pai”**       | Comandante pede desculpas e lembra que só cumpre as ordens de Thordan.                                                                          | 🎬   |
 | **1-C** | **Liberação de Controle** | HUD reaparece; destino marcado na porta da Casa Forja Prata.                                                                                   | 🎮   |
 | **1-D** | **Travessia da Rua**      | Jogador guia Thorin; ele solta uma frase de indignação meio “menino mimado” enquanto atravessa (“Pelo amor dos deuses… não sou prisioneiro!”). | 🎮   |
 | **1-E** | **À Porta**               | Trigger ao tocar a porta; prepara a cutscene seguinte.                                                                                         | 🎮   |
@@ -118,48 +118,48 @@ Quest: Fim de Jogo
 | **2-A** | Interagir com a Porta  | Jogador pressiona a interação; Thorin empurra a porta e entra.                        | 🎮   |
 | **2-B** | Primeiro Passo no Hall | Jogador dá dois ou três passos para dentro; a câmera revela o corredor mal-iluminado. | 🎮   |
 | **2-C** | Fechadura Ecoa         | Porta se fecha sozinha com estrondo abafado (sinal de “confinado em casa”).           | 🎬   |
-| **2-D** | Olhar para a Cozinha   | Câmera faz leve pan mostrando Tordan de costas, já à mesa.                            | 🎬   |
+| **2-D** | Olhar para a Cozinha   | Câmera faz leve pan mostrando Thordan de costas, já à mesa.                            | 🎬   |
 | **2-E** | Transição de Controle  | Fade curto; cutscene da Cena 3 (Choque na Cozinha) é disparada.                       | 🎬   |
 
 ##### Cena 3 – Choque na Cozinha
 
 | # | Nome do Beat                   | Premissa Resumida                                                                                                                | Tipo |
 | - | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- | ---- |
-| **3-A** | Entrada na Cozinha             | Thorin cruza o batente; Tordan à mesa, brasão do exército sobre o peito.                                                         | 🎬   |
-| **3-B** | Ferida de Classe               | Tordan esbraveja que viu o filho “brincando de esporte de subúrbio” e diz que isso mancha o nome da família.                     | 🎬   |
-| **3-C** | Ramificação de Diálogo         | Jogador escolhe tom **(Respeitoso / Sarcástico / Rebelde)**; linhas mudam, mas Tordan insiste no argumento de vergonha e legado. | 🎬   |
+| **3-A** | Entrada na Cozinha             | Thorin cruza o batente; Thordan à mesa, brasão do exército sobre o peito.                                                         | 🎬   |
+| **3-B** | Ferida de Classe               | Thordan esbraveja que viu o filho “brincando de esporte de subúrbio” e diz que isso mancha o nome da família.                     | 🎬   |
+| **3-C** | Ramificação de Diálogo         | Jogador escolhe tom **(Respeitoso / Sarcástico / Rebelde)**; linhas mudam, mas Thordan insiste no argumento de vergonha e legado. | 🎬   |
 | **3-D** | Convergência – Defesa do Sonho | Thorin retruca que quer traçar o próprio caminho; menciona que o futebol rúnico também exige coragem.                            | 🎬   |
-| **3-E** | Desdém de Tordan               | “Coragem? O Império precisa de generais, não de saltimbancos suburbanos!” — Tordan finaliza com a humilhação.                    | 🎬   |
-| **3-F** | Objetivo Atualizado            | UI pinga meta “Mostrar o troféu a Tordan”; controle volta ao jogador.                                                            | 🎮   |
+| **3-E** | Desdém de Thordan               | “Coragem? O Império precisa de generais, não de saltimbancos suburbanos!” — Thordan finaliza com a humilhação.                    | 🎬   |
+| **3-F** | Objetivo Atualizado            | UI pinga meta “Mostrar o troféu a Thordan”; controle volta ao jogador.                                                            | 🎮   |
 
 ##### Cena 4 – Busca do Troféu
 
 | # | Nome do Beat             | Premissa resumida                                                                                         | Tipo |
 | - | ------------------------ | --------------------------------------------------------------------------------------------------------- | ---- |
-| **4-A** | **De Volta ao Corredor** | HUD exibe objetivo “Encontre algo que faça Tordan lembrar quem já foi”.                                   | 🎮   |
+| **4-A** | **De Volta ao Corredor** | HUD exibe objetivo “Encontre algo que faça Thordan lembrar quem já foi”.                                   | 🎮   |
 | **4-B** | **Sáparo no Puleiro**    | Sáparo-boca-de-corneta, empoleirado ao lado da cama, provoca: “Cadê seu uniforme de minerador, campeão?”. | 🎬   |
-| **4-C** | **Busca na Cômoda**      | Jogador explora o quarto e descobre um troféu antigo de Tordan (campeão juvenil de futebol rúnico).       | 🎮   |
-| **4-D** | **Troféu do Passado**    | Thorin pega o troféu do pai; close-up mostra o nome de Tordan gravado.                                    | 🎮   |
+| **4-C** | **Busca na Cômoda**      | Jogador explora o quarto e descobre um troféu antigo de Thordan (campeão juvenil de futebol rúnico).       | 🎮   |
+| **4-D** | **Troféu do Passado**    | Thorin pega o troféu do pai; close-up mostra o nome de Thordan gravado.                                    | 🎮   |
 | **4-E** | **Reflexão Instantânea** | Thorin sussurra: “Se ele lembrar que também sonhou, talvez entenda…”.                                     | 🎬   |
-| **4-F** | **Volta à Cozinha**      | Objetivo atualizado: “Entregue o troféu a Tordan”; jogador retorna ao cômodo anterior.                    | 🎮   |
+| **4-F** | **Volta à Cozinha**      | Objetivo atualizado: “Entregue o troféu a Thordan”; jogador retorna ao cômodo anterior.                    | 🎮   |
 
 ##### Cena 5 – Troféu Desprezado
 
 | # | Nome do Beat          | Premissa resumida                                                                                     | Tipo |
 | - | --------------------- | ----------------------------------------------------------------------------------------------------- | ---- |
-| **5-A** | **Entrega Solene**    | Thorin estende ao pai o troféu juvenil marcado com “Tordan”.                                          | 🎬   |
-| **5-B** | **Retrato Revelador** | Na janela de diálogo, o portrait de Tordan pisca um instante de nostalgia antes de endurecer de novo. | 🎬   |
-| **5-C** | **Desprezo Público**  | Tordan ergue o troféu, chama-o de “sucata brilhante” e o larga sobre a mesa com estardalhaço.         | 🎬   |
+| **5-A** | **Entrega Solene**    | Thorin estende ao pai o troféu juvenil marcado com “Thordan”.                                          | 🎬   |
+| **5-B** | **Retrato Revelador** | Na janela de diálogo, o portrait de Thordan pisca um instante de nostalgia antes de endurecer de novo. | 🎬   |
+| **5-C** | **Desprezo Público**  | Thordan ergue o troféu, chama-o de “sucata brilhante” e o larga sobre a mesa com estardalhaço.         | 🎬   |
 | **5-D** | **Humilhação**        | “Futebol de subúrbio nunca trouxe honra a ninguém” — ele reafirma a vergonha familiar.                | 🎬   |
-| **5-E** | **Objetivo Mudado**   | Close em Thorin cerrando o punho; HUD exibe nova meta “Confronte Tordan ou recue”.                    | 🎮   |
+| **5-E** | **Objetivo Mudado**   | Close em Thorin cerrando o punho; HUD exibe nova meta “Confronte Thordan ou recue”.                    | 🎮   |
 
 ##### Cena 6 – Sentença às Minas
 
 | # | Nome do Beat                | Premissa resumida                                                                                                                                    | Tipo |
 | - | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
-| **6-A** | **Levantada de Autoridade** | Tordan ergue-se da cadeira, impondo presença sobre Thorin.                                                                                           | 🎬   |
-| **6-B** | **Ordem Irrevogável**       | Thorin encara e solta: “Não quero entrar para a Guarda.” O portrait de Tordan endurece e ele decreta: “Então você vai trabalhar como minerador. Amanhã ao amanhecer apresentar-se-á a Balastrus na taverna. Aprendiz de minerador. Ponto final.” | 🎬   |
-| **6-C** | **Saída & Porta Fechada**   | Tordan vira de costas, dá dois - três passos; quick fade-out/fade-in revela-o já dentro do próprio quarto, porta sendo trancada.                     | 🎬   |
+| **6-A** | **Levantada de Autoridade** | Thordan ergue-se da cadeira, impondo presença sobre Thorin.                                                                                           | 🎬   |
+| **6-B** | **Ordem Irrevogável**       | Thorin encara e solta: “Não quero entrar para a Guarda.” O portrait de Thordan endurece e ele decreta: “Então você vai trabalhar como minerador. Amanhã ao amanhecer apresentar-se-á a Balastrus na taverna. Aprendiz de minerador. Ponto final.” | 🎬   |
+| **6-C** | **Saída & Porta Fechada**   | Thordan vira de costas, dá dois - três passos; quick fade-out/fade-in revela-o já dentro do próprio quarto, porta sendo trancada.                     | 🎬   |
 | **6-D** | **Corredor Livre**          | Cutscene termina; controle volta ao jogador, HUD: “Volte para seu quarto e descanse”.                                                                | 🎮   |
 | **6-E** | **Caminho Solitário**       | Jogador conduz Thorin pelo corredor vazio até o quarto dele.                                                                                         | 🎮   |
 | **6-F** | **Deitar e Encerrar**       | Thorin deita; tela escurece, missão termina.                                                                                                         | 🎬   |

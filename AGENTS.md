@@ -48,6 +48,19 @@ Configuracoes que afetam todo o sistema de combate e devem ser consideradas em d
 
 - Quando a tarefa tangenciar arquitetura ou padrões do projeto, consultar os documentos relevantes em `docs/architecture/` e `docs/project-conventions/`.
 
+# Brainstorms e Direção de Design
+
+- Antes de iniciar qualquer brainstorm, proposta criativa ou discussão de game design, consultar primeiro as fontes relevantes em `docs/`.
+- Registrar quais documentos foram consultados e explicitar conflitos entre a proposta e a documentação existente antes de promover uma nova decisão.
+
+# Documentos Multidisciplinares por Quest
+
+- Cada quest deve manter seus contratos de game design em `docs/Quests/<ordem>-<slug-da-quest>/`.
+- O nome-base dos arquivos deve acompanhar o slug legível da quest. Quando aplicável, usar `<quest>.dialogos.md` para o Narrative Designer, `<quest>.audio.md` para o Audio Designer e `<quest>.cutscene.md` para o Scene Presentation Designer.
+- Outros agentes GAME-DEV podem criar documentos próprios no mesmo diretório usando `<quest>.<disciplina>.md`, desde que declarem autoridade, status, fontes e fronteiras de implementação.
+- O Gameplay Engineer deve consultar esses contratos antes de implementar e não pode reescrever silenciosamente decisões que pertencem à disciplina autora. Conflitos devem voltar ao documento de origem ou a uma decisão aprovada.
+- O documento de cutscene deve especificar beats, controles de espera, movimentos, câmera, zoom, Gabs, sons, cleanup, recuperação e critérios humanos. Muitas falas em uma cutscene física são um sinal obrigatório para reavaliar se a cena deve usar VN conforme `docs/project-conventions/scene-routing-ex-vn.md`.
+
 # Mensagens de Commit e Pull Request
 
 - Ao preparar uma mensagem de commit, seguir `.gitmessage`, mesmo quando o commit for criado com `-m` ou por uma ferramenta que não abra o template automaticamente.

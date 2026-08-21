@@ -3595,20 +3595,20 @@
     },
     {
         "id": 91,
-        "name": "",
-        "battlerName": "",
+        "name": "Mhordred",
+        "battlerName": "Mhordred",
         "battlerHue": 0,
         "exp": 0,
         "gold": 0,
         "params": [
-            1,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
+            50000,
+            5000,
+            500,
+            500,
+            500,
+            500,
+            500,
+            500
         ],
         "actions": [
             {
@@ -3619,7 +3619,23 @@
                 "conditionParam2": 0
             }
         ],
-        "traits": [],
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0.95
+            },
+            {
+                "code": 22,
+                "dataId": 2,
+                "value": 0.05
+            },
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.05
+            }
+        ],
         "dropItems": [
             {
                 "dataId": 0,
@@ -3627,7 +3643,7 @@
                 "denominator": 1
             }
         ],
-        "note": ""
+        "note": "<Sideview Battler: Mhordred>\n<Sideview Idle Motion: wait>\n<ATB Field Gauge Face: Bosses, 0>\n<TP Mode: Boss>"
     },
     {
         "id": 92,

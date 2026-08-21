@@ -13,7 +13,7 @@ data: Julho 2026
 
 ## Resumo
 
-[[Killin]] é a comandante/protetora ligada à Guarda de Ferro e mentora tática de Thorin.
+[[Killin]] é uma mulher, Capitã da Guarda de Ferro, comandante/protetora e mentora tática de Thorin.
 Seu papel narrativo permanece o mesmo: guardiã disciplinada, voz de prudência e referência moral/militar do grupo.
 Ela representa proteção, dever e o custo silencioso de manter outros vivos.
 Seu arco passa da escolta relutante à mentora capturada ou traumatizada pela crise de Melios, com possibilidade de resgate opcional.
@@ -22,13 +22,13 @@ Seu arco passa da escolta relutante à mentora capturada ou traumatizada pela cr
 
 ## Descrição Geral
 
-[[Killin]] é documentada como anã veterana da Guarda de Ferro, usuária de espada e escudo, combatente defensiva e protetora. 
+[[Killin]] é uma mulher anã, veterana e Capitã da Guarda de Ferro, usuária de espada e escudo, combatente defensiva e protetora. Na cadeia de comando, é diretamente subordinada somente ao General [[Tordan|Thordan]].
 
 A aparência inclui cabelo longo, olhos cinzentos, corpo robusto e compacto, postura ereta e armadura de comando. *Detalhes ligados a barba e bigode pertencem à versão antiga masculina e devem ser considerados desatualizados.*
 
 Sua personalidade é calma, tática, disciplinada, protetora e cansada. Ela valoriza dever, proteção, disciplina e preservação de vidas. Suas virtudes são prudência, leitura de campo, autocontrole e lealdade. Seus defeitos são exaustão emocional, rigidez defensiva e tendência a carregar culpa sozinha.
 
-Sua motivação central é cumprir o juramento da Guarda e impedir que imprudência política ou ambição causem mortes evitáveis. Seu conflito interno é o medo de falhar novamente com quem está sob sua proteção. Seu conflito externo envolve [[Balastrus]], a pressão de [[Tordan]], a impulsividade de [[Mhordred]], o amadurecimento de [[Thorin]], Melios e os [[Ignotos]].
+Sua motivação central é cumprir o juramento da Guarda e impedir que imprudência política ou ambição causem mortes evitáveis. Seu conflito interno é o medo de falhar novamente com quem está sob sua proteção. Seu conflito externo envolve [[Balastrus]], a pressão de [[Tordan|Thordan]], a impulsividade de [[Mhordred]], o amadurecimento de [[Thorin]], Melios e os [[Ignotos]].
 
 ---
 
@@ -46,7 +46,7 @@ Sua captura ou trauma em Melios cria uma ferida narrativa que força o grupo a c
 
 | Momento             | Papel do personagem                                                                | Evolução                                                                 |
 | ------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| Semifinal           | Interrompe [[Thorin]] junto de [[Mhordred]] por ordem de [[Tordan]].               | Aparece inicialmente como força de controle.                             |
+| Semifinal           | Interrompe [[Thorin]] junto de [[Mhordred]] por ordem de [[Tordan|Thordan]].               | Aparece inicialmente como força de controle.                             |
 | Hora de Crescer     | Escolta [[Thorin]], participa da compra/tutorial de armadura e tenta manter ordem. | Começa a funcionar como protetora mais do que carcereira.                |
 | Expedições iniciais | Acompanha o grupo como segurança da Guarda.                                        | Sua prudência contrasta com ambição de [[Balastrus]].                    |
 | Travessia e Melios  | Aconselha cautela, alerta contra riscos e tenta proteger o grupo.                  | Torna-se voz correta que não é escutada.                                 |
@@ -79,9 +79,9 @@ Seu clímax ocorre em Melios, quando protege o grupo, sobrevive à quebra do sel
 
 | Personagem    | Relação Inicial                            | Evolução                                                                   |
 | ------------- | ------------------------------------------ | -------------------------------------------------------------------------- |
-| [[Thorin]]    | Jovem escoltado por ordem de [[Tordan]].   | Torna-se mentora e modelo de disciplina protetora.                         |
+| [[Thorin]]    | Jovem escoltado por ordem de [[Tordan|Thordan]].   | Torna-se mentora e modelo de disciplina protetora.                         |
 | [[Mhordred]]   | Irmã de armas e melhor amiga do veterano.  | Sua captura força [[Mhordred]] a amadurecer e liderar.                        |
-| [[Thordan]]   | Aliada/subordinada de confiança da Guarda. | Sua captura ou trauma expõe o custo das decisões militares/políticas.        |
+| [[Tordan|Thordan]]   | Superior direto; Killin responde somente ao General Thordan. | Sua captura ou trauma expõe o custo das decisões militares/políticas.        |
 | [[Balastrus]] | Figura imprudente que ela tenta conter.    | Conflito moral e tático chega a Melios.                                    |
 | [[Filena]]    | Aliada civil sob proteção da Guarda.       | Cooperação em campo apesar de diferenças sociais.                          |
 | [[Corvinus]]  | Possível adversário tático em Melios.      | Compartilham prudência contra avanço imprudente, mesmo em lados distintos. |
@@ -108,4 +108,4 @@ Seu clímax ocorre em Melios, quando protege o grupo, sobrevive à quebra do sel
 | Ato II  | Proteger o grupo e conter imprudência em Melios.                              | Ambição de [[Balastrus]] contra prudência militar.    |
 | Ato III | Tornar-se objetivo de resgate opcional ou permanecer como ausência narrativa. | Recuperação, liderança e consequência do desastre.    |
 
-[[06_Combat/personagens/kilin|Ficha de combate de Kilin]]
+[[06_Combat/personagens/kilin|Ficha de combate de Killin]]

@@ -60,7 +60,7 @@ Thorin acorda de um pesadelo com sua mãe advertindo sobre Dambur, e é acordado
 | Filena | Interesse romântico | Principal |
 | Balastrus | Mercenário líder | Principal |
 | Borin | Rival | Principal |
-| Kilin | Guarda real | Secundário |
+| Killin | Guarda real | Secundário |
 | Mhordred | Guarda real | Secundário |
 | Cristaleão | Boss oculto | Especial |
 | Mãe de Thorin | Visão onírica | Especial |

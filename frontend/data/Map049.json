@@ -1408,7 +1408,7 @@
                                 "AssertVisualNovelSession",
                                 "AssertVisualNovelSession",
                                 {
-                                    "questKey": "tutorial-funda-forjaprata",
+                                    "questKey": "a-semifinal",
                                     "entryKey": "ABERTURA_FORJAPRATA"
                                 }
                             ]
@@ -1421,8 +1421,8 @@
                                 "AssertQuestState",
                                 "AssertQuestState",
                                 {
-                                    "questKey": "tutorial-funda-forjaprata",
-                                    "expectedState": "0"
+                                    "questKey": "a-semifinal",
+                                    "expectedState": "10"
                                 }
                             ]
                         },
@@ -1613,7 +1613,7 @@
                             "code": 355,
                             "indent": 0,
                             "parameters": [
-                                "const s = globalThis.Coreto.QuestVN.assertSession(\"tutorial-funda-forjaprata\", \"ABERTURA_FORJAPRATA\");"
+                                "const s = globalThis.Coreto.QuestVN.assertSession(\"a-semifinal\", \"ABERTURA_FORJAPRATA\");"
                             ]
                         },
                         {

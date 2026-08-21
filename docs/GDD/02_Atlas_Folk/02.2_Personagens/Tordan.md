@@ -9,11 +9,11 @@ versao: 1.0.0
 autor: Poliana
 data: Julho 2026
 ---
-# Tordan
+# Thordan
 
 ## Resumo
 
-Tordan Forja-Prata é o pai de [[Thorin]], general de Gildrat e uma das faces pessoais do projeto imperial de ordem, disciplina e sobrevivência.
+Thordan Forja-Prata é o pai de [[Thorin]], general de Gildrat e uma das faces pessoais do projeto imperial de ordem, disciplina e sobrevivência.
 
 Ele começa como autoridade rígida que tenta moldar o filho pela força, mas sua dureza nasce de luto, medo político e sensação de fracasso.
 Ao longo da campanha, seu arco desloca-o de obstáculo familiar para liderança militar redimida, ainda marcada por culpa e incapacidade emocional.
@@ -23,7 +23,7 @@ Sua função narrativa é encarnar o legado que Thorin rejeita, compreende e eve
 
 ## Descrição Geral
 
-Tordan é um anão veterano, aproximadamente na faixa dos 50 anos, general/fundador da Guarda de Ferro e aliado político de [[Dambur]]. É robusto, de barba longa e tradicional, olhos  frios e cansados, usando armadura de general quase permanentemente.
+Thordan é um anão veterano, aproximadamente na faixa dos 50 anos, general/fundador da Guarda de Ferro e aliado político de [[Dambur]]. É robusto, de barba longa e tradicional, olhos  frios e cansados, usando armadura de general quase permanentemente.
 
 Sua profissão/função é militar e política: general, Mão do Imperador, figura de comando e representante da ordem imperial. Ele é pai de [[Thorin]] e marido de Mélia.
 
@@ -35,7 +35,7 @@ Sua motivação central é impedir que Gildrat caia por fraqueza ou hesitação,
 
 ## Papel Narrativo
 
-Tordan existe para dar corpo à tensão entre família e Estado. Ele não é apenas o pai severo do protagonista: é o homem que acreditou que disciplina, militarização e aliança com o poder imperial poderiam salvar Gildrat.
+Thordan existe para dar corpo à tensão entre família e Estado. Ele não é apenas o pai severo do protagonista: é o homem que acreditou que disciplina, militarização e aliança com o poder imperial poderiam salvar Gildrat.
 
 Dentro da narrativa, ele transforma o conflito íntimo de Thorin em conflito político. Ao tentar afastar o filho do futebol rúnico e entregá-lo ao trabalho de [[Balastrus]], revela uma visão de mundo em que afeto precisa ser endurecido para sobreviver. Sua trajetória permite que o jogo mostre que a velha guarda não é simplesmente cruel, mas também ferida, culpada e incapaz de imaginar outro caminho.
 
@@ -61,15 +61,15 @@ No Ato III, sua função muda: de força de coerção para possível ponte entre
 
 ### Estado Inicial
 
-Tordan começa como patriarca e general rígido, convicto de que Thorin precisa abandonar o futebol rúnico e tornar-se útil à cidade. Ele vê a leveza esportiva como risco, não como identidade legítima.
+Thordan começa como patriarca e general rígido, convicto de que Thorin precisa abandonar o futebol rúnico e tornar-se útil à cidade. Ele vê a leveza esportiva como risco, não como identidade legítima.
 
 ### Catalisador
 
-O catalisador de seu arco é duplo: a resistência de Thorin e a crise de Melios. O filho não se molda pela imposição, e a política que Tordan ajudou a sustentar (Dambur) libera consequências que nem ele nem a Guarda de Ferro não conseguem controlar.
+O catalisador de seu arco é duplo: a resistência de Thorin e a crise de Melios. O filho não se molda pela imposição, e a política que Thordan ajudou a sustentar (Dambur) libera consequências que nem ele nem a Guarda de Ferro não conseguem controlar.
 
 ### Desenvolvimento
 
-Ao longo da campanha, Tordan é forçado a encarar a falha de sua estratégia emocional e política. Sua aliança pragmática com [[Balastrus]] torna-se moralmente instável quando Thorin é colocado em risco.
+Ao longo da campanha, Thordan é forçado a encarar a falha de sua estratégia emocional e política. Sua aliança pragmática com [[Balastrus]] torna-se moralmente instável quando Thorin é colocado em risco.
 
 A conversa do Troféu Quebrado concentra sua mudança: ele deixa de falar apenas como general e revela o pai ferido, incapaz de lidar com a perda de [[Mélia]] e com a semelhança de [[Thorin]] com ela.
 
@@ -79,7 +79,7 @@ Seu clímax pessoal ocorre quando aceita [[Thorin]] como participante legítimo 
 
 ### Estado Final
 
-[[Tordan]] termina como general redimido parcialmente, não absolvido. Ele aprende que controle não substitui cuidado, perde a ilusão de que autoridade basta para proteger, conquista a possibilidade de reconectar-se com [[Thorin]] e muda sua visão de mundo ao reconhecer que o filho pode liderar sem repetir exatamente seu modelo.
+[[Tordan|Thordan]] termina como general redimido parcialmente, não absolvido. Ele aprende que controle não substitui cuidado, perde a ilusão de que autoridade basta para proteger, conquista a possibilidade de reconectar-se com [[Thorin]] e muda sua visão de mundo ao reconhecer que o filho pode liderar sem repetir exatamente seu modelo.
 
 ---
 
@@ -100,7 +100,7 @@ Seu clímax pessoal ocorre quando aceita [[Thorin]] como participante legítimo 
 
 ## Temas Representados
 
-- **Dever:** [[Tordan]] mede valor por responsabilidade assumida, mesmo quando isso o torna cruel.
+- **Dever:** [[Tordan|Thordan]] mede valor por responsabilidade assumida, mesmo quando isso o torna cruel.
 - **Paternidade ferida:** seu amor por [[Thorin]] existe, mas é filtrado por medo, luto e linguagem militar.
 - **Ordem contra cuidado:** ele acredita proteger ao controlar, até que a narrativa mostra o custo desse método.
 - **Pragmatismo político:** sua aliança com [[Dambur]] e [[Balastrus]] representa a lógica de estabilidade a qualquer preço.

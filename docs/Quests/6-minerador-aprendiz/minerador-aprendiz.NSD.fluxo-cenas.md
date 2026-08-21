@@ -27,7 +27,7 @@
   - Mãe de Thorin (em sonho)
   - Balastrus
   - Filena
-  - Kilin
+  - Killin
   - Mhordred
   - Cristaleão (boss)
   - Mineradores secundários

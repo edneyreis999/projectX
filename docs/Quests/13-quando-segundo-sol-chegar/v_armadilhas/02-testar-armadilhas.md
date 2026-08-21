@@ -17,7 +17,7 @@
 - NPCs principais
   - Thorin
   - Balastrus
-  - Tordan
+  - Thordan
 
 ### 2 Pré-condições Narrativas (Checkpoint 1)
 
@@ -33,7 +33,7 @@
 plaintext
 Quest: Testar Armadilhas
  +-- Cena 1: Estrada do Cão-luar - Ponto de encontro e briefing de Balastrus
- |      +-- Beat 1: Thorin e Tordan chegam ao acampamento e conversam sobre o risco dos corredores.
+ |      +-- Beat 1: Thorin e Thordan chegam ao acampamento e conversam sobre o risco dos corredores.
  |      +-- Beat 2: Balastrus explica o esquema de armadilhas e marca os três gargalos para testar.
  +-- Cena 2: Instalação das armadilhas
  |      +-- Beat 1: Thorin posiciona a primeira armadilha no barranco norte.
@@ -41,7 +41,7 @@ Quest: Testar Armadilhas
  +-- Cena 3: Testes de ativação
  |      +-- Beat 1: O jogador aciona o primeiro gatilho e observa o impacto em uma onda simulada.
  |      +-- Beat 2: Uma segunda onda confirma o segundo ponto; ajustes rápidos são feitos.
- |      +-- Beat 3: O terceiro disparo necessita de coordenação com Tordan que mantém os guardas alertas.
+ |      +-- Beat 3: O terceiro disparo necessita de coordenação com Thordan que mantém os guardas alertas.
  +-- Cena 4: Relatório e reflexão
         +-- Beat 1: Balastrus parabeniza Thorin e registra o sucesso em _pontos_armadilhas.
 

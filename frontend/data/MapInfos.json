@@ -591,5 +591,15 @@
         "scrollX": 777.5,
         "scrollY": 513.5,
         "quick": false
+    },
+    {
+        "id": 65,
+        "expanded": false,
+        "name": "VN_Semifinal",
+        "order": 60,
+        "parentId": 18,
+        "scrollX": 777.7777777777778,
+        "scrollY": 432,
+        "quick": false
     }
 ]

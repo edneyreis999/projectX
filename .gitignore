@@ -24,3 +24,6 @@ frontend/save/file3.rmmzsave
 .agents/
 .codex/
 /.env
+
+.compozy/tasks
+.compozy/memory

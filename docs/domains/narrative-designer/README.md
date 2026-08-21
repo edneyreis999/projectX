@@ -12,8 +12,8 @@ Evidência aceita: packet `narrative-designer-001` revisão 1. Classificação:
 
 ## Inventário factual
 
-- **Personagens:** Thorin é protagonista; Filena, Kilin e Mhordred são aliados
-  jogáveis; Tordan é pai/general; Balastrus passa de antagonista a aliado
+- **Personagens:** Thorin é protagonista; Filena, Killin e Mhordred são aliados
+  jogáveis; Thordan é pai/general; Balastrus passa de antagonista a aliado
   redimido. Actors 3–6 correspondem estaticamente à party. Fontes: `g`, `q`,
   `o`, `e`.
 - **Premissa/cânone:** Rheed enquadra a Gildrat anterior a Daratrine; mineração
