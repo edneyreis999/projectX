@@ -111,9 +111,23 @@ describe('UT-043–UT-048 — battle and shared convergence', () => {
 
 describe('IT-010–IT-018 — integrated finale journeys', () => {
   test('IT-010/IT-014: four exact resume labels and Gentle converge without Battle Processing', () => {
-    const labels = ['SEMIFINAL_AFTER_ARRIVAL_VN', 'SEMIFINAL_AFTER_AUTHORIZATION_VN', 'SEMIFINAL_AFTER_CELEBRATION_VN', 'SEMIFINAL_AFTER_GUARD_VN'];
+    const handoffs = {
+      SEMIFINAL_DRAGOBUR_ARRIVAL: 'SEMIFINAL_AFTER_ARRIVAL_VN',
+      SEMIFINAL_DRAGOBUR_AUTHORIZATION: 'SEMIFINAL_AFTER_AUTHORIZATION_VN',
+      SEMIFINAL_CELEBRATION: 'SEMIFINAL_AFTER_CELEBRATION_VN',
+      SEMIFINAL_GUARD_INTERVENTION: 'SEMIFINAL_AFTER_GUARD_VN',
+    };
     const originCommands = [...map062.events[2].pages.flatMap(page => page.list), ...e6.pages.flatMap(page => page.list)];
-    labels.forEach(label => expect(originCommands.filter(command => command.code === 118 && command.parameters?.[0] === label)).toHaveLength(1));
+    Object.entries(handoffs).forEach(([entryKey, label]) => {
+      const enterIndex = originCommands.findIndex(command => command.code === 357
+        && command.parameters?.[0] === 'Coreto_QuestVN'
+        && command.parameters?.[1] === 'EnterVisualNovel'
+        && command.parameters?.[3]?.entryKey === entryKey);
+      expect(enterIndex).toBeGreaterThanOrEqual(0);
+      expect(originCommands[enterIndex + 1]).toEqual({ code: 115, indent: 0, parameters: [] });
+      expect(originCommands[enterIndex + 2]).toEqual({ code: 118, indent: 0, parameters: [label] });
+      expect(originCommands.filter(command => command.code === 118 && command.parameters?.[0] === label)).toHaveLength(1);
+    });
     expect(sharedTail.some(command => command.code === 301)).toBe(false);
     expect(sharedTail.filter(command => command.code === 201)).toHaveLength(1);
   });

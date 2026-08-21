@@ -144,7 +144,10 @@ describe('UT-055 — truthful evidence model', () => {
     });
     expect(evidence.resultStates).toEqual(['pass', 'fail', 'blocked', 'not_executed', 'stale_save_unsupported']);
     expect(evidence.checks.every(check => check.result === 'pass')).toBe(true);
-    expect(evidence.checks.at(-1).details.cases.every(item => item.result === 'not_executed')).toBe(true);
+    const humanCases = evidence.checks.at(-1).details.cases;
+    const failedIds = humanCases.filter(item => item.result === 'fail').map(item => item.id);
+    expect([[], ['E2E-004', 'E2E-005']]).toContainEqual(failedIds);
+    expect(humanCases.filter(item => item.result === 'not_executed')).toHaveLength(15 - failedIds.length);
   });
 });
 

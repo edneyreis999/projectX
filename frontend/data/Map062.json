@@ -177,7 +177,7 @@
     {
         "id": 2,
         "name": "Dragobur",
-        "note": "SEMIFINAL:011:DRAGOBUR_VN_CONTROLLER",
+        "note": "SEMIFINAL:011:DRAGOBUR_VN_CONTROLLER:TRANSFER_BARRIER",
         "pages": [
             {
                 "conditions": {
@@ -250,6 +250,11 @@
                                 "entryKey": "SEMIFINAL_DRAGOBUR_ARRIVAL"
                             }
                         ]
+                    },
+                    {
+                        "code": 115,
+                        "indent": 0,
+                        "parameters": []
                     },
                     {
                         "code": 118,
@@ -626,6 +631,11 @@
                                 "entryKey": "SEMIFINAL_DRAGOBUR_AUTHORIZATION"
                             }
                         ]
+                    },
+                    {
+                        "code": 115,
+                        "indent": 0,
+                        "parameters": []
                     },
                     {
                         "code": 118,
@@ -1392,6 +1402,11 @@
                         ]
                     },
                     {
+                        "code": 115,
+                        "indent": 0,
+                        "parameters": []
+                    },
+                    {
                         "code": 118,
                         "indent": 0,
                         "parameters": [
@@ -1490,6 +1505,11 @@
                                 "entryKey": "SEMIFINAL_GUARD_INTERVENTION"
                             }
                         ]
+                    },
+                    {
+                        "code": 115,
+                        "indent": 0,
+                        "parameters": []
                     },
                     {
                         "code": 118,

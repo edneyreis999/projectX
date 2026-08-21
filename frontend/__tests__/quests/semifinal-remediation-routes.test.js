@@ -232,6 +232,45 @@ describe('page selection, gating and movement', () => {
     expect(subject.scanStateAuthority(mutated).map(failure => failure.code)).toEqual(expect.arrayContaining(['state_surface_unclassified', 'state_surface_unclassified']));
     expect(subject.scanStateAuthority(maps)).toEqual([]);
   });
+
+  test('UT-027: locker gag is available once throughout the playable semifinal window', () => {
+    const event = maps.Map063.events[7];
+    expect(event.pages[0]).toMatchObject({ trigger: 1, conditions: { variableId: 29, variableValue: 50 } });
+    expect(event.pages[1].conditions).toMatchObject({ selfSwitchCh: 'A', selfSwitchValid: true });
+    expect(event.pages[2].conditions).toMatchObject({ variableId: 29, variableValue: 120 });
+    for (const state of [50, 60, 70, 80, 90, 100, 110]) {
+      expect(subject.selectEligiblePage(event, state).index).toBe(0);
+      expect(subject.selectEligiblePage(event, state, (kind, target) => kind === 'selfSwitch' && target === 'A').index).toBe(1);
+    }
+    expect(subject.selectEligiblePage(event, 120, (kind, target) => kind === 'selfSwitch' && target === 'A').index).toBe(2);
+    expect(commands(event.pages[0], 123).filter(command => JSON.stringify(command.parameters) === JSON.stringify(['A', 0]))).toHaveLength(1);
+  });
+
+  test('UT-028: locker gag follows E2, animates group reactions, and restores camera before Finish', () => {
+    const event = maps.Map063.events[7];
+    const first = event.pages[0];
+    const list = first.list;
+    const camera = pluginCommands(first, 'VisuMZ_4_MapCameraZoom');
+    const indexOfCamera = name => list.findIndex(command => command.code === 357 && command.parameters?.[0] === 'VisuMZ_4_MapCameraZoom' && command.parameters?.[1] === name);
+    const targetIndex = indexOfCamera('CameraFocusTargetEvent');
+    const attackerMoveIndex = list.findIndex(command => command.code === 205 && command.parameters?.[0] === 2 && JSON.stringify(command).includes('Move to: 15,20'));
+    const impactIndex = list.findIndex(command => command.code === 212 && JSON.stringify(command.parameters) === JSON.stringify([2, 39, false]));
+    const playerIndex = indexOfCamera('CameraFocusPlayer');
+    const selfSwitchIndex = list.findIndex(command => command.code === 123 && JSON.stringify(command.parameters) === JSON.stringify(['A', 0]));
+    const finishIndex = list.findIndex(command => command.code === 357 && command.parameters?.[0] === 'Coreto_Cutscene' && command.parameters?.[1] === 'FinishCutscene');
+    expect(camera.find(command => command.parameters[1] === 'CameraFocusTargetEvent').parameters[3]).toMatchObject({ 'EventID:eval': '2', 'Duration:num': '30' });
+    expect(camera.filter(command => command.parameters[1] === 'ZoomChange').map(command => command.parameters[3]['TargetScale:num'])).toEqual(['2', '1']);
+    expect(camera.filter(command => command.parameters[1] === 'CameraFocusWait')).toHaveLength(2);
+    expect(camera.filter(command => command.parameters[1] === 'ZoomWait')).toHaveLength(2);
+    expect([targetIndex, attackerMoveIndex, impactIndex, playerIndex, selfSwitchIndex, finishIndex]).toEqual([...new Set([targetIndex, attackerMoveIndex, impactIndex, playerIndex, selfSwitchIndex, finishIndex])].sort((a, b) => a - b));
+    const balloons = commands(first, 213).map(command => command.parameters);
+    expect(new Set(balloons.map(parameters => parameters[0]))).toEqual(new Set([-1, 2, 3, 4, 5]));
+    expect(balloons).toContainEqual([2, 5, false]);
+    expect(balloons).toContainEqual([-1, 6, false]);
+    expect(commands(first, 212).filter(command => command.parameters[0] === 2 && command.parameters[1] === 39)).toHaveLength(1);
+    expect(commands(first, 250).filter(command => command.parameters[0]?.name === 'Damage3')).toHaveLength(1);
+    expect(event.pages[1].list.some(command => [205, 212, 213, 250].includes(command.code) || command.parameters?.[0] === 'VisuMZ_4_MapCameraZoom')).toBe(false);
+  });
 });
 
 describe('helmet and exact error contracts', () => {
