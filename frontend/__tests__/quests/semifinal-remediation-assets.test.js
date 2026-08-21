@@ -46,6 +46,7 @@ describe('UT-049 — semifinal-assets/v1 schema', () => {
     expect(result.technicalArtistReview).toBe('approved');
     expect(result.references).toHaveLength(MANIFEST.assets.length);
     expect(result.references).toContainEqual(expect.objectContaining({ role: 'battler', path: 'frontend/img/sv_actors/Mhordred.png' }));
+    expect(result.references).toContainEqual(expect.objectContaining({ role: 'system-iconset', path: 'frontend/img/system/IconSet.png' }));
     expect(MANIFEST.assets.every(asset => asset.consumers.length > 0 && /^[a-f0-9]{64}$/.test(asset.sha256))).toBe(true);
   });
 
@@ -220,6 +221,16 @@ describe('UT-065 — exact missing helmet error', () => {
       code: 'reference_missing',
       reference: 'img/characters/Estadio/Vestiario/!$Capacete.png',
     });
+  });
+});
+
+describe('UT-066 — legacy Armor 51 icon restoration', () => {
+  test('keeps Armor 51 on index 132 and registers the restored IconSet bytes', () => {
+    const armors = JSON.parse(fs.readFileSync(path.join(ROOT, 'frontend/data/Armors.json'), 'utf8'));
+    const iconset = MANIFEST.assets.find(asset => asset.role === 'system-iconset');
+    expect(armors[51]).toMatchObject({ id: 51, name: 'Elmo Velho', iconIndex: 132 });
+    expect(iconset).toMatchObject({ path: 'frontend/img/system/IconSet.png', consumers: ['Armors:51:iconIndex132'], resolution: 'existing' });
+    expect(validate(ROOT, { version: MANIFEST.version, assets: [iconset] }).status).toBe('complete');
   });
 });
 

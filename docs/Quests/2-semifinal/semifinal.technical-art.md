@@ -71,8 +71,11 @@ O manifest registra somente paths reais. Um missing alcançável retorna `refere
 | `$Menina1`–`$Menina4` | quadrantes inferiores de `Estadio2.png` | existing/retargeted | Map063 E2–E5 |
 | `!$Capacete.png` | `Vestiario/Cabide.png` byte-idêntico | existing/retargeted | Map063 E13 em V60 |
 | `!$Armadura.png` | `Vestiario/Cabide.png`, registrado no manifest como fallback técnico | placeholder | Map063 E13 em V70/V80 |
+| `IconSet.png`, slot 132 | slot 132 do `IconSet.png` legado em `5540b524` | existing/retargeted | Armor 51 `Elmo Velho` |
 
 Os objetos `!$` mantêm 144×384 RGBA, células 48×96 e pivot inferior central. O placeholder de armadura pode carregar, mas ainda pode falhar semanticamente por mostrar o capacete; isso é deliberadamente visível na matriz humana e não é tratado como asset final.
+
+O banco já apontava Armor 51 para `iconIndex: 132`, mas esse slot estava transparente no `IconSet.png` atual. A remediação restaura exatamente o tile legado de 32×32 no mesmo índice e verifica que nenhum pixel fora do slot mudou; adequação e leitura no menu continuam pendentes de Playtest humano.
 
 ### VNs e busts
 

@@ -177,7 +177,7 @@
     {
         "id": 2,
         "name": "Dragobur",
-        "note": "SEMIFINAL:011:DRAGOBUR_VN_CONTROLLER:TRANSFER_BARRIER",
+        "note": "SEMIFINAL:011:DRAGOBUR_VN_CONTROLLER:TRANSFER_BARRIER:EQUIP_RECONCILIATION",
         "pages": [
             {
                 "conditions": {
@@ -452,28 +452,86 @@
                         "code": 108,
                         "indent": 0,
                         "parameters": [
-                            "SEMIFINAL:BT-SEM-DRAGOBUR-REPEAT-001"
-                        ]
-                    },
-                    {
-                        "code": 108,
-                        "indent": 0,
-                        "parameters": [
-                            "SEMIFINAL:DL-SEM-HELMET-DRAGOBUR-REPEAT-001"
+                            "SEMIFINAL:DRAGOBUR_EQUIP_RECONCILIATION:LEGACY_PARITY"
                         ]
                     },
                     {
                         "code": 357,
                         "indent": 0,
                         "parameters": [
+                            "Coreto_Cutscene",
+                            "BeginCutscene",
+                            "BeginCutscene",
+                            {}
+                        ]
+                    },
+                    {
+                        "code": 111,
+                        "indent": 0,
+                        "parameters": [
+                            12,
+                            "$gameActors.actor(3).isEquipped($dataArmors[51])"
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 1,
+                        "parameters": [
+                            "Coreto_QuestCore",
+                            "QuestTransition",
+                            "QuestTransition",
+                            {
+                                "questKey": "a-semifinal",
+                                "transitionId": "EQUIP_HELMET"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 1,
+                        "parameters": [
                             "VisuMZ_4_GabWindow",
                             "GabTextOnly",
                             "Gab: Text Only",
                             {
-                                "Text:json": "\"Não basta carregar o capacete debaixo do braço, Thorin. Equipe o velho elmo e volte aqui.\"",
+                                "Text:json": "\"Agora sim. Esse capacete merece uma conversa antes de você entrar em campo.\"",
                                 "ForceGab:eval": "false",
                                 "Override:struct": "{\"EventID:num\":\"2\",\"BypassAntiRepeat:eval\":\"false\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
                             }
+                        ]
+                    },
+                    {
+                        "code": 411,
+                        "indent": 0,
+                        "parameters": []
+                    },
+                    {
+                        "code": 357,
+                        "indent": 1,
+                        "parameters": [
+                            "VisuMZ_4_GabWindow",
+                            "GabTextOnly",
+                            "Gab: Text Only",
+                            {
+                                "Text:json": "\"Não basta carregar o capacete. Equipe o elmo da estátua e volte aqui.\"",
+                                "ForceGab:eval": "false",
+                                "Override:struct": "{\"EventID:num\":\"2\",\"BypassAntiRepeat:eval\":\"false\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 412,
+                        "indent": 0,
+                        "parameters": []
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "Coreto_Cutscene",
+                            "FinishCutscene",
+                            "FinishCutscene",
+                            {}
                         ]
                     },
                     {
@@ -3023,127 +3081,625 @@
         "y": 9
     },
     {
-      "id": 15,
-      "name": "Teleporte Distrito Comercial",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 23,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 29,
-            "variableValid": false,
-            "variableValue": 1
-          },
-          "directionFix": true,
-          "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 2, "characterIndex": 7 },
-          "list": [
-            { "code": 201, "indent": 0, "parameters": [0, 61, 38, 17, 0, 0] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
-          "moveFrequency": 4,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 4,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        }
-      ],
-      "x": 0,
-      "y": 6
+        "id": 15,
+        "name": "Teleporte Distrito Comercial",
+        "note": "SEMIFINAL:011:STADIUM_EXIT:LOCKED_V60_V110",
+        "pages": [
+            {
+                "conditions": {
+                    "actorId": 1,
+                    "actorValid": false,
+                    "itemId": 1,
+                    "itemValid": false,
+                    "selfSwitchCh": "A",
+                    "selfSwitchValid": false,
+                    "switch1Id": 23,
+                    "switch1Valid": false,
+                    "switch2Id": 1,
+                    "switch2Valid": false,
+                    "variableId": 29,
+                    "variableValid": false,
+                    "variableValue": 1
+                },
+                "directionFix": true,
+                "image": {
+                    "tileId": 0,
+                    "characterName": "!Flame",
+                    "direction": 2,
+                    "pattern": 2,
+                    "characterIndex": 7
+                },
+                "list": [
+                    {
+                        "code": 201,
+                        "indent": 0,
+                        "parameters": [
+                            0,
+                            61,
+                            38,
+                            17,
+                            0,
+                            0
+                        ]
+                    },
+                    {
+                        "code": 0,
+                        "indent": 0,
+                        "parameters": []
+                    }
+                ],
+                "moveFrequency": 4,
+                "moveRoute": {
+                    "list": [
+                        {
+                            "code": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "repeat": true,
+                    "skippable": false,
+                    "wait": false
+                },
+                "moveSpeed": 4,
+                "moveType": 0,
+                "priorityType": 1,
+                "stepAnime": true,
+                "through": false,
+                "trigger": 1,
+                "walkAnime": true
+            },
+            {
+                "conditions": {
+                    "actorId": 1,
+                    "actorValid": false,
+                    "itemId": 1,
+                    "itemValid": false,
+                    "selfSwitchCh": "A",
+                    "selfSwitchValid": false,
+                    "switch1Id": 23,
+                    "switch1Valid": false,
+                    "switch2Id": 1,
+                    "switch2Valid": false,
+                    "variableId": 29,
+                    "variableValid": true,
+                    "variableValue": 60
+                },
+                "directionFix": true,
+                "image": {
+                    "tileId": 0,
+                    "characterName": "!Flame",
+                    "direction": 2,
+                    "pattern": 2,
+                    "characterIndex": 7
+                },
+                "list": [
+                    {
+                        "code": 108,
+                        "indent": 0,
+                        "parameters": [
+                            "SEMIFINAL:MAP062_STADIUM_EXIT_LOCKED:V60_V110"
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_GabWindow",
+                            "GabTextOnly",
+                            "Gab: Text Only",
+                            {
+                                "Text:json": "\"Não posso ir embora agora. Preciso pegar o capacete e entrar em campo.\"",
+                                "ForceGab:eval": "true",
+                                "Override:struct": "{\"EventID:num\":\"-1\",\"BypassAntiRepeat:eval\":\"true\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 0,
+                        "indent": 0,
+                        "parameters": []
+                    }
+                ],
+                "moveFrequency": 4,
+                "moveRoute": {
+                    "list": [
+                        {
+                            "code": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "repeat": true,
+                    "skippable": false,
+                    "wait": false
+                },
+                "moveSpeed": 4,
+                "moveType": 0,
+                "priorityType": 1,
+                "stepAnime": true,
+                "through": false,
+                "trigger": 1,
+                "walkAnime": true
+            },
+            {
+                "conditions": {
+                    "actorId": 1,
+                    "actorValid": false,
+                    "itemId": 1,
+                    "itemValid": false,
+                    "selfSwitchCh": "A",
+                    "selfSwitchValid": false,
+                    "switch1Id": 23,
+                    "switch1Valid": false,
+                    "switch2Id": 1,
+                    "switch2Valid": false,
+                    "variableId": 29,
+                    "variableValid": true,
+                    "variableValue": 120
+                },
+                "directionFix": true,
+                "image": {
+                    "tileId": 0,
+                    "characterName": "!Flame",
+                    "direction": 2,
+                    "pattern": 2,
+                    "characterIndex": 7
+                },
+                "list": [
+                    {
+                        "code": 201,
+                        "indent": 0,
+                        "parameters": [
+                            0,
+                            61,
+                            38,
+                            17,
+                            0,
+                            0
+                        ]
+                    },
+                    {
+                        "code": 0,
+                        "indent": 0,
+                        "parameters": []
+                    }
+                ],
+                "moveFrequency": 4,
+                "moveRoute": {
+                    "list": [
+                        {
+                            "code": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "repeat": true,
+                    "skippable": false,
+                    "wait": false
+                },
+                "moveSpeed": 4,
+                "moveType": 0,
+                "priorityType": 1,
+                "stepAnime": true,
+                "through": false,
+                "trigger": 1,
+                "walkAnime": true
+            }
+        ],
+        "x": 0,
+        "y": 6
     },
     {
-      "id": 16,
-      "name": "Teleporte Distrito Comercial",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 23,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 29,
-            "variableValid": false,
-            "variableValue": 1
-          },
-          "directionFix": true,
-          "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 2, "characterIndex": 7 },
-          "list": [
-            { "code": 201, "indent": 0, "parameters": [0, 61, 38, 17, 0, 0] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
-          "moveFrequency": 4,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 4,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        }
-      ],
-      "x": 0,
-      "y": 7
+        "id": 16,
+        "name": "Teleporte Distrito Comercial",
+        "note": "SEMIFINAL:011:STADIUM_EXIT:LOCKED_V60_V110",
+        "pages": [
+            {
+                "conditions": {
+                    "actorId": 1,
+                    "actorValid": false,
+                    "itemId": 1,
+                    "itemValid": false,
+                    "selfSwitchCh": "A",
+                    "selfSwitchValid": false,
+                    "switch1Id": 23,
+                    "switch1Valid": false,
+                    "switch2Id": 1,
+                    "switch2Valid": false,
+                    "variableId": 29,
+                    "variableValid": false,
+                    "variableValue": 1
+                },
+                "directionFix": true,
+                "image": {
+                    "tileId": 0,
+                    "characterName": "!Flame",
+                    "direction": 2,
+                    "pattern": 2,
+                    "characterIndex": 7
+                },
+                "list": [
+                    {
+                        "code": 201,
+                        "indent": 0,
+                        "parameters": [
+                            0,
+                            61,
+                            38,
+                            17,
+                            0,
+                            0
+                        ]
+                    },
+                    {
+                        "code": 0,
+                        "indent": 0,
+                        "parameters": []
+                    }
+                ],
+                "moveFrequency": 4,
+                "moveRoute": {
+                    "list": [
+                        {
+                            "code": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "repeat": true,
+                    "skippable": false,
+                    "wait": false
+                },
+                "moveSpeed": 4,
+                "moveType": 0,
+                "priorityType": 1,
+                "stepAnime": true,
+                "through": false,
+                "trigger": 1,
+                "walkAnime": true
+            },
+            {
+                "conditions": {
+                    "actorId": 1,
+                    "actorValid": false,
+                    "itemId": 1,
+                    "itemValid": false,
+                    "selfSwitchCh": "A",
+                    "selfSwitchValid": false,
+                    "switch1Id": 23,
+                    "switch1Valid": false,
+                    "switch2Id": 1,
+                    "switch2Valid": false,
+                    "variableId": 29,
+                    "variableValid": true,
+                    "variableValue": 60
+                },
+                "directionFix": true,
+                "image": {
+                    "tileId": 0,
+                    "characterName": "!Flame",
+                    "direction": 2,
+                    "pattern": 2,
+                    "characterIndex": 7
+                },
+                "list": [
+                    {
+                        "code": 108,
+                        "indent": 0,
+                        "parameters": [
+                            "SEMIFINAL:MAP062_STADIUM_EXIT_LOCKED:V60_V110"
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_GabWindow",
+                            "GabTextOnly",
+                            "Gab: Text Only",
+                            {
+                                "Text:json": "\"Não posso ir embora agora. Preciso pegar o capacete e entrar em campo.\"",
+                                "ForceGab:eval": "true",
+                                "Override:struct": "{\"EventID:num\":\"-1\",\"BypassAntiRepeat:eval\":\"true\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 0,
+                        "indent": 0,
+                        "parameters": []
+                    }
+                ],
+                "moveFrequency": 4,
+                "moveRoute": {
+                    "list": [
+                        {
+                            "code": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "repeat": true,
+                    "skippable": false,
+                    "wait": false
+                },
+                "moveSpeed": 4,
+                "moveType": 0,
+                "priorityType": 1,
+                "stepAnime": true,
+                "through": false,
+                "trigger": 1,
+                "walkAnime": true
+            },
+            {
+                "conditions": {
+                    "actorId": 1,
+                    "actorValid": false,
+                    "itemId": 1,
+                    "itemValid": false,
+                    "selfSwitchCh": "A",
+                    "selfSwitchValid": false,
+                    "switch1Id": 23,
+                    "switch1Valid": false,
+                    "switch2Id": 1,
+                    "switch2Valid": false,
+                    "variableId": 29,
+                    "variableValid": true,
+                    "variableValue": 120
+                },
+                "directionFix": true,
+                "image": {
+                    "tileId": 0,
+                    "characterName": "!Flame",
+                    "direction": 2,
+                    "pattern": 2,
+                    "characterIndex": 7
+                },
+                "list": [
+                    {
+                        "code": 201,
+                        "indent": 0,
+                        "parameters": [
+                            0,
+                            61,
+                            38,
+                            17,
+                            0,
+                            0
+                        ]
+                    },
+                    {
+                        "code": 0,
+                        "indent": 0,
+                        "parameters": []
+                    }
+                ],
+                "moveFrequency": 4,
+                "moveRoute": {
+                    "list": [
+                        {
+                            "code": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "repeat": true,
+                    "skippable": false,
+                    "wait": false
+                },
+                "moveSpeed": 4,
+                "moveType": 0,
+                "priorityType": 1,
+                "stepAnime": true,
+                "through": false,
+                "trigger": 1,
+                "walkAnime": true
+            }
+        ],
+        "x": 0,
+        "y": 7
     },
     {
-      "id": 17,
-      "name": "Teleporte Distrito Comercial",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 23,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 29,
-            "variableValid": false,
-            "variableValue": 1
-          },
-          "directionFix": true,
-          "image": { "tileId": 0, "characterName": "!Flame", "direction": 2, "pattern": 2, "characterIndex": 7 },
-          "list": [
-            { "code": 201, "indent": 0, "parameters": [0, 61, 38, 17, 0, 0] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
-          "moveFrequency": 4,
-          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
-          "moveSpeed": 4,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        }
-      ],
-      "x": 0,
-      "y": 8
+        "id": 17,
+        "name": "Teleporte Distrito Comercial",
+        "note": "SEMIFINAL:011:STADIUM_EXIT:LOCKED_V60_V110",
+        "pages": [
+            {
+                "conditions": {
+                    "actorId": 1,
+                    "actorValid": false,
+                    "itemId": 1,
+                    "itemValid": false,
+                    "selfSwitchCh": "A",
+                    "selfSwitchValid": false,
+                    "switch1Id": 23,
+                    "switch1Valid": false,
+                    "switch2Id": 1,
+                    "switch2Valid": false,
+                    "variableId": 29,
+                    "variableValid": false,
+                    "variableValue": 1
+                },
+                "directionFix": true,
+                "image": {
+                    "tileId": 0,
+                    "characterName": "!Flame",
+                    "direction": 2,
+                    "pattern": 2,
+                    "characterIndex": 7
+                },
+                "list": [
+                    {
+                        "code": 201,
+                        "indent": 0,
+                        "parameters": [
+                            0,
+                            61,
+                            38,
+                            17,
+                            0,
+                            0
+                        ]
+                    },
+                    {
+                        "code": 0,
+                        "indent": 0,
+                        "parameters": []
+                    }
+                ],
+                "moveFrequency": 4,
+                "moveRoute": {
+                    "list": [
+                        {
+                            "code": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "repeat": true,
+                    "skippable": false,
+                    "wait": false
+                },
+                "moveSpeed": 4,
+                "moveType": 0,
+                "priorityType": 1,
+                "stepAnime": true,
+                "through": false,
+                "trigger": 1,
+                "walkAnime": true
+            },
+            {
+                "conditions": {
+                    "actorId": 1,
+                    "actorValid": false,
+                    "itemId": 1,
+                    "itemValid": false,
+                    "selfSwitchCh": "A",
+                    "selfSwitchValid": false,
+                    "switch1Id": 23,
+                    "switch1Valid": false,
+                    "switch2Id": 1,
+                    "switch2Valid": false,
+                    "variableId": 29,
+                    "variableValid": true,
+                    "variableValue": 60
+                },
+                "directionFix": true,
+                "image": {
+                    "tileId": 0,
+                    "characterName": "!Flame",
+                    "direction": 2,
+                    "pattern": 2,
+                    "characterIndex": 7
+                },
+                "list": [
+                    {
+                        "code": 108,
+                        "indent": 0,
+                        "parameters": [
+                            "SEMIFINAL:MAP062_STADIUM_EXIT_LOCKED:V60_V110"
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_GabWindow",
+                            "GabTextOnly",
+                            "Gab: Text Only",
+                            {
+                                "Text:json": "\"Não posso ir embora agora. Preciso pegar o capacete e entrar em campo.\"",
+                                "ForceGab:eval": "true",
+                                "Override:struct": "{\"EventID:num\":\"-1\",\"BypassAntiRepeat:eval\":\"true\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 0,
+                        "indent": 0,
+                        "parameters": []
+                    }
+                ],
+                "moveFrequency": 4,
+                "moveRoute": {
+                    "list": [
+                        {
+                            "code": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "repeat": true,
+                    "skippable": false,
+                    "wait": false
+                },
+                "moveSpeed": 4,
+                "moveType": 0,
+                "priorityType": 1,
+                "stepAnime": true,
+                "through": false,
+                "trigger": 1,
+                "walkAnime": true
+            },
+            {
+                "conditions": {
+                    "actorId": 1,
+                    "actorValid": false,
+                    "itemId": 1,
+                    "itemValid": false,
+                    "selfSwitchCh": "A",
+                    "selfSwitchValid": false,
+                    "switch1Id": 23,
+                    "switch1Valid": false,
+                    "switch2Id": 1,
+                    "switch2Valid": false,
+                    "variableId": 29,
+                    "variableValid": true,
+                    "variableValue": 120
+                },
+                "directionFix": true,
+                "image": {
+                    "tileId": 0,
+                    "characterName": "!Flame",
+                    "direction": 2,
+                    "pattern": 2,
+                    "characterIndex": 7
+                },
+                "list": [
+                    {
+                        "code": 201,
+                        "indent": 0,
+                        "parameters": [
+                            0,
+                            61,
+                            38,
+                            17,
+                            0,
+                            0
+                        ]
+                    },
+                    {
+                        "code": 0,
+                        "indent": 0,
+                        "parameters": []
+                    }
+                ],
+                "moveFrequency": 4,
+                "moveRoute": {
+                    "list": [
+                        {
+                            "code": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "repeat": true,
+                    "skippable": false,
+                    "wait": false
+                },
+                "moveSpeed": 4,
+                "moveType": 0,
+                "priorityType": 1,
+                "stepAnime": true,
+                "through": false,
+                "trigger": 1,
+                "walkAnime": true
+            }
+        ],
+        "x": 0,
+        "y": 8
     },
     {
       "id": 18,

@@ -140,7 +140,7 @@ Mapas: [062] `EX_Estadio` → `VN_Semifinal` → [062] `EX_Estadio`
 | **4-A** | **Entrada fisicamente fechada** | Dragobur E2 e o E19 sem imagem ocupam dois tiles; E19 em `(12,5)` mantém colisão e fala contextual até V90. | 🎮 |
 | **4-B** | **VN de chegada** | `SEMIFINAL_DRAGOBUR_ARRIVAL` apresenta atraso, derrota parcial, confiança de Thorin, segurança e respostas dos dois. | 🎬 VN |
 | **4-C** | **Pedido correto** | Dragobur manda Thorin buscar um capacete velho comum no vestiário; não aponta a estátua da Seleção de Ouro. | 🎬 VN |
-| **4-D** | **Retomada** | A VN conclui em V60 e uma Gab ancora o próximo passo no EX; repetição em V60/V70 reforça busca/equipamento sem replay. | 🎮 |
+| **4-D** | **Retomada** | A VN conclui em V60 e uma Gab ancora o próximo passo no EX; as saídas para o Distrito Comercial ficam bloqueadas até a conclusão do estádio. Em V70, Dragobur reconhece Armor 51 equipada, reconcilia V80 e devolve controle; a interação seguinte abre a autorização. | 🎮 |
 
 #### Cena 5 – Estátua da Seleção de Ouro
 
@@ -150,7 +150,7 @@ Mapa: [063] `EX_Vestiario`
 | --- | --- | --- | --- |
 | **5-A** | **Corredor dos vestiários** | O vestiário masculino permanece como rota principal; o feminino é um desvio opcional. | 🎮 |
 | **5-B** | **Gag protegido** | A primeira interação preserva retratos, reações, movimento, impacto, som, recuo e a linha exata `DL-SEM-GAG-LOCKER-001`; repetição não duplica a coreografia. | 🎬 |
-| **5-C** | **Estátua íntegra** | Thorin reconhece o marco da Seleção de Ouro e percebe que o elmo histórico cabe nele, embora Dragobur tenha pedido um capacete comum. | 🎮 |
+| **5-C** | **Estátua íntegra** | Antes da missão, a estátua já está visível e oferece somente uma Gab filler sobre o atraso de Thorin. Depois da ordem de Dragobur, Thorin reconhece o marco da Seleção de Ouro e percebe que o elmo histórico cabe nele. | 🎮 |
 | **5-D** | **Erro obrigatório** | Sem alternativa quest-valid, Thorin improvisa e retira o elmo da estátua; o display muda de forma persistente e o item não duplica. | 🎬 |
 | **5-E** | **Equipamento manual** | O jogador equipa o capacete correto em Thorin e recebe a reação leve `DL-SEM-HELMET-THORIN-FIT-001`. | 🎮 |
 | **5-F** | **Retorno** | Inventário sem equipamento, capacete errado ou equipamento em outro ator não encerram o requisito. | 🎮 |

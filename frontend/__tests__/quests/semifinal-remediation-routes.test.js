@@ -9,6 +9,13 @@ const FEATURE = '.compozy/tasks/011-semifinal-playtest-remediation';
 const MODULE = path.join(ROOT, `${FEATURE}/scripts/lib/semifinal-gameplay.mjs`);
 const CASES = JSON.parse(fs.readFileSync(path.join(ROOT, `${FEATURE}/fixtures/gameplay/writer-cases.json`), 'utf8'));
 const MAP_NAMES = ['Map044', 'Map061', 'Map062', 'Map063', 'Map064'];
+const ARMORS = JSON.parse(fs.readFileSync(path.join(ROOT, 'frontend/data/Armors.json'), 'utf8').replace(/^\uFEFF/, ''));
+const ACTORS = JSON.parse(fs.readFileSync(path.join(ROOT, 'frontend/data/Actors.json'), 'utf8').replace(/^\uFEFF/, ''));
+
+function configuredPlugins() {
+  const source = fs.readFileSync(path.join(ROOT, 'frontend/js/plugins.js'), 'utf8');
+  return JSON.parse(source.slice(source.indexOf('['), source.lastIndexOf(']') + 1));
+}
 
 let subject;
 let projection;
@@ -271,9 +278,49 @@ describe('page selection, gating and movement', () => {
     expect(commands(first, 250).filter(command => command.parameters[0]?.name === 'Damage3')).toHaveLength(1);
     expect(event.pages[1].list.some(command => [205, 212, 213, 250].includes(command.code) || command.parameters?.[0] === 'VisuMZ_4_MapCameraZoom')).toBe(false);
   });
+
+  test('UT-029: statue is visible at V50 with filler copy but cannot grant or advance the helmet quest', () => {
+    const event = maps.Map063.events[13];
+    const filler = selected(event, 50);
+    expect(visible(filler)).toBe(true);
+    expect(JSON.stringify(filler)).toContain('SEMIFINAL:DL-SEM-STATUE-PREQUEST-FILLER-011');
+    expect(pluginCommands(filler, 'VisuMZ_4_GabWindow', 'GabTextOnly')).toHaveLength(1);
+    expect(commands(filler).some(command => command.code === 128 || command.parameters?.[0] === 'Coreto_QuestCore')).toBe(false);
+    expect(selected(event, 60)).not.toBe(filler);
+  });
+
+  test('UT-030: Map062 district exits are open at V50, locked through V110, and restored at V120', () => {
+    for (const id of [15, 16, 17]) {
+      expect(commands(selected(maps.Map062.events[id], 50), 201).map(command => command.parameters[1])).toEqual([61]);
+      for (const state of [60, 70, 80, 90, 100, 110]) {
+        const page = selected(maps.Map062.events[id], state);
+        expect(commands(page, 201)).toEqual([]);
+        expect(pluginCommands(page, 'VisuMZ_4_GabWindow', 'GabTextOnly')).toHaveLength(1);
+      }
+      expect(commands(selected(maps.Map062.events[id], 120), 201).map(command => command.parameters[1])).toEqual([61]);
+    }
+  });
 });
 
 describe('helmet and exact error contracts', () => {
+  test('UT-073: Armor 51 changes Thorin to the existing OldHelmet AnimaX profile while equipped', () => {
+    const helmet = ARMORS[51];
+    const animaX = configuredPlugins().find(entry => entry.name === 'PKD_AnimaX');
+    const profiles = JSON.parse(animaX.parameters['xAnimations:structA']).map(JSON.parse).map(profile => profile.id);
+    const runtime = fs.readFileSync(path.join(ROOT, 'frontend/js/plugins/PKD_AnimaX.js'), 'utf8');
+
+    expect(helmet).toMatchObject({ id: 51, name: 'Elmo Velho', etypeId: 3 });
+    expect(helmet.note.match(/<xAnimaSet:OldHelmet>/g)).toHaveLength(1);
+    expect(ACTORS[3].note).toContain('<xAnima:Thorin>');
+    expect(animaX.status).toBe(true);
+    expect(profiles).toContain('Thorin_OldHelmet');
+    expect(runtime).toContain("PKD_ANIMAX.KGameItems.GetMeta('xAnimaSet', e)");
+    expect(runtime).toContain("return this.getInitialXProfile() + '_' + equipmentXSet;");
+    expect(runtime).toContain('this.requestRefreshAnimaX();');
+    expect(fs.existsSync(path.join(ROOT, 'frontend/img/charactersAA/Thorin_OldHelmet/Move.png'))).toBe(true);
+    expect(fs.existsSync(path.join(ROOT, 'frontend/img/charactersAA/Thorin_OldHelmet/Idle.png'))).toBe(true);
+  });
+
   test('UT-033: only Armor 51 from Map063 E13 is the mandatory helmet', () => {
     const event = maps.Map063.events[13];
     expect(event.pages.flatMap(page => commands(page, 128)).filter(command => command.parameters[0] === 51)).toHaveLength(1);
@@ -282,8 +329,13 @@ describe('helmet and exact error contracts', () => {
   });
 
   test('UT-035: only equipped Actor 3 with Armor 51 passes the V70 gate', () => {
-    const script = commands(selected(maps.Map063.events[13], 70), 111)[0].parameters[1];
-    expect(script).toBe('$gameActors.actor(3).isEquipped($dataArmors[51])');
+    const statueScript = commands(selected(maps.Map063.events[13], 70), 111)[0].parameters[1];
+    const dragobur = selected(maps.Map062.events[2], 70);
+    const dragoburScript = commands(dragobur, 111)[0].parameters[1];
+    expect(statueScript).toBe('$gameActors.actor(3).isEquipped($dataArmors[51])');
+    expect(dragoburScript).toBe('$gameActors.actor(3).isEquipped($dataArmors[51])');
+    expect(pluginCommands(dragobur, 'Coreto_QuestCore', 'QuestTransition').map(command => command.parameters[3].transitionId)).toContain('EQUIP_HELMET');
+    expect(pluginCommands(selected(maps.Map062.events[2], 80), 'Coreto_QuestCore', 'QuestTransition').map(command => command.parameters[3].transitionId)).not.toContain('EQUIP_HELMET');
     const gate = ({ actorId, armorId, equipped }) => actorId === 3 && armorId === 51 && equipped;
     expect([gate({ actorId: 3, armorId: 51, equipped: false }), gate({ actorId: 2, armorId: 51, equipped: true }), gate({ actorId: 3, armorId: 1, equipped: true })]).toEqual([false, false, false]);
     expect(gate({ actorId: 3, armorId: 51, equipped: true })).toBe(true);
@@ -332,6 +384,7 @@ describe('integrated canonical projections', () => {
     expect([maps.Map062.events[2].x, maps.Map062.events[2].y, maps.Map062.events[19].x, maps.Map062.events[19].y]).toEqual([11, 5, 12, 5]);
     expect(JSON.stringify(selected(maps.Map062.events[19], 60))).toContain('Vestiário, Thorin. Um capacete velho. E rápido!');
     expect(selected(maps.Map062.events[19], 90)).toMatchObject({ priorityType: 0, through: true });
+    expect(JSON.stringify(selected(maps.Map062.events[2], 70))).toContain('EQUIP_HELMET');
   });
 
   test('IT-007: Map044 preserves one ARRIVE_HOME and Gab-only return cleanup', () => {
@@ -342,7 +395,7 @@ describe('integrated canonical projections', () => {
 
   test('IT-008: locker projection has present assets, one native grant, and an Armor 51 gate', () => {
     const event = maps.Map063.events[13];
-    for (const state of [60, 70, 80]) expect(fs.existsSync(path.join(ROOT, 'frontend/img/characters', `${selected(event, state).image.characterName}.png`))).toBe(true);
+    for (const state of [50, 60, 70, 80]) expect(fs.existsSync(path.join(ROOT, 'frontend/img/characters', `${selected(event, state).image.characterName}.png`))).toBe(true);
     expect(event.pages.flatMap(page => commands(page, 128))).toEqual([{ code: 128, indent: 1, parameters: [51, 0, 0, 1, false] }]);
     expect(JSON.stringify(event)).toContain('$gameActors.actor(3).isEquipped($dataArmors[51])');
   });

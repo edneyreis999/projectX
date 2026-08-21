@@ -2,7 +2,7 @@
 status: approved
 owner: Scene Presentation Designer
 quest: A Semifinal
-contract_version: 1.2.0
+contract_version: 1.3.0
 language: pt-BR
 human_presentation_validation: pending
 ---
@@ -46,6 +46,7 @@ ciclo. Avançar uma Gab pelo controle previsto não devolve movimento.
 - 011 ADR-005 supersede a convergência imediata de Resist: a escolha retorna a EX, forma Thorin+Filena e inicia batalha real contra Mhordred antes da captura comum.
 - 011 ADR-009 mantém Map062 E6 como único dono bloqueado do finale, sem estados V29 intermediários nem flag persistente de branch.
 - O feedback de Playtest de 2026-08-21 supersede o gate V60 e a câmera fixa do gag: Map063 E7 fica disponível uma vez durante a janela jogável da semifinal, de V50 a V110; a câmera segue a atacante E2 em zoom 200%, balloons dão reação ao grupo e o cleanup retorna ao jogador em 100%.
+- A continuação do Playtest de 2026-08-21 torna Map063 E13 visível em V50 com uma única Gab filler sem mutação, bloqueia as saídas E15–E17 de Map062 em V60–V110 e reconcilia o equipamento de Armor 51 ao falar com Dragobur em V70.
 - As pendências antigas sobre posse do elmo, escolha e política de controle foram resolvidas pelos ADRs; a direção de arte permanece autoridade de composição somente onde não conflita.
 
 ## Regras globais do score
@@ -185,12 +186,14 @@ Os três controladores abaixo substituem integralmente as seções 010 de mesmo 
 ### CS-SEM-HELMET-STATUE-001 — Estátua, retirada e equipamento
 
 - Controlador: Map063 E13.
+- Janela: V50 exibe a estátua íntegra e somente `DL-SEM-STATUE-PREQUEST-FILLER-011`; a retirada e o grant continuam indisponíveis até V60.
 - Routing: `EX aprovado`; interação ambiental e alteração persistente exigem comparação espacial direta. VN não pode substituir leitura da estátua.
-- Densidade: 2 Gabs na retirada e 1 Gab de confirmação após equipamento, com 3 barriers ligadas a alterações irreversíveis.
-- Recovery: estado alterado nunca reexibe estátua íntegra nem concede Armor 51; retorno do menu reconcilia equipamento real.
+- Densidade: 1 Gab filler em V50, 2 Gabs na retirada e 1 Gab de confirmação após equipamento, com 3 barriers ligadas a alterações irreversíveis.
+- Recovery: estado alterado nunca reexibe estátua íntegra nem concede Armor 51; retorno do menu pode reconciliar na estátua e falar com Dragobur em V70 reconcilia o mesmo equipamento real, devolve controle em V80 e mantém a VN em seu único label na interação seguinte.
 
 | Beat                      | Mapa/evento                  | Participantes, posição e facing                                                 | Lock                    | Diálogo                         | Movimento/animação                                                           | Câmera/zoom                                                     | Áudio                                                                    | Await                                                                                                 | Cleanup                                                 | Terminal/recovery                                                             |
 | ------------------------- | ---------------------------- | ------------------------------------------------------------------------------- | ----------------------- | ------------------------------- | ---------------------------------------------------------------------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| `BT-SEM-STATUE-PREQUEST-FILLER-011` | Map063 E13 em V50 | estátua íntegra em `(9,8)`; Thorin diante do landmark | lock somente da interação | `DL-SEM-STATUE-PREQUEST-FILLER-011` | facing sustentado; nenhuma retirada, grant ou mudança de display | câmera baseline, zoom 100% | somente bed do estádio | nenhuma barrier; fala filler isolada | fila Gab não empilha | controle retorna em V50 sem mutação |
 | `BT-SEM-STATUE-READ-001`  | Map063 E13                   | estátua íntegra em `(9,8)`; Thorin `(9,9)` facing cima                          | lock de interação       | `DL-SEM-STATUE-THORIN-001`      | pausa e facing sustentado; nenhuma retirada ainda                            | câmera aproxima no máximo a zoom 110%, mantendo origem e Thorin | bed do estádio                                                           | `WaitForGab: AW-SEM-STATUE-ORIGIN-001` protege origem/seleção de ouro antes da retirada               | nenhum                                                  | continua                                                                      |
 | `BT-SEM-STATUE-TAKE-001`  | Map063 E13                   | mesmas posições; mãos/facing de Thorin ligados ao landmark                      | lock ativo              | `DL-SEM-STATUE-THORIN-TAKE-001` | gesto de retirada; sprite/tile troca de íntegro para alterado depois da fala | câmera mantém ambos; zoom retorna 100% após alteração legível   | `CUE-SEM-HELMET-TAKE-001`, `Open1` uma vez somente se ler como liberação | `WaitForGab: AW-SEM-HELMET-TAKE-001` protege decisão/origem antes de grant, alteração e `TAKE_HELMET` | persistir display alterado; nenhuma fanfarra/novo asset | `TAKE_HELMET`; abrir affordance de equipamento; recovery não duplica Armor 51 |
 | `BT-SEM-HELMET-EQUIP-001` | Map063 E13/recovery pós-menu | Thorin diante da estátua alterada; capacete correto visual/inventário em Thorin | lock ao reconhecer gate | `DL-SEM-HELMET-THORIN-FIT-001`  | reação curta causal, sem coro                                                | câmera estável, zoom 100%                                       | `CUE-SEM-HELMET-EQUIP-001` após confirmação real                         | `WaitForGab: AW-SEM-HELMET-FIT-001` protege a confirmação antes de Finish/transição `EQUIP_HELMET`    | menu fechado, fila vazia; estátua alterada persiste     | estado 80; Finish uma vez; wrong/inventory-only retorna controle sem avançar  |
@@ -267,7 +270,7 @@ Os três controladores abaixo substituem integralmente as seções 010 de mesmo 
 | `CS-SEM-DRAGOBUR-GATE-001`       |                          3 |        1 | SUPERSEDIDO 010: sem autoridade de implementação atual.                                         | n/a                                                                                               |
 | `CS-SEM-LOCKER-ENTRY-001`        |                          1 |        0 | EX: fala ambiental confirma a rota física correta.                                              | qualquer exposição que interrompa a busca curta                                                   |
 | `CS-SEM-LOCKER-GAG-001`          |                          1 |        1 | EX: ação física opcional protegida e retorno espacial.                                          | adicionar copy ou tornar a coreografia ilegível com a linha exata                                 |
-| `CS-SEM-HELMET-STATUE-001`       |                          3 |        3 | EX: landmark, alteração persistente e equipamento manual.                                       | descrição passar a substituir a leitura íntegra/alterada                                          |
+| `CS-SEM-HELMET-STATUE-001`       |                          4 |        3 | EX: landmark, filler pré-missão, alteração persistente e equipamento manual.                    | descrição passar a substituir a leitura íntegra/alterada                                          |
 | `CS-SEM-FIELD-AUTHORIZATION-001` |                          1 |        1 | SUPERSEDIDO 010: sem autoridade de implementação atual.                                         | n/a                                                                                               |
 | `CS-SEM-MATCH-ELISION-001`       |                          6 |        3 | EX por ADR-001: moldura oral concisa sobre campo reconhecível.                                  | mais fatos, simulação de partida, mais de 3 barriers ou perda do campo como contexto              |
 | `CS-SEM-STADIUM-FINALE-001`      |            11 em um branch |        7 | SUPERSEDIDO 010: sem autoridade de implementação atual.                                         | n/a                                                                                               |
@@ -293,7 +296,7 @@ Nenhuma cena acima foi validada humanamente. A aprovação EX/VN descreve a rota
 | Map061 interação     | nenhuma transferência/Gab empilhada                  | mesma porta deixa de bloquear fora do estado urgente |
 | chegada/Dragobur     | VN limpa bust/background; `City` sai; Gab de continuidade aponta o vestiário | V50 interrompido não avança; V60 não repete a VN |
 | gag                  | Animation 39/SE terminam; Thorin fora da área        | repeat sem impacto/recuo coletivo                    |
-| estátua/equipamento  | display alterado e Armor 51 reconciliados            | sem segundo grant; wrong/inventory-only não avança   |
+| estátua/equipamento  | display alterado e Armor 51 reconciliados            | V50 é filler sem mutação; sem segundo grant; V70 equipado também reconcilia em Dragobur |
 | campo/elipse         | Rheed/crianças/Animation 35/Gabs/ME removidos        | estado 110 não materializa de novo                   |
 | festa/intervenção    | cada VN limpa bust/background/choice; Martelos saem antes de guardas entrarem | V120 não repete presente, batalha, choice ou commit |
 | Map062 → Map044      | UI, Gabs, ME e stadium beds ausentes; Move1 uma vez  | uma transferência; destino já declarado              |

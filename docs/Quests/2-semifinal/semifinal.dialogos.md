@@ -2,7 +2,7 @@
 status: approved
 owner: Narrative Designer
 quest: A Semifinal
-contract_version: 1.1.0
+contract_version: 1.2.0
 language: pt-BR
 ---
 # A Semifinal — Contrato Canônico de Diálogos
@@ -36,6 +36,7 @@ Toda fala que avança a história principal ou a quest usa VN, mesmo quando nasc
 - 011 ADR-004 supersede a interpretação de que Dragobur queria o elmo da estátua: ele pede um capacete velho comum; Thorin pega obrigatoriamente o elmo histórico por engano deliberadamente improvisado.
 - 011 ADR-005 supersede Resist sem combate: Resist inicia batalha real de Thorin e Filena contra Mhordred; derrota normal e vitória excepcional convergem na mesma captura.
 - 011 ADR-006 identifica os rivais como Martelos de Bronze patrocinados por Casas Mineradoras e usa a hostilidade para revelar classe sem palestra de lore.
+- O feedback de Playtest de 2026-08-21 torna a estátua legível antes da ordem de Dragobur, mas somente como ambientação filler; V50 não concede item nem avança a quest. Em V70, falar com Dragobur usando Armor 51 equipada reconcilia `EQUIP_HELMET` como no mapa legado e devolve controle em V80; a interação seguinte entra na autorização por seu único label de retomada.
 
 ## Supersessão corretiva 011 — sequências canônicas
 
@@ -44,7 +45,7 @@ Esta seção é a autoridade atual para os trechos corrigidos. Os IDs 010 `DL-SE
 | Momento | Apresentação | Entrada canônica | Estado/retomada |
 | --- | --- | --- | --- |
 | Primeira conversa com Dragobur | VN `SEMIFINAL_DRAGOBUR_ARRIVAL` | `VN-SEM-DRAGOBUR-ARRIVAL-*` | conclui em V60; EX retoma com `GAB-SEM-CONTINUE-HELMET-011` |
-| Repetições no V60/V70 | Gab em EX | `GAB-SEM-DRAGOBUR-SEARCH-011`, `GAB-SEM-DRAGOBUR-EQUIP-011` | não avança estado |
+| Repetições no V60/V70 | Gab em EX | `GAB-SEM-DRAGOBUR-SEARCH-011`, `GAB-SEM-DRAGOBUR-EQUIP-011` | V60 não avança; V70 equipado reconcilia V80 e devolve controle |
 | Retorno equipado | VN `SEMIFINAL_DRAGOBUR_AUTHORIZATION` | `VN-SEM-DRAGOBUR-AUTH-*` | conclui em V90; EX retoma com `GAB-SEM-CONTINUE-FIELD-011` |
 | Celebração e rivais | VN `SEMIFINAL_CELEBRATION` | `VN-SEM-CELEBRATION-*` | termina depois do presente e antes da entrada dos guardas |
 | Ordem e escolha | VN `SEMIFINAL_GUARD_INTERVENTION` | `VN-SEM-GUARD-*`, `VN-SEM-CHOICE-*` | termina depois da resposta Gentle/Resist; consequência física volta a EX |
@@ -205,6 +206,15 @@ Depois dessas falas, a VN apresenta Gentle/Resist. Gentle usa `VN-SEM-CHOICE-GEN
 - Cópia exata: “Não. Essa porta já me explicou tudo. Com bastante impacto.”
 - Target Gab anchor: `MAP063_PLAYER`
 - Perfis fonte: `Thorin.md`
+
+### DL-SEM-STATUE-PREQUEST-FILLER-011
+- Speaker: `THORIN`
+- Beat: leitura opcional da estátua antes da missão do capacete
+- Intenção: manter o landmark visível e transformar o atraso de Thorin em humor ambiental sem antecipar a retirada
+- Fatos obrigatórios: a estátua representa Dragobur; Thorin está atrasado; nenhuma solução ou objetivo é concedido
+- Cópia exata: “A estátua do Dragobur parece estar me julgando por chegar atrasado. E ela nem sabe que o jogo já começou.”
+- Target Gab anchor: `MAP063_E13_STATUE`
+- Perfis fonte: `Thorin.md`, `Dragobur.md`
 
 ### DL-SEM-STATUE-THORIN-001
 - Speaker: `THORIN`
