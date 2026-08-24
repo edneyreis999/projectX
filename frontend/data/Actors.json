@@ -74,7 +74,7 @@
                 "value": 1
             }
         ],
-        "initialLevel": 30,
+        "initialLevel": 1,
         "maxLevel": 30,
         "name": "Thorin",
         "nickname": "",
@@ -97,7 +97,7 @@
         "faceIndex": 2,
         "faceName": "Portraits menores/Principal1",
         "traits": [],
-        "initialLevel": 30,
+        "initialLevel": 1,
         "maxLevel": 30,
         "name": "Filena",
         "nickname": "",
@@ -120,7 +120,7 @@
         "faceIndex": 3,
         "faceName": "Portraits menores/Principal1",
         "traits": [],
-        "initialLevel": 30,
+        "initialLevel": 1,
         "maxLevel": 30,
         "name": "Kilin",
         "nickname": "",

@@ -135,10 +135,11 @@ describe('page selection, gating and movement', () => {
     expect(subject.validateCanonicalProjection(mutated, CASES)).toContainEqual({ code: 'page_precedence_mismatch', anchor: 'Map062:E19', state: 90 });
   });
 
-  test('UT-015: Map044 E15/E16 are hidden below V120 and visible at V120', () => {
+  test('UT-015: Map044 E15/E16 are hidden below V120 and visible through V900', () => {
     for (const id of [15, 16]) {
       for (const state of CASES.canonicalStates.filter(value => value < 120)) expect(visible(selected(maps.Map044.events[id], state))).toBe(false);
       expect(visible(selected(maps.Map044.events[id], 120))).toBe(true);
+      expect(visible(selected(maps.Map044.events[id], 900))).toBe(true);
     }
   });
 
@@ -229,6 +230,20 @@ describe('page selection, gating and movement', () => {
     for (const page of pages) {
       expect(commands(page).some(command => [126, 127, 128, 122].includes(command.code) || command.parameters?.[0] === 'Coreto_QuestCore')).toBe(false);
       for (const command of pluginCommands(page, 'VisuMZ_4_GabWindow', 'GabTextOnly')) expect(command.parameters[3]['Override:struct']).toContain('BypassAntiRepeat');
+    }
+  });
+
+  test('UT-025A: Map044 guard interactions follow the EX Gab replacement contract', () => {
+    for (const id of [15, 16]) {
+      for (const state of [120, 900]) {
+        const page = selected(maps.Map044.events[id], state);
+        const [command] = pluginCommands(page, 'VisuMZ_4_GabWindow', 'GabTextOnly');
+        const override = JSON.parse(command.parameters[3]['Override:struct']);
+        expect(page.trigger).toBe(0);
+        expect(command.parameters[3]['ForceGab:eval']).toBe('true');
+        expect(override['BypassAntiRepeat:eval']).toBe('true');
+        expect(pluginCommands(page, 'VisuMZ_4_GabWindow', 'WaitForGab')).toHaveLength(0);
+      }
     }
   });
 
@@ -431,7 +446,15 @@ describe('integrated canonical projections', () => {
   test('IT-007: Map044 preserves one ARRIVE_HOME and Gab-only return cleanup', () => {
     const arriveHome = maps.Map044.events.flatMap(event => event?.pages ?? []).flatMap(page => pluginCommands(page, 'Coreto_QuestCore', 'QuestTransition')).filter(command => command.parameters[3].transitionId === 'ARRIVE_HOME');
     expect(arriveHome).toHaveLength(1);
-    for (const id of [15, 16]) expect(commands(selected(maps.Map044.events[id], 120), 101)).toHaveLength(0);
+    const arrival = selected(maps.Map044.events[10], 120);
+    const transitionIndex = arrival.list.findIndex(command => command.code === 357 && command.parameters?.[3]?.transitionId === 'ARRIVE_HOME');
+    const finishIndex = arrival.list.findIndex(command => command.code === 357 && command.parameters?.[0] === 'Coreto_Cutscene' && command.parameters?.[1] === 'FinishCutscene');
+    expect(commands(arrival, 222)).toHaveLength(1);
+    expect(finishIndex).toBeGreaterThan(transitionIndex);
+    for (const id of [15, 16]) {
+      expect(commands(selected(maps.Map044.events[id], 120), 101)).toHaveLength(0);
+      expect(visible(selected(maps.Map044.events[id], 900))).toBe(true);
+    }
   });
 
   test('IT-008: locker projection has present assets, one native grant, and an Armor 51 gate', () => {
@@ -447,6 +470,7 @@ describe('automated journeys', () => {
     for (const id of [15, 16]) {
       expect(visible(selected(maps.Map044.events[id], 110))).toBe(false);
       expect(pluginCommands(selected(maps.Map044.events[id], 120), 'VisuMZ_4_GabWindow', 'GabTextOnly')).toHaveLength(1);
+      expect(visible(selected(maps.Map044.events[id], 900))).toBe(true);
       expect(selected(maps.Map044.events[id], 900, (kind, target) => kind === 'variable' && target === 32)).toMatchObject({ priorityType: 0, through: true });
     }
   });
@@ -470,17 +494,35 @@ test('Map062 E6 is materialized as the sole Task 06 finale controller', () => {
   const event = maps.Map062.events[6];
   const list = event.pages[0].list;
   expect(hash(event)).not.toBe(CASES.protectedEvent.sha256);
-  expect(event.note).toBe('SEMIFINAL:011:FINALE_CONTROLLER:E6:DEADLOCK_SAFE_GUARDS');
+  expect(event.note).toBe('SEMIFINAL:011:FINALE_CONTROLLER:E6:RESTORE_GUARDS_ESCORT_FACING_V3');
   expect(event.pages[0]).toMatchObject({ trigger: 3, conditions: { variableId: 29, variableValue: 110 } });
   expect(list.filter(command => command.code === 301)).toHaveLength(1);
   expect(list.filter(command => command.code === 357 && command.parameters?.[3]?.transitionId === 'COMMIT_ESCORT')).toHaveLength(1);
   const guardedRoutes = list.filter(command => command.code === 205 && [3, 4, 5, 7, 8, 14].includes(command.parameters[0]));
-  expect(guardedRoutes.every(command => command.parameters[1].skippable && command.parameters[1].wait)).toBe(true);
+  expect(guardedRoutes.every(command => command.parameters[1].skippable)).toBe(true);
+  expect(guardedRoutes.some(command => command.parameters[1].wait === false)).toBe(true);
   expect(guardedRoutes.every(command => command.parameters[1].list.some(route => route.code === 37) && command.parameters[1].list.some(route => route.code === 38))).toBe(true);
   expect(list.filter(command => command.code === 203 && [5, 14].includes(command.parameters[0])).map(command => command.parameters)).toEqual([
-    [5, 0, 11, 16, 8],
-    [14, 0, 12, 16, 8],
+    [5, 0, 0, 7, 6],
+    [14, 0, 0, 8, 6],
   ]);
+  const focusTargets = list.filter(command => command.code === 357 && command.parameters?.[0] === 'VisuMZ_4_MapCameraZoom' && command.parameters?.[1] === 'CameraFocusTargetEvent').map(command => command.parameters[3]['EventID:eval']);
+  expect(focusTargets).toEqual(expect.arrayContaining(['7', '5']));
+  const escortPlayerMove = list.find(command => command.code === 205 && command.parameters[0] === -1 && JSON.stringify(command).includes('Move to: 8,7'));
+  expect(escortPlayerMove).toBeDefined();
+  expect(escortPlayerMove.parameters[1].list.filter(command => [16, 17, 18, 19].includes(command.code)).map(command => command.code)).toEqual([17]);
+  const restoreIndex = list.findIndex(command => command.code === 108 && command.parameters?.[0] === 'SEMIFINAL:RESTORE_GUARDS_AFTER_VN_AND_PARTY_REFRESH');
+  const escortIndex = list.findIndex(command => command.code === 108 && command.parameters?.[0] === 'SEMIFINAL:BT-SEM-011-ESCORT');
+  const lastPartyRefreshIndex = list.map((command, index) => ({ command, index })).filter(({ command }) => command.code === 129).at(-1).index;
+  expect(restoreIndex).toBeGreaterThan(lastPartyRefreshIndex);
+  expect(restoreIndex).toBeLessThan(escortIndex);
+  const restoreScripts = list.slice(restoreIndex, escortIndex).filter(command => command.code === 355).map(command => command.parameters[0]);
+  expect(restoreScripts).toHaveLength(2);
+  expect(restoreScripts).toEqual(expect.arrayContaining([
+    expect.stringContaining('$gameMap.event(5).setImage("Principal/$Kilin", 0)'),
+    expect.stringContaining('$gameMap.event(14).setImage("Principal/$Mhordred", 0)'),
+  ]));
+  expect(list.findIndex(command => command.code === 221)).toBeLessThan(list.findIndex(command => command.code === 357 && command.parameters?.[3]?.transitionId === 'COMMIT_ESCORT'));
   expect(selected(maps.Map062.events[5], 110)).toMatchObject({ image: { characterName: '' }, priorityType: 0, through: true });
   expect(selected(maps.Map062.events[14], 110)).toMatchObject({ image: { characterName: '' }, priorityType: 0, through: true });
 });

@@ -193,6 +193,8 @@ describe('UT-036–UT-038 — approved narrative facts', () => {
     ['Thordan', value => value.replaceAll('General Thordan', 'General incorreto')],
     ['Mhordred', value => value.replaceAll('VN-SEM-GUARD-MHORDRED-011', 'VN-SEM-GUARD-REMOVED-011')],
     ['Filena', value => value.replaceAll('VN-SEM-GUARD-FILENA-MOTIVE-011', 'VN-SEM-GUARD-FILENA-REMOVED-011')],
+    ['rival filler', value => value.replaceAll('GAB-SEM-RIVAL-GUARD-FILLER-011', 'GAB-SEM-RIVAL-GUARD-REMOVED-011')],
+    ['Mhordred filler', value => value.replaceAll('GAB-SEM-MHORDRED-RIVAL-FILLER-011', 'GAB-SEM-MHORDRED-RIVAL-REMOVED-011')],
   ])('rejects canonical cast mismatch %s', (_label, mutate) => {
     const source = valid();
     expect(validateContracts({ ...source, dialogue: mutate(source.dialogue) })).toMatchObject({

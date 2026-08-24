@@ -334,6 +334,7 @@ Resolver masking primeiro por rarefacao, envelope, exclusao e ducking; nao por e
 - Evento / precondicao: Gentle concluiu custodia ou Resist concluiu `CUE-SEM-RESIST-BATTLE-RESULT-011`; destino Casa Forja-Prata foi dito, Gabs/cleanup necessarios concluiram e transferencia unica foi autorizada.
 - Canal / asset: SE `Move1.ogg`; beds do estadio em fade de saida.
 - Start / stop / fade: completar fade de People1; tocar Move1 uma vez junto da transferencia, sem marcha ou crescendo heroico.
+- Sincronia visual corretiva: os três passos da formação acontecem antes do fade out; `Move1` permanece reservado ao handoff e não substitui o peso visual da caminhada.
 - Prioridade / concorrencia: P2; nunca antecede a fala de destino nem esconde despedida.
 - Repeticao / interrupcao / persistencia: exactly-once no handoff; recovery/reavaliacao nao toca novamente.
 - Cleanup: BGS do estadio deve estar ausente em Map044; nenhum ME/SE truncado ou loop carregado.

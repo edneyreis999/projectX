@@ -1344,7 +1344,7 @@
     {
         "id": 6,
         "name": "SEMIFINAL — finale EX/VN, batalha e escolta",
-        "note": "SEMIFINAL:011:FINALE_CONTROLLER:E6:DEADLOCK_SAFE_GUARDS",
+        "note": "SEMIFINAL:011:FINALE_CONTROLLER:E6:RESTORE_GUARDS_ESCORT_FACING_V3",
         "pages": [
             {
                 "conditions": {
@@ -1394,9 +1394,9 @@
                         "parameters": [
                             5,
                             0,
-                            11,
-                            16,
-                            8
+                            0,
+                            7,
+                            6
                         ]
                     },
                     {
@@ -1405,9 +1405,9 @@
                         "parameters": [
                             14,
                             0,
-                            12,
-                            16,
-                            8
+                            0,
+                            8,
+                            6
                         ]
                     },
                     {
@@ -1610,6 +1610,131 @@
                         ]
                     },
                     {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_MapCameraZoom",
+                            "CameraFocusTargetEvent",
+                            "Camera: Focus Target Event",
+                            {
+                                "EventID:eval": "7",
+                                "Duration:num": "30",
+                                "EasingType:str": "InOutSine"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Event ID = 7"
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Duration = 30"
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Easing Type = InOutSine"
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_MapCameraZoom",
+                            "CameraFocusWait",
+                            "Camera: Wait for Focus",
+                            {}
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_MapCameraZoom",
+                            "ZoomWait",
+                            "Zoom: Wait for Zoom",
+                            {}
+                        ]
+                    },
+                    {
+                        "code": 205,
+                        "indent": 0,
+                        "parameters": [
+                            7,
+                            {
+                                "list": [
+                                    {
+                                        "code": 37,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 45,
+                                        "parameters": [
+                                            "Move to: 2,6"
+                                        ]
+                                    },
+                                    {
+                                        "code": 38,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 19,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 0
+                                    }
+                                ],
+                                "repeat": false,
+                                "skippable": true,
+                                "wait": false
+                            }
+                        ]
+                    },
+                    {
+                        "code": 205,
+                        "indent": 0,
+                        "parameters": [
+                            8,
+                            {
+                                "list": [
+                                    {
+                                        "code": 37,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 45,
+                                        "parameters": [
+                                            "Move to: 2,8"
+                                        ]
+                                    },
+                                    {
+                                        "code": 38,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 19,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 0
+                                    }
+                                ],
+                                "repeat": false,
+                                "skippable": true,
+                                "wait": true
+                            }
+                        ]
+                    },
+                    {
                         "code": 355,
                         "indent": 0,
                         "parameters": [
@@ -1644,7 +1769,49 @@
                                     {
                                         "code": 45,
                                         "parameters": [
-                                            "Move to: 11,10"
+                                            "Move to: 1,7"
+                                        ]
+                                    },
+                                    {
+                                        "code": 38,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 19,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 0
+                                    }
+                                ],
+                                "repeat": false,
+                                "skippable": true,
+                                "wait": false
+                            }
+                        ]
+                    },
+                    {
+                        "code": 205,
+                        "indent": 0,
+                        "parameters": [
+                            14,
+                            {
+                                "list": [
+                                    {
+                                        "code": 37,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 41,
+                                        "parameters": [
+                                            "Principal/$Mhordred",
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "code": 45,
+                                        "parameters": [
+                                            "Move to: 1,8"
                                         ]
                                     },
                                     {
@@ -1666,6 +1833,212 @@
                         ]
                     },
                     {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_GabWindow",
+                            "GabTextOnly",
+                            "Gab: Text Only",
+                            {
+                                "Text:json": "\"Se vieram assistir à semifinal, chegaram tarde.\"",
+                                "ForceGab:eval": "false",
+                                "Override:struct": "{\"EventID:num\":\"7\",\"BypassAntiRepeat:eval\":\"false\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_GabWindow",
+                            "GabTextOnly",
+                            "Gab: Text Only",
+                            {
+                                "Text:json": "\"Não viemos pelo jogo.\"",
+                                "ForceGab:eval": "false",
+                                "Override:struct": "{\"EventID:num\":\"14\",\"BypassAntiRepeat:eval\":\"false\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_GabWindow",
+                            "WaitForGab",
+                            "System: Wait For Gab Completion",
+                            {}
+                        ]
+                    },
+                    {
+                        "code": 205,
+                        "indent": 0,
+                        "parameters": [
+                            7,
+                            {
+                                "list": [
+                                    {
+                                        "code": 37,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 45,
+                                        "parameters": [
+                                            "Move to: 0,6"
+                                        ]
+                                    },
+                                    {
+                                        "code": 39,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 38,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 19,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 0
+                                    }
+                                ],
+                                "repeat": false,
+                                "skippable": true,
+                                "wait": false
+                            }
+                        ]
+                    },
+                    {
+                        "code": 205,
+                        "indent": 0,
+                        "parameters": [
+                            8,
+                            {
+                                "list": [
+                                    {
+                                        "code": 37,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 45,
+                                        "parameters": [
+                                            "Move to: 0,8"
+                                        ]
+                                    },
+                                    {
+                                        "code": 39,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 38,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 19,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 0
+                                    }
+                                ],
+                                "repeat": false,
+                                "skippable": true,
+                                "wait": true
+                            }
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_MapCameraZoom",
+                            "CameraFocusTargetEvent",
+                            "Camera: Focus Target Event",
+                            {
+                                "EventID:eval": "5",
+                                "Duration:num": "30",
+                                "EasingType:str": "InOutSine"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Event ID = 5"
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Duration = 30"
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Easing Type = InOutSine"
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_MapCameraZoom",
+                            "CameraFocusWait",
+                            "Camera: Wait for Focus",
+                            {}
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_MapCameraZoom",
+                            "ZoomWait",
+                            "Zoom: Wait for Zoom",
+                            {}
+                        ]
+                    },
+                    {
+                        "code": 205,
+                        "indent": 0,
+                        "parameters": [
+                            5,
+                            {
+                                "list": [
+                                    {
+                                        "code": 37,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 45,
+                                        "parameters": [
+                                            "Move to: 11,10"
+                                        ]
+                                    },
+                                    {
+                                        "code": 38,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 19,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 0
+                                    }
+                                ],
+                                "repeat": false,
+                                "skippable": true,
+                                "wait": false
+                            }
+                        ]
+                    },
+                    {
                         "code": 205,
                         "indent": 0,
                         "parameters": [
@@ -1675,13 +2048,6 @@
                                     {
                                         "code": 37,
                                         "parameters": []
-                                    },
-                                    {
-                                        "code": 41,
-                                        "parameters": [
-                                            "Principal/$Mhordred",
-                                            0
-                                        ]
                                     },
                                     {
                                         "code": 45,
@@ -1894,6 +2260,27 @@
                         "code": 108,
                         "indent": 0,
                         "parameters": [
+                            "SEMIFINAL:RESTORE_GUARDS_AFTER_VN_AND_PARTY_REFRESH"
+                        ]
+                    },
+                    {
+                        "code": 355,
+                        "indent": 0,
+                        "parameters": [
+                            "$gameMap.event(5).setImage(\"Principal/$Kilin\", 0); $gameMap.event(5).setPriorityType(1); $gameMap.event(5).setThrough(false);"
+                        ]
+                    },
+                    {
+                        "code": 355,
+                        "indent": 0,
+                        "parameters": [
+                            "$gameMap.event(14).setImage(\"Principal/$Mhordred\", 0); $gameMap.event(14).setPriorityType(1); $gameMap.event(14).setThrough(false);"
+                        ]
+                    },
+                    {
+                        "code": 108,
+                        "indent": 0,
+                        "parameters": [
                             "SEMIFINAL:BT-SEM-011-ESCORT"
                         ]
                     },
@@ -1934,6 +2321,233 @@
                             "System: Wait For Gab Completion",
                             {}
                         ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_MapCameraZoom",
+                            "CameraFocusPlayer",
+                            "Camera: Focus Player",
+                            {
+                                "Duration:num": "20",
+                                "EasingType:str": "InOutSine"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Duration = 20"
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Easing Type = InOutSine"
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_MapCameraZoom",
+                            "CameraFocusWait",
+                            "Camera: Wait for Focus",
+                            {}
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_MapCameraZoom",
+                            "ZoomWait",
+                            "Zoom: Wait for Zoom",
+                            {}
+                        ]
+                    },
+                    {
+                        "code": 205,
+                        "indent": 0,
+                        "parameters": [
+                            5,
+                            {
+                                "list": [
+                                    {
+                                        "code": 37,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 45,
+                                        "parameters": [
+                                            "Move to: 10,7"
+                                        ]
+                                    },
+                                    {
+                                        "code": 38,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 19,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 0
+                                    }
+                                ],
+                                "repeat": false,
+                                "skippable": true,
+                                "wait": false
+                            }
+                        ]
+                    },
+                    {
+                        "code": 205,
+                        "indent": 0,
+                        "parameters": [
+                            14,
+                            {
+                                "list": [
+                                    {
+                                        "code": 37,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 45,
+                                        "parameters": [
+                                            "Move to: 12,7"
+                                        ]
+                                    },
+                                    {
+                                        "code": 38,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 19,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 0
+                                    }
+                                ],
+                                "repeat": false,
+                                "skippable": true,
+                                "wait": true
+                            }
+                        ]
+                    },
+                    {
+                        "code": 205,
+                        "indent": 0,
+                        "parameters": [
+                            5,
+                            {
+                                "list": [
+                                    {
+                                        "code": 37,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 45,
+                                        "parameters": [
+                                            "Move to: 7,7"
+                                        ]
+                                    },
+                                    {
+                                        "code": 38,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 17,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 0
+                                    }
+                                ],
+                                "repeat": false,
+                                "skippable": true,
+                                "wait": false
+                            }
+                        ]
+                    },
+                    {
+                        "code": 205,
+                        "indent": 0,
+                        "parameters": [
+                            -1,
+                            {
+                                "list": [
+                                    {
+                                        "code": 37,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 45,
+                                        "parameters": [
+                                            "Move to: 8,7"
+                                        ]
+                                    },
+                                    {
+                                        "code": 38,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 17,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 0
+                                    }
+                                ],
+                                "repeat": false,
+                                "skippable": true,
+                                "wait": false
+                            }
+                        ]
+                    },
+                    {
+                        "code": 205,
+                        "indent": 0,
+                        "parameters": [
+                            14,
+                            {
+                                "list": [
+                                    {
+                                        "code": 37,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 45,
+                                        "parameters": [
+                                            "Move to: 9,7"
+                                        ]
+                                    },
+                                    {
+                                        "code": 38,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 17,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 0
+                                    }
+                                ],
+                                "repeat": false,
+                                "skippable": true,
+                                "wait": true
+                            }
+                        ]
+                    },
+                    {
+                        "code": 221,
+                        "indent": 0,
+                        "parameters": []
                     },
                     {
                         "code": 357,

@@ -186,7 +186,7 @@ Mapas: [062] `EX_Estadio` → `VN_Semifinal` → [062] `EX_Estadio` → `VN_Semi
 | --- | --- | --- | --- |
 | **8-A** | **Saída e posições** | O time sai do campo em EX; jogadores param o movimento aleatório e Machados, Martelos, Dragobur, Filena e Thorin chegam às posições de festa. | 🎬 EX |
 | **8-B** | **VN de celebração** | `SEMIFINAL_CELEBRATION` reúne alegria do time, provocações classistas dos Martelos de Bronze, respostas dos Machados/Thorin, felicidade de Dragobur e Filena e presente permanente do elmo. | 🎬 VN |
-| **8-C** | **Troca espacial** | A VN limpa; os Martelos saem em EX; somente depois Killin e Mhordred entram e se posicionam. | 🎬 EX |
+| **8-C** | **Troca espacial** | A VN limpa; a câmera segue os Martelos até a saída oeste. Killin e Mhordred surgem nessa faixa, cruzam uma provocação filler, deixam os rivais concluir a saída e então são acompanhados pela câmera até a posição da intervenção. | 🎬 EX |
 | **8-D** | **VN dos guardas** | `SEMIFINAL_GUARD_INTERVENTION` traz a patente de Killin e a ordem de Thordan; Thorin, Mhordred, Dragobur e Filena respondem; Filena rejeita a coerção sobre o companheiro e o coletivo. | 🎬 VN |
 | **8-E** | **Gentle ou Resist** | A escolha e a reação imediata encerram a VN sem flag persistente. Gentle volta à custódia EX; Resist volta à EX para batalha real. | 🎮 |
 | **8-F** | **Batalha Resist** | Thorin e Filena enfrentam somente Mhordred; derrota mecânica é o resultado normal, vitória excepcional também reconverge, e não há Game Over. | ⚔️ |
@@ -199,8 +199,8 @@ Mapas: [062] `EX_Estadio` → [044] `EX_Distrito Residencial Nobre`
 | ID | Título | Premissa resumida | Tipo |
 | --- | --- | --- | --- |
 | **9-A** | **Destino declarado** | A formação da Guarda estabelece a Casa Forja-Prata como destino; Filena se despede e permanece no estádio. | 🎬 |
-| **9-B** | **Transferência única** | Killin e Mhordred levam Thorin carregado uma única vez ao exterior da casa; nenhum outro membro do time acompanha. | 🎬 |
-| **9-C** | **Chegada observável** | “A Semifinal” só termina quando Thorin chega do lado de fora; então `Fim de Jogo` começa. | 🎬 |
+| **9-B** | **Transferência única** | Thorin forma-se entre Killin e Mhordred, os três andam três passos rumo à saída E16 e o fade antecede a transferência única; nenhum outro membro do time acompanha. | 🎬 |
+| **9-C** | **Chegada observável** | O exterior faz fade in com Killin e Mhordred visíveis nas posições autoradas. “A Semifinal” só termina depois da fala de chegada; então `Fim de Jogo` começa e os guardas permanecem até o cleanup externo. | 🎬 |
 | **9-D** | **Controle exterior** | Thorin recupera controle fora da casa; a entrada e o confronto com Thordan pertencem à próxima quest. | 🎮 |
 
 ## Decisão expressiva do jogador

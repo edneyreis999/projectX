@@ -14,6 +14,7 @@ const armor = readJson('frontend/data/Armors.json');
 const dialogue = fs.readFileSync(path.join(ROOT, 'docs/Quests/2-semifinal/semifinal.dialogos.md'), 'utf8');
 const cutscene = fs.readFileSync(path.join(ROOT, 'docs/Quests/2-semifinal/semifinal.cutscene.md'), 'utf8');
 const technicalArt = fs.readFileSync(path.join(ROOT, 'docs/Quests/2-semifinal/semifinal.technical-art.md'), 'utf8');
+const pluginsSource = fs.readFileSync(path.join(ROOT, 'frontend/js/plugins.js'), 'utf8');
 
 const e6 = map062.events[6];
 const finale = e6.pages[0].list;
@@ -90,13 +91,21 @@ describe('UT-043–UT-048 — battle and shared convergence', () => {
 
   test('UT-046: cleanup restores exactly max HP for Actors 3 and 4 before removing Actor 4', () => {
     const scripts = sharedTail.filter(command => command.code === 355).map(command => command.parameters[0]);
-    expect(scripts).toEqual([
+    const hpScripts = scripts.filter(source => source.startsWith('$gameActors.actor('));
+    const guardPresentationScripts = scripts.filter(source => source.startsWith('$gameMap.event('));
+    expect(hpScripts).toEqual([
       '$gameActors.actor(3).setHp($gameActors.actor(3).mhp);',
       '$gameActors.actor(4).setHp($gameActors.actor(4).mhp);',
     ]);
+    expect(guardPresentationScripts).toEqual(expect.arrayContaining([
+      expect.stringContaining('$gameMap.event(5).setImage("Principal/$Kilin", 0)'),
+      expect.stringContaining('$gameMap.event(14).setImage("Principal/$Mhordred", 0)'),
+    ]));
+    expect(guardPresentationScripts).toHaveLength(2);
     expect(JSON.stringify(sharedTail)).not.toMatch(/setMp|setTp|removeState|clearStates|changeEquip|gainItem/i);
     const removalIndex = sharedTail.findIndex(command => command.code === 129 && command.parameters?.[0] === 4 && command.parameters?.[1] === 1);
     expect(removalIndex).toBeGreaterThan(sharedTail.findIndex(command => command.code === 355 && command.parameters?.[0].includes('actor(4)')));
+    expect(removalIndex).toBeLessThan(sharedTail.findIndex(command => command.code === 355 && command.parameters?.[0].startsWith('$gameMap.event(')));
   });
 
   test('UT-047/UT-048: Mhordred grants no reward and escort terminal occurs exactly once', () => {
@@ -104,8 +113,19 @@ describe('UT-043–UT-048 — battle and shared convergence', () => {
     expect(mhordred).toMatchObject({ id: 91, name: 'Mhordred', battlerName: 'Mhordred', exp: 0, gold: 0 });
     expect(mhordred.dropItems.every(drop => drop.kind === 0 && drop.dataId === 0)).toBe(true);
     expect(mhordred.note).not.toMatch(/reward|state reward/i);
+    expect(mhordred.note).not.toMatch(/<TP Mode:/i);
     expect(pluginCommands('Coreto_QuestCore', 'QuestTransition').map(command => command.parameters[3].transitionId)).toEqual(['COMMIT_ESCORT']);
     expect(finale.filter(command => command.code === 201 && JSON.stringify(command.parameters) === JSON.stringify([0, 44, 5, 23, 8, 0]))).toHaveLength(1);
+  });
+
+  test('UT-075: every explicit enemy TP Mode exists in the active Enhanced TP registry', () => {
+    const registry = JSON.parse(pluginsSource.slice(pluginsSource.indexOf('['), pluginsSource.lastIndexOf(']') + 1));
+    const enhancedTp = registry.find(entry => entry.name === 'VisuMZ_2_EnhancedTpSystem' && entry.status === true);
+    const configuredModes = new Set(JSON.parse(enhancedTp.parameters['TpMode:arraystruct']).map(JSON.parse).map(mode => mode['Name:str'].toUpperCase()));
+    const explicitModes = enemies.filter(Boolean).flatMap(enemy => [...String(enemy.note ?? '').matchAll(/<(?:FORCE\s+)?TP\s+MODE:\s*([^>]+)>/gi)].map(match => ({ enemyId: enemy.id, mode: match[1].trim() })));
+    expect(explicitModes.filter(entry => !configuredModes.has(entry.mode.toUpperCase()))).toEqual([]);
+    expect(configuredModes).toContain('ENEMY');
+    expect(configuredModes).not.toContain('BOSS');
   });
 });
 
@@ -163,7 +183,8 @@ describe('IT-010–IT-018 — integrated finale journeys', () => {
     const branchCode = result === 'Win' ? 601 : 603;
     const branchIndex = finale.findIndex(command => command.code === branchCode);
     expect(finale[branchIndex + 1]).toEqual({ code: 119, indent: 2, parameters: ['SEMIFINAL_BATTLE_CLEANUP'] });
-    expect(sharedTail.filter(command => command.code === 355)).toHaveLength(2);
+    expect(sharedTail.filter(command => command.code === 355 && command.parameters?.[0].startsWith('$gameActors.actor('))).toHaveLength(2);
+    expect(sharedTail.filter(command => command.code === 355 && command.parameters?.[0].startsWith('$gameMap.event('))).toHaveLength(2);
     expect(sharedTail.filter(command => command.code === 129 && command.parameters?.[1] === 1)).toHaveLength(1);
     expect(sharedTail.filter(command => command.code === 201)).toHaveLength(1);
   });

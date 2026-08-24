@@ -2,7 +2,7 @@
 status: approved
 owner: Narrative Designer
 quest: A Semifinal
-contract_version: 1.2.0
+contract_version: 1.3.0
 language: pt-BR
 ---
 # A Semifinal — Contrato Canônico de Diálogos
@@ -38,6 +38,7 @@ Toda fala que avança a história principal ou a quest usa VN, mesmo quando nasc
 - 011 ADR-006 identifica os rivais como Martelos de Bronze patrocinados por Casas Mineradoras e usa a hostilidade para revelar classe sem palestra de lore.
 - O feedback de Playtest de 2026-08-21 torna a estátua legível antes da ordem de Dragobur, mas somente como ambientação filler; V50 não concede item nem avança a quest.
 - O feedback de Playtest de 2026-08-24 substitui a reconciliação por nova interação: em V70, equipar Armor 51 em Thorin conclui o objetivo automaticamente no primeiro frame do mapa após fechar o menu. Falar com a estátua ou com Dragobur permanece apenas como fallback de recuperação.
+- O feedback de Playtest de 2026-08-24 autoriza uma troca filler física antes da intervenção principal: ela nasce do futebol rúnico como espaço popular e barulhento encontrando a ordem militar, sem antecipar patente, mandato de Thordan ou escolha Gentle/Resist.
 
 ## Supersessão corretiva 011 — sequências canônicas
 
@@ -109,6 +110,13 @@ Fatos congelados: Thorin trata a escolha como improviso apressado e se faz de de
 Fatos congelados: os Martelos de Bronze têm patrocínio de Casas Mineradoras; os Machados são um time de bairros trabalhadores e poucos recursos; o time não rejeita Thorin por sua origem; a propriedade narrativa do Armor 51 muda sem novo grant.
 
 ### VN-SEM-GUARD-INTERVENTION-011
+
+Antes da VN, durante a saída EX dos Martelos, usar somente estas Gabs filler:
+
+1. `GAB-SEM-RIVAL-GUARD-FILLER-011` — Martelo de Bronze: “Se vieram assistir à semifinal, chegaram tarde.”
+2. `GAB-SEM-MHORDRED-RIVAL-FILLER-011` — Mhordred: “Não viemos pelo jogo.”
+
+Fatos congelados: a troca é provocação circunstancial, não conversa de progressão; os rivais continuam saindo e os guardas não revelam a ordem antes da VN.
 
 1. `VN-SEM-GUARD-DRAGOBUR-011` — Dragobur: “A comemoração ainda não acabou. Quem chamou a Guarda de Ferro?”
 2. `VN-SEM-GUARD-KILLIN-ORDER-011` — Killin: “Thorin Forja-Prata. Sou Killin, Capitã da Guarda de Ferro. Por ordem direta do General Thordan, você volta para casa conosco. Agora.”

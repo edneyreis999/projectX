@@ -2,7 +2,7 @@
 status: approved
 owner: Scene Presentation Designer
 quest: A Semifinal
-contract_version: 1.5.0
+contract_version: 1.6.0
 language: pt-BR
 human_presentation_validation: pending
 ---
@@ -50,6 +50,7 @@ ciclo. Avançar uma Gab pelo controle previsto não devolve movimento.
 - A continuação do Playtest de 2026-08-21 torna Map063 E13 visível em V50 com uma única Gab filler sem mutação e bloqueia as saídas E15–E17 de Map062 em V60–V110.
 - O Playtest de 2026-08-24 substitui a reconciliação dependente de interação: Map063 E13 e Map062 E20 observam V70 e concluem `EQUIP_HELMET` automaticamente no primeiro frame do mapa após o menu confirmar Armor 51 em Thorin. A revisão do legado preserva a separação entre detecção e apresentação: V70 apenas arma um latch local e transiciona; uma página V80 Autorun estável possui o lock e todos os waits. O beat usa falas menores, dois passos de recuo, zoom 200%, Animation 91 `Vento 1`, shake curto e cleanup em 100%.
 - O Playtest de 2026-08-24 confirma um deadlock depois da elipse de Rheed: rotas absolutas aguardadas e não puláveis podiam bloquear E6 antes da festa. O staging corretivo usa `Through ON → Move to → Through OFF`, espera encerrável, posiciona Killin/Mhordred ocultos em `(11,16)/(12,16)` e só revela os guardas durante a entrada aprovada.
+- O Playtest de 2026-08-24 substitui a entrada seca pela troca espacial na saída oeste: a câmera acompanha os Martelos até E15–E17, Killin/Mhordred surgem na mesma faixa, uma interação filler curta marca o choque entre futebol popular e autoridade, e a câmera então acompanha os guardas até `(11,10)/(12,10)`. A escolta forma Thorin entre os dois guardas, anda três tiles rumo a E16 e faz fade antes de `COMMIT_ESCORT`; em Map044 os guardas permanecem visíveis em V900 até o cleanup externo V32.
 - As pendências antigas sobre posse do elmo, escolha e política de controle foram resolvidas pelos ADRs; a direção de arte permanece autoridade de composição somente onde não conflita.
 
 ## Regras globais do score
@@ -105,13 +106,13 @@ Os três controladores abaixo substituem integralmente as seções 010 de mesmo 
 
 | Fase | Apresentação | Staging e conteúdo | Cleanup/terminal |
 | --- | --- | --- | --- |
-| `BT-SEM-011-FIELD-EXIT` | EX | Saída do campo; jogadores/reservas param o movimento aleatório e ocupam posições determinísticas; Machados, Martelos, Dragobur, Filena e Thorin tornam-se legíveis. Killin e Mhordred ficam ocultos na zona sul. | rotas usam passabilidade temporária, são aguardadas e encerráveis; nenhuma Gab/VN concorrente |
+| `BT-SEM-011-FIELD-EXIT` | EX | Saída do campo; jogadores/reservas param o movimento aleatório e ocupam posições determinísticas; Machados, Martelos, Dragobur, Filena e Thorin tornam-se legíveis. Killin e Mhordred ficam ocultos na saída oeste. | rotas usam passabilidade temporária, são aguardadas e encerráveis; nenhuma Gab/VN concorrente |
 | `BT-SEM-011-CELEBRATION-VN` | VN `SEMIFINAL_CELEBRATION` | Alegria do time, hostilidade de classe dos Martelos de Bronze, respostas de Thorin/time, felicidade de Dragobur e Filena, e presente do elmo. | limpar bustos/background; presente termina antes de qualquer guarda aparecer |
-| `BT-SEM-011-RIVALS-OUT-GUARDS-IN` | EX | Martelos saem; somente depois Killin e Mhordred são revelados e entram de `(11,16)/(12,16)` até `(11,10)/(12,10)`; time reorienta quando a origem fica legível. | rotas usam passabilidade temporária, são aguardadas e encerráveis; `People1` pode rarefar somente após reposicionamento |
+| `BT-SEM-011-RIVALS-OUT-GUARDS-IN` | EX | A câmera segue E7/E8 até a faixa E15–E17. Killin/Mhordred aparecem em `(0,7)/(0,8)`, avançam um tile e cruzam duas Gabs filler com os Martelos; os rivais concluem a saída e ficam ocultos. A câmera passa a Killin e acompanha os guardas até `(11,10)/(12,10)`. | rotas usam passabilidade temporária, concorrência com uma rota-barreira por grupo e espera encerrável; `People1` pode rarefar somente após reconhecimento visual |
 | `BT-SEM-011-GUARD-VN` | VN `SEMIFINAL_GUARD_INTERVENTION` | Dragobur reage; Killin declara patente e ordem de Thordan; Thorin responde; Mhordred sustenta; Filena justifica por que resistirá; Gentle/Resist e reação imediata encerram a VN. | limpar choice, bustos/background; devolver branch transitório ao controlador E6 |
 | `BT-SEM-011-GENTLE` | EX | Killin organiza custódia; nenhuma batalha. | chama convergência comum |
 | `BT-SEM-011-RESIST` | EX + Battle | Filena entra temporariamente na party; Thorin+Filena enfrentam apenas Mhordred; escape desativado e derrota permitida; jogo normal oferece cerca de 2–3 ações significativas por ator antes da derrota. | loss e win excepcional chamam o mesmo cleanup; restaurar somente HP máximo de Thorin/Filena e remover Filena da party |
-| `BT-SEM-011-ESCORT` | EX | Filena permanece com os Machados; Killin lidera, Thorin é carregado, Mhordred sustenta retaguarda; Gabs de escolta concluem antes do movimento. | limpar UI/Gabs/ME/beds; `COMMIT_ESCORT` uma vez; transferir somente Thorin/guardas para Map044 |
+| `BT-SEM-011-ESCORT` | EX | Filena permanece com os Machados; Killin e Mhordred formam-se ao redor de Thorin em `(10,7)/(11,7)/(12,7)` e os três andam exatamente três tiles para oeste, rumo a E16. | Gabs concluem antes do movimento; fade out ocorre com E6 ainda em V110; depois, sem qualquer nova espera, `COMMIT_ESCORT`, `FinishCutscene` e a transferência única levam Thorin/guardas a Map044; Map044 faz fade in e mantém ambos os guardas visíveis em V120/V900 até V32 |
 
 #### Contrato visual das VNs 011
 
