@@ -1,8 +1,8 @@
 /*:
  * @target MZ
- * @plugindesc [v1.0.0] Controle de cutscenes físicas Coreto em Exploration.
+ * @plugindesc [v1.0.1] Controle de cutscenes físicas Coreto em Exploration.
  * @author Coreto
- * @version 1.0.0
+ * @version 1.0.1
  * @base Coreto_QuestCore
  * @orderAfter Coreto_QuestCore
  *
@@ -61,8 +61,8 @@
         return ["EX", "VN", "GROUP"].includes(type) ? type : null;
     }
 
-    function eventOwner() {
-        const interpreter = globalThis.$gameMap && $gameMap._interpreter;
+    function eventOwner(commandInterpreter) {
+        const interpreter = commandInterpreter || (globalThis.$gameMap && $gameMap._interpreter);
         return interpreter && typeof interpreter.eventId === "function" ? interpreter.eventId() : 0;
     }
 
@@ -73,11 +73,11 @@
         return $gameTemp._coretoCutscene;
     }
 
-    function begin() {
+    function begin(commandInterpreter) {
         if (mapType() !== "EX") fail("CUTSCENE_NOT_EX", { mapId: $gameMap.mapId(), mapType: mapType() });
         if (store().session) fail("CUTSCENE_ALREADY_ACTIVE", { session: store().session });
         FlowCoordinator.assertAvailable();
-        const owner = { module: PLUGIN_NAME, mapId: $gameMap.mapId(), eventId: eventOwner() };
+        const owner = { module: PLUGIN_NAME, mapId: $gameMap.mapId(), eventId: eventOwner(commandInterpreter) };
         if (owner.eventId < 1) fail("CUTSCENE_OWNER_INVALID", owner);
         const capturedContext = {
             menuEnabled: $gameSystem.isMenuEnabled(),
@@ -101,10 +101,10 @@
         return store().session;
     }
 
-    function finish() {
+    function finish(commandInterpreter) {
         const currentSession = store().session;
         if (!currentSession) fail("CUTSCENE_SESSION_MISSING", {});
-        const owner = { mapId: $gameMap.mapId(), eventId: eventOwner() };
+        const owner = { mapId: $gameMap.mapId(), eventId: eventOwner(commandInterpreter) };
         if (currentSession.mapId !== owner.mapId || currentSession.eventId !== owner.eventId) {
             fail("CUTSCENE_OWNER_MISMATCH", { session: currentSession, owner });
         }
@@ -127,14 +127,18 @@
     }
 
     Coreto.Cutscene = {
-        version: "1.0.0",
+        version: "1.0.1",
         CoretoCutsceneError,
         begin,
         finish,
         inspect
     };
 
-    PluginManager.registerCommand(PLUGIN_NAME, "BeginCutscene", () => begin());
-    PluginManager.registerCommand(PLUGIN_NAME, "FinishCutscene", () => finish());
+    PluginManager.registerCommand(PLUGIN_NAME, "BeginCutscene", function() {
+        begin(this);
+    });
+    PluginManager.registerCommand(PLUGIN_NAME, "FinishCutscene", function() {
+        finish(this);
+    });
     PluginManager.registerCommand(PLUGIN_NAME, "InspectCutscene", () => console.log(inspect()));
 })();

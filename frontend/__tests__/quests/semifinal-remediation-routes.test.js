@@ -329,16 +329,57 @@ describe('helmet and exact error contracts', () => {
   });
 
   test('UT-035: only equipped Actor 3 with Armor 51 passes the V70 gate', () => {
-    const statueScript = commands(selected(maps.Map063.events[13], 70), 111)[0].parameters[1];
+    const statuePage = selected(maps.Map063.events[13], 70);
+    const statueScript = commands(statuePage, 111)[0].parameters[1];
     const dragobur = selected(maps.Map062.events[2], 70);
     const dragoburScript = commands(dragobur, 111)[0].parameters[1];
     expect(statueScript).toBe('$gameActors.actor(3).isEquipped($dataArmors[51])');
     expect(dragoburScript).toBe('$gameActors.actor(3).isEquipped($dataArmors[51])');
+    expect(statuePage.trigger).toBe(4);
+    expect(selected(maps.Map062.events[20], 70).trigger).toBe(4);
+    expect(selected(maps.Map063.events[13], 80, (kind, target) => kind === 'selfSwitch' && target === 'A').trigger).toBe(3);
+    expect(selected(maps.Map062.events[20], 80, (kind, target) => kind === 'selfSwitch' && target === 'A').trigger).toBe(3);
     expect(pluginCommands(dragobur, 'Coreto_QuestCore', 'QuestTransition').map(command => command.parameters[3].transitionId)).toContain('EQUIP_HELMET');
     expect(pluginCommands(selected(maps.Map062.events[2], 80), 'Coreto_QuestCore', 'QuestTransition').map(command => command.parameters[3].transitionId)).not.toContain('EQUIP_HELMET');
     const gate = ({ actorId, armorId, equipped }) => actorId === 3 && armorId === 51 && equipped;
     expect([gate({ actorId: 3, armorId: 51, equipped: false }), gate({ actorId: 2, armorId: 51, equipped: true }), gate({ actorId: 3, armorId: 1, equipped: true })]).toEqual([false, false, false]);
     expect(gate({ actorId: 3, armorId: 51, equipped: true })).toBe(true);
+  });
+
+  test('UT-074: V70 commits synchronously and V80 owns a refresh-stable helmet presentation', () => {
+    const pending = (kind, target) => kind === 'selfSwitch' && target === 'A';
+    for (const event of [maps.Map063.events[13], maps.Map062.events[20]]) {
+      const detector = selected(event, 70);
+      const presentation = selected(event, 80, pending);
+      const terminal = selected(event, 80);
+      const latchIndex = detector.list.findIndex(command => command.code === 123 && JSON.stringify(command.parameters) === JSON.stringify(['A', 0]));
+      const transitionIndex = detector.list.findIndex(command => command.code === 357 && command.parameters?.[3]?.transitionId === 'EQUIP_HELMET');
+      const animationIndex = presentation.list.findIndex(command => command.code === 212 && JSON.stringify(command.parameters) === JSON.stringify([-1, 91, false]));
+      const finishIndex = presentation.list.findIndex(command => command.code === 357 && command.parameters?.[0] === 'Coreto_Cutscene' && command.parameters?.[1] === 'FinishCutscene');
+      const clearIndex = presentation.list.findIndex(command => command.code === 123 && JSON.stringify(command.parameters) === JSON.stringify(['A', 1]));
+      const zooms = pluginCommands(presentation, 'VisuMZ_4_MapCameraZoom', 'ZoomChange').map(command => command.parameters[3]['TargetScale:num']);
+
+      expect(detector.trigger).toBe(4);
+      expect(transitionIndex).toBeGreaterThanOrEqual(0);
+      expect(latchIndex).toBeGreaterThan(transitionIndex);
+      expect(pluginCommands(detector, 'Coreto_Cutscene')).toHaveLength(0);
+      expect(presentation).not.toBe(detector);
+      expect(presentation).not.toBe(terminal);
+      expect(presentation).toBe(selected(event, 80, pending));
+      expect(presentation).toMatchObject({ trigger: 3, conditions: { variableValue: 80, selfSwitchCh: 'A', selfSwitchValid: true } });
+      expect(pluginCommands(presentation, 'Coreto_QuestCore', 'QuestTransition')).toHaveLength(0);
+      expect(pluginCommands(presentation, 'Coreto_Cutscene').map(command => command.parameters[1])).toEqual(['BeginCutscene', 'FinishCutscene']);
+      expect(animationIndex).toBeGreaterThanOrEqual(0);
+      expect(zooms).toEqual(['2', '1']);
+      expect(commands(presentation, 250).map(command => command.parameters[0]?.name)).toContain('Equip1');
+      expect(JSON.stringify(presentation)).toContain('Serviu!');
+      expect(JSON.stringify(presentation)).toContain('Se eu não respirar muito fundo.');
+      expect(finishIndex).toBeGreaterThan(animationIndex);
+      expect(clearIndex).toBeGreaterThan(finishIndex);
+    }
+    const playerRoute = commands(selected(maps.Map063.events[13], 80, pending), 205).find(command => command.parameters[0] === -1).parameters[1];
+    expect(playerRoute.list.filter(command => command.code === 13)).toHaveLength(2);
+    expect(playerRoute).toMatchObject({ skippable: true, wait: true });
   });
 
   test('UT-063: Map044 E15 page2 value 6 returns the exact error object', () => {
@@ -429,8 +470,17 @@ test('Map062 E6 is materialized as the sole Task 06 finale controller', () => {
   const event = maps.Map062.events[6];
   const list = event.pages[0].list;
   expect(hash(event)).not.toBe(CASES.protectedEvent.sha256);
-  expect(event.note).toBe('SEMIFINAL:011:FINALE_CONTROLLER:E6');
+  expect(event.note).toBe('SEMIFINAL:011:FINALE_CONTROLLER:E6:DEADLOCK_SAFE_GUARDS');
   expect(event.pages[0]).toMatchObject({ trigger: 3, conditions: { variableId: 29, variableValue: 110 } });
   expect(list.filter(command => command.code === 301)).toHaveLength(1);
   expect(list.filter(command => command.code === 357 && command.parameters?.[3]?.transitionId === 'COMMIT_ESCORT')).toHaveLength(1);
+  const guardedRoutes = list.filter(command => command.code === 205 && [3, 4, 5, 7, 8, 14].includes(command.parameters[0]));
+  expect(guardedRoutes.every(command => command.parameters[1].skippable && command.parameters[1].wait)).toBe(true);
+  expect(guardedRoutes.every(command => command.parameters[1].list.some(route => route.code === 37) && command.parameters[1].list.some(route => route.code === 38))).toBe(true);
+  expect(list.filter(command => command.code === 203 && [5, 14].includes(command.parameters[0])).map(command => command.parameters)).toEqual([
+    [5, 0, 11, 16, 8],
+    [14, 0, 12, 16, 8],
+  ]);
+  expect(selected(maps.Map062.events[5], 110)).toMatchObject({ image: { characterName: '' }, priorityType: 0, through: true });
+  expect(selected(maps.Map062.events[14], 110)).toMatchObject({ image: { characterName: '' }, priorityType: 0, through: true });
 });

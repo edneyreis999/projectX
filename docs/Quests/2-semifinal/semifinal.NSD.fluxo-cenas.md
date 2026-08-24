@@ -151,8 +151,8 @@ Mapa: [063] `EX_Vestiario`
 | **5-A** | **Corredor dos vestiários** | O vestiário masculino permanece como rota principal; o feminino é um desvio opcional. | 🎮 |
 | **5-B** | **Gag protegido** | A primeira interação preserva retratos, reações, movimento, impacto, som, recuo e a linha exata `DL-SEM-GAG-LOCKER-001`; repetição não duplica a coreografia. | 🎬 |
 | **5-C** | **Estátua íntegra** | Antes da missão, a estátua já está visível e oferece somente uma Gab filler sobre o atraso de Thorin. Depois da ordem de Dragobur, Thorin reconhece o marco da Seleção de Ouro e percebe que o elmo histórico cabe nele. | 🎮 |
-| **5-D** | **Erro obrigatório** | Sem alternativa quest-valid, Thorin improvisa e retira o elmo da estátua; o display muda de forma persistente e o item não duplica. | 🎬 |
-| **5-E** | **Equipamento manual** | O jogador equipa o capacete correto em Thorin e recebe a reação leve `DL-SEM-HELMET-THORIN-FIT-001`. | 🎮 |
+| **5-D** | **Erro obrigatório** | Sem alternativa quest-valid, Thorin improvisa e retira o elmo da estátua; o display muda de forma persistente, o item não duplica e as falas curtas preservam a sensação de pressa. | 🎬 |
+| **5-E** | **Equipamento manual com transformação** | O jogador equipa o capacete correto em Thorin; ao fechar o menu, o objetivo conclui sem nova interação e uma transformação curta usa recuo, zoom, efeito, troca de skin já dirigida pelo equipamento e `DL-SEM-HELMET-THORIN-FIT-001`. | 🎮 |
 | **5-F** | **Retorno** | Inventário sem equipamento, capacete errado ou equipamento em outro ator não encerram o requisito. | 🎮 |
 
 #### Cena 6 – Autorização para o Campo

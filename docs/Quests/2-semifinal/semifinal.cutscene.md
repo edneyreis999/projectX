@@ -2,7 +2,7 @@
 status: approved
 owner: Scene Presentation Designer
 quest: A Semifinal
-contract_version: 1.3.0
+contract_version: 1.5.0
 language: pt-BR
 human_presentation_validation: pending
 ---
@@ -29,6 +29,7 @@ ciclo. Avançar uma Gab pelo controle previsto não devolve movimento.
 - Fluxo e direção: `docs/Quests/2-semifinal/semifinal.NSD.fluxo-cenas.md`, `planos/010-guia-migracao-nova-arquitetura/fase2/grill-me-with-docs-2026-08-19.md` e
   `direcao-arte-cutscenes-semifinal-2026-08-19.md`.
 - Arquitetura: `docs/project-conventions/scene-routing-ex-vn.md`, `docs/architecture/exploration-dialogue-gabwindow.md` e o padrão de barreira semântica em `.compozy/tasks/009-rework-cutscene-rheed/`.
+- Direção perceptiva: `docs/project-conventions/magia-em-cutscenes-e-animacoes.md` e `docs/GDD/00_Foundation/00.1_Core_Concept/Core _Concept.md`.
 - Decisões aceitas: ADR-001 a ADR-011 em `.compozy/tasks/010-semifinal-completa/adrs/`.
 - Baselines inspecionados: `frontend/data/Map045.json`, `Map061.json`, `Map062.json`, `Map063.json`, `Map064.json` e `Map044.json`.
 
@@ -46,7 +47,9 @@ ciclo. Avançar uma Gab pelo controle previsto não devolve movimento.
 - 011 ADR-005 supersede a convergência imediata de Resist: a escolha retorna a EX, forma Thorin+Filena e inicia batalha real contra Mhordred antes da captura comum.
 - 011 ADR-009 mantém Map062 E6 como único dono bloqueado do finale, sem estados V29 intermediários nem flag persistente de branch.
 - O feedback de Playtest de 2026-08-21 supersede o gate V60 e a câmera fixa do gag: Map063 E7 fica disponível uma vez durante a janela jogável da semifinal, de V50 a V110; a câmera segue a atacante E2 em zoom 200%, balloons dão reação ao grupo e o cleanup retorna ao jogador em 100%.
-- A continuação do Playtest de 2026-08-21 torna Map063 E13 visível em V50 com uma única Gab filler sem mutação, bloqueia as saídas E15–E17 de Map062 em V60–V110 e reconcilia o equipamento de Armor 51 ao falar com Dragobur em V70.
+- A continuação do Playtest de 2026-08-21 torna Map063 E13 visível em V50 com uma única Gab filler sem mutação e bloqueia as saídas E15–E17 de Map062 em V60–V110.
+- O Playtest de 2026-08-24 substitui a reconciliação dependente de interação: Map063 E13 e Map062 E20 observam V70 e concluem `EQUIP_HELMET` automaticamente no primeiro frame do mapa após o menu confirmar Armor 51 em Thorin. A revisão do legado preserva a separação entre detecção e apresentação: V70 apenas arma um latch local e transiciona; uma página V80 Autorun estável possui o lock e todos os waits. O beat usa falas menores, dois passos de recuo, zoom 200%, Animation 91 `Vento 1`, shake curto e cleanup em 100%.
+- O Playtest de 2026-08-24 confirma um deadlock depois da elipse de Rheed: rotas absolutas aguardadas e não puláveis podiam bloquear E6 antes da festa. O staging corretivo usa `Through ON → Move to → Through OFF`, espera encerrável, posiciona Killin/Mhordred ocultos em `(11,16)/(12,16)` e só revela os guardas durante a entrada aprovada.
 - As pendências antigas sobre posse do elmo, escolha e política de controle foram resolvidas pelos ADRs; a direção de arte permanece autoridade de composição somente onde não conflita.
 
 ## Regras globais do score
@@ -70,7 +73,7 @@ ciclo. Avançar uma Gab pelo controle previsto não devolve movimento.
 
 ### Câmera, zoom, animação e assets
 
-- Baseline de câmera e paleta do mapa é o MVP. Reenquadramentos são pequenos, funcionais e preservam origem/destino; câmera 360°, shake e filtro global novo são proibidos.
+- Baseline de câmera e paleta do mapa é o MVP. Reenquadramentos são pequenos, funcionais e preservam origem/destino; câmera 360° e filtro global novo são proibidos. O único shake aprovado neste recorte é o shake curto da transformação do elmo.
 - Zoom permanece em `100%` salvo aproximação explícita curta; todo zoom retorna a `100%` antes do cleanup ou troca de foco.
 - Animation 35 possui `Blind` e `Sand`; Animation 39 possui `Thunder2`, `Thunder8` e `Blow3`. Não duplicar esses SE por comandos.
 - Para qualquer sprite, busto ou background: usar primeiro um asset existente adequado; se não existir, o Technical Artist cria via ferramenta de geração; se a geração falhar, registra um asset existente como placeholder. Nenhuma referência alcançável pode permanecer ausente, e a adequação visual continua pendente de Playtest humano.
@@ -102,9 +105,9 @@ Os três controladores abaixo substituem integralmente as seções 010 de mesmo 
 
 | Fase | Apresentação | Staging e conteúdo | Cleanup/terminal |
 | --- | --- | --- | --- |
-| `BT-SEM-011-FIELD-EXIT` | EX | Saída do campo; jogadores/reservas param o movimento aleatório e ocupam posições determinísticas; Machados, Martelos, Dragobur, Filena e Thorin tornam-se legíveis. | rotas aguardadas; nenhuma Gab/VN concorrente |
+| `BT-SEM-011-FIELD-EXIT` | EX | Saída do campo; jogadores/reservas param o movimento aleatório e ocupam posições determinísticas; Machados, Martelos, Dragobur, Filena e Thorin tornam-se legíveis. Killin e Mhordred ficam ocultos na zona sul. | rotas usam passabilidade temporária, são aguardadas e encerráveis; nenhuma Gab/VN concorrente |
 | `BT-SEM-011-CELEBRATION-VN` | VN `SEMIFINAL_CELEBRATION` | Alegria do time, hostilidade de classe dos Martelos de Bronze, respostas de Thorin/time, felicidade de Dragobur e Filena, e presente do elmo. | limpar bustos/background; presente termina antes de qualquer guarda aparecer |
-| `BT-SEM-011-RIVALS-OUT-GUARDS-IN` | EX | Martelos saem; somente depois Killin e Mhordred entram pela zona sul e chegam à formação aprovada; time reorienta quando a origem fica legível. | rotas aguardadas; `People1` pode rarefar somente após reposicionamento |
+| `BT-SEM-011-RIVALS-OUT-GUARDS-IN` | EX | Martelos saem; somente depois Killin e Mhordred são revelados e entram de `(11,16)/(12,16)` até `(11,10)/(12,10)`; time reorienta quando a origem fica legível. | rotas usam passabilidade temporária, são aguardadas e encerráveis; `People1` pode rarefar somente após reposicionamento |
 | `BT-SEM-011-GUARD-VN` | VN `SEMIFINAL_GUARD_INTERVENTION` | Dragobur reage; Killin declara patente e ordem de Thordan; Thorin responde; Mhordred sustenta; Filena justifica por que resistirá; Gentle/Resist e reação imediata encerram a VN. | limpar choice, bustos/background; devolver branch transitório ao controlador E6 |
 | `BT-SEM-011-GENTLE` | EX | Killin organiza custódia; nenhuma batalha. | chama convergência comum |
 | `BT-SEM-011-RESIST` | EX + Battle | Filena entra temporariamente na party; Thorin+Filena enfrentam apenas Mhordred; escape desativado e derrota permitida; jogo normal oferece cerca de 2–3 ações significativas por ator antes da derrota. | loss e win excepcional chamam o mesmo cleanup; restaurar somente HP máximo de Thorin/Filena e remover Filena da party |
@@ -189,14 +192,14 @@ Os três controladores abaixo substituem integralmente as seções 010 de mesmo 
 - Janela: V50 exibe a estátua íntegra e somente `DL-SEM-STATUE-PREQUEST-FILLER-011`; a retirada e o grant continuam indisponíveis até V60.
 - Routing: `EX aprovado`; interação ambiental e alteração persistente exigem comparação espacial direta. VN não pode substituir leitura da estátua.
 - Densidade: 1 Gab filler em V50, 2 Gabs na retirada e 1 Gab de confirmação após equipamento, com 3 barriers ligadas a alterações irreversíveis.
-- Recovery: estado alterado nunca reexibe estátua íntegra nem concede Armor 51; retorno do menu pode reconciliar na estátua e falar com Dragobur em V70 reconcilia o mesmo equipamento real, devolve controle em V80 e mantém a VN em seu único label na interação seguinte.
+- Recovery: estado alterado nunca reexibe estátua íntegra nem concede Armor 51; o primeiro frame do mapa após fechar o menu reconhece automaticamente Armor 51 equipada em Thorin, conclui V80 e apresenta a transformação. Map063 E13 e Map062 E20 cobrem respectivamente equipamento no vestiário e no estádio; as verificações interativas permanecem como fallback idempotente.
 
 | Beat                      | Mapa/evento                  | Participantes, posição e facing                                                 | Lock                    | Diálogo                         | Movimento/animação                                                           | Câmera/zoom                                                     | Áudio                                                                    | Await                                                                                                 | Cleanup                                                 | Terminal/recovery                                                             |
 | ------------------------- | ---------------------------- | ------------------------------------------------------------------------------- | ----------------------- | ------------------------------- | ---------------------------------------------------------------------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------- | ----------------------------------------------------------------------------- |
 | `BT-SEM-STATUE-PREQUEST-FILLER-011` | Map063 E13 em V50 | estátua íntegra em `(9,8)`; Thorin diante do landmark | lock somente da interação | `DL-SEM-STATUE-PREQUEST-FILLER-011` | facing sustentado; nenhuma retirada, grant ou mudança de display | câmera baseline, zoom 100% | somente bed do estádio | nenhuma barrier; fala filler isolada | fila Gab não empilha | controle retorna em V50 sem mutação |
-| `BT-SEM-STATUE-READ-001`  | Map063 E13                   | estátua íntegra em `(9,8)`; Thorin `(9,9)` facing cima                          | lock de interação       | `DL-SEM-STATUE-THORIN-001`      | pausa e facing sustentado; nenhuma retirada ainda                            | câmera aproxima no máximo a zoom 110%, mantendo origem e Thorin | bed do estádio                                                           | `WaitForGab: AW-SEM-STATUE-ORIGIN-001` protege origem/seleção de ouro antes da retirada               | nenhum                                                  | continua                                                                      |
+| `BT-SEM-STATUE-READ-001`  | Map063 E13                   | estátua íntegra em `(9,8)`; Thorin `(9,9)` facing cima                          | lock de interação       | `DL-SEM-STATUE-THORIN-001` em cinco Gabs curtas | pausa e facing sustentado; nenhuma retirada ainda                            | câmera baseline mantém origem e Thorin | bed do estádio                                                           | `WaitForGab: AW-SEM-STATUE-ORIGIN-001` protege origem/seleção de ouro antes da retirada               | nenhum                                                  | continua                                                                      |
 | `BT-SEM-STATUE-TAKE-001`  | Map063 E13                   | mesmas posições; mãos/facing de Thorin ligados ao landmark                      | lock ativo              | `DL-SEM-STATUE-THORIN-TAKE-001` | gesto de retirada; sprite/tile troca de íntegro para alterado depois da fala | câmera mantém ambos; zoom retorna 100% após alteração legível   | `CUE-SEM-HELMET-TAKE-001`, `Open1` uma vez somente se ler como liberação | `WaitForGab: AW-SEM-HELMET-TAKE-001` protege decisão/origem antes de grant, alteração e `TAKE_HELMET` | persistir display alterado; nenhuma fanfarra/novo asset | `TAKE_HELMET`; abrir affordance de equipamento; recovery não duplica Armor 51 |
-| `BT-SEM-HELMET-EQUIP-001` | Map063 E13/recovery pós-menu | Thorin diante da estátua alterada; capacete correto visual/inventário em Thorin | lock ao reconhecer gate | `DL-SEM-HELMET-THORIN-FIT-001`  | reação curta causal, sem coro                                                | câmera estável, zoom 100%                                       | `CUE-SEM-HELMET-EQUIP-001` após confirmação real                         | `WaitForGab: AW-SEM-HELMET-FIT-001` protege a confirmação antes de Finish/transição `EQUIP_HELMET`    | menu fechado, fila vazia; estátua alterada persiste     | estado 80; Finish uma vez; wrong/inventory-only retorna controle sem avançar  |
+| `BT-SEM-HELMET-EQUIP-001` | Map063 E13 ou Map062 E20, recovery pós-menu | Armor 51 está realmente equipada em Thorin; a skin `Thorin_OldHelmet` já responde ao equipamento | V70 detecta sem lock; página V80 Autorun adquire o lock em owner estável | `DL-SEM-HELMET-THORIN-FIT-001` em três Gabs curtas | concluir `EQUIP_HELMET` imediatamente; Thorin recua dois passos, Animation 91 `Vento 1` e shake curto vendem a transformação sem coro | foco no jogador, zoom 200%, retorno aguardado a 100% | `Equip1` + `CUE-SEM-HELMET-EQUIP-001`; `Vento 1` já contém `Wind5` e flash branco | a conclusão do objetivo antecede os efeitos; todos os waits pertencem à página V80; `WaitForGab` protege somente o cleanup e `FinishCutscene` | `FinishCutscene` precede o desligamento do latch local; menu fechado, câmera 100%, fila vazia; estátua alterada persiste | estado 80 automático; refresh V70→V80 não descarta o owner; ator errado, armadura errada ou inventário sem equipar não avançam |
 
 ### CS-SEM-FIELD-AUTHORIZATION-001 — Retorno equipado
 
@@ -296,7 +299,7 @@ Nenhuma cena acima foi validada humanamente. A aprovação EX/VN descreve a rota
 | Map061 interação     | nenhuma transferência/Gab empilhada                  | mesma porta deixa de bloquear fora do estado urgente |
 | chegada/Dragobur     | VN limpa bust/background; `City` sai; Gab de continuidade aponta o vestiário | V50 interrompido não avança; V60 não repete a VN |
 | gag                  | Animation 39/SE terminam; Thorin fora da área        | repeat sem impacto/recuo coletivo                    |
-| estátua/equipamento  | display alterado e Armor 51 reconciliados            | V50 é filler sem mutação; sem segundo grant; V70 equipado também reconcilia em Dragobur |
+| estátua/equipamento  | display alterado, Armor 51 reconciliada, câmera em 100% e efeito encerrado | V50 é filler sem mutação; sem segundo grant; V70 equipado conclui automaticamente pós-menu em Map063/Map062; interações são fallback |
 | campo/elipse         | Rheed/crianças/Animation 35/Gabs/ME removidos        | estado 110 não materializa de novo                   |
 | festa/intervenção    | cada VN limpa bust/background/choice; Martelos saem antes de guardas entrarem | V120 não repete presente, batalha, choice ou commit |
 | Map062 → Map044      | UI, Gabs, ME e stadium beds ausentes; Move1 uma vez  | uma transferência; destino já declarado              |
@@ -307,10 +310,10 @@ Nenhuma cena acima foi validada humanamente. A aprovação EX/VN descreve a rota
 1. Relato livre recupera atraso/derrota, requisito, origem do elmo, `LOSING → ENTRY → GOAL → VICTORY`, presente, Filena, rank de Killin, ordem e destino antes de sondas.
 2. Toda Gab permanece legível enquanto a coreografia declarada continua; nenhuma barrier parece blanket wait ou deixa cleanup cortar fala.
 3. Dragobur mantém desespero, afeto, competência e dignidade; a nova câmera e os balloons dão energia ao gag sem prolongar a violência nem estereotipar as jogadoras.
-4. Estátua íntegra, retirada, estado alterado e capacete em Thorin são reconstruíveis; asset existente adequado tem prioridade, geração cobre lacuna e placeholder existente impede referência ausente; Playtest humano decide adequação.
+4. Estátua íntegra, retirada, estado alterado e capacete em Thorin são reconstruíveis; a transformação pós-menu tem “Magia” perceptiva suficiente sem ser confundida com magia canônica ou buff; asset existente adequado tem prioridade, geração cobre lacuna e placeholder existente impede referência ausente; Playtest humano decide adequação.
 5. O campo continua reconhecível e a elipse não parece VN, loading, batalha ou promessa de futebol jogável.
 6. A primeira VN é percebida como celebração coletiva e conflito de classe; presente termina antes de qualquer guarda entrar no EX.
-7. A saída dos Martelos e a entrada dos guardas são localizáveis em EX; a segunda VN só começa depois da formação; Filena recebe motivação própria; Killin lê como líder sem depender de loudness ou filtro.
+7. A saída dos Martelos e a entrada dos guardas são localizáveis em EX; nenhuma rota trava o autorun; Killin e Mhordred aparecem somente na entrada sul, alcançam a formação antes da segunda VN, Filena recebe motivação própria e Killin lê como líder sem depender de loudness ou filtro.
 8. Gentle e Resist parecem diferentes: Gentle não batalha; Resist inicia a batalha Thorin+Filena contra Mhordred e converge depois do cleanup; ambos chegam ao mesmo terminal.
 9. Câmera/zoom permanecem discretos, preservam eixo e retornam ao baseline; segurar movimento durante o Finish não causa passo, interação ou transferência conflitante.
 10. Repetir portas, gag, estátua, choice, transfer e recovery não empilha Gab/SE, não duplica recompensa e não deixa ator, áudio, UI ou lock residual.

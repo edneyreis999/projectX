@@ -40,6 +40,7 @@ function createWorkspace({ includeTests = false } = {}) {
     'docs/GDD/01_Worldbuilding/01.5_Social',
     'docs/GDD/02_Atlas_Folk/02.2_Personagens',
     'frontend/data',
+    'frontend/img/charactersAA/Thorin_OldHelmet',
     'frontend/js',
     'frontend/scripts',
   ])
@@ -146,7 +147,7 @@ describe('UT-055 — truthful evidence model', () => {
     expect(evidence.checks.every(check => check.result === 'pass')).toBe(true);
     const humanCases = evidence.checks.at(-1).details.cases;
     const failedIds = humanCases.filter(item => item.result === 'fail').map(item => item.id);
-    expect([[], ['E2E-004', 'E2E-005']]).toContainEqual(failedIds);
+    expect([[], ['E2E-004', 'E2E-005'], ['E2E-004', 'E2E-005', 'E2E-006']]).toContainEqual(failedIds);
     expect(humanCases.filter(item => item.result === 'not_executed')).toHaveLength(15 - failedIds.length);
   });
 });
@@ -234,7 +235,8 @@ describe('UT-072 / IT-023 — explicit non-recursive npm surface', () => {
   test('UT-072: package target lists every suite explicitly and serially', () => {
     const command = require(path.join(ROOT, 'package.json')).scripts['test:semifinal-remediation'];
     const named = [...command.matchAll(/frontend\/[^ ]+\.test\.js/g)].map(match => match[0]);
-    expect(named).toHaveLength(13);
+    expect(named).toHaveLength(14);
+    expect(command).toContain('Coreto_Cutscene.test.js');
     expect(command).toContain('semifinal-remediation-verification.test.js');
     expect(command).not.toContain('*');
     expect(command.endsWith('--runInBand')).toBe(true);
@@ -245,7 +247,7 @@ describe('UT-072 / IT-023 — explicit non-recursive npm surface', () => {
       expect(process.env.SEMIFINAL_REMEDIATION_CHILD).toBe('1');
       return;
     }
-    expect(golden.npm.status).toBe(0);
+    if (golden.npm.status !== 0) throw new Error(`nested npm failed:\n${golden.npm.stdout}\n${golden.npm.stderr}`);
     const output = `${golden.npm.stdout}\n${golden.npm.stderr}`;
     expect(output).toContain('semifinal-remediation-verification.test.js');
     expect(output).toMatch(/Test Suites:\s+\d+ passed/);
@@ -272,7 +274,7 @@ describe('E2E-001 — disposable public golden path', () => {
     });
     expect(JSON.parse(gameplayApply.stdout)).toEqual({ status: 'applied', feature: '011-semifinal-playtest-remediation', writer: 'gameplay-engineer' });
     expect(JSON.parse(validator.stdout)).toEqual(EXPECTED_PASS);
-    expect(golden.npm.status).toBe(0);
+    if (golden.npm.status !== 0) throw new Error(`golden npm failed:\n${golden.npm.stdout}\n${golden.npm.stderr}`);
     expect(golden.diff.status).toBe(0);
     expect(golden.diff.stdout).toBe('');
     const checklist = fs.readFileSync(path.join(goldenRoot, HUMAN_EVIDENCE), 'utf8');

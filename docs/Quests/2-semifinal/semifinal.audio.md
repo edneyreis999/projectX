@@ -203,13 +203,13 @@ Resolver masking primeiro por rarefacao, envelope, exclusao e ducking; nao por e
 - Funcao / custo de perda: confirmar acao de equipar, sem substituir checagem real do item.
 - Beat e joins: 5-E/5-F; `DL-SEM-HELMET-THORIN-FIT-001`.
 - Evento / precondicao: Armor 51 realmente equipada em Thorin e reconhecida pelo gate; inventario apenas, outro elmo ou outro ator nao disparam.
-- Canal / asset: SE `Equip1.ogg`.
-- Start / stop / fade: one-shot junto da confirmacao observavel; a Gab vem com espaco suficiente para nao ser mascarada.
+- Canal / asset: SE `Equip1.ogg` e Animation 91 `Vento 1`, recuperada da implementação legada; a animação já contém `Wind5.ogg` e flash branco.
+- Start / stop / fade: `Equip1` pontua o encaixe; Animation 91 começa sem bloquear, sobrepõe vento/flash ao shake curto e se resolve durante o retorno da câmera antes das três Gabs de reação.
 - Prioridade / concorrencia: P1/P2; sem ME, fanfarra ou stack adicional.
-- Repeticao / interrupcao / persistencia: uma confirmacao por transicao valida; abrir/fechar menu ou reequipar fora do gate nao duplica quest feedback.
+- Repeticao / interrupcao / persistencia: uma confirmação por transição válida, disparada automaticamente no primeiro frame do mapa depois que Armor 51 é equipada em Thorin; abrir/fechar menu ou reequipar fora do gate não duplica quest feedback.
 - Cleanup: nenhum residuo ao retornar a Map062.
 - Fallback: sprite/equipment UI, requisito satisfeito e fala exata confirmam que serviu.
-- Risco / criterio humano: validar que parece equipamento, nao recompensa final, e que nao compete com a piada de respiracao.
+- Risco / criterio humano: validar que o conjunto lê como transformação cômica inspirada em “O Máscara”, não como recompensa final, magia canônica de Thorin ou buff de combate, e que não compete com a piada de respiração.
 
 ### CUE-SEM-MATCH-FRAME-001 — Moldura de Rheed
 

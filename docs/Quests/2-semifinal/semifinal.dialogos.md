@@ -36,7 +36,8 @@ Toda fala que avança a história principal ou a quest usa VN, mesmo quando nasc
 - 011 ADR-004 supersede a interpretação de que Dragobur queria o elmo da estátua: ele pede um capacete velho comum; Thorin pega obrigatoriamente o elmo histórico por engano deliberadamente improvisado.
 - 011 ADR-005 supersede Resist sem combate: Resist inicia batalha real de Thorin e Filena contra Mhordred; derrota normal e vitória excepcional convergem na mesma captura.
 - 011 ADR-006 identifica os rivais como Martelos de Bronze patrocinados por Casas Mineradoras e usa a hostilidade para revelar classe sem palestra de lore.
-- O feedback de Playtest de 2026-08-21 torna a estátua legível antes da ordem de Dragobur, mas somente como ambientação filler; V50 não concede item nem avança a quest. Em V70, falar com Dragobur usando Armor 51 equipada reconcilia `EQUIP_HELMET` como no mapa legado e devolve controle em V80; a interação seguinte entra na autorização por seu único label de retomada.
+- O feedback de Playtest de 2026-08-21 torna a estátua legível antes da ordem de Dragobur, mas somente como ambientação filler; V50 não concede item nem avança a quest.
+- O feedback de Playtest de 2026-08-24 substitui a reconciliação por nova interação: em V70, equipar Armor 51 em Thorin conclui o objetivo automaticamente no primeiro frame do mapa após fechar o menu. Falar com a estátua ou com Dragobur permanece apenas como fallback de recuperação.
 
 ## Supersessão corretiva 011 — sequências canônicas
 
@@ -221,7 +222,7 @@ Depois dessas falas, a VN apresenta Gentle/Resist. Gentle usa `VN-SEM-CHOICE-GEN
 - Beat: leitura da estátua íntegra
 - Intenção: reconhecer memória do time antes de retirar o item
 - Fatos obrigatórios: estátua da seleção de ouro; capacete pertenceu a Dragobur
-- Cópia exata: “A seleção de ouro... e esse é o velho capacete do Dragobur. Ele vai me matar por chegar tarde ou por mexer nisso. Talvez pelos dois.”
+- Cópia exata, apresentada em cinco Gabs curtas e consecutivas: “A seleção de ouro...” / “E esse é o velho capacete do Dragobur.” / “Ele vai me matar por chegar tarde.” / “Ou por mexer nisso.” / “Talvez pelos dois.”
 - Target Gab anchor: `MAP063_E13_STATUE`
 - Perfis fonte: `Thorin.md`, `Dragobur.md`
 
@@ -230,7 +231,7 @@ Depois dessas falas, a VN apresenta Gentle/Resist. Gentle usa `VN-SEM-CHOICE-GEN
 - Beat: retirada deliberada
 - Intenção: assumir a solução improvisada
 - Fatos obrigatórios: Thorin retira o capacete da estátua; a origem do item é explícita
-- Cópia exata: “Desculpa, seleção de ouro. O presente precisa mais disto do que a estátua.”
+- Cópia exata, apresentada em duas Gabs curtas e consecutivas: “Desculpa, seleção de ouro.” / “O presente precisa mais disto do que a estátua.”
 - Target Gab anchor: `MAP063_E13_STATUE`
 - Perfis fonte: `Thorin.md`
 
@@ -239,7 +240,7 @@ Depois dessas falas, a VN apresenta Gentle/Resist. Gentle usa `VN-SEM-CHOICE-GEN
 - Beat: reação depois de equipar
 - Intenção: confirmar encaixe com humor leve
 - Fatos obrigatórios: o capacete correto está equipado e serviu
-- Cópia exata: “Serviu! Quer dizer... se eu não respirar muito fundo.”
+- Cópia exata, apresentada em três Gabs curtas e consecutivas: “Serviu!” / “Quer dizer...” / “Se eu não respirar muito fundo.”
 - Target Gab anchor: `MAP063_PLAYER`
 - Perfis fonte: `Thorin.md`
 
