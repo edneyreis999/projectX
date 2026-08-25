@@ -1,214 +1,179 @@
-# 🎮 Narrative Structure Document (NSD) - Fluxo Visual De Cenas
-
-## 📄 Quest: A Semifinal
-
-> **Autoridade atual:** fluxo narrativo reconciliado pela spec corretiva `.compozy/tasks/011-semifinal-playtest-remediation/_spec.md` e seus ADRs. O pacote 010 permanece baseline histórico. Falas finais pertencem a `semifinal.dialogos.md`; staging, áudio e runtime pertencem às disciplinas responsáveis.
-
-### 1️⃣ Resumo Geral _(Checkpoint 0)_
-
-\[x] **Concluído**
-
-- **Nome da quest**: A Semifinal
-- **Importância na campanha**: Main + Tutorial
-- **Variável de controle geral**: [029] `v_qSemifinal_progress`
-- **Controle local da Casa Forjaprata**: [111] `v_qTutorialFundaForjaprata_stage` (`0` → `10` → `20` → `90`, terminal local)
-- **Arco narrativo**: Ato I — Mundo Comum
-- **Quest anterior**: Noite da História
-- **Conflito central**: A liberdade e paixão por futebol rúnico de Thorin entram em choque com a autoridade e o controle impostos por seu pai, o General Thordan.
-- **Objetivo narrativo global**: Apresentar Thorin, destacando seu traço de irresponsabilidade, sua paixão e excelência no futebol rúnico, e instaurar o conflito entre a independência do protagonista
-  e a autoridade de seu pai, o poderoso General Thordan.
-- **Premissa resumida**: Após despertar de um pesadelo premonitório, o talentoso porém indisciplinado Thorin corre contra o tempo para garantir a vitória em um jogo de futebol rúnico. Mas durante a
-  comemoração, um grupo de guardas reais, a mando de seu pai, exige que Thorin volte para casa.
-- **Resumo**: Thorin, um jovem talentoso mas indisciplinado, acorda de um sonho premonitório e, atrasado, corre por Gildrat para participar da semifinal de futebol rúnico. Após garantir a vitória do
-  seu time, sua celebração é interrompida por guardas reais enviados pelo pai, o General Thordan, destacando o conflito entre sua liberdade e a autoridade do pai.
-- **Locais principais**:
-
-  - Casa da Família Forjaprata,
-  - Distrito Residencial,
-  - Distrito comercial de Gildrat,
-  - Campo de futebol rúnico
-  - Vestiário do campo
-
-- **NPCs principais**:
-  - Thorin
-  - Mélia (mãe de Thorin)
-  - Sáparo-boca-de-corneta
-  - Theodore Rheed e as crianças da Noite da História (na apresentação da Casa Forjaprata)
-  - Dragobur
-  - Filena
-  - Thordan
-  - Killin
-  - Mhordred
-  - Companheiros de time
-  - Time adversário
-  - Torcida nas arquibancadas
-  - Pessoas do vestiário
-
+---
+status: implemented
+owner: Narrative Designer
+quest: A Semifinal
+document_kind: as-built narrative flow
+contract_version: 2.0.0
+runtime_snapshot: 362e2da0
+source_of_truth: frontend/data
+language: pt-BR
 ---
 
-### 2️⃣ Pré-condições Narrativas _(Checkpoint 1)_
+# A Semifinal — fluxo narrativo materializado
 
-- [x] **Concluído**
+## Autoridade e escopo
 
-| Tipo                                 | Descrição                                                                           |
-| ------------------------------------ | ----------------------------------------------------------------------------------- |
-| **Flags / Decisões anteriores**      | “Noite da História” deve ter chegado ao estado terminal `90`; o nome da criança já foi definido na VN. |
-| **Estado emocional do protagonista** | Apressado e ansioso, recém-desperto de um pesadelo                                  |
-| **Limitações ou bloqueios**          | No Distrito Comercial, acesso ao caminho do Castelo e ao World Map estão bloqueados |
+Este documento descreve o fluxo que está materializado no projeto. Em caso de conflito, prevalecem `frontend/data/CoretoQuests.json`, os mapas e bancos de `frontend/data/` e os plugins Coreto ativos.
+Os pacotes `.compozy/tasks/010-semifinal-completa` e `.compozy/tasks/011-semifinal-playtest-remediation` permanecem como histórico de decisão e tooling, não como verdade superior ao runtime atual.
 
----
+Copy exata pertence a `semifinal.dialogos.md`; comandos, posições e recovery pertencem a `semifinal.cutscene.md`; referências sonoras e visuais pertencem aos respectivos documentos disciplinares.
 
-## 3️⃣ Fluxo Visual De Cenas Resumido _(Checkpoint 2)_
+## Resumo
 
-- [ ] **Concluído**
+- Quest: `a-semifinal` / “A Semifinal”.
+- Variável canônica: `V29`.
+- Estado inicial: `0`.
+- Estado terminal: `900`.
+- Quest anterior: `noite-da-historia`, concluída em `V106 = 90` no mesmo handoff que inicia a semifinal.
+- Próxima quest: `fim-de-jogo`, iniciada em `V27 = 1` durante a chegada exterior.
+- Conflito: Thorin prioriza o futebol rúnico e sua autonomia; Thordan responde por meio da Guarda de Ferro.
+- Resultado fixo: os Machados Enferrujados vencem, Thorin fica com o Elmo Velho e é levado por Killin e Mhordred até a Casa Forja-Prata.
+- Decisão expressiva: Gentle evita combate; Resist inicia uma batalha real de Thorin e Filena contra Mhordred. Os dois caminhos convergem na mesma escolta.
 
-### Tabela de Cenas
+## Máquina canônica da quest
 
-| #   | Nome da Cena          | Cronologia (ordem dos eventos)                                                                  | Premissa                                                                                                                 |
-| --- | --------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| 1   | Pesadelo e Casa Forjaprata | Thorin adormecido → quatro quadros do pesadelo → retorno ao quarto → Rheed e as crianças materializam → apresentação da casa → reações infantis → grupo desaparece | Conectar a moldura narrativa da Noite da História ao primeiro cenário da vida de Thorin. |
-| 2   | Alvorada Atrasada     | Thorin desperta → Sáparo avisa → tentativa de sair introduz o diário → pegar e equipar a funda → saída para o Distrito Residencial | Thorin acorda atrasado e precisa recuperar a funda antes de deixar a Casa Forjaprata. |
-| 3   | Corrida Urgente por Gildrat | Distrito comercial → nove bloqueios contextuais no V40 → rota do estádio | A urgência permanece legível sem transferências laterais nem Gabs empilhadas. |
-| 4   | Bronca de Dragobur | EX fecha o field gate → VN de chegada/bronca/resposta → Gab de retomada → ordem ao vestiário | Dragobur pede um capacete velho comum e Thorin recebe um objetivo inequívoco. |
-| 5   | Estátua da Seleção de Ouro | Gag opcional → estátua íntegra → erro obrigatório de Thorin → estado alterado → equipamento manual | Thorin improvisa com o elmo histórico que Dragobur não pediu. |
-| 6   | Autorização para o Campo | Retorno equipado → VN de bronca e defesa de Thorin → autorização pragmática → Gab de retomada | O erro escala a comédia e Dragobur cede porque precisa do atacante antes do fim. |
-| 7   | Elipse Narrada da Virada | Campo EX → Rheed/crianças → derrota parcial → entrada → gol → vitória | Os quatro fatos causais substituem a partida jogável sem simular gameplay. |
-| 8   | Celebração Interrompida | EX posiciona → VN celebra/rivaliza/presenteia → EX troca rivais por guardas → VN ordena/escolhe → EX Gentle ou batalha Resist → convergência | Classe, pertencimento e coerção recebem foco sem apagar a geografia do estádio. |
-| 9   | Escolta e Handoff Exterior | Filena permanece → somente Thorin sai carregado → chegada fora da casa → próxima quest | A semifinal termina na chegada observável e devolve controle no exterior. |
+Não existe mais uma submáquina funcional em `V111`. Esse ID ainda aparece em campos inativos de páginas herdadas, com `variableValid: false`, mas não controla o tutorial. Toda a semifinal, inclusive
+funda, estádio e handoff, usa `V29`.
 
-### Beats por Cena
+| Estado | Transição que chega ao estado | Dono materializado           | Resultado observável                                                |
+| -----: | ----------------------------- | ---------------------------- | ------------------------------------------------------------------- |
+|    `0` | estado inicial                | antes de Map022 E17          | semifinal ainda não iniciada                                        |
+|   `10` | `START_STORY`                 | Map022 E17                   | handoff da Noite da História; abertura na Casa Forjaprata           |
+|   `20` | `INTRODUCE_JOURNAL`           | Map045 E7                    | diário apresentado e objetivo da funda conhecido                    |
+|   `30` | `FOUND_SLING`                 | Map045 E20                   | Funda recebida; comando de equipamento revelado                     |
+|   `40` | `LEAVE_EQUIPPED`              | Map045 E7                    | Thorin sai equipado e começa a corrida ao estádio                   |
+|   `50` | `ARRIVE_STADIUM`              | Map062 E20                   | chegada ao estádio; `People1` inicia                                |
+|   `60` | `REQUIRE_HELMET`              | Map062 E2 após a primeira VN | Dragobur exige um capacete velho equipado                           |
+|   `70` | `TAKE_HELMET`                 | Map063 E13                   | Armor 51 recebida e display da estátua alterado                     |
+|   `80` | `EQUIP_HELMET`                | Map063 E13 ou Map062 E20     | equipamento reconhecido automaticamente e transformação apresentada |
+|   `90` | `AUTHORIZE_FIELD`             | Map062 E2 após a segunda VN  | campo liberado                                                      |
+|  `100` | `ENTER_FIELD`                 | Map064 E8                    | elipse narrada da partida armada                                    |
+|  `110` | `ESTABLISH_VICTORY`           | Map064 E9                    | vitória estabelecida; finale do estádio armado                      |
+|  `120` | `COMMIT_ESCORT`               | Map062 E6                    | escolta comprometida e transferência para Map044                    |
+|  `900` | `ARRIVE_HOME`                 | Map044 E10                   | semifinal concluída; `fim-de-jogo.START` executado                  |
 
-#### Cena 1 – Pesadelo e Casa Forjaprata
+`completeQuestAtTerminal` está ativo. Os oito objetivos do diário usam os intervalos `20→30`, `30→50`, `50→60`, `60→70`, `70→80`, `80→90`, `90→110` e `120→900`.
 
-Mapas: [045] `EX_Casa da Família Forjaprata` → [049] `VN_Casa_Forjaprata` → [045] `EX_Casa da Família Forjaprata`
+## Fluxo de cenas
 
-> **Status:** este recorte está implementado. A descrição abaixo registra o comportamento atual dos eventos.
+### 1. Handoff da Noite da História
 
-| ID | Título | Premissa resumida | Tipo |
-| --- | --- | --- | --- |
-| **1-A** | **Thorin adormecido** | Na Casa Forjaprata, Thorin permanece com a animação de sono enquanto música, vento e efeito mágico preparam a passagem para a VN. | 🎬 |
-| **1-B** | **Quatro quadros do pesadelo** | A VN exibe `Pesadelo1_1` a `Pesadelo1_4`, com fades entre os quadros e as falas “Meu filho... Thorin...”, “Você precisa...”, “Rápido...” e “O QUÊ!?”. | 🎬 |
-| **1-C** | **Retorno à casa** | A VN termina e ativa Rheed e dezoito crianças na origem [045], mantendo Thorin no quarto como cenário da história contada. | 🎬 |
-| **1-D** | **Materialização do grupo** | Rheed e as crianças surgem gradualmente após uma única Animação 35. | 🎬 |
-| **1-E** | **Rheed toma posição** | Rheed anda para a esquerda, para cima e novamente para a esquerda, termina em `(9,5)`, vira-se para baixo e só então fala. | 🎬 |
-| **1-F** | **Apresentação da Casa Forjaprata** | Rheed diz: “Então, crianças, esta é a Casa da Família Forjaprata!”. A Gab é não forçada e sua conclusão é aguardada. | 🎬 |
-| **1-G** | **Reações das crianças** | E35 e E39 giram rapidamente; E33 olha para cima, salta e diz “Parece de verdade...”; E29 diz “Uau!” e gira mais devagar, com pausas. Todas terminam voltadas para cima. | 🎬 |
-| **1-H** | **Retorno à história** | Depois de todas as reações, Rheed diz: “HAHAHAHA! agora vamos voltar para história”. A conclusão da Gab é aguardada antes do fade. | 🎬 |
-| **1-I** | **Desaparecimento e limpeza** | Rheed e as crianças perdem opacidade e são retirados da cena; o cleanup também prepara Mélia e Sáparo para o despertar, sem repetir a animação de materialização. | 🎬 |
+Mapas: [022] `EX_Praca_Distrito_Residencial` → [045] `EX_Casa da Família Forjaprata`
 
-#### Cena 2 – Alvorada Atrasada
+Map022 E17, quando a história anterior alcança `20`, executa a saída de Rheed, Animation 35, fade, o vídeo `Cutscene 2`, `a-semifinal.START_STORY`, `noite-da-historia.ARRIVE_MAP045` e uma única
+transferência para Map045 `(2,4)`. O mesmo handoff deixa a Noite da História em seu terminal `90` e a semifinal em `10`.
+
+### 2. Pesadelo e apresentação da Casa Forjaprata
+
+Mapas: [045] `EX_Casa da Família Forjaprata` → [049] `VN_Casa_Forjaprata` → [045]
+
+1. Map045 E11 mantém Thorin dormindo, toca `Theme3`, `Wind2` e `Magic2`, faz fade e entra em `ABERTURA_FORJAPRATA`.
+2. Map049 E1 valida a sessão e o estado `10`, mostra `Pesadelo1_1` a `Pesadelo1_4` e entrega as quatro falas do pesadelo.
+3. Antes do retorno, a VN liga o self switch A de Rheed e das dezoito crianças em Map045.
+4. Map045 E36 apresenta o grupo por opacidade crescente após uma única Animation 35. Rheed move-se, apresenta a casa e espera as Gabs; E35/E39 giram, E33 salta e E29 reage.
+5. Uma segunda página reduz a opacidade do grupo, prepara Sáparo e o despertar e deixa páginas de recovery estáveis.
+
+Essa apresentação usa self switches locais. Ela não avança `V29`; a quest permanece em `10` até o jogador tentar sair.
+
+### 3. Despertar, diário e Funda
 
 Mapa: [045] `EX_Casa da Família Forjaprata`
 
-> **Status:** o despertar, o tutorial da funda e a saída da casa estão implementados. Esta revisão não altera a especificação das cenas posteriores.
+1. Sáparo interrompe o sono com “O jogo já começou, seu babão. É melhor correr!”.
+2. Na primeira tentativa de sair em `10`, Thorin lembra da Funda, o diário abre e `INTRODUCE_JOURNAL` leva a `20`.
+3. Em `20`, o baú E20 concede a arma 1, revela o comando `equip` e executa `FOUND_SLING`, chegando a `30`.
+4. Em `30`, a porta só aceita a saída se o ator 3 estiver com a arma 1 equipada.
+5. `LEAVE_EQUIPPED` leva a `40` e transfere Thorin para Map044 `(5,22)`. A página posterior continua impedindo a saída sem a Funda equipada.
 
-| ID | Título | Premissa resumida | Tipo |
-| --- | --- | --- | --- |
-| **2-A** | **Despertar** | Após a saída de Rheed e das crianças, a apresentação retorna ao quarto, a animação de sono termina e Thorin recupera o controle da cena. | 🎬 |
-| **2-B** | **Aviso de Sáparo** | Sáparo diz: “O jogo já começou, seu babão. É melhor correr!”. Em interações seguintes, reforça a pressa com uma Gab própria. | 🎬 |
-| **2-C** | **Semifinal em andamento** | [029] `v_qSemifinal_progress` passa a `2` e a descrição de save é atualizada para `aSemifinal`. | 🎬 |
-| **2-D** | **Tentativa de sair** | Se Thorin tentar sair com o tutorial no estado `0`, percebe que esqueceu a funda; a transição `INTRODUCE_JOURNAL` leva o estado a `10`, ativa a quest e abre o diário. | 🎮 |
-| **2-E** | **Encontrar a funda** | No estado `10`, o jogador abre o baú em `(19,14)`, recebe a arma Funda, revela o comando de equipamentos e avança por `FOUND_SLING` para o estado `20`. | 🎮 |
-| **2-F** | **Equipar antes de sair** | A porta impede a saída enquanto a Funda não estiver equipada por Thorin e apresenta uma Gab explicando o requisito. | 🎮 |
-| **2-G** | **Saída da Casa Forjaprata** | Com a Funda equipada, `LEAVE_EQUIPPED` encerra o tutorial local em `90` e Thorin é transferido para [044] `EX_Distrito Residencial Nobre`, em `(5,22)`. Uma página de recuperação repete a validação do equipamento caso a transferência seja interrompida. | 🎮 |
+### 4. Corrida por Gildrat
 
-> O registry controla a visibilidade dos objetivos 1 e 2 de `aSemifinal`. O
-> objetivo 2 (“Corra até o estádio...”) fica visível em `20`, mas sua conclusão
-> permanece externa a esta submáquina porque ocorre no fluxo geral da quest,
-> fora da Casa Forjaprata. Por isso `completedAt` é `null` e
-> `completeQuestAtTerminal` é `false`: o terminal `90` encerra apenas o tutorial
-> local, não a quest `aSemifinal` inteira.
+Mapas: [044] `EX_Distrito Residencial Nobre` → [061] `EX_Distrito_Comercial`
 
-#### Cena 3 – Corrida Urgente por Gildrat
+Map044 E18 leva ao Map061 `(4,1)`. Durante `V29 = 40`, E7, E12, E14, E15, E16, E17, E21, E23 e E28 interceptam suas ações normais com a mesma Gab urgente. As páginas usam `ForceGab=true` e
+`BypassAntiRepeat=true`; fora de `40`, retomam o comportamento herdado. E3/E5/E20 continuam sendo as entradas válidas do estádio e levam ao Map062 `(1,7)`.
 
-Mapa: [061] `EX_Distrito_Comercial`
+### 5. Chegada e ordem de Dragobur
 
-| ID | Título | Premissa resumida | Tipo |
-| --- | --- | --- | --- |
-| **3-A** | **Urgência assumida** | Thorin entra no distrito atrasado e mantém o estádio como destino legível. | 🎮 |
-| **3-B** | **Família de bloqueios V40** | Map061 E12, E21, E7, E28, E23, E14, E15, E16 e E17 impedem a ação/transferência normal e usam uma Gab urgente contextual. | 🎮 |
-| **3-C** | **Sem empilhamento** | Repetir ou alternar bloqueios substitui a Gab anterior; nenhum evento cria estado, recompensa ou transferência. | 🎮 |
-| **3-D** | **Fim do bloqueio** | Fora do V40, a família urgente deixa de mascarar o comportamento canônico aprovado de cada evento. | 🎮 |
-| **3-E** | **Entrada no estádio** | A rota canônica leva ao estádio atual e encerra o estado de corrida somente pela chegada observável. | 🎮 |
+Mapas: [062] `EX_Estadio` → [065] `VN_Semifinal` → [062]
 
-#### Cena 4 – Bronca de Dragobur
+Map062 E20 detecta a chegada em `40`, inicia `People1`, executa `ARRIVE_STADIUM` e devolve controle em `50`. Dragobur E2 abre `SEMIFINAL_DRAGOBUR_ARRIVAL`; a VN informa atraso, derrota parcial, falta
+de capacete e a ordem de buscar um capacete velho qualquer no vestiário. O retorno pelo label `SEMIFINAL_AFTER_ARRIVAL_VN` executa `REQUIRE_HELMET`, mostra a Gab de continuidade e chega a `60`.
 
-Mapas: [062] `EX_Estadio` → `VN_Semifinal` → [062] `EX_Estadio`
+E19 permanece como barreira física até `90`. As saídas E15–E17 para o Distrito Comercial também ficam bloqueadas entre `60` e `110`.
 
-| ID | Título | Premissa resumida | Tipo |
-| --- | --- | --- | --- |
-| **4-A** | **Entrada fisicamente fechada** | Dragobur E2 e o E19 sem imagem ocupam dois tiles; E19 em `(12,5)` mantém colisão e fala contextual até V90. | 🎮 |
-| **4-B** | **VN de chegada** | `SEMIFINAL_DRAGOBUR_ARRIVAL` apresenta atraso, derrota parcial, confiança de Thorin, segurança e respostas dos dois. | 🎬 VN |
-| **4-C** | **Pedido correto** | Dragobur manda Thorin buscar um capacete velho comum no vestiário; não aponta a estátua da Seleção de Ouro. | 🎬 VN |
-| **4-D** | **Retomada** | A VN conclui em V60 e uma Gab ancora o próximo passo no EX; as saídas para o Distrito Comercial ficam bloqueadas até a conclusão do estádio. Em V70, Dragobur reconhece Armor 51 equipada, reconcilia V80 e devolve controle; a interação seguinte abre a autorização. | 🎮 |
-
-#### Cena 5 – Estátua da Seleção de Ouro
+### 6. Vestiário, gag e Elmo Velho
 
 Mapa: [063] `EX_Vestiario`
 
-| ID | Título | Premissa resumida | Tipo |
-| --- | --- | --- | --- |
-| **5-A** | **Corredor dos vestiários** | O vestiário masculino permanece como rota principal; o feminino é um desvio opcional. | 🎮 |
-| **5-B** | **Gag protegido** | A primeira interação preserva retratos, reações, movimento, impacto, som, recuo e a linha exata `DL-SEM-GAG-LOCKER-001`; repetição não duplica a coreografia. | 🎬 |
-| **5-C** | **Estátua íntegra** | Antes da missão, a estátua já está visível e oferece somente uma Gab filler sobre o atraso de Thorin. Depois da ordem de Dragobur, Thorin reconhece o marco da Seleção de Ouro e percebe que o elmo histórico cabe nele. | 🎮 |
-| **5-D** | **Erro obrigatório** | Sem alternativa quest-valid, Thorin improvisa e retira o elmo da estátua; o display muda de forma persistente, o item não duplica e as falas curtas preservam a sensação de pressa. | 🎬 |
-| **5-E** | **Equipamento manual com transformação** | O jogador equipa o capacete correto em Thorin; ao fechar o menu, o objetivo conclui sem nova interação e uma transformação curta usa recuo, zoom, efeito, troca de skin já dirigida pelo equipamento e `DL-SEM-HELMET-THORIN-FIT-001`. | 🎮 |
-| **5-F** | **Retorno** | Inventário sem equipamento, capacete errado ou equipamento em outro ator não encerram o requisito. | 🎮 |
+- E6 identifica o vestiário masculino em `60`.
+- E7 oferece uma vez, de `50` até antes de `120`, o gag do vestiário feminino: câmera em E2, zoom 200%, balloons, bust, Gab, pausa, reações, Animation 39, `Damage3`, recuo de Thorin e retorno a 100%.
+  Self switch A troca a repetição pela linha curta, sem novo impacto.
+- E13 já é visível em `50` com filler sem mutação.
+- Em `60`, E13 apresenta sete Gabs, concede Armor 51 somente se o inventário ainda não a contém, toca `Open1`, executa `TAKE_HELMET` e abre `Scene_Equip`.
+- Em `70`, uma página Parallel reconhece Armor 51 realmente equipada no ator 3. Ela executa `EQUIP_HELMET` e arma um self switch local.
+- Em `80`, uma página Autorun estável recua Thorin dois passos, aproxima a câmera a 200%, toca `Equip1`, Animation 91 `Vento 1`, shake, retorna a 100% e entrega as três Gabs “Serviu!” / “Quer
+  dizer...” / “Se eu não respirar muito fundo.”.
+- Map062 E20 possui a mesma detecção e apresentação para o caso de o jogador equipar depois de voltar ao estádio.
 
-#### Cena 6 – Autorização para o Campo
+### 7. Bronca e autorização
 
-Mapas: [062] `EX_Estadio` → `VN_Semifinal` → [062] `EX_Estadio`
+Mapas: [062] `EX_Estadio` → [065] `VN_Semifinal` → [062]
 
-| ID | Título | Premissa resumida | Tipo |
-| --- | --- | --- | --- |
-| **6-A** | **VN de bronca** | `SEMIFINAL_DRAGOBUR_AUTHORIZATION` deixa claro em V80 que Dragobur pediu um capacete velho comum, não o elmo da estátua do Time de Ouro. | 🎬 VN |
-| **6-B** | **Defesa de Thorin** | Thorin explica a pressa, o encaixe perfeito e a certeza de que ele e o elmo farão história; depois se faz de desentendido. | 🎬 VN |
-| **6-C** | **Autorização pragmática** | Dragobur cede porque o jogo está acabando e precisa do atacante; V90 libera E19, a Gab de continuidade aponta o campo e o elmo ainda não é presenteado. | 🎮 |
+Em `80`, Dragobur E2 só abre `SEMIFINAL_DRAGOBUR_AUTHORIZATION` se Armor 51 continuar equipada em Thorin. A VN esclarece que ele pediu um capacete velho comum, ouve a justificativa de Thorin e cede
+porque precisa do atacante. O retorno pelo label `SEMIFINAL_AFTER_AUTHORIZATION_VN` executa `AUTHORIZE_FIELD`, chega a `90` e mostra a Gab que aponta o campo.
 
-#### Cena 7 – Elipse Narrada da Virada
+### 8. Elipse da partida
 
-Mapa: [064] `EX_Campo_de_Futebol_Runico`
+Mapas: [062] → [064] `EX_Campo_de_Futebol_Runico` → [062]
 
-| ID | Título | Premissa resumida | Tipo |
-| --- | --- | --- | --- |
-| **7-A** | **Moldura no campo** | Rheed e as crianças aparecem sobre o cenário EX reconhecível; a sequência não é VN. | 🎬 |
-| **7-B** | **Time perdendo** | `DL-SEM-MATCH-RHEED-LOSING-001` estabelece a desvantagem. | 🎬 |
-| **7-C** | **Entrada de Thorin** | `DL-SEM-MATCH-RHEED-ENTRY-001` estabelece que Thorin entrou em campo. | 🎬 |
-| **7-D** | **Gol da virada** | `DL-SEM-MATCH-RHEED-GOAL-001` atribui a Thorin a jogada decisiva. | 🎬 |
-| **7-E** | **Vitória** | `DL-SEM-MATCH-RHEED-VICTORY-001` conclui que os Machados Enferrujados venceram; as crianças apenas apoiam a leitura. | 🎬 |
-| **7-F** | **Retorno ao pós-jogo** | A moldura é limpa depois dos quatro fatos e o fluxo retorna diretamente à celebração. | 🎬 |
+E18/E21 liberam o campo com Armor 51 equipada. Map064 E8 executa `ENTER_FIELD`, chegando a `100`. E9 então:
 
-#### Cena 8 – Celebração Interrompida
+1. inicia um ciclo `Coreto_Cutscene` e toca Animation 35 no jogador;
+2. usa Rheed E9 e o anchor E4 para as seis Gabs;
+3. estabelece, nessa ordem, derrota parcial, entrada de Thorin, gol da virada e vitória;
+4. toca `Victory1` somente depois da última barrier;
+5. põe E4–E7 em opacidade zero;
+6. executa `ESTABLISH_VICTORY`, termina o lock e transfere para Map062 `(11,7)`.
 
-Mapas: [062] `EX_Estadio` → `VN_Semifinal` → [062] `EX_Estadio` → `VN_Semifinal` → [062] `EX_Estadio`
+O runtime não simula a partida, não abre batalha e não materializa uma sequência adicional de jogadas.
 
-| ID | Título | Premissa resumida | Tipo |
-| --- | --- | --- | --- |
-| **8-A** | **Saída e posições** | O time sai do campo em EX; jogadores param o movimento aleatório e Machados, Martelos, Dragobur, Filena e Thorin chegam às posições de festa. | 🎬 EX |
-| **8-B** | **VN de celebração** | `SEMIFINAL_CELEBRATION` reúne alegria do time, provocações classistas dos Martelos de Bronze, respostas dos Machados/Thorin, felicidade de Dragobur e Filena e presente permanente do elmo. | 🎬 VN |
-| **8-C** | **Troca espacial** | A VN limpa; a câmera segue os Martelos até a saída oeste. Killin e Mhordred surgem nessa faixa, cruzam uma provocação filler, deixam os rivais concluir a saída e então são acompanhados pela câmera até a posição da intervenção. | 🎬 EX |
-| **8-D** | **VN dos guardas** | `SEMIFINAL_GUARD_INTERVENTION` traz a patente de Killin e a ordem de Thordan; Thorin, Mhordred, Dragobur e Filena respondem; Filena rejeita a coerção sobre o companheiro e o coletivo. | 🎬 VN |
-| **8-E** | **Gentle ou Resist** | A escolha e a reação imediata encerram a VN sem flag persistente. Gentle volta à custódia EX; Resist volta à EX para batalha real. | 🎮 |
-| **8-F** | **Batalha Resist** | Thorin e Filena enfrentam somente Mhordred; derrota mecânica é o resultado normal, vitória excepcional também reconverge, e não há Game Over. | ⚔️ |
-| **8-G** | **Convergência** | Depois de Gentle ou cleanup da batalha, Filena fica com o time, Killin lidera e Mhordred ajuda a levar apenas Thorin. | 🎬 EX |
+### 9. Celebração, rivais e Guarda de Ferro
 
-#### Cena 9 – Escolta e Handoff Exterior
+Mapas: [062] → [065] → [062] → [065] → [062]
 
-Mapas: [062] `EX_Estadio` → [044] `EX_Distrito Residencial Nobre`
+Map062 E6 é o único Autorun do finale em `110`.
 
-| ID | Título | Premissa resumida | Tipo |
-| --- | --- | --- | --- |
-| **9-A** | **Destino declarado** | A formação da Guarda estabelece a Casa Forja-Prata como destino; Filena se despede e permanece no estádio. | 🎬 |
-| **9-B** | **Transferência única** | Thorin forma-se entre Killin e Mhordred, os três andam três passos rumo à saída E16 e o fade antecede a transferência única; nenhum outro membro do time acompanha. | 🎬 |
-| **9-C** | **Chegada observável** | O exterior faz fade in com Killin e Mhordred visíveis nas posições autoradas. “A Semifinal” só termina depois da fala de chegada; então `Fim de Jogo` começa e os guardas permanecem até o cleanup externo. | 🎬 |
-| **9-D** | **Controle exterior** | Thorin recupera controle fora da casa; a entrada e o confronto com Thordan pertencem à próxima quest. | 🎮 |
+1. E5/E14 são reposicionados ainda invisíveis; time e rivais ocupam posições estáveis.
+2. `SEMIFINAL_CELEBRATION` apresenta o coro dos Machados, o ataque classista dos Martelos, as respostas do time, o orgulho de Dragobur e o presente narrativo do elmo. Não há novo grant de Armor 51.
+3. No retorno EX, a câmera acompanha E7/E8. Os rivais movem-se a `(2,6)/(2,8)`; Killin e Mhordred recebem imagem e movem-se a `(1,7)/(1,8)`.
+4. Duas Gabs filler marcam o cruzamento. Os rivais saem para `(0,6)/(0,8)` e ficam transparentes.
+5. A câmera passa para Killin; os guardas chegam a `(11,10)/(12,10)`.
+6. `SEMIFINAL_GUARD_INTERVENTION` contém ordem, resposta, motivação de Filena e escolha.
 
-## Decisão expressiva do jogador
+### 10. Gentle, Resist e convergência
 
-- Gentle: `VN-SEM-CHOICE-GENTLE-011`; nenhuma batalha; custódia e escolta em EX.
-- Resist: `VN-SEM-CHOICE-RESIST-011` + `VN-SEM-CHOICE-RESIST-FILENA-011`; batalha Thorin+Filena contra Mhordred; derrota normal e vitória excepcional chamam a mesma saída.
-- Resultado fixo: os dois caminhos convergem em `GAB-SEM-ESCORT-011`, V120 e retorno exterior apenas de Thorin com Killin/Mhordred.
+- Gentle grava temporariamente `$gameTemp._semifinalGuardChoice = "gentle"` e volta ao EX sem batalha.
+- Resist grava `"resist"`, volta ao EX, adiciona Filena (ator 4) e abre Battle Processing contra Troop 19, com escape desativado e derrota permitida.
+- Troop 19 contém apenas Enemy 91 `Mhordred`. Vitória excepcional e derrota normal saltam para o mesmo cleanup.
+- O cleanup restaura HP máximo de Thorin e Filena, remove Filena da party e reidrata as imagens de Killin/Mhordred.
+- A variável temporária é apagada; nenhum branch é persistido em switch ou variável de quest.
 
-## Fonte atual de copy
+Na convergência, Killin e Filena falam por Gab. Killin/Mhordred formam-se em `(10,7)/(12,7)` ao redor de Thorin `(11,7)`; depois o trio anda para `(7,7)/(8,7)/(9,7)` e termina voltado para oeste. O
+fade ocorre antes de `COMMIT_ESCORT`; em seguida tocam `Move1`, `FinishCutscene` e a única transferência para Map044 `(5,23)`.
 
-Todas as falas finais, intenções, fatos e IDs de branch estão em `semifinal.dialogos.md`. Este NSD governa o fluxo narrativo e não substitui os contratos de Audio Design, Scene Presentation ou Gameplay Engineering.
+### 11. Chegada exterior
+
+Mapa: [044] `EX_Distrito Residencial Nobre`
+
+Map044 E10, em `120`, abre lock, faz fade in, foca o jogador, entrega a fala exterior de Thorin e espera sua conclusão. Só então executa `ARRIVE_HOME`, inicia `fim-de-jogo.START` e encerra o lock.
+
+Killin E16 e Mhordred E15 ficam visíveis e interativos tanto em `120` quanto em `900`. A última página elegível condicionada a `V32 >= 1` faz o cleanup posterior e os oculta. A semifinal devolve
+controle fora da casa; entrada e confronto com Thordan pertencem à próxima quest.
+
+## Contratos de continuidade
+
+- Quatro VNs da semifinal usam Map065 e retornam ao mesmo evento de origem por labels transitórios; a abertura continua usando Map049.
+- `Coreto_QuestVN` restaura BGM, BGS, tela, menu, save, transparência e followers capturados na origem.
+- Todas as cutscenes físicas que usam `Coreto_Cutscene` encerram o lock antes de entrar em VN e o readquirem apenas no label de retorno.
+- O estado terminal `900` impede repetição de presente, escolha, batalha, commit e transferência.
+- A validação perceptiva pós-remediação não está codificada no runtime e continua separada deste snapshot as-built.

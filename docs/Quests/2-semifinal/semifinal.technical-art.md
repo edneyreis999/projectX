@@ -1,133 +1,152 @@
 ---
-status: approved
+status: implemented
 owner: Technical Artist
 quest: A Semifinal
-contract_version: 1.0.0
+document_kind: as-built technical art inventory
+contract_version: 2.0.0
+runtime_snapshot: 362e2da0
 asset_manifest: .compozy/tasks/011-semifinal-playtest-remediation/fixtures/assets/asset-manifest.json
-technical_handoff: approved
-human_visual_validation: pending
-editor_validation: pending
-runtime_playtest: pending
+structural_validation: passed
+human_visual_validation: pending_retest
+editor_validation: pending_retest
 ---
 
-# A Semifinal — Contrato de Technical Art
+# A Semifinal — Technical Art materializado
 
-## Autoridade, aprovação e fronteiras
+## Autoridade
 
-Este documento é a autoridade de Technical Art para inventário, direção de geração, seleção de placeholder, formatos, dimensões, alpha, frames, pivots, safe areas e handoff asset-runtime da semifinal. Scene Presentation continua dona de staging e composição em cena; Narrative Design continua dona de identidade, expressão e intenção; Gameplay Engineering continua dono das referências finais em mapas, bancos, plugins e eventos; QA e Playtest continuam donos da evidência executada.
+Este documento registra os assets efetivamente presentes e referenciados pelo runtime da semifinal. O código/dado consumidor e os bytes atuais em frontend/img prevalecem sobre planos e prompts
+históricos.
 
-`status: approved` e `technical_handoff: approved` significam apenas que os arquivos estão materializados, identificados, estruturalmente carregáveis e ligados ao manifest. Não significam que RPG Maker MZ abriu os arquivos, que a composição ficou adequada em cena, que não há clipping, que o placeholder parece final ou que houve Playtest. Todas essas decisões permanecem `pending`.
+A reinspeção estrutural deste snapshot confirmou 26 entradas no manifest: todos os paths existem e todos os SHA-256 atuais coincidem com os hashes registrados. Isso prova integridade de arquivo, não
+adequação estética em editor ou jogo.
 
-Esta entrega não autoriza editar `frontend/data/*.json`, bancos, mapas, plugins, notetags, contratos de outras disciplinas ou evidência humana.
+## Superfícies consumidoras
 
-## Fontes consultadas
+| Superfície                        | Uso visual materializado                                                           |
+| --------------------------------- | ---------------------------------------------------------------------------------- |
+| Map062 EX_Estadio                 | Dragobur, Filena, Machados, Martelos, reservas, Killin e Mhordred; finale EX/VN    |
+| Map063 EX_Vestiario               | quatro jogadoras, display íntegro/alterado da estátua, gag e transformação do elmo |
+| Map064 EX_Campo_de_Futebol_Runico | companheiros, adversários e Rheed; elipse da vitória                               |
+| Map065 VN_Semifinal               | background 1280×720 e busts das quatro sessões                                     |
+| Battle Troop 19                   | battler side-view de Mhordred                                                      |
+| menus/equipamento                 | IconSet slot 132 e skin OldHelmet de Thorin                                        |
 
-- `.compozy/tasks/011-semifinal-playtest-remediation/_spec.md`, `_user_stories.md`, `_dx.md`, `_tests.md`, `_tasks.md` e `task_02.md`.
-- ADR-001, ADR-003, ADR-004 e ADR-007 da linhagem 011; ADR-005 informa o placeholder de batalha.
-- `docs/domains/technical-artist/README.md` para o contrato de intake e a separação entre checks técnicos e estética.
-- `docs/Quests/2-semifinal/semifinal.cutscene.md`, `semifinal.dialogos.md`, `semifinal.audio.md` e `semifinal.NSD.fluxo-cenas.md` para consumidores, estados, staging, speakers e fronteiras EX/VN.
-- `frontend/data/Map044.json`, `Map061.json`, `Map062.json`, `Map063.json` e `Map064.json`, inspecionados somente em leitura.
-- `frontend/img/characters/Estadio/Estadio1.png`, `Estadio2.png` e `Vestiario/Cabide.png` como fontes existentes.
-- `frontend/img/pictures/Portraits/Futebol/`, `Portraits/Principal/`, `frontend/img/parallaxes/` e `frontend/img/sv_actors/Mhordred.png` como inventário de reuso.
+## Character sheets do estádio
 
-## Conflitos resolvidos
+Os sprites extraídos de Estadio1.png/Estadio2.png usam 154×282 RGBA, com grade 3×4 e pivot inferior central.
 
-1. `_spec.md` define o role machine-checkable `battler`; `_dx.md` lista apenas quatro roles no texto de intake. O schema de `_spec.md`, UT-049 e o requisito explícito de não omitir Mhordred prevalecem. `battler` integra o manifest e usa `frontend/img/sv_actors/Mhordred.png` como placeholder técnico.
-2. A build atual ainda contém páginas V29 legadas que serão corrigidas pelo Gameplay writer downstream. Para esta task, reachability cobre os 14 estados canônicos e também registra os assets das páginas atualmente observáveis que o plano 011 torna alcançáveis; nenhuma página de Map010 fornece waiver.
-3. O arquivo `Cabide.png` contém o estado de capacete e suporte. A tentativa de remover apenas o capacete via imagegen produziu fundo preto e drift de sheet, portanto foi rejeitada. `!$Armadura.png` usa `Cabide.png` como placeholder existente e permanece provisório; isso evita path ausente sem inventar aprovação visual.
-4. Não existia background de estádio 1280×720 adequado. Foi gerado `VN_Semifinal_BG.png`, mas sua adequação para as quatro VNs continua pendente de revisão em editor, cena e Playtest.
+| Asset                 | Referências serializadas atuais             |
+| --------------------- | ------------------------------------------- |
+| Estadio/$Companheiro1 | Map064 E1                                   |
+| Estadio/$Companheiro2 | Map062 E4; Map064 E3                        |
+| Estadio/$Adversario1  | Map062 E8; Map064 E4                        |
+| Estadio/$Adversario2  | Map064 E7                                   |
+| Estadio/$Adversario3  | Map062 E7; Map064 E5                        |
+| Estadio/$Adversario4  | Map064 E6; placeholder duplicado/provisório |
+| Estadio/$Torcedor1    | Map062 E10                                  |
+| Estadio/$Torcedor2    | Map062 E9                                   |
+| Estadio/$Torcedor3    | Map062 E11                                  |
 
-## Contrato de reachability
+Map064 conserva páginas herdadas adicionais com Actor3/People4. A tabela acima registra referências da família Estadio, não afirma qual página vence para todo valor externo de V61.
 
-O resolver 011-local avalia a última página elegível nos estados V29 `0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 900`. Ele coleta `page.image.characterName`, argumentos aninhados de comandos de plugin e os consumidores semânticos abaixo. Switches, self-switches, itens, atores e variáveis que não sejam V29 entram por um `conditionResolver` explícito; não são presumidos como verdade para ocultar ou inventar página.
+## Vestiário e estátua
 
-Os quatro consumidores VN são:
+| Asset                            | Resolução/estado          | Consumidor                                 |
+| -------------------------------- | ------------------------- | ------------------------------------------ |
+| Estadio/Vestiario/$Menina1       | existente, 154×282 RGBA   | Map063 E5                                  |
+| Estadio/Vestiario/$Menina2       | existente, 154×282 RGBA   | Map063 E3                                  |
+| Estadio/Vestiario/$Menina3       | existente, 154×282 RGBA   | Map063 E4                                  |
+| Estadio/Vestiario/$Menina4       | existente, 154×282 RGBA   | Map063 E2                                  |
+| Estadio/Vestiario/!$Capacete.png | existente, 144×384 RGBA   | Map063 E13 em V29 50/60                    |
+| Estadio/Vestiario/!$Armadura.png | placeholder, 144×384 RGBA | Map063 E13 em V29 70/80                    |
+| Estadio/Vestiario/Cabide.png     | fallback existente        | fonte byte-idêntica dos dois objetos acima |
 
-| Sessão | Background | Busts mínimos | Safe-area crítica |
-| --- | --- | --- | --- |
-| `SEMIFINAL_DRAGOBUR_ARRIVAL` | `VN_Semifinal_BG.png` | Thorin e Dragobur | caixa inferior livre; speakers nas bordas |
-| `SEMIFINAL_DRAGOBUR_AUTHORIZATION` | `VN_Semifinal_BG.png` | Thorin com elmo e Dragobur | leitura da reação sem cobrir texto |
-| `SEMIFINAL_CELEBRATION` | `VN_Semifinal_BG.png` | Thorin, Dragobur, Filena, Machados e Martelos | alternância de grupo sem caricatura de classe |
-| `SEMIFINAL_GUARD_INTERVENTION` | `VN_Semifinal_BG.png` | Thorin, Filena, Killin e Mhordred | choice e patente legíveis; cleanup total |
+Os três arquivos Cabide, !$Capacete e !$Armadura têm o mesmo SHA-256:
 
-O manifest registra somente paths reais. Um missing alcançável retorna `reference_missing` mesmo se Map010 tiver usado o mesmo nome.
+0a6cb74a791962805dfe59428d9f47d2a2102c887f292a8bae6e2a30fc504635
 
-## Inventário e decisões
+Consequência visual do código: a troca de !$Capacete para !$Armadura muda o path/página, mas os bytes são idênticos. O runtime, portanto, não garante que a estátua pareça sem o capacete; essa leitura
+continua dependente de substituição futura do placeholder ou validação humana que aceite o resultado.
 
-### Character sheets do estádio
+## Elmo Velho, ícone e skin
 
-`Estadio1.png` e `Estadio2.png` são atlases RGBA de 616×564. Cada destino `$` foi derivado por crop sem resampling de 154×282, preservando o bloco 3×4, alpha, frame geometry e pivot inferior central. O manifest registra o crop exato em `source`.
+Armor 51 está materializada como:
 
-| Destinos | Fonte | Resolução | Consumidores |
-| --- | --- | --- | --- |
-| `$Adversario1`–`$Adversario4` | `Estadio1.png` | existing/retargeted; `$Adversario4` é placeholder duplicado provisório | Map062 E7/E8; Map064 E4–E7 |
-| `$Companheiro1`–`$Companheiro2` | `Estadio1.png` | existing/retargeted | Map062 E4; Map064 E1/E3 |
-| `$Torcedor1`–`$Torcedor3` | `Estadio1.png` / `Estadio2.png` | existing/retargeted | Map062 E9/E10/E11 |
+| Campo             | Valor                                             |
+| ----------------- | ------------------------------------------------- |
+| nome              | Elmo Velho                                        |
+| descrição         | “Elmo velho que Dragobur usava quando mais novo.” |
+| iconIndex         | 132                                               |
+| etypeId / atypeId | 3 / 3                                             |
+| notetag           | xAnimaSet OldHelmet                               |
+| parâmetros        | todos zero                                        |
+| preço             | 0                                                 |
 
-### Vestiário e estátua
+O slot 132 do IconSet.png foi restaurado. O arquivo atual é 512×640 RGBA, SHA-256 b18655161c41e6219b2f5298025caeb719cd55291a8e1b44bb7513be58d9ba96.
 
-| Destino | Fonte | Resolução | Estado/consumidor |
-| --- | --- | --- | --- |
-| `$Menina1`–`$Menina4` | quadrantes inferiores de `Estadio2.png` | existing/retargeted | Map063 E2–E5 |
-| `!$Capacete.png` | `Vestiario/Cabide.png` byte-idêntico | existing/retargeted | Map063 E13 em V60 |
-| `!$Armadura.png` | `Vestiario/Cabide.png`, registrado no manifest como fallback técnico | placeholder | Map063 E13 em V70/V80 |
-| `IconSet.png`, slot 132 | slot 132 do `IconSet.png` legado em `5540b524` | existing/retargeted | Armor 51 `Elmo Velho` |
+Actor 3 Thorin declara xAnimaSet Armor e xAnimaSet OldHelmet. O evento de transformação não chama ChangePlayerAnimationSet; a aparência depende do vínculo da armadura com AnimaX. O bust usado nas VNs
+depois do elmo é Portraits/Principal/Thorin Helmet.png.
 
-Os objetos `!$` mantêm 144×384 RGBA, células 48×96 e pivot inferior central. O placeholder de armadura pode carregar, mas ainda pode falhar semanticamente por mostrar o capacete; isso é deliberadamente visível na matriz humana e não é tratado como asset final.
+## VN_Semifinal
 
-O banco já apontava Armor 51 para `iconIndex: 132`, mas esse slot estava transparente no `IconSet.png` atual. A remediação restaura exatamente o tile legado de 32×32 no mesmo índice e verifica que nenhum pixel fora do slot mudou; adequação e leitura no menu continuam pendentes de Playtest humano.
+Background:
 
-### VNs e busts
+- path: frontend/img/parallaxes/VN_Semifinal_BG.png;
+- dimensões: 1280×720;
+- modo: RGB sem alpha;
+- SHA-256: 0470589a8e863ba3a998b61f854d74865024247b1811276cf6a9d9485139ae39;
+- consumidor: parallax de Map065;
+- origem: geração por imagegen, redimensionada de 1672×941;
+- safe area autorada: x 72, y 500, largura 1136, altura 172.
 
-- Background gerado: `frontend/img/parallaxes/VN_Semifinal_BG.png`, 1280×720 RGB sem alpha. Safe area de texto: `(72,500,1136,172)` no canvas 1280×720.
-- Reuso principal: `Thorin Helmet.png`, `Treinador.png`, `Filena.png`, `Kilin.png`, `Mhordred.png`.
-- Reuso coletivo: `Portraits/Futebol/Companheiro1.png` e `Adversario1.png` como identidades mínimas de Machados e Martelos.
-- Todos os busts preservam pixels e alpha existentes; o manifest não afirma que expressão, escala ou direção de olhar já passaram em cena.
+### Busts por sessão
 
-Prompt final do background, executado com built-in imagegen:
+| Sessão                           | Busts referenciados                                                         |
+| -------------------------------- | --------------------------------------------------------------------------- |
+| SEMIFINAL_DRAGOBUR_ARRIVAL       | Treinador; Thorin Helmet                                                    |
+| SEMIFINAL_DRAGOBUR_AUTHORIZATION | Treinador; Thorin Helmet                                                    |
+| SEMIFINAL_CELEBRATION            | Futebol/Companheiro1; Futebol/Adversario1; Thorin Helmet; Filena; Treinador |
+| SEMIFINAL_GUARD_INTERVENTION     | Treinador; Kilin; Thorin Helmet; Mhordred; Filena                           |
 
-> RPG Maker MZ VN background; wide runic-football stadium interior in a dwarven working district; stone-and-metal architecture, rune-marked pitch, modest stands, warm afternoon light; inked fantasy storybook style in muted sepia/ochre; lower 32% quiet for dialogue and both edges free for busts; no foreground people, text, logo, watermark, UI or modern branding.
+Todos os busts acima existem e os hashes coincidem com o manifest. O runtime alterna um bust por vez no Picture ID 1 e limpa IDs 1–10 antes de FinishVisualNovel.
 
-O resultado original 1672×941 foi resampled uma vez para 1280×720 e o checksum final está no manifest.
+## Mhordred na batalha Resist
 
-### Battler
+Enemy 91 usa:
 
-`frontend/img/sv_actors/Mhordred.png` existe, é RGBA 676×547 e foi selecionado como placeholder load-safe do futuro Enemy de Mhordred/Troop 19. O role `battler` está aprovado para handoff técnico. Compatibilidade real do sheet com o renderer inimigo, escala, pivot, leitura da força e duração perceptiva da batalha continuam pendentes.
+- nome e battlerName Mhordred;
+- Sideview Battler Mhordred;
+- Sideview Idle Motion wait;
+- ATB Field Gauge Face Bosses, 0;
+- sem notetag TP Mode Boss;
+- parâmetros 50000 HP, 5000 MP e 500 nos demais;
+- apenas Skill 1 na lista de ações.
 
-## Manifest e verdade técnica
+O asset frontend/img/sv_actors/Mhordred.png existe, mede 676×547 RGBA e tem SHA-256 b78570b443ae133bf48de9441515403215dcee2ff42d3ad621baf6dd6b62311f. Ele continua classificado como placeholder: o
+arquivo é um sheet side-view de ator reaproveitado como battler de inimigo e não possui aprovação visual/runtime registrada.
 
-O manifest `semifinal-assets/v1` registra por entrada:
+## Placeholders e riscos ainda reais
 
-- role incluindo `battler`;
-- path repo-relative e case-sensitive;
-- dimensões e alpha lidos do PNG;
-- anchor e safe area no canvas 1280×720;
-- consumidores semânticos;
-- SHA-256 dos bytes finais;
-- resolution `existing`, `generated` ou `placeholder`;
-- fonte/crop/fallback quando aplicável, com todo fallback registrado também como entrada do manifest;
-- `technicalArtistReview: approved` e `humanVisualReview: pending`.
+| Asset            | Estado estrutural      | Risco que o código não resolve                                        |
+| ---------------- | ---------------------- | --------------------------------------------------------------------- |
+| !$Armadura       | carregável e hasheado  | é byte-idêntico ao display com capacete; pode comunicar estado errado |
+| $Adversario4     | carregável e hasheado  | duplicação provisória; distinção visual não aprovada                  |
+| Mhordred battler | carregável e hasheado  | escala, pivot e compatibilidade com renderer inimigo pendentes        |
+| VN_Semifinal_BG  | carregável e hasheado  | composição, contraste, estilo e safe area em cena pendentes           |
+| busts            | existentes e hasheados | expressão, direção de olhar, escala e clipping pendentes              |
 
-O resolver pode provar schema, path exato, PNG estrutural, checksum, dimensões, alpha, consumidor, reachability e fallback existente. Ele não pode aprovar estilo, composição, clipping, legibilidade, coerência contextual, deployment real ou adequação do placeholder.
+## Handoff atual
 
-## Matriz de inspeção humana pendente
+As referências finais já estão materializadas; não são mais um pedido futuro a Gameplay. Uma alteração posterior deve preservar:
 
-Nenhum resultado abaixo foi executado.
+1. case exato dos paths;
+2. slot 132 de Armor 51;
+3. vínculo OldHelmet entre ator e armadura;
+4. parallax de Map065;
+5. busts consumidos pelas quatro páginas VN;
+6. Enemy 91/Troop 19 e o battler Mhordred;
+7. distinção entre integridade estrutural e aceite visual.
 
-| Grupo | Editor | Cena 1280×720 | Playtest | Critérios humanos |
-| --- | --- | --- | --- | --- |
-| jogadores e reservas do estádio | pending | pending | pending | frames/direções, escala, pivot, limites horizontais, distinção e colisão percebida |
-| jogadoras do vestiário | pending | pending | pending | identidade, animação, clipping, contexto e navegação |
-| `!$Capacete` | pending | pending | pending | leitura do elmo, estado V60, pivot e interação |
-| `!$Armadura` placeholder | pending | pending | pending | ausência perceptível do elmo; reprovar se o fallback comunicar estado errado |
-| `VN_Semifinal_BG` | pending | pending | pending | estilo, safe area, contraste, gate/festa/guardas e continuidade EX/VN |
-| busts VN | pending | pending | pending | speaker, expressão, direção de olhar, escala, clipping e choice |
-| battler Mhordred placeholder | pending | pending | pending | load real, compatibilidade do renderer, escala, pivot e leitura de poder |
-
-Cada execução futura deve registrar observação, resultado, evidência, tester e data. Um pass estrutural não altera nenhum `pending` desta matriz.
-
-## Handoff para Gameplay e QA
-
-Gameplay deve consumir o hash atual deste contrato e do manifest, validar as referências finais depois de planejar as páginas canônicas e bloquear qualquer divergência com erro estável. Nenhum writer pode escolher outro path silenciosamente, usar nome com case diferente, omitir o battler ou restaurar a whitelist herdada de Map010.
-
-QA deve abrir os assets no editor e nas cenas reais, cobrir os estados V50/V60/V70/V80/V90/V110/V120 e as quatro VNs, e manter placeholders como provisórios até decisão humana explícita.
+Editor e reteste humano devem observar pelo menos V29 50/60/70/80, a transformação nos dois owners possíveis, as quatro VNs, a elipse no campo e a batalha Resist. structural_validation passed não
+altera human_visual_validation/editor_validation.
