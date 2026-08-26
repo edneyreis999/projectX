@@ -1,70 +1,12 @@
-# Sobre o Projeto
+# Decisões do projeto
 
-Daratrine - A Origem e um RPG em desenvolvimento no RPG Maker MZ com combate turn-based tatico (ATB). O projeto usa plugins do VisuStella (Battle Core, ATB, Skills & States Core, TP System, State Tooltips) como base do combate, TypeScript com Clean Architecture para logica de negocio, e plugins customizados em JS. Sistema de combate estruturado em 3 eixos: Efeito (Battle Core), Tempo (ATB) e Recurso (TP System). Quatro personagens jogaveis (Filena, Kilin, Mhordred, Thorin) com identidades mecanicas distintas e sinergias de time.
+- Consulte `docs/architecture/` e `docs/project-conventions/` antes de decidir arquitetura ou padrões do projeto.
+- Consulte as fontes relevantes em `docs/` antes de propor game design ou direção criativa; para combate, leia `docs/GDD/06_Combat/FUNDAMENTOS-COMBAT-SYSTEM.md`, `DIRETRIZES-DESIGN-COMBAT-SYSTEM.md` e `CLASSIFICACAO-MODIFICADORES.md`.
+- Registre as fontes consultadas e explicite conflitos com a documentação antes de promover uma decisão de design.
+- Consulte os contratos em `docs/Quests/<ordem>-<slug-da-quest>/` antes de implementar uma quest; encaminhe conflitos à disciplina autora ou a uma decisão aprovada.
 
-# Estrutura de Pastas
+# Entregas
 
-## projectX/scripts
-
-Scripts auxiliares para analise de mapa, conversao de common events para XML, busca de variaveis/switches livres e deteccao de assets nao utilizados. Detalhes em `scripts/CLAUDE.md` (futuro).
-
-## projectX/Obsidian
-
-Base de conhecimento narrativa e worldbuilding do universo de Daratrine. Contem anotacoes gerais, lore e imagens de referencia. Detalhes em `Obsidian/CLAUDE.md` (futuro).
-
-## projectX/frontend
-
-Codigo-fonte do jogo em RPG Maker MZ. TypeScript (Clean Architecture: domain, application, dto, adapters, infrastructure), plugins JS compilados, testes Jest, dados JSON do jogo e assets. Detalhes em `frontend/CLAUDE.md` (futuro).
-
-## projectX/docs
-
-Documentacao de design: GDD com diretrizes de combate, balanceamento e design de skills; definicoes de quests; e documentacao de integracao RPG Maker MZ para IAs. Detalhes em `docs/CLAUDE.md` (futuro).
-
-# Configuracoes Globais dos Plugins VisuStella
-
-Configuracoes que afetam todo o sistema de combate e devem ser consideradas em decisoes de design:
-
-- **Damage Style: MOBA** (BattleCore) - Formula: `formula * ATK * (100 / (100 + DEF))`. O campo "formula" do RPG Maker funciona como multiplicador
-- **Critical Base Multiplier: 2.0** (BattleCore) - Modificavel via notetags `<MODIFY CRITICAL MULTIPLIER>`, `<ALWAYS CRITICAL>`
-- **Guard: 50% reducao** (BattleCore) - Bypassavel com notetag `<UNBLOCKABLE>`
-- **Buff/Debuff: max 2 stacks, 25% por stack** (SkillsStatesCore) - Cada stack de buff/debuff altera o parametro em 25%
-- **ATB Speed: `sqrt(agi) + 1`** (BattleSystemATB) - Determina velocidade de enchimento do gauge
-- **Cast Time: `sqrt(|speed|) / speed`** (BattleSystemATB) - Skills com speed negativo tem cast time proporcional
-- **Stuns resetam o gauge ATB** (BattleSystemATB)
-- **TP Modes por personagem** (EnhancedTpSystem): Momentum (Filena), Guarda (Kilin), Furia (Mhordred), Foco (Thorin), Boss (inimigos). Cada modo define MaxTP, TCR, Preserve ON/OFF, Regen e formulas de geracao
-
-# Documentacao de Referencia
-
-- `docs/GDD/06_Combat/FUNDAMENTOS-COMBAT-SYSTEM.md` - Principios do sistema de combate: filosofia, identidade dos personagens, loop central, balanceamento macro e design de inimigos
-- `docs/GDD/06_Combat/DIRETRIZES-DESIGN-COMBAT-SYSTEM.md` - Diretrizes praticas para criacao e balanceamento de skills, kits de personagem e sinergias
-- `docs/GDD/06_Combat/CLASSIFICACAO-MODIFICADORES.md` - Sistema de score numerico para classificacao e balanceamento de modificadores de skills nos 3 eixos do combate
-
-# Alteração na pasta `frontend/data`
-
-- Sempre dar prefencia por notetags VisuStella ou Coreto.
-- Procurar em `docs/rpg-maker-for-ia` se já existe algum plugin VisuStella que resolve o problema.
-
-# Arquitetura e Convenções
-
-- Quando a tarefa tangenciar arquitetura ou padrões do projeto, consultar os documentos relevantes em `docs/architecture/` e `docs/project-conventions/`.
-
-# Brainstorms e Direção de Design
-
-- Antes de iniciar qualquer brainstorm, proposta criativa ou discussão de game design, consultar primeiro as fontes relevantes em `docs/`.
-- Registrar quais documentos foram consultados e explicitar conflitos entre a proposta e a documentação existente antes de promover uma nova decisão.
-
-# Documentos Multidisciplinares por Quest
-
-- Cada quest deve manter seus contratos de game design em `docs/Quests/<ordem>-<slug-da-quest>/`.
-- O nome-base dos arquivos deve acompanhar o slug legível da quest. Quando aplicável, usar `<quest>.dialogos.md` para o Narrative Designer, `<quest>.audio.md` para o Audio Designer e `<quest>.cutscene.md` para o Scene Presentation Designer.
-- Outros agentes GAME-DEV podem criar documentos próprios no mesmo diretório usando `<quest>.<disciplina>.md`, desde que declarem autoridade, status, fontes e fronteiras de implementação.
-- O Gameplay Engineer deve consultar esses contratos antes de implementar e não pode reescrever silenciosamente decisões que pertencem à disciplina autora. Conflitos devem voltar ao documento de origem ou a uma decisão aprovada.
-- O documento de cutscene deve especificar beats, controles de espera, movimentos, câmera, zoom, Gabs, sons, cleanup, recuperação e critérios humanos. Muitas falas em uma cutscene física são um sinal obrigatório para reavaliar se a cena deve usar VN conforme `docs/project-conventions/scene-routing-ex-vn.md`.
-
-# Mensagens de Commit e Pull Request
-
-- Ao preparar uma mensagem de commit, seguir `.gitmessage`, mesmo quando o commit for criado com `-m` ou por uma ferramenta que não abra o template automaticamente.
-- Ao preparar um pull request, seguir `.github/pull_request_template.md` e priorizar o resultado observável do ponto de vista do jogador.
-- Explicar a experiência antes e depois, por que a mudança importa, como foi validada e quais capturas podem demonstrá-la em um devlog.
-- Se uma alteração não tiver impacto direto para o jogador, declarar isso e explicar o que ela viabiliza. Nunca inventar um benefício para preencher o template.
-- Não afirmar que houve playtest, teste, captura ou validação sem evidência de que a atividade foi realmente executada.
+- Use a skill `deslop` como última revisão antes de concluir qualquer tarefa no repositório.
+- Siga `.gitmessage` ao preparar mensagens de commit, inclusive com `git commit -m`.
+- Siga `.github/pull_request_template.md` ao preparar pull requests.
