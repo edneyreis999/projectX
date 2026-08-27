@@ -44,6 +44,9 @@ function createWorkspace({ includeTests = false } = {}) {
     'frontend/img/charactersAA/Thorin_OldHelmet',
     'frontend/js',
     'frontend/scripts',
+    'frontend/test-support',
+    'scripts/lib/validation-evidence.js',
+    'scripts/check-validation-evidence.js',
   ])
     copyPath(root, relativePath);
   const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, `${FEATURE}/fixtures/assets/asset-manifest.json`), 'utf8'));
@@ -70,6 +73,12 @@ function createWorkspace({ includeTests = false } = {}) {
     copyPath(root, 'frontend/__tests__');
     fs.symlinkSync(path.join(ROOT, 'node_modules'), path.join(root, 'node_modules'), 'dir');
   }
+  run('git', ['init', '-q'], root);
+  run('git', ['config', 'user.name', 'Semifinal Harness'], root);
+  run('git', ['config', 'user.email', 'harness@example.invalid'], root);
+  run('git', ['add', '.'], root);
+  run('git', ['commit', '-qm', 'test: seed disposable validation workspace'], root);
+  run('git', ['branch', 'develop'], root);
   return root;
 }
 
@@ -110,8 +119,6 @@ beforeAll(() => {
   goldenRoot = createWorkspace({ includeTests: true });
   const evidenceRoot = path.join(goldenRoot, `${FEATURE}/evidence`);
   fs.rmSync(evidenceRoot, { recursive: true, force: true });
-  run('git', ['init', '-q'], goldenRoot);
-  run('git', ['add', '.'], goldenRoot);
 
   const commands = [
     [process.execPath, [`${FEATURE}/scripts/apply-semifinal-remediation-narrative.mjs`, '--check']],
@@ -121,7 +128,7 @@ beforeAll(() => {
     [process.execPath, [VALIDATOR, '--output', STATIC_EVIDENCE]],
   ];
   const results = commands.map(([command, args]) => run(command, args, goldenRoot));
-  const npm = run('npm', ['run', 'test:semifinal-remediation'], goldenRoot, {
+  const npm = run('npm', ['run', 'test:semifinal'], goldenRoot, {
     timeout: 240000,
     env: { SEMIFINAL_REMEDIATION_CHILD: '1' },
   });
@@ -137,19 +144,30 @@ describe('UT-055 — truthful evidence model', () => {
   test('distinguishes static, blocked, pending runtime, and unsupported stale-save states', () => {
     const evidence = JSON.parse(fs.readFileSync(path.join(ROOT, STATIC_EVIDENCE), 'utf8'));
     expect(evidence).toMatchObject({
-      schemaVersion: 'semifinal-validation/v1',
+      schemaVersion: 'semifinal-validation/v2',
       status: 'pass',
       feature: '011-semifinal-playtest-remediation',
       failures: [],
       runtime: 'pending_editor_and_playtest',
       staleSaveSupport: 'unsupported',
     });
-    expect(evidence.resultStates).toEqual(['pass', 'fail', 'blocked', 'not_executed', 'stale_save_unsupported']);
+    expect(evidence.resultStates).toEqual(['pass', 'fail', 'blocked', 'not_executed', 'remediated_pending_retest', 'stale_save_unsupported']);
+    expect(evidence.provenance).toMatchObject({
+      schemaVersion: 'validation-evidence/v1',
+      generator: { name: 'validate-semifinal-remediation', version: '2.0.0' },
+      revision: {
+        headSha: expect.stringMatching(/^[0-9a-f]{40}$/),
+        baseSha: expect.stringMatching(/^[0-9a-f]{40}$/),
+      },
+    });
+    expect(evidence.dimensions).toMatchObject({ static_verified: 'pass', release_ready: 'blocked' });
     expect(evidence.checks.every(check => check.result === 'pass')).toBe(true);
     const humanCases = evidence.checks.at(-1).details.cases;
     const failedIds = humanCases.filter(item => item.result === 'fail').map(item => item.id);
+    const pendingRetestIds = humanCases.filter(item => item.result === 'remediated_pending_retest').map(item => item.id);
     expect([[], ['E2E-004', 'E2E-005'], ['E2E-004', 'E2E-005', 'E2E-006'], ['E2E-002', 'E2E-004', 'E2E-005', 'E2E-006', 'E2E-007', 'E2E-008']]).toContainEqual(failedIds);
-    expect(humanCases.filter(item => item.result === 'not_executed')).toHaveLength(15 - failedIds.length);
+    expect([[], ['E2E-002', 'E2E-004', 'E2E-005', 'E2E-006', 'E2E-007', 'E2E-008']]).toContainEqual(pendingRetestIds);
+    expect(humanCases.filter(item => item.result === 'not_executed')).toHaveLength(15 - failedIds.length - pendingRetestIds.length);
   });
 });
 
@@ -234,7 +252,7 @@ describe('UT-071 — exact validator errors and production immutability', () => 
 
 describe('UT-072 / IT-023 — explicit non-recursive npm surface', () => {
   test('UT-072: package target lists every suite explicitly and serially', () => {
-    const command = require(path.join(ROOT, 'package.json')).scripts['test:semifinal-remediation'];
+    const command = require(path.join(ROOT, 'package.json')).scripts['test:semifinal'];
     const named = [...command.matchAll(/frontend\/[^ ]+\.test\.js/g)].map(match => match[0]);
     expect(named).toHaveLength(14);
     expect(command).toContain('Coreto_Cutscene.test.js');
@@ -276,7 +294,7 @@ describe('E2E-001 — disposable public golden path', () => {
     expect(JSON.parse(gameplayApply.stdout)).toEqual({ status: 'applied', feature: '011-semifinal-playtest-remediation', writer: 'gameplay-engineer' });
     expect(JSON.parse(validator.stdout)).toEqual(EXPECTED_PASS);
     if (golden.npm.status !== 0) throw new Error(`golden npm failed:\n${golden.npm.stdout}\n${golden.npm.stderr}`);
-    expect(golden.diff.status).toBe(0);
+    if (golden.diff.status !== 0) throw new Error(`golden diff failed:\n${golden.diff.stdout}\n${golden.diff.stderr}`);
     expect(golden.diff.stdout).toBe('');
     const checklist = fs.readFileSync(path.join(goldenRoot, HUMAN_EVIDENCE), 'utf8');
     expect(checklist.match(/^- result: `not_executed`$/gm) ?? []).toHaveLength(15);

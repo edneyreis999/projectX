@@ -149,25 +149,32 @@ O recorte estará bem representado no NSD quando:
 
 ## Glossário do domínio
 
-**Bronca de Dragobur**: cutscene cômica em que o treinador reage ao atraso de Thorin enquanto seu time está perdendo e seu atacante principal ainda não entrou em campo.  
+**Bronca de Dragobur**: cutscene cômica em que o treinador reage ao atraso de Thorin enquanto seu time está perdendo e seu atacante principal ainda não entrou em campo.
+
 _Evitar_: tratar a cena apenas como “bronca pública” sem registrar a função cômica e o desespero esportivo.
 
-**Busca do capacete**: microfluxo jogável que começa quando Dragobur impede Thorin de entrar em campo e termina quando Thorin retorna equipado ao treinador.  
+**Busca do capacete**: microfluxo jogável que começa quando Dragobur impede Thorin de entrar em campo e termina quando Thorin retorna equipado ao treinador.
+
 _Evitar_: “capacete perdido” quando isso sugerir que Thorin perdeu especificamente um item próprio; o item obtido é o capacete antigo de Dragobur.
 
-**Seleção de ouro**: formação histórica associada ao uniforme exposto na estátua dentro do vestiário masculino.  
+**Seleção de ouro**: formação histórica associada ao uniforme exposto na estátua dentro do vestiário masculino.
+
 _Evitar_: tratar como simples decoração sem função narrativa.
 
-**Capacete antigo de Dragobur**: equipamento obtido por Thorin na estátua do vestiário e usado para cumprir o requisito de entrada em campo.  
+**Capacete antigo de Dragobur**: equipamento obtido por Thorin na estátua do vestiário e usado para cumprir o requisito de entrada em campo.
+
 _Evitar_: “capacete de Thorin”.
 
-**Salto narrativo da partida**: solução temporária que substitui a partida jogável por uma cutscene no mapa EX em que Rheed resume o resultado.  
+**Salto narrativo da partida**: solução temporária que substitui a partida jogável por uma cutscene no mapa EX em que Rheed resume o resultado.
+
 _Evitar_: “visual novel”, pois a cena não ocorre em mapa VN.
 
-**Cutscene de Rheed no mapa EX**: aparição de Rheed e das crianças sobre o cenário para narrar um trecho não jogado da história, seguindo linguagem semelhante à apresentação da Casa Forjaprata.  
+**Cutscene de Rheed no mapa EX**: aparição de Rheed e das crianças sobre o cenário para narrar um trecho não jogado da história, seguindo linguagem semelhante à apresentação da Casa Forjaprata.
+
 _Evitar_: chamar essa sequência de VN.
 
-**Comemoração interrompida**: sequência pós-jogo em que a vitória é celebrada até a chegada dos guardas reais, gerando incômodo, desconforto e humor antes da imposição da autoridade.  
+**Comemoração interrompida**: sequência pós-jogo em que a vitória é celebrada até a chegada dos guardas reais, gerando incômodo, desconforto e humor antes da imposição da autoridade.
+
 _Evitar_: reduzir a cena a uma simples “escolta” sem mostrar a reação do grupo.
 
 ## Cenários e casos extremos discutidos

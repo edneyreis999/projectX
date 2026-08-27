@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "validation-impact-map/v1",
+  "checks": [
+    {
+      "id": "harness",
+      "command": "npm",
+      "args": ["run", "test:harness"]
+    },
+    {
+      "id": "noite-da-historia",
+      "command": "npm",
+      "args": ["run", "test:noite-da-historia"]
+    },
+    {
+      "id": "semifinal",
+      "command": "npm",
+      "args": ["run", "test:semifinal"]
+    },
+    {
+      "id": "build-types",
+      "command": "npm",
+      "args": ["run", "build:types"]
+    }
+  ],
+  "rules": [
+    {
+      "id": "harness-infrastructure",
+      "targets": [
+        "config/validation-impact-map.json",
+        "scripts/check-validation-evidence.js",
+        "scripts/validation-impact.js",
+        "frontend/__tests__/harness/**",
+        "docs/architecture/validation-impact-map.md",
+        "docs/architecture/quest-state-machine-map-guide.md",
+        "docs/project-conventions/rpg-maker-event-lifecycle.md",
+        "docs/project-conventions/validation-evidence-lifecycle.md"
+      ],
+      "checks": ["harness"]
+    },
+    {
+      "id": "shared-evidence-harness",
+      "targets": ["scripts/lib/validation-evidence.js"],
+      "checks": ["harness", "semifinal"]
+    },
+    {
+      "id": "shared-event-lifecycle-harness",
+      "targets": ["frontend/test-support/rpg-maker-event-lifecycle.js"],
+      "checks": ["harness", "noite-da-historia", "semifinal"]
+    },
+    {
+      "id": "noite-da-historia-disciplinary-contracts",
+      "targets": ["docs/Quests/1-noite-da-historia/**"],
+      "checks": ["noite-da-historia"]
+    },
+    {
+      "id": "semifinal-disciplinary-contracts",
+      "targets": ["docs/Quests/2-semifinal/**", "docs/project-conventions/authoring-materialization-authority.md"],
+      "checks": ["semifinal"]
+    },
+    {
+      "id": "quest-runtime",
+      "targets": ["frontend/data/CoretoQuests.json", "frontend/js/plugins/Coreto_QuestCore.js", "frontend/js/plugins/Coreto_QuestVN.js"],
+      "checks": ["noite-da-historia", "semifinal", "build-types"]
+    },
+    {
+      "id": "cutscene-runtime",
+      "targets": ["frontend/js/plugins/Coreto_Cutscene.js"],
+      "checks": ["semifinal", "build-types"]
+    },
+    {
+      "id": "semifinal-harness",
+      "targets": [".compozy/tasks/011-semifinal-playtest-remediation/**", "frontend/__tests__/quests/semifinal-remediation-*.test.js", "frontend/__tests__/plugins/Coreto_Cutscene.test.js"],
+      "checks": ["semifinal"]
+    },
+    {
+      "id": "quest-state-machine-harness",
+      "targets": ["frontend/__tests__/quests/quest-state-machines-ex-vn.test.js", "frontend/__tests__/plugins/Coreto_QuestCore.test.js"],
+      "checks": ["noite-da-historia", "semifinal"]
+    },
+    {
+      "id": "package-validation-surface",
+      "targets": ["package.json", "package-lock.json", "jest.config.ts"],
+      "checks": ["harness", "noite-da-historia", "semifinal", "build-types"]
+    }
+  ],
+  "protectedTargets": [
+    "config/validation-impact-map.json",
+    "scripts/check-validation-evidence.js",
+    "scripts/validation-impact.js",
+    "scripts/lib/validation-evidence.js",
+    "frontend/test-support/rpg-maker-event-lifecycle.js",
+    "frontend/__tests__/harness/**",
+    "frontend/__tests__/quests/semifinal-remediation-*.test.js",
+    "frontend/__tests__/quests/quest-state-machines-ex-vn.test.js",
+    "frontend/__tests__/plugins/Coreto_Cutscene.test.js",
+    "frontend/__tests__/plugins/Coreto_QuestCore.test.js",
+    ".compozy/tasks/011-semifinal-playtest-remediation/**",
+    "docs/Quests/1-noite-da-historia/**",
+    "docs/Quests/2-semifinal/**",
+    "docs/architecture/validation-impact-map.md",
+    "docs/architecture/quest-state-machine-map-guide.md",
+    "docs/project-conventions/authoring-materialization-authority.md",
+    "docs/project-conventions/rpg-maker-event-lifecycle.md",
+    "docs/project-conventions/validation-evidence-lifecycle.md",
+    "frontend/data/CoretoQuests.json",
+    "frontend/js/plugins/Coreto_QuestCore.js",
+    "frontend/js/plugins/Coreto_QuestVN.js",
+    "frontend/js/plugins/Coreto_Cutscene.js",
+    "package.json",
+    "package-lock.json",
+    "jest.config.ts"
+  ]
+}

@@ -4,8 +4,10 @@
   "description": "My first project with RPG Maker MZ",
   "scripts": {
     "test": "jest",
-    "test:quest-state-machines": "jest frontend/__tests__/quests/quest-state-machines-ex-vn.test.js frontend/__tests__/plugins/Coreto_QuestCore.test.js --runInBand",
-    "test:semifinal-remediation": "jest frontend/__tests__/quests/semifinal-remediation-assets.test.js frontend/__tests__/quests/semifinal-remediation-authoring.test.js frontend/__tests__/quests/semifinal-remediation-battle.test.js frontend/__tests__/quests/semifinal-remediation-narrative-contracts.test.js frontend/__tests__/quests/semifinal-remediation-questvn-runtime.test.js frontend/__tests__/quests/semifinal-remediation-routes.test.js frontend/__tests__/quests/semifinal-remediation-verification.test.js frontend/__tests__/quests/semifinal-remediation-vn.test.js frontend/__tests__/quests/quest-state-machines-ex-vn.test.js frontend/__tests__/plugins/Coreto_QuestCore.test.js frontend/__tests__/plugins/Coreto_Cutscene.test.js frontend/__tests__/scripts/generate-troops.test.js frontend/__tests__/scripts/troop-definitions.test.js frontend/__tests__/data/enemies-cross-reference.test.js --runInBand",
+    "test:harness": "jest frontend/__tests__/harness/validation-impact.test.js frontend/__tests__/harness/validation-evidence.test.js frontend/__tests__/harness/rpg-maker-event-lifecycle.test.js --runInBand",
+    "test:noite-da-historia": "jest frontend/__tests__/quests/quest-state-machines-ex-vn.test.js frontend/__tests__/plugins/Coreto_QuestCore.test.js --runInBand",
+    "test:semifinal": "jest frontend/__tests__/quests/semifinal-remediation-assets.test.js frontend/__tests__/quests/semifinal-remediation-authoring.test.js frontend/__tests__/quests/semifinal-remediation-battle.test.js frontend/__tests__/quests/semifinal-remediation-narrative-contracts.test.js frontend/__tests__/quests/semifinal-remediation-questvn-runtime.test.js frontend/__tests__/quests/semifinal-remediation-routes.test.js frontend/__tests__/quests/semifinal-remediation-verification.test.js frontend/__tests__/quests/semifinal-remediation-vn.test.js frontend/__tests__/quests/quest-state-machines-ex-vn.test.js frontend/__tests__/plugins/Coreto_QuestCore.test.js frontend/__tests__/plugins/Coreto_Cutscene.test.js frontend/__tests__/scripts/generate-troops.test.js frontend/__tests__/scripts/troop-definitions.test.js frontend/__tests__/data/enemies-cross-reference.test.js --runInBand",
+    "test:quests": "npm run test:noite-da-historia && npm run test:semifinal",
     "lint": "eslint \"frontend/js/plugins/**/*.{ts,js}\" \"frontend/typescript/**/*.{ts,js}\" --fix",
     "lint:check": "eslint \"frontend/js/plugins/**/*.{ts,js}\" \"frontend/typescript/**/*.{ts,js}\" --max-warnings=0",
     "format": "prettier --write \"frontend/js/plugins/**/*.{ts,js}\" \"frontend/typescript/**/*.{ts,js}\"",
@@ -13,6 +15,8 @@
     "format:json": "prettier --write \"frontend/**/*.json\" \"System.json\"",
     "build:types": "rm -f .tsbuildinfo && tsc -p tsconfig.build.json",
     "watch:types": "rm -f .tsbuildinfo && tsc -p tsconfig.json -w",
+    "validation:evidence": "node scripts/check-validation-evidence.js",
+    "validation:impact": "node scripts/validation-impact.js",
     "start:dev": "npm run build:types && npm run debug"
   },
   "keywords": [],

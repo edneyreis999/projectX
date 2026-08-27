@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const fs = require('fs');
 const path = require('path');
+const { conditionState, selectEligiblePage } = require('../../test-support/rpg-maker-event-lifecycle.js');
 
 const FRONTEND = path.resolve(__dirname, '../..');
 
@@ -35,15 +36,8 @@ function variablePage(eventData, variableId, variableValue) {
   return matches[0];
 }
 
-function selectedPage(eventData, variables = {}, selfSwitches = new Set()) {
-  let selected = null;
-  eventData.pages.forEach((page, index) => {
-    const condition = page.conditions;
-    if (condition.variableValid && (variables[condition.variableId] ?? 0) < condition.variableValue) return;
-    if (condition.selfSwitchValid && !selfSwitches.has(`${eventData.id}:${condition.selfSwitchCh}`)) return;
-    selected = { page, index };
-  });
-  return selected;
+function selectedPage(eventData, variables = {}) {
+  return selectEligiblePage(eventData, conditionState({ variables }));
 }
 
 function validateGraph(quest) {
