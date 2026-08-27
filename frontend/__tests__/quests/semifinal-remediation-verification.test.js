@@ -36,6 +36,7 @@ function createWorkspace({ includeTests = false } = {}) {
   for (const relativePath of [
     '.compozy/tasks/010-semifinal-completa',
     FEATURE,
+    'docs/project-conventions/authoring-materialization-authority.md',
     'docs/Quests/2-semifinal',
     'docs/GDD/01_Worldbuilding/01.5_Social',
     'docs/GDD/02_Atlas_Folk/02.2_Personagens',

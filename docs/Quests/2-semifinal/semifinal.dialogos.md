@@ -1,28 +1,21 @@
 ---
-status: implemented
+status: approved
 owner: Narrative Designer
 quest: A Semifinal
-document_kind: as-built dialogue contract
+document_kind: dialogue contract
 contract_version: 2.0.0
-runtime_snapshot: 362e2da0
-source_of_truth:
-  - frontend/data/Map044.json
-  - frontend/data/Map045.json
-  - frontend/data/Map049.json
-  - frontend/data/Map061.json
-  - frontend/data/Map062.json
-  - frontend/data/Map063.json
-  - frontend/data/Map064.json
-  - frontend/data/Map065.json
+authority_model: contract-first
+implementation_baseline_reviewed: 362e2da0
 language: pt-BR
 ---
 
-# A Semifinal — diálogos materializados
+# A Semifinal — contrato de diálogos
 
 ## Autoridade e regra de leitura
 
-Este documento registra a copy efetivamente consumida pelos eventos da semifinal. Em caso de divergência, prevalece o texto serializado nos mapas listados no frontmatter. IDs 010 que não aparecem nos
-eventos atuais são históricos e não constituem uma segunda fonte de copy.
+Este documento é a fonte aprovada da copy e da intenção narrativa da semifinal. Gameplay Engineering materializa os IDs e textos no RPG Maker sem reescrever falas, fatos ou distinções entre branches.
+Uma divergência no runtime é uma não conformidade até que o Narrative Designer aprove uma nova versão deste contrato. IDs 010 que não aparecem abaixo são históricos e não constituem uma segunda fonte
+de copy.
 
 Falas de progressão longa usam as cinco sessões VN atuais: a abertura em Map049 e quatro sessões em Map065. Gabs em mapas EX ficam restritas a retomada, bloqueio, ambientação, elipse narrada e ações
 físicas.
@@ -76,7 +69,7 @@ Interações posteriores com Sáparo usam: “Passarinho que acorda cedo pega mi
 | `VN-SEM-DRAGOBUR-ARRIVAL-THORIN-HELMET-011`   | Thorin   | “Então me dá um. Ou aponta onde esconderam um.”                                                                          |
 | `VN-SEM-DRAGOBUR-ARRIVAL-DRAGOBUR-ORDER-011`  | Dragobur | “Vestiário. Pegue um capacete velho, qualquer um que ainda proteja essa sua cabeça, equipe e volte. E não invente moda.” |
 
-Fato materializado: Dragobur pede um capacete velho comum. Ele não indica a estátua nem presenteia o elmo nesta cena.
+Fato aprovado: Dragobur pede um capacete velho comum. Ele não indica a estátua nem presenteia o elmo nesta cena.
 
 ### `SEMIFINAL_DRAGOBUR_AUTHORIZATION` — Map065 E2
 
@@ -100,7 +93,7 @@ Fato materializado: Dragobur pede um capacete velho comum. Ele não indica a est
 | `VN-SEM-CELEBRATION-GIFT-011`          | Dragobur          | “Fica com ele, Thorin. Depois desse gol, o capacete escolheu um dono tão teimoso quanto o anterior.”                     |
 | `VN-SEM-CELEBRATION-THORIN-GIFT-011`   | Thorin            | “Eu avisei. Nós dois ainda vamos fazer história.”                                                                        |
 
-O presente altera a propriedade narrativa de Armor 51. O runtime não concede uma segunda cópia do item.
+O presente altera a propriedade narrativa de Armor 51. A implementação não concede uma segunda cópia do item.
 
 ### `SEMIFINAL_GUARD_INTERVENTION` — Map065 E4
 
@@ -207,9 +200,9 @@ Depois do self switch de apresentação ser limpo, a interação de recovery de 
 
 As Gabs de Killin e Mhordred em Map044 usam `ForceGab=true` e `BypassAntiRepeat=true`, não aguardam `WaitForGab` e desaparecem quando a página de cleanup `V32 >= 1` vence.
 
-## Itens explicitamente não materializados
+## Supersessões e exclusões
 
-- A copy antiga “Vamos levar Thorin até a Casa Forja-Prata” não está no runtime; a linha atual usa “Levaremos Thorin à Casa Forja-Prata”.
-- As reações EX antigas de Killin/Mhordred imediatamente após Gentle/Resist não existem no fluxo atual.
+- A copy antiga “Vamos levar Thorin até a Casa Forja-Prata” foi supersedida; a linha aprovada usa “Levaremos Thorin à Casa Forja-Prata”.
+- Reações EX de Killin/Mhordred imediatamente após Gentle/Resist não fazem parte deste contrato.
 - IDs `BR-SEM-*` e demais entradas 010 que não aparecem acima são rastreabilidade histórica, não copy alternativa.
-- O documento não promove resultado de playtest. Ele apenas espelha texto, anchors e consumo presentes no código.
+- A aprovação deste documento não promove resultado de playtest. Texto, anchors e consumo permanecem sujeitos aos gates de implementação e validação humana.

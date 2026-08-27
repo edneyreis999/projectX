@@ -7,6 +7,12 @@
       "skillPath": "skills/engineering/codebase-design/SKILL.md",
       "computedHash": "6d9d51d8caa01633fd00cf87089c5618c982321f942ac69f62565dc001c6b22f"
     },
+    "exa-web-search-free": {
+      "source": "pedronauck/skills",
+      "sourceType": "github",
+      "skillPath": "skills/curated/exa-web-search-free/SKILL.md",
+      "computedHash": "4456756ff2cf096cc7c6d2fc9d6771e2a1ea0084868f28b69f68157757ee50c8"
+    },
     "grill-me": {
       "source": "mattpocock/skills",
       "sourceType": "github",
@@ -186,6 +192,12 @@
       "sourceType": "github",
       "skillPath": "skills/pixijs-ticker/SKILL.md",
       "computedHash": "6b3eec30377b1ec013a858301d309f3138eb512e7af8e1e8d0c3a759c8223618"
+    },
+    "qmd": {
+      "source": "pedronauck/skills",
+      "sourceType": "github",
+      "skillPath": "skills/curated/qmd/SKILL.md",
+      "computedHash": "d7109d58f721a0bf59620c69b6ae073c60dde85e971012d95a5e410002f28c64"
     },
     "setup-matt-pocock-skills": {
       "source": "mattpocock/skills",

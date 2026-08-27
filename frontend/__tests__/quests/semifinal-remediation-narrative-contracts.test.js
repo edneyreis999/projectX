@@ -37,7 +37,6 @@ function fixtureRoot() {
     `${FEATURE}/_tests.md`,
     `${FEATURE}/adrs`,
     `${FEATURE}/scripts`,
-    `${FEATURE}/fixtures/narrative/canonical`,
     `${FEATURE}/fixtures/narrative/protected-hashes.json`,
     `${FEATURE}/fixtures/narrative/writer-cases.json`,
     '.compozy/tasks/010-semifinal-completa',
@@ -45,6 +44,7 @@ function fixtureRoot() {
     FLOW,
     AUDIO,
     CUTSCENE,
+    'docs/project-conventions/authoring-materialization-authority.md',
     'docs/GDD/01_Worldbuilding/01.5_Social/Futebol Rúnico.md',
     'docs/GDD/01_Worldbuilding/01.5_Social/Organização Social de Gildrat.md',
     'docs/GDD/02_Atlas_Folk/02.2_Personagens/Thorin.md',
@@ -131,21 +131,19 @@ describe('UT-003/UT-004 — ownership, allowlist, and historical protection', ()
     const root = fs.mkdtempSync(path.join(os.tmpdir(), 'semifinal-restricted-'));
     const result = invoke(RUNTIME_MODULE, 'assertAllowedTargets', [{
       targets: [relativePath],
-      allowedTargets: [DIALOGUE, FLOW, `${FEATURE}/fixtures/narrative/source-inventory.json`],
+      allowedTargets: [`${FEATURE}/fixtures/narrative/source-inventory.json`],
     }]);
     expect(result).toMatchObject({ ok: false, error: { code: 'restricted_diff_violation', path: relativePath } });
     expect(allFiles(root).filter(item => item.includes('.scratch-'))).toEqual([]);
   });
 
-  test('planner exposes only the two documents and stable Narrative inventory', () => {
+  test('planner treats contracts as inputs and exposes only the derived Narrative inventory', () => {
     const root = fixtureRoot();
     const result = invoke(NARRATIVE_MODULE, 'planNarrativeRemediation', [{ rootDir: root, checkOnly: true }]);
     expect(result.ok).toBe(true);
     const plan = result.value;
     expect(plan.writer).toBe('narrative-designer');
-    expect(plan.targets.every(target => [DIALOGUE, FLOW, `${FEATURE}/fixtures/narrative/source-inventory.json`].includes(target))).toBe(true);
-    expect(plan.targets).not.toContain(AUDIO);
-    expect(plan.targets).not.toContain(CUTSCENE);
+    expect(plan.targets).toEqual([`${FEATURE}/fixtures/narrative/source-inventory.json`]);
     expect(plan.targets.some(target => target.startsWith('.compozy/tasks/010-semifinal-completa/'))).toBe(false);
   });
 });
@@ -157,7 +155,7 @@ describe('UT-036–UT-038 — approved narrative facts', () => {
   });
 
   test.each([
-    ['routing-vn', value => value.replace('Toda fala que avança a história principal ou a quest usa VN', 'Toda progressão fica em EX')],
+    ['contract authority', value => value.replace('fonte aprovada da copy e da intenção narrativa', 'espelho do runtime')],
     ['ordinary-helmet', value => value.replace('Pegue um capacete velho', 'Pegue o capacete da estátua')],
     ['thorin-answer', value => value.replaceAll('VN-SEM-DRAGOBUR-AUTH-THORIN-011', 'VN-SEM-DRAGOBUR-AUTH-REMOVED-011')],
     ['dragobur-anger-urgency', value => value.replace('O jogo está acabando', 'Sem pressa')],
@@ -169,10 +167,10 @@ describe('UT-036–UT-038 — approved narrative facts', () => {
   });
 
   test.each([
-    ['sponsorship', value => value.replace('Martelos de Bronze têm patrocínio de Casas Mineradoras', 'Martelos não têm patrocínio')],
-    ['working identity', value => value.replace('Machados são um time de bairros trabalhadores e poucos recursos', 'Machados são nobres')],
+    ['sponsorship', value => value.replace('patrocínio de Casa Mineradora', 'nenhum patrocínio')],
+    ['working identity', value => value.replace('Ele correu com os Machados', 'Ele rejeitou os Machados')],
     ['noble provocation', value => value.replaceAll('filho de uma Grande Casa', 'atleta qualquer')],
-    ['team dignity', value => value.replace('o time não rejeita Thorin por sua origem', 'o time rejeita Thorin por sua origem')],
+    ['team dignity', value => value.replace('A vitória é nossa', 'A vitória é só dele')],
   ])('rejects class-world mismatch %s', (_label, mutate) => {
     const source = valid();
     expect(validateContracts({ ...source, dialogue: mutate(source.dialogue) })).toMatchObject({
@@ -182,19 +180,19 @@ describe('UT-036–UT-038 — approved narrative facts', () => {
 
   test('rejects an explicit caste lecture in current 011 copy', () => {
     const source = valid();
-    const dialogue = source.dialogue.replace('Fatos congelados: os Martelos', 'A casta média e a casta baixa explicam o sistema de castas.\n\nFatos congelados: os Martelos');
+    const dialogue = source.dialogue.replace('## Map065 — VNs da semifinal', 'A casta média e a casta baixa explicam o sistema de castas.\n\n## Map065 — VNs da semifinal');
     expect(validateContracts({ ...source, dialogue })).toMatchObject({
       ok: false, error: { code: 'narrative_contract_mismatch', anchor: 'dialogue:no-caste-lecture' },
     });
   });
 
   test.each([
-    ['Killin', value => value.replaceAll('Killin, Capitã da Guarda de Ferro', 'Killin, guarda')],
+    ['Killin', value => value.replaceAll('Sou Killin, Capitã da Guarda de Ferro', 'Sou Killin, guarda')],
     ['Thordan', value => value.replaceAll('General Thordan', 'General incorreto')],
     ['Mhordred', value => value.replaceAll('VN-SEM-GUARD-MHORDRED-011', 'VN-SEM-GUARD-REMOVED-011')],
     ['Filena', value => value.replaceAll('VN-SEM-GUARD-FILENA-MOTIVE-011', 'VN-SEM-GUARD-FILENA-REMOVED-011')],
-    ['rival filler', value => value.replaceAll('GAB-SEM-RIVAL-GUARD-FILLER-011', 'GAB-SEM-RIVAL-GUARD-REMOVED-011')],
-    ['Mhordred filler', value => value.replaceAll('GAB-SEM-MHORDRED-RIVAL-FILLER-011', 'GAB-SEM-MHORDRED-RIVAL-REMOVED-011')],
+    ['rival filler', value => value.replaceAll('chegaram tarde', 'chegaram cedo')],
+    ['Mhordred filler', value => value.replaceAll('Não viemos pelo jogo', 'Viemos pelo jogo')],
   ])('rejects canonical cast mismatch %s', (_label, mutate) => {
     const source = valid();
     expect(validateContracts({ ...source, dialogue: mutate(source.dialogue) })).toMatchObject({
@@ -204,7 +202,7 @@ describe('UT-036–UT-038 — approved narrative facts', () => {
 
   test('rejects Tharok in the current 011 authority section', () => {
     const source = valid();
-    const dialogue = source.dialogue.replace('### GAB-SEM-ESCORT-011', 'Tharok assume o comando.\n\n### GAB-SEM-ESCORT-011');
+    const dialogue = source.dialogue.replace('## Saída dos rivais, escolta e chegada', 'Tharok assume o comando.\n\n## Saída dos rivais, escolta e chegada');
     expect(validateContracts({ ...source, dialogue })).toMatchObject({ ok: false, error: { anchor: 'dialogue:tharok-absent' } });
   });
 });
@@ -223,17 +221,18 @@ describe('UT-060–UT-062 — missing/stale contracts and historical drift', () 
     const result = runNode(
       `import fs from 'node:fs'; import path from 'node:path';
        import { planNarrativeRemediation, NARRATIVE_TARGETS } from ${JSON.stringify(NARRATIVE_MODULE)};
-       import { applyAtomicPlan, sha256 } from ${JSON.stringify(RUNTIME_MODULE)};
-       const root = process.argv[1]; const dialogue = process.argv[2]; const cutscene = process.argv[3];
+       import { applyAtomicPlan } from ${JSON.stringify(RUNTIME_MODULE)};
+       const root = process.argv[1]; const dialogue = process.argv[2];
        const plan = planNarrativeRemediation({ rootDir: root, checkOnly: true });
-       const before = sha256(fs.readFileSync(path.join(root, dialogue)));
-       fs.appendFileSync(path.join(root, cutscene), '\\npost-check drift\\n');
+       const inventory = NARRATIVE_TARGETS[0];
+       const existed = fs.existsSync(path.join(root, inventory));
+       fs.appendFileSync(path.join(root, dialogue), '\\npost-check drift\\n');
        try { await applyAtomicPlan({ rootDir: root, ...plan, allowedTargets: NARRATIVE_TARGETS }); }
-       catch (error) { console.log(JSON.stringify({ code: error.code, path: error.path, unchanged: before === sha256(fs.readFileSync(path.join(root, dialogue))) })); }`,
-      [root, DIALOGUE, CUTSCENE],
+       catch (error) { console.log(JSON.stringify({ code: error.code, path: error.path, unchanged: existed === fs.existsSync(path.join(root, inventory)) })); }`,
+      [root, DIALOGUE],
     );
     expect(result.status).toBe(0);
-    expect(JSON.parse(result.stdout)).toEqual({ code: 'discipline_contract_stale', path: CUTSCENE, unchanged: true });
+    expect(JSON.parse(result.stdout)).toEqual({ code: 'discipline_contract_stale', path: DIALOGUE, unchanged: true });
     expect(allFiles(root).filter(item => item.includes('.scratch-'))).toEqual([]);
   });
 
@@ -302,12 +301,14 @@ describe('IT-001 — public Narrative writer', () => {
     expect(allFiles(root).filter(item => item.includes('.scratch-') || item.includes('.rollback-'))).toEqual([]);
   });
 
-  test('repairs a superseded semantic anchor from the frozen 011 copy', () => {
+  test('rejects a changed contract without restoring a fixture copy', () => {
     const root = fixtureRoot();
     const target = path.join(root, DIALOGUE);
-    fs.writeFileSync(target, fs.readFileSync(target, 'utf8').replace('Pegue um capacete velho', 'Pegue o capacete da estátua'));
+    const changed = fs.readFileSync(target, 'utf8').replace('Pegue um capacete velho', 'Pegue o capacete da estátua');
+    fs.writeFileSync(target, changed);
     const result = runWriter(root);
-    expect(result.status).toBe(0);
-    expect(fs.readFileSync(target, 'utf8')).toBe(fs.readFileSync(path.join(root, `${FEATURE}/fixtures/narrative/canonical/semifinal.dialogos.md`), 'utf8'));
+    expect(result.status).toBe(1);
+    expect(JSON.parse(result.stdout)).toEqual({ status: 'blocked', code: 'narrative_contract_mismatch', anchor: 'dialogue:ordinary-helmet' });
+    expect(fs.readFileSync(target, 'utf8')).toBe(changed);
   });
 });

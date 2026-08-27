@@ -1,20 +1,21 @@
 ---
-status: implemented
+status: approved
 owner: Audio Designer
 quest: A Semifinal
-document_kind: as-built audio map
+document_kind: audio contract
 contract_version: 2.0.0
-runtime_snapshot: 362e2da0
+authority_model: contract-first
+implementation_baseline_reviewed: 362e2da0
 human_listening_validation: pending_retest
 language: pt-BR
 ---
 
-# A Semifinal — áudio materializado
+# A Semifinal — contrato de áudio
 
 ## Autoridade
 
-Este documento registra apenas BGM, BGS, ME, SE, animações com sound timings e políticas de áudio que estão presentes no código/dados atuais. Cues propostos nas tasks 010/011 que não viraram comando
-ou configuração de runtime aparecem separadamente como não materializados.
+Este documento é a fonte aprovada para BGM, BGS, ME, SE, animações com sound timings e políticas de áudio da semifinal. Gameplay Engineering materializa apenas os cues declarados como requisitos.
+Cues históricos que não pertencem à versão 2.0 aparecem separadamente como exclusões.
 
 Nenhum resultado de escuta humana é inferido da presença dos assets.
 
@@ -22,7 +23,7 @@ Nenhum resultado de escuta humana é inferido da presença dos assets.
 
 A extensão questVN de a-semifinal usa audioPolicy restore-origin. Coreto_QuestVN captura AudioManager.saveBgm() e saveBgs() na origem e executa replayBgm/replayBgs ao retornar.
 
-Consequências materializadas:
+Consequências aprovadas:
 
 - a abertura em Map049 restaura o contexto capturado de Map045;
 - as quatro VNs de Map065 restauram o contexto capturado de Map062;
@@ -55,7 +56,7 @@ Open1 continua presente fora do branch urgente em E14, E15, E16, E17 e E28. E7, 
 
 ### Estádio, vestiário e campo
 
-| Superfície                            | Comando/asset                 | Parâmetros              | Repetição materializada                          |
+| Superfície                            | Comando/asset                 | Parâmetros              | Repetição exigida                                |
 | ------------------------------------- | ----------------------------- | ----------------------- | ------------------------------------------------ |
 | Map062 E20, chegada                   | BGS People1                   | volume 35, pitch 100    | uma vez na transição 40→50                       |
 | Map063 E7, gag                        | Animation 39 Pancada Corporal | alvo E2                 | primeira execução apenas                         |
@@ -93,9 +94,9 @@ Map062 E6 usa Battle Processing com Troop 19, escape desativado e derrota permit
 
 Vitória excepcional e derrota normal entram no mesmo cleanup de evento. Não existe stinger adicional, fala sonora, marcha ou cue de reconvergência autorado no mapa.
 
-## O que não está materializado
+## Exclusões da versão 2.0
 
-Os seguintes comportamentos apareciam no contrato prospectivo, mas não possuem comandos ou automação própria no runtime atual:
+Os seguintes comportamentos apareciam em versões prospectivas, mas não são requisitos deste contrato:
 
 - Town1 + City iniciados pela corrida em Map061;
 - crossfade City → People1 ao entrar no estádio;
@@ -113,7 +114,7 @@ dedicado.
 
 ## Fronteiras e risco técnico atual
 
-| Fronteira            | Verdade do código                                                                     |
+| Fronteira            | Comportamento exigido                                                                 |
 | -------------------- | ------------------------------------------------------------------------------------- |
 | Map045 → Map061      | Map061 não muda o áudio; qualquer continuidade depende do áudio que já estava tocando |
 | Map061 → Map062      | E20 inicia People1, sem comando para trocar BGM                                       |
@@ -124,8 +125,8 @@ dedicado.
 | Battle → Map062      | cleanup do evento não emite comando sonoro                                            |
 | Map062 → Map044      | Move1 toca; Map044 não inicia nem interrompe BGM/BGS                                  |
 
-Há, portanto, uma lacuna objetiva: o código não contém cleanup explícito de People1 antes de Map044. Este documento não afirma que o BGS está ausente na chegada; isso precisa ser observado em runtime
-ou corrigido em uma task futura.
+O contrato não exige cleanup explícito de People1 antes de Map044 nesta versão. O reteste deve observar se há persistência audível indevida na chegada; um resultado inadequado exige revisão deste
+contrato e nova materialização em task própria.
 
 ## Fallbacks não sonoros já presentes
 

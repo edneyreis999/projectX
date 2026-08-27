@@ -1,20 +1,21 @@
 ---
-status: implemented
+status: approved
 owner: Narrative Designer
 quest: A Semifinal
-document_kind: as-built narrative flow
+document_kind: narrative flow contract
 contract_version: 2.0.0
-runtime_snapshot: 362e2da0
-source_of_truth: frontend/data
+authority_model: contract-first
+implementation_baseline_reviewed: 362e2da0
 language: pt-BR
 ---
 
-# A Semifinal — fluxo narrativo materializado
+# A Semifinal — contrato de fluxo narrativo
 
 ## Autoridade e escopo
 
-Este documento descreve o fluxo que está materializado no projeto. Em caso de conflito, prevalecem `frontend/data/CoretoQuests.json`, os mapas e bancos de `frontend/data/` e os plugins Coreto ativos.
-Os pacotes `.compozy/tasks/010-semifinal-completa` e `.compozy/tasks/011-semifinal-playtest-remediation` permanecem como histórico de decisão e tooling, não como verdade superior ao runtime atual.
+Este documento é a fonte aprovada do fluxo narrativo da semifinal. Gameplay Engineering materializa a máquina, os mapas e as integrações Coreto sem alterar os marcos ou resultados definidos aqui.
+Uma divergência no runtime é uma não conformidade até que o Narrative Designer e os demais owners afetados aprovem uma nova versão. A task 010 permanece como histórico; as decisões corretivas aceitas da
+task 011 foram incorporadas a este contrato.
 
 Copy exata pertence a `semifinal.dialogos.md`; comandos, posições e recovery pertencem a `semifinal.cutscene.md`; referências sonoras e visuais pertencem aos respectivos documentos disciplinares.
 
@@ -35,7 +36,7 @@ Copy exata pertence a `semifinal.dialogos.md`; comandos, posições e recovery p
 Não existe mais uma submáquina funcional em `V111`. Esse ID ainda aparece em campos inativos de páginas herdadas, com `variableValid: false`, mas não controla o tutorial. Toda a semifinal, inclusive
 funda, estádio e handoff, usa `V29`.
 
-| Estado | Transição que chega ao estado | Dono materializado           | Resultado observável                                                |
+| Estado | Transição que chega ao estado | Owner de implementação       | Resultado observável                                                |
 | -----: | ----------------------------- | ---------------------------- | ------------------------------------------------------------------- |
 |    `0` | estado inicial                | antes de Map022 E17          | semifinal ainda não iniciada                                        |
 |   `10` | `START_STORY`                 | Map022 E17                   | handoff da Noite da História; abertura na Casa Forjaprata           |
@@ -135,7 +136,7 @@ E18/E21 liberam o campo com Armor 51 equipada. Map064 E8 executa `ENTER_FIELD`, 
 5. põe E4–E7 em opacidade zero;
 6. executa `ESTABLISH_VICTORY`, termina o lock e transfere para Map062 `(11,7)`.
 
-O runtime não simula a partida, não abre batalha e não materializa uma sequência adicional de jogadas.
+O contrato não inclui partida jogável, batalha nem sequência adicional de jogadas nesse trecho.
 
 ### 9. Celebração, rivais e Guarda de Ferro
 
@@ -176,4 +177,4 @@ controle fora da casa; entrada e confronto com Thordan pertencem à próxima que
 - `Coreto_QuestVN` restaura BGM, BGS, tela, menu, save, transparência e followers capturados na origem.
 - Todas as cutscenes físicas que usam `Coreto_Cutscene` encerram o lock antes de entrar em VN e o readquirem apenas no label de retorno.
 - O estado terminal `900` impede repetição de presente, escolha, batalha, commit e transferência.
-- A validação perceptiva pós-remediação não está codificada no runtime e continua separada deste snapshot as-built.
+- A validação perceptiva pós-remediação continua separada da conformidade estrutural com este contrato.

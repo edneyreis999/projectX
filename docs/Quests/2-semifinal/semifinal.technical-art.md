@@ -1,29 +1,29 @@
 ---
-status: implemented
+status: approved
 owner: Technical Artist
 quest: A Semifinal
-document_kind: as-built technical art inventory
+document_kind: technical art contract
 contract_version: 2.0.0
-runtime_snapshot: 362e2da0
+authority_model: contract-first
+implementation_baseline_reviewed: 362e2da0
 asset_manifest: .compozy/tasks/011-semifinal-playtest-remediation/fixtures/assets/asset-manifest.json
 structural_validation: passed
 human_visual_validation: pending_retest
 editor_validation: pending_retest
 ---
 
-# A Semifinal — Technical Art materializado
+# A Semifinal — contrato de Technical Art
 
 ## Autoridade
 
-Este documento registra os assets efetivamente presentes e referenciados pelo runtime da semifinal. O código/dado consumidor e os bytes atuais em frontend/img prevalecem sobre planos e prompts
-históricos.
+Este documento é a fonte aprovada para assets, referências, placeholders e critérios visuais da semifinal. Gameplay Engineering materializa os paths e consumidores declarados sem substituir a decisão
+do Technical Artist. Divergências do runtime ou dos bytes são não conformidades até que uma nova versão seja aprovada.
 
-A reinspeção estrutural deste snapshot confirmou 26 entradas no manifest: todos os paths existem e todos os SHA-256 atuais coincidem com os hashes registrados. Isso prova integridade de arquivo, não
-adequação estética em editor ou jogo.
+O manifest aprovado contém 26 entradas com paths e SHA-256 esperados. A coincidência estrutural prova integridade de arquivo, não adequação estética em editor ou jogo.
 
 ## Superfícies consumidoras
 
-| Superfície                        | Uso visual materializado                                                           |
+| Superfície                        | Uso visual aprovado                                                                |
 | --------------------------------- | ---------------------------------------------------------------------------------- |
 | Map062 EX_Estadio                 | Dragobur, Filena, Machados, Martelos, reservas, Killin e Mhordred; finale EX/VN    |
 | Map063 EX_Vestiario               | quatro jogadoras, display íntegro/alterado da estátua, gag e transformação do elmo |
@@ -66,12 +66,12 @@ Os três arquivos Cabide, !$Capacete e !$Armadura têm o mesmo SHA-256:
 
 0a6cb74a791962805dfe59428d9f47d2a2102c887f292a8bae6e2a30fc504635
 
-Consequência visual do código: a troca de !$Capacete para !$Armadura muda o path/página, mas os bytes são idênticos. O runtime, portanto, não garante que a estátua pareça sem o capacete; essa leitura
-continua dependente de substituição futura do placeholder ou validação humana que aceite o resultado.
+Os placeholders !$Capacete e !$Armadura possuem bytes idênticos. Este contrato não considera essa troca prova de que a estátua pareça sem o capacete; a leitura continua dependente de substituição futura
+do placeholder ou validação humana que aceite o resultado.
 
 ## Elmo Velho, ícone e skin
 
-Armor 51 está materializada como:
+Armor 51 deve preservar:
 
 | Campo             | Valor                                             |
 | ----------------- | ------------------------------------------------- |
@@ -109,7 +109,7 @@ Background:
 | SEMIFINAL_CELEBRATION            | Futebol/Companheiro1; Futebol/Adversario1; Thorin Helmet; Filena; Treinador |
 | SEMIFINAL_GUARD_INTERVENTION     | Treinador; Kilin; Thorin Helmet; Mhordred; Filena                           |
 
-Todos os busts acima existem e os hashes coincidem com o manifest. O runtime alterna um bust por vez no Picture ID 1 e limpa IDs 1–10 antes de FinishVisualNovel.
+Os busts acima devem coincidir com o manifest. Map065 alterna um bust por vez no Picture ID 1 e limpa IDs 1–10 antes de FinishVisualNovel.
 
 ## Mhordred na batalha Resist
 
@@ -124,7 +124,7 @@ Enemy 91 usa:
 - apenas Skill 1 na lista de ações.
 
 O asset frontend/img/sv_actors/Mhordred.png existe, mede 676×547 RGBA e tem SHA-256 b78570b443ae133bf48de9441515403215dcee2ff42d3ad621baf6dd6b62311f. Ele continua classificado como placeholder: o
-arquivo é um sheet side-view de ator reaproveitado como battler de inimigo e não possui aprovação visual/runtime registrada.
+arquivo é um sheet side-view de ator reaproveitado como battler de inimigo e não possui aprovação visual registrada.
 
 ## Placeholders e riscos ainda reais
 
@@ -136,9 +136,9 @@ arquivo é um sheet side-view de ator reaproveitado como battler de inimigo e n�
 | VN_Semifinal_BG  | carregável e hasheado  | composição, contraste, estilo e safe area em cena pendentes           |
 | busts            | existentes e hasheados | expressão, direção de olhar, escala e clipping pendentes              |
 
-## Handoff atual
+## Requisitos preservados
 
-As referências finais já estão materializadas; não são mais um pedido futuro a Gameplay. Uma alteração posterior deve preservar:
+Gameplay Engineering deve preservar:
 
 1. case exato dos paths;
 2. slot 132 de Armor 51;

@@ -1,31 +1,32 @@
 ---
-status: implemented
+status: approved
 owner: Scene Presentation Designer
 quest: A Semifinal
-document_kind: as-built cutscene score
+document_kind: cutscene score contract
 contract_version: 2.0.0
-runtime_snapshot: 362e2da0
+authority_model: contract-first
+implementation_baseline_reviewed: 362e2da0
 human_presentation_validation: pending_retest
 language: pt-BR
 ---
 
-# A Semifinal — score de cutscenes materializado
+# A Semifinal — contrato de cutscenes
 
 ## Autoridade
 
-Este score descreve os comandos presentes nos mapas e plugins atuais. Quando uma posição, wait, lock, página ou cleanup divergir de uma intenção antiga das tasks 010/011, o artefato em frontend/data
-prevalece.
+Este score é a fonte aprovada para posições, waits, locks, páginas, staging e cleanup da semifinal. Gameplay Engineering materializa essas decisões nos mapas e plugins. Uma divergência no runtime é uma
+não conformidade até que o Scene Presentation Designer e os demais owners afetados aprovem uma nova versão.
 
 Copy é registrada em semifinal.dialogos.md. Este documento registra ciclos de controle, routing EX/VN, staging, movimentos, câmera, zoom, barriers, transições e recovery.
 
 ## Infraestrutura ativa
 
-| Componente              | Estado materializado                                                                                                                                               |
+| Componente              | Requisito aprovado                                                                                                                                                 |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Coreto_Cutscene         | ativo; código v1.0.1; exige mapa EX, mesmo event owner no BeginCutscene/FinishCutscene, bloqueia movimento/menu/save e restaura contexto capturado                 |
 | Coreto_QuestVN          | ativo; código v1.1.0; captura origem, áudio, tela, transparência, followers, menu e save; transfere para mapa VN; retorna por label transitório quando configurado |
 | VisuMZ_4_MapCameraZoom  | ativo; usado no gag, transformação do elmo, saída dos rivais, entrada dos guardas, escolta e chegada                                                               |
-| VisuMZ_4_GabWindow      | ativo; WaitForGab aparece apenas nas barriers materializadas                                                                                                       |
+| VisuMZ_4_GabWindow      | ativo; WaitForGab aparece apenas nas barriers declaradas                                                                                                            |
 | VisuMZ_2_VNPictureBusts | ativo; busts e background são limpos dentro das páginas VN antes de FinishVisualNovel                                                                              |
 
 Cada ida a VN termina primeiro o lock EX. Ao retornar, o plugin reinstala o interpreter do evento de origem imediatamente depois do label único e o evento abre um novo ciclo de cutscene quando
@@ -43,7 +44,7 @@ necessário.
 
 Map065 usa CoretoMapType VN, parallax VN_Semifinal_BG, 17×13 tiles, sem autoplay de BGM/BGS e quatro eventos Action Button iniciados programaticamente pelo router.
 
-## Score as-built
+## Score aprovado
 
 ### CS-SEM-STORY-HANDOFF — Map022 E17
 
@@ -75,7 +76,7 @@ Map045 E36:
 - espera cada fronteira semântica antes da próxima fala;
 - após a última Gab, liga self switch B.
 
-A página B reduz a opacidade do grupo até zero, liga os self switches de cleanup e reidrata o perfil AnimaX de Sáparo quando necessário. O despertar materializado fica na página D de Map045 E11.
+A página B reduz a opacidade do grupo até zero, liga os self switches de cleanup e reidrata o perfil AnimaX de Sáparo quando necessário. O despertar aprovado fica na página D de Map045 E11.
 
 ### CS-SEM-URGENT-ROUTE — Map061
 
@@ -179,7 +180,7 @@ E8 é um Autorun mínimo que executa ENTER_FIELD. E9 assume em 100:
 6. muda a opacidade de E4, E5, E6 e E7 para zero, uma rota aguardada por evento;
 7. executa ESTABLISH_VICTORY, termina lock e transfere para Map062 (11,7).
 
-E9 usa sprite Reed. O runtime não contém rotas de materialização para um grupo infantil nesse mapa; E4 funciona como anchor das reações e E4–E7 são apenas ocultados no cleanup.
+E9 usa sprite Reed. O score não exige rotas para materializar um grupo infantil nesse mapa; E4 funciona como anchor das reações e E4–E7 são apenas ocultados no cleanup.
 
 ### CS-SEM-STADIUM-FINALE-011 — Map062 E6
 
@@ -255,7 +256,7 @@ As páginas visíveis usam Gab forçada com bypass anti-repeat e não aguardam c
 
 ## Matriz de recovery
 
-| Fronteira                       | Proteção materializada                                                                       |
+| Fronteira                       | Proteção exigida                                                                             |
 | ------------------------------- | -------------------------------------------------------------------------------------------- |
 | abertura                        | asserts de estado/sessão, self switches e páginas não Autorun depois do cleanup              |
 | rota urgente                    | branch interno apenas em V29 = 40; comportamento herdado fora dele                           |
@@ -266,15 +267,15 @@ As páginas visíveis usam Gab forçada com bypass anti-repeat e não aguardam c
 | finale                          | E6 deixa de ser elegível em 120; branch é temporário e apagado                               |
 | chegada                         | E10 recovery em 900; guardas só somem quando V32 ≥ 1                                         |
 
-## Divergências antigas removidas deste score
+## Supersessões aprovadas
 
-- Killin/Mhordred não entram atualmente por (11,16)/(12,16) nem aparecem inicialmente em (0,7)/(0,8); o fluxo materializado usa (7,6)/(8,6) ocultos, depois (1,7)/(1,8) visíveis e finalmente
+- Killin/Mhordred não entram por (11,16)/(12,16) nem aparecem inicialmente em (0,7)/(0,8); o fluxo aprovado usa (7,6)/(8,6) ocultos, depois (1,7)/(1,8) visíveis e finalmente
   (11,10)/(12,10).
 - A formação final não termina em (10,7)/(11,7)/(12,7); esse é o alinhamento antes da caminhada. O último frame antes do fade usa (7,7)/(8,7)/(9,7).
-- A elipse da partida não materializa crianças por opacidade nem move Rheed; apenas usa E9/E4 como anchors e oculta E4–E7 no cleanup.
-- Cues e beats não presentes nas listas de evento não são tratados como implementados por este documento.
+- A elipse da partida não inclui crianças por opacidade nem move Rheed; apenas usa E9/E4 como anchors e oculta E4–E7 no cleanup.
+- Cues e beats não declarados neste score não pertencem ao contrato.
 
 ## Validação humana
 
-Os comandos e a estrutura acima estão materializados, mas o código não prova ritmo, legibilidade, conforto do gag, impacto da transformação, clareza espacial da troca rival/guarda ou continuidade
-perceptiva após VN/batalha. Esses critérios continuam marcados como pending_retest.
+A conformidade estrutural com os comandos acima não prova ritmo, legibilidade, conforto do gag, impacto da transformação, clareza espacial da troca rival/guarda ou continuidade perceptiva após
+VN/batalha. Esses critérios continuam marcados como pending_retest.

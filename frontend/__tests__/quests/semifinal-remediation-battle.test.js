@@ -156,8 +156,8 @@ describe('IT-010–IT-018 — integrated finale journeys', () => {
     const entries = quests.quests['a-semifinal'].extensions.questVN.entries;
     expect(entries.SEMIFINAL_DRAGOBUR_ARRIVAL.resumeLabel).toBe('SEMIFINAL_AFTER_ARRIVAL_VN');
     expect(entries.SEMIFINAL_DRAGOBUR_AUTHORIZATION.resumeLabel).toBe('SEMIFINAL_AFTER_AUTHORIZATION_VN');
-    expect(dialogue).toContain('DL-SEM-GIFT-DRAGOBUR-001');
-    expect(cutscene).toContain('quantidade de Armor 51 invariável');
+    expect(dialogue).toContain('VN-SEM-CELEBRATION-GIFT-011');
+    expect(cutscene).toContain('grant condicional de Armor 51');
   });
 
   test('IT-012/IT-013: runtime and discipline contracts retain the approved canon', () => {
