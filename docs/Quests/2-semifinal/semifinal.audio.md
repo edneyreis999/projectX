@@ -6,7 +6,8 @@ document_kind: audio contract
 contract_version: 2.0.0
 authority_model: contract-first
 implementation_baseline_reviewed: 362e2da0
-human_listening_validation: pending_retest
+human_listening_validation: passed
+human_validation_evidence: planos/012-add-harness/PLAYTEST-2026-08-28.md
 language: pt-BR
 ---
 
@@ -14,8 +15,8 @@ language: pt-BR
 
 ## Autoridade
 
-Este documento é a fonte aprovada para BGM, BGS, ME, SE, animações com sound timings e políticas de áudio da semifinal. Gameplay Engineering materializa apenas os cues declarados como requisitos.
-Cues históricos que não pertencem à versão 2.0 aparecem separadamente como exclusões.
+Este documento é a fonte aprovada para BGM, BGS, ME, SE, animações com sound timings e políticas de áudio da semifinal. Gameplay Engineering materializa apenas os cues declarados como requisitos. Cues
+históricos que não pertencem à versão 2.0 aparecem separadamente como exclusões.
 
 Nenhum resultado de escuta humana é inferido da presença dos assets.
 
@@ -125,7 +126,7 @@ dedicado.
 | Battle → Map062      | cleanup do evento não emite comando sonoro                                            |
 | Map062 → Map044      | Move1 toca; Map044 não inicia nem interrompe BGM/BGS                                  |
 
-O contrato não exige cleanup explícito de People1 antes de Map044 nesta versão. O reteste deve observar se há persistência audível indevida na chegada; um resultado inadequado exige revisão deste
+O contrato não exige cleanup explícito de People1 antes de Map044 nesta versão. O reteste de 2026-08-28 não encontrou persistência audível indevida na chegada; uma regressão futura exige revisão deste
 contrato e nova materialização em task própria.
 
 ## Fallbacks não sonoros já presentes
@@ -138,9 +139,9 @@ contrato e nova materialização em task própria.
 - escolta: formação, caminhada, fade e transferência;
 - chegada: exterior, guardas visíveis, fala de Thorin e estado 900.
 
-## Validação humana pendente
+## Validação humana executada
 
-O reteste deve observar especialmente:
+O reteste observou especialmente:
 
 1. se Theme3/Wind2/Magic2 e Animation 35 não criam pico na abertura;
 2. se o stack de Animation 39 + Damage3 continua confortável e legível;
@@ -150,4 +151,4 @@ O reteste deve observar especialmente:
 6. se People1 persiste indevidamente na batalha, escolta ou Map044;
 7. se o fluxo inteiro continua compreensível em mute.
 
-Até haver evidência dessa execução, human_listening_validation permanece pending_retest.
+O reteste humano de 2026-08-28 cobriu áudio normal e mudo e aprovou as fronteiras acima. A evidência está registrada em `planos/012-add-harness/PLAYTEST-2026-08-28.md`.

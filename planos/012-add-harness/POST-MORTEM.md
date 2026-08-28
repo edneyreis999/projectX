@@ -95,8 +95,8 @@ fontes duplicadas com autoridade mutável
 
 ## O que não funcionou no ciclo original
 
-- A task 011 exigia playtest fresco para conclusão, mas todas as tasks foram marcadas `completed` com seis E2Es falhos e nove não executados. Hoje os seis estão `remediated_pending_retest`; não foram
-  promovidos a `pass`.
+- A task 011 exigia playtest fresco para conclusão, mas todas as tasks foram marcadas `completed` com seis E2Es falhos e nove não executados. Na auditoria de 2026-08-27, os seis estavam
+  `remediated_pending_retest`; o reteste final de 2026-08-28 os promoveu a `pass` conforme `PLAYTEST-2026-08-28.md`.
 - O loop de orquestração mede conclusão administrativa, não aceite funcional/perceptivo.
 - O pacote histórico de intenção, ADRs, logs e evidências está ignorado. A1 passou a tratá-lo somente como proveniência: o tooling ativo vive fora de `.compozy` e o manifesto registra seus hashes.
 - Logs existem apenas para três tasks 010, sem timestamps, e não há logs equivalentes para 011; a timeline depende de memories e commits.
@@ -108,17 +108,17 @@ fontes duplicadas com autoridade mutável
 
 ## Estado dos achados
 
-| Finding                                 | Severidade | Estado                                                      | Próxima ação                                              |
-| --------------------------------------- | ---------- | ----------------------------------------------------------- | --------------------------------------------------------- |
-| F-01 — aceite humano ausente            | Bloqueante | 6 `remediated_pending_retest`, 9 `not_executed`             | Executar matriz pós-fix e registrar build/commit.         |
-| F-02 — harness atual vermelho           | Bloqueante | Resolvido no worktree: 252/252 no golden path               | Preservar a suíte integrada no gate de impacto.           |
-| F-03 — writers não convergem            | Bloqueante | Gameplay `converged`; pseudo-writer narrativo removido      | Manter autoridade contract-first e replay no-op.          |
-| F-04 — evidência estática obsoleta      | Alta       | Evidência persistida removida; gate recalcula o checkout    | Persistir somente quando houver consumidor real.          |
-| F-05 — lifecycle não institucionalizado | Alta       | Resolvido no worktree com ADR e núcleo reutilizável         | Ampliar o harness por novas fronteiras comprovadas.       |
-| F-06 — tasks/evidências fora do Git     | Alta       | Resolvido por tooling durável e manifesto content-addressed | Preservar 010/011 como proveniência, não dependência.     |
-| F-07 — foreign keys configuráveis       | Alta       | TP corrigido localmente                                     | Validador genérico de registries ativos.                  |
-| F-08 — DoD superficial                  | Alta       | Harness limita-se a `authoring_integrity`                    | Tratar runtime/humano/release no fluxo responsável.       |
-| F-09 — slicing/higiene                  | Média      | Workflow criado; branch protection ainda externa            | Tornar `Authoring integrity` um required check.           |
+| Finding                                 | Severidade | Estado                                                      | Próxima ação                                            |
+| --------------------------------------- | ---------- | ----------------------------------------------------------- | ------------------------------------------------------- |
+| F-01 — aceite humano ausente            | Bloqueante | Resolvido: B-01 a B-18 passaram na revisão `bdd0db1e`       | Preservar o relatório humano separado do gate estático. |
+| F-02 — harness atual vermelho           | Bloqueante | Resolvido no worktree: 252/252 no golden path               | Preservar a suíte integrada no gate de impacto.         |
+| F-03 — writers não convergem            | Bloqueante | Gameplay `converged`; pseudo-writer narrativo removido      | Manter autoridade contract-first e replay no-op.        |
+| F-04 — evidência estática obsoleta      | Alta       | Evidência persistida removida; gate recalcula o checkout    | Persistir somente quando houver consumidor real.        |
+| F-05 — lifecycle não institucionalizado | Alta       | Resolvido no worktree com ADR e núcleo reutilizável         | Ampliar o harness por novas fronteiras comprovadas.     |
+| F-06 — tasks/evidências fora do Git     | Alta       | Resolvido por tooling durável e manifesto content-addressed | Preservar 010/011 como proveniência, não dependência.   |
+| F-07 — foreign keys configuráveis       | Alta       | TP corrigido localmente                                     | Validador genérico de registries ativos.                |
+| F-08 — DoD superficial                  | Alta       | Harness limita-se a `authoring_integrity`                   | Tratar runtime/humano/release no fluxo responsável.     |
+| F-09 — slicing/higiene                  | Média      | Resolvido: workflow e required check ativos em `develop`    | Preservar a ruleset e o gate local canônico.            |
 
 ## Critério de encerramento deste pós-mortem
 
@@ -130,10 +130,11 @@ devem ganhar owner e task própria.
 - F-02 e F-03 foram resolvidos por autoridade contract-first, Gameplay writer `converged`, remoção do pseudo-writer narrativo e suíte canônica verde.
 - F-04 foi resolvido pela remoção da evidência autorreferente; o gate recalcula o checkout atual.
 - F-06 foi resolvido por A1: writers, fixtures e validador ativos são rastreáveis; 010/011 permanecem apenas como proveniência content-addressed.
-- F-09 foi resolvido por S1 para `file0`/`file1`; outros slots já rastreados não foram alterados.
+- A política S1 classificou `file0`/`file1` como saves locais; outros slots já rastreados não foram alterados.
+- F-09 foi resolvido pelo workflow e pelo required check `Authoring integrity` em `develop`.
 - F-05 recebeu ADR e núcleo reutilizável; novas fronteiras devem ampliar o harness por regressões genéricas, sem copiar cutscenes.
 - F-08 permanece fora do harness estático: runtime, aceite humano e release exigem seus próprios sensores.
-- F-01 permanece bloqueante: não houve novo playtest humano.
+- F-01 foi resolvido pelo reteste B-01 a B-18 de 2026-08-28, registrado em `PLAYTEST-2026-08-28.md`.
 
 ## Estado residual após a promoção
 
@@ -148,9 +149,9 @@ devem ganhar owner e task própria.
 - Tooling ativo consolidado em `docs/Quests/2-semifinal/tooling`; tasks 010/011 removidas do grafo de execução.
 - Saves `file0`/`file1` classificados como artefatos locais e ignorados.
 
-### Pendente
+### Pendente como evolução, sem bloquear o plano 012
 
-- Versionar o delta A1/S1/013.
-- Configurar `Authoring integrity` como required check nas branches protegidas.
 - Registrar owners das ADRs e criar tasks para as lacunas restantes.
-- Executar B-01 a B-18; até lá `release_ready` permanece `blocked`.
+- Incorporar estados humanos separados ao fluxo genérico de QA/release.
+
+O delta A1/S1/013 foi versionado, `Authoring integrity` tornou-se obrigatório e B-01 a B-18 passaram. O escopo do plano 012 está encerrado.

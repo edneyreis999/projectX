@@ -15,26 +15,26 @@
 
 ## B. Reteste humano obrigatório
 
-Use o mesmo commit/build registrado na evidência. Preencher tester, data, save/estado inicial, rota, observação livre e caminho de captura.
+Execução registrada em [PLAYTEST-2026-08-28.md](PLAYTEST-2026-08-28.md). Capturas foram opcionais por decisão do owner.
 
-- [ ] B-01 — RPG Maker abre, salva, fecha e reabre todos os mapas/databases alterados sem reparo.
-- [ ] B-02 — Jornada fresca completa de antes da saída de casa até V900, sem crash, Game Over, softlock ou objetivo pulado.
-- [ ] B-03 — Map061 bloqueia todos os nove desvios apenas em V40 e mantém a rota do estádio.
-- [ ] B-04 — Primeira chegada: Dragobur, estátua e gag funcionam; nenhum `CUTSCENE_NOT_EX`.
-- [ ] B-05 — Equipar Armor 51 avança imediatamente e a apresentação V80 termina com controle/câmera/UI restaurados.
-- [ ] B-06 — Repetir a detecção no estádio e no vestiário sem duplicar recompensa/apresentação.
-- [ ] B-07 — Retorno de Rheed posiciona elenco e inicia celebração sem rotas infinitas.
-- [ ] B-08 — Saída dos rivais e entrada dos guardas têm foco, ritmo e geografia legíveis.
-- [ ] B-09 — Gentle mostra formação, três passos, fade, transferência e guardas visíveis na chegada.
-- [ ] B-10 — Resist inicia batalha sem erro de TP, permite ações, perde normalmente e converge na escolta.
-- [ ] B-11 — Resist/Win excepcional converge uma vez e limpa party/HP conforme contrato.
-- [ ] B-12 — Guardas permanecem visíveis após VN, party refresh e V120→V900; cleanup V32 os remove sem colisão.
-- [ ] B-13 — Thorin e guardas encerram a escolta olhando para oeste, sem giro artificial.
-- [ ] B-14 — Gabs de Killin/Mhordred substituem a fila em interações repetidas e não deixam wait residual.
-- [ ] B-15 — Assets, busts, fundo VN, sprites e ícone passam por revisão visual em contexto.
-- [ ] B-16 — Humor, autoridade, classe, “Magia”, ritmo e clareza são avaliados por humano; nenhum desses critérios é promovido por script.
-- [ ] B-17 — Testar áudio normal e mudo; fatos essenciais permanecem legíveis.
-- [ ] B-18 — Confirmar ausência de câmera, zoom, áudio, Gab, collision, party ou lock residual em cada fronteira.
+- [x] B-01 — RPG Maker abre, salva, fecha e reabre todos os mapas/databases alterados sem reparo.
+- [x] B-02 — Jornada fresca completa de antes da saída de casa até V900, sem crash, Game Over, softlock ou objetivo pulado.
+- [x] B-03 — Map061 bloqueia todos os nove desvios apenas em V40 e mantém a rota do estádio.
+- [x] B-04 — Primeira chegada: Dragobur, estátua e gag funcionam; nenhum `CUTSCENE_NOT_EX`.
+- [x] B-05 — Equipar Armor 51 avança imediatamente e a apresentação V80 termina com controle/câmera/UI restaurados.
+- [x] B-06 — Repetir a detecção no estádio e no vestiário sem duplicar recompensa/apresentação.
+- [x] B-07 — Retorno de Rheed posiciona elenco e inicia celebração sem rotas infinitas.
+- [x] B-08 — Saída dos rivais e entrada dos guardas têm foco, ritmo e geografia legíveis.
+- [x] B-09 — Gentle mostra formação, três passos, fade, transferência e guardas visíveis na chegada.
+- [x] B-10 — Resist inicia batalha sem erro de TP, permite ações, perde normalmente e converge na escolta.
+- [x] B-11 — Resist/Win excepcional converge uma vez e limpa party/HP conforme contrato.
+- [x] B-12 — Guardas permanecem visíveis após VN, party refresh e V120→V900; cleanup V32 os remove sem colisão.
+- [x] B-13 — Thorin e guardas encerram a escolta olhando para oeste, sem giro artificial.
+- [x] B-14 — Gabs de Killin/Mhordred substituem a fila em interações repetidas e não deixam wait residual.
+- [x] B-15 — Assets, busts, fundo VN, sprites e ícone passam por revisão visual em contexto.
+- [x] B-16 — Humor, autoridade, classe, “Magia”, ritmo e clareza são avaliados por humano; nenhum desses critérios é promovido por script.
+- [x] B-17 — Testar áudio normal e mudo; fatos essenciais permanecem legíveis.
+- [x] B-18 — Confirmar ausência de câmera, zoom, áudio, Gab, collision, party ou lock residual em cada fronteira.
 
 ## C. Checklist para futuras tasks RPG Maker
 
@@ -86,12 +86,12 @@ Use o mesmo commit/build registrado na evidência. Preencher tester, data, save/
 
 ## D. Encerramento do ciclo
 
-- [ ] D-01 — F-02 a F-04 estão resolvidos; F-01 continua aberto até o playtest B-01 a B-18.
+- [x] D-01 — F-01 a F-04 estão resolvidos; o playtest B-01 a B-18 passou na revisão registrada.
 - [ ] D-02 — ADRs P01–P03 foram promovidas e aceitas, mas seus owners formais ainda precisam ser registrados.
 - [ ] D-03 — Skills P0/P1 foram atualizadas e testadas com casos genéricos.
 - [ ] D-04 — Lacunas FG-01–FG-04 possuem tasks, owner e prazo.
 - [x] D-05a — O sumário diferencia resultado esperado, estruturalmente provado e humanamente observado.
-- [ ] D-05b — O PR ainda precisa preservar essa separação; nenhum PR foi preparado nesta rodada.
+- [x] D-05b — O PR 341 preserva a separação entre integridade autoral e aceite humano.
 
 ## E. Promoção executada em 2026-08-27
 
@@ -100,8 +100,8 @@ Use o mesmo commit/build registrado na evidência. Preencher tester, data, save/
 - [x] E-03 — ADR de lifecycle de evidência promovida com fingerprints e verificação pública de freshness.
 - [x] E-04 — Manifesto `target → checks` materializado com bloqueio `unmapped_target` para superfícies protegidas.
 - [x] E-05 — Golden path descartável prova writers, validador v2, suíte integrada e diff-check sem relaxar gates.
-- [ ] E-06 — O pacote 012 foi versionado e a política A1 foi decidida; falta versionar `docs/Quests/2-semifinal/tooling` e o manifesto de proveniência para concluir a migração.
-- [ ] E-07 — Executar B-01 a B-18 no build fingerprintado.
+- [x] E-06 — O pacote 012, `docs/Quests/2-semifinal/tooling` e o manifesto de proveniência foram versionados.
+- [x] E-07 — B-01 a B-18 passaram no build fingerprintado.
 
 ## F. Gates executados no worktree em 2026-08-27
 
@@ -110,7 +110,7 @@ Use o mesmo commit/build registrado na evidência. Preencher tester, data, save/
 - [x] F-03 — `npm run test:semifinal`: 14/14 suítes e 252/252 testes.
 - [x] F-04 — `npm run build:types`: aprovado.
 - [x] F-05 — Narrative e Gameplay writers: `ready` em `--check`.
-- [ ] F-06 — Evidência `semifinal-validation/v3`: gerar diagnóstico no worktree e regenerar no HEAD commitado, mantendo `release_ready: blocked` até os gates humanos.
+- [x] F-06 — A evidência v3 persistida foi superada pelo gate recalculado da demanda 013; o aceite humano está em `PLAYTEST-2026-08-28.md`.
 - [x] F-07 — Mapa de impacto executou `harness`, `noite-da-historia`, `semifinal` e `build-types`, sem target protegido desmapeado.
 - [x] F-08 — `git diff --check`, Prettier, links locais e trailing whitespace: aprovados para o worktree.
 - [x] F-09 — Revisão final `deslop`: nenhum finding restante.
@@ -133,5 +133,5 @@ Use o mesmo commit/build registrado na evidência. Preencher tester, data, save/
 - [x] H-03 — A1: remover cinco suítes legadas que congelavam os modelos 010/contrato antigo e manter as 14 suítes públicas atuais da Semifinal.
 - [x] H-04 — S1: preservar os saves locais, removê-los do Git e ignorar novos `*.rmmzsave` em `frontend/save`.
 - [x] H-05 — C2: registrar integração de CI como task futura, fora desta implementação.
-- [ ] H-06 — Versionar o pacote durável e regenerar evidência v3 no HEAD resultante.
-- [ ] H-07 — Executar B-01 a B-18 no mesmo commit/build fingerprintado.
+- [x] H-06 — Pacote durável versionado; a demanda 013 removeu a necessidade de regenerar evidência v3 persistida.
+- [x] H-07 — B-01 a B-18 passaram no mesmo commit/build fingerprintado.

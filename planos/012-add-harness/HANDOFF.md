@@ -1,7 +1,7 @@
 ---
 title: Handoff — harness da semifinal e gate de integridade autoral
 date: 2026-08-28
-status: authoring-gate-implemented-branch-protection-pending
+status: authoring-gate-and-human-retest-complete
 branch: feat/migracao-semifinal-mapas-ex
 ---
 
@@ -21,6 +21,7 @@ O harness declara apenas `authoring_integrity`. Ele não declara runtime verific
 - `scripts/validation-impact.js`: planejador e executor fail-closed.
 - `scripts/validate-staged.js`: valida um snapshot exato do índice Git.
 - `.github/workflows/authoring-integrity.yml`: executa o gate local em pull requests e publica o relatório da execução atual.
+- `PLAYTEST-2026-08-28.md`: aceite humano B-01 a B-18 vinculado à revisão testada.
 
 Foram removidos inventários narrativos derivados, snapshots de hashes usados como contrato, o pseudo-writer narrativo e o subsistema órfão de evidência. O manifesto de assets permanece porque possui
 consumidores reais e verifica existência, dimensões, transparência e identidade dos arquivos; não contém campos de aprovação humana.
@@ -68,12 +69,12 @@ npm run quest:semifinal:apply:gameplay
 | `dirty_worktree`               | Gate de branch recebeu outro snapshot misturado | Limpar o checkout ou usar `validate:staged`                      |
 | `gate_mutated_worktree`        | Um check escreveu durante a validação           | Corrigir o check para operar read-only                           |
 
-# Trabalho externo ainda necessário
+# Encerramento do ciclo
 
-Configure `Authoring integrity` como required check nas proteções das branches de destino. O YAML não consegue tornar a própria execução obrigatória.
+`Authoring integrity` está configurado como required check em `develop` e passou no PR 341 para a revisão `bdd0db1e`. O reteste humano B-01 a B-18 também passou nessa revisão e está registrado em
+`PLAYTEST-2026-08-28.md`, separado do relatório determinístico do harness.
 
-Playtest, revisão visual, áudio e aceite narrativo continuam necessários onde os contratos os atribuem a julgamento. Registre esses resultados no processo de QA apropriado; não os transforme em campos
-do harness estático.
+Capturas foram opcionais por decisão do owner e não foram produzidas. As lacunas de framework restantes possuem evolução própria e não bloqueiam o encerramento do plano 012.
 
 # Fontes e conflitos
 
@@ -82,4 +83,4 @@ do harness estático.
 - `docs/project-conventions/rpg-maker-event-lifecycle.md` mantém runtime e julgamento humano fora da alegação estática.
 
 O pacote 012 originalmente previa evidência persistida e tooling em um diretório global. Essa direção foi superada pela demanda 013 porque criava superfícies autorreferentes e distantes da quest. Os
-registros históricos permanecem úteis como proveniência, mas não são comandos operacionais.
+registros históricos permanecem úteis como proveniência, mas não são comandos operacionais. Não há conflito entre os contratos consultados e o aceite humano registrado.

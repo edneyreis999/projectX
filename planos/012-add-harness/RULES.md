@@ -7,7 +7,7 @@ Estas regras são propostas, não alterações já promovidas. A rastreabilidade
 - R-01 foi promovida pela ADR `authoring-materialization-authority.md`.
 - R-02 e R-03 foram promovidas pela ADR `validation-evidence-lifecycle.md`; o gate atual recalcula o checkout e não persiste evidência.
 - R-04 a R-07 foram promovidas pela ADR `rpg-maker-event-lifecycle.md`, pelo guia operacional e pelo helper de lifecycle.
-- R-12 possui materialização executável no mapa `target → checks` e workflow de CI; falta tornar `Authoring integrity` obrigatório na proteção das branches.
+- R-12 possui materialização executável no mapa `target → checks`, workflow de CI e required check em `develop`.
 - R-08 a R-11 e R-13 a R-16 continuam propostas ou parcialmente cobertas; este arquivo não lhes concede status de regra aceita.
 
 ## R-01 — Autoridade antes da edição
@@ -147,8 +147,8 @@ Estas regras são propostas, não alterações já promovidas. A rastreabilidade
 | R-02/R-03      | Versionar os inputs de evidência e fazer o loop consumir os estados separados.       |
 | R-04–R-07      | Atualizar as skills RPG Maker e ampliar o harness apenas com regressões comprovadas. |
 | R-08/R-09      | Criar validador compartilhado de registries e payloads tipados.                      |
-| R-10/R-11/R-16 | Executar o playtest B-01 a B-18 e preservar claims humanos separados.                |
-| R-12           | Integrar `validation:impact` ao CI/pre-merge e revalidar após o commit.              |
+| R-10/R-11/R-16 | Concluída neste ciclo; preservar claims humanos separados em futuras quests.         |
+| R-12           | Concluída em `develop`; preservar `validation:impact` obrigatório no pre-merge.      |
 | R-13           | Manter 010/011 como história content-addressed; tooling ativo deve ser rastreado.    |
 | R-14           | Criar schema de ownership/leases e validador do DAG.                                 |
 | R-15           | Concluída para `file0`/`file1`: locais, removidos do índice e ignorados.             |

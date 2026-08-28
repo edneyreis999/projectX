@@ -38,6 +38,8 @@
 | 2026-08-27, sincronização do plano 012 | Handoff e documentos atualizados              | Os artefatos passaram a separar histórico, materialização no worktree e pendências. O próximo ciclo ficou restrito a versionamento/reprodutibilidade, CI, classificação dos saves e playtest B-01 a B-18.                                                                                                                                                                                             |
 | 2026-08-27, commits de harness/planos  | Superfície pública versionada                 | `86c05e3b` publicou os comandos por quest, `test:quests`, lifecycle/evidência/impacto; `f3c3f0b8` versionou o pacote 012 e o handoff.                                                                                                                                                                                                                                                                 |
 | 2026-08-27, decisão A1/S1/C2           | Tooling durável sem dependência das tasks     | A1 consolidou o tooling, agora localizado em `docs/Quests/2-semifinal/tooling`, e registrou hashes históricos no manifesto. S1 preservou saves locais fora do índice. C2 reservou CI para task própria. Cinco suítes 010/contrato antigo supersedidas foram removidas.                                                                                                                                |
+| 2026-08-28, gate obrigatório           | CI autoral verde                              | `Authoring integrity` foi configurado como required check em `develop` e passou no PR 341 para `bdd0db1e`.                                                                                                                                                                                                                                                                                            |
+| 2026-08-28, reteste humano             | B-01 a B-18 aprovados                         | Edney Reis percorreu a Semifinal a partir de New Game, incluindo Gentle, Resist/derrota, Resist/vitória, editor round-trip, revisão visual e áudio normal/mudo. O relato está em `PLAYTEST-2026-08-28.md`; capturas foram opcionais e não produzidas.                                                                                                                                                 |
 
 ## Evolução da validação automatizada
 
@@ -56,9 +58,9 @@ worktree A1:  252/252 no golden path; tooling ativo independente de 010/011
 ## Estado final reconstruído
 
 - O runtime recebeu correções robustas para os incidentes conhecidos.
-- Nenhuma evidência comprova que o percurso corrigido foi retestado de ponta a ponta.
+- O percurso corrigido foi retestado de ponta a ponta em 2026-08-28 e aprovado pelo owner.
 - O harness voltou a convergir com os contratos disciplinares contract-first.
-- A evidência estática v3 agora é verificável sem inputs ativos ignorados, mas não é release-ready porque o playtest continua pendente.
-- O mapa de impacto prova os quatro consumidores atuais, mas ainda não é gate obrigatório de CI.
-- O harness e o pacote 012 já estão no HEAD; o delta A1/S1 ainda precisa de validação final e commit.
-- A branch não deve ser tratada como aceita para release até concluir o checklist humano e regenerar a evidência no HEAD aprovado.
+- A evidência persistida v3 foi removida; o gate recalcula a integridade autoral no checkout atual.
+- O mapa de impacto prova seus consumidores atuais e é required check em `develop`.
+- O harness, o pacote 012 e o delta A1/S1 estão versionados.
+- O checklist humano passou; as evoluções residuais do framework seguem em tasks próprias.

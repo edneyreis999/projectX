@@ -34,8 +34,8 @@ Os aprendizados mais valiosos formam três princípios:
 - L-01/L-07: ADR, guia, helper compartilhado e regressões com seleção de página, descarte de `Parallel` e deleção de target foram materializados.
 - L-03: autoridade contract-first foi aceita e os writers voltaram a convergir.
 - L-04: o gate atual recalcula o resultado no checkout e não mantém evidência versionada; a ADR continua governando qualquer persistência futura.
-- L-05: estados multidimensionais e `remediated_pending_retest` foram materializados; o loop ainda não os consome.
-- L-15: o mapa `target → checks` ganhou workflow de CI; falta configurar o status como obrigatório na proteção das branches.
+- L-05: estados multidimensionais foram materializados; o reteste humano final passou, mas o loop ainda não consome esses estados genericamente.
+- L-15: o mapa `target → checks` ganhou workflow de CI e status obrigatório na proteção de `develop`.
 - L-13 foi aplicado com pacote ativo rastreável e manifesto content-addressed; logging histórico completo permanece fora do escopo.
 - L-14 foi aplicado aos saves `file0`/`file1`, preservados localmente e removidos do índice.
 - L-02, L-06, L-08–L-10 e L-12 continuam como evolução ou gate humano, conforme [FRAMEWORK-GAPS.md](FRAMEWORK-GAPS.md).

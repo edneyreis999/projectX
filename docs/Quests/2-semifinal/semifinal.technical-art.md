@@ -8,8 +8,9 @@ authority_model: contract-first
 implementation_baseline_reviewed: 362e2da0
 asset_manifest: docs/Quests/2-semifinal/tooling/fixtures/assets/asset-manifest.json
 structural_validation: passed
-human_visual_validation: pending_retest
-editor_validation: pending_retest
+human_visual_validation: passed
+editor_validation: passed
+human_validation_evidence: planos/012-add-harness/PLAYTEST-2026-08-28.md
 ---
 
 # A Semifinal — contrato de Technical Art
@@ -66,8 +67,8 @@ Os três arquivos Cabide, !$Capacete e !$Armadura têm o mesmo SHA-256:
 
 0a6cb74a791962805dfe59428d9f47d2a2102c887f292a8bae6e2a30fc504635
 
-Os placeholders !$Capacete e !$Armadura possuem bytes idênticos. Este contrato não considera essa troca prova de que a estátua pareça sem o capacete; a leitura continua dependente de substituição futura
-do placeholder ou validação humana que aceite o resultado.
+Os placeholders !$Capacete e !$Armadura possuem bytes idênticos. Essa identidade estrutural, isoladamente, não prova que a estátua pareça sem o capacete; o resultado em contexto foi aceito no reteste
+de 2026-08-28. Uma substituição futura permanece opcional até que novo feedback humano demonstre necessidade.
 
 ## Elmo Velho, ícone e skin
 
@@ -124,17 +125,17 @@ Enemy 91 usa:
 - apenas Skill 1 na lista de ações.
 
 O asset frontend/img/sv_actors/Mhordred.png existe, mede 676×547 RGBA e tem SHA-256 b78570b443ae133bf48de9441515403215dcee2ff42d3ad621baf6dd6b62311f. Ele continua classificado como placeholder: o
-arquivo é um sheet side-view de ator reaproveitado como battler de inimigo e não possui aprovação visual registrada.
+arquivo é um sheet side-view de ator reaproveitado como battler de inimigo. O resultado em contexto foi aceito no reteste humano de 2026-08-28.
 
-## Placeholders e riscos ainda reais
+## Placeholders e limitações aceitas
 
-| Asset            | Estado estrutural      | Risco que o código não resolve                                        |
-| ---------------- | ---------------------- | --------------------------------------------------------------------- |
-| !$Armadura       | carregável e hasheado  | é byte-idêntico ao display com capacete; pode comunicar estado errado |
-| $Adversario4     | carregável e hasheado  | duplicação provisória; distinção visual não aprovada                  |
-| Mhordred battler | carregável e hasheado  | escala, pivot e compatibilidade com renderer inimigo pendentes        |
-| VN_Semifinal_BG  | carregável e hasheado  | composição, contraste, estilo e safe area em cena pendentes           |
-| busts            | existentes e hasheados | expressão, direção de olhar, escala e clipping pendentes              |
+| Asset            | Estado estrutural      | Limitação conhecida após o aceite humano                             |
+| ---------------- | ---------------------- | -------------------------------------------------------------------- |
+| !$Armadura       | carregável e hasheado  | permanece byte-idêntico ao display com capacete                      |
+| $Adversario4     | carregável e hasheado  | permanece uma duplicação provisória                                  |
+| Mhordred battler | carregável e hasheado  | permanece um sheet de ator reaproveitado como inimigo                |
+| VN_Semifinal_BG  | carregável e hasheado  | composição e safe area foram aceitas somente no contexto testado     |
+| busts            | existentes e hasheados | expressão, direção, escala e clipping foram aceitos no fluxo testado |
 
 ## Requisitos preservados
 
@@ -148,5 +149,5 @@ Gameplay Engineering deve preservar:
 6. Enemy 91/Troop 19 e o battler Mhordred;
 7. distinção entre integridade estrutural e aceite visual.
 
-Editor e reteste humano devem observar pelo menos V29 50/60/70/80, a transformação nos dois owners possíveis, as quatro VNs, a elipse no campo e a batalha Resist. structural_validation passed não
-altera human_visual_validation/editor_validation.
+Editor e reteste humano observaram V29 50/60/70/80, a transformação nos dois owners possíveis, as quatro VNs, a elipse no campo e a batalha Resist. Os gates visual e de editor passaram na evidência
+`planos/012-add-harness/PLAYTEST-2026-08-28.md`; `structural_validation` permanece uma alegação separada.

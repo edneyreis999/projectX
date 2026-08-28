@@ -6,7 +6,8 @@ document_kind: cutscene score contract
 contract_version: 2.0.0
 authority_model: contract-first
 implementation_baseline_reviewed: 362e2da0
-human_presentation_validation: pending_retest
+human_presentation_validation: passed
+human_validation_evidence: planos/012-add-harness/PLAYTEST-2026-08-28.md
 language: pt-BR
 ---
 
@@ -14,8 +15,8 @@ language: pt-BR
 
 ## Autoridade
 
-Este score é a fonte aprovada para posições, waits, locks, páginas, staging e cleanup da semifinal. Gameplay Engineering materializa essas decisões nos mapas e plugins. Uma divergência no runtime é uma
-não conformidade até que o Scene Presentation Designer e os demais owners afetados aprovem uma nova versão.
+Este score é a fonte aprovada para posições, waits, locks, páginas, staging e cleanup da semifinal. Gameplay Engineering materializa essas decisões nos mapas e plugins. Uma divergência no runtime é
+uma não conformidade até que o Scene Presentation Designer e os demais owners afetados aprovem uma nova versão.
 
 Copy é registrada em semifinal.dialogos.md. Este documento registra ciclos de controle, routing EX/VN, staging, movimentos, câmera, zoom, barriers, transições e recovery.
 
@@ -26,7 +27,7 @@ Copy é registrada em semifinal.dialogos.md. Este documento registra ciclos de c
 | Coreto_Cutscene         | ativo; código v1.0.1; exige mapa EX, mesmo event owner no BeginCutscene/FinishCutscene, bloqueia movimento/menu/save e restaura contexto capturado                 |
 | Coreto_QuestVN          | ativo; código v1.1.0; captura origem, áudio, tela, transparência, followers, menu e save; transfere para mapa VN; retorna por label transitório quando configurado |
 | VisuMZ_4_MapCameraZoom  | ativo; usado no gag, transformação do elmo, saída dos rivais, entrada dos guardas, escolta e chegada                                                               |
-| VisuMZ_4_GabWindow      | ativo; WaitForGab aparece apenas nas barriers declaradas                                                                                                            |
+| VisuMZ_4_GabWindow      | ativo; WaitForGab aparece apenas nas barriers declaradas                                                                                                           |
 | VisuMZ_2_VNPictureBusts | ativo; busts e background são limpos dentro das páginas VN antes de FinishVisualNovel                                                                              |
 
 Cada ida a VN termina primeiro o lock EX. Ao retornar, o plugin reinstala o interpreter do evento de origem imediatamente depois do label único e o evento abre um novo ciclo de cutscene quando
@@ -269,13 +270,12 @@ As páginas visíveis usam Gab forçada com bypass anti-repeat e não aguardam c
 
 ## Supersessões aprovadas
 
-- Killin/Mhordred não entram por (11,16)/(12,16) nem aparecem inicialmente em (0,7)/(0,8); o fluxo aprovado usa (7,6)/(8,6) ocultos, depois (1,7)/(1,8) visíveis e finalmente
-  (11,10)/(12,10).
+- Killin/Mhordred não entram por (11,16)/(12,16) nem aparecem inicialmente em (0,7)/(0,8); o fluxo aprovado usa (7,6)/(8,6) ocultos, depois (1,7)/(1,8) visíveis e finalmente (11,10)/(12,10).
 - A formação final não termina em (10,7)/(11,7)/(12,7); esse é o alinhamento antes da caminhada. O último frame antes do fade usa (7,7)/(8,7)/(9,7).
 - A elipse da partida não inclui crianças por opacidade nem move Rheed; apenas usa E9/E4 como anchors e oculta E4–E7 no cleanup.
 - Cues e beats não declarados neste score não pertencem ao contrato.
 
 ## Validação humana
 
-A conformidade estrutural com os comandos acima não prova ritmo, legibilidade, conforto do gag, impacto da transformação, clareza espacial da troca rival/guarda ou continuidade perceptiva após
-VN/batalha. Esses critérios continuam marcados como pending_retest.
+A conformidade estrutural isolada não prova ritmo, legibilidade, conforto do gag, impacto da transformação, clareza espacial da troca rival/guarda ou continuidade perceptiva após VN/batalha. Esses
+critérios passaram no reteste humano registrado em `planos/012-add-harness/PLAYTEST-2026-08-28.md`.

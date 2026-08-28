@@ -45,5 +45,5 @@ This prompt has been executed. The canonical current status is in [SUMÁRIO-EXEC
 Completed and versioned: lifecycle and evidence ADRs, shared harness helpers, the executable `target → checks` map, public commands per quest, the `test:quests` aggregate, and the 012 plan package. A1
 then consolidated active Semifinal tooling, now located under `docs/Quests/2-semifinal/tooling`; S1 removed local saves from the index, and C2 deferred CI integration to a separate task.
 
-Still pending: validate and version the A1/S1 delta, regenerate v3 evidence on that committed HEAD, and execute human checklist B-01 through B-18. The feature remains `release_ready: blocked` until
-the human gates are resolved. CI integration is intentionally tracked as future work, not as a gate for this implementation branch.
+Final update on 2026-08-28: the A1/S1/013 delta is versioned, `Authoring integrity` is a required check in `develop`, and human checklist B-01 through B-18 passed on revision `bdd0db1e`. Persisted v3
+evidence was superseded by the recalculated gate. Remaining framework gaps require their own tasks and do not block closure of plan 012.
