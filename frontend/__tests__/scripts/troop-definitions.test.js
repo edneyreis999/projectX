@@ -17,6 +17,13 @@ describe('Troop Definitions Module', () => {
     enemiesData = JSON.parse(rawData);
   });
 
+  test('UT-042: physical Troop 19 ownership names one Mhordred without changing logical Kravens ID 19', () => {
+    expect(troopDefinitions[18]).toMatchObject({ id: 19, region: 'kravens' });
+    expect(troopDefinitions.physical).toEqual([
+      { physicalId: 19, name: 'Mhordred', region: 'semifinal', members: [{ enemyName: 'Mhordred', count: 1 }] },
+    ]);
+  });
+
   // ==========================================
   // UNIT TESTS: Module Structure
   // ==========================================

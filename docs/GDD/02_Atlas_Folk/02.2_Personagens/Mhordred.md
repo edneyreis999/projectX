@@ -28,7 +28,7 @@ Sua função é guarda de campo, "mau policial", atacante brutal e protetor por 
 
 Sua personalidade é impaciente, direto, agressivo, leal, corajoso e emocionalmente pouco elaborado. Ele valoriza força, ação e lealdade. Suas virtudes são coragem, prontidão e fidelidade aos companheiros. Seus defeitos são impulsividade, dificuldade de escutar, tendência a resolver tensão pela intimidação e medo de ser inútil quando a força não basta.
 
-Sua motivação central é proteger seus irmãos de armas e destruir ameaças antes que elas destruam os seus. O conflito interno é o medo de impotência, especialmente após deixar [[Killin]] para trás. O conflito externo envolve [[Balastrus]], as ordens de [[Tordan]], a crise de Melios, os [[Ignotos]] e o amadurecimento forçado diante da liderança.
+Sua motivação central é proteger seus irmãos de armas e destruir ameaças antes que elas destruam os seus. O conflito interno é o medo de impotência, especialmente após deixar [[Killin]] para trás. O conflito externo envolve [[Balastrus]], as ordens de [[Tordan|Thordan]], a crise de Melios, os [[Ignotos]] e o amadurecimento forçado diante da liderança.
 
 ---
 
@@ -46,7 +46,7 @@ No Ato III, sua função é mostrar liderança nascendo de trauma. Ele tenta ocu
 
 | Momento             | Papel do personagem                                                          | Evolução                                             |
 | ------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------- |
-| Semifinal           | Interrompe [[Thorin]] com [[Killin]] a mando de [[Tordan]].                  | Surge como força bruta da autoridade.                |
+| Semifinal           | Interrompe [[Thorin]] com [[Killin]] a mando de [[Tordan|Thordan]].                  | Surge como força bruta da autoridade.                |
 | Hora de Crescer     | Participa da escolta e paga a armadura de [[Thorin]].                        | Mostra cuidado disfarçado de impaciência.            |
 | Expedições iniciais | Atua como proteção agressiva do grupo.                                       | Contrasta com a prudência de [[Killin]].             |
 | Travessias          | Reage com irritação e violência a perigos e à presença de [[Balastrus]].     | Começa a respeitar decisões corajosas de [[Thorin]]. |
@@ -81,7 +81,7 @@ Ele aprende autocontrole, perde a certeza de que força basta, conquista respeit
 | ------------- | --------------------------------------------------------- | -------------------------------------------------------------------- |
 | [[Killin]]    | Irmã de armas, melhor amiga e referência.                 | A queda dela o força a amadurecer.                                   |
 | [[Thorin]]    | Jovem nobre visto como fardo.                             | Desenvolve respeito quando [[Thorin]] escolhe lutar e assumir risco. |
-| [[Tordan]]    | Superior militar ligado à missão de escolta.              | Ordens dele colocam [[Mhordred]] no caminho de [[Thorin]] e Melios.  |
+| [[Tordan|Thordan]]    | Superior militar ligado à missão de escolta.              | Ordens dele colocam [[Mhordred]] no caminho de [[Thorin]] e Melios.  |
 | [[Balastrus]] | Minerador arrogante e alvo de desprezo.                   | Após Melios, ódio cresce, mas [[Mhordred]] evita matá-lo.            |
 | [[Filena]]    | Civil/rebelde inicialmente fora de sua estrutura militar. | Pode reconhecer sua coragem em campo.                                |
 | [[Corvinus]]  | Adversário ou obstáculo em Melios.                        | Relação direta pouco documentada.                                    |

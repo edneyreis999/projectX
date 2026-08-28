@@ -1,3 +1,24 @@
+- [Enemy 30 identidade reservada](project_enemy_30.md) - Sequência 1606 afirma explicitamente que Enemy 30 continua protegido como Fogolume.
+- [sequência final decisões técnicas](project_sequ_ncia_final.md) - Sequências 1391–1395: o assistente afirma que essas quatro decisões técnicas já estavam fechadas.
+- [batalha associada à escolha impacto sobre recursos permanentes](project_batalha_associada_escolha.md) - Sequências 1325–1328: o assistente recomenda explicitamente que a batalha mude “a experiência da escolha, não os recursos permanentes do jogador”.
+- [turno_concluido commit_criado](project_turno_concluido.md) - Sequência 602: “Nenhum commit foi criado.”
+- [Audio Designer limites_de_autoridade](project_audio_designer.md) - Sequências 932–940: “O Audio Designer entra como colaborador responsável pelos cues e critérios sonoros, sem tomar a autoridade das falas ou do runtime.”
+- [Daratrine tom_de_humor](project_daratrine.md) - Sequências 544–546 determinam documentar o humor “quinta-série” como parte intencional do tom do jogo.
+- [nomes de personagens grafia_canônica](project_nomes_de_personagens.md) - Sequência 477 registra explicitamente as três grafias canônicas.
+- [Tharok status_canônico](project_tharok.md) - Sequências 476–477 declaram explicitamente: “Tharok foi removido do cânone”.
+- [Killin identidade_e_cargo](project_killin.md) - Sequência 475: o assistente registra explicitamente “Killin é mulher, Capitã da Guarda de Ferro”.
+- [R5 de UX/UI baseline_funcional_e_validacao_humana](project_r5_de_ux_ui.md) - Sequência 404: confirmação da R5 no formato solicitado, ausência de contradição material, corte ao baseline funcional e critério humano causal de ponta a ponta.
+- [R4 reuso_abertura](project_r4.md) - Sequência 404 identifica essa restrição como ajuste bloqueante de contrato.
+- [transição para o mapa EX clareza espacial e diegética](project_transi_o_para_o_mapa_ex.md) - Sequências 281–293 registram a tensão espacial e o ajuste convergente entre Narrative e Level.
+- [R4 de áudio — escala e autoridade estrategia_sonora](project_r4_de_udio_escala_e_autoridade.md) - Sequência 279 resume a decisão: “Escala e autoridade por relações sonoras, não loudness obrigatório.”
+- [R3_gag criterio_de_humor](project_r3_gag.md) - Sequências 220–221 e 255 estabelecem explicitamente esse limite narrativo.
+- [R3 autoridade_narrativa](project_r3.md) - Sequências 219–220 e 253–255 corrigem explicitamente a autoridade documental desses elementos.
+- [R3 — gag do feminino limite de representação](project_r3_gag_do_feminino.md) - Sequência 212: o assistente registra um veto claro à estereotipação da gag do feminino.
+- [recuperação de encenação espacial limites de fallback](project_recupera_o_de_encena_o_espacial.md) - Sequências 176–178 definem a ordem de fallback e enumeram correções espacialmente inaceitáveis.
+- [R2 — gramática da cena progressão dramática e significado de compressão](project_r2_gram_tica_da_cena.md) - Sequência 184: o assistente registra convergência material da R2 e explicita tanto a tese abrangente quanto o limite semântico de “compressão”.
+- [validação da apresentação espacial fronteira entre runtime e playtest](project_valida_o_da_apresenta_o_espacial.md) - Sequências 169 e 180–181 reservam percepção e recuperação de foco para validação humana.
+- [cutscenes semifinais relação entre entrada sonora e reconhecimento](project_cutscenes_semifinais.md) - Sequências 116–117 registram que a entrada pode preceder o reconhecimento e que a prioridade sonora não deve antecipar indevidamente os guardas.
+- [Workspace Checkpoint Summary](project_checkpoint_summary.md) - Continuity checkpoint updated from completed workspace sessions.
 - [cena do Nevoeiro reação da criança](project_cena_do_nevoeiro.md) - Sequência 1256: “Uma criança não diz que aquilo parece real — ela tenta confirmar com o corpo”.
 - [timing de apresentação taxa de referência](project_timing_de_apresenta_o.md) - Sequências 1238–1246 registram explicitamente as equivalências 60 frames = 1 s e 120 frames = 2 s.
 - [MVP da cena com Gab escopo de personagens](project_mvp_da_cena_com_gab.md) - Sequência 268: o assistente afirma explicitamente que “nenhuma segunda Gab entra no MVP”.

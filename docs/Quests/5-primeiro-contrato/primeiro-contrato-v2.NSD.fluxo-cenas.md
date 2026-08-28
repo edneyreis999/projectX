@@ -48,7 +48,7 @@
   - **Filena** (interesse romântico)
   - **Balastrus** (mercenário líder)
   - **Borin** (rival)
-  - **Kilin** (guarda real)
+  - **Killin** (guarda real)
   - **Mhordred** (guarda real)
   - **Taverneiro Durgan** (NPC funcional)
   - **Expedicionários** (extras/filler)
@@ -152,7 +152,7 @@ muda de ideia.
 | --- | ---------------------------- | --------------------------------------------------------------------------------------------- | ---- |
 | 4-A | Oração                       | Thorin sussurra uma oração para cair na mesma equipe de Filena                                | 🎬   |
 | 4-B | Não se pode ter tudo na vida | Borin tira sarro de Thorin pois Filena está na equipe dele                                    | 🎬   |
-| 4-C | Guardiões                    | Kilin surge de surpresa e discute com Balastrus. Mhordred também surge                        | 🎬   |
+| 4-C | Guardiões                    | Killin surge de surpresa e discute com Balastrus. Mhordred também surge                        | 🎬   |
 | 4-D | Reputação                    | Balastrus refuta os guardas dizendo que tem uma reputação a zelar                             | 🎬   |
 | 4-E | Mudança de Maré              | Balastrus aceita os termos. Por logística, muda os times e Filena agora está com Thorin       | 🎬   |
 | 4-F | Filhinho de papai            | Filena se enfurece de estar na mesma equipe dos guardas e chama Thorin de "filhinho de papai" | 🎬   |
@@ -248,13 +248,13 @@ muda de ideia.
 
 | ID    | Título                 | Descrição                                                                                          | Tipo |
 | ----- | ---------------------- | -------------------------------------------------------------------------------------------------- | ---- |
-| 9-A   | Chegada à fogueira     | Thorin chega à fogueira dos guardas. Mhordred e Kilin estão comendo                                | 🎮   |
+| 9-A   | Chegada à fogueira     | Thorin chega à fogueira dos guardas. Mhordred e Killin estão comendo                                | 🎮   |
 | 9-B   | Ironia de Mhordred     | Mhordred vê Thorin e sorri: "Olha só. Cansou dos seus amigos novos e veio jantar com a criadagem?" | 🎬   |
 | 9-C   | Borin aparece          | Borin aproxima-se com sorriso trocista: "O 'campeão' veio pedir esmola aos seus guarda-costas?"    | 🎬   |
 | 9-D   | Pergunta de Mhordred   | Mhordred pergunta: "seus amigos não têm comida lá, não?"                                           | 🎬   |
 | 9-E   | Resposta de Borin      | Borin: "temos sim e muita! A gente não precisa de comida da realeza" e vai embora                  | 🎬   |
 | 9-F   | Thorin tenta apaziguar | Thorin tenta apaziguar Mhordred. Jogador escolhe: [Pedir com respeito] / [Apelar por Filena]       | 🎮   |
-| 9-G.1 | Pedido com respeito    | Kilin corta um pedaço generoso: "Fazer amigos, é? Talvez isto ajude"                               | 🎬   |
+| 9-G.1 | Pedido com respeito    | Killin corta um pedaço generoso: "Fazer amigos, é? Talvez isto ajude"                               | 🎬   |
 | 9-G.2 | Apelo romântico        | Os guardas caem na gargalhada pela "desgraça amorosa" e entregam a carne por pena                  | 🎬   |
 | 9-H   | Receber o assado       | Thorin apanha o assado. Item "Assado Suculento" adicionado ao inventário                           | 🎬   |
 | 9-I   | Retorno aos novatos    | Jogador controla Thorin com o assado na mão para retornar à fogueira dos novatos                   | 🎮   |

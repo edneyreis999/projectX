@@ -29,7 +29,7 @@ Sua função é múltipla: patrono de expedições, inventor, operador técnico,
 
 Sua personalidade é brilhante, arrogante, calculista, ressentida e performática. Ele valoriza eficiência, mérito, tecnologia e reconhecimento. Suas virtudes são inteligência, capacidade de improviso e utilidade objetiva em crise. Seus defeitos são vaidade, crueldade operacional, desprezo por tradição, manipulação social e facilidade para tratar pessoas como variáveis descartáveis.
 
-Sua motivação central é ser reconhecido como indispensável por Gildrat e pela nobreza, superando a humilhação cultural de ser um anão careca e de origem inferior. Seu conflito interno é entre genialidade real e necessidade doentia de validação. Seu conflito externo envolve [[Thorin]], [[Filena]], [[Killin]], [[Mhordred]], [[Corvinus]], [[Tordan]], [[Dambur]] e os [[Ignotos]].
+Sua motivação central é ser reconhecido como indispensável por Gildrat e pela nobreza, superando a humilhação cultural de ser um anão careca e de origem inferior. Seu conflito interno é entre genialidade real e necessidade doentia de validação. Seu conflito externo envolve [[Thorin]], [[Filena]], [[Killin]], [[Mhordred]], [[Corvinus]], [[Tordan|Thordan]], [[Dambur]] e os [[Ignotos]].
 
 ---
 
@@ -47,7 +47,7 @@ No Ato III, sua função muda: ele é tecnicamente necessário para defender Gil
 
 | Momento            | Papel do personagem                                                                        | Evolução                                                                             |
 | ------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
-| Contratos iniciais | Recebe [[Thorin]] por imposição de [[Tordan]] e opera como patrono/carrasco de expedições. | Aparece como autoridade técnica abusiva.                                             |
+| Contratos iniciais | Recebe [[Thorin]] por imposição de [[Tordan|Thordan]] e opera como patrono/carrasco de expedições. | Aparece como autoridade técnica abusiva.                                             |
 | Kravens            | Explora trabalho, recursos e riscos em busca de Profundina e lucro/avanço.                 | Consolida antagonismo com [[Filena]] e desconfiança do grupo.                        |
 | Travessia          | Forçado a cooperar com o grupo em ambientes perigosos.                                     | Sua utilidade prática começa a conviver com repulsa moral.                           |
 | Conselho           | Manipula interesses do Conselho e do futebol rúnico para viabilizar Melios.                | Passa de carrasco local a agente político.                                           |
@@ -83,7 +83,7 @@ Seu clímax moral ocorre após Melios e durante a preparação final, quando pre
 | ----------------------- | ----------------------------------------------------------------- | --------------------------------------------------------------------------- |
 | [[Thorin]]              | Jovem nobre imposto como aprendiz/ferramenta.                     | Manipula-o usando [[Filena]] e expedições; depois depende de sua liderança. |
 | [[Filena]]              | Trabalhadora/rebelde vista como instrumento ou obstáculo.         | Ela se torna contraponto moral a sua exploração.                            |
-| [[Tordan]]              | Aliado pragmático que o aceita como meio de endurecer [[Thorin]]. | Relação quebra quando os riscos ultrapassam o combinado.                    |
+| [[Tordan|Thordan]]              | Aliado pragmático que o aceita como meio de endurecer [[Thorin]]. | Relação quebra quando os riscos ultrapassam o combinado.                    |
 | [[Damburr]]             | Fonte de autorização política e ambição imperial.                 | Seus interesses técnicos se alinham à crise mineradora do império.          |
 | [[Killin]]              | Comandante prudente e útil.                                       | Conflito atinge ápice em Melios e no possível abandono/captura dela.        |
 | [[Mhordred]]             | Guarda bruto que desconfia dele.                                  | Após Melios, [[Mhordred]] pode levá-lo ao Conselho em vez de matá-lo.        |

@@ -1,22 +1,22 @@
 ﻿# NSD - Quando o Segundo Sol Chegar (Fluxo Visual de Quests)
 
-## O Troféu Quebrado (Tordan - Quest de Prelúdio)
+## O Troféu Quebrado (Thordan - Quest de Prelúdio)
 
 - Thorin, Mhordred, Filena e Balastrus retornam da Quest: "Quebra do selo em Mélios", que se encerra logo após a discussão do conselho onde Balastrus é absolvido das acusações e Thorin desafia o pai para se tornar membro da Guarda de Ferro.
 
-- Tordan deixa a corte logo depois e vai para casa. Antes de sair, entretanto, ele diz a Thorin que deseja falar com ele. Isso encerra a quest anterior: "Quebra do Selo em Mélios", e dá início a quest: "Troféu Quebrado". Thorin encontra Tordan na cozinha de sua casa, o mesmo local onde a primeira discussão entre os dois aconteceu, ainda no início do jogo. Um de seus troféus de futebol rúnico está sobre a mesa, seu pai encara o objeto em silêncio. Thorin pode se aproximar e iniciar a conversa. Quando isso acontece, Tordan confessa o real motivo de seu ódio: "Mélia... ela adorava ver você jogar. Ela adorava esse jogo estúpido ainda mais do que eu. E no fim... ela amou mais a liberdade dela do que a nós." Ele revela que, após ela partir, ele não conseguia mais olhar para o campo e para o jogo, ou para Thorin, sem sentir a dor do abandono dela.
+- Thordan deixa a corte logo depois e vai para casa. Antes de sair, entretanto, ele diz a Thorin que deseja falar com ele. Isso encerra a quest anterior: "Quebra do Selo em Mélios", e dá início a quest: "Troféu Quebrado". Thorin encontra Thordan na cozinha de sua casa, o mesmo local onde a primeira discussão entre os dois aconteceu, ainda no início do jogo. Um de seus troféus de futebol rúnico está sobre a mesa, seu pai encara o objeto em silêncio. Thorin pode se aproximar e iniciar a conversa. Quando isso acontece, Thordan confessa o real motivo de seu ódio: "Mélia... ela adorava ver você jogar. Ela adorava esse jogo estúpido ainda mais do que eu. E no fim... ela amou mais a liberdade dela do que a nós." Ele revela que, após ela partir, ele não conseguia mais olhar para o campo e para o jogo, ou para Thorin, sem sentir a dor do abandono dela.
 
-- O Jogador tem multipla escolha: Se Thorin for acusatório ("E você me culpou por isso.") - Tordan responde sem raiva: "Eu entendo que esteja com raiva de mim. Você tem os olhos dela e também o mesmo temperamento. Não deixe que o mundo quebre você... como me quebrou, filho. Isto é para você". Tordan entrega a Thorin um pequeno baú com sua velha funda dentro, feita com pele especial de um Lobo de Gelo, caçado por ele mesmo. Ele explica que em sua juventude, essa também era sua arma preferida.
+- O Jogador tem multipla escolha: Se Thorin for acusatório ("E você me culpou por isso.") - Thordan responde sem raiva: "Eu entendo que esteja com raiva de mim. Você tem os olhos dela e também o mesmo temperamento. Não deixe que o mundo quebre você... como me quebrou, filho. Isto é para você". Thordan entrega a Thorin um pequeno baú com sua velha funda dentro, feita com pele especial de um Lobo de Gelo, caçado por ele mesmo. Ele explica que em sua juventude, essa também era sua arma preferida.
 
 - Se Thorin escolher ser empático, seu pai o chama para seus aposentos pessoais, um local que o garoto raramente visita. O quarto é austero, militar, exceto por um pequeno baú trancado e uma foto de sua mãe na parede. Seu pai o encara: "Eu rejeitei seu caminho. Eu tentei forçá-lo a ser o que eu queria. Hoje reconheço o erro que cometi". Ele abre o baú. Lá dentro está uma Funda (Sling) belíssima e elaborada, feita com pele de Lobo de Gelo.
 
-- Descrição do Item: Não é uma funda de criança. Ela é tecida com tiras de couro e trançada com os fios de metal. O berço da funda, onde pedras se encaixam, é forrado com um pequeno pedaço de seda azul-claro, a cor do vestido favorito de Mélia.Tordan entrega a funda a Thorin. "Sua mãe a teceu. Que ela proteja o que restou da minha família".
+- Descrição do Item: Não é uma funda de criança. Ela é tecida com tiras de couro e trançada com os fios de metal. O berço da funda, onde pedras se encaixam, é forrado com um pequeno pedaço de seda azul-claro, a cor do vestido favorito de Mélia.Thordan entrega a funda a Thorin. "Sua mãe a teceu. Que ela proteja o que restou da minha família".
 
-- Tordan, em seguida, leva Thorin até um espaço de treinamento que fica dentro do vestiário, no estádio dos Machados Enferrujados, onde pequenos alvos estão espalhados. Ele ensina o filho a atirar com mais precisão e força, além de entregar alguns minérios com aparência rudimentar. "Isso é resultado do tempo da minha aliança com Balastrus, você sabe... antes dele trair a todos nós. Atire, você vai gostar".
+- Thordan, em seguida, leva Thorin até um espaço de treinamento que fica dentro do vestiário, no estádio dos Machados Enferrujados, onde pequenos alvos estão espalhados. Ele ensina o filho a atirar com mais precisão e força, além de entregar alguns minérios com aparência rudimentar. "Isso é resultado do tempo da minha aliança com Balastrus, você sabe... antes dele trair a todos nós. Atire, você vai gostar".
 
 - Enquanto estiver usando essa munição, os ataques de Thorin causam dano extra baseado no atributo escolhido (munição pode ser explosiva, bomba de fumaça, veneno entre outros).
 
-- Após a escolha do caminho pelo jogador, a quest: "Troféu Quebrado" se encerra. Tordan pede que o filho tome cuidado, o manda sair em patrulha - e A quest "Quando o Segundo Sol Chegar" - (com todas as suas mini-quests) é iniciada!
+- Após a escolha do caminho pelo jogador, a quest: "Troféu Quebrado" se encerra. Thordan pede que o filho tome cuidado, o manda sair em patrulha - e A quest "Quando o Segundo Sol Chegar" - (com todas as suas mini-quests) é iniciada!
 
 ## Resumo Geral (Checkpoint 0)
 
@@ -50,10 +50,10 @@
 | # | Quest | Dificuldade | Localização | Pontos | Requisitos |
 | --- | --- | --- | --- | --- | --- |
 | 01 | Treinando a Guarda de Ferro | Fácil | Campo de Treinamento | +30 | N/A |
-| 02 | Resgatando Kilin | Difícil | Campo de Treinamento | +30 | Ter completado "Treinando a Guarda de Ferro" |
-| 03 | Boas-vindas à Guarda de Ferro | Fácil | Taverna da Pedra Vulcânica | +10 | Ter completado "Resgatando Kilin" |
-| 04 | Guerreiro Fragmentado | Fácil | Campo de Treinamento | +15 | Ter completado "Resgatando Kilin" e "Boas-vindas à Guarda de Ferro" |
-| 05 | O Novo Lorde Anão | Fácil | Taverna da Pedra Vulcânica | +15 | Ter completado "Resgatando Kilin" |
+| 02 | Resgatando Killin | Difícil | Campo de Treinamento | +30 | Ter completado "Treinando a Guarda de Ferro" |
+| 03 | Boas-vindas à Guarda de Ferro | Fácil | Taverna da Pedra Vulcânica | +10 | Ter completado "Resgatando Killin" |
+| 04 | Guerreiro Fragmentado | Fácil | Campo de Treinamento | +15 | Ter completado "Resgatando Killin" e "Boas-vindas à Guarda de Ferro" |
+| 05 | O Novo Lorde Anão | Fácil | Taverna da Pedra Vulcânica | +15 | Ter completado "Resgatando Killin" |
 
 ### Exército Civil → v_forca_civil
 
@@ -95,7 +95,7 @@
 ### Fase 2 – Cadeia de primeira camada
 
 - Resgatar Grupos de Rebeldes em Kravens; Treinar Civis.
-- Resgatando Kilin.
+- Resgatando Killin.
 - Canção Ancestral.
 - Encontrar Ferreiro Para Armaduras; Encontrar Ferreiro Para Armas.
 - Pontos estimados: 200.
@@ -111,7 +111,7 @@
 - Estrada do Cão-luar: Testar Dinamite; Testar Armadilhas; Coletar Sigmetal na Câmera Revelada.
 - Distrito Comercial: Apaziguar Discussões; Encontrar Ferreiro Para Armaduras; Encontrar Ferreiro Para Armas.
 - Casa da Filena: Resgatar Rebeldes e Borin em Kravens.
-- Campo de Treinamento: Resgatar Grupos de Rebeldes em Kravens; Treinar Time Rúnico; Recrutar Civis; Treinar Civis; Treinando a Guarda de Ferro; Resgatando Kilin; Guerreiro Fragmentado.
+- Campo de Treinamento: Resgatar Grupos de Rebeldes em Kravens; Treinar Time Rúnico; Recrutar Civis; Treinar Civis; Treinando a Guarda de Ferro; Resgatando Killin; Guerreiro Fragmentado.
 - Taverna da Pedra Vulcânica: Boas-vindas à Guarda de Ferro; O Novo Lorde Anão.
 - Sala do Conselho: Resgatar Corvos e Família Principal; Canção Ancestral; Treinar Corvos.
 

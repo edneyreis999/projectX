@@ -25,7 +25,7 @@
   - Filena
   - Marvim
   - Brutus
-  - Kilin
+  - Killin
   - Mhordred
 
 ---

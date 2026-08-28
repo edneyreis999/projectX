@@ -273,5 +273,23 @@ const troopDefinitions = [
   },
 ];
 
+// Physical outputs are intentionally separate from the 36 logical regional
+// definitions. Their IDs are stable RPG Maker database contracts and MUST NOT
+// be remapped through a regional range.
+const physicalTroopDefinitions = [
+  {
+    physicalId: 19,
+    name: 'Mhordred',
+    region: 'semifinal',
+    members: [{ enemyName: 'Mhordred', count: 1 }],
+  },
+];
+
+Object.defineProperty(troopDefinitions, 'physical', {
+  value: physicalTroopDefinitions,
+  enumerable: false,
+  writable: false,
+});
+
 // Export for Node.js (CommonJS)
 module.exports = troopDefinitions;

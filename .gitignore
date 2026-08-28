@@ -1,5 +1,6 @@
 /coverage
 /dist
+/.artifacts/
 /frontend/js/**/*.d.ts
 /tsconfig.domain-dto.tsbuildinfo
 /tsconfig.application.tsbuildinfo
@@ -9,12 +10,7 @@
 .DS_Store
 /tasks
 /Maelen
-frontend/save/config.rmmzsave
-frontend/save/global.rmmzsave
-frontend/save/file0.rmmzsave
-frontend/save/file1.rmmzsave
-frontend/save/file2.rmmzsave
-frontend/save/file3.rmmzsave
+/frontend/save/*.rmmzsave
 /temp
 /zik-prompts-oneshot
 .claude
@@ -24,3 +20,6 @@ frontend/save/file3.rmmzsave
 .agents/
 .codex/
 /.env
+
+.compozy/tasks
+.compozy/memory

@@ -25,7 +25,7 @@
 
 | Tipo | Descrição |
 | --- | --- |
-| Flags / Decisões anteriores | Derrota recente para os Ignotos em Gildrat; escolha de proteger a cidade em vez de fugir com o grupo do Tordan. |
+| Flags / Decisões anteriores | Derrota recente para os Ignotos em Gildrat; escolha de proteger a cidade em vez de fugir com o grupo do Thordan. |
 | Limitações ou bloqueios | Guarda de Ferro desmoralizada, precisa ouvir Thorin e treinar com Mhordred para desbloquear a sequência de defesa. |
 
 ### 3 Fluxo Visual Resumido (Checkpoint 2)

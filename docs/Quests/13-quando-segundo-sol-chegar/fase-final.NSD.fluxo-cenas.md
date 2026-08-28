@@ -8,8 +8,8 @@
 - Nome da quest: Quando o Segundo Sol Chegar - Fase Final
 - Importancia na campanha: conclui o arco da invasao dos Ignotos e aponta para a proxima cadeia de quests
 - Arco narrativo: reconciliacao familiar, urgencia tática e sacrificio para proteger Gildrat
-- Objetivo narrativo global: firmar a cooperacao entre Thorin e Tordan, reforcar stakes tacticos e testar o jogador antes do confronto final
-- Premissa resumida: Map008 revela o perdão de Tordan e a partida de Thorin; Map021 situa o conselho em Gildrat; Map053 testa o controle em corredores infestados; Map054 culmina no duelo contra o chefe Ignotos.
+- Objetivo narrativo global: firmar a cooperacao entre Thorin e Thordan, reforcar stakes tacticos e testar o jogador antes do confronto final
+- Premissa resumida: Map008 revela o perdão de Thordan e a partida de Thorin; Map021 situa o conselho em Gildrat; Map053 testa o controle em corredores infestados; Map054 culmina no duelo contra o chefe Ignotos.
 
 - Locais principais
   - Casa da Família Forjaprata
@@ -17,10 +17,10 @@
   - Externo - Final
 - NPCs principais
   - Thorin
-  - Tordan
+  - Thordan
   - Filena
   - Balastrus
-  - Kilin
+  - Killin
   - Ignotos
 
 ### 2 Pré-condições Narrativas (Checkpoint 1)
@@ -38,8 +38,8 @@
 Quest: Quando o Segundo Sol Chegar - Fase Final
  +-- Cena 1: Distrito Externo - Diálogo com os guardas.
         +-- Beat 1: Thorin conversa com os guardas na entrada de Gildrat.
- +-- Cena 2: Casa da Família Forjaprata - Conversa com Tordan
- |      +-- Beat 1: Tordan se desculpa com Thorin.
+ +-- Cena 2: Casa da Família Forjaprata - Conversa com Thordan
+ |      +-- Beat 1: Thordan se desculpa com Thorin.
  +-- Cena 3: Defesa de Gildrat
  |      +-- Beat 1: Externo - Thorin e demais anões iniciam a defesa de Gildrat
  +-- Cena 4: Travessia pelos Ignotos
@@ -53,7 +53,7 @@ Quest: Quando o Segundo Sol Chegar - Fase Final
 | # | Nome da Cena | Premissa resumida (expandida) |
 | --- | --- | --- |
 | 1 | **Conversa com Guardas** | Thorin, ao entrar em Gildrat, tem uma conversa com os guardas a entraa. |
-| 2 | **Conversa com Tordan** | Thordan se desculpa e Thorin se dirige para sua cama para dormir. Após escolher a opção por dormir é possível escolher iniciar a defesa de Gildrat, ou se preparar melhor |
+| 2 | **Conversa com Thordan** | Thordan se desculpa e Thorin se dirige para sua cama para dormir. Após escolher a opção por dormir é possível escolher iniciar a defesa de Gildrat, ou se preparar melhor |
 | 3 | **Conselho de Defesa em Gildrat** | Lideranças aplicam as estratégias, avaliam perdas e decidem reforçar o corredor sul para conter a ameaça. |
 | 4 | **Travessia pelos Ignotos** | Thorin enfrenta ondas sucessivas de Ignotos no corredor. |
 | 5 | **Confronto com o Chefe Ignotos** | Thorin enfrenta o chefe Ignoto |
@@ -67,12 +67,12 @@ Quest: Quando o Segundo Sol Chegar - Fase Final
 | **1-A - Entrada de Gildrat** | O Jogador controla Thorin, até a entrada de Gildrat. | JOG |
 | **1-B - Diálogo com guardas** | Os guaras conversa com Thorin. | CS |
 
-##### Cena 2 - Conversa com Tordan
+##### Cena 2 - Conversa com Thordan
 
 | Beat | Premissa Resumida | Tipo |
 | ---- | ---------------- | ---- |
-| **2-A - Entrada na casa** | O Jogador controla Thorin, que entra na Casa dos Forjaprata e conversa com Tordan. | JOG |
-| **2-B - Tordan se desculpa para Thorin** | Tordan reconhece seu erro ao sufocar o sonho de Thorin. | CS |
+| **2-A - Entrada na casa** | O Jogador controla Thorin, que entra na Casa dos Forjaprata e conversa com Thordan. | JOG |
+| **2-B - Thordan se desculpa para Thorin** | Thordan reconhece seu erro ao sufocar o sonho de Thorin. | CS |
 | **2-B-a - Thorin perdoa o pai** | Jogador escolhe perdoar o pai. | CHOICE |
 | **2-B-b - Thorin não perdoa o pai** | Jogador escolhe não perdoar o pai. | CHOICE |
 | **2-C - Noite de sono** | Thorin se dirige para a cama. | CS |

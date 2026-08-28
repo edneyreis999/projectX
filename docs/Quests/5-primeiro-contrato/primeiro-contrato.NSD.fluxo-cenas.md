@@ -31,7 +31,7 @@
   - Balastrus
   - Filena
   - Borin
-  - Kilin (guarda real)
+  - Killin (guarda real)
   - Mhordred (guarda real)
   - Guardas de Kravens (2)
 
@@ -84,7 +84,7 @@ Quest: Primeiro Contrato
 | 4   | **Divisao de Times**    | Balastrus divide as equipes, os guardas chegam e a escala muda, colocando Filena com Thorin; a marcha comeca.                                     |
 | 5   | **Travessia Gelida**    | O grupo percorre o Mapamundi coberto de neve, enfrentando combates tutoriais que introduzem mecanicas de equipe e de combate.                     |
 | 6   | **Portao de Kravens**   | Guardas locais checam o contrato e liberam o grupo, trancando o portao atras.                                                                     |
-| 7   | **Briefing a Fogueira** | Balastrus define o plano do amanhecer, reforca a hierarquia e encerra a tensao com a intervenÃ§Ã£o de Kilin.                                        |
+| 7   | **Briefing a Fogueira** | Balastrus define o plano do amanhecer, reforca a hierarquia e encerra a tensao com a intervenÃ§Ã£o de Killin.                                        |
 | 8   | **Assado e Desagravo**  | Os guardas convidam Thorin e Filena para o assado; o clima alivia com o humor de Mhordred.                                                        |
 | 9   | **Sono Merecido**       | Thorin retorna a barraca e dorme, marcando o encerramento da quest.                                                                               |
 
@@ -128,16 +128,16 @@ Quest: Primeiro Contrato
 | --- | --- | --- | --- |
 | 4-A | OraÃ§Ã£o | Thorin sussurra uma oraÃ§Ã£o para cair na mesma equipe de Filena. | CS |
 | 4-B | NÃ£o se pode ter tudo na vida | Borin tira sarro de Thorin pois Filena estÃ¡ na equipe dele. | CS |
-| 4-C | GuardiÃµes | Kilin surge de surpresa e comeÃ§a a discutir com Balastrus.<br>Mhordred surge de surpresa e comeÃ§a a discutir com Balastrus. | CS |
+| 4-C | GuardiÃµes | Killin surge de surpresa e comeÃ§a a discutir com Balastrus.<br>Mhordred surge de surpresa e comeÃ§a a discutir com Balastrus. | CS |
 | 4-D | ReputaÃ§Ã£o | Balastrus refuta os guardiÃµes de Thorin dizendo que tem uma reputaÃ§Ã£o a zelar. | CS |
-| 4-E | MudanÃ§a de MarÃ© | Balastrus acaba aceitando os termos de Kilin e Mhordred. Por logÃ­stica, muda todos os times e Filena agora estÃ¡ na equipe de Thorin. | CS |
+| 4-E | MudanÃ§a de MarÃ© | Balastrus acaba aceitando os termos de Killin e Mhordred. Por logÃ­stica, muda todos os times e Filena agora estÃ¡ na equipe de Thorin. | CS |
 | 4-F | Filinho de papai | Filena se enfurece de estar na mesma equipe de Thorin por conta da superproteÃ§Ã£o que ele recebe por ter nascido nobre. Ela o chama de Filinho de papai. | CS |
 
 ##### Cena 5 - Travessia Gelida
 
 | ID | Titulo | Premissa Resumida | Tipo |
 | --- | --- | --- | --- |
-| 5-A | Mapa e objetivo | Mapamundi abre com tutorial e objetivo de chegar a Kravens.<br>Primeiras batalhas.<br>Thorin discute com Kilin e Mhordred por causa da super proteÃ§Ã£o enquanto estÃ¡ perto de Filena. | JOG |
+| 5-A | Mapa e objetivo | Mapamundi abre com tutorial e objetivo de chegar a Kravens.<br>Primeiras batalhas.<br>Thorin discute com Killin e Mhordred por causa da super proteÃ§Ã£o enquanto estÃ¡ perto de Filena. | JOG |
 | 5-B | Combates tutoriais | Encontros leves exibem habilidades do grupo e ensinam mecanicas de equipe. | JOG |
 | 5-C | Chegada ao portao | Fade-out marca checkpoint e transicao para o Portao de Kravens. | CS |
 
@@ -157,7 +157,7 @@ Quest: Primeiro Contrato
 | 7-A | Pan de apresentacao | Camera destaca Balastrus na fogueira e retorna a Thorin. | CS |
 | 7-B | Reprimenda e escolha | Balastrus reclama do atraso; jogador decide se responde ou se cala. | JOG |
 | 7-C | Plano do amanhecer | Lider define a descida e reforca a hierarquia do grupo. | CS |
-| 7-D | Conflito e convite | Mhordred desafia Balastrus; Kilin encerra e convida para o assado. | CS |
+| 7-D | Conflito e convite | Mhordred desafia Balastrus; Killin encerra e convida para o assado. | CS |
 
 ##### Cena 8 - Assado e Desagravo
 
@@ -166,7 +166,7 @@ Quest: Primeiro Contrato
 | 8-A | Quebra de tensao | Conversa informal na fogueira aproxima Thorin dos guardas. | JOG |
 | 8-B | Pedido de desculpas | Jogador escolhe como Thorin se desculpa por como vinha agindo. | JOG |
 | 8-C | Gag do assado | Refeicao termina com humor de Mhordred. | CS |
-| 8-D | Hora de dormir | Objetivo atualizado para ir ate a barraca.<br>Filena se levanta com Mhordred, mas Kilin pede a Thorin que fique,<br>jogador escolhe se vai ficar ou nÃ£o | JOG |
+| 8-D | Hora de dormir | Objetivo atualizado para ir ate a barraca.<br>Filena se levanta com Mhordred, mas Killin pede a Thorin que fique,<br>jogador escolhe se vai ficar ou nÃ£o | JOG |
 
 ##### Cena 9 - Sono Merecido
 

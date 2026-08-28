@@ -9,7 +9,7 @@
 - Importância na campanha: define a eficiência das armadilhas das fases seguintes e fortalece a relação entre Thorin e Balastrus.
 - Arco narrativo: reconciliação e confiança científica entre os anões que protegem Gildrat.
 - Objetivo narrativo global: demonstrar que Thorin está disposto a apostar no talento experimental de Balastrus e a liderar os testes in loco.
-- Premissa resumida: Balastrus precisa calibrar dinamites com segurança enquanto Thorin prova para Tordan que pode ajudar com ciência, não só força bruta.
+- Premissa resumida: Balastrus precisa calibrar dinamites com segurança enquanto Thorin prova para Thordan que pode ajudar com ciência, não só força bruta.
 
 - Locais principais
   - Estrada do Cão-luar (trecho elevado de teste)
@@ -17,7 +17,7 @@
 - NPCs principais
   - Thorin
   - Balastrus
-  - Tordan
+  - Thordan
 
 ### 2 Pré-condições Narrativas (Checkpoint 1)
 
@@ -33,7 +33,7 @@
 ```plaintext
 Quest: Testar Dinamite
  +-- Cena 1: Estrada do Cão-luar - Chegada dos reforços e diálogo inicial
- |      +-- Beat 1: Thorin e Tordan observam a estrada enquanto se aproximam do acampamento de Balastrus.
+ |      +-- Beat 1: Thorin e Thordan observam a estrada enquanto se aproximam do acampamento de Balastrus.
  |      +-- Beat 2: Balastrus recebe Thorin com desconfiança e explica a importância do teste.
  +-- Cena 2: Preparação do equipamento
  |      +-- Beat 1: Thorin ajuda a carregar barris e configura êmbolos para medir potência.
@@ -50,7 +50,7 @@ Quest: Testar Dinamite
 
 | # | Nome da Cena | Premissa resumida (expandida) |
 | --- | --- | --- |
-| 1 | **Chegada ao campo** | Thorin chega com Tordan à Estrada do Cão-luar e encontra Balastrus em um acampamento improvisado. |
+| 1 | **Chegada ao campo** | Thorin chega com Thordan à Estrada do Cão-luar e encontra Balastrus em um acampamento improvisado. |
 | 2 | **Preparação experimental** | O trio organiza ferramentas, discute segurança e define parâmetros das explosões. |
 | 3 | **Testes de dinamite** | Thorin executa três testes distintos para calibrar a potência enquanto aprende com os relatos de Balastrus. |
 | 4 | **Reconhecimento e ajuste** | Balastrus reconhece o esforço e Thorin sai reforçado em confiança e status narrativo. |
@@ -61,7 +61,7 @@ Quest: Testar Dinamite
 
 | Beat | Premissa Resumida | Tipo |
 | ---- | ---------------- | ---- |
-| **1-A - Aproximação** | Thorin e Tordan atravessam a Estrada do Cão-luar. | JOG |
+| **1-A - Aproximação** | Thorin e Thordan atravessam a Estrada do Cão-luar. | JOG |
 | **1-B - Primeiro diálogo** | Balastrus recebe a dupla e diz que precisa de provas de confiança antes de liberar a dinamite. | CS |
 
 ##### Cena 2 - Preparação experimental

@@ -1,0 +1,2641 @@
+{
+  "autoplayBgm": false,
+  "autoplayBgs": false,
+  "battleback1Name": "",
+  "battleback2Name": "",
+  "bgm": { "name": "", "pan": 0, "pitch": 100, "volume": 90 },
+  "bgs": { "name": "", "pan": 0, "pitch": 100, "volume": 90 },
+  "disableDashing": false,
+  "displayName": "",
+  "encounterList": [],
+  "encounterStep": 30,
+  "height": 24,
+  "note": "<CoretoMapType:EX>",
+  "parallaxLoopX": false,
+  "parallaxLoopY": false,
+  "parallaxName": "",
+  "parallaxShow": true,
+  "parallaxSx": 0,
+  "parallaxSy": 0,
+  "scrollType": 0,
+  "specifyBattleback": false,
+  "tilesetId": 10,
+  "width": 25,
+  "data": [
+    0, 0, 0, 0, 0, 0, 0, 6002, 6012, 6012, 6012, 6012, 6012, 6012, 6012, 6012, 6012, 6009, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6016, 6370, 6370, 6370, 6370, 6370, 6370, 6370, 6370, 6370, 6016,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6016, 6376, 6376, 6376, 6376, 6376, 6376, 6376, 6376, 6376, 6016, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6016, 3282, 3268, 3268, 3268, 3268, 3268,
+    3268, 3268, 3284, 6016, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6016, 3264, 3248, 3248, 3248, 3248, 3248, 3248, 3248, 3272, 6016, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6016, 3264, 3248,
+    3248, 3248, 3248, 3248, 3248, 3248, 3272, 6016, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6016, 3264, 3248, 3248, 3248, 3248, 3248, 3248, 3248, 3272, 6016, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 6016, 3264, 3248, 3248, 3248, 3248, 3248, 3248, 3248, 3272, 6016, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6016, 3264, 3248, 3248, 3248, 3248, 3248, 3248, 3248, 3272, 6016, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 6016, 3288, 3276, 3276, 3256, 3248, 3252, 3276, 3276, 3286, 6016, 0, 0, 0, 0, 0, 0, 0, 6519, 6019, 6017, 6017, 6017, 6017, 6017, 6015, 6017, 6017, 6021, 3264, 3248, 3272,
+    6019, 6017, 6017, 6015, 6017, 6017, 6017, 6017, 6017, 6021, 0, 6517, 6016, 6370, 6370, 6370, 6370, 6370, 6370, 6370, 6370, 6016, 3264, 3248, 3272, 6016, 6370, 6370, 6370, 6370, 6370, 6370, 6370,
+    6370, 6016, 0, 6517, 6016, 6376, 6376, 6376, 6376, 6376, 6376, 6376, 6376, 6016, 3264, 3248, 3272, 6016, 6376, 6376, 6376, 6376, 6376, 6376, 6376, 6376, 6016, 0, 6517, 6016, 3282, 3268, 3268,
+    3268, 3268, 3268, 3268, 3284, 6016, 3264, 3248, 3272, 6016, 3282, 3268, 3268, 3268, 3268, 3268, 3268, 3284, 6016, 0, 6517, 6016, 3264, 3248, 3248, 3248, 3248, 3248, 3248, 3272, 6016, 3264, 3248,
+    3272, 6016, 3264, 3248, 3248, 3248, 3248, 3248, 3248, 3272, 6016, 0, 6517, 6016, 3264, 3248, 3248, 3248, 3248, 3248, 3248, 3272, 6016, 3264, 3248, 3272, 6016, 3264, 3248, 3248, 3248, 3248, 3248,
+    3248, 3272, 6016, 0, 6517, 6016, 3264, 3248, 3248, 3248, 3248, 3248, 3248, 3272, 6016, 3264, 3248, 3272, 6016, 3264, 3248, 3248, 3248, 3248, 3248, 3248, 3272, 6016, 0, 6517, 6016, 3264, 3248,
+    3248, 3248, 3248, 3248, 3248, 3272, 6016, 3264, 3248, 3272, 6016, 3264, 3248, 3248, 3248, 3248, 3248, 3248, 3272, 6016, 0, 6517, 6016, 3264, 3248, 3248, 3248, 3248, 3252, 3276, 3273, 6028, 3264,
+    3248, 3272, 6028, 3266, 3276, 3256, 3248, 3248, 3248, 3248, 3272, 6016, 0, 6517, 6016, 3288, 3276, 3276, 3276, 3276, 3286, 6026, 3280, 6375, 3264, 3248, 3272, 6375, 3280, 6026, 3288, 3276, 3276,
+    3276, 3276, 3286, 6016, 0, 6517, 6025, 6017, 6017, 6017, 6017, 6017, 6017, 6011, 3280, 6373, 3264, 3248, 3272, 6373, 3280, 6003, 6017, 6017, 6017, 6017, 6017, 6017, 6023, 0, 6517, 6370, 6370,
+    6370, 6370, 6370, 6370, 6370, 6016, 3280, 6381, 3264, 3248, 3272, 6381, 3280, 6016, 6370, 6370, 6370, 6370, 6370, 6370, 6374, 0, 6517, 6376, 6376, 6376, 6376, 6376, 6376, 6376, 6016, 3289, 3281,
+    3277, 3260, 3278, 3281, 3287, 6016, 6376, 6376, 6376, 6376, 6376, 6376, 6380, 0, 6525, 6523, 6522, 6522, 6522, 6522, 6522, 6526, 6001, 6004, 6004, 6020, 3280, 6018, 6004, 6004, 6010, 6523, 6526,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 0, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 312, 313, 0, 312, 313, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 320, 321, 0, 320,
+    321, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 328, 329, 0, 328, 329, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 134, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 390, 0, 0, 0, 0, 142, 0, 48, 49, 49, 49, 50, 0, 0, 0, 0, 0, 0, 0, 48,
+    49, 49, 49, 50, 0, 398, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 25, 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 25, 26, 0, 0, 0, 0, 0, 0, 0,
+    0, 32, 33, 34, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 33, 34, 0, 0, 0, 0, 0, 0, 0, 0, 40, 41, 42, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 40, 41, 42, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 48, 49, 49, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 48, 49, 49, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+  ],
+  "events": [
+    null,
+    {
+        "id": 1,
+        "name": "Teleporte (Campo de Futebol Rúnico)",
+        "note": "",
+        "pages": [
+            {
+                "conditions": {
+                    "actorId": 1,
+                    "actorValid": false,
+                    "itemId": 1,
+                    "itemValid": false,
+                    "selfSwitchCh": "A",
+                    "selfSwitchValid": false,
+                    "switch1Id": 23,
+                    "switch1Valid": false,
+                    "switch2Id": 1,
+                    "switch2Valid": false,
+                    "variableId": 29,
+                    "variableValid": true,
+                    "variableValue": 0
+                },
+                "directionFix": true,
+                "image": {
+                    "tileId": 0,
+                    "characterName": "!Flame",
+                    "direction": 2,
+                    "pattern": 2,
+                    "characterIndex": 7
+                },
+                "list": [
+                    {
+                        "code": 250,
+                        "indent": 0,
+                        "parameters": [
+                            {
+                                "name": "Move1",
+                                "volume": 90,
+                                "pitch": 100,
+                                "pan": 0
+                            }
+                        ]
+                    },
+                    {
+                        "code": 201,
+                        "indent": 0,
+                        "parameters": [
+                            0,
+                            62,
+                            26,
+                            14,
+                            0,
+                            0
+                        ]
+                    },
+                    {
+                        "code": 0,
+                        "indent": 0,
+                        "parameters": []
+                    }
+                ],
+                "moveFrequency": 4,
+                "moveRoute": {
+                    "list": [
+                        {
+                            "code": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "repeat": true,
+                    "skippable": false,
+                    "wait": false
+                },
+                "moveSpeed": 4,
+                "moveType": 0,
+                "priorityType": 1,
+                "stepAnime": true,
+                "through": false,
+                "trigger": 1,
+                "walkAnime": true
+            }
+        ],
+        "x": 12,
+        "y": 23
+    },
+    {
+        "id": 2,
+        "name": "Menina no vestiário 1",
+        "note": "",
+        "pages": [
+            {
+                "conditions": {
+                    "actorId": 1,
+                    "actorValid": false,
+                    "itemId": 1,
+                    "itemValid": false,
+                    "selfSwitchCh": "A",
+                    "selfSwitchValid": false,
+                    "switch1Id": 1,
+                    "switch1Valid": false,
+                    "switch2Id": 1,
+                    "switch2Valid": false,
+                    "variableId": 1,
+                    "variableValid": false,
+                    "variableValue": 0
+                },
+                "directionFix": false,
+                "image": {
+                    "tileId": 0,
+                    "characterName": "Estadio/Vestiario/$Menina4",
+                    "direction": 2,
+                    "pattern": 1,
+                    "characterIndex": 0
+                },
+                "list": [
+                    {
+                        "code": 0,
+                        "indent": 0,
+                        "parameters": []
+                    }
+                ],
+                "moveFrequency": 3,
+                "moveRoute": {
+                    "list": [
+                        {
+                            "code": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "repeat": true,
+                    "skippable": false,
+                    "wait": false
+                },
+                "moveSpeed": 3,
+                "moveType": 0,
+                "priorityType": 0,
+                "stepAnime": false,
+                "through": false,
+                "trigger": 1,
+                "walkAnime": true
+            },
+            {
+                "conditions": {
+                    "actorId": 1,
+                    "actorValid": false,
+                    "itemId": 1,
+                    "itemValid": false,
+                    "selfSwitchCh": "A",
+                    "selfSwitchValid": false,
+                    "switch1Id": 4,
+                    "switch1Valid": false,
+                    "switch2Id": 1,
+                    "switch2Valid": false,
+                    "variableId": 29,
+                    "variableValid": true,
+                    "variableValue": 90
+                },
+                "directionFix": false,
+                "image": {
+                    "tileId": 0,
+                    "characterName": "",
+                    "direction": 2,
+                    "pattern": 1,
+                    "characterIndex": 2
+                },
+                "list": [
+                    {
+                        "code": 0,
+                        "indent": 0,
+                        "parameters": []
+                    }
+                ],
+                "moveFrequency": 4,
+                "moveRoute": {
+                    "list": [
+                        {
+                            "code": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "repeat": true,
+                    "skippable": false,
+                    "wait": false
+                },
+                "moveSpeed": 5,
+                "moveType": 0,
+                "priorityType": 0,
+                "stepAnime": false,
+                "through": false,
+                "trigger": 2,
+                "walkAnime": true
+            }
+        ],
+        "x": 20,
+        "y": 14
+    },
+    {
+        "id": 3,
+        "name": "Menina Nadando",
+        "note": "",
+        "pages": [
+            {
+                "conditions": {
+                    "actorId": 1,
+                    "actorValid": false,
+                    "itemId": 1,
+                    "itemValid": false,
+                    "selfSwitchCh": "A",
+                    "selfSwitchValid": false,
+                    "switch1Id": 1,
+                    "switch1Valid": false,
+                    "switch2Id": 1,
+                    "switch2Valid": false,
+                    "variableId": 1,
+                    "variableValid": false,
+                    "variableValue": 0
+                },
+                "directionFix": false,
+                "image": {
+                    "tileId": 0,
+                    "characterName": "Estadio/Vestiario/$Menina2",
+                    "direction": 8,
+                    "pattern": 0,
+                    "characterIndex": 0
+                },
+                "list": [
+                    {
+                        "code": 0,
+                        "indent": 0,
+                        "parameters": []
+                    }
+                ],
+                "moveFrequency": 3,
+                "moveRoute": {
+                    "list": [
+                        {
+                            "code": 3,
+                            "indent": null
+                        },
+                        {
+                            "code": 3,
+                            "indent": null
+                        },
+                        {
+                            "code": 3,
+                            "indent": null
+                        },
+                        {
+                            "code": 17,
+                            "indent": null
+                        },
+                        {
+                            "code": 17,
+                            "indent": null
+                        },
+                        {
+                            "code": 17,
+                            "indent": null
+                        },
+                        {
+                            "code": 19,
+                            "indent": null
+                        },
+                        {
+                            "code": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "repeat": true,
+                    "skippable": false,
+                    "wait": false
+                },
+                "moveSpeed": 3,
+                "moveType": 3,
+                "priorityType": 1,
+                "stepAnime": false,
+                "through": false,
+                "trigger": 4,
+                "walkAnime": true
+            },
+            {
+                "conditions": {
+                    "actorId": 1,
+                    "actorValid": false,
+                    "itemId": 1,
+                    "itemValid": false,
+                    "selfSwitchCh": "A",
+                    "selfSwitchValid": false,
+                    "switch1Id": 4,
+                    "switch1Valid": false,
+                    "switch2Id": 1,
+                    "switch2Valid": false,
+                    "variableId": 29,
+                    "variableValid": true,
+                    "variableValue": 90
+                },
+                "directionFix": false,
+                "image": {
+                    "tileId": 0,
+                    "characterName": "",
+                    "direction": 2,
+                    "pattern": 1,
+                    "characterIndex": 2
+                },
+                "list": [
+                    {
+                        "code": 0,
+                        "indent": 0,
+                        "parameters": []
+                    }
+                ],
+                "moveFrequency": 4,
+                "moveRoute": {
+                    "list": [
+                        {
+                            "code": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "repeat": true,
+                    "skippable": false,
+                    "wait": false
+                },
+                "moveSpeed": 5,
+                "moveType": 0,
+                "priorityType": 0,
+                "stepAnime": false,
+                "through": false,
+                "trigger": 2,
+                "walkAnime": true
+            }
+        ],
+        "x": 18,
+        "y": 18
+    },
+    {
+        "id": 4,
+        "name": "Menina Nadando 2",
+        "note": "",
+        "pages": [
+            {
+                "conditions": {
+                    "actorId": 1,
+                    "actorValid": false,
+                    "itemId": 1,
+                    "itemValid": false,
+                    "selfSwitchCh": "A",
+                    "selfSwitchValid": false,
+                    "switch1Id": 1,
+                    "switch1Valid": false,
+                    "switch2Id": 1,
+                    "switch2Valid": false,
+                    "variableId": 1,
+                    "variableValid": false,
+                    "variableValue": 0
+                },
+                "directionFix": false,
+                "image": {
+                    "tileId": 0,
+                    "characterName": "Estadio/Vestiario/$Menina3",
+                    "direction": 8,
+                    "pattern": 1,
+                    "characterIndex": 0
+                },
+                "list": [
+                    {
+                        "code": 0,
+                        "indent": 0,
+                        "parameters": []
+                    }
+                ],
+                "moveFrequency": 3,
+                "moveRoute": {
+                    "list": [
+                        {
+                            "code": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "repeat": true,
+                    "skippable": false,
+                    "wait": false
+                },
+                "moveSpeed": 3,
+                "moveType": 0,
+                "priorityType": 1,
+                "stepAnime": false,
+                "through": false,
+                "trigger": 0,
+                "walkAnime": true
+            },
+            {
+                "conditions": {
+                    "actorId": 1,
+                    "actorValid": false,
+                    "itemId": 1,
+                    "itemValid": false,
+                    "selfSwitchCh": "A",
+                    "selfSwitchValid": false,
+                    "switch1Id": 4,
+                    "switch1Valid": false,
+                    "switch2Id": 1,
+                    "switch2Valid": false,
+                    "variableId": 29,
+                    "variableValid": true,
+                    "variableValue": 90
+                },
+                "directionFix": false,
+                "image": {
+                    "tileId": 0,
+                    "characterName": "",
+                    "direction": 2,
+                    "pattern": 1,
+                    "characterIndex": 2
+                },
+                "list": [
+                    {
+                        "code": 0,
+                        "indent": 0,
+                        "parameters": []
+                    }
+                ],
+                "moveFrequency": 4,
+                "moveRoute": {
+                    "list": [
+                        {
+                            "code": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "repeat": true,
+                    "skippable": false,
+                    "wait": false
+                },
+                "moveSpeed": 5,
+                "moveType": 0,
+                "priorityType": 0,
+                "stepAnime": false,
+                "through": false,
+                "trigger": 2,
+                "walkAnime": true
+            }
+        ],
+        "x": 17,
+        "y": 15
+    },
+    {
+        "id": 5,
+        "name": "Menina no Vestiário 2",
+        "note": "",
+        "pages": [
+            {
+                "conditions": {
+                    "actorId": 1,
+                    "actorValid": false,
+                    "itemId": 1,
+                    "itemValid": false,
+                    "selfSwitchCh": "A",
+                    "selfSwitchValid": false,
+                    "switch1Id": 1,
+                    "switch1Valid": false,
+                    "switch2Id": 1,
+                    "switch2Valid": false,
+                    "variableId": 1,
+                    "variableValid": false,
+                    "variableValue": 0
+                },
+                "directionFix": false,
+                "image": {
+                    "tileId": 0,
+                    "characterName": "Estadio/Vestiario/$Menina1",
+                    "direction": 8,
+                    "pattern": 0,
+                    "characterIndex": 0
+                },
+                "list": [
+                    {
+                        "code": 0,
+                        "indent": 0,
+                        "parameters": []
+                    }
+                ],
+                "moveFrequency": 3,
+                "moveRoute": {
+                    "list": [
+                        {
+                            "code": 3,
+                            "indent": null
+                        },
+                        {
+                            "code": 4,
+                            "indent": null
+                        },
+                        {
+                            "code": 4,
+                            "indent": null
+                        },
+                        {
+                            "code": 4,
+                            "indent": null
+                        },
+                        {
+                            "code": 1,
+                            "indent": null
+                        },
+                        {
+                            "code": 1,
+                            "indent": null
+                        },
+                        {
+                            "code": 1,
+                            "indent": null
+                        },
+                        {
+                            "code": 2,
+                            "indent": null
+                        },
+                        {
+                            "code": 19,
+                            "indent": null
+                        },
+                        {
+                            "code": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "repeat": true,
+                    "skippable": false,
+                    "wait": false
+                },
+                "moveSpeed": 3,
+                "moveType": 3,
+                "priorityType": 1,
+                "stepAnime": false,
+                "through": false,
+                "trigger": 4,
+                "walkAnime": true
+            },
+            {
+                "conditions": {
+                    "actorId": 1,
+                    "actorValid": false,
+                    "itemId": 1,
+                    "itemValid": false,
+                    "selfSwitchCh": "A",
+                    "selfSwitchValid": false,
+                    "switch1Id": 4,
+                    "switch1Valid": false,
+                    "switch2Id": 1,
+                    "switch2Valid": false,
+                    "variableId": 29,
+                    "variableValid": true,
+                    "variableValue": 90
+                },
+                "directionFix": false,
+                "image": {
+                    "tileId": 0,
+                    "characterName": "",
+                    "direction": 2,
+                    "pattern": 1,
+                    "characterIndex": 2
+                },
+                "list": [
+                    {
+                        "code": 0,
+                        "indent": 0,
+                        "parameters": []
+                    }
+                ],
+                "moveFrequency": 4,
+                "moveRoute": {
+                    "list": [
+                        {
+                            "code": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "repeat": true,
+                    "skippable": false,
+                    "wait": false
+                },
+                "moveSpeed": 5,
+                "moveType": 0,
+                "priorityType": 0,
+                "stepAnime": false,
+                "through": false,
+                "trigger": 2,
+                "walkAnime": true
+            }
+        ],
+        "x": 21,
+        "y": 18
+    },
+    {
+      "id": 6,
+      "name": "Jogador entra no vestiário masculino",
+      "note": "SEMIFINAL:CS-SEM-LOCKER-ENTRY-001",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 29,
+            "variableValid": true,
+            "variableValue": 60
+          },
+          "directionFix": false,
+          "image": { "characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0 },
+          "list": [
+            { "code": 108, "indent": 0, "parameters": ["SEMIFINAL:CS-SEM-LOCKER-ENTRY-001"] },
+            { "code": 357, "indent": 0, "parameters": ["Coreto_Cutscene", "BeginCutscene", "BeginCutscene", {}] },
+            { "code": 108, "indent": 0, "parameters": ["SEMIFINAL:BT-SEM-LOCKER-ENTRY-001"] },
+            { "code": 108, "indent": 0, "parameters": ["SEMIFINAL:DL-SEM-LOCKER-THORIN-001"] },
+            {
+              "code": 357,
+              "indent": 0,
+              "parameters": [
+                "VisuMZ_4_GabWindow",
+                "GabTextOnly",
+                "Gab: Text Only",
+                {
+                  "Text:json": "\"Vestiário certo. Cheiro errado. Como é que meia molhada consegue ter vontade própria?\"",
+                  "ForceGab:eval": "false",
+                  "Override:struct": "{\"EventID:num\":\"-1\",\"BypassAntiRepeat:eval\":\"false\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                }
+              ]
+            },
+            { "code": 357, "indent": 0, "parameters": ["Coreto_Cutscene", "FinishCutscene", "FinishCutscene", {}] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 29,
+            "variableValid": true,
+            "variableValue": 90
+          },
+          "directionFix": false,
+          "image": { "tileId": 0, "characterName": "", "direction": 2, "pattern": 0, "characterIndex": 0 },
+          "list": [{ "code": 0, "indent": 0, "parameters": [] }],
+          "moveFrequency": 3,
+          "moveRoute": { "list": [{ "code": 0, "parameters": [] }], "repeat": true, "skippable": false, "wait": false },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 9,
+      "y": 21
+    },
+    {
+        "id": 7,
+        "name": "Jogador entra no vestiário",
+        "note": "SEMIFINAL:011:PROTECTED_GAG:ANYTIME_CAMERA_BALLOONS",
+        "pages": [
+            {
+                "conditions": {
+                    "actorId": 1,
+                    "actorValid": false,
+                    "itemId": 1,
+                    "itemValid": false,
+                    "selfSwitchCh": "A",
+                    "selfSwitchValid": false,
+                    "switch1Id": 1,
+                    "switch1Valid": false,
+                    "switch2Id": 1,
+                    "switch2Valid": false,
+                    "variableId": 29,
+                    "variableValid": true,
+                    "variableValue": 50
+                },
+                "directionFix": false,
+                "image": {
+                    "tileId": 0,
+                    "characterName": "",
+                    "direction": 6,
+                    "pattern": 0,
+                    "characterIndex": 3
+                },
+                "list": [
+                    {
+                        "code": 108,
+                        "indent": 0,
+                        "parameters": [
+                            "SEMIFINAL:CS-SEM-LOCKER-GAG-001"
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "Coreto_Cutscene",
+                            "BeginCutscene",
+                            "BeginCutscene",
+                            {}
+                        ]
+                    },
+                    {
+                        "code": 108,
+                        "indent": 0,
+                        "parameters": [
+                            "SEMIFINAL:BT-SEM-GAG-APPROACH-001"
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_MapCameraZoom",
+                            "CameraFocusTargetEvent",
+                            "Camera: Focus Target Event",
+                            {
+                                "EventID:eval": "2",
+                                "Duration:num": "30",
+                                "EasingType:str": "InOutSine"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Event ID = 2"
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Duration = 30"
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Easing Type = InOutSine"
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_MapCameraZoom",
+                            "ZoomChange",
+                            "Zoom: Change Zoom",
+                            {
+                                "TargetScale:num": "2",
+                                "Duration:num": "30",
+                                "EasingType:str": "InOutSine"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Target Zoom Scale = 2"
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Duration = 30"
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Easing Type = InOutSine"
+                        ]
+                    },
+                    {
+                        "code": 213,
+                        "indent": 0,
+                        "parameters": [
+                            2,
+                            5,
+                            false
+                        ]
+                    },
+                    {
+                        "code": 213,
+                        "indent": 0,
+                        "parameters": [
+                            3,
+                            1,
+                            false
+                        ]
+                    },
+                    {
+                        "code": 213,
+                        "indent": 0,
+                        "parameters": [
+                            4,
+                            5,
+                            false
+                        ]
+                    },
+                    {
+                        "code": 213,
+                        "indent": 0,
+                        "parameters": [
+                            5,
+                            1,
+                            false
+                        ]
+                    },
+                    {
+                        "code": 213,
+                        "indent": 0,
+                        "parameters": [
+                            -1,
+                            6,
+                            false
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_MapCameraZoom",
+                            "CameraFocusWait",
+                            "Camera: Wait for Focus",
+                            {}
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_MapCameraZoom",
+                            "ZoomWait",
+                            "Zoom: Wait for Zoom",
+                            {}
+                        ]
+                    },
+                    {
+                        "code": 108,
+                        "indent": 0,
+                        "parameters": [
+                            "SEMIFINAL:CUE-SEM-GAG-IMPACT-001"
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_2_VNPictureBusts",
+                            "Basic_EnterBust",
+                            "BASIC: Enter Bust",
+                            {
+                                "PictureID:eval": "1",
+                                "PictureName:str": "Portraits/Futebol/Menina_medo_cansada",
+                                "Origin:str": "Bust",
+                                "Position:num": "8",
+                                "StartOffsetX:eval": "-200",
+                                "StartOffsetY:eval": "+0",
+                                "EasingType:str": "OutSine",
+                                "HorzMirror:str": "Auto-Reverse",
+                                "Duration:eval": "20"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Picture ID = 1"
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Picture File = Portraits/Futebol/Menina_medo_cansada"
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Origin = Bust"
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Screen Position = 8"
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Start Offset X = -200"
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Start Offset Y = +0"
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Entrance Easing = OutSine"
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Horizontal Mirror = Auto-Reverse"
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Duration = 20"
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_2_VNPictureBusts",
+                            "Basic_ExitBusts",
+                            "BASIC: Exit Bust(s)",
+                            {
+                                "PictureID:arrayeval": "[\"1\",\"2\"]",
+                                "EndOffsetX:eval": "+200",
+                                "EndOffsetY:eval": "-0",
+                                "EasingType:str": "InSine",
+                                "FlipDirection:str": "None",
+                                "Duration:eval": "20",
+                                "AutoErase:eval": "true"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Picture ID(s) = [\"1\",\"2\"]"
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "End Offset X = +200"
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "End Offset Y = -0"
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Exit Easing = InSine"
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Flip Direction = None"
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Duration = 20"
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Auto-Erase? = true"
+                        ]
+                    },
+                    {
+                        "code": 108,
+                        "indent": 0,
+                        "parameters": [
+                            "SEMIFINAL:BT-SEM-GAG-LINE-001"
+                        ]
+                    },
+                    {
+                        "code": 108,
+                        "indent": 0,
+                        "parameters": [
+                            "SEMIFINAL:DL-SEM-GAG-LOCKER-001"
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_GabWindow",
+                            "GabTextOnly",
+                            "Gab: Text Only",
+                            {
+                                "Text:json": "\"Você não tem nenhuma decência?! Saia já daqui, seu miserável!\"",
+                                "ForceGab:eval": "false",
+                                "Override:struct": "{\"EventID:num\":\"7\",\"BypassAntiRepeat:eval\":\"false\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 108,
+                        "indent": 0,
+                        "parameters": [
+                            "SEMIFINAL:AW-SEM-GAG-LINE-001"
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_GabWindow",
+                            "WaitForGab",
+                            "System: Wait For Gab Completion",
+                            {}
+                        ]
+                    },
+                    {
+                        "code": 108,
+                        "indent": 0,
+                        "parameters": [
+                            "SEMIFINAL:BT-SEM-GAG-COMIC-PAUSE-PLAYTEST-001"
+                        ]
+                    },
+                    {
+                        "code": 213,
+                        "indent": 0,
+                        "parameters": [
+                            2,
+                            5,
+                            false
+                        ]
+                    },
+                    {
+                        "code": 213,
+                        "indent": 0,
+                        "parameters": [
+                            -1,
+                            6,
+                            false
+                        ]
+                    },
+                    {
+                        "code": 230,
+                        "indent": 0,
+                        "parameters": [
+                            15
+                        ]
+                    },
+                    {
+                        "code": 108,
+                        "indent": 0,
+                        "parameters": [
+                            "SEMIFINAL:BT-SEM-GAG-IMPACT-001"
+                        ]
+                    },
+                    {
+                        "code": 205,
+                        "indent": 0,
+                        "parameters": [
+                            4,
+                            {
+                                "list": [
+                                    {
+                                        "code": 25,
+                                        "indent": null
+                                    },
+                                    {
+                                        "code": 0
+                                    }
+                                ],
+                                "repeat": false,
+                                "skippable": false,
+                                "wait": false
+                            }
+                        ]
+                    },
+                    {
+                        "code": 505,
+                        "indent": 0,
+                        "parameters": [
+                            {
+                                "code": 25,
+                                "indent": null
+                            }
+                        ]
+                    },
+                    {
+                        "code": 205,
+                        "indent": 0,
+                        "parameters": [
+                            4,
+                            {
+                                "list": [
+                                    {
+                                        "code": 25,
+                                        "indent": null
+                                    },
+                                    {
+                                        "code": 0
+                                    }
+                                ],
+                                "repeat": false,
+                                "skippable": false,
+                                "wait": false
+                            }
+                        ]
+                    },
+                    {
+                        "code": 505,
+                        "indent": 0,
+                        "parameters": [
+                            {
+                                "code": 25,
+                                "indent": null
+                            }
+                        ]
+                    },
+                    {
+                        "code": 205,
+                        "indent": 0,
+                        "parameters": [
+                            3,
+                            {
+                                "list": [
+                                    {
+                                        "code": 25,
+                                        "indent": null
+                                    },
+                                    {
+                                        "code": 0
+                                    }
+                                ],
+                                "repeat": false,
+                                "skippable": false,
+                                "wait": false
+                            }
+                        ]
+                    },
+                    {
+                        "code": 505,
+                        "indent": 0,
+                        "parameters": [
+                            {
+                                "code": 25,
+                                "indent": null
+                            }
+                        ]
+                    },
+                    {
+                        "code": 205,
+                        "indent": 0,
+                        "parameters": [
+                            5,
+                            {
+                                "list": [
+                                    {
+                                        "code": 25,
+                                        "indent": null
+                                    },
+                                    {
+                                        "code": 0
+                                    }
+                                ],
+                                "repeat": false,
+                                "skippable": false,
+                                "wait": false
+                            }
+                        ]
+                    },
+                    {
+                        "code": 505,
+                        "indent": 0,
+                        "parameters": [
+                            {
+                                "code": 25,
+                                "indent": null
+                            }
+                        ]
+                    },
+                    {
+                        "code": 205,
+                        "indent": 0,
+                        "parameters": [
+                            2,
+                            {
+                                "list": [
+                                    {
+                                        "code": 45,
+                                        "parameters": [
+                                            "Move to: 15,20"
+                                        ],
+                                        "indent": null
+                                    },
+                                    {
+                                        "code": 25,
+                                        "indent": null
+                                    },
+                                    {
+                                        "code": 0
+                                    }
+                                ],
+                                "repeat": false,
+                                "skippable": false,
+                                "wait": true
+                            }
+                        ]
+                    },
+                    {
+                        "code": 505,
+                        "indent": 0,
+                        "parameters": [
+                            {
+                                "code": 45,
+                                "parameters": [
+                                    "Move to: 15,20"
+                                ],
+                                "indent": null
+                            }
+                        ]
+                    },
+                    {
+                        "code": 505,
+                        "indent": 0,
+                        "parameters": [
+                            {
+                                "code": 25,
+                                "indent": null
+                            }
+                        ]
+                    },
+                    {
+                        "code": 212,
+                        "indent": 0,
+                        "parameters": [
+                            2,
+                            39,
+                            false
+                        ]
+                    },
+                    {
+                        "code": 250,
+                        "indent": 0,
+                        "parameters": [
+                            {
+                                "name": "Damage3",
+                                "volume": 50,
+                                "pitch": 100,
+                                "pan": 0
+                            }
+                        ]
+                    },
+                    {
+                        "code": 205,
+                        "indent": 0,
+                        "parameters": [
+                            -1,
+                            {
+                                "list": [
+                                    {
+                                        "code": 1,
+                                        "indent": null
+                                    },
+                                    {
+                                        "code": 0
+                                    }
+                                ],
+                                "repeat": false,
+                                "skippable": false,
+                                "wait": true
+                            }
+                        ]
+                    },
+                    {
+                        "code": 505,
+                        "indent": 0,
+                        "parameters": [
+                            {
+                                "code": 1,
+                                "indent": null
+                            }
+                        ]
+                    },
+                    {
+                        "code": 108,
+                        "indent": 0,
+                        "parameters": [
+                            "SEMIFINAL:BT-SEM-GAG-CAMERA-CLEANUP-PLAYTEST-001"
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_MapCameraZoom",
+                            "CameraFocusPlayer",
+                            "Camera: Focus Player",
+                            {
+                                "Duration:num": "30",
+                                "EasingType:str": "InOutSine"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Duration = 30"
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Easing Type = InOutSine"
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_MapCameraZoom",
+                            "ZoomChange",
+                            "Zoom: Change Zoom",
+                            {
+                                "TargetScale:num": "1",
+                                "Duration:num": "30",
+                                "EasingType:str": "InOutSine"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Target Zoom Scale = 1"
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Duration = 30"
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Easing Type = InOutSine"
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_MapCameraZoom",
+                            "CameraFocusWait",
+                            "Camera: Wait for Focus",
+                            {}
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_MapCameraZoom",
+                            "ZoomWait",
+                            "Zoom: Wait for Zoom",
+                            {}
+                        ]
+                    },
+                    {
+                        "code": 123,
+                        "indent": 0,
+                        "parameters": [
+                            "A",
+                            0
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "Coreto_Cutscene",
+                            "FinishCutscene",
+                            "FinishCutscene",
+                            {}
+                        ]
+                    },
+                    {
+                        "code": 0,
+                        "indent": 0,
+                        "parameters": []
+                    }
+                ],
+                "moveFrequency": 3,
+                "moveRoute": {
+                    "list": [
+                        {
+                            "code": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "repeat": true,
+                    "skippable": false,
+                    "wait": false
+                },
+                "moveSpeed": 3,
+                "moveType": 0,
+                "priorityType": 0,
+                "stepAnime": false,
+                "through": false,
+                "trigger": 1,
+                "walkAnime": true
+            },
+            {
+                "conditions": {
+                    "actorId": 1,
+                    "actorValid": false,
+                    "itemId": 1,
+                    "itemValid": false,
+                    "selfSwitchCh": "A",
+                    "selfSwitchValid": true,
+                    "switch1Id": 37,
+                    "switch1Valid": false,
+                    "switch2Id": 1,
+                    "switch2Valid": false,
+                    "variableId": 1,
+                    "variableValid": false,
+                    "variableValue": 0
+                },
+                "directionFix": false,
+                "image": {
+                    "characterIndex": 0,
+                    "characterName": "",
+                    "direction": 2,
+                    "pattern": 0,
+                    "tileId": 0
+                },
+                "list": [
+                    {
+                        "code": 108,
+                        "indent": 0,
+                        "parameters": [
+                            "SEMIFINAL:BT-SEM-GAG-REPEAT-001"
+                        ]
+                    },
+                    {
+                        "code": 108,
+                        "indent": 0,
+                        "parameters": [
+                            "SEMIFINAL:DL-SEM-GAG-LOCKER-REPEAT-001"
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_GabWindow",
+                            "GabTextOnly",
+                            "Gab: Text Only",
+                            {
+                                "Text:json": "\"Não. Essa porta já me explicou tudo. Com bastante impacto.\"",
+                                "ForceGab:eval": "false",
+                                "Override:struct": "{\"EventID:num\":\"-1\",\"BypassAntiRepeat:eval\":\"false\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 0,
+                        "indent": 0,
+                        "parameters": []
+                    }
+                ],
+                "moveFrequency": 3,
+                "moveRoute": {
+                    "list": [
+                        {
+                            "code": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "repeat": true,
+                    "skippable": false,
+                    "wait": false
+                },
+                "moveSpeed": 3,
+                "moveType": 0,
+                "priorityType": 1,
+                "stepAnime": false,
+                "through": false,
+                "trigger": 1,
+                "walkAnime": true
+            },
+            {
+                "conditions": {
+                    "actorId": 1,
+                    "actorValid": false,
+                    "itemId": 1,
+                    "itemValid": false,
+                    "selfSwitchCh": "A",
+                    "selfSwitchValid": false,
+                    "switch1Id": 1,
+                    "switch1Valid": false,
+                    "switch2Id": 1,
+                    "switch2Valid": false,
+                    "variableId": 29,
+                    "variableValid": true,
+                    "variableValue": 120
+                },
+                "directionFix": false,
+                "image": {
+                    "tileId": 0,
+                    "characterName": "",
+                    "direction": 2,
+                    "pattern": 0,
+                    "characterIndex": 0
+                },
+                "list": [
+                    {
+                        "code": 0,
+                        "indent": 0,
+                        "parameters": []
+                    }
+                ],
+                "moveFrequency": 3,
+                "moveRoute": {
+                    "list": [
+                        {
+                            "code": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "repeat": true,
+                    "skippable": false,
+                    "wait": false
+                },
+                "moveSpeed": 3,
+                "moveType": 0,
+                "priorityType": 0,
+                "stepAnime": false,
+                "through": false,
+                "trigger": 0,
+                "walkAnime": true
+            }
+        ],
+        "x": 15,
+        "y": 21
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+        "id": 13,
+        "name": "Elmo velho do treinador",
+        "note": "SEMIFINAL:011:CS-SEM-HELMET-STATUE-001:TRANSITION_THEN_PRESENTATION:ARMOR51",
+        "pages": [
+            {
+                "conditions": {
+                    "actorId": 1,
+                    "actorValid": false,
+                    "itemId": 1,
+                    "itemValid": false,
+                    "selfSwitchCh": "A",
+                    "selfSwitchValid": false,
+                    "switch1Id": 1,
+                    "switch1Valid": false,
+                    "switch2Id": 1,
+                    "switch2Valid": false,
+                    "variableId": 29,
+                    "variableValid": true,
+                    "variableValue": 50
+                },
+                "directionFix": true,
+                "image": {
+                    "tileId": 0,
+                    "characterName": "Estadio/Vestiario/!$Capacete",
+                    "direction": 2,
+                    "pattern": 1,
+                    "characterIndex": 0
+                },
+                "list": [
+                    {
+                        "code": 108,
+                        "indent": 0,
+                        "parameters": [
+                            "SEMIFINAL:BT-SEM-STATUE-PREQUEST-FILLER-011"
+                        ]
+                    },
+                    {
+                        "code": 108,
+                        "indent": 0,
+                        "parameters": [
+                            "SEMIFINAL:DL-SEM-STATUE-PREQUEST-FILLER-011"
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_GabWindow",
+                            "GabTextOnly",
+                            "Gab: Text Only",
+                            {
+                                "Text:json": "\"A estátua do Dragobur parece estar me julgando por chegar atrasado. E ela nem sabe que o jogo já começou.\"",
+                                "ForceGab:eval": "false",
+                                "Override:struct": "{\"EventID:num\":\"13\",\"BypassAntiRepeat:eval\":\"false\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 0,
+                        "indent": 0,
+                        "parameters": []
+                    }
+                ],
+                "moveFrequency": 3,
+                "moveRoute": {
+                    "list": [
+                        {
+                            "code": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "repeat": true,
+                    "skippable": false,
+                    "wait": false
+                },
+                "moveSpeed": 3,
+                "moveType": 0,
+                "priorityType": 1,
+                "stepAnime": false,
+                "through": false,
+                "trigger": 0,
+                "walkAnime": false
+            },
+            {
+                "conditions": {
+                    "actorId": 1,
+                    "actorValid": false,
+                    "itemId": 1,
+                    "itemValid": false,
+                    "selfSwitchCh": "A",
+                    "selfSwitchValid": false,
+                    "switch1Id": 1,
+                    "switch1Valid": false,
+                    "switch2Id": 1,
+                    "switch2Valid": false,
+                    "variableId": 29,
+                    "variableValid": true,
+                    "variableValue": 60
+                },
+                "directionFix": true,
+                "image": {
+                    "tileId": 0,
+                    "characterName": "Estadio/Vestiario/!$Capacete",
+                    "direction": 2,
+                    "pattern": 1,
+                    "characterIndex": 0
+                },
+                "list": [
+                    {
+                        "code": 108,
+                        "indent": 0,
+                        "parameters": [
+                            "SEMIFINAL:CS-SEM-HELMET-STATUE-001"
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "Coreto_Cutscene",
+                            "BeginCutscene",
+                            "BeginCutscene",
+                            {}
+                        ]
+                    },
+                    {
+                        "code": 108,
+                        "indent": 0,
+                        "parameters": [
+                            "SEMIFINAL:BT-SEM-STATUE-READ-001"
+                        ]
+                    },
+                    {
+                        "code": 108,
+                        "indent": 0,
+                        "parameters": [
+                            "SEMIFINAL:DL-SEM-STATUE-THORIN-001"
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_GabWindow",
+                            "GabTextOnly",
+                            "Gab: Text Only",
+                            {
+                                "Text:json": "\"A seleção de ouro...\"",
+                                "ForceGab:eval": "false",
+                                "Override:struct": "{\"EventID:num\":\"13\",\"BypassAntiRepeat:eval\":\"false\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_GabWindow",
+                            "GabTextOnly",
+                            "Gab: Text Only",
+                            {
+                                "Text:json": "\"E esse é o velho capacete do Dragobur.\"",
+                                "ForceGab:eval": "false",
+                                "Override:struct": "{\"EventID:num\":\"13\",\"BypassAntiRepeat:eval\":\"false\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_GabWindow",
+                            "GabTextOnly",
+                            "Gab: Text Only",
+                            {
+                                "Text:json": "\"Ele vai me matar por chegar tarde.\"",
+                                "ForceGab:eval": "false",
+                                "Override:struct": "{\"EventID:num\":\"13\",\"BypassAntiRepeat:eval\":\"false\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_GabWindow",
+                            "GabTextOnly",
+                            "Gab: Text Only",
+                            {
+                                "Text:json": "\"Ou por mexer nisso.\"",
+                                "ForceGab:eval": "false",
+                                "Override:struct": "{\"EventID:num\":\"13\",\"BypassAntiRepeat:eval\":\"false\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_GabWindow",
+                            "GabTextOnly",
+                            "Gab: Text Only",
+                            {
+                                "Text:json": "\"Talvez pelos dois.\"",
+                                "ForceGab:eval": "false",
+                                "Override:struct": "{\"EventID:num\":\"13\",\"BypassAntiRepeat:eval\":\"false\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 108,
+                        "indent": 0,
+                        "parameters": [
+                            "SEMIFINAL:AW-SEM-STATUE-ORIGIN-001"
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_GabWindow",
+                            "WaitForGab",
+                            "System: Wait For Gab Completion",
+                            {}
+                        ]
+                    },
+                    {
+                        "code": 108,
+                        "indent": 0,
+                        "parameters": [
+                            "SEMIFINAL:BT-SEM-STATUE-TAKE-001"
+                        ]
+                    },
+                    {
+                        "code": 108,
+                        "indent": 0,
+                        "parameters": [
+                            "SEMIFINAL:DL-SEM-STATUE-THORIN-TAKE-001"
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_GabWindow",
+                            "GabTextOnly",
+                            "Gab: Text Only",
+                            {
+                                "Text:json": "\"Desculpa, seleção de ouro.\"",
+                                "ForceGab:eval": "false",
+                                "Override:struct": "{\"EventID:num\":\"13\",\"BypassAntiRepeat:eval\":\"false\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_GabWindow",
+                            "GabTextOnly",
+                            "Gab: Text Only",
+                            {
+                                "Text:json": "\"O presente precisa mais disto do que a estátua.\"",
+                                "ForceGab:eval": "false",
+                                "Override:struct": "{\"EventID:num\":\"13\",\"BypassAntiRepeat:eval\":\"false\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 108,
+                        "indent": 0,
+                        "parameters": [
+                            "SEMIFINAL:AW-SEM-HELMET-TAKE-001"
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_GabWindow",
+                            "WaitForGab",
+                            "System: Wait For Gab Completion",
+                            {}
+                        ]
+                    },
+                    {
+                        "code": 108,
+                        "indent": 0,
+                        "parameters": [
+                            "SEMIFINAL:CUE-SEM-HELMET-TAKE-001"
+                        ]
+                    },
+                    {
+                        "code": 111,
+                        "indent": 0,
+                        "parameters": [
+                            12,
+                            "!$gameParty.hasItem($dataArmors[51], true)"
+                        ]
+                    },
+                    {
+                        "code": 128,
+                        "indent": 1,
+                        "parameters": [
+                            51,
+                            0,
+                            0,
+                            1,
+                            false
+                        ]
+                    },
+                    {
+                        "code": 250,
+                        "indent": 1,
+                        "parameters": [
+                            {
+                                "name": "Open1",
+                                "volume": 80,
+                                "pitch": 100,
+                                "pan": 0
+                            }
+                        ]
+                    },
+                    {
+                        "code": 412,
+                        "indent": 0,
+                        "parameters": []
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "Coreto_QuestCore",
+                            "QuestTransition",
+                            "QuestTransition",
+                            {
+                                "questKey": "a-semifinal",
+                                "transitionId": "TAKE_HELMET"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "Coreto_Cutscene",
+                            "FinishCutscene",
+                            "FinishCutscene",
+                            {}
+                        ]
+                    },
+                    {
+                        "code": 355,
+                        "indent": 0,
+                        "parameters": [
+                            "SceneManager.push(Scene_Equip);"
+                        ]
+                    },
+                    {
+                        "code": 0,
+                        "indent": 0,
+                        "parameters": []
+                    }
+                ],
+                "moveFrequency": 3,
+                "moveRoute": {
+                    "list": [
+                        {
+                            "code": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "repeat": true,
+                    "skippable": false,
+                    "wait": false
+                },
+                "moveSpeed": 3,
+                "moveType": 0,
+                "priorityType": 1,
+                "stepAnime": false,
+                "through": false,
+                "trigger": 0,
+                "walkAnime": false
+            },
+            {
+                "conditions": {
+                    "actorId": 1,
+                    "actorValid": false,
+                    "itemId": 1,
+                    "itemValid": false,
+                    "selfSwitchCh": "A",
+                    "selfSwitchValid": false,
+                    "switch1Id": 1,
+                    "switch1Valid": false,
+                    "switch2Id": 1,
+                    "switch2Valid": false,
+                    "variableId": 29,
+                    "variableValid": true,
+                    "variableValue": 70
+                },
+                "directionFix": true,
+                "image": {
+                    "tileId": 0,
+                    "characterName": "Estadio/Vestiario/!$Armadura",
+                    "direction": 2,
+                    "pattern": 1,
+                    "characterIndex": 0
+                },
+                "list": [
+                    {
+                        "code": 111,
+                        "indent": 0,
+                        "parameters": [
+                            12,
+                            "$gameActors.actor(3).isEquipped($dataArmors[51])"
+                        ]
+                    },
+                    {
+                        "code": 108,
+                        "indent": 1,
+                        "parameters": [
+                            "SEMIFINAL:CS-SEM-HELMET-EQUIP-DETECT-013"
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 1,
+                        "parameters": [
+                            "Coreto_QuestCore",
+                            "QuestTransition",
+                            "QuestTransition",
+                            {
+                                "questKey": "a-semifinal",
+                                "transitionId": "EQUIP_HELMET"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 123,
+                        "indent": 1,
+                        "parameters": [
+                            "A",
+                            0
+                        ]
+                    },
+                    {
+                        "code": 412,
+                        "indent": 0,
+                        "parameters": []
+                    },
+                    {
+                        "code": 0,
+                        "indent": 0,
+                        "parameters": []
+                    }
+                ],
+                "moveFrequency": 3,
+                "moveRoute": {
+                    "list": [
+                        {
+                            "code": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "repeat": true,
+                    "skippable": false,
+                    "wait": false
+                },
+                "moveSpeed": 3,
+                "moveType": 0,
+                "priorityType": 1,
+                "stepAnime": false,
+                "through": false,
+                "trigger": 4,
+                "walkAnime": false
+            },
+            {
+                "conditions": {
+                    "actorId": 1,
+                    "actorValid": false,
+                    "itemId": 1,
+                    "itemValid": false,
+                    "selfSwitchCh": "A",
+                    "selfSwitchValid": false,
+                    "switch1Id": 1,
+                    "switch1Valid": false,
+                    "switch2Id": 1,
+                    "switch2Valid": false,
+                    "variableId": 29,
+                    "variableValid": true,
+                    "variableValue": 80
+                },
+                "directionFix": true,
+                "image": {
+                    "tileId": 0,
+                    "characterName": "Estadio/Vestiario/!$Armadura",
+                    "direction": 2,
+                    "pattern": 1,
+                    "characterIndex": 0
+                },
+                "list": [
+                    {
+                        "code": 108,
+                        "indent": 0,
+                        "parameters": [
+                            "SEMIFINAL:DL-SEM-HELMET-THORIN-FIT-001"
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_GabWindow",
+                            "GabTextOnly",
+                            "Gab: Text Only",
+                            {
+                                "Text:json": "\"Serviu! Quer dizer... se eu não respirar muito fundo.\"",
+                                "ForceGab:eval": "false",
+                                "Override:struct": "{\"EventID:num\":\"-1\",\"BypassAntiRepeat:eval\":\"false\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 0,
+                        "indent": 0,
+                        "parameters": []
+                    }
+                ],
+                "moveFrequency": 3,
+                "moveRoute": {
+                    "list": [
+                        {
+                            "code": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "repeat": true,
+                    "skippable": false,
+                    "wait": false
+                },
+                "moveSpeed": 3,
+                "moveType": 0,
+                "priorityType": 1,
+                "stepAnime": false,
+                "through": false,
+                "trigger": 0,
+                "walkAnime": false
+            },
+            {
+                "conditions": {
+                    "actorId": 1,
+                    "actorValid": false,
+                    "itemId": 1,
+                    "itemValid": false,
+                    "selfSwitchCh": "A",
+                    "selfSwitchValid": true,
+                    "switch1Id": 1,
+                    "switch1Valid": false,
+                    "switch2Id": 1,
+                    "switch2Valid": false,
+                    "variableId": 29,
+                    "variableValid": true,
+                    "variableValue": 80
+                },
+                "directionFix": true,
+                "image": {
+                    "tileId": 0,
+                    "characterName": "Estadio/Vestiario/!$Armadura",
+                    "direction": 2,
+                    "pattern": 1,
+                    "characterIndex": 0
+                },
+                "list": [
+                    {
+                        "code": 108,
+                        "indent": 0,
+                        "parameters": [
+                            "SEMIFINAL:CS-SEM-HELMET-EQUIP-PRESENTATION-013"
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "Coreto_Cutscene",
+                            "BeginCutscene",
+                            "BeginCutscene",
+                            {}
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_MapCameraZoom",
+                            "CameraFocusPlayer",
+                            "Camera: Focus Player",
+                            {
+                                "Duration:num": "20",
+                                "EasingType:str": "InOutSine"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Duration = 20"
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Easing Type = InOutSine"
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_MapCameraZoom",
+                            "ZoomChange",
+                            "Zoom: Change Zoom",
+                            {
+                                "TargetScale:num": "2",
+                                "Duration:num": "20",
+                                "EasingType:str": "InOutSine"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Target Zoom Scale = 2"
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Duration = 20"
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Easing Type = InOutSine"
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_MapCameraZoom",
+                            "CameraFocusWait",
+                            "Camera: Wait for Focus",
+                            {}
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_MapCameraZoom",
+                            "ZoomWait",
+                            "Zoom: Wait for Zoom",
+                            {}
+                        ]
+                    },
+                    {
+                        "code": 205,
+                        "indent": 0,
+                        "parameters": [
+                            -1,
+                            {
+                                "list": [
+                                    {
+                                        "code": 37,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 13,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 13,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 38,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 19,
+                                        "parameters": []
+                                    },
+                                    {
+                                        "code": 0,
+                                        "parameters": []
+                                    }
+                                ],
+                                "repeat": false,
+                                "skippable": true,
+                                "wait": true
+                            }
+                        ]
+                    },
+                    {
+                        "code": 108,
+                        "indent": 0,
+                        "parameters": [
+                            "SEMIFINAL:CUE-SEM-HELMET-EQUIP-013"
+                        ]
+                    },
+                    {
+                        "code": 250,
+                        "indent": 0,
+                        "parameters": [
+                            {
+                                "name": "Equip1",
+                                "volume": 90,
+                                "pitch": 100,
+                                "pan": 0
+                            }
+                        ]
+                    },
+                    {
+                        "code": 212,
+                        "indent": 0,
+                        "parameters": [
+                            -1,
+                            91,
+                            false
+                        ]
+                    },
+                    {
+                        "code": 225,
+                        "indent": 0,
+                        "parameters": [
+                            3,
+                            5,
+                            20,
+                            true
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_MapCameraZoom",
+                            "ZoomChange",
+                            "Zoom: Change Zoom",
+                            {
+                                "TargetScale:num": "1",
+                                "Duration:num": "24",
+                                "EasingType:str": "InOutSine"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Target Zoom Scale = 1"
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Duration = 24"
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Easing Type = InOutSine"
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_MapCameraZoom",
+                            "CameraFocusPlayer",
+                            "Camera: Focus Player",
+                            {
+                                "Duration:num": "24",
+                                "EasingType:str": "InOutSine"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Duration = 24"
+                        ]
+                    },
+                    {
+                        "code": 657,
+                        "indent": 0,
+                        "parameters": [
+                            "Easing Type = InOutSine"
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_MapCameraZoom",
+                            "CameraFocusWait",
+                            "Camera: Wait for Focus",
+                            {}
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_MapCameraZoom",
+                            "ZoomWait",
+                            "Zoom: Wait for Zoom",
+                            {}
+                        ]
+                    },
+                    {
+                        "code": 108,
+                        "indent": 0,
+                        "parameters": [
+                            "SEMIFINAL:DL-SEM-HELMET-THORIN-FIT-001"
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_GabWindow",
+                            "GabTextOnly",
+                            "Gab: Text Only",
+                            {
+                                "Text:json": "\"Serviu!\"",
+                                "ForceGab:eval": "false",
+                                "Override:struct": "{\"EventID:num\":\"-1\",\"BypassAntiRepeat:eval\":\"false\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_GabWindow",
+                            "GabTextOnly",
+                            "Gab: Text Only",
+                            {
+                                "Text:json": "\"Quer dizer...\"",
+                                "ForceGab:eval": "false",
+                                "Override:struct": "{\"EventID:num\":\"-1\",\"BypassAntiRepeat:eval\":\"false\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_GabWindow",
+                            "GabTextOnly",
+                            "Gab: Text Only",
+                            {
+                                "Text:json": "\"Se eu não respirar muito fundo.\"",
+                                "ForceGab:eval": "false",
+                                "Override:struct": "{\"EventID:num\":\"-1\",\"BypassAntiRepeat:eval\":\"false\",\"WaitTime:num\":\"72\",\"TimePerCharacter:num\":\"2\"}"
+                            }
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "VisuMZ_4_GabWindow",
+                            "WaitForGab",
+                            "System: Wait For Gab Completion",
+                            {}
+                        ]
+                    },
+                    {
+                        "code": 357,
+                        "indent": 0,
+                        "parameters": [
+                            "Coreto_Cutscene",
+                            "FinishCutscene",
+                            "FinishCutscene",
+                            {}
+                        ]
+                    },
+                    {
+                        "code": 123,
+                        "indent": 0,
+                        "parameters": [
+                            "A",
+                            1
+                        ]
+                    },
+                    {
+                        "code": 0,
+                        "indent": 0,
+                        "parameters": []
+                    }
+                ],
+                "moveFrequency": 3,
+                "moveRoute": {
+                    "list": [
+                        {
+                            "code": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "repeat": true,
+                    "skippable": false,
+                    "wait": false
+                },
+                "moveSpeed": 3,
+                "moveType": 0,
+                "priorityType": 1,
+                "stepAnime": false,
+                "through": false,
+                "trigger": 3,
+                "walkAnime": false
+            }
+        ],
+        "x": 9,
+        "y": 8
+    },
+    null,
+    null
+  ]
+}

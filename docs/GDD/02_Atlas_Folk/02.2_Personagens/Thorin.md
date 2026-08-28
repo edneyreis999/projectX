@@ -13,7 +13,7 @@ data: Julho 2026
 ## Resumo
 
 Thorin Forja-Prata é o protagonista da narrativa emoldurada por [[Rheed]] e o principal ponto de vista jogável do passado de [[Gildrat]].
-Ele começa como um jovem nobre rebelde, ligado ao futebol rúnico e resistente ao destino militar imposto por [[Tordan]], seu pai.
+Ele começa como um jovem nobre rebelde, ligado ao futebol rúnico e resistente ao destino militar imposto por [[Tordan|Thordan]], seu pai.
 Ao longo da campanha, é deslocado da adolescência competitiva para a responsabilidade política, militar e mágica diante da ameaça dos [[Ignotos]].
 Seu arco combina amadurecimento, conflito familiar, descoberta de poder onírico herdado de sua mãe e tomada pública de responsabilidade pela defesa da cidade.
 O personagem representa a tensão entre identidade própria e legado, especialmente quando sua capacidade de comunicar-se com mortos desafia o projeto antimágico de Gildrat.
@@ -22,7 +22,7 @@ O personagem representa a tensão entre identidade própria e legado, especialme
 
 ## Descrição Geral
 
-Thorin é como filho de [[Thordan]] Forja-Prata, jovem anão de origem nobre e herdeiro direto de um legado militar que ele rejeita no início da história. Thorin joga futebol rúnico como arremessador/fundeiro dos Machados Enferrujados, usando a funda tanto como símbolo esportivo quanto como base de sua identidade mecânica em combate.
+Thorin é como filho de [[Tordan|Thordan]] Forja-Prata, jovem anão de origem nobre e herdeiro direto de um legado militar que ele rejeita no início da história. Thorin joga futebol rúnico como arremessador/fundeiro dos Machados Enferrujados, usando a funda tanto como símbolo esportivo quanto como base de sua identidade mecânica em combate.
 
 Sua idade é de 16 anos, ainda em transição entre adolescência e vida adulta. 
 
@@ -30,7 +30,7 @@ Sua idade é de 16 anos, ainda em transição entre adolescência e vida adulta.
 Começa impulsivo, orgulhoso, competitivo e ressentido com a autoridade paterna. Também demonstra coragem, empatia crescente e desejo de provar valor fora da sombra de Thordan. Seus defeitos iniciais estão ligados à imaturidade, reatividade e dificuldade de compreender o peso político de seu nome.
 
 **Motivações**
-Preservar sua identidade, proteger [[Filena]] e seus vínculos afetivos, entender a herança de sua mãe Mélia e, progressivamente, defender [[Gildrat]] de uma ameaça que ultrapassa a disputa familiar. O conflito interno central é entre ser quem deseja ser e tornar-se aquilo que a crise exige. O conflito externo envolve [[Thordan]], [[Balastrus]], o Conselho, os [[Ignotos]] e o [[Profeta das Sombras]].
+Preservar sua identidade, proteger [[Filena]] e seus vínculos afetivos, entender a herança de sua mãe Mélia e, progressivamente, defender [[Gildrat]] de uma ameaça que ultrapassa a disputa familiar. O conflito interno central é entre ser quem deseja ser e tornar-se aquilo que a crise exige. O conflito externo envolve [[Tordan|Thordan]], [[Balastrus]], o Conselho, os [[Ignotos]] e o [[Profeta das Sombras]].
 
 ---
 
@@ -49,12 +49,12 @@ Ele também funciona como ponte entre camadas narrativas: o mundo cotidiano do f
 | Momento                            | Papel do personagem                                                                                                                                      | Evolução                                                                                     |
 | ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
 | Moldura narrativa                  | É introduzido pela história contada por [[Rheed]], tornando-se o corpo narrativo assumido pelo jogador.                                                  | Passa de personagem contado a personagem vivido pelo jogador.                                |
-| Futebol rúnico e conflito familiar | Chega atrasado à semifinal, sonha com a mãe, vence jogada decisiva com [[Filena]] e é interrompido por [[Killin]] e [[Mhordred]] a mando de [[Thordan]]. | A rebeldia esportiva é colocada em choque direto com o dever familiar.                       |
-| Imposição de amadurecimento        | [[Thordan]] humilha seu troféu e o força a trabalhar com [[Balastrus]].                                                                                  | O esporte deixa de ser apenas fuga e passa a contrastar com exploração, trabalho e política. |
+| Futebol rúnico e conflito familiar | Chega atrasado à semifinal, sonha com a mãe, vence jogada decisiva com [[Filena]] e é interrompido por [[Killin]] e [[Mhordred]] a mando de [[Tordan|Thordan]]. | A rebeldia esportiva é colocada em choque direto com o dever familiar.                       |
+| Imposição de amadurecimento        | [[Tordan|Thordan]] humilha seu troféu e o força a trabalhar com [[Balastrus]].                                                                                  | O esporte deixa de ser apenas fuga e passa a contrastar com exploração, trabalho e política. |
 | Kravens e primeiras minas          | Atua em contrato minerador, enfrenta perigos e descobre a relevância da Profundina.                                                                      | Começa a perceber que coragem esportiva não basta diante de ameaça real.                     |
 | Conselho e Melios                  | É manipulado pela inclusão de [[Filena]] na expedição e acaba entrando na crise de Melios.                                                               | Passa de alvo de manipulação para testemunha direta do erro político de Gildrat.             |
 | Quebra do selo                     | Presencia a liberação da ameaça ignota e entra em contato com a presença do [[Profeta das Sombras]].                                                     | A ameaça deixa de ser social/política e torna-se espiritual e histórica.                     |
-| Preparação para o Segundo Sol      | Pode reconciliar-se parcialmente com [[Thordan]], organizar forças civis, militares e mineradoras.                                                       | Assume agência pública e começa a agir como liderança.                                       |
+| Preparação para o Segundo Sol      | Pode reconciliar-se parcialmente com [[Tordan|Thordan]], organizar forças civis, militares e mineradoras.                                                       | Assume agência pública e começa a agir como liderança.                                       |
 | Defesa de Gildrat                  | Manifesta poder onírico em escala pública, enfrenta a possessão parcial pela Casca Onírica e torna-se peça central contra os [[Ignotos]].                | Consolida sua transformação em protetor                                                      |
 
 ---
@@ -63,11 +63,11 @@ Ele também funciona como ponte entre camadas narrativas: o mundo cotidiano do f
 
 ### Estado Inicial
 
-[[Thorin]] começa como jovem nobre rebelde, associado ao futebol rúnico, à rivalidade afetiva/esportiva com [[Borin]] e ao vínculo com [[Filena]]. Ele rejeita a trajetória militar esperada por [[Thordan]] e enxerga a imposição paterna como controle e desprezo por sua identidade.
+[[Thorin]] começa como jovem nobre rebelde, associado ao futebol rúnico, à rivalidade afetiva/esportiva com [[Borin]] e ao vínculo com [[Filena]]. Ele rejeita a trajetória militar esperada por [[Tordan|Thordan]] e enxerga a imposição paterna como controle e desprezo por sua identidade.
 
 ### Catalisador
 
-O catalisador imediato é a intervenção de [[Thordan]], [[Killin]] e [[Mhordred]] após a semifinal, seguida pela obrigação de trabalhar para [[Balastrus]]. Em paralelo, os sonhos com [[Mélia]] instauram um catalisador mais profundo: a suspeita de que sua rebeldia pessoal está ligada a um chamado espiritual e político maior.
+O catalisador imediato é a intervenção de [[Tordan|Thordan]], [[Killin]] e [[Mhordred]] após a semifinal, seguida pela obrigação de trabalhar para [[Balastrus]]. Em paralelo, os sonhos com [[Mélia]] instauram um catalisador mais profundo: a suspeita de que sua rebeldia pessoal está ligada a um chamado espiritual e político maior.
 
 ### Desenvolvimento
 
@@ -89,12 +89,12 @@ Ao final, Thorin torna-se um protetor mais consciente de Gildrat. Ele aprende qu
 
 | Personagem              | Relação Inicial                                                                                                   | Evolução                                                                                   |
 | ----------------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| [[Thordan]]             | Pai autoritário, general e símbolo do destino recusado.                                                           | Relação atravessa humilhação, afastamento, crise, possível empatia e reconhecimento mútuo. |
+| [[Tordan|Thordan]]             | Pai autoritário, general e símbolo do destino recusado.                                                           | Relação atravessa humilhação, afastamento, crise, possível empatia e reconhecimento mútuo. |
 | [[Mélia]]               | Mãe ausente, morta ou desaparecida.                                                                               | Surge em sonhos como guia emocional e possível origem do poder espiritual.                 |
 | [[Filena]]              | Amiga de infância, parceira de futebol e interesse afetivo sugerido.                                              | Torna-se aliada moral e política, contrapondo privilégio e responsabilidade.               |
 | [[Borin]]               | Rival esportivo e afetivo, provocador. É, na verdade um espírito que apenas Thorin vê, mas Thorin não sabe disso. | Pode ser resgatado e integrado à resistência civil.                                        |
 | [[Balastrus]]           | Patrono forçado, manipulador e antagonista prático.                                                               | Passa de carrasco a aliado pragmático                                                      |
-| [[Killin]]              | Guardiã designada por [[Thordan]], percebida inicialmente como controle.                                          | Torna-se mentora/protetora cuja perda ou trauma afeta a liderança do grupo.                |
+| [[Killin]]              | Guardiã designada por [[Tordan|Thordan]], percebida inicialmente como controle.                                          | Torna-se mentora/protetora cuja perda ou trauma afeta a liderança do grupo.                |
 | [[Mhordred]]             | Guarda impaciente que o vê como obrigação.                                                                        | Desenvolve respeito após decisões de coragem.                                              |
 | [[Corvinus]]            | Representante de tradição rival ao projeto imperial.                                                              | Pode tornar-se aliado através dos [[Corvos]] e da Canção Ancestral.                        |
 | [[Damburr]]             | Imperador distante, citado nos sonhos e na política de Gildrat.                                                   | Torna-se símbolo do sistema que [[Thorin]] precisa confrontar.                             |
@@ -117,7 +117,7 @@ Ao final, Thorin torna-se um protetor mais consciente de Gildrat. Ele aprende qu
 
 | Ato     | Objetivo                                                       | Principal Conflito                                                                           | Resultado                                                                                   |
 | ------- | -------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| Ato I   | Resistir ao destino imposto e provar valor próprio.            | Conflito com [[Thordan]], imposição de [[Balastrus]] e choque com realidade das minas.       | Deixa de ser apenas atleta rebelde e entra no conflito social de Gildrat.                   |
+| Ato I   | Resistir ao destino imposto e provar valor próprio.            | Conflito com [[Tordan|Thordan]], imposição de [[Balastrus]] e choque com realidade das minas.       | Deixa de ser apenas atleta rebelde e entra no conflito social de Gildrat.                   |
 | Ato II  | Sobreviver à escalada política e mineradora que leva a Melios. | Manipulação do Conselho, ambição de [[Balastrus]], oposição dos [[Corvos]] e quebra do selo. | Testemunha a liberação dos [[Ignotos]] e torna-se peça visada pelo [[Profeta das Sombras]]. |
 | Ato III | Preparar e defender Gildrat.                                   | Unir forças fraturadas, lidar com relações quebradas e controlar poder onírico.              | Assume liderança pública, mas abre nova crise por causa da magia.                           |
 
@@ -128,12 +128,12 @@ Ao final, Thorin torna-se um protetor mais consciente de Gildrat. Ele aprende qu
 | Momento                            | Papel do personagem                                                                                                                                      | Evolução                                                                                               |
 | ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | Moldura narrativa                  | É introduzido pela história contada por [[Rheed]], tornando-se o corpo narrativo assumido pelo jogador.                                                  | Passa de personagem contado a personagem vivido pelo jogador.                                          |
-| Futebol rúnico e conflito familiar | Chega atrasado à semifinal, sonha com a mãe, vence jogada decisiva com [[Filena]] e é interrompido por [[Killin]] e [[Mhordred]] a mando de [[Thordan]]. | A rebeldia esportiva é colocada em choque direto com o dever familiar.                                 |
-| Imposição de amadurecimento        | [[Thordan]] humilha seu troféu e o força a trabalhar com [[Balastrus]].                                                                                  | O esporte deixa de ser apenas fuga e passa a contrastar com exploração, trabalho e política.           |
+| Futebol rúnico e conflito familiar | Chega atrasado à semifinal, sonha com a mãe, vence jogada decisiva com [[Filena]] e é interrompido por [[Killin]] e [[Mhordred]] a mando de [[Tordan|Thordan]]. | A rebeldia esportiva é colocada em choque direto com o dever familiar.                                 |
+| Imposição de amadurecimento        | [[Tordan|Thordan]] humilha seu troféu e o força a trabalhar com [[Balastrus]].                                                                                  | O esporte deixa de ser apenas fuga e passa a contrastar com exploração, trabalho e política.           |
 | Kravens e primeiras minas          | Atua em contrato minerador, enfrenta perigos e descobre a relevância da Profundina.                                                                      | Começa a perceber que coragem esportiva não basta diante de ameaça real.                               |
 | Conselho e Melios                  | É manipulado pela inclusão de [[Filena]] na expedição e acaba entrando na crise de Melios.                                                               | Passa de alvo de manipulação para testemunha direta do erro político de Gildrat.                       |
 | Quebra do selo                     | Presencia a liberação da ameaça ignota e entra em contato com a presença do [[Profeta das Sombras]].                                                     | A ameaça deixa de ser social/política e torna-se espiritual e histórica.                               |
-| Preparação para a Guerra           | Pode reconciliar-se parcialmente com [[Thordan]], organizar forças civis, militares e mineradoras.                                                       | Assume agência pública e começa a agir como liderança.                                                 |
+| Preparação para a Guerra           | Pode reconciliar-se parcialmente com [[Tordan|Thordan]], organizar forças civis, militares e mineradoras.                                                       | Assume agência pública e começa a agir como liderança.                                                 |
 | Defesa de Gildrat                  | Manifesta poder onírico em escala pública, enfrenta a possessão parcial pela Casca Onírica e torna-se peça central contra os [[Ignotos]].                | Consolida sua transformação em protetor, mas sua relação com magia passa a ameaçar sua posição social. |
 
 [[06_Combat/personagens/thorin|Ficha de combate de Thorin]]

@@ -5024,9 +5024,9 @@
                             "indent": 0,
                             "parameters": [
                                 1,
-                                111,
+                                29,
                                 0,
-                                0,
+                                10,
                                 0
                             ]
                         },
@@ -5147,7 +5147,7 @@
                                 "QuestTransition",
                                 "QuestTransition",
                                 {
-                                    "questKey": "tutorial-funda-forjaprata",
+                                    "questKey": "a-semifinal",
                                     "transitionId": "INTRODUCE_JOURNAL"
                                 }
                             ]
@@ -5159,13 +5159,6 @@
                                 50,
                                 50,
                                 0
-                            ]
-                        },
-                        {
-                            "code": 355,
-                            "indent": 1,
-                            "parameters": [
-                                "SQSM.SetActiveQuest(\"aSemifinal\", true);"
                             ]
                         },
                         {
@@ -5195,9 +5188,9 @@
                             "indent": 1,
                             "parameters": [
                                 1,
-                                111,
+                                29,
                                 0,
-                                10,
+                                20,
                                 0
                             ]
                         },
@@ -5308,9 +5301,9 @@
                             "indent": 2,
                             "parameters": [
                                 1,
-                                111,
+                                29,
                                 0,
-                                20,
+                                30,
                                 0
                             ]
                         },
@@ -5332,7 +5325,7 @@
                                 "QuestTransition",
                                 "QuestTransition",
                                 {
-                                    "questKey": "tutorial-funda-forjaprata",
+                                    "questKey": "a-semifinal",
                                     "transitionId": "LEAVE_EQUIPPED"
                                 }
                             ]
@@ -5482,9 +5475,9 @@
                         "switch1Valid": false,
                         "switch2Id": 1,
                         "switch2Valid": false,
-                        "variableId": 111,
+                        "variableId": 29,
                         "variableValid": true,
-                        "variableValue": 90
+                        "variableValue": 40
                     },
                     "directionFix": true,
                     "image": {
@@ -8864,8 +8857,8 @@
                                 "AssertQuestState",
                                 "AssertQuestState",
                                 {
-                                    "questKey": "tutorial-funda-forjaprata",
-                                    "expectedState": "0"
+                                    "questKey": "a-semifinal",
+                                    "expectedState": "10"
                                 }
                             ]
                         },
@@ -9289,7 +9282,7 @@
                                 "EnterVisualNovel",
                                 "EnterVisualNovel",
                                 {
-                                    "questKey": "tutorial-funda-forjaprata",
+                                    "questKey": "a-semifinal",
                                     "entryKey": "ABERTURA_FORJAPRATA"
                                 }
                             ]
@@ -9411,8 +9404,8 @@
                                 "AssertQuestState",
                                 "AssertQuestState",
                                 {
-                                    "questKey": "tutorial-funda-forjaprata",
-                                    "expectedState": "0"
+                                    "questKey": "a-semifinal",
+                                    "expectedState": "10"
                                 }
                             ]
                         },
@@ -9962,17 +9955,6 @@
                                 "FinishCutscene",
                                 "FinishCutscene",
                                 {}
-                            ]
-                        },
-                        {
-                            "code": 122,
-                            "indent": 0,
-                            "parameters": [
-                                29,
-                                29,
-                                0,
-                                0,
-                                2
                             ]
                         },
                         {
@@ -10847,7 +10829,7 @@
                         "switch2Valid": false,
                         "variableId": 29,
                         "variableValid": true,
-                        "variableValue": 8
+                        "variableValue": 900
                     },
                     "directionFix": false,
                     "image": {
@@ -12547,9 +12529,9 @@
                         "switch1Valid": false,
                         "switch2Id": 1,
                         "switch2Valid": false,
-                        "variableId": 111,
+                        "variableId": 29,
                         "variableValid": true,
-                        "variableValue": 10
+                        "variableValue": 20
                     },
                     "directionFix": false,
                     "image": {
@@ -12565,9 +12547,9 @@
                             "indent": 0,
                             "parameters": [
                                 1,
-                                111,
+                                29,
                                 0,
-                                10,
+                                20,
                                 0
                             ]
                         },
@@ -12711,7 +12693,7 @@
                                 "QuestTransition",
                                 "QuestTransition",
                                 {
-                                    "questKey": "tutorial-funda-forjaprata",
+                                    "questKey": "a-semifinal",
                                     "transitionId": "FOUND_SLING"
                                 }
                             ]

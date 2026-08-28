@@ -481,6 +481,23 @@ describe('generate-troops.js', () => {
       expect(troops[2].name).toBe('Lobo Jovem x2');
       expect(troops[3].name).toBe('Goblin Saqueador x2');
     });
+
+    test('UT-042/IT-017: regeneration owns physical Troop 19 and preserves unrelated high records', () => {
+      const definitions = require('../../scripts/troop-definitions');
+      const enemiesData = require('../../data/Enemies.json');
+      const nameMapping = buildEnemyNameMapping(enemiesData);
+      const existing = require('../../data/Troops.json');
+      const sentinel = { id: 100, name: 'UNRELATED_SENTINEL', members: [], pages: [] };
+      const fixture = structuredClone(existing);
+      fixture[100] = sentinel;
+
+      const generated = generateAllTroops(definitions, nameMapping, fixture);
+
+      expect(generated[19]).toMatchObject({ id: 19, name: 'Mhordred', members: [{ enemyId: 91 }] });
+      expect(generated[19].members).toHaveLength(1);
+      expect(generated[100]).toEqual(sentinel);
+      expect(generated).toHaveLength(fixture.length);
+    });
   });
 
   // ==========================================
@@ -526,8 +543,8 @@ describe('generate-troops.js', () => {
 
       // Validate counts
       expect(separatorCount).toBe(4);
-      expect(combatTroopCount).toBe(36);
-      expect(emptySlotCount).toBe(30);
+      expect(combatTroopCount).toBe(37); // 36 regional definitions + physical semifinal Troop 19
+      expect(emptySlotCount).toBe(29); // physical ownership consumes one former scaffold slot
     });
 
     test('should correctly resolve all enemy names from definitions', () => {

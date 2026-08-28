@@ -91,7 +91,7 @@ Seu clímax documentado está na preparação e defesa da última batalha, quand
 | ---------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------- |
 | [[Thorin]]       | Amigo de infância, parceiro de futebol e possível interesse afetivo. | Confronta seu privilégio, mas também aprofunda confiança e parceria. |
 | [[Balastrus]]    | Figura exploradora e manipuladora associada ao trabalho nas minas.   | Torna-se alvo de sua indignação moral.                               |
-| [[Tordan]]       | Pai de [[Thorin]] e símbolo da nobreza militar.                      | Relação direta pouco, mas sua postura afeta o lugar social dela.     |
+| [[Tordan|Thordan]]       | Pai de [[Thorin]] e símbolo da nobreza militar.                      | Relação direta pouco, mas sua postura afeta o lugar social dela.     |
 | [[Killin]]       | Guardiã da Guarda de Ferro, parte da escolta de [[Thorin]].          | Cooperação de campo em meio a tensões sociais.                       |
 | [[Mhordred]]      | Guarda brusco inicialmente externo ao mundo civil dela.              | Pode desenvolver respeito pela coragem do grupo.                     |
 | [[Dambur]]       | Imperador distante.                                                  | Sua política de exploração e repressão molda o conflito social dela. |

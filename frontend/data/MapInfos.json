@@ -173,7 +173,7 @@
         "id": 18,
         "expanded": true,
         "name": "Visual Novel",
-        "order": 53,
+        "order": 57,
         "parentId": 0,
         "scrollX": 0,
         "scrollY": 0,
@@ -451,7 +451,7 @@
         "id": 46,
         "expanded": false,
         "name": "VN_Noite_da_Historia",
-        "order": 54,
+        "order": 58,
         "parentId": 18,
         "scrollX": 777.7777777777778,
         "scrollY": 439.1111111111111,
@@ -481,7 +481,7 @@
         "id": 49,
         "expanded": false,
         "name": "VN_Casa_Forjaprata",
-        "order": 55,
+        "order": 59,
         "parentId": 18,
         "scrollX": 777.7777777777778,
         "scrollY": 439.1111111111111,
@@ -547,6 +547,59 @@
         "parentId": 15,
         "scrollX": 1611.5555555555557,
         "scrollY": 660.4444444444445,
+        "quick": false
+    },
+    null,
+    null,
+    null,
+    {
+        "id": 61,
+        "expanded": false,
+        "name": "EX_Distrito_Comercial",
+        "order": 53,
+        "parentId": 39,
+        "scrollX": 1065.7777777777778,
+        "scrollY": 1140.4444444444443,
+        "quick": false
+    },
+    {
+        "id": 62,
+        "expanded": true,
+        "name": "EX_Estadio",
+        "order": 54,
+        "parentId": 39,
+        "scrollX": 777.7777777777778,
+        "scrollY": 432,
+        "quick": false
+    },
+    {
+        "id": 63,
+        "expanded": false,
+        "name": "EX_Vestiario",
+        "order": 56,
+        "parentId": 62,
+        "scrollX": 777.7777777777778,
+        "scrollY": 520,
+        "quick": false
+    },
+    {
+        "id": 64,
+        "expanded": true,
+        "name": "EX_Campo_de_Futebol_Runico",
+        "order": 55,
+        "parentId": 62,
+        "scrollX": 777.5,
+        "scrollY": 513.5,
+        "quick": false
+    },
+    {
+        "id": 65,
+        "expanded": false,
+        "name": "VN_Semifinal",
+        "order": 60,
+        "parentId": 18,
+        "scrollX": 777.7777777777778,
+        "scrollY": 432,
         "quick": false
     }
 ]

@@ -12,7 +12,7 @@ Evidência aceita: packet `narrative-qa-001` revisão 1. Classificação:
 
 ## Inventário factual
 
-- **Conflito de cânone:** timeline v5 remove as mortes de Tordan/Mhordred e
+- **Conflito de cânone:** timeline v5 remove as mortes de Thordan/Mhordred e
   converge o final; `ultima-missao` propõe morte de Mhordred e finais A/B/C.
   Fontes: `n`, `h`.
 - **Risco — flags:** V26–41 acompanham quests e V62–85 estado narrativo, mas

@@ -38,10 +38,10 @@
 | # | Quest | Dificuldade | Localização | Pontos | Requisitos |
 |---|-------|-------------|-------------|--------|------------|
 | 01 | Treinando a Guarda de Ferro | Fácil | Campo de Treinamento | +30 | N/A |
-| 02 | Resgatando Kilin | Difícil | Campo de Treinamento | +30 | Ter completado "Treinando a Guarda de Ferro" |
-| 03 | Boas-vindas à Guarda de Ferro | Fácil | Taverna da Pedra Vulcânica | +10 | Ter completado "Resgatando Kilin" |
-| 04 | Guerreiro Fragmentado | Fácil | Campo de Treinamento | +15 | Ter completado "Resgatando Kilin" e "Boas-vindas à Guarda de Ferro" |
-| 05 | O Novo Lorde Anão | Fácil | Taverna da Pedra Vulcânica | +15 | Ter completado "Resgatando Kilin" |
+| 02 | Resgatando Killin | Difícil | Campo de Treinamento | +30 | Ter completado "Treinando a Guarda de Ferro" |
+| 03 | Boas-vindas à Guarda de Ferro | Fácil | Taverna da Pedra Vulcânica | +10 | Ter completado "Resgatando Killin" |
+| 04 | Guerreiro Fragmentado | Fácil | Campo de Treinamento | +15 | Ter completado "Resgatando Killin" e "Boas-vindas à Guarda de Ferro" |
+| 05 | O Novo Lorde Anão | Fácil | Taverna da Pedra Vulcânica | +15 | Ter completado "Resgatando Killin" |
 
 **Total Possível:** 100 pontos
 
@@ -151,7 +151,7 @@ Dano = 1667 × (1 + v_influencia_corvos/100) × (1 + (v_reforco_sigmetal/100) * 
 - Recrutar Civis (Exército Civil)
 - Treinar Civis (Exército Civil)
 - Treinando a Guarda de Ferro (Guarda de Ferro)
-- Resgatando Kilin (Guarda de Ferro)
+- Resgatando Killin (Guarda de Ferro)
 - Guerreiro Fragmentado (Guarda de Ferro)
 
 ### Taverna da Pedra Vulcânica (2 quests)
@@ -189,7 +189,7 @@ Dano = 1667 × (1 + v_influencia_corvos/100) × (1 + (v_reforco_sigmetal/100) * 
 
 - Recompensa estratégica (pontos e/ou multiplicador)
 - Normalmente ligadas a exploração em Mélios/Kravens ou momentos críticos
-- **Quests:** Resgatar Corvos e Família Principal, Resgatando Kilin, Coletar Sigmetal na Câmara Revelada
+- **Quests:** Resgatar Corvos e Família Principal, Resgatando Killin, Coletar Sigmetal na Câmara Revelada
 
 **Total de pontos:** 65 pontos (50 + 35 + 0, sem contar o multiplicador de Sigmetal)
 
@@ -217,7 +217,7 @@ Dano = 1667 × (1 + v_influencia_corvos/100) × (1 + (v_reforco_sigmetal/100) * 
 
 - Resgatar Grupos de Rebeldes em Kravens (Exército Civil) — requer "Resgatar Rebeldes e Borin em Kravens"
 - Treinar Civis (Exército Civil) — requer "Recrutar Civis"
-- Resgatando Kilin (Guarda de Ferro) — requer "Treinando a Guarda de Ferro"
+- Resgatando Killin (Guarda de Ferro) — requer "Treinando a Guarda de Ferro"
 - Canção Ancestral (Corvos) — requer "Resgatar Corvos e Família Principal"
 - Encontrar Ferreiro Para Armaduras (Sigmetal) — requer "Coletar Sigmetal na Câmara Revelada"
 - Encontrar Ferreiro Para Armas (Sigmetal) — requer "Coletar Sigmetal na Câmara Revelada"
@@ -226,10 +226,10 @@ Dano = 1667 × (1 + v_influencia_corvos/100) × (1 + (v_reforco_sigmetal/100) * 
 
 ### Fase 3: Quests de 2+ camadas (cadeias mais longas)
 
-- Boas-vindas à Guarda de Ferro (Guarda de Ferro) — requer "Resgatando Kilin"
-- O Novo Lorde Anão (Guarda de Ferro) — requer "Resgatando Kilin"
+- Boas-vindas à Guarda de Ferro (Guarda de Ferro) — requer "Resgatando Killin"
+- O Novo Lorde Anão (Guarda de Ferro) — requer "Resgatando Killin"
 - Treinar Corvos (Corvos) — requer "Canção Ancestral"
-- Guerreiro Fragmentado (Guarda de Ferro) — requer "Resgatando Kilin" e "Boas-vindas à Guarda de Ferro"
+- Guerreiro Fragmentado (Guarda de Ferro) — requer "Resgatando Killin" e "Boas-vindas à Guarda de Ferro"
 
 **Pontos ganhos:** 70 pontos
 
@@ -306,7 +306,7 @@ Dano = 1667 × (1 + v_influencia_corvos/100) × (1 + (v_reforco_sigmetal/100) * 
 
 - **v_pontos_armadilhas (Armadilhas):** Reforça o arco de Balastrus como inventor estratégico e a relação de confiança entre Thorin e Balastrus.
 - **v_forca_civil (Exército Civil):** Reforça o arco de Filena e Borin, mostrando rebeldes, civis e time rúnico se organizando em exército.
-- **v_forca_guarda (Guarda de Ferro):** Reforça o arco de Kilin e Mhordred, trabalhando culpa, liderança e sucessão na Guarda de Ferro.
+- **v_forca_guarda (Guarda de Ferro):** Reforça o arco de Killin e Mhordred, trabalhando culpa, liderança e sucessão na Guarda de Ferro.
 - **v_influencia_corvos (Corvos):** Reforça o arco de Corvinus/Corvos como facção independente, negociando confiança com Gildrat.
 - **v_reforco_sigmetal (Sigmetal):** Reforça novamente o arco de Balastrus e a descoberta do Sigmetal como arma central contra os Ignotos.
 
@@ -388,7 +388,7 @@ function calcularDano(id_var_forca) {
 
 ## 📖 Referências
 
-- [Sistema Simplificado v2.0](../sistema-simplificado-narrativa-sistemica.md)
-- [NPCs Mapa Teste](../npcs-mapa-teste.md)
-- [Timeline História v5](../../../docs/GDD/05_History/timeline-historia-jogo-v5.md)
-- [Última Missão do Jogo](../../../docs/GDD/05_History/ultima-missao-do-jogo.md)
+- [Sistema Simplificado v2.0]( W0 )
+- [NPCs Mapa Teste]( W0 )
+- [Timeline História v5]( W0 )
+- [Última Missão do Jogo]( W0 )

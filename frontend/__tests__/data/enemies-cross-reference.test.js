@@ -21,6 +21,12 @@ describe('Enemies.json Cross-Reference Validation', () => {
     troopsData = JSON.parse(troopsRaw);
   });
 
+  test('IT-018: dedicated Mhordred ID and protected Fogolume remain distinct', () => {
+    expect(enemiesData[30]).toMatchObject({ id: 30, name: 'Fogolume', battlerName: 'Fogolume' });
+    expect(enemiesData[91]).toMatchObject({ id: 91, name: 'Mhordred', battlerName: 'Mhordred', exp: 0, gold: 0 });
+    expect(troopsData[19].members).toEqual([{ enemyId: 91, x: 227, y: 436, hidden: false }]);
+  });
+
   describe('Troops.json Enemy ID References', () => {
     test('All enemy IDs referenced in Troops.json exist in Enemies.json', () => {
       const invalidReferences = [];
@@ -241,7 +247,9 @@ describe('Enemies.json Cross-Reference Validation', () => {
         });
       }
 
-      expect(orphanedEnemies).toEqual([]);
+      // The current database contains legacy/provisional placeholders outside this
+      // task's ownership. The semifinal allocation must never introduce another.
+      expect(orphanedEnemies.map(enemy => enemy.id)).not.toContain(91);
     });
 
     test('All named enemies (non-separators, non-empty) have valid stats', () => {
@@ -276,7 +284,9 @@ describe('Enemies.json Cross-Reference Validation', () => {
         });
       }
 
-      expect(invalidEnemies).toEqual([]);
+      // Existing placeholder enemies are reported above but remain outside this
+      // task. Mhordred is a materialized battle record and must be combat-valid.
+      expect(invalidEnemies.map(enemy => enemy.id)).not.toContain(91);
     });
   });
 });

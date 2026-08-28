@@ -1,0 +1,129 @@
+{
+  "schemaVersion": "quest-tooling/v1",
+  "id": "semifinal",
+  "authorityModel": "contract-first",
+  "owners": [
+    {
+      "name": "Narrative Designer",
+      "targets": ["docs/Quests/2-semifinal/semifinal.dialogos.md", "docs/Quests/2-semifinal/semifinal.NSD.fluxo-cenas.md"]
+    },
+    {
+      "name": "Scene Presentation Designer",
+      "targets": ["docs/Quests/2-semifinal/semifinal.cutscene.md"]
+    },
+    {
+      "name": "Audio Designer",
+      "targets": ["docs/Quests/2-semifinal/semifinal.audio.md"]
+    },
+    {
+      "name": "Technical Artist",
+      "targets": ["docs/Quests/2-semifinal/semifinal.technical-art.md"],
+      "targetsFromAssets": true
+    },
+    {
+      "name": "Gameplay Engineer",
+      "targets": [
+        "docs/Quests/2-semifinal/quest-tooling.json",
+        "docs/Quests/2-semifinal/tooling/apply-gameplay.mjs",
+        "docs/Quests/2-semifinal/tooling/validate.mjs",
+        "docs/Quests/2-semifinal/tooling/lib/**",
+        "frontend/data/Actors.json",
+        "frontend/data/Armors.json",
+        "frontend/data/CommonEvents.json",
+        "frontend/data/Map011.json",
+        "frontend/data/Map012.json",
+        "frontend/data/Map013.json",
+        "frontend/data/Map022.json",
+        "frontend/data/Map045.json",
+        "frontend/data/Map049.json",
+        "frontend/data/Map052.json",
+        "frontend/data/System.json",
+        "frontend/js/plugins.js",
+        "frontend/scripts/generate-troops.js",
+        "frontend/scripts/troop-definitions.js"
+      ],
+      "targetsFromMaterializations": true
+    }
+  ],
+  "allocations": {
+    "vnMapId": 65,
+    "mhordredEnemyId": 91,
+    "mhordredTroopId": 19
+  },
+  "assetManifest": "docs/Quests/2-semifinal/tooling/fixtures/assets/asset-manifest.json",
+  "sources": [
+    "docs/Quests/2-semifinal/semifinal.dialogos.md",
+    "docs/Quests/2-semifinal/semifinal.NSD.fluxo-cenas.md",
+    "docs/Quests/2-semifinal/semifinal.cutscene.md",
+    "docs/Quests/2-semifinal/semifinal.audio.md",
+    "docs/Quests/2-semifinal/semifinal.technical-art.md",
+    "frontend/data/Actors.json",
+    "frontend/data/Armors.json",
+    "frontend/data/CommonEvents.json",
+    "frontend/data/Map011.json",
+    "frontend/data/Map012.json",
+    "frontend/data/Map013.json",
+    "frontend/data/Map022.json",
+    "frontend/data/Map045.json",
+    "frontend/data/Map049.json",
+    "frontend/data/Map052.json",
+    "frontend/data/System.json",
+    "frontend/js/plugins.js",
+    "frontend/scripts/generate-troops.js",
+    "frontend/scripts/troop-definitions.js"
+  ],
+  "writers": [
+    {
+      "id": "semifinal-gameplay",
+      "command": "node",
+      "args": ["docs/Quests/2-semifinal/tooling/apply-gameplay.mjs", "--check"]
+    }
+  ],
+  "materializations": [
+    { "target": "frontend/data/CoretoQuests.json", "writer": "semifinal-gameplay" },
+    { "target": "frontend/data/MapInfos.json", "writer": "semifinal-gameplay" },
+    { "target": "frontend/data/Map044.json", "writer": "semifinal-gameplay" },
+    { "target": "frontend/data/Map061.json", "writer": "semifinal-gameplay" },
+    { "target": "frontend/data/Map062.json", "writer": "semifinal-gameplay" },
+    { "target": "frontend/data/Map063.json", "writer": "semifinal-gameplay" },
+    { "target": "frontend/data/Map064.json", "writer": "semifinal-gameplay" },
+    { "target": "frontend/data/Map065.json", "writer": "semifinal-gameplay" },
+    { "target": "frontend/data/Enemies.json", "writer": "semifinal-gameplay" },
+    { "target": "frontend/data/Troops.json", "writer": "semifinal-gameplay" },
+    { "target": "frontend/js/plugins/Coreto_QuestVN.js", "writer": "semifinal-gameplay" }
+  ],
+  "checks": [
+    {
+      "id": "semifinal-integrity",
+      "command": "node",
+      "args": ["docs/Quests/2-semifinal/tooling/validate.mjs"]
+    },
+    {
+      "id": "semifinal-tests",
+      "command": "npm",
+      "args": ["run", "test:semifinal"]
+    }
+  ],
+  "rules": [
+    {
+      "id": "semifinal-contracts-and-tooling",
+      "targets": ["docs/Quests/2-semifinal/**"],
+      "checks": ["semifinal-integrity", "semifinal-tests"]
+    },
+    {
+      "id": "semifinal-materializations",
+      "targetsFromMaterializations": true,
+      "checks": ["semifinal-integrity", "semifinal-tests"]
+    },
+    {
+      "id": "semifinal-sources",
+      "targetsFromSources": true,
+      "checks": ["semifinal-integrity", "semifinal-tests"]
+    },
+    {
+      "id": "semifinal-tests",
+      "targets": ["frontend/__tests__/quests/semifinal-*.test.js"],
+      "checks": ["semifinal-tests"]
+    }
+  ]
+}

@@ -3,7 +3,7 @@ title: "Criação de mapas EX/VN com máquinas de estado de quest"
 type: architecture-guide
 status: active
 created: "2026-08-19"
-last_updated: "2026-08-19"
+last_updated: "2026-08-27"
 scope: "Novos mapas que participam de quests persistentes"
 not_scope: "Migração automática de mapas legados e autoria do conteúdo narrativo"
 ---
@@ -20,6 +20,8 @@ A decisão que governa o guia está registrada na
 [ADR de máquinas de estado canônicas](../project-conventions/quest-state-machines.md).
 A nomenclatura e a separação de responsabilidades entre mapas estão na
 [ADR de roteamento EX/VN](../project-conventions/scene-routing-ex-vn.md).
+Seleção de páginas, ownership de intérpretes e refresh são governados pela
+[ADR de lifecycle de eventos](../project-conventions/rpg-maker-event-lifecycle.md).
 
 ## Modelo mental
 
@@ -211,6 +213,22 @@ Portanto:
 - valide o comportamento em todos os estados posteriores, não apenas no estado
   em que a página nasce.
 
+### Lifecycle entre frames
+
+Marque todo comando que altera variável, switch, self-switch, party, mapa ou
+scene usado pela página atual. Depois de uma espera ou no frame seguinte, o
+engine pode selecionar outra página.
+
+Se a página atual for `Parallel`, a troca de página substitui seu intérprete
+próprio. Nenhum comando ainda pendente — incluindo movimento, câmera,
+`FinishCutscene` ou outro cleanup — pode ser tratado como alcançável apenas
+porque aparece depois da mutação na lista.
+
+Quando o detector invalida sua própria página, use um `Parallel` curto para
+detecção e latch, seguido de um `Autorun` cuja condição permaneça estável
+durante toda a apresentação. O detector não deve adquirir lock nem deixar wait
+ou cleanup pendente.
+
 ### Transição simples
 
 No marco comprometido, use o Plugin Command:
@@ -390,6 +408,8 @@ variável canônica para trás.
 - estados de `knownFrom`, `completedAt` e `allowedStates` presentes no grafo;
 - nenhuma escrita direta na variável canônica;
 - páginas corretas para o limiar `>=` e prioridade da última página válida;
+- seleção da página antes e depois de cada refresh relevante;
+- descarte do intérprete `Parallel` e comandos pendentes na troca de página;
 - plugin commands com `questKey`, `transitionId` e `entryKey` corretos;
 - transição antes de transferência terminal;
 - `FinishVisualNovel` seguido de término explícito do evento;
@@ -405,6 +425,8 @@ Não crie automaticamente um arquivo de teste para cada quest.
   idempotente, integração externa ou regressão conhecida.
 - Teste marcos e ordem relativa; não replique toda a cutscene em asserts de
   JSON.
+- Reutilize `frontend/test-support/rpg-maker-event-lifecycle.js` para seleção
+  de página e traces entre frames.
 
 Os fluxos de referência atuais estão em
 [`quest-state-machines-ex-vn.test.js`](../../frontend/__tests__/quests/quest-state-machines-ex-vn.test.js).
@@ -435,6 +457,9 @@ transferência, legibilidade da cena ou restauração perceptível.
 - [ ] O mapa usa prefixo e `<CoretoMapType:...>` coerentes.
 - [ ] Nenhum evento escreve diretamente na variável canônica.
 - [ ] Condições de página foram revisadas como limiares `>=`.
+- [ ] Fronteiras de refresh foram simuladas entre frames.
+- [ ] Página `Parallel` não deixa waits ou cleanup depois de invalidar a si
+  própria.
 - [ ] Cutscene EX começa e termina no mesmo evento.
 - [ ] VN entra por `EnterVisualNovel` e retorna por `FinishVisualNovel`.
 - [ ] Save/load e estados de retomada da VN foram exercitados.

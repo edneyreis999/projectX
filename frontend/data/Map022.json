@@ -6805,14 +6805,16 @@
                             ]
                         },
                         {
-                            "code": 122,
+                            "code": 357,
                             "indent": 0,
                             "parameters": [
-                                29,
-                                29,
-                                0,
-                                0,
-                                1
+                                "Coreto_QuestCore",
+                                "QuestTransition",
+                                "QuestTransition",
+                                {
+                                    "questKey": "a-semifinal",
+                                    "transitionId": "START_STORY"
+                                }
                             ]
                         },
                         {

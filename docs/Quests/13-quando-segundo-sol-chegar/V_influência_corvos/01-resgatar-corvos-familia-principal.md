@@ -16,7 +16,7 @@
   - Mina de Mélios Oeste (sugerido pelas tarefas de `resgatarCorvos`) – onde a família está dispersa.
 - NPCs principais
   - Corvinus (quest giver e porta-voz da facção)
-  - Família Corvos (inclusive Kilin, Borin e vozes coletivas como “Corvo”)
+  - Família Corvos (inclusive Killin, Borin e vozes coletivas como “Corvo”)
   - Thorin (protagonista que escolhe agir)
 
 ### 2 Gatilhos Narrativos

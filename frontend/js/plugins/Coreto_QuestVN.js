@@ -1,8 +1,8 @@
 /*:
  * @target MZ
- * @plugindesc [v1.0.0] Roteador Exploration/Visual Novel por quest e entryKey.
+ * @plugindesc [v1.1.0] Roteador Exploration/Visual Novel por quest e entryKey.
  * @author Coreto
- * @version 1.0.0
+ * @version 1.1.0
  * @base Coreto_QuestCore
  * @orderAfter Coreto_QuestCore
  *
@@ -131,11 +131,17 @@
             const entryContext = { questKey, entryKey };
             if (!IDENTIFIER_PATTERN.test(entryKey)) fail("SCHEMA_ENTRY_KEY_INVALID", entryContext);
             if (!isObject(entry)) fail("SCHEMA_ENTRY_INVALID", entryContext);
-            const entryUnknown = Object.keys(entry).filter(key => !["eventId", "allowedStates"].includes(key));
+            const entryUnknown = Object.keys(entry).filter(key => !["mapId", "eventId", "allowedStates", "resumeLabel"].includes(key));
             if (entryUnknown.length > 0) fail("SCHEMA_ENTRY_UNKNOWN_FIELD", Object.assign({ unknown: entryUnknown }, entryContext));
+            const entryMapId = entry.mapId === undefined ? extension.mapId : positiveInteger(entry.mapId, "mapId", entryContext);
+            if (!$dataMapInfos || !$dataMapInfos[entryMapId]) fail("SCHEMA_MAP_UNKNOWN", Object.assign({ mapId: entryMapId }, entryContext));
             positiveInteger(entry.eventId, "eventId", entryContext);
-            if (eventIds.has(entry.eventId)) fail("SCHEMA_EVENT_ID_DUPLICATE", entryContext);
-            eventIds.add(entry.eventId);
+            const eventIdentity = `${entryMapId}:${entry.eventId}`;
+            if (eventIds.has(eventIdentity)) fail("SCHEMA_EVENT_ID_DUPLICATE", entryContext);
+            eventIds.add(eventIdentity);
+            if (entry.resumeLabel !== undefined && (typeof entry.resumeLabel !== "string" || !IDENTIFIER_PATTERN.test(entry.resumeLabel))) {
+                fail("SCHEMA_RESUME_LABEL_INVALID", Object.assign({ resumeLabel: entry.resumeLabel }, entryContext));
+            }
             if (!Array.isArray(entry.allowedStates) || entry.allowedStates.length === 0 ||
                     entry.allowedStates.some(state => !Number.isInteger(state) || !states.has(state)) ||
                     new Set(entry.allowedStates).size !== entry.allowedStates.length) {
@@ -255,7 +261,7 @@
         }
         const spawn = extension.spawn;
         const destination = {
-            mapId: extension.mapId,
+            mapId: entry.mapId === undefined ? extension.mapId : entry.mapId,
             eventId: entry.eventId,
             x: spawn.x,
             y: spawn.y,
@@ -284,6 +290,7 @@
             destination,
             returnDestination: null,
             audioPolicy: spawn.audioPolicy,
+            resumeLabel: entry.resumeLabel || null,
             eventStarted: false,
             lastError: null
         };
@@ -391,9 +398,28 @@
                 fail("VN_RETURN_DESTINATION_MISMATCH", { session: currentSession, mapId: $gameMap.mapId(), mapType: loadedType });
             }
             validateCoordinates($dataMap, destination);
+            let resume = null;
+            if (currentSession.resumeLabel) {
+                const originEvent = $gameMap.event(currentSession.origin.eventId);
+                if (!originEvent || !originEvent.page() || !originEvent.list()) {
+                    fail("VN_RESUME_EVENT_MISSING", { eventId: currentSession.origin.eventId, resumeLabel: currentSession.resumeLabel });
+                }
+                const labels = [];
+                originEvent.list().forEach((command, index) => {
+                    if (command.code === 118 && command.parameters && command.parameters[0] === currentSession.resumeLabel) labels.push(index);
+                });
+                if (labels.length !== 1) {
+                    fail("VN_RESUME_LABEL_MISSING", { eventId: currentSession.origin.eventId, resumeLabel: currentSession.resumeLabel, matches: labels.length });
+                }
+                resume = { eventId: currentSession.origin.eventId, list: originEvent.list(), index: labels[0] + 1 };
+            }
             restoreOrigin(currentSession.origin, currentSession.audioPolicy);
             FlowCoordinator.release(currentSession.token);
             ensureStore().session = null;
+            if (resume) {
+                $gameMap._interpreter.setup(resume.list, resume.eventId);
+                $gameMap._interpreter._index = resume.index;
+            }
             return;
         }
         fail("VN_SESSION_PHASE_INVALID", { session: currentSession });
@@ -404,7 +430,7 @@
     }
 
     Coreto.QuestVN = {
-        version: "1.0.0",
+        version: "1.1.0",
         CoretoQuestVNError,
         enter,
         finish,

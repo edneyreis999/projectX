@@ -4,7 +4,11 @@
   "description": "My first project with RPG Maker MZ",
   "scripts": {
     "test": "jest",
-    "test:quest-state-machines": "jest frontend/__tests__/quests/quest-state-machines-ex-vn.test.js frontend/__tests__/plugins/Coreto_QuestCore.test.js --runInBand",
+    "test:harness": "jest frontend/__tests__/harness/validation-impact.test.js frontend/__tests__/harness/rpg-maker-event-lifecycle.test.js --runInBand",
+    "test:rpg-maker-data": "jest frontend/__tests__/data/rpg-maker-data-integrity.test.js --runInBand",
+    "test:noite-da-historia": "jest frontend/__tests__/quests/quest-state-machines-ex-vn.test.js frontend/__tests__/plugins/Coreto_QuestCore.test.js --runInBand",
+    "test:semifinal": "jest frontend/__tests__/quests/semifinal-remediation-assets.test.js frontend/__tests__/quests/semifinal-remediation-authoring.test.js frontend/__tests__/quests/semifinal-remediation-battle.test.js frontend/__tests__/quests/semifinal-remediation-narrative-contracts.test.js frontend/__tests__/quests/semifinal-remediation-questvn-runtime.test.js frontend/__tests__/quests/semifinal-remediation-routes.test.js frontend/__tests__/quests/semifinal-remediation-verification.test.js frontend/__tests__/quests/semifinal-remediation-vn.test.js frontend/__tests__/quests/quest-state-machines-ex-vn.test.js frontend/__tests__/plugins/Coreto_QuestCore.test.js frontend/__tests__/plugins/Coreto_Cutscene.test.js frontend/__tests__/scripts/generate-troops.test.js frontend/__tests__/scripts/troop-definitions.test.js frontend/__tests__/data/enemies-cross-reference.test.js --runInBand",
+    "test:quests": "npm run test:noite-da-historia && npm run test:semifinal",
     "lint": "eslint \"frontend/js/plugins/**/*.{ts,js}\" \"frontend/typescript/**/*.{ts,js}\" --fix",
     "lint:check": "eslint \"frontend/js/plugins/**/*.{ts,js}\" \"frontend/typescript/**/*.{ts,js}\" --max-warnings=0",
     "format": "prettier --write \"frontend/js/plugins/**/*.{ts,js}\" \"frontend/typescript/**/*.{ts,js}\"",
@@ -12,7 +16,15 @@
     "format:json": "prettier --write \"frontend/**/*.json\" \"System.json\"",
     "build:types": "rm -f .tsbuildinfo && tsc -p tsconfig.build.json",
     "watch:types": "rm -f .tsbuildinfo && tsc -p tsconfig.json -w",
+    "validation:impact": "node scripts/validation-impact.js",
+    "validate:staged": "node scripts/validate-staged.js",
+    "validate:branch": "node scripts/validation-impact.js --run",
+    "quest:semifinal:check": "node docs/Quests/2-semifinal/tooling/validate.mjs",
+    "quest:semifinal:apply:gameplay": "node docs/Quests/2-semifinal/tooling/apply-gameplay.mjs",
     "start:dev": "npm run build:types && npm run debug"
+  },
+  "engines": {
+    "node": ">=24.20.0 <25"
   },
   "keywords": [],
   "author": "Edney Antonio Reis Filho",
@@ -42,6 +54,7 @@
     "chance": "^1.1.12",
     "class-validator": "^0.14.1",
     "dotenv": "^16.4.5",
+    "jsonc-parser": "^3.3.1",
     "lodash": "^4.17.21",
     "sequelize": "^6.37.3",
     "sequelize-typescript": "^2.1.6",
