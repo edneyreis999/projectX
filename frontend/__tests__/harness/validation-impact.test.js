@@ -109,6 +109,15 @@ describe('validation impact map', () => {
     expect(spawn).toHaveBeenCalledTimes(1);
   });
 
+  test('preserves the beginning and end of noisy failed check output', () => {
+    const subject = manifest();
+    const plan = resolveImpactPlan(subject, ['docs/Quests/example/contract.md']);
+    const spawn = jest.fn(() => ({ status: 1, stdout: '', stderr: `FAIL first assertion\n${'x'.repeat(12000)}\nTest Suites: 1 failed` }));
+    const result = runImpactPlan(plan, ROOT, spawn);
+    expect(result.executions[0].stderr).toContain('FAIL first assertion');
+    expect(result.executions[0].stderr).toContain('Test Suites: 1 failed');
+  });
+
   test('discovers quest owners, writers, materializations and asset checks', () => {
     const repositoryManifest = loadManifest(ROOT);
     const contractPlan = resolveImpactPlan(repositoryManifest, ['docs/Quests/2-semifinal/semifinal.dialogos.md']);

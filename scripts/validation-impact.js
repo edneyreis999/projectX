@@ -209,9 +209,12 @@ function worktreeStatus(rootDir) {
   return execFileSync('git', ['status', '--porcelain'], { cwd: rootDir, encoding: 'utf8' });
 }
 
-function tail(value, limit = 4000) {
+function excerpt(value, limit = 12000) {
   const text = String(value ?? '');
-  return text.length > limit ? text.slice(-limit) : text;
+  if (text.length <= limit) return text;
+  const marker = '\n... output truncated ...\n';
+  const sideLength = Math.floor((limit - marker.length) / 2);
+  return `${text.slice(0, sideLength)}${marker}${text.slice(-sideLength)}`;
 }
 
 function runImpactPlan(plan, rootDir, spawn = spawnSync) {
@@ -220,7 +223,7 @@ function runImpactPlan(plan, rootDir, spawn = spawnSync) {
   const executions = [];
   for (const check of plan.checks) {
     const result = spawn(check.command, check.args, { cwd: rootDir, encoding: 'utf8', maxBuffer: 8 * 1024 * 1024 });
-    executions.push({ id: check.id, exitCode: result.status, stdout: tail(result.stdout), stderr: tail(result.stderr) });
+    executions.push({ id: check.id, exitCode: result.status, stdout: excerpt(result.stdout), stderr: excerpt(result.stderr) });
     if (result.status !== 0) return { ...plan, status: 'fail', code: 'check_failed', executions };
   }
   const after = worktreeStatus(rootDir);
