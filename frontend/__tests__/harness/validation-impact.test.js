@@ -126,13 +126,63 @@ describe('validation impact map', () => {
     expect(assetPlan.ownership).toEqual([expect.objectContaining({ quest: 'semifinal', owner: 'Technical Artist' })]);
   });
 
-  test('blocks a new RPG Maker target without ownership', () => {
+  test('routes any RPG Maker data target through the structural data check', () => {
     const repositoryManifest = loadManifest(ROOT);
-    expect(resolveImpactPlan(repositoryManifest, ['frontend/data/Map999.json'])).toMatchObject({
-      status: 'blocked',
-      code: 'unmapped_target',
-      unmappedTargets: ['frontend/data/Map999.json'],
+    const plan = resolveImpactPlan(repositoryManifest, ['frontend/data/Map999.json']);
+    expect(plan.status).toBe('ready');
+    expect(plan.checks.map(check => check.id)).toContain('rpg-maker-data');
+    expect(plan.unmappedTargets).toEqual([]);
+  });
+
+  test('rejects declared quest sources without a quest-local rule', () => {
+    const root = fs.mkdtempSync(path.join(os.tmpdir(), 'quest-source-'));
+    try {
+      fs.mkdirSync(path.join(root, 'config'), { recursive: true });
+      fs.mkdirSync(path.join(root, 'docs', 'Quests', '1-example'), { recursive: true });
+      fs.writeFileSync(
+        path.join(root, 'config', 'validation-impact-map.json'),
+        JSON.stringify({
+          schemaVersion: 'validation-impact-map/v2',
+          questManifestsRoot: 'docs/Quests',
+          checks: [{ id: 'data', command: 'npm', args: ['run', 'test:data'] }],
+          rules: [{ id: 'data', targets: ['frontend/data/*.json'], checks: ['data'] }],
+          protectedTargets: ['frontend/data/*.json'],
+        }),
+      );
+      fs.writeFileSync(
+        path.join(root, 'docs', 'Quests', '1-example', 'quest-tooling.json'),
+        JSON.stringify({
+          schemaVersion: 'quest-tooling/v1',
+          id: 'example',
+          authorityModel: 'contract-first',
+          owners: [{ name: 'Gameplay Engineer', targets: ['frontend/data/Map001.json'] }],
+          sources: ['frontend/data/Map001.json'],
+          checks: [{ id: 'quest', command: 'npm', args: ['run', 'test:quest'] }],
+          writers: [],
+          materializations: [],
+          rules: [{ id: 'contracts', targets: ['docs/Quests/1-example/**'], checks: ['quest'] }],
+        }),
+      );
+      expect(() => loadManifest(root)).toThrow('unmapped_quest_target:frontend/data/Map001.json');
+    } finally {
+      fs.rmSync(root, { recursive: true, force: true });
+    }
+  });
+
+  test('does not claim checks for undeclared quest documentation', () => {
+    const repositoryManifest = loadManifest(ROOT);
+    expect(resolveImpactPlan(repositoryManifest, ['docs/Quests/3-passeio-guilda/AGENTS.md'])).toMatchObject({
+      status: 'no_checks',
+      checks: [],
+      unmappedTargets: [],
     });
+  });
+
+  test('routes the shared quest state-machine suite through both quest checks', () => {
+    const repositoryManifest = loadManifest(ROOT);
+    const plan = resolveImpactPlan(repositoryManifest, ['frontend/__tests__/quests/quest-state-machines-ex-vn.test.js']);
+    expect(plan.status).toBe('ready');
+    expect(plan.checks.map(check => check.id)).toEqual(expect.arrayContaining(['noite-da-historia', 'semifinal-tests']));
   });
 
   test('rejects materializations that do not identify a deterministic writer', () => {

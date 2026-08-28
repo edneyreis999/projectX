@@ -20,7 +20,13 @@ espacial, comportamento no runtime, aceite humano ou prontidão de release.
 
 ## Fontes declarativas
 
-`config/validation-impact-map.json` contém checks e regras compartilhados, superfícies protegidas e a raiz de descoberta dos manifestos de quest.
+`config/validation-impact-map.json` contém checks e regras compartilhados, superfícies protegidas e a raiz de descoberta dos manifestos de quest. A cobertura possui duas camadas:
+
+- superfícies amplas só são protegidas quando existe um check geral e determinístico, como parse e estrutura mínima de `frontend/data/*.json`;
+- fontes, materializações e assets de uma quest são protegidos pelos caminhos exatos declarados no respectivo manifesto.
+
+Um diretório não se torna protegido apenas por ser importante. Sem um oráculo determinístico, o gate não deve inventar uma aprovação nem bloquear trabalho válido; a cobertura deve ser adicionada junto
+com o sensor que a sustenta.
 
 Cada `docs/Quests/<ordem>-<slug>/quest-tooling.json` declara, para sua quest:
 
@@ -70,6 +76,15 @@ npm run test:semifinal
 npm run test:quests
 ```
 
+Dados autorais do RPG Maker possuem um check estrutural independente:
+
+```sh
+npm run test:rpg-maker-data
+```
+
+Ele prova parseabilidade, IDs indexados e a forma mínima dos mapas. Contratos semânticos permanecem nas suítes donas do domínio; por exemplo, os níveis iniciais dos protagonistas e as entradas da
+Semifinal são regressões explícitas, não inferências do validador estrutural.
+
 ## Execução read-only
 
 O executor chama cada comando sem shell implícito e interrompe no primeiro check vermelho. Se um check alterar o checkout, o resultado é `gate_mutated_worktree`. O gate aponta a divergência; ele não
@@ -102,10 +117,16 @@ merge.
 5. Execute o gate no snapshot que será entregue.
 6. Mantenha sensores de runtime e julgamento humano separados quando o critério não for determinístico.
 
+Não adicione um glob amplo a `protectedTargets` sem uma regra geral que consiga verificar todos os arquivos alcançados. Dívida histórica descoberta por um novo sensor deve ser tratada por baseline ou
+por uma tarefa própria, não convertida incidentalmente em bloqueio da branch atual.
+
 ## Fontes consultadas e conflitos
 
 - [Autoridade de autoria e materialização](../project-conventions/authoring-materialization-authority.md): contratos aprovados e writers autorizados governam o runtime materializado.
 - [Lifecycle de evidência](../project-conventions/validation-evidence-lifecycle.md): resultados persistidos não podem representar outro checkout; o gate recalcula em vez de versionar prova.
 - [Lifecycle de eventos RPG Maker](../project-conventions/rpg-maker-event-lifecycle.md): verificação estática não substitui runtime ou julgamento humano.
+- [Demanda do gate](../../planos/013-github-actions-authoring-integrity/demanda.md): dívida histórica fora do escopo não deve virar bloqueio incidental.
 
-Não há conflito entre essas fontes. O limite `authoring_integrity` preserva a separação entre automação mecânica e critérios que exigem outro sensor.
+Não há conflito entre as fontes consultadas. Havia conflito entre essa orientação e a configuração anterior: globs amplos protegiam quests, plugins, scripts e assets sem uma regra capaz de verificá-los.
+A configuração foi estreitada para que `unmapped_target` continue fail-closed apenas nas superfícies declaradas, enquanto dados gerais passam por um check estrutural real. O limite
+`authoring_integrity` preserva a separação entre automação mecânica e critérios que exigem outro sensor.

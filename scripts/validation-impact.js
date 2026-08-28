@@ -126,6 +126,11 @@ function expandQuestManifest(rootDir, manifestPath) {
     rules.push({ id: `${quest.id}:assets`, targets: [...new Set(assetTargets)], checks });
   }
 
+  for (const target of [...sourceTargets, ...materializedTargets]) {
+    const coveredByQuestRule = rules.some(rule => rule.targets.some(pattern => matches(target, pattern)));
+    if (!coveredByQuestRule) throw new Error(`unmapped_quest_target:${target}`);
+  }
+
   const writerById = new Map(quest.writers.map(writer => [writer.id, writer]));
   const writerByTarget = new Map(quest.materializations.map(item => [normalizeTarget(item.target), writerById.get(item.writer)]));
   const ownership = quest.owners.flatMap(owner => {

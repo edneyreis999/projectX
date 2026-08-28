@@ -40,6 +40,13 @@ function selectedPage(eventData, variables = {}) {
   return selectEligiblePage(eventData, conditionState({ variables }));
 }
 
+function validateEntryTransfer(mapData, { eventId, pageIndex, transfer }) {
+  const transfers = mapData.events[eventId].pages[pageIndex].list.filter(command => command.code === 201);
+  if (transfers.length !== 1 || JSON.stringify(transfers[0].parameters) !== JSON.stringify(transfer)) {
+    throw new Error(`invalid_semifinal_entry_transfer:${eventId}:${pageIndex}`);
+  }
+}
+
 function validateGraph(quest) {
   const reachable = new Set([quest.initialState]);
   let changed = true;
@@ -92,7 +99,22 @@ describe('Reference quest state machines — Exploration and Visual Novel', () =
   const registry = readJson('data/CoretoQuests.json');
   const system = readJson('data/System.json');
   const mapInfos = readJson('data/MapInfos.json');
-  const maps = Object.fromEntries([22, 32, 39, 44, 45, 46, 49, 61, 62, 63, 64, 65].map(id => [id, map(id)]));
+  const maps = Object.fromEntries([12, 13, 22, 32, 39, 44, 45, 46, 49, 52, 61, 62, 63, 64, 65].map(id => [id, map(id)]));
+
+  test.each([
+    { mapId: 12, eventId: 1, pageIndex: 0, transfer: [0, 61, 30, 17, 0, 0] },
+    { mapId: 13, eventId: 6, pageIndex: 3, transfer: [0, 61, 8, 28, 0, 0] },
+    { mapId: 52, eventId: 1, pageIndex: 0, transfer: [0, 61, 29, 28, 0, 0] },
+  ])('Map$mapId keeps its Semifinal entrance connected to Map061', ({ mapId, eventId, pageIndex, transfer }) => {
+    expect(() => validateEntryTransfer(maps[mapId], { eventId, pageIndex, transfer })).not.toThrow();
+  });
+
+  test('the entrance sensor rejects the former Map008 destination', () => {
+    const changed = structuredClone(maps[12]);
+    const transfer = changed.events[1].pages[0].list.find(command => command.code === 201);
+    transfer.parameters[1] = 8;
+    expect(() => validateEntryTransfer(changed, { eventId: 1, pageIndex: 0, transfer: [0, 61, 30, 17, 0, 0] })).toThrow('invalid_semifinal_entry_transfer:1:0');
+  });
 
   test('keeps the authorized map boundary explicit and complete', () => {
     const descendantsOf = rootId => {

@@ -13,6 +13,11 @@
       "args": ["run", "test:noite-da-historia"]
     },
     {
+      "id": "rpg-maker-data",
+      "command": "npm",
+      "args": ["run", "test:rpg-maker-data"]
+    },
+    {
       "id": "build-types",
       "command": "npm",
       "args": ["run", "build:types"]
@@ -45,6 +50,16 @@
       "checks": ["harness", "noite-da-historia", "semifinal-tests"]
     },
     {
+      "id": "rpg-maker-data-structure",
+      "targets": ["frontend/data/*.json", "frontend/__tests__/data/rpg-maker-data-integrity.test.js"],
+      "checks": ["rpg-maker-data"]
+    },
+    {
+      "id": "shared-quest-test-surface",
+      "targets": ["frontend/__tests__/quests/**"],
+      "checks": ["noite-da-historia", "semifinal-tests"]
+    },
+    {
       "id": "noite-da-historia-contracts",
       "targets": ["docs/Quests/1-noite-da-historia/**"],
       "checks": ["noite-da-historia"]
@@ -62,7 +77,7 @@
     {
       "id": "package-validation-surface",
       "targets": ["package.json", "package-lock.json", "jest.config.ts", ".nvmrc"],
-      "checks": ["harness", "noite-da-historia", "semifinal-integrity", "semifinal-tests", "build-types"]
+      "checks": ["harness", "rpg-maker-data", "noite-da-historia", "semifinal-integrity", "semifinal-tests", "build-types"]
     }
   ],
   "protectedTargets": [
@@ -72,16 +87,11 @@
     ".github/workflows/authoring-integrity.yml",
     ".gitignore",
     "AGENTS.md",
-    "frontend/test-support/**",
+    "frontend/test-support/rpg-maker-event-lifecycle.js",
     "frontend/__tests__/harness/**",
     "frontend/__tests__/quests/**",
-    "frontend/data/**",
-    "frontend/js/plugins.js",
-    "frontend/js/plugins/**",
-    "frontend/scripts/**",
-    "frontend/img/**",
-    "frontend/audio/**",
-    "docs/Quests/**",
+    "frontend/__tests__/data/rpg-maker-data-integrity.test.js",
+    "frontend/data/*.json",
     "docs/architecture/validation-impact-map.md",
     "docs/project-conventions/authoring-materialization-authority.md",
     "docs/project-conventions/validation-evidence-lifecycle.md",
