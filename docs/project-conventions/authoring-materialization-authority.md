@@ -203,19 +203,21 @@ disciplinares no fluxo contract-first:
 - `semifinal.technical-art.md`.
 
 A adequação do frontmatter e das seções de autoridade desses documentos, a
-inversão do Narrative writer, a reconciliação do Gameplay writer e a
-regeneração de fixtures, hashes e evidências pertencem ao bloqueio A-02 e aos
-gates posteriores. Esta ADR não declara essas etapas concluídas.
+validação narrativa read-only e a reconciliação do Gameplay writer pertencem
+ao bloqueio A-02 e aos gates posteriores. Esta ADR não declara essas etapas
+concluídas.
 
-A task 010 permanece baseline histórico imutável. A task 011 continua
-responsável pela remediação e pela validação derivada do runtime atual.
+As tasks 010/011 permanecem baselines históricos imutáveis. Writer, manifesto
+de assets e validação ativos vivem em `docs/Quests/2-semifinal/tooling`; o
+manifesto do plano 012 preserva os hashes dos pacotes históricos sem criar uma
+dependência de execução.
 
 ## Fora de escopo
 
 Esta ADR não:
 
 - altera os cinco contratos da semifinal;
-- modifica writers, fixtures, hashes, runtime ou dados do RPG Maker;
+- modifica writers, manifestos, runtime ou dados do RPG Maker;
 - define o schema final de aprovação dos contratos;
 - define um caminho definitivo para documentação as-built gerada;
 - regenera evidência estática;
@@ -237,10 +239,10 @@ Esta ADR não:
   identifica a ambiguidade entre contract-first e runtime-first. Esta ADR
   resolve a ambiguidade em favor de contract-first para contratos
   disciplinares.
-- [Contrato de execução da task 011](../../.compozy/tasks/011-semifinal-playtest-remediation/_dx.md):
-  define writers, validação estática e gates humanos. A versão que motivou
-  esta decisão ainda permitia ao Narrative writer escrever contratos a partir
-  de canonical fixtures; o A-02 removeu essa inversão.
-- [Spec da task 011](../../.compozy/tasks/011-semifinal-playtest-remediation/_spec.md):
-  preserva o ownership por disciplina e separa validação automatizada de
-  aprovação humana.
+- [Manifesto de proveniência da semifinal](../../planos/012-add-harness/SEMIFINAL-TOOLING-PROVENANCE.json):
+  registra os hashes dos pacotes históricos 010/011 e a decisão de não
+  consumi-los em runtime. O contrato de execução histórico da task 011 definiu
+  writers, validação estática e gates humanos, mas ainda permitia ao Narrative
+  writer escrever contratos a partir de canonical fixtures; o A-02 removeu
+  essa inversão. A spec histórica preservava o ownership por disciplina e
+  separava validação automatizada de aprovação humana.

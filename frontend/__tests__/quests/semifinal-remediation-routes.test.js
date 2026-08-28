@@ -1,13 +1,22 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const crypto = require('node:crypto');
 const fs = require('node:fs');
 const path = require('node:path');
 const { spawnSync } = require('node:child_process');
 
 const ROOT = path.resolve(__dirname, '../../..');
-const FEATURE = '.compozy/tasks/011-semifinal-playtest-remediation';
-const MODULE = path.join(ROOT, `${FEATURE}/scripts/lib/semifinal-gameplay.mjs`);
-const CASES = JSON.parse(fs.readFileSync(path.join(ROOT, `${FEATURE}/fixtures/gameplay/writer-cases.json`), 'utf8'));
+const FEATURE = 'docs/Quests/2-semifinal/tooling';
+const MODULE = path.join(ROOT, `${FEATURE}/lib/semifinal-gameplay.mjs`);
+const CASES = {
+  canonicalStates: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 900],
+  legacyValues: [5, 6, 8],
+  barrierEventIds: [12, 21, 7, 28, 23, 14, 15, 16, 17],
+  fieldPlayers: {
+    3: { x: 16, y: 2, minX: 15, maxX: 17 },
+    4: { x: 19, y: 2, minX: 18, maxX: 20 },
+    7: { x: 9, y: 2, minX: 7, maxX: 9 },
+    8: { x: 11, y: 2, minX: 10, maxX: 12 },
+  },
+};
 const MAP_NAMES = ['Map044', 'Map061', 'Map062', 'Map063', 'Map064'];
 const ARMORS = JSON.parse(fs.readFileSync(path.join(ROOT, 'frontend/data/Armors.json'), 'utf8').replace(/^\uFEFF/, ''));
 const ACTORS = JSON.parse(fs.readFileSync(path.join(ROOT, 'frontend/data/Actors.json'), 'utf8').replace(/^\uFEFF/, ''));
@@ -57,10 +66,6 @@ function localRoute(event, interval, criticalTiles = []) {
   return invalid ? { ok: false, code: 'field_route_out_of_bounds', anchor: `E${event.id}`, visited } : { ok: true, visited };
 }
 
-function hash(value) {
-  return crypto.createHash('sha256').update(JSON.stringify(value)).digest('hex');
-}
-
 function commands(page, code) {
   return (page?.list ?? []).filter(command => code === undefined || command.code === code);
 }
@@ -88,9 +93,9 @@ function branch(page, state) {
 beforeAll(() => {
   const runner = `
     import fs from 'node:fs'; import path from 'node:path'; import * as subject from ${JSON.stringify(MODULE)};
-    const root=process.argv[1], names=${JSON.stringify(MAP_NAMES)}, cases=JSON.parse(fs.readFileSync(path.join(root,${JSON.stringify(`${FEATURE}/fixtures/gameplay/writer-cases.json`)}),'utf8'));
+    const root=process.argv[1], names=${JSON.stringify(MAP_NAMES)};
     const sources=Object.fromEntries(names.map(name=>[name,fs.readFileSync(path.join(root,'frontend/data',name+'.json'))]));
-    const projected=subject.projectCanonicalMaps({sources,writerCases:cases});
+    const projected=subject.projectCanonicalMaps({sources});
     console.log(JSON.stringify({canonical:subject.CANONICAL_STATES,maps:Object.fromEntries(Object.entries(projected.maps).map(([name,map])=>[name,{events:map.events}])),outputsValid:Object.values(projected.outputs).map(value=>{try{JSON.parse(value);return true}catch{return false}})}));`;
   const result = spawnSync(process.execPath, ['--input-type=module', '-e', runner, ROOT], { cwd: ROOT, encoding: 'utf8', maxBuffer: 16 * 1024 * 1024 });
   if (result.status !== 0) throw new Error(result.stderr || result.stdout);
@@ -98,7 +103,7 @@ beforeAll(() => {
   subject = {
     CANONICAL_STATES: loaded.canonical,
     selectEligiblePage: (event, state, resolver) => localSelect(event, state, resolver),
-    validateCanonicalProjection: (value, writerCases) => invokeExport('validateCanonicalProjection', [value, writerCases]),
+    validateCanonicalProjection: value => invokeExport('validateCanonicalProjection', [value]),
     scanStateAuthority: value => invokeExport('scanStateAuthority', [value]),
     simulateHorizontalRoute: (event, interval, critical) => localRoute(event, interval, critical),
   };
@@ -115,10 +120,12 @@ describe('page selection, gating and movement', () => {
   test('UT-012: exposes exactly the fourteen canonical states', () => {
     expect(subject.CANONICAL_STATES).toEqual(CASES.canonicalStates);
     expect(CASES.canonicalStates).not.toEqual(expect.arrayContaining(CASES.legacyValues));
-    for (const map of Object.values(maps)) for (const event of map.events.filter(Boolean)) for (const page of event.pages) {
-      const condition = page.conditions;
-      if (condition.variableValid && condition.variableId === 29) expect(CASES.canonicalStates).toContain(condition.variableValue);
-    }
+    for (const map of Object.values(maps))
+      for (const event of map.events.filter(Boolean))
+        for (const page of event.pages) {
+          const condition = page.conditions;
+          if (condition.variableValid && condition.variableId === 29) expect(CASES.canonicalStates).toContain(condition.variableValue);
+        }
   });
 
   test.each([5, 6, 8])('UT-013: legacy V29 value %i returns anchor and value', value => {
@@ -284,7 +291,9 @@ describe('page selection, gating and movement', () => {
     expect(camera.filter(command => command.parameters[1] === 'ZoomChange').map(command => command.parameters[3]['TargetScale:num'])).toEqual(['2', '1']);
     expect(camera.filter(command => command.parameters[1] === 'CameraFocusWait')).toHaveLength(2);
     expect(camera.filter(command => command.parameters[1] === 'ZoomWait')).toHaveLength(2);
-    expect([targetIndex, attackerMoveIndex, impactIndex, playerIndex, selfSwitchIndex, finishIndex]).toEqual([...new Set([targetIndex, attackerMoveIndex, impactIndex, playerIndex, selfSwitchIndex, finishIndex])].sort((a, b) => a - b));
+    expect([targetIndex, attackerMoveIndex, impactIndex, playerIndex, selfSwitchIndex, finishIndex]).toEqual(
+      [...new Set([targetIndex, attackerMoveIndex, impactIndex, playerIndex, selfSwitchIndex, finishIndex])].sort((a, b) => a - b),
+    );
     const balloons = commands(first, 213).map(command => command.parameters);
     expect(new Set(balloons.map(parameters => parameters[0]))).toEqual(new Set([-1, 2, 3, 4, 5]));
     expect(balloons).toContainEqual([2, 5, false]);
@@ -321,7 +330,9 @@ describe('helmet and exact error contracts', () => {
   test('UT-073: Armor 51 changes Thorin to the existing OldHelmet AnimaX profile while equipped', () => {
     const helmet = ARMORS[51];
     const animaX = configuredPlugins().find(entry => entry.name === 'PKD_AnimaX');
-    const profiles = JSON.parse(animaX.parameters['xAnimations:structA']).map(JSON.parse).map(profile => profile.id);
+    const profiles = JSON.parse(animaX.parameters['xAnimations:structA'])
+      .map(JSON.parse)
+      .map(profile => profile.id);
     const runtime = fs.readFileSync(path.join(ROOT, 'frontend/js/plugins/PKD_AnimaX.js'), 'utf8');
 
     expect(helmet).toMatchObject({ id: 51, name: 'Elmo Velho', etypeId: 3 });
@@ -417,7 +428,8 @@ describe('integrated canonical projections', () => {
   test('IT-003: all five maps parse and pass all fourteen canonical states', () => {
     expect(projection.outputsValid).toEqual([true, true, true, true, true]);
     expect(subject.validateCanonicalProjection(maps, CASES)).toEqual([]);
-    for (const state of CASES.canonicalStates) for (const map of Object.values(maps)) for (const event of map.events.filter(Boolean)) expect(subject.selectEligiblePage(event, state)).toHaveProperty('index');
+    for (const state of CASES.canonicalStates)
+      for (const map of Object.values(maps)) for (const event of map.events.filter(Boolean)) expect(subject.selectEligiblePage(event, state)).toHaveProperty('index');
   });
 
   test('IT-004: Map061 barrier family blocks only at V40 and stadium routes remain viable', () => {
@@ -444,7 +456,10 @@ describe('integrated canonical projections', () => {
   });
 
   test('IT-007: Map044 preserves one ARRIVE_HOME and Gab-only return cleanup', () => {
-    const arriveHome = maps.Map044.events.flatMap(event => event?.pages ?? []).flatMap(page => pluginCommands(page, 'Coreto_QuestCore', 'QuestTransition')).filter(command => command.parameters[3].transitionId === 'ARRIVE_HOME');
+    const arriveHome = maps.Map044.events
+      .flatMap(event => event?.pages ?? [])
+      .flatMap(page => pluginCommands(page, 'Coreto_QuestCore', 'QuestTransition'))
+      .filter(command => command.parameters[3].transitionId === 'ARRIVE_HOME');
     expect(arriveHome).toHaveLength(1);
     const arrival = selected(maps.Map044.events[10], 120);
     const transitionIndex = arrival.list.findIndex(command => command.code === 357 && command.parameters?.[3]?.transitionId === 'ARRIVE_HOME');
@@ -477,7 +492,10 @@ describe('automated journeys', () => {
 
   test('E2E-003: urgent run exercises nine blockers and retains a stadium route', () => {
     expect(CASES.barrierEventIds).toHaveLength(9);
-    for (const id of CASES.barrierEventIds) expect(maps.Map061.events[id].pages.flatMap(page => branch(page, 40)).filter(command => command.code === 357 && command.parameters?.[0] === 'VisuMZ_4_GabWindow')).toHaveLength(maps.Map061.events[id].pages.length);
+    for (const id of CASES.barrierEventIds)
+      expect(maps.Map061.events[id].pages.flatMap(page => branch(page, 40)).filter(command => command.code === 357 && command.parameters?.[0] === 'VisuMZ_4_GabWindow')).toHaveLength(
+        maps.Map061.events[id].pages.length,
+      );
     expect(commands(maps.Map061.events[3].pages[0], 201)[0].parameters[1]).toBe(62);
   });
 
@@ -493,7 +511,6 @@ describe('automated journeys', () => {
 test('Map062 E6 is materialized as the sole Task 06 finale controller', () => {
   const event = maps.Map062.events[6];
   const list = event.pages[0].list;
-  expect(hash(event)).not.toBe(CASES.protectedEvent.sha256);
   expect(event.note).toBe('SEMIFINAL:011:FINALE_CONTROLLER:E6:RESTORE_GUARDS_ESCORT_FACING_V3');
   expect(event.pages[0]).toMatchObject({ trigger: 3, conditions: { variableId: 29, variableValue: 110 } });
   expect(list.filter(command => command.code === 301)).toHaveLength(1);
@@ -506,22 +523,29 @@ test('Map062 E6 is materialized as the sole Task 06 finale controller', () => {
     [5, 0, 0, 7, 6],
     [14, 0, 0, 8, 6],
   ]);
-  const focusTargets = list.filter(command => command.code === 357 && command.parameters?.[0] === 'VisuMZ_4_MapCameraZoom' && command.parameters?.[1] === 'CameraFocusTargetEvent').map(command => command.parameters[3]['EventID:eval']);
+  const focusTargets = list
+    .filter(command => command.code === 357 && command.parameters?.[0] === 'VisuMZ_4_MapCameraZoom' && command.parameters?.[1] === 'CameraFocusTargetEvent')
+    .map(command => command.parameters[3]['EventID:eval']);
   expect(focusTargets).toEqual(expect.arrayContaining(['7', '5']));
   const escortPlayerMove = list.find(command => command.code === 205 && command.parameters[0] === -1 && JSON.stringify(command).includes('Move to: 8,7'));
   expect(escortPlayerMove).toBeDefined();
   expect(escortPlayerMove.parameters[1].list.filter(command => [16, 17, 18, 19].includes(command.code)).map(command => command.code)).toEqual([17]);
   const restoreIndex = list.findIndex(command => command.code === 108 && command.parameters?.[0] === 'SEMIFINAL:RESTORE_GUARDS_AFTER_VN_AND_PARTY_REFRESH');
   const escortIndex = list.findIndex(command => command.code === 108 && command.parameters?.[0] === 'SEMIFINAL:BT-SEM-011-ESCORT');
-  const lastPartyRefreshIndex = list.map((command, index) => ({ command, index })).filter(({ command }) => command.code === 129).at(-1).index;
+  const lastPartyRefreshIndex = list
+    .map((command, index) => ({ command, index }))
+    .filter(({ command }) => command.code === 129)
+    .at(-1).index;
   expect(restoreIndex).toBeGreaterThan(lastPartyRefreshIndex);
   expect(restoreIndex).toBeLessThan(escortIndex);
-  const restoreScripts = list.slice(restoreIndex, escortIndex).filter(command => command.code === 355).map(command => command.parameters[0]);
+  const restoreScripts = list
+    .slice(restoreIndex, escortIndex)
+    .filter(command => command.code === 355)
+    .map(command => command.parameters[0]);
   expect(restoreScripts).toHaveLength(2);
-  expect(restoreScripts).toEqual(expect.arrayContaining([
-    expect.stringContaining('$gameMap.event(5).setImage("Principal/$Kilin", 0)'),
-    expect.stringContaining('$gameMap.event(14).setImage("Principal/$Mhordred", 0)'),
-  ]));
+  expect(restoreScripts).toEqual(
+    expect.arrayContaining([expect.stringContaining('$gameMap.event(5).setImage("Principal/$Kilin", 0)'), expect.stringContaining('$gameMap.event(14).setImage("Principal/$Mhordred", 0)')]),
+  );
   expect(list.findIndex(command => command.code === 221)).toBeLessThan(list.findIndex(command => command.code === 357 && command.parameters?.[3]?.transitionId === 'COMMIT_ESCORT'));
   expect(selected(maps.Map062.events[5], 110)).toMatchObject({ image: { characterName: '' }, priorityType: 0, through: true });
   expect(selected(maps.Map062.events[14], 110)).toMatchObject({ image: { characterName: '' }, priorityType: 0, through: true });

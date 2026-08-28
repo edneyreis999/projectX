@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "semifinal-tooling-provenance/v1",
+  "subject": "semifinal",
+  "decision": "A1",
+  "activeToolingRoot": "docs/Quests/2-semifinal/tooling",
+  "recordedAt": "2026-08-27",
+  "hashAlgorithm": "sha256(sorted repo-relative path + NUL + bytes + NUL)",
+  "historicalPackages": [
+    {
+      "path": ".compozy/tasks/010-semifinal-completa",
+      "role": "immutable historical baseline",
+      "fileCount": 49,
+      "sha256": "b4a277e5a750d4b3553b9d9ffbcee7fedb567d037bfe8528b7f4ce584c11d67f",
+      "runtimeDependency": false
+    },
+    {
+      "path": ".compozy/tasks/011-semifinal-playtest-remediation",
+      "role": "historical remediation source",
+      "fileCount": 62,
+      "sha256": "8650408e9b55226e482658410320b6a163d5254345a27b9fbe446c91a28b9cf9",
+      "runtimeDependency": false
+    }
+  ],
+  "policy": {
+    "liveContracts": "docs/Quests/2-semifinal",
+    "generatedEvidence": null,
+    "excludedFromPromotion": ["logs", "memory", "raw evidence", "private agent reasoning"]
+  }
+}

@@ -6,7 +6,7 @@ document_kind: technical art contract
 contract_version: 2.0.0
 authority_model: contract-first
 implementation_baseline_reviewed: 362e2da0
-asset_manifest: .compozy/tasks/011-semifinal-playtest-remediation/fixtures/assets/asset-manifest.json
+asset_manifest: docs/Quests/2-semifinal/tooling/fixtures/assets/asset-manifest.json
 structural_validation: passed
 human_visual_validation: pending_retest
 editor_validation: pending_retest

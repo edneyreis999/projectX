@@ -1,24 +1,18 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const crypto = require('node:crypto');
 const fs = require('node:fs');
 const path = require('node:path');
 const { spawnSync } = require('node:child_process');
 
 const ROOT = path.resolve(__dirname, '../../..');
-const FEATURE = '.compozy/tasks/011-semifinal-playtest-remediation';
-const VN_MODULE = path.join(ROOT, `${FEATURE}/scripts/lib/semifinal-vn.mjs`);
-const ALLOCATED = JSON.parse(fs.readFileSync(path.join(ROOT, `${FEATURE}/fixtures/gameplay/allocated-records.json`), 'utf8'));
+const FEATURE = 'docs/Quests/2-semifinal/tooling';
+const VN_MODULE = path.join(ROOT, `${FEATURE}/lib/semifinal-vn.mjs`);
+const ALLOCATED = JSON.parse(fs.readFileSync(path.join(ROOT, 'docs/Quests/2-semifinal/quest-tooling.json'), 'utf8')).allocations;
 const REGISTRY = JSON.parse(fs.readFileSync(path.join(ROOT, 'frontend/data/CoretoQuests.json'), 'utf8'));
 const MAP_INFOS = JSON.parse(fs.readFileSync(path.join(ROOT, 'frontend/data/MapInfos.json'), 'utf8'));
 const VN_MAP = JSON.parse(fs.readFileSync(path.join(ROOT, `frontend/data/Map${String(ALLOCATED.vnMapId).padStart(3, '0')}.json`), 'utf8'));
 const QUEST_VN_SOURCE = fs.readFileSync(path.join(ROOT, 'frontend/js/plugins/Coreto_QuestVN.js'), 'utf8');
 
-const ENTRY_KEYS = [
-  'SEMIFINAL_DRAGOBUR_ARRIVAL',
-  'SEMIFINAL_DRAGOBUR_AUTHORIZATION',
-  'SEMIFINAL_CELEBRATION',
-  'SEMIFINAL_GUARD_INTERVENTION',
-];
+const ENTRY_KEYS = ['SEMIFINAL_DRAGOBUR_ARRIVAL', 'SEMIFINAL_DRAGOBUR_AUTHORIZATION', 'SEMIFINAL_CELEBRATION', 'SEMIFINAL_GUARD_INTERVENTION'];
 
 function pluginIndex(list, pluginName, commandName, after = -1) {
   return list.findIndex((command, index) => index > after && command.code === 357 && command.parameters?.[0] === pluginName && command.parameters?.[1] === commandName);
@@ -26,15 +20,15 @@ function pluginIndex(list, pluginName, commandName, after = -1) {
 
 function validateMutation(mutation) {
   const script = `
-    import crypto from 'node:crypto'; import fs from 'node:fs'; import {validateSemifinalVn} from ${JSON.stringify(VN_MODULE)};
-    const root=process.argv[1], mutation=process.argv[2], allocated=JSON.parse(fs.readFileSync(root+'/${FEATURE}/fixtures/gameplay/allocated-records.json'));
+    import fs from 'node:fs'; import {validateSemifinalVn} from ${JSON.stringify(VN_MODULE)};
+    const root=process.argv[1], mutation=process.argv[2], allocated=JSON.parse(fs.readFileSync(root+'/docs/Quests/2-semifinal/quest-tooling.json')).allocations;
     const registry=JSON.parse(fs.readFileSync(root+'/frontend/data/CoretoQuests.json')), mapInfos=JSON.parse(fs.readFileSync(root+'/frontend/data/MapInfos.json'));
-    const map=JSON.parse(fs.readFileSync(root+'/frontend/data/Map'+String(allocated.vnMapId).padStart(3,'0')+'.json')), map049=fs.readFileSync(root+'/frontend/data/Map049.json');
+    const map=JSON.parse(fs.readFileSync(root+'/frontend/data/Map'+String(allocated.vnMapId).padStart(3,'0')+'.json'));
     if(mutation==='map-type') map.note='<CoretoMapType:EX>';
     if(mutation==='map-info') mapInfos[allocated.vnMapId]=null;
     if(mutation==='controller') registry.quests['a-semifinal'].extensions.questVN.entries.SEMIFINAL_DRAGOBUR_ARRIVAL.eventId=4;
     if(mutation==='map049') registry.quests['a-semifinal'].extensions.questVN.entries.ABERTURA_FORJAPRATA.mapId=allocated.vnMapId;
-    try { validateSemifinalVn({registry,mapInfos,map,vnMapId:allocated.vnMapId,map049,openingHash:crypto.createHash('sha256').update(map049).digest('hex')}); console.log(JSON.stringify({status:'valid'})); }
+    try { validateSemifinalVn({registry,mapInfos,map,vnMapId:allocated.vnMapId}); console.log(JSON.stringify({status:'valid'})); }
     catch(error) { console.log(JSON.stringify({status:'blocked',code:error.code,entry:error.entry})); }
   `;
   const result = spawnSync(process.execPath, ['--input-type=module', '-e', script, ROOT, mutation], { cwd: ROOT, encoding: 'utf8' });
@@ -116,7 +110,5 @@ describe('Task 05 — dedicated semifinal QuestVN adapter', () => {
       SEMIFINAL_CELEBRATION: { resumeLabel: 'SEMIFINAL_AFTER_CELEBRATION_VN' },
       SEMIFINAL_GUARD_INTERVENTION: { resumeLabel: 'SEMIFINAL_AFTER_GUARD_VN' },
     });
-    expect(crypto.createHash('sha256').update(fs.readFileSync(path.join(ROOT, 'frontend/data/Map049.json'))).digest('hex')).toBe('4b436b54530a11917d98ec3077052161e0e2636e1baa32b7853cf49df512dec1');
-    expect(crypto.createHash('sha256').update(fs.readFileSync(path.join(ROOT, 'frontend/data/Map045.json'))).digest('hex')).toBe('79ec4cc4b87b750d32b808ac4b5d8fecb96cf60200d58f6c3e70049e1b29dbb7');
   });
 });

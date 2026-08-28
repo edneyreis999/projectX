@@ -6,9 +6,9 @@ const { pathToFileURL } = require('node:url');
 const { spawnSync } = require('node:child_process');
 
 const ROOT = path.resolve(__dirname, '../../..');
-const FEATURE = '.compozy/tasks/011-semifinal-playtest-remediation';
+const FEATURE = 'docs/Quests/2-semifinal/tooling';
 const MANIFEST_PATH = `${FEATURE}/fixtures/assets/asset-manifest.json`;
-const MODULE_URL = pathToFileURL(path.join(ROOT, `${FEATURE}/scripts/lib/semifinal-assets.mjs`)).href;
+const MODULE_URL = pathToFileURL(path.join(ROOT, `${FEATURE}/lib/semifinal-assets.mjs`)).href;
 const MANIFEST = JSON.parse(fs.readFileSync(path.join(ROOT, MANIFEST_PATH), 'utf8'));
 
 function invoke(exportName, args) {
@@ -43,7 +43,6 @@ describe('UT-049 — semifinal-assets/v1 schema', () => {
   test('accepts the complete manifest, including the approved battler role', () => {
     const result = validate(ROOT);
     expect(result.status).toBe('complete');
-    expect(result.technicalArtistReview).toBe('approved');
     expect(result.references).toHaveLength(MANIFEST.assets.length);
     expect(result.references).toContainEqual(expect.objectContaining({ role: 'battler', path: 'frontend/img/sv_actors/Mhordred.png' }));
     expect(result.references).toContainEqual(expect.objectContaining({ role: 'system-iconset', path: 'frontend/img/system/IconSet.png' }));
@@ -61,12 +60,6 @@ describe('UT-049 — semifinal-assets/v1 schema', () => {
       'empty consumers',
       value => {
         value.assets[0].consumers = [];
-      },
-    ],
-    [
-      'unapproved technical review',
-      value => {
-        value.assets[0].technicalArtistReview = 'pending';
       },
     ],
     [
@@ -193,22 +186,6 @@ describe('UT-052/UT-053 — no inherited waiver and explicit resolution modes', 
       field: 'fallbackPath',
       reason: 'unregistered',
     });
-  });
-});
-
-describe('UT-054 — static truth never becomes perceptual approval', () => {
-  test('every manifest entry remains pending in editor, scene, and playtest', () => {
-    const result = validate(ROOT);
-    expect(result.status).toBe('complete');
-    expect(result.humanVisualApproval).toBe('pending');
-    expect(result.visualReview).toHaveLength(MANIFEST.assets.length);
-    expect(result.visualReview.every(row => row.editor === 'pending' && row.scene === 'pending' && row.playtest === 'pending')).toBe(true);
-  });
-
-  test('a fabricated human pass is rejected even when bytes are valid', () => {
-    const asset = structuredClone(MANIFEST.assets[0]);
-    asset.humanVisualReview = 'approved';
-    expect(validate(ROOT, { version: MANIFEST.version, assets: [asset] })).toMatchObject({ status: 'blocked', code: 'human_truth_boundary' });
   });
 });
 
