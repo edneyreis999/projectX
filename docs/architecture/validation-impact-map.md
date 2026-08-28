@@ -1,35 +1,41 @@
 ---
-title: 'Mapa de impacto entre targets e checks'
+title: 'Gate de integridade autoral'
 type: architecture-guide
 status: active
 created: '2026-08-27'
-last_updated: '2026-08-27'
-scope: 'Seleção reproduzível de validações a partir de arquivos alterados'
-not_scope: 'Substituição de testes, playtest ou revisão humana'
+last_updated: '2026-08-28'
+scope: 'Seleção e execução reproduzível de checks a partir de arquivos alterados'
+not_scope: 'Playtest, qualidade perceptiva, aceite humano ou prontidão de release'
 ---
 
-# Mapa de impacto entre targets e checks
+# Gate de integridade autoral
 
 ## Propósito
 
-Este guia descreve como declarar que uma mudança em determinado target exige checks específicos. O objetivo é impedir que arquivos percebidos como “somente documentação” ignorem writers, testes ou
-validadores que os consomem.
+O gate relaciona cada target protegido aos checks que conseguem verificar sua integridade autoral. A mesma interface é usada por agentes, humanos e CI. O GitHub Actions apenas prepara o checkout e
+invoca o comando local.
 
-A política de freshness resultante é definida na [ADR de lifecycle de evidência](../project-conventions/validation-evidence-lifecycle.md).
+Um resultado verde declara somente `authoring_integrity`: parsers, writers e checks determinísticos convergiram para o snapshot observado. Ele não declara qualidade visual, narrativa, sonora,
+espacial, comportamento no runtime, aceite humano ou prontidão de release.
 
-## Fonte declarativa
+## Fontes declarativas
 
-O manifesto versionado fica em `config/validation-impact-map.json`. Ele contém:
+`config/validation-impact-map.json` contém checks e regras compartilhados, superfícies protegidas e a raiz de descoberta dos manifestos de quest.
 
-- `checks`: comandos identificados, sem shell implícito;
-- `rules`: padrões de targets e os checks exigidos;
-- `protectedTargets`: superfícies que não podem ficar sem regra.
+Cada `docs/Quests/<ordem>-<slug>/quest-tooling.json` declara, para sua quest:
 
-Um target pode ativar várias regras. Checks repetidos são executados uma única vez, na ordem declarada no manifesto.
+- fontes e direção de autoridade;
+- materializações e o writer responsável por cada uma;
+- checks locais;
+- regras que relacionam targets e checks;
+- manifesto de assets, quando houver.
 
-## Comandos
+Uma materialização sem writer declarado bloqueia o carregamento com `unverifiable_materialization`. Um target protegido sem regra aplicável bloqueia o plano com `unmapped_target`. Checks repetidos
+executam uma única vez, na ordem declarada. O plano também retorna a quest, o modelo de autoridade, o owner e o writer aplicáveis a cada arquivo descoberto.
 
-Validar o manifesto:
+## Interfaces públicas
+
+Validar os manifestos sem executar checks:
 
 ```sh
 npm run validation:impact -- --check
@@ -41,25 +47,22 @@ Planejar checks para arquivos explícitos:
 npm run validation:impact -- --files docs/Quests/2-semifinal/semifinal.dialogos.md
 ```
 
-Planejar a partir do diff de uma branch:
+Validar exatamente o conteúdo do índice Git:
 
 ```sh
-npm run validation:impact -- --base develop
+npm run validate:staged
 ```
 
-Executar o plano:
+Validar o diff de uma branch em checkout limpo:
 
 ```sh
-npm run validation:impact -- --base develop --run
+npm run validate:branch -- --base origin/develop
 ```
 
-Verificar a freshness de uma evidência persistida:
+`validate:staged` materializa o índice em um diretório temporário; alterações unstaged não participam. `validate:branch` bloqueia com `dirty_worktree` antes de executar checks. Ambos retornam JSON e
+código diferente de zero para bloqueios ou falhas.
 
-```sh
-npm run validation:evidence -- --evidence path/to/evidence.json
-```
-
-As suítes de quest possuem nomes estáveis pelo conteúdo que validam:
+As suítes públicas de quest continuam disponíveis para diagnóstico focado:
 
 ```sh
 npm run test:noite-da-historia
@@ -67,31 +70,42 @@ npm run test:semifinal
 npm run test:quests
 ```
 
-`test:quests` agrega todas as quests que possuem uma suíte pública no estado atual do projeto. Slugs de task ou fase, como `remediation`, não fazem parte da interface pública porque deixam de
-representar a cobertura quando o trabalho é incorporado à quest.
+## Execução read-only
 
-O modo `--run` usa executável e argumentos separados. O manifesto não aceita pipeline, redirecionamento ou fragmento de shell.
+O executor chama cada comando sem shell implícito e interrompe no primeiro check vermelho. Se um check alterar o checkout, o resultado é `gate_mutated_worktree`. O gate aponta a divergência; ele não
+aplica writers, regenera derivados nem corrige conteúdo.
 
-## Política fail-closed
+Estados principais:
 
-Quando um arquivo casa com `protectedTargets`, mas nenhuma regra o cobre, o planejamento termina com `unmapped_target`. Isso obriga a atualizar o mapa no mesmo patch que cria uma nova superfície
-crítica.
+| Estado/código                  | Significado                                  | Ação                                             |
+| ------------------------------ | -------------------------------------------- | ------------------------------------------------ |
+| `converged`                    | O writer não planejou escrita                | Nenhuma                                          |
+| `materialization_drift`        | A materialização difere do writer            | Reconciliar contrato, writer e runtime           |
+| `unmapped_target`              | Target protegido não possui regra            | Declarar ownership e checks no manifesto correto |
+| `unverifiable_materialization` | Materialização não possui writer verificável | Implementar a prova ou remover a alegação        |
+| `no_checks`                    | Nenhuma regra se aplica ao diff              | Não interpretar como aprovação ampla             |
 
-Um arquivo fora das superfícies protegidas pode resultar em `no_checks`. Esse estado significa apenas que o manifesto atual não exige comando automatizado; não significa que a mudança está aprovada.
+## GitHub Actions e branch protection
 
-## Como adicionar uma regra
+`.github/workflows/authoring-integrity.yml` executa o gate em todo pull request, sem filtro de paths e sem secrets. O workflow usa a versão de Node fixada em `.nvmrc`; as actions externas são fixadas
+por SHA.
 
-1. Identifique o consumidor real do target.
-2. Prefira uma suíte compartilhada existente.
-3. Declare um check novo somente quando a validação tiver contrato próprio.
-4. Acrescente casos positivo e negativo ao teste do mapa de impacto.
-5. Execute `--check` e planeje um arquivo representativo com `--files`.
-6. Se a mudança afetar runtime ou percepção, preserve os gates adicionais; o mapa não os converte em aprovação estática.
+Na proteção das branches de destino, configure o status `Authoring integrity` como required check. Essa configuração é externa ao arquivo YAML: sem ela, o workflow detecta falhas, mas não impede
+merge.
 
-## Relação com agentes
+## Como ampliar a cobertura
 
-Antes de concluir uma mudança, um agente pode fornecer os arquivos alterados ao planejador e obter a menor lista declarada de checks. A lista é reproduzível por outra sessão porque não depende da
-memória do agente nem do tipo aparente do arquivo.
+1. Identifique a fonte autoritativa e o consumidor real.
+2. Registre o target no manifesto da quest ou no manifesto compartilhado.
+3. Reuse uma suíte existente que possua o invariante.
+4. Adicione casos positivos e negativos ao teste do resolver.
+5. Execute o gate no snapshot que será entregue.
+6. Mantenha sensores de runtime e julgamento humano separados quando o critério não for determinístico.
 
-O mapa não decide autoridade de conteúdo. Contratos continuam governados pela [ADR contract-first](../project-conventions/authoring-materialization-authority.md), e critérios humanos continuam sob
-seus owners.
+## Fontes consultadas e conflitos
+
+- [Autoridade de autoria e materialização](../project-conventions/authoring-materialization-authority.md): contratos aprovados e writers autorizados governam o runtime materializado.
+- [Lifecycle de evidência](../project-conventions/validation-evidence-lifecycle.md): resultados persistidos não podem representar outro checkout; o gate recalcula em vez de versionar prova.
+- [Lifecycle de eventos RPG Maker](../project-conventions/rpg-maker-event-lifecycle.md): verificação estática não substitui runtime ou julgamento humano.
+
+Não há conflito entre essas fontes. O limite `authoring_integrity` preserva a separação entre automação mecânica e critérios que exigem outro sensor.

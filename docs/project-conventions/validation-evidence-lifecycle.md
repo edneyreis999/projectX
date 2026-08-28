@@ -163,11 +163,14 @@ proveniência, inputs, comandos ou dimensões obrigatórias.
 
 ## Adoção
 
-- O helper compartilhado fica em `scripts/lib/validation-evidence.js`.
-- Evidências específicas migram quando a feature correspondente for tocada;
-  evidência obsoleta não pode ser usada como justificativa enquanto isso.
+- O projeto não mantém atualmente um helper compartilhado nem evidência de
+  validação versionada. Checks recalculam o estado do checkout e publicam o
+  resultado da execução atual.
+- Uma feature só deve persistir evidência quando existir um consumidor real
+  além do próprio gerador e de seus testes; nesse caso, este ADR volta a reger
+  schema e freshness.
 - O mapa de impacto em `config/validation-impact-map.json` seleciona os checks
-  que precisam regenerar evidência depois de uma mudança.
+  que precisam ser recalculados depois de uma mudança.
 
 ## Fora de escopo
 
@@ -185,6 +188,7 @@ ignorados e não concede autoridade de waiver a um agente.
 - [`POST-MORTEM.md`](../../planos/012-add-harness/POST-MORTEM.md): demonstra um
   `pass` anterior aos commits que modificaram seus inputs.
 
-O validador específico da semifinal separava static e human, mas seu schema
-não vinculava o resultado ao HEAD nem invalidava inputs alterados. Esta ADR
-mantém a separação correta e torna freshness obrigatória.
+O validador anterior da semifinal misturava estados estáticos e humanos sem
+vínculo suficiente ao checkout. O gate atual limita sua alegação a
+`authoring_integrity`; runtime, aceite humano e release permanecem estados
+separados e não verificados por ele.

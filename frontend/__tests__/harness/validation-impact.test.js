@@ -5,7 +5,7 @@ const path = require('node:path');
 const { execFileSync, spawnSync } = require('node:child_process');
 
 const ROOT = path.resolve(__dirname, '../../..');
-const { changedFilesFromGit, loadManifest, matches, parseArguments, resolveImpactPlan, runImpactPlan, validateManifest } = require('../../../scripts/validation-impact.js');
+const { changedFilesFromGit, changedFilesFromStaged, loadManifest, matches, parseArguments, resolveImpactPlan, runImpactPlan, validateManifest } = require('../../../scripts/validation-impact.js');
 
 function git(root, args) {
   return execFileSync('git', args, { cwd: root, encoding: 'utf8' }).trim();
@@ -13,7 +13,7 @@ function git(root, args) {
 
 function manifest() {
   return {
-    schemaVersion: 'validation-impact-map/v1',
+    schemaVersion: 'validation-impact-map/v2',
     checks: [
       { id: 'docs', command: 'npm', args: ['run', 'test:docs'] },
       { id: 'runtime', command: 'npm', args: ['run', 'test:runtime'] },
@@ -24,6 +24,31 @@ function manifest() {
     ],
     protectedTargets: ['docs/Quests/**', 'frontend/js/plugins/**'],
   };
+}
+
+function createGateRepository() {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'authoring-gate-'));
+  fs.mkdirSync(path.join(root, 'scripts'), { recursive: true });
+  fs.mkdirSync(path.join(root, 'config'), { recursive: true });
+  fs.copyFileSync(path.join(ROOT, 'scripts/validation-impact.js'), path.join(root, 'scripts/validation-impact.js'));
+  fs.copyFileSync(path.join(ROOT, 'scripts/validate-staged.js'), path.join(root, 'scripts/validate-staged.js'));
+  fs.writeFileSync(
+    path.join(root, 'config/validation-impact-map.json'),
+    JSON.stringify({
+      schemaVersion: 'validation-impact-map/v2',
+      questManifestsRoot: 'docs/Quests',
+      checks: [{ id: 'target', command: process.execPath, args: ['-e', 'process.exit(0)'] }],
+      rules: [{ id: 'target', targets: ['target.txt'], checks: ['target'] }],
+      protectedTargets: ['target.txt'],
+    }),
+  );
+  fs.writeFileSync(path.join(root, 'target.txt'), 'baseline\n');
+  git(root, ['init', '-q']);
+  git(root, ['config', 'user.name', 'Harness Test']);
+  git(root, ['config', 'user.email', 'harness@example.invalid']);
+  git(root, ['add', '.']);
+  git(root, ['commit', '-qm', 'test: seed gate repository']);
+  return root;
 }
 
 describe('validation impact map', () => {
@@ -44,20 +69,10 @@ describe('validation impact map', () => {
     expect(() => validateManifest(unknown)).toThrow('unknown_check:missing');
   });
 
-  test('maps a document to its real consumer instead of treating it as docs-only', () => {
-    const plan = resolveImpactPlan(manifest(), ['docs/Quests/2-semifinal/semifinal.dialogos.md']);
-    expect(plan).toMatchObject({
-      status: 'ready',
-      checks: [{ id: 'docs' }],
-      matchedRules: [{ id: 'contract-docs' }],
-    });
-  });
-
   test('blocks protected targets that have no rule', () => {
     const subject = manifest();
     subject.rules = subject.rules.filter(rule => rule.id !== 'runtime');
-    const plan = resolveImpactPlan(subject, ['frontend/js/plugins/NewCoretoPlugin.js']);
-    expect(plan).toMatchObject({
+    expect(resolveImpactPlan(subject, ['frontend/js/plugins/NewCoretoPlugin.js'])).toMatchObject({
       status: 'blocked',
       code: 'unmapped_target',
       unmappedTargets: ['frontend/js/plugins/NewCoretoPlugin.js'],
@@ -78,7 +93,6 @@ describe('validation impact map', () => {
       fs.rmSync(path.join(root, 'docs', 'Quests', 'contract.md'));
       git(root, ['add', '-u']);
       git(root, ['commit', '-qm', 'test: delete protected target']);
-
       expect(changedFilesFromGit(root, { base: 'baseline' })).toEqual(['docs/Quests/contract.md']);
     } finally {
       fs.rmSync(root, { recursive: true, force: true });
@@ -89,37 +103,120 @@ describe('validation impact map', () => {
     const subject = manifest();
     subject.rules.push({ id: 'shared', targets: ['docs/**'], checks: ['docs', 'runtime'] });
     const plan = resolveImpactPlan(subject, ['docs/Quests/example/contract.md']);
-    const spawn = jest.fn((command, args) => ({ status: args.includes('test:docs') ? 1 : 0 }));
+    const spawn = jest.fn((command, args) => ({ status: args.includes('test:docs') ? 1 : 0, stdout: '', stderr: '' }));
     const result = runImpactPlan(plan, ROOT, spawn);
     expect(result).toMatchObject({ status: 'fail', code: 'check_failed', executions: [{ id: 'docs', exitCode: 1 }] });
     expect(spawn).toHaveBeenCalledTimes(1);
   });
 
-  test('validates the repository manifest and its quest mappings through the public CLI', () => {
+  test('discovers quest owners, writers, materializations and asset checks', () => {
     const repositoryManifest = loadManifest(ROOT);
-    const semifinalPlan = resolveImpactPlan(repositoryManifest, ['docs/Quests/2-semifinal/semifinal.audio.md']);
-    expect(semifinalPlan.checks.map(check => check.id)).toEqual(['semifinal']);
+    const contractPlan = resolveImpactPlan(repositoryManifest, ['docs/Quests/2-semifinal/semifinal.dialogos.md']);
+    expect(contractPlan.checks.map(check => check.id)).toEqual(expect.arrayContaining(['semifinal-integrity', 'semifinal-tests']));
+    expect(contractPlan.ownership).toContainEqual(expect.objectContaining({ quest: 'semifinal', authorityModel: 'contract-first', owner: 'Narrative Designer' }));
 
-    const nightPlan = resolveImpactPlan(repositoryManifest, ['docs/Quests/1-noite-da-historia/noite-da-historia.NSD.fluxo-cenas.md']);
-    expect(nightPlan.checks.map(check => check.id)).toEqual(['noite-da-historia']);
+    const materializationPlan = resolveImpactPlan(repositoryManifest, ['frontend/data/Map062.json']);
+    expect(materializationPlan.checks.map(check => check.id)).toEqual(expect.arrayContaining(['semifinal-integrity', 'semifinal-tests']));
+    expect(materializationPlan.ownership).toContainEqual(expect.objectContaining({ quest: 'semifinal', owner: 'Gameplay Engineer', writer: expect.objectContaining({ id: 'semifinal-gameplay' }) }));
 
-    const harnessPlan = resolveImpactPlan(repositoryManifest, ['frontend/__tests__/quests/semifinal-remediation-verification.test.js']);
-    expect(harnessPlan.checks.map(check => check.id)).toEqual(['semifinal']);
+    const quest = require(path.join(ROOT, 'docs/Quests/2-semifinal/quest-tooling.json'));
+    const asset = require(path.join(ROOT, quest.assetManifest)).assets[0].path;
+    const assetPlan = resolveImpactPlan(repositoryManifest, [asset]);
+    expect(assetPlan.checks.map(check => check.id)).toEqual(expect.arrayContaining(['semifinal-integrity', 'semifinal-tests']));
+    expect(assetPlan.ownership).toEqual([expect.objectContaining({ quest: 'semifinal', owner: 'Technical Artist' })]);
+  });
 
+  test('blocks a new RPG Maker target without ownership', () => {
+    const repositoryManifest = loadManifest(ROOT);
+    expect(resolveImpactPlan(repositoryManifest, ['frontend/data/Map999.json'])).toMatchObject({
+      status: 'blocked',
+      code: 'unmapped_target',
+      unmappedTargets: ['frontend/data/Map999.json'],
+    });
+  });
+
+  test('rejects materializations that do not identify a deterministic writer', () => {
+    const root = fs.mkdtempSync(path.join(os.tmpdir(), 'quest-manifest-'));
+    try {
+      fs.mkdirSync(path.join(root, 'config'), { recursive: true });
+      fs.mkdirSync(path.join(root, 'docs', 'Quests', '1-example'), { recursive: true });
+      fs.writeFileSync(
+        path.join(root, 'config', 'validation-impact-map.json'),
+        JSON.stringify({ schemaVersion: 'validation-impact-map/v2', questManifestsRoot: 'docs/Quests', checks: [], rules: [], protectedTargets: ['frontend/data/**'] }),
+      );
+      fs.writeFileSync(
+        path.join(root, 'docs', 'Quests', '1-example', 'quest-tooling.json'),
+        JSON.stringify({
+          schemaVersion: 'quest-tooling/v1',
+          id: 'example',
+          authorityModel: 'contract-first',
+          owners: [{ name: 'Gameplay Engineer', targets: [], targetsFromMaterializations: true }],
+          checks: [],
+          writers: [],
+          materializations: [{ target: 'frontend/data/Map001.json' }],
+          rules: [],
+        }),
+      );
+      expect(() => loadManifest(root)).toThrow('unverifiable_materialization:frontend/data/Map001.json');
+    } finally {
+      fs.rmSync(root, { recursive: true, force: true });
+    }
+  });
+
+  test('validates repository manifests through the public CLI', () => {
     const result = spawnSync(process.execPath, ['scripts/validation-impact.js', '--check'], { cwd: ROOT, encoding: 'utf8' });
     expect(result.status).toBe(0);
     expect(JSON.parse(result.stdout)).toEqual({ status: 'pass', manifest: 'config/validation-impact-map.json' });
   });
 
-  test('exposes quest-specific npm targets and an explicit all-quests aggregator', () => {
-    const scripts = require(path.join(ROOT, 'package.json')).scripts;
-    expect(scripts['test:noite-da-historia']).toContain('quest-state-machines-ex-vn.test.js');
-    expect(scripts['test:noite-da-historia']).toContain('Coreto_QuestCore.test.js');
-    expect(scripts['test:semifinal']).toContain('semifinal-remediation-verification.test.js');
-    expect(scripts['test:semifinal']).toContain('Coreto_Cutscene.test.js');
-    expect(scripts['test:quests']).toBe('npm run test:noite-da-historia && npm run test:semifinal');
-    expect(scripts['test:semifinal-remediation']).toBeUndefined();
-    expect(scripts['test:quest-state-machines']).toBeUndefined();
+  test('keeps the CI report outside the checkout before branch validation', () => {
+    const workflow = fs.readFileSync(path.join(ROOT, '.github/workflows/authoring-integrity.yml'), 'utf8');
+    expect(workflow).toContain('report_path="$RUNNER_TEMP/authoring-integrity.json"');
+    expect(workflow).toContain('tee "$report_path"');
+    expect(workflow).not.toContain('tee authoring-integrity.json');
+  });
+
+  test('validates the exact staged snapshot and ignores unstaged content', () => {
+    const root = createGateRepository();
+    try {
+      fs.writeFileSync(path.join(root, 'target.txt'), 'staged\n');
+      git(root, ['add', 'target.txt']);
+      fs.writeFileSync(path.join(root, 'target.txt'), 'unstaged\n');
+      const result = spawnSync(process.execPath, ['scripts/validate-staged.js'], { cwd: root, encoding: 'utf8' });
+      expect(result.status).toBe(0);
+      expect(JSON.parse(result.stdout)).toMatchObject({ status: 'pass', files: ['target.txt'] });
+      expect(fs.readFileSync(path.join(root, 'target.txt'), 'utf8')).toBe('unstaged\n');
+    } finally {
+      fs.rmSync(root, { recursive: true, force: true });
+    }
+  });
+
+  test('preserves Unicode paths when discovering staged files', () => {
+    const root = createGateRepository();
+    try {
+      const unicodePath = 'SUMÁRIO-EXECUTIVO.md';
+      fs.writeFileSync(path.join(root, unicodePath), 'staged\n');
+      git(root, ['add', unicodePath]);
+      expect(changedFilesFromStaged(root)).toEqual([unicodePath]);
+    } finally {
+      fs.rmSync(root, { recursive: true, force: true });
+    }
+  });
+
+  test('blocks branch execution when the checkout is dirty', () => {
+    const root = createGateRepository();
+    try {
+      git(root, ['branch', 'baseline']);
+      fs.writeFileSync(path.join(root, 'target.txt'), 'committed\n');
+      git(root, ['add', 'target.txt']);
+      git(root, ['commit', '-qm', 'test: change target']);
+      fs.writeFileSync(path.join(root, 'target.txt'), 'dirty\n');
+      const result = spawnSync(process.execPath, ['scripts/validation-impact.js', '--base', 'baseline', '--run'], { cwd: root, encoding: 'utf8' });
+      expect(result.status).toBe(1);
+      expect(JSON.parse(result.stdout)).toEqual({ status: 'blocked', code: 'dirty_worktree' });
+    } finally {
+      fs.rmSync(root, { recursive: true, force: true });
+    }
   });
 
   test('requires exactly one discovery mode', () => {
