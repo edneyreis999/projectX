@@ -42,8 +42,8 @@ The ultimate goal is the continuous evolution and improvement of the framework.
 
 This prompt has been executed. The canonical current status is in [SUMÁRIO-EXECUTIVO.md](SUMÁRIO-EXECUTIVO.md), and the next-session procedure is in [HANDOFF.md](HANDOFF.md).
 
-Completed in the worktree: lifecycle and evidence ADRs, shared harness helpers, the executable `target → checks` map, converged writers, 21/21 harness tests, 15/15 quest-state tests, 252/252 semifinal
-tests, a successful type build, and fresh v2 evidence.
+Completed and versioned: lifecycle and evidence ADRs, shared harness helpers, the executable `target → checks` map, public commands per quest, the `test:quests` aggregate, and the 012 plan package. A1
+then consolidated active Semifinal tooling, now located under `docs/Quests/2-semifinal/tooling`; S1 removed local saves from the index, and C2 deferred CI integration to a separate task.
 
-Still pending: version the patch and a sanitized execution package, decide the policy for ignored `.compozy/tasks` inputs, integrate the impact map into CI, classify the two saves in `develop...HEAD`,
-and execute human checklist B-01 through B-18. The feature remains `release_ready: blocked` until those gates are resolved.
+Still pending: validate and version the A1/S1 delta, regenerate v3 evidence on that committed HEAD, and execute human checklist B-01 through B-18. The feature remains `release_ready: blocked` until
+the human gates are resolved. CI integration is intentionally tracked as future work, not as a gate for this implementation branch.

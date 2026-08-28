@@ -1,11 +1,13 @@
 # Linha do tempo reconstruída
 
+> Registro histórico. Para a interface operacional atual, use [HANDOFF.md](HANDOFF.md).
+
 ## Escopo e método
 
 - Branch analisada: `feat/migracao-semifinal-mapas-ex`.
 - Base solicitada: `develop`, no commit `856abb0772542aad35559ab60c9983a61a3e42ae`.
 - Intenção: pacotes locais `010-semifinal-completa` e `011-semifinal-playtest-remediation`.
-- Realidade no HEAD `af49dea8`: nove commits em `develop..HEAD`, 138 arquivos, 22.674 inserções e 1.494 remoções.
+- Realidade no HEAD `f3c3f0b8`: onze commits em `develop..HEAD`, 162 arquivos, 25.258 inserções e 1.505 remoções.
 - Limite de reconstrução: `.compozy/tasks` está ignorado pelo Git. Datas sem commit foram extraídas dos ADRs, evidências e post-mortems locais; não foram inventadas.
 
 ## Cronologia
@@ -34,6 +36,8 @@
 | 2026-08-27, ciclo de harness           | Lifecycle, evidência e impacto materializados | Foram promovidas as ADRs P01/P03, um helper genérico de página/refresh, evidência `v2` ligada a HEAD/base/inputs e um manifesto executável `target → checks`. Regressões adicionais fecharam deleção de target, mudança tracked→untracked, permissão executável e dirt não relacionado.                                                                                                               |
 | 2026-08-27, validação final            | Gates automatizados convergentes              | Harness 21/21, state machines 15/15, semifinal 252/252, build aprovado, writers `ready`, evidência `fresh` e quatro checks do mapa de impacto aprovados. Prettier, links, diff-check e revisão `deslop` também passaram. O pacote 011 segue ignorado e `release_ready` continua `blocked`.                                                                                                            |
 | 2026-08-27, sincronização do plano 012 | Handoff e documentos atualizados              | Os artefatos passaram a separar histórico, materialização no worktree e pendências. O próximo ciclo ficou restrito a versionamento/reprodutibilidade, CI, classificação dos saves e playtest B-01 a B-18.                                                                                                                                                                                             |
+| 2026-08-27, commits de harness/planos  | Superfície pública versionada                 | `86c05e3b` publicou os comandos por quest, `test:quests`, lifecycle/evidência/impacto; `f3c3f0b8` versionou o pacote 012 e o handoff.                                                                                                                                                                                                                                                                 |
+| 2026-08-27, decisão A1/S1/C2           | Tooling durável sem dependência das tasks     | A1 consolidou o tooling, agora localizado em `docs/Quests/2-semifinal/tooling`, e registrou hashes históricos no manifesto. S1 preservou saves locais fora do índice. C2 reservou CI para task própria. Cinco suítes 010/contrato antigo supersedidas foram removidas.                                                                                                                                |
 
 ## Evolução da validação automatizada
 
@@ -45,7 +49,8 @@ de24e224:     241 testes, reteste pendente
 1c84ede5:     248 testes, reteste pendente
 362e2da0:     252 testes, reteste pendente
 af49dea8:     252/252 testes; writers convergentes, playtest pendente
-worktree:     252/252 no golden path; harness novo 21/21
+86c05e3b:     comandos por quest; harness 22/22 e agregador test:quests
+worktree A1:  252/252 no golden path; tooling ativo independente de 010/011
 ```
 
 ## Estado final reconstruído
@@ -53,7 +58,7 @@ worktree:     252/252 no golden path; harness novo 21/21
 - O runtime recebeu correções robustas para os incidentes conhecidos.
 - Nenhuma evidência comprova que o percurso corrigido foi retestado de ponta a ponta.
 - O harness voltou a convergir com os contratos disciplinares contract-first.
-- A evidência estática agora é verificável, mas não é release-ready porque há inputs ignorados e o playtest continua pendente.
+- A evidência estática v3 agora é verificável sem inputs ativos ignorados, mas não é release-ready porque o playtest continua pendente.
 - O mapa de impacto prova os quatro consumidores atuais, mas ainda não é gate obrigatório de CI.
-- As promoções duráveis estão no worktree; o HEAD ainda não contém o patch 012/harness.
-- A branch não deve ser tratada como aceita para release até concluir o checklist humano e versionar os deltas aprovados.
+- O harness e o pacote 012 já estão no HEAD; o delta A1/S1 ainda precisa de validação final e commit.
+- A branch não deve ser tratada como aceita para release até concluir o checklist humano e regenerar a evidência no HEAD aprovado.

@@ -1,20 +1,20 @@
 # Mudanças em ADRs — promoções e pendências
 
-> Estado consolidado em 2026-08-27. “Materializada no worktree” não equivale a mudança versionada; “aceita” identifica uma ADR durável já incorporada em `docs/project-conventions/`.
+> Estado consolidado em 2026-08-27. “Versionada” identifica uma mudança incorporada ao Git; “aceita” identifica uma ADR durável já incorporada em `docs/project-conventions/`.
 
 ## Resumo de promoção
 
 As ADRs locais 010/011 capturam decisões úteis, mas estão sob `.compozy/tasks`, diretório ignorado. As decisões duráveis abaixo devem ser promovidas ou incorporadas aos ADRs versionados do projeto.
 
-| ID      | Tipo      | Destino                                                           | Prioridade | Estado em 2026-08-27      | Fonte                          |
-| ------- | --------- | ----------------------------------------------------------------- | ---------- | ------------------------- | ------------------------------ |
-| ADR-P01 | Nova      | `docs/project-conventions/rpg-maker-event-lifecycle.md`           | P0         | Aceita                    | L-01, L-02, L-07               |
-| ADR-P02 | Nova      | `docs/project-conventions/authoring-materialization-authority.md` | P0         | Aceita                    | L-03, L-11                     |
-| ADR-P03 | Nova      | `docs/project-conventions/validation-evidence-lifecycle.md`       | P0         | Aceita                    | L-04, L-05                     |
-| ADR-U01 | Atualizar | `docs/project-conventions/quest-state-machines.md`                | P1         | Pendente                  | 011 ADR-009/010                |
-| ADR-U02 | Atualizar | `docs/project-conventions/scene-routing-ex-vn.md`                 | P1         | Pendente                  | 011 ADR-001/007/010            |
-| ADR-U03 | Atualizar | `docs/architecture/quest-state-machine-map-guide.md`              | P1         | Materializada no worktree | Incidentes de refresh/retomada |
-| ADR-U04 | Refinar   | `docs/project-conventions/magia-em-cutscenes-e-animacoes.md`      | P2         | Pendente                  | Post-mortem do elmo            |
+| ID      | Tipo      | Destino                                                           | Prioridade | Estado em 2026-08-27 | Fonte                          |
+| ------- | --------- | ----------------------------------------------------------------- | ---------- | -------------------- | ------------------------------ |
+| ADR-P01 | Nova      | `docs/project-conventions/rpg-maker-event-lifecycle.md`           | P0         | Aceita               | L-01, L-02, L-07               |
+| ADR-P02 | Nova      | `docs/project-conventions/authoring-materialization-authority.md` | P0         | Aceita               | L-03, L-11                     |
+| ADR-P03 | Nova      | `docs/project-conventions/validation-evidence-lifecycle.md`       | P0         | Aceita               | L-04, L-05                     |
+| ADR-U01 | Atualizar | `docs/project-conventions/quest-state-machines.md`                | P1         | Pendente             | 011 ADR-009/010                |
+| ADR-U02 | Atualizar | `docs/project-conventions/scene-routing-ex-vn.md`                 | P1         | Pendente             | 011 ADR-001/007/010            |
+| ADR-U03 | Atualizar | `docs/architecture/quest-state-machine-map-guide.md`              | P1         | Versionada           | Incidentes de refresh/retomada |
+| ADR-U04 | Refinar   | `docs/project-conventions/magia-em-cutscenes-e-animacoes.md`      | P2         | Pendente             | Post-mortem do elmo            |
 
 ## ADR-P01 — Lifecycle de eventos, páginas e intérpretes
 
@@ -56,8 +56,8 @@ atualização/remoção dos writers e suíte verde no mesmo commit.
 
 ### Resultado na semifinal
 
-Foi adotado o modelo contract-first. Os documentos `2.0.0` voltaram a ser os contratos disciplinares aprovados; source inventory, fingerprints e writers foram reconciliados sem transferir autoria de
-cutscene, áudio ou arte técnica para o Narrative writer. Narrative e Gameplay retornam `ready` em `--check`.
+Foi adotado o modelo contract-first. Os documentos `2.0.0` são os contratos disciplinares aprovados; o source inventory e o Narrative writer foram removidos por não materializarem runtime. O
+validador narrativo é read-only, a copy materializada é cruzada com o contrato aprovado e o Gameplay writer retorna `converged` em `--check`.
 
 ## ADR-P03 — Lifecycle de evidência e aceite
 

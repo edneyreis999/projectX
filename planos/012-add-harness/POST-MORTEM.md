@@ -1,5 +1,7 @@
 # Pós-mortem consolidado
 
+> Registro histórico do ciclo 012. Para tooling e comandos atuais, use [HANDOFF.md](HANDOFF.md); a demanda 013 superou parte dos estados abaixo.
+
 ## Veredito
 
 A branch evoluiu uma migração estrutural para uma quest extensa, com máquina canônica, apresentação híbrida EX/VN, batalha, assets e tooling de autoria. O ciclo foi produtivo, e várias correções
@@ -9,8 +11,8 @@ não convergiam e a evidência estática existente estava desatualizada.
 O problema sistêmico não foi falta de testes. Foi a distância entre o que os testes modelavam e o lifecycle real do RPG Maker, somada a um contrato de conclusão que aceitava frontmatter `completed`
 sem provar os gates da spec.
 
-> Atualização de 2026-08-27: os bloqueios automatizados descritos neste veredito foram remediados no worktree e preservados abaixo como registro causal. O aceite humano e a reprodutibilidade dos
-> pacotes ignorados continuam pendentes.
+> Atualização de 2026-08-27: os bloqueios automatizados descritos neste veredito foram remediados e preservados abaixo como registro causal. A1 eliminou a dependência executável dos pacotes ignorados;
+> o aceite humano continua pendente.
 
 ## Catálogo de evidências
 
@@ -28,6 +30,7 @@ sem provar os gates da spec.
 | EV-10 | Auditoria fresca de 2026-08-25: build passou; suíte específica 10/14 e 233/252; writers bloqueados; diff-check da branch falhou.                                                              |
 | EV-11 | Regras/skills atuais: `../../AGENTS.md`, `../../docs/architecture/`, `../../docs/project-conventions/` e skills RPG Maker em `../../.agents/skills/`.                                         |
 | EV-12 | Validação do worktree em 2026-08-27: harness 21/21, state machines 15/15, semifinal 252/252, build aprovado, writers `ready`, evidência `fresh` e quatro checks do mapa de impacto aprovados. |
+| EV-13 | Decisão A1/S1/C2: `SEMIFINAL-TOOLING-PROVENANCE.json`, `docs/Quests/2-semifinal/tooling`, remoção das suítes legadas 010 e política `/frontend/save/*.rmmzsave`.                              |
 
 ## Resultado pretendido versus resultado comprovado na auditoria inicial
 
@@ -95,27 +98,27 @@ fontes duplicadas com autoridade mutável
 - A task 011 exigia playtest fresco para conclusão, mas todas as tasks foram marcadas `completed` com seis E2Es falhos e nove não executados. Hoje os seis estão `remediated_pending_retest`; não foram
   promovidos a `pass`.
 - O loop de orquestração mede conclusão administrativa, não aceite funcional/perceptivo.
-- O pacote de intenção, ADRs, logs e evidências está ignorado; nenhum dos seus arquivos faz parte da branch (`git ls-files` retorna zero).
+- O pacote histórico de intenção, ADRs, logs e evidências está ignorado. A1 passou a tratá-lo somente como proveniência: o tooling ativo vive fora de `.compozy` e o manifesto registra seus hashes.
 - Logs existem apenas para três tasks 010, sem timestamps, e não há logs equivalentes para 011; a timeline depende de memories e commits.
 - A integração principal de 122 arquivos reuniu runtime, docs, assets, framework e testes, aumentando o custo de revisão e atribuição causal.
 - A spec declarava ondas paralelas, mas o loop proíbe concorrência; além disso, tasks supostamente paralelas compartilharam o mesmo planner. O grafo não valida interseção de ownership.
-- Dois saves rastreados mudaram no commit principal sem papel de fixture explicitado. Três saves locais estavam modificados na auditoria inicial e foram excluídos da análise; o patch atual não
-  modifica saves.
+- Dois saves rastreados mudaram no commit principal sem papel de fixture explicitado. S1 os classificou como artefatos locais, preservou-os no disco, removeu-os do índice e adicionou a regra de
+  ignore.
 - `git diff --check develop...HEAD` falhava, apesar de commits relatarem diff-checks restritos aprovados. As sete ocorrências foram corrigidas no worktree, mas ainda dependem de commit.
 
 ## Estado dos achados
 
-| Finding                                 | Severidade | Estado                                                      | Próxima ação                                                |
-| --------------------------------------- | ---------- | ----------------------------------------------------------- | ----------------------------------------------------------- |
-| F-01 — aceite humano ausente            | Bloqueante | 6 `remediated_pending_retest`, 9 `not_executed`             | Executar matriz pós-fix e registrar build/commit.           |
-| F-02 — harness atual vermelho           | Bloqueante | Resolvido no worktree: 252/252 no golden path               | Preservar a suíte integrada no gate de impacto.             |
-| F-03 — writers não convergem            | Bloqueante | Resolvido: Narrative e Gameplay `ready`                     | Manter autoridade contract-first e replay no-op.            |
-| F-04 — evidência estática obsoleta      | Alta       | Resolvido tecnicamente em `semifinal-validation/v2`         | Versionar inputs ou manter `release_ready` bloqueado.       |
-| F-05 — lifecycle não institucionalizado | Alta       | Resolvido no worktree com ADR e núcleo reutilizável         | Ampliar o harness por novas fronteiras comprovadas.         |
-| F-06 — tasks/evidências fora do Git     | Alta       | Intenção não reproduzível pela branch                       | Versionar pacote sanitizado ou manifesto content-addressed. |
-| F-07 — foreign keys configuráveis       | Alta       | TP corrigido localmente                                     | Validador genérico de registries ativos.                    |
-| F-08 — DoD superficial                  | Alta       | Estados existem na ADR/evidência; loop ainda lê frontmatter | Integrar os estados ao orquestrador.                        |
-| F-09 — slicing/higiene                  | Média      | Whitespace corrigido; saves e política de slicing pendentes | Classificar saves e tornar gate obrigatório.                |
+| Finding                                 | Severidade | Estado                                                      | Próxima ação                                              |
+| --------------------------------------- | ---------- | ----------------------------------------------------------- | --------------------------------------------------------- |
+| F-01 — aceite humano ausente            | Bloqueante | 6 `remediated_pending_retest`, 9 `not_executed`             | Executar matriz pós-fix e registrar build/commit.         |
+| F-02 — harness atual vermelho           | Bloqueante | Resolvido no worktree: 252/252 no golden path               | Preservar a suíte integrada no gate de impacto.           |
+| F-03 — writers não convergem            | Bloqueante | Gameplay `converged`; pseudo-writer narrativo removido      | Manter autoridade contract-first e replay no-op.          |
+| F-04 — evidência estática obsoleta      | Alta       | Evidência persistida removida; gate recalcula o checkout    | Persistir somente quando houver consumidor real.          |
+| F-05 — lifecycle não institucionalizado | Alta       | Resolvido no worktree com ADR e núcleo reutilizável         | Ampliar o harness por novas fronteiras comprovadas.       |
+| F-06 — tasks/evidências fora do Git     | Alta       | Resolvido por tooling durável e manifesto content-addressed | Preservar 010/011 como proveniência, não dependência.     |
+| F-07 — foreign keys configuráveis       | Alta       | TP corrigido localmente                                     | Validador genérico de registries ativos.                  |
+| F-08 — DoD superficial                  | Alta       | Harness limita-se a `authoring_integrity`                    | Tratar runtime/humano/release no fluxo responsável.       |
+| F-09 — slicing/higiene                  | Média      | Workflow criado; branch protection ainda externa            | Tornar `Authoring integrity` um required check.           |
 
 ## Critério de encerramento deste pós-mortem
 
@@ -124,29 +127,30 @@ devem ganhar owner e task própria.
 
 ## Atualização de findings — 2026-08-27
 
-- F-02 e F-03 foram resolvidos por autoridade contract-first, writers `ready` e golden path com 252/252 testes.
-- F-04 foi resolvido tecnicamente pelo schema `semifinal-validation/v2`, fingerprints e verificador público de freshness. A evidência permanece incapaz de liberar release enquanto inputs cobertos
-  estiverem ignorados.
+- F-02 e F-03 foram resolvidos por autoridade contract-first, Gameplay writer `converged`, remoção do pseudo-writer narrativo e suíte canônica verde.
+- F-04 foi resolvido pela remoção da evidência autorreferente; o gate recalcula o checkout atual.
+- F-06 foi resolvido por A1: writers, fixtures e validador ativos são rastreáveis; 010/011 permanecem apenas como proveniência content-addressed.
+- F-09 foi resolvido por S1 para `file0`/`file1`; outros slots já rastreados não foram alterados.
 - F-05 recebeu ADR e núcleo reutilizável; novas fronteiras devem ampliar o harness por regressões genéricas, sem copiar cutscenes.
-- F-08 recebeu estados multidimensionais na ADR e na evidência, mas o loop administrativo ainda precisa consumi-los.
+- F-08 permanece fora do harness estático: runtime, aceite humano e release exigem seus próprios sensores.
 - F-01 permanece bloqueante: não houve novo playtest humano.
 
 ## Estado residual após a promoção
 
-### Concluído no worktree
+### Concluído ou materializado
 
 - P01–P03 aceitas e U03 parcialmente incorporada ao guia.
-- Narrative e Gameplay writers em `ready`.
-- Harness 21/21, state machines 15/15, semifinal 252/252 e build aprovados.
-- Evidência `semifinal-validation/v2` fresca, com fingerprints de conteúdo, tracking e permissão executável.
-- Mapa de impacto executado com quatro checks e nenhum target protegido desmapeado.
+- Gameplay writer em `converged`; validação narrativa read-only ligada à copy materializada.
+- Harness, Noite da História, Semifinal e build aprovados pelos comandos públicos atuais.
+- Evidência versionada removida; o gate publica apenas o relatório da execução atual.
+- Mapa de impacto e workflow de PR materializados.
 - Diff-check, formatação, links e revisão `deslop` aprovados.
+- Tooling ativo consolidado em `docs/Quests/2-semifinal/tooling`; tasks 010/011 removidas do grafo de execução.
+- Saves `file0`/`file1` classificados como artefatos locais e ignorados.
 
 ### Pendente
 
-- Versionar o patch e o pacote 012; o estado atual não está contido no HEAD.
-- Definir política durável para os inputs ignorados em `.compozy/tasks`.
-- Classificar os dois saves presentes em `develop...HEAD`.
-- Integrar mapa de impacto e estados multidimensionais ao CI/orquestrador.
+- Versionar o delta A1/S1/013.
+- Configurar `Authoring integrity` como required check nas branches protegidas.
 - Registrar owners das ADRs e criar tasks para as lacunas restantes.
 - Executar B-01 a B-18; até lá `release_ready` permanece `blocked`.

@@ -1,15 +1,17 @@
 # Checklist de remediação e prevenção
 
+> Registro histórico do ciclo 012. O gate atual está documentado em [HANDOFF.md](HANDOFF.md); a demanda 013 superou itens de evidência e CI abaixo.
+
 ## A. Bloqueios atuais da branch
 
 - [x] A-01 — Escolher e registrar o modelo de autoridade dos cinco documentos: contract-first ou runtime-first.
 - [x] A-02 — Atualizar/aposentar os writers e canonical fixtures conforme a decisão; ambos devem retornar `ready` em `--check`.
 - [x] A-03 — Restaurar a suíte da Semifinal para 14/14 suítes e 252/252 testes e expô-la pelo nome estável `npm run test:semifinal`.
 - [x] A-04 — Executar `npm run build:types` novamente na revisão registrada pela evidência.
-- [ ] A-05 — Correção das sete linhas materializada no worktree e `git diff --check develop -- .` verde; `develop...HEAD` só ficará verde depois que o patch for commitado.
-- [x] A-06 — Validação estática migrada para `semifinal-validation/v2`, com `headSha`, base, hashes dos inputs, gerador, horário e verificador de `stale_evidence`.
-- [ ] A-07 — Classificar os saves alterados no diff como fixtures documentadas ou removê-los da mudança proposta.
-- [x] A-08 — O patch desta rodada não modifica saves; os dois saves presentes em `develop...HEAD` permanecem pendentes de classificação em A-07.
+- [x] A-05 — As sete linhas foram corrigidas e versionadas; `git diff --check develop...HEAD` está verde.
+- [x] A-06 — Validação estática migrada para `semifinal-validation/v3`, com `headSha`, base, hashes dos inputs, gerador, horário e verificador de `stale_evidence`.
+- [x] A-07 — Os saves `file0` e `file1` foram classificados como artefatos locais: removidos do índice, preservados no disco e cobertos por `/frontend/save/*.rmmzsave`.
+- [x] A-08 — Nenhum save local é input do harness ou da evidência da Semifinal.
 
 ## B. Reteste humano obrigatório
 
@@ -98,7 +100,7 @@ Use o mesmo commit/build registrado na evidência. Preencher tester, data, save/
 - [x] E-03 — ADR de lifecycle de evidência promovida com fingerprints e verificação pública de freshness.
 - [x] E-04 — Manifesto `target → checks` materializado com bloqueio `unmapped_target` para superfícies protegidas.
 - [x] E-05 — Golden path descartável prova writers, validador v2, suíte integrada e diff-check sem relaxar gates.
-- [ ] E-06 — Versionar o pacote sanitizado 012 e definir a política para tasks/evidências ignoradas.
+- [ ] E-06 — O pacote 012 foi versionado e a política A1 foi decidida; falta versionar `docs/Quests/2-semifinal/tooling` e o manifesto de proveniência para concluir a migração.
 - [ ] E-07 — Executar B-01 a B-18 no build fingerprintado.
 
 ## F. Gates executados no worktree em 2026-08-27
@@ -108,7 +110,7 @@ Use o mesmo commit/build registrado na evidência. Preencher tester, data, save/
 - [x] F-03 — `npm run test:semifinal`: 14/14 suítes e 252/252 testes.
 - [x] F-04 — `npm run build:types`: aprovado.
 - [x] F-05 — Narrative e Gameplay writers: `ready` em `--check`.
-- [ ] F-06 — Evidência `semifinal-validation/v2`: corretamente `stale_evidence` após o feedback; regenerar somente no HEAD commitado, mantendo `release_ready: blocked` até os gates humanos.
+- [ ] F-06 — Evidência `semifinal-validation/v3`: gerar diagnóstico no worktree e regenerar no HEAD commitado, mantendo `release_ready: blocked` até os gates humanos.
 - [x] F-07 — Mapa de impacto executou `harness`, `noite-da-historia`, `semifinal` e `build-types`, sem target protegido desmapeado.
 - [x] F-08 — `git diff --check`, Prettier, links locais e trailing whitespace: aprovados para o worktree.
 - [x] F-09 — Revisão final `deslop`: nenhum finding restante.
@@ -121,5 +123,15 @@ Use o mesmo commit/build registrado na evidência. Preencher tester, data, save/
 - [x] G-04 — Adicionar `test:quests` como agregador explícito das duas quests atuais.
 - [x] G-05 — Atualizar mapa de impacto, autotestes, validator e runbooks ativos para a nova interface.
 - [x] G-06 — Reexecutar harness, `test:quests`, build, writers, mapa de impacto, diff-check e formatação; a freshness antiga falhou de forma esperada.
-- [ ] G-07 — Fazer o review incremental do delta de nomes antes do versionamento.
+- [x] G-07 — Review incremental concluído; o feedback originou os nomes públicos por quest e `test:quests`.
 - [x] G-08 — Revisão `deslop` do delta concluída sem finding restante.
+
+## H. Decisões do Grill me e implementação A1/S1/C2
+
+- [x] H-01 — A1: consolidar tooling ativo, agora localizado em `docs/Quests/2-semifinal/tooling`.
+- [x] H-02 — A1: remover dependências executáveis das tasks históricas 010/011 e registrar apenas proveniência content-addressed.
+- [x] H-03 — A1: remover cinco suítes legadas que congelavam os modelos 010/contrato antigo e manter as 14 suítes públicas atuais da Semifinal.
+- [x] H-04 — S1: preservar os saves locais, removê-los do Git e ignorar novos `*.rmmzsave` em `frontend/save`.
+- [x] H-05 — C2: registrar integração de CI como task futura, fora desta implementação.
+- [ ] H-06 — Versionar o pacote durável e regenerar evidência v3 no HEAD resultante.
+- [ ] H-07 — Executar B-01 a B-18 no mesmo commit/build fingerprintado.

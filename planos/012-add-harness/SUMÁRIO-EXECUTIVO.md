@@ -2,73 +2,54 @@
 
 ## Veredito
 
-A autoridade contract-first, os writers e a suíte automatizada voltaram a convergir. O harness também ganhou promoção durável de lifecycle, evidência e impacto. A branch ainda não está pronta para
-release: o playtest humano permanece pendente, parte do pacote de execução continua ignorada e os deltas desta rodada ainda precisam ser versionados.
+O pacote 012 produziu contratos, regressões e um writer úteis, mas também
+acumulou evidência autorreferente, hashes opacos e tooling distante da quest.
+A demanda 013 preserva a parte verificável e remove as superfícies que poderiam
+ficar stale com aparência de rigor.
 
-## Estado atual comprovado
+O estado atual sustenta apenas `authoring_integrity`. Runtime, percepção,
+aceite humano e release continuam fora dessa alegação.
 
-- HEAD auditado: `af49dea8`, com ADR contract-first aceita e cinco contratos disciplinares reconciliados.
-- Build TypeScript: aprovado em 2026-08-27.
-- Suíte específica: golden path com 14/14 suítes e 252/252 testes.
-- Harness novo: 3/3 suítes e 22/22 testes.
-- Writers: Narrative e Gameplay retornam `ready` em `--check`.
-- Evidência estática 011: `semifinal-validation/v2`, vinculada a HEAD/base/inputs; agora está corretamente stale porque o feedback alterou comandos e contratos operacionais. A regeneração pertence ao
-  HEAD commitado.
-- Mapa de impacto: `harness`, `noite-da-historia`, `semifinal` e `build-types` são os checks atuais; nenhum target protegido está desmapeado.
-- Evidência humana: seis casos `remediated_pending_retest` e nove `not_executed`.
-- Diff completo: as sete ocorrências históricas foram corrigidas no worktree; `develop...HEAD` só refletirá a correção depois do commit.
-- Higiene final: Prettier, links locais, trailing whitespace e revisão `deslop` aprovados.
+## Superfície atual
 
-## Principal diagnóstico
+- Contratos: `docs/Quests/2-semifinal/*.md`.
+- Descoberta: `docs/Quests/2-semifinal/quest-tooling.json`.
+- Writer, validador e manifesto de assets:
+  `docs/Quests/2-semifinal/tooling`.
+- Gate compartilhado: `config/validation-impact-map.json` e
+  `scripts/validation-impact.js`.
+- Snapshot staged: `scripts/validate-staged.js`.
+- CI: `.github/workflows/authoring-integrity.yml`.
+- Tasks 010/011: somente proveniência histórica, sem dependência de execução.
 
-O ciclo validou muito bem forma, IDs, diffs e invariantes declarados, mas inicialmente não modelou o lifecycle do engine: intérpretes Parallel, refresh de página, última página elegível, reconstrução
-após VN, party refresh e registries ativos. Os playtests descobriram exatamente essas lacunas.
+Foram removidos o pseudo-writer narrativo, inventários e snapshots derivados
+sem consumidor real, o subsistema órfão de evidência e campos de aprovação
+humana do manifesto de assets.
 
-Depois, a documentação foi convertida de fonte autoral para espelho do runtime sem migrar os canonical fixtures e writers. A ADR aceita em `authoring-materialization-authority.md` resolveu essa
-inversão: contratos aprovados são fonte de intenção e runtime/evidência são derivados verificáveis.
+## Garantias e limites
 
-## O que já foi entregue
+O gate bloqueia target protegido sem regra, materialização sem writer,
+divergência do writer, check vermelho e check que modifica o checkout. Um
+resultado verde comprova somente as invariantes realmente implementadas pelos
+checks atuais.
 
-- ADRs duráveis para autoridade, lifecycle de eventos e lifecycle de evidência.
-- Helper compartilhado de página/refresh e regressões de intérprete `Parallel`.
-- Provenance compartilhada com conteúdo, tracking e permissão executável.
-- Mapa fail-closed `target → checks`, incluindo arquivos excluídos.
-- Golden path descartável e integração do helper aos testes de quest existentes.
-- Atualização do guia operacional e dos artefatos deste plano.
+O manifesto de assets permanece porque valida arquivos consumidos pelo jogo:
+existência, case, formato PNG, dimensões, alpha, checksum e referências
+declaradas. O checksum prova identidade de bytes, não qualidade visual.
 
-## O que ainda falta
+## Próximos passos
 
-1. Versionar o patch de harness e este pacote 012, fazendo o range `develop...HEAD` refletir o diff-check verde.
-2. Decidir a política durável para tasks, logs e evidências hoje ignorados.
-3. Tornar o mapa `target → checks` obrigatório no CI/orquestrador.
-4. Executar a matriz humana completa Gentle/Resist, editor, assets, áudio e continuidade.
-5. Só então avaliar release.
+1. Configurar `Authoring integrity` como required check nas branches protegidas.
+2. Executar o gate no snapshot final desta mudança.
+3. Conduzir playtest e revisões perceptivas separadamente quando o critério
+   exigir julgamento.
+4. Ampliar manifestos e checks somente junto de um consumidor e de uma falha
+   que eles consigam detectar deterministicamente.
 
-## Melhorias permanentes de maior retorno
+## Navegação
 
-- Harness genérico de lifecycle para páginas, intérpretes e refresh: primeira versão materializada; ampliar por fronteiras comprovadas.
-- Definition of Done com estados separados: promovida para ADR/evidência; falta integrar ao loop.
-- Evidência content-addressed e automaticamente stale: materializada na semifinal e em helper compartilhado.
-- Validador de foreign keys para registries textuais ativos de plugins.
-- Fonte de verdade única entre contratos, writers, fixtures e runtime: promovida e aplicada à semifinal.
-- Pacotes de task/logs sanitizados e reproduzíveis em clone limpo.
-
-## O que deve ser preservado
-
-- Máquina canônica única e transições semânticas.
-- Separação de autoridade por disciplina.
-- Writers fail-closed, diffs localizados e replay idempotente.
-- Separação honesta entre validação automatizada e percepção humana.
-- Conversão de bugs reais em regressões específicas.
-- Mensagens de commit orientadas à experiência e transparentes sobre pendências.
-
-## Navegação dos artefatos
-
-- [TIMELINE.md](TIMELINE.md): reconstrução cronológica.
-- [POST-MORTEM.md](POST-MORTEM.md): causas, incidentes e evidências.
-- [LEARNINGS.md](LEARNINGS.md): aprendizados priorizados.
-- [RULES.md](RULES.md): texto normativo proposto.
-- [ADR-CHANGES.md](ADR-CHANGES.md): promoções concluídas e ainda pendentes.
-- [SKILL-CHANGES.md](SKILL-CHANGES.md): mudanças em skills e nova capacidade.
-- [FRAMEWORK-GAPS.md](FRAMEWORK-GAPS.md): lacunas do framework.
-- [CHECKLIST.md](CHECKLIST.md): desbloqueio atual e prevenção futura.
+- [HANDOFF.md](HANDOFF.md): comandos e diagnóstico atuais.
+- [POST-MORTEM.md](POST-MORTEM.md): histórico e causas.
+- [LEARNINGS.md](LEARNINGS.md): aprendizados reutilizáveis.
+- [FRAMEWORK-GAPS.md](FRAMEWORK-GAPS.md): lacunas restantes.
+- [CHECKLIST.md](CHECKLIST.md): registro do ciclo anterior.
