@@ -41,8 +41,8 @@ function subprocessFailure(result) {
 }
 
 function invokeExport(name, args) {
-  const script = `import * as subject from ${JSON.stringify(MODULE)}; console.log(JSON.stringify(await subject[${JSON.stringify(name)}](...JSON.parse(process.argv[1]))));`;
-  const result = spawnSync(process.execPath, ['--input-type=module', '-e', script, JSON.stringify(args)], { cwd: ROOT, encoding: 'utf8', maxBuffer: 16 * 1024 * 1024 });
+  const script = `import fs from 'node:fs'; import * as subject from ${JSON.stringify(MODULE)}; console.log(JSON.stringify(await subject[${JSON.stringify(name)}](...JSON.parse(fs.readFileSync(0, 'utf8')))));`;
+  const result = spawnSync(process.execPath, ['--input-type=module', '-e', script], { cwd: ROOT, encoding: 'utf8', input: JSON.stringify(args), maxBuffer: 16 * 1024 * 1024 });
   if (result.status !== 0) throw new Error(subprocessFailure(result));
   return JSON.parse(result.stdout);
 }

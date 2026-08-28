@@ -17,13 +17,12 @@ function invoke(exportName, args) {
     [
       '--input-type=module',
       '-e',
-      `import * as subject from ${JSON.stringify(MODULE_URL)};
-     const value = await subject[process.argv[1]](...JSON.parse(process.argv[2]));
+      `import fs from 'node:fs'; import * as subject from ${JSON.stringify(MODULE_URL)};
+     const value = await subject[process.argv[1]](...JSON.parse(fs.readFileSync(0, 'utf8')));
      console.log(JSON.stringify(value));`,
       exportName,
-      JSON.stringify(args),
     ],
-    { cwd: ROOT, encoding: 'utf8' },
+    { cwd: ROOT, encoding: 'utf8', input: JSON.stringify(args) },
   );
   expect(result.status).toBe(0);
   return JSON.parse(result.stdout);
