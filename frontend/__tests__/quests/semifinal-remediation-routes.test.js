@@ -30,10 +30,20 @@ let subject;
 let projection;
 let maps;
 
+function subprocessFailure(result) {
+  return JSON.stringify({
+    status: result.status,
+    signal: result.signal,
+    error: result.error && { name: result.error.name, message: result.error.message, code: result.error.code, errno: result.error.errno, syscall: result.error.syscall },
+    stderr: result.stderr,
+    stdout: result.stdout,
+  });
+}
+
 function invokeExport(name, args) {
   const script = `import * as subject from ${JSON.stringify(MODULE)}; console.log(JSON.stringify(await subject[${JSON.stringify(name)}](...JSON.parse(process.argv[1]))));`;
   const result = spawnSync(process.execPath, ['--input-type=module', '-e', script, JSON.stringify(args)], { cwd: ROOT, encoding: 'utf8', maxBuffer: 16 * 1024 * 1024 });
-  if (result.status !== 0) throw new Error(result.stderr || result.stdout);
+  if (result.status !== 0) throw new Error(subprocessFailure(result));
   return JSON.parse(result.stdout);
 }
 
@@ -98,7 +108,7 @@ beforeAll(() => {
     const projected=subject.projectCanonicalMaps({sources});
     console.log(JSON.stringify({canonical:subject.CANONICAL_STATES,maps:Object.fromEntries(Object.entries(projected.maps).map(([name,map])=>[name,{events:map.events}])),outputsValid:Object.values(projected.outputs).map(value=>{try{JSON.parse(value);return true}catch{return false}})}));`;
   const result = spawnSync(process.execPath, ['--input-type=module', '-e', runner, ROOT], { cwd: ROOT, encoding: 'utf8', maxBuffer: 16 * 1024 * 1024 });
-  if (result.status !== 0) throw new Error(result.stderr || result.stdout);
+  if (result.status !== 0) throw new Error(subprocessFailure(result));
   const loaded = JSON.parse(result.stdout);
   subject = {
     CANONICAL_STATES: loaded.canonical,
